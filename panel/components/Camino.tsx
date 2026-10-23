@@ -26,7 +26,7 @@ export default function Camino({ actual, previsto, hitos }: { actual: number; pr
         ))}
       </div>
       <ul className="hitos-lista" aria-hidden="true">
-        {hitos.map((h) => (
+        {[...hitos].sort((a, b) => a.mensual - b.mensual).map((h) => (
           <li key={h.nombre}><b>{euros(h.mensual)}</b> {h.nombre} <small>{h.plazo}</small></li>
         ))}
       </ul>
