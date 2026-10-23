@@ -53,6 +53,12 @@
 6. **Contenido con IA declarado donde la plataforma lo exija** (Amazon KDP, Google Play, Steam).
 7. **Sin datos personales de alumnos ni familias de Algorithmics** en ningún proyecto.
 
+## Antes de diseñar: el análisis del líder
+En `panel/data/proyectos.json`, tu proyecto tiene (si existe) el campo `lider`: ingeniería inversa de producto del mejor
+competidor, con su modelo y las listas `copiar`, `mejorar`, `adaptar` y `planAccion`. **Léelo antes de diseñar nada** y
+aplícalo: lo que está en `copiar` se replica, lo de `mejorar` es el mínimo diferencial exigible, lo de `adaptar` manda sobre
+cualquier plantilla. Si durante la sesión descubres algo nuevo del líder, añádelo ahí.
+
 ## Qué entrega cada sesión (criterio de "hecho")
 - Producto desplegable con `npm run build` limpio, probado en móvil, con pago en modo prueba funcionando de punta a punta.
 - `README.md`: qué es, cómo se despliega (Vercel, variables de entorno), decisiones tomadas.

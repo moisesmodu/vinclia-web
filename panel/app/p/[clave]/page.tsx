@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Copiar from '@/components/Copiar';
+import Lider from '@/components/Lider';
 import { proyecto, proyectos, promptDe, euros, fecha } from '@/lib/data';
 
 export function generateStaticParams() {
@@ -77,6 +78,9 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
           </section>
         </div>
       </div>
+
+      {p.lider && <Lider lider={p.lider} titulo="Ingeniería inversa del líder" />}
+      {p.segundoLider && <Lider lider={p.segundoLider} titulo="Segundo referente" />}
 
       <section>
         <h2>Competencia</h2>

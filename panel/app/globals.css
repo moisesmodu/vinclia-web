@@ -164,3 +164,23 @@ b { font-weight: 600; }
 .md li { margin: 0.25rem 0; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Ingeniería inversa del líder */
+.lider { border-top: 3px solid var(--azafran); padding-top: 1rem; }
+.lider-cab { font-size: 1.05rem; max-width: 80ch; margin: 0 0 1rem; }
+.lider-modelo { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0 0 1.5rem; border: 1px solid var(--linea); background: var(--papel); }
+.lider-modelo div { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--linea); }
+.lider-modelo div:last-child { border-bottom: 0; }
+.lider-modelo dt { color: var(--tinta-2); font-size: 0.9rem; }
+.lider-modelo dd { margin: 0; font-size: 0.95rem; }
+.compacta { margin: 0; padding-left: 1.2rem; }
+.compacta li { margin: 0.15rem 0; }
+@media (max-width: 640px) { .lider-modelo div { grid-template-columns: 1fr; gap: 0.2rem; } }
+.lider-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.lider-grid.tres { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .lider-grid, .lider-grid.tres { grid-template-columns: 1fr; gap: 0.5rem; } }
+.lider-bloque h3 { font-size: 1rem; margin: 0.8rem 0 0.3rem; }
+.lider-bloque ul { margin: 0; padding-left: 1.2rem; font-size: 0.95rem; }
+.lider-bloque li { margin: 0.3rem 0; }
+.lider-bloque.plan { background: var(--azafran-suave); padding: 0.8rem 1.1rem; margin-top: 1.2rem; border-left: 3px solid var(--azafran); }
+.lider-bloque.plan h3 { margin-top: 0; }

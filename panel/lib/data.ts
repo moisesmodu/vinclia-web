@@ -5,6 +5,11 @@ import { marked } from 'marked';
 export type Accion = { fecha: string; texto: string; enlace?: string };
 export type Competidor = { nombre: string; url?: string; precio?: string; debilidad?: string };
 export type Repo = { nombre: string; url?: string; licencia?: string; uso?: string; estrellas?: string };
+export type Lider = {
+  nombre: string; url?: string; porQue?: string;
+  modelo?: { propuesta?: string; precio?: string; embudo?: string; funciones?: string[]; retencion?: string; adquisicion?: string; tecnologia?: string; metricas?: string };
+  loQueFunciona?: string[]; loQueFalla?: string[]; copiar?: string[]; mejorar?: string[]; adaptar?: string[]; planAccion?: string[];
+};
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
 export type Proyecto = {
@@ -15,6 +20,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
+  lider?: Lider; segundoLider?: Lider;
 };
 
 export type Cartera = {
