@@ -255,3 +255,4 @@ teléfono y plan Creator de ElevenLabs.
 |---|---|---|
 | 23/10/2026 | Cartera creada | — |
 | 23/10/2026 | VIABILIDAD.md, SESIONES.md (reglas comunes) y PROMPTS-SESIONES.md (10 prompts) | a43c87f+ |
+| 23/10/2026 | Panel web (`panel/`, Next.js estático para Vercel) con investigación de competencia y código abierto de los 10 proyectos | — |

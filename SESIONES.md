@@ -21,6 +21,10 @@
 - Binarios pesados (vídeos, PDFs de imprenta, modelos 3D) **no van a git**: súbelos al almacenamiento del proyecto
   (Vercel Blob o similar) y deja el enlace. Imágenes de web optimizadas, sí.
 - Commits pequeños y frecuentes. Al acabar, añade una fila al registro de `CARTERA.md` (fecha, qué, PR).
+- **Actualiza `panel/data/proyectos.json`** al terminar (y en cada hito intermedio): `estado`, `acciones` (fecha y texto),
+  `ingresosMes`, `costesMes`, `clientes`, `enlaces` (demo, PR, tienda), `proximos`, `paraMoises`, y añade a `mejoras`,
+  `competidores`, `repos` y `hallazgos` lo que descubras. El panel (carpeta `panel/`, desplegado en Vercel) se
+  regenera con cada push: es lo único que Moisés mira. Si tocas `cartera.json` (decisiones pendientes), hazlo con cuidado.
 
 ## Pila por defecto (cámbiala solo con motivo escrito en el README)
 - Web/app: Next.js (App Router) + TypeScript + Tailwind, desplegable en Vercel como proyecto propio (Root

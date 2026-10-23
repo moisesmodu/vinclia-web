@@ -1,0 +1,1313 @@
+[
+  {
+    "clave": "a-ccse",
+    "letra": "A",
+    "nombre": "CCSE nacionalidad",
+    "marca": "Nuevo en España",
+    "resumen": "App y web para aprobar el examen CCSE de nacionalidad española, con las 300 preguntas oficiales explicadas en 7 idiomas.",
+    "estado": "pendiente",
+    "orden": 1,
+    "modelo": "Pago único 9,99 € (3 meses)",
+    "margenCliente": 8.5,
+    "objetivoMes12": 600,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión A con el prompt",
+      "Stripe en modo prueba",
+      "Publicar en Google Play"
+    ],
+    "paraMoises": [
+      "Claves de Stripe",
+      "Proyecto en Vercel y Neon",
+      "Publicar en Google Play"
+    ],
+    "mejoras": [
+      "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
+      "Simulacro con el formato exacto y repaso espaciado de los fallos; indicador de 'listo para el examen' con probabilidad estimada.",
+      "Garantía 'apruebas o te devolvemos el dinero', de coste casi nulo dado el 98 % de aptos, como gancho frente a las apps gratis.",
+      "Distribución por códigos para academias, ONG (Accem, CEAR, Cruz Roja), despachos de extranjería y canales grandes como Parainmigrantes (337.000 suscriptores en YouTube), con afiliación del 30 al 40 %.",
+      "SEO y vídeos cortos en cada idioma y páginas por idioma; la fecha del examen como gancho de urgencia con recordatorios de convocatoria."
+    ],
+    "competidores": [
+      {
+        "nombre": "CCSE Nacionalidad Española (app oficial del Instituto Cervantes)",
+        "url": "https://apps.apple.com/es/app/ccse-nacionalidad-espa%C3%B1ola/id1461069757",
+        "precio": "Gratis",
+        "debilidad": "Valorada con 2,7 sobre 5 en 305 reseñas; solo test y simulacro, sin explicaciones ni idiomas, interfaz anticuada"
+      },
+      {
+        "nombre": "CCSE Spanish Nationality Test",
+        "url": "https://apps.apple.com/app/id6446229630",
+        "precio": "Gratis con compras internas",
+        "debilidad": "Solo iOS; sin explicaciones en lengua materna"
+      },
+      {
+        "nombre": "CCSE Nacionalidad Test 2026",
+        "url": "https://apps.apple.com/us/app/id6752815355",
+        "precio": "Premium sin anuncios 17,99 $",
+        "debilidad": "5 o 6 valoraciones; rastrea datos entre apps; sin explicaciones multilingües"
+      },
+      {
+        "nombre": "CCSE Nacionalidad Española (tercero)",
+        "url": "https://apps.apple.com/us/app/id1272047610",
+        "precio": "Gratis",
+        "debilidad": "Preguntas del manual 2023; glosario en 6 idiomas pero sin rumano, chino ni ucraniano"
+      },
+      {
+        "nombre": "Spanish Citizenship Test CCSE",
+        "url": "https://apps.apple.com/app/id6743101053",
+        "precio": "Gratis con compras internas",
+        "debilidad": "Traducción automática a 13 idiomas sin explicación pedagógica; solo iOS"
+      },
+      {
+        "nombre": "Test CCSE online iNMSOL",
+        "url": "https://www.inmsol.com/blog/practice-your-ccse-test-with-iNMSOL/",
+        "precio": "Gratis a cambio del correo",
+        "debilidad": "25 preguntas al azar y corrección por correo; sin progreso"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "open-spaced-repetition/ts-fsrs",
+        "url": "https://github.com/open-spaced-repetition/ts-fsrs",
+        "licencia": "MIT",
+        "uso": "Repaso espaciado de las 300 preguntas por usuario",
+        "estrellas": "830"
+      },
+      {
+        "nombre": "yousyjorge/ccse2026",
+        "url": "https://github.com/yousyjorge/ccse2026",
+        "licencia": "MIT",
+        "uso": "Banco de preguntas 2026 en TypeScript; verificar contra el manual oficial antes de usar",
+        "estrellas": "0"
+      },
+      {
+        "nombre": "combimauri/ccse-estudio",
+        "url": "https://github.com/combimauri/ccse-estudio",
+        "licencia": "Sin licencia (solo referencia)",
+        "uso": "Referencia de modelo de datos con las 300 preguntas del manual 2026 y explicaciones",
+        "estrellas": "0"
+      },
+      {
+        "nombre": "amannn/next-intl",
+        "url": "https://github.com/amannn/next-intl",
+        "licencia": "MIT",
+        "uso": "Idiomas en Next.js con rutas por idioma y soporte de escritura de derecha a izquierda para el árabe",
+        "estrellas": "3.000"
+      }
+    ],
+    "hallazgos": [
+      "Volumen alto y recurrente: más de 28.000 candidatos en la convocatoria de octubre de 2025, con 9 o 10 convocatorias al año y tasa de 85 €.",
+      "El examen es fácil (más del 98 % aprueba): el argumento de venta es seguridad, lengua materna y ahorro de tiempo. El segmento de no alfabetizados (964 inscritos en octubre de 2025) necesita audio y explicación oral.",
+      "La app oficial es gratis pero está mal valorada; ninguna app explica en rumano, chino o ucraniano; el árabe y el francés aparecen solo como glosario o traducción automática.",
+      "Mercado creciente: 252.476 nacionalizaciones en 2024 y 1,17 millones de solicitudes de regularización en 2026 que serán candidatos a la nacionalidad en 2 a 10 años.",
+      "Riesgo legal: las 300 preguntas son del Instituto Cervantes y el manual se renueva cada año; revisar derechos de reproducción y actualizar anualmente.",
+      "Casi toda la competencia es iOS con compras de unos 18 $; un pago único de 9,99 € por web evita el 30 % de las tiendas y permite garantía de devolución."
+    ]
+  },
+  {
+    "clave": "n-nuevo-en-espana",
+    "letra": "N",
+    "nombre": "Nuevo en España",
+    "marca": "Nuevo en España",
+    "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
+    "estado": "pendiente",
+    "orden": 2,
+    "modelo": "Suscripción 4,99 €/mes o pack 19,90 €",
+    "margenCliente": 22,
+    "objetivoMes12": 250,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión N después de A (comparten código)"
+    ],
+    "paraMoises": [
+      "Claves de Stripe",
+      "Proyecto en Vercel y Neon"
+    ],
+    "mejoras": [
+      "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
+      "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
+      "Monitor automático de cambios legales que actualiza las guías y avisa al suscriptor: 'tu trámite ha cambiado'.",
+      "Vídeos cortos multilingües con subtítulos y comunidades de WhatsApp y Telegram por idioma; colaborar con despachos verificados por afiliación.",
+      "Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario."
+    ],
+    "competidores": [
+      {
+        "nombre": "Parainmigrantes.info",
+        "url": "https://www.parainmigrantes.info/",
+        "precio": "Contenido gratis; gestión de expedientes de pago",
+        "debilidad": "Solo en español, orientado a captar clientes del despacho; sin listas personalizadas ni recordatorios"
+      },
+      {
+        "nombre": "Machelin Díaz (blog y YouTube)",
+        "url": "https://machelindiaz.com/",
+        "precio": "Contenido gratis; asesoría de pago",
+        "debilidad": "Solo español, artículos largos, depende de una persona"
+      },
+      {
+        "nombre": "Extranjería app (citas, no oficial)",
+        "url": "https://apps.apple.com/ca/app/extranjer%C3%ADa-app/id6450997467",
+        "precio": "no verificado",
+        "debilidad": "Solo alertas de cita; sin guía ni idiomas"
+      },
+      {
+        "nombre": "Guías de ONG y administraciones (Red Acoge, Generalitat en 9 idiomas, ayuntamientos)",
+        "url": "https://archivo.acoge.org/wp-content/uploads/2026/05/Guia-Regularizacion-2026_Web-1.pdf",
+        "precio": "Gratis",
+        "debilidad": "PDF estáticos, sin seguimiento de plazos ni actualización ágil; lenguaje jurídico"
+      },
+      {
+        "nombre": "Portal oficial de Inclusión",
+        "url": "https://www.inclusion.gob.es/",
+        "precio": "Gratis",
+        "debilidad": "Solo español, lenguaje administrativo"
+      },
+      {
+        "nombre": "Creadores de TikTok y asistentes de IA genéricos",
+        "url": "https://maldita.es/malditobulo/20260130/lanzan-un-llamamiento-a-todos-los-inmigrantes-para-venir-a-espana-con-la-regularizacion-masiva-y-vivir-de-las-ayudas-sociales/",
+        "precio": "Gratis",
+        "debilidad": "Desinformación verificada por Maldita; sin fuentes oficiales"
+      },
+      {
+        "nombre": "Integreat (Alemania, modelo de referencia)",
+        "url": "https://integreat-app.de/en/",
+        "precio": "Gratis para el usuario; lo pagan los municipios",
+        "debilidad": "No cubre España; muestra que el modelo que funciona es venderlo a ayuntamientos"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "digitalfabrik/integreat-app",
+        "url": "https://github.com/digitalfabrik/integreat-app",
+        "licencia": "MIT",
+        "uso": "App de guías locales multilingües para recién llegados: arquitectura de categorías, sin conexión e idiomas",
+        "estrellas": "58"
+      },
+      {
+        "nombre": "fuma-nama/fumadocs",
+        "url": "https://github.com/fuma-nama/fumadocs",
+        "licencia": "MIT",
+        "uso": "Documentación Next.js con búsqueda e idiomas para publicar las guías",
+        "estrellas": "13.400"
+      },
+      {
+        "nombre": "amannn/next-intl",
+        "url": "https://github.com/amannn/next-intl",
+        "licencia": "MIT",
+        "uso": "Rutas por idioma y árabe de derecha a izquierda",
+        "estrellas": "3.000"
+      },
+      {
+        "nombre": "legalize-dev/legalize-es",
+        "url": "https://github.com/legalize-dev/legalize-es",
+        "licencia": "Revisar LICENSE",
+        "uso": "Legislación española en Markdown versionada: detectar cambios normativos por diff",
+        "estrellas": "1.964"
+      },
+      {
+        "nombre": "GeiserX/awesome-spain",
+        "url": "https://github.com/GeiserX/awesome-spain",
+        "licencia": "CC0",
+        "uso": "Catálogo de software abierto de España (Cl@ve, certificados, AEAT)",
+        "estrellas": "361"
+      }
+    ],
+    "hallazgos": [
+      "Pico de demanda previsible: la regularización cerró con 1.174.978 solicitudes; la autorización inicial dura un año, así que entre abril y junio de 2027 cerca de un millón de personas tendrán que renovar. La guía de renovación es el producto estrella.",
+      "Confusión masiva: muchas solicitudes duplicadas y solo un 30 % admitidas a trámite a mitad de plazo según CEAR; hay apetito por instrucciones claras en lengua materna.",
+      "Canales dominantes: YouTube y TikTok de despachos, con mucha desinformación; hueco para contenido con fuente oficial citada.",
+      "Las administraciones ya publican guías en árabe, francés, rumano, chino y ucraniano: el conjunto de idiomas está validado, pero hay mucho contenido gratis y la disposición a pagar 4,99 €/mes es incierta; el modelo de pago por municipios sugiere una vía B2B.",
+      "Riesgo regulatorio: dar asesoramiento sin ser abogado exige avisos y derivación; la normativa cambia a menudo y exige mantenimiento continuo.",
+      "Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma."
+    ]
+  },
+  {
+    "clave": "b-oposiciones",
+    "letra": "B",
+    "nombre": "Oposiciones de cola larga",
+    "marca": "Exámenes",
+    "resumen": "Tests, simulacros y repaso espaciado para oposiciones catalanas que las grandes apps no cubren.",
+    "estado": "pendiente",
+    "orden": 3,
+    "modelo": "Suscripción 9,99 €/mes",
+    "margenCliente": 55,
+    "objetivoMes12": 400,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión B",
+      "Preparar campaña de búsqueda sin activar"
+    ],
+    "paraMoises": [
+      "Claves de Stripe",
+      "Proyecto en Vercel y Neon"
+    ],
+    "mejoras": [
+      "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",
+      "Modo 'examen oficial': simulacro con el formato exacto (75 preguntas, penalización, tiempo) y percentil frente a otros usuarios.",
+      "Pipeline PDF a preguntas desde el DOGC con revisión marcada como 'verificada' y repaso espaciado FSRS de los fallos; nadie en el nicho lo ofrece.",
+      "Bilingüe con cambio de idioma por pregunta; SEO en catalán y contenido para la prueba de nivel C exigida en las bases.",
+      "Plan 'pausa' en vez de cancelación (congelar entre convocatorias conservando historial) y referidos con un mes gratis."
+    ],
+    "competidores": [
+      {
+        "nombre": "OpositaTest",
+        "url": "https://opositatest.com",
+        "precio": "15,99 €/mes; 7,99 €/mes en plan anual (95,92 €)",
+        "debilidad": "Centrado en Estado y grandes comunidades; cobertura parcial de la Generalitat; sin Mossos ni ayuntamientos; al cancelar se pierde el historial"
+      },
+      {
+        "nombre": "PreparaOposiciones.com",
+        "url": "https://www.preparaoposiciones.com",
+        "precio": "De 6,66 a 12,90 €/mes",
+        "debilidad": "Moodle genérico con interfaz anticuada; sin modo de examen oficial ni catalán nativo"
+      },
+      {
+        "nombre": "InnoTest",
+        "url": "https://apps.apple.com/es/app/innotest-auxiliar-adtvo-estado/id1632345697",
+        "precio": "Gratis con compras internas",
+        "debilidad": "Solo oposiciones estatales; nada de Cataluña"
+      },
+      {
+        "nombre": "Passarella Tests (Mossos, en catalán)",
+        "url": "https://apps.apple.com/us/app/passarella-tests/id6745947389",
+        "precio": "19,99 €/mes o 39,99 €/año",
+        "debilidad": "Solo Mossos, solo iOS, app de una academia; el doble de precio mensual"
+      },
+      {
+        "nombre": "Easy-Quizzz",
+        "url": "https://www.easy-quizzz.com/es/",
+        "precio": "PDFs de pago por oposición",
+        "debilidad": "Granja SEO con tests genéricos y promesas de '99 % aprobados'; sin seguimiento"
+      },
+      {
+        "nombre": "TestOpos Auxiliar Enfermería",
+        "url": "https://apps.apple.com/es/app/testopos-auxiliar-enfermer%C3%ADa/id993707682",
+        "precio": "Gratis con compras internas",
+        "debilidad": "Valoración de 1,4 sobre 5; genérico, no adaptado al ICS ni al catalán"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "open-spaced-repetition/ts-fsrs",
+        "url": "https://github.com/open-spaced-repetition/ts-fsrs",
+        "licencia": "MIT",
+        "uso": "Repaso espaciado FSRS en TypeScript para las preguntas falladas",
+        "estrellas": "830"
+      },
+      {
+        "nombre": "mawoka-myblock/ClassQuiz",
+        "url": "https://github.com/mawoka-myblock/ClassQuiz",
+        "licencia": "MPL-2.0",
+        "uso": "Referencia de modelo de datos de preguntas, importación e idiomas",
+        "estrellas": "733"
+      },
+      {
+        "nombre": "PragatiVerma18/MLH-Quizzet",
+        "url": "https://github.com/PragatiVerma18/MLH-Quizzet",
+        "licencia": "MIT",
+        "uso": "Pipeline texto a preguntas, para arrancar el generador desde temarios oficiales",
+        "estrellas": "97"
+      },
+      {
+        "nombre": "ComputingVictor/MCP-BOE",
+        "url": "https://github.com/ComputingVictor/MCP-BOE",
+        "licencia": "MIT",
+        "uso": "Acceso programático a la legislación consolidada del BOE; replicar para el DOGC",
+        "estrellas": "57"
+      },
+      {
+        "nombre": "Naritsumi/EstudiaTAI-app",
+        "url": "https://github.com/Naritsumi/EstudiaTAI-app",
+        "licencia": "MIT",
+        "uso": "Referencia de experiencia móvil sin conexión para tests",
+        "estrellas": "10"
+      }
+    ],
+    "hallazgos": [
+      "Precio ancla del mercado: OpositaTest 15,99 €/mes, PreparaOposiciones de 6,66 a 12,90, Passarella 19,99. Los 9,99 € quedan bien si el valor es 'específico de Cataluña'.",
+      "Demanda fuerte: la Generalitat anuncia 8.474 plazas en 2026; Mossos 1.587 plazas con unos 9.300 aspirantes en la convocatoria anterior; 16.493 inscritos para 1.325 plazas en una sola convocatoria.",
+      "Hueco real: ningún competidor grande cubre Mossos, ayuntamientos ni ICS en catalán; los que existen son apps de una academia o granjas SEO.",
+      "En catalán hay poca competencia SEO ('test auxiliar administratiu generalitat', 'test mossos 2026'); grupos de Telegram y WhatsApp de opositores son el canal.",
+      "Riesgos: ingresos estacionales según convocatorias; derechos de autor si se reutilizan preguntas de academias; cambios de temario que obligan a revisión continua.",
+      "El dato clave de retención: en OpositaTest al cancelar se pierde el historial. Ofrecer historial permanente y exportable es un diferencial barato."
+    ]
+  },
+  {
+    "clave": "juegos",
+    "letra": "H+Q",
+    "nombre": "Juegos",
+    "marca": "Juegos",
+    "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
+    "estado": "pendiente",
+    "orden": 4,
+    "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
+    "margenCliente": 0,
+    "objetivoMes12": 150,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "La plataforma distribuye; sin marketing",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Primer juego web y plantilla",
+      "Cuentas en CrazyGames, Poki e itch.io"
+    ],
+    "paraMoises": [
+      "Cuentas de desarrollador",
+      "Pulsar enviar con el paquete"
+    ],
+    "mejoras": [
+      "Un adaptador de portal propio en TypeScript (init, gameplayStart/Stop, anuncio intermedio, anuncio con recompensa) con implementaciones para CrazyGames v3, Poki e itch.io, para compilar un build por portal con una variable.",
+      "Pipeline de Roblox 100 % en CI: Rojo build, luau-analyze, publicación con rbxcloud a un place de pruebas y luego a producción.",
+      "Catálogo de rehechos con diferenciación mínima: partir de los 14 juegos MIT y 2048 cambiando mecánica secundaria, arte Kenney y tema, para pasar el filtro anticlon.",
+      "Optimizar los indicadores que deciden el lanzamiento completo en CrazyGames: tutorial en menos de 10 segundos, partidas cortas, guardado con el SDK y build menor de 8 MB para enviarlo también a Poki.",
+      "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles."
+    ],
+    "competidores": [
+      {
+        "nombre": "Bloxd.io (Arthur Baker, Reino Unido)",
+        "url": "https://www.crazygames.com/game/bloxdhop-io",
+        "precio": "Gratis con anuncios; estudio rentable de 8 personas con más de 11 M de jugadores al mes",
+        "debilidad": "Depende casi al 100 % de portales y publicidad"
+      },
+      {
+        "nombre": "TinyDobbins (Monkey Mart, en Poki)",
+        "url": "https://poki.com/en/g/monkey-mart",
+        "precio": "Unas 300 M de partidas; Poki declara que sus mejores desarrolladores ingresan de 50.000 a 1 M $ al año",
+        "debilidad": "Exclusividad web con Poki; sin compras dentro del juego"
+      },
+      {
+        "nombre": "Grow a Garden (Roblox)",
+        "url": "https://en.wikipedia.org/wiki/Grow_a_Garden",
+        "precio": "Unos 12 M $ en ventas solo en mayo de 2025",
+        "debilidad": "Un solo éxito viral; la mediana de pago DevEx en 2024 fue de unos 1.575 $ por desarrollador"
+      },
+      {
+        "nombre": "Poki (portal, 100 M usuarios al mes)",
+        "url": "https://sdk.poki.com/deals",
+        "precio": "Exclusiva web: 100 % si tú traes al jugador, 50 % si lo trae Poki; no exclusiva: licencia de pago único",
+        "debilidad": "Revisión humana, sin subida abierta; exclusividad web; sin compras dentro del juego"
+      },
+      {
+        "nombre": "CrazyGames (portal, 50 M usuarios al mes)",
+        "url": "https://docs.crazygames.com/faq/",
+        "precio": "Publicar gratis, sin exclusividad; 60 % anuncios y 70 % compras según los términos de su jam de 2026; pago mensual por Tipalti desde 100 €",
+        "debilidad": "El lanzamiento básico no genera ingresos; el completo depende de retención frente a su referencia"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "phaserjs/template-vite-ts",
+        "url": "https://github.com/phaserjs/template-vite-ts",
+        "licencia": "MIT",
+        "uso": "Base oficial Phaser + TypeScript + Vite; fijar phaser@3.90 para Phaser 3",
+        "estrellas": "200"
+      },
+      {
+        "nombre": "digitsensitive/phaser3-typescript",
+        "url": "https://github.com/digitsensitive/phaser3-typescript",
+        "licencia": "MIT",
+        "uso": "14 juegos completos en Phaser 3 (runner, breakout, snake, shooter...) para rehacer legalmente con arte CC0",
+        "estrellas": "1.000"
+      },
+      {
+        "nombre": "gabrielecirulli/2048",
+        "url": "https://github.com/gabrielecirulli/2048",
+        "licencia": "MIT",
+        "uso": "Lógica de puzle numérico probada",
+        "estrellas": "13.400"
+      },
+      {
+        "nombre": "rojo-rbx/rojo",
+        "url": "https://github.com/rojo-rbx/rojo",
+        "licencia": "MPL-2.0",
+        "uso": "Construir el place de Roblox desde Git: rojo build -o build.rbxl en CI",
+        "estrellas": "1.800"
+      },
+      {
+        "nombre": "Sleitnick/rbxcloud",
+        "url": "https://github.com/Sleitnick/rbxcloud",
+        "licencia": "MIT",
+        "uso": "CLI para Open Cloud: publicar el .rbxl desde GitHub Actions",
+        "estrellas": "140"
+      },
+      {
+        "nombre": "Roblox/luau",
+        "url": "https://github.com/Roblox/luau",
+        "licencia": "MIT",
+        "uso": "luau-analyze para comprobar el código del juego en CI",
+        "estrellas": "4.000"
+      },
+      {
+        "nombre": "Kenney (kenney.nl)",
+        "url": "https://kenney.nl/assets",
+        "licencia": "CC0",
+        "uso": "Más de 30.000 sprites, interfaz, audio y 3D de dominio público para los juegos",
+        "estrellas": ""
+      }
+    ],
+    "hallazgos": [
+      "CrazyGames exige SDK v3, evento GameplayStart, inglés, descarga inicial de 50 MB o menos, portadas de 1920×1080, 800×1200 y 800×800, y rechaza clones: cada juego debe distinguirse claramente.",
+      "Poki exige su SDK como único sistema de anuncios, sin compras internas, 16:9 adaptable, 30 FPS mínimo, descarga inicial menor de 8 MB y carga en menos de 10 segundos.",
+      "Roblox DevEx en 2026: 0,0038 $ por Robux, mínimo 30.000 Robux ganados, formulario W-8BEN para España; desde junio de 2026, 0,0054 $ por Robux para gasto de jugadores de EE. UU. mayores de 18 verificados en juegos R15 con avatares articulados.",
+      "Open Cloud publica el place con un POST a /universes/v1/{universeId}/places/{placeId}/versions con cabecera x-api-key; la clave necesita permiso universe-places:write.",
+      "Géneros que funcionan en web en 2026: hipercasual (79 % del tiempo de juego en CrazyGames) y puzle (21 %); los runners dominan y simulación e idle tienen demanda con poca oferta.",
+      "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego."
+    ]
+  },
+  {
+    "clave": "m-catala",
+    "letra": "M",
+    "nombre": "Catalán con IA por voz",
+    "marca": "Nuevo en España",
+    "resumen": "Tutor conversacional de catalán por voz para oposiciones, arraigo y trabajo; niveles B2 y C1.",
+    "estado": "pendiente",
+    "orden": 5,
+    "modelo": "Suscripción 9,99 €/mes",
+    "margenCliente": 40,
+    "objetivoMes12": 250,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Google (aprender catalán, nivell C); anuncios de búsqueda desde el mes 2",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión M",
+      "Elegir TTS barato con buen catalán"
+    ],
+    "paraMoises": [
+      "Claves de Stripe, Vercel, Neon y TTS"
+    ],
+    "mejoras": [
+      "Simulacro oral exacto del nivell C con cronómetro de preparación y puntuación según la rúbrica oficial, más informe de castellanismos detectados.",
+      "Selector de variante (central, valencià, balear, nord-occidental) para la voz y el léxico: ventaja única.",
+      "Freemium de 5 minutos al día; 9,99 €/mes ilimitado; plan B2B para hospitales, ayuntamientos y academias, anclado frente a los 263 € del curso del CPNL.",
+      "Calendario de examen integrado (8 de mayo de 2027 y convocatorias universitarias) con plan de estudio inverso; cubrir también el escrito con corrección IA.",
+      "Marketing en catalán en TikTok e Instagram, colaboración con Voluntariat per la llengua y Softcatalà, y presentarse al Aina Challenge para financiar la voz propia."
+    ],
+    "competidores": [
+      {
+        "nombre": "Parla.cat (Generalitat)",
+        "url": "https://www.parla.cat/",
+        "precio": "Autoaprendizaje gratis; tutorizado de 60 a 150 €",
+        "debilidad": "Plataforma antigua sin conversación por voz ni IA; sin simulacro oral del C1"
+      },
+      {
+        "nombre": "CPNL",
+        "url": "https://www.cpnl.cat/",
+        "precio": "Curso de Suficiència (C1) unos 263 €",
+        "debilidad": "Plazas limitadas, listas de espera, poca práctica oral individual"
+      },
+      {
+        "nombre": "Duolingo Català",
+        "url": "https://www.duolingo.com/course/ca/es/Learn-Catalan",
+        "precio": "Gratis",
+        "debilidad": "Solo desde español, nivel básico y poco mantenido; no sirve para B2 ni C1"
+      },
+      {
+        "nombre": "Talkpal",
+        "url": "https://talkpal.ai/",
+        "precio": "De 5 a 10 $/mes",
+        "debilidad": "Catalán no confirmado; genérico, sin estructura del examen"
+      },
+      {
+        "nombre": "ChatGPT por voz (guía de la UB)",
+        "url": "https://diposit.ub.edu/items/095b5894-66c6-4e11-982a-2bda19a35a91",
+        "precio": "Gratis o Plus",
+        "debilidad": "La propia guía advierte de errores en catalán; sin rúbrica ni progreso"
+      },
+      {
+        "nombre": "Examen oficial del Departament de Política Lingüística",
+        "url": "https://llengua.gencat.cat/",
+        "precio": "Tasa C1 57,45 €; próxima prueba 8 de mayo de 2027",
+        "debilidad": "Referencia, no competidor: convocatoria anual y resultados lentos"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "projecte-aina/whisper-large-v3-ca-3catparla",
+        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla",
+        "licencia": "Apache-2.0",
+        "uso": "Reconocimiento de voz en catalán afinado por el BSC",
+        "estrellas": ""
+      },
+      {
+        "nombre": "projecte-aina/whisper-large-v3-tiny-caesar",
+        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-tiny-caesar",
+        "licencia": "Apache-2.0",
+        "uso": "Detectar mezcla catalán-castellano: los castellanismos del alumno",
+        "estrellas": ""
+      },
+      {
+        "nombre": "projecte-aina/matxa-tts-cat-multiaccent",
+        "url": "https://huggingface.co/projecte-aina/matxa-tts-cat-multiaccent",
+        "licencia": "CC-BY-NC-4.0 (uso comercial requiere licencia)",
+        "uso": "Voz en 4 variantes (central, nord-occidental, balear, valencià); negociar licencia o entrenar voz propia",
+        "estrellas": ""
+      },
+      {
+        "nombre": "shivammehta25/Matcha-TTS",
+        "url": "https://github.com/shivammehta25/Matcha-TTS",
+        "licencia": "MIT",
+        "uso": "Entrenar una voz catalana propia sin la restricción no comercial",
+        "estrellas": "1.369"
+      },
+      {
+        "nombre": "BSC-LT/salamandra-7b-instruct",
+        "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+        "licencia": "Apache-2.0",
+        "uso": "Modelo de lenguaje entrenado con catalán para corrección y tareas",
+        "estrellas": ""
+      },
+      {
+        "nombre": "Softcatala/arena-cat",
+        "url": "https://github.com/Softcatala/arena-cat",
+        "licencia": "no verificado",
+        "uso": "Comparativa de competencia en catalán de los modelos, para elegir el del tutor",
+        "estrellas": "22"
+      },
+      {
+        "nombre": "pipecat-ai/pipecat",
+        "url": "https://github.com/pipecat-ai/pipecat",
+        "licencia": "BSD-2",
+        "uso": "Agente de voz en tiempo real con proveedores intercambiables",
+        "estrellas": "16.757"
+      },
+      {
+        "nombre": "livekit/agents",
+        "url": "https://github.com/livekit/agents",
+        "licencia": "Apache-2.0",
+        "uso": "Alternativa WebRTC para el agente de voz con SDK web y móvil",
+        "estrellas": "14.910"
+      }
+    ],
+    "hallazgos": [
+      "Demanda récord: el CPNL ofreció 42.000 plazas en un trimestre (un 25 % más que el año anterior) y los grupos se llenan; la práctica oral individual es el cuello de botella.",
+      "El C1 es requisito en oposiciones y sanidad (el Departament de Salut hace sus propias pruebas): canal B2B claro con el ICS, hospitales y ayuntamientos.",
+      "Estructura oficial del C1: escrito 70 % (comprensión, expresión escrita de 100-120 y 180-195 palabras, uso de la lengua) y oral 30 % (monólogo con 2 imágenes más diálogo); apto con el 65 % global y mínimos por área.",
+      "Hueco real: Duolingo es básico, Parla.cat no tiene voz ni IA, las apps de idiomas con IA no confirman catalán; nadie ofrece simulacro oral del C1 con rúbrica.",
+      "Pila abierta madura: reconocimiento y modelos de lenguaje Apache-2.0 del BSC; el riesgo está en la voz (Matxa es no comercial) y en la calidad desigual de los modelos en catalán.",
+      "Riesgo competitivo: el proyecto AINA o la Generalitat podrían lanzar un tutor gratuito; diferenciarse por preparación de examen, dialecto y feedback estructurado."
+    ]
+  },
+  {
+    "clave": "g-cuentos",
+    "letra": "G",
+    "nombre": "Cuentos personalizados",
+    "marca": "Niños",
+    "resumen": "Cuentos infantiles ilustrados y personalizados, en PDF e impresos bajo demanda. Tienda abierta el 15/11 para Navidad.",
+    "estado": "pendiente",
+    "orden": 6,
+    "fechaLimite": "2026-11-15",
+    "modelo": "PDF 7,90 € · impreso 34,90 €",
+    "margenCliente": 9,
+    "objetivoMes12": 100,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión G antes del 1/11",
+      "Cuenta de imprenta"
+    ],
+    "paraMoises": [
+      "Claves de Stripe",
+      "Cuenta en Gelato",
+      "Vercel y Neon"
+    ],
+    "mejoras": [
+      "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",
+      "Posicionar el catalán como diferencial: landing y SEO en 'conte personalitzat', acuerdos con escoles bressol, AMPAs y llibreries.",
+      "Añadir audiocuento narrado incluido en el PDF mediante QR; coste casi nulo y casi nadie lo ofrece.",
+      "Vista previa gratuita de 2 o 3 páginas antes de pagar para reducir el abandono.",
+      "Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez."
+    ],
+    "competidores": [
+      {
+        "nombre": "Aventopía (España, IA con la cara del niño)",
+        "url": "https://aventopia.com/",
+        "precio": "40 € el libro físico más 3,99 € de envío, entrega en 8 a 10 días; versión digital 1,99 € como extra",
+        "debilidad": "Sin PDF barato independiente; catálogo cerrado de plantillas; entrega lenta para Navidad"
+      },
+      {
+        "nombre": "MiCuento (Barcelona)",
+        "url": "https://micuento.com/",
+        "precio": "Tapa dura de 29 a 45 € según título; envío de 7 a 14 días",
+        "debilidad": "Personalización limitada a nombre y rasgos, no historia a medida; sin PDF; plazos largos"
+      },
+      {
+        "nombre": "Wonderbly (Penguin Random House)",
+        "url": "https://www.wonderbly.com/",
+        "precio": "Tapa blanda unos 30 €, tapa dura unos 37 €; imprime en 2 a 4 días",
+        "debilidad": "Marca global en inglés, sin catalán, precios altos con envío internacional"
+      },
+      {
+        "nombre": "MundoCuento (España, IA)",
+        "url": "https://mundocuento.es/",
+        "precio": "no verificado",
+        "debilidad": "Marca pequeña con pocas reseñas; compite directamente en el mismo SEO"
+      },
+      {
+        "nombre": "Ludobooks",
+        "url": "https://www.ludobooks.com/",
+        "precio": "no verificado (incluye catalán y euskera)",
+        "debilidad": "Plantillas fijas, sin historia a medida ni PDF económico"
+      },
+      {
+        "nombre": "Fabularis, Hekaya, Taleora (herramientas de IA anglosajonas)",
+        "url": "https://bookfoundry.ai/es/personalized-kids-books/",
+        "precio": "PDF de 5 a 8 $; impreso aparte",
+        "debilidad": "Español traducido, sin catalán, ilustración irregular, no imprimen en España"
+      },
+      {
+        "nombre": "Librio (Suiza)",
+        "url": "https://librio.com/en/personalized-childrens-books",
+        "precio": "no verificado (ofrece catalán, euskera y gallego)",
+        "debilidad": "Único con catalán, pero envío internacional y sin IA"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "puppeteer/puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer",
+        "licencia": "Apache-2.0",
+        "uso": "Convertir el cuento en HTML a PDF con tamaño exacto y sangrado",
+        "estrellas": "95.000"
+      },
+      {
+        "nombre": "pagedjs/pagedjs",
+        "url": "https://github.com/pagedjs/pagedjs",
+        "licencia": "MIT",
+        "uso": "Paginación de libro (márgenes espejo, pares e impares) antes de imprimir",
+        "estrellas": "3.000"
+      },
+      {
+        "nombre": "Hopding/pdf-lib",
+        "url": "https://github.com/Hopding/pdf-lib",
+        "licencia": "MIT",
+        "uso": "Unir cubierta e interior, dedicatoria, metadatos, dividir para la imprenta",
+        "estrellas": "8.400"
+      },
+      {
+        "nombre": "Kozea/WeasyPrint",
+        "url": "https://github.com/Kozea/WeasyPrint",
+        "licencia": "BSD-3",
+        "uso": "Alternativa para PDF con CMYK y perfiles de color de imprenta",
+        "estrellas": "8.900"
+      },
+      {
+        "nombre": "typst/typst",
+        "url": "https://github.com/typst/typst",
+        "licencia": "Apache-2.0",
+        "uso": "Maquetación determinista de interiores con plantillas en catalán y castellano",
+        "estrellas": "55.000"
+      },
+      {
+        "nombre": "devlimelabs/lulu-print-mcp",
+        "url": "https://glama.ai/mcp/servers/@devlimelabs/lulu-print-mcp",
+        "licencia": "no verificado",
+        "uso": "Envoltorio de la API de impresión de Lulu (costes, envío, pedidos)",
+        "estrellas": ""
+      }
+    ],
+    "hallazgos": [
+      "Precio de mercado en España para tapa dura personalizada: de 29 a 45 €. Los 34,90 € quedan en la banda media; el PDF a 7,90 € casi no existe entre competidores españoles.",
+      "El catalán es un hueco real: solo Ludobooks y Librio lo ofrecen, y ninguno con historia generada a medida.",
+      "Costes de impresión no oficiales: Peecho tapa dura desde 5,20 €, Gelato fotolibro tapa dura de 12 a 19 $ con producción en España, Lulu de 11 a 15 $. Margen bruto estimado sobre 34,90 €: de 12 a 22 € antes de envío (3 a 6 €) y pasarela. Confirmar por la API de precios de Gelato.",
+      "Plazos: la ventana real de venta de tapa dura acaba hacia el 10 o 14 de diciembre por las fechas límite de Gelato; después solo PDF.",
+      "Gasto navideño en regalos en España: de 462 a 580 € por hogar, con tendencia al regalo con componente emocional.",
+      "Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad."
+    ]
+  },
+  {
+    "clave": "i-kdp",
+    "letra": "I",
+    "nombre": "Libros en Amazon KDP",
+    "marca": "Pasivos",
+    "resumen": "Cuadernos de lógica, pensamiento computacional y programación sin pantalla para niños, en castellano y catalán.",
+    "estado": "pendiente",
+    "orden": 7,
+    "modelo": "2–5 € de margen por libro",
+    "margenCliente": 3.5,
+    "objetivoMes12": 180,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Buscador de Amazon; Amazon Ads solo en lanzamiento",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión I: 5 títulos y pipeline"
+    ],
+    "paraMoises": [
+      "Abrir cuenta KDP",
+      "Subir los paquetes"
+    ],
+    "mejoras": [
+      "Serie por edades (6-8, 9-12) y por lengua con el mismo motor; título con 'pensamiento computacional' y 'sin pantallas', los términos que usan padres y docentes.",
+      "Precio de 11,99 a 12,99 € (por encima del umbral del 60 %) con 100 a 120 páginas en blanco y negro; color solo en la cubierta.",
+      "Páginas de explicación para padres y QR a soluciones y vídeos, puente con los cursos.",
+      "Ilustraciones por código (SVG determinista: laberintos, cuadrículas, pixel art) para no tener que marcar imágenes de IA y asegurar calidad de impresión.",
+      "Vender también a colegios y extraescolares con copias de autor a coste, y apuntar en Amazon.es a 'regalo educativo Navidad' y 'actividades verano'."
+    ],
+    "competidores": [
+      {
+        "nombre": "E. Gutiérrez, Libro de actividades de lógica para niños 8-12",
+        "url": "https://www.amazon.es/dp/B0BV4BDLGV",
+        "precio": "10,39 € tapa blanda, 130 páginas, 4,5 estrellas con 47 valoraciones",
+        "debilidad": "Diseño genérico, sin enfoque en programación ni catalán"
+      },
+      {
+        "nombre": "E. Gutiérrez, Lógica para niños audaces 6-10",
+        "url": "https://www.amazon.es/dp/B0B7Q1MS4S",
+        "precio": "10,39 €, 4,9 estrellas con 26 valoraciones",
+        "debilidad": "Cuatro variantes casi idénticas; sin progresión pedagógica ni soluciones explicadas"
+      },
+      {
+        "nombre": "Cora Mendan, Exploradores del cerebro",
+        "url": "https://www.amazon.com/dp/B0FG7TG8NX",
+        "precio": "no verificado; 60 páginas",
+        "debilidad": "Muy corto, portada de stock"
+      },
+      {
+        "nombre": "El superpoder de programar (sin pantallas)",
+        "url": "https://www.amazon.es/",
+        "precio": "12,99 €, 4,8 estrellas (ficha no verificada)",
+        "debilidad": "Único título directo de programación sin pantalla en castellano; sin catálogo ni catalán"
+      },
+      {
+        "nombre": "García Parga, Pensamiento computacional (Anaya)",
+        "url": "https://www.amazon.com/dp/8469844687",
+        "precio": "no verificado; 40 páginas",
+        "debilidad": "Orientado al aula, poca disponibilidad"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "john-science/mazelib",
+        "url": "https://github.com/john-science/mazelib",
+        "licencia": "MIT",
+        "uso": "Generar y resolver laberintos por niveles, exportables a SVG",
+        "estrellas": "254"
+      },
+      {
+        "nombre": "puzzletide (npm)",
+        "url": "https://www.npmjs.com/package/puzzletide",
+        "licencia": "MIT",
+        "uso": "Sopas de letras, crucigramas y sudokus con solución única en Node",
+        "estrellas": ""
+      },
+      {
+        "nombre": "py-sudoku (PyPI)",
+        "url": "https://pypi.org/project/py-sudoku/",
+        "licencia": "no verificado",
+        "uso": "Sudokus 4×4 y 6×6 para niños con dificultad ajustable",
+        "estrellas": ""
+      },
+      {
+        "nombre": "CTAN kdpcover",
+        "url": "https://ctan.org/pkg/kdpcover",
+        "licencia": "LPPL",
+        "uso": "Cálculo de lomo y cubierta completa para KDP",
+        "estrellas": ""
+      },
+      {
+        "nombre": "Kozea/WeasyPrint",
+        "url": "https://github.com/Kozea/WeasyPrint",
+        "licencia": "BSD-3",
+        "uso": "Interior KDP desde HTML y CSS con márgenes según número de páginas",
+        "estrellas": "8.900"
+      },
+      {
+        "nombre": "Hopding/pdf-lib",
+        "url": "https://github.com/Hopding/pdf-lib",
+        "licencia": "MIT",
+        "uso": "Ensamblar interior y soluciones, comprobar tamaño de página",
+        "estrellas": "8.400"
+      },
+      {
+        "nombre": "typst/typst",
+        "url": "https://github.com/typst/typst",
+        "licencia": "Apache-2.0",
+        "uso": "Plantillas de interior reproducibles por edad e idioma",
+        "estrellas": "55.000"
+      }
+    ],
+    "hallazgos": [
+      "Precio de referencia en Amazon.es para cuadernos de lógica: de 10 a 13 €. El más vendido tiene solo 47 valoraciones: nicho con poca competencia y volumen moderado.",
+      "Regalías KDP en 2026: 60 % del precio menos la impresión si el precio es de 9,99 € o más (50 % por debajo). Calcular la impresión en color con la calculadora oficial antes de fijar precio.",
+      "Hay que declarar texto o imágenes generados con IA al subir; el contenido asistido por IA no. La declaración no se muestra a los lectores.",
+      "Los libros de actividades no cuentan como 'low content': conservan ISBN gratuito y vista previa.",
+      "KDP admite catalán como idioma del libro, así que la edición catalana no cambia el pipeline.",
+      "Riesgo: saturación de puzles genéricos; la diferenciación es el ángulo 'pensamiento computacional sin pantallas', que casi nadie cubre en castellano y nadie en catalán."
+    ]
+  },
+  {
+    "clave": "j-cursos",
+    "letra": "J",
+    "nombre": "Cursos en Udemy",
+    "marca": "Pasivos",
+    "resumen": "Dos cursos en vídeo: programación para niños desde casa (para padres) e IA práctica para pequeños negocios.",
+    "estado": "pendiente",
+    "orden": 8,
+    "modelo": "15–40 € por curso; Udemy se queda el 63 % si trae al alumno",
+    "margenCliente": 8,
+    "objetivoMes12": 150,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Buscador de Udemy; cupones de lanzamiento",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión J"
+    ],
+    "paraMoises": [
+      "Cuenta de instructor",
+      "Subir los cursos"
+    ],
+    "mejoras": [
+      "Udemy como embudo a precio bajo y la versión extendida con plantillas y actualizaciones en Hotmart o web propia a 49-99 €.",
+      "Pipeline reproducible Markdown → Marp → voz → ffmpeg para 30 a 60 lecciones cortas y regrabar rápido cuando cambien las herramientas; intros con cámara para humanizar.",
+      "Curso para padres por edades (5-7 sin pantalla con el libro de KDP, 8-10 Scratch, 11-13 Python) con plan semanal de 20 minutos y versión catalana.",
+      "Curso de IA para autónomos con 10 casos por sector y módulo legal de España (RGPD, Verifactu 2027, AI Act) que ningún curso de 2023 cubre.",
+      "Captación con vídeos cortos generados desde cada lección, lista de comprobación descargable y venta cruzada con cuentos y libros KDP."
+    ],
+    "competidores": [
+      {
+        "nombre": "Scratch para niños: crea videojuegos (Patricio Cordero)",
+        "url": "https://www.udemy.com/course/scratch-programacion-de-juegos/",
+        "precio": "De 12,99 a 19,99 € en promoción",
+        "debilidad": "Dirigido al niño, no al padre; sin plan por edades"
+      },
+      {
+        "nombre": "Curso acelerado de programación para niños (Juan Ojeda)",
+        "url": "https://www.udemy.com/course/curso-acelerado-de-programacion-para-ninos-y-ninas/",
+        "precio": "no verificado; 23 alumnos",
+        "debilidad": "Casi sin alumnos: el nicho 'para padres' en español está vacío y exige traer tráfico de fuera"
+      },
+      {
+        "nombre": "Scratch 3.0: guía para profesores y padres (en inglés)",
+        "url": "https://www.udemy.com/course/scratch-30-a-guide-for-teachers-parents-and-students/",
+        "precio": "no verificado; 1.359 alumnos, 4,0 estrellas",
+        "debilidad": "En inglés, 41 minutos, de 2022; valida la demanda del ángulo 'para padres'"
+      },
+      {
+        "nombre": "Desbloquea el poder de ChatGPT para tu emprendimiento",
+        "url": "https://www.udemy.com/course/desbloquea-el-poder-de-chatgpt-para-tu-emprendimiento/",
+        "precio": "no verificado; 3.373 alumnos, 4,2 estrellas",
+        "debilidad": "Desactualizado (2023); enfoque emprendimiento latinoamericano, no autónomos de España"
+      },
+      {
+        "nombre": "ChatGPT para los negocios (Bryan Chávez)",
+        "url": "https://www.udemy.com/course/chatgpt-para-negocios/",
+        "precio": "no verificado; actualizado 12/2023",
+        "debilidad": "Desactualizado; sin casos por sector"
+      },
+      {
+        "nombre": "Grupo2000 y Educaweb, cursos de IA para pymes",
+        "url": "https://grupo2000.es/cursos/novedades/curso-de-ia-para-pymes-v3/",
+        "precio": "De 210 a 349 €, bonificables",
+        "debilidad": "Caros y formales; no cubren al autónomo sin empleados, que no puede bonificar"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "remotion-dev/remotion",
+        "url": "https://github.com/remotion-dev/remotion",
+        "licencia": "Gratis para empresas de 3 o menos personas",
+        "uso": "Intros, títulos animados y vídeos cortos de marketing desde React",
+        "estrellas": "50.000"
+      },
+      {
+        "nombre": "ManimCommunity/manim",
+        "url": "https://github.com/ManimCommunity/manim",
+        "licencia": "MIT",
+        "uso": "Animaciones de algoritmos, bucles y condicionales para el curso de niños",
+        "estrellas": "38.000"
+      },
+      {
+        "nombre": "grokify/marp2video",
+        "url": "https://github.com/grokify/marp2video",
+        "licencia": "no verificado",
+        "uso": "Diapositivas Marp + narración + ffmpeg: un MP4 por lección",
+        "estrellas": ""
+      },
+      {
+        "nombre": "hexgrad/kokoro",
+        "url": "https://github.com/hexgrad/kokoro",
+        "licencia": "Apache-2.0",
+        "uso": "TTS local gratuito con voces en español para narrar sin coste por carácter",
+        "estrellas": "8.000"
+      },
+      {
+        "nombre": "rany2/edge-tts",
+        "url": "https://github.com/rany2/edge-tts",
+        "licencia": "GPL-3.0",
+        "uso": "Voces neuronales gratis en es-ES y ca-ES para borradores y versión catalana",
+        "estrellas": ""
+      },
+      {
+        "nombre": "marp-team/marp-cli",
+        "url": "https://github.com/marp-team/marp-cli",
+        "licencia": "MIT",
+        "uso": "Diapositivas desde Markdown a PNG o PDF",
+        "estrellas": ""
+      }
+    ],
+    "hallazgos": [
+      "Reparto de Udemy en 2026: 37 % para el instructor en ventas del marketplace, 97 % con cupón propio, 15 % del fondo de Udemy Business. Instructores reportan caídas de ingresos del 30 al 67 %.",
+      "El alumno paga de 10 a 20 € en promociones casi permanentes; el ingreso típico por venta orgánica es de 4 a 7 €.",
+      "Hotmart cobra 9,9 % más 0,50 € por venta, permite precios de 50 a 150 € y afiliados.",
+      "El nicho 'programación para niños para padres' en español está casi vacío en Udemy (23 a 1.359 alumnos, casi todo de 2022): la demanda hay que traerla desde fuera.",
+      "El nicho 'IA para pequeños negocios' en español tiene cursos de 2023 desactualizados; ventaja clara para uno de 2026 con casos de autónomos españoles (facturación, Verifactu, RGPD).",
+      "Riesgos: dependencia de Udemy, competencia con formación bonificada y cursos gratuitos de Cámaras de Comercio; la voz sintética puede percibirse como baja calidad si no se mezcla con voz propia."
+    ]
+  },
+  {
+    "clave": "l-examenes",
+    "letra": "L",
+    "nombre": "Motor de exámenes",
+    "marca": "Exámenes",
+    "resumen": "El motor de B aplicado a la nueva PAU, al DELE y SIELE para todo el mundo y al nivell C de català.",
+    "estado": "pendiente",
+    "orden": 9,
+    "modelo": "Suscripción 9,99 €/mes por vertical",
+    "margenCliente": 36,
+    "objetivoMes12": 150,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Google por vertical e idioma; sin anuncios hasta tener datos de B",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión L después de B"
+    ],
+    "paraMoises": [
+      "Claves de Stripe, Vercel y Neon",
+      "3 dominios"
+    ],
+    "mejoras": [
+      "Vertical DELE A2 'nacionalidad' en inglés, árabe, chino y portugués como entrada mundial, con simulacro completo y corrección IA de la expresión escrita; enlaza con la marca Nuevo en España.",
+      "PAU: entrenador por asignatura con los criterios de corrección oficiales y 'predicción de nota'; colaboraciones con profesores de 2º de Bachillerato y canales de TikTok de selectividad.",
+      "Nivell C: simulacro con la estructura oficial y corrección de expresión escrita con rúbrica; SEO en catalán.",
+      "Un motor, tres marcas; precio de 9,99 €/mes o pase por convocatoria (29 € hasta el examen), porque el usuario compra por evento.",
+      "Oral con WhisperX y rúbrica MCER como función premium: ninguna app actual lo hace."
+    ],
+    "competidores": [
+      {
+        "nombre": "Entrena la PAU (Edelvives)",
+        "url": "https://www.educaciontrespuntocero.com/noticias/preparar-la-pau-con-entrena-la-pau-edelvives/",
+        "precio": "Gratis con los libros de la editorial",
+        "debilidad": "Ligado a la editorial; no cubre DELE ni catalán"
+      },
+      {
+        "nombre": "Let's EBAU Selectivitime",
+        "url": "https://internetpasoapaso.com/?p=142297",
+        "precio": "Gratis",
+        "debilidad": "Tipo test sin corrección de desarrollo; no adaptado a la nueva PAU competencial"
+      },
+      {
+        "nombre": "Instituto Cervantes, cursos de preparación DELE",
+        "url": "https://clic.cervantes.es/en/preparacionDELE",
+        "precio": "50 € por nivel en autoaprendizaje; de 130 a 140 € en directo",
+        "debilidad": "Institucional, sin práctica ilimitada; el examen B2 ya cuesta unos 190 €"
+      },
+      {
+        "nombre": "Apps de preparación DELE",
+        "url": "https://apps.apple.com/us/app/-/id1468642025",
+        "precio": "Gratis con compras internas",
+        "debilidad": "Apps pequeñas, sin corrección de escritura ni oral"
+      },
+      {
+        "nombre": "CPNL y Parla.cat (nivell C)",
+        "url": "https://www.cpnl.cat",
+        "precio": "Gratis o bajo coste",
+        "debilidad": "Oferta pública sin simulacros ilimitados ni corrección automática"
+      },
+      {
+        "nombre": "Global Exam",
+        "url": "https://global-exam.com",
+        "precio": "De 49 a 75 € por acceso (DELF)",
+        "debilidad": "Fuerte en francés, débil en español y catalán; sin IA de corrección"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "rogasper/labas-bahasa",
+        "url": "https://github.com/rogasper/labas-bahasa",
+        "licencia": "AGPL-3.0",
+        "uso": "Estructura de práctica de exámenes de idiomas (secciones, tiempos, banco)",
+        "estrellas": "98"
+      },
+      {
+        "nombre": "open-spaced-repetition/ts-fsrs",
+        "url": "https://github.com/open-spaced-repetition/ts-fsrs",
+        "licencia": "MIT",
+        "uso": "Repaso espaciado compartido con oposiciones",
+        "estrellas": "830"
+      },
+      {
+        "nombre": "m-bain/whisperX",
+        "url": "https://github.com/m-bain/whisperX",
+        "licencia": "BSD-2",
+        "uso": "Transcripción con marcas de tiempo para evaluar la prueba oral DELE y la expresión oral del nivell C",
+        "estrellas": "24.800"
+      },
+      {
+        "nombre": "Halleck45/OpenPronounce",
+        "url": "https://github.com/Halleck45/OpenPronounce",
+        "licencia": "MIT",
+        "uso": "Evaluación de pronunciación por fonema, adaptable a español y catalán",
+        "estrellas": "152"
+      },
+      {
+        "nombre": "Exámenes oficiales PAU (UC3M y comunidades)",
+        "url": "https://uc3m.es/pruebasacceso/en/modelos-examenes",
+        "licencia": "Administración pública",
+        "uso": "Enunciados y criterios de corrección oficiales para alimentar el generador",
+        "estrellas": ""
+      }
+    ],
+    "hallazgos": [
+      "DELE: 142.379 candidatos en el curso 2024-25; el A2 es el nivel más demandado (62.223) por la nacionalidad española. Mercado mundial y recurrente.",
+      "PAU: 281.956 matriculados en 2025; la nueva PAU competencial se completa en 2028. El mensaje debe ser 'nueva PAU', no un año.",
+      "Casi el 90 % aprueba la PAU con nota media superior a 7: el dolor no es aprobar sino subir nota. El producto vende décimas.",
+      "Nivell C: sin cifras públicas de inscritos; demanda ligada a oposiciones (requisito C1) y a residencia; oferta pública gratuita pero sin simulacros interactivos.",
+      "No existen bancos abiertos de DELE; el material oficial del Cervantes tiene copyright. Hay que generar ítems propios alineados al MCER.",
+      "Riesgos: estacionalidad (PAU en junio); la marca 'DELE' es del Cervantes (no usarla en nombre ni dominio); la corrección automática de escritura y oral es cara a 9,99 €."
+    ]
+  },
+  {
+    "clave": "o-lectura",
+    "letra": "O",
+    "nombre": "Lectura en voz alta",
+    "marca": "Niños",
+    "resumen": "El niño lee en voz alta, la app escucha, corrige y mide la fluidez; castellano y catalán, 5 a 8 años.",
+    "estado": "pendiente",
+    "orden": 10,
+    "modelo": "Suscripción 6,99 €/mes",
+    "margenCliente": 38,
+    "objetivoMes12": 140,
+    "ingresosMes": 0,
+    "costesMes": 0,
+    "clientes": 0,
+    "canal": "Escuelas, redes de padres; prueba de anuncios de 150 € en el mes 4",
+    "enlaces": {},
+    "acciones": [
+      {
+        "fecha": "2026-10-23",
+        "texto": "Proyecto definido, prompt de sesión listo"
+      },
+      {
+        "fecha": "2026-10-23",
+        "texto": "Investigación de competencia y código abierto incorporada al panel"
+      }
+    ],
+    "proximos": [
+      "Abrir la sesión O"
+    ],
+    "paraMoises": [
+      "Claves de Stripe, Vercel, Neon y proveedor de voz"
+    ],
+    "mejoras": [
+      "Métrica central: palabras correctas por minuto y precisión frente al baremo por curso, en informe semanal con percentil y evolución.",
+      "Pipeline: wav2vec2 catalán y español más alineamiento forzado contra el texto, y Whisper solo como respaldo; textos cortos controlados reducen el error.",
+      "Beta gratuita en 5 a 10 escuelas catalanas a cambio de audio etiquetado con consentimiento, para ajustar el modelo y construir el primer baremo catalán de fluidez.",
+      "Modo bilingüe real y biblioteca de textos graduados con licencia propia.",
+      "Licencia de aula para escuelas y logopedas además de la cuota familiar, con panel docente y alerta de riesgo lector."
+    ],
+    "competidores": [
+      {
+        "nombre": "Read with Ello",
+        "url": "https://www.ello.com",
+        "precio": "14,99 $/mes digital; 39,99 $/mes con libros físicos",
+        "debilidad": "Solo inglés, centrado en iPad"
+      },
+      {
+        "nombre": "Amira Learning",
+        "url": "https://amiralearning.com/spanish.html",
+        "precio": "Venta a distritos de EE. UU.: de 5 a 20 $ por alumno",
+        "debilidad": "Español de EE. UU., sin catalán, sin oferta a familias en España"
+      },
+      {
+        "nombre": "Google Read Along",
+        "url": "https://readalong.google",
+        "precio": "Gratis",
+        "debilidad": "Español sí, catalán no; sin métricas de fluidez para padres ni normas por curso"
+      },
+      {
+        "nombre": "Microsoft Reading Coach",
+        "url": "https://support.microsoft.com/en-us/education/reading-coach-language-settings",
+        "precio": "Gratis",
+        "debilidad": "Tiene catalán pero está pensado para aulas con Teams; no gamificado para 5 a 8 años"
+      },
+      {
+        "nombre": "Walinwa",
+        "url": "https://www.walinwa.com",
+        "precio": "Licencia anual, no verificado",
+        "debilidad": "Ortografía y comprensión desde 3º; sin lectura en voz alta"
+      }
+    ],
+    "repos": [
+      {
+        "nombre": "m-bain/whisperX",
+        "url": "https://github.com/m-bain/whisperX",
+        "licencia": "BSD-2",
+        "uso": "Reconocimiento con marcas de tiempo por palabra para calcular palabras por minuto y precisión",
+        "estrellas": "24.800"
+      },
+      {
+        "nombre": "MahmoudAshraf97/ctc-forced-aligner",
+        "url": "https://github.com/MahmoudAshraf97/ctc-forced-aligner",
+        "licencia": "BSD-2",
+        "uso": "Alinear el texto que debe leer el niño con lo que dijo, para detectar omisiones y sustituciones",
+        "estrellas": "571"
+      },
+      {
+        "nombre": "MontrealCorpusTools/Montreal-Forced-Aligner",
+        "url": "https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner",
+        "licencia": "MIT",
+        "uso": "Alineamiento por fonema con modelos en español",
+        "estrellas": "1.910"
+      },
+      {
+        "nombre": "ahmedadelattia/whisperKids",
+        "url": "https://github.com/ahmedadelattia/whisperKids",
+        "licencia": "no verificado",
+        "uso": "Receta de ajuste de Whisper a voz infantil (inglés), replicable en español y catalán",
+        "estrellas": ""
+      },
+      {
+        "nombre": "projecte-aina/whisper-large-v3-ca-3catparla",
+        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla",
+        "licencia": "Apache-2.0",
+        "uso": "Whisper en catalán (710 horas, WER 9,1) como base",
+        "estrellas": ""
+      },
+      {
+        "nombre": "ccoreilly/wav2vec2-large-100k-voxpopuli-catala",
+        "url": "https://huggingface.co/ccoreilly/wav2vec2-large-100k-voxpopuli-catala",
+        "licencia": "Apache-2.0",
+        "uso": "wav2vec2 catalán, más ligero que Whisper, para puntuar por palabra",
+        "estrellas": ""
+      },
+      {
+        "nombre": "justinhunt/moodle-mod_readaloud",
+        "url": "https://github.com/justinhunt/moodle-mod_readaloud",
+        "licencia": "GPL",
+        "uso": "Único proyecto abierto maduro de análisis de fluidez lectora (palabras por minuto, precisión)",
+        "estrellas": "6"
+      }
+    ],
+    "hallazgos": [
+      "Nadie ofrece a familias en España una app de lectura en voz alta con IA en español y catalán: Ello es solo inglés, Amira vende a distritos de EE. UU., Google no tiene catalán.",
+      "Hay baremos de referencia del Ministerio (Ripoll 2020): palabras correctas por minuto de 48 en 1º de Primaria a 124 en 6º. No existe baremo oficial catalán.",
+      "El reconocimiento de voz infantil es el riesgo técnico principal: los modelos estándar fallan con 5 a 8 años; el ajuste con audio infantil reduce el error del 12 al 30 %. No hay corpus infantil abierto en español ni catalán: habrá que recogerlo con consentimiento.",
+      "La literatura confirma que reconocimiento más alineamiento con el pasaje coincide sustancialmente con evaluadores humanos en palabras por minuto.",
+      "Canales: AMPAs y escuelas catalanas (preocupación pública por la comprensión lectora), logopedas y maestros de primer ciclo.",
+      "Riesgos: privacidad de voz de menores, coste de GPU si se procesa en servidor, y que Google o Microsoft añadan catalán gratis."
+    ]
+  }
+]

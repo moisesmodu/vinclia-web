@@ -1,0 +1,24 @@
+{
+  "actualizado": "2026-10-23",
+  "objetivos": [
+    { "nombre": "Primer objetivo", "mensual": 1000, "plazo": "2027-10" },
+    { "nombre": "Cubrir la cuota de autónomo y los costes", "mensual": 350, "plazo": "2027-03" },
+    { "nombre": "Libertad financiera (gastos personales cubiertos)", "mensual": 3000, "plazo": "2028-10" }
+  ],
+  "escenario": "S1 prudente (pendiente de confirmar por Moisés)",
+  "costesFijosMes": 25,
+  "inversionAcumulada": 0,
+  "decisionesPendientes": [
+    { "texto": "Confirmar escenario de marketing: S0 sin anuncios o S1 prudente", "donde": "VIABILIDAD.md §5" },
+    { "texto": "Abrir cuenta de Stripe y pasar claves de prueba", "donde": "https://dashboard.stripe.com/register" },
+    { "texto": "Cuenta de desarrollador de Google Play (25 $)", "donde": "https://play.google.com/console/signup" },
+    { "texto": "Cuenta en Gelato para la impresión de cuentos", "donde": "https://www.gelato.com" },
+    { "texto": "Crear el proyecto del panel en Vercel (Root Directory: panel)", "donde": "https://vercel.com/new" }
+  ],
+  "reglas": [
+    "Nada sale hacia fuera sin aprobación de Moisés.",
+    "Ningún gasto nuevo de más de 20 €/mes sin anotarlo antes.",
+    "Cada sesión actualiza panel/data/proyectos.json al terminar.",
+    "Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes."
+  ]
+}

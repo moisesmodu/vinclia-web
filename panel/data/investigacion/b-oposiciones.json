@@ -1,0 +1,27 @@
+{"clave":"b-oposiciones",
+"competidores":[
+{"nombre":"OpositaTest","url":"https://opositatest.com","precio":"15,99 €/mes; 7,99 €/mes en plan anual (95,92 €)","debilidad":"Centrado en Estado y grandes comunidades; cobertura parcial de la Generalitat; sin Mossos ni ayuntamientos; al cancelar se pierde el historial"},
+{"nombre":"PreparaOposiciones.com","url":"https://www.preparaoposiciones.com","precio":"De 6,66 a 12,90 €/mes","debilidad":"Moodle genérico con interfaz anticuada; sin modo de examen oficial ni catalán nativo"},
+{"nombre":"InnoTest","url":"https://apps.apple.com/es/app/innotest-auxiliar-adtvo-estado/id1632345697","precio":"Gratis con compras internas","debilidad":"Solo oposiciones estatales; nada de Cataluña"},
+{"nombre":"Passarella Tests (Mossos, en catalán)","url":"https://apps.apple.com/us/app/passarella-tests/id6745947389","precio":"19,99 €/mes o 39,99 €/año","debilidad":"Solo Mossos, solo iOS, app de una academia; el doble de precio mensual"},
+{"nombre":"Easy-Quizzz","url":"https://www.easy-quizzz.com/es/","precio":"PDFs de pago por oposición","debilidad":"Granja SEO con tests genéricos y promesas de '99 % aprobados'; sin seguimiento"},
+{"nombre":"TestOpos Auxiliar Enfermería","url":"https://apps.apple.com/es/app/testopos-auxiliar-enfermer%C3%ADa/id993707682","precio":"Gratis con compras internas","debilidad":"Valoración de 1,4 sobre 5; genérico, no adaptado al ICS ni al catalán"}],
+"repos":[
+{"nombre":"open-spaced-repetition/ts-fsrs","url":"https://github.com/open-spaced-repetition/ts-fsrs","licencia":"MIT","uso":"Repaso espaciado FSRS en TypeScript para las preguntas falladas","estrellas":"830"},
+{"nombre":"mawoka-myblock/ClassQuiz","url":"https://github.com/mawoka-myblock/ClassQuiz","licencia":"MPL-2.0","uso":"Referencia de modelo de datos de preguntas, importación e idiomas","estrellas":"733"},
+{"nombre":"PragatiVerma18/MLH-Quizzet","url":"https://github.com/PragatiVerma18/MLH-Quizzet","licencia":"MIT","uso":"Pipeline texto a preguntas, para arrancar el generador desde temarios oficiales","estrellas":"97"},
+{"nombre":"ComputingVictor/MCP-BOE","url":"https://github.com/ComputingVictor/MCP-BOE","licencia":"MIT","uso":"Acceso programático a la legislación consolidada del BOE; replicar para el DOGC","estrellas":"57"},
+{"nombre":"Naritsumi/EstudiaTAI-app","url":"https://github.com/Naritsumi/EstudiaTAI-app","licencia":"MIT","uso":"Referencia de experiencia móvil sin conexión para tests","estrellas":"10"}],
+"hallazgos":[
+"Precio ancla del mercado: OpositaTest 15,99 €/mes, PreparaOposiciones de 6,66 a 12,90, Passarella 19,99. Los 9,99 € quedan bien si el valor es 'específico de Cataluña'.",
+"Demanda fuerte: la Generalitat anuncia 8.474 plazas en 2026; Mossos 1.587 plazas con unos 9.300 aspirantes en la convocatoria anterior; 16.493 inscritos para 1.325 plazas en una sola convocatoria.",
+"Hueco real: ningún competidor grande cubre Mossos, ayuntamientos ni ICS en catalán; los que existen son apps de una academia o granjas SEO.",
+"En catalán hay poca competencia SEO ('test auxiliar administratiu generalitat', 'test mossos 2026'); grupos de Telegram y WhatsApp de opositores son el canal.",
+"Riesgos: ingresos estacionales según convocatorias; derechos de autor si se reutilizan preguntas de academias; cambios de temario que obligan a revisión continua.",
+"El dato clave de retención: en OpositaTest al cancelar se pierde el historial. Ofrecer historial permanente y exportable es un diferencial barato."],
+"mejoras":[
+"Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",
+"Modo 'examen oficial': simulacro con el formato exacto (75 preguntas, penalización, tiempo) y percentil frente a otros usuarios.",
+"Pipeline PDF a preguntas desde el DOGC con revisión marcada como 'verificada' y repaso espaciado FSRS de los fallos; nadie en el nicho lo ofrece.",
+"Bilingüe con cambio de idioma por pregunta; SEO en catalán y contenido para la prueba de nivel C exigida en las bases.",
+"Plan 'pausa' en vez de cancelación (congelar entre convocatorias conservando historial) y referidos con un mes gratis."]}
