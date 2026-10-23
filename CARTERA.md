@@ -35,6 +35,24 @@ y también 2 Fiverr/Upwork, 12 Rank and rent y 14 Portal academias (exigen conve
 | E | Reclamaciones y recursos (multas, vuelos, telecos, luz, bancos): escrito listo + guía | Dinero que se recupera | "recurrir multa", "reclamar vuelo" | 9,90–19,90 € | Plantillas OCU, despachos |
 | F | Facturación Verifactu simple para autónomos pequeños (facturas por WhatsApp) | Obligatoria: sociedades 1/1/2027, autónomos 1/7/2027 (RDL 15/2025) | "programa facturación Verifactu" | 4,99 €/mes | Muy fuerte (Holded, Quipu, app AEAT) |
 
+### Segunda ronda (23/10 noche): Moisés mantiene A, B, G, H, I, J; descarta C, D, E, F, K. Nuevas en auge:
+
+| | Opción | Auge | Llegan por | Precio |
+|---|---|---|---|---|
+| L | Motor de exámenes multi-vertical (PAU nueva, DELE/SIELE mundial, nivell C català, teórico DGT en idiomas) | Mismo motor que B, diez nichos | "examen DELE B2 práctica", "test nivell C" | 9,99 €/mes por vertical |
+| M | Catalán con IA por voz (B2/C1, pronunciación) | Oposiciones Generalitat, arraigo, empleo | "aprender catalán", "nivell C examen" | 9,99 €/mes |
+| N | "Nuevo en España" (ampliación de A): guías y tests multilingües de renovación, empadronamiento, SS, carnet, homologación, nacionalidad | RD 316/2026: >500.000 regularizados en 2026, mismos trámites por delante | búsquedas en árabe/francés/rumano/latino, TikTok, WhatsApp | 4,99 €/mes o 19,90 € pack |
+| O | Lectura en voz alta para niños con IA (fluidez, 5–8 años, es/ca) | Comprensión lectora en caída; padres buscan refuerzo activo | escuelas, redes de padres | 6,99 €/mes |
+| P | Fichas para profesores en Teachers Pay Teachers (pensamiento computacional, es/ca/en) | Plataforma mundial; español poco cubierto | buscador de la plataforma | 2–8 €/ficha, catálogo |
+| Q | Juegos en Roblox (8–14 años) publicados por Open Cloud API | 1.500 M$ pagados a creadores en 2025; público propio en Algorithmics | la plataforma | Robux → DevEx |
+| R | Audioguías IA de pueblos y rutas (catálogo en app) | Turismo en récord; pueblos sin guía | "qué ver en [pueblo]", tiendas | 2,99 €/guía |
+| S | Asistente de voz/WhatsApp para mayores (medicación, llamada diaria, aviso a hijos) | Economía plateada; pagan los hijos | "recordatorio medicación mayores" | 9,99 €/mes |
+| T | Tests de práctica en Udemy para certificaciones de nube e IA (inglés) | Certificaciones IA disparadas | la plataforma | 15–25 €/pack |
+
+**Marcas propuestas (comparten código y público):** Nuevo en España (A+N+M+DGT) · Exámenes (B+L+T) · Niños (G+O+Q+P) ·
+Pasivos (H+I+J+R). S Mayores aparte. Recomendación de Claude: empezar por Nuevo en España (A+N+M), luego Exámenes (B+L);
+de Niños, O y Q.
+
 Pasivos que se mantienen (deseo o regalo, sin venta personal): 3 Cuentos, 4 App cuentos, 6 Tutor IA, 7–8 Juegos,
 9 KDP, 10 Cursos, 11 Canal.
 
