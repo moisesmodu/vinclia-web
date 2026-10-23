@@ -18,6 +18,17 @@
 - Cada proyecto vive en su propio repositorio `moisesmodu/<nombre>` y se despliega en Vercel.
   Esta carpeta solo guarda el plan y el registro.
 
+## Proceso acordado con Moisés (23/10 noche)
+
+1. **Definir opciones** (en curso). Confirmadas: A, B, G, H, I, J. Propuestas por Claude para entrar: N, M, L, O, Q.
+   En espera: R, S, P, T. Descartadas: 1, 2, 5, 12, 13, 14, C, D, E, F, K.
+2. **Plan de viabilidad y costes reales totales por opción**, con marketing como coste real en tres capas:
+   orgánico (gratis en dinero, 3–6 meses de retraso contabilizados), pagado (coste por cliente en España 2026 en
+   Meta/TikTok/Google Ads/Google Play, presupuesto mínimo mensual) y plataforma (la comisión es el marketing).
+   Cada ficha: coste por cliente, meses hasta cubrir costes, inversión hasta el punto de equilibrio, peor caso en euros.
+   La tabla de costes anterior de este documento queda incompleta hasta entonces: no incluye marketing.
+3. **Plan de desarrollo con Claude: una sesión por opción**, cada una con entregable cerrado y criterio de "hecho".
+
 ## Revisión del 23/10/2026 (tarde) · criterios y descartes
 
 Moisés fija tres condiciones: **necesidad real**, **el cliente llega solo** (Google, tiendas de apps, plataformas)
