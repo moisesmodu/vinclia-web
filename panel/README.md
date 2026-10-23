@@ -38,3 +38,7 @@ cd panel && npm install && npm run dev   # http://localhost:3000
   y limita los cron a uno al día, así que el panel va en el plan Pro ya previsto o con cron de GitHub Actions.
 - Siguientes mejoras: ingresos por fuente (Stripe por producto, portales de juegos, DevEx) con captura diaria a Neon;
   vista pública /open solo con cifras agregadas, como activo de marketing "build in public"; el resto tras contraseña.
+
+## Copia publicada en claude.ai
+`npm run instantanea` (desde `panel/`) genera `panel/instantanea/panel.html`, una versión de un solo archivo con navegación por
+`#ancla`, para publicarla como página en claude.ai cuando Vercel no esté disponible. Es una copia fija: la versión viva es la de Vercel.

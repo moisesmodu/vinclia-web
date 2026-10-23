@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "instantanea": "node scripts/instantanea.mjs"
   },
   "dependencies": {
     "marked": "^15.0.0",
