@@ -18,7 +18,30 @@
 - Cada proyecto vive en su propio repositorio `moisesmodu/<nombre>` y se despliega en Vercel.
   Esta carpeta solo guarda el plan y el registro.
 
-## Resumen
+## Revisión del 23/10/2026 (tarde) · criterios y descartes
+
+Moisés fija tres condiciones: **necesidad real**, **el cliente llega solo** (Google, tiendas de apps, plataformas)
+y **nadie vende en persona**. Con ellas se descartan: 1 Recepcionista local, 5 Comentarios LOMLOE, 13 Carta QR,
+y también 2 Fiverr/Upwork, 12 Rank and rent y 14 Portal academias (exigen convencer a alguien).
+
+### Candidatas nuevas de necesidad real (pendientes de elegir 3–5 para ficha completa)
+
+| | Opción | Necesidad | Llegan por | Precio | Competencia |
+|---|---|---|---|---|---|
+| A | Nacionalidad española: app CCSE (+ DELE A2) con explicaciones en 6 idiomas y guía de trámites | Examen de 85 €, mensual; 300 preguntas oficiales públicas | "test CCSE", Google Play | 9,99 € / 3 meses | PDFs y apps flojas |
+| B | Oposiciones de cola larga (Generalitat, ayuntamientos, Mossos, Bombers, sanidad; en catalán): tests IA + repaso espaciado + simulacros | >30.000 aspirantes/convocatoria grande; todos pagan tests | "test [oposición]" | 9,99 €/mes | OpositaTest/InnoTest solo en las grandes |
+| C | Revisión de contratos con IA (alquiler, hipoteca, laboral): informe de cláusulas abusivas y qué negociar | Nadie entiende lo que firma; abogado 150 € | "revisar contrato alquiler" | 14,90 €/contrato | ChatGPT genérico |
+| D | Herencias: impuesto de sucesiones por CCAA, reparto legal, pasos y plazos | Plazo 6 meses; errores de miles de euros | "calcular impuesto sucesiones [CCAA]" | 19,90 €/informe | Calculadoras sueltas, gestores |
+| E | Reclamaciones y recursos (multas, vuelos, telecos, luz, bancos): escrito listo + guía | Dinero que se recupera | "recurrir multa", "reclamar vuelo" | 9,90–19,90 € | Plantillas OCU, despachos |
+| F | Facturación Verifactu simple para autónomos pequeños (facturas por WhatsApp) | Obligatoria: sociedades 1/1/2027, autónomos 1/7/2027 (RDL 15/2025) | "programa facturación Verifactu" | 4,99 €/mes | Muy fuerte (Holded, Quipu, app AEAT) |
+
+Pasivos que se mantienen (deseo o regalo, sin venta personal): 3 Cuentos, 4 App cuentos, 6 Tutor IA, 7–8 Juegos,
+9 KDP, 10 Cursos, 11 Canal.
+
+Lectura de Claude: A, B, C y D cumplen mejor las tres condiciones; F es la mayor necesidad pero la más competida y
+para 2027; E compite con plantillas gratis. De los pasivos, 7–8 y 3 tienen más recorrido.
+
+## Resumen (versión original del 23/10, mañana)
 
 | # | Proyecto | Tipo | Primer euro | A 6 meses (mal / bien) | Tu parte una vez |
 |---|---|---|---|---|---|
