@@ -162,6 +162,34 @@ Las tareas programadas se crean cuando Moisés dé el visto bueno a la ola 1 (na
 - Lo que ya tiene Algorithmics Lleida (portal, bot, SEPA, informes) a 99 €/mes para otras academias
   Algorithmics. Red cálida. Exige multi-tenant y hablar con la central. Solo si Moisés lo quiere.
 
+## Costes (23/10/2026)
+
+**Una sola vez:** dominios 12–15 €/año cada uno; Google Play 25 $ (ola 3). Stripe, Gelato, KDP, Udemy, Fiverr, CrazyGames, itch.io y AdMob no cobran alta.
+
+**Fijos al mes, vendas o no:** Vercel Pro 20 $ (el plan gratuito prohíbe uso comercial; uno sirve para todo),
+Neon 0 € (hasta 0,5 GB), Resend 0 € (3.000 correos/mes), número de teléfono 1–2 €/mes (Twilio, piden justificante
+de dirección en España). ElevenLabs (Creator 22 $ ≈ 275 min de agente; Pro 99 $ ≈ 1.238 min), Higgsfield y la
+suscripción de Claude ya se pagan. **Coste nuevo: 20–25 €/mes.**
+
+**Variables por venta o uso:**
+- Cuento PDF: < 0,05 € de IA + ilustraciones (créditos Higgsfield) + Stripe 1,5 % + 0,25 €.
+- Cuento impreso: impresión tapa dura + envío 20–27 € (estimado; comprobar en la calculadora de Gelato al abrir
+  cuenta). **Precio de venta mínimo 34,90 €**, no 29,90.
+- Comentarios de evaluación: < 0,02 € por clase con Haiku 5.5.
+- Recepcionista: voz 0,08 $/min (≈ 7 $/mes para 60 llamadas), telefonía, WhatsApp API 0,017 €/mensaje (5–15 €/mes).
+  Total 10–20 € de los 149 € de cuota.
+- Comisiones: Fiverr 20 %; KDP 40 % + impresión (quedan 2–5 €/libro); Udemy 63 % si trae al alumno, 3 % con enlace
+  propio; CrazyGames/Poki pagan 50–70 % de la publicidad; Google Play 15 % de compras.
+- API de Claude por millón de tokens: Haiku 5.5 0,10 $ entrada / 0,50 $ salida; Sonnet 5.5 2 $ / 10 $. Un cuento ≈ 4.000
+  tokens; 100 cuentos/mes < 5 €.
+
+**Opcional:** anuncios Meta para cuentos en Navidad, 5 €/día (150 €/mes), solo cuando la tienda ya venda sin anuncios. **⏸**
+
+**Fiscal:** sin coste nuevo (autónomo ya dado de alta). Libros impresos y PDF al 4 % de IVA; servicios al 21 %.
+
+**Pérdida máxima a 6 meses sin ninguna venta y sin anuncios:** ≈ 160 € (dominios + Vercel); ≈ 300 € si se añaden
+teléfono y plan Creator de ElevenLabs.
+
 ## Lo que necesito de ti para arrancar la ola 1 (unas 2 horas, una sola vez)
 1. Un nombre para la marca de cuentos (te propongo tres cuando empecemos) y su dominio.
 2. Cuenta de Stripe (una sirve para todos los proyectos, con productos separados).
