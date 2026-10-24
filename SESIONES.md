@@ -16,7 +16,7 @@
 - Rama base: `claude/estrategia-ingresos-recurrentes-tx0rvw`. Trabaja en la rama que te asigne la sesión, creada
   desde esa base. Al terminar, abre un PR hacia la rama base (no hacia `main`).
 - Cada proyecto vive en `proyectos/<clave>/` (claves: `a-ccse`, `n-nuevo-en-espana`, `b-oposiciones`, `juegos`,
-  `m-catala`, `g-cuentos`, `i-kdp`, `j-cursos`, `l-examenes`, `o-lectura`). Dentro: código, `README.md`,
+  `m-catala`, `g-cuentos`, `i-kdp`, `j-cursos`, `l-examenes`, `o-lectura`, `p-webs-adsense`). Dentro: código, `README.md`,
   `MARKETING.md`, `TAREA-PROGRAMADA.md`, `PARA-MOISES.md`.
 - Binarios pesados (vídeos, PDFs de imprenta, modelos 3D) **no van a git**: súbelos al almacenamiento del proyecto
   (Vercel Blob o similar) y deja el enlace. Imágenes de web optimizadas, sí.

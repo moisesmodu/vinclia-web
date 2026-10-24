@@ -2,7 +2,7 @@
 
 > Cada sesión se abre sobre el repo `moisesmodu/vinclia-web`, rama `claude/estrategia-ingresos-recurrentes-tx0rvw`.
 > Copia el prompt tal cual. Todos empiezan igual: leer `SESIONES.md`, `CARTERA.md` y `VIABILIDAD.md`.
-> Orden recomendado: A → N → B → Juegos → M → G (antes del 15/11) → I → J → L → O.
+> Orden recomendado: A → N → B → Juegos → M → G (antes del 15/11) → I → J → L → O → P.
 
 ---
 
@@ -142,4 +142,22 @@ Producto: app (PWA + Android) en la que un niño de 5 a 8 años lee textos en vo
 Marketing orgánico: 20 páginas SEO ("mi hijo lee mal", "fluidez lectora primaria"), guía descargable para escuelas, 10 guiones de vídeo para padres, ficha de Google Play. Prueba de anuncios de 150 € prevista en el mes 4: prepara la campaña sin activarla.
 
 Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar con un niño real desde el móvil. Moisés solo debe: claves de Stripe, Vercel, Neon y del proveedor de voz.
+```
+
+---
+
+## P · Webs de herramientas con AdSense (`proyectos/p-webs-adsense`)
+
+```
+Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos, y en panel/data/proyectos.json el campo lider del proyecto p-webs-adsense. Construye el proyecto P en proyectos/p-webs-adsense.
+
+Objetivo de esta sesión: la fábrica de sitios y los dos primeros sitios publicados. Son sitios de HERRAMIENTAS Y DATOS, no de artículos: cada página debe ofrecer un cálculo, un dato real o una utilidad que la gente use (Google penaliza el contenido escalado con IA sin valor, y los resúmenes de IA recortan los clics informativos, pero no los de herramientas). Castellano y catalán en todos.
+
+Fábrica (proyectos/p-webs-adsense/fabrica): plantilla Astro estática (o Next.js exportado) con rendimiento perfecto en móvil (Lighthouse 95+), diseño limpio y propio (nada de plantilla genérica), bloque de consentimiento de cookies con la gestión de consentimiento gratuita de Google (TCF 2.2) ya integrada, espacios de anuncio de AdSense preparados pero vacíos hasta tener la cuenta aprobada, sitemap, datos estructurados, páginas legales, analítica sin cookies (Umami), y un generador de páginas a partir de datos (CSV/JSON) para hacer páginas programáticas con datos oficiales. Despliegue en Cloudflare Pages o Vercel, un proyecto por sitio.
+
+Sitio 1, "herramientas laborales": calculadoras de sueldo neto 2027 (IRPF por comunidad, incluida Cataluña), finiquito, indemnización por despido, paro, baja, cuota de autónomos 2027, nómina; cada calculadora con explicación corta, fuentes oficiales citadas y fecha de actualización. Sitio 2, "calendarios y festivos": calendario laboral 2027 por comunidad y por municipio (festivos locales del DOGC y del resto de boletines), calendario escolar, días entre fechas, semana del año; miles de páginas programáticas con datos oficiales reales, una por municipio. Elige dominios cortos y memorables en .es para los dos (propón 3 opciones por sitio en PARA-MOISES.md; nada se compra sin él).
+
+Marketing: solo SEO. Para cada sitio, mapa de 200 palabras clave de cola larga con intención de uso, enlazado interno, y 10 fichas de datos "citables" (tablas con datos oficiales) que atraen enlaces. Nada de anuncios de pago, nunca. Tarea programada: cada semana, 20 páginas nuevas con datos actualizados, revisión de errores de Search Console (cuando Moisés conecte la cuenta) e informe; cada trimestre, nuevo sitio del catálogo (conversores, precio de la luz por horas, farmacias de guardia por municipio, equivalencias de tallas, y los que proponga la investigación del panel).
+
+Criterio de hecho: el de SESIONES.md, más los dos sitios desplegados en URL temporal, con Lighthouse 95+ en móvil, 50 páginas de herramientas en el sitio 1 y 1.000+ páginas de datos en el sitio 2. Moisés solo debe: comprar los 2 dominios, crear la cuenta de AdSense y pegar el código de verificación, y conectar Search Console.
 ```
