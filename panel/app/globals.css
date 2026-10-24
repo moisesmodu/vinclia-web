@@ -184,3 +184,27 @@ b { font-weight: 600; }
 .lider-bloque li { margin: 0.3rem 0; }
 .lider-bloque.plan { background: var(--azafran-suave); padding: 0.8rem 1.1rem; margin-top: 1.2rem; border-left: 3px solid var(--azafran); }
 .lider-bloque.plan h3 { margin-top: 0; }
+
+/* Juicio y arranque de sesión */
+.empezar { background: var(--papel); border: 1px solid var(--linea); border-left: 4px solid var(--azafran); padding: 1rem 1.2rem 1.2rem; margin: 1.5rem 0; }
+.empezar h2 { margin-top: 0; }
+.empezar code { font-size: 0.9em; background: var(--fondo); padding: 0.05rem 0.35rem; border-radius: 4px; }
+.empezar .prompt { margin-top: 0.8rem; max-height: 22rem; overflow: auto; }
+.juicio { border-top: 3px solid var(--tinta); padding-top: 1rem; }
+.juicio-cab { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 0.4rem 0 0.8rem; }
+.juicio h3 { font-size: 1rem; margin: 0.6rem 0 0.2rem; }
+.juicio p { margin: 0.2rem 0 0.6rem; max-width: 70ch; }
+.juicio-exito { color: var(--tinta-2); }
+.juicio-parada { background: var(--azafran-suave); border-left: 3px solid var(--azafran); padding: 0.6rem 0.9rem; max-width: none !important; }
+.prob { display: inline-flex; align-items: center; gap: 0.6rem; }
+.prob-barra { display: inline-block; width: 9rem; max-width: 40vw; height: 10px; background: var(--fondo); border: 1px solid var(--linea); border-radius: 999px; overflow: hidden; }
+.prob-relleno { display: block; height: 100%; background: var(--azafran); }
+.prob b { font-variant-numeric: tabular-nums; }
+.veredicto { font-size: 0.85rem; padding: 0.2rem 0.65rem; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+.veredicto.adelante { border-color: var(--verde); color: var(--verde); }
+.veredicto.condiciones { border-color: var(--azafran); color: #8a5f00; }
+.veredicto.aparcar { border-color: var(--rojo); color: var(--rojo); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .veredicto.condiciones { color: var(--azafran); } }
+:root[data-theme='dark'] .veredicto.condiciones { color: var(--azafran); }
+.fila-juicio { grid-template-columns: 2.4fr 1.6fr 1.6fr; }
+@media (max-width: 760px) { .fila-juicio { grid-template-columns: 1fr 1fr; } .fila-juicio .fila-nombre { grid-column: 1 / -1; } .veredicto { white-space: normal; } }

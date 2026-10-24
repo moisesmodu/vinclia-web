@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Camino from '@/components/Camino';
+import { Probabilidad, Veredicto } from '@/components/Juicio';
 import { cartera, proyectos, ultimaAccion, euros, fecha } from '@/lib/data';
 
 export default function Inicio() {
@@ -53,6 +54,30 @@ export default function Inicio() {
           <p className="nota">Escenario de marketing: {c.escenario}. Actualizado el {fecha(c.actualizado)}.</p>
         </section>
       </div>
+
+      {c.juicioCartera && (
+        <section className="juicio-cartera">
+          <h2>Probabilidad de éxito</h2>
+          <p className="nota">Simulación de la cartera con los supuestos de <Link href="/docs/juicio/">JUICIO.md</Link>, del {fecha(c.juicioCartera.fecha)}.</p>
+          <div className="cifras">
+            <div><b>{c.juicioCartera.p1000a6} %</b><span>de llegar a 1.000 €/mes en 6 meses</span></div>
+            <div><b>{c.juicioCartera.p1000a12} %</b><span>de llegar a 1.000 €/mes en 12 meses</span></div>
+            <div><b>{c.juicioCartera.p350a6} %</b><span>de cubrir cuota y costes en 6 meses</span></div>
+            <div><b>{euros(c.juicioCartera.mediana12)}</b><span>ingreso mediano al mes 12</span></div>
+          </div>
+          <p className="nota">Núcleo de arranque: {c.juicioCartera.nucleo.join(', ')}. El resto, por orden, cuando el núcleo tenga datos.</p>
+          <div className="libro">
+            <div className="fila fila-juicio fila-cab"><span>Proyecto</span><span>Probabilidad a 6 meses</span><span>Veredicto</span></div>
+            {[...lista].sort((a, b) => (b.juicio?.probabilidad ?? 0) - (a.juicio?.probabilidad ?? 0)).map((p) => p.juicio && (
+              <Link href={`/p/${p.clave}/`} key={p.clave} className="fila fila-juicio">
+                <span className="fila-nombre"><span className="letra">{p.letra}</span><span><b>{p.nombre}</b><small>{p.juicio.exito}</small></span></span>
+                <span><Probabilidad valor={p.juicio.probabilidad} /></span>
+                <span><Veredicto texto={p.juicio.veredicto} /></span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section>
         <h2>Los proyectos</h2>

@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Copiar from '@/components/Copiar';
 import Lider from '@/components/Lider';
-import { proyecto, proyectos, promptDe, euros, fecha } from '@/lib/data';
+import Juicio from '@/components/Juicio';
+import { proyecto, proyectos, promptDe, euros, fecha, REPO, RAMA } from '@/lib/data';
 
 export function generateStaticParams() {
   return proyectos().map((p) => ({ clave: p.clave }));
@@ -31,6 +32,23 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
           </p>
         </div>
       </header>
+
+      <section className="empezar">
+        <h2>Empezar la sesión de este proyecto</h2>
+        <ol className="tareas">
+          <li>Abre una sesión nueva de Claude Code sobre el repositorio <code>{REPO}</code>, rama <code>{RAMA}</code>.</li>
+          <li>Pega el prompt de abajo tal cual. La sesión lee las reglas, el plan, la viabilidad y esta ficha antes de construir.</li>
+          <li>Al terminar, la sesión abre un PR hacia esa rama y actualiza esta ficha.</li>
+        </ol>
+        {prompt ? (
+          <>
+            <Copiar texto={prompt} />
+            <pre className="prompt">{prompt}</pre>
+          </>
+        ) : <p className="vacio">Este proyecto no tiene prompt en PROMPTS-SESIONES.md.</p>}
+      </section>
+
+      {p.juicio && <Juicio j={p.juicio} />}
 
       <section className="rentabilidad">
         <div><b>{euros(p.ingresosMes)}</b><span>ingresos al mes</span></div>
@@ -122,15 +140,6 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
         ) : <p className="vacio">Pendiente de investigación.</p>}
       </section>
 
-      <section>
-        <h2>Prompt de la sesión</h2>
-        {prompt ? (
-          <>
-            <Copiar texto={prompt} />
-            <pre className="prompt">{prompt}</pre>
-          </>
-        ) : <p className="vacio">Este proyecto no tiene prompt en PROMPTS-SESIONES.md.</p>}
-      </section>
     </article>
   );
 }

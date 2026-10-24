@@ -31,6 +31,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -193,7 +197,15 @@
     "expansion": [
       "Examen de ciudadanía de EE. UU. en español (100 preguntas oficiales; demanda enorme entre hispanos)",
       "Prueba cívica de Francia 2026, Life in the UK, Einbürgerungstest alemán, italiano B1: mismo motor, otro banco"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 55,
+      "veredicto": "Adelante, el primero",
+      "exito": "50 ventas o 300 €/mes con conversión medida",
+      "porQue": "Demanda probada y mensual, contenido público, app oficial mal valorada, nadie explica en el idioma del candidato, se construye en una semana.",
+      "contra": "La app oficial es gratis; precio bajo; derechos del Cervantes sobre las preguntas y actualización anual.",
+      "parada": "Menos de 20 ventas con más de 2.000 visitas al mes a los 3 meses de publicar."
+    }
   },
   {
     "clave": "n-nuevo-en-espana",
@@ -227,6 +239,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -400,7 +416,15 @@
     "expansion": [
       "Nuevo en Portugal y Nuevo en Italia: misma ola migratoria, otras leyes",
       "Nuevo en EE. UU. en español: el mayor mercado; red de abogados colaboradores por país"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 40,
+      "veredicto": "Adelante con condiciones, tras A",
+      "exito": "50 clientes o 300 €/mes",
+      "porQue": "Un millón de renovaciones entre abril y junio de 2027, justo en el mes 6; nadie les habla en su idioma con fuentes oficiales; se vende dentro de A.",
+      "contra": "Disposición a pagar incierta frente a guías gratuitas de ONG; riesgo de parecer asesoramiento legal; mantenimiento continuo.",
+      "parada": "Menos de 100 ventas en la ola de renovación de 2027: pasa a contenido gratuito de A y se prueba la venta a ayuntamientos."
+    }
   },
   {
     "clave": "b-oposiciones",
@@ -434,6 +458,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -609,7 +637,15 @@
     "expansion": [
       "Concorsi pubblici en Italia y concours en Francia con el mismo motor",
       "Concursos públicos de Brasil: gigante y muy competido, solo con socio local"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 50,
+      "veredicto": "Adelante",
+      "exito": "50 suscriptores o 300 €/mes",
+      "porQue": "Hueco real en catalán, disposición a pagar probada (OpositaTest a 15,99 €), 8.474 plazas en 2026, historial permanente como diferencial barato.",
+      "contra": "La calidad legal de las preguntas lo es todo; ingresos estacionales; derechos de autor si se copian preguntas.",
+      "parada": "Conversión de prueba a pago inferior al 3 % con más de 500 usuarios de prueba a los 4 meses."
+    }
   },
   {
     "clave": "juegos",
@@ -643,6 +679,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -885,7 +925,15 @@
     },
     "expansion": [
       "Ya global: inglés primero porque EE. UU. y Reino Unido pagan la publicidad"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 35,
+      "veredicto": "Adelante (barato, techo alto)",
+      "exito": "Un juego con lanzamiento completo y 100 $/mes",
+      "porQue": "La plataforma trae al jugador; un juego bueno paga todo el catálogo; Monkey Mart y Fisch los hicieron una o dos personas; público de prueba en Algorithmics.",
+      "contra": "Lotería; CrazyGames rechaza clones; Roblox exige escalar si explota; mediana de 1.575 $ al año por desarrollador en Roblox.",
+      "parada": "Nunca por un juego; a los 6 juegos, si ninguno pasa del lanzamiento básico, se cambia de género."
+    }
   },
   {
     "clave": "m-catala",
@@ -919,6 +967,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -1107,7 +1159,15 @@
     },
     "expansion": [
       "El catalán no se exporta; el motor sí: vasco y gallego, portugués para inmigrantes en Portugal, italiano"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 35,
+      "veredicto": "Adelante con condiciones",
+      "exito": "50 suscriptores o 300 €/mes",
+      "porQue": "Demanda récord (42.000 plazas del CPNL en un trimestre), requisito en oposiciones y sanidad, nadie hace simulacro oral del C1 con rúbrica.",
+      "contra": "La calidad de voz y corrección en catalán es el producto entero; modelo de voz Matxa no comercial; coste por usuario; la Generalitat podría lanzar algo gratis.",
+      "parada": "Prueba previa con 20 candidatos al C1: si la corrección no coincide con la de un profesor en el 80 % de los casos, se para."
+    }
   },
   {
     "clave": "g-cuentos",
@@ -1142,6 +1202,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -1331,7 +1395,15 @@
     "expansion": [
       "EE. UU. en español e inglés: Gelato imprime localmente en 32 países",
       "México, Italia, Francia y Alemania con festividades propias (Día del Niño, Navidad)"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 35,
+      "veredicto": "Adelante solo si empieza esta semana",
+      "exito": "150 ventas en Navidad y Reyes",
+      "porQue": "Regalo emocional con pico de Navidad, PDF en minutos que Wonderbly no tiene, catalán sin competencia real, coste mínimo.",
+      "contra": "Tres semanas hasta el 15 de noviembre; margen fino del impreso; sin anuncios depende de afiliados y vídeos; Aventopía ocupa la posición 'IA'.",
+      "parada": "Menos de 40 ventas el 31 de diciembre: piloto automático para Sant Jordi y Reyes de 2028."
+    }
   },
   {
     "clave": "i-kdp",
@@ -1365,6 +1437,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -1542,7 +1618,15 @@
     "expansion": [
       "Amazon.com en español para hispanos de EE. UU. y Amazon.mx, mismo archivo",
       "Alemania, Francia e Italia traducidos por el mismo pipeline"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 25,
+      "veredicto": "Adelante, sin expectativas",
+      "exito": "5 títulos y 100 €/mes (publicar: 60 %)",
+      "porQue": "Casi seguro que se publica; nicho vacío en castellano y catalán; se acumula sin mantenimiento.",
+      "contra": "Techo bajo y lento; pocas reseñas en Amazon.es señalan volumen moderado.",
+      "parada": "No hace falta; con menos de 20 libros al mes a los 6 meses, piloto automático."
+    }
   },
   {
     "clave": "j-cursos",
@@ -1576,6 +1660,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -1751,7 +1839,15 @@
     "expansion": [
       "Latinoamérica ya es el mayor mercado de Udemy en español: ejemplos fiscales por país",
       "Versión en inglés de 'IA para pequeños negocios'"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 35,
+      "veredicto": "Adelante, sin expectativas",
+      "exito": "2 cursos, 200 alumnos y 100 €/mes (publicar: 60 %)",
+      "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe.",
+      "contra": "Udemy se queda el 63 % y cambia las reglas; 4 a 7 € por venta; la voz sintética puede restar.",
+      "parada": "No hace falta; actualización trimestral y piloto automático."
+    }
   },
   {
     "clave": "l-examenes",
@@ -1785,6 +1881,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -1958,7 +2058,15 @@
     "expansion": [
       "DELE y SIELE son mundiales: interfaz en inglés, chino, portugués y árabe; precios en dólares y reales",
       "Afiliados: profesores de español como lengua extranjera en YouTube y TikTok"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 25,
+      "veredicto": "Aparcar hasta que B tenga datos",
+      "exito": "50 suscriptores o 300 €/mes",
+      "porQue": "El DELE es mundial y el motor ya existirá; la PAU vende décimas.",
+      "contra": "Tres mercados a la vez diluyen; copyright del Cervantes; corrección oral y escrita cara a 9,99 €.",
+      "parada": "Arranca solo cuando B tenga 100 suscriptores; primero DELE A2 en inglés y árabe."
+    }
   },
   {
     "clave": "o-lectura",
@@ -1992,6 +2100,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Plan de expansión internacional añadido (mercados de salida)"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -2173,7 +2285,15 @@
     "expansion": [
       "EE. UU. bilingüe: programas de doble lengua en escuelas, pagan en dólares",
       "Latinoamérica por volumen; Brasil en portugués después"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 20,
+      "veredicto": "Aparcar como investigación",
+      "exito": "50 suscriptores o 300 €/mes",
+      "porQue": "Nadie lo hace en castellano y catalán para familias; canal escolar; preocupación pública por la lectura.",
+      "contra": "El reconocimiento de voz infantil es el riesgo técnico más alto de la cartera; sin corpus abierto; privacidad de menores; Google o Microsoft pueden añadir catalán gratis.",
+      "parada": "Beta gratuita en 5 escuelas a cambio de audio con consentimiento; producto de pago solo en 2027-28."
+    }
   },
   {
     "clave": "p-webs-adsense",
@@ -2203,6 +2323,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Catálogo de 7 sitios ordenado por RPM; EE. UU. en español como tercer sitio"
+      },
+      {
+        "fecha": "2026-10-24",
+        "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
       }
     ],
     "proximos": [
@@ -2421,6 +2545,14 @@
     "expansion": [
       "Sitio 3 del catálogo: finanzas e impuestos de EE. UU. en español (RPM de 15 a 40 $; abre Mediavine y Raptive)",
       "México por volumen con dominios .mx"
-    ]
+    ],
+    "juicio": {
+      "probabilidad": 45,
+      "veredicto": "Adelante, cuanto antes",
+      "exito": "3 sitios, AdSense aprobado y 20.000 páginas vistas al mes",
+      "porQue": "El más pasivo; las calculadoras resisten a los resúmenes de IA; catalán sin oferta; el sitio de EE. UU. en español paga de 15 a 40 $ y abre las redes premium; el reloj del SEO empieza al publicar.",
+      "contra": "El más lento (9 a 18 meses por dominio); dependencia total de Google; redes premium cerradas al tráfico español; riesgo de 'poco valor' si se escala sin datos reales.",
+      "parada": "Ningún sitio por encima de 5.000 páginas vistas al mes a los 6 meses: se revisa antes de abrir más dominios."
+    }
   }
 ]

@@ -17,6 +17,10 @@ function promptDe(clave) {
   const i = t.indexOf(`proyectos/${clave}`); if (i < 0) return null;
   const a = t.indexOf('```', i), b = t.indexOf('```', a + 3); return t.slice(a + 3, b).trim();
 }
+const clase = (v) => v.toLowerCase().startsWith('aparcar') ? 'aparcar' : (v.toLowerCase().includes('condicion') || v.toLowerCase().includes('solo si')) ? 'condiciones' : 'adelante';
+const veredicto = (v) => `<span class="veredicto ${clase(v)}">${esc(v)}</span>`;
+const prob = (n) => `<span class="prob" role="img" aria-label="${n} % de probabilidad"><span class="prob-barra"><span class="prob-relleno" style="width:${n}%"></span></span><b>${n} %</b></span>`;
+const RAMA = 'claude/estrategia-ingresos-recurrentes-tx0rvw', REPO = 'moisesmodu/vinclia-web';
 const lis = (arr) => (arr ?? []).map((x) => `<li>${esc(x)}</li>`).join('');
 const enlace = (txt, url) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(txt)}</a>` : esc(txt);
 
@@ -59,6 +63,12 @@ const inicio = `
   ${lista.filter((p) => p.fechaLimite).map((p) => `<p class="aviso"><b>${esc(p.nombre)}</b> tiene fecha límite el ${fecha(p.fechaLimite)}.</p>`).join('')}</section>
   <section><h2>Cómo funciona</h2><ul class="reglas">${lis(c.reglas)}</ul><p class="nota">Escenario de marketing: ${esc(c.escenario)}. Actualizado el ${fecha(c.actualizado)}.</p></section>
 </div>
+${c.juicioCartera ? `<section class="juicio-cartera"><h2>Probabilidad de éxito</h2><p class="nota">Simulación de la cartera con los supuestos de <a href="#juicio">Juicio</a>, del ${fecha(c.juicioCartera.fecha)}.</p>
+<div class="cifras"><div><b>${c.juicioCartera.p1000a6} %</b><span>de llegar a 1.000 €/mes en 6 meses</span></div><div><b>${c.juicioCartera.p1000a12} %</b><span>de llegar a 1.000 €/mes en 12 meses</span></div><div><b>${c.juicioCartera.p350a6} %</b><span>de cubrir cuota y costes en 6 meses</span></div><div><b>${euros(c.juicioCartera.mediana12)}</b><span>ingreso mediano al mes 12</span></div></div>
+<p class="nota">Núcleo de arranque: ${esc(c.juicioCartera.nucleo.join(', '))}. El resto, por orden, cuando el núcleo tenga datos.</p>
+<div class="libro"><div class="fila fila-juicio fila-cab"><span>Proyecto</span><span>Probabilidad a 6 meses</span><span>Veredicto</span></div>
+${[...lista].filter((p) => p.juicio).sort((a, b) => b.juicio.probabilidad - a.juicio.probabilidad).map((p) => `<a href="#${p.clave}" class="fila fila-juicio"><span class="fila-nombre"><span class="letra">${esc(p.letra)}</span><span><b>${esc(p.nombre)}</b><small>${esc(p.juicio.exito)}</small></span></span><span>${prob(p.juicio.probabilidad)}</span><span>${veredicto(p.juicio.veredicto)}</span></a>`).join('')}
+</div></section>` : ''}
 <section><h2>Los proyectos</h2><div class="libro">
   <div class="fila fila-cab"><span>Proyecto</span><span>Estado</span><span>Ingresos</span><span>Objetivo mes 12</span><span>Última acción</span></div>
   ${lista.map((p) => { const u = [...p.acciones].sort((a, b) => (a.fecha < b.fecha ? 1 : -1))[0]; return `<a href="#${p.clave}" class="fila estado-${p.estado.replace(' ', '-')}"><span class="fila-nombre"><span class="letra">${esc(p.letra)}</span><span><b>${esc(p.nombre)}</b><small>${esc(p.marca)}</small></span></span><span><span class="pastilla">${esc(p.estado)}</span></span><span class="num" data-etiqueta="Ingresos">${euros(p.ingresosMes)}<small>/mes</small></span><span class="num" data-etiqueta="Objetivo mes 12">${euros(p.objetivoMes12)}<small>/mes</small></span><span class="accion">${u ? `${esc(u.texto)}<small>${fecha(u.fecha)}</small>` : '<small>sin acciones</small>'}</span></a>`; }).join('')}
@@ -85,6 +95,8 @@ const fichas = lista.map((p) => {
   return `<section class="vista ficha" id="v-${p.clave}" hidden>
   <p class="volver"><a href="#inicio">Todos los proyectos</a></p>
   <header class="ficha-cab"><span class="letra grande">${esc(p.letra)}</span><div><h1>${esc(p.nombre)}</h1><p class="resumen">${esc(p.resumen)}</p><p class="meta"><span class="pastilla">${esc(p.estado)}</span> ${esc(p.marca)}${p.fechaLimite ? ` · fecha límite ${fecha(p.fechaLimite)}` : ''}</p></div></header>
+  <section class="empezar"><h2>Empezar la sesión de este proyecto</h2><ol class="tareas"><li>Abre una sesión nueva de Claude Code sobre el repositorio <code>${REPO}</code>, rama <code>${RAMA}</code>.</li><li>Pega el prompt de abajo tal cual. La sesión lee las reglas, el plan, la viabilidad y esta ficha antes de construir.</li><li>Al terminar, la sesión abre un PR hacia esa rama y actualiza esta ficha.</li></ol>${prompt ? `<button type="button" class="boton" data-copiar="pr-${p.clave}">Copiar prompt</button><pre class="prompt" id="pr-${p.clave}">${esc(prompt)}</pre>` : '<p class="vacio">Sin prompt.</p>'}</section>
+  ${p.juicio ? `<section class="juicio"><h2>Juicio a 6 meses</h2><div class="juicio-cab">${prob(p.juicio.probabilidad)}${veredicto(p.juicio.veredicto)}</div><p class="juicio-exito">Éxito a 6 meses significa: ${esc(p.juicio.exito)}.</p><div class="dos"><div><h3>A favor</h3><p>${esc(p.juicio.porQue)}</p></div><div><h3>En contra</h3><p>${esc(p.juicio.contra)}</p></div></div><p class="juicio-parada"><b>Criterio de parada:</b> ${esc(p.juicio.parada)}</p></section>` : ''}
   <section class="rentabilidad"><div><b>${euros(p.ingresosMes)}</b><span>ingresos al mes</span></div><div><b>${euros(p.costesMes)}</b><span>costes al mes</span></div><div class="${res < 0 ? 'rojo' : ''}"><b>${euros(res)}</b><span>resultado</span></div><div><b>${p.clientes}</b><span>clientes</span></div><div><b>${euros(p.objetivoMes12)}</b><span>objetivo mes 12</span></div><div><b>${cpo ?? '—'}</b><span>${cpo ? 'clientes para llegar' : 'depende de la plataforma'}</span></div></section>
   <p class="modelo"><b>Cómo cobra:</b> ${esc(p.modelo)}. <b>Cómo llegan:</b> ${esc(p.canal)}.</p>
   <div class="dos"><div>
@@ -99,11 +111,10 @@ const fichas = lista.map((p) => {
   ${lider(p.lider, 'Ingeniería inversa del líder')}${lider(p.segundoLider, 'Segundo referente')}
   <section><h2>Competencia</h2>${tabla(['Quién', 'Precio', 'Dónde flaquea'], p.competidores.map((x) => `<tr><td>${enlace(x.nombre, x.url)}</td><td>${esc(x.precio ?? '—')}</td><td>${esc(x.debilidad ?? '—')}</td></tr>`).join(''))}</section>
   <section><h2>Código abierto reutilizable</h2>${tabla(['Repositorio', 'Licencia', 'Para qué'], p.repos.map((r) => `<tr><td>${enlace(r.nombre, r.url)}${r.estrellas ? `<small> ${esc(r.estrellas)}</small>` : ''}</td><td>${esc(r.licencia ?? '—')}</td><td>${esc(r.uso ?? '—')}</td></tr>`).join(''))}</section>
-  <section><h2>Prompt de la sesión</h2>${prompt ? `<button type="button" class="boton" data-copiar="pr-${p.clave}">Copiar prompt</button><pre class="prompt" id="pr-${p.clave}">${esc(prompt)}</pre>` : '<p class="vacio">Sin prompt.</p>'}</section>
 </section>`;
 }).join('');
 
-const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md']]
+const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md']]
   .map(([slug, archivo]) => `<section class="vista doc" id="v-${slug}" hidden><p class="volver"><a href="#inicio">Panel</a></p><div class="md">${md(archivo)}</div></section>`).join('');
 
 const html = `<title>La cartera</title>
@@ -112,7 +123,7 @@ const html = `<title>La cartera</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>${css}</style>
 <div class="pagina">
-<header class="cabecera"><a href="#inicio" class="marca">La cartera</a><nav class="nav"><a href="#plan">Plan</a><a href="#viabilidad">Viabilidad</a><a href="#reglas">Reglas</a><a href="#prompts">Prompts</a></nav></header>
+<header class="cabecera"><a href="#inicio" class="marca">La cartera</a><nav class="nav"><a href="#plan">Plan</a><a href="#viabilidad">Viabilidad</a><a href="#reglas">Reglas</a><a href="#prompts">Prompts</a><a href="#juicio">Juicio</a></nav></header>
 <main class="contenido">
 <p class="aviso-instantanea">Copia publicada el ${fecha(new Date().toISOString().slice(0, 10))} desde el repositorio. La versión que se actualiza sola con cada sesión es la de Vercel.</p>
 <section class="vista" id="v-inicio">${inicio}</section>

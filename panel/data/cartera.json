@@ -48,5 +48,21 @@
     "Cada sesión actualiza panel/data/proyectos.json al terminar.",
     "Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes.",
     "Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero."
-  ]
+  ],
+  "juicioCartera": {
+    "p1000a6": 17,
+    "p1000a12": 66,
+    "p350a6": 65,
+    "p350a12": 87,
+    "mediana6": 500,
+    "mediana12": 1400,
+    "nucleo": [
+      "A CCSE",
+      "B Oposiciones",
+      "Juegos",
+      "P Webs",
+      "G Cuentos (solo si empieza esta semana)"
+    ],
+    "fecha": "2026-10-24"
+  }
 }

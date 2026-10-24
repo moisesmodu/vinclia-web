@@ -10,6 +10,7 @@ export type Lider = {
   modelo?: { propuesta?: string; precio?: string; embudo?: string; funciones?: string[]; retencion?: string; adquisicion?: string; tecnologia?: string; metricas?: string };
   loQueFunciona?: string[]; loQueFalla?: string[]; copiar?: string[]; mejorar?: string[]; adaptar?: string[]; planAccion?: string[];
 };
+export type Juicio = { probabilidad: number; veredicto: string; exito: string; porQue: string; contra: string; parada: string };
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
 export type Proyecto = {
@@ -20,7 +21,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
-  lider?: Lider; segundoLider?: Lider; expansion?: string[];
+  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio;
 };
 
 export type Cartera = {
@@ -29,6 +30,7 @@ export type Cartera = {
   escenario: string; costesFijosMes: number; inversionAcumulada: number;
   decisionesPendientes: { texto: string; donde?: string }[];
   reglas: string[];
+  juicioCartera?: { p1000a6: number; p1000a12: number; p350a6: number; p350a12: number; mediana6: number; mediana12: number; nucleo: string[]; fecha: string };
 };
 
 const raiz = path.join(process.cwd(), '..');
@@ -66,6 +68,7 @@ export const documentos: Record<string, { titulo: string; archivo: string }> = {
   viabilidad: { titulo: 'Viabilidad y costes', archivo: 'VIABILIDAD.md' },
   sesiones: { titulo: 'Reglas de las sesiones', archivo: 'SESIONES.md' },
   prompts: { titulo: 'Prompts de las sesiones', archivo: 'PROMPTS-SESIONES.md' },
+  juicio: { titulo: 'Juicio y probabilidad', archivo: 'JUICIO.md' },
 };
 
 export function documentoHtml(slug: string): { titulo: string; html: string } | null {
@@ -83,6 +86,9 @@ export function ultimaAccion(p: Proyecto): Accion | undefined {
 
 export const euros = (n: number) =>
   new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n);
+
+export const RAMA = 'claude/estrategia-ingresos-recurrentes-tx0rvw';
+export const REPO = 'moisesmodu/vinclia-web';
 
 export const fecha = (iso: string) =>
   new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso));
