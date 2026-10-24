@@ -20,7 +20,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
-  lider?: Lider; segundoLider?: Lider;
+  lider?: Lider; segundoLider?: Lider; expansion?: string[];
 };
 
 export type Cartera = {

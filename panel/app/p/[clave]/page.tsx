@@ -63,6 +63,10 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
             <ul>{p.proximos.map((x) => <li key={x}>{x}</li>)}</ul>
           </section>
           <section>
+            <h2>Mercados de salida</h2>
+            {p.expansion?.length ? <ol className="tareas">{p.expansion.map((x) => <li key={x}>{x}</li>)}</ol> : <p className="vacio">Solo España por ahora.</p>}
+          </section>
+          <section>
             <h2>Lo que te toca a ti</h2>
             {p.paraMoises.length ? <ol className="tareas">{p.paraMoises.map((x) => <li key={x}>{x}</li>)}</ol> : <p className="vacio">Nada.</p>}
           </section>

@@ -90,6 +90,7 @@ const fichas = lista.map((p) => {
   <div class="dos"><div>
     <section><h2>Últimas acciones</h2><ol class="linea">${acciones.map((a) => `<li><time>${fecha(a.fecha)}</time> ${esc(a.texto)}</li>`).join('')}</ol></section>
     <section><h2>Próximos pasos</h2><ul>${lis(p.proximos)}</ul></section>
+    <section><h2>Mercados de salida</h2>${p.expansion?.length ? `<ol class="tareas">${lis(p.expansion)}</ol>` : '<p class="vacio">Solo España por ahora.</p>'}</section>
     <section><h2>Lo que te toca a ti</h2>${p.paraMoises.length ? `<ol class="tareas">${lis(p.paraMoises)}</ol>` : '<p class="vacio">Nada.</p>'}</section>
   </div><div>
     <section><h2>Mejoras posibles</h2>${p.mejoras.length ? `<ul>${lis(p.mejoras)}</ul>` : '<p class="vacio">Pendiente.</p>'}</section>

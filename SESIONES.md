@@ -52,6 +52,10 @@
    se ha visto funcionar.
 6. **Contenido con IA declarado donde la plataforma lo exija** (Amazon KDP, Google Play, Steam).
 7. **Sin datos personales de alumnos ni familias de Algorithmics** en ningún proyecto.
+8. **Preparado para varios países desde el primer día:** idioma, moneda, precios, leyes y parámetros fuera del código
+   (archivos de configuración por país), contenido en carpetas por país e idioma, y rutas o dominios por mercado. Se
+   lanza en el primer mercado (normalmente España); el segundo (ver `CARTERA.md`, «Expansión internacional») se abre
+   solo cuando el primero tenga datos de conversión. Cada ficha del panel lleva su campo `expansion`.
 
 ## Antes de diseñar: el análisis del líder
 En `panel/data/proyectos.json`, tu proyecto tiene (si existe) el campo `lider`: ingeniería inversa de producto del mejor

@@ -43,7 +43,7 @@ apps, boca a boca y afiliados**. Las suscripciones de 9,99 €/mes con 5–6 mes
 | **Juegos** (H web + Q Roblox) | Publicidad en portales; Robux | 50–70 % de la publicidad; en Roblox ≈ 25 % de lo que gasta el jugador | 0 € · la plataforma distribuye | No existe | No. Opcional Roblox: anuncios patrocinados en Robux, 0 € hasta tener ingresos | 1 juego con tracción | Mes 3–6 (web); Roblox lotería | −30 $ (Roblox Premium necesario para cobrar) |
 | **I · Libros KDP** | 9,90–14,90 € | 2–5 € por libro | 0 € · buscador de Amazon | Amazon Ads: 3–5 € por venta → solo en lanzamiento | Opcional, 20 €/título el primer mes | 100 ventas/mes (30 títulos × 3) | Mes 6–9 | 0 € (−200 € si se usan Amazon Ads) |
 | **J · Cursos Udemy** | 15–40 € | 5–12 € por alumno (Udemy se queda 63 % si lo trae) | 0 € · buscador de Udemy | No existe | No | 40 alumnos/mes | Mes 3–5 | 0 € |
-| **P · Webs con AdSense** (añadido 24/10) | Publicidad: RPM 1,5–3 € con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios/mes | No hay cliente: 1.000 páginas vistas ≈ 2–3 € | 0 € · solo SEO; 6–12 meses hasta tráfico estable por sitio | **Nunca**: pagar tráfico para un sitio de anuncios pierde dinero | No | 120.000 páginas vistas/mes (≈ 5 sitios × 25.000) | Mes 9–14 | −60 € (5 dominios) |
+| **P · Webs con AdSense** (añadido 24/10; catálogo de 7 sitios más abajo) | Publicidad: RPM 1,5–3 € con AdSense en utilidades, 4–12 € en finanzas en España, 15–40 $ en EE. UU. en español | No hay cliente: 1.000 páginas vistas ≈ 2–3 € | 0 € · solo SEO; 6–12 meses hasta tráfico estable por sitio | **Nunca**: pagar tráfico para un sitio de anuncios pierde dinero | No | 120.000 páginas vistas/mes (≈ 5 sitios × 25.000) | Mes 9–14 | −60 € (5 dominios) |
 
 Notas por proyecto:
 - **A y N son una sola marca.** A trae el tráfico (el examen se busca en todos los idiomas) y N es la suscripción que
@@ -64,6 +64,23 @@ Notas por proyecto:
   cada página debe aportar un cálculo o un dato real (INE, BOE, DOGC, datos abiertos), nunca texto de relleno. Las redes premium
   (Ezoic, Mediavine, Raptive) exigen desde 2026 tráfico anglosajón o 250.000 usuarios/mes: con tráfico español, AdSense
   es la vía hasta pasar de 100.000 páginas vistas; después, Ad Manager propio. Primer pago (70 €) entre los meses 4 y 8.
+
+
+### Catálogo de sitios del proyecto P, ordenado por lo que pagan (24/10/2026)
+
+| Orden | Sitio | Nicho y RPM estimado | Volumen | Riesgo | Mercado |
+|---|---|---|---|---|---|
+| 1 | **Nómina y laboral** (sueldo neto, finiquito, despido, paro, baja, horas extra) | Finanzas-laboral, 4–8 € | Muy alto y recurrente cada mes | Bancos dominan la búsqueda principal; cola larga y catalán abiertos | España (es/ca) |
+| 2 | **Impuestos y autónomos** (IRPF, IVA, cuota 2027, modelos trimestrales, Verifactu) | Finanzas-legal, 5–12 € | Alto, con pico en 2027 por la obligación de Verifactu | Tema de dinero: exige autor, método y fuentes | España (es/ca) |
+| 3 | **Finanzas e impuestos de EE. UU. en español** (calculadora de nómina por estado, créditos fiscales, ITIN, W-2, seguro médico) | Finanzas EE. UU., 15–40 $ | Alto (60 M de hispanohablantes) | Competencia en inglés fuerte, en español débil; abre Mediavine y Raptive | EE. UU. (es) |
+| 4 | **Vivienda e hipoteca** (hipoteca, ITP y AJD por comunidad, índice de alquiler, plusvalía) | Banca y seguros, 6–12 € | Alto | Cabeceras tomadas por bancos; cola larga por comunidad y municipio | España (es/ca) |
+| 5 | **Calendario y fechas** (festivos por municipio, calendario laboral y escolar, días entre fechas) | Utilidad, 1–3 € | Masivo; entra en Discover; casi sin competencia en catalán | RPM bajo compensado por volumen; atrae enlaces de ayuntamientos | España y Cataluña (es/ca) |
+| 6 | **Coche y seguros** (impuesto de circulación por municipio, ITV, cambio de nombre, seguro) | Seguros, 5–10 € | Medio-alto | Aseguradoras pujan fuerte; datos por municipio son diferenciales | España |
+| 7 | **Salud cotidiana y bebé** (embarazo, percentiles, dosis pediátricas) | Salud, 2,5–7 € | Muy alto | Tema sensible: solo calculadoras con fuente oficial y revisor | España, Latinoamérica |
+
+Ritmo: un sitio nuevo cada 6–8 semanas; cada uno tarda 6–12 meses en madurar. Con los 7 en marcha y madurados, el
+escenario 'bien' de P sube de 600 € a 1.500–2.500 €/mes; el 'mal' se mantiene en 100 €/mes porque el riesgo de Google
+es común a todos.
 
 ## 2. Qué cuesta el marketing en total (12 meses)
 
@@ -126,3 +143,22 @@ cartera sí.
 ## 6. Siguiente paso
 Plan de desarrollo: una sesión de Claude por proyecto, con entregable cerrado y criterio de "hecho", en el orden
 A → N → B → Juegos (primer juego web) → M → G (antes del 15/11) → I → J → L → O → P.
+
+## 6. Expansión internacional (24/10/2026)
+
+**Qué aporta en números.** El ingreso por usuario depende del país: tomando España como 1, Estados Unidos en español
+vale de 1,2 a 1,5 en suscripciones y de 5 a 10 en publicidad; Latinoamérica vale de 0,3 a 0,5 pero con 10 veces más
+población; Portugal, Italia y Francia valen de 0,8 a 1,1. Por eso el segundo mercado de casi todo es **Estados Unidos en
+español**, no Latinoamérica.
+
+**Qué cuesta abrir un país.** Dominio o carpeta (15 €), textos legales adaptados (IA más gestor), contenido y parámetros
+del país (lo hace Claude), alta en el régimen OSS de IVA si las ventas a consumidores de la UE superan 10.000 €/año,
+métodos de pago locales en México y Brasil. El marketing orgánico se repite por país (de 3 a 6 meses de retraso cada vez).
+
+**Regla de secuencia.** Un proyecto abre su segundo país cuando en el primero tiene al menos 100 clientes de pago (o 20.000
+páginas vistas al mes en P) y una conversión medida. Antes, nada: abrir países sin datos reparte el esfuerzo sin sumar
+ingresos.
+
+**Efecto en los escenarios a 12 meses.** Con la expansión aplicada desde el mes 6 a los proyectos que la permiten (P, G, I,
+O, A, J y Juegos), el escenario 'bien' de la cartera pasa de 3.500 a unos 6.000 €/mes; el 'mal' no cambia, porque la
+expansión solo se hace sobre lo que ya funciona.

@@ -75,6 +75,42 @@ Pasivos que se mantienen (deseo o regalo, sin venta personal): 3 Cuentos, 4 App 
 Lectura de Claude: A, B, C y D cumplen mejor las tres condiciones; F es la mayor necesidad pero la más competida y
 para 2027; E compite con plantillas gratis. De los pasivos, 7–8 y 3 tienen más recorrido.
 
+## Expansión internacional (24/10/2026, pedido por Moisés)
+
+**Regla:** todo proyecto nace preparado para varios países desde el primer día (idioma, moneda, precios, leyes y
+parámetros separados del código; contenido por país en carpetas), pero **se lanza primero en un mercado** y se abre el
+siguiente solo cuando el primero demuestra activación y conversión. Abrir países sin datos multiplica costes de
+contenido y soporte, no ingresos.
+
+**Orden de mercados por valor:** 1) España (lo conocemos, es la base); 2) **Estados Unidos en español** (más de 60
+millones de hispanohablantes, paga como mercado anglosajón: RPM de anuncios de 15 a 40 $ y precios iguales o
+superiores a España; cuenta como tráfico de primer nivel para Mediavine y Raptive); 3) Latinoamérica (México, Colombia,
+Argentina, Chile: volumen enorme, ingreso por usuario de un tercio a la mitad, precios por paridad); 4) Portugal, Italia
+y Francia para los productos de inmigrantes (mismas necesidades, otras leyes); 5) inglés global para juegos y exámenes.
+
+| Proyecto | Segundo mercado | Tercero | Qué cambia (no es solo traducir) |
+|---|---|---|---|
+| A CCSE | Examen de ciudadanía de EE. UU. en español (100 preguntas oficiales, demanda enorme) | Prueba cívica de Francia 2026, Life in the UK, Einbürgerungstest alemán, Italia B1 | Banco de preguntas y legislación por país; mismo motor |
+| N Nuevo en España | Nuevo en Portugal e Italia (misma ola migratoria del sur de Europa) | Nuevo en EE. UU. en español (el mayor mercado) | Trámites y plazos por país; red de abogados por país |
+| B Oposiciones | Concorsi pubblici (Italia) y concours (Francia) | Concursos públicos de Brasil (gigante y muy competido) | Temarios y convocatorias por país; mismo motor |
+| L Exámenes | DELE y SIELE ya son mundiales: interfaz en inglés, chino, portugués y árabe | Nueva PAU solo España; nivell C solo Cataluña | Precios en dólares y reales; afiliados profesores de ELE |
+| M Catalán | No se exporta; el motor sí: vasco, gallego, portugués para inmigrantes en Portugal | Italiano para inmigrantes | Modelos de voz por lengua |
+| G Cuentos | EE. UU. en español e inglés (Gelato imprime localmente en 32 países) | México, Italia, Francia, Alemania | Imprenta local, moneda, festividades (Reyes, Navidad, Día del Niño) |
+| Juegos | Ya global (inglés, EE. UU. y Reino Unido pagan) | — | Nada |
+| I Libros KDP | Amazon.com en español (hispanos de EE. UU.) y .mx | .de, .fr, .it traducidos | Palabras clave y precio por mercado; mismo pipeline |
+| J Cursos | Latinoamérica ya es el mayor mercado de Udemy en español | Versión en inglés de 'IA para pequeños negocios' | Ejemplos fiscales por país |
+| O Lectura | EE. UU. bilingüe (programas de doble lengua en escuelas, pagan en dólares) y Latinoamérica | Brasil en portugués | Baremos de fluidez por país; voces infantiles por acento |
+| P Webs | Sitios para hispanos de EE. UU. (finanzas, impuestos, inmigración en español) | México por volumen | Dominios y datos por país; RPM muy superior en EE. UU. |
+
+**Lo que exige abrir un país (una vez por país):** textos legales adaptados (IA más revisión de gestor), impuestos
+sobre ventas digitales (en la UE, alta en el régimen OSS cuando las ventas a consumidores de otros países de la UE
+pasen de 10.000 €/año; a EE. UU. y Latinoamérica se vende desde Stripe España sin alta local), métodos de pago locales
+(Stripe cubre tarjetas en todos; en México conviene añadir OXXO y en Brasil Pix), precios por paridad, y un dominio o
+carpeta por país. Coste típico: 15 € de dominio y unas horas de revisión legal por país.
+
+**Prioridad de expansión en 2027:** EE. UU. en español para P, G, I, O y A; Portugal e Italia para N; inglés para
+Juegos (ya) y L.
+
 ## Resumen (versión original del 23/10, mañana)
 
 | # | Proyecto | Tipo | Primer euro | A 6 meses (mal / bien) | Tu parte una vez |
@@ -262,3 +298,4 @@ teléfono y plan Creator de ElevenLabs.
 | 23/10/2026 | VIABILIDAD.md, SESIONES.md (reglas comunes) y PROMPTS-SESIONES.md (10 prompts) | a43c87f+ |
 | 23/10/2026 | Panel web (`panel/`, Next.js estático para Vercel) con investigación de competencia y código abierto de los 10 proyectos | — |
 | 24/10/2026 | Ingeniería inversa del líder de cada proyecto; proyecto P (webs con AdSense) añadido con investigación y viabilidad | — |
+| 24/10/2026 | Catálogo de 7 sitios de P ordenado por RPM y plan de expansión internacional para los 11 proyectos | — |
