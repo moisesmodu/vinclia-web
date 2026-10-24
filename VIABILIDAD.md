@@ -43,7 +43,7 @@ apps, boca a boca y afiliados**. Las suscripciones de 9,99 €/mes con 5–6 mes
 | **Juegos** (H web + Q Roblox) | Publicidad en portales; Robux | 50–70 % de la publicidad; en Roblox ≈ 25 % de lo que gasta el jugador | 0 € · la plataforma distribuye | No existe | No. Opcional Roblox: anuncios patrocinados en Robux, 0 € hasta tener ingresos | 1 juego con tracción | Mes 3–6 (web); Roblox lotería | −30 $ (Roblox Premium necesario para cobrar) |
 | **I · Libros KDP** | 9,90–14,90 € | 2–5 € por libro | 0 € · buscador de Amazon | Amazon Ads: 3–5 € por venta → solo en lanzamiento | Opcional, 20 €/título el primer mes | 100 ventas/mes (30 títulos × 3) | Mes 6–9 | 0 € (−200 € si se usan Amazon Ads) |
 | **J · Cursos Udemy** | 15–40 € | 5–12 € por alumno (Udemy se queda 63 % si lo trae) | 0 € · buscador de Udemy | No existe | No | 40 alumnos/mes | Mes 3–5 | 0 € |
-| **P · Webs con AdSense** (añadido 24/10) | Publicidad: RPM 1,5–3 € (AdSense), 5–10 € (Mediavine Journey/Ezoic desde 10.000 sesiones) | No hay cliente: 1.000 páginas vistas ≈ 2–3 € | 0 € · solo SEO; 6–12 meses hasta tráfico estable por sitio | **Nunca**: pagar tráfico para un sitio de anuncios pierde dinero | No | 120.000 páginas vistas/mes (≈ 5 sitios × 25.000) | Mes 9–14 | −60 € (5 dominios) |
+| **P · Webs con AdSense** (añadido 24/10) | Publicidad: RPM 1,5–3 € con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios/mes | No hay cliente: 1.000 páginas vistas ≈ 2–3 € | 0 € · solo SEO; 6–12 meses hasta tráfico estable por sitio | **Nunca**: pagar tráfico para un sitio de anuncios pierde dinero | No | 120.000 páginas vistas/mes (≈ 5 sitios × 25.000) | Mes 9–14 | −60 € (5 dominios) |
 
 Notas por proyecto:
 - **A y N son una sola marca.** A trae el tráfico (el examen se busca en todos los idiomas) y N es la suscripción que
@@ -61,8 +61,9 @@ Notas por proyecto:
   Google. Se juega a catálogo de 5 sitios de **herramientas y datos** (calculadoras, calendarios, conversores), no de
   artículos: los resúmenes de IA de Google están recortando el 20–40 % de los clics informativos, pero la gente sigue
   entrando a usar una calculadora. El riesgo regulatorio es la política de Google contra el contenido escalado con IA:
-  cada página debe aportar un cálculo o un dato real (INE, BOE, DOGC, datos abiertos), nunca texto de relleno. Al llegar a
-  10.000 sesiones/mes un sitio pasa de AdSense a Mediavine Journey o Ezoic y multiplica el RPM por 3.
+  cada página debe aportar un cálculo o un dato real (INE, BOE, DOGC, datos abiertos), nunca texto de relleno. Las redes premium
+  (Ezoic, Mediavine, Raptive) exigen desde 2026 tráfico anglosajón o 250.000 usuarios/mes: con tráfico español, AdSense
+  es la vía hasta pasar de 100.000 páginas vistas; después, Ad Manager propio. Primer pago (70 €) entre los meses 4 y 8.
 
 ## 2. Qué cuesta el marketing en total (12 meses)
 
@@ -109,7 +110,7 @@ Objetivo de cartera a 12 meses en S1 (escenario "mal", el que se puede prometer)
 | Juegos | 1 juego con tracción de 12 | 150 € |
 | I (KDP) | 60 ventas/mes | 180 € |
 | J (Udemy) | 20 alumnos/mes | 150 € |
-| P (Webs AdSense) | 5 sitios, 40.000 páginas vistas/mes en total | 100 € (600 € si dos sitios pasan a Mediavine) |
+| P (Webs AdSense) | 5 sitios, 40.000 páginas vistas/mes en total | 100 € (600 € si un sitio despega en Discover o finanzas) |
 | **Total** | | **≈ 2.300 €/mes** |
 
 El objetivo de 1.000 €/mes se cumple si solo la mitad de esto se materializa. Ningún proyecto solo lo garantiza; la

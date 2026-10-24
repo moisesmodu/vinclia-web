@@ -63,7 +63,7 @@ y también 2 Fiverr/Upwork, 12 Rank and rent y 14 Portal academias (exigen conve
 ### Tercera ronda (24/10): Moisés añade P
 | | Opción | Auge | Llegan por | Precio |
 |---|---|---|---|---|
-| P | Webs de herramientas y datos (calculadoras laborales y fiscales, calendarios y festivos por municipio, conversores) en castellano y catalán, monetizadas con AdSense y después Mediavine/Ezoic | Catálogo pasivo; resiste mejor que el contenido informativo a los resúmenes de IA de Google porque la gente usa la herramienta | Google (búsquedas de utilidad: "calcular sueldo neto 2027", "festivos Lleida 2027") | Publicidad: RPM de 1,5–3 € con AdSense, 5–10 € con redes premium a partir de 10.000 sesiones |
+| P | Webs de herramientas y datos (calculadoras laborales y fiscales, calendarios y festivos por municipio, conversores) en castellano y catalán, monetizadas con AdSense y después Mediavine/Ezoic | Catálogo pasivo; resiste mejor que el contenido informativo a los resúmenes de IA de Google porque la gente usa la herramienta | Google (búsquedas de utilidad: "calcular sueldo neto 2027", "festivos Lleida 2027") | Publicidad: RPM de 1,5–3 € con AdSense (4–12 € en finanzas); las redes premium ya no admiten tráfico solo español |
 
 **Marcas propuestas (comparten código y público):** Nuevo en España (A+N+M+DGT) · Exámenes (B+L+T) · Niños (G+O+Q+P) ·
 Pasivos (H+I+J+R+P). S Mayores aparte. Recomendación de Claude: empezar por Nuevo en España (A+N+M), luego Exámenes (B+L);

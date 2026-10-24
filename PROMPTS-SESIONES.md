@@ -149,7 +149,7 @@ Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar con 
 ## P · Webs de herramientas con AdSense (`proyectos/p-webs-adsense`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos, y en panel/data/proyectos.json el campo lider del proyecto p-webs-adsense. Construye el proyecto P en proyectos/p-webs-adsense.
+Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos, y en panel/data/proyectos.json los campos lider, hallazgos y mejoras del proyecto p-webs-adsense (ahí están los umbrales reales de las redes publicitarias, las políticas de Google y los repositorios a reutilizar). Construye el proyecto P en proyectos/p-webs-adsense.
 
 Objetivo de esta sesión: la fábrica de sitios y los dos primeros sitios publicados. Son sitios de HERRAMIENTAS Y DATOS, no de artículos: cada página debe ofrecer un cálculo, un dato real o una utilidad que la gente use (Google penaliza el contenido escalado con IA sin valor, y los resúmenes de IA recortan los clics informativos, pero no los de herramientas). Castellano y catalán en todos.
 
