@@ -13,7 +13,7 @@ Google contra el contenido escalado y lo que los resúmenes de IA no sustituyen.
 | Páginas programáticas | 73 × 2 idiomas | 46 × 2 idiomas |
 | Páginas en total | 218 | 162 |
 
-Las URL temporales, el resultado de Lighthouse y el estado están en el informe del PR y en el panel.
+En producción (Vercel, sin dominio propio todavía): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/. El estado está en el panel.
 
 ## Estructura
 

@@ -2486,7 +2486,7 @@
     "nombre": "Webs con AdSense",
     "marca": "Pasivos",
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 11,
     "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas",
     "margenCliente": 0,
@@ -2496,8 +2496,8 @@
     "clientes": 0,
     "canal": "Solo Google: búsquedas de utilidad ('calcular sueldo neto 2027', 'festivos Lleida 2027'); nunca anuncios de pago",
     "enlaces": {
-      "Vista previa sitio 1 (NetoClaro)": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
-      "Vista previa sitio 2 (ImpuestoClaro)": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
+      "Web NetoClaro": "https://netoclaro.vercel.app/",
+      "Web ImpuestoClaro": "https://impuestoclaro.vercel.app/",
       "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6"
     },
     "acciones": [
@@ -2524,10 +2524,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "PR #6: DESPLIEGUE.md con dos caminos (Cloudflare Pages por API y GitHub Actions, o Vercel Pro) para la sesión del Mac; PARA-MOISES solo con dominios, AdSense, Search Console y NIF si falta"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Sitios desplegados por la sesión del Mac en Vercel (camino B): netoclaro.vercel.app e impuestoclaro.vercel.app, con datos legales; faltan dominios, AdSense y Search Console"
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md (camino A Cloudflare Pages, o B Vercel) del PR #6",
+      "Moisés: comprar netoclaro.es e impuestoclaro.es; la sesión del Mac los añade a Vercel y quita SITE_URL",
       "Solicitar AdSense con el sitio 1 en su dominio; publicar el mensaje RGPD de Google",
       "Crear la tarea programada semanal: BOE, 20 páginas nuevas, Search Console e informe",
       "Sitio 3 (EE. UU. en español, chequeclaro.com) a las 6–8 semanas: abre Mediavine y Raptive"
