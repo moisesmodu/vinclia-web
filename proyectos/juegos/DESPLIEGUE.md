@@ -64,3 +64,9 @@ Ejecutado el 2026-10-28
 Publicado el commit 9ddf2ff en https://juegos-casuales.vercel.app (desde la raíz del repo, Root Directory `proyectos/juegos`): portada, `/egg-truck/` y `/bike-flip/` responden.
 
 Ejecutado el 2026-10-28
+
+## Redespliegue pendiente · solo juegos terminados (28/10/2026)
+El redespliegue de 9ddf2ff publicó `/bike-flip/` (y el catálogo enlazaba rocket-hop y jelly-stack) cuando todavía eran la
+plantilla de ejemplo. Desde este commit, `npm run build` solo publica los juegos de `juegos.json` cuyo `estado` no sea
+«en desarrollo» (hoy: egg-truck y snow-plow). Volver a desplegar la rama con los comandos de arriba; comprobar que
+`/bike-flip/` da 404 hasta que ese juego se marque como listo.

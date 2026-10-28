@@ -11,7 +11,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const mode = process.argv[2] || 'web';
 const all = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8'));
 // GAME=<carpeta> compila solo ese juego (también la plantilla, que no está en juegos.json)
-const games = process.env.GAME ? [all.find((g) => g.slug === process.env.GAME) || { slug: process.env.GAME, titulo: process.env.GAME }] : all;
+// Sin GAME solo se compilan (y publican en la web) los juegos terminados: los "en desarrollo" no salen al público.
+const listo = (g) => !/en desarrollo/.test(g.estado || '');
+const games = process.env.GAME ? [all.find((g) => g.slug === process.env.GAME) || { slug: process.env.GAME, titulo: process.env.GAME }] : all.filter(listo);
 const portals = mode === 'all' ? ['web', 'crazygames', 'poki', 'gamedistribution', 'gamemonetize', 'itch'] : ['web'];
 
 if (!process.env.GAME) rmSync(resolve(root, 'dist'), { recursive: true, force: true });
@@ -37,7 +39,7 @@ const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link 
 const footer = (up) => `<footer style="text-align:center;padding:24px 16px 32px;color:#1E2A3A"><img src="${up}marca/juegos-icono.svg" alt="" width="28" height="28" style="vertical-align:middle"> <b>${STUDIO}</b> · ${TAGLINE}<br><span style="font-size:.9em">Contact: <a href="mailto:${CONTACT}" style="color:#1E2A3A">${CONTACT}</a></span></footer>`;
 
 // Portada del catálogo en la web propia (tráfico directo: el 100 % de los ingresos es nuestro).
-const cards = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).map((g) => {
+const cards = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).filter(listo).map((g) => {
   const img = existsSync(resolve(root, 'fichas', g.slug, 'portadas', `${g.slug}-800x800.jpg`));
   if (img) {
     mkdirSync(resolve(root, 'dist', 'portadas'), { recursive: true });
@@ -62,8 +64,10 @@ console.log('✔ dist/index.html (catálogo)');
 const site = process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '');
 // seo/paginas.json (catálogo y Egg Truck) + seo/paginas-<juego>.json (una por juego nuevo, así no se pisan)
 const pages = readdirSync(resolve(root, 'seo')).filter((f) => /^paginas(-[a-z0-9-]+)?\.json$/.test(f)).sort()
-  .flatMap((f) => JSON.parse(readFileSync(resolve(root, 'seo', f), 'utf8')));
-const catalog = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8'));
+  .flatMap((f) => JSON.parse(readFileSync(resolve(root, 'seo', f), 'utf8')))
+  // las guías de un juego aún en desarrollo tampoco se publican
+  .filter((p) => !p.game || JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).filter(listo).some((g) => g.slug === p.game));
+const catalog = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).filter(listo);
 const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 for (const pg of pages) {
   const up = '../'.repeat(pg.path.split('/').length);
