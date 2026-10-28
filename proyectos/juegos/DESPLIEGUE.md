@@ -36,3 +36,14 @@ vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
 - Añadir al final de este archivo: `Ejecutado el <fecha>`.
 
 Ejecutado el 28/10/2026 desde la sesión del Mac: https://juegos-casuales.vercel.app/egg-truck/ (proyecto Vercel `juegos-casuales`, `SITE_URL` en production).
+
+## Redespliegue pendiente · identidad Nuvolet Games (28/10/2026, commit e21928d)
+La sesión de Juegos tiene los secretos, pero su contenedor aún no llega a `api.vercel.com` (arrancó antes del cambio de
+red). Hay que volver a desplegar el mismo proyecto con la rama actualizada:
+```bash
+git fetch origin claude/juegos-primer-juego && git checkout claude/juegos-primer-juego && git pull
+cd proyectos/juegos && npm install && npm run build
+vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
+```
+Comprobar: la pantalla de carga de `/egg-truck/` muestra la nube azul y «Nuvolet Games»; la portada del sitio lleva el
+logotipo arriba y el pie «Nuvolet Games · Tiny games, big smiles.».
