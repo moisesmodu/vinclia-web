@@ -24,7 +24,7 @@ local function passNameById(passId: number): string?
 		return nil
 	end
 	for name, id in Config.GamePasses do
-		if id == passId then
+		if id == passId and type(name) == "string" then
 			return name
 		end
 	end
@@ -36,7 +36,7 @@ local function productNameById(productId: number): string?
 		return nil
 	end
 	for name, id in Config.Products do
-		if id == productId then
+		if id == productId and type(name) == "string" then
 			return name
 		end
 	end
@@ -55,7 +55,7 @@ end
 -- Consulta qué pases tiene el jugador (antes de construir su granja y su camión).
 function MonetizationService.loadOwnership(player: Player)
 	for name, id in Config.GamePasses do
-		if id ~= 0 then
+		if type(name) == "string" and type(id) == "number" and id ~= 0 then
 			local ok, owns = pcall(function()
 				return MarketplaceService:UserOwnsGamePassAsync(player.UserId, id)
 			end)
@@ -68,21 +68,13 @@ function MonetizationService.loadOwnership(player: Player)
 	end
 end
 
-local function processReceipt(receipt: { [string]: any }): Enum.ProductPurchaseDecision
-	local player = Players:GetPlayerByUserId(receipt.PlayerId)
-	if not player then
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-	local productName = productNameById(receipt.ProductId)
-	if not productName then
-		warn("[Monetization] producto desconocido", receipt.ProductId)
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-	local session = DataService.waitFor(player, 20)
-	if not session then
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-
+-- Concede el producto `productName` (ya validado) a un jugador con los datos cargados.
+local function grantProduct(
+	player: Player,
+	productName: string,
+	session: DataService.Session,
+	purchaseId: string
+): Enum.ProductPurchaseDecision
 	local mutate: (DataService.PlayerData) -> () = function() end
 	local revert: (DataService.PlayerData) -> () = function() end
 	local effect: () -> () = function() end
@@ -106,12 +98,29 @@ local function processReceipt(receipt: { [string]: any }): Enum.ProductPurchaseD
 		return Enum.ProductPurchaseDecision.NotProcessedYet
 	end
 
-	local result = DataService.commitPurchase(player, tostring(receipt.PurchaseId), mutate, revert)
+	local result = DataService.commitPurchase(player, purchaseId, mutate, revert)
 	if result == "granted" then
 		task.spawn(effect)
 		return Enum.ProductPurchaseDecision.PurchaseGranted
 	elseif result == "already" then
 		return Enum.ProductPurchaseDecision.PurchaseGranted
+	end
+	return Enum.ProductPurchaseDecision.NotProcessedYet
+end
+
+-- El recibo llega de MarketplaceService: si falta el jugador, el producto o sus datos, Roblox lo reintentará.
+local function processReceipt(receipt: { [string]: any }): Enum.ProductPurchaseDecision
+	local player = Players:GetPlayerByUserId(receipt.PlayerId)
+	if player then
+		local productName = productNameById(receipt.ProductId)
+		if productName then
+			local session = DataService.waitFor(player, 20)
+			if session then
+				return grantProduct(player, productName, session, tostring(receipt.PurchaseId))
+			end
+		else
+			warn("[Monetization] producto desconocido", receipt.ProductId)
+		end
 	end
 	return Enum.ProductPurchaseDecision.NotProcessedYet
 end

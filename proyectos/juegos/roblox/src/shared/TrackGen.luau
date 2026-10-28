@@ -118,7 +118,7 @@ end
 
 local function makeSegment(rng: Rng, x0: number, y0: number, p: Params): Segment
 	local d = difficulty(x0, p)
-	local kind = pickKind(rng, d)
+	local kind: SegmentKind = pickKind(rng, d)
 	local mid = (p.minHeight + p.maxHeight) / 2
 	local toward = if y0 < mid then 1 else -1 -- tiende a volver al centro de la banda
 

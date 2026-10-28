@@ -80,16 +80,14 @@ end
 
 local function pulse(coop: Model)
 	local house = coop.PrimaryPart
-	if not house then
-		return
+	if house then
+		local tween = TweenService:Create(
+			house,
+			TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, true),
+			{ Size = house.Size * 1.08 }
+		)
+		tween:Play()
 	end
-	local original = house.Size
-	local tween = TweenService:Create(
-		house,
-		TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, true),
-		{ Size = original * 1.08 }
-	)
-	tween:Play()
 end
 
 local function updateLabel(farm: Farm)
@@ -116,19 +114,18 @@ end
 
 function FarmService.setup(player: Player)
 	local plot = PlotService.get(player)
-	if not plot then
-		return
+	if plot then
+		local farm: Farm = {
+			player = player,
+			plot = plot,
+			stored = 2, -- dos huevos de bienvenida: el primer viaje empieza ya
+			capacity = 0,
+			coops = {},
+			timer = 0,
+		}
+		farms[player] = farm
+		rebuildCoops(farm)
 	end
-	local farm: Farm = {
-		player = player,
-		plot = plot,
-		stored = 2, -- dos huevos de bienvenida: el primer viaje empieza ya
-		capacity = 0,
-		coops = {},
-		timer = 0,
-	}
-	farms[player] = farm
-	rebuildCoops(farm)
 end
 
 -- Tras comprar el pase de segunda granja.

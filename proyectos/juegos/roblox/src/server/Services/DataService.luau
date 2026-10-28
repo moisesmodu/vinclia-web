@@ -57,10 +57,10 @@ end
 
 local function toNumber(value: any, fallback: number): number
 	local n = tonumber(value)
-	if n == nil or n ~= n or n == math.huge or n == -math.huge then
-		return fallback
+	if n ~= nil and n == n and n ~= math.huge and n ~= -math.huge then
+		return n
 	end
-	return n
+	return fallback
 end
 
 -- Acepta cualquier cosa leída del DataStore y devuelve datos válidos (campos nuevos con su valor por defecto).
@@ -151,12 +151,8 @@ local function refresh(session: Session)
 	end
 end
 
--- Escribe los datos de la sesión. Debe llamarse con session.busy tomado.
-local function writeLocked(session: Session, release: boolean): boolean
-	local activeStore = store
-	if not session.canSave or activeStore == nil then
-		return false
-	end
+-- Escribe los datos de la sesión en `activeStore`, con reintentos. Debe llamarse con session.busy tomado.
+local function writeTo(activeStore: DataStore, session: Session, release: boolean): boolean
 	local snapshot = copyData(session.data)
 	for attempt = 1, Config.Save.saveAttempts do
 		waitForBudget()
@@ -184,6 +180,15 @@ local function writeLocked(session: Session, release: boolean): boolean
 		end
 		warn("[DataService] fallo al guardar (intento " .. attempt .. "):", err)
 		task.wait(2 ^ (attempt - 1))
+	end
+	return false
+end
+
+-- Escribe los datos de la sesión si se puede guardar. Debe llamarse con session.busy tomado.
+local function writeLocked(session: Session, release: boolean): boolean
+	local activeStore = store
+	if session.canSave and activeStore ~= nil then
+		return writeTo(activeStore, session, release)
 	end
 	return false
 end
@@ -291,75 +296,66 @@ end
 
 function DataService.addCoins(player: Player, amount: number)
 	local session = DataService.get(player)
-	if not session or amount == 0 then
-		return
+	if session and amount ~= 0 then
+		session.data.coins = math.max(0, math.floor(session.data.coins + amount))
+		refresh(session)
 	end
-	session.data.coins = math.max(0, math.floor(session.data.coins + amount))
-	refresh(session)
 end
 
 function DataService.trySpend(player: Player, amount: number): boolean
 	local session = DataService.get(player)
-	if not session or amount < 0 or session.data.coins < amount then
-		return false
+	if session and not (amount < 0 or session.data.coins < amount) then
+		session.data.coins -= amount
+		refresh(session)
+		return true
 	end
-	session.data.coins -= amount
-	refresh(session)
-	return true
+	return false
 end
 
 function DataService.recordDelivery(player: Player, eggs: number, coins: number)
 	local session = DataService.get(player)
-	if not session then
-		return
+	if session then
+		session.data.delivered += eggs
+		if coins > session.data.best then
+			session.data.best = coins
+		end
+		refresh(session)
 	end
-	session.data.delivered += eggs
-	if coins > session.data.best then
-		session.data.best = coins
-	end
-	refresh(session)
 end
 
 function DataService.getLevel(player: Player, id: string): number
 	local session = DataService.get(player)
-	if not session then
-		return 0
+	if session then
+		return session.data.upgrades[id] or 0
 	end
-	return session.data.upgrades[id] or 0
+	return 0
 end
 
 function DataService.setLevel(player: Player, id: string, level: number)
 	local session = DataService.get(player)
-	if not session then
-		return
+	if session then
+		session.data.upgrades[id] = level
+		refresh(session)
 	end
-	session.data.upgrades[id] = level
-	refresh(session)
 end
 
 function DataService.save(player: Player): boolean
 	local session = DataService.get(player)
-	if not session then
-		return false
+	if session then
+		acquire(session)
+		local ok = writeLocked(session, false)
+		session.busy = false
+		return ok
 	end
-	acquire(session)
-	local ok = writeLocked(session, false)
-	session.busy = false
-	return ok
+	return false
 end
 
--- Concede una compra de forma idempotente: si el PurchaseId ya está, no hace nada; si no, aplica `mutate`,
--- guarda el PurchaseId y los datos en una sola escritura y, si la escritura falla, deshace con `revert`.
-function DataService.commitPurchase(
-	player: Player,
+local function commitLocked(
+	session: Session,
 	purchaseId: string,
 	mutate: (PlayerData) -> (),
 	revert: (PlayerData) -> ()
 ): CommitResult
-	local session = DataService.get(player)
-	if not session or not session.canSave then
-		return "failed"
-	end
 	acquire(session)
 	if session.released then
 		session.busy = false
@@ -380,6 +376,21 @@ function DataService.commitPurchase(
 	session.busy = false
 	refresh(session)
 	return if ok then "granted" else "failed"
+end
+
+-- Concede una compra de forma idempotente: si el PurchaseId ya está, no hace nada; si no, aplica `mutate`,
+-- guarda el PurchaseId y los datos en una sola escritura y, si la escritura falla, deshace con `revert`.
+function DataService.commitPurchase(
+	player: Player,
+	purchaseId: string,
+	mutate: (PlayerData) -> (),
+	revert: (PlayerData) -> ()
+): CommitResult
+	local session = DataService.get(player)
+	if session and session.canSave then
+		return commitLocked(session, purchaseId, mutate, revert)
+	end
+	return "failed"
 end
 
 -- Guarda y suelta el bloqueo. Se llama al salir el jugador y al cerrar el servidor (dos veces no pasa nada).

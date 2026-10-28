@@ -23,11 +23,7 @@ local TruckController = {}
 local current: Driving? = nil
 local savedMinZoom = player.CameraMinZoomDistance
 
-local function bind(seat: VehicleSeat)
-	local model = seat:FindFirstAncestorOfClass("Model")
-	if not model or model:GetAttribute("OwnerUserId") ~= player.UserId then
-		return
-	end
+local function bindModel(seat: VehicleSeat, model: Model)
 	local motors: { HingeConstraint } = {}
 	local servos: { HingeConstraint } = {}
 	for _, d in model:GetDescendants() do
@@ -42,6 +38,14 @@ local function bind(seat: VehicleSeat)
 	current = { seat = seat, motors = motors, servos = servos }
 	savedMinZoom = player.CameraMinZoomDistance
 	player.CameraMinZoomDistance = math.max(savedMinZoom, 22)
+end
+
+-- Solo se conduce el camión propio.
+local function bind(seat: VehicleSeat)
+	local model = seat:FindFirstAncestorOfClass("Model")
+	if model and model:GetAttribute("OwnerUserId") == player.UserId then
+		bindModel(seat, model)
+	end
 end
 
 local function unbind()
@@ -61,30 +65,33 @@ local function onCharacter(character: Model)
 	end)
 end
 
-function TruckController.start()
+local function drive(driving: Driving)
+	if not driving.seat.Parent then
+		unbind()
+		return
+	end
 	local t = Config.Truck
+	local throttle = driving.seat.ThrottleFloat
+	local steer = driving.seat.SteerFloat
+	for _, motor in driving.motors do
+		if math.abs(throttle) > 0.05 then
+			motor.MotorMaxTorque = t.motorTorque
+			motor.AngularVelocity = t.driveSign * throttle * t.maxWheelSpeed
+		else
+			motor.MotorMaxTorque = t.coastTorque
+			motor.AngularVelocity = 0
+		end
+	end
+	for _, servo in driving.servos do
+		servo.TargetAngle = t.steerSign * steer * t.steerAngle
+	end
+end
+
+function TruckController.start()
 	RunService.Heartbeat:Connect(function()
 		local driving = current
-		if not driving then
-			return
-		end
-		if not driving.seat.Parent then
-			unbind()
-			return
-		end
-		local throttle = driving.seat.ThrottleFloat
-		local steer = driving.seat.SteerFloat
-		for _, motor in driving.motors do
-			if math.abs(throttle) > 0.05 then
-				motor.MotorMaxTorque = t.motorTorque
-				motor.AngularVelocity = t.driveSign * throttle * t.maxWheelSpeed
-			else
-				motor.MotorMaxTorque = t.coastTorque
-				motor.AngularVelocity = 0
-			end
-		end
-		for _, servo in driving.servos do
-			servo.TargetAngle = t.steerSign * steer * t.steerAngle
+		if driving then
+			drive(driving)
 		end
 	end)
 

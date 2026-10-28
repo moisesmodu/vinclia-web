@@ -26,37 +26,38 @@ local function findUpgrade(id: string): Config.UpgradeDef?
 	return nil
 end
 
-function UpgradeService.buy(player: Player, upgradeId: string)
-	local def = findUpgrade(upgradeId)
-	if not def or not DataService.get(player) then
-		return
-	end
+-- Sube un nivel de `def` si el jugador puede pagarlo.
+local function buyLevel(player: Player, def: Config.UpgradeDef)
 	local level = DataService.getLevel(player, def.id)
 	local cost = Economy.upgradeCost(def, level)
-	if cost == nil then
+	if cost ~= nil then
+		if DataService.trySpend(player, cost) then
+			DataService.setLevel(player, def.id, level + 1)
+			Notify:FireClient(player, { kind = "upgrade", id = def.id, level = level + 1 })
+			if def.id ~= "FarmSpeed" then
+				TruckService.refresh(player)
+			end
+		else
+			Notify:FireClient(player, { kind = "nomoney" })
+		end
+	else
 		Notify:FireClient(player, { kind = "max", id = def.id })
-		return
 	end
-	if not DataService.trySpend(player, cost) then
-		Notify:FireClient(player, { kind = "nomoney" })
-		return
-	end
-	DataService.setLevel(player, def.id, level + 1)
-	Notify:FireClient(player, { kind = "upgrade", id = def.id, level = level + 1 })
-	if def.id ~= "FarmSpeed" then
-		TruckService.refresh(player)
+end
+
+function UpgradeService.buy(player: Player, upgradeId: string)
+	local def = findUpgrade(upgradeId)
+	if def and DataService.get(player) then
+		buyLevel(player, def)
 	end
 end
 
 function UpgradeService.start()
 	BuyUpgrade.OnServerEvent:Connect(function(player: Player, upgradeId: unknown)
-		if not limiter:allow(player) then
-			return
+		-- el id llega del cliente: solo textos cortos (findUpgrade descarta los que no existen)
+		if limiter:allow(player) and type(upgradeId) == "string" and #upgradeId <= 32 then
+			UpgradeService.buy(player, upgradeId)
 		end
-		if type(upgradeId) ~= "string" or #upgradeId > 32 then
-			return
-		end
-		UpgradeService.buy(player, upgradeId)
 	end)
 end
 

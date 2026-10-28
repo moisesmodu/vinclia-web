@@ -202,12 +202,11 @@ end
 
 local function humanoidOf(player: Player): Humanoid?
 	local character = player.Character
-	if not character then
-		return nil
-	end
-	local humanoid = character:FindFirstChildOfClass("Humanoid")
-	if humanoid and humanoid.Health > 0 then
-		return humanoid
+	if character then
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid and humanoid.Health > 0 then
+			return humanoid
+		end
 	end
 	return nil
 end
@@ -227,11 +226,8 @@ type SpawnOptions = {
 	seat: boolean?,
 }
 
-local function spawnTruck(player: Player, options: SpawnOptions): TruckState?
-	local plot = PlotService.get(player)
-	if not plot then
-		return nil
-	end
+-- Crea el camión de `player` en su parcela `plot` (sustituye al anterior, si lo hay).
+local function buildTruck(player: Player, plot: PlotService.Plot, options: SpawnOptions): TruckState
 	local old = trucks[player]
 	if old then
 		trucks[player] = nil
@@ -275,19 +271,18 @@ local function spawnTruck(player: Player, options: SpawnOptions): TruckState?
 		state.connections,
 		parts.seat:GetPropertyChangedSignal("Occupant"):Connect(function()
 			local occupant = parts.seat.Occupant
-			if not occupant then
-				return
-			end
-			local who = Players:GetPlayerFromCharacter(occupant.Parent)
-			if who ~= player then
-				local weld = parts.seat:FindFirstChild("SeatWeld")
-				if weld then
-					weld:Destroy()
+			if occupant then
+				local who = Players:GetPlayerFromCharacter(occupant.Parent)
+				if who == player then
+					setOwner(state, player)
+				else
+					local weld = parts.seat:FindFirstChild("SeatWeld")
+					if weld then
+						weld:Destroy()
+					end
+					occupant.Sit = false
 				end
-				occupant.Sit = false
-				return
 			end
-			setOwner(state, player)
 		end)
 	)
 
@@ -302,20 +297,25 @@ local function spawnTruck(player: Player, options: SpawnOptions): TruckState?
 	return state
 end
 
-local function minTripSeconds(): number
-	local w = world
-	if not w then
-		return math.huge
+-- nil si el jugador no tiene parcela.
+local function spawnTruck(player: Player, options: SpawnOptions): TruckState?
+	local plot = PlotService.get(player)
+	if plot then
+		return buildTruck(player, plot, options)
 	end
-	local topSpeed = Config.Truck.maxWheelSpeed * Config.Truck.wheelRadius
-	return w.track.length / topSpeed * Config.Payout.minTripFactor
+	return nil
 end
 
-local function deliver(state: TruckState)
+local function minTripSeconds(): number
 	local w = world
-	if not w then
-		return
+	if w then
+		local topSpeed = Config.Truck.maxWheelSpeed * Config.Truck.wheelRadius
+		return w.track.length / topSpeed * Config.Payout.minTripFactor
 	end
+	return math.huge
+end
+
+local function deliver(state: TruckState, w: WorldBuilder.World)
 	state.busy = true
 	local player = state.player
 
@@ -473,6 +473,39 @@ end
 
 local accumulator = 0
 
+-- Revisa cada camión: caídas del mundo, salida de la parcela, huevos que se salen y llegada al mercado.
+local function stepTrucks(w: WorldBuilder.World)
+	for player, state in trucks do
+		if state.busy then
+			continue
+		end
+		local chassis = state.parts.chassis
+		if not chassis.Parent then
+			continue
+		end
+		local position = chassis.Position
+		if position.Y < -40 then
+			-- se cayó del mundo: los huevos se pierden
+			state.broken += state.eggCount
+			clearEggs(state)
+			spawnTruck(player, { seat = humanoidOf(player) ~= nil })
+			continue
+		end
+		if state.leftPadAt == nil and position.X > 0 then
+			state.leftPadAt = os.clock()
+		end
+		-- huevos que salieron volando de la caja
+		for egg in state.eggs do
+			if not egg.Parent or not insideBed(state, egg.Position, 3) then
+				breakEgg(state, egg)
+			end
+		end
+		if position.X >= w.marketStartX + 4 and position.Y < w.marketTopY + 12 then
+			deliver(state, w)
+		end
+	end
+end
+
 function TruckService.start()
 	RunService.Heartbeat:Connect(function(dt)
 		accumulator += dt
@@ -481,37 +514,8 @@ function TruckService.start()
 		end
 		accumulator = 0
 		local w = world
-		if not w then
-			return
-		end
-		for player, state in trucks do
-			if state.busy then
-				continue
-			end
-			local chassis = state.parts.chassis
-			if not chassis.Parent then
-				continue
-			end
-			local position = chassis.Position
-			if position.Y < -40 then
-				-- se cayó del mundo: los huevos se pierden
-				state.broken += state.eggCount
-				clearEggs(state)
-				spawnTruck(player, { seat = humanoidOf(player) ~= nil })
-				continue
-			end
-			if state.leftPadAt == nil and position.X > 0 then
-				state.leftPadAt = os.clock()
-			end
-			-- huevos que salieron volando de la caja
-			for egg in state.eggs do
-				if not egg.Parent or not insideBed(state, egg.Position, 3) then
-					breakEgg(state, egg)
-				end
-			end
-			if position.X >= w.marketStartX + 4 and position.Y < w.marketTopY + 12 then
-				deliver(state)
-			end
+		if w then
+			stepTrucks(w)
 		end
 	end)
 end
