@@ -10,7 +10,7 @@ for (const [svg, tam, salida] of [
 ]) {
   await p.setViewportSize({ width: tam, height: tam });
   const s = fs.readFileSync(`public/iconos/${svg}`, "utf8");
-  await p.setContent(`<html><body style="margin:0;background:transparent">${s.replace("<svg ", `<svg width="${tam}" height="${tam}" `)}</body></html>`);
+  await p.setContent(`<html><body style="margin:0;background:transparent">${s.replace(/<\?xml[^>]*>/, "").replace(/ width="\d+" height="\d+"/, "").replace("<svg ", `<svg width="${tam}" height="${tam}" `)}</body></html>`);
   await p.screenshot({ path: `public/iconos/${salida}`, omitBackground: true });
 }
 await b.close();

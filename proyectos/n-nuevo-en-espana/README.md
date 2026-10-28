@@ -45,11 +45,19 @@ npm install
 npm run validar            # esquema de las guías y coherencia de traducciones (mismos id, mismos días)
 npm run check && npm run build
 # Prueba de punta a punta (Postgres local + Stripe simulado, sin red):
+unset RESEND_API_KEY                          # la prueba nunca envía correos reales
 npm run stripe:simulado &                     # simulador mínimo de la API de Stripe en :12111
 export STRIPE_SECRET_KEY=sk_test_simulado STRIPE_API_BASE=http://localhost:12111 STRIPE_WEBHOOK_SECRET=whsec_prueba_local
 npx next start -p 3000 & npm run prueba:e2e   # 43 comprobaciones: idioma, muro, pago, webhooks, recordatorios, cron, cancelación, pack, enlace mágico
 ```
 `STRIPE_API_BASE` solo existe para las pruebas. Los webhooks de la prueba se firman con la librería oficial de Stripe.
+
+## Marca
+Ficha `n-nuevo-en-espana` de `MARCAS.md` y `marcas/tokens.json`: logotipo en línea (`components/Logo.tsx`, mismo
+trazado que `marcas/logos/n-nuevo-en-espana.svg`), icono en `public/marca/`, colores terracota `#D9603B`, azul noche
+`#1F2A44`, crema `#FBF5EC` y oliva `#7A8F3C`, Outfit + Noto Sans (con Noto Sans Arabic y SC) servidas desde el propio
+dominio con `next/font`. Botones y enlaces usan la terracota oscura `#B9472A` para llegar al contraste AA con texto
+blanco (la de marca da 3,7:1). Sello común en el pie, en la pantalla de precio y en los correos.
 
 ## Decisiones tomadas (regla 4 de SESIONES.md)
 - **A (CCSE) no existía** al construir N. N nace con la marca «Nuevo en España» y una base reutilizable: cuando se

@@ -1,7 +1,7 @@
 {
   "idioma": "English",
   "marca": "Nuevo en España",
-  "lema": "Your paperwork in Spain, step by step and in your language",
+  "lema": "Your paperwork in Spain, step by step, in your language",
   "meta": {
     "titulo": "Nuevo en España · Guides to official procedures for foreigners, in your language",
     "descripcion": "Step-by-step guides to renew your residence permit, register with your town hall (empadronamiento), get your health card, your Social Security number, your driving licence and Spanish nationality. Official sources, in 7 languages."
@@ -14,7 +14,7 @@
     "idioma": "Language"
   },
   "inicio": {
-    "titulo": "Your paperwork in Spain, step by step and in your language",
+    "titulo": "Your paperwork in Spain, step by step, in your language",
     "subtitulo": "Documents, deadlines, fees and common mistakes for each procedure, with the official source quoted and the date it was reviewed. For people who have just arrived or just been granted legal status.",
     "ctaGratis": "Start for free: town hall registration (empadronamiento)",
     "ctaGuias": "See all guides",
@@ -71,7 +71,8 @@
     "yaTengoAcceso": "I have already paid: recover access",
     "cargando": "Loading…",
     "otrasGuias": "Other guides",
-    "noTraducida": "This guide has not been translated into your language yet, so we are showing it in Spanish."
+    "noTraducida": "This guide has not been translated into your language yet, so we are showing it in Spanish.",
+    "celebracion": "Done! You have everything ready."
   },
   "recordatorio": {
     "email": "Your email address",
@@ -96,8 +97,7 @@
     "incluye": [
       "All 8 full guides in your language",
       "Interactive checklists",
-      "Deadline reminders by email",
-      "Alerts when a deadline or fee changes"
+      "Deadline reminders by email"
     ],
     "pagar": "Pay by card",
     "desistimiento": "I want to access the digital content now and I accept that, once access begins, I lose my 14-day right of withdrawal.",
@@ -105,7 +105,18 @@
     "pruebaStripe": "Secure payment with Stripe. Currently in test mode: no real money is charged.",
     "noAsesoria": "This is not legal advice or a service that handles procedures for you: it is public information, organised and explained.",
     "marcaCasillas": "Tick both boxes to continue.",
-    "errorPago": "We could not open the payment page. Please try again in a few minutes."
+    "errorPago": "We could not open the payment page. Please try again in a few minutes.",
+    "gratisTitulo": "Free, no sign-up",
+    "gratisIncluye": [
+      "The full empadronamiento guide, with checklist and reminders",
+      "The summary, key facts and sources of all 8 guides",
+      "The “Where do I start?” selector"
+    ],
+    "pagoTitulo": "With a subscription or pack",
+    "iva": "VAT included",
+    "cancela": "Cancel in one click from “My account”. No commitment.",
+    "sinRenovacion": "One payment. It does not renew by itself.",
+    "porMes": "per month"
   },
   "acceso": {
     "titulo": "Recover access",
@@ -145,7 +156,8 @@
     "privacidad": "Privacy",
     "cookies": "Cookies",
     "condiciones": "Terms of sale",
-    "contacto": "Contact"
+    "contacto": "Contact",
+    "sello": "Made in Lleida · Clear price · Cancel in one click"
   },
   "correo": {
     "confirmarAsunto": "Confirm your reminders for {guia}",

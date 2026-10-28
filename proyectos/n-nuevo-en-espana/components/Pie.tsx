@@ -4,7 +4,7 @@ import { titular } from "@/lib/config";
 
 export default function Pie({ idioma, d }: { idioma: string; d: Dicc }) {
   return (
-    <footer className="border-t border-linea bg-white mt-10">
+    <footer className="border-t border-linea bg-tarjeta mt-10">
       <div className="max-w-3xl mx-auto px-4 py-8 text-sm text-suave space-y-4">
         <p className="bg-aviso-claro text-tinta rounded-xl p-3">{d.aviso.largo}</p>
         <nav className="flex flex-wrap gap-x-4 gap-y-2">
@@ -15,6 +15,7 @@ export default function Pie({ idioma, d }: { idioma: string; d: Dicc }) {
           <Link href={`/${idioma}/preguntas`}>{d.nav.preguntas}</Link>
           <a href={`mailto:${titular().correo}`}>{d.pie.contacto}</a>
         </nav>
+        <p className="font-semibold text-tinta">{d.pie.sello}</p>
         <p>© 2026 {d.marca}</p>
       </div>
     </footer>

@@ -1,32 +1,54 @@
 @import "tailwindcss";
 
+/* Familia «Nuevo en España» (MARCAS.md §4, marcas/tokens.json): terracota, azul noche, crema y oliva.
+   La terracota de marca (#D9603B) va en logotipo y acentos; botones y enlaces usan su tono oscuro (#B9472A)
+   para llegar al contraste AA con texto blanco (5,25:1). */
 @theme {
-  --color-tinta: #1d2433;
-  --color-suave: #5b6475;
-  --color-linea: #e3e6ec;
-  --color-fondo: #faf8f4;
-  --color-tarjeta: #ffffff;
-  --color-marca: #c2410c;      /* teja: cálido, España sin bandera */
-  --color-marca-oscuro: #9a3412;
-  --color-marca-claro: #fff1e8;
-  --color-ok: #15803d;
-  --color-ok-claro: #e8f6ec;
+  --color-tinta: var(--tinta);
+  --color-suave: var(--suave);
+  --color-linea: var(--linea);
+  --color-fondo: var(--fondo);
+  --color-tarjeta: var(--tarjeta);
+  --color-marca: var(--marca);
+  --color-marca-oscuro: var(--marca-oscuro);
+  --color-marca-claro: var(--marca-claro);
+  --color-ok: var(--ok);
+  --color-ok-claro: var(--ok-claro);
   --color-aviso: #a16207;
-  --color-aviso-claro: #fef7e0;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --color-aviso-claro: var(--aviso-claro);
+  --font-sans: var(--font-texto), var(--font-arabe), var(--font-chino), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-titulos: var(--font-titulo), var(--font-texto), var(--font-arabe), var(--font-chino), system-ui, sans-serif;
+}
+
+:root {
+  --tinta: #1F2A44; --suave: #5b6475; --linea: #eadfce; --fondo: #FBF5EC; --tarjeta: #ffffff;
+  --marca: #D9603B; --marca-oscuro: #B9472A; --marca-claro: #fbe4d9;
+  --ok: #5E6F2B; --ok-claro: #eef2e1; --aviso-claro: #fdf1d8;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tinta: #F3EBDD; --suave: #b9b2a5; --linea: #2c3754; --fondo: #141B2D; --tarjeta: #1c2540;
+    --marca: #E57A55; --marca-oscuro: #F3A07F; --marca-claro: #3a2622;
+    --ok: #a9bf6a; --ok-claro: #26301a; --aviso-claro: #3a2f16;
+    color-scheme: dark;
+  }
+  .boton-marca { color: #141B2D !important; }
 }
 
 html { -webkit-text-size-adjust: 100%; }
-body { background: var(--color-fondo); color: var(--color-tinta); font-family: var(--font-sans); }
+body { background: var(--fondo); color: var(--tinta); font-family: var(--font-sans); }
+h1, h2, h3 { font-family: var(--font-titulos); letter-spacing: -0.01em; }
+:lang(ar) h1, :lang(ar) h2, :lang(ar) h3, :lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3 { font-family: var(--font-sans); }
 :lang(ar) body, [dir="rtl"] body { line-height: 1.8; }
 a { color: inherit; }
-.enlace { color: var(--color-marca-oscuro); text-decoration: underline; text-underline-offset: 3px; }
-.tarjeta { background: var(--color-tarjeta); border: 1px solid var(--color-linea); border-radius: 16px; }
+.enlace { color: var(--marca-oscuro); text-decoration: underline; text-underline-offset: 3px; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 16px; }
 .boton { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: .5rem 1.25rem; border-radius: 12px; font-weight: 600; line-height: 1.35; text-align: center; }
-.boton-marca { background: var(--color-marca); color: #fff; }
-.boton-marca:hover { background: var(--color-marca-oscuro); }
-.boton-borde { border: 1.5px solid var(--color-tinta); }
-.campo { width: 100%; min-height: 48px; border: 1.5px solid var(--color-linea); border-radius: 12px; padding: .5rem .875rem; background: #fff; }
-.campo:focus { outline: 3px solid var(--color-marca-claro); border-color: var(--color-marca); }
-:focus-visible { outline: 3px solid var(--color-marca); outline-offset: 2px; }
+.boton-marca { background: var(--marca-oscuro); color: #fff; }
+.boton-marca:hover { filter: brightness(0.92); }
+.boton-borde { border: 1.5px solid var(--tinta); }
+.campo { width: 100%; min-height: 48px; border: 1.5px solid var(--linea); border-radius: 12px; padding: .5rem .875rem; background: var(--tarjeta); color: var(--tinta); }
+.campo:focus { outline: 3px solid var(--marca-claro); border-color: var(--marca); }
+:focus-visible { outline: 3px solid var(--marca); outline-offset: 2px; }
 @media print { header, footer, .no-imprimir { display: none !important; } }

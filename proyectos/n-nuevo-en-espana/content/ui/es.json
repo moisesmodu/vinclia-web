@@ -71,7 +71,8 @@
     "yaTengoAcceso": "Ya pagué: recuperar acceso",
     "cargando": "Cargando…",
     "otrasGuias": "Otras guías",
-    "noTraducida": "Esta guía todavía no está traducida a tu idioma: te la mostramos en castellano."
+    "noTraducida": "Esta guía todavía no está traducida a tu idioma: te la mostramos en castellano.",
+    "celebracion": "¡Trámite listo! Lo tienes todo preparado."
   },
   "recordatorio": {
     "email": "Tu correo electrónico",
@@ -96,8 +97,7 @@
     "incluye": [
       "Las 8 guías completas en tu idioma",
       "Listas de comprobación interactivas",
-      "Recordatorios de plazos por correo",
-      "Avisos cuando cambia un plazo o una tasa"
+      "Recordatorios de plazos por correo"
     ],
     "pagar": "Pagar con tarjeta",
     "desistimiento": "Quiero acceder ya al contenido digital y acepto que, una vez empiece el acceso, pierdo el derecho de desistimiento de 14 días.",
@@ -105,7 +105,18 @@
     "pruebaStripe": "Pago seguro con Stripe. Ahora mismo en modo prueba: no se cobra nada real.",
     "noAsesoria": "No es asesoramiento legal ni gestión de trámites: es información pública ordenada y explicada.",
     "marcaCasillas": "Marca las dos casillas para continuar.",
-    "errorPago": "No se ha podido abrir el pago. Inténtalo de nuevo en unos minutos."
+    "errorPago": "No se ha podido abrir el pago. Inténtalo de nuevo en unos minutos.",
+    "gratisTitulo": "Gratis, sin registrarte",
+    "gratisIncluye": [
+      "La guía completa de empadronamiento, con lista y recordatorios",
+      "El resumen, los datos clave y las fuentes de las 8 guías",
+      "El selector «¿Por dónde empiezo?»"
+    ],
+    "pagoTitulo": "Con suscripción o pack",
+    "iva": "IVA incluido",
+    "cancela": "Cancela en un clic desde «Mi cuenta». Sin permanencia.",
+    "sinRenovacion": "Un solo pago. No se renueva solo.",
+    "porMes": "al mes"
   },
   "acceso": {
     "titulo": "Recuperar acceso",
@@ -145,7 +156,8 @@
     "privacidad": "Privacidad",
     "cookies": "Cookies",
     "condiciones": "Condiciones de venta",
-    "contacto": "Contacto"
+    "contacto": "Contacto",
+    "sello": "Hecho en Lleida · Precio claro · Cancela en un clic"
   },
   "correo": {
     "confirmarAsunto": "Confirma tus recordatorios de {guia}",

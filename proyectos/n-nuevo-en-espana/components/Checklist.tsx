@@ -35,6 +35,9 @@ export default function Checklist({ slug, items, d }: { slug: string; items: { i
           </li>
         ))}
       </ul>
+      {n === items.length && items.length > 0 ? (
+        <p className="mt-3 rounded-xl p-3 bg-ok-claro text-ok font-semibold" role="status">🎉 {d.guia.celebracion}</p>
+      ) : null}
       <div className="flex justify-between items-center mt-3 text-sm text-suave">
         <span>{d.guia.checklistAyuda}</span>
         {n > 0 ? <button className="enlace" onClick={() => { setHechos({}); try { localStorage.removeItem(clave); } catch {} }}>{d.guia.reiniciar}</button> : null}

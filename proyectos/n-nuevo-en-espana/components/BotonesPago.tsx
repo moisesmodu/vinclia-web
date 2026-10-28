@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type Plan = { id: "suscripcion" | "pack"; titulo: string; precio: string; texto: string; destacado?: boolean };
+type Plan = { id: "suscripcion" | "pack"; titulo: string; precio: string; periodo: string; iva: string; nota: string; texto: string; destacado?: boolean };
 type Textos = { pagar: string; desistimiento: string; condiciones: string; marcaCasillas: string; errorPago: string; enlaceCondiciones: string };
 
 export default function BotonesPago({ idioma, planes, textos }: { idioma: string; planes: Plan[]; textos: Textos }) {
@@ -32,8 +32,10 @@ export default function BotonesPago({ idioma, planes, textos }: { idioma: string
         {planes.map((p) => (
           <div key={p.id} className={`tarjeta p-5 flex flex-col ${p.destacado ? "border-2 border-marca" : ""}`}>
             <h2 className="font-bold text-lg">{p.titulo}</h2>
-            <p className="text-2xl font-bold mt-1">{p.precio}</p>
-            <p className="text-sm text-suave mt-2 flex-1">{p.texto}</p>
+            <p className="mt-1"><span className="text-3xl font-bold">{p.precio}</span> <span className="text-suave">/ {p.periodo}</span></p>
+            <p className="text-sm text-suave">{p.iva}</p>
+            <p className="text-sm mt-2 flex-1">{p.texto}</p>
+            <p className="text-sm font-semibold text-ok mt-2">✓ {p.nota}</p>
             <button onClick={() => pagar(p.id)} disabled={cargando !== null} className="boton boton-marca mt-4 w-full">
               {cargando === p.id ? "…" : textos.pagar}
             </button>

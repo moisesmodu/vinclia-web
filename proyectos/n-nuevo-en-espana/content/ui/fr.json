@@ -71,7 +71,8 @@
     "yaTengoAcceso": "J'ai déjà payé : récupérer l'accès",
     "cargando": "Chargement…",
     "otrasGuias": "Autres guides",
-    "noTraducida": "Ce guide n'est pas encore traduit dans votre langue : nous l'affichons en espagnol."
+    "noTraducida": "Ce guide n'est pas encore traduit dans votre langue : nous l'affichons en espagnol.",
+    "celebracion": "Démarche prête ! Vous avez tout ce qu'il faut."
   },
   "recordatorio": {
     "email": "Votre adresse e-mail",
@@ -96,8 +97,7 @@
     "incluye": [
       "Les 8 guides complets dans votre langue",
       "Listes de vérification interactives",
-      "Rappels des délais par e-mail",
-      "Alertes quand un délai ou une taxe change"
+      "Rappels des délais par e-mail"
     ],
     "pagar": "Payer par carte",
     "desistimiento": "Je veux accéder tout de suite au contenu numérique et j'accepte que, une fois l'accès commencé, je perds le droit de rétractation de 14 jours.",
@@ -105,7 +105,18 @@
     "pruebaStripe": "Paiement sécurisé avec Stripe. Actuellement en mode test : aucun montant réel n'est débité.",
     "noAsesoria": "Ce n'est pas un conseil juridique ni un service qui fait les démarches à votre place : c'est de l'information publique, organisée et expliquée.",
     "marcaCasillas": "Cochez les deux cases pour continuer.",
-    "errorPago": "Impossible d'ouvrir le paiement. Réessayez dans quelques minutes."
+    "errorPago": "Impossible d'ouvrir le paiement. Réessayez dans quelques minutes.",
+    "gratisTitulo": "Gratuit, sans inscription",
+    "gratisIncluye": [
+      "Le guide complet de l'empadronamiento, avec liste et rappels",
+      "Le résumé, les données clés et les sources des 8 guides",
+      "Le sélecteur « Par où commencer ? »"
+    ],
+    "pagoTitulo": "Avec abonnement ou pack",
+    "iva": "TVA incluse",
+    "cancela": "Résiliez en un clic depuis « Mon compte ». Sans engagement.",
+    "sinRenovacion": "Un seul paiement. Pas de renouvellement automatique.",
+    "porMes": "par mois"
   },
   "acceso": {
     "titulo": "Récupérer l'accès",
@@ -145,7 +156,8 @@
     "privacidad": "Confidentialité",
     "cookies": "Cookies",
     "condiciones": "Conditions de vente",
-    "contacto": "Contact"
+    "contacto": "Contact",
+    "sello": "Fait à Lleida · Prix clair · Résiliable en un clic"
   },
   "correo": {
     "confirmarAsunto": "Confirmez vos rappels pour {guia}",

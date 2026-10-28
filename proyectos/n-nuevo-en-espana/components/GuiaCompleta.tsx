@@ -7,6 +7,7 @@ import FormRecordatorio from "./FormRecordatorio";
 export default function GuiaCompleta({ g, idioma, d }: { g: Guia; idioma: string; d: Dicc }) {
   return (
     <div className="space-y-6">
+      <Checklist slug={g.slug} items={g.checklist} d={d} />
       <section>
         <h2 className="font-bold text-xl mb-3">{d.guia.pasos}</h2>
         <ol className="space-y-3">
@@ -67,7 +68,6 @@ export default function GuiaCompleta({ g, idioma, d }: { g: Guia; idioma: string
         </section>
       ) : null}
 
-      <Checklist slug={g.slug} items={g.checklist} d={d} />
       <FormRecordatorio slug={g.slug} idioma={idioma} r={g.recordatorio} d={d} />
     </div>
   );

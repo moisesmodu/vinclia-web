@@ -1,7 +1,7 @@
 {
   "idioma": "Català",
   "marca": "Nuevo en España",
-  "lema": "Els teus tràmits a Espanya, pas a pas i en la teva llengua",
+  "lema": "Els teus tràmits a Espanya, pas a pas i en el teu idioma",
   "meta": {
     "titulo": "Nuevo en España · Guies de tràmits per a estrangers en la teva llengua",
     "descripcion": "Guies pas a pas per renovar la residència, empadronar-te, demanar la targeta sanitària, el número de la Seguretat Social, el carnet de conduir i la nacionalitat. Fonts oficials, en 7 llengües."
@@ -14,7 +14,7 @@
     "idioma": "Llengua"
   },
   "inicio": {
-    "titulo": "Els teus tràmits a Espanya, pas a pas i en la teva llengua",
+    "titulo": "Els teus tràmits a Espanya, pas a pas i en el teu idioma",
     "subtitulo": "Documents, terminis, taxes i errors freqüents de cada tràmit, amb la font oficial citada i la data de revisió. Per a persones acabades d'arribar o acabades de regularitzar.",
     "ctaGratis": "Comença gratis: empadronament",
     "ctaGuias": "Veure totes les guies",
@@ -71,7 +71,8 @@
     "yaTengoAcceso": "Ja he pagat: recuperar accés",
     "cargando": "Carregant…",
     "otrasGuias": "Altres guies",
-    "noTraducida": "Aquesta guia encara no està traduïda al català: te la mostrem en castellà."
+    "noTraducida": "Aquesta guia encara no està traduïda al català: te la mostrem en castellà.",
+    "celebracion": "Tràmit enllestit! Ho tens tot a punt."
   },
   "recordatorio": {
     "email": "El teu correu electrònic",
@@ -96,8 +97,7 @@
     "incluye": [
       "Les 8 guies completes",
       "Llistes de comprovació interactives",
-      "Recordatoris de terminis per correu",
-      "Avisos quan canvia un termini o una taxa"
+      "Recordatoris de terminis per correu"
     ],
     "pagar": "Pagar amb targeta",
     "desistimiento": "Vull accedir ja al contingut digital i accepto que, un cop comenci l'accés, perdo el dret de desistiment de 14 dies.",
@@ -105,7 +105,18 @@
     "pruebaStripe": "Pagament segur amb Stripe. Ara mateix en mode de prova: no es cobra res de real.",
     "noAsesoria": "No és assessorament legal ni gestió de tràmits: és informació pública ordenada i explicada.",
     "marcaCasillas": "Marca les dues caselles per continuar.",
-    "errorPago": "No s'ha pogut obrir el pagament. Torna-ho a provar d'aquí a uns minuts."
+    "errorPago": "No s'ha pogut obrir el pagament. Torna-ho a provar d'aquí a uns minuts.",
+    "gratisTitulo": "Gratis, sense registrar-te",
+    "gratisIncluye": [
+      "La guia completa d'empadronament, amb llista i recordatoris",
+      "El resum, les dades clau i les fonts de les 8 guies",
+      "El selector «Per on començo?»"
+    ],
+    "pagoTitulo": "Amb subscripció o pack",
+    "iva": "IVA inclòs",
+    "cancela": "Cancel·la amb un clic des d'«El meu compte». Sense permanència.",
+    "sinRenovacion": "Un sol pagament. No es renova sol.",
+    "porMes": "al mes"
   },
   "acceso": {
     "titulo": "Recuperar l'accés",
@@ -145,7 +156,8 @@
     "privacidad": "Privacitat",
     "cookies": "Galetes",
     "condiciones": "Condicions de venda",
-    "contacto": "Contacte"
+    "contacto": "Contacte",
+    "sello": "Fet a Lleida · Preu clar · Cancel·la amb un clic"
   },
   "correo": {
     "confirmarAsunto": "Confirma els teus recordatoris de {guia}",

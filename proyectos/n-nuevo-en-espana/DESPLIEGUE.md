@@ -15,7 +15,7 @@
 | Proyecto de Neon | `cartera-n-nuevo-en-espana`, región `aws-eu-west-2`, Postgres 16 |
 | Stripe (cuenta Numi Mates, **modo prueba** hasta lanzar) | Producto `Cartera · Nuevo en España · Mensual 4,99 €` con precio 4,99 € mensual · Producto `Cartera · Nuevo en España · Pack 19,90 €` con precio 19,90 € pago único · ambos `metadata.proyecto=n-nuevo-en-espana`, IVA incluido |
 | Webhook de Stripe | `https://<dominio>/api/stripe/webhook` con `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `invoice.paid`, `customer.subscription.deleted`, `charge.refunded` |
-| Remitente de correo | `Nuevo en España <noreply@algorithmicslleida.com>` (Resend, dominio ya verificado) |
+| Remitente de correo | `Nuevo en España <noreply@numimates.com>` (Resend, dominio numimates.com verificado) |
 
 ## Variables de entorno en Vercel (production y preview)
 
@@ -28,7 +28,7 @@
 | `STRIPE_WEBHOOK_SECRET` | lo imprime `scripts/stripe-configurar.mjs` |
 | `STRIPE_PRICE_MENSUAL`, `STRIPE_PRICE_PACK` | los imprime `scripts/stripe-configurar.mjs` |
 | `RESEND_API_KEY` | `$RESEND_API_KEY` |
-| `CORREO_REMITENTE` | `Nuevo en España <noreply@algorithmicslleida.com>` |
+| `CORREO_REMITENTE` | `Nuevo en España <noreply@numimates.com>` |
 | `SECRETO_SESION` | `openssl rand -base64 32` |
 | `CRON_SECRET` | `openssl rand -hex 24` |
 | `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | los del entorno (salen en aviso legal y condiciones) |
@@ -75,7 +75,7 @@ pon STRIPE_PRICE_MENSUAL "$(grep ^STRIPE_PRICE_MENSUAL /tmp/stripe-n.txt | cut -
 pon STRIPE_PRICE_PACK "$(grep ^STRIPE_PRICE_PACK /tmp/stripe-n.txt | cut -d= -f2)"
 pon STRIPE_WEBHOOK_SECRET "$(grep ^STRIPE_WEBHOOK_SECRET /tmp/stripe-n.txt | cut -d= -f2)"
 pon RESEND_API_KEY "$RESEND_API_KEY"
-pon CORREO_REMITENTE "Nuevo en España <noreply@algorithmicslleida.com>"
+pon CORREO_REMITENTE "Nuevo en España <noreply@numimates.com>"
 pon SECRETO_SESION "$(openssl rand -base64 32)"
 pon CRON_SECRET "$(openssl rand -hex 24)"
 pon LEGAL_NOM "$LEGAL_NOM"; pon LEGAL_NIF "$LEGAL_NIF"; pon LEGAL_EMAIL "$LEGAL_EMAIL"; pon LEGAL_ADRECA "$LEGAL_ADRECA"
@@ -94,7 +94,7 @@ variable `NEXT_PUBLIC_URL`, y vuelve a desplegar.
 3. `/es/precios` → marcar las dos casillas → Suscripción → pagar con la tarjeta de prueba `4242 4242 4242 4242`,
    fecha futura, CVC 123 → vuelve a `/es/gracias` con «Ya tienes acceso» → la guía de renovación se ve completa.
 4. En Stripe (modo prueba) → Webhooks → el evento `checkout.session.completed` aparece con respuesta 200.
-5. Activar un recordatorio en una guía con tu correo → llega el correo de confirmación desde noreply@algorithmicslleida.com.
+5. Activar un recordatorio en una guía con tu correo → llega el correo de confirmación desde noreply@numimates.com.
 6. `curl -H "Authorization: Bearer <CRON_SECRET>" https://<dominio>/api/cron/recordatorios` → `{"revisados":…,"enviados":…}`.
 7. «Mi cuenta» → «Cancelar la suscripción» → 200.
 8. `/es/legal/aviso-legal` muestra el NIF y el correo de `LEGAL_*`.

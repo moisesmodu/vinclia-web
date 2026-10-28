@@ -71,7 +71,8 @@
     "yaTengoAcceso": "Am plătit deja: recuperează accesul",
     "cargando": "Se încarcă…",
     "otrasGuias": "Alte ghiduri",
-    "noTraducida": "Acest ghid nu este încă tradus în limba ta: ți-l arătăm în spaniolă."
+    "noTraducida": "Acest ghid nu este încă tradus în limba ta: ți-l arătăm în spaniolă.",
+    "celebracion": "Gata! Ai totul pregătit."
   },
   "recordatorio": {
     "email": "Adresa ta de e-mail",
@@ -96,8 +97,7 @@
     "incluye": [
       "Toate cele 8 ghiduri complete în limba ta",
       "Liste de verificare interactive",
-      "Mementouri pentru termene prin e-mail",
-      "Notificări când se schimbă un termen sau o taxă"
+      "Mementouri pentru termene prin e-mail"
     ],
     "pagar": "Plătește cu cardul",
     "desistimiento": "Vreau să accesez acum conținutul digital și accept că, odată ce începe accesul, pierd dreptul de retragere de 14 zile.",
@@ -105,7 +105,18 @@
     "pruebaStripe": "Plată sigură prin Stripe. În acest moment este în modul de test: nu se încasează bani reali.",
     "noAsesoria": "Nu este consultanță juridică și nici un serviciu care face formalitățile în locul tău: sunt informații publice, ordonate și explicate.",
     "marcaCasillas": "Bifează cele două căsuțe pentru a continua.",
-    "errorPago": "Nu s-a putut deschide plata. Încearcă din nou peste câteva minute."
+    "errorPago": "Nu s-a putut deschide plata. Încearcă din nou peste câteva minute.",
+    "gratisTitulo": "Gratuit, fără înregistrare",
+    "gratisIncluye": [
+      "Ghidul complet de empadronamiento, cu listă și mementouri",
+      "Rezumatul, datele cheie și sursele tuturor celor 8 ghiduri",
+      "Selectorul „De unde încep?”"
+    ],
+    "pagoTitulo": "Cu abonament sau pachet",
+    "iva": "TVA inclus",
+    "cancela": "Anulezi dintr-un clic din „Contul meu”. Fără obligații.",
+    "sinRenovacion": "O singură plată. Nu se reînnoiește singur.",
+    "porMes": "pe lună"
   },
   "acceso": {
     "titulo": "Recuperează accesul",
@@ -145,7 +156,8 @@
     "privacidad": "Confidențialitate",
     "cookies": "Cookie-uri",
     "condiciones": "Condiții de vânzare",
-    "contacto": "Contact"
+    "contacto": "Contact",
+    "sello": "Făcut în Lleida · Preț clar · Anulezi dintr-un clic"
   },
   "correo": {
     "confirmarAsunto": "Confirmă mementourile pentru {guia}",

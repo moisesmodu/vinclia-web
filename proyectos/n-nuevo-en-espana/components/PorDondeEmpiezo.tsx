@@ -19,7 +19,7 @@ export default function PorDondeEmpiezo(props: {
             role="radio"
             aria-checked={sel === k}
             onClick={() => setSel(k)}
-            className={`text-start rounded-xl border-2 p-3 min-h-[56px] ${sel === k ? "border-marca bg-marca-claro" : "border-linea bg-white"}`}
+            className={`text-start rounded-xl border-2 p-3 min-h-[56px] ${sel === k ? "border-marca bg-marca-claro" : "border-linea bg-tarjeta"}`}
           >
             {texto}
           </button>

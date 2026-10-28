@@ -55,7 +55,7 @@ The app is available in 7 languages: Spanish, English, Arabic, French, Romanian,
 
 FREE AND PAID CONTENT
 Free: the full empadronamiento guide and the summary of every guide.
-With a subscription or a 12-month pack: all full guides, checklists, reminders and alerts when a deadline or fee changes.
+With a subscription or a 12-month pack: all full guides, checklists and deadline reminders.
 
 OUR RULES
 • Every deadline and fee links to an official source, with the date it was checked

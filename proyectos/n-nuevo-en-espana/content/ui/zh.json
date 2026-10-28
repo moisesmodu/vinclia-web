@@ -71,7 +71,8 @@
     "yaTengoAcceso": "我已付款：恢复访问",
     "cargando": "加载中…",
     "otrasGuias": "其他指南",
-    "noTraducida": "本指南还没有翻译成你的语言，现以西班牙语显示。"
+    "noTraducida": "本指南还没有翻译成你的语言，现以西班牙语显示。",
+    "celebracion": "手续准备好了！一切就绪。"
   },
   "recordatorio": {
     "email": "你的电子邮箱",
@@ -96,8 +97,7 @@
     "incluye": [
       "8份完整指南，用你的语言",
       "互动核对清单",
-      "邮件期限提醒",
-      "期限或费用变化时通知你"
+      "邮件期限提醒"
     ],
     "pagar": "用银行卡付款",
     "desistimiento": "我希望立即访问数字内容，并同意一旦开始访问，我将失去14天的撤销权。",
@@ -105,7 +105,18 @@
     "pruebaStripe": "通过 Stripe 安全付款。目前为测试模式：不会实际扣款。",
     "noAsesoria": "这不是法律咨询，也不代办手续：这是经过整理和解释的公开信息。",
     "marcaCasillas": "请勾选两个方框以继续。",
-    "errorPago": "无法打开付款页面。请过几分钟再试。"
+    "errorPago": "无法打开付款页面。请过几分钟再试。",
+    "gratisTitulo": "免费，无需注册",
+    "gratisIncluye": [
+      "完整的居住登记（empadronamiento）指南，含清单和提醒",
+      "全部 8 份指南的摘要、关键信息和来源",
+      "“从哪里开始？”选择器"
+    ],
+    "pagoTitulo": "订阅或套餐",
+    "iva": "含增值税",
+    "cancela": "在“我的账户”中一键取消。无最短期限。",
+    "sinRenovacion": "一次付款，不会自动续费。",
+    "porMes": "每月"
   },
   "acceso": {
     "titulo": "恢复访问",
@@ -145,7 +156,8 @@
     "privacidad": "隐私",
     "cookies": "Cookie",
     "condiciones": "销售条款",
-    "contacto": "联系我们"
+    "contacto": "联系我们",
+    "sello": "莱里达制作 · 价格透明 · 一键取消"
   },
   "correo": {
     "confirmarAsunto": "请确认“{guia}”的提醒",

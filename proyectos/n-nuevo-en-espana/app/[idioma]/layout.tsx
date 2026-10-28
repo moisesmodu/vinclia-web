@@ -2,11 +2,17 @@ import "../globals.css";
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import Script from "next/script";
+import { Outfit, Noto_Sans, Noto_Sans_Arabic, Noto_Sans_SC } from "next/font/google";
 import { IDIOMAS, IDIOMAS_RTL, esIdioma, urlBase } from "@/lib/config";
 import { dicc, LOCALE_BCP47 } from "@/lib/i18n";
 import Cabecera from "@/components/Cabecera";
 import Pie from "@/components/Pie";
 import RegistroSW from "@/components/RegistroSW";
+
+const titulo = Outfit({ subsets: ["latin", "latin-ext"], weight: ["700"], variable: "--font-titulo", display: "swap" });
+const texto = Noto_Sans({ subsets: ["latin", "latin-ext", "cyrillic"], weight: ["400", "600"], variable: "--font-texto", display: "swap" });
+const arabe = Noto_Sans_Arabic({ subsets: ["arabic"], weight: ["400", "600"], variable: "--font-arabe", display: "swap", preload: false });
+const chino = Noto_Sans_SC({ subsets: ["latin"], weight: ["400", "600"], variable: "--font-chino", display: "swap", preload: false });
 
 export function generateStaticParams() {
   return IDIOMAS.map((idioma) => ({ idioma }));
@@ -20,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ idioma: s
     title: { default: d.meta.titulo, template: `%s · ${d.marca}` },
     description: d.meta.descripcion,
     manifest: "/manifest.webmanifest",
-    icons: { icon: "/iconos/icono.svg", apple: "/iconos/icono-192.png" },
+    icons: { icon: [{ url: "/marca/icono.svg", type: "image/svg+xml" }, { url: "/iconos/favicon-32.png", sizes: "32x32" }], apple: "/iconos/icono-192.png" },
     alternates: {
       canonical: `/${idioma}`,
       languages: Object.fromEntries(IDIOMAS.map((i) => [LOCALE_BCP47[i], `/${i}`]))
@@ -29,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ idioma: s
   };
 }
 
-export const viewport: Viewport = { themeColor: "#c2410c", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#D9603B", width: "device-width", initialScale: 1 };
 
 export default async function Layout({ children, params }: { children: React.ReactNode; params: Promise<{ idioma: string }> }) {
   const { idioma } = await params;
@@ -37,9 +43,9 @@ export default async function Layout({ children, params }: { children: React.Rea
   const d = dicc(idioma);
   const plausible = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
   return (
-    <html lang={LOCALE_BCP47[idioma]} dir={IDIOMAS_RTL.has(idioma) ? "rtl" : "ltr"}>
+    <html lang={LOCALE_BCP47[idioma]} dir={IDIOMAS_RTL.has(idioma) ? "rtl" : "ltr"} className={[titulo.variable, texto.variable, idioma === "ar" ? arabe.variable : "", idioma === "zh" ? chino.variable : ""].join(" ")}>
       <body className="min-h-dvh flex flex-col">
-        <a href="#contenido" className="sr-only focus:not-sr-only focus:absolute focus:p-3 focus:bg-white">{d.comun.inicio}</a>
+        <a href="#contenido" className="sr-only focus:not-sr-only focus:absolute focus:p-3 focus:bg-tarjeta">{d.comun.inicio}</a>
         <Cabecera idioma={idioma} d={d} />
         <main id="contenido" className="flex-1 w-full max-w-3xl mx-auto px-4 py-6">{children}</main>
         <Pie idioma={idioma} d={d} />
