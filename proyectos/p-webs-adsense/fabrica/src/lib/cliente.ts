@@ -4,7 +4,12 @@ import { renderResultado } from './render';
 import { params } from './params';
 import type { DefCalc, Lang } from './def';
 
-const defs = import.meta.glob('../calculadoras/*.ts');
+// Calculadoras del país del sitio: las de EE. UU. empiezan por «us-». Con PAIS constante (astro.config.mjs) el
+// empaquetador no genera trozos de JavaScript para las calculadoras del otro país.
+const ES = import.meta.glob(['../calculadoras/*.ts', '!../calculadoras/us-*.ts']);
+const US = import.meta.glob('../calculadoras/us-*.ts');
+const PAIS = import.meta.env.PAIS as string | undefined;
+const defs = PAIS === 'us' ? US : PAIS === 'es' ? ES : { ...ES, ...US };
 
 function leer(form: HTMLFormElement, d: DefCalc): Record<string, any> {
   const v: Record<string, any> = {};

@@ -202,7 +202,7 @@ export function impuestoEstatal(e: EntradaEstatal, F: any) {
   if (d.sobretasa && imponible > d.sobretasa.umbral) { bruto += (imponible - d.sobretasa.umbral) * d.sobretasa.pct / 100; marginal += d.sobretasa.pct; }
   const creditos = (porEstado(d.credito_personal, e.ec) ?? 0) + (d.credito_dependiente ?? 0) * dep;
   const impuesto = r2(pos(bruto - creditos));
-  return { impuesto, marginal: r2(marginal), imponible, efectivo: base > 0 ? r2((impuesto / base) * 100) : 0, deducciones: r2(deducciones), creditos: r2(Math.min(creditos, bruto)), ninguno: false };
+  return { impuesto, marginal: r2(marginal), imponible, efectivo: e.agi > 0 ? r2((impuesto / e.agi) * 100) : 0, deducciones: r2(deducciones), creditos: r2(Math.min(creditos, bruto)), ninguno: false };
 }
 
 /** Cotizaciones estatales del empleado (SDI, WA Cares…) sobre el salario anual. */

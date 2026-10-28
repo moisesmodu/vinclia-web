@@ -4,14 +4,14 @@ Fábrica de sitios estáticos de calculadoras y tablas con datos oficiales, en c
 publicidad. Cada página resuelve un cálculo o da un dato real, nunca texto de relleno: es lo que exige la política de
 Google contra el contenido escalado y lo que los resúmenes de IA no sustituyen.
 
-| | Sitio 1 · NetoClaro | Sitio 2 · ImpuestoClaro |
-|---|---|---|
-| Tema | Nómina y laboral | Impuestos y autónomos |
-| Dominio propuesto | netoclaro.es | impuestoclaro.es |
-| Calculadoras | 20 (es + ca) | 20 (es + ca) |
-| Fichas de datos citables | 10 (es + ca, con CSV) | 10 (es + ca, con CSV) |
-| Páginas programáticas | 73 × 2 idiomas | 46 × 2 idiomas |
-| Páginas en total | 218 | 162 |
+| | Sitio 1 · NetoClaro | Sitio 2 · ImpuestoClaro | Sitio 3 · ChequeClaro |
+|---|---|---|---|
+| Tema | Nómina y laboral | Impuestos y autónomos | Cheque de pago, taxes y dinero en EE. UU. |
+| Dominio propuesto | netoclaro.es | impuestoclaro.es | chequeclaro.com |
+| Calculadoras | 20 (es + ca) | 20 (es + ca) | 17 (es-US, USD) |
+| Fichas de datos citables | 10 (es + ca, con CSV) | 10 (es + ca, con CSV) | 4 (con CSV) |
+| Páginas programáticas | 73 × 2 idiomas | 46 × 2 idiomas | 122 (15 estados, 78 estado × salario, 29 hora/año) |
+| Páginas en total | 218 | 162 | 149 |
 
 En producción (Vercel, sin dominio propio todavía): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/. El estado está en el panel.
 
@@ -28,7 +28,7 @@ proyectos/p-webs-adsense/
     ├── sitios/<sitio>/programaticas/  CSV que generan páginas (una fila = una página por idioma)
     ├── sitios/<sitio>/datos/        series históricas oficiales (SMI, IPREM, intereses)
     ├── sitios/<sitio>/palabras-clave.csv  mapa SEO de 200 palabras clave
-    ├── src/lib/calc/                motores puros: ss, irpf, laboral, fiscal (sin cifras dentro)
+    ├── src/lib/calc/                motores puros: ss, irpf, laboral, fiscal y us (EE. UU.), sin cifras dentro
     ├── src/calculadoras/<id>.ts     definición declarativa de cada calculadora (campos + cálculo)
     ├── src/fichas/<sitio>.ts        fichas de datos citables
     ├── src/plantillas/              plantillas de páginas programáticas
@@ -56,8 +56,8 @@ fecha de actualización, el autor, preguntas frecuentes, enlaces internos y los 
 ```bash
 cd proyectos/p-webs-adsense/fabrica
 npm ci
-npm test                        # 186 pruebas de cálculo
-npm run build:todos             # dist/nomina y dist/impuestos
+npm test                        # 249 pruebas de cálculo
+npm run build:todos             # dist/nomina, dist/impuestos y dist/eeuu
 npm run comprobar               # contenido completo, enlaces internos, títulos, datos pendientes
 node scripts/lighthouse.mjs     # Lighthouse móvil sobre una muestra; falla por debajo de 95
 SITIO=nomina npm run dev        # desarrollo
@@ -102,8 +102,12 @@ Variables opcionales, sin tocar el código:
   Una plantilla solo es válida si sus tablas cambian de verdad entre filas.
 - **Un año:** crea `params/es/<año>/` copiando el anterior, marca `"estado": "provisional"` hasta que salga el BOE y
   cambia `anioPorDefecto`.
-- **Un país:** crea `params/<pais>/pais.json` y `params/<pais>/<año>/`, y el sitio con `"pais": "<pais>"`. Los motores
-  de España no sirven para otro país: el sitio 3 (EE. UU.) tendrá sus propios motores en `src/lib/calc/us/`.
+- **Un país:** crea `params/<pais>/pais.json` (moneda y `locales`) y `params/<pais>/<año>/`, y el sitio con `"pais": "<pais>"`.
+  `astro.config.mjs` pasa al código `PAIS`, `MONEDA` y `LOCALES`: el formato de importes (`eur`/`eur0` = moneda del sitio),
+  los parámetros y las calculadoras que viajan al navegador son solo los del país. Añade su glob en `src/lib/params.ts` y
+  en `src/lib/cliente.ts`. Ejemplo: EE. UU. (`params/us`, motor `src/lib/calc/us.ts`, calculadoras `src/calculadoras/us-*.ts`).
+- **Un sitio de un solo idioma:** `"idiomas": ["es"]` en `sitio.json`; no se generan `/ca/` ni el CSV catalán. Los textos de
+  interfaz que citan España (BOE, nómina) se sustituyen con `ui` y `textosDatos` en el `sitio.json` (ver `sitios/eeuu`).
 - **Un sitio:** crea `sitios/<id>/sitio.json`, sus contenidos y sus fichas en `src/fichas/<id>.ts`, regístralas en
   `src/lib/rutas.ts` y crea otro proyecto con `SITIO=<id>` (DESPLIEGUE.md).
 
@@ -156,6 +160,7 @@ Variables opcionales, sin tocar el código:
 | Fecha | Qué |
 |---|---|
 | 28/10/2026 | Fábrica, sitio 1 (20 calculadoras, 10 fichas, 146 páginas programáticas) y sitio 2 (20 calculadoras, 10 fichas, 92 páginas programáticas), en castellano y catalán. |
+| 28/10/2026 | Sitio 3, ChequeClaro (EE. UU., es-US, USD): 17 calculadoras, 4 fichas, 122 páginas programáticas, parámetros 2026 (IRS Rev. Proc. 2025-32, SSA, DOL y 15 estados). irs.gov y las webs estatales estaban bloqueadas: cifras contrastadas con fuentes secundarias; las dudosas llevan `verificado: false`. Lighthouse móvil 100 en las 7 páginas de muestra. |
 
 ## Fichas de los sitios 3 a 7
 
@@ -176,6 +181,8 @@ Reglas comunes a los cinco sitios:
 ---
 
 ### Sitio 3 · Finanzas e impuestos de EE. UU. en español
+
+> **Estado (28/10/2026):** construido como **ChequeClaro** en `fabrica/sitios/eeuu` (año fiscal 2026; los parámetros están en `params/us/2026/laboral.json` y `fiscal.json`, no en `federal.json`/`estados.json` como proponía esta ficha). Pendiente: EITC, ITIN, casillas del W-2, Obamacare y fechas de la temporada 2027 (filas «nueva» de `palabras-clave.csv`), y la versión 2027 de los parámetros cuando el IRS publique la Rev. Proc.
 
 #### Público y mercado
 - Hispanohablantes residentes en EE. UU. (≈ 60 M). Trabajadores asalariados, por horas, *1099* y familias con hijos.

@@ -1,0 +1,151 @@
+{
+  "id": "eeuu",
+  "pais": "us",
+  "idiomas": ["es"],
+  "dominio": "https://chequeclaro.com",
+  "nombre": "ChequeClaro",
+  "lema": {
+    "es": "Calculadoras de cheque de pago, taxes y dinero en español"
+  },
+  "descripcion": {
+    "es": "Calcula tu cheque de pago por estado, cuánto te descuentan de taxes, tu reembolso, el crédito por hijos, el self-employment tax del 1099 y el costo de enviar dinero, con las cifras 2026 del IRS y de cada estado. En español, con el método y las fuentes."
+  },
+  "colores": {
+    "primario": "#0B6B7A",
+    "primarioOscuro": "#08535F",
+    "marca": "#1597A8",
+    "acento": "#FFD166",
+    "cabecera": "#0A1C22",
+    "fondo": "#FFFFFF",
+    "tenue": "#F0F6F8",
+    "superficie": "#FFFFFF",
+    "tinta": "#0A1C22",
+    "suave": "#46595F",
+    "borde": "#D5E3E8"
+  },
+  "anioPorDefecto": 2026,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio"
+    },
+    "bio": {
+      "es": "Programador y dueño de una escuela de programación en Lleida (España). Programa cada calculadora y la revisa contra las publicaciones del IRS (Rev. Proc. anual, Publicación 15-T, instrucciones del Schedule SE), la Administración del Seguro Social, el Departamento de Trabajo y los departamentos de impuestos de cada estado. No es preparador de impuestos: las páginas explican el cálculo, no sustituyen a un CPA o agente inscrito."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@numimates.com"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "us-cheque-pago",
+    "us-salario-hora",
+    "us-impuesto-federal",
+    "us-reembolso",
+    "us-1099",
+    "us-impuesto-estatal",
+    "us-fica",
+    "us-w4",
+    "us-overtime",
+    "us-propinas-overtime",
+    "us-credito-hijos",
+    "us-salario-minimo",
+    "us-401k",
+    "us-tarjeta",
+    "us-prestamo-auto",
+    "us-remesas",
+    "us-tipo-cambio"
+  ],
+  "destacadas": [
+    "us-cheque-pago",
+    "us-reembolso",
+    "us-salario-hora",
+    "us-1099",
+    "us-credito-hijos",
+    "us-remesas"
+  ],
+  "rutasDatos": {
+    "es": "datos"
+  },
+  "textosDatos": {
+    "es": {
+      "titulo": "Datos oficiales de taxes y salarios 2026: tablas para consultar y citar",
+      "descripcion": "Tablas con las cifras oficiales del IRS, la SSA, el Departamento de Trabajo y los estados: tramos federales, salario mínimo e impuesto estatal, descargables en CSV."
+    }
+  },
+  "ui": {
+    "es": {
+      "revisado": "Cifras revisadas con el IRS y fuentes oficiales",
+      "descargo": "Resultado orientativo calculado con las reglas publicadas. ChequeClaro es un sitio independiente: no somos el IRS ni ninguna agencia del gobierno. No sustituye a un preparador de impuestos (CPA o agente inscrito), a tu talón de pago ni a tu declaración.",
+      "avisoProvisional": "Las cifras de {anio} son provisionales: algunas aún no se han publicado y se usan las vigentes. Se actualizan en cuanto salgan.",
+      "datos": "Datos oficiales"
+    }
+  },
+  "programaticas": [
+    {
+      "id": "cheque-por-estado",
+      "plantilla": "us-cheque-estado",
+      "csv": "estados.csv",
+      "slug": { "es": "cheque-de-pago-{slug}" },
+      "calc": "us-cheque-pago",
+      "titulo": { "es": "Cheque de pago por estado" }
+    },
+    {
+      "id": "cheque-estado-salario",
+      "plantilla": "us-cheque-estado-salario",
+      "csv": "estado-salario.csv",
+      "slug": { "es": "cheque-de-pago-{slug}-{salario}" },
+      "calc": "us-cheque-pago",
+      "titulo": { "es": "Cuánto te queda según el salario y el estado" }
+    },
+    {
+      "id": "hora-a-anual",
+      "plantilla": "us-hora-anual",
+      "csv": "por-hora.csv",
+      "slug": { "es": "{hora}-dolares-la-hora-al-ano" },
+      "calc": "us-salario-hora",
+      "titulo": { "es": "Cuánto es la hora al año" }
+    },
+    {
+      "id": "anual-a-hora",
+      "plantilla": "us-anual-hora",
+      "csv": "por-ano.csv",
+      "slug": { "es": "{anual}-al-ano-por-hora" },
+      "calc": "us-salario-hora",
+      "titulo": { "es": "Cuánto es el salario anual por hora" }
+    }
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Números claros, sin letra pequeña."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Cheque",
+      "Claro"
+    ]
+  }
+}
