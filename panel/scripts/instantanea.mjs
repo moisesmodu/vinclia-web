@@ -108,13 +108,14 @@ const fichas = lista.map((p) => {
     <section><h2>Mejoras posibles</h2>${p.mejoras.length ? `<ul>${lis(p.mejoras)}</ul>` : '<p class="vacio">Pendiente.</p>'}</section>
     <section><h2>Hallazgos</h2>${p.hallazgos.length ? `<ul>${lis(p.hallazgos)}</ul>` : '<p class="vacio">Pendiente.</p>'}</section>
   </div></div>
+  ${p.examenes?.length ? `<section><h2>Exámenes oficiales que entrena</h2><p class="nota">Documento de producto completo: <a href="#producto-m">Producto M</a>.</p><table class="tabla"><thead><tr><th>Nivel</th><th>Estructura y apto</th><th>Convocatorias</th><th>Para qué se exige</th></tr></thead><tbody>${p.examenes.map((e) => `<tr><td><b>${esc(e.nivel)}</b><br><small>${esc(e.organismo)}</small></td><td>${esc(e.estructura)}<br><small>${esc(e.demanda)}</small></td><td>${esc(e.convocatorias)}</td><td>${esc(e.usos)}</td></tr>`).join('')}</tbody></table></section>` : ''}
   ${lider(p.lider, 'Ingeniería inversa del líder')}${lider(p.segundoLider, 'Segundo referente')}
   <section><h2>Competencia</h2>${tabla(['Quién', 'Precio', 'Dónde flaquea'], p.competidores.map((x) => `<tr><td>${enlace(x.nombre, x.url)}</td><td>${esc(x.precio ?? '—')}</td><td>${esc(x.debilidad ?? '—')}</td></tr>`).join(''))}</section>
   <section><h2>Código abierto reutilizable</h2>${tabla(['Repositorio', 'Licencia', 'Para qué'], p.repos.map((r) => `<tr><td>${enlace(r.nombre, r.url)}${r.estrellas ? `<small> ${esc(r.estrellas)}</small>` : ''}</td><td>${esc(r.licencia ?? '—')}</td><td>${esc(r.uso ?? '—')}</td></tr>`).join(''))}</section>
 </section>`;
 }).join('');
 
-const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md']]
+const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md'], ['producto-m', 'M-CATALA-PRODUCTE.md']]
   .map(([slug, archivo]) => `<section class="vista doc" id="v-${slug}" hidden><p class="volver"><a href="#inicio">Panel</a></p><div class="md">${md(archivo)}</div></section>`).join('');
 
 const html = `<title>La cartera</title>

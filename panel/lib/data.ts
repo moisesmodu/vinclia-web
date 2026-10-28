@@ -10,6 +10,7 @@ export type Lider = {
   modelo?: { propuesta?: string; precio?: string; embudo?: string; funciones?: string[]; retencion?: string; adquisicion?: string; tecnologia?: string; metricas?: string };
   loQueFunciona?: string[]; loQueFalla?: string[]; copiar?: string[]; mejorar?: string[]; adaptar?: string[]; planAccion?: string[];
 };
+export type Examen = { nivel: string; organismo: string; estructura: string; convocatorias: string; demanda: string; usos: string };
 export type Juicio = { probabilidad: number; veredicto: string; exito: string; porQue: string; contra: string; parada: string };
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
@@ -21,7 +22,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
-  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio;
+  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio; examenes?: Examen[];
 };
 
 export type Cartera = {
@@ -69,6 +70,7 @@ export const documentos: Record<string, { titulo: string; archivo: string }> = {
   sesiones: { titulo: 'Reglas de las sesiones', archivo: 'SESIONES.md' },
   prompts: { titulo: 'Prompts de las sesiones', archivo: 'PROMPTS-SESIONES.md' },
   juicio: { titulo: 'Juicio y probabilidad', archivo: 'JUICIO.md' },
+  'producto-m': { titulo: 'Producto M: certificados de catalán', archivo: 'M-CATALA-PRODUCTE.md' },
 };
 
 export function documentoHtml(slug: string): { titulo: string; html: string } | null {
