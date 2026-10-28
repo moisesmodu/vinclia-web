@@ -15,6 +15,7 @@
     "clientes": 0,
     "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
     "enlaces": {
+      "CCSE en tu idioma · web": "https://ccse-en-tu-idioma.vercel.app/es",
       "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2"
     },
     "acciones": [
@@ -53,13 +54,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: CCSE en tu idioma («Aprueba el examen de nacionalidad en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://ccse-en-tu-idioma.vercel.app con datos legales, Resend y remitente noreply@numimates.com; pendiente la prueba de pago"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md",
       "Primer pago real verificado"
     ],
     "paraMoises": [
@@ -223,6 +227,50 @@
       "porQue": "Demanda probada y mensual, contenido público, app oficial mal valorada, nadie explica en el idioma del candidato, se construye en una semana.",
       "contra": "La app oficial es gratis; precio bajo; derechos del Cervantes sobre las preguntas y actualización anual.",
       "parada": "Menos de 20 ventas con más de 2.000 visitas al mes a los 3 meses de publicar."
+    },
+    "pulido": {
+      "prioridad": 1,
+      "estado": "por revisar",
+      "porQue": "Es el que antes puede cobrar: examen CCSE el 26/11 con inscripción abierta hasta el 5/11, necesidad clara, app Android ya publicada y web en producción. Cada día cuenta.",
+      "faltan": [
+        "Prueba de pago real",
+        "Marca y correo en web y app",
+        "Campaña orgánica antes del 5/11"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -241,6 +289,7 @@
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
     "enlaces": {
+      "Nuevo en España · web": "https://nuevo-en-espana.vercel.app/",
       "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3"
     },
     "acciones": [
@@ -275,13 +324,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Nuevo en España («Tus trámites en España, paso a paso y en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://nuevo-en-espana.vercel.app con identidad de marca; pendiente la prueba de pago con tarjeta 4242"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
       "Verificar un pago en producción"
     ],
     "paraMoises": [],
@@ -457,6 +509,50 @@
       "porQue": "Un millón de renovaciones entre abril y junio de 2027, justo en el mes 6; nadie les habla en su idioma con fuentes oficiales; se vende dentro de A.",
       "contra": "Disposición a pagar incierta frente a guías gratuitas de ONG; riesgo de parecer asesoramiento legal; mantenimiento continuo.",
       "parada": "Menos de 100 ventas en la ola de renovación de 2027: pasa a contenido gratuito de A y se prueba la venta a ayuntamientos."
+    },
+    "pulido": {
+      "prioridad": 4,
+      "estado": "por revisar",
+      "porQue": "Mismo público que A y ya desplegado: cada cliente de CCSE es un cliente de N. Se pule justo después de A.",
+      "faltan": [
+        "Prueba de pago real",
+        "Correo hola@numimates.com en la configuración",
+        "Enlace cruzado desde A"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": true
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -465,7 +561,7 @@
     "nombre": "Oposiciones de cola larga",
     "marca": "Plaça · familia Exámenes",
     "resumen": "Tests, simulacros y repaso espaciado para oposiciones catalanas que las grandes apps no cubren.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 3,
     "modelo": "Suscripción 9,99 €/mes",
     "margenCliente": 55,
@@ -474,7 +570,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
-    "enlaces": {},
+    "enlaces": {
+      "Plaça · web": "https://placa-oposicions.vercel.app/",
+      "PR #7": "https://github.com/moisesmodu/vinclia-web/pull/7"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -499,6 +598,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Plaça («Treu plaça. Tests per a la teva oposició, per fi.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Plaça construido: 5 oposiciones catalanas y 1.737 preguntas verificadas, desplegado en https://placa-oposicions.vercel.app (PR #7)"
       }
     ],
     "proximos": [
@@ -685,6 +788,50 @@
       "porQue": "Hueco real en catalán, disposición a pagar probada (OpositaTest a 15,99 €), 8.474 plazas en 2026, historial permanente como diferencial barato.",
       "contra": "La calidad legal de las preguntas lo es todo; ingresos estacionales; derechos de autor si se copian preguntas.",
       "parada": "Conversión de prueba a pago inferior al 3 % con más de 500 usuarios de prueba a los 4 meses."
+    },
+    "pulido": {
+      "prioridad": 2,
+      "estado": "por revisar",
+      "porQue": "Suscripción recurrente con público que estudia a diario y pocas apps rivales; ya está en producción con 1.737 preguntas.",
+      "faltan": [
+        "Prueba de pago real y suscripción",
+        "Marca Plaça en la interfaz",
+        "Dominio placa.cat"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -703,9 +850,20 @@
     "clientes": 0,
     "canal": "La plataforma distribuye; sin marketing",
     "enlaces": {
+      "Portada Nuvolet Games": "https://juegos-casuales.vercel.app/",
+      "Egg Truck · jugar": "https://juegos-casuales.vercel.app/egg-truck/",
+      "Egg Truck · guía": "https://juegos-casuales.vercel.app/play/egg-truck/",
+      "Bike Flip · jugar": "https://juegos-casuales.vercel.app/bike-flip/",
+      "Bike Flip · guía": "https://juegos-casuales.vercel.app/play/bike-flip/",
+      "Snow Plow · jugar": "https://juegos-casuales.vercel.app/snow-plow/",
+      "Snow Plow · guía": "https://juegos-casuales.vercel.app/play/snow-plow/",
+      "Rocket Hop · jugar": "https://juegos-casuales.vercel.app/rocket-hop/",
+      "Rocket Hop · guía": "https://juegos-casuales.vercel.app/play/rocket-hop/",
+      "Jelly Stack · jugar": "https://juegos-casuales.vercel.app/jelly-stack/",
+      "Jelly Stack · guía": "https://juegos-casuales.vercel.app/play/jelly-stack/",
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
       "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
-      "Web": "https://juegos-casuales.vercel.app/egg-truck/"
+      "Portada del estudio": "https://juegos-casuales.vercel.app/"
     },
     "acciones": [
       {
@@ -747,6 +905,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca aplicada: Nuvolet Games en la pantalla de carga, favicon, fichas de los portales y pie del sitio (PR #4); redespliegue pendiente para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Cinco juegos en producción (Egg Truck, Bike Flip, Snow Plow, Rocket Hop, Jelly Stack) con 25 paquetes para portales, MONETIZACION.md y Egg Truck Tycoon para Roblox (PR #4)"
       }
     ],
     "proximos": [
@@ -1001,6 +1163,50 @@
       "porQue": "La plataforma trae al jugador; un juego bueno paga todo el catálogo; Monkey Mart y Fisch los hicieron una o dos personas; público de prueba en Algorithmics.",
       "contra": "Lotería; CrazyGames rechaza clones; Roblox exige escalar si explota; mediana de 1.575 $ al año por desarrollador en Roblox.",
       "parada": "Nunca por un juego; a los 6 juegos, si ninguno pasa del lanzamiento básico, se cambia de género."
+    },
+    "pulido": {
+      "prioridad": 6,
+      "estado": "por revisar",
+      "porQue": "Cinco juegos listos y publicados; el dinero llega cuando los portales los aceptan, y eso lo desbloquean las cuentas de desarrollador.",
+      "faltan": [
+        "Cuentas CrazyGames, Poki e itch.io (Moisés) y envío",
+        "Segunda hornada de juegos",
+        "Roblox"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": true
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": true
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -1357,7 +1563,49 @@
         "demanda": "Récord: de 2.362 examinados en 2021 a unos 7.000 en 2022 y 2023; certificados DPL de C2 de 770 en 2020 a 4.876 en 2024; el C2 es el 70 % de los certificados de la DPL; aptos 77 % (2024)",
         "usos": "El decreto escolar de 2024 lo exige a docentes nuevos desde 2025-26 (suspendido cautelarmente y con excepción temporal en 2026; desde 2027-28 también para promoción); mérito en Generalitat (5 puntos), Mossos y docentes; correctores, periodistas, profesores de catalán"
       }
-    ]
+    ],
+    "pulido": {
+      "prioridad": 8,
+      "estado": "por revisar",
+      "porQue": "Producto grande y con mucho potencial (B1 a C2), pero aún sin empezar; se arranca cuando los seis anteriores estén vendiendo.",
+      "faltan": [
+        "Arrancar la sesión con el prompt"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
+    }
   },
   {
     "clave": "g-cuentos",
@@ -1376,6 +1624,7 @@
     "clientes": 0,
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
+      "Lunilla · tienda": "https://lunilla.vercel.app/",
       "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
     },
     "acciones": [
@@ -1414,13 +1663,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://lunilla.vercel.app con identidad de marca y portada nueva; pendientes Gelato (Moisés) y la prueba de pago"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
       "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
       "Apertura el 15/11"
     ],
@@ -1615,6 +1867,50 @@
       "porQue": "Regalo emocional con pico de Navidad, PDF en minutos que Wonderbly no tiene, catalán sin competencia real, coste mínimo.",
       "contra": "Tres semanas hasta el 15 de noviembre; margen fino del impreso; sin anuncios depende de afiliados y vídeos; Aventopía ocupa la posición 'IA'.",
       "parada": "Menos de 40 ventas el 31 de diciembre: piloto automático para Sant Jordi y Reyes de 2028."
+    },
+    "pulido": {
+      "prioridad": 3,
+      "estado": "por revisar",
+      "porQue": "Margen alto por venta y campaña de Navidad: la tienda abre el 15/11 y los pedidos de tapa dura cierran el 14/12.",
+      "faltan": [
+        "Cuenta de Gelato (Moisés) y pedido de prueba",
+        "Prueba de pago real",
+        "Dominio lunilla.es"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": true
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -1852,6 +2148,48 @@
       "porQue": "Casi seguro que se publica; nicho vacío en castellano y catalán; se acumula sin mantenimiento.",
       "contra": "Techo bajo y lento; pocas reseñas en Amazon.es señalan volumen moderado.",
       "parada": "No hace falta; con menos de 20 libros al mes a los 6 meses, piloto automático."
+    },
+    "pulido": {
+      "prioridad": 11,
+      "estado": "por revisar",
+      "porQue": "Ingreso pasivo pequeño; se hace con los imprimibles de Numimates cuando haya un hueco, sin prisa.",
+      "faltan": [
+        "Arrancar con los imprimibles de Numimates"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -2092,6 +2430,49 @@
       "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe. Con el material de Numi Tech ya hecho (108 sesiones revisadas), el coste de producción baja a casi solo montaje y la probabilidad sube.",
       "contra": "Udemy se queda el 63 % y cambia las reglas; 4 a 7 € por venta; la voz sintética puede restar.",
       "parada": "No hace falta; actualización trimestral y piloto automático."
+    },
+    "pulido": {
+      "prioridad": 7,
+      "estado": "por revisar",
+      "porQue": "Ingreso pasivo con contenido ya hecho de Numi Tech; en producción de vídeo, se revisa cuando esté el PR.",
+      "faltan": [
+        "Terminar vídeos y PR",
+        "Cuenta de instructor en Udemy"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -2318,6 +2699,48 @@
       "porQue": "El DELE es mundial y el motor ya existirá; la PAU vende décimas.",
       "contra": "Tres mercados a la vez diluyen; copyright del Cervantes; corrección oral y escrita cara a 9,99 €.",
       "parada": "Arranca solo cuando B tenga 100 suscriptores; primero DELE A2 en inglés y árabe."
+    },
+    "pulido": {
+      "prioridad": 9,
+      "estado": "por revisar",
+      "porQue": "Reutiliza el motor de B para PAU, DELE y SIELE; conviene esperar a que Plaça demuestre que el motor vende.",
+      "faltan": [
+        "Arrancar cuando B tenga ingresos"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -2552,6 +2975,48 @@
       "porQue": "Nadie lo hace en castellano y catalán para familias; canal escolar; preocupación pública por la lectura.",
       "contra": "El reconocimiento de voz infantil es el riesgo técnico más alto de la cartera; sin corpus abierto; privacidad de menores; Google o Microsoft pueden añadir catalán gratis.",
       "parada": "Beta gratuita en 5 escuelas a cambio de audio con consentimiento; producto de pago solo en 2027-28."
+    },
+    "pulido": {
+      "prioridad": 10,
+      "estado": "por revisar",
+      "porQue": "Lunilla Lee aprovecha la marca de G; mejor lanzarlo con la familia Lunilla ya conocida tras Navidad.",
+      "faltan": [
+        "Arrancar tras la campaña de Navidad de G"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": false
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   },
   {
@@ -2863,6 +3328,50 @@
       "porQue": "El más pasivo; las calculadoras resisten a los resúmenes de IA; catalán sin oferta; el sitio de EE. UU. en español paga de 15 a 40 $ y abre las redes premium; el reloj del SEO empieza al publicar.",
       "contra": "El más lento (9 a 18 meses por dominio); dependencia total de Google; redes premium cerradas al tráfico español; riesgo de 'poco valor' si se escala sin datos reales.",
       "parada": "Ningún sitio por encima de 5.000 páginas vistas al mes a los 6 meses: se revisa antes de abrir más dominios."
+    },
+    "pulido": {
+      "prioridad": 5,
+      "estado": "por revisar",
+      "porQue": "Ya en producción con 40 calculadoras; los ingresos dependen de AdSense y del posicionamiento, que tardan semanas: cuanto antes se solicite, antes paga.",
+      "faltan": [
+        "Dominios y solicitud de AdSense (Moisés)",
+        "Search Console",
+        "Sitio 3"
+      ],
+      "checklist": [
+        {
+          "item": "Marca aplicada (nombre, colores, logo, sello en el pie)",
+          "ok": true
+        },
+        {
+          "item": "Correo hola@numimates.com y aviso legal con NIF",
+          "ok": false
+        },
+        {
+          "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
+          "ok": false
+        },
+        {
+          "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
+          "ok": false
+        },
+        {
+          "item": "Recuperación de quien se queda a medias (un correo o aviso)",
+          "ok": false
+        },
+        {
+          "item": "MONETIZACION.md con embudo y fecha del primer euro",
+          "ok": false
+        },
+        {
+          "item": "Móvil rápido (Lighthouse 90+) y SEO básico (títulos, descripciones, sitemap)",
+          "ok": false
+        },
+        {
+          "item": "Tareas de Moisés hechas (cuentas, dominio, tiendas)",
+          "ok": false
+        }
+      ]
     }
   }
 ]

@@ -19,6 +19,8 @@ export type Identidad = {
   logo: string; icono: string;
 };
 
+export type Pulido = { prioridad: number; estado: 'por revisar' | 'en revisión' | 'listo para vender'; porQue: string; faltan: string[]; checklist: { item: string; ok: boolean }[] };
+
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
 export type Proyecto = {
@@ -29,7 +31,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
-  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio; examenes?: Examen[];
+  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio; examenes?: Examen[]; pulido?: Pulido;
 };
 
 export type Cartera = {
@@ -123,3 +125,10 @@ export const REPO = 'moisesmodu/vinclia-web';
 
 export const fecha = (iso: string) =>
   new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso));
+
+/** Enlaces «de fuera»: URLs de producción o vistas previas, sin GitHub ni documentos internos. */
+export function webs(p: Proyecto): { nombre: string; url: string; tipo: 'web' | 'vista previa' }[] {
+  return Object.entries(p.enlaces)
+    .filter(([, u]) => !u.includes('github.com'))
+    .map(([nombre, url]) => ({ nombre, url, tipo: url.includes('claude.ai') ? 'vista previa' : 'web' }));
+}

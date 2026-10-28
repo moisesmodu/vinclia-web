@@ -4,7 +4,7 @@ import Copiar from '@/components/Copiar';
 import Lider from '@/components/Lider';
 import Marca from '@/components/Marca';
 import Juicio from '@/components/Juicio';
-import { proyecto, proyectos, promptDe, identidad, euros, fecha, REPO, RAMA } from '@/lib/data';
+import { proyecto, proyectos, promptDe, identidad, webs, euros, fecha, REPO, RAMA } from '@/lib/data';
 
 export function generateStaticParams() {
   return proyectos().map((p) => ({ clave: p.clave }));
@@ -32,6 +32,11 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
             <span className="pastilla">{p.estado}</span> {p.marca}
             {p.fechaLimite && <> · fecha límite {fecha(p.fechaLimite)}</>}
           </p>
+          {webs(p).length > 0 && (
+            <p className="botones-web">
+              {webs(p).map((x) => <a key={x.url} href={x.url} target="_blank" rel="noopener" className={x.tipo === 'web' ? 'boton-web' : 'boton-prev'}>{x.tipo === 'web' ? 'Abrir ' : 'Vista previa: '}{x.nombre}</a>)}
+            </p>
+          )}
         </div>
       </header>
 
@@ -51,6 +56,17 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
       </section>
 
       {p.juicio && <Juicio j={p.juicio} />}
+
+      {p.pulido && (
+        <section className="listo-vender">
+          <h2>Listo para vender: prioridad {p.pulido.prioridad} de 11 <span className="pastilla">{p.pulido.estado}</span></h2>
+          <p>{p.pulido.porQue}</p>
+          <ul className="checklist">
+            {p.pulido.checklist.map((x) => <li key={x.item} className={x.ok ? 'ok' : 'no'}>{x.ok ? '✓' : '○'} {x.item}</li>)}
+          </ul>
+          {p.pulido.faltan.length > 0 && <p className="faltan"><b>Lo que falta ahora:</b> {p.pulido.faltan.join(' · ')}</p>}
+        </section>
+      )}
 
       {m && <Marca m={m} />}
 
