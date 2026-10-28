@@ -10,7 +10,7 @@ Las sesiones en la nube no llegan a `api.stripe.com` (la sesión N lo comprobó 
 lo bloquea. En el mismo menú del entorno (barra de título de la sesión → Editar → Network access), con el nivel
 «Limited», añadir a Allowed domains, dejando marcada la casilla de gestores de paquetes:
 `api.stripe.com`, `api.vercel.com`, `vercel.com`, `console.neon.tech`, `api.resend.com`, `api.elevenlabs.io`,
-`api.anthropic.com`, `*.neon.tech`, `*.vercel.app`. Pasos: https://code.claude.com/docs/en/cloud-environments#network-access.
+`api.anthropic.com`, `*.neon.tech`, `*.vercel.app` y, si P se publica en Cloudflare Pages, `api.cloudflare.com`. Pasos: https://code.claude.com/docs/en/cloud-environments#network-access.
 Sin esto, las sesiones no pueden crear productos de Stripe ni desplegar aunque tengan los secretos.
 
 ## 1. Una sola vez: los accesos como secretos del entorno en la nube
@@ -28,6 +28,8 @@ de las sesiones de proyecto: menú del entorno en la barra de título de la sesi
 | `STRIPE_TEST_SECRET_KEY` | la misma cuenta en modo prueba → Developers → API keys → Secret key `sk_test_` | Desarrollo y pruebas de punta a punta |
 | `RESEND_API_KEY` | resend.com → API Keys → Create (la cuenta ya existe; dominio `algorithmicslleida.com` verificado) | Correo transaccional |
 | `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas | Textos legales de cada producto |
+| `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (solo si P va en Cloudflare Pages) | dash.cloudflare.com → My Profile → API Tokens → plantilla «Edit Cloudflare Workers» + Pages; Account ID en la página de inicio del dominio | Publicar los sitios de P sin coste |
+| `GELATO_API_KEY` (G) | dashboard.gelato.com → Developer → API keys; la cuenta la abre Moisés (identidad y tarjeta) | Pedidos de impresión de cuentos |
 | `GOOGLE_PLAY_JSON` (más adelante) | Google Play Console → cuenta de servicio | Publicar apps Android |
 
 Nunca se pegan claves en el chat. Si una variable no está, la sesión escribe lo que necesita en el `DESPLIEGUE.md` de
@@ -75,12 +77,24 @@ Mac los revisa en bucle (ver §5).
 
 ## 5. La sesión del Mac
 
-Orden de trabajo: (0) sección 0 (red del entorno); (1) sección 1 completa, para que las sesiones en la nube sean autónomas desde hoy; (2) ejecutar los
-`DESPLIEGUE.md` que ya existan (N está en el PR #3, rama `claude/n-nuevo-en-espana`, con `scripts/stripe-configurar.mjs`
-que crea productos y webhook de forma repetible; A está en el PR #2, rama `claude/a-ccse`, proyecto de Vercel obligatoriamente llamado `ccse-en-tu-idioma` porque la
-app Android ya lleva ese dominio, con su propio `scripts/stripe-configurar.mjs`); (3) anotar en `panel/data/proyectos.json` la URL
-de producción y el estado `lanzado` de cada uno, y hacer push a la rama base. Si una acción exige la sesión del
-navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo "abre esta página", nada más.
+Orden de trabajo: (0) sección 0 (red del entorno); (1) sección 1 completa, para que las sesiones en la nube sean autónomas
+desde hoy; (2) ejecutar los `DESPLIEGUE.md` que ya existan, en este orden; (3) anotar en `panel/data/proyectos.json` la URL
+de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
+
+| PR | Proyecto | Rama | DESPLIEGUE.md | Notas |
+|---|---|---|---|---|
+| #3 | N · Nuevo en España | `claude/n-nuevo-en-espana` | sí | `scripts/stripe-configurar.mjs` crea productos y webhook de forma repetible |
+| #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
+| #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
+| #5 | G · Lunilla | `claude/g-cuentos` | en curso (pedido el 28/10) | Neon `lunilla` (Frankfurt), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, Stripe de prueba, Resend; Gelato lo abre Moisés |
+| #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | en curso (pedido el 28/10) | La sesión propone Cloudflare Pages (gratis con uso comercial); alternativa Vercel Pro. Dominios y AdSense los abre Moisés |
+
+Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
+"abre esta página", nada más.
+
+**Importante:** la sesión «Despliegues vercel neon MAC» abierta el 28/10 a las 00:50 quedó archivada tres segundos
+después (el terminal de `claude remote-control` se cerró). Tiene que quedarse abierta en el Mac, con el terminal en
+primer plano o en segundo plano con el ordenador sin dormir, mientras dure el bucle de abajo.
 
 Para que recoja los despliegues sola, se le da este bucle (comando `/loop 30m`): «Cada 30 minutos: `git fetch`, lista
 los PR abiertos de moisesmodu/vinclia-web hacia la rama base cuyo diff añada un `proyectos/*/DESPLIEGUE.md` que aún no
