@@ -265,3 +265,11 @@ main>section>h2,.cifras h2{margin-top:2.6rem}
 .pie a,.pie button,.sello{color:rgba(255,255,255,.72)}
 .pie a:hover,.pie button:hover{color:#fff}
 @media (prefers-color-scheme:dark){.pie{background:#0a1411}}
+
+/* Enlace patrocinado: tarjeta clara con borde discontinuo, distinta de los anuncios de AdSense */
+.afiliado{margin:20px 0 4px;padding:16px 18px;border:1.5px dashed color-mix(in srgb,var(--marca) 45%,var(--borde));border-radius:16px;background:color-mix(in srgb,var(--marca) 5%,var(--superficie));display:grid;gap:8px;max-width:760px}
+.afi-et{margin:0;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);font-weight:600}
+.afi-t{margin:0;font-weight:600}
+.afi-cta{justify-self:start;background:var(--primario);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:.55rem 1.1rem}
+.afi-cta:hover{background:var(--primarioOscuro)}
+.afi-nota{margin:0;font-size:.8rem;color:var(--suave)}

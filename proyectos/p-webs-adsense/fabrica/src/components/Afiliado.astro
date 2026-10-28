@@ -1,0 +1,19 @@
+---
+// Recomendación patrocinada bajo el resultado, separada de AdSense y marcada como publicidad.
+import { afiliadoPara } from '../lib/afiliados';
+import { url, buscar } from '../lib/rutas';
+import type { Lang } from '../lib/def';
+interface Props { calc: string; lang: Lang }
+const { calc, lang } = Astro.props;
+const a = afiliadoPara(calc);
+const sobre = buscar('legal:sobre', lang);
+const es = lang === 'es';
+---
+{a && (
+  <aside class="afiliado" aria-label={es ? 'Enlace patrocinado' : 'Enllaç patrocinat'}>
+    <p class="afi-et">{es ? 'Publicidad · Enlace patrocinado' : 'Publicitat · Enllaç patrocinat'}</p>
+    <p class="afi-t">{a.texto[lang]}</p>
+    <a class="afi-cta" href={a.href} rel="sponsored noopener" target="_blank" data-afiliado={a.id}>{a.cta[lang]} <span aria-hidden="true">↗</span></a>
+    <p class="afi-nota">{es ? 'Si contratas desde este enlace cobramos una comisión; tu precio no cambia. ' : 'Si contractes des d’aquest enllaç cobrem una comissió; el teu preu no canvia. '}{sobre && <a href={url(sobre.ruta) + '#financiacion'}>{es ? 'Cómo nos financiamos' : 'Com ens financem'}</a>}</p>
+  </aside>
+)}

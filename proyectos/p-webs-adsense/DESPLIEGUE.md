@@ -20,6 +20,7 @@ desplegar desde la nube. PR #6, rama `claude/p-webs-adsense-fabrica`.
 | `UMAMI_ID` | ID de cada sitio en [cloud.umami.is](https://cloud.umami.is), gratis | no |
 | `ADSENSE_CLIENT` | `ca-pub-…` que mande Moisés | cuando lo mande |
 | `ADSENSE_SLOT_RESULTADO`, `ADSENSE_SLOT_FINAL` | IDs de los bloques «bajo-resultado» y «fin-contenido», que se crean en AdSense cuando apruebe la cuenta | cuando existan |
+| `AFILIADO_<ID>` (`AFILIADO_QUIPU`, `AFILIADO_XOLO`, `AFILIADO_QONTO`…) | Enlace de afiliado `https://…` que mande Moisés (ids en `fabrica/afiliados.json`). Enciende el bloque «Publicidad · Enlace patrocinado» en las calculadoras de ese programa | cuando lo mande |
 
 ## Camino A (recomendado) · Cloudflare Pages, gratis y con uso comercial
 

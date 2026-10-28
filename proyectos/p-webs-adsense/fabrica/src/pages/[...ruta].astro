@@ -3,6 +3,7 @@
 import Base from '../layouts/Base.astro';
 import Calculadora from '../components/Calculadora.astro';
 import Anuncio from '../components/Anuncio.astro';
+import Afiliado from '../components/Afiliado.astro';
 import { paginas, url, absoluta, alterna, buscar, fichasSitio, rellenar, type Pagina } from '../lib/rutas';
 import { sitio, SITIO_ID, LANGS } from '../lib/sitio';
 import { texto } from '../lib/contenido';
@@ -203,6 +204,7 @@ const etiquetaProg = (x: Pagina) => (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0',
       <p class="meta"><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{u.revisado}</span></p>
       {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
+      <Afiliado calc={p.id} lang={lang} />
       <Anuncio posicion="bajoResultado" lang={lang} />
       <article class="cuerpo">
         <Fragment set:html={v.tx.html} />

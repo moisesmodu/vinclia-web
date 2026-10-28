@@ -44,3 +44,19 @@ Para que el informe semanal lea los datos, conecta Search Console en claude.ai (
 
 La ley obliga a mostrar el NIF del titular. Si la sesión del Mac ya tiene el secreto `LEGAL_NIF`, no hagas nada. Si no
 lo tiene, escribe en el PR #6 el NIF que quieras usar.
+
+## 5. Afiliación: darte de alta en 3 programas (10 minutos cada uno, gratis)
+
+Es la vía más rápida al primer euro, porque una sola alta de un autónomo vale más que miles de visitas con AdSense.
+Los bloques ya están en las calculadoras de ImpuestoClaro y NetoClaro. Están apagados y se encienden solos en cuanto
+haya enlace. El detalle de cada programa está en `AFILIACION.md`.
+
+1. **Quipu**: [getquipu.com/es/referral](https://getquipu.com/es/referral). Paga el 30 % durante 12 meses. Va en la
+   factura, el IVA, el 303, el 130 y Verifactu.
+2. **Xolo**: [xolo.io/es-en/affiliate-program](https://www.xolo.io/es-en/affiliate-program). Paga 29 € por cliente. Va
+   en el neto de autónomo, el precio por hora y «¿autónomo o asalariado?».
+3. **Qonto**: [qonto.com/es/affiliate](https://qonto.com/es/affiliate). Paga 20 € por cuenta activa. Va en la tarifa
+   plana.
+
+Cuando te den cada enlace de afiliado, pégalo en el PR o en un mensaje. La sesión del Mac lo pone como
+`AFILIADO_QUIPU`, `AFILIADO_XOLO` o `AFILIADO_QONTO` y redespliega.
