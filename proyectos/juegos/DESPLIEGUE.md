@@ -76,3 +76,8 @@ Publicado el commit 8fb4c96: solo salen los juegos terminados. Responden `/egg-t
 `/jelly-stack/`, el catálogo enlaza esos cuatro y `/bike-flip/` da 404 (sigue «en desarrollo»).
 
 Ejecutado el 2026-10-28
+
+## Redespliegue pendiente · 5 juegos (28/10/2026)
+Bike Flip, Snow Plow, Rocket Hop y Jelly Stack están terminados y marcados como listos en `juegos.json`. Volver a
+desplegar la rama: la portada debe mostrar 5 juegos y `/bike-flip/`, `/snow-plow/`, `/rocket-hop/`, `/jelly-stack/` deben
+cargar su menú.

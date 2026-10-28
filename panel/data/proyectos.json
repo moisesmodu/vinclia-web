@@ -710,7 +710,9 @@
       "Fichas de los portales": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/fichas/egg-truck/FICHAS.md",
       "Zip CrazyGames": "https://github.com/moisesmodu/vinclia-web/raw/claude/juegos-primer-juego/proyectos/juegos/paquetes/egg-truck/egg-truck-crazygames.zip",
       "Plan Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/ROBLOX.md",
-      "Monetización": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/MONETIZACION.md"
+      "Monetización": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/MONETIZACION.md",
+      "Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox",
+      "CI Roblox": "https://github.com/moisesmodu/vinclia-web/actions/workflows/roblox.yml"
     },
     "acciones": [
       {
@@ -772,13 +774,18 @@
       {
         "fecha": "2026-10-28",
         "texto": "MONETIZACION.md: modelo por portal (CrazyGames, Poki, GameDistribution, GameMonetize, itch.io, web, Roblox), 0,3–3,6 $ por 1.000 partidas, primer euro devengado previsto en diciembre de 2026; contacto hola@numimates.com en sitio y fichas"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "4 juegos web nuevos listos con 5 paquetes cada uno (CrazyGames, Poki, GameDistribution, GameMonetize, itch.io), fichas y SEO: Bike Flip (20 niveles, voltereta = turbo), Snow Plow (Navidad), Rocket Hop y Jelly Stack. Egg Truck Tycoon (Roblox) construido; CI en verde (lint, pruebas, build)"
       }
     ],
     "proximos": [
-      "Enviar Egg Truck a los tres portales",
-      "Probarlo en un Android real de gama media",
-      "Juego 2: Bike Flip (11/11/2026) con la tarea programada",
-      "Plan de Roblox (ROBLOX.md)"
+      "Redesplegar la web con los 5 juegos (sesión del Mac)",
+      "Enviar los 5 juegos a CrazyGames, GameDistribution, GameMonetize e itch.io; Egg Truck a Poki",
+      "Escuchar las 5 pistas de música (ElevenLabs marcó «no instrumental»)",
+      "Roblox: limpiar avisos de tipos y crear la experiencia en create.roblox.com",
+      "Tarea programada: 2 juegos web por semana y 1 de Roblox al mes"
     ],
     "paraMoises": [
       "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",

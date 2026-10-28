@@ -39,7 +39,7 @@ básico en CrazyGames, se cambia el reparto de géneros hacia lo que mejor haya 
 
 | # | Juego | Género | Mecánica (una) | Gancho que lo distingue | Reutiliza | Fecha prevista |
 |---|---|---|---|---|---|---|
-| 2 | **Bike Flip** | Coches tipo plataforma, por niveles | Mantener = acelerar e inclinar atrás; soltar = inclinar adelante | 40 niveles cortos con meta (como Drive Mad) y **voltereta = turbo**: cada mortal completo da velocidad | Motor de Egg Truck y editor de terreno por puntos | 11/11/2026 |
+| 2 | **Bike Flip** | Coches tipo plataforma, por niveles | Mantener = acelerar e inclinar atrás; soltar = inclinar adelante | 20 niveles cortos con meta (como Drive Mad) y **voltereta = turbo**: cada mortal completo da velocidad | Motor de Egg Truck y editor de terreno por puntos | 11/11/2026 |
 | 3 | **Jelly Stack** | Hipercasual de apilar | Tocar = soltar la pieza | Las piezas son gelatina: lo que sobresale **tiembla y se cae** con física blanda, y la torre se balancea con la altura | Plantilla + Matter | 25/11/2026 |
 | 4 | **Snow Plow** | Coches tipo plataforma, de Navidad | Mantener = acelerar | Quitanieves que **empuja regalos** hasta el trineo; versión navideña para la portada de temporada de los portales | Motor de Egg Truck | 09/12/2026 (antes de Navidad) |
 | 5 | **Paper Glide** | Hipercasual de distancia | Mantener = subir el morro; soltar = picar | Corrientes de aire visibles y **mejoras entre partidas** (alas, cola, peso) compradas con estrellas: la meta de "una partida más" | Plantilla + Arcade | 23/12/2026 |

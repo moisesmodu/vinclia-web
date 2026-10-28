@@ -1,11 +1,15 @@
 import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
+import { Levels } from './scenes/Levels';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#ffc390',
+  scenes: [Boot, Menu, Levels, Play, Hud],
+  physics: {
+    default: 'matter',
+    matter: { autoUpdate: false, gravity: { x: 0, y: 0.8 }, positionIterations: 8, velocityIterations: 6, debug: false },
+  },
 });
