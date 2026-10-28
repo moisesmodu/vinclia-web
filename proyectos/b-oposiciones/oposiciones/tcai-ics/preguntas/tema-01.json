@@ -1,0 +1,772 @@
+[
+  {
+    "id": "tcai-t01-001",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 15/1990, de ordenación sanitaria de Cataluña, ¿cuál es el objetivo último del Servicio Catalán de la Salud?",
+      "opciones": [
+        "La gestión directa de todos los hospitales privados de Cataluña",
+        "La financiación exclusiva de la asistencia hospitalaria",
+        "El mantenimiento y la mejora del nivel de salud de la población",
+        "La inspección de los centros sanitarios de titularidad privada"
+      ],
+      "explicacion": "El artículo 3 dice que el Servicio Catalán de la Salud tiene como objetivo último el mantenimiento y mejora del nivel de salud de la población, mediante el desarrollo de las funciones que se le encomiendan."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 15/1990, d'ordenació sanitària de Catalunya, quin és l'objectiu últim del Servei Català de la Salut?",
+      "opciones": [
+        "La gestió directa de tots els hospitals privats de Catalunya",
+        "El finançament exclusiu de l'assistència hospitalària",
+        "El manteniment i la millora del nivell de salut de la població",
+        "La inspecció dels centres sanitaris de titularitat privada"
+      ],
+      "explicacion": "L'article 3 diu que el Servei Català de la Salut té com a objectiu últim el manteniment i la millora del nivell de salut de la població, mitjançant el desenvolupament de les funcions que se li encomanen."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a3"
+    },
+    "cita": "tiene como objetivo último el mantenimiento y mejora del nivel de salud de la población",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-002",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué naturaleza jurídica tiene el Servicio Catalán de la Salud?",
+      "opciones": [
+        "Ente público de naturaleza institucional con personalidad jurídica propia",
+        "Órgano del Departamento de Salud sin personalidad jurídica propia",
+        "Sociedad mercantil de capital íntegramente público",
+        "Consorcio entre la Generalitat y los entes locales"
+      ],
+      "explicacion": "El artículo 4.1 lo define como un ente público de naturaleza institucional, con personalidad jurídica propia y plena capacidad, adscrito al departamento competente en salud. No es un simple órgano del departamento."
+    },
+    "ca": {
+      "enunciado": "Quina naturalesa jurídica té el Servei Català de la Salut?",
+      "opciones": [
+        "Ens públic de caràcter institucional amb personalitat jurídica pròpia",
+        "Òrgan del Departament de Salut sense personalitat jurídica pròpia",
+        "Societat mercantil de capital íntegrament públic",
+        "Consorci entre la Generalitat i els ens locals"
+      ],
+      "explicacion": "L'article 4.1 el defineix com un ens públic de caràcter institucional, amb personalitat jurídica pròpia i plena capacitat, adscrit al departament competent en salut. No és un simple òrgan del departament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "4.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a4"
+    },
+    "cita": "El Servicio Catalán de la Salud es un ente público de naturaleza institucional, dotado de personalidad jurídica propia y plena capacidad para el cumplimiento de sus finalidades",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-003",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En sus relaciones jurídicas externas, ¿a qué Derecho se sujeta con carácter general el Servicio Catalán de la Salud?",
+      "opciones": [
+        "Al Derecho administrativo, en todo caso",
+        "Al Derecho privado, en términos generales",
+        "Al Derecho tributario y financiero",
+        "Al Derecho comunitario europeo, directamente"
+      ],
+      "explicacion": "El artículo 4.1 establece que, en las relaciones jurídicas externas, se sujeta en términos generales al Derecho privado; el apartado 2 enumera las materias que, como excepción, quedan sometidas al Derecho público."
+    },
+    "ca": {
+      "enunciado": "En les relacions jurídiques externes, a quin dret se subjecta amb caràcter general el Servei Català de la Salut?",
+      "opciones": [
+        "Al dret administratiu, en tot cas",
+        "Al dret privat, en termes generals",
+        "Al dret tributari i financer",
+        "Al dret comunitari europeu, directament"
+      ],
+      "explicacion": "L'article 4.1 estableix que, en les relacions jurídiques externes, se subjecta en termes generals al dret privat; l'apartat 2 enumera les matèries que, com a excepció, queden sotmeses al dret públic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "4.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a4"
+    },
+    "cita": "En lo que se refiere a las relaciones jurídicas externas, se sujeta, en términos generales, al Derecho privado.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-004",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es un principio informador del sistema sanitario catalán según el artículo 2 de la Ley 15/1990?",
+      "opciones": [
+        "La centralización y concentración de la gestión sanitaria",
+        "La prioridad de la atención hospitalaria sobre la prevención",
+        "La financiación de los servicios mediante tasas abonadas por los usuarios",
+        "La universalización de los servicios sanitarios para todos los ciudadanos residentes en Cataluña"
+      ],
+      "explicacion": "El artículo 2.c) recoge la universalización de los servicios sanitarios para todos los ciudadanos residentes en Cataluña. La ley no habla de centralización sino de descentralización y desconcentración de la gestión (letra b)."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un principi informador del sistema sanitari català segons l'article 2 de la Llei 15/1990?",
+      "opciones": [
+        "La centralització i concentració de la gestió sanitària",
+        "La prioritat de l'atenció hospitalària sobre la prevenció",
+        "El finançament dels serveis mitjançant taxes abonades pels usuaris",
+        "La universalització dels serveis sanitaris per a tots els ciutadans residents a Catalunya"
+      ],
+      "explicacion": "L'article 2.c) recull la universalització dels serveis sanitaris per a tots els ciutadans residents a Catalunya. La llei no parla de centralització sinó de descentralització i desconcentració de la gestió (lletra b)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a2"
+    },
+    "cita": "b) Descentralización y desconcentración de la gestión. … c) Universalización para todos los ciudadanos residentes en Cataluña de los servicios sanitarios",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-005",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 6 de la Ley 15/1990, el usuario que crea objetivamente que se han vulnerado sus derechos en la asistencia recibida puede hacer la oportuna denuncia ante:",
+      "opciones": [
+        "El Consejo de Dirección del Servicio Catalán de la Salud",
+        "La Unidad de Admisiones y Atención al Usuario de la Región Sanitaria",
+        "El Consejo de Salud del sector sanitario",
+        "El gerente del área básica de salud"
+      ],
+      "explicacion": "El artículo 6.2.d) prevé que el usuario pueda hacer la denuncia a la Unidad de Admisiones y Atención al Usuario de la que dispondrá cada Región Sanitaria."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 6 de la Llei 15/1990, l'usuari que cregui objectivament que s'han vulnerat els seus drets en l'assistència rebuda pot fer l'oportuna denúncia davant:",
+      "opciones": [
+        "El Consell de Direcció del Servei Català de la Salut",
+        "La Unitat d'Admissions i Atenció a l'Usuari de la regió sanitària",
+        "El Consell de Salut del sector sanitari",
+        "El gerent de l'àrea bàsica de salut"
+      ],
+      "explicacion": "L'article 6.2.d) preveu que l'usuari pugui fer la denúncia a la Unitat d'Admissions i Atenció a l'Usuari de què disposarà cada regió sanitària."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "6.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a6"
+    },
+    "cita": "pueda hacer la oportuna denuncia a la Unidad de Admisiones y Atención al Usuario de que cada Región Sanitaria dispondrá a tal efecto",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-006",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Quién preside el Consejo de Dirección del Servicio Catalán de la Salud?",
+      "opciones": [
+        "El consejero o consejera del departamento competente en materia de salud",
+        "El director o directora del Servicio Catalán de la Salud",
+        "El secretario o secretaria general del departamento de salud",
+        "El presidente o presidenta de la Generalitat"
+      ],
+      "explicacion": "Según el artículo 13.1.a), el consejero o consejera competente en salud es el presidente del Consejo de Dirección. El secretario general es vicepresidente primero y el director del Servicio, vicepresidente segundo."
+    },
+    "ca": {
+      "enunciado": "Qui presideix el Consell de Direcció del Servei Català de la Salut?",
+      "opciones": [
+        "El conseller o consellera del departament competent en matèria de salut",
+        "El director o directora del Servei Català de la Salut",
+        "El secretari o secretària general del departament de salut",
+        "El president o presidenta de la Generalitat"
+      ],
+      "explicacion": "Segons l'article 13.1.a), el conseller o consellera competent en salut és el president del Consell de Direcció. El secretari general n'és vicepresident primer i el director del Servei, vicepresident segon."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "13.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a13"
+    },
+    "cita": "a) El consejero o consejera del departamento competente en materia de salud, que es el presidente o presidenta",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-007",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Además del presidente y los dos vicepresidentes, ¿cuántos vocales forman parte del Consejo de Dirección del Servicio Catalán de la Salud?",
+      "opciones": [
+        "Veintiuno",
+        "Quince",
+        "Veintinueve",
+        "Treinta y cinco"
+      ],
+      "explicacion": "El artículo 13.1.d) fija veintinueve vocales, entre ellos representantes de los departamentos de economía y salud, de las regiones sanitarias, de los entes locales, de sindicatos, patronales, colegios profesionales y asociaciones de usuarios."
+    },
+    "ca": {
+      "enunciado": "A més del president i dels dos vicepresidents, quants vocals formen part del Consell de Direcció del Servei Català de la Salut?",
+      "opciones": [
+        "Vint-i-un",
+        "Quinze",
+        "Vint-i-nou",
+        "Trenta-cinc"
+      ],
+      "explicacion": "L'article 13.1.d) fixa vint-i-nou vocals, entre els quals representants dels departaments d'economia i de salut, de les regions sanitàries, dels ens locals, dels sindicats, de les patronals, dels col·legis professionals i de les associacions d'usuaris."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "13.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a13"
+    },
+    "cita": "d) Veintinueve vocales, con la siguiente distribución:",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-008",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Por qué período máximo se nombra a los vocales del Consejo de Dirección del Servicio Catalán de la Salud?",
+      "opciones": [
+        "Dos años, sin posibilidad de reelección",
+        "Tres años, renovables una sola vez",
+        "Cinco años, renovables por mitades",
+        "Cuatro años, con posibilidad de reelección"
+      ],
+      "explicacion": "El artículo 13.1 dispone que el nombramiento se hace por un período máximo de cuatro años y que los vocales pueden ser reelegidos sucesivamente si mantienen la representación requerida."
+    },
+    "ca": {
+      "enunciado": "Per quin període màxim es nomenen els vocals del Consell de Direcció del Servei Català de la Salut?",
+      "opciones": [
+        "Dos anys, sense possibilitat de reelecció",
+        "Tres anys, renovables una sola vegada",
+        "Cinc anys, renovables per meitats",
+        "Quatre anys, amb possibilitat de reelecció"
+      ],
+      "explicacion": "L'article 13.1 disposa que el nomenament es fa per un període màxim de quatre anys i que els vocals poden ser reelegits successivament si mantenen la representació requerida."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "13.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a13"
+    },
+    "cita": "El nombramiento de los vocales del Consejo de Dirección se hace por un período máximo de cuatro años",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-009",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué mayoría exige, en principio, la aprobación por el Consejo de Dirección del Servicio Catalán de la Salud de la propuesta de anteproyecto de presupuesto del ente?",
+      "opciones": [
+        "Mayoría simple de los miembros presentes",
+        "Mayoría de dos tercios de sus miembros",
+        "Mayoría absoluta de sus miembros",
+        "Unanimidad de todos sus miembros"
+      ],
+      "explicacion": "El artículo 14.2 exige dos tercios para los acuerdos de las letras a) (criterios de actuación) y e) (propuesta de anteproyecto de presupuesto); el resto se adopta por mayoría simple. Si no se alcanzan los dos tercios, la propuesta se remite igualmente al departamento con el sentido del voto de cada miembro."
+    },
+    "ca": {
+      "enunciado": "Quina majoria exigeix, en principi, l'aprovació pel Consell de Direcció del Servei Català de la Salut de la proposta d'avantprojecte de pressupost de l'ens?",
+      "opciones": [
+        "Majoria simple dels membres presents",
+        "Majoria de dos terços dels membres",
+        "Majoria absoluta dels membres",
+        "Unanimitat de tots els membres"
+      ],
+      "explicacion": "L'article 14.2 exigeix dos terços per als acords de les lletres a) (criteris d'actuació) i e) (proposta d'avantprojecte de pressupost); la resta s'adopten per majoria simple. Si no s'arriba als dos terços, la proposta es tramet igualment al departament amb el sentit del vot de cada membre."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a14"
+    },
+    "cita": "Los acuerdos deberán adoptarse por mayoría simple, excepto aquellos a que se refieren los epígrafes a) y e) del apartado anterior, que deberán tomarse por mayoría de dos tercios de los miembros del Consejo de Dirección.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-010",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿A qué órgano corresponde elaborar el anteproyecto del Plan de Salud de Cataluña?",
+      "opciones": [
+        "Al Consejo de Dirección del Servicio Catalán de la Salud",
+        "Al director del Servicio Catalán de la Salud",
+        "Al gerente de cada Región Sanitaria",
+        "Al Consejo de Dirección de cada Región Sanitaria"
+      ],
+      "explicacion": "El artículo 14.1.b) atribuye al Consejo de Dirección del Servicio Catalán de la Salud la elaboración del anteproyecto del Plan de Salud de Cataluña; las regiones sanitarias trabajan con sus propios planes de salud, que aprueba ese mismo Consejo (letra h)."
+    },
+    "ca": {
+      "enunciado": "A quin òrgan correspon elaborar l'avantprojecte del Pla de salut de Catalunya?",
+      "opciones": [
+        "Al Consell de Direcció del Servei Català de la Salut",
+        "Al director del Servei Català de la Salut",
+        "Al gerent de cada regió sanitària",
+        "Al Consell de Direcció de cada regió sanitària"
+      ],
+      "explicacion": "L'article 14.1.b) atribueix al Consell de Direcció del Servei Català de la Salut l'elaboració de l'avantprojecte del Pla de salut de Catalunya; les regions sanitàries treballen amb els seus propis plans de salut, que aprova aquest mateix Consell (lletra h)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "14.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a14"
+    },
+    "cita": "b) Elaborar el anteproyecto del Plan de Salud de Cataluña.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-011",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Con qué periodicidad mínima debe reunirse en sesión ordinaria el Consejo de Dirección del Servicio Catalán de la Salud?",
+      "opciones": [
+        "Una vez al mes",
+        "Una vez cada tres meses",
+        "Una vez cada dos meses",
+        "Una vez cada seis meses"
+      ],
+      "explicacion": "El artículo 15.1 exige al menos una sesión ordinaria cada dos meses, además de las que se convoquen por urgencia o a petición de un mínimo de cinco miembros."
+    },
+    "ca": {
+      "enunciado": "Amb quina periodicitat mínima s'ha de reunir en sessió ordinària el Consell de Direcció del Servei Català de la Salut?",
+      "opciones": [
+        "Una vegada al mes",
+        "Una vegada cada tres mesos",
+        "Una vegada cada dos mesos",
+        "Una vegada cada sis mesos"
+      ],
+      "explicacion": "L'article 15.1 exigeix com a mínim una sessió ordinària cada dos mesos, a més de les que es convoquin per urgència o a petició d'un mínim de cinc membres."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "15.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a15"
+    },
+    "cita": "El Consejo de Dirección deberá reunirse en sesión ordinaria, al menos, una vez cada dos meses",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-012",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quién acuerda el nombramiento y el cese del director del Servicio Catalán de la Salud?",
+      "opciones": [
+        "El Consejo de Dirección del Servicio Catalán de la Salud",
+        "El Parlamento de Cataluña",
+        "El Consejo Ejecutivo de la Generalitat (Gobierno)",
+        "El presidente del Consejo de Dirección, por sí solo"
+      ],
+      "explicacion": "El artículo 16.1 dispone que el nombramiento y el cese del director se acuerdan por el Consejo Ejecutivo de la Generalitat, no por el Consejo de Dirección del propio ente."
+    },
+    "ca": {
+      "enunciado": "Qui acorda el nomenament i el cessament del director del Servei Català de la Salut?",
+      "opciones": [
+        "El Consell de Direcció del Servei Català de la Salut",
+        "El Parlament de Catalunya",
+        "El Consell Executiu de la Generalitat (Govern)",
+        "El president del Consell de Direcció, tot sol"
+      ],
+      "explicacion": "L'article 16.1 disposa que el nomenament i el cessament del director els acorda el Consell Executiu de la Generalitat, no el Consell de Direcció del mateix ens."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a16"
+    },
+    "cita": "Su nombramiento y cese deberán acordarse por parte del Consejo Ejecutivo de la Generalidad",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-013",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Las Regiones Sanitarias en que se ordena el Servicio Catalán de la Salud equivalen, según la Ley 15/1990, a:",
+      "opciones": [
+        "Las zonas básicas de salud previstas en la Ley General de Sanidad",
+        "Las comarcas de la organización territorial de Cataluña",
+        "Los sectores sanitarios de atención especializada",
+        "Las áreas de salud previstas en la Ley General de Sanidad"
+      ],
+      "explicacion": "El artículo 21.1 dice expresamente que las Regiones Sanitarias equivalen a las Áreas de Salud de la Ley General de Sanidad. La unidad territorial elemental de atención primaria es el área básica de salud."
+    },
+    "ca": {
+      "enunciado": "Les regions sanitàries en què s'ordena el Servei Català de la Salut equivalen, segons la Llei 15/1990, a:",
+      "opciones": [
+        "Les zones bàsiques de salut previstes a la Llei general de sanitat",
+        "Les comarques de l'organització territorial de Catalunya",
+        "Els sectors sanitaris d'atenció especialitzada",
+        "Les àrees de salut previstes a la Llei general de sanitat"
+      ],
+      "explicacion": "L'article 21.1 diu expressament que les regions sanitàries equivalen a les àrees de salut de la Llei general de sanitat. La unitat territorial elemental d'atenció primària és l'àrea bàsica de salut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a21"
+    },
+    "cita": "se ordena en demarcaciones territoriales denominadas Regiones Sanitarias, que equivalen a las Áreas de Salud previstas en la Ley General de Sanidad",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-014",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿A quién corresponde el nombramiento y el cese del gerente de una Región Sanitaria?",
+      "opciones": [
+        "Al titular del departamento competente en materia de salud",
+        "Al Consejo Ejecutivo de la Generalitat",
+        "Al director del Servicio Catalán de la Salud",
+        "Al Consejo de Dirección de la propia Región Sanitaria"
+      ],
+      "explicacion": "El artículo 28.1 atribuye el nombramiento y cese del gerente al titular del departamento de salud. No hay que confundirlo con el director del Servicio Catalán de la Salud, al que nombra el Consejo Ejecutivo (art. 16.1)."
+    },
+    "ca": {
+      "enunciado": "A qui correspon el nomenament i el cessament del gerent d'una regió sanitària?",
+      "opciones": [
+        "Al titular del departament competent en matèria de salut",
+        "Al Consell Executiu de la Generalitat",
+        "Al director del Servei Català de la Salut",
+        "Al Consell de Direcció de la mateixa regió sanitària"
+      ],
+      "explicacion": "L'article 28.1 atribueix el nomenament i el cessament del gerent al titular del departament de salut. No s'ha de confondre amb el director del Servei Català de la Salut, a qui nomena el Consell Executiu (art. 16.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "28.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a28"
+    },
+    "cita": "Su nombramiento y cese corresponde al titular del departamento competente en materia de salud.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-015",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la unidad territorial elemental donde se presta la atención primaria de salud de acceso directo de la población?",
+      "opciones": [
+        "El área básica de salud",
+        "La región sanitaria",
+        "El sector sanitario",
+        "El hospital de referencia"
+      ],
+      "explicacion": "El artículo 41.1 define el área básica de salud como la unidad territorial elemental de la atención primaria de acceso directo, en cuyo ámbito actúa el equipo de atención primaria."
+    },
+    "ca": {
+      "enunciado": "Quina és la unitat territorial elemental on es presta l'atenció primària de salut d'accés directe de la població?",
+      "opciones": [
+        "L'àrea bàsica de salut",
+        "La regió sanitària",
+        "El sector sanitari",
+        "L'hospital de referència"
+      ],
+      "explicacion": "L'article 41.1 defineix l'àrea bàsica de salut com la unitat territorial elemental de l'atenció primària d'accés directe, en l'àmbit de la qual actua l'equip d'atenció primària."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "41.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a41"
+    },
+    "cita": "El Área Básica de Salud será la unidad territorial elemental donde se prestará la atención primaria de salud de acceso directo de la población",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-016",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En la composición del equipo de atención primaria que establece el artículo 41 de la Ley 15/1990, los auxiliares de clínica de atención primaria figuran dentro del:",
+      "opciones": [
+        "Personal no sanitario, junto con el personal administrativo",
+        "Personal auxiliar sanitario, junto con los ATS/diplomados en enfermería",
+        "Grupo de asistentes sociales de atención primaria",
+        "Grupo de funcionarios sanitarios locales de cuerpos titulares"
+      ],
+      "explicacion": "El artículo 41.2.a.2) incluye en el personal auxiliar sanitario a los ATS/diplomados en enfermería y a los auxiliares de clínica de atención primaria, dentro del personal sanitario del equipo."
+    },
+    "ca": {
+      "enunciado": "En la composició de l'equip d'atenció primària que estableix l'article 41 de la Llei 15/1990, els auxiliars de clínica d'atenció primària figuren dins del:",
+      "opciones": [
+        "Personal no sanitari, juntament amb el personal administratiu",
+        "Personal auxiliar sanitari, juntament amb els ATS/diplomats en infermeria",
+        "Grup d'assistents socials d'atenció primària",
+        "Grup de funcionaris sanitaris locals de cossos titulars"
+      ],
+      "explicacion": "L'article 41.2.a.2) inclou en el personal auxiliar sanitari els ATS/diplomats en infermeria i els auxiliars de clínica d'atenció primària, dins del personal sanitari de l'equip."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "41.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a41"
+    },
+    "cita": "a.2) Personal auxiliar sanitario: … Auxiliares de clínica de atención primaria.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-017",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 43 de la Ley 15/1990, el Sistema sanitario integral de utilización pública de Cataluña (SISCAT) está constituido por:",
+      "opciones": [
+        "La red hospitalaria, la red de oficinas de farmacia y la red de mutuas de accidentes de trabajo",
+        "La red de centros de internamiento, la de centros y servicios de ámbito comunitario y la de servicios de transporte sanitario",
+        "La red de atención primaria, la red de salud mental y la red de laboratorios privados",
+        "La red de centros de internamiento, la red de residencias geriátricas y la red de oficinas de farmacia"
+      ],
+      "explicacion": "El artículo 43.2 enumera tres redes: centros de internamiento, centros y servicios sanitarios de ámbito comunitario y servicios de transporte sanitario, todas de utilización pública."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 43 de la Llei 15/1990, el Sistema sanitari integral d'utilització pública de Catalunya (SISCAT) està constituït per:",
+      "opciones": [
+        "La xarxa hospitalària, la xarxa d'oficines de farmàcia i la xarxa de mútues d'accidents de treball",
+        "La xarxa de centres d'internament, la de centres i serveis d'àmbit comunitari i la de serveis de transport sanitari",
+        "La xarxa d'atenció primària, la xarxa de salut mental i la xarxa de laboratoris privats",
+        "La xarxa de centres d'internament, la xarxa de residències geriàtriques i la xarxa d'oficines de farmàcia"
+      ],
+      "explicacion": "L'article 43.2 enumera tres xarxes: centres d'internament, centres i serveis sanitaris d'àmbit comunitari i serveis de transport sanitari, totes d'utilització pública."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "43.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a43"
+    },
+    "cita": "a) La red de centros de internamiento de utilización pública de Cataluña. … b) La red de centros y servicios sanitarios de ámbito comunitario de utilización pública de Cataluña. … c) La red de servicios de transporte sanitario de utilización pública de Cataluña.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-018",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Puede el Servicio Catalán de la Salud contratar con centros sanitarios que no pertenecen al SISCAT?",
+      "opciones": [
+        "Sí, libremente y con preferencia sobre los centros del SISCAT",
+        "No, en ningún caso, aunque los centros del sistema no basten",
+        "Sí, pero solo excepcionalmente, por tiempo limitado y si los centros del sistema no bastan",
+        "Sí, pero solo con entidades sin ánimo de lucro y por tiempo indefinido"
+      ],
+      "explicacion": "El artículo 43.3 lo permite solo con carácter excepcional, por una duración limitada y cuando los centros y establecimientos del sistema no sean suficientes."
+    },
+    "ca": {
+      "enunciado": "Pot el Servei Català de la Salut contractar amb centres sanitaris que no pertanyen al SISCAT?",
+      "opciones": [
+        "Sí, lliurement i amb preferència sobre els centres del SISCAT",
+        "No, en cap cas, encara que els centres del sistema no siguin suficients",
+        "Sí, però només excepcionalment, per temps limitat i si els centres del sistema no són suficients",
+        "Sí, però només amb entitats sense ànim de lucre i per temps indefinit"
+      ],
+      "explicacion": "L'article 43.3 ho permet només amb caràcter excepcional, per una durada limitada i quan els centres i establiments del sistema no siguin suficients."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1990-20304",
+      "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+      "articulo": "43.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-20304#a43"
+    },
+    "cita": "sólo con carácter excepcional y por una duración limitada, puede establecer contratos o convenios con los titulares de centros y establecimientos sanitarios que no pertenezcan al Sistema sanitario integral",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-019",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 14/1986, General de Sanidad, los medios y actuaciones del sistema sanitario estarán orientados prioritariamente a:",
+      "opciones": [
+        "La asistencia hospitalaria de alta complejidad",
+        "La rehabilitación funcional de los pacientes crónicos",
+        "La investigación biomédica y la docencia",
+        "La promoción de la salud y la prevención de las enfermedades"
+      ],
+      "explicacion": "El artículo 3.1 de la Ley General de Sanidad orienta prioritariamente el sistema a la promoción de la salud y a la prevención de las enfermedades."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 14/1986, general de sanitat, els mitjans i les actuacions del sistema sanitari s'orientaran prioritàriament a:",
+      "opciones": [
+        "L'assistència hospitalària d'alta complexitat",
+        "La rehabilitació funcional dels pacients crònics",
+        "La recerca biomèdica i la docència",
+        "La promoció de la salut i la prevenció de les malalties"
+      ],
+      "explicacion": "L'article 3.1 de la Llei general de sanitat orienta prioritàriament el sistema a la promoció de la salut i a la prevenció de les malalties."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-10499",
+      "norma": "Ley 14/1986, de 25 de abril, General de Sanidad",
+      "articulo": "tres",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-10499#atres"
+    },
+    "cita": "Los medios y actuaciones del sistema sanitario estarán orientados prioritariamente a la promoción de la salud y a la prevención de las enfermedades.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-020",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 16/2003, de cohesión y calidad del Sistema Nacional de Salud, son titulares del derecho a la protección de la salud y a la atención sanitaria:",
+      "opciones": [
+        "Únicamente las personas afiliadas y en alta en la Seguridad Social y sus beneficiarios",
+        "Todas las personas con nacionalidad española y las extranjeras que tengan establecida su residencia en territorio español",
+        "Únicamente las personas de nacionalidad española, residan o no en España",
+        "Las personas empadronadas en un municipio español con al menos un año de antigüedad"
+      ],
+      "explicacion": "El artículo 3.1 reconoce la titularidad a todas las personas con nacionalidad española y a las extranjeras con residencia establecida en España; la condición de asegurado a la Seguridad Social ya no es el criterio."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 16/2003, de cohesió i qualitat del Sistema Nacional de Salut, són titulars del dret a la protecció de la salut i a l'atenció sanitària:",
+      "opciones": [
+        "Únicament les persones afiliades i en alta a la Seguretat Social i els seus beneficiaris",
+        "Totes les persones amb nacionalitat espanyola i les estrangeres que tinguin establerta la residència en territori espanyol",
+        "Únicament les persones de nacionalitat espanyola, resideixin o no a Espanya",
+        "Les persones empadronades en un municipi espanyol amb almenys un any d'antiguitat"
+      ],
+      "explicacion": "L'article 3.1 reconeix la titularitat a totes les persones amb nacionalitat espanyola i a les estrangeres amb residència establerta a Espanya; la condició d'assegurat a la Seguretat Social ja no és el criteri."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2003-10715",
+      "norma": "Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-10715#a3"
+    },
+    "cita": "Son titulares del derecho a la protección de la salud y a la atención sanitaria todas las personas con nacionalidad española y las personas extranjeras que tengan establecida su residencia en el territorio español.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-021",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cómo define la Ley 16/2003 la atención primaria?",
+      "opciones": [
+        "Como el nivel de atención que se presta exclusivamente en los hospitales comarcales",
+        "Como la atención que se presta solo a demanda del paciente y nunca en su domicilio",
+        "Como el nivel de atención reservado a los procesos agudos de alta complejidad",
+        "Como el nivel básico e inicial de atención, que garantiza la globalidad y continuidad de la atención a lo largo de la vida del paciente"
+      ],
+      "explicacion": "El artículo 12.1 la define como el nivel básico e inicial de atención, que garantiza la globalidad y la continuidad de la atención; comprende también la asistencia en el domicilio del enfermo (art. 12.2.a)."
+    },
+    "ca": {
+      "enunciado": "Com defineix la Llei 16/2003 l'atenció primària?",
+      "opciones": [
+        "Com el nivell d'atenció que es presta exclusivament als hospitals comarcals",
+        "Com l'atenció que es presta només a demanda del pacient i mai al seu domicili",
+        "Com el nivell d'atenció reservat als processos aguts d'alta complexitat",
+        "Com el nivell bàsic i inicial d'atenció, que garanteix la globalitat i continuïtat de l'atenció al llarg de la vida del pacient"
+      ],
+      "explicacion": "L'article 12.1 la defineix com el nivell bàsic i inicial d'atenció, que garanteix la globalitat i la continuïtat de l'atenció; comprèn també l'assistència al domicili del malalt (art. 12.2.a)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2003-10715",
+      "norma": "Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud",
+      "articulo": "12.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-10715#a12"
+    },
+    "cita": "La atención primaria es el nivel básico e inicial de atención, que garantiza la globalidad y continuidad de la atención a lo largo de toda la vida del paciente",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t01-022",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 162 del Estatuto de Autonomía de Cataluña, ¿qué tipo de competencia tiene la Generalitat sobre la organización y el funcionamiento interno, la evaluación, la inspección y el control de centros, servicios y establecimientos sanitarios?",
+      "opciones": [
+        "Exclusiva",
+        "Compartida",
+        "Ejecutiva",
+        "De mera participación en la planificación estatal"
+      ],
+      "explicacion": "El artículo 162.1 la califica de competencia exclusiva. En cambio, la ordenación y planificación de las prestaciones sanitarias o el régimen estatutario del personal son competencias compartidas (art. 162.3)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 162 de l'Estatut d'autonomia de Catalunya, quin tipus de competència té la Generalitat sobre l'organització i el funcionament intern, l'avaluació, la inspecció i el control de centres, serveis i establiments sanitaris?",
+      "opciones": [
+        "Exclusiva",
+        "Compartida",
+        "Executiva",
+        "De mera participació en la planificació estatal"
+      ],
+      "explicacion": "L'article 162.1 la qualifica de competència exclusiva. En canvi, l'ordenació i la planificació de les prestacions sanitàries o el règim estatutari del personal són competències compartides (art. 162.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "162.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a162"
+    },
+    "cita": "Corresponde a la Generalitat, en materia de sanidad y salud pública, la competencia exclusiva sobre la organización y el funcionamiento interno, la evaluación, la inspección y el control de centros, servicios y establecimientos sanitarios.",
+    "origen": "ia"
+  }
+]

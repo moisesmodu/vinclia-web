@@ -1,0 +1,69 @@
+{
+  "codigo": "es",
+  "nombre": "España (Cataluña)",
+  "idiomas": [
+    "ca",
+    "es"
+  ],
+  "idiomaPorDefecto": "ca",
+  "moneda": "EUR",
+  "locale": {
+    "ca": "ca-ES",
+    "es": "es-ES"
+  },
+  "stripeLocale": "es",
+  "iva": 0.21,
+  "preciosIncluyenIva": true,
+  "gratisPorOposicion": 20,
+  "planes": [
+    {
+      "id": "mensual",
+      "activo": true,
+      "importe": 999,
+      "intervalo": "month",
+      "intervaloCantidad": 1,
+      "porMes": 999,
+      "destacado": false
+    },
+    {
+      "id": "trimestral",
+      "activo": true,
+      "importe": 2397,
+      "intervalo": "month",
+      "intervaloCantidad": 3,
+      "porMes": 799,
+      "destacado": false
+    },
+    {
+      "id": "anual",
+      "activo": true,
+      "importe": 7188,
+      "intervalo": "year",
+      "intervaloCantidad": 1,
+      "porMes": 599,
+      "destacado": true
+    }
+  ],
+  "legal": {
+    "titular": "Moisés Mora",
+    "nif": "",
+    "domicilio": "Lleida (Catalunya)",
+    "registro": "Autónomo",
+    "ley": "Llei 34/2002 (LSSI), Reglament (UE) 2016/679 (RGPD), LO 3/2018 (LOPDGDD), RDL 1/2007 (consumidores)",
+    "jurisdiccion": "Juzgados y tribunales del domicilio del consumidor",
+    "desistimientoDias": 14
+  },
+  "diarios": [
+    {
+      "id": "DOGC",
+      "nombre": "Diari Oficial de la Generalitat de Catalunya",
+      "url": "https://dogc.gencat.cat"
+    },
+    {
+      "id": "BOE",
+      "nombre": "Boletín Oficial del Estado",
+      "url": "https://www.boe.es"
+    }
+  ],
+  "correo": "hola@numimates.com"
+}

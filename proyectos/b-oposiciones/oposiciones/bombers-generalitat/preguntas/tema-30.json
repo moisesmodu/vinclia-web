@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t30-001",
+    "tema": 30,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la finalidad principal de un apuntalamiento de emergencia en una estructura dañada?",
+      "opciones": [
+        "Reparar definitivamente los elementos estructurales dañados",
+        "Facilitar la demolición posterior del edificio",
+        "Estabilizar los elementos para evitar colapsos secundarios y poder trabajar con seguridad",
+        "Sustituir de forma permanente los elementos portantes que han colapsado"
+      ],
+      "explicacion": "El apuntalamiento de emergencia es una medida provisional: estabiliza los elementos dañados para evitar nuevos colapsos y crear un entorno seguro para el rescate. La reparación definitiva corresponde a una actuación posterior de técnicos y empresas."
+    },
+    "ca": {
+      "enunciado": "Quina és la finalitat principal d'un apuntalament d'emergència en una estructura danyada?",
+      "opciones": [
+        "Reparar definitivament els elements estructurals danyats",
+        "Facilitar la demolició posterior de l'edifici",
+        "Estabilitzar els elements per evitar col·lapses secundaris i poder treballar amb seguretat",
+        "Substituir de manera permanent els elements portants que han col·lapsat"
+      ],
+      "explicacion": "L'apuntalament d'emergència és una mesura provisional: estabilitza els elements danyats per evitar nous col·lapses i crear un entorn segur per al rescat. La reparació definitiva correspon a una actuació posterior de tècnics i empreses."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-002",
+    "tema": 30,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Cuando un forjado se rompe por el centro y cae, quedando apoyado por sus extremos en los dos muros laterales, ¿qué tipo de colapso se produce?",
+      "opciones": [
+        "Colapso en V",
+        "Colapso en capas (pancake)",
+        "Colapso en cobertizo (lean-to)",
+        "Colapso en voladizo"
+      ],
+      "explicacion": "En el colapso en V el forjado cede por el centro y conserva el apoyo en ambos muros, de modo que pueden quedar espacios vitales triangulares junto a cada muro. En el colapso en capas los forjados caen planos unos sobre otros."
+    },
+    "ca": {
+      "enunciado": "Quan un forjat es trenca pel centre i cau, i queda recolzat pels extrems als dos murs laterals, quin tipus de col·lapse es produeix?",
+      "opciones": [
+        "Col·lapse en V",
+        "Col·lapse en capes (pancake)",
+        "Col·lapse en cobert (lean-to)",
+        "Col·lapse en voladís"
+      ],
+      "explicacion": "En el col·lapse en V el forjat cedeix pel centre i conserva el recolzament en tots dos murs, de manera que poden quedar espais vitals triangulars al costat de cada mur. En el col·lapse en capes els forjats cauen plans els uns sobre els altres."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-003",
+    "tema": 30,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En un colapso en cobertizo (lean-to), ¿dónde es más probable encontrar un espacio vital?",
+      "opciones": [
+        "En el extremo donde el forjado ha caído sobre el suelo",
+        "Junto al muro en el que el forjado sigue apoyado, bajo su parte más alta",
+        "Encima del forjado caído, en la planta superior",
+        "En ningún punto, porque este colapso no deja huecos"
+      ],
+      "explicacion": "En el colapso en cobertizo un extremo del forjado cae al suelo y el otro sigue apoyado en el muro, formando un hueco triangular bajo la parte alta, junto a ese muro, donde pueden sobrevivir personas."
+    },
+    "ca": {
+      "enunciado": "En un col·lapse en cobert (lean-to), on és més probable trobar un espai vital?",
+      "opciones": [
+        "A l'extrem on el forjat ha caigut a terra",
+        "Al costat del mur on el forjat continua recolzat, sota la part més alta",
+        "A sobre del forjat caigut, a la planta superior",
+        "Enlloc, perquè aquest col·lapse no deixa buits"
+      ],
+      "explicacion": "En el col·lapse en cobert un extrem del forjat cau a terra i l'altre continua recolzat al mur, i forma un buit triangular sota la part alta, al costat d'aquest mur, on poden sobreviure persones."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-004",
+    "tema": 30,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En el rescate en estructuras colapsadas, tras el reconocimiento de la zona, ¿qué víctimas se rescatan en primer lugar?",
+      "opciones": [
+        "Las sepultadas a mayor profundidad",
+        "Las localizadas por los perros en los huecos interiores",
+        "Las que se encuentran bajo los escombros más pesados",
+        "Las que están en superficie o ligeramente atrapadas y son de fácil acceso"
+      ],
+      "explicacion": "La secuencia clásica empieza por el reconocimiento, sigue con el rescate de las víctimas en superficie o de fácil acceso, después la búsqueda en huecos accesibles, la retirada selectiva de escombros y, al final, la retirada general."
+    },
+    "ca": {
+      "enunciado": "En el rescat en estructures col·lapsades, després del reconeixement de la zona, quines víctimes es rescaten en primer lloc?",
+      "opciones": [
+        "Les sepultades a més profunditat",
+        "Les localitzades pels gossos als buits interiors",
+        "Les que es troben sota les runes més pesants",
+        "Les que són en superfície o lleugerament atrapades i són de fàcil accés"
+      ],
+      "explicacion": "La seqüència clàssica comença pel reconeixement, continua amb el rescat de les víctimes en superfície o de fàcil accés, després la cerca en buits accessibles, la retirada selectiva de runes i, al final, la retirada general."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-005",
+    "tema": 30,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué detecta un geófono utilizado en la búsqueda de víctimas sepultadas?",
+      "opciones": [
+        "El calor corporal a través de los escombros",
+        "El dióxido de carbono que exhala la víctima",
+        "Las vibraciones y los sonidos transmitidos por los escombros",
+        "Imágenes del interior de los huecos"
+      ],
+      "explicacion": "El geófono es un sistema de búsqueda técnica que capta, mediante sensores sísmicos y acústicos, los golpes, ruidos o vibraciones que produce una víctima. Las imágenes del interior se obtienen con cámaras de búsqueda."
+    },
+    "ca": {
+      "enunciado": "Què detecta un geòfon utilitzat en la cerca de víctimes sepultades?",
+      "opciones": [
+        "La calor corporal a través de les runes",
+        "El diòxid de carboni que exhala la víctima",
+        "Les vibracions i els sons transmesos per les runes",
+        "Imatges de l'interior dels buits"
+      ],
+      "explicacion": "El geòfon és un sistema de cerca tècnica que capta, mitjançant sensors sísmics i acústics, els cops, sorolls o vibracions que produeix una víctima. Les imatges de l'interior s'obtenen amb càmeres de cerca."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-006",
+    "tema": 30,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En la búsqueda de víctimas por llamada y escucha, ¿qué condición es necesaria?",
+      "opciones": [
+        "Un periodo de silencio total en la zona, deteniendo maquinaria y motores",
+        "El uso continuo de maquinaria pesada para abrir accesos",
+        "Que solo hablen los equipos situados en la zona de apoyo",
+        "Que trabajen a la vez los equipos cinológicos en el mismo sector"
+      ],
+      "explicacion": "Para oír las respuestas o los golpes de una víctima hay que imponer silencio en toda la zona y parar motores, generadores y maquinaria durante la llamada y la escucha."
+    },
+    "ca": {
+      "enunciado": "En la cerca de víctimes per crida i escolta, quina condició és necessària?",
+      "opciones": [
+        "Un període de silenci total a la zona, aturant maquinària i motors",
+        "L'ús continu de maquinària pesant per obrir accessos",
+        "Que només parlin els equips situats a la zona de suport",
+        "Que treballin alhora els equips cinològics al mateix sector"
+      ],
+      "explicacion": "Per sentir les respostes o els cops d'una víctima cal imposar silenci a tota la zona i aturar motors, generadors i maquinària durant la crida i l'escolta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-007",
+    "tema": 30,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué se suele preferir la madera en los apuntalamientos de emergencia?",
+      "opciones": [
+        "Porque no se ve afectada por la humedad",
+        "Porque avisa antes de romperse, con crujidos y deformaciones visibles",
+        "Porque soporta más carga que cualquier puntal metálico",
+        "Porque no necesita cuñas para ajustarse al elemento"
+      ],
+      "explicacion": "La madera es ligera, fácil de cortar y adaptar y, sobre todo, avisa antes de fallar: cruje y se deforma de forma visible cuando está sobrecargada, lo que da tiempo a retirarse. Sí necesita cuñas para entrar en carga."
+    },
+    "ca": {
+      "enunciado": "Per què se sol preferir la fusta en els apuntalaments d'emergència?",
+      "opciones": [
+        "Perquè no es veu afectada per la humitat",
+        "Perquè avisa abans de trencar-se, amb cruixits i deformacions visibles",
+        "Perquè suporta més càrrega que qualsevol puntal metàl·lic",
+        "Perquè no necessita tascons per ajustar-se a l'element"
+      ],
+      "explicacion": "La fusta és lleugera, fàcil de tallar i adaptar i, sobretot, avisa abans de fallar: cruix i es deforma de manera visible quan està sobrecarregada, cosa que dona temps per retirar-se. Sí que necessita tascons per entrar en càrrega."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-008",
+    "tema": 30,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En un apuntalamiento, ¿para qué sirven las riostras diagonales?",
+      "opciones": [
+        "Para elevar el elemento apuntalado hasta su posición original",
+        "Para repartir la carga de los puntales sobre el suelo",
+        "Para fijar las cuñas al cabezal",
+        "Para dar estabilidad lateral al conjunto e impedir que se desplace"
+      ],
+      "explicacion": "Las riostras arriostran el sistema: unen los puntales en diagonal y evitan su desplazamiento lateral y el pandeo. El reparto de la carga sobre el suelo lo hace la pieza de base."
+    },
+    "ca": {
+      "enunciado": "En un apuntalament, per a què serveixen les riostres diagonals?",
+      "opciones": [
+        "Per elevar l'element apuntalat fins a la seva posició original",
+        "Per repartir la càrrega dels puntals sobre el terra",
+        "Per fixar els tascons al capçal",
+        "Per donar estabilitat lateral al conjunt i impedir que es desplaci"
+      ],
+      "explicacion": "Les riostres arriostren el sistema: uneixen els puntals en diagonal i n'eviten el desplaçament lateral i el vinclament. El repartiment de la càrrega sobre el terra el fa la peça de base."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-009",
+    "tema": 30,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos signos indica riesgo de colapso secundario en una estructura dañada?",
+      "opciones": [
+        "Manchas de humedad en las paredes de las plantas inferiores",
+        "Polvo ya depositado y estable sobre los escombros",
+        "Grietas que se ensanchan, crujidos y caída continua de polvo o cascotes",
+        "Cristales rotos en las ventanas de la fachada"
+      ],
+      "explicacion": "Las grietas que crecen, los ruidos y crujidos y la caída continua de polvo o fragmentos indican que la estructura sigue moviéndose; ante ellos se evacúa la zona y se valora apuntalar."
+    },
+    "ca": {
+      "enunciado": "Quin d'aquests senyals indica risc de col·lapse secundari en una estructura danyada?",
+      "opciones": [
+        "Taques d'humitat a les parets de les plantes inferiors",
+        "Pols ja dipositada i estable sobre les runes",
+        "Esquerdes que s'eixamplen, cruixits i caiguda contínua de pols o runa",
+        "Vidres trencats a les finestres de la façana"
+      ],
+      "explicacion": "Les esquerdes que creixen, els sorolls i cruixits i la caiguda contínua de pols o fragments indiquen que l'estructura continua movent-se; davant d'aquests senyals s'evacua la zona i es valora apuntalar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t30-010",
+    "tema": 30,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Señala la afirmación INCORRECTA sobre el rescate en estructuras colapsadas.",
+      "opciones": [
+        "Antes de entrar en un hueco hay que valorar su estabilidad y, si es necesario, apuntalarlo",
+        "Hay que empezar retirando los escombros con maquinaria pesada para llegar cuanto antes a las víctimas sepultadas",
+        "Es necesario cortar o controlar los suministros de gas, electricidad y agua",
+        "La retirada general de escombros se deja para el final, cuando ya no se esperan supervivientes"
+      ],
+      "explicacion": "Es incorrecta la retirada inicial con maquinaria pesada: puede provocar colapsos secundarios y aplastar a víctimas vivas en espacios vitales. La remoción general se reserva para la última fase; antes se trabaja de forma selectiva y con la zona estabilizada."
+    },
+    "ca": {
+      "enunciado": "Assenyala l'afirmació INCORRECTA sobre el rescat en estructures col·lapsades.",
+      "opciones": [
+        "Abans d'entrar en un buit cal valorar-ne l'estabilitat i, si cal, apuntalar-lo",
+        "Cal començar retirant les runes amb maquinària pesant per arribar com més aviat millor a les víctimes sepultades",
+        "Cal tallar o controlar els subministraments de gas, electricitat i aigua",
+        "La retirada general de runes es deixa per al final, quan ja no s'esperen supervivents"
+      ],
+      "explicacion": "És incorrecta la retirada inicial amb maquinària pesant: pot provocar col·lapses secundaris i aixafar víctimes vives en espais vitals. La remoció general es reserva per a l'última fase; abans es treballa de manera selectiva i amb la zona estabilitzada."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

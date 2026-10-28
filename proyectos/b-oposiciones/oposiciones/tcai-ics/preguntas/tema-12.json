@@ -1,0 +1,706 @@
+[
+  {
+    "id": "tcai-t12-001",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según las guías del ERC 2021, en la reanimación cardiopulmonar básica de un adulto la relación entre compresiones torácicas y ventilaciones es:",
+      "opciones": [
+        "15:2",
+        "30:2",
+        "5:1",
+        "30:1"
+      ],
+      "explicacion": "Las guías ERC 2021 mantienen en el adulto la secuencia de 30 compresiones seguidas de 2 ventilaciones de rescate."
+    },
+    "ca": {
+      "enunciado": "Segons les guies de l'ERC 2021, en la reanimació cardiopulmonar bàsica d'un adult la relació entre compressions toràciques i ventilacions és:",
+      "opciones": [
+        "15:2",
+        "30:2",
+        "5:1",
+        "30:1"
+      ],
+      "explicacion": "Les guies ERC 2021 mantenen en l'adult la seqüència de 30 compressions seguides de 2 ventilacions de rescat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-002",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según las guías del ERC 2021, las compresiones torácicas en el adulto deben realizarse a una frecuencia de:",
+      "opciones": [
+        "60 a 80 por minuto",
+        "80 a 100 por minuto",
+        "100 a 120 por minuto",
+        "120 a 140 por minuto"
+      ],
+      "explicacion": "El ERC recomienda comprimir a una frecuencia de 100 a 120 compresiones por minuto, minimizando las interrupciones."
+    },
+    "ca": {
+      "enunciado": "Segons les guies de l'ERC 2021, les compressions toràciques en l'adult s'han de fer a una freqüència de:",
+      "opciones": [
+        "60 a 80 per minut",
+        "80 a 100 per minut",
+        "100 a 120 per minut",
+        "120 a 140 per minut"
+      ],
+      "explicacion": "L'ERC recomana comprimir a una freqüència de 100 a 120 compressions per minut, minimitzant les interrupcions."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-003",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según las guías del ERC 2021, la profundidad de las compresiones torácicas en un adulto debe ser:",
+      "opciones": [
+        "De al menos 5 cm, sin superar los 6 cm",
+        "De 2 a 3 cm",
+        "De al menos 7 cm",
+        "Un tercio del diámetro del tórax, sin superar los 3 cm"
+      ],
+      "explicacion": "El ERC indica comprimir al menos 5 cm pero no más de 6 cm en el adulto, en el centro del tórax, permitiendo la reexpansión completa."
+    },
+    "ca": {
+      "enunciado": "Segons les guies de l'ERC 2021, la profunditat de les compressions toràciques en un adult ha de ser:",
+      "opciones": [
+        "D'almenys 5 cm, sense superar els 6 cm",
+        "De 2 a 3 cm",
+        "D'almenys 7 cm",
+        "Un terç del diàmetre del tòrax, sense superar els 3 cm"
+      ],
+      "explicacion": "L'ERC indica comprimir almenys 5 cm però no més de 6 cm en l'adult, al centre del tòrax, i permetre la reexpansió completa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-004",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Ante una persona que no responde, para comprobar si respira con normalidad, el reanimador no debe emplear más de:",
+      "opciones": [
+        "30 segundos",
+        "1 minuto",
+        "20 segundos",
+        "10 segundos"
+      ],
+      "explicacion": "La valoración de la respiración no debe prolongarse más de 10 segundos; si no respira con normalidad, se pide ayuda (112) y se inician las compresiones."
+    },
+    "ca": {
+      "enunciado": "Davant d'una persona que no respon, per comprovar si respira amb normalitat, el reanimador no ha d'emprar més de:",
+      "opciones": [
+        "30 segons",
+        "1 minut",
+        "20 segons",
+        "10 segons"
+      ],
+      "explicacion": "La valoració de la respiració no s'ha d'allargar més de 10 segons; si no respira amb normalitat, es demana ajuda (112) i s'inicien les compressions."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-005",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un adulto consciente se atraganta y presenta una obstrucción grave de la vía aérea (no puede toser ni hablar). Según el ERC 2021, se debe:",
+      "opciones": [
+        "Iniciar de inmediato compresiones torácicas 30:2",
+        "Dar hasta 5 golpes en la espalda y, si no son eficaces, hasta 5 compresiones abdominales",
+        "Darle agua para facilitar la deglución del cuerpo extraño",
+        "Colocarlo en posición lateral de seguridad y esperar"
+      ],
+      "explicacion": "En la obstrucción grave con víctima consciente se alternan hasta 5 golpes interescapulares y hasta 5 compresiones abdominales; si pierde la conciencia, se inicia la RCP."
+    },
+    "ca": {
+      "enunciado": "Un adult conscient s'ennuega i presenta una obstrucció greu de la via aèria (no pot tossir ni parlar). Segons l'ERC 2021, cal:",
+      "opciones": [
+        "Iniciar immediatament compressions toràciques 30:2",
+        "Fer fins a 5 cops a l'esquena i, si no són eficaços, fins a 5 compressions abdominals",
+        "Donar-li aigua per facilitar la deglució del cos estrany",
+        "Col·locar-lo en posició lateral de seguretat i esperar"
+      ],
+      "explicacion": "En l'obstrucció greu amb víctima conscient s'alternen fins a 5 cops interescapulars i fins a 5 compressions abdominals; si perd la consciència, s'inicia la RCP."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-006",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "La posición lateral de seguridad está indicada en una persona que:",
+      "opciones": [
+        "Está inconsciente pero respira con normalidad",
+        "No respira y no tiene pulso",
+        "Está consciente y tiene dolor torácico",
+        "Sufre una obstrucción grave de la vía aérea y está consciente"
+      ],
+      "explicacion": "La posición lateral de seguridad mantiene la vía aérea permeable en la víctima con disminución del nivel de conciencia que respira normalmente; si no respira, hay que iniciar la RCP."
+    },
+    "ca": {
+      "enunciado": "La posició lateral de seguretat està indicada en una persona que:",
+      "opciones": [
+        "Està inconscient però respira amb normalitat",
+        "No respira i no té pols",
+        "Està conscient i té dolor toràcic",
+        "Pateix una obstrucció greu de la via aèria i està conscient"
+      ],
+      "explicacion": "La posició lateral de seguretat manté la via aèria permeable en la víctima amb disminució del nivell de consciència que respira normalment; si no respira, cal iniciar la RCP."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-007",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Mientras el desfibrilador externo automático (DEA) analiza el ritmo cardíaco de la víctima:",
+      "opciones": [
+        "Se deben continuar las compresiones torácicas sin interrupción",
+        "Se debe ventilar al paciente con mascarilla",
+        "Nadie debe tocar a la víctima",
+        "Se deben retirar los parches para limpiar la piel"
+      ],
+      "explicacion": "Durante el análisis del ritmo y la descarga nadie debe tocar a la víctima; después de la descarga (o si no está indicada) se reanuda inmediatamente la RCP."
+    },
+    "ca": {
+      "enunciado": "Mentre el desfibril·lador extern automàtic (DEA) analitza el ritme cardíac de la víctima:",
+      "opciones": [
+        "Cal continuar les compressions toràciques sense interrupció",
+        "Cal ventilar el pacient amb mascareta",
+        "Ningú no ha de tocar la víctima",
+        "Cal retirar els elèctrodes per netejar la pell"
+      ],
+      "explicacion": "Durant l'anàlisi del ritme i la descàrrega ningú no ha de tocar la víctima; després de la descàrrega (o si no està indicada) es reprèn immediatament la RCP."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+      "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-008",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En un adulto en reposo, se denomina bradicardia a una frecuencia cardíaca:",
+      "opciones": [
+        "Superior a 100 latidos por minuto",
+        "Entre 60 y 100 latidos por minuto",
+        "Irregular, con pausas entre latidos",
+        "Inferior a 60 latidos por minuto"
+      ],
+      "explicacion": "La frecuencia cardíaca normal del adulto en reposo está entre 60 y 100 lpm; por debajo de 60 se habla de bradicardia y por encima de 100, de taquicardia."
+    },
+    "ca": {
+      "enunciado": "En un adult en repòs, s'anomena bradicàrdia una freqüència cardíaca:",
+      "opciones": [
+        "Superior a 100 batecs per minut",
+        "Entre 60 i 100 batecs per minut",
+        "Irregular, amb pauses entre batecs",
+        "Inferior a 60 batecs per minut"
+      ],
+      "explicacion": "La freqüència cardíaca normal de l'adult en repòs és d'entre 60 i 100 bpm; per sota de 60 es parla de bradicàrdia i per sobre de 100, de taquicàrdia."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-009",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Al tomar el pulso radial, no se debe utilizar el dedo pulgar porque:",
+      "opciones": [
+        "Comprime demasiado la arteria y la colapsa",
+        "Tiene pulso propio y puede confundirse con el del paciente",
+        "Es menos sensible al calor de la piel",
+        "Impide contar durante un minuto completo"
+      ],
+      "explicacion": "El pulso se palpa con las yemas de los dedos índice y medio (o también anular); el pulgar tiene pulso propio, lo que puede falsear la medición."
+    },
+    "ca": {
+      "enunciado": "En prendre el pols radial, no s'ha d'utilitzar el dit polze perquè:",
+      "opciones": [
+        "Comprimeix massa l'artèria i la col·lapsa",
+        "Té pols propi i es pot confondre amb el del pacient",
+        "És menys sensible a la calor de la pell",
+        "Impedeix comptar durant un minut sencer"
+      ],
+      "explicacion": "El pols es palpa amb els tous dels dits índex i mitjà (o també l'anular); el polze té pols propi, cosa que pot falsejar la mesura."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-010",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la OMS, se diagnostica hipertensión arterial en un adulto cuando, en mediciones realizadas en dos días distintos, la presión arterial es:",
+      "opciones": [
+        "Sistólica ≥ 140 mmHg y/o diastólica ≥ 90 mmHg",
+        "Sistólica ≥ 120 mmHg y/o diastólica ≥ 70 mmHg",
+        "Sistólica ≥ 160 mmHg y diastólica ≥ 110 mmHg",
+        "Sistólica ≥ 100 mmHg y/o diastólica ≥ 60 mmHg"
+      ],
+      "explicacion": "La OMS fija el umbral diagnóstico de hipertensión en 140 mmHg de sistólica y/o 90 mmHg de diastólica, comprobado en dos días distintos."
+    },
+    "ca": {
+      "enunciado": "Segons l'OMS, es diagnostica hipertensió arterial en un adult quan, en mesuraments fets en dos dies diferents, la pressió arterial és:",
+      "opciones": [
+        "Sistòlica ≥ 140 mmHg i/o diastòlica ≥ 90 mmHg",
+        "Sistòlica ≥ 120 mmHg i/o diastòlica ≥ 70 mmHg",
+        "Sistòlica ≥ 160 mmHg i diastòlica ≥ 110 mmHg",
+        "Sistòlica ≥ 100 mmHg i/o diastòlica ≥ 60 mmHg"
+      ],
+      "explicacion": "L'OMS fixa el llindar diagnòstic d'hipertensió en 140 mmHg de sistòlica i/o 90 mmHg de diastòlica, comprovat en dos dies diferents."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Organización Mundial de la Salud · Hipertensión (nota descriptiva)",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/hypertension"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-011",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El pulsioxímetro es un dispositivo que mide de forma no invasiva:",
+      "opciones": [
+        "La presión arterial media",
+        "La glucemia capilar",
+        "La saturación de oxígeno de la hemoglobina en sangre arterial",
+        "La concentración de dióxido de carbono espirado"
+      ],
+      "explicacion": "El pulsioxímetro estima la saturación de oxígeno de la hemoglobina (SpO2) y, además, la frecuencia del pulso."
+    },
+    "ca": {
+      "enunciado": "El pulsioxímetre és un dispositiu que mesura de manera no invasiva:",
+      "opciones": [
+        "La pressió arterial mitjana",
+        "La glucèmia capil·lar",
+        "La saturació d'oxigen de l'hemoglobina en sang arterial",
+        "La concentració de diòxid de carboni espirat"
+      ],
+      "explicacion": "El pulsioxímetre estima la saturació d'oxigen de l'hemoglobina (SpO2) i, a més, la freqüència del pols."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-012",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En la higiene genital de una paciente encamada, el lavado debe hacerse:",
+      "opciones": [
+        "De atrás hacia delante, de la zona anal hacia el pubis",
+        "Con movimientos circulares desde el ano",
+        "Solo en la zona anal, sin tocar la zona genital",
+        "De delante hacia atrás, del pubis hacia la zona anal"
+      ],
+      "explicacion": "Se lava de delante hacia atrás (de la zona más limpia a la más sucia) para no arrastrar gérmenes de la zona anal hacia la uretra y la vagina."
+    },
+    "ca": {
+      "enunciado": "En la higiene genital d'una pacient enllitada, el rentat s'ha de fer:",
+      "opciones": [
+        "De darrere cap endavant, de la zona anal cap al pubis",
+        "Amb moviments circulars des de l'anus",
+        "Només a la zona anal, sense tocar la zona genital",
+        "De davant cap enrere, del pubis cap a la zona anal"
+      ],
+      "explicacion": "Es renta de davant cap enrere (de la zona més neta a la més bruta) per no arrossegar gèrmens de la zona anal cap a la uretra i la vagina."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-013",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Al vestir a un paciente con hemiplejia o con un brazo inmovilizado, el orden correcto es:",
+      "opciones": [
+        "Vestir primero el lado afectado y desvestir primero el lado sano",
+        "Vestir primero el lado sano y desvestir primero el lado afectado",
+        "Vestir y desvestir siempre primero el lado sano",
+        "Vestir y desvestir siempre primero el lado afectado"
+      ],
+      "explicacion": "Se viste primero la extremidad afectada (la que menos se mueve) y se desviste primero la sana; así se reduce la movilización forzada del lado afectado."
+    },
+    "ca": {
+      "enunciado": "En vestir un pacient amb hemiplegia o amb un braç immobilitzat, l'ordre correcte és:",
+      "opciones": [
+        "Vestir primer el costat afectat i desvestir primer el costat sa",
+        "Vestir primer el costat sa i desvestir primer el costat afectat",
+        "Vestir i desvestir sempre primer el costat sa",
+        "Vestir i desvestir sempre primer el costat afectat"
+      ],
+      "explicacion": "Es vesteix primer l'extremitat afectada (la que menys es mou) i es desvesteix primer la sana; així es redueix la mobilització forçada del costat afectat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-014",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En la posición de Trendelenburg, el paciente se encuentra:",
+      "opciones": [
+        "Sentado en la cama con la cabecera elevada a 90°",
+        "En decúbito supino con la cabeza más baja que los pies",
+        "En decúbito lateral izquierdo con la pierna derecha flexionada",
+        "En decúbito prono con los brazos junto al cuerpo"
+      ],
+      "explicacion": "La posición de Trendelenburg es un decúbito supino con el plano de la cama inclinado de manera que la cabeza queda más baja que los pies."
+    },
+    "ca": {
+      "enunciado": "En la posició de Trendelenburg, el pacient es troba:",
+      "opciones": [
+        "Assegut al llit amb el capçal elevat a 90°",
+        "En decúbit supí amb el cap més baix que els peus",
+        "En decúbit lateral esquerre amb la cama dreta flexionada",
+        "En decúbit pron amb els braços al costat del cos"
+      ],
+      "explicacion": "La posició de Trendelenburg és un decúbit supí amb el pla del llit inclinat de manera que el cap queda més baix que els peus."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-015",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Para la administración de un enema de limpieza, la posición más adecuada del paciente es:",
+      "opciones": [
+        "Decúbito prono",
+        "Fowler alta",
+        "Trendelenburg",
+        "Sims (decúbito lateral izquierdo con la pierna derecha flexionada)"
+      ],
+      "explicacion": "La posición de Sims, sobre el lado izquierdo, facilita que el líquido fluya por gravedad siguiendo la anatomía del recto y el colon sigmoide."
+    },
+    "ca": {
+      "enunciado": "Per a l'administració d'un ènema de neteja, la posició més adequada del pacient és:",
+      "opciones": [
+        "Decúbit pron",
+        "Fowler alta",
+        "Trendelenburg",
+        "Sims (decúbit lateral esquerre amb la cama dreta flexionada)"
+      ],
+      "explicacion": "La posició de Sims, sobre el costat esquerre, facilita que el líquid flueixi per gravetat seguint l'anatomia del recte i el còlon sigmoide."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-016",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En un paciente en decúbito supino, las zonas con mayor riesgo de lesiones por presión son:",
+      "opciones": [
+        "Orejas y crestas ilíacas",
+        "Rodillas y dedos de los pies",
+        "Sacro y talones",
+        "Mamas y genitales"
+      ],
+      "explicacion": "En decúbito supino las prominencias más expuestas son el sacro y los talones (también occipucio, omóplatos y codos); orejas y crestas ilíacas son más propias del decúbito lateral o prono."
+    },
+    "ca": {
+      "enunciado": "En un pacient en decúbit supí, les zones amb més risc de lesions per pressió són:",
+      "opciones": [
+        "Orelles i crestes ilíaques",
+        "Genolls i dits dels peus",
+        "Sacre i talons",
+        "Mames i genitals"
+      ],
+      "explicacion": "En decúbit supí les prominències més exposades són el sacre i els talons (també l'occípit, els omòplats i els colzes); les orelles i les crestes ilíaques són més pròpies del decúbit lateral o pron."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "GNEAUPP · Prevención y tratamiento de las lesiones/úlceras por presión, guía de consulta rápida EPUAP/NPIAP/PPPIA 2019 (traducción)",
+      "url": "https://ulcerasfora.sergas.gal/Informacion/Documents/302/2020.Guia_ EPUAP_NPUAP traducion GNEAUPP.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-017",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la clasificación internacional EPUAP/NPIAP, una lesión por presión de categoría I se caracteriza por:",
+      "opciones": [
+        "Piel intacta con eritema no blanqueable en una zona localizada",
+        "Pérdida parcial del espesor de la dermis con flictena",
+        "Pérdida total del espesor de la piel con tejido adiposo visible",
+        "Exposición de hueso, tendón o músculo"
+      ],
+      "explicacion": "La categoría I es el eritema no blanqueable sobre piel intacta, normalmente sobre una prominencia ósea; la flictena corresponde a la categoría II y la exposición de hueso, a la IV."
+    },
+    "ca": {
+      "enunciado": "Segons la classificació internacional EPUAP/NPIAP, una lesió per pressió de categoria I es caracteritza per:",
+      "opciones": [
+        "Pell intacta amb eritema no blanquejable en una zona localitzada",
+        "Pèrdua parcial del gruix de la dermis amb flictena",
+        "Pèrdua total del gruix de la pell amb teixit adipós visible",
+        "Exposició d'os, tendó o múscul"
+      ],
+      "explicacion": "La categoria I és l'eritema no blanquejable sobre pell intacta, normalment sobre una prominència òssia; la flictena correspon a la categoria II i l'exposició d'os, a la IV."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "GNEAUPP · Prevención y tratamiento de las lesiones/úlceras por presión, guía de consulta rápida EPUAP/NPIAP/PPPIA 2019 (traducción)",
+      "url": "https://ulcerasfora.sergas.gal/Informacion/Documents/302/2020.Guia_ EPUAP_NPUAP traducion GNEAUPP.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-018",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En un paciente con sonda vesical permanente, la bolsa colectora de orina debe mantenerse:",
+      "opciones": [
+        "Por encima del nivel de la vejiga para facilitar el vaciado",
+        "Por debajo del nivel de la vejiga y sin tocar el suelo",
+        "Sobre el colchón, junto al muslo del paciente",
+        "Pinzada de forma continua entre vaciados"
+      ],
+      "explicacion": "La bolsa debe estar por debajo de la vejiga para que la orina drene por gravedad sin reflujo, y sin contacto con el suelo para evitar la contaminación."
+    },
+    "ca": {
+      "enunciado": "En un pacient amb sonda vesical permanent, la bossa col·lectora d'orina s'ha de mantenir:",
+      "opciones": [
+        "Per sobre del nivell de la bufeta per facilitar el buidatge",
+        "Per sota del nivell de la bufeta i sense tocar el terra",
+        "Sobre el matalàs, al costat de la cuixa del pacient",
+        "Pinçada de manera contínua entre buidatges"
+      ],
+      "explicacion": "La bossa ha d'estar per sota de la bufeta perquè l'orina dreni per gravetat sense reflux, i sense contacte amb el terra per evitar-ne la contaminació."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-019",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Para recoger la orina de 24 horas, el procedimiento correcto es:",
+      "opciones": [
+        "Guardar la primera micción de la mañana y desechar la del día siguiente",
+        "Recoger solo las micciones diurnas durante 24 horas",
+        "Desechar la primera micción de la mañana y recoger todas las siguientes, incluida la primera del día siguiente",
+        "Recoger únicamente la primera micción de la mañana durante dos días"
+      ],
+      "explicacion": "Se vacía la vejiga al empezar (esa orina se desecha) y se recoge toda la orina durante 24 horas, incluida la primera micción del día siguiente a la misma hora."
+    },
+    "ca": {
+      "enunciado": "Per recollir l'orina de 24 hores, el procediment correcte és:",
+      "opciones": [
+        "Guardar la primera micció del matí i rebutjar la de l'endemà",
+        "Recollir només les miccions diürnes durant 24 hores",
+        "Rebutjar la primera micció del matí i recollir totes les següents, inclosa la primera de l'endemà",
+        "Recollir únicament la primera micció del matí durant dos dies"
+      ],
+      "explicacion": "Es buida la bufeta en començar (aquesta orina es rebutja) i es recull tota l'orina durant 24 hores, inclosa la primera micció de l'endemà a la mateixa hora."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-020",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Durante la alimentación por sonda nasogástrica, y un tiempo después, el paciente debe mantenerse:",
+      "opciones": [
+        "En decúbito supino con la cama horizontal",
+        "En decúbito prono",
+        "En posición de Trendelenburg",
+        "Con la cabecera elevada (al menos 30°)"
+      ],
+      "explicacion": "Elevar la cabecera durante la nutrición enteral y después reduce el riesgo de reflujo y broncoaspiración; la posición horizontal o Trendelenburg lo aumentan."
+    },
+    "ca": {
+      "enunciado": "Durant l'alimentació per sonda nasogàstrica, i una estona després, el pacient s'ha de mantenir:",
+      "opciones": [
+        "En decúbit supí amb el llit horitzontal",
+        "En decúbit pron",
+        "En posició de Trendelenburg",
+        "Amb el capçal elevat (almenys 30°)"
+      ],
+      "explicacion": "Elevar el capçal durant la nutrició enteral i després redueix el risc de reflux i broncoaspiració; la posició horitzontal o la de Trendelenburg l'augmenten."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-021",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La fase del sueño caracterizada por movimientos oculares rápidos, relajación muscular y la mayor parte de los ensueños es:",
+      "opciones": [
+        "La fase 1 del sueño no REM",
+        "La fase REM",
+        "La fase de sueño profundo o de ondas lentas",
+        "La fase de vigilia tranquila"
+      ],
+      "explicacion": "El sueño REM (rapid eye movement) se asocia a los movimientos oculares rápidos, la atonía muscular y los ensueños; el sueño profundo de ondas lentas pertenece a la fase no REM."
+    },
+    "ca": {
+      "enunciado": "La fase del son caracteritzada per moviments oculars ràpids, relaxació muscular i la major part dels somnis és:",
+      "opciones": [
+        "La fase 1 del son no REM",
+        "La fase REM",
+        "La fase de son profund o d'ones lentes",
+        "La fase de vigília tranquil·la"
+      ],
+      "explicacion": "El son REM (rapid eye movement) s'associa als moviments oculars ràpids, l'atonia muscular i els somnis; el son profund d'ones lentes pertany a la fase no REM."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t12-022",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "La regla de los «cinco correctos» en la administración de medicamentos se refiere a:",
+      "opciones": [
+        "Paciente, medicamento, dosis, vía y hora correctos",
+        "Lavado de manos, guantes, bata, mascarilla y gafas",
+        "Prescripción, dispensación, almacenamiento, registro y devolución",
+        "Temperatura, pulso, respiración, presión arterial y dolor"
+      ],
+      "explicacion": "Antes de administrar un medicamento se comprueba que sean correctos el paciente, el medicamento, la dosis, la vía y la hora; es una barrera básica frente a los errores de medicación."
+    },
+    "ca": {
+      "enunciado": "La regla dels «cinc correctes» en l'administració de medicaments es refereix a:",
+      "opciones": [
+        "Pacient, medicament, dosi, via i hora correctes",
+        "Rentada de mans, guants, bata, mascareta i ulleres",
+        "Prescripció, dispensació, emmagatzematge, registre i devolució",
+        "Temperatura, pols, respiració, pressió arterial i dolor"
+      ],
+      "explicacion": "Abans d'administrar un medicament es comprova que siguin correctes el pacient, el medicament, la dosi, la via i l'hora; és una barrera bàsica davant dels errors de medicació."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  }
+]

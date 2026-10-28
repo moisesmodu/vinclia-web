@@ -1,0 +1,809 @@
+[
+  {
+    "id": "agen-t12-001",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Usted redacta la notificación de una resolución que deniega una ayuda. Según el artículo 40.2 de la Ley 39/2015, la notificación debe contener:",
+      "opciones": [
+        "Un resumen de la resolución y el teléfono de la unidad para consultar el resto",
+        "El texto íntegro de la resolución y la firma del interesado en señal de conformidad",
+        "El texto íntegro de la resolución, si pone fin o no a la vía administrativa, los recursos procedentes, el órgano ante el que se presentan y el plazo para interponerlos",
+        "Solo la parte dispositiva de la resolución, porque los recursos se informan en la sede electrónica"
+      ],
+      "explicacion": "El artículo 40.2 exige que la notificación contenga el texto íntegro de la resolución, la indicación de si agota la vía administrativa, los recursos procedentes, el órgano ante el que se interponen y el plazo."
+    },
+    "ca": {
+      "enunciado": "Vostè redacta la notificació d'una resolució que denega un ajut. Segons l'article 40.2 de la Llei 39/2015, la notificació ha de contenir:",
+      "opciones": [
+        "Un resum de la resolució i el telèfon de la unitat per consultar-ne la resta",
+        "El text íntegre de la resolució i la signatura de l'interessat en senyal de conformitat",
+        "El text íntegre de la resolució, si posa fi o no a la via administrativa, els recursos procedents, l'òrgan davant del qual s'han de presentar i el termini per interposar-los",
+        "Només la part dispositiva de la resolució, perquè els recursos s'informen a la seu electrònica"
+      ],
+      "explicacion": "L'article 40.2 exigeix que la notificació contingui el text íntegre de la resolució, la indicació de si exhaureix la via administrativa, els recursos procedents, l'òrgan davant del qual s'interposen i el termini."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "40.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a40"
+    },
+    "cita": "deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa, la expresión de los recursos que procedan, en su caso, en vía administrativa y judicial, el órgano ante el que hubieran de presentarse y el plazo para interponerlos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-002",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 40.2 de la Ley 39/2015, toda notificación debe cursarse dentro del plazo de:",
+      "opciones": [
+        "Cinco días a partir de la fecha en que se dictó el acto",
+        "Diez días a partir de la fecha en que se dictó el acto",
+        "Quince días a partir de la firma del acto",
+        "Un mes a partir de la fecha en que se dictó el acto"
+      ],
+      "explicacion": "El artículo 40.2 fija en diez días, desde que se dicta el acto, el plazo para cursar la notificación."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 40.2 de la Llei 39/2015, tota notificació s'ha de cursar dins del termini de:",
+      "opciones": [
+        "Cinc dies a partir de la data en què es va dictar l'acte",
+        "Deu dies a partir de la data en què es va dictar l'acte",
+        "Quinze dies a partir de la signatura de l'acte",
+        "Un mes a partir de la data en què es va dictar l'acte"
+      ],
+      "explicacion": "L'article 40.2 fixa en deu dies, des que es dicta l'acte, el termini per cursar la notificació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "40.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a40"
+    },
+    "cita": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-003",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 40.3 de la Ley 39/2015, una notificación que contiene el texto íntegro del acto pero omite la indicación de los recursos procedentes:",
+      "opciones": [
+        "Es nula de pleno derecho y no produce efecto alguno",
+        "Surte efecto desde la fecha en que se dictó el acto",
+        "Surte efecto desde que el interesado hace actuaciones que suponen conocer el contenido y alcance del acto, o interpone el recurso procedente",
+        "Surte efecto a los diez días naturales de su puesta a disposición"
+      ],
+      "explicacion": "El artículo 40.3 no anula la notificación defectuosa: produce efectos desde que el interesado realiza actuaciones que suponen conocer el contenido y alcance del acto o interpone el recurso procedente."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 40.3 de la Llei 39/2015, una notificació que conté el text íntegre de l'acte però omet la indicació dels recursos procedents:",
+      "opciones": [
+        "És nul·la de ple dret i no produeix cap efecte",
+        "Té efecte des de la data en què es va dictar l'acte",
+        "Té efecte des que l'interessat fa actuacions que suposen conèixer el contingut i l'abast de l'acte, o interposa el recurs procedent",
+        "Té efecte als deu dies naturals de la posada a disposició"
+      ],
+      "explicacion": "L'article 40.3 no anul·la la notificació defectuosa: produeix efectes des que l'interessat fa actuacions que suposen conèixer el contingut i l'abast de l'acte o interposa el recurs procedent."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "40.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a40"
+    },
+    "cita": "surtirán efecto a partir de la fecha en que el interesado realice actuaciones que supongan el conocimiento del contenido y alcance de la resolución o acto objeto de la notificación, o interponga cualquier recurso que proceda",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-004",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El primer intento de notificación en papel en el domicilio del interesado se hace un martes a las 10.00 h y nadie se hace cargo de ella. Según el artículo 42.2 de la Ley 39/2015, el segundo intento:",
+      "opciones": [
+        "Debe hacerse una sola vez dentro de los tres días siguientes, después de las 15.00 h",
+        "Debe hacerse dentro de los tres días siguientes, antes de las 15.00 h",
+        "Debe hacerse dentro de los diez días siguientes, a cualquier hora",
+        "No es necesario: se publica directamente un anuncio en el BOE"
+      ],
+      "explicacion": "El artículo 42.2 obliga a repetir el intento una sola vez, en hora distinta y dentro de los tres días siguientes; si el primero fue antes de las 15.00 h, el segundo debe ser después (con al menos tres horas de diferencia). Solo si fracasa se publica el anuncio del artículo 44."
+    },
+    "ca": {
+      "enunciado": "El primer intent de notificació en paper al domicili de l'interessat es fa un dimarts a les 10.00 h i ningú no se'n fa càrrec. Segons l'article 42.2 de la Llei 39/2015, el segon intent:",
+      "opciones": [
+        "S'ha de fer una sola vegada dins dels tres dies següents, després de les 15.00 h",
+        "S'ha de fer dins dels tres dies següents, abans de les 15.00 h",
+        "S'ha de fer dins dels deu dies següents, a qualsevol hora",
+        "No és necessari: es publica directament un anunci al BOE"
+      ],
+      "explicacion": "L'article 42.2 obliga a repetir l'intent una sola vegada, en hora diferent i dins dels tres dies següents; si el primer va ser abans de les 15.00 h, el segon ha de ser després (amb almenys tres hores de diferència). Només si fracassa es publica l'anunci de l'article 44."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "42.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a42"
+    },
+    "cita": "intento que se repetirá por una sola vez y en una hora distinta dentro de los tres días siguientes. En caso de que el primer intento de notificación se haya realizado antes de las quince horas, el segundo intento deberá realizarse después de las quince horas y viceversa",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-005",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Al entregar en mano una notificación en papel, el interesado se niega a recogerla. Según el artículo 41.5 de la Ley 39/2015:",
+      "opciones": [
+        "Debe repetirse la notificación hasta que el interesado la acepte",
+        "Se suspende el procedimiento hasta que el interesado comparezca",
+        "Debe notificarse necesariamente por anuncio en el BOE",
+        "Se hace constar en el expediente, con las circunstancias del intento y el medio, se da por efectuado el trámite y sigue el procedimiento"
+      ],
+      "explicacion": "El artículo 41.5 dispone que el rechazo de la notificación se hace constar en el expediente, especificando las circunstancias y el medio, y que el trámite se tiene por efectuado y el procedimiento continúa."
+    },
+    "ca": {
+      "enunciado": "En lliurar en mà una notificació en paper, l'interessat es nega a recollir-la. Segons l'article 41.5 de la Llei 39/2015:",
+      "opciones": [
+        "S'ha de repetir la notificació fins que l'interessat l'accepti",
+        "Se suspèn el procediment fins que l'interessat comparegui",
+        "S'ha de notificar necessàriament per anunci al BOE",
+        "Se'n deixa constància a l'expedient, amb les circumstàncies de l'intent i el mitjà, es dona per efectuat el tràmit i continua el procediment"
+      ],
+      "explicacion": "L'article 41.5 disposa que el rebuig de la notificació es fa constar a l'expedient, especificant-ne les circumstàncies i el mitjà, i que el tràmit es té per efectuat i el procediment continua."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Cuando el interesado o su representante rechace la notificación de una actuación administrativa, se hará constar en el expediente, especificándose las circunstancias del intento de notificación y el medio, dando por efectuado el trámite y siguiéndose el procedimiento.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-006",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 44 de la Ley 39/2015, cuando se ignora el lugar de la notificación o, intentada, no se ha podido practicar, la notificación se hace mediante:",
+      "opciones": [
+        "Un anuncio publicado únicamente en el tablón del ayuntamiento del último domicilio",
+        "Un anuncio publicado en el «Boletín Oficial del Estado»",
+        "Una llamada telefónica al interesado de la que se deja constancia",
+        "La entrega de la notificación a un vecino mayor de catorce años"
+      ],
+      "explicacion": "El artículo 44 obliga a notificar mediante anuncio en el BOE; la publicación en el diario autonómico, provincial o en el tablón municipal es previa y facultativa, y no excluye el anuncio en el BOE."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 44 de la Llei 39/2015, quan s'ignora el lloc de la notificació o, intentada, no s'ha pogut practicar, la notificació es fa mitjançant:",
+      "opciones": [
+        "Un anunci publicat únicament al tauler de l'ajuntament de l'últim domicili",
+        "Un anunci publicat al «Boletín Oficial del Estado»",
+        "Una trucada telefònica a l'interessat de la qual es deixa constància",
+        "El lliurament de la notificació a un veí més gran de catorze anys"
+      ],
+      "explicacion": "L'article 44 obliga a notificar mitjançant anunci al BOE; la publicació al diari autonòmic, provincial o al tauler municipal és prèvia i facultativa, i no exclou l'anunci al BOE."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "44",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a44"
+    },
+    "cita": "Cuando los interesados en un procedimiento sean desconocidos, se ignore el lugar de la notificación o bien, intentada ésta, no se hubiese podido practicar, la notificación se hará por medio de un anuncio publicado en el «Boletín Oficial del Estado».",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-007",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un departamento de la Generalitat convoca un proceso selectivo. Según el artículo 45.1 de la Ley 39/2015, ¿cómo se comunican a los aspirantes las listas provisionales de personas admitidas?",
+      "opciones": [
+        "Mediante notificación individual en papel a cada aspirante",
+        "Por correo electrónico a cada aspirante, que sustituye a la publicación",
+        "Mediante publicación, con efectos de notificación, en el medio que indique la convocatoria",
+        "Mediante publicación en el medio que elija la unidad en cada momento"
+      ],
+      "explicacion": "El artículo 45.1.b impone la publicación, con efectos de notificación, de los actos de los procedimientos selectivos; la convocatoria debe indicar el medio de las publicaciones sucesivas y no son válidas las hechas en otros lugares."
+    },
+    "ca": {
+      "enunciado": "Un departament de la Generalitat convoca un procés selectiu. Segons l'article 45.1 de la Llei 39/2015, com es comuniquen als aspirants les llistes provisionals de persones admeses?",
+      "opciones": [
+        "Mitjançant notificació individual en paper a cada aspirant",
+        "Per correu electrònic a cada aspirant, que substitueix la publicació",
+        "Mitjançant publicació, amb efectes de notificació, en el mitjà que indiqui la convocatòria",
+        "Mitjançant publicació en el mitjà que triï la unitat en cada moment"
+      ],
+      "explicacion": "L'article 45.1.b imposa la publicació, amb efectes de notificació, dels actes dels procediments selectius; la convocatòria ha d'indicar el mitjà de les publicacions successives i no són vàlides les que es facin en altres llocs."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "45.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a45"
+    },
+    "cita": "b) Cuando se trate de actos integrantes de un procedimiento selectivo o de concurrencia competitiva de cualquier tipo. En este caso, la convocatoria del procedimiento deberá indicar el medio donde se efectuarán las sucesivas publicaciones",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-008",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una ciudadana redacta en la oficina de asistencia en materia de registros una solicitud dirigida a un servicio de la Generalitat, pero desconoce su código de identificación. Según el artículo 66.1 de la Ley 39/2015:",
+      "opciones": [
+        "No puede presentar la solicitud hasta que averigüe el código",
+        "Puede presentarla, pero la solicitud se archivará si no indica el código en diez días",
+        "Debe dirigirla al registro general sin indicar ningún órgano destinatario",
+        "La oficina está obligada a facilitarle el código de identificación del órgano"
+      ],
+      "explicacion": "El artículo 66.1.f exige indicar en la solicitud el órgano, centro o unidad y su código de identificación, y obliga a las oficinas de asistencia en materia de registros a facilitar el código a quien lo desconozca."
+    },
+    "ca": {
+      "enunciado": "Una ciutadana redacta a l'oficina d'assistència en matèria de registres una sol·licitud adreçada a un servei de la Generalitat, però en desconeix el codi d'identificació. Segons l'article 66.1 de la Llei 39/2015:",
+      "opciones": [
+        "No pot presentar la sol·licitud fins que esbrini el codi",
+        "La pot presentar, però la sol·licitud s'arxivarà si no indica el codi en deu dies",
+        "L'ha d'adreçar al registre general sense indicar cap òrgan destinatari",
+        "L'oficina està obligada a facilitar-li el codi d'identificació de l'òrgan"
+      ],
+      "explicacion": "L'article 66.1.f exigeix indicar a la sol·licitud l'òrgan, el centre o la unitat i el seu codi d'identificació, i obliga les oficines d'assistència en matèria de registres a facilitar el codi a qui el desconegui."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "66.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a66"
+    },
+    "cita": "Las oficinas de asistencia en materia de registros estarán obligadas a facilitar a los interesados el código de identificación si el interesado lo desconoce.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-009",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 66.1 de la Ley 39/2015, ¿cuál de estos elementos debe contener toda solicitud de iniciación?",
+      "opciones": [
+        "La fundamentación jurídica, con cita de los artículos aplicables",
+        "Los hechos, razones y petición en que se concreta, con toda claridad, la solicitud",
+        "El número de cuenta bancaria del solicitante",
+        "El nombre del empleado público que tramitará el procedimiento"
+      ],
+      "explicacion": "El artículo 66.1 exige nombre y apellidos, medio de notificación, hechos, razones y petición, lugar y fecha, firma y órgano destinatario con su código. No exige fundamentación jurídica."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 66.1 de la Llei 39/2015, quin d'aquests elements ha de contenir tota sol·licitud d'iniciació?",
+      "opciones": [
+        "La fonamentació jurídica, amb cita dels articles aplicables",
+        "Els fets, les raons i la petició en què es concreta, amb tota claredat, la sol·licitud",
+        "El número de compte bancari del sol·licitant",
+        "El nom de l'empleat públic que tramitarà el procediment"
+      ],
+      "explicacion": "L'article 66.1 exigeix nom i cognoms, mitjà de notificació, fets, raons i petició, lloc i data, signatura i òrgan destinatari amb el seu codi. No exigeix fonamentació jurídica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "66.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a66"
+    },
+    "cita": "c) Hechos, razones y petición en que se concrete, con toda claridad, la solicitud.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-010",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 47 de la Ley 26/2010, los certificados administrativos deben contener:",
+      "opciones": [
+        "Los datos objeto de certificación y la firma del órgano competente para entregarlos",
+        "Los datos objeto de certificación y la firma de la persona interesada",
+        "Una exposición de hechos y una petición dirigida al órgano competente",
+        "El texto íntegro de la resolución y los recursos que proceden"
+      ],
+      "explicacion": "El artículo 47.2 exige que el certificado contenga los datos certificados y la firma del órgano competente; se entrega a solicitud del interesado o a instancia del órgano competente (artículo 47.1)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 47 de la Llei 26/2010, els certificats administratius han de contenir:",
+      "opciones": [
+        "Les dades objecte de certificació i la signatura de l'òrgan competent per lliurar-los",
+        "Les dades objecte de certificació i la signatura de la persona interessada",
+        "Una exposició de fets i una petició adreçada a l'òrgan competent",
+        "El text íntegre de la resolució i els recursos que escauen"
+      ],
+      "explicacion": "L'article 47.2 exigeix que el certificat contingui les dades certificades i la signatura de l'òrgan competent; es lliura a sol·licitud de l'interessat o a instància de l'òrgan competent (article 47.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "47.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a47"
+    },
+    "cita": "Los certificados administrativos han de contener los datos objeto de certificación y la firma del órgano competente para su entrega.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-011",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un ciudadano presenta una solicitud ante la Generalitat y, en el apartado del órgano destinatario, escribe «No lo sé». Según el artículo 49.1 de la Ley 26/2010:",
+      "opciones": [
+        "La solicitud debe inadmitirse por falta de un requisito esencial",
+        "Debe requerírsele para que indique el órgano en tres días, con archivo si no lo hace",
+        "El desconocimiento del órgano al que debe dirigirse no impide tramitar la solicitud",
+        "La solicitud solo puede tramitarse si se presenta de nuevo en el registro del órgano competente"
+      ],
+      "explicacion": "El artículo 49.1.e incluye el órgano destinatario en el contenido de la solicitud, pero precisa que desconocerlo no constituye obstáculo alguno para tramitarla."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà presenta una sol·licitud davant la Generalitat i, a l'apartat de l'òrgan destinatari, escriu «No ho sé». Segons l'article 49.1 de la Llei 26/2010:",
+      "opciones": [
+        "La sol·licitud s'ha d'inadmetre per manca d'un requisit essencial",
+        "Se li ha de requerir que indiqui l'òrgan en tres dies, amb arxivament si no ho fa",
+        "El desconeixement de l'òrgan a què s'ha d'adreçar no impedeix tramitar la sol·licitud",
+        "La sol·licitud només es pot tramitar si es torna a presentar al registre de l'òrgan competent"
+      ],
+      "explicacion": "L'article 49.1.e inclou l'òrgan destinatari en el contingut de la sol·licitud, però precisa que desconèixer-lo no constitueix cap obstacle per tramitar-la."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "49.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a49"
+    },
+    "cita": "El desconocimiento del órgano al que debe dirigirse la solicitud no constituye obstáculo alguno para la tramitación de la misma.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-012",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 14.3 de la Ley 1/1998, de Política Lingüística, si los otorgantes de un documento público no escogen expresamente la lengua:",
+      "opciones": [
+        "El documento se redacta en castellano",
+        "El documento se redacta en catalán",
+        "El documento se redacta en ambas lenguas oficiales",
+        "Se suspende la redacción hasta que escojan la lengua"
+      ],
+      "explicacion": "El artículo 14.3 obliga a preguntar a los otorgantes qué lengua escogen y establece que, si no la escogen expresamente, el documento se redacta en catalán. La redacción en las dos lenguas se prevé cuando hay varios otorgantes sin acuerdo (artículo 14.2)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 14.3 de la Llei 1/1998, de política lingüística, si els atorgants d'un document públic no trien expressament la llengua:",
+      "opciones": [
+        "El document es redacta en castellà",
+        "El document es redacta en català",
+        "El document es redacta en totes dues llengües oficials",
+        "Se suspèn la redacció fins que triïn la llengua"
+      ],
+      "explicacion": "L'article 14.3 obliga a preguntar als atorgants quina llengua trien i estableix que, si no la trien expressament, el document es redacta en català. La redacció en les dues llengües es preveu quan hi ha diversos atorgants sense acord (article 14.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1998-2989",
+      "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística",
+      "articulo": "14.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-2989#a14"
+    },
+    "cita": "Si no se escoge expresamente la lengua, el documento se redacta en catalán.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-013",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el principio de uso no sexista ni estereotipado del lenguaje del artículo 3 de la Ley 17/2015, de igualdad efectiva de mujeres y hombres, los poderes públicos deben:",
+      "opciones": [
+        "Usar el masculino genérico en todos los documentos para garantizar la uniformidad",
+        "Aplicar el lenguaje no sexista solo en la documentación dirigida a mujeres",
+        "Sustituir sistemáticamente las formas masculinas por barras en todos los textos",
+        "Promover un lenguaje respetuoso en la atención personal y en toda su documentación, y formar a su personal en el uso respetuoso e inclusivo de la lengua"
+      ],
+      "explicacion": "El principio octavo del artículo 3 obliga a hacer un uso no sexista del lenguaje, promover un lenguaje respetuoso en la atención personal y en toda la documentación escrita, gráfica y audiovisual, y formar al personal en el uso inclusivo de la lengua."
+    },
+    "ca": {
+      "enunciado": "Segons el principi d'ús no sexista ni estereotipat del llenguatge de l'article 3 de la Llei 17/2015, d'igualtat efectiva de dones i homes, els poders públics han de:",
+      "opciones": [
+        "Utilitzar el masculí genèric en tots els documents per garantir-ne la uniformitat",
+        "Aplicar el llenguatge no sexista només en la documentació adreçada a dones",
+        "Substituir sistemàticament les formes masculines per barres en tots els textos",
+        "Promoure un llenguatge respectuós en l'atenció personal i en tota la seva documentació, i formar el seu personal en l'ús respectuós i inclusiu de la llengua"
+      ],
+      "explicacion": "El principi vuitè de l'article 3 obliga a fer un ús no sexista del llenguatge, promoure un llenguatge respectuós en l'atenció personal i en tota la documentació escrita, gràfica i audiovisual, i formar el personal en l'ús inclusiu de la llengua."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-9676",
+      "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-9676#a3"
+    },
+    "cita": "deben promover un lenguaje respetuoso con las mujeres, con las minorías y con todas las personas en general en la atención personal y en toda su documentación escrita, gráfica y audiovisual. Los poderes públicos deben formar a su personal en el uso respetuoso e inclusivo de la lengua.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-014",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Usted redacta en catalán un certificado según los criterios de redacción de la Generalitat. Después de identificar a quien certifica (nombre y cargo), ¿cómo se introduce el contenido certificado?",
+      "opciones": [
+        "Con la fórmula «Diligència per fer constar que…»",
+        "Con los apartados «Exposo:» y «Sol·licito:»",
+        "Con el verbo «certifico», seguido de los hechos certificados, que suelen empezar con «Que…»",
+        "Con la salutación «Benvolgut senyor,»"
+      ],
+      "explicacion": "En el certificado, quien certifica se identifica y el texto se introduce con «certifico» (primera persona), seguido de los hechos, normalmente encabezados por «Que…». «Diligència per fer constar» es propio de la diligencia y «Exposo/Sol·licito», de la solicitud."
+    },
+    "ca": {
+      "enunciado": "Vostè redacta un certificat segons els criteris de redacció de la Generalitat. Després d'identificar qui certifica (nom i càrrec), com s'introdueix el contingut certificat?",
+      "opciones": [
+        "Amb la fórmula «Diligència per fer constar que…»",
+        "Amb els apartats «Exposo:» i «Sol·licito:»",
+        "Amb el verb «certifico», seguit dels fets certificats, que solen començar amb «Que…»",
+        "Amb la salutació «Benvolgut senyor,»"
+      ],
+      "explicacion": "En el certificat, qui certifica s'identifica i el text s'introdueix amb «certifico» (primera persona), seguit dels fets, normalment encapçalats per «Que…». «Diligència per fer constar» és propi de la diligència i «Exposo/Sol·licito», de la sol·licitud."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-015",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En un certificado redactado en catalán, ¿cuál de estas fórmulas de cierre es adecuada según los criterios de redacción de la Generalitat?",
+      "opciones": [
+        "«I per a que consti, firmo el present.»",
+        "«I, perquè consti, signo aquest certificat.»",
+        "«Sense altre particular, el saluda atentament.»",
+        "«Diligència per fer constar que s'ha lliurat el certificat.»"
+      ],
+      "explicacion": "La fórmula final recomendada es «I, perquè consti, signo aquest certificat», a veces completada con la finalidad. «Per a que» es incorrecto (es «perquè») y «firmo el present» es un calco; la despedida y la diligencia corresponden a otros documentos."
+    },
+    "ca": {
+      "enunciado": "En un certificat, quina d'aquestes fórmules de tancament és adequada segons els criteris de redacció de la Generalitat?",
+      "opciones": [
+        "«I per a que consti, firmo el present.»",
+        "«I, perquè consti, signo aquest certificat.»",
+        "«Sense altre particular, el saluda atentament.»",
+        "«Diligència per fer constar que s'ha lliurat el certificat.»"
+      ],
+      "explicacion": "La fórmula final recomanada és «I, perquè consti, signo aquest certificat», de vegades completada amb la finalitat. «Per a que» és incorrecte (és «perquè») i «firmo el present» és un calc; el comiat i la diligència corresponen a altres documents."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-016",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Usted debe dejar constancia en un expediente de que la persona interesada ha comparecido en la oficina y ha aportado un documento. ¿Qué documento administrativo es el adecuado?",
+      "opciones": [
+        "Una diligencia («Diligència per fer constar que…»)",
+        "Un certificado",
+        "Una citación",
+        "Una carta"
+      ],
+      "explicacion": "La diligencia sirve para dejar constancia en un expediente de un hecho o de un trámite, y se introduce con la fórmula «Diligència per fer constar que…». El certificado acredita datos ante terceros y la citación convoca a una persona."
+    },
+    "ca": {
+      "enunciado": "Vostè ha de deixar constància en un expedient que la persona interessada ha comparegut a l'oficina i ha aportat un document. Quin document administratiu és l'adequat?",
+      "opciones": [
+        "Una diligència («Diligència per fer constar que…»)",
+        "Un certificat",
+        "Una citació",
+        "Una carta"
+      ],
+      "explicacion": "La diligència serveix per deixar constància en un expedient d'un fet o d'un tràmit, i s'introdueix amb la fórmula «Diligència per fer constar que…». El certificat acredita dades davant de tercers i la citació convoca una persona."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-017",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Usted redacta una citación para que una persona interesada comparezca en la unidad. ¿Qué información es imprescindible?",
+      "opciones": [
+        "El motivo, el lugar, el día y la hora de la comparecencia y, si procede, la documentación que debe aportar",
+        "Solo el día, porque el resto se comunicará por teléfono",
+        "El texto íntegro de una resolución y los recursos que caben contra ella",
+        "Los hechos, las razones y la petición de la persona interesada"
+      ],
+      "explicacion": "La citación convoca a una persona para que se presente en un lugar, día y hora determinados por un motivo concreto; debe indicar estos datos y, si es necesario, la documentación que hay que llevar."
+    },
+    "ca": {
+      "enunciado": "Vostè redacta una citació perquè una persona interessada comparegui a la unitat. Quina informació és imprescindible?",
+      "opciones": [
+        "El motiu, el lloc, el dia i l'hora de la compareixença i, si escau, la documentació que ha d'aportar",
+        "Només el dia, perquè la resta es comunicarà per telèfon",
+        "El text íntegre d'una resolució i els recursos que s'hi poden interposar",
+        "Els fets, les raons i la petició de la persona interessada"
+      ],
+      "explicacion": "La citació convoca una persona perquè es presenti en un lloc, un dia i una hora determinats per un motiu concret; ha d'indicar aquestes dades i, si cal, la documentació que s'ha de portar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-018",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el modelo de solicitud de los criterios de redacción de la Generalitat, ¿dónde figura el órgano o la unidad a la que se dirige la solicitud?",
+      "opciones": [
+        "Al pie del documento, después de la firma",
+        "En la cabecera, antes de los datos de la persona solicitante",
+        "Dentro del apartado «Exposo»",
+        "No figura, porque lo determina el registro de entrada"
+      ],
+      "explicacion": "En la solicitud, tras los datos de la persona solicitante, la exposición («Exposo») y la petición («Sol·licito»), el lugar, la fecha y la firma, el destinatario figura al pie del documento."
+    },
+    "ca": {
+      "enunciado": "En el model de sol·licitud dels criteris de redacció de la Generalitat, on figura l'òrgan o la unitat a què s'adreça la sol·licitud?",
+      "opciones": [
+        "Al peu del document, després de la signatura",
+        "A la capçalera, abans de les dades de la persona sol·licitant",
+        "Dins de l'apartat «Exposo»",
+        "No hi figura, perquè el determina el registre d'entrada"
+      ],
+      "explicacion": "En la sol·licitud, després de les dades de la persona sol·licitant, l'exposició («Exposo») i la petició («Sol·licito»), el lloc, la data i la signatura, el destinatari figura al peu del document."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-019",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una carta administrativa redactada en catalán, ¿cómo se escribe correctamente la salutación?",
+      "opciones": [
+        "«Benvolguda senyora,» (seguida de coma)",
+        "«Benvolguda senyora:» (seguida de dos puntos)",
+        "«Estimada Sra.:»",
+        "«Distingida senyora;» (seguida de punto y coma)"
+      ],
+      "explicacion": "En catalán la salutación de la carta va seguida de coma («Benvolgut senyor,», «Benvolguda senyora,»); los dos puntos son la convención del castellano, y la abreviatura «Sra.» no se usa en la salutación."
+    },
+    "ca": {
+      "enunciado": "En una carta administrativa, com s'escriu correctament la salutació?",
+      "opciones": [
+        "«Benvolguda senyora,» (seguida de coma)",
+        "«Benvolguda senyora:» (seguida de dos punts)",
+        "«Estimada Sra.:»",
+        "«Distingida senyora;» (seguida de punt i coma)"
+      ],
+      "explicacion": "En català la salutació de la carta va seguida de coma («Benvolgut senyor,», «Benvolguda senyora,»); els dos punts són la convenció del castellà, i l'abreviatura «Sra.» no s'utilitza en la salutació."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-020",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según los criterios de redacción de la Generalitat, ¿qué tratamiento personal se recomienda, con carácter general, para dirigirse a la persona destinataria en los escritos administrativos en catalán?",
+      "opciones": [
+        "El tuteo",
+        "El tratamiento de «Vostra Il·lustríssima»",
+        "La tercera persona impersonal «el sotasignat»",
+        "El tratamiento de «vós»"
+      ],
+      "explicacion": "Los criterios de redacción de la Generalitat recomiendan el tratamiento de «vós» en los textos administrativos, por su carácter respetuoso y neutro; los tratamientos protocolarios y las fórmulas como «el sotasignat» se consideran innecesarios."
+    },
+    "ca": {
+      "enunciado": "Segons els criteris de redacció de la Generalitat, quin tractament personal es recomana, amb caràcter general, per adreçar-se a la persona destinatària en els escrits administratius?",
+      "opciones": [
+        "El tuteig",
+        "El tractament de «Vostra Il·lustríssima»",
+        "La tercera persona impersonal «el sotasignat»",
+        "El tractament de «vós»"
+      ],
+      "explicacion": "Els criteris de redacció de la Generalitat recomanen el tractament de «vós» en els textos administratius, pel seu caràcter respectuós i neutre; els tractaments protocol·laris i les fórmules com «el sotasignat» es consideren innecessaris."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-021",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según los criterios de redacción de la Generalitat, ¿cuál es la abreviatura correcta de «número» en un texto en catalán (por ejemplo, «expedient … 245/2026»)?",
+      "opciones": [
+        "«nº»",
+        "«nr.»",
+        "«núm.»",
+        "«nro.»"
+      ],
+      "explicacion": "En catalán la abreviatura de «número» es «núm.», con acento y punto. «Nº» es una forma castellana tradicional, y «nr.» y «nro.» no son abreviaturas catalanas."
+    },
+    "ca": {
+      "enunciado": "Segons els criteris de redacció de la Generalitat, quina és l'abreviatura correcta de «número» (per exemple, «expedient … 245/2026»)?",
+      "opciones": [
+        "«nº»",
+        "«nr.»",
+        "«núm.»",
+        "«nro.»"
+      ],
+      "explicacion": "En català l'abreviatura de «número» és «núm.», amb accent i punt. «Nº» és una forma castellana tradicional, i «nr.» i «nro.» no són abreviatures catalanes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-022",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de estas formas de escribir el lugar y la fecha al final de un documento en catalán es correcta?",
+      "opciones": [
+        "«Girona, 15 de octubre de 2026»",
+        "«Girona, Octubre 15, 2026»",
+        "«Girona, 15-Octubre-2026»",
+        "«Girona, 15 d'octubre de 2026»"
+      ],
+      "explicacion": "En catalán la fecha se escribe con el día, el mes en minúscula y el año, con apóstrofo ante los meses que empiezan por vocal («d'octubre», «d'abril»); «de octubre» no hace la elisión y las otras formas no siguen la convención catalana."
+    },
+    "ca": {
+      "enunciado": "Quina d'aquestes maneres d'escriure el lloc i la data al final d'un document és correcta?",
+      "opciones": [
+        "«Girona, 15 de octubre de 2026»",
+        "«Girona, Octubre 15, 2026»",
+        "«Girona, 15-Octubre-2026»",
+        "«Girona, 15 d'octubre de 2026»"
+      ],
+      "explicacion": "En català la data s'escriu amb el dia, el mes en minúscula i l'any, amb apòstrof davant dels mesos que comencen per vocal («d'octubre», «d'abril»); «de octubre» no fa l'elisió i les altres formes no segueixen la convenció catalana."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-023",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En un aviso interno usted escribe «Els funcionaris han de fitxar a l'entrada». Según los criterios de uso no sexista de la lengua, ¿cuál es la alternativa más adecuada?",
+      "opciones": [
+        "«Els funcionaris (homes i dones) han de fitxar a l'entrada»",
+        "«Els/les funcionaris/es han de fitxar a l'entrada»",
+        "«Els funcionaris i les seves dones han de fitxar a l'entrada»",
+        "«El personal funcionari ha de fitxar a l'entrada»"
+      ],
+      "explicacion": "Los criterios de uso no sexista recomiendan, siempre que sea posible, las formas genéricas o colectivas («el personal funcionari», «la ciutadania») en lugar del masculino genérico. Las barras se reservan para formularios y espacios reducidos, y los paréntesis aclaratorios no resuelven el problema."
+    },
+    "ca": {
+      "enunciado": "En un avís intern vostè escriu «Els funcionaris han de fitxar a l'entrada». Segons els criteris d'ús no sexista de la llengua, quina és l'alternativa més adequada?",
+      "opciones": [
+        "«Els funcionaris (homes i dones) han de fitxar a l'entrada»",
+        "«Els/les funcionaris/es han de fitxar a l'entrada»",
+        "«Els funcionaris i les seves dones han de fitxar a l'entrada»",
+        "«El personal funcionari ha de fitxar a l'entrada»"
+      ],
+      "explicacion": "Els criteris d'ús no sexista recomanen, sempre que sigui possible, les formes genèriques o col·lectives («el personal funcionari», «la ciutadania») en lloc del masculí genèric. Les barres es reserven per a formularis i espais reduïts, i els parèntesis aclaridors no resolen el problema."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t12-024",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una mujer ocupa el cargo de secretaria general de un departamento. ¿Cómo debe designarse el cargo en un documento en catalán?",
+      "opciones": [
+        "«el secretari general»",
+        "«la secretària general»",
+        "«la secretari general»",
+        "«la senyora secretari general»"
+      ],
+      "explicacion": "Los cargos ocupados por mujeres se designan en femenino («la secretària general», «la directora»); el uso del masculino para una mujer o las formas híbridas son contrarios a los criterios de uso no sexista de la lengua."
+    },
+    "ca": {
+      "enunciado": "Una dona ocupa el càrrec de secretària general d'un departament. Com s'ha de designar el càrrec en un document?",
+      "opciones": [
+        "«el secretari general»",
+        "«la secretària general»",
+        "«la secretari general»",
+        "«la senyora secretari general»"
+      ],
+      "explicacion": "Els càrrecs ocupats per dones es designen en femení («la secretària general», «la directora»); l'ús del masculí per a una dona o les formes híbrides són contraris als criteris d'ús no sexista de la llengua."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Criteris de redacció i models de documents administratius de la Generalitat de Catalunya (Direcció General de Política Lingüística) · Optimot",
+      "url": "https://llengua.gencat.cat/"
+    },
+    "origen": "ia"
+  }
+]

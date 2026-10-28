@@ -1,0 +1,71 @@
+// Un proyecto de Neon por producto (SESIONES.md). DATABASE_URL lo pone la integración de Neon en Vercel.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model Usuario {
+  id                 String      @id @default(cuid())
+  email              String      @unique
+  hash               String
+  idioma             String      @default("ca")
+  pais               String      @default("es")
+  creado             DateTime    @default(now())
+  stripeCustomerId   String?     @unique
+  suscripcionId      String?
+  suscripcionEstado  String?     // active, trialing, past_due, canceled, demo…
+  suscripcionHasta   DateTime?
+  cancelaAlFinal     Boolean     @default(false)
+  sincronizado       DateTime?
+  progresos          Progreso[]
+  simulacros         Simulacro[]
+}
+
+/// Progreso de un usuario en una oposición: tarjetas de repaso espaciado, respuestas y estadísticas (JSON).
+/// No se borra al cancelar: el historial es permanente y exportable (diferencial frente al líder).
+model Progreso {
+  usuarioId   String
+  oposicion   String
+  datos       Json
+  actualizado DateTime @updatedAt
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@id([usuarioId, oposicion])
+}
+
+/// Resultado de cada simulacro: alimenta el ranking anónimo (percentil) por oposición.
+model Simulacro {
+  id         String   @id @default(cuid())
+  usuarioId  String
+  oposicion  String
+  nota       Float
+  aciertos   Int
+  fallos     Int
+  blancos    Int
+  fecha      DateTime @default(now())
+  usuario    Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+
+  @@index([oposicion, nota])
+}
+
+/// Reporte de errata de una pregunta (botón en cada pregunta).
+model Errata {
+  id          String   @id @default(cuid())
+  oposicion   String
+  preguntaId  String
+  texto       String
+  email       String?
+  estado      String   @default("abierta")
+  fecha       DateTime @default(now())
+}
+
+/// Ajustes que la app crea sola (id del precio de Stripe, configuración del portal…).
+model Ajuste {
+  clave String @id
+  valor String
+}

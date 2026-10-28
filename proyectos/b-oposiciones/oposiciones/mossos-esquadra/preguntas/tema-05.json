@@ -1,0 +1,546 @@
+[
+  {
+    "id": "moss-t05-001",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En cuántas provincias se divide el territorio de Cataluña?",
+      "opciones": [
+        "Tres",
+        "Cuatro",
+        "Cinco",
+        "Ocho"
+      ],
+      "explicacion": "Cataluña tiene cuatro provincias: Barcelona, Girona, Lleida y Tarragona."
+    },
+    "ca": {
+      "enunciado": "En quantes províncies es divideix el territori de Catalunya?",
+      "opciones": [
+        "Tres",
+        "Quatre",
+        "Cinc",
+        "Vuit"
+      ],
+      "explicacion": "Catalunya té quatre províncies: Barcelona, Girona, Lleida i Tarragona."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.5 (i fe d'errades de setembre de 2026)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-002",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es la cima más alta de Cataluña?",
+      "opciones": [
+        "El Puigmal",
+        "El Canigó",
+        "El Carlit",
+        "La Pica d'Estats"
+      ],
+      "explicacion": "La Pica d'Estats, en el Pallars Sobirà, es el punto más alto de Cataluña. El Canigó y el Carlit están en la Cataluña del Norte (Francia)."
+    },
+    "ca": {
+      "enunciado": "Quin és el cim més alt de Catalunya?",
+      "opciones": [
+        "El Puigmal",
+        "El Canigó",
+        "El Carlit",
+        "La Pica d'Estats"
+      ],
+      "explicacion": "La Pica d'Estats, al Pallars Sobirà, és el punt més alt de Catalunya. El Canigó i el Carlit són a la Catalunya del Nord (França)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-003",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es el río más caudaloso que atraviesa Cataluña?",
+      "opciones": [
+        "El Ebro",
+        "El Llobregat",
+        "El Ter",
+        "El Segre"
+      ],
+      "explicacion": "El Ebro es el río más caudaloso de Cataluña y desemboca en el Mediterráneo formando el delta del Ebro. El Segre es su afluente."
+    },
+    "ca": {
+      "enunciado": "Quin és el riu més cabalós que travessa Catalunya?",
+      "opciones": [
+        "L'Ebre",
+        "El Llobregat",
+        "El Ter",
+        "El Segre"
+      ],
+      "explicacion": "L'Ebre és el riu més cabalós de Catalunya i desemboca a la Mediterrània formant el delta de l'Ebre. El Segre n'és afluent."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-004",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es el principal afluente del Ebro en territorio catalán?",
+      "opciones": [
+        "El Llobregat",
+        "El Francolí",
+        "El Segre",
+        "El Fluvià"
+      ],
+      "explicacion": "El Segre, que nace en la Cerdaña y recibe el Noguera Pallaresa y el Noguera Ribagorzana, es el gran afluente del Ebro. El Llobregat, el Francolí y el Fluvià desembocan directamente en el Mediterráneo."
+    },
+    "ca": {
+      "enunciado": "Quin és el principal afluent de l'Ebre en territori català?",
+      "opciones": [
+        "El Llobregat",
+        "El Francolí",
+        "El Segre",
+        "El Fluvià"
+      ],
+      "explicacion": "El Segre, que neix a la Cerdanya i rep la Noguera Pallaresa i la Noguera Ribagorçana, és el gran afluent de l'Ebre. El Llobregat, el Francolí i el Fluvià desemboquen directament a la Mediterrània."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-005",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué río que nace en Arán vierte sus aguas al océano Atlántico?",
+      "opciones": [
+        "El Noguera Pallaresa",
+        "El Garona",
+        "El Segre",
+        "El Valira"
+      ],
+      "explicacion": "El Garona nace en el Valle de Arán y desemboca en el Atlántico, a través de Francia. Es el único río importante de Cataluña de la vertiente atlántica."
+    },
+    "ca": {
+      "enunciado": "Quin riu que neix a l'Aran aboca les aigües a l'oceà Atlàntic?",
+      "opciones": [
+        "La Noguera Pallaresa",
+        "La Garona",
+        "El Segre",
+        "La Valira"
+      ],
+      "explicacion": "La Garona neix a la Vall d'Aran i desemboca a l'Atlàntic, a través de França. És l'únic riu important de Catalunya del vessant atlàntic."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-006",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Entre qué dos comarcas se reparte el delta del Ebro?",
+      "opciones": [
+        "El Baix Ebre y el Montsià",
+        "La Ribera d'Ebre y la Terra Alta",
+        "El Baix Camp y el Priorat",
+        "El Montsià y la Terra Alta"
+      ],
+      "explicacion": "El delta del Ebro se extiende por el Baix Ebre (margen izquierdo) y el Montsià (margen derecho). La Ribera d'Ebre y la Terra Alta son comarcas interiores."
+    },
+    "ca": {
+      "enunciado": "Entre quines dues comarques es reparteix el delta de l'Ebre?",
+      "opciones": [
+        "El Baix Ebre i el Montsià",
+        "La Ribera d'Ebre i la Terra Alta",
+        "El Baix Camp i el Priorat",
+        "El Montsià i la Terra Alta"
+      ],
+      "explicacion": "El delta de l'Ebre s'estén pel Baix Ebre (marge esquerre) i el Montsià (marge dret). La Ribera d'Ebre i la Terra Alta són comarques interiors."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-007",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿A qué unidad del relieve catalán pertenecen el Montseny y Montserrat?",
+      "opciones": [
+        "A la Serralada Litoral",
+        "Al Prepirineo",
+        "A la Depresión Central",
+        "A la Serralada Prelitoral"
+      ],
+      "explicacion": "El Montseny, Montserrat y Sant Llorenç del Munt forman parte de la Serralada Prelitoral, dentro del Sistema Mediterráneo. La Serralada Litoral corre más cerca de la costa (Collserola, Garraf)."
+    },
+    "ca": {
+      "enunciado": "A quina unitat del relleu català pertanyen el Montseny i Montserrat?",
+      "opciones": [
+        "A la Serralada Litoral",
+        "Al Prepirineu",
+        "A la Depressió Central",
+        "A la Serralada Prelitoral"
+      ],
+      "explicacion": "El Montseny, Montserrat i Sant Llorenç del Munt formen part de la Serralada Prelitoral, dins el Sistema Mediterrani. La Serralada Litoral corre més a prop de la costa (Collserola, el Garraf)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-008",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuáles son las tres grandes unidades del relieve de Cataluña?",
+      "opciones": [
+        "La Meseta, el Sistema Ibérico y los Pirineos",
+        "La Costa Brava, la Costa Daurada y el Pirineo",
+        "Los Pirineos, la Depresión Central y el Sistema Mediterráneo",
+        "Las Llanuras, los Valles y las Sierras Costeras"
+      ],
+      "explicacion": "El relieve catalán se organiza en tres grandes unidades: los Pirineos (con el Prepirineo), la Depresión Central y el Sistema Mediterráneo (Serralada Litoral, Depresión Prelitoral y Serralada Prelitoral)."
+    },
+    "ca": {
+      "enunciado": "Quines són les tres grans unitats del relleu de Catalunya?",
+      "opciones": [
+        "La Meseta, el Sistema Ibèric i els Pirineus",
+        "La Costa Brava, la Costa Daurada i el Pirineu",
+        "Els Pirineus, la Depressió Central i el Sistema Mediterrani",
+        "Les Planes, les Valls i les Serres Costaneres"
+      ],
+      "explicacion": "El relleu català s'organitza en tres grans unitats: els Pirineus (amb el Prepirineu), la Depressió Central i el Sistema Mediterrani (Serralada Litoral, Depressió Prelitoral i Serralada Prelitoral)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-009",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la capital de la comarca de Osona?",
+      "opciones": [
+        "Vic",
+        "Manlleu",
+        "Ripoll",
+        "Manresa"
+      ],
+      "explicacion": "Vic es la capital de Osona. Ripoll es la capital del Ripollès y Manresa, la del Bages; Manlleu es otro municipio de Osona."
+    },
+    "ca": {
+      "enunciado": "Quina és la capital de la comarca d'Osona?",
+      "opciones": [
+        "Vic",
+        "Manlleu",
+        "Ripoll",
+        "Manresa"
+      ],
+      "explicacion": "Vic és la capital d'Osona. Ripoll és la capital del Ripollès i Manresa, la del Bages; Manlleu és un altre municipi d'Osona."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-010",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la capital de la comarca de la Garrotxa, conocida por su zona volcánica?",
+      "opciones": [
+        "Banyoles",
+        "Olot",
+        "Figueres",
+        "Besalú"
+      ],
+      "explicacion": "Olot es la capital de la Garrotxa, comarca donde se encuentra la Zona Volcánica de la Garrotxa. Banyoles es la capital del Pla de l'Estany y Figueres, la del Alt Empordà."
+    },
+    "ca": {
+      "enunciado": "Quina és la capital de la comarca de la Garrotxa, coneguda per la seva zona volcànica?",
+      "opciones": [
+        "Banyoles",
+        "Olot",
+        "Figueres",
+        "Besalú"
+      ],
+      "explicacion": "Olot és la capital de la Garrotxa, comarca on hi ha la Zona Volcànica de la Garrotxa. Banyoles és la capital del Pla de l'Estany i Figueres, la de l'Alt Empordà."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-011",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es la capital de la comarca del Pallars Jussà?",
+      "opciones": [
+        "Sort",
+        "La Seu d'Urgell",
+        "El Pont de Suert",
+        "Tremp"
+      ],
+      "explicacion": "Tremp es la capital del Pallars Jussà. Sort es la del Pallars Sobirà, la Seu d'Urgell la del Alt Urgell y el Pont de Suert la de la Alta Ribagorça."
+    },
+    "ca": {
+      "enunciado": "Quina és la capital de la comarca del Pallars Jussà?",
+      "opciones": [
+        "Sort",
+        "La Seu d'Urgell",
+        "El Pont de Suert",
+        "Tremp"
+      ],
+      "explicacion": "Tremp és la capital del Pallars Jussà. Sort és la del Pallars Sobirà, la Seu d'Urgell la de l'Alt Urgell i el Pont de Suert la de l'Alta Ribagorça."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-012",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué comarca catalana tiene la capitalidad compartida entre Sabadell y Terrassa?",
+      "opciones": [
+        "El Vallès Oriental",
+        "El Baix Llobregat",
+        "El Vallès Occidental",
+        "El Maresme"
+      ],
+      "explicacion": "El Vallès Occidental tiene dos cocapitales, Sabadell y Terrassa. La capital del Vallès Oriental es Granollers y la del Maresme, Mataró."
+    },
+    "ca": {
+      "enunciado": "Quina comarca catalana té la capitalitat compartida entre Sabadell i Terrassa?",
+      "opciones": [
+        "El Vallès Oriental",
+        "El Baix Llobregat",
+        "El Vallès Occidental",
+        "El Maresme"
+      ],
+      "explicacion": "El Vallès Occidental té dues cocapitals, Sabadell i Terrassa. La capital del Vallès Oriental és Granollers i la del Maresme, Mataró."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-013",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la capital de Arán?",
+      "opciones": [
+        "Vielha",
+        "Bossòst",
+        "Les",
+        "Salardú"
+      ],
+      "explicacion": "Vielha (municipio de Vielha e Mijaran) es la capital de Arán. Bossòst, Les y Salardú son otras poblaciones aranesas."
+    },
+    "ca": {
+      "enunciado": "Quina és la capital de l'Aran?",
+      "opciones": [
+        "Vielha",
+        "Bossòst",
+        "Les",
+        "Salardú"
+      ],
+      "explicacion": "Vielha (municipi de Vielha e Mijaran) és la capital de l'Aran. Bossòst, Les i Salardú són altres poblacions araneses."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-014",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el lago natural más grande de Cataluña?",
+      "opciones": [
+        "El estany de Sant Maurici",
+        "El estany de Montcortès",
+        "El lago de Puigcerdà",
+        "El estany de Banyoles"
+      ],
+      "explicacion": "El estany de Banyoles, en el Pla de l'Estany, es el lago natural más grande de Cataluña. El de Sant Maurici es un lago de alta montaña mucho más pequeño."
+    },
+    "ca": {
+      "enunciado": "Quin és el llac natural més gran de Catalunya?",
+      "opciones": [
+        "L'estany de Sant Maurici",
+        "L'estany de Montcortès",
+        "L'estany de Puigcerdà",
+        "L'estany de Banyoles"
+      ],
+      "explicacion": "L'estany de Banyoles, al Pla de l'Estany, és el llac natural més gran de Catalunya. El de Sant Maurici és un estany d'alta muntanya molt més petit."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-015",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el único parque nacional de Cataluña?",
+      "opciones": [
+        "El Parque Natural del Delta del Ebro",
+        "El Parque Nacional de Aigüestortes i Estany de Sant Maurici",
+        "El Parque Natural del Montseny",
+        "El Parque Natural del Cadí-Moixeró"
+      ],
+      "explicacion": "Aigüestortes i Estany de Sant Maurici, en el Pirineo de Lleida, es el único parque nacional de Cataluña; los demás espacios citados son parques naturales."
+    },
+    "ca": {
+      "enunciado": "Quin és l'únic parc nacional de Catalunya?",
+      "opciones": [
+        "El Parc Natural del Delta de l'Ebre",
+        "El Parc Nacional d'Aigüestortes i Estany de Sant Maurici",
+        "El Parc Natural del Montseny",
+        "El Parc Natural del Cadí-Moixeró"
+      ],
+      "explicacion": "Aigüestortes i Estany de Sant Maurici, al Pirineu de Lleida, és l'únic parc nacional de Catalunya; els altres espais citats són parcs naturals."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.5 (i fe d'errades de setembre de 2026)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-016",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué cabo catalán es el punto más oriental de la península ibérica?",
+      "opciones": [
+        "El cabo de Salou",
+        "El cabo de Begur",
+        "El cabo de Creus",
+        "El cabo de Tortosa"
+      ],
+      "explicacion": "El cabo de Creus, en el Alt Empordà, es el punto más oriental de la península ibérica."
+    },
+    "ca": {
+      "enunciado": "Quin cap català és el punt més oriental de la península Ibèrica?",
+      "opciones": [
+        "El cap de Salou",
+        "El cap de Begur",
+        "El cap de Creus",
+        "El cap de Tortosa"
+      ],
+      "explicacion": "El cap de Creus, a l'Alt Empordà, és el punt més oriental de la península Ibèrica."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t05-017",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Además de con Francia, ¿con qué Estado limita Cataluña por el norte?",
+      "opciones": [
+        "Andorra",
+        "Mónaco",
+        "Suiza",
+        "Portugal"
+      ],
+      "explicacion": "Cataluña limita al norte con Francia y Andorra; al oeste, con Aragón, y al sur, con la Comunidad Valenciana."
+    },
+    "ca": {
+      "enunciado": "A més de França, amb quin estat limita Catalunya pel nord?",
+      "opciones": [
+        "Andorra",
+        "Mònaco",
+        "Suïssa",
+        "Portugal"
+      ],
+      "explicacion": "Catalunya limita al nord amb França i Andorra; a l'oest, amb l'Aragó, i al sud, amb el País Valencià (Comunitat Valenciana)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.5 (i fe d'errades de setembre de 2026)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  }
+]

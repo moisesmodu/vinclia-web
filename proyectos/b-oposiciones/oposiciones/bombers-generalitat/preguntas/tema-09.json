@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t09-001",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "«La presión ejercida sobre un fluido incompresible encerrado en un recipiente se transmite con igual intensidad en todas las direcciones.» Este enunciado corresponde al principio de:",
+      "opciones": [
+        "Pascal",
+        "Arquímedes",
+        "Bernoulli",
+        "Torricelli"
+      ],
+      "explicacion": "Es el principio de Pascal, base de los equipos hidráulicos (gatos, separadores y cizallas de rescate). El de Arquímedes se refiere al empuje sobre los cuerpos sumergidos."
+    },
+    "ca": {
+      "enunciado": "«La pressió exercida sobre un fluid incompressible tancat en un recipient es transmet amb igual intensitat en totes les direccions.» Aquest enunciat correspon al principi de:",
+      "opciones": [
+        "Pascal",
+        "Arquimedes",
+        "Bernoulli",
+        "Torricelli"
+      ],
+      "explicacion": "És el principi de Pascal, base dels equips hidràulics (gats, separadors i cisalles de rescat). El d'Arquimedes es refereix a l'empenyiment sobre els cossos submergits."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-002",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el principio de Arquímedes, un cuerpo sumergido en un fluido experimenta un empuje vertical hacia arriba igual a:",
+      "opciones": [
+        "Su propio peso",
+        "El peso del volumen de fluido que desaloja",
+        "La presión atmosférica multiplicada por su superficie",
+        "La mitad del peso del cuerpo"
+      ],
+      "explicacion": "El empuje es igual al peso del volumen de fluido desalojado. Si el empuje es mayor que el peso del cuerpo, este flota; si es menor, se hunde."
+    },
+    "ca": {
+      "enunciado": "Segons el principi d'Arquimedes, un cos submergit en un fluid experimenta un empenyiment vertical cap amunt igual a:",
+      "opciones": [
+        "El seu propi pes",
+        "El pes del volum de fluid que desallotja",
+        "La pressió atmosfèrica multiplicada per la seva superfície",
+        "La meitat del pes del cos"
+      ],
+      "explicacion": "L'empenyiment és igual al pes del volum de fluid desallotjat. Si l'empenyiment és més gran que el pes del cos, aquest sura; si és més petit, s'enfonsa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-003",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En un líquido en reposo, la presión hidrostática en un punto depende de:",
+      "opciones": [
+        "La forma y el volumen total del recipiente",
+        "La superficie libre del líquido",
+        "La profundidad del punto y la densidad del líquido",
+        "Únicamente de la presión atmosférica"
+      ],
+      "explicacion": "La presión hidrostática es p = ρ·g·h: depende de la densidad del líquido y de la profundidad (altura de la columna de líquido), pero no de la forma ni del volumen del recipiente (paradoja hidrostática)."
+    },
+    "ca": {
+      "enunciado": "En un líquid en repòs, la pressió hidrostàtica en un punt depèn de:",
+      "opciones": [
+        "La forma i el volum total del recipient",
+        "La superfície lliure del líquid",
+        "La profunditat del punt i la densitat del líquid",
+        "Únicament de la pressió atmosfèrica"
+      ],
+      "explicacion": "La pressió hidrostàtica és p = ρ·g·h: depèn de la densitat del líquid i de la profunditat (altura de la columna de líquid), però no de la forma ni del volum del recipient (paradoxa hidrostàtica)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-004",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Por una conducción circula un caudal constante de agua. Si se reduce la sección de paso, la velocidad del agua:",
+      "opciones": [
+        "Disminuye en la misma proporción",
+        "Se mantiene igual",
+        "Se anula",
+        "Aumenta"
+      ],
+      "explicacion": "Por la ecuación de continuidad, el caudal es Q = S·v; si el caudal se mantiene y la sección S disminuye, la velocidad v aumenta. Por eso la boquilla de una lanza acelera el agua."
+    },
+    "ca": {
+      "enunciado": "Per una conducció circula un cabal constant d'aigua. Si es redueix la secció de pas, la velocitat de l'aigua:",
+      "opciones": [
+        "Disminueix en la mateixa proporció",
+        "Es manté igual",
+        "S'anul·la",
+        "Augmenta"
+      ],
+      "explicacion": "Per l'equació de continuïtat, el cabal és Q = S·v; si el cabal es manté i la secció S disminueix, la velocitat v augmenta. Per això el broquet d'una llança accelera l'aigua."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-005",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿A cuántos pascales equivale 1 bar?",
+      "opciones": [
+        "100 000 Pa",
+        "1 000 Pa",
+        "10 000 Pa",
+        "1 000 000 Pa"
+      ],
+      "explicacion": "El bar se define como 10⁵ Pa, es decir, 100 000 pascales. El pascal (N/m²) es la unidad de presión del Sistema Internacional."
+    },
+    "ca": {
+      "enunciado": "A quants pascals equival 1 bar?",
+      "opciones": [
+        "100 000 Pa",
+        "1 000 Pa",
+        "10 000 Pa",
+        "1 000 000 Pa"
+      ],
+      "explicacion": "El bar es defineix com a 10⁵ Pa, és a dir, 100 000 pascals. El pascal (N/m²) és la unitat de pressió del Sistema Internacional."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-006",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué forma de transmisión del calor no necesita un medio material y se produce mediante ondas electromagnéticas?",
+      "opciones": [
+        "La conducción",
+        "La radiación",
+        "La convección",
+        "La difusión"
+      ],
+      "explicacion": "La radiación transmite el calor mediante ondas electromagnéticas y puede producirse en el vacío. La conducción requiere contacto entre materiales y la convección, el movimiento de un fluido."
+    },
+    "ca": {
+      "enunciado": "Quina forma de transmissió de la calor no necessita un medi material i es produeix mitjançant ones electromagnètiques?",
+      "opciones": [
+        "La conducció",
+        "La radiació",
+        "La convecció",
+        "La difusió"
+      ],
+      "explicacion": "La radiació transmet la calor mitjançant ones electromagnètiques i es pot produir en el buit. La conducció requereix contacte entre materials i la convecció, el moviment d'un fluid."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-007",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La subida del humo y de los gases calientes hacia el techo de un recinto incendiado es un ejemplo de transmisión del calor por:",
+      "opciones": [
+        "Conducción",
+        "Radiación",
+        "Convección",
+        "Inducción"
+      ],
+      "explicacion": "Es convección: el fluido caliente, menos denso, asciende y transporta el calor. La conducción se produce a través de los materiales en contacto y la radiación, por ondas electromagnéticas."
+    },
+    "ca": {
+      "enunciado": "La pujada del fum i dels gasos calents cap al sostre d'un recinte incendiat és un exemple de transmissió de la calor per:",
+      "opciones": [
+        "Conducció",
+        "Radiació",
+        "Convecció",
+        "Inducció"
+      ],
+      "explicacion": "És convecció: el fluid calent, menys dens, puja i transporta la calor. La conducció es produeix a través dels materials en contacte i la radiació, per ones electromagnètiques."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-008",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "A temperatura constante, una masa de gas que ocupa 10 litros a 1 bar de presión absoluta se comprime hasta 5 bar absolutos. Considerándolo gas ideal, ¿qué volumen ocupará?",
+      "opciones": [
+        "50 litros",
+        "5 litros",
+        "0,5 litros",
+        "2 litros"
+      ],
+      "explicacion": "Por la ley de Boyle-Mariotte, a temperatura constante P₁·V₁ = P₂·V₂: 1 × 10 = 5 × V₂, de modo que V₂ = 2 litros. Presión y volumen son inversamente proporcionales."
+    },
+    "ca": {
+      "enunciado": "A temperatura constant, una massa de gas que ocupa 10 litres a 1 bar de pressió absoluta es comprimeix fins a 5 bar absoluts. Considerant-lo un gas ideal, quin volum ocuparà?",
+      "opciones": [
+        "50 litres",
+        "5 litres",
+        "0,5 litres",
+        "2 litres"
+      ],
+      "explicacion": "Per la llei de Boyle-Mariotte, a temperatura constant P₁·V₁ = P₂·V₂: 1 × 10 = 5 × V₂, de manera que V₂ = 2 litres. La pressió i el volum són inversament proporcionals."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-009",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una palanca, una carga de 600 N está situada a 0,5 m del punto de apoyo. ¿Qué fuerza hay que aplicar al otro lado, a 1,5 m del punto de apoyo, para equilibrarla?",
+      "opciones": [
+        "200 N",
+        "300 N",
+        "900 N",
+        "1 800 N"
+      ],
+      "explicacion": "Por la ley de la palanca, F·bF = R·bR: F × 1,5 = 600 × 0,5, luego F = 300 / 1,5 = 200 N. Cuanto mayor es el brazo de la fuerza, menor es la fuerza necesaria."
+    },
+    "ca": {
+      "enunciado": "En una palanca, una càrrega de 600 N és a 0,5 m del punt de suport. Quina força cal aplicar a l'altre costat, a 1,5 m del punt de suport, per equilibrar-la?",
+      "opciones": [
+        "200 N",
+        "300 N",
+        "900 N",
+        "1 800 N"
+      ],
+      "explicacion": "Per la llei de la palanca, F·bF = R·bR: F × 1,5 = 600 × 0,5, per tant F = 300 / 1,5 = 200 N. Com més gran és el braç de la força, menor és la força necessària."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t09-010",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una polea fija simple, sin tener en cuenta el rozamiento:",
+      "opciones": [
+        "Reduce a la mitad la fuerza necesaria para elevar la carga",
+        "No reduce la fuerza necesaria; solo cambia la dirección en que se aplica",
+        "Duplica la fuerza necesaria para elevar la carga",
+        "Reduce la fuerza necesaria a un tercio"
+      ],
+      "explicacion": "En la polea fija la fuerza aplicada es igual a la carga: solo permite cambiar la dirección de la fuerza. Para reducir la fuerza hay que combinar poleas móviles (polipastos)."
+    },
+    "ca": {
+      "enunciado": "Una politja fixa simple, sense tenir en compte el fregament:",
+      "opciones": [
+        "Redueix a la meitat la força necessària per elevar la càrrega",
+        "No redueix la força necessària; només canvia la direcció en què s'aplica",
+        "Duplica la força necessària per elevar la càrrega",
+        "Redueix la força necessària a un terç"
+      ],
+      "explicacion": "En la politja fixa la força aplicada és igual a la càrrega: només permet canviar la direcció de la força. Per reduir la força cal combinar politges mòbils (polispasts)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

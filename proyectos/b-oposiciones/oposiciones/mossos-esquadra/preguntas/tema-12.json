@@ -1,0 +1,597 @@
+[
+  {
+    "id": "moss-t12-001",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 64.1 de la Constitución, ¿quién refrenda la propuesta y el nombramiento del Presidente del Gobierno?",
+      "opciones": [
+        "El Ministro de la Presidencia",
+        "El Presidente del Congreso",
+        "El Presidente del Senado",
+        "El Presidente del Gobierno saliente"
+      ],
+      "explicacion": "Por regla general los actos del Rey los refrenda el Presidente del Gobierno o los Ministros competentes, pero la propuesta y el nombramiento del Presidente del Gobierno y la disolución del artículo 99 los refrenda el Presidente del Congreso (art. 64.1 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 64.1 de la Constitució, qui refrenda la proposta i el nomenament del president del Govern?",
+      "opciones": [
+        "El ministre de la Presidència",
+        "El president del Congrés",
+        "El president del Senat",
+        "El president del Govern sortint"
+      ],
+      "explicacion": "Per regla general els actes del Rei els refrenda el president del Govern o els ministres competents, però la proposta i el nomenament del president del Govern i la dissolució de l'article 99 els refrenda el president del Congrés (art. 64.1 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "64.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a64"
+    },
+    "cita": "La propuesta y el nombramiento del Presidente del Gobierno, y la disolución prevista en el artículo 99, serán refrendados por el Presidente del Congreso",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-002",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 57.2 de la Constitución, el heredero de la Corona tiene la dignidad de:",
+      "opciones": [
+        "Príncipe de Asturias",
+        "Príncipe de España",
+        "Infante de España",
+        "Duque de Madrid"
+      ],
+      "explicacion": "El artículo 57.2 CE atribuye al Príncipe heredero la dignidad de Príncipe de Asturias, además de los demás títulos vinculados tradicionalmente al sucesor (como los de Príncipe de Girona o de Viana). Ni «Príncipe de España» ni «Infante de España» ni «Duque de Madrid» son la dignidad que la Constitución reserva al heredero."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 57.2 de la Constitució, l'hereu de la Corona té la dignitat de:",
+      "opciones": [
+        "Príncep d'Astúries",
+        "Príncep d'Espanya",
+        "Infant d'Espanya",
+        "Duc de Madrid"
+      ],
+      "explicacion": "L'article 57.2 CE atribueix al príncep hereu la dignitat de Príncep d'Astúries, a més dels altres títols vinculats tradicionalment al successor (com els de Príncep de Girona o de Viana). Ni «Príncep d'Espanya» ni «Infant d'Espanya» ni «Duc de Madrid» no són la dignitat que la Constitució reserva a l'hereu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "57.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a57"
+    },
+    "cita": "El Príncipe heredero, desde su nacimiento o desde que se produzca el hecho que origine el llamamiento, tendrá la dignidad de Príncipe de Asturias",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-003",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 59.3 de la Constitución, si no hay ninguna persona a quien corresponda la Regencia, esta será nombrada por las Cortes Generales y se compondrá de:",
+      "opciones": [
+        "Dos o cuatro personas",
+        "Una sola persona en todo caso",
+        "Tres personas en todo caso",
+        "Una, tres o cinco personas"
+      ],
+      "explicacion": "El artículo 59.3 CE prevé que la Regencia nombrada por las Cortes Generales se componga de una, tres o cinco personas; siempre un número impar."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 59.3 de la Constitució, si no hi ha cap persona a qui correspongui la Regència, aquesta serà nomenada per les Corts Generals i es compondrà de:",
+      "opciones": [
+        "Dues o quatre persones",
+        "Una sola persona en tot cas",
+        "Tres persones en tot cas",
+        "Una, tres o cinc persones"
+      ],
+      "explicacion": "L'article 59.3 CE preveu que la Regència nomenada per les Corts Generals es compongui d'una, tres o cinc persones; sempre un nombre senar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "59.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a59"
+    },
+    "cita": "Si no hubiere ninguna persona a quien corresponda la Regencia, ésta será nombrada por las Cortes Generales, y se compondrá de una, tres o cinco personas",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-004",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En relación con el derecho de gracia que corresponde al Rey, el artículo 62 de la Constitución establece que:",
+      "opciones": [
+        "Se ejerce a propuesta del Consejo General del Poder Judicial",
+        "Incluye la concesión de amnistías por decreto",
+        "Se ejerce con arreglo a la ley, que no podrá autorizar indultos generales",
+        "Solo puede ejercerse previa autorización del Congreso"
+      ],
+      "explicacion": "El artículo 62.i) CE atribuye al Rey ejercer el derecho de gracia con arreglo a la ley, que no podrá autorizar indultos generales."
+    },
+    "ca": {
+      "enunciado": "Pel que fa al dret de gràcia que correspon al Rei, l'article 62 de la Constitució estableix que:",
+      "opciones": [
+        "S'exerceix a proposta del Consell General del Poder Judicial",
+        "Inclou la concessió d'amnisties per decret",
+        "S'exerceix d'acord amb la llei, que no pot autoritzar indults generals",
+        "Només es pot exercir amb autorització prèvia del Congrés"
+      ],
+      "explicacion": "L'article 62.i) CE atribueix al Rei exercir el dret de gràcia d'acord amb la llei, que no pot autoritzar indults generals."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "62",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a62"
+    },
+    "cita": "Ejercer el derecho de gracia con arreglo a la ley, que no podrá autorizar indultos generales",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-005",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 68.1 de la Constitución, el Congreso de los Diputados se compone de:",
+      "opciones": [
+        "Un mínimo de 250 y un máximo de 350 Diputados",
+        "Un mínimo de 300 y un máximo de 400 Diputados",
+        "Exactamente 350 Diputados",
+        "Un mínimo de 350 y un máximo de 450 Diputados"
+      ],
+      "explicacion": "El artículo 68.1 CE fija una horquilla de 300 a 400 Diputados; la cifra de 350 la establece la ley electoral, no la Constitución."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 68.1 de la Constitució, el Congrés dels Diputats es compon de:",
+      "opciones": [
+        "Un mínim de 250 i un màxim de 350 diputats",
+        "Un mínim de 300 i un màxim de 400 diputats",
+        "Exactament 350 diputats",
+        "Un mínim de 350 i un màxim de 450 diputats"
+      ],
+      "explicacion": "L'article 68.1 CE fixa una forquilla de 300 a 400 diputats; la xifra de 350 l'estableix la llei electoral, no la Constitució."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "68.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a68"
+    },
+    "cita": "El Congreso se compone de un mínimo de 300 y un máximo de 400 Diputados",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-006",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 69.2 de la Constitución, ¿cuántos Senadores se eligen en cada provincia por sufragio universal?",
+      "opciones": [
+        "Dos",
+        "Tres",
+        "Cinco",
+        "Cuatro"
+      ],
+      "explicacion": "El artículo 69.2 CE establece cuatro Senadores por provincia. Tres corresponden a cada isla mayor y dos a Ceuta y a Melilla (art. 69.3 y 69.4 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 69.2 de la Constitució, quants senadors s'elegeixen a cada província per sufragi universal?",
+      "opciones": [
+        "Dos",
+        "Tres",
+        "Cinc",
+        "Quatre"
+      ],
+      "explicacion": "L'article 69.2 CE estableix quatre senadors per província. En corresponen tres a cada illa major i dos a Ceuta i a Melilla (art. 69.3 i 69.4 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "69.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a69"
+    },
+    "cita": "En cada provincia se elegirán cuatro Senadores por sufragio universal, libre, igual, directo y secreto",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-007",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 69.5 de la Constitución, las Comunidades Autónomas designan:",
+      "opciones": [
+        "Un Senador y otro más por cada millón de habitantes de su territorio",
+        "Dos Senadores y otro más por cada millón de habitantes",
+        "Un Senador por cada medio millón de habitantes",
+        "Un Senador por cada provincia de su territorio"
+      ],
+      "explicacion": "El artículo 69.5 CE dispone que cada Comunidad Autónoma designe un Senador y otro más por cada millón de habitantes; la designación corresponde a la Asamblea legislativa o, en su defecto, al órgano colegiado superior."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 69.5 de la Constitució, les comunitats autònomes designen:",
+      "opciones": [
+        "Un senador i un altre més per cada milió d'habitants del seu territori",
+        "Dos senadors i un altre més per cada milió d'habitants",
+        "Un senador per cada mig milió d'habitants",
+        "Un senador per cada província del seu territori"
+      ],
+      "explicacion": "L'article 69.5 CE disposa que cada comunitat autònoma designi un senador i un altre més per cada milió d'habitants; la designació correspon a l'assemblea legislativa o, si no n'hi ha, a l'òrgan col·legiat superior."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "69.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a69"
+    },
+    "cita": "Las Comunidades Autónomas designarán además un Senador y otro más por cada millón de habitantes de su respectivo territorio",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-008",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 71 de la Constitución, en las causas contra Diputados y Senadores es competente:",
+      "opciones": [
+        "La Audiencia Nacional",
+        "El Tribunal Superior de Justicia de su circunscripción",
+        "La Sala de lo Penal del Tribunal Supremo",
+        "El Tribunal Constitucional"
+      ],
+      "explicacion": "El artículo 71.3 CE atribuye a la Sala de lo Penal del Tribunal Supremo las causas contra Diputados y Senadores, que además gozan de inviolabilidad e inmunidad (art. 71.1 y 71.2 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 71 de la Constitució, en les causes contra diputats i senadors és competent:",
+      "opciones": [
+        "L'Audiència Nacional",
+        "El Tribunal Superior de Justícia de la seva circumscripció",
+        "La Sala Penal del Tribunal Suprem",
+        "El Tribunal Constitucional"
+      ],
+      "explicacion": "L'article 71.3 CE atribueix a la Sala Penal del Tribunal Suprem les causes contra diputats i senadors, que a més gaudeixen d'inviolabilitat i d'immunitat (art. 71.1 i 71.2 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "71.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a71"
+    },
+    "cita": "En las causas contra Diputados y Senadores será competente la Sala de lo Penal del Tribunal Supremo",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-009",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 73.1 de la Constitución, los dos períodos ordinarios de sesiones de las Cámaras son:",
+      "opciones": [
+        "De enero a junio y de septiembre a diciembre",
+        "De septiembre a diciembre y de febrero a junio",
+        "De octubre a diciembre y de febrero a julio",
+        "De septiembre a enero y de marzo a junio"
+      ],
+      "explicacion": "El artículo 73.1 CE fija dos períodos ordinarios: de septiembre a diciembre y de febrero a junio. Fuera de ellos caben sesiones extraordinarias (art. 73.2 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 73.1 de la Constitució, els dos períodes ordinaris de sessions de les cambres són:",
+      "opciones": [
+        "De gener a juny i de setembre a desembre",
+        "De setembre a desembre i de febrer a juny",
+        "D'octubre a desembre i de febrer a juliol",
+        "De setembre a gener i de març a juny"
+      ],
+      "explicacion": "L'article 73.1 CE fixa dos períodes ordinaris: de setembre a desembre i de febrer a juny. Fora d'aquests hi pot haver sessions extraordinàries (art. 73.2 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "73.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a73"
+    },
+    "cita": "Las Cámaras se reunirán anualmente en dos períodos ordinarios de sesiones: el primero, de septiembre a diciembre, y el segundo, de febrero a junio",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-010",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 75 de la Constitución, ¿cuál de estas materias NO puede delegarse en las Comisiones Legislativas Permanentes?",
+      "opciones": [
+        "Los Presupuestos Generales del Estado",
+        "Una ley ordinaria de modificación del Código Civil",
+        "Una ley ordinaria sobre carreteras del Estado",
+        "Una ley ordinaria sobre patrimonio cultural"
+      ],
+      "explicacion": "El artículo 75.3 CE excluye de la delegación en las Comisiones la reforma constitucional, las cuestiones internacionales, las leyes orgánicas y de bases y los Presupuestos Generales del Estado. Las leyes ordinarias sí pueden delegarse (art. 75.2 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 75 de la Constitució, quina d'aquestes matèries NO es pot delegar en les comissions legislatives permanents?",
+      "opciones": [
+        "Els pressupostos generals de l'Estat",
+        "Una llei ordinària de modificació del Codi civil",
+        "Una llei ordinària sobre carreteres de l'Estat",
+        "Una llei ordinària sobre patrimoni cultural"
+      ],
+      "explicacion": "L'article 75.3 CE exclou de la delegació en les comissions la reforma constitucional, les qüestions internacionals, les lleis orgàniques i de bases i els pressupostos generals de l'Estat. Les lleis ordinàries sí que es poden delegar (art. 75.2 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "75.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a75"
+    },
+    "cita": "Quedan exceptuados de lo dispuesto en el apartado anterior la reforma constitucional, las cuestiones internacionales, las leyes orgánicas y de bases y los Presupuestos Generales del Estado",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-011",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En la investidura del Presidente del Gobierno, si el candidato no obtiene la mayoría absoluta en la primera votación, según el artículo 99.3 de la Constitución:",
+      "opciones": [
+        "El Rey debe proponer inmediatamente otro candidato",
+        "Se repite la votación veinticuatro horas después y se exige mayoría absoluta",
+        "Decide el Senado por mayoría simple",
+        "Se somete la misma propuesta a nueva votación cuarenta y ocho horas después y basta la mayoría simple"
+      ],
+      "explicacion": "El artículo 99.3 CE exige mayoría absoluta en la primera votación; si no se alcanza, la misma propuesta se vota cuarenta y ocho horas después y basta la mayoría simple. El Senado no interviene en la investidura."
+    },
+    "ca": {
+      "enunciado": "En la investidura del president del Govern, si el candidat no obté la majoria absoluta en la primera votació, segons l'article 99.3 de la Constitució:",
+      "opciones": [
+        "El Rei ha de proposar immediatament un altre candidat",
+        "Es repeteix la votació vint-i-quatre hores després i s'exigeix majoria absoluta",
+        "Decideix el Senat per majoria simple",
+        "Es sotmet la mateixa proposta a nova votació quaranta-vuit hores després i n'hi ha prou amb la majoria simple"
+      ],
+      "explicacion": "L'article 99.3 CE exigeix majoria absoluta en la primera votació; si no s'assoleix, la mateixa proposta es vota quaranta-vuit hores després i n'hi ha prou amb la majoria simple. El Senat no intervé en la investidura."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "99.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a99"
+    },
+    "cita": "De no alcanzarse dicha mayoría, se someterá la misma propuesta a nueva votación cuarenta y ocho horas después de la anterior, y la confianza se entenderá otorgada si obtuviere la mayoría simple",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-012",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 99.5 de la Constitución, el Rey disolverá ambas Cámaras y convocará nuevas elecciones si ningún candidato obtiene la confianza del Congreso en el plazo de:",
+      "opciones": [
+        "Un mes desde la constitución del Congreso",
+        "Dos meses desde la celebración de las elecciones",
+        "Dos meses a partir de la primera votación de investidura",
+        "Tres meses a partir de la primera votación de investidura"
+      ],
+      "explicacion": "El artículo 99.5 CE cuenta el plazo de dos meses a partir de la primera votación de investidura, no desde las elecciones ni desde la constitución de la Cámara."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 99.5 de la Constitució, el Rei dissoldrà les dues cambres i convocarà noves eleccions si cap candidat no obté la confiança del Congrés en el termini de:",
+      "opciones": [
+        "Un mes des de la constitució del Congrés",
+        "Dos mesos des de la celebració de les eleccions",
+        "Dos mesos a partir de la primera votació d'investidura",
+        "Tres mesos a partir de la primera votació d'investidura"
+      ],
+      "explicacion": "L'article 99.5 CE compta el termini de dos mesos a partir de la primera votació d'investidura, no des de les eleccions ni des de la constitució de la cambra."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "99.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a99"
+    },
+    "cita": "Si transcurrido el plazo de dos meses, a partir de la primera votación de investidura, ningún candidato hubiere obtenido la confianza del Congreso, el Rey disolverá ambas Cámaras",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-013",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 102.2 de la Constitución, la acusación contra miembros del Gobierno por traición o por delito contra la seguridad del Estado en el ejercicio de sus funciones solo puede plantearse:",
+      "opciones": [
+        "Por iniciativa de la cuarta parte de los miembros del Congreso y con la aprobación de su mayoría absoluta",
+        "Por iniciativa de la décima parte de los Diputados y con la aprobación de la mayoría simple",
+        "Por el Ministerio Fiscal, con autorización del Senado",
+        "Por iniciativa de cincuenta Diputados o cincuenta Senadores"
+      ],
+      "explicacion": "El artículo 102.2 CE exige la iniciativa de la cuarta parte de los miembros del Congreso y la aprobación por su mayoría absoluta. La décima parte de los Diputados es el requisito para proponer la moción de censura (art. 113.2 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 102.2 de la Constitució, l'acusació contra membres del Govern per traïció o per delicte contra la seguretat de l'Estat en l'exercici de les seves funcions només es pot plantejar:",
+      "opciones": [
+        "Per iniciativa de la quarta part dels membres del Congrés i amb l'aprovació de la seva majoria absoluta",
+        "Per iniciativa de la desena part dels diputats i amb l'aprovació de la majoria simple",
+        "Pel Ministeri Fiscal, amb autorització del Senat",
+        "Per iniciativa de cinquanta diputats o cinquanta senadors"
+      ],
+      "explicacion": "L'article 102.2 CE exigeix la iniciativa de la quarta part dels membres del Congrés i l'aprovació per la seva majoria absoluta. La desena part dels diputats és el requisit per proposar la moció de censura (art. 113.2 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "102.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a102"
+    },
+    "cita": "Si la acusación fuere por traición o por cualquier delito contra la seguridad del Estado en el ejercicio de sus funciones, sólo podrá ser planteada por iniciativa de la cuarta parte de los miembros del Congreso, y con la aprobación de la mayoría absoluta del mismo",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-014",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 107 de la Constitución, el supremo órgano consultivo del Gobierno es:",
+      "opciones": [
+        "El Consejo Económico y Social",
+        "El Consejo de Estado",
+        "El Tribunal de Cuentas",
+        "La Comisión General de Codificación"
+      ],
+      "explicacion": "El artículo 107 CE define al Consejo de Estado como supremo órgano consultivo del Gobierno; su composición y competencia las regula una ley orgánica."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 107 de la Constitució, el suprem òrgan consultiu del Govern és:",
+      "opciones": [
+        "El Consell Econòmic i Social",
+        "El Consell d'Estat",
+        "El Tribunal de Comptes",
+        "La Comissió General de Codificació"
+      ],
+      "explicacion": "L'article 107 CE defineix el Consell d'Estat com a suprem òrgan consultiu del Govern; la seva composició i competència les regula una llei orgànica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "107",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a107"
+    },
+    "cita": "El Consejo de Estado es el supremo órgano consultivo del Gobierno",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-015",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 113.2 de la Constitución, la moción de censura debe ser propuesta al menos por:",
+      "opciones": [
+        "La cuarta parte de los Diputados, sin necesidad de candidato",
+        "La quinta parte de los Diputados, con un candidato a la Presidencia",
+        "La mayoría absoluta del Congreso",
+        "La décima parte de los Diputados, e incluir un candidato a la Presidencia del Gobierno"
+      ],
+      "explicacion": "El artículo 113.2 CE exige que la moción de censura la proponga al menos la décima parte de los Diputados y que incluya un candidato a la Presidencia (moción constructiva). La mayoría absoluta es la que se requiere para aprobarla (art. 113.1 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 113.2 de la Constitució, la moció de censura ha de ser proposada almenys per:",
+      "opciones": [
+        "La quarta part dels diputats, sense necessitat de candidat",
+        "La cinquena part dels diputats, amb un candidat a la presidència",
+        "La majoria absoluta del Congrés",
+        "La desena part dels diputats, i ha d'incloure un candidat a la presidència del Govern"
+      ],
+      "explicacion": "L'article 113.2 CE exigeix que la moció de censura la proposi almenys la desena part dels diputats i que inclogui un candidat a la presidència (moció constructiva). La majoria absoluta és la que es requereix per aprovar-la (art. 113.1 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "113.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a113"
+    },
+    "cita": "La moción de censura deberá ser propuesta al menos por la décima parte de los Diputados, y habrá de incluir un candidato a la Presidencia del Gobierno",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-016",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 112 de la Constitución, en la cuestión de confianza planteada por el Presidente del Gobierno, la confianza se entiende otorgada cuando vota a favor:",
+      "opciones": [
+        "La mayoría absoluta de los Diputados",
+        "Las tres quintas partes de los Diputados",
+        "La mayoría simple de los Diputados",
+        "La mayoría absoluta de ambas Cámaras"
+      ],
+      "explicacion": "El artículo 112 CE se conforma con la mayoría simple de los Diputados para otorgar la confianza. La mayoría absoluta es la que se exige para aprobar la moción de censura."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 112 de la Constitució, en la qüestió de confiança plantejada pel president del Govern, la confiança s'entén atorgada quan hi vota a favor:",
+      "opciones": [
+        "La majoria absoluta dels diputats",
+        "Les tres cinquenes parts dels diputats",
+        "La majoria simple dels diputats",
+        "La majoria absoluta de les dues cambres"
+      ],
+      "explicacion": "L'article 112 CE es conforma amb la majoria simple dels diputats per atorgar la confiança. La majoria absoluta és la que s'exigeix per aprovar la moció de censura."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "112",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a112"
+    },
+    "cita": "La confianza se entenderá otorgada cuando vote a favor de la misma la mayoría simple de los Diputados",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t12-017",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 116.2 de la Constitución, el estado de alarma:",
+      "opciones": [
+        "Lo declara el Congreso por mayoría absoluta a propuesta del Gobierno",
+        "Lo declara el Gobierno por decreto acordado en Consejo de Ministros por un plazo máximo de quince días",
+        "Lo declara el Gobierno previa autorización del Congreso por un plazo máximo de treinta días",
+        "Lo declara el Rey a propuesta del Presidente del Gobierno por un plazo máximo de un mes"
+      ],
+      "explicacion": "El estado de alarma lo declara el Gobierno por decreto acordado en Consejo de Ministros por un máximo de quince días, dando cuenta al Congreso, cuya autorización es necesaria para prorrogarlo. La autorización previa y los treinta días corresponden al estado de excepción (art. 116.3 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 116.2 de la Constitució, l'estat d'alarma:",
+      "opciones": [
+        "El declara el Congrés per majoria absoluta a proposta del Govern",
+        "El declara el Govern per decret acordat en Consell de Ministres per un termini màxim de quinze dies",
+        "El declara el Govern amb autorització prèvia del Congrés per un termini màxim de trenta dies",
+        "El declara el Rei a proposta del president del Govern per un termini màxim d'un mes"
+      ],
+      "explicacion": "L'estat d'alarma el declara el Govern per decret acordat en Consell de Ministres per un màxim de quinze dies, i n'ha de donar compte al Congrés, l'autorització del qual és necessària per prorrogar-lo. L'autorització prèvia i els trenta dies corresponen a l'estat d'excepció (art. 116.3 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "116.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a116"
+    },
+    "cita": "El estado de alarma será declarado por el Gobierno mediante decreto acordado en Consejo de Ministros por un plazo máximo de quince días",
+    "origen": "ia"
+  }
+]

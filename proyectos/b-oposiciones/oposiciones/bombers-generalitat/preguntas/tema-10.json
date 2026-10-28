@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t10-001",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Desde el punto de vista químico, la combustión es:",
+      "opciones": [
+        "Una reacción de oxidación-reducción exotérmica",
+        "Una reacción endotérmica de descomposición",
+        "Un cambio de estado físico sin reacción química",
+        "Una reacción nuclear de fisión"
+      ],
+      "explicacion": "La combustión es una reacción redox entre un combustible (reductor) y un comburente (oxidante, normalmente el oxígeno) que desprende energía en forma de calor y, a menudo, de luz: es exotérmica."
+    },
+    "ca": {
+      "enunciado": "Des del punt de vista químic, la combustió és:",
+      "opciones": [
+        "Una reacció d'oxidació-reducció exotèrmica",
+        "Una reacció endotèrmica de descomposició",
+        "Un canvi d'estat físic sense reacció química",
+        "Una reacció nuclear de fissió"
+      ],
+      "explicacion": "La combustió és una reacció redox entre un combustible (reductor) i un comburent (oxidant, normalment l'oxigen) que desprèn energia en forma de calor i, sovint, de llum: és exotèrmica."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-002",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La combustión completa de un hidrocarburo produce principalmente:",
+      "opciones": [
+        "Monóxido de carbono y hollín",
+        "Dióxido de carbono y agua",
+        "Hidrógeno y oxígeno",
+        "Cianuro de hidrógeno y agua"
+      ],
+      "explicacion": "Con oxígeno suficiente, el carbono del hidrocarburo se oxida a CO₂ y el hidrógeno, a H₂O. El monóxido de carbono y el hollín son productos típicos de la combustión incompleta."
+    },
+    "ca": {
+      "enunciado": "La combustió completa d'un hidrocarbur produeix principalment:",
+      "opciones": [
+        "Monòxid de carboni i sutge",
+        "Diòxid de carboni i aigua",
+        "Hidrogen i oxigen",
+        "Cianur d'hidrogen i aigua"
+      ],
+      "explicacion": "Amb oxigen suficient, el carboni de l'hidrocarbur s'oxida a CO₂ i l'hidrogen, a H₂O. El monòxid de carboni i el sutge són productes típics de la combustió incompleta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-003",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El monóxido de carbono (CO) generado en los incendios es especialmente peligroso porque:",
+      "opciones": [
+        "Tiene un olor intenso e irritante que provoca asfixia",
+        "Es un gas corrosivo de color amarillento",
+        "Es incoloro e inodoro y se une a la hemoglobina con mucha más afinidad que el oxígeno",
+        "Solo se forma en las combustiones completas"
+      ],
+      "explicacion": "El CO no se percibe por los sentidos y desplaza al oxígeno de la hemoglobina formando carboxihemoglobina, lo que impide el transporte de oxígeno a los tejidos. Es un producto de la combustión incompleta."
+    },
+    "ca": {
+      "enunciado": "El monòxid de carboni (CO) generat en els incendis és especialment perillós perquè:",
+      "opciones": [
+        "Té una olor intensa i irritant que provoca asfíxia",
+        "És un gas corrosiu de color groguenc",
+        "És incolor i inodor i s'uneix a l'hemoglobina amb molta més afinitat que l'oxigen",
+        "Només es forma en les combustions completes"
+      ],
+      "explicacion": "El CO no es percep pels sentits i desplaça l'oxigen de l'hemoglobina formant carboxihemoglobina, cosa que impedeix el transport d'oxigen als teixits. És un producte de la combustió incompleta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-004",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es, aproximadamente, la composición en volumen del aire seco?",
+      "opciones": [
+        "50% de nitrógeno y 50% de oxígeno",
+        "21% de nitrógeno y 78% de oxígeno",
+        "90% de oxígeno y 10% de otros gases",
+        "78% de nitrógeno y 21% de oxígeno"
+      ],
+      "explicacion": "El aire seco está formado aproximadamente por un 78% de nitrógeno y un 21% de oxígeno; el 1% restante corresponde sobre todo al argón y, en menor proporción, al CO₂ y a otros gases."
+    },
+    "ca": {
+      "enunciado": "Quina és, aproximadament, la composició en volum de l'aire sec?",
+      "opciones": [
+        "50% de nitrogen i 50% d'oxigen",
+        "21% de nitrogen i 78% d'oxigen",
+        "90% d'oxigen i 10% d'altres gasos",
+        "78% de nitrogen i 21% d'oxigen"
+      ],
+      "explicacion": "L'aire sec està format aproximadament per un 78% de nitrogen i un 21% d'oxigen; l'1% restant correspon sobretot a l'argó i, en menor proporció, al CO₂ i a altres gasos."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-005",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "A 25 ºC, una disolución acuosa con pH 3 es:",
+      "opciones": [
+        "Ácida",
+        "Neutra",
+        "Básica",
+        "Saturada"
+      ],
+      "explicacion": "En la escala de pH, a 25 ºC, los valores inferiores a 7 indican acidez, el 7 es neutro y los superiores a 7 indican basicidad (alcalinidad)."
+    },
+    "ca": {
+      "enunciado": "A 25 ºC, una dissolució aquosa amb pH 3 és:",
+      "opciones": [
+        "Àcida",
+        "Neutra",
+        "Bàsica",
+        "Saturada"
+      ],
+      "explicacion": "En l'escala de pH, a 25 ºC, els valors inferiors a 7 indiquen acidesa, el 7 és neutre i els superiors a 7 indiquen basicitat (alcalinitat)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-006",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La combustión de materiales que contienen nitrógeno (lana, seda, poliuretano, nailon) puede desprender un gas muy tóxico que bloquea la respiración celular. ¿Cuál?",
+      "opciones": [
+        "Cloruro de hidrógeno",
+        "Cianuro de hidrógeno (HCN)",
+        "Dióxido de azufre",
+        "Metano"
+      ],
+      "explicacion": "El cianuro de hidrógeno (ácido cianhídrico) procede de materiales nitrogenados e impide que las células utilicen el oxígeno. El cloruro de hidrógeno procede de materiales clorados como el PVC."
+    },
+    "ca": {
+      "enunciado": "La combustió de materials que contenen nitrogen (llana, seda, poliuretà, niló) pot desprendre un gas molt tòxic que bloqueja la respiració cel·lular. Quin?",
+      "opciones": [
+        "Clorur d'hidrogen",
+        "Cianur d'hidrogen (HCN)",
+        "Diòxid de sofre",
+        "Metà"
+      ],
+      "explicacion": "El cianur d'hidrogen (àcid cianhídric) prové de materials nitrogenats i impedeix que les cèl·lules utilitzin l'oxigen. El clorur d'hidrogen prové de materials clorats com el PVC."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-007",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El paso directo de una sustancia del estado sólido al estado gaseoso, sin pasar por el líquido, se denomina:",
+      "opciones": [
+        "Fusión",
+        "Condensación",
+        "Sublimación",
+        "Vaporización"
+      ],
+      "explicacion": "La sublimación es el paso directo de sólido a gas (por ejemplo, el hielo seco o CO₂ sólido). La fusión es de sólido a líquido; la vaporización, de líquido a gas, y la condensación, de gas a líquido."
+    },
+    "ca": {
+      "enunciado": "El pas directe d'una substància de l'estat sòlid a l'estat gasós, sense passar pel líquid, s'anomena:",
+      "opciones": [
+        "Fusió",
+        "Condensació",
+        "Sublimació",
+        "Vaporització"
+      ],
+      "explicacion": "La sublimació és el pas directe de sòlid a gas (per exemple, el gel sec o CO₂ sòlid). La fusió és de sòlid a líquid; la vaporització, de líquid a gas, i la condensació, de gas a líquid."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-008",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En caso de fuga, un gas o vapor con una densidad relativa respecto del aire superior a 1:",
+      "opciones": [
+        "Asciende y se disipa rápidamente",
+        "Se reparte de forma uniforme en todo el volumen",
+        "Se licúa inmediatamente al salir",
+        "Tiende a acumularse en las zonas bajas, como sótanos o alcantarillas"
+      ],
+      "explicacion": "Si el gas es más denso que el aire (densidad relativa mayor que 1), tiende a descender y a acumularse en zonas bajas, como ocurre con el propano y el butano; los más ligeros, como el metano, tienden a ascender."
+    },
+    "ca": {
+      "enunciado": "En cas de fuita, un gas o vapor amb una densitat relativa respecte de l'aire superior a 1:",
+      "opciones": [
+        "Puja i es dissipa ràpidament",
+        "Es reparteix de manera uniforme en tot el volum",
+        "Es liqua immediatament en sortir",
+        "Tendeix a acumular-se a les zones baixes, com soterranis o clavegueres"
+      ],
+      "explicacion": "Si el gas és més dens que l'aire (densitat relativa més gran que 1), tendeix a baixar i a acumular-se a les zones baixes, com passa amb el propà i el butà; els més lleugers, com el metà, tendeixen a pujar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-009",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El número atómico de un elemento químico indica:",
+      "opciones": [
+        "El número de protones de su núcleo",
+        "La suma de protones y neutrones",
+        "El número de neutrones de su núcleo",
+        "La masa del átomo expresada en gramos"
+      ],
+      "explicacion": "El número atómico (Z) es el número de protones del núcleo e identifica el elemento. La suma de protones y neutrones es el número másico (A)."
+    },
+    "ca": {
+      "enunciado": "El nombre atòmic d'un element químic indica:",
+      "opciones": [
+        "El nombre de protons del seu nucli",
+        "La suma de protons i neutrons",
+        "El nombre de neutrons del seu nucli",
+        "La massa de l'àtom expressada en grams"
+      ],
+      "explicacion": "El nombre atòmic (Z) és el nombre de protons del nucli i identifica l'element. La suma de protons i neutrons és el nombre màssic (A)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t10-010",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es el componente principal del gas natural?",
+      "opciones": [
+        "El propano",
+        "El metano",
+        "El butano",
+        "El acetileno"
+      ],
+      "explicacion": "El gas natural está formado principalmente por metano (CH₄), más ligero que el aire. El propano y el butano son los gases licuados del petróleo (GLP), más densos que el aire."
+    },
+    "ca": {
+      "enunciado": "Quin és el component principal del gas natural?",
+      "opciones": [
+        "El propà",
+        "El metà",
+        "El butà",
+        "L'acetilè"
+      ],
+      "explicacion": "El gas natural està format principalment per metà (CH₄), més lleuger que l'aire. El propà i el butà són els gasos liquats del petroli (GLP), més densos que l'aire."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

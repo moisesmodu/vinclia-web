@@ -1,0 +1,817 @@
+{
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    "Recopilado el 28/10/2026 solo a partir de los datos ya investigados en oposiciones/*/oposicion.json (campos convocatoria.referencia, notas y verificado), que proceden de resúmenes de buscador de webs oficiales (web.gencat.cat, mossos.gencat.cat, interior.gencat.cat, ICS, bop.diba.cat, boe.es) y de academias, sindicatos y CIDO. En esta sesión no se pudo hacer ninguna búsqueda nueva (límite de WebSearch agotado) y DOGC/BOP/gencat.cat están bloqueados para lectura directa: ningún texto oficial se ha leído completo.",
+    "No se incluyen OPO 2026, Educació (docents), Agents Rurals, Guàrdia Urbana/policías locales ni ediciones 2027 porque no hay datos verificados disponibles; quedan pendientes de una búsqueda posterior.",
+    "Actualización del 28/10/2026: 21 entradas nuevas y datos añadidos a 9 de las existentes a partir de resúmenes del buscador (WebSearch). WebFetch no pudo abrir ninguna web (redopositor.com y ccoo.cat no resuelven en la red de la sesión) y DOGC/BOE/gencat.cat están bloqueados, así que ningún texto oficial se ha leído completo. Fuentes de los resúmenes: redopositor.com, adams.es, 3cat.cat, naciodigital.cat, diaridetarragona.com, diarimes.com, campuseducacion.com, csif.es, ccoo.cat (presons y generalitat), cido.diba.cat, preparaoposiciones.com, bop.diba.cat (sumarios) y ajuntament.barcelona.cat (Guàrdia Urbana). Solo se marca fuente primaria donde el resumen cita una web oficial o un boletín. Las ofertas (OPO) no llevan plazas para no sumarlas a las convocatorias que salen de ellas."
+  ],
+  "convocatorias": [
+    {
+      "id": "generalitat-870-auxiliar-administratiu",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Cos auxiliar d'administració, escala auxiliar administrativa (procés 878)",
+        "es": "Cuerpo auxiliar de administración, escala auxiliar administrativa (proceso 878)"
+      },
+      "grupo": "C2",
+      "plazas": 114,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/212/2026, de 28 de gener (convocatòria 870, procés 878)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-02-02",
+      "plazoHasta": null,
+      "fechaExamen": "2026-06-28",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "oposicion": "auxiliar-administratiu-generalitat",
+      "verificado": "fuente primaria",
+      "nota": {
+        "ca": "Prova feta el 28/06/2026; els tribunals van publicar les notes el 03/09/2026 i van obrir la fase de concurs (63 places de torn lliure i 51 de promoció interna, segons acadèmies). CCOO preveu que els processos de la 870 acabin el primer trimestre de 2027.",
+        "es": "Prueba celebrada el 28/06/2026; los tribunales publicaron las notas el 03/09/2026 y abrieron la fase de concurso (63 plazas de turno libre y 51 de promoción interna, según academias). CCOO prevé que los procesos de la 870 terminen en el primer trimestre de 2027."
+      }
+    },
+    {
+      "id": "generalitat-870-diversos-cossos",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Diversos cossos i escales de personal funcionari (31 processos, convocatòria 870)",
+        "es": "Diversos cuerpos y escalas de personal funcionario (31 procesos, convocatoria 870)"
+      },
+      "grupo": "varios",
+      "plazas": 1325,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/212/2026, de 28 de gener (convocatòria 870; DOGC núm. 9595)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-02-02",
+      "plazoHasta": null,
+      "fechaExamen": "2026-06",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "oposicion": null,
+      "verificado": "fuente primaria",
+      "nota": {
+        "ca": "Convocatòria conjunta amb places de les OPO 2024 i 2025. Desglossament segons fonts secundàries: cos superior 376, administratiu 366, subaltern 228, titulació superior (17 escales) 118, auxiliar 114, diplomatura (9 escales) 95 i gestió 28. Proves el 27 i 28/06/2026; notes i obertura de la fase de mèrits el 03/09/2026 (trámit OPO870, modalitat MERI); final previst el primer trimestre de 2027 segons CCOO.",
+        "es": "Convocatoria conjunta con plazas de las OPE 2024 y 2025. Desglose según fuentes secundarias: cuerpo superior 376, administrativo 366, subalterno 228, titulación superior (17 escalas) 118, auxiliar 114, diplomatura (9 escalas) 95 y gestión 28. Pruebas el 27 y 28/06/2026; notas y apertura de la fase de méritos el 03/09/2026 (trámite OPO870, modalidad MERI); final previsto en el primer trimestre de 2027 según CCOO."
+      },
+      "agrupa": true
+    },
+    {
+      "id": "generalitat-opo-2024",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Oferta pública d'ocupació 2024 (personal funcionari)",
+        "es": "Oferta pública de empleo 2024 (personal funcionario)"
+      },
+      "grupo": "varios",
+      "plazas": null,
+      "estado": "en curso",
+      "referencia": "Acord GOV/96/2024 (OPO 2024)",
+      "diario": "DOGC",
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Part de les seves places s'executen a la convocatòria 870; inclou 1.744 places del cos de mestres encara sense convocar. No s'ha pogut consultar el nombre total de places.",
+        "es": "Parte de sus plazas se ejecutan en la convocatoria 870; incluye 1.744 plazas del cuerpo de maestros aún sin convocar. No se ha podido consultar el número total de plazas."
+      }
+    },
+    {
+      "id": "generalitat-opo-2025",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Oferta pública d'ocupació 2025 (personal funcionari)",
+        "es": "Oferta pública de empleo 2025 (personal funcionario)"
+      },
+      "grupo": "varios",
+      "plazas": null,
+      "estado": "en curso",
+      "referencia": "Acord GOV/101/2025 (OPO 2025)",
+      "diario": "DOGC",
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Oferta total de 8.438 places segons 3Cat (no s'indica al camp de places perquè es reparteix entre convocatòries). Part de les places s'executen a la convocatòria 870 i inclou 909 places del cos de mestres sense convocar; la resta poden sortir en convocatòries de 2027 (no confirmat).",
+        "es": "Oferta total de 8.438 plazas según 3Cat (no se indica en el campo de plazas porque se reparte entre convocatorias). Parte de las plazas se ejecutan en la convocatoria 870 e incluye 909 plazas del cuerpo de maestros sin convocar; el resto puede salir en convocatorias de 2027 (no confirmado)."
+      }
+    },
+    {
+      "id": "mossos-esquadra-46-26",
+      "organismo": "Generalitat de Catalunya · Departament d'Interior i Seguretat Pública",
+      "cuerpo": {
+        "ca": "Cos de Mossos d'Esquadra, escala bàsica, categoria de mosso/a (convocatòria 46/26)",
+        "es": "Cuerpo de Mossos d'Esquadra, escala básica, categoría de mosso/a (convocatoria 46/26)"
+      },
+      "grupo": "C1",
+      "plazas": 1587,
+      "estado": "en curso",
+      "referencia": "Resolució ISP/1763/2026, de 3 de juny (convocatòria 46/26)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-06-08",
+      "plazoHasta": "2026-06-22",
+      "fechaExamen": "2026-10-17",
+      "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-26/",
+      "oposicion": "mossos-esquadra",
+      "verificado": "fuente primaria",
+      "nota": {
+        "ca": "634 places reservades a dones. 1a prova feta el 17/10/2026 a la UAB (convocada per la Resolució ISP/3282/2026); la prova física està prevista per al 23/11/2026.",
+        "es": "634 plazas reservadas a mujeres. 1.ª prueba celebrada el 17/10/2026 en la UAB (convocada por la Resolución ISP/3282/2026); la prueba física está prevista para el 23/11/2026."
+      }
+    },
+    {
+      "id": "bombers-generalitat-81-26",
+      "organismo": "Generalitat de Catalunya · Departament d'Interior i Seguretat Pública",
+      "cuerpo": {
+        "ca": "Cos de Bombers de la Generalitat, escala tècnica, bomber/a de primera (convocatòria 81/26)",
+        "es": "Cuerpo de Bomberos de la Generalitat, escala técnica, bombero/a de primera (convocatoria 81/26)"
+      },
+      "grupo": "C1",
+      "plazas": 300,
+      "estado": "en curso",
+      "referencia": "Resolució ISP/3218/2026, de 10 de setembre (convocatòria 81/26)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-09-15",
+      "plazoHasta": "2026-09-29",
+      "fechaExamen": null,
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/",
+      "oposicion": "bombers-generalitat",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "120 places reservades a dones; a 28/10/2026 encara no hi ha llista d'admesos ni data de la prova de coneixements.",
+        "es": "120 plazas reservadas a mujeres; a 28/10/2026 aún no hay lista de admitidos ni fecha de la prueba de conocimientos."
+      }
+    },
+    {
+      "id": "ics-100-2025-tcai",
+      "organismo": "ICS",
+      "cuerpo": {
+        "ca": "Tècnic/a en Cures Auxiliars d'Infermeria (TCAI, codi C2-159)",
+        "es": "Técnico/a en Cuidados Auxiliares de Enfermería (TCAI, código C2-159)"
+      },
+      "grupo": "C2",
+      "plazas": 757,
+      "estado": "en curso",
+      "referencia": "Resolució SLT/2380/2025, de 20 de juny (convocatòria 100-2025)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-06-26",
+      "plazoHasta": "2025-07-31",
+      "fechaExamen": "2027-01",
+      "url": "https://convocatories.ics.extranet.gencat.cat/convocatoria/25608/",
+      "oposicion": "tcai-ics",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Segons l'avís de l'ICS del 17/09/2026, la prova serà a partir de gener de 2027, sense dia fixat.",
+        "es": "Según el aviso del ICS del 17/09/2026, la prueba será a partir de enero de 2027, sin día fijado."
+      }
+    },
+    {
+      "id": "ics-100-2025-infermeria",
+      "organismo": "ICS",
+      "cuerpo": {
+        "ca": "Diplomat/ada sanitari/ària en infermeria (codi A2-129, convocatòria 100-2025)",
+        "es": "Diplomado/a sanitario/a en enfermería (código A2-129, convocatoria 100-2025)"
+      },
+      "grupo": "A2",
+      "plazas": 1713,
+      "estado": "en curso",
+      "referencia": "Resolució SLT/2380/2025, de 20 de juny (convocatòria 100-2025)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-06-26",
+      "plazoHasta": "2025-07-31",
+      "fechaExamen": "2027-01",
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "1.371 places de torn lliure i 342 de promoció interna; per primer cop hi ha especialitats (47 d'obstetrícia i ginecologia, 26 de familiar i comunitària, 9 de pediàtrica, 5 de geriàtrica i 4 de salut mental). Prova a partir de gener de 2027 segons l'avís de l'ICS del 17/09/2026; una acadèmia esmenta una llista definitiva d'admesos del 19/06/2026 que no s'ha pogut verificar.",
+        "es": "1.371 plazas de turno libre y 342 de promoción interna; por primera vez hay especialidades (47 de obstetricia y ginecología, 26 de familiar y comunitaria, 9 de pediátrica, 5 de geriátrica y 4 de salud mental). Prueba a partir de enero de 2027 según el aviso del ICS del 17/09/2026; una academia menciona una lista definitiva de admitidos del 19/06/2026 que no se ha podido verificar."
+      }
+    },
+    {
+      "id": "ics-100-2025-auxiliar-administratiu",
+      "organismo": "ICS",
+      "cuerpo": {
+        "ca": "Auxiliar administratiu/iva de la funció administrativa (codi C2-161, convocatòria 100-2025)",
+        "es": "Auxiliar administrativo/a de la función administrativa (código C2-161, convocatoria 100-2025)"
+      },
+      "grupo": "C2",
+      "plazas": 1295,
+      "estado": "en curso",
+      "referencia": "Resolució SLT/2380/2025, de 20 de juny (convocatòria 100-2025)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-06-26",
+      "plazoHasta": "2025-07-31",
+      "fechaExamen": "2027-01",
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "1.036 places de torn lliure (103 reservades a persones amb discapacitat) i 259 de promoció interna; ESO i català C1. Personal estatutari de l'ICS (no és la mateixa oposició que l'auxiliar de la Generalitat); prova a partir de gener de 2027 segons l'avís del 17/09/2026.",
+        "es": "1.036 plazas de turno libre (103 reservadas a personas con discapacidad) y 259 de promoción interna; ESO y catalán C1. Personal estatutario del ICS (no es la misma oposición que el auxiliar de la Generalitat); prueba a partir de enero de 2027 según el aviso del 17/09/2026."
+      }
+    },
+    {
+      "id": "ics-100-2025-global",
+      "organismo": "ICS",
+      "cuerpo": {
+        "ca": "Personal estatutari fix, 74 categories (convocatòria ordinària 100-2025)",
+        "es": "Personal estatutario fijo, 74 categorías (convocatoria ordinaria 100-2025)"
+      },
+      "grupo": "varios",
+      "plazas": 6037,
+      "estado": "en curso",
+      "referencia": "Resolució SLT/2380/2025, de 20 de juny (convocatòria 100-2025; DOGC núm. 9441)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-06-26",
+      "plazoHasta": "2025-07-31",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Les proves es fan per categories: vuit es van examinar el 18/10/2026 a la UPF (Campus Ciutadella) i infermeria, TCAI i auxiliar administratiu s'examinaran a partir de gener de 2027. Les bases preveuen un 20% de places addicionals per a vacants de les ofertes 2025 i 2026.",
+        "es": "Las pruebas se hacen por categorías: ocho se examinaron el 18/10/2026 en la UPF (Campus Ciutadella) y enfermería, TCAI y auxiliar administrativo se examinarán a partir de enero de 2027. Las bases prevén un 20% de plazas adicionales para vacantes de las ofertas 2025 y 2026."
+      },
+      "agrupa": true
+    },
+    {
+      "id": "barcelona-128-2026-auxiliar-administratiu",
+      "organismo": "Ajuntament de Barcelona",
+      "cuerpo": {
+        "ca": "Auxiliar administratiu/iva, subgrup C2 (convocatòria 128/2026)",
+        "es": "Auxiliar administrativo/a, subgrupo C2 (convocatoria 128/2026)"
+      },
+      "grupo": "C2",
+      "plazas": 67,
+      "estado": "en curso",
+      "referencia": "Bases de la convocatòria de l'any 2026 C2 i AP, concurs oposició lliure (128/2026; exp. OP2026_1040)",
+      "diario": "BOPB",
+      "fechaPublicacion": "2026-07-02",
+      "plazoHasta": "2026-07-28",
+      "fechaExamen": "2027-02",
+      "url": "https://bop.diba.cat/anunci/3963057/bases-de-la-convocatoria-de-l-any-2026-per-a-la-cobertura-de-places-del-subgrup-de-titulacio-c2-i-grups-agrupacions-professionals-ap-de-l-ajuntament-de-barcelona-mitjancant-concurs-oposicio-lliure-128-2026-ajuntament-de-barcelona",
+      "oposicion": "auxiliar-administratiu-ajuntaments",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "62 places de torn lliure i 5 per a persones amb discapacitat (una acadèmia en compta 69); el primer examen previst per al febrer de 2027 surt d'una acadèmia i no està confirmat.",
+        "es": "62 plazas de turno libre y 5 para personas con discapacidad (una academia cuenta 69); el primer examen previsto para febrero de 2027 procede de una academia y no está confirmado."
+      }
+    },
+    {
+      "id": "reus-2025-auxiliar-administratiu",
+      "organismo": "Ajuntament de Reus",
+      "cuerpo": {
+        "ca": "Auxiliar administratiu/iva, subgrup C2, concurs oposició lliure",
+        "es": "Auxiliar administrativo/a, subgrupo C2, concurso-oposición libre"
+      },
+      "grupo": "C2",
+      "plazas": 36,
+      "estado": "en curso",
+      "referencia": "Decret 2025012140, de 20/05/2025 (bases al BOPT; extracte al DOGC 9533)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-11-03",
+      "plazoHasta": null,
+      "fechaExamen": "2026-04-11",
+      "url": "https://cido.diba.cat/oposicions/15724034/36-places-dauxiliar-administratiu-ajuntament-de-reus",
+      "oposicion": "auxiliar-administratiu-ajuntaments",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "La prova es va fer l'11/04/2026; no s'ha pogut comprovar si el procés ja ha acabat.",
+        "es": "La prueba se celebró el 11/04/2026; no se ha podido comprobar si el proceso ya ha terminado."
+      }
+    },
+    {
+      "id": "figueres-2026-auxiliar-administratiu-oposicio",
+      "organismo": "Ajuntament de Figueres",
+      "cuerpo": {
+        "ca": "Auxiliar administratiu/iva, subgrup C2, oposició lliure",
+        "es": "Auxiliar administrativo/a, subgrupo C2, oposición libre"
+      },
+      "grupo": "C2",
+      "plazas": 12,
+      "estado": "en curso",
+      "referencia": "Bases al BOPG núm. 164, de 26/08/2026 (edicte 7537); anunci al DOGC 9740",
+      "diario": "BOPG",
+      "fechaPublicacion": "2026-08-26",
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": "auxiliar-administratiu-ajuntaments",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Termini tancat el 17 o el 18/09/2026 (les fonts no coincideixen); 22 temes, test teòric i exercici pràctic.",
+        "es": "Plazo cerrado el 17 o el 18/09/2026 (las fuentes no coinciden); 22 temas, test teórico y ejercicio práctico."
+      }
+    },
+    {
+      "id": "figueres-2025-auxiliar-administratiu-concurs-oposicio",
+      "organismo": "Ajuntament de Figueres",
+      "cuerpo": {
+        "ca": "Auxiliar administratiu/iva, subgrup C2, concurs oposició",
+        "es": "Auxiliar administrativo/a, subgrupo C2, concurso-oposición"
+      },
+      "grupo": "C2",
+      "plazas": 13,
+      "estado": "en curso",
+      "referencia": "Bases al DOGC 9559, de 09/12/2025; anunci BOE-A-2026-2275",
+      "diario": "BOE",
+      "fechaPublicacion": "2026-01-31",
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": "https://boe.es/boe/dias/2026/01/31/pdfs/BOE-A-2026-2275.pdf",
+      "oposicion": "auxiliar-administratiu-ajuntaments",
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Procés diferent de l'oposició lliure de 12 places del 2026; no s'ha pogut comprovar en quina fase és.",
+        "es": "Proceso distinto de la oposición libre de 12 plazas de 2026; no se ha podido comprobar en qué fase está."
+      }
+    },
+    {
+      "id": "generalitat-opo-2026",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Oferta pública d'ocupació 2026 (8.474 places)",
+        "es": "Oferta pública de empleo 2026 (8.474 plazas)"
+      },
+      "grupo": "varios",
+      "plazas": null,
+      "estado": "en curso",
+      "referencia": "Acord GOV/61/2026, de 24 de març (DOGC núm. 9633)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-03-26",
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Oferta, no convocatòria: les places surten després amb bases pròpies. Desglossament de la nota del Govern: 4.334 d'administració, tècnic i laboral (sense detall per cossos), 2.327 de l'ICS i l'Agència Tributària, 1.604 de Mossos d'Esquadra, 174 d'execució penal, 23 de Bombers i 12 d'Agents Rurals. Hi haurà una oferta addicional per als docents.",
+        "es": "Oferta, no convocatoria: las plazas salen después con bases propias. Desglose de la nota del Govern: 4.334 de administración, técnico y laboral (sin detalle por cuerpos), 2.327 del ICS y la Agència Tributària, 1.604 de Mossos d'Esquadra, 174 de ejecución penal, 23 de Bomberos y 12 de Agents Rurals. Habrá una oferta adicional para los docentes."
+      }
+    },
+    {
+      "id": "generalitat-opo-2026-execucio-penal",
+      "organismo": "Generalitat de Catalunya · Departament de Justícia",
+      "cuerpo": {
+        "ca": "Personal de l'àmbit d'execució penal (OPO 2026)",
+        "es": "Personal del ámbito de ejecución penal (OPE 2026)"
+      },
+      "grupo": "varios",
+      "plazas": 174,
+      "estado": "prevista",
+      "referencia": "Acord GOV/61/2026 (OPO 2026)",
+      "diario": "DOGC",
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Previsió: places aprovades a l'oferta però encara sense convocatòria. Segons CCOO: 1 del cos superior (A1), 40 d'educació social (A2) i 133 del cos tècnic d'especialistes de serveis penitenciaris (C1).",
+        "es": "Previsión: plazas aprobadas en la oferta pero aún sin convocatoria. Según CCOO: 1 del cuerpo superior (A1), 40 de educación social (A2) y 133 del cuerpo técnico de especialistas de servicios penitenciarios (C1)."
+      }
+    },
+    {
+      "id": "agents-rurals-dgar-01-26",
+      "organismo": "Generalitat de Catalunya · Departament d'Agricultura",
+      "cuerpo": {
+        "ca": "Cos d'Agents Rurals, escala bàsica, agent (convocatòria DGAR/01/26/AG)",
+        "es": "Cuerpo de Agentes Rurales, escala básica, agente (convocatoria DGAR/01/26/AG)"
+      },
+      "grupo": "C1",
+      "plazas": 100,
+      "estado": "abierta",
+      "referencia": "Convocatòria DGAR/01/26/AG (DOGC núm. 9774)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-10-16",
+      "plazoHasta": "2026-10-30",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "40 places reservades a dones; termini de 10 dies hàbils, que acaba el 30/10/2026 segons acadèmies. Una notícia anterior parlava de 50 places d'agent i 50 de sotsinspector en tres anys: cal comprovar-ho a les bases.",
+        "es": "40 plazas reservadas a mujeres; plazo de 10 días hábiles, que termina el 30/10/2026 según academias. Una noticia anterior hablaba de 50 plazas de agente y 50 de subinspector en tres años: hay que comprobarlo en las bases."
+      }
+    },
+    {
+      "id": "educacio-mestres-2027",
+      "organismo": "Generalitat de Catalunya · Departament d'Educació i Formació Professional",
+      "cuerpo": {
+        "ca": "Cos de mestres (oposicions 2027)",
+        "es": "Cuerpo de maestros (oposiciones 2027)"
+      },
+      "grupo": "A2",
+      "plazas": 2653,
+      "estado": "prevista",
+      "referencia": "OPO 2024 (1.744 places) i OPO 2025 (909 places)",
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Previsió: el Govern va anunciar que les oposicions de mestres serien el 2027, però a 28/10/2026 no hi ha convocatòria al DOGC. Les 2.653 places són les aprovades a les ofertes de 2024 i 2025.",
+        "es": "Previsión: el Govern anunció que las oposiciones de maestros serían en 2027, pero a 28/10/2026 no hay convocatoria en el DOGC. Las 2.653 plazas son las aprobadas en las ofertas de 2024 y 2025."
+      }
+    },
+    {
+      "id": "educacio-secundaria-2027",
+      "organismo": "Generalitat de Catalunya · Departament d'Educació i Formació Professional",
+      "cuerpo": {
+        "ca": "Professorat d'ensenyament secundari i altres cossos docents (convocatòria 2027)",
+        "es": "Profesorado de enseñanza secundaria y otros cuerpos docentes (convocatoria 2027)"
+      },
+      "grupo": "A1",
+      "plazas": null,
+      "estado": "prevista",
+      "referencia": null,
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Previsió no confirmada: les dues últimes convocatòries es van publicar el novembre de 2024 i l'octubre de 2025 (Resolució EDF/3865/2025, 1.100 places), i les acadèmies esperen la següent a final de 2026; encara no hi ha places ni data.",
+        "es": "Previsión no confirmada: las dos últimas convocatorias se publicaron en noviembre de 2024 y octubre de 2025 (Resolución EDF/3865/2025, 1.100 plazas), y las academias esperan la siguiente a finales de 2026; aún no hay plazas ni fecha."
+      }
+    },
+    {
+      "id": "educacio-educador-educacio-especial-opo-2026",
+      "organismo": "Generalitat de Catalunya · Departament d'Educació i Formació Professional",
+      "cuerpo": {
+        "ca": "Educador/a d'educació especial (personal laboral, OPO 2026)",
+        "es": "Educador/a de educación especial (personal laboral, OPE 2026)"
+      },
+      "grupo": "C1",
+      "plazas": 593,
+      "estado": "prevista",
+      "referencia": "Acord GOV/61/2026 (OPO 2026)",
+      "diario": "DOGC",
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Previsió: places de l'oferta 2026 (44 reservades a persones amb discapacitat) que a 28/09/2026 encara no tenien convocatòria. L'anterior (Resolució EDF/4570/2024) va oferir 384 places.",
+        "es": "Previsión: plazas de la oferta 2026 (44 reservadas a personas con discapacidad) que a 28/09/2026 aún no tenían convocatoria. La anterior (Resolución EDF/4570/2024) ofreció 384 plazas."
+      }
+    },
+    {
+      "id": "educacio-teei-opo-2026",
+      "organismo": "Generalitat de Catalunya · Departament d'Educació i Formació Professional",
+      "cuerpo": {
+        "ca": "Tècnic/a especialista en educació infantil (TEEI, OPO 2026)",
+        "es": "Técnico/a especialista en educación infantil (TEEI, OPE 2026)"
+      },
+      "grupo": null,
+      "plazas": 280,
+      "estado": "prevista",
+      "referencia": "Acord GOV/61/2026 (OPO 2026)",
+      "diario": "DOGC",
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Previsió: places de l'oferta 2026 sense convocatòria a 28/09/2026. El procés anterior (Resolució EDF/1596/2025, 143 places) va fer l'examen el 07/03/2026 i és a la fase de concurs.",
+        "es": "Previsión: plazas de la oferta 2026 sin convocatoria a 28/09/2026. El proceso anterior (Resolución EDF/1596/2025, 143 plazas) hizo el examen el 07/03/2026 y está en fase de concurso."
+      }
+    },
+    {
+      "id": "educacio-auxiliar-educacio-especial-2026",
+      "organismo": "Generalitat de Catalunya · Departament d'Educació i Formació Professional",
+      "cuerpo": {
+        "ca": "Auxiliar d'educació especial (personal laboral)",
+        "es": "Auxiliar de educación especial (personal laboral)"
+      },
+      "grupo": "D1",
+      "plazas": 42,
+      "estado": "en curso",
+      "referencia": "Resolució EDF/2945/2026, de 8 d'agost (DOGC núm. 9736)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-08-24",
+      "plazoHasta": "2026-09-07",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "ESO i català B2; examen de 35 punts i mèrits de 65. La mateixa resolució convoca 28 places de logopeda i 7 d'audioprotesista. Fase de llistes d'admesos i data d'examen pendent; les fonts no coincideixen en el nombre de places.",
+        "es": "ESO y catalán B2; examen de 35 puntos y méritos de 65. La misma resolución convoca 28 plazas de logopeda y 7 de audioprotesista. Fase de listas de admitidos y fecha de examen pendiente; las fuentes no coinciden en el número de plazas."
+      }
+    },
+    {
+      "id": "generalitat-870-cos-superior",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Cos superior d'administració (A1), convocatòria 870",
+        "es": "Cuerpo superior de administración (A1), convocatoria 870"
+      },
+      "grupo": "A1",
+      "plazas": 376,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/212/2026, de 28 de gener (convocatòria 870; DOGC núm. 9595)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-02-02",
+      "plazoHasta": "2026-02-17",
+      "fechaExamen": "2026-06",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "211 places de torn lliure i 165 de promoció interna, en quatre opcions (general, jurídica, econòmica i prevenció). Fase de mèrits oberta des del 03/09/2026.",
+        "es": "211 plazas de turno libre y 165 de promoción interna, en cuatro opciones (general, jurídica, económica y prevención). Fase de méritos abierta desde el 03/09/2026."
+      }
+    },
+    {
+      "id": "generalitat-870-cos-administratiu",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Cos administratiu (C1), convocatòria 870",
+        "es": "Cuerpo administrativo (C1), convocatoria 870"
+      },
+      "grupo": "C1",
+      "plazas": 366,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/212/2026, de 28 de gener (convocatòria 870; DOGC núm. 9595)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-02-02",
+      "plazoHasta": "2026-02-17",
+      "fechaExamen": "2026-06",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "201 places de torn lliure i 165 de promoció interna. Examen fet al juny de 2026; fase de mèrits oberta des del 03/09/2026.",
+        "es": "201 plazas de turno libre y 165 de promoción interna. Examen celebrado en junio de 2026; fase de méritos abierta desde el 03/09/2026."
+      }
+    },
+    {
+      "id": "generalitat-870-cos-subaltern",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Cos subaltern d'administració (agrupació professional), convocatòria 870",
+        "es": "Cuerpo subalterno de administración (agrupación profesional), convocatoria 870"
+      },
+      "grupo": "AP",
+      "plazas": 228,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/212/2026, de 28 de gener (convocatòria 870; DOGC núm. 9595)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-02-02",
+      "plazoHasta": "2026-02-17",
+      "fechaExamen": "2026-06",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Només torn lliure, amb un torn de promoció habilitat d'ofici per al personal laboral fix. Proves al juny de 2026.",
+        "es": "Solo turno libre, con un turno de promoción habilitado de oficio para el personal laboral fijo. Pruebas en junio de 2026."
+      }
+    },
+    {
+      "id": "generalitat-907-estadistica",
+      "organismo": "Generalitat de Catalunya",
+      "cuerpo": {
+        "ca": "Cos superior d'administració, escala d'estadística i d'anàlisi (convocatòria 907)",
+        "es": "Cuerpo superior de administración, escala de estadística y de análisis (convocatoria 907)"
+      },
+      "grupo": "A1",
+      "plazas": 29,
+      "estado": "en curso",
+      "referencia": "Resolució PRE/3213/2026 (convocatòria 907)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2026-09-14",
+      "plazoHasta": "2026-09-29",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Totes de torn lliure (3 reservades a persones amb discapacitat); prova prevista per al primer trimestre de 2027, sense data, segons acadèmies.",
+        "es": "Todas de turno libre (3 reservadas a personas con discapacidad); prueba prevista para el primer trimestre de 2027, sin fecha, según academias."
+      }
+    },
+    {
+      "id": "ics-100-2025-zelador",
+      "organismo": "ICS",
+      "cuerpo": {
+        "ca": "Zelador/a (codi E-177, convocatòria 100-2025)",
+        "es": "Celador/a (código E-177, convocatoria 100-2025)"
+      },
+      "grupo": null,
+      "plazas": 313,
+      "estado": "en curso",
+      "referencia": "Resolució SLT/2380/2025, de 20 de juny (convocatòria 100-2025)",
+      "diario": "DOGC",
+      "fechaPublicacion": "2025-06-26",
+      "plazoHasta": "2025-07-31",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "251 places de torn lliure (218 a jornada completa i 33 a temps parcial) i 62 de promoció interna; certificat d'escolaritat i català B1. A 28/10/2026 no hi ha data d'examen.",
+        "es": "251 plazas de turno libre (218 a jornada completa y 33 a tiempo parcial) y 62 de promoción interna; certificado de escolaridad y catalán B1. A 28/10/2026 no hay fecha de examen."
+      }
+    },
+    {
+      "id": "barcelona-guardia-urbana-agents-2025",
+      "organismo": "Ajuntament de Barcelona",
+      "cuerpo": {
+        "ca": "Agent de la Guàrdia Urbana de Barcelona",
+        "es": "Agente de la Guardia Urbana de Barcelona"
+      },
+      "grupo": null,
+      "plazas": 134,
+      "estado": "en curso",
+      "referencia": "Bases aprovades per la Comissió de Govern el 06/03/2025",
+      "diario": "BOPB",
+      "fechaPublicacion": "2025-03-12",
+      "plazoHasta": "2025-04-08",
+      "fechaExamen": null,
+      "url": "https://ajuntament.barcelona.cat/guardiaurbana/en/noticia/1494885",
+      "oposicion": null,
+      "verificado": "fuente primaria",
+      "nota": {
+        "ca": "100 places de l'OPO 2025 i 34 d'ofertes anteriors, ampliables amb vacants de l'OPO 2026. Set proves; l'Ajuntament volia acabar el procés a final de 2026. No s'han trobat resultats de la primera prova ni cap convocatòria d'agents del 2026.",
+        "es": "100 plazas de la OPE 2025 y 34 de ofertas anteriores, ampliables con vacantes de la OPE 2026. Siete pruebas; el Ayuntamiento quería terminar el proceso a finales de 2026. No se han encontrado resultados de la primera prueba ni ninguna convocatoria de agentes de 2026."
+      }
+    },
+    {
+      "id": "barcelona-127-2026-a1-a2-c1",
+      "organismo": "Ajuntament de Barcelona",
+      "cuerpo": {
+        "ca": "Places dels subgrups A1, A2 i C1, concurs oposició lliure (exp. 127/2026)",
+        "es": "Plazas de los subgrupos A1, A2 y C1, concurso-oposición libre (exp. 127/2026)"
+      },
+      "grupo": "varios",
+      "plazas": null,
+      "estado": "en curso",
+      "referencia": "Bases de la convocatòria de l'any 2026 per als subgrups A1, A2 i C1 (exp. 127/2026)",
+      "diario": "BOPB",
+      "fechaPublicacion": "2026-07-02",
+      "plazoHasta": "2026-07-28",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "No s'ha pogut consultar el nombre total de places; un resum de CCOO de l'oferta 2026 cita 17 places de TS Gestió (A1) i 35 de Gestió d'Administració General (A2). El termini fins al 28/07/2026 surt de CCOO.",
+        "es": "No se ha podido consultar el número total de plazas; un resumen de CCOO de la oferta 2026 cita 17 plazas de TS Gestión (A1) y 35 de Gestión de Administración General (A2). El plazo hasta el 28/07/2026 procede de CCOO."
+      }
+    },
+    {
+      "id": "badalona-guardia-urbana-2026",
+      "organismo": "Ajuntament de Badalona",
+      "cuerpo": {
+        "ca": "Agent de la Guàrdia Urbana de Badalona, oposició lliure",
+        "es": "Agente de la Guardia Urbana de Badalona, oposición libre"
+      },
+      "grupo": "C1",
+      "plazas": 67,
+      "estado": "en curso",
+      "referencia": null,
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": "2026-07-09",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "50 places de l'OPO 2026 (creades a la plantilla, BOPB del 05/06/2026) i 17 de reposició; 40% reservat a dones. Llistes d'admesos del 14 i el 30/07/2026; data d'examen no anunciada.",
+        "es": "50 plazas de la OPE 2026 (creadas en la plantilla, BOPB del 05/06/2026) y 17 de reposición; 40% reservado a mujeres. Listas de admitidos del 14 y el 30/07/2026; fecha de examen no anunciada."
+      }
+    },
+    {
+      "id": "terrassa-policia-municipal-2026",
+      "organismo": "Ajuntament de Terrassa",
+      "cuerpo": {
+        "ca": "Agent de la Policia Municipal de Terrassa, oposició lliure",
+        "es": "Agente de la Policía Municipal de Terrassa, oposición libre"
+      },
+      "grupo": null,
+      "plazas": 7,
+      "estado": "en curso",
+      "referencia": "Bases 1f/AGENTS/2026",
+      "diario": "BOPB",
+      "fechaPublicacion": "2026-03-03",
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "No s'ha pogut comprovar el termini ni en quina fase és.",
+        "es": "No se ha podido comprobar el plazo ni en qué fase está."
+      }
+    },
+    {
+      "id": "sabadell-policia-municipal-2026",
+      "organismo": "Ajuntament de Sabadell",
+      "cuerpo": {
+        "ca": "Agent/a de la Policia Municipal de Sabadell, oposició lliure",
+        "es": "Agente de la Policía Municipal de Sabadell, oposición libre"
+      },
+      "grupo": null,
+      "plazas": 5,
+      "estado": "en curso",
+      "referencia": "Decret núm. 3041/2026 (codi OPC10326)",
+      "diario": "BOPB",
+      "fechaPublicacion": "2026-03-18",
+      "plazoHasta": "2026-04-17",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "2 places reservades a dones; batxillerat, català B2 i permisos B i A2. Un agregador situa el final del termini el 24/04/2026.",
+        "es": "2 plazas reservadas a mujeres; bachillerato, catalán B2 y permisos B y A2. Un agregador sitúa el final del plazo el 24/04/2026."
+      }
+    },
+    {
+      "id": "mataro-policia-local-2026",
+      "organismo": "Ajuntament de Mataró",
+      "cuerpo": {
+        "ca": "Agent de la Policia Local de Mataró, oposició lliure",
+        "es": "Agente de la Policía Local de Mataró, oposición libre"
+      },
+      "grupo": null,
+      "plazas": 15,
+      "estado": "en curso",
+      "referencia": "Decret de març de 2026 (OPO 2026)",
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Català B2, permisos B i A2; es procurarà que el 40% de les places siguin per a dones. Dades del CIDO; no s'ha pogut comprovar el termini.",
+        "es": "Catalán B2, permisos B y A2; se procurará que el 40% de las plazas sean para mujeres. Datos del CIDO; no se ha podido comprobar el plazo."
+      }
+    },
+    {
+      "id": "tarragona-guardia-urbana-2026",
+      "organismo": "Ajuntament de Tarragona",
+      "cuerpo": {
+        "ca": "Agent de la Guàrdia Urbana de Tarragona, oposició lliure",
+        "es": "Agente de la Guardia Urbana de Tarragona, oposición libre"
+      },
+      "grupo": null,
+      "plazas": 12,
+      "estado": "en curso",
+      "referencia": null,
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": null,
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Publicada el març de 2026 segons el Diari Més; 5 places reservades a dones i 1 més per a vacants futures. Bases a la seu electrònica; no s'ha pogut comprovar el termini.",
+        "es": "Publicada en marzo de 2026 según el Diari Més; 5 plazas reservadas a mujeres y 1 más para vacantes futuras. Bases en la sede electrónica; no se ha podido comprobar el plazo."
+      }
+    },
+    {
+      "id": "hospitalet-policia-local-2026",
+      "organismo": "Ajuntament de L'Hospitalet de Llobregat",
+      "cuerpo": {
+        "ca": "Agent de la Guàrdia Urbana de L'Hospitalet",
+        "es": "Agente de la Guardia Urbana de L'Hospitalet"
+      },
+      "grupo": null,
+      "plazas": 7,
+      "estado": "en curso",
+      "referencia": null,
+      "diario": null,
+      "fechaPublicacion": null,
+      "plazoHasta": "2026-06-22",
+      "fechaExamen": null,
+      "url": null,
+      "oposicion": null,
+      "verificado": "fuente secundaria",
+      "nota": {
+        "ca": "Dada d'una acadèmia; no s'ha pogut comprovar al butlletí oficial ni en quina fase és.",
+        "es": "Dato de una academia; no se ha podido comprobar en el boletín oficial ni en qué fase está."
+      }
+    }
+  ]
+}

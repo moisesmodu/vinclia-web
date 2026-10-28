@@ -1,0 +1,334 @@
+{
+  "slug": "auxiliar-administratiu-generalitat",
+  "pais": "es",
+  "activa": true,
+  "nombre": {
+    "es": "Auxiliar Administrativo de la Generalitat de Catalunya",
+    "ca": "Auxiliar Administratiu de la Generalitat de Catalunya"
+  },
+  "nombreCorto": {
+    "es": "Auxiliar Generalitat",
+    "ca": "Auxiliar Generalitat"
+  },
+  "cuerpo": {
+    "es": "Cuerpo auxiliar de administración, escala auxiliar administrativa (subgrupo C2), turno libre",
+    "ca": "Cos auxiliar d'administració, escala auxiliar administrativa (subgrup C2), torn lliure"
+  },
+  "administracion": "Generalitat de Catalunya",
+  "convocatoria": {
+    "referencia": "Resolució PRE/212/2026, de 28 de gener, de convocatòria de processos de selecció per a l'ingrés a diversos cossos i escales de personal funcionari de l'Administració de la Generalitat de Catalunya (convocatòria 870; procés 878: cos auxiliar d'administració, escala auxiliar administrativa)",
+    "diario": "DOGC",
+    "numero": "9595",
+    "fecha": "2026-02-02",
+    "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+    "pdfUrl": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9595/2132526.pdf",
+    "plazas": 114,
+    "estado": "en curso",
+    "notas": "Convocatoria 870 = 31 procesos (1.325 plazas, códigos de trámite 871-905); el auxiliar administrativo es el procés 878. 114 plazas en total: 63 de turno libre (de ellas 9 reservadas a discapacidad y 3 a discapacidad intelectual, según academia) + 51 de promoción interna; plazas de las OEP 2024 y 2025 (Acords GOV/96/2024 y GOV/101/2025). Prueba de la fase de oposición celebrada el 28/06/2026 (las pruebas de la 870 fueron el 27 y 28 de junio, según web.gencat.cat); enunciados y plantillas publicados el 29/06/2026 en el Portal d'accés de les persones aspirants (dato de academia). A fecha 28/10/2026 el proceso está en fase de concurso de méritos. La fecha de la resolución en el DOGC es 'de 28 de gener' (no 27). TEMARIO: 15 temas aprobados por la Resolució PRE/2423/2022, de 27 de juliol (DOGC núm. 8720, de 29.7.2022), que según las academias es el aplicado en la 870 y el vigente; el texto de los temas se ha reconstruido de academias (OpositaTest, Redopositor, Aprendemas) porque DOGC y gencat.cat estaban bloqueados: los títulos 1, 2, 4, 5, 7, 8, 11, 12, 14 y 15 coinciden literalmente entre fuentes; el 3, 6, 9, 10 y 13 pueden estar incompletos (el 13 se ha completado con e-Notum/e-Valisa/e-Tauler, que las academias citan como parte del tema) y OpositaTest titula el 15 'El règim disciplinari. Igualtat', por lo que se han añadido fuentes de igualdad a ese tema. Cotejar con el annex de PRE/212/2026 o PRE/2423/2022. FORMATO: penalización (-1/4 del valor del acierto, fórmula (A - E/4) x P / N, sin contar las de reserva), escala 0-60 y mínimo 30, y concurso de 40 puntos aparecen en el texto del DOGC/web.gencat.cat (fuente primaria vista solo a través de resúmenes del buscador). El número de preguntas (75 + 7 de reserva: 35 + 3 sobre todo el temario y 40 + 4 prácticas) y la duración (2 h 45 min) proceden de academias (CEF, OpositaTest, Redopositor) y no se pudieron leer en el DOGC; otra academia (Vence) da 25 + 30 preguntas, que probablemente confunde con la promoción interna (55 + 5 según el DOGC). En la convocatoria anterior (810, 2023, procés 823) el test era de 60 + 5 preguntas en 90 minutos (academia). Nota sobre fuentes BOE: la Ley 13/1989 (BOE-A-1990-645) usa encabezados 'Art. N.' que motor/ley.mjs no trocea en artículos (indice vacío), por lo que la verificación automática de citas fallará con ella hasta adaptar el parser; el Decret legislatiu 1/1997 y el 3/2002 no tienen ID BOE en legalize-es y figuran como DOGC-f-1997-90001 y DOGC-f-2002-90024 (comprobados con motor/ley.mjs). El RGPD no está en el BOE consolidado: va como fuente web (EUR-Lex).",
+    "verificado": "fuente primaria parcial: referencia, DOGC 9595 de 2.2.2026, procés 878, fechas de prueba, penalización 1/4, escala 0-60/mínimo 30 y concurso de 40 puntos confirmados en DOGC/web.gencat.cat a través de los resúmenes del buscador (sin poder abrir el PDF). Fuente secundaria (academias): reparto de plazas 63+51, 75+7 preguntas, 165 minutos y redacción literal del temario. Comprobar."
+  },
+  "examen": {
+    "preguntas": 75,
+    "reserva": 7,
+    "opciones": 4,
+    "minutos": 165,
+    "penalizacion": 0.25,
+    "notaMaxima": 60,
+    "notaCorte": 30,
+    "descripcion": {
+      "es": "Fase de oposición (60 puntos): un único ejercicio teórico-práctico, obligatorio y eliminatorio, tipo test con 4 respuestas alternativas y una sola correcta. 75 preguntas más 7 de reserva: 35 (+3) sobre todo el temario y 40 (+4) de carácter práctico. Duración: 2 horas y 45 minutos. Cada respuesta errónea resta un cuarto del valor de una acertada; las preguntas en blanco o con más de una respuesta no puntúan. Se califica de 0 a 60 puntos y hay que obtener un mínimo de 30 para superarlo. Después, fase de concurso de méritos (40 puntos).",
+      "ca": "Fase d'oposició (60 punts): un únic exercici teoricopràctic, obligatori i eliminatori, tipus test amb 4 respostes alternatives i només una de correcta. 75 preguntes més 7 de reserva: 35 (+3) sobre la totalitat del temari i 40 (+4) de caràcter pràctic. Durada: 2 hores i 45 minuts. Cada resposta errònia descompta una quarta part del valor d'una resposta encertada; les preguntes en blanc o amb més d'una resposta no puntuen. Es qualifica de 0 a 60 punts i cal obtenir un mínim de 30 per superar-lo. Després, fase de concurs de mèrits (40 punts)."
+    },
+    "otrasPruebas": {
+      "es": [
+        "Conocimientos de lengua catalana nivel C1 (eliminatoria; exentos quienes lo acrediten)",
+        "Conocimientos de lengua castellana para aspirantes sin nacionalidad española (si no lo acreditan)",
+        "Fase de concurso de méritos (40 puntos)"
+      ],
+      "ca": [
+        "Coneixements de llengua catalana de nivell C1 (eliminatòria; n'estan exempts els qui l'acreditin)",
+        "Coneixements de llengua castellana per a aspirants sense nacionalitat espanyola (si no l'acrediten)",
+        "Fase de concurs de mèrits (40 punts)"
+      ]
+    }
+  },
+  "temas": [
+    {
+      "n": 1,
+      "titulo": {
+        "es": "Marco constitucional: los principios, los derechos y deberes fundamentales de las personas y sus garantías. El Estatuto de Autonomía de Cataluña: principios rectores, derechos y deberes, tipología de competencias. El Gobierno y el presidente o la presidenta de la Generalitat.",
+        "ca": "Marc constitucional: els principis, els drets i deures fonamentals de les persones i les seves garanties. L'Estatut d'autonomia de Catalunya: principis rectors, drets i deures, tipologia de competències. El Govern i el president o la presidenta de la Generalitat."
+      },
+      "slug": "constitucio-estatut-govern",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española de 1978", "articulos": "1-9, 10-55" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "1-14, 15-54, 67-70, 110-115" },
+        { "tipo": "boe", "id": "BOE-A-2008-19526", "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno", "articulos": "1-35" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 2,
+      "titulo": {
+        "es": "La organización de la Administración de la Generalitat de Cataluña: principios generales y órganos. Los departamentos: estructura y atribuciones.",
+        "ca": "L'organització de l'Administració de la Generalitat de Catalunya: principis generals i òrgans. Els departaments: estructura i atribucions."
+      },
+      "slug": "organitzacio-administracio-generalitat",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1990-645", "norma": "Ley 13/1989, de 14 de diciembre, de organización, procedimiento y régimen jurídico de la Administración de la Generalidad de Cataluña", "articulos": "1-27 (título preliminar y título I)" },
+        { "tipo": "boe", "id": "BOE-A-2008-19526", "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno", "articulos": "13-25" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, Estatuto de Autonomía de Cataluña", "articulos": "71" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 3,
+      "titulo": {
+        "es": "Buen gobierno y transparencia: concepto y principios. La Administración pública: concepto y principios. El ciudadano y la ciudadana como titulares de derechos ante la Administración; derecho de acceso a los servicios y a la información pública.",
+        "ca": "Bon govern i transparència: concepte i principis. L'Administració pública: concepte i principis. El ciutadà i la ciutadana com a titular de drets davant l'Administració; dret d'accés als serveis i a la informació pública."
+      },
+      "slug": "bon-govern-transparencia",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-470", "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno (Cataluña)", "articulos": "1-8, 18-24, 54-61, 65-70" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "21-31" },
+        { "tipo": "boe", "id": "BOE-A-2015-10566", "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público", "articulos": "3" },
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "13" },
+        { "tipo": "boe", "id": "BOE-A-1998-2989", "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística", "articulos": "2-4, 9-10" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 4,
+      "titulo": {
+        "es": "El derecho a la protección de datos de carácter personal: definición. Categorías de datos de carácter personal. El consentimiento. El derecho de información. Los derechos de las personas interesadas. El delegado y la delegada de protección de datos.",
+        "ca": "El dret a la protecció de dades de caràcter personal: definició. Categories de dades de caràcter personal. El consentiment. El dret d'informació. Els drets de les persones interessades. El delegat i delegada de protecció de dades."
+      },
+      "slug": "proteccio-dades",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2018-16673", "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales", "articulos": "1-18, 34-37" },
+        { "tipo": "web", "norma": "Reglamento (UE) 2016/679 (Reglamento general de protección de datos)", "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj", "articulos": "4-9, 12-22, 37-39" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 5,
+      "titulo": {
+        "es": "Concepto de procedimiento administrativo. Las personas interesadas. Los plazos. Los actos administrativos: requisitos, eficacia, nulidad y anulabilidad.",
+        "ca": "Concepte de procediment administratiu. Les persones interessades. Els terminis. Els actes administratius: requisits, eficàcia, nul·litat i anul·labilitat."
+      },
+      "slug": "procediment-actes-administratius",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "1-12, 29-33, 34-52" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "53-58" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 6,
+      "titulo": {
+        "es": "Las fases del procedimiento administrativo: iniciación, ordenación e instrucción.",
+        "ca": "Les fases del procediment administratiu: iniciació, ordenació i instrucció."
+      },
+      "slug": "fases-procediment",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "54-83" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "43-52" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 7,
+      "titulo": {
+        "es": "El presupuesto de la Generalitat de Cataluña: concepto y estructura.",
+        "ca": "El pressupost de la Generalitat de Catalunya: concepte i estructura."
+      },
+      "slug": "pressupost-generalitat",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "DOGC-f-2002-90024", "norma": "Decreto Legislativo 3/2002, de 24 de diciembre, por el que se aprueba el Texto refundido de la Ley de finanzas públicas de Cataluña", "articulos": "27-53 bis (capítulo V: el presupuesto de la Generalitat)" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, Estatuto de Autonomía de Cataluña", "articulos": "201-202, 212" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 8,
+      "titulo": {
+        "es": "La función pública: clases de personal empleado público. Adquisición y pérdida de la relación de servicio. Situaciones administrativas. Provisión de puestos de trabajo y movilidad. El régimen de incompatibilidades.",
+        "ca": "La funció pública: les classes de personal empleat públic. L'adquisició i la pèrdua de la relació de servei. Les situacions administratives. La provisió de llocs de treball i la mobilitat. El règim d'incompatibilitats."
+      },
+      "slug": "funcio-publica",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-11719", "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público", "articulos": "8-13, 62-68, 78-92" },
+        { "tipo": "boe", "id": "DOGC-f-1997-90001", "norma": "Decreto Legislativo 1/1997, de 31 de octubre, Texto único de los preceptos de determinados textos legales vigentes en Cataluña en materia de función pública", "articulos": "10-15, 34-41, 61-79, 84-91" },
+        { "tipo": "boe", "id": "BOE-A-1987-28478", "norma": "Ley 21/1987, de 26 de noviembre, de incompatibilidades del personal al servicio de la Administración de la Generalidad", "articulos": "1-24" },
+        { "tipo": "boe", "id": "BOE-A-1985-151", "norma": "Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas", "articulos": "primero-vigésimo (numeración ordinal en el texto: art. primero a veinte)" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 9,
+      "titulo": {
+        "es": "Atención a la ciudadanía y comunicación interpersonal. La atención telefónica. Los servicios de las oficinas de atención ciudadana.",
+        "ca": "Atenció a la ciutadania i comunicació interpersonal. L'atenció telefònica. Els serveis de les oficines d'atenció ciutadana."
+      },
+      "slug": "atencio-ciutadania",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "21-31, 40" },
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "12-13, 16" },
+        { "tipo": "boe", "id": "BOE-A-2015-470", "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno (Cataluña)", "articulos": "58-61" },
+        { "tipo": "boe", "id": "BOE-A-1998-2989", "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística", "articulos": "9-10" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 10,
+      "titulo": {
+        "es": "La Administración digital: sede electrónica y punto de acceso general electrónico. Certificado digital y firma electrónica. La representación digital. Los registros de entrada y salida. El Registro electrónico general de la Administración de la Generalitat de Cataluña.",
+        "ca": "L'Administració digital: seu electrònica i punt d'accés general electrònic. Certificat digital i signatura electrònica. La representació digital. Els registres d'entrada i sortida. El Registre electrònic general de l'Administració de la Generalitat de Catalunya."
+      },
+      "slug": "administracio-digital",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "5-6, 9-12, 14, 16" },
+        { "tipo": "boe", "id": "BOE-A-2015-10566", "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público", "articulos": "38-46" },
+        { "tipo": "boe", "id": "BOE-A-2010-13843", "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña", "articulos": "1-5, 13-14" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "24-25, 41-45" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 11,
+      "titulo": {
+        "es": "La gestión documental en la Administración de la Generalitat de Cataluña. La organización de los documentos electrónicos. La transferencia, el préstamo y la consulta de documentos.",
+        "ca": "La gestió documental a l'Administració de la Generalitat de Catalunya. L'organització dels documents electrònics. La transferència, el préstec i la consulta de documents."
+      },
+      "slug": "gestio-documental",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2001-16691", "norma": "Ley 10/2001, de 13 de julio, de Archivos y Documentos (Cataluña)", "articulos": "1-10, 28, 34-36" },
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "17, 26-28, 70" },
+        { "tipo": "boe", "id": "BOE-A-2015-10566", "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público", "articulos": "46" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 12,
+      "titulo": {
+        "es": "Documentación administrativa: estructura y criterios de redacción de la carta, el certificado, la citación, la diligencia, la notificación y la solicitud. Los usos no sexistas ni discriminatorios de la lengua en el lenguaje administrativo.",
+        "ca": "Documentació administrativa: estructura i criteris de redacció de la carta, el certificat, la citació, la diligència, la notificació i la sol·licitud. Els usos no sexistes ni discriminatoris de la llengua en el llenguatge administratiu."
+      },
+      "slug": "documentacio-administrativa",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "40-46, 66" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "47, 49, 56" },
+        { "tipo": "boe", "id": "BOE-A-1998-2989", "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística", "articulos": "9-10, 14" },
+        { "tipo": "boe", "id": "BOE-A-2015-9676", "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres (Cataluña)", "articulos": "3" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 13,
+      "titulo": {
+        "es": "Uso de las tecnologías de la información y la comunicación en la Administración de la Generalitat de Cataluña. Copia auténtica (e-Còpia) y digitalización segura. Notificación electrónica (e-Notum), comunicaciones entre administraciones (e-Valisa) y tablón electrónico (e-Tauler).",
+        "ca": "Ús de les tecnologies de la informació i la comunicació a l'Administració de la Generalitat de Catalunya. Còpia autèntica (e-Còpia) i digitalització segura. Notificació electrònica (e-Notum), comunicacions entre administracions (e-Valisa) i tauler electrònic (e-Tauler)."
+      },
+      "slug": "tic-generalitat",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "27, 41-43, 45" },
+        { "tipo": "boe", "id": "BOE-A-2010-13843", "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña", "articulos": "4-5, 19-25" },
+        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "43-47, 56-58" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 14,
+      "titulo": {
+        "es": "Los derechos de los empleados y empleadas públicos: derechos individuales y derechos individuales ejercidos colectivamente. Principios éticos y de conducta de los empleados y empleadas públicos.",
+        "ca": "Els drets dels empleats i empleades públics: drets individuals i drets individuals exercits col·lectivament. Principis ètics i de conducta dels empleats i empleades públics."
+      },
+      "slug": "drets-deures-empleats-publics",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-11719", "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público", "articulos": "14-15, 52-54" },
+        { "tipo": "boe", "id": "DOGC-f-1997-90001", "norma": "Decreto Legislativo 1/1997, de 31 de octubre, Texto único en materia de función pública (Cataluña)", "articulos": "92-108" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 15,
+      "titulo": {
+        "es": "El régimen disciplinario. Los delitos contra la Administración pública: la infidelidad en la custodia de documentos y la violación de secretos.",
+        "ca": "El règim disciplinari. Els delictes contra l'Administració pública: la infidelitat en la custòdia de documents i la violació de secrets."
+      },
+      "slug": "regim-disciplinari",
+      "bloque": { "es": "Temario único", "ca": "Temari únic" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-11719", "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público", "articulos": "93-98" },
+        { "tipo": "boe", "id": "DOGC-f-1997-90001", "norma": "Decreto Legislativo 1/1997, de 31 de octubre, Texto único en materia de función pública (Cataluña)", "articulos": "113-122" },
+        { "tipo": "boe", "id": "BOE-A-1995-25444", "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal", "articulos": "413-418" },
+        { "tipo": "boe", "id": "BOE-A-2015-9676", "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres (Cataluña) — solo si el tema incluye igualdad (OpositaTest lo titula 'El règim disciplinari. Igualtat')", "articulos": "1-3, 15-16, 33" },
+        { "tipo": "boe", "id": "BOE-A-2021-1663", "norma": "Ley 19/2020, de 30 de diciembre, de igualdad de trato y no discriminación (Cataluña) — ídem", "articulos": "1-6" },
+        { "tipo": "boe", "id": "BOE-A-2007-6115", "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres — ídem", "articulos": "1-15, 51-68" }
+      ],
+      "peso": 1
+    }
+  ],
+  "examenesAnteriores": [
+    {
+      "anio": 2026,
+      "titulo": "Convocatòria 870, procés 878 (auxiliar administrativa, torn lliure): enunciat i plantilla de la prova del 28/06/2026, publicats el 29/06/2026 al Portal d'accés de les persones aspirants (segons academia; URL directa del PDF no localitzada)",
+      "url": "https://web.gencat.cat/en/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870",
+      "plantilla": null
+    },
+    {
+      "anio": 2023,
+      "titulo": "Convocatòria 810, procés 823 (auxiliar administrativa): enunciat i plantilla de correcció al conjunt de dades obertes 'Enunciats dels exàmens de les convocatòries per a l'accés a la funció pública de la Generalitat de Catalunya' (filtrar per codi de procés 823; conté exàmens des de 2007)",
+      "url": "https://analisi.transparenciacatalunya.cat/Sector-P-blic/Enunciats-dels-ex-mens-de-les-convocat-ries-per-a-/6p3u-9s8y",
+      "plantilla": "https://analisi.transparenciacatalunya.cat/Sector-P-blic/Enunciats-dels-ex-mens-de-les-convocat-ries-per-a-/6p3u-9s8y"
+    },
+    {
+      "anio": 2024,
+      "titulo": "Mateix conjunt de dades (rèplica a datos.gob.es): enunciats i plantilles de les convocatòries anteriors del cos auxiliar d'administració",
+      "url": "https://datos.gob.es/en/catalogo/a09002970-enunciados-de-los-examenes-de-las-convocatorias-para-el-acceso-a-la-funcion-publica-de-la-generalitat-de-catalunya",
+      "plantilla": null
+    }
+  ],
+  "seo": {
+    "palabrasClave": {
+      "es": [
+        "test auxiliar administrativo generalitat de catalunya",
+        "oposiciones auxiliar administrativo generalitat catalunya 2026",
+        "temario auxiliar administrativo generalitat catalunya",
+        "examen auxiliar administrativo generalitat catalunya",
+        "convocatoria 870 generalitat",
+        "test cuerpo auxiliar generalitat catalunya",
+        "exámenes oficiales auxiliar generalitat catalunya",
+        "plantilla examen auxiliar generalitat 2026",
+        "oposiciones generalitat catalunya c2",
+        "test gratis auxiliar administrativo cataluña"
+      ],
+      "ca": [
+        "test auxiliar administratiu generalitat",
+        "oposicions auxiliar administratiu generalitat de catalunya",
+        "temari auxiliar administratiu generalitat",
+        "examen auxiliar administratiu generalitat 2026",
+        "convocatòria 870 generalitat auxiliar",
+        "test cos auxiliar d'administració",
+        "exàmens oficials auxiliar administratiu generalitat",
+        "plantilla examen auxiliar generalitat",
+        "oposicions generalitat c2",
+        "test gratuït auxiliar administratiu generalitat"
+      ]
+    }
+  }
+}

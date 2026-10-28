@@ -1,0 +1,492 @@
+[
+  {
+    "id": "ajun-t07-001",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 20.1 de la Ley de Bases del Régimen Local, ¿qué órganos existen en todos los ayuntamientos?",
+      "opciones": [
+        "El Alcalde, el Pleno y la Junta de Gobierno Local",
+        "El Alcalde, la Junta de Gobierno Local y las Comisiones informativas",
+        "El Alcalde, los Tenientes de Alcalde y el Pleno",
+        "El Pleno, la Junta de Gobierno Local y la Comisión Especial de Sugerencias y Reclamaciones"
+      ],
+      "explicacion": "El artículo 20.1.a) LBRL establece que el Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los ayuntamientos; la Junta de Gobierno Local solo es obligatoria en los municipios de más de 5.000 habitantes. También la Comisión Especial de Cuentas existe en todos los municipios (art. 20.1.e)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 20.1 de la Llei de bases del règim local, quins òrgans existeixen a tots els ajuntaments?",
+      "opciones": [
+        "L'alcalde, el Ple i la junta de govern local",
+        "L'alcalde, la junta de govern local i les comissions informatives",
+        "L'alcalde, els tinents d'alcalde i el Ple",
+        "El Ple, la junta de govern local i la comissió especial de suggeriments i reclamacions"
+      ],
+      "explicacion": "L'article 20.1.a) LBRL estableix que l'alcalde, els tinents d'alcalde i el Ple existeixen a tots els ajuntaments; la junta de govern local només és obligatòria als municipis de més de 5.000 habitants. També la comissió especial de comptes existeix a tots els municipis (art. 20.1.e)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "20.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a20"
+    },
+    "cita": "a) El Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los ayuntamientos.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-002",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿En qué municipios es obligatoria la existencia de la Junta de Gobierno Local según la Ley de Bases del Régimen Local?",
+      "opciones": [
+        "En los de población superior a 5.000 habitantes",
+        "En los de población superior a 20.000 habitantes",
+        "En los de población superior a 1.000 habitantes",
+        "En todos los municipios"
+      ],
+      "explicacion": "El artículo 20.1.b) LBRL exige la Junta de Gobierno Local en los municipios de más de 5.000 habitantes; en los de menos, existe si lo dispone el reglamento orgánico o lo acuerda el Pleno."
+    },
+    "ca": {
+      "enunciado": "En quins municipis és obligatòria l'existència de la junta de govern local segons la Llei de bases del règim local?",
+      "opciones": [
+        "En els de població superior a 5.000 habitants",
+        "En els de població superior a 20.000 habitants",
+        "En els de població superior a 1.000 habitants",
+        "En tots els municipis"
+      ],
+      "explicacion": "L'article 20.1.b) LBRL exigeix la junta de govern local als municipis de més de 5.000 habitants; als de menys, existeix si ho disposa el reglament orgànic o ho acorda el Ple."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "20.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a20"
+    },
+    "cita": "b) La Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes y en los de menos, cuando así lo disponga su reglamento orgánico o así lo acuerde el Pleno de su ayuntamiento.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-003",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cómo se integra la Junta de Gobierno Local según el artículo 23.1 de la Ley de Bases del Régimen Local?",
+      "opciones": [
+        "Por el Alcalde y todos los Tenientes de Alcalde elegidos por el Pleno",
+        "Por el Alcalde y un número de Concejales no superior a la mitad del número legal, elegidos por el Pleno",
+        "Por los portavoces de todos los grupos políticos, presididos por el Alcalde",
+        "Por el Alcalde y un número de Concejales no superior al tercio del número legal, nombrados y separados libremente por aquel"
+      ],
+      "explicacion": "El artículo 23.1 LBRL integra la Junta de Gobierno Local por el Alcalde y un número de Concejales no superior al tercio del número legal, que el Alcalde nombra y separa libremente dando cuenta al Pleno."
+    },
+    "ca": {
+      "enunciado": "Com s'integra la junta de govern local segons l'article 23.1 de la Llei de bases del règim local?",
+      "opciones": [
+        "Per l'alcalde i tots els tinents d'alcalde elegits pel Ple",
+        "Per l'alcalde i un nombre de regidors no superior a la meitat del nombre legal, elegits pel Ple",
+        "Pels portaveus de tots els grups polítics, presidits per l'alcalde",
+        "Per l'alcalde i un nombre de regidors no superior al terç del nombre legal, nomenats i separats lliurement per aquest"
+      ],
+      "explicacion": "L'article 23.1 LBRL integra la junta de govern local per l'alcalde i un nombre de regidors no superior al terç del nombre legal, que l'alcalde nomena i separa lliurement donant-ne compte al Ple."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "23.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a23"
+    },
+    "cita": "La Junta de Gobierno Local se integra por el Alcalde y un número de Concejales no superior al tercio del número legal de los mismos, nombrados y separados libremente por aquél, dando cuenta al Pleno.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-004",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes atribuciones del Alcalde NO puede delegarse según el artículo 21.3 de la Ley de Bases del Régimen Local?",
+      "opciones": [
+        "El otorgamiento de las licencias",
+        "Decidir los empates con el voto de calidad",
+        "Sancionar las faltas por infracción de las ordenanzas municipales",
+        "Dirigir, inspeccionar e impulsar los servicios y obras municipales"
+      ],
+      "explicacion": "El artículo 21.3 LBRL excluye de la delegación, entre otras, convocar y presidir el Pleno y la Junta de Gobierno Local y decidir los empates con voto de calidad. El otorgamiento de licencias, la sanción por infracción de ordenanzas y la dirección de servicios y obras son delegables."
+    },
+    "ca": {
+      "enunciado": "Quina de les atribucions següents de l'alcalde NO es pot delegar segons l'article 21.3 de la Llei de bases del règim local?",
+      "opciones": [
+        "L'atorgament de les llicències",
+        "Decidir els empats amb el vot de qualitat",
+        "Sancionar les faltes per infracció de les ordenances municipals",
+        "Dirigir, inspeccionar i impulsar els serveis i obres municipals"
+      ],
+      "explicacion": "L'article 21.3 LBRL exclou de la delegació, entre altres, convocar i presidir el Ple i la junta de govern local i decidir els empats amb vot de qualitat. L'atorgament de llicències, la sanció per infracció d'ordenances i la direcció de serveis i obres són delegables."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "21.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a21"
+    },
+    "cita": "El Alcalde puede delegar el ejercicio de sus atribuciones, salvo las de convocar y presidir las sesiones del Pleno y de la Junta de Gobierno Local, decidir los empates con el voto de calidad",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-005",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes atribuciones del Pleno municipal puede delegarse en el Alcalde o en la Junta de Gobierno Local?",
+      "opciones": [
+        "La aprobación de la plantilla de personal y de la relación de puestos de trabajo",
+        "El control y la fiscalización de los órganos de gobierno",
+        "El ejercicio de acciones judiciales y administrativas en materias de competencia plenaria",
+        "La aprobación de las formas de gestión de los servicios"
+      ],
+      "explicacion": "El artículo 22.4 LBRL permite delegar las atribuciones del Pleno salvo las de los párrafos a), b), c), d), e), f), g), h), i), l) y p) del apartado 2 y las del apartado 3. El ejercicio de acciones judiciales en materias plenarias es el párrafo j), que no figura entre las excepciones."
+    },
+    "ca": {
+      "enunciado": "Quina de les atribucions següents del Ple municipal es pot delegar en l'alcalde o en la junta de govern local?",
+      "opciones": [
+        "L'aprovació de la plantilla de personal i de la relació de llocs de treball",
+        "El control i la fiscalització dels òrgans de govern",
+        "L'exercici d'accions judicials i administratives en matèries de competència plenària",
+        "L'aprovació de les formes de gestió dels serveis"
+      ],
+      "explicacion": "L'article 22.4 LBRL permet delegar les atribucions del Ple llevat de les dels paràgrafs a), b), c), d), e), f), g), h), i), l) i p) de l'apartat 2 i les de l'apartat 3. L'exercici d'accions judicials en matèries plenàries és el paràgraf j), que no figura entre les excepcions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "22.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a22"
+    },
+    "cita": "El Pleno puede delegar el ejercicio de sus atribuciones en el Alcalde y en la Junta de Gobierno Local, salvo las enunciadas en el apartado 2, párrafos a), b), c), d), e), f), g), h), i), l) y p), y en el apartado 3 de este artículo.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-006",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo se realizan las votaciones del Pleno sobre la moción de censura al Alcalde y sobre la cuestión de confianza?",
+      "opciones": [
+        "Son públicas y se realizan mediante llamamiento nominal en todo caso",
+        "Son secretas, mediante papeleta",
+        "Son ordinarias, a mano alzada",
+        "Pueden ser secretas si lo pide la cuarta parte de los Concejales"
+      ],
+      "explicacion": "El artículo 22.3 LBRL dispone que estas votaciones serán públicas y se realizarán mediante llamamiento nominal en todo caso, rigiéndose por la legislación electoral general."
+    },
+    "ca": {
+      "enunciado": "Com es fan les votacions del Ple sobre la moció de censura a l'alcalde i sobre la qüestió de confiança?",
+      "opciones": [
+        "Són públiques i es fan mitjançant crida nominal en tot cas",
+        "Són secretes, mitjançant papereta",
+        "Són ordinàries, a mà alçada",
+        "Poden ser secretes si ho demana la quarta part dels regidors"
+      ],
+      "explicacion": "L'article 22.3 LBRL disposa que aquestes votacions seran públiques i es faran mitjançant crida nominal en tot cas, i es regeixen per la legislació electoral general."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "22.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a22"
+    },
+    "cita": "Corresponde, igualmente, al Pleno la votación sobre la moción de censura al Alcalde y sobre la cuestión de confianza planteada por el mismo, que serán públicas y se realizarán mediante llamamiento nominal en todo caso",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-007",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Para que un municipio se constituya en Concejo Abierto por su localización geográfica o por la mejor gestión de los intereses municipales, el artículo 29.2 de la Ley de Bases del Régimen Local exige:",
+      "opciones": [
+        "Acuerdo del Pleno por mayoría absoluta y comunicación al Estado",
+        "Referéndum vecinal y aprobación por las Cortes Generales",
+        "Petición de la cuarta parte de los vecinos y aprobación por la Diputación provincial",
+        "Petición de la mayoría de los vecinos, decisión favorable por mayoría de dos tercios de los miembros del Ayuntamiento y aprobación por la Comunidad Autónoma"
+      ],
+      "explicacion": "El artículo 29.2 LBRL exige petición de la mayoría de los vecinos, decisión favorable por mayoría de dos tercios de los miembros del Ayuntamiento y aprobación por la Comunidad Autónoma."
+    },
+    "ca": {
+      "enunciado": "Perquè un municipi es constitueixi en consell obert per la seva localització geogràfica o per la millor gestió dels interessos municipals, l'article 29.2 de la Llei de bases del règim local exigeix:",
+      "opciones": [
+        "Acord del Ple per majoria absoluta i comunicació a l'Estat",
+        "Referèndum veïnal i aprovació per les Corts Generals",
+        "Petició de la quarta part dels veïns i aprovació per la diputació provincial",
+        "Petició de la majoria dels veïns, decisió favorable per majoria de dues terceres parts dels membres de l'ajuntament i aprovació per la comunitat autònoma"
+      ],
+      "explicacion": "L'article 29.2 LBRL exigeix petició de la majoria dels veïns, decisió favorable per majoria de dues terceres parts dels membres de l'ajuntament i aprovació per la comunitat autònoma."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "29.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a29"
+    },
+    "cita": "La constitución en concejo abierto de los municipios a que se refiere el apartado b) del número anterior, requiere petición de la mayoría de los vecinos, decisión favorable por mayoría de dos tercios de los miembros del Ayuntamiento y aprobación por la Comunidad Autónoma.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-008",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 121.1.a) de la Ley de Bases del Régimen Local, el régimen de organización de los municipios de gran población se aplica, sin necesidad de acuerdo de la Asamblea Legislativa, a los municipios cuya población supere:",
+      "opciones": [
+        "Los 100.000 habitantes",
+        "Los 250.000 habitantes",
+        "Los 500.000 habitantes",
+        "Los 75.000 habitantes"
+      ],
+      "explicacion": "El artículo 121.1.a) LBRL aplica el régimen de gran población a los municipios de más de 250.000 habitantes. El umbral de 75.000 habitantes (art. 121.1.d) exige además circunstancias especiales y decisión de la Asamblea Legislativa a iniciativa del ayuntamiento."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 121.1.a) de la Llei de bases del règim local, el règim d'organització dels municipis de gran població s'aplica, sense necessitat d'acord de l'Assemblea Legislativa, als municipis amb una població superior a:",
+      "opciones": [
+        "100.000 habitants",
+        "250.000 habitants",
+        "500.000 habitants",
+        "75.000 habitants"
+      ],
+      "explicacion": "L'article 121.1.a) LBRL aplica el règim de gran població als municipis de més de 250.000 habitants. El llindar de 75.000 habitants (art. 121.1.d) exigeix, a més, circumstàncies especials i decisió de l'Assemblea Legislativa a iniciativa de l'ajuntament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "121.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a121"
+    },
+    "cita": "a) A los municipios cuya población supere los 250.000 habitantes.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-009",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 48.1.b) del Texto refundido de la Ley municipal y de régimen local de Cataluña, la comisión de gobierno (hoy denominada junta de gobierno local) existe en todo caso, con independencia del número de habitantes, en los municipios que:",
+      "opciones": [
+        "Sean capital de comarca",
+        "Funcionen en régimen de consejo abierto",
+        "Tengan entidades municipales descentralizadas",
+        "Sean municipios turísticos"
+      ],
+      "explicacion": "El artículo 48.1.b) del Texto refundido exige la comisión de gobierno en los municipios de más de cinco mil habitantes y, en cualquier caso, en todos los que sean capital de comarca, con independencia de su población. Desde la Ley 57/2003 la ley básica denomina este órgano junta de gobierno local (art. 20.1.b LBRL)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 48.1.b) del Text refós de la Llei municipal i de règim local de Catalunya, la comissió de govern (avui anomenada junta de govern local) existeix en tot cas, amb independència del nombre d'habitants, als municipis que:",
+      "opciones": [
+        "Siguin capital de comarca",
+        "Funcionin en règim de consell obert",
+        "Tinguin entitats municipals descentralitzades",
+        "Siguin municipis turístics"
+      ],
+      "explicacion": "L'article 48.1.b) del Text refós exigeix la comissió de govern als municipis de més de cinc mil habitants i, en qualsevol cas, a tots els que siguin capital de comarca, amb independència de la seva població. Des de la Llei 57/2003 la llei bàsica anomena aquest òrgan junta de govern local (art. 20.1.b LBRL)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "48.1",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "En cualquier caso, la comisión de gobierno existe en todos los municipios que sean capital de comarca, con independencia del número de habitantes.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-010",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 50.1 del Texto refundido de la Ley municipal y de régimen local de Cataluña, ¿a partir de qué población es obligatorio constituir grupos municipales?",
+      "opciones": [
+        "En los de más de diez mil habitantes",
+        "En los de más de cinco mil habitantes",
+        "En los de más de veinte mil habitantes",
+        "En los de más de cincuenta mil habitantes"
+      ],
+      "explicacion": "El artículo 50.1 del Texto refundido obliga a constituir grupos municipales en los municipios de más de veinte mil habitantes; en los demás, el Pleno puede acordar su creación. Con carácter básico, el artículo 73.3 LBRL dispone además que los miembros de las corporaciones se constituyen en grupos políticos a efectos de su actuación corporativa."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 50.1 del Text refós de la Llei municipal i de règim local de Catalunya, a partir de quina població és obligatori constituir grups municipals?",
+      "opciones": [
+        "En els de més de deu mil habitants",
+        "En els de més de cinc mil habitants",
+        "En els de més de vint mil habitants",
+        "En els de més de cinquanta mil habitants"
+      ],
+      "explicacion": "L'article 50.1 del Text refós obliga a constituir grups municipals als municipis de més de vint mil habitants; als altres, el Ple pot acordar-ne la creació. Amb caràcter bàsic, l'article 73.3 LBRL disposa a més que els membres de les corporacions es constitueixen en grups polítics a l'efecte de la seva actuació corporativa."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "50.1",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "Tienen que constituirse grupos municipales en los municipios de más de veinte mil habitantes.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-011",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué ocurre, según el Texto refundido catalán, con el concejal que abandona el grupo formado por la candidatura por la que se presentó a las elecciones?",
+      "opciones": [
+        "Se incorpora automáticamente al grupo mixto",
+        "Pierde su condición de concejal",
+        "Puede integrarse en otro grupo municipal si este lo acepta",
+        "Queda como concejal no adscrito y no puede integrarse en el grupo mixto"
+      ],
+      "explicacion": "El artículo 50.6 del Texto refundido dispone que estos concejales no pueden integrarse en el grupo mixto y quedan como no adscritos. Al grupo mixto se incorporan automáticamente quienes no quedan integrados inicialmente en un grupo (art. 50.5)."
+    },
+    "ca": {
+      "enunciado": "Què passa, segons el Text refós català, amb el regidor que abandona el grup format per la candidatura per la qual es va presentar a les eleccions?",
+      "opciones": [
+        "S'incorpora automàticament al grup mixt",
+        "Perd la condició de regidor",
+        "Es pot integrar en un altre grup municipal si aquest l'accepta",
+        "Queda com a regidor no adscrit i no es pot integrar en el grup mixt"
+      ],
+      "explicacion": "L'article 50.6 del Text refós disposa que aquests regidors no es poden integrar en el grup mixt i queden com a no adscrits. Al grup mixt s'incorporen automàticament els que no queden integrats inicialment en un grup (art. 50.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "50.6",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "Los concejales que abandonan el grupo formado por la candidatura por la que se presentaron a las elecciones locales no pueden integrarse en el grupo mixto, sino que quedan como concejales no adscritos.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-012",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la duración del cargo de síndico o síndica municipal de greuges según el Texto refundido catalán?",
+      "opciones": [
+        "Cuatro años, coincidiendo con el mandato municipal",
+        "Cinco años",
+        "Seis años",
+        "Tres años, renovables una sola vez"
+      ],
+      "explicacion": "El artículo 59.3 del Texto refundido fija una duración de cinco años, por lo que no coincide con el mandato de la corporación; solo puede cesar por renuncia, muerte, incapacidad sobrevenida o condena firme por delito doloso."
+    },
+    "ca": {
+      "enunciado": "Quina és la durada del càrrec de síndic o síndica municipal de greuges segons el Text refós català?",
+      "opciones": [
+        "Quatre anys, coincidint amb el mandat municipal",
+        "Cinc anys",
+        "Sis anys",
+        "Tres anys, renovables una sola vegada"
+      ],
+      "explicacion": "L'article 59.3 del Text refós fixa una durada de cinc anys, de manera que no coincideix amb el mandat de la corporació; només pot cessar per renúncia, mort, incapacitat sobrevinguda o condemna ferma per delicte dolós."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "59.3",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "El cargo de síndico o síndica municipal de greuges tiene una duración de cinco años",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-013",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 47.2 del ROF, ¿cuándo sustituye el Teniente de Alcalde que corresponda al Alcalde sin necesidad de delegación expresa?",
+      "opciones": [
+        "Cuando el Alcalde se ausente del término municipal por más de veinticuatro horas sin haber conferido la delegación, o le haya resultado imposible otorgarla por causa imprevista",
+        "En cualquier ausencia del Alcalde, sea cual sea su duración",
+        "Solo cuando el Pleno lo acuerde por mayoría absoluta",
+        "Cuando el Alcalde se ausente más de una semana, previa comunicación a la Diputación"
+      ],
+      "explicacion": "Por regla general, el Teniente de Alcalde necesita delegación expresa para asumir las funciones del Alcalde ausente; el artículo 47.2 ROF exceptúa la ausencia del término municipal por más de veinticuatro horas sin delegación o la imposibilidad de otorgarla por causa imprevista."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 47.2 del ROF, quan substitueix el tinent d'alcalde que correspongui l'alcalde sense necessitat de delegació expressa?",
+      "opciones": [
+        "Quan l'alcalde s'absenti del terme municipal per més de vint-i-quatre hores sense haver conferit la delegació, o li hagi resultat impossible atorgar-la per causa imprevista",
+        "En qualsevol absència de l'alcalde, sigui quina sigui la seva durada",
+        "Només quan el Ple ho acordi per majoria absoluta",
+        "Quan l'alcalde s'absenti més d'una setmana, amb comunicació prèvia a la diputació"
+      ],
+      "explicacion": "Per regla general, el tinent d'alcalde necessita delegació expressa per assumir les funcions de l'alcalde absent; l'article 47.2 ROF exceptua l'absència del terme municipal per més de vint-i-quatre hores sense delegació o la impossibilitat d'atorgar-la per causa imprevista."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "47.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a47"
+    },
+    "cita": "cuando el Alcalde se ausente del término municipal por más de veinticuatro horas, sin haber conferido la delegación, o cuando por causa imprevista le hubiere resultado imposible otorgarla, le sustituirá, en la totalidad de sus funciones, el Teniente de Alcalde a quien corresponda",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t07-014",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 40.4 del ROF, la renuncia del Alcalde a su cargo:",
+      "opciones": [
+        "Implica también la pérdida de su condición de Concejal",
+        "Se presenta ante la Junta Electoral de Zona, que la acepta en cinco días",
+        "Se hace efectiva por escrito ante el Pleno, que debe adoptar acuerdo de conocimiento dentro de los diez días siguientes",
+        "Requiere la aceptación del Pleno por mayoría absoluta"
+      ],
+      "explicacion": "El artículo 40.4 ROF permite al Alcalde renunciar sin perder la condición de Concejal; la renuncia se hace efectiva por escrito ante el Pleno, que adopta acuerdo de conocimiento dentro de los diez días siguientes."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 40.4 del ROF, la renúncia de l'alcalde al seu càrrec:",
+      "opciones": [
+        "Implica també la pèrdua de la seva condició de regidor",
+        "Es presenta davant la Junta Electoral de Zona, que l'accepta en cinc dies",
+        "Es fa efectiva per escrit davant el Ple, que ha d'adoptar un acord de coneixement dins dels deu dies següents",
+        "Requereix l'acceptació del Ple per majoria absoluta"
+      ],
+      "explicacion": "L'article 40.4 ROF permet a l'alcalde renunciar sense perdre la condició de regidor; la renúncia es fa efectiva per escrit davant el Ple, que adopta un acord de coneixement dins dels deu dies següents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "40.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a40"
+    },
+    "cita": "El Alcalde podrá renunciar a su cargo sin perder por ello su condición de Concejal. La renuncia deberá hacerse efectiva por escrito ante el Pleno de la Corporación, que deberá adoptar acuerdo de conocimiento dentro de los diez días siguientes.",
+    "origen": "ia"
+  }
+]

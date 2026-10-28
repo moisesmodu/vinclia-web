@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t26-001",
+    "tema": 26,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la clasificación de fuegos de la norma UNE-EN 2, ¿a qué clase pertenecen los fuegos de aceites y grasas de cocina en aparatos de cocinar?",
+      "opciones": [
+        "Clase A",
+        "Clase B",
+        "Clase D",
+        "Clase F"
+      ],
+      "explicacion": "La UNE-EN 2 reserva la clase F para los fuegos de aceites y grasas vegetales o animales en aparatos de cocina. La clase B corresponde a los líquidos o sólidos licuables en general y la D a los metales."
+    },
+    "ca": {
+      "enunciado": "Segons la classificació de focs de la norma UNE-EN 2, a quina classe pertanyen els focs d'olis i greixos de cuina en aparells de cuinar?",
+      "opciones": [
+        "Classe A",
+        "Classe B",
+        "Classe D",
+        "Classe F"
+      ],
+      "explicacion": "La UNE-EN 2 reserva la classe F per als focs d'olis i greixos vegetals o animals en aparells de cuina. La classe B correspon als líquids o sòlids liquables en general i la D als metalls."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-002",
+    "tema": 26,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un depósito de GLP está expuesto a las llamas. Para reducir el riesgo de BLEVE, ¿qué zona del depósito es prioritario refrigerar?",
+      "opciones": [
+        "La parte inferior, en contacto con la fase líquida",
+        "La parte superior, en contacto con la fase gaseosa",
+        "Únicamente la válvula de seguridad del depósito",
+        "El suelo situado alrededor del depósito"
+      ],
+      "explicacion": "La pared en contacto con el líquido cede el calor a este, pero la que está en contacto con la fase gaseosa se calienta mucho más y pierde resistencia; por eso es la zona prioritaria de refrigeración para evitar la rotura del recipiente."
+    },
+    "ca": {
+      "enunciado": "Un dipòsit de GLP està exposat a les flames. Per reduir el risc de BLEVE, quina zona del dipòsit és prioritari refrigerar?",
+      "opciones": [
+        "La part inferior, en contacte amb la fase líquida",
+        "La part superior, en contacte amb la fase gasosa",
+        "Únicament la vàlvula de seguretat del dipòsit",
+        "El terra situat al voltant del dipòsit"
+      ],
+      "explicacion": "La paret en contacte amb el líquid li cedeix la calor, però la que està en contacte amb la fase gasosa s'escalfa molt més i perd resistència; per això és la zona prioritària de refrigeració per evitar el trencament del recipient."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-003",
+    "tema": 26,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué fenómeno se produce cuando, en un tanque de hidrocarburo pesado incendiado, la onda de calor alcanza el agua acumulada en el fondo, que se vaporiza bruscamente y proyecta el combustible?",
+      "opciones": [
+        "Boilover",
+        "Flashover",
+        "Backdraft",
+        "Rollover"
+      ],
+      "explicacion": "El boilover es propio de tanques de crudos o hidrocarburos pesados: la onda de calor desciende hasta el agua del fondo, que hierve de golpe y expulsa una gran masa de combustible ardiendo fuera del tanque. Flashover, backdraft y rollover son fenómenos de incendios de interior."
+    },
+    "ca": {
+      "enunciado": "Quin fenomen es produeix quan, en un tanc d'hidrocarbur pesant incendiat, l'ona de calor arriba a l'aigua acumulada al fons, que es vaporitza bruscament i projecta el combustible?",
+      "opciones": [
+        "Boilover",
+        "Flashover",
+        "Backdraft",
+        "Rollover"
+      ],
+      "explicacion": "El boilover és propi de tancs de crus o hidrocarburs pesants: l'ona de calor baixa fins a l'aigua del fons, que bull de cop i expulsa una gran massa de combustible encès fora del tanc. Flashover, backdraft i rollover són fenòmens d'incendis d'interior."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-004",
+    "tema": 26,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por qué no debe aplicarse agua a chorro sobre una freidora con aceite ardiendo?",
+      "opciones": [
+        "Porque el agua conduce la electricidad de la freidora",
+        "Porque el agua aporta oxígeno al aceite y aviva la combustión",
+        "Porque el agua se vaporiza bruscamente y proyecta el aceite inflamado",
+        "Porque el agua reacciona químicamente con el aceite y forma gases tóxicos"
+      ],
+      "explicacion": "El aceite caliente está muy por encima de 100 °C: el agua se hunde, se vaporiza de forma instantánea y arrastra gotas de aceite ardiendo, con una gran bola de fuego. Se sofoca tapando el recipiente o con un extintor de clase F, tras cortar la fuente de calor."
+    },
+    "ca": {
+      "enunciado": "Per què no s'ha d'aplicar aigua a raig sobre una fregidora amb oli encès?",
+      "opciones": [
+        "Perquè l'aigua condueix l'electricitat de la fregidora",
+        "Perquè l'aigua aporta oxigen a l'oli i aviva la combustió",
+        "Perquè l'aigua es vaporitza bruscament i projecta l'oli inflamat",
+        "Perquè l'aigua reacciona químicament amb l'oli i forma gasos tòxics"
+      ],
+      "explicacion": "L'oli calent és molt per sobre de 100 °C: l'aigua s'enfonsa, es vaporitza de manera instantània i arrossega gotes d'oli encès, amb una gran bola de foc. Se sufoca tapant el recipient o amb un extintor de classe F, després de tallar la font de calor."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-005",
+    "tema": 26,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Ante una fuga de gas inflamada en una tubería cuyo suministro todavía no puede cortarse, ¿qué es lo más adecuado?",
+      "opciones": [
+        "No apagar la llama y refrigerar el entorno hasta poder cerrar el paso del gas",
+        "Apagar la llama de inmediato con polvo químico y esperar a que el gas se disperse",
+        "Apagar la llama con agua a chorro y taponar la fuga con trapos",
+        "Ventilar la zona con un ventilador eléctrico situado junto a la fuga"
+      ],
+      "explicacion": "Si se apaga la llama sin cortar el suministro, el gas sigue saliendo y puede formar una nube inflamable que explote al encontrar un punto de ignición. Se deja arder de forma controlada, se protegen las exposiciones y se cierra la válvula en cuanto sea posible."
+    },
+    "ca": {
+      "enunciado": "Davant d'una fuita de gas inflamada en una canonada el subministrament de la qual encara no es pot tallar, què és el més adequat?",
+      "opciones": [
+        "No apagar la flama i refrigerar l'entorn fins que es pugui tancar el pas del gas",
+        "Apagar la flama immediatament amb pols química i esperar que el gas es dispersi",
+        "Apagar la flama amb aigua a raig i taponar la fuita amb draps",
+        "Ventilar la zona amb un ventilador elèctric situat al costat de la fuita"
+      ],
+      "explicacion": "Si s'apaga la flama sense tallar el subministrament, el gas continua sortint i pot formar un núvol inflamable que exploti quan trobi un punt d'ignició. Es deixa cremar de manera controlada, es protegeixen les exposicions i es tanca la vàlvula tan aviat com es pugui."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-006",
+    "tema": 26,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué agente extintor es el adecuado para un incendio en un cuadro eléctrico que puede estar en tensión?",
+      "opciones": [
+        "Agua a chorro",
+        "Espuma de baja expansión",
+        "Agua con aditivo humectante",
+        "Dióxido de carbono (CO2)"
+      ],
+      "explicacion": "El CO2 no es conductor de la electricidad y no deja residuos, por lo que es apropiado para equipos eléctricos en tensión. El agua a chorro y la espuma son conductoras y suponen riesgo de electrocución; en todo caso, se corta la tensión en cuanto sea posible."
+    },
+    "ca": {
+      "enunciado": "Quin agent extintor és l'adequat per a un incendi en un quadre elèctric que pot estar en tensió?",
+      "opciones": [
+        "Aigua a raig",
+        "Escuma de baixa expansió",
+        "Aigua amb additiu humectant",
+        "Diòxid de carboni (CO2)"
+      ],
+      "explicacion": "El CO2 no és conductor de l'electricitat i no deixa residus, per la qual cosa és apropiat per a equips elèctrics en tensió. L'aigua a raig i l'escuma són conductores i suposen risc d'electrocució; en tot cas, es talla la tensió tan aviat com es pugui."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-007",
+    "tema": 26,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo debe aproximarse la dotación a un turismo incendiado?",
+      "opciones": [
+        "De frente, por el eje longitudinal, para atacar directamente el motor",
+        "Por detrás, en línea con el maletero, para proteger el depósito",
+        "En diagonal, evitando el frente y la parte trasera por la posible proyección de amortiguadores y parachoques",
+        "Por el lateral, pegada a las ruedas, para llegar antes al habitáculo"
+      ],
+      "explicacion": "Los elementos con gas a presión de parachoques, portón o capó y los neumáticos pueden salir proyectados con el calor; por eso la aproximación se hace en diagonal, desde las esquinas y a una distancia prudente, y no en el eje del vehículo."
+    },
+    "ca": {
+      "enunciado": "Com s'ha d'aproximar la dotació a un turisme incendiat?",
+      "opciones": [
+        "De cara, per l'eix longitudinal, per atacar directament el motor",
+        "Per darrere, en línia amb el maleter, per protegir el dipòsit",
+        "En diagonal, evitant la part davantera i la posterior per la possible projecció d'amortidors i para-xocs",
+        "Pel lateral, arran de les rodes, per arribar abans a l'habitacle"
+      ],
+      "explicacion": "Els elements amb gas a pressió de para-xocs, porta posterior o capó i els pneumàtics poden sortir projectats amb la calor; per això l'aproximació es fa en diagonal, des de les cantonades i a una distància prudent, i no en l'eix del vehicle."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-008",
+    "tema": 26,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica tiene el incendio de la batería de ion-litio de un vehículo eléctrico?",
+      "opciones": [
+        "Se extingue de forma definitiva con una pequeña cantidad de polvo químico",
+        "Puede reactivarse horas después por la fuga térmica de las celdas, por lo que exige refrigeración prolongada",
+        "No admite agua en ningún caso, porque la batería reacciona violentamente con ella",
+        "Solo puede arder si la batería está conectada a un punto de recarga"
+      ],
+      "explicacion": "La fuga térmica (thermal runaway) se propaga de una celda a otra y genera calor y gases inflamables; el incendio puede reiniciarse mucho después de parecer extinguido, por lo que necesita grandes cantidades de agua de refrigeración y vigilancia posterior."
+    },
+    "ca": {
+      "enunciado": "Quina característica té l'incendi de la bateria d'ió-liti d'un vehicle elèctric?",
+      "opciones": [
+        "S'extingeix de manera definitiva amb una petita quantitat de pols química",
+        "Es pot reactivar hores després per la fuita tèrmica de les cel·les, per la qual cosa exigeix refrigeració prolongada",
+        "No admet aigua en cap cas, perquè la bateria hi reacciona violentament",
+        "Només pot cremar si la bateria està connectada a un punt de recàrrega"
+      ],
+      "explicacion": "La fuita tèrmica (thermal runaway) es propaga d'una cel·la a una altra i genera calor i gasos inflamables; l'incendi es pot reiniciar molt després de semblar extingit, per la qual cosa necessita grans quantitats d'aigua de refrigeració i vigilància posterior."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-009",
+    "tema": 26,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es el principal mecanismo de extinción de la espuma sobre un líquido inflamable incendiado?",
+      "opciones": [
+        "La sofocación, al formar una capa que separa la superficie del líquido del aire",
+        "La inhibición química de la reacción en cadena de la combustión",
+        "La dilución del combustible hasta hacerlo incombustible",
+        "La eliminación del combustible por arrastre fuera del recinto"
+      ],
+      "explicacion": "La espuma forma una capa que aísla el combustible del oxígeno e impide la salida de vapores inflamables (sofocación), con un efecto secundario de enfriamiento por el agua que contiene. La inhibición de la reacción en cadena es propia del polvo químico."
+    },
+    "ca": {
+      "enunciado": "Quin és el principal mecanisme d'extinció de l'escuma sobre un líquid inflamable incendiat?",
+      "opciones": [
+        "La sufocació, en formar una capa que separa la superfície del líquid de l'aire",
+        "La inhibició química de la reacció en cadena de la combustió",
+        "La dilució del combustible fins a fer-lo incombustible",
+        "L'eliminació del combustible per arrossegament fora del recinte"
+      ],
+      "explicacion": "L'escuma forma una capa que aïlla el combustible de l'oxigen i impedeix la sortida de vapors inflamables (sufocació), amb un efecte secundari de refredament per l'aigua que conté. La inhibició de la reacció en cadena és pròpia de la pols química."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t26-010",
+    "tema": 26,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo debe aplicarse la espuma sobre un derrame de combustible líquido incendiado?",
+      "opciones": [
+        "Con chorro directo al centro del charco, para que penetre en el líquido",
+        "Suavemente, haciéndola rebotar en una superficie o deslizarse sobre el líquido sin hundirse en él",
+        "Alternándola con agua a chorro para enfriar el líquido al mismo tiempo",
+        "Solo en los bordes del derrame, dejando arder libremente la zona central"
+      ],
+      "explicacion": "Si la espuma se lanza directamente contra el líquido se hunde, se contamina de combustible y salpica, y la capa no llega a formarse. Se aplica con suavidad (contra una pared, el suelo o un obstáculo) para que fluya y cubra toda la superficie; el agua a chorro rompería la capa."
+    },
+    "ca": {
+      "enunciado": "Com s'ha d'aplicar l'escuma sobre un vessament de combustible líquid incendiat?",
+      "opciones": [
+        "Amb raig directe al centre del bassal, perquè penetri en el líquid",
+        "Suaument, fent-la rebotar en una superfície o lliscar sobre el líquid sense enfonsar-s'hi",
+        "Alternant-la amb aigua a raig per refredar el líquid alhora",
+        "Només a les vores del vessament, deixant cremar lliurement la zona central"
+      ],
+      "explicacion": "Si l'escuma es llança directament contra el líquid s'enfonsa, es contamina de combustible i esquitxa, i la capa no s'arriba a formar. S'aplica amb suavitat (contra una paret, el terra o un obstacle) perquè flueixi i cobreixi tota la superfície; l'aigua a raig trencaria la capa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

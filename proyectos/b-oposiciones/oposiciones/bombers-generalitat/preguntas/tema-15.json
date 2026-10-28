@@ -1,0 +1,334 @@
+[
+  {
+    "id": "bomb-t15-001",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo se ordena el Código Técnico de la Edificación (CTE)?",
+      "opciones": [
+        "En dos partes: la primera con las disposiciones generales y las exigencias básicas, y la segunda con los Documentos Básicos",
+        "En tres partes: disposiciones generales, exigencias básicas y Documentos Básicos",
+        "En dos partes: la primera con los Documentos Básicos y la segunda con los Documentos Reconocidos",
+        "En una sola parte articulada acompañada de seis anexos técnicos"
+      ],
+      "explicacion": "Según el artículo 3.1 del CTE, la parte I contiene las disposiciones y condiciones generales y las exigencias básicas, y la parte II, los Documentos Básicos (DB). Los Documentos Reconocidos no forman parte del CTE: se inscriben en su Registro General (art. 4)."
+    },
+    "ca": {
+      "enunciado": "Com s'ordena el Codi tècnic de l'edificació (CTE)?",
+      "opciones": [
+        "En dues parts: la primera amb les disposicions generals i les exigències bàsiques, i la segona amb els documents bàsics",
+        "En tres parts: disposicions generals, exigències bàsiques i documents bàsics",
+        "En dues parts: la primera amb els documents bàsics i la segona amb els documents reconeguts",
+        "En una sola part articulada acompanyada de sis annexos tècnics"
+      ],
+      "explicacion": "Segons l'article 3.1 del CTE, la part I conté les disposicions i condicions generals i les exigències bàsiques, i la part II, els documents bàsics (DB). Els documents reconeguts no formen part del CTE: s'inscriuen en el seu Registre General (art. 4)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-5515",
+      "norma": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-5515#a3"
+    },
+    "cita": "La primera contiene las disposiciones y condiciones generales de aplicación del CTE y las exigencias básicas que deben cumplir los edificios; y … La segunda está formada por los denominados Documentos Básicos",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-002",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es uno de los requisitos básicos para los que el CTE establece exigencias básicas?",
+      "opciones": [
+        "La eficiencia en la gestión de los residuos de obra",
+        "El acceso a los servicios de telecomunicación",
+        "La seguridad en caso de incendio",
+        "La composición estética de las fachadas"
+      ],
+      "explicacion": "El artículo 1.2 del CTE enumera seguridad estructural, seguridad en caso de incendio, seguridad de utilización y accesibilidad, higiene, salud y protección del medio ambiente, protección contra el ruido, y ahorro de energía y aislamiento térmico. Los requisitos de funcionalidad, como el acceso a las telecomunicaciones, se rigen por su normativa específica (art. 1.3)."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un dels requisits bàsics per als quals el CTE estableix exigències bàsiques?",
+      "opciones": [
+        "L'eficiència en la gestió dels residus d'obra",
+        "L'accés als serveis de telecomunicació",
+        "La seguretat en cas d'incendi",
+        "La composició estètica de les façanes"
+      ],
+      "explicacion": "L'article 1.2 del CTE enumera seguretat estructural, seguretat en cas d'incendi, seguretat d'utilització i accessibilitat, higiene, salut i protecció del medi ambient, protecció contra el soroll, i estalvi d'energia i aïllament tèrmic. Els requisits de funcionalitat, com l'accés a les telecomunicacions, es regeixen per la normativa específica (art. 1.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-5515",
+      "norma": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación",
+      "articulo": "1.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-5515#a1"
+    },
+    "cita": "El CTE establece dichas exigencias básicas para cada uno de los requisitos básicos de «seguridad estructural», «seguridad en caso de incendio»",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-003",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el CTE, las estructuras de hormigón están reguladas por:",
+      "opciones": [
+        "El Documento Básico DB SE-F Fábrica",
+        "La Instrucción de Hormigón Estructural vigente",
+        "El Documento Básico DB SE-C Cimientos",
+        "El Documento Básico DB SE-A Acero"
+      ],
+      "explicacion": "El artículo 10.4 del CTE remite las estructuras de hormigón a la Instrucción de Hormigón Estructural; los DB de seguridad estructural tratan acciones, cimientos, acero, fábrica y madera."
+    },
+    "ca": {
+      "enunciado": "Segons el CTE, les estructures de formigó estan regulades per:",
+      "opciones": [
+        "El document bàsic DB SE-F Fàbrica",
+        "La Instrucció de formigó estructural vigent",
+        "El document bàsic DB SE-C Fonaments",
+        "El document bàsic DB SE-A Acer"
+      ],
+      "explicacion": "L'article 10.4 del CTE remet les estructures de formigó a la Instrucció de formigó estructural; els DB de seguretat estructural tracten accions, fonaments, acer, fàbrica i fusta."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-5515",
+      "norma": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación",
+      "articulo": "10.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-5515#a10"
+    },
+    "cita": "Las estructuras de hormigón están reguladas por la Instrucción de Hormigón Estructural vigente.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-004",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La exigencia básica SE 1 «Resistencia y estabilidad» del CTE pretende, entre otras cosas, que un evento extraordinario:",
+      "opciones": [
+        "No provoque deformaciones visibles en ningún elemento estructural",
+        "No obligue en ningún caso a desalojar el edificio",
+        "No afecte a las instalaciones generales del edificio",
+        "No produzca consecuencias desproporcionadas respecto a la causa original"
+      ],
+      "explicacion": "El apartado 10.1 del CTE exige que la resistencia y la estabilidad se mantengan y que un evento extraordinario no produzca consecuencias desproporcionadas respecto a su causa (robustez frente al colapso progresivo). Las deformaciones inadmisibles se tratan en la SE 2, aptitud al servicio."
+    },
+    "ca": {
+      "enunciado": "L'exigència bàsica SE 1 «Resistència i estabilitat» del CTE pretén, entre altres coses, que un esdeveniment extraordinari:",
+      "opciones": [
+        "No provoqui deformacions visibles en cap element estructural",
+        "No obligui en cap cas a desallotjar l'edifici",
+        "No afecti les instal·lacions generals de l'edifici",
+        "No produeixi conseqüències desproporcionades respecte de la causa original"
+      ],
+      "explicacion": "L'apartat 10.1 del CTE exigeix que la resistència i l'estabilitat es mantinguin i que un esdeveniment extraordinari no produeixi conseqüències desproporcionades respecte de la seva causa (robustesa davant el col·lapse progressiu). Les deformacions inadmissibles es tracten a la SE 2, aptitud al servei."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-5515",
+      "norma": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación",
+      "articulo": "10.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-5515#a10"
+    },
+    "cita": "que un evento extraordinario no produzca consecuencias desproporcionadas respecto a la causa original",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-005",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una viga es un elemento estructural, normalmente horizontal, que trabaja principalmente a:",
+      "opciones": [
+        "Tracción pura",
+        "Torsión",
+        "Flexión",
+        "Compresión pura"
+      ],
+      "explicacion": "La viga recibe cargas perpendiculares a su eje y las transmite a sus apoyos trabajando a flexión: la parte superior queda comprimida y la inferior traccionada (en una viga simplemente apoyada)."
+    },
+    "ca": {
+      "enunciado": "Una biga és un element estructural, normalment horitzontal, que treballa principalment a:",
+      "opciones": [
+        "Tracció pura",
+        "Torsió",
+        "Flexió",
+        "Compressió pura"
+      ],
+      "explicacion": "La biga rep càrregues perpendiculars al seu eix i les transmet als suports treballant a flexió: la part superior queda comprimida i la inferior traccionada (en una biga simplement recolzada)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-006",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El pilar es un elemento estructural vertical que trabaja principalmente a:",
+      "opciones": [
+        "Flexión",
+        "Compresión",
+        "Tracción",
+        "Torsión"
+      ],
+      "explicacion": "Los pilares reciben las cargas de vigas y forjados y las transmiten hacia la cimentación trabajando fundamentalmente a compresión."
+    },
+    "ca": {
+      "enunciado": "El pilar és un element estructural vertical que treballa principalment a:",
+      "opciones": [
+        "Flexió",
+        "Compressió",
+        "Tracció",
+        "Torsió"
+      ],
+      "explicacion": "Els pilars reben les càrregues de bigues i forjats i les transmeten cap als fonaments treballant fonamentalment a compressió."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-007",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En el hormigón armado, las barras de acero se disponen sobre todo para:",
+      "opciones": [
+        "Aumentar la resistencia al fuego del hormigón",
+        "Reducir el peso propio del elemento",
+        "Impedir la carbonatación del hormigón",
+        "Absorber los esfuerzos de tracción, que el hormigón resiste mal"
+      ],
+      "explicacion": "El hormigón resiste bien la compresión pero muy poco la tracción; las armaduras de acero, colocadas en las zonas traccionadas, absorben esos esfuerzos. El recubrimiento de hormigón es lo que protege el acero del fuego y la corrosión."
+    },
+    "ca": {
+      "enunciado": "En el formigó armat, les barres d'acer es disposen sobretot per:",
+      "opciones": [
+        "Augmentar la resistència al foc del formigó",
+        "Reduir el pes propi de l'element",
+        "Impedir la carbonatació del formigó",
+        "Absorbir els esforços de tracció, que el formigó resisteix malament"
+      ],
+      "explicacion": "El formigó resisteix bé la compressió però molt poc la tracció; les armadures d'acer, col·locades a les zones traccionades, absorbeixen aquests esforços. El recobriment de formigó és el que protegeix l'acer del foc i la corrosió."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-008",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un voladizo (ménsula) es un elemento estructural:",
+      "opciones": [
+        "Empotrado en un extremo y libre en el otro",
+        "Simplemente apoyado en sus dos extremos",
+        "Apoyado de forma continua sobre tres o más apoyos",
+        "Suspendido de tirantes en sus dos extremos"
+      ],
+      "explicacion": "El voladizo solo tiene un extremo sujeto (empotrado) y el otro libre, como los balcones o las marquesinas; por eso los esfuerzos máximos se concentran en el empotramiento."
+    },
+    "ca": {
+      "enunciado": "Un voladís (mènsula) és un element estructural:",
+      "opciones": [
+        "Encastat en un extrem i lliure en l'altre",
+        "Simplement recolzat en els dos extrems",
+        "Recolzat de manera contínua sobre tres o més suports",
+        "Suspès de tirants en els dos extrems"
+      ],
+      "explicacion": "El voladís només té un extrem subjectat (encastat) i l'altre lliure, com els balcons o les marquesines; per això els esforços màxims es concentren a l'encastament."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-009",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es un tipo de cimentación profunda?",
+      "opciones": [
+        "La zapata aislada",
+        "La losa de cimentación",
+        "Los pilotes",
+        "La zapata corrida"
+      ],
+      "explicacion": "Los pilotes transmiten las cargas a estratos resistentes situados a cierta profundidad. Zapatas aisladas, zapatas corridas y losas son cimentaciones superficiales."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un tipus de fonamentació profunda?",
+      "opciones": [
+        "La sabata aïllada",
+        "La llosa de fonamentació",
+        "Els pilots",
+        "La sabata correguda"
+      ],
+      "explicacion": "Els pilots transmeten les càrregues a estrats resistents situats a una certa profunditat. Sabates aïllades, sabates corregudes i lloses són fonamentacions superficials."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t15-010",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica es propia de un arco como elemento estructural?",
+      "opciones": [
+        "Trabaja principalmente a tracción y no transmite esfuerzos horizontales a los apoyos",
+        "Trabaja principalmente a compresión y transmite empujes horizontales a los apoyos",
+        "Trabaja a flexión del mismo modo que una viga recta",
+        "Solo puede construirse con perfiles de acero"
+      ],
+      "explicacion": "Por su forma curva, el arco conduce las cargas hacia los apoyos fundamentalmente por compresión, pero genera empujes horizontales que deben contrarrestarse con estribos, contrafuertes o tirantes; si fallan, el arco puede colapsar."
+    },
+    "ca": {
+      "enunciado": "Quina característica és pròpia d'un arc com a element estructural?",
+      "opciones": [
+        "Treballa principalment a tracció i no transmet esforços horitzontals als suports",
+        "Treballa principalment a compressió i transmet empentes horitzontals als suports",
+        "Treballa a flexió de la mateixa manera que una biga recta",
+        "Només es pot construir amb perfils d'acer"
+      ],
+      "explicacion": "Per la seva forma corba, l'arc condueix les càrregues cap als suports fonamentalment per compressió, però genera empentes horitzontals que s'han de contrarestar amb estreps, contraforts o tirants; si fallen, l'arc pot col·lapsar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t17-001",
+    "tema": 17,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el alfabeto fonético internacional (OACI/OTAN) que se usa para deletrear por radio, la letra G se transmite como:",
+      "opciones": [
+        "Golf",
+        "George",
+        "Gamma",
+        "Granada"
+      ],
+      "explicacion": "El alfabeto fonético internacional asigna a cada letra una palabra fija (Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel…) para evitar confusiones en comunicaciones con ruido o interferencias."
+    },
+    "ca": {
+      "enunciado": "En l'alfabet fonètic internacional (OACI/OTAN) que s'utilitza per lletrejar per ràdio, la lletra G es transmet com a:",
+      "opciones": [
+        "Golf",
+        "George",
+        "Gamma",
+        "Granada"
+      ],
+      "explicacion": "L'alfabet fonètic internacional assigna a cada lletra una paraula fixa (Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel…) per evitar confusions en comunicacions amb soroll o interferències."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-002",
+    "tema": 17,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La red RESCAT de radiocomunicaciones de emergencia y seguridad de la Generalitat de Catalunya se basa en la tecnología:",
+      "opciones": [
+        "GSM",
+        "Analógica en FM",
+        "TETRA",
+        "Radioaficionado en HF"
+      ],
+      "explicacion": "RESCAT es una red digital troncalizada basada en el estándar europeo TETRA (Terrestrial Trunked Radio), que comparten los servicios de emergencia y seguridad de Cataluña."
+    },
+    "ca": {
+      "enunciado": "La xarxa RESCAT de radiocomunicacions d'emergència i seguretat de la Generalitat de Catalunya es basa en la tecnologia:",
+      "opciones": [
+        "GSM",
+        "Analògica en FM",
+        "TETRA",
+        "Radioaficionat en HF"
+      ],
+      "explicacion": "RESCAT és una xarxa digital troncalitzada basada en l'estàndard europeu TETRA (Terrestrial Trunked Radio), que comparteixen els serveis d'emergència i seguretat de Catalunya."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-003",
+    "tema": 17,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una comunicación por radio en modo símplex:",
+      "opciones": [
+        "Se transmite y se recibe a la vez, por dos frecuencias distintas",
+        "Se transmite y se recibe por la misma frecuencia, pero no simultáneamente",
+        "Solo una estación puede transmitir y las demás nunca pueden responder",
+        "La señal pasa obligatoriamente por un repetidor"
+      ],
+      "explicacion": "En símplex todas las estaciones usan la misma frecuencia y se alternan: mientras una habla, las demás escuchan. En dúplex se transmite y se recibe a la vez, como en un teléfono."
+    },
+    "ca": {
+      "enunciado": "En una comunicació per ràdio en mode símplex:",
+      "opciones": [
+        "Es transmet i es rep alhora, per dues freqüències diferents",
+        "Es transmet i es rep per la mateixa freqüència, però no simultàniament",
+        "Només una estació pot transmetre i les altres no poden respondre mai",
+        "El senyal passa obligatòriament per un repetidor"
+      ],
+      "explicacion": "En símplex totes les estacions utilitzen la mateixa freqüència i s'alternen: mentre una parla, les altres escolten. En dúplex es transmet i es rep alhora, com en un telèfon."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-004",
+    "tema": 17,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es la función de un repetidor en una red de radio?",
+      "opciones": [
+        "Grabar las comunicaciones para su análisis posterior",
+        "Cifrar los mensajes para que no puedan ser escuchados",
+        "Reducir la potencia de los equipos portátiles para ahorrar batería",
+        "Recibir la señal y retransmitirla, normalmente en otra frecuencia, para ampliar la cobertura"
+      ],
+      "explicacion": "El repetidor, situado en un punto elevado, recibe la señal de los equipos y la vuelve a emitir con más potencia y alcance, lo que permite comunicar estaciones que no tienen visión directa entre ellas."
+    },
+    "ca": {
+      "enunciado": "Quina és la funció d'un repetidor en una xarxa de ràdio?",
+      "opciones": [
+        "Enregistrar les comunicacions per analitzar-les posteriorment",
+        "Xifrar els missatges perquè no es puguin escoltar",
+        "Reduir la potència dels equips portàtils per estalviar bateria",
+        "Rebre el senyal i retransmetre'l, normalment en una altra freqüència, per ampliar la cobertura"
+      ],
+      "explicacion": "El repetidor, situat en un punt elevat, rep el senyal dels equips i el torna a emetre amb més potència i abast, cosa que permet comunicar estacions que no tenen visió directa entre elles."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-005",
+    "tema": 17,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En un terminal TETRA, el modo directo (DMO) permite:",
+      "opciones": [
+        "Comunicarse directamente entre terminales cercanos sin pasar por la infraestructura de la red",
+        "Llamar a cualquier teléfono fijo a través de la red",
+        "Comunicarse con cualquier terminal de la red a través de las estaciones base",
+        "Enviar mensajes cortos de datos solo al centro de control"
+      ],
+      "explicacion": "En DMO (Direct Mode Operation) los terminales hablan entre sí como unos walkie-talkies, útil donde no hay cobertura de red (sótanos, túneles, valles). El funcionamiento a través de las estaciones base es el modo troncalizado (TMO)."
+    },
+    "ca": {
+      "enunciado": "En un terminal TETRA, el mode directe (DMO) permet:",
+      "opciones": [
+        "Comunicar-se directament entre terminals propers sense passar per la infraestructura de la xarxa",
+        "Trucar a qualsevol telèfon fix a través de la xarxa",
+        "Comunicar-se amb qualsevol terminal de la xarxa a través de les estacions base",
+        "Enviar missatges curts de dades només al centre de control"
+      ],
+      "explicacion": "En DMO (Direct Mode Operation) els terminals parlen entre ells com uns walkie-talkies, útil on no hi ha cobertura de xarxa (soterranis, túnels, valls). El funcionament a través de les estacions base és el mode troncalitzat (TMO)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-006",
+    "tema": 17,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por qué en un valle encajado o detrás de un edificio puede perderse la comunicación por radio en VHF o UHF?",
+      "opciones": [
+        "Porque estas frecuencias se reflejan en la ionosfera y pasan por encima",
+        "Porque la humedad del aire absorbe completamente estas frecuencias",
+        "Porque se propagan prácticamente en visión directa y los obstáculos crean zonas de sombra",
+        "Porque los equipos reducen automáticamente su potencia cerca de los obstáculos"
+      ],
+      "explicacion": "Las ondas de VHF y UHF viajan casi en línea recta; montañas, edificios o estructuras metálicas generan zonas de sombra sin cobertura. Se resuelve ganando altura, usando repetidores o pasando a modo directo."
+    },
+    "ca": {
+      "enunciado": "Per què en una vall encaixada o darrere d'un edifici es pot perdre la comunicació per ràdio en VHF o UHF?",
+      "opciones": [
+        "Perquè aquestes freqüències es reflecteixen a la ionosfera i passen per sobre",
+        "Perquè la humitat de l'aire absorbeix completament aquestes freqüències",
+        "Perquè es propaguen pràcticament en visió directa i els obstacles creen zones d'ombra",
+        "Perquè els equips redueixen automàticament la potència a prop dels obstacles"
+      ],
+      "explicacion": "Les ones de VHF i UHF viatgen gairebé en línia recta; muntanyes, edificis o estructures metàl·liques generen zones d'ombra sense cobertura. Es resol guanyant altura, utilitzant repetidors o passant a mode directe."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-007",
+    "tema": 17,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué rango de frecuencias corresponde a la banda UHF?",
+      "opciones": [
+        "De 30 kHz a 300 kHz",
+        "De 3 MHz a 30 MHz",
+        "De 30 MHz a 300 MHz",
+        "De 300 MHz a 3 GHz"
+      ],
+      "explicacion": "UHF (Ultra High Frequency) va de 300 MHz a 3 GHz; VHF, de 30 a 300 MHz, y HF, de 3 a 30 MHz. Las redes TETRA de emergencia trabajan en UHF."
+    },
+    "ca": {
+      "enunciado": "Quin rang de freqüències correspon a la banda UHF?",
+      "opciones": [
+        "De 30 kHz a 300 kHz",
+        "De 3 MHz a 30 MHz",
+        "De 30 MHz a 300 MHz",
+        "De 300 MHz a 3 GHz"
+      ],
+      "explicacion": "UHF (Ultra High Frequency) va de 300 MHz a 3 GHz; VHF, de 30 a 300 MHz, i HF, de 3 a 30 MHz. Les xarxes TETRA d'emergència treballen en UHF."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-008",
+    "tema": 17,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el procedimiento radiotelefónico, la palabra «cambio» al final de una transmisión indica:",
+      "opciones": [
+        "Que se va a cambiar de canal de inmediato",
+        "Que se ha terminado de transmitir y se espera respuesta",
+        "Que la comunicación ha finalizado y no se espera respuesta",
+        "Que se pide repetir el último mensaje"
+      ],
+      "explicacion": "«Cambio» cede la palabra al interlocutor y le invita a contestar. Para terminar la comunicación sin esperar respuesta se usan expresiones de cierre distintas."
+    },
+    "ca": {
+      "enunciado": "En el procediment radiotelefònic, la paraula «canvi» al final d'una transmissió indica:",
+      "opciones": [
+        "Que es canviarà de canal immediatament",
+        "Que s'ha acabat de transmetre i s'espera resposta",
+        "Que la comunicació ha finalitzat i no s'espera resposta",
+        "Que es demana repetir l'últim missatge"
+      ],
+      "explicacion": "«Canvi» cedeix la paraula a l'interlocutor i el convida a contestar. Per acabar la comunicació sense esperar resposta s'utilitzen expressions de tancament diferents."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-009",
+    "tema": 17,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué es recomendable hacer al pulsar el PTT (botón de transmisión) antes de empezar a hablar?",
+      "opciones": [
+        "Empezar a hablar a la vez que se pulsa, para ganar tiempo",
+        "Soltarlo y volverlo a pulsar varias veces para comprobar el canal",
+        "Hablar lo más lejos posible del micrófono",
+        "Esperar un instante antes de hablar para no cortar el inicio del mensaje"
+      ],
+      "explicacion": "El equipo y, en su caso, la red necesitan un breve tiempo para establecer la transmisión; si se habla al mismo tiempo que se pulsa, se pierden las primeras palabras. Después se habla claro, a unos centímetros del micrófono."
+    },
+    "ca": {
+      "enunciado": "Què és recomanable fer en prémer el PTT (botó de transmissió) abans de començar a parlar?",
+      "opciones": [
+        "Començar a parlar alhora que es prem, per guanyar temps",
+        "Deixar-lo anar i tornar-lo a prémer diverses vegades per comprovar el canal",
+        "Parlar tan lluny com sigui possible del micròfon",
+        "Esperar un instant abans de parlar per no tallar l'inici del missatge"
+      ],
+      "explicacion": "L'equip i, si escau, la xarxa necessiten un breu temps per establir la transmissió; si es parla alhora que es prem, es perden les primeres paraules. Després es parla clar, a uns centímetres del micròfon."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t17-010",
+    "tema": 17,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Las ondas de radio se propagan aproximadamente a 300.000 km/s. ¿Cuál es la longitud de onda aproximada de una señal de 100 MHz?",
+      "opciones": [
+        "3 m",
+        "30 m",
+        "0,3 m",
+        "300 m"
+      ],
+      "explicacion": "La longitud de onda es la velocidad de propagación dividida por la frecuencia: 300.000.000 m/s / 100.000.000 Hz = 3 m. Cuanto mayor es la frecuencia, menor es la longitud de onda y más corta la antena necesaria."
+    },
+    "ca": {
+      "enunciado": "Les ones de ràdio es propaguen aproximadament a 300.000 km/s. Quina és la longitud d'ona aproximada d'un senyal de 100 MHz?",
+      "opciones": [
+        "3 m",
+        "30 m",
+        "0,3 m",
+        "300 m"
+      ],
+      "explicacion": "La longitud d'ona és la velocitat de propagació dividida per la freqüència: 300.000.000 m/s / 100.000.000 Hz = 3 m. Com més alta és la freqüència, menor és la longitud d'ona i més curta l'antena necessària."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

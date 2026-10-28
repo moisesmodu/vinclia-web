@@ -1,0 +1,818 @@
+[
+  {
+    "id": "agen-t13-001",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 27.3 de la Ley 39/2015, la digitalización es:",
+      "opciones": [
+        "El proceso tecnológico que convierte un documento en papel u otro soporte no electrónico en un fichero electrónico con la imagen codificada, fiel e íntegra del documento",
+        "La firma electrónica de un documento que ya existe en formato electrónico",
+        "La conversión de un documento electrónico a un formato de otra aplicación",
+        "La impresión en papel de un documento electrónico con un código de verificación"
+      ],
+      "explicacion": "El artículo 27.3.b define la digitalización como el proceso que convierte un documento en papel u otro soporte no electrónico en un fichero con su imagen codificada, fiel e íntegra; es el paso previo a la copia auténtica electrónica de un documento en papel."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 27.3 de la Llei 39/2015, la digitalització és:",
+      "opciones": [
+        "El procés tecnològic que converteix un document en paper o en un altre suport no electrònic en un fitxer electrònic amb la imatge codificada, fidel i íntegra del document",
+        "La signatura electrònica d'un document que ja existeix en format electrònic",
+        "La conversió d'un document electrònic a un format d'una altra aplicació",
+        "La impressió en paper d'un document electrònic amb un codi de verificació"
+      ],
+      "explicacion": "L'article 27.3.b defineix la digitalització com el procés que converteix un document en paper o en un altre suport no electrònic en un fitxer amb la seva imatge codificada, fidel i íntegra; és el pas previ a la còpia autèntica electrònica d'un document en paper."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "27.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a27"
+    },
+    "cita": "Se entiende por digitalización, el proceso tecnológico que permite convertir un documento en soporte papel o en otro soporte no electrónico en un fichero electrónico que contiene la imagen codificada, fiel e íntegra del documento.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-002",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 27.2 de la Ley 39/2015, las copias auténticas:",
+      "opciones": [
+        "Solo son válidas dentro del procedimiento para el que se expidieron",
+        "Tienen un valor meramente informativo",
+        "Tienen la misma validez y eficacia que los documentos originales",
+        "Solo tienen validez si se hacen en papel"
+      ],
+      "explicacion": "El artículo 27.2 reconoce a las copias auténticas, cualquiera que sea su soporte, la misma validez y eficacia que los originales, siempre que quede garantizada la identidad del órgano que las hace y su contenido."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 27.2 de la Llei 39/2015, les còpies autèntiques:",
+      "opciones": [
+        "Només són vàlides dins del procediment per al qual es van expedir",
+        "Tenen un valor merament informatiu",
+        "Tenen la mateixa validesa i eficàcia que els documents originals",
+        "Només tenen validesa si es fan en paper"
+      ],
+      "explicacion": "L'article 27.2 reconeix a les còpies autèntiques, sigui quin sigui el suport, la mateixa validesa i eficàcia que els originals, sempre que quedi garantida la identitat de l'òrgan que les fa i el seu contingut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "27.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a27"
+    },
+    "cita": "Las copias auténticas tendrán la misma validez y eficacia que los documentos originales.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-003",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un ciudadano pide en la oficina de atención ciudadana una copia auténtica en papel de una resolución electrónica de la Generalitat, para presentarla en un banco. Según el artículo 27.3.c de la Ley 39/2015, la copia debe:",
+      "opciones": [
+        "Indicar su condición de copia y contener un código generado electrónicamente u otro sistema que permita verificar su autenticidad en los archivos del órgano emisor",
+        "Llevar en cada página la firma manuscrita y el sello de la oficina",
+        "Estar legitimada por un notario",
+        "Imprimirse en papel oficial con el membrete de la Generalitat"
+      ],
+      "explicacion": "El artículo 27.3.c exige que en las copias en papel de documentos electrónicos figure la condición de copia y un código generado electrónicamente (como el código seguro de verificación) u otro sistema que permita contrastar su autenticidad."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà demana a l'oficina d'atenció ciutadana una còpia autèntica en paper d'una resolució electrònica de la Generalitat, per presentar-la en un banc. Segons l'article 27.3.c de la Llei 39/2015, la còpia ha de:",
+      "opciones": [
+        "Indicar la seva condició de còpia i contenir un codi generat electrònicament o un altre sistema que permeti verificar-ne l'autenticitat als arxius de l'òrgan emissor",
+        "Portar a cada pàgina la signatura manuscrita i el segell de l'oficina",
+        "Estar legitimada per un notari",
+        "Imprimir-se en paper oficial amb el capçal de la Generalitat"
+      ],
+      "explicacion": "L'article 27.3.c exigeix que a les còpies en paper de documents electrònics hi consti la condició de còpia i un codi generat electrònicament (com el codi segur de verificació) o un altre sistema que permeti contrastar-ne l'autenticitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "27.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a27"
+    },
+    "cita": "c) Las copias en soporte papel de documentos electrónicos requerirán que en las mismas figure la condición de copia y contendrán un código generado electrónicamente u otro sistema de verificación, que permitirá contrastar la autenticidad de la copia",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-004",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 27.1 de la Ley 39/2015, las copias auténticas de documentos privados realizadas por una Administración:",
+      "opciones": [
+        "Tienen plenos efectos en el ámbito civil y mercantil",
+        "Solo tienen validez ante la Administración que las ha expedido",
+        "Requieren la ratificación del autor del documento privado",
+        "Surten únicamente efectos administrativos"
+      ],
+      "explicacion": "El artículo 27.1 limita los efectos de las copias auténticas de documentos privados al ámbito administrativo; además, las copias auténticas que hace una Administración tienen validez en las restantes administraciones."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 27.1 de la Llei 39/2015, les còpies autèntiques de documents privats fetes per una administració:",
+      "opciones": [
+        "Tenen plens efectes en l'àmbit civil i mercantil",
+        "Només tenen validesa davant l'administració que les ha expedides",
+        "Requereixen la ratificació de l'autor del document privat",
+        "Tenen únicament efectes administratius"
+      ],
+      "explicacion": "L'article 27.1 limita els efectes de les còpies autèntiques de documents privats a l'àmbit administratiu; a més, les còpies autèntiques que fa una administració tenen validesa a les altres administracions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "27.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a27"
+    },
+    "cita": "Las copias auténticas de documentos privados surten únicamente efectos administrativos. Las copias auténticas realizadas por una Administración Pública tendrán validez en las restantes Administraciones.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-005",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "A una empresa, obligada a relacionarse electrónicamente, se le pone a disposición en e-NOTUM una notificación de la Generalitat. La empresa no accede a ella. Según el artículo 43.2 de la Ley 39/2015, la notificación se entiende rechazada:",
+      "opciones": [
+        "Cuando hayan transcurrido diez días hábiles desde el envío del aviso por correo electrónico",
+        "Cuando hayan transcurrido quince días naturales desde la puesta a disposición",
+        "Cuando hayan transcurrido diez días naturales desde la puesta a disposición sin acceder a su contenido",
+        "Nunca: mientras no acceda, la notificación queda pendiente indefinidamente"
+      ],
+      "explicacion": "El artículo 43.2 considera rechazada la notificación electrónica obligatoria o elegida expresamente cuando pasan diez días naturales desde la puesta a disposición sin acceso; el cómputo no depende del aviso, cuya falta no invalida la notificación."
+    },
+    "ca": {
+      "enunciado": "A una empresa, obligada a relacionar-se electrònicament, se li posa a disposició a e-NOTUM una notificació de la Generalitat. L'empresa no hi accedeix. Segons l'article 43.2 de la Llei 39/2015, la notificació s'entén rebutjada:",
+      "opciones": [
+        "Quan hagin transcorregut deu dies hàbils des de l'enviament de l'avís per correu electrònic",
+        "Quan hagin transcorregut quinze dies naturals des de la posada a disposició",
+        "Quan hagin transcorregut deu dies naturals des de la posada a disposició sense accedir al contingut",
+        "Mai: mentre no hi accedeixi, la notificació queda pendent indefinidament"
+      ],
+      "explicacion": "L'article 43.2 considera rebutjada la notificació electrònica obligatòria o escollida expressament quan passen deu dies naturals des de la posada a disposició sense accés; el còmput no depèn de l'avís, la manca del qual no invalida la notificació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "43.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a43"
+    },
+    "cita": "Cuando la notificación por medios electrónicos sea de carácter obligatorio, o haya sido expresamente elegida por el interesado, se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-006",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 43.1 de la Ley 39/2015, a efectos de las notificaciones electrónicas, se entiende por comparecencia en la sede electrónica:",
+      "opciones": [
+        "La presentación personal del interesado en la oficina de registro",
+        "La recepción en el móvil del aviso de puesta a disposición",
+        "La apertura del correo electrónico que informa de la notificación",
+        "El acceso del interesado o su representante, debidamente identificado, al contenido de la notificación"
+      ],
+      "explicacion": "El artículo 43.1 define la comparecencia en la sede como el acceso del interesado o su representante, debidamente identificado, al contenido de la notificación; el aviso por correo o SMS no es la notificación."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 43.1 de la Llei 39/2015, a l'efecte de les notificacions electròniques, s'entén per compareixença a la seu electrònica:",
+      "opciones": [
+        "La presentació personal de l'interessat a l'oficina de registre",
+        "La recepció al mòbil de l'avís de posada a disposició",
+        "L'obertura del correu electrònic que informa de la notificació",
+        "L'accés de l'interessat o el seu representant, degudament identificat, al contingut de la notificació"
+      ],
+      "explicacion": "L'article 43.1 defineix la compareixença a la seu com l'accés de l'interessat o el seu representant, degudament identificat, al contingut de la notificació; l'avís per correu o SMS no és la notificació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "43.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a43"
+    },
+    "cita": "se entiende por comparecencia en la sede electrónica, el acceso por el interesado o su representante debidamente identificado al contenido de la notificación",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-007",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una persona alega que la notificación electrónica que le puso a disposición la Generalitat no es válida porque no recibió el SMS de aviso en su móvil. Según el artículo 41.6 de la Ley 39/2015:",
+      "opciones": [
+        "La notificación es nula porque el aviso es un requisito de validez",
+        "La notificación debe repetirse en papel en el domicilio",
+        "La falta del aviso no impide que la notificación se considere plenamente válida",
+        "La notificación solo es válida si se acredita que leyó el correo electrónico de aviso"
+      ],
+      "explicacion": "El artículo 41.6 obliga a enviar un aviso al dispositivo o correo comunicado, pero precisa que su falta no impide que la notificación sea plenamente válida."
+    },
+    "ca": {
+      "enunciado": "Una persona al·lega que la notificació electrònica que li va posar a disposició la Generalitat no és vàlida perquè no va rebre l'SMS d'avís al mòbil. Segons l'article 41.6 de la Llei 39/2015:",
+      "opciones": [
+        "La notificació és nul·la perquè l'avís és un requisit de validesa",
+        "La notificació s'ha de repetir en paper al domicili",
+        "La manca de l'avís no impedeix que la notificació es consideri plenament vàlida",
+        "La notificació només és vàlida si s'acredita que va llegir el correu electrònic d'avís"
+      ],
+      "explicacion": "L'article 41.6 obliga a enviar un avís al dispositiu o al correu comunicat, però precisa que la seva manca no impedeix que la notificació sigui plenament vàlida."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "La falta de práctica de este aviso no impedirá que la notificación sea considerada plenamente válida.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-008",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Una persona interesada accede el 7 de mayo a una notificación en la sede electrónica y el 10 de mayo recibe en su domicilio la misma notificación en papel. Según el artículo 41.7 de la Ley 39/2015, la fecha de notificación es:",
+      "opciones": [
+        "El 7 de mayo, porque se toma la que se ha producido en primer lugar",
+        "El 10 de mayo, porque prevalece la notificación en papel",
+        "La que elija la persona interesada",
+        "La fecha en que se dictó el acto"
+      ],
+      "explicacion": "Según el artículo 41.7, cuando se notifica por distintos cauces, la fecha de notificación es la de la primera que se haya producido, en este caso el acceso electrónico del 7 de mayo."
+    },
+    "ca": {
+      "enunciado": "Una persona interessada accedeix el 7 de maig a una notificació a la seu electrònica i el 10 de maig rep al domicili la mateixa notificació en paper. Segons l'article 41.7 de la Llei 39/2015, la data de notificació és:",
+      "opciones": [
+        "El 7 de maig, perquè es pren la que s'ha produït en primer lloc",
+        "El 10 de maig, perquè preval la notificació en paper",
+        "La que triï la persona interessada",
+        "La data en què es va dictar l'acte"
+      ],
+      "explicacion": "Segons l'article 41.7, quan es notifica per diferents vies, la data de notificació és la de la primera que s'hagi produït, en aquest cas l'accés electrònic del 7 de maig."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Cuando el interesado fuera notificado por distintos cauces, se tomará como fecha de notificación la de aquélla que se hubiera producido en primer lugar.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-009",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 41.1 de la Ley 39/2015, el dispositivo electrónico o la dirección de correo electrónico que identifique el interesado sirven para:",
+      "opciones": [
+        "La práctica de notificaciones con plena validez",
+        "El envío de avisos, pero no para la práctica de notificaciones",
+        "La presentación de recursos sin necesidad de firma",
+        "La identificación del interesado en la sede electrónica"
+      ],
+      "explicacion": "El artículo 41.1 permite al interesado indicar un móvil o un correo electrónico para recibir avisos de puesta a disposición, pero no para practicar notificaciones, que se hacen en la sede o en la dirección electrónica habilitada única."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 41.1 de la Llei 39/2015, el dispositiu electrònic o l'adreça de correu electrònic que identifiqui l'interessat serveixen per a:",
+      "opciones": [
+        "La pràctica de notificacions amb plena validesa",
+        "L'enviament d'avisos, però no per a la pràctica de notificacions",
+        "La presentació de recursos sense necessitat de signatura",
+        "La identificació de l'interessat a la seu electrònica"
+      ],
+      "explicacion": "L'article 41.1 permet a l'interessat indicar un mòbil o un correu electrònic per rebre avisos de posada a disposició, però no per practicar notificacions, que es fan a la seu o a l'adreça electrònica habilitada única."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "el interesado podrá identificar un dispositivo electrónico y/o una dirección de correo electrónico que servirán para el envío de los avisos regulados en este artículo, pero no para la práctica de notificaciones",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-010",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 58.3 de la Ley 26/2010, la publicación de los actos y comunicaciones que deben publicarse en el tablón de anuncios o mediante edictos:",
+      "opciones": [
+        "Debe hacerse siempre en papel en el tablón físico de cada oficina",
+        "Solo puede hacerse en el Diari Oficial de la Generalitat de Catalunya",
+        "Debe notificarse además individualmente a cada interesado",
+        "Puede sustituirse o complementarse con la publicación en la sede electrónica correspondiente"
+      ],
+      "explicacion": "El artículo 58.3 permite sustituir o complementar el tablón de anuncios o edictos por la publicación en la sede electrónica, por ejemplo en un tablón de anuncios electrónico."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 58.3 de la Llei 26/2010, la publicació dels actes i comunicacions que s'han de publicar al tauler d'anuncis o mitjançant edictes:",
+      "opciones": [
+        "S'ha de fer sempre en paper al tauler físic de cada oficina",
+        "Només es pot fer al Diari Oficial de la Generalitat de Catalunya",
+        "S'ha de notificar a més individualment a cada interessat",
+        "Es pot substituir o complementar amb la publicació a la seu electrònica corresponent"
+      ],
+      "explicacion": "L'article 58.3 permet substituir o complementar el tauler d'anuncis o edictes per la publicació a la seu electrònica, per exemple en un tauler d'anuncis electrònic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "58.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a58"
+    },
+    "cita": "Las administraciones públicas pueden sustituir o complementar la publicación de los actos y comunicaciones que, por disposición legal o reglamentaria, deben publicarse en el tablón de anuncios o mediante edictos por la publicación en la correspondiente sede electrónica.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-011",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 57 de la Ley 26/2010, ¿cuál es uno de los requisitos técnicos que deben garantizar los sistemas de notificación electrónica?",
+      "opciones": [
+        "Enviar siempre una copia en papel al domicilio del interesado",
+        "Disponer de mecanismos de cifrado de la vía telemática para proteger la confidencialidad de los datos",
+        "Permitir el acceso a la notificación con el solo número de expediente",
+        "Eliminar la notificación del buzón a los diez días de su puesta a disposición"
+      ],
+      "explicacion": "El artículo 57 exige, entre otros requisitos, mecanismos para que el interesado sepa que tiene notificaciones en el buzón, su identificación, el acuse de recibo, el cifrado de la vía telemática y la aceptación o rechazo mediante firma electrónica."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 57 de la Llei 26/2010, quin és un dels requisits tècnics que han de garantir els sistemes de notificació electrònica?",
+      "opciones": [
+        "Enviar sempre una còpia en paper al domicili de l'interessat",
+        "Disposar de mecanismes de xifratge de la via telemàtica per protegir la confidencialitat de les dades",
+        "Permetre l'accés a la notificació amb el sol número d'expedient",
+        "Eliminar la notificació de la bústia als deu dies de la posada a disposició"
+      ],
+      "explicacion": "L'article 57 exigeix, entre altres requisits, mecanismes perquè l'interessat sàpiga que té notificacions a la bústia, la seva identificació, l'acusament de recepció, el xifratge de la via telemàtica i l'acceptació o el rebuig mitjançant signatura electrònica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "57",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a57"
+    },
+    "cita": "d) Disponer de mecanismos de cifrado de la vía telemática a través de la cual se produce la notificación, para la protección de la necesaria confidencialidad de los datos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-012",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 56.4 de la Ley 26/2010, la notificación electrónica no se entiende rechazada aunque hayan pasado diez días naturales sin acceder a su contenido cuando:",
+      "opciones": [
+        "El destinatario alegue que no ha revisado su correo electrónico",
+        "La notificación se haya puesto a disposición en un día inhábil",
+        "La notificación contenga un acto favorable para el destinatario",
+        "Se compruebe, de oficio o a instancia del destinatario, la imposibilidad técnica o material de acceder a ella"
+      ],
+      "explicacion": "El artículo 56.4 da por rechazada la notificación electrónica a los diez días naturales sin acceso, salvo que se compruebe la imposibilidad técnica o material de acceder; no revisar el correo no es una imposibilidad."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 56.4 de la Llei 26/2010, la notificació electrònica no s'entén rebutjada encara que hagin passat deu dies naturals sense accedir-ne al contingut quan:",
+      "opciones": [
+        "El destinatari al·legui que no ha revisat el correu electrònic",
+        "La notificació s'hagi posat a disposició en un dia inhàbil",
+        "La notificació contingui un acte favorable per al destinatari",
+        "Es comprovi, d'ofici o a instància del destinatari, la impossibilitat tècnica o material d'accedir-hi"
+      ],
+      "explicacion": "L'article 56.4 dona per rebutjada la notificació electrònica als deu dies naturals sense accés, llevat que es comprovi la impossibilitat tècnica o material d'accedir-hi; no revisar el correu no és una impossibilitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "56.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a56"
+    },
+    "cita": "salvo que, de oficio o a instancia del destinatario o destinataria, se compruebe la imposibilidad técnica o material de acceder al mismo",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-013",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 44.2 de la Ley 26/2010, solo son susceptibles de actuación administrativa automatizada los actos que:",
+      "opciones": [
+        "Impliquen valoraciones discrecionales del órgano competente",
+        "Tengan carácter sancionador",
+        "Puedan adoptarse con una programación basada en criterios y parámetros objetivos",
+        "Afecten a una cuantía inferior a la que fije cada departamento"
+      ],
+      "explicacion": "El artículo 44.2 limita la actuación automatizada a los actos que pueden programarse con criterios y parámetros objetivos; además, no altera la titularidad de la competencia (artículo 44.3)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 44.2 de la Llei 26/2010, només són susceptibles d'actuació administrativa automatitzada els actes que:",
+      "opciones": [
+        "Impliquin valoracions discrecionals de l'òrgan competent",
+        "Tinguin caràcter sancionador",
+        "Es puguin adoptar amb una programació basada en criteris i paràmetres objectius",
+        "Afectin una quantia inferior a la que fixi cada departament"
+      ],
+      "explicacion": "L'article 44.2 limita l'actuació automatitzada als actes que es poden programar amb criteris i paràmetres objectius; a més, no altera la titularitat de la competència (article 44.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "44.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a44"
+    },
+    "cita": "Sólo son susceptibles de actuación administrativa automatizada los actos que puedan adoptarse con una programación basada en criterios y parámetros objetivos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-014",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 24.1 de la Ley 29/2010, las entidades del sector público de Cataluña deben comunicarse entre ellas:",
+      "opciones": [
+        "Preferentemente por correo postal certificado",
+        "Por fax, cuando se trate de documentación oficial",
+        "Por el medio que elija cada empleado público",
+        "Por medios electrónicos que garanticen la autenticación e identificación de emisores y receptores, la constancia en los registros y la seguridad de lo transmitido"
+      ],
+      "explicacion": "El artículo 24.1 impone la comunicación electrónica entre entidades del sector público con garantías de autenticación, constancia registral y seguridad; servicios como e-VALISA responden a este mandato."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 24.1 de la Llei 29/2010, les entitats del sector públic de Catalunya s'han de comunicar entre elles:",
+      "opciones": [
+        "Preferentment per correu postal certificat",
+        "Per fax, quan es tracti de documentació oficial",
+        "Pel mitjà que triï cada empleat públic",
+        "Per mitjans electrònics que garanteixin l'autenticació i la identificació d'emissors i receptors, la constància als registres i la seguretat del que es transmet"
+      ],
+      "explicacion": "L'article 24.1 imposa la comunicació electrònica entre entitats del sector públic amb garanties d'autenticació, constància registral i seguretat; serveis com e-VALISA responen a aquest mandat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "24.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a24"
+    },
+    "cita": "Las entidades del sector público deben comunicarse por medios electrónicos que han de garantizar la autenticación e identificación de las entidades emisoras",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-015",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 21.1 de la Ley 29/2010, ¿para qué sirve el Catálogo de datos y documentos interoperables en Cataluña?",
+      "opciones": [
+        "Para publicar los edictos y anuncios de las administraciones catalanas",
+        "Para notificar electrónicamente los actos administrativos",
+        "Para hacer efectivo el derecho de los ciudadanos a no aportar los datos y documentos que ya obran en poder de las administraciones",
+        "Para inscribir los poderes de representación otorgados por los ciudadanos"
+      ],
+      "explicacion": "El artículo 21.1 define el Catálogo como la herramienta para hacer efectivo el derecho a no aportar datos y documentos que ya tienen las administraciones; lo gestiona el Consorcio AOC."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21.1 de la Llei 29/2010, per a què serveix el Catàleg de dades i documents interoperables a Catalunya?",
+      "opciones": [
+        "Per publicar els edictes i anuncis de les administracions catalanes",
+        "Per notificar electrònicament els actes administratius",
+        "Per fer efectiu el dret dels ciutadans a no aportar les dades i els documents que ja són en poder de les administracions",
+        "Per inscriure els poders de representació atorgats pels ciutadans"
+      ],
+      "explicacion": "L'article 21.1 defineix el Catàleg com l'eina per fer efectiu el dret a no aportar dades i documents que ja tenen les administracions; el gestiona el Consorci AOC."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a21"
+    },
+    "cita": "El Catálogo de datos y documentos interoperables en Cataluña es la herramienta de que se dota el sector público de Cataluña para hacer efectivo el derecho de los ciudadanos a no aportar los datos y documentos que obran en poder de las administraciones públicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-016",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 22.2 de la Ley 29/2010, cuando el Consorcio Administración Abierta Electrónica de Cataluña trata datos personales por cuenta de las entidades del sector público para hacer efectiva la interoperabilidad, actúa como:",
+      "opciones": [
+        "Encargado del tratamiento, sujeto a las instrucciones de la entidad responsable de la información",
+        "Responsable del tratamiento, con libertad para decidir sus finalidades",
+        "Autoridad de control en materia de protección de datos",
+        "Cesionario de los datos, que puede destinarlos a otras finalidades"
+      ],
+      "explicacion": "El artículo 22.2 configura al Consorcio como encargado del tratamiento: aplica las medidas de seguridad y sigue las instrucciones de la entidad responsable, sin poder usar la información para otras finalidades."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 22.2 de la Llei 29/2010, quan el Consorci Administració Oberta Electrònica de Catalunya tracta dades personals per compte de les entitats del sector públic per fer efectiva la interoperabilitat, actua com a:",
+      "opciones": [
+        "Encarregat del tractament, subjecte a les instruccions de l'entitat responsable de la informació",
+        "Responsable del tractament, amb llibertat per decidir-ne les finalitats",
+        "Autoritat de control en matèria de protecció de dades",
+        "Cessionari de les dades, que les pot destinar a altres finalitats"
+      ],
+      "explicacion": "L'article 22.2 configura el Consorci com a encarregat del tractament: aplica les mesures de seguretat i segueix les instruccions de l'entitat responsable, sense poder utilitzar la informació per a altres finalitats."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "22.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a22"
+    },
+    "cita": "es el encargado de este tratamiento, debe aplicar las medidas de seguridad exigibles y está sujeto a las instrucciones que le da la entidad responsable de la información",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-017",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué es e-NOTUM, uno de los servicios del Consorcio Administració Oberta de Catalunya (AOC)?",
+      "opciones": [
+        "El servicio de notificaciones electrónicas, que pone las notificaciones a disposición de ciudadanos y empresas y les avisa por correo electrónico o SMS",
+        "El tablón electrónico donde se publican los edictos y anuncios",
+        "El servicio de intercambio de documentos entre administraciones",
+        "La aplicación para obtener copias auténticas electrónicas de documentos en papel"
+      ],
+      "explicacion": "e-NOTUM es el servicio de notificación electrónica: deja la notificación a disposición del destinatario, envía avisos y acredita el acceso o el rechazo. El tablón de edictos es e-TAULER y el intercambio de documentos entre administraciones, e-VALISA."
+    },
+    "ca": {
+      "enunciado": "Què és e-NOTUM, un dels serveis del Consorci Administració Oberta de Catalunya (AOC)?",
+      "opciones": [
+        "El servei de notificacions electròniques, que posa les notificacions a disposició de ciutadans i empreses i els avisa per correu electrònic o SMS",
+        "El tauler electrònic on es publiquen els edictes i anuncis",
+        "El servei d'intercanvi de documents entre administracions",
+        "L'aplicació per obtenir còpies autèntiques electròniques de documents en paper"
+      ],
+      "explicacion": "e-NOTUM és el servei de notificació electrònica: deixa la notificació a disposició del destinatari, envia avisos i acredita l'accés o el rebuig. El tauler d'edictes és e-TAULER i l'intercanvi de documents entre administracions, e-VALISA."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consorci Administració Oberta de Catalunya (AOC) · fitxes dels serveis e-Notum, e-Valisa, e-Tauler i e-Còpia",
+      "url": "https://www.aoc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-018",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Usted debe enviar a un ayuntamiento un oficio con documentación anexa, de forma electrónica y con constancia del envío y la recepción. ¿Qué servicio del Consorcio AOC es el adecuado?",
+      "opciones": [
+        "e-TAULER",
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA"
+      ],
+      "explicacion": "e-VALISA es el servicio para las comunicaciones y el intercambio de documentos entre administraciones catalanas, con constancia de envío y recepción. e-NOTUM se dirige a ciudadanos y empresas, y e-TAULER publica edictos."
+    },
+    "ca": {
+      "enunciado": "Vostè ha d'enviar a un ajuntament un ofici amb documentació annexa, de manera electrònica i amb constància de l'enviament i la recepció. Quin servei del Consorci AOC és l'adequat?",
+      "opciones": [
+        "e-TAULER",
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA"
+      ],
+      "explicacion": "e-VALISA és el servei per a les comunicacions i l'intercanvi de documents entre administracions catalanes, amb constància d'enviament i recepció. e-NOTUM s'adreça a ciutadans i empreses, i e-TAULER publica edictes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consorci Administració Oberta de Catalunya (AOC) · fitxes dels serveis e-Notum, e-Valisa, e-Tauler i e-Còpia",
+      "url": "https://www.aoc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-019",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Su unidad debe publicar un edicto en el tablón de anuncios de la sede electrónica, con garantía de la fecha de publicación y de la integridad del contenido. ¿Qué servicio del Consorcio AOC se utiliza?",
+      "opciones": [
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA",
+        "e-TAULER"
+      ],
+      "explicacion": "e-TAULER es el tablón electrónico de edictos y anuncios, que acredita la fecha y el período de publicación y la integridad de lo publicado."
+    },
+    "ca": {
+      "enunciado": "La seva unitat ha de publicar un edicte al tauler d'anuncis de la seu electrònica, amb garantia de la data de publicació i de la integritat del contingut. Quin servei del Consorci AOC s'utilitza?",
+      "opciones": [
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA",
+        "e-TAULER"
+      ],
+      "explicacion": "e-TAULER és el tauler electrònic d'edictes i anuncis, que acredita la data i el període de publicació i la integritat del que s'ha publicat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consorci Administració Oberta de Catalunya (AOC) · fitxes dels serveis e-Notum, e-Valisa, e-Tauler i e-Còpia",
+      "url": "https://www.aoc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-020",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En la oficina de registro recibe documentos en papel que deben incorporarse a un expediente electrónico, y necesita obtener de ellos copias auténticas electrónicas mediante digitalización segura. ¿Qué servicio del Consorcio AOC es el adecuado?",
+      "opciones": [
+        "e-TAULER",
+        "e-CÒPIA",
+        "e-VALISA",
+        "e-NOTUM"
+      ],
+      "explicacion": "e-CÒPIA permite digitalizar documentos en papel y generar copias auténticas electrónicas con las garantías del artículo 27 de la Ley 39/2015 (metadatos de copia y firma o sello del órgano)."
+    },
+    "ca": {
+      "enunciado": "A l'oficina de registre rep documents en paper que s'han d'incorporar a un expedient electrònic, i n'ha d'obtenir còpies autèntiques electròniques mitjançant digitalització segura. Quin servei del Consorci AOC és l'adequat?",
+      "opciones": [
+        "e-TAULER",
+        "e-CÒPIA",
+        "e-VALISA",
+        "e-NOTUM"
+      ],
+      "explicacion": "e-CÒPIA permet digitalitzar documents en paper i generar còpies autèntiques electròniques amb les garanties de l'article 27 de la Llei 39/2015 (metadades de còpia i signatura o segell de l'òrgan)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Consorci Administració Oberta de Catalunya (AOC) · fitxes dels serveis e-Notum, e-Valisa, e-Tauler i e-Còpia",
+      "url": "https://www.aoc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-021",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Debe enviar un mismo correo electrónico informativo a doscientas personas que no se conocen entre sí. ¿Cómo debe introducir las direcciones para proteger sus datos personales?",
+      "opciones": [
+        "Todas en el campo «Para»",
+        "En el campo «CCO» (copia oculta), para que ningún destinatario vea las direcciones de los demás",
+        "Todas en el campo «CC» (con copia)",
+        "En el cuerpo del mensaje, separadas por comas"
+      ],
+      "explicacion": "Con el campo de copia oculta (CCO) cada destinatario solo ve su propia dirección; ponerlas en «Para» o en «CC» revela a todos las direcciones de los demás, que son datos personales."
+    },
+    "ca": {
+      "enunciado": "Ha d'enviar un mateix correu electrònic informatiu a dues-centes persones que no es coneixen entre elles. Com ha d'introduir les adreces per protegir-ne les dades personals?",
+      "opciones": [
+        "Totes al camp «Per a»",
+        "Al camp «CCO» (còpia oculta), perquè cap destinatari no vegi les adreces dels altres",
+        "Totes al camp «CC» (amb còpia)",
+        "Al cos del missatge, separades per comes"
+      ],
+      "explicacion": "Amb el camp de còpia oculta (CCO) cada destinatari només veu la seva pròpia adreça; posar-les a «Per a» o a «CC» revela a tothom les adreces dels altres, que són dades personals."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en ofimàtica i competències digitals",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-022",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué formato de archivo es el adecuado para la conservación a largo plazo de documentos electrónicos de texto?",
+      "opciones": [
+        "PDF/A",
+        "Documento de texto editable (.docx)",
+        "Imagen comprimida GIF",
+        "Archivo temporal (.tmp)"
+      ],
+      "explicacion": "El PDF/A es la variante del PDF normalizada (ISO 19005) para el archivo a largo plazo: incrusta fuentes y no depende de recursos externos. Un documento editable o un archivo temporal no garantizan la integridad ni la reproducción futura."
+    },
+    "ca": {
+      "enunciado": "Quin format de fitxer és l'adequat per a la conservació a llarg termini de documents electrònics de text?",
+      "opciones": [
+        "PDF/A",
+        "Document de text editable (.docx)",
+        "Imatge comprimida GIF",
+        "Fitxer temporal (.tmp)"
+      ],
+      "explicacion": "El PDF/A és la variant del PDF normalitzada (ISO 19005) per a l'arxivament a llarg termini: incrusta les fonts i no depèn de recursos externs. Un document editable o un fitxer temporal no garanteixen la integritat ni la reproducció futura."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en ofimàtica i competències digitals",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-023",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Recibe un correo, aparentemente del servicio informático, que le pide que introduzca su contraseña corporativa en un enlace para «evitar el bloqueo de la cuenta». ¿Qué debe hacer?",
+      "opciones": [
+        "Introducir la contraseña rápidamente para evitar el bloqueo",
+        "Responder al correo con la contraseña, pero no pulsar el enlace",
+        "No pulsar el enlace ni facilitar la contraseña, y comunicarlo al servicio de soporte o de seguridad informática",
+        "Reenviar el correo a todos los compañeros para que lo rellenen"
+      ],
+      "explicacion": "Es un caso típico de suplantación (phishing): los servicios informáticos no piden contraseñas por correo. Hay que no interactuar con el mensaje y avisar al servicio de soporte o de seguridad."
+    },
+    "ca": {
+      "enunciado": "Rep un correu, aparentment del servei informàtic, que li demana que introdueixi la contrasenya corporativa en un enllaç per «evitar el bloqueig del compte». Què ha de fer?",
+      "opciones": [
+        "Introduir la contrasenya ràpidament per evitar el bloqueig",
+        "Respondre el correu amb la contrasenya, però no prémer l'enllaç",
+        "No prémer l'enllaç ni facilitar la contrasenya, i comunicar-ho al servei de suport o de seguretat informàtica",
+        "Reenviar el correu a tots els companys perquè l'emplenin"
+      ],
+      "explicacion": "És un cas típic de suplantació (pesca electrònica o phishing): els serveis informàtics no demanen contrasenyes per correu. No s'ha d'interactuar amb el missatge i cal avisar el servei de suport o de seguretat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en ofimàtica i competències digitals",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t13-024",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una hoja de cálculo configurada en catalán o castellano, ¿qué fórmula suma todos los valores de las celdas B2 a B10?",
+      "opciones": [
+        "=SUMA(B2;B10)",
+        "=SUMA(B2:B10)",
+        "SUMA(B2:B10)",
+        "=SUMA(B2-B10)"
+      ],
+      "explicacion": "Las fórmulas empiezan con «=» y el rango se indica con dos puntos (B2:B10). «=SUMA(B2;B10)» solo suma las dos celdas indicadas, sin el «=» el contenido se trata como texto y «B2-B10» es una resta."
+    },
+    "ca": {
+      "enunciado": "En un full de càlcul configurat en català o castellà, quina fórmula suma tots els valors de les cel·les B2 a B10?",
+      "opciones": [
+        "=SUMA(B2;B10)",
+        "=SUMA(B2:B10)",
+        "SUMA(B2:B10)",
+        "=SUMA(B2-B10)"
+      ],
+      "explicacion": "Les fórmules comencen amb «=» i l'interval s'indica amb dos punts (B2:B10). «=SUMA(B2;B10)» només suma les dues cel·les indicades, sense el «=» el contingut es tracta com a text i «B2-B10» és una resta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en ofimàtica i competències digitals",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  }
+]

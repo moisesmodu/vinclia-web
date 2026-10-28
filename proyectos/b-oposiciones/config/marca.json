@@ -1,0 +1,14 @@
+{
+  "nombre": "Plaça",
+  "familia": "Exámenes",
+  "lema": { "ca": "Treu plaça. Tests per a la teva oposició, per fi.", "es": "Saca plaza. Tests para tu oposición, por fin.", "en": "Practice tests for the public exams nobody else covers." },
+  "sello": { "ca": "Fet a Lleida · Preu clar · Cancel·la amb un clic", "es": "Hecho en Lleida · Precio claro · Cancela en un clic" },
+  "colores": { "primario": "#3B3FD8", "oscuro": "#14142B", "fondo": "#F6F6FB", "acento": "#19B36B", "texto": "#14142B" },
+  "tipografia": { "titulos": "Space Grotesk", "texto": "IBM Plex Sans" },
+  "color": "#3B3FD8",
+  "dominio": "placa-oposicions.vercel.app",
+  "dominiosPropuestos": ["placa.cat", "treuplaca.cat"],
+  "pais": "es",
+  "fuente": "marcas/tokens.json → proyectos.b-oposiciones y familias.examenes (MARCAS.md §4)",
+  "nota": "Dominio provisional gratuito (.vercel.app). Cambiar aquí y en NEXT_PUBLIC_URL cuando Moisés compre placa.cat o treuplaca.cat."
+}

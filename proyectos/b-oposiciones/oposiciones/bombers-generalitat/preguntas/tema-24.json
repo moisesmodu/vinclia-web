@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t24-001",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se denomina la transición súbita en un recinto cerrado en la que todas las superficies combustibles expuestas alcanzan casi a la vez su temperatura de ignición y arden, principalmente por la radiación de la capa de gases calientes?",
+      "opciones": [
+        "Backdraft (explosión de humo)",
+        "Flashover (combustión súbita generalizada)",
+        "Boilover (desbordamiento por ebullición)",
+        "BLEVE (explosión de vapor en expansión)"
+      ],
+      "explicacion": "El flashover es la transición a incendio totalmente desarrollado: la radiación de la capa de humo calienta todo el contenido del recinto, que se inflama casi simultáneamente. El backdraft, en cambio, exige una entrada súbita de aire en un recinto con falta de oxígeno."
+    },
+    "ca": {
+      "enunciado": "Com s'anomena la transició sobtada en un recinte tancat en què totes les superfícies combustibles exposades arriben gairebé alhora a la temperatura d'ignició i cremen, principalment per la radiació de la capa de gasos calents?",
+      "opciones": [
+        "Backdraft (explosió de fum)",
+        "Flashover (combustió sobtada generalitzada)",
+        "Boilover (desbordament per ebullició)",
+        "BLEVE (explosió de vapor en expansió)"
+      ],
+      "explicacion": "El flashover és la transició a incendi totalment desenvolupat: la radiació de la capa de fum escalfa tot el contingut del recinte, que s'inflama gairebé simultàniament. El backdraft, en canvi, exigeix una entrada sobtada d'aire en un recinte amb manca d'oxigen."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-002",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿En qué situación es más probable que se produzca un backdraft?",
+      "opciones": [
+        "En un incendio controlado por el combustible, con abundante ventilación y llamas visibles",
+        "En un recinto bien ventilado en el que la capa de humo se enfría y desciende hasta el suelo",
+        "Al abrir de golpe un recinto cerrado donde el fuego ha consumido el oxígeno y se han acumulado gases calientes sin quemar",
+        "Al aplicar agua pulverizada sobre la capa de humo de un recinto con buena ventilación"
+      ],
+      "explicacion": "El backdraft se produce en incendios controlados por la ventilación: falta oxígeno, pero hay gases calientes inquemados; la entrada brusca de aire (al abrir una puerta o romper un cristal) forma una mezcla que se inflama de forma explosiva."
+    },
+    "ca": {
+      "enunciado": "En quina situació és més probable que es produeixi un backdraft?",
+      "opciones": [
+        "En un incendi controlat pel combustible, amb ventilació abundant i flames visibles",
+        "En un recinte ben ventilat en què la capa de fum es refreda i baixa fins a terra",
+        "En obrir de cop un recinte tancat on el foc ha consumit l'oxigen i s'hi han acumulat gasos calents sense cremar",
+        "En aplicar aigua polvoritzada sobre la capa de fum d'un recinte amb bona ventilació"
+      ],
+      "explicacion": "El backdraft es produeix en incendis controlats per la ventilació: hi falta oxigen, però hi ha gasos calents no cremats; l'entrada brusca d'aire (en obrir una porta o trencar un vidre) forma una mescla que s'inflama de manera explosiva."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-003",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál de estos signos, observados desde el exterior de un recinto cerrado, alerta de un posible backdraft?",
+      "opciones": [
+        "Humo que sale a pulsos por las rendijas y vuelve a entrar, con cristales ennegrecidos y poca llama visible",
+        "Llamas abundantes que salen por la ventana y humo claro que se eleva con rapidez",
+        "Ausencia total de humo en el exterior y puertas a temperatura ambiente",
+        "Humo blanco y ligero que sale de forma continua por la parte baja de la puerta"
+      ],
+      "explicacion": "El humo que «respira» (sale y vuelve a entrar a pulsos), los cristales ennegrecidos o con manchas aceitosas y la escasez de llama visible indican un incendio falto de oxígeno con gases inquemados, la situación previa típica de un backdraft."
+    },
+    "ca": {
+      "enunciado": "Quin d'aquests senyals, observats des de l'exterior d'un recinte tancat, alerta d'un possible backdraft?",
+      "opciones": [
+        "Fum que surt a polsos per les escletxes i torna a entrar, amb vidres ennegrits i poca flama visible",
+        "Flames abundants que surten per la finestra i fum clar que s'eleva ràpidament",
+        "Absència total de fum a l'exterior i portes a temperatura ambient",
+        "Fum blanc i lleuger que surt de manera contínua per la part baixa de la porta"
+      ],
+      "explicacion": "El fum que «respira» (surt i torna a entrar a polsos), els vidres ennegrits o amb taques oloses i l'escassetat de flama visible indiquen un incendi mancat d'oxigen amb gasos no cremats, la situació prèvia típica d'un backdraft."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-004",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál es el orden correcto de las fases de desarrollo de un incendio de interior que evoluciona libremente?",
+      "opciones": [
+        "Crecimiento, ignición, decaimiento y desarrollo pleno",
+        "Ignición, desarrollo pleno, crecimiento y decaimiento",
+        "Ignición, crecimiento, decaimiento y desarrollo pleno",
+        "Ignición, crecimiento, desarrollo pleno y decaimiento"
+      ],
+      "explicacion": "Un incendio de interior pasa por ignición, crecimiento (en el que puede producirse el flashover), desarrollo pleno y, al agotarse el combustible o el oxígeno, decaimiento."
+    },
+    "ca": {
+      "enunciado": "Quin és l'ordre correcte de les fases de desenvolupament d'un incendi d'interior que evoluciona lliurement?",
+      "opciones": [
+        "Creixement, ignició, decaïment i desenvolupament ple",
+        "Ignició, desenvolupament ple, creixement i decaïment",
+        "Ignició, creixement, decaïment i desenvolupament ple",
+        "Ignició, creixement, desenvolupament ple i decaïment"
+      ],
+      "explicacion": "Un incendi d'interior passa per ignició, creixement (en què es pot produir el flashover), desenvolupament ple i, quan s'exhaureix el combustible o l'oxigen, decaïment."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-005",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "La aparición de lenguas de fuego que recorren la capa de gases calientes bajo el techo, por delante del foco, se conoce como rollover y es un indicio de...",
+      "opciones": [
+        "que el flashover puede ser inminente",
+        "que el incendio ha entrado en fase de decaimiento",
+        "que el recinto se ha quedado sin oxígeno",
+        "que la capa de humo se ha enfriado lo suficiente"
+      ],
+      "explicacion": "El rollover es la inflamación de los gases de la capa de humo que avanzan bajo el techo; indica que esa capa está muy caliente y que la transición a flashover puede producirse en breve."
+    },
+    "ca": {
+      "enunciado": "L'aparició de llengües de foc que recorren la capa de gasos calents sota el sostre, per davant del focus, es coneix com a rollover i és un indici...",
+      "opciones": [
+        "que el flashover pot ser imminent",
+        "que l'incendi ha entrat en fase de decaïment",
+        "que el recinte s'ha quedat sense oxigen",
+        "que la capa de fum s'ha refredat prou"
+      ],
+      "explicacion": "El rollover és la inflamació dels gasos de la capa de fum que avancen sota el sostre; indica que aquesta capa és molt calenta i que la transició a flashover es pot produir aviat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-006",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En un recinto incendiado con una abertura al exterior, ¿qué es el plano neutro?",
+      "opciones": [
+        "La altura a la que la temperatura del humo es igual a la del aire exterior",
+        "La altura a la que la presión interior se iguala con la exterior: por encima sale humo y por debajo entra aire",
+        "El nivel del suelo, donde no hay humo ni calor durante todo el incendio",
+        "La zona del techo donde se acumulan los gases más fríos del recinto"
+      ],
+      "explicacion": "En el plano neutro la presión dentro y fuera del recinto es la misma; por encima, la sobrepresión de los gases calientes hace salir el humo, y por debajo entra aire fresco. Su descenso rápido indica empeoramiento de las condiciones."
+    },
+    "ca": {
+      "enunciado": "En un recinte incendiat amb una obertura a l'exterior, què és el pla neutre?",
+      "opciones": [
+        "L'altura a la qual la temperatura del fum és igual a la de l'aire exterior",
+        "L'altura a la qual la pressió interior s'iguala amb l'exterior: per sobre surt fum i per sota entra aire",
+        "El nivell de terra, on no hi ha fum ni calor durant tot l'incendi",
+        "La zona del sostre on s'acumulen els gasos més freds del recinte"
+      ],
+      "explicacion": "Al pla neutre la pressió dins i fora del recinte és la mateixa; per sobre, la sobrepressió dels gasos calents fa sortir el fum, i per sota entra aire fresc. El seu descens ràpid indica que les condicions empitjoren."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-007",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En la ventilación por presión positiva (VPP) de un recinto con humo, ¿qué condición es imprescindible?",
+      "opciones": [
+        "Colocar el ventilador dentro del recinto, lo más cerca posible del foco",
+        "Cerrar todas las aberturas del recinto antes de poner en marcha el ventilador",
+        "Disponer de una abertura de salida por la que puedan evacuarse el humo y los gases",
+        "Esperar a que el incendio esté totalmente extinguido para empezar a ventilar"
+      ],
+      "explicacion": "La VPP introduce aire desde el exterior por una abertura de entrada para presurizar el recinto; sin una abertura de salida el humo no tiene por dónde evacuarse y se empuja hacia otras zonas."
+    },
+    "ca": {
+      "enunciado": "En la ventilació per pressió positiva (VPP) d'un recinte amb fum, quina condició és imprescindible?",
+      "opciones": [
+        "Col·locar el ventilador dins del recinte, tan a prop del focus com sigui possible",
+        "Tancar totes les obertures del recinte abans d'engegar el ventilador",
+        "Disposar d'una obertura de sortida per on es puguin evacuar el fum i els gasos",
+        "Esperar que l'incendi estigui totalment extingit per començar a ventilar"
+      ],
+      "explicacion": "La VPP introdueix aire des de l'exterior per una obertura d'entrada per pressuritzar el recinte; sense una obertura de sortida el fum no té per on evacuar-se i s'empeny cap a altres zones."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-008",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Durante la búsqueda de víctimas en el interior de una vivienda con humo denso y sin visibilidad, ¿cómo debe avanzar el equipo?",
+      "opciones": [
+        "Caminando erguido por el centro de la estancia para avanzar más rápido",
+        "Separándose los componentes para cubrir más superficie cada uno",
+        "Siguiendo la dirección del humo hacia el techo y las aberturas altas",
+        "Manteniendo el contacto con una pared y desplazándose a baja altura"
+      ],
+      "explicacion": "Seguir una pared (técnica de mano derecha o izquierda) permite orientarse y encontrar la salida por el mismo camino, y avanzar agachado reduce la exposición al calor y al humo, que se acumulan en la parte alta. El equipo no se separa."
+    },
+    "ca": {
+      "enunciado": "Durant la cerca de víctimes a l'interior d'un habitatge amb fum dens i sense visibilitat, com ha d'avançar l'equip?",
+      "opciones": [
+        "Caminant dret pel centre de l'estança per avançar més de pressa",
+        "Separant-se els components per cobrir més superfície cadascun",
+        "Seguint la direcció del fum cap al sostre i les obertures altes",
+        "Mantenint el contacte amb una paret i desplaçant-se a poca altura"
+      ],
+      "explicacion": "Seguir una paret (tècnica de mà dreta o esquerra) permet orientar-se i trobar la sortida pel mateix camí, i avançar ajupit redueix l'exposició a la calor i al fum, que s'acumulen a la part alta. L'equip no se separa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-009",
+    "tema": 24,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Antes de abrir la puerta de una habitación en la que se sospecha que hay fuego, ¿qué procedimiento es el adecuado?",
+      "opciones": [
+        "Abrirla de golpe por completo para que el humo salga cuanto antes",
+        "Comprobar su temperatura y abrirla situado a un lado, con la línea de agua cargada",
+        "Situarse frente a la puerta, en su eje, para lanzar el chorro en cuanto se abra",
+        "Romper antes los cristales de la habitación desde el exterior para que entre aire"
+      ],
+      "explicacion": "Comprobar la temperatura de la puerta da información sobre lo que hay detrás; abrir desde un lateral evita recibir de lleno una salida de llamas o gases, y la instalación cargada permite enfriar de inmediato. Aportar aire sin control puede provocar un backdraft."
+    },
+    "ca": {
+      "enunciado": "Abans d'obrir la porta d'una habitació on se sospita que hi ha foc, quin procediment és l'adequat?",
+      "opciones": [
+        "Obrir-la de cop del tot perquè el fum surti com més aviat millor",
+        "Comprovar-ne la temperatura i obrir-la situat a un costat, amb la línia d'aigua carregada",
+        "Situar-se davant de la porta, en el seu eix, per llançar el raig tan bon punt s'obri",
+        "Trencar abans els vidres de l'habitació des de l'exterior perquè hi entri aire"
+      ],
+      "explicacion": "Comprovar la temperatura de la porta dona informació sobre el que hi ha al darrere; obrir des d'un lateral evita rebre de ple una sortida de flames o gasos, i la instal·lació carregada permet refredar immediatament. Aportar aire sense control pot provocar un backdraft."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t24-010",
+    "tema": 24,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el ataque a la capa de humo con la lanza mediante pulsos cortos de agua pulverizada, ¿cuál es el objetivo principal?",
+      "opciones": [
+        "Enfriar los gases de incendio y reducir su posibilidad de inflamarse",
+        "Extinguir el foco principal por sofocación con vapor de agua",
+        "Arrastrar el humo hacia el exterior por efecto de la presión del chorro",
+        "Empapar de agua los combustibles sólidos situados en el recinto"
+      ],
+      "explicacion": "Los pulsos cortos de agua finamente pulverizada se evaporan en la capa de humo, la enfrían y la diluyen, alejándola de su rango de inflamabilidad sin alterar en exceso el equilibrio térmico del recinto. El ataque al foco se hace después, de forma directa."
+    },
+    "ca": {
+      "enunciado": "En l'atac a la capa de fum amb la llança mitjançant polsos curts d'aigua polvoritzada, quin és l'objectiu principal?",
+      "opciones": [
+        "Refredar els gasos d'incendi i reduir-ne la possibilitat d'inflamar-se",
+        "Extingir el focus principal per sufocació amb vapor d'aigua",
+        "Arrossegar el fum cap a l'exterior per efecte de la pressió del raig",
+        "Amarar d'aigua els combustibles sòlids situats al recinte"
+      ],
+      "explicacion": "Els polsos curts d'aigua finament polvoritzada s'evaporen a la capa de fum, la refreden i la dilueixen, i l'allunyen del seu rang d'inflamabilitat sense alterar en excés l'equilibri tèrmic del recinte. L'atac al focus es fa després, de manera directa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

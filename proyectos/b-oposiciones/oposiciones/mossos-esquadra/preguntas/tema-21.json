@@ -1,0 +1,194 @@
+[
+  {
+    "id": "moss-t21-001",
+    "tema": 21,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿En qué ciudad tiene su sede Europol, la agencia de la Unión Europea para la cooperación policial?",
+      "opciones": [
+        "La Haya",
+        "Bruselas",
+        "Lyon",
+        "Estrasburgo"
+      ],
+      "explicacion": "Europol tiene su sede en La Haya (Países Bajos). En Lyon está la Secretaría General de Interpol, organización internacional que no pertenece a la Unión Europea."
+    },
+    "ca": {
+      "enunciado": "En quina ciutat té la seu Europol, l'agència de la Unió Europea per a la cooperació policial?",
+      "opciones": [
+        "La Haia",
+        "Brussel·les",
+        "Lió",
+        "Estrasburg"
+      ],
+      "explicacion": "Europol té la seu a la Haia (Països Baixos). A Lió hi ha la Secretaria General d'Interpol, organització internacional que no pertany a la Unió Europea."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Europol · Agencia de la Unión Europea para la Cooperación Policial",
+      "url": "https://www.europol.europa.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t21-002",
+    "tema": 21,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuántos diputados componen el Parlamento de Cataluña?",
+      "opciones": [
+        "120",
+        "135",
+        "150",
+        "68"
+      ],
+      "explicacion": "El Parlamento de Cataluña está formado por 135 diputados, elegidos en las circunscripciones de Barcelona, Girona, Lleida y Tarragona; la mayoría absoluta es de 68."
+    },
+    "ca": {
+      "enunciado": "Quants diputats componen el Parlament de Catalunya?",
+      "opciones": [
+        "120",
+        "135",
+        "150",
+        "68"
+      ],
+      "explicacion": "El Parlament de Catalunya està format per 135 diputats, elegits a les circumscripcions de Barcelona, Girona, Lleida i Tarragona; la majoria absoluta és de 68."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Parlament de Catalunya",
+      "url": "https://www.parlament.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t21-003",
+    "tema": 21,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué es el Idescat?",
+      "opciones": [
+        "El servicio de empleo de la Generalitat",
+        "El instituto catalán de crédito y finanzas",
+        "El Instituto de Estadística de Cataluña, organismo estadístico oficial de la Generalitat",
+        "El instituto de estudios del autogobierno"
+      ],
+      "explicacion": "El Idescat es el Institut d’Estadística de Catalunya, el organismo de la Generalitat que elabora y difunde la estadística oficial de Cataluña (población, economía, sociedad, territorio)."
+    },
+    "ca": {
+      "enunciado": "Què és l'Idescat?",
+      "opciones": [
+        "El servei d'ocupació de la Generalitat",
+        "L'institut català de crèdit i finances",
+        "L'Institut d'Estadística de Catalunya, organisme estadístic oficial de la Generalitat",
+        "L'institut d'estudis de l'autogovern"
+      ],
+      "explicacion": "L'Idescat és l'Institut d'Estadística de Catalunya, l'organisme de la Generalitat que elabora i difon l'estadística oficial de Catalunya (població, economia, societat, territori)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Idescat · Institut d'Estadística de Catalunya",
+      "url": "https://www.idescat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t21-004",
+    "tema": 21,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuántos miembros permanentes, con derecho de veto, tiene el Consejo de Seguridad de las Naciones Unidas?",
+      "opciones": [
+        "Diez",
+        "Quince",
+        "Siete",
+        "Cinco"
+      ],
+      "explicacion": "El Consejo de Seguridad tiene quince miembros, de los cuales cinco son permanentes con derecho de veto: China, Estados Unidos, Francia, Reino Unido y Rusia. Los otros diez son no permanentes y se eligen por dos años."
+    },
+    "ca": {
+      "enunciado": "Quants membres permanents, amb dret de veto, té el Consell de Seguretat de les Nacions Unides?",
+      "opciones": [
+        "Deu",
+        "Quinze",
+        "Set",
+        "Cinc"
+      ],
+      "explicacion": "El Consell de Seguretat té quinze membres, dels quals cinc són permanents amb dret de veto: la Xina, els Estats Units, França, el Regne Unit i Rússia. Els altres deu són no permanents i s'elegeixen per dos anys."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Carta de las Naciones Unidas (ONU)",
+      "url": "https://www.un.org/es/about-us/un-charter"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t21-005",
+    "tema": 21,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿En qué fecha empezaron a circular en España los billetes y monedas de euro?",
+      "opciones": [
+        "El 1 de enero de 1999",
+        "El 1 de enero de 2002",
+        "El 1 de enero de 2000",
+        "El 1 de julio de 2002"
+      ],
+      "explicacion": "El euro se introdujo como moneda escritural el 1 de enero de 1999 y los billetes y monedas empezaron a circular el 1 de enero de 2002; la peseta dejó de tener curso legal a finales de febrero de 2002."
+    },
+    "ca": {
+      "enunciado": "En quina data van començar a circular a Espanya els bitllets i les monedes d'euro?",
+      "opciones": [
+        "L'1 de gener de 1999",
+        "L'1 de gener de 2002",
+        "L'1 de gener de 2000",
+        "L'1 de juliol de 2002"
+      ],
+      "explicacion": "L'euro es va introduir com a moneda escriptural l'1 de gener de 1999 i els bitllets i les monedes van començar a circular l'1 de gener de 2002; la pesseta va deixar de tenir curs legal a final de febrer de 2002."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Banco Central Europeo · el euro",
+      "url": "https://www.ecb.europa.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t21-006",
+    "tema": 21,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Dónde tienen su sede la Presidencia de la Generalitat y el Gobierno de Cataluña?",
+      "opciones": [
+        "En el Palacio del Parlamento, en el parque de la Ciudadela",
+        "En el Palau Robert, en el paseo de Gràcia",
+        "En el Palacio de la Generalitat, en la plaza de Sant Jaume de Barcelona",
+        "En el Palacio de Pedralbes"
+      ],
+      "explicacion": "La Presidencia de la Generalitat y el Gobierno tienen su sede en el Palacio de la Generalitat, en la plaza de Sant Jaume de Barcelona; el Parlamento está en el parque de la Ciudadela."
+    },
+    "ca": {
+      "enunciado": "On tenen la seu la Presidència de la Generalitat i el Govern de Catalunya?",
+      "opciones": [
+        "Al Palau del Parlament, al parc de la Ciutadella",
+        "Al Palau Robert, al passeig de Gràcia",
+        "Al Palau de la Generalitat, a la plaça de Sant Jaume de Barcelona",
+        "Al Palau de Pedralbes"
+      ],
+      "explicacion": "La Presidència de la Generalitat i el Govern tenen la seu al Palau de la Generalitat, a la plaça de Sant Jaume de Barcelona; el Parlament és al parc de la Ciutadella."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Govern.cat · notícies i acords del Govern",
+      "url": "https://govern.cat/"
+    },
+    "origen": "ia"
+  }
+]

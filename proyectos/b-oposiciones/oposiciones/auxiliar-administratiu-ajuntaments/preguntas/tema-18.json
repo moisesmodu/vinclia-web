@@ -1,0 +1,492 @@
+[
+  {
+    "id": "ajun-t18-001",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes impuestos municipales es de establecimiento potestativo para los ayuntamientos?",
+      "opciones": [
+        "El Impuesto sobre Bienes Inmuebles",
+        "El Impuesto sobre Actividades Económicas",
+        "El Impuesto sobre Vehículos de Tracción Mecánica",
+        "El Impuesto sobre Construcciones, Instalaciones y Obras"
+      ],
+      "explicacion": "Según el artículo 59 del TRLRHL, el IBI, el IAE y el IVTM son de exigencia obligatoria (59.1), mientras que el ICIO y el Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana son potestativos (59.2)."
+    },
+    "ca": {
+      "enunciado": "Quin dels impostos municipals següents és d'establiment potestatiu per als ajuntaments?",
+      "opciones": [
+        "L'impost sobre béns immobles",
+        "L'impost sobre activitats econòmiques",
+        "L'impost sobre vehicles de tracció mecànica",
+        "L'impost sobre construccions, instal·lacions i obres"
+      ],
+      "explicacion": "Segons l'article 59 del TRLRHL, l'IBI, l'IAE i l'IVTM són d'exigència obligatòria (59.1), mentre que l'ICIO i l'impost sobre l'increment de valor dels terrenys de naturalesa urbana són potestatius (59.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "59",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a59"
+    },
+    "cita": "Asimismo, los ayuntamientos podrán establecer y exigir el Impuesto sobre Construcciones, Instalaciones y Obras y el Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-002",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Los acuerdos provisionales de aprobación o modificación de las ordenanzas fiscales se expondrán en el tablón de anuncios de la entidad durante, como mínimo:",
+      "opciones": [
+        "Quince días",
+        "Treinta días",
+        "Veinte días",
+        "Dos meses"
+      ],
+      "explicacion": "Lo dispone el artículo 17.1 del TRLRHL. Los quince días corresponden a la exposición pública del presupuesto aprobado inicialmente (artículo 169.1)."
+    },
+    "ca": {
+      "enunciado": "Els acords provisionals d'aprovació o modificació de les ordenances fiscals s'exposaran al tauler d'anuncis de l'ens durant, com a mínim:",
+      "opciones": [
+        "Quinze dies",
+        "Trenta dies",
+        "Vint dies",
+        "Dos mesos"
+      ],
+      "explicacion": "Ho disposa l'article 17.1 del TRLRHL. Els quinze dies corresponen a l'exposició pública del pressupost aprovat inicialment (article 169.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "17.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a17"
+    },
+    "cita": "se expondrán en el tablón de anuncios de la Entidad durante treinta días, como mínimo, dentro de los cuales los interesados podrán examinar el expediente y presentar las reclamaciones que estimen oportunas.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-003",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Si durante el período de exposición pública del acuerdo provisional de modificación de una ordenanza fiscal no se presenta ninguna reclamación:",
+      "opciones": [
+        "El acuerdo se entiende definitivamente adoptado sin necesidad de acuerdo plenario",
+        "El Pleno debe adoptar en todo caso un nuevo acuerdo de aprobación definitiva",
+        "El alcalde aprueba definitivamente la ordenanza por decreto",
+        "Debe abrirse un nuevo período de exposición pública de quince días"
+      ],
+      "explicacion": "El artículo 17.3 del TRLRHL eleva automáticamente a definitivo el acuerdo provisional. Aun así, la ordenanza no entra en vigor hasta que se publica su texto íntegro en el boletín oficial de la provincia (17.4)."
+    },
+    "ca": {
+      "enunciado": "Si durant el període d'exposició pública de l'acord provisional de modificació d'una ordenança fiscal no es presenta cap reclamació:",
+      "opciones": [
+        "L'acord s'entén definitivament adoptat sense necessitat d'acord plenari",
+        "El Ple ha d'adoptar en tot cas un nou acord d'aprovació definitiva",
+        "L'alcalde aprova definitivament l'ordenança per decret",
+        "S'ha d'obrir un nou període d'exposició pública de quinze dies"
+      ],
+      "explicacion": "L'article 17.3 del TRLRHL eleva automàticament a definitiu l'acord provisional. Tot i així, l'ordenança no entra en vigor fins que se'n publica el text íntegre al butlletí oficial de la província (17.4)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "17.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a17"
+    },
+    "cita": "En el caso de que no se hubieran presentado reclamaciones, se entenderá definitivamente adoptado el acuerdo, hasta entonces provisional, sin necesidad de acuerdo plenario.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-004",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En general, el importe de las tasas por la prestación de un servicio o la realización de una actividad no puede exceder, en su conjunto:",
+      "opciones": [
+        "Del valor que tendría en el mercado la utilidad derivada del servicio",
+        "Del 90 por ciento del coste soportado por la entidad local",
+        "Del coste real o previsible del servicio o actividad o, en su defecto, del valor de la prestación recibida",
+        "Del 1,5 por ciento de los ingresos brutos del sujeto pasivo"
+      ],
+      "explicacion": "Es el límite del artículo 24.2 del TRLRHL. El valor de mercado es la referencia de las tasas por utilización privativa o aprovechamiento especial del dominio público (24.1.a) y el 90 por ciento, el límite de la base de las contribuciones especiales (artículo 31.1)."
+    },
+    "ca": {
+      "enunciado": "En general, l'import de les taxes per la prestació d'un servei o la realització d'una activitat no pot excedir, en conjunt:",
+      "opciones": [
+        "El valor que tindria al mercat la utilitat derivada del servei",
+        "El 90 per cent del cost suportat per l'ens local",
+        "El cost real o previsible del servei o activitat o, si no n'hi ha, el valor de la prestació rebuda",
+        "L'1,5 per cent dels ingressos bruts del subjecte passiu"
+      ],
+      "explicacion": "És el límit de l'article 24.2 del TRLRHL. El valor de mercat és la referència de les taxes per utilització privativa o aprofitament especial del domini públic (24.1.a) i el 90 per cent, el límit de la base de les contribucions especials (article 31.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "24.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a24"
+    },
+    "cita": "el importe de las tasas por la prestación de un servicio o por la realización de una actividad no podrá exceder, en su conjunto, del coste real o previsible del servicio o actividad de que se trate o, en su defecto, del valor de la prestación recibida.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-005",
+    "tema": 18,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La tasa por utilización privativa o aprovechamiento especial del suelo, subsuelo o vuelo de las vías públicas municipales a favor de empresas explotadoras de servicios de suministros de interés general consiste en:",
+      "opciones": [
+        "El 1 por ciento de los ingresos brutos de facturación anual en el término municipal",
+        "El 1,5 por ciento de los ingresos brutos de facturación anual en cada término municipal",
+        "El 3 por ciento de los ingresos brutos de facturación anual en el término municipal",
+        "El valor de mercado de la utilidad derivada del aprovechamiento"
+      ],
+      "explicacion": "Lo fija el artículo 24.1.c) del TRLRHL, que excluye de este régimen especial los servicios de telefonía móvil."
+    },
+    "ca": {
+      "enunciado": "La taxa per utilització privativa o aprofitament especial del sòl, el subsòl o la volada de les vies públiques municipals a favor d'empreses explotadores de serveis de subministraments d'interès general consisteix en:",
+      "opciones": [
+        "L'1 per cent dels ingressos bruts de facturació anual al terme municipal",
+        "L'1,5 per cent dels ingressos bruts de facturació anual a cada terme municipal",
+        "El 3 per cent dels ingressos bruts de facturació anual al terme municipal",
+        "El valor de mercat de la utilitat derivada de l'aprofitament"
+      ],
+      "explicacion": "Ho fixa l'article 24.1.c) del TRLRHL, que exclou d'aquest règim especial els serveis de telefonia mòbil."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "24.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a24"
+    },
+    "cita": "el importe de aquéllas consistirá, en todo caso y sin excepción alguna, en el 1,5 por ciento de los ingresos brutos procedentes de la facturación que obtengan anualmente en cada término municipal las referidas empresas.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-006",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La base imponible de las contribuciones especiales está constituida, como máximo, por el siguiente porcentaje del coste que soporta la entidad local por la obra o el servicio:",
+      "opciones": [
+        "El 50 por ciento",
+        "El 75 por ciento",
+        "El 100 por ciento",
+        "El 90 por ciento"
+      ],
+      "explicacion": "Lo establece el artículo 31.1 del TRLRHL. El coste soportado se calcula restando las subvenciones o auxilios obtenidos (31.5)."
+    },
+    "ca": {
+      "enunciado": "La base imposable de les contribucions especials està constituïda, com a màxim, pel percentatge següent del cost que suporta l'ens local per l'obra o el servei:",
+      "opciones": [
+        "El 50 per cent",
+        "El 75 per cent",
+        "El 100 per cent",
+        "El 90 per cent"
+      ],
+      "explicacion": "Ho estableix l'article 31.1 del TRLRHL. El cost suportat es calcula restant-hi les subvencions o els auxilis obtinguts (31.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "31.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a31"
+    },
+    "cita": "La base imponible de las contribuciones especiales está constituida, como máximo, por el 90 por ciento del coste que la entidad local soporte",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-007",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El Impuesto sobre Bienes Inmuebles es:",
+      "opciones": [
+        "Un tributo directo de carácter real que grava el valor de los bienes inmuebles",
+        "Un tributo indirecto que grava la transmisión de bienes inmuebles",
+        "Un tributo directo de carácter personal que grava la renta del propietario",
+        "Una tasa por la utilización de los bienes inmuebles"
+      ],
+      "explicacion": "Lo define así el artículo 60 del TRLRHL."
+    },
+    "ca": {
+      "enunciado": "L'impost sobre béns immobles és:",
+      "opciones": [
+        "Un tribut directe de caràcter real que grava el valor dels béns immobles",
+        "Un tribut indirecte que grava la transmissió de béns immobles",
+        "Un tribut directe de caràcter personal que grava la renda del propietari",
+        "Una taxa per la utilització dels béns immobles"
+      ],
+      "explicacion": "El defineix així l'article 60 del TRLRHL."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "60",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a60"
+    },
+    "cita": "El Impuesto sobre Bienes Inmuebles es un tributo directo de carácter real que grava el valor de los bienes inmuebles",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-008",
+    "tema": 18,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El tipo de gravamen mínimo y supletorio del Impuesto sobre Bienes Inmuebles para los bienes inmuebles urbanos es:",
+      "opciones": [
+        "El 0,3 por ciento",
+        "El 0,6 por ciento",
+        "El 0,4 por ciento",
+        "El 1,10 por ciento"
+      ],
+      "explicacion": "Según el artículo 72.1 del TRLRHL, el tipo mínimo y supletorio es el 0,4 por ciento para urbanos y el 0,3 por ciento para rústicos; el 1,10 por ciento es el máximo para urbanos."
+    },
+    "ca": {
+      "enunciado": "El tipus de gravamen mínim i supletori de l'impost sobre béns immobles per als béns immobles urbans és:",
+      "opciones": [
+        "El 0,3 per cent",
+        "El 0,6 per cent",
+        "El 0,4 per cent",
+        "L'1,10 per cent"
+      ],
+      "explicacion": "Segons l'article 72.1 del TRLRHL, el tipus mínim i supletori és el 0,4 per cent per als urbans i el 0,3 per cent per als rústics; l'1,10 per cent és el màxim per als urbans."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "72.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a72"
+    },
+    "cita": "El tipo de gravamen mínimo y supletorio será el 0,4 por ciento cuando se trate de bienes inmuebles urbanos",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-009",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El Impuesto sobre Construcciones, Instalaciones y Obras es, según el TRLRHL:",
+      "opciones": [
+        "Un tributo directo de carácter real",
+        "Un tributo indirecto",
+        "Una tasa por el otorgamiento de la licencia urbanística",
+        "Una contribución especial por la realización de obras"
+      ],
+      "explicacion": "El artículo 100.1 del TRLRHL lo califica de tributo indirecto. Su hecho imponible se realiza se haya obtenido o no la licencia, y también cuando se exige declaración responsable o comunicación previa."
+    },
+    "ca": {
+      "enunciado": "L'impost sobre construccions, instal·lacions i obres és, segons el TRLRHL:",
+      "opciones": [
+        "Un tribut directe de caràcter real",
+        "Un tribut indirecte",
+        "Una taxa per l'atorgament de la llicència urbanística",
+        "Una contribució especial per la realització d'obres"
+      ],
+      "explicacion": "L'article 100.1 del TRLRHL el qualifica de tribut indirecte. El seu fet imposable es realitza tant si s'ha obtingut la llicència com si no, i també quan s'exigeix declaració responsable o comunicació prèvia."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "100.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a100"
+    },
+    "cita": "El Impuesto sobre Construcciones, Instalaciones y Obras es un tributo indirecto",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-010",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El ejercicio presupuestario de las entidades locales:",
+      "opciones": [
+        "Coincide con el año natural",
+        "Va del 1 de julio al 30 de junio del año siguiente",
+        "Coincide con el mandato de la corporación",
+        "Lo fija cada año el Pleno al aprobar el presupuesto"
+      ],
+      "explicacion": "Lo dispone el artículo 163 del TRLRHL, que imputa al ejercicio los derechos liquidados y las obligaciones reconocidas en él."
+    },
+    "ca": {
+      "enunciado": "L'exercici pressupostari dels ens locals:",
+      "opciones": [
+        "Coincideix amb l'any natural",
+        "Va de l'1 de juliol al 30 de juny de l'any següent",
+        "Coincideix amb el mandat de la corporació",
+        "El fixa cada any el Ple en aprovar el pressupost"
+      ],
+      "explicacion": "Ho disposa l'article 163 del TRLRHL, que imputa a l'exercici els drets liquidats i les obligacions reconegudes durant aquest."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "163",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a163"
+    },
+    "cita": "El ejercicio presupuestario coincidirá con el año natural",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-011",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Aprobado inicialmente el presupuesto general de una entidad local, se expondrá al público, previo anuncio en el boletín oficial de la provincia, durante:",
+      "opciones": [
+        "Diez días",
+        "Treinta días",
+        "Quince días",
+        "Un mes"
+      ],
+      "explicacion": "El artículo 169.1 del TRLRHL fija quince días; si no hay reclamaciones, el presupuesto se considera definitivamente aprobado y, si las hay, el Pleno dispone de un mes para resolverlas."
+    },
+    "ca": {
+      "enunciado": "Aprovat inicialment el pressupost general d'un ens local, s'exposarà al públic, amb l'anunci previ al butlletí oficial de la província, durant:",
+      "opciones": [
+        "Deu dies",
+        "Trenta dies",
+        "Quinze dies",
+        "Un mes"
+      ],
+      "explicacion": "L'article 169.1 del TRLRHL fixa quinze dies; si no hi ha reclamacions, el pressupost es considera definitivament aprovat i, si n'hi ha, el Ple disposa d'un mes per resoldre-les."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "169.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a169"
+    },
+    "cita": "Aprobado inicialmente el presupuesto general, se expondrá al público, previo anuncio en el boletín oficial de la provincia o, en su caso, de la comunidad autónoma uniprovincial, por 15 días",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-012",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Si al iniciarse el ejercicio económico no ha entrado en vigor el presupuesto correspondiente:",
+      "opciones": [
+        "No pueden reconocerse obligaciones hasta que se apruebe el nuevo presupuesto",
+        "El alcalde aprueba por decreto un presupuesto provisional",
+        "Se aplica el presupuesto aprobado inicialmente aunque no sea definitivo",
+        "Se considera automáticamente prorrogado el del ejercicio anterior, con sus créditos iniciales"
+      ],
+      "explicacion": "Lo establece el artículo 169.6 del TRLRHL. La prórroga no afecta a los créditos de servicios o programas que debían concluir en el ejercicio anterior ni a los financiados con ingresos afectados."
+    },
+    "ca": {
+      "enunciado": "Si en iniciar-se l'exercici econòmic no ha entrat en vigor el pressupost corresponent:",
+      "opciones": [
+        "No es poden reconèixer obligacions fins que s'aprovi el nou pressupost",
+        "L'alcalde aprova per decret un pressupost provisional",
+        "S'aplica el pressupost aprovat inicialment encara que no sigui definitiu",
+        "Es considera automàticament prorrogat el de l'exercici anterior, amb els crèdits inicials"
+      ],
+      "explicacion": "Ho estableix l'article 169.6 del TRLRHL. La pròrroga no afecta els crèdits de serveis o programes que havien de concloure en l'exercici anterior ni els finançats amb ingressos afectats."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "169.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a169"
+    },
+    "cita": "Si al iniciarse el ejercicio económico no hubiese entrado en vigor el presupuesto correspondiente, se considerará automáticamente prorrogado el del anterior, con sus créditos iniciales",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-013",
+    "tema": 18,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El presidente de la entidad local forma el presupuesto general y lo remite, informado por la Intervención, al Pleno de la corporación antes del día:",
+      "opciones": [
+        "15 de septiembre",
+        "15 de octubre",
+        "1 de noviembre",
+        "31 de diciembre"
+      ],
+      "explicacion": "Lo dispone el artículo 168.4 del TRLRHL. El 15 de septiembre es la fecha en que las sociedades mercantiles remiten sus previsiones (168.3) y el 31 de diciembre, el límite para la aprobación definitiva (169.2)."
+    },
+    "ca": {
+      "enunciado": "El president de l'ens local forma el pressupost general i el tramet, informat per la Intervenció, al Ple de la corporació abans del dia:",
+      "opciones": [
+        "15 de setembre",
+        "15 d'octubre",
+        "1 de novembre",
+        "31 de desembre"
+      ],
+      "explicacion": "Ho disposa l'article 168.4 del TRLRHL. El 15 de setembre és la data en què les societats mercantils trameten les seves previsions (168.3) i el 31 de desembre, el límit per a l'aprovació definitiva (169.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2004-4214",
+      "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales",
+      "articulo": "168.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214#a168"
+    },
+    "cita": "el presidente de la entidad formará el presupuesto general y lo remitirá, informado por la Intervención … al Pleno de la corporación antes del día 15 de octubre para su aprobación, enmienda o devolución.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t18-014",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley General Tributaria, son impuestos los tributos:",
+      "opciones": [
+        "Exigidos sin contraprestación cuyo hecho imponible está constituido por negocios, actos o hechos que ponen de manifiesto la capacidad económica del contribuyente",
+        "Cuyo hecho imponible consiste en la utilización privativa o el aprovechamiento especial del dominio público",
+        "Cuyo hecho imponible consiste en la obtención de un beneficio por la realización de obras públicas",
+        "Exigidos por la prestación de servicios que benefician de modo particular al obligado tributario"
+      ],
+      "explicacion": "Es la definición del artículo 2.2.c) de la Ley 58/2003. Las demás opciones describen las tasas (letra a) y las contribuciones especiales (letra b)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei general tributària, són impostos els tributs:",
+      "opciones": [
+        "Exigits sense contraprestació el fet imposable dels quals està constituït per negocis, actes o fets que posen de manifest la capacitat econòmica del contribuent",
+        "El fet imposable dels quals consisteix en la utilització privativa o l'aprofitament especial del domini públic",
+        "El fet imposable dels quals consisteix en l'obtenció d'un benefici per la realització d'obres públiques",
+        "Exigits per la prestació de serveis que beneficien de manera particular l'obligat tributari"
+      ],
+      "explicacion": "És la definició de l'article 2.2.c) de la Llei 58/2003. Les altres opcions descriuen les taxes (lletra a) i les contribucions especials (lletra b)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2003-23186",
+      "norma": "Ley 58/2003, de 17 de diciembre, General Tributaria",
+      "articulo": "2.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a2"
+    },
+    "cita": "Impuestos son los tributos exigidos sin contraprestación cuyo hecho imponible está constituido por negocios, actos o hechos que ponen de manifiesto la capacidad económica del contribuyente.",
+    "origen": "ia"
+  }
+]

@@ -1,0 +1,594 @@
+[
+  {
+    "id": "moss-t11-001",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 17.2 de la Constitución, ¿cuál es el plazo máximo de la detención preventiva antes de que el detenido sea puesto en libertad o a disposición de la autoridad judicial?",
+      "opciones": [
+        "Veinticuatro horas",
+        "Cuarenta y ocho horas",
+        "Setenta y dos horas",
+        "Noventa y seis horas"
+      ],
+      "explicacion": "El artículo 17.2 CE fija un máximo de setenta y dos horas, aunque la detención no puede durar más del tiempo estrictamente necesario para las averiguaciones."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 17.2 de la Constitució, quin és el termini màxim de la detenció preventiva abans que el detingut sigui posat en llibertat o a disposició de l'autoritat judicial?",
+      "opciones": [
+        "Vint-i-quatre hores",
+        "Quaranta-vuit hores",
+        "Setanta-dues hores",
+        "Noranta-sis hores"
+      ],
+      "explicacion": "L'article 17.2 CE fixa un màxim de setanta-dues hores, tot i que la detenció no pot durar més del temps estrictament necessari per a les indagacions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "17.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a17"
+    },
+    "cita": "en todo caso, en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-002",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "De acuerdo con el artículo 18.2 de la Constitución, la entrada o registro en un domicilio sin consentimiento del titular ni resolución judicial solo es posible:",
+      "opciones": [
+        "En caso de flagrante delito",
+        "Cuando lo ordene el Ministerio Fiscal",
+        "Cuando lo autorice el alcalde del municipio",
+        "En cualquier detención practicada por la policía"
+      ],
+      "explicacion": "El artículo 18.2 CE declara inviolable el domicilio y solo admite la entrada sin consentimiento del titular o resolución judicial en caso de flagrante delito. Ni el Ministerio Fiscal ni la autoridad administrativa pueden sustituir la resolución judicial."
+    },
+    "ca": {
+      "enunciado": "D'acord amb l'article 18.2 de la Constitució, l'entrada o el registre en un domicili sense consentiment del titular ni resolució judicial només és possible:",
+      "opciones": [
+        "En cas de flagrant delicte",
+        "Quan ho ordeni el Ministeri Fiscal",
+        "Quan ho autoritzi l'alcalde del municipi",
+        "En qualsevol detenció practicada per la policia"
+      ],
+      "explicacion": "L'article 18.2 CE declara inviolable el domicili i només admet l'entrada sense consentiment del titular o resolució judicial en cas de flagrant delicte. Ni el Ministeri Fiscal ni l'autoritat administrativa no poden substituir la resolució judicial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "18.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a18"
+    },
+    "cita": "Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-003",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 21 de la Constitución, para celebrar una manifestación en un lugar de tránsito público:",
+      "opciones": [
+        "Se necesita autorización previa de la autoridad gubernativa",
+        "Se debe dar comunicación previa a la autoridad",
+        "Se requiere resolución judicial que la permita",
+        "No se exige ningún trámite ante la autoridad"
+      ],
+      "explicacion": "El derecho de reunión no necesita autorización previa (art. 21.1 CE), pero las reuniones en lugares de tránsito público y las manifestaciones exigen comunicación previa a la autoridad (art. 21.2 CE), que solo puede prohibirlas por razones fundadas de alteración del orden público."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21 de la Constitució, per fer una manifestació en un lloc de trànsit públic:",
+      "opciones": [
+        "Cal autorització prèvia de l'autoritat governativa",
+        "S'ha de fer comunicació prèvia a l'autoritat",
+        "Cal una resolució judicial que la permeti",
+        "No s'exigeix cap tràmit davant l'autoritat"
+      ],
+      "explicacion": "El dret de reunió no necessita autorització prèvia (art. 21.1 CE), però les reunions en llocs de trànsit públic i les manifestacions exigeixen comunicació prèvia a l'autoritat (art. 21.2 CE), que només les pot prohibir per raons fonamentades d'alteració de l'ordre públic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "21",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a21"
+    },
+    "cita": "El ejercicio de este derecho no necesitará autorización previa. … En los casos de reuniones en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-004",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Conforme al artículo 22 de la Constitución, las asociaciones solo pueden ser disueltas o suspendidas en sus actividades:",
+      "opciones": [
+        "Por resolución motivada del Ministerio del Interior",
+        "Por acuerdo del registro en el que estén inscritas",
+        "Por decisión del Gobierno, previo informe del Consejo de Estado",
+        "En virtud de resolución judicial motivada"
+      ],
+      "explicacion": "El artículo 22.4 CE reserva a la resolución judicial motivada la disolución o suspensión de las asociaciones. La inscripción en el registro tiene solo efectos de publicidad (art. 22.3 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 22 de la Constitució, les associacions només poden ser dissoltes o suspeses en les seves activitats:",
+      "opciones": [
+        "Per resolució motivada del Ministeri de l'Interior",
+        "Per acord del registre en què estiguin inscrites",
+        "Per decisió del Govern, amb informe previ del Consell d'Estat",
+        "En virtut de resolució judicial motivada"
+      ],
+      "explicacion": "L'article 22.4 CE reserva a la resolució judicial motivada la dissolució o la suspensió de les associacions. La inscripció en el registre només té efectes de publicitat (art. 22.3 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "22.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a22"
+    },
+    "cita": "Las asociaciones sólo podrán ser disueltas o suspendidas en sus actividades en virtud de resolución judicial motivada",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-005",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 13.2 de la Constitución, por tratado o ley y atendiendo a criterios de reciprocidad, se puede reconocer a los extranjeros el derecho de sufragio activo y pasivo en:",
+      "opciones": [
+        "Las elecciones municipales",
+        "Las elecciones autonómicas",
+        "Las elecciones generales al Congreso",
+        "Los referéndums consultivos estatales"
+      ],
+      "explicacion": "El artículo 13.2 CE reserva a los españoles los derechos del artículo 23, con la única salvedad del sufragio activo y pasivo en las elecciones municipales, que puede reconocerse por tratado o ley atendiendo a la reciprocidad."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13.2 de la Constitució, per tractat o llei i atenent criteris de reciprocitat, es pot reconèixer als estrangers el dret de sufragi actiu i passiu en:",
+      "opciones": [
+        "Les eleccions municipals",
+        "Les eleccions autonòmiques",
+        "Les eleccions generals al Congrés",
+        "Els referèndums consultius estatals"
+      ],
+      "explicacion": "L'article 13.2 CE reserva als espanyols els drets de l'article 23, amb l'única excepció del sufragi actiu i passiu en les eleccions municipals, que es pot reconèixer per tractat o llei atenent la reciprocitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "13.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a13"
+    },
+    "cita": "Solamente los españoles serán titulares de los derechos reconocidos en el artículo 23, salvo lo que, atendiendo a criterios de reciprocidad, pueda establecerse por tratado o ley para el derecho de sufragio activo y pasivo en las elecciones municipales",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-006",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué establece el texto del artículo 15 de la Constitución sobre la pena de muerte?",
+      "opciones": [
+        "Queda abolida sin ninguna excepción",
+        "Solo puede imponerse por delitos de terrorismo",
+        "Queda abolida, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra",
+        "Queda abolida, salvo durante la vigencia del estado de sitio"
+      ],
+      "explicacion": "El artículo 15 CE abole la pena de muerte con la salvedad de lo que puedan disponer las leyes penales militares para tiempos de guerra. La Constitución no la vincula al estado de sitio ni a delitos concretos."
+    },
+    "ca": {
+      "enunciado": "Què estableix el text de l'article 15 de la Constitució sobre la pena de mort?",
+      "opciones": [
+        "Queda abolida sense cap excepció",
+        "Només es pot imposar per delictes de terrorisme",
+        "Queda abolida, llevat del que puguin disposar les lleis penals militars per a temps de guerra",
+        "Queda abolida, llevat de durant la vigència de l'estat de setge"
+      ],
+      "explicacion": "L'article 15 CE aboleix la pena de mort amb l'excepció del que puguin disposar les lleis penals militars per a temps de guerra. La Constitució no la vincula a l'estat de setge ni a delictes concrets."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a15"
+    },
+    "cita": "Queda abolida la pena de muerte, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-007",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 16.1 de la Constitución, la única limitación de las manifestaciones de la libertad ideológica, religiosa y de culto es la necesaria para:",
+      "opciones": [
+        "La protección de la juventud y de la infancia",
+        "El mantenimiento del orden público protegido por la ley",
+        "El respeto a la confesión mayoritaria de la sociedad",
+        "La defensa de la seguridad nacional"
+      ],
+      "explicacion": "El artículo 16.1 CE solo admite como límite de las manifestaciones de esta libertad el necesario para el mantenimiento del orden público protegido por la ley. La protección de la juventud y de la infancia es un límite de las libertades del artículo 20."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 16.1 de la Constitució, l'única limitació de les manifestacions de la llibertat ideològica, religiosa i de culte és la necessària per a:",
+      "opciones": [
+        "La protecció de la joventut i de la infància",
+        "El manteniment de l'ordre públic protegit per la llei",
+        "El respecte a la confessió majoritària de la societat",
+        "La defensa de la seguretat nacional"
+      ],
+      "explicacion": "L'article 16.1 CE només admet com a límit de les manifestacions d'aquesta llibertat el necessari per al manteniment de l'ordre públic protegit per la llei. La protecció de la joventut i de la infància és un límit de les llibertats de l'article 20."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a16"
+    },
+    "cita": "Se garantiza la libertad ideológica, religiosa y de culto de los individuos y las comunidades sin más limitación, en sus manifestaciones, que la necesaria para el mantenimiento del orden público protegido por la ley",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-008",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "De acuerdo con el artículo 20 de la Constitución, el secuestro de publicaciones, grabaciones y otros medios de información:",
+      "opciones": [
+        "Puede acordarlo la autoridad gubernativa en caso de urgencia",
+        "Está prohibido en todo caso, como la censura previa",
+        "Puede acordarlo el Ministerio Fiscal mediante decreto motivado",
+        "Solo puede acordarse en virtud de resolución judicial"
+      ],
+      "explicacion": "El artículo 20.5 CE permite el secuestro de publicaciones únicamente en virtud de resolución judicial. Lo que prohíbe en todo caso es la censura previa (art. 20.2 CE), que es una figura distinta."
+    },
+    "ca": {
+      "enunciado": "D'acord amb l'article 20 de la Constitució, el segrest de publicacions, enregistraments i altres mitjans d'informació:",
+      "opciones": [
+        "El pot acordar l'autoritat governativa en cas d'urgència",
+        "Està prohibit en tot cas, com la censura prèvia",
+        "El pot acordar el Ministeri Fiscal mitjançant decret motivat",
+        "Només es pot acordar en virtut de resolució judicial"
+      ],
+      "explicacion": "L'article 20.5 CE permet el segrest de publicacions únicament en virtut de resolució judicial. El que prohibeix en tot cas és la censura prèvia (art. 20.2 CE), que és una figura diferent."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "20.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a20"
+    },
+    "cita": "Sólo podrá acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de resolución judicial",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-009",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 25.3 de la Constitución, la Administración civil:",
+      "opciones": [
+        "No puede imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad",
+        "Puede imponer arrestos de hasta setenta y dos horas",
+        "Solo puede imponer sanciones privativas de libertad con autorización judicial",
+        "Puede imponer privación de libertad subsidiaria por impago de multas"
+      ],
+      "explicacion": "El artículo 25.3 CE prohíbe a la Administración civil imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad; por eso tampoco cabe el arresto sustitutorio por impago de una multa administrativa."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 25.3 de la Constitució, l'Administració civil:",
+      "opciones": [
+        "No pot imposar sancions que, directament o subsidiàriament, impliquin privació de llibertat",
+        "Pot imposar arrestos de fins a setanta-dues hores",
+        "Només pot imposar sancions privatives de llibertat amb autorització judicial",
+        "Pot imposar privació de llibertat subsidiària per impagament de multes"
+      ],
+      "explicacion": "L'article 25.3 CE prohibeix a l'Administració civil imposar sancions que, directament o subsidiàriament, impliquin privació de llibertat; per això tampoc no és possible l'arrest substitutori per impagament d'una multa administrativa."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "25.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a25"
+    },
+    "cita": "La Administración civil no podrá imponer sanciones que, directa o subsidiariamente, impliquen privación de libertad",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-010",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 29 de la Constitución, los miembros de las Fuerzas o Institutos armados o de los Cuerpos sometidos a disciplina militar pueden ejercer el derecho de petición:",
+      "opciones": [
+        "Solo colectivamente, a través de sus mandos",
+        "De forma individual y colectiva, como el resto de ciudadanos",
+        "Solo individualmente y con arreglo a su legislación específica",
+        "Solo por medio de las asociaciones profesionales"
+      ],
+      "explicacion": "El artículo 29.2 CE limita a estos colectivos el derecho de petición a su ejercicio individual y con arreglo a su legislación específica, mientras que el resto de españoles lo tienen individual y colectivo (art. 29.1 CE)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 29 de la Constitució, els membres de les Forces o Instituts armats o dels cossos sotmesos a disciplina militar poden exercir el dret de petició:",
+      "opciones": [
+        "Només col·lectivament, a través dels seus comandaments",
+        "De manera individual i col·lectiva, com la resta de ciutadans",
+        "Només individualment i d'acord amb la seva legislació específica",
+        "Només per mitjà de les associacions professionals"
+      ],
+      "explicacion": "L'article 29.2 CE limita a aquests col·lectius el dret de petició al seu exercici individual i d'acord amb la seva legislació específica, mentre que la resta d'espanyols el tenen individual i col·lectiu (art. 29.1 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "29.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a29"
+    },
+    "cita": "Los miembros de las Fuerzas o Institutos armados o de los Cuerpos sometidos a disciplina militar podrán ejercer este derecho sólo individualmente",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-011",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 53.2 de la Constitución, además del artículo 14 y de la Sección primera del Capítulo segundo, el recurso de amparo ante el Tribunal Constitucional es aplicable a:",
+      "opciones": [
+        "El derecho a contraer matrimonio del artículo 32",
+        "La objeción de conciencia reconocida en el artículo 30",
+        "El derecho al trabajo del artículo 35",
+        "El derecho de propiedad del artículo 33"
+      ],
+      "explicacion": "El artículo 53.2 CE extiende expresamente el recurso de amparo a la objeción de conciencia del artículo 30, que está fuera de la Sección primera. Los artículos 32, 33 y 35 pertenecen a la Sección segunda y no tienen amparo."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 53.2 de la Constitució, a més de l'article 14 i de la secció primera del capítol segon, el recurs d'empara davant el Tribunal Constitucional és aplicable a:",
+      "opciones": [
+        "El dret a contreure matrimoni de l'article 32",
+        "L'objecció de consciència reconeguda en l'article 30",
+        "El dret al treball de l'article 35",
+        "El dret de propietat de l'article 33"
+      ],
+      "explicacion": "L'article 53.2 CE estén expressament el recurs d'empara a l'objecció de consciència de l'article 30, que és fora de la secció primera. Els articles 32, 33 i 35 pertanyen a la secció segona i no tenen empara."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "53.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a53"
+    },
+    "cita": "en su caso, a través del recurso de amparo ante el Tribunal Constitucional. Este último recurso será aplicable a la objeción de conciencia reconocida en el artículo 30",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-012",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 54 de la Constitución, el Defensor del Pueblo es:",
+      "opciones": [
+        "Un órgano del Consejo General del Poder Judicial",
+        "Un alto cargo del Ministerio de Justicia designado por el Gobierno",
+        "Un órgano consultivo del Tribunal Constitucional",
+        "Un alto comisionado de las Cortes Generales, designado por estas"
+      ],
+      "explicacion": "El artículo 54 CE configura el Defensor del Pueblo como alto comisionado de las Cortes Generales, designado por ellas para defender los derechos del Título I, y le permite supervisar la actividad de la Administración."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 54 de la Constitució, el Defensor del Poble és:",
+      "opciones": [
+        "Un òrgan del Consell General del Poder Judicial",
+        "Un alt càrrec del Ministeri de Justícia designat pel Govern",
+        "Un òrgan consultiu del Tribunal Constitucional",
+        "Un alt comissionat de les Corts Generals, designat per aquestes"
+      ],
+      "explicacion": "L'article 54 CE configura el Defensor del Poble com a alt comissionat de les Corts Generals, designat per elles per defensar els drets del títol I, i li permet supervisar l'activitat de l'Administració."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "54",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a54"
+    },
+    "cita": "regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales, designado por éstas para la defensa de los derechos comprendidos en este Título",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-013",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 55.1 de la Constitución, ¿qué derecho NO puede suspenderse en el estado de excepción, aunque sí en el de sitio?",
+      "opciones": [
+        "Los derechos del detenido del artículo 17.3 (información y asistencia de abogado)",
+        "La inviolabilidad del domicilio del artículo 18.2",
+        "El derecho de reunión del artículo 21",
+        "El derecho a la huelga del artículo 28.2"
+      ],
+      "explicacion": "El artículo 55.1 CE permite suspender en los estados de excepción y de sitio, entre otros, los artículos 18.2, 21 y 28.2, pero exceptúa el artículo 17.3 en el estado de excepción."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 55.1 de la Constitució, quin dret NO es pot suspendre en l'estat d'excepció, tot i que sí en el de setge?",
+      "opciones": [
+        "Els drets del detingut de l'article 17.3 (informació i assistència d'advocat)",
+        "La inviolabilitat del domicili de l'article 18.2",
+        "El dret de reunió de l'article 21",
+        "El dret de vaga de l'article 28.2"
+      ],
+      "explicacion": "L'article 55.1 CE permet suspendre en els estats d'excepció i de setge, entre d'altres, els articles 18.2, 21 i 28.2, però exceptua l'article 17.3 en l'estat d'excepció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "55.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a55"
+    },
+    "cita": "Se exceptúa de lo establecido anteriormente el apartado 3 del artículo 17 para el supuesto de declaración de estado de excepción",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-014",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 10.2 de la Constitución, las normas relativas a los derechos fundamentales y a las libertades se interpretarán de conformidad con:",
+      "opciones": [
+        "La jurisprudencia del Tribunal Supremo",
+        "Las leyes orgánicas que los desarrollen",
+        "La Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales ratificados por España",
+        "Los principios rectores de la política social y económica"
+      ],
+      "explicacion": "El artículo 10.2 CE impone interpretar los derechos fundamentales conforme a la Declaración Universal de Derechos Humanos y a los tratados y acuerdos internacionales sobre esas materias ratificados por España."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 10.2 de la Constitució, les normes relatives als drets fonamentals i a les llibertats s'interpretaran de conformitat amb:",
+      "opciones": [
+        "La jurisprudència del Tribunal Suprem",
+        "Les lleis orgàniques que els despleguin",
+        "La Declaració Universal dels Drets Humans i els tractats i acords internacionals ratificats per Espanya",
+        "Els principis rectors de la política social i econòmica"
+      ],
+      "explicacion": "L'article 10.2 CE imposa interpretar els drets fonamentals d'acord amb la Declaració Universal dels Drets Humans i amb els tractats i acords internacionals sobre aquestes matèries ratificats per Espanya."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "10.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a10"
+    },
+    "cita": "se interpretarán de conformidad con la Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-015",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 5.2 del Convenio Europeo de Derechos Humanos (Roma, 1950), toda persona detenida preventivamente debe ser informada de los motivos de su detención:",
+      "opciones": [
+        "En el plazo máximo de veinticuatro horas y por escrito",
+        "En el más breve plazo y en una lengua que comprenda",
+        "En el momento de comparecer ante el juez",
+        "Dentro de las setenta y dos horas siguientes, en la lengua oficial del Estado"
+      ],
+      "explicacion": "El artículo 5.2 del Convenio exige informar al detenido en el más breve plazo y en una lengua que comprenda de los motivos de su detención y de cualquier acusación formulada contra él; no fija un plazo en horas."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 5.2 del Conveni europeu de drets humans (Roma, 1950), tota persona detinguda preventivament ha de ser informada dels motius de la seva detenció:",
+      "opciones": [
+        "En el termini màxim de vint-i-quatre hores i per escrit",
+        "En el termini més breu possible i en una llengua que comprengui",
+        "En el moment de comparèixer davant el jutge",
+        "Dins de les setanta-dues hores següents, en la llengua oficial de l'Estat"
+      ],
+      "explicacion": "L'article 5.2 del Conveni exigeix informar el detingut en el termini més breu possible i en una llengua que comprengui dels motius de la seva detenció i de qualsevol acusació formulada contra ell; no fixa un termini en hores."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-10148",
+      "norma": "Convenio para la protección de los derechos humanos y de las libertades fundamentales (Roma, 1950), texto refundido",
+      "articulo": "5.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-10148#a5"
+    },
+    "cita": "Toda persona detenida preventivamente debe ser informada, en el más breve plazo y en una lengua que comprenda, de los motivos de su detención y de cualquier acusación formulada contra ella",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-016",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En caso de guerra o de otro peligro público que amenace la vida de la nación, el artículo 15 del Convenio Europeo de Derechos Humanos permite derogar obligaciones, pero NO autoriza ninguna derogación del artículo que regula:",
+      "opciones": [
+        "El derecho a la libertad y a la seguridad (art. 5)",
+        "La libertad de expresión (art. 10)",
+        "La libertad de reunión y de asociación (art. 11)",
+        "La prohibición de la tortura (art. 3)"
+      ],
+      "explicacion": "El artículo 15.2 del Convenio declara inderogables los artículos 2 (salvo muertes por actos lícitos de guerra), 3, 4.1 y 7. La prohibición de la tortura es, por tanto, absoluta; los artículos 5, 10 y 11 sí admiten derogación."
+    },
+    "ca": {
+      "enunciado": "En cas de guerra o d'un altre perill públic que amenaci la vida de la nació, l'article 15 del Conveni europeu de drets humans permet derogar obligacions, però NO autoritza cap derogació de l'article que regula:",
+      "opciones": [
+        "El dret a la llibertat i a la seguretat (art. 5)",
+        "La llibertat d'expressió (art. 10)",
+        "La llibertat de reunió i d'associació (art. 11)",
+        "La prohibició de la tortura (art. 3)"
+      ],
+      "explicacion": "L'article 15.2 del Conveni declara inderogables els articles 2 (llevat de morts per actes lícits de guerra), 3, 4.1 i 7. La prohibició de la tortura és, per tant, absoluta; els articles 5, 10 i 11 sí que admeten derogació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-10148",
+      "norma": "Convenio para la protección de los derechos humanos y de las libertades fundamentales (Roma, 1950), texto refundido",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-10148#a15"
+    },
+    "cita": "La disposición precedente no autoriza ninguna derogación al artículo 2, salvo para el caso de muertes resultantes de actos lícitos de guerra, y a los artículos 3, 4 (párrafo 1) y 7",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t11-017",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué órgano aprobó la Declaración Universal de los Derechos Humanos, proclamada en París el 10 de diciembre de 1948?",
+      "opciones": [
+        "El Consejo de Europa",
+        "El Consejo de Seguridad de las Naciones Unidas",
+        "La Asamblea General de las Naciones Unidas",
+        "El Tribunal Internacional de Justicia"
+      ],
+      "explicacion": "La Declaración Universal de los Derechos Humanos fue proclamada por la Asamblea General de las Naciones Unidas en París el 10 de diciembre de 1948. El Consejo de Europa es el autor del Convenio de Roma de 1950."
+    },
+    "ca": {
+      "enunciado": "Quin òrgan va aprovar la Declaració Universal dels Drets Humans, proclamada a París el 10 de desembre de 1948?",
+      "opciones": [
+        "El Consell d'Europa",
+        "El Consell de Seguretat de les Nacions Unides",
+        "L'Assemblea General de les Nacions Unides",
+        "El Tribunal Internacional de Justícia"
+      ],
+      "explicacion": "La Declaració Universal dels Drets Humans va ser proclamada per l'Assemblea General de les Nacions Unides a París el 10 de desembre de 1948. El Consell d'Europa és l'autor del Conveni de Roma de 1950."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Declaración Universal de los Derechos Humanos (ONU)",
+      "url": "https://www.un.org/es/about-us/universal-declaration-of-human-rights"
+    },
+    "origen": "ia"
+  }
+]

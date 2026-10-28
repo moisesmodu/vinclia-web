@@ -1,0 +1,630 @@
+{
+  "slug": "tcai-ics",
+  "pais": "es",
+  "activa": true,
+  "nombre": {
+    "es": "Técnico/a en Cuidados Auxiliares de Enfermería (TCAI) del Institut Català de la Salut",
+    "ca": "Tècnic/a en Cures Auxiliars d'Infermeria (TCAI) de l'Institut Català de la Salut"
+  },
+  "nombreCorto": {
+    "es": "TCAI ICS",
+    "ca": "TCAI ICS"
+  },
+  "cuerpo": {
+    "es": "Personal estatutario: Técnico/a especialista de grado medio sanitario en cuidados auxiliares de enfermería (grupo C, subgrupo C2; código de categoría 159)",
+    "ca": "Personal estatutari: Tècnic/a especialista de grau mitjà sanitari en cures auxiliars d'infermeria (grup C, subgrup C2; codi de categoria 159)"
+  },
+  "administracion": "Institut Català de la Salut (Generalitat de Catalunya)",
+  "convocatoria": {
+    "referencia": "Resolució SLT/2380/2025, de 20 de juny, de convocatòria del procés selectiu per a l'accés a la condició de personal estatutari fix de l'Institut Català de la Salut (convocatòria 100-2025)",
+    "diario": "DOGC",
+    "numero": "9441",
+    "fecha": "2025-06-26",
+    "url": "https://convocatories.ics.extranet.gencat.cat/convocatoria/25608/",
+    "pdfUrl": "https://www.oposics2025.com/wp-content/uploads/2025/06/2095990.pdf",
+    "plazas": 757,
+    "estado": "en curso",
+    "notas": "Convocatòria ordinària de concurs-oposició 100-2025 (6.037 places en 74 categories). TCAI = codi C2-159: 757 places de torn lliure, de les quals 75 reservades a persones amb discapacitat i 2 a temps parcial (xifres de fonts secundàries; una altra font parla de 755 a jornada completa). Requisits: títol de Tècnic en Cures Auxiliars d'Infermeria o equivalent i català B1 (o prova de català obligatòria i eliminatòria, base 11.4.3). Inscripció tancada el 31-07-2025. Temari: transversal comú a totes les categories (annex 3, 11 temes) + temari específic TCAI (annex 68 segons Red Opositor, 5 temes). TÍTOLS DELS TEMES: no s'ha pogut llegir l'annex oficial (DOGC i ics.gencat.cat bloquejats en aquesta sessió); s'han reconstruït a partir d'índexs coincidents de La Intersindical (sanitat-icsc.blogspot.com, 26-06-2025), oposics.cat, Red Opositor, Aula Magna i editorials (Adams, MAD), i s'han de contrastar literalment amb l'annex 3 i l'annex específic de TCAI. El 10-07-2026 l'ICS va republicar al DOGC temaris d'algunes categories arran d'una demanda de CCOO; segons la notícia de CCOO, TCAI no hi és, però no s'ha pogut confirmar. DATA D'EXAMEN: segons l'avís de l'ICS del 17-09-2026 (citat per Red Opositor i encert.cat), les proves d'infermeria, TCAI i auxiliar administratiu seran 'a partir de gener' (2027), sense dia fixat. FORMAT: la base 11.3 estableix una prova amb dos exercicis eliminatoris, test de coneixements (temari transversal + específic) i supòsits pràctics (temari específic), de 50 punts cadascun i mínim de 25; preguntes amb 4 respostes alternatives i una de correcta; les no contestades o amb més d'una resposta no compten. El nombre de preguntes, preguntes de reserva, durada i penalització els fixa el tribunal en una diligència que, a 28-09-2026, encara no s'havia publicat per a TCAI; per això aquests camps queden a null. Referència orientativa (8 categories amb criteris publicats el 30-07-2026, examinades el 18-10-2026): test de 60-80 preguntes, 100-150 minuts, i en 5 d'elles cada error resta 1/4 d'encert. pdfUrl és una còpia de tercers (oposics2025.com) del PDF del DOGC (document 2095990); url és la fitxa oficial al portal de convocatòries de l'ICS. Pesos per tema: criteri propi per a simulacres (bloc específic amb més pes perquè entra al test i als supòsits), no oficial.",
+    "verificado": "fuente secundaria (academias, sindicatos y prensa especializada que citan la Resolució SLT/2380/2025, DOGC 9441, y la ficha oficial del portal de convocatorias del ICS vista en resultados de búsqueda): comprobar referencia, plazas y títulos de tema en el DOGC"
+  },
+  "examen": {
+    "preguntas": 50,
+    "reserva": 5,
+    "opciones": 4,
+    "minutos": 90,
+    "penalizacion": 0.25,
+    "notaMaxima": 50,
+    "notaCorte": 25,
+    "descripcion": {
+      "es": "Prueba única de la fase de oposición con dos ejercicios eliminatorios (base 11.3): 1) test de conocimientos sobre el temario transversal y el específico de TCAI, 50 puntos, mínimo 25; 2) supuestos prácticos sobre el temario específico, 50 puntos, mínimo 25. Cuatro respuestas alternativas por pregunta, una correcta; las no contestadas o con más de una marca no puntúan. Número de preguntas, reserva, tiempo y penalización pendientes de la diligencia del tribunal (orientativo en otras categorías de la misma convocatoria: 60-80 preguntas, 100-150 minutos, y en la mayoría cada error resta 1/4). La fase de oposición pesa 2/3 y el concurso de méritos 1/3. Formato provisional en la app (50 preguntas + 5 de reserva, 90 minutos, error resta 1/4) hasta que el ICS publique el definitivo.",
+      "ca": "Prova única de la fase d'oposició amb dos exercicis eliminatoris (base 11.3): 1) test de coneixements sobre el temari transversal i l'específic de TCAI, 50 punts, mínim 25; 2) supòsits pràctics sobre el temari específic, 50 punts, mínim 25. Quatre respostes alternatives per pregunta, una de correcta; les no contestades o amb més d'una marca no puntuen. Nombre de preguntes, reserva, temps i penalització pendents de la diligència del tribunal (orientatiu en altres categories de la mateixa convocatòria: 60-80 preguntes, 100-150 minuts, i en la majoria cada error resta 1/4). La fase d'oposició pesa 2/3 i el concurs de mèrits 1/3. Format provisional a l'app (50 preguntes + 5 de reserva, 90 minuts, l'error resta 1/4) fins que l'ICS publiqui el definitiu."
+    },
+    "otrasPruebas": {
+      "es": [
+        "Prueba de conocimientos de lengua catalana (nivel B1), obligatoria y eliminatoria salvo exención; apto/no apto",
+        "Fase de concurso: valoración de méritos (1/3 de la puntuación total)"
+      ],
+      "ca": [
+        "Prova de coneixements de llengua catalana (nivell B1), obligatòria i eliminatòria llevat d'exempció; apte/no apte",
+        "Fase de concurs: valoració de mèrits (1/3 de la puntuació total)"
+      ]
+    },
+    "provisional": true
+  },
+  "temas": [
+    {
+      "n": 1,
+      "titulo": {
+        "es": "La Ley de ordenación sanitaria de Cataluña. El Servicio Catalán de la Salud. El sistema sanitario integral de utilización pública de Cataluña (SISCAT)",
+        "ca": "La Llei d'ordenació sanitària de Catalunya. El Servei Català de la Salut. El sistema sanitari integral d'utilització pública de Catalunya (SISCAT)"
+      },
+      "slug": "ordenacio-sanitaria-siscat",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1990-20304",
+          "norma": "Llei 15/1990, de 9 de juliol, d'ordenació sanitària de Catalunya",
+          "articulos": "1-8, 12-17, 21-29, 41-48"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1986-10499",
+          "norma": "Ley 14/1986, de 25 de abril, General de Sanidad",
+          "articulos": "1-10, 44-55"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-10715",
+          "norma": "Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud",
+          "articulos": "1-12"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2006-13087",
+          "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+          "articulos": "23, 162"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 2,
+      "titulo": {
+        "es": "La empresa pública Institut Català de la Salut: régimen jurídico, objetivos, funciones, organización y estatutos",
+        "ca": "L'empresa pública Institut Català de la Salut: règim jurídic, objectius, funcions, organització i estatuts"
+      },
+      "slug": "institut-catala-salut",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2007-15544",
+          "norma": "Llei 8/2007, de 30 de juliol, de l'Institut Català de la Salut",
+          "articulos": "1-21, adicional sexta-octava"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 3,
+      "titulo": {
+        "es": "Derechos y deberes de la ciudadanía en relación con la salud y la atención sanitaria. Derecho a la información sanitaria, autonomía del paciente y documentación clínica. Protección de datos personales",
+        "ca": "Drets i deures de la ciutadania en relació amb la salut i l'atenció sanitària. Dret a la informació sanitària, autonomia del pacient i documentació clínica. Protecció de dades personals"
+      },
+      "slug": "drets-pacient-proteccio-dades",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2001-2353",
+          "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+          "articulos": "1-14"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2002-22188",
+          "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+          "articulos": "1-23"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2018-16673",
+          "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+          "articulos": "1-18, adicional decimoséptima"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 4,
+      "titulo": {
+        "es": "El Estatuto Marco del personal estatutario de los servicios de salud: clasificación, derechos y deberes, adquisición y pérdida de la condición, retribuciones, jornada, situaciones y régimen disciplinario",
+        "ca": "L'Estatut marc del personal estatutari dels serveis de salut: classificació, drets i deures, adquisició i pèrdua de la condició, retribucions, jornada, situacions i règim disciplinari"
+      },
+      "slug": "estatut-marc",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-23101",
+          "norma": "Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud",
+          "articulos": "1-9 quater, 17-35, 41-61, 62-75"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2021-21651",
+          "norma": "Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público",
+          "articulos": "2"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 5,
+      "titulo": {
+        "es": "El Estatuto Básico del Empleado Público. Los acuerdos de la Mesa Sectorial de Negociación de Sanidad: el III Acuerdo sobre las condiciones de trabajo del personal estatutario del ICS",
+        "ca": "L'Estatut bàsic de l'empleat públic. Els acords de la Mesa Sectorial de Negociació de Sanitat: el III Acord sobre les condicions de treball del personal estatutari de l'ICS"
+      },
+      "slug": "ebep-acords-mesa-sectorial",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-11719",
+          "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público",
+          "articulos": "1-15, 52-54, 55-62, 93-98"
+        },
+        {
+          "tipo": "web",
+          "norma": "III Acord de la Mesa Sectorial de Negociació de Sanitat sobre les condicions de treball del personal estatutari de l'ICS (22-11-2023; Resolució EMT/74/2024) · nota de premsa Metges de Catalunya",
+          "url": "https://metgesdecatalunya.cat/sites/default/files/2023-11/Nota%20premsa%20-%20III%20acord%20ICS%20-%2022%20novembre%202023.pdf"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 6,
+      "titulo": {
+        "es": "Sistemas de incentivos: la carrera profesional, la dirección por objetivos y la retribución variable",
+        "ca": "Sistemes d'incentius: la carrera professional, la direcció per objectius i la retribució variable"
+      },
+      "slug": "carrera-professional-incentius",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-23101",
+          "norma": "Ley 55/2003, del Estatuto Marco del personal estatutario de los servicios de salud",
+          "articulos": "40, 41-43"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-21340",
+          "norma": "Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias",
+          "articulos": "37-38"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2020-12883",
+          "norma": "Llei 13/2020, de 13 d'octubre, de restabliment del complement de productivitat variable del personal estatutari de l'ICS i del SISCAT",
+          "articulos": "1-2"
+        },
+        {
+          "tipo": "web",
+          "norma": "CCOO · Guia informativa de la carrera professional a l'ICS",
+          "url": "https://www.ccoo.cat/pdf_documents/sanitat/ICS/Carrera%20professional/Guia%20Informativa%20Carrera%20professional.pdf"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 7,
+      "titulo": {
+        "es": "Prevención de riesgos laborales: conceptos básicos de la Ley de prevención de riesgos laborales. Reglamento de los servicios de prevención. Organización de recursos para las actividades preventivas",
+        "ca": "Prevenció de riscos laborals: conceptes bàsics de la Llei de prevenció de riscos laborals. Reglament dels serveis de prevenció. Organització de recursos per a les activitats preventives"
+      },
+      "slug": "prevencio-riscos-laborals",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1995-24292",
+          "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+          "articulos": "1-5, 14-29, 30-40"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1997-1853",
+          "norma": "Real Decreto 39/1997, de 17 de enero, Reglamento de los Servicios de Prevención",
+          "articulos": "1-22"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 8,
+      "titulo": {
+        "es": "Igualdad efectiva de mujeres y hombres. El Plan de igualdad del ICS. Prevención y abordaje del acoso sexual y por razón de sexo",
+        "ca": "Igualtat efectiva de dones i homes. El Pla d'igualtat de l'ICS. Prevenció i abordatge de l'assetjament sexual i per raó de sexe"
+      },
+      "slug": "igualtat",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-9676",
+          "norma": "Llei 17/2015, del 21 de juliol, d'igualtat efectiva de dones i homes",
+          "articulos": "1-6, 32-36, 43-44, 48"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2007-6115",
+          "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres",
+          "articulos": "1-15, 45-51, 62"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2008-9294",
+          "norma": "Llei 5/2008, del 24 d'abril, del dret de les dones a erradicar la violència masclista",
+          "articulos": "1-5"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 9,
+      "titulo": {
+        "es": "Principios generales de la bioética. El secreto profesional: concepto y regulación jurídica",
+        "ca": "Principis generals de la bioètica. El secret professional: concepte i regulació jurídica"
+      },
+      "slug": "bioetica-secret-professional",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1995-25444",
+          "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal (revelación de secretos)",
+          "articulos": "197-199"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2002-22188",
+          "norma": "Ley 41/2002, básica reguladora de la autonomía del paciente",
+          "articulos": "2, 7-11"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-21340",
+          "norma": "Ley 44/2003, de ordenación de las profesiones sanitarias",
+          "articulos": "4-5"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2021-4628",
+          "norma": "Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia",
+          "articulos": "1-5, 16"
+        },
+        {
+          "tipo": "web",
+          "norma": "Codi ètic de l'Institut Català de la Salut",
+          "url": "https://icscampdetarragona.cat/wp-content/uploads/2026/06/Codi_etic_ICS.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "Departament de Salut · Ordre de 14 de desembre de 1993 (comitès d'ètica assistencial)",
+          "url": "https://canalsalut.gencat.cat/web/.content/_Sistema_de_salut/CBC/xarxa_comites/legislacio/ordre_14_desembre_1993.pdf"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 10,
+      "titulo": {
+        "es": "La calidad: concepto y definición. Calidad técnica y calidad percibida. El ciclo de mejora continua (PDCA). Resolución de problemas: el diagrama causa-efecto",
+        "ca": "La qualitat: concepte i definició. Qualitat tècnica i qualitat percebuda. El cicle de millora contínua (PDCA). Resolució de problemes: el diagrama causa-efecte"
+      },
+      "slug": "qualitat-pdca",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-10715",
+          "norma": "Ley 16/2003, de cohesión y calidad del Sistema Nacional de Salud (calidad del SNS)",
+          "articulos": "59-62"
+        },
+        {
+          "tipo": "web",
+          "norma": "Ministerio de Sanidad · Unidad central de esterilización: estándares y recomendaciones (capítulo de gestión de calidad)",
+          "url": "https://vsf-iwsold-pro-01.mscbs.gob.es/areas/calidadAsistencial/excelenciaClinica/docs/Central_de_Esterilizacion.pdf"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 11,
+      "titulo": {
+        "es": "Ofimática. Intranet, Internet y correo electrónico. Administración electrónica",
+        "ca": "Ofimàtica. Intranet, Internet i correu electrònic. Administració electrònica"
+      },
+      "slug": "ofimatica-administracio-electronica",
+      "bloque": {
+        "es": "Temario transversal",
+        "ca": "Temari transversal"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "9-16, 41-43"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13843",
+          "norma": "Llei 29/2010, del 3 d'agost, de l'ús dels mitjans electrònics al sector públic de Catalunya",
+          "articulos": "1-12"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13313",
+          "norma": "Llei 26/2010, del 3 d'agost, de règim jurídic i de procediment de les administracions públiques de Catalunya",
+          "articulos": "1-10"
+        }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 12,
+      "titulo": {
+        "es": "Prestación de cuidados auxiliares o delegados: actuación ante situaciones urgentes, primeros auxilios y soporte vital básico; cuidados en la alimentación, la higiene y el vestido, la movilización y el traslado, la eliminación urinaria y digestiva y el reposo y el sueño; procedimientos delegados (administración de medicación, constantes vitales, recogida de muestras)",
+        "ca": "Prestació de cures auxiliars o delegades: actuació davant de situacions urgents, primers auxilis i maniobres de suport vital bàsic; cures en l'alimentació, la higiene i el vestit, la mobilització i el trasllat, l'eliminació urinària i digestiva i el repòs i el son; procediments delegats (administració de medicació, constants vitals, recollida de mostres)"
+      },
+      "slug": "cures-auxiliars-delegades",
+      "bloque": {
+        "es": "Temario específico TCAI",
+        "ca": "Temari específic TCAI"
+      },
+      "fuentes": [
+        {
+          "tipo": "web",
+          "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+          "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "Consell Català de Ressuscitació · Guies ERC 2021, resum executiu (traducció oficial al català)",
+          "url": "https://cprguidelines.eu/assets/guidelines-translations/ERC-Guidelines-2021_Executive-Summary_Catalan-translation.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "GNEAUPP · Prevención y tratamiento de las lesiones/úlceras por presión, guía de consulta rápida EPUAP/NPIAP/PPPIA 2019 (traducción)",
+          "url": "https://ulcerasfora.sergas.gal/Informacion/Documents/302/2020.Guia_ EPUAP_NPUAP traducion GNEAUPP.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "La Intersindical · Bibliografia orientativa TCAI (convocatòria d'estabilització 2022)",
+          "url": "https://laintersindical.cat/ics/estabilitzacio/bibliografies/Bibliografia_Orientativa_TCAI_2022_def.pdf"
+        }
+      ],
+      "peso": 3
+    },
+    {
+      "n": 13,
+      "titulo": {
+        "es": "Comunicación y relación terapéutica con el paciente, la familia y el equipo",
+        "ca": "Comunicació i relació terapèutica amb el pacient, la família i l'equip"
+      },
+      "slug": "comunicacio-relacio-terapeutica",
+      "bloque": {
+        "es": "Temario específico TCAI",
+        "ca": "Temari específic TCAI"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-21340",
+          "norma": "Ley 44/2003, de ordenación de las profesiones sanitarias (relación con las personas atendidas y trabajo en equipo)",
+          "articulos": "3, 4, 5, 9"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2001-2353",
+          "norma": "Llei 21/2000, sobre els drets d'informació concernents a la salut i l'autonomia del pacient",
+          "articulos": "2-7"
+        },
+        {
+          "tipo": "web",
+          "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+          "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+        }
+      ],
+      "peso": 2
+    },
+    {
+      "n": 14,
+      "titulo": {
+        "es": "Cuidados auxiliares en la seguridad de los pacientes: asepsia y esterilización, infección nosocomial, higiene de manos, aislamientos y precauciones estándar, limpieza y desinfección de material e instrumental, higiene de los alimentos y tipos de dietas, programas de seguridad clínica, prevención de caídas y seguridad en la administración de medicamentos",
+        "ca": "Cures auxiliars en la seguretat de pacients: asèpsia i esterilització, infecció nosocomial, rentat de mans, aïllaments i precaucions estàndard, neteja i desinfecció de material i instrumental, higiene dels aliments i tipus de dietes, programes de seguretat clínica, prevenció de caigudes i seguretat en l'administració de medicaments"
+      },
+      "slug": "seguretat-pacient",
+      "bloque": {
+        "es": "Temario específico TCAI",
+        "ca": "Temari específic TCAI"
+      },
+      "fuentes": [
+        {
+          "tipo": "web",
+          "norma": "Ministerio de Sanidad · Unidad central de esterilización: estándares y recomendaciones (2011)",
+          "url": "https://vsf-iwsold-pro-01.mscbs.gob.es/areas/calidadAsistencial/excelenciaClinica/docs/Central_de_Esterilizacion.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "Ministerio de Sanidad · Programa de Higiene de Manos del SNS (5 momentos OMS), informe de campaña",
+          "url": "https://seguridaddelpaciente.sanidad.gob.es/practicasSeguras/higieneDeManos/2019/docs/informe-campana-hm-2019-ene-2020.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "Departament de Salut · VINCat, vigilància de les infeccions relacionades amb l'atenció sanitària (informe 2022)",
+          "url": "https://scientiasalut.gencat.cat/handle/11351/9969"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-8343",
+          "norma": "Real Decreto Legislativo 1/2015, texto refundido de la Ley de garantías y uso racional de los medicamentos y productos sanitarios",
+          "articulos": "1-3"
+        }
+      ],
+      "peso": 2
+    },
+    {
+      "n": 15,
+      "titulo": {
+        "es": "Cuidados auxiliares del entorno del paciente: documentación clínica, condiciones higiénicas y de confort de la unidad del paciente, comprobaciones de seguridad del mobiliario y del material, almacenamiento de productos sanitarios y gestión de residuos sanitarios",
+        "ca": "Cures auxiliars de l'entorn del pacient: documentació clínica, condicions higièniques i de confort de la unitat del pacient, comprovacions de seguretat del mobiliari i del material, emmagatzematge de productes sanitaris i gestió de residus sanitaris"
+      },
+      "slug": "entorn-pacient",
+      "bloque": {
+        "es": "Temario específico TCAI",
+        "ca": "Temari específic TCAI"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2001-2353",
+          "norma": "Llei 21/2000 (història clínica i documentació clínica)",
+          "articulos": "9-14"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2002-22188",
+          "norma": "Ley 41/2002 (historia clínica)",
+          "articulos": "14-19"
+        },
+        {
+          "tipo": "web",
+          "norma": "Departament de Sanitat i Seguretat Social · Guia de gestió de residus sanitaris (Decret 27/1999)",
+          "url": "https://scientiasalut.gencat.cat/handle/11351/2896"
+        },
+        {
+          "tipo": "web",
+          "norma": "Agència de Salut Pública de Catalunya · Residus sanitaris, llibre de control oficial (art. 11 del Decret 27/1999)",
+          "url": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/proteccio_salut/residus-sanitaris/notes-informatives/canvi-llibre-control-oficial-rs.pdf"
+        },
+        {
+          "tipo": "web",
+          "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+          "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+        }
+      ],
+      "peso": 2
+    },
+    {
+      "n": 16,
+      "titulo": {
+        "es": "Prevención de riesgos laborales en el trabajo del TCAI: manipulación manual de cargas y movilización de pacientes, exposición a agentes biológicos, riesgos químicos y señalización",
+        "ca": "Prevenció de riscos laborals en la feina del TCAI: manipulació manual de càrregues i mobilització de pacients, exposició a agents biològics, riscos químics i senyalització"
+      },
+      "slug": "riscos-laborals-tcai",
+      "bloque": {
+        "es": "Temario específico TCAI",
+        "ca": "Temari específic TCAI"
+      },
+      "fuentes": [
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1997-8670",
+          "norma": "Real Decreto 487/1997, de 14 de abril, manipulación manual de cargas",
+          "articulos": "1-6, anexo"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1997-11144",
+          "norma": "Real Decreto 664/1997, de 12 de mayo, protección frente a agentes biológicos",
+          "articulos": "1-14, anexos"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1997-8668",
+          "norma": "Real Decreto 485/1997, de 14 de abril, señalización de seguridad y salud en el trabajo",
+          "articulos": "1-6"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1995-24292",
+          "norma": "Ley 31/1995, de Prevención de Riesgos Laborales",
+          "articulos": "14-29"
+        }
+      ],
+      "peso": 2
+    }
+  ],
+  "examenesAnteriores": [
+    {
+      "anio": 2024,
+      "titulo": "Convocatòria d'estabilització 2022 (Resolució SLT/4154/2022, codi 100) · TCAI (codi 159): 1a prova, test i supòsits pràctics, models A-D amb patró de correcció. Publicats a la pàgina oficial d'enunciats de l'ICS; no s'ha obtingut l'URL directa del PDF de TCAI ni s'ha confirmat la data exacta de la prova",
+      "url": "https://ics.gencat.cat/ca/lics/treballeu-a-lics/treball-fix/informacio-suport-preparar-oposicio/",
+      "plantilla": "https://ics.gencat.cat/ca/lics/treballeu-a-lics/treball-fix/informacio-suport-preparar-oposicio/"
+    }
+  ],
+  "seo": {
+    "palabrasClave": {
+      "es": [
+        "test auxiliar enfermeria ics",
+        "oposiciones tcae ics",
+        "oposiciones auxiliar enfermeria ics 2026",
+        "temario tcai ics",
+        "examen tcai ics",
+        "test tcae cataluña",
+        "oposiciones tcae cataluña 2026",
+        "plazas tcai ics",
+        "preguntas examen auxiliar enfermeria ics",
+        "simulacro tcae ics",
+        "temario transversal ics"
+      ],
+      "ca": [
+        "oposicions TCAI ICS",
+        "test TCAI ICS",
+        "temari TCAI ICS",
+        "oposicions auxiliar infermeria ICS",
+        "examen TCAI ICS",
+        "temari transversal ICS",
+        "test temari transversal ICS",
+        "oposicions ICS 2026",
+        "places TCAI ICS",
+        "preguntes examen TCAI",
+        "oposicions cures auxiliars infermeria"
+      ]
+    }
+  }
+}

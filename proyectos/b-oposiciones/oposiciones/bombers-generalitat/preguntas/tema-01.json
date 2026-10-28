@@ -1,0 +1,422 @@
+[
+  {
+    "id": "bomb-t01-001",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 1.1 de la Constitución, ¿cuáles son los valores superiores del ordenamiento jurídico?",
+      "opciones": [
+        "La libertad, la seguridad, la igualdad y el pluralismo político",
+        "La dignidad, la justicia, la igualdad y la solidaridad",
+        "La libertad, la justicia, la igualdad y el pluralismo político",
+        "La libertad, la justicia, la solidaridad y el pluralismo político"
+      ],
+      "explicacion": "El artículo 1.1 CE enumera como valores superiores la libertad, la justicia, la igualdad y el pluralismo político. La seguridad jurídica y la solidaridad aparecen en otros preceptos (arts. 9.3 y 2), pero no son valores superiores."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 1.1 de la Constitució, quins són els valors superiors de l'ordenament jurídic?",
+      "opciones": [
+        "La llibertat, la seguretat, la igualtat i el pluralisme polític",
+        "La dignitat, la justícia, la igualtat i la solidaritat",
+        "La llibertat, la justícia, la igualtat i el pluralisme polític",
+        "La llibertat, la justícia, la solidaritat i el pluralisme polític"
+      ],
+      "explicacion": "L'article 1.1 CE enumera com a valors superiors la llibertat, la justícia, la igualtat i el pluralisme polític. La seguretat jurídica i la solidaritat apareixen en altres preceptes (arts. 9.3 i 2), però no són valors superiors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "1.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a1"
+    },
+    "cita": "propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-002",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la forma política del Estado español según la Constitución?",
+      "opciones": [
+        "La Monarquía parlamentaria",
+        "La Monarquía constitucional",
+        "El Estado social y democrático de Derecho",
+        "La Monarquía hereditaria"
+      ],
+      "explicacion": "El artículo 1.3 CE establece que la forma política del Estado es la Monarquía parlamentaria. «Estado social y democrático de Derecho» es la definición del Estado del artículo 1.1, no su forma política."
+    },
+    "ca": {
+      "enunciado": "Quina és la forma política de l'Estat espanyol segons la Constitució?",
+      "opciones": [
+        "La monarquia parlamentària",
+        "La monarquia constitucional",
+        "L'Estat social i democràtic de dret",
+        "La monarquia hereditària"
+      ],
+      "explicacion": "L'article 1.3 CE estableix que la forma política de l'Estat és la monarquia parlamentària. «Estat social i democràtic de dret» és la definició de l'Estat de l'article 1.1, no la seva forma política."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "1.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a1"
+    },
+    "cita": "La forma política del Estado español es la Monarquía parlamentaria.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-003",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuántos diputados puede tener el Congreso según el artículo 68 de la Constitución?",
+      "opciones": [
+        "Un mínimo de 250 y un máximo de 350",
+        "Un mínimo de 300 y un máximo de 350",
+        "Un mínimo de 350 y un máximo de 400",
+        "Un mínimo de 300 y un máximo de 400"
+      ],
+      "explicacion": "El artículo 68.1 CE fija para el Congreso un mínimo de 300 y un máximo de 400 diputados; la cifra de 350 la fija la ley electoral, no la Constitución."
+    },
+    "ca": {
+      "enunciado": "Quants diputats pot tenir el Congrés segons l'article 68 de la Constitució?",
+      "opciones": [
+        "Un mínim de 250 i un màxim de 350",
+        "Un mínim de 300 i un màxim de 350",
+        "Un mínim de 350 i un màxim de 400",
+        "Un mínim de 300 i un màxim de 400"
+      ],
+      "explicacion": "L'article 68.1 CE fixa per al Congrés un mínim de 300 i un màxim de 400 diputats; la xifra de 350 la fixa la llei electoral, no la Constitució."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "68.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a68"
+    },
+    "cita": "El Congreso se compone de un mínimo de 300 y un máximo de 400 Diputados",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-004",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si el candidato a la Presidencia del Gobierno no obtiene la mayoría absoluta en la primera votación de investidura, ¿qué prevé el artículo 99.3 de la Constitución?",
+      "opciones": [
+        "Una nueva votación veinticuatro horas después, en la que basta la mayoría simple",
+        "Una nueva votación cuarenta y ocho horas después, en la que basta la mayoría simple",
+        "Una nueva votación cuarenta y ocho horas después, en la que se exige de nuevo la mayoría absoluta",
+        "La disolución inmediata de ambas Cámaras y la convocatoria de elecciones"
+      ],
+      "explicacion": "El artículo 99.3 CE prevé una segunda votación cuarenta y ocho horas después, en la que la confianza se otorga por mayoría simple. La disolución solo llega si pasan dos meses sin investidura (art. 99.5)."
+    },
+    "ca": {
+      "enunciado": "Si el candidat a la Presidència del Govern no obté la majoria absoluta en la primera votació d'investidura, què preveu l'article 99.3 de la Constitució?",
+      "opciones": [
+        "Una nova votació vint-i-quatre hores després, en què n'hi ha prou amb la majoria simple",
+        "Una nova votació quaranta-vuit hores després, en què n'hi ha prou amb la majoria simple",
+        "Una nova votació quaranta-vuit hores després, en què s'exigeix novament la majoria absoluta",
+        "La dissolució immediata de les dues cambres i la convocatòria d'eleccions"
+      ],
+      "explicacion": "L'article 99.3 CE preveu una segona votació quaranta-vuit hores després, en què la confiança s'atorga per majoria simple. La dissolució només arriba si passen dos mesos sense investidura (art. 99.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "99.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a99"
+    },
+    "cita": "se someterá la misma propuesta a nueva votación cuarenta y ocho horas después de la anterior, y la confianza se entenderá otorgada si obtuviere la mayoría simple",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-005",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por cuánto tiempo son designados los miembros del Tribunal Constitucional y cómo se renuevan?",
+      "opciones": [
+        "Por seis años, renovándose por mitades cada tres",
+        "Por doce años, renovándose por terceras partes cada cuatro",
+        "Por nueve años, renovándose por terceras partes cada tres",
+        "Por nueve años, renovándose por mitades cada cuatro"
+      ],
+      "explicacion": "El artículo 159.3 CE dispone que los miembros del Tribunal Constitucional se designan por nueve años y se renuevan por terceras partes cada tres."
+    },
+    "ca": {
+      "enunciado": "Per quant temps són designats els membres del Tribunal Constitucional i com es renoven?",
+      "opciones": [
+        "Per sis anys, i es renoven per meitats cada tres",
+        "Per dotze anys, i es renoven per terceres parts cada quatre",
+        "Per nou anys, i es renoven per terceres parts cada tres",
+        "Per nou anys, i es renoven per meitats cada quatre"
+      ],
+      "explicacion": "L'article 159.3 CE disposa que els membres del Tribunal Constitucional es designen per nou anys i es renoven per terceres parts cada tres."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "159.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a159"
+    },
+    "cita": "serán designados por un período de nueve años y se renovarán por terceras partes cada tres",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-006",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 137 de la Constitución, el Estado se organiza territorialmente en:",
+      "opciones": [
+        "Municipios, provincias y las Comunidades Autónomas que se constituyan",
+        "Municipios, comarcas y las Comunidades Autónomas que se constituyan",
+        "Municipios, veguerías y las Comunidades Autónomas que se constituyan",
+        "Municipios, provincias y regiones históricas"
+      ],
+      "explicacion": "El artículo 137 CE menciona municipios, provincias y Comunidades Autónomas. Comarcas y veguerías son entes locales previstos en el Estatuto de Cataluña, no en este artículo."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 137 de la Constitució, l'Estat s'organitza territorialment en:",
+      "opciones": [
+        "Municipis, províncies i les comunitats autònomes que es constitueixin",
+        "Municipis, comarques i les comunitats autònomes que es constitueixin",
+        "Municipis, vegueries i les comunitats autònomes que es constitueixin",
+        "Municipis, províncies i regions històriques"
+      ],
+      "explicacion": "L'article 137 CE esmenta municipis, províncies i comunitats autònomes. Les comarques i les vegueries són ens locals previstos a l'Estatut de Catalunya, no en aquest article."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "137",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a137"
+    },
+    "cita": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-007",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 117.1 de la Constitución, la justicia:",
+      "opciones": [
+        "Emana del Rey y se administra en nombre del pueblo",
+        "Emana del Estado y se administra en nombre de las Cortes Generales",
+        "Emana de la ley y se administra en nombre del Consejo General del Poder Judicial",
+        "Emana del pueblo y se administra en nombre del Rey"
+      ],
+      "explicacion": "El artículo 117.1 CE dice que la justicia emana del pueblo y se administra en nombre del Rey por jueces y magistrados independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 117.1 de la Constitució, la justícia:",
+      "opciones": [
+        "Emana del Rei i s'administra en nom del poble",
+        "Emana de l'Estat i s'administra en nom de les Corts Generals",
+        "Emana de la llei i s'administra en nom del Consell General del Poder Judicial",
+        "Emana del poble i s'administra en nom del Rei"
+      ],
+      "explicacion": "L'article 117.1 CE diu que la justícia emana del poble i s'administra en nom del Rei per jutges i magistrats independents, inamovibles, responsables i sotmesos únicament a l'imperi de la llei."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "117.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a117"
+    },
+    "cita": "La justicia emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados integrantes del poder judicial",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-008",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Estatuto de Autonomía de Cataluña, ¿cuántos diputados puede tener el Parlamento?",
+      "opciones": [
+        "Un mínimo de cien y un máximo de ciento treinta y cinco",
+        "Un mínimo de cien y un máximo de ciento cincuenta",
+        "Un mínimo de ciento treinta y cinco y un máximo de ciento cincuenta",
+        "Un mínimo de ciento veinte y un máximo de ciento cincuenta"
+      ],
+      "explicacion": "El artículo 56.1 del Estatuto fija un mínimo de cien y un máximo de ciento cincuenta diputados, elegidos por cuatro años. Ciento treinta y cinco es el número actual de escaños, pero no es un límite estatutario."
+    },
+    "ca": {
+      "enunciado": "Segons l'Estatut d'autonomia de Catalunya, quants diputats pot tenir el Parlament?",
+      "opciones": [
+        "Un mínim de cent i un màxim de cent trenta-cinc",
+        "Un mínim de cent i un màxim de cent cinquanta",
+        "Un mínim de cent trenta-cinc i un màxim de cent cinquanta",
+        "Un mínim de cent vint i un màxim de cent cinquanta"
+      ],
+      "explicacion": "L'article 56.1 de l'Estatut fixa un mínim de cent i un màxim de cent cinquanta diputats, elegits per quatre anys. Cent trenta-cinc és el nombre actual d'escons, però no és un límit estatutari."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "56.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a56"
+    },
+    "cita": "El Parlamento se compone de un mínimo de cien Diputados y un máximo de ciento cincuenta",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-009",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué mayoría exige el Estatuto para aprobar la ley del Parlamento que regula el régimen electoral de Cataluña?",
+      "opciones": [
+        "Mayoría absoluta en una votación final sobre el conjunto del texto",
+        "Mayoría de tres quintas partes en una votación final sobre el conjunto del texto",
+        "Mayoría de dos terceras partes en una votación final sobre el conjunto del texto",
+        "Mayoría de tres cuartas partes en una votación final sobre el conjunto del texto"
+      ],
+      "explicacion": "El artículo 56.2 del Estatuto exige mayoría de dos terceras partes de los diputados en una votación final sobre el conjunto del texto. La mayoría absoluta es la propia de las leyes de desarrollo básico del Estatuto."
+    },
+    "ca": {
+      "enunciado": "Quina majoria exigeix l'Estatut per aprovar la llei del Parlament que regula el règim electoral de Catalunya?",
+      "opciones": [
+        "Majoria absoluta en una votació final sobre el conjunt del text",
+        "Majoria de tres cinquenes parts en una votació final sobre el conjunt del text",
+        "Majoria de dues terceres parts en una votació final sobre el conjunt del text",
+        "Majoria de tres quartes parts en una votació final sobre el conjunt del text"
+      ],
+      "explicacion": "L'article 56.2 de l'Estatut exigeix majoria de dues terceres parts dels diputats en una votació final sobre el conjunt del text. La majoria absoluta és la pròpia de les lleis de desenvolupament bàsic de l'Estatut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "56.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a56"
+    },
+    "cita": "El régimen electoral es regulado por una ley del Parlamento aprobada en una votación final sobre el conjunto del texto por mayoría de dos terceras partes de los Diputados.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-010",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué ocurre si, transcurridos dos meses desde la primera votación de investidura, ningún candidato ha sido elegido Presidente de la Generalitat?",
+      "opciones": [
+        "El Parlamento queda disuelto automáticamente y se convocan elecciones",
+        "El Rey propone un candidato tras consultar a los grupos parlamentarios",
+        "Queda investido el candidato de la lista más votada",
+        "El Consejero Primero asume la Presidencia hasta el final de la legislatura"
+      ],
+      "explicacion": "El artículo 67.3 del Estatuto prevé la disolución automática del Parlamento y la convocatoria inmediata de elecciones por el Presidente en funciones. La propuesta de candidato por el Rey es propia de la investidura estatal (art. 99 CE)."
+    },
+    "ca": {
+      "enunciado": "Què passa si, transcorreguts dos mesos des de la primera votació d'investidura, cap candidat no ha estat elegit president de la Generalitat?",
+      "opciones": [
+        "El Parlament queda dissolt automàticament i es convoquen eleccions",
+        "El Rei proposa un candidat després de consultar els grups parlamentaris",
+        "Queda investit el candidat de la llista més votada",
+        "El conseller primer assumeix la Presidència fins al final de la legislatura"
+      ],
+      "explicacion": "L'article 67.3 de l'Estatut preveu la dissolució automàtica del Parlament i la convocatòria immediata d'eleccions pel president en funcions. La proposta de candidat pel Rei és pròpia de la investidura estatal (art. 99 CE)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "67.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a67"
+    },
+    "cita": "Si una vez transcurridos dos meses desde la primera votación de investidura, ningún candidato o candidata es elegido, el Parlamento queda disuelto automáticamente",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-011",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué competencia atribuye el artículo 132 del Estatuto a la Generalitat en materia de protección civil, que incluye los servicios de prevención y extinción de incendios?",
+      "opciones": [
+        "Competencia compartida, de desarrollo de las bases estatales",
+        "Competencia ejecutiva, en los términos que determine la legislación del Estado",
+        "Competencia concurrente con las diputaciones provinciales",
+        "Competencia exclusiva, sin perjuicio de las facultades de los gobiernos locales"
+      ],
+      "explicacion": "El artículo 132.1 del Estatuto atribuye a la Generalitat la competencia exclusiva en protección civil, que incluye los servicios de prevención y extinción de incendios. La competencia ejecutiva «en los términos de la legislación del Estado» es la de salvamento marítimo (art. 132.3)."
+    },
+    "ca": {
+      "enunciado": "Quina competència atribueix l'article 132 de l'Estatut a la Generalitat en matèria de protecció civil, que inclou els serveis de prevenció i extinció d'incendis?",
+      "opciones": [
+        "Competència compartida, de desplegament de les bases estatals",
+        "Competència executiva, en els termes que determini la legislació de l'Estat",
+        "Competència concurrent amb les diputacions provincials",
+        "Competència exclusiva, sens perjudici de les facultats dels governs locals"
+      ],
+      "explicacion": "L'article 132.1 de l'Estatut atribueix a la Generalitat la competència exclusiva en protecció civil, que inclou els serveis de prevenció i extinció d'incendis. La competència executiva «en els termes de la legislació de l'Estat» és la de salvament marítim (art. 132.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "132.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a132"
+    },
+    "cita": "Corresponde a la Generalitat la competencia exclusiva en materia de protección civil … que incluyen los servicios de prevención y extinción de incendios",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t01-012",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué institución es el órgano fiscalizador externo de las cuentas y de la gestión económica de la Generalitat?",
+      "opciones": [
+        "El Consejo de Garantías Estatutarias",
+        "La Sindicatura de Cuentas",
+        "El Síndic de Greuges",
+        "La Oficina Antifraude de Cataluña"
+      ],
+      "explicacion": "El artículo 80.1 del Estatuto define la Sindicatura de Cuentas como órgano fiscalizador externo. El Consejo de Garantías Estatutarias vela por la adecuación al Estatuto y a la Constitución (art. 76) y el Síndic de Greuges defiende derechos y libertades (art. 78)."
+    },
+    "ca": {
+      "enunciado": "Quina institució és l'òrgan fiscalitzador extern dels comptes i de la gestió econòmica de la Generalitat?",
+      "opciones": [
+        "El Consell de Garanties Estatutàries",
+        "La Sindicatura de Comptes",
+        "El Síndic de Greuges",
+        "L'Oficina Antifrau de Catalunya"
+      ],
+      "explicacion": "L'article 80.1 de l'Estatut defineix la Sindicatura de Comptes com a òrgan fiscalitzador extern. El Consell de Garanties Estatutàries vetlla per l'adequació a l'Estatut i a la Constitució (art. 76) i el Síndic de Greuges defensa drets i llibertats (art. 78)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "80.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a80"
+    },
+    "cita": "La Sindicatura de Cuentas es el órgano fiscalizador externo de las cuentas, de la gestión económica y del control de eficiencia de la Generalitat",
+    "origen": "ia"
+  }
+]

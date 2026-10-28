@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t14-001",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En un mapa a escala 1:25.000, una distancia de 4 cm medida sobre el papel equivale en el terreno a:",
+      "opciones": [
+        "100 m",
+        "250 m",
+        "1 km",
+        "10 km"
+      ],
+      "explicacion": "En escala 1:25.000, 1 cm del mapa representa 25.000 cm (250 m) del terreno; 4 cm son 100.000 cm, es decir, 1 km."
+    },
+    "ca": {
+      "enunciado": "En un mapa a escala 1:25.000, una distància de 4 cm mesurada sobre el paper equival al terreny a:",
+      "opciones": [
+        "100 m",
+        "250 m",
+        "1 km",
+        "10 km"
+      ],
+      "explicacion": "En escala 1:25.000, 1 cm del mapa representa 25.000 cm (250 m) del terreny; 4 cm són 100.000 cm, és a dir, 1 km."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-002",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál de estas escalas es la más grande, es decir, la que representa el terreno con más detalle?",
+      "opciones": [
+        "1:5.000",
+        "1:25.000",
+        "1:50.000",
+        "1:250.000"
+      ],
+      "explicacion": "Cuanto menor es el denominador, mayor es la escala y más detalle muestra el mapa. El 1:5.000 es una escala grande; el 1:250.000, una escala pequeña."
+    },
+    "ca": {
+      "enunciado": "Quina d'aquestes escales és la més gran, és a dir, la que representa el terreny amb més detall?",
+      "opciones": [
+        "1:5.000",
+        "1:25.000",
+        "1:50.000",
+        "1:250.000"
+      ],
+      "explicacion": "Com més petit és el denominador, més gran és l'escala i més detall mostra el mapa. L'1:5.000 és una escala gran; l'1:250.000, una escala petita."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-003",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En un mapa topográfico, la equidistancia es:",
+      "opciones": [
+        "La distancia horizontal entre dos curvas de nivel consecutivas",
+        "La altitud de la curva maestra más baja del mapa",
+        "La distancia entre dos líneas consecutivas de la cuadrícula UTM",
+        "La diferencia de altitud, constante, entre dos curvas de nivel consecutivas"
+      ],
+      "explicacion": "La equidistancia es el desnivel fijo entre curvas de nivel sucesivas y se indica en el margen del mapa. La distancia horizontal entre curvas no es constante: depende de la pendiente."
+    },
+    "ca": {
+      "enunciado": "En un mapa topogràfic, l'equidistància és:",
+      "opciones": [
+        "La distància horitzontal entre dues corbes de nivell consecutives",
+        "L'altitud de la corba mestra més baixa del mapa",
+        "La distància entre dues línies consecutives de la quadrícula UTM",
+        "La diferència d'altitud, constant, entre dues corbes de nivell consecutives"
+      ],
+      "explicacion": "L'equidistància és el desnivell fix entre corbes de nivell successives i s'indica al marge del mapa. La distància horitzontal entre corbes no és constant: depèn del pendent."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-004",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si en un mapa topográfico las curvas de nivel aparecen muy juntas entre sí, el terreno:",
+      "opciones": [
+        "Es prácticamente llano",
+        "Tiene una pendiente fuerte",
+        "Está por debajo del nivel del mar",
+        "Corresponde a una zona de vegetación densa"
+      ],
+      "explicacion": "Con la equidistancia constante, cuanto más cerca están las curvas, más desnivel se salva en menos distancia horizontal, es decir, más pendiente. Curvas muy separadas indican terreno suave o llano."
+    },
+    "ca": {
+      "enunciado": "Si en un mapa topogràfic les corbes de nivell apareixen molt juntes entre si, el terreny:",
+      "opciones": [
+        "És pràcticament pla",
+        "Té un pendent fort",
+        "És per sota del nivell del mar",
+        "Correspon a una zona de vegetació densa"
+      ],
+      "explicacion": "Amb l'equidistància constant, com més a prop són les corbes, més desnivell se salva en menys distància horitzontal, és a dir, més pendent. Corbes molt separades indiquen terreny suau o pla."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-005",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Entre dos puntos separados 500 m en horizontal hay un desnivel de 50 m. ¿Cuál es la pendiente media entre ellos?",
+      "opciones": [
+        "1 %",
+        "10 %",
+        "25 %",
+        "50 %"
+      ],
+      "explicacion": "La pendiente en tanto por ciento es el desnivel dividido por la distancia horizontal, multiplicado por 100: 50 / 500 × 100 = 10 %."
+    },
+    "ca": {
+      "enunciado": "Entre dos punts separats 500 m en horitzontal hi ha un desnivell de 50 m. Quin és el pendent mitjà entre ells?",
+      "opciones": [
+        "1 %",
+        "10 %",
+        "25 %",
+        "50 %"
+      ],
+      "explicacion": "El pendent en tant per cent és el desnivell dividit per la distància horitzontal, multiplicat per 100: 50 / 500 × 100 = 10 %."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-006",
+    "tema": 14,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La cartografía oficial del ICGC utiliza el sistema de referencia ETRS89 con proyección UTM. ¿En qué huso UTM se sitúa Cataluña?",
+      "opciones": [
+        "Huso 29",
+        "Huso 30",
+        "Huso 32",
+        "Huso 31"
+      ],
+      "explicacion": "El huso 31 abarca de 0º a 6º de longitud este, franja en la que queda todo el territorio catalán; por eso la cartografía del ICGC se expresa en ETRS89 UTM huso 31 norte."
+    },
+    "ca": {
+      "enunciado": "La cartografia oficial de l'ICGC utilitza el sistema de referència ETRS89 amb projecció UTM. En quin fus UTM se situa Catalunya?",
+      "opciones": [
+        "Fus 29",
+        "Fus 30",
+        "Fus 32",
+        "Fus 31"
+      ],
+      "explicacion": "El fus 31 abasta de 0º a 6º de longitud est, franja en què queda tot el territori català; per això la cartografia de l'ICGC s'expressa en ETRS89 UTM fus 31 nord."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya (ICGC) · cartografia oficial, coordenades UTM ETRS89",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-007",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el sistema de coordenadas UTM, las coordenadas X (este) e Y (norte) de un punto se expresan en:",
+      "opciones": [
+        "Metros",
+        "Grados, minutos y segundos",
+        "Grados centesimales",
+        "Radianes"
+      ],
+      "explicacion": "La UTM es una proyección plana con cuadrícula métrica: la X es la distancia hacia el este y la Y la distancia hacia el norte, en metros. Los grados corresponden a las coordenadas geográficas (latitud y longitud)."
+    },
+    "ca": {
+      "enunciado": "En el sistema de coordenades UTM, les coordenades X (est) i Y (nord) d'un punt s'expressen en:",
+      "opciones": [
+        "Metres",
+        "Graus, minuts i segons",
+        "Graus centesimals",
+        "Radiants"
+      ],
+      "explicacion": "La UTM és una projecció plana amb quadrícula mètrica: la X és la distància cap a l'est i la Y la distància cap al nord, en metres. Els graus corresponen a les coordenades geogràfiques (latitud i longitud)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Institut Cartogràfic i Geològic de Catalunya (ICGC) · cartografia oficial, coordenades UTM ETRS89",
+      "url": "https://www.icgc.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-008",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Se denomina declinación magnética al ángulo que forman:",
+      "opciones": [
+        "El norte de la cuadrícula UTM y el norte geográfico",
+        "La dirección de marcha y el norte magnético",
+        "El norte geográfico y el norte magnético",
+        "El ecuador y el paralelo del lugar"
+      ],
+      "explicacion": "La declinación magnética es la diferencia angular entre el norte geográfico y el norte que marca la brújula; varía con el lugar y el tiempo. El ángulo entre el norte de cuadrícula y el geográfico es la convergencia de meridianos, y el de la dirección de marcha respecto al norte es el rumbo."
+    },
+    "ca": {
+      "enunciado": "S'anomena declinació magnètica l'angle que formen:",
+      "opciones": [
+        "El nord de la quadrícula UTM i el nord geogràfic",
+        "La direcció de marxa i el nord magnètic",
+        "El nord geogràfic i el nord magnètic",
+        "L'equador i el paral·lel del lloc"
+      ],
+      "explicacion": "La declinació magnètica és la diferència angular entre el nord geogràfic i el nord que marca la brúixola; varia amb el lloc i el temps. L'angle entre el nord de quadrícula i el geogràfic és la convergència de meridians, i el de la direcció de marxa respecte del nord és el rumb."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-009",
+    "tema": 14,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Desde un punto A se toma un acimut de 60º para llegar a un punto B. ¿Qué acimut hay que seguir para volver desde B hasta A?",
+      "opciones": [
+        "120º",
+        "300º",
+        "30º",
+        "240º"
+      ],
+      "explicacion": "El acimut inverso se obtiene sumando 180º si el acimut es menor de 180º (o restándolos si es mayor): 60º + 180º = 240º."
+    },
+    "ca": {
+      "enunciado": "Des d'un punt A es pren un azimut de 60º per arribar a un punt B. Quin azimut cal seguir per tornar des de B fins a A?",
+      "opciones": [
+        "120º",
+        "300º",
+        "30º",
+        "240º"
+      ],
+      "explicacion": "L'azimut invers s'obté sumant 180º si l'azimut és menor de 180º (o restant-los si és més gran): 60º + 180º = 240º."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t14-010",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En un mapa topográfico, en una vaguada las curvas de nivel forman una V (o U) cuyo vértice apunta hacia:",
+      "opciones": [
+        "Las cotas más altas",
+        "Las cotas más bajas",
+        "El norte geográfico",
+        "La curva maestra más cercana"
+      ],
+      "explicacion": "En las vaguadas (fondos de valle, torrentes) el vértice de las curvas señala aguas arriba, hacia las cotas superiores; en las divisorias o crestas ocurre lo contrario, el vértice apunta hacia las cotas inferiores."
+    },
+    "ca": {
+      "enunciado": "En un mapa topogràfic, en una fondalada les corbes de nivell formen una V (o U) el vèrtex de la qual apunta cap a:",
+      "opciones": [
+        "Les cotes més altes",
+        "Les cotes més baixes",
+        "El nord geogràfic",
+        "La corba mestra més propera"
+      ],
+      "explicacion": "A les fondalades (fons de vall, torrents) el vèrtex de les corbes assenyala aigües amunt, cap a les cotes superiors; a les carenes o divisòries passa el contrari, el vèrtex apunta cap a les cotes inferiors."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

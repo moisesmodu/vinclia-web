@@ -1,0 +1,337 @@
+[
+  {
+    "id": "bomb-t12-001",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Reglamento de instalaciones de protección contra incendios (RIPCI), la protección activa contra incendios es el conjunto de medios, equipos y sistemas cuyas funciones específicas son:",
+      "opciones": [
+        "La detección, el control y/o la extinción de un incendio",
+        "La compartimentación y la resistencia al fuego de la estructura",
+        "La señalización de las vías de evacuación, exclusivamente",
+        "La limitación de la carga de fuego del edificio"
+      ],
+      "explicacion": "El artículo 3.a) del RIPCI define la protección activa por sus funciones de detección, control y/o extinción, facilitando la evacuación e impidiendo la propagación. La compartimentación y la resistencia al fuego son medidas de protección pasiva."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament d'instal·lacions de protecció contra incendis (RIPCI), la protecció activa contra incendis és el conjunt de mitjans, equips i sistemes les funcions específiques dels quals són:",
+      "opciones": [
+        "La detecció, el control i/o l'extinció d'un incendi",
+        "La compartimentació i la resistència al foc de l'estructura",
+        "La senyalització de les vies d'evacuació, exclusivament",
+        "La limitació de la càrrega de foc de l'edifici"
+      ],
+      "explicacion": "L'article 3.a) del RIPCI defineix la protecció activa per les seves funcions de detecció, control i/o extinció, tot facilitant l'evacuació i impedint la propagació. La compartimentació i la resistència al foc són mesures de protecció passiva."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2017-6606",
+      "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606#a3"
+    },
+    "cita": "Protección activa contra incendios: es el conjunto de medios, equipos y sistemas, ya sean manuales o automáticos, cuyas funciones específicas son la detección, control y/o extinción de un incendio",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-002",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Cuando no lo regule una reglamentación específica, ¿con qué periodicidad y por quién deben inspeccionarse las instalaciones de protección activa contra incendios según el RIPCI?",
+      "opciones": [
+        "Cada año, por la empresa mantenedora",
+        "Al menos cada diez años, por un organismo de control acreditado",
+        "Al menos cada cinco años, por el servicio de bomberos",
+        "Una sola vez, antes de la puesta en servicio"
+      ],
+      "explicacion": "El artículo 22.1 del RIPCI obliga a los titulares a solicitar la inspección, al menos cada diez años, a un organismo de control acreditado. Los mantenimientos periódicos del anexo II son una obligación distinta."
+    },
+    "ca": {
+      "enunciado": "Quan no ho reguli una reglamentació específica, amb quina periodicitat i per qui s'han d'inspeccionar les instal·lacions de protecció activa contra incendis segons el RIPCI?",
+      "opciones": [
+        "Cada any, per l'empresa mantenidora",
+        "Almenys cada deu anys, per un organisme de control acreditat",
+        "Almenys cada cinc anys, pel servei de bombers",
+        "Una sola vegada, abans de la posada en servei"
+      ],
+      "explicacion": "L'article 22.1 del RIPCI obliga els titulars a sol·licitar la inspecció, almenys cada deu anys, a un organisme de control acreditat. Els manteniments periòdics de l'annex II són una obligació diferent."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2017-6606",
+      "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios",
+      "articulo": "22.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606#a22"
+    },
+    "cita": "los titulares de las mismas deberán solicitar, al menos, cada diez años, a un organismo de control acreditado",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-003",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el RIPCI, ¿durante cuánto tiempo, como mínimo, deben estar a disposición de los servicios competentes en materia de industria las actas de los mantenimientos?",
+      "opciones": [
+        "Un año",
+        "Tres años",
+        "Cinco años",
+        "Diez años"
+      ],
+      "explicacion": "El artículo 21.2 del RIPCI exige conservar las actas de mantenimiento, firmadas por el personal cualificado, al menos durante cinco años desde su expedición. Diez años es la periodicidad de las inspecciones del artículo 22."
+    },
+    "ca": {
+      "enunciado": "Segons el RIPCI, durant quant de temps, com a mínim, han d'estar a disposició dels serveis competents en matèria d'indústria les actes dels manteniments?",
+      "opciones": [
+        "Un any",
+        "Tres anys",
+        "Cinc anys",
+        "Deu anys"
+      ],
+      "explicacion": "L'article 21.2 del RIPCI exigeix conservar les actes de manteniment, signades pel personal qualificat, almenys durant cinc anys des de la seva expedició. Deu anys és la periodicitat de les inspeccions de l'article 22."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2017-6606",
+      "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios",
+      "articulo": "21.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606#a21"
+    },
+    "cita": "estarán a disposición de los servicios competentes en materia de industria de la Comunidad Autónoma, al menos, durante cinco años a partir de la fecha de su expedición.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-004",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Además del certificado de la empresa instaladora, ¿qué exige el RIPCI para la puesta en servicio de las instalaciones de protección activa contra incendios?",
+      "opciones": [
+        "Una inspección previa del servicio de bomberos",
+        "Un seguro de responsabilidad civil suscrito por el titular",
+        "La autorización expresa del ayuntamiento",
+        "Tener suscrito un contrato de mantenimiento con una empresa mantenedora debidamente habilitada"
+      ],
+      "explicacion": "El artículo 20.1.b) del RIPCI exige un contrato de mantenimiento con una empresa mantenedora habilitada, salvo que el propio titular se habilite como mantenedor y asuma el mantenimiento."
+    },
+    "ca": {
+      "enunciado": "A més del certificat de l'empresa instal·ladora, què exigeix el RIPCI per a la posada en servei de les instal·lacions de protecció activa contra incendis?",
+      "opciones": [
+        "Una inspecció prèvia del servei de bombers",
+        "Una assegurança de responsabilitat civil subscrita pel titular",
+        "L'autorització expressa de l'ajuntament",
+        "Tenir subscrit un contracte de manteniment amb una empresa mantenidora degudament habilitada"
+      ],
+      "explicacion": "L'article 20.1.b) del RIPCI exigeix un contracte de manteniment amb una empresa mantenidora habilitada, llevat que el mateix titular s'habiliti com a mantenidor i n'assumeixi el manteniment."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2017-6606",
+      "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios",
+      "articulo": "20.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606#a20"
+    },
+    "cita": "Tener suscrito un contrato de mantenimiento con una empresa mantenedora debidamente habilitada",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-005",
+    "tema": 12,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Siempre que no existan zonas de riesgo especial alto ni de uso almacén, ¿cuál de las siguientes instalaciones queda exceptuada de las inspecciones periódicas del artículo 22 del RIPCI?",
+      "opciones": [
+        "La de un establecimiento de uso residencial vivienda",
+        "La de un establecimiento comercial de 1.500 m² construidos",
+        "La de un edificio administrativo de 5.000 m² construidos",
+        "La de un local de pública concurrencia de 2.000 m² construidos"
+      ],
+      "explicacion": "El artículo 22.2 del RIPCI exceptúa el uso residencial vivienda y, por debajo de ciertas superficies, los usos administrativo y docente (menos de 2.000 m²) y comercial, pública concurrencia y aparcamiento (menos de 500 m²); las demás opciones superan esos límites."
+    },
+    "ca": {
+      "enunciado": "Sempre que no hi hagi zones de risc especial alt ni d'ús magatzem, quina de les instal·lacions següents queda exceptuada de les inspeccions periòdiques de l'article 22 del RIPCI?",
+      "opciones": [
+        "La d'un establiment d'ús residencial habitatge",
+        "La d'un establiment comercial de 1.500 m² construïts",
+        "La d'un edifici administratiu de 5.000 m² construïts",
+        "La d'un local de pública concurrència de 2.000 m² construïts"
+      ],
+      "explicacion": "L'article 22.2 del RIPCI exceptua l'ús residencial habitatge i, per sota de determinades superfícies, els usos administratiu i docent (menys de 2.000 m²) i comercial, pública concurrència i aparcament (menys de 500 m²); les altres opcions superen aquests límits."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2017-6606",
+      "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios",
+      "articulo": "22.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-6606#a22"
+    },
+    "cita": "Se exceptúan de lo dispuesto en el apartado anterior las instalaciones de protección activa contra incendios de los establecimientos destinados a: a) Uso residencial vivienda",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-006",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La columna seca es una instalación:",
+      "opciones": [
+        "Permanentemente llena de agua a presión y conectada a la red pública",
+        "De uso exclusivo de los servicios de extinción, que se alimenta desde el vehículo de bomberos a través de una toma en fachada",
+        "Que descarga agua automáticamente cuando detecta humo",
+        "Destinada a la evacuación de humos por tiro natural"
+      ],
+      "explicacion": "La columna seca es una conducción vacía (seca) que los bomberos alimentan con la bomba del vehículo desde la toma de fachada para disponer de agua en las plantas a través de las bocas de salida; está señalizada como de uso exclusivo de los servicios de extinción."
+    },
+    "ca": {
+      "enunciado": "La columna seca és una instal·lació:",
+      "opciones": [
+        "Permanentment plena d'aigua a pressió i connectada a la xarxa pública",
+        "D'ús exclusiu dels serveis d'extinció, que s'alimenta des del vehicle de bombers a través d'una presa a la façana",
+        "Que descarrega aigua automàticament quan detecta fum",
+        "Destinada a l'evacuació de fums per tir natural"
+      ],
+      "explicacion": "La columna seca és una conducció buida (seca) que els bombers alimenten amb la bomba del vehicle des de la presa de façana per disposar d'aigua a les plantes a través de les boques de sortida; està senyalitzada com d'ús exclusiu dels serveis d'extinció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-007",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Las bocas de incendio equipadas (BIE) de 25 mm están dotadas de:",
+      "opciones": [
+        "Manguera plana, que debe desplegarse por completo antes de abrir el agua",
+        "Un rociador automático de ampolla",
+        "Manguera semirrígida, que puede utilizarse sin desenrollarla totalmente",
+        "Manguera de 70 mm conectada a la columna seca"
+      ],
+      "explicacion": "Las BIE de 25 mm llevan manguera semirrígida enrollada en una devanadera y pueden usarse sin desplegarla del todo; las BIE de 45 mm llevan manguera plana, que debe extenderse completamente."
+    },
+    "ca": {
+      "enunciado": "Les boques d'incendi equipades (BIE) de 25 mm estan dotades de:",
+      "opciones": [
+        "Mànega plana, que s'ha de desplegar del tot abans d'obrir l'aigua",
+        "Un ruixador automàtic d'ampolla",
+        "Mànega semirígida, que es pot utilitzar sense desenrotllar-la totalment",
+        "Mànega de 70 mm connectada a la columna seca"
+      ],
+      "explicacion": "Les BIE de 25 mm porten mànega semirígida enrotllada en una debanadora i es poden fer servir sense desplegar-la del tot; les BIE de 45 mm porten mànega plana, que s'ha d'estendre completament."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-008",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En una instalación de rociadores automáticos de ampolla, cuando se produce un incendio:",
+      "opciones": [
+        "Se abren a la vez todos los rociadores de la instalación",
+        "Solo se abren cuando un operador acciona la válvula manual",
+        "Descargan espuma en lugar de agua de forma predeterminada",
+        "Se abren solo los rociadores cuya ampolla termosensible alcanza su temperatura de funcionamiento"
+      ],
+      "explicacion": "Cada rociador funciona de forma independiente: la ampolla se rompe al alcanzar su temperatura de tarado y solo descargan los rociadores afectados por el calor. La apertura simultánea de todas las boquillas es propia de los sistemas de diluvio, con boquillas abiertas."
+    },
+    "ca": {
+      "enunciado": "En una instal·lació de ruixadors automàtics d'ampolla, quan es produeix un incendi:",
+      "opciones": [
+        "S'obren alhora tots els ruixadors de la instal·lació",
+        "Només s'obren quan un operador acciona la vàlvula manual",
+        "Descarreguen escuma en lloc d'aigua de manera predeterminada",
+        "S'obren només els ruixadors l'ampolla termosensible dels quals arriba a la temperatura de funcionament"
+      ],
+      "explicacion": "Cada ruixador funciona de manera independent: l'ampolla es trenca quan arriba a la temperatura de tarat i només descarreguen els ruixadors afectats per la calor. L'obertura simultània de tots els broquets és pròpia dels sistemes de diluvi, amb broquets oberts."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-009",
+    "tema": 12,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una instalación eléctrica de baja tensión, el interruptor diferencial protege principalmente frente a:",
+      "opciones": [
+        "Los contactos indirectos, al detectar corrientes de fuga a tierra",
+        "Las sobretensiones de origen atmosférico",
+        "Las sobrecargas y los cortocircuitos",
+        "Las caídas de tensión de la red"
+      ],
+      "explicacion": "El diferencial compara la corriente que entra y la que sale del circuito y desconecta cuando detecta una fuga a tierra, lo que protege a las personas frente a contactos indirectos. Las sobrecargas y los cortocircuitos son función del interruptor magnetotérmico."
+    },
+    "ca": {
+      "enunciado": "En una instal·lació elèctrica de baixa tensió, l'interruptor diferencial protegeix principalment contra:",
+      "opciones": [
+        "Els contactes indirectes, en detectar corrents de fuita a terra",
+        "Les sobretensions d'origen atmosfèric",
+        "Les sobrecàrregues i els curtcircuits",
+        "Les caigudes de tensió de la xarxa"
+      ],
+      "explicacion": "El diferencial compara el corrent que entra i el que surt del circuit i desconnecta quan detecta una fuita a terra, cosa que protegeix les persones contra contactes indirectes. Les sobrecàrregues i els curtcircuits són funció de l'interruptor magnetotèrmic."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t12-010",
+    "tema": 12,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un pulsador manual de alarma de incendios sirve para:",
+      "opciones": [
+        "Descargar el agente extintor de un sistema fijo de extinción",
+        "Transmitir manualmente una señal de alarma a la central de detección",
+        "Cortar el suministro eléctrico general del edificio",
+        "Abrir las puertas cortafuego de los sectores de incendio"
+      ],
+      "explicacion": "El pulsador permite a cualquier persona que descubra un incendio transmitir de forma voluntaria la señal de alarma a la central del sistema de detección y alarma, que activa los avisos previstos."
+    },
+    "ca": {
+      "enunciado": "Un polsador manual d'alarma d'incendis serveix per:",
+      "opciones": [
+        "Descarregar l'agent extintor d'un sistema fix d'extinció",
+        "Transmetre manualment un senyal d'alarma a la central de detecció",
+        "Tallar el subministrament elèctric general de l'edifici",
+        "Obrir les portes tallafoc dels sectors d'incendi"
+      ],
+      "explicacion": "El polsador permet a qualsevol persona que descobreixi un incendi transmetre de manera voluntària el senyal d'alarma a la central del sistema de detecció i alarma, que activa els avisos previstos."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

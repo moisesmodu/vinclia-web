@@ -1,0 +1,334 @@
+[
+  {
+    "id": "bomb-t11-001",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El Reglamento electrotécnico para baja tensión se aplica a las instalaciones con tensiones nominales:",
+      "opciones": [
+        "Iguales o inferiores a 1.000 V en corriente alterna y a 1.500 V en corriente continua",
+        "Iguales o inferiores a 400 V en corriente alterna y a 750 V en corriente continua",
+        "Iguales o inferiores a 1.500 V en corriente alterna y a 1.000 V en corriente continua",
+        "Superiores a 1.000 V en corriente alterna y a 1.500 V en corriente continua"
+      ],
+      "explicacion": "El artículo 2.1 del Reglamento electrotécnico para baja tensión fija sus límites en 1.000 V en alterna y 1.500 V en continua; por encima se trata de alta tensión."
+    },
+    "ca": {
+      "enunciado": "El Reglament electrotècnic per a baixa tensió s'aplica a les instal·lacions amb tensions nominals:",
+      "opciones": [
+        "Iguals o inferiors a 1.000 V en corrent altern i a 1.500 V en corrent continu",
+        "Iguals o inferiors a 400 V en corrent altern i a 750 V en corrent continu",
+        "Iguals o inferiors a 1.500 V en corrent altern i a 1.000 V en corrent continu",
+        "Superiors a 1.000 V en corrent altern i a 1.500 V en corrent continu"
+      ],
+      "explicacion": "L'article 2.1 del Reglament electrotècnic per a baixa tensió en fixa els límits en 1.000 V en altern i 1.500 V en continu; per sobre es tracta d'alta tensió."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-18099",
+      "norma": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión",
+      "articulo": "2.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099#a2"
+    },
+    "cita": "a) Corriente alterna: igual o inferior a 1.000 voltios. b) Corriente continua: igual o inferior a 1.500 voltios.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-002",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Reglamento electrotécnico para baja tensión, ¿hasta qué tensión se considera «muy baja tensión» en corriente alterna?",
+      "opciones": [
+        "Hasta 24 V",
+        "Hasta 50 V",
+        "Hasta 75 V",
+        "Hasta 230 V"
+      ],
+      "explicacion": "El Reglamento considera muy baja tensión hasta 50 V en corriente alterna y hasta 75 V en corriente continua (arts. 2.6 y 4.1). 75 V es el límite en continua, no en alterna."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament electrotècnic per a baixa tensió, fins a quina tensió es considera «molt baixa tensió» en corrent altern?",
+      "opciones": [
+        "Fins a 24 V",
+        "Fins a 50 V",
+        "Fins a 75 V",
+        "Fins a 230 V"
+      ],
+      "explicacion": "El Reglament considera molt baixa tensió fins a 50 V en corrent altern i fins a 75 V en corrent continu (arts. 2.6 i 4.1). 75 V és el límit en continu, no en altern."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-18099",
+      "norma": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión",
+      "articulo": "2.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099#a2"
+    },
+    "cita": "que utilizan «muy baja tensión» (hasta 50 V en corriente alterna y hasta 75 V en corriente continua)",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-003",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En las redes trifásicas de cuatro conductores, ¿qué tensiones nominales usuales establece el Reglamento electrotécnico para baja tensión?",
+      "opciones": [
+        "127 V entre fase y neutro y 220 V entre fases",
+        "220 V entre fase y neutro y 380 V entre fases",
+        "230 V entre fase y neutro y 400 V entre fases",
+        "400 V entre fase y neutro y 690 V entre fases"
+      ],
+      "explicacion": "El artículo 4.2.b) del Reglamento fija 230 V entre fase y neutro y 400 V entre fases para las redes trifásicas de cuatro conductores."
+    },
+    "ca": {
+      "enunciado": "En les xarxes trifàsiques de quatre conductors, quines tensions nominals usuals estableix el Reglament electrotècnic per a baixa tensió?",
+      "opciones": [
+        "127 V entre fase i neutre i 220 V entre fases",
+        "220 V entre fase i neutre i 380 V entre fases",
+        "230 V entre fase i neutre i 400 V entre fases",
+        "400 V entre fase i neutre i 690 V entre fases"
+      ],
+      "explicacion": "L'article 4.2.b) del Reglament fixa 230 V entre fase i neutre i 400 V entre fases per a les xarxes trifàsiques de quatre conductors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-18099",
+      "norma": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión",
+      "articulo": "4.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099#a4"
+    },
+    "cita": "230 V entre fase y neutro, y 400 V entre fases, para las redes trifásicas de 4 conductores",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-004",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué frecuencia establece el Reglamento electrotécnico para baja tensión para la red eléctrica?",
+      "opciones": [
+        "60 Hz",
+        "100 Hz",
+        "25 Hz",
+        "50 Hz"
+      ],
+      "explicacion": "El artículo 4.4 del Reglamento establece una frecuencia de red de 50 Hz; solo con autorización motivada pueden utilizarse otras (art. 4.5)."
+    },
+    "ca": {
+      "enunciado": "Quina freqüència estableix el Reglament electrotècnic per a baixa tensió per a la xarxa elèctrica?",
+      "opciones": [
+        "60 Hz",
+        "100 Hz",
+        "25 Hz",
+        "50 Hz"
+      ],
+      "explicacion": "L'article 4.4 del Reglament estableix una freqüència de xarxa de 50 Hz; només amb autorització motivada se'n poden utilitzar d'altres (art. 4.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-18099",
+      "norma": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión",
+      "articulo": "4.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099#a4"
+    },
+    "cita": "La frecuencia empleada en la red será de 50 Hz.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-005",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un receptor de 46 Ω de resistencia se conecta a una tensión de 230 V. Según la ley de Ohm, ¿qué intensidad circula por él?",
+      "opciones": [
+        "5 A",
+        "0,2 A",
+        "50 A",
+        "23 A"
+      ],
+      "explicacion": "Por la ley de Ohm, I = V / R = 230 V / 46 Ω = 5 A."
+    },
+    "ca": {
+      "enunciado": "Un receptor de 46 Ω de resistència es connecta a una tensió de 230 V. Segons la llei d'Ohm, quina intensitat hi circula?",
+      "opciones": [
+        "5 A",
+        "0,2 A",
+        "50 A",
+        "23 A"
+      ],
+      "explicacion": "Per la llei d'Ohm, I = V / R = 230 V / 46 Ω = 5 A."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-006",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la resistencia equivalente de tres resistencias de 10 Ω, 20 Ω y 30 Ω conectadas en serie?",
+      "opciones": [
+        "5,45 Ω",
+        "60 Ω",
+        "20 Ω",
+        "6 000 Ω"
+      ],
+      "explicacion": "En serie, la resistencia equivalente es la suma de las resistencias: 10 + 20 + 30 = 60 Ω. El valor de 5,45 Ω correspondería a la conexión en paralelo."
+    },
+    "ca": {
+      "enunciado": "Quina és la resistència equivalent de tres resistències de 10 Ω, 20 Ω i 30 Ω connectades en sèrie?",
+      "opciones": [
+        "5,45 Ω",
+        "60 Ω",
+        "20 Ω",
+        "6 000 Ω"
+      ],
+      "explicacion": "En sèrie, la resistència equivalent és la suma de les resistències: 10 + 20 + 30 = 60 Ω. El valor de 5,45 Ω correspondria a la connexió en paral·lel."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-007",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál es la resistencia equivalente de dos resistencias iguales de 10 Ω conectadas en paralelo?",
+      "opciones": [
+        "20 Ω",
+        "10 Ω",
+        "5 Ω",
+        "100 Ω"
+      ],
+      "explicacion": "En paralelo, 1/Req = 1/10 + 1/10 = 2/10, de modo que Req = 5 Ω. Con dos resistencias iguales, la equivalente es la mitad de una de ellas."
+    },
+    "ca": {
+      "enunciado": "Quina és la resistència equivalent de dues resistències iguals de 10 Ω connectades en paral·lel?",
+      "opciones": [
+        "20 Ω",
+        "10 Ω",
+        "5 Ω",
+        "100 Ω"
+      ],
+      "explicacion": "En paral·lel, 1/Req = 1/10 + 1/10 = 2/10, de manera que Req = 5 Ω. Amb dues resistències iguals, l'equivalent és la meitat d'una de les dues."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-008",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué potencia consume un aparato puramente resistivo conectado a 230 V por el que circula una corriente de 10 A?",
+      "opciones": [
+        "23 W",
+        "230 W",
+        "23 000 W",
+        "2 300 W"
+      ],
+      "explicacion": "En una carga puramente resistiva (factor de potencia 1), la potencia es P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
+    },
+    "ca": {
+      "enunciado": "Quina potència consumeix un aparell purament resistiu connectat a 230 V pel qual circula un corrent de 10 A?",
+      "opciones": [
+        "23 W",
+        "230 W",
+        "23 000 W",
+        "2 300 W"
+      ],
+      "explicacion": "En una càrrega purament resistiva (factor de potència 1), la potència és P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-009",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El calentamiento que se produce en un conductor cuando lo recorre una corriente eléctrica se denomina:",
+      "opciones": [
+        "Efecto Joule",
+        "Efecto Doppler",
+        "Efecto fotoeléctrico",
+        "Efecto Venturi"
+      ],
+      "explicacion": "El efecto Joule es la transformación en calor de parte de la energía eléctrica al atravesar un conductor con resistencia; explica el calentamiento de cables sobrecargados y el funcionamiento de fusibles y estufas."
+    },
+    "ca": {
+      "enunciado": "L'escalfament que es produeix en un conductor quan el recorre un corrent elèctric s'anomena:",
+      "opciones": [
+        "Efecte Joule",
+        "Efecte Doppler",
+        "Efecte fotoelèctric",
+        "Efecte Venturi"
+      ],
+      "explicacion": "L'efecte Joule és la transformació en calor d'una part de l'energia elèctrica en travessar un conductor amb resistència; explica l'escalfament de cables sobrecarregats i el funcionament de fusibles i estufes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t11-010",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un radiador eléctrico de 2 000 W funciona durante 3 horas. ¿Qué energía consume?",
+      "opciones": [
+        "666 Wh",
+        "6 kWh",
+        "600 kWh",
+        "6 000 kWh"
+      ],
+      "explicacion": "La energía es E = P · t = 2 kW × 3 h = 6 kWh (6 000 Wh). Dividir la potencia entre el tiempo, que da 666 Wh, es el error más habitual."
+    },
+    "ca": {
+      "enunciado": "Un radiador elèctric de 2 000 W funciona durant 3 hores. Quina energia consumeix?",
+      "opciones": [
+        "666 Wh",
+        "6 kWh",
+        "600 kWh",
+        "6 000 kWh"
+      ],
+      "explicacion": "L'energia és E = P · t = 2 kW × 3 h = 6 kWh (6 000 Wh). Dividir la potència pel temps, que dona 666 Wh, és l'error més habitual."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

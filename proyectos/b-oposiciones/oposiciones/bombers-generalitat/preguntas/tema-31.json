@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t31-001",
+    "tema": 31,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Por debajo de qué temperatura corporal central se considera que una persona sufre hipotermia?",
+      "opciones": [
+        "35 °C",
+        "37 °C",
+        "32 °C",
+        "30 °C"
+      ],
+      "explicacion": "Se habla de hipotermia cuando la temperatura central baja de 35 °C. Por debajo de 32 °C se considera ya moderada o grave, con alto riesgo de arritmias."
+    },
+    "ca": {
+      "enunciado": "Per sota de quina temperatura corporal central es considera que una persona pateix hipotèrmia?",
+      "opciones": [
+        "35 °C",
+        "37 °C",
+        "32 °C",
+        "30 °C"
+      ],
+      "explicacion": "Es parla d'hipotèrmia quan la temperatura central baixa de 35 °C. Per sota de 32 °C es considera ja moderada o greu, amb un risc alt d'arrítmies."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-002",
+    "tema": 31,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué nudo se utiliza habitualmente para encordarse al arnés por ser seguro y fácil de revisar?",
+      "opciones": [
+        "Nudo llano",
+        "Nudo Prusik",
+        "Nudo de cinta",
+        "Nudo de ocho (doble o retrenzado)"
+      ],
+      "explicacion": "El ocho retrenzado (o el ocho doble con mosquetón) es el nudo de encordamiento de referencia: es resistente, no se deshace solo y su forma permite comprobar a simple vista que está bien hecho. El nudo de cinta une cintas planas y el Prusik es autobloqueante."
+    },
+    "ca": {
+      "enunciado": "Quin nus s'utilitza habitualment per encordar-se a l'arnès perquè és segur i fàcil de revisar?",
+      "opciones": [
+        "Nus pla",
+        "Nus Prusik",
+        "Nus de cinta",
+        "Nus de vuit (doble o refet)"
+      ],
+      "explicacion": "El vuit refet (o el vuit doble amb mosquetó) és el nus d'encordament de referència: és resistent, no es desfà sol i la seva forma permet comprovar a simple vista que està ben fet. El nus de cinta uneix cintes planes i el Prusik és autoblocant."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-003",
+    "tema": 31,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué característica tiene el nudo Prusik?",
+      "opciones": [
+        "Sirve para unir dos cuerdas de distinto diámetro",
+        "Es autobloqueante: se bloquea al cargarlo y puede deslizarse sobre la cuerda sin carga",
+        "Es un nudo de anclaje que no se puede deshacer una vez cargado",
+        "Es un nudo de tope que se hace en el extremo de la cuerda"
+      ],
+      "explicacion": "El Prusik, hecho con un cordino alrededor de una cuerda de mayor diámetro, se bloquea al recibir carga y se puede desplazar a mano cuando está descargado; por eso se usa como seguro, para ascender por cuerda o en sistemas de izado."
+    },
+    "ca": {
+      "enunciado": "Quina característica té el nus Prusik?",
+      "opciones": [
+        "Serveix per unir dues cordes de diàmetre diferent",
+        "És autoblocant: es bloqueja quan es carrega i pot lliscar sobre la corda sense càrrega",
+        "És un nus d'ancoratge que no es pot desfer un cop carregat",
+        "És un nus de tope que es fa a l'extrem de la corda"
+      ],
+      "explicacion": "El Prusik, fet amb un cordino al voltant d'una corda de diàmetre més gran, es bloqueja quan rep càrrega i es pot desplaçar a mà quan està descarregat; per això s'utilitza com a assegurança, per pujar per corda o en sistemes d'hissat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-004",
+    "tema": 31,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un escalador se encuentra 2 m por encima del anclaje de la reunión, con 2 m de cuerda entre ambos, y cae 4 m. ¿Cuál es el factor de caída?",
+      "opciones": [
+        "0,5",
+        "1",
+        "2",
+        "4"
+      ],
+      "explicacion": "El factor de caída es la altura de la caída dividida por la longitud de cuerda que la absorbe: 4 m / 2 m = 2, el valor máximo posible en escalada y el más exigente para el anclaje y el escalador."
+    },
+    "ca": {
+      "enunciado": "Un escalador es troba 2 m per sobre de l'ancoratge de la reunió, amb 2 m de corda entre tots dos, i cau 4 m. Quin és el factor de caiguda?",
+      "opciones": [
+        "0,5",
+        "1",
+        "2",
+        "4"
+      ],
+      "explicacion": "El factor de caiguda és l'altura de la caiguda dividida per la longitud de corda que l'absorbeix: 4 m / 2 m = 2, el valor màxim possible en escalada i el més exigent per a l'ancoratge i l'escalador."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-005",
+    "tema": 31,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál es la señal internacional de socorro en montaña?",
+      "opciones": [
+        "Tres señales por minuto, seguidas de un minuto de pausa",
+        "Seis señales por minuto, seguidas de un minuto de pausa",
+        "Una señal cada minuto, sin pausas",
+        "Diez señales por minuto, seguidas de cinco minutos de pausa"
+      ],
+      "explicacion": "La señal internacional de socorro en montaña consiste en seis señales (acústicas o luminosas) por minuto, una cada diez segundos, seguidas de un minuto de pausa. Tres señales por minuto es la respuesta de quien la ha recibido."
+    },
+    "ca": {
+      "enunciado": "Quin és el senyal internacional de socors a muntanya?",
+      "opciones": [
+        "Tres senyals per minut, seguits d'un minut de pausa",
+        "Sis senyals per minut, seguits d'un minut de pausa",
+        "Un senyal cada minut, sense pauses",
+        "Deu senyals per minut, seguits de cinc minuts de pausa"
+      ],
+      "explicacion": "El senyal internacional de socors a muntanya consisteix en sis senyals (acústics o lluminosos) per minut, un cada deu segons, seguits d'un minut de pausa. Tres senyals per minut és la resposta de qui l'ha rebut."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-006",
+    "tema": 31,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Ante un helicóptero de rescate, ¿qué indica una persona con los dos brazos levantados en forma de Y?",
+      "opciones": [
+        "Sí, necesito ayuda",
+        "No necesito ayuda",
+        "Aterrice a mi izquierda",
+        "Aléjese, hay peligro en la zona"
+      ],
+      "explicacion": "Los dos brazos en alto formando una Y significan «sí, necesitamos ayuda». Un brazo arriba y otro abajo, en diagonal, significa «no necesitamos ayuda»."
+    },
+    "ca": {
+      "enunciado": "Davant d'un helicòpter de rescat, què indica una persona amb els dos braços aixecats en forma de Y?",
+      "opciones": [
+        "Sí, necessito ajuda",
+        "No necessito ajuda",
+        "Aterri a la meva esquerra",
+        "Allunyi's, hi ha perill a la zona"
+      ],
+      "explicacion": "Els dos braços enlaire formant una Y signifiquen «sí, necessitem ajuda». Un braç amunt i l'altre avall, en diagonal, significa «no necessitem ajuda»."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-007",
+    "tema": 31,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué distingue el golpe de calor del agotamiento por calor?",
+      "opciones": [
+        "El golpe de calor produce sudoración abundante y piel fría",
+        "En el golpe de calor la temperatura corporal se mantiene normal",
+        "El agotamiento por calor siempre causa pérdida de conciencia",
+        "En el golpe de calor hay temperatura muy elevada y alteración del nivel de conciencia"
+      ],
+      "explicacion": "El golpe de calor es una urgencia vital: la temperatura corporal sube mucho y aparecen confusión, convulsiones o pérdida de conciencia; hay que enfriar a la víctima de inmediato. En el agotamiento por calor la persona suele estar consciente, sudorosa y débil."
+    },
+    "ca": {
+      "enunciado": "Què distingeix el cop de calor de l'esgotament per calor?",
+      "opciones": [
+        "El cop de calor produeix suor abundant i pell freda",
+        "En el cop de calor la temperatura corporal es manté normal",
+        "L'esgotament per calor sempre causa pèrdua de consciència",
+        "En el cop de calor hi ha temperatura molt elevada i alteració del nivell de consciència"
+      ],
+      "explicacion": "El cop de calor és una urgència vital: la temperatura corporal puja molt i apareixen confusió, convulsions o pèrdua de consciència; cal refredar la víctima immediatament. En l'esgotament per calor la persona sol estar conscient, suada i dèbil."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-008",
+    "tema": 31,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Durante un rescate en montaña, una víctima presenta congelación en los pies y la evacuación será larga. ¿Qué es correcto?",
+      "opciones": [
+        "Frotar enérgicamente la zona con nieve para reactivar la circulación",
+        "Recalentar la zona con una fuente de calor directa e intensa",
+        "No frotar la zona y no recalentarla si existe riesgo de que vuelva a congelarse",
+        "Hacer caminar a la víctima descalza para mejorar el riego"
+      ],
+      "explicacion": "Frotar daña los tejidos congelados y el calor directo puede quemarlos, porque la zona está insensible. Un ciclo de recalentamiento y nueva congelación agrava mucho la lesión, por lo que se protege la zona y solo se recalienta cuando ya no pueda volver a congelarse."
+    },
+    "ca": {
+      "enunciado": "Durant un rescat a muntanya, una víctima presenta congelació als peus i l'evacuació serà llarga. Què és correcte?",
+      "opciones": [
+        "Fregar enèrgicament la zona amb neu per reactivar la circulació",
+        "Reescalfar la zona amb una font de calor directa i intensa",
+        "No fregar la zona i no reescalfar-la si hi ha risc que es torni a congelar",
+        "Fer caminar la víctima descalça per millorar-ne el reg"
+      ],
+      "explicacion": "Fregar danya els teixits congelats i la calor directa els pot cremar, perquè la zona està insensible. Un cicle de reescalfament i nova congelació agreuja molt la lesió, per la qual cosa es protegeix la zona i només es reescalfa quan ja no es pugui tornar a congelar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-009",
+    "tema": 31,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una maniobra de rescate con cuerdas, ¿qué es un anclaje?",
+      "opciones": [
+        "El punto fijo y resistente al que se sujeta el sistema de cuerdas",
+        "El dispositivo que frena el descenso de la víctima",
+        "El nudo que une dos cuerdas entre sí",
+        "La cinta que se coloca alrededor del pecho de la víctima"
+      ],
+      "explicacion": "El anclaje es el punto fijo (natural o artificial) capaz de soportar las cargas del sistema y al que se conectan las cuerdas; su solidez es la base de la seguridad de toda la maniobra."
+    },
+    "ca": {
+      "enunciado": "En una maniobra de rescat amb cordes, què és un ancoratge?",
+      "opciones": [
+        "El punt fix i resistent al qual se subjecta el sistema de cordes",
+        "El dispositiu que frena el descens de la víctima",
+        "El nus que uneix dues cordes entre si",
+        "La cinta que es col·loca al voltant del pit de la víctima"
+      ],
+      "explicacion": "L'ancoratge és el punt fix (natural o artificial) capaç de suportar les càrregues del sistema i al qual es connecten les cordes; la seva solidesa és la base de la seguretat de tota la maniobra."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t31-010",
+    "tema": 31,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una reunión con dos anclajes que se reparten la carga, ¿qué ocurre al aumentar el ángulo entre los dos ramales?",
+      "opciones": [
+        "La carga que soporta cada anclaje disminuye",
+        "La carga que soporta cada anclaje aumenta",
+        "La carga se concentra solo en el anclaje más alto",
+        "El ángulo no influye en la carga de los anclajes"
+      ],
+      "explicacion": "Cuanto más abierto es el ángulo entre los ramales, mayor es la fuerza que recibe cada anclaje: con 120° cada uno soporta ya el 100 % de la carga. Por eso se procura mantener ángulos cerrados."
+    },
+    "ca": {
+      "enunciado": "En una reunió amb dos ancoratges que es reparteixen la càrrega, què passa quan augmenta l'angle entre els dos rams?",
+      "opciones": [
+        "La càrrega que suporta cada ancoratge disminueix",
+        "La càrrega que suporta cada ancoratge augmenta",
+        "La càrrega es concentra només a l'ancoratge més alt",
+        "L'angle no influeix en la càrrega dels ancoratges"
+      ],
+      "explicacion": "Com més obert és l'angle entre els rams, més gran és la força que rep cada ancoratge: amb 120° cadascun ja suporta el 100 % de la càrrega. Per això es procura mantenir angles tancats."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

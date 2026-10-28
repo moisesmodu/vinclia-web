@@ -1,0 +1,842 @@
+[
+  {
+    "id": "agen-t04-001",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley Orgánica 3/2018, el derecho fundamental de las personas físicas a la protección de datos personales está amparado por:",
+      "opciones": [
+        "El artículo 20.4 de la Constitución",
+        "El artículo 18.4 de la Constitución",
+        "El artículo 105.b) de la Constitución",
+        "El artículo 24.1 de la Constitución"
+      ],
+      "explicacion": "El artículo 1 de la LOPDGDD vincula el derecho fundamental a la protección de datos al artículo 18.4 CE, que ordena a la ley limitar el uso de la informática para garantizar el honor y la intimidad."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei orgànica 3/2018, el dret fonamental de les persones físiques a la protecció de dades personals està emparat per:",
+      "opciones": [
+        "L'article 20.4 de la Constitució",
+        "L'article 18.4 de la Constitució",
+        "L'article 105.b) de la Constitució",
+        "L'article 24.1 de la Constitució"
+      ],
+      "explicacion": "L'article 1 de la LOPDGDD vincula el dret fonamental a la protecció de dades a l'article 18.4 CE, que ordena a la llei limitar l'ús de la informàtica per garantir l'honor i la intimitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a1"
+    },
+    "cita": "El derecho fundamental de las personas físicas a la protección de datos personales, amparado por el artículo 18.4 de la Constitución",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-002",
+    "tema": 4,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una persona fallecida había prohibido expresamente que sus familiares accedieran a sus datos personales. Su hijo, que es heredero, solicita acceder a los datos de carácter patrimonial del causante. Según la LOPDGDD:",
+      "opciones": [
+        "No puede acceder a ningún dato, porque la prohibición expresa del fallecido lo impide",
+        "Solo puede acceder con autorización del Ministerio Fiscal",
+        "Puede acceder, porque la prohibición no afecta al derecho de los herederos a acceder a los datos patrimoniales",
+        "Solo puede acceder si lo autoriza la autoridad de protección de datos"
+      ],
+      "explicacion": "El artículo 3.1 de la LOPDGDD permite al fallecido prohibir el acceso a sus datos, pero precisa que esta prohibición no afecta al derecho de los herederos a acceder a los datos de carácter patrimonial."
+    },
+    "ca": {
+      "enunciado": "Una persona difunta havia prohibit expressament que els seus familiars accedissin a les seves dades personals. El seu fill, que n'és hereu, sol·licita accedir a les dades de caràcter patrimonial del causant. Segons la LOPDGDD:",
+      "opciones": [
+        "No pot accedir a cap dada, perquè la prohibició expressa del difunt ho impedeix",
+        "Només hi pot accedir amb autorització del Ministeri Fiscal",
+        "Hi pot accedir, perquè la prohibició no afecta el dret dels hereus a accedir a les dades patrimonials",
+        "Només hi pot accedir si ho autoritza l'autoritat de protecció de dades"
+      ],
+      "explicacion": "L'article 3.1 de la LOPDGDD permet al difunt prohibir l'accés a les seves dades, però precisa que aquesta prohibició no afecta el dret dels hereus a accedir a les dades de caràcter patrimonial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a3"
+    },
+    "cita": "Dicha prohibición no afectará al derecho de los herederos a acceder a los datos de carácter patrimonial del causante",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-003",
+    "tema": 4,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 4.2 de la LOPDGDD, siempre que haya adoptado todas las medidas razonables para suprimirlos o rectificarlos sin dilación, no será imputable al responsable la inexactitud de los datos cuando estos:",
+      "opciones": [
+        "Hayan sido obtenidos de un registro público por el propio responsable",
+        "Hayan sido elaborados por el propio responsable a partir de sus perfiles",
+        "Hayan sido obtenidos de redes sociales de acceso abierto",
+        "Hayan sido tratados durante más de cinco años"
+      ],
+      "explicacion": "El artículo 4.2.d) de la LOPDGDD exime al responsable de la inexactitud de los datos obtenidos de un registro público, igual que en los obtenidos directamente del afectado, de un mediador o por portabilidad."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 4.2 de la LOPDGDD, sempre que hagi adoptat totes les mesures raonables perquè se suprimeixin o rectifiquin sense dilació, no és imputable al responsable la inexactitud de les dades quan aquestes:",
+      "opciones": [
+        "Hagin estat obtingudes d'un registre públic pel mateix responsable",
+        "Hagin estat elaborades pel mateix responsable a partir dels seus perfils",
+        "Hagin estat obtingudes de xarxes socials d'accés obert",
+        "Hagin estat tractades durant més de cinc anys"
+      ],
+      "explicacion": "L'article 4.2.d) de la LOPDGDD eximeix el responsable de la inexactitud de les dades obtingudes d'un registre públic, igual que en les obtingudes directament de l'afectat, d'un mediador o per portabilitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "4.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a4"
+    },
+    "cita": "Fuesen obtenidos de un registro público por el responsable",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-004",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una auxiliar administrativa que tramitaba expedientes con datos personales en un departamento obtiene un nuevo destino en otro organismo. Según la LOPDGDD, respecto a los datos que conoció:",
+      "opciones": [
+        "Queda liberada del deber de confidencialidad desde la toma de posesión del nuevo destino",
+        "Solo mantiene el deber de confidencialidad durante un año",
+        "Solo mantiene el deber si así lo establece su nueva relación de puestos de trabajo",
+        "Sigue sujeta al deber de confidencialidad, aunque haya finalizado su relación con el responsable"
+      ],
+      "explicacion": "El artículo 5.3 de la LOPDGDD mantiene el deber de confidencialidad aun cuando haya finalizado la relación del obligado con el responsable o encargado del tratamiento."
+    },
+    "ca": {
+      "enunciado": "Una auxiliar administrativa que tramitava expedients amb dades personals en un departament obté una nova destinació en un altre organisme. Segons la LOPDGDD, respecte de les dades que va conèixer:",
+      "opciones": [
+        "Queda alliberada del deure de confidencialitat des de la presa de possessió de la nova destinació",
+        "Només manté el deure de confidencialitat durant un any",
+        "Només manté el deure si així ho estableix la seva nova relació de llocs de treball",
+        "Continua subjecta al deure de confidencialitat, encara que hagi finalitzat la seva relació amb el responsable"
+      ],
+      "explicacion": "L'article 5.3 de la LOPDGDD manté el deure de confidencialitat encara que hagi finalitzat la relació de l'obligat amb el responsable o l'encarregat del tractament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "5.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a5"
+    },
+    "cita": "Las obligaciones establecidas en los apartados anteriores se mantendrán aun cuando hubiese finalizado la relación del obligado con el responsable o encargado del tratamiento",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-005",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la LOPDGDD, se entiende por consentimiento del afectado toda manifestación de voluntad:",
+      "opciones": [
+        "Expresa y por escrito, con firma manuscrita o electrónica",
+        "Libre e informada, que puede deducirse del silencio o la inacción del afectado",
+        "Libre, específica, informada e inequívoca, mediante una declaración o una clara acción afirmativa",
+        "Específica y revocable, prestada siempre ante la autoridad de protección de datos"
+      ],
+      "explicacion": "El artículo 6.1 de la LOPDGDD, por remisión al artículo 4.11 del RGPD, exige una manifestación libre, específica, informada e inequívoca, mediante declaración o clara acción afirmativa; el silencio no es consentimiento."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, s'entén per consentiment de l'afectat tota manifestació de voluntat:",
+      "opciones": [
+        "Expressa i per escrit, amb signatura manuscrita o electrònica",
+        "Lliure i informada, que es pot deduir del silenci o la inacció de l'afectat",
+        "Lliure, específica, informada i inequívoca, mitjançant una declaració o una clara acció afirmativa",
+        "Específica i revocable, prestada sempre davant l'autoritat de protecció de dades"
+      ],
+      "explicacion": "L'article 6.1 de la LOPDGDD, per remissió a l'article 4.11 de l'RGPD, exigeix una manifestació lliure, específica, informada i inequívoca, mitjançant una declaració o una clara acció afirmativa; el silenci no és consentiment."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "6.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a6"
+    },
+    "cita": "toda manifestación de voluntad libre, específica, informada e inequívoca por la que este acepta, ya sea mediante una declaración o una clara acción afirmativa",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-006",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Cuando se pretenda fundar el tratamiento en el consentimiento del afectado para una pluralidad de finalidades, la LOPDGDD exige que:",
+      "opciones": [
+        "Baste un consentimiento genérico prestado para la finalidad principal",
+        "Conste de manera específica e inequívoca que el consentimiento se otorga para todas ellas",
+        "El consentimiento se preste ante notario",
+        "Se obtenga una autorización previa de la autoridad de protección de datos"
+      ],
+      "explicacion": "El artículo 6.2 de la LOPDGDD exige que conste de manera específica e inequívoca que el consentimiento se otorga para todas las finalidades."
+    },
+    "ca": {
+      "enunciado": "Quan es vulgui fonamentar el tractament en el consentiment de l'afectat per a una pluralitat de finalitats, la LOPDGDD exigeix que:",
+      "opciones": [
+        "N'hi hagi prou amb un consentiment genèric prestat per a la finalitat principal",
+        "Consti de manera específica i inequívoca que el consentiment s'atorga per a totes",
+        "El consentiment es presti davant notari",
+        "S'obtingui una autorització prèvia de l'autoritat de protecció de dades"
+      ],
+      "explicacion": "L'article 6.2 de la LOPDGDD exigeix que consti de manera específica i inequívoca que el consentiment s'atorga per a totes les finalitats."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "6.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a6"
+    },
+    "cita": "será preciso que conste de manera específica e inequívoca que dicho consentimiento se otorga para todas ellas",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-007",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la LOPDGDD, la ejecución de un contrato:",
+      "opciones": [
+        "Puede supeditarse a cualquier consentimiento si el contrato lo prevé expresamente",
+        "Puede supeditarse al consentimiento para fines publicitarios si el contrato es gratuito",
+        "Solo puede supeditarse al consentimiento cuando el afectado sea mayor de catorce años",
+        "No puede supeditarse a que el afectado consienta el tratamiento de sus datos para finalidades no relacionadas con la relación contractual"
+      ],
+      "explicacion": "El artículo 6.3 de la LOPDGDD prohíbe condicionar la ejecución del contrato al consentimiento para finalidades ajenas al mantenimiento, desarrollo o control de la relación contractual."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, l'execució d'un contracte:",
+      "opciones": [
+        "Es pot supeditar a qualsevol consentiment si el contracte ho preveu expressament",
+        "Es pot supeditar al consentiment per a finalitats publicitàries si el contracte és gratuït",
+        "Només es pot supeditar al consentiment quan l'afectat sigui major de catorze anys",
+        "No es pot supeditar al fet que l'afectat consenti el tractament de les seves dades per a finalitats no relacionades amb la relació contractual"
+      ],
+      "explicacion": "L'article 6.3 de la LOPDGDD prohibeix condicionar l'execució del contracte al consentiment per a finalitats alienes al manteniment, el desenvolupament o el control de la relació contractual."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "6.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a6"
+    },
+    "cita": "No podrá supeditarse la ejecución del contrato a que el afectado consienta el tratamiento de los datos personales para finalidades que no guarden relación con el mantenimiento, desarrollo o control de la relación contractual",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-008",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un niño de trece años quiere inscribirse en una actividad cuya base de tratamiento de datos es el consentimiento. Según la LOPDGDD:",
+      "opciones": [
+        "El tratamiento solo es lícito si consta el consentimiento del titular de la patria potestad o tutela",
+        "Basta con su propio consentimiento, porque es mayor de doce años",
+        "Basta con su propio consentimiento si lo presta por escrito",
+        "No pueden tratarse sus datos en ningún caso hasta que cumpla dieciséis años"
+      ],
+      "explicacion": "El artículo 7 de la LOPDGDD solo admite el consentimiento propio del menor mayor de catorce años; para los menores de catorce, el tratamiento basado en el consentimiento exige el del titular de la patria potestad o tutela."
+    },
+    "ca": {
+      "enunciado": "Un nen de tretze anys es vol inscriure en una activitat la base de tractament de dades de la qual és el consentiment. Segons la LOPDGDD:",
+      "opciones": [
+        "El tractament només és lícit si consta el consentiment del titular de la pàtria potestat o tutela",
+        "N'hi ha prou amb el seu propi consentiment, perquè és major de dotze anys",
+        "N'hi ha prou amb el seu propi consentiment si el presta per escrit",
+        "No se'n poden tractar les dades en cap cas fins que faci setze anys"
+      ],
+      "explicacion": "L'article 7 de la LOPDGDD només admet el consentiment propi del menor major de catorze anys; per als menors de catorze, el tractament basat en el consentiment exigeix el del titular de la pàtria potestat o tutela."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "7.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    "cita": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-009",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la LOPDGDD, el tratamiento de datos fundado en una misión realizada en interés público o en el ejercicio de poderes públicos solo puede considerarse lícito cuando:",
+      "opciones": [
+        "Lo autorice una instrucción del secretario general del departamento",
+        "Conste el consentimiento expreso del afectado",
+        "Derive de una competencia atribuida por una norma con rango de ley",
+        "Lo prevea una orden del consejero competente"
+      ],
+      "explicacion": "El artículo 8.2 de la LOPDGDD exige que la misión de interés público o el ejercicio de poderes públicos deriven de una competencia atribuida por una norma con rango de ley."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, el tractament de dades fonamentat en una missió realitzada en interès públic o en l'exercici de poders públics només es pot considerar lícit quan:",
+      "opciones": [
+        "Ho autoritzi una instrucció del secretari general del departament",
+        "Consti el consentiment exprés de l'afectat",
+        "Derivi d'una competència atribuïda per una norma amb rang de llei",
+        "Ho prevegi una ordre del conseller competent"
+      ],
+      "explicacion": "L'article 8.2 de la LOPDGDD exigeix que la missió d'interès públic o l'exercici de poders públics derivin d'una competència atribuïda per una norma amb rang de llei."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "8.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a8"
+    },
+    "cita": "solo podrá considerarse fundado en el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable … cuando derive de una competencia atribuida por una norma con rango de ley",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-010",
+    "tema": 4,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 9.1 de la LOPDGDD, para evitar situaciones discriminatorias, el solo consentimiento del afectado no basta para levantar la prohibición de tratar datos cuya finalidad principal sea identificar su:",
+      "opciones": [
+        "Domicilio, teléfono, correo electrónico y número de identificación",
+        "Ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+        "Situación económica, patrimonio y deudas tributarias",
+        "Formación académica, experiencia profesional y nivel de idiomas"
+      ],
+      "explicacion": "El artículo 9.1 de la LOPDGDD establece que el solo consentimiento no basta cuando la finalidad principal del tratamiento es identificar la ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 9.1 de la LOPDGDD, per evitar situacions discriminatòries, el sol consentiment de l'afectat no és suficient per aixecar la prohibició de tractar dades la finalitat principal de les quals sigui identificar-ne:",
+      "opciones": [
+        "El domicili, el telèfon, el correu electrònic i el número d'identificació",
+        "La ideologia, l'afiliació sindical, la religió, l'orientació sexual, les creences o l'origen racial o ètnic",
+        "La situació econòmica, el patrimoni i els deutes tributaris",
+        "La formació acadèmica, l'experiència professional i el nivell d'idiomes"
+      ],
+      "explicacion": "L'article 9.1 de la LOPDGDD estableix que el sol consentiment no és suficient quan la finalitat principal del tractament és identificar la ideologia, l'afiliació sindical, la religió, l'orientació sexual, les creences o l'origen racial o ètnic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "9.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a9"
+    },
+    "cita": "el solo consentimiento del afectado no bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-011",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un departamento diseña un formulario de solicitud con una cláusula de información básica sobre protección de datos y un enlace a la información completa. Según la LOPDGDD, esa información básica debe contener, al menos:",
+      "opciones": [
+        "La identidad del responsable, la finalidad del tratamiento y la posibilidad de ejercer los derechos",
+        "La identidad del delegado de protección de datos, el plazo de conservación y las transferencias internacionales",
+        "La base jurídica, los destinatarios y la existencia de decisiones automatizadas",
+        "Solo la finalidad del tratamiento y la dirección electrónica para ampliar información"
+      ],
+      "explicacion": "El artículo 11.2 de la LOPDGDD fija el contenido mínimo de la información básica (por capas): identidad del responsable, finalidad y posibilidad de ejercer los derechos de los artículos 15 a 22 del RGPD."
+    },
+    "ca": {
+      "enunciado": "Un departament dissenya un formulari de sol·licitud amb una clàusula d'informació bàsica sobre protecció de dades i un enllaç a la informació completa. Segons la LOPDGDD, aquesta informació bàsica ha de contenir, com a mínim:",
+      "opciones": [
+        "La identitat del responsable, la finalitat del tractament i la possibilitat d'exercir els drets",
+        "La identitat del delegat de protecció de dades, el termini de conservació i les transferències internacionals",
+        "La base jurídica, els destinataris i l'existència de decisions automatitzades",
+        "Només la finalitat del tractament i l'adreça electrònica per ampliar informació"
+      ],
+      "explicacion": "L'article 11.2 de la LOPDGDD fixa el contingut mínim de la informació bàsica (per capes): identitat del responsable, finalitat i possibilitat d'exercir els drets dels articles 15 a 22 de l'RGPD."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "11.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a11"
+    },
+    "cita": "La identidad del responsable del tratamiento y de su representante, en su caso. … La finalidad del tratamiento. … La posibilidad de ejercer los derechos establecidos en los artículos 15 a 22 del Reglamento (UE) 2016/679",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-012",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Cuando los datos personales no se hayan obtenido del afectado, la información básica de la LOPDGDD debe incluir también:",
+      "opciones": [
+        "El nombre de todos los empleados que acceden a los datos",
+        "El coste del tratamiento y su financiación",
+        "La autorización previa de la autoridad de protección de datos",
+        "Las categorías de datos objeto de tratamiento y las fuentes de las que proceden"
+      ],
+      "explicacion": "El artículo 11.3 de la LOPDGDD añade, cuando los datos no proceden del afectado, las categorías de datos tratados y las fuentes de las que proceden."
+    },
+    "ca": {
+      "enunciado": "Quan les dades personals no s'hagin obtingut de l'afectat, la informació bàsica de la LOPDGDD ha d'incloure també:",
+      "opciones": [
+        "El nom de tots els empleats que accedeixen a les dades",
+        "El cost del tractament i el seu finançament",
+        "L'autorització prèvia de l'autoritat de protecció de dades",
+        "Les categories de dades objecte de tractament i les fonts de què procedeixen"
+      ],
+      "explicacion": "L'article 11.3 de la LOPDGDD afegeix, quan les dades no procedeixen de l'afectat, les categories de dades tractades i les fonts de què procedeixen."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "11.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a11"
+    },
+    "cita": "En estos supuestos, la información básica incluirá también: … Las categorías de datos objeto de tratamiento. … Las fuentes de las que procedieran los datos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-013",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la LOPDGDD, los derechos reconocidos en los artículos 15 a 22 del RGPD (acceso, rectificación, supresión, etc.) pueden ejercerse:",
+      "opciones": [
+        "Solo personalmente, sin posibilidad de representación",
+        "Solo por medio de abogado colegiado",
+        "Directamente o por medio de representante legal o voluntario",
+        "Solo a través de la autoridad de protección de datos"
+      ],
+      "explicacion": "El artículo 12.1 de la LOPDGDD permite ejercer estos derechos directamente o por medio de representante legal o voluntario."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, els drets reconeguts en els articles 15 a 22 de l'RGPD (accés, rectificació, supressió, etc.) es poden exercir:",
+      "opciones": [
+        "Només personalment, sense possibilitat de representació",
+        "Només per mitjà d'un advocat col·legiat",
+        "Directament o per mitjà d'un representant legal o voluntari",
+        "Només a través de l'autoritat de protecció de dades"
+      ],
+      "explicacion": "L'article 12.1 de la LOPDGDD permet exercir aquests drets directament o per mitjà d'un representant legal o voluntari."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "12.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a12"
+    },
+    "cita": "podrán ejercerse directamente o por medio de representante legal o voluntario",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-014",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un departamento ha habilitado un formulario electrónico para ejercer los derechos de protección de datos, pero un ciudadano ejerce el derecho de acceso mediante un escrito presentado en una oficina de registro. Según la LOPDGDD:",
+      "opciones": [
+        "Debe inadmitirse y requerirle que utilice el formulario electrónico",
+        "No se le puede denegar el ejercicio del derecho por el solo motivo de haber optado por otro medio",
+        "Solo se tramita si abona el coste del medio elegido",
+        "Se entiende desistido si no lo presenta electrónicamente en diez días"
+      ],
+      "explicacion": "El artículo 12.2 de la LOPDGDD obliga a informar de los medios para ejercer los derechos, pero prohíbe denegar el ejercicio por el solo motivo de que el afectado opte por otro medio."
+    },
+    "ca": {
+      "enunciado": "Un departament ha habilitat un formulari electrònic per exercir els drets de protecció de dades, però un ciutadà exerceix el dret d'accés mitjançant un escrit presentat en una oficina de registre. Segons la LOPDGDD:",
+      "opciones": [
+        "S'ha d'inadmetre i requerir-li que utilitzi el formulari electrònic",
+        "No se li pot denegar l'exercici del dret pel sol motiu d'haver optat per un altre mitjà",
+        "Només es tramita si abona el cost del mitjà triat",
+        "Se l'entén desistit si no el presenta electrònicament en deu dies"
+      ],
+      "explicacion": "L'article 12.2 de la LOPDGDD obliga a informar dels mitjans per exercir els drets, però prohibeix denegar-ne l'exercici pel sol motiu que l'afectat opti per un altre mitjà."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "12.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a12"
+    },
+    "cita": "El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-015",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la LOPDGDD, ¿sobre quién recae la prueba del cumplimiento del deber de responder a una solicitud de ejercicio de derechos?",
+      "opciones": [
+        "Sobre el responsable del tratamiento",
+        "Sobre el afectado que formuló la solicitud",
+        "Sobre el delegado de protección de datos",
+        "Sobre la autoridad de protección de datos competente"
+      ],
+      "explicacion": "El artículo 12.4 de la LOPDGDD hace recaer sobre el responsable la prueba de haber respondido a la solicitud de ejercicio de derechos."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, sobre qui recau la prova del compliment del deure de respondre a una sol·licitud d'exercici de drets?",
+      "opciones": [
+        "Sobre el responsable del tractament",
+        "Sobre l'afectat que va formular la sol·licitud",
+        "Sobre el delegat de protecció de dades",
+        "Sobre l'autoritat de protecció de dades competent"
+      ],
+      "explicacion": "L'article 12.4 de la LOPDGDD fa recaure sobre el responsable la prova d'haver respost a la sol·licitud d'exercici de drets."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "12.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a12"
+    },
+    "cita": "La prueba del cumplimiento del deber de responder a la solicitud de ejercicio de sus derechos formulado por el afectado recaerá sobre el responsable",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-016",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un ciudadano ejerce el derecho de acceso a sus datos ante un departamento en enero y vuelve a ejercerlo en abril del mismo año, sin alegar ninguna causa legítima. Según la LOPDGDD:",
+      "opciones": [
+        "Debe atenderse siempre, porque el derecho de acceso es ilimitado y gratuito",
+        "Solo puede considerarse repetitiva si se ejerce más de tres veces en un año",
+        "Puede considerarse repetitiva solo si han transcurrido menos de treinta días",
+        "La segunda solicitud puede considerarse repetitiva, porque se ha ejercido más de una vez en seis meses"
+      ],
+      "explicacion": "El artículo 13.3 de la LOPDGDD permite considerar repetitivo el ejercicio del derecho de acceso en más de una ocasión durante seis meses, salvo causa legítima."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà exerceix el dret d'accés a les seves dades davant un departament el gener i el torna a exercir l'abril del mateix any, sense al·legar cap causa legítima. Segons la LOPDGDD:",
+      "opciones": [
+        "S'ha d'atendre sempre, perquè el dret d'accés és il·limitat i gratuït",
+        "Només es pot considerar repetitiva si s'exerceix més de tres vegades en un any",
+        "Es pot considerar repetitiva només si han transcorregut menys de trenta dies",
+        "La segona sol·licitud es pot considerar repetitiva, perquè s'ha exercit més d'una vegada en sis mesos"
+      ],
+      "explicacion": "L'article 13.3 de la LOPDGDD permet considerar repetitiu l'exercici del dret d'accés en més d'una ocasió durant sis mesos, llevat que hi hagi una causa legítima."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "13.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a13"
+    },
+    "cita": "se podrá considerar repetitivo el ejercicio del derecho de acceso en más de una ocasión durante el plazo de seis meses, a menos que exista causa legítima para ello",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-017",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la LOPDGDD, el derecho de acceso se entiende otorgado si el responsable facilita al afectado:",
+      "opciones": [
+        "Una copia en papel de una parte de sus datos, a su elección",
+        "Una cita presencial en la oficina del delegado de protección de datos",
+        "Un sistema de acceso remoto, directo y seguro que garantice de modo permanente el acceso a la totalidad de sus datos",
+        "Un resumen anual de los tratamientos realizados por la organización"
+      ],
+      "explicacion": "El artículo 13.2 de la LOPDGDD considera atendido el derecho de acceso si se facilita un sistema de acceso remoto, directo y seguro que garantice de modo permanente el acceso a la totalidad de los datos."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, el dret d'accés s'entén atorgat si el responsable facilita a l'afectat:",
+      "opciones": [
+        "Una còpia en paper d'una part de les seves dades, a la seva elecció",
+        "Una cita presencial a l'oficina del delegat de protecció de dades",
+        "Un sistema d'accés remot, directe i segur que garanteixi de manera permanent l'accés a la totalitat de les seves dades",
+        "Un resum anual dels tractaments fets per l'organització"
+      ],
+      "explicacion": "L'article 13.2 de la LOPDGDD considera atès el dret d'accés si es facilita un sistema d'accés remot, directe i segur que garanteixi de manera permanent l'accés a la totalitat de les dades."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "13.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a13"
+    },
+    "cita": "El derecho de acceso se entenderá otorgado si el responsable del tratamiento facilitara al afectado un sistema de acceso remoto, directo y seguro a los datos personales que garantice, de modo permanente, el acceso a su totalidad",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-018",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Al ejercer el derecho de rectificación, según la LOPDGDD, el afectado debe indicar en su solicitud:",
+      "opciones": [
+        "Solo su identidad, ya que el responsable debe revisar todos sus datos",
+        "A qué datos se refiere y la corrección que haya de realizarse",
+        "El motivo por el que quiere que se supriman sus datos",
+        "La finalidad para la que desea que se traten sus datos en el futuro"
+      ],
+      "explicacion": "El artículo 14 de la LOPDGDD exige indicar los datos afectados y la corrección que debe hacerse, acompañando, si es preciso, documentación justificativa."
+    },
+    "ca": {
+      "enunciado": "En exercir el dret de rectificació, segons la LOPDGDD, l'afectat ha d'indicar en la seva sol·licitud:",
+      "opciones": [
+        "Només la seva identitat, ja que el responsable ha de revisar totes les seves dades",
+        "A quines dades es refereix i la correcció que s'hi ha de fer",
+        "El motiu pel qual vol que se suprimeixin les seves dades",
+        "La finalitat per a la qual vol que es tractin les seves dades en el futur"
+      ],
+      "explicacion": "L'article 14 de la LOPDGDD exigeix indicar les dades afectades i la correcció que s'hi ha de fer, acompanyant, si cal, documentació justificativa."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a14"
+    },
+    "cita": "el afectado deberá indicar en su solicitud a qué datos se refiere y la corrección que haya de realizarse",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-019",
+    "tema": 4,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Cuando la supresión de los datos deriva del ejercicio del derecho de oposición a la mercadotecnia directa, la LOPDGDD permite al responsable:",
+      "opciones": [
+        "Conservar los datos identificativos necesarios para impedir tratamientos futuros con esa finalidad",
+        "Conservar todos los datos durante cinco años por si el afectado cambia de opinión",
+        "Ceder los datos a otros responsables que no realicen mercadotecnia",
+        "Mantener los datos si el afectado no reitera su oposición en un mes"
+      ],
+      "explicacion": "El artículo 15.2 de la LOPDGDD permite conservar los datos identificativos necesarios para impedir tratamientos futuros de mercadotecnia directa."
+    },
+    "ca": {
+      "enunciado": "Quan la supressió de les dades deriva de l'exercici del dret d'oposició a la mercadotècnia directa, la LOPDGDD permet al responsable:",
+      "opciones": [
+        "Conservar les dades identificatives necessàries per impedir tractaments futurs amb aquesta finalitat",
+        "Conservar totes les dades durant cinc anys per si l'afectat canvia d'opinió",
+        "Cedir les dades a altres responsables que no facin mercadotècnia",
+        "Mantenir les dades si l'afectat no reitera la seva oposició en un mes"
+      ],
+      "explicacion": "L'article 15.2 de la LOPDGDD permet conservar les dades identificatives necessàries per impedir tractaments futurs de mercadotècnia directa."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a15"
+    },
+    "cita": "el responsable podrá conservar los datos identificativos del afectado necesarios con el fin de impedir tratamientos futuros para fines de mercadotecnia directa",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-020",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la LOPDGDD, ¿en qué plazo deben comunicar los responsables y encargados del tratamiento a la autoridad de protección de datos la designación, el nombramiento o el cese de su delegado de protección de datos?",
+      "opciones": [
+        "En el plazo de un mes",
+        "En el plazo de quince días hábiles",
+        "En el plazo de diez días",
+        "En el plazo de tres meses"
+      ],
+      "explicacion": "El artículo 34.3 de la LOPDGDD fija un plazo de diez días para comunicar las designaciones, nombramientos y ceses de los delegados, tanto obligatorios como voluntarios."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, en quin termini els responsables i els encarregats del tractament han de comunicar a l'autoritat de protecció de dades la designació, el nomenament o el cessament del seu delegat de protecció de dades?",
+      "opciones": [
+        "En el termini d'un mes",
+        "En el termini de quinze dies hàbils",
+        "En el termini de deu dies",
+        "En el termini de tres mesos"
+      ],
+      "explicacion": "L'article 34.3 de la LOPDGDD fixa un termini de deu dies per comunicar les designacions, els nomenaments i els cessaments dels delegats, tant obligatoris com voluntaris."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "34.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a34"
+    },
+    "cita": "comunicarán en el plazo de diez días a la Agencia Española de Protección de Datos o, en su caso, a las autoridades autonómicas de protección de datos, las designaciones, nombramientos y ceses de los delegados de protección de datos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-021",
+    "tema": 4,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes entidades debe designar en todo caso un delegado de protección de datos según el artículo 34.1 de la LOPDGDD?",
+      "opciones": [
+        "Las comunidades de propietarios",
+        "Los profesionales de la salud que ejercen su actividad a título individual",
+        "Las asociaciones vecinales sin actividad económica",
+        "Los centros docentes de cualquier nivel educativo y las universidades públicas y privadas"
+      ],
+      "explicacion": "El artículo 34.1.b) de la LOPDGDD obliga a designar delegado a los centros docentes y a las universidades públicas y privadas; en cambio, exceptúa expresamente a los profesionales de la salud que ejercen a título individual."
+    },
+    "ca": {
+      "enunciado": "Quina de les entitats següents ha de designar en tot cas un delegat de protecció de dades segons l'article 34.1 de la LOPDGDD?",
+      "opciones": [
+        "Les comunitats de propietaris",
+        "Els professionals de la salut que exerceixen la seva activitat a títol individual",
+        "Les associacions de veïns sense activitat econòmica",
+        "Els centres docents de qualsevol nivell educatiu i les universitats públiques i privades"
+      ],
+      "explicacion": "L'article 34.1.b) de la LOPDGDD obliga a designar un delegat els centres docents i les universitats públiques i privades; en canvi, n'exceptua expressament els professionals de la salut que exerceixen a títol individual."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "34.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a34"
+    },
+    "cita": "Los centros docentes que ofrezcan enseñanzas en cualquiera de los niveles establecidos en la legislación reguladora del derecho a la educación, así como las Universidades públicas y privadas",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-022",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la LOPDGDD, el delegado de protección de datos que es persona física integrada en la organización del responsable:",
+      "opciones": [
+        "Puede ser removido libremente por el responsable en cualquier momento",
+        "No puede ser removido ni sancionado por desempeñar sus funciones, salvo dolo o negligencia grave",
+        "Solo puede ser sancionado por la autoridad de protección de datos",
+        "No puede ser removido en ningún caso durante un mandato de cinco años"
+      ],
+      "explicacion": "El artículo 36.2 de la LOPDGDD garantiza la independencia del delegado: no puede ser removido ni sancionado por desempeñar sus funciones salvo que incurra en dolo o negligencia grave."
+    },
+    "ca": {
+      "enunciado": "Segons la LOPDGDD, el delegat de protecció de dades que és persona física integrada en l'organització del responsable:",
+      "opciones": [
+        "Pot ser remogut lliurement pel responsable en qualsevol moment",
+        "No pot ser remogut ni sancionat per exercir les seves funcions, llevat de dol o negligència greu",
+        "Només pot ser sancionat per l'autoritat de protecció de dades",
+        "No pot ser remogut en cap cas durant un mandat de cinc anys"
+      ],
+      "explicacion": "L'article 36.2 de la LOPDGDD garanteix la independència del delegat: no pot ser remogut ni sancionat per exercir les seves funcions llevat que incorri en dol o negligència greu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "36.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a36"
+    },
+    "cita": "el delegado de protección de datos no podrá ser removido ni sancionado por el responsable o el encargado por desempeñar sus funciones salvo que incurriera en dolo o negligencia grave en su ejercicio",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-023",
+    "tema": 4,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Antes de reclamar ante la autoridad de protección de datos, una persona se dirige al delegado de protección de datos del departamento que trató sus datos. Según la LOPDGDD, ¿en qué plazo máximo debe comunicarle el delegado la decisión adoptada?",
+      "opciones": [
+        "Dos meses desde la recepción de la reclamación",
+        "Un mes desde la presentación de la reclamación",
+        "Diez días hábiles desde la recepción de la reclamación",
+        "Tres meses desde la presentación de la reclamación"
+      ],
+      "explicacion": "El artículo 37.1 de la LOPDGDD fija un plazo máximo de dos meses desde la recepción de la reclamación. El plazo de un mes se aplica cuando es la autoridad quien remite la reclamación al delegado (art. 37.2)."
+    },
+    "ca": {
+      "enunciado": "Abans de reclamar davant l'autoritat de protecció de dades, una persona s'adreça al delegat de protecció de dades del departament que en va tractar les dades. Segons la LOPDGDD, en quin termini màxim li ha de comunicar el delegat la decisió adoptada?",
+      "opciones": [
+        "Dos mesos des de la recepció de la reclamació",
+        "Un mes des de la presentació de la reclamació",
+        "Deu dies hàbils des de la recepció de la reclamació",
+        "Tres mesos des de la presentació de la reclamació"
+      ],
+      "explicacion": "L'article 37.1 de la LOPDGDD fixa un termini màxim de dos mesos des de la recepció de la reclamació. El termini d'un mes s'aplica quan és l'autoritat qui tramet la reclamació al delegat (art. 37.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "37.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a37"
+    },
+    "cita": "el delegado de protección de datos comunicará al afectado la decisión que se hubiera adoptado en el plazo máximo de dos meses a contar desde la recepción de la reclamación",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t04-024",
+    "tema": 4,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En el ejercicio de sus funciones, el delegado de protección de datos solicita acceder a unos datos personales del departamento. Según la LOPDGDD, el responsable:",
+      "opciones": [
+        "Puede denegarle el acceso si los datos son de categorías especiales",
+        "Solo debe facilitarle el acceso con autorización judicial",
+        "Puede oponerle el deber de confidencialidad del artículo 5 de la ley",
+        "No puede oponerle la existencia de ningún deber de confidencialidad o secreto"
+      ],
+      "explicacion": "El artículo 36.3 de la LOPDGDD garantiza al delegado el acceso a los datos y procesos de tratamiento, sin que el responsable o el encargado puedan oponerle ningún deber de confidencialidad o secreto, incluido el del artículo 5."
+    },
+    "ca": {
+      "enunciado": "En l'exercici de les seves funcions, el delegat de protecció de dades sol·licita accedir a unes dades personals del departament. Segons la LOPDGDD, el responsable:",
+      "opciones": [
+        "Li pot denegar l'accés si les dades són de categories especials",
+        "Només li ha de facilitar l'accés amb autorització judicial",
+        "Li pot oposar el deure de confidencialitat de l'article 5 de la llei",
+        "No li pot oposar l'existència de cap deure de confidencialitat o secret"
+      ],
+      "explicacion": "L'article 36.3 de la LOPDGDD garanteix al delegat l'accés a les dades i als processos de tractament, sense que el responsable o l'encarregat li puguin oposar cap deure de confidencialitat o secret, inclòs el de l'article 5."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "36.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a36"
+    },
+    "cita": "no pudiendo oponer a este acceso el responsable o el encargado del tratamiento la existencia de cualquier deber de confidencialidad o secreto",
+    "origen": "ia"
+  }
+]

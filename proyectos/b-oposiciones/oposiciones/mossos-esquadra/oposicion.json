@@ -1,0 +1,360 @@
+{
+  "slug": "mossos-esquadra",
+  "pais": "es",
+  "activa": true,
+  "nombre": {
+    "es": "Mosso/a d'Esquadra, escala básica (turno libre) de la Policía de la Generalitat",
+    "ca": "Mosso/a d'Esquadra, escala bàsica (torn lliure) de la Policia de la Generalitat"
+  },
+  "nombreCorto": { "es": "Mossos d'Esquadra", "ca": "Mossos d'Esquadra" },
+  "cuerpo": {
+    "es": "Cuerpo de Mossos d'Esquadra, escala básica, categoría de mosso/a (subgrupo C1)",
+    "ca": "Cos de Mossos d'Esquadra, escala bàsica, categoria de mosso/a (subgrup C1)"
+  },
+  "administracion": "Generalitat de Catalunya · Departament d'Interior i Seguretat Pública",
+  "convocatoria": {
+    "referencia": "Resolució ISP/1763/2026, de 3 de juny (convocatòria 46/26)",
+    "diario": "DOGC",
+    "numero": "9681",
+    "fecha": "2026-06-08",
+    "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-26/",
+    "pdfUrl": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf",
+    "plazas": 1587,
+    "estado": "en curso",
+    "notas": "Concurs oposició lliure, 1.587 places (634 reservades a dones, dada de premsa/acadèmies). Inscripció del 9 al 22 de juny de 2026; taxa 46,45 €. 1a prova (coneixements, aptitudinal i idiomes) feta el 17-10-2026 a la UAB (Bellaterra); el 22-10-2026 la web oficial va publicar els models 01 i 02 de la subprova de coneixements i les plantilles de correcció. Calendari previst: prova física el 23-11-2026. Llista definitiva d'admesos: Resolució ISP/3282/2026 (DOGC 9755, 21-09-2026; dada de fonts secundàries). El text del DOGC no s'ha pogut obrir (dogc.gencat.cat bloquejat): referència, núm. DOGC i places surten de resultats de cerca de mossos.gencat.cat i tramits.gencat.cat. 'pdfUrl' apunta a la Guia d'estudi oficial (edició juny 2026, fe d'errades setembre 2026), no a les bases. TEMARI: les bases remeten al temari oficial (segons acadèmies, aprovat per la Resolució INT/1219/2017, DOGC 7382; NO confirmat amb fonts primàries). Estructura: àmbit A (7 temes), B (8) i C (5), que desenvolupa la guia oficial, més un àmbit D d'actualitat que la guia no desenvolupa (tema 21 aquí, amb pes reduït). Els títols dels temes s'han reconstruït de fragments de la guia oficial i de webs de preparació; cal contrastar-ne la redacció literal amb l'índex de la guia. No confirmat: si hi ha preguntes de reserva; una font diu que el qüestionari té 27 preguntes de temari + 3 d'actualitat; l'ordre exacte de les proves 2a-5a; les ponderacions de la prova física (33/33/33 o 30/30/40 segons la font).",
+    "verificado": "fuente primaria parcial (web oficial mossos.gencat.cat y tramits.gencat.cat citadas en resultados de búsqueda: referencia, DOGC 9681, fecha, 1.587 plazas, fechas de la 1a prova, formato 30 preguntas/eliminatoria/mínimo 4 en FAQ y documento '1a prova' 46/24); texto del DOGC y annex del temari no consultados directamente; temario y penalización contrastados con fuente secundaria (academias): comprobar"
+  },
+  "examen": {
+    "preguntas": 30,
+    "reserva": 0,
+    "opciones": 4,
+    "minutos": 35,
+    "penalizacion": 0.25,
+    "notaMaxima": 10,
+    "notaCorte": 4,
+    "descripcion": {
+      "es": "Primera prueba, subprueba de conocimientos (obligatoria y eliminatoria): cuestionario tipo test de 30 preguntas sobre el temario, con 4 alternativas y una sola correcta, en 35 minutos. Las respuestas en blanco no restan y cada error descuenta 1/4 del valor de un acierto. Se califica de 0 a 10 y hay que obtener al menos 4 puntos. Se hace el mismo día que la subprueba aptitudinal y la de idiomas.",
+      "ca": "Primera prova, subprova de coneixements (obligatòria i eliminatòria): qüestionari tipus test de 30 preguntes sobre el temari, amb 4 alternatives i una sola de correcta, en 35 minuts. Les respostes en blanc no descompten i cada resposta errònia descompta 1/4 del valor d'una de correcta. Es qualifica de 0 a 10 i cal obtenir com a mínim 4 punts. Es fa el mateix dia que la subprova aptitudinal i la d'idiomes."
+    },
+    "otrasPruebas": {
+      "es": [
+        "1a prueba · subprueba aptitudinal (obligatoria y eliminatoria): 80 preguntas de 4 alternativas sobre razonamiento abstracto y espacial y aptitud verbal, numérica y perceptiva, en 35 minutos; los errores no restan; mínimo 5 sobre 10",
+        "1a prueba · subprueba de conocimientos de idiomas (voluntaria, no eliminatoria, puntúa como mérito): comprensión oral de hasta 2 lenguas extranjeras",
+        "Prueba física (obligatoria y eliminatoria): circuito de agilidad, press de banca y course navette (prueba de ida y vuelta), con dos intentos",
+        "Adecuación psicoprofesional (apto/no apto): test de competencias y entrevista personal",
+        "Reconocimiento médico (apto/no apto) según el cuadro de exclusiones de las bases",
+        "Conocimientos de lengua catalana nivel C1 (apto/no apto); exento quien lo acredite",
+        "Fase de concurso: méritos (p. ej. ACTIC, idiomas); después, curso de formación en el Institut de Seguretat Pública de Catalunya (ISPC) y prácticas"
+      ],
+      "ca": [
+        "1a prova · subprova aptitudinal (obligatòria i eliminatòria): 80 preguntes de 4 alternatives sobre raonament abstracte i espacial i aptitud verbal, numèrica i perceptiva, en 35 minuts; les errades no descompten; mínim 5 sobre 10",
+        "1a prova · subprova de coneixements d'idiomes (voluntària, no eliminatòria, puntua com a mèrit): comprensió oral de fins a 2 llengües estrangeres",
+        "Prova física (obligatòria i eliminatòria): circuit d'agilitat, pressió sobre banc i cursa de llançadora (course navette), amb dos intents",
+        "Adequació psicoprofessional (apte/no apte): test de competències i entrevista personal",
+        "Reconeixement mèdic (apte/no apte) segons el quadre d'exclusions de les bases",
+        "Coneixements de llengua catalana nivell C1 (apte/no apte); exempt qui l'acrediti",
+        "Fase de concurs: mèrits (p. ex. ACTIC, idiomes); després, curs de formació a l'Institut de Seguretat Pública de Catalunya (ISPC) i pràctiques"
+      ]
+    }
+  },
+  "temas": [
+    {
+      "n": 1,
+      "titulo": { "es": "Historia de Cataluña (parte I)", "ca": "Història de Catalunya (part I)" },
+      "slug": "historia-catalunya-1",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.1", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "web", "norma": "Enciclopèdia.cat", "url": "https://www.enciclopedia.cat/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 2,
+      "titulo": { "es": "Historia de Cataluña (parte II)", "ca": "Història de Catalunya (part II)" },
+      "slug": "historia-catalunya-2",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.2", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "web", "norma": "Enciclopèdia.cat", "url": "https://www.enciclopedia.cat/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 3,
+      "titulo": { "es": "Historia de la policía en Cataluña", "ca": "Història de la policia a Catalunya" },
+      "slug": "historia-policia-catalunya",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.3", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "boe", "id": "BOE-A-1994-18777", "norma": "Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-Mossos d'Esquadra", "articulos": "1-3, disposiciones adicionales y transitorias" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 4,
+      "titulo": { "es": "El ámbito sociolingüístico", "ca": "L'àmbit sociolingüístic" },
+      "slug": "ambit-sociolinguistic",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.4", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "6, 11, 32-36, 50, 143" },
+        { "tipo": "boe", "id": "BOE-A-1998-2989", "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística", "articulos": "1-11" },
+        { "tipo": "boe", "id": "BOE-A-2010-17710", "norma": "Ley 35/2010, de 1 de octubre, del occitano, aranés en Arán", "articulos": "1-8" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 5,
+      "titulo": { "es": "El marco geográfico de Cataluña", "ca": "El marc geogràfic de Catalunya" },
+      "slug": "marc-geografic-catalunya",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.5 (i fe d'errades de setembre de 2026)", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "web", "norma": "Idescat · Institut d'Estadística de Catalunya", "url": "https://www.idescat.cat/" },
+        { "tipo": "web", "norma": "Institut Cartogràfic i Geològic de Catalunya", "url": "https://www.icgc.cat/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 6,
+      "titulo": { "es": "El entorno social", "ca": "L'entorn social" },
+      "slug": "entorn-social",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.6", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "boe", "id": "BOE-A-2010-9107", "norma": "Ley 10/2010, de 7 de mayo, de acogida de las personas inmigradas y de las regresadas a Cataluña", "articulos": "1-12" },
+        { "tipo": "boe", "id": "BOE-A-2000-544", "norma": "Ley Orgánica 4/2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España y su integración social", "articulos": "1-2 ter" },
+        { "tipo": "boe", "id": "BOE-A-2007-19189", "norma": "Ley 12/2007, de 11 de octubre, de Servicios Sociales", "articulos": "1-17" },
+        { "tipo": "boe", "id": "BOE-A-2007-6115", "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres", "articulos": "1-15" },
+        { "tipo": "boe", "id": "BOE-A-2015-9676", "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres", "articulos": "1-5" },
+        { "tipo": "boe", "id": "BOE-A-2008-9294", "norma": "Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista", "articulos": "1-5" },
+        { "tipo": "boe", "id": "BOE-A-2004-21760", "norma": "Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género", "articulos": "1-2" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 7,
+      "titulo": { "es": "Las tecnologías de la información en el siglo XXI", "ca": "Les tecnologies de la informació en el segle XXI" },
+      "slug": "tecnologies-informacio",
+      "bloque": { "es": "Ámbito A: Conocimientos del entorno", "ca": "Àmbit A: Coneixements de l'entorn" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "boe", "id": "BOE-A-2018-16673", "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales", "articulos": "1-4, 79-97" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 8,
+      "titulo": { "es": "El Estatuto de autonomía de Cataluña", "ca": "L'Estatut d'autonomia de Catalunya" },
+      "slug": "estatut-autonomia",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "1-54, 110-115, 222-223" },
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema B.1", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 9,
+      "titulo": { "es": "Las instituciones políticas de Cataluña", "ca": "Les institucions polítiques de Catalunya" },
+      "slug": "institucions-catalunya",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "55-82" },
+        { "tipo": "boe", "id": "BOE-A-2008-19526", "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno", "articulos": "1-35" },
+        { "tipo": "boe", "id": "BOE-A-2009-5085", "norma": "Ley 2/2009, de 12 de febrero, del Consejo de Garantías Estatutarias", "articulos": "1-5, 16" },
+        { "tipo": "boe", "id": "BOE-A-2010-735", "norma": "Ley 24/2009, de 23 de diciembre, del Síndic de Greuges", "articulos": "1-11" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 10,
+      "titulo": { "es": "El ordenamiento jurídico del Estado", "ca": "L'ordenament jurídic de l'Estat" },
+      "slug": "ordenament-juridic",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "1-9, 81-96, 166-169" },
+        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "127-133" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 11,
+      "titulo": { "es": "Los derechos humanos y los derechos constitucionales", "ca": "Els drets humans i els drets constitucionals" },
+      "slug": "drets-humans-constitucionals",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "10-55" },
+        { "tipo": "boe", "id": "BOE-A-1999-10148", "norma": "Convenio para la protección de los derechos humanos y de las libertades fundamentales (Roma, 1950), texto refundido", "articulos": "1-18" },
+        { "tipo": "web", "norma": "Declaración Universal de los Derechos Humanos (ONU)", "url": "https://www.un.org/es/about-us/universal-declaration-of-human-rights" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 12,
+      "titulo": { "es": "Las instituciones políticas del Estado", "ca": "Les institucions polítiques de l'Estat" },
+      "slug": "institucions-estat",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "56-116" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 13,
+      "titulo": { "es": "Los órganos jurisdiccionales. Poder Judicial y Tribunal Constitucional", "ca": "Els òrgans jurisdiccionals. Poder judicial i Tribunal Constitucional" },
+      "slug": "poder-judicial-tc",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "117-127, 159-165" },
+        { "tipo": "boe", "id": "BOE-A-1985-12666", "norma": "Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial", "articulos": "1-21, 26-30" },
+        { "tipo": "boe", "id": "BOE-A-1979-23709", "norma": "Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional", "articulos": "1-10" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "95-109" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 14,
+      "titulo": { "es": "La organización territorial del Estado", "ca": "L'organització territorial de l'Estat" },
+      "slug": "organitzacio-territorial",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "137-158" },
+        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "1-4, 11-36, 41-42" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "83-94, 160" },
+        { "tipo": "boe", "id": "BOE-A-2010-14561", "norma": "Ley 30/2010, de 3 de agosto, de veguerías", "articulos": "1-9" },
+        { "tipo": "boe", "id": "BOE-A-2015-2294", "norma": "Ley 1/2015, de 5 de febrero, del régimen especial de Arán", "articulos": "1-6" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 15,
+      "titulo": { "es": "La Unión Europea", "ca": "La Unió Europea" },
+      "slug": "unio-europea",
+      "bloque": { "es": "Ámbito B: Institucional", "ca": "Àmbit B: Institucional" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Tractat de la Unió Europea (versió consolidada) · EUR-Lex", "url": "https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:12016M/TXT" },
+        { "tipo": "web", "norma": "Tractat de funcionament de la Unió Europea (versió consolidada) · EUR-Lex", "url": "https://eur-lex.europa.eu/legal-content/CA/TXT/?uri=CELEX:12016E/TXT" },
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "93-96" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "184-192" },
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema B.8 (fe d'errades: Parlament Europeu de 720 escons)", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 16,
+      "titulo": { "es": "Las competencias de la Generalitat en materia de seguridad", "ca": "Les competències de la Generalitat en matèria de seguretat" },
+      "slug": "competencies-seguretat",
+      "bloque": { "es": "Ámbito C: Seguridad y policía", "ca": "Àmbit C: Seguretat i policia" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "132, 163, 164" },
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "104, 148.1.22, 149.1.29" },
+        { "tipo": "boe", "id": "BOE-A-1986-6859", "norma": "Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad", "articulos": "1, 37-44, disposición final segunda" },
+        { "tipo": "boe", "id": "BOE-A-2003-9620", "norma": "Ley 4/2003, de 7 de abril, de Ordenación del Sistema de Seguridad Pública de Cataluña", "articulos": "1-6" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 17,
+      "titulo": { "es": "El Departamento de Interior", "ca": "El Departament d'Interior" },
+      "slug": "departament-interior",
+      "bloque": { "es": "Ámbito C: Seguridad y policía", "ca": "Àmbit C: Seguretat i policia" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema C.2 (estructura del Departament d'Interior i Seguretat Pública)", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" },
+        { "tipo": "boe", "id": "BOE-A-1994-18777", "norma": "Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-Mossos d'Esquadra", "articulos": "1-10, 13-22" },
+        { "tipo": "boe", "id": "BOE-A-2007-15546", "norma": "Ley 10/2007, de 30 de julio, del Instituto de Seguridad Pública de Cataluña", "articulos": "1-8" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 18,
+      "titulo": { "es": "La coordinación policial", "ca": "La coordinació policial" },
+      "slug": "coordinacio-policial",
+      "bloque": { "es": "Ámbito C: Seguridad y policía", "ca": "Àmbit C: Seguretat i policia" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2003-9620", "norma": "Ley 4/2003, de 7 de abril, de Ordenación del Sistema de Seguridad Pública de Cataluña", "articulos": "7-30" },
+        { "tipo": "boe", "id": "BOE-A-1991-20343", "norma": "Ley 16/1991, de 10 de julio, de las Policías Locales", "articulos": "1-13, 34-41" },
+        { "tipo": "boe", "id": "BOE-A-1986-6859", "norma": "Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad", "articulos": "3, 45-54" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "164" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 19,
+      "titulo": { "es": "El marco legal de la seguridad", "ca": "El marc legal de la seguretat" },
+      "slug": "marc-legal-seguretat",
+      "bloque": { "es": "Ámbito C: Seguridad y policía", "ca": "Àmbit C: Seguretat i policia" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1986-6859", "norma": "Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad", "articulos": "1-12" },
+        { "tipo": "boe", "id": "BOE-A-1994-18777", "norma": "Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-Mossos d'Esquadra", "articulos": "11-14, 23-30" },
+        { "tipo": "boe", "id": "BOE-A-1991-20343", "norma": "Ley 16/1991, de 10 de julio, de las Policías Locales", "articulos": "11-13" },
+        { "tipo": "boe", "id": "BOE-A-2015-3442", "norma": "Ley Orgánica 4/2015, de 30 de marzo, de protección de la seguridad ciudadana", "articulos": "1-20" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 20,
+      "titulo": { "es": "El código deontológico policial", "ca": "El codi deontològic policial" },
+      "slug": "codi-deontologic",
+      "bloque": { "es": "Ámbito C: Seguridad y policía", "ca": "Àmbit C: Seguretat i policia" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1986-6859", "norma": "Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad", "articulos": "5" },
+        { "tipo": "boe", "id": "BOE-A-1994-18777", "norma": "Ley 10/1994, de 11 de julio, de la Policía de la Generalidad-Mossos d'Esquadra", "articulos": "11" },
+        { "tipo": "web", "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema C.5 (Codi d'ètica de la policia de Catalunya, Acord GOV/25/2015, i Codi europeu d'ètica de la policia)", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 21,
+      "titulo": { "es": "Actualidad: entorno político, económico y social (Cataluña, Estado español e internacional)", "ca": "Actualitat: entorn polític, econòmic i social (Catalunya, Estat espanyol i internacional)" },
+      "slug": "actualitat",
+      "bloque": { "es": "Ámbito D: Actualidad", "ca": "Àmbit D: Actualitat" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Govern.cat · notícies i acords del Govern", "url": "https://govern.cat/" },
+        { "tipo": "web", "norma": "Idescat · Institut d'Estadística de Catalunya", "url": "https://www.idescat.cat/" }
+      ],
+      "peso": 0.5
+    }
+  ],
+  "examenesAnteriores": [
+    { "anio": 2026, "titulo": "Convocatòria 46/26 · 1a prova (17-10-2026): models 01 i 02 de la subprova de coneixements, model d'idiomes i plantilles de correcció (enllaços a la pàgina oficial)", "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-26/", "plantilla": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-26/" },
+    { "anio": 2025, "titulo": "Convocatòria 46/25 · subprova de coneixements (models a la pàgina oficial de la convocatòria)", "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-25-de-maig-de-2025/", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_25-maig-25-mosso_a/Plantilla-de-correccio-de-la-subprova-de-coneixements-46-25.pdf" },
+    { "anio": 2024, "titulo": "Convocatòria 46/24 · subprova de coneixements, models 01 i 02 (pàgina oficial de la convocatòria)", "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-24-de-setembre-2024/", "plantilla": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/mosso-a-convocatoria-46-24-de-setembre-2024/" },
+    { "anio": 2024, "titulo": "Convocatòria 46/002/23 · subprova de coneixements 2024, preguntes i plantilla de respostes", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_23_mossoa_2023/Preguntes-i-plantilla-de-respostes-de-la-subprova-de-coneixement.pdf", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_23_mossoa_2023/Preguntes-i-plantilla-de-respostes-de-la-subprova-de-coneixement.pdf" },
+    { "anio": 2023, "titulo": "Convocatòria 46/23 · subprova de coneixements, models 01 i 02 amb plantilla de respostes", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_23_mossoa_2023/CONEIXEMENTS-MODEL-01-02-I-PLANTILLA-RESPOSTES-4623.pdf", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_23_mossoa_2023/CONEIXEMENTS-MODEL-01-02-I-PLANTILLA-RESPOSTES-4623.pdf" },
+    { "anio": 2022, "titulo": "Convocatòria 46/22 · plantilla de correcció de la subprova de coneixements (models 01 i 02)", "url": "https://mossos.gencat.cat/ca/els_mossos_desquadra/acces_al_cos/Mosso_a/models-i-respostes-de-la-1a-prova-danteriors-convocatories/", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_22_mossoa_2022/1a_coneixements/correccio_coneixements.pdf" },
+    { "anio": 2021, "titulo": "Convocatòria 46/21 · preguntes i respostes de la subprova de coneixements", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/modelsirespostes/0-PLANTILLA-PREGUNTES-I-RESPOSTES-CONEIXEMENTS-46-21.pdf", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/modelsirespostes/0-PLANTILLA-PREGUNTES-I-RESPOSTES-CONEIXEMENTS-46-21.pdf" },
+    { "anio": 2019, "titulo": "Convocatòria 46/002/19 · models de la subprova de coneixements i plantilles de correcció", "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_19_mossoa_2019/06_1a_Coneixements/Documents/Models-subprova-coneixements-i-plantilles-correccio-4619.pdf", "plantilla": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/46_002_19_mossoa_2019/06_1a_Coneixements/Documents/Models-subprova-coneixements-i-plantilles-correccio-4619.pdf" }
+  ],
+  "seo": {
+    "palabrasClave": {
+      "es": [
+        "test mossos d'esquadra",
+        "test mossos 2026",
+        "oposiciones mossos d'esquadra 2026",
+        "temario mossos d'esquadra",
+        "examen mossos d'esquadra",
+        "convocatoria mossos 46/26",
+        "preguntas examen mossos",
+        "simulacro examen mossos",
+        "guía de estudio mossos 2026",
+        "test psicotécnicos mossos",
+        "plantilla examen mossos 2026"
+      ],
+      "ca": [
+        "test mossos d'esquadra",
+        "test mossos 2026",
+        "oposicions mossos d'esquadra 2026",
+        "temari mossos",
+        "temari mossos 2026",
+        "examen mossos d'esquadra",
+        "convocatòria mossos 46/26",
+        "guia d'estudi mossos",
+        "simulacre examen mossos",
+        "preguntes examen mossos",
+        "plantilla examen mossos 2026"
+      ]
+    }
+  }
+}

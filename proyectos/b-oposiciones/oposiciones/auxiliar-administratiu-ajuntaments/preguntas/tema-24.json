@@ -1,0 +1,258 @@
+[
+  {
+    "id": "ajun-t24-001",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En Windows, ¿qué combinación de teclas copia el elemento seleccionado al portapapeles en la mayoría de aplicaciones, como Word o el Explorador de archivos?",
+      "opciones": [
+        "Ctrl+C",
+        "Ctrl+X",
+        "Ctrl+V",
+        "Ctrl+Z"
+      ],
+      "explicacion": "Ctrl+C copia la selección. Ctrl+X corta (la elimina de su lugar y la lleva al portapapeles), Ctrl+V pega y Ctrl+Z deshace la última acción."
+    },
+    "ca": {
+      "enunciado": "A Windows, quina combinació de tecles copia l'element seleccionat al porta-retalls en la majoria d'aplicacions, com el Word o l'Explorador de fitxers?",
+      "opciones": [
+        "Ctrl+C",
+        "Ctrl+X",
+        "Ctrl+V",
+        "Ctrl+Z"
+      ],
+      "explicacion": "Ctrl+C copia la selecció. Ctrl+X retalla (l'elimina del seu lloc i la porta al porta-retalls), Ctrl+V enganxa i Ctrl+Z desfà l'última acció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Word",
+      "url": "https://support.microsoft.com/es-es/word"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-002",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En un procesador de textos como Word, ¿qué combinación de teclas deshace la última acción realizada?",
+      "opciones": [
+        "Ctrl+Y",
+        "Ctrl+X",
+        "Ctrl+V",
+        "Ctrl+Z"
+      ],
+      "explicacion": "Ctrl+Z deshace la última acción. Ctrl+Y rehace o repite la acción, Ctrl+X corta y Ctrl+V pega."
+    },
+    "ca": {
+      "enunciado": "En un processador de textos com el Word, quina combinació de tecles desfà l'última acció feta?",
+      "opciones": [
+        "Ctrl+Y",
+        "Ctrl+X",
+        "Ctrl+V",
+        "Ctrl+Z"
+      ],
+      "explicacion": "Ctrl+Z desfà l'última acció. Ctrl+Y refà o repeteix l'acció, Ctrl+X retalla i Ctrl+V enganxa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Word",
+      "url": "https://support.microsoft.com/es-es/word"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-003",
+    "tema": 24,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una hoja de cálculo como Excel o LibreOffice Calc, el signo con el que se empieza a escribir una fórmula en una celda es:",
+      "opciones": [
+        "#",
+        "=",
+        "&",
+        "!"
+      ],
+      "explicacion": "Las fórmulas se introducen empezando por el signo igual (=), seguido de valores, referencias, operadores o funciones."
+    },
+    "ca": {
+      "enunciado": "En un full de càlcul com l'Excel o el LibreOffice Calc, el signe amb què es comença a escriure una fórmula en una cel·la és:",
+      "opciones": [
+        "#",
+        "=",
+        "&",
+        "!"
+      ],
+      "explicacion": "Les fórmules s'introdueixen començant pel signe igual (=), seguit de valors, referències, operadors o funcions."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Excel",
+      "url": "https://support.microsoft.com/es-es/excel"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-004",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En una hoja de cálculo, ¿qué referencia mantiene fijas tanto la columna como la fila cuando se copia la fórmula a otra celda?",
+      "opciones": [
+        "A1",
+        "A$1",
+        "$A$1",
+        "$A1"
+      ],
+      "explicacion": "El signo $ delante de la letra fija la columna y delante del número fija la fila; $A$1 es una referencia absoluta. A1 es relativa y A$1 y $A1 son mixtas."
+    },
+    "ca": {
+      "enunciado": "En un full de càlcul, quina referència manté fixes tant la columna com la fila quan es copia la fórmula a una altra cel·la?",
+      "opciones": [
+        "A1",
+        "A$1",
+        "$A$1",
+        "$A1"
+      ],
+      "explicacion": "El signe $ davant de la lletra fixa la columna i davant del número fixa la fila; $A$1 és una referència absoluta. A1 és relativa i A$1 i $A1 són mixtes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Excel",
+      "url": "https://support.microsoft.com/es-es/excel"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-005",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una hoja de cálculo, ¿cuántas celdas comprende el rango B2:C4?",
+      "opciones": [
+        "Seis",
+        "Tres",
+        "Cuatro",
+        "Ocho"
+      ],
+      "explicacion": "El rango abarca dos columnas (B y C) y tres filas (de la 2 a la 4): 2 × 3 = 6 celdas."
+    },
+    "ca": {
+      "enunciado": "En un full de càlcul, quantes cel·les comprèn l'interval B2:C4?",
+      "opciones": [
+        "Sis",
+        "Tres",
+        "Quatre",
+        "Vuit"
+      ],
+      "explicacion": "L'interval abasta dues columnes (B i C) i tres files (de la 2 a la 4): 2 × 3 = 6 cel·les."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Excel",
+      "url": "https://support.microsoft.com/es-es/excel"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-006",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Los destinatarios que se añaden en el campo de copia oculta (CCO) de un correo electrónico:",
+      "opciones": [
+        "Reciben solo el asunto del mensaje, sin el cuerpo",
+        "Son los únicos que pueden responder al mensaje",
+        "Aparecen visibles para todos los destinatarios del campo Para",
+        "Reciben el mensaje, pero su dirección no es visible para los demás destinatarios"
+      ],
+      "explicacion": "La copia oculta envía el mensaje completo sin mostrar esas direcciones al resto de destinatarios, a diferencia del campo CC, cuyas direcciones son visibles."
+    },
+    "ca": {
+      "enunciado": "Els destinataris que s'afegeixen al camp de còpia oculta d'un correu electrònic:",
+      "opciones": [
+        "Reben només l'assumpte del missatge, sense el cos",
+        "Són els únics que poden respondre el missatge",
+        "Apareixen visibles per a tots els destinataris del camp Per a",
+        "Reben el missatge, però la seva adreça no és visible per a la resta de destinataris"
+      ],
+      "explicacion": "La còpia oculta envia el missatge complet sense mostrar aquestes adreces a la resta de destinataris, a diferència del camp de còpia (Cc), les adreces del qual són visibles."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Outlook",
+      "url": "https://support.microsoft.com/es-es/outlook"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-007",
+    "tema": 24,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Al usar la opción «Responder a todos» sobre un correo recibido, la respuesta se envía:",
+      "opciones": [
+        "Solo al remitente del mensaje original",
+        "Al remitente y a todos los destinatarios que figuran en los campos Para y CC",
+        "A todos los destinatarios, incluidos los que estaban en copia oculta",
+        "A todos los contactos de la libreta de direcciones"
+      ],
+      "explicacion": "«Responder a todos» incluye al remitente y a los destinatarios visibles (Para y CC); quienes estaban en copia oculta no aparecen y, por tanto, no reciben la respuesta."
+    },
+    "ca": {
+      "enunciado": "En fer servir l'opció «Respon a tothom» sobre un correu rebut, la resposta s'envia:",
+      "opciones": [
+        "Només al remitent del missatge original",
+        "Al remitent i a tots els destinataris que figuren als camps Per a i Cc",
+        "A tots els destinataris, inclosos els que estaven en còpia oculta",
+        "A tots els contactes de la llibreta d'adreces"
+      ],
+      "explicacion": "«Respon a tothom» inclou el remitent i els destinataris visibles (Per a i Cc); els que estaven en còpia oculta no hi apareixen i, per tant, no reben la resposta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Outlook",
+      "url": "https://support.microsoft.com/es-es/outlook"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t24-008",
+    "tema": 24,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué extensión de archivo utiliza por defecto un documento de Microsoft Word desde la versión 2007?",
+      "opciones": [
+        ".xlsx",
+        ".pptx",
+        ".docx",
+        ".odt"
+      ],
+      "explicacion": "Word guarda por defecto en formato .docx. La extensión .xlsx corresponde a libros de Excel, .pptx a presentaciones de PowerPoint y .odt a documentos de texto OpenDocument (LibreOffice Writer)."
+    },
+    "ca": {
+      "enunciado": "Quina extensió de fitxer fa servir per defecte un document de Microsoft Word des de la versió 2007?",
+      "opciones": [
+        ".xlsx",
+        ".pptx",
+        ".docx",
+        ".odt"
+      ],
+      "explicacion": "El Word desa per defecte en format .docx. L'extensió .xlsx correspon a llibres de l'Excel, .pptx a presentacions del PowerPoint i .odt a documents de text OpenDocument (LibreOffice Writer)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Soporte de Microsoft Word",
+      "url": "https://support.microsoft.com/es-es/word"
+    },
+    "origen": "ia"
+  }
+]
