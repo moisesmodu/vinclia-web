@@ -5,6 +5,9 @@ import http from "node:http";
 import crypto from "node:crypto";
 
 const sesiones = new Map();
+const productos = [];
+const precios = [];
+const webhooks = [];
 const subs = new Map();
 const id = (p) => `${p}_${crypto.randomBytes(8).toString("hex")}`;
 
@@ -55,5 +58,24 @@ http.createServer(async (req, res) => {
     Object.assign(s, { cancel_at_period_end: (await leerCuerpo(req)).get("cancel_at_period_end") === "true" });
     return json(res, 200, s);
   }
+  const lista = (data) => json(res, 200, { object: "list", data, has_more: false });
+  if (url.pathname === "/v1/products") {
+    if (req.method === "GET") return lista(productos.filter((p) => url.searchParams.get("active") !== "true" || p.active));
+    const b = aObjeto(await leerCuerpo(req)); const p = { id: id("prod_test"), object: "product", active: true, name: b.name, metadata: b.metadata ?? {} };
+    productos.push(p); return json(res, 200, p);
+  }
+  if (url.pathname === "/v1/prices") {
+    if (req.method === "GET") return lista(precios.filter((p) => p.product === url.searchParams.get("product")));
+    const b = aObjeto(await leerCuerpo(req));
+    const p = { id: id("price_test"), object: "price", active: true, product: b.product, unit_amount: Number(b.unit_amount), currency: b.currency, recurring: b.recurring ?? null, tax_behavior: b.tax_behavior, metadata: b.metadata ?? {} };
+    precios.push(p); return json(res, 200, p);
+  }
+  if (url.pathname === "/v1/webhook_endpoints") {
+    if (req.method === "GET") return lista(webhooks.map(({ secret, ...w }) => w));
+    const b = aObjeto(await leerCuerpo(req)); const w = { id: id("we_test"), object: "webhook_endpoint", url: b.url, enabled_events: Object.values(b.enabled_events ?? {}), secret: `whsec_${crypto.randomBytes(12).toString("hex")}` };
+    webhooks.push(w); return json(res, 200, w);
+  }
+  m = url.pathname.match(/^\/v1\/webhook_endpoints\/([\w]+)$/);
+  if (req.method === "POST" && m) { const w = webhooks.find((x) => x.id === m[1]); const { secret, ...resto } = w; return json(res, 200, resto); }
   json(res, 404, { error: { message: `no simulado: ${req.method} ${url.pathname}` } });
 }).listen(12111, () => console.log("Stripe simulado en http://localhost:12111"));

@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     cancel_url: `${base}/${idioma}/precios`,
     locale: "auto" as const,
     customer_email: email ?? undefined,
-    metadata: { plan, idioma, pais: config.pais, consentimientoDesistimiento: new Date().toISOString() },
+    metadata: { proyecto: config.proyecto, plan, idioma, pais: config.pais, consentimientoDesistimiento: new Date().toISOString() },
     allow_promotion_codes: true
   };
   const sesion =
@@ -32,13 +32,17 @@ export async function POST(req: Request) {
           ...comun,
           mode: "payment",
           customer_creation: "always",
-          line_items: [{ quantity: 1, price_data: { currency: config.moneda, unit_amount: p.pack.importeCentimos, product_data: { name: `${config.marca} · Pack ${p.pack.mesesAcceso} meses` } } }]
+          line_items: [process.env.STRIPE_PRICE_PACK
+            ? { quantity: 1, price: process.env.STRIPE_PRICE_PACK }
+            : { quantity: 1, price_data: { currency: config.moneda, unit_amount: p.pack.importeCentimos, tax_behavior: "inclusive", product_data: { name: p.pack.productoStripe, metadata: { proyecto: config.proyecto } } } }]
         })
       : await s.checkout.sessions.create({
           ...comun,
           mode: "subscription",
           subscription_data: { metadata: { plan, idioma, pais: config.pais } },
-          line_items: [{ quantity: 1, price_data: { currency: config.moneda, unit_amount: p.suscripcion.importeCentimos, recurring: { interval: "month" }, product_data: { name: `${config.marca} · Suscripción mensual` } } }]
+          line_items: [process.env.STRIPE_PRICE_MENSUAL
+            ? { quantity: 1, price: process.env.STRIPE_PRICE_MENSUAL }
+            : { quantity: 1, price_data: { currency: config.moneda, unit_amount: p.suscripcion.importeCentimos, tax_behavior: "inclusive", recurring: { interval: "month" }, product_data: { name: p.suscripcion.productoStripe, metadata: { proyecto: config.proyecto } } } }]
         });
   return NextResponse.json({ url: sesion.url });
 }

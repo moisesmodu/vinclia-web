@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { IDIOMAS, config } from "@/lib/config";
+import { IDIOMAS, titular } from "@/lib/config";
 import { dicc } from "@/lib/i18n";
 
 const DOCS = ["aviso-legal", "privacidad", "cookies", "condiciones"];
@@ -10,9 +10,10 @@ type Doc = { titulo: string; secciones: { titulo: string; parrafos: string[] }[]
 
 function cargar(doc: string): Doc | null {
   if (!DOCS.includes(doc)) return null;
+  const t = titular();
   const crudo = fs.readFileSync(path.join(process.cwd(), "content", "legal", `${doc}.json`), "utf8")
-    .replaceAll("{titular}", config.titular.nombre).replaceAll("{nif}", config.titular.nif)
-    .replaceAll("{domicilio}", config.titular.domicilio).replaceAll("{correo}", config.titular.correo);
+    .replaceAll("{titular}", t.nombre).replaceAll("{nif}", t.nif)
+    .replaceAll("{domicilio}", t.domicilio).replaceAll("{correo}", t.correo);
   return JSON.parse(crudo);
 }
 

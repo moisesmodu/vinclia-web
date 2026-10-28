@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Dicc } from "@/lib/i18n";
-import { config } from "@/lib/config";
+import { titular } from "@/lib/config";
 
 export default function Pie({ idioma, d }: { idioma: string; d: Dicc }) {
   return (
@@ -13,7 +13,7 @@ export default function Pie({ idioma, d }: { idioma: string; d: Dicc }) {
           <Link href={`/${idioma}/legal/cookies`}>{d.pie.cookies}</Link>
           <Link href={`/${idioma}/legal/condiciones`}>{d.pie.condiciones}</Link>
           <Link href={`/${idioma}/preguntas`}>{d.nav.preguntas}</Link>
-          <a href={`mailto:${config.titular.correo}`}>{d.pie.contacto}</a>
+          <a href={`mailto:${titular().correo}`}>{d.pie.contacto}</a>
         </nav>
         <p>© 2026 {d.marca}</p>
       </div>

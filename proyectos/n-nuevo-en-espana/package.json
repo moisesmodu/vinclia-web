@@ -13,7 +13,9 @@
     "prueba:e2e": "node scripts/prueba-e2e.mjs",
     "stripe:simulado": "node scripts/stripe-simulado.mjs",
     "fuentes": "node scripts/revisar-fuentes.mjs",
-    "iconos": "node scripts/iconos.cjs"
+    "iconos": "node scripts/iconos.cjs",
+    "db:migrar": "prisma migrate deploy",
+    "stripe:configurar": "node scripts/stripe-configurar.mjs"
   },
   "dependencies": {
     "@prisma/client": "6.19.0",

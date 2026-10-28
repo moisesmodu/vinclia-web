@@ -69,6 +69,10 @@ r = await post(c, "/api/checkout", { plan: "suscripcion", idioma: "ar", desistim
 const { url } = await r.json();
 const csId = url.split("/").pop();
 ok(r.ok && csId.startsWith("cs_test"), "Checkout de suscripción crea sesión de Stripe");
+if (process.env.STRIPE_PRICE_MENSUAL) {
+  const s0 = await (await fetch(`${SIM}/v1/checkout/sessions/${csId}`, { headers: { authorization: "Bearer sk_test_simulado" } })).json();
+  ok(s0.line_items?.["0"]?.price === process.env.STRIPE_PRICE_MENSUAL && s0.metadata?.proyecto === "n-nuevo-en-espana", "Checkout usa el precio creado por API y marca el proyecto");
+}
 let sesion = await (await fetch(`${SIM}/__pagar/${csId}`, { method: "POST", body: "email=Karim%40Example.com", headers: { authorization: "Bearer sk_test_simulado", "content-type": "application/x-www-form-urlencoded" } })).json();
 const w1 = await webhook("checkout.session.completed", sesion);
 ok(w1.r.ok, "Webhook checkout.session.completed firmado → 200");

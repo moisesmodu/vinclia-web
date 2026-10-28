@@ -32,27 +32,12 @@ marketing/                    guiones de vídeo, fichas de Google Play, comunida
 scripts/                      validar contenido, prueba e2e, Stripe simulado, revisar fuentes, iconos
 ```
 
-## Despliegue en Vercel
-1. Nuevo proyecto en Vercel desde este repositorio con **Root Directory = `proyectos/n-nuevo-en-espana`**.
-2. Base de datos: proyecto nuevo en Neon (plan gratuito) → copia las dos cadenas de conexión.
-3. Variables de entorno (ver `.env.example`):
-
-| Variable | Valor |
-|---|---|
-| `NEXT_PUBLIC_URL` | URL pública, p. ej. `https://nuevoenespana.vercel.app` |
-| `DATABASE_URL` / `DATABASE_URL_UNPOOLED` | cadenas de Neon (con y sin pooling) |
-| `STRIPE_SECRET_KEY` | `sk_test_...` (modo prueba) |
-| `STRIPE_WEBHOOK_SECRET` | `whsec_...` del webhook que apunta a `https://<dominio>/api/stripe/webhook` con los eventos `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `invoice.paid`, `customer.subscription.deleted`, `charge.refunded` |
-| `SECRETO_SESION` | 32+ caracteres aleatorios (`openssl rand -base64 32`) |
-| `CRON_SECRET` | otro secreto aleatorio (Vercel lo envía al cron) |
-| `RESEND_API_KEY`, `CORREO_REMITENTE` | opcional: sin clave, los correos se escriben en el registro y no salen |
-| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | opcional |
-
-4. Tras el primer despliegue, crea las tablas una vez: `DATABASE_URL=... npx prisma db push` (o pon
-   `prisma db push && next build` como Build Command en el primer despliegue).
-5. El cron de recordatorios ya está en `vercel.json` (cada día a las 08:00 UTC).
-
-Los precios se crean al vuelo en Checkout (`price_data`): no hace falta crear productos en el panel de Stripe.
+## Despliegue
+Lo ejecuta la sesión con los secretos del entorno siguiendo **`DESPLIEGUE.md`** (proyecto de Vercel con Root Directory
+= esta carpeta, proyecto de Neon `cartera-n-nuevo-en-espana`, productos y webhook de Stripe en la cuenta Numi Mates
+creados por `scripts/stripe-configurar.mjs`, migraciones con `prisma migrate deploy`). Variables en `.env.example`.
+El cron de recordatorios está en `vercel.json`. Si `STRIPE_PRICE_*` no está definido, Checkout crea el precio al vuelo
+con el mismo nombre de producto, así que la web funciona igual.
 
 ## Pruebas
 ```bash
@@ -62,7 +47,7 @@ npm run check && npm run build
 # Prueba de punta a punta (Postgres local + Stripe simulado, sin red):
 npm run stripe:simulado &                     # simulador mínimo de la API de Stripe en :12111
 export STRIPE_SECRET_KEY=sk_test_simulado STRIPE_API_BASE=http://localhost:12111 STRIPE_WEBHOOK_SECRET=whsec_prueba_local
-npx next start -p 3000 & npm run prueba:e2e   # 45 comprobaciones: idioma, muro, pago, webhooks, recordatorios, cron, cancelación, pack, enlace mágico
+npx next start -p 3000 & npm run prueba:e2e   # 43 comprobaciones: idioma, muro, pago, webhooks, recordatorios, cron, cancelación, pack, enlace mágico
 ```
 `STRIPE_API_BASE` solo existe para las pruebas. Los webhooks de la prueba se firman con la librería oficial de Stripe.
 

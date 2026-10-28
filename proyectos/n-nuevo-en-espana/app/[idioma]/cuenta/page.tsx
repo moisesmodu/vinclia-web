@@ -2,7 +2,7 @@ import Link from "next/link";
 import { dicc, fechaLarga } from "@/lib/i18n";
 import { emailSesion } from "@/lib/sesion";
 import { db, hayBaseDeDatos } from "@/lib/db";
-import { config } from "@/lib/config";
+import { titular } from "@/lib/config";
 import AccionesCuenta from "@/components/AccionesCuenta";
 
 export const dynamic = "force-dynamic";
@@ -30,7 +30,7 @@ export default async function Cuenta({ params }: { params: Promise<{ idioma: str
           {activo && u?.accesoHasta ? <p>{d.cuenta.hasta}: <strong>{fechaLarga(u.accesoHasta.toISOString().slice(0, 10), idioma)}</strong></p> : null}
           {!activo ? <Link className="boton boton-marca w-full" href={`/${idioma}/precios`}>{d.guia.verPrecios}</Link> : null}
           <AccionesCuenta idioma={idioma} puedeCancelar={activo && u?.plan === "suscripcion" && Boolean(u?.stripeSubscriptionId)} textos={{ cancelar: d.cuenta.cancelar, canceladaOk: d.cuenta.canceladaOk, salir: d.cuenta.salir }} />
-          <p className="text-sm text-suave">{d.cuenta.borrar} <a className="enlace" href={`mailto:${config.titular.correo}`}>{config.titular.correo}</a></p>
+          <p className="text-sm text-suave">{d.cuenta.borrar} <a className="enlace" href={`mailto:${titular().correo}`}>{titular().correo}</a></p>
         </div>
       )}
     </div>

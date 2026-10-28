@@ -27,3 +27,13 @@ export const SITUACIONES: Record<string, string[]> = {
   renovar: ["renovacion-residencia", "empadronamiento", "numero-seguridad-social"],
   nacionalidad: ["nacionalidad", "renovacion-residencia", "empadronamiento"]
 };
+
+/** Datos del titular para aviso legal y condiciones: las variables LEGAL_* del entorno mandan sobre el JSON. */
+export function titular() {
+  return {
+    nombre: process.env.LEGAL_NOM ?? config.titular.nombre,
+    nif: process.env.LEGAL_NIF ?? config.titular.nif,
+    domicilio: process.env.LEGAL_ADRECA ?? config.titular.domicilio,
+    correo: process.env.LEGAL_EMAIL ?? config.titular.correo
+  };
+}

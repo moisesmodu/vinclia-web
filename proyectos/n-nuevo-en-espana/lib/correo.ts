@@ -15,7 +15,7 @@ export async function enviar(c: Correo): Promise<boolean> {
   }
   const resend = new Resend(clave);
   const { error } = await resend.emails.send({
-    from: process.env.CORREO_REMITENTE ?? `${config.marca} <avisos@nuevoenespana.app>`,
+    from: process.env.CORREO_REMITENTE ?? `${config.marca} <noreply@algorithmicslleida.com>`,
     to: c.para,
     subject: c.asunto,
     text: c.texto,

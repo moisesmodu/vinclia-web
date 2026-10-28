@@ -250,19 +250,20 @@
       {
         "fecha": "2026-10-28",
         "texto": "Producto construido: 8 guías en 7 idiomas con fuentes oficiales, lista de comprobación y recordatorios por correo; pago en modo prueba (4,99 €/mes o pack 19,90 €); 30 páginas SEO, 30 guiones de vídeo (es/ar/fr), fichas de Play en 8 idiomas, 51 comunidades. Build limpio y prueba e2e en verde (PR #3)."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Adaptado a DESPLIEGUES.md: DESPLIEGUE.md con comandos exactos, productos y webhook de Stripe (Numi Mates) creados por script idempotente, LEGAL_* del entorno, migraciones de Prisma; PARA-MOISES sin claves ni cuentas."
       }
     ],
     "proximos": [
-      "Moisés: claves de Neon, Stripe y Vercel y crear la tarea semanal (PARA-MOISES.md)",
+      "Sesión con secretos (Mac): ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md (Vercel nuevo-en-espana, Neon cartera-n-nuevo-en-espana, Stripe Numi Mates en modo prueba) y comprobar el pago en producción",
       "Primera revisión semanal con red abierta: confirmar tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)",
-      "Probar el pago contra Stripe real en modo prueba al desplegar",
       "Marzo 2027: campaña de la guía de renovación como producto de 19,90 € (condición del juicio)"
     ],
     "paraMoises": [
-      "Neon: crear proyecto y copiar las dos cadenas",
-      "Stripe (modo prueba): clave sk_test y webhook",
-      "Vercel: importar con Root Directory proyectos/n-nuevo-en-espana y pegar variables",
-      "Crear la tarea programada semanal (prompt en TAREA-PROGRAMADA.md)"
+      "Aprobar la tarea programada semanal (prompt en TAREA-PROGRAMADA.md)",
+      "Cuando quiera cobrar de verdad: decir «lanza N con Stripe real»"
     ],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
