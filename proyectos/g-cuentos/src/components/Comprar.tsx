@@ -8,12 +8,13 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
   const x = t(idioma);
   const [formato, setFormato] = useState<"pdf" | "tapaDura">("tapaDura");
   const [email, setEmail] = useState("");
+  const [recordatorio, setRecordatorio] = useState(false);
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState("");
   async function pagar() {
     setCargando(true);
     setError("");
-    const r = await fetch("/api/checkout", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ pedidoId, formato, email, idiomaWeb: idioma }) });
+    const r = await fetch("/api/checkout", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ pedidoId, formato, email, recordatorio, idiomaWeb: idioma }) });
     const j = await r.json().catch(() => ({}));
     if (!r.ok || !j.url) { setError(j.error ?? "error"); setCargando(false); return; }
     window.location.href = j.url;
@@ -32,6 +33,10 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
       {opcion("pdf", x.precios.pdf, precios.pdf, x.precios.entrega)}
       <label className="block"><span className="etiqueta">{x.vista.email}</span>
         <input type="email" className="campo" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" inputMode="email" />
+      </label>
+      <label className="flex gap-2 items-start text-sm text-suave cursor-pointer">
+        <input type="checkbox" className="mt-1 w-4 h-4 accent-[#2B3A67]" checked={recordatorio} onChange={(e) => setRecordatorio(e.target.checked)} />
+        <span>{idioma === "ca" ? "Si no acabo la compra, recorda-m'ho una sola vegada per correu." : "Si no termino la compra, recuérdamelo una sola vez por correo."}</span>
       </label>
       {error && <p className="text-primario-osc font-bold" role="alert">{error}</p>}
       <button className="boton w-full text-lg" onClick={pagar} disabled={cargando}>{x.vista.pagar} · {formato === "pdf" ? precios.pdf : precios.tapaDura}</button>

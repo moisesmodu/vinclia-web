@@ -31,7 +31,7 @@ precio si bajaba de 9 €. El paso 6 lo confirma con la cotización real; si sal
 | `STRIPE_WEBHOOK_SECRET` | lo imprime el paso 5 |
 | `STRIPE_PRICE_PDF`, `STRIPE_PRICE_TAPA_DURA` | los imprime el paso 5 (hay que repetirlo con la clave real al lanzar) |
 | `RESEND_API_KEY` | `$RESEND_API_KEY` |
-| `CORREO_REMITENTE` | `Lunilla <noreply@algorithmicslleida.com>` |
+| `CORREO_REMITENTE` | `Lunilla <noreply@numimates.com>` |
 | `CORREO_SOPORTE` | `$LEGAL_EMAIL` |
 | `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | los del entorno |
 | `GELATO_API_KEY` | del alta en Gelato (paso 2) |

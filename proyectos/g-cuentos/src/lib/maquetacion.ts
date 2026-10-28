@@ -26,6 +26,9 @@ const TERRACOTA = hex("#2B3A67"); // acento de textos pequeños: azul luna
 const AMARILLO = hex("#F5C84C");
 const ROSA = hex("#F7D6E0");
 
+// Web que se imprime en el libro: la de URL_BASE (lunilla.es solo cuando el dominio sea nuestro).
+const WEB = () => (process.env.URL_BASE ?? "https://lunilla.vercel.app").replace(/^https?:\/\//, "").replace(/\/$/, "");
+
 export type ModoPdf = "imprenta" | "pantalla";
 
 export interface EntradaPdf {
@@ -39,8 +42,8 @@ export interface EntradaPdf {
 }
 
 const TEXTOS = {
-  es: { pertenece: "Este libro pertenece a", fin: "Fin", marca: "Un cuento de Lunilla", colofon: (n: string) => `Este cuento se escribió e ilustró solo para ${n}.\nTexto e ilustraciones creados con ayuda de inteligencia artificial a partir de plantillas escritas y revisadas por el taller de Lunilla. Impreso bajo demanda.\nlunilla.es` },
-  ca: { pertenece: "Aquest llibre és de", fin: "Fi", marca: "Un conte de Lunilla", colofon: (n: string) => `Aquest conte es va escriure i il·lustrar només per a ${n}.\nText i il·lustracions creats amb ajuda d'intel·ligència artificial a partir de plantilles escrites i revisades pel taller de Lunilla. Imprès sota demanda.\nlunilla.es` },
+  es: { pertenece: "Este libro pertenece a", fin: "Fin", marca: "Un cuento de Lunilla", colofon: (n: string) => `Este cuento se escribió e ilustró solo para ${n}.\nTexto e ilustraciones creados con ayuda de inteligencia artificial a partir de plantillas escritas y revisadas por el taller de Lunilla. Impreso bajo demanda.\n${WEB()}` },
+  ca: { pertenece: "Aquest llibre és de", fin: "Fi", marca: "Un conte de Lunilla", colofon: (n: string) => `Aquest conte es va escriure i il·lustrar només per a ${n}.\nText i il·lustracions creats amb ajuda d'intel·ligència artificial a partir de plantilles escrites i revisades pel taller de Lunilla. Imprès sota demanda.\n${WEB()}` },
 };
 
 interface Fuentes { texto: PDFFont; cursiva: PDFFont; titulo: PDFFont; negrita: PDFFont }
@@ -175,7 +178,7 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   const doc = await PDFDocument.create();
   doc.setTitle(e.cuento.titulo);
   doc.setAuthor("Lunilla");
-  doc.setCreator("Lunilla · lunilla.es");
+  doc.setCreator(`Lunilla · ${WEB()}`);
   doc.setLanguage(e.idioma === "ca" ? "ca-ES" : "es-ES");
   const F = await cargarFuentes(doc);
   const altoIlu = b + corte * ALTO_ILUSTRACION; // desde el borde superior (con sangrado)
@@ -326,7 +329,7 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
     const p = nueva();
     bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cx, cy + 10 * MM, anchoTexto, 16, 40 * MM);
     dibujarLunilla(p, cx, cy - 18 * MM, 18 * MM);
-    bloqueCentrado(p, "lunilla.es", F.titulo, cx, cy - 34 * MM, anchoTexto, 14, 10 * MM, TERRACOTA);
+    bloqueCentrado(p, WEB(), F.titulo, cx, cy - 34 * MM, anchoTexto, 14, 10 * MM, TERRACOTA);
   }
   const total = doc.getPageCount();
   const esperado = LIBRO.paginas + (imprenta ? 0 : 2);
@@ -382,7 +385,7 @@ export async function generarCubierta(e: Omit<EntradaPdf, "modo">, dim: Dimensio
   const cxBack = env + tapa / 2;
   bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cxBack, H / 2 + 15 * MM, tapa - 40 * MM, 15, 50 * MM);
   dibujarLunilla(p, cxBack, env + 42 * MM, 20 * MM);
-  bloqueCentrado(p, "Lunilla · lunilla.es", F.titulo, cxBack, env + 25 * MM, tapa - 40 * MM, 12, 10 * MM, TERRACOTA);
+  bloqueCentrado(p, `Lunilla · ${WEB()}`, F.titulo, cxBack, env + 25 * MM, tapa - 40 * MM, 12, 10 * MM, TERRACOTA);
   bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 12 * MM, tapa - 50 * MM, 6.5, 12 * MM, TINTA, 1.35);
   // Lomo
   p.drawRectangle({ x: env + tapa, y: 0, width: lomo, height: H, color: AZUL_NOCHE });

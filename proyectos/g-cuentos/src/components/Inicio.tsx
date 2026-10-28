@@ -60,7 +60,7 @@ const C = {
     ocasionesTitulo: "Ideas por ocasión",
     ocasiones: [["Regalo de los abuelos", "/cuentos/regalo-abuelos-navidad"], ["Reyes", "/cuentos/regalo-reyes-magos-cuento-personalizado"], ["Última hora", "/cuentos/regalo-ultima-hora-cuento-pdf"], ["Cumpleaños", "/cuentos/regalo-cumpleanos-nino-personalizado"], ["Hermanito nuevo", "/cuentos/cuento-hermanito-nuevo-celos"], ["Miedo a la oscuridad", "/cuentos/cuento-para-dormir-miedo-a-la-oscuridad"], ["3 años", "/cuentos/regalo-original-nino-3-anos"], ["5 y 6 años", "/cuentos/regalo-original-ninos-5-anos"]],
     garOjo: "Tranquilidad", garTitulo: "Si algo no te gusta, lo arreglamos",
-    gar: [["corazon", "Te lo rehacemos gratis", "Una vez: el texto, las ilustraciones o las dos cosas."], ["regalo", "Reimpresión sin coste", "Si el libro llega dañado o con un defecto, nos mandas una foto y lo volvemos a imprimir."], ["escudo", "Pago seguro", "Con tarjeta, Apple Pay o Google Pay a través de Stripe. No guardamos tu tarjeta."], ["pluma", "Te responde una persona", "Escríbenos a hola@lunilla.es: contestamos en menos de 24 horas laborables."]],
+    gar: [["corazon", "Te lo rehacemos gratis", "Una vez: el texto, las ilustraciones o las dos cosas."], ["regalo", "Reimpresión sin coste", "Si el libro llega dañado o con un defecto, nos mandas una foto y lo volvemos a imprimir."], ["escudo", "Pago seguro", "Con tarjeta, Apple Pay o Google Pay a través de Stripe. No guardamos tu tarjeta."], ["pluma", "Te responde una persona", "Escríbenos a {correo}: contestamos en menos de 24 horas laborables."]],
     finalTitulo: "¿Cómo se llama tu protagonista?", finalSub: "Ves su portada y las primeras páginas antes de pagar nada.",
   },
   ca: {
@@ -109,7 +109,7 @@ const C = {
     ocasionesTitulo: "Idees per ocasió",
     ocasiones: [["Regal dels avis", "/ca/contes/regal-avis-nadal"], ["Reis", "/ca/contes/regal-reis-conte-personalitzat"], ["El tió", "/ca/contes/regal-tio-de-nadal"], ["Germanet nou", "/ca/contes/conte-germanet-nou"], ["Por de la foscor", "/ca/contes/conte-per-dormir-por-a-la-foscor"], ["Un conte a Lleida", "/ca/contes/conte-personalitzat-lleida"], ["Sense fotos", "/ca/contes/conte-personalitzat-sense-fotos"]],
     garOjo: "Tranquil·litat", garTitulo: "Si alguna cosa no t'agrada, ho arreglem",
-    gar: [["corazon", "Te'l refem gratis", "Una vegada: el text, les il·lustracions o totes dues coses."], ["regalo", "Reimpressió sense cost", "Si el llibre arriba malmès o amb un defecte, ens envies una foto i el tornem a imprimir."], ["escudo", "Pagament segur", "Amb targeta, Apple Pay o Google Pay a través de Stripe. No guardem la teva targeta."], ["pluma", "Et respon una persona", "Escriu-nos a hola@lunilla.es: contestem en menys de 24 hores feineres."]],
+    gar: [["corazon", "Te'l refem gratis", "Una vegada: el text, les il·lustracions o totes dues coses."], ["regalo", "Reimpressió sense cost", "Si el llibre arriba malmès o amb un defecte, ens envies una foto i el tornem a imprimir."], ["escudo", "Pagament segur", "Amb targeta, Apple Pay o Google Pay a través de Stripe. No guardem la teva targeta."], ["pluma", "Et respon una persona", "Escriu-nos a {correo}: contestem en menys de 24 hores feineres."]],
     finalTitulo: "Com es diu el teu protagonista?", finalSub: "Veus la seva portada i les primeres pàgines abans de pagar res.",
   },
 };
@@ -322,7 +322,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {k.gar.map(([i, h, d]) => {
               const I = Icono[i as keyof typeof Icono];
-              return <div key={h}><span className="icono-redondo mb-3"><I /></span><h3 className="text-lg mb-1">{h}</h3><p className="texto-rosa text-sm">{d}</p></div>;
+              return <div key={h}><span className="icono-redondo mb-3"><I /></span><h3 className="text-lg mb-1">{h}</h3><p className="texto-rosa text-sm">{d.replace("{correo}", c.legal.email)}</p></div>;
             })}
           </div>
         </div>

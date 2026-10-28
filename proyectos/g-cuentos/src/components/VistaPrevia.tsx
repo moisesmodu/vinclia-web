@@ -35,6 +35,7 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
       <div className="mx-auto max-w-5xl px-4 py-8">
         <p className="text-primario font-bold">{x.vista.titulo}</p>
         <h1 className="text-3xl sm:text-4xl mt-1 mb-2">{cuento.titulo}</h1>
+        {!pagado && <a href="#comprar" className="boton w-full mb-4 lg:hidden">{ca ? `Comprar · des de ${euros(c.precios.pdf, idioma)}` : `Comprar · desde ${euros(c.precios.pdf, idioma)}`}</a>}
         <p className="text-suave mb-6">{ca ? `Aquestes són les primeres pàgines. El conte complet té ${B.paginas} pàgines il·lustrades, pensades per a ${B.etiqueta.ca}.` : `Estas son las primeras páginas. El cuento completo tiene ${B.paginas} páginas ilustradas, pensadas para ${B.etiqueta.es}.`}</p>
         <div className="grid gap-8 lg:grid-cols-[1fr_360px] items-start">
           <div className="space-y-6">

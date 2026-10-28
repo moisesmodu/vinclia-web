@@ -1,10 +1,11 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { Resend } from "resend";
+import { configPais } from "./config";
 
 // Resend en producción; sin RESEND_API_KEY el correo se guarda en datos-locales/correos/.
 // Hasta tener dominio propio: remitente común de la cartera (DESPLIEGUES.md §3.4).
-const REMITENTE = process.env.CORREO_REMITENTE ?? "Lunilla <noreply@algorithmicslleida.com>";
+const REMITENTE = process.env.CORREO_REMITENTE ?? "Lunilla <noreply@numimates.com>";
 
 export async function enviarCorreo(a: string, asunto: string, html: string, etiqueta: string): Promise<{ id: string; simulado: boolean }> {
   const k = process.env.RESEND_API_KEY;
@@ -15,7 +16,7 @@ export async function enviarCorreo(a: string, asunto: string, html: string, etiq
     await writeFile(path.join(dir, `${id}.html`), `<!-- Para: ${a}\nAsunto: ${asunto} -->\n${html}`);
     return { id, simulado: true };
   }
-  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE ?? process.env.LEGAL_EMAIL ?? "hola@lunilla.es" });
+  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE || configPais().legal.email });
   if (r.error) throw new Error(`Resend: ${r.error.message}`);
   return { id: r.data!.id, simulado: false };
 }
@@ -51,6 +52,18 @@ export function correoConfirmacion(o: { idioma: "es" | "ca"; nombre: string; tit
     ca
       ? `<p>Gràcies! Estem il·lustrant el conte de ${esc(o.nombre)}. Normalment està llest en menys de 2 hores i t'arribarà en aquest mateix correu.</p>${boton(o.urlPedido, "Veure l'estat de la comanda")}`
       : `<p>¡Gracias! Estamos ilustrando el cuento de ${esc(o.nombre)}. Normalmente está listo en menos de 2 horas y te llegará a este mismo correo.</p>${boton(o.urlPedido, "Ver el estado del pedido")}`,
+  );
+  return { asunto, html };
+}
+
+/** Recuperación (uno solo, con consentimiento marcado al pagar): vuelve a la vista previa con un clic. */
+export function correoRecordatorio(o: { idioma: "es" | "ca"; nombre: string; titulo: string; urlVista: string }) {
+  const ca = o.idioma === "ca";
+  const asunto = ca ? `El conte de ${o.nombre} t'espera: «${o.titulo}»` : `El cuento de ${o.nombre} te espera: «${o.titulo}»`;
+  const html = plantilla(
+    ca
+      ? `<p>Hola!</p><p>Vas deixar a mitges <b>«${esc(o.titulo)}»</b>. El guardem tal com el vas deixar, amb els teus retocs, durant 30 dies.</p>${boton(o.urlVista, "Acabar el conte")}<p>Aquest és l'únic recordatori que t'enviarem.</p>`
+      : `<p>¡Hola!</p><p>Dejaste a medias <b>«${esc(o.titulo)}»</b>. Lo guardamos tal como lo dejaste, con tus retoques, durante 30 días.</p>${boton(o.urlVista, "Terminar el cuento")}<p>Este es el único recordatorio que te enviaremos.</p>`,
   );
   return { asunto, html };
 }
