@@ -111,3 +111,8 @@ Ejecutado el 28/10/2026 desde la sesión del Mac, camino B (Vercel Pro): https:/
 Redesplegados `netoclaro` e `impuestoclaro` con el commit bef9859 (marca de la familia Claro), desde `proyectos/p-webs-adsense/fabrica`. Comprobado: calculadoras con título 2027 y aviso legal sin `PENDIENTE-NIF`.
 
 Ejecutado el 2026-10-28
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+Redesplegados `netoclaro` e `impuestoclaro` con el commit b542950 (correo hola@numimates.com) y `LEGAL_EMAIL=hola@numimates.com` en production (DESPLIEGUES.md §6): el aviso legal ya no muestra el correo personal.
+
+Ejecutado el 2026-10-28
