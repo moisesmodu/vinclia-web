@@ -1,0 +1,125 @@
+{
+  "id": "nomina",
+  "pais": "es",
+  "idiomas": [
+    "es",
+    "ca"
+  ],
+  "dominio": "https://netoclaro.es",
+  "nombre": "NetoClaro",
+  "lema": {
+    "es": "Calculadoras de nómina y laboral con datos oficiales",
+    "ca": "Calculadores de nòmina i laboral amb dades oficials"
+  },
+  "descripcion": {
+    "es": "Calcula tu sueldo neto 2027, finiquito, despido, paro, baja, horas extra y cuota de autónomos con los parámetros del BOE. En castellano y catalán, con el método y las fuentes publicados.",
+    "ca": "Calcula el teu sou net 2027, la quitança, l’acomiadament, l’atur, la baixa, les hores extra i la quota d’autònoms amb els paràmetres del BOE. En català i castellà, amb el mètode i les fonts publicats."
+  },
+  "colores": {
+    "primario": "#0f5c4a",
+    "primarioOscuro": "#0a4537",
+    "acento": "#f2b134",
+    "fondo": "#f7f5f0",
+    "superficie": "#ffffff",
+    "tinta": "#1b1f1d",
+    "suave": "#5b625e",
+    "borde": "#dcd8cf"
+  },
+  "marca": "N",
+  "anioPorDefecto": 2027,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio",
+      "ca": "Editor i responsable del lloc"
+    },
+    "bio": {
+      "es": "Autónomo en Lleida desde hace años y dueño de una escuela de programación. Programa y revisa cada calculadora contra el texto del BOE y los manuales de la Seguridad Social y la Agencia Tributaria.",
+      "ca": "Autònom a Lleida des de fa anys i propietari d’una escola de programació. Programa i revisa cada calculadora amb el text del BOE i els manuals de la Seguretat Social i l’Agència Tributària."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@netoclaro.es"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "sueldo-neto",
+    "sueldo-bruto",
+    "nomina",
+    "coste-empresa",
+    "retencion-irpf",
+    "paga-extra",
+    "subida-sueldo",
+    "finiquito",
+    "indemnizacion-despido",
+    "vacaciones",
+    "horas-extra",
+    "salario-hora",
+    "reduccion-jornada",
+    "salario-minimo",
+    "paro",
+    "subsidio-desempleo",
+    "baja-it",
+    "cuota-autonomos",
+    "jubilacion-edad",
+    "pension-jubilacion"
+  ],
+  "destacadas": [
+    "sueldo-neto",
+    "finiquito",
+    "indemnizacion-despido",
+    "paro",
+    "cuota-autonomos",
+    "baja-it"
+  ],
+  "rutasDatos": {
+    "es": "datos",
+    "ca": "dades"
+  },
+  "programaticas": [
+    {
+      "id": "neto-por-bruto",
+      "plantilla": "neto-por-bruto",
+      "csv": "sueldo-bruto.csv",
+      "slug": {
+        "es": "sueldo-neto-{bruto}-euros-brutos",
+        "ca": "sou-net-{bruto}-euros-bruts"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por salario bruto",
+        "ca": "Sou net per salari brut"
+      }
+    },
+    {
+      "id": "neto-por-comunidad",
+      "plantilla": "neto-por-comunidad",
+      "csv": "comunidades.csv",
+      "slug": {
+        "es": "sueldo-neto-{slug_es}",
+        "ca": "sou-net-{slug_ca}"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por comunidad autónoma",
+        "ca": "Sou net per comunitat autònoma"
+      }
+    }
+  ]
+}

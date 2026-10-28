@@ -1,0 +1,201 @@
+palabra_clave,idioma,intencion,ruta_destino,tipo_destino,prioridad,grupo,enlaza_desde
+calculadora IRPF 2027,es,calcular,/calculadora-irpf/,calc,1,irpf,/
+calculadora renta 2026 cuánto me sale,es,calcular,/calculadora-irpf/,calc,1,renta,/obligacion-declarar-renta/
+simulador renta 2026 a devolver o a pagar,es,calcular,/calculadora-irpf/,calc,1,renta,/obligacion-declarar-renta/
+calcular cuota íntegra del IRPF,es,calcular,/calculadora-irpf/,calc,2,irpf,/datos/tramos-irpf-comunidades/
+calcular IRPF de un sueldo bruto anual,es,calcular,/calculadora-irpf/,calc,1,irpf,/datos/irpf-por-comunidad-y-salario/
+tramos IRPF 2027 tabla,es,tabla,/datos/tramos-irpf-comunidades/,ficha,1,irpf,/calculadora-irpf/
+tramos IRPF por comunidad autónoma renta 2026,es,tabla,/datos/tramos-irpf-comunidades/,ficha,1,renta,/calculadora-irpf/
+tipo máximo IRPF por comunidades 2027,es,tabla,/datos/tipo-maximo-irpf-comunidades/,ficha,2,irpf,/calculadora-tipo-marginal-irpf/
+tabla IRPF por comunidad y salario,es,tabla,/datos/irpf-por-comunidad-y-salario/,ficha,2,irpf,/calculadora-irpf/
+mínimo personal y familiar 2027 tabla,es,tabla,/datos/minimo-personal-familiar-irpf/,ficha,2,irpf,/calculadora-irpf/
+cuánto desgrava un hijo en la renta mínimo por descendientes,es,calcular,/datos/minimo-personal-familiar-irpf/,ficha,2,renta,/calculadora-irpf/
+tipos de retención IRPF 2027,es,tabla,/datos/tipos-retencion-irpf/,ficha,2,irpf,/calculadora-factura/
+retención IRPF autónomos 7% o 15%,es,comparar,/datos/tipos-retencion-irpf/,ficha,1,autonomos,/calculadora-factura/
+calcular tipo marginal IRPF,es,calcular,/calculadora-tipo-marginal-irpf/,calc,2,irpf,/calculadora-irpf/
+calcular tipo medio y tipo marginal del IRPF,es,calcular,/calculadora-tipo-marginal-irpf/,calc,2,irpf,/datos/tramos-irpf-comunidades/
+cuánto IRPF pago si gano 1000 euros más,es,calcular,/calculadora-tipo-marginal-irpf/,calc,2,irpf,/calculadora-irpf/
+IRPF 25000 euros brutos,es,calcular,/irpf-25000-euros-brutos/,prog,1,irpf,/datos/irpf-por-comunidad-y-salario/
+cuánto IRPF pago con 30000 euros brutos,es,calcular,/irpf-30000-euros-brutos/,prog,1,irpf,/datos/irpf-por-comunidad-y-salario/
+IRPF 20000 euros brutos al año,es,calcular,/irpf-20000-euros-brutos/,prog,1,irpf,/datos/irpf-por-comunidad-y-salario/
+IRPF de 35000 euros brutos,es,calcular,/irpf-35000-euros-brutos/,prog,2,irpf,/datos/irpf-por-comunidad-y-salario/
+IRPF 40000 euros anuales,es,calcular,/irpf-40000-euros-brutos/,prog,2,irpf,/datos/irpf-por-comunidad-y-salario/
+cuánto IRPF se paga con 50000 euros brutos,es,calcular,/irpf-50000-euros-brutos/,prog,2,irpf,/irpf-40000-euros-brutos/
+IRPF 60000 euros brutos al año,es,calcular,/irpf-60000-euros-brutos/,prog,2,irpf,/irpf-50000-euros-brutos/
+IRPF 15000 euros brutos,es,calcular,/irpf-15000-euros-brutos/,prog,2,irpf,/obligacion-declarar-renta/
+IRPF 45000 euros brutos,es,calcular,/irpf-45000-euros-brutos/,prog,3,irpf,/irpf-40000-euros-brutos/
+IRPF 100000 euros brutos,es,calcular,/irpf-100000-euros-brutos/,prog,3,irpf,/datos/tipo-maximo-irpf-comunidades/
+IRPF 27500 euros brutos,es,calcular,/irpf-27500-euros-brutos/,prog,3,irpf,/irpf-25000-euros-brutos/
+IRPF 70000 euros brutos,es,calcular,/irpf-70000-euros-brutos/,prog,3,irpf,/irpf-60000-euros-brutos/
+IRPF 150000 euros brutos tipo efectivo,es,calcular,/irpf-150000-euros-brutos/,prog,3,irpf,/datos/tipo-maximo-irpf-comunidades/
+IRPF Madrid 2027 tramos,es,calcular,/irpf-madrid/,prog,1,irpf,/datos/tramos-irpf-comunidades/
+calcular IRPF Cataluña 2027,es,calcular,/irpf-cataluna/,prog,1,irpf,/datos/tramos-irpf-comunidades/
+IRPF Andalucía 2027 calcular,es,calcular,/irpf-andalucia/,prog,2,irpf,/datos/tramos-irpf-comunidades/
+IRPF Comunidad Valenciana 2027 tramos,es,calcular,/irpf-comunidad-valenciana/,prog,2,irpf,/datos/tramos-irpf-comunidades/
+IRPF Galicia tramos autonómicos 2027,es,calcular,/irpf-galicia/,prog,3,irpf,/irpf-madrid/
+calcular IRPF Baleares,es,calcular,/irpf-baleares/,prog,3,irpf,/irpf-cataluna/
+IRPF Canarias 2027 tramos,es,calcular,/irpf-canarias/,prog,3,irpf,/irpf-madrid/
+IRPF Castilla y León tramos,es,calcular,/irpf-castilla-y-leon/,prog,3,irpf,/irpf-madrid/
+calcular IRPF Murcia 2027,es,calcular,/irpf-murcia/,prog,3,irpf,/irpf-andalucia/
+IRPF Ceuta y Melilla bonificación 60%,es,calcular,/irpf-ceuta-y-melilla/,prog,3,irpf,/irpf-andalucia/
+¿estoy obligado a hacer la renta 2026?,es,comprobar,/obligacion-declarar-renta/,calc,1,renta,/
+obligación de declarar con dos pagadores 15876 euros,es,comprobar,/obligacion-declarar-renta/,calc,1,renta,/calculadora-irpf/
+¿tengo que hacer la renta si cobré el paro?,es,comprobar,/obligacion-declarar-renta/,calc,2,renta,/calculadora-irpf/
+límite de ingresos para hacer la renta 2026,es,comprobar,/obligacion-declarar-renta/,calc,1,renta,/irpf-15000-euros-brutos/
+calculadora IVA para quitar el IVA de un precio,es,calcular,/calculadora-iva/,calc,1,iva,/
+calcular IVA 21% sumar a un precio,es,calcular,/calculadora-iva/,calc,1,iva,/calculadora-factura/
+calcular precio sin IVA,es,calcular,/calculadora-iva/,calc,1,iva,/datos/tipos-iva/
+tipos de IVA 2027 tabla,es,tabla,/datos/tipos-iva/,ficha,2,iva,/calculadora-iva/
+IVA 10% o 21% qué tipo aplico,es,comprobar,/datos/tipos-iva/,ficha,2,iva,/calculadora-iva/
+calculadora factura autónomo con IRPF e IVA,es,calcular,/calculadora-factura/,calc,1,factura,/
+calcular factura con retención del 15%,es,calcular,/calculadora-factura/,calc,1,factura,/datos/tipos-retencion-irpf/
+calcular base imponible de una factura desde el total,es,calcular,/calculadora-factura/,calc,2,factura,/calculadora-iva/
+calculadora recargo de equivalencia,es,calcular,/calculadora-recargo-equivalencia/,calc,2,iva,/calculadora-iva/
+"recargo de equivalencia 5,2% calcular",es,calcular,/calculadora-recargo-equivalencia/,calc,2,iva,/datos/tipos-iva/
+calculadora modelo 303,es,calcular,/calculadora-modelo-303/,calc,1,modelos,/
+plazo modelo 303 cuarto trimestre 2026,es,plazo,/datos/calendario-fiscal-2027/,ficha,1,modelos,/calculadora-modelo-303/
+calcular IVA a pagar del trimestre,es,calcular,/calculadora-modelo-303/,calc,2,modelos,/calculadora-iva/
+calculadora modelo 130 pago fraccionado,es,calcular,/calculadora-modelo-130/,calc,1,modelos,/
+modelo 130 calcular el 20% del rendimiento,es,calcular,/calculadora-modelo-130/,calc,2,modelos,/calculadora-sueldo-neto-autonomo/
+¿estoy obligado a presentar el modelo 130?,es,comprobar,/calculadora-modelo-130/,calc,2,modelos,/datos/tipos-retencion-irpf/
+calculadora modelo 111 retenciones de trabajadores,es,calcular,/calculadora-modelos-111-115/,calc,2,modelos,/calculadora-factura/
+modelo 115 alquiler de local 19% calcular,es,calcular,/calculadora-modelos-111-115/,calc,2,modelos,/calculadora-irpf-alquiler/
+calendario fiscal 2027 AEAT,es,tabla,/datos/calendario-fiscal-2027/,ficha,1,modelos,/
+plazos de los modelos trimestrales 2027,es,plazo,/datos/calendario-fiscal-2027/,ficha,1,modelos,/calculadora-modelo-303/
+fecha límite modelo 303 y 130 en enero 2027,es,plazo,/datos/calendario-fiscal-2027/,ficha,1,modelos,/calculadora-modelo-130/
+Verifactu fecha obligatoria autónomos,es,plazo,/verifactu-obligacion-fecha/,calc,1,verifactu,/
+Verifactu cuándo es obligatorio 2027,es,plazo,/verifactu-obligacion-fecha/,calc,1,verifactu,/calculadora-factura/
+¿estoy obligado a Verifactu?,es,comprobar,/verifactu-obligacion-fecha/,calc,1,verifactu,/calculadora-factura/
+Verifactu sociedades fecha enero 2027,es,plazo,/verifactu-obligacion-fecha/,calc,2,verifactu,/datos/calendario-fiscal-2027/
+calculadora sueldo neto autónomo,es,calcular,/calculadora-sueldo-neto-autonomo/,calc,1,autonomos,/
+cuánto me queda limpio siendo autónomo,es,calcular,/calculadora-sueldo-neto-autonomo/,calc,1,autonomos,/autonomo-o-asalariado/
+autónomo facturando 3000 euros al mes cuánto me queda,es,calcular,/calculadora-sueldo-neto-autonomo/,calc,2,autonomos,/calculadora-modelo-130/
+calcular precio hora autónomo,es,calcular,/calculadora-precio-hora-autonomo/,calc,2,autonomos,/calculadora-sueldo-neto-autonomo/
+cuánto cobrar por hora como freelance,es,calcular,/calculadora-precio-hora-autonomo/,calc,2,autonomos,/calculadora-factura/
+autónomo o asalariado qué compensa más,es,comparar,/autonomo-o-asalariado/,calc,2,autonomos,/calculadora-sueldo-neto-autonomo/
+comparar sueldo neto asalariado y autónomo,es,comparar,/autonomo-o-asalariado/,calc,2,autonomos,/calculadora-precio-hora-autonomo/
+calculadora tarifa plana autónomos 2027,es,calcular,/calculadora-tarifa-plana-autonomos/,calc,1,autonomos,/
+tarifa plana 80 euros segundo año cuánto pago,es,calcular,/calculadora-tarifa-plana-autonomos/,calc,2,autonomos,/calculadora-sueldo-neto-autonomo/
+calcular ganancia patrimonial venta de piso IRPF,es,calcular,/calculadora-ganancias-patrimoniales/,calc,1,ganancias,/datos/tramos-irpf-ahorro/
+cuánto tributa la venta de acciones calcular,es,calcular,/calculadora-ganancias-patrimoniales/,calc,2,ganancias,/datos/tramos-irpf-ahorro/
+tramos IRPF del ahorro 2027,es,tabla,/datos/tramos-irpf-ahorro/,ficha,2,ganancias,/calculadora-ganancias-patrimoniales/
+calcular intereses de plazo fijo netos de impuestos,es,calcular,/calculadora-intereses-deposito/,calc,2,ahorro,/datos/tramos-irpf-ahorro/
+retención 19% intereses de un depósito calcular,es,calcular,/calculadora-intereses-deposito/,calc,3,ahorro,/datos/tipos-retencion-irpf/
+calcular IRPF del alquiler de vivienda con reducción,es,calcular,/calculadora-irpf-alquiler/,calc,2,alquiler,/calculadora-irpf/
+reducción 50% 60% 90% alquiler IRPF calcular,es,calcular,/calculadora-irpf-alquiler/,calc,2,alquiler,/calculadora-modelos-111-115/
+calcular recargo por presentar fuera de plazo,es,calcular,/calculadora-recargo-fuera-de-plazo/,calc,2,recargos,/datos/calendario-fiscal-2027/
+recargo 1% por mes de retraso Hacienda calcular,es,calcular,/calculadora-recargo-fuera-de-plazo/,calc,2,recargos,/calculadora-modelo-303/
+calcular intereses de demora de Hacienda,es,calcular,/calculadora-intereses-demora/,calc,2,recargos,/calculadora-recargo-fuera-de-plazo/
+interés de demora 2027 tabla,es,tabla,/datos/interes-legal-y-de-demora/,ficha,3,recargos,/calculadora-intereses-demora/
+interés legal del dinero 2027,es,tabla,/datos/interes-legal-y-de-demora/,ficha,2,recargos,/calculadora-intereses-demora/
+calcular dietas y kilometraje exentos,es,calcular,/calculadora-dietas-kilometraje/,calc,2,dietas,/calculadora-sueldo-neto-autonomo/
+"kilometraje 0,26 euros por km calcular",es,calcular,/calculadora-dietas-kilometraje/,calc,2,dietas,/datos/dietas-exentas-irpf/
+dietas exentas IRPF 2027 tabla,es,tabla,/datos/dietas-exentas-irpf/,ficha,3,dietas,/calculadora-dietas-kilometraje/
+IRPF 25000 euros Madrid,es,calcular,/irpf-25000-euros-madrid/,nueva,2,irpf,/irpf-madrid/
+IRPF 30000 euros Madrid cuánto pago,es,calcular,/irpf-30000-euros-madrid/,nueva,1,irpf,/irpf-madrid/
+IRPF 40000 euros brutos Madrid,es,calcular,/irpf-40000-euros-madrid/,nueva,2,irpf,/irpf-madrid/
+IRPF 30000 euros Cataluña,es,calcular,/irpf-30000-euros-cataluna/,nueva,1,irpf,/irpf-cataluna/
+IRPF 20000 euros Andalucía,es,calcular,/irpf-20000-euros-andalucia/,nueva,2,irpf,/irpf-andalucia/
+IRPF 35000 euros Comunidad Valenciana,es,calcular,/irpf-35000-euros-comunidad-valenciana/,nueva,3,irpf,/irpf-comunidad-valenciana/
+IRPF 12000 euros brutos,es,calcular,/irpf-12000-euros-brutos/,nueva,3,irpf,/irpf-15000-euros-brutos/
+IRPF 200000 euros brutos,es,calcular,/irpf-200000-euros-brutos/,nueva,3,irpf,/irpf-150000-euros-brutos/
+IRPF Navarra 2027 tramos forales,es,calcular,/irpf-navarra/,nueva,2,irpf,/datos/tramos-irpf-comunidades/
+IRPF País Vasco Bizkaia 2027,es,calcular,/irpf-pais-vasco/,nueva,2,irpf,/datos/tramos-irpf-comunidades/
+fechas renta 2026 cuándo empieza y termina,es,plazo,/calendario-renta-2026/,nueva,1,renta,/obligacion-declarar-renta/
+calcular renta conjunta o individual qué me sale mejor,es,comparar,/renta-conjunta-o-individual/,nueva,1,renta,/calculadora-irpf/
+calcular deducción por maternidad 2027,es,calcular,/calculadora-deduccion-maternidad/,nueva,2,renta,/datos/minimo-personal-familiar-irpf/
+cuánto ahorro en la renta con un plan de pensiones,es,calcular,/calculadora-ahorro-fiscal-plan-pensiones/,nueva,1,renta,/calculadora-tipo-marginal-irpf/
+calcular deducción por donativos IRPF,es,calcular,/calculadora-deduccion-donativos/,nueva,3,renta,/calculadora-irpf/
+deducciones autonómicas IRPF 2026 tabla por comunidad,es,tabla,/datos/deducciones-autonomicas-irpf/,nueva,2,renta,/datos/tramos-irpf-comunidades/
+calculadora modelo 390 resumen anual IVA,es,calcular,/calculadora-modelo-390/,nueva,2,modelos,/calculadora-modelo-303/
+¿estoy obligado a presentar el modelo 347?,es,comprobar,/obligacion-modelo-347/,nueva,2,modelos,/datos/calendario-fiscal-2027/
+calculadora modelo 131 módulos,es,calcular,/calculadora-modelo-131/,nueva,3,modelos,/calculadora-modelo-130/
+calculadora IGIC Canarias 7%,es,calcular,/calculadora-igic/,nueva,2,iva,/calculadora-iva/
+calculadora impuesto de sucesiones 2027,es,calcular,/calculadora-impuesto-sucesiones/,nueva,1,sucesiones,/datos/tramos-irpf-ahorro/
+impuesto de sucesiones Madrid calcular,es,calcular,/impuesto-sucesiones-madrid/,nueva,2,sucesiones,/irpf-madrid/
+impuesto de sucesiones Andalucía cuánto pago,es,calcular,/impuesto-sucesiones-andalucia/,nueva,2,sucesiones,/irpf-andalucia/
+impuesto de sucesiones Cataluña calcular,es,calcular,/impuesto-sucesiones-cataluna/,nueva,2,sucesiones,/irpf-cataluna/
+calculadora impuesto de donaciones,es,calcular,/calculadora-impuesto-donaciones/,nueva,2,sucesiones,/calculadora-ganancias-patrimoniales/
+calculadora impuesto sobre el patrimonio 2027,es,calcular,/calculadora-impuesto-patrimonio/,nueva,3,patrimonio,/datos/tipo-maximo-irpf-comunidades/
+autónomo facturando 20000 euros al año cuánto paga,es,calcular,/autonomo-facturando-20000-euros/,nueva,2,autonomos,/calculadora-sueldo-neto-autonomo/
+autónomo que factura 30000 euros cuánto le queda,es,calcular,/autonomo-facturando-30000-euros/,nueva,1,autonomos,/calculadora-sueldo-neto-autonomo/
+autónomo facturando 40000 euros impuestos,es,calcular,/autonomo-facturando-40000-euros/,nueva,2,autonomos,/calculadora-sueldo-neto-autonomo/
+autónomo que factura 60000 euros cuánto paga,es,calcular,/autonomo-facturando-60000-euros/,nueva,2,autonomos,/calculadora-sueldo-neto-autonomo/
+sociedad limitada o autónomo a partir de cuánto compensa,es,comparar,/sociedad-limitada-o-autonomo/,nueva,1,autonomos,/autonomo-o-asalariado/
+calculadora impuesto de sociedades 2027,es,calcular,/calculadora-impuesto-sociedades/,nueva,2,sociedades,/autonomo-o-asalariado/
+calcular IRPF de criptomonedas,es,calcular,/calculadora-irpf-criptomonedas/,nueva,2,ganancias,/calculadora-ganancias-patrimoniales/
+calcular exención por reinversión en vivienda habitual,es,calcular,/calculadora-reinversion-vivienda/,nueva,3,ganancias,/calculadora-ganancias-patrimoniales/
+calcular sanción Verifactu software no adaptado,es,comprobar,/sancion-verifactu/,nueva,3,verifactu,/verifactu-obligacion-fecha/
+calculadora IRPF 2027 en català,ca,calcular,/ca/calculadora-irpf/,calc,2,irpf,/ca/
+calculadora renda 2026,ca,calcular,/ca/calculadora-irpf/,calc,1,renta,/ca/obligacio-declarar-renda/
+simulador renda 2026 a retornar o a pagar,ca,calcular,/ca/calculadora-irpf/,calc,1,renta,/ca/obligacio-declarar-renda/
+renda 2026 Catalunya quant em surt,ca,calcular,/ca/irpf-catalunya/,prog,1,renta,/ca/calculadora-irpf/
+trams IRPF Catalunya 2027,ca,calcular,/ca/irpf-catalunya/,prog,1,irpf,/ca/dades/trams-irpf-comunitats/
+calcular l'IRPF d'un sou brut,ca,calcular,/ca/calculadora-irpf/,calc,2,irpf,/ca/dades/irpf-per-comunitat-i-salari/
+taula trams IRPF per comunitats,ca,tabla,/ca/dades/trams-irpf-comunitats/,ficha,2,irpf,/ca/calculadora-irpf/
+tipus màxim IRPF per comunitats,ca,tabla,/ca/dades/tipus-maxim-irpf-comunitats/,ficha,3,irpf,/ca/calculadora-tipus-marginal-irpf/
+taula IRPF per comunitat i salari,ca,tabla,/ca/dades/irpf-per-comunitat-i-salari/,ficha,3,irpf,/ca/calculadora-irpf/
+mínim personal i familiar IRPF 2027,ca,tabla,/ca/dades/minim-personal-familiar-irpf/,ficha,3,irpf,/ca/calculadora-irpf/
+tipus de retenció IRPF 2027,ca,tabla,/ca/dades/tipus-retencio-irpf/,ficha,2,irpf,/ca/calculadora-factura/
+retenció IRPF autònoms 7% nous autònoms,ca,tabla,/ca/dades/tipus-retencio-irpf/,ficha,2,autonomos,/ca/calculadora-factura/
+calcular tipus marginal IRPF,ca,calcular,/ca/calculadora-tipus-marginal-irpf/,calc,3,irpf,/ca/calculadora-irpf/
+IRPF 25000 euros bruts,ca,calcular,/ca/irpf-25000-euros-bruts/,prog,2,irpf,/ca/dades/irpf-per-comunitat-i-salari/
+quant IRPF pago amb 30000 euros bruts,ca,calcular,/ca/irpf-30000-euros-bruts/,prog,2,irpf,/ca/dades/irpf-per-comunitat-i-salari/
+IRPF 20000 euros bruts,ca,calcular,/ca/irpf-20000-euros-bruts/,prog,2,irpf,/ca/dades/irpf-per-comunitat-i-salari/
+IRPF 35000 euros bruts,ca,calcular,/ca/irpf-35000-euros-bruts/,prog,3,irpf,/ca/irpf-30000-euros-bruts/
+IRPF 40000 euros bruts,ca,calcular,/ca/irpf-40000-euros-bruts/,prog,3,irpf,/ca/irpf-35000-euros-bruts/
+IRPF 50000 euros bruts,ca,calcular,/ca/irpf-50000-euros-bruts/,prog,3,irpf,/ca/irpf-40000-euros-bruts/
+IRPF Illes Balears 2027,ca,calcular,/ca/irpf-illes-balears/,prog,2,irpf,/ca/dades/trams-irpf-comunitats/
+IRPF Comunitat Valenciana 2027 trams,ca,calcular,/ca/irpf-comunitat-valenciana/,prog,2,irpf,/ca/dades/trams-irpf-comunitats/
+IRPF Madrid o Catalunya on es paga menys,ca,comparar,/ca/irpf-madrid/,prog,3,irpf,/ca/irpf-catalunya/
+estic obligat a fer la renda 2026,ca,comprobar,/ca/obligacio-declarar-renda/,calc,1,renta,/ca/
+obligació de declarar amb dos pagadors,ca,comprobar,/ca/obligacio-declarar-renda/,calc,2,renta,/ca/calculadora-irpf/
+calculadora IVA per treure l'IVA,ca,calcular,/ca/calculadora-iva/,calc,1,iva,/ca/
+calcular preu sense IVA,ca,calcular,/ca/calculadora-iva/,calc,1,iva,/ca/dades/tipus-iva/
+tipus d'IVA 2027,ca,tabla,/ca/dades/tipus-iva/,ficha,2,iva,/ca/calculadora-iva/
+calculadora factura autònom amb IRPF,ca,calcular,/ca/calculadora-factura/,calc,1,factura,/ca/
+calcular factura amb retenció del 15%,ca,calcular,/ca/calculadora-factura/,calc,2,factura,/ca/dades/tipus-retencio-irpf/
+calculadora recàrrec d'equivalència,ca,calcular,/ca/calculadora-recarrec-equivalencia/,calc,3,iva,/ca/calculadora-iva/
+calculadora model 303,ca,calcular,/ca/calculadora-model-303/,calc,1,modelos,/ca/
+termini model 303 quart trimestre,ca,plazo,/ca/dades/calendari-fiscal-2027/,ficha,1,modelos,/ca/calculadora-model-303/
+calculadora model 130,ca,calcular,/ca/calculadora-model-130/,calc,2,modelos,/ca/calculadora-sou-net-autonom/
+calculadora models 111 i 115,ca,calcular,/ca/calculadora-models-111-115/,calc,3,modelos,/ca/calculadora-factura/
+calendari fiscal 2027,ca,tabla,/ca/dades/calendari-fiscal-2027/,ficha,1,modelos,/ca/
+terminis dels models trimestrals 2027,ca,plazo,/ca/dades/calendari-fiscal-2027/,ficha,2,modelos,/ca/calculadora-model-303/
+Verifactu data obligatòria autònoms,ca,plazo,/ca/verifactu-obligacio-data/,calc,1,verifactu,/ca/
+estic obligat a Verifactu,ca,comprobar,/ca/verifactu-obligacio-data/,calc,1,verifactu,/ca/calculadora-factura/
+Verifactu quan és obligatori,ca,plazo,/ca/verifactu-obligacio-data/,calc,2,verifactu,/ca/dades/calendari-fiscal-2027/
+calculadora sou net autònom,ca,calcular,/ca/calculadora-sou-net-autonom/,calc,1,autonomos,/ca/
+quant em queda net com a autònom,ca,calcular,/ca/calculadora-sou-net-autonom/,calc,2,autonomos,/ca/autonom-o-assalariat/
+calcular preu hora autònom,ca,calcular,/ca/calculadora-preu-hora-autonom/,calc,2,autonomos,/ca/calculadora-sou-net-autonom/
+autònom o assalariat què surt més a compte,ca,comparar,/ca/autonom-o-assalariat/,calc,2,autonomos,/ca/calculadora-sou-net-autonom/
+calculadora tarifa plana autònoms,ca,calcular,/ca/calculadora-tarifa-plana-autonoms/,calc,1,autonomos,/ca/
+quota autònoms 2027 tarifa plana 80 euros,ca,calcular,/ca/calculadora-tarifa-plana-autonoms/,calc,2,autonomos,/ca/calculadora-sou-net-autonom/
+calcular guany patrimonial venda pis,ca,calcular,/ca/calculadora-guanys-patrimonials/,calc,2,ganancias,/ca/dades/trams-irpf-estalvi/
+trams IRPF de l'estalvi 2027,ca,tabla,/ca/dades/trams-irpf-estalvi/,ficha,3,ganancias,/ca/calculadora-guanys-patrimonials/
+calcular interessos dipòsit a termini,ca,calcular,/ca/calculadora-interessos-diposit/,calc,3,ahorro,/ca/dades/trams-irpf-estalvi/
+calcular IRPF lloguer d'habitatge,ca,calcular,/ca/calculadora-irpf-lloguer/,calc,2,alquiler,/ca/calculadora-irpf/
+calcular recàrrec fora de termini Hisenda,ca,calcular,/ca/calculadora-recarrec-fora-de-termini/,calc,2,recargos,/ca/dades/calendari-fiscal-2027/
+calcular interessos de demora,ca,calcular,/ca/calculadora-interessos-demora/,calc,3,recargos,/ca/calculadora-recarrec-fora-de-termini/
+interès legal del diner 2027,ca,tabla,/ca/dades/interes-legal-i-de-demora/,ficha,3,recargos,/ca/calculadora-interessos-demora/
+calcular dietes i quilometratge,ca,calcular,/ca/calculadora-dietes-quilometratge/,calc,3,dietas,/ca/calculadora-sou-net-autonom/
+dietes exemptes IRPF 2027,ca,tabla,/ca/dades/dietes-exemptes-irpf/,ficha,3,dietas,/ca/calculadora-dietes-quilometratge/
+IRPF 30000 euros Catalunya,ca,calcular,/ca/irpf-30000-euros-catalunya/,nueva,2,irpf,/ca/irpf-catalunya/
+IRPF 25000 euros Catalunya quant pago,ca,calcular,/ca/irpf-25000-euros-catalunya/,nueva,2,irpf,/ca/irpf-catalunya/
+IRPF 40000 euros bruts Catalunya,ca,calcular,/ca/irpf-40000-euros-catalunya/,nueva,3,irpf,/ca/irpf-catalunya/
+IRPF Navarra 2027,ca,calcular,/ca/irpf-navarra/,nueva,3,irpf,/ca/dades/trams-irpf-comunitats/
+IRPF País Basc 2027,ca,calcular,/ca/irpf-pais-basc/,nueva,3,irpf,/ca/dades/trams-irpf-comunitats/
+dates renda 2026 quan comença,ca,plazo,/ca/calendari-renda-2026/,nueva,1,renta,/ca/obligacio-declarar-renda/
+renda conjunta o individual què em surt millor,ca,comparar,/ca/renda-conjunta-o-individual/,nueva,1,renta,/ca/calculadora-irpf/
+quant estalvio a la renda amb un pla de pensions,ca,calcular,/ca/calculadora-estalvi-fiscal-pla-pensions/,nueva,2,renta,/ca/calculadora-tipus-marginal-irpf/
+deduccions autonòmiques IRPF Catalunya 2026,ca,tabla,/ca/dades/deduccions-autonomiques-irpf/,nueva,2,renta,/ca/irpf-catalunya/
+calculadora model 390 resum anual IVA,ca,calcular,/ca/calculadora-model-390/,nueva,3,modelos,/ca/calculadora-model-303/
+estic obligat a presentar el model 347,ca,comprobar,/ca/obligacio-model-347/,nueva,3,modelos,/ca/dades/calendari-fiscal-2027/
+calculadora impost de successions Catalunya,ca,calcular,/ca/impost-successions-catalunya/,nueva,1,sucesiones,/ca/irpf-catalunya/
+calculadora impost de successions 2027,ca,calcular,/ca/calculadora-impost-successions/,nueva,2,sucesiones,/ca/dades/trams-irpf-estalvi/
+calculadora impost de donacions,ca,calcular,/ca/calculadora-impost-donacions/,nueva,3,sucesiones,/ca/calculadora-guanys-patrimonials/
+calculadora impost sobre el patrimoni Catalunya,ca,calcular,/ca/calculadora-impost-patrimoni/,nueva,3,patrimonio,/ca/dades/tipus-maxim-irpf-comunitats/
+autònom que factura 30000 euros quant li queda,ca,calcular,/ca/autonom-facturant-30000-euros/,nueva,2,autonomos,/ca/calculadora-sou-net-autonom/
+societat limitada o autònom a partir de quan compensa,ca,comparar,/ca/societat-limitada-o-autonom/,nueva,2,autonomos,/ca/autonom-o-assalariat/
+calculadora impost de societats 2027,ca,calcular,/ca/calculadora-impost-societats/,nueva,3,sociedades,/ca/autonom-o-assalariat/
+calcular IRPF de criptomonedes,ca,calcular,/ca/calculadora-irpf-criptomonedes/,nueva,3,ganancias,/ca/calculadora-guanys-patrimonials/

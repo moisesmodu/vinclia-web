@@ -1,0 +1,109 @@
+---
+// Plantilla de todas las páginas: SEO (canónica, hreflang, Open Graph, datos estructurados), colores del sitio,
+// consentimiento de Google (TCF 2.2) y AdSense solo si hay cuenta, y Umami (analítica sin cookies).
+import '../styles/base.css';
+import type { Lang } from '../lib/def';
+import { sitio, anunciosActivos, pubId } from '../lib/sitio';
+import { url, absoluta, buscar } from '../lib/rutas';
+import { UI } from '../lib/ui';
+
+interface Props {
+  lang: Lang;
+  titulo: string;
+  descripcion: string;
+  ruta: string;
+  alternas: Partial<Record<Lang, string>>;
+  jsonld?: object[];
+  actual?: 'inicio' | 'datos' | 'sobre';
+}
+const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual } = Astro.props;
+const u = UI[lang];
+const c = sitio.colores;
+const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--acento:${c.acento};--fondo:${c.fondo};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`;
+const otra: Lang = lang === 'es' ? 'ca' : 'es';
+const inicio = buscar('inicio', lang)!;
+const datos = buscar('fichas', lang)!;
+const sobre = buscar('legal:sobre', lang)!;
+const favicon = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="${c.primario}"/><text x="32" y="44" font-family="system-ui,sans-serif" font-size="34" font-weight="900" text-anchor="middle" fill="${c.acento}">${sitio.marca}</text></svg>`)}`;
+const ads = anunciosActivos();
+const cliente = sitio.adsense.cliente;
+const titCompleto = titulo.includes(sitio.nombre) ? titulo : `${titulo} | ${sitio.nombre}`;
+const anio = new Date().getFullYear();
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{titCompleto}</title>
+  <meta name="description" content={descripcion} />
+  <link rel="canonical" href={absoluta(ruta)} />
+  {Object.entries(alternas).map(([l, r]) => <link rel="alternate" hreflang={l} href={absoluta(r!)} />)}
+  {alternas.es !== undefined && <link rel="alternate" hreflang="x-default" href={absoluta(alternas.es)} />}
+  <meta name="theme-color" content={c.primario} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={sitio.nombre} />
+  <meta property="og:title" content={titulo} />
+  <meta property="og:description" content={descripcion} />
+  <meta property="og:url" content={absoluta(ruta)} />
+  <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'ca_ES'} />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href={favicon} type="image/svg+xml" />
+  {sitio.searchConsole.verificacion && <meta name="google-site-verification" content={sitio.searchConsole.verificacion} />}
+  <style set:html={vars}></style>
+  {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+  {ads && (
+    <script is:inline set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+(function(){var c=${JSON.stringify(cliente)},p=${JSON.stringify(pubId())},h=0;function a(s,x){var e=document.createElement('script');e.async=true;e.src=s;if(x)e.crossOrigin='anonymous';document.head.appendChild(e)}
+function cargar(){if(h)return;h=1;a('https://fundingchoicesmessages.google.com/i/'+p+'?ers=1');
+(function(){function s(){if(!window.frames.googlefcPresent){if(document.body){var i=document.createElement('iframe');i.style.cssText='width:0;height:0;border:none;z-index:-1000;left:-1000px;top:-1000px;display:none';i.name='googlefcPresent';document.body.appendChild(i)}else{setTimeout(s,0)}}}s()})();
+a('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+c,1);
+document.querySelectorAll('ins.adsbygoogle').forEach(function(){(window.adsbygoogle=window.adsbygoogle||[]).push({})})}
+['scroll','pointerdown','keydown','touchstart'].forEach(function(e){addEventListener(e,cargar,{once:true,passive:true})});
+addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
+  )}
+  {sitio.umami.id && <script is:inline defer src={sitio.umami.src} data-website-id={sitio.umami.id} data-do-not-track="true"></script>}
+</head>
+<body>
+  <a class="saltar" href="#contenido">{u.saltar}</a>
+  <header class="cab">
+    <div class="env">
+      <a class="logo" href={url(inicio.ruta)} aria-label={`${sitio.nombre}: ${u.inicio}`}><span class="logo-m" aria-hidden="true">{sitio.marca}</span>{sitio.nombre}</a>
+      <nav class="nav" aria-label={u.menu}>
+        <a href={url(inicio.ruta) + '#calculadoras'} aria-current={actual === 'inicio' ? 'page' : undefined}>{u.calculadoras}</a>
+        <a href={url(datos.ruta)} aria-current={actual === 'datos' ? 'page' : undefined}>{u.datos}</a>
+        {alternas[otra] !== undefined && <a class="idioma" href={url(alternas[otra]!)} hreflang={otra} lang={otra} title={u.cambiarIdioma}>{u.idioma}</a>}
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="env">
+    <slot />
+  </main>
+  <footer class="pie">
+    <div class="env">
+      <div>
+        <h2>{sitio.nombre}</h2>
+        <p>{sitio.lema[lang]}.</p>
+        <p>© {anio} {sitio.titular.nombre} · <a href={url(sobre.ruta)}>{u.legal.sobre}</a></p>
+      </div>
+      <div>
+        <h2>{u.datos}</h2>
+        <ul>
+          <li><a href={url(datos.ruta)}>{u.todas}</a></li>
+          <li><a href={url(inicio.ruta) + '#calculadoras'}>{u.calculadoras}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href={url(buscar('legal:aviso', lang)!.ruta)}>{u.legal.aviso}</a></li>
+          <li><a href={url(buscar('legal:privacidad', lang)!.ruta)}>{u.legal.privacidad}</a></li>
+          <li><a href={url(buscar('legal:cookies', lang)!.ruta)}>{u.legal.cookies}</a></li>
+          {ads && <li><button type="button" id="gestionar-cookies">{u.legal.gestionar}</button></li>}
+        </ul>
+      </div>
+    </div>
+  </footer>
+  {ads && <script is:inline set:html={`document.getElementById('gestionar-cookies')?.addEventListener('click',function(){window.googlefc=window.googlefc||{};googlefc.callbackQueue=googlefc.callbackQueue||[];googlefc.callbackQueue.push({'CONSENT_DATA_READY':function(){googlefc.showRevocationMessage()}});dispatchEvent(new Event('scroll'))})`} />}
+</body>
+</html>

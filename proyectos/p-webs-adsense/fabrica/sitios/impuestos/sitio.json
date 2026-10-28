@@ -1,0 +1,125 @@
+{
+  "id": "impuestos",
+  "pais": "es",
+  "idiomas": [
+    "es",
+    "ca"
+  ],
+  "dominio": "https://impuestoclaro.es",
+  "nombre": "ImpuestoClaro",
+  "lema": {
+    "es": "Calculadoras de impuestos y autónomos con datos oficiales",
+    "ca": "Calculadores d’impostos i autònoms amb dades oficials"
+  },
+  "descripcion": {
+    "es": "IRPF por comunidad, IVA, factura con retención, modelos 303 y 130, Verifactu 2027, recargos y obligación de declarar. Cálculos con la normativa de la AEAT, en castellano y catalán.",
+    "ca": "IRPF per comunitat, IVA, factura amb retenció, models 303 i 130, Verifactu 2027, recàrrecs i obligació de declarar. Càlculs amb la normativa de l’AEAT, en català i castellà."
+  },
+  "colores": {
+    "primario": "#2b3a8c",
+    "primarioOscuro": "#1f2a68",
+    "acento": "#e4572e",
+    "fondo": "#f5f6fa",
+    "superficie": "#ffffff",
+    "tinta": "#191b25",
+    "suave": "#575c70",
+    "borde": "#d9dce8"
+  },
+  "marca": "%",
+  "anioPorDefecto": 2027,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio",
+      "ca": "Editor i responsable del lloc"
+    },
+    "bio": {
+      "es": "Autónomo en Lleida y dueño de una pequeña empresa de formación: presenta sus propios modelos 303 y 130 cada trimestre. Programa cada calculadora sobre la ley del IRPF, la del IVA y los manuales de la Agencia Tributaria.",
+      "ca": "Autònom a Lleida i propietari d’una petita empresa de formació: presenta els seus propis models 303 i 130 cada trimestre. Programa cada calculadora sobre la llei de l’IRPF, la de l’IVA i els manuals de l’Agència Tributària."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@impuestoclaro.es"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "irpf-renta",
+    "tipo-marginal-irpf",
+    "obligacion-declarar",
+    "iva",
+    "factura",
+    "recargo-equivalencia",
+    "modelo-303",
+    "modelo-130",
+    "retenciones-111-115",
+    "verifactu",
+    "sueldo-neto-autonomo",
+    "precio-hora-autonomo",
+    "autonomo-o-asalariado",
+    "tarifa-plana-autonomos",
+    "ganancias-patrimoniales",
+    "intereses-deposito",
+    "alquiler-irpf",
+    "recargo-fuera-plazo",
+    "intereses-demora",
+    "dietas-kilometraje"
+  ],
+  "destacadas": [
+    "irpf-renta",
+    "iva",
+    "factura",
+    "modelo-303",
+    "modelo-130",
+    "verifactu"
+  ],
+  "rutasDatos": {
+    "es": "datos",
+    "ca": "dades"
+  },
+  "programaticas": [
+    {
+      "id": "irpf-por-comunidad",
+      "plantilla": "irpf-por-comunidad",
+      "csv": "comunidades.csv",
+      "slug": {
+        "es": "irpf-{slug_es}",
+        "ca": "irpf-{slug_ca}"
+      },
+      "calc": "irpf-renta",
+      "titulo": {
+        "es": "IRPF por comunidad autónoma",
+        "ca": "IRPF per comunitat autònoma"
+      }
+    },
+    {
+      "id": "irpf-por-salario",
+      "plantilla": "irpf-por-salario",
+      "csv": "irpf-salario.csv",
+      "slug": {
+        "es": "irpf-{bruto}-euros-brutos",
+        "ca": "irpf-{bruto}-euros-bruts"
+      },
+      "calc": "irpf-renta",
+      "titulo": {
+        "es": "IRPF según el salario",
+        "ca": "IRPF segons el salari"
+      }
+    }
+  ]
+}

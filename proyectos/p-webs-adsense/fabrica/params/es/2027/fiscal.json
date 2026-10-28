@@ -1,0 +1,1198 @@
+{
+  "pais": "es",
+  "anio": 2027,
+  "estado": "provisional",
+  "actualizado": "2026-10-27",
+  "notas_generales": [
+    "Ejercicio 2027: solo se han cambiado los valores ya legislados a 27-10-2026; el resto se copia de 2026 y se marca 'provisional': true en el bloque.",
+    "Cortes disueltas (RD 806/2026) y elecciones generales el 29-11-2026: no hay proyecto de PGE 2027 ni reformas estatales del IRPF aprobadas para 2027.",
+    "Red de la sesión restringida: datos contrastados mediante resultados de búsqueda, no por lectura directa de BOE/AEAT."
+  ],
+  "irpf": {
+    "escala_estatal": [
+      {
+        "hasta": 12450,
+        "tipo": 9.5
+      },
+      {
+        "hasta": 20200,
+        "tipo": 12
+      },
+      {
+        "hasta": 35200,
+        "tipo": 15
+      },
+      {
+        "hasta": 60000,
+        "tipo": 18.5
+      },
+      {
+        "hasta": 300000,
+        "tipo": 22.5
+      },
+      {
+        "hasta": null,
+        "tipo": 24.5
+      }
+    ],
+    "escala_estatal_fuente": {
+      "nombre": "LIRPF art. 63.1 / AEAT Manual Renta 2025 - gravamen estatal",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-estatal.html"
+    },
+    "escalas_autonomicas": {
+      "AN": {
+        "nombre": "Andalucía",
+        "escala": [
+          {
+            "hasta": 13000,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 21100,
+            "tipo": 12
+          },
+          {
+            "hasta": 35200,
+            "tipo": 15
+          },
+          {
+            "hasta": 60000,
+            "tipo": 18.5
+          },
+          {
+            "hasta": null,
+            "tipo": 22.5
+          }
+        ],
+        "minimo_personal": 5790,
+        "verificado": true,
+        "nota": "Escala 2025 (art. 23 Ley 5/2021) comprobada con cuotas acumuladas del manual AEAT; sin cambios aprobados para 2026 localizados. Mínimo propio 5.790 € (+1.200 >65, +1.460 >75). La Junta anuncia rebaja de 1 punto en la legislatura (0,25/año) para rentas hasta 60.000 €, no legislada para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Andalucía)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "AR": {
+        "nombre": "Aragón",
+        "escala": [
+          {
+            "hasta": 13072.5,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 21210,
+            "tipo": 12
+          },
+          {
+            "hasta": 36960,
+            "tipo": 15
+          },
+          {
+            "hasta": 52500,
+            "tipo": 18.5
+          },
+          {
+            "hasta": 60000,
+            "tipo": 20.5
+          },
+          {
+            "hasta": 80000,
+            "tipo": 23
+          },
+          {
+            "hasta": 90000,
+            "tipo": 24
+          },
+          {
+            "hasta": 130000,
+            "tipo": 25
+          },
+          {
+            "hasta": null,
+            "tipo": 25.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 (art. 110-1 DLeg 1/2005); cuota acumulada en 130.000 € = 25.993,29 € comprobada. Sin cambios localizados para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-aragon.html"
+        },
+        "provisional": true
+      },
+      "AS": {
+        "nombre": "Principado de Asturias",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 9
+          },
+          {
+            "hasta": 17707.2,
+            "tipo": 12
+          },
+          {
+            "hasta": 33007.2,
+            "tipo": 14
+          },
+          {
+            "hasta": 53407.2,
+            "tipo": 19.2
+          },
+          {
+            "hasta": 70000,
+            "tipo": 21.5
+          },
+          {
+            "hasta": 90000,
+            "tipo": 22.5
+          },
+          {
+            "hasta": 175000,
+            "tipo": 25
+          },
+          {
+            "hasta": null,
+            "tipo": 26
+          }
+        ],
+        "minimo_personal": 6105,
+        "verificado": true,
+        "nota": "Ley del Principado 3/2025, de 19 de noviembre (BOPA 2-12-2025) modifica la escala y eleva mínimos un 10 % con efectos desde el ejercicio 2025 (1.er tramo 10->9 %, 4.º 18,5->19,2 %, último 25,5->26 %). Mínimo 6.105 € (+1.265 >65, +1.540 >75). Sin cambios posteriores localizados para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-principado-asturias.html"
+        },
+        "provisional": true
+      },
+      "IB": {
+        "nombre": "Illes Balears",
+        "escala": [
+          {
+            "hasta": 10000,
+            "tipo": 9
+          },
+          {
+            "hasta": 18000,
+            "tipo": 11.25
+          },
+          {
+            "hasta": 30000,
+            "tipo": 14.25
+          },
+          {
+            "hasta": 48000,
+            "tipo": 17.5
+          },
+          {
+            "hasta": 70000,
+            "tipo": 19
+          },
+          {
+            "hasta": 90000,
+            "tipo": 21.75
+          },
+          {
+            "hasta": 120000,
+            "tipo": 22.75
+          },
+          {
+            "hasta": 175000,
+            "tipo": 23.75
+          },
+          {
+            "hasta": null,
+            "tipo": 24.75
+          }
+        ],
+        "minimo_personal": 6105,
+        "verificado": false,
+        "nota": "Los 9 tipos (9 % a 24,75 %) y el mínimo propio de 6.105 € (+1.265 >65, +1.540 >75; descendientes 2.400/2.970/4.400/4.950) están confirmados en el manual AEAT 2025; los UMBRALES intermedios de cada tramo no se han podido leer en la fuente oficial (proceden de memoria/fuentes secundarias). Revisar en el manual AEAT o BOIB.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Illes Balears)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "CN": {
+        "nombre": "Canarias",
+        "escala": [
+          {
+            "hasta": 13748,
+            "tipo": 9
+          },
+          {
+            "hasta": 19422,
+            "tipo": 11.5
+          },
+          {
+            "hasta": 35924,
+            "tipo": 14
+          },
+          {
+            "hasta": 57566,
+            "tipo": 18.5
+          },
+          {
+            "hasta": 93268,
+            "tipo": 23.5
+          },
+          {
+            "hasta": 123745,
+            "tipo": 25
+          },
+          {
+            "hasta": null,
+            "tipo": 26
+          }
+        ],
+        "minimo_personal": 5606,
+        "verificado": true,
+        "nota": "Escala deflactada un 2,1 % por la Ley 9/2025, de 23 de diciembre, de Presupuestos de Canarias para 2026, con efectos desde el ejercicio 2025 (cuotas acumuladas comprobadas). No se ha localizado una nueva deflactación para 2026, por lo que se aplica la misma. Mínimo propio 5.606 € (6.768 >65; 8.182 >75).",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-canarias.html"
+        },
+        "provisional": true
+      },
+      "CB": {
+        "nombre": "Cantabria",
+        "escala": [
+          {
+            "hasta": 13000,
+            "tipo": 8.5
+          },
+          {
+            "hasta": 21000,
+            "tipo": 11
+          },
+          {
+            "hasta": 35200,
+            "tipo": 14.5
+          },
+          {
+            "hasta": 60000,
+            "tipo": 18
+          },
+          {
+            "hasta": 90000,
+            "tipo": 22.5
+          },
+          {
+            "hasta": null,
+            "tipo": 24.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 según AEAT (la tabla oficial muestra cuota acumulada 8.505 € en 60.000 €, aritméticamente 8.508 €). Sin cambios localizados para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Cantabria)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "CL": {
+        "nombre": "Castilla y León",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 9
+          },
+          {
+            "hasta": 20200,
+            "tipo": 12
+          },
+          {
+            "hasta": 35200,
+            "tipo": 14
+          },
+          {
+            "hasta": 53407.2,
+            "tipo": 18.5
+          },
+          {
+            "hasta": null,
+            "tipo": 21.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 (cuotas acumuladas comprobadas). Sin cambios localizados para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Castilla y León)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "CM": {
+        "nombre": "Castilla-La Mancha",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 20200,
+            "tipo": 12
+          },
+          {
+            "hasta": 35200,
+            "tipo": 15
+          },
+          {
+            "hasta": 60000,
+            "tipo": 18.5
+          },
+          {
+            "hasta": null,
+            "tipo": 22.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 (cuotas acumuladas comprobadas). Sin cambios localizados para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Castilla-La Mancha)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "CT": {
+        "nombre": "Cataluña",
+        "escala": [
+          {
+            "hasta": 12500,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 22000,
+            "tipo": 12.5
+          },
+          {
+            "hasta": 33000,
+            "tipo": 16
+          },
+          {
+            "hasta": 53000,
+            "tipo": 19
+          },
+          {
+            "hasta": 90000,
+            "tipo": 21.5
+          },
+          {
+            "hasta": 120000,
+            "tipo": 23.5
+          },
+          {
+            "hasta": 175000,
+            "tipo": 24.5
+          },
+          {
+            "hasta": null,
+            "tipo": 25.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala de 8 tramos del art. 611-1 del Libro sexto del Código tributario de Cataluña (DLeg 1/2024), en la redacción dada por el Decret-llei 5/2025, de 25 de marzo, con efectos desde 2025. Comprobado con el manual AEAT 2025: cuota 1.187,50 € en 12.500 € y 36.415 € en 175.000 € (coincide aritméticamente). Ni la Llei 11/2026, de 9 de julio, de mesures fiscals (DOGC 13-7-2026) ni el Decret-llei 3/2026 modifican la tarifa según lo localizado, por lo que se mantiene para 2026. Cataluña aplica el mínimo personal y familiar estatal (5.550 €). Cualquier tabla que empiece en 10,5 % está desfasada. No se ha podido abrir el DOGC/ATC directamente (red restringida).",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-cataluna.html"
+        },
+        "provisional": true
+      },
+      "EX": {
+        "nombre": "Extremadura",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 7.75
+          },
+          {
+            "hasta": 20200,
+            "tipo": 9.75
+          },
+          {
+            "hasta": 24200,
+            "tipo": 16
+          },
+          {
+            "hasta": 35200,
+            "tipo": 17.5
+          },
+          {
+            "hasta": 60000,
+            "tipo": 21
+          },
+          {
+            "hasta": 80200,
+            "tipo": 23.5
+          },
+          {
+            "hasta": 99200,
+            "tipo": 24
+          },
+          {
+            "hasta": 120200,
+            "tipo": 24.5
+          },
+          {
+            "hasta": null,
+            "tipo": 25
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": false,
+        "nota": "Copia de 2026 (Ley 2/2026). La Junta pretende seguir rebajando 0,25 puntos al año hasta 1 punto en la legislatura; no hay norma para 2027.",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025) + Ley 2/2026 de Presupuestos de Extremadura (fuentes secundarias)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-autonoma-extremadura.html"
+        },
+        "provisional": true
+      },
+      "GA": {
+        "nombre": "Galicia",
+        "escala": [
+          {
+            "hasta": 12985.35,
+            "tipo": 9
+          },
+          {
+            "hasta": 21068.6,
+            "tipo": 11.65
+          },
+          {
+            "hasta": 35200,
+            "tipo": 14.9
+          },
+          {
+            "hasta": 60000,
+            "tipo": 18.4
+          },
+          {
+            "hasta": null,
+            "tipo": 22.5
+          }
+        ],
+        "minimo_personal": 5789,
+        "verificado": true,
+        "nota": "Copia de 2026. Rebaja anunciada el 16-10-2026 (0,25 puntos en los 4 primeros tramos, efectos desde 2026) pendiente de aprobación; si se aprueba, se aplicaría también en 2027.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Galicia)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "MD": {
+        "nombre": "Comunidad de Madrid",
+        "escala": [
+          {
+            "hasta": 13362.22,
+            "tipo": 8.5
+          },
+          {
+            "hasta": 19004.63,
+            "tipo": 10.7
+          },
+          {
+            "hasta": 35425.68,
+            "tipo": 12.8
+          },
+          {
+            "hasta": 57320.4,
+            "tipo": 17.4
+          },
+          {
+            "hasta": null,
+            "tipo": 20.5
+          }
+        ],
+        "minimo_personal": 5956.65,
+        "verificado": true,
+        "nota": "Copia de 2026. Rebaja de 0,5 puntos en todos los tramos (tipo mínimo 8 %, máximo 20 %) anunciada el 26-1-2026 con entrada en vigor prevista en 2027; no consta aprobada normativamente a 27-10-2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual práctico de Renta 2025, gravamen autonómico (escala ejercicio 2025)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunidad-madrid.html"
+        },
+        "provisional": true
+      },
+      "MC": {
+        "nombre": "Región de Murcia",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 20200,
+            "tipo": 11.2
+          },
+          {
+            "hasta": 34000,
+            "tipo": 13.3
+          },
+          {
+            "hasta": 60000,
+            "tipo": 17.9
+          },
+          {
+            "hasta": null,
+            "tipo": 22.5
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 (cuotas comprobadas: 8.540,15 € en 60.000 €). Algunas fuentes secundarias mencionan rebajas/deflactación para 2026 sin norma localizada; se mantiene la de 2025.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (Región de Murcia)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "RI": {
+        "nombre": "La Rioja",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 8
+          },
+          {
+            "hasta": 20200,
+            "tipo": 10.6
+          },
+          {
+            "hasta": 35200,
+            "tipo": 13.6
+          },
+          {
+            "hasta": 40000,
+            "tipo": 17.8
+          },
+          {
+            "hasta": 50000,
+            "tipo": 18.3
+          },
+          {
+            "hasta": 60000,
+            "tipo": 19
+          },
+          {
+            "hasta": 120000,
+            "tipo": 24.5
+          },
+          {
+            "hasta": null,
+            "tipo": 27
+          }
+        ],
+        "minimo_personal": 5550,
+        "verificado": true,
+        "nota": "Escala 2025 (cuotas comprobadas: 8.441,90 € en 60.000 €). La Ley 9/2025, de 29 de diciembre, de Medidas Fiscales para 2026 (BOE-A-2026-991) no cambia tramos pero introduce deflactación automática de tramos y mínimos si el IPC riojano de diciembre supera el 3 %; no se ha confirmado que se active para 2026.",
+        "fuente": {
+          "nombre": "AEAT - Manual Renta 2025, cuota íntegra autonómica (La Rioja)",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/8-cumplimentacion-irpf/8_4-cuota-integra/8_4_3-gravamen-base-liquidable-general/8_4_3_2-cuota-integra-autonomica.html"
+        },
+        "provisional": true
+      },
+      "VC": {
+        "nombre": "Comunitat Valenciana",
+        "escala": [
+          {
+            "hasta": 12000,
+            "tipo": 8.7
+          },
+          {
+            "hasta": 22000,
+            "tipo": 11.6
+          },
+          {
+            "hasta": 32000,
+            "tipo": 14.5
+          },
+          {
+            "hasta": 42000,
+            "tipo": 16.9
+          },
+          {
+            "hasta": 52000,
+            "tipo": 19.3
+          },
+          {
+            "hasta": 62000,
+            "tipo": 21.8
+          },
+          {
+            "hasta": 72000,
+            "tipo": 24.3
+          },
+          {
+            "hasta": 100000,
+            "tipo": 26.0
+          },
+          {
+            "hasta": 150000,
+            "tipo": 27.25
+          },
+          {
+            "hasta": 200000,
+            "tipo": 28.25
+          },
+          {
+            "hasta": null,
+            "tipo": 29.25
+          }
+        ],
+        "minimo_personal": 6105,
+        "verificado": false,
+        "nota": "Escala 2027 de la disposición transitoria tercera de la Ley 5/2026 de la Generalitat (0,1 puntos menos en cada tramo respecto a 2026), según fuentes secundarias (guiafiscal); no leída en el DOGV. Mínimo 6.105 €.",
+        "fuente": {
+          "nombre": "Ley 5/2026 Generalitat Valenciana, art. 18 (vía fuentes secundarias); escala 2025: AEAT",
+          "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-base-liquidable-general/gravamen-autonomico/comunitat-valenciana.html"
+        }
+      },
+      "CE_ML": {
+        "nombre": "Ceuta y Melilla",
+        "escala": [
+          {
+            "hasta": 12450,
+            "tipo": 9.5
+          },
+          {
+            "hasta": 20200,
+            "tipo": 12
+          },
+          {
+            "hasta": 35200,
+            "tipo": 15
+          },
+          {
+            "hasta": 60000,
+            "tipo": 18.5
+          },
+          {
+            "hasta": 300000,
+            "tipo": 22.5
+          },
+          {
+            "hasta": null,
+            "tipo": 24.5
+          }
+        ],
+        "bonificacion_cuota_pct": 60,
+        "nota": "Sin escala autonómica propia: se aplica la escala complementaria (igual a la estatal) y la deducción del 60 % de la parte de la cuota íntegra que proporcionalmente corresponda a rentas obtenidas en Ceuta o Melilla (art. 68.4 LIRPF). El RDL 23/2026 extiende en 2026 esta deducción a residentes en La Palma.",
+        "verificado": true,
+        "fuente": {
+          "nombre": "Ley 35/2006 del IRPF, art. 68.4 y 74",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+        },
+        "provisional": true
+      }
+    },
+    "foral_no_incluido": [
+      "PV",
+      "NA"
+    ],
+    "escala_ahorro_estatal": [
+      {
+        "hasta": 6000,
+        "tipo": 9.5
+      },
+      {
+        "hasta": 50000,
+        "tipo": 10.5
+      },
+      {
+        "hasta": 200000,
+        "tipo": 11.5
+      },
+      {
+        "hasta": 300000,
+        "tipo": 13.5
+      },
+      {
+        "hasta": null,
+        "tipo": 15
+      }
+    ],
+    "escala_ahorro_autonomica": [
+      {
+        "hasta": 6000,
+        "tipo": 9.5
+      },
+      {
+        "hasta": 50000,
+        "tipo": 10.5
+      },
+      {
+        "hasta": 200000,
+        "tipo": 11.5
+      },
+      {
+        "hasta": 300000,
+        "tipo": 13.5
+      },
+      {
+        "hasta": null,
+        "tipo": 15
+      }
+    ],
+    "escala_ahorro_total": [
+      {
+        "hasta": 6000,
+        "tipo": 19
+      },
+      {
+        "hasta": 50000,
+        "tipo": 21
+      },
+      {
+        "hasta": 200000,
+        "tipo": 23
+      },
+      {
+        "hasta": 300000,
+        "tipo": 27
+      },
+      {
+        "hasta": null,
+        "tipo": 30
+      }
+    ],
+    "escala_ahorro_nota": "Arts. 66 y 76 LIRPF; tramo >300.000 € elevado al 30 % total (15+15) por Ley 7/2024 con efectos 1-1-2025. Vigente en 2026.",
+    "escala_ahorro_fuente": {
+      "nombre": "AEAT Manual Renta 2025 - gravamen de la base liquidable del ahorro",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/gravamen-aplicable-contribuyentes-irpf-residentes-extranjero/gravamen-base-liquidable-ahorro.html"
+    },
+    "minimos": {
+      "personal": 5550,
+      "mayor_65": 1150,
+      "mayor_75": 1400,
+      "descendientes": [
+        2400,
+        2700,
+        4000,
+        4500
+      ],
+      "descendiente_menor_3": 2800,
+      "ascendiente_mayor_65": 1150,
+      "ascendiente_mayor_75": 1400,
+      "discapacidad_33": 3000,
+      "discapacidad_65": 9000,
+      "gastos_asistencia": 3000,
+      "nota": "Mínimos estatales (arts. 57-61 LIRPF), sin cambios en 2026. 'gastos_asistencia' = incremento por necesitar ayuda de terceros o movilidad reducida. Algunas CCAA tienen mínimos propios para la cuota autonómica (ver minimo_personal de cada comunidad).",
+      "verificado": true,
+      "fuente": {
+        "nombre": "AEAT Manual Renta 2025 - cuadro de mínimos estatal y autonómicos",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-autonomico-personal-familiar/cuadro-minimos-personales-familiares-estatal-autonomicos.html"
+      }
+    },
+    "rendimientos_trabajo": {
+      "gastos_otros_deducibles": 2000,
+      "reduccion": {
+        "tramo1_hasta": 14852,
+        "tramo1_importe": 7302,
+        "tramo2_hasta": 17673.52,
+        "tramo2_coef": 1.75,
+        "tramo3_hasta": 19747.5,
+        "tramo3_base": 2364.34,
+        "tramo3_coef": 1.14,
+        "limite_otras_rentas": 6500,
+        "formula": "RN<=14.852: 7.302; 14.852<RN<=17.673,52: 7.302-1,75*(RN-14.852); 17.673,52<RN<=19.747,5: 2.364,34-1,14*(RN-17.673,52); RN>19.747,5: 0. Solo si otras rentas (excluidas exentas) <= 6.500 €.",
+        "nota": "Art. 20 LIRPF en redacción del RDL 4/2024 (desde 2024), vigente en 2026. 14.852/7.302 confirmados en fuentes; coeficientes coherentes aritméticamente (la reducción se anula exactamente en 19.747,50).",
+        "verificado": true
+      },
+      "deduccion_smi": {
+        "importe_max": 590.89,
+        "umbral_sin_reduccion": 17094,
+        "umbral_fin": 20048.45,
+        "coef_reduccion": 0.2,
+        "limite_otras_rentas": 6500,
+        "formula": "RIT<=17.094: 590,89; 17.094<RIT<20.048,45: 590,89-0,2*(RIT-17.094); límite: parte de cuota íntegra (estatal+autonómica) atribuible a rendimientos del trabajo. RIT = rendimientos íntegros del trabajo.",
+        "nota": "Copiado de 2026 (DA 61.ª LIRPF, RDL 5/2026). Ligado al SMI 2026 (17.094 €); la adaptación al SMI 2027 está pendiente de cambio legal no aprobado a 27-10-2026.",
+        "verificado": false,
+        "fuente": {
+          "nombre": "RDL 5/2026 (BOE-A-2026, 19-2-2026) y Resolución de convalidación BOE-A-2026-6483",
+          "url": "https://www.boe.es/boe/dias/2026/03/20/pdfs/BOE-A-2026-6483.pdf"
+        }
+      },
+      "obligacion_declarar_un_pagador": 22000,
+      "obligacion_declarar_varios_pagadores": 15876,
+      "obligacion_declarar_umbral_segundo_pagador": 1500,
+      "obligacion_nota": "Art. 96 LIRPF: 22.000 € con un pagador (o varios si del 2.º y restantes <= 1.500 €); 15.876 € si 2.º y restantes > 1.500 €, pensiones compensatorias/anualidades no exentas, pagador no obligado a retener o rendimientos a tipo fijo. El umbral de 2.500 € para 2.º pagador solo se aplicó a fallecidos 1-22 enero 2025 (RDL 9/2024 no convalidado). No se han localizado cambios para el ejercicio 2026.",
+      "verificado": true,
+      "fuente": {
+        "nombre": "AEAT Manual Renta 2025 - Delimitación de la obligación de declarar",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c01-campana-declaracion-renta/quienes-estan-obligados-presentar-declaracion-irpf/delimitacion-obligacion-declarar-irpf.html"
+      }
+    },
+    "retenciones": {
+      "escala": [
+        {
+          "hasta": 12450,
+          "tipo": 19
+        },
+        {
+          "hasta": 20200,
+          "tipo": 24
+        },
+        {
+          "hasta": 35200,
+          "tipo": 30
+        },
+        {
+          "hasta": 60000,
+          "tipo": 37
+        },
+        {
+          "hasta": 300000,
+          "tipo": 45
+        },
+        {
+          "hasta": null,
+          "tipo": 47
+        }
+      ],
+      "minimo_contratos_inferiores_ano_pct": 2,
+      "minimo_general_pct": 0,
+      "limite_exento": {
+        "sin_hijos": {
+          "soltero": null,
+          "con_conyuge_sin_rentas": 17197,
+          "otras": 15876
+        },
+        "un_hijo": {
+          "soltero": 17644,
+          "con_conyuge_sin_rentas": 18130,
+          "otras": 16342
+        },
+        "dos_hijos": {
+          "soltero": 18694,
+          "con_conyuge_sin_rentas": 19262,
+          "otras": 16867
+        }
+      },
+      "limite_exento_nota": "Cuadro del art. 81 RIRPF (RD 142/2024), reproducido en el algoritmo AEAT 2026. 'soltero' = situación 1.ª (monoparental; sin hijos no aplica -> null, rige 'otras'). Confirmados en fuente 17.644, 18.694 y 15.876; resto de cifras (17.197, 18.130, 19.262, 16.342, 16.867) de memoria del RD 142/2024, no leídas en esta sesión. Pensionistas/desempleados: +600 € (art. 81.2 RIRPF).",
+      "limite_cuota_43pct": "Art. 85.3 RIRPF: la cuota de retención no puede superar el 43 % de la diferencia positiva entre la cuantía total de las retribuciones y el mínimo excluido de retención aplicable (cuadro art. 81); se aplica en la práctica cuando las retribuciones no superan 35.200 €.",
+      "algoritmo_nota": "La AEAT publica dos versiones del algoritmo 2026 (1-1 a 9-9 y desde 10-9-2026); el cambio de septiembre deriva del RDL 23/2026 (deducción La Palma), no altera la escala general.",
+      "profesionales_pct": 15,
+      "profesionales_inicio_pct": 7,
+      "alquiler_pct": 19,
+      "capital_mobiliario_pct": 19,
+      "administradores_pct": 35,
+      "administradores_reducido_pct": 19,
+      "administradores_nota": "19 % si la entidad tiene cifra de negocios < 100.000 €.",
+      "verificado": true,
+      "fuente": {
+        "nombre": "AEAT - Algoritmo de cálculo de retenciones 2026",
+        "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/ALGORITMO_2026.pdf"
+      }
+    },
+    "alquiler_vivienda": {
+      "reduccion_general_pct": 50,
+      "reducciones_ley_vivienda": "Art. 23.2 LIRPF (Ley 12/2023, contratos desde 26-5-2023): 90 % si nuevo contrato en zona de mercado residencial tensionado con renta rebajada > 5 % respecto al contrato anterior; 70 % si en zona tensionada se alquila por primera vez a joven de 18-35 años, o a Administración/entidad sin ánimo de lucro para alquiler social o vivienda asequible incentivada; 60 % si se han realizado obras de rehabilitación en los 2 años anteriores; 50 % en el resto.",
+      "contratos_anteriores_26_05_2023_pct": 60,
+      "verificado": true,
+      "nota": "Sin cambios localizados para 2026 (los decretos de vivienda de 2026 fueron rechazados por el Congreso en octubre).",
+      "fuente": {
+        "nombre": "Ley 35/2006 del IRPF (texto consolidado BOE)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+      }
+    },
+    "fuente": {
+      "nombre": "AEAT - Manual práctico de Renta 2025 (Parte 1) y LIRPF",
+      "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Biblioteca/Manual/Practicos/IRPF/IRPF-2025/ManualRenta2025Parte1_es_es.pdf"
+    },
+    "provisional": true,
+    "nota_2027": "Escala estatal, mínimos, reducción art. 20 y retenciones copiados de 2026 (sin cambios legislados). Deducción SMI: se mantiene el texto de la DA 61.ª (RDL 5/2026) mientras no se modifique; el Gobierno prevé otra deducción para que el SMI de 2027 no tribute, sin norma aprobada."
+  },
+  "iva": {
+    "general": 21,
+    "reducido": 10,
+    "superreducido": 4,
+    "recargo_equivalencia": {
+      "21": 5.2,
+      "10": 1.4,
+      "4": 0.5,
+      "tabaco": 1.75
+    },
+    "ejemplos_por_tipo": {
+      "21": [
+        "Electricidad",
+        "Gas natural",
+        "Ropa y calzado",
+        "Electrónica y electrodomésticos",
+        "Servicios profesionales (asesoría, abogacía, consultoría)",
+        "Telecomunicaciones",
+        "Peluquería",
+        "Vehículos"
+      ],
+      "10": [
+        "Hostelería y restauración",
+        "Transporte de viajeros",
+        "Vivienda nueva (no VPO)",
+        "Agua",
+        "Gafas y lentillas",
+        "Alimentos no básicos (carne, pescado, pasta)",
+        "Espectáculos culturales en vivo y cine",
+        "Ejecuciones de obra de renovación de vivienda"
+      ],
+      "4": [
+        "Pan, harinas, leche, quesos, huevos, frutas, verduras, hortalizas, legumbres, tubérculos y cereales",
+        "Aceite de oliva",
+        "Libros, periódicos y revistas",
+        "Medicamentos de uso humano",
+        "Productos de higiene femenina y anticonceptivos no medicamentos",
+        "Vivienda de protección oficial de régimen especial",
+        "Prótesis y vehículos para personas con discapacidad"
+      ],
+      "0_o_exento": [
+        "Servicios sanitarios (exento)",
+        "Enseñanza reglada (exento)",
+        "Seguros y servicios financieros (exento)",
+        "Alquiler de vivienda (exento)",
+        "Segundas y ulteriores entregas de vivienda (exento de IVA, sujeto a ITP)",
+        "Exportaciones y entregas intracomunitarias (exentas plenas)"
+      ]
+    },
+    "nota": "Tipos de la Ley 37/1992 (arts. 90 y 91) y recargo de equivalencia (art. 161). Las rebajas temporales de alimentos y electricidad finalizaron (alimentos básicos al 4 %, aceite de oliva al 4 %, electricidad al 21 % desde 2025).",
+    "verificado": true,
+    "fuente": {
+      "nombre": "Ley 37/1992 del IVA (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"
+    },
+    "provisional": true
+  },
+  "modelos": {
+    "303": {
+      "plazos": [
+        "1-20 abril",
+        "1-20 julio",
+        "1-20 octubre",
+        "1-30 enero"
+      ],
+      "nota": "Trimestral; mensual (1-30 del mes siguiente, enero hasta 30) para grandes empresas, REDEME y grupos. Domiciliación hasta el día 15 (25 de enero en el 4T)."
+    },
+    "130": {
+      "pct": 20,
+      "plazos": [
+        "1-20 abril",
+        "1-20 julio",
+        "1-20 octubre",
+        "1-30 enero"
+      ],
+      "nota": "20 % del rendimiento neto acumulado desde el 1 de enero menos pagos y retenciones anteriores. No obligado si >= 70 % de ingresos profesionales tuvieron retención el año anterior."
+    },
+    "111": {
+      "plazos": [
+        "1-20 abril",
+        "1-20 julio",
+        "1-20 octubre",
+        "1-20 enero"
+      ],
+      "nota": "Retenciones de trabajo y profesionales; mensual (1-20 del mes siguiente) para grandes empresas. Resumen anual 190 hasta 31 de enero."
+    },
+    "115": {
+      "plazos": [
+        "1-20 abril",
+        "1-20 julio",
+        "1-20 octubre",
+        "1-20 enero"
+      ],
+      "nota": "Retenciones de alquileres de inmuebles urbanos; resumen anual 180 hasta 31 de enero."
+    },
+    "349": "Declaración recapitulativa de operaciones intracomunitarias: trimestral (1-20 del mes siguiente; 4T hasta 30 de enero) o mensual si las entregas/prestaciones superan 50.000 € en el trimestre.",
+    "390": "Resumen anual de IVA: 1-30 de enero del año siguiente (no lo presentan quienes llevan SII ni algunos casos exonerados).",
+    "100": "Campaña de Renta 2027: previsiblemente abril-30 de junio de 2028 (sin orden publicada). En 2027 se presenta la Renta 2026 (abril-30 junio 2027, previsto).",
+    "calendario_2027": [
+      {
+        "fecha": "2027-01-20",
+        "modelos": [
+          "111",
+          "115",
+          "123",
+          "216"
+        ],
+        "nota": "4T 2026 retenciones"
+      },
+      {
+        "fecha": "2027-02-01",
+        "modelos": [
+          "130",
+          "131",
+          "303",
+          "349",
+          "390",
+          "180",
+          "190",
+          "193"
+        ],
+        "nota": "Plazo del 30/31 de enero trasladado al lunes 1 de febrero por caer en fin de semana"
+      },
+      {
+        "fecha": "2027-03-01",
+        "modelos": [
+          "347"
+        ],
+        "nota": "Plazo de febrero; 28-2-2027 es domingo"
+      },
+      {
+        "fecha": "2027-04-20",
+        "modelos": [
+          "111",
+          "115",
+          "123",
+          "130",
+          "131",
+          "303",
+          "349",
+          "202"
+        ],
+        "nota": "1T 2027 y primer pago fraccionado IS"
+      },
+      {
+        "fecha": "2027-06-30",
+        "modelos": [
+          "100",
+          "714"
+        ],
+        "nota": "Fin previsto campaña Renta y Patrimonio 2026 (pendiente de orden)"
+      },
+      {
+        "fecha": "2027-07-20",
+        "modelos": [
+          "111",
+          "115",
+          "123",
+          "130",
+          "131",
+          "303",
+          "349"
+        ],
+        "nota": "2T 2027"
+      },
+      {
+        "fecha": "2027-07-26",
+        "modelos": [
+          "200"
+        ],
+        "nota": "IS ejercicio 2026 (25 de julio es domingo)"
+      },
+      {
+        "fecha": "2027-10-20",
+        "modelos": [
+          "111",
+          "115",
+          "123",
+          "130",
+          "131",
+          "303",
+          "349",
+          "202"
+        ],
+        "nota": "3T 2027 y segundo pago fraccionado IS"
+      },
+      {
+        "fecha": "2027-12-20",
+        "modelos": [
+          "202"
+        ],
+        "nota": "Tercer pago fraccionado IS"
+      }
+    ],
+    "calendario_nota": "Fechas calculadas con las reglas generales (traslado al siguiente día hábil si vencen en sábado, domingo o festivo nacional); el calendario oficial AEAT de 2027 no estaba disponible para contrastar.",
+    "verificado": false,
+    "fuente": {
+      "nombre": "AEAT - Calendario del contribuyente (reglas generales de plazos)",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html"
+    },
+    "provisional": true
+  },
+  "recargos_extemporaneos": {
+    "pct_por_mes": 1,
+    "despues_12_meses_pct": 15,
+    "nota": "Art. 27 LGT tras Ley 11/2021: recargo del 1 % más 1 % adicional por cada mes completo de retraso (sin intereses ni sanción) hasta 12 meses; pasados 12 meses, 15 % más intereses de demora desde el día siguiente a los 12 meses. Reducción del 25 % si se ingresa en plazo o con aplazamiento sin garantía.",
+    "verificado": true,
+    "fuente": {
+      "nombre": "Ley 58/2003 General Tributaria, art. 27 (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+    },
+    "provisional": true
+  },
+  "interes_demora_pct": 4.0625,
+  "interes_legal_dinero_pct": 3.25,
+  "intereses_nota": "Provisional: copia de 2026. Sin PGE 2027 (Cortes disueltas), lo previsible es que sigan prorrogados 3,25 % y 4,0625 %.",
+  "intereses_fuente": {
+    "nombre": "OCU - Tipo de interés legal y de demora para 2026 (LPGE prorrogada)",
+    "url": "https://www.ocu.org/dinero/renta-impuestos/noticias/interes-legal-demora"
+  },
+  "dietas_exentas": {
+    "espana": {
+      "pernocta": 53.34,
+      "sin_pernocta": 26.67
+    },
+    "extranjero": {
+      "pernocta": 91.35,
+      "sin_pernocta": 48.08
+    },
+    "km_euros": 0.26,
+    "nota": "Art. 9 RIRPF (manutención). Alojamiento: exento el importe justificado. Kilometraje 0,26 €/km desde 17-7-2023 (Orden HFP/792/2023) más peajes y aparcamiento justificados. Sin cambios en 2026.",
+    "verificado": true,
+    "fuente": {
+      "nombre": "Reglamento IRPF (RD 439/2007), art. 9 (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"
+    },
+    "provisional": true
+  },
+  "verifactu": {
+    "sociedades_desde": "2027-01-01",
+    "resto_desde": "2027-07-01",
+    "estado": "A 27-10-2026 siguen legalmente vigentes 1-1-2027 (sociedades) y 1-7-2027 (resto) por el RDL 15/2025. Aplazamiento a octubre de 2028 anunciado por Hacienda el 5-10-2026 sin norma publicada aún. Factura electrónica B2B: Orden HAC/1028/2026 fija 6-10-2027 para empresas > 8 M€ y 6-10-2028 para el resto (dato de fuentes secundarias).",
+    "norma": "RD 1007/2023 (Reglamento de sistemas informáticos de facturación), modificado por RD 254/2025 y RDL 15/2025; Orden HAC/1177/2024 (especificaciones técnicas)",
+    "excluidos": "Obligados al SII; contribuyentes de los territorios forales (TicketBAI/Batuz en País Vasco, sistema propio en Navarra); quienes no estén obligados a expedir factura; el régimen especial de agricultura, ganadería y pesca y otros supuestos del art. 3 RD 1007/2023.",
+    "sancion_euros": "Art. 201 bis LGT: hasta 50.000 € por ejercicio por la tenencia/uso de sistemas no certificados o alterados; hasta 150.000 € por ejercicio a productores y comercializadores de software no conforme.",
+    "verificado": false,
+    "fuente": {
+      "nombre": "AEAT - Sistemas informáticos de facturación y VERI*FACTU",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html"
+    },
+    "provisional": true
+  },
+  "sociedades": {
+    "general": 25,
+    "micro_tramos": "Microempresas (cifra de negocios < 1.000.000 €), periodos iniciados en 2027: 17 % los primeros 50.000 € y 20 % el resto (régimen definitivo del art. 29.1 LIS, Ley 7/2024).",
+    "micro_tramos_detalle": [
+      {
+        "hasta": 50000,
+        "tipo": 17
+      },
+      {
+        "hasta": null,
+        "tipo": 20
+      }
+    ],
+    "entidades_reducida_dimension": 22,
+    "nueva_creacion": 15,
+    "nota": "Ley 7/2024 (calendario ya legislado): ERD 22 % en 2027, 21 % en 2028, 20 % desde 2029. Nueva creación 15 %.",
+    "verificado": true,
+    "fuente": {
+      "nombre": "Ley 7/2024, de 20 de diciembre (BOE-A-2024-26694) / Ley 27/2014 art. 29",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328"
+    }
+  },
+  "estimacion_directa_simplificada": {
+    "gastos_dificil_justificacion_pct": 5,
+    "limite_euros": 2000,
+    "nota": "Copia de 2026 (art. 30 RIRPF: 5 %, máx. 2.000 €).",
+    "verificado": true,
+    "fuente": {
+      "nombre": "AEAT - Estimación directa simplificada",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/empresarios-individuales-profesionales/regimenes-determinar-rendimiento-actividad/estimacion-directa-simplificada.html"
+    },
+    "provisional": true
+  },
+  "intereses_provisional": true
+}

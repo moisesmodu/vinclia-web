@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { url, buscar } from '../lib/rutas';
+const ini = buscar('inicio', 'es')!;
+---
+<Base lang="es" titulo="Página no encontrada" descripcion="La página que buscas no existe." ruta="404" alternas={{}}>
+  <h1 style="margin-top:2rem">Página no encontrada · Pàgina no trobada</h1>
+  <p><a class="btn" href={url(ini.ruta)}>Ir al inicio · Anar a l’inici</a></p>
+</Base>

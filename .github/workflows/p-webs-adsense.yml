@@ -1,0 +1,35 @@
+# Puerta de calidad de la fábrica de sitios del proyecto P: pruebas de cálculo, compilación de todos los
+# sitios, comprobaciones de contenido y Lighthouse en móvil (falla si alguna página baja de 95).
+name: Proyecto P · fábrica de sitios
+on:
+  pull_request:
+    paths: ['proyectos/p-webs-adsense/fabrica/**', '.github/workflows/p-webs-adsense.yml']
+  push:
+    branches: ['claude/**']
+    paths: ['proyectos/p-webs-adsense/fabrica/**']
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/p-webs-adsense/fabrica
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: proyectos/p-webs-adsense/fabrica/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:todos
+      - run: npm run comprobar
+      - name: Lighthouse móvil
+        run: node scripts/lighthouse.mjs nomina impuestos
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse
+          path: proyectos/p-webs-adsense/fabrica/informes/lighthouse.json
