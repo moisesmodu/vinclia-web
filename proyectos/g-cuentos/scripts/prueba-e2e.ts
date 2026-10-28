@@ -10,7 +10,6 @@ import { PDFDocument } from "pdf-lib";
 
 const BASE = (process.env.URL_BASE ?? "http://localhost:3000").replace(/\/$/, "");
 const ADMIN = process.env.ADMIN_TOKEN ?? "";
-const trabajos = JSON.parse(readFileSync("content/muestras/trabajos-higgsfield.json", "utf8"));
 const informe: Record<string, unknown> = { base: BASE, inicio: new Date().toISOString(), pasos: [] as string[] };
 const paso = (s: string) => { (informe.pasos as string[]).push(s); console.log("✔", s); };
 const falla = (s: string): never => { informe.error = s; writeFileSync("datos-locales/e2e.json", JSON.stringify(informe, null, 2)); console.error("✘", s); process.exit(1); };
@@ -33,12 +32,19 @@ async function esperarEstado(id: string, estados: string[], maxS = 120): Promise
   return falla(`timeout esperando ${estados.join("/")} en ${id}`);
 }
 
-async function urlsIlustracionesMuestra(slug: string): Promise<Record<string, string>> {
-  // El taller entrega URL públicas (las del CDN de Higgsfield). Se resuelven con las de las muestras.
+async function urlsIlustracionesMuestra(slug: string, total: number, hoja = false): Promise<Record<string, string>> {
+  // El taller entrega URL públicas (las del CDN de Higgsfield). Aquí se usan las webp públicas de las
+  // muestras servidas por el propio servidor (mismo flujo que una URL del CDN); si a la muestra le falta
+  // alguna página, se repite la anterior (solo en la prueba).
   const out: Record<string, string> = {};
-  const ids: Record<string, string> = trabajos[slug];
-  // Se usan las webp públicas de las muestras servidas por el propio servidor (mismo flujo que una URL del CDN).
-  for (const [k] of Object.entries(ids)) out[k] = `${BASE}/muestras/${slug}/${String(k).padStart(2, "0")}.webp`;
+  const dir = path.join("public", "muestras", slug);
+  let ultima = "00";
+  for (let i = 0; i < total; i++) {
+    const n = String(i).padStart(2, "0");
+    if (existsSync(path.join(dir, `${n}.webp`))) ultima = n;
+    out[String(i)] = `${BASE}/muestras/${slug}/${ultima}.webp`;
+  }
+  if (hoja) out.hoja = `${BASE}/personajes/nina-hoja.webp`;
   return out;
 }
 
@@ -120,7 +126,12 @@ async function main() {
   paso(`borrador creado ${id}`);
   const vista = await (await fetch(`${BASE}/cuento/${id}`)).text();
   if (!vista.includes("Hugo y la luz de la luna")) falla("la vista previa no muestra el título");
-  paso("vista previa con el nombre y 3 páginas");
+  paso("vista previa con el nombre y 3 páginas (cuento de 18 páginas para 4 años)");
+  const ret = await fetch(`${BASE}/api/cuentos/${id}`, { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify({ titulo: "Hugo y la luz de la luna", dedicatoria: "Para Hugo, el valiente de la casa." }) });
+  if (!ret.ok) falla(`retoque del texto: ${ret.status} ${await ret.text()}`);
+  const vista2 = await (await fetch(`${BASE}/cuento/${id}`)).text();
+  if (!vista2.includes("el valiente de la casa")) falla("el retoque no se guardó");
+  paso("retoque de la dedicatoria antes de pagar guardado");
 
   // 2 · Afiliada: alta, clic, aceptación de cookie
   const af = await json(await fetch(`${BASE}/api/afiliados`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ nombre: "Mamá de Prueba", email: `afiliada${Date.now()}@example.com`, redSocial: "@mamadeprueba", acepto: "on" }) }));
@@ -140,11 +151,11 @@ async function main() {
   // 4 · Encargo de ilustración y entrega del taller
   const pend = await json(await admin("/api/admin/pendientes"));
   const encargo = pend.pedidos?.find((p: { id: string }) => p.id === id);
-  if (!encargo || encargo.trabajosIlustr.prompts.length !== 13) falla("el encargo de ilustración no tiene 13 prompts");
-  paso("encargo de ilustración visible para el taller (13 prompts + hoja de personaje)");
-  const urls = await urlsIlustracionesMuestra("leo-y-la-luz-de-la-luna");
+  if (!encargo || encargo.trabajosIlustr.prompts.length !== 19) falla(`el encargo de ilustración no tiene 19 prompts (${encargo?.trabajosIlustr?.prompts?.length})`);
+  paso("encargo de ilustración visible para el taller (portada + 18 páginas, hoja de serie)");
+  const urls = await urlsIlustracionesMuestra("leo-y-la-luz-de-la-luna", 19);
   const entrega = await json(await admin(`/api/admin/pedidos/${id}/ilustraciones`, { method: "POST", body: JSON.stringify(urls) }));
-  paso(`taller entrega 13 ilustraciones → estado «${entrega.estado}»`);
+  paso(`taller entrega 19 ilustraciones → estado «${entrega.estado}»`);
   const fin = await esperarEstado(id, ["enviado_imprenta"]);
   paso(`pedido enviado a la imprenta (${fin.estado})`);
 
@@ -174,12 +185,21 @@ async function main() {
   paso(`resumen: ${resumen.ventas} ventas hoy, comisiones ${(resumen.comisionesCents / 100).toFixed(2)} €; afiliada con ${venta?.clics} clic`);
 
   // 6 · Segundo pedido: solo PDF, en catalán, sin afiliada
-  const id2 = await crearBorrador({ nombre: "Martina", edad: 6, genero: "f", ciudad: "Lleida", companero: "perro", mascota: "Núvol", aficion: "dibujar", coleccion: "ciudad", tema: "curiosidad", idioma: "ca" });
+  //     con aspecto y color propios, mejor amiga y detalle único → hoja de personaje propia del pedido
+  const id2 = await crearBorrador({ nombre: "Martina", edad: 6, genero: "f", ciudad: "Lleida", companero: "perro", mascota: "Núvol", aficion: "dibujar", coleccion: "ciudad", tema: "curiosidad", idioma: "ca",
+    arropa: "abuela", color: "verde", amigo: "Lucía", amigoGenero: "f", rasgo: "Colecciona pedres de colors", aspecto: { piel: "clara", pelo: "pelirrojo", peinado: "largo", gafas: true, pecas: true } });
   await pagar(id2, "pdf");
   await esperarEstado(id2, ["ilustrando"]);
-  await admin(`/api/admin/pedidos/${id2}/ilustraciones`, { method: "POST", body: JSON.stringify(await urlsIlustracionesMuestra("la-martina-i-els-secrets-de-lleida")) });
+  const pend2 = await json(await admin("/api/admin/pendientes"));
+  const enc2 = pend2.pedidos?.find((p: { id: string }) => p.id === id2);
+  if (!enc2?.trabajosIlustr?.hoja || enc2.trabajosIlustr.prompts.length !== 23 || enc2.faltan[0] !== "hoja") falla(`encargo con aspecto propio incorrecto: ${JSON.stringify(enc2?.faltan)}`);
+  paso("encargo con aspecto propio: primero la hoja de personaje del pedido, después portada + 22 páginas");
+  await admin(`/api/admin/pedidos/${id2}/ilustraciones`, { method: "POST", body: JSON.stringify(await urlsIlustracionesMuestra("la-martina-i-els-secrets-de-lleida", 23, true)) });
   const fin2 = await esperarEstado(id2, ["entregado"]);
-  paso(`pedido PDF en catalán entregado (${fin2.estado})`);
+  const html2 = await (await fetch(`${BASE}/ca/pedido/${id2}`)).text();
+  const pdf2 = html2.match(/href="([^"]+\.pdf)"/)?.[1]?.replace(/&amp;/g, "&");
+  if (pdf2) await comprobarPdf(pdf2, 30, "PDF de lectura en català (22 pàgines)");
+  paso(`pedido PDF en catalán (22 páginas, 5–8 años) entregado (${fin2.estado})`);
 
   informe.fin = new Date().toISOString();
   informe.ok = true;

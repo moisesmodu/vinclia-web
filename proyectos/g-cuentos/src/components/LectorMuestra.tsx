@@ -23,11 +23,25 @@ export function LectorMuestra({ slug, idioma }: { slug: string; idioma: Idioma }
           </div>
         </div>
         <div className="tarjeta p-8 text-center italic whitespace-pre-line text-lg mb-6">{c.dedicatoria}</div>
-        <div className="space-y-6">
+        {c.ilustradas?.some((v) => !v) && (
+          <p className="tarjeta p-4 mb-6 text-sm text-suave">
+            {idioma === "ca"
+              ? `Mostra en preparació: ${c.ilustradas.filter(Boolean).length} de les ${c.paginas.length} pàgines ja estan il·lustrades; la resta es mostren només amb el text.`
+              : `Muestra en preparación: ${c.ilustradas.filter(Boolean).length} de las ${c.paginas.length} páginas ya están ilustradas; el resto se muestran solo con el texto.`}
+          </p>
+        )}
+        <div className="grid gap-6 md:grid-cols-2">
           {c.paginas.map((texto, i) => (
-            <section key={i} className="tarjeta grid md:grid-cols-2 overflow-hidden">
-              <p className={`p-6 sm:p-10 text-lg sm:text-xl leading-relaxed self-center ${i % 2 ? "md:order-2" : ""}`}>{texto}</p>
-              <Image src={img(i + 1)} alt="" width={1200} height={1200} className="w-full h-full object-cover" loading={i < 2 ? "eager" : "lazy"} />
+            <section key={i} className="pagina-libro">
+              {c.ilustradas?.[i] === false ? (
+                <div className="ilu grid place-items-center bg-[#2B3A67] text-crema/70 text-sm p-6 text-center">
+                  <span><span className="block text-4xl mb-2 text-luna" aria-hidden>☾</span>{idioma === "ca" ? "Il·lustració en preparació" : "Ilustración en preparación"}</span>
+                </div>
+              ) : (
+                <div className="ilu"><Image src={img(i + 1)} alt="" width={1200} height={800} loading={i < 2 ? "eager" : "lazy"} /></div>
+              )}
+              <p className={`px-6 pb-4 pt-3 leading-relaxed ${c.paginas.length <= 18 ? "text-xl" : "text-lg"}`}>{texto}</p>
+              <p className="text-center text-xs text-suave pb-3">{5 + i}</p>
             </section>
           ))}
         </div>

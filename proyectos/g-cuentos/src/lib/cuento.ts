@@ -4,7 +4,7 @@ import { articuloCa, rellenar, type DatosNino } from "./rellenar";
 export interface Cuento {
   titulo: string;
   dedicatoria: string;
-  paginas: string[]; // 12 textos
+  paginas: string[]; // 18 (2–4 años) o 22 (5–8 años) textos
   contraportada: string;
   fuente: "ia" | "plantilla" | "manual";
 }
@@ -18,7 +18,7 @@ export function dedicatoriaPorDefecto(d: DatosNino): string {
 
 /** Cuento determinista a partir de la plantilla revisada (sin IA). Siempre disponible. */
 export function cuentoDePlantilla(d: DatosNino): Cuento {
-  const p = plantilla(d.coleccion);
+  const p = plantilla(d.coleccion, d.edad);
   return {
     titulo: rellenar(p.titulo[d.idioma], d),
     dedicatoria: d.dedicatoria?.trim() || dedicatoriaPorDefecto(d),

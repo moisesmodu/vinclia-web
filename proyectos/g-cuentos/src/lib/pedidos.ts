@@ -4,7 +4,7 @@ import { configPais, URL_BASE, type Formato } from "./config";
 import { correoConfirmacion, correoEntrega, enviarCorreo } from "./correo";
 import type { Cuento } from "./cuento";
 import { db, evento } from "./db";
-import { encargoIlustracion, ilustracionesCompletas } from "./ilustraciones";
+import { encargoIlustracion, ilustracionesCompletas, totalIlustraciones } from "./ilustraciones";
 import { crearPedidoImprenta, dimensionesCubierta, estadoPedidoImprenta, type DireccionEnvio } from "./imprenta/gelato";
 import { generarCubierta, generarInterior } from "./maquetacion";
 import type { DatosNino } from "./rellenar";
@@ -64,7 +64,7 @@ async function paso1(p: Pedido): Promise<Pedido> {
   switch (p.estado) {
     case "pagado": {
       const encargo = encargoIlustracion(datos);
-      const sig = ilustracionesCompletas(p.ilustraciones) ? "maquetando" : "ilustrando";
+      const sig = ilustracionesCompletas(p.ilustraciones, totalIlustraciones(datos)) ? "maquetando" : "ilustrando";
       const act = await db.pedido.update({ where: { id: p.id }, data: { estado: sig, trabajosIlustr: JSON.parse(JSON.stringify(encargo)) } });
       if (p.email) {
         const c = correoConfirmacion({ idioma: p.idioma as "es" | "ca", nombre: datos.nombre, titulo: cuento.titulo, urlPedido: urlPedido(p) });
@@ -74,12 +74,12 @@ async function paso1(p: Pedido): Promise<Pedido> {
       return act;
     }
     case "ilustrando":
-      // Espera al taller (tarea programada) que sube las 13 ilustraciones.
-      return ilustracionesCompletas(p.ilustraciones) ? db.pedido.update({ where: { id: p.id }, data: { estado: "maquetando" } }) : p;
+      // Espera al taller (tarea programada) que sube la portada y las 18 o 22 páginas.
+      return ilustracionesCompletas(p.ilustraciones, totalIlustraciones(datos)) ? db.pedido.update({ where: { id: p.id }, data: { estado: "maquetando" } }) : p;
     case "maquetando": {
       const urls = p.ilustraciones as Record<string, string>;
-      const imagenes = await Promise.all(Array.from({ length: 13 }, (_, i) => leer(urls[String(i)])));
-      const base = { cuento, idioma: p.idioma as "es" | "ca", nombre: datos.nombre, imagenes };
+      const imagenes = await Promise.all(Array.from({ length: totalIlustraciones(datos) }, (_, i) => leer(urls[String(i)])));
+      const base = { cuento, datos, idioma: p.idioma as "es" | "ca", nombre: datos.nombre, imagenes };
       const pdf = await generarInterior({ ...base, modo: "pantalla" });
       const pdfUrl = await guardar(`pedidos/${p.id}/${slug(cuento.titulo)}.pdf`, pdf, "application/pdf");
       let interiorUrl: string | undefined, cubiertaUrl: string | undefined;
@@ -125,12 +125,15 @@ export function slug(s: string) {
 export async function recibirIlustraciones(id: string, urls: Record<string, string>): Promise<Pedido> {
   const p = await db.pedido.findUniqueOrThrow({ where: { id } });
   const actuales = (p.ilustraciones as Record<string, string> | null) ?? {};
+  const total = totalIlustraciones(p.datos as unknown as DatosNino);
   const nuevas: Record<string, string> = { ...actuales };
   for (const [k, url] of Object.entries(urls)) {
+    // «hoja» = hoja de personaje propia del pedido (aspecto elegido por la familia); 0..N = portada y páginas
     const i = Number(k);
-    if (!Number.isInteger(i) || i < 0 || i > 12) continue;
+    if (k !== "hoja" && (!Number.isInteger(i) || i < 0 || i >= total)) continue;
     const buf = await leer(url);
-    nuevas[String(i)] = await guardar(`pedidos/${id}/ilustraciones/${String(i).padStart(2, "0")}.png`, buf, "image/png");
+    const nombre = k === "hoja" ? "hoja" : String(i).padStart(2, "0");
+    nuevas[k] = await guardar(`pedidos/${id}/ilustraciones/${nombre}.png`, buf, "image/png");
   }
   await db.pedido.update({ where: { id }, data: { ilustraciones: nuevas } });
   await evento("ilustraciones", id, { recibidas: Object.keys(urls).length });

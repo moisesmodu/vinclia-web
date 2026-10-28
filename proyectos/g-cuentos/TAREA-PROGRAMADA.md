@@ -23,20 +23,31 @@ conoces. Trabaja solo con la API de la tienda y el conector de Higgsfield.
 2. Comprueba el saldo de Higgsfield (balance). Si es menor de 60 créditos, no generes: deja una línea en
    proyectos/g-cuentos/INCIDENCIAS.md ("sin créditos de Higgsfield, N pedidos esperando") y termina.
 3. Para cada pedido (el más antiguo primero) y solo para los índices de "faltan":
-   - Usa trabajosIlustr: modelo, resolución, proporción, referencias y prompts.
-   - generate_image_batch con model nano_banana_pro, aspect_ratio 1:1, resolution 2k, el prompt de cada índice y
-     medias = [{role: "image_references", value: <cada referencia>}]. Primero el índice 1 (página 1); en cuanto
+   - Usa trabajosIlustr: modelo, resolución, paginas (18 o 22), hoja, referencias y prompts (cada uno con su
+     proporción: portada 1:1, páginas 3:2).
+   - Si "faltan" empieza por "hoja": genera primero la hoja de personaje del pedido (trabajosIlustr.hoja.prompt,
+     1:1, con sus referencias) y revísala (tres vistas del mismo niño, sin texto). En el resto del pedido, cambia
+     la referencia "HOJA_DEL_PEDIDO" por el job_id de esa hoja. Entrega su URL con la clave "hoja".
+   - generate_image_batch (máx. 12 por lote) con model nano_banana_pro, resolution 2k, aspect_ratio de cada prompt
+     y medias = [{role: "image_references", value: <cada referencia>}]. Primero el índice 1 (página 1); en cuanto
      termine, añade su job_id como referencia extra al resto de páginas para que la mascota sea igual.
    - jobs_wait hasta que terminen. Mira cada imagen: personaje igual a la hoja, mascota coherente, sin texto,
-     sin manos o caras deformes. Repite como máximo 2 imágenes por cuento; nunca más de 30 créditos por cuento.
-   - POST $URL_BASE/api/admin/pedidos/<id>/ilustraciones con {"0": url, …, "12": url} (las result_url).
-   - La respuesta debe traer estado "entregado" o "enviado_imprenta". Si no, anota el error en INCIDENCIAS.md.
+     sin manos o caras deformes. Repite como máximo 3 imágenes por cuento; nunca más de 56 créditos por cuento
+     (hoja 2 + portada 2 + 22 páginas × 2 = 48, más repeticiones).
+   - POST $URL_BASE/api/admin/pedidos/<id>/ilustraciones con {"hoja"?: url, "0": url, …, "N": url} (las result_url;
+     se admiten entregas parciales).
+   - La respuesta debe traer estado "entregado" o "enviado_imprenta" cuando ya están todas. Si no, anota el error
+     en INCIDENCIAS.md.
 4. No envíes correos ni mensajes: la tienda los manda sola.
 5. Si no había pedidos y faltan combinaciones en la biblioteca de vistas previas (ver src/lib/ilustraciones.ts:
-   hay 8 combinaciones colección × protagonista y hoy solo existen dormir-niño y ciudad-niña), genera UNA
-   combinación por ejecución nocturna (entre las 2:00 y las 6:00) con datos de ejemplo inventados, guárdala en
-   public/biblioteca/<coleccion>-<nino|nina>/00..12.webp (1200 px, calidad 78), haz commit en una rama y abre un PR
-   hacia la rama base. Presupuesto: 26 créditos por combinación, 144 en total.
+   hay 16 combinaciones colección × edad × protagonista y hoy solo existen dormir-peques-niño y, a medias,
+   ciudad-mayores-niña), genera UNA combinación por ejecución nocturna (entre las 2:00 y las 6:00) con datos de
+   ejemplo inventados y solo la portada y las páginas 1 a 3 (lo que enseña la vista previa: 8 créditos). Guárdala en
+   public/biblioteca/<coleccion>-<peques|mayores>-<nino|nina>/00..03.webp (portada 1200×1200, páginas 1200×800,
+   calidad 78), haz commit en una rama y abre un PR hacia la rama base. Presupuesto: 8 créditos por combinación,
+   120 en total. Antes, completa las 10 páginas que faltan de la muestra de Martina (20 créditos; ver
+   content/muestras/la-martina-i-els-secrets-de-lleida.json → "ilustradas", y scripts/generar-muestras.ts: ficheros
+   datos-locales/originales/martina/nNN.png).
 ```
 
 ## B · Operación diaria

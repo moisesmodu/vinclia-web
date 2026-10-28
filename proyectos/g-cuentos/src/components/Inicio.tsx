@@ -4,6 +4,8 @@ import { COLECCIONES, type Idioma } from "@/lib/catalogo";
 import { configPais, euros, URL_BASE } from "@/lib/config";
 import { CUENTOS_MUESTRA } from "@/lib/muestras-contenido";
 import { t } from "@/i18n/textos";
+import { Edades } from "./inicio/Edades";
+import { TuDecides } from "./inicio/TuDecides";
 import { DentroDelLibro } from "./inicio/DentroDelLibro";
 import { Icono } from "./inicio/Iconos";
 import { Personalizador } from "./inicio/Personalizador";
@@ -14,7 +16,7 @@ import { Pagina } from "./Marco";
 const C = {
   es: {
     ojo: "Cuentos personalizados · castellano y català",
-    sub: "Escribe su nombre y mira cómo cambia la portada. Después eliges su ciudad, su mascota, lo que le gusta y un miedo o un valor, y Lunilla lo convierte en un álbum ilustrado de 12 páginas.",
+    sub: "Escribe su nombre y mira cómo cambia la portada. Después eliges su ciudad, su mascota, lo que le gusta y un miedo o un valor, y Lunilla lo convierte en un álbum ilustrado de 18 páginas (de 2 a 4 años) o 22 (de 5 a 8), con una historia distinta para cada edad.",
     confianza: [["ojo", "3 páginas gratis antes de pagar"], ["sinFoto", "Sin fotos de tu hijo"], ["rayo", "PDF en menos de 2 horas"], ["camion", "Tapa dura con envío incluido"]],
     dentroOjo: "Por dentro", dentroTitulo: "Dos cuentos enteros, página a página",
     dentroSub: "Leo y Martina son inventados. Sus cuentos están hechos con el mismo sistema que hará el tuyo: mismas plantillas, mismos protagonistas, misma imprenta.",
@@ -63,7 +65,7 @@ const C = {
   },
   ca: {
     ojo: "Contes personalitzats · català i castellano",
-    sub: "Escriu el seu nom i mira com canvia la portada. Després tries la seva ciutat, la seva mascota, el que li agrada i una por o un valor, i la Lunilla ho converteix en un àlbum il·lustrat de 12 pàgines.",
+    sub: "Escriu el seu nom i mira com canvia la portada. Després tries la seva ciutat, la seva mascota, el que li agrada i una por o un valor, i la Lunilla ho converteix en un àlbum il·lustrat de 18 pàgines (de 2 a 4 anys) o 22 (de 5 a 8), amb una història diferent per a cada edat.",
     confianza: [["ojo", "3 pàgines gratis abans de pagar"], ["sinFoto", "Sense fotos del teu fill"], ["rayo", "PDF en menys de 2 hores"], ["camion", "Tapa dura amb enviament inclòs"]],
     dentroOjo: "Per dins", dentroTitulo: "Dos contes sencers, pàgina a pàgina",
     dentroSub: "En Leo i la Martina són inventats. Els seus contes estan fets amb el mateix sistema que farà el teu: mateixes plantilles, mateixos protagonistes, mateixa impremta.",
@@ -187,6 +189,9 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
+      {/* 2b · Un cuento distinto para cada edad */}
+      <Edades idioma={idioma} />
+
       {/* 3 · Qué se personaliza */}
       <section className="banda-rosa curva-arriba envoltura">
         <div className="mx-auto max-w-6xl py-16">
@@ -292,13 +297,8 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {/* 8 · Protagonistas */}
-      <section className="envoltura">
-        <div className="mx-auto max-w-6xl pb-6 grid gap-4 sm:grid-cols-2">
-          <Image src="/personajes/nino-hoja.webp" alt={ca ? "Protagonista nen" : "Protagonista niño"} width={1600} height={893} className="tarjeta" />
-          <Image src="/personajes/nina-hoja.webp" alt={ca ? "Protagonista nena" : "Protagonista niña"} width={1600} height={893} className="tarjeta" />
-        </div>
-      </section>
+      {/* 8 · Tú decides cómo es */}
+      <TuDecides idioma={idioma} />
 
       {/* 9 · Comparativa */}
       <section className="envoltura">

@@ -4,12 +4,12 @@ import type { PaginaSeo } from "../tipos";
 export const SEO_ES: PaginaSeo[] = [
   {
     slug: "cuento-personalizado-con-nombre",
-    titulo: "Cuento personalizado con nombre del niño: ilustrado y en 12 páginas",
+    titulo: "Cuento personalizado con nombre del niño: ilustrado, de 18 o 22 páginas",
     descripcion: "Un cuento infantil personalizado con el nombre de tu hijo o tu nieta, su ciudad y su mascota. Vista previa gratis, PDF en menos de 2 horas o libro de tapa dura.",
     h1: "Cuento personalizado con el nombre de tu peque",
     intro: "Un cuento con nombre propio no es solo un libro: es la primera vez que un niño se ve dentro de una historia. Lo señala, lo pide cada noche y lo guarda años. Así funciona el nuestro.",
     secciones: [
-      { h2: "Qué se personaliza", parrafos: ["El nombre aparece en el título, en la portada y a lo largo de las 12 páginas. Pero no nos quedamos ahí: la historia incluye su ciudad o su pueblo, su mascota (o su peluche favorito, si no tiene), aquello que más le gusta y un miedo o un valor que quieras trabajar con él."], lista: ["Nombre y edad: el vocabulario se adapta a niños de 2 a 8 años.", "Ciudad: el cuento ocurre donde vive.", "Mascota o peluche: le acompaña en toda la aventura.", "Afición: dinosaurios, fútbol, dibujar, música, el espacio…", "Un miedo o un valor: la oscuridad, los celos, decir la verdad, compartir."] },
+      { h2: "Qué se personaliza", parrafos: ["El nombre aparece en el título, en la portada y a lo largo de las 18 o 22 páginas. Pero no nos quedamos ahí: la historia incluye su ciudad o su pueblo, su mascota (o su peluche favorito, si no tiene), aquello que más le gusta y un miedo o un valor que quieras trabajar con él."], lista: ["Nombre y edad: el vocabulario se adapta a niños de 2 a 8 años.", "Ciudad: el cuento ocurre donde vive.", "Mascota o peluche: le acompaña en toda la aventura.", "Afición: dinosaurios, fútbol, dibujar, música, el espacio…", "Un miedo o un valor: la oscuridad, los celos, decir la verdad, compartir."] },
       { h2: "Sin fotos del niño", parrafos: ["No pedimos fotos. Elegís entre nuestros dos protagonistas, un niño y una niña dibujados con hoja de personaje para que sean iguales en todas las páginas. Es más respetuoso con la privacidad de los menores y el resultado parece un álbum ilustrado de verdad, no un montaje."] },
       { h2: "Cómo se pide", parrafos: ["Rellenas un formulario de un minuto, ves gratis la portada, la dedicatoria y las primeras páginas con su nombre, y eliges formato: PDF para leer e imprimir, que llega en menos de 2 horas, o libro de tapa dura impreso bajo demanda y enviado a casa."] },
     ],
@@ -78,7 +78,7 @@ export const SEO_ES: PaginaSeo[] = [
     h1: "Regalo de última hora: su cuento en menos de 2 horas",
     intro: "Nochebuena, la noche de Reyes, un cumpleaños que se te había olvidado. Si el regalo tiene que estar hoy, el cuento en PDF llega a tu correo en menos de 2 horas.",
     secciones: [
-      { h2: "Qué recibes", parrafos: ["Un PDF de 30 páginas con portada, dedicatoria, 12 páginas ilustradas con su texto y una página final. Se lee perfecto en tablet, móvil o pantalla, y puedes imprimirlo en casa o en una copistería."] },
+      { h2: "Qué recibes", parrafos: ["Un PDF de 30 páginas con portada, dedicatoria, 18 o 22 páginas ilustradas con su texto, la ficha del protagonista y una página final. Se lee perfecto en tablet, móvil o pantalla, y puedes imprimirlo en casa o en una copistería."] },
       { h2: "Cómo presentarlo", parrafos: [], lista: ["Imprime solo la portada y métela en un sobre con lazo.", "Envía el PDF por WhatsApp a la familia del niño.", "Ponlo en la tablet y léelo juntos esa misma noche."] },
       { h2: "Y si después quieres el libro", parrafos: ["Puedes pedir la versión en tapa dura más adelante: el cuento queda guardado y no tienes que volver a rellenar nada."] },
     ],

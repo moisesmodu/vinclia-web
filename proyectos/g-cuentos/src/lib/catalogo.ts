@@ -30,7 +30,7 @@ export const COLECCIONES: Coleccion[] = [
       es: "Un cuento de buenas noches para perder el miedo y dormir tranquilos.",
       ca: "Un conte de bona nit per perdre la por i dormir tranquils.",
     },
-    edades: "2-7",
+    edades: "2-8",
     temas: [
       {
         id: "oscuridad",
@@ -113,7 +113,7 @@ export const COLECCIONES: Coleccion[] = [
       es: "Una semilla mágica que crece con cada gesto bonito.",
       ca: "Una llavor màgica que creix amb cada gest bonic.",
     },
-    edades: "3-8",
+    edades: "2-8",
     temas: [
       {
         id: "compartir",
@@ -262,7 +262,7 @@ export const COLECCIONES: Coleccion[] = [
       es: "Para preparar la llegada de un bebé a casa y convertir los celos en orgullo.",
       ca: "Per preparar l'arribada d'un nadó a casa i convertir la gelosia en orgull.",
     },
-    edades: "2-7",
+    edades: "2-8",
     temas: [
       {
         id: "celos",
@@ -305,7 +305,7 @@ export const COLECCIONES: Coleccion[] = [
         etiqueta: { es: "Aprender a ser hermano/a mayor", ca: "Aprendre a ser germà/germana gran" },
         campos: {
           problema: {
-            es: "{nombre} no sabía muy bien qué hacía un {hermano mayor|hermana mayor}. El bebé no hablaba, no jugaba y solo dormía.",
+            es: "{nombre} no sabía muy bien qué hacía {un hermano mayor|una hermana mayor}. El bebé no hablaba, no jugaba y solo dormía.",
             ca: "{Elnom} no sabia gaire bé què feia {un germà gran|una germana gran}. El nadó no parlava, no jugava i només dormia.",
           },
           ayuda: {
@@ -327,7 +327,7 @@ export const COLECCIONES: Coleccion[] = [
       es: "Una búsqueda del tesoro por los rincones de su ciudad o su pueblo.",
       ca: "Una cerca del tresor pels racons de la seva ciutat o el seu poble.",
     },
-    edades: "3-8",
+    edades: "2-8",
     temas: [
       {
         id: "curiosidad",
@@ -548,3 +548,33 @@ export function tema(col: ColeccionId, id: string): Tema {
 
 export const companero = (id: string) => COMPANEROS.find((x) => x.id === id) ?? COMPANEROS[COMPANEROS.length - 1];
 export const aficion = (id: string) => AFICIONES.find((x) => x.id === id) ?? AFICIONES[0];
+
+// ── Detalles de su mundo (más peso a quien diseña el cuento) ───────────────────
+// Listas cerradas para que la plantilla siempre suene bien. {arropa} solo se usa tras
+// preposición («de», «con», «a»), sin concordancia verbal.
+export interface Opcion { id: string; etiqueta: Bi; texto: Bi; ingles?: string }
+
+export const ARROPA: Opcion[] = [
+  { id: "mama", etiqueta: { es: "Mamá", ca: "La mama" }, texto: { es: "mamá", ca: "la mama" } },
+  { id: "papa", etiqueta: { es: "Papá", ca: "El papa" }, texto: { es: "papá", ca: "el papa" } },
+  { id: "mamaypapa", etiqueta: { es: "Mamá y papá", ca: "La mama i el papa" }, texto: { es: "mamá y papá", ca: "la mama i el papa" } },
+  { id: "dosmamas", etiqueta: { es: "Sus dos mamás", ca: "Les seves dues mames" }, texto: { es: "sus dos mamás", ca: "les seves dues mames" } },
+  { id: "dospapas", etiqueta: { es: "Sus dos papás", ca: "Els seus dos papes" }, texto: { es: "sus dos papás", ca: "els seus dos papes" } },
+  { id: "abuela", etiqueta: { es: "La abuela", ca: "L'àvia" }, texto: { es: "la abuela", ca: "l'àvia" } },
+  { id: "abuelo", etiqueta: { es: "El abuelo", ca: "L'avi" }, texto: { es: "el abuelo", ca: "l'avi" } },
+  { id: "familia", etiqueta: { es: "Toda la familia", ca: "Tota la família" }, texto: { es: "toda la familia", ca: "tota la família" } },
+];
+
+export const COLORES: Opcion[] = [
+  { id: "azul", etiqueta: { es: "Azul", ca: "Blau" }, texto: { es: "azul", ca: "blau" }, ingles: "blue" },
+  { id: "rojo", etiqueta: { es: "Rojo", ca: "Vermell" }, texto: { es: "rojo", ca: "vermell" }, ingles: "red" },
+  { id: "verde", etiqueta: { es: "Verde", ca: "Verd" }, texto: { es: "verde", ca: "verd" }, ingles: "green" },
+  { id: "amarillo", etiqueta: { es: "Amarillo", ca: "Groc" }, texto: { es: "amarillo", ca: "groc" }, ingles: "yellow" },
+  { id: "rosa", etiqueta: { es: "Rosa", ca: "Rosa" }, texto: { es: "rosa", ca: "rosa" }, ingles: "pink" },
+  { id: "morado", etiqueta: { es: "Morado", ca: "Lila" }, texto: { es: "morado", ca: "lila" }, ingles: "purple" },
+  { id: "naranja", etiqueta: { es: "Naranja", ca: "Taronja" }, texto: { es: "naranja", ca: "taronja" }, ingles: "orange" },
+  { id: "turquesa", etiqueta: { es: "Turquesa", ca: "Turquesa" }, texto: { es: "turquesa", ca: "turquesa" }, ingles: "turquoise" },
+];
+
+export const arropa = (id?: string) => ARROPA.find((x) => x.id === id) ?? ARROPA[2];
+export const colorFav = (id?: string) => COLORES.find((x) => x.id === id) ?? COLORES[0];

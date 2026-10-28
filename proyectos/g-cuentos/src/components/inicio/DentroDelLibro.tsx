@@ -7,8 +7,8 @@ import type { CuentoMuestra } from "@/lib/muestras-contenido";
 
 // Palabras que cambian en cada cuento: se resaltan para enseñar la personalización de verdad.
 const RESALTE: Record<string, string[]> = {
-  "leo-y-la-luz-de-la-luna": ["Leo", "Bigotes", "Zaragoza", "dinosaurios", "dinosaurio enorme de cuello largo", "diplodocus", "cúpulas del Pilar", "la oscuridad", "La oscuridad"],
-  "la-martina-i-els-secrets-de-lleida": ["Martina", "Núvol", "Lleida", "mercat del Pla", "riu Segre", "Camps Elisis", "Seu Vella", "dibuixar", "preguntar", "les preguntes", "Les preguntes"],
+  "leo-y-la-luz-de-la-luna": ["Leo", "Bigotes", "Zaragoza", "dinosaurios", "dinosaurio enorme de cuello largo", "diplodocus", "cúpulas del Pilar", "la oscuridad", "La oscuridad", "plaza del Pilar", "azul", "mamá y papá", "abuelos"],
+  "la-martina-i-els-secrets-de-lleida": ["Martina", "Núvol", "Lleida", "mercat del Pla", "riu Segre", "Camps Elisis", "Seu Vella", "dibuixar", "preguntar", "les preguntes", "Les preguntes", "blau", "la mama i el papa"],
 };
 
 function resaltar(texto: string, palabras: string[]) {
@@ -48,18 +48,18 @@ export function DentroDelLibro({ idioma, cuentos }: { idioma: Idioma; cuentos: C
       </p>
       <div ref={pista} className="pista" key={c.slug} lang={c.idioma}>
         {c.paginas.map((texto, i) => (
-          <figure key={i} className="doble">
-            <div className="doble-texto">
-              <p>{resaltar(texto, RESALTE[c.slug] ?? [])}</p>
-              <span className="doble-num">{4 + i * 2}</span>
-            </div>
-            <div className="doble-ilus">
-              <Image src={`/muestras/${c.slug}/${String(i + 1).padStart(2, "0")}.webp`} alt="" width={1200} height={1200} sizes="(max-width: 768px) 45vw, 340px" loading={i < 2 ? "eager" : "lazy"} />
-            </div>
+          <figure key={i} className="pagina-libro flex-none w-[78%] sm:w-[340px] snap-start">
+            {c.ilustradas?.[i] === false ? (
+              <div className="ilu grid place-items-center bg-[#2B3A67] text-crema/70 text-xs"><span className="text-3xl text-luna" aria-hidden>☾</span></div>
+            ) : (
+              <div className="ilu"><Image src={`/muestras/${c.slug}/${String(i + 1).padStart(2, "0")}.webp`} alt="" width={1200} height={800} sizes="(max-width: 768px) 78vw, 340px" loading={i < 2 ? "eager" : "lazy"} /></div>
+            )}
+            <p className="px-5 pt-3 pb-2 text-[15px] leading-relaxed">{resaltar(texto, RESALTE[c.slug] ?? [])}</p>
+            <span className="block text-center text-xs text-suave pb-3">{5 + i}</span>
           </figure>
         ))}
       </div>
-      <p className="text-xs text-suave mt-3">{ca ? "Desplaça per veure les 12 dobles pàgines del conte sencer." : "Desliza para ver las 12 dobles páginas del cuento entero."}</p>
+      <p className="text-xs text-suave mt-3">{ca ? `Desplaça per veure les ${c.paginas.length} pàgines del conte sencer: cada pàgina amb la seva il·lustració.` : `Desliza para ver las ${c.paginas.length} páginas del cuento entero: cada página con su ilustración.`}</p>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const base = process.env.URL_BASE ?? "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(base),
   title: { default: "Lunilla · Un cuento donde el protagonista eres tú", template: "%s · Lunilla" },
-  description: "Cuentos infantiles personalizados con el nombre, la ciudad y la mascota de tu peque. 12 páginas ilustradas, PDF en menos de 2 horas o libro de tapa dura. En castellano y catalán.",
+  description: "Cuentos infantiles personalizados con el nombre, la ciudad y la mascota de tu peque. 18 o 22 páginas ilustradas según la edad, PDF en menos de 2 horas o libro de tapa dura. En castellano y catalán.",
   applicationName: "Lunilla",
   openGraph: { siteName: "Lunilla", type: "website", locale: "es_ES", images: ["/muestras/leo-y-la-luz-de-la-luna/00.webp"] },
 };

@@ -20,9 +20,9 @@ incluido, con el PDF de regalo)**. Fecha objetivo de apertura: **15/11/2026**.
 ```
 formulario ──► /api/cuentos ──► texto (claude-sonnet-5-5 sobre plantilla fija; si falla, la plantilla) ──► borrador
 vista previa (biblioteca de ilustraciones) ──► /api/checkout ──► Stripe Checkout (o simulador sin claves)
-webhook firmado ──► pagado ──► encargo de ilustración (13 prompts + hoja de personaje)
+webhook firmado ──► pagado ──► encargo de ilustración (hoja propia si la familia eligió aspecto/color + portada + 18 o 22 páginas)
 taller (tarea programada horaria con el conector de Higgsfield) ──► POST /api/admin/pedidos/:id/ilustraciones
-maquetación (pdf-lib): PDF de lectura 30 págs + interior de imprenta 28 págs con 4 mm de sangrado + pliego de cubierta
+maquetación (pdf-lib): PDF de lectura 30 págs (cada página del cuento ilustrada) + interior de imprenta 28 págs con 4 mm de sangrado + pliego de cubierta
 correo (Resend) ──► PDF entregado ──► tapa dura: pedido a Gelato (borrador = sandbox) ──► seguimiento
 ```
 
@@ -35,7 +35,7 @@ Estados: `borrador → pagado → ilustrando → maquetando → entregado` (PDF)
 | Pieza | Dónde | Nota |
 |---|---|---|
 | Catálogo (colecciones, 17 temas, compañeros, aficiones, lugares reales de 8 ciudades) | `src/lib/catalogo.ts` | Listas cerradas: la plantilla siempre suena bien |
-| 4 plantillas de 12 páginas es/ca + escena de cada ilustración | `src/lib/plantillas/` | Escritas y revisadas en esta sesión |
+| 8 plantillas es/ca (4 colecciones × 2 edades: 18 páginas de 2 a 4 años, 22 de 5 a 8) + escena de cada ilustración | `src/lib/plantillas/` | Historias distintas por edad; `npx tsx scripts/revisar-plantilla.ts <id>` las revisa con todas las combinaciones |
 | Relleno determinista (género, artículo personal catalán, contracciones) | `src/lib/rellenar.ts` | Test con más de 1.000 combinaciones: `npm test` |
 | Texto con IA | `src/lib/texto.ts` | `claude-sonnet-5-5`, salida estructurada, validación y caída a plantilla |
 | Protagonistas y prompts | `src/lib/ilustracion-prompts.ts`, `public/personajes/` | Niño y niña con hoja de personaje; nunca fotos |
@@ -72,9 +72,9 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 - `npm run build` limpio; `tsc` sin errores; `npm test` (plantillas) en verde.
 - **Prueba de punta a punta OK** (`scripts/prueba-e2e.ts`, informe en `datos-locales/e2e.json`): vista previa con el
   nombre → alta de afiliada, clic y cookie aceptada → checkout → pago → **webhook firmado verificado por la librería
-  de Stripe** → encargo de 13 ilustraciones → entrega del taller → PDF de lectura (30 págs) + interior de imprenta
+  de Stripe** → encargo de 19 ilustraciones (18 páginas + portada) → retoque del texto antes de pagar → entrega del taller → PDF de lectura (30 págs) + interior de imprenta
   (28 págs, sangrado 4 mm) + cubierta → correos → **pedido a imprenta** (cuerpo de pedido Gelato `draft`) → comisión
-  de 7,38 € a la afiliada. Segundo pedido PDF en catalán entregado.
+  a la afiliada. Segundo pedido PDF en catalán de 22 páginas con aspecto propio (hoja de personaje del pedido) entregado.
 - Revisado en móvil (390 px): sin desbordamiento horizontal en portada, formulario, vista previa, pedido, SEO,
   muestra y afiliadas.
 
@@ -110,15 +110,17 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
    como coste de captación (VIABILIDAD: «el coste de captación lo paga la venta»). Si las afiliadas venden mucho
    tapa dura, bajar su comisión en ese formato al 15 % (un número en `es-ES.json`).
 4. **Libro de 28 páginas interiores** (Gelato exige mínimo 28): portadilla, dedicatoria, «este libro pertenece a»,
-   12 dobles páginas (texto a la izquierda, ilustración a sangre a la derecha) y colofón con la declaración de IA.
+   ficha «Así es…» con lo que contó la familia, 18 o 22 páginas de cuento (cada una con su ilustración apaisada a
+   sangre arriba y el texto debajo), «Fin», páginas para la familia hasta completar 28 en el de 18 (diploma, dibujo,
+   foto, notas) y colofón con la declaración de IA. Así el libro crece sin encarecer la impresión.
 5. **Ilustración por pedido mediante un «taller»**: la API pública de Higgsfield no está documentada de forma
-   verificable, así que el servidor no la llama. Cada pedido pagado deja un encargo (13 prompts + hoja de personaje)
-   y una tarea programada **horaria** lo ejecuta con el conector de Higgsfield (26 créditos por cuento) y sube las
+   verificable, así que el servidor no la llama. Cada pedido pagado deja un encargo (hoja propia si hace falta + portada + 18 o 22 páginas)
+   y una tarea programada **horaria** lo ejecuta con el conector de Higgsfield (38 a 48 créditos por cuento) y sube las
    imágenes. Por eso se promete el PDF «en menos de 2 horas», no «en minutos». Si Higgsfield publica una API
    estable, se añade como proveedor en `src/lib/ilustraciones.ts` y la entrega pasa a minutos.
 6. **Vista previa sin gastar créditos**: usa la biblioteca de ilustraciones de la colección y el protagonista
-   (hoy: Dormir-niño y Mi ciudad-niña, de las muestras; las otras 6 combinaciones las genera la tarea programada,
-   144 créditos en total) o el retrato del protagonista, con aviso «ilustración de muestra».
+   (hoy: Dormir 2–4 niño y Mi ciudad 5–8 niña, de las muestras; las otras 14 combinaciones las genera la tarea
+   programada, 8 créditos cada una) o el retrato del protagonista, con aviso «ilustración de muestra».
 7. **Listas cerradas** de compañeros, aficiones y temas: garantizan que la plantilla siempre es correcta, también
    sin IA. 17 temas (miedos y valores) repartidos en las 4 colecciones.
 8. **Lugares reales** solo de 8 ciudades con datos comprobables (Lleida, Barcelona, Girona, Tarragona, Madrid,
@@ -134,8 +136,8 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 
 | Concepto | Coste |
 |---|---|
-| Esta sesión: Higgsfield | **62 créditos de 80**: 2 hojas de protagonistas + 2 × 13 ilustraciones (56), hoja de Lunilla con bufanda (2), portada y última página de Martina con Lunilla (4). Nano Banana Pro 2k, sin repeticiones |
-| Por cuento vendido | ≈26 créditos de Higgsfield (≈1 €), texto Sonnet < 0,05 €, Stripe 1,5 % + 0,25 € |
+| Esta sesión: Higgsfield | **78 créditos de 80**: 2 hojas de protagonistas + 2 × 13 ilustraciones (56), hoja de Lunilla con bufanda (2), portada y última página de Martina con Lunilla (4), repeticiones (4) y 6 páginas nuevas de Leo para el libro de 18 páginas (12). Nano Banana Pro 2k |
+| Por cuento vendido | 38 a 50 créditos de Higgsfield (≈1,90 €), texto Sonnet < 0,05 €, Stripe 1,5 % + 0,25 € |
 | Tapa dura | impresión + envío Gelato (estimado 23,60 €, por confirmar) |
 | Fijos | Vercel Pro 20 $/mes (compartido por la cartera), Neon y Resend gratis, dominio ≈10 €/año |
 

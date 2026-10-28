@@ -1,41 +1,38 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { AFICIONES, COLECCIONES, COMPANEROS } from "../src/lib/catalogo";
 import { cuentoDePlantilla } from "../src/lib/cuento";
-import { PLANTILLAS } from "../src/lib/plantillas";
+import { encargoIlustracion } from "../src/lib/ilustraciones";
+import { PLANTILLAS, idPlantilla } from "../src/lib/plantillas";
+import { revisar } from "../src/lib/plantillas/revision";
 import { articuloCa, quedanMarcadores, type DatosNino } from "../src/lib/rellenar";
 
-test("cada plantilla tiene 12 páginas y escenas para todos sus temas", () => {
-  for (const c of COLECCIONES) {
-    const p = PLANTILLAS[c.id];
-    assert.equal(p.paginas.length, 12, c.id);
-    const usaTema = p.paginas.some((pg) => pg.escena.includes("{TEMA."));
-    if (usaTema) for (const t of c.temas) assert.ok(p.escenasTema?.[t.id], `${c.id}/${t.id} sin escenas`);
-  }
+for (const [id, p] of Object.entries(PLANTILLAS))
+  test(`plantilla ${id}: páginas, escenas y todas las combinaciones limpias`, () => {
+    assert.deepEqual(revisar(p, id), []);
+  });
+
+test("la edad elige la plantilla: 2–4 → 18 páginas, 5–8 → 22", () => {
+  assert.equal(idPlantilla("dormir", 3), "dormir-peques");
+  assert.equal(idPlantilla("dormir", 5), "dormir-mayores");
+  const d: DatosNino = { nombre: "Leo", edad: 4, genero: "m", ciudad: "Zaragoza", companero: "gato", mascota: "Bigotes", aficion: "dinosaurios", coleccion: "dormir", tema: "oscuridad", idioma: "es" };
+  assert.equal(cuentoDePlantilla(d).paginas.length, 18);
+  assert.equal(cuentoDePlantilla({ ...d, edad: 7 }).paginas.length, 22);
+  for (const s of cuentoDePlantilla({ ...d, edad: 7, idioma: "ca" }).paginas) assert.ok(!quedanMarcadores(s));
 });
 
-test("todas las combinaciones se rellenan sin marcadores sueltos", () => {
-  let n = 0;
-  for (const c of COLECCIONES)
-    for (const t of c.temas)
-      for (const idioma of ["es", "ca"] as const)
-        for (const genero of ["m", "f"] as const)
-          for (const comp of COMPANEROS)
-            for (const af of AFICIONES)
-              for (const ciudad of ["Lleida", "Alcarràs", "Zaragoza"]) {
-                const d: DatosNino = {
-                  nombre: genero === "m" ? "Oriol" : "Martina", edad: 5, genero, ciudad,
-                  companero: comp.id, mascota: "Nube", aficion: af.id, coleccion: c.id, tema: t.id, idioma,
-                  bebe: n % 2 ? "Nora" : undefined, bebeGenero: "f",
-                };
-                const cu = cuentoDePlantilla(d);
-                for (const s of [cu.titulo, ...cu.paginas]) {
-                  assert.ok(!quedanMarcadores(s), `${c.id}/${t.id}/${idioma}: ${s}`);
-                  assert.ok(!/\b(de|a) el\b/.test(s), `contracción: ${s}`);
-                }
-                n++;
-              }
-  assert.ok(n > 1000);
+test("encargo: hoja propia solo si la familia cambia el aspecto o el color", () => {
+  const d: DatosNino = { nombre: "Leo", edad: 4, genero: "m", ciudad: "Zaragoza", companero: "gato", mascota: "Bigotes", aficion: "dinosaurios", coleccion: "dormir", tema: "oscuridad", idioma: "es" };
+  const serie = encargoIlustracion(d);
+  assert.equal(serie.hoja, undefined);
+  assert.equal(serie.prompts.length, 19);
+  assert.equal(serie.prompts[1].proporcion, "3:2");
+  const propio = encargoIlustracion({ ...d, edad: 6, color: "verde", aspecto: { piel: "clara", pelo: "pelirrojo", peinado: "largo", gafas: true, pecas: false } });
+  assert.ok(propio.hoja?.prompt.includes("copper-red"));
+  assert.ok(propio.hoja?.prompt.includes("glasses"));
+  assert.equal(propio.referencias[0], "HOJA_DEL_PEDIDO");
+  assert.equal(propio.prompts.length, 23);
+  assert.ok(propio.prompts.every((x) => !/\{[A-Z.]+\}/.test(x.prompt)));
+  assert.ok(propio.prompts[3].prompt.includes("green") || propio.prompts.some((x) => x.prompt.includes("green")));
 });
 
 test("artículo personal catalán", () => {

@@ -39,7 +39,7 @@ export const LEGAL_ES: DocumentoLegal[] = [
     slug: "condiciones",
     titulo: "Condiciones de venta",
     secciones: [
-      { h2: "Producto", parrafos: ["Cuento infantil personalizado de 12 páginas ilustradas, en dos formatos: PDF descargable y libro impreso de tapa dura de 20 × 20 cm y 28 páginas interiores (que incluye también el PDF). Antes de pagar puedes ver gratis una vista previa de las primeras páginas; las ilustraciones de la vista previa son de muestra."] },
+      { h2: "Producto", parrafos: ["Cuento infantil personalizado de 18 páginas ilustradas (de 2 a 4 años) o 22 (de 5 a 8), en dos formatos: PDF descargable y libro impreso de tapa dura de 20 × 20 cm y 28 páginas interiores (que incluye también el PDF). Antes de pagar puedes ver gratis una vista previa de las primeras páginas; las ilustraciones de la vista previa son de muestra."] },
       { h2: "Precios", parrafos: ["Los precios se muestran en euros con el IVA incluido (4 % para libros). El libro impreso incluye el envío a la península y las Islas Baleares. De momento no enviamos a Canarias, Ceuta ni Melilla."] },
       { h2: "Pago", parrafos: ["El pago se realiza con tarjeta u otros medios a través de Stripe. No guardamos los datos de tu tarjeta."] },
       { h2: "Entrega", parrafos: ["El PDF se envía al correo indicado, normalmente en menos de 2 horas. El libro impreso se fabrica bajo demanda y suele llegar en unos 5 a 7 días laborables; las fechas límite para Navidad y Reyes se publican en la portada de la web."] },

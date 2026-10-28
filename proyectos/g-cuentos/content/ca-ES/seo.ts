@@ -9,7 +9,7 @@ export const SEO_CA: PaginaSeo[] = [
     h1: "Un conte personalitzat amb el seu nom",
     intro: "Un conte amb nom propi és la primera vegada que un infant es veu dins d'una història. L'assenyala, el demana cada nit i el guarda anys. Així funciona el nostre.",
     secciones: [
-      { h2: "Què es personalitza", parrafos: ["El nom surt al títol, a la portada i a les 12 pàgines, amb l'article personal com toca en català: en Pau, la Martina, l'Oriol."], lista: ["Nom i edat: el vocabulari s'adapta de 2 a 8 anys.", "Ciutat o poble: el conte passa on viu.", "Mascota o peluix: l'acompanya en tota l'aventura.", "Afició: dinosaures, futbol, dibuixar, música, l'espai…", "Una por o un valor: la foscor, la gelosia, dir la veritat, compartir."] },
+      { h2: "Què es personalitza", parrafos: ["El nom surt al títol, a la portada i a les 18 o 22 pàgines, amb l'article personal com toca en català: en Pau, la Martina, l'Oriol."], lista: ["Nom i edat: el vocabulari s'adapta de 2 a 8 anys.", "Ciutat o poble: el conte passa on viu.", "Mascota o peluix: l'acompanya en tota l'aventura.", "Afició: dinosaures, futbol, dibuixar, música, l'espai…", "Una por o un valor: la foscor, la gelosia, dir la veritat, compartir."] },
       { h2: "Sense fotos de l'infant", parrafos: ["No demanem fotos. Trieu entre els nostres dos protagonistes, un nen i una nena dibuixats amb full de personatge perquè siguin iguals a totes les pàgines."] },
       { h2: "Com es demana", parrafos: ["Omples un formulari d'un minut, veus gratis la portada, la dedicatòria i les primeres pàgines, i tries format: PDF en menys de 2 hores o llibre de tapa dura enviat a casa."] },
     ],

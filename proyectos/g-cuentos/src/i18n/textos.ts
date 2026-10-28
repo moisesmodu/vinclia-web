@@ -14,7 +14,7 @@ export const T = {
     nav: { crear: "Crear cuento", muestras: "Ver muestras", ideas: "Ideas de regalo", afiliados: "Afiliadas", otroIdioma: "Català" },
     hero: {
       titulo: "Un cuento donde el protagonista eres tú",
-      sub: "Con su nombre, su ciudad, su mascota y lo que más le gusta. 12 páginas ilustradas y una historia que le ayuda con un miedo o un valor. Sin fotos del niño.",
+      sub: "Con su nombre, su ciudad, su mascota y lo que más le gusta. 18 o 22 páginas ilustradas, una historia distinta según su edad que le ayuda con un miedo o un valor. Sin fotos del niño.",
       cta: "Crear su cuento gratis",
       nota: "Ves 3 páginas antes de pagar. PDF en menos de 2 horas.",
     },
@@ -47,7 +47,7 @@ export const T = {
       ["¿Lo puedo ver antes de pagar?", "Sí: la vista previa gratuita muestra la portada, la dedicatoria y las primeras páginas con su nombre."],
       ["¿Está hecho con inteligencia artificial?", "Sí, con ayuda de IA y siempre a partir de plantillas escritas y revisadas por nosotros. Lo indicamos en el propio libro."],
       ["¿Puedo devolverlo?", "Al ser un producto personalizado no hay derecho de desistimiento, pero si algo no te gusta te lo rehacemos gratis una vez."],
-      ["¿Para qué edades es?", "De 2 a 8 años. El texto se adapta a la edad que escribes: frases cortas y repetitivas para los pequeños, algo más de historia a partir de los 6."],
+      ["¿Para qué edades es?", "De 2 a 8 años, con una historia distinta según la edad: de 2 a 4 años, 18 páginas con frases cortas y un estribillo para repetir juntos; de 5 a 8, 22 páginas con más aventura, diálogos y una decisión que toma su protagonista."],
       ["¿Y si me equivoco al escribir un dato?", "Escríbenos en cuanto lo veas. Si el PDF ya ha salido, lo corregimos y te lo volvemos a enviar; si es tapa dura y aún no se ha impreso, lo paramos."],
       ["¿Lo podéis enviar a otra casa?", "Sí. Al pagar pones la dirección de envío que quieras, por ejemplo la de tus nietos. Enviamos a la península y Baleares."],
       ["¿Qué calidad tiene el libro impreso?", "Tapa dura laminada mate de 20 × 20 cm y 28 páginas a todo color en papel estucado de 170 g, con las ilustraciones a página completa."],
@@ -65,10 +65,10 @@ export const T = {
       privacidad: "Solo usamos estos datos para escribir el cuento. Nada de fotos.",
     },
     vista: {
-      titulo: "Vista previa", aviso: "Estas son las primeras páginas. El cuento completo tiene 12 páginas ilustradas.",
+      titulo: "Vista previa", aviso: "Estas son las primeras páginas. El cuento completo tiene 18 o 22 páginas ilustradas según su edad.",
       ilustracionMuestra: "Ilustración de muestra: en tu cuento aparecerán su mascota y su ciudad.",
       elige: "Elige el formato", pagar: "Comprar", email: "Tu correo (para enviarte el cuento)", cambiar: "Cambiar datos",
-      restantes: "…y 9 páginas más.", libroIncluyePdf: "Incluye también el PDF al momento.",
+      restantes: "…y muchas páginas más.", libroIncluyePdf: "Incluye también el PDF al momento.",
     },
     pedido: {
       titulo: "Tu pedido", gracias: "¡Gracias! Hemos recibido el pago.",
@@ -90,7 +90,7 @@ export const T = {
     nav: { crear: "Crear conte", muestras: "Veure mostres", ideas: "Idees de regal", afiliados: "Afiliades", otroIdioma: "Castellano" },
     hero: {
       titulo: "Un conte on el protagonista ets tu",
-      sub: "Amb el seu nom, la seva ciutat, la seva mascota i el que més li agrada. 12 pàgines il·lustrades i una història que l'ajuda amb una por o un valor. Sense fotos de l'infant.",
+      sub: "Amb el seu nom, la seva ciutat, la seva mascota i el que més li agrada. 18 o 22 pàgines il·lustrades, una història diferent segons la seva edat que l'ajuda amb una por o un valor. Sense fotos de l'infant.",
       cta: "Crear el seu conte gratis",
       nota: "Veus 3 pàgines abans de pagar. PDF en menys de 2 hores.",
     },
@@ -123,7 +123,7 @@ export const T = {
       ["El puc veure abans de pagar?", "Sí: la vista prèvia gratuïta mostra la portada, la dedicatòria i les primeres pàgines amb el seu nom."],
       ["Està fet amb intel·ligència artificial?", "Sí, amb ajuda d'IA i sempre a partir de plantilles escrites i revisades per nosaltres. Ho indiquem al mateix llibre."],
       ["El puc tornar?", "En ser un producte personalitzat no hi ha dret de desistiment, però si alguna cosa no t'agrada te'l refem gratis una vegada."],
-      ["Per a quines edats és?", "De 2 a 8 anys. El text s'adapta a l'edat que escrius: frases curtes i repetitives per als petits, una mica més d'història a partir dels 6."],
+      ["Per a quines edats és?", "De 2 a 8 anys, amb una història diferent segons l'edat: de 2 a 4 anys, 18 pàgines amb frases curtes i una tornada per repetir junts; de 5 a 8, 22 pàgines amb més aventura, diàlegs i una decisió que pren el protagonista."],
       ["I si m'equivoco en escriure una dada?", "Escriu-nos tan aviat com ho vegis. Si el PDF ja ha sortit, el corregim i te'l tornem a enviar; si és tapa dura i encara no s'ha imprès, l'aturem."],
       ["El podeu enviar a una altra casa?", "Sí. En pagar poses l'adreça d'enviament que vulguis, per exemple la dels teus néts. Enviem a la península i les Balears."],
       ["Quina qualitat té el llibre imprès?", "Tapa dura laminada mat de 20 × 20 cm i 28 pàgines a tot color en paper estucat de 170 g, amb les il·lustracions a pàgina sencera."],
@@ -141,10 +141,10 @@ export const T = {
       privacidad: "Només fem servir aquestes dades per escriure el conte. Res de fotos.",
     },
     vista: {
-      titulo: "Vista prèvia", aviso: "Aquestes són les primeres pàgines. El conte complet té 12 pàgines il·lustrades.",
+      titulo: "Vista prèvia", aviso: "Aquestes són les primeres pàgines. El conte complet té 18 o 22 pàgines il·lustrades segons la seva edat.",
       ilustracionMuestra: "Il·lustració de mostra: al teu conte hi sortiran la seva mascota i la seva ciutat.",
       elige: "Tria el format", pagar: "Comprar", email: "El teu correu (per enviar-te el conte)", cambiar: "Canviar dades",
-      restantes: "…i 9 pàgines més.", libroIncluyePdf: "Inclou també el PDF a l'instant.",
+      restantes: "…i moltes pàgines més.", libroIncluyePdf: "Inclou també el PDF a l'instant.",
     },
     pedido: {
       titulo: "La teva comanda", gracias: "Gràcies! Hem rebut el pagament.",

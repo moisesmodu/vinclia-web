@@ -15,7 +15,8 @@ que exige tu identidad o tu tarjeta.
 
 ## Decisiones pendientes (⏸)
 
-- **Créditos de Higgsfield en diciembre.** Cada cuento vendido gasta unos 26 créditos (≈1 €). Si la campaña pasa de
+- **Créditos de Higgsfield en diciembre.** Con los libros de 18 y 22 páginas, cada cuento vendido gasta de 38 a 50 créditos (≈1,90 €). Faltan además 20
+  créditos para terminar las 10 páginas de la muestra de Martina (hoy se ven solo con texto). Si la campaña pasa de
   unas decenas de cuentos al mes habrá que recargar (más de 20 €/mes).
 
 ## Mensajes para aprobar

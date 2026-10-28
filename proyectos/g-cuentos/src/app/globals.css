@@ -106,7 +106,7 @@ h1, h2 { text-wrap: balance; }
 
 /* Por dentro del libro */
 .resalte { background: linear-gradient(transparent 55%, #F5C84C 55%, #F5C84C 92%, transparent 92%); color: inherit; padding: 0 .1em; border-radius: 2px; }
-.pista { display: grid; grid-auto-flow: column; grid-auto-columns: min(92%, 720px); gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; scrollbar-width: thin; overscroll-behavior-x: contain; }
+.pista { display: grid; grid-auto-flow: column; grid-auto-columns: max-content; align-items: start; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; scrollbar-width: thin; overscroll-behavior-x: contain; }
 .doble { scroll-snap-align: start; display: grid; grid-template-columns: 1fr 1fr; background: #FFFDF6; border-radius: 6px 6px 6px 6px; box-shadow: 0 18px 40px -22px #1B2444, 0 2px 0 #e9e0cc; overflow: hidden; position: relative; min-width: 0; }
 .doble::after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 36px; margin-left: -18px; background: linear-gradient(90deg, transparent, rgba(27,36,68,.16) 48%, rgba(27,36,68,.22) 50%, rgba(27,36,68,.12) 52%, transparent); pointer-events: none; }
 .doble-texto { position: relative; display: flex; align-items: center; padding: clamp(.9rem, 3vw, 2rem); color: #1B2444; font-size: clamp(.8rem, 2.4vw, 1.02rem); line-height: 1.55; min-width: 0; }
@@ -158,3 +158,22 @@ h1, h2 { text-wrap: balance; }
   .comparativa th, .comparativa td { border: 0; padding: 0; }
   .comparativa td::before { content: attr(data-etiqueta) ": "; font-weight: 700; color: var(--color-noche); }
 }
+
+/* Creador y vista previa */
+.cielo-suave { background: radial-gradient(120% 90% at 85% 0%, #3d4f8a 0%, #2B3A67 45%, #1B2444 100%); }
+.cielo-suave .titulo { color: #FFF8EC; }
+.pagina-libro { background: #FFF8EC; border-radius: 6px 14px 14px 6px; box-shadow: 0 1px 0 #e6dcc8, 10px 14px 30px rgba(27,36,68,.18), inset 6px 0 10px rgba(0,0,0,.05); overflow: hidden; }
+.pagina-libro .ilu { position: relative; aspect-ratio: 3 / 2; overflow: hidden; }
+.pagina-libro .ilu img { width: 100%; height: 100%; object-fit: cover; }
+.pagina-libro .ilu::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 18px; background: #FFF8EC; clip-path: path("M0 18 Q 25% 4 50% 14 T 100% 10 L 100% 18 Z"); clip-path: ellipse(60% 100% at 50% 100%); }
+.editor-pagina { width: 100%; resize: vertical; min-height: 7.5rem; border-radius: .8rem; border: 1.5px dashed #e6dcc8; background: #fffdf7; padding: .8rem 1rem; font-size: 1.02rem; line-height: 1.6; }
+.editor-pagina:focus { outline: 3px solid #F5C84C; border-style: solid; }
+@media (prefers-color-scheme: dark) { .pagina-libro { background: #FFF8EC; color: #1B2444; } .editor-pagina { background: #141a30; color: #FFF8EC; border-color: #39426a; } }
+.edad-tarjeta { border-radius: 28px; padding: 1.75rem; position: relative; }
+.edad-peques { background: linear-gradient(160deg, #FEF3D3, #FFF8EC 70%); }
+.edad-mayores { background: linear-gradient(160deg, #E4EEF9, #FFF8EC 70%); }
+.edad-sello { font-weight: 800; font-size: .85rem; background: #2B3A67; color: #FFF8EC; border-radius: 999px; padding: .35rem .8rem; white-space: nowrap; }
+.text-luna-osc { color: #c99b22; }
+.avatar-baile svg { transition: transform .4s ease; }
+.avatar-baile:hover svg { transform: rotate(-4deg) scale(1.04); }
+@media (prefers-color-scheme: dark) { .edad-peques, .edad-mayores { background: #1d2545; } }

@@ -1,5 +1,7 @@
 import {
   aficion,
+  arropa,
+  colorFav,
   companero,
   lugaresDe,
   tema,
@@ -24,6 +26,22 @@ export interface DatosNino {
   bebeGenero?: Genero;
   dedicatoria?: string;
   deParteDe?: string;
+  // Detalles de su mundo (opcionales; si faltan, la plantilla usa valores neutros)
+  arropa?: string; // id de ARROPA: quién le da las buenas noches
+  color?: string; // id de COLORES
+  amigo?: string; // nombre de su mejor amigo o amiga
+  amigoGenero?: Genero;
+  rasgo?: string; // texto libre: algo único (lo teje la IA, no la plantilla)
+  deseo?: string; // texto libre: un sueño o una idea para el cuento (lo teje la IA)
+  aspecto?: Aspecto; // cómo es el protagonista en las ilustraciones
+}
+
+export interface Aspecto {
+  piel: "clara" | "media" | "morena" | "oscura";
+  pelo: "rubio" | "castano" | "pelirrojo" | "negro";
+  peinado: "corto" | "rizado" | "largo" | "coletas";
+  gafas: boolean;
+  pecas: boolean;
 }
 
 const VOCAL = /^[aeiouàáèéíïòóúüh]/i;
@@ -45,6 +63,15 @@ function preposicionDeCa(nombre: string, genero: Genero): string {
 function deCiudad(ciudad: string, idioma: Idioma): string {
   if (idioma === "ca" && VOCAL.test(ciudad.trim())) return `d'${ciudad.trim()}`;
   return `de ${ciudad.trim()}`;
+}
+
+/** «su amiga Lucía» / «el seu amic Pau»; sin nombre, «sus amigos del cole». Solo sin concordancia verbal. */
+function amigoFrase(d: DatosNino): string {
+  const n = d.amigo?.trim();
+  const ca = d.idioma === "ca";
+  if (!n) return ca ? "els seus amics de l'escola" : "sus amigos del cole";
+  const f = d.amigoGenero === "f";
+  return ca ? `${f ? "la seva amiga" : "el seu amic"} ${n}` : `${f ? "su amiga" : "su amigo"} ${n}`;
 }
 
 const mayus = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
@@ -82,6 +109,9 @@ export function variables(d: DatosNino): Record<string, string> {
     bebe,
     Bebe: mayus(bebe),
     bebeVoc: bebeNombre ?? (ca ? (bebeG === "m" ? "petitó" : "petitona") : bebeG === "m" ? "pequeñín" : "pequeñina"),
+    arropa: arropa(d.arropa).texto[d.idioma],
+    color: colorFav(d.color).texto[d.idioma],
+    amigo: amigoFrase(d),
     lugarPlaza: lug.plaza[d.idioma],
     lugarAgua: lug.agua[d.idioma],
     lugarParque: lug.parque[d.idioma],
@@ -114,16 +144,21 @@ export function rellenar(texto: string, d: DatosNino, genero: Genero = d.genero)
   return s;
 }
 
-/** "de el" → "del", "a el" → "al"; en catalán también "dels", "als", "pel", "pels". */
+/**
+ * "de el" → "del", "a el" → "al"; en catalán también "dels", "als", "pel", "pels".
+ * Límites de palabra Unicode (\b de JS no ve las vocales acentuadas: «hacía el» no es «a el»)
+ * y respeta la mayúscula inicial («A el mercat» → «Al mercat»).
+ */
 export function contracciones(s: string, idioma: Idioma): string {
-  if (idioma === "es") return s.replace(/\b(de|a) el\b/g, (_, p) => (p === "de" ? "del" : "al"));
-  return s
-    .replace(/\bde els\b/g, "dels")
-    .replace(/\bde el\b/g, "del")
-    .replace(/\ba els\b/g, "als")
-    .replace(/\ba el\b/g, "al")
-    .replace(/\bper els\b/g, "pels")
-    .replace(/\bper el\b/g, "pel");
+  const reglas: [string, string, string][] =
+    idioma === "es"
+      ? [["de", "el", "del"], ["a", "el", "al"]]
+      : [["de", "en", "d'en"], ["de", "els", "dels"], ["de", "el", "del"], ["a", "els", "als"], ["a", "el", "al"], ["per", "els", "pels"], ["per", "el", "pel"]];
+  for (const [p, art, c] of reglas) {
+    const re = new RegExp(`(?<![\\p{L}'’])(${p}) ${art}(?![\\p{L}'’])`, "giu");
+    s = s.replace(re, (_, pp: string) => (pp[0] === pp[0].toUpperCase() ? c[0].toUpperCase() + c.slice(1) : c));
+  }
+  return s;
 }
 
 export function quedanMarcadores(s: string): boolean {

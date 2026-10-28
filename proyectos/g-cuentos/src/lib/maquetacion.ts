@@ -4,10 +4,14 @@ import path from "node:path";
 import { PDFDocument, rgb, degrees, LineCapStyle, type PDFFont, type PDFImage, type PDFPage } from "pdf-lib";
 import sharp from "sharp";
 import type { Cuento } from "./cuento";
-import type { Idioma } from "./catalogo";
+import { aficion, arropa, colorFav, companero, type ColeccionId, type Idioma } from "./catalogo";
+import { articuloCa, type DatosNino } from "./rellenar";
 
 // ── Medidas ────────────────────────────────────────────────────────────────
-// Libro cuadrado 200 × 200 mm (Gelato «photobooks-hardcover 200x200»), 28 páginas interiores.
+// Libro cuadrado 200 × 200 mm (Gelato «photobooks-hardcover 200x200»), 28 páginas interiores:
+//   1 portadilla · 2 dedicatoria · 3 «este libro pertenece a» · 4 «así es…» (ficha) ·
+//   5… cuento (18 o 22 páginas, cada una con su ilustración arriba y el texto debajo) · «Fin» ·
+//   páginas para la familia hasta completar (diploma, dibujo, foto, notas) · colofón.
 // El sangrado y las medidas de la cubierta se leen de la API de la imprenta cuando hay clave
 // (imprenta/gelato.ts → dimensionesCubierta); estos valores son los de reserva.
 export const MM = 72 / 25.4;
@@ -26,9 +30,10 @@ export type ModoPdf = "imprenta" | "pantalla";
 
 export interface EntradaPdf {
   cuento: Cuento;
+  datos: DatosNino;
   idioma: Idioma;
   nombre: string;
-  imagenes: Buffer[]; // 13: [0] portada, [1..12] páginas
+  imagenes: Buffer[]; // N+1: [0] portada (cuadrada), [1..N] páginas (apaisadas 3:2)
   modo: ModoPdf;
   sangradoMm?: number;
 }
@@ -107,20 +112,65 @@ export function dibujarLunilla(page: PDFPage, cx: number, cy: number, lado: numb
   page.drawSvgPath("M9 40q8 6 17 3", { ...o, borderColor: AZUL_NOCHE, borderWidth: 5.5 * k, borderLineCap: LineCapStyle.Round });
 }
 
-async function prepararImagen(buf: Buffer, ladoPx: number, calidad: number): Promise<Buffer> {
-  return sharp(buf).resize(ladoPx, ladoPx, { fit: "cover", kernel: "lanczos3" }).flatten({ background: "#fbf6ec" })
+async function prepararImagen(buf: Buffer, anchoPx: number, altoPx: number, calidad: number): Promise<Buffer> {
+  return sharp(buf).resize(anchoPx, altoPx, { fit: "cover", kernel: "lanczos3" }).flatten({ background: "#fbf6ec" })
     .jpeg({ quality: calidad, mozjpeg: true, chromaSubsampling: "4:4:4" }).toBuffer();
 }
+
+// Altura de la ilustración en las páginas del cuento (fracción del corte, más el sangrado superior).
+const ALTO_ILUSTRACION = 0.64;
+
+const EXTRAS = {
+  es: {
+    ficha: (n: string) => `Así es ${n}`,
+    campos: { edad: "Edad", ciudad: "Vive en", compa: "Su compañero", aficion: "Le encanta", color: "Color favorito", amigo: "Mejor amistad", arropa: "Buenas noches de", rasgo: "Algo único" },
+    anos: (e: number) => `${e} años`,
+    diploma: "Diploma",
+    diplomaTexto: (c: ColeccionId, n: string, f: boolean) => ({
+      dormir: `Lunilla certifica que ${n} ya sabe mirar la noche sin miedo.`,
+      valores: `Lunilla certifica que ${n} tiene un corazón que hace crecer cosas bonitas.`,
+      hermanito: `Lunilla certifica que ${n} es ${f ? "la mejor hermana mayor" : "el mejor hermano mayor"} del universo.`,
+      ciudad: `Lunilla certifica que ${n} es ${f ? "exploradora oficial" : "explorador oficial"} de su ciudad.`,
+    })[c],
+    firma: "Firmado: Lunilla",
+    dibujo: (n: string) => `Dibuja aquí a ${n} con Lunilla`,
+    foto: (deN: string, e: number) => `Pega aquí una foto ${deN} a los ${e} años`,
+    fecha: "Fecha:",
+    notas: (n: string) => `Lo que queremos decirte, ${n}`,
+  },
+  ca: {
+    ficha: (n: string) => `Així és ${n}`,
+    campos: { edad: "Edat", ciudad: "Viu a", compa: "El seu company", aficion: "Li encanta", color: "Color preferit", amigo: "Millor amistat", arropa: "Bona nit de", rasgo: "Alguna cosa única" },
+    anos: (e: number) => `${e} anys`,
+    diploma: "Diploma",
+    diplomaTexto: (c: ColeccionId, n: string, f: boolean) => ({
+      dormir: `La Lunilla certifica que ${n} ja sap mirar la nit sense por.`,
+      valores: `La Lunilla certifica que ${n} té un cor que fa créixer coses boniques.`,
+      hermanito: `La Lunilla certifica que ${n} és ${f ? "la millor germana gran" : "el millor germà gran"} de l'univers.`,
+      ciudad: `La Lunilla certifica que ${n} és ${f ? "exploradora oficial" : "explorador oficial"} de la seva ciutat.`,
+    })[c],
+    firma: "Signat: Lunilla",
+    dibujo: (n: string) => `Dibuixa aquí ${n} amb la Lunilla`,
+    foto: (deN: string, e: number) => `Enganxa aquí una foto ${deN} als ${e} anys`,
+    fecha: "Data:",
+    notas: (n: string) => `El que et volem dir, ${n}`,
+  },
+};
 
 /** Interior del libro (28 páginas). En modo pantalla añade cubierta delante y contraportada detrás. */
 export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   const imprenta = e.modo === "imprenta";
-  const b = imprenta ? (e.sangradoMm ?? LIBRO.sangradoMm) * MM : 0;
+  const sMm = imprenta ? (e.sangradoMm ?? LIBRO.sangradoMm) : 0;
+  const b = sMm * MM;
   const corte = LIBRO.corteMm * MM;
   const lado = corte + 2 * b;
-  const ladoPx = imprenta ? Math.round(((LIBRO.corteMm + 2 * (e.sangradoMm ?? LIBRO.sangradoMm)) / 25.4) * LIBRO.dpi) : 1600;
+  const ppm = imprenta ? LIBRO.dpi / 25.4 : 1600 / LIBRO.corteMm; // píxeles por mm
   const calidad = imprenta ? 92 : 80;
   const t = TEXTOS[e.idioma];
+  const x = EXTRAS[e.idioma];
+  const d = e.datos;
+  const N = e.cuento.paginas.length;
+  if (e.imagenes.length !== N + 1) throw new Error(`Hay ${e.imagenes.length} ilustraciones para ${N} páginas (+ portada)`);
 
   const doc = await PDFDocument.create();
   doc.setTitle(e.cuento.titulo);
@@ -128,8 +178,11 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   doc.setCreator("Lunilla · lunilla.es");
   doc.setLanguage(e.idioma === "ca" ? "ca-ES" : "es-ES");
   const F = await cargarFuentes(doc);
+  const altoIlu = b + corte * ALTO_ILUSTRACION; // desde el borde superior (con sangrado)
+  const ladoPx = Math.round((LIBRO.corteMm + 2 * sMm) * ppm);
+  const altoIluPx = Math.round((altoIlu / MM) * ppm);
   const imgs: PDFImage[] = await Promise.all(
-    e.imagenes.map(async (buf) => doc.embedJpg(await prepararImagen(buf, ladoPx, calidad))),
+    e.imagenes.map(async (buf, i) => doc.embedJpg(await prepararImagen(buf, ladoPx, i === 0 ? ladoPx : altoIluPx, calidad))),
   );
 
   const nueva = (fondo = CREMA) => {
@@ -144,6 +197,17 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   const cx = lado / 2;
   const cy = lado / 2;
   const anchoTexto = corte - 2 * 30 * MM;
+  const numero = (p: PDFPage, n: number) => {
+    const s = String(n);
+    p.drawText(s, { x: cx - F.texto.widthOfTextAtSize(s, 9) / 2, y: b + 8 * MM, size: 9, font: F.texto, color: TERRACOTA });
+  };
+  const titular = (p: PDFPage, texto: string, y: number) => bloqueCentrado(p, texto, F.titulo, cx, y, anchoTexto + 20 * MM, 24, 22 * MM, AZUL_NOCHE, 1.15);
+  const marco = (p: PDFPage, y: number, h: number) => {
+    const m = 22 * MM;
+    p.drawRectangle({ x: b + m, y, width: corte - 2 * m, height: h, borderColor: AMARILLO, borderWidth: 2, borderDashArray: [6, 5], color: hex("#FFFDF7") });
+  };
+  const nombreCa = e.idioma === "ca" ? articuloCa(e.nombre, d.genero) : e.nombre; // «la Martina», «en Pau»
+  const deNombre = /^en /.test(nombreCa) ? `d'${nombreCa}` : `de ${nombreCa}`;
 
   if (!imprenta) dibujarFrontal(nueva(), imgs[0], e.cuento.titulo, t.marca, F, { x: 0, y: 0, w: lado, h: lado });
 
@@ -170,22 +234,93 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
     bloqueCentrado(p, e.nombre, F.titulo, cx, cy - 6 * MM, anchoTexto, 34, 30 * MM, AZUL_NOCHE, 1.1);
     adorno(p, cx, cy - 24 * MM);
   }
-  // 4–27 · Doce dobles páginas: texto a la izquierda (par), ilustración a la derecha (impar)
-  e.cuento.paginas.forEach((texto, i) => {
-    const pt = nueva();
-    bloqueCentrado(pt, texto, F.texto, cx, cy, anchoTexto, 18, corte - 60 * MM);
-    const num = String(4 + i * 2);
-    pt.drawText(num, { x: cx - F.texto.widthOfTextAtSize(num, 9) / 2, y: b + 10 * MM, size: 9, font: F.texto, color: TERRACOTA });
-    const pi = nueva();
-    pi.drawImage(imgs[i + 1], { x: 0, y: 0, width: lado, height: lado }); // a sangre
-  });
-  // 28 · Fin y colofón
+  // 4 · Ficha «Así es…» con lo que ha contado la familia
   {
     const p = nueva();
-    dibujarLunilla(p, cx, cy + 45 * MM, 28 * MM);
-    bloqueCentrado(p, t.fin, F.titulo, cx, cy + 16 * MM, anchoTexto, 30, 20 * MM, AZUL_NOCHE);
-    adorno(p, cx, cy + 2 * MM);
-    bloqueCentrado(p, t.colofon(e.nombre), F.texto, cx, b + 34 * MM, anchoTexto, 8.5, 40 * MM, TINTA, 1.4);
+    titular(p, x.ficha(nombreCa), b + corte - 30 * MM);
+    adorno(p, cx, b + corte - 44 * MM);
+    const c = x.campos;
+    const filas: [string, string][] = [
+      [c.edad, x.anos(d.edad)],
+      [c.ciudad, d.ciudad],
+      [c.compa, `${d.mascota} (${companero(d.companero).etiqueta[e.idioma].toLowerCase()})`],
+      [c.aficion, aficion(d.aficion).etiqueta[e.idioma]],
+      [c.color, colorFav(d.color).etiqueta[e.idioma]],
+      ...(d.amigo ? [[c.amigo, d.amigo] as [string, string]] : []),
+      [c.arropa, arropa(d.arropa).etiqueta[e.idioma]],
+      ...(d.rasgo ? [[c.rasgo, d.rasgo] as [string, string]] : []),
+    ];
+    let y = b + corte - 62 * MM;
+    const xe = b + 26 * MM, xv = b + 80 * MM, anchoV = corte - 80 * MM - 24 * MM;
+    for (const [k, v] of filas) {
+      p.drawText(k, { x: xe, y, size: 13, font: F.negrita, color: TERRACOTA });
+      const lineas = partirLineas(v, F.texto, 15, anchoV).slice(0, 3);
+      lineas.forEach((l, i) => p.drawText(l, { x: xv, y: y - i * 19, size: 15, font: F.texto, color: TINTA }));
+      y -= Math.max(1, lineas.length) * 19 + 14;
+    }
+    dibujarLunilla(p, b + corte - 28 * MM, b + 24 * MM, 16 * MM);
+    numero(p, 4);
+  }
+  // 5… · El cuento: ilustración apaisada a sangre arriba, texto debajo
+  const peques = N <= 18;
+  e.cuento.paginas.forEach((texto, i) => {
+    const p = nueva();
+    p.drawImage(imgs[i + 1], { x: 0, y: lado - altoIlu, width: lado, height: altoIlu });
+    // Borde ondulado suave entre la ilustración y el papel
+    const yb = lado - altoIlu;
+    p.drawSvgPath(`M0 0 Q ${lado / 4} 7 ${lado / 2} 0 T ${lado} 0 L ${lado} -9 L 0 -9 Z`, { x: 0, y: yb, color: CREMA });
+    const altoTexto = yb - b - 14 * MM;
+    bloqueCentrado(p, texto, F.texto, cx, b + 12 * MM + altoTexto / 2, corte - 2 * 18 * MM, peques ? 21 : 17, altoTexto, TINTA, 1.4);
+    numero(p, 5 + i);
+  });
+  // «Fin»
+  {
+    const p = nueva();
+    dibujarLunilla(p, cx, cy + 25 * MM, 34 * MM);
+    bloqueCentrado(p, t.fin, F.titulo, cx, cy - 10 * MM, anchoTexto, 34, 20 * MM, AZUL_NOCHE);
+    adorno(p, cx, cy - 26 * MM);
+  }
+  // Páginas para la familia hasta completar las 28 (con 22 páginas de cuento no queda hueco)
+  const huecos = LIBRO.paginas - (4 + N + 1 + 1);
+  const extras: ((p: PDFPage) => void)[] = [
+    (p) => {
+      p.drawRectangle({ x: b + 14 * MM, y: b + 14 * MM, width: corte - 28 * MM, height: corte - 28 * MM, borderColor: AMARILLO, borderWidth: 3 });
+      p.drawRectangle({ x: b + 18 * MM, y: b + 18 * MM, width: corte - 36 * MM, height: corte - 36 * MM, borderColor: AZUL_NOCHE, borderWidth: 0.8 });
+      bloqueCentrado(p, x.diploma, F.titulo, cx, b + corte - 45 * MM, anchoTexto, 36, 20 * MM, AZUL_NOCHE);
+      bloqueCentrado(p, e.nombre, F.titulo, cx, cy + 12 * MM, anchoTexto, 30, 18 * MM, TERRACOTA);
+      bloqueCentrado(p, x.diplomaTexto(d.coleccion, nombreCa, d.genero === "f"), F.cursiva, cx, cy - 12 * MM, anchoTexto, 14, 30 * MM);
+      dibujarLunilla(p, cx + 30 * MM, b + 42 * MM, 16 * MM);
+      p.drawLine({ start: { x: cx - 50 * MM, y: b + 36 * MM }, end: { x: cx + 12 * MM, y: b + 36 * MM }, thickness: 0.6, color: TINTA });
+      p.drawText(x.firma, { x: cx - 50 * MM, y: b + 30 * MM, size: 9, font: F.texto, color: TERRACOTA });
+    },
+    (p) => {
+      titular(p, x.dibujo(nombreCa), b + corte - 26 * MM);
+      marco(p, b + 22 * MM, corte - 62 * MM);
+      dibujarLunilla(p, b + corte - 30 * MM, b + 30 * MM, 12 * MM);
+    },
+    (p) => {
+      titular(p, x.foto(deNombre, d.edad), b + corte - 26 * MM);
+      marco(p, b + 44 * MM, corte - 84 * MM);
+      p.drawText(x.fecha, { x: b + 22 * MM, y: b + 30 * MM, size: 11, font: F.negrita, color: TERRACOTA });
+      p.drawLine({ start: { x: b + 40 * MM, y: b + 30 * MM }, end: { x: b + 110 * MM, y: b + 30 * MM }, thickness: 0.6, color: TINTA });
+    },
+    (p) => {
+      titular(p, x.notas(e.nombre), b + corte - 26 * MM);
+      for (let y = b + corte - 50 * MM; y > b + 26 * MM; y -= 11 * MM)
+        p.drawLine({ start: { x: b + 22 * MM, y }, end: { x: b + corte - 22 * MM, y }, thickness: 0.5, color: hex("#C9BFAE") });
+      dibujarLunilla(p, cx, b + 16 * MM, 9 * MM);
+    },
+  ];
+  for (let k = 0; k < huecos; k++) {
+    const p = nueva();
+    extras[k % extras.length](p);
+    numero(p, 4 + N + 2 + k);
+  }
+  // 28 · Colofón
+  {
+    const p = nueva();
+    dibujarLunilla(p, cx, cy + 30 * MM, 20 * MM);
+    bloqueCentrado(p, t.colofon(e.nombre), F.texto, cx, cy - 10 * MM, anchoTexto, 9.5, 50 * MM, TINTA, 1.45);
   }
   if (!imprenta) {
     const p = nueva();
