@@ -20,7 +20,9 @@ def main():
     def reg(path):
         s = size(path)
         if s is None: return None
-        if s in sizes and sizes[s] != path: print('AVISO: mismo tamaño', path, sizes[s])
+        if s in sizes:   # mismo tamaño: el mismo PDF en dos cursos (si no lo es, avisa)
+            if sizes[s] != path and open(sizes[s], 'rb').read() != open(path, 'rb').read(): print('AVISO: mismo tamaño y distinto contenido', path, sizes[s])
+            return s
         sizes[s] = path; subir.append(path); return s
     for c in CURSOS:
         est = os.path.join(ROOT, 'udemy', f'{c}-estructura.json')
