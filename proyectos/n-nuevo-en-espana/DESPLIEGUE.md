@@ -139,3 +139,8 @@ Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y
 Publicada la identidad de marca (commit 0938832) en https://nuevo-en-espana.vercel.app. Sin cambios de variables ni de Stripe. Pendiente: pago de prueba con la tarjeta 4242.
 
 Ejecutado el 2026-10-28
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+Publicado el commit 9c07f95 (monetizar primero y recuperación). `LEGAL_EMAIL=hola@numimates.com` (DESPLIEGUES.md §6): el aviso legal y la portada ya no muestran el correo personal. `/api/checkout` sigue devolviendo sesiones `cs_test_`.
+
+Ejecutado el 2026-10-28
