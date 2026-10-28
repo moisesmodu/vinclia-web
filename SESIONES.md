@@ -70,6 +70,11 @@ competidor, con su modelo y las listas `copiar`, `mejorar`, `adaptar` y `planAcc
 aplícalo: lo que está en `copiar` se replica, lo de `mejorar` es el mínimo diferencial exigible, lo de `adaptar` manda sobre
 cualquier plantilla. Si durante la sesión descubres algo nuevo del líder, añádelo ahí.
 
+## Antes de desplegar
+Ejecuta `node scripts/comprobar-entorno.mjs` (raíz del repo). Si todo está en verde, despliega tú (`DESPLIEGUES.md` §3). Si
+no, escribe `proyectos/<clave>/DESPLIEGUE.md` (§4), avisa a la sesión del Mac si es alcanzable (`SendMessage` a la sesión
+cuyo nombre contenga «despliegues») y sigue. El resultado del comprobador va en el informe final.
+
 ## Qué entrega cada sesión (criterio de "hecho")
 - Producto desplegable con `npm run build` limpio, probado en móvil, con pago en modo prueba funcionando de punta a punta.
 - `README.md`: qué es, cómo se despliega (Vercel, variables de entorno), decisiones tomadas.

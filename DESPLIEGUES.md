@@ -53,6 +53,11 @@ su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 4. **Resend:** remitente `noreply@algorithmicslleida.com` hasta tener dominio propio.
 5. Comprobar de punta a punta en la URL de producción (pago en modo prueba) y anotar la URL en `panel/data/proyectos.json`.
 
+## 3 bis. Primero de todo, en cada sesión: `node scripts/comprobar-entorno.mjs`
+
+Dice en 5 segundos si la sesión puede desplegar sola (red y secretos) o si debe dejar `DESPLIEGUE.md`. Las sesiones
+lo ejecutan al empezar y antes de desplegar; el resultado va en el informe final.
+
 ## 4. Por proyecto: lo que hace la sesión cuando NO tiene los secretos
 
 Escribe `proyectos/<clave>/DESPLIEGUE.md` con, exactamente: nombre del proyecto en Vercel y Root Directory;
@@ -60,6 +65,13 @@ lista de variables de entorno con su valor o de dónde sale; nombre del proyecto
 eventos de webhook de Stripe; comandos a ejecutar en orden. La sesión del Mac lo ejecuta tal cual.
 `PARA-MOISES.md` solo lleva tareas que exigen a una persona por ley o por plataforma (comprar un dominio, pulsar
 "publicar" en Google Play, firmar un formulario fiscal), nunca "crea el proyecto en Vercel" ni "pega la clave".
+
+### Enlace automático con la sesión del Mac (mientras la nube no pueda desplegar)
+Si Moisés arranca la sesión del Mac con Remote Control (`claude remote-control` en un terminal dentro de la carpeta del
+repositorio, o desde la app de escritorio), esa sesión aparece como alcanzable para las sesiones en la nube. Entonces,
+al terminar, la sesión de proyecto le envía un mensaje con `SendMessage` (destinatario: la sesión cuyo nombre contenga
+«despliegues») con la ruta de su `DESPLIEGUE.md` y el número de PR. Si no es alcanzable, basta con el PR: la sesión del
+Mac los revisa en bucle (ver §5).
 
 ## 5. La sesión del Mac
 
@@ -69,3 +81,9 @@ que crea productos y webhook de forma repetible; A está en el PR #2, rama `clau
 app Android ya lleva ese dominio, con su propio `scripts/stripe-configurar.mjs`); (3) anotar en `panel/data/proyectos.json` la URL
 de producción y el estado `lanzado` de cada uno, y hacer push a la rama base. Si una acción exige la sesión del
 navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo "abre esta página", nada más.
+
+Para que recoja los despliegues sola, se le da este bucle (comando `/loop 30m`): «Cada 30 minutos: `git fetch`, lista
+los PR abiertos de moisesmodu/vinclia-web hacia la rama base cuyo diff añada un `proyectos/*/DESPLIEGUE.md` que aún no
+esté marcado como ejecutado; ejecuta cada uno en orden según DESPLIEGUES.md §3, anota la URL de producción y el estado
+`lanzado` en panel/data/proyectos.json, añade al final del DESPLIEGUE.md la línea `Ejecutado el <fecha>` y haz push a
+la rama del PR. Si falta un acceso, créalo (sección 1) y guárdalo también como secreto del entorno en la nube.»
