@@ -3,7 +3,7 @@
     "clave": "a-ccse",
     "letra": "A",
     "nombre": "CCSE nacionalidad",
-    "marca": "Nuevo en España",
+    "marca": "CCSE en tu idioma · familia Nuevo en España",
     "resumen": "App y web para aprobar el examen CCSE de nacionalidad española, con las 300 preguntas oficiales explicadas en 7 idiomas.",
     "estado": "en construcción",
     "orden": 1,
@@ -49,9 +49,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "El proyecto de Vercel ccse-en-tu-idioma ya existe y compila todas las ramas: la sesión del Mac debe fijar la rama de producción y el Ignored Build Step (DESPLIEGUES.md §5)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: CCSE en tu idioma («Aprueba el examen de nacionalidad en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md",
       "Primer pago real verificado"
     ],
@@ -264,9 +269,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs (productos y webhook repetibles) listos para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Nuevo en España («Tus trámites en España, paso a paso y en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
       "Verificar un pago en producción"
     ],
@@ -449,7 +459,7 @@
     "clave": "b-oposiciones",
     "letra": "B",
     "nombre": "Oposiciones de cola larga",
-    "marca": "Exámenes",
+    "marca": "Plaça · familia Exámenes",
     "resumen": "Tests, simulacros y repaso espaciado para oposiciones catalanas que las grandes apps no cubren.",
     "estado": "pendiente",
     "orden": 3,
@@ -481,9 +491,14 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Plaça («Treu plaça. Tests per a la teva oposició, per fi.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión B",
       "Preparar campaña de búsqueda sin activar"
     ],
@@ -670,7 +685,7 @@
     "clave": "juegos",
     "letra": "H+Q",
     "nombre": "Juegos",
-    "marca": "Juegos",
+    "marca": "Nuvolet Games",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
     "estado": "lanzado",
     "orden": 4,
@@ -717,10 +732,15 @@
       },
       {
         "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Nuvolet Games («Tiny games, big smiles.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
         "texto": "Desplegado en Vercel (proyecto juegos-casuales): https://juegos-casuales.vercel.app/egg-truck/"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Segundo juego con la plantilla",
       "Plan de Roblox"
     ],
@@ -975,7 +995,7 @@
     "clave": "m-catala",
     "letra": "M",
     "nombre": "Certificados de catalán (B1 a C2)",
-    "marca": "Nuevo en España",
+    "marca": "Aprova · familia Nuevo en España",
     "resumen": "La app para aprobar los certificados oficiales de catalán, del B1 al C2: entrena exactamente las partes de cada examen con sus pesos y mínimos y dice cada día la probabilidad de aprobar. Lo mejor de Duolingo, Busuu, ELSA, Langua, Kwiziq, Anki y Magoosh aplicado al examen de la DPL.",
     "estado": "pendiente",
     "orden": 5,
@@ -1013,9 +1033,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Producto redefinido: certificados oficiales del B1 al C2; estructura de los 4 exámenes, 13 competidores catalanes y 10 apps de referencia analizadas; documento M-CATALA-PRODUCTE.md y prompt nuevo"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Aprova («El teu certificat de català, del B1 al C2.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión M con el prompt nuevo (sesión 1: diagnóstico, plan, práctica, corrección escrita, simulacros B1 a C1)",
       "Conseguir 20 candidatos reales al C1 para la prueba de validez (academias de Lleida o el CNL)",
       "Verificar la licencia de la voz Matxa o entrenar voz propia"
@@ -1324,7 +1349,7 @@
     "clave": "g-cuentos",
     "letra": "G",
     "nombre": "Cuentos personalizados",
-    "marca": "Niños",
+    "marca": "Lunilla",
     "resumen": "Cuentos infantiles ilustrados y personalizados, en PDF e impresos bajo demanda. Tienda abierta el 15/11 para Navidad.",
     "estado": "en construcción",
     "orden": 6,
@@ -1371,9 +1396,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac (Neon «cartera-g-cuentos», Vercel, Stripe de prueba, Resend). Precios: PDF 7,90 €, tapa dura 36,90 € con envío (margen ≥ 9 €; se confirma con la cotización real de Gelato)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
       "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
       "Apertura el 15/11"
@@ -1575,7 +1605,7 @@
     "clave": "i-kdp",
     "letra": "I",
     "nombre": "Libros en Amazon KDP",
-    "marca": "Pasivos",
+    "marca": "Cuadernos Lunilla · familia Lunilla",
     "resumen": "Cuadernos de lógica, pensamiento computacional y programación sin pantalla para niños, en castellano y catalán.",
     "estado": "pendiente",
     "orden": 7,
@@ -1613,9 +1643,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Prompt actualizado: los cuadernos parten de los imprimibles y actividades sin pantalla de Numi Tech y de los ejercicios de Numi Mates"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Cuadernos Lunilla («Piensa como un programador, sin pantallas.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión I: 5 títulos y pipeline"
     ],
     "paraMoises": [
@@ -1805,7 +1840,7 @@
     "clave": "j-cursos",
     "letra": "J",
     "nombre": "Cursos en Udemy",
-    "marca": "Pasivos",
+    "marca": "Numi Tech",
     "resumen": "Dos cursos en vídeo: programación para niños desde casa (para padres) e IA práctica para pequeños negocios.",
     "estado": "en construcción",
     "orden": 8,
@@ -1848,9 +1883,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Cursos 1, 2 y 4 construidos a partir de Numi Tech (parte castellana, presenta.html, imprimibles y simulador); producción de vídeos en marcha, unas 5–6 h; PR al terminar"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Numi Tech («Aprende haciendo, con un profesor de verdad.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Terminar los vídeos y abrir el PR",
       "DESPLIEGUE.md: página privada de entrega y tareas programadas por la sesión del Mac"
     ],
@@ -2038,7 +2078,7 @@
     "clave": "l-examenes",
     "letra": "L",
     "nombre": "Motor de exámenes",
-    "marca": "Exámenes",
+    "marca": "Prepa · familia Exámenes",
     "resumen": "El motor de B aplicado a la nueva PAU, al DELE y SIELE para todo el mundo y al nivell C de català.",
     "estado": "pendiente",
     "orden": 9,
@@ -2070,9 +2110,14 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Prepa («Practica como en el examen de verdad.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión L después de B"
     ],
     "paraMoises": [
@@ -2257,7 +2302,7 @@
     "clave": "o-lectura",
     "letra": "O",
     "nombre": "Lectura en voz alta",
-    "marca": "Niños",
+    "marca": "Lunilla Lee · familia Lunilla",
     "resumen": "El niño lee en voz alta, la app escucha, corrige y mide la fluidez; castellano y catalán, 5 a 8 años.",
     "estado": "pendiente",
     "orden": 10,
@@ -2289,9 +2334,14 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Lunilla Lee («Lee en voz alta: Lunilla te escucha y te ayuda.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
       }
     ],
     "proximos": [
+      "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión O"
     ],
     "paraMoises": [
@@ -2484,7 +2534,7 @@
     "clave": "p-webs-adsense",
     "letra": "P",
     "nombre": "Webs con AdSense",
-    "marca": "Pasivos",
+    "marca": "Claro",
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
     "estado": "lanzado",
     "orden": 11,
@@ -2496,9 +2546,11 @@
     "clientes": 0,
     "canal": "Solo Google: búsquedas de utilidad ('calcular sueldo neto 2027', 'festivos Lleida 2027'); nunca anuncios de pago",
     "enlaces": {
-      "Web NetoClaro": "https://netoclaro.vercel.app/",
-      "Web ImpuestoClaro": "https://impuestoclaro.vercel.app/",
-      "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6"
+      "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6",
+      "Vista previa NetoClaro": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
+      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
+      "NetoClaro": "https://netoclaro.vercel.app/",
+      "ImpuestoClaro": "https://impuestoclaro.vercel.app/"
     },
     "acciones": [
       {
@@ -2527,14 +2579,21 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Sitios desplegados por la sesión del Mac en Vercel (camino B): netoclaro.vercel.app e impuestoclaro.vercel.app, con datos legales; faltan dominios, AdSense y Search Console"
+        "texto": "DESPLIEGUE.md listo para la sesión del Mac con dos caminos: Cloudflare Pages (gratis, publicación automática en cada push si hay token) o dos proyectos de Vercel (netoclaro e impuestoclaro); variable SITIO y datos legales LEGAL_*; sin Neon ni Stripe"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca definida: Claro («Números claros, sin letra pequeña.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
       }
     ],
     "proximos": [
-      "Moisés: comprar netoclaro.es e impuestoclaro.es; la sesión del Mac los añade a Vercel y quita SITE_URL",
-      "Solicitar AdSense con el sitio 1 en su dominio; publicar el mensaje RGPD de Google",
-      "Crear la tarea programada semanal: BOE, 20 páginas nuevas, Search Console e informe",
-      "Sitio 3 (EE. UU. en español, chequeclaro.com) a las 6–8 semanas: abre Mediavine y Raptive"
+      "Aplicar la identidad de marca de MARCAS.md",
+      "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
+      "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
