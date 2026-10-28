@@ -1,0 +1,17 @@
+{
+  "name": "Nuevo en España · Guías de trámites",
+  "short_name": "Nuevo en España",
+  "description": "Guías paso a paso de trámites en España en 7 idiomas, con fuentes oficiales.",
+  "start_url": "/?origen=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FBF5EC",
+  "theme_color": "#D9603B",
+  "lang": "es",
+  "categories": ["education", "reference", "productivity"],
+  "icons": [
+    { "src": "/iconos/icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/iconos/icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/iconos/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

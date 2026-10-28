@@ -1,0 +1,188 @@
+{
+  "idioma": "Català",
+  "marca": "Nuevo en España",
+  "lema": "Els teus tràmits a Espanya, pas a pas i en el teu idioma",
+  "meta": {
+    "titulo": "Nuevo en España · Guies de tràmits per a estrangers en la teva llengua",
+    "descripcion": "Guies pas a pas per renovar la residència, empadronar-te, demanar la targeta sanitària, el número de la Seguretat Social, el carnet de conduir i la nacionalitat. Fonts oficials, en 7 llengües."
+  },
+  "nav": {
+    "guias": "Guies",
+    "preguntas": "Preguntes",
+    "precios": "Preus",
+    "cuenta": "El meu compte",
+    "idioma": "Llengua"
+  },
+  "inicio": {
+    "titulo": "Els teus tràmits a Espanya, pas a pas i en el teu idioma",
+    "subtitulo": "Documents, terminis, taxes i errors freqüents de cada tràmit, amb la font oficial citada i la data de revisió. Per a persones acabades d'arribar o acabades de regularitzar.",
+    "ctaGratis": "Comença gratis: empadronament",
+    "ctaGuias": "Veure totes les guies",
+    "puntos": [
+      {
+        "titulo": "Fonts oficials",
+        "texto": "Cada dada enllaça al BOE, al ministeri o a la seu oficial, amb la data de consulta."
+      },
+      {
+        "titulo": "En 7 llengües",
+        "texto": "Castellà, àrab, francès, anglès, romanès, xinès i ucraïnès."
+      },
+      {
+        "titulo": "Llista i recordatoris",
+        "texto": "Marca el que ja tens i rep un correu abans de cada termini."
+      }
+    ],
+    "guiasTitulo": "Les guies",
+    "empiezaTitulo": "Per on començo?",
+    "empiezaTexto": "Tria la teva situació i et mostrem l'ordre recomanat de tràmits.",
+    "situaciones": {
+      "recienLlegado": "Acabo d'arribar a Espanya",
+      "regularizado": "M'han concedit l'autorització de la regularització (RD 316/2026)",
+      "renovar": "He de renovar la meva targeta",
+      "nacionalidad": "Vull demanar la nacionalitat"
+    },
+    "ordenRecomendado": "Ordre recomanat",
+    "novedad": "Novetat: renovació de les autoritzacions del Reial decret 316/2026"
+  },
+  "guia": {
+    "resumen": "Resum",
+    "paraQuien": "A qui li serveix?",
+    "datosClave": "Dades clau",
+    "pasos": "Pas a pas",
+    "documentos": "Documents que necessites",
+    "plazos": "Terminis",
+    "tasas": "Taxes",
+    "modelo": "Model",
+    "errores": "Errors freqüents",
+    "variantes": "Diferències segons on visquis",
+    "checklist": "La teva llista de comprovació",
+    "checklistAyuda": "Només es desa en aquest dispositiu.",
+    "hechos": "{hechos} de {total} fets",
+    "reiniciar": "Tornar a començar",
+    "recordatorio": "Recordatori de terminis per correu",
+    "fuentes": "Fonts oficials",
+    "consultado": "consultat el",
+    "actualizado": "Revisada el",
+    "gratis": "Guia gratis",
+    "dePago": "Guia completa amb subscripció",
+    "bloqueadaTitulo": "La resta de la guia és per a subscriptors",
+    "bloqueadaTexto": "Desbloqueja el pas a pas, els documents, les taxes, els errors freqüents, la llista de comprovació i els recordatoris de totes les guies.",
+    "verPrecios": "Veure preus",
+    "yaTengoAcceso": "Ja he pagat: recuperar accés",
+    "cargando": "Carregant…",
+    "otrasGuias": "Altres guies",
+    "noTraducida": "Aquesta guia encara no està traduïda al català: te la mostrem en castellà.",
+    "celebracion": "Tràmit enllestit! Ho tens tot a punt."
+  },
+  "recordatorio": {
+    "email": "El teu correu electrònic",
+    "fecha": "Data",
+    "consentimiento": "Accepto rebre aquests avisos per correu. Només desem el teu correu i aquesta data, i et pots donar de baixa a cada correu.",
+    "boton": "Activar recordatoris",
+    "avisos": "T'escriurem:",
+    "diasAntes": "{n} abans",
+    "diasDespues": "{n} després",
+    "elDia": "el mateix dia",
+    "ok": "T'hem enviat un correu. Prem l'enllaç per confirmar els recordatoris.",
+    "error": "No s'ha pogut desar. Revisa el correu i la data i torna-ho a provar.",
+    "soloSuscriptores": "Els recordatoris d'aquesta guia són per a subscriptors."
+  },
+  "precios": {
+    "titulo": "Preus",
+    "subtitulo": "Gratis: la guia completa d'empadronament i el resum de totes les guies.",
+    "suscripcion": "Subscripció mensual",
+    "suscripcionTexto": "Totes les guies completes, llistes de comprovació i recordatoris. Cancel·la quan vulguis des del teu compte.",
+    "pack": "Pack 12 mesos",
+    "packTexto": "Un sol pagament, sense renovació automàtica. Ideal per a la renovació de la teva targeta.",
+    "incluye": [
+      "Les 8 guies completes",
+      "Llistes de comprovació interactives",
+      "Recordatoris de terminis per correu"
+    ],
+    "pagar": "Pagar amb targeta",
+    "desistimiento": "Vull accedir ja al contingut digital i accepto que, un cop comenci l'accés, perdo el dret de desistiment de 14 dies.",
+    "condiciones": "He llegit les condicions de venda.",
+    "pruebaStripe": "Pagament segur amb Stripe. Ara mateix en mode de prova: no es cobra res de real.",
+    "noAsesoria": "No és assessorament legal ni gestió de tràmits: és informació pública ordenada i explicada.",
+    "marcaCasillas": "Marca les dues caselles per continuar.",
+    "errorPago": "No s'ha pogut obrir el pagament. Torna-ho a provar d'aquí a uns minuts.",
+    "gratisTitulo": "Gratis, sense registrar-te",
+    "gratisIncluye": [
+      "La guia completa d'empadronament, amb llista i recordatoris",
+      "El resum, les dades clau i les fonts de les 8 guies",
+      "El selector «Per on començo?»"
+    ],
+    "pagoTitulo": "Amb subscripció o pack",
+    "iva": "IVA inclòs",
+    "cancela": "Cancel·la amb un clic des d'«El meu compte». Sense permanència.",
+    "sinRenovacion": "Un sol pagament. No es renova sol.",
+    "porMes": "al mes"
+  },
+  "acceso": {
+    "titulo": "Recuperar l'accés",
+    "texto": "Escriu el correu amb què vas pagar i t'enviarem un enllaç per entrar en aquest dispositiu.",
+    "boton": "Enviar enllaç",
+    "enviado": "Si aquest correu té una subscripció o un pack actius, rebràs un enllaç d'aquí a uns minuts.",
+    "graciasTitulo": "Gràcies! Ja tens accés",
+    "graciasTexto": "Totes les guies estan desbloquejades en aquest dispositiu. Per entrar des d'un altre, fes servir «Recuperar l'accés» amb el teu correu.",
+    "comprobando": "Comprovant el pagament…",
+    "pagoNoConfirmado": "Encara no veiem el pagament confirmat. Espera un minut i recarrega la pàgina."
+  },
+  "cuenta": {
+    "titulo": "El meu compte",
+    "sinSesion": "No has entrat en aquest dispositiu.",
+    "plan": "Pla",
+    "hasta": "Accés fins al",
+    "suscripcion": "Subscripció mensual",
+    "pack": "Pack 12 mesos",
+    "sinPlan": "Sense pla actiu",
+    "cancelar": "Cancel·lar la subscripció",
+    "canceladaOk": "Subscripció cancel·lada. Mantens l'accés fins al final del període pagat.",
+    "salir": "Sortir d'aquest dispositiu",
+    "borrar": "Per esborrar totes les teves dades, escriu a"
+  },
+  "preguntas": {
+    "titulo": "Preguntes freqüents sobre tràmits",
+    "respuestaCorta": "Resposta curta",
+    "guiaRelacionada": "Guia pas a pas",
+    "masPreguntas": "Més preguntes"
+  },
+  "aviso": {
+    "corto": "Informació general de fonts oficials. No és assessorament legal.",
+    "largo": "Nuevo en España ofereix informació pública de fonts oficials, citades i datades. No és assessorament legal, no demana cites prèvies i no fa tràmits en nom de ningú. Les normes canvien: comprova sempre la font oficial enllaçada. Per al teu cas concret, consulta un advocat o una entitat d'acollida gratuïta."
+  },
+  "pie": {
+    "avisoLegal": "Avís legal",
+    "privacidad": "Privacitat",
+    "cookies": "Galetes",
+    "condiciones": "Condicions de venda",
+    "contacto": "Contacte",
+    "sello": "Fet a Lleida · Preu clar · Cancel·la amb un clic"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirma els teus recordatoris de {guia}",
+    "confirmarTexto": "Prem aquest enllaç per activar els recordatoris de la guia «{guia}»:",
+    "avisoAsunto": "Recordatori: {guia}",
+    "accesoAsunto": "El teu enllaç per entrar a Nuevo en España",
+    "accesoTexto": "Prem aquest enllaç per entrar en aquest dispositiu. Caduca d'aquí a 30 minuts:",
+    "baja": "Donar-me de baixa d'aquests avisos",
+    "abrirGuia": "Obrir la guia"
+  },
+  "comun": {
+    "volver": "Tornar",
+    "enviar": "Enviar",
+    "cerrar": "Tancar",
+    "inicio": "Inici"
+  },
+  "oferta": {
+    "titulo": "Amb el padró fet, què toca ara?",
+    "texto": "El següent sol ser la targeta sanitària, el número de la Seguretat Social i, el 2027, renovar o modificar la teva autorització. Desbloqueja les 8 guies completes, amb la llista i els recordatoris.",
+    "boton": "Desbloquejar les 8 guies",
+    "precio": "4,99 €/mes, cancel·la amb un clic · o 19,90 € per 12 mesos"
+  },
+  "recuperacion": {
+    "texto": "Et vas quedar a mig pagament. Pots reprendre'l ara, en un minut.",
+    "boton": "Reprendre el pagament",
+    "cerrar": "Ara no"
+  }
+}

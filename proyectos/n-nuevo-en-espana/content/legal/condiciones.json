@@ -1,0 +1,44 @@
+{
+  "titulo": "Condiciones de venta",
+  "secciones": [
+    {
+      "titulo": "Vendedor",
+      "parrafos": [
+        "{titular}, NIF {nif}, {domicilio}, {correo}."
+      ]
+    },
+    {
+      "titulo": "Qué compras",
+      "parrafos": [
+        "Acceso a contenido digital: las guías completas de Nuevo en España en todos sus idiomas, las listas de comprobación y los recordatorios de plazos por correo. Es información general de fuentes oficiales: no incluye asesoramiento jurídico, gestión de citas ni la tramitación de ningún procedimiento."
+      ]
+    },
+    {
+      "titulo": "Precios y planes",
+      "parrafos": [
+        "Suscripción mensual: 4,99 € al mes, IVA incluido, con renovación automática cada mes hasta que la canceles. Puedes cancelarla en cualquier momento desde «Mi cuenta»; mantendrás el acceso hasta el final del mes pagado y no se te volverá a cobrar.",
+        "Pack 12 meses: 19,90 €, IVA incluido, pago único sin renovación automática. Da acceso durante 12 meses desde la compra.",
+        "El pago se hace con tarjeta a través de Stripe. Recibirás el justificante de pago por correo."
+      ]
+    },
+    {
+      "titulo": "Derecho de desistimiento",
+      "parrafos": [
+        "Como consumidor tienes, en general, 14 días naturales para desistir de un contrato a distancia. En el contenido digital que no se presta en soporte material, ese derecho se pierde cuando empieza el acceso si has dado tu consentimiento expreso y has reconocido que lo pierdes (artículo 103.m del Real Decreto Legislativo 1/2007). Antes de pagar te pedimos ese consentimiento con una casilla, y lo confirmamos en el justificante.",
+        "Aun así, si el contenido no funciona o no corresponde a lo descrito, escríbenos y te devolveremos el importe."
+      ]
+    },
+    {
+      "titulo": "Garantía de satisfacción",
+      "parrafos": [
+        "Si en los 7 días siguientes a tu primer pago no te ha resultado útil, escríbenos desde el correo con el que pagaste y te devolvemos el importe sin preguntas. Al hacerlo, el acceso se cierra."
+      ]
+    },
+    {
+      "titulo": "Reclamaciones",
+      "parrafos": [
+        "Escríbenos a la dirección de contacto. También puedes usar la plataforma europea de resolución de litigios en línea (https://ec.europa.eu/consumers/odr) y las hojas de reclamaciones oficiales de tu comunidad autónoma."
+      ]
+    }
+  ]
+}

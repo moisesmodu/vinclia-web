@@ -231,7 +231,7 @@
     "nombre": "Nuevo en España",
     "marca": "Nuevo en España",
     "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 2,
     "modelo": "Suscripción 4,99 €/mes o pack 19,90 €",
     "margenCliente": 22,
@@ -241,7 +241,11 @@
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
     "enlaces": {
-      "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3"
+      "demo": "https://nuevo-en-espana.vercel.app",
+      "pr": "https://github.com/moisesmodu/vinclia-web/pull/3",
+      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana",
+      "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
+      "monetizacion": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/MONETIZACION.md"
     },
     "acciones": [
       {
@@ -266,31 +270,48 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Guías de trámites en 7 idiomas con pago en modo prueba construidas (PR #3)"
+        "texto": "Producto construido: 8 guías en 7 idiomas con fuentes oficiales, lista de comprobación y recordatorios por correo; pago en modo prueba (4,99 €/mes o pack 19,90 €); 30 páginas SEO, 30 guiones de vídeo (es/ar/fr), fichas de Play en 8 idiomas, 51 comunidades. Build limpio y prueba e2e en verde (PR #3)."
       },
       {
         "fecha": "2026-10-28",
-        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs (productos y webhook repetibles) listos para la sesión del Mac"
+        "texto": "Adaptado a DESPLIEGUES.md: DESPLIEGUE.md con comandos exactos, productos y webhook de Stripe (Numi Mates) creados por script idempotente, LEGAL_* del entorno, migraciones de Prisma; PARA-MOISES sin claves ni cuentas."
       },
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Nuevo en España («Tus trámites en España, paso a paso y en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en producción (https://nuevo-en-espana.vercel.app) desde la sesión del Mac: proyecto de Vercel nuevo-en-espana, Neon cartera-n-nuevo-en-espana (Londres) con migraciones, Stripe en el entorno de prueba de Numi Mates (productos, precios y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478)."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Correo de contacto, aviso legal y reply-to: hola@numimates.com (remitente noreply@numimates.com)."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Monetizar primero: oferta de pago al acabar la guía gratis de empadronamiento (2 pantallas hasta Stripe), aviso único de recuperación para pagos a medias, eventos checkout/pago y MONETIZACION.md con embudo, 100 primeras visitas y primer euro como muy tarde el 11/11/2026."
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
-      "Verificar un pago en producción"
+      "Publicar en producción la versión con marca, oferta y correo (commit «correo hola@numimates.com»; comando en DESPLIEGUE.md)",
+      "Pago de prueba con 4242 en producción y pasar Stripe a modo real con un pago real reembolsado (D1, 29/10)",
+      "Primeras 100 visitas sin anuncios según MONETIZACION.md (comunidades, enlace desde A, Search Console, 3 vídeos)",
+      "Primer euro como muy tarde el 11/11/2026",
+      "Primera revisión semanal: tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)"
     ],
-    "paraMoises": [],
+    "paraMoises": [
+      "Aprobar la tarea programada semanal (prompt en TAREA-PROGRAMADA.md)",
+      "Cuando quiera cobrar de verdad: decir «lanza N con Stripe real»"
+    ],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
       "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
       "Monitor automático de cambios legales que actualiza las guías y avisa al suscriptor: 'tu trámite ha cambiado'.",
       "Vídeos cortos multilingües con subtítulos y comunidades de WhatsApp y Telegram por idioma; colaborar con despachos verificados por afiliación.",
-      "Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario."
+      "Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario.",
+      "Sección CCSE (proyecto A) dentro de la misma app para la venta cruzada que prevé VIABILIDAD.",
+      "Guías en catalán (hoy solo la interfaz) y variantes por ciudad para las 20 búsquedas siguientes de MARKETING.md."
     ],
     "competidores": [
       {
@@ -379,7 +400,12 @@
       "Canales dominantes: YouTube y TikTok de despachos, con mucha desinformación; hueco para contenido con fuente oficial citada.",
       "Las administraciones ya publican guías en árabe, francés, rumano, chino y ucraniano: el conjunto de idiomas está validado, pero hay mucho contenido gratis y la disposición a pagar 4,99 €/mes es incierta; el modelo de pago por municipios sugiere una vía B2B.",
       "Riesgo regulatorio: dar asesoramiento sin ser abogado exige avisos y derivación; la normativa cambia a menudo y exige mantenimiento continuo.",
-      "Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma."
+      "Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma.",
+      "La autorización del RD 316/2026 no se renueva: se modifica por el artículo 191 del Reglamento (Real Decreto 1155/2024) en los 2 meses antes o 3 después de caducar; la prórroga de 1 año es excepcional (preguntas y respuestas de Inclusión, 21/07/2026).",
+      "Real Decreto 180/2026 (en vigor 13/03/2026): asistencia sanitaria de personas sin residencia autorizada con declaración responsable, documento provisional inmediato y silencio positivo a 3 meses.",
+      "Desde mayo de 2025 la DGT permite el canje digital de permisos con Cl@ve; el teórico del B solo se hace en castellano, lenguas cooficiales, inglés, francés y alemán (no árabe, rumano ni chino).",
+      "La subsede de Universidades estuvo cerrada desde el 22/10/2026 por incidencia técnica; las homologaciones se presentan por el Registro Electrónico General.",
+      "Google Play puede exigir su propio sistema de facturación para contenido digital: la app TWA no vende dentro y los pagos van por la web (revisar antes de publicar)."
     ],
     "lider": {
       "nombre": "Parainmigrantes.info (Vicente Marín), con Integreat (Alemania) como referencia de producto",

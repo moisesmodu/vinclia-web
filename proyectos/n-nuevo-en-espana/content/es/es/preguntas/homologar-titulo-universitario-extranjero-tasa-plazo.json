@@ -1,0 +1,43 @@
+{
+  "slug": "homologar-titulo-universitario-extranjero-tasa-plazo",
+  "pregunta": "Homologar un título universitario extranjero: ¿cuánto cuesta y cuánto tarda?",
+  "descripcion": "Homologar un título universitario extranjero: tasa de 166,50 € (modelo 790 código 107) y resolución en un máximo de 6 meses. Ojo al cierre de la subsede.",
+  "respuestaCorta": "La homologación o la declaración de equivalencia de un título universitario extranjero cuesta 166,50 € por trámite (modelo 790 código 107) y la tramita el Ministerio de Ciencia, Innovación y Universidades. El Ministerio debe resolver en un máximo de 6 meses desde que la solicitud entra en el registro; si no responde, se puede entender desestimada. Desde el 22/10/2026 la subsede de Universidades está cerrada por una incidencia técnica y los plazos afectados se amplían.",
+  "secciones": [
+    {
+      "titulo": "Homologación o equivalencia: elige bien antes de pagar",
+      "texto": "La homologación da los mismos efectos que el título español y es obligatoria para ejercer una profesión regulada, como medicina, enfermería, farmacia, fisioterapia o profesorado. La equivalencia reconoce el nivel académico (Grado o Máster) para seguir estudiando, para oposiciones o para trabajos no regulados, pero no sirve para ejercer una profesión regulada.\n\nComprueba si tu profesión está en el Anexo del Real Decreto 889/2022, en el portal Valida-TE del Ministerio. Si no aparece, no puedes pedir la homologación, pero sí la equivalencia. Puedes pedir las dos para el mismo título, pero son dos solicitudes y dos tasas."
+    },
+    {
+      "titulo": "La tasa: 166,50 € por trámite",
+      "texto": "Se paga con el modelo 790 código 107: 166,50 € por la homologación a Grado o Máster y 166,50 € por la declaración de equivalencia. Si estás en España necesitas NIF o NIE para pagar.\n\nPaga el importe completo: si llega menos dinero por comisiones bancarias, no empiezan tu expediente. Y no pagues hasta estar seguro de qué trámite necesitas, porque cada uno tiene su propia tasa.\n\nAparte de la tasa, cuenta con el coste de la apostilla o legalización en tu país y de la traducción jurada, que no son tasas del Ministerio."
+    },
+    {
+      "titulo": "El plazo: máximo 6 meses",
+      "texto": "Según el Real Decreto 889/2022, el Ministerio debe resolver y notificar en un máximo de 6 meses desde que la solicitud entra en el registro electrónico. Si pasan 6 meses sin respuesta, la solicitud se puede entender desestimada por silencio administrativo y puedes recurrir.\n\nLa resolución puede ser favorable, desfavorable o condicionada a superar formación complementaria, por ejemplo una prueba o unas asignaturas. Durante el trámite el Ministerio puede pedirte que completes la solicitud (subsanación): revisa tus notificaciones electrónicas con frecuencia, porque si no respondes a tiempo pueden archivar tu solicitud."
+    },
+    {
+      "titulo": "Aviso: subsede cerrada desde el 22/10/2026",
+      "texto": "Desde el 22/10/2026 la subsede electrónica de Universidades está cerrada por una incidencia técnica. El Ministerio indica que puedes usar el Registro Electrónico General (ciencia.sede.gob.es) y que los plazos de los trámites afectados se amplían hasta que se resuelva la incidencia. Consulta el aviso oficial antes de presentar."
+    },
+    {
+      "titulo": "Documentos que necesitas",
+      "texto": "Pasaporte, TIE o documento de identidad en vigor; el título original o el certificado oficial de expedición; el certificado académico con duración, asignaturas y horas o créditos ECTS; el justificante de la tasa; y, para profesiones reguladas, la acreditación para ejercer en tu país. Algunas profesiones piden acreditar el español (por ejemplo, B2 para profesorado si no eres de un país de lengua española).\n\nLos originales llevan la Apostilla de La Haya o la legalización diplomática (no para documentos de la UE, el EEE y Suiza). Apostilla el original, no una copia compulsada. Si no están en castellano, necesitas traducción jurada u oficial, que incluya también la apostilla."
+    }
+  ],
+  "faq": [
+    { "p": "¿Cuánto cuesta homologar un título universitario en 2026?", "r": "166,50 € por trámite con el modelo 790 código 107. Si pides homologación y equivalencia, pagas dos tasas." },
+    { "p": "¿Cuánto tarda la homologación?", "r": "El Ministerio tiene un máximo de 6 meses. Por el cierre de la subsede desde el 22/10/2026, los plazos de los trámites afectados se amplían." },
+    { "p": "¿Puedo trabajar de enfermero con la equivalencia?", "r": "No. Para una profesión regulada como enfermería necesitas la homologación, no la equivalencia." },
+    { "p": "¿Mi título de la UE necesita apostilla?", "r": "No. Los documentos de la UE, del Espacio Económico Europeo y de Suiza no necesitan apostilla ni legalización para estos trámites." },
+    { "p": "¿Qué pasa si no responden en 6 meses?", "r": "La solicitud se puede entender desestimada por silencio administrativo y puedes recurrir. Consulta las vías de recurso en la sede del Ministerio." }
+  ],
+  "guia": "homologacion-titulos",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022, homologación, equivalencia y convalidación de enseñanzas universitarias extranjeras (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: portal Valida-TE", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: Tasa 107", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: aviso de cierre de la subsede electrónica de Universidades", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "cuenta-bancaria",
+  "titulo": "开设银行账户",
+  "resumen": "在西班牙，即使你还没有居留许可，你也有权开设基本支付账户（cuenta de pago básica）。它可以用来领工资、付账单、取钱和使用借记卡。手续费最高每月 3 €，如果你处于弱势状况，则免费。如果银行拒绝，必须在最多 10 个工作日内书面告诉你理由。",
+  "paraQuien": "适用于在欧盟合法居住的人、已申请庇护的人，或没有居留许可但不能被驱逐出境的人。如果你在西班牙的银行已经有另一个支付账户，则不适用。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "最高费用", "valor": "每月 3 €（基本支付账户）" },
+    { "etiqueta": "免费", "valor": "如果你处于弱势状况或有被金融排斥的风险（Real Decreto 164/2019）" },
+    { "etiqueta": "银行拒绝开户时的答复", "valor": "书面答复，最多 10 个工作日" },
+    { "etiqueta": "证件", "valor": "有效的护照或 TIE（写有你的外国人识别号 NIE 的卡）" },
+    { "etiqueta": "包含的业务", "valor": "存款、取款、借记卡，以及每年 120 笔转账或账单代扣" }
+  ],
+  "pasos": [
+    { "titulo": "决定申请哪种账户", "texto": "如果你只需要基本功能（收款、付账单、银行卡），请明确要求开“基本支付账户”（«cuenta de pago básica»）。这是你的权利：凡是向客户提供账户的银行，也必须提供这种账户。银行的其他账户可能服务更多，但没有每月 3 € 的上限。" },
+    { "titulo": "准备好你的身份证件", "texto": "银行必须用带照片的有效官方证件来确认你的身份：护照或外国人身份卡（TIE）。如果你是欧盟公民，本国身份证也可以。如果你有 NIE，也一起带上。" },
+    { "titulo": "带上关于你的职业或收入的资料", "texto": "根据反洗钱法 Ley 10/2010，银行会问你从事什么工作、钱从哪里来、住在哪里。这很正常，也是银行的法定义务。你可以提供劳动合同、工资单、居住登记证书（certificado de empadronamiento）或你本人的声明。" },
+    { "titulo": "书面递交申请", "texto": "在银行网点或银行网站申请开户。要求拿一份盖章的副本或带日期的凭证。这个日期很重要：从银行收到完整申请之日起，开始计算 10 个工作日的期限。" },
+    { "titulo": "如果符合条件，申请免费", "texto": "如果你的收入低于 Real Decreto 164/2019 规定的上限，并且没有其他房产或公司股份，你可以申请免费。你需要证明你的收入和家庭成员情况，或提交你所在市政府社会服务部门（servicios sociales）的报告。免费期为 2 年，可以续期。" },
+    { "titulo": "阅读并签署合同", "texto": "签字前，银行必须告诉你手续费信息。检查合同上是否写着“cuenta de pago básica”以及每月手续费。保留一份副本。" },
+    { "titulo": "如果银行不答复或拒绝你，要求书面答复", "texto": "拒绝必须是书面的、免费的，并写明具体理由，最多 10 个工作日内给出。理由只能是法律列出的那几种，例如你没有提供反洗钱规定要求的信息，或你在西班牙已有另一个账户。" },
+    { "titulo": "向银行的客户服务部门投诉", "texto": "向银行的客户服务部门（servicio de atención al cliente）或客户权益专员（defensor del cliente）提交书面投诉。涉及支付服务时，银行一般有 15 个工作日答复；其他情况下，对消费者最多一个月。保存好投诉凭证。" },
+    { "titulo": "如果没有答复或你不同意，向西班牙银行投诉", "texto": "你可以通过网上（用数字证书或 Cl@ve）、现场或邮寄方式，向西班牙银行（Banco de España）的投诉处（Servicio de Reclamaciones）投诉。从你向银行投诉之日起，你有一年时间。投诉免费。" }
+  ],
+  "documentos": [
+    { "nombre": "有效护照", "nota": "如果你还没有 TIE，可以用护照。" },
+    { "nombre": "有效的外国人身份卡（TIE）", "nota": "如果你有的话。卡上有你的 NIE。" },
+    { "nombre": "本国身份证", "nota": "仅限欧盟、欧洲经济区或瑞士公民。" },
+    { "nombre": "住址证明", "nota": "例如居住登记证书（certificado de empadronamiento）或租房合同。银行可能会要求。" },
+    { "nombre": "职业或收入证明", "nota": "劳动合同、工资单、自雇（autónomo）登记，如果都没有，可以提供一份情况声明。" },
+    { "nombre": "庇护或国际保护申请文件", "nota": "如果你是庇护申请人。" },
+    { "nombre": "收入和家庭成员证明，或社会服务部门报告", "nota": "仅在你因弱势状况申请免费账户时需要。" },
+    { "nombre": "非居民证明（certificado de no residente）", "nota": "仅在你住在西班牙境外并想开非居民账户时需要。由国家警察（Policía Nacional）出具；如果你已有 NIE，也可由领事馆出具。" }
+  ],
+  "plazos": [
+    { "texto": "银行必须在收到完整申请后最多 10 个工作日内为你开户，或书面通知你拒绝及理由（Real Decreto-ley 19/2017，第5条）。" },
+    { "texto": "银行客户服务部门对支付服务投诉有 15 个工作日答复，对其他消费者投诉有一个月。" },
+    { "texto": "如果银行没有在期限内答复或驳回你的投诉，你可以在向银行投诉后一年内向西班牙银行投诉。" },
+    { "texto": "因弱势状况获得的免费期为 2 年；如果你的情况不变，可以按同样期限续期。" }
+  ],
+  "tasas": [
+    { "concepto": "基本支付账户最高手续费", "importe": "每月 3 €", "modelo": "由银行收取（Orden ECE/228/2019，第4条）", "nota": "包括开户、使用和销户，现金存取，借记卡或预付卡，以及每年 120 笔业务（欧盟境内的欧元转账和账单代扣）。西班牙银行可以每 2 年调整这一金额；截至 28/10/2026 我们没有找到调整，请在 clientebancario.bde.es 核实现行金额。" },
+    { "concepto": "每年超过 120 笔的业务", "importe": "不固定，有上限", "modelo": "由银行收取", "nota": "西班牙银行每季度公布各银行可以收取的最高手续费。" },
+    { "concepto": "弱势人士的基本支付账户", "importe": "0 €", "modelo": "Real Decreto 164/2019", "nota": "如果你符合收入和财产上限。" },
+    { "concepto": "向银行和西班牙银行投诉", "importe": "免费" }
+  ],
+  "errores": [
+    "只说要开“一个账户”，没说“cuenta de pago básica”：银行可能给你开手续费更高的其他账户。请用准确的名称。",
+    "没有保留申请日期的凭证。没有这个日期，很难证明已经过了 10 个工作日。",
+    "接受口头拒绝。一定要求书面拒绝并写明理由；这是你的权利，投诉时也需要它。",
+    "直接去找西班牙银行。你必须先向银行的客户服务部门投诉。",
+    "以为没有 NIE 或居留许可就不能开户。如果你属于受保护的人群之一，有效护照就可以申请。",
+    "对你的职业或收入提供虚假或不完整的信息：这是拒绝开户或关闭账户的法定理由。",
+    "已经住在西班牙了，账户还是“非居民”（no residente）。居住情况改变时通知银行，以便按正确身份处理。"
+  ],
+  "checklist": [
+    { "id": "doc-identidad", "texto": "我有有效的护照或 TIE" },
+    { "id": "doc-domicilio", "texto": "我有住址证明（居住登记或租房合同）" },
+    { "id": "doc-actividad", "texto": "我有关于我工作或收入的文件" },
+    { "id": "pedir-cpb", "texto": "我已明确要求开“基本支付账户”（cuenta de pago básica）" },
+    { "id": "justificante-fecha", "texto": "我有写着申请日期的凭证" },
+    { "id": "valorar-gratuidad", "texto": "我已查过自己能否因弱势状况申请免费账户" },
+    { "id": "revisar-contrato", "texto": "签字前我已检查合同和每月手续费" },
+    { "id": "denegacion-escrito", "texto": "如果被拒绝，我有写明理由的书面答复" },
+    { "id": "reclamacion-banco", "texto": "如有需要，我已向银行客户服务部门投诉" },
+    { "id": "reclamacion-bde", "texto": "如果银行不答复或拒绝，我知道如何向西班牙银行投诉" }
+  ],
+  "recordatorio": {
+    "pregunta": "你是哪一天向银行申请开户的？",
+    "avisos": [
+      { "dias": 10, "texto": "如果银行既没有为你开户，也没有给你书面答复，你可以向客户服务部门投诉。期限是 10 个工作日：如果中间有节假日，再等一两天。" },
+      { "dias": 30, "texto": "如果你已向银行投诉但没有收到答复，或你不同意答复，看看现在是否可以向西班牙银行投诉了。" }
+    ]
+  },
+  "variantes": [
+    { "titulo": "居民账户和非居民账户", "texto": "银行会区分西班牙的居民客户和非居民客户。如果你住在西班牙，你的账户应该是居民账户。如果你住在国外，银行可能要求你提供非居民证明，由国家警察出具（如果你已有 NIE，也可由领事馆出具）。各银行的条件不同；请问银行需要你提供什么。" },
+    { "titulo": "庇护申请人和没有居留许可的人", "texto": "Real Decreto-ley 19/2017 明确包括庇护申请人，以及因法律或事实原因无法被驱逐出境、没有居留许可的人。" }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 19/2017，关于基本支付账户（BOE）", "url": "https://www.boe.es/eli/es/rdl/2017/11/24/19/con", "consultado": "2026-10-28" },
+    { "nombre": "Orden ECE/228/2019，关于基本支付账户（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3113", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 164/2019，基本支付账户免费制度（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906", "consultado": "2026-10-28" },
+    { "nombre": "Ley 10/2010，预防洗钱法（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737", "consultado": "2026-10-28" },
+    { "nombre": "西班牙银行（Banco de España），Cliente Bancario：谁可以申请基本支付账户？", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html", "consultado": "2026-10-28" },
+    { "nombre": "西班牙银行，Cliente Bancario：基本支付账户的免费", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/gratuidad.html", "consultado": "2026-10-28" },
+    { "nombre": "西班牙银行，Cliente Bancario：如何投诉", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/", "consultado": "2026-10-28" },
+    { "nombre": "国家警察（Policía Nacional）：外国人事务（居民和非居民证明）", "url": "https://www.policia.es/_es/extranjeria_extranjeros.php", "consultado": "2026-10-28" }
+  ]
+}

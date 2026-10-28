@@ -1,0 +1,89 @@
+{
+  "slug": "cuenta-bancaria",
+  "titulo": "Abrir una cuenta bancaria",
+  "resumen": "En España tienes derecho a abrir una cuenta de pago básica, aunque todavía no tengas permiso de residencia. Sirve para cobrar el sueldo, pagar recibos, sacar dinero y usar una tarjeta de débito. La comisión máxima es de 3 € al mes y es gratis si estás en situación de vulnerabilidad. Si el banco dice que no, debe darte los motivos por escrito en un máximo de 10 días hábiles.",
+  "paraQuien": "Para cualquier persona que resida legalmente en la Unión Europea, que haya pedido asilo o que no tenga permiso de residencia pero no pueda ser expulsada. No aplica si ya tienes otra cuenta de pago en un banco en España.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coste máximo", "valor": "3 € al mes (cuenta de pago básica)" },
+    { "etiqueta": "Gratis", "valor": "Si estás en situación de vulnerabilidad o riesgo de exclusión financiera (Real Decreto 164/2019)" },
+    { "etiqueta": "Respuesta del banco si te deniega la cuenta", "valor": "Por escrito y como máximo en 10 días hábiles" },
+    { "etiqueta": "Documento", "valor": "Pasaporte o TIE (tarjeta con tu NIE) en vigor" },
+    { "etiqueta": "Operaciones incluidas", "valor": "Ingresos, retiradas, tarjeta de débito y 120 transferencias o recibos al año" }
+  ],
+  "pasos": [
+    { "titulo": "Decide qué tipo de cuenta pides", "texto": "Si solo necesitas lo básico (cobrar, pagar recibos, tarjeta), pide expresamente una «cuenta de pago básica». Es un derecho: el banco que ofrece cuentas a sus clientes también tiene que ofrecer esta. Otras cuentas del banco pueden tener más servicios, pero no tienen el límite de 3 € al mes." },
+    { "titulo": "Prepara tu documento de identidad", "texto": "El banco tiene que identificarte con un documento oficial con foto y en vigor: pasaporte o tarjeta de identidad de extranjero (TIE). Si eres de la UE, también vale el documento de identidad de tu país. Lleva también tu NIE si lo tienes." },
+    { "titulo": "Lleva información sobre tu actividad", "texto": "Por la Ley 10/2010 contra el blanqueo de capitales, el banco te preguntará a qué te dedicas, de dónde viene tu dinero y tu domicilio. Es normal y obligatorio para el banco. Puedes aportar un contrato de trabajo, nóminas, certificado de empadronamiento o una declaración tuya." },
+    { "titulo": "Presenta la solicitud por escrito", "texto": "Pide la cuenta en la oficina o por la web del banco. Pide una copia sellada o un justificante con la fecha. Esta fecha es importante: desde que el banco recibe la solicitud completa empieza el plazo de 10 días hábiles." },
+    { "titulo": "Si te corresponde, pide que sea gratuita", "texto": "Si tus ingresos están por debajo de los límites del Real Decreto 164/2019 y no tienes otras viviendas ni participaciones en empresas, puedes pedir la gratuidad. Tendrás que demostrar tus ingresos y tu unidad familiar, o presentar un informe de los servicios sociales de tu ayuntamiento. La gratuidad dura 2 años y se puede renovar." },
+    { "titulo": "Lee y firma el contrato", "texto": "Antes de firmar, el banco debe darte la información de comisiones. Comprueba que en el contrato pone «cuenta de pago básica» y la comisión mensual. Guarda una copia." },
+    { "titulo": "Si el banco no responde o te dice que no, pide la respuesta por escrito", "texto": "La denegación debe ser por escrito, gratis y con los motivos concretos, como máximo en 10 días hábiles. Los motivos están en una lista cerrada de la ley, por ejemplo no aportar la información que exige la normativa de blanqueo o tener ya otra cuenta en España." },
+    { "titulo": "Reclama al servicio de atención al cliente del banco", "texto": "Presenta una reclamación por escrito al servicio de atención al cliente o defensor del cliente del banco. Para servicios de pago, el banco tiene en general 15 días hábiles para responder; en otros casos, hasta un mes para consumidores. Guarda el justificante de tu reclamación." },
+    { "titulo": "Si no te responden o no estás de acuerdo, reclama al Banco de España", "texto": "Puedes reclamar al Servicio de Reclamaciones del Banco de España por internet (con certificado digital o Cl@ve), en persona o por correo postal. Tienes un año desde tu reclamación al banco. Es gratis." }
+  ],
+  "documentos": [
+    { "nombre": "Pasaporte en vigor", "nota": "Válido si todavía no tienes TIE." },
+    { "nombre": "Tarjeta de identidad de extranjero (TIE) en vigor", "nota": "Si la tienes. Incluye tu NIE." },
+    { "nombre": "Documento nacional de identidad de tu país", "nota": "Solo para ciudadanos de la UE, del Espacio Económico Europeo o Suiza." },
+    { "nombre": "Justificante de domicilio", "nota": "Por ejemplo, certificado de empadronamiento o contrato de alquiler. El banco puede pedirlo." },
+    { "nombre": "Justificante de actividad o ingresos", "nota": "Contrato de trabajo, nóminas, alta de autónomo o, si no tienes, una declaración de tu situación." },
+    { "nombre": "Documento de solicitud de asilo o protección internacional", "nota": "Si eres solicitante de asilo." },
+    { "nombre": "Documentos de ingresos y unidad familiar o informe de servicios sociales", "nota": "Solo si pides la cuenta gratuita por vulnerabilidad." },
+    { "nombre": "Certificado de no residente", "nota": "Solo si vives fuera de España y quieres una cuenta de no residente. Lo expide la Policía Nacional o un consulado si ya tienes NIE." }
+  ],
+  "plazos": [
+    { "texto": "El banco debe abrir la cuenta o comunicarte la denegación por escrito, con los motivos, como máximo en 10 días hábiles desde que recibe la solicitud completa (Real Decreto-ley 19/2017, art. 5)." },
+    { "texto": "El servicio de atención al cliente del banco tiene 15 días hábiles para responder reclamaciones sobre servicios de pago, y un mes para otras reclamaciones de consumidores." },
+    { "texto": "Puedes reclamar al Banco de España si el banco no responde en plazo o rechaza tu reclamación, hasta un año después de reclamar al banco." },
+    { "texto": "La gratuidad por vulnerabilidad dura 2 años y se prorroga por periodos iguales si sigues en la misma situación." }
+  ],
+  "tasas": [
+    { "concepto": "Comisión máxima de la cuenta de pago básica", "importe": "3 € al mes", "modelo": "Lo cobra el banco (Orden ECE/228/2019, art. 4)", "nota": "Incluye apertura, uso y cierre, ingresos y retiradas de efectivo, tarjeta de débito o prepago y 120 operaciones al año (transferencias y recibos en euros en la UE). El Banco de España puede actualizar este importe cada 2 años; a 28/10/2026 no hemos encontrado una actualización, comprueba el importe vigente en clientebancario.bde.es." },
+    { "concepto": "Operaciones por encima de 120 al año", "importe": "Variable, con límite", "modelo": "Lo cobra el banco", "nota": "El Banco de España publica cada trimestre las comisiones máximas que cada banco puede cobrar." },
+    { "concepto": "Cuenta de pago básica para personas vulnerables", "importe": "0 €", "modelo": "Real Decreto 164/2019", "nota": "Si cumples los límites de ingresos y patrimonio." },
+    { "concepto": "Reclamación al banco y al Banco de España", "importe": "Gratis" }
+  ],
+  "errores": [
+    "Pedir «una cuenta» sin decir «cuenta de pago básica»: el banco puede ofrecerte otra cuenta con más comisiones. Usa el nombre exacto.",
+    "No guardar justificante de la fecha de solicitud. Sin esa fecha es difícil demostrar que pasaron los 10 días hábiles.",
+    "Aceptar una negativa solo de palabra. Pide siempre la denegación por escrito con los motivos; es tu derecho y la necesitas para reclamar.",
+    "Ir directamente al Banco de España. Primero tienes que reclamar al servicio de atención al cliente del banco.",
+    "Pensar que sin NIE o sin permiso de residencia no puedes tener cuenta. Con pasaporte en vigor puedes pedirla si estás en uno de los grupos protegidos.",
+    "Dar información falsa o incompleta sobre tu actividad o tus ingresos: es un motivo legal para denegar o cerrar la cuenta.",
+    "Mantener la cuenta como «no residente» cuando ya vives en España. Avisa al banco cuando cambie tu residencia para que aplique la situación correcta."
+  ],
+  "checklist": [
+    { "id": "doc-identidad", "texto": "Tengo pasaporte o TIE en vigor" },
+    { "id": "doc-domicilio", "texto": "Tengo un justificante de domicilio (padrón o alquiler)" },
+    { "id": "doc-actividad", "texto": "Tengo un documento sobre mi trabajo o mis ingresos" },
+    { "id": "pedir-cpb", "texto": "He pedido expresamente una «cuenta de pago básica»" },
+    { "id": "justificante-fecha", "texto": "Tengo justificante con la fecha de mi solicitud" },
+    { "id": "valorar-gratuidad", "texto": "He comprobado si puedo pedir la cuenta gratuita por vulnerabilidad" },
+    { "id": "revisar-contrato", "texto": "He revisado el contrato y la comisión mensual antes de firmar" },
+    { "id": "denegacion-escrito", "texto": "Si me la deniegan, tengo la respuesta por escrito con los motivos" },
+    { "id": "reclamacion-banco", "texto": "Si hace falta, he reclamado al servicio de atención al cliente del banco" },
+    { "id": "reclamacion-bde", "texto": "Si el banco no responde o dice que no, sé cómo reclamar al Banco de España" }
+  ],
+  "recordatorio": {
+    "pregunta": "¿Qué día pediste la cuenta al banco?",
+    "avisos": [
+      { "dias": 10, "texto": "Si el banco no te ha abierto la cuenta ni te ha dado una respuesta por escrito, puedes reclamar al servicio de atención al cliente. El plazo es de 10 días hábiles: si hubo festivos, espera uno o dos días más." },
+      { "dias": 30, "texto": "Si reclamaste al banco y no te han respondido o no estás de acuerdo, revisa si ya puedes reclamar al Banco de España." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Cuenta de residente y cuenta de no residente", "texto": "Los bancos distinguen entre clientes residentes y no residentes en España. Si vives en España, tu cuenta debe ser de residente. Si vives fuera, el banco puede pedirte un certificado de no residente, que expide la Policía Nacional (o un consulado si ya tienes NIE). Las condiciones de cada banco son distintas; pregunta en el banco qué te piden." },
+    { "titulo": "Solicitantes de asilo y personas sin permiso de residencia", "texto": "El Real Decreto-ley 19/2017 incluye expresamente a los solicitantes de asilo y a las personas sin permiso de residencia cuya expulsión no sea posible por razones legales o de hecho." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 19/2017, de cuentas de pago básicas (BOE)", "url": "https://www.boe.es/eli/es/rdl/2017/11/24/19/con", "consultado": "2026-10-28" },
+    { "nombre": "Orden ECE/228/2019, sobre cuentas de pago básicas (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3113", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 164/2019, régimen gratuito de cuentas de pago básicas (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906", "consultado": "2026-10-28" },
+    { "nombre": "Ley 10/2010, de prevención del blanqueo de capitales (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: ¿Quiénes pueden solicitar la cuenta de pago básica?", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Gratuidad de la cuenta de pago básica", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/gratuidad.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Cómo realizar una reclamación", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/", "consultado": "2026-10-28" },
+    { "nombre": "Policía Nacional: Extranjería (certificados de residencia y no residencia)", "url": "https://www.policia.es/_es/extranjeria_extranjeros.php", "consultado": "2026-10-28" }
+  ]
+}

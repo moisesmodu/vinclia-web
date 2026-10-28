@@ -1,0 +1,141 @@
+{
+  "slug": "empadronamiento",
+  "titulo": "Comment vous inscrire au registre municipal (empadronamiento) en Espagne",
+  "resumen": "S'inscrire au padrón municipal (le registre des habitants), c'est ce qu'on appelle en Espagne l'empadronamiento : la liste officielle des personnes qui vivent dans chaque commune. C'est obligatoire pour toutes les personnes qui vivent en Espagne, même en situation irrégulière, et cela ouvre l'accès à la carte de santé, à l'école, aux services sociaux et à beaucoup de démarches d'immigration. L'inscription est gratuite à Madrid, à Barcelone et dans la plupart des mairies (ayuntamientos). Le plus long est souvent d'obtenir le rendez-vous ; avec les bons papiers, la démarche se fait en une seule visite ou sur internet.",
+  "paraQuien": "Pour toute personne qui vit dans une commune d'Espagne, qu'elle ait ou non un titre de séjour et qu'elle ait ou non un contrat de location. Si vous êtes de passage quelques jours (tourisme), vous ne vous inscrivez pas.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coût", "valor": "Gratuit à Madrid et à Barcelone (et dans la plupart des mairies)" },
+    { "etiqueta": "Où", "valor": "À la mairie (ayuntamiento) de la commune où vous vivez : en personne avec rendez-vous (cita previa) ou sur son site officiel (sede electrónica)" },
+    { "etiqueta": "Ce qu'il faut", "valor": "Pièce d'identité en cours de validité + preuve que vous vivez à cette adresse (ou autorisation de la personne qui vit là)" },
+    { "etiqueta": "Sans papiers ?", "valor": "Vous pouvez vous inscrire. Le padrón enregistre où vous vivez, pas votre situation de séjour" },
+    { "etiqueta": "Renouvellement", "valor": "Tous les 2 ans si vous venez d'un pays hors UE et n'avez pas la résidence de longue durée" },
+    { "etiqueta": "Document obtenu", "valor": "Volante (document d'information) ou certificado (document officiel qui fait preuve) de empadronamiento" },
+    { "etiqueta": "Base légale", "valor": "Ley 7/1985, articles 15 à 17 ; Ley Orgánica 4/2000, article 6.3" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Comprenez pourquoi c'est obligatoire",
+      "texto": "La Ley 7/1985 de Bases del Régimen Local (article 15) dit que toute personne qui vit en Espagne doit s'inscrire au padrón de la commune où elle vit habituellement. Si vous vivez à plusieurs endroits, vous vous inscrivez là où vous passez le plus de temps dans l'année. La Ley Orgánica 4/2000 (article 6.3) oblige les mairies à inscrire au padrón les personnes étrangères qui ont leur domicile habituel dans la commune. Le padrón enregistre où vous vivez vraiment : il ne sert pas à contrôler votre situation administrative."
+    },
+    {
+      "titulo": "Cherchez comment faire dans votre mairie",
+      "texto": "Chaque mairie gère son padrón. Allez sur le site officiel (sede electrónica) de votre mairie et cherchez « padrón », « empadronamiento » ou « alta en el padrón ». Dans beaucoup de villes, vous pouvez appeler le 010 pour vous informer. Certaines permettent de s'inscrire sur internet si vous avez un certificat numérique ou Cl@ve (le système d'identification électronique de l'État) ; sinon, vous y allez en personne."
+    },
+    {
+      "titulo": "Prenez rendez-vous (cita previa) sur le site officiel",
+      "texto": "Le rendez-vous est gratuit et se prend seulement sur le site ou au téléphone officiel de la mairie. À Madrid, il se prend sur madrid.es/citaprevia (au maximum 1 rendez-vous par personne tous les 30 jours et une seule adresse par rendez-vous). À Barcelone, sur barcelona.cat/cita. Personne ne peut vous faire payer pour vous donner un rendez-vous."
+    },
+    {
+      "titulo": "Préparez votre pièce d'identité",
+      "texto": "Si vous venez d'un pays hors de l'Union européenne, apportez votre passeport ou votre carte de séjour (TIE, Tarjeta de Identidad de Extranjero) en cours de validité. Si vous avez une TIE, beaucoup de mairies la demandent en priorité, comme Madrid. Si vous êtes de l'UE, apportez votre carte d'identité nationale ou votre passeport et, si vous l'avez, le certificat d'enregistrement avec votre NIE (numéro d'identité d'étranger). Les documents doivent être des originaux et en cours de validité."
+    },
+    {
+      "titulo": "Préparez la preuve de l'endroit où vous vivez",
+      "texto": "Le plus courant est le contrat de location en cours, l'acte de propriété (escritura) ou une nota simple du Registro de la Propiedad (extrait du registre foncier). Si vous vivez dans une chambre ou chez une autre personne et n'avez pas de contrat à votre nom, il vous faut une autorisation signée par le titulaire du contrat, le propriétaire ou une personne majeure déjà inscrite dans ce logement, avec une copie de sa pièce d'identité. Madrid et Barcelone ont des modèles officiels d'autorisation sur leur site."
+    },
+    {
+      "titulo": "Si vous n'avez aucun papier du logement",
+      "texto": "Les instructions techniques de l'INE et du Ministère (Resolución du 17 février 2020) disent que le padrón doit indiquer le domicile où vous vivez réellement, quels que soient les conflits sur la propriété ou l'état du logement. Si vous ne pouvez pas présenter de documents, la mairie peut vérifier par d'autres moyens que vous vivez là (par exemple avec un rapport de la Policía Local ou une inspection) et, si c'est le cas, vous inscrire. Cela vaut aussi pour les logements précaires comme les baraques, les caravanes ou les hangars."
+    },
+    {
+      "titulo": "Si vous n'avez pas de domicile fixe",
+      "texto": "Si vous vivez dans la rue ou sans lieu fixe, vous pouvez vous inscrire avec un « domicilio ficticio » (adresse de rattachement) si vous vivez habituellement dans la commune et que les services sociaux vous connaissent (point 3.3 des instructions de 2020). Allez d'abord aux services sociaux municipaux : ils indiquent l'adresse utilisée et c'est là que vous recevrez les courriers de l'Administration. À Barcelone, on demande un rapport de connaissance de résidence (informe de conocimiento de residencia, ICR) des Servicios Sociales."
+    },
+    {
+      "titulo": "Remplissez la hoja padronal et allez à votre rendez-vous",
+      "texto": "La hoja padronal (ou demande d'inscription, solicitud de alta) est le formulaire du padrón. Toutes les personnes majeures qui s'inscrivent la signent. Si vous inscrivez un mineur, apportez son livret de famille (libro de familia) ou son acte de naissance et, en général, la signature ou l'autorisation de l'autre parent. Les documents étrangers peuvent nécessiter une traduction officielle : à Barcelone, ils doivent être en espagnol ou en catalan, ou traduits."
+    },
+    {
+      "titulo": "Demandez le volante ou le certificado",
+      "texto": "Le volante de empadronamiento informe que vous êtes inscrit et donne votre adresse. Le certificado prouve officiellement l'inscription, avec les dates d'inscription et les adresses précédentes. Chaque organisme décide lequel il demande : pour beaucoup de démarches, le volante suffit, mais pour l'immigration ou pour prouver une durée de résidence, on demande souvent le certificado. À Madrid, les deux sont gratuits et peuvent se demander sur internet."
+    },
+    {
+      "titulo": "Notez la date et renouvelez tous les 2 ans si c'est votre cas",
+      "texto": "Si vous venez d'un pays hors UE (et hors EEE et Suisse) et n'avez pas d'autorisation de résidence de longue durée, vous devez renouveler votre inscription tous les 2 ans, à compter de l'inscription ou du dernier renouvellement (article 16 de la Ley 7/1985). Si vous ne renouvelez pas, la mairie peut vous radier sans vous prévenir avant. En général, la mairie envoie une lettre à votre adresse du padrón, mais l'obligation est la vôtre même si la lettre n'arrive pas."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Passeport en cours de validité", "nota": "Pour les personnes de pays hors UE sans TIE. Original." },
+    { "nombre": "Carte de séjour TIE (Tarjeta de Identidad de Extranjero) en cours de validité", "nota": "Si vous l'avez, apportez-la : à Madrid, elle passe avant tout autre document." },
+    { "nombre": "Carte d'identité nationale ou passeport (citoyens UE, EEE et Suisse)", "nota": "Avec le certificat d'enregistrement de citoyen de l'UE et votre NIE, si vous l'avez." },
+    { "nombre": "Hoja padronal ou demande d'inscription signée", "nota": "Toutes les personnes majeures qui s'inscrivent la signent. Elle se télécharge sur le site de la mairie ou on vous la donne au bureau." },
+    { "nombre": "Contrat de location, escritura ou nota simple", "nota": "Original et en cours. À Madrid, le contrat doit être signé par toutes les personnes du contrat." },
+    { "nombre": "Autorisation pour vous inscrire", "nota": "Si le contrat n'est pas à votre nom : signée par le titulaire, le propriétaire ou une personne majeure inscrite dans le logement, avec une copie de sa pièce d'identité." },
+    { "nombre": "Livret de famille (libro de familia) ou acte de naissance des mineurs", "nota": "Traduit s'il n'est pas en espagnol (ou en catalan en Catalogne)." },
+    { "nombre": "Autorisation de l'autre parent", "nota": "Quand vous inscrivez un mineur et qu'un seul parent signe, sauf exceptions (par exemple, décision de justice)." },
+    { "nombre": "Rapport des services sociaux", "nota": "Seulement si vous n'avez pas de domicile fixe (à Barcelone, il s'appelle informe de conocimiento de residencia, ICR)." },
+    { "nombre": "Traduction officielle des documents étrangers", "nota": "La mairie peut la demander (traducteur assermenté, consulat ou administration publique)." }
+  ],
+  "plazos": [
+    { "texto": "Si vous êtes étranger d'un pays hors UE, EEE et Suisse sans autorisation de résidence de longue durée, votre inscription se renouvelle tous les 2 ans à compter de l'inscription ou du dernier renouvellement (Ley 7/1985, art. 16.1)." },
+    { "texto": "Si les 2 ans passent sans renouvellement, la mairie peut déclarer l'expiration (caducidad) de votre inscription sans vous entendre avant (Ley 7/1985, art. 16.1). Vous êtes alors radié." },
+    { "texto": "Le renouvellement n'est pas automatique : vous devez le demander vous-même de façon explicite, en confirmant que vous vivez toujours à la même adresse." },
+    { "texto": "Madrid : le renouvellement sur internet n'est possible qu'avec la lettre de préavis (carta de preaviso) et dans le délai indiqué ; ensuite, il faut y aller en personne avec rendez-vous." },
+    { "texto": "Madrid : au maximum 1 rendez-vous de padrón par personne tous les 30 jours." },
+    { "texto": "Pour la carte de santé, Madrid et la Catalogne demandent un volante ou certificado de empadronamiento de moins de 3 mois." }
+  ],
+  "tasas": [
+    { "concepto": "Inscription au padrón", "importe": "0 €", "modelo": "Pas de formulaire de paiement", "nota": "Gratuit à Madrid et à Barcelone. Dans les autres communes, vérifiez sur leur site officiel." },
+    { "concepto": "Volante et certificado de empadronamiento à Madrid", "importe": "0 €", "modelo": "Pas de formulaire de paiement", "nota": "Dans d'autres mairies, le certificado peut être payant : vérifiez sur leur site." },
+    { "concepto": "Renouvellement du padrón", "importe": "0 €", "modelo": "Pas de formulaire de paiement", "nota": "Si quelqu'un vous fait payer pour vous inscrire ou renouveler, ce n'est pas une démarche officielle." }
+  ],
+  "errores": [
+    "Croire que sans contrat de location vous ne pouvez pas vous inscrire : avec l'autorisation de la personne qui vit là, ou avec la vérification de la mairie, c'est aussi possible.",
+    "Croire qu'être en situation irrégulière empêche l'inscription : la mairie doit inscrire toute personne qui vit dans la commune si elle prouve son identité et son domicile.",
+    "Apporter un passeport ou une TIE expirés : le document doit être en cours de validité. Si votre TIE est expirée et en cours de renouvellement, apportez aussi le passeport.",
+    "Oublier le renouvellement des 2 ans : si votre inscription expire, vous perdez la continuité, et cela peut avoir un effet sur les démarches où compte le temps passé inscrit au padrón.",
+    "Ne pas changer votre adresse au padrón quand vous déménagez : la lettre de renouvellement arrive à l'ancienne adresse. L'inscription au nouveau domicile ou dans la nouvelle commune se demande à la mairie où vous vivez maintenant.",
+    "Demander un volante quand la démarche exige un certificado (ou l'inverse) : regardez toujours quel document l'organisme demande et s'il doit être récent.",
+    "Payer pour un « empadronamiento » à une adresse où vous ne vivez pas : c'est une inscription irrégulière, la mairie peut vous radier et cela peut vous causer des problèmes."
+  ],
+  "checklist": [
+    { "id": "cita-oficial", "texto": "J'ai pris le rendez-vous sur le site ou au téléphone officiel de ma mairie" },
+    { "id": "doc-identidad", "texto": "J'ai mon passeport ou ma TIE originale et en cours de validité" },
+    { "id": "doc-vivienda", "texto": "J'ai le contrat, l'escritura ou la nota simple du logement" },
+    { "id": "doc-autorizacion", "texto": "Si le contrat n'est pas à mon nom, j'ai l'autorisation signée et la copie du document de la personne qui m'autorise" },
+    { "id": "hoja-padronal", "texto": "J'ai rempli la hoja padronal et tous les adultes l'ont signée" },
+    { "id": "doc-menores", "texto": "Si j'inscris des mineurs, j'ai leur livret de famille ou acte de naissance et l'autorisation de l'autre parent si nécessaire" },
+    { "id": "traducciones", "texto": "Mes documents étrangers sont traduits si la mairie le demande" },
+    { "id": "sin-domicilio", "texto": "Si je n'ai pas de domicile fixe, j'ai parlé d'abord avec les services sociaux municipaux" },
+    { "id": "volante-certificado", "texto": "Je sais si j'ai besoin d'un volante ou d'un certificado pour ma prochaine démarche" },
+    { "id": "fecha-alta", "texto": "J'ai noté la date de mon inscription au padrón" },
+    { "id": "renovacion", "texto": "Je sais si je dois renouveler tous les 2 ans et j'ai activé le rappel" }
+  ],
+  "recordatorio": {
+    "pregunta": "Quel jour vous êtes-vous inscrit au padrón (empadronamiento) ?",
+    "avisos": [
+      { "dias": 670, "texto": "Il reste environ 2 mois avant les 2 ans de votre inscription au padrón. Si vous venez d'un pays hors UE et n'avez pas la résidence de longue durée, préparez le renouvellement et regardez si la lettre de la mairie est arrivée." },
+      { "dias": 700, "texto": "Il reste 1 mois avant les 2 ans de votre inscription au padrón. Si vous devez renouveler, prenez rendez-vous maintenant ou faites-le sur internet si votre mairie le permet." },
+      { "dias": 730, "texto": "Votre inscription au padrón a 2 ans aujourd'hui. Si vous deviez renouveler et ne l'avez pas fait, la mairie peut vous radier : allez renouveler au plus vite." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "À Madrid (ville)",
+      "texto": "L'inscription se fait sur le site officiel (avec certificat numérique ou Cl@ve) ou dans les Oficinas de Atención a la Ciudadanía avec rendez-vous sur madrid.es/citaprevia (1 rendez-vous par personne tous les 30 jours). Si des personnes sont déjà inscrites dans le logement, l'une d'elles doit vous autoriser, sur internet ou avec le formulaire officiel. La TIE en cours de validité passe avant les autres documents. Le renouvellement des étrangers hors UE peut se faire sur internet si vous avez reçu la lettre de préavis et êtes dans le délai ; sinon, avec rendez-vous. Volantes et certificados sont gratuits. Informations : 010 ou 914 800 010. Plus d'informations : https://sede.madrid.es (cherchez « Padrón Municipal »)."
+    },
+    {
+      "titulo": "À Barcelone",
+      "texto": "L'inscription est gratuite et se fait sur internet dans l'Oficina Virtual de Trámites ou en personne dans un Bureau d'accueil des citoyens (Oficina de Atención Ciudadana, OAC) avec rendez-vous sur barcelona.cat/cita. Si vous n'avez pas de document qui prouve où vous vivez, vous devez y aller en personne. Si vous n'avez pas de domicile fixe, il vous faut un rapport de connaissance de résidence (ICR) des Servicios Sociales. Les documents doivent être en catalan ou en espagnol, ou traduits. Pour le renouvellement des 2 ans, la mairie envoie une lettre à votre adresse et vous indique à quelle OAC aller. Questions : 010. Les volantes de résidence et de cohabitation se demandent à l'Oficina Virtual : https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20220001581"
+    },
+    {
+      "titulo": "Si vous êtes citoyen de l'UE, de l'EEE ou de Suisse (ou si vous avez la résidence de longue durée)",
+      "texto": "Vous n'avez pas à renouveler tous les 2 ans. Certaines mairies, comme Madrid et Barcelone, demandent à ces personnes de confirmer leur résidence de temps en temps (Barcelone indique tous les 5 ans, ou tous les 2 ans si elles ne figurent pas au Registro Central de Extranjeros). Si vous recevez une lettre pour confirmer, répondez-y."
+    },
+    {
+      "titulo": "Dans les autres communes",
+      "texto": "Les règles de base sont les mêmes dans toute l'Espagne (Ley 7/1985 et instructions techniques de l'INE), mais la façon de prendre rendez-vous, les formulaires et le prix éventuel du certificado changent. Cherchez « padrón » sur le site officiel de votre mairie ou demandez à son bureau d'accueil des citoyens."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, texte consolidé)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
+    { "nombre": "Resolución du 17 février 2020 (INE et DGCAL), instructions techniques sur la gestion du Padrón municipal (BOE-A-2020-4784)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
+    { "nombre": "Resolución du 3 février 2023 qui modifie les instructions techniques du Padrón (BOE-A-2023-3291)", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-3291", "consultado": "2026-10-28" },
+    { "nombre": "Ley Orgánica 4/2000, sur les droits et libertés des étrangers, art. 6.3 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
+    { "nombre": "INE IDA-Padrón : volante et certificado de empadronamiento", "url": "https://idapadron.ine.es/repositorio/legislacion/A2301vol.htm", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid : Padrón Municipal. Empadronamiento (inscriptions et changements d'adresse)", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid : Renouvellement de l'inscription des étrangers hors UE", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=06c0d124bd1de010VgnVCM1000000b205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ajuntament de Barcelona : Inscription au Padrón municipal d'habitants", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "idioma": "Română",
+  "marca": "Nuevo en España",
+  "lema": "Formalitățile tale în Spania, pas cu pas și în limba ta",
+  "meta": {
+    "titulo": "Nuevo en España · Ghiduri pentru formalitățile străinilor, în limba ta",
+    "descripcion": "Ghiduri pas cu pas pentru reînnoirea permisului de ședere, înscrierea în registrul primăriei (empadronamiento), obținerea cardului de sănătate, a numărului de Seguridad Social, a permisului de conducere și a cetățeniei spaniole. Surse oficiale, în 7 limbi."
+  },
+  "nav": {
+    "guias": "Ghiduri",
+    "preguntas": "Întrebări",
+    "precios": "Prețuri",
+    "cuenta": "Contul meu",
+    "idioma": "Limbă"
+  },
+  "inicio": {
+    "titulo": "Formalitățile tale în Spania, pas cu pas și în limba ta",
+    "subtitulo": "Documente, termene, taxe și greșeli frecvente pentru fiecare formalitate, cu sursa oficială citată și data verificării. Pentru persoanele sosite de curând sau regularizate de curând.",
+    "ctaGratis": "Începe gratuit: înscrierea în registrul primăriei (empadronamiento)",
+    "ctaGuias": "Vezi toate ghidurile",
+    "puntos": [
+      {
+        "titulo": "Surse oficiale",
+        "texto": "Fiecare informație are link către BOE, minister sau site-ul oficial, cu data consultării."
+      },
+      {
+        "titulo": "În 7 limbi",
+        "texto": "Spaniolă, arabă, franceză, engleză, română, chineză și ucraineană."
+      },
+      {
+        "titulo": "Listă și mementouri",
+        "texto": "Bifează ce ai deja și primește un e-mail înainte de fiecare termen."
+      }
+    ],
+    "guiasTitulo": "Ghidurile",
+    "empiezaTitulo": "De unde încep?",
+    "empiezaTexto": "Alege situația ta și îți arătăm ordinea recomandată a formalităților.",
+    "situaciones": {
+      "recienLlegado": "Tocmai am ajuns în Spania",
+      "regularizado": "Mi s-a acordat autorizația de regularizare (RD 316/2026)",
+      "renovar": "Trebuie să îmi reînnoiesc cardul",
+      "nacionalidad": "Vreau să cer cetățenia spaniolă"
+    },
+    "ordenRecomendado": "Ordinea recomandată",
+    "novedad": "Noutate: reînnoirea autorizațiilor acordate prin Real Decreto 316/2026"
+  },
+  "guia": {
+    "resumen": "Rezumat",
+    "paraQuien": "Pentru cine este?",
+    "datosClave": "Date-cheie",
+    "pasos": "Pas cu pas",
+    "documentos": "Documente necesare",
+    "plazos": "Termene",
+    "tasas": "Taxe",
+    "modelo": "Formular",
+    "errores": "Greșeli frecvente",
+    "variantes": "Diferențe în funcție de locul unde locuiești",
+    "checklist": "Lista ta de verificare",
+    "checklistAyuda": "Se salvează doar pe acest dispozitiv.",
+    "hechos": "{hechos} din {total} făcute",
+    "reiniciar": "Începe din nou",
+    "recordatorio": "Mementouri pentru termene prin e-mail",
+    "fuentes": "Surse oficiale",
+    "consultado": "consultat la",
+    "actualizado": "Verificat la",
+    "gratis": "Ghid gratuit",
+    "dePago": "Ghid complet cu abonament",
+    "bloqueadaTitulo": "Restul ghidului este pentru abonați",
+    "bloqueadaTexto": "Deblochează pașii, documentele, taxele, greșelile frecvente, lista de verificare și mementourile pentru toate ghidurile.",
+    "verPrecios": "Vezi prețurile",
+    "yaTengoAcceso": "Am plătit deja: recuperează accesul",
+    "cargando": "Se încarcă…",
+    "otrasGuias": "Alte ghiduri",
+    "noTraducida": "Acest ghid nu este încă tradus în limba ta: ți-l arătăm în spaniolă.",
+    "celebracion": "Gata! Ai totul pregătit."
+  },
+  "recordatorio": {
+    "email": "Adresa ta de e-mail",
+    "fecha": "Data",
+    "consentimiento": "Accept să primesc aceste notificări prin e-mail. Păstrăm doar adresa ta de e-mail și această dată și te poți dezabona din fiecare e-mail.",
+    "boton": "Activează mementourile",
+    "avisos": "Îți vom scrie:",
+    "diasAntes": "cu {n} înainte",
+    "diasDespues": "la {n} după",
+    "elDia": "chiar în ziua respectivă",
+    "ok": "Ți-am trimis un e-mail. Apasă pe link pentru a confirma mementourile.",
+    "error": "Nu s-a putut salva. Verifică adresa de e-mail și data și încearcă din nou.",
+    "soloSuscriptores": "Mementourile pentru acest ghid sunt pentru abonați."
+  },
+  "precios": {
+    "titulo": "Prețuri",
+    "subtitulo": "Gratuit: ghidul complet pentru empadronamiento și rezumatul tuturor ghidurilor.",
+    "suscripcion": "Abonament lunar",
+    "suscripcionTexto": "Toate ghidurile complete, listele de verificare și mementourile. Anulezi oricând din contul tău.",
+    "pack": "Pachet 12 luni",
+    "packTexto": "O singură plată, fără reînnoire automată. Ideal pentru reînnoirea cardului tău.",
+    "incluye": [
+      "Toate cele 8 ghiduri complete în limba ta",
+      "Liste de verificare interactive",
+      "Mementouri pentru termene prin e-mail"
+    ],
+    "pagar": "Plătește cu cardul",
+    "desistimiento": "Vreau să accesez acum conținutul digital și accept că, odată ce începe accesul, pierd dreptul de retragere de 14 zile.",
+    "condiciones": "Am citit condițiile de vânzare.",
+    "pruebaStripe": "Plată sigură prin Stripe. În acest moment este în modul de test: nu se încasează bani reali.",
+    "noAsesoria": "Nu este consultanță juridică și nici un serviciu care face formalitățile în locul tău: sunt informații publice, ordonate și explicate.",
+    "marcaCasillas": "Bifează cele două căsuțe pentru a continua.",
+    "errorPago": "Nu s-a putut deschide plata. Încearcă din nou peste câteva minute.",
+    "gratisTitulo": "Gratuit, fără înregistrare",
+    "gratisIncluye": [
+      "Ghidul complet de empadronamiento, cu listă și mementouri",
+      "Rezumatul, datele cheie și sursele tuturor celor 8 ghiduri",
+      "Selectorul „De unde încep?”"
+    ],
+    "pagoTitulo": "Cu abonament sau pachet",
+    "iva": "TVA inclus",
+    "cancela": "Anulezi dintr-un clic din „Contul meu”. Fără obligații.",
+    "sinRenovacion": "O singură plată. Nu se reînnoiește singur.",
+    "porMes": "pe lună"
+  },
+  "acceso": {
+    "titulo": "Recuperează accesul",
+    "texto": "Scrie adresa de e-mail cu care ai plătit și îți vom trimite un link pentru a intra pe acest dispozitiv.",
+    "boton": "Trimite linkul",
+    "enviado": "Dacă această adresă de e-mail are un abonament sau un pachet activ, vei primi un link în câteva minute.",
+    "graciasTitulo": "Îți mulțumim! Ai acum acces",
+    "graciasTexto": "Toate ghidurile sunt deblocate pe acest dispozitiv. Pentru a intra de pe alt dispozitiv, folosește „Recuperează accesul” cu adresa ta de e-mail.",
+    "comprobando": "Se verifică plata…",
+    "pagoNoConfirmado": "Încă nu vedem plata confirmată. Așteaptă un minut și reîncarcă pagina."
+  },
+  "cuenta": {
+    "titulo": "Contul meu",
+    "sinSesion": "Nu ești conectat pe acest dispozitiv.",
+    "plan": "Plan",
+    "hasta": "Acces până la",
+    "suscripcion": "Abonament lunar",
+    "pack": "Pachet 12 luni",
+    "sinPlan": "Niciun plan activ",
+    "cancelar": "Anulează abonamentul",
+    "canceladaOk": "Abonament anulat. Păstrezi accesul până la sfârșitul perioadei plătite.",
+    "salir": "Ieși de pe acest dispozitiv",
+    "borrar": "Pentru a șterge toate datele tale, scrie la"
+  },
+  "preguntas": {
+    "titulo": "Întrebări frecvente despre formalități",
+    "respuestaCorta": "Răspuns scurt",
+    "guiaRelacionada": "Ghid pas cu pas",
+    "masPreguntas": "Mai multe întrebări"
+  },
+  "aviso": {
+    "corto": "Informații generale din surse oficiale. Nu este consultanță juridică.",
+    "largo": "Nuevo en España oferă informații publice din surse oficiale, citate și datate. Nu este consultanță juridică, nu face programări (cita previa) și nu face formalități în numele nimănui. Regulile se schimbă: verifică întotdeauna sursa oficială din link. Pentru cazul tău concret, consultă un avocat sau o organizație gratuită de sprijin pentru migranți."
+  },
+  "pie": {
+    "avisoLegal": "Mențiuni legale",
+    "privacidad": "Confidențialitate",
+    "cookies": "Cookie-uri",
+    "condiciones": "Condiții de vânzare",
+    "contacto": "Contact",
+    "sello": "Făcut în Lleida · Preț clar · Anulezi dintr-un clic"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirmă mementourile pentru {guia}",
+    "confirmarTexto": "Apasă pe acest link pentru a activa mementourile pentru ghidul „{guia}”:",
+    "avisoAsunto": "Memento: {guia}",
+    "accesoAsunto": "Linkul tău pentru a intra în Nuevo en España",
+    "accesoTexto": "Apasă pe acest link pentru a intra pe acest dispozitiv. Expiră în 30 de minute:",
+    "baja": "Dezabonează-mă de la aceste notificări",
+    "abrirGuia": "Deschide ghidul"
+  },
+  "comun": {
+    "volver": "Înapoi",
+    "enviar": "Trimite",
+    "cerrar": "Închide",
+    "inicio": "Acasă"
+  },
+  "oferta": {
+    "titulo": "Te-ai înscris la padrón? Ce urmează?",
+    "texto": "De obicei urmează cardul de sănătate, numărul de securitate socială și, în 2027, reînnoirea sau modificarea autorizației. Deblochează toate cele 8 ghiduri complete, cu liste și mementouri.",
+    "boton": "Deblochează cele 8 ghiduri",
+    "precio": "4,99 €/lună, anulezi dintr-un clic · sau 19,90 € pentru 12 luni"
+  },
+  "recuperacion": {
+    "texto": "Nu ai terminat plata. O poți relua acum, într-un minut.",
+    "boton": "Reia plata",
+    "cerrar": "Nu acum"
+  }
+}

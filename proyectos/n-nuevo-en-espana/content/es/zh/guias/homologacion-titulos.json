@@ -1,0 +1,94 @@
+{
+  "slug": "homologacion-titulos",
+  "titulo": "学历认证（homologación）或等同声明（equivalencia）",
+  "resumen": "要在西班牙使用在其他国家获得的学历，你需要获得官方认可。大学学历由科学、创新和大学部（Ministerio de Ciencia, Innovación y Universidades）认可（规费 166,50 €，最多 6 个月内作出决定）。初中（ESO）、高中（Bachillerato）和职业教育（Formación Profesional，FP）学历由教育、职业教育和体育部（Ministerio de Educación, Formación Profesional y Deportes）认可。几乎都需要正式翻译以及海牙认证（apostilla）或领事认证（legalización）。",
+  "paraQuien": "适用于持有外国学历或学习经历、想在西班牙工作、学习或参加公务员考试（oposiciones）的人。如果你住在加泰罗尼亚、加利西亚或巴斯克地区，非大学学历由你所在的自治区办理。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "大学学历", "valor": "科学、创新和大学部（Real Decreto 889/2022）" },
+    { "etiqueta": "非大学学历", "valor": "教育、职业教育和体育部（Real Decreto 104/1988）" },
+    { "etiqueta": "大学学历规费", "valor": "166,50 €（modelo 790, código 107）" },
+    { "etiqueta": "大学学历决定期限", "valor": "最多 6 个月" },
+    { "etiqueta": "初中（ESO）学历认证", "valor": "免费" },
+    { "etiqueta": "注意", "valor": "大学电子分站（subsede electrónica de Universidades）自 22/10/2026 起因技术故障关闭" }
+  ],
+  "pasos": [
+    { "titulo": "选择正确的手续", "texto": "学历认证（homologación）：效力与西班牙学历相同，从事受监管职业（例如医生、护士、药剂师、理疗师、教师）时必须办理。等同声明（equivalencia）：认可学术水平（本科 Grado 或硕士 Máster），用于继续深造、参加公务员考试或从事不受监管的工作；不能用来从事受监管职业。课程认可（convalidación）：认可部分学业，以便在西班牙继续学习。" },
+    { "titulo": "查一下你的职业是否受监管", "texto": "在该部的 Valida-TE 门户网站查看 Real Decreto 889/2022 附件（Anexo）中的名单。如果你的职业不在名单上，你不能申请学历认证，但可以申请等同声明。同一个学历可以两种都申请，但那是两份申请、两笔规费。" },
+    { "titulo": "在你的国家为文件办理海牙认证或领事认证", "texto": "原件（毕业证书和成绩单）如果来自签署了海牙公约的国家，必须办理海牙认证（Apostilla de La Haya）；如果你的国家没有签署，则需通过外交途径办理领事认证（legalización）。欧盟、欧洲经济区和瑞士的文件不需要。请对原件办理认证，而不是对公证复印件。" },
+    { "titulo": "委托正式翻译", "texto": "如果文件不是西班牙语，你需要由外交部（Ministerio de Asuntos Exteriores）任命的宣誓翻译（traductor jurado）进行宣誓翻译（traducción jurada），或其他欧盟国家的正式翻译。翻译中也必须包括海牙认证或领事认证部分。" },
+    { "titulo": "缴纳规费", "texto": "大学学历：modelo 790 código 107，每项手续 166,50 €。非大学学历：modelo 790 código 079。请足额缴纳：如果因为银行手续费到账金额不足，你的案卷就不会启动。在确定需要哪种手续之前不要付款。" },
+    { "titulo": "递交申请（大学学历）", "texto": "学历认证或等同声明申请通过该部电子政务网站在线递交，所有文件需扫描上传。自 22/10/2026 起，大学分站因技术故障关闭；该部表示你可以使用电子总登记处（Registro Electrónico General，ciencia.sede.gob.es），受影响手续的期限会延长。递交前请查看相关通知。" },
+    { "titulo": "递交申请（ESO、Bachillerato、FP）", "texto": "在教育部电子政务网站（sede.educacion.gob.es）填写申请，或带着原件到公共登记处（registro público）递交，由他们制作核证副本。在加泰罗尼亚、加利西亚和巴斯克地区，向自治区递交。" },
+    { "titulo": "如果要上学，申请有条件注册单", "texto": "对于非大学学历，你可以在递交申请时一并提交有条件注册单（volante de inscripción condicional）。盖章后，在审批期间你可以有条件地注册入学。使用它的后果由你自己负责，它不保证审批结果一定有利。" },
+    { "titulo": "如果要求补交材料，及时答复", "texto": "该部可能会要求你更正或补充申请（subsanación）。请在规定期限内答复。经常查看你的案卷和电子通知。" },
+    { "titulo": "收到决定", "texto": "大学学历的决定可能是批准、不批准，或以完成补充培训为条件（例如一场考试或几门课程）。如果 6 个月仍没有答复，申请可以视为因行政沉默（silencio administrativo）被驳回；你可以提出申诉。" }
+  ],
+  "documentos": [
+    { "nombre": "有效的护照、TIE 或身份证件", "nota": "如果你在西班牙，缴纳规费需要 NIF 或 NIE。" },
+    { "nombre": "毕业证书原件或官方的学历颁发证明", "nota": "如适用，需办理海牙认证或领事认证。" },
+    { "nombre": "成绩单（certificado académico）", "nota": "大学学历：写明学制、课程和学时或 ECTS 学分。ESO：最后 4 个学年。Bachillerato：最后 3 个学年。" },
+    { "nombre": "欧洲学历补充文件（Suplemento Europeo al Título）", "nota": "可选：办理等同声明时可以代替成绩单。" },
+    { "nombre": "西班牙语宣誓翻译或正式翻译", "nota": "所有非西班牙语文件都要翻译，包括海牙认证。" },
+    { "nombre": "规费缴费凭证（modelo 790）", "nota": "código 107（大学）或 079（非大学）。" },
+    { "nombre": "在你的国家从事该职业的资格证明", "nota": "仅用于受监管职业的学历认证。" },
+    { "nombre": "西班牙语水平证明", "nota": "仅部分职业需要（例如，如果你不是来自西班牙语国家，教师需要 B2）。" },
+    { "nombre": "有条件注册单（volante de inscripción condicional）", "nota": "可选，适用于非大学学历，如果你想在等待期间注册入学。" }
+  ],
+  "plazos": [
+    { "texto": "大学学历：该部必须在申请进入电子登记处之日起最多 6 个月内作出决定并通知（Real Decreto 889/2022）。在此期限内没有答复，可以视为因沉默被驳回。" },
+    { "texto": "由于大学分站自 22/10/2026 起关闭，该部表示受影响程序的期限会延长，直到故障解决。" },
+    { "texto": "非大学学历：有条件注册单可用于盖章后 6 个月内注册，适用于该学年（Orden de 14 de marzo de 1988）。请向教育部核实现行有效期。" },
+    { "texto": "我们未能核实非大学学历是否公布了最长决定期限；请查看教育部网站上的手续说明页。" }
+  ],
+  "tasas": [
+    { "concepto": "大学学历认证为本科（Grado）或硕士（Máster）", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "本科或硕士学术水平等同声明", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "认证为初中毕业（Graduado en ESO）学历", "importe": "免费", "modelo": "不需缴纳规费" },
+    { "concepto": "认证为高中毕业（Bachiller）学历", "importe": "49,76 €", "modelo": "Modelo 790 código 079", "nota": "教育部公布的金额；我们无法确认这是 2026 年的现行金额。付款前请核实。" },
+    { "concepto": "认可为高中一年级（1.º de Bachillerato）", "importe": "24,88 €", "modelo": "Modelo 790 código 079", "nota": "请在教育部网站核实现行金额。" },
+    { "concepto": "职业教育（FP）学历认证或课程认可", "importe": "请查询现行金额", "modelo": "Modelo 790 código 079", "nota": "我们未能在教育部网站上核实 2026 年的金额。" }
+  ],
+  "errores": [
+    "需要从事受监管职业却申请了等同声明。等同声明不能让你从事例如医生或护士的工作：你需要学历认证（homologación）。",
+    "对公证复印件而不是原件办理海牙认证。该部不接受这种认证。",
+    "翻译了毕业证书却没翻译海牙认证。正式翻译也必须包括认证部分。",
+    "因为转账手续费，实际到账少于规费金额。如果没有足额到账，案卷不会启动。",
+    "还不知道需要哪种手续就先缴费。每种手续（学历认证或等同声明）都有各自的规费。",
+    "不看电子通知。如果没有按时答复补交材料的要求，你的申请可能会被归档。",
+    "使用既不是宣誓翻译也不是正式翻译的译者。如果译者来自欧盟以外，其签名必须经过认证。"
+  ],
+  "checklist": [
+    { "id": "elegir-tramite", "texto": "我知道我需要学历认证、等同声明还是课程认可" },
+    { "id": "profesion-regulada", "texto": "我已查过我的职业是否在 Real Decreto 889/2022 的附件中" },
+    { "id": "doc-identidad", "texto": "我有有效的护照、TIE 或身份证件，以及我的 NIE" },
+    { "id": "doc-titulo", "texto": "我有办好海牙认证或领事认证的毕业证书原件" },
+    { "id": "doc-notas", "texto": "我有办好海牙认证或领事认证的成绩单" },
+    { "id": "traduccion", "texto": "所有文件（包括海牙认证）都有宣誓翻译或正式翻译" },
+    { "id": "tasa", "texto": "我已用正确的 modelo 790 足额缴纳规费" },
+    { "id": "solicitud", "texto": "我已递交申请，并保存了登记凭证" },
+    { "id": "volante", "texto": "如果我要上学，我已提交有条件注册单" },
+    { "id": "notificaciones", "texto": "我经常查看我的电子通知" }
+  ],
+  "recordatorio": {
+    "pregunta": "你是哪一天递交申请的？",
+    "avisos": [
+      { "dias": 90, "texto": "已经过了 3 个月。查看你的案卷状态和通知，看看是否要求你补交材料。" },
+      { "dias": 180, "texto": "已经过了 6 个月。如果你申请的是大学学历且还没有答复，可以视为因沉默被驳回。请在该部网站查看你的案卷和申诉途径。" }
+    ]
+  },
+  "variantes": [
+    { "titulo": "加泰罗尼亚、加利西亚和巴斯克地区（非大学学历）", "texto": "如果你住在这些自治区，ESO、Bachillerato 和 FP 的学历认证由你所在自治区的教育部门办理，而不是由中央政府的部办理。" },
+    { "titulo": "欧盟、欧洲经济区和瑞士的学历", "texto": "办理大学学历手续时不需要海牙认证或领事认证。用欧盟学历从事受监管职业，可能适用职业资格认可（reconocimiento de cualificaciones profesionales），这是另一项手续。" }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022，外国大学学历的认证、等同和课程认可（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Orden de 14 de marzo de 1988，Real Decreto 104/1988 的实施（非大学学历）（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-6938", "consultado": "2026-10-28" },
+    { "nombre": "科学、创新和大学部：Valida-TE 门户网站", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "科学、创新和大学部：107 规费（Tasa 107）", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "科学、创新和大学部：大学电子分站关闭通知", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" },
+    { "nombre": "教育、职业教育和体育部：外国非大学学历和学业的认证与认可", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270.html", "consultado": "2026-10-28" },
+    { "nombre": "教育、职业教育和体育部：有条件注册单（Volante de inscripción condicional）", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270/convalidacion-no-univ/volante-condicional.html", "consultado": "2026-10-28" },
+    { "nombre": "教育、职业教育和体育部：Tasa 790 código 079", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/0/tasa-790-079-ingreso.html", "consultado": "2026-10-28" }
+  ]
+}

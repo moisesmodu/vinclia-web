@@ -1,0 +1,125 @@
+{
+  "slug": "numero-seguridad-social",
+  "titulo": "社会保障号（NUSS / NAF）",
+  "resumen": "社会保障号（Número de la Seguridad Social，NUSS）是你在西班牙社会保障体系（Seguridad Social）中的身份号码。你开始工作时，这个号码就成为你的参保号（número de afiliación，NAF）。公司为你办理参保登记、你做自雇（autónomo）以及办理很多福利手续时都需要它。办理免费，由社会保障总署（Tesorería General de la Seguridad Social，TGSS）发放：可以在网上通过 Import@ss 申请，也可以去 TGSS 办公室。用数字证书（certificado digital）或 Cl@ve 会更快；没有数字身份认证时，TGSS 会先核实你的身份，所需时间更长。",
+  "paraQuien": "适用于要在西班牙工作（受雇或自雇）但还没有号码的人。如果你以前在西班牙工作过，你已经有号码了：这个号码终身不变，不要再申请新的。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "费用", "valor": "免费" },
+    { "etiqueta": "由谁发放", "valor": "社会保障总署（Tesorería General de la Seguridad Social，TGSS）" },
+    { "etiqueta": "在哪里办", "valor": "Import@ss（portal.seg-social.gob.es）或 TGSS 办公室（Administración）" },
+    { "etiqueta": "表格", "valor": "Modelo TA.1（社会保障号申请及资料变更表）" },
+    { "etiqueta": "证件", "valor": "根据你的情况，NIE/TIE 或护照（有条件）" },
+    { "etiqueta": "公司可以代为申请吗？", "valor": "可以。如果公司要雇用你而你没有号码，公司必须为你申请" },
+    { "etiqueta": "工作参保登记（alta）", "valor": "必须在上班第一天之前办理，最早提前 60 天" }
+  ],
+  "pasos": [
+    {
+      "titulo": "确认你是否已经有号码",
+      "texto": "如果你以前在西班牙工作过，或者曾作为家属享受过医疗保障，你可能已经有号码了。号码是唯一的：不要申请新的。看看你以前的工资单、你的工作履历报告（informe de vida laboral），或者询问 TGSS。"
+    },
+    {
+      "titulo": "分清 NUSS、NAF 和 NIE",
+      "texto": "NIE 是你的外国人识别号（由国家警察 Policía Nacional 发放）。NUSS 是你在社会保障体系中的号码。你参保时（第一次工作登记），这个号码就成为你的参保号（NAF）。它们是不同的号码：工作时两个都需要。"
+    },
+    {
+      "titulo": "选择申请方式",
+      "texto": "有三种官方方式：在网上通过 Import@ss，到 TGSS 办公室现场办理，或通过你的公司（公司通过 Sistema RED 系统申请）。CAISS 是国家社会保障局（INSS）的办公室（养老金、福利、医疗保障）：通常不在那里申请 NUSS。"
+    },
+    {
+      "titulo": "用 Cl@ve 或数字证书在网上申请",
+      "texto": "进入 Import@ss 的“Solicitar el Número de la Seguridad Social”（申请社会保障号），用 Cl@ve 或数字证书登录，填写资料。这是最快的方式。"
+    },
+    {
+      "titulo": "没有数字身份认证时在网上申请",
+      "texto": "在 Import@ss 上可以选择你没有数字身份认证。然后填写资料，按照说明自拍一张，并上传你身份证件的照片（正反两面）。你需要一个电子邮箱和一部带摄像头的手机或设备。TGSS 会先审核你的身份，然后给你答复。"
+    },
+    {
+      "titulo": "到 TGSS 办公室现场办理",
+      "texto": "带上填好并签字的 TA.1 表格和你的身份证件原件。在社会保障网站上查找你的办公室，并事先确认是否需要预约。如需咨询或预约 TGSS 视频服务，可拨打 901 50 20 50 和 91 541 02 91。"
+    },
+    {
+      "titulo": "如果由公司为你申请",
+      "texto": "如果公司要雇用你而你没有号码，公司有义务为你申请参保，可以通过 Sistema RED 申请你的号码。给公司一份你的身份证件复印件和准确的个人资料（与证件上一致的姓名、出生日期、地址）。"
+    },
+    {
+      "titulo": "保存好写有你号码的文件",
+      "texto": "TGSS 会以书面形式或在 Import@ss 中通知你的号码。好好保存：你在西班牙的整个工作生涯都会用到它。"
+    },
+    {
+      "titulo": "确保公司按时为你办理参保登记",
+      "texto": "有号码不等于已经参保登记（estar de alta）。公司必须在你开始工作之前为你申请参保登记，且最早不能超过 60 天（Real Decreto 84/1996，第32条）。开始工作后，你可以在 Import@ss 的工作履历报告中查看你的登记情况。"
+    },
+    {
+      "titulo": "资料变化时及时更新",
+      "texto": "如果你的证件变了（例如从护照换成 TIE，或拿到了 NIE）、改了名字或地址，请向 TGSS 申报资料变更。使用同样的 TA.1 表格或 Import@ss。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "有效的 NIE 或 TIE", "nota": "这是外国人通常使用的证件。" },
+    { "nombre": "有效护照", "nota": "根据 TA.1 表格，欧盟、欧洲经济区或瑞士公民可以用护照，但必须在进入西班牙后 3 个月内提供 NIE。" },
+    { "nombre": "本国身份证（欧盟、欧洲经济区和瑞士公民）", "nota": "如已有，连同写有 NIE 的登记证明一起提供。" },
+    { "nombre": "填好并签字的 TA.1 表格", "nota": "从社会保障网站（seg-social.es）下载。请始终使用最新版本。" },
+    { "nombre": "电子邮箱", "nota": "用于网上申请和接收通知。" },
+    { "nombre": "带摄像头的手机或电脑", "nota": "如果你没有 Cl@ve 或数字证书而在网上申请，用于自拍。" },
+    { "nombre": "Cl@ve 或数字证书（可选）", "nota": "不是必需的，但能让网上办理更快。" },
+    { "nombre": "在西班牙的地址", "nota": "表格要求填写住址；请填一个你能收到信件的地址。" }
+  ],
+  "plazos": [
+    { "texto": "社会保障参保登记必须在开始工作之前申请，且最早不能超过开工前 60 个自然日（Real Decreto 84/1996，第32.3条）。" },
+    { "texto": "如果你作为欧盟、欧洲经济区或瑞士公民用护照申请了号码，必须在进入西班牙后 3 个月内提供 NIE（TA.1 表格说明）。" },
+    { "texto": "社会保障部门表示，申请的最长处理期限为 45 天；如果期满没有答复，视为批准。这一信息来自一个较旧的说明页面：请在 Import@ss 核实。" },
+    { "texto": "自 2026 年 8 月 1 日起（Real Decreto 643/2026），公司申报员工离职（bajas）和资料变更的期限为 6 个自然日（以前是 3 天）。" }
+  ],
+  "tasas": [
+    { "concepto": "分配社会保障号", "importe": "0 €", "modelo": "Modelo TA.1（不是缴费表格）", "nota": "TGSS 和公司都不能因为这项手续向你收费。" }
+  ],
+  "errores": [
+    "已经有号码还申请新的：NUSS 终身唯一。如果你不记得了，查看你的工作履历或询问 TGSS。",
+    "把 NUSS 和 NIE 混为一谈：它们是不同的号码，工作时两个都需要。",
+    "去 CAISS（INSS）申请号码：NUSS 由社会保障总署（TGSS）通过 Import@ss 或其办公室分配。",
+    "没有参保登记就开始工作：参保登记必须在第一天之前完成。向公司要参保登记凭证，或查看你的工作履历。",
+    "姓名写得和证件上不一样：请准确使用护照或 TIE 上的姓名，以免缴费和福利出错。",
+    "从护照换成 NIE 或 TIE 后没有更新资料：用 TA.1 或在 Import@ss 申报资料变更。"
+  ],
+  "checklist": [
+    { "id": "comprobar-numero", "texto": "我已确认自己还没有社会保障号" },
+    { "id": "doc-identidad", "texto": "我有有效的 NIE/TIE 或护照" },
+    { "id": "ta1", "texto": "我已下载并填好现行的 TA.1 表格" },
+    { "id": "via", "texto": "我知道通过哪种方式申请：Import@ss、TGSS 办公室或我的公司" },
+    { "id": "email-camara", "texto": "我有电子邮箱和带摄像头的手机（如果没有 Cl@ve 而在网上申请）" },
+    { "id": "numero-guardado", "texto": "我已保存写有我号码的文件" },
+    { "id": "numero-empresa", "texto": "我在上班前已把号码交给公司" },
+    { "id": "alta", "texto": "我已确认公司在我上班第一天前为我办理了参保登记" },
+    { "id": "datos-actualizados", "texto": "我在社会保障系统中的资料与我现在的证件一致" }
+  ],
+  "recordatorio": {
+    "pregunta": "你什么时候开始工作？",
+    "avisos": [
+      { "dias": -15, "texto": "你 15 天后开始工作。如果你还没有社会保障号，现在就在 Import@ss 申请，或问问公司是否会替你申请。" },
+      { "dias": -7, "texto": "你一周后开始工作。把号码交给公司，并问他们是否已经为你申请参保登记：必须在你上班第一天之前办好。" }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "如果你没有 NIE",
+      "texto": "如果你是欧盟、欧洲经济区或瑞士公民，可以用护照申请号码，但之后必须在 3 个月内提供 NIE。如果你来自欧盟以外，工作通常需要工作许可，有了许可你就会有 NIE：请用 NIE 或 TIE 申请号码。我们未能在官方来源中确认，对于欧盟以外的人，Import@ss 在无数字身份认证的方式下是否只接受护照；如果这是你的情况，请到 TGSS 办公室或拨打官方电话咨询。"
+    },
+    {
+      "titulo": "如果你从事家政工作",
+      "texto": "雇用你的人（家庭）负责为你办理参保登记。如果你没有号码，可以事先在 Import@ss 或 TGSS 申请。"
+    },
+    {
+      "titulo": "如果你要做自雇（autónomo）",
+      "texto": "在登记加入自雇人员特别制度（Régimen Especial de Trabajadores Autónomos，RETA）之前，你需要先有号码。你自己在 Import@ss 或 TGSS 申请，然后再办理自雇登记。"
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Import@ss（TGSS）：申请社会保障号（Solicitar el Número de la Seguridad Social）", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "社会保障杂志（Revista de la Seguridad Social）：如何获得社会保障号", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "社会保障部门：号码分配说明（TA.1 表格、处理期限）", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996，企业注册和参保总条例（BOE，合并文本）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 643/2026, de 29 de julio，修订参保条例（BOE）", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16557", "consultado": "2026-10-28" },
+    { "nombre": "社会保障杂志：TGSS 参保咨询电话", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

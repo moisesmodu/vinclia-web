@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+// Una persona identificada por su correo. No guardamos nombre, nacionalidad ni situación legal.
+model Usuario {
+  id                  String   @id @default(cuid())
+  email               String   @unique
+  idioma              String   @default("es")
+  pais                String   @default("es")
+  plan                String?  // "suscripcion" | "pack"
+  accesoHasta         DateTime?
+  stripeCustomerId    String?  @unique
+  stripeSubscriptionId String? @unique
+  creado              DateTime @default(now())
+  actualizado         DateTime @updatedAt
+  recordatorios       Recordatorio[]
+}
+
+// Recordatorio de plazos por correo: fecha clave que da la persona y avisos calculados a partir de ella.
+model Recordatorio {
+  id          String   @id @default(cuid())
+  usuarioId   String
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  guia        String
+  idioma      String
+  pais        String   @default("es")
+  fechaClave  DateTime
+  confirmado  Boolean  @default(false)
+  creado      DateTime @default(now())
+  avisos      Aviso[]
+
+  @@index([usuarioId])
+}
+
+model Aviso {
+  id             String       @id @default(cuid())
+  recordatorioId String
+  recordatorio   Recordatorio @relation(fields: [recordatorioId], references: [id], onDelete: Cascade)
+  fecha          DateTime
+  texto          String
+  enviado        DateTime?
+
+  @@index([fecha, enviado])
+}
+
+// Idempotencia de webhooks de Stripe.
+model EventoStripe {
+  id     String   @id
+  tipo   String
+  creado DateTime @default(now())
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "renovacion-residencia",
+  "titulo": "Renew your residence permit (including the Real Decreto 316/2026 permit)",
+  "resumen": "Your temporary residence permit (autorización de residencia temporal) has an end date. To stay in Spain legally, you apply for renewal (or a change to another permit) in the 2 months before it expires or, at the latest, in the 3 months after. You pay the immigration fee (modelo 790 código 052, the official payment form) and, once the permit is granted, the fee for the TIE card (modelo 790 código 012). If you apply on time, your permit stays valid while you wait for the answer. If you have the permit from the 2026 extraordinary regularisation, it is not renewed in the same way: after one year you must change (modify) it to another permit.",
+  "paraQuien": "For people from outside the European Union with a temporary residence permit (work, non-lucrative, family reunification, arraigo, exceptional circumstances) and for people who got the one-year permit from the extraordinary regularisation of Real Decreto 316/2026. It does not apply to long-term residence, to family members of EU citizens or to students (a study stay has its own extension).",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "When to apply", "valor": "60 days (2 months) before expiry or up to 90 days (3 months) after" },
+    { "etiqueta": "Permit fee", "valor": "Modelo 790 código 052: about 16,40 € for renewal of temporary residence and work (check the form)" },
+    { "etiqueta": "Card fee (TIE)", "valor": "Modelo 790 código 012: 19,30 € for renewal (check the current amount)" },
+    { "etiqueta": "Time for an answer", "valor": "3 months; if they do not answer, renewals are usually treated as granted (silencio positivo, 'positive silence')" },
+    { "etiqueta": "Length after renewal", "valor": "Usually 4 years, unless you qualify for long-term residence" },
+    { "etiqueta": "Where to apply", "valor": "Online on the official e-office (Mercurio) or at the Oficina de Extranjería (immigration office)" },
+    { "etiqueta": "2026 regularisation (RD 316/2026)", "valor": "1-year permit: when it expires, you modify it to another permit; an extension is only an exception" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Check the expiry date of your card and your permit",
+      "texto": "The date is on your TIE (Tarjeta de Identidad de Extranjero, your foreigner ID card) and on the decision (resolución) that granted your permit. Write down the exact day. You can apply from 2 months before that date. If you miss it, you can still apply in the next 3 months, but you may get a fine (sanción)."
+    },
+    {
+      "titulo": "Find out which type of permit you have",
+      "texto": "Each permit has its own information sheet (hoja informativa) on the website of the Ministerio de Inclusión (Ministry of Inclusion). For example: Hoja 13 for residence and work as an employee, Hoja 7 for non-lucrative residence, Hoja 10 for family reunification. The sheet gives the exact requirements and the form (for example, EX-03 for work as an employee). If your permit comes from the 2026 extraordinary regularisation, see step 3."
+    },
+    {
+      "titulo": "If you have the 2026 regularisation permit, prepare the modification",
+      "texto": "According to the official questions and answers of the Ministerio de Inclusión, the 1-year permit of Real Decreto 316/2026 is not renewed like the others. When it expires, you must apply for a modification to another permit in the Reglamento (article 191 of Real Decreto 1155/2024), for example residence and work. The deadline is the same: 2 months before or 3 months after expiry. The one-year permits granted in 2026 expire mostly between April and June 2027, so prepare early."
+    },
+    {
+      "titulo": "Know about the exceptional extension of the regularisation",
+      "texto": "Only if you cannot apply for any modification, a 1-year extension (prórroga) is possible. For this, you must be actively looking for work and registered with the public employment service, or have a favourable integration effort report (informe de esfuerzo de integración) from your autonomous community. Some analyses of the Real Decreto mention a longer extension if a justified reason (illness, disability, retirement age) stops you from working: check the details in the BOE (Spain's official gazette) and on the official regularisation portal. Children who received a 5-year permit do not have to do this after one year."
+    },
+    {
+      "titulo": "Collect your documents",
+      "texto": "Usually you need the signed application form, a full copy of your valid passport and the documents that prove you still meet the requirements (work, social security contributions, financial means, your children's school enrolment, etc.). Documents from other countries must be translated into Spanish. If something is missing, the office will ask you to provide it (requerimiento) and the time limit for an answer stops."
+    },
+    {
+      "titulo": "Pay the 790 código 052 fee",
+      "texto": "Create the form on the e-office of the Administraciones Públicas (the fees page, pasarela de tasas) and choose the renewal section (epígrafe) for your type of permit. According to the tables published for 2026, renewal of temporary residence and work costs about 16,40 €. The exact amount is the one shown when you create the form. Keep the proof of payment and attach it to your application."
+    },
+    {
+      "titulo": "Submit your application",
+      "texto": "You can do it online on the Mercurio platform of the e-office (you need a digital certificate, Cl@ve or a representative) or at the registry of the Oficina de Extranjería in your province. Keep the proof of submission (resguardo) with the date: it is your proof that you applied on time."
+    },
+    {
+      "titulo": "Wait for the decision with your resguardo",
+      "texto": "If you apply on time, your old permit stays valid until they answer. Always carry your TIE (even if it has expired) together with the resguardo of your application. The Administration has 3 months to decide. For renewals, if they do not answer, the application is usually treated as granted (silencio positivo), but check in the information sheet of your permit if this applies to you."
+    },
+    {
+      "titulo": "Apply for the new card (TIE) and give your fingerprints",
+      "texto": "When you are notified that it is granted, you have 1 month to apply in person for the new TIE at the police station (comisaría de Policía) or immigration office for your address. Book the official appointment (cita previa) on the Administraciones Públicas cita previa website (option 'Policía - toma de huellas', fingerprinting). Bring your passport, the decision, a recent photo and the proof of payment of the 790 código 012 fee. Later you go back to collect the card."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Application form for your type of permit", "nota": "For example EX-03 for residence and work as an employee; you find it in the information sheet of the Ministerio de Inclusión" },
+    { "nombre": "Valid passport", "nota": "Full copy of all pages" },
+    { "nombre": "Your current TIE", "nota": "Copy; even if it has expired, it is valid together with the resguardo of your application" },
+    { "nombre": "Proof of payment of the 790 código 052 fee" },
+    { "nombre": "Proof that you still meet the requirements", "nota": "Contract or work history (vida laboral), payslips, Social Security registration, unemployment benefit, financial means or health insurance, depending on your permit" },
+    { "nombre": "School enrolment certificate (certificado de escolarización) of your children under 18", "nota": "If you have school-age children in your care" },
+    { "nombre": "Integration effort report from your autonomous community", "nota": "Optional; it can help in some cases and it is one of the ways to get the extension of the 2026 regularisation" },
+    { "nombre": "Registration as a job seeker (demandante de empleo)", "nota": "Only for the exceptional extension of the 2026 regularisation based on actively looking for work" },
+    { "nombre": "For the TIE: recent photo and proof of payment of the 790 código 012 fee", "nota": "You hand them in at the fingerprint appointment" }
+  ],
+  "plazos": [
+    { "texto": "General renewal: apply in the 2 months (60 days) before expiry or in the 3 months (90 days) after. If you apply after expiry, you may be fined." },
+    { "texto": "If you apply on time, your old permit stays valid until they answer." },
+    { "texto": "The Administration has 3 months to decide on the renewal. For renewals of residence and work, non-lucrative residence and family reunification, silence is positive (no answer means granted), according to the Ministry's information sheets." },
+    { "texto": "2026 regularisation (RD 316/2026): the permit lasts 1 year. The modification to another permit is requested in the 2 months before or the 3 months after expiry. Applications were submitted from April to 30 June 2026 (1.174.978 applications), so many expire between April and June 2027." },
+    { "texto": "After the permit is granted, you have 1 month from the notification to apply in person for the new TIE." },
+    { "texto": "Renewal is usually granted for 4 years, unless you qualify for a long-term permit (usually after 5 years of legal and continuous residence)." }
+  ],
+  "tasas": [
+    { "concepto": "Renewal of temporary residence and work permit", "importe": "16,40 € (approx.)", "modelo": "Modelo 790 código 052, renewal section (2.2.x)", "nota": "Amount according to the tables published for 2026; the valid amount is the one shown when you create the form on the Administraciones Públicas e-office." },
+    { "concepto": "Modification of the 2026 regularisation permit", "importe": "Depends on the type of permit", "modelo": "Modelo 790 código 052", "nota": "The section depends on the permit you change to. Check the current amount on the fees page (pasarela de tasas) before paying." },
+    { "concepto": "Foreigner ID card (TIE) for renewal or extension", "importe": "19,30 €", "modelo": "Modelo 790 código 012 (Policía Nacional)", "nota": "The first TIE for temporary residence costs 16,08 €. Check the current amount on the Policía Nacional website before paying." },
+    { "concepto": "Work permit (paid by the employer, if it applies)", "importe": "Variable", "modelo": "Modelo 790 código 062", "nota": "Only for some employee work permits; see the information sheet." }
+  ],
+  "errores": [
+    "Waiting until your card expires to start. You can apply from 2 months before: do it early, especially if your permit expires between April and June 2027, when there will be many applications from the regularisation.",
+    "Thinking the 2026 regularisation permit renews by itself. It does not: after one year you must apply for a modification to another permit, or for the exceptional extension if you cannot modify it.",
+    "Applying for renewal more than 3 months after expiry. After that deadline it is no longer a renewal and you may end up without legal status.",
+    "Losing the resguardo of your application. It is your proof that you applied on time; keep it on paper and on your phone and carry it with your TIE.",
+    "Paying the fee with the wrong section (epígrafe). Check that the 790 código 052 form says 'renovación' (renewal) or 'modificación' (modification) for the correct type of permit.",
+    "Forgetting to apply for the new TIE in the month after the permit is granted. Without the card you will have problems working, travelling or doing other procedures.",
+    "Not translating foreign documents into Spanish. The office will ask you to fix it and your file will be delayed."
+  ],
+  "checklist": [
+    { "id": "fecha-caducidad", "texto": "I know the exact date my permit expires" },
+    { "id": "tipo-autorizacion", "texto": "I know which type of permit I have and I have read its information sheet" },
+    { "id": "regularizacion-modificacion", "texto": "If it is from the 2026 regularisation, I know which permit I can modify it to" },
+    { "id": "doc-pasaporte", "texto": "I have a valid passport and a full copy" },
+    { "id": "doc-formulario", "texto": "I have filled in and signed the correct form" },
+    { "id": "doc-requisitos", "texto": "I have the documents that prove I meet the requirements (work, means, etc.)" },
+    { "id": "doc-traducciones", "texto": "My foreign documents are translated into Spanish" },
+    { "id": "tasa-052", "texto": "I have paid the 790 código 052 fee with the correct section" },
+    { "id": "presentada", "texto": "I have submitted the application on time" },
+    { "id": "resguardo", "texto": "I have kept the proof of submission (resguardo)" },
+    { "id": "tasa-012", "texto": "After the permit was granted, I paid the 790 código 012 fee for the TIE" },
+    { "id": "cita-huellas", "texto": "I booked the official fingerprint appointment within one month of the permit being granted" }
+  ],
+  "recordatorio": {
+    "pregunta": "When does your card (TIE) or your residence permit expire?",
+    "avisos": [
+      { "dias": -90, "texto": "Your permit expires in 3 months. Check which type you have, read its information sheet and start collecting documents. If it is from the 2026 regularisation, think about which permit you will modify it to." },
+      { "dias": -60, "texto": "From today you can submit the renewal or the modification. Pay the 790 código 052 fee and submit the application." },
+      { "dias": -30, "texto": "1 month left until expiry. If you have not submitted the application yet, do it now and keep the resguardo." },
+      { "dias": 0, "texto": "Your permit expires today. If you already applied for renewal, it stays valid with the resguardo. If not, you still have 3 months, but you may be fined: apply as soon as possible." },
+      { "dias": 60, "texto": "2 months have passed since expiry. If you have not submitted anything, you only have 1 month left. If you already submitted it, check the status of your file on the e-office." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Extraordinary regularisation 2026 (RD 316/2026)", "texto": "The 1-year permit is modified to another permit when it expires (article 191 of the Reglamento). Exceptional 1-year extension only if you cannot modify it, with active job search and registration with the public employment service, or with an integration effort report. Children who received a 5-year permit do not do this after one year. The Ministerio de Inclusión will publish more details on its regularisation portal: check there before you apply." },
+    { "titulo": "Non-lucrative residence", "texto": "You must keep showing enough financial means and health insurance. See Hoja 7 of the Ministerio de Inclusión." },
+    { "titulo": "Family reunification", "texto": "Renewal depends on the person who brought you (your sponsor) keeping their permit. See Hoja 10 of the Ministerio de Inclusión." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 316/2026, of 14 April, amending the Reglamento de extranjería (immigration regulation) (BOE-A-2026-8284)", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-8284", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 1155/2024, Reglamento of Ley Orgánica 4/2000 (BOE, consolidated text)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099", "consultado": "2026-10-28" },
+    { "nombre": "Extraordinary regularisation: questions and answers after applying (Ministerio de Inclusión)", "url": "https://inclusion.gob.es/documents/20121/7817425/Preguntas%20y%20respuestas%2021072026.pdf/95dc64f0-7af9-a350-fc0e-b598dc0b9694?version=1.0&download=true", "consultado": "2026-10-28" },
+    { "nombre": "The extraordinary regularisation period ends with 1.174.978 applications (Ministerio de Inclusión)", "url": "https://www.inclusion.gob.es/en/w/el-plazo-de-presentacion-de-solicitud-para-la-regularizacion-extraordinaria-concluye-con-1.174.978-solicitudes-recibidas", "consultado": "2026-10-28" },
+    { "nombre": "Hoja 13: Renewal of the temporary residence and employee work permit (Ministerio de Inclusión)", "url": "https://www.inclusion.gob.es/documents/410169/2260168/13.+Renovaci%C3%B3n+de+la+autorizaci%C3%B3n+de+residencia+temporal+y+trabajo+por+cuenta+ajena.pdf/e9758a79-7758-d9e5-c08b-258ed383539d?t=1762851767852", "consultado": "2026-10-28" },
+    { "nombre": "Hoja 7: Renewal of the non-lucrative temporary residence permit (Ministerio de Inclusión)", "url": "https://www.inclusion.gob.es/en/web/migraciones/w/renovacion-de-la-autorizacion-de-residencia-temporal-no-lucrativa", "consultado": "2026-10-28" },
+    { "nombre": "Online applications for immigration permits - Mercurio (Sede de Administraciones Públicas)", "url": "https://sede.administracionespublicas.gob.es/pagina/index/directorio/mercurio2", "consultado": "2026-10-28" },
+    { "nombre": "Cita previa for immigration and fingerprinting (Sede de Administraciones Públicas)", "url": "https://icp.administracionelectronica.gob.es/icpplus/index.html", "consultado": "2026-10-28" }
+  ]
+}

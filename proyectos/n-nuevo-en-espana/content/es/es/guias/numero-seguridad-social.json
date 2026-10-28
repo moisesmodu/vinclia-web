@@ -1,0 +1,125 @@
+{
+  "slug": "numero-seguridad-social",
+  "titulo": "Número de la Seguridad Social (NUSS / NAF)",
+  "resumen": "El Número de la Seguridad Social (NUSS) te identifica en la Seguridad Social española. Cuando empiezas a trabajar, ese mismo número es tu número de afiliación (NAF). Lo necesitas para que una empresa te dé de alta, para trabajar como autónomo y para muchos trámites de prestaciones. Es gratis y lo da la Tesorería General de la Seguridad Social (TGSS): por internet en Import@ss o en una oficina de la TGSS. Con certificado digital o Cl@ve es más rápido; sin identificación digital, la TGSS primero comprueba tu identidad y tarda más.",
+  "paraQuien": "Para personas que van a trabajar en España (por cuenta ajena o como autónomas) y no tienen todavía número. Si ya trabajaste en España antes, ya tienes un número: es el mismo para toda la vida y no debes pedir otro.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coste", "valor": "Gratis" },
+    { "etiqueta": "Quién lo da", "valor": "Tesorería General de la Seguridad Social (TGSS)" },
+    { "etiqueta": "Dónde", "valor": "Import@ss (portal.seg-social.gob.es) o una oficina (Administración) de la TGSS" },
+    { "etiqueta": "Formulario", "valor": "Modelo TA.1 (solicitud de número de la Seguridad Social y variación de datos)" },
+    { "etiqueta": "Documento", "valor": "NIE/TIE o pasaporte (con condiciones), según tu caso" },
+    { "etiqueta": "¿Puede pedirlo la empresa?", "valor": "Sí. Si te van a contratar y no tienes número, la empresa debe solicitarlo" },
+    { "etiqueta": "Alta en el trabajo", "valor": "Siempre antes del primer día de trabajo, y como máximo 60 días antes" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Comprueba si ya tienes número",
+      "texto": "Si ya trabajaste en España, o fuiste beneficiario de la asistencia sanitaria de un familiar, es posible que ya tengas número. El número es único: no pidas uno nuevo. Mira en tus nóminas antiguas, en tu informe de vida laboral o pregunta a la TGSS."
+    },
+    {
+      "titulo": "Diferencia NUSS, NAF y NIE",
+      "texto": "El NIE es tu número de identidad de extranjero (Policía Nacional). El NUSS es tu número en la Seguridad Social. Cuando te afilias (primer alta en el trabajo), ese número pasa a ser tu número de afiliación (NAF). Son números distintos: necesitas los dos para trabajar."
+    },
+    {
+      "titulo": "Elige cómo pedirlo",
+      "texto": "Tienes tres vías oficiales: por internet en Import@ss, en persona en una oficina de la TGSS, o a través de tu empresa (la empresa lo pide por el Sistema RED). Los CAISS son oficinas del INSS (pensiones, prestaciones, asistencia sanitaria): no son el sitio habitual para pedir el NUSS."
+    },
+    {
+      "titulo": "Por internet con Cl@ve o certificado digital",
+      "texto": "Entra en Import@ss, en \"Solicitar el Número de la Seguridad Social\", identifícate con Cl@ve o certificado digital y rellena los datos. Es la vía más rápida."
+    },
+    {
+      "titulo": "Por internet sin identificación digital",
+      "texto": "En Import@ss puedes elegir que no tienes identificación digital. Entonces rellenas tus datos, te haces un selfie siguiendo las instrucciones y subes una foto de tu documento de identidad (por las dos caras). Necesitas un correo electrónico y un móvil o dispositivo con cámara. La TGSS revisa primero tu identidad y después te envía la respuesta."
+    },
+    {
+      "titulo": "En persona en una oficina de la TGSS",
+      "texto": "Lleva el modelo TA.1 rellenado y firmado y tu documento de identidad original. Busca tu oficina en la web de la Seguridad Social y comprueba antes si atiende con o sin cita. Para información o para pedir cita de videoatención de la TGSS existen los teléfonos 901 50 20 50 y 91 541 02 91."
+    },
+    {
+      "titulo": "Si la empresa lo pide por ti",
+      "texto": "Si te van a contratar y no tienes número, la empresa está obligada a pedir tu afiliación y puede solicitar tu número con el Sistema RED. Dale a la empresa una copia de tu documento de identidad y tus datos exactos (nombre como en el documento, fecha de nacimiento, dirección)."
+    },
+    {
+      "titulo": "Guarda el documento con tu número",
+      "texto": "La TGSS te comunica tu número por escrito o en Import@ss. Guárdalo bien: lo vas a usar toda tu vida laboral en España."
+    },
+    {
+      "titulo": "Asegúrate de que la empresa te da de alta a tiempo",
+      "texto": "Tener número no es lo mismo que estar de alta. La empresa tiene que pedir tu alta antes de que empieces a trabajar, y nunca más de 60 días antes (Real Decreto 84/1996, art. 32). Cuando ya estés trabajando, puedes comprobar tu alta en tu informe de vida laboral en Import@ss."
+    },
+    {
+      "titulo": "Actualiza tus datos si cambian",
+      "texto": "Si cambias de documento (por ejemplo, pasas del pasaporte a la TIE, o te dan NIE), de nombre o de dirección, comunica la variación de datos a la TGSS. Se usa el mismo modelo TA.1 o Import@ss."
+    }
+  ],
+  "documentos": [
+    { "nombre": "NIE o TIE en vigor", "nota": "Es el documento habitual para personas extranjeras." },
+    { "nombre": "Pasaporte en vigor", "nota": "Según el modelo TA.1, el pasaporte se admite para ciudadanos de la UE, EEE o Suiza, que deben aportar el NIE en 3 meses desde su entrada en España." },
+    { "nombre": "Documento de identidad nacional (ciudadanos UE, EEE y Suiza)", "nota": "Junto al certificado de registro con NIE, si ya lo tienes." },
+    { "nombre": "Modelo TA.1 rellenado y firmado", "nota": "Descárgalo de la web de la Seguridad Social (seg-social.es). Usa siempre la versión más reciente." },
+    { "nombre": "Correo electrónico", "nota": "Para la solicitud por internet y para recibir avisos." },
+    { "nombre": "Móvil u ordenador con cámara", "nota": "Para el selfie si pides el número por internet sin Cl@ve ni certificado." },
+    { "nombre": "Cl@ve o certificado digital (opcional)", "nota": "No es obligatorio, pero hace el trámite por internet más rápido." },
+    { "nombre": "Dirección en España", "nota": "El formulario pide tu domicilio; pon una dirección donde recibas cartas." }
+  ],
+  "plazos": [
+    { "texto": "El alta en la Seguridad Social se pide antes de empezar a trabajar y nunca más de 60 días naturales antes del inicio (Real Decreto 84/1996, art. 32.3)." },
+    { "texto": "Si solicitaste el número con pasaporte como ciudadano de la UE, EEE o Suiza, debes aportar tu NIE en un plazo de 3 meses desde tu entrada en España (instrucciones del modelo TA.1)." },
+    { "texto": "La Seguridad Social indica un plazo máximo de 45 días para resolver la solicitud; si pasa ese plazo sin respuesta, se entiende aceptada. Este dato viene de una página informativa antigua: compruébalo en Import@ss." },
+    { "texto": "Desde el 1 de agosto de 2026 (Real Decreto 643/2026), las empresas tienen 6 días naturales para comunicar las bajas y las variaciones de datos de sus trabajadores (antes eran 3)." }
+  ],
+  "tasas": [
+    { "concepto": "Asignación del Número de la Seguridad Social", "importe": "0 €", "modelo": "Modelo TA.1 (no es un modelo de pago)", "nota": "Ni la TGSS ni la empresa pueden cobrarte por este trámite." }
+  ],
+  "errores": [
+    "Pedir un número nuevo cuando ya tienes uno: el NUSS es único para toda la vida. Si no lo recuerdas, consulta tu vida laboral o pregunta a la TGSS.",
+    "Confundir el NUSS con el NIE: son números distintos y los necesitas los dos para trabajar.",
+    "Ir a un CAISS (INSS) a pedir el número: el NUSS lo asigna la Tesorería General (TGSS), por Import@ss o en sus oficinas.",
+    "Empezar a trabajar sin estar de alta: el alta debe hacerse antes del primer día. Pide a la empresa el justificante de alta o revisa tu vida laboral.",
+    "Escribir tu nombre de forma distinta a tu documento: usa exactamente el nombre y los apellidos de tu pasaporte o TIE para evitar errores en cotizaciones y prestaciones.",
+    "No actualizar tus datos al cambiar de pasaporte a NIE o TIE: comunica la variación de datos con el TA.1 o en Import@ss."
+  ],
+  "checklist": [
+    { "id": "comprobar-numero", "texto": "He comprobado que no tengo ya un número de la Seguridad Social" },
+    { "id": "doc-identidad", "texto": "Tengo mi NIE/TIE o mi pasaporte en vigor" },
+    { "id": "ta1", "texto": "He descargado y rellenado el modelo TA.1 vigente" },
+    { "id": "via", "texto": "Sé por qué vía lo pido: Import@ss, oficina de la TGSS o mi empresa" },
+    { "id": "email-camara", "texto": "Tengo correo electrónico y un móvil con cámara (si lo pido por internet sin Cl@ve)" },
+    { "id": "numero-guardado", "texto": "He guardado el documento con mi número" },
+    { "id": "numero-empresa", "texto": "He dado mi número a la empresa antes de empezar" },
+    { "id": "alta", "texto": "He comprobado que la empresa me ha dado de alta antes del primer día" },
+    { "id": "datos-actualizados", "texto": "Mis datos en la Seguridad Social coinciden con mi documento actual" }
+  ],
+  "recordatorio": {
+    "pregunta": "¿Cuándo empiezas a trabajar?",
+    "avisos": [
+      { "dias": -15, "texto": "Empiezas a trabajar en 15 días. Si aún no tienes tu Número de la Seguridad Social, pídelo ya en Import@ss o pregunta a tu empresa si lo va a pedir ella." },
+      { "dias": -7, "texto": "Empiezas a trabajar en una semana. Da tu número a la empresa y pregunta si ya ha pedido tu alta: debe hacerse antes de tu primer día." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "Si no tienes NIE",
+      "texto": "Si eres de la UE, del EEE o de Suiza, puedes pedir el número con tu pasaporte, pero luego tienes que aportar el NIE en 3 meses. Si eres de fuera de la UE, para trabajar necesitas normalmente una autorización de trabajo, y con ella tendrás NIE: pide el número con tu NIE o TIE. No hemos podido confirmar en fuentes oficiales si Import@ss acepta solo pasaporte en la vía sin identificación digital para personas de fuera de la UE; si es tu caso, pregunta en una oficina de la TGSS o en los teléfonos oficiales."
+    },
+    {
+      "titulo": "Si trabajas en el empleo del hogar",
+      "texto": "La persona que te contrata (la familia) es quien debe darte de alta. Si no tienes número, se puede pedir antes en Import@ss o en la TGSS."
+    },
+    {
+      "titulo": "Si vas a trabajar como autónomo",
+      "texto": "Necesitas el número antes de darte de alta en el Régimen Especial de Trabajadores Autónomos (RETA). Lo pides tú en Import@ss o en la TGSS y después haces el alta como autónomo."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS): Solicitar el Número de la Seguridad Social", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: Cómo obtener el Número de la Seguridad Social", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social: información sobre la asignación del número (modelo TA.1, plazo de resolución)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, Reglamento General de inscripción de empresas y afiliación (BOE, texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 643/2026, de 29 de julio, que modifica el Reglamento de afiliación (BOE)", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16557", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: teléfono de información sobre afiliación de la TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

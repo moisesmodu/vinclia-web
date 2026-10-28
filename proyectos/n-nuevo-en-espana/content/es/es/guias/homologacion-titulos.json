@@ -1,0 +1,94 @@
+{
+  "slug": "homologacion-titulos",
+  "titulo": "Homologar o declarar la equivalencia de tus títulos",
+  "resumen": "Para usar en España un título obtenido en otro país necesitas su reconocimiento oficial. Los títulos universitarios los reconoce el Ministerio de Ciencia, Innovación y Universidades (tasa de 166,50 €, resolución en un máximo de 6 meses). Los títulos de ESO, Bachillerato y Formación Profesional los reconoce el Ministerio de Educación, Formación Profesional y Deportes. Casi siempre necesitas traducción oficial y apostilla o legalización.",
+  "paraQuien": "Para personas con títulos o estudios extranjeros que quieren trabajar, estudiar o presentarse a oposiciones en España. Si vives en Cataluña, Galicia o el País Vasco, los títulos no universitarios los gestiona tu comunidad autónoma.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Títulos universitarios", "valor": "Ministerio de Ciencia, Innovación y Universidades (Real Decreto 889/2022)" },
+    { "etiqueta": "Títulos no universitarios", "valor": "Ministerio de Educación, Formación Profesional y Deportes (Real Decreto 104/1988)" },
+    { "etiqueta": "Tasa universitaria", "valor": "166,50 € (modelo 790, código 107)" },
+    { "etiqueta": "Plazo de resolución universitaria", "valor": "Máximo 6 meses" },
+    { "etiqueta": "Homologación del título de ESO", "valor": "Sin tasa" },
+    { "etiqueta": "Aviso", "valor": "La subsede electrónica de Universidades está cerrada desde el 22/10/2026 por una incidencia técnica" }
+  ],
+  "pasos": [
+    { "titulo": "Elige el trámite correcto", "texto": "Homologación: da los mismos efectos que el título español y es obligatoria para ejercer una profesión regulada (por ejemplo, medicina, enfermería, farmacia, fisioterapia, profesorado). Equivalencia: reconoce el nivel académico (Grado o Máster) para seguir estudiando, para oposiciones o para trabajos no regulados; no sirve para ejercer una profesión regulada. Convalidación: reconoce estudios parciales para continuarlos en España." },
+    { "titulo": "Comprueba si tu profesión es regulada", "texto": "Mira la lista del Anexo del Real Decreto 889/2022 en el portal Valida-TE del Ministerio. Si tu profesión no aparece, no puedes pedir la homologación, pero sí la declaración de equivalencia. Puedes pedir las dos para el mismo título, pero son dos solicitudes y dos tasas." },
+    { "titulo": "Apostilla o legaliza los documentos en tu país", "texto": "Los originales (título y certificado de notas) deben llevar la Apostilla de La Haya si tu país firmó el Convenio, o la legalización por vía diplomática si no lo firmó. No se exige para documentos de la UE, el Espacio Económico Europeo y Suiza. Apostilla el original, no una copia compulsada." },
+    { "titulo": "Encarga la traducción oficial", "texto": "Si los documentos no están en castellano, necesitas traducción jurada hecha por un traductor jurado nombrado por el Ministerio de Asuntos Exteriores, o una traducción oficial de otro país de la UE. La traducción debe incluir también la apostilla o las legalizaciones." },
+    { "titulo": "Paga la tasa", "texto": "Universitarios: modelo 790 código 107, 166,50 € por cada trámite. No universitarios: modelo 790 código 079. Paga el importe completo: si llega menos dinero por comisiones bancarias, no empiezan tu expediente. No pagues hasta estar seguro de qué trámite necesitas." },
+    { "titulo": "Presenta la solicitud (universitarios)", "texto": "La solicitud de homologación o equivalencia se presenta por internet en la sede electrónica del Ministerio, con todos los documentos escaneados. Desde el 22/10/2026 la subsede de Universidades está cerrada por una incidencia técnica; el Ministerio indica que puedes usar el Registro Electrónico General (ciencia.sede.gob.es) y que los plazos de los trámites afectados se amplían. Consulta el aviso antes de presentar." },
+    { "titulo": "Presenta la solicitud (ESO, Bachillerato, FP)", "texto": "Rellena la solicitud en la sede electrónica del Ministerio de Educación (sede.educacion.gob.es) o preséntala en un registro público con los originales, para que hagan las copias verificadas. En Cataluña, Galicia y el País Vasco se presenta ante la comunidad autónoma." },
+    { "titulo": "Pide el volante de inscripción condicional si vas a estudiar", "texto": "Para títulos no universitarios, junto con la solicitud puedes entregar el volante de inscripción condicional. Una vez sellado, te permite matricularte de forma condicional mientras se resuelve. Lo usas bajo tu responsabilidad y no garantiza que la resolución sea favorable." },
+    { "titulo": "Responde si te piden más documentos", "texto": "El Ministerio puede pedirte que corrijas o completes la solicitud (subsanación). Responde dentro del plazo que te den. Revisa tu expediente y tus notificaciones electrónicas con frecuencia." },
+    { "titulo": "Recibe la resolución", "texto": "La resolución universitaria puede ser favorable, desfavorable o condicionada a superar formación complementaria (por ejemplo, una prueba o unas asignaturas). Si pasan 6 meses sin respuesta, la solicitud se puede entender desestimada por silencio administrativo; puedes recurrir." }
+  ],
+  "documentos": [
+    { "nombre": "Pasaporte, TIE o documento de identidad en vigor", "nota": "Si estás en España, necesitas NIF o NIE para pagar la tasa." },
+    { "nombre": "Título original o certificado oficial de expedición del título", "nota": "Con apostilla o legalización si corresponde." },
+    { "nombre": "Certificado académico (notas)", "nota": "Universitarios: con duración, asignaturas y horas o créditos ECTS. ESO: últimos 4 cursos. Bachillerato: últimos 3 cursos." },
+    { "nombre": "Suplemento Europeo al Título", "nota": "Opcional: puede sustituir al certificado académico en la equivalencia." },
+    { "nombre": "Traducción jurada u oficial al castellano", "nota": "De todos los documentos que no estén en castellano, incluidas las apostillas." },
+    { "nombre": "Justificante de pago de la tasa (modelo 790)", "nota": "Código 107 (universitarios) o 079 (no universitarios)." },
+    { "nombre": "Acreditación para ejercer la profesión en tu país", "nota": "Solo para homologación de profesiones reguladas." },
+    { "nombre": "Acreditación de conocimiento de español", "nota": "Solo en algunas profesiones (por ejemplo, B2 para profesorado si no eres de un país de lengua española)." },
+    { "nombre": "Volante de inscripción condicional", "nota": "Opcional, títulos no universitarios, si quieres matricularte mientras esperas." }
+  ],
+  "plazos": [
+    { "texto": "Universitarios: el Ministerio debe resolver y notificar en un máximo de 6 meses desde que la solicitud entra en el registro electrónico (Real Decreto 889/2022). Sin respuesta en ese plazo, se puede entender desestimada por silencio." },
+    { "texto": "Por el cierre de la subsede de Universidades desde el 22/10/2026, el Ministerio indica que los plazos de los procedimientos afectados se amplían hasta que se resuelva la incidencia." },
+    { "texto": "No universitarios: el volante de inscripción condicional sirve para matricularte en los 6 meses siguientes a su sellado y vale para ese curso académico (Orden de 14 de marzo de 1988). Comprueba la vigencia actual en el Ministerio de Educación." },
+    { "texto": "No hemos podido verificar un plazo máximo de resolución publicado para los títulos no universitarios; consulta la ficha del trámite en la sede del Ministerio de Educación." }
+  ],
+  "tasas": [
+    { "concepto": "Homologación de título universitario a Grado o Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Declaración de equivalencia a nivel académico de Grado o Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Homologación al título de Graduado en ESO", "importe": "Gratis", "modelo": "No se paga tasa" },
+    { "concepto": "Homologación al título de Bachiller", "importe": "49,76 €", "modelo": "Modelo 790 código 079", "nota": "Importe publicado por el Ministerio de Educación; no hemos podido confirmar que sea el vigente en 2026. Compruébalo antes de pagar." },
+    { "concepto": "Convalidación por 1.º de Bachillerato", "importe": "24,88 €", "modelo": "Modelo 790 código 079", "nota": "Comprueba el importe vigente en la web del Ministerio de Educación." },
+    { "concepto": "Homologación o convalidación de Formación Profesional", "importe": "Consulta el importe vigente", "modelo": "Modelo 790 código 079", "nota": "No hemos podido verificar el importe para 2026 en la web del Ministerio de Educación." }
+  ],
+  "errores": [
+    "Pedir la equivalencia cuando necesitas ejercer una profesión regulada. La equivalencia no te permite trabajar, por ejemplo, de médico o enfermero: necesitas la homologación.",
+    "Apostillar una copia compulsada en lugar del original. El Ministerio no acepta esa apostilla.",
+    "Traducir el título pero no la apostilla. La traducción oficial debe incluir también las legalizaciones.",
+    "Pagar menos de la tasa por las comisiones de la transferencia. Si no llega el importe completo, el expediente no empieza.",
+    "Pagar la tasa antes de saber qué trámite necesitas. Cada trámite (homologación o equivalencia) tiene su propia tasa.",
+    "No mirar las notificaciones electrónicas. Si no respondes a tiempo a una petición de documentos, pueden archivar tu solicitud.",
+    "Usar un traductor que no es jurado ni oficial. Si el traductor es de fuera de la UE, su firma debe estar legalizada."
+  ],
+  "checklist": [
+    { "id": "elegir-tramite", "texto": "Sé si necesito homologación, equivalencia o convalidación" },
+    { "id": "profesion-regulada", "texto": "He comprobado si mi profesión está en el Anexo del Real Decreto 889/2022" },
+    { "id": "doc-identidad", "texto": "Tengo pasaporte, TIE o documento de identidad en vigor y mi NIE" },
+    { "id": "doc-titulo", "texto": "Tengo el título original apostillado o legalizado" },
+    { "id": "doc-notas", "texto": "Tengo el certificado de notas apostillado o legalizado" },
+    { "id": "traduccion", "texto": "Tengo la traducción jurada u oficial de todo, incluidas las apostillas" },
+    { "id": "tasa", "texto": "He pagado la tasa completa con el modelo 790 correcto" },
+    { "id": "solicitud", "texto": "He presentado la solicitud y guardo el justificante de registro" },
+    { "id": "volante", "texto": "Si voy a estudiar, he entregado el volante de inscripción condicional" },
+    { "id": "notificaciones", "texto": "Reviso mis notificaciones electrónicas con frecuencia" }
+  ],
+  "recordatorio": {
+    "pregunta": "¿Qué día presentaste la solicitud?",
+    "avisos": [
+      { "dias": 90, "texto": "Han pasado 3 meses. Revisa el estado de tu expediente y tus notificaciones por si te piden más documentos." },
+      { "dias": 180, "texto": "Han pasado 6 meses. Si tu solicitud es de un título universitario y no tienes respuesta, se puede entender desestimada por silencio. Consulta tu expediente y las vías de recurso en la sede del Ministerio." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Cataluña, Galicia y País Vasco (títulos no universitarios)", "texto": "Si vives en estas comunidades, la homologación de ESO, Bachillerato y FP la gestiona el departamento de educación de tu comunidad autónoma, no el Ministerio." },
+    { "titulo": "Títulos de la UE, del Espacio Económico Europeo y Suiza", "texto": "No necesitan apostilla ni legalización para los trámites universitarios. Para ejercer una profesión regulada con un título de la UE, puede aplicarse el reconocimiento de cualificaciones profesionales, que es un trámite distinto." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022, homologación, equivalencia y convalidación de enseñanzas universitarias extranjeras (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Orden de 14 de marzo de 1988, aplicación del Real Decreto 104/1988 (títulos no universitarios) (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-6938", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: portal Valida-TE", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: Tasa 107", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: aviso de cierre de la subsede electrónica de Universidades", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Homologación y convalidación de títulos y estudios extranjeros no universitarios", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Volante de inscripción condicional", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270/convalidacion-no-univ/volante-condicional.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Tasa 790 código 079", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/0/tasa-790-079-ingreso.html", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "idioma": "中文",
+  "marca": "Nuevo en España",
+  "lema": "在西班牙办手续，一步一步，用你的语言",
+  "meta": {
+    "titulo": "Nuevo en España · 外国人办事指南，用你的语言",
+    "descripcion": "一步一步教你续签居留、办理居住登记（empadronamiento）、申请医疗卡、社保号（Seguridad Social）、驾照和西班牙国籍。官方来源，7种语言。"
+  },
+  "nav": {
+    "guias": "指南",
+    "preguntas": "常见问题",
+    "precios": "价格",
+    "cuenta": "我的账户",
+    "idioma": "语言"
+  },
+  "inicio": {
+    "titulo": "在西班牙办手续，一步一步，用你的语言",
+    "subtitulo": "每项手续的所需材料、期限、费用和常见错误，并注明官方来源和核对日期。适合刚到西班牙或刚获得合法身份的人。",
+    "ctaGratis": "免费开始：居住登记（empadronamiento）",
+    "ctaGuias": "查看所有指南",
+    "puntos": [
+      {
+        "titulo": "官方来源",
+        "texto": "每条信息都链接到 BOE、相关部委或官方网站，并注明查阅日期。"
+      },
+      {
+        "titulo": "7种语言",
+        "texto": "西班牙语、阿拉伯语、法语、英语、罗马尼亚语、中文和乌克兰语。"
+      },
+      {
+        "titulo": "清单和提醒",
+        "texto": "勾选你已经准备好的材料，每个期限到来前都会收到邮件。"
+      }
+    ],
+    "guiasTitulo": "指南",
+    "empiezaTitulo": "我该从哪里开始？",
+    "empiezaTexto": "选择你的情况，我们会告诉你建议的办理顺序。",
+    "situaciones": {
+      "recienLlegado": "我刚到西班牙",
+      "regularizado": "我已获得特别合法化（RD 316/2026）的许可",
+      "renovar": "我需要续签居留卡",
+      "nacionalidad": "我想申请西班牙国籍"
+    },
+    "ordenRecomendado": "建议顺序",
+    "novedad": "新消息：Real Decreto 316/2026 所批许可的续签"
+  },
+  "guia": {
+    "resumen": "概要",
+    "paraQuien": "适合谁？",
+    "datosClave": "关键信息",
+    "pasos": "办理步骤",
+    "documentos": "所需材料",
+    "plazos": "期限",
+    "tasas": "费用",
+    "modelo": "表格",
+    "errores": "常见错误",
+    "variantes": "不同地区的差异",
+    "checklist": "你的核对清单",
+    "checklistAyuda": "只保存在这台设备上。",
+    "hechos": "已完成 {hechos} / {total}",
+    "reiniciar": "重新开始",
+    "recordatorio": "邮件期限提醒",
+    "fuentes": "官方来源",
+    "consultado": "查阅日期：",
+    "actualizado": "审核日期：",
+    "gratis": "免费指南",
+    "dePago": "订阅后可看完整指南",
+    "bloqueadaTitulo": "本指南的其余内容仅供订阅用户查看",
+    "bloqueadaTexto": "解锁所有指南的办理步骤、所需材料、费用、常见错误、核对清单和提醒。",
+    "verPrecios": "查看价格",
+    "yaTengoAcceso": "我已付款：恢复访问",
+    "cargando": "加载中…",
+    "otrasGuias": "其他指南",
+    "noTraducida": "本指南还没有翻译成你的语言，现以西班牙语显示。",
+    "celebracion": "手续准备好了！一切就绪。"
+  },
+  "recordatorio": {
+    "email": "你的电子邮箱",
+    "fecha": "日期",
+    "consentimiento": "我同意通过电子邮件接收这些提醒。我们只保存你的邮箱和这个日期，你可以在每封邮件中退订。",
+    "boton": "开启提醒",
+    "avisos": "我们会在以下时间给你发邮件：",
+    "diasAntes": "提前{n}",
+    "diasDespues": "{n}后",
+    "elDia": "当天",
+    "ok": "我们已给你发送了一封邮件。请点击邮件中的链接确认提醒。",
+    "error": "无法保存。请检查邮箱和日期，然后再试一次。",
+    "soloSuscriptores": "本指南的提醒功能仅供订阅用户使用。"
+  },
+  "precios": {
+    "titulo": "价格",
+    "subtitulo": "免费内容：完整的居住登记（empadronamiento）指南，以及所有指南的概要。",
+    "suscripcion": "按月订阅",
+    "suscripcionTexto": "所有完整指南、核对清单和提醒。可随时在你的账户中取消。",
+    "pack": "12个月套餐",
+    "packTexto": "一次性付款，不会自动续费。非常适合续签居留卡时使用。",
+    "incluye": [
+      "8份完整指南，用你的语言",
+      "互动核对清单",
+      "邮件期限提醒"
+    ],
+    "pagar": "用银行卡付款",
+    "desistimiento": "我希望立即访问数字内容，并同意一旦开始访问，我将失去14天的撤销权。",
+    "condiciones": "我已阅读销售条款。",
+    "pruebaStripe": "通过 Stripe 安全付款。目前为测试模式：不会实际扣款。",
+    "noAsesoria": "这不是法律咨询，也不代办手续：这是经过整理和解释的公开信息。",
+    "marcaCasillas": "请勾选两个方框以继续。",
+    "errorPago": "无法打开付款页面。请过几分钟再试。",
+    "gratisTitulo": "免费，无需注册",
+    "gratisIncluye": [
+      "完整的居住登记（empadronamiento）指南，含清单和提醒",
+      "全部 8 份指南的摘要、关键信息和来源",
+      "“从哪里开始？”选择器"
+    ],
+    "pagoTitulo": "订阅或套餐",
+    "iva": "含增值税",
+    "cancela": "在“我的账户”中一键取消。无最短期限。",
+    "sinRenovacion": "一次付款，不会自动续费。",
+    "porMes": "每月"
+  },
+  "acceso": {
+    "titulo": "恢复访问",
+    "texto": "输入你付款时使用的邮箱，我们会发送一个链接，让你在这台设备上登录。",
+    "boton": "发送链接",
+    "enviado": "如果该邮箱有有效的订阅或套餐，你将在几分钟内收到链接。",
+    "graciasTitulo": "谢谢！你现在可以访问了",
+    "graciasTexto": "所有指南已在这台设备上解锁。如需在其他设备登录，请使用“恢复访问”并输入你的邮箱。",
+    "comprobando": "正在确认付款…",
+    "pagoNoConfirmado": "我们还没有看到付款确认。请等一分钟后刷新页面。"
+  },
+  "cuenta": {
+    "titulo": "我的账户",
+    "sinSesion": "你还没有在这台设备上登录。",
+    "plan": "方案",
+    "hasta": "访问有效期至",
+    "suscripcion": "按月订阅",
+    "pack": "12个月套餐",
+    "sinPlan": "没有有效方案",
+    "cancelar": "取消订阅",
+    "canceladaOk": "订阅已取消。在已付费期限结束前，你仍可继续访问。",
+    "salir": "从这台设备退出登录",
+    "borrar": "如需删除你的所有数据，请写信至"
+  },
+  "preguntas": {
+    "titulo": "办理手续常见问题",
+    "respuestaCorta": "简短回答",
+    "guiaRelacionada": "分步指南",
+    "masPreguntas": "更多问题"
+  },
+  "aviso": {
+    "corto": "来自官方来源的一般信息。不构成法律咨询。",
+    "largo": "Nuevo en España 提供来自官方来源的公开信息，并注明出处和日期。本网站不提供法律咨询，不代为预约（cita previa），也不代表任何人办理手续。规定会变化：请务必查看所附链接中的官方来源。关于你的具体情况，请咨询律师或免费的移民接待机构。"
+  },
+  "pie": {
+    "avisoLegal": "法律声明",
+    "privacidad": "隐私",
+    "cookies": "Cookie",
+    "condiciones": "销售条款",
+    "contacto": "联系我们",
+    "sello": "莱里达制作 · 价格透明 · 一键取消"
+  },
+  "correo": {
+    "confirmarAsunto": "请确认“{guia}”的提醒",
+    "confirmarTexto": "点击此链接，开启“{guia}”指南的提醒：",
+    "avisoAsunto": "提醒：{guia}",
+    "accesoAsunto": "你的 Nuevo en España 登录链接",
+    "accesoTexto": "点击此链接在这台设备上登录。链接30分钟后失效：",
+    "baja": "退订这些提醒",
+    "abrirGuia": "打开指南"
+  },
+  "comun": {
+    "volver": "返回",
+    "enviar": "发送",
+    "cerrar": "关闭",
+    "inicio": "首页"
+  },
+  "oferta": {
+    "titulo": "居住登记办好了？下一步做什么？",
+    "texto": "接下来通常是医疗卡、社会保障号码，以及 2027 年续签或变更你的许可。解锁全部 8 份完整指南，含清单和提醒。",
+    "boton": "解锁全部 8 份指南",
+    "precio": "每月 4,99 €，一键取消 · 或 12 个月 19,90 €"
+  },
+  "recuperacion": {
+    "texto": "你的付款还没完成。现在就可以继续，只需一分钟。",
+    "boton": "继续付款",
+    "cerrar": "以后再说"
+  }
+}

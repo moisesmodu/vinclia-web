@@ -1,0 +1,94 @@
+{
+  "slug": "homologacion-titulos",
+  "titulo": "Recunoașterea diplomelor: homologación sau equivalencia",
+  "resumen": "Ca să folosești în Spania o diplomă obținută în altă țară, ai nevoie de recunoașterea ei oficială. Diplomele universitare le recunoaște Ministerio de Ciencia, Innovación y Universidades (taxă de 166,50 €, decizie în cel mult 6 luni). Diplomele de ESO (învățământ secundar obligatoriu), Bachillerato (liceu) și Formación Profesional (învățământ profesional) le recunoaște Ministerio de Educación, Formación Profesional y Deportes. Aproape întotdeauna ai nevoie de traducere oficială și de apostilă sau supralegalizare.",
+  "paraQuien": "Pentru persoanele cu diplome sau studii din străinătate care vor să lucreze, să studieze sau să participe la concursuri publice (oposiciones) în Spania. Dacă locuiești în Catalonia, Galicia sau Țara Bascilor, diplomele care nu sunt universitare le gestionează comunitatea ta autonomă.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Diplome universitare", "valor": "Ministerio de Ciencia, Innovación y Universidades (Real Decreto 889/2022)" },
+    { "etiqueta": "Diplome neuniversitare", "valor": "Ministerio de Educación, Formación Profesional y Deportes (Real Decreto 104/1988)" },
+    { "etiqueta": "Taxa pentru diplome universitare", "valor": "166,50 € (modelo 790, código 107)" },
+    { "etiqueta": "Termen de decizie (universitar)", "valor": "Maximum 6 luni" },
+    { "etiqueta": "Recunoașterea diplomei de ESO", "valor": "Fără taxă" },
+    { "etiqueta": "Atenție", "valor": "Subsediul electronic pentru Universități este închis din 22/10/2026 din cauza unei probleme tehnice" }
+  ],
+  "pasos": [
+    { "titulo": "Alege formalitatea corectă", "texto": "Homologación: îți dă aceleași efecte ca diploma spaniolă și este obligatorie pentru a profesa într-o profesie reglementată (de exemplu medicină, asistență medicală, farmacie, fizioterapie, profesor). Equivalencia: recunoaște nivelul academic (Grado — licență — sau Máster) pentru a continua studiile, pentru concursuri publice sau pentru locuri de muncă nereglementate; nu îți permite să profesezi într-o profesie reglementată. Convalidación: recunoaște studii parțiale pentru a le continua în Spania." },
+    { "titulo": "Verifică dacă profesia ta este reglementată", "texto": "Uită-te pe lista din Anexa la Real Decreto 889/2022, pe portalul Valida-TE al Ministerului. Dacă profesia ta nu apare, nu poți cere homologación, dar poți cere declararea echivalenței (equivalencia). Le poți cere pe amândouă pentru aceeași diplomă, dar sunt două cereri și două taxe." },
+    { "titulo": "Apostilează sau supralegalizează documentele în țara ta", "texto": "Originalele (diploma și foaia matricolă) trebuie să aibă Apostila de la Haga dacă țara ta a semnat Convenția, sau supralegalizarea pe cale diplomatică dacă nu a semnat-o. Nu se cere pentru documentele din UE, Spațiul Economic European și Elveția. Apostilează originalul, nu o copie legalizată." },
+    { "titulo": "Comandă traducerea oficială", "texto": "Dacă documentele nu sunt în spaniolă, ai nevoie de traducere autorizată (traducción jurada) făcută de un traductor jurado (traducător autorizat) numit de Ministerio de Asuntos Exteriores, sau de o traducere oficială din altă țară a UE. Traducerea trebuie să includă și apostila sau supralegalizările." },
+    { "titulo": "Plătește taxa", "texto": "Diplome universitare: modelo 790 código 107, 166,50 € pentru fiecare formalitate. Diplome neuniversitare: modelo 790 código 079. Plătește suma completă: dacă ajung mai puțini bani din cauza comisioanelor bancare, nu îți încep dosarul. Nu plăti până nu ești sigur de ce formalitate ai nevoie." },
+    { "titulo": "Depune cererea (diplome universitare)", "texto": "Cererea de homologación sau equivalencia se depune pe internet, pe sediul electronic al Ministerului, cu toate documentele scanate. Din 22/10/2026 subsediul pentru Universități este închis din cauza unei probleme tehnice; Ministerul indică faptul că poți folosi Registro Electrónico General (ciencia.sede.gob.es) și că termenele formalităților afectate se prelungesc. Consultă anunțul înainte să depui." },
+    { "titulo": "Depune cererea (ESO, Bachillerato, FP)", "texto": "Completează cererea pe sediul electronic al Ministerio de Educación (sede.educacion.gob.es) sau depune-o la un registru public cu originalele, ca să ți se facă copiile verificate. În Catalonia, Galicia și Țara Bascilor se depune la comunitatea autonomă." },
+    { "titulo": "Cere volante de inscripción condicional dacă vei studia", "texto": "Pentru diplomele neuniversitare, odată cu cererea poți preda volante de inscripción condicional (adeverința de înscriere condiționată). După ce este ștampilată, îți permite să te înscrii condiționat la studii cât timp se soluționează cererea. O folosești pe răspunderea ta și nu garantează că decizia va fi favorabilă." },
+    { "titulo": "Răspunde dacă ți se cer mai multe documente", "texto": "Ministerul îți poate cere să corectezi sau să completezi cererea (subsanación). Răspunde în termenul care ți se dă. Verifică des dosarul și notificările electronice." },
+    { "titulo": "Primește decizia", "texto": "Decizia pentru diplomele universitare poate fi favorabilă, nefavorabilă sau condiționată de promovarea unei formări suplimentare (de exemplu, o probă sau câteva materii). Dacă trec 6 luni fără răspuns, cererea se poate considera respinsă prin tăcere administrativă (silencio administrativo); poți face contestație (recurso)." }
+  ],
+  "documentos": [
+    { "nombre": "Pașaport, TIE sau act de identitate valabil", "nota": "Dacă ești în Spania, ai nevoie de NIF sau NIE ca să plătești taxa." },
+    { "nombre": "Diploma originală sau certificatul oficial de eliberare a diplomei", "nota": "Cu apostilă sau supralegalizare, dacă este cazul." },
+    { "nombre": "Foaia matricolă (certificado académico)", "nota": "Universitar: cu durata, materiile și orele sau creditele ECTS. ESO: ultimii 4 ani. Bachillerato: ultimii 3 ani." },
+    { "nombre": "Suplimentul european la diplomă (Suplemento Europeo al Título)", "nota": "Opțional: poate înlocui foaia matricolă la equivalencia." },
+    { "nombre": "Traducere autorizată sau oficială în spaniolă", "nota": "A tuturor documentelor care nu sunt în spaniolă, inclusiv a apostilelor." },
+    { "nombre": "Dovada plății taxei (modelo 790)", "nota": "Código 107 (universitar) sau 079 (neuniversitar)." },
+    { "nombre": "Dovada dreptului de a profesa în țara ta", "nota": "Doar pentru homologación în profesii reglementate." },
+    { "nombre": "Dovada cunoașterii limbii spaniole", "nota": "Doar la unele profesii (de exemplu, B2 pentru profesori, dacă nu ești dintr-o țară de limbă spaniolă)." },
+    { "nombre": "Volante de inscripción condicional", "nota": "Opțional, pentru diplome neuniversitare, dacă vrei să te înscrii la studii cât aștepți." }
+  ],
+  "plazos": [
+    { "texto": "Diplome universitare: Ministerul trebuie să decidă și să comunice decizia în cel mult 6 luni de la intrarea cererii în registrul electronic (Real Decreto 889/2022). Fără răspuns în acest termen, cererea se poate considera respinsă prin tăcere." },
+    { "texto": "Din cauza închiderii subsediului pentru Universități din 22/10/2026, Ministerul indică faptul că termenele procedurilor afectate se prelungesc până la rezolvarea problemei." },
+    { "texto": "Diplome neuniversitare: volante de inscripción condicional îți permite să te înscrii la studii în cele 6 luni de după ștampilare și este valabil pentru acel an școlar (Orden de 14 de marzo de 1988). Verifică valabilitatea actuală la Ministerio de Educación." },
+    { "texto": "Nu am putut verifica un termen maxim de decizie publicat pentru diplomele neuniversitare; consultă fișa formalității pe sediul Ministerio de Educación." }
+  ],
+  "tasas": [
+    { "concepto": "Homologación a diplomei universitare la Grado sau Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Declararea echivalenței (equivalencia) cu nivelul academic de Grado sau Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Homologación la diploma de Graduado en ESO", "importe": "Gratuit", "modelo": "Nu se plătește taxă" },
+    { "concepto": "Homologación la diploma de Bachiller", "importe": "49,76 €", "modelo": "Modelo 790 código 079", "nota": "Sumă publicată de Ministerio de Educación; nu am putut confirma că este cea în vigoare în 2026. Verific-o înainte să plătești." },
+    { "concepto": "Convalidación pentru clasa 1 de Bachillerato (1.º de Bachillerato)", "importe": "24,88 €", "modelo": "Modelo 790 código 079", "nota": "Verifică suma în vigoare pe site-ul Ministerio de Educación." },
+    { "concepto": "Homologación sau convalidación pentru Formación Profesional", "importe": "Consultă suma în vigoare", "modelo": "Modelo 790 código 079", "nota": "Nu am putut verifica suma pentru 2026 pe site-ul Ministerio de Educación." }
+  ],
+  "errores": [
+    "Să ceri equivalencia când ai nevoie să profesezi într-o profesie reglementată. Equivalencia nu îți permite să lucrezi, de exemplu, ca medic sau asistent medical: ai nevoie de homologación.",
+    "Să apostilezi o copie legalizată în loc de original. Ministerul nu acceptă această apostilă.",
+    "Să traduci diploma, dar nu și apostila. Traducerea oficială trebuie să includă și supralegalizările.",
+    "Să plătești mai puțin decât taxa din cauza comisioanelor transferului. Dacă nu ajunge suma completă, dosarul nu începe.",
+    "Să plătești taxa înainte să știi de ce formalitate ai nevoie. Fiecare formalitate (homologación sau equivalencia) are taxa ei.",
+    "Să nu te uiți la notificările electronice. Dacă nu răspunzi la timp la o cerere de documente, îți pot clasa cererea.",
+    "Să folosești un traducător care nu este nici autorizat (jurado), nici oficial. Dacă traducătorul este din afara UE, semnătura lui trebuie supralegalizată."
+  ],
+  "checklist": [
+    { "id": "elegir-tramite", "texto": "Știu dacă am nevoie de homologación, equivalencia sau convalidación" },
+    { "id": "profesion-regulada", "texto": "Am verificat dacă profesia mea este în Anexa la Real Decreto 889/2022" },
+    { "id": "doc-identidad", "texto": "Am pașaport, TIE sau act de identitate valabil și NIE-ul meu" },
+    { "id": "doc-titulo", "texto": "Am diploma originală apostilată sau supralegalizată" },
+    { "id": "doc-notas", "texto": "Am foaia matricolă apostilată sau supralegalizată" },
+    { "id": "traduccion", "texto": "Am traducerea autorizată sau oficială a tuturor documentelor, inclusiv a apostilelor" },
+    { "id": "tasa", "texto": "Am plătit taxa completă cu modelo 790 corect" },
+    { "id": "solicitud", "texto": "Am depus cererea și păstrez dovada înregistrării" },
+    { "id": "volante", "texto": "Dacă voi studia, am predat volante de inscripción condicional" },
+    { "id": "notificaciones", "texto": "Îmi verific des notificările electronice" }
+  ],
+  "recordatorio": {
+    "pregunta": "În ce zi ai depus cererea?",
+    "avisos": [
+      { "dias": 90, "texto": "Au trecut 3 luni. Verifică stadiul dosarului și notificările, în caz că ți se cer mai multe documente." },
+      { "dias": 180, "texto": "Au trecut 6 luni. Dacă cererea ta este pentru o diplomă universitară și nu ai răspuns, se poate considera respinsă prin tăcere. Consultă-ți dosarul și căile de contestare pe sediul Ministerului." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Catalonia, Galicia și Țara Bascilor (diplome neuniversitare)", "texto": "Dacă locuiești în aceste comunități, recunoașterea (homologación) pentru ESO, Bachillerato și FP o gestionează departamentul de educație al comunității tale autonome, nu Ministerul." },
+    { "titulo": "Diplome din UE, Spațiul Economic European și Elveția", "texto": "Nu au nevoie de apostilă sau de supralegalizare pentru formalitățile universitare. Pentru a profesa într-o profesie reglementată cu o diplomă din UE, se poate aplica recunoașterea calificărilor profesionale (reconocimiento de cualificaciones profesionales), care este o formalitate diferită." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022, homologarea, echivalența și convalidarea studiilor universitare străine (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Orden de 14 de marzo de 1988, aplicarea Real Decreto 104/1988 (diplome neuniversitare) (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-6938", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: portalul Valida-TE", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: Tasa 107", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: anunț de închidere a subsediului electronic pentru Universități", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Homologación y convalidación de títulos y estudios extranjeros no universitarios", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Volante de inscripción condicional", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270/convalidacion-no-univ/volante-condicional.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Tasa 790 código 079", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/0/tasa-790-079-ingreso.html", "consultado": "2026-10-28" }
+  ]
+}

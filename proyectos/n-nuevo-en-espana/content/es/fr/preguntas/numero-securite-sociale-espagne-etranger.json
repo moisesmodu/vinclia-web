@@ -1,0 +1,39 @@
+{
+  "slug": "numero-securite-sociale-espagne-etranger",
+  "pregunta": "Comment obtenir un numéro de Sécurité sociale en Espagne quand on est étranger ?",
+  "descripcion": "Numéro de Sécurité sociale (NUSS) en Espagne pour étrangers : gratuit, sur Import@ss ou à la TGSS avec le modelo TA.1. NIE/TIE, délais et alta au travail.",
+  "respuestaCorta": "Le numéro de Sécurité sociale (NUSS) est gratuit et il est délivré par la Tesorería General de la Seguridad Social (TGSS). Vous le demandez sur internet sur Import@ss (avec ou sans Cl@ve), dans un bureau de la TGSS avec le modelo TA.1, ou votre entreprise le demande pour vous. Pour une personne étrangère, le document habituel est le NIE ou la TIE. Si vous avez déjà travaillé en Espagne, vous avez déjà un numéro : il est unique pour toute la vie.",
+  "secciones": [
+    {
+      "titulo": "NUSS, NAF et NIE : trois choses différentes",
+      "texto": "Le NIE est votre numéro d'identité d'étranger, donné par la Policía Nacional. Le NUSS (Número de la Seguridad Social) est votre numéro à la Sécurité sociale. Quand vous êtes déclaré pour la première fois au travail, ce même numéro devient votre numéro d'affiliation (NAF).\n\nCe sont des numéros différents et il vous faut les deux pour travailler. Le NUSS est unique et sert toute la vie : si vous avez déjà travaillé en Espagne, ou si vous avez bénéficié de l'assurance maladie d'un membre de votre famille, vous en avez peut-être déjà un. Regardez vos anciennes fiches de paie (nóminas) ou votre relevé de carrière (vida laboral) avant d'en demander un nouveau."
+    },
+    {
+      "titulo": "Les trois façons de le demander",
+      "texto": "1. Sur internet avec Cl@ve ou certificat numérique : sur Import@ss (le portail en ligne de la TGSS), option « Solicitar el Número de la Seguridad Social ». C'est la voie la plus rapide.\n\n2. Sur internet sans identification numérique : sur Import@ss, vous remplissez vos données, vous prenez un selfie et vous envoyez une photo de votre pièce d'identité (recto et verso). Il faut une adresse e-mail et un téléphone avec caméra. La TGSS vérifie d'abord votre identité, c'est donc plus long.\n\n3. En personne dans un bureau de la TGSS, avec le modelo TA.1 rempli et signé et votre pièce d'identité originale. Vérifiez avant si le bureau reçoit avec ou sans rendez-vous. Pour vous informer, la TGSS a les numéros 901 50 20 50 et 91 541 02 91.\n\nAttention : les CAISS sont des bureaux de l'INSS (retraites, prestations) ; ce n'est pas l'endroit habituel pour demander le NUSS."
+    },
+    {
+      "titulo": "Quel document pour une personne étrangère ?",
+      "texto": "Le document habituel est le NIE ou la TIE en cours de validité. Selon le modelo TA.1, le passeport est accepté pour les citoyens de l'UE, de l'EEE ou de Suisse, qui doivent ensuite fournir leur NIE dans les 3 mois après leur entrée en Espagne.\n\nSi vous venez d'un pays hors UE (par exemple Sénégal, Mali, Guinée, Côte d'Ivoire, Maroc ou Algérie), pour travailler il vous faut en général une autorisation de travail, et avec elle vous aurez un NIE : demandez le numéro avec votre NIE ou votre TIE. Nous n'avons pas pu confirmer dans les sources officielles si Import@ss accepte seulement le passeport pour les personnes hors UE dans la voie sans identification numérique ; si c'est votre cas, demandez dans un bureau de la TGSS ou aux numéros officiels."
+    },
+    {
+      "titulo": "Avoir un numéro n'est pas être déclaré",
+      "texto": "Si une entreprise va vous embaucher et que vous n'avez pas de numéro, elle doit demander votre affiliation et peut demander le numéro par le Sistema RED. Donnez-lui vos données exactes, comme sur votre document.\n\nL'entreprise doit faire votre alta (déclaration) avant votre premier jour de travail, et jamais plus de 60 jours avant (Real Decreto 84/1996, article 32.3). Vous pouvez le vérifier dans votre vida laboral sur Import@ss. La Seguridad Social indique un délai maximum de 45 jours pour répondre à la demande de numéro, mais cette information vient d'une ancienne page : vérifiez-la sur Import@ss. La démarche est gratuite : ni la TGSS ni l'entreprise ne peuvent vous faire payer. Cette page est une information générale, pas un conseil juridique."
+    }
+  ],
+  "faq": [
+    { "p": "Combien coûte le numéro de Sécurité sociale ?", "r": "Rien. C'est gratuit, et ni la TGSS ni l'entreprise ne peuvent vous faire payer pour cette démarche." },
+    { "p": "Le NIE et le numéro de Sécurité sociale, c'est la même chose ?", "r": "Non. Le NIE est votre numéro d'identité d'étranger (Policía Nacional) ; le NUSS est votre numéro à la Sécurité sociale. Il vous faut les deux pour travailler." },
+    { "p": "Mon employeur peut-il le demander pour moi ?", "r": "Oui. Si vous allez être embauché et n'avez pas de numéro, l'entreprise doit demander votre affiliation et peut demander le numéro par le Sistema RED." },
+    { "p": "J'ai déjà travaillé en Espagne il y a des années. Dois-je refaire la demande ?", "r": "Non. Le numéro est unique pour toute la vie. Regardez votre vida laboral ou demandez à la TGSS si vous ne vous en souvenez pas." }
+  ],
+  "guia": "numero-seguridad-social",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS) : Demander le numéro de Sécurité sociale", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social : Comment obtenir le numéro de Sécurité sociale", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social : informations sur l'attribution du numéro (modelo TA.1, délai de réponse)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, Règlement général d'inscription des entreprises et d'affiliation (BOE, texte consolidé)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social : numéro de téléphone d'information sur l'affiliation de la TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

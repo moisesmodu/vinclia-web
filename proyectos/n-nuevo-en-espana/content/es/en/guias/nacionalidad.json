@@ -1,0 +1,130 @@
+{
+  "slug": "nacionalidad",
+  "titulo": "Path to Spanish nationality by residence",
+  "resumen": "You can apply for Spanish nationality if you have lived in Spain legally and without breaks for a certain time: 10 years in general, 5 if you are a refugee, 2 if you are from an Ibero-American country, Andorra, the Philippines, Equatorial Guinea or Portugal (or Sephardic), and 1 year in special cases. Usually you must pass two Instituto Cervantes exams (CCSE and DELE A2) and pay a fee of 104,05 €. You apply online on the e-office of the Ministerio de Justicia (Ministry of Justice). The law gives 1 year to decide, but in practice it usually takes longer; after that you have 180 days to swear or promise (jura o promesa).",
+  "paraQuien": "For foreigners who live in Spain with legal residence (residence permit, TIE, refugee status) and want to become Spanish. It does not apply to nationality by option (opción), by origin or by carta de naturaleza (special grant).",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Residence needed", "valor": "10 years general · 5 refugees · 2 Ibero-Americans, Andorra, the Philippines, Equatorial Guinea, Portugal and Sephardic Jews · 1 year special cases" },
+    { "etiqueta": "Nationality fee", "valor": "104,05 € (modelo 790 código 026)" },
+    { "etiqueta": "CCSE exam", "valor": "85 € (check at examenes.cervantes.es)" },
+    { "etiqueta": "DELE A2 exam", "valor": "About 138 € in Spain in 2026 (it varies by centre; check)" },
+    { "etiqueta": "Legal time to decide", "valor": "1 year; if they do not answer, it is treated as refused (silencio negativo, 'negative silence')" },
+    { "etiqueta": "Oath or promise", "valor": "Within 180 days after you are notified that it is granted" },
+    { "etiqueta": "Where to apply", "valor": "Ministerio de Justicia e-office (online)" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Work out when you reach the residence period",
+      "texto": "According to article 22 of the Código Civil (Civil Code), your residence must be legal, continuous and immediately before the application. Count from the date of your first residence permit (not from when you arrived, if at first you had no papers). Periods with a study stay or without a permit do not count in the same way: check your case with the official information. Long absences from Spain can break continuity."
+    },
+    {
+      "titulo": "Check which period applies to you",
+      "texto": "10 years is the general period. 5 years if you have refugee status. 2 years if you have nationality of origin of an Ibero-American country, Andorra, the Philippines, Equatorial Guinea or Portugal, or if you are Sephardic (you must prove it). 1 year if, for example, you were born in Spain, you have been married for 1 year to a Spanish person without separation, you are the widow or widower of a Spanish person, you were born outside Spain to a father or mother (or grandfather or grandmother) who was originally Spanish, or you were under the guardianship or foster care of a Spanish institution for 2 years in a row."
+    },
+    {
+      "titulo": "Check if you must take the exams",
+      "texto": "Usually you must pass the CCSE (test of constitutional and sociocultural knowledge of Spain) and the DELE A2 (Spanish language diploma) or higher. If you are from a country where Spanish is an official language, you do not have to take the DELE, but you do take the CCSE. People under 18 do not take exams. If you studied and passed ESO (secondary school) in Spain, you can show that certificate instead of the exams. In some cases (disability, people who cannot read and write) you can ask the Ministerio de Justicia for an exemption (dispensa)."
+    },
+    {
+      "titulo": "Register and prepare for the exams early",
+      "texto": "You register on the official website examenes.cervantes.es. The CCSE costs 85 € and there are exam dates every month; the manual and official questions are published on that website. The DELE A2 costs about 138 € at centres in Spain in 2026 and has few exam dates a year, with registration weeks before. Results take time: start preparing at least 1 year before you reach the residence period."
+    },
+    {
+      "titulo": "Get the criminal record certificate from your country",
+      "texto": "You need the criminal record certificate (certificado de antecedentes penales) from your country of origin (and, depending on your case, from other countries where you lived), legalised or apostilled and translated into Spanish by a sworn translator. These certificates are often valid for a limited time (often 3 or 6 months): request it close to the date you will submit your application. Check the exact requirements on the Ministerio de Justicia e-office."
+    },
+    {
+      "titulo": "Collect the other documents",
+      "texto": "Prepare your valid passport, your TIE, your birth certificate legalised or apostilled and translated, the certificado de empadronamiento (proof of address registration), the exam diplomas (or proof of exemption) and documents that show your integration and means of living (contract, vida laboral work history). If you married a Spanish person, add the marriage certificate and your spouse's nationality certificate."
+    },
+    {
+      "titulo": "Pay the 104,05 € fee",
+      "texto": "The fee is paid with the Ministerio de Justicia modelo 790 código 026. You can create and pay the form online on the Ministry's e-office. Do not photocopy the form: each one has a unique number. The amount can change with the Presupuestos Generales del Estado (state budget), so check the current amount before paying."
+    },
+    {
+      "titulo": "Submit the application on the Ministerio de Justicia e-office",
+      "texto": "You apply online on the Ministerio de Justicia e-office (procedure 'Nacionalidad española por residencia'). You need a digital certificate or Cl@ve, or you can apply through a representative. Keep the receipt with the file number (número de expediente) to follow the status of your application."
+    },
+    {
+      "titulo": "Wait for the decision",
+      "texto": "The law gives 1 year from when the application reaches the office that handles it. In practice it usually takes longer. If the year passes with no answer, the application is treated as refused (silencio negativo) and you can appeal to the Audiencia Nacional (national court), although you can also keep waiting for a written answer. While you wait, keep your legal residence valid and renew your TIE when it is due."
+    },
+    {
+      "titulo": "Swear or promise within 180 days",
+      "texto": "When you are notified that nationality is granted, you have 180 days to swear or promise loyalty to the King and obedience to the Constitution and the laws, and to give up your previous nationality (except countries with dual nationality, such as Ibero-American countries, Andorra, the Philippines, Equatorial Guinea and Portugal). You do it at the Registro Civil (civil registry) for your address or before a notary. If you miss the deadline, the grant expires."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Valid passport", "nota": "Full copy" },
+    { "nombre": "Valid foreigner ID card (TIE, Tarjeta de Identidad de Extranjero)" },
+    { "nombre": "Birth certificate", "nota": "Legalised or apostilled and translated into Spanish by a sworn translator" },
+    { "nombre": "Criminal record certificate from your country of origin", "nota": "Legalised or apostilled and translated; request it shortly before applying because it expires" },
+    { "nombre": "Certificado de empadronamiento", "nota": "From the town hall where you live" },
+    { "nombre": "DELE A2 diploma or higher", "nota": "Not needed for nationals of countries where Spanish is an official language or for people under 18" },
+    { "nombre": "Certificate of passing the CCSE", "nota": "Not needed for people under 18; the Spanish ESO certificate can replace both exams" },
+    { "nombre": "Proof of payment of the 790 código 026 fee" },
+    { "nombre": "Proof of means of living", "nota": "Work contract, vida laboral, payslips or similar" },
+    { "nombre": "Marriage certificate and documents of your Spanish spouse", "nota": "Only if you apply through marriage (1-year period)" },
+    { "nombre": "Refugee document or proof of Sephardic origin", "nota": "Only if you apply with the 5-year or 2-year period for that reason" }
+  ],
+  "plazos": [
+    { "texto": "Legal, continuous residence immediately before the application: 10 years in general; 5 years for refugees; 2 years for nationals of origin of Ibero-American countries, Andorra, the Philippines, Equatorial Guinea, Portugal and Sephardic Jews; 1 year in special cases (born in Spain, spouse of a Spanish person married for 1 year, widow or widower of a Spanish person, among others). Article 22 of the Código Civil." },
+    { "texto": "You can submit the application from the day you complete the required years of legal residence." },
+    { "texto": "The Administration has 1 year to decide and notify you. If it does not answer, it is treated as refused (silencio negativo)." },
+    { "texto": "After the grant, you have 180 days, counted from the day after the notification, to swear or promise at the Registro Civil or before a notary. If you do not do it, the grant expires (article 21.4 of the Código Civil)." },
+    { "texto": "The DELE A2 has few exam dates a year and registration closes weeks before the exam; the CCSE has monthly dates. See the calendar at examenes.cervantes.es." }
+  ],
+  "tasas": [
+    { "concepto": "Fee for the nationality by residence application", "importe": "104,05 €", "modelo": "Modelo 790 código 026 (Ministerio de Justicia)", "nota": "It can change with the Presupuestos Generales del Estado; check the amount on the Ministerio de Justicia e-office." },
+    { "concepto": "CCSE exam (Instituto Cervantes)", "importe": "85 €", "modelo": "Paid when you register at examenes.cervantes.es", "nota": "Includes two attempts. Check the current price on the official website." },
+    { "concepto": "DELE A2 exam (Instituto Cervantes)", "importe": "About 138 € (centres in Spain, 2026)", "modelo": "Paid when you register at examenes.cervantes.es", "nota": "The price varies by centre and year; check the price on the official website before registering." },
+    { "concepto": "Sworn translations and legalisations", "importe": "Variable", "nota": "They depend on the country and the translator; they are not Spanish state fees." }
+  ],
+  "errores": [
+    "Counting the years from when you arrived in Spain. Only legal residence counts; if you spent some time without a permit, that time does not count.",
+    "Letting your TIE expire while you wait for nationality. Your residence must stay legal until the end: renew on time.",
+    "Submitting a criminal record certificate that has expired, has no apostille or has no sworn translation. Request it shortly before you apply.",
+    "Waiting until you reach the residence period to take the exams. The DELE has few dates and results take time: prepare months before.",
+    "Thinking Ibero-Americans take no exams. They are exempt from the DELE, but usually they must pass the CCSE.",
+    "Spending many months outside Spain before applying for nationality. Long absences can break continuous residence.",
+    "Missing the 180 days to swear or promise. If you do not do it on time, you lose the grant."
+  ],
+  "checklist": [
+    { "id": "fecha-plazo", "texto": "I know the exact date I complete the required years of legal residence" },
+    { "id": "tipo-plazo", "texto": "I know which period applies to me (10, 5, 2 or 1 year)" },
+    { "id": "tie-vigente", "texto": "My TIE is valid and I know when to renew it" },
+    { "id": "exencion-examenes", "texto": "I know if I must take the CCSE, the DELE A2 or neither" },
+    { "id": "ccse-aprobado", "texto": "I have passed the CCSE (or I am exempt)" },
+    { "id": "dele-aprobado", "texto": "I have the DELE A2 or higher (or I am exempt)" },
+    { "id": "doc-nacimiento", "texto": "I have my birth certificate legalised or apostilled and translated" },
+    { "id": "doc-antecedentes", "texto": "I have a recent criminal record certificate, legalised or apostilled and translated" },
+    { "id": "doc-padron", "texto": "I have the certificado de empadronamiento" },
+    { "id": "tasa-026", "texto": "I have paid the 790 código 026 fee" },
+    { "id": "acceso-sede", "texto": "I have a digital certificate or Cl@ve to log in to the Ministerio de Justicia e-office" },
+    { "id": "solicitud-presentada", "texto": "I have submitted the application and kept the file number" }
+  ],
+  "recordatorio": {
+    "pregunta": "On what date do you complete the years of legal residence you need? (count them from your first residence permit: 10, 5, 2 or 1 year depending on your case)",
+    "avisos": [
+      { "dias": -365, "texto": "1 year left until you can apply for nationality. It is a good time to register for the CCSE and, if it applies to you, the DELE A2 at examenes.cervantes.es. Also check that your TIE does not expire before then." },
+      { "dias": -180, "texto": "6 months left. If you have not taken the exams, register now for the next date. Start requesting your birth certificate and prepare the translations." },
+      { "dias": -60, "texto": "2 months left. Request the criminal record certificate from your country with apostille and sworn translation, and the certificado de empadronamiento." },
+      { "dias": 0, "texto": "Today you complete the residence period. Pay the 790 código 026 fee (104,05 €) and submit your application on the Ministerio de Justicia e-office." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Nationals of Ibero-American countries, Andorra, the Philippines, Equatorial Guinea and Portugal", "texto": "Period of 2 years of legal residence. If Spanish is an official language in your country, you do not take the DELE, but you do take the CCSE. Usually you do not have to give up your previous nationality." },
+    { "titulo": "Spouse of a Spanish person", "texto": "1 year of legal residence is enough if, when you apply, you have been married for 1 year and there is no legal or de facto separation." },
+    { "titulo": "Children under 18", "texto": "They do not take the exams. Their legal representatives submit the application; the child's residence must also be legal and continuous." }
+  ],
+  "fuentes": [
+    { "nombre": "Código Civil, articles 21, 22 and 23 (BOE, consolidated text)", "url": "https://boe.es/buscar/act.php?id=BOE-A-1889-4763", "consultado": "2026-10-28" },
+    { "nombre": "Spanish nationality by residence (Ministerio de Justicia e-office)", "url": "https://sede.mjusticia.gob.es/tramites/nacionalidad-espanola", "consultado": "2026-10-28" },
+    { "nombre": "How Spanish nationality is acquired: residence (Ministerio de Justicia)", "url": "https://www.mjusticia.gob.es/es/ciudadania/nacionalidad/que-es-nacionalidad/como-adquiere-nacionalidad/residencia", "consultado": "2026-10-28" },
+    { "nombre": "Form 790 código 026: nationality fee (Ministerio de Justicia)", "url": "https://www.mjusticia.gob.es/es/ciudadania/formulario-790", "consultado": "2026-10-28" },
+    { "nombre": "Orden JUS/1625/2016, on processing nationality by residence (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2016-9314", "consultado": "2026-10-28" },
+    { "nombre": "Orden JUS/1018/2022, amending Orden JUS/1625/2016 (exemption with ESO) (BOE)", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-17596", "consultado": "2026-10-28" },
+    { "nombre": "CCSE and DELE exams: registration, prices and dates (Instituto Cervantes)", "url": "https://examenes.cervantes.es/", "consultado": "2026-10-28" }
+  ]
+}

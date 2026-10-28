@@ -1,0 +1,188 @@
+{
+  "idioma": "Français",
+  "marca": "Nuevo en España",
+  "lema": "Vos démarches en Espagne, étape par étape et dans votre langue",
+  "meta": {
+    "titulo": "Nuevo en España · Guides des démarches pour les étrangers, dans votre langue",
+    "descripcion": "Guides étape par étape pour renouveler votre titre de séjour, vous inscrire au registre municipal (empadronamiento), demander la carte de santé, le numéro de Sécurité sociale, le permis de conduire et la nationalité espagnole. Sources officielles, en 7 langues."
+  },
+  "nav": {
+    "guias": "Guides",
+    "preguntas": "Questions",
+    "precios": "Tarifs",
+    "cuenta": "Mon compte",
+    "idioma": "Langue"
+  },
+  "inicio": {
+    "titulo": "Vos démarches en Espagne, étape par étape et dans votre langue",
+    "subtitulo": "Documents, délais, taxes et erreurs fréquentes pour chaque démarche, avec la source officielle citée et la date de vérification. Pour les personnes qui viennent d'arriver ou qui viennent d'être régularisées.",
+    "ctaGratis": "Commencez gratuitement : inscription au registre municipal (empadronamiento)",
+    "ctaGuias": "Voir tous les guides",
+    "puntos": [
+      {
+        "titulo": "Sources officielles",
+        "texto": "Chaque information renvoie au BOE, au ministère ou au site officiel, avec sa date de consultation."
+      },
+      {
+        "titulo": "En 7 langues",
+        "texto": "Espagnol, arabe, français, anglais, roumain, chinois et ukrainien."
+      },
+      {
+        "titulo": "Liste et rappels",
+        "texto": "Cochez ce que vous avez déjà et recevez un e-mail avant chaque délai."
+      }
+    ],
+    "guiasTitulo": "Les guides",
+    "empiezaTitulo": "Par où commencer ?",
+    "empiezaTexto": "Choisissez votre situation et nous vous montrons l'ordre conseillé des démarches.",
+    "situaciones": {
+      "recienLlegado": "Je viens d'arriver en Espagne",
+      "regularizado": "J'ai obtenu l'autorisation de la régularisation (RD 316/2026)",
+      "renovar": "Je dois renouveler ma carte",
+      "nacionalidad": "Je veux demander la nationalité espagnole"
+    },
+    "ordenRecomendado": "Ordre conseillé",
+    "novedad": "Nouveau : renouvellement des autorisations du Real Decreto 316/2026"
+  },
+  "guia": {
+    "resumen": "Résumé",
+    "paraQuien": "Pour qui ?",
+    "datosClave": "Informations clés",
+    "pasos": "Étape par étape",
+    "documentos": "Documents nécessaires",
+    "plazos": "Délais",
+    "tasas": "Taxes",
+    "modelo": "Formulaire",
+    "errores": "Erreurs fréquentes",
+    "variantes": "Différences selon l'endroit où vous vivez",
+    "checklist": "Votre liste de vérification",
+    "checklistAyuda": "Enregistrée uniquement sur cet appareil.",
+    "hechos": "{hechos} sur {total} faits",
+    "reiniciar": "Recommencer",
+    "recordatorio": "Rappel des délais par e-mail",
+    "fuentes": "Sources officielles",
+    "consultado": "consulté le",
+    "actualizado": "Vérifié le",
+    "gratis": "Guide gratuit",
+    "dePago": "Guide complet avec abonnement",
+    "bloqueadaTitulo": "La suite du guide est réservée aux abonnés",
+    "bloqueadaTexto": "Débloquez les étapes, les documents, les taxes, les erreurs fréquentes, la liste de vérification et les rappels de tous les guides.",
+    "verPrecios": "Voir les tarifs",
+    "yaTengoAcceso": "J'ai déjà payé : récupérer l'accès",
+    "cargando": "Chargement…",
+    "otrasGuias": "Autres guides",
+    "noTraducida": "Ce guide n'est pas encore traduit dans votre langue : nous l'affichons en espagnol.",
+    "celebracion": "Démarche prête ! Vous avez tout ce qu'il faut."
+  },
+  "recordatorio": {
+    "email": "Votre adresse e-mail",
+    "fecha": "Date",
+    "consentimiento": "J'accepte de recevoir ces rappels par e-mail. Nous gardons seulement votre adresse e-mail et cette date, et vous pouvez vous désinscrire dans chaque e-mail.",
+    "boton": "Activer les rappels",
+    "avisos": "Nous vous écrirons :",
+    "diasAntes": "{n} avant",
+    "diasDespues": "{n} après",
+    "elDia": "le jour même",
+    "ok": "Nous vous avons envoyé un e-mail. Cliquez sur le lien pour confirmer les rappels.",
+    "error": "Impossible d'enregistrer. Vérifiez l'adresse e-mail et la date, puis réessayez.",
+    "soloSuscriptores": "Les rappels de ce guide sont réservés aux abonnés."
+  },
+  "precios": {
+    "titulo": "Tarifs",
+    "subtitulo": "Gratuit : le guide complet de l'empadronamiento et le résumé de tous les guides.",
+    "suscripcion": "Abonnement mensuel",
+    "suscripcionTexto": "Tous les guides complets, les listes de vérification et les rappels. Annulez quand vous voulez depuis votre compte.",
+    "pack": "Pack 12 mois",
+    "packTexto": "Un seul paiement, sans renouvellement automatique. Idéal pour le renouvellement de votre carte.",
+    "incluye": [
+      "Les 8 guides complets dans votre langue",
+      "Listes de vérification interactives",
+      "Rappels des délais par e-mail"
+    ],
+    "pagar": "Payer par carte",
+    "desistimiento": "Je veux accéder tout de suite au contenu numérique et j'accepte que, une fois l'accès commencé, je perds le droit de rétractation de 14 jours.",
+    "condiciones": "J'ai lu les conditions de vente.",
+    "pruebaStripe": "Paiement sécurisé avec Stripe. Actuellement en mode test : aucun montant réel n'est débité.",
+    "noAsesoria": "Ce n'est pas un conseil juridique ni un service qui fait les démarches à votre place : c'est de l'information publique, organisée et expliquée.",
+    "marcaCasillas": "Cochez les deux cases pour continuer.",
+    "errorPago": "Impossible d'ouvrir le paiement. Réessayez dans quelques minutes.",
+    "gratisTitulo": "Gratuit, sans inscription",
+    "gratisIncluye": [
+      "Le guide complet de l'empadronamiento, avec liste et rappels",
+      "Le résumé, les données clés et les sources des 8 guides",
+      "Le sélecteur « Par où commencer ? »"
+    ],
+    "pagoTitulo": "Avec abonnement ou pack",
+    "iva": "TVA incluse",
+    "cancela": "Résiliez en un clic depuis « Mon compte ». Sans engagement.",
+    "sinRenovacion": "Un seul paiement. Pas de renouvellement automatique.",
+    "porMes": "par mois"
+  },
+  "acceso": {
+    "titulo": "Récupérer l'accès",
+    "texto": "Saisissez l'adresse e-mail avec laquelle vous avez payé et nous vous enverrons un lien pour vous connecter sur cet appareil.",
+    "boton": "Envoyer le lien",
+    "enviado": "Si cette adresse e-mail a un abonnement ou un pack actif, vous recevrez un lien dans quelques minutes.",
+    "graciasTitulo": "Merci ! Vous avez maintenant accès",
+    "graciasTexto": "Tous les guides sont débloqués sur cet appareil. Pour vous connecter depuis un autre appareil, utilisez « Récupérer l'accès » avec votre adresse e-mail.",
+    "comprobando": "Vérification du paiement…",
+    "pagoNoConfirmado": "Nous ne voyons pas encore le paiement confirmé. Attendez une minute et rechargez la page."
+  },
+  "cuenta": {
+    "titulo": "Mon compte",
+    "sinSesion": "Vous n'êtes pas connecté sur cet appareil.",
+    "plan": "Formule",
+    "hasta": "Accès jusqu'au",
+    "suscripcion": "Abonnement mensuel",
+    "pack": "Pack 12 mois",
+    "sinPlan": "Aucune formule active",
+    "cancelar": "Annuler l'abonnement",
+    "canceladaOk": "Abonnement annulé. Vous gardez l'accès jusqu'à la fin de la période payée.",
+    "salir": "Se déconnecter de cet appareil",
+    "borrar": "Pour supprimer toutes vos données, écrivez à"
+  },
+  "preguntas": {
+    "titulo": "Questions fréquentes sur les démarches",
+    "respuestaCorta": "Réponse courte",
+    "guiaRelacionada": "Guide étape par étape",
+    "masPreguntas": "Plus de questions"
+  },
+  "aviso": {
+    "corto": "Informations générales issues de sources officielles. Ce n'est pas un conseil juridique.",
+    "largo": "Nuevo en España propose des informations publiques issues de sources officielles, citées et datées. Ce n'est pas un conseil juridique, le site ne prend pas de rendez-vous (cita previa) et ne fait aucune démarche au nom de quelqu'un. Les règles changent : vérifiez toujours la source officielle indiquée en lien. Pour votre cas précis, consultez un avocat ou une association d'accueil gratuite."
+  },
+  "pie": {
+    "avisoLegal": "Mentions légales",
+    "privacidad": "Confidentialité",
+    "cookies": "Cookies",
+    "condiciones": "Conditions de vente",
+    "contacto": "Contact",
+    "sello": "Fait à Lleida · Prix clair · Résiliable en un clic"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirmez vos rappels pour {guia}",
+    "confirmarTexto": "Cliquez sur ce lien pour activer les rappels du guide « {guia} » :",
+    "avisoAsunto": "Rappel : {guia}",
+    "accesoAsunto": "Votre lien pour vous connecter à Nuevo en España",
+    "accesoTexto": "Cliquez sur ce lien pour vous connecter sur cet appareil. Il expire dans 30 minutes :",
+    "baja": "Me désinscrire de ces rappels",
+    "abrirGuia": "Ouvrir le guide"
+  },
+  "comun": {
+    "volver": "Retour",
+    "enviar": "Envoyer",
+    "cerrar": "Fermer",
+    "inicio": "Accueil"
+  },
+  "oferta": {
+    "titulo": "Empadronamiento fait : et maintenant ?",
+    "texto": "Ensuite, il y a souvent la carte de santé, le numéro de Sécurité sociale et, en 2027, le renouvellement ou la modification de votre autorisation. Débloquez les 8 guides complets, avec leur liste et leurs rappels.",
+    "boton": "Débloquer les 8 guides",
+    "precio": "4,99 €/mois, résiliable en un clic · ou 19,90 € pour 12 mois"
+  },
+  "recuperacion": {
+    "texto": "Vous n'avez pas terminé votre paiement. Vous pouvez le reprendre maintenant, en une minute.",
+    "boton": "Reprendre le paiement",
+    "cerrar": "Plus tard"
+  }
+}

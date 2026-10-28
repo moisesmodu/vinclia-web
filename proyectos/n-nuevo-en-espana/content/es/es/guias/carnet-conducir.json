@@ -1,0 +1,130 @@
+{
+  "slug": "carnet-conducir",
+  "titulo": "Carnet de conducir: canje o examen teórico",
+  "resumen": "Si vives en España con un permiso de conducir de otro país, tienes dos caminos. Si tu permiso es de la UE/EEE, sigue valiendo mientras esté en vigor. Si es de un país con convenio con España (por ejemplo Marruecos, Colombia, Ecuador, Perú, Argentina, Bolivia o Ucrania), puedes canjearlo sin examen por la tasa 2.3 (28,87 €), y solo puedes conducir con él durante 6 meses desde que tienes residencia legal. Si tu país no tiene convenio, tienes que sacar el permiso B en España: tasa 2.1 (94,05 €), examen teórico y examen práctico.",
+  "paraQuien": "Para personas extranjeras que viven en España (residencia normal) y quieren conducir un coche (permiso B). No cubre permisos profesionales de camión o autobús (C y D), que tienen pruebas adicionales, ni a turistas de paso.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Permiso de la UE/EEE", "valor": "Válido mientras esté en vigor; el canje es voluntario" },
+    { "etiqueta": "Permiso de país con convenio", "valor": "Válido 6 meses desde tu residencia legal; después, canje" },
+    { "etiqueta": "Permiso de país sin convenio", "valor": "Válido 6 meses; después, hay que sacar el permiso español" },
+    { "etiqueta": "Tasa de canje (2.3)", "valor": "28,87 € (comprueba el importe vigente)" },
+    { "etiqueta": "Tasa de examen (2.1)", "valor": "94,05 €: da derecho a 2 convocatorias (comprueba el importe vigente)" },
+    { "etiqueta": "Examen teórico", "valor": "Test de 30 preguntas; confirma en la DGT los fallos permitidos" },
+    { "etiqueta": "Idiomas del teórico B", "valor": "Castellano, catalán, euskera, gallego, valenciano, inglés, francés y alemán; también lectura fácil" },
+    { "etiqueta": "Dónde", "valor": "Jefatura Provincial de Tráfico (DGT), con cita previa o canje digital" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Mira de qué país es tu permiso",
+      "texto": "Si es de un país de la UE o del EEE (Islandia, Liechtenstein, Noruega), puedes conducir con él mientras esté en vigor. Si es de otro país, busca tu país en la lista oficial de la DGT 'Países con convenio de canjes'. Si tu país no está en la lista, tu permiso no se puede canjear y tienes que sacar el permiso B en España (paso 6)."
+    },
+    {
+      "titulo": "Controla el plazo de 6 meses",
+      "texto": "Un permiso de un país fuera de la UE/EEE solo vale para conducir en España durante 6 meses desde que tienes residencia normal aquí (o desde tu entrada legal, si no tienes residencia). Después de esos 6 meses ya no puedes conducir con él, aunque esté en vigor. Empieza el canje o el examen con tiempo, porque las citas pueden tardar."
+    },
+    {
+      "titulo": "Si tu permiso es de la UE/EEE: decide si haces algo",
+      "texto": "No es obligatorio canjearlo. Puedes hacer un canje voluntario (tasa 2.3, 28,87 €) o una inscripción en la DGT (tasa 4.1, 8,67 €), que no cambia tu permiso. Cuando caduque, si vives en España, tienes que renovarlo aquí (tasa 4.3, 24,58 €) y recibes un permiso español. Si tu permiso no caduca o dura más de 15 años, tienes que renovarlo en España cuando lleves 2 años de residencia."
+    },
+    {
+      "titulo": "Si tu país tiene convenio: pasa el reconocimiento médico",
+      "texto": "Antes del canje necesitas un informe de aptitud psicofísica de un Centro de Reconocimiento de Conductores. Para canjear solo permisos de moto y coche (A y B) se pide el del grupo I. El precio lo fija cada centro. Comprueba también que tu permiso está en vigor y que lo sacaste antes de vivir en España: si lo sacaste en tu país cuando ya eras residente legal aquí, no se puede canjear."
+    },
+    {
+      "titulo": "Pide el canje en la sede de la DGT",
+      "texto": "La DGT tiene un canje digital con Cl@ve o certificado digital. En muchos países (por ejemplo Marruecos, Colombia, Ecuador, Bolivia) primero se pide la verificación del permiso al país que lo expidió; cuando responde, la DGT te envía por correo un localizador para continuar. En otros países (por ejemplo Argentina, Perú, Uruguay, Reino Unido) puedes pedir el canje directamente. Si no usas la vía digital, pide cita previa en la sede de la DGT o en el 060."
+    },
+    {
+      "titulo": "Entrega tu permiso original en la Jefatura",
+      "texto": "Tienes que ir una vez a la Jefatura Provincial de Tráfico a entregar tu permiso original. Allí te dan una autorización provisional para conducir y el permiso español te llega por correo. Paga la tasa 2.3 antes de ir. Algunos países piden traducción oficial del permiso (por ejemplo Corea del Sur o Japón): mira la ficha de tu país en la sede."
+    },
+    {
+      "titulo": "Si tu país no tiene convenio: prepara el teórico",
+      "texto": "Tienes que sacar el permiso B como cualquier persona en España. No es obligatorio ir a una autoescuela para el examen teórico: puedes presentarte 'por libre' con la solicitud oficial. Practica con los test gratuitos de la DGT en internet, que usan preguntas reales y se pueden hacer en varios idiomas. La DGT también tiene un manual del permiso B en lectura fácil."
+    },
+    {
+      "titulo": "Paga la tasa 2.1 y pide el examen",
+      "texto": "La tasa de examen 2.1 cuesta 94,05 € y te da derecho a dos convocatorias. Si suspendes dos veces, tienes que pedir el examen otra vez y pagar otra tasa. En la solicitud eliges el idioma del examen teórico: castellano, lenguas cooficiales, inglés, francés o alemán. No hemos encontrado en la DGT examen en árabe, rumano, chino u otros idiomas."
+    },
+    {
+      "titulo": "Haz el examen teórico",
+      "texto": "Es un test de 30 preguntas. Un material antiguo de la DGT dice que se aprueba con 3 fallos como máximo; confirma el criterio actual en la web de la DGT. Si apruebas, el aprobado te vale durante 2 años para hacer el examen práctico."
+    },
+    {
+      "titulo": "Haz las prácticas y el examen práctico",
+      "texto": "Para el examen de circulación necesitas un coche con doble mando, por eso lo habitual es hacer las clases prácticas y el examen con una autoescuela. Cuando apruebas, recibes una autorización provisional y después el permiso español por correo."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Permiso de conducir extranjero original y en vigor", "nota": "Para el canje se entrega en la Jefatura." },
+    { "nombre": "TIE, NIE o certificado de registro de ciudadano de la UE", "nota": "Sirve para acreditar tu residencia en España." },
+    { "nombre": "Pasaporte o documento de identidad", "nota": "Original en vigor." },
+    { "nombre": "Informe de aptitud psicofísica", "nota": "De un Centro de Reconocimiento de Conductores. Grupo I para moto y coche." },
+    { "nombre": "Fotografía actual", "nota": "Comprueba en la sede si la necesitas o si el centro de reconocimiento la envía." },
+    { "nombre": "Justificante de pago de la tasa", "nota": "Tasa 2.3 para canje sin pruebas; tasa 2.1 para examen." },
+    { "nombre": "Formulario oficial de solicitud", "nota": "Se descarga en la sede de la DGT (canje o examen)." },
+    { "nombre": "Traducción oficial del permiso", "nota": "Solo si la ficha de tu país la pide (por ejemplo Corea del Sur o Japón)." },
+    { "nombre": "Localizador de verificación", "nota": "Solo en el canje digital de países que necesitan verificación previa." },
+    { "nombre": "Cl@ve o certificado digital", "nota": "Solo si haces el canje por internet." }
+  ],
+  "plazos": [
+    { "texto": "Un permiso de fuera de la UE/EEE vale para conducir en España como máximo 6 meses desde que tienes residencia normal aquí (Reglamento General de Conductores, art. 21)." },
+    { "texto": "Un permiso de la UE/EEE vale mientras esté en vigor. Si no caduca o dura más de 15 años (grupo 1), tienes que renovarlo en España a los 2 años de residencia." },
+    { "texto": "La renovación de un permiso UE/EEE se puede pedir desde 3 meses antes de que caduque." },
+    { "texto": "La tasa de examen (2.1) da derecho a 2 convocatorias. El aprobado de una prueba se guarda 2 años." },
+    { "texto": "En el canje, la DGT entrega una autorización provisional y el permiso definitivo llega por correo (unas 6 semanas en el canje UE/EEE)." }
+  ],
+  "tasas": [
+    { "concepto": "Canje de permiso sin pruebas adicionales (UE/EEE o país con convenio, permisos A y B)", "importe": "28,87 €", "modelo": "Tasa DGT 2.3", "nota": "Importe publicado en la sede de la DGT. Comprueba el vigente antes de pagar." },
+    { "concepto": "Examen para obtener el permiso (o canje con pruebas, como C y D)", "importe": "94,05 €", "modelo": "Tasa DGT 2.1", "nota": "Da derecho a dos convocatorias. Comprueba el importe vigente en la sede." },
+    { "concepto": "Inscripción de permiso UE/EEE (no cambia tu permiso)", "importe": "8,67 €", "modelo": "Tasa DGT 4.1", "nota": "Opcional." },
+    { "concepto": "Renovación de permiso UE/EEE en España", "importe": "24,58 €", "modelo": "Tasa DGT 4.3" },
+    { "concepto": "Informe de aptitud psicofísica", "importe": "Variable", "modelo": "Lo cobra el Centro de Reconocimiento de Conductores", "nota": "No es una tasa de la DGT." }
+  ],
+  "errores": [
+    "Pensar que puedes conducir siempre con tu permiso extranjero. Si no es de la UE/EEE, deja de valer en España a los 6 meses de tener residencia, aunque siga en vigor.",
+    "Confundir las tasas: el canje sin pruebas es la tasa 2.3 (28,87 €), no la 4.1. La 4.1 (8,67 €) es para inscribir un permiso UE/EEE.",
+    "Pedir el canje con un permiso que sacaste en tu país cuando ya vivías legalmente en España. Ese permiso no se puede canjear.",
+    "Dejar el canje para el último mes. La verificación con tu país y la cita pueden tardar semanas; empieza en cuanto tengas tu TIE.",
+    "Anular la cita de canje sin pensarlo: solo puedes tener una cita de canje a la vez y anularla obliga a empezar de nuevo, incluida la verificación.",
+    "Creer que debes pagar una autoescuela para el teórico. Puedes presentarte por libre y practicar con los test gratuitos de la DGT.",
+    "Elegir un idioma de examen que no existe. Para el permiso B solo hay castellano, lenguas cooficiales, inglés, francés y alemán (y lectura fácil)."
+  ],
+  "checklist": [
+    { "id": "pais-convenio", "texto": "He comprobado si mi país está en la lista de convenios de canje de la DGT" },
+    { "id": "fecha-residencia", "texto": "Sé la fecha en la que empezó mi residencia legal y cuándo se cumplen 6 meses" },
+    { "id": "doc-permiso", "texto": "Tengo mi permiso extranjero original y en vigor" },
+    { "id": "doc-tie", "texto": "Tengo mi TIE, NIE o certificado de registro UE" },
+    { "id": "doc-psicotecnico", "texto": "Tengo el informe de aptitud psicofísica del centro de reconocimiento" },
+    { "id": "doc-traduccion", "texto": "He mirado si mi país necesita traducción oficial del permiso" },
+    { "id": "tasa-pagada", "texto": "He pagado la tasa correcta (2.3 para canje, 2.1 para examen)" },
+    { "id": "solicitud-canje", "texto": "He pedido la verificación, el canje digital o la cita previa en la sede de la DGT" },
+    { "id": "entrega-original", "texto": "He entregado el permiso original en la Jefatura y tengo la autorización provisional" },
+    { "id": "test-dgt", "texto": "He practicado con los test gratuitos de la DGT (si hago el examen)" },
+    { "id": "idioma-examen", "texto": "He elegido el idioma del examen teórico en la solicitud" }
+  ],
+  "recordatorio": {
+    "pregunta": "¿Desde qué fecha tienes residencia legal en España?",
+    "avisos": [
+      { "dias": 120, "texto": "Han pasado 4 meses. Si tu permiso no es de la UE/EEE, solo te quedan unos 2 meses para conducir con él. Empieza ya el canje o el examen." },
+      { "dias": 150, "texto": "Queda 1 mes para que tu permiso extranjero deje de valer en España. Comprueba si ya tienes la verificación o la cita de canje." },
+      { "dias": 170, "texto": "En unos días se cumplen 6 meses. Después no puedes conducir con tu permiso extranjero (salvo si es de la UE/EEE) hasta tener el permiso español o la autorización provisional." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Permiso del Reino Unido", "texto": "Desde 2023 hay un acuerdo con el Reino Unido. Los residentes en España pueden canjear su permiso británico sin examen y sin verificación previa, dentro del plazo de 6 meses desde la residencia." },
+    { "titulo": "Permisos de camión o autobús (C y D)", "texto": "El canje de permisos profesionales pide pruebas teóricas y/o prácticas según el país, el informe médico del grupo II y la tasa 2.1. No se pueden canjear por la vía digital." },
+    { "titulo": "Examen en lengua cooficial", "texto": "En Cataluña e Illes Balears puedes hacer el teórico en catalán; en el País Vasco y Navarra, en euskera; en Galicia, en gallego; y en la Comunitat Valenciana, en valenciano." }
+  ],
+  "fuentes": [
+    { "nombre": "DGT – Países con convenio de canjes", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/permisos-extranjeros-y-de-fuerzas-y-cuerpos-de-seguridad/canjes-de-permisos/paises-con-convenio-de-canjes/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Canje de permisos de países extracomunitarios (requisitos, tasas 2.3 y 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/extracomunitarios/canje-paises-G4-CL-CP/index.html", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Nota de prensa: servicio de canje digital de permisos de conducción", "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20250520-dgt-servicio-de-canje-digital-de-permisos-de-conduccion/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Canje, inscripción, renovación y sustitución de permisos de la UE y EEE", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 818/2009, Reglamento General de Conductores (BOE, texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-9481", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Requisitos, preparación y presentación a examen", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Solicitud de examen por libre (tasa 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-y-gestion-de-permisos/solicitud-de-prueba-de-aptitud-de-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Solicitud de cita previa", "url": "https://sede.dgt.gob.es/es/otros-tramites/cita-previa", "consultado": "2026-10-28" }
+  ]
+}

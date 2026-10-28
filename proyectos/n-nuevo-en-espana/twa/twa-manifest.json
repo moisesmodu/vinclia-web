@@ -1,0 +1,21 @@
+{
+  "packageId": "app.nuevoenespana.twa",
+  "host": "nuevoenespana.app",
+  "name": "Nuevo en España · Guías de trámites",
+  "launcherName": "Nuevo en España",
+  "display": "standalone",
+  "themeColor": "#c2410c",
+  "navigationColor": "#c2410c",
+  "backgroundColor": "#faf8f4",
+  "enableNotifications": false,
+  "startUrl": "/?origen=twa",
+  "iconUrl": "https://nuevoenespana.app/iconos/icono-512.png",
+  "maskableIconUrl": "https://nuevoenespana.app/iconos/maskable-512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": { "path": "./android.keystore", "alias": "nuevoenespana" },
+  "generatorApp": "bubblewrap-cli",
+  "fallbackType": "customtabs",
+  "features": {},
+  "minSdkVersion": 21
+}
