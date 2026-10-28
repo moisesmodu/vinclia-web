@@ -65,7 +65,7 @@ OUR RULES
 
 For your specific case, contact a lawyer or a free support organisation for migrants.
 
-Contact: hola@nuevoenespana.app
+Contact: hola@numimates.com
 ```
 
 ## Notes for the team (not part of the listing)

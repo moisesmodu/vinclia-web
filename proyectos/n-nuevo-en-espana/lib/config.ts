@@ -34,6 +34,6 @@ export function titular() {
     nombre: process.env.LEGAL_NOM ?? config.titular.nombre,
     nif: process.env.LEGAL_NIF ?? config.titular.nif,
     domicilio: process.env.LEGAL_ADRECA ?? config.titular.domicilio,
-    correo: process.env.LEGAL_EMAIL ?? config.titular.correo
+    correo: process.env.LEGAL_EMAIL || config.titular.correo || "hola@numimates.com"
   };
 }

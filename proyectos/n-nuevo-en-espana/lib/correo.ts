@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import { config } from "./config";
+import { config, titular } from "./config";
 
 export type Correo = { para: string; asunto: string; texto: string; html: string; idioma?: string };
 
@@ -17,6 +17,7 @@ export async function enviar(c: Correo): Promise<boolean> {
   const { error } = await resend.emails.send({
     from: process.env.CORREO_REMITENTE ?? `${config.marca} <noreply@numimates.com>`,
     to: c.para,
+    replyTo: titular().correo, // hola@numimates.com hasta tener dominio propio (DESPLIEGUES.md §6)
     subject: c.asunto,
     text: c.texto,
     html: c.html
