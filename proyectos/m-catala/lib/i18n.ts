@@ -34,7 +34,7 @@ const d = {
     practica: {
       titol: 'Practicar', tipus: { buits: 'Buits normatius', transformacio: 'Transformació', castellanismes: 'Detectar castellanismes', dictat: 'Dictats amb àudio', lexic: 'Lèxic', repas: 'Repàs espaiat' } as Record<string, string>,
       tipusText: { buits: 'Pronoms, preposicions, verbs, accents.', transformacio: 'Reescriu la frase com et demanen.', castellanismes: 'Troba el calc i tria la forma genuïna.', dictat: 'Escolta i escriu. Treballa les grafies.', lexic: 'Precisió lèxica i parelles traïdores.', repas: 'El que vas fallar, just abans que ho oblidis.' } as Record<string, string>,
-      perque: 'Per què?', regla: 'Regla', exemples: 'Exemples', font: 'Font', correcte: 'Correcte', incorrecte: 'Incorrecte', respostaCorrecta: 'Resposta correcta', acceptades: 'També s\'accepta', escoltar: 'Escoltar', escoltarAltraVegada: 'Tornar a escoltar', escriuAqui: 'Escriu aquí', comprovar: 'Comprovar', seguent: 'Següent', acabar: 'Acabar', resultat: 'Resultat', encerts: 'encerts', pendents: (n: number) => `${n} pendents avui`, resAPendent: 'No tens res pendent. Fes una sessió de pràctica.', informar: 'Informar d\'un error', gracies: 'Gràcies! Ho revisem en menys de 24 hores.', limit: 'Amb el pla gratuït tens la minisessió diària i el repàs dels errors. Per a sessions completes, premium.', pista: 'Pista', senseVeu: 'El teu navegador no té veu en català: llegeix el text i escriu-lo igualment.', mostrarText: 'Mostrar el text',
+      perque: 'Per què?', regla: 'Regla', exemples: 'Exemples', font: 'Font', correcte: 'Correcte', incorrecte: 'Incorrecte', respostaCorrecta: 'Resposta correcta', acceptades: 'També s\'accepta', escoltar: 'Escoltar', escoltarAltraVegada: 'Tornar a escoltar', escriuAqui: 'Escriu aquí', comprovar: 'Comprovar', seguent: 'Següent', acabar: 'Acabar', resultat: 'Resultat', encerts: 'encerts', pendents: (n: number) => `${n} pendents avui`, resAPendent: 'No tens res pendent. Fes una sessió de pràctica.', informar: 'Informar d\'un error', reportarPlaceholder: 'Què hi ha malament', gracies: 'Gràcies! Ho revisem en menys de 24 hores.', limit: 'Amb el pla gratuït tens la minisessió diària i el repàs dels errors. Per a sessions completes, premium.', pista: 'Pista', senseVeu: 'El teu navegador no té veu en català: llegeix el text i escriu-lo igualment.', mostrarText: 'Mostrar el text',
     },
     mapa: { titol: 'Mapa de domini', text: 'Confiança per punt del programa oficial, de 0 a 100 %. L\'exercici del dia es tria pel pes de cada punt a l\'examen.', sense: 'Encara no hi ha dades: practica una mica.', confianca: 'confiança' },
     escriure: {
@@ -58,6 +58,17 @@ const d = {
     compte: { titol: 'El meu compte', pla: 'Pla', gratis: 'Gratuït', actiu: 'Premium actiu', fins: 'fins al', cancelar: 'Cancel·lar la renovació', cancelada: 'No es renovarà. Mantens l\'accés fins al', gestionar: 'Factures i targeta', reactivar: 'Reactivar', exportar: 'Exportar el meu historial', sortir: 'Sortir', pagat: 'Pagament fet. Gràcies!', demo: 'Pagament simulat (mode demo).', sincronitzat: 'Progrés sincronitzat.', passi: 'Passi de convocatòria actiu' },
     pie: { avis: 'Avís legal', privadesa: 'Privadesa', galetes: 'Galetes', condicions: 'Condicions de venda', contacte: 'Contacte', validesa: 'Prova de validesa', ia: 'Exercicis i correccions generats amb IA en català, validats amb LanguageTool (Softcatalà) i revisats per mostreig. No som cap administració pública.', guies: 'Guies' },
     contacte: { titol: 'Contacte', text: 'Escriu-nos i et responem en menys de 24 hores laborables.', email: 'Correu (opcional, per respondre\'t)', missatge: 'Missatge', enviar: 'Enviar', gracies: 'Rebut. Gràcies!' },
+    nou: {
+      ganxo: "Un de cada quatre candidats suspèn. Tu sabràs on ets abans de pagar la taxa.",
+      provaho: "Prova-ho ara amb una pregunta real de l'examen",
+      demoNota: 'Així és cada pregunta: respons, et corregeix a l\'instant i et cita la regla.',
+      seguentPas: 'Després, el diagnòstic complet: 12 minuts i la teva probabilitat d\'aprovar.',
+      sessioTitol: "La sessió d'avui", congelacionsRestants: (n: number) => `Et queden ${n} congelacions`, repasBuit: 'Cap error pendent', setmanaProva: 'Setmana de la prova', avuiEs: 'Avui',
+      resumBe: 'Bona feina. El que has fallat ja és a la cua de repàs: tornarà just abans que ho oblidis.', resumCap: 'Tot bé. Demà pujarem la dificultat.', probabilitatAra: 'Probabilitat ara', continuar: 'Continuar', errorsAvui: 'Errors d\'avui',
+      triaPla: 'Tria com vols pagar', mesBarat: 'el més triat', unPreu: 'Un preu. Tot inclòs.', quePagues: 'Què pagues i què no', comenca: 'Començar amb', diesGratis: '7 dies gratis, després', senseRenovacio: 'Sense renovació', perMes: 'al mes', perAny: "l'any",
+      tempsRestant: 'Temps', llegeix: 'Llegeix', escolta: 'Escolta', apteEstimat: 'Resultat estimat', comparteix: 'Comparteix', toqueixParaula: 'Toca una paraula marcada per veure-la',
+      iniciDiag: 'Comencem', blocDe: (n: number, t: number) => `Bloc ${n} de ${t}`, minutsAprox: (n: number) => `uns ${n} minuts`,
+    },
     comu: { carregant: 'Carregant…', error: 'Hi ha hagut un error. Torna-ho a provar.', tancar: 'Tancar', si: 'Sí', no: 'No', idioma: 'Castellano', minuts: 'min', premium: 'Premium', gratis: 'Gratis' },
   },
   es: {
@@ -91,7 +102,7 @@ const d = {
     practica: {
       titol: 'Practicar', tipus: { buits: 'Huecos normativos', transformacio: 'Transformación', castellanismes: 'Detectar castellanismos', dictat: 'Dictados con audio', lexic: 'Léxico', repas: 'Repaso espaciado' } as Record<string, string>,
       tipusText: { buits: 'Pronombres, preposiciones, verbos, acentos.', transformacio: 'Reescribe la frase como te piden.', castellanismes: 'Encuentra el calco y elige la forma genuina.', dictat: 'Escucha y escribe. Trabaja las grafías.', lexic: 'Precisión léxica y parejas traidoras.', repas: 'Lo que fallaste, justo antes de que lo olvides.' } as Record<string, string>,
-      perque: '¿Por qué?', regla: 'Regla', exemples: 'Ejemplos', font: 'Fuente', correcte: 'Correcto', incorrecte: 'Incorrecto', respostaCorrecta: 'Respuesta correcta', acceptades: 'También se acepta', escoltar: 'Escuchar', escoltarAltraVegada: 'Volver a escuchar', escriuAqui: 'Escribe aquí', comprovar: 'Comprobar', seguent: 'Siguiente', acabar: 'Terminar', resultat: 'Resultado', encerts: 'aciertos', pendents: (n: number) => `${n} pendientes hoy`, resAPendent: 'No tienes nada pendiente. Haz una sesión de práctica.', informar: 'Informar de un error', gracies: '¡Gracias! Lo revisamos en menos de 24 horas.', limit: 'Con el plan gratuito tienes la minisesión diaria y el repaso de errores. Para sesiones completas, premium.', pista: 'Pista', senseVeu: 'Tu navegador no tiene voz en catalán: lee el texto y escríbelo igualmente.', mostrarText: 'Mostrar el texto',
+      perque: '¿Por qué?', regla: 'Regla', exemples: 'Ejemplos', font: 'Fuente', correcte: 'Correcto', incorrecte: 'Incorrecto', respostaCorrecta: 'Respuesta correcta', acceptades: 'También se acepta', escoltar: 'Escuchar', escoltarAltraVegada: 'Volver a escuchar', escriuAqui: 'Escribe aquí', comprovar: 'Comprobar', seguent: 'Siguiente', acabar: 'Terminar', resultat: 'Resultado', encerts: 'aciertos', pendents: (n: number) => `${n} pendientes hoy`, resAPendent: 'No tienes nada pendiente. Haz una sesión de práctica.', informar: 'Informar de un error', reportarPlaceholder: 'Qué está mal', gracies: '¡Gracias! Lo revisamos en menos de 24 horas.', limit: 'Con el plan gratuito tienes la minisesión diaria y el repaso de errores. Para sesiones completas, premium.', pista: 'Pista', senseVeu: 'Tu navegador no tiene voz en catalán: lee el texto y escríbelo igualmente.', mostrarText: 'Mostrar el texto',
     },
     mapa: { titol: 'Mapa de dominio', text: 'Confianza por punto del programa oficial, de 0 a 100 %. El ejercicio del día se elige por el peso de cada punto en el examen.', sense: 'Aún no hay datos: practica un poco.', confianca: 'confianza' },
     escriure: {
@@ -115,6 +126,17 @@ const d = {
     compte: { titol: 'Mi cuenta', pla: 'Plan', gratis: 'Gratuito', actiu: 'Premium activo', fins: 'hasta el', cancelar: 'Cancelar la renovación', cancelada: 'No se renovará. Mantienes el acceso hasta el', gestionar: 'Facturas y tarjeta', reactivar: 'Reactivar', exportar: 'Exportar mi historial', sortir: 'Salir', pagat: 'Pago hecho. ¡Gracias!', demo: 'Pago simulado (modo demo).', sincronitzat: 'Progreso sincronizado.', passi: 'Pase de convocatoria activo' },
     pie: { avis: 'Aviso legal', privadesa: 'Privacidad', galetes: 'Cookies', condicions: 'Condiciones de venta', contacte: 'Contacto', validesa: 'Prueba de validez', ia: 'Ejercicios y correcciones generados con IA en catalán, validados con LanguageTool (Softcatalà) y revisados por muestreo. No somos ninguna administración pública.', guies: 'Guías' },
     contacte: { titol: 'Contacto', text: 'Escríbenos y te respondemos en menos de 24 horas laborables.', email: 'Correo (opcional, para responderte)', missatge: 'Mensaje', enviar: 'Enviar', gracies: 'Recibido. ¡Gracias!' },
+    nou: {
+      ganxo: 'Uno de cada cuatro candidatos suspende. Tú sabrás dónde estás antes de pagar la tasa.',
+      provaho: 'Pruébalo ahora con una pregunta real del examen',
+      demoNota: 'Así es cada pregunta: respondes, te corrige al instante y te cita la regla.',
+      seguentPas: 'Después, el diagnóstico completo: 12 minutos y tu probabilidad de aprobar.',
+      sessioTitol: 'La sesión de hoy', congelacionsRestants: (n: number) => `Te quedan ${n} congelaciones`, repasBuit: 'Ningún error pendiente', setmanaProva: 'Semana de la prueba', avuiEs: 'Hoy',
+      resumBe: 'Buen trabajo. Lo que has fallado ya está en la cola de repaso: volverá justo antes de que lo olvides.', resumCap: 'Todo bien. Mañana subimos la dificultad.', probabilitatAra: 'Probabilidad ahora', continuar: 'Continuar', errorsAvui: 'Errores de hoy',
+      triaPla: 'Elige cómo quieres pagar', mesBarat: 'el más elegido', unPreu: 'Un precio. Todo incluido.', quePagues: 'Qué pagas y qué no', comenca: 'Empezar con', diesGratis: '7 días gratis, después', senseRenovacio: 'Sin renovación', perMes: 'al mes', perAny: 'al año',
+      tempsRestant: 'Tiempo', llegeix: 'Lee', escolta: 'Escucha', apteEstimat: 'Resultado estimado', comparteix: 'Compartir', toqueixParaula: 'Toca una palabra marcada para verla',
+      iniciDiag: 'Empezamos', blocDe: (n: number, t: number) => `Bloque ${n} de ${t}`, minutsAprox: (n: number) => `unos ${n} minutos`,
+    },
     comu: { carregant: 'Cargando…', error: 'Ha habido un error. Vuelve a intentarlo.', tancar: 'Cerrar', si: 'Sí', no: 'No', idioma: 'Català', minuts: 'min', premium: 'Premium', gratis: 'Gratis' },
   },
 };

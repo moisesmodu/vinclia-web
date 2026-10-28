@@ -18,27 +18,25 @@ export default function Correccio({ idioma, r, text, regles, onReescriure }: { i
   }, [r, text]);
   const orientativa = Object.values(r.criteris).some((c) => c.orientativa);
   return (
-    <div className="grid gap-3">
-      <div className="tarjeta text-center">
-        <p className="text-sm text-suave">{d.nota}</p>
-        <p className="titulos mt-1 text-5xl font-bold">{r.nota.punts}<span className="text-2xl text-suave"> / {r.nota.max}</span></p>
-        <p className="mt-1 text-xs text-suave">{r.motor.includes('lt') ? d.motor.lt : d.motor.regles}{r.motor.includes('llm') ? ` + ${d.motor.llm}` : ''} · {(r.ms / 1000).toFixed(1)} s</p>
-        {orientativa ? <p className="mt-2 rounded-lg bg-ocre-claro p-2 text-xs text-ocre-oscuro">{d.senseLlm}</p> : null}
+    <div className="grid gap-6">
+      <div aria-live="polite">
+        <p className="text-[15px] text-secundari">{d.nota}</p>
+        <p className="num text-[56px] leading-none">{r.nota.punts}<span className="text-[26px] text-terciari">/{r.nota.max}</span></p>
+        <p className="mt-2 text-[13px] text-terciari">{r.motor.includes('lt') ? d.motor.lt : d.motor.regles}{r.motor.includes('llm') ? ` + ${d.motor.llm}` : ''} · {(r.ms / 1000).toFixed(1)} s</p>
+        {orientativa ? <p className="mt-3 rounded-[6px] bg-ocre-tenue p-3 text-[14px] text-ocre-fosc">{d.senseLlm}</p> : null}
       </div>
-      <div className="tarjeta">
-        <div className="grid gap-3">
-          {(Object.keys(r.criteris) as (keyof typeof r.criteris)[]).map((k) => <div key={k}><div className="flex items-center justify-between text-sm"><span className="font-semibold">{d.criteris[k]}{r.criteris[k].orientativa ? <span className="etiqueta ml-2">{d.orientativa}</span> : null}</span><span>{r.criteris[k].nota} / 10</span></div><div className="barra mt-1"><span style={{ width: `${r.criteris[k].nota * 10}%` }} /></div>{r.criteris[k].comentari ? <p className="mt-1 text-xs text-suave">{r.criteris[k].comentari}</p> : null}</div>)}
-        </div>
+      <div className="grid gap-4">
+        {(Object.keys(r.criteris) as (keyof typeof r.criteris)[]).map((k) => <div key={k}><div className="flex items-baseline justify-between text-[15px]"><span className="font-semibold">{d.criteris[k]}{r.criteris[k].orientativa ? <span className="xip ml-2">{d.orientativa}</span> : null}</span><span className="num">{r.criteris[k].nota}<span className="text-terciari">/10</span></span></div><div className="barra mt-1.5"><span style={{ width: `${r.criteris[k].nota * 10}%`, background: r.criteris[k].nota < 5 ? '#B9342E' : r.criteris[k].nota < 7 ? '#E0B23A' : '#7A8F3C' }} /></div>{r.criteris[k].comentari ? <p className="mt-1 text-[14px] text-secundari">{r.criteris[k].comentari}</p> : null}</div>)}
       </div>
       {r.prioritaris.length ? (
-        <div className="tarjeta">
+        <div className="regla">
           <p className="font-semibold">{d.errorsPrioritaris}</p>
-          <ol className="mt-2 space-y-3 text-sm">{r.prioritaris.map((e, i) => { const reg = regles?.[e.regla ?? '']; return <li key={i}><span className="rounded bg-[#FBE7E9] px-1 text-mal line-through">{e.fragment}</span> → <strong className="text-ok">{e.forma}</strong><p className="mt-1 text-suave">{e.explicacio}</p>{reg ? <a className="text-xs underline" href={reg.font.url} target="_blank" rel="noopener noreferrer">{reg.titol.ca} · {reg.font.nom}</a> : null}</li>; })}</ol>
-          {onReescriure ? <button type="button" className="boton-sec mt-3 w-full" onClick={onReescriure}>{d.reescriu}</button> : null}
+          <ol className="mt-3 space-y-3 text-[15px]">{r.prioritaris.map((e, i) => { const reg = regles?.[e.regla ?? '']; return <li key={i} className="grid grid-cols-[20px_1fr] gap-2"><span className="num text-ocre-fosc">{i + 1}</span><div><span className="text-vermell line-through decoration-2">{e.fragment}</span> → <strong className="text-oliva">{e.forma}</strong><p className="mt-1 text-secundari">{e.explicacio}</p>{reg ? <a className="text-[13px] underline" href={reg.font.url} target="_blank" rel="noopener noreferrer">{reg.titol.ca} · {reg.font.nom}</a> : null}</div></li>; })}</ol>
+          {onReescriure ? <button type="button" className="boton-sec mt-4 w-full bg-paper" onClick={onReescriure}>{d.reescriu}</button> : null}
         </div>
       ) : null}
-      {r.possibles.length ? <div className="tarjeta"><p className="font-semibold">{d.possibles}</p><ul className="mt-2 space-y-1 text-sm">{r.possibles.map((p, i) => <li key={i}><span className="rounded bg-ocre-claro px-1">{p.fragment}</span> <span className="text-suave">{p.dubte}</span></li>)}</ul></div> : null}
-      <div className="tarjeta"><p className="text-sm leading-relaxed whitespace-pre-wrap">{marcat.map((p, i) => p.e ? <span key={i} className="rounded bg-[#FBE7E9] text-mal" title={`${p.e.forma}`}>{p.t}</span> : p.p ? <span key={i} className="rounded bg-ocre-claro" title="?">{p.t}</span> : <span key={i}>{p.t}</span>)}</p>{r.resum ? <p className="mt-3 border-t border-[#EADFCF] pt-3 text-sm">{r.resum}</p> : null}</div>
+      {r.possibles.length ? <div><p className="font-semibold">{d.possibles}</p><ul className="mt-2 space-y-1 text-[15px]">{r.possibles.map((p, i) => <li key={i}><span className="rounded bg-ocre-tenue px-1">{p.fragment}</span> <span className="text-secundari">{p.dubte}</span></li>)}</ul></div> : null}
+      <div className="full"><p className="full-cap">{t(idioma).nou.toqueixParaula}</p><p className="mt-3 text-[16px] leading-relaxed whitespace-pre-wrap">{marcat.map((p, i) => p.e ? <span key={i} className="rounded bg-vermell-tenue text-vermell underline decoration-vermell decoration-2 underline-offset-2" title={`${p.e.forma}`} tabIndex={0}>{p.t}</span> : p.p ? <span key={i} className="rounded bg-ocre-tenue" title="?">{p.t}</span> : <span key={i}>{p.t}</span>)}</p>{r.resum ? <p className="linia mt-4 pt-3 text-[15px]">{r.resum}</p> : null}</div>
     </div>
   );
 }

@@ -10,12 +10,11 @@ import { pendents } from '@/lib/motor/repas';
 import { confiancaPunts } from '@/lib/motor/diagnostic';
 
 type Props = { idioma: Idioma; examens: Record<string, Examen>; convocatories: Convocatoria[]; punts: Punt[]; sons: So[] };
-const fmt = (iso: string, idioma: Idioma) => new Date(iso + 'T12:00:00').toLocaleDateString(idioma === 'ca' ? 'ca-ES' : 'es-ES', { day: 'numeric', month: 'short' });
+const fmt = (iso: string, idioma: Idioma, o: Intl.DateTimeFormatOptions) => new Intl.DateTimeFormat(idioma === 'ca' ? 'ca-ES' : 'es-ES', o).format(new Date(iso + 'T12:00:00'));
 
-/** «Avui»: una sola tasca. Probabilitat, dies per a la prova, finestra d'inscripció, ratxa amb congelacions, la sessió del pla (40/40/20) i la
- *  minisessió de 2 minuts. Pantalla de compromís (7, 14, 30 dies, sense opció preseleccionada) el primer dia. */
+/** Avui: una sola acció. Capçalera amb probabilitat, ratxa i dies; la sessió del dia com a full; la resta, en una línia. */
 export default function Avui({ idioma, examens, convocatories, punts }: Props) {
-  const d = t(idioma).avui;
+  const d = t(idioma).avui; const n = t(idioma).nou;
   const [estat, actualitzar] = useEstat();
   const [premium, setPremium] = useState<boolean | null>(null);
   const [compromisSel, setCompromisSel] = useState<7 | 14 | 30 | null>(null);
@@ -33,11 +32,12 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
     }
   }, [estat, examens, convocatories, actualitzar]);
 
-  if (!estat) return <p className="text-suave">{t(idioma).comu.carregant}</p>;
-  if (!estat.perfil) return <div className="tarjeta"><p>{d.senseDiag}</p><Link className="boton mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
-  if (!estat.diagnostic) return <div className="tarjeta"><p>{d.senseDiag}</p><Link className="boton mt-4" href={`/${idioma}/diagnostic`}>{t(idioma).diag.titol}</Link></div>;
+  if (!estat) return <p className="text-terciari">{t(idioma).comu.carregant}</p>;
+  if (!estat.perfil) return <div className="full"><p className="text-[17px]">{d.senseDiag}</p><Link className="boton-ocre mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
+  if (!estat.diagnostic) return <div className="full"><p className="text-[17px]">{d.senseDiag}</p><Link className="boton-ocre mt-4" href={`/${idioma}/diagnostic`}>{t(idioma).diag.titol}</Link></div>;
 
   const perfil = estat.perfil;
+  const ex = examens[perfil.nivell];
   const conv = convocatories.find((c) => c.id === perfil.convocatoria);
   const ratxa = ratxaActual(estat.ratxa);
   const sessio = sessioDe(estat.pla);
@@ -49,42 +49,53 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
   const nPendents = pendents(estat.targetes).length;
   const compromis = progresCompromis(estat.ratxa);
   const pFeble = confiancaPunts(estat.respostes, punts.filter((p) => p.nivells.includes(perfil.nivell))).filter((c) => c.n > 0).sort((a, b) => a.confianca - b.confianca)[0];
+  const nomPunt = (id: string) => punts.find((p) => p.id === id)?.nom[idioma] ?? id;
 
   if (!estat.ratxa.compromisVist) return (
-    <div className="tarjeta">
-      <h1 className="text-2xl font-bold">{d.compromis}</h1>
-      <p className="mt-2 text-sm text-suave">{d.compromisText}</p>
-      <div className="mt-4 grid grid-cols-3 gap-2">{([7, 14, 30] as const).map((n, i) => <button key={n} type="button" className={`opcio justify-center ${compromisSel === n ? 'border-nit bg-ocre-claro ring-1 ring-nit' : ''}`} onClick={() => setCompromisSel(n)}>{d.compromisDies[i]}</button>)}</div>
-      <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => actualitzar((e) => ({ ...e, ratxa: { ...e.ratxa, compromisVist: true } }))}>{d.mesTard}</button><button type="button" className="boton flex-1" disabled={!compromisSel} onClick={() => actualitzar((e) => ({ ...e, ratxa: { ...e.ratxa, compromisVist: true, compromis: { dies: compromisSel!, inici: avui } } }))}>{d.compromisBoto}</button></div>
+    <div>
+      <h1>{d.compromis}</h1>
+      <p className="mt-3 max-w-[44ch] text-[17px] leading-relaxed text-secundari">{d.compromisText}</p>
+      <div className="mt-6 grid grid-cols-3 gap-2" role="radiogroup" aria-label={d.compromis}>{([7, 14, 30] as const).map((k, i) => <button key={k} type="button" role="radio" aria-checked={compromisSel === k} className={`opcio justify-center py-5 ${compromisSel === k ? 'opcio-sel' : ''}`} onClick={() => setCompromisSel(k)}><span className="num text-[26px]">{k}</span><span className="sr-only">{d.compromisDies[i]}</span></button>)}</div>
+      <p className="mt-1 text-center text-[13px] text-terciari">{d.dies}</p>
+      <div className="mt-6 flex gap-2"><button type="button" className="boton-sec" onClick={() => actualitzar((e) => ({ ...e, ratxa: { ...e.ratxa, compromisVist: true } }))}>{d.mesTard}</button><button type="button" className="boton-ocre flex-1" disabled={!compromisSel} onClick={() => actualitzar((e) => ({ ...e, ratxa: { ...e.ratxa, compromisVist: true, compromis: { dies: compromisSel!, inici: avui } } }))}>{d.compromisBoto}</button></div>
     </div>
   );
 
-  return (
-    <div className="grid gap-3">
-      <div className="grid grid-cols-3 gap-2 text-center">
-        <div className="tarjeta px-2 py-3"><p className="text-[11px] text-suave">{d.probabilitat}</p><p className="titulos text-2xl font-bold">{estat.diagnostic.probabilitat} %</p></div>
-        <div className="tarjeta px-2 py-3"><p className="text-[11px] text-suave">{d.ratxa}</p><p className="titulos text-2xl font-bold">{ratxa.dies} <span className="text-sm font-normal">{d.dies}</span></p><p className="text-[10px] text-suave">{d.congelacions(2 - ratxa.congelacionsMes)}</p></div>
-        <div className="tarjeta px-2 py-3"><p className="text-[11px] text-suave">{perfil.nivell}{conv ? ` · ${fmt(conv.prova, idioma)}` : ''}</p><p className="titulos text-2xl font-bold">{diesProva ?? '—'}</p><p className="text-[10px] text-suave">{diesProva !== null ? d.diesExamen(diesProva).replace(/^\d+ /, '') : ''}</p></div>
-      </div>
-      {insc.estat === 'oberta' ? <div className="rounded-xl bg-[#FBE7E9] p-3 text-sm font-semibold text-mal">{d.inscripcioOberta} {conv?.inscripcio ? d.inscripcio(fmt(conv.inscripcio.inici, idioma), fmt(conv.inscripcio.fi, idioma)) : ''} · <a className="underline" href={conv?.url} target="_blank" rel="noopener noreferrer">{conv?.organisme.toUpperCase()}</a></div> : null}
-      {insc.estat === 'abans' && insc.dies <= 21 ? <div className="rounded-xl bg-ocre-claro p-3 text-sm">{d.inscripcioAviat(insc.dies)} {conv?.inscripcio ? d.inscripcio(fmt(conv.inscripcio.inici, idioma), fmt(conv.inscripcio.fi, idioma)) : ''}</div> : null}
-      {compromis ? <div className="tarjeta py-3"><div className="flex items-center justify-between text-sm"><span>{d.compromis.replace('?', '')}: {compromis.total} {d.dies}</span><span>{compromis.fets}/{compromis.total}</span></div><div className="barra mt-2"><span style={{ width: `${(100 * compromis.fets) / compromis.total}%` }} /></div></div> : null}
+  const blocNom = (b: { tipus: string; area: string }) => b.tipus === 'repas' ? (nPendents ? `${d.repas} · ${nPendents}` : n.repasBuit) : b.tipus === 'feble' ? (pFeble ? nomPunt(pFeble.punt) : ex.arees.find((a) => a.id === b.area)?.nom[idioma] ?? b.area) : (b.area === 'escrit' ? t(idioma).nav.escriure : t(idioma).nav.oral);
+  const titolSessio = sessio?.tipus === 'minisimulacre' ? d.minisimulacre : sessio?.tipus === 'simulacre' ? t(idioma).simulacre.titol : n.sessioTitol;
+  const hrefPrimari = sessio?.tipus === 'minisimulacre' || sessio?.tipus === 'simulacre' ? `/${idioma}/simulacre` : premium ? `/${idioma}/practica/sessio` : `/${idioma}/practica/mini`;
 
-      <div className="tarjeta">
-        <div className="flex items-center justify-between"><h2 className="text-lg font-bold">{sessio?.tipus === 'minisimulacre' ? d.minisimulacre : sessio?.tipus === 'simulacre' ? t(idioma).simulacre.titol : d.sessio(sessio?.minuts ?? perfil.minuts)}</h2>{feta ? <span className="etiqueta">✓ {d.feta}</span> : null}</div>
-        {sessio?.tipus === 'normal' || !sessio ? (
-          <ul className="mt-3 space-y-2 text-sm">
-            {(sessio?.blocs ?? []).map((b, i) => <li key={i} className="flex items-center justify-between"><span>{b.tipus === 'repas' ? `${d.repas} (${nPendents})` : b.tipus === 'feble' ? `${d.feble}: ${examens[perfil.nivell].arees.find((a) => a.id === b.area)?.nom[idioma] ?? b.area}${pFeble ? ` · ${punts.find((p) => p.id === pFeble.punt)?.nom[idioma]}` : ''}` : `${d.produccio}: ${b.area === 'escrit' ? t(idioma).nav.escriure : t(idioma).nav.oral}`}</span><span className="text-suave">{b.minuts} {t(idioma).comu.minuts}</span></li>)}
-          </ul>
-        ) : null}
-        {premium === false && sessio?.tipus === 'normal' ? <p className="mt-3 rounded-lg bg-ocre-claro p-3 text-sm">{d.bloquejat} <Link className="font-semibold underline" href={`/${idioma}/preus`}>{d.veurePreus}</Link></p> : null}
-        <div className="mt-4 grid gap-2 sm:grid-cols-2">
-          {sessio?.tipus === 'minisimulacre' || sessio?.tipus === 'simulacre' ? <Link className="boton-ocre" href={`/${idioma}/simulacre`}>{d.comencar}</Link> : premium ? <Link className="boton-ocre" href={`/${idioma}/practica/sessio`}>{d.comencar}</Link> : <Link className="boton-ocre" href={`/${idioma}/practica/repas`}>{d.repas} ({nPendents})</Link>}
-          <Link className="boton-sec" href={`/${idioma}/practica/mini`}>{d.mini}{miniFeta ? ' ✓' : ''}</Link>
-          {sessio?.blocs.some((b) => b.tipus === 'produccio' && b.area === 'escrit') ? <Link className="boton-sec" href={`/${idioma}/escriure`}>{t(idioma).nav.escriure}</Link> : <Link className="boton-sec" href={`/${idioma}/oral`}>{t(idioma).nav.oral}</Link>}
-          <Link className="boton-sec" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link>
-        </div>
+  return (
+    <div>
+      <p className="text-[15px] text-secundari">{fmt(avui, idioma, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+      <div className="mt-3 flex flex-wrap items-end gap-x-6 gap-y-2">
+        <div><span className="num text-[44px] leading-none">{estat.diagnostic.probabilitat}<span className="text-[22px]">%</span></span><span className="block text-[13px] text-secundari">{d.probabilitat}</span></div>
+        <div className="flex items-center gap-1.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="#D9603B" aria-hidden="true"><path d="M12 2c1 4 5 5 5 11a5 5 0 0 1-10 0c0-2 1-3 1-3s1 2 2 2c0-4-1-6 2-10z" /></svg><span className="num text-[22px] leading-none">{ratxa.dies}</span><span className="text-[13px] text-secundari">{ratxa.dies === 1 ? (idioma === 'ca' ? 'dia' : 'día') : d.dies} · {n.congelacionsRestants(Math.max(0, 2 - ratxa.congelacionsMes))}</span></div>
+        {diesProva !== null ? <div><span className="num text-[22px] leading-none">{diesProva}</span> <span className="text-[13px] text-secundari">{d.diesExamen(diesProva).replace(/^\d+ /, '')} · {perfil.nivell}{conv ? `, ${fmt(conv.prova, idioma, { day: 'numeric', month: 'short' })}` : ''}</span></div> : null}
       </div>
+      {insc.estat === 'oberta' ? <p className="mt-4 rounded-[6px] bg-vermell-tenue px-3 py-2 text-[15px] font-semibold text-vermell">{d.inscripcioOberta} {conv?.inscripcio ? d.inscripcio(fmt(conv.inscripcio.inici, idioma, { day: 'numeric', month: 'short' }), fmt(conv.inscripcio.fi, idioma, { day: 'numeric', month: 'short' })) : ''} <a className="underline" href={conv?.url} target="_blank" rel="noopener noreferrer">{conv?.organisme.toUpperCase()}</a></p> : null}
+      {insc.estat === 'abans' && insc.dies <= 21 ? <p className="mt-4 rounded-[6px] bg-ocre-tenue px-3 py-2 text-[15px]">{d.inscripcioAviat(insc.dies)}</p> : null}
+
+      <div className="full mt-6">
+        <div className="full-cap"><span>{titolSessio}</span><span className="tab">{sessio?.minuts ?? perfil.minuts} {t(idioma).comu.minuts}{feta ? ` · ✓ ${d.feta}` : ''}</span></div>
+        {sessio?.tipus === 'normal' || !sessio ? (
+          <div className="mt-3 flex h-3 w-full gap-1 overflow-hidden rounded-full" aria-hidden="true">{(sessio?.blocs ?? []).map((b, i) => <span key={i} className={b.tipus === 'repas' ? 'bg-nit' : b.tipus === 'feble' ? 'bg-ocre' : 'bg-oliva'} style={{ flex: b.minuts }} />)}</div>
+        ) : null}
+        <ul className="mt-3 space-y-1.5 text-[16px]">
+          {(sessio?.blocs ?? []).map((b, i) => <li key={i} className="flex items-baseline gap-3"><span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${b.tipus === 'repas' ? 'bg-nit' : b.tipus === 'feble' ? 'bg-ocre' : 'bg-oliva'}`} aria-hidden="true" /><span className="min-w-0 flex-1">{blocNom(b)}</span><span className="tab text-[14px] text-terciari">{b.minuts}′</span></li>)}
+        </ul>
+        {premium === false && sessio?.tipus === 'normal' ? <p className="mt-4 text-[14px] leading-relaxed text-secundari">{d.bloquejat} <Link className="font-semibold text-nit underline decoration-ocre decoration-2" href={`/${idioma}/preus`}>{d.veurePreus}</Link></p> : null}
+        <Link className="boton-ocre mt-5 w-full text-[18px]" href={hrefPrimari}>{sessio?.tipus === 'minisimulacre' || sessio?.tipus === 'simulacre' ? d.comencar : premium ? d.comencar : d.mini}</Link>
+      </div>
+
+      <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[15px]">
+        {hrefPrimari.endsWith('/practica/mini') ? null : <Link className="boton-text" href={`/${idioma}/practica/mini`}>{d.mini}{miniFeta ? ' ✓' : ''}</Link>}
+        <Link className="boton-text" href={`/${idioma}/practica/repas`}>{d.repas}{nPendents ? ` · ${nPendents}` : ''}</Link>
+        <Link className="boton-text" href={`/${idioma}/escriure`}>{t(idioma).nav.escriure}</Link>
+        <Link className="boton-text" href={`/${idioma}/oral`}>{t(idioma).nav.oral}</Link>
+        <Link className="boton-text" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link>
+      </div>
+      {compromis ? <div className="mt-8"><div className="flex items-baseline justify-between text-[14px] text-secundari"><span>{d.compromis.replace('?', '')}: {compromis.total} {d.dies}</span><span className="tab">{compromis.fets}/{compromis.total}</span></div><div className="barra mt-2"><span style={{ width: `${(100 * compromis.fets) / compromis.total}%` }} /></div></div> : null}
     </div>
   );
 }

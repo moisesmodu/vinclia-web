@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { startTransition, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { Convocatoria, Examen, Idioma, Item, Nivell, Punt, So, TextCL, Tasca, LecturaOral } from '@/lib/tipos';
@@ -15,6 +15,7 @@ import { notaOralDesDePronuncia, type ResultatOral } from '@/lib/oral';
 import ItemVista from './ItemVista';
 import Oral from './Oral';
 import ResultatDiag from './ResultatDiag';
+import Segments from './ui/Segments';
 
 type Props = { idioma: Idioma; examens: Record<string, Examen>; convocatories: Convocatoria[]; punts: Punt[]; tasques: Tasca[]; sons: So[]; lectures: LecturaOral[] };
 type Bloc = 'us' | 'lectura' | 'co' | 'escrit' | 'oral' | 'resultat';
@@ -110,13 +111,15 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
     setBloc('resultat');
   };
 
-  if (!estat || !perfil || !banc || !ex) return <p className="contenedor py-10 text-suave">{t(idioma).comu.carregant}</p>;
-  if (!pool.length) return <div className="contenedor py-10"><p>{t(idioma).simulacre.incomplet}</p><Link className="boton mt-4" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div>;
+  if (!estat || !perfil || !banc || !ex) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
+  if (!pool.length) return <div className="contenedor py-10"><p>{t(idioma).simulacre.incomplet}</p><Link className="boton-ocre mt-4" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div>;
 
   const Cap = ({ actual }: { actual: Bloc }) => {
     const blocs: Bloc[] = ['us', ...(textL ? ['lectura' as Bloc] : []), ...(textCo ? ['co' as Bloc] : []), 'escrit', 'oral'];
     const idx = blocs.indexOf(actual);
-    return <div className="mb-4"><div className="flex items-center justify-between text-sm text-suave"><span className="font-semibold text-nit">{d.titol} · {d.bloc[actual as keyof typeof d.bloc] ?? (actual === 'co' ? (idioma === 'ca' ? 'Comprensió oral' : 'Comprensión oral') : '')}</span><span>{idx + 1} / {blocs.length}</span></div><div className="barra mt-2"><span style={{ width: `${((idx + (actual === 'us' ? resp.length / N_US : 0.5)) / blocs.length) * 100}%` }} /></div></div>;
+    const nom = d.bloc[actual as keyof typeof d.bloc] ?? (idioma === 'ca' ? 'Comprensió oral' : 'Comprensión oral');
+    const minuts = { us: 5, lectura: 3, co: 2, escrit: 4, oral: 1 }[actual as string] ?? 2;
+    return <div className="mb-5"><div className="flex items-baseline justify-between"><h1 className="text-[24px]">{nom}</h1><span className="text-[14px] text-secundari">{t(idioma).nou.blocDe(idx + 1, blocs.length)} · {t(idioma).nou.minutsAprox(minuts)}</span></div><Segments total={blocs.length} actual={idx} className="mt-3" /></div>;
   };
 
   const paraules = text.trim().split(/\s+/).filter(Boolean).length;
@@ -125,7 +128,7 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
   return (
     <div className="contenedor py-6">
       {bloc !== 'resultat' ? <Cap actual={bloc} /> : null}
-      {bloc === 'us' && item ? <ItemVista key={item.id} item={item} regles={banc.regles} idioma={idioma} idiomaExpl={perfil.idiomaExpl} onResultat={(a) => respondreUs(a.correcte)} onSeguent={seguentUs} numero={`${resp.length + 1}/${N_US}`} /> : null}
+      {bloc === 'us' && item ? <ItemVista key={item.id} item={item} regles={banc.regles} idioma={idioma} idiomaExpl={perfil.idiomaExpl} onResultat={(a) => respondreUs(a.correcte)} onSeguent={() => startTransition(seguentUs)} numero={`${resp.length + 1}/${N_US}`} /> : null}
 
       {bloc === 'lectura' && textL ? (
         <PreguntesText text={textL} preguntes={preguntesL} idx={lecturaIdx} idioma={idioma} onResposta={(ok) => { setLecturaOk((v) => [...v, ok]); if (lecturaIdx + 1 < preguntesL.length) setLecturaIdx(lecturaIdx + 1); else setBloc(textCo ? 'co' : 'escrit'); }} />
@@ -135,20 +138,20 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
       ) : null}
 
       {bloc === 'escrit' ? (
-        <div className="tarjeta">
-          <p className="text-sm font-semibold text-suave">{tascaDiag?.titol ?? d.bloc.escrit}</p>
-          <p className="mt-1 leading-relaxed">{tascaDiag?.enunciat ?? consignaDiag[idioma]}</p>
-          <p className="mt-1 text-xs text-suave">{t(idioma).escriure.minimParaules(minEscrit)} · {idioma === 'ca' ? 'uns 4 minuts' : 'unos 4 minutos'}</p>
-          <textarea className="campo mt-3 min-h-44" value={text} onChange={(e) => setText(e.target.value)} lang="ca" placeholder={d.escriu} />
-          <div className="mt-2 flex items-center justify-between text-sm text-suave"><span>{paraules} {d.paraules}</span></div>
-          <div className="mt-3 flex gap-2"><button type="button" className="boton-sec" onClick={() => setBloc('oral')}>{d.saltar}</button><button type="button" className="boton flex-1" disabled={paraules < minEscrit || corregint} onClick={enviarEscrit}>{corregint ? d.corregint : d.enviar}</button></div>
+        <div className="full">
+          <p className="full-cap">{tascaDiag?.titol ?? d.bloc.escrit}</p>
+          <p className="mt-3 text-[18px] leading-relaxed">{tascaDiag?.enunciat ?? consignaDiag[idioma]}</p>
+          <p className="mt-2 text-[13px] text-terciari">{t(idioma).escriure.minimParaules(minEscrit)} · {idioma === 'ca' ? 'uns 4 minuts' : 'unos 4 minutos'}</p>
+          <textarea className="campo mt-4 min-h-44" value={text} onChange={(e) => setText(e.target.value)} lang="ca" placeholder={`${d.escriu}…`} aria-label={d.bloc.escrit} />
+          <div className="mt-2 flex items-center justify-between text-[14px] text-secundari"><span className="tab">{paraules} {d.paraules}</span><span className="tab">{idioma === 'ca' ? 'mínim' : 'mínimo'} {minEscrit}</span></div>
+          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => setBloc('oral')}>{d.saltar}</button><button type="button" className="boton-ocre flex-1" disabled={paraules < minEscrit || corregint} onClick={enviarEscrit}>{corregint ? d.corregint : d.enviar}</button></div>
         </div>
       ) : null}
 
       {bloc === 'oral' && lecturaOral ? (
         <div>
           <Oral idioma={idioma} lectures={[lecturaOral]} sons={sons} nivell={nivell!} compacte onResultat={(r) => { setOralRes(r); }} />
-          <div className="mt-3 flex gap-2"><button type="button" className="boton-sec" onClick={() => calcular(null)}>{d.saltar}</button><button type="button" className="boton flex-1" disabled={!oralRes} onClick={() => calcular(oralRes)}>{d.seguent}</button></div>
+          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => calcular(null)}>{d.saltar}</button><button type="button" className="boton-ocre flex-1" disabled={!oralRes} onClick={() => calcular(oralRes)}>{d.seguent}</button></div>
         </div>
       ) : null}
 
@@ -166,15 +169,15 @@ function PreguntesText({ text, preguntes, idx, idioma, onResposta, audio }: { te
   useEffect(() => { setSel(null); setFet(false); }, [idx]);
   if (!p) return null;
   return (
-    <div className="tarjeta">
-      <p className="text-sm font-semibold text-suave">{text.titol}</p>
+    <div className="full" style={{ viewTransitionName: 'item' }}>
+      <p className="full-cap">{text.titol}</p>
       {audio ? (
-        <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={async () => { setEscoltes((n) => n + 1); const { parlar } = await import('@/lib/client/veu'); await parlar(text.text.replace(/^[AB]:\s*/gm, ''), text.veus?.[0] === 'nord-occidental' ? 'nord-occidental' : 'central'); }}>🔊 {t(idioma).simulacre.escoltar}</button><span className="text-xs text-suave">{t(idioma).simulacre.escoltat(escoltes)}</span></div>
-      ) : <div className="prosa my-3 max-h-72 overflow-y-auto rounded-xl bg-crema p-3 text-sm">{text.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
-      <p className="text-xs text-suave">{idx + 1} / {preguntes.length}</p>
-      <p className="mt-1 font-semibold">{p.enunciat}</p>
-      <div className="mt-3 grid gap-2">{p.opcions.map((o, i) => <button key={i} type="button" className={`opcio ${fet ? (i === p.resposta ? 'opcio-ok' : sel === i ? 'opcio-mal' : '') : sel === i ? 'border-nit ring-1 ring-nit' : ''}`} disabled={fet} onClick={() => setSel(i)}>{o}</button>)}</div>
-      {!fet ? <button type="button" className="boton mt-4 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.comprovar}</button> : <button type="button" className="boton mt-4 w-full" onClick={() => onResposta(sel === p.resposta)}>{d.seguent}</button>}
+        <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={async () => { setEscoltes((n) => n + 1); const { parlar } = await import('@/lib/client/veu'); await parlar(text.text.replace(/^[AB]:\s*/gm, ''), text.veus?.[0] === 'nord-occidental' ? 'nord-occidental' : 'central'); }}>🔊 {t(idioma).simulacre.escoltar}</button><span className="text-xs text-secundari">{t(idioma).simulacre.escoltat(escoltes)}</span></div>
+      ) : <div className="prosa my-3 max-h-72 overflow-y-auto rounded-[6px] bg-crema p-3 text-[15px]">{text.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
+      <p className="text-[13px] text-terciari"><span className="num text-nit">{idx + 1}</span> / {preguntes.length}</p>
+      <p className="mt-1 text-[19px] font-semibold leading-snug">{p.enunciat}</p>
+      <div className="mt-4 grid gap-2" role="radiogroup">{p.opcions.map((o, i) => <button key={i} type="button" role="radio" aria-checked={sel === i} className={`opcio ${fet ? (i === p.resposta ? 'opcio-ok' : sel === i ? 'opcio-mal' : '') : sel === i ? 'opcio-sel' : ''}`} disabled={fet} onClick={() => setSel(i)}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>)}</div>
+      {!fet ? <button type="button" className="boton mt-5 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.comprovar}</button> : <button type="button" className="boton-ocre mt-5 w-full" onClick={() => onResposta(sel === p.resposta)} autoFocus>{d.seguent}</button>}
     </div>
   );
 }

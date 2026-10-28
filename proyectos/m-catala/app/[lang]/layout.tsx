@@ -37,7 +37,7 @@ export default async function Layout({ children, params }: { children: React.Rea
     <html lang={lang}>
       <body className="flex min-h-dvh flex-col">
         <Cabecera idioma={lang} />
-        <main className="flex-1 pb-20 sm:pb-0">{children}</main>
+        <main id="contingut" className="flex-1">{children}</main>
         <Pie idioma={lang} />
         <RegistroSW />
       </body>

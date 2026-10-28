@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { startTransition, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Area, Idioma, Item } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
@@ -12,6 +12,7 @@ import { confiancaPunts } from '@/lib/motor/diagnostic';
 import { sessioDe } from '@/lib/motor/pla';
 import puntsJson from '@/config/punts.json';
 import ItemVista from './ItemVista';
+import Segments from './ui/Segments';
 
 type Mode = 'buits' | 'transformacio' | 'castellanismes' | 'dictat' | 'lexic' | 'repas' | 'mini' | 'sessio';
 
@@ -78,34 +79,34 @@ export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode 
 
   const resum = useMemo(() => cua && i >= cua.length, [cua, i]);
 
-  if (!estat) return <p className="contenedor py-10 text-suave">{t(idioma).comu.carregant}</p>;
+  if (!estat) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
   if (!perfil) return <div className="contenedor py-10"><p>{t(idioma).avui.senseDiag}</p><Link className="boton mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
-  if (!cua) return <p className="contenedor py-10 text-suave">{t(idioma).comu.carregant}</p>;
-  if (!cua.length) return <div className="contenedor py-10"><p>{mode === 'repas' ? d.resAPendent : d.limit}</p><div className="mt-4 flex gap-2"><Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>{!banc?.premium ? <Link className="boton" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link> : null}</div></div>;
+  if (!cua) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
+  if (!cua.length) return <div className="contenedor py-10"><p className="max-w-[44ch] text-[17px] leading-relaxed">{mode === 'repas' ? d.resAPendent : d.limit}</p><div className="mt-5 flex gap-2"><Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>{!banc?.premium ? <Link className="boton-ocre" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link> : null}</div></div>;
 
-  if (resum) return (
-    <div className="contenedor py-8">
-      <div className="tarjeta text-center">
-        <p className="text-sm text-suave">{d.resultat}</p>
-        <p className="titulos mt-1 text-4xl font-bold">{encerts} / {cua.length}</p>
-        <p className="mt-1 text-sm text-suave">{d.encerts}</p>
-        <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
-          <Link className="boton" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link>
-          <Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>
-          <Link className="boton-sec" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link>
+  if (resum) {
+    const errors = cua.length - encerts;
+    return (
+      <div className="contenedor py-8">
+        <p className="text-[15px] text-secundari">{d.resultat} · {d.tipus[mode] ?? (mode === 'mini' ? t(idioma).avui.mini : t(idioma).nou.sessioTitol)}</p>
+        <p className="num mt-1 text-[56px] leading-none">{encerts}<span className="text-[28px] text-terciari">/{cua.length}</span></p>
+        <p className="mt-3 max-w-[40ch] text-[17px] leading-relaxed">{errors ? t(idioma).nou.resumBe : t(idioma).nou.resumCap}</p>
+        <div className="mt-8 grid gap-2">
+          <Link className="boton-ocre" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link>
+          <div className="flex gap-4"><Link className="boton-text" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link><Link className="boton-text" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link></div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 
   return (
     <div className="contenedor py-6">
-      <div className="mb-3 flex items-center justify-between text-sm text-suave">
+      <div className="mb-2 flex items-center justify-between text-[14px] text-secundari">
         <span>{d.tipus[mode] ?? (mode === 'mini' ? t(idioma).avui.mini : t(idioma).avui.sessio(perfil.minuts))}</span>
-        <span>{i + 1} / {cua.length}</span>
+        <span className="tab">{i + 1} / {cua.length}</span>
       </div>
-      <div className="barra mb-4"><span style={{ width: `${(100 * i) / cua.length}%` }} /></div>
-      {item && banc ? <ItemVista key={item.id} item={item} regles={banc.regles} idioma={idioma} idiomaExpl={idiomaExpl} onResultat={(a) => registrar(a.correcte)} onSeguent={() => (i + 1 < cua.length ? setI(i + 1) : acabar())} etiquetaSeguent={i + 1 < cua.length ? d.seguent : d.acabar} /> : null}
+      <Segments total={cua.length} actual={i} className="mb-5" />
+      {item && banc ? <ItemVista key={item.id} item={item} regles={banc.regles} idioma={idioma} idiomaExpl={idiomaExpl} onResultat={(a) => registrar(a.correcte)} onSeguent={() => startTransition(() => (i + 1 < cua.length ? setI(i + 1) : acabar()))} etiquetaSeguent={i + 1 < cua.length ? d.seguent : d.acabar} /> : null}
     </div>
   );
 }

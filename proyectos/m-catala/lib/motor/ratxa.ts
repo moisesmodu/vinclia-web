@@ -19,10 +19,12 @@ export function ratxaActual(r: EstatRatxa, avui = avuiISO(), maxMes = 2): { dies
   const usades = { ...r.congelacions };
   const usadesMes = (m: string) => (usades[m] ?? []).length;
   let n = 0;
+  const primer = r.dies.length ? [...r.dies].sort()[0] : null;
   let dia = set.has(avui) ? avui : resta(avui, 1);
   // Si avui encara no s'ha fet res, la ratxa compta des d'ahir (no es trenca fins a mitjanit).
   while (true) {
     if (set.has(dia)) { n++; dia = resta(dia, 1); continue; }
+    if (!primer || dia < primer) break; // abans del primer dia no hi ha res a congelar
     const m = dia.slice(0, 7);
     if ((usades[m] ?? []).includes(dia) || usadesMes(m) < maxMes) { usades[m] = Array.from(new Set([...(usades[m] ?? []), dia])); dia = resta(dia, 1); continue; }
     break;

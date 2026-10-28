@@ -19,14 +19,14 @@ export default async function Pagina({ params }: { params: Promise<{ lang: strin
   return (
     <article className="contenedor prosa max-w-2xl py-8">
       {jsonLd ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /> : null}
-      <p className="text-xs uppercase tracking-wide text-suave">{p.nivell ?? ''} · {p.tipus}</p>
-      <h1 className="text-3xl font-bold">{p.titol[idioma]}</h1>
-      <p className="mt-2 text-lg text-suave">{p.descripcio[idioma]}</p>
-      <div className="my-5 rounded-2xl bg-ocre-claro p-4"><p className="font-semibold">{p.cta?.[idioma]}</p><Link href={`/${idioma}/comencar`} className="boton mt-2">{t(idioma).hero.cta}</Link></div>
+      
+      <h1>{p.titol[idioma]}</h1>
+      <p className="mt-3 text-[19px] leading-relaxed text-secundari">{p.descripcio[idioma]}</p>
+      <div className="regla my-6"><p className="font-semibold">{p.cta?.[idioma]}</p><Link href={`/${idioma}/comencar`} className="boton-ocre mt-3">{t(idioma).hero.cta}</Link></div>
       {p.seccions[idioma].map((s, i) => <section key={i}><h2>{s.h2}</h2><div dangerouslySetInnerHTML={{ __html: md(s.text) }} /></section>)}
-      {faq.length ? <section><h2>FAQ</h2>{faq.map((f, i) => <details key={i} className="mb-2 rounded-xl bg-white p-3"><summary className="cursor-pointer font-semibold">{f.p}</summary><p className="mt-2">{f.r}</p></details>)}</section> : null}
+      {faq.length ? <section><h2>FAQ</h2>{faq.map((f, i) => <details key={i} className="mb-2 rounded-[6px] border border-linia bg-paper p-3"><summary className="cursor-pointer font-semibold">{f.p}</summary><p className="mt-2">{f.r}</p></details>)}</section> : null}
       {relacionades.length ? <section><h2>{idioma === 'ca' ? 'Relacionat' : 'Relacionado'}</h2><ul>{relacionades.map((r) => <li key={r.slug}><Link href={`/${idioma}/guia/${r.slug}`}>{r.titol[idioma]}</Link></li>)}</ul></section> : null}
-      <p className="mt-8 text-xs text-suave">{idioma === 'ca' ? 'Dates previstes pendents de la resolució oficial al DOGC; es revisen cada setmana.' : 'Fechas previstas pendientes de la resolución oficial en el DOGC; se revisan cada semana.'}</p>
+      <p className="mt-8 text-[13px] text-terciari">{idioma === 'ca' ? 'Dates previstes pendents de la resolució oficial al DOGC; es revisen cada setmana.' : 'Fechas previstas pendientes de la resolución oficial en el DOGC; se revisan cada semana.'}</p>
     </article>
   );
 }

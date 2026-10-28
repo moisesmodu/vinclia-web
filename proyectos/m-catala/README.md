@@ -86,6 +86,15 @@ En producción se usa la API pública (`LANGUAGETOOL_URL=https://api.languagetoo
 - **Sin probar:** pago con la tarjeta 4242 en checkout.stripe.com (no se abre desde la sesión), correos reales de Resend, TTS y Whisper (sin
   proveedor configurado), corrección con modelo de lenguaje (sin clave) y la validez con candidatos reales (protocolo listo).
 
+## Diseño (rediseño del 28/10/2026)
+- Plan y principios en `DISSENY.md`: vocabulario del mundo del examen (hoja, sello, mínimo, apte), un solo elemento memorable (el dial de
+  probabilidad), nada de tarjetas genéricas ni de gamificación visual. Sistema en `app/globals.css` (tokens `@theme`, `.full`, `.opcio`,
+  `.regla`, `.escala`, `.segell`, transiciones de vista con `startTransition`).
+- Skills de diseño instaladas en `.claude/skills/` para que las sesiones siguientes mantengan el criterio: `frontend-design` (Anthropic),
+  `web-design-guidelines`, `react-best-practices` y `react-view-transitions` (Vercel Labs). Antes de tocar la interfaz, leerlas.
+- Revisión visual con capturas en Pixel 7 (`scripts/e2e.mjs` guarda una por pantalla) y la auditoría de `web-design-guidelines`
+  (foco visible, `aria-current`, enlace de salto, `prefers-reduced-motion`, numerales tabulares).
+
 ## Decisiones tomadas (y por qué)
 - **Identidad de marca: Aprova** (familia Nuevo en España, `MARCAS.md` §4): promesa «El teu certificat de català, del B1 al C2.», terracota/azul
   noche/crema con acento ocre `#E0B23A`, Outfit + Noto Sans (alojadas en la app, no en Google Fonts), logotipo e icono de `marcas/logos/`, sello

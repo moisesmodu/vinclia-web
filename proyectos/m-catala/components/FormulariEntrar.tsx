@@ -29,17 +29,17 @@ export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
   return (
     <form onSubmit={enviar} className="tarjeta grid gap-3">
       <h1 className="text-xl font-bold">{mode === 'recuperar' ? d.recuperar : mode === 'nova' ? d.nova : d.titulo}</h1>
-      {mode === 'recuperar' ? <p className="text-sm text-suave">{d.recuperarText}</p> : null}
+      {mode === 'recuperar' ? <p className="text-sm text-secundari">{d.recuperarText}</p> : null}
       {mode !== 'nova' ? <input className="campo" type="email" placeholder={d.email} value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" /> : null}
       {mode !== 'recuperar' ? <input className="campo" type="password" placeholder={d.clave} value={clau} onChange={(e) => setClau(e.target.value)} required minLength={8} autoComplete={mode === 'entrar' ? 'current-password' : 'new-password'} /> : null}
       {mode === 'crear' ? <label className="flex items-start gap-2 text-sm"><input type="checkbox" checked={accepto} onChange={(e) => setAccepto(e.target.checked)} required className="mt-1" /><span>{d.acepto} (<a className="underline" href={`/${idioma}/legal/condicions`} target="_blank">·</a>)</span></label> : null}
-      {err ? <p className="text-sm text-mal">{err}</p> : null}
-      {ok ? <p className="text-sm text-ok">{ok}</p> : null}
+      {err ? <p className="text-sm text-vermell">{err}</p> : null}
+      {ok ? <p className="text-sm text-oliva">{ok}</p> : null}
       <button className="boton" type="submit" disabled={carregant}>{mode === 'crear' ? d.crear : mode === 'recuperar' ? d.recuperar : mode === 'nova' ? d.canviar : d.entrar}</button>
       <div className="flex flex-wrap justify-between gap-2 text-sm">
-        {mode === 'entrar' ? <><button type="button" className="underline" onClick={() => setMode('crear')}>{d.crear}</button><button type="button" className="text-suave underline" onClick={() => setMode('recuperar')}>{d.recuperar}</button></> : <button type="button" className="underline" onClick={() => setMode('entrar')}>{d.entrar}</button>}
+        {mode === 'entrar' ? <><button type="button" className="underline" onClick={() => setMode('crear')}>{d.crear}</button><button type="button" className="text-secundari underline" onClick={() => setMode('recuperar')}>{d.recuperar}</button></> : <button type="button" className="underline" onClick={() => setMode('entrar')}>{d.entrar}</button>}
       </div>
-      <p className="text-xs text-suave">{d.perQue}</p>
+      <p className="text-xs text-secundari">{d.perQue}</p>
     </form>
   );
 }

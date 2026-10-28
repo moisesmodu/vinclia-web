@@ -12,14 +12,15 @@ export default function Cabecera({ idioma }: { idioma: Idioma }) {
   const l = (s: string) => `/${idioma}${s}`;
   return (
     <>
-      <header className="sticky top-0 z-20 border-b border-[#EADFCF] bg-crema/95 backdrop-blur">
-        <div className="contenedor flex h-14 items-center gap-2">
-          <Link href={l('')} className="no-underline" aria-label={marca.nombre}><Logo alto={30} /></Link>
-          <nav className="ml-auto flex items-center gap-1 text-sm font-medium">
-            <Link href={l('/avui')} className="hidden rounded-lg px-2 py-2 text-nit no-underline hover:text-marca sm:inline">{d.nav.avui}</Link>
-            <Link href={l('/practica')} className="hidden rounded-lg px-2 py-2 text-nit no-underline hover:text-marca sm:inline">{d.nav.practica}</Link>
-            <Link href={l('/simulacre')} className="hidden rounded-lg px-2 py-2 text-nit no-underline hover:text-marca sm:inline">{d.nav.simulacre}</Link>
-            <Link href={l('/preus')} className="rounded-lg px-2 py-2 text-nit no-underline hover:text-marca">{d.nav.preus}</Link>
+      <a href="#contingut" className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-[6px] focus:bg-paper focus:px-3 focus:py-2">{idioma === 'ca' ? 'Anar al contingut' : 'Ir al contenido'}</a>
+      <header className="sticky top-0 z-20 border-b border-linia bg-crema/95 backdrop-blur-sm">
+        <div className="contenedor flex h-14 items-center gap-1">
+          <Link href={l('')} className="mr-auto no-underline" aria-label={marca.nombre}><Logo alto={28} /></Link>
+          <nav className="flex items-center gap-0.5 text-[15px] font-semibold" aria-label={idioma === 'ca' ? 'Principal' : 'Principal'}>
+            <Link href={l('/avui')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.avui}</Link>
+            <Link href={l('/practica')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.practica}</Link>
+            <Link href={l('/simulacre')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.simulacre}</Link>
+            <Link href={l('/preus')} className="rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal">{d.nav.preus}</Link>
             <EnlaceCuenta idioma={idioma} entrar={d.nav.entrar} cuenta={d.nav.compte} />
             <CambioIdioma idioma={idioma} />
           </nav>

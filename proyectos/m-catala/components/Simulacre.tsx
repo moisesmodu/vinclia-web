@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { startTransition, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Area, Convocatoria, Examen, Idioma, Item, Punt, Regla, Simulacre as Sim, So, Tasca, TextCL } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
@@ -12,6 +12,7 @@ import type { ResultatCorreccio } from '@/lib/correccio';
 import ItemVista from './ItemVista';
 import Editor, { Temporitzador } from './Editor';
 import ResultatDiag from './ResultatDiag';
+import Segments from './ui/Segments';
 
 type Props = { idioma: Idioma; sim: Sim; examen: Examen; items: Item[]; textos: Record<string, TextCL>; tasques: Record<string, Tasca>; regles: Record<string, Regla>; punts: Punt[]; sons: So[]; convocatories: Convocatoria[] };
 type Fase = 'intro' | Area | 'resultat';
@@ -69,17 +70,18 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
     setFase('resultat');
   };
 
-  if (!estat) return <p className="text-suave">{t(idioma).comu.carregant}</p>;
+  if (!estat) return <p className="text-terciari">{t(idioma).comu.carregant}</p>;
 
   if (fase === 'intro') return (
-    <div className="tarjeta">
-      <h1 className="text-2xl font-bold">{sim.nom}</h1>
-      <p className="mt-2 text-sm text-suave">{d.text}</p>
-      {!(sim as { complet?: boolean }).complet && itemsUs.length < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-lg bg-ocre-claro p-2 text-xs">{d.incomplet}</p> : null}
-      <ul className="mt-4 divide-y divide-[#EADFCF] text-sm">{arees.map((a) => <li key={a.id} className="flex items-center justify-between py-2"><span>{a.nom[idioma]}</span><span className="text-suave">{a.minuts} min · {a.pes} %</span></li>)}</ul>
-      <p className="mt-3 text-xs text-suave">{d.oralNota}</p>
-      {err ? <p className="mt-2 rounded-lg bg-ocre-claro p-3 text-sm">{err} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
-      <button type="button" className="boton-ocre mt-4 w-full" onClick={comencar} disabled={!itemsUs.length}>{d.comencar}</button>
+    <div>
+      <p className="text-[15px] text-secundari">{sim.nivell} · {examen.nom[idioma].replace(/^\w\d · /, '')}</p>
+      <h1 className="mt-1">{sim.nom}</h1>
+      <p className="mt-3 max-w-[48ch] text-[16px] leading-relaxed text-secundari">{d.text}</p>
+      <ol className="mt-6 divide-y divide-linia border-y border-linia">{arees.map((a, i) => <li key={a.id} className="grid grid-cols-[28px_1fr_auto] items-baseline gap-3 py-3"><span className="num text-[18px] text-ocre-fosc">{i + 1}</span><span className="min-w-0">{a.nom[idioma]}<span className="block text-[13px] text-terciari">{a.pes} % · {a.id === 'us' ? `${itemsUs.length} ítems` : a.id === 'escrit' ? `${tasquesEscrit.length} ${idioma === 'ca' ? 'tasca' : 'tarea'}${tasquesEscrit.length > 1 ? 's' : ''}` : `${textosArea(a.id as 'co' | 'lectura').length} ${idioma === 'ca' ? 'textos' : 'textos'}`}</span></span><span className="num text-[17px]">{a.minuts}<span className="text-[13px] font-normal text-terciari"> min</span></span></li>)}</ol>
+      <p className="mt-3 text-[13px] text-terciari">{d.oralNota}</p>
+      {!(sim as { complet?: boolean }).complet && itemsUs.length < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-[6px] bg-ocre-tenue p-3 text-[14px]">{d.incomplet}</p> : null}
+      {err ? <p className="mt-3 rounded-[6px] bg-ocre-tenue p-3 text-[15px]" role="alert">{err} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
+      <button type="button" className="boton-ocre mt-6 w-full text-[18px]" onClick={comencar} disabled={!itemsUs.length}>{d.comencar}</button>
     </div>
   );
 
@@ -87,28 +89,34 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
     const apte = estat.simulacres[estat.simulacres.length - 1]?.apte;
     return (
       <div>
-        <div className={`tarjeta text-center ${apte ? 'bg-oliva-claro' : 'bg-[#FBE7E9]'}`}><p className="text-sm text-suave">{d.resultat}</p><p className="titulos mt-1 text-5xl font-bold">{apte ? d.apte : d.noApte} <span className="text-base font-normal text-suave">{d.estimat}</span></p><p className="mt-1">{d.global}: <strong>{resultat.global} %</strong>{examen.aptoGlobal ? <span className="text-suave"> · {d.minim} {examen.aptoGlobal} %</span> : null}</p>{cohort ? <p className="mt-2 text-sm">{cohort.percentil !== null ? d.cohort(cohort.percentil, cohort.n) : d.cohortPocs}</p> : null}</div>
-        <div className="mt-3"><ResultatDiag idioma={idioma} resultat={{ ...resultat, data: '', nivell: sim.nivell, theta: 0, febles: [], sons: [], respostes: [] }} examen={examen} punts={punts} sons={sons} compacte /></div>
-        <p className="mt-3 text-sm text-suave">{d.pla}</p>
-        <div className="mt-4 flex gap-2"><Link className="boton flex-1" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link><Link className="boton-sec flex-1" href={`/${idioma}/practica/repas`}>{t(idioma).practica.tipus.repas}</Link></div>
+        <div className="flex flex-col items-center py-6 text-center">
+          <span className={`segell segell-anima ${apte ? 'segell-apte' : 'segell-no'}`} role="status">{apte ? d.apte : d.noApte}</span>
+          <p className="mt-5 text-[13px] text-terciari">{t(idioma).nou.apteEstimat} · {sim.nom}</p>
+          <p className="num mt-1 text-[44px] leading-none">{resultat.global}<span className="text-[22px] text-terciari">%</span></p>
+          <p className="text-[14px] text-secundari">{d.global}{examen.aptoGlobal ? ` · ${d.minim} ${examen.aptoGlobal} %` : ''}</p>
+          {cohort ? <p className="mt-3 max-w-[36ch] text-[15px]">{cohort.percentil !== null ? d.cohort(cohort.percentil, cohort.n) : d.cohortPocs}</p> : null}
+        </div>
+        <ResultatDiag idioma={idioma} resultat={{ ...resultat, data: '', nivell: sim.nivell, theta: 0, febles: [], sons: [], respostes: [] }} examen={examen} punts={punts} sons={sons} compacte />
+        <p className="mt-6 text-[15px] text-secundari">{d.pla}</p>
+        <div className="mt-5 grid gap-2"><Link className="boton-ocre" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link><Link className="boton-sec" href={`/${idioma}/practica/repas`}>{t(idioma).practica.tipus.repas}</Link></div>
       </div>
     );
   }
 
   if (!area) return null;
-  const cap = <div className="mb-3 flex items-center justify-between rounded-xl bg-white px-3 py-2 text-sm shadow-sm"><span className="font-semibold">{d.area} {idx + 1} {d.de} {arees.length} · {area.nom[idioma]}</span><span>{d.temps} <Temporitzador key={area.id} segons={area.minuts * 60} onFi={() => { alert(d.tempsEsgotat); seguentArea(); }} /></span></div>;
+  const cap = <div className="mb-4"><div className="flex items-baseline justify-between gap-3"><h1 className="min-w-0 truncate text-[20px]">{area.nom[idioma]}</h1><span className="shrink-0 text-[13px] text-terciari">{t(idioma).nou.tempsRestant} <Temporitzador key={area.id} segons={area.minuts * 60} onFi={() => { alert(d.tempsEsgotat); seguentArea(); }} /></span></div><Segments total={arees.length} actual={idx} className="mt-2" /></div>;
 
   if (area.id === 'us') {
     const it = itemsUs[pIdx];
-    return <div>{cap}{it ? <ItemVista key={it.id} item={it} regles={regles} idioma={idioma} idiomaExpl={estat.perfil?.idiomaExpl ?? idioma} retroaccio={false} numero={`${pIdx + 1}/${itemsUs.length}`} onResultat={(a) => { puntua('us', a.correcte); if (!a.correcte) setErrorsUs((e) => [...e, it]); }} onSeguent={() => (pIdx + 1 < itemsUs.length ? setPIdx(pIdx + 1) : seguentArea())} /> : null}</div>;
+    return <div>{cap}{it ? <ItemVista key={it.id} item={it} regles={regles} idioma={idioma} idiomaExpl={estat.perfil?.idiomaExpl ?? idioma} retroaccio={false} numero={`${pIdx + 1}/${itemsUs.length}`} onResultat={(a) => { puntua('us', a.correcte); if (!a.correcte) setErrorsUs((e) => [...e, it]); }} onSeguent={() => startTransition(() => (pIdx + 1 < itemsUs.length ? setPIdx(pIdx + 1) : seguentArea()))} /> : null}</div>;
   }
   if (area.id === 'escrit') {
     const tk = tasquesEscrit[pIdx];
-    return <div>{cap}{tk ? <Editor key={tk.id} idioma={idioma} tasca={tk} regles={regles} context="simulacre" senseQuota onCorregit={(r: ResultatCorreccio) => { setEscrit((e) => [...e, r.nota.percent]); }} /> : null}<button type="button" className="boton mt-3 w-full" disabled={escrit.length <= pIdx} onClick={() => (pIdx + 1 < tasquesEscrit.length ? setPIdx(pIdx + 1) : seguentArea())}>{pIdx + 1 < tasquesEscrit.length ? t(idioma).practica.seguent : d.seguentArea}</button></div>;
+    return <div>{cap}{tk ? <Editor key={tk.id} idioma={idioma} tasca={tk} regles={regles} context="simulacre" senseQuota onCorregit={(r: ResultatCorreccio) => { setEscrit((e) => [...e, r.nota.percent]); }} /> : null}<button type="button" className="boton-ocre mt-4 w-full" disabled={escrit.length <= pIdx} onClick={() => (pIdx + 1 < tasquesEscrit.length ? setPIdx(pIdx + 1) : seguentArea())}>{pIdx + 1 < tasquesEscrit.length ? t(idioma).practica.seguent : d.seguentArea}</button></div>;
   }
   const pre = preguntesDe(area.id as 'co' | 'lectura');
   const act = pre[pIdx];
-  if (!act) return <div>{cap}<button type="button" className="boton w-full" onClick={seguentArea}>{d.seguentArea}</button></div>;
+  if (!act) return <div>{cap}<button type="button" className="boton-ocre w-full" onClick={seguentArea}>{d.seguentArea}</button></div>;
   const n = escoltes[act.tx.id] ?? 0;
   return (
     <div>{cap}
@@ -121,12 +129,12 @@ function PreguntaSim({ idioma, tx, p, audio, escoltes, onEscoltar, onResposta, n
   const d = t(idioma).simulacre;
   const [sel, setSel] = useState<number | null>(null);
   return (
-    <div className="tarjeta">
-      <p className="text-xs text-suave">{numero} · {tx.titol}</p>
-      {audio ? <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={onEscoltar}>🔊 {d.escoltar}</button><span className="text-xs text-suave">{d.escoltat(escoltes)}</span></div> : <div className="prosa my-3 max-h-80 overflow-y-auto rounded-xl bg-crema p-3 text-sm">{tx.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
-      <p className="font-semibold">{p.enunciat}</p>
-      <div className="mt-3 grid gap-2">{p.opcions.map((o, i) => <button key={i} type="button" className={`opcio ${sel === i ? 'border-nit ring-1 ring-nit' : ''}`} onClick={() => setSel(i)}>{o}</button>)}</div>
-      <button type="button" className="boton mt-4 w-full" disabled={sel === null} onClick={() => onResposta(sel === p.resposta)}>{t(idioma).practica.seguent}</button>
+    <div className="full" style={{ viewTransitionName: 'item' }}>
+      <p className="full-cap"><span><span className="num text-nit">{numero}</span> · {tx.titol}</span></p>
+      {audio ? <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={onEscoltar}>{t(idioma).nou.escolta}</button><span className="text-[13px] text-terciari">{d.escoltat(escoltes)}</span></div> : <div className="prosa my-3 max-h-80 overflow-y-auto rounded-[6px] bg-crema p-3 text-[15px]">{tx.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
+      <p className="text-[19px] font-semibold leading-snug">{p.enunciat}</p>
+      <div className="mt-4 grid gap-2" role="radiogroup">{p.opcions.map((o, i) => <button key={i} type="button" role="radio" aria-checked={sel === i} className={`opcio ${sel === i ? 'opcio-sel' : ''}`} onClick={() => setSel(i)}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>)}</div>
+      <button type="button" className="boton mt-5 w-full" disabled={sel === null} onClick={() => onResposta(sel === p.resposta)}>{t(idioma).practica.seguent}</button>
     </div>
   );
 }

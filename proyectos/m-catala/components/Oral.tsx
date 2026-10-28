@@ -74,25 +74,25 @@ export default function Oral({ idioma, lectures, sons, nivell, compacte, onResul
   const paraulesClau = Object.keys(lectura.paraulesClau);
   return (
     <div className="grid gap-3">
-      {!compacte && llista.length > 1 ? <div className="flex gap-2 overflow-x-auto pb-1">{llista.map((l) => <button key={l.id} type="button" className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${l.id === lectura.id ? 'border-nit bg-ocre-claro' : 'border-[#D8CDBB] bg-white'}`} onClick={() => setLectura(l)}>{l.titol}</button>)}</div> : null}
-      <div className="tarjeta">
-        <p className="text-xs text-suave">{d.sons}: {lectura.sons.map((id) => sons.find((s) => s.id === id)?.nom[idioma] ?? id).join(' · ')}</p>
-        <p className="mt-3 text-lg leading-relaxed">{lectura.text.split(/(\s+)/).map((w, i) => { const net = w.toLowerCase().replace(/[^\p{L}'·-]/gu, ''); const clau = paraulesClau.includes(net); const okR = res ? res.sons.flatMap((s) => s.paraules).find((p) => p.paraula.toLowerCase() === net) : null; return <span key={i} className={clau ? `rounded px-0.5 ${okR ? (okR.ok ? 'bg-oliva-claro' : 'bg-[#FBE7E9] text-mal') : 'bg-ocre-claro'}` : ''}>{w}</span>; })}</p>
-        <div className="mt-4 flex items-center gap-2">
-          {estat === 'idle' || estat === 'fet' ? <button type="button" className="boton-ocre" onClick={gravar} disabled={!!esgotada}>🎙 {estat === 'fet' ? d.tornar : d.gravar}</button> : null}
-          {estat === 'gravant' ? <button type="button" className="boton" onClick={parar}>■ {d.parar}</button> : null}
-          {estat === 'analitzant' ? <span className="text-sm text-suave">{d.analitzant}</span> : null}
-          {quota ? <span className="ml-auto text-xs text-suave">{quota.premium ? t(idioma).comu.premium : d.quota(Math.floor(quota.segons / 60), Math.floor(quota.limit / 60))}</span> : null}
+      {!compacte && llista.length > 1 ? <div className="flex gap-2 overflow-x-auto pb-1" role="tablist">{llista.map((l) => <button key={l.id} type="button" role="tab" aria-selected={l.id === lectura.id} className={`shrink-0 rounded-full border px-3 py-1.5 text-[14px] font-semibold ${l.id === lectura.id ? 'border-nit bg-nit text-white' : 'border-linia bg-paper text-secundari'}`} onClick={() => setLectura(l)}>{l.titol}</button>)}</div> : null}
+      <div className="full">
+        <p className="full-cap">{d.sons}: {lectura.sons.map((id) => sons.find((s) => s.id === id)?.nom[idioma] ?? id).join(' · ')}</p>
+        <p className="mt-4 text-[21px] leading-relaxed">{lectura.text.split(/(\s+)/).map((w, i) => { const net = w.toLowerCase().replace(/[^\p{L}'·-]/gu, ''); const clau = paraulesClau.includes(net); const okR = res ? res.sons.flatMap((s) => s.paraules).find((p) => p.paraula.toLowerCase() === net) : null; return <span key={i} className={clau ? `rounded px-0.5 ${okR ? (okR.ok ? 'bg-oliva-tenue' : 'bg-vermell-tenue text-vermell') : 'bg-ocre-tenue'}` : ''}>{w}</span>; })}</p>
+        <div className="mt-5 flex items-center gap-2">
+          {estat === 'idle' || estat === 'fet' ? <button type="button" className="boton-ocre" onClick={gravar} disabled={!!esgotada}><span className="inline-block h-2.5 w-2.5 rounded-full bg-vermell" aria-hidden="true" />{estat === 'fet' ? d.tornar : d.gravar}</button> : null}
+          {estat === 'gravant' ? <button type="button" className="boton" onClick={parar}><span className="inline-block h-2.5 w-2.5 rounded-sm bg-white" aria-hidden="true" />{d.parar}</button> : null}
+          {estat === 'analitzant' ? <span className="text-[15px] text-secundari" aria-live="polite">{d.analitzant}</span> : null}
+          {quota ? <span className="ml-auto text-[13px] text-terciari">{quota.premium ? t(idioma).comu.premium : d.quota(Math.floor(quota.segons / 60), Math.floor(quota.limit / 60))}</span> : null}
         </div>
-        {err ? <p className="mt-2 text-sm text-mal">{err}</p> : null}
+        {err ? <p className="mt-2 text-[15px] text-vermell" role="alert">{err}</p> : null}
       </div>
       {res ? (
-        <div className="tarjeta">
-          <div className="flex items-baseline justify-between"><p className="font-semibold">{d.resultat}</p><p className="titulos text-3xl font-bold">{res.global} %</p></div>
-          <p className="text-xs text-suave">{d.paraulesBe(res.paraulesOk, res.paraulesTotal)} · {d.metode[res.metode]}</p>
-          {res.transcripcio ? <p className="mt-2 rounded-lg bg-crema p-2 text-sm italic">{d.transcripcio}: «{res.transcripcio.trim()}»</p> : null}
-          <div className="mt-3 grid gap-3">{res.sons.map((s) => { const def = sons.find((x) => x.id === s.id); return <div key={s.id}><div className="flex items-center justify-between text-sm"><span className="font-semibold">{def?.nom[idioma] ?? s.id}</span><span>{s.puntuacio} %</span></div><div className="barra mt-1"><span style={{ width: `${s.puntuacio}%`, background: s.puntuacio < 50 ? '#C62F3B' : s.puntuacio < 80 ? '#E0B23A' : '#7A8F3C' }} /></div><p className="mt-1 text-xs text-suave">{s.paraules.map((p) => <span key={p.paraula} className={p.ok ? 'mr-2' : 'mr-2 text-mal line-through'}>{p.paraula}</span>)}</p>{def && s.puntuacio < 80 ? <p className="mt-1 text-xs"><strong>{d.pista}:</strong> {def.pista?.[idioma] ?? def.descripcio[idioma]}</p> : null}</div>; })}</div>
-          <p className="mt-3 text-xs text-suave">{d.aproximat}</p>
+        <div aria-live="polite">
+          <div className="flex items-baseline justify-between"><p className="text-[15px] text-secundari">{d.resultat}</p><p className="num text-[40px] leading-none">{res.global}<span className="text-[20px] text-terciari">%</span></p></div>
+          <p className="text-[13px] text-terciari">{d.paraulesBe(res.paraulesOk, res.paraulesTotal)} · {d.metode[res.metode]}</p>
+          {res.transcripcio ? <p className="mt-3 rounded-[6px] bg-crema p-3 text-[15px] italic">{d.transcripcio}: «{res.transcripcio.trim()}»</p> : null}
+          <div className="mt-5 grid gap-4">{res.sons.map((s) => { const def = sons.find((x) => x.id === s.id); return <div key={s.id}><div className="flex items-baseline justify-between text-[15px]"><span className="font-semibold">{def?.nom[idioma] ?? s.id}</span><span className="num">{s.puntuacio} %</span></div><div className="barra mt-1.5"><span style={{ width: `${s.puntuacio}%`, background: s.puntuacio < 50 ? '#B9342E' : s.puntuacio < 80 ? '#E0B23A' : '#7A8F3C' }} /></div><p className="mt-1 text-[14px] text-secundari">{s.paraules.map((p) => <span key={p.paraula} className={p.ok ? 'mr-2' : 'mr-2 text-vermell line-through'}>{p.paraula}</span>)}</p>{def && s.puntuacio < 80 ? <p className="regla mt-2 text-[14px]"><strong>{d.pista}:</strong> {def.pista?.[idioma] ?? def.descripcio[idioma]}</p> : null}</div>; })}</div>
+          <p className="mt-4 text-[13px] text-terciari">{d.aproximat}</p>
         </div>
       ) : null}
     </div>

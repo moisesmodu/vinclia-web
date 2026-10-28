@@ -12,11 +12,11 @@ export default async function Pagina({ params, searchParams }: { params: Promise
   const fins = u.subscripcioFins ? u.subscripcioFins.toLocaleDateString(idioma === 'ca' ? 'ca-ES' : 'es-ES') : '';
   return (
     <div className="contenedor max-w-xl py-8">
-      <h1 className="text-2xl font-bold">{d.titol}</h1>
-      {sp.pagat ? <p className="mt-3 rounded-lg bg-oliva-claro p-3 text-sm">{sp.pagat === 'demo' ? d.demo : d.pagat}</p> : null}
-      <div className="tarjeta mt-4 text-sm">
+      <h1>{d.titol}</h1>
+      {sp.pagat ? <p className="mt-3 rounded-lg bg-oliva-tenue p-3 text-sm">{sp.pagat === 'demo' ? d.demo : d.pagat}</p> : null}
+      <div className="full mt-5 text-[15px]">
         <p>{u.email}</p>
-        <p className="mt-2">{d.pla}: <strong>{premium ? (u.subscripcioEstat === 'passi' ? d.passi : d.actiu) : d.gratis}</strong>{premium && fins ? <> · {u.cancelaAlFinal ? `${d.cancelada} ${fins}` : `${d.fins} ${fins}`}</> : null}{u.pla ? <span className="text-suave"> ({t(idioma).preus.plans[u.pla] ?? u.pla})</span> : null}</p>
+        <p className="mt-2">{d.pla}: <strong>{premium ? (u.subscripcioEstat === 'passi' ? d.passi : d.actiu) : d.gratis}</strong>{premium && fins ? <> · {u.cancelaAlFinal ? `${d.cancelada} ${fins}` : `${d.fins} ${fins}`}</> : null}{u.pla ? <span className="text-secundari"> ({t(idioma).preus.plans[u.pla] ?? u.pla})</span> : null}</p>
         <AccionsCompte idioma={idioma} cancelaAlFinal={u.cancelaAlFinal} premium={premium && u.subscripcioEstat !== 'passi'} teStripe={modoPago() === 'stripe' && !!u.stripeCustomerId} />
       </div>
     </div>

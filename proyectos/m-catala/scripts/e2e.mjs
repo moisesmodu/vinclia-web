@@ -23,26 +23,28 @@ const t0 = Date.now();
 
 await p.goto(`${BASE}/`); await p.waitForURL(/\/(ca|es)$/); pas('redirecció per idioma → ' + p.url()); await shot('01-inici');
 await p.goto(`${BASE}/ca/comencar`);
-await p.getByRole('button', { name: /C1/ }).first().click();
-await p.getByRole('button', { name: /DPL · prova de C1/ }).click();
+await p.getByRole('radio', { name: /C1/ }).first().click();
+await p.getByRole('radio', { name: /DPL · prova de C1/ }).click();
 await p.getByRole('button', { name: 'Següent' }).click();
-await p.getByRole('button', { name: 'Oposicions' }).click();
-await p.getByRole('button', { name: 'Castellà' }).click();
+await p.getByRole('radio', { name: 'Oposicions' }).click();
+await p.getByRole('radio', { name: 'Castellà' }).click();
 await p.getByRole('button', { name: 'Següent' }).click();
-await p.getByRole('button', { name: /^15 min/ }).click();
-await p.getByRole('button', { name: 'Castellano' }).click();
+await p.getByRole('radio', { name: /^15/ }).click();
+await p.getByRole('radio', { name: 'Castellano' }).click();
 await shot('02-comencar');
 await p.getByRole('button', { name: 'Començar el diagnòstic' }).click();
 await p.waitForURL(/\/ca\/diagnostic/); pas('entrada en 3 pantalles');
 
 // Bloc ús de la llengua (adaptatiu): respon fins que canviï de bloc.
 async function respondreItem() {
-  await p.waitForSelector('button.opcio, input.campo, textarea.campo', { timeout: 15000 });
+  await p.waitForSelector('button.opcio, input.campo, textarea.campo', { timeout: 15000 }); await p.waitForTimeout(350); /* transició entre ítems */
+  if (await p.locator('text=/^Resultat ·/').count()) return false; /* ja s'ha acabat la sessió */
   const opcions = p.locator('button.opcio');
   if (await opcions.count()) await opcions.nth(0).click();
-  else { const camp = p.locator('input.campo, textarea.campo').first(); await camp.fill('hi'); }
+  else { const camp = p.locator('input.campo, textarea.campo').first(); if (!(await camp.count())) return false; await camp.fill('hi'); }
   await p.getByRole('button', { name: 'Comprovar' }).click();
   await p.waitForTimeout(150);
+  return true;
 }
 for (let i = 0; i < 12; i++) {
   await respondreItem();
@@ -51,7 +53,7 @@ for (let i = 0; i < 12; i++) {
 }
 pas('bloc d\'ús de la llengua (12 ítems adaptatius)');
 // Lectura
-for (let i = 0; i < 8; i++) { if (!(await p.locator('text=/Comprensió lectora/').count())) break; await p.locator('button.opcio').nth(0).click(); await p.getByRole('button', { name: 'Comprovar' }).click(); await p.getByRole('button', { name: 'Següent' }).click(); }
+for (let i = 0; i < 8; i++) { await p.waitForTimeout(450); if (!(await p.locator('text=/Comprensió lectora/').count())) break; await p.locator('button.opcio').nth(0).click(); await p.getByRole('button', { name: 'Comprovar' }).click(); await p.getByRole('button', { name: 'Següent' }).click(); }
 pas('bloc de lectura'); await shot('04-diagnostic-escrit');
 // Escrit
 await p.locator('textarea.campo').fill('Benvolgut company, et volia demanar un canvi de torn per a la setmana vinent. Tinc una visita mèdica dijous al matí i no la puc moure. Podríem canviar el torn de dijous pel de divendres? Si no et va bé, també em va bé dimecres a la tarda. Moltes gràcies per endavant i disculpa les molèsties. Salutacions cordials, Marta.');
@@ -59,19 +61,19 @@ await p.getByRole('button', { name: 'Enviar' }).click();
 await p.waitForSelector('text=Lectura en veu alta', { timeout: 70000 }); pas('text breu corregit per criteris');
 await p.getByRole('button', { name: 'Saltar aquest bloc' }).click();
 await p.waitForSelector("text=Probabilitat d'aprovar avui", { timeout: 20000 });
-const prob = await p.locator('p.titulos').first().innerText(); pas(`resultat del diagnòstic: ${prob.trim()}`); await shot('05-resultat');
+const prob = (await p.locator('[role="img"][aria-label*="%"]').first().getAttribute('aria-label')) ?? ''; pas(`resultat del diagnòstic: ${prob.trim()}`); await shot('05-resultat');
 if (!(await p.locator('text=Els 3 punts febles').count()) || !(await p.locator('text=Els 3 sons').count())) errors.push('falten punts febles o sons al resultat');
 await p.getByRole('link', { name: 'Crear el meu pla' }).click();
 await p.waitForURL(/\/ca\/avui/);
-await p.getByRole('button', { name: '14 dies' }).click(); await p.getByRole('button', { name: 'Em comprometo' }).click();
-await p.waitForSelector('text=Ratxa'); pas('Avui amb compromís, ratxa i pla'); await shot('06-avui');
+await p.getByRole('radio', { name: '14 dies' }).click(); await p.getByRole('button', { name: 'Em comprometo' }).click();
+await p.waitForSelector('text=/congelacions|congelaciones/'); pas('Avui amb compromís, ratxa i pla'); await shot('06-avui');
 if (!(await p.locator('text=/dies per a la prova|dies/').count())) errors.push('Avui sense dies per a la prova');
 
 // Pràctica: minisessió amb FSRS
 await p.goto(`${BASE}/ca/practica/mini`);
-await p.waitForSelector('button.opcio, input.campo, textarea.campo', { timeout: 15000 });
-for (let i = 0; i < 6; i++) { if (await p.locator('text=Resultat').count()) break; await respondreItem(); const seg = p.getByRole('button', { name: /Següent|Acabar/ }); if (await seg.count()) await seg.click(); else break; }
-await p.waitForSelector('text=Resultat', { timeout: 10000 }); pas('minisessió de 2 minuts'); await shot('07-practica');
+await p.waitForSelector('button.opcio, input.campo, textarea.campo', { timeout: 15000 }); await p.waitForTimeout(350); /* transició entre ítems */
+for (let i = 0; i < 6; i++) { if (await p.locator('text=/^Resultat ·/').count()) break; if (!(await respondreItem())) break; const seg = p.getByRole('button', { name: /Següent|Acabar/ }); if (await seg.count()) await seg.click(); else break; }
+await p.waitForSelector('text=/^Resultat ·/', { timeout: 10000 }); pas('minisessió de 2 minuts'); await shot('07-practica');
 await p.goto(`${BASE}/ca/mapa`); await p.waitForSelector('text=Mapa de domini'); pas('mapa de domini'); await shot('08-mapa');
 
 // Simulacre C1 complet
@@ -84,8 +86,8 @@ await p.getByRole('button', { name: 'Enviar a corregir' }).click();
 await p.waitForSelector('text=Nota prevista', { timeout: 70000 }); pas('àrea 1: redacció corregida amb la rúbrica'); await shot('09-simulacre-escrit');
 await p.getByRole('button', { name: 'Següent àrea' }).click();
 await p.waitForSelector('text=Àrea 2');
-for (let i = 0; i < 45; i++) { if (!(await p.locator('text=Àrea 2').count())) break; await respondreItem(); }
-await p.waitForSelector('text=Resultat del simulacre', { timeout: 20000 }); pas('àrea 2: 45 ítems; resultat apte/no apte'); await shot('10-simulacre-resultat');
+for (let i = 0; i < 45; i++) { if (!(await p.locator('text=Àrea 2').count())) break; if (!(await respondreItem())) break; }
+await p.waitForSelector('.segell[role="status"]', { timeout: 20000 }); pas('àrea 2: 45 ítems; resultat apte/no apte'); await shot('10-simulacre-resultat');
 
 // Correcció escrita independent (quota)
 await p.goto(`${BASE}/ca/escriure`); await p.waitForSelector('text=Escriure'); pas('llista de tasques escrites');

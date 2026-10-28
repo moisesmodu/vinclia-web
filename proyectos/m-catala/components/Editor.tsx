@@ -12,7 +12,7 @@ export function Temporitzador({ segons, onFi }: { segons: number; onFi?: () => v
   const fi = useRef(onFi); fi.current = onFi;
   useEffect(() => { const id = setInterval(() => setResta((r) => { if (r <= 1) { clearInterval(id); fi.current?.(); return 0; } return r - 1; }), 1000); return () => clearInterval(id); }, [segons]);
   const m = Math.floor(resta / 60), s = resta % 60;
-  return <span className={`tabular-nums font-semibold ${resta < 120 ? 'text-mal' : ''}`}>{m}:{String(s).padStart(2, '0')}</span>;
+  return <span className={`num text-[18px] ${resta < 120 ? 'text-vermell' : ''}`}>{m}:{String(s).padStart(2, '0')}</span>;
 }
 
 /** Editor d'expressió escrita amb cronòmetre i límit de paraules; correcció per criteris en menys de 60 segons. */
@@ -47,31 +47,31 @@ export default function Editor({ idioma, tasca, regles, context, onCorregit, sen
   if (res) return (
     <div>
       <Correccio idioma={idioma} r={res} text={text} regles={regles} onReescriure={() => setRes(null)} />
-      {!context ? <div className="mt-4 flex gap-2"><Link className="boton-sec flex-1" href={`/${idioma}/escriure`}>{d.altraTasca}</Link><Link className="boton flex-1" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div> : null}
+      {!context ? <div className="mt-6 flex gap-2"><Link className="boton-sec flex-1" href={`/${idioma}/escriure`}>{d.altraTasca}</Link><Link className="boton-ocre flex-1" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div> : null}
     </div>
   );
 
   return (
-    <div className="tarjeta">
+    <div className="full">
       <div className="flex items-start justify-between gap-3">
-        <div><p className="text-xs uppercase tracking-wide text-suave">{tasca.nivell} · {tasca.tipus} · {tasca.paraulesMin}–{tasca.paraulesMax} {d.paraules}</p><h2 className="mt-1 text-lg font-bold">{tasca.titol}</h2></div>
-        <div className="text-right text-sm"><p className="text-xs text-suave">{d.temps}</p><Temporitzador segons={tasca.minuts * 60} /></div>
+        <div className="min-w-0"><p className="full-cap">{tasca.nivell} · {tasca.paraulesMin}–{tasca.paraulesMax} {d.paraules} · {tasca.minuts} min</p><h2 className="mt-1 text-[22px]">{tasca.titol}</h2></div>
+        <div className="shrink-0 text-right"><p className="text-[12px] text-terciari">{d.temps}</p><Temporitzador segons={tasca.minuts * 60} /></div>
       </div>
-      <p className="mt-3 leading-relaxed">{tasca.enunciat}</p>
+      <p className="mt-4 text-[17px] leading-relaxed">{tasca.enunciat}</p>
       {tasca.fonts?.length ? (
         <div className="mt-3">
-          <button type="button" className="text-sm font-semibold underline" onClick={() => setFontsObertes((v) => !v)}>{d.fonts} ({tasca.fonts.length})</button>
-          {fontsObertes ? <div className="mt-2 grid gap-2">{tasca.fonts.map((f, i) => <div key={i} className="rounded-xl bg-crema p-3 text-sm"><p className="font-semibold">{f.titol}</p><p className="mt-1 leading-relaxed">{f.text}</p></div>)}</div> : null}
+          <button type="button" className="boton-text text-[15px]" aria-expanded={fontsObertes} onClick={() => setFontsObertes((v) => !v)}>{d.fonts} ({tasca.fonts.length})</button>
+          {fontsObertes ? <div className="mt-2 grid gap-2">{tasca.fonts.map((f, i) => <div key={i} className="rounded-[6px] bg-crema p-3 text-[15px]"><p className="font-semibold">{f.titol}</p><p className="mt-1 leading-relaxed">{f.text}</p></div>)}</div> : null}
         </div>
       ) : null}
-      <textarea className="campo mt-4 min-h-64" value={text} onChange={(e) => setText(e.target.value)} lang="ca" spellCheck={false} placeholder={t(idioma).diag.escriu} />
-      <div className="mt-2 flex items-center justify-between text-sm text-suave">
-        <span className={paraules < tasca.paraulesMin || paraules > tasca.paraulesMax ? 'text-mal' : 'text-ok'}>{paraules} {d.paraules}</span>
+      <textarea className="campo mt-4 min-h-64 text-[17px]" value={text} onChange={(e) => setText(e.target.value)} lang="ca" spellCheck={false} placeholder={`${t(idioma).diag.escriu}…`} aria-label={tasca.titol} />
+      <div className="mt-2 flex items-center justify-between text-[14px] text-secundari">
+        <span className={`tab ${paraules < tasca.paraulesMin || paraules > tasca.paraulesMax ? 'text-vermell' : 'text-oliva'}`}>{paraules} {d.paraules}</span>
         {quota && !senseQuota ? <span>{quota.premium ? t(idioma).comu.premium : d.quota(quota.correccions, quota.limit)}</span> : null}
       </div>
-      {err ? <p className="mt-2 text-sm text-mal">{err}</p> : null}
-      {esgotada ? <p className="mt-2 rounded-lg bg-ocre-claro p-3 text-sm">{d.quotaEsgotada} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
-      <button type="button" className="boton mt-3 w-full" disabled={enviant || paraules < Math.round(tasca.paraulesMin * 0.6) || !!esgotada} onClick={enviar}>{enviant ? d.corregint : d.enviar}</button>
+      {err ? <p className="mt-2 text-[15px] text-vermell" role="alert">{err}</p> : null}
+      {esgotada ? <p className="mt-2 rounded-[6px] bg-ocre-tenue p-3 text-[15px]">{d.quotaEsgotada} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
+      <button type="button" className="boton-ocre mt-4 w-full" disabled={enviant || paraules < Math.round(tasca.paraulesMin * 0.6) || !!esgotada} onClick={enviar}>{enviant ? d.corregint : d.enviar}</button>
     </div>
   );
 }
