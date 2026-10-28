@@ -122,3 +122,15 @@ Repetir el paso 3 con `STRIPE_SECRET_KEY` (modo real) y cambiar en Vercel `STRIP
 Ejecutado el 2026-10-28
 
 Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://nuevo-en-espana.vercel.app (aviso legal con NIF comprobado). Pendiente: pago de prueba con la tarjeta 4242.
+
+## Estado tras la sesión de N (28/10/2026, noche)
+- **Identidad de marca aplicada en el código** (commit `54351fe` y siguientes, PR #3), **sin publicar todavía**: el
+  despliegue a producción desde la sesión en la nube lo bloqueó el control de permisos. Para publicarla, desde la raíz
+  de una copia limpia de la rama (`git archive HEAD | tar -x -C <dir>`):
+  `npx vercel@latest link --yes --project nuevo-en-espana` y `npx vercel@latest deploy --prod --yes` (con
+  `--token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID` si no hay sesión del CLI). No hace falta tocar variables ni Stripe.
+- **Comprobado en producción** (versión anterior a la marca): portada y guías en 7 idiomas, sitemap y manifiesto 200;
+  guía de pago sin sesión 401; webhook sin firma 400; cron sin secreto 401; `/api/checkout` devuelve una sesión
+  `cs_test_` de Stripe para la suscripción y para el pack; aviso legal con los datos de `LEGAL_*`.
+- **Pendiente:** completar el pago con la tarjeta 4242. La red de la sesión en la nube no deja abrir
+  `checkout.stripe.com` (solo `api.stripe.com`); hacerlo desde el navegador del Mac o añadir ese dominio a la red del entorno.
