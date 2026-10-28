@@ -79,3 +79,30 @@ llega hasta la página de Checkout y comprueba el resto del flujo.
 ## Después
 Anotar en `panel/data/proyectos.json` (ficha `b-oposiciones`): `enlaces.demo` = la URL, `estado` = `lanzado`, y push a la
 rama base. Crear la tarea programada con el prompt de `TAREA-PROGRAMADA.md`.
+
+## Cómo se ejecutó (sesión del Mac, 28-10-2026)
+- Vercel: proyecto `aprova-oposicions` (Node 22) creado con el CLI ya autenticado en el Mac (sin `VERCEL_TOKEN`), Root
+  Directory `proyectos/b-oposiciones`. URL de producción: https://aprova-oposicions.vercel.app
+- Neon: recurso `cartera-b-oposiciones` (región `lhr1`, Londres, plan gratis) creado con la integración de Neon del equipo
+  de Vercel (sin `NEON_API_KEY`); `DATABASE_URL` y `DATABASE_URL_UNPOOLED` las pone la integración. Tablas creadas por el build.
+- Stripe: recurso `numi-mates` de la integración de Stripe del equipo conectado al proyecto. Pone `STRIPE_SECRET_KEY` (`sk_test_`)
+  del «Entorno de prueba de Numi Mates» (`acct_1UKvWA9ds25vHCsF`, sandbox), que `lib/pagos.ts` acepta con `STRIPE_MODO=prueba`.
+  `scripts/stripe-preparar.mjs` creó ahí los tres precios y el webhook; `STRIPE_WEBHOOK_SECRET` está en Vercel.
+- Faltan (los pone Moisés en Vercel → aprova-oposicions → Settings → Environment Variables): `LEGAL_NOM`, `LEGAL_NIF`,
+  `LEGAL_EMAIL`, `LEGAL_ADRECA` y `RESEND_API_KEY`. Falta también el pago de prueba con la tarjeta 4242 (paso 6) y la
+  tarea programada de `TAREA-PROGRAMADA.md`.
+
+Ejecutado el 2026-10-28
+
+## Pendiente tras la marca (para la sesión del Mac)
+El despliegue de arriba se hizo antes de aplicar la identidad de marca. La rama ya lleva **Plaça** (MARCAS.md §4); el nombre
+«Aprova» pasa al proyecto M. Pasos:
+1. Renombrar el proyecto de Vercel `aprova-oposicions` a `placa-oposicions` (Settings → General → Project Name), o crear el
+   dominio `placa-oposicions.vercel.app` en Settings → Domains, y poner `NEXT_PUBLIC_URL=https://placa-oposicions.vercel.app`.
+2. Volver a registrar el webhook con la URL nueva: `node scripts/stripe-preparar.mjs https://placa-oposicions.vercel.app`
+   (sustituye el anterior) y actualizar `STRIPE_WEBHOOK_SECRET`.
+3. Poner en Vercel `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` y `RESEND_API_KEY` (ya están como secretos del
+   entorno; SESIONES.md regla 3: no se le piden a Moisés). Remitente: `Plaça <noreply@numimates.com>`.
+4. Redesplegar (`vercel deploy --prod`) y hacer el pago de prueba con 4242 4242 4242 4242 en `/es/precios`.
+5. Anotar la URL definitiva en `panel/data/proyectos.json` (ficha `b-oposiciones`, `enlaces.demo`).
+Los precios ya creados en Stripe sirven: el nombre del producto es «Cartera · Oposiciones · <Plan>» y no cambia con la marca.
