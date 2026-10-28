@@ -1,26 +1,29 @@
 ---
 // Formulario + resultado de una calculadora. El resultado con los valores por defecto se calcula en el
 // servidor, así la página tiene un ejemplo real sin JavaScript y el LCP es texto estático.
+// Variante «mini» (portada): solo los campos indicados en `solo` y un enlace a la calculadora completa.
 import { t, valoresPorDefecto, type DefCalc, type Lang } from '../lib/def';
 import { renderResultado } from '../lib/render';
 import { params } from '../lib/params';
 import { UI } from '../lib/ui';
+import Campo from './Campo.astro';
 
-interface Props { d: DefCalc; lang: Lang; pais: string; anio: number; anios: number[]; provisionales: number[] }
-const { d, lang, pais, anio, anios, provisionales } = Astro.props;
+interface Props { d: DefCalc; lang: Lang; pais: string; anio: number; anios: number[]; provisionales: number[]; solo?: string[]; completa?: { href: string; texto: string } }
+const { d, lang, pais, anio, anios, provisionales, solo, completa } = Astro.props;
+const mini = !!solo;
 const v = valoresPorDefecto(d, anio);
 const resultado = d.calcular(v, { P: params(pais, anio), lang, pais });
 const html = renderResultado(resultado, lang);
 const u = UI[lang];
 const FAMILIA = ['situacion', 'edad', 'hijos', 'menores3', 'enteros', 'discapacidad'];
-const principales = d.campos.filter((c) => !FAMILIA.includes(c.id));
-const familiares = d.campos.filter((c) => FAMILIA.includes(c.id));
-const grupos = [{ campos: principales, det: false }, ...(familiares.length ? [{ campos: familiares, det: true }] : [])];
+const visibles = mini ? d.campos.filter((c) => solo!.includes(c.id)) : d.campos;
+const principales = visibles.filter((c) => mini || !FAMILIA.includes(c.id));
+const familiares = mini ? [] : visibles.filter((c) => FAMILIA.includes(c.id));
 ---
-<section class="calc" data-calc={d.id} data-lang={lang} data-pais={pais} data-anio={anio} aria-labelledby="calc-t">
-  <h2 id="calc-t" class="vh">{u.calculadora}</h2>
+<section class:list={['calc', { mini }]} data-calc={d.id} data-lang={lang} data-pais={pais} data-anio={anio} aria-labelledby={mini ? undefined : 'calc-t'} aria-label={mini ? u.calculadora : undefined}>
+  {!mini && <h2 id="calc-t" class="vh">{u.calculadora}</h2>}
   <form class="calc-form" novalidate>
-    {d.anual && (
+    {d.anual && !mini && (
       <div class="campo campo-anio">
         <label for="f-anio">{u.anio}</label>
         <select id="f-anio" name="anio">
@@ -28,69 +31,31 @@ const grupos = [{ campos: principales, det: false }, ...(familiares.length ? [{ 
         </select>
       </div>
     )}
-    {grupos.map((g) => g.det ? (
+    {principales.map((c) => <Campo c={c} lang={lang} v={v} />)}
+    {familiares.length > 0 && (
       <details class="grupo-fam">
         <summary>{lang === 'es' ? 'Situación personal y familiar (opcional)' : 'Situació personal i familiar (opcional)'}</summary>
-        <div class="grupo-campos">
-{g.campos.map((c) => (
-      <div class={`campo campo-${c.tipo}`} data-campo={c.id} hidden={c.si ? !c.si(v) : false}>
-        {c.tipo === 'casilla' ? (
-          <label class="casilla"><input type="checkbox" id={`f-${c.id}`} name={c.id} checked={c.def} /> <span>{t(c.etiqueta, lang)}</span></label>
-        ) : (
-          <label for={`f-${c.id}`}>{t(c.etiqueta, lang)}</label>
-        )}
-        {c.tipo === 'numero' && (
-          <div class="entrada">
-            <input type="number" inputmode="decimal" id={`f-${c.id}`} name={c.id} value={c.def} min={c.min} max={c.max} step={c.paso ?? 'any'} />
-            {c.sufijo && <span class="sufijo" aria-hidden="true">{c.sufijo}</span>}
-          </div>
-        )}
-        {c.tipo === 'select' && (
-          <select id={`f-${c.id}`} name={c.id}>
-            {c.opciones.map((o) => <option value={o.v} selected={o.v === c.def}>{t(o.t, lang)}</option>)}
-          </select>
-        )}
-        {c.tipo === 'fecha' && <input type="date" id={`f-${c.id}`} name={c.id} value={c.def} />}
-        {c.ayuda && <small class="ayuda">{t(c.ayuda, lang)}</small>}
-      </div>
-    ))}
-        </div>
+        <div class="grupo-campos">{familiares.map((c) => <Campo c={c} lang={lang} v={v} />)}</div>
       </details>
-    ) : (
-      <Fragment>
-{g.campos.map((c) => (
-      <div class={`campo campo-${c.tipo}`} data-campo={c.id} hidden={c.si ? !c.si(v) : false}>
-        {c.tipo === 'casilla' ? (
-          <label class="casilla"><input type="checkbox" id={`f-${c.id}`} name={c.id} checked={c.def} /> <span>{t(c.etiqueta, lang)}</span></label>
-        ) : (
-          <label for={`f-${c.id}`}>{t(c.etiqueta, lang)}</label>
-        )}
-        {c.tipo === 'numero' && (
-          <div class="entrada">
-            <input type="number" inputmode="decimal" id={`f-${c.id}`} name={c.id} value={c.def} min={c.min} max={c.max} step={c.paso ?? 'any'} />
-            {c.sufijo && <span class="sufijo" aria-hidden="true">{c.sufijo}</span>}
-          </div>
-        )}
-        {c.tipo === 'select' && (
-          <select id={`f-${c.id}`} name={c.id}>
-            {c.opciones.map((o) => <option value={o.v} selected={o.v === c.def}>{t(o.t, lang)}</option>)}
-          </select>
-        )}
-        {c.tipo === 'fecha' && <input type="date" id={`f-${c.id}`} name={c.id} value={c.def} />}
-        {c.ayuda && <small class="ayuda">{t(c.ayuda, lang)}</small>}
-      </div>
-    ))}
-      </Fragment>
-    ))}
+    )}
     <noscript><p class="ayuda">{u.sinJs}</p></noscript>
   </form>
   <div class="calc-out">
     <div class="res" aria-live="polite" set:html={html} />
-    <div class="calc-acciones">
-      <button type="button" data-accion="compartir" class="btn-sec"><span class="ok-no">{u.compartir}</span><span class="ok-si">{u.copiado}</span></button>
-      <button type="button" data-accion="imprimir" class="btn-sec">{u.imprimir}</button>
-    </div>
+    {mini ? (
+      completa && <a class="btn btn-claro" data-completa href={completa.href}>{completa.texto} <span aria-hidden="true">→</span></a>
+    ) : (
+      <div class="calc-acciones">
+        <button type="button" data-accion="compartir" class="btn-sec"><span class="ok-no">{u.compartir}</span><span class="ok-si">{u.copiado}</span></button>
+        <button type="button" data-accion="imprimir" class="btn-sec">{u.imprimir}</button>
+      </div>
+    )}
   </div>
+  {!mini && (
+    <button type="button" class="calc-fija" hidden>
+      <span class="cf-et"></span><span class="cf-val"></span><span aria-hidden="true" class="cf-ir">↑</span>
+    </button>
+  )}
 </section>
 <script>
   import '../lib/cliente';

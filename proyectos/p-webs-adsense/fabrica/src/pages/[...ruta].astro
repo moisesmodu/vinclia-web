@@ -9,11 +9,12 @@ import { texto } from '../lib/contenido';
 import { params, anios } from '../lib/params';
 import { legal } from '../lib/legal';
 import { renderTablas, fmt } from '../lib/render';
-import { t, type Lang } from '../lib/def';
+import { t, valoresPorDefecto, type Lang } from '../lib/def';
 import { UI } from '../lib/ui';
 import { PLANTILLAS } from '../plantillas/index';
 import { leerCSV } from '../lib/csv';
 import { nombreComunidad } from '../lib/campos';
+import { icono, iconoCalc } from '../lib/iconos';
 
 export function getStaticPaths() {
   return paginas().map((p) => ({ params: { ruta: p.ruta || undefined }, props: { p } }));
@@ -47,8 +48,20 @@ if (p.tipo === 'inicio') {
   titulo = `${sitio.nombre}: ${sitio.lema[lang].toLowerCase()}`;
   descripcion = sitio.descripcion[lang];
   actual = 'inicio';
+  const leerParam = (ruta: string) => ruta.split('.').reduce((o: any, k) => o?.[k], P);
+  const h = sitio.heroe;
   vista = {
-    destacadas: sitio.destacadas.map(resumenCalc),
+    heroe: h && { ...h, d: defs[`../calculadoras/${h.calc}.ts`], ruta: buscar(`calc:${h.calc}`, lang)!.ruta },
+    categorias: (sitio.categorias ?? []).map((c: any) => ({ ...c, calcs: c.calcs.map(resumenCalc) })),
+    cifras: (sitio.cifras ?? []).map((c: any) => ({ e: c.e[lang], nota: c.nota?.[lang], v: fmt(leerParam(c.p), c.f, lang), ruta: buscar(`ficha:${c.ficha}`, lang)?.ruta })),
+    destacadas: sitio.destacadas.slice(0, 5).map((id: string, k: number) => {
+      const c = resumenCalc(id);
+      if (k > 0) return c;
+      // Tarjeta grande: el resultado de ejemplo de la calculadora, calculado con sus valores por defecto
+      const d = defs[`../calculadoras/${id}.ts`];
+      const r = d.calcular(valoresPorDefecto(d, anio), { P, lang, pais });
+      return { ...c, ej: { e: t(r.destacado.e, lang), v: fmt(r.destacado.v, r.destacado.f ?? 'eur', lang) } };
+    }),
     todas: sitio.calculadoras.filter((id: string) => !sitio.destacadas.includes(id)).map(resumenCalc),
     fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang) })),
     colecciones: (sitio.programaticas ?? []).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id) })),
@@ -61,7 +74,7 @@ if (p.tipo === 'inicio') {
   const tx = texto(SITIO_ID, p.id, lang);
   const i = sitio.calculadoras.indexOf(p.id);
   const n = sitio.calculadoras.length;
-  const relacionadas = [1, 2, 3, -1, -2, -3].map((d) => sitio.calculadoras[(i + d + n) % n]).filter((x: string, k: number, a: string[]) => x !== p.id && a.indexOf(x) === k).map(resumenCalc);
+  const relacionadas = [1, 2, -1, -2].map((d) => sitio.calculadoras[(i + d + n) % n]).filter((x: string, k: number, a: string[]) => x !== p.id && a.indexOf(x) === k).map(resumenCalc);
   const fichasRel = fichasSitio().filter((f) => f.calc === p.id).map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang) }));
   const colRel = (sitio.programaticas ?? []).filter((c: any) => c.calc === p.id).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id).slice(0, 24) }));
   titulo = tx.titulo; descripcion = tx.descripcion;
@@ -110,28 +123,72 @@ const etiquetaProg = (x: Pagina) => (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0',
 <Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual}>
   {p.tipo === 'inicio' && (
     <>
-      <section class="heroe">
-        <p class="eyebrow">{sitio.marcaClaro.promesa[lang]}</p>
-        <h1>{sitio.lema[lang]}</h1>
-        <p>{sitio.descripcion[lang]}</p>
+      <section class="portada">
+        <div class="portada-txt">
+          <p class="eyebrow">{sitio.marcaClaro.promesa[lang]}</p>
+          <h1 set:html={v.heroe ? v.heroe.titulo[lang] : sitio.lema[lang]} />
+          <p class="portada-sub">{v.heroe ? v.heroe.texto[lang] : sitio.descripcion[lang]}</p>
+          <ul class="confianza">
+            <li><Fragment set:html={icono('escudo', 18)} />{lang === 'es' ? `Parámetros oficiales de ${anio}` : `Paràmetres oficials de ${anio}`}</li>
+            <li><Fragment set:html={icono('documento', 18)} />{lang === 'es' ? 'Método y fuentes publicados' : 'Mètode i fonts publicats'}</li>
+            <li><Fragment set:html={icono('persona', 18)} />{lang === 'es' ? 'Sin registro ni cookies de seguimiento' : 'Sense registre ni galetes de seguiment'}</li>
+          </ul>
+        </div>
+        {v.heroe && (
+          <div class="portada-calc">
+            <Calculadora d={v.heroe.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} solo={v.heroe.campos} completa={{ href: url(v.heroe.ruta), texto: v.heroe.completa[lang] }} />
+          </div>
+        )}
       </section>
-      <h2 id="calculadoras">{lang === 'es' ? 'Las más usadas' : 'Les més utilitzades'}</h2>
-      <ul class="rejilla">
-        {v.destacadas.map((c: any) => <li><a class="tarjeta" href={url(c.ruta)}><strong>{c.h1}</strong><span>{c.resumen}</span></a></li>)}
-      </ul>
-      <h2>{lang === 'es' ? 'Todas las calculadoras' : 'Totes les calculadores'}</h2>
-      <ul class="rejilla">
-        {v.todas.map((c: any) => <li><a class="tarjeta" href={url(c.ruta)}><strong>{c.h1}</strong><span>{c.resumen}</span></a></li>)}
-      </ul>
-      <h2>{u.datos}</h2>
-      <ul class="rejilla">
-        {v.fichas.map((f: any) => <li><a class="tarjeta" href={url(f.ruta)}><strong>{f.h1}</strong><span>{f.desc}</span></a></li>)}
-      </ul>
+
+      <section aria-labelledby="mas-usadas">
+        <div class="titulo-sec"><h2 id="mas-usadas">{lang === 'es' ? 'Las más usadas' : 'Les més utilitzades'}</h2><a href="#calculadoras">{lang === 'es' ? `Las ${sitio.calculadoras.length} calculadoras` : `Les ${sitio.calculadoras.length} calculadores`} ↓</a></div>
+        <ul class="bento">
+          {v.destacadas.map((c: any, k: number) => (
+            <li class:list={[{ grande: k === 0 }]}><a class="bento-t" href={url(c.ruta)}>
+              <span class="ico-caja" set:html={iconoCalc(c.id, k === 0 ? 30 : 24)} />
+              {c.ej && <span class="bento-ej"><small>{lang === 'es' ? 'Ejemplo' : 'Exemple'} · {c.ej.e}</small><b>{c.ej.v}</b></span>}
+              <strong>{c.h1}</strong><span class="bento-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span>
+            </a></li>
+          ))}
+        </ul>
+      </section>
+
+      {v.cifras.length > 0 && (
+        <section class="cifras" aria-labelledby="cifras-t">
+          <h2 id="cifras-t">{lang === 'es' ? `Las cifras de ${anio} que tienes que saber` : `Les xifres de ${anio} que has de saber`}</h2>
+          <ul>
+            {v.cifras.map((c: any) => (
+              <li><a href={c.ruta ? url(c.ruta) : undefined}><span class="cifra-v">{c.v}</span><span class="cifra-e">{c.e}</span>{c.nota && <span class="cifra-n">{c.nota}</span>}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section aria-labelledby="calculadoras">
+        <h2 id="calculadoras">{lang === 'es' ? 'Todas las calculadoras' : 'Totes les calculadores'}</h2>
+        <div class="categorias">
+          {v.categorias.map((cat: any) => (
+            <div class="categoria">
+              <h3><span class="ico-caja" set:html={icono(cat.icono, 20)} />{cat.nombre[lang]}</h3>
+              <ul>{cat.calcs.map((c: any) => <li><a href={url(c.ruta)}><span set:html={iconoCalc(c.id, 18)} />{c.h1.replace(/^Calculadora (de |del |d’|de la )?/i, '').replace(/^./, (x: string) => x.toUpperCase())}</a></li>)}</ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="datos-t">
+        <div class="titulo-sec"><h2 id="datos-t">{u.datos}</h2><a href={url(datos.ruta)}>{u.todas} →</a></div>
+        <ul class="lista-datos">
+          {v.fichas.map((f: any) => <li><a href={url(f.ruta)}><span set:html={icono('tabla', 20)} /><span><strong>{f.h1}</strong><small>{f.desc}</small></span></a></li>)}
+        </ul>
+      </section>
+
       {v.colecciones.map((c: any) => (
-        <>
+        <section class="coleccion">
           <h2>{c.titulo}</h2>
           <ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul>
-        </>
+        </section>
       ))}
     </>
   )}
@@ -139,8 +196,10 @@ const etiquetaProg = (x: Pagina) => (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0',
   {p.tipo === 'calc' && (
     <>
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.tx.h1}</span></nav>
-      <h1>{v.tx.h1}</h1>
-      <p class="intro">{v.tx.resumen}</p>
+      <div class="cab-calc">
+        <span class="ico-caja grande" set:html={iconoCalc(p.id, 30)} />
+        <div><h1>{v.tx.h1}</h1><p class="intro">{v.tx.resumen}</p></div>
+      </div>
       <p class="meta"><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{u.revisado}</span></p>
       {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
@@ -152,7 +211,7 @@ const etiquetaProg = (x: Pagina) => (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0',
       </article>
       {v.fichasRel.length > 0 && (<><h2>{u.datos}</h2><ul class="chips">{v.fichasRel.map((f: any) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}</ul></>)}
       {v.colRel.map((c: any) => (<><h2>{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul></>))}
-      <section class="relacionadas"><h2>{u.relacionadas}</h2><ul class="rejilla">{v.relacionadas.map((c: any) => <li><a class="tarjeta" href={url(c.ruta)}><strong>{c.h1}</strong><span>{c.resumen}</span></a></li>)}</ul></section>
+      <section class="relacionadas"><h2>{u.relacionadas}</h2><ul class="bento">{v.relacionadas.map((c: any) => <li><a class="bento-t" href={url(c.ruta)}><span class="ico-caja" set:html={iconoCalc(c.id, 24)} /><strong>{c.h1}</strong><span class="bento-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul></section>
       <Anuncio posicion="finContenido" lang={lang} />
       <p class="descargo">{u.descargo}</p>
     </>

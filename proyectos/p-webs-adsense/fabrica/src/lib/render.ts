@@ -24,12 +24,24 @@ export function fmt(v: number | string, f: Formato | undefined, lang: Lang, mone
   }
 }
 
-const tx = (x: Txt, lang: Lang) => esc(t(x, lang));
+// Los porcentajes que llegan dentro de textos («IRPF (16.41 %)») se escriben con coma decimal
+const tx = (x: Txt, lang: Lang) => esc(t(x, lang).replace(/(\d)\.(\d+)(?= ?%)/g, '$1,$2'));
 
 export function renderResultado(r: Resultado, lang: Lang, moneda = 'EUR'): string {
   const F = (v: any, f?: Formato) => (v && typeof v === 'object' ? tx(v, lang) : esc(fmt(v, f, lang, moneda)));
-  let h = `<div class="res-dest"><span class="res-et">${tx(r.destacado.e, lang)}</span><output class="res-val">${F(r.destacado.v, r.destacado.f ?? 'eur')}</output>`;
+  const fd = r.destacado.f ?? 'eur';
+  const num = typeof r.destacado.v === 'number' ? ` data-n="${r.destacado.v}" data-f="${fd}"` : '';
+  let h = `<div class="res-dest"><span class="res-et">${tx(r.destacado.e, lang)}</span><output class="res-val"${num}>${F(r.destacado.v, fd)}</output>`;
   if (r.destacado.nota) h += `<span class="res-nota">${tx(r.destacado.nota, lang)}</span>`;
+  const partes = repartoDe(r);
+  if (partes) {
+    const total = partes.reduce((a, p) => a + p.v, 0);
+    h += '<div class="reparto"><div class="reparto-barra" role="img" aria-label="' + partes.map((p) => `${tx(p.e, lang)}: ${fmt(Math.round((p.v / total) * 1000) / 10, 'pct', lang)}`).join(', ') + '">';
+    partes.forEach((p, i) => { h += `<span class="rp rp${i}" style="flex-grow:${Math.max(p.v, total * 0.004).toFixed(2)}"></span>`; });
+    h += '</div><ul class="reparto-ley">';
+    partes.forEach((p, i) => { h += `<li><i class="rp${i}"></i>${tx(p.e, lang)} <b>${fmt(Math.round((p.v / total) * 1000) / 10, 'pct', lang)}</b></li>`; });
+    h += '</ul></div>';
+  }
   h += '</div>';
   if (r.secundarios?.length) {
     h += '<dl class="res-sec">';
@@ -54,6 +66,19 @@ export function renderResultado(r: Resultado, lang: Lang, moneda = 'EUR'): strin
   }
   if (r.avisos?.length) h += '<ul class="res-avisos">' + r.avisos.map((a) => `<li>${tx(a, lang)}</li>`).join('') + '</ul>';
   return h;
+}
+
+/** Partes de la barra de reparto: las declaradas o, si las filas son «total − deducciones = neto», esas mismas. */
+export function repartoDe(r: Resultado): { e: Txt; v: number }[] | null {
+  if (r.reparto?.length) return r.reparto.filter((p) => p.v > 0).length > 1 ? r.reparto.filter((p) => p.v > 0) : null;
+  const filas = (r.filas ?? []).filter((f) => !f.sub && typeof f.v === 'number' && (!f.f || f.f === 'eur' || f.f === 'eur0'));
+  const neto = filas.find((f) => f.fuerte);
+  const menos = filas.filter((f) => f.signo === '-' && (f.v as number) > 0);
+  const total = filas[0];
+  if (!neto || !menos.length || !total || total === neto || total.signo) return null;
+  const suma = (neto.v as number) + menos.reduce((a, f) => a + (f.v as number), 0);
+  if ((neto.v as number) <= 0 || Math.abs(suma - (total.v as number)) > Math.max(1, (total.v as number) * 0.01)) return null;
+  return [{ e: neto.e, v: neto.v as number }, ...menos.slice(0, 4).map((f) => ({ e: f.e, v: f.v as number }))];
 }
 
 export function renderTablas(tablas: Resultado['tablas'], lang: Lang): string {

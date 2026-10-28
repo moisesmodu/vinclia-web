@@ -1,0 +1,26 @@
+---
+// Un campo del formulario de una calculadora (número, desplegable, fecha o casilla).
+import { t, type Campo, type Lang } from '../lib/def';
+interface Props { c: Campo; lang: Lang; v: Record<string, any> }
+const { c, lang, v } = Astro.props;
+---
+<div class={`campo campo-${c.tipo}`} data-campo={c.id} hidden={c.si ? !c.si(v) : false}>
+  {c.tipo === 'casilla' ? (
+    <label class="casilla"><input type="checkbox" id={`f-${c.id}`} name={c.id} checked={c.def} /> <span>{t(c.etiqueta, lang)}</span></label>
+  ) : (
+    <label for={`f-${c.id}`}>{t(c.etiqueta, lang)}</label>
+  )}
+  {c.tipo === 'numero' && (
+    <div class="entrada">
+      <input type="number" inputmode="decimal" id={`f-${c.id}`} name={c.id} value={c.def} min={c.min} max={c.max} step={c.paso ?? 'any'} />
+      {c.sufijo && <span class="sufijo" aria-hidden="true">{c.sufijo}</span>}
+    </div>
+  )}
+  {c.tipo === 'select' && (
+    <select id={`f-${c.id}`} name={c.id}>
+      {c.opciones.map((o) => <option value={o.v} selected={o.v === c.def}>{t(o.t, lang)}</option>)}
+    </select>
+  )}
+  {c.tipo === 'fecha' && <input type="date" id={`f-${c.id}`} name={c.id} value={c.def} />}
+  {c.ayuda && <small class="ayuda">{t(c.ayuda, lang)}</small>}
+</div>

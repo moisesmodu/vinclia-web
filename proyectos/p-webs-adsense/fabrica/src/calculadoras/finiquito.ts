@@ -33,6 +33,7 @@ export default def({
         { e: tt('Salario diario', 'Salari diari'), v: f.diario },
         ...(ind ? [{ e: tt('Indemnización', 'Indemnització'), v: ind.importe }] : []),
       ],
+      reparto: [{ e: tt('Salario del mes', 'Salari del mes'), v: f.salarioMes }, { e: tt('Vacaciones', 'Vacances'), v: f.importeVacaciones }, { e: tt('Pagas extra', 'Pagues extra'), v: r2(f.extras.reduce((a: number, x: any) => a + x.importe, 0)) }, ...(ind ? [{ e: tt('Indemnización', 'Indemnització'), v: ind.importe }] : [])],
       filas: [
         { e: tt(`Salario de los ${f.diasMes} días del último mes`, `Salari dels ${f.diasMes} dies de l’últim mes`), v: f.salarioMes },
         { e: tt(`Vacaciones no disfrutadas (${f.vacacionesPendientes} días)`, `Vacances no gaudides (${f.vacacionesPendientes} dies)`), v: f.importeVacaciones },

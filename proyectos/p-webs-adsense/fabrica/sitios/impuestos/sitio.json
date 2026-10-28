@@ -142,5 +142,140 @@
       "Impuesto",
       "Claro"
     ]
-  }
+  },
+  "heroe": {
+    "calc": "sueldo-neto-autonomo",
+    "campos": [
+      "ingresos",
+      "gastos"
+    ],
+    "titulo": {
+      "es": "¿Cuánto te queda <em>de verdad</em> como autónomo?",
+      "ca": "Quant et queda <em>de veritat</em> com a autònom?"
+    },
+    "texto": {
+      "es": "Pon lo que facturas y tus gastos: verás la cuota de autónomos, el IRPF y lo que te llevas a casa cada mes. Sin registrarte y con el método publicado.",
+      "ca": "Posa el que factures i les teves despeses: veuràs la quota d’autònoms, l’IRPF i el que t’emportes a casa cada mes. Sense registrar-te i amb el mètode publicat."
+    },
+    "completa": {
+      "es": "Ver el cálculo completo",
+      "ca": "Mostra el càlcul complet"
+    }
+  },
+  "categorias": [
+    {
+      "id": "renta",
+      "icono": "documento",
+      "nombre": {
+        "es": "Renta e IRPF",
+        "ca": "Renda i IRPF"
+      },
+      "calcs": [
+        "irpf-renta",
+        "tipo-marginal-irpf",
+        "obligacion-declarar",
+        "ganancias-patrimoniales",
+        "alquiler-irpf",
+        "intereses-deposito"
+      ]
+    },
+    {
+      "id": "iva",
+      "icono": "factura",
+      "nombre": {
+        "es": "IVA y facturas",
+        "ca": "IVA i factures"
+      },
+      "calcs": [
+        "iva",
+        "factura",
+        "recargo-equivalencia",
+        "verifactu"
+      ]
+    },
+    {
+      "id": "modelos",
+      "icono": "calendario",
+      "nombre": {
+        "es": "Modelos y plazos",
+        "ca": "Models i terminis"
+      },
+      "calcs": [
+        "modelo-303",
+        "modelo-130",
+        "retenciones-111-115",
+        "recargo-fuera-plazo",
+        "intereses-demora"
+      ]
+    },
+    {
+      "id": "autonomo",
+      "icono": "persona",
+      "nombre": {
+        "es": "Ser autónomo",
+        "ca": "Ser autònom"
+      },
+      "calcs": [
+        "sueldo-neto-autonomo",
+        "precio-hora-autonomo",
+        "autonomo-o-asalariado",
+        "tarifa-plana-autonomos",
+        "dietas-kilometraje"
+      ]
+    }
+  ],
+  "cifras": [
+    {
+      "e": {
+        "es": "IVA general",
+        "ca": "IVA general"
+      },
+      "p": "fiscal.iva.general",
+      "f": "pct",
+      "nota": {
+        "es": "reducido 10 %, superreducido 4 %",
+        "ca": "reduït 10 %, superreduït 4 %"
+      },
+      "ficha": "tipos-iva"
+    },
+    {
+      "e": {
+        "es": "Mínimo personal del IRPF",
+        "ca": "Mínim personal de l’IRPF"
+      },
+      "p": "fiscal.irpf.minimos.personal",
+      "f": "eur0",
+      "nota": {
+        "es": "al año, no tributa",
+        "ca": "l’any, no tributa"
+      },
+      "ficha": "minimos-personales"
+    },
+    {
+      "e": {
+        "es": "Interés de demora",
+        "ca": "Interès de demora"
+      },
+      "p": "fiscal.interes_demora_pct",
+      "f": "pct",
+      "nota": {
+        "es": "si pagas tarde a Hacienda",
+        "ca": "si pagues tard a Hisenda"
+      },
+      "ficha": "intereses-historico"
+    },
+    {
+      "e": {
+        "es": "Primer tramo estatal del IRPF",
+        "ca": "Primer tram estatal de l’IRPF"
+      },
+      "p": "fiscal.irpf.escala_estatal.0.tipo",
+      "f": "pct",
+      "nota": {
+        "es": "más el tramo de tu comunidad",
+        "ca": "més el tram de la teva comunitat"
+      },
+      "ficha": "escalas-irpf-comunidades"
+    }
+  ]
 }

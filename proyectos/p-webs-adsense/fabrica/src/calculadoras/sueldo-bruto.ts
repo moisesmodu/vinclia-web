@@ -32,6 +32,7 @@ export default def({
         { e: tt('Retención de IRPF', 'Retenció d’IRPF'), v: r.ret.tipo, f: 'pct' },
         { e: tt('Coste para la empresa', 'Cost per a l’empresa'), v: r.costeEmpresa },
       ],
+      reparto: [{ e: tt('Neto', 'Net'), v: r.netoAnual }, { e: tt('Seguridad Social', 'Seguretat Social'), v: r.ss.trabajador.anual }, { e: tt('IRPF', 'IRPF'), v: r.ret.importe }],
       filas: [
         { e: tt('Neto en nómina ordinaria', 'Net en nòmina ordinària'), v: r.netoOrdinaria },
         ...(pagas === 14 ? [{ e: tt('Neto en paga extra', 'Net en paga extra'), v: r.netoExtra }] : []),

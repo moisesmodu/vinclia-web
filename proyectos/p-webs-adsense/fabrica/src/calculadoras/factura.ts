@@ -20,6 +20,7 @@ export default def({
     return {
       destacado: { e: tt('Total a cobrar', 'Total a cobrar'), v: r.total },
       secundarios: [{ e: tt('Base imponible (tu ingreso)', 'Base imposable (el teu ingrés)'), v: r.base }, { e: tt('IVA que ingresarás en el 303', 'IVA que ingressaràs al 303'), v: r.cuotaIva }],
+      reparto: [{ e: tt('Tu ingreso', 'El teu ingrés'), v: r.base - r.retencion }, { e: tt('IVA (para Hacienda)', 'IVA (per a Hisenda)'), v: r.cuotaIva + (r.recargo || 0) }, { e: tt('Retención (anticipo de IRPF)', 'Retenció (avançament d’IRPF)'), v: r.retencion }],
       filas: [
         { e: tt('Base imponible', 'Base imposable'), v: r.base },
         { e: tt(`IVA (${v.iva} %)`, `IVA (${v.iva} %)`), v: r.cuotaIva, signo: '+' },

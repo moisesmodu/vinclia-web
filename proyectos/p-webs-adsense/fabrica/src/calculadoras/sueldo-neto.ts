@@ -31,7 +31,7 @@ export default def({
       filas: [
         { e: tt('Salario bruto anual', 'Salari brut anual'), v: v.bruto },
         { e: tt('Cotización a la Seguridad Social', 'Cotització a la Seguretat Social'), v: r.ss.trabajador.anual, signo: '-' },
-        { e: tt(`Retención de IRPF (${r.ret.tipo} %)`, `Retenció d’IRPF (${r.ret.tipo} %)`), v: r.ret.importe, signo: '-' },
+        { e: tt(`Retención de IRPF (${String(r.ret.tipo).replace(".", ",")} %)`, `Retenció d’IRPF (${String(r.ret.tipo).replace(".", ",")} %)`), v: r.ret.importe, signo: '-' },
         { e: tt('Salario neto anual', 'Salari net anual'), v: r.netoAnual, fuerte: true },
         { e: tt('Bruto de cada paga', 'Brut de cada paga'), v: r.brutoPaga, sub: true },
         { e: tt('Seguridad Social al mes', 'Seguretat Social al mes'), v: r.ss.trabajador.mensual, sub: true, signo: '-' },

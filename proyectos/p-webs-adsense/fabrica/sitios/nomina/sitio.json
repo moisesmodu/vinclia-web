@@ -142,5 +142,140 @@
       "Neto",
       "Claro"
     ]
-  }
+  },
+  "heroe": {
+    "calc": "sueldo-neto",
+    "campos": [
+      "bruto",
+      "ccaa"
+    ],
+    "titulo": {
+      "es": "¿Cuánto vas a cobrar <em>de verdad</em>?",
+      "ca": "Quant cobraràs <em>de veritat</em>?"
+    },
+    "texto": {
+      "es": "Escribe tu sueldo bruto y mira al instante cuánto llega a tu cuenta, cuánto se lleva Hacienda y cuánto la Seguridad Social. Con los parámetros oficiales y el método a la vista.",
+      "ca": "Escriu el teu sou brut i mira a l’instant quant arriba al teu compte, quant s’emporta Hisenda i quant la Seguretat Social. Amb els paràmetres oficials i el mètode a la vista."
+    },
+    "completa": {
+      "es": "Ver la nómina completa",
+      "ca": "Mostra la nòmina completa"
+    }
+  },
+  "categorias": [
+    {
+      "id": "sueldo",
+      "icono": "cartera",
+      "nombre": {
+        "es": "Tu sueldo",
+        "ca": "El teu sou"
+      },
+      "calcs": [
+        "sueldo-neto",
+        "sueldo-bruto",
+        "nomina",
+        "retencion-irpf",
+        "paga-extra",
+        "subida-sueldo",
+        "salario-minimo",
+        "coste-empresa"
+      ]
+    },
+    {
+      "id": "jornada",
+      "icono": "reloj",
+      "nombre": {
+        "es": "Jornada y horas",
+        "ca": "Jornada i hores"
+      },
+      "calcs": [
+        "horas-extra",
+        "salario-hora",
+        "reduccion-jornada",
+        "vacaciones"
+      ]
+    },
+    {
+      "id": "despido",
+      "icono": "maletin",
+      "nombre": {
+        "es": "Despido y paro",
+        "ca": "Acomiadament i atur"
+      },
+      "calcs": [
+        "finiquito",
+        "indemnizacion-despido",
+        "paro",
+        "subsidio-desempleo"
+      ]
+    },
+    {
+      "id": "futuro",
+      "icono": "arena",
+      "nombre": {
+        "es": "Baja, jubilación y autónomos",
+        "ca": "Baixa, jubilació i autònoms"
+      },
+      "calcs": [
+        "baja-it",
+        "jubilacion-edad",
+        "pension-jubilacion",
+        "cuota-autonomos"
+      ]
+    }
+  ],
+  "cifras": [
+    {
+      "e": {
+        "es": "Salario mínimo al mes",
+        "ca": "Salari mínim al mes"
+      },
+      "p": "laboral.smi.mensual14",
+      "f": "eur0",
+      "nota": {
+        "es": "en 14 pagas",
+        "ca": "en 14 pagues"
+      },
+      "ficha": "smi-historico"
+    },
+    {
+      "e": {
+        "es": "Base máxima de cotización",
+        "ca": "Base màxima de cotització"
+      },
+      "p": "laboral.cotizacion.base_max_mensual",
+      "f": "eur0",
+      "nota": {
+        "es": "al mes",
+        "ca": "al mes"
+      },
+      "ficha": "bases-cotizacion"
+    },
+    {
+      "e": {
+        "es": "IPREM mensual",
+        "ca": "IPREM mensual"
+      },
+      "p": "laboral.iprem.mensual",
+      "f": "eur0",
+      "nota": {
+        "es": "para ayudas y paro",
+        "ca": "per a ajuts i atur"
+      },
+      "ficha": "iprem-historico"
+    },
+    {
+      "e": {
+        "es": "Contingencias comunes",
+        "ca": "Contingències comunes"
+      },
+      "p": "laboral.cotizacion.trabajador.cc",
+      "f": "pct",
+      "nota": {
+        "es": "lo que cotizas tú",
+        "ca": "el que cotitzes tu"
+      },
+      "ficha": "tipos-cotizacion"
+    }
+  ]
 }

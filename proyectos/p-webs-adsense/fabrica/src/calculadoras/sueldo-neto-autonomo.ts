@@ -25,6 +25,12 @@ export default def({
         { e: tt('IRPF anual estimado', 'IRPF anual estimat'), v: r.irpf.total, signo: '-' },
         { e: tt('Neto anual', 'Net anual'), v: r.netoAnual, fuerte: true },
       ],
+      reparto: [
+        { e: tt('Te quedas', 'Et quedes'), v: r.netoAnual },
+        { e: tt('Cuota de autónomos', 'Quota d’autònoms'), v: r.cuota.anual },
+        { e: tt('IRPF', 'IRPF'), v: r.irpf.total },
+        { e: tt('Gastos', 'Despeses'), v: v.gastos },
+      ],
       avisos: [tt('El IRPF se adelanta con el modelo 130 o con las retenciones de tus facturas; aquí se calcula lo que pagas en total en el año.', 'L’IRPF s’avança amb el model 130 o amb les retencions de les teves factures; aquí es calcula el que pagues en total en l’any.')],
     };
   },

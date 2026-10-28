@@ -23,7 +23,7 @@ export default def({
       secundarios: [{ e: tt('Pierdes al mes', 'Perds al mes'), v: r2(a.netoOrdinaria - b.netoOrdinaria) }, { e: tt('Pérdida neta real', 'Pèrdua neta real'), v: r2(perdida / Math.max(1, a.netoAnual) * 100), f: 'pct' }],
       tablas: [{ cab: [tt('Concepto', 'Concepte'), tt('Jornada completa', 'Jornada completa'), tt('Con reducción', 'Amb reducció')], formatos: ['txt', 'eur', 'eur'], filas: [
         [tt('Bruto anual', 'Brut anual'), v.bruto, r2(nuevo)],
-        [tt('Retención IRPF', 'Retenció IRPF'), `${a.ret.tipo} %`, `${b.ret.tipo} %`],
+        [tt('Retención IRPF', 'Retenció IRPF'), `${String(a.ret.tipo).replace(".", ",")} %`, `${String(b.ret.tipo).replace(".", ",")} %`],
         [tt('Neto anual', 'Net anual'), a.netoAnual, b.netoAnual],
         [tt('Neto nómina ordinaria', 'Net nòmina ordinària'), a.netoOrdinaria, b.netoOrdinaria],
       ] }],

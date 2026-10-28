@@ -1,6 +1,6 @@
 // Código de navegador común a todas las calculadoras: lee el formulario, recalcula al escribir,
 // guarda el estado en la URL (enlace para compartir) y permite imprimir o guardar en PDF.
-import { renderResultado } from './render';
+import { renderResultado, fmt } from './render';
 import { params } from './params';
 import type { DefCalc, Lang } from './def';
 
@@ -30,6 +30,39 @@ function visibilidad(form: HTMLFormElement, d: DefCalc, v: Record<string, any>) 
   }
 }
 
+// La cifra principal cuenta desde el valor anterior hasta el nuevo (solo si el usuario no pide menos movimiento)
+const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function animar(out: HTMLElement, antes: number | null, lang: Lang) {
+  const o = out.querySelector<HTMLElement>('.res-val[data-n]');
+  if (!o) return;
+  const fin = Number(o.dataset.n), f = o.dataset.f as any;
+  o.classList.remove('pulso'); void o.offsetWidth; o.classList.add('pulso');
+  if (quieto || antes == null || antes === fin || !Number.isFinite(antes)) return;
+  const t0 = performance.now(), dur = 450, final = o.textContent;
+  const paso = (t: number) => {
+    const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+    o.textContent = k < 1 ? fmt(antes + (fin - antes) * e, f, lang) : final;
+    if (k < 1) requestAnimationFrame(paso);
+  };
+  requestAnimationFrame(paso);
+}
+
+// Barra fija en el móvil con la cifra principal mientras el resultado no está a la vista
+function barraMovil(el: HTMLElement, out: HTMLElement) {
+  const b = el.querySelector<HTMLElement>('.calc-fija');
+  if (!b || !('IntersectionObserver' in window)) return () => {};
+  let visible = true, tocado = false;
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; b.hidden = visible || !tocado; }).observe(out);
+  b.addEventListener('click', () => out.scrollIntoView({ behavior: quieto ? 'auto' : 'smooth', block: 'center' }));
+  return () => {
+    tocado = true;
+    const et = out.querySelector('.res-et')?.textContent ?? '', val = out.querySelector<HTMLElement>('.res-val');
+    b.querySelector('.cf-et')!.textContent = et;
+    b.querySelector('.cf-val')!.textContent = val?.dataset.n ? fmt(Number(val.dataset.n), val.dataset.f as any, el.dataset.lang as Lang) : val?.textContent ?? '';
+    b.hidden = visible;
+  };
+}
+
 async function iniciar(el: HTMLElement) {
   const id = el.dataset.calc!;
   const lang = el.dataset.lang as Lang;
@@ -44,7 +77,7 @@ async function iniciar(el: HTMLElement) {
   for (const c of d.campos) defaults[c.id] = String(c.def);
   defaults.anio = String(anioDef);
 
-  const qs = new URLSearchParams(location.search);
+  const qs = new URLSearchParams(el.classList.contains('mini') ? '' : location.search);
   let desdeUrl = false;
   qs.forEach((val, k) => {
     const inp = form.elements.namedItem(k) as HTMLInputElement | null;
@@ -55,13 +88,19 @@ async function iniciar(el: HTMLElement) {
   });
 
   let contado = false;
+  const fija = barraMovil(el, out);
+  const mini = el.classList.contains('mini');
+  const enlace = el.querySelector<HTMLAnchorElement>('[data-completa]');
   const calcular = () => {
+    const antes = Number(out.querySelector<HTMLElement>('.res-val[data-n]')?.dataset.n ?? NaN);
     const v = leer(form, d);
     visibilidad(form, d, v);
     try {
       const r = d.calcular(v, { P: params(pais, v.anio ?? anioDef), lang, pais });
       out.innerHTML = renderResultado(r, lang);
       out.classList.remove('error');
+      animar(out, Number.isFinite(antes) ? antes : null, lang);
+      fija();
     } catch {
       out.classList.add('error');
     }
@@ -71,8 +110,8 @@ async function iniciar(el: HTMLElement) {
       const def = defaults[k] === 'true' ? '1' : defaults[k] === 'false' ? '0' : defaults[k];
       if (s !== def) q.set(k, s);
     }
-    const nueva = location.pathname + (q.toString() ? '?' + q : '');
-    history.replaceState(null, '', nueva);
+    if (mini) { if (enlace) enlace.search = q.toString(); }
+    else history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
     if (!contado) {
       contado = true;
       try { (window as any).umami?.track('calculo', { calc: id }); } catch {}

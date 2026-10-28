@@ -22,6 +22,7 @@ export default def({
         { e: tt('Seguridad Social a cargo de la empresa', 'Seguretat Social a càrrec de l’empresa'), v: ss.empresa.anual },
         { e: tt('Sobre el bruto', 'Sobre el brut'), v: r2(ss.empresa.anual / Math.max(1, v.bruto) * 100), f: 'pct' },
       ],
+      reparto: [{ e: tt('Para el trabajador (antes de IRPF)', 'Per al treballador (abans d’IRPF)'), v: r2(v.bruto - ss.trabajador.anual) }, { e: tt('Seguridad Social del trabajador', 'Seguretat Social del treballador'), v: ss.trabajador.anual }, { e: tt('Seguridad Social de la empresa', 'Seguretat Social de l’empresa'), v: ss.empresa.anual }],
       filas: [
         ...ss.empresa.lineas.map((l) => ({ e: tt(`${CONCEPTOS_SS[l.concepto].es}${l.tipo ? ` (${l.tipo} %)` : ''}`, `${CONCEPTOS_SS[l.concepto].ca}${l.tipo ? ` (${l.tipo} %)` : ''}`), v: r2(l.importe * 12), sub: true })),
         { e: tt('Total cotización empresa al año', 'Total cotització empresa a l’any'), v: ss.empresa.anual, fuerte: true },

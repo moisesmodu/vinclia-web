@@ -22,6 +22,8 @@ export interface Resultado {
   secundarios?: { e: Txt; v: number | string; f?: Formato }[];
   filas?: Fila[];
   tablas?: Tabla[];
+  /** Reparto de un total en partes (neto, impuestos, cotizaciones…) para la barra de colores. Si falta, se deduce de las filas. */
+  reparto?: { e: Txt; v: number }[];
   avisos?: Txt[];
 }
 export interface Ctx { P: Bloques; lang: Lang; pais: string }

@@ -24,7 +24,7 @@ export default def({
       secundarios: [{ e: tt('Más en cada nómina', 'Més a cada nòmina'), v: r2(b.netoOrdinaria - a.netoOrdinaria) }, { e: tt('Nuevo bruto anual', 'Nou brut anual'), v: r2(nuevo) }],
       tablas: [{ cab: [tt('Concepto', 'Concepte'), tt('Antes', 'Abans'), tt('Después', 'Després')], formatos: ['txt', 'eur', 'eur'], filas: [
         [tt('Bruto anual', 'Brut anual'), v.bruto, r2(nuevo)],
-        [tt('Retención IRPF (%)', 'Retenció IRPF (%)'), `${a.ret.tipo} %`, `${b.ret.tipo} %`],
+        [tt('Retención IRPF (%)', 'Retenció IRPF (%)'), `${String(a.ret.tipo).replace(".", ",")} %`, `${String(b.ret.tipo).replace(".", ",")} %`],
         [tt('Neto anual', 'Net anual'), a.netoAnual, b.netoAnual],
         [tt('Neto nómina ordinaria', 'Net nòmina ordinària'), a.netoOrdinaria, b.netoOrdinaria],
       ] }],

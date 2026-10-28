@@ -1,0 +1,334 @@
+{
+  "programas": [
+    {
+      "id": "quipu",
+      "nombre": "Quipu",
+      "url_alta": "https://getquipu.com/es/referral",
+      "red": "Propia (panel Rewardful)",
+      "comision": "30 % de lo que pague el cliente durante 12 meses (planes mensuales); pago único en planes anuales. Cobro desde 50 € acumulados.",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "factura",
+        "iva",
+        "modelo-303",
+        "modelo-130",
+        "verifactu",
+        "recargo-equivalencia",
+        "retenciones-111-115",
+        "cuota-autonomos"
+      ],
+      "texto": {
+        "es": "¿Haces las facturas y los trimestrales a mano? Quipu junta facturas, gastos e impuestos en un mismo sitio.",
+        "ca": "Fas les factures i els trimestrals a mà? Quipu ajunta factures, despeses i impostos en un mateix lloc."
+      },
+      "cta": {
+        "es": "Probar Quipu",
+        "ca": "Provar Quipu"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "xolo",
+      "nombre": "Xolo",
+      "url_alta": "https://www.xolo.io/es-en/affiliate-program",
+      "red": "Propia (panel de afiliados de Xolo)",
+      "comision": "29 € por cada cliente nuevo de pago. Cobro desde 40 € acumulados, por transferencia.",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "sueldo-neto-autonomo",
+        "autonomo-o-asalariado",
+        "tarifa-plana-autonomos",
+        "precio-hora-autonomo",
+        "modelo-130",
+        "cuota-autonomos"
+      ],
+      "texto": {
+        "es": "¿Vas a darte de alta como autónomo? Xolo hace el alta, presenta tus impuestos y te asesora por una cuota mensual.",
+        "ca": "Et donaràs d'alta com a autònom? Xolo fa l'alta, presenta els teus impostos i t'assessora per una quota mensual."
+      },
+      "cta": {
+        "es": "Ver Xolo",
+        "ca": "Veure Xolo"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "qonto",
+      "nombre": "Qonto",
+      "url_alta": "https://qonto.com/es/affiliate",
+      "red": "Affilae (también tiene ficha en Awin)",
+      "comision": "15 € por registro completado + 5 € si el cliente hace su primera transferencia en 30 días (20 € por usuario activo). Cookie de 30 días según Awin. La ficha de Awin dice que las comisiones «varían según resultados».",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "tarifa-plana-autonomos",
+        "autonomo-o-asalariado",
+        "factura",
+        "cuota-autonomos"
+      ],
+      "texto": {
+        "es": "Separa el dinero del negocio del personal: Qonto es una cuenta online para autónomos y pymes, con tarjetas y facturas.",
+        "ca": "Separa els diners del negoci dels personals: Qonto és un compte en línia per a autònoms i pimes, amb targetes i factures."
+      },
+      "cta": {
+        "es": "Ver la cuenta Qonto",
+        "ca": "Veure el compte Qonto"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "holded",
+      "nombre": "Holded",
+      "url_alta": "https://help.holded.com/en/articles/13435604-refer-holded-and-earn-cash",
+      "red": "Propia (programa de referidos dentro de la cuenta de Holded)",
+      "comision": "10 % de lo que pague cada cliente invitado cada mes, hasta 500 € por cliente. El invitado tiene 50 % de descuento 3 meses. No es un programa de afiliados para webs: requiere tener cuenta en Holded.",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "factura",
+        "verifactu",
+        "iva",
+        "modelo-303",
+        "coste-empresa"
+      ],
+      "texto": {
+        "es": "Holded junta facturación, contabilidad e impuestos en un programa online para autónomos y pymes.",
+        "ca": "Holded ajunta facturació, comptabilitat i impostos en un programa en línia per a autònoms i pimes."
+      },
+      "cta": {
+        "es": "Ver Holded",
+        "ca": "Veure Holded"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "sage",
+      "nombre": "Sage",
+      "url_alta": "https://www.sage.com/es-es/soporte-actualizacion/programa-de-afiliados/",
+      "red": "Impact",
+      "comision": "7 % de las ventas y 5 £ por prueba gratuita (así figura en la página española), cookie de 30 días desde la primera visita.",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "factura",
+        "modelo-303",
+        "modelo-130",
+        "retenciones-111-115",
+        "coste-empresa",
+        "nomina"
+      ],
+      "texto": {
+        "es": "Sage tiene programas de facturación, contabilidad y nóminas para autónomos y pymes.",
+        "ca": "Sage té programes de facturació, comptabilitat i nòmines per a autònoms i pimes."
+      },
+      "cta": {
+        "es": "Ver planes de Sage",
+        "ca": "Veure plans de Sage"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "billin",
+      "nombre": "Billin",
+      "url_alta": "https://www.billin.net/?p=45089",
+      "red": "Propia (solicitud revisada por Billin)",
+      "comision": "30 % del plan anual contratado, con tope de 24 € (Básico), 45 € (Pro) o 72 € (Ilimitado); una sola comisión por cliente. La misma página habla también de «hasta 150 €»: cifra contradictoria, sin confirmar. Comisión de planes mensuales sin confirmar.",
+      "sitios": [
+        "impuestos"
+      ],
+      "calculadoras": [
+        "factura",
+        "verifactu",
+        "iva",
+        "recargo-equivalencia"
+      ],
+      "texto": {
+        "es": "Billin es un programa online para hacer facturas y presupuestos y llevar el control de cobros.",
+        "ca": "Billin és un programa en línia per fer factures i pressupostos i portar el control dels cobraments."
+      },
+      "cta": {
+        "es": "Probar Billin",
+        "ca": "Provar Billin"
+      },
+      "enlace": "",
+      "verificado": false
+    },
+    {
+      "id": "revolut-business",
+      "nombre": "Revolut Business",
+      "url_alta": "https://www.revolut.com/become-a-revolut-affiliate/",
+      "red": "Impact",
+      "comision": "No publicada: Revolut la comunica al entrar. Se paga cuando la empresa completa el alta y paga su primera cuota mensual. Webs de terceros hablan de hasta 500 £ por cliente de empresa (sin verificar). Exige audiencia de empresas y nombre legal completo en Impact.",
+      "sitios": [
+        "impuestos"
+      ],
+      "calculadoras": [
+        "tarifa-plana-autonomos",
+        "autonomo-o-asalariado",
+        "precio-hora-autonomo"
+      ],
+      "texto": {
+        "es": "Revolut Business es una cuenta de empresa online con tarjetas, pagos en varias divisas y gestión de gastos.",
+        "ca": "Revolut Business és un compte d'empresa en línia amb targetes, pagaments en diverses divises i gestió de despeses."
+      },
+      "cta": {
+        "es": "Ver Revolut Business",
+        "ca": "Veure Revolut Business"
+      },
+      "enlace": "",
+      "verificado": false
+    },
+    {
+      "id": "taxdown",
+      "nombre": "TaxDown",
+      "url_alta": "https://taxdown.es",
+      "red": "Sin programa de afiliados público verificado (solo «Invita a tus amigos» para clientes y convenios de empresa)",
+      "comision": "Sin datos oficiales. Webs de cupones citan recompensas de referido de 10–20 € por amigo, sin confirmar. Hay que escribirles para proponer un acuerdo.",
+      "sitios": [
+        "impuestos",
+        "nomina"
+      ],
+      "calculadoras": [
+        "irpf-renta",
+        "obligacion-declarar",
+        "tipo-marginal-irpf",
+        "alquiler-irpf",
+        "ganancias-patrimoniales",
+        "retencion-irpf",
+        "sueldo-neto"
+      ],
+      "texto": {
+        "es": "¿Prefieres que te preparen la renta? TaxDown la hace online con asesores fiscales.",
+        "ca": "Prefereixes que et preparin la renda? TaxDown la fa en línia amb assessors fiscals."
+      },
+      "cta": {
+        "es": "Ver TaxDown",
+        "ca": "Veure TaxDown"
+      },
+      "enlace": "",
+      "verificado": false
+    },
+    {
+      "id": "factorial",
+      "nombre": "Factorial",
+      "url_alta": "https://factorial.es/partners-afiliados",
+      "red": "Propia (formulario + contrato de partner afiliado)",
+      "comision": "Recompensa por cada compra de un cliente referido; el porcentaje no se publica. Un directorio de terceros habla del 20 % del primer año (sin verificar).",
+      "sitios": [
+        "nomina"
+      ],
+      "calculadoras": [
+        "coste-empresa",
+        "nomina",
+        "vacaciones",
+        "horas-extra",
+        "reduccion-jornada"
+      ],
+      "texto": {
+        "es": "¿Gestionas nóminas, vacaciones y fichajes de tu equipo? Factorial es un programa de recursos humanos para pymes.",
+        "ca": "Gestiones nòmines, vacances i fitxatges del teu equip? Factorial és un programa de recursos humans per a pimes."
+      },
+      "cta": {
+        "es": "Ver Factorial",
+        "ca": "Veure Factorial"
+      },
+      "enlace": "",
+      "verificado": false
+    },
+    {
+      "id": "rocket-lawyer",
+      "nombre": "Rocket Lawyer",
+      "url_alta": "https://www.rocketlawyer.com/es/es/socios",
+      "red": "Propia",
+      "comision": "Comisión por cada conversión, con niveles «VIP»; importes no publicados. Cookie de 30 días.",
+      "sitios": [
+        "nomina"
+      ],
+      "calculadoras": [
+        "finiquito",
+        "indemnizacion-despido"
+      ],
+      "texto": {
+        "es": "Si quieres que un abogado revise tu despido o tu finiquito, Rocket Lawyer ofrece documentos legales y consultas online.",
+        "ca": "Si vols que un advocat revisi el teu acomiadament o el teu finiquito, Rocket Lawyer ofereix documents legals i consultes en línia."
+      },
+      "cta": {
+        "es": "Consultar con un abogado",
+        "ca": "Consultar amb un advocat"
+      },
+      "enlace": "",
+      "verificado": false
+    },
+    {
+      "id": "coursera",
+      "nombre": "Coursera",
+      "url_alta": "https://www.coursera.org/about/affiliates",
+      "red": "Impact",
+      "comision": "Hasta 45 % de las compras que cumplan condiciones. Cookie de 30 días según terceros (sin confirmar en la web oficial).",
+      "sitios": [
+        "nomina"
+      ],
+      "calculadoras": [
+        "paro",
+        "subsidio-desempleo",
+        "subida-sueldo",
+        "salario-hora",
+        "salario-minimo"
+      ],
+      "texto": {
+        "es": "Si estás en paro o quieres cobrar más, Coursera tiene cursos y certificados online, muchos en español.",
+        "ca": "Si estàs a l'atur o vols cobrar més, Coursera té cursos i certificats en línia, molts en castellà."
+      },
+      "cta": {
+        "es": "Ver cursos",
+        "ca": "Veure cursos"
+      },
+      "enlace": "",
+      "verificado": true
+    },
+    {
+      "id": "seguro-salud-adeslas",
+      "nombre": "Adeslas (seguro de salud)",
+      "url_alta": "https://tradetracker.com/es/",
+      "red": "TradeTracker (campaña «Número 1 Salud», según directorios de terceros)",
+      "comision": "Pago por lead válido (formulario + llamada de 15 s). Importe no publicado. Cookie de 100 días según un directorio de terceros. Sin verificar en fuente oficial.",
+      "sitios": [
+        "nomina",
+        "impuestos"
+      ],
+      "calculadoras": [
+        "cuota-autonomos",
+        "baja-it",
+        "sueldo-neto-autonomo",
+        "autonomo-o-asalariado"
+      ],
+      "texto": {
+        "es": "Como autónomo puedes deducirte hasta 500 € al año por persona del seguro de salud. Pide precio sin compromiso.",
+        "ca": "Com a autònom et pots deduir fins a 500 € l'any per persona de l'assegurança de salut. Demana preu sense compromís."
+      },
+      "cta": {
+        "es": "Pedir precio",
+        "ca": "Demanar preu"
+      },
+      "enlace": "",
+      "verificado": false
+    }
+  ]
+}

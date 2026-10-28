@@ -34,6 +34,7 @@ export default def({
         { e: tt('Base de cotización', 'Base de cotització'), v: ss.base },
         { e: tt('Retención IRPF', 'Retenció IRPF'), v: ret.tipo, f: 'pct' },
       ],
+      reparto: [{ e: tt('Líquido', 'Líquid'), v: r2(liquido) }, { e: tt('Seguridad Social', 'Seguretat Social'), v: ss.trabajador.mensual }, { e: tt('IRPF', 'IRPF'), v: r2(irpf) }],
       filas: [
         { e: tt('Salario base', 'Salari base'), v: v.base, sub: true },
         { e: tt('Complementos salariales', 'Complements salarials'), v: v.complementos, sub: true },
@@ -41,7 +42,7 @@ export default def({
         ...(v.noSalarial ? [{ e: tt('Percepciones no salariales', 'Percepcions no salarials'), v: v.noSalarial, sub: true }] : []),
         { e: tt('A. Total devengado', 'A. Total meritat'), v: r2(devengado), fuerte: true },
         ...lineasSS,
-        { e: tt(`Retención IRPF (${ret.tipo} %)`, `Retenció IRPF (${ret.tipo} %)`), v: r2(irpf), sub: true, signo: '-' },
+        { e: tt(`Retención IRPF (${String(ret.tipo).replace(".", ",")} %)`, `Retenció IRPF (${String(ret.tipo).replace(".", ",")} %)`), v: r2(irpf), sub: true, signo: '-' },
         { e: tt('B. Total a deducir', 'B. Total a deduir'), v: r2(ss.trabajador.mensual + irpf), fuerte: true },
         { e: tt('Líquido (A − B)', 'Líquid (A − B)'), v: r2(liquido), fuerte: true },
         { e: tt('Aportación de la empresa a la Seguridad Social', 'Aportació de l’empresa a la Seguretat Social'), v: ss.empresa.mensual },
