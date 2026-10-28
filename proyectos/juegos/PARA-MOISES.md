@@ -1,6 +1,7 @@
 # Para Moisés · Juegos (5 tareas, unos 2 minutos cada una, en este orden)
 
 Todo lo demás está hecho: el juego, los paquetes, los textos y las portadas. Nada se publica hasta que tú pulses.
+Mientras tanto puedes jugarlo aquí (página privada tuya): https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv
 
 1. **Publicar la web del juego en Vercel** (no he podido hacerlo yo: esta sesión no tiene acceso a Vercel).
    [vercel.com/new](https://vercel.com/new) → importar `moisesmodu/vinclia-web` → **Root Directory: `proyectos/juegos`** →
