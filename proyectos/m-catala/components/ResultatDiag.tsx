@@ -36,17 +36,17 @@ export default function ResultatDiag({ idioma, resultat, examen, punts, sons, co
         {examen.aptoGlobal ? <div className="flex items-baseline justify-between border-b border-linia py-2"><dt className="text-secundari">{t(idioma).simulacre.global}</dt><dd className="num text-[17px]"><span className={resultat.global >= examen.aptoGlobal ? 'text-oliva' : 'text-vermell'}>{resultat.global} %</span><span className="text-[13px] font-normal text-terciari"> / {examen.aptoGlobal}</span></dd></div> : null}
       </dl>
 
-      <div className="mt-8 grid gap-8 sm:grid-cols-2">
-        <div>
+      {resultat.febles.length || resultat.sons.length ? <div className="mt-8 grid gap-8 sm:grid-cols-2">
+        {resultat.febles.length ? <div>
           <h2 className="text-[20px]">{d.febles}</h2>
           <ol className="mt-3 space-y-2">{resultat.febles.map((f, i) => <li key={f.punt} className="flex items-center gap-3 text-[16px]"><span className="num w-5 text-ocre-fosc">{i + 1}</span><span className="min-w-0 flex-1">{nomPunt(f.punt)}</span><span className="num text-[14px] text-terciari">{f.confianca} %</span></li>)}</ol>
-        </div>
-        <div>
+        </div> : null}
+        {resultat.sons.length ? <div>
           <h2 className="text-[20px]">{d.sons}</h2>
           {resultat.oralNota === null || resultat.oralNota === undefined ? <p className="mt-1 text-[13px] text-terciari">{d.senseOral}</p> : null}
           <ol className="mt-3 space-y-2">{resultat.sons.map((id, i) => { const s = sons.find((x) => x.id === id); return <li key={id} className="flex items-start gap-3 text-[16px]"><span className="num w-5 text-ocre-fosc">{i + 1}</span><span><span className="font-semibold">{s?.nom[idioma] ?? id}</span>{s ? <span className="block text-[14px] text-terciari">{s.paraules.slice(0, 4).join(' · ')}</span> : null}</span></li>; })}</ol>
-        </div>
-      </div>
+        </div> : null}
+      </div> : null}
       {!compacte ? <>
         <Link className="boton-ocre mt-10 w-full text-[18px]" href={`/${idioma}/avui`}>{d.crearPla}</Link>
         <details className="mt-4 text-[14px] text-secundari"><summary className="cursor-pointer font-semibold">{idioma === 'ca' ? 'Com es calcula' : 'Cómo se calcula'}</summary><p className="mt-2 leading-relaxed">{d.explicacio}</p></details>
