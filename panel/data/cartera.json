@@ -22,7 +22,7 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
-      "texto": "Sesión del Mac: crear los accesos (Vercel, Neon, Stripe real de Numi, Resend, datos legales) y guardarlos como secretos del entorno en la nube; después ejecutar los DESPLIEGUE.md de A y N",
+      "texto": "Sesión del Mac: abrir la red del entorno en la nube (api.stripe.com, api.vercel.com, console.neon.tech, api.resend.com), crear los accesos y guardarlos como secretos del entorno; después ejecutar el DESPLIEGUE.md de N (PR #3) y el de A",
       "donde": "DESPLIEGUES.md"
     },
     {
