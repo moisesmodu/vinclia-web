@@ -5,7 +5,7 @@
   "nombre": "CCSE nacionalidad",
   "marca": "Nuevo en España",
   "resumen": "App y web para aprobar el examen CCSE de nacionalidad española, con las 300 preguntas oficiales explicadas en 7 idiomas.",
-  "estado": "construido",
+  "estado": "lanzado",
   "orden": 1,
   "modelo": "Pago único 9,99 € (3 meses)",
   "margenCliente": 8.5,
@@ -15,7 +15,7 @@
   "clientes": 0,
   "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
   "enlaces": {
-   "demo": "https://ccse-en-tu-idioma.vercel.app (al desplegar)",
+   "demo": "https://ccse-en-tu-idioma.vercel.app",
    "rama": "https://github.com/moisesmodu/vinclia-web/tree/claude/a-ccse",
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/a-ccse/proyectos/a-ccse",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/2",
@@ -62,10 +62,13 @@
    {
     "fecha": "2026-10-28",
     "texto": "Adaptado a DESPLIEGUES.md: Stripe Numi Mates (producto 'Cartera · CCSE · Acceso 3 meses' por API, idempotente), LEGAL_* en tiempo de ejecución, migraciones Prisma en el build y DESPLIEGUE.md listo para la sesión del Mac; 30 pruebas de API y 15 en móvil pasan"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Desplegado en producción (https://ccse-en-tu-idioma.vercel.app) desde la sesión del Mac: proyecto de Vercel ccse-en-tu-idioma conectado al repo, Neon cartera-a-ccse (Londres) con migraciones, Stripe en el entorno de prueba de Numi Mates (precio 9,99 € y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478)."
    }
   ],
   "proximos": [
-   "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md (Vercel ccse-en-tu-idioma, Neon cartera-a-ccse, Stripe Numi Mates en prueba)",
    "Pago de prueba de punta a punta en producción con 4242 4242 4242 4242",
    "Contrastar el banco con el PDF oficial del Instituto Cervantes",
    "Search Console y primeros 3 vídeos",
@@ -73,7 +76,9 @@
   ],
   "paraMoises": [
    "Publicar el AAB en Google Play (enlace en PARA-MOISES.md)",
-   "Decidir dónde se guarda la clave de subida de Android"
+   "Decidir dónde se guarda la clave de subida de Android",
+   "Poner LEGAL_NOM, LEGAL_NIF, LEGAL_EMAIL y LEGAL_ADRECA en Vercel (el aviso legal muestra «[falta LEGAL_…]»)",
+   "Opcional: RESEND_API_KEY en Vercel para recuperar la contraseña por correo"
   ],
   "mejoras": [
    "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
