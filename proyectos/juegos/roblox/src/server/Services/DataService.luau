@@ -1,0 +1,424 @@
+--!strict
+-- Guardado con DataStoreService.
+-- * Bloqueo de sesión dentro del propio registro (UpdateAsync): un jugador que salta de servidor no puede tener
+--   dos copias vivas de sus datos. Un bloqueo más viejo que Config.Save.lockExpiry se considera abandonado.
+-- * Reintentos con espera creciente y respeto del presupuesto de peticiones.
+-- * Guardado automático, al salir y al cerrar el servidor (BindToClose desde Main).
+-- * commitPurchase: registra el PurchaseId en el DataStore en la misma escritura que concede la compra.
+
+local DataStoreService = game:GetService("DataStoreService")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local Config = require(ReplicatedStorage.Shared.Config)
+
+export type PlayerData = {
+	coins: number,
+	best: number,
+	delivered: number,
+	upgrades: { [string]: number },
+	receipts: { [string]: number }, -- PurchaseId → os.time() de la concesión
+}
+
+export type Session = {
+	player: Player,
+	key: string,
+	data: PlayerData,
+	canSave: boolean,
+	busy: boolean,
+	released: boolean,
+	coinsValue: IntValue,
+	bestValue: IntValue,
+}
+
+export type CommitResult = "granted" | "already" | "failed"
+
+local RECORD_VERSION = 1
+
+local DataService = {}
+
+local store: DataStore? = nil
+local storeOk, storeErr = pcall(function()
+	store = DataStoreService:GetDataStore(Config.Save.storeName)
+end)
+if not storeOk then
+	warn("[DataService] DataStore no disponible:", storeErr)
+end
+
+local sessions: { [Player]: Session } = {}
+
+local function defaultData(): PlayerData
+	local upgrades: { [string]: number } = {}
+	for _, id in Config.UpgradeOrder do
+		upgrades[id] = 0
+	end
+	return { coins = 0, best = 0, delivered = 0, upgrades = upgrades, receipts = {} }
+end
+
+local function toNumber(value: any, fallback: number): number
+	local n = tonumber(value)
+	if n == nil or n ~= n or n == math.huge or n == -math.huge then
+		return fallback
+	end
+	return n
+end
+
+-- Acepta cualquier cosa leída del DataStore y devuelve datos válidos (campos nuevos con su valor por defecto).
+local function reconcile(raw: any): PlayerData
+	local data = defaultData()
+	if type(raw) ~= "table" then
+		return data
+	end
+	data.coins = math.max(0, math.floor(toNumber(raw.coins, 0)))
+	data.best = math.max(0, math.floor(toNumber(raw.best, 0)))
+	data.delivered = math.max(0, math.floor(toNumber(raw.delivered, 0)))
+	if type(raw.upgrades) == "table" then
+		for _, id in Config.UpgradeOrder do
+			local def = Config.Upgrades[id]
+			data.upgrades[id] = math.clamp(math.floor(toNumber(raw.upgrades[id], 0)), 0, def.maxLevel)
+		end
+	end
+	if type(raw.receipts) == "table" then
+		for purchaseId, at in raw.receipts do
+			if type(purchaseId) == "string" then
+				data.receipts[purchaseId] = toNumber(at, 0)
+			end
+		end
+	end
+	return data
+end
+
+local function copyData(data: PlayerData): PlayerData
+	return {
+		coins = data.coins,
+		best = data.best,
+		delivered = data.delivered,
+		upgrades = table.clone(data.upgrades),
+		receipts = table.clone(data.receipts),
+	}
+end
+
+local function pruneReceipts(data: PlayerData)
+	local list: { { id: string, at: number } } = {}
+	for id, at in data.receipts do
+		table.insert(list, { id = id, at = at })
+	end
+	if #list <= Config.Save.maxReceipts then
+		return
+	end
+	table.sort(list, function(a, b)
+		return a.at > b.at
+	end)
+	for i = Config.Save.maxReceipts + 1, #list do
+		data.receipts[list[i].id] = nil
+	end
+end
+
+local function waitForBudget()
+	local waited = 0
+	while DataStoreService:GetRequestBudgetForRequestType(Enum.DataStoreRequestType.UpdateAsync) < 1 and waited < 30 do
+		task.wait(1)
+		waited += 1
+	end
+end
+
+local function isLockedByOther(record: any, now: number): boolean
+	if type(record) ~= "table" or type(record.lock) ~= "table" then
+		return false
+	end
+	if record.lock.jobId == game.JobId then
+		return false
+	end
+	return now - toNumber(record.lock.time, 0) < Config.Save.lockExpiry
+end
+
+local function acquire(session: Session)
+	while session.busy do
+		task.wait(0.05)
+	end
+	session.busy = true
+end
+
+local function refresh(session: Session)
+	local data = session.data
+	session.coinsValue.Value = math.floor(data.coins)
+	session.bestValue.Value = math.floor(data.best)
+	local player = session.player
+	player:SetAttribute("Coins", math.floor(data.coins))
+	player:SetAttribute("Best", math.floor(data.best))
+	for _, id in Config.UpgradeOrder do
+		player:SetAttribute("Lvl_" .. id, data.upgrades[id] or 0)
+	end
+end
+
+-- Escribe los datos de la sesión. Debe llamarse con session.busy tomado.
+local function writeLocked(session: Session, release: boolean): boolean
+	local activeStore = store
+	if not session.canSave or activeStore == nil then
+		return false
+	end
+	local snapshot = copyData(session.data)
+	for attempt = 1, Config.Save.saveAttempts do
+		waitForBudget()
+		local stolen = false
+		local ok, err = pcall(function()
+			activeStore:UpdateAsync(session.key, function(old: any)
+				stolen = false
+				if type(old) == "table" and type(old.lock) == "table" and old.lock.jobId ~= game.JobId then
+					stolen = true
+					return nil -- otro servidor tiene la sesión: no pisar sus datos
+				end
+				local record: { [string]: any } = { v = RECORD_VERSION, data = snapshot }
+				if not release then
+					record.lock = { jobId = game.JobId, time = os.time() }
+				end
+				return record
+			end)
+		end)
+		if ok and not stolen then
+			return true
+		elseif ok and stolen then
+			warn("[DataService] la sesión de", session.player.UserId, "la tiene otro servidor; no se guarda")
+			session.canSave = false
+			return false
+		end
+		warn("[DataService] fallo al guardar (intento " .. attempt .. "):", err)
+		task.wait(2 ^ (attempt - 1))
+	end
+	return false
+end
+
+local function createSession(player: Player, data: PlayerData, canSave: boolean): Session
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name = "leaderstats"
+	local coinsValue = Instance.new("IntValue")
+	coinsValue.Name = "Coins"
+	coinsValue.Parent = leaderstats
+	local bestValue = Instance.new("IntValue")
+	bestValue.Name = "Best"
+	bestValue.Parent = leaderstats
+	leaderstats.Parent = player
+
+	local session: Session = {
+		player = player,
+		key = "u_" .. player.UserId,
+		data = data,
+		canSave = canSave,
+		busy = false,
+		released = false,
+		coinsValue = coinsValue,
+		bestValue = bestValue,
+	}
+	sessions[player] = session
+	refresh(session)
+	return session
+end
+
+-- Carga (y bloquea) los datos del jugador. Puede tardar varios segundos. nil si el jugador se fue o fue expulsado.
+function DataService.load(player: Player): Session?
+	local activeStore = store
+	local key = "u_" .. player.UserId
+	local lockedByOther = false
+
+	if activeStore ~= nil then
+		for attempt = 1, Config.Save.loadAttempts do
+			waitForBudget()
+			local loaded: PlayerData? = nil
+			local ok, err = pcall(function()
+				activeStore:UpdateAsync(key, function(old: any)
+					loaded = nil
+					lockedByOther = false
+					local now = os.time()
+					if isLockedByOther(old, now) then
+						lockedByOther = true
+						return nil
+					end
+					local data = reconcile(if type(old) == "table" then old.data else nil)
+					loaded = data
+					return { v = RECORD_VERSION, data = data, lock = { jobId = game.JobId, time = now } }
+				end)
+			end)
+			if player.Parent ~= Players then
+				-- se fue mientras cargaba: si llegamos a bloquear, se libera
+				if ok and loaded then
+					createSession(player, loaded, true)
+					DataService.release(player)
+				end
+				return nil
+			end
+			if ok and loaded then
+				return createSession(player, loaded, true)
+			end
+			if not ok then
+				warn("[DataService] fallo al cargar (intento " .. attempt .. "):", err)
+			end
+			task.wait(Config.Save.loadRetryDelay)
+		end
+	end
+
+	if lockedByOther then
+		player:Kick("Your save is still open on another server. Please rejoin in a minute.")
+		return nil
+	end
+	-- DataStore caído: se juega, pero nada se guarda (y las compras esperan: ProcessReceipt devuelve NotProcessedYet)
+	warn("[DataService] jugando sin guardado para", player.UserId)
+	player:SetAttribute("SaveWarning", true)
+	return createSession(player, defaultData(), false)
+end
+
+function DataService.get(player: Player): Session?
+	local session = sessions[player]
+	if session and not session.released then
+		return session
+	end
+	return nil
+end
+
+function DataService.waitFor(player: Player, timeout: number): Session?
+	local started = os.clock()
+	while os.clock() - started < timeout do
+		local session = DataService.get(player)
+		if session then
+			return session
+		end
+		if player.Parent ~= Players then
+			return nil
+		end
+		task.wait(0.25)
+	end
+	return DataService.get(player)
+end
+
+function DataService.addCoins(player: Player, amount: number)
+	local session = DataService.get(player)
+	if not session or amount == 0 then
+		return
+	end
+	session.data.coins = math.max(0, math.floor(session.data.coins + amount))
+	refresh(session)
+end
+
+function DataService.trySpend(player: Player, amount: number): boolean
+	local session = DataService.get(player)
+	if not session or amount < 0 or session.data.coins < amount then
+		return false
+	end
+	session.data.coins -= amount
+	refresh(session)
+	return true
+end
+
+function DataService.recordDelivery(player: Player, eggs: number, coins: number)
+	local session = DataService.get(player)
+	if not session then
+		return
+	end
+	session.data.delivered += eggs
+	if coins > session.data.best then
+		session.data.best = coins
+	end
+	refresh(session)
+end
+
+function DataService.getLevel(player: Player, id: string): number
+	local session = DataService.get(player)
+	if not session then
+		return 0
+	end
+	return session.data.upgrades[id] or 0
+end
+
+function DataService.setLevel(player: Player, id: string, level: number)
+	local session = DataService.get(player)
+	if not session then
+		return
+	end
+	session.data.upgrades[id] = level
+	refresh(session)
+end
+
+function DataService.save(player: Player): boolean
+	local session = DataService.get(player)
+	if not session then
+		return false
+	end
+	acquire(session)
+	local ok = writeLocked(session, false)
+	session.busy = false
+	return ok
+end
+
+-- Concede una compra de forma idempotente: si el PurchaseId ya está, no hace nada; si no, aplica `mutate`,
+-- guarda el PurchaseId y los datos en una sola escritura y, si la escritura falla, deshace con `revert`.
+function DataService.commitPurchase(
+	player: Player,
+	purchaseId: string,
+	mutate: (PlayerData) -> (),
+	revert: (PlayerData) -> ()
+): CommitResult
+	local session = DataService.get(player)
+	if not session or not session.canSave then
+		return "failed"
+	end
+	acquire(session)
+	if session.released then
+		session.busy = false
+		return "failed"
+	end
+	if session.data.receipts[purchaseId] ~= nil then
+		session.busy = false
+		return "already"
+	end
+	mutate(session.data)
+	session.data.receipts[purchaseId] = os.time()
+	pruneReceipts(session.data)
+	local ok = writeLocked(session, false)
+	if not ok then
+		revert(session.data)
+		session.data.receipts[purchaseId] = nil
+	end
+	session.busy = false
+	refresh(session)
+	return if ok then "granted" else "failed"
+end
+
+-- Guarda y suelta el bloqueo. Se llama al salir el jugador y al cerrar el servidor (dos veces no pasa nada).
+function DataService.release(player: Player)
+	local session = sessions[player]
+	if not session or session.released then
+		return
+	end
+	acquire(session)
+	session.released = true
+	writeLocked(session, true)
+	session.busy = false
+	sessions[player] = nil
+end
+
+function DataService.releaseAll()
+	local pending = 0
+	for player in sessions do
+		pending += 1
+		task.spawn(function()
+			DataService.release(player)
+			pending -= 1
+		end)
+	end
+	local started = os.clock()
+	while pending > 0 and os.clock() - started < 25 do
+		task.wait(0.1)
+	end
+end
+
+function DataService.startAutosave()
+	task.spawn(function()
+		while true do
+			task.wait(Config.Save.autosaveInterval)
+			for player in sessions do
+				task.spawn(DataService.save, player)
+			end
+		end
+	end)
+end
+
+return DataService
