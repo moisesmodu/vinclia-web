@@ -42,7 +42,7 @@ export default async function PaginaPregunta({ params }: { params: Promise<{ idi
   return (
     <article className="space-y-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <nav className="text-sm text-suave"><Link href={`/${idioma}/preguntas`}>← {d.nav.preguntas}</Link></nav>
+      <nav className="text-sm text-suave"><Link href={`/${idioma}/preguntas`}><span className="inline-block rtl:rotate-180" aria-hidden>←</span> {d.nav.preguntas}</Link></nav>
       <header>
         <h1 className="text-3xl font-bold leading-tight">{p.pregunta}</h1>
         <p className="text-sm text-suave mt-2">{d.guia.actualizado} {fechaLarga(p.actualizado, idioma)}</p>

@@ -1,7 +1,7 @@
 {
   "slug": "empadronarse-sin-contrato-de-alquiler",
   "pregunta": "¿Cómo empadronarse sin contrato de alquiler?",
-  "descripcion": "Sí puedes empadronarte sin contrato de alquiler: con la autorización de quien vive allí, con la comprobación del ayuntamiento o con domicilio ficticio. Es gratis.",
+  "descripcion": "Puedes empadronarte sin contrato de alquiler: con autorización de quien vive allí, con la comprobación del ayuntamiento o con domicilio ficticio. Es gratis.",
   "respuestaCorta": "Sí puedes empadronarte sin contrato de alquiler a tu nombre. Lo más habitual es llevar una autorización firmada por el titular del contrato, el propietario o una persona mayor de edad ya empadronada en la vivienda, con copia de su documento de identidad. Si no tienes ningún papel, el ayuntamiento puede comprobar por otros medios que vives allí, y si no tienes domicilio fijo existe el domicilio ficticio a través de servicios sociales.",
   "secciones": [
     {
@@ -26,19 +26,54 @@
     }
   ],
   "faq": [
-    { "p": "¿Puedo empadronarme en una habitación alquilada sin contrato?", "r": "Sí, con una autorización firmada por el titular del contrato, el propietario o una persona mayor de edad empadronada en la vivienda, más copia de su documento de identidad." },
-    { "p": "¿Puedo empadronarme sin papeles?", "r": "Sí. El padrón registra dónde vives, no tu situación de residencia. Necesitas un documento de identidad en vigor, como el pasaporte." },
-    { "p": "¿Y si el propietario no quiere firmar?", "r": "El ayuntamiento puede comprobar por otros medios que vives allí, por ejemplo con un informe de la Policía Local o una inspección." },
-    { "p": "¿Cuánto cuesta empadronarse?", "r": "Es gratis en Madrid, en Barcelona y en la mayoría de ayuntamientos. Si alguien te cobra por empadronarte, no es un trámite oficial." },
-    { "p": "¿Tengo que renovar el padrón?", "r": "Si eres de fuera de la UE y no tienes residencia de larga duración, cada 2 años desde el alta o la última renovación. Si no renuevas, pueden darte de baja." }
+    {
+      "p": "¿Puedo empadronarme en una habitación alquilada sin contrato?",
+      "r": "Sí, con una autorización firmada por el titular del contrato, el propietario o una persona mayor de edad empadronada en la vivienda, más copia de su documento de identidad."
+    },
+    {
+      "p": "¿Puedo empadronarme sin papeles?",
+      "r": "Sí. El padrón registra dónde vives, no tu situación de residencia. Necesitas un documento de identidad en vigor, como el pasaporte."
+    },
+    {
+      "p": "¿Y si el propietario no quiere firmar?",
+      "r": "El ayuntamiento puede comprobar por otros medios que vives allí, por ejemplo con un informe de la Policía Local o una inspección."
+    },
+    {
+      "p": "¿Cuánto cuesta empadronarse?",
+      "r": "Es gratis en Madrid, en Barcelona y en la mayoría de ayuntamientos. Si alguien te cobra por empadronarte, no es un trámite oficial."
+    },
+    {
+      "p": "¿Tengo que renovar el padrón?",
+      "r": "Si eres de fuera de la UE y no tienes residencia de larga duración, cada 2 años desde el alta o la última renovación. Si no renuevas, pueden darte de baja."
+    }
   ],
   "guia": "empadronamiento",
   "actualizado": "2026-10-28",
   "fuentes": [
-    { "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
-    { "nombre": "Resolución de 17 de febrero de 2020 (INE y DGCAL), instrucciones técnicas sobre gestión del Padrón municipal (BOE-A-2020-4784)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
-    { "nombre": "Ley Orgánica 4/2000, de derechos y libertades de los extranjeros, art. 6.3 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
-    { "nombre": "Ayuntamiento de Madrid: Padrón Municipal. Empadronamiento (altas y cambios de domicilio)", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
-    { "nombre": "Ajuntament de Barcelona: Alta en el Padrón municipal de habitantes", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+    {
+      "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, texto consolidado)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Resolución de 17 de febrero de 2020 (INE y DGCAL), instrucciones técnicas sobre gestión del Padrón municipal (BOE-A-2020-4784)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Ley Orgánica 4/2000, de derechos y libertades de los extranjeros, art. 6.3 (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Ayuntamiento de Madrid: Padrón Municipal. Empadronamiento (altas y cambios de domicilio)",
+      "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Ajuntament de Barcelona: Alta en el Padrón municipal de habitantes",
+      "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402",
+      "consultado": "2026-10-28"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "numero-seguridad-social-sin-nie",
   "pregunta": "¿Se puede pedir el número de la Seguridad Social sin NIE?",
-  "descripcion": "Número de la Seguridad Social sin NIE: los ciudadanos de la UE pueden pedirlo con pasaporte y aportar el NIE en 3 meses. Fuera de la UE, lo habitual es NIE o TIE.",
+  "descripcion": "Número de la Seguridad Social sin NIE: si eres de la UE, puedes pedirlo con pasaporte y aportar el NIE en 3 meses. Fuera de la UE, lo habitual es NIE o TIE.",
   "respuestaCorta": "Depende de dónde seas. Si eres ciudadano de la UE, del EEE o de Suiza, según el modelo TA.1 puedes pedir el Número de la Seguridad Social con tu pasaporte, pero tienes que aportar el NIE en 3 meses desde tu entrada en España. Si eres de fuera de la UE, para trabajar normalmente necesitas una autorización de trabajo, y con ella tendrás NIE: lo habitual es pedir el número con tu NIE o TIE. Si solo tienes pasaporte, pregunta en una oficina de la TGSS.",
   "secciones": [
     {
@@ -26,19 +26,54 @@
     }
   ],
   "faq": [
-    { "p": "¿Es lo mismo el NIE que el número de la Seguridad Social?", "r": "No. El NIE lo da la Policía Nacional y el número de la Seguridad Social lo da la TGSS. Para trabajar necesitas los dos." },
-    { "p": "¿Puede pedirlo mi empresa por mí?", "r": "Sí. Si te van a contratar y no tienes número, la empresa debe pedir tu afiliación y puede solicitarlo por el Sistema RED." },
-    { "p": "¿Cuánto cuesta el número de la Seguridad Social?", "r": "Nada. Es gratis y nadie puede cobrarte por él." },
-    { "p": "¿Puedo pedirlo en un CAISS?", "r": "Los CAISS son oficinas del INSS. El número lo asigna la TGSS, por Import@ss o en sus oficinas." },
-    { "p": "Ya trabajé en España hace años. ¿Pido otro?", "r": "No. El número es único para toda la vida. Búscalo en tus nóminas o en tu vida laboral." }
+    {
+      "p": "¿Es lo mismo el NIE que el número de la Seguridad Social?",
+      "r": "No. El NIE lo da la Policía Nacional y el número de la Seguridad Social lo da la TGSS. Para trabajar necesitas los dos."
+    },
+    {
+      "p": "¿Puede pedirlo mi empresa por mí?",
+      "r": "Sí. Si te van a contratar y no tienes número, la empresa debe pedir tu afiliación y puede solicitarlo por el Sistema RED."
+    },
+    {
+      "p": "¿Cuánto cuesta el número de la Seguridad Social?",
+      "r": "Nada. Es gratis y nadie puede cobrarte por él."
+    },
+    {
+      "p": "¿Puedo pedirlo en un CAISS?",
+      "r": "Los CAISS son oficinas del INSS. El número lo asigna la TGSS, por Import@ss o en sus oficinas."
+    },
+    {
+      "p": "Ya trabajé en España hace años. ¿Pido otro?",
+      "r": "No. El número es único para toda la vida. Búscalo en tus nóminas o en tu vida laboral."
+    }
   ],
   "guia": "numero-seguridad-social",
   "actualizado": "2026-10-28",
   "fuentes": [
-    { "nombre": "Import@ss (TGSS): Solicitar el Número de la Seguridad Social", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
-    { "nombre": "Seguridad Social: información sobre la asignación del número (modelo TA.1, plazo de resolución)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
-    { "nombre": "Revista de la Seguridad Social: Cómo obtener el Número de la Seguridad Social", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
-    { "nombre": "Real Decreto 84/1996, Reglamento General de inscripción de empresas y afiliación (BOE, texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
-    { "nombre": "Revista de la Seguridad Social: teléfono de información sobre afiliación de la TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+    {
+      "nombre": "Import@ss (TGSS): Solicitar el Número de la Seguridad Social",
+      "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Seguridad Social: información sobre la asignación del número (modelo TA.1, plazo de resolución)",
+      "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Revista de la Seguridad Social: Cómo obtener el Número de la Seguridad Social",
+      "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Real Decreto 84/1996, Reglamento General de inscripción de empresas y afiliación (BOE, texto consolidado)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Revista de la Seguridad Social: teléfono de información sobre afiliación de la TGSS",
+      "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss",
+      "consultado": "2026-10-28"
+    }
   ]
 }

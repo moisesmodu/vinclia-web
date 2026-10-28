@@ -8,7 +8,13 @@ let cliente: Stripe | null = null;
 export function stripe(): Stripe | null {
   const k = process.env.STRIPE_SECRET_KEY;
   if (!k) return null;
-  if (!cliente) cliente = new Stripe(k);
+  if (!cliente) {
+    // STRIPE_API_BASE solo se usa en pruebas locales (scripts/prueba-e2e.mjs) para apuntar a un simulador.
+    const base = process.env.STRIPE_API_BASE ? new URL(process.env.STRIPE_API_BASE) : null;
+    cliente = base
+      ? new Stripe(k, { host: base.hostname, port: Number(base.port), protocol: base.protocol.replace(":", "") as "http" | "https" })
+      : new Stripe(k);
+  }
   return cliente;
 }
 

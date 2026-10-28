@@ -1,0 +1,89 @@
+{
+  "slug": "cuenta-bancaria",
+  "titulo": "Ouvrir un compte bancaire",
+  "resumen": "En Espagne, vous avez le droit d'ouvrir un compte de paiement de base (cuenta de pago básica), même si vous n'avez pas encore de titre de séjour. Il sert à recevoir votre salaire, payer des factures, retirer de l'argent et utiliser une carte de débit. Les frais maximum sont de 3 € par mois et il est gratuit si vous êtes en situation de vulnérabilité. Si la banque dit non, elle doit vous donner les raisons par écrit dans un délai maximum de 10 jours ouvrables.",
+  "paraQuien": "Pour toute personne qui réside légalement dans l'Union européenne, qui a demandé l'asile ou qui n'a pas de titre de séjour mais ne peut pas être expulsée. Ne s'applique pas si vous avez déjà un autre compte de paiement dans une banque en Espagne.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coût maximum", "valor": "3 € par mois (cuenta de pago básica)" },
+    { "etiqueta": "Gratuit", "valor": "Si vous êtes en situation de vulnérabilité ou de risque d'exclusion financière (Real Decreto 164/2019)" },
+    { "etiqueta": "Réponse de la banque si elle refuse le compte", "valor": "Par écrit et au maximum en 10 jours ouvrables" },
+    { "etiqueta": "Document", "valor": "Passeport ou TIE (carte avec votre NIE) en cours de validité" },
+    { "etiqueta": "Opérations comprises", "valor": "Dépôts, retraits, carte de débit et 120 virements ou prélèvements par an" }
+  ],
+  "pasos": [
+    { "titulo": "Décidez quel type de compte vous demandez", "texto": "Si vous avez seulement besoin de l'essentiel (recevoir de l'argent, payer des factures, carte), demandez clairement une « cuenta de pago básica ». C'est un droit : une banque qui propose des comptes à ses clients doit aussi proposer celui-ci. Les autres comptes de la banque peuvent avoir plus de services, mais n'ont pas la limite de 3 € par mois." },
+    { "titulo": "Préparez votre pièce d'identité", "texto": "La banque doit vous identifier avec un document officiel avec photo et en cours de validité : passeport ou carte de séjour (TIE, Tarjeta de Identidad de Extranjero). Si vous êtes de l'UE, la carte d'identité de votre pays est aussi valable. Apportez aussi votre NIE (numéro d'identité d'étranger) si vous l'avez." },
+    { "titulo": "Apportez des informations sur votre activité", "texto": "À cause de la Ley 10/2010 contre le blanchiment d'argent, la banque vous demandera ce que vous faites, d'où vient votre argent et votre domicile. C'est normal et obligatoire pour la banque. Vous pouvez apporter un contrat de travail, des fiches de paie (nóminas), un certificado de empadronamiento (certificat d'inscription au registre municipal) ou une déclaration écrite de votre part." },
+    { "titulo": "Faites la demande par écrit", "texto": "Demandez le compte à l'agence ou sur le site de la banque. Demandez une copie tamponnée ou un justificatif avec la date. Cette date est importante : le délai de 10 jours ouvrables commence quand la banque reçoit la demande complète." },
+    { "titulo": "Si c'est votre cas, demandez qu'il soit gratuit", "texto": "Si vos revenus sont sous les limites du Real Decreto 164/2019 et que vous n'avez pas d'autres logements ni de parts dans des entreprises, vous pouvez demander la gratuité. Vous devrez prouver vos revenus et votre foyer, ou présenter un rapport des services sociaux de votre mairie (ayuntamiento). La gratuité dure 2 ans et peut être renouvelée." },
+    { "titulo": "Lisez et signez le contrat", "texto": "Avant de signer, la banque doit vous donner les informations sur les frais. Vérifiez que le contrat indique « cuenta de pago básica » et les frais mensuels. Gardez une copie." },
+    { "titulo": "Si la banque ne répond pas ou dit non, demandez la réponse par écrit", "texto": "Le refus doit être écrit, gratuit et avec des raisons précises, au maximum en 10 jours ouvrables. Les raisons sont dans une liste fermée de la loi, par exemple ne pas donner les informations exigées par les règles contre le blanchiment ou avoir déjà un autre compte en Espagne." },
+    { "titulo": "Faites une réclamation au service clients de la banque", "texto": "Envoyez une réclamation écrite au service clients (servicio de atención al cliente) ou au défenseur du client de la banque. Pour les services de paiement, la banque a en général 15 jours ouvrables pour répondre ; dans les autres cas, jusqu'à un mois pour les consommateurs. Gardez le justificatif de votre réclamation." },
+    { "titulo": "Sans réponse ou si vous n'êtes pas d'accord, faites une réclamation au Banco de España", "texto": "Vous pouvez faire une réclamation au Servicio de Reclamaciones du Banco de España (la banque centrale) sur internet (avec certificat numérique ou Cl@ve), en personne ou par courrier postal. Vous avez un an à partir de votre réclamation à la banque. C'est gratuit." }
+  ],
+  "documentos": [
+    { "nombre": "Passeport en cours de validité", "nota": "Valable si vous n'avez pas encore de TIE." },
+    { "nombre": "Carte de séjour (TIE) en cours de validité", "nota": "Si vous l'avez. Elle contient votre NIE." },
+    { "nombre": "Carte d'identité nationale de votre pays", "nota": "Seulement pour les citoyens de l'UE, de l'Espace économique européen ou de Suisse." },
+    { "nombre": "Justificatif de domicile", "nota": "Par exemple, certificado de empadronamiento ou contrat de location. La banque peut le demander." },
+    { "nombre": "Justificatif d'activité ou de revenus", "nota": "Contrat de travail, fiches de paie, inscription comme indépendant (autónomo) ou, si vous n'en avez pas, une déclaration sur votre situation." },
+    { "nombre": "Document de demande d'asile ou de protection internationale", "nota": "Si vous êtes demandeur d'asile." },
+    { "nombre": "Documents sur vos revenus et votre foyer ou rapport des services sociaux", "nota": "Seulement si vous demandez le compte gratuit pour vulnérabilité." },
+    { "nombre": "Certificat de non-résident (certificado de no residente)", "nota": "Seulement si vous vivez hors d'Espagne et voulez un compte de non-résident. Il est délivré par la Policía Nacional ou par un consulat si vous avez déjà un NIE." }
+  ],
+  "plazos": [
+    { "texto": "La banque doit ouvrir le compte ou vous communiquer le refus par écrit, avec les raisons, au maximum en 10 jours ouvrables à partir de la réception de la demande complète (Real Decreto-ley 19/2017, art. 5)." },
+    { "texto": "Le service clients de la banque a 15 jours ouvrables pour répondre aux réclamations sur les services de paiement, et un mois pour les autres réclamations de consommateurs." },
+    { "texto": "Vous pouvez faire une réclamation au Banco de España si la banque ne répond pas dans le délai ou rejette votre réclamation, jusqu'à un an après votre réclamation à la banque." },
+    { "texto": "La gratuité pour vulnérabilité dure 2 ans et se prolonge pour la même durée si vous êtes toujours dans la même situation." }
+  ],
+  "tasas": [
+    { "concepto": "Frais maximum de la cuenta de pago básica", "importe": "3 € par mois", "modelo": "Payés à la banque (Orden ECE/228/2019, art. 4)", "nota": "Comprend l'ouverture, l'utilisation et la fermeture, les dépôts et retraits d'espèces, une carte de débit ou prépayée et 120 opérations par an (virements et prélèvements en euros dans l'UE). Le Banco de España peut actualiser ce montant tous les 2 ans ; au 28/10/2026, nous n'avons pas trouvé d'actualisation : vérifiez le montant en vigueur sur clientebancario.bde.es." },
+    { "concepto": "Opérations au-delà de 120 par an", "importe": "Variable, avec limite", "modelo": "Payées à la banque", "nota": "Le Banco de España publie chaque trimestre les frais maximum que chaque banque peut prendre." },
+    { "concepto": "Cuenta de pago básica pour les personnes vulnérables", "importe": "0 €", "modelo": "Real Decreto 164/2019", "nota": "Si vous respectez les limites de revenus et de patrimoine." },
+    { "concepto": "Réclamation à la banque et au Banco de España", "importe": "Gratuit" }
+  ],
+  "errores": [
+    "Demander « un compte » sans dire « cuenta de pago básica » : la banque peut vous proposer un autre compte avec plus de frais. Utilisez le nom exact.",
+    "Ne pas garder de justificatif de la date de demande. Sans cette date, il est difficile de prouver que les 10 jours ouvrables sont passés.",
+    "Accepter un refus seulement oral. Demandez toujours le refus par écrit avec les raisons ; c'est votre droit et vous en avez besoin pour faire une réclamation.",
+    "Aller directement au Banco de España. Vous devez d'abord faire une réclamation au service clients de la banque.",
+    "Croire que sans NIE ou sans titre de séjour vous ne pouvez pas avoir de compte. Avec un passeport valable, vous pouvez le demander si vous êtes dans l'un des groupes protégés.",
+    "Donner des informations fausses ou incomplètes sur votre activité ou vos revenus : c'est une raison légale pour refuser ou fermer le compte.",
+    "Garder le compte en « non-résident » alors que vous vivez déjà en Espagne. Prévenez la banque quand votre résidence change pour qu'elle applique la bonne situation."
+  ],
+  "checklist": [
+    { "id": "doc-identidad", "texto": "J'ai un passeport ou une TIE en cours de validité" },
+    { "id": "doc-domicilio", "texto": "J'ai un justificatif de domicile (padrón ou location)" },
+    { "id": "doc-actividad", "texto": "J'ai un document sur mon travail ou mes revenus" },
+    { "id": "pedir-cpb", "texto": "J'ai demandé clairement une « cuenta de pago básica »" },
+    { "id": "justificante-fecha", "texto": "J'ai un justificatif avec la date de ma demande" },
+    { "id": "valorar-gratuidad", "texto": "J'ai vérifié si je peux demander le compte gratuit pour vulnérabilité" },
+    { "id": "revisar-contrato", "texto": "J'ai lu le contrat et les frais mensuels avant de signer" },
+    { "id": "denegacion-escrito", "texto": "Si on me refuse le compte, j'ai la réponse écrite avec les raisons" },
+    { "id": "reclamacion-banco", "texto": "Si nécessaire, j'ai fait une réclamation au service clients de la banque" },
+    { "id": "reclamacion-bde", "texto": "Si la banque ne répond pas ou dit non, je sais comment faire une réclamation au Banco de España" }
+  ],
+  "recordatorio": {
+    "pregunta": "Quel jour avez-vous demandé le compte à la banque ?",
+    "avisos": [
+      { "dias": 10, "texto": "Si la banque ne vous a pas ouvert le compte ni donné de réponse écrite, vous pouvez faire une réclamation au service clients. Le délai est de 10 jours ouvrables : s'il y a eu des jours fériés, attendez un ou deux jours de plus." },
+      { "dias": 30, "texto": "Si vous avez fait une réclamation à la banque et qu'elle n'a pas répondu ou que vous n'êtes pas d'accord, regardez si vous pouvez déjà faire une réclamation au Banco de España." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Compte de résident et compte de non-résident", "texto": "Les banques font la différence entre clients résidents et non-résidents en Espagne. Si vous vivez en Espagne, votre compte doit être un compte de résident. Si vous vivez à l'étranger, la banque peut vous demander un certificat de non-résident, délivré par la Policía Nacional (ou un consulat si vous avez déjà un NIE). Les conditions de chaque banque sont différentes ; demandez à la banque ce qu'elle exige." },
+    { "titulo": "Demandeurs d'asile et personnes sans titre de séjour", "texto": "Le Real Decreto-ley 19/2017 inclut clairement les demandeurs d'asile et les personnes sans titre de séjour dont l'expulsion n'est pas possible pour des raisons légales ou de fait." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 19/2017, sur les comptes de paiement de base (BOE)", "url": "https://www.boe.es/eli/es/rdl/2017/11/24/19/con", "consultado": "2026-10-28" },
+    { "nombre": "Orden ECE/228/2019, sur les comptes de paiement de base (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3113", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 164/2019, régime gratuit des comptes de paiement de base (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906", "consultado": "2026-10-28" },
+    { "nombre": "Ley 10/2010, sur la prévention du blanchiment de capitaux (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario : Qui peut demander le compte de paiement de base ?", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario : Gratuité du compte de paiement de base", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/gratuidad.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario : Comment faire une réclamation", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/", "consultado": "2026-10-28" },
+    { "nombre": "Policía Nacional : Extranjería (certificats de résidence et de non-résidence)", "url": "https://www.policia.es/_es/extranjeria_extranjeros.php", "consultado": "2026-10-28" }
+  ]
+}

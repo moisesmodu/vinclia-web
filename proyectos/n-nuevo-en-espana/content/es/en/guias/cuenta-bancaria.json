@@ -1,0 +1,89 @@
+{
+  "slug": "cuenta-bancaria",
+  "titulo": "Open a bank account",
+  "resumen": "In Spain you have the right to open a basic payment account (cuenta de pago básica), even if you do not have a residence permit yet. You can use it to receive your salary, pay bills, take out cash and use a debit card. The maximum fee is 3 € a month, and it is free if you are in a vulnerable situation. If the bank says no, it must give you the reasons in writing within a maximum of 10 working days.",
+  "paraQuien": "For anyone who lives legally in the European Union, who has applied for asylum, or who has no residence permit but cannot be expelled. It does not apply if you already have another payment account at a bank in Spain.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Maximum cost", "valor": "3 € a month (basic payment account)" },
+    { "etiqueta": "Free", "valor": "If you are in a vulnerable situation or at risk of financial exclusion (Real Decreto 164/2019)" },
+    { "etiqueta": "Bank's answer if it refuses the account", "valor": "In writing and within a maximum of 10 working days" },
+    { "etiqueta": "Document", "valor": "Valid passport or TIE (card with your NIE)" },
+    { "etiqueta": "Included operations", "valor": "Deposits, withdrawals, debit card and 120 transfers or direct debits a year" }
+  ],
+  "pasos": [
+    { "titulo": "Decide which type of account to ask for", "texto": "If you only need the basics (receive money, pay bills, card), clearly ask for a «cuenta de pago básica» (basic payment account). It is a right: a bank that offers accounts to its customers must also offer this one. Other bank accounts may have more services, but they do not have the 3 € a month limit." },
+    { "titulo": "Prepare your ID document", "texto": "The bank must identify you with a valid official document with a photo: passport or foreigner ID card (TIE, Tarjeta de Identidad de Extranjero). If you are from the EU, your national ID card is also valid. Also bring your NIE (foreigner identity number) if you have it." },
+    { "titulo": "Bring information about your activity", "texto": "Under Ley 10/2010 against money laundering, the bank will ask what you do for a living, where your money comes from and your address. This is normal and the bank must do it. You can bring a work contract, payslips, a certificado de empadronamiento (proof of address registration) or a statement written by you." },
+    { "titulo": "Submit the application in writing", "texto": "Ask for the account at the branch or on the bank's website. Ask for a stamped copy or a receipt with the date. This date is important: the 10-working-day deadline starts when the bank receives your complete application." },
+    { "titulo": "If it applies to you, ask for it to be free", "texto": "If your income is below the limits of Real Decreto 164/2019 and you have no other homes or shares in companies, you can ask for the free account. You will have to prove your income and your household, or bring a report from the social services of your town hall. The free account lasts 2 years and can be renewed." },
+    { "titulo": "Read and sign the contract", "texto": "Before you sign, the bank must give you information about its fees. Check that the contract says «cuenta de pago básica» and shows the monthly fee. Keep a copy." },
+    { "titulo": "If the bank does not answer or says no, ask for the answer in writing", "texto": "A refusal must be in writing, free and with the specific reasons, within a maximum of 10 working days. The reasons are on a closed list in the law, for example not giving the information required by the money laundering rules or already having another account in Spain." },
+    { "titulo": "Complain to the bank's customer service", "texto": "Send a written complaint to the bank's customer service (servicio de atención al cliente) or customer ombudsman (defensor del cliente). For payment services, the bank generally has 15 working days to answer; in other cases, up to one month for consumers. Keep the proof of your complaint." },
+    { "titulo": "If they do not answer or you disagree, complain to the Banco de España", "texto": "You can complain to the Complaints Service (Servicio de Reclamaciones) of the Banco de España (Spain's central bank) online (with a digital certificate or Cl@ve), in person or by post. You have one year from your complaint to the bank. It is free." }
+  ],
+  "documentos": [
+    { "nombre": "Valid passport", "nota": "Valid if you do not have a TIE yet." },
+    { "nombre": "Valid foreigner ID card (TIE)", "nota": "If you have it. It includes your NIE." },
+    { "nombre": "National ID card of your country", "nota": "Only for citizens of the EU, the European Economic Area or Switzerland." },
+    { "nombre": "Proof of address", "nota": "For example, certificado de empadronamiento or rental contract. The bank may ask for it." },
+    { "nombre": "Proof of activity or income", "nota": "Work contract, payslips, self-employed registration or, if you have none, a statement about your situation." },
+    { "nombre": "Asylum or international protection application document", "nota": "If you are an asylum seeker." },
+    { "nombre": "Income and household documents or social services report", "nota": "Only if you ask for the free account because you are vulnerable." },
+    { "nombre": "Non-resident certificate (certificado de no residente)", "nota": "Only if you live outside Spain and want a non-resident account. It is issued by the Policía Nacional, or by a consulate if you already have an NIE." }
+  ],
+  "plazos": [
+    { "texto": "The bank must open the account or tell you in writing that it refuses, with the reasons, within a maximum of 10 working days from when it receives the complete application (Real Decreto-ley 19/2017, art. 5)." },
+    { "texto": "The bank's customer service has 15 working days to answer complaints about payment services, and one month for other consumer complaints." },
+    { "texto": "You can complain to the Banco de España if the bank does not answer in time or rejects your complaint, up to one year after complaining to the bank." },
+    { "texto": "The free account for vulnerable people lasts 2 years and is extended for equal periods if you are still in the same situation." }
+  ],
+  "tasas": [
+    { "concepto": "Maximum fee for the basic payment account", "importe": "3 € a month", "modelo": "Charged by the bank (Orden ECE/228/2019, art. 4)", "nota": "Includes opening, use and closing, cash deposits and withdrawals, a debit or prepaid card and 120 operations a year (transfers and direct debits in euros within the EU). The Banco de España can update this amount every 2 years; as of 28/10/2026 we have not found an update, check the current amount at clientebancario.bde.es." },
+    { "concepto": "Operations above 120 a year", "importe": "Variable, with a limit", "modelo": "Charged by the bank", "nota": "The Banco de España publishes every quarter the maximum fees each bank can charge." },
+    { "concepto": "Basic payment account for vulnerable people", "importe": "0 €", "modelo": "Real Decreto 164/2019", "nota": "If you meet the income and assets limits." },
+    { "concepto": "Complaint to the bank and to the Banco de España", "importe": "Free" }
+  ],
+  "errores": [
+    "Asking for «an account» without saying «cuenta de pago básica»: the bank may offer you another account with higher fees. Use the exact name.",
+    "Not keeping proof of the date of your application. Without that date it is hard to prove that the 10 working days have passed.",
+    "Accepting a refusal only by word of mouth. Always ask for the refusal in writing with the reasons; it is your right and you need it to complain.",
+    "Going straight to the Banco de España. First you must complain to the bank's customer service.",
+    "Thinking you cannot have an account without an NIE or a residence permit. With a valid passport you can apply if you are in one of the protected groups.",
+    "Giving false or incomplete information about your activity or your income: it is a legal reason to refuse or close the account.",
+    "Keeping the account as «no residente» (non-resident) when you already live in Spain. Tell the bank when your residence changes so it applies the correct status."
+  ],
+  "checklist": [
+    { "id": "doc-identidad", "texto": "I have a valid passport or TIE" },
+    { "id": "doc-domicilio", "texto": "I have proof of address (padrón or rental contract)" },
+    { "id": "doc-actividad", "texto": "I have a document about my work or my income" },
+    { "id": "pedir-cpb", "texto": "I clearly asked for a «cuenta de pago básica»" },
+    { "id": "justificante-fecha", "texto": "I have proof with the date of my application" },
+    { "id": "valorar-gratuidad", "texto": "I have checked if I can ask for the free account because I am vulnerable" },
+    { "id": "revisar-contrato", "texto": "I checked the contract and the monthly fee before signing" },
+    { "id": "denegacion-escrito", "texto": "If they refuse, I have the answer in writing with the reasons" },
+    { "id": "reclamacion-banco", "texto": "If needed, I have complained to the bank's customer service" },
+    { "id": "reclamacion-bde", "texto": "If the bank does not answer or says no, I know how to complain to the Banco de España" }
+  ],
+  "recordatorio": {
+    "pregunta": "On what day did you ask the bank for the account?",
+    "avisos": [
+      { "dias": 10, "texto": "If the bank has not opened your account or given you an answer in writing, you can complain to its customer service. The deadline is 10 working days: if there were public holidays, wait one or two more days." },
+      { "dias": 30, "texto": "If you complained to the bank and they have not answered or you disagree, check if you can now complain to the Banco de España." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Resident account and non-resident account", "texto": "Banks separate customers who are resident and non-resident in Spain. If you live in Spain, your account must be a resident account. If you live abroad, the bank may ask you for a non-resident certificate, issued by the Policía Nacional (or a consulate if you already have an NIE). Each bank has different conditions; ask the bank what they need from you." },
+    { "titulo": "Asylum seekers and people without a residence permit", "texto": "Real Decreto-ley 19/2017 clearly includes asylum seekers and people without a residence permit who cannot be expelled for legal or practical reasons." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 19/2017, on basic payment accounts (BOE)", "url": "https://www.boe.es/eli/es/rdl/2017/11/24/19/con", "consultado": "2026-10-28" },
+    { "nombre": "Orden ECE/228/2019, on basic payment accounts (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3113", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 164/2019, free basic payment accounts (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906", "consultado": "2026-10-28" },
+    { "nombre": "Ley 10/2010, on the prevention of money laundering (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Who can apply for the basic payment account?", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Free basic payment account", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/gratuidad.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: How to make a complaint", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/", "consultado": "2026-10-28" },
+    { "nombre": "Policía Nacional: Extranjería (residence and non-residence certificates)", "url": "https://www.policia.es/_es/extranjeria_extranjeros.php", "consultado": "2026-10-28" }
+  ]
+}

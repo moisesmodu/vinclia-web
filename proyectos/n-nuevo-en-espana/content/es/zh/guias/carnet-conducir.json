@@ -1,0 +1,130 @@
+{
+  "slug": "carnet-conducir",
+  "titulo": "驾照：换领（canje）还是参加理论考试",
+  "resumen": "如果你住在西班牙，手里拿的是其他国家的驾照，你有两条路。如果你的驾照来自欧盟/欧洲经济区（UE/EEE），只要在有效期内就一直有效。如果来自与西班牙有协议的国家（例如摩洛哥、哥伦比亚、厄瓜多尔、秘鲁、阿根廷、玻利维亚或乌克兰），你可以缴纳 2.3 项规费（28,87 €）免试换领（canje），而且从你获得合法居留起只能用原驾照开车 6 个月。如果你的国家没有协议，你必须在西班牙考取 B 类驾照：缴纳 2.1 项规费（94,05 €），参加理论考试和路考。",
+  "paraQuien": "适用于在西班牙居住（正常居住）并想驾驶小汽车（B 类驾照，permiso B）的外国人。不包括有额外考试的卡车或大巴职业驾照（C 类和 D 类），也不包括路过的游客。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "欧盟/欧洲经济区驾照", "valor": "在有效期内一直有效；换领是自愿的" },
+    { "etiqueta": "有协议国家的驾照", "valor": "从你获得合法居留起有效 6 个月；之后需要换领" },
+    { "etiqueta": "无协议国家的驾照", "valor": "有效 6 个月；之后必须考取西班牙驾照" },
+    { "etiqueta": "换领规费（2.3）", "valor": "28,87 €（请核实现行金额）" },
+    { "etiqueta": "考试规费（2.1）", "valor": "94,05 €：可以考 2 次（请核实现行金额）" },
+    { "etiqueta": "理论考试", "valor": "30 道题的选择题；允许错几题请向交通总局（DGT）确认" },
+    { "etiqueta": "B 类理论考试语言", "valor": "西班牙语、加泰罗尼亚语、巴斯克语、加利西亚语、瓦伦西亚语、英语、法语和德语；也有简易阅读版（lectura fácil）" },
+    { "etiqueta": "在哪里办", "valor": "省交通管理局（Jefatura Provincial de Tráfico，DGT），预约（cita previa）办理或网上数字换领" }
+  ],
+  "pasos": [
+    {
+      "titulo": "看看你的驾照是哪个国家发的",
+      "texto": "如果是欧盟或欧洲经济区国家（冰岛、列支敦士登、挪威）发的，只要在有效期内你就可以用它开车。如果是其他国家发的，请在交通总局（DGT）的官方名单“Países con convenio de canjes”（换证协议国家）中查找你的国家。如果名单上没有你的国家，你的驾照就不能换领，你必须在西班牙考取 B 类驾照（第 6 步）。"
+    },
+    {
+      "titulo": "注意 6 个月的期限",
+      "texto": "欧盟/欧洲经济区以外国家的驾照，从你在这里正常居住起（如果你没有居留，则从合法入境起），只能在西班牙开车 6 个月。过了这 6 个月，即使驾照仍在有效期内，你也不能再用它开车。请尽早开始换领或考试，因为预约可能要等很久。"
+    },
+    {
+      "titulo": "如果你的驾照来自欧盟/欧洲经济区：决定要不要办理",
+      "texto": "不是必须换领。你可以自愿换领（2.3 项规费，28,87 €），或者在 DGT 办理登记（inscripción，4.1 项规费，8,67 €），登记不会改变你的驾照。驾照到期时，如果你住在西班牙，必须在这里续期（4.3 项规费，24,58 €），你会拿到西班牙驾照。如果你的驾照没有到期日或有效期超过 15 年，你在西班牙居住满 2 年时必须在西班牙续期。"
+    },
+    {
+      "titulo": "如果你的国家有协议：先做体检",
+      "texto": "换领前，你需要驾驶员体检中心（Centro de Reconocimiento de Conductores）出具的身心适格报告（informe de aptitud psicofísica）。只换领摩托车和小汽车驾照（A 类和 B 类）时，要求第 I 组（grupo I）的报告。价格由各体检中心自定。还要确认你的驾照在有效期内，而且是你在西班牙居住之前考取的：如果你已经是西班牙合法居民时才回国考的驾照，就不能换领。"
+    },
+    {
+      "titulo": "在 DGT 电子政务网站申请换领",
+      "texto": "DGT 提供数字换领，可以用 Cl@ve 或数字证书（certificado digital）办理。很多国家（例如摩洛哥、哥伦比亚、厄瓜多尔、玻利维亚）需要先向发证国申请核验驾照；对方答复后，DGT 会通过邮件寄给你一个查询码（localizador）以便继续办理。其他一些国家（例如阿根廷、秘鲁、乌拉圭、英国）可以直接申请换领。如果你不用数字方式，请在 DGT 网站或拨打 060 预约（cita previa）。"
+    },
+    {
+      "titulo": "到交通管理局交回原驾照",
+      "texto": "你必须去一次省交通管理局（Jefatura Provincial de Tráfico）交回原驾照。在那里会给你一份临时驾驶许可（autorización provisional），西班牙驾照会邮寄给你。去之前先缴纳 2.3 项规费。有些国家要求驾照的正式翻译（例如韩国或日本）：请在网站上查看你所在国家的说明页。"
+    },
+    {
+      "titulo": "如果你的国家没有协议：准备理论考试",
+      "texto": "你必须像西班牙的其他人一样考取 B 类驾照。参加理论考试不一定要上驾校（autoescuela）：你可以凭官方申请表以“自学”（por libre）身份报考。可以用 DGT 网上的免费题库练习，这些题来自真实考试，并提供多种语言。DGT 还有简易阅读版的 B 类驾照手册。"
+    },
+    {
+      "titulo": "缴纳 2.1 项规费并报名考试",
+      "texto": "2.1 项考试规费为 94,05 €，可以考两次。如果两次都没通过，必须重新报名并再交一次规费。在申请表上选择理论考试的语言：西班牙语、各地官方语言、英语、法语或德语。我们在 DGT 没有找到阿拉伯语、罗马尼亚语、中文或其他语言的考试。"
+    },
+    {
+      "titulo": "参加理论考试",
+      "texto": "考试为 30 道选择题。DGT 的一份旧资料说最多错 3 题就算通过；请在 DGT 网站确认现行标准。通过后，这个成绩在 2 年内有效，你可以在此期间参加路考。"
+    },
+    {
+      "titulo": "练车并参加路考",
+      "texto": "道路驾驶考试需要一辆双控车，所以一般都是通过驾校上实操课并参加考试。通过后，你会拿到临时驾驶许可，之后西班牙驾照会邮寄给你。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "外国驾照原件，且在有效期内", "nota": "换领时要交到交通管理局。" },
+    { "nombre": "TIE、NIE 或欧盟公民登记证明", "nota": "用于证明你在西班牙居住。" },
+    { "nombre": "护照或身份证件", "nota": "有效原件。" },
+    { "nombre": "身心适格报告（informe de aptitud psicofísica）", "nota": "由驾驶员体检中心出具。摩托车和小汽车为第 I 组。" },
+    { "nombre": "近期照片", "nota": "请在网站上确认你是否需要提供，还是由体检中心发送。" },
+    { "nombre": "规费缴费凭证", "nota": "免试换领为 2.3 项规费；考试为 2.1 项规费。" },
+    { "nombre": "官方申请表", "nota": "在 DGT 网站下载（换领或考试）。" },
+    { "nombre": "驾照的正式翻译", "nota": "仅在你所在国家的说明页要求时需要（例如韩国或日本）。" },
+    { "nombre": "核验查询码（localizador）", "nota": "仅用于需要预先核验的国家的数字换领。" },
+    { "nombre": "Cl@ve 或数字证书", "nota": "仅在网上换领时需要。" }
+  ],
+  "plazos": [
+    { "texto": "欧盟/欧洲经济区以外的驾照，从你在这里正常居住起，最多只能在西班牙开车 6 个月（Reglamento General de Conductores，第21条）。" },
+    { "texto": "欧盟/欧洲经济区驾照在有效期内一直有效。如果没有到期日或有效期超过 15 年（第 1 组），你在西班牙居住满 2 年时必须在西班牙续期。" },
+    { "texto": "欧盟/欧洲经济区驾照可以从到期前 3 个月起申请续期。" },
+    { "texto": "考试规费（2.1）可以考 2 次。某一项考试的通过成绩保留 2 年。" },
+    { "texto": "换领时，DGT 会发给你临时驾驶许可，正式驾照会邮寄给你（欧盟/欧洲经济区换领约 6 周）。" }
+  ],
+  "tasas": [
+    { "concepto": "免额外考试换领驾照（欧盟/欧洲经济区或有协议国家，A 类和 B 类）", "importe": "28,87 €", "modelo": "DGT 规费 2.3（Tasa DGT 2.3）", "nota": "DGT 网站公布的金额。付款前请核实现行金额。" },
+    { "concepto": "考取驾照的考试（或需要考试的换领，如 C 类和 D 类）", "importe": "94,05 €", "modelo": "DGT 规费 2.1（Tasa DGT 2.1）", "nota": "可以考两次。请在网站上核实现行金额。" },
+    { "concepto": "欧盟/欧洲经济区驾照登记（不改变你的驾照）", "importe": "8,67 €", "modelo": "DGT 规费 4.1（Tasa DGT 4.1）", "nota": "可选。" },
+    { "concepto": "在西班牙续期欧盟/欧洲经济区驾照", "importe": "24,58 €", "modelo": "DGT 规费 4.3（Tasa DGT 4.3）" },
+    { "concepto": "身心适格报告", "importe": "不固定", "modelo": "由驾驶员体检中心收取", "nota": "这不是 DGT 的规费。" }
+  ],
+  "errores": [
+    "以为可以一直用外国驾照开车。如果不是欧盟/欧洲经济区驾照，在你获得居留 6 个月后就不能在西班牙使用了，即使它仍在有效期内。",
+    "把规费弄混：免试换领是 2.3 项规费（28,87 €），不是 4.1 项。4.1 项（8,67 €）是用来登记欧盟/欧洲经济区驾照的。",
+    "用你已经在西班牙合法居住时回国考的驾照申请换领。这种驾照不能换领。",
+    "拖到最后一个月才换领。和你国家的核验以及预约都可能要等好几周；一拿到 TIE 就开始办。",
+    "随便取消换领预约：你同一时间只能有一个换领预约，取消后必须从头再来，包括核验。",
+    "以为理论考试必须花钱上驾校。你可以自学报考，并用 DGT 的免费题库练习。",
+    "选择一种不存在的考试语言。B 类驾照只有西班牙语、各地官方语言、英语、法语和德语（以及简易阅读版）。"
+  ],
+  "checklist": [
+    { "id": "pais-convenio", "texto": "我已查过我的国家是否在 DGT 换证协议名单上" },
+    { "id": "fecha-residencia", "texto": "我知道我的合法居留从哪天开始，以及何时满 6 个月" },
+    { "id": "doc-permiso", "texto": "我有外国驾照原件，且在有效期内" },
+    { "id": "doc-tie", "texto": "我有 TIE、NIE 或欧盟登记证明" },
+    { "id": "doc-psicotecnico", "texto": "我有体检中心出具的身心适格报告" },
+    { "id": "doc-traduccion", "texto": "我已查过我的国家是否需要驾照的正式翻译" },
+    { "id": "tasa-pagada", "texto": "我已缴纳正确的规费（换领 2.3，考试 2.1）" },
+    { "id": "solicitud-canje", "texto": "我已在 DGT 网站申请核验、数字换领或预约" },
+    { "id": "entrega-original", "texto": "我已在交通管理局交回原驾照，并拿到临时驾驶许可" },
+    { "id": "test-dgt", "texto": "我已用 DGT 免费题库练习（如果我要考试）" },
+    { "id": "idioma-examen", "texto": "我已在申请表上选好理论考试的语言" }
+  ],
+  "recordatorio": {
+    "pregunta": "你从哪天开始在西班牙合法居留？",
+    "avisos": [
+      { "dias": 120, "texto": "已经过了 4 个月。如果你的驾照不是欧盟/欧洲经济区的，你只剩大约 2 个月可以用它开车。请马上开始换领或考试。" },
+      { "dias": 150, "texto": "再过 1 个月，你的外国驾照在西班牙就不能用了。看看你是否已经拿到核验结果或换领预约。" },
+      { "dias": 170, "texto": "再过几天就满 6 个月了。之后，在拿到西班牙驾照或临时驾驶许可之前，你不能用外国驾照开车（欧盟/欧洲经济区驾照除外）。" }
+    ]
+  },
+  "variantes": [
+    { "titulo": "英国驾照", "texto": "自 2023 年起与英国有协议。住在西班牙的人可以在获得居留后 6 个月内免试、无需预先核验换领英国驾照。" },
+    { "titulo": "卡车或大巴驾照（C 类和 D 类）", "texto": "职业驾照换领需根据国家参加理论和/或实操考试，并需要第 II 组（grupo II）体检报告和 2.1 项规费。不能通过数字方式换领。" },
+    { "titulo": "用地方官方语言考试", "texto": "在加泰罗尼亚和巴利阿里群岛可以用加泰罗尼亚语参加理论考试；在巴斯克地区和纳瓦拉可用巴斯克语；在加利西亚可用加利西亚语；在瓦伦西亚自治区可用瓦伦西亚语。" }
+  ],
+  "fuentes": [
+    { "nombre": "DGT – 换证协议国家（Países con convenio de canjes）", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/permisos-extranjeros-y-de-fuerzas-y-cuerpos-de-seguridad/canjes-de-permisos/paises-con-convenio-de-canjes/", "consultado": "2026-10-28" },
+    { "nombre": "DGT 电子政务网站 – 欧盟以外国家驾照换领（条件，2.3 和 2.1 项规费）", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/extracomunitarios/canje-paises-G4-CL-CP/index.html", "consultado": "2026-10-28" },
+    { "nombre": "DGT – 新闻稿：驾照数字换领服务", "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20250520-dgt-servicio-de-canje-digital-de-permisos-de-conduccion/", "consultado": "2026-10-28" },
+    { "nombre": "DGT 电子政务网站 – 欧盟和欧洲经济区驾照的换领、登记、续期和更换", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 818/2009, Reglamento General de Conductores（BOE，合并文本）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-9481", "consultado": "2026-10-28" },
+    { "nombre": "DGT – 考试条件、准备和报名", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/", "consultado": "2026-10-28" },
+    { "nombre": "DGT 电子政务网站 – 自学报考申请（2.1 项规费）", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-y-gestion-de-permisos/solicitud-de-prueba-de-aptitud-de-examen/", "consultado": "2026-10-28" },
+    { "nombre": "DGT 电子政务网站 – 预约（cita previa）", "url": "https://sede.dgt.gob.es/es/otros-tramites/cita-previa", "consultado": "2026-10-28" }
+  ]
+}

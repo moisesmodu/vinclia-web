@@ -8,10 +8,11 @@ export default function SelectorIdioma({ idioma, etiqueta }: { idioma: string; e
   const ruta = usePathname();
   const router = useRouter();
   return (
-    <label className="relative">
+    <label className="relative flex items-center bg-marca-claro text-marca-oscuro rounded-lg ps-2">
       <span className="sr-only">{etiqueta}</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden className="shrink-0"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
       <select
-        className="appearance-none bg-marca-claro text-marca-oscuro font-semibold rounded-lg px-2 py-2 text-sm"
+        className="appearance-none bg-transparent font-semibold py-2 ps-1 pe-2 text-sm w-[5.25rem] sm:w-auto truncate"
         value={idioma}
         onChange={(e) => {
           const partes = ruta.split("/");

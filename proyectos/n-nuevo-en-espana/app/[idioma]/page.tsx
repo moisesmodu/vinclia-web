@@ -14,7 +14,7 @@ export default async function Inicio({ params }: { params: Promise<{ idioma: str
     <div className="space-y-10">
       <section className="pt-2">
         <Link href={`/${idioma}/guias/renovacion-residencia`} className="inline-block text-sm font-semibold bg-marca-claro text-marca-oscuro rounded-full px-3 py-1 mb-4">
-          {d.inicio.novedad} →
+          {d.inicio.novedad} <span className="inline-block rtl:rotate-180" aria-hidden>→</span>
         </Link>
         <h1 className="text-3xl sm:text-4xl font-bold leading-tight">{d.inicio.titulo}</h1>
         <p className="mt-3 text-lg text-suave">{d.inicio.subtitulo}</p>

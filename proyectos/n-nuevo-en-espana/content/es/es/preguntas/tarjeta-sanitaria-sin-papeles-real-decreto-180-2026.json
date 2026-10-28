@@ -26,19 +26,54 @@
     }
   ],
   "faq": [
-    { "p": "¿Puedo ir al médico sin papeles en España?", "r": "Sí. Tienes derecho a la sanidad pública si cumples las condiciones del artículo 3 ter de la Ley 16/2003, y en urgencias te atienden siempre: llama al 112 o ve a urgencias." },
-    { "p": "¿Necesito estar empadronado?", "r": "El empadronamiento es la prueba habitual. Si no puedes, el Real Decreto 180/2026 admite otras pruebas, como matrícula escolar, facturas a tu nombre o inscripción consular." },
-    { "p": "¿Cuánto tarda la respuesta?", "r": "Un máximo de 3 meses. Mientras tanto usas el documento provisional, y si no responden, la solicitud se entiende aceptada." },
-    { "p": "¿Cuánto cuesta?", "r": "La solicitud es gratis. Los medicamentos con receta tienen una aportación; en Madrid, con el DASE, es el 40 % del precio." },
-    { "p": "¿Pedir la tarjeta sanitaria afecta a mi situación de extranjería?", "r": "Nuestra guía no recoge ninguna relación entre las dos cosas: la tarjeta la gestiona el servicio de salud. Si tienes dudas sobre tu caso, consulta con una entidad de acogida o un profesional." }
+    {
+      "p": "¿Puedo ir al médico sin papeles en España?",
+      "r": "Sí. Tienes derecho a la sanidad pública si cumples las condiciones del artículo 3 ter de la Ley 16/2003, y en urgencias te atienden siempre: llama al 112 o ve a urgencias."
+    },
+    {
+      "p": "¿Necesito estar empadronado?",
+      "r": "El empadronamiento es la prueba habitual. Si no puedes, el Real Decreto 180/2026 admite otras pruebas, como matrícula escolar, facturas a tu nombre o inscripción consular."
+    },
+    {
+      "p": "¿Cuánto tarda la respuesta?",
+      "r": "Un máximo de 3 meses. Mientras tanto usas el documento provisional, y si no responden, la solicitud se entiende aceptada."
+    },
+    {
+      "p": "¿Cuánto cuesta?",
+      "r": "La solicitud es gratis. Los medicamentos con receta tienen una aportación; en Madrid, con el DASE, es el 40 % del precio."
+    },
+    {
+      "p": "¿Qué hago si mi documento provisional va a caducar y no tengo respuesta?",
+      "r": "Pregunta en tu centro de salud por el estado de tu solicitud y qué documento usar a partir de ahora. Lleva tu justificante de solicitud."
+    }
   ],
   "guia": "tarjeta-sanitaria",
   "actualizado": "2026-10-28",
   "fuentes": [
-    { "nombre": "Real Decreto 180/2026, de 11 de marzo, derecho a la atención sanitaria de personas extranjeras sin residencia legal (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714", "consultado": "2026-10-28" },
-    { "nombre": "Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752", "consultado": "2026-10-28" },
-    { "nombre": "Ministerio de Sanidad: aprobación del real decreto que refuerza la universalidad del acceso", "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866", "consultado": "2026-10-28" },
-    { "nombre": "CatSalut: Obtención de la primera Tarjeta Sanitaria Individual (TSI)", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
-    { "nombre": "Comunidad de Madrid: Asistencia sanitaria extranjeros (DASE)", "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase", "consultado": "2026-10-28" }
+    {
+      "nombre": "Real Decreto 180/2026, de 11 de marzo, derecho a la atención sanitaria de personas extranjeras sin residencia legal (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud (BOE)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Ministerio de Sanidad: aprobación del real decreto que refuerza la universalidad del acceso",
+      "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "CatSalut: Obtención de la primera Tarjeta Sanitaria Individual (TSI)",
+      "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/",
+      "consultado": "2026-10-28"
+    },
+    {
+      "nombre": "Comunidad de Madrid: Asistencia sanitaria extranjeros (DASE)",
+      "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase",
+      "consultado": "2026-10-28"
+    }
   ]
 }

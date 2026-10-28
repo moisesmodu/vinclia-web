@@ -1,0 +1,132 @@
+{
+  "slug": "tarjeta-sanitaria",
+  "titulo": "Cardul de sănătate (tarjeta sanitaria individual, TSI)",
+  "resumen": "Tarjeta sanitaria individual (TSI) este cardul cu care folosești sistemul public de sănătate: medic de familie, centru de sănătate (centro de salud), specialiști și rețete. O eliberează serviciul de sănătate al comunității tale autonome (comunidad autónoma), iar cererea este gratuită. De obicei trebuie să fii înscris la padrón (empadronado) și să ai dreptul la asistență medicală recunoscut. Dacă ești în Spania fără ședere legală, ai și tu acest drept: de la 13 martie 2026, Real Decreto 180/2026 stabilește o procedură comună, cu un document provizoriu care îți dă acces din momentul în care depui cererea și un răspuns în cel mult 3 luni.",
+  "paraQuien": "Pentru persoanele care locuiesc în Spania: cu permis de ședere (lucrători, membri de familie etc.) și, de asemenea, persoanele străine fără ședere legală. Nu este pentru turiști și nici pentru șederi scurte acoperite de asigurările sociale sau de asigurarea din altă țară.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Costul cardului", "valor": "Gratuit" },
+    { "etiqueta": "Cine îl eliberează", "valor": "Serviciul de sănătate al comunității tale autonome (de exemplu, SERMAS în Madrid sau CatSalut în Catalonia)" },
+    { "etiqueta": "Cerințe obișnuite", "valor": "Înscriere la padrón (empadronamiento) + dreptul la asistență recunoscut" },
+    { "etiqueta": "Cine recunoaște dreptul", "valor": "INSS, dacă ai ședere legală sau lucrezi; comunitatea ta autonomă, dacă nu ai ședere legală" },
+    { "etiqueta": "Fără ședere legală", "valor": "Real Decreto 180/2026: document provizoriu la depunerea cererii; răspuns în cel mult 3 luni" },
+    { "etiqueta": "Durată (Madrid)", "valor": "Aproximativ 3-4 săptămâni de la validarea documentelor" },
+    { "etiqueta": "Urgențe", "valor": "Sună la 112 sau mergi la urgențe (urgencias): nu aștepta să ai cardul" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Cunoaște-ți dreptul",
+      "texto": "Real Decreto-ley 7/2018 a readus accesul universal la sistemul public de sănătate. Persoanele străine care locuiesc în Spania fără să fie înregistrate sau autorizate ca rezidenți au dreptul la asistență medicală în aceleași condiții ca cetățenii spanioli, dacă nu au altă acoperire obligatorie, nu își pot aduce acoperirea din țara lor și nu există o terță parte obligată să plătească (articolul 3 ter din Ley 16/2003). Real Decreto 180/2026 explică cum se cere."
+    },
+    {
+      "titulo": "Înscrie-te la padrón și cere un volante recent",
+      "texto": "Înscrierea la padrón (empadronamiento) este cerința obișnuită pentru card, pentru că dovedește unde locuiești. Madrid și Catalonia cer un volante sau certificado de empadronamiento (adeverință sau certificat de la padrón) mai nou de 3 luni. Consultă ghidul nostru despre empadronamiento."
+    },
+    {
+      "titulo": "Află cine îți recunoaște dreptul",
+      "texto": "Dacă lucrezi și ești înregistrat (de alta) în Seguridad Social sau ai ședere legală, dreptul îl recunoaște Instituto Nacional de la Seguridad Social (INSS). Dacă nu ai ședere legală, îl recunoaște serviciul de sănătate al comunității tale autonome, conform Real Decreto 180/2026."
+    },
+    {
+      "titulo": "Dacă e cazul INSS, cere sau descarcă recunoașterea",
+      "texto": "Dacă lucrezi, de obicei dreptul se recunoaște odată cu înregistrarea ta (alta). Dacă nu lucrezi (de exemplu, vii prin reîntregirea familiei — reagrupación familiar), poți cere recunoașterea pe sediul electronic al Seguridad Social sau la un CAISS al INSS, cu programare (cita previa). Du actul de identitate, TIE-ul sau decizia de ședere și dovada înscrierii la padrón. Apoi poți descărca documentul care îți atestă dreptul de pe site-ul Seguridad Social."
+    },
+    {
+      "titulo": "Dacă nu ai ședere legală, depune cererea cu declarație pe proprie răspundere",
+      "texto": "Depui o cerere la serviciul de sănătate al comunității tale (sau la INGESA, în Ceuta și Melilla), cu o declarație pe proprie răspundere (declaración responsable). Pentru identitate este valabil pașaportul sau un document oficial din țara ta; dacă nu ai, alt document oficial din țara ta, cu fotografie. Pentru a dovedi că locuiești în Spania se folosește înscrierea la padrón; dacă nu poți, Real Decreto prevede alte dovezi, cum ar fi înscrierea copiilor la școală, facturi pe numele tău sau înscrierea la consulat."
+    },
+    {
+      "titulo": "Păstrează documentul provizoriu",
+      "texto": "Când depui cererea fără ședere legală, primești pe loc un document provizoriu. Cu el poți folosi sistemul public de sănătate cât timp se soluționează dosarul tău (nu este valabil în afara Spaniei). Administrația are cel mult 3 luni să răspundă; dacă nu răspunde în acest termen, cererea ta se consideră aprobată (silencio positivo)."
+    },
+    {
+      "titulo": "Cere cardul la centrul tău de sănătate",
+      "texto": "Cu dreptul recunoscut, ceri cardul la centrul de sănătate (centro de salud) care îți corespunde după adresă (în Catalonia, CAP), sau pe sediul electronic al comunității tale, dacă permite. Tot acolo ți se atribuie medicul de familie (și pediatrul pentru copii)."
+    },
+    {
+      "titulo": "Ridică cardul",
+      "texto": "În Madrid cardul ajunge la centrul tău de sănătate (nu acasă) în aproximativ 3-4 săptămâni după validarea documentelor. În Catalonia, TSI fizică definitivă se predă când înscrierea ta la padrón este efectivă. Între timp, întreabă la centrul de sănătate cum te identifici dacă ai nevoie de îngrijiri."
+    },
+    {
+      "titulo": "Ține-ți datele la zi",
+      "texto": "Dacă îți schimbi adresa, comunitatea autonomă sau documentul (de exemplu, de la pașaport la TIE), anunță centrul de sănătate. În Madrid, cardul persoanelor străine este legat de valabilitatea TIE-ului și se reînnoiește odată cu el; documentul DASE pentru persoanele fără ședere legală este valabil 2 ani și se poate reînnoi."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Pașaport sau act oficial de identitate din țara ta", "nota": "Original și valabil." },
+    { "nombre": "TIE sau decizia de autorizare a șederii", "nota": "Dacă ai ședere legală în Spania." },
+    { "nombre": "Volante sau certificado de empadronamiento", "nota": "Mai nou de 3 luni în Madrid și în Catalonia. În orașul Madrid poți autoriza consultarea padrón-ului tău." },
+    { "nombre": "Documentul INSS care îți atestă dreptul", "nota": "Dacă ai ședere legală sau lucrezi. Se descarcă de pe site-ul Seguridad Social." },
+    { "nombre": "Formularul de cerere și declarația pe proprie răspundere (declaración responsable)", "nota": "Pentru persoanele fără ședere legală (Real Decreto 180/2026). Le primești la centrul de sănătate sau pe site-ul comunității tale." },
+    { "nombre": "Certificado de no exportación del derecho (certificat că nu îți poți aduce acoperirea medicală)", "nota": "Dacă vii din UE, SEE, Elveția, Regatul Unit sau dintr-o țară cu convenție (de exemplu Andorra, Chile, Maroc sau Tunisia): îl emite instituția din țara ta." },
+    { "nombre": "Alte dovezi de ședere, dacă nu ești înscris la padrón", "nota": "Conform Real Decreto 180/2026: înscrierea la școală, facturi pe numele tău, înscrierea la consulat, certificat de la un centru public pentru migranți, printre altele." },
+    { "nombre": "Libro de familia sau certificat de naștere", "nota": "Pentru minorii fără pașaport și fără act de identitate." }
+  ],
+  "plazos": [
+    { "texto": "Real Decreto 180/2026 este în vigoare de la 13 martie 2026." },
+    { "texto": "Fără ședere legală: Administrația are cel mult 3 luni pentru a soluționa și a comunica decizia. Dacă nu răspunde, cererea ta se consideră aprobată (silencio positivo)." },
+    { "texto": "Documentul care atestă dreptul pentru persoanele fără ședere legală (Real Decreto 180/2026) nu expiră cât timp îndeplinești în continuare cerințele." },
+    { "texto": "Madrid: documentul provizoriu DASE este valabil cel mult 3 luni; DASE definitiv este valabil 2 ani și se poate reînnoi." },
+    { "texto": "Madrid: cardul de sănătate ajunge la centrul tău de sănătate în aproximativ 3-4 săptămâni." },
+    { "texto": "Madrid și Catalonia: volante sau certificado de empadronamiento trebuie să fie mai nou de 3 luni." }
+  ],
+  "tasas": [
+    { "concepto": "Cererea pentru cardul de sănătate sau pentru documentul de asistență", "importe": "0 €", "modelo": "Nu există formular de plată" },
+    { "concepto": "Medicamente cu rețetă (DASE în Madrid)", "importe": "40 % din preț", "modelo": "Se plătește la farmacie", "nota": "Este contribuția indicată de Comunidad de Madrid pentru DASE. Pentru alte persoane, contribuția depinde de situația și de veniturile tale: întreabă serviciul tău de sănătate." }
+  ],
+  "errores": [
+    "Să aștepți să ai cardul ca să mergi la urgențe: dacă este o urgență, sună la 112 sau mergi la urgențe.",
+    "Să duci un volante de empadronamiento vechi: în Madrid și Catalonia trebuie să fie mai nou de 3 luni.",
+    "Să mergi la INSS când nu ai ședere legală: în acest caz dreptul îl recunoaște comunitatea ta autonomă, la centrul de sănătate sau la unitatea indicată de ea.",
+    "Să arunci sau să pierzi documentul provizoriu: el îți dă acces la sistemul de sănătate cât aștepți răspunsul.",
+    "Să nu duci certificado de no exportación dacă vii din UE sau dintr-o țară cu convenție: fără el nu îți pot recunoaște dreptul pe această cale.",
+    "Să te înscrii la padrón la o adresă unde nu locuiești doar ca să obții cardul: CatSalut consideră acest lucru fraudă și poate anula cardul.",
+    "Să nu anunți centrul de sănătate când îți schimbi adresa sau documentul: poți avea probleme la programări sau la ridicarea rețetelor."
+  ],
+  "checklist": [
+    { "id": "empadronado", "texto": "Sunt înscris la padrón în localitatea în care locuiesc" },
+    { "id": "volante-reciente", "texto": "Am un volante sau certificado de empadronamiento mai nou de 3 luni" },
+    { "id": "doc-identidad", "texto": "Am pașaportul sau TIE-ul valabil" },
+    { "id": "quien-reconoce", "texto": "Știu dacă dreptul meu îl recunoaște INSS sau comunitatea mea autonomă" },
+    { "id": "doc-inss", "texto": "Dacă e cazul INSS, am documentul care îmi atestă dreptul" },
+    { "id": "no-exportacion", "texto": "Dacă vin din UE sau dintr-o țară cu convenție, am certificado de no exportación" },
+    { "id": "solicitud-ccaa", "texto": "Dacă nu am ședere legală, am depus cererea cu declarația pe proprie răspundere" },
+    { "id": "provisional", "texto": "Am păstrat documentul provizoriu și știu când expiră" },
+    { "id": "centro-salud", "texto": "Știu care este centrul meu de sănătate și am cerut acolo cardul" },
+    { "id": "urgencias", "texto": "Știu că, la o urgență, sun la 112 sau merg la urgențe" }
+  ],
+  "recordatorio": {
+    "pregunta": "Când expiră documentul tău medical provizoriu?",
+    "avisos": [
+      { "dias": -30, "texto": "Documentul tău medical provizoriu expiră peste o lună. Dacă nu ai încă răspuns sau card, întreabă la centrul de sănătate în ce stadiu este cererea ta." },
+      { "dias": -7, "texto": "Documentul tău medical provizoriu expiră peste o săptămână. Întreabă la centrul de sănătate ce document să folosești de acum înainte și du dovada depunerii cererii (justificante de solicitud)." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "În Catalonia (CatSalut)",
+      "texto": "TSI se cere la CAP (centro de atención primaria) unde vrei să primești îngrijiri. Du actul de identitate (DNI, NIE sau pașaport) și un certificado de empadronamiento mai nou de 3 luni (unele primării permit consultarea lui online). Poți începe cererea fără să mergi la CAP, dar cardul fizic definitiv se predă când înscrierea ta la padrón este efectivă. CatSalut aplică deja Real Decreto 180/2026 pentru persoanele fără ședere legală; când ți se recunoaște accesul, primești o TSI. Informații: https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/qui-te-acces-al-sistema-sanitari-public/"
+    },
+    {
+      "titulo": "În Comunidad de Madrid (SERMAS)",
+      "texto": "Cu ședere legală: ceri cardul la centrul tău de sănătate sau pe sediul electronic, cu DNI sau TIE, documentul INSS și un volante de empadronamiento mai nou de 90 de zile. Fără ședere legală: Comunidad emite Documento de Asistencia Sanitaria para Extranjeros (DASE), cu aceleași efecte ca și cardul. Se cere la Unidades de Tramitación del SERMAS, cu programare prin centrul tău de sănătate, sau pe sediul electronic. La depunerea cererii primești un document provizoriu (cel mult 3 luni). Atenție: site-ul Comunidad cerea mai mult de 90 de zile în Spania și 3 luni de înscriere la padrón; nu am putut confirma dacă și-a adaptat deja aceste cerințe la Real Decreto 180/2026, care, din câte am putut verifica, nu stabilește un timp minim de înscriere la padrón. Informații: https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase"
+    },
+    {
+      "titulo": "Dacă ești cetățean al UE, al SEE sau al Elveției",
+      "texto": "Dacă ești doar în trecere, folosește Cardul European de Asigurări Sociale de Sănătate (Tarjeta Sanitaria Europea). Dacă locuiești în Spania și nu lucrezi aici, de obicei ai nevoie de un certificat din țara ta care să arate că nu îți poți aduce acoperirea (certificado de no exportación) înainte să ți se recunoască dreptul."
+    },
+    {
+      "titulo": "În alte comunități autonome",
+      "texto": "Fiecare comunitate decide cum se depune cererea și ce birou o soluționează, dar din martie 2026 toate trebuie să urmeze procedura comună din Real Decreto 180/2026 pentru persoanele fără ședere legală. Întreabă la centrul tău de sănătate sau caută „tarjeta sanitaria” pe site-ul serviciului de sănătate al comunității tale."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 7/2018, privind accesul universal la Sistema Nacional de Salud (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 180/2026, de 11 de marzo, dreptul la asistență medicală al persoanelor străine fără ședere legală (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: aprobarea decretului regal care întărește universalitatea accesului", "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: Tarjeta sanitaria individual", "url": "https://www.sanidad.gob.es/areas/saludDigital/tarjetaSanitariaSNS/home.htm", "consultado": "2026-10-28" },
+    { "nombre": "Sede electrónica de la Seguridad Social: Asistencia sanitaria (INSS)", "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/asistencia+sanitaria/202043", "consultado": "2026-10-28" },
+    { "nombre": "CatSalut: Obținerea primei Tarjeta Sanitaria Individual (TSI)", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Tarjeta sanitaria", "url": "https://www.comunidad.madrid/salud/tarjeta-sanitaria", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Asistencia sanitaria extranjeros (DASE)", "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase", "consultado": "2026-10-28" }
+  ]
+}

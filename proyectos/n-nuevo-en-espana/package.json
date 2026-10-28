@@ -9,7 +9,11 @@
     "check": "tsc --noEmit",
     "validar": "node scripts/validar-contenido.mjs",
     "db:push": "prisma db push",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "prueba:e2e": "node scripts/prueba-e2e.mjs",
+    "stripe:simulado": "node scripts/stripe-simulado.mjs",
+    "fuentes": "node scripts/revisar-fuentes.mjs",
+    "iconos": "node scripts/iconos.cjs"
   },
   "dependencies": {
     "@prisma/client": "6.19.0",

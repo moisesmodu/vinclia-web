@@ -1,0 +1,38 @@
+{
+  "slug": "card-de-sanatate-spania-tarjeta-sanitaria",
+  "pregunta": "Cum obțin cardul de sănătate în Spania (tarjeta sanitaria)?",
+  "descripcion": "Cardul de sănătate în Spania (tarjeta sanitaria) pentru cetățeni români: padrón, dreptul recunoscut de INSS, certificado de no exportación și centrul de sănătate.",
+  "respuestaCorta": "Tarjeta sanitaria individual (TSI) o eliberează gratuit serviciul de sănătate al comunității tale autonome. De obicei trebuie să fii înscris la padrón și să ai dreptul la asistență medicală recunoscut; dacă lucrezi, dreptul se recunoaște de regulă odată cu înregistrarea în Seguridad Social. Apoi ceri cardul la centrul de sănătate (centro de salud) care îți corespunde după adresă.",
+  "secciones": [
+    {
+      "titulo": "Ce este tarjeta sanitaria și cine o eliberează",
+      "texto": "Tarjeta sanitaria individual (TSI) este cardul cu care folosești sistemul public de sănătate din Spania: medic de familie, centru de sănătate, specialiști și rețete. O eliberează serviciul de sănătate al comunității tale autonome (comunidad autónoma), de exemplu SERMAS în Madrid sau CatSalut în Catalonia. Cererea este gratuită.\n\nCerințele obișnuite sunt două: să fii înscris la padrón (empadronamiento) în localitatea în care locuiești și să ai dreptul la asistență medicală recunoscut. Dacă locuiești legal în Spania sau lucrezi, dreptul îl recunoaște Instituto Nacional de la Seguridad Social (INSS)."
+    },
+    {
+      "titulo": "Situația ta ca cetățean român (UE)",
+      "texto": "Dacă ești doar în trecere prin Spania, folosește Cardul European de Asigurări Sociale de Sănătate (Tarjeta Sanitaria Europea). Tarjeta sanitaria spaniolă este pentru cei care locuiesc în Spania.\n\nDacă lucrezi și ești înregistrat (de alta) în Seguridad Social, de obicei dreptul se recunoaște odată cu înregistrarea ta. Dacă locuiești în Spania și nu lucrezi aici, de obicei ai nevoie de un certificat din țara ta care să arate că nu îți poți aduce acoperirea medicală (certificado de no exportación del derecho), înainte să ți se recunoască dreptul. Îl emite instituția din țara ta. Fără el nu îți pot recunoaște dreptul pe această cale."
+    },
+    {
+      "titulo": "Pașii pentru a obține cardul",
+      "texto": "1. Înscrie-te la padrón și cere un volante sau certificado de empadronamiento recent. Madrid și Catalonia îl cer mai nou de 3 luni.\n\n2. Obține recunoașterea dreptului. Dacă nu lucrezi, o poți cere pe sediul electronic al Seguridad Social sau la un CAISS al INSS, cu programare (cita previa). Apoi poți descărca documentul care îți atestă dreptul de pe site-ul Seguridad Social.\n\n3. Cere cardul la centrul de sănătate care îți corespunde după adresă (în Catalonia, la CAP) sau pe sediul electronic al comunității tale, dacă permite. Tot acolo ți se atribuie medicul de familie și pediatrul pentru copii.\n\n4. Ridică cardul. În Madrid ajunge la centrul tău de sănătate, nu acasă, în aproximativ 3-4 săptămâni după validarea documentelor. În Catalonia, TSI fizică definitivă se predă când înscrierea ta la padrón este efectivă."
+    },
+    {
+      "titulo": "Documente și greșeli frecvente",
+      "texto": "Pregătește actul de identitate original și valabil (pașaport sau carte de identitate), volante sau certificado de empadronamiento, documentul INSS care îți atestă dreptul și, dacă e cazul, certificado de no exportación.\n\nGreșeli de evitat: să aștepți să ai cardul ca să mergi la urgențe (la o urgență sună la 112 sau mergi la urgencias); să duci un volante vechi; să te înscrii la padrón la o adresă unde nu locuiești doar ca să obții cardul (CatSalut consideră acest lucru fraudă și poate anula cardul); să nu anunți centrul de sănătate când îți schimbi adresa sau documentul."
+    }
+  ],
+  "faq": [
+    { "p": "Cât costă tarjeta sanitaria?", "r": "Cererea pentru card este gratuită. La medicamente, contribuția depinde de situația și de veniturile tale: întreabă serviciul tău de sănătate." },
+    { "p": "Pot folosi Cardul European de Sănătate dacă locuiesc în Spania?", "r": "Cardul european este pentru când ești în trecere. Dacă locuiești în Spania și nu lucrezi aici, de obicei ai nevoie de certificado de no exportación din țara ta înainte să ți se recunoască dreptul în Spania." },
+    { "p": "Cât durează până primesc cardul?", "r": "În Madrid, aproximativ 3-4 săptămâni de la validarea documentelor, iar cardul ajunge la centrul tău de sănătate. În alte comunități, întreabă la centrul de sănătate." },
+    { "p": "Ce fac dacă am o urgență și nu am încă cardul?", "r": "Nu aștepta cardul: sună la 112 sau mergi la urgențe." }
+  ],
+  "guia": "tarjeta-sanitaria",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Ministerio de Sanidad: Tarjeta sanitaria individual", "url": "https://www.sanidad.gob.es/areas/saludDigital/tarjetaSanitariaSNS/home.htm", "consultado": "2026-10-28" },
+    { "nombre": "Sede electrónica de la Seguridad Social: Asistencia sanitaria (INSS)", "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/asistencia+sanitaria/202043", "consultado": "2026-10-28" },
+    { "nombre": "CatSalut: Obținerea primei Tarjeta Sanitaria Individual (TSI)", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Tarjeta sanitaria", "url": "https://www.comunidad.madrid/salud/tarjeta-sanitaria", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "homologacion-titulos",
+  "titulo": "Get your degree or diploma recognised (homologación or equivalencia)",
+  "resumen": "To use a qualification from another country in Spain, you need official recognition. University degrees are recognised by the Ministerio de Ciencia, Innovación y Universidades (Ministry of Science, Innovation and Universities) (fee 166,50 €, decision within a maximum of 6 months). Secondary school (ESO), Bachillerato (upper secondary) and vocational training (Formación Profesional, FP) qualifications are recognised by the Ministerio de Educación, Formación Profesional y Deportes (Ministry of Education). You almost always need an official translation and an apostille or legalisation.",
+  "paraQuien": "For people with foreign qualifications or studies who want to work, study or sit public service exams (oposiciones) in Spain. If you live in Catalonia, Galicia or the Basque Country, non-university qualifications are handled by your autonomous community.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "University degrees", "valor": "Ministerio de Ciencia, Innovación y Universidades (Real Decreto 889/2022)" },
+    { "etiqueta": "Non-university qualifications", "valor": "Ministerio de Educación, Formación Profesional y Deportes (Real Decreto 104/1988)" },
+    { "etiqueta": "University fee", "valor": "166,50 € (modelo 790, código 107)" },
+    { "etiqueta": "University decision time", "valor": "Maximum 6 months" },
+    { "etiqueta": "Recognition of the ESO certificate", "valor": "No fee" },
+    { "etiqueta": "Notice", "valor": "The Universities e-office (subsede electrónica) has been closed since 22/10/2026 because of a technical problem" }
+  ],
+  "pasos": [
+    { "titulo": "Choose the right procedure", "texto": "Homologación: gives the same effects as the Spanish qualification and is required to work in a regulated profession (for example medicine, nursing, pharmacy, physiotherapy, teaching). Equivalencia (declaration of equivalence): recognises the academic level (Grado/bachelor's or Máster) to keep studying, for public service exams or for non-regulated jobs; it does not allow you to work in a regulated profession. Convalidación: recognises partial studies so you can continue them in Spain." },
+    { "titulo": "Check if your profession is regulated", "texto": "Look at the list in the Annex of Real Decreto 889/2022 on the Ministry's Valida-TE portal. If your profession is not there, you cannot apply for homologación, but you can apply for the declaración de equivalencia. You can apply for both for the same degree, but they are two applications and two fees." },
+    { "titulo": "Apostille or legalise the documents in your country", "texto": "The originals (degree and transcript) must have the Hague Apostille if your country signed the Convention, or diplomatic legalisation if it did not. This is not required for documents from the EU, the European Economic Area and Switzerland. Apostille the original, not a certified copy (copia compulsada)." },
+    { "titulo": "Get an official translation", "texto": "If the documents are not in Spanish, you need a sworn translation (traducción jurada) made by a sworn translator appointed by the Ministerio de Asuntos Exteriores (Ministry of Foreign Affairs), or an official translation from another EU country. The translation must also include the apostille or the legalisations." },
+    { "titulo": "Pay the fee", "texto": "University: modelo 790 código 107, 166,50 € for each procedure. Non-university: modelo 790 código 079. Pay the full amount: if less money arrives because of bank charges, your file will not start. Do not pay until you are sure which procedure you need." },
+    { "titulo": "Submit the application (university)", "texto": "The application for homologación or equivalencia is submitted online on the Ministry's e-office (sede electrónica), with all documents scanned. Since 22/10/2026 the Universities subsede has been closed because of a technical problem; the Ministry says you can use the Registro Electrónico General (general electronic registry, ciencia.sede.gob.es) and that the deadlines of the affected procedures are extended. Read the notice before applying." },
+    { "titulo": "Submit the application (ESO, Bachillerato, FP)", "texto": "Fill in the application on the Ministerio de Educación e-office (sede.educacion.gob.es) or submit it at a public registry with the originals, so they make verified copies. In Catalonia, Galicia and the Basque Country, you submit it to the autonomous community." },
+    { "titulo": "Ask for the volante de inscripción condicional if you are going to study", "texto": "For non-university qualifications, together with the application you can hand in the volante de inscripción condicional (conditional enrolment slip). Once stamped, it lets you enrol conditionally while your application is decided. You use it at your own risk and it does not guarantee a positive decision." },
+    { "titulo": "Answer if they ask for more documents", "texto": "The Ministry may ask you to correct or complete your application (subsanación). Answer within the deadline they give you. Check your file and your electronic notifications often." },
+    { "titulo": "Receive the decision", "texto": "The university decision can be favourable, unfavourable or conditional on passing extra training (for example, an exam or some subjects). If 6 months pass with no answer, the application can be treated as rejected by administrative silence (silencio administrativo); you can appeal." }
+  ],
+  "documentos": [
+    { "nombre": "Valid passport, TIE or ID document", "nota": "If you are in Spain, you need an NIF or NIE (tax / foreigner identity number) to pay the fee." },
+    { "nombre": "Original degree or official certificate that the degree was issued", "nota": "With apostille or legalisation if required." },
+    { "nombre": "Academic transcript (certificado académico)", "nota": "University: with length of studies, subjects and hours or ECTS credits. ESO: last 4 school years. Bachillerato: last 3 school years." },
+    { "nombre": "European Diploma Supplement (Suplemento Europeo al Título)", "nota": "Optional: it can replace the academic transcript for the equivalencia." },
+    { "nombre": "Sworn or official translation into Spanish", "nota": "Of all documents not in Spanish, including the apostilles." },
+    { "nombre": "Proof of payment of the fee (modelo 790)", "nota": "Código 107 (university) or 079 (non-university)." },
+    { "nombre": "Proof that you can practise the profession in your country", "nota": "Only for homologación of regulated professions." },
+    { "nombre": "Proof of Spanish language level", "nota": "Only for some professions (for example, B2 for teaching if you are not from a Spanish-speaking country)." },
+    { "nombre": "Volante de inscripción condicional", "nota": "Optional, non-university qualifications, if you want to enrol while you wait." }
+  ],
+  "plazos": [
+    { "texto": "University: the Ministry must decide and notify you within a maximum of 6 months from when the application enters the electronic registry (Real Decreto 889/2022). With no answer in that time, it can be treated as rejected by silence." },
+    { "texto": "Because the Universities subsede has been closed since 22/10/2026, the Ministry says the deadlines of the affected procedures are extended until the problem is solved." },
+    { "texto": "Non-university: the volante de inscripción condicional lets you enrol in the 6 months after it is stamped and is valid for that school year (Orden of 14 March 1988). Check the current validity with the Ministerio de Educación." },
+    { "texto": "We could not verify a published maximum decision time for non-university qualifications; see the procedure page on the Ministerio de Educación e-office." }
+  ],
+  "tasas": [
+    { "concepto": "Homologación of a university degree to Grado or Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Declaration of equivalence to the academic level of Grado or Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Homologación to the Graduado en ESO certificate", "importe": "Free", "modelo": "No fee" },
+    { "concepto": "Homologación to the Bachiller certificate", "importe": "49,76 €", "modelo": "Modelo 790 código 079", "nota": "Amount published by the Ministerio de Educación; we could not confirm it is the current amount in 2026. Check it before paying." },
+    { "concepto": "Convalidación for 1st year of Bachillerato", "importe": "24,88 €", "modelo": "Modelo 790 código 079", "nota": "Check the current amount on the Ministerio de Educación website." },
+    { "concepto": "Homologación or convalidación of Formación Profesional", "importe": "Check the current amount", "modelo": "Modelo 790 código 079", "nota": "We could not verify the 2026 amount on the Ministerio de Educación website." }
+  ],
+  "errores": [
+    "Applying for equivalencia when you need to work in a regulated profession. Equivalencia does not let you work, for example, as a doctor or nurse: you need homologación.",
+    "Putting the apostille on a certified copy instead of the original. The Ministry does not accept that apostille.",
+    "Translating the degree but not the apostille. The official translation must also include the legalisations.",
+    "Paying less than the fee because of transfer charges. If the full amount does not arrive, the file does not start.",
+    "Paying the fee before you know which procedure you need. Each procedure (homologación or equivalencia) has its own fee.",
+    "Not checking your electronic notifications. If you do not answer a request for documents in time, your application may be closed.",
+    "Using a translator who is not sworn or official. If the translator is from outside the EU, their signature must be legalised."
+  ],
+  "checklist": [
+    { "id": "elegir-tramite", "texto": "I know if I need homologación, equivalencia or convalidación" },
+    { "id": "profesion-regulada", "texto": "I have checked if my profession is in the Annex of Real Decreto 889/2022" },
+    { "id": "doc-identidad", "texto": "I have a valid passport, TIE or ID document and my NIE" },
+    { "id": "doc-titulo", "texto": "I have the original degree with apostille or legalisation" },
+    { "id": "doc-notas", "texto": "I have the transcript with apostille or legalisation" },
+    { "id": "traduccion", "texto": "I have a sworn or official translation of everything, including the apostilles" },
+    { "id": "tasa", "texto": "I have paid the full fee with the correct modelo 790" },
+    { "id": "solicitud", "texto": "I have submitted the application and kept the proof of registration" },
+    { "id": "volante", "texto": "If I am going to study, I have handed in the volante de inscripción condicional" },
+    { "id": "notificaciones", "texto": "I check my electronic notifications often" }
+  ],
+  "recordatorio": {
+    "pregunta": "On what day did you submit your application?",
+    "avisos": [
+      { "dias": 90, "texto": "3 months have passed. Check the status of your file and your notifications in case they ask for more documents." },
+      { "dias": 180, "texto": "6 months have passed. If your application is for a university degree and you have no answer, it can be treated as rejected by silence. Check your file and the ways to appeal on the Ministry's e-office." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Catalonia, Galicia and the Basque Country (non-university qualifications)", "texto": "If you live in these communities, recognition of ESO, Bachillerato and FP is handled by the education department of your autonomous community, not by the Ministry." },
+    { "titulo": "Qualifications from the EU, the European Economic Area and Switzerland", "texto": "They do not need an apostille or legalisation for university procedures. To work in a regulated profession with an EU qualification, recognition of professional qualifications may apply, which is a different procedure." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022, homologación, equivalencia and convalidación of foreign university studies (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Orden of 14 March 1988, applying Real Decreto 104/1988 (non-university qualifications) (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-6938", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: Valida-TE portal", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: Fee 107", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades: notice of closure of the Universities e-office", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Homologación and convalidación of foreign non-university qualifications and studies", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Volante de inscripción condicional", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270/convalidacion-no-univ/volante-condicional.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes: Fee 790 código 079", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/0/tasa-790-079-ingreso.html", "consultado": "2026-10-28" }
+  ]
+}

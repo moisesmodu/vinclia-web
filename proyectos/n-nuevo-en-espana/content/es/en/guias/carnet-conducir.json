@@ -1,0 +1,130 @@
+{
+  "slug": "carnet-conducir",
+  "titulo": "Driving licence: exchange (canje) or theory test",
+  "resumen": "If you live in Spain with a driving licence from another country, you have two paths. If your licence is from the EU/EEA, it stays valid while it is in date. If it is from a country with an agreement (convenio) with Spain (for example Morocco, Colombia, Ecuador, Peru, Argentina, Bolivia or Ukraine), you can exchange it (canje) without a test for fee 2.3 (28,87 €), and you can only drive with it for 6 months from when you have legal residence. If your country has no agreement, you must get the B licence in Spain: fee 2.1 (94,05 €), theory test and practical test.",
+  "paraQuien": "For foreigners who live in Spain (normal residence) and want to drive a car (B licence). It does not cover professional truck or bus licences (C and D), which have extra tests, or tourists passing through.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "EU/EEA licence", "valor": "Valid while it is in date; exchange is voluntary" },
+    { "etiqueta": "Licence from a country with an agreement", "valor": "Valid 6 months from your legal residence; after that, exchange" },
+    { "etiqueta": "Licence from a country without an agreement", "valor": "Valid 6 months; after that, you must get the Spanish licence" },
+    { "etiqueta": "Exchange fee (2.3)", "valor": "28,87 € (check the current amount)" },
+    { "etiqueta": "Test fee (2.1)", "valor": "94,05 €: gives you 2 attempts (check the current amount)" },
+    { "etiqueta": "Theory test", "valor": "30-question test; check with the DGT how many mistakes are allowed" },
+    { "etiqueta": "Languages of the B theory test", "valor": "Spanish, Catalan, Basque, Galician, Valencian, English, French and German; also easy-read" },
+    { "etiqueta": "Where", "valor": "Jefatura Provincial de Tráfico (provincial traffic office of the DGT), with cita previa (appointment) or digital exchange" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Check which country your licence is from",
+      "texto": "If it is from an EU or EEA country (Iceland, Liechtenstein, Norway), you can drive with it while it is in date. If it is from another country, look for your country in the official DGT (Dirección General de Tráfico, Spain's traffic authority) list 'Países con convenio de canjes' (countries with an exchange agreement). If your country is not on the list, your licence cannot be exchanged and you must get the B licence in Spain (step 6)."
+    },
+    {
+      "titulo": "Watch the 6-month deadline",
+      "texto": "A licence from a country outside the EU/EEA is only valid for driving in Spain for 6 months from when you have normal residence here (or from your legal entry, if you have no residence). After those 6 months you can no longer drive with it, even if it is in date. Start the exchange or the test early, because appointments can take time."
+    },
+    {
+      "titulo": "If your licence is from the EU/EEA: decide if you do anything",
+      "texto": "You do not have to exchange it. You can do a voluntary exchange (fee 2.3, 28,87 €) or register it with the DGT (inscripción, fee 4.1, 8,67 €), which does not change your licence. When it expires, if you live in Spain, you must renew it here (fee 4.3, 24,58 €) and you get a Spanish licence. If your licence does not expire or lasts more than 15 years, you must renew it in Spain after 2 years of residence."
+    },
+    {
+      "titulo": "If your country has an agreement: pass the medical check",
+      "texto": "Before the exchange you need a fitness report (informe de aptitud psicofísica) from a Centro de Reconocimiento de Conductores (driver medical centre). To exchange only motorbike and car licences (A and B), you need the group I report. Each centre sets its own price. Also check that your licence is in date and that you got it before living in Spain: if you got it in your country when you were already a legal resident here, it cannot be exchanged."
+    },
+    {
+      "titulo": "Apply for the exchange on the DGT website",
+      "texto": "The DGT has a digital exchange with Cl@ve or a digital certificate. For many countries (for example Morocco, Colombia, Ecuador, Bolivia) the DGT first asks the country that issued the licence to verify it; when it answers, the DGT emails you a reference code (localizador) to continue. For other countries (for example Argentina, Peru, Uruguay, United Kingdom) you can apply for the exchange directly. If you do not use the digital option, book a cita previa on the DGT website or by calling 060."
+    },
+    {
+      "titulo": "Hand in your original licence at the Jefatura",
+      "texto": "You must go once to the Jefatura Provincial de Tráfico to hand in your original licence. There they give you a temporary driving permit (autorización provisional) and the Spanish licence arrives by post. Pay fee 2.3 before you go. Some countries require an official translation of the licence (for example South Korea or Japan): check your country's page on the DGT website."
+    },
+    {
+      "titulo": "If your country has no agreement: prepare for the theory test",
+      "texto": "You must get the B licence like anyone in Spain. You do not have to go to a driving school for the theory test: you can sit it on your own ('por libre') with the official application. Practise with the free DGT online tests, which use real questions and are available in several languages. The DGT also has an easy-read manual for the B licence."
+    },
+    {
+      "titulo": "Pay fee 2.1 and apply for the test",
+      "texto": "Test fee 2.1 costs 94,05 € and gives you two attempts. If you fail twice, you must apply for the test again and pay another fee. In the application you choose the language of the theory test: Spanish, co-official languages, English, French or German. We did not find a test in Arabic, Romanian, Chinese or other languages at the DGT."
+    },
+    {
+      "titulo": "Take the theory test",
+      "texto": "It is a 30-question test. Old DGT material says you pass with a maximum of 3 mistakes; check the current rule on the DGT website. If you pass, the pass is valid for 2 years to take the practical test."
+    },
+    {
+      "titulo": "Do your driving lessons and the practical test",
+      "texto": "For the road test you need a car with dual controls, so people usually do practical lessons and the test with a driving school (autoescuela). When you pass, you get a temporary permit and then the Spanish licence by post."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Original foreign driving licence, in date", "nota": "For the exchange, you hand it in at the Jefatura." },
+    { "nombre": "TIE, NIE or EU citizen registration certificate", "nota": "To prove your residence in Spain." },
+    { "nombre": "Passport or ID document", "nota": "Original, in date." },
+    { "nombre": "Fitness report (informe de aptitud psicofísica)", "nota": "From a Centro de Reconocimiento de Conductores. Group I for motorbike and car." },
+    { "nombre": "Recent photo", "nota": "Check on the DGT website if you need it or if the medical centre sends it." },
+    { "nombre": "Proof of payment of the fee", "nota": "Fee 2.3 for exchange without tests; fee 2.1 for the test." },
+    { "nombre": "Official application form", "nota": "Download it from the DGT website (exchange or test)." },
+    { "nombre": "Official translation of the licence", "nota": "Only if your country's page asks for it (for example South Korea or Japan)." },
+    { "nombre": "Verification reference code (localizador)", "nota": "Only in the digital exchange for countries that need prior verification." },
+    { "nombre": "Cl@ve or digital certificate", "nota": "Only if you do the exchange online." }
+  ],
+  "plazos": [
+    { "texto": "A licence from outside the EU/EEA is valid for driving in Spain for a maximum of 6 months from when you have normal residence here (Reglamento General de Conductores, art. 21)." },
+    { "texto": "An EU/EEA licence is valid while it is in date. If it does not expire or lasts more than 15 years (group 1), you must renew it in Spain after 2 years of residence." },
+    { "texto": "Renewal of an EU/EEA licence can be requested from 3 months before it expires." },
+    { "texto": "The test fee (2.1) gives you 2 attempts. A passed test is kept for 2 years." },
+    { "texto": "In the exchange, the DGT gives you a temporary permit and the final licence arrives by post (about 6 weeks for an EU/EEA exchange)." }
+  ],
+  "tasas": [
+    { "concepto": "Licence exchange without extra tests (EU/EEA or country with an agreement, A and B licences)", "importe": "28,87 €", "modelo": "Tasa DGT 2.3", "nota": "Amount published on the DGT website. Check the current amount before paying." },
+    { "concepto": "Test to get the licence (or exchange with tests, such as C and D)", "importe": "94,05 €", "modelo": "Tasa DGT 2.1", "nota": "Gives you two attempts. Check the current amount on the DGT website." },
+    { "concepto": "Registering an EU/EEA licence (does not change your licence)", "importe": "8,67 €", "modelo": "Tasa DGT 4.1", "nota": "Optional." },
+    { "concepto": "Renewing an EU/EEA licence in Spain", "importe": "24,58 €", "modelo": "Tasa DGT 4.3" },
+    { "concepto": "Fitness report (informe de aptitud psicofísica)", "importe": "Variable", "modelo": "Charged by the Centro de Reconocimiento de Conductores", "nota": "It is not a DGT fee." }
+  ],
+  "errores": [
+    "Thinking you can always drive with your foreign licence. If it is not from the EU/EEA, it stops being valid in Spain 6 months after you get residence, even if it is still in date.",
+    "Mixing up the fees: the exchange without tests is fee 2.3 (28,87 €), not 4.1. Fee 4.1 (8,67 €) is for registering an EU/EEA licence.",
+    "Applying to exchange a licence you got in your country when you already lived legally in Spain. That licence cannot be exchanged.",
+    "Leaving the exchange for the last month. Verification with your country and the appointment can take weeks; start as soon as you have your TIE.",
+    "Cancelling your exchange appointment without thinking: you can only have one exchange appointment at a time, and cancelling it means starting again, including the verification.",
+    "Believing you must pay a driving school for the theory test. You can sit it on your own and practise with the free DGT tests.",
+    "Choosing a test language that does not exist. For the B licence there is only Spanish, co-official languages, English, French and German (and easy-read)."
+  ],
+  "checklist": [
+    { "id": "pais-convenio", "texto": "I have checked if my country is on the DGT list of exchange agreements" },
+    { "id": "fecha-residencia", "texto": "I know the date my legal residence started and when 6 months are up" },
+    { "id": "doc-permiso", "texto": "I have my original foreign licence, in date" },
+    { "id": "doc-tie", "texto": "I have my TIE, NIE or EU registration certificate" },
+    { "id": "doc-psicotecnico", "texto": "I have the fitness report from the medical centre" },
+    { "id": "doc-traduccion", "texto": "I have checked if my country needs an official translation of the licence" },
+    { "id": "tasa-pagada", "texto": "I have paid the correct fee (2.3 for exchange, 2.1 for the test)" },
+    { "id": "solicitud-canje", "texto": "I have requested the verification, the digital exchange or the cita previa on the DGT website" },
+    { "id": "entrega-original", "texto": "I have handed in my original licence at the Jefatura and I have the temporary permit" },
+    { "id": "test-dgt", "texto": "I have practised with the free DGT tests (if I take the test)" },
+    { "id": "idioma-examen", "texto": "I have chosen the theory test language in the application" }
+  ],
+  "recordatorio": {
+    "pregunta": "From what date have you had legal residence in Spain?",
+    "avisos": [
+      { "dias": 120, "texto": "4 months have passed. If your licence is not from the EU/EEA, you only have about 2 months left to drive with it. Start the exchange or the test now." },
+      { "dias": 150, "texto": "1 month left until your foreign licence stops being valid in Spain. Check if you already have the verification or the exchange appointment." },
+      { "dias": 170, "texto": "In a few days it will be 6 months. After that you cannot drive with your foreign licence (unless it is from the EU/EEA) until you have the Spanish licence or the temporary permit." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "United Kingdom licence", "texto": "Since 2023 there is an agreement with the United Kingdom. Residents in Spain can exchange their British licence without a test and without prior verification, within the 6 months from residence." },
+    { "titulo": "Truck or bus licences (C and D)", "texto": "Exchanging professional licences requires theory and/or practical tests depending on the country, the group II medical report and fee 2.1. They cannot be exchanged through the digital option." },
+    { "titulo": "Test in a co-official language", "texto": "In Catalonia and the Balearic Islands you can take the theory test in Catalan; in the Basque Country and Navarre, in Basque; in Galicia, in Galician; and in the Valencian Community, in Valencian." }
+  ],
+  "fuentes": [
+    { "nombre": "DGT – Countries with an exchange agreement (Países con convenio de canjes)", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/permisos-extranjeros-y-de-fuerzas-y-cuerpos-de-seguridad/canjes-de-permisos/paises-con-convenio-de-canjes/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Exchange of licences from non-EU countries (requirements, fees 2.3 and 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/extracomunitarios/canje-paises-G4-CL-CP/index.html", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Press release: digital driving licence exchange service", "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20250520-dgt-servicio-de-canje-digital-de-permisos-de-conduccion/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Exchange, registration, renewal and replacement of EU and EEA licences", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 818/2009, Reglamento General de Conductores (BOE, consolidated text)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-9481", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Requirements, preparation and applying for the test", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Applying for the test on your own (fee 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-y-gestion-de-permisos/solicitud-de-prueba-de-aptitud-de-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Booking a cita previa", "url": "https://sede.dgt.gob.es/es/otros-tramites/cita-previa", "consultado": "2026-10-28" }
+  ]
+}

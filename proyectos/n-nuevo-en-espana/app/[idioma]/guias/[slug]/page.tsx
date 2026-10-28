@@ -47,7 +47,7 @@ export default async function PaginaGuia({ params }: { params: Promise<{ idioma:
   return (
     <article className="space-y-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <nav className="text-sm text-suave"><Link href={`/${idioma}#guias`}>← {d.nav.guias}</Link></nav>
+      <nav className="text-sm text-suave"><Link href={`/${idioma}#guias`}><span className="inline-block rtl:rotate-180" aria-hidden>←</span> {d.nav.guias}</Link></nav>
       {r.idiomaContenido !== idioma ? <p className="bg-aviso-claro rounded-xl p-3 text-sm">{d.guia.noTraducida}</p> : null}
       <header>
         <span className={`text-xs font-semibold rounded-full px-2 py-1 ${r.gratis ? "bg-ok-claro text-ok" : "bg-marca-claro text-marca-oscuro"}`}>
