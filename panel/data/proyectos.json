@@ -472,7 +472,7 @@
   "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
   "enlaces": {
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/proyecto-b-oposiciones/proyectos/b-oposiciones",
-   "demo": "https://aprova-oposicions.vercel.app",
+   "demo": "https://placa-oposicions.vercel.app",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/7"
   },
   "acciones": [
@@ -527,18 +527,21 @@
    {
     "fecha": "2026-10-28",
     "texto": "Identidad de marca aplicada: Plaça (familia Exámenes), colores, Space Grotesk + IBM Plex Sans, logotipo e icono, sello en el pie y pantalla de precio común; temario dominado en %"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Redesplegado con la marca Plaça en https://placa-oposicions.vercel.app (proyecto renombrado; dominio antiguo activo para el webhook). Tarea programada semanal creada (lunes 7:37)."
    }
   ],
   "proximos": [
-   "Sesión del Mac: redesplegar con la marca Plaça y renombrar el proyecto de Vercel a placa-oposicions (DESPLIEGUE.md, «Pendiente tras la marca»); el nombre Aprova es del proyecto M",
-   "Sesión del Mac: poner LEGAL_NOM, LEGAL_NIF, LEGAL_EMAIL, LEGAL_ADRECA y RESEND_API_KEY en el proyecto de Vercel (ya están en el entorno)",
-   "Sesión del Mac: pago de prueba con la tarjeta 4242 4242 4242 4242 en /es/precios y comprobar la cuenta activa",
-   "Crear la tarea programada semanal (TAREA-PROGRAMADA.md)",
+   "Copiar a Vercel LEGAL_*, RESEND_API_KEY, STRIPE_TEST_SECRET_KEY (Numi Mates) y STRIPE_LIVE_SECRET_KEY: necesita permiso de Moisés para que la sesión escriba secretos",
+   "Pago de prueba con la tarjeta 4242 desde un navegador normal (checkout.stripe.com no abre desde la nube)",
    "Mes 2: decidir anuncios de búsqueda (100 €/mes, campaña lista)",
-   "Incorporar exámenes oficiales anteriores cuando se puedan leer los PDF"
+   "Incorporar exámenes oficiales anteriores cuando se puedan leer los PDF",
+   "Referidos (mes gratis) y planes para academias"
   ],
   "paraMoises": [
-   "Nada hoy: claves y despliegue los hace la sesión del Mac (SESIONES.md, regla 3)",
+   "Dar permiso a la sesión para copiar los secretos del entorno a Vercel (o copiarlos tú: 6 variables)",
    "Opcional: dominio propio (placa.cat o treuplaca.cat)",
    "Mes 2: aprobar o no los anuncios de búsqueda"
   ],

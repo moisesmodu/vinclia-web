@@ -15,6 +15,10 @@ Sin esto, las sesiones no pueden crear productos de Stripe ni desplegar aunque t
 
 **Hecho el 28/10/2026** (sesión del Mac): entorno «Default» en Limitado con esos 10 dominios y gestores de paquetes.
 
+**Ojo (sesión B, 28/10):** la red sale por `HTTPS_PROXY`. `curl` y el CLI de Vercel lo usan solos; el `fetch` de Node solo con
+`NODE_USE_ENV_PROXY=1`, y el SDK de Stripe necesita además `httpClient: Stripe.createFetchHttpClient()`. Sin eso todo parece
+«bloqueado» (ENOTFOUND) aunque no lo esté. `scripts/comprobar-entorno.mjs` ya se relanza con el proxy.
+
 ## 1. Una sola vez: los accesos como secretos del entorno en la nube
 
 La sesión del Mac (con el navegador de Moisés abierto) obtiene estos accesos y los guarda en el entorno en la nube

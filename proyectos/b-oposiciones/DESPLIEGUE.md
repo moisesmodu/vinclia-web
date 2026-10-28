@@ -106,3 +106,20 @@ El despliegue de arriba se hizo antes de aplicar la identidad de marca. La rama 
 4. Redesplegar (`vercel deploy --prod`) y hacer el pago de prueba con 4242 4242 4242 4242 en `/es/precios`.
 5. Anotar la URL definitiva en `panel/data/proyectos.json` (ficha `b-oposiciones`, `enlaces.demo`).
 Los precios ya creados en Stripe sirven: el nombre del producto es «Cartera · Oposiciones · <Plan>» y no cambia con la marca.
+
+## Redespliegue con la marca (sesión B, 28-10-2026)
+- La red no estaba bloqueada: el proxy de la sesión deja pasar Stripe, Vercel, Neon y Resend. El falso «bloqueado» venía de que
+  el `fetch` de Node no usa `HTTPS_PROXY` sin `NODE_USE_ENV_PROXY=1`; `scripts/comprobar-entorno.mjs` ya lo hace solo.
+- Vercel: proyecto renombrado a `placa-oposicions`, dominio `placa-oposicions.vercel.app` añadido (el antiguo
+  `aprova-oposicions.vercel.app` sigue sirviendo la app, sin redirección, porque el webhook de Stripe apunta a él).
+  Variables no secretas puestas: `NEXT_PUBLIC_URL=https://placa-oposicions.vercel.app`, `CORREO_REMITENTE=Plaça <noreply@numimates.com>`,
+  `STRIPE_MODO=prueba`. Desplegado con `npx vercel@50.1.6 deploy --prod` desde la raíz (con `.vercelignore`). Build OK, base de
+  datos en sync.
+- Probado en producción: páginas con la marca, API, test gratis, registro y sesión real de Stripe Checkout (`cs_test_…`).
+- **Pendiente (necesita permiso de Moisés para que esta sesión copie secretos a Vercel):** `LEGAL_NOM`, `LEGAL_NIF`,
+  `LEGAL_EMAIL`, `LEGAL_ADRECA`, `RESEND_API_KEY`, `STRIPE_TEST_SECRET_KEY` (cuenta Numi Mates en modo prueba,
+  `acct_1UKx8H4…`, la que pide DESPLIEGUES.md §2; hoy producción usa el sandbox `acct_1UKvWA9…` de la integración) y
+  `STRIPE_LIVE_SECRET_KEY` (para `STRIPE_MODO=real`). Si se cambia a la cuenta Numi Mates: `NODE_USE_ENV_PROXY=1
+  STRIPE_TEST_SECRET_KEY=… node scripts/stripe-preparar.mjs https://placa-oposicions.vercel.app` y guardar el
+  `STRIPE_WEBHOOK_SECRET` que imprime.
+- Pago con la tarjeta 4242: checkout.stripe.com no se abre desde las sesiones en la nube; hay que hacerlo desde un navegador normal.

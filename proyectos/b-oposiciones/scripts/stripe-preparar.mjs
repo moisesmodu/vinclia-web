@@ -15,7 +15,10 @@ const clave = process.env.STRIPE_MODO === 'real' ? process.env.STRIPE_SECRET_KEY
 const url = (process.argv[2] || '').replace(/\/$/, '');
 if (!clave || !url) { console.error('Uso: STRIPE_TEST_SECRET_KEY=… node scripts/stripe-preparar.mjs <URL pública>'); process.exit(2); }
 const host = process.env.STRIPE_API_HOST;
-const s = new Stripe(clave, host ? { host, port: Number(process.env.STRIPE_API_PORT || 12111), protocol: 'http' } : {});
+// Detrás del proxy de las sesiones en la nube: cliente HTTP basado en fetch, que con NODE_USE_ENV_PROXY=1 usa HTTPS_PROXY.
+const viaProxy = !host && process.env.HTTPS_PROXY ? { httpClient: Stripe.createFetchHttpClient() } : {};
+if (viaProxy.httpClient && !process.env.NODE_USE_ENV_PROXY) { console.error('Ejecuta con NODE_USE_ENV_PROXY=1 (sesión con proxy).'); process.exit(2); }
+const s = new Stripe(clave, host ? { host, port: Number(process.env.STRIPE_API_PORT || 12111), protocol: 'http' } : viaProxy);
 const NOMBRE = { mensual: 'Mensual', trimestral: 'Trimestral', anual: 'Anual' };
 
 for (const p of pais.planes.filter((x) => x.activo)) {

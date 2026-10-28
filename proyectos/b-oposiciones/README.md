@@ -96,11 +96,11 @@ necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula p
   12 h, webhook firmado (válido → suscripción activa; falso → 400) y `scripts/stripe-preparar.mjs`.
 - Motor en modo API contra un servidor simulado de la API de Anthropic (generación con Haiku 5.5, revisión con Sonnet 5.5 y
   respaldo automático, descarte de citas inventadas, compilación).
-- **Producción** (https://aprova-oposicions.vercel.app, desplegada por la sesión del Mac con la versión anterior a la marca):
-  la prueba de punta a punta pasa hasta el pago (páginas, API, test gratis, registro en Neon) y la API crea una sesión real de
-  Stripe Checkout en el entorno de prueba de Numi Mates (`cs_test_…`); el webhook rechaza peticiones sin firma.
+- **Producción** (https://placa-oposicions.vercel.app, con la marca Plaça; el dominio anterior aprova-oposicions.vercel.app sigue
+  activo): la prueba de punta a punta pasa hasta el pago (páginas, API, test gratis, registro en Neon) y la API crea sesiones
+  reales de Stripe Checkout en modo prueba (`cs_test_…`); el webhook rechaza peticiones sin firma.
 - **Sin probar:** introducir la tarjeta 4242 en checkout.stripe.com (bloqueado desde esta sesión), el correo de recuperación
-  con Resend real (falta `RESEND_API_KEY` en Vercel) y el redespliegue con la marca Plaça (pasos en `DESPLIEGUE.md`).
+  con Resend real (falta `RESEND_API_KEY` en Vercel) y los datos legales en el aviso legal (faltan `LEGAL_*` en Vercel; ver `DESPLIEGUE.md`).
 
 ## Decisiones tomadas (y por qué)
 - **Identidad de marca: Plaça** (familia Exámenes, `MARCAS.md` §4 y `marcas/tokens.json`): promesa «Treu plaça. Tests per a la

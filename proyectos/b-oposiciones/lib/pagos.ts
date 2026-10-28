@@ -12,8 +12,10 @@ export type Plan = (typeof pais.planes)[number];
  * STRIPE_SECRET_KEY poniendo STRIPE_MODO=real. Sin ninguna clave, "modo demo" (solo fuera de producción o con PAGO_DEMO=1).
  */
 export function claveStripe(): string | undefined {
-  if (process.env.STRIPE_MODO === 'real') return process.env.STRIPE_SECRET_KEY;
-  return process.env.STRIPE_TEST_SECRET_KEY || (process.env.STRIPE_SECRET_KEY?.match(/^(sk|rk)_test_/) ? process.env.STRIPE_SECRET_KEY : undefined);
+  const sk = process.env.STRIPE_SECRET_KEY;
+  // Modo real: solo una clave live (la de la integración de Stripe en Vercel puede ser de prueba y no debe cobrar).
+  if (process.env.STRIPE_MODO === 'real') return process.env.STRIPE_LIVE_SECRET_KEY || (sk?.match(/^(sk|rk)_live_/) ? sk : undefined);
+  return process.env.STRIPE_TEST_SECRET_KEY || (sk?.match(/^(sk|rk)_test_/) ? sk : undefined);
 }
 
 export const modoPago = (): 'stripe' | 'demo' | 'off' =>
