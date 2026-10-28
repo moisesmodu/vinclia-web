@@ -1,0 +1,13 @@
+node_modules
+.next
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+android/**/build
+android/.gradle
+android/*.keystore
+android/*.jks
+*.aab
+*.apk
+.env.test

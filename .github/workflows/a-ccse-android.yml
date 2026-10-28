@@ -1,0 +1,51 @@
+# Compila la app Android (TWA) del proyecto A sin firmar. La firma se hace fuera de GitHub con la clave de subida,
+# que nunca entra en el repositorio (es público).
+name: a-ccse-android
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'proyectos/a-ccse/android/**'
+      - '.github/workflows/a-ccse-android.yml'
+permissions:
+  contents: write
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/a-ccse/android/proyecto
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Compilar AAB y APK sin firmar
+        run: |
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          chmod +x gradlew
+          ./gradlew --no-daemon bundleRelease assembleRelease
+      - name: Resumen
+        run: |
+          ls -la app/build/outputs/bundle/release app/build/outputs/apk/release
+          sha256sum app/build/outputs/bundle/release/*.aab app/build/outputs/apk/release/*.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ccse-android-sin-firmar
+          path: |
+            proyectos/a-ccse/android/proyecto/app/build/outputs/bundle/release/*.aab
+            proyectos/a-ccse/android/proyecto/app/build/outputs/apk/release/*.apk
+          retention-days: 30
+      - name: Publicar el AAB sin firmar en la rama artefactos/a-ccse-android (para firmarlo fuera de GitHub)
+        run: |
+          set -e
+          D=$(mktemp -d)
+          cp app/build/outputs/bundle/release/*.aab "$D/ccse-sin-firmar.aab"
+          cd "$D"
+          git init -q -b artefactos/a-ccse-android
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add . && git commit -qm "AAB sin firmar de ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:artefactos/a-ccse-android

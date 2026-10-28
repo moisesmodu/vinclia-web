@@ -302,3 +302,4 @@ teléfono y plan Creator de ElevenLabs.
 | 24/10/2026 | `JUICIO.md`: probabilidad de éxito a 6 y 12 meses (Montecarlo) y veredicto por idea con criterio de parada | — |
 | 28/10/2026 | `DESPLIEGUES.md`: secretos del entorno y sesión del Mac para desplegar sin pedir nada a Moisés; Stripe real de Numi Mates para todo | — |
 | 28/10/2026 | M redefinido como app de certificados oficiales de catalán B1–C2 (`M-CATALA-PRODUCTE.md`): exámenes, 13 competidores, 10 apps de referencia, prompt nuevo. Stripe 'Numi Mates' conectado | — |
+| 28/10/2026 | Proyecto A construido en `proyectos/a-ccse`: web/PWA en 8 idiomas, 300 preguntas explicadas en 7, Stripe, TWA Android, 20 páginas SEO y marketing | PR #2 |
