@@ -33,7 +33,7 @@ de las sesiones de proyecto: menú del entorno en la barra de título de la sesi
 | `STRIPE_SECRET_KEY` | dashboard.stripe.com (cuenta **Numi Mates**, modo real) → Developers → API keys → **Restricted key** con permisos de escritura en Products, Prices, Checkout Sessions, Customers, Subscriptions, Webhook Endpoints, Coupons; lectura en Balance y Payment Intents | Cobros reales de todos los proyectos |
 | `STRIPE_TEST_SECRET_KEY` | la misma cuenta en modo prueba → Developers → API keys → Secret key `sk_test_` | Desarrollo y pruebas de punta a punta |
 | `RESEND_API_KEY` | resend.com → API Keys → Create (la cuenta ya existe; dominio `algorithmicslleida.com` verificado) | Correo transaccional |
-| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas | Textos legales de cada producto |
+| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas. **`LEGAL_EMAIL` = `hola@numimates.com`** en todos los proyectos hasta que cada uno tenga dominio propio; nunca el correo personal de Moisés ni nada de Algorithmics | Textos legales de cada producto |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (solo si P va en Cloudflare Pages) | dash.cloudflare.com → My Profile → API Tokens → plantilla «Edit Cloudflare Workers» + Pages; Account ID en la página de inicio del dominio | Publicar los sitios de P sin coste |
 | `GELATO_API_KEY` (G) | dashboard.gelato.com → Developer → API keys; la cuenta la abre Moisés (identidad y tarjeta) | Pedidos de impresión de cuentos |
 | `GOOGLE_PLAY_JSON` (más adelante) | Google Play Console → cuenta de servicio | Publicar apps Android |
@@ -124,3 +124,13 @@ los PR abiertos de moisesmodu/vinclia-web hacia la rama base cuyo diff añada un
 esté marcado como ejecutado; ejecuta cada uno en orden según DESPLIEGUES.md §3, anota la URL de producción y el estado
 `lanzado` en panel/data/proyectos.json, añade al final del DESPLIEGUE.md la línea `Ejecutado el <fecha>` y haz push a
 la rama del PR. Si falta un acceso, créalo (sección 1) y guárdalo también como secreto del entorno en la nube.»
+
+## 6. Correo de contacto: hola@numimates.com en todo (decisión del 28/10)
+
+Hasta que cada proyecto tenga su dominio, el correo de contacto, el del aviso legal, el de respuesta (`reply-to`) y el
+que ve el cliente en Stripe es **hola@numimates.com**. El remitente técnico de Resend sigue siendo `noreply@numimates.com`.
+Ningún proyecto muestra el correo personal de Moisés ni ningún correo de Algorithmics. Cuando llegue el dominio propio
+(lunilla.es, nuevoenespana.app, netoclaro.es…), se cambia `LEGAL_EMAIL` y el `correo` de la configuración del país,
+se verifica el dominio en Resend y se redespliega. Tras el cambio del 28/10, la sesión del Mac cambia el secreto
+`LEGAL_EMAIL` del entorno a `hola@numimates.com` y **redespliega todos los proyectos** cuando sus PR lleven el commit
+del correo.
