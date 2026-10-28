@@ -300,3 +300,4 @@ teléfono y plan Creator de ElevenLabs.
 | 24/10/2026 | Ingeniería inversa del líder de cada proyecto; proyecto P (webs con AdSense) añadido con investigación y viabilidad | — |
 | 24/10/2026 | Catálogo de 7 sitios de P ordenado por RPM y plan de expansión internacional para los 11 proyectos | — |
 | 24/10/2026 | `JUICIO.md`: probabilidad de éxito a 6 y 12 meses (Montecarlo) y veredicto por idea con criterio de parada | — |
+| 28/10/2026 | Proyecto N · Nuevo en España construido (8 guías × 7 idiomas, pago en modo prueba, 30 páginas SEO, vídeos, Play, tarea semanal) | PR #3 |

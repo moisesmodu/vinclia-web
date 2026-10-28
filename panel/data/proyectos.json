@@ -213,7 +213,7 @@
     "nombre": "Nuevo en España",
     "marca": "Nuevo en España",
     "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 2,
     "modelo": "Suscripción 4,99 €/mes o pack 19,90 €",
     "margenCliente": 22,
@@ -222,7 +222,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
-    "enlaces": {},
+    "enlaces": {
+      "pr": "https://github.com/moisesmodu/vinclia-web/pull/3",
+      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -243,21 +246,32 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Producto construido: 8 guías en 7 idiomas con fuentes oficiales, lista de comprobación y recordatorios por correo; pago en modo prueba (4,99 €/mes o pack 19,90 €); 30 páginas SEO, 30 guiones de vídeo (es/ar/fr), fichas de Play en 8 idiomas, 51 comunidades. Build limpio y prueba e2e en verde (PR #3)."
       }
     ],
     "proximos": [
-      "Abrir la sesión N después de A (comparten código)"
+      "Moisés: claves de Neon, Stripe y Vercel y crear la tarea semanal (PARA-MOISES.md)",
+      "Primera revisión semanal con red abierta: confirmar tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)",
+      "Probar el pago contra Stripe real en modo prueba al desplegar",
+      "Marzo 2027: campaña de la guía de renovación como producto de 19,90 € (condición del juicio)"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Proyecto en Vercel y Neon"
+      "Neon: crear proyecto y copiar las dos cadenas",
+      "Stripe (modo prueba): clave sk_test y webhook",
+      "Vercel: importar con Root Directory proyectos/n-nuevo-en-espana y pegar variables",
+      "Crear la tarea programada semanal (prompt en TAREA-PROGRAMADA.md)"
     ],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
       "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
       "Monitor automático de cambios legales que actualiza las guías y avisa al suscriptor: 'tu trámite ha cambiado'.",
       "Vídeos cortos multilingües con subtítulos y comunidades de WhatsApp y Telegram por idioma; colaborar con despachos verificados por afiliación.",
-      "Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario."
+      "Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario.",
+      "Sección CCSE (proyecto A) dentro de la misma app para la venta cruzada que prevé VIABILIDAD.",
+      "Guías en catalán (hoy solo la interfaz) y variantes por ciudad para las 20 búsquedas siguientes de MARKETING.md."
     ],
     "competidores": [
       {
@@ -346,7 +360,12 @@
       "Canales dominantes: YouTube y TikTok de despachos, con mucha desinformación; hueco para contenido con fuente oficial citada.",
       "Las administraciones ya publican guías en árabe, francés, rumano, chino y ucraniano: el conjunto de idiomas está validado, pero hay mucho contenido gratis y la disposición a pagar 4,99 €/mes es incierta; el modelo de pago por municipios sugiere una vía B2B.",
       "Riesgo regulatorio: dar asesoramiento sin ser abogado exige avisos y derivación; la normativa cambia a menudo y exige mantenimiento continuo.",
-      "Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma."
+      "Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma.",
+      "La autorización del RD 316/2026 no se renueva: se modifica por el artículo 191 del Reglamento (Real Decreto 1155/2024) en los 2 meses antes o 3 después de caducar; la prórroga de 1 año es excepcional (preguntas y respuestas de Inclusión, 21/07/2026).",
+      "Real Decreto 180/2026 (en vigor 13/03/2026): asistencia sanitaria de personas sin residencia autorizada con declaración responsable, documento provisional inmediato y silencio positivo a 3 meses.",
+      "Desde mayo de 2025 la DGT permite el canje digital de permisos con Cl@ve; el teórico del B solo se hace en castellano, lenguas cooficiales, inglés, francés y alemán (no árabe, rumano ni chino).",
+      "La subsede de Universidades estuvo cerrada desde el 22/10/2026 por incidencia técnica; las homologaciones se presentan por el Registro Electrónico General.",
+      "Google Play puede exigir su propio sistema de facturación para contenido digital: la app TWA no vende dentro y los pagos van por la web (revisar antes de publicar)."
     ],
     "lider": {
       "nombre": "Parainmigrantes.info (Vicente Marín), con Integreat (Alemania) como referencia de producto",
