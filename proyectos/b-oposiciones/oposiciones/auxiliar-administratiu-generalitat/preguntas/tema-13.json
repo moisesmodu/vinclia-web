@@ -145,7 +145,7 @@
     "dificultad": 2,
     "correcta": 2,
     "es": {
-      "enunciado": "A una empresa, obligada a relacionarse electrónicamente, se le pone a disposición en e-Notum una notificación de la Generalitat. La empresa no accede a ella. Según el artículo 43.2 de la Ley 39/2015, la notificación se entiende rechazada:",
+      "enunciado": "A una empresa, obligada a relacionarse electrónicamente, se le pone a disposición en e-NOTUM una notificación de la Generalitat. La empresa no accede a ella. Según el artículo 43.2 de la Ley 39/2015, la notificación se entiende rechazada:",
       "opciones": [
         "Cuando hayan transcurrido diez días hábiles desde el envío del aviso por correo electrónico",
         "Cuando hayan transcurrido quince días naturales desde la puesta a disposición",
@@ -327,7 +327,7 @@
         "Debe notificarse además individualmente a cada interesado",
         "Puede sustituirse o complementarse con la publicación en la sede electrónica correspondiente"
       ],
-      "explicacion": "El artículo 58.3 permite sustituir o complementar el tablón de anuncios o edictos por la publicación en la sede electrónica; en la Generalitat se hace mediante el tablón electrónico (e-Tauler)."
+      "explicacion": "El artículo 58.3 permite sustituir o complementar el tablón de anuncios o edictos por la publicación en la sede electrónica; en la Generalitat se hace mediante el tablón electrónico (e-TAULER)."
     },
     "ca": {
       "enunciado": "Segons l'article 58.3 de la Llei 26/2010, la publicació dels actes i comunicacions que s'han de publicar al tauler d'anuncis o mitjançant edictes:",
@@ -467,7 +467,7 @@
         "Por el medio que elija cada empleado público",
         "Por medios electrónicos que garanticen la autenticación e identificación de emisores y receptores, la constancia en los registros y la seguridad de lo transmitido"
       ],
-      "explicacion": "El artículo 24.1 impone la comunicación electrónica entre entidades del sector público con garantías de autenticación, constancia registral y seguridad; servicios como e-Valisa responden a este mandato."
+      "explicacion": "El artículo 24.1 impone la comunicación electrónica entre entidades del sector público con garantías de autenticación, constancia registral y seguridad; servicios como e-VALISA responden a este mandato."
     },
     "ca": {
       "enunciado": "Segons l'article 24.1 de la Llei 29/2010, les entitats del sector públic de Catalunya s'han de comunicar entre elles:",
@@ -565,14 +565,14 @@
     "dificultad": 1,
     "correcta": 0,
     "es": {
-      "enunciado": "¿Qué es e-Notum, uno de los servicios del Consorcio Administració Oberta de Catalunya (AOC)?",
+      "enunciado": "¿Qué es e-NOTUM, uno de los servicios del Consorcio Administració Oberta de Catalunya (AOC)?",
       "opciones": [
         "El servicio de notificaciones electrónicas, que pone las notificaciones a disposición de ciudadanos y empresas y les avisa por correo electrónico o SMS",
         "El tablón electrónico donde se publican los edictos y anuncios",
         "El servicio de intercambio de documentos entre administraciones",
         "La aplicación para obtener copias auténticas electrónicas de documentos en papel"
       ],
-      "explicacion": "e-Notum es el servicio de notificación electrónica: deja la notificación a disposición del destinatario, envía avisos y acredita el acceso o el rechazo. El tablón es e-Tauler, el intercambio entre administraciones es e-Valisa y las copias auténticas, e-Còpia."
+      "explicacion": "e-NOTUM es el servicio de notificación electrónica: deja la notificación a disposición del destinatario, envía avisos y acredita el acceso o el rechazo. El tablón es e-TAULER, el intercambio entre administraciones es e-VALISA y las copias auténticas, e-CÒPIA."
     },
     "ca": {
       "enunciado": "Què és e-NOTUM, un dels serveis del Consorci Administració Oberta de Catalunya (AOC)?",
@@ -599,12 +599,12 @@
     "es": {
       "enunciado": "Usted debe enviar a un ayuntamiento un oficio con documentación anexa, de forma electrónica y con constancia del envío y la recepción. ¿Qué servicio del Consorcio AOC es el adecuado?",
       "opciones": [
-        "e-Tauler",
-        "e-Valisa",
-        "e-Notum",
-        "e-Còpia"
+        "e-TAULER",
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA"
       ],
-      "explicacion": "e-Valisa es el servicio para las comunicaciones y el intercambio de documentos entre administraciones catalanas, con constancia de envío y recepción. e-Notum se dirige a ciudadanos y empresas, y e-Tauler publica edictos."
+      "explicacion": "e-VALISA es el servicio para las comunicaciones y el intercambio de documentos entre administraciones catalanas, con constancia de envío y recepción. e-NOTUM se dirige a ciudadanos y empresas, y e-TAULER publica edictos."
     },
     "ca": {
       "enunciado": "Vostè ha d'enviar a un ajuntament un ofici amb documentació annexa, de manera electrònica i amb constància de l'enviament i la recepció. Quin servei del Consorci AOC és l'adequat?",
@@ -631,12 +631,12 @@
     "es": {
       "enunciado": "Su unidad debe publicar un edicto en el tablón de anuncios de la sede electrónica, con garantía de la fecha de publicación y de la integridad del contenido. ¿Qué servicio del Consorcio AOC se utiliza?",
       "opciones": [
-        "e-Valisa",
-        "e-Notum",
-        "e-Còpia",
-        "e-Tauler"
+        "e-VALISA",
+        "e-NOTUM",
+        "e-CÒPIA",
+        "e-TAULER"
       ],
-      "explicacion": "e-Tauler es el tablón electrónico de edictos y anuncios, que acredita la fecha y el período de publicación y la integridad de lo publicado."
+      "explicacion": "e-TAULER es el tablón electrónico de edictos y anuncios, que acredita la fecha y el período de publicación y la integridad de lo publicado."
     },
     "ca": {
       "enunciado": "La seva unitat ha de publicar un edicte al tauler d'anuncis de la seu electrònica, amb garantia de la data de publicació i de la integritat del contingut. Quin servei del Consorci AOC s'utilitza?",
@@ -663,12 +663,12 @@
     "es": {
       "enunciado": "En la oficina de registro recibe documentos en papel que deben incorporarse a un expediente electrónico, y necesita obtener de ellos copias auténticas electrónicas mediante digitalización segura. ¿Qué servicio del Consorcio AOC es el adecuado?",
       "opciones": [
-        "e-Tauler",
-        "e-Còpia",
-        "e-Valisa",
-        "e-Notum"
+        "e-TAULER",
+        "e-CÒPIA",
+        "e-VALISA",
+        "e-NOTUM"
       ],
-      "explicacion": "e-Còpia permite digitalizar documentos en papel y generar copias auténticas electrónicas con las garantías del artículo 27 de la Ley 39/2015 (metadatos de copia y firma o sello del órgano)."
+      "explicacion": "e-CÒPIA permite digitalizar documentos en papel y generar copias auténticas electrónicas con las garantías del artículo 27 de la Ley 39/2015 (metadatos de copia y firma o sello del órgano)."
     },
     "ca": {
       "enunciado": "A l'oficina de registre rep documents en paper que s'han d'incorporar a un expedient electrònic, i n'ha d'obtenir còpies autèntiques electròniques mitjançant digitalització segura. Quin servei del Consorci AOC és l'adequat?",
