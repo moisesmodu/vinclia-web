@@ -1,0 +1,165 @@
+{
+  "idioma": "Română",
+  "marca": "Nuevo en España",
+  "lema": "Formalitățile dumneavoastră în Spania, pas cu pas și în limba dumneavoastră",
+  "meta": {
+    "titulo": "Nuevo en España · Ghiduri pentru formalitățile străinilor, în limba dumneavoastră",
+    "descripcion": "Ghiduri pas cu pas pentru reînnoirea permisului de ședere, înscrierea în registrul primăriei (empadronamiento), obținerea cardului de sănătate, a numărului de Seguridad Social, a permisului de conducere și a cetățeniei spaniole. Surse oficiale, în 7 limbi."
+  },
+  "nav": {
+    "guias": "Ghiduri",
+    "preguntas": "Întrebări",
+    "precios": "Prețuri",
+    "cuenta": "Contul meu",
+    "idioma": "Limbă"
+  },
+  "inicio": {
+    "titulo": "Formalitățile dumneavoastră în Spania, pas cu pas și în limba dumneavoastră",
+    "subtitulo": "Documente, termene, taxe și greșeli frecvente pentru fiecare formalitate, cu sursa oficială citată și data verificării. Pentru persoanele sosite de curând sau regularizate de curând.",
+    "ctaGratis": "Începeți gratuit: înscrierea în registrul primăriei (empadronamiento)",
+    "ctaGuias": "Vedeți toate ghidurile",
+    "puntos": [
+      {
+        "titulo": "Surse oficiale",
+        "texto": "Fiecare informație are link către BOE, minister sau site-ul oficial, cu data consultării."
+      },
+      {
+        "titulo": "În 7 limbi",
+        "texto": "Spaniolă, arabă, franceză, engleză, română, chineză și ucraineană."
+      },
+      {
+        "titulo": "Listă și mementouri",
+        "texto": "Bifați ce aveți deja și primiți un e-mail înainte de fiecare termen."
+      }
+    ],
+    "guiasTitulo": "Ghidurile",
+    "empiezaTitulo": "De unde încep?",
+    "empiezaTexto": "Alegeți situația dumneavoastră și vă arătăm ordinea recomandată a formalităților.",
+    "situaciones": {
+      "recienLlegado": "Tocmai am ajuns în Spania",
+      "regularizado": "Mi s-a acordat autorizația de regularizare (RD 316/2026)",
+      "renovar": "Trebuie să îmi reînnoiesc cardul",
+      "nacionalidad": "Vreau să cer cetățenia spaniolă"
+    },
+    "ordenRecomendado": "Ordinea recomandată",
+    "novedad": "Noutate: reînnoirea autorizațiilor acordate prin Real Decreto 316/2026"
+  },
+  "guia": {
+    "resumen": "Rezumat",
+    "paraQuien": "Pentru cine este?",
+    "datosClave": "Date-cheie",
+    "pasos": "Pas cu pas",
+    "documentos": "Documente necesare",
+    "plazos": "Termene",
+    "tasas": "Taxe",
+    "modelo": "Formular",
+    "errores": "Greșeli frecvente",
+    "variantes": "Diferențe în funcție de locul unde locuiți",
+    "checklist": "Lista dumneavoastră de verificare",
+    "checklistAyuda": "Se salvează doar pe acest dispozitiv.",
+    "hechos": "{hechos} din {total} făcute",
+    "reiniciar": "Începeți din nou",
+    "recordatorio": "Mementouri pentru termene prin e-mail",
+    "fuentes": "Surse oficiale",
+    "consultado": "consultat la",
+    "actualizado": "Verificat la",
+    "gratis": "Ghid gratuit",
+    "dePago": "Ghid complet cu abonament",
+    "bloqueadaTitulo": "Restul ghidului este pentru abonați",
+    "bloqueadaTexto": "Deblocați pașii, documentele, taxele, greșelile frecvente, lista de verificare și mementourile pentru toate ghidurile.",
+    "verPrecios": "Vedeți prețurile",
+    "yaTengoAcceso": "Am plătit deja: recuperați accesul",
+    "cargando": "Se încarcă…",
+    "otrasGuias": "Alte ghiduri",
+    "noTraducida": "Acest ghid nu este încă tradus în limba dumneavoastră: vi-l arătăm în spaniolă."
+  },
+  "recordatorio": {
+    "email": "Adresa dumneavoastră de e-mail",
+    "fecha": "Data",
+    "consentimiento": "Accept să primesc aceste notificări prin e-mail. Păstrăm doar adresa dumneavoastră de e-mail și această dată și vă puteți dezabona din fiecare e-mail.",
+    "boton": "Activați mementourile",
+    "avisos": "Vă vom scrie:",
+    "diasAntes": "cu {n} înainte",
+    "diasDespues": "la {n} după",
+    "elDia": "chiar în ziua respectivă",
+    "ok": "V-am trimis un e-mail. Apăsați pe link pentru a confirma mementourile.",
+    "error": "Nu s-a putut salva. Verificați adresa de e-mail și data și încercați din nou.",
+    "soloSuscriptores": "Mementourile pentru acest ghid sunt pentru abonați."
+  },
+  "precios": {
+    "titulo": "Prețuri",
+    "subtitulo": "Gratuit: ghidul complet pentru empadronamiento și rezumatul tuturor ghidurilor.",
+    "suscripcion": "Abonament lunar",
+    "suscripcionTexto": "Toate ghidurile complete, listele de verificare și mementourile. Anulați oricând din contul dumneavoastră.",
+    "pack": "Pachet 12 luni",
+    "packTexto": "O singură plată, fără reînnoire automată. Ideal pentru reînnoirea cardului dumneavoastră.",
+    "incluye": [
+      "Toate cele 8 ghiduri complete în limba dumneavoastră",
+      "Liste de verificare interactive",
+      "Mementouri pentru termene prin e-mail",
+      "Notificări când se schimbă un termen sau o taxă"
+    ],
+    "pagar": "Plătiți cu cardul",
+    "desistimiento": "Vreau să accesez acum conținutul digital și accept că, odată ce începe accesul, pierd dreptul de retragere de 14 zile.",
+    "condiciones": "Am citit condițiile de vânzare.",
+    "pruebaStripe": "Plată sigură prin Stripe. În acest moment este în modul de test: nu se încasează bani reali.",
+    "noAsesoria": "Nu este consultanță juridică și nici un serviciu care face formalitățile în locul dumneavoastră: sunt informații publice, ordonate și explicate.",
+    "marcaCasillas": "Bifați cele două căsuțe pentru a continua.",
+    "errorPago": "Nu s-a putut deschide plata. Încercați din nou peste câteva minute."
+  },
+  "acceso": {
+    "titulo": "Recuperați accesul",
+    "texto": "Scrieți adresa de e-mail cu care ați plătit și vă vom trimite un link pentru a intra pe acest dispozitiv.",
+    "boton": "Trimiteți linkul",
+    "enviado": "Dacă această adresă de e-mail are un abonament sau un pachet activ, veți primi un link în câteva minute.",
+    "graciasTitulo": "Vă mulțumim! Aveți acum acces",
+    "graciasTexto": "Toate ghidurile sunt deblocate pe acest dispozitiv. Pentru a intra de pe alt dispozitiv, folosiți „Recuperați accesul” cu adresa dumneavoastră de e-mail.",
+    "comprobando": "Se verifică plata…",
+    "pagoNoConfirmado": "Încă nu vedem plata confirmată. Așteptați un minut și reîncărcați pagina."
+  },
+  "cuenta": {
+    "titulo": "Contul meu",
+    "sinSesion": "Nu sunteți conectat pe acest dispozitiv.",
+    "plan": "Plan",
+    "hasta": "Acces până la",
+    "suscripcion": "Abonament lunar",
+    "pack": "Pachet 12 luni",
+    "sinPlan": "Niciun plan activ",
+    "cancelar": "Anulați abonamentul",
+    "canceladaOk": "Abonament anulat. Păstrați accesul până la sfârșitul perioadei plătite.",
+    "salir": "Ieșiți de pe acest dispozitiv",
+    "borrar": "Pentru a șterge toate datele dumneavoastră, scrieți la"
+  },
+  "preguntas": {
+    "titulo": "Întrebări frecvente despre formalități",
+    "respuestaCorta": "Răspuns scurt",
+    "guiaRelacionada": "Ghid pas cu pas",
+    "masPreguntas": "Mai multe întrebări"
+  },
+  "aviso": {
+    "corto": "Informații generale din surse oficiale. Nu este consultanță juridică.",
+    "largo": "Nuevo en España oferă informații publice din surse oficiale, citate și datate. Nu este consultanță juridică, nu face programări (cita previa) și nu face formalități în numele nimănui. Regulile se schimbă: verificați întotdeauna sursa oficială din link. Pentru cazul dumneavoastră concret, consultați un avocat sau o organizație gratuită de sprijin pentru migranți."
+  },
+  "pie": {
+    "avisoLegal": "Mențiuni legale",
+    "privacidad": "Confidențialitate",
+    "cookies": "Cookie-uri",
+    "condiciones": "Condiții de vânzare",
+    "contacto": "Contact"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirmați mementourile pentru {guia}",
+    "confirmarTexto": "Apăsați pe acest link pentru a activa mementourile pentru ghidul „{guia}”:",
+    "avisoAsunto": "Memento: {guia}",
+    "accesoAsunto": "Linkul dumneavoastră pentru a intra în Nuevo en España",
+    "accesoTexto": "Apăsați pe acest link pentru a intra pe acest dispozitiv. Expiră în 30 de minute:",
+    "baja": "Dezabonați-mă de la aceste notificări",
+    "abrirGuia": "Deschideți ghidul"
+  },
+  "comun": {
+    "volver": "Înapoi",
+    "enviar": "Trimiteți",
+    "cerrar": "Închideți",
+    "inicio": "Acasă"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "slug": "numero-seguridad-social",
+  "titulo": "Numărul de Seguridad Social (NUSS / NAF)",
+  "resumen": "Número de la Seguridad Social (NUSS) te identifică în sistemul spaniol de asigurări sociale (Seguridad Social). Când începi să lucrezi, același număr devine numărul tău de afiliere (NAF). Ai nevoie de el ca o firmă să te înregistreze (alta), ca să lucrezi pe cont propriu (autónomo) și pentru multe formalități legate de prestații. Este gratuit și îl eliberează Tesorería General de la Seguridad Social (TGSS): pe internet, în Import@ss (portalul online al Seguridad Social), sau la un birou al TGSS. Cu certificat digital sau Cl@ve este mai rapid; fără identificare digitală, TGSS îți verifică mai întâi identitatea și durează mai mult.",
+  "paraQuien": "Pentru persoanele care vor lucra în Spania (cu contract de muncă sau pe cont propriu) și nu au încă număr. Dacă ai mai lucrat în Spania, ai deja un număr: este același pentru toată viața și nu trebuie să ceri altul.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Cost", "valor": "Gratuit" },
+    { "etiqueta": "Cine îl eliberează", "valor": "Tesorería General de la Seguridad Social (TGSS)" },
+    { "etiqueta": "Unde", "valor": "Import@ss (portal.seg-social.gob.es) sau un birou (Administración) al TGSS" },
+    { "etiqueta": "Formular", "valor": "Modelo TA.1 (cerere pentru numărul de Seguridad Social și modificare de date)" },
+    { "etiqueta": "Document", "valor": "NIE/TIE sau pașaport (cu condiții), după cazul tău" },
+    { "etiqueta": "Îl poate cere firma?", "valor": "Da. Dacă urmează să fii angajat și nu ai număr, firma trebuie să îl ceară" },
+    { "etiqueta": "Înregistrarea la muncă (alta)", "valor": "Întotdeauna înainte de prima zi de lucru și cu cel mult 60 de zile înainte" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Verifică dacă ai deja număr",
+      "texto": "Dacă ai mai lucrat în Spania sau ai beneficiat de asistența medicală a unui membru al familiei, este posibil să ai deja număr. Numărul este unic: nu cere unul nou. Uită-te pe fluturașii de salariu (nóminas) vechi, în informe de vida laboral (istoricul tău de muncă) sau întreabă la TGSS."
+    },
+    {
+      "titulo": "Fă diferența între NUSS, NAF și NIE",
+      "texto": "NIE este numărul tău de identitate ca străin (îl dă Policía Nacional). NUSS este numărul tău în Seguridad Social. Când te afiliezi (prima înregistrare la muncă), acest număr devine numărul tău de afiliere (NAF). Sunt numere diferite: ai nevoie de amândouă ca să lucrezi."
+    },
+    {
+      "titulo": "Alege cum îl ceri",
+      "texto": "Ai trei căi oficiale: pe internet, în Import@ss; personal, la un birou al TGSS; sau prin firma ta (firma îl cere prin Sistema RED). CAISS sunt birouri ale INSS (pensii, prestații, asistență medicală): nu sunt locul obișnuit pentru a cere NUSS."
+    },
+    {
+      "titulo": "Pe internet, cu Cl@ve sau certificat digital",
+      "texto": "Intră în Import@ss, la „Solicitar el Número de la Seguridad Social”, identifică-te cu Cl@ve (sistemul oficial de identificare electronică) sau cu certificat digital și completează datele. Este calea cea mai rapidă."
+    },
+    {
+      "titulo": "Pe internet, fără identificare digitală",
+      "texto": "În Import@ss poți alege opțiunea că nu ai identificare digitală. Atunci îți completezi datele, îți faci un selfie urmând instrucțiunile și încarci o fotografie a actului de identitate (pe ambele fețe). Ai nevoie de o adresă de e-mail și de un telefon mobil sau alt dispozitiv cu cameră. TGSS îți verifică mai întâi identitatea și apoi îți trimite răspunsul."
+    },
+    {
+      "titulo": "Personal, la un birou al TGSS",
+      "texto": "Du modelo TA.1 completat și semnat și actul de identitate în original. Caută biroul tău pe site-ul Seguridad Social și verifică dinainte dacă primește cu sau fără programare (cita previa). Pentru informații sau pentru programare la video-asistența TGSS există numerele de telefon 901 50 20 50 și 91 541 02 91."
+    },
+    {
+      "titulo": "Dacă firma îl cere pentru tine",
+      "texto": "Dacă urmează să fii angajat și nu ai număr, firma este obligată să ceară afilierea ta și îți poate cere numărul prin Sistema RED. Dă-i firmei o copie a actului de identitate și datele tale exacte (numele ca în document, data nașterii, adresa)."
+    },
+    {
+      "titulo": "Păstrează documentul cu numărul tău",
+      "texto": "TGSS îți comunică numărul în scris sau în Import@ss. Păstrează-l bine: îl vei folosi toată viața ta profesională în Spania."
+    },
+    {
+      "titulo": "Asigură-te că firma te înregistrează la timp",
+      "texto": "A avea număr nu este același lucru cu a fi înregistrat (estar de alta). Firma trebuie să ceară înregistrarea ta înainte să începi să lucrezi și niciodată cu mai mult de 60 de zile înainte (Real Decreto 84/1996, art. 32). Când lucrezi deja, îți poți verifica înregistrarea în informe de vida laboral, în Import@ss."
+    },
+    {
+      "titulo": "Actualizează-ți datele dacă se schimbă",
+      "texto": "Dacă îți schimbi documentul (de exemplu, treci de la pașaport la TIE sau primești NIE), numele sau adresa, comunică modificarea de date (variación de datos) la TGSS. Se folosește același modelo TA.1 sau Import@ss."
+    }
+  ],
+  "documentos": [
+    { "nombre": "NIE sau TIE valabil", "nota": "Este documentul obișnuit pentru persoanele străine." },
+    { "nombre": "Pașaport valabil", "nota": "Conform modelo TA.1, pașaportul se acceptă pentru cetățenii UE, SEE sau Elveției, care trebuie să prezinte NIE-ul în 3 luni de la intrarea în Spania." },
+    { "nombre": "Carte de identitate națională (cetățeni UE, SEE și Elveția)", "nota": "Împreună cu certificado de registro (certificatul de înregistrare ca cetățean UE) cu NIE, dacă îl ai deja." },
+    { "nombre": "Modelo TA.1 completat și semnat", "nota": "Descarcă-l de pe site-ul Seguridad Social (seg-social.es). Folosește mereu versiunea cea mai recentă." },
+    { "nombre": "Adresă de e-mail", "nota": "Pentru cererea pe internet și pentru a primi notificări." },
+    { "nombre": "Telefon mobil sau calculator cu cameră", "nota": "Pentru selfie, dacă ceri numărul pe internet fără Cl@ve și fără certificat." },
+    { "nombre": "Cl@ve sau certificat digital (opțional)", "nota": "Nu este obligatoriu, dar face formalitatea pe internet mai rapidă." },
+    { "nombre": "Adresă în Spania", "nota": "Formularul îți cere domiciliul; scrie o adresă la care primești scrisori." }
+  ],
+  "plazos": [
+    { "texto": "Înregistrarea (alta) în Seguridad Social se cere înainte de a începe să lucrezi și niciodată cu mai mult de 60 de zile calendaristice înainte de început (Real Decreto 84/1996, art. 32.3)." },
+    { "texto": "Dacă ai cerut numărul cu pașaportul, ca cetățean al UE, SEE sau Elveției, trebuie să prezinți NIE-ul în termen de 3 luni de la intrarea în Spania (instrucțiunile modelo TA.1)." },
+    { "texto": "Seguridad Social indică un termen maxim de 45 de zile pentru soluționarea cererii; dacă trece acest termen fără răspuns, cererea se consideră aprobată. Această informație provine de pe o pagină informativă veche: verific-o în Import@ss." },
+    { "texto": "De la 1 august 2026 (Real Decreto 643/2026), firmele au 6 zile calendaristice ca să comunice încetările (bajas) și modificările de date ale lucrătorilor lor (înainte erau 3)." }
+  ],
+  "tasas": [
+    { "concepto": "Atribuirea numărului de Seguridad Social", "importe": "0 €", "modelo": "Modelo TA.1 (nu este un formular de plată)", "nota": "Nici TGSS, nici firma nu îți pot cere bani pentru această formalitate." }
+  ],
+  "errores": [
+    "Să ceri un număr nou când ai deja unul: NUSS este unic pentru toată viața. Dacă nu ți-l amintești, consultă vida laboral sau întreabă la TGSS.",
+    "Să confunzi NUSS cu NIE: sunt numere diferite și ai nevoie de amândouă ca să lucrezi.",
+    "Să mergi la un CAISS (INSS) să ceri numărul: NUSS îl atribuie Tesorería General (TGSS), prin Import@ss sau la birourile ei.",
+    "Să începi să lucrezi fără să fii înregistrat (de alta): înregistrarea trebuie făcută înainte de prima zi. Cere-i firmei dovada înregistrării (justificante de alta) sau verifică-ți vida laboral.",
+    "Să îți scrii numele altfel decât în document: folosește exact numele și prenumele din pașaport sau TIE, ca să eviți erori la contribuții și prestații.",
+    "Să nu îți actualizezi datele când treci de la pașaport la NIE sau TIE: comunică modificarea de date cu TA.1 sau în Import@ss."
+  ],
+  "checklist": [
+    { "id": "comprobar-numero", "texto": "Am verificat că nu am deja un număr de Seguridad Social" },
+    { "id": "doc-identidad", "texto": "Am NIE/TIE sau pașaportul valabil" },
+    { "id": "ta1", "texto": "Am descărcat și completat modelo TA.1 în vigoare" },
+    { "id": "via", "texto": "Știu pe ce cale îl cer: Import@ss, birou al TGSS sau firma mea" },
+    { "id": "email-camara", "texto": "Am adresă de e-mail și un telefon cu cameră (dacă îl cer pe internet fără Cl@ve)" },
+    { "id": "numero-guardado", "texto": "Am păstrat documentul cu numărul meu" },
+    { "id": "numero-empresa", "texto": "I-am dat firmei numărul meu înainte să încep" },
+    { "id": "alta", "texto": "Am verificat că firma m-a înregistrat (alta) înainte de prima zi" },
+    { "id": "datos-actualizados", "texto": "Datele mele din Seguridad Social se potrivesc cu documentul meu actual" }
+  ],
+  "recordatorio": {
+    "pregunta": "Când începi să lucrezi?",
+    "avisos": [
+      { "dias": -15, "texto": "Începi să lucrezi peste 15 zile. Dacă nu ai încă numărul de Seguridad Social, cere-l acum în Import@ss sau întreabă firma dacă îl va cere ea." },
+      { "dias": -7, "texto": "Începi să lucrezi peste o săptămână. Dă-i firmei numărul tău și întreabă dacă a cerut deja înregistrarea ta (alta): trebuie făcută înainte de prima ta zi." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "Dacă nu ai NIE",
+      "texto": "Dacă ești din UE, SEE sau Elveția, poți cere numărul cu pașaportul, dar apoi trebuie să prezinți NIE-ul în 3 luni. Dacă ești din afara UE, ca să lucrezi ai nevoie, de regulă, de o autorizație de muncă, iar odată cu ea vei avea NIE: cere numărul cu NIE-ul sau TIE-ul tău. Nu am putut confirma în surse oficiale dacă Import@ss acceptă doar pașaportul, pe calea fără identificare digitală, pentru persoanele din afara UE; dacă este cazul tău, întreabă la un birou al TGSS sau la telefoanele oficiale."
+    },
+    {
+      "titulo": "Dacă lucrezi ca personal casnic (empleo del hogar)",
+      "texto": "Persoana care te angajează (familia) este cea care trebuie să te înregistreze (alta). Dacă nu ai număr, se poate cere înainte în Import@ss sau la TGSS."
+    },
+    {
+      "titulo": "Dacă vei lucra pe cont propriu (autónomo)",
+      "texto": "Ai nevoie de număr înainte de a te înregistra în Régimen Especial de Trabajadores Autónomos (RETA). Îl ceri tu în Import@ss sau la TGSS și apoi faci înregistrarea ca autónomo."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS): Solicitar el Número de la Seguridad Social", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: Cómo obtener el Número de la Seguridad Social", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social: informații despre atribuirea numărului (modelo TA.1, termen de soluționare)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, Reglamento General de inscripción de empresas y afiliación (BOE, text consolidat)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 643/2026, de 29 de julio, care modifică Reglamento de afiliación (BOE)", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16557", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: telefonul de informații privind afilierea al TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

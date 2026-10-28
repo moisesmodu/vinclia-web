@@ -1,0 +1,165 @@
+{
+  "idioma": "English",
+  "marca": "Nuevo en España",
+  "lema": "Your paperwork in Spain, step by step and in your language",
+  "meta": {
+    "titulo": "Nuevo en España · Guides to official procedures for foreigners, in your language",
+    "descripcion": "Step-by-step guides to renew your residence permit, register with your town hall (empadronamiento), get your health card, your Social Security number, your driving licence and Spanish nationality. Official sources, in 7 languages."
+  },
+  "nav": {
+    "guias": "Guides",
+    "preguntas": "Questions",
+    "precios": "Prices",
+    "cuenta": "My account",
+    "idioma": "Language"
+  },
+  "inicio": {
+    "titulo": "Your paperwork in Spain, step by step and in your language",
+    "subtitulo": "Documents, deadlines, fees and common mistakes for each procedure, with the official source quoted and the date it was reviewed. For people who have just arrived or just been granted legal status.",
+    "ctaGratis": "Start for free: town hall registration (empadronamiento)",
+    "ctaGuias": "See all guides",
+    "puntos": [
+      {
+        "titulo": "Official sources",
+        "texto": "Every fact links to the BOE, the ministry or the official website, with the date it was checked."
+      },
+      {
+        "titulo": "In 7 languages",
+        "texto": "Spanish, Arabic, French, English, Romanian, Chinese and Ukrainian."
+      },
+      {
+        "titulo": "Checklist and reminders",
+        "texto": "Tick off what you already have and get an email before each deadline."
+      }
+    ],
+    "guiasTitulo": "The guides",
+    "empiezaTitulo": "Where do I start?",
+    "empiezaTexto": "Choose your situation and we will show you the recommended order of procedures.",
+    "situaciones": {
+      "recienLlegado": "I have just arrived in Spain",
+      "regularizado": "I have been granted the regularisation permit (RD 316/2026)",
+      "renovar": "I need to renew my card",
+      "nacionalidad": "I want to apply for Spanish nationality"
+    },
+    "ordenRecomendado": "Recommended order",
+    "novedad": "New: renewal of permits granted under Real Decreto 316/2026"
+  },
+  "guia": {
+    "resumen": "Summary",
+    "paraQuien": "Who is this for?",
+    "datosClave": "Key facts",
+    "pasos": "Step by step",
+    "documentos": "Documents you need",
+    "plazos": "Deadlines",
+    "tasas": "Fees",
+    "modelo": "Form",
+    "errores": "Common mistakes",
+    "variantes": "Differences depending on where you live",
+    "checklist": "Your checklist",
+    "checklistAyuda": "Saved on this device only.",
+    "hechos": "{hechos} of {total} done",
+    "reiniciar": "Start again",
+    "recordatorio": "Deadline reminders by email",
+    "fuentes": "Official sources",
+    "consultado": "checked on",
+    "actualizado": "Reviewed on",
+    "gratis": "Free guide",
+    "dePago": "Full guide with subscription",
+    "bloqueadaTitulo": "The rest of this guide is for subscribers",
+    "bloqueadaTexto": "Unlock the step-by-step instructions, documents, fees, common mistakes, checklist and reminders for all guides.",
+    "verPrecios": "See prices",
+    "yaTengoAcceso": "I have already paid: recover access",
+    "cargando": "Loading…",
+    "otrasGuias": "Other guides",
+    "noTraducida": "This guide has not been translated into your language yet, so we are showing it in Spanish."
+  },
+  "recordatorio": {
+    "email": "Your email address",
+    "fecha": "Date",
+    "consentimiento": "I agree to receive these reminders by email. We only store your email address and this date, and you can unsubscribe from any email.",
+    "boton": "Turn on reminders",
+    "avisos": "We will email you:",
+    "diasAntes": "{n} before",
+    "diasDespues": "{n} after",
+    "elDia": "on the day",
+    "ok": "We have sent you an email. Click the link to confirm your reminders.",
+    "error": "We could not save this. Check your email address and the date and try again.",
+    "soloSuscriptores": "Reminders for this guide are for subscribers."
+  },
+  "precios": {
+    "titulo": "Prices",
+    "subtitulo": "Free: the full empadronamiento guide and the summary of every guide.",
+    "suscripcion": "Monthly subscription",
+    "suscripcionTexto": "All full guides, checklists and reminders. Cancel at any time from your account.",
+    "pack": "12-month pack",
+    "packTexto": "One single payment, no automatic renewal. Ideal for renewing your card.",
+    "incluye": [
+      "All 8 full guides in your language",
+      "Interactive checklists",
+      "Deadline reminders by email",
+      "Alerts when a deadline or fee changes"
+    ],
+    "pagar": "Pay by card",
+    "desistimiento": "I want to access the digital content now and I accept that, once access begins, I lose my 14-day right of withdrawal.",
+    "condiciones": "I have read the terms of sale.",
+    "pruebaStripe": "Secure payment with Stripe. Currently in test mode: no real money is charged.",
+    "noAsesoria": "This is not legal advice or a service that handles procedures for you: it is public information, organised and explained.",
+    "marcaCasillas": "Tick both boxes to continue.",
+    "errorPago": "We could not open the payment page. Please try again in a few minutes."
+  },
+  "acceso": {
+    "titulo": "Recover access",
+    "texto": "Enter the email address you paid with and we will send you a link to sign in on this device.",
+    "boton": "Send link",
+    "enviado": "If that email address has an active subscription or pack, you will receive a link in a few minutes.",
+    "graciasTitulo": "Thank you! You now have access",
+    "graciasTexto": "All guides are unlocked on this device. To sign in from another device, use “Recover access” with your email address.",
+    "comprobando": "Checking your payment…",
+    "pagoNoConfirmado": "We cannot see your payment as confirmed yet. Wait a minute and reload the page."
+  },
+  "cuenta": {
+    "titulo": "My account",
+    "sinSesion": "You are not signed in on this device.",
+    "plan": "Plan",
+    "hasta": "Access until",
+    "suscripcion": "Monthly subscription",
+    "pack": "12-month pack",
+    "sinPlan": "No active plan",
+    "cancelar": "Cancel subscription",
+    "canceladaOk": "Subscription cancelled. You keep access until the end of the period you paid for.",
+    "salir": "Sign out of this device",
+    "borrar": "To delete all your data, write to"
+  },
+  "preguntas": {
+    "titulo": "Frequently asked questions about procedures",
+    "respuestaCorta": "Short answer",
+    "guiaRelacionada": "Step-by-step guide",
+    "masPreguntas": "More questions"
+  },
+  "aviso": {
+    "corto": "General information from official sources. This is not legal advice.",
+    "largo": "Nuevo en España offers public information from official sources, quoted and dated. It is not legal advice, it does not book appointments (cita previa) and it does not carry out procedures on anyone's behalf. Rules change: always check the linked official source. For your specific case, consult a lawyer or a free support organisation for migrants."
+  },
+  "pie": {
+    "avisoLegal": "Legal notice",
+    "privacidad": "Privacy",
+    "cookies": "Cookies",
+    "condiciones": "Terms of sale",
+    "contacto": "Contact"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirm your reminders for {guia}",
+    "confirmarTexto": "Click this link to turn on reminders for the guide “{guia}”:",
+    "avisoAsunto": "Reminder: {guia}",
+    "accesoAsunto": "Your link to sign in to Nuevo en España",
+    "accesoTexto": "Click this link to sign in on this device. It expires in 30 minutes:",
+    "baja": "Unsubscribe from these reminders",
+    "abrirGuia": "Open the guide"
+  },
+  "comun": {
+    "volver": "Back",
+    "enviar": "Send",
+    "cerrar": "Close",
+    "inicio": "Home"
+  }
+}

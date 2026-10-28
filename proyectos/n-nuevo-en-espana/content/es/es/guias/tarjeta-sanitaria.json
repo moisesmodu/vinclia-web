@@ -1,0 +1,132 @@
+{
+  "slug": "tarjeta-sanitaria",
+  "titulo": "Tarjeta sanitaria individual (TSI)",
+  "resumen": "La tarjeta sanitaria individual (TSI) es la tarjeta para usar la sanidad pública: médico de familia, centro de salud, especialistas y recetas. La da el servicio de salud de tu comunidad autónoma y la solicitud es gratuita. Normalmente necesitas estar empadronado y tener reconocido el derecho a la asistencia sanitaria. Si estás en España sin residencia legal, también tienes derecho: desde el 13 de marzo de 2026 el Real Decreto 180/2026 fija un procedimiento común, con un documento provisional que te da acceso desde que presentas la solicitud y una respuesta en un máximo de 3 meses.",
+  "paraQuien": "Para personas que viven en España: con permiso de residencia (trabajadoras, familiares, etc.) y también personas extranjeras sin residencia legal. No es para turistas ni para estancias cortas cubiertas por la seguridad social o el seguro de otro país.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coste de la tarjeta", "valor": "Gratis" },
+    { "etiqueta": "Quién la da", "valor": "El servicio de salud de tu comunidad autónoma (por ejemplo, SERMAS en Madrid o CatSalut en Cataluña)" },
+    { "etiqueta": "Requisitos habituales", "valor": "Empadronamiento + derecho a la asistencia reconocido" },
+    { "etiqueta": "Quién reconoce el derecho", "valor": "El INSS si tienes residencia legal o trabajas; tu comunidad autónoma si no tienes residencia legal" },
+    { "etiqueta": "Sin residencia legal", "valor": "Real Decreto 180/2026: documento provisional al presentar la solicitud; respuesta en máximo 3 meses" },
+    { "etiqueta": "Tiempo (Madrid)", "valor": "Unas 3-4 semanas desde que validan tus documentos" },
+    { "etiqueta": "Urgencias", "valor": "Llama al 112 o ve a urgencias: no esperes a tener la tarjeta" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Conoce tu derecho",
+      "texto": "El Real Decreto-ley 7/2018 recuperó el acceso universal a la sanidad pública. Las personas extranjeras que viven en España sin estar registradas ni autorizadas como residentes tienen derecho a la atención sanitaria en las mismas condiciones que las personas españolas, si no tienen otra cobertura obligatoria, no pueden traer la cobertura desde su país y no hay un tercero obligado a pagar (artículo 3 ter de la Ley 16/2003). El Real Decreto 180/2026 desarrolla cómo se pide."
+    },
+    {
+      "titulo": "Empadrónate y pide un volante reciente",
+      "texto": "El empadronamiento es el requisito habitual para la tarjeta, porque demuestra dónde vives. Madrid y Cataluña piden un volante o certificado de empadronamiento de menos de 3 meses. Consulta nuestra guía de empadronamiento."
+    },
+    {
+      "titulo": "Averigua quién reconoce tu derecho",
+      "texto": "Si trabajas y estás de alta en la Seguridad Social, o tienes residencia legal, el derecho lo reconoce el Instituto Nacional de la Seguridad Social (INSS). Si no tienes residencia legal, lo reconoce el servicio de salud de tu comunidad autónoma, según el Real Decreto 180/2026."
+    },
+    {
+      "titulo": "Si te corresponde el INSS, pide o descarga el reconocimiento",
+      "texto": "Si trabajas, normalmente el derecho se reconoce con tu alta. Si no trabajas (por ejemplo, vienes por reagrupación familiar), puedes pedir el reconocimiento en la sede electrónica de la Seguridad Social o en un CAISS del INSS con cita previa. Lleva tu documento de identidad, tu TIE o resolución de residencia y el empadronamiento. Después puedes descargar el documento que acredita tu derecho en la web de la Seguridad Social."
+    },
+    {
+      "titulo": "Si no tienes residencia legal, presenta la solicitud con declaración responsable",
+      "texto": "Presentas una solicitud ante el servicio de salud de tu comunidad (o del INGESA en Ceuta y Melilla), con una declaración responsable. Para tu identidad sirve el pasaporte o un documento oficial de tu país; si no tienes, otro documento oficial de tu país con foto. Para demostrar que vives en España se usa el empadronamiento; si no puedes, el Real Decreto prevé otras pruebas, como matrícula escolar, facturas a tu nombre o inscripción consular."
+    },
+    {
+      "titulo": "Guarda tu documento provisional",
+      "texto": "Cuando presentas la solicitud sin residencia legal, te dan en ese momento un documento provisional. Con él puedes usar la sanidad pública mientras se resuelve tu expediente (no sirve fuera de España). La Administración tiene un máximo de 3 meses para responder; si no responde en ese plazo, tu solicitud se entiende aceptada (silencio positivo)."
+    },
+    {
+      "titulo": "Pide la tarjeta en tu centro de salud",
+      "texto": "Con el derecho reconocido, pides la tarjeta en el centro de salud que te corresponde por tu dirección (en Cataluña, el CAP), o en la sede electrónica de tu comunidad si lo permite. Allí también te asignan médico de familia (y pediatra para los niños)."
+    },
+    {
+      "titulo": "Recoge la tarjeta",
+      "texto": "En Madrid la tarjeta llega a tu centro de salud (no a tu casa) en unas 3-4 semanas después de validar tus documentos. En Cataluña la TSI física definitiva se entrega cuando tu empadronamiento es efectivo. Mientras tanto, pregunta en el centro de salud cómo identificarte si necesitas atención."
+    },
+    {
+      "titulo": "Mantén tus datos al día",
+      "texto": "Si cambias de dirección, de comunidad o de documento (por ejemplo, de pasaporte a TIE), avisa a tu centro de salud. En Madrid, la tarjeta de las personas extranjeras va ligada a la validez de su TIE y se renueva con ella; el documento DASE para personas sin residencia legal dura 2 años y se puede renovar."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Pasaporte o documento oficial de identidad de tu país", "nota": "Original y en vigor." },
+    { "nombre": "TIE o resolución de autorización de residencia", "nota": "Si tienes residencia legal en España." },
+    { "nombre": "Volante o certificado de empadronamiento", "nota": "De menos de 3 meses en Madrid y en Cataluña. En Madrid ciudad puedes autorizar que consulten tu padrón." },
+    { "nombre": "Documento del INSS que acredita tu derecho", "nota": "Si tienes residencia legal o trabajas. Se descarga en la web de la Seguridad Social." },
+    { "nombre": "Formulario de solicitud y declaración responsable", "nota": "Para personas sin residencia legal (Real Decreto 180/2026). Te lo dan en el centro de salud o en la web de tu comunidad." },
+    { "nombre": "Certificado de no exportación del derecho", "nota": "Si vienes de la UE, el EEE, Suiza, el Reino Unido o de un país con convenio (por ejemplo Andorra, Chile, Marruecos o Túnez): lo emite el organismo de tu país." },
+    { "nombre": "Otras pruebas de residencia si no estás empadronado", "nota": "Según el Real Decreto 180/2026: matrícula escolar, facturas a tu nombre, inscripción consular, certificado de un centro público de migraciones, entre otras." },
+    { "nombre": "Libro de familia o certificado de nacimiento", "nota": "Para menores sin pasaporte ni documento de identidad." }
+  ],
+  "plazos": [
+    { "texto": "El Real Decreto 180/2026 está en vigor desde el 13 de marzo de 2026." },
+    { "texto": "Sin residencia legal: la Administración tiene un máximo de 3 meses para resolver y notificar. Si no responde, tu solicitud se entiende estimada (silencio positivo)." },
+    { "texto": "El documento que acredita el derecho para personas sin residencia legal (Real Decreto 180/2026) no tiene caducidad mientras sigas cumpliendo los requisitos." },
+    { "texto": "Madrid: el documento provisional del DASE tiene una validez máxima de 3 meses; el DASE definitivo dura 2 años y se puede renovar." },
+    { "texto": "Madrid: la tarjeta sanitaria llega a tu centro de salud en unas 3-4 semanas." },
+    { "texto": "Madrid y Cataluña: el volante o certificado de empadronamiento debe tener menos de 3 meses." }
+  ],
+  "tasas": [
+    { "concepto": "Solicitud de la tarjeta sanitaria o del documento de asistencia", "importe": "0 €", "modelo": "No hay modelo de pago" },
+    { "concepto": "Medicamentos con receta (DASE en Madrid)", "importe": "40 % del precio", "modelo": "Se paga en la farmacia", "nota": "Es la aportación indicada por la Comunidad de Madrid para el DASE. Para otras personas, la aportación depende de tu situación y tus ingresos: consulta tu servicio de salud." }
+  ],
+  "errores": [
+    "Esperar a tener la tarjeta para ir a urgencias: si es una urgencia, llama al 112 o ve a urgencias.",
+    "Llevar un volante de empadronamiento antiguo: en Madrid y Cataluña debe tener menos de 3 meses.",
+    "Ir al INSS cuando no tienes residencia legal: en ese caso el derecho lo reconoce tu comunidad autónoma, en el centro de salud o en la unidad que indique.",
+    "Tirar o perder el documento provisional: es lo que te da acceso a la sanidad mientras esperas la respuesta.",
+    "No llevar el certificado de no exportación si vienes de la UE o de un país con convenio: sin él no pueden reconocerte el derecho por esta vía.",
+    "Empadronarte en una dirección donde no vives solo para conseguir la tarjeta: CatSalut lo considera fraude y puede dejar sin efecto la tarjeta.",
+    "No avisar al centro de salud cuando cambias de dirección o de documento: puedes tener problemas para pedir cita o recoger recetas."
+  ],
+  "checklist": [
+    { "id": "empadronado", "texto": "Estoy empadronado en el municipio donde vivo" },
+    { "id": "volante-reciente", "texto": "Tengo un volante o certificado de empadronamiento de menos de 3 meses" },
+    { "id": "doc-identidad", "texto": "Tengo mi pasaporte o TIE en vigor" },
+    { "id": "quien-reconoce", "texto": "Sé si mi derecho lo reconoce el INSS o mi comunidad autónoma" },
+    { "id": "doc-inss", "texto": "Si me corresponde el INSS, tengo el documento que acredita mi derecho" },
+    { "id": "no-exportacion", "texto": "Si vengo de la UE o de un país con convenio, tengo el certificado de no exportación" },
+    { "id": "solicitud-ccaa", "texto": "Si no tengo residencia legal, he presentado la solicitud con la declaración responsable" },
+    { "id": "provisional", "texto": "He guardado mi documento provisional y sé cuándo caduca" },
+    { "id": "centro-salud", "texto": "Sé cuál es mi centro de salud y he pedido allí la tarjeta" },
+    { "id": "urgencias", "texto": "Sé que en una urgencia llamo al 112 o voy a urgencias" }
+  ],
+  "recordatorio": {
+    "pregunta": "¿Cuándo caduca tu documento sanitario provisional?",
+    "avisos": [
+      { "dias": -30, "texto": "Tu documento sanitario provisional caduca en un mes. Si aún no tienes respuesta ni tarjeta, pregunta en tu centro de salud por el estado de tu solicitud." },
+      { "dias": -7, "texto": "Tu documento sanitario provisional caduca en una semana. Pregunta en tu centro de salud qué documento usar a partir de ahora y lleva tu justificante de solicitud." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "En Cataluña (CatSalut)",
+      "texto": "La TSI se pide en el CAP (centro de atención primaria) donde quieres recibir la atención. Lleva tu documento de identidad (DNI, NIE o pasaporte) y un certificado de empadronamiento de menos de 3 meses (algunos ayuntamientos permiten consultarlo en línea). Puedes iniciar la solicitud sin ir al CAP, pero la tarjeta física definitiva se entrega cuando tu empadronamiento es efectivo. CatSalut ya aplica el Real Decreto 180/2026 para personas sin residencia legal; cuando se reconoce el acceso, te dan una TSI. Información: https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/qui-te-acces-al-sistema-sanitari-public/"
+    },
+    {
+      "titulo": "En la Comunidad de Madrid (SERMAS)",
+      "texto": "Con residencia legal: pides la tarjeta en tu centro de salud o en la sede electrónica, con tu DNI o TIE, el documento del INSS y un volante de empadronamiento de menos de 90 días. Sin residencia legal: la Comunidad emite el Documento de Asistencia Sanitaria para Extranjeros (DASE), con los mismos efectos que la tarjeta. Se pide en las Unidades de Tramitación del SERMAS, con cita a través de tu centro de salud, o por la sede electrónica. Al presentar la solicitud te dan un documento provisional (máximo 3 meses). Atención: la web de la Comunidad pedía más de 90 días en España y 3 meses de empadronamiento; no hemos podido confirmar si ya ha adaptado estos requisitos al Real Decreto 180/2026, que no fija un tiempo mínimo de empadronamiento en lo que hemos podido comprobar. Información: https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase"
+    },
+    {
+      "titulo": "Si eres ciudadano de la UE, del EEE o de Suiza",
+      "texto": "Si estás de paso, usa tu Tarjeta Sanitaria Europea. Si vives en España y no trabajas aquí, normalmente necesitas un certificado de tu país que diga que no puedes traer tu cobertura (certificado de no exportación) antes de que te reconozcan el derecho."
+    },
+    {
+      "titulo": "En otras comunidades autónomas",
+      "texto": "Cada comunidad decide cómo se presenta la solicitud y qué oficina la tramita, pero desde marzo de 2026 todas deben seguir el procedimiento común del Real Decreto 180/2026 para personas sin residencia legal. Pregunta en tu centro de salud o busca \"tarjeta sanitaria\" en la web del servicio de salud de tu comunidad."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 180/2026, de 11 de marzo, derecho a la atención sanitaria de personas extranjeras sin residencia legal (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: aprobación del real decreto que refuerza la universalidad del acceso", "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: Tarjeta sanitaria individual", "url": "https://www.sanidad.gob.es/areas/saludDigital/tarjetaSanitariaSNS/home.htm", "consultado": "2026-10-28" },
+    { "nombre": "Sede electrónica de la Seguridad Social: Asistencia sanitaria (INSS)", "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/asistencia+sanitaria/202043", "consultado": "2026-10-28" },
+    { "nombre": "CatSalut: Obtención de la primera Tarjeta Sanitaria Individual (TSI)", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Tarjeta sanitaria", "url": "https://www.comunidad.madrid/salud/tarjeta-sanitaria", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Asistencia sanitaria extranjeros (DASE)", "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "idioma": "Castellano",
+  "marca": "Nuevo en España",
+  "lema": "Tus trámites en España, paso a paso y en tu idioma",
+  "meta": {
+    "titulo": "Nuevo en España · Guías de trámites para extranjeros en tu idioma",
+    "descripcion": "Guías paso a paso para renovar la residencia, empadronarte, pedir la tarjeta sanitaria, el número de la Seguridad Social, el carnet de conducir y la nacionalidad. Fuentes oficiales, en 7 idiomas."
+  },
+  "nav": {
+    "guias": "Guías",
+    "preguntas": "Preguntas",
+    "precios": "Precios",
+    "cuenta": "Mi cuenta",
+    "idioma": "Idioma"
+  },
+  "inicio": {
+    "titulo": "Tus trámites en España, paso a paso y en tu idioma",
+    "subtitulo": "Documentos, plazos, tasas y errores frecuentes de cada trámite, con la fuente oficial citada y la fecha de revisión. Para personas recién llegadas o recién regularizadas.",
+    "ctaGratis": "Empieza gratis: empadronamiento",
+    "ctaGuias": "Ver todas las guías",
+    "puntos": [
+      {
+        "titulo": "Fuentes oficiales",
+        "texto": "Cada dato enlaza al BOE, al ministerio o a la sede oficial, con su fecha de consulta."
+      },
+      {
+        "titulo": "En 7 idiomas",
+        "texto": "Castellano, árabe, francés, inglés, rumano, chino y ucraniano."
+      },
+      {
+        "titulo": "Lista y recordatorios",
+        "texto": "Marca lo que ya tienes y recibe un correo antes de cada plazo."
+      }
+    ],
+    "guiasTitulo": "Las guías",
+    "empiezaTitulo": "¿Por dónde empiezo?",
+    "empiezaTexto": "Elige tu situación y te mostramos el orden recomendado de trámites.",
+    "situaciones": {
+      "recienLlegado": "Acabo de llegar a España",
+      "regularizado": "Me han concedido la autorización de la regularización (RD 316/2026)",
+      "renovar": "Tengo que renovar mi tarjeta",
+      "nacionalidad": "Quiero pedir la nacionalidad"
+    },
+    "ordenRecomendado": "Orden recomendado",
+    "novedad": "Novedad: renovación de las autorizaciones del Real Decreto 316/2026"
+  },
+  "guia": {
+    "resumen": "Resumen",
+    "paraQuien": "¿A quién le sirve?",
+    "datosClave": "Datos clave",
+    "pasos": "Paso a paso",
+    "documentos": "Documentos que necesitas",
+    "plazos": "Plazos",
+    "tasas": "Tasas",
+    "modelo": "Modelo",
+    "errores": "Errores frecuentes",
+    "variantes": "Diferencias según dónde vivas",
+    "checklist": "Tu lista de comprobación",
+    "checklistAyuda": "Se guarda solo en este dispositivo.",
+    "hechos": "{hechos} de {total} hechos",
+    "reiniciar": "Empezar de nuevo",
+    "recordatorio": "Recordatorio de plazos por correo",
+    "fuentes": "Fuentes oficiales",
+    "consultado": "consultado el",
+    "actualizado": "Revisada el",
+    "gratis": "Guía gratis",
+    "dePago": "Guía completa con suscripción",
+    "bloqueadaTitulo": "El resto de la guía es para suscriptores",
+    "bloqueadaTexto": "Desbloquea el paso a paso, los documentos, las tasas, los errores frecuentes, la lista de comprobación y los recordatorios de todas las guías.",
+    "verPrecios": "Ver precios",
+    "yaTengoAcceso": "Ya pagué: recuperar acceso",
+    "cargando": "Cargando…",
+    "otrasGuias": "Otras guías",
+    "noTraducida": "Esta guía todavía no está traducida a tu idioma: te la mostramos en castellano."
+  },
+  "recordatorio": {
+    "email": "Tu correo electrónico",
+    "fecha": "Fecha",
+    "consentimiento": "Acepto recibir estos avisos por correo. Solo guardamos tu correo y esta fecha, y puedes darte de baja en cada correo.",
+    "boton": "Activar recordatorios",
+    "avisos": "Te escribiremos:",
+    "diasAntes": "{n} antes",
+    "diasDespues": "{n} después",
+    "elDia": "el mismo día",
+    "ok": "Te hemos enviado un correo. Pulsa el enlace para confirmar los recordatorios.",
+    "error": "No se ha podido guardar. Revisa el correo y la fecha e inténtalo otra vez.",
+    "soloSuscriptores": "Los recordatorios de esta guía son para suscriptores."
+  },
+  "precios": {
+    "titulo": "Precios",
+    "subtitulo": "Gratis: la guía completa de empadronamiento y el resumen de todas las guías.",
+    "suscripcion": "Suscripción mensual",
+    "suscripcionTexto": "Todas las guías completas, listas de comprobación y recordatorios. Cancela cuando quieras desde tu cuenta.",
+    "pack": "Pack 12 meses",
+    "packTexto": "Un solo pago, sin renovación automática. Ideal para la renovación de tu tarjeta.",
+    "incluye": [
+      "Las 8 guías completas en tu idioma",
+      "Listas de comprobación interactivas",
+      "Recordatorios de plazos por correo",
+      "Avisos cuando cambia un plazo o una tasa"
+    ],
+    "pagar": "Pagar con tarjeta",
+    "desistimiento": "Quiero acceder ya al contenido digital y acepto que, una vez empiece el acceso, pierdo el derecho de desistimiento de 14 días.",
+    "condiciones": "He leído las condiciones de venta.",
+    "pruebaStripe": "Pago seguro con Stripe. Ahora mismo en modo prueba: no se cobra nada real.",
+    "noAsesoria": "No es asesoramiento legal ni gestión de trámites: es información pública ordenada y explicada.",
+    "marcaCasillas": "Marca las dos casillas para continuar.",
+    "errorPago": "No se ha podido abrir el pago. Inténtalo de nuevo en unos minutos."
+  },
+  "acceso": {
+    "titulo": "Recuperar acceso",
+    "texto": "Escribe el correo con el que pagaste y te enviaremos un enlace para entrar en este dispositivo.",
+    "boton": "Enviar enlace",
+    "enviado": "Si ese correo tiene una suscripción o un pack activos, recibirás un enlace en unos minutos.",
+    "graciasTitulo": "¡Gracias! Ya tienes acceso",
+    "graciasTexto": "Todas las guías están desbloqueadas en este dispositivo. Para entrar desde otro, usa «Recuperar acceso» con tu correo.",
+    "comprobando": "Comprobando el pago…",
+    "pagoNoConfirmado": "Todavía no vemos el pago confirmado. Espera un minuto y recarga la página."
+  },
+  "cuenta": {
+    "titulo": "Mi cuenta",
+    "sinSesion": "No has entrado en este dispositivo.",
+    "plan": "Plan",
+    "hasta": "Acceso hasta",
+    "suscripcion": "Suscripción mensual",
+    "pack": "Pack 12 meses",
+    "sinPlan": "Sin plan activo",
+    "cancelar": "Cancelar la suscripción",
+    "canceladaOk": "Suscripción cancelada. Mantienes el acceso hasta el final del periodo pagado.",
+    "salir": "Salir de este dispositivo",
+    "borrar": "Para borrar todos tus datos, escribe a"
+  },
+  "preguntas": {
+    "titulo": "Preguntas frecuentes sobre trámites",
+    "respuestaCorta": "Respuesta corta",
+    "guiaRelacionada": "Guía paso a paso",
+    "masPreguntas": "Más preguntas"
+  },
+  "aviso": {
+    "corto": "Información general de fuentes oficiales. No es asesoramiento legal.",
+    "largo": "Nuevo en España ofrece información pública de fuentes oficiales, citadas y fechadas. No es asesoramiento legal, no pide citas previas y no hace trámites en nombre de nadie. Las normas cambian: comprueba siempre la fuente oficial enlazada. Para tu caso concreto, consulta a un abogado o a una entidad de acogida gratuita."
+  },
+  "pie": {
+    "avisoLegal": "Aviso legal",
+    "privacidad": "Privacidad",
+    "cookies": "Cookies",
+    "condiciones": "Condiciones de venta",
+    "contacto": "Contacto"
+  },
+  "correo": {
+    "confirmarAsunto": "Confirma tus recordatorios de {guia}",
+    "confirmarTexto": "Pulsa este enlace para activar los recordatorios de la guía «{guia}»:",
+    "avisoAsunto": "Recordatorio: {guia}",
+    "accesoAsunto": "Tu enlace para entrar en Nuevo en España",
+    "accesoTexto": "Pulsa este enlace para entrar en este dispositivo. Caduca en 30 minutos:",
+    "baja": "Darme de baja de estos avisos",
+    "abrirGuia": "Abrir la guía"
+  },
+  "comun": {
+    "volver": "Volver",
+    "enviar": "Enviar",
+    "cerrar": "Cerrar",
+    "inicio": "Inicio"
+  }
+}

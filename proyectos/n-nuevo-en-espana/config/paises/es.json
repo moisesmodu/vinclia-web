@@ -1,0 +1,33 @@
+{
+  "pais": "es",
+  "nombre": "España",
+  "marca": "Nuevo en España",
+  "idiomas": ["es", "ar", "fr", "en", "ro", "zh", "uk", "ca"],
+  "idiomaPorDefecto": "es",
+  "idiomasConGuiaPropia": ["es", "ar", "fr", "en", "ro", "zh", "uk"],
+  "moneda": "eur",
+  "guiaGratis": "empadronamiento",
+  "ordenGuias": [
+    "empadronamiento",
+    "renovacion-residencia",
+    "numero-seguridad-social",
+    "tarjeta-sanitaria",
+    "cuenta-bancaria",
+    "homologacion-titulos",
+    "carnet-conducir",
+    "nacionalidad"
+  ],
+  "precios": {
+    "suscripcion": { "importeCentimos": 499, "intervalo": "month", "texto": "4,99 €/mes" },
+    "pack": { "importeCentimos": 1990, "mesesAcceso": 12, "texto": "19,90 € · 12 meses" }
+  },
+  "iva": { "tipo": 21, "incluido": true },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "correo": "hola@nuevoenespana.app"
+  },
+  "legislacionConsumo": "Real Decreto Legislativo 1/2007 (TRLGDCU), artículo 103.m para contenido digital",
+  "autoridadProteccionDatos": { "nombre": "Agencia Española de Protección de Datos", "url": "https://www.aepd.es" }
+}

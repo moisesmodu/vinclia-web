@@ -1,0 +1,127 @@
+{
+  "slug": "renovacion-residencia",
+  "titulo": "续签你的居留许可（包括 Real Decreto 316/2026 所批的许可）",
+  "resumen": "你的临时居留许可（autorización de residencia temporal）有截止日期。要继续合法留在西班牙，你需要在到期前 2 个月内，最晚在到期后 3 个月内，申请续签（renovación）或转为其他许可。你要缴纳外国人事务规费（modelo 790 código 052），获批后再缴纳外国人身份卡（TIE）的费用（modelo 790 código 012）。如果你按时申请，在等待答复期间你原来的许可仍然有效。如果你的许可来自 2026 年特别合法化（regularización extraordinaria），它的续签方式不同：满一年时，你必须把它变更（modificación）为另一种许可。",
+  "paraQuien": "适用于持有临时居留许可的欧盟以外人士（工作、非营利居留、家庭团聚、扎根 arraigo、特殊情况），以及通过 Real Decreto 316/2026 特别合法化获得一年期许可的人。不适用于长期居留、欧盟公民的家属以及学生（学习居留 estancia por estudios 有自己的延期程序）。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "何时申请", "valor": "到期前 60 天（2 个月）起，最晚到期后 90 天（3 个月）内" },
+    { "etiqueta": "许可规费", "valor": "Modelo 790 código 052：临时居留和工作许可续签约 16,40 €（以缴费单为准）" },
+    { "etiqueta": "身份卡（TIE）费用", "valor": "Modelo 790 código 012：续签为 19,30 €（请核实现行金额）" },
+    { "etiqueta": "答复期限", "valor": "3 个月；如果没有答复，续签一般视为批准（默许批准，silencio positivo）" },
+    { "etiqueta": "续签后的有效期", "valor": "一般为 4 年，除非你符合长期居留的条件" },
+    { "etiqueta": "在哪里递交", "valor": "在电子政务网站（Mercurio 平台）网上递交，或到外国人事务办公室（Oficina de Extranjería）递交" },
+    { "etiqueta": "2026 年合法化（RD 316/2026）", "valor": "1 年期许可：到期时变更为另一种许可；延期属于例外情况" }
+  ],
+  "pasos": [
+    {
+      "titulo": "查看你的身份卡和许可的到期日期",
+      "texto": "日期写在你的 TIE 上，以及批准你许可的决定书（resolución）上。记下准确的日期。你从到期前 2 个月起就可以递交申请。如果错过了，到期后 3 个月内仍可申请，但可能会被罚款（sanción）。"
+    },
+    {
+      "titulo": "弄清楚你持有哪一类许可",
+      "texto": "每种许可在包容部（Ministerio de Inclusión）网站上都有自己的信息表（hoja informativa）：例如第 13 号表（Hoja 13）是受雇工作和居留许可，第 7 号表（Hoja 7）是非营利居留，第 10 号表（Hoja 10）是家庭团聚。表中有准确的条件和申请表（例如受雇工作用 EX-03）。如果你的许可来自 2026 年特别合法化，请看第 3 步。"
+    },
+    {
+      "titulo": "如果你持有 2026 年合法化许可，准备办理变更",
+      "texto": "根据包容部官方问答，Real Decreto 316/2026 的 1 年期许可不像其他许可那样续签：到期时，你必须申请变更为《条例》规定的另一种许可（Real Decreto 1155/2024 第191条），例如居留和工作许可。期限相同：到期前 2 个月或到期后 3 个月内。2026 年批准的一年期许可大多在 2027 年 4 月至 6 月之间到期，所以要提早准备。"
+    },
+    {
+      "titulo": "了解合法化许可的例外延期",
+      "texto": "只有在你无法申请任何变更时，才可以延期（prórroga）1 年。为此，你必须正在积极找工作并已在公共就业服务机构登记，或持有你所在自治区出具的积极融入报告（informe de esfuerzo de integración）。对该法令的一些分析指出，如果有正当理由（疾病、残疾、达到退休年龄）使你无法工作，延期可以更长：请在 BOE 和官方合法化门户网站上核实细节。获得 5 年期许可的未成年子女，满一年时不需要办理这个手续。"
+    },
+    {
+      "titulo": "准备材料",
+      "texto": "通常需要签好字的申请表、有效护照的完整复印件，以及证明你仍然符合条件的材料（工作、社保缴费、经济能力、子女上学等）。其他国家的文件必须翻译成西班牙语。如果缺少材料，办公室会要求你补交（requerimiento），答复期限会暂停计算。"
+    },
+    {
+      "titulo": "缴纳 790 código 052 规费",
+      "texto": "在政府电子政务网站（Sede de Administraciones Públicas）的缴费平台（pasarela de tasas）生成缴费单，选择你那类许可的续签项目（epígrafe）。根据公布的 2026 年费用表，临时居留和工作许可续签约 16,40 €。准确金额以生成缴费单时显示的为准。保存好缴费凭证，附在申请中。"
+    },
+    {
+      "titulo": "递交申请",
+      "texto": "你可以在电子政务网站的 Mercurio 平台网上递交（需要数字证书 certificado digital、Cl@ve，或通过代理人办理），也可以到你所在省份外国人事务办公室的登记处递交。保存好带日期的递交回执（resguardo）：这是你按时申请的证明。"
+    },
+    {
+      "titulo": "拿着回执等待决定",
+      "texto": "如果你在期限内递交，你原来的许可在得到答复前仍然有效。请随身携带你的 TIE（即使已过期）和申请回执。政府有 3 个月时间作出决定；续签时如果没有答复，申请一般视为批准（默许批准，silencio positivo），但请在你那类许可的信息表中确认是否适用于你。"
+    },
+    {
+      "titulo": "申请新身份卡（TIE）并按指纹",
+      "texto": "收到批准通知后，你有 1 个月时间，亲自到你住址所属的警察局（comisaría de Policía）或外国人事务办公室申请新的 TIE。请在政府的预约网站（cita previa）预约（选项“Policía - toma de huellas”）。带上护照、决定书、近期照片和 790 código 012 的缴费凭证。之后再回去领卡。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "该类许可的申请表", "nota": "例如受雇工作和居留许可用 EX-03；可在包容部的信息表中找到" },
+    { "nombre": "有效护照", "nota": "所有页面的完整复印件" },
+    { "nombre": "你现在的 TIE", "nota": "复印件；即使已过期，配合申请回执仍可使用" },
+    { "nombre": "790 código 052 规费的缴费凭证" },
+    { "nombre": "证明你仍然符合条件的材料", "nota": "根据你的许可：合同或工作履历（vida laboral）、工资单、社保（Seguridad Social）登记、失业金、经济能力或医疗保险" },
+    { "nombre": "未成年子女的在学证明", "nota": "如果你抚养学龄子女" },
+    { "nombre": "你所在自治区出具的积极融入报告（informe de esfuerzo de integración）", "nota": "可选；在某些情况下有帮助，也是 2026 年合法化许可延期的途径之一" },
+    { "nombre": "求职登记（inscripción como demandante de empleo）", "nota": "仅用于以积极找工作为理由的 2026 年合法化许可例外延期" },
+    { "nombre": "办 TIE 用：近期照片和 790 código 012 缴费凭证", "nota": "在按指纹的预约时提交" }
+  ],
+  "plazos": [
+    { "texto": "一般续签：在到期前 2 个月（60 天）内或到期后 3 个月（90 天）内申请。如果在到期后才申请，可能会被罚款。" },
+    { "texto": "如果你在期限内递交，你原来的许可在得到答复前仍然有效。" },
+    { "texto": "政府有 3 个月时间对续签作出决定。根据包容部的信息表，居留和工作许可、非营利居留许可以及家庭团聚许可的续签，未答复即视为批准（silencio positivo）。" },
+    { "texto": "2026 年合法化（RD 316/2026）：许可有效期为 1 年。变更为另一种许可需在到期前 2 个月或到期后 3 个月内申请。申请递交时间为 2026 年 4 月至 6 月 30 日（共 1.174.978 份申请），所以很多许可会在 2027 年 4 月至 6 月之间到期。" },
+    { "texto": "获批后，你有 1 个月时间（从收到通知起）亲自去申请新的 TIE。" },
+    { "texto": "续签一般批准 4 年，除非你符合长期居留许可的条件（通常是合法连续居留满 5 年后）。" }
+  ],
+  "tasas": [
+    { "concepto": "临时居留和工作许可续签", "importe": "16,40 €（约）", "modelo": "Modelo 790 código 052，续签项目（2.2.x）", "nota": "金额依据公布的 2026 年费用表；有效金额以在政府电子政务网站生成缴费单时显示的为准。" },
+    { "concepto": "2026 年合法化许可的变更", "importe": "视许可类型而定", "modelo": "Modelo 790 código 052", "nota": "项目（epígrafe）取决于你要变更成的许可。付款前请在缴费平台核实现行金额。" },
+    { "concepto": "续签或延期的外国人身份卡（TIE）", "importe": "19,30 €", "modelo": "Modelo 790 código 012（国家警察 Policía Nacional）", "nota": "第一次办理临时居留 TIE 为 16,08 €。付款前请在国家警察网站核实现行金额。" },
+    { "concepto": "工作许可（如适用，由雇主缴纳）", "importe": "不固定", "modelo": "Modelo 790 código 062", "nota": "仅适用于部分受雇工作许可；请查看信息表。" }
+  ],
+  "errores": [
+    "等到卡过期才开始办。你从到期前 2 个月就可以申请：尽早办理，特别是如果你的许可在 2027 年 4 月至 6 月之间到期，那时会有大量合法化申请。",
+    "以为 2026 年合法化许可会自动续签。并非如此：满一年时，你必须申请变更为另一种许可；如果无法变更，则申请例外延期。",
+    "在到期 3 个月以后才申请续签。超过这个期限就不再算续签，你可能会陷入非法居留状态。",
+    "弄丢申请回执。它是你按时申请的证明；请保存纸质版和手机照片，并和 TIE 一起随身携带。",
+    "缴费时选错项目。检查 790 código 052 缴费单上写的是正确许可类型的“renovación”（续签）或“modificación”（变更）。",
+    "获批后一个月内忘了申请新的 TIE。没有卡，你在工作、出行或办理其他手续时都会遇到麻烦。",
+    "外国文件没有翻译成西班牙语。办公室会要求你补正，你的案卷会被拖延。"
+  ],
+  "checklist": [
+    { "id": "fecha-caducidad", "texto": "我知道我的许可到期的准确日期" },
+    { "id": "tipo-autorizacion", "texto": "我知道我持有哪类许可，并已阅读它的信息表" },
+    { "id": "regularizacion-modificacion", "texto": "如果是 2026 年合法化许可，我知道可以变更为哪种许可" },
+    { "id": "doc-pasaporte", "texto": "我有有效护照和完整复印件" },
+    { "id": "doc-formulario", "texto": "我已填写并签署了正确的申请表" },
+    { "id": "doc-requisitos", "texto": "我有证明自己符合条件的材料（工作、经济能力等）" },
+    { "id": "doc-traducciones", "texto": "我的外国文件已翻译成西班牙语" },
+    { "id": "tasa-052", "texto": "我已按正确项目缴纳 790 código 052 规费" },
+    { "id": "presentada", "texto": "我已在期限内递交申请" },
+    { "id": "resguardo", "texto": "我已保存递交回执（resguardo）" },
+    { "id": "tasa-012", "texto": "获批后，我已缴纳 TIE 的 790 código 012 费用" },
+    { "id": "cita-huellas", "texto": "我已在获批后一个月内预约按指纹" }
+  ],
+  "recordatorio": {
+    "pregunta": "你的身份卡（TIE）或居留许可什么时候到期？",
+    "avisos": [
+      { "dias": -90, "texto": "你的许可 3 个月后到期。确认你持有哪类许可，阅读它的信息表，开始准备材料。如果是 2026 年合法化许可，想好要变更为哪种许可。" },
+      { "dias": -60, "texto": "从今天起，你可以递交续签或变更申请了。缴纳 790 código 052 规费并递交申请。" },
+      { "dias": -30, "texto": "离到期还有 1 个月。如果你还没递交申请，请马上递交并保存回执。" },
+      { "dias": 0, "texto": "今天你的许可到期。如果你已申请续签，凭回执许可仍然有效。如果还没申请，你还有 3 个月，但可能会被罚款：请尽快递交。" },
+      { "dias": 60, "texto": "许可已过期 2 个月。如果你什么都还没递交，只剩 1 个月期限了。如果已经递交，请在电子政务网站查看你的案卷状态。" }
+    ]
+  },
+  "variantes": [
+    { "titulo": "2026 年特别合法化（RD 316/2026）", "texto": "1 年期许可到期时变更为另一种许可（《条例》第191条）。只有在无法变更时，才能例外延期 1 年，条件是积极找工作并在公共就业服务机构登记，或持有积极融入报告。获得 5 年期许可的未成年人满一年时不需要办理这个手续。包容部会在其合法化门户网站陆续公布更多细节：递交前请先查看。" },
+    { "titulo": "非营利居留", "texto": "你必须继续证明有足够的经济能力和医疗保险。请查看包容部的第 7 号信息表（Hoja 7）。" },
+    { "titulo": "家庭团聚", "texto": "能否续签取决于为你办理团聚的人是否仍持有许可。请查看包容部的第 10 号信息表（Hoja 10）。" }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 316/2026, de 14 de abril，修订《外国人条例》（Reglamento de extranjería）（BOE-A-2026-8284）", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-8284", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 1155/2024，Ley Orgánica 4/2000 实施条例（BOE，合并文本）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099", "consultado": "2026-10-28" },
+    { "nombre": "特别合法化：申请后问答（包容部 Ministerio de Inclusión）", "url": "https://inclusion.gob.es/documents/20121/7817425/Preguntas%20y%20respuestas%2021072026.pdf/95dc64f0-7af9-a350-fc0e-b598dc0b9694?version=1.0&download=true", "consultado": "2026-10-28" },
+    { "nombre": "特别合法化申请期结束，共收到 1.174.978 份申请（包容部）", "url": "https://www.inclusion.gob.es/en/w/el-plazo-de-presentacion-de-solicitud-para-la-regularizacion-extraordinaria-concluye-con-1.174.978-solicitudes-recibidas", "consultado": "2026-10-28" },
+    { "nombre": "第 13 号信息表（Hoja 13）：受雇临时居留和工作许可续签（包容部）", "url": "https://www.inclusion.gob.es/documents/410169/2260168/13.+Renovaci%C3%B3n+de+la+autorizaci%C3%B3n+de+residencia+temporal+y+trabajo+por+cuenta+ajena.pdf/e9758a79-7758-d9e5-c08b-258ed383539d?t=1762851767852", "consultado": "2026-10-28" },
+    { "nombre": "第 7 号信息表（Hoja 7）：非营利临时居留许可续签（包容部）", "url": "https://www.inclusion.gob.es/en/web/migraciones/w/renovacion-de-la-autorizacion-de-residencia-temporal-no-lucrativa", "consultado": "2026-10-28" },
+    { "nombre": "外国人许可网上申请 - Mercurio（Sede de Administraciones Públicas）", "url": "https://sede.administracionespublicas.gob.es/pagina/index/directorio/mercurio2", "consultado": "2026-10-28" },
+    { "nombre": "外国人事务和按指纹预约（cita previa）（Sede de Administraciones Públicas）", "url": "https://icp.administracionelectronica.gob.es/icpplus/index.html", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "numero-seguridad-social-sin-nie",
+  "pregunta": "¿Se puede pedir el número de la Seguridad Social sin NIE?",
+  "descripcion": "Número de la Seguridad Social sin NIE: los ciudadanos de la UE pueden pedirlo con pasaporte y aportar el NIE en 3 meses. Fuera de la UE, lo habitual es NIE o TIE.",
+  "respuestaCorta": "Depende de dónde seas. Si eres ciudadano de la UE, del EEE o de Suiza, según el modelo TA.1 puedes pedir el Número de la Seguridad Social con tu pasaporte, pero tienes que aportar el NIE en 3 meses desde tu entrada en España. Si eres de fuera de la UE, para trabajar normalmente necesitas una autorización de trabajo, y con ella tendrás NIE: lo habitual es pedir el número con tu NIE o TIE. Si solo tienes pasaporte, pregunta en una oficina de la TGSS.",
+  "secciones": [
+    {
+      "titulo": "NIE y número de la Seguridad Social no son lo mismo",
+      "texto": "El NIE es tu número de identidad de extranjero y lo da la Policía Nacional. El Número de la Seguridad Social (NUSS) te identifica en la Seguridad Social y lo da la Tesorería General de la Seguridad Social (TGSS). Cuando tienes tu primer alta en un trabajo, ese número pasa a ser tu número de afiliación (NAF). Son números distintos y para trabajar necesitas los dos.\n\nEl número es único para toda la vida. Si ya trabajaste en España, ya tienes uno: no pidas otro. Míralo en tus nóminas antiguas o en tu informe de vida laboral."
+    },
+    {
+      "titulo": "Si eres de la UE, del EEE o de Suiza",
+      "texto": "Según las instrucciones del modelo TA.1, el pasaporte se admite para ciudadanos de la UE, del EEE o de Suiza. Puedes pedir el número con él, pero después debes aportar el NIE en un plazo de 3 meses desde tu entrada en España. También puedes usar el documento de identidad de tu país, junto al certificado de registro con NIE si ya lo tienes."
+    },
+    {
+      "titulo": "Si eres de fuera de la UE",
+      "texto": "Para trabajar en España normalmente necesitas una autorización de trabajo, y con ella tendrás NIE. Por eso lo habitual es pedir el número con tu NIE o tu TIE.\n\nNo hemos podido confirmar en fuentes oficiales si Import@ss acepta solo el pasaporte en la vía sin identificación digital para personas de fuera de la UE. Si es tu caso, comprueba antes en una oficina de la TGSS o en los teléfonos oficiales de información (901 50 20 50 y 91 541 02 91). No te fíes de quien te asegure lo contrario sin una fuente oficial."
+    },
+    {
+      "titulo": "Cómo pedirlo: tres vías oficiales y gratuitas",
+      "texto": "Por internet en Import@ss: con Cl@ve o certificado digital es la vía más rápida. Sin identificación digital, rellenas tus datos, te haces un selfie y subes una foto de tu documento por las dos caras; necesitas correo electrónico y un móvil con cámara, y la TGSS revisa primero tu identidad.\n\nEn persona en una oficina de la TGSS: lleva el modelo TA.1 rellenado y firmado y tu documento original. Comprueba antes si la oficina atiende con o sin cita. Los CAISS son oficinas del INSS, no el sitio habitual para pedir el número.\n\nA través de tu empresa: si te van a contratar y no tienes número, la empresa está obligada a pedir tu afiliación y puede solicitar el número con el Sistema RED.\n\nEl trámite es gratis. Ni la TGSS ni la empresa pueden cobrarte por él."
+    },
+    {
+      "titulo": "Plazos que debes conocer",
+      "texto": "La empresa debe pedir tu alta antes de que empieces a trabajar y nunca más de 60 días antes (Real Decreto 84/1996, artículo 32). Tener número no es lo mismo que estar de alta: compruébalo en tu vida laboral.\n\nUna página informativa antigua de la Seguridad Social indica un plazo máximo de 45 días para resolver la solicitud del número, con silencio positivo. Compruébalo en Import@ss, porque no hemos podido confirmar que siga vigente. Cuando pases del pasaporte al NIE o a la TIE, comunica el cambio de datos con el TA.1 o en Import@ss."
+    }
+  ],
+  "faq": [
+    { "p": "¿Es lo mismo el NIE que el número de la Seguridad Social?", "r": "No. El NIE lo da la Policía Nacional y el número de la Seguridad Social lo da la TGSS. Para trabajar necesitas los dos." },
+    { "p": "¿Puede pedirlo mi empresa por mí?", "r": "Sí. Si te van a contratar y no tienes número, la empresa debe pedir tu afiliación y puede solicitarlo por el Sistema RED." },
+    { "p": "¿Cuánto cuesta el número de la Seguridad Social?", "r": "Nada. Es gratis y nadie puede cobrarte por él." },
+    { "p": "¿Puedo pedirlo en un CAISS?", "r": "Los CAISS son oficinas del INSS. El número lo asigna la TGSS, por Import@ss o en sus oficinas." },
+    { "p": "Ya trabajé en España hace años. ¿Pido otro?", "r": "No. El número es único para toda la vida. Búscalo en tus nóminas o en tu vida laboral." }
+  ],
+  "guia": "numero-seguridad-social",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS): Solicitar el Número de la Seguridad Social", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social: información sobre la asignación del número (modelo TA.1, plazo de resolución)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: Cómo obtener el Número de la Seguridad Social", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, Reglamento General de inscripción de empresas y afiliación (BOE, texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: teléfono de información sobre afiliación de la TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}
