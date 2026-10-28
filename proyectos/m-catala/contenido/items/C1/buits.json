@@ -1,6 +1,6 @@
 [
   { "id": "c1-buits-0001", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "pronoms-febles", "regla": "pronoms-en-hi", "dificultat": 0.2,
-    "enunciat": "Que has parlat amb la cap de servei? No, encara no ___ he parlat.", "resposta": ["hi"], "pista": "Parlar amb algú: complement amb la preposició amb.",
+    "enunciat": "Has parlat amb la cap de servei? No, encara no ___ he parlat.", "resposta": ["hi"], "pista": "Parlar amb algú: complement amb la preposició amb.",
     "diagnostic": true, "gratis": true, "revisio": "sessio" },
   { "id": "c1-buits-0002", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "pronoms-febles", "regla": "pronoms-en-hi", "dificultat": -1.0,
     "enunciat": "Encara queden places al curs de català de nivell C1? Sí, ___ queden tres.", "resposta": ["en"], "pista": "Places és un complement directe indeterminat: una quantitat.",
@@ -18,7 +18,7 @@
     "enunciat": "Vols que et guardi entrades per al concert? Sí, guarda-___ dues.", "resposta": ["me'n"], "pista": "A mi (me) + entrades, una quantitat (en).",
     "diagnostic": false, "gratis": false, "revisio": "sessio" },
   { "id": "c1-buits-0007", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "pronoms-febles", "regla": "pronoms-febles-combinacions", "dificultat": 0.3,
-    "enunciat": "No ___ vaig adonar que la factura ja estava pagada.", "resposta": ["me'n"], "pista": "Adonar-se de: el pronom reflexiu i en.",
+    "enunciat": "De l'error de la factura, no ___ vaig adonar fins a l'endemà.", "resposta": ["me'n"], "pista": "Adonar-se de: el pronom reflexiu i en (el complement amb de està avançat).",
     "diagnostic": false, "gratis": false, "revisio": "sessio" },
   { "id": "c1-buits-0008", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "pronoms-febles", "regla": "pronoms-febles-combinacions", "dificultat": -0.3,
     "enunciat": "Hi ha prou cadires a la sala d'actes? No, no ___ ha prou.", "resposta": ["n'hi"],

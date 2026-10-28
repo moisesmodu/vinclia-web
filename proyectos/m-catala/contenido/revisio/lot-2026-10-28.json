@@ -1,0 +1,802 @@
+{
+ "data": "2026-10-28",
+ "instruccions": "Per a cada ítem: estat = ok | corregir | rebutjar; si corregeixes, escriu la forma bona a \"correccio\" i el motiu a \"nota\". Quan el lot estigui revisat, la tasca setmanal aplica les correccions i posa revisio: \"huma\" als ok.",
+ "revisor": "",
+ "items": [
+  {
+   "id": "b1-buits-0011",
+   "nivell": "B1",
+   "tipus": "buits",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-en-hi",
+   "enunciat": "Tens fills? Sí, ___ tinc dos.",
+   "opcions": [
+    "en",
+    "hi",
+    "els"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-buits-0019",
+   "nivell": "B1",
+   "tipus": "buits",
+   "punt": "preposicions",
+   "regla": "preposicions-a-en",
+   "enunciat": "Visc ___ Tarragona des de fa tres anys.",
+   "opcions": [
+    "a",
+    "en",
+    "al"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-buits-0020",
+   "nivell": "B1",
+   "tipus": "buits",
+   "punt": "preposicions",
+   "regla": "preposicions-a-en",
+   "enunciat": "Vaig a la feina ___ bicicleta perquè el bus triga molt.",
+   "opcions": [
+    "amb",
+    "en",
+    "de"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-castellanismes-0010",
+   "nivell": "B1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-2",
+   "enunciat": "M'he enterat que tanquen la fàbrica al desembre.",
+   "opcions": [
+    "assabentat",
+    "enterat bé",
+    "donat compte"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-castellanismes-0003",
+   "nivell": "B1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-1",
+   "enunciat": "No vindré a classe, pues tinc hora al metge.",
+   "opcions": [
+    "perquè",
+    "doncs",
+    "per què"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-castellanismes-0001",
+   "nivell": "B1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-1",
+   "enunciat": "Bueno, demà ens veiem a la porta de l'escola.",
+   "opcions": [
+    "Bé",
+    "Bo",
+    "Vale"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-dictat-0001",
+   "nivell": "B1",
+   "tipus": "dictat",
+   "punt": "ortografia-accents",
+   "regla": "accents-regles",
+   "enunciat": "Els exàmens de català són el dissabte a la tarda, a l'escola d'adults de Lleida.",
+   "resposta": "Els exàmens de català són el dissabte a la tarda, a l'escola d'adults de Lleida.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-dictat-0003",
+   "nivell": "B1",
+   "tipus": "dictat",
+   "punt": "ortografia-consonants",
+   "regla": "ortografia-b-v-g-j",
+   "enunciat": "Vaig canviar de feina al maig i ara treballo en una botiga de jerseis.",
+   "resposta": "Vaig canviar de feina al maig i ara treballo en una botiga de jerseis.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-dictat-0004",
+   "nivell": "B1",
+   "tipus": "dictat",
+   "punt": "ortografia-consonants",
+   "regla": "ortografia-essa-sorda-sonora-x",
+   "enunciat": "A la plaça hi ha un mercat amb peix fresc, carn i cassoles de tota mena.",
+   "resposta": "A la plaça hi ha un mercat amb peix fresc, carn i cassoles de tota mena.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-lexic-0007",
+   "nivell": "B1",
+   "tipus": "lexic",
+   "punt": "lexic-tematic",
+   "regla": "lexic-tematic-quotidia",
+   "enunciat": "Una persona que no té feina i en busca està ___.",
+   "opcions": [
+    "a l'atur",
+    "en paro",
+    "de baixa"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-lexic-0002",
+   "nivell": "B1",
+   "tipus": "lexic",
+   "punt": "lexic-tematic",
+   "regla": "lexic-tematic-quotidia",
+   "enunciat": "Quan estàs malalt i no pots treballar, el metge et dona ___.",
+   "opcions": [
+    "la baixa",
+    "l'alta",
+    "la vacança"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-lexic-0015",
+   "nivell": "B1",
+   "tipus": "lexic",
+   "punt": "lexic-tematic",
+   "regla": "lexic-tematic-quotidia",
+   "enunciat": "Inscriure's al registre d'habitants del municipi on vius és ___.",
+   "opcions": [
+    "empadronar-se",
+    "padronar-se",
+    "registrar-se al cens"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-transformacio-0001",
+   "nivell": "B1",
+   "tipus": "transformacio",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-en-hi",
+   "enunciat": "Substitueix «al mercat» per un pronom feble: Vaig al mercat cada dissabte.",
+   "resposta": [
+    "Hi vaig cada dissabte",
+    "Hi vaig cada dissabte."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-transformacio-0004",
+   "nivell": "B1",
+   "tipus": "transformacio",
+   "punt": "perifrasis",
+   "regla": "perifrasis-obligacio",
+   "enunciat": "Reescriu la frase sense «tenir que»: Tinc que anar al CAP demà.",
+   "resposta": [
+    "He d'anar al CAP demà",
+    "He d'anar al CAP demà.",
+    "Demà he d'anar al CAP",
+    "Demà he d'anar al CAP."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b1-transformacio-0002",
+   "nivell": "B1",
+   "tipus": "transformacio",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-en-hi",
+   "enunciat": "Respon amb un pronom feble i la quantitat: Quantes pomes compres? (tres)",
+   "resposta": [
+    "En compro tres",
+    "En compro tres.",
+    "N'he comprat tres",
+    "N'he comprat tres."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-buits-0010",
+   "nivell": "B2",
+   "tipus": "buits",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-febles-combinacions",
+   "enunciat": "Has donat les claus al porter? Sí, ___ he donat aquest matí.",
+   "opcions": [
+    "les hi",
+    "els hi",
+    "li les"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-buits-0018",
+   "nivell": "B2",
+   "tipus": "buits",
+   "punt": "per-per-a",
+   "regla": "per-per-a",
+   "enunciat": "Aquest formulari és ___ les famílies dels alumnes de primària.",
+   "opcions": [
+    "per a",
+    "per",
+    "para"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-buits-0035",
+   "nivell": "B2",
+   "tipus": "buits",
+   "punt": "temps-mode",
+   "regla": "subjuntiu-usos",
+   "enunciat": "Si ___ (tenir) més temps, estudiaria per al C1.",
+   "opcions": [
+    "tingués",
+    "tindria",
+    "tenia"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-castellanismes-0001",
+   "nivell": "B2",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-1",
+   "enunciat": "A lo millor demà no obren l'oficina del padró.",
+   "opcions": [
+    "Potser",
+    "Igual",
+    "A lo mejor"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-castellanismes-0023",
+   "nivell": "B2",
+   "tipus": "castellanismes",
+   "punt": "frases-fetes",
+   "regla": "frases-fetes-connectors",
+   "enunciat": "Va arribar tard; sense embargo, el van deixar entrar a l'examen.",
+   "opcions": [
+    "tanmateix",
+    "sens embargo",
+    "sense embarg"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-castellanismes-0016",
+   "nivell": "B2",
+   "tipus": "castellanismes",
+   "punt": "preposicions",
+   "regla": "canvi-caiguda-preposicio",
+   "enunciat": "Estic segur de que la reunió és dijous.",
+   "opcions": [
+    "que",
+    "en que",
+    "de què"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-dictat-0001",
+   "nivell": "B2",
+   "tipus": "dictat",
+   "punt": "ortografia-accents",
+   "regla": "accents-regles",
+   "enunciat": "Els exàmens de nivell intermedi són al febrer; la inscripció s'ha de fer per internet abans que s'acabi el termini.",
+   "resposta": "Els exàmens de nivell intermedi són al febrer; la inscripció s'ha de fer per internet abans que s'acabi el termini.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-dictat-0007",
+   "nivell": "B2",
+   "tipus": "dictat",
+   "punt": "ortografia-consonants",
+   "regla": "ortografia-essa-sorda-sonora-x",
+   "enunciat": "La decisió de la metgessa va ser clara: cal passar per la caixa de la farmàcia amb la recepta i la targeta sanitària.",
+   "resposta": "La decisió de la metgessa va ser clara: cal passar per la caixa de la farmàcia amb la recepta i la targeta sanitària.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-dictat-0005",
+   "nivell": "B2",
+   "tipus": "dictat",
+   "punt": "ortografia-consonants",
+   "regla": "ortografia-b-v-g-j",
+   "enunciat": "El govern aprovarà el projecte al maig, i el viatge dels alumnes a la platja ja té pressupost.",
+   "resposta": "El govern aprovarà el projecte al maig, i el viatge dels alumnes a la platja ja té pressupost.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-lexic-0023",
+   "nivell": "B2",
+   "tipus": "lexic",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-2",
+   "enunciat": "Abans de fer el tràmit cal ___ si tens el padró al dia.",
+   "opcions": [
+    "esbrinar",
+    "averiguar",
+    "averigüar"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-lexic-0006",
+   "nivell": "B2",
+   "tipus": "lexic",
+   "punt": "lexic-precisio",
+   "regla": "lexic-parelles",
+   "enunciat": "No ___ les escombraries al carrer: hi ha contenidors a la cantonada.",
+   "opcions": [
+    "llencis",
+    "llancis",
+    "llences"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-lexic-0008",
+   "nivell": "B2",
+   "tipus": "lexic",
+   "punt": "lexic-precisio",
+   "regla": "lexic-precisio-registre",
+   "enunciat": "En una sol·licitud, la persona que la presenta és ___.",
+   "opcions": [
+    "el sol·licitant",
+    "el solicitant",
+    "el demandant"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-transformacio-0010",
+   "nivell": "B2",
+   "tipus": "transformacio",
+   "punt": "temps-mode",
+   "regla": "subjuntiu-usos",
+   "enunciat": "Passa la frase al passat: Vull que vinguis a la reunió.",
+   "resposta": [
+    "Volia que vinguessis a la reunió",
+    "Volia que vinguessis a la reunió.",
+    "Vaig voler que vinguessis a la reunió",
+    "Vaig voler que vinguessis a la reunió."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-transformacio-0002",
+   "nivell": "B2",
+   "tipus": "transformacio",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-febles-combinacions",
+   "enunciat": "Substitueix els dos complements per pronoms: Porta les claus al porter.",
+   "resposta": [
+    "Porta-les-hi",
+    "Porta-les-hi."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-transformacio-0005",
+   "nivell": "B2",
+   "tipus": "transformacio",
+   "punt": "relatius",
+   "regla": "relatius-que-que",
+   "enunciat": "Uneix les dues frases amb un relatiu: Aquesta és la casa. Hi vaig néixer.",
+   "resposta": [
+    "Aquesta és la casa on vaig néixer",
+    "Aquesta és la casa on vaig néixer.",
+    "Aquesta és la casa en què vaig néixer",
+    "Aquesta és la casa en què vaig néixer.",
+    "Aquesta és la casa en la qual vaig néixer",
+    "Aquesta és la casa en la qual vaig néixer."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-buits-0054",
+   "nivell": "C1",
+   "tipus": "buits",
+   "punt": "ser-estar",
+   "regla": "ser-estar",
+   "enunciat": "Vam ___ tres hores a urgències esperant els resultats.",
+   "opcions": [
+    "estar",
+    "ser",
+    "haver"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-buits-0012",
+   "nivell": "C1",
+   "tipus": "buits",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-ho-el",
+   "enunciat": "Que el curs comença dilluns? No ___ sabia.",
+   "opcions": [
+    "ho",
+    "el",
+    "lo",
+    "li"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-buits-0027",
+   "nivell": "C1",
+   "tipus": "buits",
+   "punt": "relatius",
+   "regla": "relatius-que-que",
+   "enunciat": "La persona ___ heu d'adreçar la sol·licitud és la cap de recursos humans.",
+   "opcions": [
+    "a qui",
+    "a la que",
+    "a què"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-castellanismes-0004",
+   "nivell": "C1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-sintaxi",
+   "regla": "calcs-sintactics",
+   "enunciat": "No podem començar la sessió, doncs falta la presidenta.",
+   "opcions": [
+    "perquè",
+    "per tant",
+    "doncs que"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-castellanismes-0003",
+   "nivell": "C1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-sintaxi",
+   "regla": "calcs-sintactics",
+   "enunciat": "Hi ha que presentar el certificat de residència abans del dia 10.",
+   "opcions": [
+    "Hi ha de",
+    "Té que",
+    "Cal"
+   ],
+   "resposta": 2,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-castellanismes-0030",
+   "nivell": "C1",
+   "tipus": "castellanismes",
+   "punt": "frases-fetes",
+   "regla": "frases-fetes-connectors",
+   "enunciat": "Donat que no hi ha pressupost, el projecte s'ajorna.",
+   "opcions": [
+    "Degut a que",
+    "Atès que",
+    "Donat a que"
+   ],
+   "resposta": 1,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-dictat-0001",
+   "nivell": "C1",
+   "tipus": "dictat",
+   "punt": "ortografia-accents",
+   "regla": "accents-regles",
+   "enunciat": "La tècnica de l'Ajuntament ens va explicar que el termini per presentar les al·legacions acabava divendres, però la convocatòria encara no s'havia publicat.",
+   "resposta": "La tècnica de l'Ajuntament ens va explicar que el termini per presentar les al·legacions acabava divendres, però la convocatòria encara no s'havia publicat.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-dictat-0010",
+   "nivell": "C1",
+   "tipus": "dictat",
+   "punt": "ortografia-consonants",
+   "regla": "ortografia-essa-sorda-sonora-x",
+   "enunciat": "Els mestres de l'escola Pompeu Fabra van organitzar una excursió a Montserrat amb seixanta alumnes de sisè i tres professores d'educació física.",
+   "resposta": "Els mestres de l'escola Pompeu Fabra van organitzar una excursió a Montserrat amb seixanta alumnes de sisè i tres professores d'educació física.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-dictat-0002",
+   "nivell": "C1",
+   "tipus": "dictat",
+   "punt": "ortografia-accents",
+   "regla": "accent-diacritic-dieresi",
+   "enunciat": "Els veïns del carrer Major són conscients que, si més no, caldrà que la comissió continuï les reunions fins que s'aprovi el pressupost.",
+   "resposta": "Els veïns del carrer Major són conscients que, si més no, caldrà que la comissió continuï les reunions fins que s'aprovi el pressupost.",
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-lexic-0016",
+   "nivell": "C1",
+   "tipus": "lexic",
+   "punt": "frases-fetes",
+   "regla": "frases-fetes-connectors",
+   "enunciat": "La proposta és interessant; ___, no tenim pressupost per aplicar-la.",
+   "opcions": [
+    "no obstant",
+    "sense embargo",
+    "això no obstant"
+   ],
+   "resposta": 2,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-lexic-0009",
+   "nivell": "C1",
+   "tipus": "lexic",
+   "punt": "lexic-precisio",
+   "regla": "lexic-precisio-registre",
+   "enunciat": "El ___ per presentar la sol·licitud de beca acaba el dia 15.",
+   "opcions": [
+    "plaç",
+    "termini",
+    "terme"
+   ],
+   "resposta": 1,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-lexic-0021",
+   "nivell": "C1",
+   "tipus": "lexic",
+   "punt": "registre-formal",
+   "regla": "registre-formal-administratiu",
+   "enunciat": "Tria la fórmula de comiat adequada per a una carta formal adreçada a l'ajuntament.",
+   "opcions": [
+    "Una abraçada,",
+    "Atentament,",
+    "Fins aviat,"
+   ],
+   "resposta": 1,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-transformacio-0011",
+   "nivell": "C1",
+   "tipus": "transformacio",
+   "punt": "registre-formal",
+   "regla": "registre-formal-administratiu",
+   "enunciat": "Canvia el tractament de tu a vós: Et comuniquem que la teva sol·licitud ha estat admesa.",
+   "resposta": [
+    "Us comuniquem que la vostra sol·licitud ha estat admesa."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-transformacio-0015",
+   "nivell": "C1",
+   "tipus": "transformacio",
+   "punt": "temps-mode",
+   "regla": "subjuntiu-usos",
+   "enunciat": "Passa la frase al futur mantenint la conjunció 'quan': Quan tinc els resultats, us truco.",
+   "resposta": [
+    "Quan tingui els resultats, us trucaré."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-transformacio-0009",
+   "nivell": "C1",
+   "tipus": "transformacio",
+   "punt": "pronoms-febles",
+   "regla": "pronoms-ho-el",
+   "enunciat": "Substitueix 'que el termini s'havia acabat' per un pronom feble: No sabíem que el termini s'havia acabat.",
+   "resposta": [
+    "No ho sabíem."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-buits-0047",
+   "nivell": "C1",
+   "tipus": "buits",
+   "punt": "ortografia-accents",
+   "regla": "accent-diacritic-dieresi",
+   "enunciat": "La reunió ___ a les deu i acabarà a les dotze.",
+   "opcions": [
+    "és",
+    "es",
+    "ès"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-buits-0023",
+   "nivell": "B2",
+   "tipus": "buits",
+   "punt": "preposicions",
+   "regla": "canvi-caiguda-preposicio",
+   "enunciat": "Els propietaris insisteixen ___ cobrar la fiança abans de signar.",
+   "opcions": [
+    "a",
+    "en",
+    "amb"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-transformacio-0006",
+   "nivell": "B2",
+   "tipus": "transformacio",
+   "punt": "relatius",
+   "regla": "relatius-que-que",
+   "enunciat": "Uneix les dues frases amb un relatiu: És un tema. En parlem sovint.",
+   "resposta": [
+    "És un tema de què parlem sovint",
+    "És un tema de què parlem sovint.",
+    "És un tema del qual parlem sovint",
+    "És un tema del qual parlem sovint."
+   ],
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "b2-buits-0034",
+   "nivell": "B2",
+   "tipus": "buits",
+   "punt": "temps-mode",
+   "regla": "subjuntiu-usos",
+   "enunciat": "Encara que ___ (ploure), anirem a la manifestació.",
+   "opcions": [
+    "plogui",
+    "plou",
+    "plourà"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  },
+  {
+   "id": "c1-castellanismes-0019",
+   "nivell": "C1",
+   "tipus": "castellanismes",
+   "punt": "castellanismes-lexic",
+   "regla": "barbarismes-lexic-2",
+   "enunciat": "El sindicat recolza la vaga de dilluns.",
+   "opcions": [
+    "dona suport a",
+    "recolza a",
+    "suporta"
+   ],
+   "resposta": 0,
+   "estat": "pendent",
+   "correccio": "",
+   "nota": ""
+  }
+ ]
+}

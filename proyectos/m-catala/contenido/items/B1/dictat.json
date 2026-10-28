@@ -1,6 +1,6 @@
 [
   { "id": "b1-dictat-0001", "nivell": "B1", "area": "us", "tipus": "dictat", "punt": "ortografia-accents", "regla": "accents-regles", "dificultat": 0.0,
-    "text": "Els exàmens de català són el dissabte a la tarda, a l'escola d'adults de Lleida.", "resposta": "Els exàmens de català són el dissabte a la tarda, a l'escola d'adults de Lleida.", "focus": ["accent obert i tancat", "exàmens", "català", "són"],
+    "text": "Els exàmens de català són dissabte a la tarda, a l'escola d'adults de Lleida.", "resposta": "Els exàmens de català són dissabte a la tarda, a l'escola d'adults de Lleida.", "focus": ["accent obert i tancat", "exàmens", "català", "són"],
     "diagnostic": true, "gratis": true, "revisio": "sessio" },
   { "id": "b1-dictat-0002", "nivell": "B1", "area": "us", "tipus": "dictat", "punt": "apostrof-contraccions", "regla": "apostrof-article", "dificultat": 0.2,
     "text": "L'aigua de l'aixeta és bona, però la universitat recomana beure'n amb mesura.", "resposta": "L'aigua de l'aixeta és bona, però la universitat recomana beure'n amb mesura.", "focus": ["apòstrof", "la universitat sense apòstrof", "beure'n"],

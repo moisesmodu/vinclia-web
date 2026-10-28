@@ -57,7 +57,11 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
   const textCo: TextCL | undefined = textosCo[0];
   const preguntesL = textL?.preguntes.slice(0, 5) ?? [];
   const preguntesCo = textCo?.preguntes.slice(0, 4) ?? [];
-  const tascaDiag = useMemo(() => tasques.filter((x) => x.nivell === nivell).sort((a, b) => a.paraulesMin - b.paraulesMin)[0], [tasques, nivell]);
+  // Text breu del diagnòstic (uns 4 minuts): la tasca del nivell més curta a B1; a B2 i C1 una consigna pròpia de 70–100 paraules.
+  const tascaDiag = useMemo(() => (nivell === 'B1' ? tasques.filter((x) => x.nivell === 'B1').sort((a, b) => a.paraulesMin - b.paraulesMin)[0] : undefined), [tasques, nivell]);
+  const consignaDiag = nivell === 'B2'
+    ? { ca: 'Escriu una nota informativa de 70 a 100 paraules per als veïns de la teva escala: hi haurà obres a l\'ascensor la setmana vinent. Digues quins dies, què cal fer amb les escombraries i a qui s\'ha de trucar si hi ha cap problema.', es: 'Escribe una nota informativa de 70 a 100 palabras para los vecinos de tu escalera: habrá obras en el ascensor la semana que viene. Di qué días, qué hay que hacer con la basura y a quién hay que llamar si hay algún problema.' }
+    : { ca: 'Escriu un paràgraf d\'opinió de 80 a 110 paraules, en registre formal, sobre aquesta afirmació: «Les administracions haurien d\'oferir tots els tràmits en línia i tancar l\'atenció presencial». Pren posició i dona dos arguments.', es: 'Escribe un párrafo de opinión de 80 a 110 palabras, en registro formal, sobre esta afirmación: «Les administracions haurien d\'oferir tots els tràmits en línia i tancar l\'atenció presencial». Toma posición y da dos argumentos.' };
   const lecturaOral = useMemo(() => lectures.find((l) => l.nivell === nivell) ?? lectures[0], [lectures, nivell]);
 
   const respondreUs = (correcte: boolean) => {
@@ -116,7 +120,7 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
   };
 
   const paraules = text.trim().split(/\s+/).filter(Boolean).length;
-  const minEscrit = Math.max(40, Math.round((tascaDiag?.paraulesMin ?? 80) * 0.6));
+  const minEscrit = tascaDiag ? Math.max(40, Math.round(tascaDiag.paraulesMin * 0.6)) : 50;
 
   return (
     <div className="contenedor py-6">
@@ -132,8 +136,8 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
 
       {bloc === 'escrit' ? (
         <div className="tarjeta">
-          <p className="text-sm font-semibold text-suave">{tascaDiag?.titol}</p>
-          <p className="mt-1 leading-relaxed">{tascaDiag?.enunciat ?? (idioma === 'ca' ? 'Escriu un correu breu a un company de feina per demanar-li un canvi de torn. Explica el motiu i proposa dues dates.' : 'Escribe un correo breve a un compañero de trabajo para pedirle un cambio de turno. Explica el motivo y propón dos fechas.')}</p>
+          <p className="text-sm font-semibold text-suave">{tascaDiag?.titol ?? d.bloc.escrit}</p>
+          <p className="mt-1 leading-relaxed">{tascaDiag?.enunciat ?? consignaDiag[idioma]}</p>
           <p className="mt-1 text-xs text-suave">{t(idioma).escriure.minimParaules(minEscrit)} · {idioma === 'ca' ? 'uns 4 minuts' : 'unos 4 minutos'}</p>
           <textarea className="campo mt-3 min-h-44" value={text} onChange={(e) => setText(e.target.value)} lang="ca" placeholder={d.escriu} />
           <div className="mt-2 flex items-center justify-between text-sm text-suave"><span>{paraules} {d.paraules}</span></div>

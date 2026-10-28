@@ -9,10 +9,13 @@ export async function carregarBanc(nivell: Nivell): Promise<BancClient> {
   const m = mem.get(nivell);
   if (m) return m;
   const clau = `aprova:banc:${nivell}`;
-  try {
-    const r = await fetch(`/api/banc?nivell=${nivell}`);
-    if (r.ok) { const j = (await r.json()) as BancClient; mem.set(nivell, j); try { localStorage.setItem(clau, JSON.stringify(j)); } catch {} return j; }
-  } catch {}
+  for (let intent = 0; intent < 3; intent++) {
+    try {
+      const r = await fetch(`/api/banc?nivell=${nivell}`);
+      if (r.ok) { const j = (await r.json()) as BancClient; if (j.items?.length) { mem.set(nivell, j); try { localStorage.setItem(clau, JSON.stringify(j)); } catch {} return j; } }
+    } catch {}
+    await new Promise((res) => setTimeout(res, 1200 * (intent + 1)));
+  }
   try { const raw = localStorage.getItem(clau); if (raw) { const j = JSON.parse(raw) as BancClient; mem.set(nivell, j); return j; } } catch {}
   return { nivell, premium: false, total: 0, items: [], regles: {}, textos: [], actualitzat: '' };
 }

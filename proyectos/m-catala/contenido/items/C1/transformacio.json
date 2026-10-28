@@ -69,7 +69,7 @@
     "enunciat": "Substitueix 'el que' per una forma correcta de relatiu neutre: Van tancar el CAP del barri, el que va indignar els veïns.", "resposta": ["Van tancar el CAP del barri, cosa que va indignar els veïns.", "Van tancar el CAP del barri, la qual cosa va indignar els veïns.", "Van tancar el CAP del barri, fet que va indignar els veïns."],
     "diagnostic": false, "gratis": false, "revisio": "sessio" },
   { "id": "c1-transformacio-0024", "nivell": "C1", "area": "us", "tipus": "transformacio", "punt": "castellanismes-sintaxi", "regla": "calcs-sintactics", "dificultat": 0.7,
-    "enunciat": "Corregeix els dos calcs de la frase (l'obligació i l'article neutre): Tinc que acabar lo més urgent avui.", "resposta": ["He d'acabar el més urgent avui.", "He d'acabar allò més urgent avui.", "Avui he d'acabar el més urgent.", "Avui he d'acabar allò més urgent."],
+    "enunciat": "Corregeix els dos calcs de la frase (l'obligació i l'article neutre): Tinc que acabar lo més urgent avui.", "resposta": ["He d'acabar el més urgent avui.", "He d'acabar el que és més urgent avui.", "Avui he d'acabar el més urgent.", "Avui he d'acabar el que és més urgent."],
     "diagnostic": true, "gratis": true, "revisio": "sessio" },
   { "id": "c1-transformacio-0025", "nivell": "C1", "area": "us", "tipus": "transformacio", "punt": "castellanismes-sintaxi", "regla": "calcs-sintactics-2", "dificultat": 0.5,
     "enunciat": "Corregeix el calc de la construcció temporal: Al arribar a casa, truca'm.", "resposta": ["En arribar a casa, truca'm."],
