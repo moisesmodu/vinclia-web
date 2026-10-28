@@ -1,0 +1,42 @@
+{
+  "pais": "ES",
+  "nombre": "España",
+  "moneda": "EUR",
+  "idiomas": ["es", "ca"],
+  "idiomaPorDefecto": "es",
+  "precios": {
+    "pdf": 790,
+    "tapaDura": 3690
+  },
+  "notaPrecio": "Tapa dura subida de 34,90 a 36,90 € (envío incluido) para mantener 9 € de margen con el coste estimado de Gelato; revisar con `npm run cotizar` cuando haya clave.",
+  "costesEstimados": {
+    "impresionTapaDura": 1760,
+    "envioTapaDura": 600,
+    "ilustracionesPorCuento": 190,
+    "textoPorCuento": 5,
+    "stripePorcentaje": 1.5,
+    "stripeFijo": 25
+  },
+  "margenMinimo": 900,
+  "iva": { "libros": 4 },
+  "envioIncluido": true,
+  "imprenta": {
+    "proveedor": "gelato",
+    "productUid": "photobooks-hardcover_pf_200x200-mm-8x8-inch_pt_170-gsm-65lb-coated-silk_cl_4-4_ccl_4-4_bt_glued-left_ct_matt-lamination_prt_1-0_cpt_130-gsm-65-lb-cover-coated-silk_ver",
+    "paginasInterior": 28,
+    "metodoEnvio": "normal"
+  },
+  "fechasLimite": {
+    "navidadTapaDura": "2026-12-14",
+    "reyesTapaDura": "2026-12-28",
+    "pdf": "siempre: llega en menos de 2 horas"
+  },
+  "afiliados": { "comisionPorcentaje": 20, "cookieDias": 30, "pagoMinimoCents": 2000 },
+  "legal": {
+    "titular": "Moisés Mora",
+    "nif": "[NIF de Moisés]",
+    "domicilio": "Lleida, España",
+    "email": "hola@numimates.com",
+    "jurisdiccion": "Lleida"
+  }
+}

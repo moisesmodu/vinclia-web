@@ -56,7 +56,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md",
@@ -278,7 +278,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
@@ -502,7 +502,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión B",
@@ -750,7 +750,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Sesión del Mac: redesplegar juegos-casuales con la marca (DESPLIEGUE.md, «Redespliegue pendiente»)",
       "Segundo juego con la plantilla",
@@ -1052,7 +1052,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión M con el prompt nuevo (sesión 1: diagnóstico, plan, práctica, corrección escrita, simulacros B1 a C1)",
@@ -1364,19 +1364,21 @@
     "letra": "G",
     "nombre": "Cuentos personalizados",
     "marca": "Lunilla",
-    "resumen": "Cuentos infantiles ilustrados y personalizados, en PDF e impresos bajo demanda. Tienda abierta el 15/11 para Navidad.",
-    "estado": "en construcción",
+    "resumen": "Lunilla: cuentos ilustrados y personalizados en castellano y catalán, PDF en menos de 2 horas o tapa dura. Tienda construida y probada de punta a punta en modo simulado; falta pegar claves para abrir el 15/11.",
+    "estado": "lanzado",
     "orden": 6,
     "fechaLimite": "2026-11-15",
-    "modelo": "PDF 7,90 € · impreso 34,90 €",
-    "margenCliente": 9,
+    "modelo": "PDF 7,90 € · tapa dura 36,90 € con envío incluido",
+    "margenCliente": 10,
     "objetivoMes12": 100,
     "ingresosMes": 0,
     "costesMes": 0,
     "clientes": 0,
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
-      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/g-cuentos/proyectos/g-cuentos",
+      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5",
+      "demo": "https://lunilla.vercel.app"
     },
     "acciones": [
       {
@@ -1401,31 +1403,59 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Tienda «Lunilla» de cuentos personalizados (es/ca) construida y probada de punta a punta en modo simulado; apertura prevista el 15/11 (PR #5)"
+        "texto": "Marca Lunilla, 2 protagonistas con hoja de personaje y 4 plantillas de 12 páginas en castellano y catalán (17 miedos y valores)"
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Pedido a la sesión: sustituir las tareas de Neon/Stripe/Vercel de PARA-MOISES por un DESPLIEGUE.md para la sesión del Mac"
+        "texto": "2 cuentos de muestra completos ilustrados con Higgsfield (56 de 80 créditos) y maquetación a PDF de imprenta con sangrado y cubierta"
       },
       {
         "fecha": "2026-10-28",
-        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac (Neon «cartera-g-cuentos», Vercel, Stripe de prueba, Resend). Precios: PDF 7,90 €, tapa dura 36,90 € con envío (margen ≥ 9 €; se confirma con la cotización real de Gelato)"
+        "texto": "Tienda completa: vista previa gratis, Stripe, webhook, correo, pedido a Gelato, afiliadas al 20 %, 23 páginas SEO, legales y panel de administración"
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+        "texto": "Prueba de punta a punta superada en modo simulado (pago, PDF, pedido a imprenta en borrador, comisión de afiliada)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Adaptado a DESPLIEGUES.md: Stripe de Numi Mates con productos por script repetible y DESPLIEGUE.md para la sesión del Mac (el entorno en la nube no llega a Stripe, Vercel ni Neon)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "PR #5 con proyectos/g-cuentos/DESPLIEGUE.md listo para la sesión del Mac",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en producción (https://lunilla.vercel.app) desde la sesión del Mac: proyecto de Vercel lunilla (cron cada 5 min, plan Pro), Neon cartera-g-cuentos (Londres), Vercel Blob público lunilla-archivos (París), Stripe en el entorno de prueba de Numi Mates (PDF 7,90 € y tapa dura 36,90 € y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478). Imprenta en «simulado» hasta tener GELATO_API_KEY."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca aplicada: nombre, promesa, colores, Baloo 2 y Nunito, logotipo e icono, sello en el pie y pantalla de precio (MARCAS.md); Lunilla con bufanda en portadas y última página, con frase final para decir juntos",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Portada rediseñada tras estudiar a la competencia: portada del libro que se personaliza en vivo, las 12 dobles páginas de las muestras con lo personalizado resaltado, qué cambia, colecciones por necesidad, precio y producto con fotos, fechas de Navidad y Reyes, Lunilla, comparativa, garantías, ocasiones, 10 preguntas y barra fija en móvil",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Libros más largos y por edades: 8 historias distintas (4 colecciones × 2 edades), 18 páginas ilustradas de 2 a 4 años y 22 de 5 a 8, cada página con su ilustración; creador en 4 pasos con avatar en vivo (piel, pelo, peinado, gafas, pecas, color favorito), su gente, su mejor amigo y un detalle único que teje la IA; texto editable antes de pagar; ficha, diploma y páginas para la familia en el libro; secciones nuevas «para cada edad» y «tú decides» en la portada",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
-      "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
+      "Sesión del Mac: redesplegar los libros de 18/22 páginas (DESPLIEGUE.md) y GELATO_API_KEY en Vercel",
+      "Pago de prueba con la tarjeta 4242 en https://lunilla.vercel.app y pedido a Gelato en borrador (npm run prueba:e2e con URL_BASE de producción)",
+      "npm run cotizar para fijar el precio de la tapa dura (36,90 € con el coste estimado)",
+      "Crear las 3 tareas programadas",
       "Apertura el 15/11"
     ],
     "paraMoises": [
-      "Cuenta en Gelato (imprenta) con clave de API",
+      "Gelato: crear la cuenta y la clave de API (y la tarjeta al abrir)",
       "Comprar el dominio (lunilla.es, contelunilla.com o cuentoslunilla.es)",
       "NIF para los textos legales"
     ],
@@ -1434,7 +1464,10 @@
       "Posicionar el catalán como diferencial: landing y SEO en 'conte personalitzat', acuerdos con escoles bressol, AMPAs y llibreries.",
       "Añadir audiocuento narrado incluido en el PDF mediante QR; coste casi nulo y casi nadie lo ofrece.",
       "Vista previa gratuita de 2 o 3 páginas antes de pagar para reducir el abandono.",
-      "Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez."
+      "Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez.",
+      "Si Higgsfield publica una API estable, ilustrar en el servidor y entregar el PDF en minutos en vez de en menos de 2 horas.",
+      "Si las afiliadas venden sobre todo tapa dura, bajar su comisión en ese formato al 15 % (margen con afiliada ≈2,65 €).",
+      "Más protagonistas (tonos de piel y pelo) con su hoja de personaje."
     ],
     "competidores": [
       {
@@ -1478,6 +1511,24 @@
         "url": "https://librio.com/en/personalized-childrens-books",
         "precio": "no verificado (ofrece catalán, euskera y gallego)",
         "debilidad": "Único con catalán, pero envío internacional y sin IA"
+      },
+      {
+        "nombre": "Nubara (España, IA)",
+        "url": "https://nubara.app",
+        "precio": "E-book desde 7,90 €, entrega digital en 24 h",
+        "debilidad": "Competidor directo en precio; tarda 24 h frente a menos de 2 h"
+      },
+      {
+        "nombre": "Hooray Heroes",
+        "url": "https://hoorayheroes.com",
+        "precio": "Unos 40 $ con descuentos tachados",
+        "debilidad": "Historias muy anglosajonas, sin catalán; se vende como hecho por humanos frente a la IA"
+      },
+      {
+        "nombre": "I See Me!",
+        "url": "https://www.iseeme.com",
+        "precio": "no verificado",
+        "debilidad": "En inglés; los clientes valoran revisar la versión final antes de pagar (lo copiamos con la vista previa)"
       }
     ],
     "repos": [
@@ -1522,6 +1573,20 @@
         "licencia": "no verificado",
         "uso": "Envoltorio de la API de impresión de Lulu (costes, envío, pedidos)",
         "estrellas": ""
+      },
+      {
+        "nombre": "Hopding/pdf-lib",
+        "url": "https://github.com/Hopding/pdf-lib",
+        "licencia": "MIT",
+        "uso": "Usado: interior de 28 páginas con TrimBox/BleedBox y pliego de cubierta con lomo",
+        "estrellas": "8.400"
+      },
+      {
+        "nombre": "SIL Andika (Google Fonts)",
+        "url": "https://github.com/google/fonts/tree/main/ofl/andika",
+        "licencia": "OFL",
+        "uso": "Usada: tipografía diseñada para lectores que empiezan",
+        "estrellas": ""
       }
     ],
     "hallazgos": [
@@ -1530,7 +1595,14 @@
       "Costes de impresión no oficiales: Peecho tapa dura desde 5,20 €, Gelato fotolibro tapa dura de 12 a 19 $ con producción en España, Lulu de 11 a 15 $. Margen bruto estimado sobre 34,90 €: de 12 a 22 € antes de envío (3 a 6 €) y pasarela. Confirmar por la API de precios de Gelato.",
       "Plazos: la ventana real de venta de tapa dura acaba hacia el 10 o 14 de diciembre por las fechas límite de Gelato; después solo PDF.",
       "Gasto navideño en regalos en España: de 462 a 580 € por hogar, con tendencia al regalo con componente emocional.",
-      "Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad."
+      "Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad.",
+      "Gelato exige un mínimo de 28 páginas interiores en el fotolibro de tapa dura y no tiene sandbox: los pedidos «draft» no se producen ni se cobran y sirven de prueba.",
+      "Las webs de Gelato y Lulu no son accesibles desde el entorno de las sesiones: el precio real (estimado 17,60 € + 6 € de envío) se confirma con npm run cotizar al tener la clave.",
+      "Con la estimación, 34,90 € dejaba 9,2 € de margen sin colchón: se sube a 36,90 € con envío incluido (≈10 €), aún por debajo de Aventopía (43,99 €).",
+      "Cada cuento ilustrado gasta unos 26 créditos de Higgsfield (Nano Banana Pro 2k, 13 imágenes): unos 30 cuentos al mes caben en el saldo actual; más exige recargar.",
+      "La API pública de Higgsfield no está documentada de forma verificable: la ilustración por pedido la hace una tarea programada horaria con el conector.",
+      "Desde este contenedor el proxy bloquea upload.higgsfield.ai: no se pueden subir imágenes propias (el logotipo) como referencia; la hoja de Lunilla se generó por descripción.",
+      "Wonderbly enseña todas las páginas antes de comprar, anuncia fechas límite de Navidad por país y ofrece 20 % en el segundo regalo; copiado: interior completo de las muestras en la portada, fechas límite con cuenta atrás y código HERMANOS20."
     ],
     "lider": {
       "nombre": "Wonderbly (y Aventopía como competidor local)",
@@ -1666,7 +1738,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión I: 5 títulos y pipeline"
@@ -1908,7 +1980,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Terminar los vídeos y abrir el PR",
@@ -2137,7 +2209,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión L después de B"
@@ -2363,7 +2435,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión O"
@@ -2615,7 +2687,7 @@
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
+      "Stripe en modo real (cuenta Numi Mates) y un pago real reembolsado; primer euro antes del 11/11 (MONETIZACION.md)",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
