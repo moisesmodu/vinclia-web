@@ -54,7 +54,7 @@ raíz, 0,64 MB). Portadas: `portadas/`. Capturas 1920×1080: `capturas/`.
 
 ### Poki (developers.poki.com → Submit a game)
 Poki revisa a mano y lo primero que pide es **un enlace jugable**. Enviar la URL de Vercel
-(`https://juegos-casuales.vercel.app/egg-truck/`, ver `DESPLIEGUE.md`) y, cuando lo acepten, subir `egg-truck-poki.zip` a su Poki for Developers.
+(`https://juegos-casuales.vercel.app/egg-truck/`, ya desplegada) y, cuando lo acepten, subir `egg-truck-poki.zip` a su Poki for Developers.
 - Requisitos cumplidos: SDK de Poki como único sistema de anuncios; `gameLoadingFinished`; `gameplayStart/Stop`;
   `commercialBreak` antes de cada partida salvo la primera; `rewardedBreak` opcional; sin compras ni enlaces externos;
   16:9 adaptable; descarga inicial de 1,6 MB (límite 8 MB); funciona con bloqueador de anuncios.

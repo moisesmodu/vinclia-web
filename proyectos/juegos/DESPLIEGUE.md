@@ -34,3 +34,5 @@ vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
 - Anotar la URL en `panel/data/proyectos.json` (ficha `juegos`, `enlaces.Web`) y en `fichas/egg-truck/FICHAS.md`
   (apartado Poki: es el enlace que se envía a Poki).
 - Añadir al final de este archivo: `Ejecutado el <fecha>`.
+
+Ejecutado el 28/10/2026 desde la sesión del Mac: https://juegos-casuales.vercel.app/egg-truck/ (proyecto Vercel `juegos-casuales`, `SITE_URL` en production).

@@ -2,3 +2,5 @@ node_modules
 dist
 dist-portales
 *.local
+.vercel
+.env*
