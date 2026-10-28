@@ -1,0 +1,1576 @@
+{
+  "5010": {
+    "es": {
+      "explicacion": "En España, el límite general de alcohol para conducir es 0,5 gramos por litro en sangre. Para conductores noveles y profesionales el límite es más bajo: 0,3 g/l. Truco: recuerda «medio gramo», es decir, 0,5.",
+      "nota": "Para el examen vale 0,5 g/l, que es el límite general, aunque los conductores noveles y profesionales tienen un límite más bajo, de 0,3 g/l."
+    },
+    "ar": {
+      "texto": "ما هو الحد الأقصى المسموح به لنسبة الكحول في الدم للسائقين، بالغرام لكل لتر (g/l)؟",
+      "opciones": [
+        "0,5.",
+        "0,7.",
+        "0,9."
+      ],
+      "explicacion": "في إسبانيا، الحد العام لنسبة الكحول في الدم أثناء القيادة هو 0,5 غرام لكل لتر. أما السائقون الجدد والسائقون المحترفون فحدّهم أقل: 0,3 غرام لكل لتر. للتذكر: «نصف غرام» أي 0,5.",
+      "nota": "في الامتحان الجواب الصحيح هو 0,5 غ/ل لأنه الحد العام، مع أن السائقين الجدد والمحترفين لهم حد أقل يبلغ 0,3 غ/ل."
+    },
+    "fr": {
+      "texto": "Quel est le taux maximal d'alcool dans le sang autorisé pour les conducteurs, en grammes par litre (g/l) ?",
+      "opciones": [
+        "0,5.",
+        "0,7.",
+        "0,9."
+      ],
+      "explicacion": "En Espagne, la limite générale d'alcool pour conduire est de 0,5 gramme par litre de sang. Pour les conducteurs novices et professionnels, la limite est plus basse : 0,3 g/l. Astuce : pensez à « un demi-gramme », c'est-à-dire 0,5.",
+      "nota": "Pour l'examen, la bonne réponse est 0,5 g/l, la limite générale, même si les conducteurs novices et professionnels ont une limite plus basse de 0,3 g/l."
+    },
+    "en": {
+      "texto": "What is the maximum blood alcohol level allowed for drivers, in grams per litre (g/l)?",
+      "opciones": [
+        "0.5.",
+        "0.7.",
+        "0.9."
+      ],
+      "explicacion": "In Spain, the general blood alcohol limit for driving is 0.5 grams per litre. For new drivers and professional drivers the limit is lower: 0.3 g/l. Tip: remember «half a gram», which is 0.5 (written «0,5» in Spanish).",
+      "nota": "For the exam the answer is 0.5 g/l, the general limit, although new and professional drivers have a lower limit of 0.3 g/l."
+    },
+    "ro": {
+      "texto": "Care este nivelul maxim de alcool în sânge permis șoferilor, în grame pe litru (g/l)?",
+      "opciones": [
+        "0,5.",
+        "0,7.",
+        "0,9."
+      ],
+      "explicacion": "În Spania, limita generală de alcool în sânge pentru a conduce este de 0,5 grame pe litru. Pentru șoferii începători și profesioniști limita este mai mică: 0,3 g/l. Truc: gândește-te la «o jumătate de gram», adică 0,5.",
+      "nota": "La examen răspunsul corect este 0,5 g/l, limita generală, deși șoferii începători și profesioniști au o limită mai mică, de 0,3 g/l."
+    },
+    "zh": {
+      "texto": "驾驶员血液中允许的最高酒精含量是多少（单位：克/升，g/l）？",
+      "opciones": [
+        "0.5。",
+        "0.7。",
+        "0.9。"
+      ],
+      "explicacion": "在西班牙，驾驶时血液酒精含量的一般上限是每升0.5克（西班牙语写作«0,5»）。新手司机和职业司机的上限更低，为每升0.3克。记忆技巧：想成«半克»，也就是0.5。",
+      "nota": "考试时以手册答案0.5克/升为准，这是一般上限；新手司机和职业司机的上限更低，为0.3克/升。"
+    },
+    "uk": {
+      "texto": "Який максимально допустимий рівень алкоголю в крові для водіїв, у грамах на літр (g/l)?",
+      "opciones": [
+        "0,5.",
+        "0,7.",
+        "0,9."
+      ],
+      "explicacion": "В Іспанії загальна межа алкоголю в крові для водіння становить 0,5 грама на літр. Для водіїв-початківців і професійних водіїв межа нижча: 0,3 г/л. Підказка: запам'ятайте «пів грама», тобто 0,5 (іспанською «0,5»).",
+      "nota": "На іспиті правильна відповідь 0,5 г/л, це загальна межа, хоча для водіїв-початківців і професійних водіїв діє нижча межа 0,3 г/л."
+    },
+    "revision": {
+      "ok": false,
+      "motivo": "0,5 g/l es solo el límite general: noveles (menos de dos años de carné) y conductores profesionales tienen 0,3 g/l, y se ha propuesto rebajar el límite general; la pregunta no distingue."
+    }
+  },
+  "5011": {
+    "es": {
+      "explicacion": "La mayoría de las personas en España vive en pisos, es decir, viviendas dentro de un edificio con vecinos. Las casas rurales y los chalés independientes son menos habituales, sobre todo en las ciudades. Truco: en España se habla mucho de «comunidad de vecinos» porque casi todos viven en un «piso»."
+    },
+    "ar": {
+      "texto": "ما هو نوع السكن الأكثر شيوعاً في إسبانيا؟",
+      "opciones": [
+        "بيت ريفي (Casa rural).",
+        "شقة في عمارة سكنية (Piso en un edificio de viviendas).",
+        "فيلا مستقلة (Chalé independiente)."
+      ],
+      "explicacion": "يعيش معظم الناس في إسبانيا في شقق، أي مساكن داخل عمارة فيها جيران. البيوت الريفية والفيلات المستقلة أقل انتشاراً، خاصة في المدن. للتذكر: الشقة بالإسبانية «piso»، ولهذا يُتحدث كثيراً عن «comunidad de vecinos» أي جمعية سكان العمارة."
+    },
+    "fr": {
+      "texto": "Quel est le type de logement le plus courant en Espagne ?",
+      "opciones": [
+        "Maison à la campagne.",
+        "Appartement dans un immeuble d'habitation.",
+        "Maison individuelle (chalet)."
+      ],
+      "explicacion": "La plupart des gens en Espagne vivent en appartement, dans un immeuble avec des voisins. Les maisons de campagne et les maisons individuelles sont moins fréquentes, surtout en ville. Astuce : l'appartement se dit « piso », et on parle souvent de « comunidad de vecinos » (copropriété)."
+    },
+    "en": {
+      "texto": "What is the most common type of home in Spain?",
+      "opciones": [
+        "Country house.",
+        "Flat in an apartment building.",
+        "Detached house (chalet)."
+      ],
+      "explicacion": "Most people in Spain live in flats, that is, homes inside a building shared with neighbours. Country houses and detached houses are less common, especially in cities. Tip: a flat is a «piso», and that is why Spaniards talk so much about the «comunidad de vecinos» (residents' association)."
+    },
+    "ro": {
+      "texto": "Care este cel mai obișnuit tip de locuință în Spania?",
+      "opciones": [
+        "Casă la țară.",
+        "Apartament într-un bloc de locuințe.",
+        "Vilă individuală."
+      ],
+      "explicacion": "Majoritatea oamenilor din Spania locuiesc la apartament, adică într-un bloc cu vecini. Casele de la țară și vilele individuale sunt mai rare, mai ales în orașe. Truc: apartamentul se numește «piso» și de aceea se vorbește mult despre «comunidad de vecinos» (asociația de proprietari)."
+    },
+    "zh": {
+      "texto": "西班牙最常见的住宅类型是什么？",
+      "opciones": [
+        "乡村房屋。",
+        "住宅楼里的公寓。",
+        "独栋别墅。"
+      ],
+      "explicacion": "西班牙大多数人住在公寓里，也就是和邻居同住一栋楼。乡村房屋和独栋别墅比较少见，在城市里尤其少。记忆技巧：公寓叫«piso»，所以西班牙人常说«comunidad de vecinos»（业主委员会/邻里共同体）。"
+    },
+    "uk": {
+      "texto": "Який тип житла найпоширеніший в Іспанії?",
+      "opciones": [
+        "Сільський будинок.",
+        "Квартира в багатоквартирному будинку.",
+        "Окремий приватний будинок (шале)."
+      ],
+      "explicacion": "Більшість людей в Іспанії живе у квартирах, тобто в будинку разом із сусідами. Сільські будинки та окремі приватні будинки трапляються рідше, особливо в містах. Підказка: квартира іспанською «piso», тому так часто говорять про «comunidad de vecinos» (об'єднання мешканців будинку)."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5012": {
+    "es": {
+      "explicacion": "Andalucía es la mayor productora de aceite de oliva de España y del mundo; en Jaén, por ejemplo, hay millones de olivos. Cantabria es conocida por sus productos lácteos y La Rioja por su vino. Truco: piensa en los olivos del sur, en «Andalucía»."
+    },
+    "ar": {
+      "texto": "أي منطقة حكم ذاتي (comunidad autónoma) معروفة بجودة زيت الزيتون فيها؟",
+      "opciones": [
+        "كانتابريا (Cantabria).",
+        "الأندلس (Andalucía).",
+        "لا ريوخا (La Rioja)."
+      ],
+      "explicacion": "«Andalucía» (الأندلس) هي أكبر منتج لزيت الزيتون في إسبانيا وفي العالم، ففي مقاطعة خاين (Jaén) مثلاً ملايين أشجار الزيتون. أما كانتابريا فمعروفة بمنتجات الحليب، ولا ريوخا بالنبيذ. للتذكر: فكّر في أشجار الزيتون في الجنوب."
+    },
+    "fr": {
+      "texto": "Quelle communauté autonome est connue pour la qualité de son huile d'olive ?",
+      "opciones": [
+        "Cantabrie (Cantabria).",
+        "Andalousie (Andalucía).",
+        "La Rioja."
+      ],
+      "explicacion": "L'Andalousie, « Andalucía », est la première productrice d'huile d'olive d'Espagne et du monde ; la province de Jaén compte des millions d'oliviers. La Cantabrie est connue pour ses produits laitiers et La Rioja pour son vin. Astuce : pensez aux oliviers du sud."
+    },
+    "en": {
+      "texto": "Which autonomous community is known for the quality of its olive oil?",
+      "opciones": [
+        "Cantabria.",
+        "Andalusia (Andalucía).",
+        "La Rioja."
+      ],
+      "explicacion": "«Andalucía» (Andalusia) is the largest olive oil producer in Spain and in the world; the province of Jaén alone has millions of olive trees. Cantabria is known for dairy products and La Rioja for its wine. Tip: think of the olive groves of the south."
+    },
+    "ro": {
+      "texto": "Ce comunitate autonomă este cunoscută pentru calitatea uleiului său de măsline?",
+      "opciones": [
+        "Cantabria.",
+        "Andaluzia (Andalucía).",
+        "La Rioja."
+      ],
+      "explicacion": "«Andalucía» (Andaluzia) este cel mai mare producător de ulei de măsline din Spania și din lume; în provincia Jaén sunt milioane de măslini. Cantabria este cunoscută pentru produsele lactate, iar La Rioja pentru vin. Truc: gândește-te la măslinii din sud."
+    },
+    "zh": {
+      "texto": "哪个自治区以优质橄榄油闻名？",
+      "opciones": [
+        "坎塔布里亚（Cantabria）。",
+        "安达卢西亚（Andalucía）。",
+        "拉里奥哈（La Rioja）。"
+      ],
+      "explicacion": "«Andalucía»（安达卢西亚）是西班牙乃至全世界最大的橄榄油产区，仅哈恩省（Jaén）就有数百万棵橄榄树。坎塔布里亚以乳制品闻名，拉里奥哈以葡萄酒闻名。记忆技巧：想想南方大片的橄榄林。"
+    },
+    "uk": {
+      "texto": "Яка автономна спільнота відома якістю своєї оливкової олії?",
+      "opciones": [
+        "Кантабрія (Cantabria).",
+        "Андалусія (Andalucía).",
+        "Ла-Ріоха (La Rioja)."
+      ],
+      "explicacion": "«Andalucía» (Андалусія) найбільший виробник оливкової олії в Іспанії та у світі; лише в провінції Хаен (Jaén) мільйони оливкових дерев. Кантабрія відома молочними продуктами, а Ла-Ріоха вином. Підказка: згадайте оливкові гаї на півдні."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5013": {
+    "es": {
+      "explicacion": "La «ITV» (Inspección Técnica de Vehículos) es la revisión obligatoria que comprueba que un coche es seguro y no contamina demasiado. El IBI es un impuesto sobre casas y terrenos, y la ITE es una revisión de edificios. Truco: la «V» de ITV es de «vehículos»."
+    },
+    "ar": {
+      "texto": "ما اسم الفحص الذي يجب أن تخضع له السيارات إلزامياً؟",
+      "opciones": [
+        "IBI (ضريبة العقارات).",
+        "ITV (الفحص التقني للمركبات).",
+        "ITE (الفحص التقني للمباني)."
+      ],
+      "explicacion": "«ITV» (Inspección Técnica de Vehículos) هو الفحص الإلزامي الذي يتأكد من أن السيارة آمنة ولا تلوث كثيراً. أما IBI فهو ضريبة على البيوت والأراضي، وITE فحص للمباني. للتذكر: حرف «V» في ITV يعني «vehículos» أي المركبات."
+    },
+    "fr": {
+      "texto": "Comment s'appelle le contrôle que les voitures doivent obligatoirement passer ?",
+      "opciones": [
+        "IBI (impôt foncier).",
+        "ITV (contrôle technique des véhicules).",
+        "ITE (inspection technique des bâtiments)."
+      ],
+      "explicacion": "L'« ITV » (Inspección Técnica de Vehículos) est le contrôle technique obligatoire qui vérifie que la voiture est sûre et ne pollue pas trop. L'IBI est un impôt sur les logements et terrains, et l'ITE concerne les bâtiments. Astuce : le « V » d'ITV veut dire « vehículos »."
+    },
+    "en": {
+      "texto": "What is the name of the inspection that cars must compulsorily pass?",
+      "opciones": [
+        "IBI (property tax).",
+        "ITV (Technical Vehicle Inspection).",
+        "ITE (Technical Building Inspection)."
+      ],
+      "explicacion": "The «ITV» (Inspección Técnica de Vehículos) is the compulsory roadworthiness test that checks a car is safe and does not pollute too much. The IBI is a tax on homes and land, and the ITE is an inspection of buildings. Tip: the «V» in ITV stands for «vehículos»."
+    },
+    "ro": {
+      "texto": "Cum se numește inspecția pe care trebuie să o treacă obligatoriu mașinile?",
+      "opciones": [
+        "IBI (impozitul pe proprietăți imobiliare).",
+        "ITV (inspecția tehnică a vehiculelor).",
+        "ITE (inspecția tehnică a clădirilor)."
+      ],
+      "explicacion": "«ITV» (Inspección Técnica de Vehículos) este inspecția obligatorie care verifică dacă mașina este sigură și nu poluează prea mult, asemănătoare cu ITP-ul din România. IBI este un impozit pe case și terenuri, iar ITE privește clădirile. Truc: «V» din ITV înseamnă «vehículos»."
+    },
+    "zh": {
+      "texto": "汽车必须通过的强制检查叫什么？",
+      "opciones": [
+        "IBI（不动产税）。",
+        "ITV（车辆技术检验）。",
+        "ITE（建筑技术检验）。"
+      ],
+      "explicacion": "«ITV»（Inspección Técnica de Vehículos）是汽车的强制年检，检查车辆是否安全、排放是否超标。IBI是房屋和土地的税，ITE是对建筑物的检查。记忆技巧：ITV里的«V»代表«vehículos»（车辆）。"
+    },
+    "uk": {
+      "texto": "Як називається огляд, який автомобілі мають проходити обов'язково?",
+      "opciones": [
+        "IBI (податок на нерухомість).",
+        "ITV (технічний огляд транспортних засобів).",
+        "ITE (технічний огляд будівель)."
+      ],
+      "explicacion": "«ITV» (Inspección Técnica de Vehículos) це обов'язковий техогляд, який перевіряє, чи автомобіль безпечний і не забруднює повітря надміру. IBI це податок на житло й землю, а ITE огляд будівель. Підказка: літера «V» в ITV означає «vehículos» (транспортні засоби)."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5014": {
+    "es": {
+      "explicacion": "La «tapa» es una pequeña porción de comida que se sirve con la bebida en muchos bares, a veces gratis. El bocadillo es pan con comida dentro y el primer plato es una parte del menú del día. Truco: salir a tomar algo con amigos es ir «de tapas»."
+    },
+    "ar": {
+      "texto": "المقبلات الصغيرة التي تُقدَّم مع المشروب في الحانات والمطاعم تُسمّى…",
+      "opciones": [
+        "بوكاديو (bocadillo، شطيرة).",
+        "تابا (tapa).",
+        "الطبق الأول (primer plato)."
+      ],
+      "explicacion": "«tapa» هي كمية صغيرة من الطعام تُقدَّم مع المشروب في كثير من الحانات، وأحياناً مجاناً. أما «bocadillo» فهو خبز محشو، و«primer plato» هو جزء من قائمة وجبة اليوم. للتذكر: الخروج مع الأصدقاء لتناول المقبلات يُسمّى «ir de tapas»."
+    },
+    "fr": {
+      "texto": "L'amuse-bouche qui accompagne la boisson dans les bars et restaurants s'appelle…",
+      "opciones": [
+        "bocadillo (sandwich).",
+        "tapa.",
+        "entrée (primer plato)."
+      ],
+      "explicacion": "La « tapa » est une petite portion de nourriture servie avec la boisson dans beaucoup de bars, parfois gratuitement. Le « bocadillo » est un sandwich et le « primer plato » est l'entrée du menu du jour. Astuce : sortir boire un verre entre amis, c'est aller « de tapas »."
+    },
+    "en": {
+      "texto": "The snack that comes with a drink in bars and restaurants is called…",
+      "opciones": [
+        "bocadillo (sandwich).",
+        "tapa.",
+        "first course (primer plato)."
+      ],
+      "explicacion": "A «tapa» is a small portion of food served with your drink in many bars, sometimes for free. A «bocadillo» is a filled bread roll and the «primer plato» is the first course of a set menu. Tip: going out with friends for drinks and snacks is called going «de tapas»."
+    },
+    "ro": {
+      "texto": "Gustarea care însoțește băutura în baruri și restaurante se numește…",
+      "opciones": [
+        "bocadillo (sandviș).",
+        "tapa.",
+        "felul întâi (primer plato)."
+      ],
+      "explicacion": "«Tapa» este o porție mică de mâncare servită lângă băutură în multe baruri, uneori gratuit. «Bocadillo» este un sandviș, iar «primer plato» este felul întâi din meniul zilei. Truc: când ieși cu prietenii la un pahar și ceva de ronțăit, spui că mergi «de tapas»."
+    },
+    "zh": {
+      "texto": "在酒吧和餐馆里随饮品一起上的小吃叫……",
+      "opciones": [
+        "bocadillo（三明治）。",
+        "tapa（小吃）。",
+        "primer plato（头盘）。"
+      ],
+      "explicacion": "«tapa»是很多酒吧随饮品附上的一小份食物，有时免费。«bocadillo»是夹馅面包，«primer plato»是每日套餐里的第一道菜。记忆技巧：和朋友出去边喝边吃小吃，就叫«ir de tapas»。"
+    },
+    "uk": {
+      "texto": "Закуска, яку подають до напою в барах і ресторанах, називається…",
+      "opciones": [
+        "bocadillo (бутерброд).",
+        "tapa (тапа).",
+        "перша страва (primer plato)."
+      ],
+      "explicacion": "«Tapa» це невелика порція їжі, яку в багатьох барах подають до напою, іноді безкоштовно. «Bocadillo» це бутерброд із багета, а «primer plato» перша страва меню дня. Підказка: піти з друзями випити й перекусити іспанською кажуть «ir de tapas»."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5015": {
+    "es": {
+      "explicacion": "La tarjeta sanitaria se pide en el «centro de salud» que corresponde a tu domicilio, normalmente con el certificado de empadronamiento. La policía no la tramita y el Ministerio de Sanidad no atiende a cada persona. Truco: la tarjeta sirve para ir al médico, así que se pide donde está tu médico."
+    },
+    "ar": {
+      "texto": "أين تُستخرج البطاقة الصحية (tarjeta sanitaria)؟",
+      "opciones": [
+        "في مركز الشرطة (comisaría de policía).",
+        "في المركز الصحي (centro de salud).",
+        "في وزارة الصحة (Ministerio de Sanidad)."
+      ],
+      "explicacion": "تُطلب البطاقة الصحية في «centro de salud» (المركز الصحي) التابع لعنوان سكنك، وعادة مع شهادة التسجيل في البلدية (empadronamiento). الشرطة لا تصدرها، ووزارة الصحة لا تستقبل الأفراد لهذا الأمر. للتذكر: البطاقة للذهاب إلى الطبيب، فتُطلب حيث يوجد طبيبك."
+    },
+    "fr": {
+      "texto": "Où demande-t-on la carte sanitaire (tarjeta sanitaria) ?",
+      "opciones": [
+        "Au commissariat de police.",
+        "Au centre de santé.",
+        "Au ministère de la Santé."
+      ],
+      "explicacion": "La carte sanitaire se demande au « centro de salud » (centre de santé) de votre quartier, en général avec le certificat d'« empadronamiento » (inscription à la mairie). La police ne s'en occupe pas et le ministère ne reçoit pas le public pour cela. Astuce : la carte sert à voir le médecin, on la demande donc là où il travaille."
+    },
+    "en": {
+      "texto": "Where do you apply for the health card (tarjeta sanitaria)?",
+      "opciones": [
+        "At the police station.",
+        "At the health centre.",
+        "At the Ministry of Health."
+      ],
+      "explicacion": "You apply for the health card at the «centro de salud» (health centre) for your address, usually with your «empadronamiento» (local registration) certificate. The police do not issue it, and the Ministry of Health does not deal with individual applications. Tip: the card is for seeing a doctor, so you get it where your doctor is."
+    },
+    "ro": {
+      "texto": "Unde se solicită cardul de sănătate (tarjeta sanitaria)?",
+      "opciones": [
+        "La secția de poliție.",
+        "La centrul de sănătate.",
+        "La Ministerul Sănătății."
+      ],
+      "explicacion": "Cardul de sănătate se cere la «centro de salud» (centrul de sănătate) corespunzător adresei tale, de obicei cu certificatul de «empadronamiento» (înregistrarea la primărie). Poliția nu îl eliberează, iar ministerul nu primește cereri individuale. Truc: cardul e pentru medic, deci îl ceri acolo unde lucrează medicul tău."
+    },
+    "zh": {
+      "texto": "医疗卡（tarjeta sanitaria）在哪里办理？",
+      "opciones": [
+        "在警察局。",
+        "在卫生中心（社区医疗中心）。",
+        "在卫生部。"
+      ],
+      "explicacion": "医疗卡要去住址所属的«centro de salud»（社区卫生中心）申请，通常需要带上户籍登记证明（«empadronamiento»）。警察局不办理，卫生部也不接待个人申请。记忆技巧：医疗卡是用来看医生的，所以就在你的医生那里办。"
+    },
+    "uk": {
+      "texto": "Де оформлюють медичну картку (tarjeta sanitaria)?",
+      "opciones": [
+        "У поліцейському відділку.",
+        "У центрі здоров'я (поліклініці).",
+        "У Міністерстві охорони здоров'я."
+      ],
+      "explicacion": "Медичну картку оформлюють у «centro de salud» (центрі здоров'я) за місцем проживання, зазвичай із довідкою про «empadronamiento» (реєстрацію в муніципалітеті). Поліція її не видає, а міністерство не приймає особисті заяви. Підказка: картка потрібна, щоб іти до лікаря, тож її оформлюють там, де працює ваш лікар."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5016": {
+    "es": {
+      "explicacion": "En general, una familia es numerosa cuando tiene tres hijos o más. Con el título de familia numerosa hay ayudas y descuentos, por ejemplo en el transporte o en la matrícula de estudios. Truco: la familia es «numerosa» a partir de 3 hijos.",
+      "nota": "Para el examen vale «con 3 hijos», aunque la ley también considera numerosas algunas familias con 2 hijos en casos especiales, por ejemplo cuando hay una discapacidad."
+    },
+    "ar": {
+      "texto": "بكم طفلاً تُعتبر الأسرة كثيرة العدد (familia numerosa)؟",
+      "opciones": [
+        "بطفل واحد.",
+        "بطفلين.",
+        "بثلاثة أطفال."
+      ],
+      "explicacion": "بشكل عام، تُعتبر الأسرة «familia numerosa» (كثيرة العدد) عندما يكون لديها ثلاثة أطفال أو أكثر. وهذا اللقب يمنح مساعدات وتخفيضات، مثلاً في المواصلات أو في رسوم الدراسة. للتذكر: الأسرة تصبح «numerosa» ابتداءً من 3 أطفال.",
+      "nota": "في الامتحان الجواب هو «3 أطفال»، مع أن القانون يعتبر بعض الأسر التي لديها طفلان كثيرة العدد في حالات خاصة، مثل وجود إعاقة."
+    },
+    "fr": {
+      "texto": "À partir de combien d'enfants une famille est-elle nombreuse ?",
+      "opciones": [
+        "Avec 1 enfant.",
+        "Avec 2 enfants.",
+        "Avec 3 enfants."
+      ],
+      "explicacion": "En règle générale, une famille est « numerosa » (nombreuse) quand elle a trois enfants ou plus. Ce titre donne droit à des aides et des réductions, par exemple dans les transports ou pour les frais d'inscription aux études. Astuce : la famille nombreuse commence à 3 enfants.",
+      "nota": "Pour l'examen, la réponse est « 3 enfants », même si la loi reconnaît aussi certaines familles de 2 enfants dans des cas particuliers, par exemple en cas de handicap."
+    },
+    "en": {
+      "texto": "How many children does a family need to be a large family?",
+      "opciones": [
+        "1 child.",
+        "2 children.",
+        "3 children."
+      ],
+      "explicacion": "As a general rule, a family is a «familia numerosa» (large family) when it has three or more children. This official status gives access to help and discounts, for example on public transport or university fees. Tip: «numerosa» starts at 3 children.",
+      "nota": "For the exam the answer is «3 children», although the law also recognises some families with 2 children in special cases, for example when there is a disability."
+    },
+    "ro": {
+      "texto": "De la câți copii o familie este considerată numeroasă?",
+      "opciones": [
+        "De la 1 copil.",
+        "De la 2 copii.",
+        "De la 3 copii."
+      ],
+      "explicacion": "În general, o familie este «familia numerosa» (numeroasă) când are trei copii sau mai mulți. Acest titlu oficial aduce ajutoare și reduceri, de exemplu la transport sau la taxele de studii. Truc: familia devine numeroasă de la 3 copii.",
+      "nota": "La examen răspunsul este «3 copii», deși legea consideră numeroase și unele familii cu 2 copii în cazuri speciale, de exemplu când există o dizabilitate."
+    },
+    "zh": {
+      "texto": "有几个孩子的家庭算多子女家庭（familia numerosa）？",
+      "opciones": [
+        "1个孩子。",
+        "2个孩子。",
+        "3个孩子。"
+      ],
+      "explicacion": "一般来说，有三个或以上孩子的家庭就是«familia numerosa»（多子女家庭）。拿到这个官方认定后，可以享受补助和优惠，比如交通费或学费减免。记忆技巧：从3个孩子开始算«numerosa»。",
+      "nota": "考试时以手册答案«3个孩子»为准；不过法律在特殊情况下（如有残疾）也承认部分有2个孩子的家庭。"
+    },
+    "uk": {
+      "texto": "Із якою кількістю дітей сім'я вважається багатодітною?",
+      "opciones": [
+        "З 1 дитиною.",
+        "З 2 дітьми.",
+        "З 3 дітьми."
+      ],
+      "explicacion": "Загалом сім'я вважається «familia numerosa» (багатодітною), коли має трьох або більше дітей. Цей офіційний статус дає допомогу та знижки, наприклад на транспорт чи плату за навчання. Підказка: багатодітна сім'я починається з 3 дітей.",
+      "nota": "На іспиті правильна відповідь «з 3 дітьми», хоча закон в особливих випадках, наприклад за інвалідності, визнає багатодітними і деякі сім'ї з 2 дітьми."
+    },
+    "revision": {
+      "ok": false,
+      "motivo": "La regla general son 3 hijos, pero la Ley 40/2003 también reconoce como numerosas familias con 2 hijos en supuestos especiales (discapacidad, fallecimiento de un progenitor, etc.)."
+    }
+  },
+  "5017": {
+    "es": {
+      "explicacion": "Desde 2005, en España pueden casarse personas de diferente sexo y también personas del mismo sexo, con los mismos derechos. Por eso es correcto «entre personas del mismo y diferente sexo», y las opciones con «solo» son falsas. Truco: si ves «solo», piensa que la ley permite las dos posibilidades."
+    },
+    "ar": {
+      "texto": "في إسبانيا، يُسمح بالزواج…",
+      "opciones": [
+        "فقط بين شخصين من الجنس نفسه.",
+        "بين شخصين من الجنس نفسه أو من جنسين مختلفين.",
+        "فقط بين شخصين من جنسين مختلفين."
+      ],
+      "explicacion": "منذ عام 2005، يمكن في إسبانيا الزواج بين شخصين من جنسين مختلفين وأيضاً بين شخصين من الجنس نفسه، بالحقوق نفسها. لذلك الجواب الصحيح «entre personas del mismo y diferente sexo»، والخياران اللذان فيهما «solo» (فقط) خاطئان."
+    },
+    "fr": {
+      "texto": "En Espagne, le mariage est autorisé…",
+      "opciones": [
+        "seulement entre personnes du même sexe.",
+        "entre personnes du même sexe et de sexe différent.",
+        "seulement entre personnes de sexe différent."
+      ],
+      "explicacion": "Depuis 2005, en Espagne, deux personnes de sexe différent ou du même sexe peuvent se marier, avec les mêmes droits. La bonne réponse est donc « entre personas del mismo y diferente sexo ». Astuce : les options avec « solo » (seulement) sont fausses, car la loi permet les deux."
+    },
+    "en": {
+      "texto": "In Spain, marriage is allowed…",
+      "opciones": [
+        "only between people of the same sex.",
+        "between people of the same and of different sex.",
+        "only between people of different sex."
+      ],
+      "explicacion": "Since 2005, in Spain people of different sex and people of the same sex can marry, with the same rights. So the correct answer is «entre personas del mismo y diferente sexo». Tip: the options with «solo» (only) are wrong, because the law allows both."
+    },
+    "ro": {
+      "texto": "În Spania este permisă căsătoria…",
+      "opciones": [
+        "doar între persoane de același sex.",
+        "între persoane de același sex și de sex diferit.",
+        "doar între persoane de sex diferit."
+      ],
+      "explicacion": "Din 2005, în Spania se pot căsători atât persoane de sex diferit, cât și persoane de același sex, cu aceleași drepturi. De aceea răspunsul corect este «entre personas del mismo y diferente sexo». Truc: variantele cu «solo» (doar) sunt greșite, pentru că legea le permite pe amândouă."
+    },
+    "zh": {
+      "texto": "在西班牙，允许的婚姻是……",
+      "opciones": [
+        "只限同性之间。",
+        "同性和异性之间都可以。",
+        "只限异性之间。"
+      ],
+      "explicacion": "自2005年起，西班牙允许异性结婚，也允许同性结婚，权利相同。所以正确答案是«entre personas del mismo y diferente sexo»。记忆技巧：带«solo»（只）的选项都不对，因为法律两种都允许。"
+    },
+    "uk": {
+      "texto": "В Іспанії дозволено шлюб…",
+      "opciones": [
+        "лише між особами однієї статі.",
+        "між особами як однієї, так і різної статі.",
+        "лише між особами різної статі."
+      ],
+      "explicacion": "З 2005 року в Іспанії можуть одружуватися як люди різної статі, так і люди однієї статі, з однаковими правами. Тому правильна відповідь «entre personas del mismo y diferente sexo». Підказка: варіанти зі словом «solo» (лише) хибні, бо закон дозволяє обидва."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5018": {
+    "es": {
+      "explicacion": "Los perros deben estar inscritos en el censo o registro de animales del «Ayuntamiento» del lugar donde viven, y además deben llevar microchip. La policía y el Ministerio de Justicia no hacen este registro. Truco: el Ayuntamiento lleva el padrón de las personas y también el censo de las mascotas."
+    },
+    "ar": {
+      "texto": "يجب على أصحاب الكلاب تسجيلها في…",
+      "opciones": [
+        "وزارة العدل (Ministerio de Justicia).",
+        "مركز الشرطة (comisaría de policía).",
+        "البلدية (Ayuntamiento)."
+      ],
+      "explicacion": "يجب تسجيل الكلاب في سجل الحيوانات لدى «Ayuntamiento» (البلدية) في المكان الذي تعيش فيه، كما يجب أن تحمل شريحة إلكترونية (microchip). الشرطة ووزارة العدل لا تقومان بهذا التسجيل. للتذكر: البلدية تسجّل السكان في «padrón» وتسجّل الحيوانات الأليفة أيضاً."
+    },
+    "fr": {
+      "texto": "Les propriétaires de chiens doivent les enregistrer…",
+      "opciones": [
+        "au ministère de la Justice.",
+        "au commissariat de police.",
+        "à la mairie (Ayuntamiento)."
+      ],
+      "explicacion": "Les chiens doivent être inscrits au registre des animaux de l'« Ayuntamiento » (mairie) de la commune où ils vivent, et porter une puce électronique. La police et le ministère de la Justice ne gèrent pas ce registre. Astuce : la mairie tient le « padrón » des habitants et aussi le recensement des animaux."
+    },
+    "en": {
+      "texto": "Dog owners must register their dogs with…",
+      "opciones": [
+        "the Ministry of Justice.",
+        "the police station.",
+        "the Town Council (Ayuntamiento)."
+      ],
+      "explicacion": "Dogs must be listed in the animal register of the «Ayuntamiento» (town council) where they live, and they must also have a microchip. The police and the Ministry of Justice do not keep this register. Tip: the town council keeps the «padrón» of residents and also the register of pets."
+    },
+    "ro": {
+      "texto": "Proprietarii de câini trebuie să-i înregistreze la…",
+      "opciones": [
+        "Ministerul Justiției.",
+        "secția de poliție.",
+        "primărie (Ayuntamiento)."
+      ],
+      "explicacion": "Câinii trebuie înscriși în registrul de animale al «Ayuntamiento» (primăria) din localitatea unde trăiesc și trebuie să aibă microcip. Poliția și Ministerul Justiției nu țin acest registru. Truc: primăria ține «padrón», evidența locuitorilor, și tot ea ține evidența animalelor de companie."
+    },
+    "zh": {
+      "texto": "养狗的人必须到哪里为狗登记？",
+      "opciones": [
+        "司法部。",
+        "警察局。",
+        "市政府（Ayuntamiento）。"
+      ],
+      "explicacion": "狗必须在所住地«Ayuntamiento»（市政府）的动物登记册上登记，还必须植入芯片。警察局和司法部不负责这项登记。记忆技巧：市政府既管居民户籍登记«padrón»，也管宠物登记。"
+    },
+    "uk": {
+      "texto": "Власники собак мають зареєструвати їх у…",
+      "opciones": [
+        "Міністерстві юстиції.",
+        "поліцейському відділку.",
+        "мерії (Ayuntamiento)."
+      ],
+      "explicacion": "Собак треба внести до реєстру тварин в «Ayuntamiento» (мерії) за місцем проживання, а ще вони мають бути чиповані. Поліція та Міністерство юстиції такого реєстру не ведуть. Підказка: мерія веде «padrón», реєстр мешканців, і так само реєстр домашніх тварин."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5019": {
+    "es": {
+      "explicacion": "La tortilla española, también llamada tortilla de patatas, se hace con huevos y «patatas», y mucha gente le añade cebolla. No lleva pimientos ni tomates como ingrediente principal. Truco: su otro nombre, «tortilla de patatas», ya te da la respuesta."
+    },
+    "ar": {
+      "texto": "المكوّنات الرئيسية للتورتيلا الإسبانية هي البيض و…",
+      "opciones": [
+        "الفلفل.",
+        "البطاطس.",
+        "الطماطم."
+      ],
+      "explicacion": "التورتيلا الإسبانية، وتُسمّى أيضاً «tortilla de patatas»، تُحضَّر من البيض و«patatas» (البطاطس)، ويضيف إليها كثيرون البصل. لا يدخل الفلفل ولا الطماطم كمكوّن رئيسي. للتذكر: اسمها الآخر «tortilla de patatas» يعطيك الجواب."
+    },
+    "fr": {
+      "texto": "Les principaux ingrédients de l'omelette espagnole sont les œufs et…",
+      "opciones": [
+        "les poivrons.",
+        "les pommes de terre.",
+        "les tomates."
+      ],
+      "explicacion": "L'omelette espagnole, appelée aussi « tortilla de patatas », se prépare avec des œufs et des « patatas » (pommes de terre) ; beaucoup y ajoutent de l'oignon. Les poivrons et les tomates ne sont pas l'ingrédient principal. Astuce : son autre nom, « tortilla de patatas », donne déjà la réponse."
+    },
+    "en": {
+      "texto": "The main ingredients of Spanish omelette are eggs and…",
+      "opciones": [
+        "peppers.",
+        "potatoes.",
+        "tomatoes."
+      ],
+      "explicacion": "Spanish omelette, also called «tortilla de patatas», is made with eggs and «patatas» (potatoes), and many people add onion. Peppers and tomatoes are not a main ingredient. Tip: its other name, «tortilla de patatas» (potato omelette), already gives you the answer."
+    },
+    "ro": {
+      "texto": "Principalele ingrediente ale omletei spaniole sunt ouăle și…",
+      "opciones": [
+        "ardeii.",
+        "cartofii.",
+        "roșiile."
+      ],
+      "explicacion": "Omleta spaniolă, numită și «tortilla de patatas», se face din ouă și «patatas» (cartofi), iar mulți adaugă și ceapă. Ardeii și roșiile nu sunt ingredientul principal. Truc: celălalt nume al ei, «tortilla de patatas» (omletă de cartofi), îți dă deja răspunsul."
+    },
+    "zh": {
+      "texto": "西班牙土豆饼（tortilla española）的主要原料是鸡蛋和……",
+      "opciones": [
+        "甜椒。",
+        "土豆。",
+        "番茄。"
+      ],
+      "explicacion": "西班牙蛋饼又叫«tortilla de patatas»，用鸡蛋和«patatas»（土豆）做成，很多人还会加洋葱。甜椒和番茄都不是主要原料。记忆技巧：它的另一个名字«tortilla de patatas»（土豆蛋饼）就是答案。"
+    },
+    "uk": {
+      "texto": "Основні інгредієнти іспанського омлету (тортильї) це яйця і…",
+      "opciones": [
+        "перець.",
+        "картопля.",
+        "помідори."
+      ],
+      "explicacion": "Іспанську тортилью, яку ще називають «tortilla de patatas», готують з яєць і «patatas» (картоплі), а багато хто додає цибулю. Перець і помідори не є основним інгредієнтом. Підказка: її друга назва «tortilla de patatas» (картопляний омлет) вже містить відповідь."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5020": {
+    "es": {
+      "explicacion": "El «gazpacho» es una sopa fría de tomate, pimiento, pepino, ajo y aceite de oliva, típica de Andalucía y famosa en todo el mundo. La pizza y la pasta son platos de la cocina italiana. Truco: elige la única palabra española de la lista."
+    },
+    "ar": {
+      "texto": "ما هو أحد أشهر أطباق المطبخ الإسباني على المستوى العالمي؟",
+      "opciones": [
+        "الغاسباتشو (Gazpacho).",
+        "البيتزا.",
+        "المعكرونة."
+      ],
+      "explicacion": "«gazpacho» حساء بارد من الطماطم والفلفل والخيار والثوم وزيت الزيتون، أصله من الأندلس ومشهور في العالم كله. أما البيتزا والمعكرونة فهما من المطبخ الإيطالي. للتذكر: اختر الكلمة الإسبانية الوحيدة في القائمة."
+    },
+    "fr": {
+      "texto": "Quel est l'un des plats de la gastronomie espagnole les plus connus dans le monde ?",
+      "opciones": [
+        "Le gaspacho (Gazpacho).",
+        "La pizza.",
+        "Les pâtes."
+      ],
+      "explicacion": "Le « gazpacho » est une soupe froide de tomate, poivron, concombre, ail et huile d'olive, typique de l'Andalousie et connue dans le monde entier. La pizza et les pâtes sont des plats de la cuisine italienne. Astuce : choisissez le seul mot espagnol de la liste."
+    },
+    "en": {
+      "texto": "Which is one of the best-known Spanish dishes internationally?",
+      "opciones": [
+        "Gazpacho.",
+        "Pizza.",
+        "Pasta."
+      ],
+      "explicacion": "«Gazpacho» is a cold soup made with tomato, pepper, cucumber, garlic and olive oil. It comes from Andalusia and is famous all over the world. Pizza and pasta are Italian dishes. Tip: choose the only Spanish word in the list."
+    },
+    "ro": {
+      "texto": "Care este unul dintre cele mai cunoscute feluri de mâncare spaniole la nivel internațional?",
+      "opciones": [
+        "Gazpacho.",
+        "Pizza.",
+        "Paste."
+      ],
+      "explicacion": "«Gazpacho» este o supă rece din roșii, ardei, castraveți, usturoi și ulei de măsline, tipică Andaluziei și cunoscută în toată lumea. Pizza și pastele sunt preparate din bucătăria italiană. Truc: alege singurul cuvânt spaniol din listă."
+    },
+    "zh": {
+      "texto": "下列哪一道是西班牙美食中国际知名度最高的菜之一？",
+      "opciones": [
+        "西班牙冷汤（Gazpacho）。",
+        "比萨。",
+        "意大利面。"
+      ],
+      "explicacion": "«gazpacho»是一种冷汤，用番茄、甜椒、黄瓜、大蒜和橄榄油做成，源自安达卢西亚，世界闻名。比萨和意大利面是意大利菜。记忆技巧：选列表中唯一的西班牙语单词。"
+    },
+    "uk": {
+      "texto": "Яка з цих страв іспанської кухні одна з найвідоміших у світі?",
+      "opciones": [
+        "Гаспачо (Gazpacho).",
+        "Піца.",
+        "Паста."
+      ],
+      "explicacion": "«Gazpacho» це холодний суп із помідорів, перцю, огірків, часнику й оливкової олії, типовий для Андалусії та відомий у всьому світі. Піца й паста страви італійської кухні. Підказка: оберіть єдине іспанське слово у списку."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5021": {
+    "es": {
+      "explicacion": "«La 1» es un canal de RTVE, la radio y televisión pública que pertenece al Estado. Tele 5 y Antena 3 son canales privados, propiedad de empresas. Truco: La 1 y La 2 son los canales públicos clásicos de RTVE."
+    },
+    "ar": {
+      "texto": "أي من هذه القنوات التلفزيونية قناة عامة؟",
+      "opciones": [
+        "Tele 5.",
+        "La 1.",
+        "Antena 3."
+      ],
+      "explicacion": "«La 1» قناة تابعة لـ RTVE، وهي الإذاعة والتلفزيون العامّان المملوكان للدولة. أما Tele 5 وAntena 3 فهما قناتان خاصتان تملكهما شركات. للتذكر: «La 1» و«La 2» هما القناتان العامتان التقليديتان لـ RTVE."
+    },
+    "fr": {
+      "texto": "Laquelle de ces chaînes de télévision est publique ?",
+      "opciones": [
+        "Tele 5.",
+        "La 1.",
+        "Antena 3."
+      ],
+      "explicacion": "« La 1 » est une chaîne de RTVE, la radio-télévision publique qui appartient à l'État. Tele 5 et Antena 3 sont des chaînes privées, appartenant à des entreprises. Astuce : « La 1 » et « La 2 » sont les chaînes publiques historiques de RTVE."
+    },
+    "en": {
+      "texto": "Which of these television channels is public?",
+      "opciones": [
+        "Tele 5.",
+        "La 1.",
+        "Antena 3."
+      ],
+      "explicacion": "«La 1» is a channel of RTVE, Spain's state-owned public radio and television. Tele 5 and Antena 3 are private channels owned by companies. Tip: «La 1» and «La 2» are the traditional public channels of RTVE."
+    },
+    "ro": {
+      "texto": "Care dintre aceste canale de televiziune este public?",
+      "opciones": [
+        "Tele 5.",
+        "La 1.",
+        "Antena 3."
+      ],
+      "explicacion": "«La 1» este un canal al RTVE, radioteleviziunea publică ce aparține statului. Tele 5 și Antena 3 sunt canale private, deținute de companii. Atenție: Antena 3 din Spania nu are legătură cu postul românesc. Truc: «La 1» și «La 2» sunt canalele publice clasice ale RTVE."
+    },
+    "zh": {
+      "texto": "下列哪个电视频道是公共频道？",
+      "opciones": [
+        "Tele 5。",
+        "La 1。",
+        "Antena 3。"
+      ],
+      "explicacion": "«La 1»属于RTVE，即国家所有的西班牙公共广播电视台。Tele 5和Antena 3是私营频道，归企业所有。记忆技巧：«La 1»和«La 2»是RTVE传统的公共频道。"
+    },
+    "uk": {
+      "texto": "Який із цих телеканалів є державним (суспільним)?",
+      "opciones": [
+        "Tele 5.",
+        "La 1.",
+        "Antena 3."
+      ],
+      "explicacion": "«La 1» це канал RTVE, суспільного радіо й телебачення, яке належить державі. Tele 5 і Antena 3 приватні канали, що належать компаніям. Підказка: «La 1» і «La 2» це класичні державні канали RTVE."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5022": {
+    "es": {
+      "explicacion": "En una comunidad de vecinos hay que respetar el descanso de los demás y «no molestar con ruido», sobre todo por la noche. Limpiar los espacios comunes suele hacerlo una persona contratada, y abrir al cartero no es una norma. Truco: piensa en el respeto a los vecinos."
+    },
+    "ar": {
+      "texto": "في جمعية سكان العمارة (comunidad de vecinos)، من القواعد…",
+      "opciones": [
+        "فتح الباب لساعي البريد.",
+        "عدم الإزعاج بالضجيج.",
+        "تنظيف الأماكن المشتركة."
+      ],
+      "explicacion": "في «comunidad de vecinos» يجب احترام راحة الآخرين و«no molestar con ruido» أي عدم الإزعاج بالضجيج، خاصة في الليل. تنظيف الأماكن المشتركة يقوم به عادة شخص مأجور، وفتح الباب لساعي البريد ليس قاعدة. للتذكر: فكّر في احترام الجيران."
+    },
+    "fr": {
+      "texto": "Dans une copropriété (comunidad de vecinos), l'une des règles est de…",
+      "opciones": [
+        "ouvrir la porte au facteur.",
+        "ne pas déranger avec du bruit.",
+        "nettoyer les espaces communs."
+      ],
+      "explicacion": "Dans une « comunidad de vecinos », il faut respecter le repos des autres et « no molestar con ruido » (ne pas faire de bruit), surtout la nuit. Le nettoyage des espaces communs est en général confié à une personne payée, et ouvrir au facteur n'est pas une règle. Astuce : pensez au respect des voisins."
+    },
+    "en": {
+      "texto": "In a residents' association (comunidad de vecinos), one of the rules is…",
+      "opciones": [
+        "to open the door to the postman.",
+        "not to disturb others with noise.",
+        "to clean the shared areas."
+      ],
+      "explicacion": "In a «comunidad de vecinos» you must respect other people's rest and «no molestar con ruido» (not disturb with noise), especially at night. Cleaning the shared areas is usually done by someone who is paid for it, and opening the door to the postman is not a rule. Tip: think of respect for your neighbours."
+    },
+    "ro": {
+      "texto": "Într-o asociație de proprietari (comunidad de vecinos), una dintre reguli este…",
+      "opciones": [
+        "să deschizi ușa poștașului.",
+        "să nu deranjezi cu zgomot.",
+        "să cureți spațiile comune."
+      ],
+      "explicacion": "Într-o «comunidad de vecinos» trebuie respectată odihna celorlalți și «no molestar con ruido» (să nu faci zgomot), mai ales noaptea. Curățenia spațiilor comune o face de obicei o persoană plătită, iar deschisul ușii poștașului nu este o regulă. Truc: gândește-te la respectul față de vecini."
+    },
+    "zh": {
+      "texto": "在住户共同体（comunidad de vecinos）中，规定之一是……",
+      "opciones": [
+        "给邮递员开门。",
+        "不制造噪音打扰他人。",
+        "打扫公共区域。"
+      ],
+      "explicacion": "在«comunidad de vecinos»里，要尊重别人的休息，«no molestar con ruido»，即不制造噪音，夜里尤其如此。公共区域一般由雇来的人打扫，给邮递员开门也不是规定。记忆技巧：想想尊重邻居。"
+    },
+    "uk": {
+      "texto": "В об'єднанні мешканців будинку (comunidad de vecinos) одне з правил…",
+      "opciones": [
+        "відчиняти двері листоноші.",
+        "не заважати шумом.",
+        "прибирати спільні приміщення."
+      ],
+      "explicacion": "У «comunidad de vecinos» треба поважати відпочинок інших і «no molestar con ruido», тобто не шуміти, особливо вночі. Спільні приміщення зазвичай прибирає найнята людина, а відчиняти двері листоноші не є правилом. Підказка: думайте про повагу до сусідів."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5023": {
+    "es": {
+      "explicacion": "La paella valenciana es un plato de «arroz» cocinado en una sartén grande y plana, que también se llama paella. La receta tradicional lleva pollo, conejo y verduras, pero no chorizo ni garbanzos. Truco: sin arroz no hay paella."
+    },
+    "ar": {
+      "texto": "أيّ من هذه هو المكوّن الرئيسي للبايلا الفالنسية (paella valenciana)؟",
+      "opciones": [
+        "الأرز.",
+        "السجق الإسباني (Chorizo).",
+        "الحمّص."
+      ],
+      "explicacion": "البايلا الفالنسية طبق من «arroz» (الأرز) يُطبخ في مقلاة كبيرة ومسطحة تُسمّى أيضاً «paella». الوصفة التقليدية فيها دجاج وأرنب وخضار، لكن ليس فيها «chorizo» ولا حمّص. للتذكر: بلا أرز لا توجد بايلا."
+    },
+    "fr": {
+      "texto": "Lequel de ces ingrédients est le principal ingrédient de la paella valencienne ?",
+      "opciones": [
+        "Le riz.",
+        "Le chorizo.",
+        "Les pois chiches."
+      ],
+      "explicacion": "La paella valencienne est un plat de « arroz » (riz) cuit dans une grande poêle plate, appelée elle aussi « paella ». La recette traditionnelle contient du poulet, du lapin et des légumes, mais pas de chorizo ni de pois chiches. Astuce : sans riz, pas de paella."
+    },
+    "en": {
+      "texto": "Which of these is the main ingredient of Valencian paella?",
+      "opciones": [
+        "Rice.",
+        "Chorizo.",
+        "Chickpeas."
+      ],
+      "explicacion": "Valencian paella is a dish of «arroz» (rice) cooked in a large, flat pan, which is also called a «paella». The traditional recipe has chicken, rabbit and vegetables, but no chorizo or chickpeas. Tip: no rice, no paella."
+    },
+    "ro": {
+      "texto": "Care dintre acestea este ingredientul principal al paellei valenciene?",
+      "opciones": [
+        "Orezul.",
+        "Chorizo.",
+        "Năutul."
+      ],
+      "explicacion": "Paella valenciană este un fel de mâncare din «arroz» (orez) gătit într-o tigaie mare și plată, care se numește tot «paella». Rețeta tradițională are pui, iepure și legume, dar nu are chorizo sau năut. Truc: fără orez nu există paella."
+    },
+    "zh": {
+      "texto": "下列哪一样是瓦伦西亚海鲜饭（paella valenciana）的主要原料？",
+      "opciones": [
+        "米饭（大米）。",
+        "西班牙辣香肠（Chorizo）。",
+        "鹰嘴豆。"
+      ],
+      "explicacion": "瓦伦西亚«paella»是一道用«arroz»（大米）做的菜，在一口又大又平的锅里烹制，这口锅也叫paella。传统做法放鸡肉、兔肉和蔬菜，不放香肠也不放鹰嘴豆。记忆技巧：没有米就没有paella。"
+    },
+    "uk": {
+      "texto": "Що з переліченого є головним інгредієнтом валенсійської паельї?",
+      "opciones": [
+        "Рис.",
+        "Чорисо (Chorizo).",
+        "Нут."
+      ],
+      "explicacion": "Валенсійська паелья це страва з «arroz» (рису), яку готують у великій пласкій сковороді, що теж називається «paella». Традиційний рецепт містить курку, кролика й овочі, але не чорисо і не нут. Підказка: без рису немає паельї."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5024": {
+    "es": {
+      "explicacion": "La «sidra» es una bebida hecha con manzanas y es típica de «Asturias», en el norte de España. Allí se sirve de una forma especial, echándola desde arriba con la botella alta. Valencia es famosa por la paella y Canarias por sus plátanos."
+    },
+    "ar": {
+      "texto": "السيدرا (sidra) مشروب تقليدي في…",
+      "opciones": [
+        "أستورياس (Asturias).",
+        "فالنسيا (Valencia).",
+        "جزر الكناري (Canarias)."
+      ],
+      "explicacion": "«sidra» مشروب مصنوع من التفاح، وهو تقليدي في «Asturias» (أستورياس) شمال إسبانيا. هناك يُصبّ بطريقة خاصة من أعلى، مع رفع الزجاجة عالياً. أما فالنسيا فمشهورة بالبايلا، وجزر الكناري بالموز. للتذكر: التفاح ينمو في الشمال الممطر."
+    },
+    "fr": {
+      "texto": "Le cidre (sidra) est une boisson typique…",
+      "opciones": [
+        "des Asturies (Asturias).",
+        "de Valence (Valencia).",
+        "des Canaries (Canarias)."
+      ],
+      "explicacion": "La « sidra » (cidre) est une boisson à base de pommes, typique des « Asturias » (Asturies), au nord de l'Espagne. On la verse de façon spéciale, de très haut, en levant la bouteille. Valence est célèbre pour la paella et les Canaries pour leurs bananes."
+    },
+    "en": {
+      "texto": "Cider (sidra) is a typical drink of…",
+      "opciones": [
+        "Asturias.",
+        "Valencia.",
+        "the Canary Islands (Canarias)."
+      ],
+      "explicacion": "«Sidra» (cider) is a drink made from apples and is typical of «Asturias», in the north of Spain. There it is poured in a special way, from high above with the bottle raised. Valencia is famous for paella and the Canary Islands for bananas."
+    },
+    "ro": {
+      "texto": "Cidrul (sidra) este o băutură tipică pentru…",
+      "opciones": [
+        "Asturias.",
+        "Valencia.",
+        "Insulele Canare (Canarias)."
+      ],
+      "explicacion": "«Sidra» (cidrul) este o băutură din mere, tipică pentru «Asturias», în nordul Spaniei. Acolo se toarnă într-un mod special, de sus, cu sticla ridicată. Valencia este celebră pentru paella, iar Insulele Canare pentru banane."
+    },
+    "zh": {
+      "texto": "苹果酒（sidra）是哪里的典型饮品？",
+      "opciones": [
+        "阿斯图里亚斯（Asturias）。",
+        "瓦伦西亚（Valencia）。",
+        "加那利群岛（Canarias）。"
+      ],
+      "explicacion": "«sidra»（苹果酒）用苹果酿成，是西班牙北部«Asturias»（阿斯图里亚斯）的特产。当地倒酒的方式很特别：把酒瓶高高举起往下倒。瓦伦西亚以海鲜饭出名，加那利群岛以香蕉出名。"
+    },
+    "uk": {
+      "texto": "Сидр (sidra) це типовий напій…",
+      "opciones": [
+        "Астурії (Asturias).",
+        "Валенсії (Valencia).",
+        "Канарських островів (Canarias)."
+      ],
+      "explicacion": "«Sidra» (сидр) це напій із яблук, типовий для «Asturias» (Астурії) на півночі Іспанії. Там його наливають по-особливому: з висоти, високо піднявши пляшку. Валенсія славиться паельєю, а Канарські острови своїми бананами."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5025": {
+    "es": {
+      "explicacion": "Los españoles tienen dos apellidos: uno del padre y otro de la madre. Desde 2017, los padres eligen el orden, así que el primero «puede ser el de la madre o el del padre». Por eso son falsas las opciones con «obligatoriamente»."
+    },
+    "ar": {
+      "texto": "للإسبان لقبان (اسمان عائليان)، والأول منهما…",
+      "opciones": [
+        "إلزامياً لقب الأم.",
+        "إلزامياً لقب الأب.",
+        "يمكن أن يكون لقب الأم أو لقب الأب."
+      ],
+      "explicacion": "للإسبان لقبان: واحد من الأب وآخر من الأم. ومنذ عام 2017 يختار الوالدان الترتيب، لذلك الأول «puede ser el de la madre o el del padre» أي يمكن أن يكون لقب الأم أو الأب. لهذا الخياران اللذان فيهما «obligatoriamente» (إلزامياً) خاطئان."
+    },
+    "fr": {
+      "texto": "Les Espagnols ont deux noms de famille (apellidos) ; le premier est…",
+      "opciones": [
+        "obligatoirement celui de la mère.",
+        "obligatoirement celui du père.",
+        "celui de la mère ou celui du père, au choix."
+      ],
+      "explicacion": "Les Espagnols ont deux « apellidos » : un du père et un de la mère. Depuis 2017, les parents choisissent l'ordre, donc le premier « puede ser el de la madre o el del padre ». C'est pourquoi les options avec « obligatoriamente » (obligatoirement) sont fausses."
+    },
+    "en": {
+      "texto": "Spaniards have two surnames; the first one is…",
+      "opciones": [
+        "compulsorily the mother's.",
+        "compulsorily the father's.",
+        "can be either the mother's or the father's."
+      ],
+      "explicacion": "Spaniards have two «apellidos» (surnames): one from the father and one from the mother. Since 2017 parents choose the order, so the first «puede ser el de la madre o el del padre». That is why the options with «obligatoriamente» (compulsorily) are wrong."
+    },
+    "ro": {
+      "texto": "Spaniolii au două nume de familie; primul este…",
+      "opciones": [
+        "obligatoriu cel al mamei.",
+        "obligatoriu cel al tatălui.",
+        "poate fi cel al mamei sau cel al tatălui."
+      ],
+      "explicacion": "Spaniolii au două «apellidos» (nume de familie): unul de la tată și unul de la mamă. Din 2017 părinții aleg ordinea, deci primul «puede ser el de la madre o el del padre». De aceea variantele cu «obligatoriamente» (obligatoriu) sunt greșite."
+    },
+    "zh": {
+      "texto": "西班牙人有两个姓，第一个姓……",
+      "opciones": [
+        "必须是母亲的姓。",
+        "必须是父亲的姓。",
+        "可以是母亲的姓，也可以是父亲的姓。"
+      ],
+      "explicacion": "西班牙人有两个姓（«apellidos»），一个来自父亲，一个来自母亲。自2017年起由父母决定顺序，所以第一个姓«puede ser el de la madre o el del padre»。带«obligatoriamente»（必须）的选项都不对。"
+    },
+    "uk": {
+      "texto": "Іспанці мають два прізвища; перше з них…",
+      "opciones": [
+        "обов'язково прізвище матері.",
+        "обов'язково прізвище батька.",
+        "може бути прізвищем матері або батька."
+      ],
+      "explicacion": "Іспанці мають два «apellidos» (прізвища): одне від батька, друге від матері. З 2017 року батьки самі обирають порядок, тож перше «puede ser el de la madre o el del padre». Тому варіанти зі словом «obligatoriamente» (обов'язково) хибні."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5026": {
+    "es": {
+      "explicacion": "La Fiesta Nacional de España es el «12 de octubre», el día en que Colón llegó a América en 1492. El 6 de diciembre es el Día de la Constitución y el 15 de agosto es la fiesta religiosa de la Asunción. Truco: une 12 de octubre con 1492."
+    },
+    "ar": {
+      "texto": "العيد الوطني لإسبانيا هو يوم…",
+      "opciones": [
+        "6 ديسمبر.",
+        "15 أغسطس.",
+        "12 أكتوبر."
+      ],
+      "explicacion": "العيد الوطني لإسبانيا هو «12 de octubre» (12 أكتوبر)، وهو اليوم الذي وصل فيه كولومبوس إلى أمريكا عام 1492. أما 6 ديسمبر فهو يوم الدستور، و15 أغسطس عيد ديني (عيد انتقال العذراء). للتذكر: اربط 12 أكتوبر بسنة 1492."
+    },
+    "fr": {
+      "texto": "La fête nationale de l'Espagne est le…",
+      "opciones": [
+        "6 décembre.",
+        "15 août.",
+        "12 octobre."
+      ],
+      "explicacion": "La fête nationale espagnole est le « 12 de octubre », jour où Christophe Colomb est arrivé en Amérique en 1492. Le 6 décembre est le jour de la Constitution et le 15 août la fête religieuse de l'Assomption. Astuce : associez le 12 octobre à 1492."
+    },
+    "en": {
+      "texto": "Spain's National Day is…",
+      "opciones": [
+        "6 December.",
+        "15 August.",
+        "12 October."
+      ],
+      "explicacion": "Spain's National Day is the «12 de octubre» (12 October), the day Columbus reached America in 1492. 6 December is Constitution Day and 15 August is the religious holiday of the Assumption. Tip: link 12 October with 1492."
+    },
+    "ro": {
+      "texto": "Ziua Națională a Spaniei este pe…",
+      "opciones": [
+        "6 decembrie.",
+        "15 august.",
+        "12 octombrie."
+      ],
+      "explicacion": "Ziua Națională a Spaniei este «12 de octubre» (12 octombrie), ziua în care Columb a ajuns în America, în 1492. 6 decembrie este Ziua Constituției, iar 15 august este sărbătoarea religioasă a Adormirii Maicii Domnului. Truc: leagă 12 octombrie de anul 1492."
+    },
+    "zh": {
+      "texto": "西班牙国庆节是……",
+      "opciones": [
+        "12月6日。",
+        "8月15日。",
+        "10月12日。"
+      ],
+      "explicacion": "西班牙国庆节是«12 de octubre»（10月12日），即1492年哥伦布到达美洲的日子。12月6日是宪法日，8月15日是宗教节日圣母升天节。记忆技巧：把10月12日和1492年联系起来。"
+    },
+    "uk": {
+      "texto": "Національне свято Іспанії відзначають…",
+      "opciones": [
+        "6 грудня.",
+        "15 серпня.",
+        "12 жовтня."
+      ],
+      "explicacion": "Національне свято Іспанії це «12 de octubre» (12 жовтня), день, коли Колумб досяг Америки в 1492 році. 6 грудня це День Конституції, а 15 серпня релігійне свято Успіння Богородиці. Підказка: пов'яжіть 12 жовтня з 1492 роком."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5027": {
+    "es": {
+      "explicacion": "La mayoría de las tiendas pequeñas cierran los «domingos», que es el día de descanso semanal. Los lunes y los sábados por la tarde muchas están abiertas. En zonas turísticas y en algunos centros comerciales también se puede abrir en domingo."
+    },
+    "ar": {
+      "texto": "في أي أيام تُغلق عادةً معظم المحلات أو التجارة الصغيرة؟",
+      "opciones": [
+        "أيام الاثنين.",
+        "أيام الأحد.",
+        "أيام السبت بعد الظهر."
+      ],
+      "explicacion": "تُغلق معظم المحلات الصغيرة يوم «domingo» (الأحد)، وهو يوم الراحة الأسبوعية. أما يوم الاثنين ومساء السبت فكثير منها مفتوح. وفي المناطق السياحية وبعض المراكز التجارية يمكن أن تفتح المحلات يوم الأحد أيضاً. انتبه: في الامتحان الجواب «Los domingos»."
+    },
+    "fr": {
+      "texto": "Quels jours la plupart des magasins ou petits commerces ferment-ils en général ?",
+      "opciones": [
+        "Le lundi.",
+        "Le dimanche.",
+        "Le samedi après-midi."
+      ],
+      "explicacion": "La plupart des petits commerces ferment le « domingo » (dimanche), jour de repos hebdomadaire. Le lundi et le samedi après-midi, beaucoup sont ouverts. Dans les zones touristiques et certains centres commerciaux, on peut aussi ouvrir le dimanche. À l'examen, la réponse est « Los domingos »."
+    },
+    "en": {
+      "texto": "On which days do most shops or small businesses usually close?",
+      "opciones": [
+        "On Mondays.",
+        "On Sundays.",
+        "On Saturday afternoons."
+      ],
+      "explicacion": "Most small shops close on «domingos» (Sundays), the weekly day of rest. On Mondays and Saturday afternoons many of them are open. In tourist areas and some shopping centres, shops may also open on Sundays. In the exam, look for «Los domingos»."
+    },
+    "ro": {
+      "texto": "În ce zile închid de obicei majoritatea magazinelor sau a micilor comercianți?",
+      "opciones": [
+        "Lunea.",
+        "Duminica.",
+        "Sâmbăta după-amiaza."
+      ],
+      "explicacion": "Majoritatea magazinelor mici închid «los domingos» (duminica), ziua de odihnă săptămânală. Lunea și sâmbăta după-amiaza multe sunt deschise. În zonele turistice și în unele centre comerciale se poate deschide și duminica. La examen, caută răspunsul «Los domingos»."
+    },
+    "zh": {
+      "texto": "大多数商店或小商铺通常在哪天关门？",
+      "opciones": [
+        "星期一。",
+        "星期日。",
+        "星期六下午。"
+      ],
+      "explicacion": "大多数小商店在«domingo»（星期日）关门，这是每周的休息日。星期一和星期六下午很多店照常营业。在旅游区和部分购物中心，星期日也可能开门。考试时选«Los domingos»。"
+    },
+    "uk": {
+      "texto": "У які дні зазвичай зачиняється більшість магазинів або дрібна торгівля?",
+      "opciones": [
+        "У понеділок.",
+        "У неділю.",
+        "У суботу після обіду."
+      ],
+      "explicacion": "Більшість невеликих магазинів зачинена в «domingo» (неділю), бо це щотижневий день відпочинку. У понеділок і в суботу після обіду багато з них працює. У туристичних зонах і деяких торгових центрах можуть працювати й у неділю. На іспиті шукайте «Los domingos»."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5028": {
+    "es": {
+      "explicacion": "El pasaporte y el DNI se hacen en una «comisaría de policía», en las oficinas de la Policía Nacional, normalmente con cita previa. El registro civil inscribe nacimientos y matrimonios, y el Ayuntamiento gestiona el padrón. Truco: los documentos de identidad, en la comisaría."
+    },
+    "ar": {
+      "texto": "أين يُستخرج جواز السفر؟",
+      "opciones": [
+        "في السجل المدني (registro civil).",
+        "في مركز الشرطة (comisaría de policía).",
+        "في البلدية (Ayuntamiento)."
+      ],
+      "explicacion": "يُستخرج جواز السفر وبطاقة الهوية (DNI) في «comisaría de policía»، أي مكاتب الشرطة الوطنية (Policía Nacional)، وعادة بموعد مسبق. السجل المدني يسجّل الولادات والزواج، والبلدية تدير سجل السكان (padrón). للتذكر: وثائق الهوية في مركز الشرطة."
+    },
+    "fr": {
+      "texto": "Où fait-on le passeport ?",
+      "opciones": [
+        "À l'état civil (registro civil).",
+        "Dans un commissariat de police.",
+        "À la mairie (Ayuntamiento)."
+      ],
+      "explicacion": "Le passeport et le DNI (carte d'identité) se font dans une « comisaría de policía », dans les bureaux de la Policía Nacional, en général sur rendez-vous. Le « registro civil » inscrit les naissances et les mariages, et la mairie gère le « padrón ». Astuce : les papiers d'identité, c'est au commissariat."
+    },
+    "en": {
+      "texto": "Where do you get a passport?",
+      "opciones": [
+        "At the civil registry (registro civil).",
+        "At a police station.",
+        "At the Town Council (Ayuntamiento)."
+      ],
+      "explicacion": "Passports and the DNI (identity card) are issued at a «comisaría de policía», in National Police offices, usually by appointment. The «registro civil» records births and marriages, and the town council manages the «padrón» (residents' register). Tip: identity documents mean the police station."
+    },
+    "ro": {
+      "texto": "Unde se face pașaportul?",
+      "opciones": [
+        "La registrul civil (starea civilă).",
+        "La o secție de poliție.",
+        "La primărie (Ayuntamiento)."
+      ],
+      "explicacion": "Pașaportul și DNI-ul (buletinul spaniol) se fac la o «comisaría de policía», în birourile Poliției Naționale, de obicei cu programare. «Registro civil» înregistrează nașterile și căsătoriile, iar primăria se ocupă de «padrón». Truc: actele de identitate se fac la poliție."
+    },
+    "zh": {
+      "texto": "护照在哪里办理？",
+      "opciones": [
+        "在民事登记处（registro civil）。",
+        "在警察局。",
+        "在市政府（Ayuntamiento）。"
+      ],
+      "explicacion": "护照和身份证（DNI）在«comisaría de policía»（警察局）办理，也就是国家警察的办公室，通常需要预约。民事登记处负责登记出生和婚姻，市政府负责居民登记«padrón»。记忆技巧：身份证件找警察局。"
+    },
+    "uk": {
+      "texto": "Де оформлюють паспорт?",
+      "opciones": [
+        "У реєстрі актів цивільного стану (registro civil).",
+        "У поліцейському відділку.",
+        "У мерії (Ayuntamiento)."
+      ],
+      "explicacion": "Паспорт і DNI (посвідчення особи) оформлюють у «comisaría de policía», в офісах Національної поліції, зазвичай за попереднім записом. «Registro civil» реєструє народження і шлюби, а мерія веде «padrón». Підказка: документи, що посвідчують особу, роблять у поліції."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5029": {
+    "es": {
+      "explicacion": "El Ministerio de Igualdad trabaja contra la violencia de género y contra la «discriminación», por ejemplo por sexo o por orientación sexual. Igualdad significa que todas las personas tienen los mismos derechos. Truco: lo contrario de la igualdad es la discriminación."
+    },
+    "ar": {
+      "texto": "وزارة المساواة (Ministerio de Igualdad) هي المسؤولة عن مكافحة العنف القائم على النوع الاجتماعي و…",
+      "opciones": [
+        "الانفصال.",
+        "التمييز.",
+        "التضامن."
+      ],
+      "explicacion": "تعمل «Ministerio de Igualdad» (وزارة المساواة) ضد العنف القائم على النوع الاجتماعي وضد «discriminación» (التمييز)، مثلاً بسبب الجنس أو التوجه الجنسي. المساواة تعني أن لكل الناس الحقوق نفسها. للتذكر: عكس المساواة هو التمييز."
+    },
+    "fr": {
+      "texto": "Le ministère de l'Égalité est chargé de lutter contre la violence de genre et la…",
+      "opciones": [
+        "séparation.",
+        "discrimination.",
+        "solidarité."
+      ],
+      "explicacion": "Le « Ministerio de Igualdad » (ministère de l'Égalité) lutte contre la violence de genre et contre la « discriminación », par exemple liée au sexe ou à l'orientation sexuelle. L'égalité veut dire que toutes les personnes ont les mêmes droits. Astuce : le contraire de l'égalité, c'est la discrimination."
+    },
+    "en": {
+      "texto": "The Ministry of Equality is responsible for fighting gender-based violence and…",
+      "opciones": [
+        "separation.",
+        "discrimination.",
+        "solidarity."
+      ],
+      "explicacion": "The «Ministerio de Igualdad» (Ministry of Equality) works against gender-based violence and against «discriminación» (discrimination), for example because of sex or sexual orientation. Equality means everyone has the same rights. Tip: the opposite of equality is discrimination, and you do not fight solidarity."
+    },
+    "ro": {
+      "texto": "Ministerul Egalității are rolul de a lupta împotriva violenței de gen și a…",
+      "opciones": [
+        "separării.",
+        "discriminării.",
+        "solidarității."
+      ],
+      "explicacion": "«Ministerio de Igualdad» (Ministerul Egalității) luptă împotriva violenței de gen și împotriva «discriminación» (discriminării), de exemplu pe criterii de sex sau orientare sexuală. Egalitate înseamnă că toți oamenii au aceleași drepturi. Truc: opusul egalității este discriminarea."
+    },
+    "zh": {
+      "texto": "平等部负责打击性别暴力和……",
+      "opciones": [
+        "分离。",
+        "歧视。",
+        "团结。"
+      ],
+      "explicacion": "«Ministerio de Igualdad»（平等部）致力于打击性别暴力和«discriminación»（歧视），比如基于性别或性取向的歧视。平等就是人人享有相同的权利。记忆技巧：平等的反面就是歧视。"
+    },
+    "uk": {
+      "texto": "Міністерство рівності відповідає за боротьбу з гендерним насильством і…",
+      "opciones": [
+        "розлученням (розділенням).",
+        "дискримінацією.",
+        "солідарністю."
+      ],
+      "explicacion": "«Ministerio de Igualdad» (Міністерство рівності) бореться з гендерним насильством і з «discriminación» (дискримінацією), наприклад за статтю чи сексуальною орієнтацією. Рівність означає, що всі люди мають однакові права. Підказка: протилежність рівності це дискримінація."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5030": {
+    "es": {
+      "explicacion": "El «cava» es un vino espumoso, con burbujas, y la mayor parte se produce en «Cataluña», sobre todo en la zona del Penedès. Galicia es famosa por sus vinos blancos y Castilla-La Mancha por el queso manchego. Truco: «cava» y «Cataluña» empiezan por «ca»."
+    },
+    "ar": {
+      "texto": "أي منطقة حكم ذاتي (comunidad autónoma) معروفة بجودة نبيذ الكافا (cava) فيها؟",
+      "opciones": [
+        "غاليسيا (Galicia).",
+        "كتالونيا (Cataluña).",
+        "قشتالة-لا مانتشا (Castilla-La Mancha)."
+      ],
+      "explicacion": "«cava» نبيذ فوّار فيه فقاعات، ويُنتَج معظمه في «Cataluña» (كتالونيا)، خاصة في منطقة بينيديس (Penedès). أما غاليسيا فمشهورة بنبيذها الأبيض، وقشتالة-لا مانتشا بجبن «manchego». للتذكر: «cava» و«Cataluña» تبدآن بـ «ca»."
+    },
+    "fr": {
+      "texto": "Quelle communauté autonome est connue pour la qualité de ses cavas ?",
+      "opciones": [
+        "Galice (Galicia).",
+        "Catalogne (Cataluña).",
+        "Castille-La Manche (Castilla-La Mancha)."
+      ],
+      "explicacion": "Le « cava » est un vin mousseux, et la plus grande partie est produite en « Cataluña » (Catalogne), surtout dans la région du Penedès. La Galice est célèbre pour ses vins blancs et la Castille-La Manche pour le fromage manchego. Astuce : « cava » et « Cataluña » commencent par « ca »."
+    },
+    "en": {
+      "texto": "Which autonomous community is known for the quality of its cavas?",
+      "opciones": [
+        "Galicia.",
+        "Catalonia (Cataluña).",
+        "Castile-La Mancha (Castilla-La Mancha)."
+      ],
+      "explicacion": "«Cava» is a sparkling wine, and most of it is produced in «Cataluña» (Catalonia), especially in the Penedès area. Galicia is famous for its white wines and Castile-La Mancha for Manchego cheese. Tip: «cava» and «Cataluña» both start with «ca»."
+    },
+    "ro": {
+      "texto": "Ce comunitate autonomă este cunoscută pentru calitatea cava-urilor sale?",
+      "opciones": [
+        "Galicia.",
+        "Catalonia (Cataluña).",
+        "Castilia-La Mancha (Castilla-La Mancha)."
+      ],
+      "explicacion": "«Cava» este un vin spumant, iar cea mai mare parte se produce în «Cataluña» (Catalonia), mai ales în zona Penedès. Galicia este cunoscută pentru vinurile albe, iar Castilia-La Mancha pentru brânza manchego. Truc: «cava» și «Cataluña» încep amândouă cu «ca»."
+    },
+    "zh": {
+      "texto": "哪个自治区以优质卡瓦起泡酒（cava）闻名？",
+      "opciones": [
+        "加利西亚（Galicia）。",
+        "加泰罗尼亚（Cataluña）。",
+        "卡斯蒂利亚-拉曼恰（Castilla-La Mancha）。"
+      ],
+      "explicacion": "«cava»是一种起泡葡萄酒，大部分产自«Cataluña»（加泰罗尼亚），尤其是佩内德斯（Penedès）地区。加利西亚以白葡萄酒闻名，卡斯蒂利亚-拉曼恰以曼切戈奶酪闻名。记忆技巧：«cava»和«Cataluña»都以«ca»开头。"
+    },
+    "uk": {
+      "texto": "Яка автономна спільнота відома якістю своїх кав (ігристих вин cava)?",
+      "opciones": [
+        "Галісія (Galicia).",
+        "Каталонія (Cataluña).",
+        "Кастилія-Ла-Манча (Castilla-La Mancha)."
+      ],
+      "explicacion": "«Cava» це ігристе вино, і більша його частина виробляється в «Cataluña» (Каталонії), особливо в районі Пенедес. Галісія відома білими винами, а Кастилія-Ла-Манча сиром манчего. Підказка: «cava» і «Cataluña» обидва починаються на «ca»."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5031": {
+    "es": {
+      "explicacion": "Para ir al médico en la sanidad pública necesitas la «tarjeta sanitaria», que te da tu comunidad autónoma. El pasaporte sirve para viajar y el certificado de nacimiento demuestra tus datos, pero no dan acceso al médico. Truco: «sanitaria» viene de sanidad."
+    },
+    "ar": {
+      "texto": "ما الوثيقة اللازمة لتلقي الرعاية الطبية في نظام الصحة العامة؟",
+      "opciones": [
+        "جواز السفر.",
+        "البطاقة الصحية (tarjeta sanitaria).",
+        "شهادة الميلاد."
+      ],
+      "explicacion": "للذهاب إلى الطبيب في الصحة العامة تحتاج إلى «tarjeta sanitaria» (البطاقة الصحية)، التي تمنحها لك منطقة الحكم الذاتي التي تعيش فيها. جواز السفر للسفر، وشهادة الميلاد تثبت بياناتك، لكنهما لا تفتحان باب الطبيب. للتذكر: «sanitaria» من كلمة «sanidad» أي الصحة."
+    },
+    "fr": {
+      "texto": "Quel document faut-il pour recevoir des soins médicaux dans la santé publique ?",
+      "opciones": [
+        "Le passeport.",
+        "La carte sanitaire.",
+        "L'acte de naissance."
+      ],
+      "explicacion": "Pour aller chez le médecin dans le système public, il faut la « tarjeta sanitaria » (carte sanitaire), délivrée par votre communauté autonome. Le passeport sert à voyager et l'acte de naissance prouve votre identité, mais ils ne donnent pas accès aux soins. Astuce : « sanitaria » vient de « sanidad » (santé)."
+    },
+    "en": {
+      "texto": "Which document do you need to receive medical care in the public health system?",
+      "opciones": [
+        "Your passport.",
+        "The health card.",
+        "Your birth certificate."
+      ],
+      "explicacion": "To see a doctor in the public health system you need the «tarjeta sanitaria» (health card), issued by your autonomous community. A passport is for travelling and a birth certificate proves your personal details, but neither gives access to a doctor. Tip: «sanitaria» comes from «sanidad» (health care)."
+    },
+    "ro": {
+      "texto": "Ce document este necesar pentru a primi asistență medicală în sistemul public de sănătate?",
+      "opciones": [
+        "Pașaportul.",
+        "Cardul de sănătate.",
+        "Certificatul de naștere."
+      ],
+      "explicacion": "Ca să mergi la medic în sistemul public ai nevoie de «tarjeta sanitaria» (cardul de sănătate), emis de comunitatea ta autonomă. Pașaportul e pentru călătorii, iar certificatul de naștere îți dovedește datele, dar nu dau acces la medic. Truc: «sanitaria» vine de la «sanidad» (sănătate)."
+    },
+    "zh": {
+      "texto": "在公共医疗系统看病需要什么证件？",
+      "opciones": [
+        "护照。",
+        "医疗卡。",
+        "出生证明。"
+      ],
+      "explicacion": "在公立医疗系统看病需要«tarjeta sanitaria»（医疗卡），由你所在的自治区发放。护照用于出行，出生证明证明个人信息，但都不能用来看病。记忆技巧：«sanitaria»来自«sanidad»（医疗卫生）。"
+    },
+    "uk": {
+      "texto": "Який документ потрібен, щоб отримати медичну допомогу в державній системі охорони здоров'я?",
+      "opciones": [
+        "Паспорт.",
+        "Медична картка.",
+        "Свідоцтво про народження."
+      ],
+      "explicacion": "Щоб піти до лікаря в державній медицині, потрібна «tarjeta sanitaria» (медична картка), яку видає ваша автономна спільнота. Паспорт потрібен для подорожей, а свідоцтво про народження підтверджує ваші дані, але доступу до лікаря вони не дають. Підказка: «sanitaria» походить від «sanidad» (охорона здоров'я)."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5032": {
+    "es": {
+      "explicacion": "En Canarias es «una hora menos» que en la Península: si en Madrid son las 12, en Canarias son las 11. Por eso en la radio se oye a menudo «una hora menos en Canarias». Truco: esa frase de la radio es justo la respuesta."
+    },
+    "ar": {
+      "texto": "التوقيت في جزر الكناري، مقارنة بشبه الجزيرة، هو…",
+      "opciones": [
+        "ساعتان أقل.",
+        "ساعة واحدة أقل.",
+        "ساعة واحدة أكثر."
+      ],
+      "explicacion": "في جزر الكناري الوقت «una hora menos» أي ساعة واحدة أقل من شبه الجزيرة: إذا كانت الساعة 12 في مدريد فهي 11 في الكناري. لهذا يُسمع كثيراً في الراديو «una hora menos en Canarias». للتذكر: هذه الجملة الإذاعية هي الجواب نفسه."
+    },
+    "fr": {
+      "texto": "Par rapport à la Péninsule, l'heure aux Canaries est de…",
+      "opciones": [
+        "deux heures de moins.",
+        "une heure de moins.",
+        "une heure de plus."
+      ],
+      "explicacion": "Aux Canaries, il est « una hora menos » (une heure de moins) que dans la Péninsule : s'il est midi à Madrid, il est 11 heures aux Canaries. C'est pourquoi on entend souvent à la radio « una hora menos en Canarias ». Astuce : cette phrase de la radio est la réponse."
+    },
+    "en": {
+      "texto": "Compared with the Peninsula, the time in the Canary Islands is…",
+      "opciones": [
+        "two hours behind.",
+        "one hour behind.",
+        "one hour ahead."
+      ],
+      "explicacion": "The Canary Islands are «una hora menos» (one hour behind) the Peninsula: when it is 12 in Madrid, it is 11 in the Canaries. That is why Spanish radio often says «una hora menos en Canarias». Tip: that radio phrase is exactly the answer."
+    },
+    "ro": {
+      "texto": "Ora din Insulele Canare, față de Peninsulă, este cu…",
+      "opciones": [
+        "două ore mai puțin.",
+        "o oră mai puțin.",
+        "o oră mai mult."
+      ],
+      "explicacion": "În Insulele Canare este «una hora menos» (o oră mai puțin) decât în Peninsulă: când la Madrid e ora 12, în Canare e ora 11. De aceea la radio se aude des «una hora menos en Canarias». Truc: această frază de la radio este chiar răspunsul."
+    },
+    "zh": {
+      "texto": "与半岛相比，加那利群岛的时间……",
+      "opciones": [
+        "晚两个小时。",
+        "晚一个小时。",
+        "早一个小时。"
+      ],
+      "explicacion": "加那利群岛比西班牙半岛«una hora menos»，即晚一个小时：马德里12点时，加那利是11点。所以电台常说«una hora menos en Canarias»。记忆技巧：这句电台用语就是答案。"
+    },
+    "uk": {
+      "texto": "Час на Канарських островах порівняно з Півостровом…",
+      "opciones": [
+        "на дві години менше.",
+        "на одну годину менше.",
+        "на одну годину більше."
+      ],
+      "explicacion": "На Канарських островах «una hora menos», тобто на годину менше, ніж на Півострові: коли в Мадриді 12, на Канарах 11. Тому по радіо часто кажуть «una hora menos en Canarias». Підказка: ця фраза з радіо і є відповіддю."
+    },
+    "revision": {
+      "ok": true
+    }
+  },
+  "5033": {
+    "es": {
+      "explicacion": "La prueba para entrar en la Universidad se llama oficialmente «Prueba de Acceso a la Universidad» (PAU). Mucha gente la llama «Selectividad», pero ese es un nombre popular, no el oficial. Truco: el nombre oficial dice para qué sirve: acceder a la Universidad.",
+      "nota": "Para el examen vale «Prueba de Acceso a la Universidad», aunque en la calle se llama «Selectividad» y en algunas comunidades se usan otras siglas como EBAU o EvAU."
+    },
+    "ar": {
+      "texto": "للالتحاق بالجامعة يجب اجتياز امتحان تقييمي يُسمّى…",
+      "opciones": [
+        "سيليكتيفيداد (Selectividad).",
+        "الامتحان ما قبل الجامعي.",
+        "امتحان الالتحاق بالجامعة (Prueba de Acceso a la Universidad)."
+      ],
+      "explicacion": "الاسم الرسمي لامتحان دخول الجامعة هو «Prueba de Acceso a la Universidad» (PAU). كثير من الناس يسمّونه «Selectividad»، لكنه اسم شعبي وليس الاسم الرسمي. للتذكر: الاسم الرسمي يشرح وظيفته، أي الدخول إلى الجامعة.",
+      "nota": "في الامتحان الجواب هو «Prueba de Acceso a la Universidad»، مع أن الناس يسمّونه «Selectividad» وتستعمل بعض المناطق اختصارات أخرى مثل EBAU أو EvAU."
+    },
+    "fr": {
+      "texto": "Pour entrer à l'université, il faut réussir une épreuve d'évaluation appelée…",
+      "opciones": [
+        "Selectividad.",
+        "Examen pré-universitaire.",
+        "Épreuve d'accès à l'université (Prueba de Acceso a la Universidad)."
+      ],
+      "explicacion": "Le nom officiel de l'examen d'entrée à l'université est « Prueba de Acceso a la Universidad » (PAU). Beaucoup de gens l'appellent « Selectividad », mais c'est un nom populaire, pas le nom officiel. Astuce : le nom officiel dit à quoi sert l'épreuve : accéder à l'université.",
+      "nota": "Pour l'examen, la réponse est « Prueba de Acceso a la Universidad », même si on l'appelle couramment « Selectividad » et que certaines régions utilisent d'autres sigles comme EBAU ou EvAU."
+    },
+    "en": {
+      "texto": "To get into university you must pass an assessment test called…",
+      "opciones": [
+        "Selectividad.",
+        "Pre-university exam.",
+        "University Entrance Exam (Prueba de Acceso a la Universidad)."
+      ],
+      "explicacion": "The official name of the university entrance exam is «Prueba de Acceso a la Universidad» (PAU). Many people call it «Selectividad», but that is a popular name, not the official one. Tip: the official name says what it is for: access to university.",
+      "nota": "For the exam the answer is «Prueba de Acceso a la Universidad», although people commonly say «Selectividad» and some regions use other acronyms such as EBAU or EvAU."
+    },
+    "ro": {
+      "texto": "Pentru a intra la universitate trebuie promovată o probă de evaluare numită…",
+      "opciones": [
+        "Selectividad.",
+        "Examen preuniversitar.",
+        "Proba de acces la universitate (Prueba de Acceso a la Universidad)."
+      ],
+      "explicacion": "Numele oficial al examenului de intrare la universitate este «Prueba de Acceso a la Universidad» (PAU). Mulți îi spun «Selectividad», dar acesta e un nume popular, nu cel oficial. Truc: numele oficial spune la ce folosește: accesul la universitate.",
+      "nota": "La examen răspunsul este «Prueba de Acceso a la Universidad», deși în mod obișnuit i se spune «Selectividad», iar unele regiuni folosesc alte sigle, precum EBAU sau EvAU."
+    },
+    "zh": {
+      "texto": "进入大学必须通过一项评估考试，叫做……",
+      "opciones": [
+        "Selectividad（选拔考试）。",
+        "大学预科考试。",
+        "大学入学考试（Prueba de Acceso a la Universidad）。"
+      ],
+      "explicacion": "大学入学考试的正式名称是«Prueba de Acceso a la Universidad»（PAU）。很多人叫它«Selectividad»，但那是俗称，不是正式名称。记忆技巧：正式名称直接说明了用途——进入大学。",
+      "nota": "考试时以«Prueba de Acceso a la Universidad»为准；不过日常常叫«Selectividad»，有些自治区还用EBAU或EvAU等缩写。"
+    },
+    "uk": {
+      "texto": "Щоб вступити до університету, треба скласти оцінювальний іспит, який називається…",
+      "opciones": [
+        "Selectividad (Селективідад).",
+        "Доуніверситетський іспит.",
+        "Вступний іспит до університету (Prueba de Acceso a la Universidad)."
+      ],
+      "explicacion": "Офіційна назва вступного іспиту до університету «Prueba de Acceso a la Universidad» (PAU). Багато хто називає його «Selectividad», але це народна, а не офіційна назва. Підказка: офіційна назва пояснює, для чого іспит: доступ до університету.",
+      "nota": "На іспиті правильна відповідь «Prueba de Acceso a la Universidad», хоча в побуті кажуть «Selectividad», а в деяких регіонах вживають інші абревіатури, як-от EBAU чи EvAU."
+    },
+    "revision": {
+      "ok": false,
+      "motivo": "«Selectividad» es el nombre popular de la misma prueba y en varias comunidades se ha llamado EBAU/EvAU; la opción A puede parecer correcta. El manual elige el nombre formal (PAU)."
+    }
+  },
+  "5034": {
+    "es": {
+      "explicacion": "España casi no tiene «petróleo» propio, así que lo compra a otros países para la energía y el transporte. En cambio, es el mayor productor de aceite de oliva del mundo y fabrica muchos medicamentos. Truco: el petróleo viene de fuera; el aceite, de los olivos españoles."
+    },
+    "ar": {
+      "texto": "أيّ من هذه المنتجات تحتاج إسبانيا إلى استيراده من دول أخرى؟",
+      "opciones": [
+        "النفط.",
+        "زيت الزيتون.",
+        "الأدوية."
+      ],
+      "explicacion": "لا تملك إسبانيا تقريباً «petróleo» (نفط) خاصاً بها، لذلك تشتريه من دول أخرى للطاقة والنقل. في المقابل، هي أكبر منتج لزيت الزيتون في العالم وتصنع كثيراً من الأدوية. للتذكر: النفط يأتي من الخارج، والزيت من أشجار الزيتون الإسبانية."
+    },
+    "fr": {
+      "texto": "Lequel de ces produits l'Espagne doit-elle importer d'autres pays ?",
+      "opciones": [
+        "Le pétrole.",
+        "L'huile d'olive.",
+        "Les médicaments."
+      ],
+      "explicacion": "L'Espagne n'a presque pas de « petróleo » (pétrole) à elle, donc elle l'achète à d'autres pays pour l'énergie et les transports. En revanche, elle est le premier producteur mondial d'huile d'olive et fabrique beaucoup de médicaments. Astuce : le pétrole vient de l'étranger, l'huile vient des oliviers espagnols."
+    },
+    "en": {
+      "texto": "Which of these products does Spain need to import from other countries?",
+      "opciones": [
+        "Oil (petroleum).",
+        "Olive oil.",
+        "Medicines."
+      ],
+      "explicacion": "Spain has almost no «petróleo» (crude oil) of its own, so it buys it from other countries for energy and transport. On the other hand, it is the world's largest olive oil producer and makes many medicines. Tip: petroleum comes from abroad; olive oil comes from Spanish olive trees."
+    },
+    "ro": {
+      "texto": "Care dintre aceste produse trebuie Spania să le importe din alte țări?",
+      "opciones": [
+        "Petrolul.",
+        "Uleiul de măsline.",
+        "Medicamentele."
+      ],
+      "explicacion": "Spania aproape că nu are «petróleo» (petrol) propriu, așa că îl cumpără din alte țări pentru energie și transport. În schimb, este cel mai mare producător de ulei de măsline din lume și fabrică multe medicamente. Truc: petrolul vine din afară, uleiul vine din măslinii spanioli."
+    },
+    "zh": {
+      "texto": "下列哪种产品是西班牙需要从其他国家进口的？",
+      "opciones": [
+        "石油。",
+        "橄榄油。",
+        "药品。"
+      ],
+      "explicacion": "西班牙几乎没有自己的«petróleo»（石油），所以要从其他国家购买，用于能源和交通。相反，西班牙是世界最大的橄榄油生产国，也生产很多药品。记忆技巧：石油靠进口，橄榄油来自本国的橄榄树。"
+    },
+    "uk": {
+      "texto": "Який із цих продуктів Іспанії доводиться імпортувати з інших країн?",
+      "opciones": [
+        "Нафту.",
+        "Оливкову олію.",
+        "Ліки."
+      ],
+      "explicacion": "Іспанія майже не має власної «petróleo» (нафти), тому купує її в інших країнах для енергетики й транспорту. Натомість вона найбільший у світі виробник оливкової олії і виробляє багато ліків. Підказка: нафта надходить ззовні, а олія з іспанських оливкових дерев."
+    },
+    "revision": {
+      "ok": true
+    }
+  }
+}

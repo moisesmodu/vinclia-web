@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  claveHash    String
+  idioma       String    @default("es")
+  pais         String    @default("ES")
+  accesoHasta  DateTime?
+  progreso     Json?
+  simulacros   Int       @default(0)
+  creado       DateTime  @default(now())
+  actualizado  DateTime  @updatedAt
+  pagos        Pago[]
+  tokens       TokenClave[]
+}
+
+model Pago {
+  id          String   @id @default(cuid())
+  sesionId    String   @unique
+  usuarioId   String
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  importe     Int
+  moneda      String
+  modo        String   // test | live
+  creado      DateTime @default(now())
+}
+
+model TokenClave {
+  token      String   @id
+  usuarioId  String
+  usuario    Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  caduca     DateTime
+}
+
+model Config {
+  clave  String @id
+  valor  String
+}

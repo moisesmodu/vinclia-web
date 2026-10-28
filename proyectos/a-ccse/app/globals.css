@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marca: #b4232a;
+  --color-marca-osc: #8a1a20;
+  --color-oro: #f2b705;
+  --color-tinta: #1d2330;
+  --color-suave: #5b6475;
+  --color-fondo: #faf8f5;
+  --color-ok: #15803d;
+  --color-mal: #c2410c;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--color-fondo); color: var(--color-tinta); font-family: var(--font-sans); }
+.contenedor { width: 100%; max-width: 64rem; margin-inline: auto; padding-inline: 1rem; }
+.tarjeta { background: white; border-radius: 1rem; border: 1px solid #e7e2da; box-shadow: 0 1px 2px rgb(0 0 0 / 0.04); }
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: .75rem; padding: .75rem 1.25rem; font-weight: 600; min-height: 48px; transition: background .15s; }
+.boton-1 { background: var(--color-marca); color: white; }
+.boton-1:hover { background: var(--color-marca-osc); }
+.boton-2 { background: white; color: var(--color-tinta); border: 1px solid #d6d0c6; }
+.boton-2:hover { background: #f3efe9; }
+.boton:disabled { opacity: .5; cursor: not-allowed; }
+.prosa h2 { font-size: 1.35rem; font-weight: 700; margin: 1.6rem 0 .6rem; }
+.prosa h3 { font-size: 1.1rem; font-weight: 700; margin: 1.2rem 0 .4rem; }
+.prosa p { margin: .6rem 0; line-height: 1.65; }
+.prosa ul, .prosa ol { margin: .6rem 0; padding-inline-start: 1.4rem; line-height: 1.6; }
+.prosa ul { list-style: disc; } .prosa ol { list-style: decimal; }
+.prosa a { color: var(--color-marca); text-decoration: underline; }
+.prosa table { width: 100%; border-collapse: collapse; margin: .8rem 0; font-size: .95rem; }
+.prosa th, .prosa td { border: 1px solid #e7e2da; padding: .45rem .6rem; text-align: start; }
+.prosa th { background: #f3efe9; }
+:focus-visible { outline: 3px solid var(--color-oro); outline-offset: 2px; }

@@ -1,0 +1,51 @@
+import type { Metadata, Viewport } from 'next';
+import { notFound } from 'next/navigation';
+import '../globals.css';
+import { LOCALES, RTL, SITE_URL, esLocale, type Locale } from '@/lib/config';
+import { mensajes, traductor } from '@/lib/i18n';
+import { EstadoProvider } from '@/components/Estado';
+import { Cabecera } from '@/components/Cabecera';
+import { Pie } from '@/components/Pie';
+import { RegistrarSW } from '@/components/RegistrarSW';
+
+export const dynamicParams = false;
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+export const viewport: Viewport = { themeColor: '#b4232a', width: 'device-width', initialScale: 1 };
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!esLocale(locale)) return {};
+  const t = traductor(locale);
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: t('inicio.h1'), template: `%s · ${t('marca')}` },
+    description: t('inicio.sub'),
+    applicationName: t('marca'),
+    manifest: '/manifest.webmanifest',
+    icons: { icon: '/icons/icon.svg', apple: '/icons/icon-192.png' },
+    openGraph: { siteName: t('marca'), type: 'website', locale },
+    appleWebApp: { capable: true, title: 'CCSE' },
+  };
+}
+
+export default async function Layout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!esLocale(locale)) notFound();
+  const l = locale as Locale;
+  const umami = process.env.NEXT_PUBLIC_UMAMI_SRC;
+  return (
+    <html lang={l} dir={RTL.includes(l) ? 'rtl' : 'ltr'}>
+      <body className="min-h-dvh">
+        <EstadoProvider locale={l} mensajes={mensajes(l)}>
+          <Cabecera locale={l} />
+          <main className="contenedor py-6">{children}</main>
+          <Pie locale={l} />
+        </EstadoProvider>
+        <RegistrarSW />
+        {umami && <script defer src={umami} data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID} />}
+      </body>
+    </html>
+  );
+}

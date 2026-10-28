@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1001,
+  "tarea": 1,
+  "texto": "España es…",
+  "opciones": [
+   "una monarquía parlamentaria.",
+   "una república federal.",
+   "una monarquía federal."
+  ],
+  "respuesta": 0,
+  "pagina": 6
+ },
+ {
+  "id": 1002,
+  "tarea": 1,
+  "texto": "La ley fundamental de España se llama…",
+  "opciones": [
+   "Constitución.",
+   "Ley básica.",
+   "Ordenamiento esencial."
+  ],
+  "respuesta": 0,
+  "pagina": 6
+ },
+ {
+  "id": 1003,
+  "tarea": 1,
+  "texto": "Según la Constitución española, la soberanía nacional reside en…",
+  "opciones": [
+   "el pueblo español.",
+   "el Gobierno del Estado.",
+   "el Congreso de los Diputados."
+  ],
+  "respuesta": 0,
+  "pagina": 6
+ },
+ {
+  "id": 1004,
+  "tarea": 1,
+  "texto": "El Instituto de las Mujeres es…",
+  "opciones": [
+   "una institución europea.",
+   "un organismo español.",
+   "una ONG."
+  ],
+  "respuesta": 1,
+  "pagina": 11
+ },
+ {
+  "id": 1005,
+  "tarea": 1,
+  "texto": "¿Cuándo puedo hacer los trámites en la sede electrónica?",
+  "opciones": [
+   "En cualquier horario.",
+   "Únicamente por la mañana.",
+   "De lunes a viernes."
+  ],
+  "respuesta": 0,
+  "pagina": 15
+ },
+ {
+  "id": 1006,
+  "tarea": 1,
+  "texto": "El castellano o español es lengua oficial…",
+  "opciones": [
+   "en toda España.",
+   "solo donde no hay otras lenguas.",
+   "en toda la península ibérica."
+  ],
+  "respuesta": 0,
+  "pagina": 7
+ },
+ {
+  "id": 1007,
+  "tarea": 1,
+  "texto": "¿Cuál de estas fuerzas de seguridad es de ámbito autonómico?",
+  "opciones": [
+   "Policía local.",
+   "Guardia Civil.",
+   "Policía Foral de Navarra."
+  ],
+  "respuesta": 2,
+  "pagina": 11
+ },
+ {
+  "id": 1008,
+  "tarea": 1,
+  "texto": "¿Qué fuerza de seguridad está en toda España?",
+  "opciones": [
+   "La Policía Foral de Navarra.",
+   "El Cuerpo Nacional de Policía.",
+   "Los Mossos d’Esquadra."
+  ],
+  "respuesta": 1,
+  "pagina": 11
+ },
+ {
+  "id": 1009,
+  "tarea": 1,
+  "texto": "En la Constitución se establece la separación de poderes: el poder ejecutivo, el legislativo y el…",
+  "opciones": [
+   "judicial.",
+   "informativo.",
+   "político."
+  ],
+  "respuesta": 0,
+  "pagina": 9
+ },
+ {
+  "id": 1010,
+  "tarea": 1,
+  "texto": "La bandera de España debe utilizarse…",
+  "opciones": [
+   "solo los días de fiesta oficial.",
+   "en todos los edificios públicos.",
+   "solo en actos del Gobierno español."
+  ],
+  "respuesta": 1,
+  "pagina": 6
+ },
+ {
+  "id": 1011,
+  "tarea": 1,
+  "texto": "¿Quién es el jefe del Estado en España?",
+  "opciones": [
+   "El presidente del Gobierno.",
+   "El rey.",
+   "El ministro de Economía."
+  ],
+  "respuesta": 1,
+  "pagina": 8
+ },
+ {
+  "id": 1012,
+  "tarea": 1,
+  "texto": "La gestión de la sanidad es competencia de…",
+  "opciones": [
+   "el Estado.",
+   "las comunidades autónomas.",
+   "los ayuntamientos."
+  ],
+  "respuesta": 1,
+  "pagina": 13
+ },
+ {
+  "id": 1013,
+  "tarea": 1,
+  "texto": "¿Quién fue el primer presidente del Gobierno de España en democracia?",
+  "opciones": [
+   "Mariano Rajoy.",
+   "Adolfo Suárez.",
+   "José Luis Rodríguez Zapatero."
+  ],
+  "respuesta": 1,
+  "pagina": 17
+ },
+ {
+  "id": 1014,
+  "tarea": 1,
+  "texto": "¿Cuál de estos organismos se encarga de interpretar la Constitución?",
+  "opciones": [
+   "El Poder Constitucional.",
+   "El Tribunal Constitucional.",
+   "El Consejo General del Poder Judicial."
+  ],
+  "respuesta": 1,
+  "pagina": 10
+ },
+ {
+  "id": 1015,
+  "tarea": 1,
+  "texto": "¿Quién modera el funcionamiento de las instituciones españolas?",
+  "opciones": [
+   "El presidente del Gobierno.",
+   "El rey.",
+   "El director de la Real Academia Española."
+  ],
+  "respuesta": 1,
+  "pagina": 8
+ },
+ {
+  "id": 1016,
+  "tarea": 1,
+  "texto": "¿Cómo se llama la cámara de representación territorial en España?",
+  "opciones": [
+   "Senado.",
+   "Diputación permanente.",
+   "Congreso de los Diputados."
+  ],
+  "respuesta": 0,
+  "pagina": 9
+ },
+ {
+  "id": 1017,
+  "tarea": 1,
+  "texto": "¿Qué se necesita para hacer trámites por internet con la Administración?",
+  "opciones": [
+   "Un pasaporte válido.",
+   "Una firma electrónica.",
+   "Una firma en papel."
+  ],
+  "respuesta": 1,
+  "pagina": 15
+ },
+ {
+  "id": 1018,
+  "tarea": 1,
+  "texto": "¿Cómo se aprobó la Constitución?",
+  "opciones": [
+   "Por imposición legal.",
+   "Por referéndum.",
+   "Por el Tribunal Constitucional."
+  ],
+  "respuesta": 1,
+  "pagina": 6
+ },
+ {
+  "id": 1019,
+  "tarea": 1,
+  "texto": "¿Cómo se llama la ley más importante de cada comunidad autónoma?",
+  "opciones": [
+   "Estatuto de Autonomía.",
+   "Normativa autonómica.",
+   "Ley de la comunidad."
+  ],
+  "respuesta": 0,
+  "pagina": 12
+ },
+ {
+  "id": 1020,
+  "tarea": 1,
+  "texto": "Las instalaciones culturales y deportivas públicas son competencia del…",
+  "opciones": [
+   "Ayuntamiento.",
+   "Ministerio de Educación, Formación Profesional y Deportes.",
+   "Ministerio de Igualdad."
+  ],
+  "respuesta": 0,
+  "pagina": 14
+ },
+ {
+  "id": 1021,
+  "tarea": 1,
+  "texto": "¿Quién dirige la administración militar de España?",
+  "opciones": [
+   "Los ayuntamientos.",
+   "El Gobierno.",
+   "Las Cortes Generales."
+  ],
+  "respuesta": 1,
+  "pagina": 9
+ },
+ {
+  "id": 1022,
+  "tarea": 1,
+  "texto": "¿Qué hay en las Islas Baleares, en vez de diputaciones?",
+  "opciones": [
+   "Cabildos.",
+   "Consejos insulares.",
+   "Centros de diputados."
+  ],
+  "respuesta": 1,
+  "pagina": 14
+ },
+ {
+  "id": 1023,
+  "tarea": 1,
+  "texto": "¿Qué ciudad tiene más habitantes?",
+  "opciones": [
+   "Sevilla.",
+   "Barcelona.",
+   "Zaragoza."
+  ],
+  "respuesta": 1,
+  "pagina": 15
+ },
+ {
+  "id": 1024,
+  "tarea": 1,
+  "texto": "Las Cortes Generales representan…",
+  "opciones": [
+   "al pueblo español.",
+   "a los partidos políticos.",
+   "a los ministros."
+  ],
+  "respuesta": 0,
+  "pagina": 9
+ },
+ {
+  "id": 1025,
+  "tarea": 1,
+  "texto": "El Congreso de los Diputados y el Senado constituyen el poder…",
+  "opciones": [
+   "ejecutivo.",
+   "legislativo.",
+   "judicial."
+  ],
+  "respuesta": 1,
+  "pagina": 9
+ }
+]
