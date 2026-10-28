@@ -142,3 +142,9 @@ Ejecutado el 2026-10-28
 Publicados la identidad de marca y la portada nueva (commit 6b3d3e0) en https://lunilla.vercel.app; el título es «Lunilla · Un cuento donde el protagonista eres tú». `LEGAL_*`, `CORREO_SOPORTE` (= `LEGAL_EMAIL`) y `RESEND_API_KEY` copiados en Vercel desde el proyecto ccse-en-tu-idioma; remitente `Lunilla <noreply@numimates.com>`. No se ha conectado el repositorio a Vercel: con commits de «Claude», Vercel bloquearía los despliegues automáticos. Pendiente: alta en Gelato y `GELATO_API_KEY` (Moisés) y el pago de prueba con la tarjeta 4242.
 
 Ejecutado el 2026-10-28
+
+### Pendiente: redesplegar libros de 18/22 páginas (b61da1b, 28-10-2026)
+Libros de 18 y 22 páginas por edad, creador con avatar, texto editable antes de pagar y portada con «Para cada edad» y
+«Tú decides». Sin cambios en el esquema de Prisma (los campos nuevos van dentro de `datos`, que es JSON) ni variables
+nuevas: basta con `vercel --prod` desde `proyectos/g-cuentos`. Comprobación: `/crear` muestra los 4 pasos y
+`/muestras/leo-y-la-luz-de-la-luna` tiene 18 páginas.
