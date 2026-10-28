@@ -5,7 +5,7 @@ import { formatear, type Clave, type Mensajes } from '@/lib/i18n';
 import { esProgreso, fusionar, progresoVacio, type Progreso, type Simulacro } from '@/lib/progreso';
 import { registrarRespuesta } from '@/lib/repaso';
 
-type Usuario = { email: string; accesoHasta: string | null; acceso: boolean; simulacros: number } | null;
+type Usuario = { email: string; accesoHasta: string | null; acceso: boolean; simulacros: number; pagoPendiente?: boolean } | null;
 type Ctx = {
   locale: Locale;
   t: (k: Clave, v?: Record<string, string | number>) => string;

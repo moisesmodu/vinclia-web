@@ -237,5 +237,13 @@
  "plan.d": "Te quedan {q} preguntas por dominar y {n} días: {x} preguntas al día.",
  "plan.sinFecha": "Elige la fecha de tu examen y te decimos cuántas preguntas hacer cada día.",
  "plan.hoy": "Empezar las de hoy",
- "home.miniEtiqueta": "Test gratis · 1 minuto"
+ "home.miniEtiqueta": "Test gratis · 1 minuto",
+ "oferta.contador": "Gratis: {x} de {t}",
+ "oferta.tema": "Has hecho las {g} preguntas gratis de este tema. En el examen puede salir cualquiera de las {n}: desbloquéalas todas, explicadas en tu idioma.",
+ "oferta.todas": "Ya has usado las 25 preguntas gratis. Te quedan 275 que pueden salir en tu examen.",
+ "oferta.boton": "Desbloquear todo por {p}",
+ "oferta.letra": "Pago único · {d} días · garantía de aprobado",
+ "rec.t": "Tu pago quedó a medias",
+ "rec.d": "Termínalo en un clic y desbloquea las 300 preguntas explicadas en tu idioma.",
+ "rec.cta": "Terminar el pago"
 }

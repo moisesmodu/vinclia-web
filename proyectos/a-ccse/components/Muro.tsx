@@ -1,7 +1,7 @@
 'use client';
-import Link from 'next/link';
 import { useEstado } from './Estado';
 import { precioTexto } from '@/lib/config';
+import { BotonPagar } from './BotonPagar';
 
 export function Muro({ texto }: { texto?: string }) {
   const { t, locale } = useEstado();
@@ -10,7 +10,7 @@ export function Muro({ texto }: { texto?: string }) {
       <h2 className="text-xl font-bold">{t('muro.t')}</h2>
       {texto && <p className="mt-1 font-semibold">{texto}</p>}
       <p className="mt-2 text-suave">{t('muro.d', { p: precioTexto(locale) })}</p>
-      <Link href={`/${locale}/precio`} className="boton boton-1 mt-4">{t('muro.cta')}</Link>
+      <BotonPagar clase="boton boton-1 mt-4" />
     </div>
   );
 }

@@ -237,5 +237,13 @@
  "plan.d": "Il te reste {q} questions à maîtriser et {n} jours : {x} questions par jour.",
  "plan.sinFecha": "Choisis la date de ton examen et on te dit combien de questions faire chaque jour.",
  "plan.hoy": "Commencer celles du jour",
- "home.miniEtiqueta": "Test gratuit · 1 minute"
+ "home.miniEtiqueta": "Test gratuit · 1 minute",
+ "oferta.contador": "Gratuit : {x} sur {t}",
+ "oferta.tema": "Tu as fait les {g} questions gratuites de ce thème. À l'examen, n'importe laquelle des {n} peut tomber : débloque-les toutes, expliquées dans ta langue.",
+ "oferta.todas": "Tu as utilisé les 25 questions gratuites. Il en reste 275 qui peuvent tomber à ton examen.",
+ "oferta.boton": "Tout débloquer pour {p}",
+ "oferta.letra": "Paiement unique · {d} jours · réussite garantie",
+ "rec.t": "Ton paiement est resté en suspens",
+ "rec.d": "Termine-le en un clic et débloque les 300 questions expliquées dans ta langue.",
+ "rec.cta": "Terminer le paiement"
 }

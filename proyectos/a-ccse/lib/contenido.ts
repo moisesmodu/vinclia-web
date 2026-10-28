@@ -30,7 +30,7 @@ export function tablaFechas(locale: Locale) {
 
 /** Datos del titular leídos en tiempo de ejecución; si faltan se ve un marcador para no publicar un aviso legal incompleto sin notarlo. */
 export function legal(v: 'LEGAL_NOM' | 'LEGAL_NIF' | 'LEGAL_EMAIL' | 'LEGAL_ADRECA') {
-  const x = process.env[v]?.trim();
+  const x = process.env[v]?.trim() || (v === 'LEGAL_EMAIL' ? 'hola@numimates.com' : '');
   return x ? x.replace(/[<>]/g, '') : `<mark>[falta ${v}]</mark>`;
 }
 

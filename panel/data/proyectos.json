@@ -20,7 +20,8 @@
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/a-ccse/proyectos/a-ccse",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/2",
    "android": "https://github.com/moisesmodu/vinclia-web/raw/entregas/a-ccse-android/ccse-1.0.1.aab",
-   "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/a-ccse/proyectos/a-ccse/DESPLIEGUE.md"
+   "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/a-ccse/proyectos/a-ccse/DESPLIEGUE.md",
+   "monetizacion": "https://github.com/moisesmodu/vinclia-web/blob/claude/a-ccse/proyectos/a-ccse/MONETIZACION.md"
   },
   "acciones": [
    {
@@ -94,13 +95,22 @@
    {
     "fecha": "2026-10-28",
     "texto": "Portada rehecha para convertir: 6 fotos reales generadas (Higgsfield, 1,5 créditos), cuenta atrás al cierre de inscripción, test gancho «¿Aprobarías hoy?» de 5 preguntas, comparativa con el PDF y la app oficial, bloque de precio anclado a la tasa de 85 €, barra fija en móvil, plan diario hasta el examen e imagen para compartir por WhatsApp en 8 idiomas"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Monetizar primero: oferta con motivo al acabar las preguntas gratis (pago a 1 clic con cuenta, 2 pantallas como máximo), contador de gratis, aviso de pago a medias en la app y un único correo de recuperación con consentimiento (Checkout de 3 h con enlace de recuperación). MONETIZACION.md con embudo, 100 primeras visitas y primer euro antes del 11/11/2026"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Correo de contacto hola@numimates.com (aviso legal y respuesta); remitente noreply@numimates.com; sin Algorithmics"
    }
   ],
   "proximos": [
-   "Pago de prueba de punta a punta en producción con 4242 4242 4242 4242",
-   "Contrastar el banco con el PDF oficial del Instituto Cervantes",
-   "Search Console y primeros 3 vídeos",
-   "Revisión nativa por muestreo de árabe y chino"
+   "Sesión del Mac: redesplegar con el commit del correo y añadir checkout.session.expired al webhook (DESPLIEGUE.md, actualización 28/10)",
+   "Pago de prueba completo con la 4242 y cobro real reembolsado",
+   "Aprobar las primeras publicaciones en 4 grupos antes del cierre de inscripción del 5/11",
+   "Primer euro antes del 11/11/2026 (MONETIZACION.md)",
+   "Analítica sin cookies para medir el embudo"
   ],
   "paraMoises": [
    "Publicar el AAB en Google Play (enlace en PARA-MOISES.md)",

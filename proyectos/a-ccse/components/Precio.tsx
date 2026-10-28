@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { PAIS, precioTexto } from '@/lib/config';
@@ -8,7 +8,9 @@ import { FormCuenta } from './Cuenta';
 
 export function Precio() {
   const { t, locale, usuario, acceso, listo } = useEstado();
-  const cancelado = useSearchParams().get('cancelado');
+  const sp = useSearchParams();
+  const cancelado = sp.get('cancelado');
+  const pagarYa = sp.get('pagar') === '1';
   const [msg, setMsg] = useState<string | null>(null);
   const [ocupado, setOcupado] = useState(false);
   const p = precioTexto(locale);
@@ -27,9 +29,24 @@ export function Precio() {
     setOcupado(false);
   }
 
+  // Desde una oferta con ?pagar=1: si ya hay sesión, abre Stripe sin otra pantalla.
+  const lanzado = useRef(false);
+  useEffect(() => {
+    if (pagarYa && listo && usuario && !acceso && !lanzado.current) {
+      lanzado.current = true;
+      pagar();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pagarYa, listo, usuario, acceso]);
+
   return (
     <div className="grid gap-4">
-      {cancelado && <p className="rounded-lg bg-amber-50 p-3">{t('precio.cancelado')}</p>}
+      {cancelado && (
+        <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg bg-amber-50 p-3">
+          <p>{t('precio.cancelado')}</p>
+          {usuario && !acceso && <button className="boton boton-1 min-h-10 px-3 py-1.5 text-sm" onClick={pagar}>{t('rec.cta')}</button>}
+        </div>
+      )}
       {/* Estructura común de precio (MARCAS.md §3): gratis, de pago, precio con IVA, cancela en un clic y sello. */}
       <div className="grid gap-3 sm:grid-cols-2">
         <section className="tarjeta p-5">
@@ -67,7 +84,7 @@ export function Precio() {
       ) : (
         <div className="grid gap-2">
           <p className="text-sm text-suave">{t('precio.antes')}</p>
-          <FormCuenta />
+          <FormCuenta despues={pagar} />
         </div>
       )}
     </div>

@@ -39,17 +39,23 @@ ok(sesion.amount_total === 999 && sesion.currency === 'eur' && sesion.custom_tex
 ok(productos.length === 1 && productos[0].name === 'Cartera · CCSE · Acceso 3 meses' && precios[0].tax_behavior === 'inclusive', 'producto y precio creados por API con el nombre de la cartera');
 ok(sesion.proyecto === 'a-ccse', 'Checkout lleva metadata.proyecto');
 ok(sesion.afiliado === 'accem' && sesion.promos === 'true', 'Checkout: afiliado ?ref= y códigos promocionales');
+ok(sesion.recuperacion === 'true' && sesion.consentimiento === 'auto' && sesion.expira - Date.now() / 1000 > 3 * 3600 - 120, 'Checkout con recuperación, consentimiento y caducidad de 3 h');
+r = await api('/api/auth/yo'); ok(r.d.pagoPendiente === true, 'pago a medias: aviso de recuperación en la app');
 ok(sesion.success_url.includes('/ro/pago/ok?session_id={CHECKOUT_SESSION_ID}'), 'Checkout vuelve a la página de pago en el idioma');
 r = await api(`/api/stripe/verificar?session_id=${sesion.id}`); ok(r.d.pagado === false && !r.d.ok, 'sin pagar no da acceso');
 // Webhook firmado como lo firma Stripe
 sesion.payment_status = 'paid';
 const evento = JSON.stringify({ id: 'evt_1', object: 'event', type: 'checkout.session.completed', data: { object: sesion } });
 const firma = Stripe.webhooks.generateTestHeaderString({ payload: evento, secret: SECRETO });
+const caducado = JSON.stringify({ id: 'evt_exp', object: 'event', type: 'checkout.session.expired', data: { object: { ...sesion, payment_status: 'unpaid', consent: { promotions: 'opt_out' }, after_expiration: { recovery: { url: 'https://checkout.stripe.com/r/x' } } } } });
+r = await api('/api/stripe/webhook', { method: 'POST', body: caducado, headers: { 'stripe-signature': Stripe.webhooks.generateTestHeaderString({ payload: caducado, secret: SECRETO }) } });
+ok(r.s === 200, 'webhook de pago caducado aceptado (sin consentimiento: no envía correo)');
 r = await api('/api/stripe/webhook', { method: 'POST', body: evento, headers: { 'stripe-signature': 'malo' } }); ok(r.s === 400, 'webhook con firma falsa rechazado');
 r = await api('/api/stripe/webhook', { method: 'POST', body: evento, headers: { 'stripe-signature': firma } }); ok(r.s === 200, 'webhook firmado aceptado');
 r = await api('/api/auth/yo'); const hasta1 = r.d.accesoHasta;
 const dias = (new Date(hasta1) - Date.now()) / 86400000;
 ok(r.d.acceso === true && dias > 89.9 && dias < 90.1, `acceso completo durante 90 días (${dias.toFixed(2)})`);
+ok(r.d.pagoPendiente === false, 'tras pagar desaparece el aviso de recuperación');
 r = await api('/api/stripe/webhook', { method: 'POST', body: evento, headers: { 'stripe-signature': firma } });
 r = await api(`/api/stripe/verificar?session_id=${sesion.id}`); ok(r.d.ok && r.d.accesoHasta === hasta1, 'webhook repetido y verificación son idempotentes');
 r = await api('/api/banco?lengua=zh&ids=1002,5084'); ok(Object.keys(r.d.datos).length === 2 && r.d.bloqueadas.length === 0, 'con acceso: todas las explicaciones (chino)');

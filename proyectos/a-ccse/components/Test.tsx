@@ -6,6 +6,8 @@ import { useEstado } from './Estado';
 import { useBanco } from './useBanco';
 import { TarjetaPregunta } from './TarjetaPregunta';
 import { Muro } from './Muro';
+import { Oferta, useGratisHechas } from './Oferta';
+import { PAIS } from '@/lib/config';
 
 /** Test con corrección inmediata (por tema o repaso). */
 export function Test({ ids, titulo, volver }: { ids: number[]; titulo: string; volver: string }) {
@@ -16,12 +18,15 @@ export function Test({ ids, titulo, volver }: { ids: number[]; titulo: string; v
   const [elegida, setElegida] = useState<number | null>(null);
   const [aciertos, setAciertos] = useState(0);
   const banco = useBanco(visibles, locale, `${acceso}`);
+  const gratisHechas = useGratisHechas();
+  const motivo = gratisHechas >= PAIS.gratis.preguntas ? t('oferta.todas') : t('oferta.tema', { g: visibles.length, n: ids.length });
   if (!listo) return <p>{t('comun.cargando')}</p>;
   if (!visibles.length) return <Muro />;
   const fin = i >= visibles.length;
   if (fin)
     return (
       <div className="grid gap-4">
+        {!acceso && ids.length > visibles.length && <Oferta motivo={motivo} />}
         <div className="tarjeta p-6 text-center">
           <h2 className="text-2xl font-bold">{t('test.resultado', { a: aciertos, n: visibles.length })}</h2>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -29,7 +34,6 @@ export function Test({ ids, titulo, volver }: { ids: number[]; titulo: string; v
             <Link className="boton boton-2" href={volver}>{t('test.volverTemas')}</Link>
           </div>
         </div>
-        {!acceso && ids.length > visibles.length && <Muro />}
       </div>
     );
   const p = POR_ID.get(visibles[i])!;
@@ -41,7 +45,12 @@ export function Test({ ids, titulo, volver }: { ids: number[]; titulo: string; v
         <span>{t('test.pregunta', { i: i + 1, n: visibles.length })}</span>
       </div>
       <div className="h-2 overflow-hidden rounded bg-black/10"><div className="h-full bg-marca" style={{ width: `${(100 * i) / visibles.length}%` }} /></div>
-      {!acceso && ids.length > visibles.length && i === 0 && <p className="text-sm text-suave">{t('test.soloGratis', { n: visibles.length })}</p>}
+      {!acceso && ids.length > visibles.length && (
+        <p className="flex flex-wrap items-center justify-between gap-2 text-sm text-suave">
+          <span>{i === 0 ? t('test.soloGratis', { n: visibles.length }) : ''}</span>
+          <span className="rounded-full bg-oro/15 px-3 py-1 font-semibold text-tinta">{t('oferta.contador', { x: Math.min(gratisHechas, PAIS.gratis.preguntas), t: PAIS.gratis.preguntas })}</span>
+        </p>
+      )}
       <TarjetaPregunta
         p={p}
         elegida={elegida}

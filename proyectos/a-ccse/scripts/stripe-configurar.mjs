@@ -19,9 +19,13 @@ if (!precio) {
 } else console.error(`Precio ya existía: ${precio.id}`);
 const url = `${sitio}/api/stripe/webhook`;
 const ya = (await s.webhookEndpoints.list({ limit: 100 })).data.find((w) => w.url === url);
-if (ya) console.error(`Webhook ya existía: ${ya.id}. Si no tienes su secreto, bórralo en el panel y vuelve a ejecutar.`);
+const EVENTOS = ['checkout.session.completed', 'checkout.session.async_payment_succeeded', 'checkout.session.expired'];
+if (ya) {
+  await s.webhookEndpoints.update(ya.id, { enabled_events: EVENTOS });
+  console.error(`Webhook ya existía: ${ya.id}; eventos actualizados (${EVENTOS.join(', ')}).`);
+}
 else {
-  const w = await s.webhookEndpoints.create({ url, enabled_events: ['checkout.session.completed', 'checkout.session.async_payment_succeeded'], description: 'Cartera · CCSE · webhook', metadata: { proyecto: 'a-ccse' } });
+  const w = await s.webhookEndpoints.create({ url, enabled_events: EVENTOS, description: 'Cartera · CCSE · webhook', metadata: { proyecto: 'a-ccse' } });
   console.error(`Webhook creado: ${w.id}`);
   process.stdout.write(w.secret ?? '');
 }

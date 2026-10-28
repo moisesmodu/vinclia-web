@@ -28,6 +28,7 @@ export function stripe(): Stripe {
 }
 export const modoStripe = () => (/^(sk|rk)_live_/.test(claveStripe() ?? '') ? 'live' : 'test');
 const CLAVE_WEBHOOK = () => `stripe_webhook_secret_${modoStripe()}`;
+export const EVENTOS_WEBHOOK = ['checkout.session.completed', 'checkout.session.async_payment_succeeded', 'checkout.session.expired'] as const;
 export const URL_WEBHOOK = () => `${SITE_URL}/api/stripe/webhook`;
 
 /** Secreto del webhook: variable de entorno o el que la app guardó al crearlo sola. */
@@ -47,7 +48,7 @@ export async function asegurarWebhook() {
     for (const e of existentes.data) if (e.url === URL_WEBHOOK()) await s.webhookEndpoints.del(e.id);
     const nuevo = await s.webhookEndpoints.create({
       url: URL_WEBHOOK(),
-      enabled_events: ['checkout.session.completed', 'checkout.session.async_payment_succeeded'],
+      enabled_events: [...EVENTOS_WEBHOOK],
       description: `Cartera · CCSE · webhook (creado por la app)`,
       metadata: { proyecto: 'a-ccse' },
     });
@@ -97,6 +98,10 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
   return stripe().checkout.sessions.create({
     mode: 'payment',
     allow_promotion_codes: true,
+    // Recuperación (SESIONES.md «Monetizar primero»): caduca a las 3 h y Stripe da un enlace de recuperación de 30 días.
+    expires_at: Math.floor(Date.now() / 1000) + 3 * 3600,
+    after_expiration: { recovery: { enabled: true, allow_promotion_codes: true } },
+    consent_collection: { promotions: 'auto' },
     client_reference_id: opts.usuarioId,
     customer_email: opts.email,
     locale: stripeLocale,
@@ -133,4 +138,26 @@ export async function concederAcceso(sesion: Stripe.Checkout.Session): Promise<{
     await tx.usuario.update({ where: { id: usuarioId }, data: { accesoHasta } });
     return { ok: true, accesoHasta };
   });
+}
+
+/** Pago a medias: como máximo un correo, solo si la persona aceptó correos en Checkout; en la app siempre hay aviso. */
+export async function recuperarPago(sesion: Stripe.Checkout.Session): Promise<'enviado' | 'sin_consentimiento' | 'omitido'> {
+  const usuarioId = sesion.client_reference_id || sesion.metadata?.usuarioId;
+  const url = sesion.after_expiration?.recovery?.url;
+  if (!usuarioId || sesion.payment_status === 'paid') return 'omitido';
+  const u = await db().usuario.findUnique({ where: { id: usuarioId } });
+  if (!u || u.recuperacionEnviada || (u.accesoHasta && u.accesoHasta.getTime() > Date.now()) || u.email.endsWith('.invalid')) return 'omitido';
+  if (sesion.consent?.promotions !== 'opt_in' || !url) return 'sin_consentimiento';
+  const { enviarCorreo } = await import('./correo');
+  const ok = await enviarCorreo({
+    para: u.email,
+    asunto: 'Tu acceso al CCSE quedó a medias',
+    texto:
+      `Hola:\n\nEmpezaste a pagar el acceso completo a CCSE en tu idioma, pero no se completó.\n` +
+      `Puedes terminarlo aquí (el enlace vale 30 días): ${url}\n\n` +
+      `Son ${(PAIS.precioCentimos / 100).toFixed(2).replace('.', ',')} €, pago único, ${PAIS.accesoDias} días, con garantía de aprobado.\n\n` +
+      `Es el único recordatorio que te enviamos. Si no quieres más correos, responde «BAJA».`,
+  });
+  if (ok) await db().usuario.update({ where: { id: u.id }, data: { recuperacionEnviada: new Date() } });
+  return ok ? 'enviado' : 'omitido';
 }

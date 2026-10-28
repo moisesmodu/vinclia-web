@@ -1,5 +1,5 @@
 import type Stripe from 'stripe';
-import { stripe, secretoWebhook, concederAcceso } from '@/lib/stripe';
+import { stripe, secretoWebhook, concederAcceso, recuperarPago } from '@/lib/stripe';
 import { error, ok } from '@/lib/http';
 
 export async function POST(req: Request) {
@@ -16,5 +16,6 @@ export async function POST(req: Request) {
   if (evento.type === 'checkout.session.completed' || evento.type === 'checkout.session.async_payment_succeeded') {
     await concederAcceso(evento.data.object as Stripe.Checkout.Session);
   }
+  if (evento.type === 'checkout.session.expired') await recuperarPago(evento.data.object as Stripe.Checkout.Session);
   return ok({ recibido: true });
 }

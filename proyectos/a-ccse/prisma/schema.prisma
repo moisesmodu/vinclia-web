@@ -16,6 +16,10 @@ model Usuario {
   accesoHasta  DateTime?
   progreso     Json?
   simulacros   Int       @default(0)
+  /// Último Checkout abierto y no pagado (aviso de recuperación en la app)
+  checkoutIniciado    DateTime?
+  /// Correo de recuperación (uno como máximo, solo con consentimiento en Checkout)
+  recuperacionEnviada DateTime?
   creado       DateTime  @default(now())
   actualizado  DateTime  @updatedAt
   pagos        Pago[]

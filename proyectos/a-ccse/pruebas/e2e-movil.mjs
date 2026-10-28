@@ -27,6 +27,11 @@ ok(await p.locator('[aria-live="polite"] p[lang="ar"]').count() > 0, 'explicaci�
 ok(await sinScroll(), 'test en árabe sin scroll horizontal');
 await p.screenshot({ path: `${OUT}/2-test-arabe.png`, fullPage: true });
 
+await p.goto(`${BASE}/es/temas/2`); await p.waitForLoadState('networkidle');
+ok(await p.locator('text=/Gratis: \\d+ de 25/').count() > 0, 'contador de preguntas gratis visible en el test');
+for (let k = 0; k < 3; k++) { await p.locator('ul button').first().click(); await p.getByRole('button', { name: /Siguiente|Terminar/ }).click(); }
+ok(await p.getByRole('button', { name: /Desbloquear todo por/ }).count() > 0, 'oferta con motivo y pago a un clic al acabar las gratis del tema');
+await p.screenshot({ path: `${OUT}/2b-oferta.png`, fullPage: false });
 await p.goto(`${BASE}/es/simulacro`); await p.waitForLoadState('networkidle');
 await p.getByRole('button', { name: 'Empezar simulacro' }).click();
 ok(await p.locator('[role="timer"]').innerText().then((t) => t.startsWith('45') || t.startsWith('44')), 'cronómetro de 45 minutos');
@@ -51,12 +56,10 @@ ok(true, 'segundo simulacro gratis bloqueado con muro de pago');
 
 await p.goto(`${BASE}/es/precio`); await p.waitForLoadState('networkidle');
 await p.fill('input[type=email]', `movil${Date.now()}@example.com`); await p.fill('input[type=password]', 'clave-movil-123');
-await p.getByRole('button', { name: 'Crear cuenta' }).last().click();
-await p.waitForSelector('text=/Pagar/');
 await p.screenshot({ path: `${OUT}/6-precio.png`, fullPage: true });
 await p.route('https://checkout.stripe.com/**', (r) => r.fulfill({ status: 200, body: 'checkout' }));
-const [nav] = await Promise.all([p.waitForRequest((r) => r.url().startsWith('https://checkout.stripe.com/')), p.getByRole('button', { name: /Pagar/ }).click()]);
-ok(!!nav, 'el botón de pago lleva a Stripe Checkout');
+const [nav] = await Promise.all([p.waitForRequest((r) => r.url().startsWith('https://checkout.stripe.com/')), p.getByRole('button', { name: 'Crear cuenta' }).last().click()]);
+ok(!!nav, 'crear la cuenta en la página de precio abre Stripe Checkout directamente (2 pantallas hasta pagar)');
 
 await p.goto(`${BASE}/zh/examen`); await p.waitForLoadState('networkidle');
 ok(await p.locator('.prosa table').count() >= 2, 'página del examen en chino con tablas de tareas y fechas');

@@ -18,7 +18,8 @@ export function arrancar(puerto = 12111) {
       const id = `cs_test_${Date.now().toString(36)}${++n}`;
       const s = { id, object: 'checkout.session', url: `https://checkout.stripe.com/c/pay/${id}`, mode: f.get('mode'), payment_status: 'unpaid',
         client_reference_id: f.get('client_reference_id'), metadata: { usuarioId: f.get('metadata[usuarioId]') }, amount_total: precios.find((x) => x.id === f.get('line_items[0][price]'))?.unit_amount,
-        currency: precios.find((x) => x.id === f.get('line_items[0][price]'))?.currency, proyecto: f.get('metadata[proyecto]'), livemode: false, success_url: f.get('success_url'), custom_text_ok: !!f.get('custom_text[submit][message]'), afiliado: f.get('metadata[afiliado]'), promos: f.get('allow_promotion_codes') };
+        currency: precios.find((x) => x.id === f.get('line_items[0][price]'))?.currency, proyecto: f.get('metadata[proyecto]'), livemode: false, success_url: f.get('success_url'), custom_text_ok: !!f.get('custom_text[submit][message]'), afiliado: f.get('metadata[afiliado]'), promos: f.get('allow_promotion_codes'),
+        recuperacion: f.get('after_expiration[recovery][enabled]'), consentimiento: f.get('consent_collection[promotions]'), expira: Number(f.get('expires_at')) };
       sesiones.set(id, s);
       return json(s);
     }

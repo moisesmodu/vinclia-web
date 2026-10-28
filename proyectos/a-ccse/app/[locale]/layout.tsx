@@ -7,6 +7,7 @@ import { EstadoProvider } from '@/components/Estado';
 import { Cabecera } from '@/components/Cabecera';
 import { Pie } from '@/components/Pie';
 import { RegistrarSW } from '@/components/RegistrarSW';
+import { AvisoRecuperacion } from '@/components/AvisoRecuperacion';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -51,6 +52,7 @@ export default async function Layout({ children, params }: { children: React.Rea
       <body className="min-h-dvh">
         <EstadoProvider locale={l} mensajes={mensajes(l)}>
           <Cabecera locale={l} />
+          <AvisoRecuperacion />
           <main className="contenedor py-6">{children}</main>
           <Pie locale={l} />
         </EstadoProvider>

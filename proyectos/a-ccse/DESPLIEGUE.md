@@ -27,7 +27,7 @@
 | `STRIPE_MODO` | `test` ahora; `live` el día del lanzamiento | Sí |
 | `STRIPE_WEBHOOK_SECRET` | Lo da el paso 3. Si se omite, la app crea el webhook en el primer pago y guarda su secreto en la base de datos | Recomendada |
 | `RESEND_API_KEY` | Secreto del entorno (solo para recuperar la contraseña) | No |
-| `CORREO_REMITENTE` | `CCSE en tu idioma <noreply@algorithmicslleida.com>` | No |
+| `CORREO_REMITENTE` | `CCSE en tu idioma <noreply@numimates.com>` (respuestas a `LEGAL_EMAIL`) | No |
 | `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Secretos del entorno. Se leen en cada petición: si falta alguno, el aviso legal muestra «[falta LEGAL_…]» | Sí, antes de vender |
 | `TWA_SHA256` | Huella de la clave de subida, una coma y la huella de firma de Google Play (paso 6) | Tras publicar en Play |
 | `TWA_PACKAGE` | `es.nuevoenespana.ccse` | No (es el valor por defecto) |
@@ -113,3 +113,12 @@ Pon el código en la variable `GOOGLE_SITE_VERIFICATION` (la web la añade en `<
 Ejecutado el 2026-10-28
 
 Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://ccse-en-tu-idioma.vercel.app (aviso legal con NIF comprobado). Ignored Build Step `git diff HEAD^ HEAD --quiet -- proyectos/a-ccse` puesto en Vercel. Pendiente: pago de prueba con la tarjeta 4242.
+
+## Actualización 28/10 (correo hola@numimates.com y monetización): lo que tiene que hacer la sesión del Mac
+1. En Vercel, `LEGAL_EMAIL=hola@numimates.com` (production y preview). Si falta, el código ya usa ese valor por defecto. `CORREO_REMITENTE=CCSE en tu idioma <noreply@numimates.com>`.
+2. En Stripe (Numi Mates, modo prueba y modo real), en Settings → Public details: correo de soporte `hola@numimates.com`.
+3. Webhook: volver a ejecutar `scripts/stripe-configurar.mjs`, que ahora **añade el evento `checkout.session.expired`** al webhook existente (lo necesita la recuperación):
+   `STRIPE_KEY="$STRIPE_TEST_SECRET_KEY" SITE_URL=https://ccse-en-tu-idioma.vercel.app node scripts/stripe-configurar.mjs`
+4. Redesplegar producción desde un commit de moisesmodu. El build aplica la migración `0002_recuperacion` (dos columnas nuevas en `Usuario`).
+5. Prueba del pago completo en el navegador: `/es/temas/2` → responder las 3 gratis → «Desbloquear todo por 9,99 €» → crear la cuenta → Stripe con la tarjeta 4242 → «Acceso completo hasta…».
+6. **Cobro real (regla «Monetizar primero»):** `STRIPE_MODO=live`, ejecutar el paso 3 con `STRIPE_KEY="$STRIPE_SECRET_KEY"`, redesplegar, hacer un pago real de 9,99 € con una tarjeta propia y **reembolsarlo** desde el panel de Stripe. Anotar en el panel la acción «Cobro real probado y reembolsado».
