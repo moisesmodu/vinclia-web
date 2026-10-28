@@ -64,6 +64,15 @@
    lanza en el primer mercado (normalmente España); el segundo (ver `CARTERA.md`, «Expansión internacional») se abre
    solo cuando el primero tenga datos de conversión. Cada ficha del panel lleva su campo `expansion`.
 
+## Identidad de marca (obligatorio antes de cualquier pantalla o texto público)
+
+Lee `MARCAS.md` y `marcas/tokens.json` (tu ficha está en `proyectos.<clave>`). Usa exactamente el nombre, la promesa
+en los idiomas del producto, los colores, las dos fuentes y el logotipo `marcas/logos/<clave>.svg` (y `<clave>-icono.svg`
+para favicon, app y tiendas). Pie con el sello común «Hecho en Lleida · Precio claro · Cancela en un clic» y pantalla de
+precio con la estructura de MARCAS.md §3. Si tu proyecto ya tenía otro nombre o colores, cámbialos en tu rama; si crees
+que tu nombre es mejor, dilo en el PR con el motivo y mantén el de la ficha. Anota «Identidad de marca aplicada» en
+`panel/data/proyectos.json`.
+
 ## Antes de diseñar: el análisis del líder
 En `panel/data/proyectos.json`, tu proyecto tiene (si existe) el campo `lider`: ingeniería inversa de producto del mejor
 competidor, con su modelo y las listas `copiar`, `mejorar`, `adaptar` y `planAccion`. **Léelo antes de diseñar nada** y

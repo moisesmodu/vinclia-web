@@ -12,6 +12,13 @@ export type Lider = {
 };
 export type Examen = { nivel: string; organismo: string; estructura: string; convocatorias: string; demanda: string; usos: string };
 export type Juicio = { probabilidad: number; veredicto: string; exito: string; porQue: string; contra: string; parada: string };
+export type Identidad = {
+  familia: string; familiaNombre: string; marca: string; subtitulo?: string; alternativas: string[];
+  promesa: Record<string, string>; voz: string; dominio: string; acento: string;
+  colores: Record<string, string>; tipografia: { titulos: string; texto: string }; personalidad: string; motivo: string;
+  logo: string; icono: string;
+};
+
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
 export type Proyecto = {
@@ -46,6 +53,26 @@ export function proyectos(): Proyecto[] {
   return lista.sort((a, b) => a.orden - b.orden);
 }
 
+export function identidad(clave: string): Identidad | null {
+  const ruta = path.join(raiz, 'marcas', 'tokens.json');
+  if (!fs.existsSync(ruta)) return null;
+  const t = JSON.parse(fs.readFileSync(ruta, 'utf8'));
+  const p = t.proyectos?.[clave]; if (!p) return null;
+  const f = t.familias[p.familia];
+  const leer = (n: string) => { const r = path.join(raiz, 'marcas', 'logos', n); return fs.existsSync(r) ? fs.readFileSync(r, 'utf8').replace(/^<\?xml[^>]*>\s*/, '') : ''; };
+  return { familia: p.familia, familiaNombre: f.nombre, marca: p.marca, subtitulo: p.subtitulo, alternativas: p.alternativas ?? [],
+    promesa: p.promesa, voz: p.voz, dominio: p.dominio, acento: p.acento ?? f.colores.primario,
+    colores: f.colores, tipografia: f.tipografia, personalidad: f.personalidad, motivo: f.motivo,
+    logo: leer(`${clave}.svg`), icono: leer(`${clave}-icono.svg`) };
+}
+
+export function manifiesto(): { lineas: string[]; sello: string } | null {
+  const ruta = path.join(raiz, 'marcas', 'tokens.json');
+  if (!fs.existsSync(ruta)) return null;
+  const t = JSON.parse(fs.readFileSync(ruta, 'utf8'));
+  return { lineas: t.manifiesto ?? [], sello: t.sello ?? '' };
+}
+
 export function proyecto(clave: string): Proyecto | undefined {
   return proyectos().find((p) => p.clave === clave);
 }
@@ -70,6 +97,8 @@ export const documentos: Record<string, { titulo: string; archivo: string }> = {
   sesiones: { titulo: 'Reglas de las sesiones', archivo: 'SESIONES.md' },
   prompts: { titulo: 'Prompts de las sesiones', archivo: 'PROMPTS-SESIONES.md' },
   juicio: { titulo: 'Juicio y probabilidad', archivo: 'JUICIO.md' },
+  marcas: { titulo: 'Marcas e identidad', archivo: 'MARCAS.md' },
+  despliegues: { titulo: 'Despliegues y cuentas', archivo: 'DESPLIEGUES.md' },
   'producto-m': { titulo: 'Producto M: certificados de catalán', archivo: 'M-CATALA-PRODUCTE.md' },
 };
 
