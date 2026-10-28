@@ -1803,7 +1803,7 @@
     "nombre": "Cursos en Udemy",
     "marca": "Pasivos",
     "resumen": "Dos cursos en vídeo: programación para niños desde casa (para padres) e IA práctica para pequeños negocios.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 8,
     "modelo": "15–40 € por curso; Udemy se queda el 63 % si trae al alumno",
     "margenCliente": 8,
@@ -1840,15 +1840,18 @@
       {
         "fecha": "2026-10-28",
         "texto": "Prompt actualizado: los cursos 1 y 2 se producen a partir de los 108 sesiones de Numi Tech (Robot, Creadors, Robòtica, Digital) con sus presentaciones, guías e imprimibles"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Cursos 1, 2 y 4 construidos a partir de Numi Tech (parte castellana, presenta.html, imprimibles y simulador); producción de vídeos en marcha, unas 5–6 h; PR al terminar"
       }
     ],
     "proximos": [
-      "Sesión J: traducir y convertir las sesiones de Numi Tech en lecciones en vídeo (presentaciones + simulador grabado + voz)",
-      "Abrir la sesión J"
+      "Terminar los vídeos y abrir el PR",
+      "DESPLIEGUE.md: página privada de entrega y tareas programadas por la sesión del Mac"
     ],
     "paraMoises": [
-      "Cuenta de instructor",
-      "Subir los cursos"
+      "Abrir la cuenta de instructor en Udemy y subir los cursos cuando estén entregados"
     ],
     "mejoras": [
       "Reutilizar Numi Tech: 4 cursos revisados con 108 sesiones, guías del profesor, presentaciones, imprimibles y solucionario; de ahí salen el curso para padres y el de robótica con micro:bit sin escribirlos desde cero, y la app es la venta cruzada natural",
