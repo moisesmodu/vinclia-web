@@ -1,0 +1,35 @@
+# Catálogo · los 11 juegos siguientes (uno cada 2 semanas)
+
+Criterios: una mecánica, sin texto, partidas de 1 a 3 minutos (salvo los dos de gestión, que prueban sesiones largas
+como el líder Monkey Mart), ratón y táctil, menos de 8 MB. Mezcla de géneros por datos:
+- **Coches tipo plataforma** en Poki: 7 % de los títulos, 30 % de las partidas (informe de Poki, 29/09/2026). Se
+  reutiliza el motor de Egg Truck, así que estos juegos salen más baratos.
+- **Hipercasual** (78,8 % del tiempo de juego en CrazyGames, abril de 2026) y **puzle** (20,6 %).
+- **Gestión e idle**: demanda alta y poca oferta en web (hallazgo del panel y del análisis de Monkey Mart).
+
+Regla de JUICIO.md: nunca se para por un juego. A los 6 juegos se revisa el catálogo; si ninguno pasa del lanzamiento
+básico en CrazyGames, se cambia el reparto de géneros hacia lo que mejor haya retenido.
+
+| # | Juego | Género | Mecánica (una) | Gancho que lo distingue | Reutiliza | Fecha prevista |
+|---|---|---|---|---|---|---|
+| 2 | **Bike Flip** | Coches tipo plataforma, por niveles | Mantener = acelerar e inclinar atrás; soltar = inclinar adelante | 40 niveles cortos con meta (como Drive Mad) y **voltereta = turbo**: cada mortal completo da velocidad | Motor de Egg Truck y editor de terreno por puntos | 11/11/2026 |
+| 3 | **Jelly Stack** | Hipercasual de apilar | Tocar = soltar la pieza | Las piezas son gelatina: lo que sobresale **tiembla y se cae** con física blanda, y la torre se balancea con la altura | Plantilla + Matter | 25/11/2026 |
+| 4 | **Snow Plow** | Coches tipo plataforma, de Navidad | Mantener = acelerar | Quitanieves que **empuja regalos** hasta el trineo; versión navideña para la portada de temporada de los portales | Motor de Egg Truck | 09/12/2026 (antes de Navidad) |
+| 5 | **Paper Glide** | Hipercasual de distancia | Mantener = subir el morro; soltar = picar | Corrientes de aire visibles y **mejoras entre partidas** (alas, cola, peso) compradas con estrellas: la meta de "una partida más" | Plantilla + Arcade | 23/12/2026 |
+| 6 | **Pin Rescue** | Puzle de físicas | Tocar un pasador = quitarlo | Agua, arena y lava con partículas **que se mezclan** (agua + lava = piedra); 60 niveles hechos con generador y revisados | Plantilla + Matter | 06/01/2027 |
+| 7 | **Rocket Hop** | Habilidad con físicas | Mantener = propulsar | Aterrizajes en **plataformas que se mueven** con combustible limitado; cada aterrizaje perfecto devuelve combustible | Motor de Egg Truck (cuerpo rígido + empuje) | 20/01/2027 |
+| 8 | **Tiny Harbor** | Gestión idle | Arrastrar el barco a la grúa | Puerto que crece con **un solo dedo**: cargar, zarpar y mejorar; 3 puertos como capítulos; anuncio con recompensa = barco doble 60 s | Plantilla + guardado del SDK de CrazyGames (progreso en la nube) | 03/02/2027 |
+| 9 | **Rope Cut Feed** | Puzle de cuerdas | Deslizar = cortar cuerdas | El caramelo cae a un monstruo; **viento y burbujas** cambian la trayectoria; 50 niveles | Plantilla + Matter (cuerdas por restricciones) | 17/02/2027 |
+| 10 | **Tow Truck** | Coches tipo plataforma | Mantener = acelerar | Remolcar un remolque con cuerda y **carga que se mueve** (barriles, ovejas): segunda física del motor | Motor de Egg Truck + cuerda de Rope Cut | 03/03/2027 |
+| 11 | **Hoop Bounce** | Deportes hipercasual | Tocar = rebotar la pelota | El aro **se mueve y cambia de tamaño**; cadena de canastas limpias multiplica los puntos; partidas de 60 s cerradas | Plantilla + Arcade | 17/03/2027 |
+| 12 | **Fruit Stand** | Gestión idle (ola de Monkey Mart) | Mover el personaje con el dedo | Puesto de fruta que se convierte en mercado; **ayudantes que no se duermen** y prestigio al acabar (lo que se critica del líder) | Plantilla + Arcade + guardado en la nube | 31/03/2027 |
+
+## Qué se mide de cada juego (para decidir el siguiente)
+- En CrazyGames, el lanzamiento básico y después el completo: retención frente a su referencia, minutos por partida,
+  valoración. En Poki, si lo aceptan, el informe de su inspector.
+- Telemetría propia mínima ya en la plantilla: partidas jugadas (`runs`) en el guardado. Pendiente (mejora del líder):
+  embudo anónimo y sin cookies (inicio → primera partida → tercera partida) con Umami cuando el panel lo tenga.
+
+## Versiones Android (proyecto 8, ola 3)
+Los juegos que pasen del lanzamiento básico se empaquetan como TWA con AdMob a los 3 meses (plan de acción del líder).
+El código ya es adaptable a cualquier pantalla y táctil.

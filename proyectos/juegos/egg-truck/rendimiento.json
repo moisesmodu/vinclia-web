@@ -1,0 +1,18 @@
+{
+  "juego": "egg-truck",
+  "fecha": "2026-10-28",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2097,
+  "fpsEnEsteContenedor": 21,
+  "cpuPorFotogramaMs": {
+    "media": 4.89,
+    "p50": 4.2,
+    "p95": 10,
+    "p99": 15.4
+  },
+  "fpsMaximoPorCpu": 100,
+  "partidasPilotoAutomatico": [
+    "141 (sin terminar)"
+  ],
+  "errores": []
+}

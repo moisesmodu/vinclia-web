@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>__TITULO__</title>
+  <meta name="description" content="__DESCRIPCION__" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <style>
+    html, body { margin: 0; height: 100%; background: #6cc8ff; overflow: hidden; touch-action: none;
+      -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
+    #game { position: fixed; inset: 0; }
+    #loader { position: fixed; inset: 0; display: grid; place-items: center; background: #6cc8ff; z-index: 10; }
+    #loader .egg { width: 54px; height: 70px; background: #fff8ec; border: 5px solid #2b2340;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; animation: wob .7s ease-in-out infinite alternate; }
+    @keyframes wob { from { transform: rotate(-12deg) translateY(0) } to { transform: rotate(12deg) translateY(-14px) } }
+  </style>
+</head>
+<body>
+  <div id="loader"><div class="egg"></div></div>
+  <div id="game"></div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
