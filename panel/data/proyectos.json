@@ -15,6 +15,7 @@
     "clientes": 0,
     "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
     "enlaces": {
+      "CCSE en tu idioma · web": "https://ccse-en-tu-idioma.vercel.app/es",
       "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2"
     },
     "acciones": [
@@ -53,13 +54,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: CCSE en tu idioma («Aprueba el examen de nacionalidad en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://ccse-en-tu-idioma.vercel.app con datos legales, Resend y remitente noreply@numimates.com; pendiente la prueba de pago"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md",
       "Primer pago real verificado"
     ],
     "paraMoises": [
@@ -241,6 +245,7 @@
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
     "enlaces": {
+      "Nuevo en España · web": "https://nuevo-en-espana.vercel.app/",
       "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3"
     },
     "acciones": [
@@ -275,13 +280,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Nuevo en España («Tus trámites en España, paso a paso y en tu idioma.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://nuevo-en-espana.vercel.app con identidad de marca; pendiente la prueba de pago con tarjeta 4242"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
       "Verificar un pago en producción"
     ],
     "paraMoises": [],
@@ -465,7 +473,7 @@
     "nombre": "Oposiciones de cola larga",
     "marca": "Plaça · familia Exámenes",
     "resumen": "Tests, simulacros y repaso espaciado para oposiciones catalanas que las grandes apps no cubren.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 3,
     "modelo": "Suscripción 9,99 €/mes",
     "margenCliente": 55,
@@ -474,7 +482,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
-    "enlaces": {},
+    "enlaces": {
+      "Plaça · web": "https://placa-oposicions.vercel.app/",
+      "PR #7": "https://github.com/moisesmodu/vinclia-web/pull/7"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -499,6 +510,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Plaça («Treu plaça. Tests per a la teva oposició, per fi.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Plaça construido: 5 oposiciones catalanas y 1.737 preguntas verificadas, desplegado en https://placa-oposicions.vercel.app (PR #7)"
       }
     ],
     "proximos": [
@@ -703,10 +718,19 @@
     "clientes": 0,
     "canal": "La plataforma distribuye; sin marketing",
     "enlaces": {
-      "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
-      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
+      "Portada Nuvolet Games": "https://juegos-casuales.vercel.app/",
       "Egg Truck · jugar": "https://juegos-casuales.vercel.app/egg-truck/",
       "Egg Truck · guía": "https://juegos-casuales.vercel.app/play/egg-truck/",
+      "Bike Flip · jugar": "https://juegos-casuales.vercel.app/bike-flip/",
+      "Bike Flip · guía": "https://juegos-casuales.vercel.app/play/bike-flip/",
+      "Snow Plow · jugar": "https://juegos-casuales.vercel.app/snow-plow/",
+      "Snow Plow · guía": "https://juegos-casuales.vercel.app/play/snow-plow/",
+      "Rocket Hop · jugar": "https://juegos-casuales.vercel.app/rocket-hop/",
+      "Rocket Hop · guía": "https://juegos-casuales.vercel.app/play/rocket-hop/",
+      "Jelly Stack · jugar": "https://juegos-casuales.vercel.app/jelly-stack/",
+      "Jelly Stack · guía": "https://juegos-casuales.vercel.app/play/jelly-stack/",
+      "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
+      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
       "Portada del estudio": "https://juegos-casuales.vercel.app/"
     },
     "acciones": [
@@ -749,6 +773,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca aplicada: Nuvolet Games en la pantalla de carga, favicon, fichas de los portales y pie del sitio (PR #4); redespliegue pendiente para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Cinco juegos en producción (Egg Truck, Bike Flip, Snow Plow, Rocket Hop, Jelly Stack) con 25 paquetes para portales, MONETIZACION.md y Egg Truck Tycoon para Roblox (PR #4)"
       }
     ],
     "proximos": [
@@ -1378,6 +1406,7 @@
     "clientes": 0,
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
+      "Lunilla · tienda": "https://lunilla.vercel.app/",
       "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
     },
     "acciones": [
@@ -1416,13 +1445,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado por el Mac en https://lunilla.vercel.app con identidad de marca y portada nueva; pendientes Gelato (Moisés) y la prueba de pago"
       }
     ],
     "proximos": [
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
       "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
       "Apertura el 15/11"
     ],

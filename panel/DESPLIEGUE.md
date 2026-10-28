@@ -18,4 +18,19 @@ vercel git connect --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID        # conect
 vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
 ```
 
+## Publicación automática con cada push (sin conectar el repositorio a Vercel)
+
+Como Vercel bloquea los despliegues automáticos de commits firmados por «Claude» en la integración de Git, el panel se
+publica con el workflow `.github/workflows/panel.yml` (GitHub Actions, que sí tiene red). Solo hace falta que la sesión
+del Mac guarde tres secretos en el repositorio, una vez:
+
+```bash
+gh secret set VERCEL_TOKEN --repo moisesmodu/vinclia-web --body "$VERCEL_TOKEN"
+gh secret set VERCEL_ORG_ID --repo moisesmodu/vinclia-web --body "$VERCEL_TEAM_ID"
+gh secret set VERCEL_PROJECT_ID --repo moisesmodu/vinclia-web --body "$(cat panel/.vercel/project.json | python3 -c 'import json,sys;print(json.load(sys.stdin)["projectId"])')"
+```
+
+Después, cada push a la rama base que toque `panel/`, `marcas/` o los `.md` publica el panel solo. El mismo patrón sirve
+para cualquier otro proyecto que quiera publicarse con cada push.
+
 Después: anotar la URL en `panel/data/cartera.json` → `panelUrl`, y añadir al final de este archivo `Ejecutado el <fecha>`.
