@@ -64,17 +64,18 @@ SITIO=nomina npm run dev        # desarrollo
 node scripts/vista-previa.mjs nomina   # copia con enlaces relativos para alojar en una subcarpeta
 ```
 
-## Despliegue: un proyecto por sitio en Cloudflare Pages
+## Despliegue: un proyecto de Vercel por sitio
 
-Se usa Cloudflare Pages porque su plan gratuito permite uso comercial. El plan Hobby de Vercel lo prohíbe.
-`vercel.json` también funciona si Moisés prefiere usar el plan Pro que ya tiene previsto.
+Sigue `DESPLIEGUES.md` de la raíz. Esta sesión no tenía red hacia Vercel ni secretos, así que los pasos exactos para
+la sesión del Mac están en `DESPLIEGUE.md`: proyectos `netoclaro` e `impuestoclaro` en el equipo
+`moisesmodu-3705s-projects`. `vercel.json` fija la instalación, la compilación (`npm run publicar`) y la salida
+(`publicar`). Cloudflare Pages también sirve con los mismos valores si algún día se prefiere.
 
 | Campo | Valor |
 |---|---|
-| Root directory | `proyectos/p-webs-adsense/fabrica` |
-| Build command | `npm run publicar` |
-| Output directory | `publicar` |
-| Variables | `SITIO` = `nomina` o `impuestos`, más `NODE_VERSION` = `22` |
+| Root Directory | `proyectos/p-webs-adsense/fabrica` |
+| Build command / output | `npm run publicar` / `publicar` (en `vercel.json`) |
+| Variables | `SITIO` = `nomina` o `impuestos`; `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` para el aviso legal |
 
 Variables opcionales, sin tocar el código:
 
@@ -86,7 +87,7 @@ Variables opcionales, sin tocar el código:
 | `GSC_VERIFICACION` | Metaetiqueta de verificación de Search Console, si no se verifica por DNS. |
 | `SITE_URL` | URL pública mientras no haya dominio, por ejemplo `https://netoclaro.pages.dev`. |
 
-`public/_headers` da caché larga a los recursos con hash. La integración continua, en
+`vercel.json` (y `public/_headers` en Cloudflare) da caché larga a los recursos con hash. La integración continua, en
 `.github/workflows/p-webs-adsense.yml`, ejecuta pruebas, compilación, comprobaciones y Lighthouse en cada PR.
 
 ## Añadir cosas
@@ -102,7 +103,7 @@ Variables opcionales, sin tocar el código:
 - **Un país:** crea `params/<pais>/pais.json` y `params/<pais>/<año>/`, y el sitio con `"pais": "<pais>"`. Los motores
   de España no sirven para otro país: el sitio 3 (EE. UU.) tendrá sus propios motores en `src/lib/calc/us/`.
 - **Un sitio:** crea `sitios/<id>/sitio.json`, sus contenidos y sus fichas en `src/fichas/<id>.ts`, regístralas en
-  `src/lib/rutas.ts` y despliega otro proyecto de Cloudflare con `SITIO=<id>`.
+  `src/lib/rutas.ts` y crea otro proyecto de Vercel con `SITIO=<id>` (DESPLIEGUE.md).
 
 ## Decisiones tomadas
 

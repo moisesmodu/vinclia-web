@@ -2466,20 +2466,22 @@
       {
         "fecha": "2026-10-28",
         "texto": "Fábrica de sitios (Astro) y sitios 1 NetoClaro (nómina) y 2 ImpuestoClaro (impuestos): 40 calculadoras en castellano y catalán, 20 fichas de datos, 238 páginas programáticas, Lighthouse móvil 100; vista previa publicada, pendiente de dominio"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md para la sesión del Mac (la nube no llega a api.vercel.com ni tiene secretos); PARA-MOISES reducido a dominios, AdSense y Search Console"
       }
     ],
     "proximos": [
-      "Moisés: comprar netoclaro.es e impuestoclaro.es y conectar Cloudflare Pages (PARA-MOISES.md)",
+      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md (dos proyectos de Vercel, LEGAL_* y dominios)",
       "Solicitar AdSense con el sitio 1 en su dominio; publicar el mensaje RGPD de Google",
       "Crear la tarea programada semanal: BOE, 20 páginas nuevas, Search Console e informe",
       "Sitio 3 (EE. UU. en español, chequeclaro.com) a las 6–8 semanas: abre Mediavine y Raptive"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
-      "Cloudflare Pages: conectar el repositorio, un proyecto por sitio (4 min)",
-      "Pasar el NIF para el aviso legal",
-      "Cuenta de AdSense, pegar el ca-pub y publicar el mensaje RGPD",
-      "Search Console: verificar los dos dominios y enviar el sitemap"
+      "Cuenta de AdSense: pasar el ca-pub y publicar el mensaje RGPD de Google",
+      "Search Console: verificar los dos dominios y enviar los sitemaps"
     ],
     "mejoras": [
       "Arquitectura 'herramienta, explicación y dato local': cada calculadora en castellano y catalán con tablas oficiales actualizadas (IRPF estatal y catalán, SMI, cotizaciones, impuestos por comunidad) y fecha visible; es el formato con menor exposición a los resúmenes de IA.",

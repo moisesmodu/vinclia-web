@@ -11,7 +11,7 @@ let totalCalc = 0;
 for (const sitio of readdirSync('sitios')) {
   const cfg = JSON.parse(readFileSync(`sitios/${sitio}/sitio.json`, 'utf8'));
   totalCalc += cfg.calculadoras.length;
-  if (cfg.titular.nif.startsWith('PENDIENTE')) av(`${sitio}: falta el NIF del titular en sitio.json (aviso legal)`);
+  if (cfg.titular.nif.startsWith('PENDIENTE') && !process.env.LEGAL_NIF) av(`${sitio}: falta el NIF del titular en sitio.json (aviso legal): se toma de LEGAL_NIF en el despliegue`);
   if (!cfg.adsense.cliente) av(`${sitio}: AdSense sin cuenta (anuncios y banner de consentimiento desactivados)`);
   const slugs = {};
   for (const id of cfg.calculadoras) {

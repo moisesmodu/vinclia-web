@@ -16,6 +16,13 @@ export const sitio = {
       finContenido: env('ADSENSE_SLOT_FINAL') || base.adsense.slots.finContenido,
     },
   },
+  // Datos del titular desde los secretos del entorno (DESPLIEGUES.md §1) si existen
+  titular: {
+    nombre: env('LEGAL_NOM') || base.titular.nombre,
+    nif: env('LEGAL_NIF') || base.titular.nif,
+    domicilio: env('LEGAL_ADRECA') || base.titular.domicilio,
+    email: env('LEGAL_EMAIL_SITIO') || env('LEGAL_EMAIL') || base.titular.email,
+  },
   umami: { src: env('UMAMI_SRC') || base.umami.src, id: env('UMAMI_ID') || base.umami.id },
   searchConsole: { verificacion: env('GSC_VERIFICACION') || base.searchConsole.verificacion },
 };
