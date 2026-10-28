@@ -37,6 +37,12 @@ su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 
 ## 2. Stripe: la cuenta real de Numi Mates para todos los proyectos
 
+> Atajo sin claves: la sesión madre («Estrategia ingresos recurrentes») tiene el conector de Stripe de claude.ai conectado a
+> esta cuenta. Lee sin problema, pero el 28/10 las escrituras devolvieron «Forbidden»: el conector está en modo solo
+> lectura. Si Moisés abre claude.ai → Ajustes → Conectores → Stripe y permite las herramientas de escritura, la sesión
+> madre crea los productos, precios y webhooks de todos los proyectos sin ninguna clave. Los scripts
+> `stripe-configurar.mjs` de cada proyecto son repetibles y reutilizan lo que ya exista.
+
 - Cuenta: **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`), modo real. No se abren cuentas nuevas.
 - Desarrollo y pruebas con las claves de **modo prueba de la misma cuenta**; al lanzar, las de modo real.
 - Cada proyecto crea sus productos y precios por API, con nombre `Cartera · <Proyecto> · <Plan>` y
