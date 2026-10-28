@@ -14,7 +14,7 @@
     "es": "Escala de administración general, subescala auxiliar (subgrupo C2)",
     "ca": "Escala d'administració general, subescala auxiliar (subgrup C2)"
   },
-  "administracion": "Ayuntamientos de Cataluña (administración local)",
+  "administracion": "Ajuntaments de Catalunya (administració local)",
   "convocatoria": {
     "referencia": "Bases de la convocatòria de l'any 2026 per a la cobertura de places del subgrup de titulació C2 i grups agrupacions professionals (AP) de l'Ajuntament de Barcelona, mitjançant concurs oposició lliure (128/2026)",
     "diario": "BOPB",
@@ -63,9 +63,17 @@
         "ca": "La Constitució Espanyola de 1978: estructura, contingut i principis. Drets i deures fonamentals i les seves garanties. La reforma constitucional"
       },
       "slug": "constitucio-drets-fonamentals",
-      "bloque": { "es": "Parte general: Derecho constitucional y autonómico", "ca": "Part general: Dret constitucional i autonòmic" },
+      "bloque": {
+        "es": "Parte general: Derecho constitucional y autonómico",
+        "ca": "Part general: Dret constitucional i autonòmic"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "1-55, 166-169" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1978-31229",
+          "norma": "Constitución Española",
+          "articulos": "1-55, 166-169"
+        }
       ],
       "peso": 1
     },
@@ -76,9 +84,17 @@
         "ca": "L'organització de l'Estat: la Corona, les Corts Generals, el Govern i l'Administració, el Poder Judicial i el Tribunal Constitucional"
       },
       "slug": "organitzacio-estat",
-      "bloque": { "es": "Parte general: Derecho constitucional y autonómico", "ca": "Part general: Dret constitucional i autonòmic" },
+      "bloque": {
+        "es": "Parte general: Derecho constitucional y autonómico",
+        "ca": "Part general: Dret constitucional i autonòmic"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "56-127, 159-165" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1978-31229",
+          "norma": "Constitución Española",
+          "articulos": "56-127, 159-165"
+        }
       ],
       "peso": 1
     },
@@ -89,9 +105,17 @@
         "ca": "L'organització territorial de l'Estat: principis generals, l'Administració local i les comunitats autònomes"
       },
       "slug": "organitzacio-territorial-estat",
-      "bloque": { "es": "Parte general: Derecho constitucional y autonómico", "ca": "Part general: Dret constitucional i autonòmic" },
+      "bloque": {
+        "es": "Parte general: Derecho constitucional y autonómico",
+        "ca": "Part general: Dret constitucional i autonòmic"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "137-158" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1978-31229",
+          "norma": "Constitución Española",
+          "articulos": "137-158"
+        }
       ],
       "peso": 1
     },
@@ -102,9 +126,17 @@
         "ca": "L'Estatut d'autonomia de Catalunya: estructura i principis, drets i deures, les institucions de la Generalitat i l'organització territorial de Catalunya"
       },
       "slug": "estatut-autonomia",
-      "bloque": { "es": "Parte general: Derecho constitucional y autonómico", "ca": "Part general: Dret constitucional i autonòmic" },
+      "bloque": {
+        "es": "Parte general: Derecho constitucional y autonómico",
+        "ca": "Part general: Dret constitucional i autonòmic"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "1-54, 55-82, 83-94, 151, 160, 217-221, 222-223" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2006-13087",
+          "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+          "articulos": "1-54, 55-82, 83-94, 151, 160, 217-221, 222-223"
+        }
       ],
       "peso": 1
     },
@@ -115,11 +147,29 @@
         "ca": "El règim local: fonts, principi d'autonomia local i classes d'ens locals en la legislació bàsica i en la de Catalunya"
       },
       "slug": "regim-local-fonts",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "1-10" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "1-9" },
-        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "137, 140-142" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "1-10"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "1-9"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1978-31229",
+          "norma": "Constitución Española",
+          "articulos": "137, 140-142"
+        }
       ],
       "peso": 1
     },
@@ -130,10 +180,23 @@
         "ca": "El municipi: concepte i elements. El terme municipal. La població: veïnatge i el padró d'habitants. Drets i deures dels veïns"
       },
       "slug": "municipi-territori-poblacio",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "11-18" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "10-25, 30-45" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "11-18"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "10-25, 30-45"
+        }
       ],
       "peso": 1
     },
@@ -144,12 +207,35 @@
         "ca": "L'organització municipal: l'alcalde, els tinents d'alcalde, el Ple, la Junta de Govern Local i els òrgans complementaris. Règims municipals especials (municipis de gran població i règim especial de Barcelona)"
       },
       "slug": "organitzacio-municipal",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "19-24 bis, 29-30, 121-138" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "46-65, 72-78" },
-        { "tipo": "boe", "id": "BOE-A-1986-33252", "norma": "Real Decreto 2568/1986, de 28 de noviembre, Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales", "articulos": "35-54, 119-133" },
-        { "tipo": "boe", "id": "BOE-A-1999-2518", "norma": "Ley 22/1998, de 30 de diciembre, de la Carta Municipal de Barcelona (solo convocatorias de Barcelona)", "articulos": "1-30" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "19-24 bis, 29-30, 121-138"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "46-65, 72-78"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1986-33252",
+          "norma": "Real Decreto 2568/1986, de 28 de noviembre, Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+          "articulos": "35-54, 119-133"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1999-2518",
+          "norma": "Ley 22/1998, de 30 de diciembre, de la Carta Municipal de Barcelona (solo convocatorias de Barcelona)",
+          "articulos": "1-30"
+        }
       ],
       "peso": 1
     },
@@ -160,10 +246,23 @@
         "ca": "Les competències municipals: competències pròpies, delegades i diferents de les pròpies. Els serveis mínims obligatoris"
       },
       "slug": "competencies-municipals",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "25-28" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "66-71, 137-143" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "25-28"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "66-71, 137-143"
+        }
       ],
       "peso": 1
     },
@@ -174,11 +273,29 @@
         "ca": "El funcionament dels òrgans col·legiats locals: règim de sessions, convocatòria i ordre del dia, debats, votacions i adopció d'acords, actes i certificats"
       },
       "slug": "funcionament-organs-collegiats",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "46-54" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "97-114" },
-        { "tipo": "boe", "id": "BOE-A-1986-33252", "norma": "Real Decreto 2568/1986, de 28 de noviembre, Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales", "articulos": "77-118, 196-207" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "46-54"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "97-114"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1986-33252",
+          "norma": "Real Decreto 2568/1986, de 28 de noviembre, Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+          "articulos": "77-118, 196-207"
+        }
       ],
       "peso": 1
     },
@@ -189,11 +306,29 @@
         "ca": "Altres ens locals: la província, la vegueria, la comarca, les entitats municipals descentralitzades, les mancomunitats i les entitats metropolitanes"
       },
       "slug": "altres-ens-locals",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "31-45" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "79-96, 115-136" },
-        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "90-93" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "31-45"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "79-96, 115-136"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2006-13087",
+          "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+          "articulos": "90-93"
+        }
       ],
       "peso": 1
     },
@@ -204,12 +339,35 @@
         "ca": "Les fonts del dret administratiu. La potestat normativa dels ens locals: ordenances, reglaments i bans; procediment d'elaboració i aprovació"
       },
       "slug": "ordenances-reglaments",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "4, 21.1.e, 22.2.d, 49, 70.2, 84" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "8, 178, 237" },
-        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "127-133" },
-        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "59-70" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "4, 21.1.e, 22.2.d, 49, 70.2, 84"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "8, 178, 237"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "127-133"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13313",
+          "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+          "articulos": "59-70"
+        }
       ],
       "peso": 1
     },
@@ -220,10 +378,23 @@
         "ca": "L'acte administratiu: concepte, requisits, motivació i forma. Eficàcia, notificació i publicació. Nul·litat i anul·labilitat"
       },
       "slug": "acte-administratiu",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "34-52" },
-        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "56-58" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "34-52"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13313",
+          "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+          "articulos": "56-58"
+        }
       ],
       "peso": 1
     },
@@ -234,10 +405,23 @@
         "ca": "El procediment administratiu comú: les persones interessades, drets de les persones, termes i terminis; iniciació, ordenació, instrucció i finalització; el silenci administratiu"
       },
       "slug": "procediment-administratiu",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "1-8, 13-33, 53-105" },
-        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "21-55" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "1-8, 13-33, 53-105"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13313",
+          "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+          "articulos": "21-55"
+        }
       ],
       "peso": 1
     },
@@ -248,11 +432,29 @@
         "ca": "La revisió dels actes en via administrativa: revisió d'ofici i recursos administratius (alçada, reposició i extraordinari de revisió). Règim d'impugnació dels actes i acords locals"
       },
       "slug": "revisio-recursos",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "106-126" },
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "52, 63-68" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "171-183" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "106-126"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "52, 63-68"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "171-183"
+        }
       ],
       "peso": 1
     },
@@ -263,10 +465,23 @@
         "ca": "Els òrgans administratius: competència, delegació, avocació, abstenció i recusació. Principis de la potestat sancionadora. La responsabilitat patrimonial de les administracions públiques"
       },
       "slug": "organs-sancions-responsabilitat",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-10566", "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público", "articulos": "1-37" },
-        { "tipo": "boe", "id": "BOE-A-2010-13313", "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña", "articulos": "6-20, 81-87, 102-106" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10566",
+          "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+          "articulos": "1-37"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13313",
+          "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+          "articulos": "6-20, 81-87, 102-106"
+        }
       ],
       "peso": 1
     },
@@ -277,10 +492,23 @@
         "ca": "Els béns dels ens locals: classes i règim. Les activitats i els serveis públics locals: formes de gestió. L'activitat de foment: subvencions"
       },
       "slug": "bens-serveis-locals",
-      "bloque": { "es": "Régimen local", "ca": "Règim local" },
+      "bloque": {
+        "es": "Régimen local",
+        "ca": "Règim local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "79-87" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "199-272" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "79-87"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "199-272"
+        }
       ],
       "peso": 1
     },
@@ -291,9 +519,17 @@
         "ca": "Els contractes del sector públic: tipus de contractes, òrgan de contractació, procediments d'adjudicació i el contracte menor"
       },
       "slug": "contractacio-publica",
-      "bloque": { "es": "Derecho administrativo general", "ca": "Dret administratiu general" },
+      "bloque": {
+        "es": "Derecho administrativo general",
+        "ca": "Dret administratiu general"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2017-12902", "norma": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público", "articulos": "1-35, 61-64, 99-102, 115-187, disposición adicional segunda" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2017-12902",
+          "norma": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público",
+          "articulos": "1-35, 61-64, 99-102, 115-187, disposición adicional segunda"
+        }
       ],
       "peso": 1
     },
@@ -304,11 +540,29 @@
         "ca": "Les hisendes locals: recursos dels municipis. Els tributs locals: taxes, contribucions especials i impostos municipals; les ordenances fiscals. El pressupost municipal"
       },
       "slug": "hisendes-locals",
-      "bloque": { "es": "Hacienda pública local", "ca": "Hisenda pública local" },
+      "bloque": {
+        "es": "Hacienda pública local",
+        "ca": "Hisenda pública local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2004-4214", "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, texto refundido de la Ley Reguladora de las Haciendas Locales", "articulos": "2, 15-27, 56-110, 162-193" },
-        { "tipo": "boe", "id": "BOE-A-2003-23186", "norma": "Ley 58/2003, de 17 de diciembre, General Tributaria", "articulos": "1-3, 17-26" },
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "105-116 ter" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2004-4214",
+          "norma": "Real Decreto Legislativo 2/2004, de 5 de marzo, texto refundido de la Ley Reguladora de las Haciendas Locales",
+          "articulos": "2, 15-27, 56-110, 162-193"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2003-23186",
+          "norma": "Ley 58/2003, de 17 de diciembre, General Tributaria",
+          "articulos": "1-3, 17-26"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "105-116 ter"
+        }
       ],
       "peso": 1
     },
@@ -319,12 +573,34 @@
         "ca": "El personal al servei dels ens locals: classes, accés, drets i deures, codi de conducta, situacions administratives i règim disciplinari"
       },
       "slug": "personal-ens-locals",
-      "bloque": { "es": "Función pública local", "ca": "Funció pública local" },
+      "bloque": {
+        "es": "Función pública local",
+        "ca": "Funció pública local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-11719", "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público", "articulos": "1-30, 47-68, 76, 85-98" },
-        { "tipo": "boe", "id": "BOE-A-1985-5392", "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local", "articulos": "89-104 bis" },
-        { "tipo": "boe", "id": "DOGC-f-2003-90008", "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña", "articulos": "282-306" },
-        { "tipo": "web", "norma": "Decret 214/1990, de 30 de juliol, Reglament del personal al servei de les entitats locals (text consolidat, CEMICAL)", "url": "https://cemical.diba.cat/codibasic/fitxers/D_personal_entitats_locals.pdf" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-11719",
+          "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público",
+          "articulos": "1-30, 47-68, 76, 85-98"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1985-5392",
+          "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+          "articulos": "89-104 bis"
+        },
+        {
+          "tipo": "boe",
+          "id": "DOGC-f-2003-90008",
+          "norma": "Decreto Legislativo 2/2003, de 28 de abril, Texto refundido de la Ley municipal y de régimen local de Cataluña",
+          "articulos": "282-306"
+        },
+        {
+          "tipo": "web",
+          "norma": "Decret 214/1990, de 30 de juliol, Reglament del personal al servei de les entitats locals (text consolidat, CEMICAL)",
+          "url": "https://cemical.diba.cat/codibasic/fitxers/D_personal_entitats_locals.pdf"
+        }
       ],
       "peso": 1
     },
@@ -335,13 +611,41 @@
         "ca": "L'atenció a la ciutadania i l'administració electrònica: registre de documents, identificació i signatura electrònica, seu electrònica, notificacions electròniques, expedient electrònic i arxiu de documents"
       },
       "slug": "atencio-ciutadana-administracio-electronica",
-      "bloque": { "es": "Gestión administrativa", "ca": "Gestió administrativa" },
+      "bloque": {
+        "es": "Gestión administrativa",
+        "ca": "Gestió administrativa"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-10565", "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas", "articulos": "9-28, 40-46, 70" },
-        { "tipo": "boe", "id": "BOE-A-2015-10566", "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público", "articulos": "38-46 bis" },
-        { "tipo": "boe", "id": "BOE-A-2021-5032", "norma": "Real Decreto 203/2021, de 30 de marzo, Reglamento de actuación y funcionamiento del sector público por medios electrónicos", "articulos": "1-60" },
-        { "tipo": "boe", "id": "BOE-A-2010-13843", "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña", "articulos": "1-18" },
-        { "tipo": "boe", "id": "BOE-A-2001-16691", "norma": "Ley 10/2001, de 13 de julio, de Archivos y Documentos (Cataluña)", "articulos": "1-12, 31-37" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10565",
+          "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+          "articulos": "9-28, 40-46, 70"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-10566",
+          "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+          "articulos": "38-46 bis"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2021-5032",
+          "norma": "Real Decreto 203/2021, de 30 de marzo, Reglamento de actuación y funcionamiento del sector público por medios electrónicos",
+          "articulos": "1-60"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2010-13843",
+          "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+          "articulos": "1-18"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2001-16691",
+          "norma": "Ley 10/2001, de 13 de julio, de Archivos y Documentos (Cataluña)",
+          "articulos": "1-12, 31-37"
+        }
       ],
       "peso": 1
     },
@@ -352,10 +656,23 @@
         "ca": "Transparència, accés a la informació pública i bon govern: publicitat activa, dret d'accés, límits i garanties"
       },
       "slug": "transparencia-acces-informacio",
-      "bloque": { "es": "Gestión administrativa", "ca": "Gestió administrativa" },
+      "bloque": {
+        "es": "Gestión administrativa",
+        "ca": "Gestió administrativa"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2015-470", "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno (Cataluña)", "articulos": "1-44, 54-61" },
-        { "tipo": "boe", "id": "BOE-A-2013-12887", "norma": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno", "articulos": "1-24" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-470",
+          "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno (Cataluña)",
+          "articulos": "1-44, 54-61"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2013-12887",
+          "norma": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
+          "articulos": "1-24"
+        }
       ],
       "peso": 1
     },
@@ -366,9 +683,17 @@
         "ca": "La protecció de dades personals: principis, drets de les persones, responsable i encarregat del tractament i delegat de protecció de dades"
       },
       "slug": "proteccio-dades",
-      "bloque": { "es": "Gestión administrativa", "ca": "Gestió administrativa" },
+      "bloque": {
+        "es": "Gestión administrativa",
+        "ca": "Gestió administrativa"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2018-16673", "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales", "articulos": "1-18, 28-37, 77, 79-97" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2018-16673",
+          "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+          "articulos": "1-18, 28-37, 77, 79-97"
+        }
       ],
       "peso": 1
     },
@@ -379,11 +704,29 @@
         "ca": "La igualtat efectiva de dones i homes a l'administració. La prevenció de riscos laborals: drets i obligacions"
       },
       "slug": "igualtat-prevencio-riscos",
-      "bloque": { "es": "Función pública local", "ca": "Funció pública local" },
+      "bloque": {
+        "es": "Función pública local",
+        "ca": "Funció pública local"
+      },
       "fuentes": [
-        { "tipo": "boe", "id": "BOE-A-2007-6115", "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres", "articulos": "1-22, 51" },
-        { "tipo": "boe", "id": "BOE-A-2015-9676", "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres (Cataluña)", "articulos": "1-17" },
-        { "tipo": "boe", "id": "BOE-A-1995-24292", "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales", "articulos": "1-5, 14-29" }
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2007-6115",
+          "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres",
+          "articulos": "1-22, 51"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-2015-9676",
+          "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres (Cataluña)",
+          "articulos": "1-17"
+        },
+        {
+          "tipo": "boe",
+          "id": "BOE-A-1995-24292",
+          "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+          "articulos": "1-5, 14-29"
+        }
       ],
       "peso": 1
     },
@@ -394,11 +737,26 @@
         "ca": "Ofimàtica: processador de textos, full de càlcul, correu electrònic i gestió d'arxius"
       },
       "slug": "ofimatica",
-      "bloque": { "es": "Gestión administrativa", "ca": "Gestió administrativa" },
+      "bloque": {
+        "es": "Gestión administrativa",
+        "ca": "Gestió administrativa"
+      },
       "fuentes": [
-        { "tipo": "web", "norma": "Soporte de Microsoft Word", "url": "https://support.microsoft.com/es-es/word" },
-        { "tipo": "web", "norma": "Soporte de Microsoft Excel", "url": "https://support.microsoft.com/es-es/excel" },
-        { "tipo": "web", "norma": "Ayuda de LibreOffice", "url": "https://help.libreoffice.org/" }
+        {
+          "tipo": "web",
+          "norma": "Soporte de Microsoft Word",
+          "url": "https://support.microsoft.com/es-es/word"
+        },
+        {
+          "tipo": "web",
+          "norma": "Soporte de Microsoft Excel",
+          "url": "https://support.microsoft.com/es-es/excel"
+        },
+        {
+          "tipo": "web",
+          "norma": "Ayuda de LibreOffice",
+          "url": "https://help.libreoffice.org/"
+        }
       ],
       "peso": 0.5
     }
