@@ -13,6 +13,8 @@ lo bloquea. En el mismo menú del entorno (barra de título de la sesión → Ed
 `api.anthropic.com`, `*.neon.tech`, `*.vercel.app` y, si P se publica en Cloudflare Pages, `api.cloudflare.com`. Pasos: https://code.claude.com/docs/en/cloud-environments#network-access.
 Sin esto, las sesiones no pueden crear productos de Stripe ni desplegar aunque tengan los secretos.
 
+**Hecho el 28/10/2026** (sesión del Mac): entorno «Default» en Limitado con esos 10 dominios y gestores de paquetes.
+
 ## 1. Una sola vez: los accesos como secretos del entorno en la nube
 
 La sesión del Mac (con el navegador de Moisés abierto) obtiene estos accesos y los guarda en el entorno en la nube
@@ -31,6 +33,12 @@ de las sesiones de proyecto: menú del entorno en la barra de título de la sesi
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (solo si P va en Cloudflare Pages) | dash.cloudflare.com → My Profile → API Tokens → plantilla «Edit Cloudflare Workers» + Pages; Account ID en la página de inicio del dominio | Publicar los sitios de P sin coste |
 | `GELATO_API_KEY` (G) | dashboard.gelato.com → Developer → API keys; la cuenta la abre Moisés (identidad y tarjeta) | Pedidos de impresión de cuentos |
 | `GOOGLE_PLAY_JSON` (más adelante) | Google Play Console → cuenta de servicio | Publicar apps Android |
+
+**Hecho el 28/10/2026** (sesión del Mac): el entorno «Default» tiene `VERCEL_TOKEN` (equipo, sin caducidad), `VERCEL_TEAM_ID`,
+`NEON_API_KEY` y `NEON_ORG_ID` (organización «Vercel: moisesmodu-3705's projects»; no usar la de Algorithmics Lleida),
+`STRIPE_SECRET_KEY` (restringida `cartera-sesiones-claude-2`, Numi Mates, modo real), `STRIPE_TEST_SECRET_KEY`, `RESEND_API_KEY` y `LEGAL_*`.
+Copia local en el Mac: `~/.config/cartera/secretos.env` (chmod 600). Correo legal provisional `moisesmodu@gmail.com` hasta tener dominio
+por proyecto. **No se usa nada de Algorithmics** (ni web ni dominio `algorithmicslleida.com`): remitente de Resend `noreply@numimates.com`.
 
 Nunca se pegan claves en el chat. Si una variable no está, la sesión escribe lo que necesita en el `DESPLIEGUE.md` de
 su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
@@ -58,7 +66,7 @@ su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 2. **Neon:** `POST https://console.neon.tech/api/v2/projects` con `NEON_API_KEY`, región `aws-eu-west-2`, nombre
    `cartera-<clave>`; guardar la `connection_uri` como `DATABASE_URL` en Vercel; `prisma migrate deploy`.
 3. **Stripe:** productos, precios y webhook por API (sección 2); `STRIPE_WEBHOOK_SECRET` a Vercel.
-4. **Resend:** remitente `noreply@algorithmicslleida.com` hasta tener dominio propio.
+4. **Resend:** remitente `noreply@numimates.com` (verificado) hasta tener dominio propio; nunca `algorithmicslleida.com`.
 5. Comprobar de punta a punta en la URL de producción (pago en modo prueba) y anotar la URL en `panel/data/proyectos.json`.
 
 ## 3 bis. Primero de todo, en cada sesión: `node scripts/comprobar-entorno.mjs`

@@ -687,7 +687,7 @@
     "nombre": "Juegos",
     "marca": "Nuvolet Games",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -698,7 +698,8 @@
     "canal": "La plataforma distribuye; sin marketing",
     "enlaces": {
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
-      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv"
+      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
+      "Web": "https://juegos-casuales.vercel.app/egg-truck/"
     },
     "acciones": [
       {
@@ -732,11 +733,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Nuvolet Games («Tiny games, big smiles.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en Vercel (proyecto juegos-casuales): https://juegos-casuales.vercel.app/egg-truck/"
       }
     ],
     "proximos": [
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/juegos/DESPLIEGUE.md",
       "Segundo juego con la plantilla",
       "Plan de Roblox"
     ],
@@ -2532,7 +2536,7 @@
     "nombre": "Webs con AdSense",
     "marca": "Claro",
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 11,
     "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas",
     "margenCliente": 0,
@@ -2544,7 +2548,9 @@
     "enlaces": {
       "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6",
       "Vista previa NetoClaro": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
-      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq"
+      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
+      "NetoClaro": "https://netoclaro.vercel.app/",
+      "ImpuestoClaro": "https://impuestoclaro.vercel.app/"
     },
     "acciones": [
       {
@@ -2578,11 +2584,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Claro («Números claros, sin letra pequeña.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
       }
     ],
     "proximos": [
       "Aplicar la identidad de marca de MARCAS.md",
-      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md",
       "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
       "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
     ],
