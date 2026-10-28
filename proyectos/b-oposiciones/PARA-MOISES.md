@@ -1,12 +1,12 @@
 # Para Moisés · proyecto B (Plaça)
 
-**Hoy no hay nada que te toque.** El despliegue (Vercel, Neon, Stripe de Numi Mates, Resend y datos legales) lo hace la
-sesión del Mac con `DESPLIEGUE.md`, según `DESPLIEGUES.md`.
+Producción: https://placa-oposicions.vercel.app · plan del primer euro en `MONETIZACION.md` (objetivo: 11/11/2026).
 
-Solo cuando llegue el momento, y si quieres:
-1. **Dominio propio** (opcional): comprar `placa.cat` o `treuplaca.cat`. Hasta entonces, `placa-oposicions.vercel.app` gratis.
-2. **Mes 2: aprobar o no los anuncios de búsqueda** de 100 €/mes. La campaña está lista en `marketing/google-ads/`, sin activar.
-3. **Google Play:** pulsar «publicar» cuando la cuenta de desarrollador exista. La ficha y el paquete TWA están preparados
-   (`MARKETING.md` §2 y `android/`).
-4. **Respuestas a soporte:** la tarea semanal deja aquí los borradores de respuesta a los mensajes de Contacto para que tú
-   pulses «enviar».
+1. **Aprobar y publicar los 5 mensajes** de `MONETIZACION.md` §4 en los grupos de Telegram/WhatsApp de Bombers 81/26 y del ICS,
+   los hilos de Mossos, los grupos de Facebook de oposiciones catalanas y los delegados sindicales (10 minutos). Son las 100
+   primeras visitas: sin ellas no hay primer euro en 14 días.
+2. **Un pago real de 9,99 €** con tu tarjeta en https://placa-oposicions.vercel.app/es/precios cuando la sesión del Mac active
+   el cobro real; se reembolsa al momento. Es la prueba de cobro real que exige SESIONES.md y necesita una tarjeta de verdad.
+3. Opcional: **dominio propio** (`placa.cat` o `treuplaca.cat`).
+
+Mes 2: aprobar o no los anuncios de búsqueda de 100 €/mes (campaña lista en `marketing/google-ads/`, sin activar).

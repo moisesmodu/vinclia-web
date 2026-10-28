@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   const u = await usuarioActual();
   const b = await req.json().catch(() => ({}));
   const idioma = b?.idioma === 'es' ? 'es' : 'ca';
-  if (!u) return json({ url: `/${idioma}/entrar?siguiente=/${idioma}/precios` });
+  if (!u) return json({ url: `/${idioma}/entrar?plan=${encodeURIComponent(String(b?.plan ?? 'mensual'))}` });
   const p = plan(String(b?.plan ?? 'mensual'));
   if (!p) return error('plan desconocido');
   const modo = modoPago();
@@ -36,6 +36,11 @@ export async function POST(req: Request) {
     client_reference_id: u.id,
     subscription_data: { metadata: { usuarioId: u.id, plan: p.id } },
     metadata: { usuarioId: u.id, plan: p.id },
+    // Recuperación: si la sesión caduca sin pagar, Stripe genera un enlace nuevo (lo usa el aviso del webhook).
+    after_expiration: { recovery: { enabled: true, allow_promotion_codes: true } },
+    expires_at: Math.floor(Date.now() / 1000) + 2 * 3600,
   });
+  // Pago a medias: la app lo recuerda una vez (aviso en la cuenta y en la práctica).
+  await db.ajuste.upsert({ where: { clave: `checkout:${u.id}` }, update: { valor: JSON.stringify({ url: ses.url, hasta: ses.expires_at * 1000 }) }, create: { clave: `checkout:${u.id}`, valor: JSON.stringify({ url: ses.url, hasta: ses.expires_at * 1000 }) } });
   return json({ url: ses.url });
 }

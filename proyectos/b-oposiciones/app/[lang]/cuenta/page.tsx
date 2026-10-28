@@ -7,6 +7,7 @@ import { usuarioActual, estaSuscrito } from '@/lib/auth';
 import { oposiciones } from '@/lib/datos';
 import { modoPago } from '@/lib/pagos';
 import AccionesCuenta from '@/components/AccionesCuenta';
+import { db } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 export const metadata: Metadata = { robots: { index: false } };
@@ -18,12 +19,20 @@ export default async function Cuenta({ params, searchParams }: { params: Promise
   if (!u) redirect(`/${lang}/entrar`);
   const d = t(lang);
   const sus = estaSuscrito(u);
+  const pend = !sus ? await db.ajuste.findUnique({ where: { clave: `checkout:${u.id}` } }).catch(() => null) : null;
+  const pagoPendiente = pend && JSON.parse(pend.valor).hasta > Date.now() ? (JSON.parse(pend.valor).url as string) : null;
   const fecha = u.suscripcionHasta ? u.suscripcionHasta.toLocaleDateString(lang === 'ca' ? 'ca-ES' : 'es-ES') : '';
   return (
     <div className="contenedor py-10">
       <h1 className="text-2xl font-bold">{d.cuenta}</h1>
       <p className="mt-1 text-slate-600">{u.email}</p>
       {pagado ? <p className="mt-4 rounded-lg bg-green-50 p-3 text-sm font-semibold text-ok">✓ {lang === 'ca' ? 'Subscripció activada. Ja tens totes les preguntes.' : 'Suscripción activada. Ya tienes todas las preguntas.'}{pagado === 'demo' ? ' (demo)' : ''}</p> : null}
+      {pagoPendiente ? (
+        <div className="mt-4 max-w-xl rounded-2xl border-2 border-marca bg-white p-4 text-sm">
+          <p className="font-semibold">{lang === 'ca' ? 'Tens el pagament a mitges.' : 'Tienes el pago a medias.'}</p>
+          <a className="boton mt-3" href={pagoPendiente}>{lang === 'ca' ? 'Continuar el pagament' : 'Continuar el pago'}</a>
+        </div>
+      ) : null}
       <div className="tarjeta mt-6 max-w-xl">
         <p className="text-sm text-slate-500">{d.cuentaTxt.plan}</p>
         <p className="text-lg font-bold">{sus ? d.cuentaTxt.activo : d.cuentaTxt.gratis}{u.suscripcionEstado === 'demo' ? ' (demo)' : ''}</p>

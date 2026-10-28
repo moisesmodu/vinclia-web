@@ -58,6 +58,7 @@ for (let i = 0; i < 10; i++) {
 await p.getByText('Resultat').waitFor();
 await p.screenshot({ path: `${OUT}/05-resultado-tema.png`, fullPage: true });
 ok(true, `test por tema terminado (${correctas}/10 correctas al azar)`);
+ok(await p.getByText(/Això eren preguntes gratis/).count() > 0 && await p.getByRole('button', { name: /Desbloquejar per 9,99/ }).count() > 0, 'oferta de pago con precio justo después del primer test');
 await p.getByRole('button', { name: 'Tornar' }).click();
 ok(await p.getByText(/Amb el pla gratuït/).count() > 0, 'aviso de plan gratuito visible');
 const pend = await p.locator('h2:has-text("Repàs del dia") .etiqueta').innerText();

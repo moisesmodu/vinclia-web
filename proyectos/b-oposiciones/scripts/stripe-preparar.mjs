@@ -36,7 +36,7 @@ for (const p of pais.planes.filter((x) => x.activo)) {
 }
 
 const destino = `${url}/api/stripe/webhook`;
-const eventos = ['checkout.session.completed', 'customer.subscription.created', 'customer.subscription.updated', 'customer.subscription.deleted', 'customer.subscription.paused', 'customer.subscription.resumed'];
+const eventos = ['checkout.session.completed', 'checkout.session.expired', 'customer.subscription.created', 'customer.subscription.updated', 'customer.subscription.deleted', 'customer.subscription.paused', 'customer.subscription.resumed'];
 // El secreto solo se puede leer al crear el webhook: si ya existía uno para esta URL, se sustituye.
 for (const w of (await s.webhookEndpoints.list({ limit: 100 })).data) if (w.url === destino) { await s.webhookEndpoints.del(w.id); console.log(`webhook anterior ${w.id} sustituido`); }
 const w = await s.webhookEndpoints.create({ url: destino, enabled_events: eventos, metadata: { proyecto: 'b-oposiciones' }, description: 'Cartera · Oposiciones' });

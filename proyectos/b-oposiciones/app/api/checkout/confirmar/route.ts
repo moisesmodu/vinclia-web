@@ -1,4 +1,5 @@
 import { stripe, guardarSuscripcion, modoPago } from '@/lib/pagos';
+import { db } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,6 +13,7 @@ export async function GET(req: Request) {
     const ses = await stripe().checkout.sessions.retrieve(id, { expand: ['subscription'] });
     if (ses.status === 'complete' && ses.subscription && typeof ses.subscription !== 'string') {
       await guardarSuscripcion(ses.subscription, ses.client_reference_id ?? undefined);
+      if (ses.client_reference_id) await db.ajuste.deleteMany({ where: { clave: `checkout:${ses.client_reference_id}` } });
       return Response.redirect(new URL(`/${idioma}/cuenta?pagado=1`, req.url), 303);
     }
   } catch {}

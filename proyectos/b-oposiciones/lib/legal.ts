@@ -1,6 +1,7 @@
 import pais from '@/config/paises/es.json';
 import marca from '@/config/marca.json';
 import type { Idioma } from './tipos';
+import { correoContacto } from './contacto';
 
 type Doc = { titulo: string; secciones: { h: string; p: string[] }[] };
 // Datos del titular desde el entorno (LEGAL_*, DESPLIEGUES.md §1); el archivo del país da los valores por defecto.
@@ -9,7 +10,7 @@ const L = {
   titular: process.env.LEGAL_NOM || pais.legal.titular,
   nif: process.env.LEGAL_NIF || pais.legal.nif,
   domicilio: process.env.LEGAL_ADRECA || pais.legal.domicilio,
-  email: process.env.LEGAL_EMAIL || '',
+  email: correoContacto(),
 };
 const nif = L.nif || '(NIF pendent de publicar / pendiente de publicar)';
 const precios = pais.planes.filter((p) => p.activo).map((p) => `${p.id}: ${(p.importe / 100).toFixed(2).replace('.', ',')} €`).join(' · ');

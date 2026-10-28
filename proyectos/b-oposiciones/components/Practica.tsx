@@ -36,6 +36,7 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
   const [total, setTotal] = useState(0);
   const [suscrito, setSuscrito] = useState(false);
   const [logueado, setLogueado] = useState(false);
+  const [pagoPendiente, setPagoPendiente] = useState<string | null>(null);
   const [progreso, setProgreso] = useState<Progreso>(vacio());
   const [vista, setVista] = useState<'inicio' | 'test' | 'resultado' | 'stats'>('inicio');
   const [sesion, setSesion] = useState<Sesion | null>(null);
@@ -60,6 +61,11 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
         setTotal(j.total ?? 0);
         setSuscrito(!!j.suscrito);
         setLogueado(!!j.logueado);
+        if (j.logueado && !j.suscrito)
+          fetch('/api/yo').then((r) => r.json()).then((y) => {
+            // Recuperación dentro de la app: se avisa una sola vez por enlace de pago.
+            try { if (y.pagoPendiente && localStorage.getItem('placa:aviso-pago') !== y.pagoPendiente) { setPagoPendiente(y.pagoPendiente); localStorage.setItem('placa:aviso-pago', y.pagoPendiente); } } catch {}
+          }).catch(() => {});
         if (j.logueado)
           fetch(`/api/progreso?op=${encodeURIComponent(op.slug)}`)
             .then((r) => (r.ok ? r.json() : null))
@@ -163,7 +169,7 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
 
   if (vista === 'test' && sesion) return <Test {...{ idioma, op, sesion, setSesion, mapa, terminar, ahora, salir: () => setVista('inicio') }} onRespuesta={(id, ok) => setProgreso((p) => registrar(p, id, ok))} />;
 
-  if (vista === 'resultado' && resultado) return <VistaResultado {...{ idioma, op, resultado, mapa }} volver={() => setVista('inicio')} repetir={(ids) => empezar('falladas', { ids })} suscrito={suscrito} />;
+  if (vista === 'resultado' && resultado) return <VistaResultado {...{ idioma, op, resultado, mapa, total, logueado }} volver={() => setVista('inicio')} repetir={(ids) => empezar('falladas', { ids })} suscrito={suscrito} />;
 
   const nPend = pendientes(progreso, idsDisp).length;
   const nFall = falladas(progreso, idsDisp).length;
@@ -186,6 +192,12 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
         <Dato n={`${pctAcierto}%`} t={`${d.app.acierto} · ${respondidas.length}`} />
         <Dato n={`${racha(progreso)} ${d.app.dias}`} t={d.app.racha} />
       </div>
+      {pagoPendiente ? (
+        <div className="mt-4 rounded-2xl border-2 border-marca bg-white p-4 text-sm">
+          <p className="font-semibold">{idioma === 'ca' ? 'Tens el pagament a mitges.' : 'Tienes el pago a medias.'} {idioma === 'ca' ? `Acaba'l i desbloqueja les ${total} preguntes de ${op.nombreCorto.ca}.` : `Acábalo y desbloquea las ${total} preguntas de ${op.nombreCorto.es}.`}</p>
+          <a href={pagoPendiente} className="boton mt-3">{idioma === 'ca' ? 'Continuar el pagament' : 'Continuar el pago'}</a>
+        </div>
+      ) : null}
       {!suscrito ? (
         <div className="mt-4 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm">
           <p>{d.app.bloqueado} ({preguntas.length}/{total})</p>
@@ -341,8 +353,32 @@ function Explicacion({ q, idioma, acierto, slug }: { q: Pregunta; idioma: Idioma
   );
 }
 
-function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscrito }: {
-  idioma: Idioma; op: Oposicion; resultado: Resultado; mapa: Map<string, Pregunta>; volver: () => void; repetir: (ids: string[]) => void; suscrito: boolean;
+function OfertaPago({ idioma, op, total, logueado }: { idioma: Idioma; op: Oposicion; total: number; logueado: boolean }) {
+  const ca = idioma === 'ca';
+  const [c, setC] = useState(false);
+  const pagar = async () => {
+    setC(true);
+    if (!logueado) { location.href = `/${idioma}/entrar?plan=mensual`; return; }
+    const j = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'mensual', idioma }) }).then((x) => x.json()).catch(() => ({}));
+    if (j.url) location.href = j.url; else setC(false);
+  };
+  const e = op.examen;
+  return (
+    <div className="mt-5 rounded-2xl border-2 border-marca bg-white p-5">
+      <p className="text-lg font-bold">{ca ? `Això eren preguntes gratis. ${op.nombreCorto.ca} en té ${total}.` : `Eran preguntas gratis. ${op.nombreCorto.es} tiene ${total}.`}</p>
+      <ul className="mt-2 space-y-1 text-sm text-slate-700">
+        <li>✓ {ca ? `Totes les ${total} preguntes, tema per tema, amb l'article de la llei` : `Las ${total} preguntas, tema a tema, con el artículo de la ley`}</li>
+        <li>✓ {ca ? `El simulacre complet: ${e.preguntas} preguntes, ${e.minutos} minuts, com a l'examen` : `El simulacro completo: ${e.preguntas} preguntas, ${e.minutos} minutos, como en el examen`}</li>
+        <li>✓ {ca ? 'Repàs de les que falles i totes les altres oposicions catalanes' : 'Repaso de las que fallas y todas las demás oposiciones catalanas'}</li>
+      </ul>
+      <button onClick={pagar} disabled={c} className="boton mt-4 w-full">{c ? '…' : ca ? 'Desbloquejar per 9,99 €/mes' : 'Desbloquear por 9,99 €/mes'}</button>
+      <p className="mt-2 text-center text-xs text-slate-500">{ca ? 'IVA inclòs · Cancel·la amb un clic · Pagament segur amb Stripe' : 'IVA incluido · Cancela en un clic · Pago seguro con Stripe'}</p>
+    </div>
+  );
+}
+
+function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscrito, total, logueado }: {
+  idioma: Idioma; op: Oposicion; resultado: Resultado; mapa: Map<string, Pregunta>; volver: () => void; repetir: (ids: string[]) => void; suscrito: boolean; total: number; logueado: boolean;
 }) {
   const d = t(idioma);
   const malas = r.ids.filter((id) => r.marcadas[id] != null && r.marcadas[id] !== mapa.get(id)?.correcta);
@@ -364,10 +400,10 @@ function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscr
         <Dato n={r.blancos} t={d.app.blancos} />
         <Dato n={reloj(r.segundos)} t={d.app.tiempo} />
       </div>
+      {!suscrito ? <OfertaPago {...{ idioma, op, total, logueado }} /> : null}
       <div className="mt-4 flex flex-wrap gap-2">
-        {malas.length ? <button className="boton" onClick={() => repetir(malas)}>{d.app.repetirFalladas} ({malas.length})</button> : null}
+        {malas.length ? <button className="boton-sec" onClick={() => repetir(malas)}>{d.app.repetirFalladas} ({malas.length})</button> : null}
         <button className="boton-sec" onClick={volver}>{d.app.volver}</button>
-        {!suscrito ? <Link className="boton-sec" href={`/${idioma}/precios`}>{d.app.desbloquear}</Link> : null}
       </div>
       {r.modo === 'simulacro' ? (
         <ol className="mt-6 space-y-3">

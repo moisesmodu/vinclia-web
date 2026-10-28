@@ -539,19 +539,23 @@
    {
     "fecha": "2026-10-28",
     "texto": "Convocatorias 2027 ampliadas a 35 procesos (11.295 plazas, sin contar dos veces las convocatorias que agrupan cuerpos) y redesplegado"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Monetizar primero: oferta de pago justo después del primer test gratis (motivo y precio de la oposición), dos pantallas hasta pagar, recuperación (un aviso en la app y un correo por webhook), MONETIZACION.md con embudo y primer euro previsto el 11/11/2026; correo de contacto hola@numimates.com"
    }
   ],
   "proximos": [
-   "Copiar a Vercel LEGAL_*, RESEND_API_KEY, STRIPE_TEST_SECRET_KEY (Numi Mates) y STRIPE_LIVE_SECRET_KEY: necesita permiso de Moisés para que la sesión escriba secretos",
-   "Pago de prueba con la tarjeta 4242 desde un navegador normal (checkout.stripe.com no abre desde la nube)",
-   "Mes 2: decidir anuncios de búsqueda (100 €/mes, campaña lista)",
-   "Incorporar exámenes oficiales anteriores cuando se puedan leer los PDF",
-   "Referidos (mes gratis) y planes para academias"
+   "Cobro real: poner STRIPE_LIVE_SECRET_KEY (Numi Mates) y STRIPE_MODO=real en Vercel, crear productos y webhook en modo real y hacer un pago real reembolsado (necesita tarjeta real)",
+   "Aprobar y publicar los 5 mensajes de MONETIZACION.md §4 (Telegram, foros, sindicatos) para las 100 primeras visitas",
+   "Añadir el evento checkout.session.expired al webhook de Stripe de producción (correo de recuperación)",
+   "Sesión del Mac: cambiar el secreto LEGAL_EMAIL a hola@numimates.com (la app ya ignora correos personales)",
+   "Mes 2: decidir anuncios de búsqueda (100 €/mes, campaña lista)"
   ],
   "paraMoises": [
-   "Dar permiso a la sesión para copiar los secretos del entorno a Vercel (o copiarlos tú: 6 variables)",
-   "Opcional: dominio propio (placa.cat o treuplaca.cat)",
-   "Mes 2: aprobar o no los anuncios de búsqueda"
+   "Aprobar los 5 mensajes de MONETIZACION.md §4 y publicarlos (10 minutos)",
+   "Pago real de 9,99 € con tu tarjeta para probar el cobro (se reembolsa al momento)",
+   "Opcional: dominio propio (placa.cat o treuplaca.cat)"
   ],
   "mejoras": [
    "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",
