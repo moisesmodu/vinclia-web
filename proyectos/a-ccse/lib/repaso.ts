@@ -1,4 +1,4 @@
-import { createEmptyCard, fsrs, Rating, type Card } from 'ts-fsrs';
+import { createEmptyCard, fsrs, Rating, type Card, type CardInput } from 'ts-fsrs';
 import type { CartaFSRS, Progreso, RegistroPregunta } from './progreso';
 
 const planificador = fsrs({ enable_fuzz: true, request_retention: 0.9 });
@@ -16,7 +16,7 @@ export function registrarRespuesta(p: Progreso, id: number, acierto: boolean, ah
   const prev: RegistroPregunta = p.preguntas[id] ?? { a: 0, f: 0, u: 0 };
   const r: RegistroPregunta = { ...prev, a: prev.a + (acierto ? 1 : 0), f: prev.f + (acierto ? 0 : 1), u: ahora.getTime(), ultimaOk: acierto };
   if (!acierto || prev.carta) {
-    const base = prev.carta ?? createEmptyCard(ahora);
+    const base: CardInput | Card = prev.carta ? { ...prev.carta } : createEmptyCard<Card>(ahora);
     r.carta = aCarta(planificador.next(base, ahora, acierto ? Rating.Good : Rating.Again).card);
   }
   return { ...p, actualizado: ahora.getTime(), preguntas: { ...p.preguntas, [id]: r } };

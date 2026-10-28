@@ -17,8 +17,8 @@ export function Pie({ locale }: { locale: Locale }) {
           <Link href={`/${locale}/legal/privacidad`}>{t('pie.privacidad')}</Link>
           <Link href={`/${locale}/legal/cookies`}>{t('pie.cookies')}</Link>
           <Link href={`/${locale}/legal/condiciones`}>{t('pie.condiciones')}</Link>
-          <Link href={`/${locale}/preguntas`}>300 preguntas CCSE</Link>
-          <Link href={`/${locale}/guia`}>Guías</Link>
+          <Link href="/es/preguntas">{t('pie.preguntas')}</Link>
+          <Link href={`/${locale}/guia`}>{t('pie.guias')}</Link>
         </nav>
         <p>© {new Date().getFullYear()} Nuevo en España</p>
       </div>

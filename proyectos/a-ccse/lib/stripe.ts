@@ -76,6 +76,12 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
         },
       },
     ],
+    custom_text: {
+      submit: {
+        message:
+          'Al pagar aceptas las condiciones de venta y pides que el acceso empiece ya, por lo que pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Garantía de aprobado incluida.',
+      },
+    },
     metadata: { usuarioId: opts.usuarioId, producto: 'a-ccse', pais: PAIS.pais },
     success_url: `${SITE_URL}/${opts.locale}/pago/ok?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${SITE_URL}/${opts.locale}/precio?cancelado=1`,

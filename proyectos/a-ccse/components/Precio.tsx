@@ -48,6 +48,7 @@ export function Precio() {
         <div className="grid gap-2">
           <button disabled={ocupado} onClick={pagar} className="boton boton-1 text-lg">{t('precio.comprar', { p })}</button>
           <p className="text-center text-sm text-suave">{t('precio.seguro')}</p>
+          <p className="text-center text-xs text-suave">{t('precio.desistimiento')} <Link className="underline" href={`/${locale}/legal/condiciones`}>{t('pie.condiciones')}</Link></p>
           {msg && <p role="alert" className="rounded-lg bg-amber-50 p-2 text-sm">{msg}</p>}
         </div>
       ) : (

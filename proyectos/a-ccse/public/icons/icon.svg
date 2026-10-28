@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#b4232a"/>
+  <rect x="0" y="352" width="512" height="160" fill="#f2b705"/>
+  <rect x="0" y="352" width="512" height="160" rx="0" fill="#f2b705"/>
+  <path d="M0 352h512v48c0 61.9-50.1 112-112 112H112C50.1 512 0 461.9 0 400z" fill="#f2b705"/>
+  <text x="256" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="150" fill="#fff" letter-spacing="-4">CCSE</text>
+  <path d="M176 420l52 46 108-104" fill="none" stroke="#b4232a" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
