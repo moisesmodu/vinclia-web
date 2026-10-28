@@ -45,6 +45,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac; proyecto Vercel «ccse-en-tu-idioma»"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "El proyecto de Vercel ccse-en-tu-idioma ya existe y compila todas las ramas: la sesión del Mac debe fijar la rama de producción y el Ignored Build Step (DESPLIEGUES.md §5)"
       }
     ],
     "proximos": [
@@ -2516,7 +2520,7 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "DESPLIEGUE.md listo para la sesión del Mac: dos proyectos de Vercel (netoclaro e impuestoclaro), Root Directory proyectos/p-webs-adsense/fabrica, variable SITIO y datos legales LEGAL_*; sin Neon ni Stripe"
+        "texto": "DESPLIEGUE.md listo para la sesión del Mac con dos caminos: Cloudflare Pages (gratis, publicación automática en cada push si hay token) o dos proyectos de Vercel (netoclaro e impuestoclaro); variable SITIO y datos legales LEGAL_*; sin Neon ni Stripe"
       }
     ],
     "proximos": [
