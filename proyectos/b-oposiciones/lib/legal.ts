@@ -3,7 +3,14 @@ import marca from '@/config/marca.json';
 import type { Idioma } from './tipos';
 
 type Doc = { titulo: string; secciones: { h: string; p: string[] }[] };
-const L = pais.legal;
+// Datos del titular desde el entorno (LEGAL_*, DESPLIEGUES.md §1); el archivo del país da los valores por defecto.
+const L = {
+  ...pais.legal,
+  titular: process.env.LEGAL_NOM || pais.legal.titular,
+  nif: process.env.LEGAL_NIF || pais.legal.nif,
+  domicilio: process.env.LEGAL_ADRECA || pais.legal.domicilio,
+  email: process.env.LEGAL_EMAIL || '',
+};
 const nif = L.nif || '(NIF pendent de publicar / pendiente de publicar)';
 const precios = pais.planes.filter((p) => p.activo).map((p) => `${p.id}: ${(p.importe / 100).toFixed(2).replace('.', ',')} €`).join(' · ');
 
@@ -12,7 +19,7 @@ export type DocLegal = (typeof DOCS)[number];
 
 export function legal(doc: DocLegal, idioma: Idioma): Doc {
   const ca = idioma === 'ca';
-  const contacto = ca ? 'el formulari de la pàgina Contacte' : 'el formulario de la página Contacto';
+  const contacto = (L.email ? `${L.email} ${ca ? 'o ' : 'o '}` : '') + (ca ? 'el formulari de la pàgina Contacte' : 'el formulario de la página Contacto');
   switch (doc) {
     case 'aviso-legal':
       return {

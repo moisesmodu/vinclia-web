@@ -170,7 +170,7 @@
         "Está inconsciente pero respira con normalidad",
         "No respira y no tiene pulso",
         "Está consciente y tiene dolor torácico",
-        "Sufre una obstrucción grave de la vía aérea consciente"
+        "Sufre una obstrucción grave de la vía aérea y está consciente"
       ],
       "explicacion": "La posición lateral de seguridad mantiene la vía aérea permeable en la víctima con disminución del nivel de conciencia que respira normalmente; si no respira, hay que iniciar la RCP."
     },
@@ -423,7 +423,7 @@
     "es": {
       "enunciado": "En la posición de Trendelenburg, el paciente se encuentra:",
       "opciones": [
-        "Sentado en la cama con la cabecera elevada a 90º",
+        "Sentado en la cama con la cabecera elevada a 90°",
         "En decúbito supino con la cabeza más baja que los pies",
         "En decúbito lateral izquierdo con la pierna derecha flexionada",
         "En decúbito prono con los brazos junto al cuerpo"
@@ -433,7 +433,7 @@
     "ca": {
       "enunciado": "En la posició de Trendelenburg, el pacient es troba:",
       "opciones": [
-        "Assegut al llit amb el capçal elevat a 90º",
+        "Assegut al llit amb el capçal elevat a 90°",
         "En decúbit supí amb el cap més baix que els peus",
         "En decúbit lateral esquerre amb la cama dreta flexionada",
         "En decúbit pron amb els braços al costat del cos"
@@ -529,12 +529,12 @@
     "ca": {
       "enunciado": "Segons la classificació internacional EPUAP/NPIAP, una lesió per pressió de categoria I es caracteritza per:",
       "opciones": [
-        "Pell intacta amb eritema que no emblanquina en una zona localitzada",
+        "Pell intacta amb eritema no blanquejable en una zona localitzada",
         "Pèrdua parcial del gruix de la dermis amb flictena",
         "Pèrdua total del gruix de la pell amb teixit adipós visible",
         "Exposició d'os, tendó o múscul"
       ],
-      "explicacion": "La categoria I és l'eritema que no emblanquina sobre pell intacta, normalment sobre una prominència òssia; la flictena correspon a la categoria II i l'exposició d'os, a la IV."
+      "explicacion": "La categoria I és l'eritema no blanquejable sobre pell intacta, normalment sobre una prominència òssia; la flictena correspon a la categoria II i l'exposició d'os, a la IV."
     },
     "fuente": {
       "tipo": "web",
@@ -618,7 +618,7 @@
         "En decúbito supino con la cama horizontal",
         "En decúbito prono",
         "En posición de Trendelenburg",
-        "Con la cabecera elevada (al menos 30º)"
+        "Con la cabecera elevada (al menos 30°)"
       ],
       "explicacion": "Elevar la cabecera durante la nutrición enteral y después reduce el riesgo de reflujo y broncoaspiración; la posición horizontal o Trendelenburg lo aumentan."
     },
@@ -628,7 +628,7 @@
         "En decúbit supí amb el llit horitzontal",
         "En decúbit pron",
         "En posició de Trendelenburg",
-        "Amb el capçal elevat (almenys 30º)"
+        "Amb el capçal elevat (almenys 30°)"
       ],
       "explicacion": "Elevar el capçal durant la nutrició enteral i després redueix el risc de reflux i broncoaspiració; la posició horitzontal o la de Trendelenburg l'augmenten."
     },

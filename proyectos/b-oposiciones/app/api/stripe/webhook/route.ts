@@ -1,5 +1,5 @@
 import type Stripe from 'stripe';
-import { stripe, guardarSuscripcion } from '@/lib/pagos';
+import { stripe, guardarSuscripcion, modoPago } from '@/lib/pagos';
 import { error, json } from '@/lib/http';
 
 export const dynamic = 'force-dynamic';
@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 /** Webhook opcional (STRIPE_WEBHOOK_SECRET). Sin él, la app se sincroniza al volver de Checkout y cada 12 h. */
 export async function POST(req: Request) {
   const secreto = process.env.STRIPE_WEBHOOK_SECRET;
-  if (!secreto || !process.env.STRIPE_SECRET_KEY) return error('webhook no configurado', 501);
+  if (!secreto || modoPago() !== 'stripe') return error('webhook no configurado', 501);
   const cuerpo = await req.text();
   let ev: Stripe.Event;
   try {

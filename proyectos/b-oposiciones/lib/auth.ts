@@ -9,7 +9,7 @@ const DIAS = 60;
 
 /** Secreto de sesión: AUTH_SECRET si existe; si no, derivado de las claves que ya hay (así Moisés no tiene que crear otra). */
 function secreto(): string {
-  const base = process.env.AUTH_SECRET || `${process.env.STRIPE_SECRET_KEY ?? ''}|${process.env.DATABASE_URL ?? ''}|aprova`;
+  const base = process.env.AUTH_SECRET || `${process.env.DATABASE_URL ?? ''}|aprova`;
   return crypto.createHash('sha256').update(base).digest('hex');
 }
 
@@ -69,4 +69,24 @@ export function estaSuscrito(u: { suscripcionEstado: string | null; suscripcionH
   if (!u?.suscripcionEstado) return false;
   const vivo = ['active', 'trialing', 'past_due', 'demo'].includes(u.suscripcionEstado) || (u.suscripcionEstado === 'canceled' && !!u.suscripcionHasta);
   return vivo && (!u.suscripcionHasta || u.suscripcionHasta.getTime() > Date.now());
+}
+
+/** Enlace de recuperación de contraseña: caduca en 1 hora y deja de valer en cuanto cambia la contraseña. */
+export function tokenRecuperacion(u: { id: string; hash: string }): string {
+  const caduca = Date.now() + 3600e3;
+  const mac = crypto.createHmac('sha256', secreto()).update(`rec|${u.id}|${caduca}|${u.hash.slice(-16)}`).digest('base64url');
+  return Buffer.from(`${u.id}:${caduca}:${mac}`).toString('base64url');
+}
+
+export async function usuarioDeToken(token: string) {
+  try {
+    const [id, caduca, mac] = Buffer.from(token, 'base64url').toString().split(':');
+    if (!id || Number(caduca) < Date.now()) return null;
+    const u = await db.usuario.findUnique({ where: { id } });
+    if (!u) return null;
+    const esperado = crypto.createHmac('sha256', secreto()).update(`rec|${u.id}|${caduca}|${u.hash.slice(-16)}`).digest('base64url');
+    return esperado.length === mac.length && crypto.timingSafeEqual(Buffer.from(esperado), Buffer.from(mac)) ? u : null;
+  } catch {
+    return null;
+  }
 }

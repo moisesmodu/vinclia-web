@@ -9,5 +9,10 @@ export async function POST(req: Request) {
   if (!u) return error('sin sesión', 401);
   if (modoPago() !== 'stripe' || !u.stripeCustomerId) return error('sin cliente de Stripe', 400);
   const idioma = (await req.json().catch(() => ({})))?.idioma === 'es' ? 'es' : 'ca';
-  return json({ url: await urlPortal(u, `${new URL(req.url).origin}/${idioma}/cuenta`) });
+  try {
+    return json({ url: await urlPortal(u, `${new URL(req.url).origin}/${idioma}/cuenta`) });
+  } catch {
+    // Una clave restringida sin permiso de "Customer portal" no puede abrirlo: la cancelación sigue disponible en la cuenta.
+    return error('portal no disponible', 503);
+  }
 }

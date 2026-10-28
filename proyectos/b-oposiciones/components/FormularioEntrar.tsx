@@ -36,6 +36,7 @@ export default function FormularioEntrar({ idioma, siguiente }: { idioma: Idioma
       ) : null}
       {err ? <p className="text-sm text-mal">{err}</p> : null}
       <button className="boton w-full" disabled={cargando}>{cargando ? '…' : modo === 'crear' ? d.crear : d.entrar}</button>
+      {modo === 'entrar' ? <p className="text-center text-sm"><Link href={`/${idioma}/recuperar`}>{idioma === 'ca' ? 'He oblidat la contrasenya' : 'He olvidado la contraseña'}</Link></p> : null}
     </form>
   );
 }

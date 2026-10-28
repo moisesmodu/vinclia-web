@@ -736,12 +736,12 @@
     "ca": {
       "enunciado": "El frau que consisteix a enviar correus electrònics que suplanten una entitat de confiança per obtenir contrasenyes o dades personals s'anomena:",
       "opciones": [
-        "Spam",
+        "Correu brossa (spam)",
         "Galeta (cookie)",
         "Pesca (phishing)",
         "Tallafoc (firewall)"
       ],
-      "explicacion": "La pesca (phishing) suplanta la identitat d'una entitat legítima per enganyar l'usuari i obtenir-ne les credencials; el spam és correu massiu no sol·licitat i el tallafoc és un sistema de protecció de la xarxa."
+      "explicacion": "La pesca (phishing) suplanta la identitat d'una entitat legítima per enganyar l'usuari i obtenir-ne les credencials; el correu brossa (spam) és correu massiu no sol·licitat i el tallafoc és un sistema de protecció de la xarxa."
     },
     "fuente": {
       "tipo": "web",
