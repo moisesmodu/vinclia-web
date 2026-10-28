@@ -12,7 +12,7 @@ export default function Mapa({ idioma }: { idioma: Idioma }) {
   const d = t(idioma).mapa;
   const [estat] = useEstat();
   if (!estat) return <p className="text-terciari">{t(idioma).comu.carregant}</p>;
-  if (!estat.perfil) return <div><p>{t(idioma).avui.senseDiag}</p><Link className="boton-ocre mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
+  if (!estat.perfil) return <div><p>{t(idioma).avui.senseDiag}</p><Link className="boton-primari mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
   const punts = puntsJson.punts.filter((p) => p.nivells.includes(estat.perfil!.nivell));
   const conf = confiancaPunts(estat.respostes, punts as never);
   const files = punts.map((p) => {
@@ -29,8 +29,8 @@ export default function Mapa({ idioma }: { idioma: Idioma }) {
       <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         {files.map((f) => {
           const v = f.valor;
-          const fons = v === null ? '#FFFFFF' : v < 50 ? '#F7E3E1' : v < 75 ? '#F6E7BF' : '#E9EFD6';
-          const vora = v === null ? '#E8DECB' : v < 50 ? '#B9342E' : v < 75 ? '#E0B23A' : '#7A8F3C';
+          const fons = v === null ? '#FFFFFF' : v < 50 ? '#FDE7E5' : v < 75 ? '#E9EDFF' : '#DEF5EA';
+          const vora = v === null ? '#D9DEEC' : v < 50 ? '#E03A2F' : v < 75 ? '#2140D6' : '#138A5C';
           return <li key={f.id} className="flex min-h-24 flex-col justify-between rounded-[6px] border p-3" style={{ background: fons, borderColor: vora }}><span className="text-[14px] leading-snug">{f.nom[idioma]}</span><span className="num mt-2 text-[22px]">{v === null ? '—' : `${v}%`}<span className="ml-1 text-[12px] font-normal text-secundari">{f.n ? `· ${f.n}` : ''}</span></span></li>;
         })}
       </ul>

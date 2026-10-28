@@ -1,116 +1,137 @@
 @import 'tailwindcss';
 
-/* Aprova · sistema de disseny (DISSENY.md). Marca: MARCAS.md §4 (família Nuevo en España). Cap ombra grisa, cap targeta repetida:
-   la profunditat és el paper (#FFF) sobre la crema (#FBF5EC) amb una línia d'1 px. */
+/* Aprova · sistema visual (MARCA.md, DISSENY.md). El material és el full de respostes: paper blanc, bolígraf blau, quadrícula de
+   llibreta, marcador fluorescent per a l'error. Una sola família (Archivo variable, eix d'amplada), cap ombra grisa, cap crema. */
 @theme {
-  --color-crema: #FBF5EC;
   --color-paper: #FFFFFF;
-  --color-nit: #1F2A44;
-  --color-nit-2: #2E3B5E;
-  --color-ocre: #E0B23A;
-  --color-ocre-fosc: #B98E22;
-  --color-ocre-tenue: #F6E7BF;
-  --color-ocre-pal: #FBF3DC;
-  --color-terracota: #D9603B;
-  --color-oliva: #7A8F3C;
-  --color-oliva-tenue: #E9EFD6;
-  --color-vermell: #B9342E;
-  --color-vermell-tenue: #F7E3E1;
-  --color-secundari: #4A5570;
-  --color-terciari: #8A92A6;
-  --color-linia: #E8DECB;
-  --color-linia-forta: #CDBFA3;
-  --font-sans: 'Noto Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  --font-titol: 'Outfit', 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
-  --radius-control: 6px;
-  --radius-full: 14px;
+  --color-quadricula: #DCE3F3;
+  --color-boli: #2140D6;
+  --color-boli-fosc: #1830A6;
+  --color-boli-tenue: #E9EDFF;
+  --color-tinta: #141C3A;
+  --color-secundari: #5B6480;
+  --color-terciari: #8A92AB;
+  --color-linia: #D9DEEC;
+  --color-linia-forta: #B9C2DC;
+  --color-marcador: #FFF056;
+  --color-marcador-tenue: #FFF9B8;
+  --color-vermell: #E03A2F;
+  --color-vermell-tenue: #FDE7E5;
+  --color-apte: #138A5C;
+  --color-apte-tenue: #DEF5EA;
+  --font-sans: 'Archivo Variable', 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --radius-control: 8px;
+  --radius-full: 12px;
 }
 
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-body { @apply bg-crema text-nit antialiased; font-size: 17px; line-height: 1.55; -webkit-tap-highlight-color: transparent; }
+body { @apply bg-paper text-tinta antialiased; font-size: 17px; line-height: 1.55; font-stretch: 100%; -webkit-tap-highlight-color: transparent; }
 * { touch-action: manipulation; }
-h1, h2, h3, .titol { font-family: var(--font-titol); font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; line-height: 1.12; }
-h1 { font-size: 34px; } h2 { font-size: 24px; } h3 { font-size: 20px; }
+
+/* Tipografia: una família, dues amplades. Titulars i números amples i pesants (cartell); text normal. */
+h1, h2, h3, .titol { font-weight: 800; font-stretch: 118%; letter-spacing: -0.02em; line-height: 1.02; text-wrap: balance; }
+h1 { font-size: 32px; } h2 { font-size: 24px; } h3 { font-size: 19px; font-stretch: 106%; font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
 @media (min-width: 640px) { h1 { font-size: 44px; } h2 { font-size: 28px; } }
-.num { font-family: var(--font-titol); font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.display { font-weight: 800; font-stretch: 125%; letter-spacing: -0.025em; line-height: 0.98; text-wrap: balance; }
+.num { font-weight: 800; font-stretch: 125%; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
 .tab { font-variant-numeric: tabular-nums; }
+.ample { font-stretch: 112%; font-weight: 700; }
 a { @apply underline-offset-2; }
-:focus-visible { outline: 2px solid #1F2A44; outline-offset: 3px; border-radius: 4px; }
-::selection { background: #F6E7BF; }
+:focus-visible { outline: 3px solid #2140D6; outline-offset: 3px; border-radius: 4px; }
+::selection { background: #FFF056; color: #141C3A; }
 
 /* Maquetació */
 .contenedor { @apply mx-auto w-full max-w-[640px] px-5; }
 .contenedor-ample { @apply mx-auto w-full max-w-[760px] px-5; }
-.seccio { @apply py-8 sm:py-12; }
-.linia { border-top: 1px solid #E8DECB; }
+.contenedor-portada { @apply mx-auto w-full max-w-[1040px] px-5; }
+.seccio { @apply py-10 sm:py-14; }
+.linia { border-top: 1px solid #D9DEEC; }
 
-/* Full: l'únic contenidor amb fons blanc; només per al que es llegeix o es respon */
-.full { background: #FFFFFF; border: 1px solid #E8DECB; border-radius: var(--radius-full); padding: 20px; }
-.full-cap { @apply flex items-center justify-between text-[13px] text-terciari; }
-.tarjeta { background: #FFFFFF; border: 1px solid #E8DECB; border-radius: var(--radius-full); padding: 20px; }
+/* Quadrícula de llibreta: només a la portada i als fons de marca */
+.quadricula { background-image: linear-gradient(#DCE3F3 1px, transparent 1px), linear-gradient(90deg, #DCE3F3 1px, transparent 1px); background-size: 24px 24px; background-position: -1px -1px; }
+.quadricula-boli { background-color: #2140D6; background-image: linear-gradient(rgba(255,255,255,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.14) 1px, transparent 1px); background-size: 24px 24px; background-position: -1px -1px; }
 
-/* Botons: un primari (nit) per pantalla; l'ocre només per a l'acció que fa avançar */
-.boton, .btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-nit px-5 py-3 font-semibold text-white no-underline transition-[background-color,transform] duration-150 hover:bg-nit-2 active:translate-y-px disabled:cursor-not-allowed disabled:opacity-40; }
-.boton-ocre, .btn-ocre { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-ocre px-5 py-3 font-semibold text-nit no-underline transition-[background-color,transform] duration-150 hover:bg-[#E9BF52] active:translate-y-px disabled:cursor-not-allowed disabled:opacity-40; }
-.boton-sec, .btn-sec { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] border border-linia-forta bg-transparent px-5 py-3 font-semibold text-nit no-underline transition-[background-color,border-color] duration-150 hover:bg-paper hover:border-nit disabled:cursor-not-allowed disabled:opacity-40; }
-.boton-text { @apply inline-flex min-h-11 items-center gap-1 px-1 font-semibold text-nit underline underline-offset-4 decoration-ocre decoration-2 hover:decoration-nit; }
+/* Full de respostes: vora de tinta i marques de registre a les cantonades (com l'OMR). Només per al que es llegeix o es respon. */
+.full { position: relative; background: #FFFFFF; border: 1.5px solid #141C3A; border-radius: var(--radius-full); padding: 20px; }
+.full::before, .full::after { content: ''; position: absolute; width: 8px; height: 8px; background: #141C3A; border-radius: 1px; }
+.full::before { top: 8px; left: 8px; }
+.full::after { bottom: 8px; right: 8px; }
+.full-cap { @apply flex items-center justify-between text-[13px] font-semibold text-secundari; }
+.tarjeta { background: #FFFFFF; border: 1px solid #D9DEEC; border-radius: var(--radius-full); padding: 20px; }
+
+/* Botons: primari boli; secundari amb vora de tinta; text subratllat amb boli */
+.boton, .btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] bg-tinta px-5 py-3 font-bold text-white no-underline transition-[background-color,transform] duration-150 hover:bg-boli active:translate-y-px disabled:cursor-not-allowed disabled:opacity-40; }
+.boton-primari, .btn-primari { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] bg-boli px-5 py-3 font-bold text-white no-underline transition-[background-color,transform] duration-150 hover:bg-boli-fosc active:translate-y-px disabled:cursor-not-allowed disabled:opacity-40; }
+.boton-sec, .btn-sec { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] border-[1.5px] border-tinta bg-transparent px-5 py-3 font-bold text-tinta no-underline transition-[background-color,border-color,color] duration-150 hover:border-boli hover:text-boli disabled:cursor-not-allowed disabled:opacity-40; }
+.boton-invers { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-[8px] bg-paper px-5 py-3 font-bold text-boli no-underline transition-[background-color,transform] duration-150 hover:bg-marcador hover:text-tinta active:translate-y-px; }
+.boton-text { @apply inline-flex min-h-11 items-center gap-1 px-1 font-bold text-tinta underline underline-offset-4 decoration-boli decoration-2 hover:text-boli; }
 
 /* Xips, etiquetes, camps */
-.etiqueta, .xip { @apply inline-flex items-center gap-1 rounded-full border border-linia bg-paper px-2.5 py-0.5 text-[13px] font-semibold text-secundari; }
-.xip-ocre { @apply inline-flex items-center gap-1 rounded-full bg-ocre-tenue px-2.5 py-0.5 text-[13px] font-semibold text-ocre-fosc; }
-.xip-oliva { @apply inline-flex items-center gap-1 rounded-full bg-oliva-tenue px-2.5 py-0.5 text-[13px] font-semibold text-oliva; }
-.campo { @apply w-full rounded-[6px] border border-linia-forta bg-paper px-3 py-3 text-[17px] text-nit outline-none transition-[border-color,box-shadow] duration-150 placeholder:text-terciari focus:border-nit focus:shadow-[0_0_0_3px_#F6E7BF]; }
+.etiqueta, .xip { @apply inline-flex items-center gap-1 rounded-full border border-linia-forta bg-paper px-2.5 py-0.5 text-[13px] font-semibold text-secundari; }
+.xip-boli { @apply inline-flex items-center gap-1 rounded-full bg-boli-tenue px-2.5 py-0.5 text-[13px] font-semibold text-boli; }
+.xip-apte { @apply inline-flex items-center gap-1 rounded-full bg-apte-tenue px-2.5 py-0.5 text-[13px] font-semibold text-apte; }
+.campo { @apply w-full rounded-[8px] border-[1.5px] border-linia-forta bg-paper px-3 py-3 text-[17px] text-tinta outline-none transition-[border-color,box-shadow] duration-150 placeholder:text-terciari focus:border-boli focus:shadow-[0_0_0_3px_#E9EDFF]; }
 textarea.campo { line-height: 1.6; }
 
-/* Opcions del full de respostes: lletra en cercle, marca a llapis */
-.opcio { @apply flex w-full items-start gap-3 rounded-[6px] border border-linia bg-paper px-3 py-3 text-left text-[17px] leading-snug transition-[border-color,background-color] duration-150 hover:border-nit; }
-.opcio[aria-pressed='true'], .opcio-sel { @apply border-nit bg-ocre-pal; }
-.opcio-ok { @apply border-oliva bg-oliva-tenue; }
+/* Opcions del full de respostes: una bombolla que s'omple de boli */
+.opcio { @apply flex w-full items-start gap-3 rounded-[8px] border-[1.5px] border-linia bg-paper px-3 py-3 text-left text-[17px] leading-snug transition-[border-color,background-color] duration-150 hover:border-boli; }
+.opcio[aria-pressed='true'], .opcio-sel { @apply border-boli bg-boli-tenue; }
+.opcio-ok { @apply border-apte bg-apte-tenue; }
 .opcio-mal { @apply border-vermell bg-vermell-tenue; }
-.lletra { @apply mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-linia-forta text-[13px] font-bold text-secundari; }
-.opcio-sel .lletra, .opcio[aria-pressed='true'] .lletra { @apply border-nit bg-nit text-white; }
-.opcio-ok .lletra { @apply border-oliva bg-oliva text-white; }
+.lletra { @apply mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-[1.5px] border-tinta text-[13px] font-bold text-tinta; }
+.opcio-sel .lletra, .opcio[aria-pressed='true'] .lletra { @apply border-boli bg-boli text-white; }
+.opcio-ok .lletra { @apply border-apte bg-apte text-white; }
 .opcio-mal .lletra { @apply border-vermell bg-vermell text-white; }
-.buit { @apply mx-1 inline-block min-w-14 border-b-2 border-ocre px-1 text-center font-semibold text-nit; }
+.buit { @apply mx-1 inline-block min-w-14 border-b-2 border-boli px-1 text-center font-bold text-boli; }
 
-/* Regla: el panell «Per què?» subratllat com amb marcador */
-.regla { background: #FBF3DC; border-left: 4px solid #E0B23A; border-radius: 0 6px 6px 0; padding: 14px 16px; }
+/* Marcador fluorescent: l'error, la data clau */
+.marcat { background: linear-gradient(transparent 28%, #FFF056 28%, #FFF056 92%, transparent 92%); padding: 0 2px; }
+.marcat-ok { background: linear-gradient(transparent 28%, #DEF5EA 28%, #DEF5EA 92%, transparent 92%); padding: 0 2px; color: #138A5C; font-weight: 700; }
+
+/* Regla: el panell «Per què?» com una nota al marge amb boli */
+.regla { background: #E9EDFF; border-left: 4px solid #2140D6; border-radius: 0 8px 8px 0; padding: 14px 16px; }
 
 /* Barra de progrés segmentada (per bloc o ítem) */
 .segments { @apply flex gap-1; }
 .segments > span { @apply h-1.5 flex-1 rounded-full bg-linia; }
-.segments > span.fet { @apply bg-nit; }
-.segments > span.actual { @apply bg-ocre; }
+.segments > span.fet { @apply bg-tinta; }
+.segments > span.actual { @apply bg-boli; }
 .barra { @apply h-2 w-full overflow-hidden rounded-full bg-linia; }
-.barra > span { @apply block h-full rounded-full bg-oliva transition-[width] duration-500; }
+.barra > span { @apply block h-full rounded-full bg-boli transition-[width] duration-500; }
 
 /* Nota en l'escala real: barra amb la marca del mínim */
-.escala { position: relative; height: 10px; border-radius: 999px; background: #E8DECB; overflow: visible; }
-.escala > .valor { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: #7A8F3C; }
-.escala > .valor.sota { background: #B9342E; }
-.escala > .minim { position: absolute; top: -4px; bottom: -4px; width: 2px; background: #1F2A44; }
-.escala > .minim::after { content: ''; position: absolute; left: -3px; top: -4px; width: 8px; height: 4px; background: #1F2A44; border-radius: 2px 2px 0 0; }
+.escala { position: relative; height: 10px; border-radius: 999px; background: #E9EDFF; overflow: visible; }
+.escala > .valor { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: #138A5C; }
+.escala > .valor.sota { background: #E03A2F; }
+.escala > .minim { position: absolute; top: -4px; bottom: -4px; width: 2px; background: #141C3A; }
+.escala > .minim::after { content: ''; position: absolute; left: -3px; top: -4px; width: 8px; height: 4px; background: #141C3A; border-radius: 2px 2px 0 0; }
 
-/* Segell APTE / NO APTE: apareix una vegada */
-.segell { display: inline-block; padding: 6px 14px; border: 3px solid currentColor; border-radius: 6px; font-family: var(--font-titol); font-weight: 700; font-size: 28px; letter-spacing: 0.04em; transform: rotate(-6deg); }
-.segell-apte { color: #7A8F3C; }
-.segell-no { color: #B9342E; }
+/* Segell APTE / NO APTE: tampó de l'examinador, apareix una vegada */
+.segell { display: inline-block; padding: 6px 16px; border: 3px solid currentColor; border-radius: 8px; font-weight: 800; font-stretch: 125%; font-size: 28px; letter-spacing: 0.02em; transform: rotate(-6deg); }
+.segell-apte { color: #138A5C; }
+.segell-no { color: #E03A2F; }
 @keyframes segell { from { opacity: 0; transform: rotate(-6deg) scale(1.6); } to { opacity: 1; transform: rotate(-6deg) scale(1); } }
 .segell-anima { animation: segell 420ms cubic-bezier(.2,.9,.3,1.2) both; }
 
 /* Dial de probabilitat (un sol moment orquestrat) */
 .dial-arc { stroke-linecap: round; transition: stroke-dashoffset 1200ms cubic-bezier(.22,.8,.25,1); }
-@media (prefers-reduced-motion: reduce) { .dial-arc, .barra > span { transition: none !important; } .segell-anima { animation: none; } }
+
+/* En Volat: aterra una vegada; parpelleja de tant en tant */
+@keyframes volat-aterra { 0% { opacity: 0; transform: translate(40px, -60px) rotate(-20deg); } 70% { transform: translate(-3px, 4px) rotate(4deg); } 100% { opacity: 1; transform: none; } }
+.volat-aterra { animation: volat-aterra 700ms cubic-bezier(.2,.8,.2,1) both; }
+@keyframes volat-parpelleig { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+.volat-ulls { transform-origin: center; transform-box: fill-box; animation: volat-parpelleig 5s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .dial-arc, .barra > span { transition: none !important; } .segell-anima, .volat-aterra, .volat-ulls { animation: none; } }
 
 /* Prosa de les guies */
 .prosa h2 { @apply mt-9 mb-3; }
 .prosa h3 { @apply mt-6 mb-2; }
-.prosa p, .prosa li { @apply leading-relaxed text-[#2E3650]; }
+.prosa p, .prosa li { @apply leading-relaxed text-[#2A3352]; }
 .prosa p { @apply mb-3; }
 .prosa ul { @apply mb-3 list-disc pl-5; }
 .prosa ol { @apply mb-3 list-decimal pl-5; }
-.prosa a { @apply text-nit underline decoration-ocre decoration-2 underline-offset-2; }
+.prosa a { @apply text-tinta underline decoration-boli decoration-2 underline-offset-2; }
 .prosa table { @apply my-3 w-full text-[15px]; }
 .prosa th, .prosa td { @apply border-b border-linia py-1.5 pr-2 align-top text-left; }
 [dir='rtl'] { direction: rtl; }

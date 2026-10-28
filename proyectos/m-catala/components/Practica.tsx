@@ -11,6 +11,7 @@ import { registrarDia, avuiISO } from '@/lib/motor/ratxa';
 import { confiancaPunts } from '@/lib/motor/diagnostic';
 import { sessioDe } from '@/lib/motor/pla';
 import puntsJson from '@/config/punts.json';
+import Volat from '@/components/Volat';
 import ItemVista from './ItemVista';
 import Segments from './ui/Segments';
 
@@ -82,7 +83,7 @@ export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode 
   if (!estat) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
   if (!perfil) return <div className="contenedor py-10"><p>{t(idioma).avui.senseDiag}</p><Link className="boton mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
   if (!cua) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
-  if (!cua.length) return <div className="contenedor py-10"><p className="max-w-[44ch] text-[17px] leading-relaxed">{mode === 'repas' ? d.resAPendent : d.limit}</p><div className="mt-5 flex gap-2"><Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>{!banc?.premium ? <Link className="boton-ocre" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link> : null}</div></div>;
+  if (!cua.length) return <div className="contenedor py-10"><p className="max-w-[44ch] text-[17px] leading-relaxed">{mode === 'repas' ? d.resAPendent : d.limit}</p><div className="mt-5 flex gap-2"><Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>{!banc?.premium ? <Link className="boton-primari" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link> : null}</div></div>;
 
   if (resum) {
     const errors = cua.length - encerts;
@@ -90,9 +91,9 @@ export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode 
       <div className="contenedor py-8">
         <p className="text-[15px] text-secundari">{d.resultat} · {d.tipus[mode] ?? (mode === 'mini' ? t(idioma).avui.mini : t(idioma).nou.sessioTitol)}</p>
         <p className="num mt-1 text-[56px] leading-none">{encerts}<span className="text-[28px] text-terciari">/{cua.length}</span></p>
-        <p className="mt-3 max-w-[40ch] text-[17px] leading-relaxed">{errors ? t(idioma).nou.resumBe : t(idioma).nou.resumCap}</p>
+        <div className="mt-4 flex max-w-[44ch] items-start gap-3"><Volat mida={44} postura={errors ? 'pensa' : 'content'} aterra className="shrink-0" /><p className="text-[17px] leading-relaxed">{errors ? t(idioma).nou.resumBe : t(idioma).nou.resumCap}</p></div>
         <div className="mt-8 grid gap-2">
-          <Link className="boton-ocre" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link>
+          <Link className="boton-primari" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link>
           <div className="flex gap-4"><Link className="boton-text" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link><Link className="boton-text" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link></div>
         </div>
       </div>

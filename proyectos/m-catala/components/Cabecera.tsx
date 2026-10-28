@@ -13,14 +13,14 @@ export default function Cabecera({ idioma }: { idioma: Idioma }) {
   return (
     <>
       <a href="#contingut" className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-[6px] focus:bg-paper focus:px-3 focus:py-2">{idioma === 'ca' ? 'Anar al contingut' : 'Ir al contenido'}</a>
-      <header className="sticky top-0 z-20 border-b border-linia bg-crema/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-20 border-b border-linia bg-paper/95 backdrop-blur-sm">
         <div className="contenedor flex h-14 items-center gap-1">
           <Link href={l('')} className="mr-auto no-underline" aria-label={marca.nombre}><Logo alto={28} /></Link>
           <nav className="flex items-center gap-0.5 text-[15px] font-semibold" aria-label={idioma === 'ca' ? 'Principal' : 'Principal'}>
-            <Link href={l('/avui')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.avui}</Link>
-            <Link href={l('/practica')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.practica}</Link>
-            <Link href={l('/simulacre')} className="hidden rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal sm:inline">{d.nav.simulacre}</Link>
-            <Link href={l('/preus')} className="rounded-[6px] px-2.5 py-2 text-nit no-underline hover:bg-ocre-pal">{d.nav.preus}</Link>
+            <Link href={l('/avui')} className="hidden rounded-[6px] px-2.5 py-2 text-tinta no-underline hover:bg-boli-tenue sm:inline">{d.nav.avui}</Link>
+            <Link href={l('/practica')} className="hidden rounded-[6px] px-2.5 py-2 text-tinta no-underline hover:bg-boli-tenue sm:inline">{d.nav.practica}</Link>
+            <Link href={l('/simulacre')} className="hidden rounded-[6px] px-2.5 py-2 text-tinta no-underline hover:bg-boli-tenue sm:inline">{d.nav.simulacre}</Link>
+            <Link href={l('/preus')} className="rounded-[6px] px-2.5 py-2 text-tinta no-underline hover:bg-boli-tenue">{d.nav.preus}</Link>
             <EnlaceCuenta idioma={idioma} entrar={d.nav.entrar} cuenta={d.nav.compte} />
             <CambioIdioma idioma={idioma} />
           </nav>

@@ -1,3 +1,13 @@
+# Disseny d'Aprova · aplicació de la marca a les pantalles (28/10/2026, tercera passada)
+
+La identitat (colors, tipografia, logotip, personatge, veu) és a `MARCA.md` i mana sobre aquest document. Aquí hi ha com s'aplica:
+el full de respostes com a únic contenidor (`.full`, amb marques de registre), les bombolles de resposta (`.opcio`), el marcador
+fluorescent per a l'error (`.marcat`), el dial de probabilitat, el segell APTE / NO APTE i en Volat (`components/Volat.tsx`) només on hi
+ha una cosa a dir: punt final de la portada, resultat del diagnòstic, resum de la pràctica, resultat del simulacre. Les dues
+primeres passades (crema + ocre, Outfit + Noto Sans) queden documentades a sota només com a història del que es va rebutjar.
+
+---
+
 # Disseny d'Aprova · pla i criteris (28/10/2026, segona passada)
 
 Brief: la marca és fixa (MARCAS.md: família Nuevo en España, crema `#FBF5EC`, nit `#1F2A44`, terracota `#D9603B`, ocre `#E0B23A`, oliva

@@ -86,14 +86,17 @@ En producción se usa la API pública (`LANGUAGETOOL_URL=https://api.languagetoo
 - **Sin probar:** pago con la tarjeta 4242 en checkout.stripe.com (no se abre desde la sesión), correos reales de Resend, TTS y Whisper (sin
   proveedor configurado), corrección con modelo de lenguaje (sin clave) y la validez con candidatos reales (protocolo listo).
 
-## Diseño (rediseño del 28/10/2026)
-- Plan y principios en `DISSENY.md`: vocabulario del mundo del examen (hoja, sello, mínimo, apte), un solo elemento memorable (el dial de
-  probabilidad), nada de tarjetas genéricas ni de gamificación visual. Sistema en `app/globals.css` (tokens `@theme`, `.full`, `.opcio`,
-  `.regla`, `.escala`, `.segell`, transiciones de vista con `startTransition`).
-- Skills de diseño instaladas en `.claude/skills/` para que las sesiones siguientes mantengan el criterio: `frontend-design` (Anthropic),
-  `web-design-guidelines`, `react-best-practices` y `react-view-transitions` (Vercel Labs). Antes de tocar la interfaz, leerlas.
-- Revisión visual con capturas en Pixel 7 (`scripts/e2e.mjs` guarda una por pantalla) y la auditoría de `web-design-guidelines`
-  (foco visible, `aria-current`, enlace de salto, `prefers-reduced-motion`, numerales tabulares).
+## Marca y diseño (tercera pasada, 28/10/2026)
+- Identidad propia en `MARCA.md`: el **full de respostes** (papel blanco, bolígrafo azul `#2140D6`, cuadrícula de libreta, marcador
+  fluorescente `#FFF056` para el error) y **en Volat**, el punt volat de la l·l con cara, como personaje (`components/Volat.tsx`, cinco
+  posturas, se mueve una sola vez por pantalla). Logotipo con trazado real (Archivo Expanded ExtraBold convertido a path,
+  `public/marca/logo*.svg`, `components/Logo.tsx`) con Volat sentado en la «v»; icono en `app/icon.svg` y `public/icons/*.png`.
+- Una sola familia tipográfica, **Archivo variable** con eje de anchura (`@fontsource-variable/archivo/wdth.css`): titulares y números
+  en Expanded ExtraBold, texto en anchura normal. Sistema en `app/globals.css`; aplicación por pantalla en `DISSENY.md`.
+- Portada con la necesidad: promesa «Sabràs si aproves abans de pagar la taxa», pregunta real del examen para responder en el acto,
+  cuenta atrás real de las próximas inscripciones (`config/convocatories.json`, regenerada cada día) y «Què t'hi jugues» (tasa, meses, plaza).
+- Skills de diseño instaladas en `.claude/skills/` (`frontend-design` de Anthropic; `web-design-guidelines`, `react-best-practices`,
+  `react-view-transitions` de Vercel Labs). Antes de tocar la interfaz, leer `MARCA.md` y esas skills.
 
 ## Decisiones tomadas (y por qué)
 - **Identidad de marca: Aprova** (familia Nuevo en España, `MARCAS.md` §4): promesa «El teu certificat de català, del B1 al C2.», terracota/azul

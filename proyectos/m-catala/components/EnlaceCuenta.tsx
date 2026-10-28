@@ -6,5 +6,5 @@ import Link from 'next/link';
 export default function EnlaceCuenta({ idioma, entrar, cuenta }: { idioma: string; entrar: string; cuenta: string }) {
   const [sesion, setSesion] = useState<boolean | null>(null);
   useEffect(() => { fetch('/api/yo').then((r) => r.json()).then((j) => setSesion(!!j?.usuari)).catch(() => setSesion(false)); }, []);
-  return <Link href={`/${idioma}/${sesion ? 'compte' : 'entrar'}`} className="rounded-lg px-2 py-2 text-nit no-underline hover:text-nit">{sesion ? cuenta : entrar}</Link>;
+  return <Link href={`/${idioma}/${sesion ? 'compte' : 'entrar'}`} className="rounded-lg px-2 py-2 text-tinta no-underline hover:text-tinta">{sesion ? cuenta : entrar}</Link>;
 }

@@ -8,7 +8,7 @@ const d = {
     hero: {
       titol: 'El teu certificat de català, del B1 al C2.',
       text: "Aprova no t'ensenya català «en general»: entrena exactament les parts de l'examen oficial, amb els pesos, els temps i els mínims reals, i et diu cada dia la probabilitat d'aprovar.",
-      cta: 'Fes el diagnòstic gratuït', ctaSub: '12 minuts · sense registre · sense targeta', seguir: 'Continuar on ho vaig deixar',
+      cta: 'Fes el diagnòstic gratuït', ctaSub: '12 minuts, sense registre ni targeta.', seguir: 'Continuar on ho vaig deixar',
       per: 'Per a qui és', perLlista: ['Opositors: el C1 és la clau de l\'ocupació pública a Catalunya', 'Sanitaris: l\'ICS demana el C1 a infermeria i administratius', 'Docents: el C2 des del curs 2025-26', 'Persones nouvingudes: B1 i B2 per a la feina i l\'arrelament', 'Qui viu a Catalunya i no s\'atreveix a parlar-lo'],
       com: 'Com funciona', comLlista: [['Diagnòstic de 12 minuts', 'Probabilitat d\'aprovar avui, nota per àrea, 3 punts febles i 3 sons difícils.'], ['Pla fins a la teva convocatòria', 'Sessions de 10 a 20 minuts, repàs espaiat dels teus errors i avís de la finestra d\'inscripció.'], ['Correcció amb la rúbrica oficial', 'Nota per criteri en menys de 60 segons, amb la regla citada. Quan dubtem, ho diem.'], ['Simulacres reals', 'La mateixa estructura, temps i mínims que la prova. Resultat apte o no apte i comparació amb la teva cohort.']],
       examens: 'Els exàmens que entrena', noCopiem: 'Sense cors que castiguen, sense avatars, sense itineraris rígids. Només el que fa aprovar.',
@@ -59,6 +59,11 @@ const d = {
     pie: { avis: 'Avís legal', privadesa: 'Privadesa', galetes: 'Galetes', condicions: 'Condicions de venda', contacte: 'Contacte', validesa: 'Prova de validesa', ia: 'Exercicis i correccions generats amb IA en català, validats amb LanguageTool (Softcatalà) i revisats per mostreig. No som cap administració pública.', guies: 'Guies' },
     contacte: { titol: 'Contacte', text: 'Escriu-nos i et responem en menys de 24 hores laborables.', email: 'Correu (opcional, per respondre\'t)', missatge: 'Missatge', enviar: 'Enviar', gracies: 'Rebut. Gràcies!' },
     nou: {
+      heroTitol: 'Sabràs si aproves abans de pagar la taxa', heroText: "Un de cada quatre candidats suspèn el certificat de català. En 12 minuts, Aprova et diu la probabilitat d'aprovar avui, la nota per àrea i què has de fer demà. Gratis i sense registrar-te.", heroSub: '12 minuts, sense registre ni targeta.',
+      enJoc: "Què t'hi jugues", enJocLlista: [['La taxa', "57,45 € a la DPL i fins a 120 € a la universitat. Si suspens, no es torna."], ['Els mesos', 'Entre una convocatòria i la següent passen mesos. Suspendre a la primavera és esperar fins a la tardor, o fins a l\'any vinent.'], ['La plaça', 'Oposicions, ICS, docència: sense el certificat no acredites el nivell, i el termini de la convocatòria no espera.']],
+      properes: 'Properes inscripcions', obreEn: (n: number) => `s'obre d'aquí a ${n} dies`, obertaFins: (d: string) => `oberta fins al ${d}`, tancada: 'inscripció tancada', provaEl: (d: string) => `prova el ${d}`, taxaDe: (x: string) => `taxa de ${x}`, diesCurt: 'dies', totesConvocatories: 'Totes les convocatòries 2027',
+      volatPresenta: 'Soc en Volat, el punt de la ela geminada.', volatDiu: "Soc l'únic signe que només existeix en català i el que més costa a qui ve del castellà. A Aprova et marco els errors, et dic per què ho són i, quan toca, et dic que ja hi ets.",
+      ganxoCurt: 'Prova-ho amb una pregunta real de l\'examen',
       ganxo: "Un de cada quatre candidats suspèn. Tu sabràs on ets abans de pagar la taxa.",
       provaho: "Prova-ho ara amb una pregunta real de l'examen",
       demoNota: 'Així és cada pregunta: respons, et corregeix a l\'instant i et cita la regla.',
@@ -76,7 +81,7 @@ const d = {
     hero: {
       titol: 'Tu certificado de catalán, del B1 al C2.',
       text: 'Aprova no te enseña catalán «en general»: entrena exactamente las partes del examen oficial, con los pesos, los tiempos y los mínimos reales, y te dice cada día la probabilidad de aprobar.',
-      cta: 'Haz el diagnóstico gratis', ctaSub: '12 minutos · sin registro · sin tarjeta', seguir: 'Continuar donde lo dejé',
+      cta: 'Haz el diagnóstico gratis', ctaSub: '12 minutos, sin registro ni tarjeta.', seguir: 'Continuar donde lo dejé',
       per: 'Para quién es', perLlista: ['Opositores: el C1 es la llave del empleo público en Cataluña', 'Sanitarios: el ICS exige el C1 a enfermería y administrativos', 'Docentes: el C2 desde el curso 2025-26', 'Personas recién llegadas: B1 y B2 para el trabajo y el arraigo', 'Quien vive en Cataluña y no se atreve a hablarlo'],
       com: 'Cómo funciona', comLlista: [['Diagnóstico de 12 minutos', 'Probabilidad de aprobar hoy, nota por área, 3 puntos débiles y 3 sonidos difíciles.'], ['Plan hasta tu convocatoria', 'Sesiones de 10 a 20 minutos, repaso espaciado de tus errores y aviso de la ventana de inscripción.'], ['Corrección con la rúbrica oficial', 'Nota por criterio en menos de 60 segundos, con la regla citada. Cuando dudamos, lo decimos.'], ['Simulacros reales', 'La misma estructura, tiempos y mínimos que la prueba. Resultado apto o no apto y comparación con tu cohorte.']],
       examens: 'Los exámenes que entrena', noCopiem: 'Sin corazones que castigan, sin avatares, sin itinerarios rígidos. Solo lo que hace aprobar.',
@@ -127,6 +132,11 @@ const d = {
     pie: { avis: 'Aviso legal', privadesa: 'Privacidad', galetes: 'Cookies', condicions: 'Condiciones de venta', contacte: 'Contacto', validesa: 'Prueba de validez', ia: 'Ejercicios y correcciones generados con IA en catalán, validados con LanguageTool (Softcatalà) y revisados por muestreo. No somos ninguna administración pública.', guies: 'Guías' },
     contacte: { titol: 'Contacto', text: 'Escríbenos y te respondemos en menos de 24 horas laborables.', email: 'Correo (opcional, para responderte)', missatge: 'Mensaje', enviar: 'Enviar', gracies: 'Recibido. ¡Gracias!' },
     nou: {
+      heroTitol: 'Sabrás si apruebas antes de pagar la tasa', heroText: 'Uno de cada cuatro candidatos suspende el certificado de catalán. En 12 minutos, Aprova te dice la probabilidad de aprobar hoy, la nota por área y qué hacer mañana. Gratis y sin registrarte.', heroSub: '12 minutos, sin registro ni tarjeta.',
+      enJoc: 'Qué te juegas', enJocLlista: [['La tasa', '57,45 € en la DPL y hasta 120 € en la universidad. Si suspendes, no se devuelve.'], ['Los meses', 'Entre una convocatoria y la siguiente pasan meses. Suspender en primavera es esperar hasta el otoño, o hasta el año que viene.'], ['La plaza', 'Oposiciones, ICS, docencia: sin el certificado no acreditas el nivel, y el plazo de la convocatoria no espera.']],
+      properes: 'Próximas inscripciones', obreEn: (n: number) => `se abre dentro de ${n} días`, obertaFins: (d: string) => `abierta hasta el ${d}`, tancada: 'inscripción cerrada', provaEl: (d: string) => `prueba el ${d}`, taxaDe: (x: string) => `tasa de ${x}`, diesCurt: 'días', totesConvocatories: 'Todas las convocatorias 2027',
+      volatPresenta: 'Soy Volat, el punto de la ele geminada.', volatDiu: 'Soy el único signo que solo existe en catalán y el que más cuesta a quien viene del castellano. En Aprova te marco los errores, te digo por qué lo son y, cuando toca, te digo que ya estás.',
+      ganxoCurt: 'Pruébalo con una pregunta real del examen',
       ganxo: 'Uno de cada cuatro candidatos suspende. Tú sabrás dónde estás antes de pagar la tasa.',
       provaho: 'Pruébalo ahora con una pregunta real del examen',
       demoNota: 'Así es cada pregunta: respondes, te corrige al instante y te cita la regla.',

@@ -11,7 +11,7 @@ export default function PlaVista({ idioma, convocatories }: { idioma: Idioma; co
   const d = t(idioma).pla;
   const [estat] = useEstat();
   if (!estat) return <p className="text-terciari">{t(idioma).comu.carregant}</p>;
-  if (!estat.pla) return <div className="full"><p>{d.sense}</p><Link className="boton-ocre mt-4" href={`/${idioma}/diagnostic`}>{t(idioma).diag.titol}</Link></div>;
+  if (!estat.pla) return <div className="full"><p>{d.sense}</p><Link className="boton-primari mt-4" href={`/${idioma}/diagnostic`}>{t(idioma).diag.titol}</Link></div>;
   const pla = estat.pla;
   const conv = convocatories.find((c) => c.id === pla.convocatoria);
   const avui = avuiISO();
@@ -29,7 +29,7 @@ export default function PlaVista({ idioma, convocatories }: { idioma: Idioma; co
       {setmanes.slice(0, 12).map((s, i) => (
         <div key={i} className="linia pt-3">
           <p className="text-[13px] font-semibold text-secundari">{d.setmana} {i + 1}</p>
-          <ul className="mt-2 grid grid-cols-7 gap-1 text-center text-[11px]">{s.map((x) => <li key={x.data} className={`rounded-[6px] p-1 ${x.data === avui ? 'ring-2 ring-nit' : ''} ${fets.has(x.data) ? 'bg-oliva-tenue' : x.tipus === 'minisimulacre' ? 'bg-ocre-tenue' : x.tipus === 'simulacre' ? 'bg-vermell-tenue' : 'bg-paper border border-linia'}`}><span className="block font-semibold">{fmt(x.data, idioma).split(' ')[1] ?? ''}</span><span className="block text-terciari">{x.tipus === 'normal' ? `${x.minuts}'` : x.tipus === 'minisimulacre' ? 'mini' : x.tipus === 'simulacre' ? 'SIM' : '·'}</span></li>)}</ul>
+          <ul className="mt-2 grid grid-cols-7 gap-1 text-center text-[11px]">{s.map((x) => <li key={x.data} className={`rounded-[6px] p-1 ${x.data === avui ? 'ring-2 ring-boli' : ''} ${fets.has(x.data) ? 'bg-apte-tenue' : x.tipus === 'minisimulacre' ? 'bg-boli-tenue' : x.tipus === 'simulacre' ? 'bg-vermell-tenue' : 'bg-paper border border-linia'}`}><span className="block font-semibold">{fmt(x.data, idioma).split(' ')[1] ?? ''}</span><span className="block text-terciari">{x.tipus === 'normal' ? `${x.minuts}'` : x.tipus === 'minisimulacre' ? 'mini' : x.tipus === 'simulacre' ? 'SIM' : '·'}</span></li>)}</ul>
         </div>
       ))}
     </div>

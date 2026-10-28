@@ -13,7 +13,7 @@ export default async function Pagina({ params, searchParams }: { params: Promise
   return (
     <div className="contenedor max-w-xl py-8">
       <h1>{d.titol}</h1>
-      {sp.pagat ? <p className="mt-3 rounded-lg bg-oliva-tenue p-3 text-sm">{sp.pagat === 'demo' ? d.demo : d.pagat}</p> : null}
+      {sp.pagat ? <p className="mt-3 rounded-lg bg-apte-tenue p-3 text-sm">{sp.pagat === 'demo' ? d.demo : d.pagat}</p> : null}
       <div className="full mt-5 text-[15px]">
         <p>{u.email}</p>
         <p className="mt-2">{d.pla}: <strong>{premium ? (u.subscripcioEstat === 'passi' ? d.passi : d.actiu) : d.gratis}</strong>{premium && fins ? <> · {u.cancelaAlFinal ? `${d.cancelada} ${fins}` : `${d.fins} ${fins}`}</> : null}{u.pla ? <span className="text-secundari"> ({t(idioma).preus.plans[u.pla] ?? u.pla})</span> : null}</p>

@@ -34,7 +34,7 @@ export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
       {mode !== 'recuperar' ? <input className="campo" type="password" placeholder={d.clave} value={clau} onChange={(e) => setClau(e.target.value)} required minLength={8} autoComplete={mode === 'entrar' ? 'current-password' : 'new-password'} /> : null}
       {mode === 'crear' ? <label className="flex items-start gap-2 text-sm"><input type="checkbox" checked={accepto} onChange={(e) => setAccepto(e.target.checked)} required className="mt-1" /><span>{d.acepto} (<a className="underline" href={`/${idioma}/legal/condicions`} target="_blank">·</a>)</span></label> : null}
       {err ? <p className="text-sm text-vermell">{err}</p> : null}
-      {ok ? <p className="text-sm text-oliva">{ok}</p> : null}
+      {ok ? <p className="text-sm text-apte">{ok}</p> : null}
       <button className="boton" type="submit" disabled={carregant}>{mode === 'crear' ? d.crear : mode === 'recuperar' ? d.recuperar : mode === 'nova' ? d.canviar : d.entrar}</button>
       <div className="flex flex-wrap justify-between gap-2 text-sm">
         {mode === 'entrar' ? <><button type="button" className="underline" onClick={() => setMode('crear')}>{d.crear}</button><button type="button" className="text-secundari underline" onClick={() => setMode('recuperar')}>{d.recuperar}</button></> : <button type="button" className="underline" onClick={() => setMode('entrar')}>{d.entrar}</button>}

@@ -15,7 +15,7 @@ export default function DemoItem({ idioma, item, regla }: { idioma: Idioma; item
   const frase = (() => {
     if (item.tipus === 'castellanismes' && item.error) {
       const i = enun.toLowerCase().indexOf(item.error.toLowerCase());
-      if (i >= 0) return <>{enun.slice(0, i)}<span className={fet ? 'rounded bg-oliva-tenue px-1 font-semibold text-oliva' : 'rounded bg-ocre-tenue px-1 underline decoration-ocre decoration-2 underline-offset-4'}>{fet ? opcions[item.resposta as number] : enun.slice(i, i + item.error.length)}</span>{enun.slice(i + item.error.length)}</>;
+      if (i >= 0) return <>{enun.slice(0, i)}<span className={fet ? 'marcat-ok' : 'marcat'}>{fet ? opcions[item.resposta as number] : enun.slice(i, i + item.error.length)}</span>{enun.slice(i + item.error.length)}</>;
     }
     const parts = enun.split('___');
     return <>{parts[0]}<span className="buit">{fet ? opcions[item.resposta as number] : sel !== null ? opcions[sel] : '\u00a0'}</span>{parts.slice(1).join('___')}</>;
@@ -28,12 +28,12 @@ export default function DemoItem({ idioma, item, regla }: { idioma: Idioma; item
       <div className="mt-4 grid gap-2">
         {opcions.map((o, i) => <button key={i} type="button" className={`opcio ${fet ? (i === item.resposta ? 'opcio-ok' : sel === i ? 'opcio-mal' : '') : ''}`} aria-pressed={sel === i} disabled={fet} onClick={() => setSel(i)}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>)}
       </div>
-      {!fet ? <button type="button" className="boton-ocre mt-4 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.practica.comprovar}</button> : (
+      {!fet ? <button type="button" className="boton-primari mt-4 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.practica.comprovar}</button> : (
         <div className="mt-4">
-          <p className={`font-semibold ${sel === item.resposta ? 'text-oliva' : 'text-vermell'}`}>{sel === item.resposta ? d.practica.correcte : d.practica.incorrecte}</p>
+          <p className={`font-semibold ${sel === item.resposta ? 'text-apte' : 'text-vermell'}`}>{sel === item.resposta ? d.practica.correcte : d.practica.incorrecte}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             <button type="button" className="boton-sec" onClick={() => setPerque((v) => !v)} aria-expanded={perque}>{d.practica.perque}</button>
-            <Link href={`/${idioma}/comencar`} className="boton-ocre flex-1">{d.hero.cta}</Link>
+            <Link href={`/${idioma}/comencar`} className="boton-primari flex-1">{d.hero.cta}</Link>
           </div>
           {perque ? <div className="regla mt-3 text-[15px]"><p className="font-semibold">{regla.titol.ca}</p><p className="mt-1 leading-relaxed">{regla.regla[idioma] ?? regla.regla.ca}</p><p className="mt-2 text-[13px]"><a className="underline" href={regla.font.url} target="_blank" rel="noopener noreferrer">{regla.font.nom}</a></p></div> : null}
           <p className="mt-3 text-[13px] text-terciari">{d.nou.seguentPas}</p>

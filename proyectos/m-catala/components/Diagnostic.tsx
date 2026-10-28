@@ -112,7 +112,7 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
   };
 
   if (!estat || !perfil || !banc || !ex) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
-  if (!pool.length) return <div className="contenedor py-10"><p>{t(idioma).simulacre.incomplet}</p><Link className="boton-ocre mt-4" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div>;
+  if (!pool.length) return <div className="contenedor py-10"><p>{t(idioma).simulacre.incomplet}</p><Link className="boton-primari mt-4" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link></div>;
 
   const Cap = ({ actual }: { actual: Bloc }) => {
     const blocs: Bloc[] = ['us', ...(textL ? ['lectura' as Bloc] : []), ...(textCo ? ['co' as Bloc] : []), 'escrit', 'oral'];
@@ -144,14 +144,14 @@ export default function Diagnostic({ idioma, examens, convocatories, punts, tasq
           <p className="mt-2 text-[13px] text-terciari">{t(idioma).escriure.minimParaules(minEscrit)} · {idioma === 'ca' ? 'uns 4 minuts' : 'unos 4 minutos'}</p>
           <textarea className="campo mt-4 min-h-44" value={text} onChange={(e) => setText(e.target.value)} lang="ca" placeholder={`${d.escriu}…`} aria-label={d.bloc.escrit} />
           <div className="mt-2 flex items-center justify-between text-[14px] text-secundari"><span className="tab">{paraules} {d.paraules}</span><span className="tab">{idioma === 'ca' ? 'mínim' : 'mínimo'} {minEscrit}</span></div>
-          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => setBloc('oral')}>{d.saltar}</button><button type="button" className="boton-ocre flex-1" disabled={paraules < minEscrit || corregint} onClick={enviarEscrit}>{corregint ? d.corregint : d.enviar}</button></div>
+          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => setBloc('oral')}>{d.saltar}</button><button type="button" className="boton-primari flex-1" disabled={paraules < minEscrit || corregint} onClick={enviarEscrit}>{corregint ? d.corregint : d.enviar}</button></div>
         </div>
       ) : null}
 
       {bloc === 'oral' && lecturaOral ? (
         <div>
           <Oral idioma={idioma} lectures={[lecturaOral]} sons={sons} nivell={nivell!} compacte onResultat={(r) => { setOralRes(r); }} />
-          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => calcular(null)}>{d.saltar}</button><button type="button" className="boton-ocre flex-1" disabled={!oralRes} onClick={() => calcular(oralRes)}>{d.seguent}</button></div>
+          <div className="mt-4 flex gap-2"><button type="button" className="boton-sec" onClick={() => calcular(null)}>{d.saltar}</button><button type="button" className="boton-primari flex-1" disabled={!oralRes} onClick={() => calcular(oralRes)}>{d.seguent}</button></div>
         </div>
       ) : null}
 
@@ -172,12 +172,12 @@ function PreguntesText({ text, preguntes, idx, idioma, onResposta, audio }: { te
     <div className="full" style={{ viewTransitionName: 'item' }}>
       <p className="full-cap">{text.titol}</p>
       {audio ? (
-        <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={async () => { setEscoltes((n) => n + 1); const { parlar } = await import('@/lib/client/veu'); await parlar(text.text.replace(/^[AB]:\s*/gm, ''), text.veus?.[0] === 'nord-occidental' ? 'nord-occidental' : 'central'); }}>🔊 {t(idioma).simulacre.escoltar}</button><span className="text-xs text-secundari">{t(idioma).simulacre.escoltat(escoltes)}</span></div>
-      ) : <div className="prosa my-3 max-h-72 overflow-y-auto rounded-[6px] bg-crema p-3 text-[15px]">{text.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
-      <p className="text-[13px] text-terciari"><span className="num text-nit">{idx + 1}</span> / {preguntes.length}</p>
+        <div className="my-3 flex items-center gap-2"><button type="button" className="boton-primari" disabled={escoltes >= 2} onClick={async () => { setEscoltes((n) => n + 1); const { parlar } = await import('@/lib/client/veu'); await parlar(text.text.replace(/^[AB]:\s*/gm, ''), text.veus?.[0] === 'nord-occidental' ? 'nord-occidental' : 'central'); }}>🔊 {t(idioma).simulacre.escoltar}</button><span className="text-xs text-secundari">{t(idioma).simulacre.escoltat(escoltes)}</span></div>
+      ) : <div className="prosa my-3 max-h-72 overflow-y-auto rounded-[6px] bg-paper p-3 text-[15px]">{text.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
+      <p className="text-[13px] text-terciari"><span className="num text-tinta">{idx + 1}</span> / {preguntes.length}</p>
       <p className="mt-1 text-[19px] font-semibold leading-snug">{p.enunciat}</p>
       <div className="mt-4 grid gap-2" role="radiogroup">{p.opcions.map((o, i) => <button key={i} type="button" role="radio" aria-checked={sel === i} className={`opcio ${fet ? (i === p.resposta ? 'opcio-ok' : sel === i ? 'opcio-mal' : '') : sel === i ? 'opcio-sel' : ''}`} disabled={fet} onClick={() => setSel(i)}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>)}</div>
-      {!fet ? <button type="button" className="boton mt-5 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.comprovar}</button> : <button type="button" className="boton-ocre mt-5 w-full" onClick={() => onResposta(sel === p.resposta)} autoFocus>{d.seguent}</button>}
+      {!fet ? <button type="button" className="boton mt-5 w-full" disabled={sel === null} onClick={() => setFet(true)}>{d.comprovar}</button> : <button type="button" className="boton-primari mt-5 w-full" onClick={() => onResposta(sel === p.resposta)} autoFocus>{d.seguent}</button>}
     </div>
   );
 }

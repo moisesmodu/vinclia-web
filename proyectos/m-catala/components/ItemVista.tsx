@@ -46,7 +46,7 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
     }
     if (item.tipus === 'castellanismes' && item.error && item.enunciat && item.opcions) {
       const e = item.enunciat; const i = e.toLowerCase().indexOf(item.error.toLowerCase());
-      if (i >= 0) return <><p className="text-[21px] leading-snug">{e.slice(0, i)}<span className={aval ? 'rounded bg-oliva-tenue px-1 font-semibold text-oliva' : 'rounded bg-ocre-tenue px-1 underline decoration-ocre decoration-2 underline-offset-4'}>{aval ? item.opcions[item.resposta as number] : e.slice(i, i + item.error.length)}</span>{e.slice(i + item.error.length)}</p>{!aval ? <p className="mt-1 text-[14px] text-secundari">{idioma === 'ca' ? 'Quina és la forma correcta?' : '¿Cuál es la forma correcta?'}</p> : null}</>;
+      if (i >= 0) return <><p className="text-[21px] leading-snug">{e.slice(0, i)}<span className={aval ? 'marcat-ok' : 'marcat'}>{aval ? item.opcions[item.resposta as number] : e.slice(i, i + item.error.length)}</span>{e.slice(i + item.error.length)}</p>{!aval ? <p className="mt-1 text-[14px] text-secundari">{idioma === 'ca' ? 'Quina és la forma correcta?' : '¿Cuál es la forma correcta?'}</p> : null}</>;
     }
     return <p className="text-[21px] leading-snug">{item.enunciat}</p>;
   }, [item, resposta, aval, idioma]);
@@ -54,16 +54,16 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
 
   return (
     <div className="full" style={{ viewTransitionName: 'item' }}>
-      <div className="full-cap"><span>{numero ? <span className="num text-[15px] text-nit">{numero}</span> : null}{numero ? ' · ' : ''}{d.tipus[item.tipus] ?? item.tipus}</span><span>{item.nivell}</span></div>
-      {textLectura ? <div className="prosa mt-4 max-h-72 overflow-y-auto rounded-[6px] bg-crema p-3 text-[15px]">{textLectura.split(/\n+/).map((p, i) => <p key={i}>{p}</p>)}</div> : null}
+      <div className="full-cap"><span>{numero ? <span className="num text-[15px] text-tinta">{numero}</span> : null}{numero ? ' · ' : ''}{d.tipus[item.tipus] ?? item.tipus}</span><span>{item.nivell}</span></div>
+      {textLectura ? <div className="prosa mt-4 max-h-72 overflow-y-auto rounded-[6px] bg-paper p-3 text-[15px]">{textLectura.split(/\n+/).map((p, i) => <p key={i}>{p}</p>)}</div> : null}
 
       <div className="mt-4">
         {item.tipus === 'dictat' ? (
           <div className="flex flex-wrap items-center gap-2">
-            <button type="button" className="boton-ocre" onClick={escoltar} disabled={!!aval}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z M15.5 8.5a5 5 0 0 1 0 7 M19 5a9 9 0 0 1 0 14" /></svg>{escoltes ? d.escoltarAltraVegada : d.escoltar}</button>
+            <button type="button" className="boton-primari" onClick={escoltar} disabled={!!aval}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z M15.5 8.5a5 5 0 0 1 0 7 M19 5a9 9 0 0 1 0 14" /></svg>{escoltes ? d.escoltarAltraVegada : d.escoltar}</button>
             {veu === 'cap' ? <span className="text-[14px] text-vermell">{d.senseVeu}</span> : null}
             {!mostrarText && veu === 'cap' ? <button type="button" className="boton-text text-[14px]" onClick={() => setMostrarText(true)}>{d.mostrarText}</button> : null}
-            {mostrarText ? <p className="w-full rounded-[6px] bg-crema p-3 text-[16px]">{item.text}</p> : null}
+            {mostrarText ? <p className="w-full rounded-[6px] bg-paper p-3 text-[16px]">{item.text}</p> : null}
             {item.focus?.length ? <p className="w-full text-[13px] text-terciari">{d.pista}: {item.focus.join(', ')}</p> : null}
           </div>
         ) : enunciat}
@@ -88,7 +88,7 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
         <button type="button" className="boton mt-5 w-full" onClick={comprovar} disabled={resposta === null || resposta === ''}>{d.comprovar}</button>
       ) : retroaccio ? (
         <div className="mt-5" aria-live="polite">
-          <p className={`text-[17px] font-semibold ${aval.correcte ? 'text-oliva' : 'text-vermell'}`}>{aval.correcte ? d.correcte : d.incorrecte}{aval.quasi ? ' · accents' : ''}{aval.precisio !== undefined ? ` · ${Math.round(aval.precisio * 100)} %` : ''}</p>
+          <p className={`text-[17px] font-semibold ${aval.correcte ? 'text-apte' : 'text-vermell'}`}>{aval.correcte ? d.correcte : d.incorrecte}{aval.quasi ? ' · accents' : ''}{aval.precisio !== undefined ? ` · ${Math.round(aval.precisio * 100)} %` : ''}</p>
           {!aval.correcte || item.tipus === 'dictat' ? (
             <div className="mt-1 text-[16px]">
               {item.tipus === 'dictat' && aval.detall ? <p className="leading-relaxed">{aval.detall.map((w, i) => <span key={i} className={w.ok ? '' : 'rounded bg-vermell-tenue px-0.5 font-semibold text-vermell'}>{w.paraula} </span>)}</p>
@@ -97,20 +97,20 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
           ) : null}
           <div className="mt-4 flex gap-2">
             {regla ? <button type="button" className="boton-sec" onClick={() => setPerque((v) => !v)} aria-expanded={perque}>{d.perque}</button> : null}
-            {onSeguent ? <button type="button" className="boton-ocre flex-1" onClick={onSeguent} autoFocus>{etiquetaSeguent ?? d.seguent}</button> : null}
+            {onSeguent ? <button type="button" className="boton-primari flex-1" onClick={onSeguent} autoFocus>{etiquetaSeguent ?? d.seguent}</button> : null}
           </div>
           {perque && regla ? (
             <div className="regla mt-4 text-[15px]" dir={idiomaExpl === 'ar' ? 'rtl' : 'ltr'} lang={idiomaExpl}>
               <p className="font-semibold" dir="ltr" lang="ca">{regla.titol.ca}</p>
               <p className="mt-1 leading-relaxed">{textRegla}</p>
-              <ul className="mt-2 space-y-1" dir="ltr" lang="ca">{regla.exemples.slice(0, 3).map((e, i) => <li key={i}>{e.malament ? <><span className="text-vermell line-through decoration-2">{e.malament}</span> → </> : null}<span className="font-medium text-oliva">{e.be}</span></li>)}</ul>
+              <ul className="mt-2 space-y-1" dir="ltr" lang="ca">{regla.exemples.slice(0, 3).map((e, i) => <li key={i}>{e.malament ? <><span className="text-vermell line-through decoration-2">{e.malament}</span> → </> : null}<span className="font-medium text-apte">{e.be}</span></li>)}</ul>
               <p className="mt-2 text-[13px]" dir="ltr"><a className="underline" href={regla.font.url} target="_blank" rel="noopener noreferrer">{d.font}: {regla.font.nom}</a></p>
             </div>
           ) : null}
           <div className="mt-4 text-[13px]">
             {errata === 'no' ? <button type="button" className="text-terciari underline" onClick={() => setErrata('form')}>{d.informar}</button> : null}
             {errata === 'form' ? <form className="flex gap-2" onSubmit={async (e) => { e.preventDefault(); await fetch('/api/errata', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ itemId: item.id, text: textErrata }) }).catch(() => {}); setErrata('ok'); }}><input className="campo" name="errata" value={textErrata} onChange={(e) => setTextErrata(e.target.value)} placeholder={`${d.reportarPlaceholder ?? d.informar}…`} aria-label={d.informar} required autoComplete="off" /><button className="boton-sec" type="submit">OK</button></form> : null}
-            {errata === 'ok' ? <span className="text-oliva">{d.gracies}</span> : null}
+            {errata === 'ok' ? <span className="text-apte">{d.gracies}</span> : null}
           </div>
         </div>
       ) : null}

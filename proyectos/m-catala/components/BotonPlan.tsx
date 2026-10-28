@@ -6,7 +6,7 @@ export default function BotonPlan({ plan, idioma, texto, destacado }: { plan: st
   const [err, setErr] = useState('');
   return (
     <>
-      <button className={`${destacado ? 'boton-ocre' : 'boton-sec'} mt-4 w-full`} disabled={cargando} onClick={async () => {
+      <button className={`${destacado ? 'boton-primari' : 'boton-sec'} mt-4 w-full`} disabled={cargando} onClick={async () => {
         setCargando(true); setErr('');
         try { const r = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan, idioma }) }); const j = await r.json(); if (j.url) location.href = j.url; else { setErr(j.error ?? 'Error'); setCargando(false); } } catch { setErr('Error'); setCargando(false); }
       }}>{cargando ? '…' : texto}</button>

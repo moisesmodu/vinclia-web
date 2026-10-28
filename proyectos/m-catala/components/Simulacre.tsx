@@ -9,6 +9,7 @@ import { probabilitatAprovar, type NotesArea } from '@/lib/motor/diagnostic';
 import { novaTargeta, revisar } from '@/lib/motor/repas';
 import { registrarDia, avuiISO } from '@/lib/motor/ratxa';
 import type { ResultatCorreccio } from '@/lib/correccio';
+import Volat from '@/components/Volat';
 import ItemVista from './ItemVista';
 import Editor, { Temporitzador } from './Editor';
 import ResultatDiag from './ResultatDiag';
@@ -77,11 +78,11 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
       <p className="text-[15px] text-secundari">{sim.nivell} · {examen.nom[idioma].replace(/^\w\d · /, '')}</p>
       <h1 className="mt-1">{sim.nom}</h1>
       <p className="mt-3 max-w-[48ch] text-[16px] leading-relaxed text-secundari">{d.text}</p>
-      <ol className="mt-6 divide-y divide-linia border-y border-linia">{arees.map((a, i) => <li key={a.id} className="grid grid-cols-[28px_1fr_auto] items-baseline gap-3 py-3"><span className="num text-[18px] text-ocre-fosc">{i + 1}</span><span className="min-w-0">{a.nom[idioma]}<span className="block text-[13px] text-terciari">{a.pes} % · {a.id === 'us' ? `${itemsUs.length} ítems` : a.id === 'escrit' ? `${tasquesEscrit.length} ${idioma === 'ca' ? 'tasca' : 'tarea'}${tasquesEscrit.length > 1 ? 's' : ''}` : `${textosArea(a.id as 'co' | 'lectura').length} ${idioma === 'ca' ? 'textos' : 'textos'}`}</span></span><span className="num text-[17px]">{a.minuts}<span className="text-[13px] font-normal text-terciari"> min</span></span></li>)}</ol>
+      <ol className="mt-6 divide-y divide-linia border-y border-linia">{arees.map((a, i) => <li key={a.id} className="grid grid-cols-[28px_1fr_auto] items-baseline gap-3 py-3"><span className="num text-[18px] text-boli">{i + 1}</span><span className="min-w-0">{a.nom[idioma]}<span className="block text-[13px] text-terciari">{a.pes} % · {a.id === 'us' ? `${itemsUs.length} ítems` : a.id === 'escrit' ? `${tasquesEscrit.length} ${idioma === 'ca' ? 'tasca' : 'tarea'}${tasquesEscrit.length > 1 ? 's' : ''}` : `${textosArea(a.id as 'co' | 'lectura').length} ${idioma === 'ca' ? 'textos' : 'textos'}`}</span></span><span className="num text-[17px]">{a.minuts}<span className="text-[13px] font-normal text-terciari"> min</span></span></li>)}</ol>
       <p className="mt-3 text-[13px] text-terciari">{d.oralNota}</p>
-      {!(sim as { complet?: boolean }).complet && itemsUs.length < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-[6px] bg-ocre-tenue p-3 text-[14px]">{d.incomplet}</p> : null}
-      {err ? <p className="mt-3 rounded-[6px] bg-ocre-tenue p-3 text-[15px]" role="alert">{err} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
-      <button type="button" className="boton-ocre mt-6 w-full text-[18px]" onClick={comencar} disabled={!itemsUs.length}>{d.comencar}</button>
+      {!(sim as { complet?: boolean }).complet && itemsUs.length < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-[6px] bg-boli-tenue p-3 text-[14px]">{d.incomplet}</p> : null}
+      {err ? <p className="mt-3 rounded-[6px] bg-boli-tenue p-3 text-[15px]" role="alert">{err} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
+      <button type="button" className="boton-primari mt-6 w-full text-[18px]" onClick={comencar} disabled={!itemsUs.length}>{d.comencar}</button>
     </div>
   );
 
@@ -90,7 +91,7 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
     return (
       <div>
         <div className="flex flex-col items-center py-6 text-center">
-          <span className={`segell segell-anima ${apte ? 'segell-apte' : 'segell-no'}`} role="status">{apte ? d.apte : d.noApte}</span>
+          <div className="flex items-center gap-4"><Volat mida={56} postura={apte ? 'content' : 'sorpres'} aterra /><span className={`segell segell-anima ${apte ? 'segell-apte' : 'segell-no'}`} role="status">{apte ? d.apte : d.noApte}</span></div>
           <p className="mt-5 text-[13px] text-terciari">{t(idioma).nou.apteEstimat} · {sim.nom}</p>
           <p className="num mt-1 text-[44px] leading-none">{resultat.global}<span className="text-[22px] text-terciari">%</span></p>
           <p className="text-[14px] text-secundari">{d.global}{examen.aptoGlobal ? ` · ${d.minim} ${examen.aptoGlobal} %` : ''}</p>
@@ -98,7 +99,7 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
         </div>
         <ResultatDiag idioma={idioma} resultat={{ ...resultat, data: '', nivell: sim.nivell, theta: 0, febles: [], sons: [], respostes: [] }} examen={examen} punts={punts} sons={sons} compacte />
         <p className="mt-6 text-[15px] text-secundari">{d.pla}</p>
-        <div className="mt-5 grid gap-2"><Link className="boton-ocre" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link><Link className="boton-sec" href={`/${idioma}/practica/repas`}>{t(idioma).practica.tipus.repas}</Link></div>
+        <div className="mt-5 grid gap-2"><Link className="boton-primari" href={`/${idioma}/avui`}>{t(idioma).nav.avui}</Link><Link className="boton-sec" href={`/${idioma}/practica/repas`}>{t(idioma).practica.tipus.repas}</Link></div>
       </div>
     );
   }
@@ -112,11 +113,11 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
   }
   if (area.id === 'escrit') {
     const tk = tasquesEscrit[pIdx];
-    return <div>{cap}{tk ? <Editor key={tk.id} idioma={idioma} tasca={tk} regles={regles} context="simulacre" senseQuota onCorregit={(r: ResultatCorreccio) => { setEscrit((e) => [...e, r.nota.percent]); }} /> : null}<button type="button" className="boton-ocre mt-4 w-full" disabled={escrit.length <= pIdx} onClick={() => (pIdx + 1 < tasquesEscrit.length ? setPIdx(pIdx + 1) : seguentArea())}>{pIdx + 1 < tasquesEscrit.length ? t(idioma).practica.seguent : d.seguentArea}</button></div>;
+    return <div>{cap}{tk ? <Editor key={tk.id} idioma={idioma} tasca={tk} regles={regles} context="simulacre" senseQuota onCorregit={(r: ResultatCorreccio) => { setEscrit((e) => [...e, r.nota.percent]); }} /> : null}<button type="button" className="boton-primari mt-4 w-full" disabled={escrit.length <= pIdx} onClick={() => (pIdx + 1 < tasquesEscrit.length ? setPIdx(pIdx + 1) : seguentArea())}>{pIdx + 1 < tasquesEscrit.length ? t(idioma).practica.seguent : d.seguentArea}</button></div>;
   }
   const pre = preguntesDe(area.id as 'co' | 'lectura');
   const act = pre[pIdx];
-  if (!act) return <div>{cap}<button type="button" className="boton-ocre w-full" onClick={seguentArea}>{d.seguentArea}</button></div>;
+  if (!act) return <div>{cap}<button type="button" className="boton-primari w-full" onClick={seguentArea}>{d.seguentArea}</button></div>;
   const n = escoltes[act.tx.id] ?? 0;
   return (
     <div>{cap}
@@ -130,8 +131,8 @@ function PreguntaSim({ idioma, tx, p, audio, escoltes, onEscoltar, onResposta, n
   const [sel, setSel] = useState<number | null>(null);
   return (
     <div className="full" style={{ viewTransitionName: 'item' }}>
-      <p className="full-cap"><span><span className="num text-nit">{numero}</span> · {tx.titol}</span></p>
-      {audio ? <div className="my-3 flex items-center gap-2"><button type="button" className="boton-ocre" disabled={escoltes >= 2} onClick={onEscoltar}>{t(idioma).nou.escolta}</button><span className="text-[13px] text-terciari">{d.escoltat(escoltes)}</span></div> : <div className="prosa my-3 max-h-80 overflow-y-auto rounded-[6px] bg-crema p-3 text-[15px]">{tx.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
+      <p className="full-cap"><span><span className="num text-tinta">{numero}</span> · {tx.titol}</span></p>
+      {audio ? <div className="my-3 flex items-center gap-2"><button type="button" className="boton-primari" disabled={escoltes >= 2} onClick={onEscoltar}>{t(idioma).nou.escolta}</button><span className="text-[13px] text-terciari">{d.escoltat(escoltes)}</span></div> : <div className="prosa my-3 max-h-80 overflow-y-auto rounded-[6px] bg-paper p-3 text-[15px]">{tx.text.split(/\n+/).map((x, i) => <p key={i}>{x}</p>)}</div>}
       <p className="text-[19px] font-semibold leading-snug">{p.enunciat}</p>
       <div className="mt-4 grid gap-2" role="radiogroup">{p.opcions.map((o, i) => <button key={i} type="button" role="radio" aria-checked={sel === i} className={`opcio ${sel === i ? 'opcio-sel' : ''}`} onClick={() => setSel(i)}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>)}</div>
       <button type="button" className="boton mt-5 w-full" disabled={sel === null} onClick={() => onResposta(sel === p.resposta)}>{t(idioma).practica.seguent}</button>

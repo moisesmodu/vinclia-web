@@ -8,5 +8,5 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; return { title: t(l).preus.titol }; }
 export default async function Pagina({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params; const idioma = (esIdioma(lang) ? lang : 'ca') as Idioma;
-  return <div className="contenedor py-8"><Preus idioma={idioma} planes={pais.planes.filter((p) => p.activo)} modeProva={modoPago() !== 'stripe' || esModoPrueba()} /><p className="mt-8 text-[13px] font-semibold text-ocre-fosc">{marca.sello[idioma]}</p></div>;
+  return <div className="contenedor py-8"><Preus idioma={idioma} planes={pais.planes.filter((p) => p.activo)} modeProva={modoPago() !== 'stripe' || esModoPrueba()} /><p className="mt-8 text-[13px] font-semibold text-boli">{marca.sello[idioma]}</p></div>;
 }

@@ -22,7 +22,7 @@ export default async function Pagina({ params }: { params: Promise<{ lang: strin
       
       <h1>{p.titol[idioma]}</h1>
       <p className="mt-3 text-[19px] leading-relaxed text-secundari">{p.descripcio[idioma]}</p>
-      <div className="regla my-6"><p className="font-semibold">{p.cta?.[idioma]}</p><Link href={`/${idioma}/comencar`} className="boton-ocre mt-3">{t(idioma).hero.cta}</Link></div>
+      <div className="regla my-6"><p className="font-semibold">{p.cta?.[idioma]}</p><Link href={`/${idioma}/comencar`} className="boton-primari mt-3">{t(idioma).hero.cta}</Link></div>
       {p.seccions[idioma].map((s, i) => <section key={i}><h2>{s.h2}</h2><div dangerouslySetInnerHTML={{ __html: md(s.text) }} /></section>)}
       {faq.length ? <section><h2>FAQ</h2>{faq.map((f, i) => <details key={i} className="mb-2 rounded-[6px] border border-linia bg-paper p-3"><summary className="cursor-pointer font-semibold">{f.p}</summary><p className="mt-2">{f.r}</p></details>)}</section> : null}
       {relacionades.length ? <section><h2>{idioma === 'ca' ? 'Relacionat' : 'Relacionado'}</h2><ul>{relacionades.map((r) => <li key={r.slug}><Link href={`/${idioma}/guia/${r.slug}`}>{r.titol[idioma]}</Link></li>)}</ul></section> : null}

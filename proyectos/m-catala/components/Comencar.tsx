@@ -71,7 +71,7 @@ export default function Comencar({ idioma, examens, convocatories }: Props) {
           <div className="mt-5 grid grid-cols-3 gap-2" role="radiogroup" aria-label={d.minuts}>{([10, 15, 20] as const).map((m) => <Opcio key={m} centre sel={minuts === m} onClick={() => setMinuts(m)}><span className="num text-[26px]">{m}<span className="ml-1 text-[14px] font-normal text-secundari">{t(idioma).comu.minuts}</span></span></Opcio>)}</div>
           <h2 className="mt-8">{d.idiomaExpl}</h2>
           <div className="mt-4 grid grid-cols-3 gap-2" role="radiogroup" aria-label={d.idiomaExpl}>{(['ca', 'es', 'en', 'ar', 'ro', 'fr'] as IdiomaExpl[]).map((l) => <Opcio key={l} centre sel={expl === l} onClick={() => setExpl(l)}><span lang={l}>{{ ca: 'Català', es: 'Castellano', en: 'English', ar: 'العربية', ro: 'Română', fr: 'Français' }[l]}</span></Opcio>)}</div>
-          <div className="mt-8 flex gap-2"><button type="button" className="boton-sec" onClick={() => setPas(2)}>{d.enrere}</button><button type="button" className="boton-ocre flex-1" disabled={!minuts} onClick={acabar}>{d.comencar}</button></div>
+          <div className="mt-8 flex gap-2"><button type="button" className="boton-sec" onClick={() => setPas(2)}>{d.enrere}</button><button type="button" className="boton-primari flex-1" disabled={!minuts} onClick={acabar}>{d.comencar}</button></div>
         </>
       )}
     </div>

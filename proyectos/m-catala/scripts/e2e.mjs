@@ -95,7 +95,7 @@ await p.goto(`${BASE}/ca/oral`); await p.waitForSelector('text=Gravar'); pas('pa
 await p.goto(`${BASE}/ca/convocatories`); await p.waitForSelector('text=Convocatòries 2027'); pas('convocatòries 2027');
 await p.goto(`${BASE}/ca/preus`); await p.waitForSelector('text=Preu clar'); await shot('12-preus'); pas('preus');
 await p.goto(`${BASE}/ca/guia/examen-c1-catala-2027-model`); await p.waitForSelector('h1'); pas('pàgina SEO');
-await p.goto(`${BASE}/es`); await p.waitForSelector('text=Tu certificado de catalán'); pas('versió en castellà');
+await p.goto(`${BASE}/es`); await p.waitForSelector('text=Sabrás si apruebas'); pas('versió en castellà');
 
 // Registre i pagament (només si hi ha base de dades)
 // Les crides van des del navegador (el proxy de les sessions no afecta Node).

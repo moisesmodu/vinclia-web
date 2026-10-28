@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
-import '@fontsource/outfit/700.css';
-import '@fontsource/noto-sans/400.css';
-import '@fontsource/noto-sans/700.css';
+import '@fontsource-variable/archivo/wdth.css';
 import '../globals.css';
 import { esIdioma } from '@/lib/i18n';
 import { IDIOMAS } from '@/lib/tipos';
