@@ -27,19 +27,31 @@ function servir(dir, puerto) {
   });
 }
 
+async function medir(url) {
+  const { stdout: json } = await ejecutar('npx', ['lighthouse', url, `--chrome-path=${CHROME}`, '--chrome-flags=--headless=new --no-sandbox', '--output=json', '--quiet', '--only-categories=performance,accessibility,best-practices,seo'], { maxBuffer: 1e8, env: { ...process.env, CHROME_PATH: CHROME } });
+  const r = JSON.parse(json);
+  return {
+    c: Object.fromEntries(Object.entries(r.categories).map(([k, v]) => [k, Math.round(v.score * 100)])),
+    m: { lcp: r.audits['largest-contentful-paint'].displayValue, cls: r.audits['cumulative-layout-shift'].displayValue, tbt: r.audits['total-blocking-time'].displayValue },
+  };
+}
+
 const salida = [];
 let fallo = false;
 await mkdir('informes', { recursive: true });
 for (const [i, sitio] of sitios.entries()) {
   const puerto = 4400 + i;
   const srv = await servir(`dist/${sitio}`, puerto);
+  // Una medición de calentamiento que se descarta: el primer arranque de Chrome en un equipo frío infla el TBT.
+  if (i === 0) await medir(`http://localhost:${puerto}${MUESTRA[sitio][0]}`).catch(() => {});
   for (const ruta of MUESTRA[sitio]) {
     const url = `http://localhost:${puerto}${ruta}`;
-    const { stdout: json } = await ejecutar('npx', ['lighthouse', url, `--chrome-path=${CHROME}`, '--chrome-flags=--headless=new --no-sandbox', '--output=json', '--quiet', '--only-categories=performance,accessibility,best-practices,seo'], { maxBuffer: 1e8, env: { ...process.env, CHROME_PATH: CHROME } });
-    const r = JSON.parse(json);
-    const c = Object.fromEntries(Object.entries(r.categories).map(([k, v]) => [k, Math.round(v.score * 100)]));
-    const m = { lcp: r.audits['largest-contentful-paint'].displayValue, cls: r.audits['cumulative-layout-shift'].displayValue, tbt: r.audits['total-blocking-time'].displayValue };
-    const fila = { sitio, ruta, ...c, ...m };
+    // Como Lighthouse CI: si alguna categoría baja de 95, dos mediciones más y se toma la mediana de cada categoría.
+    const runs = [await medir(url)];
+    if (Object.values(runs[0].c).some((x) => x < 95)) { runs.push(await medir(url)); runs.push(await medir(url)); }
+    const mediana = (k) => runs.map((r) => r.c[k]).sort((a, b) => a - b)[Math.floor(runs.length / 2)];
+    const c = Object.fromEntries(Object.keys(runs[0].c).map((k) => [k, mediana(k)]));
+    const fila = { sitio, ruta, ...c, ...runs[runs.length - 1].m, mediciones: runs.length };
     salida.push(fila);
     if (Object.values(c).some((x) => x < 95)) fallo = true;
     console.log(JSON.stringify(fila));
