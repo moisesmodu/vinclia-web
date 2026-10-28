@@ -1,6 +1,6 @@
 # J · Cursos en Udemy · lo que tienes que hacer tú
 
-Todo lo demás está hecho: vídeos, subtítulos, recursos, cuestionarios, imágenes, textos de la ficha y cupones.
+Solo tienes que abrir la cuenta de instructor y subir. Todo lo demás está hecho: vídeos, subtítulos, recursos, cuestionarios, imágenes, textos de la ficha y cupones.
 **Dónde está todo:** la página privada de entrega (enlace abajo, en «Entrega»): ves cada vídeo, lo descargas y tienes al
 lado el texto que se pega en Udemy. La estructura exacta de cada curso está en `udemy/c1-CURRICULO.md`,
 `c2-CURRICULO.md` y `c4-CURRICULO.md` (y `c3-` cuando se grabe entero).
@@ -32,16 +32,13 @@ idioma, nivel, categoría, imagen (`imagenes/c1-curso.png`) y vídeo promocional
 
 Mismo procedimiento con `c2-CURRICULO.md`.
 
-## 4. Crea los cupones del día 1 (5 min, cuando Udemy apruebe cada curso)
+## 4. Al aprobarse cada curso: cupones (5 min)
 
-Promociones → «Crear cupón» con los códigos y tipos de `MARKETING.md` §2. Envía tú el mensaje de lanzamiento de
-`MARKETING.md` §3 a tu lista (nunca a familias de Algorithmics). Si quieres, responde «sí» y preparo los vídeos cortos
-para que los publiques.
+Udemy solo deja crearlos al instructor con su sesión iniciada: Promociones → «Crear cupón» con los códigos y tipos de
+`MARKETING.md` §2. El mensaje de lanzamiento para tu lista está en `MARKETING.md` §3 (nunca a familias de Algorithmics).
 
-## 5. Activa las dos tareas programadas (2 clics)
-
-Las de `TAREA-PROGRAMADA.md`: mensual (respuestas a alumnos en borrador, cupones y propuesta del siguiente curso) y
-trimestral (actualización con fecha). Necesitan el token de la API de instructor de Udemy como secreto `UDEMY_TOKEN`.
+Las tareas programadas (respuestas a alumnos, actualización trimestral) y el almacenamiento de los vídeos los deja
+montados la sesión del Mac con `DESPLIEGUE.md`: no tienes que hacer nada.
 
 ---
 
