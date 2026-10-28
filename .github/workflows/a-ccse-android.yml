@@ -1,0 +1,37 @@
+# Compila la app Android (TWA) del proyecto A sin firmar. La firma se hace fuera de GitHub con la clave de subida,
+# que nunca entra en el repositorio (es público).
+name: a-ccse-android
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'proyectos/a-ccse/android/**'
+      - '.github/workflows/a-ccse-android.yml'
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/a-ccse/android/proyecto
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Compilar AAB y APK sin firmar
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon bundleRelease assembleRelease
+      - name: Resumen
+        run: |
+          ls -la app/build/outputs/bundle/release app/build/outputs/apk/release
+          sha256sum app/build/outputs/bundle/release/*.aab app/build/outputs/apk/release/*.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ccse-android-sin-firmar
+          path: |
+            proyectos/a-ccse/android/proyecto/app/build/outputs/bundle/release/*.aab
+            proyectos/a-ccse/android/proyecto/app/build/outputs/apk/release/*.apk
+          retention-days: 30
