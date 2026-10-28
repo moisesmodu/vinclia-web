@@ -66,7 +66,7 @@ Para los .es, en el registrador basta un CNAME (o un ALIAS en la raíz) hacia `n
 ```bash
 export T="--token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID"
 git fetch origin && git checkout claude/p-webs-adsense-fabrica && cd proyectos/p-webs-adsense/fabrica
-for par in netoclaro:nomina impuestoclaro:impuestos; do
+for par in netoclaro:nomina impuestoclaro:impuestos chequeclaro:eeuu; do
   n=${par%%:*}; s=${par##*:}
   vercel project add $n $T
   vercel link --yes --project $n $T
@@ -78,7 +78,7 @@ for par in netoclaro:nomina impuestoclaro:impuestos; do
 done
 # Root Directory = proyectos/p-webs-adsense/fabrica y rama de producción = la base, en Project → Settings → Git,
 # si se conectan al repositorio para desplegar en cada push.
-# Dominios: vercel domains add netoclaro.es netoclaro $T ; vercel domains add impuestoclaro.es impuestoclaro $T
+# Dominios: vercel domains add netoclaro.es netoclaro $T ; vercel domains add impuestoclaro.es impuestoclaro $T ; vercel domains add chequeclaro.com chequeclaro $T
 ```
 
 ## Comprobación tras desplegar
@@ -117,3 +117,13 @@ Ejecutado el 2026-10-28
 Redesplegados `netoclaro` e `impuestoclaro` con el commit b542950 (correo hola@numimates.com) y `LEGAL_EMAIL=hola@numimates.com` en production (DESPLIEGUES.md §6): el aviso legal ya no muestra el correo personal.
 
 Ejecutado el 2026-10-28
+
+## Redespliegue del 28/10 por la noche (rediseño + sitio 3)
+
+El PR #6 trae el rediseño de la fábrica, los bloques de afiliación y el **sitio 3, ChequeClaro** (`SITIO=eeuu`, finanzas
+de EE. UU. en español, USD, solo castellano).
+
+1. Redesplegar `netoclaro` e `impuestoclaro` desde la rama `claude/p-webs-adsense-fabrica`, con el camino B y las mismas
+   variables.
+2. Crear `chequeclaro` con el mismo bucle del camino B: `SITIO=eeuu` y `SITE_URL=https://chequeclaro.vercel.app`.
+3. Anotar las URL en el panel y escribir aquí «Ejecutado el …».

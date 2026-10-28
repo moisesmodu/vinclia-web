@@ -1,5 +1,8 @@
-// Textos de interfaz comunes a todos los sitios.
-export const UI = {
+// Textos de interfaz comunes a todos los sitios. Un sitio puede sustituir cualquier texto con «ui» en su sitio.json
+// (por ejemplo, el sitio de EE. UU. no cita el BOE). En avisoProvisional, {anio} se cambia por el año.
+import { sitio } from './sitio';
+
+const BASE = {
   es: {
     calculadora: 'Calculadora',
     calculadoras: 'Calculadoras',
@@ -65,3 +68,12 @@ export const UI = {
     anuncio: 'Publicitat',
   },
 };
+
+type Textos = typeof BASE.es;
+function mezclar(lang: 'es' | 'ca'): Textos {
+  const o = (sitio.ui?.[lang] ?? {}) as Record<string, any>;
+  const r: any = { ...BASE[lang], ...o, legal: { ...BASE[lang].legal, ...(o.legal ?? {}) } };
+  if (typeof o.avisoProvisional === 'string') r.avisoProvisional = (a: number) => o.avisoProvisional.replaceAll('{anio}', String(a));
+  return r;
+}
+export const UI: Record<'es' | 'ca', Textos> = { es: mezclar('es'), ca: mezclar('ca') };

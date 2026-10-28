@@ -57,7 +57,7 @@ const anio = new Date().getFullYear();
   <meta property="og:title" content={titulo} />
   <meta property="og:description" content={descripcion} />
   <meta property="og:url" content={absoluta(ruta)} />
-  <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'ca_ES'} />
+  <meta property="og:locale" content={((import.meta.env.LOCALES as Record<string, string> | undefined)?.[lang] ?? (lang === 'es' ? 'es-ES' : 'ca-ES')).replace('-', '_')} />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href={favicon} type="image/svg+xml" />
   <link rel="preload" href={manrope700} as="font" type="font/woff2" crossorigin />

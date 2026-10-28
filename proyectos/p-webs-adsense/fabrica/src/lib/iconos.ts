@@ -37,6 +37,10 @@ export const ICONO_CALC: Record<string, string> = {
   verifactu: 'escudo', 'sueldo-neto-autonomo': 'cartera', 'precio-hora-autonomo': 'reloj', 'autonomo-o-asalariado': 'balanza',
   'tarifa-plana-autonomos': 'persona', 'ganancias-patrimoniales': 'subida', 'intereses-deposito': 'monedas', 'alquiler-irpf': 'casa',
   'recargo-fuera-plazo': 'alerta', 'intereses-demora': 'calendario', 'dietas-kilometraje': 'coche',
+  'us-cheque-pago': 'cartera', 'us-salario-hora': 'reloj', 'us-impuesto-federal': 'documento', 'us-reembolso': 'monedas',
+  'us-1099': 'persona', 'us-impuesto-estatal': 'bandera', 'us-fica': 'porcentaje', 'us-w4': 'nomina', 'us-overtime': 'reloj',
+  'us-propinas-overtime': 'monedas', 'us-credito-hijos': 'escudo', 'us-salario-minimo': 'euro', 'us-401k': 'subida',
+  'us-tarjeta': 'factura', 'us-prestamo-auto': 'coche', 'us-remesas': 'balanza', 'us-tipo-cambio': 'porcentaje',
 };
 
 export function icono(nombre: string, tam = 24, clase = 'ico'): string {

@@ -9,7 +9,7 @@ import { sitio, SITIO_ID, LANGS } from '../lib/sitio';
 import { texto } from '../lib/contenido';
 import { params, anios } from '../lib/params';
 import { legal } from '../lib/legal';
-import { renderTablas, fmt } from '../lib/render';
+import { renderTablas, fmt, MONEDA } from '../lib/render';
 import { t, valoresPorDefecto, type Lang } from '../lib/def';
 import { UI } from '../lib/ui';
 import { PLANTILLAS } from '../plantillas/index';
@@ -81,13 +81,14 @@ if (p.tipo === 'inicio') {
   titulo = tx.titulo; descripcion = tx.descripcion;
   vista = { tx, d: defs[`../calculadoras/${p.id}.ts`], relacionadas, fichasRel, colRel };
   jsonld = [
-    { '@context': 'https://schema.org', '@type': 'WebApplication', name: tx.h1, url: absoluta(p.ruta), description: tx.descripcion, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: lang, isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, author: autor, publisher: editor, dateModified: tx.actualizado },
+    { '@context': 'https://schema.org', '@type': 'WebApplication', name: tx.h1, url: absoluta(p.ruta), description: tx.descripcion, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: lang, isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: MONEDA }, author: autor, publisher: editor, dateModified: tx.actualizado },
     ...(tx.faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: tx.faq.map((q) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })) }] : []),
     miga([{ n: u.inicio, r: inicio.ruta }, { n: tx.h1, r: p.ruta }]),
   ];
 } else if (p.tipo === 'fichas') {
-  titulo = lang === 'es' ? `Datos oficiales: tablas para consultar y citar` : `Dades oficials: taules per consultar i citar`;
-  descripcion = lang === 'es' ? `Tablas con datos oficiales del BOE, la Seguridad Social y la Agencia Tributaria, actualizadas y descargables en CSV, de ${sitio.nombre}.` : `Taules amb dades oficials del BOE, la Seguretat Social i l’Agència Tributària, actualitzades i descarregables en CSV, de ${sitio.nombre}.`;
+  // Un sitio puede dar su propio título y descripción en sitio.json → textosDatos (el de EE. UU. no cita el BOE)
+  titulo = sitio.textosDatos?.[lang]?.titulo ?? (lang === 'es' ? `Datos oficiales: tablas para consultar y citar` : `Dades oficials: taules per consultar i citar`);
+  descripcion = sitio.textosDatos?.[lang]?.descripcion ?? (lang === 'es' ? `Tablas con datos oficiales del BOE, la Seguridad Social y la Agencia Tributaria, actualizadas y descargables en CSV, de ${sitio.nombre}.` : `Taules amb dades oficials del BOE, la Seguretat Social i l’Agència Tributària, actualitzades i descarregables en CSV, de ${sitio.nombre}.`);
   actual = 'datos';
   vista = { fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang) })) };
   jsonld = [miga([{ n: u.inicio, r: inicio.ruta }, { n: u.datos, r: p.ruta }])];
@@ -119,7 +120,8 @@ if (p.tipo === 'inicio') {
   if (p.id === 'sobre') jsonld = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: l.titulo, url: absoluta(p.ruta), mainEntity: { ...autor, description: sitio.autor.bio[lang], jobTitle: sitio.autor.rol[lang] } }];
 }
 const v = vista;
-const etiquetaProg = (x: Pagina) => (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0', lang) : x.fila!.ccaa ? nombreComunidad(x.fila!.ccaa, lang) : x.ruta);
+// Texto del enlace a una página programática: la columna «etiqueta» del CSV si existe; si no, bruto o comunidad.
+const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0', lang) : x.fila!.ccaa ? nombreComunidad(x.fila!.ccaa, lang) : x.ruta);
 ---
 <Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual}>
   {p.tipo === 'inicio' && (

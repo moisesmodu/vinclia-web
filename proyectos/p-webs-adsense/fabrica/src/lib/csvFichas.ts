@@ -2,11 +2,12 @@
 import type { Lang } from './def';
 import { t } from './def';
 import { fichasSitio } from './rutas';
-import { sitio, SITIO_ID } from './sitio';
+import { sitio, SITIO_ID, LANGS } from './sitio';
 import { params } from './params';
 import { aCSV } from './csv';
 
 export function rutasCsv(lang: Lang) {
+  if (!LANGS.includes(lang)) return []; // sitio de un solo idioma: sin /ca/dades/*.csv
   return fichasSitio().map((f) => ({ params: { slug: f.slug[lang] }, props: { id: f.id, lang } }));
 }
 export function csvFicha(id: string, lang: Lang): string {
