@@ -67,6 +67,7 @@ def main():
             os.makedirs(os.path.join(ENT, curso), exist_ok=True)
             titulo = re.sub(r'[\\/:*?"<>|]', '', G['titulo']).strip()
             base = os.path.join(ENT, curso, f'{n:02d} - {titulo}' if n else '00 - Video promocional')
+            if os.path.exists(base + '.mp4') and os.path.exists(os.path.join(d, 'tiempos.json')) and os.environ.get('FORCE') != '1': continue
             segs, subs, t, tiempos = [], [], 0.0, []
             for i, (v, a) in enumerate(zip(vis, voz['escenas'])):
                 seg = os.path.join(d, f'seg{i + 1:02d}.mp4'); D = segmento(v, a['wav'], a['dur'], seg); segs.append(seg)
