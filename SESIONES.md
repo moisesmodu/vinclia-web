@@ -1,6 +1,7 @@
 # Reglas comunes para las sesiones de proyecto
 
-> Toda sesión que construya un proyecto de la cartera lee este archivo entero antes de hacer nada, y después
+> Toda sesión que construya un proyecto de la cartera lee este archivo entero antes de hacer nada, y después `JUICIO.md`
+> (probabilidad, veredicto y criterio de parada; el proyecto M tiene además `M-CATALA-PRODUCTE.md`), y después
 > `CARTERA.md` (qué es cada proyecto y por qué) y `VIABILIDAD.md` (precios, márgenes, marketing y escenario).
 > Este archivo manda sobre cualquier costumbre de la sesión.
 

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24",
+  "actualizado": "2026-10-28",
   "objetivos": [
     {
       "nombre": "Primer objetivo",
@@ -26,8 +26,8 @@
       "donde": "VIABILIDAD.md §5"
     },
     {
-      "texto": "Abrir cuenta de Stripe y pasar claves de prueba",
-      "donde": "https://dashboard.stripe.com/register"
+      "texto": "Stripe: ya existe la cuenta 'Numi Mates' en modo real y está conectada; decidir si cobra todos los proyectos (productos separados) o se abre otra",
+      "donde": "https://dashboard.stripe.com"
     },
     {
       "texto": "Cuenta de desarrollador de Google Play (25 $)",

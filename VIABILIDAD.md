@@ -35,7 +35,7 @@ apps, boca a boca y afiliados**. Las suscripciones de 9,99 €/mes con 5–6 mes
 |---|---|---|---|---|---|---|---|---|
 | **A · CCSE nacionalidad** | 9,99 € pago único (3 meses) | 8,5 € (web 9,2 / Play 8,2) | 0 € · 3–4 meses hasta tráfico (ASO + TikTok en 6 idiomas) | 20–30 € → **pierde dinero** | No. Solo orgánico, ASO, comunidades | 35 compras/mes | Mes 5–6 | −15 € dominio |
 | **N · Nuevo en España** | 4,99 €/mes o pack 19,90 € | 22 € | 0 € · se vende dentro de A (venta cruzada) y por TikTok/WhatsApp | 30 € → marginal | No, salvo prueba de 150 € en Google búsqueda en árabe/francés | 14 clientes nuevos/mes | Mes 6–8 | −15 € |
-| **M · Catalán con IA por voz** | 9,99 €/mes | 40 € (voz cuesta 1–2 €/usuario/mes) | 0 € · "aprender catalán", "nivell C"; 4–6 meses | 20 € (búsqueda) | **Sí**, 100 €/mes desde el mes 2: 5 clientes/mes extra | 8 nuevos/mes | Mes 7–9 | −15 € dominio − 1.100 € anuncios |
+| **M · Certificados de catalán B1–C2** (redefinido 28/10) | 9,99 €/mes, 59,99 €/año o pase de convocatoria 24,99 € | 45 € (voz y corrección < 1,5 €/usuario/mes) | 0 € · "examen C1 català 2027", calendario de convocatorias; 4–6 meses | 20 € (búsqueda) | **Sí**, 100 €/mes desde el mes 2 | 7 nuevos/mes | Mes 7–9 | −15 € dominio − 1.100 € anuncios |
 | **B · Oposiciones cola larga** | 9,99 €/mes | 55 € (6 meses de vida) | 0 € · 1 página por convocatoria, 4–6 meses | 20 € (búsqueda) | **Sí**, 100 €/mes desde el mes 2: 5 clientes/mes extra | 6 nuevos/mes | Mes 6–8 | −15 € − 1.100 € |
 | **L · Motor de exámenes** (PAU, DELE, nivell C) | 9,99 €/mes | 36 € (4 meses) | 0 € · DELE es mundial (inglés, chino, portugués); 4–6 meses | 25–40 € (búsqueda en inglés es más cara) | Todavía no; orgánico primero | 9 nuevos/mes | Mes 8–10 | −15 € |
 | **O · Lectura en voz alta niños** | 6,99 €/mes | 38 € | 0 € · escuelas, redes de padres, 4–6 meses | 30 € (Meta padres) → marginal | Prueba de 150 € en el mes 4; seguir solo si CAC < 25 € | 8 nuevos/mes | Mes 8–10 | −15 € − 150 € |
@@ -48,7 +48,7 @@ apps, boca a boca y afiliados**. Las suscripciones de 9,99 €/mes con 5–6 mes
 Notas por proyecto:
 - **A y N son una sola marca.** A trae el tráfico (el examen se busca en todos los idiomas) y N es la suscripción que
   convierte a esos mismos usuarios. Juntas, el margen por usuario sube a ≈ 30 €. Sin N, A no da para 1.000 €/mes.
-- **M tiene coste variable real:** síntesis y reconocimiento de voz. Con ElevenLabs a tarifa de plan son 3–5 €/usuario/mes
+- **M (redefinido el 28/10 como app de certificados oficiales B1–C2; producto en `M-CATALA-PRODUCTE.md`) tiene coste variable real:** síntesis y reconocimiento de voz. Con ElevenLabs a tarifa de plan son 3–5 €/usuario/mes
   si habla 30 minutos; con TTS más barato (Google/OpenAI, ≈ 0,4 €) se queda en 1–2 €. Se construye con el barato y se
   deja ElevenLabs para la demo y las voces premium.
 - **G no es un negocio de anuncios, es de Navidad.** Con afiliados (cuentas de maternidad e Instagram familiar al 20 %)
