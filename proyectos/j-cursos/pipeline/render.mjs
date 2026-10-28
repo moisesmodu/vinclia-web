@@ -12,7 +12,7 @@ const C = JSON.parse(fs.readFileSync(path.join(ROOT, 'cursos', curso + '.json'),
 const STYLE = {
   c1: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-robot.webp', char: ['assets/img/bit-wave.webp', 'assets/img/bit-think.webp', 'assets/img/bit-happy.webp'], fin: 'assets/img/bit-win.webp' },
   c2: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-robotica.webp', char: ['assets/img/maqueen-happy.webp'], fin: 'assets/img/maqueen-happy.webp' },
-  c3: { hero: 'assets/img/hero-ia.webp', char: [], fin: null },
+  c3: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-ia.webp', char: [], fin: null },
   c4: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-digital.webp', char: ['assets/img/bit-think.webp', 'assets/img/bit-happy.webp'], fin: 'assets/img/bit-win.webp' },
 }[curso];
 const SHORT = { c1: 'Programación para niños en casa', c2: 'Robótica con micro:bit y Maqueen', c3: 'IA práctica para autónomos', c4: 'Bienestar digital en familia' }[curso];

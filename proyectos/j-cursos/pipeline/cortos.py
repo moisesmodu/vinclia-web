@@ -8,7 +8,7 @@ import json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 WORK = os.environ.get('WORK', '/home/user/jwork'); OUT = os.path.join(WORK, 'out'); ENT = os.environ.get('ENTREGA', os.path.join(WORK, 'entrega'))
 FONTS = os.path.join(HERE, 'assets', 'fonts')
-COLOR = {'c1': '#2F6BFF', 'c2': '#E2574C', 'c3': '#7C4DFF', 'c4': '#3CC47C'}
+COLOR = {'c1': '#2F6BFF', 'c2': '#E2574C', 'c3': '#5B5BD6', 'c4': '#3CC47C'}
 FF = ['ffmpeg', '-v', 'error', '-y']
 
 def marco(curso, gancho, pie, png, final=False):

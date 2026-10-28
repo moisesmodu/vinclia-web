@@ -29,6 +29,11 @@ Además:
 Para niños de 6 a 11 años. No necesitas experiencia ni comprar nada: con un ordenador o una tableta y ganas de jugar,
 basta. Las tres primeras clases son gratuitas: empieza hoy con el juego del robot, en diez minutos.
 
+Soy Moisés Mora y dirijo una academia de programación y robótica para niños en Lleida. Este es el plan que daría a
+cualquier familia que me pregunta por dónde empezar: aprende haciendo, con un profesor de verdad.
+
+**Hecho en Lleida.**
+
 ---
 
 ## c2 · Crea robots con micro:bit y Maqueen para niños y profes
@@ -56,6 +61,11 @@ seguridad. Las fichas de cada sesión se descargan en PDF.
 
 Sin robot también puedes seguirlo: las demostraciones usan el simulador del Maqueen de Numi Tech y MakeCode es gratuito.
 
+Soy Moisés Mora y dirijo una academia de programación y robótica para niños en Lleida. Este curso es el que preparé
+para nuestras extraescolares: aprende haciendo, con un profesor de verdad detrás de cada sesión.
+
+**Hecho en Lleida.**
+
 ---
 
 ## c3 · Ahorra horas con IA y ChatGPT para autónomos y pymes
@@ -80,6 +90,11 @@ Sales con tu **plan de IA en una página** y más de 100 instrucciones descargab
 Claude o Le Chat, en sus planes gratuitos. El curso se actualiza cada trimestre y la fecha de la última revisión está en
 la clase final. La IA redacta; tú decides: para tu caso fiscal o legal concreto, consulta siempre con tu gestoría.
 
+Soy Moisés Mora, autónomo en Lleida como tú: he preparado este curso con las tareas que de verdad nos quitan horas cada
+semana. Aprende haciendo, con un profesor de verdad.
+
+**Hecho en Lleida.**
+
 ---
 
 ## c4 · Bienestar digital en familia: pantallas y redes seguras (gratis)
@@ -99,3 +114,8 @@ años, con lo que de verdad importa:
 Sale del curso Tech Digital de Numi Tech, que trabajan niños de 9 a 12 años en extraescolares, adaptado a casa. Cada
 clase acaba con algo que hacer hoy, en diez minutos, y algunas traen fichas descargables. Sin alarmismo y sin prohibirlo
 todo: con criterio.
+
+Soy Moisés Mora y dirijo una academia de programación y robótica para niños en Lleida: estas son las conversaciones que
+recomiendo a las familias. Aprende haciendo, con un profesor de verdad.
+
+**Hecho en Lleida.**
