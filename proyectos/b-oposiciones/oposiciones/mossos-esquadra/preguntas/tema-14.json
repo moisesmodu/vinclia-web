@@ -1,597 +1,597 @@
 [
-    {
-        "id": "moss-t14-001",
-        "tema": 14,
-        "dificultad": 1,
-        "correcta": 0,
-        "es": {
-            "enunciado": "Según el artículo 137 de la Constitución, el Estado se organiza territorialmente en:",
-            "opciones": [
-                "Municipios, provincias y Comunidades Autónomas",
-                "Municipios, comarcas y Comunidades Autónomas",
-                "Provincias, regiones y nacionalidades",
-                "Municipios, provincias, islas y veguerías"
-            ],
-            "explicacion": "El artículo 137 CE organiza el Estado en municipios, provincias y Comunidades Autónomas, que gozan de autonomía para la gestión de sus respectivos intereses. Comarcas y veguerías son entes previstos por la legislación catalana."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 137 de la Constitució, l'Estat s'organitza territorialment en:",
-            "opciones": [
-                "Municipis, províncies i comunitats autònomes",
-                "Municipis, comarques i comunitats autònomes",
-                "Províncies, regions i nacionalitats",
-                "Municipis, províncies, illes i vegueries"
-            ],
-            "explicacion": "L'article 137 CE organitza l'Estat en municipis, províncies i comunitats autònomes, que gaudeixen d'autonomia per a la gestió dels seus interessos respectius. Les comarques i les vegueries són ens previstos per la legislació catalana."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "137",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a137"
-        },
-        "cita": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan",
-        "origen": "ia"
+  {
+    "id": "moss-t14-001",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 137 de la Constitución, el Estado se organiza territorialmente en:",
+      "opciones": [
+        "Municipios, provincias y Comunidades Autónomas",
+        "Municipios, comarcas y Comunidades Autónomas",
+        "Provincias, regiones y nacionalidades",
+        "Municipios, provincias, islas y veguerías"
+      ],
+      "explicacion": "El artículo 137 CE organiza el Estado en municipios, provincias y Comunidades Autónomas, que gozan de autonomía para la gestión de sus respectivos intereses. Comarcas y veguerías son entes previstos por la legislación catalana."
     },
-    {
-        "id": "moss-t14-002",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 2,
-        "es": {
-            "enunciado": "Según el artículo 141.1 de la Constitución, cualquier alteración de los límites provinciales debe ser aprobada:",
-            "opciones": [
-                "Por el Parlamento de la Comunidad Autónoma afectada mediante ley",
-                "Por el Gobierno mediante real decreto, previo dictamen del Consejo de Estado",
-                "Por las Cortes Generales mediante ley orgánica",
-                "Por las Diputaciones afectadas, con ratificación del Senado"
-            ],
-            "explicacion": "El artículo 141.1 CE reserva a las Cortes Generales, mediante ley orgánica, la alteración de los límites provinciales; por eso el artículo 91.4 del Estatut remite a ese precepto cuando las veguerías la requieran."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 141.1 de la Constitució, qualsevol alteració dels límits provincials ha de ser aprovada:",
-            "opciones": [
-                "Pel parlament de la comunitat autònoma afectada mitjançant llei",
-                "Pel Govern mitjançant reial decret, amb dictamen previ del Consell d'Estat",
-                "Per les Corts Generals mitjançant llei orgànica",
-                "Per les diputacions afectades, amb ratificació del Senat"
-            ],
-            "explicacion": "L'article 141.1 CE reserva a les Corts Generals, mitjançant llei orgànica, l'alteració dels límits provincials; per això l'article 91.4 de l'Estatut remet a aquest precepte quan les vegueries ho requereixin."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "141.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a141"
-        },
-        "cita": "Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica",
-        "origen": "ia"
+    "ca": {
+      "enunciado": "Segons l'article 137 de la Constitució, l'Estat s'organitza territorialment en:",
+      "opciones": [
+        "Municipis, províncies i comunitats autònomes",
+        "Municipis, comarques i comunitats autònomes",
+        "Províncies, regions i nacionalitats",
+        "Municipis, províncies, illes i vegueries"
+      ],
+      "explicacion": "L'article 137 CE organitza l'Estat en municipis, províncies i comunitats autònomes, que gaudeixen d'autonomia per a la gestió dels seus interessos respectius. Les comarques i les vegueries són ens previstos per la legislació catalana."
     },
-    {
-        "id": "moss-t14-003",
-        "tema": 14,
-        "dificultad": 3,
-        "correcta": 1,
-        "es": {
-            "enunciado": "Según el artículo 143 de la Constitución, si la iniciativa del proceso autonómico no prospera, solo podrá reiterarse:",
-            "opciones": [
-                "Pasados dos años",
-                "Pasados cinco años",
-                "Pasados seis meses",
-                "Tras la siguiente renovación de las Cortes Generales"
-            ],
-            "explicacion": "El artículo 143.3 CE impide reiterar la iniciativa autonómica fallida hasta pasados cinco años. Los seis meses son el plazo para cumplir los requisitos de la iniciativa (art. 143.2 CE)."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 143 de la Constitució, si la iniciativa del procés autonòmic no prospera, només es pot reiterar:",
-            "opciones": [
-                "Passats dos anys",
-                "Passats cinc anys",
-                "Passats sis mesos",
-                "Després de la renovació següent de les Corts Generals"
-            ],
-            "explicacion": "L'article 143.3 CE impedeix reiterar la iniciativa autonòmica fallida fins passats cinc anys. Els sis mesos són el termini per complir els requisits de la iniciativa (art. 143.2 CE)."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "143.3",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a143"
-        },
-        "cita": "La iniciativa, en caso de no prosperar, solamente podrá reiterarse pasados cinco años",
-        "origen": "ia"
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "137",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a137"
     },
-    {
-        "id": "moss-t14-004",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 3,
-        "es": {
-            "enunciado": "Según el artículo 1 de la Ley 1/2015, del régimen especial de Arán, Arán es:",
-            "opciones": [
-                "Una comarca de montaña con régimen administrativo especial",
-                "Una veguería singular dentro de la demarcación del Alto Pirineo",
-                "Una provincia histórica con diputación propia",
-                "Una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística"
-            ],
-            "explicacion": "El artículo 1 de la Ley 1/2015 define Arán como una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística, reconocida por el Estatut como entidad territorial singular formada por la agrupación de terçons."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 1 de la Llei 1/2015, del règim especial d'Aran, l'Aran és:",
-            "opciones": [
-                "Una comarca de muntanya amb règim administratiu especial",
-                "Una vegueria singular dins la demarcació de l'Alt Pirineu",
-                "Una província històrica amb diputació pròpia",
-                "Una realitat nacional occitana, dotada d'identitat cultural, històrica, geogràfica i lingüística"
-            ],
-            "explicacion": "L'article 1 de la Llei 1/2015 defineix l'Aran com una realitat nacional occitana, dotada d'identitat cultural, històrica, geogràfica i lingüística, reconeguda per l'Estatut com a entitat territorial singular formada per l'agrupació de terçons."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-2015-2294",
-            "norma": "Ley 1/2015, de 5 de febrero, del régimen especial de Arán",
-            "articulo": "1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-2294#a1"
-        },
-        "cita": "Arán es una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística",
-        "origen": "ia"
+    "cita": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-002",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 141.1 de la Constitución, cualquier alteración de los límites provinciales debe ser aprobada:",
+      "opciones": [
+        "Por el Parlamento de la Comunidad Autónoma afectada mediante ley",
+        "Por el Gobierno mediante real decreto, previo dictamen del Consejo de Estado",
+        "Por las Cortes Generales mediante ley orgánica",
+        "Por las Diputaciones afectadas, con ratificación del Senado"
+      ],
+      "explicacion": "El artículo 141.1 CE reserva a las Cortes Generales, mediante ley orgánica, la alteración de los límites provinciales; por eso el artículo 91.4 del Estatut remite a ese precepto cuando las veguerías la requieran."
     },
-    {
-        "id": "moss-t14-005",
-        "tema": 14,
-        "dificultad": 3,
-        "correcta": 0,
-        "es": {
-            "enunciado": "Según el artículo 150.3 de la Constitución, la necesidad de dictar leyes de armonización de las disposiciones normativas de las Comunidades Autónomas la aprecian:",
-            "opciones": [
-                "Las Cortes Generales, por mayoría absoluta de cada Cámara",
-                "El Gobierno, previo dictamen del Consejo de Estado",
-                "El Congreso de los Diputados, por mayoría de tres quintos",
-                "El Tribunal Constitucional, a instancia del Gobierno"
-            ],
-            "explicacion": "El artículo 150.3 CE permite al Estado dictar leyes de armonización cuando lo exija el interés general, y atribuye a las Cortes Generales, por mayoría absoluta de cada Cámara, la apreciación de esa necesidad."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 150.3 de la Constitució, la necessitat de dictar lleis d'harmonització de les disposicions normatives de les comunitats autònomes l'aprecien:",
-            "opciones": [
-                "Les Corts Generals, per majoria absoluta de cada cambra",
-                "El Govern, amb dictamen previ del Consell d'Estat",
-                "El Congrés dels Diputats, per majoria de tres cinquenes parts",
-                "El Tribunal Constitucional, a instància del Govern"
-            ],
-            "explicacion": "L'article 150.3 CE permet a l'Estat dictar lleis d'harmonització quan ho exigeixi l'interès general, i atribueix a les Corts Generals, per majoria absoluta de cada cambra, l'apreciació d'aquesta necessitat."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "150.3",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a150"
-        },
-        "cita": "Corresponde a las Cortes Generales, por mayoría absoluta de cada Cámara, la apreciación de esta necesidad",
-        "origen": "ia"
+    "ca": {
+      "enunciado": "Segons l'article 141.1 de la Constitució, qualsevol alteració dels límits provincials ha de ser aprovada:",
+      "opciones": [
+        "Pel parlament de la comunitat autònoma afectada mitjançant llei",
+        "Pel Govern mitjançant reial decret, amb dictamen previ del Consell d'Estat",
+        "Per les Corts Generals mitjançant llei orgànica",
+        "Per les diputacions afectades, amb ratificació del Senat"
+      ],
+      "explicacion": "L'article 141.1 CE reserva a les Corts Generals, mitjançant llei orgànica, l'alteració dels límits provincials; per això l'article 91.4 de l'Estatut remet a aquest precepte quan les vegueries ho requereixin."
     },
-    {
-        "id": "moss-t14-006",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 3,
-        "es": {
-            "enunciado": "Según el artículo 153 de la Constitución, el control económico y presupuestario de la actividad de los órganos de las Comunidades Autónomas lo ejerce:",
-            "opciones": [
-                "El Tribunal Constitucional",
-                "La jurisdicción contencioso-administrativa",
-                "El Gobierno, previo dictamen del Consejo de Estado",
-                "El Tribunal de Cuentas"
-            ],
-            "explicacion": "El artículo 153 CE reparte el control: el TC, el de las normas con fuerza de ley; el Gobierno, el de las funciones delegadas; la jurisdicción contencioso-administrativa, el de la administración autónoma y sus reglamentos; y el Tribunal de Cuentas, el económico y presupuestario."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 153 de la Constitució, el control econòmic i pressupostari de l'activitat dels òrgans de les comunitats autònomes l'exerceix:",
-            "opciones": [
-                "El Tribunal Constitucional",
-                "La jurisdicció contenciosa administrativa",
-                "El Govern, amb dictamen previ del Consell d'Estat",
-                "El Tribunal de Comptes"
-            ],
-            "explicacion": "L'article 153 CE reparteix el control: el TC, el de les normes amb força de llei; el Govern, el de les funcions delegades; la jurisdicció contenciosa administrativa, el de l'administració autònoma i els seus reglaments; i el Tribunal de Comptes, l'econòmic i pressupostari."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "153",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a153"
-        },
-        "cita": "Por el Tribunal de Cuentas, el económico y presupuestario",
-        "origen": "ia"
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "141.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a141"
     },
-    {
-        "id": "moss-t14-007",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 1,
-        "es": {
-            "enunciado": "Según el artículo 155.1 de la Constitución, para adoptar medidas que obliguen a una Comunidad Autónoma al cumplimiento forzoso de sus obligaciones, el Gobierno necesita, si su requerimiento previo no es atendido:",
-            "opciones": [
-                "La autorización del Congreso de los Diputados por mayoría absoluta",
-                "La aprobación por mayoría absoluta del Senado",
-                "El dictamen favorable del Tribunal Constitucional",
-                "La declaración previa del estado de excepción"
-            ],
-            "explicacion": "El artículo 155.1 CE exige requerimiento previo al Presidente de la Comunidad Autónoma y, si no es atendido, la aprobación por mayoría absoluta del Senado, la Cámara de representación territorial."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 155.1 de la Constitució, per adoptar mesures que obliguin una comunitat autònoma al compliment forçós de les seves obligacions, el Govern necessita, si el seu requeriment previ no és atès:",
-            "opciones": [
-                "L'autorització del Congrés dels Diputats per majoria absoluta",
-                "L'aprovació per majoria absoluta del Senat",
-                "El dictamen favorable del Tribunal Constitucional",
-                "La declaració prèvia de l'estat d'excepció"
-            ],
-            "explicacion": "L'article 155.1 CE exigeix requeriment previ al president de la comunitat autònoma i, si no és atès, l'aprovació per majoria absoluta del Senat, la cambra de representació territorial."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1978-31229",
-            "norma": "Constitución Española",
-            "articulo": "155.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a155"
-        },
-        "cita": "el Gobierno, previo requerimiento al Presidente de la Comunidad Autónoma y, en el caso de no ser atendido, con la aprobación por mayoría absoluta del Senado",
-        "origen": "ia"
+    "cita": "Cualquier alteración de los límites provinciales habrá de ser aprobada por las Cortes Generales mediante ley orgánica",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-003",
+    "tema": 14,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 143 de la Constitución, si la iniciativa del proceso autonómico no prospera, solo podrá reiterarse:",
+      "opciones": [
+        "Pasados dos años",
+        "Pasados cinco años",
+        "Pasados seis meses",
+        "Tras la siguiente renovación de las Cortes Generales"
+      ],
+      "explicacion": "El artículo 143.3 CE impide reiterar la iniciativa autonómica fallida hasta pasados cinco años. Los seis meses son el plazo para cumplir los requisitos de la iniciativa (art. 143.2 CE)."
     },
-    {
-        "id": "moss-t14-008",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 2,
-        "es": {
-            "enunciado": "Según el artículo 3.1 de la Ley 7/1985, Reguladora de las Bases del Régimen Local, son Entidades Locales territoriales:",
-            "opciones": [
-                "El Municipio, la Comarca y la Provincia",
-                "El Municipio, la Provincia y las Áreas Metropolitanas",
-                "El Municipio, la Provincia y la Isla en los archipiélagos balear y canario",
-                "El Municipio, las Mancomunidades y la Provincia"
-            ],
-            "explicacion": "El artículo 3.1 LBRL considera territoriales el Municipio, la Provincia y la Isla en los archipiélagos. Comarcas, Áreas Metropolitanas y Mancomunidades son también Entidades Locales, pero no territoriales (art. 3.2 LBRL)."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 3.1 de la Llei 7/1985, reguladora de les bases del règim local, són ens locals territorials:",
-            "opciones": [
-                "El municipi, la comarca i la província",
-                "El municipi, la província i les àrees metropolitanes",
-                "El municipi, la província i l'illa als arxipèlags balear i canari",
-                "El municipi, les mancomunitats i la província"
-            ],
-            "explicacion": "L'article 3.1 LBRL considera territorials el municipi, la província i l'illa als arxipèlags. Les comarques, les àrees metropolitanes i les mancomunitats també són ens locals, però no territorials (art. 3.2 LBRL)."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "3.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a3"
-        },
-        "cita": "Son Entidades Locales territoriales: a) El Municipio. b) La Provincia. c) La Isla en los archipiélagos balear y canario",
-        "origen": "ia"
+    "ca": {
+      "enunciado": "Segons l'article 143 de la Constitució, si la iniciativa del procés autonòmic no prospera, només es pot reiterar:",
+      "opciones": [
+        "Passats dos anys",
+        "Passats cinc anys",
+        "Passats sis mesos",
+        "Després de la renovació següent de les Corts Generals"
+      ],
+      "explicacion": "L'article 143.3 CE impedeix reiterar la iniciativa autonòmica fallida fins passats cinc anys. Els sis mesos són el termini per complir els requisits de la iniciativa (art. 143.2 CE)."
     },
-    {
-        "id": "moss-t14-009",
-        "tema": 14,
-        "dificultad": 1,
-        "correcta": 0,
-        "es": {
-            "enunciado": "Según el artículo 11.2 de la Ley Reguladora de las Bases del Régimen Local, son elementos del Municipio:",
-            "opciones": [
-                "El territorio, la población y la organización",
-                "El término municipal, el padrón y el Pleno",
-                "El territorio, el Alcalde y los Concejales",
-                "La población, el presupuesto y las ordenanzas"
-            ],
-            "explicacion": "El artículo 11.2 LBRL enumera como elementos del Municipio el territorio, la población y la organización."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 11.2 de la Llei reguladora de les bases del règim local, són elements del municipi:",
-            "opciones": [
-                "El territori, la població i l'organització",
-                "El terme municipal, el padró i el Ple",
-                "El territori, l'alcalde i els regidors",
-                "La població, el pressupost i les ordenances"
-            ],
-            "explicacion": "L'article 11.2 LBRL enumera com a elements del municipi el territori, la població i l'organització."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "11.2",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a11"
-        },
-        "cita": "Son elementos del Municipio el territorio, la población y la organización",
-        "origen": "ia"
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "143.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a143"
     },
-    {
-        "id": "moss-t14-010",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 3,
-        "es": {
-            "enunciado": "Según el artículo 13.2 de la Ley Reguladora de las Bases del Régimen Local, la creación de nuevos municipios solo puede realizarse sobre la base de núcleos de población territorialmente diferenciados de al menos:",
-            "opciones": [
-                "1.000 habitantes",
-                "2.000 habitantes",
-                "5.000 habitantes",
-                "4.000 habitantes"
-            ],
-            "explicacion": "El artículo 13.2 LBRL exige núcleos territorialmente diferenciados de al menos 4.000 habitantes y que los municipios resultantes sean financieramente sostenibles. Los 5.000 habitantes son el umbral de otros servicios y órganos municipales."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 13.2 de la Llei reguladora de les bases del règim local, la creació de municipis nous només es pot fer sobre la base de nuclis de població territorialment diferenciats d'almenys:",
-            "opciones": [
-                "1.000 habitants",
-                "2.000 habitants",
-                "5.000 habitants",
-                "4.000 habitants"
-            ],
-            "explicacion": "L'article 13.2 LBRL exigeix nuclis territorialment diferenciats d'almenys 4.000 habitants i que els municipis resultants siguin financerament sostenibles. Els 5.000 habitants són el llindar d'altres serveis i òrgans municipals."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "13.2",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a13"
-        },
-        "cita": "La creación de nuevos municipios solo podrá realizarse sobre la base de núcleos de población territorialmente diferenciados, de al menos 4.000 habitantes",
-        "origen": "ia"
+    "cita": "La iniciativa, en caso de no prosperar, solamente podrá reiterarse pasados cinco años",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-004",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 1 de la Ley 1/2015, del régimen especial de Arán, Arán es:",
+      "opciones": [
+        "Una comarca de montaña con régimen administrativo especial",
+        "Una veguería singular dentro de la demarcación del Alto Pirineo",
+        "Una provincia histórica con diputación propia",
+        "Una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística"
+      ],
+      "explicacion": "El artículo 1 de la Ley 1/2015 define Arán como una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística, reconocida por el Estatut como entidad territorial singular formada por la agrupación de terçons."
     },
-    {
-        "id": "moss-t14-011",
-        "tema": 14,
-        "dificultad": 1,
-        "correcta": 2,
-        "es": {
-            "enunciado": "Según el artículo 21.1 de la Ley Reguladora de las Bases del Régimen Local, la jefatura de la Policía Municipal corresponde:",
-            "opciones": [
-                "Al Pleno del ayuntamiento",
-                "Al Delegado del Gobierno",
-                "Al Alcalde",
-                "A la Junta de Gobierno Local"
-            ],
-            "explicacion": "El artículo 21.1.i) LBRL atribuye al Alcalde, presidente de la Corporación, la jefatura de la Policía Municipal."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 21.1 de la Llei reguladora de les bases del règim local, la direcció de la Policia Municipal correspon:",
-            "opciones": [
-                "Al Ple de l'ajuntament",
-                "Al delegat del Govern",
-                "A l'alcalde",
-                "A la Junta de Govern Local"
-            ],
-            "explicacion": "L'article 21.1.i) LBRL atribueix a l'alcalde, president de la corporació, la direcció de la Policia Municipal."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "21.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a21"
-        },
-        "cita": "Ejercer la jefatura de la Policía Municipal",
-        "origen": "ia"
+    "ca": {
+      "enunciado": "Segons l'article 1 de la Llei 1/2015, del règim especial d'Aran, l'Aran és:",
+      "opciones": [
+        "Una comarca de muntanya amb règim administratiu especial",
+        "Una vegueria singular dins la demarcació de l'Alt Pirineu",
+        "Una província històrica amb diputació pròpia",
+        "Una realitat nacional occitana, dotada d'identitat cultural, històrica, geogràfica i lingüística"
+      ],
+      "explicacion": "L'article 1 de la Llei 1/2015 defineix l'Aran com una realitat nacional occitana, dotada d'identitat cultural, històrica, geogràfica i lingüística, reconeguda per l'Estatut com a entitat territorial singular formada per l'agrupació de terçons."
     },
-    {
-        "id": "moss-t14-012",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 1,
-        "es": {
-            "enunciado": "Según el artículo 20.1 de la Ley Reguladora de las Bases del Régimen Local, la Junta de Gobierno Local existe en todos los municipios con población superior a:",
-            "opciones": [
-                "1.000 habitantes",
-                "5.000 habitantes",
-                "20.000 habitantes",
-                "50.000 habitantes"
-            ],
-            "explicacion": "El artículo 20.1.b) LBRL exige la Junta de Gobierno Local en los municipios de más de 5.000 habitantes y en los de menos cuando lo disponga su reglamento orgánico o lo acuerde el Pleno. Alcalde, Tenientes de Alcalde y Pleno existen en todos los ayuntamientos."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 20.1 de la Llei reguladora de les bases del règim local, la Junta de Govern Local existeix en tots els municipis amb població superior a:",
-            "opciones": [
-                "1.000 habitants",
-                "5.000 habitants",
-                "20.000 habitants",
-                "50.000 habitants"
-            ],
-            "explicacion": "L'article 20.1.b) LBRL exigeix la Junta de Govern Local als municipis de més de 5.000 habitants i als de menys quan ho disposi el seu reglament orgànic o ho acordi el Ple. L'alcalde, els tinents d'alcalde i el Ple existeixen a tots els ajuntaments."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "20.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a20"
-        },
-        "cita": "La Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes",
-        "origen": "ia"
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-2294",
+      "norma": "Ley 1/2015, de 5 de febrero, del régimen especial de Arán",
+      "articulo": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-2294#a1"
     },
-    {
-        "id": "moss-t14-013",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 0,
-        "es": {
-            "enunciado": "Según el artículo 26.1 de la Ley Reguladora de las Bases del Régimen Local, la protección civil y la prevención y extinción de incendios son servicios obligatorios en los municipios con población superior a:",
-            "opciones": [
-                "20.000 habitantes",
-                "5.000 habitantes",
-                "50.000 habitantes",
-                "100.000 habitantes"
-            ],
-            "explicacion": "El artículo 26.1.c) LBRL impone a los municipios de más de 20.000 habitantes, entre otros, protección civil y prevención y extinción de incendios. A partir de 50.000 se añaden el transporte colectivo urbano y el medio ambiente urbano."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 26.1 de la Llei reguladora de les bases del règim local, la protecció civil i la prevenció i extinció d'incendis són serveis obligatoris als municipis amb població superior a:",
-            "opciones": [
-                "20.000 habitants",
-                "5.000 habitants",
-                "50.000 habitants",
-                "100.000 habitants"
-            ],
-            "explicacion": "L'article 26.1.c) LBRL imposa als municipis de més de 20.000 habitants, entre d'altres, la protecció civil i la prevenció i extinció d'incendis. A partir de 50.000 s'hi afegeixen el transport col·lectiu urbà i el medi ambient urbà."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-1985-5392",
-            "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
-            "articulo": "26.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a26"
-        },
-        "cita": "En los Municipios con población superior a 20.000 habitantes, además: protección civil",
-        "origen": "ia"
+    "cita": "Arán es una realidad nacional occitana, dotada de identidad cultural, histórica, geográfica y lingüística",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-005",
+    "tema": 14,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 150.3 de la Constitución, la necesidad de dictar leyes de armonización de las disposiciones normativas de las Comunidades Autónomas la aprecian:",
+      "opciones": [
+        "Las Cortes Generales, por mayoría absoluta de cada Cámara",
+        "El Gobierno, previo dictamen del Consejo de Estado",
+        "El Congreso de los Diputados, por mayoría de tres quintos",
+        "El Tribunal Constitucional, a instancia del Gobierno"
+      ],
+      "explicacion": "El artículo 150.3 CE permite al Estado dictar leyes de armonización cuando lo exija el interés general, y atribuye a las Cortes Generales, por mayoría absoluta de cada Cámara, la apreciación de esa necesidad."
     },
-    {
-        "id": "moss-t14-014",
-        "tema": 14,
-        "dificultad": 1,
-        "correcta": 3,
-        "es": {
-            "enunciado": "Según el artículo 83.1 del Estatuto de Autonomía de Cataluña, Cataluña estructura su organización territorial básica en:",
-            "opciones": [
-                "Municipios y comarcas",
-                "Comarcas y provincias",
-                "Municipios, comarcas y provincias",
-                "Municipios y veguerías"
-            ],
-            "explicacion": "El artículo 83.1 EAC estructura la organización territorial básica de Cataluña en municipios y veguerías; las comarcas constituyen el ámbito supramunicipal (art. 83.2 EAC)."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 83.1 de l'Estatut d'autonomia de Catalunya, Catalunya estructura la seva organització territorial bàsica en:",
-            "opciones": [
-                "Municipis i comarques",
-                "Comarques i províncies",
-                "Municipis, comarques i províncies",
-                "Municipis i vegueries"
-            ],
-            "explicacion": "L'article 83.1 EAC estructura l'organització territorial bàsica de Catalunya en municipis i vegueries; les comarques constitueixen l'àmbit supramunicipal (art. 83.2 EAC)."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-2006-13087",
-            "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
-            "articulo": "83.1",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a83"
-        },
-        "cita": "Cataluña estructura su organización territorial básica en municipios y veguerías",
-        "origen": "ia"
+    "ca": {
+      "enunciado": "Segons l'article 150.3 de la Constitució, la necessitat de dictar lleis d'harmonització de les disposicions normatives de les comunitats autònomes l'aprecien:",
+      "opciones": [
+        "Les Corts Generals, per majoria absoluta de cada cambra",
+        "El Govern, amb dictamen previ del Consell d'Estat",
+        "El Congrés dels Diputats, per majoria de tres cinquenes parts",
+        "El Tribunal Constitucional, a instància del Govern"
+      ],
+      "explicacion": "L'article 150.3 CE permet a l'Estat dictar lleis d'harmonització quan ho exigeixi l'interès general, i atribueix a les Corts Generals, per majoria absoluta de cada cambra, l'apreciació d'aquesta necessitat."
     },
-    {
-        "id": "moss-t14-015",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 2,
-        "es": {
-            "enunciado": "Según el artículo 91 del Estatuto de Autonomía de Cataluña, los Consejos de veguería:",
-            "opciones": [
-                "Sustituyen a los Consejos comarcales",
-                "Son órganos desconcentrados del Departamento de la Presidencia",
-                "Sustituyen a las Diputaciones",
-                "Están formados por los alcaldes de la veguería"
-            ],
-            "explicacion": "El artículo 91.3 EAC dispone que los Consejos de veguería sustituyen a las Diputaciones y el 91.1 los forma con el Presidente y los Consejeros de veguería. La STC 31/2010 (FJ 41) solo lo declara constitucional interpretado de modo que se respete la garantía constitucional de la provincia (arts. 137 y 141 CE), por lo que las Diputaciones provinciales no desaparecen por el mero hecho de esta previsión estatutaria."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 91 de l'Estatut d'autonomia de Catalunya, els consells de vegueria:",
-            "opciones": [
-                "Substitueixen els consells comarcals",
-                "Són òrgans desconcentrats del Departament de la Presidència",
-                "Substitueixen les diputacions",
-                "Estan formats pels alcaldes de la vegueria"
-            ],
-            "explicacion": "L'article 91.3 EAC disposa que els consells de vegueria substitueixen les diputacions i el 91.1 els forma amb el president i els consellers de vegueria. La STC 31/2010 (FJ 41) només el declara constitucional interpretat de manera que es respecti la garantia constitucional de la província (arts. 137 i 141 CE), per la qual cosa les diputacions provincials no desapareixen pel simple fet d'aquesta previsió estatutària."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-2006-13087",
-            "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
-            "articulo": "91.3",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a91"
-        },
-        "cita": "Los Consejos de veguería sustituyen a las Diputaciones",
-        "origen": "ia"
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "150.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a150"
     },
-    {
-        "id": "moss-t14-016",
-        "tema": 14,
-        "dificultad": 3,
-        "correcta": 1,
-        "es": {
-            "enunciado": "Según el artículo 9 de la Ley 30/2010, de veguerías, los municipios de la comarca de El Garraf pertenecen a la demarcación veguerial de:",
-            "opciones": [
-                "Barcelona",
-                "El Penedès",
-                "El Camp de Tarragona",
-                "La Cataluña Central"
-            ],
-            "explicacion": "El artículo 9.h) de la Ley 30/2010, añadido en 2017, integra en la demarcación de El Penedès las comarcas de L’Alt Penedès, El Baix Penedès, El Garraf y L’Anoia (salvo los ocho municipios de la Alta Anoia, que van a la Cataluña Central)."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 9 de la Llei 30/2010, de vegueries, els municipis de la comarca del Garraf pertanyen a la demarcació vegueril de:",
-            "opciones": [
-                "Barcelona",
-                "El Penedès",
-                "El Camp de Tarragona",
-                "La Catalunya Central"
-            ],
-            "explicacion": "L'article 9.h) de la Llei 30/2010, afegit el 2017, integra a la demarcació del Penedès les comarques de l'Alt Penedès, el Baix Penedès, el Garraf i l'Anoia (llevat dels vuit municipis de l'Alta Anoia, que van a la Catalunya Central)."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-2010-14561",
-            "norma": "Ley 30/2010, de 3 de agosto, de veguerías",
-            "articulo": "9",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-14561#a9"
-        },
-        "cita": "La demarcación veguerial de El Penedès comprende los municipios correspondientes a las comarcas de L’Alt Penedès, El Baix Penedès, El Garraf y L’Anoia",
-        "origen": "ia"
+    "cita": "Corresponde a las Cortes Generales, por mayoría absoluta de cada Cámara, la apreciación de esta necesidad",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-006",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 153 de la Constitución, el control económico y presupuestario de la actividad de los órganos de las Comunidades Autónomas lo ejerce:",
+      "opciones": [
+        "El Tribunal Constitucional",
+        "La jurisdicción contencioso-administrativa",
+        "El Gobierno, previo dictamen del Consejo de Estado",
+        "El Tribunal de Cuentas"
+      ],
+      "explicacion": "El artículo 153 CE reparte el control: el TC, el de las normas con fuerza de ley; el Gobierno, el de las funciones delegadas; la jurisdicción contencioso-administrativa, el de la administración autónoma y sus reglamentos; y el Tribunal de Cuentas, el económico y presupuestario."
     },
-    {
-        "id": "moss-t14-017",
-        "tema": 14,
-        "dificultad": 2,
-        "correcta": 3,
-        "es": {
-            "enunciado": "Según el artículo 94.2 del Estatuto de Autonomía de Cataluña, la más alta representación y la ordinaria de la Generalitat en Arán corresponde:",
-            "opciones": [
-                "Al Delegado territorial del Gobierno en el Alto Pirineo y Arán",
-                "Al Plen des Conselhèrs e Conselhères Generaus",
-                "A la Comission d'Auditors de Compdes",
-                "Al Síndic o Síndica"
-            ],
-            "explicacion": "El artículo 94.2 EAC configura el Conselh Generau (Síndic, Plen des Conselhèrs e Conselhères Generaus y Comission d'Auditors de Compdes) como institución de gobierno de Arán, y atribuye al Síndic la más alta representación y la ordinaria de la Generalitat en Arán."
-        },
-        "ca": {
-            "enunciado": "Segons l'article 94.2 de l'Estatut d'autonomia de Catalunya, la més alta representació i l'ordinària de la Generalitat a l'Aran correspon:",
-            "opciones": [
-                "Al delegat territorial del Govern a l'Alt Pirineu i Aran",
-                "Al Plen des Conselhèrs e Conselhères Generaus",
-                "A la Comission d'Auditors de Compdes",
-                "Al síndic o síndica"
-            ],
-            "explicacion": "L'article 94.2 EAC configura el Conselh Generau (síndic, Plen des Conselhèrs e Conselhères Generaus i Comission d'Auditors de Compdes) com a institució de govern de l'Aran, i atribueix al síndic la més alta representació i l'ordinària de la Generalitat a l'Aran."
-        },
-        "fuente": {
-            "tipo": "boe",
-            "id": "BOE-A-2006-13087",
-            "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
-            "articulo": "94.2",
-            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a94"
-        },
-        "cita": "El Síndico o Síndica es la más alta representación y la ordinaria de la Generalitat en Arán",
-        "origen": "ia"
-    }
+    "ca": {
+      "enunciado": "Segons l'article 153 de la Constitució, el control econòmic i pressupostari de l'activitat dels òrgans de les comunitats autònomes l'exerceix:",
+      "opciones": [
+        "El Tribunal Constitucional",
+        "La jurisdicció contenciosa administrativa",
+        "El Govern, amb dictamen previ del Consell d'Estat",
+        "El Tribunal de Comptes"
+      ],
+      "explicacion": "L'article 153 CE reparteix el control: el TC, el de les normes amb força de llei; el Govern, el de les funcions delegades; la jurisdicció contenciosa administrativa, el de l'administració autònoma i els seus reglaments; i el Tribunal de Comptes, l'econòmic i pressupostari."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "153",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a153"
+    },
+    "cita": "Por el Tribunal de Cuentas, el económico y presupuestario",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-007",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 155.1 de la Constitución, para adoptar medidas que obliguen a una Comunidad Autónoma al cumplimiento forzoso de sus obligaciones, el Gobierno necesita, si su requerimiento previo no es atendido:",
+      "opciones": [
+        "La autorización del Congreso de los Diputados por mayoría absoluta",
+        "La aprobación por mayoría absoluta del Senado",
+        "El dictamen favorable del Tribunal Constitucional",
+        "La declaración previa del estado de excepción"
+      ],
+      "explicacion": "El artículo 155.1 CE exige requerimiento previo al Presidente de la Comunidad Autónoma y, si no es atendido, la aprobación por mayoría absoluta del Senado, la Cámara de representación territorial."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 155.1 de la Constitució, per adoptar mesures que obliguin una comunitat autònoma al compliment forçós de les seves obligacions, el Govern necessita, si el seu requeriment previ no és atès:",
+      "opciones": [
+        "L'autorització del Congrés dels Diputats per majoria absoluta",
+        "L'aprovació per majoria absoluta del Senat",
+        "El dictamen favorable del Tribunal Constitucional",
+        "La declaració prèvia de l'estat d'excepció"
+      ],
+      "explicacion": "L'article 155.1 CE exigeix requeriment previ al president de la comunitat autònoma i, si no és atès, l'aprovació per majoria absoluta del Senat, la cambra de representació territorial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española",
+      "articulo": "155.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a155"
+    },
+    "cita": "el Gobierno, previo requerimiento al Presidente de la Comunidad Autónoma y, en el caso de no ser atendido, con la aprobación por mayoría absoluta del Senado",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-008",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 3.1 de la Ley 7/1985, Reguladora de las Bases del Régimen Local, son Entidades Locales territoriales:",
+      "opciones": [
+        "El Municipio, la Comarca y la Provincia",
+        "El Municipio, la Provincia y las Áreas Metropolitanas",
+        "El Municipio, la Provincia y la Isla en los archipiélagos balear y canario",
+        "El Municipio, las Mancomunidades y la Provincia"
+      ],
+      "explicacion": "El artículo 3.1 LBRL considera territoriales el Municipio, la Provincia y la Isla en los archipiélagos. Comarcas, Áreas Metropolitanas y Mancomunidades son también Entidades Locales, pero no territoriales (art. 3.2 LBRL)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 3.1 de la Llei 7/1985, reguladora de les bases del règim local, són ens locals territorials:",
+      "opciones": [
+        "El municipi, la comarca i la província",
+        "El municipi, la província i les àrees metropolitanes",
+        "El municipi, la província i l'illa als arxipèlags balear i canari",
+        "El municipi, les mancomunitats i la província"
+      ],
+      "explicacion": "L'article 3.1 LBRL considera territorials el municipi, la província i l'illa als arxipèlags. Les comarques, les àrees metropolitanes i les mancomunitats també són ens locals, però no territorials (art. 3.2 LBRL)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a3"
+    },
+    "cita": "Son Entidades Locales territoriales: a) El Municipio. b) La Provincia. c) La Isla en los archipiélagos balear y canario",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-009",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 11.2 de la Ley Reguladora de las Bases del Régimen Local, son elementos del Municipio:",
+      "opciones": [
+        "El territorio, la población y la organización",
+        "El término municipal, el padrón y el Pleno",
+        "El territorio, el Alcalde y los Concejales",
+        "La población, el presupuesto y las ordenanzas"
+      ],
+      "explicacion": "El artículo 11.2 LBRL enumera como elementos del Municipio el territorio, la población y la organización."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 11.2 de la Llei reguladora de les bases del règim local, són elements del municipi:",
+      "opciones": [
+        "El territori, la població i l'organització",
+        "El terme municipal, el padró i el Ple",
+        "El territori, l'alcalde i els regidors",
+        "La població, el pressupost i les ordenances"
+      ],
+      "explicacion": "L'article 11.2 LBRL enumera com a elements del municipi el territori, la població i l'organització."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "11.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a11"
+    },
+    "cita": "Son elementos del Municipio el territorio, la población y la organización",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-010",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 13.2 de la Ley Reguladora de las Bases del Régimen Local, la creación de nuevos municipios solo puede realizarse sobre la base de núcleos de población territorialmente diferenciados de al menos:",
+      "opciones": [
+        "1.000 habitantes",
+        "2.000 habitantes",
+        "5.000 habitantes",
+        "4.000 habitantes"
+      ],
+      "explicacion": "El artículo 13.2 LBRL exige núcleos territorialmente diferenciados de al menos 4.000 habitantes y que los municipios resultantes sean financieramente sostenibles. Los 5.000 habitantes son el umbral de otros servicios y órganos municipales."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13.2 de la Llei reguladora de les bases del règim local, la creació de municipis nous només es pot fer sobre la base de nuclis de població territorialment diferenciats d'almenys:",
+      "opciones": [
+        "1.000 habitants",
+        "2.000 habitants",
+        "5.000 habitants",
+        "4.000 habitants"
+      ],
+      "explicacion": "L'article 13.2 LBRL exigeix nuclis territorialment diferenciats d'almenys 4.000 habitants i que els municipis resultants siguin financerament sostenibles. Els 5.000 habitants són el llindar d'altres serveis i òrgans municipals."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "13.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a13"
+    },
+    "cita": "La creación de nuevos municipios solo podrá realizarse sobre la base de núcleos de población territorialmente diferenciados, de al menos 4.000 habitantes",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-011",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 21.1 de la Ley Reguladora de las Bases del Régimen Local, la jefatura de la Policía Municipal corresponde:",
+      "opciones": [
+        "Al Pleno del ayuntamiento",
+        "Al Delegado del Gobierno",
+        "Al Alcalde",
+        "A la Junta de Gobierno Local"
+      ],
+      "explicacion": "El artículo 21.1.i) LBRL atribuye al Alcalde, presidente de la Corporación, la jefatura de la Policía Municipal."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21.1 de la Llei reguladora de les bases del règim local, la direcció de la Policia Municipal correspon:",
+      "opciones": [
+        "Al Ple de l'ajuntament",
+        "Al delegat del Govern",
+        "A l'alcalde",
+        "A la Junta de Govern Local"
+      ],
+      "explicacion": "L'article 21.1.i) LBRL atribueix a l'alcalde, president de la corporació, la direcció de la Policia Municipal."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a21"
+    },
+    "cita": "Ejercer la jefatura de la Policía Municipal",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-012",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 20.1 de la Ley Reguladora de las Bases del Régimen Local, la Junta de Gobierno Local existe en todos los municipios con población superior a:",
+      "opciones": [
+        "1.000 habitantes",
+        "5.000 habitantes",
+        "20.000 habitantes",
+        "50.000 habitantes"
+      ],
+      "explicacion": "El artículo 20.1.b) LBRL exige la Junta de Gobierno Local en los municipios de más de 5.000 habitantes y en los de menos cuando lo disponga su reglamento orgánico o lo acuerde el Pleno. Alcalde, Tenientes de Alcalde y Pleno existen en todos los ayuntamientos."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 20.1 de la Llei reguladora de les bases del règim local, la Junta de Govern Local existeix en tots els municipis amb població superior a:",
+      "opciones": [
+        "1.000 habitants",
+        "5.000 habitants",
+        "20.000 habitants",
+        "50.000 habitants"
+      ],
+      "explicacion": "L'article 20.1.b) LBRL exigeix la Junta de Govern Local als municipis de més de 5.000 habitants i als de menys quan ho disposi el seu reglament orgànic o ho acordi el Ple. L'alcalde, els tinents d'alcalde i el Ple existeixen a tots els ajuntaments."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "20.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a20"
+    },
+    "cita": "La Junta de Gobierno Local existe en todos los municipios con población superior a 5.000 habitantes",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-013",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 26.1 de la Ley Reguladora de las Bases del Régimen Local, la protección civil y la prevención y extinción de incendios son servicios obligatorios en los municipios con población superior a:",
+      "opciones": [
+        "20.000 habitantes",
+        "5.000 habitantes",
+        "50.000 habitantes",
+        "100.000 habitantes"
+      ],
+      "explicacion": "El artículo 26.1.c) LBRL impone a los municipios de más de 20.000 habitantes, entre otros, protección civil y prevención y extinción de incendios. A partir de 50.000 se añaden el transporte colectivo urbano y el medio ambiente urbano."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 26.1 de la Llei reguladora de les bases del règim local, la protecció civil i la prevenció i extinció d'incendis són serveis obligatoris als municipis amb població superior a:",
+      "opciones": [
+        "20.000 habitants",
+        "5.000 habitants",
+        "50.000 habitants",
+        "100.000 habitants"
+      ],
+      "explicacion": "L'article 26.1.c) LBRL imposa als municipis de més de 20.000 habitants, entre d'altres, la protecció civil i la prevenció i extinció d'incendis. A partir de 50.000 s'hi afegeixen el transport col·lectiu urbà i el medi ambient urbà."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "26.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a26"
+    },
+    "cita": "En los Municipios con población superior a 20.000 habitantes, además: protección civil",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-014",
+    "tema": 14,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 83.1 del Estatuto de Autonomía de Cataluña, Cataluña estructura su organización territorial básica en:",
+      "opciones": [
+        "Municipios y comarcas",
+        "Comarcas y provincias",
+        "Municipios, comarcas y provincias",
+        "Municipios y veguerías"
+      ],
+      "explicacion": "El artículo 83.1 EAC estructura la organización territorial básica de Cataluña en municipios y veguerías; las comarcas constituyen el ámbito supramunicipal (art. 83.2 EAC)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 83.1 de l'Estatut d'autonomia de Catalunya, Catalunya estructura la seva organització territorial bàsica en:",
+      "opciones": [
+        "Municipis i comarques",
+        "Comarques i províncies",
+        "Municipis, comarques i províncies",
+        "Municipis i vegueries"
+      ],
+      "explicacion": "L'article 83.1 EAC estructura l'organització territorial bàsica de Catalunya en municipis i vegueries; les comarques constitueixen l'àmbit supramunicipal (art. 83.2 EAC)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "83.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a83"
+    },
+    "cita": "Cataluña estructura su organización territorial básica en municipios y veguerías",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-015",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 91 del Estatuto de Autonomía de Cataluña, los Consejos de veguería:",
+      "opciones": [
+        "Sustituyen a los Consejos comarcales",
+        "Son órganos desconcentrados del Departamento de la Presidencia",
+        "Sustituyen a las Diputaciones",
+        "Están formados por los alcaldes de la veguería"
+      ],
+      "explicacion": "El artículo 91.3 EAC dispone que los Consejos de veguería sustituyen a las Diputaciones y el 91.1 los forma con el Presidente y los Consejeros de veguería. La STC 31/2010 (FJ 41) solo lo declara constitucional interpretado de modo que se respete la garantía constitucional de la provincia (arts. 137 y 141 CE), por lo que las Diputaciones provinciales no desaparecen por el mero hecho de esta previsión estatutaria."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 91 de l'Estatut d'autonomia de Catalunya, els consells de vegueria:",
+      "opciones": [
+        "Substitueixen els consells comarcals",
+        "Són òrgans desconcentrats del Departament de la Presidència",
+        "Substitueixen les diputacions",
+        "Estan formats pels alcaldes de la vegueria"
+      ],
+      "explicacion": "L'article 91.3 EAC disposa que els consells de vegueria substitueixen les diputacions i el 91.1 els forma amb el president i els consellers de vegueria. La STC 31/2010 (FJ 41) només el declara constitucional interpretat de manera que es respecti la garantia constitucional de la província (arts. 137 i 141 CE), per la qual cosa les diputacions provincials no desapareixen pel simple fet d'aquesta previsió estatutària."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "91.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a91"
+    },
+    "cita": "Los Consejos de veguería sustituyen a las Diputaciones",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-016",
+    "tema": 14,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 9 de la Ley 30/2010, de veguerías, los municipios de la comarca de El Garraf pertenecen a la demarcación veguerial de:",
+      "opciones": [
+        "Barcelona",
+        "El Penedès",
+        "El Camp de Tarragona",
+        "La Cataluña Central"
+      ],
+      "explicacion": "El artículo 9.h) de la Ley 30/2010, añadido en 2017, integra en la demarcación de El Penedès las comarcas de L’Alt Penedès, El Baix Penedès, El Garraf y L’Anoia (salvo los ocho municipios de la Alta Anoia, que van a la Cataluña Central)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 9 de la Llei 30/2010, de vegueries, els municipis de la comarca del Garraf pertanyen a la demarcació vegueril de:",
+      "opciones": [
+        "Barcelona",
+        "El Penedès",
+        "El Camp de Tarragona",
+        "La Catalunya Central"
+      ],
+      "explicacion": "L'article 9.h) de la Llei 30/2010, afegit el 2017, integra a la demarcació del Penedès les comarques de l'Alt Penedès, el Baix Penedès, el Garraf i l'Anoia (llevat dels vuit municipis de l'Alta Anoia, que van a la Catalunya Central)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-14561",
+      "norma": "Ley 30/2010, de 3 de agosto, de veguerías",
+      "articulo": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-14561#a9"
+    },
+    "cita": "La demarcación veguerial de El Penedès comprende los municipios correspondientes a las comarcas de L’Alt Penedès, El Baix Penedès, El Garraf y L’Anoia",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t14-017",
+    "tema": 14,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 94.2 del Estatuto de Autonomía de Cataluña, la más alta representación y la ordinaria de la Generalitat en Arán corresponde:",
+      "opciones": [
+        "Al Delegado territorial del Gobierno en el Alto Pirineo y Arán",
+        "Al Plen des Conselhèrs e Conselhères Generaus",
+        "A la Comission d'Auditors de Compdes",
+        "Al Síndic o Síndica"
+      ],
+      "explicacion": "El artículo 94.2 EAC configura el Conselh Generau (Síndic, Plen des Conselhèrs e Conselhères Generaus y Comission d'Auditors de Compdes) como institución de gobierno de Arán, y atribuye al Síndic la más alta representación y la ordinaria de la Generalitat en Arán."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 94.2 de l'Estatut d'autonomia de Catalunya, la més alta representació i l'ordinària de la Generalitat a l'Aran correspon:",
+      "opciones": [
+        "Al delegat territorial del Govern a l'Alt Pirineu i Aran",
+        "Al Plen des Conselhèrs e Conselhères Generaus",
+        "A la Comission d'Auditors de Compdes",
+        "Al síndic o síndica"
+      ],
+      "explicacion": "L'article 94.2 EAC configura el Conselh Generau (síndic, Plen des Conselhèrs e Conselhères Generaus i Comission d'Auditors de Compdes) com a institució de govern de l'Aran, i atribueix al síndic la més alta representació i l'ordinària de la Generalitat a l'Aran."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "94.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a94"
+    },
+    "cita": "El Síndico o Síndica es la más alta representación y la ordinaria de la Generalitat en Arán",
+    "origen": "ia"
+  }
 ]
