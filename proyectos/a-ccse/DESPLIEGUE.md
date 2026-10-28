@@ -138,3 +138,8 @@ Ejecutado el 2026-10-28
   con la tarjeta 4242; y paso 6, el cobro real, solo cuando diga «lanzar» y con la clave real de Numi Mates en Vercel.
 
 Ejecutado el 2026-10-28
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+El proyecto de Vercel `ccse-en-tu-idioma` se ha **desconectado de GitHub**: cada push a cualquier rama del repo lanzaba un build que fallaba («Root Directory "proyectos/a-ccse" does not exist»). Se despliega con el CLI desde una copia de la rama, como los demás proyectos.
+
+Ejecutado el 2026-10-28
