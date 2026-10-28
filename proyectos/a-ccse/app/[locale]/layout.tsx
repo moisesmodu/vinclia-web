@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     icons: { icon: '/icons/icon.svg', apple: '/icons/icon-192.png' },
     openGraph: { siteName: t('marca'), type: 'website', locale },
     appleWebApp: { capable: true, title: 'CCSE' },
+    ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {}),
   };
 }
 

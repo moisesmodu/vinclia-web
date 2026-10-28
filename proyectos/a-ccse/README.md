@@ -17,16 +17,16 @@ Instituto Cervantes. Se cita en el pie de todas las páginas y en cada pregunta,
 - Página **"Cómo es el examen"** en 8 idiomas, 20 guías SEO, 300 páginas indexables (una por pregunta) y un sitemap con hreflang.
 - PWA instalable y sin conexión, más la app Android (TWA) en `android/`.
 
-## Desplegar en Vercel (una vez)
-1. vercel.com → Add New → Project → importar `moisesmodu/vinclia-web`.
-2. **Project Name: `ccse-en-tu-idioma`**. Ese nombre fija el dominio `ccse-en-tu-idioma.vercel.app`, que lleva dentro la app Android.
-   **Root Directory: `proyectos/a-ccse`**. Framework: Next.js.
-3. Storage → Connect Database → **Neon** (plan gratis). Vercel crea `DATABASE_URL` sola.
-4. Variables de entorno: `STRIPE_SECRET_KEY` (sk_test_…), `AUTH_SECRET` (cualquier cadena larga), `NEXT_PUBLIC_SITE_URL=https://ccse-en-tu-idioma.vercel.app`, y los datos legales `LEGAL_NIF`, `LEGAL_EMAIL`. Las demás están en `.env.example` y son opcionales.
-5. Deploy. El build (`prisma generate && next build`) no necesita la base de datos.
-6. Crear las tablas una sola vez: `npx prisma db push` con `DATABASE_URL` de Neon. Lo hace la sesión de Claude o la tarea programada, no Moisés.
+## Desplegar
+Lo hace una sesión de Claude, no Moisés. Los pasos exactos (proyecto de Vercel `ccse-en-tu-idioma` con Root Directory
+`proyectos/a-ccse`, el proyecto de Neon `cartera-a-ccse`, el producto y el webhook de Stripe de la cuenta Numi Mates, las variables y los comandos) están en
+**[DESPLIEGUE.md](DESPLIEGUE.md)**. Las reglas comunes están en `../../DESPLIEGUES.md`.
 
-**Webhook de Stripe:** no hay que crearlo a mano. En el primer pago, la app crea el endpoint `/api/stripe/webhook` con la clave secreta y guarda su secreto en la base de datos (tabla `Config`). Aunque el webhook fallara, la página de vuelta del pago confirma la sesión con Stripe y da el acceso igual. Si se prefiere fijarlo a mano, se pone `STRIPE_WEBHOOK_SECRET`.
+- **Stripe:** el producto `Cartera · CCSE · Acceso 3 meses` y su precio se crean por API la primera vez, de forma idempotente (por `lookup_key`).
+  El webhook lo crea `scripts/stripe-configurar.mjs` o, si falta, la propia app en el primer pago. Aunque el webhook fallara,
+  la página de vuelta del pago confirma la sesión con Stripe y da el acceso igual. `STRIPE_MODO=test` usa `STRIPE_TEST_SECRET_KEY`, y `live` usa `STRIPE_SECRET_KEY`.
+- **Base de datos:** `npm run build` aplica `prisma/migrations` si hay `DATABASE_URL`, y sigue sin ella.
+- **Datos legales:** `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL` y `LEGAL_ADRECA` se leen en cada petición. Si falta alguno, el texto legal muestra «[falta LEGAL_…]».
 
 ## Comandos
 ```bash
@@ -36,7 +36,7 @@ npm run build        # build de producción (limpio)
 npm run revisar      # revisión lógica del banco: 300 preguntas × 7 lenguas
 npm run unir         # une content/explicaciones/bloque-*.json → content/i18n/<lengua>.json
 node scripts/iconos.mjs                       # PNG de iconos desde los SVG
-node pruebas/e2e-api.mjs   # 26 pruebas de API (necesita la app en :3100 con .env.test y Postgres)
+node pruebas/e2e-api.mjs   # 30 pruebas de API (necesita la app en :3100 con .env.test y Postgres)
 node pruebas/e2e-movil.mjs # 15 pruebas en navegador con pantalla de Pixel 7
 ```
 
@@ -73,6 +73,6 @@ node pruebas/e2e-movil.mjs # 15 pruebas en navegador con pantalla de Pixel 7
 - `/.well-known/assetlinks.json` se genera con la variable `TWA_SHA256`: la huella de la clave de subida más la de firma de Google Play, separadas por comas. Sin ella, la app funciona igual pero muestra la barra de dirección.
 
 ## Probado y no probado
-- Probado aquí: `npm run build` limpio y `tsc` sin errores. **26/26 pruebas de API** contra Postgres 16 real: registro, sesión, fusión del progreso, muro de pago, límite de simulacros, Checkout, webhook firmado con la librería oficial de Stripe, 90 días de acceso, idempotencia y afiliados. **15/15 pruebas en navegador móvil** (Pixel 7): test en árabe RTL con su explicación, simulacro completo con la tarjeta del proyecto N, muro, alta de cuenta y botón de pago hacia Stripe, sin errores de JavaScript ni scroll horizontal.
-- **No probado contra Stripe real.** La red de la sesión bloquea `api.stripe.com`, así que se probó con un doble local de la API. La primera prueba real la hará la tarea programada en cuanto estén las claves de prueba (tarjeta 4242 4242 4242 4242).
+- Probado aquí: `npm run build` limpio y `tsc` sin errores. **30/30 pruebas de API** contra Postgres 16 real: registro, sesión, fusión del progreso, muro de pago, límite de simulacros, producto y precio creados por API sin duplicados, Checkout, webhook firmado con la librería oficial de Stripe, 90 días de acceso, idempotencia, afiliados y datos legales en tiempo de ejecución. **15/15 pruebas en navegador móvil** (Pixel 7): test en árabe RTL con su explicación, simulacro completo con la tarjeta del proyecto N, muro, alta de cuenta y botón de pago hacia Stripe, sin errores de JavaScript ni scroll horizontal.
+- **No probado contra Stripe real.** La red de la sesión bloquea `api.stripe.com`, así que se probó con un doble local de la API. La primera prueba real es el paso 6 de DESPLIEGUE.md, con la tarjeta 4242 4242 4242 4242.
 - No probado en un Android físico. El AAB se compila en CI y no se ha instalado en ningún teléfono.

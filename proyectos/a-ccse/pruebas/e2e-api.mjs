@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 import { arrancar } from './stripe-falso.mjs';
 const BASE = process.env.BASE || 'http://localhost:3100';
 const SECRETO = process.env.STRIPE_WEBHOOK_SECRET || 'whsec_prueba_local';
-const { sesiones } = await arrancar(12111);
+const { sesiones, productos, precios } = await arrancar(12111);
 let cookie = '';
 let fallos = 0;
 const ok = (c, m) => { console.log(`${c ? 'OK  ' : 'FALLA'} ${m}`); if (!c) fallos++; };
@@ -36,6 +36,8 @@ r = await api('/api/stripe/checkout', { method: 'POST', body: JSON.stringify({ l
 ok(r.s === 200 && r.d.url?.startsWith('https://checkout.stripe.com/'), 'crea sesión de Checkout');
 const sesion = [...sesiones.values()].at(-1);
 ok(sesion.amount_total === 999 && sesion.currency === 'eur' && sesion.custom_text_ok, 'Checkout: 9,99 €, EUR y aviso de desistimiento');
+ok(productos.length === 1 && productos[0].name === 'Cartera · CCSE · Acceso 3 meses' && precios[0].tax_behavior === 'inclusive', 'producto y precio creados por API con el nombre de la cartera');
+ok(sesion.proyecto === 'a-ccse', 'Checkout lleva metadata.proyecto');
 ok(sesion.afiliado === 'accem' && sesion.promos === 'true', 'Checkout: afiliado ?ref= y códigos promocionales');
 ok(sesion.success_url.includes('/ro/pago/ok?session_id={CHECKOUT_SESSION_ID}'), 'Checkout vuelve a la página de pago en el idioma');
 r = await api(`/api/stripe/verificar?session_id=${sesion.id}`); ok(r.d.pagado === false && !r.d.ok, 'sin pagar no da acceso');
@@ -55,6 +57,10 @@ r = await api('/api/simulacro', { method: 'POST' }); ok(r.d.permitido === true, 
 await api('/api/auth/salir', { method: 'POST' }); cookie = '';
 r = await api('/api/auth/entrar', { method: 'POST', body: JSON.stringify({ email, clave: 'mala-clave-xx' }) }); ok(r.s === 401, 'contraseña incorrecta rechazada');
 r = await api('/api/auth/entrar', { method: 'POST', body: JSON.stringify({ email, clave: 'clave-segura-1' }) }); ok(r.s === 200 && r.d.acceso === true, 'volver a entrar conserva el acceso');
+r = await api('/api/stripe/checkout', { method: 'POST', body: JSON.stringify({ locale: 'es' }) });
+ok(r.s === 200 && productos.length === 1 && precios.length === 1, 'segundo Checkout reutiliza el producto y el precio (idempotente)');
+r = await fetch(BASE + '/es/legal/aviso-legal'); const al = await r.text();
+ok(al.includes(process.env.LEGAL_NIF_ESPERADO || '[falta LEGAL_NIF]'), 'aviso legal lee LEGAL_* en tiempo de ejecución o muestra el marcador');
 r = await fetch(BASE + '/.well-known/assetlinks.json'); ok(r.status === 200 && Array.isArray(await r.json()), 'assetlinks.json responde');
 r = await fetch(BASE + '/sitemap.xml'); const sm = await r.text(); ok(sm.includes('/es/preguntas/5084') && sm.includes('/ar/examen'), 'sitemap con preguntas e idiomas');
 console.log(fallos ? `\n${fallos} prueba(s) fallida(s)` : '\nTodas las pruebas pasan');

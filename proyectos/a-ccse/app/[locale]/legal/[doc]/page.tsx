@@ -1,12 +1,10 @@
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/config';
+import type { Locale } from '@/lib/config';
 import { leerDoc } from '@/lib/contenido';
 
 const DOCS = ['aviso-legal', 'privacidad', 'cookies', 'condiciones'];
-export const dynamicParams = false;
-export function generateStaticParams() {
-  return LOCALES.flatMap((locale) => DOCS.map((doc) => ({ locale, doc })));
-}
+// Dinámica: los datos LEGAL_* se leen en cada petición (cambiar una variable en Vercel no exige recompilar).
+export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; doc: string }> }) {
   const { locale, doc } = await params;
   return { title: leerDoc(`legal/${doc}.md`, locale)?.meta.titulo, robots: { index: false } };

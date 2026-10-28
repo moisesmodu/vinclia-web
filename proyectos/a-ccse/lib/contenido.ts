@@ -28,13 +28,19 @@ export function tablaFechas(locale: Locale) {
   return `<table><thead><tr><th>CCSE</th><th>⏳</th><th>ℹ︎</th></tr></thead><tbody>${filas}</tbody></table>`;
 }
 
+/** Datos del titular leídos en tiempo de ejecución; si faltan se ve un marcador para no publicar un aviso legal incompleto sin notarlo. */
+export function legal(v: 'LEGAL_NOM' | 'LEGAL_NIF' | 'LEGAL_EMAIL' | 'LEGAL_ADRECA') {
+  const x = process.env[v]?.trim();
+  return x ? x.replace(/[<>]/g, '') : `<mark>[falta ${v}]</mark>`;
+}
+
 function reemplazos(html: string, locale: Locale) {
   return html
     .replace(/<p>\s*\{\{FECHAS\}\}\s*<\/p>|\{\{FECHAS\}\}/g, tablaFechas(locale))
-    .replace(/\{\{TITULAR\}\}/g, process.env.LEGAL_TITULAR || 'Moisés Mora')
-    .replace(/\{\{NIF\}\}/g, process.env.LEGAL_NIF || '[NIF pendiente]')
-    .replace(/\{\{DOMICILIO\}\}/g, process.env.LEGAL_DOMICILIO || 'Lleida (España)')
-    .replace(/\{\{EMAIL\}\}/g, process.env.LEGAL_EMAIL || '[correo de contacto pendiente]')
+    .replace(/\{\{TITULAR\}\}/g, legal('LEGAL_NOM'))
+    .replace(/\{\{NIF\}\}/g, legal('LEGAL_NIF'))
+    .replace(/\{\{DOMICILIO\}\}/g, legal('LEGAL_ADRECA'))
+    .replace(/\{\{EMAIL\}\}/g, legal('LEGAL_EMAIL'))
     .replace(/<a href="(https?:\/\/[^"]+)"/g, '<a href="$1" rel="noopener" target="_blank"');
 }
 

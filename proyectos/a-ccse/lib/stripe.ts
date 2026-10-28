@@ -4,9 +4,15 @@ import { db } from './db';
 import { PAIS, SITE_URL } from './config';
 
 let cliente: Stripe | null = null;
+/** Desarrollo con la clave de prueba de Numi Mates; STRIPE_MODO=live usa la real (DESPLIEGUES.md §2). */
+export function claveStripe(): string | undefined {
+  return process.env.STRIPE_MODO === 'live'
+    ? process.env.STRIPE_SECRET_KEY
+    : process.env.STRIPE_TEST_SECRET_KEY || process.env.STRIPE_SECRET_KEY;
+}
 export function stripe(): Stripe {
-  const k = process.env.STRIPE_SECRET_KEY;
-  if (!k) throw new Error('Falta STRIPE_SECRET_KEY');
+  const k = claveStripe();
+  if (!k) throw new Error('Falta STRIPE_TEST_SECRET_KEY o STRIPE_SECRET_KEY');
   if (!cliente) {
     cliente = new Stripe(k, {
       // Permite probar contra stripe-mock en local (STRIPE_API_BASE=http://localhost:12111)
@@ -20,7 +26,7 @@ export function stripe(): Stripe {
   }
   return cliente;
 }
-export const modoStripe = () => (process.env.STRIPE_SECRET_KEY?.startsWith('sk_live_') ? 'live' : 'test');
+export const modoStripe = () => (/^(sk|rk)_live_/.test(claveStripe() ?? '') ? 'live' : 'test');
 const CLAVE_WEBHOOK = () => `stripe_webhook_secret_${modoStripe()}`;
 export const URL_WEBHOOK = () => `${SITE_URL}/api/stripe/webhook`;
 
@@ -42,7 +48,8 @@ export async function asegurarWebhook() {
     const nuevo = await s.webhookEndpoints.create({
       url: URL_WEBHOOK(),
       enabled_events: ['checkout.session.completed', 'checkout.session.async_payment_succeeded'],
-      description: `${PAIS.producto} (creado por la app)`,
+      description: `Cartera · CCSE · webhook (creado por la app)`,
+      metadata: { proyecto: 'a-ccse' },
     });
     if (nuevo.secret)
       await db().config.upsert({
@@ -55,6 +62,35 @@ export async function asegurarWebhook() {
   }
 }
 
+export const NOMBRE_PRODUCTO = 'Cartera · CCSE · Acceso 3 meses';
+export const LOOKUP_PRECIO = `a-ccse-acceso-${PAIS.accesoDias}d-${PAIS.precioCentimos}${PAIS.moneda.toLowerCase()}`;
+let precioCache: string | null = null;
+
+/** Producto y precio por API, idempotente: busca por lookup_key y solo crea si no existe. */
+export async function precioId(): Promise<string> {
+  if (precioCache) return precioCache;
+  const s = stripe();
+  const ya = await s.prices.list({ lookup_keys: [LOOKUP_PRECIO], active: true, limit: 1 });
+  if (ya.data[0]) return (precioCache = ya.data[0].id);
+  const productos = await s.products.search({ query: `metadata['proyecto']:'a-ccse' AND active:'true'` }).catch(() => null);
+  const producto =
+    productos?.data.find((x) => x.name === NOMBRE_PRODUCTO) ??
+    (await s.products.create({
+      name: NOMBRE_PRODUCTO,
+      description: 'Acceso completo a CCSE en tu idioma: 300 preguntas oficiales explicadas en 7 idiomas, simulacros y repaso.',
+      metadata: { proyecto: 'a-ccse', plan: 'acceso-3-meses' },
+    }));
+  const precio = await s.prices.create({
+    product: producto.id,
+    currency: PAIS.moneda.toLowerCase(),
+    unit_amount: PAIS.precioCentimos,
+    tax_behavior: 'inclusive',
+    lookup_key: LOOKUP_PRECIO,
+    metadata: { proyecto: 'a-ccse', dias: String(PAIS.accesoDias) },
+  });
+  return (precioCache = precio.id);
+}
+
 export async function crearCheckout(opts: { usuarioId: string; email: string; locale: string; ref?: string | null }) {
   await asegurarWebhook();
   const stripeLocale = (['es', 'fr', 'en', 'ro', 'zh'] as const).includes(opts.locale as 'es') ? (opts.locale as 'es') : 'auto';
@@ -64,26 +100,15 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
     client_reference_id: opts.usuarioId,
     customer_email: opts.email,
     locale: stripeLocale,
-    line_items: [
-      {
-        quantity: 1,
-        price_data: {
-          currency: PAIS.moneda.toLowerCase(),
-          unit_amount: PAIS.precioCentimos,
-          product_data: {
-            name: `${PAIS.producto} · ${PAIS.accesoDias} días`,
-            description: 'Acceso completo: 300 preguntas oficiales explicadas en 7 idiomas, simulacros ilimitados y repaso.',
-          },
-        },
-      },
-    ],
+    line_items: [{ quantity: 1, price: await precioId() }],
+    payment_intent_data: { metadata: { proyecto: 'a-ccse', usuarioId: opts.usuarioId } },
     custom_text: {
       submit: {
         message:
           'Al pagar aceptas las condiciones de venta y pides que el acceso empiece ya, por lo que pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Garantía de aprobado incluida.',
       },
     },
-    metadata: { usuarioId: opts.usuarioId, producto: 'a-ccse', pais: PAIS.pais, afiliado: opts.ref ?? '' },
+    metadata: { usuarioId: opts.usuarioId, proyecto: 'a-ccse', pais: PAIS.pais, afiliado: opts.ref ?? '' },
     success_url: `${SITE_URL}/${opts.locale}/pago/ok?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${SITE_URL}/${opts.locale}/precio?cancelado=1`,
   });

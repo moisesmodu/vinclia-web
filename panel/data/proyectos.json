@@ -19,7 +19,8 @@
    "rama": "https://github.com/moisesmodu/vinclia-web/tree/claude/a-ccse",
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/a-ccse/proyectos/a-ccse",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/2",
-   "android": "https://github.com/moisesmodu/vinclia-web/raw/entregas/a-ccse-android/ccse-1.0.0.aab"
+   "android": "https://github.com/moisesmodu/vinclia-web/raw/entregas/a-ccse-android/ccse-1.0.0.aab",
+   "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/a-ccse/proyectos/a-ccse/DESPLIEGUE.md"
   },
   "acciones": [
    {
@@ -57,20 +58,22 @@
    {
     "fecha": "2026-10-28",
     "texto": "App Android (TWA es.nuevoenespana.ccse) generada con Bubblewrap y compilada en GitHub Actions"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Adaptado a DESPLIEGUES.md: Stripe Numi Mates (producto 'Cartera · CCSE · Acceso 3 meses' por API, idempotente), LEGAL_* en tiempo de ejecución, migraciones Prisma en el build y DESPLIEGUE.md listo para la sesión del Mac; 30 pruebas de API y 15 en móvil pasan"
    }
   ],
   "proximos": [
-   "Moisés: Stripe, Vercel+Neon, Play (ver PARA-MOISES.md)",
-   "Primer pago real en modo prueba contra Stripe",
-   "Contrastar el banco con el PDF oficial (red de la sesión bloqueaba examenes.cervantes.es)",
+   "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md (Vercel ccse-en-tu-idioma, Neon cartera-a-ccse, Stripe Numi Mates en prueba)",
+   "Pago de prueba de punta a punta en producción con 4242 4242 4242 4242",
+   "Contrastar el banco con el PDF oficial del Instituto Cervantes",
    "Search Console y primeros 3 vídeos",
    "Revisión nativa por muestreo de árabe y chino"
   ],
   "paraMoises": [
-   "Cuenta de Stripe y clave sk_test",
-   "Proyecto en Vercel 'ccse-en-tu-idioma' con Neon y variables",
-   "Cuenta de Google Play y publicar el AAB con la ficha",
-   "Search Console (verificar dominio)"
+   "Publicar el AAB en Google Play (enlace en PARA-MOISES.md)",
+   "Decidir dónde se guarda la clave de subida de Android"
   ],
   "mejoras": [
    "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",

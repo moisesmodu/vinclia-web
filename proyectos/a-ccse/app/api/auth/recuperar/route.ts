@@ -19,7 +19,7 @@ export async function POST(req: Request) {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: process.env.CORREO_REMITENTE || `${PAIS.producto} <onboarding@resend.dev>`,
+        from: process.env.CORREO_REMITENTE || `${PAIS.producto} <noreply@algorithmicslleida.com>`,
         to: email,
         subject: `${PAIS.producto}: cambia tu contraseña`,
         text: `Para elegir una contraseña nueva abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.`,
