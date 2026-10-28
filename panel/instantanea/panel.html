@@ -236,9 +236,9 @@ b { font-weight: 600; }
   <div><b>0 €</b><span>invertido hasta hoy</span></div><div><b>0 de 11</b><span>proyectos en marcha</span></div>
 </section>
 <div class="dos">
-  <section><h2>Lo que te toca a ti</h2><ol class="tareas"><li>Confirmar escenario de marketing: S0 sin anuncios o S1 prudente <span class="donde">VIABILIDAD.md §5</span></li><li>Stripe: ya existe la cuenta 'Numi Mates' en modo real y está conectada; decidir si cobra todos los proyectos (productos separados) o se abre otra <a href="https://dashboard.stripe.com" target="_blank" rel="noopener">abrir</a></li><li>Cuenta de desarrollador de Google Play (25 $) <a href="https://play.google.com/console/signup" target="_blank" rel="noopener">abrir</a></li><li>Cuenta en Gelato para la impresión de cuentos <a href="https://www.gelato.com" target="_blank" rel="noopener">abrir</a></li><li>Crear el proyecto del panel en Vercel (Root Directory: panel) <a href="https://vercel.com/new" target="_blank" rel="noopener">abrir</a></li></ol>
+  <section><h2>Lo que te toca a ti</h2><ol class="tareas"><li>Sesión del Mac: crear los accesos (Vercel, Neon, Stripe real de Numi, Resend, datos legales) y guardarlos como secretos del entorno en la nube; después ejecutar los DESPLIEGUE.md de A y N <span class="donde">DESPLIEGUES.md</span></li><li>Confirmar escenario de marketing: S0 sin anuncios o S1 prudente <span class="donde">VIABILIDAD.md §5</span></li><li>Cuenta de desarrollador de Google Play (25 $) y cuenta en Gelato: solo cuando A y G estén listos para publicar <a href="https://play.google.com/console/signup" target="_blank" rel="noopener">abrir</a></li></ol>
   <p class="aviso"><b>Cuentos personalizados</b> tiene fecha límite el 15 nov 2026.</p></section>
-  <section><h2>Cómo funciona</h2><ul class="reglas"><li>Nada sale hacia fuera sin aprobación de Moisés.</li><li>Ningún gasto nuevo de más de 20 €/mes sin anotarlo antes.</li><li>Cada sesión actualiza panel/data/proyectos.json al terminar.</li><li>Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes.</li><li>Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero.</li></ul><p class="nota">Escenario de marketing: S1 prudente (pendiente de confirmar por Moisés). Actualizado el 28 oct 2026.</p></section>
+  <section><h2>Cómo funciona</h2><ul class="reglas"><li>Nada sale hacia fuera sin aprobación de Moisés.</li><li>Ningún gasto nuevo de más de 20 €/mes sin anotarlo antes.</li><li>Cada sesión actualiza panel/data/proyectos.json al terminar.</li><li>Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes.</li><li>Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero.</li><li>Ninguna sesión pide claves ni cuentas a Moisés: usa los secretos del entorno o deja DESPLIEGUE.md para la sesión del Mac.</li></ul><p class="nota">Escenario de marketing: S1 prudente (pendiente de confirmar por Moisés). Actualizado el 28 oct 2026.</p></section>
 </div>
 <section class="juicio-cartera"><h2>Probabilidad de éxito</h2><p class="nota">Simulación de la cartera con los supuestos de <a href="#juicio">Juicio</a>, del 24 oct 2026.</p>
 <div class="cifras"><div><b>17 %</b><span>de llegar a 1.000 €/mes en 6 meses</span></div><div><b>66 %</b><span>de llegar a 1.000 €/mes en 12 meses</span></div><div><b>65 %</b><span>de cubrir cuota y costes en 6 meses</span></div><div><b>1400 €</b><span>ingreso mediano al mes 12</span></div></div>
@@ -1233,6 +1233,11 @@ teléfono y plan Creator de ElevenLabs.</p>
 </tr>
 <tr>
 <td>28/10/2026</td>
+<td><code>DESPLIEGUES.md</code>: secretos del entorno y sesión del Mac para desplegar sin pedir nada a Moisés; Stripe real de Numi Mates para todo</td>
+<td>—</td>
+</tr>
+<tr>
+<td>28/10/2026</td>
 <td>M redefinido como app de certificados oficiales de catalán B1–C2 (<code>M-CATALA-PRODUCTE.md</code>): exámenes, 13 competidores, 10 apps de referencia, prompt nuevo. Stripe &#39;Numi Mates&#39; conectado</td>
 <td>—</td>
 </tr>
@@ -1768,8 +1773,9 @@ regenera con cada push: es lo único que Moisés mira. Si tocas <code>cartera.js
 <li>Web/app: Next.js (App Router) + TypeScript + Tailwind, desplegable en Vercel como proyecto propio (Root
 Directory = la carpeta del proyecto). PWA instalable. Móvil primero.</li>
 <li>Datos: Postgres en Neon (plan gratuito) con Prisma. Un proyecto de Neon por producto.</li>
-<li>Pagos: Stripe Checkout + webhooks, claves por variables de entorno. Hasta que Moisés pase las claves, todo funciona
-en modo prueba con claves <code>sk_test_</code>. Precios en <code>VIABILIDAD.md</code>.</li>
+<li>Pagos: Stripe Checkout + webhooks con la cuenta real <strong>Numi Mates</strong> (ver <code>DESPLIEGUES.md</code> §2): desarrollo con
+<code>STRIPE_TEST_SECRET_KEY</code>, lanzamiento con <code>STRIPE_SECRET_KEY</code>; productos y precios creados por API con nombre
+<code>Cartera · &lt;Proyecto&gt; · &lt;Plan&gt;</code>. Precios en <code>VIABILIDAD.md</code>.</li>
 <li>Correo: Resend. IA: SDK oficial de Anthropic; <code>claude-haiku-5-5</code> para volumen (tests, variantes, traducciones),
 <code>claude-sonnet-5-5</code> cuando la calidad del texto vende (cuentos, explicaciones). Voz: ElevenLabs solo para demos y
 voces premium; para voz masiva, el TTS más barato que cumpla.</li>
@@ -1784,7 +1790,12 @@ cookies, condiciones de venta y desistimiento, redactados y enlazados en el pie.
 ni anuncios. Lo dejas preparado y lo listas en <code>PARA-MOISES.md</code>.</li>
 <li><strong>Ningún gasto nuevo:</strong> planes gratuitos. Si algo exige pagar más de 20 €/mes, se anota como ⏸ y se sigue con lo demás.</li>
 <li><strong>Mínimo trabajo humano:</strong> <code>PARA-MOISES.md</code> tiene como máximo 5 tareas, cada una con enlace directo, de 2 minutos,
-y solo las que la ley o la plataforma exigen a una persona (abrir cuenta, pegar una clave, pulsar &quot;publicar&quot;).</li>
+y solo las que la ley o la plataforma exigen a una persona (comprar un dominio, pulsar &quot;publicar&quot; en una tienda,
+firmar un formulario fiscal). <strong>Nunca</strong> &quot;crea el proyecto en Vercel&quot;, &quot;conecta Neon&quot; ni &quot;pega la clave de Stripe&quot;:
+eso lo hace la propia sesión con los secretos del entorno (<code>VERCEL_TOKEN</code>, <code>NEON_API_KEY</code>, <code>STRIPE_SECRET_KEY</code>,
+<code>STRIPE_TEST_SECRET_KEY</code>, <code>RESEND_API_KEY</code>, <code>LEGAL_*</code>) o, si faltan, lo deja escrito en <code>proyectos/&lt;clave&gt;/DESPLIEGUE.md</code>
+para la sesión del Mac de Moisés. Todo está en <code>DESPLIEGUES.md</code>. Stripe es la cuenta real <strong>Numi Mates</strong>: se desarrolla
+con sus claves de prueba y se lanza con las reales; no se abren cuentas nuevas.</li>
 <li><strong>No preguntes si puedes decidir tú.</strong> Decide, anótalo en el README y sigue. Pregunta solo si la respuesta cambia
 el producto de raíz.</li>
 <li><strong>Honestidad:</strong> si algo no funciona o no se ha probado, se dice en el informe final. No se marca &quot;hecho&quot; lo que no

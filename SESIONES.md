@@ -31,8 +31,9 @@
 - Web/app: Next.js (App Router) + TypeScript + Tailwind, desplegable en Vercel como proyecto propio (Root
   Directory = la carpeta del proyecto). PWA instalable. Móvil primero.
 - Datos: Postgres en Neon (plan gratuito) con Prisma. Un proyecto de Neon por producto.
-- Pagos: Stripe Checkout + webhooks, claves por variables de entorno. Hasta que Moisés pase las claves, todo funciona
-  en modo prueba con claves `sk_test_`. Precios en `VIABILIDAD.md`.
+- Pagos: Stripe Checkout + webhooks con la cuenta real **Numi Mates** (ver `DESPLIEGUES.md` §2): desarrollo con
+  `STRIPE_TEST_SECRET_KEY`, lanzamiento con `STRIPE_SECRET_KEY`; productos y precios creados por API con nombre
+  `Cartera · <Proyecto> · <Plan>`. Precios en `VIABILIDAD.md`.
 - Correo: Resend. IA: SDK oficial de Anthropic; `claude-haiku-5-5` para volumen (tests, variantes, traducciones),
   `claude-sonnet-5-5` cuando la calidad del texto vende (cuentos, explicaciones). Voz: ElevenLabs solo para demos y
   voces premium; para voz masiva, el TTS más barato que cumpla.
@@ -46,7 +47,12 @@
    ni anuncios. Lo dejas preparado y lo listas en `PARA-MOISES.md`.
 2. **Ningún gasto nuevo:** planes gratuitos. Si algo exige pagar más de 20 €/mes, se anota como ⏸ y se sigue con lo demás.
 3. **Mínimo trabajo humano:** `PARA-MOISES.md` tiene como máximo 5 tareas, cada una con enlace directo, de 2 minutos,
-   y solo las que la ley o la plataforma exigen a una persona (abrir cuenta, pegar una clave, pulsar "publicar").
+   y solo las que la ley o la plataforma exigen a una persona (comprar un dominio, pulsar "publicar" en una tienda,
+   firmar un formulario fiscal). **Nunca** "crea el proyecto en Vercel", "conecta Neon" ni "pega la clave de Stripe":
+   eso lo hace la propia sesión con los secretos del entorno (`VERCEL_TOKEN`, `NEON_API_KEY`, `STRIPE_SECRET_KEY`,
+   `STRIPE_TEST_SECRET_KEY`, `RESEND_API_KEY`, `LEGAL_*`) o, si faltan, lo deja escrito en `proyectos/<clave>/DESPLIEGUE.md`
+   para la sesión del Mac de Moisés. Todo está en `DESPLIEGUES.md`. Stripe es la cuenta real **Numi Mates**: se desarrolla
+   con sus claves de prueba y se lanza con las reales; no se abren cuentas nuevas.
 4. **No preguntes si puedes decidir tú.** Decide, anótalo en el README y sigue. Pregunta solo si la respuesta cambia
    el producto de raíz.
 5. **Honestidad:** si algo no funciona o no se ha probado, se dice en el informe final. No se marca "hecho" lo que no

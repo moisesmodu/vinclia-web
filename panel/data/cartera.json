@@ -22,24 +22,16 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
+      "texto": "Sesión del Mac: crear los accesos (Vercel, Neon, Stripe real de Numi, Resend, datos legales) y guardarlos como secretos del entorno en la nube; después ejecutar los DESPLIEGUE.md de A y N",
+      "donde": "DESPLIEGUES.md"
+    },
+    {
       "texto": "Confirmar escenario de marketing: S0 sin anuncios o S1 prudente",
       "donde": "VIABILIDAD.md §5"
     },
     {
-      "texto": "Stripe: ya existe la cuenta 'Numi Mates' en modo real y está conectada; decidir si cobra todos los proyectos (productos separados) o se abre otra",
-      "donde": "https://dashboard.stripe.com"
-    },
-    {
-      "texto": "Cuenta de desarrollador de Google Play (25 $)",
+      "texto": "Cuenta de desarrollador de Google Play (25 $) y cuenta en Gelato: solo cuando A y G estén listos para publicar",
       "donde": "https://play.google.com/console/signup"
-    },
-    {
-      "texto": "Cuenta en Gelato para la impresión de cuentos",
-      "donde": "https://www.gelato.com"
-    },
-    {
-      "texto": "Crear el proyecto del panel en Vercel (Root Directory: panel)",
-      "donde": "https://vercel.com/new"
     }
   ],
   "reglas": [
@@ -47,7 +39,8 @@
     "Ningún gasto nuevo de más de 20 €/mes sin anotarlo antes.",
     "Cada sesión actualiza panel/data/proyectos.json al terminar.",
     "Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes.",
-    "Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero."
+    "Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero.",
+    "Ninguna sesión pide claves ni cuentas a Moisés: usa los secretos del entorno o deja DESPLIEGUE.md para la sesión del Mac."
   ],
   "juicioCartera": {
     "p1000a6": 17,
