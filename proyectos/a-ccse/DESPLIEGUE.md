@@ -111,3 +111,5 @@ Pon el código en la variable `GOOGLE_SITE_VERIFICATION` (la web la añade en `<
   (crear cuenta en `/es/precio`, pagar y ver «Acceso completo hasta…» a 90 días).
 
 Ejecutado el 2026-10-28
+
+Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://ccse-en-tu-idioma.vercel.app (aviso legal con NIF comprobado). Ignored Build Step `git diff HEAD^ HEAD --quiet -- proyectos/a-ccse` puesto en Vercel. Pendiente: pago de prueba con la tarjeta 4242.
