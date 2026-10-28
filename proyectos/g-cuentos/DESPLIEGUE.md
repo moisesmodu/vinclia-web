@@ -148,3 +148,8 @@ Libros de 18 y 22 páginas por edad, creador con avatar, texto editable antes de
 «Tú decides». Sin cambios en el esquema de Prisma (los campos nuevos van dentro de `datos`, que es JSON) ni variables
 nuevas: basta con `vercel --prod` desde `proyectos/g-cuentos`. Comprobación: `/crear` muestra los 4 pasos y
 `/muestras/leo-y-la-luz-de-la-luna` tiene 18 páginas.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+`LEGAL_EMAIL` y `CORREO_SOPORTE` = `hola@numimates.com` (DESPLIEGUES.md §6) y redesplegado (commit 30ad8b8): el aviso legal y la portada ya no muestran el correo personal. Esta rama aún no lleva el commit del correo de la base (e5a9cea); cuando lo fusione, conviene redesplegar.
+
+Ejecutado el 2026-10-28
