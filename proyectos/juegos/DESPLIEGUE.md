@@ -59,3 +59,8 @@ vercel deploy --prod --yes
 ```
 
 Ejecutado el 2026-10-28
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+Publicado el commit 9ddf2ff en https://juegos-casuales.vercel.app (desde la raíz del repo, Root Directory `proyectos/juegos`): portada, `/egg-truck/` y `/bike-flip/` responden.
+
+Ejecutado el 2026-10-28
