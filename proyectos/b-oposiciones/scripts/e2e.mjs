@@ -11,7 +11,9 @@ const OUT = process.argv[2] || '/tmp/e2e';
 fs.mkdirSync(OUT, { recursive: true });
 const ok = (c, m) => { if (!c) throw new Error('FALLO: ' + m); console.log('✓ ' + m); };
 
-const b = await chromium.launch();
+// Contra una URL pública, el navegador sale por el proxy de la sesión si lo hay (HTTPS_PROXY).
+const remoto = !/localhost|127\.0\.0\.1/.test(BASE);
+const b = await chromium.launch(remoto && process.env.HTTPS_PROXY ? { proxy: { server: process.env.HTTPS_PROXY } } : {});
 const ctx = await b.newContext({ ...devices['Pixel 7'], locale: 'ca-ES' });
 const p = await ctx.newPage();
 const errores = [];
