@@ -51,7 +51,7 @@ REMINDERS SO YOU DO NOT MISS A DEADLINE
 Enter a date (for example, when your TIE card expires) and we email you before the key moments. For a residence permit renewal, you can apply from 60 days before expiry up to 90 days after. We remind you when the period opens and before it closes.
 
 LANGUAGES
-The app is available in 7 languages: Spanish, English, Arabic, French, Romanian, Chinese and Ukrainian. Some guides are still being translated; until then, they are shown in Spanish.
+The app is available in 7 languages: Spanish, English, Arabic, French, Romanian, Chinese and Ukrainian.
 
 FREE AND PAID CONTENT
 Free: the full empadronamiento guide and the summary of every guide.
