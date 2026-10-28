@@ -127,3 +127,14 @@ Ejecutado el 2026-10-28
 4. Redesplegar producción desde un commit de moisesmodu. El build aplica la migración `0002_recuperacion` (dos columnas nuevas en `Usuario`).
 5. Prueba del pago completo en el navegador: `/es/temas/2` → responder las 3 gratis → «Desbloquear todo por 9,99 €» → crear la cuenta → Stripe con la tarjeta 4242 → «Acceso completo hasta…».
 6. **Cobro real (regla «Monetizar primero»):** `STRIPE_MODO=live`, ejecutar el paso 3 con `STRIPE_KEY="$STRIPE_SECRET_KEY"`, redesplegar, hacer un pago real de 9,99 € con una tarjeta propia y **reembolsarlo** desde el panel de Stripe. Anotar en el panel la acción «Cobro real probado y reembolsado».
+
+### Actualización ejecutada (sesión del Mac, 28-10-2026, 04:40)
+- Paso 1: `LEGAL_EMAIL=hola@numimates.com` y `CORREO_REMITENTE=CCSE en tu idioma <noreply@numimates.com>` en production y preview.
+- Paso 3: `scripts/stripe-configurar.mjs` ejecutado con la clave de prueba (sandbox de Numi Mates): el webhook
+  `we_1UVL749ds25vHCsFKkJgjKNJ` ya escucha también `checkout.session.expired`.
+- Paso 4: migración `0002_recuperacion` aplicada (por conexión directa) y producción redesplegada con el commit f5e8437
+  desde una copia sin `.git`. Comprobado: `/es/temas/2` responde y el aviso legal muestra hola@numimates.com.
+- Pendiente (Moisés): paso 2, el correo de soporte en Stripe → Settings → Public details (modo prueba y real); paso 5, el pago
+  con la tarjeta 4242; y paso 6, el cobro real, solo cuando diga «lanzar» y con la clave real de Numi Mates en Vercel.
+
+Ejecutado el 2026-10-28
