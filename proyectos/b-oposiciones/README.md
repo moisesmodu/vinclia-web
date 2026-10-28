@@ -56,11 +56,12 @@ reutilizado conforme a las condiciones del BOE). `motor/ley.mjs` lo descarga y l
 boe.es y dogc.gencat.cat no son accesibles desde la red de estas sesiones; el contenido es el mismo texto consolidado.
 
 ## Desplegar (Vercel + Neon + Stripe)
-1. Vercel → importar el repositorio → **Root Directory `proyectos/b-oposiciones`** → Deploy.
-2. Storage → Neon → Connect (pone `DATABASE_URL` y `DATABASE_URL_UNPOOLED`). En el build, `scripts/db-preparar.mjs` crea las tablas.
-3. `STRIPE_SECRET_KEY` (sk_test_…). Productos y precios se crean solos con `lookup_key` (`aprova_es_<plan>_<importe>`).
-4. Opcional: `STRIPE_WEBHOOK_SECRET` con el endpoint `/api/stripe/webhook`; `NEXT_PUBLIC_URL` si hay dominio propio.
-Variables en `.env.example`. En local: `cp .env.example .env`, Postgres local, `npm install && npm run build && npm start`.
+Lo hace la sesión del Mac sin pedir nada a Moisés: pasos exactos en `DESPLIEGUE.md` (reglas en `DESPLIEGUES.md` de la raíz).
+Resumen: proyecto de Vercel `aprova-oposicions` con Root Directory `proyectos/b-oposiciones`; Neon `cartera-b-oposiciones`; Stripe
+de la cuenta **Numi Mates** (`STRIPE_TEST_SECRET_KEY` para desarrollar, `STRIPE_SECRET_KEY` + `STRIPE_MODO=real` para cobrar);
+productos `Cartera · Oposiciones · <Plan>` creados por API, idempotentes (`scripts/stripe-preparar.mjs`, que también registra el
+webhook); Resend para recuperar contraseñas; `LEGAL_*` para los textos legales. En el build, `scripts/db-preparar.mjs` crea las
+tablas. Variables en `.env.example`. En local: Postgres, `cp .env.example .env`, `npm install && npm run build && npm start`.
 
 **Sin claves la app ya funciona:** páginas, test gratis y progreso en el navegador. Las cuentas necesitan Neon y los pagos
 necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula para probar el flujo entero.
@@ -83,9 +84,8 @@ necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula p
   varias administraciones; el líder cobra por oposición (lista `mejorar` y `copiar` del análisis del líder).
 - **20 preguntas gratuitas fijas por oposición**, repartidas entre temas y sin registro; las demás nunca salen del servidor
   sin suscripción.
-- **Cuentas con correo y contraseña**, sin correo transaccional: Moisés solo aporta Stripe, Vercel y Neon, así que no hay
-  Resend. Consecuencia: no hay "he olvidado la contraseña" automático; se resuelve por el formulario de contacto. Se añade
-  cuando haya clave de Resend.
+- **Cuentas con correo y contraseña** (scrypt). Recuperación de contraseña por correo con Resend (enlace firmado que caduca en
+  1 hora y deja de valer al cambiar la contraseña); sin `RESEND_API_KEY`, se resuelve por el formulario de contacto.
 - **Sin webhook obligatorio:** la suscripción se guarda al volver de Checkout y se refresca contra Stripe cada 12 h; el
   webhook es opcional. Una variable menos para Moisés.
 - **Historial permanente y exportable**, también tras cancelar (diferencial frente al líder, que lo borra).
