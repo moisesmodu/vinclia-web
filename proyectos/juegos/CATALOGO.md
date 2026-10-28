@@ -1,4 +1,31 @@
-# Catálogo · los 11 juegos siguientes (uno cada 2 semanas)
+# Catálogo · producción a escala (web + Roblox)
+
+> **Cambio del 28/10/2026 (Moisés: "hay que crear muchos juegos y monetizarlo todo").** El ritmo pasa de 1 juego cada
+> 2 semanas a **2 juegos web por semana** y **1 experiencia de Roblox al mes**. Cada juego se publica en todos los
+> canales que pagan (tabla de canales abajo). En curso hoy: Bike Flip, Snow Plow, Rocket Hop y Jelly Stack (web) y
+> Egg Truck Tycoon (Roblox).
+
+## Canales de ingresos de cada juego web (todos, en este orden)
+| Canal | Cómo paga | Exclusividad | Qué hace falta |
+|---|---|---|---|
+| CrazyGames | 50–70 % de la publicidad del SDK | No | Cuenta de desarrollador (Moisés) y subir el zip |
+| Poki | 50 % (100 % del tráfico propio) | Sí, web | Aceptación manual; si piden exclusiva, se decide juego a juego |
+| GameDistribution | Reparto de publicidad de su SDK, distribución a miles de webs | No | Otro adaptador en `comun/portal.ts` (pendiente) |
+| GameMonetize / GamePix | Reparto de publicidad | No | Adaptador por portal (pendiente) |
+| itch.io | Donaciones / pago opcional | No | Zip |
+| Web propia (Vercel) | AdSense for Games (H5 Games Ads) | — | Cuenta de AdSense |
+| Google Play (TWA) | AdMob | — | Cuenta de Play y AdMob (ola 3) |
+| Licencias no exclusivas | 300–800 $ por juego | No | Cuando haya 3 juegos con datos |
+
+Regla: los juegos que Poki acepte en exclusiva salen de los portales web no exclusivos; el resto va a todos.
+
+## Roblox: catálogo propio (1 al mes)
+| # | Experiencia | Género | Gancho |
+|---|---|---|---|
+| R1 | Egg Truck Tycoon | Tycoon + conducción | Granja de huevos y entregas frágiles por pistas generadas |
+| R2 | Jelly Tower Obby | Obby por niveles | Plataformas de gelatina que rebotan y se encogen al pisarlas |
+| R3 | Snow Plow Simulator | Simulador de temporada (diciembre) | Quitar nieve del pueblo, mejorar la máquina, mascotas de nieve |
+| R4 | Rocket Hop Tycoon | Tycoon espacial | Base lunar que crece; cohetes que se pilotan con un botón |
 
 Criterios: una mecánica, sin texto, partidas de 1 a 3 minutos (salvo los dos de gestión, que prueban sesiones largas
 como el líder Monkey Mart), ratón y táctil, menos de 8 MB. Mezcla de géneros por datos:

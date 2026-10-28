@@ -1,4 +1,4 @@
-# Para Moisés · Juegos (3 tareas, unos 2 minutos cada una)
+# Para Moisés · Juegos (5 tareas, unos 2 minutos cada una)
 
 Lo demás está hecho: el juego, los paquetes, los textos y las portadas. El despliegue en Vercel lo hace la sesión del
 Mac con `DESPLIEGUE.md`. Nada se publica hasta que tú pulses.
@@ -16,6 +16,13 @@ Mientras tanto puedes jugarlo aquí (página privada tuya): https://claude.ai/ar
 3. **itch.io**: crear la cuenta en [itch.io/register](https://itch.io/register) → [itch.io/game/new](https://itch.io/game/new)
    → *Kind: HTML* → subir `egg-truck-itch.zip`, marcar *played in the browser*, portada `egg-truck-itch-630x500.jpg`,
    capturas de `fichas/egg-truck/capturas/`, textos de `FICHAS.md` → **Public**.
+
+4. **GameDistribution** (reparte el juego a miles de webs y paga por publicidad): cuenta en
+   [gamedistribution.com/developers](https://gamedistribution.com/developers/) → *Add game* → copia el **Game ID** que
+   te dan y pásamelo (o pégalo en `juegos.json` → `ids.gamedistribution`); yo recompilo y te dejo el zip para subir.
+
+5. **GameMonetize**: cuenta en [gamemonetize.com](https://gamemonetize.com/) → *Upload game* → igual que el anterior,
+   pásame el Game ID (`ids.gamemonetize`).
 
 Los zips se descargan desde GitHub: abre el archivo en la rama del PR y pulsa *Download raw file*.
 La tarea programada quincenal (`TAREA-PROGRAMADA.md`) se crea cuando des el visto bueno a la ola (CARTERA.md).

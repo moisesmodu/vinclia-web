@@ -31,6 +31,7 @@ npm run nuevo -- mi-juego "My Game" "One-line description"   # juego nuevo desde
 npm run typecheck
 npm run test:rendimiento          # móvil de gama media emulado (ver más abajo); escribe <juego>/rendimiento.json
 npm run test:sdk                  # ciclo completo con SDK simulados de CrazyGames y Poki (tras npm run paquetes)
+PORT=5091 node scripts/sdk-test.mjs gamedistribution   # idem GameDistribution (hace falta un id en juegos.json)
 ```
 
 ## Despliegue en Vercel (lo hace la sesión del Mac con `DESPLIEGUE.md`; luego cada push publica)
@@ -51,6 +52,8 @@ URL resultante: `https://<proyecto>.vercel.app/egg-truck/` (y el catálogo en la
 |---|---|---|---|
 | `crazygames` | `sdk.crazygames.com/crazygames-sdk-v3.js` | `ad.requestAd('midgame' / 'rewarded')` | `SDK.data` (en la cuenta del jugador si ha iniciado sesión) |
 | `poki` | `game-cdn.poki.com/scripts/v2/poki-sdk.js` | `commercialBreak()` / `rewardedBreak()` | localStorage (Poki no tiene guardado en la nube) |
+| `gamedistribution` | `html5.api.gamedistribution.com/main.min.js` (necesita `ids.gamedistribution` en `juegos.json`) | `gdsdk.showAd('interstitial' / 'rewarded')` | localStorage |
+| `gamemonetize` | `api.gamemonetize.com/sdk.js` (necesita `ids.gamemonetize`) | `sdk.showBanner()` (sin recompensa) | localStorage |
 | `itch`, `web` | ninguno | ninguno (el botón de revivir no aparece) | localStorage |
 
 Reglas que cumple cada juego (las piden ambos portales):

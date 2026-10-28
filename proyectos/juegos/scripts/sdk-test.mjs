@@ -1,6 +1,6 @@
 // Prueba de integración de los SDK sin red: intercepta la URL oficial del SDK, sirve uno simulado que anota
 // cada llamada y juega una partida completa (morir → revivir con anuncio → morir → reiniciar con anuncio).
-// Uso: npm run paquetes && node scripts/sdk-test.mjs [crazygames|poki]
+// Uso: npm run paquetes && node scripts/sdk-test.mjs [crazygames|poki|gamedistribution]
 import { createRequire } from 'node:module';
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -34,6 +34,11 @@ const MOCKS = {
       gameplayStart: () => L('gameplayStart'), gameplayStop: () => L('gameplayStop'),
       commercialBreak: (fn) => { L('commercialBreak'); fn && fn(); return new Promise((r) => setTimeout(r, 300)); },
       rewardedBreak: (fn) => { L('rewardedBreak'); typeof fn === 'function' && fn(); return new Promise((r) => setTimeout(() => r(true), 300)); } };` },
+  gamedistribution: { url: 'https://html5.api.gamedistribution.com/main.min.js', body: `
+    window.__log = []; const L = (m) => window.__log.push(m); const ev = (n) => window.GD_OPTIONS.onEvent({ name: n });
+    L('init:' + (window.GD_OPTIONS && window.GD_OPTIONS.gameId));
+    window.gdsdk = { showAd: (t) => { L('showAd:' + t); ev('SDK_GAME_PAUSE');
+      return new Promise((r) => setTimeout(() => { if (t === 'rewarded') ev('SDK_REWARDED_WATCH_COMPLETE'); ev('SDK_GAME_START'); r(); }, 300)); } };` },
 };
 
 const browser = await chromium.launch();

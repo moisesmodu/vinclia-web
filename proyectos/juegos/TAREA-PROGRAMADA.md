@@ -1,8 +1,8 @@
 # Tarea programada · Juegos
 
-**Frecuencia:** cada 2 semanas, el miércoles a las 10:17 (hora de Madrid).
-Cron: `CRON_TZ=Europe/Madrid 17 10 * * 3`. Para que sea quincenal, la propia tarea comprueba la fecha del último
-juego en `juegos.json` y, si han pasado menos de 12 días, solo hace la revisión.
+**Frecuencia:** lunes y jueves a las 10:17 (hora de Madrid): un juego web nuevo en cada ejecución (2 por semana) y,
+el primer lunes de cada mes, además, la siguiente experiencia de Roblox de `CATALOGO.md`.
+Cron: `CRON_TZ=Europe/Madrid 17 10 * * 1,4`.
 
 **Cómo la crea Moisés (un clic):** en claude.ai/code → *Scheduled tasks* → *New*, repositorio `moisesmodu/vinclia-web`,
 pegar el prompt de abajo con la frecuencia indicada. (No se ha creado desde esta sesión: CARTERA.md dice que las tareas
@@ -20,7 +20,7 @@ claude/estrategia-ingresos-recurrentes-tx0rvw y abre un PR hacia ella al acabar.
      y poki. Si algo falla, arréglalo antes que nada.
    - Lee los comentarios de los jugadores que Moisés haya copiado y aplica las mejoras pequeñas que pidan varias
      personas (máximo una por juego y quincena). Sube la versión y regenera paquetes con npm run paquetes.
-2. Juego nuevo (si han pasado 12 días o más desde el último de juegos.json):
+2. Juego nuevo (siempre; y si es el primer lunes del mes, también la siguiente experiencia de Roblox en roblox/):
    - Toma el siguiente de CATALOGO.md. npm run nuevo -- <slug> "<Title>" "<description>".
    - Escribe la mecánica en <slug>/src/scenes/Play.ts (reutiliza el motor de egg-truck si el catálogo lo dice).
    - Arte con Higgsfield (3 portadas y 1 fondo, tope 15 créditos) con los prompts de fichas/egg-truck/PROMPTS.md

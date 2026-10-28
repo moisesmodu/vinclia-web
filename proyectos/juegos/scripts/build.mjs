@@ -12,13 +12,14 @@ const mode = process.argv[2] || 'web';
 const all = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8'));
 // GAME=<carpeta> compila solo ese juego (también la plantilla, que no está en juegos.json)
 const games = process.env.GAME ? [all.find((g) => g.slug === process.env.GAME) || { slug: process.env.GAME, titulo: process.env.GAME }] : all;
-const portals = mode === 'all' ? ['web', 'crazygames', 'poki', 'itch'] : ['web'];
+const portals = mode === 'all' ? ['web', 'crazygames', 'poki', 'gamedistribution', 'gamemonetize', 'itch'] : ['web'];
 
 if (!process.env.GAME) rmSync(resolve(root, 'dist'), { recursive: true, force: true });
 for (const g of games) {
   for (const p of portals) {
     const out = p === 'web' ? resolve(root, 'dist', g.slug) : resolve(root, 'dist-portales', g.slug, p);
     process.env.VITE_PORTAL = p;
+    process.env.VITE_PORTAL_GAME_ID = g.ids?.[p] || ''; // id del juego en el panel de GameDistribution / GameMonetize
     process.env.OUT_DIR = out;
     await build({ configFile: resolve(root, g.slug, 'vite.config.ts'), logLevel: 'warn', mode: 'production' });
     console.log(`✔ ${g.slug} [${p}] → ${out.replace(root + '/', '')}`);

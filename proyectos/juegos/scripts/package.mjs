@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const games = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).filter((g) => !process.env.GAME || g.slug === process.env.GAME);
 for (const g of games) {
-  for (const p of ['crazygames', 'poki', 'itch']) {
+  for (const p of ['crazygames', 'poki', 'gamedistribution', 'gamemonetize', 'itch']) {
     const src = resolve(root, 'dist-portales', g.slug, p);
     if (!existsSync(src)) continue;
     const outDir = resolve(root, 'paquetes', g.slug);

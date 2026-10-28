@@ -1,10 +1,11 @@
 /**
- * Adaptador de portal: una sola interfaz para CrazyGames (SDK v3), Poki (SDK v2), itch.io y web propia.
- * El portal se elige al compilar con VITE_PORTAL=crazygames|poki|itch|web (ver scripts/build.mjs).
+ * Adaptador de portal: una sola interfaz para CrazyGames (SDK v3), Poki (SDK v2), GameDistribution, GameMonetize,
+ * itch.io y web propia. El portal se elige al compilar con VITE_PORTAL (ver scripts/build.mjs); GameDistribution y
+ * GameMonetize necesitan además el id del juego en su panel (VITE_PORTAL_GAME_ID, de juegos.json → ids.<portal>).
  * Los SDK se cargan desde la URL oficial del portal en tiempo de ejecución (ambos portales lo exigen así).
  */
 
-export type PortalName = 'crazygames' | 'poki' | 'itch' | 'web';
+export type PortalName = 'crazygames' | 'poki' | 'gamedistribution' | 'gamemonetize' | 'itch' | 'web';
 
 export interface Portal {
   readonly name: PortalName;
@@ -139,10 +140,66 @@ class PokiPortal implements Portal {
   setItem(k: string, v: string) { safeStorage.set(k, v); }
 }
 
+/* ------------------------------------------------------------ GameDistribution y GameMonetize */
+// Mismo patrón en los dos: opciones globales con el id del juego, eventos SDK_GAME_PAUSE / SDK_GAME_START alrededor
+// de cada anuncio y showAd() / showBanner(). GameDistribution: html5.api.gamedistribution.com (con recompensa);
+// GameMonetize: api.gamemonetize.com/sdk.js (sin recompensa). Sin guardado en la nube: localStorage.
+class EventAdsPortal implements Portal {
+  private sdk: any = null;
+  private resume: (() => void) | null = null;
+  private rewardedOk = false;
+  constructor(readonly name: 'gamedistribution' | 'gamemonetize') {}
+  get hasRewarded() { return this.name === 'gamedistribution' && !!this.sdk; }
+
+  async init() {
+    const gameId = import.meta.env.VITE_PORTAL_GAME_ID || '';
+    if (!gameId) return; // sin id del panel del portal no hay anuncios (el juego funciona igual)
+    const w = window as any;
+    const onEvent = (e: { name: string }) => {
+      if (e.name === 'SDK_GAME_PAUSE') audioHook(true);
+      if (e.name === 'SDK_GAME_START') { audioHook(false); const r = this.resume; this.resume = null; r?.(); }
+      if (e.name === 'SDK_REWARDED_WATCH_COMPLETE') this.rewardedOk = true;
+    };
+    if (this.name === 'gamedistribution') {
+      w.GD_OPTIONS = { gameId, onEvent };
+      if (await loadScript('https://html5.api.gamedistribution.com/main.min.js')) this.sdk = w.gdsdk ?? null;
+    } else {
+      w.SDK_OPTIONS = { gameId, onEvent };
+      if (await loadScript('https://api.gamemonetize.com/sdk.js')) this.sdk = w.sdk ?? null;
+    }
+  }
+  loadingDone() {}
+  gameplayStart() {}
+  gameplayStop() {}
+  /** Espera a SDK_GAME_START (fin del anuncio) con un tope, por si el portal no muestra nada. */
+  private waitResume(maxMs: number) {
+    return new Promise<void>((res) => { const t = setTimeout(() => { this.resume = null; audioHook(false); res(); }, maxMs); this.resume = () => { clearTimeout(t); res(); }; });
+  }
+  async commercialBreak() {
+    if (!this.sdk) return;
+    try {
+      if (this.name === 'gamedistribution') { await this.sdk.showAd?.('interstitial'); }
+      else { const w = this.waitResume(1500); this.sdk.showBanner?.(); await w; }
+    } catch { /* sin anuncio */ }
+    audioHook(false);
+  }
+  async rewardedBreak() {
+    if (!this.hasRewarded) return false;
+    this.rewardedOk = false;
+    try { await this.sdk.showAd('rewarded'); } catch { return false; }
+    audioHook(false);
+    return this.rewardedOk;
+  }
+  happyTime() {}
+  getItem(k: string) { return safeStorage.get(k); }
+  setItem(k: string, v: string) { safeStorage.set(k, v); }
+}
+
 export function createPortal(): Portal {
   const name = (import.meta.env.VITE_PORTAL || 'web') as PortalName;
   if (name === 'crazygames') return new CrazyPortal();
   if (name === 'poki') return new PokiPortal();
+  if (name === 'gamedistribution' || name === 'gamemonetize') return new EventAdsPortal(name);
   return new LocalPortal(name);
 }
 
