@@ -105,3 +105,18 @@ cuando el paso 3 haya funcionado) y hacer push a la rama base.
 ## Al lanzar con cobros reales
 Repetir el paso 3 con `STRIPE_SECRET_KEY` (modo real) y cambiar en Vercel `STRIPE_SECRET_KEY`, `STRIPE_PRICE_*` y
 `STRIPE_WEBHOOK_SECRET` por los de modo real; volver a desplegar.
+
+## Cómo se ejecutó (sesión del Mac, 28-10-2026)
+- Vercel: proyecto `nuevo-en-espana` creado con el CLI ya autenticado en el Mac (sin `VERCEL_TOKEN`), Root Directory
+  `proyectos/n-nuevo-en-espana`. URL de producción: https://nuevo-en-espana.vercel.app
+- Neon: recurso `cartera-n-nuevo-en-espana` (región `lhr1`, Londres, plan gratis) creado con la integración de Neon del
+  equipo de Vercel (sin `NEON_API_KEY`); `DATABASE_URL` y `DATABASE_URL_UNPOOLED` las pone la integración. Migración
+  `0001_inicial` aplicada.
+- Stripe: recurso `numi-mates` de la integración de Stripe del equipo conectado al proyecto. Pone `STRIPE_SECRET_KEY`
+  del «Entorno de prueba de Numi Mates» (`acct_1UKvWA9ds25vHCsF`, sandbox). `scripts/stripe-configurar.mjs` creó
+  productos, precios y webhook ahí; `STRIPE_PRICE_*` y `STRIPE_WEBHOOK_SECRET` están en Vercel.
+- Next.js subido de 15.5.6 a 15.5.28: Vercel bloquea el despliegue de 15.5.6 por el CVE-2025-66478.
+- Faltan (los pone Moisés en Vercel → nuevo-en-espana → Settings → Environment Variables): `LEGAL_NOM`, `LEGAL_NIF`,
+  `LEGAL_EMAIL`, `LEGAL_ADRECA` y `RESEND_API_KEY`. Falta también el pago de prueba con la tarjeta 4242 en producción.
+
+Ejecutado el 2026-10-28
