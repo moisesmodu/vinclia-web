@@ -1359,12 +1359,16 @@
       {
         "fecha": "2026-10-28",
         "texto": "Pedido a la sesión: sustituir las tareas de Neon/Stripe/Vercel de PARA-MOISES por un DESPLIEGUE.md para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac (Neon «cartera-g-cuentos», Vercel, Stripe de prueba, Resend). Precios: PDF 7,90 €, tapa dura 36,90 € con envío (margen ≥ 9 €; se confirma con la cotización real de Gelato)"
       }
     ],
     "proximos": [
-      "DESPLIEGUE.md en el PR #5 (en curso)",
-      "Sesión del Mac: Neon «lunilla», Vercel, Stripe de prueba, Resend",
-      "Pedido de prueba real con Gelato y precio con cotización real"
+      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
+      "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
+      "Apertura el 15/11"
     ],
     "paraMoises": [
       "Cuenta en Gelato (imprenta) con clave de API",
@@ -2481,7 +2485,9 @@
     "clientes": 0,
     "canal": "Solo Google: búsquedas de utilidad ('calcular sueldo neto 2027', 'festivos Lleida 2027'); nunca anuncios de pago",
     "enlaces": {
-      "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6"
+      "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6",
+      "Vista previa NetoClaro": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
+      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq"
     },
     "acciones": [
       {
@@ -2507,16 +2513,19 @@
       {
         "fecha": "2026-10-28",
         "texto": "La sesión propone Cloudflare Pages (gratis con uso comercial) en vez de Vercel Hobby; pedido: DESPLIEGUE.md para la sesión del Mac en lugar de tareas de configuración para Moisés"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md listo para la sesión del Mac: dos proyectos de Vercel (netoclaro e impuestoclaro), Root Directory proyectos/p-webs-adsense/fabrica, variable SITIO y datos legales LEGAL_*; sin Neon ni Stripe"
       }
     ],
     "proximos": [
-      "DESPLIEGUE.md en el PR #6 (en curso)",
-      "Sesión del Mac: publicar los dos sitios y apuntar los dominios",
+      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md",
+      "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
       "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o la siguiente opción libre)",
-      "NIF para el aviso legal",
       "Cuenta de AdSense: añadir el sitio 1 y mandar el ca-pub",
       "Search Console: añadir la propiedad de dominio"
     ],

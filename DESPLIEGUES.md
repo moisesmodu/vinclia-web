@@ -86,8 +86,8 @@ de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
 | #3 | N · Nuevo en España | `claude/n-nuevo-en-espana` | sí | `scripts/stripe-configurar.mjs` crea productos y webhook de forma repetible |
 | #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
 | #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
-| #5 | G · Lunilla | `claude/g-cuentos` | en curso (pedido el 28/10) | Neon `lunilla` (Frankfurt), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, Stripe de prueba, Resend; Gelato lo abre Moisés |
-| #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | en curso (pedido el 28/10) | La sesión propone Cloudflare Pages (gratis con uso comercial); alternativa Vercel Pro. Dominios y AdSense los abre Moisés |
+| #5 | G · Lunilla | `claude/g-cuentos` | sí | Neon `cartera-g-cuentos` (aws-eu-west-2), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, `scripts/stripe-configurar.mjs` (PDF 7,90 €, tapa dura 36,90 €), Resend; Gelato lo abre Moisés |
+| #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos proyectos de Vercel (`netoclaro`, `impuestoclaro`), Root Directory `proyectos/p-webs-adsense/fabrica`, variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
 
 Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
 "abre esta página", nada más.
