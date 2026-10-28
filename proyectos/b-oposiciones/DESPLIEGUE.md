@@ -128,3 +128,8 @@ Los precios ya creados en Stripe sirven: el nombre del producto es «Cartera · 
 Publicado el commit ed88527 (convocatorias 2027) en https://placa-oposicions.vercel.app; https://aprova-oposicions.vercel.app sigue respondiendo con la misma versión. `LEGAL_*` y `RESEND_API_KEY` copiados en Vercel desde el proyecto ccse-en-tu-idioma; el aviso legal ya muestra el NIF. Pendiente (Moisés): `STRIPE_TEST_SECRET_KEY` del modo prueba de la cuenta Numi Mates (`acct_1UKx8H4…`) y la clave real, si se quiere dejar el sandbox de la integración; y el pago de prueba con la tarjeta 4242.
 
 Ejecutado el 2026-10-28
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:49)
+Publicado el commit 0a222b4 (monetizar primero). `scripts/stripe-preparar.mjs` ejecutado de nuevo: el webhook (`we_1UVNlD9ds25vHCsFcNP5oRpl`, en https://aprova-oposicions.vercel.app/api/stripe/webhook, que sirve la misma app) escucha ahora también `checkout.session.expired`; `STRIPE_WEBHOOK_SECRET` actualizado. `LEGAL_EMAIL=hola@numimates.com` (DESPLIEGUES.md §6).
+
+Ejecutado el 2026-10-28
