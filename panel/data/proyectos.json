@@ -229,7 +229,7 @@
     "nombre": "Nuevo en España",
     "marca": "Nuevo en España",
     "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 2,
     "modelo": "Suscripción 4,99 €/mes o pack 19,90 €",
     "margenCliente": 22,
@@ -239,8 +239,10 @@
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
     "enlaces": {
+      "demo": "https://nuevo-en-espana.vercel.app",
       "pr": "https://github.com/moisesmodu/vinclia-web/pull/3",
-      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana"
+      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana",
+      "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/DESPLIEGUE.md"
     },
     "acciones": [
       {
@@ -277,11 +279,11 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Identidad de marca aplicada: logotipo y favicon de marcas/, terracota/azul noche/crema/oliva con modo oscuro, Outfit + Noto Sans (árabe y chino incluidos), sello «Hecho en Lleida · Precio claro · Cancela en un clic» en el pie y en los correos, pantalla de precio según MARCAS.md §3, lista de comprobación antes del texto y celebración al completarla."
+        "texto": "Desplegado en producción (https://nuevo-en-espana.vercel.app) desde la sesión del Mac: proyecto de Vercel nuevo-en-espana, Neon cartera-n-nuevo-en-espana (Londres) con migraciones, Stripe en el entorno de prueba de Numi Mates (productos, precios y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478)."
       }
     ],
     "proximos": [
-      "Sesión con secretos (Mac): ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md (Vercel nuevo-en-espana, Neon cartera-n-nuevo-en-espana, Stripe Numi Mates en modo prueba) y comprobar el pago en producción",
+      "Pago de prueba de punta a punta en producción con 4242 4242 4242 4242 y webhook con respuesta 200",
       "Primera revisión semanal con red abierta: confirmar tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)",
       "Marzo 2027: campaña de la guía de renovación como producto de 19,90 € (condición del juicio)"
     ],
