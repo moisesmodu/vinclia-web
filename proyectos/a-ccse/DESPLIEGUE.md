@@ -113,3 +113,8 @@ Pon el código en la variable `GOOGLE_SITE_VERIFICATION` (la web la añade en `<
 Ejecutado el 2026-10-28
 
 Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://ccse-en-tu-idioma.vercel.app (aviso legal con NIF comprobado). Ignored Build Step `git diff HEAD^ HEAD --quiet -- proyectos/a-ccse` puesto en Vercel. Pendiente: pago de prueba con la tarjeta 4242.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:09)
+Publicado el commit 7259669 (identidad de marca y portada nueva) en https://ccse-en-tu-idioma.vercel.app. Se desplegó desde una copia de la rama sin `.git` (`git archive HEAD | tar -x`): este proyecto está conectado a GitHub y Vercel bloquea los despliegues cuyo último commit es de «Claude». Aviso legal con los datos de `LEGAL_*`. Pendiente: pago de prueba con la tarjeta 4242.
+
+Ejecutado el 2026-10-28
