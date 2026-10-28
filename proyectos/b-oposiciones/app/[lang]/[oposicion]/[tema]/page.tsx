@@ -58,7 +58,7 @@ export default async function PaginaTema({ params }: P) {
         <Link href={`/${lang}`}>{marca.nombre}</Link> › <Link href={`/${lang}/${o.slug}`}>{o.nombreCorto[lang]}</Link> › {d.tema} {x.n}
       </nav>
       <p className="mt-3 text-sm font-semibold text-marca">{o.nombre[lang]} · {d.tema} {x.n}</p>
-      <h1 className="mt-1 text-2xl font-extrabold leading-tight sm:text-3xl">
+      <h1 className="mt-1 text-2xl font-bold leading-tight sm:text-3xl">
         {lang === 'ca' ? 'Test del tema' : 'Test del tema'} {x.n}: {x.titulo[lang]}
       </h1>
       <p className="mt-3 flex flex-wrap gap-2">

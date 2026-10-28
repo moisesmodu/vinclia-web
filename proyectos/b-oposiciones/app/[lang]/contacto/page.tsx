@@ -14,7 +14,7 @@ export default async function Contacto({ params, searchParams }: { params: Promi
   const ca = lang === 'ca';
   return (
     <div className="contenedor max-w-xl py-10">
-      <h1 className="text-2xl font-extrabold">{t(lang).pie.contacto}</h1>
+      <h1 className="text-2xl font-bold">{t(lang).pie.contacto}</h1>
       <p className="mt-2 text-slate-700">{ca ? 'Responem en català o castellà en menys de 24 hores laborables.' : 'Respondemos en catalán o castellano en menos de 24 horas laborables.'}</p>
       {enviado ? <p className="mt-4 rounded-lg bg-green-50 p-3 text-sm font-semibold text-ok">✓ {ca ? 'Missatge rebut.' : 'Mensaje recibido.'}</p> : null}
       <form action="/api/contacto" method="post" className="tarjeta mt-6 space-y-3">

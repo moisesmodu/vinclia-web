@@ -33,7 +33,7 @@ export default async function Convocatorias({ params }: { params: Promise<{ lang
   return (
     <div className="contenedor py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
-      <h1 className="text-3xl font-extrabold">{d.convocatoriasTitulo}</h1>
+      <h1 className="text-3xl font-bold">{d.convocatoriasTitulo}</h1>
       <p className="mt-2 max-w-3xl text-slate-700">{d.convocatoriasTexto}</p>
       <p className="mt-2 flex flex-wrap gap-2 text-sm"><span className="etiqueta">{lista.length} {lang === 'ca' ? 'processos' : 'procesos'}</span><span className="etiqueta">{total.toLocaleString(lang)} {d.plazas}</span><span className="etiqueta">{d.actualizado} {datos.actualizado}</span></p>
       <div className="mt-6 grid gap-3">

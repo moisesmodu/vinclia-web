@@ -20,7 +20,7 @@ type Sesion = {
 };
 type Resultado = { modo: Modo; aciertos: number; fallos: number; blancos: number; nota?: number; segundos: number; n: number; percentil?: number | null; ids: string[]; marcadas: Record<string, number | null> };
 
-const CLAVE = (slug: string) => `aprova:progreso:${slug}`;
+const CLAVE = (slug: string) => `placa:progreso:${slug}`;
 const fraccion = (x: number, idioma: Idioma) => (x === 0.25 ? '1/4' : Math.abs(x - 1 / 3) < 1e-6 ? '1/3' : x.toLocaleString(idioma));
 
 function cargarLocal(slug: string): Progreso {
@@ -30,7 +30,7 @@ function cargarLocal(slug: string): Progreso {
   } catch { return vacio(); }
 }
 
-export default function Practica({ idioma, op, inicial }: { idioma: Idioma; op: Oposicion; inicial: { tema?: number; modo?: string } }) {
+export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idioma; op: Oposicion; inicial: { tema?: number; modo?: string }; resumen: { total: number; porTema: Record<number, number> } }) {
   const d = t(idioma);
   const [preguntas, setPreguntas] = useState<Pregunta[] | null>(null);
   const [total, setTotal] = useState(0);
@@ -168,18 +168,22 @@ export default function Practica({ idioma, op, inicial }: { idioma: Idioma; op: 
   const nPend = pendientes(progreso, idsDisp).length;
   const nFall = falladas(progreso, idsDisp).length;
   const respondidas = Object.values(progreso.respuestas);
+  // Temario dominado: preguntas de TODO el banco de la oposición cuya última respuesta fue correcta (voz de marca, MARCAS.md).
+  const dominadas = Object.entries(progreso.respuestas).filter(([id, r]) => r.ok && idsDisp.has(id)).length;
+  const pctDominado = resumen.total ? Math.round((dominadas / resumen.total) * 100) : 0;
   const pctAcierto = respondidas.length ? Math.round((respondidas.reduce((s, r) => s + r.a, 0) / respondidas.reduce((s, r) => s + r.a + r.f, 0)) * 100) : 0;
   const disponiblesTema = (n: number) => preguntas.filter((p) => !n || p.tema === n).length;
 
-  if (vista === 'stats') return <Estadisticas {...{ idioma, op, progreso, preguntas }} volver={() => setVista('inicio')} />;
+  if (vista === 'stats') return <Estadisticas {...{ idioma, op, progreso, preguntas, resumen }} volver={() => setVista('inicio')} />;
 
   return (
     <div className="contenedor py-6">
       <nav className="text-xs text-slate-500"><Link href={`/${idioma}/${op.slug}`}>{op.nombreCorto[idioma]}</Link></nav>
-      <h1 className="mt-1 text-2xl font-extrabold">{op.nombre[idioma]}</h1>
+      <h1 className="mt-1 text-2xl font-bold">{op.nombre[idioma]}</h1>
+      <p className="mt-1 text-sm text-slate-600">{d.dominado}: {dominadas} / {resumen.total} {d.preguntas} · {d.dominadoAyuda.toLowerCase()}.</p>
       <div className="mt-4 grid grid-cols-3 gap-3 text-center">
-        <Dato n={respondidas.length} t={d.app.respondidas} />
-        <Dato n={`${pctAcierto}%`} t={d.app.acierto} />
+        <Dato n={`${pctDominado}%`} t={d.dominado} />
+        <Dato n={`${pctAcierto}%`} t={`${d.app.acierto} · ${respondidas.length}`} />
         <Dato n={`${racha(progreso)} ${d.app.dias}`} t={d.app.racha} />
       </div>
       {!suscrito ? (
@@ -225,7 +229,7 @@ export default function Practica({ idioma, op, inicial }: { idioma: Idioma; op: 
 }
 
 function Dato({ n, t }: { n: number | string; t: string }) {
-  return <div className="tarjeta p-3"><p className="text-xl font-extrabold text-marca">{n}</p><p className="text-xs text-slate-500">{t}</p></div>;
+  return <div className="tarjeta p-3"><p className="text-xl font-bold text-marca">{n}</p><p className="text-xs text-slate-500">{t}</p></div>;
 }
 
 function reloj(seg: number) {
@@ -345,11 +349,11 @@ function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscr
   const aprobado = r.nota != null && r.nota >= (op.examen.notaCorte ?? 5);
   return (
     <div className="contenedor max-w-2xl py-6">
-      <h1 className="text-2xl font-extrabold">{d.app.resultado}</h1>
+      <h1 className="text-2xl font-bold">{d.app.resultado}</h1>
       {r.nota != null ? (
         <div className={`tarjeta mt-4 text-center ${aprobado ? 'border-ok' : 'border-mal'}`}>
           <p className="text-sm text-slate-500">{d.app.nota}</p>
-          <p className={`text-5xl font-extrabold ${aprobado ? 'text-ok' : 'text-mal'}`}>{r.nota.toLocaleString(idioma)}</p>
+          <p className={`text-5xl font-bold ${aprobado ? 'text-ok' : 'text-mal'}`}>{r.nota.toLocaleString(idioma)}</p>
           <p className="text-xs text-slate-500">/ {op.examen.notaMaxima ?? 10} · {op.examen.penalizacion ? `${d.penaliza} ${fraccion(op.examen.penalizacion, idioma)}` : d.sinPenalizacion}</p>
           {r.percentil != null ? <p className="mt-2 text-sm font-semibold text-marca">{d.app.percentil(r.percentil)}</p> : null}
         </div>
@@ -388,33 +392,34 @@ function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscr
   );
 }
 
-function Estadisticas({ idioma, op, progreso, preguntas, volver }: { idioma: Idioma; op: Oposicion; progreso: Progreso; preguntas: Pregunta[]; volver: () => void }) {
+function Estadisticas({ idioma, op, progreso, preguntas, resumen, volver }: { idioma: Idioma; op: Oposicion; progreso: Progreso; preguntas: Pregunta[]; resumen: { total: number; porTema: Record<number, number> }; volver: () => void }) {
   const d = t(idioma);
   const porTema = op.temas.map((x) => {
     const ids = preguntas.filter((p) => p.tema === x.n).map((p) => p.id);
-    let a = 0, f = 0, vistas = 0;
-    for (const id of ids) { const r = progreso.respuestas[id]; if (r) { vistas++; a += r.a; f += r.f; } }
-    return { x, total: ids.length, vistas, pct: a + f ? Math.round((a / (a + f)) * 100) : null };
+    let a = 0, f = 0, vistas = 0, dom = 0;
+    for (const id of ids) { const r = progreso.respuestas[id]; if (r) { vistas++; a += r.a; f += r.f; if (r.ok) dom++; } }
+    const totalTema = resumen.porTema[x.n] ?? ids.length;
+    return { x, total: totalTema, vistas, dom, pctDom: totalTema ? Math.round((dom / totalTema) * 100) : 0, pct: a + f ? Math.round((a / (a + f)) * 100) : null };
   });
   const exportar = () => {
     const blob = new Blob([JSON.stringify({ oposicion: op.slug, exportado: new Date().toISOString(), progreso }, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `aprova-${op.slug}.json`;
+    a.download = `placa-${op.slug}.json`;
     a.click();
   };
   return (
     <div className="contenedor max-w-2xl py-6">
       <button onClick={volver} className="text-sm text-slate-500">← {d.app.volver}</button>
-      <h1 className="mt-2 text-2xl font-extrabold">{d.app.estadisticas}</h1>
+      <h1 className="mt-2 text-2xl font-bold">{d.app.estadisticas}</h1>
       <ul className="mt-4 space-y-2">
-        {porTema.map(({ x, total, vistas, pct }) => (
+        {porTema.map(({ x, total, vistas, dom, pctDom, pct }) => (
           <li key={x.n} className="tarjeta p-3 text-sm">
-            <div className="flex justify-between gap-2"><span className="font-medium">{x.n}. {x.titulo[idioma]}</span><span className="shrink-0 text-slate-500">{vistas}/{total}</span></div>
+            <div className="flex justify-between gap-2"><span className="font-medium">{x.n}. {x.titulo[idioma]}</span><span className="shrink-0 font-semibold text-marca">{pctDom}%</span></div>
             <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-200">
-              <div className={`h-full ${pct == null ? '' : pct >= 70 ? 'bg-ok' : pct >= 50 ? 'bg-amber-500' : 'bg-mal'}`} style={{ width: `${pct ?? 0}%` }} />
+              <div className="h-full bg-ok" style={{ width: `${pctDom}%` }} />
             </div>
-            <p className="mt-1 text-xs text-slate-500">{pct == null ? '—' : `${pct}% ${d.app.acierto.toLowerCase()}`}</p>
+            <p className="mt-1 text-xs text-slate-500">{d.dominado.toLowerCase()}: {dom}/{total} · {vistas} {d.app.respondidas.toLowerCase()} · {pct == null ? '—' : `${pct}% ${d.app.acierto.toLowerCase()}`}</p>
           </li>
         ))}
       </ul>

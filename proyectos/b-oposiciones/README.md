@@ -1,4 +1,4 @@
-# Aprova · tests de oposiciones catalanas (proyecto B)
+# Plaça · tests de oposiciones catalanas (proyecto B)
 
 Plataforma de tests para las oposiciones catalanas que las grandes apps no cubren. Versión 1 con cinco oposiciones:
 
@@ -75,7 +75,7 @@ boe.es y dogc.gencat.cat no son accesibles desde la red de estas sesiones; el co
 
 ## Desplegar (Vercel + Neon + Stripe)
 Lo hace la sesión del Mac sin pedir nada a Moisés: pasos exactos en `DESPLIEGUE.md` (reglas en `DESPLIEGUES.md` de la raíz).
-Resumen: proyecto de Vercel `aprova-oposicions` con Root Directory `proyectos/b-oposiciones`; Neon `cartera-b-oposiciones`; Stripe
+Resumen: proyecto de Vercel `placa-oposicions` con Root Directory `proyectos/b-oposiciones`; Neon `cartera-b-oposiciones`; Stripe
 de la cuenta **Numi Mates** (`STRIPE_TEST_SECRET_KEY` para desarrollar, `STRIPE_SECRET_KEY` + `STRIPE_MODO=real` para cobrar);
 productos `Cartera · Oposiciones · <Plan>` creados por API, idempotentes (`scripts/stripe-preparar.mjs`, que también registra el
 webhook); Resend para recuperar contraseñas; `LEGAL_*` para los textos legales. En el build, `scripts/db-preparar.mjs` crea las
@@ -100,7 +100,16 @@ necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula p
   correo de recuperación con Resend real y el despliegue en Vercel/Neon: lo hace la sesión del Mac con `DESPLIEGUE.md`.
 
 ## Decisiones tomadas (y por qué)
-- **Marca "Aprova"** y dominio gratuito `aprova-oposicions.vercel.app` hasta que haya dominio propio (`config/marca.json`).
+- **Identidad de marca: Plaça** (familia Exámenes, `MARCAS.md` §4 y `marcas/tokens.json`): promesa «Treu plaça. Tests per a la
+  teva oposició, per fi.», índigo `#3B3FD8`, tinta `#14142B`, papel `#F6F6FB`, verde aprobado `#19B36B`, Space Grotesk (títulos)
+  e IBM Plex Sans (texto), logotipo e icono de `marcas/logos/` sin redibujar, sello «Fet a Lleida · Preu clar · Cancel·la amb un
+  clic» en el pie y en la pantalla de precio. El nombre provisional anterior («Aprova») queda para el proyecto M. Dominio:
+  `placa-oposicions.vercel.app` gratis hasta comprar `placa.cat` o `treuplaca.cat`.
+- **Fuentes alojadas en la propia app** (paquetes `@fontsource`) en vez de pedirlas a Google Fonts en cada visita: mismo
+  tipo de letra, sin enviar la IP del visitante a Google (cargar Google Fonts desde sus servidores ha sido sancionado en la UE
+  por el RGPD) y sin depender de la red en el build.
+- **Temario dominado:** la pantalla de práctica y las estadísticas muestran el porcentaje de preguntas de todo el banco de la
+  oposición cuya última respuesta fue correcta, en total y por tema (voz de la marca).
 - **Un precio para todas las oposiciones** y tres duraciones (9,99 · 7,99 · 5,99 €/mes): el opositor catalán se presenta a
   varias administraciones; el líder cobra por oposición (lista `mejorar` y `copiar` del análisis del líder).
 - **20 preguntas gratuitas fijas por oposición**, repartidas entre temas y sin registro; las demás nunca salen del servidor

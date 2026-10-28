@@ -20,7 +20,7 @@ export default async function Legal({ params }: P) {
   const d = legal(doc as DocLegal, lang);
   return (
     <article className="contenedor prosa max-w-3xl py-10">
-      <h1 className="text-3xl font-extrabold">{d.titulo}</h1>
+      <h1 className="text-3xl font-bold">{d.titulo}</h1>
       {d.secciones.map((s) => (<section key={s.h}><h2>{s.h}</h2>{s.p.map((x, i) => <p key={i}>{x}</p>)}</section>))}
       <p className="mt-8 text-xs text-slate-500">{lang === 'ca' ? 'Darrera actualització' : 'Última actualización'}: 2026-10-28</p>
     </article>

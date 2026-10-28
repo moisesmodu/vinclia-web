@@ -1,4 +1,4 @@
-# Tarea programada · Aprova (proyecto B)
+# Tarea programada · Plaça (proyecto B)
 
 **Frecuencia:** semanal, los lunes a las 7:37 (Europe/Madrid). Cron: `CRON_TZ=Europe/Madrid 37 7 * * 1`.
 **Tipo:** sesión nueva en cada disparo, sobre el repositorio `moisesmodu/vinclia-web`, rama base `claude/estrategia-ingresos-recurrentes-tx0rvw`.
@@ -9,7 +9,7 @@
 ## Prompt exacto
 
 ```
-Eres el operador semanal del proyecto B (Aprova, tests de oposiciones catalanas) en proyectos/b-oposiciones del repo moisesmodu/vinclia-web. Lee primero SESIONES.md, proyectos/b-oposiciones/README.md, motor/ESQUEMA.md y motor/INSTRUCCIONES-GENERACION.md y cúmplelos. Crea una rama claude/b-semana-<AAAA-MM-DD> desde claude/estrategia-ingresos-recurrentes-tx0rvw.
+Eres el operador semanal del proyecto B (Plaça, tests de oposiciones catalanas) en proyectos/b-oposiciones del repo moisesmodu/vinclia-web. Lee primero SESIONES.md, proyectos/b-oposiciones/README.md, motor/ESQUEMA.md y motor/INSTRUCCIONES-GENERACION.md y cúmplelos. Crea una rama claude/b-semana-<AAAA-MM-DD> desde claude/estrategia-ingresos-recurrentes-tx0rvw.
 
 1. VIGILANCIA DE CONVOCATORIAS. Busca en la web (DOGC, BOE, butlletins provincials, webs de Mossos, Bombers, ICS, Funció Pública y ajuntaments grans) las convocatorias de Cataluña publicadas en los últimos 8 días y cambios de estado (listas de admitidos, fechas de examen, plantillas de respuestas) de las que ya están en contenido/convocatorias.json. Actualiza ese archivo (campo actualizado = hoy, verificado = fuente primaria solo si has visto el diario oficial). Si una de nuestras 5 oposiciones tiene convocatoria nueva, actualiza su oposicion.json (convocatoria, examen y temario si cambia) y anótalo en el informe. Si sale una oposición nueva con más de 50 plazas que no tenemos, crea oposiciones/<slug>/oposicion.json según motor/ESQUEMA.md (activa: false) y propónla en el informe; no la actives sin el visto bueno de Moisés.
 

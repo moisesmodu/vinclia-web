@@ -22,5 +22,5 @@ export default async function Pagina({ params, searchParams }: P) {
   const sp = await searchParams;
   const b = banco(oposicion);
   if (!b) notFound();
-  return <Practica idioma={lang} op={b.oposicion} inicial={{ tema: sp.tema ? Number(sp.tema) : undefined, modo: sp.modo }} />;
+  return <Practica idioma={lang} op={b.oposicion} resumen={{ total: b.resumen.total, porTema: b.resumen.porTema }} inicial={{ tema: sp.tema ? Number(sp.tema) : undefined, modo: sp.modo }} />;
 }

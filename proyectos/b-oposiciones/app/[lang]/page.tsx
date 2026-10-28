@@ -23,7 +23,7 @@ export default async function Inicio({ params }: { params: Promise<{ lang: Idiom
       <section className="bg-gradient-to-b from-marca-claro/60 to-slate-50">
         <div className="contenedor py-12 sm:py-16">
           <p className="etiqueta">{totalPreguntas()} {d.preguntas} · {d.verificadas}</p>
-          <h1 className="mt-4 max-w-3xl text-3xl font-extrabold leading-tight sm:text-5xl">{d.heroTitulo}</h1>
+          <h1 className="mt-4 max-w-3xl text-3xl font-bold leading-tight sm:text-5xl">{d.heroTitulo}</h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-700">{d.heroTexto}</p>
           <p className="mt-3 text-sm font-medium text-slate-600">{d.gratisN(pais.gratisPorOposicion)} · {precioTexto(mensual.importe, lang)}{d.porMes}</p>
         </div>

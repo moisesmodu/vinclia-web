@@ -4,12 +4,12 @@ import { cookies } from 'next/headers';
 import { db, hayDb } from './db';
 import { sincronizarSiHaceFalta } from './pagos';
 
-const COOKIE = 'aprova_sesion';
+const COOKIE = 'placa_sesion';
 const DIAS = 60;
 
 /** Secreto de sesión: AUTH_SECRET si existe; si no, derivado de las claves que ya hay (así Moisés no tiene que crear otra). */
 function secreto(): string {
-  const base = process.env.AUTH_SECRET || `${process.env.DATABASE_URL ?? ''}|aprova`;
+  const base = process.env.AUTH_SECRET || `${process.env.DATABASE_URL ?? ''}|placa`;
   return crypto.createHash('sha256').update(base).digest('hex');
 }
 

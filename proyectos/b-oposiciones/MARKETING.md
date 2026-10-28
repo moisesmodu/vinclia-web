@@ -1,4 +1,4 @@
-# Marketing · Aprova (proyecto B)
+# Marketing · Plaça (proyecto B)
 
 Escenario: S1 prudente (VIABILIDAD §1 y §5). Orgánico desde el día 1. Anuncios de búsqueda de 100 €/mes **preparados y sin
 activar**: se encienden en el mes 2 solo con la aprobación mensual de Moisés. Nada se publica fuera sin su visto bueno.
@@ -30,7 +30,7 @@ lo muestran), y cuando sale una convocatoria nueva crea su oposición (archivo d
 ## 2. Ficha de Google Play (la PWA empaquetada como TWA; `android/twa-manifest.json`)
 
 **Catalán**
-- Nom: Aprova · Oposicions de Catalunya
+- Nom: Plaça · Oposicions de Catalunya
 - Descripció breu (80): Tests i simulacres d'oposicions catalanes amb l'article de la llei a cada resposta.
 - Descripció llarga:
   Prepara les oposicions de la Generalitat, Mossos d'Esquadra, Bombers, l'ICS i els ajuntaments de Catalunya amb tests fets a partir dels textos legals oficials.
@@ -40,12 +40,12 @@ lo muestran), y cuando sale una convocatoria nueva crea su oposición (archivo d
   • Cada resposta amb explicació, l'article exacte i el text literal de la font.
   • En català i en castellà: canvia d'idioma a cada pregunta.
   • Estadístiques per tema, ratxa diària i historial que no s'esborra mai.
-  20 preguntes gratis per oposició, sense registre. Subscripció de 9,99 €/mes per a totes les oposicions. Les preguntes s'han generat amb intel·ligència artificial a partir de la normativa vigent i s'han verificat contra la font. Aprova no és cap administració pública.
+  20 preguntes gratis per oposició, sense registre. Subscripció de 9,99 €/mes per a totes les oposicions. Les preguntes s'han generat amb intel·ligència artificial a partir de la normativa vigent i s'han verificat contra la font. Plaça no és cap administració pública.
 
 **Castellano**
-- Nombre: Aprova · Oposiciones de Cataluña
+- Nombre: Plaça · Oposiciones de Cataluña
 - Descripción breve (80): Tests y simulacros de oposiciones catalanas con el artículo de la ley en cada respuesta.
-- Descripción larga: (misma estructura que la catalana) Prepara las oposiciones de la Generalitat, Mossos d'Esquadra, Bombers, el ICS y los ayuntamientos de Cataluña con tests hechos a partir de los textos legales oficiales. • Tests por tema • Simulacros con el formato real • Repaso espaciado • Explicación, artículo y texto literal de la fuente • Catalán y castellano • Estadísticas e historial permanente. 20 preguntas gratis por oposición, sin registro. Suscripción de 9,99 €/mes para todas. Preguntas generadas con IA a partir de la normativa vigente y verificadas contra la fuente. Aprova no es una administración pública.
+- Descripción larga: (misma estructura que la catalana) Prepara las oposiciones de la Generalitat, Mossos d'Esquadra, Bombers, el ICS y los ayuntamientos de Cataluña con tests hechos a partir de los textos legales oficiales. • Tests por tema • Simulacros con el formato real • Repaso espaciado • Explicación, artículo y texto literal de la fuente • Catalán y castellano • Estadísticas e historial permanente. 20 preguntas gratis por oposición, sin registro. Suscripción de 9,99 €/mes para todas. Preguntas generadas con IA a partir de la normativa vigente y verificadas contra la fuente. Plaça no es una administración pública.
 - **Declaración de contenido con IA** (obligatoria en Play, regla 6 de SESIONES): marcar "La app contiene contenido generado por IA" y el texto de las descripciones de arriba.
 - Categoría: Educación. Clasificación: PEGI 3. Icono: `public/icons/play-512.png`. Capturas: las de la prueba de móvil (ver README).
 - Pagos dentro de la TWA: Google exige Play Billing para contenido digital vendido dentro de la app. Hasta integrarlo, la ficha
@@ -82,7 +82,7 @@ Créditos de Higgsfield/ElevenLabs **no gastados en esta sesión** (0): los guio
 
 ## 6. Campaña de búsqueda (preparada, **sin activar**)
 - **Presupuesto:** 100 €/mes (≈ 3,30 €/día) desde el mes 2, con aprobación mensual. Solo búsqueda, sin Display ni Performance Max.
-- **Estructura:** 1 campaña "Aprova - Busqueda Cataluña", ubicación Cataluña, idiomas catalán y castellano, 6 grupos de
+- **Estructura:** 1 campaña "Plaça - Busqueda Cataluña", ubicación Cataluña, idiomas catalán y castellano, 6 grupos de
   anuncios (Mossos, Generalitat C2, Ayuntamientos C2, Bombers, TCAI ICS, genéricas). Concordancia de frase, CPC máximo 0,50-0,80 €.
 - **Archivos para Google Ads Editor:** `marketing/google-ads/palabras-clave.csv` (29 palabras clave), `negativas.csv` (20 negativas), `anuncios.csv` (6 anuncios adaptables con 5 títulos y 2 descripciones).
 - **Conversión:** alta de suscripción (página `/cuenta?pagado=1`). Etiqueta de conversión sin cookies de terceros hasta tener banner de consentimiento: medir por Stripe (clientes con `utm_source=google`).

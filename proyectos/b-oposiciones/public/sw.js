@@ -1,5 +1,5 @@
 // Service worker mínimo: la app se instala y las páginas visitadas funcionan sin conexión.
-const CACHE = 'aprova-v1';
+const CACHE = 'placa-v1';
 self.addEventListener('install', (e) => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/ca', '/es']).catch(() => {}))); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', (e) => {

@@ -70,7 +70,7 @@ export default async function PaginaOposicion({ params }: P) {
     <div className="contenedor py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
       <nav className="text-xs text-slate-500"><Link href={`/${lang}`}>{marca.nombre}</Link> › {o.nombreCorto[lang]}</nav>
-      <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">
+      <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
         {lang === 'ca' ? `Test ${o.nombre.ca} gratis` : `Test ${o.nombre.es} gratis`}
       </h1>
       {o.cuerpo?.[lang] ? <p className="mt-1 text-slate-600">{o.cuerpo[lang]}</p> : null}

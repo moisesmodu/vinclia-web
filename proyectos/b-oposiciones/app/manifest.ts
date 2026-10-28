@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     scope: '/',
     display: 'standalone',
     orientation: 'portrait',
-    background_color: '#f8fafc',
+    background_color: '#F6F6FB',
     theme_color: marca.color,
     lang: 'ca',
     categories: ['education'],

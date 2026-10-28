@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
+import '@fontsource/space-grotesk/700.css';
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/600.css';
 import '../globals.css';
 import { esIdioma } from '@/lib/i18n';
 import { IDIOMAS } from '@/lib/tipos';
@@ -19,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: { default: `${marca.nombre} · ${marca.lema[l]}`, template: `%s · ${marca.nombre}` },
     description: marca.lema[l],
     manifest: '/manifest.webmanifest',
-    icons: { icon: '/icons/icon-192.png', apple: '/icons/icon-192.png' },
+    icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }, { url: '/icons/icon-192.png', sizes: '192x192' }], apple: '/icons/icon-192.png' },
     appleWebApp: { capable: true, title: marca.nombre, statusBarStyle: 'default' },
   };
 }

@@ -21,7 +21,7 @@ export default async function Cuenta({ params, searchParams }: { params: Promise
   const fecha = u.suscripcionHasta ? u.suscripcionHasta.toLocaleDateString(lang === 'ca' ? 'ca-ES' : 'es-ES') : '';
   return (
     <div className="contenedor py-10">
-      <h1 className="text-2xl font-extrabold">{d.cuenta}</h1>
+      <h1 className="text-2xl font-bold">{d.cuenta}</h1>
       <p className="mt-1 text-slate-600">{u.email}</p>
       {pagado ? <p className="mt-4 rounded-lg bg-green-50 p-3 text-sm font-semibold text-ok">✓ {lang === 'ca' ? 'Subscripció activada. Ja tens totes les preguntes.' : 'Suscripción activada. Ya tienes todas las preguntas.'}{pagado === 'demo' ? ' (demo)' : ''}</p> : null}
       <div className="tarjeta mt-6 max-w-xl">

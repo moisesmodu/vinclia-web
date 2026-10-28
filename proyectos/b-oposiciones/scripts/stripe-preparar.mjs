@@ -3,7 +3,7 @@
 //   - un producto por plan "Cartera · Oposiciones · <Plan>" con metadata.proyecto = b-oposiciones
 //   - su precio recurrente con lookup_key b-oposiciones_<pais>_<plan>_<importe> (IVA incluido)
 //   - el webhook <URL>/api/stripe/webhook con los eventos que usa la app
-// Uso: STRIPE_TEST_SECRET_KEY=sk_test_… node scripts/stripe-preparar.mjs https://aprova-oposicions.vercel.app
+// Uso: STRIPE_TEST_SECRET_KEY=sk_test_… node scripts/stripe-preparar.mjs https://placa-oposicions.vercel.app
 //      (para producción: STRIPE_MODO=real STRIPE_SECRET_KEY=rk_live_…)
 // Imprime al final la línea STRIPE_WEBHOOK_SECRET=… para guardarla en Vercel.
 import fs from 'node:fs';

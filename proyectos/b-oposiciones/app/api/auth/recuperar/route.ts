@@ -20,10 +20,10 @@ export async function POST(req: Request) {
     const ca = idioma === 'ca';
     await enviarCorreo(
       u.email,
-      ca ? 'Canvia la teva contrasenya d\'Aprova' : 'Cambia tu contraseña de Aprova',
+      ca ? 'Canvia la teva contrasenya d\'Plaça' : 'Cambia tu contraseña de Plaça',
       ca
-        ? `Hola,\n\nPer posar una contrasenya nova, obre aquest enllaç (caduca en 1 hora):\n${enlace}\n\nSi no ho has demanat tu, ignora aquest correu.\n\nAprova`
-        : `Hola:\n\nPara poner una contraseña nueva, abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.\n\nAprova`,
+        ? `Hola,\n\nPer posar una contrasenya nova, obre aquest enllaç (caduca en 1 hora):\n${enlace}\n\nSi no ho has demanat tu, ignora aquest correu.\n\nPlaça`
+        : `Hola:\n\nPara poner una contraseña nueva, abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.\n\nPlaça`,
     ).catch(() => false);
   }
   return json({ ok: true });

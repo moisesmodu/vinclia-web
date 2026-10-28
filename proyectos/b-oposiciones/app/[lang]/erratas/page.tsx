@@ -20,7 +20,7 @@ export default async function Erratas({ params }: { params: Promise<{ lang: Idio
     : [];
   return (
     <div className="contenedor max-w-3xl py-10">
-      <h1 className="text-2xl font-extrabold">{t(lang).pie.erratas}</h1>
+      <h1 className="text-2xl font-bold">{t(lang).pie.erratas}</h1>
       <p className="mt-2 text-slate-700">{ca ? 'Cada avís d\'error es revisa en menys de 24 hores laborables. Aquí queden les preguntes corregides.' : 'Cada aviso de error se revisa en menos de 24 horas laborables. Aquí quedan las preguntas corregidas.'}</p>
       {lista.length ? (
         <ul className="mt-6 space-y-2 text-sm">

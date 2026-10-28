@@ -11,7 +11,7 @@ export default async function Entrar({ params, searchParams }: { params: Promise
   const destino = siguiente && siguiente.startsWith('/') && !siguiente.startsWith('//') ? siguiente : `/${lang}/cuenta`;
   return (
     <div className="contenedor py-10">
-      <h1 className="text-2xl font-extrabold">{t(lang).login.titulo}</h1>
+      <h1 className="text-2xl font-bold">{t(lang).login.titulo}</h1>
       <FormularioEntrar idioma={lang} siguiente={destino} />
     </div>
   );

@@ -460,7 +460,7 @@
   "letra": "B",
   "nombre": "Oposiciones de cola larga",
   "marca": "Plaça · familia Exámenes",
-  "resumen": "Aprova: tests, simulacros con el formato real y repaso espaciado para 5 oposiciones catalanas (Generalitat C2, ayuntamientos, Mossos, Bombers, TCAI ICS), en catalán y castellano, con 1.737 preguntas verificadas contra la ley.",
+  "resumen": "Plaça: tests, simulacros con el formato real y repaso espaciado para 5 oposiciones catalanas (Generalitat C2, ayuntamientos, Mossos, Bombers, TCAI ICS), en catalán y castellano, con 1.737 preguntas verificadas contra la ley.",
   "estado": "en construcción",
   "orden": 3,
   "modelo": "Suscripción 9,99 €/mes",
@@ -472,7 +472,7 @@
   "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
   "enlaces": {
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/proyecto-b-oposiciones/proyectos/b-oposiciones",
-   "demo": "https://aprova-oposicions.vercel.app (pendiente de desplegar)",
+   "demo": "https://placa-oposicions.vercel.app (pendiente de desplegar)",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/7"
   },
   "acciones": [
@@ -519,10 +519,14 @@
    {
     "fecha": "2026-10-28",
     "texto": "Identidad de marca definida: Plaça («Treu plaça. Tests per a la teva oposició, per fi.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Identidad de marca aplicada: Plaça (familia Exámenes), colores, Space Grotesk + IBM Plex Sans, logotipo e icono, sello en el pie y pantalla de precio común; temario dominado en %"
    }
   ],
   "proximos": [
-   "Sesión del Mac: ejecutar proyectos/b-oposiciones/DESPLIEGUE.md (Vercel, Neon, Stripe Numi Mates, Resend)",
+   "Sesión del Mac: ejecutar proyectos/b-oposiciones/DESPLIEGUE.md (los secretos ya están en el entorno; desde las sesiones en la nube api.stripe.com, api.vercel.com, console.neon.tech y api.resend.com siguen bloqueados)",
    "Crear la tarea programada semanal (TAREA-PROGRAMADA.md)",
    "Mes 2: decidir anuncios de búsqueda (100 €/mes, campaña lista)",
    "Incorporar exámenes oficiales anteriores cuando se puedan leer los PDF",
@@ -530,8 +534,8 @@
   ],
   "paraMoises": [
    "Nada hoy: el despliegue lo hace la sesión del Mac",
-   "Opcional: dominio propio (aprova.cat o similar)",
-   "Mes 2: aprobar o no los anuncios de búsqueda"
+   "Mes 2: aprobar o no los anuncios de búsqueda",
+   "Opcional: dominio propio (placa.cat o treuplaca.cat)"
   ],
   "mejoras": [
    "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",

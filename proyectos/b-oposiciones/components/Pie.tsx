@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Idioma } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
 import { marca, oposiciones } from '@/lib/datos';
+import Logo from './Logo';
 
 export default function Pie({ idioma }: { idioma: Idioma }) {
   const d = t(idioma);
@@ -10,8 +11,9 @@ export default function Pie({ idioma }: { idioma: Idioma }) {
     <footer className="mt-16 border-t border-slate-200 bg-white">
       <div className="contenedor grid gap-8 py-10 text-sm sm:grid-cols-3">
         <div>
-          <p className="font-bold text-marca">{marca.nombre}</p>
+          <Logo alto={28} />
           <p className="mt-2 text-slate-600">{d.pie.ia}</p>
+          <p className="mt-3 inline-block rounded-lg bg-marca-claro px-2.5 py-1 text-xs font-semibold text-marca-oscuro">{marca.sello[idioma]}</p>
         </div>
         <div>
           <p className="font-semibold">{d.oposiciones}</p>

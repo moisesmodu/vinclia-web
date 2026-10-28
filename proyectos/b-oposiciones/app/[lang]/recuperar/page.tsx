@@ -9,7 +9,7 @@ export default async function Recuperar({ params, searchParams }: { params: Prom
   const { t } = await searchParams;
   return (
     <div className="contenedor py-10">
-      <h1 className="text-2xl font-extrabold">{lang === 'ca' ? 'Recuperar la contrasenya' : 'Recuperar la contraseña'}</h1>
+      <h1 className="text-2xl font-bold">{lang === 'ca' ? 'Recuperar la contrasenya' : 'Recuperar la contraseña'}</h1>
       <FormularioRecuperar idioma={lang} token={t} />
     </div>
   );
