@@ -37,6 +37,12 @@ su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 
 ## 2. Stripe: la cuenta real de Numi Mates para todos los proyectos
 
+> Atajo sin claves: la sesión madre («Estrategia ingresos recurrentes») tiene el conector de Stripe de claude.ai conectado a
+> esta cuenta. Lee sin problema, pero el 28/10 las escrituras devolvieron «Forbidden»: el conector está en modo solo
+> lectura. Si Moisés abre claude.ai → Ajustes → Conectores → Stripe y permite las herramientas de escritura, la sesión
+> madre crea los productos, precios y webhooks de todos los proyectos sin ninguna clave. Los scripts
+> `stripe-configurar.mjs` de cada proyecto son repetibles y reutilizan lo que ya exista.
+
 - Cuenta: **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`), modo real. No se abren cuentas nuevas.
 - Desarrollo y pruebas con las claves de **modo prueba de la misma cuenta**; al lanzar, las de modo real.
 - Cada proyecto crea sus productos y precios por API, con nombre `Cartera · <Proyecto> · <Plan>` y
@@ -87,10 +93,15 @@ de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
 | #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
 | #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
 | #5 | G · Lunilla | `claude/g-cuentos` | sí | Neon `cartera-g-cuentos` (aws-eu-west-2), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, `scripts/stripe-configurar.mjs` (PDF 7,90 €, tapa dura 36,90 €), Resend; Gelato lo abre Moisés |
-| #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos proyectos de Vercel (`netoclaro`, `impuestoclaro`), Root Directory `proyectos/p-webs-adsense/fabrica`, variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
+| #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos caminos: (A) Cloudflare Pages con wrangler y el workflow `p-webs-adsense.yml`, que publica solo en cada push a la base si existe `CLOUDFLARE_API_TOKEN`; (B) Vercel Pro (`netoclaro`, `impuestoclaro`, Root Directory `proyectos/p-webs-adsense/fabrica`). Variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
 
 Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
 "abre esta página", nada más.
+
+**Proyecto de Vercel `ccse-en-tu-idioma` ya existente:** compila todas las ramas del repositorio y pone en rojo los PR
+que no son de A (lo detectó la sesión P en el PR #6). Arreglo, en Vercel → Settings → Git: Production Branch =
+`claude/estrategia-ingresos-recurrentes-tx0rvw` e Ignored Build Step = `git diff HEAD^ HEAD --quiet -- proyectos/a-ccse`
+(sale 0 y se salta el build cuando A no cambia). Mismo criterio para cada proyecto de Vercel nuevo con su carpeta.
 
 **Importante:** la sesión «Despliegues vercel neon MAC» abierta el 28/10 a las 00:50 quedó archivada tres segundos
 después (el terminal de `claude remote-control` se cerró). Tiene que quedarse abierta en el Mac, con el terminal en

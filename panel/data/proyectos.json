@@ -45,6 +45,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac; proyecto Vercel «ccse-en-tu-idioma»"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "El proyecto de Vercel ccse-en-tu-idioma ya existe y compila todas las ramas: la sesión del Mac debe fijar la rama de producción y el Ignored Build Step (DESPLIEGUES.md §5)"
       }
     ],
     "proximos": [
@@ -668,7 +672,7 @@
     "nombre": "Juegos",
     "marca": "Juegos",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -679,7 +683,8 @@
     "canal": "La plataforma distribuye; sin marketing",
     "enlaces": {
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
-      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv"
+      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
+      "Web": "https://juegos-casuales.vercel.app/egg-truck/"
     },
     "acciones": [
       {
@@ -709,10 +714,13 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md listo: proyecto Vercel «juegos-casuales» (Root Directory proyectos/juegos), sin Neon ni Stripe"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en Vercel (proyecto juegos-casuales): https://juegos-casuales.vercel.app/egg-truck/"
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/juegos/DESPLIEGUE.md",
       "Segundo juego con la plantilla",
       "Plan de Roblox"
     ],
@@ -1799,7 +1807,7 @@
     "nombre": "Cursos en Udemy",
     "marca": "Pasivos",
     "resumen": "Dos cursos en vídeo: programación para niños desde casa (para padres) e IA práctica para pequeños negocios.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 8,
     "modelo": "15–40 € por curso; Udemy se queda el 63 % si trae al alumno",
     "margenCliente": 8,
@@ -1836,15 +1844,18 @@
       {
         "fecha": "2026-10-28",
         "texto": "Prompt actualizado: los cursos 1 y 2 se producen a partir de los 108 sesiones de Numi Tech (Robot, Creadors, Robòtica, Digital) con sus presentaciones, guías e imprimibles"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Cursos 1, 2 y 4 construidos a partir de Numi Tech (parte castellana, presenta.html, imprimibles y simulador); producción de vídeos en marcha, unas 5–6 h; PR al terminar"
       }
     ],
     "proximos": [
-      "Sesión J: traducir y convertir las sesiones de Numi Tech en lecciones en vídeo (presentaciones + simulador grabado + voz)",
-      "Abrir la sesión J"
+      "Terminar los vídeos y abrir el PR",
+      "DESPLIEGUE.md: página privada de entrega y tareas programadas por la sesión del Mac"
     ],
     "paraMoises": [
-      "Cuenta de instructor",
-      "Subir los cursos"
+      "Abrir la cuenta de instructor en Udemy y subir los cursos cuando estén entregados"
     ],
     "mejoras": [
       "Reutilizar Numi Tech: 4 cursos revisados con 108 sesiones, guías del profesor, presentaciones, imprimibles y solucionario; de ahí salen el curso para padres y el de robótica con micro:bit sin escribirlos desde cero, y la app es la venta cruzada natural",
