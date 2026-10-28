@@ -1,0 +1,318 @@
+[
+  {
+    "id": "bomb-t08-001",
+    "tema": 8,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué tres elementos forman el triángulo del fuego?",
+      "opciones": [
+        "Combustible, comburente y energía de activación",
+        "Combustible, comburente y reacción en cadena",
+        "Calor, humo y llama",
+        "Oxígeno, nitrógeno y combustible"
+      ],
+      "explicacion": "El triángulo del fuego representa los tres elementos necesarios para que se inicie la combustión: combustible, comburente (normalmente el oxígeno del aire) y energía de activación (calor). La reacción en cadena es el cuarto elemento del tetraedro."
+    },
+    "ca": {
+      "enunciado": "Quins tres elements formen el triangle del foc?",
+      "opciones": [
+        "Combustible, comburent i energia d'activació",
+        "Combustible, comburent i reacció en cadena",
+        "Calor, fum i flama",
+        "Oxigen, nitrogen i combustible"
+      ],
+      "explicacion": "El triangle del foc representa els tres elements necessaris perquè s'iniciï la combustió: combustible, comburent (normalment l'oxigen de l'aire) i energia d'activació (calor). La reacció en cadena és el quart element del tetràedre."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-002",
+    "tema": 8,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué cuarto elemento añade el tetraedro del fuego al triángulo del fuego?",
+      "opciones": [
+        "La energía de activación",
+        "La reacción en cadena",
+        "El comburente",
+        "La carga de fuego"
+      ],
+      "explicacion": "El tetraedro del fuego añade la reacción en cadena, que explica la propagación y el mantenimiento de la combustión con llama; los otros tres elementos ya forman parte del triángulo."
+    },
+    "ca": {
+      "enunciado": "Quin quart element afegeix el tetràedre del foc al triangle del foc?",
+      "opciones": [
+        "L'energia d'activació",
+        "La reacció en cadena",
+        "El comburent",
+        "La càrrega de foc"
+      ],
+      "explicacion": "El tetràedre del foc afegeix la reacció en cadena, que explica la propagació i el manteniment de la combustió amb flama; els altres tres elements ja formen part del triangle."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-003",
+    "tema": 8,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El mecanismo de extinción que actúa interrumpiendo la reacción en cadena de la combustión se denomina:",
+      "opciones": [
+        "Sofocación",
+        "Enfriamiento",
+        "Inhibición",
+        "Dilución del combustible"
+      ],
+      "explicacion": "La inhibición (o rotura de la reacción en cadena) actúa sobre el cuarto lado del tetraedro. La sofocación elimina o separa el comburente y el enfriamiento reduce la temperatura por debajo de la necesaria para mantener la combustión."
+    },
+    "ca": {
+      "enunciado": "El mecanisme d'extinció que actua interrompent la reacció en cadena de la combustió s'anomena:",
+      "opciones": [
+        "Sufocació",
+        "Refredament",
+        "Inhibició",
+        "Dilució del combustible"
+      ],
+      "explicacion": "La inhibició (o trencament de la reacció en cadena) actua sobre el quart costat del tetràedre. La sufocació elimina o separa el comburent i el refredament redueix la temperatura per sota de la necessària per mantenir la combustió."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-004",
+    "tema": 8,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Por qué mecanismo extingue principalmente el agua?",
+      "opciones": [
+        "Por inhibición de la reacción en cadena",
+        "Por sofocación",
+        "Por eliminación del combustible",
+        "Por enfriamiento"
+      ],
+      "explicacion": "El agua extingue sobre todo por enfriamiento, gracias a su gran capacidad de absorber calor al calentarse y evaporarse; el vapor generado contribuye además, de forma secundaria, a la sofocación."
+    },
+    "ca": {
+      "enunciado": "Per quin mecanisme extingeix principalment l'aigua?",
+      "opciones": [
+        "Per inhibició de la reacció en cadena",
+        "Per sufocació",
+        "Per eliminació del combustible",
+        "Per refredament"
+      ],
+      "explicacion": "L'aigua extingeix sobretot per refredament, gràcies a la seva gran capacitat d'absorbir calor en escalfar-se i evaporar-se; el vapor generat també contribueix, de manera secundària, a la sufocació."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-005",
+    "tema": 8,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El dióxido de carbono (CO₂) como agente extintor actúa principalmente por:",
+      "opciones": [
+        "Sofocación, desplazando el oxígeno",
+        "Inhibición química de la reacción en cadena",
+        "Eliminación del combustible",
+        "Formación de una costra aislante sobre las brasas"
+      ],
+      "explicacion": "El CO₂ es un gas inerte que extingue principalmente por sofocación, al desplazar el oxígeno de la zona del fuego; su descarga produce además cierto enfriamiento. La costra sobre las brasas es propia del polvo polivalente en fuegos de clase A."
+    },
+    "ca": {
+      "enunciado": "El diòxid de carboni (CO₂) com a agent extintor actua principalment per:",
+      "opciones": [
+        "Sufocació, desplaçant l'oxigen",
+        "Inhibició química de la reacció en cadena",
+        "Eliminació del combustible",
+        "Formació d'una crosta aïllant sobre les brases"
+      ],
+      "explicacion": "El CO₂ és un gas inert que extingeix principalment per sufocació, en desplaçar l'oxigen de la zona del foc; la seva descàrrega també produeix cert refredament. La crosta sobre les brases és pròpia de la pols polivalent en focs de classe A."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-006",
+    "tema": 8,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la norma UNE-EN 2, los fuegos de clase B son los de:",
+      "opciones": [
+        "Materiales sólidos, normalmente de naturaleza orgánica, que forman brasas",
+        "Líquidos o sólidos licuables",
+        "Gases",
+        "Metales"
+      ],
+      "explicacion": "La norma UNE-EN 2 clasifica como clase B los fuegos de líquidos o de sólidos licuables (gasolina, alcoholes, ceras, parafinas…). Los sólidos con brasa son clase A; los gases, clase C, y los metales, clase D."
+    },
+    "ca": {
+      "enunciado": "Segons la norma UNE-EN 2, els focs de classe B són els de:",
+      "opciones": [
+        "Materials sòlids, normalment de naturalesa orgànica, que formen brases",
+        "Líquids o sòlids liquables",
+        "Gasos",
+        "Metalls"
+      ],
+      "explicacion": "La norma UNE-EN 2 classifica com a classe B els focs de líquids o de sòlids liquables (gasolina, alcohols, ceres, parafines…). Els sòlids amb brasa són classe A; els gasos, classe C, i els metalls, classe D."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Norma UNE-EN 2:1994/A1:2005, Clases de fuego (AENOR) · Guia orientativa d'estudi del Cos de Bombers, convocatòria 81/26"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-007",
+    "tema": 8,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un incendio de magnesio o de sodio pertenece, según la norma UNE-EN 2, a la:",
+      "opciones": [
+        "Clase A",
+        "Clase C",
+        "Clase D",
+        "Clase F"
+      ],
+      "explicacion": "La clase D agrupa los fuegos de metales (magnesio, sodio, potasio, titanio…), que requieren agentes extintores especiales; el agua puede reaccionar violentamente con algunos de ellos."
+    },
+    "ca": {
+      "enunciado": "Un incendi de magnesi o de sodi pertany, segons la norma UNE-EN 2, a la:",
+      "opciones": [
+        "Classe A",
+        "Classe C",
+        "Classe D",
+        "Classe F"
+      ],
+      "explicacion": "La classe D agrupa els focs de metalls (magnesi, sodi, potassi, titani…), que requereixen agents extintors especials; l'aigua pot reaccionar violentament amb alguns d'aquests metalls."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Norma UNE-EN 2:1994/A1:2005, Clases de fuego (AENOR) · Guia orientativa d'estudi del Cos de Bombers, convocatòria 81/26"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-008",
+    "tema": 8,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué fuegos forman la clase F según la norma UNE-EN 2?",
+      "opciones": [
+        "Los de metales combustibles",
+        "Los de gases inflamables",
+        "Los de líquidos inflamables derivados del petróleo",
+        "Los de ingredientes para cocinar (aceites y grasas vegetales o animales) en aparatos de cocina"
+      ],
+      "explicacion": "La clase F, añadida a la UNE-EN 2 por su modificación A1:2005, comprende los fuegos de aceites y grasas de cocina en los aparatos de cocina, que necesitan agentes específicos."
+    },
+    "ca": {
+      "enunciado": "Quins focs formen la classe F segons la norma UNE-EN 2?",
+      "opciones": [
+        "Els de metalls combustibles",
+        "Els de gasos inflamables",
+        "Els de líquids inflamables derivats del petroli",
+        "Els d'ingredients per cuinar (olis i greixos vegetals o animals) en aparells de cuina"
+      ],
+      "explicacion": "La classe F, afegida a la UNE-EN 2 per la seva modificació A1:2005, comprèn els focs d'olis i greixos de cuina en els aparells de cuina, que necessiten agents específics."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Norma UNE-EN 2:1994/A1:2005, Clases de fuego (AENOR) · Guia orientativa d'estudi del Cos de Bombers, convocatòria 81/26"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-009",
+    "tema": 8,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la norma UNE-EN 2, los fuegos en los que intervienen equipos eléctricos en tensión:",
+      "opciones": [
+        "No constituyen una clase de fuego propia",
+        "Forman la clase E",
+        "Forman la clase C",
+        "Se incluyen siempre en la clase A"
+      ],
+      "explicacion": "La UNE-EN 2 solo define las clases A, B, C, D y F; no establece una clase para el riesgo eléctrico, que se trata como una circunstancia añadida que condiciona la elección del agente extintor. La «clase E» no existe en esta norma."
+    },
+    "ca": {
+      "enunciado": "Segons la norma UNE-EN 2, els focs en què intervenen equips elèctrics en tensió:",
+      "opciones": [
+        "No constitueixen una classe de foc pròpia",
+        "Formen la classe E",
+        "Formen la classe C",
+        "S'inclouen sempre a la classe A"
+      ],
+      "explicacion": "La UNE-EN 2 només defineix les classes A, B, C, D i F; no estableix una classe per al risc elèctric, que es tracta com una circumstància afegida que condiciona l'elecció de l'agent extintor. La «classe E» no existeix en aquesta norma."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Norma UNE-EN 2:1994/A1:2005, Clases de fuego (AENOR) · Guia orientativa d'estudi del Cos de Bombers, convocatòria 81/26"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t08-010",
+    "tema": 8,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "La temperatura mínima a la que un líquido desprende vapores suficientes para formar con el aire una mezcla que se inflama al aplicarle una fuente de ignición se denomina:",
+      "opciones": [
+        "Temperatura de autoignición",
+        "Punto de inflamación",
+        "Punto de ebullición",
+        "Límite superior de inflamabilidad"
+      ],
+      "explicacion": "Es el punto de inflamación (flash point). La temperatura de autoignición es aquella a la que la mezcla arde sin necesidad de una fuente de ignición externa, y los límites de inflamabilidad expresan concentraciones, no temperaturas."
+    },
+    "ca": {
+      "enunciado": "La temperatura mínima a la qual un líquid desprèn vapors suficients per formar amb l'aire una mescla que s'inflama quan s'hi aplica una font d'ignició s'anomena:",
+      "opciones": [
+        "Temperatura d'autoignició",
+        "Punt d'inflamació",
+        "Punt d'ebullició",
+        "Límit superior d'inflamabilitat"
+      ],
+      "explicacion": "És el punt d'inflamació (flash point). La temperatura d'autoignició és aquella a la qual la mescla crema sense necessitat d'una font d'ignició externa, i els límits d'inflamabilitat expressen concentracions, no temperatures."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id": "tcai-t11-001",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, ¿cuál de los siguientes es un sistema válido para que los interesados se identifiquen electrónicamente ante las Administraciones Públicas?",
+      "opciones": [
+        "Un certificado electrónico cualificado de firma de un prestador de la «Lista de confianza»",
+        "La indicación del número de DNI en un formulario web abierto",
+        "El envío por correo electrónico de una fotocopia escaneada del DNI",
+        "La confirmación verbal por teléfono ante el centro gestor"
+      ],
+      "explicacion": "El art. 9.2.a) de la Ley 39/2015 admite los sistemas basados en certificados electrónicos cualificados de firma electrónica de prestadores de la Lista de confianza; también los de sello electrónico y otros sistemas con registro previo."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, quin dels següents és un sistema vàlid perquè els interessats s'identifiquin electrònicament davant de les administracions públiques?",
+      "opciones": [
+        "Un certificat electrònic qualificat de signatura d'un prestador de la «Llista de confiança»",
+        "La indicació del número de DNI en un formulari web obert",
+        "L'enviament per correu electrònic d'una fotocòpia escanejada del DNI",
+        "La confirmació verbal per telèfon davant del centre gestor"
+      ],
+      "explicacion": "L'art. 9.2.a) de la Llei 39/2015 admet els sistemes basats en certificats electrònics qualificats de signatura electrònica de prestadors de la Llista de confiança; també els de segell electrònic i altres sistemes amb registre previ."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "9.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a9"
+    },
+    "cita": "Sistemas basados en certificados electrónicos cualificados de firma electrónica expedidos por prestadores incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’’.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-002",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, cuando un interesado utiliza uno de los sistemas de firma admitidos por las Administraciones Públicas:",
+      "opciones": [
+        "Debe identificarse además presencialmente en una oficina de registro",
+        "Necesita aportar una copia auténtica de su DNI",
+        "Su firma solo es válida si la ratifica en papel",
+        "Su identidad se entiende ya acreditada mediante el propio acto de la firma"
+      ],
+      "explicacion": "El art. 10.5 de la Ley 39/2015 dispone que, si se usa un sistema de firma de los previstos, la identidad se entiende acreditada por el propio acto de firmar."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, quan un interessat utilitza un dels sistemes de signatura admesos per les administracions públiques:",
+      "opciones": [
+        "S'ha d'identificar a més presencialment en una oficina de registre",
+        "Necessita aportar una còpia autèntica del DNI",
+        "La seva signatura només és vàlida si la ratifica en paper",
+        "La seva identitat s'entén ja acreditada mitjançant el mateix acte de la signatura"
+      ],
+      "explicacion": "L'art. 10.5 de la Llei 39/2015 disposa que, si s'utilitza un sistema de signatura dels previstos, la identitat s'entén acreditada pel mateix acte de signar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "10.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a10"
+    },
+    "cita": "Cuando los interesados utilicen un sistema de firma de los previstos en este artículo, su identidad se entenderá ya acreditada mediante el propio acto de la firma.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-003",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "De acuerdo con la Ley 39/2015, ¿para cuál de las siguientes actuaciones pueden las Administraciones exigir al interesado el uso obligatorio de firma?",
+      "opciones": [
+        "Consultar el estado de tramitación de un expediente",
+        "Interponer recursos",
+        "Acceder a la información de la sede electrónica",
+        "Descargar un formulario normalizado"
+      ],
+      "explicacion": "El art. 11.2 de la Ley 39/2015 limita la firma obligatoria a formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos; para lo demás basta con identificarse (art. 11.1)."
+    },
+    "ca": {
+      "enunciado": "D'acord amb la Llei 39/2015, per a quina de les actuacions següents poden les administracions exigir a l'interessat l'ús obligatori de signatura?",
+      "opciones": [
+        "Consultar l'estat de tramitació d'un expedient",
+        "Interposar recursos",
+        "Accedir a la informació de la seu electrònica",
+        "Descarregar un formulari normalitzat"
+      ],
+      "explicacion": "L'art. 11.2 de la Llei 39/2015 limita la signatura obligatòria a formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir d'accions i renunciar a drets; per a la resta n'hi ha prou d'identificar-se (art. 11.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "11.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a11"
+    },
+    "cita": "Las Administraciones Públicas sólo requerirán a los interesados el uso obligatorio de firma para:",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-004",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Cuando un interesado no dispone de medios electrónicos, su firma electrónica puede realizarla un funcionario público habilitado. Para ello, la Ley 39/2015 exige que el interesado:",
+      "opciones": [
+        "Otorgue un poder notarial a favor del funcionario",
+        "Presente una declaración jurada de carencia de medios económicos",
+        "Se identifique ante el funcionario y preste su consentimiento expreso para esta actuación",
+        "Obtenga previamente un certificado electrónico cualificado"
+      ],
+      "explicacion": "El art. 12.2 de la Ley 39/2015 exige que el interesado se identifique ante el funcionario y preste consentimiento expreso, dejando constancia para casos de discrepancia o litigio."
+    },
+    "ca": {
+      "enunciado": "Quan un interessat no disposa de mitjans electrònics, la seva signatura electrònica la pot fer un funcionari públic habilitat. Per fer-ho, la Llei 39/2015 exigeix que l'interessat:",
+      "opciones": [
+        "Atorgui un poder notarial a favor del funcionari",
+        "Presenti una declaració jurada de manca de mitjans econòmics",
+        "S'identifiqui davant del funcionari i presti el seu consentiment exprés per a aquesta actuació",
+        "Obtingui prèviament un certificat electrònic qualificat"
+      ],
+      "explicacion": "L'art. 12.2 de la Llei 39/2015 exigeix que l'interessat s'identifiqui davant del funcionari i presti consentiment exprés, i que en quedi constància per als casos de discrepància o litigi."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "12.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a12"
+    },
+    "cita": "será necesario que el interesado que carezca de los medios electrónicos necesarios se identifique ante el funcionario y preste su consentimiento expreso para esta actuación",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-005",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Entre los derechos de las personas en sus relaciones con las Administraciones Públicas, la Ley 39/2015 reconoce el de comunicarse con ellas a través de:",
+      "opciones": [
+        "Un Punto de Acceso General electrónico de la Administración",
+        "Las redes sociales personales de los empleados públicos",
+        "Cualquier dirección de correo electrónico del centro",
+        "Un buzón físico situado en cada servicio"
+      ],
+      "explicacion": "El art. 13.a) de la Ley 39/2015 reconoce el derecho a comunicarse con las Administraciones a través de un Punto de Acceso General electrónico."
+    },
+    "ca": {
+      "enunciado": "Entre els drets de les persones en les seves relacions amb les administracions públiques, la Llei 39/2015 reconeix el de comunicar-s'hi a través de:",
+      "opciones": [
+        "Un Punt d'Accés General electrònic de l'Administració",
+        "Les xarxes socials personals dels empleats públics",
+        "Qualsevol adreça de correu electrònic del centre",
+        "Una bústia física situada a cada servei"
+      ],
+      "explicacion": "L'art. 13.a) de la Llei 39/2015 reconeix el dret a comunicar-se amb les administracions a través d'un Punt d'Accés General electrònic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a13"
+    },
+    "cita": "A comunicarse con las Administraciones Públicas a través de un Punto de Acceso General electrónico de la Administración.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-006",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, con carácter general, las personas físicas que no estén obligadas a relacionarse electrónicamente:",
+      "opciones": [
+        "Deben relacionarse siempre por medios electrónicos",
+        "Solo pueden usar medios electrónicos si lo autoriza el órgano instructor",
+        "Pueden elegir en todo momento si se comunican con la Administración por medios electrónicos o no",
+        "Deben elegir el medio al inicio del procedimiento y no pueden cambiarlo"
+      ],
+      "explicacion": "El art. 14.1 de la Ley 39/2015 permite a las personas físicas elegir en todo momento el medio de comunicación y modificarlo cuando quieran, salvo que estén obligadas a usar medios electrónicos."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, amb caràcter general, les persones físiques que no estiguin obligades a relacionar-se electrònicament:",
+      "opciones": [
+        "S'han de relacionar sempre per mitjans electrònics",
+        "Només poden utilitzar mitjans electrònics si ho autoritza l'òrgan instructor",
+        "Poden triar en tot moment si es comuniquen amb l'Administració per mitjans electrònics o no",
+        "Han de triar el mitjà a l'inici del procediment i no el poden canviar"
+      ],
+      "explicacion": "L'art. 14.1 de la Llei 39/2015 permet a les persones físiques triar en tot moment el mitjà de comunicació i modificar-lo quan vulguin, llevat que estiguin obligades a utilitzar mitjans electrònics."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "Las personas físicas podrán elegir en todo momento si se comunican con las Administraciones Públicas para el ejercicio de sus derechos y obligaciones a través de medios electrónicos o no",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-007",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un TCAI del ICS que realiza ante su Administración un trámite por razón de su condición de empleado público, según la Ley 39/2015:",
+      "opciones": [
+        "Puede elegir libremente el medio en todo caso",
+        "Debe hacerlo siempre en papel en el registro del centro",
+        "Solo está obligado si es personal directivo",
+        "Está obligado a relacionarse a través de medios electrónicos"
+      ],
+      "explicacion": "El art. 14.2.e) de la Ley 39/2015 obliga a los empleados públicos a relacionarse electrónicamente para los trámites que realicen por razón de su condición de empleado público, en la forma que determine cada Administración."
+    },
+    "ca": {
+      "enunciado": "Un TCAI de l'ICS que fa davant de la seva Administració un tràmit per raó de la seva condició d'empleat públic, segons la Llei 39/2015:",
+      "opciones": [
+        "Pot triar lliurement el mitjà en tot cas",
+        "Ho ha de fer sempre en paper al registre del centre",
+        "Només hi està obligat si és personal directiu",
+        "Està obligat a relacionar-se a través de mitjans electrònics"
+      ],
+      "explicacion": "L'art. 14.2.e) de la Llei 39/2015 obliga els empleats públics a relacionar-se electrònicament per als tràmits que facin per raó de la seva condició d'empleat públic, en la forma que determini cada Administració."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "Los empleados de las Administraciones Públicas para los trámites y actuaciones que realicen con ellas por razón de su condición de empleado público",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-008",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, el asiento de todo documento presentado o recibido en cualquier órgano administrativo se hace en:",
+      "opciones": [
+        "El Punto de Acceso General",
+        "El Registro Electrónico General de cada Administración",
+        "El archivo central del departamento",
+        "La dirección electrónica habilitada única"
+      ],
+      "explicacion": "El art. 16.1 de la Ley 39/2015 establece que cada Administración dispondrá de un Registro Electrónico General donde se asienta todo documento presentado o recibido."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, l'assentament de tot document presentat o rebut en qualsevol òrgan administratiu es fa a:",
+      "opciones": [
+        "El Punt d'Accés General",
+        "El Registre Electrònic General de cada Administració",
+        "L'arxiu central del departament",
+        "L'adreça electrònica habilitada única"
+      ],
+      "explicacion": "L'art. 16.1 de la Llei 39/2015 estableix que cada Administració ha de disposar d'un Registre Electrònic General on s'assenta tot document presentat o rebut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "Cada Administración dispondrá de un Registro Electrónico General, en el que se hará el correspondiente asiento de todo documento que sea presentado o que se reciba en cualquier órgano administrativo",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-009",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Además de los registros electrónicos, ¿en cuál de los siguientes lugares pueden presentarse los documentos dirigidos a las Administraciones Públicas según la Ley 39/2015?",
+      "opciones": [
+        "En las representaciones diplomáticas u oficinas consulares de España en el extranjero",
+        "En las comisarías de policía",
+        "En cualquier centro de atención primaria",
+        "En las sedes de los colegios profesionales"
+      ],
+      "explicacion": "El art. 16.4 de la Ley 39/2015 admite la presentación en los registros electrónicos, las oficinas de Correos, las representaciones diplomáticas u oficinas consulares, las oficinas de asistencia en materia de registros y cualquier otro que establezcan las disposiciones vigentes."
+    },
+    "ca": {
+      "enunciado": "A més dels registres electrònics, en quin dels llocs següents es poden presentar els documents adreçats a les administracions públiques segons la Llei 39/2015?",
+      "opciones": [
+        "A les representacions diplomàtiques o oficines consulars d'Espanya a l'estranger",
+        "A les comissaries de policia",
+        "A qualsevol centre d'atenció primària",
+        "A les seus dels col·legis professionals"
+      ],
+      "explicacion": "L'art. 16.4 de la Llei 39/2015 admet la presentació als registres electrònics, a les oficines de Correus, a les representacions diplomàtiques o oficines consulars, a les oficines d'assistència en matèria de registres i a qualsevol altre que estableixin les disposicions vigents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "En las representaciones diplomáticas u oficinas consulares de España en el extranjero.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-010",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, las notificaciones administrativas se practicarán:",
+      "opciones": [
+        "Exclusivamente en papel y por correo certificado",
+        "Preferentemente por teléfono",
+        "Preferentemente por medios electrónicos",
+        "Solo por comparecencia personal del interesado"
+      ],
+      "explicacion": "El art. 41.1 de la Ley 39/2015 establece que las notificaciones se practicarán preferentemente por medios electrónicos y, en todo caso, cuando el interesado esté obligado a recibirlas así."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, les notificacions administratives s'han de practicar:",
+      "opciones": [
+        "Exclusivament en paper i per correu certificat",
+        "Preferentment per telèfon",
+        "Preferentment per mitjans electrònics",
+        "Només per compareixença personal de l'interessat"
+      ],
+      "explicacion": "L'art. 41.1 de la Llei 39/2015 estableix que les notificacions s'han de practicar preferentment per mitjans electrònics i, en tot cas, quan l'interessat estigui obligat a rebre-les per aquesta via."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Las notificaciones se practicarán preferentemente por medios electrónicos y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-011",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "De acuerdo con la Ley 39/2015, en ningún caso se efectuarán por medios electrónicos las notificaciones:",
+      "opciones": [
+        "Dirigidas a personas jurídicas",
+        "Que resuelvan un recurso de alzada",
+        "Practicadas en procedimientos iniciados de oficio",
+        "Que contengan medios de pago a favor de los obligados, tales como cheques"
+      ],
+      "explicacion": "El art. 41.2 de la Ley 39/2015 excluye la vía electrónica para las notificaciones con elementos no convertibles a formato electrónico y para las que contengan medios de pago, como cheques."
+    },
+    "ca": {
+      "enunciado": "D'acord amb la Llei 39/2015, en cap cas no s'han de fer per mitjans electrònics les notificacions:",
+      "opciones": [
+        "Adreçades a persones jurídiques",
+        "Que resolguin un recurs d'alçada",
+        "Practicades en procediments iniciats d'ofici",
+        "Que continguin mitjans de pagament a favor dels obligats, com ara xecs"
+      ],
+      "explicacion": "L'art. 41.2 de la Llei 39/2015 exclou la via electrònica per a les notificacions amb elements no convertibles a format electrònic i per a les que continguin mitjans de pagament, com ara xecs."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Las que contengan medios de pago a favor de los obligados, tales como cheques.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-012",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si un interesado ha sido notificado de un mismo acto por distintos cauces, la Ley 39/2015 dispone que se tomará como fecha de notificación:",
+      "opciones": [
+        "La de la última notificación practicada",
+        "La de la notificación que se hubiera producido en primer lugar",
+        "La de la notificación en papel, en todo caso",
+        "La que elija el propio interesado"
+      ],
+      "explicacion": "El art. 41.7 de la Ley 39/2015 fija como fecha de notificación la de la que se haya producido en primer lugar."
+    },
+    "ca": {
+      "enunciado": "Si un interessat ha estat notificat d'un mateix acte per diferents vies, la Llei 39/2015 disposa que s'ha de prendre com a data de notificació:",
+      "opciones": [
+        "La de l'última notificació practicada",
+        "La de la notificació que s'hagi produït en primer lloc",
+        "La de la notificació en paper, en tot cas",
+        "La que triï el mateix interessat"
+      ],
+      "explicacion": "L'art. 41.7 de la Llei 39/2015 fixa com a data de notificació la de la que s'hagi produït en primer lloc."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Cuando el interesado fuera notificado por distintos cauces, se tomará como fecha de notificación la de aquélla que se hubiera producido en primer lugar.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-013",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Cuando la notificación electrónica es obligatoria o ha sido elegida por el interesado, se entiende rechazada si transcurren, desde su puesta a disposición y sin que se acceda a su contenido:",
+      "opciones": [
+        "Cinco días hábiles",
+        "Quince días hábiles",
+        "Diez días naturales",
+        "Un mes"
+      ],
+      "explicacion": "El art. 43.2 de la Ley 39/2015 fija en diez días naturales el plazo tras el cual la notificación electrónica no abierta se entiende rechazada."
+    },
+    "ca": {
+      "enunciado": "Quan la notificació electrònica és obligatòria o l'ha triada l'interessat, s'entén rebutjada si transcorren, des de la posada a disposició i sense que se n'accedeixi al contingut:",
+      "opciones": [
+        "Cinc dies hàbils",
+        "Quinze dies hàbils",
+        "Deu dies naturals",
+        "Un mes"
+      ],
+      "explicacion": "L'art. 43.2 de la Llei 39/2015 fixa en deu dies naturals el termini després del qual la notificació electrònica no oberta s'entén rebutjada."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "43.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a43"
+    },
+    "cita": "se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-014",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, una notificación por medios electrónicos se entiende practicada:",
+      "opciones": [
+        "En el momento en que se produce el acceso a su contenido",
+        "En el momento en que se envía el aviso al correo electrónico del interesado",
+        "Al día siguiente de su puesta a disposición",
+        "Cuando el interesado firma el acuse en papel"
+      ],
+      "explicacion": "El art. 43.2 de la Ley 39/2015 establece que la notificación electrónica se entiende practicada cuando se accede a su contenido; el aviso al correo electrónico es meramente informativo (art. 41.6)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, una notificació per mitjans electrònics s'entén practicada:",
+      "opciones": [
+        "En el moment en què es produeix l'accés al seu contingut",
+        "En el moment en què s'envia l'avís al correu electrònic de l'interessat",
+        "L'endemà de la posada a disposició",
+        "Quan l'interessat signa l'acusament en paper"
+      ],
+      "explicacion": "L'art. 43.2 de la Llei 39/2015 estableix que la notificació electrònica s'entén practicada quan s'accedeix al seu contingut; l'avís al correu electrònic és merament informatiu (art. 41.6)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "43.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a43"
+    },
+    "cita": "Las notificaciones por medios electrónicos se entenderán practicadas en el momento en que se produzca el acceso a su contenido.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-015",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Entre los principios de la Ley 29/2010, del uso de los medios electrónicos en el sector público de Cataluña, el que obliga a permitir el uso de los medios electrónicos con independencia de las opciones tecnológicas de los destinatarios y a promover estándares abiertos es el de:",
+      "opciones": [
+        "Proporcionalidad",
+        "Neutralidad tecnológica",
+        "Proximidad",
+        "Simplificación"
+      ],
+      "explicacion": "El art. 4 de la Ley 29/2010 define así el principio de neutralidad tecnológica (séptimo)."
+    },
+    "ca": {
+      "enunciado": "Entre els principis de la Llei 29/2010, de l'ús dels mitjans electrònics al sector públic de Catalunya, el que obliga a permetre l'ús dels mitjans electrònics amb independència de les opcions tecnològiques dels destinataris i a promoure estàndards oberts és el de:",
+      "opciones": [
+        "Proporcionalitat",
+        "Neutralitat tecnològica",
+        "Proximitat",
+        "Simplificació"
+      ],
+      "explicacion": "L'art. 4 de la Llei 29/2010 defineix així el principi de neutralitat tecnològica (setè)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a4"
+    },
+    "cita": "deben permitir el uso de los medios electrónicos independientemente de las opciones tecnológicas escogidas por los destinatarios y deben promover el uso de estándares abiertos.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-016",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 29/2010, el principio que exige garantizar que el uso de los medios electrónicos no ocasione discriminaciones por razón del medio utilizado o de las discapacidades de los destinatarios es el de:",
+      "opciones": [
+        "Seguridad",
+        "Calidad",
+        "Cooperación y colaboración",
+        "Accesibilidad"
+      ],
+      "explicacion": "El art. 4 de la Ley 29/2010 formula así el principio de accesibilidad (tercero); el de seguridad se refiere a la identidad, integridad y confidencialidad de la información."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 29/2010, el principi que exigeix garantir que l'ús dels mitjans electrònics no ocasioni discriminacions per raó del mitjà utilitzat o de les discapacitats dels destinataris és el de:",
+      "opciones": [
+        "Seguretat",
+        "Qualitat",
+        "Cooperació i col·laboració",
+        "Accessibilitat"
+      ],
+      "explicacion": "L'art. 4 de la Llei 29/2010 formula així el principi d'accessibilitat (tercer); el de seguretat es refereix a la identitat, la integritat i la confidencialitat de la informació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a4"
+    },
+    "cita": "deben garantizar que el uso de los medios electrónicos no ocasione discriminaciones por razón del medio utilizado o por razón de las discapacidades o dificultades especiales de los destinatarios de estas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-017",
+    "tema": 11,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Entre las finalidades de la Ley 26/2010, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña, figura promover una administración ágil, eficaz y eficiente y hacer accesibles sus relaciones con la ciudadanía:",
+      "opciones": [
+        "Con independencia del soporte que se utilice",
+        "Preferentemente en soporte papel",
+        "Exclusivamente a través de la sede electrónica",
+        "Solo en los procedimientos iniciados a instancia de parte"
+      ],
+      "explicacion": "El art. 2.b) de la Ley 26/2010 vincula la accesibilidad de las relaciones con la ciudadanía a cualquier soporte, sin imponer uno concreto."
+    },
+    "ca": {
+      "enunciado": "Entre les finalitats de la Llei 26/2010, de règim jurídic i de procediment de les administracions públiques de Catalunya, hi ha promoure una administració àgil, eficaç i eficient i fer accessibles les seves relacions amb la ciutadania:",
+      "opciones": [
+        "Amb independència del suport que s'utilitzi",
+        "Preferentment en suport paper",
+        "Exclusivament a través de la seu electrònica",
+        "Només en els procediments iniciats a instància de part"
+      ],
+      "explicacion": "L'art. 2.b) de la Llei 26/2010 vincula l'accessibilitat de les relacions amb la ciutadania a qualsevol suport, sense imposar-ne cap de concret."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a2"
+    },
+    "cita": "Promover una administración pública ágil, eficaz y eficiente, y hacer accesibles sus relaciones con la ciudadanía, con independencia del soporte que se utilice.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-018",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En un correo electrónico, las direcciones incluidas en el campo CCO (copia de carbón oculta):",
+      "opciones": [
+        "Reciben el mensaje sin los archivos adjuntos",
+        "Son las únicas que pueden responder al mensaje",
+        "Reciben el mensaje sin que el resto de destinatarios vea sus direcciones",
+        "Reciben el mensaje con un retraso programado"
+      ],
+      "explicacion": "El campo CCO envía una copia a destinatarios cuyas direcciones quedan ocultas para los demás; es útil para proteger la privacidad en envíos a varias personas."
+    },
+    "ca": {
+      "enunciado": "En un correu electrònic, les adreces incloses en el camp CCO (còpia de carboni oculta):",
+      "opciones": [
+        "Reben el missatge sense els fitxers adjunts",
+        "Són les úniques que poden respondre el missatge",
+        "Reben el missatge sense que la resta de destinataris en vegi les adreces",
+        "Reben el missatge amb un retard programat"
+      ],
+      "explicacion": "El camp CCO envia una còpia a destinataris les adreces dels quals queden ocultes per als altres; és útil per protegir la privacitat en enviaments a diverses persones."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Conceptos básicos de ofimática, Internet y correo electrónico (manuales de competencias digitales ACTIC, Generalitat de Catalunya)"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-019",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una intranet es:",
+      "opciones": [
+        "La red mundial de ordenadores accesible a cualquier usuario",
+        "Una red privada de una organización, accesible solo a sus usuarios autorizados",
+        "Un programa de correo electrónico instalado en el ordenador",
+        "Un tipo de archivo comprimido"
+      ],
+      "explicacion": "La intranet usa las mismas tecnologías que Internet, pero es una red interna de la organización (por ejemplo, la intranet del ICS) restringida a sus usuarios autorizados."
+    },
+    "ca": {
+      "enunciado": "Una intranet és:",
+      "opciones": [
+        "La xarxa mundial d'ordinadors accessible a qualsevol usuari",
+        "Una xarxa privada d'una organització, accessible només als seus usuaris autoritzats",
+        "Un programa de correu electrònic instal·lat a l'ordinador",
+        "Un tipus de fitxer comprimit"
+      ],
+      "explicacion": "La intranet utilitza les mateixes tecnologies que Internet, però és una xarxa interna de l'organització (per exemple, la intranet de l'ICS) restringida als seus usuaris autoritzats."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Conceptos básicos de ofimática, Internet y correo electrónico (manuales de competencias digitales ACTIC, Generalitat de Catalunya)"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-020",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una dirección web que empieza por «https://» indica que:",
+      "opciones": [
+        "La página solo puede abrirse desde una intranet",
+        "El sitio pertenece a una Administración pública",
+        "La página no contiene imágenes",
+        "La comunicación entre el navegador y el servidor va cifrada"
+      ],
+      "explicacion": "HTTPS es la versión segura del protocolo HTTP: cifra los datos intercambiados entre navegador y servidor; no garantiza por sí sola quién es el titular del sitio."
+    },
+    "ca": {
+      "enunciado": "Una adreça web que comença per «https://» indica que:",
+      "opciones": [
+        "La pàgina només es pot obrir des d'una intranet",
+        "El lloc pertany a una administració pública",
+        "La pàgina no conté imatges",
+        "La comunicació entre el navegador i el servidor va xifrada"
+      ],
+      "explicacion": "HTTPS és la versió segura del protocol HTTP: xifra les dades intercanviades entre el navegador i el servidor; no garanteix per si sola qui és el titular del lloc."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Conceptos básicos de ofimática, Internet y correo electrónico (manuales de competencias digitales ACTIC, Generalitat de Catalunya)"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-021",
+    "tema": 11,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una hoja de cálculo (Excel, LibreOffice Calc), para que el contenido de una celda se interprete como una fórmula, debe empezar por el signo:",
+      "opciones": [
+        "=",
+        "#",
+        "&",
+        "%"
+      ],
+      "explicacion": "Las fórmulas de las hojas de cálculo empiezan por el signo igual (por ejemplo, =SUMA(A1:A10)); sin él, el contenido se trata como texto o número."
+    },
+    "ca": {
+      "enunciado": "En un full de càlcul (Excel, LibreOffice Calc), perquè el contingut d'una cel·la s'interpreti com una fórmula, ha de començar pel signe:",
+      "opciones": [
+        "=",
+        "#",
+        "&",
+        "%"
+      ],
+      "explicacion": "Les fórmules dels fulls de càlcul comencen pel signe igual (per exemple, =SUMA(A1:A10)); sense aquest signe, el contingut es tracta com a text o nombre."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Conceptos básicos de ofimática, Internet y correo electrónico (manuales de competencias digitales ACTIC, Generalitat de Catalunya)"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t11-022",
+    "tema": 11,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El fraude que consiste en enviar correos electrónicos que suplantan a una entidad de confianza para obtener contraseñas o datos personales se denomina:",
+      "opciones": [
+        "Spam",
+        "Cookie",
+        "Phishing",
+        "Firewall"
+      ],
+      "explicacion": "El phishing suplanta la identidad de una entidad legítima para engañar al usuario y obtener sus credenciales; el spam es correo masivo no solicitado y el firewall es un sistema de protección de la red."
+    },
+    "ca": {
+      "enunciado": "El frau que consisteix a enviar correus electrònics que suplanten una entitat de confiança per obtenir contrasenyes o dades personals s'anomena:",
+      "opciones": [
+        "Spam",
+        "Galeta (cookie)",
+        "Pesca (phishing)",
+        "Tallafoc (firewall)"
+      ],
+      "explicacion": "La pesca (phishing) suplanta la identitat d'una entitat legítima per enganyar l'usuari i obtenir-ne les credencials; el spam és correu massiu no sol·licitat i el tallafoc és un sistema de protecció de la xarxa."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Conceptos básicos de ofimática, Internet y correo electrónico (manuales de competencias digitales ACTIC, Generalitat de Catalunya)"
+    },
+    "origen": "ia"
+  }
+]

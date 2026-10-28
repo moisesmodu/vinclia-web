@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t22-001",
+    "tema": 22,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En un sistema de mando de emergencias, el principio de unidad de mando significa que:",
+      "opciones": [
+        "Todos los servicios presentes comparten un único vehículo de mando",
+        "Cada persona recibe órdenes de un único mando y le rinde cuentas",
+        "Solo puede intervenir una unidad en cada emergencia",
+        "El mando de mayor rango debe estar siempre en primera línea"
+      ],
+      "explicacion": "La unidad de mando evita órdenes contradictorias: cada interviniente sabe de quién depende y a quién informa, lo que da coherencia a la cadena de mando."
+    },
+    "ca": {
+      "enunciado": "En un sistema de comandament d'emergències, el principi d'unitat de comandament significa que:",
+      "opciones": [
+        "Tots els serveis presents comparteixen un únic vehicle de comandament",
+        "Cada persona rep ordres d'un únic comandament i li reta comptes",
+        "Només pot intervenir una unitat en cada emergència",
+        "El comandament de més rang ha de ser sempre a primera línia"
+      ],
+      "explicacion": "La unitat de comandament evita ordres contradictòries: cada intervinent sap de qui depèn i a qui informa, cosa que dona coherència a la cadena de comandament."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-002",
+    "tema": 22,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En la organización del mando de una intervención, el ámbito (o margen) de control es:",
+      "opciones": [
+        "El número de personas o unidades que un mando puede dirigir de forma eficaz",
+        "La superficie máxima de terreno que puede abarcar un incendio",
+        "El tiempo máximo que un mando puede permanecer en la zona de intervención",
+        "La distancia de seguridad entre el puesto de mando y la zona caliente"
+      ],
+      "explicacion": "Si un mando tiene a su cargo más personas o unidades de las que puede controlar, pierde eficacia y seguridad; por eso, cuando la intervención crece, se crean sectores o niveles intermedios."
+    },
+    "ca": {
+      "enunciado": "En l'organització del comandament d'una intervenció, l'àmbit (o marge) de control és:",
+      "opciones": [
+        "El nombre de persones o unitats que un comandament pot dirigir de manera eficaç",
+        "La superfície màxima de terreny que pot abastar un incendi",
+        "El temps màxim que un comandament pot romandre a la zona d'intervenció",
+        "La distància de seguretat entre el lloc de comandament i la zona calenta"
+      ],
+      "explicacion": "Si un comandament té al seu càrrec més persones o unitats de les que pot controlar, perd eficàcia i seguretat; per això, quan la intervenció creix, es creen sectors o nivells intermedis."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-003",
+    "tema": 22,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo debe realizarse una transferencia de mando durante una intervención?",
+      "opciones": [
+        "De forma automática, en cuanto llega al lugar un mando de mayor rango",
+        "Por escrito, una vez finalizada la intervención",
+        "De forma explícita, comunicada a los intervinientes y con traspaso de la información de la situación",
+        "Solo si el mando saliente lo solicita por radio a la central"
+      ],
+      "explicacion": "El mando que llega no lo asume por el simple hecho de estar presente: la transferencia se hace de manera expresa, con un relevo de información (situación, objetivos, recursos, riesgos) y se comunica para que todos sepan quién manda."
+    },
+    "ca": {
+      "enunciado": "Com s'ha de fer una transferència de comandament durant una intervenció?",
+      "opciones": [
+        "De manera automàtica, tan bon punt arriba al lloc un comandament de més rang",
+        "Per escrit, un cop acabada la intervenció",
+        "De manera explícita, comunicada als intervinents i amb traspàs de la informació de la situació",
+        "Només si el comandament sortint ho sol·licita per ràdio a la central"
+      ],
+      "explicacion": "El comandament que arriba no l'assumeix pel simple fet de ser-hi: la transferència es fa de manera expressa, amb un relleu d'informació (situació, objectius, recursos, riscos) i es comunica perquè tothom sàpiga qui comanda."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-004",
+    "tema": 22,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Al iniciarse una intervención, ¿quién asume el mando?",
+      "opciones": [
+        "Nadie, hasta que llega el mando de guardia de la región",
+        "El conductor del primer vehículo, en cualquier caso",
+        "El centro de control, desde la sala",
+        "El primer mando que llega al lugar, hasta que lo transfiere de forma expresa"
+      ],
+      "explicacion": "Desde el primer momento la intervención debe tener un responsable: lo asume quien llega primero con funciones de mando y lo mantiene hasta que se realiza una transferencia de mando formal."
+    },
+    "ca": {
+      "enunciado": "En iniciar-se una intervenció, qui assumeix el comandament?",
+      "opciones": [
+        "Ningú, fins que arriba el comandament de guàrdia de la regió",
+        "El conductor del primer vehicle, en qualsevol cas",
+        "El centre de control, des de la sala",
+        "El primer comandament que arriba al lloc, fins que el transfereix de manera expressa"
+      ],
+      "explicacion": "Des del primer moment la intervenció ha de tenir un responsable: l'assumeix qui arriba primer amb funcions de comandament i el manté fins que es fa una transferència de comandament formal."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-005",
+    "tema": 22,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Que la estructura de mando sea modular o flexible quiere decir que:",
+      "opciones": [
+        "Se mantiene siempre igual, sea cual sea la magnitud del incidente",
+        "Se amplía o se reduce según la evolución y la complejidad del incidente",
+        "Cada servicio crea su propia estructura sin relación con los demás",
+        "Solo se activa en emergencias declaradas de protección civil"
+      ],
+      "explicacion": "La estructura crece cuando el incidente se complica (más sectores, más niveles) y se reduce cuando se controla, de modo que siempre se adapta a las necesidades reales sin perder el ámbito de control."
+    },
+    "ca": {
+      "enunciado": "Que l'estructura de comandament sigui modular o flexible vol dir que:",
+      "opciones": [
+        "Es manté sempre igual, sigui quina sigui la magnitud de l'incident",
+        "S'amplia o es redueix segons l'evolució i la complexitat de l'incident",
+        "Cada servei crea la seva pròpia estructura sense relació amb els altres",
+        "Només s'activa en emergències declarades de protecció civil"
+      ],
+      "explicacion": "L'estructura creix quan l'incident es complica (més sectors, més nivells) i es redueix quan es controla, de manera que sempre s'adapta a les necessitats reals sense perdre l'àmbit de control."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-006",
+    "tema": 22,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Para qué se sectoriza una intervención de cierta magnitud?",
+      "opciones": [
+        "Para que cada dotación actúe con total independencia de las demás",
+        "Para reducir el número de mandos presentes en el lugar",
+        "Para delimitar la zona en la que se prohíbe el acceso a la prensa",
+        "Para dividirla en sectores geográficos o funcionales, cada uno con un responsable, y mantener un ámbito de control adecuado"
+      ],
+      "explicacion": "La sectorización reparte la intervención en zonas (por ejemplo, plantas o flancos) o funciones (abastecimiento, rescate…) con un responsable cada una, que depende del mando de la intervención."
+    },
+    "ca": {
+      "enunciado": "Per a què se sectoritza una intervenció d'una certa magnitud?",
+      "opciones": [
+        "Perquè cada dotació actuï amb total independència de les altres",
+        "Per reduir el nombre de comandaments presents al lloc",
+        "Per delimitar la zona en què es prohibeix l'accés a la premsa",
+        "Per dividir-la en sectors geogràfics o funcionals, cadascun amb un responsable, i mantenir un àmbit de control adequat"
+      ],
+      "explicacion": "La sectorització reparteix la intervenció en zones (per exemple, plantes o flancs) o funcions (proveïment, rescat…) amb un responsable cadascuna, que depèn del comandament de la intervenció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-007",
+    "tema": 22,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En la gestión del mando de una emergencia, el nivel táctico se ocupa principalmente de:",
+      "opciones": [
+        "Decidir cómo alcanzar los objetivos y asignar los recursos a sectores y tareas",
+        "Fijar las políticas generales del servicio a largo plazo",
+        "Ejecutar directamente las tareas concretas, como el tendido de mangueras",
+        "Gestionar las relaciones institucionales y con los medios de comunicación"
+      ],
+      "explicacion": "Se suele distinguir un nivel estratégico (qué objetivos se persiguen), un nivel táctico (cómo se alcanzan y con qué recursos) y un nivel operativo o de tarea (la ejecución concreta por las dotaciones)."
+    },
+    "ca": {
+      "enunciado": "En la gestió del comandament d'una emergència, el nivell tàctic s'ocupa principalment de:",
+      "opciones": [
+        "Decidir com s'assoleixen els objectius i assignar els recursos a sectors i tasques",
+        "Fixar les polítiques generals del servei a llarg termini",
+        "Executar directament les tasques concretes, com l'estesa de mànegues",
+        "Gestionar les relacions institucionals i amb els mitjans de comunicació"
+      ],
+      "explicacion": "Se sol distingir un nivell estratègic (quins objectius es persegueixen), un nivell tàctic (com s'assoleixen i amb quins recursos) i un nivell operatiu o de tasca (l'execució concreta per part de les dotacions)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-008",
+    "tema": 22,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Por qué es importante el uso de una terminología común en un sistema de mando?",
+      "opciones": [
+        "Porque permite prescindir de las comunicaciones por radio",
+        "Porque sustituye la necesidad de una cadena de mando",
+        "Porque evita confusiones entre los intervinientes, incluso de servicios distintos",
+        "Porque permite que cada unidad use sus propios códigos"
+      ],
+      "explicacion": "Nombres estandarizados para cargos, recursos, sectores y órdenes hacen que todos entiendan lo mismo, algo especialmente necesario cuando actúan varios servicios a la vez."
+    },
+    "ca": {
+      "enunciado": "Per què és important l'ús d'una terminologia comuna en un sistema de comandament?",
+      "opciones": [
+        "Perquè permet prescindir de les comunicacions per ràdio",
+        "Perquè substitueix la necessitat d'una cadena de comandament",
+        "Perquè evita confusions entre els intervinents, fins i tot de serveis diferents",
+        "Perquè permet que cada unitat utilitzi els seus propis codis"
+      ],
+      "explicacion": "Noms estandarditzats per a càrrecs, recursos, sectors i ordres fan que tothom entengui el mateix, cosa especialment necessària quan actuen diversos serveis alhora."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-009",
+    "tema": 22,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El puesto de mando de una intervención debe ser:",
+      "opciones": [
+        "Una ubicación fija, identificable y conocida por los intervinientes, desde la que se ejerce el mando",
+        "Un punto que cambia continuamente para seguir el frente del incendio",
+        "El interior de la zona de mayor riesgo, para ver mejor la situación",
+        "Un lugar reservado únicamente a las autoridades políticas"
+      ],
+      "explicacion": "Un puesto de mando estable y bien señalizado permite que todos sepan dónde dirigirse para recibir órdenes, informar o coordinarse, y se sitúa fuera de la zona de peligro."
+    },
+    "ca": {
+      "enunciado": "El lloc de comandament d'una intervenció ha de ser:",
+      "opciones": [
+        "Una ubicació fixa, identificable i coneguda pels intervinents, des de la qual s'exerceix el comandament",
+        "Un punt que canvia contínuament per seguir el front de l'incendi",
+        "L'interior de la zona de més risc, per veure millor la situació",
+        "Un lloc reservat únicament a les autoritats polítiques"
+      ],
+      "explicacion": "Un lloc de comandament estable i ben senyalitzat permet que tothom sàpiga on adreçar-se per rebre ordres, informar o coordinar-se, i se situa fora de la zona de perill."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t22-010",
+    "tema": 22,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La gestión por objetivos en el mando de una intervención implica:",
+      "opciones": [
+        "Que cada dotación fije libremente sus propios objetivos",
+        "Que los objetivos se establezcan una sola vez, al inicio, y no se modifiquen",
+        "Que el único objetivo sea extinguir el incendio lo antes posible",
+        "Definir objetivos claros y priorizados, asignar recursos para alcanzarlos y revisarlos según la evolución"
+      ],
+      "explicacion": "El mando valora la situación, fija objetivos priorizados (la vida de las personas antes que los bienes), asigna recursos y controla los resultados, reajustando los objetivos a medida que evoluciona el incidente."
+    },
+    "ca": {
+      "enunciado": "La gestió per objectius en el comandament d'una intervenció implica:",
+      "opciones": [
+        "Que cada dotació fixi lliurement els seus propis objectius",
+        "Que els objectius s'estableixin una sola vegada, a l'inici, i no es modifiquin",
+        "Que l'únic objectiu sigui extingir l'incendi com més aviat millor",
+        "Definir objectius clars i prioritzats, assignar recursos per assolir-los i revisar-los segons l'evolució"
+      ],
+      "explicacion": "El comandament valora la situació, fixa objectius prioritzats (la vida de les persones abans que els béns), assigna recursos i controla els resultats, reajustant els objectius a mesura que evoluciona l'incident."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

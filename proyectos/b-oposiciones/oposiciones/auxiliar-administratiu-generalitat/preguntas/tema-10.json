@@ -1,0 +1,842 @@
+[
+  {
+    "id": "agen-t10-001",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 38.1 de la Ley 40/2015, la sede electrónica es:",
+      "opciones": [
+        "El punto de acceso que permite consultar la información publicada por una Administración, sin posibilidad de hacer trámites",
+        "La dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración pública u organismo público",
+        "El buzón de correo electrónico corporativo de cada órgano administrativo",
+        "La oficina física donde se presta asistencia en el uso de medios electrónicos"
+      ],
+      "explicacion": "El artículo 38.1 define la sede electrónica como la dirección electrónica, disponible a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración pública o a organismos o entidades de derecho público. El punto de acceso a la información publicada es el portal de internet (artículo 39)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 38.1 de la Llei 40/2015, la seu electrònica és:",
+      "opciones": [
+        "El punt d'accés que permet consultar la informació publicada per una administració, sense possibilitat de fer tràmits",
+        "L'adreça electrònica, disponible per als ciutadans a través de xarxes de telecomunicacions, la titularitat de la qual correspon a una administració pública o organisme públic",
+        "La bústia de correu electrònic corporativa de cada òrgan administratiu",
+        "L'oficina física on es presta assistència en l'ús de mitjans electrònics"
+      ],
+      "explicacion": "L'article 38.1 defineix la seu electrònica com l'adreça electrònica, disponible a través de xarxes de telecomunicacions, la titularitat de la qual correspon a una administració pública o a organismes o entitats de dret públic. El punt d'accés a la informació publicada és el portal d'internet (article 39)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "38.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a38"
+    },
+    "cita": "La sede electrónica es aquella dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-002",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 38.6 de la Ley 40/2015, para identificarse y garantizar una comunicación segura, las sedes electrónicas utilizan:",
+      "opciones": [
+        "Certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente",
+        "El certificado de firma electrónica personal del titular del órgano",
+        "Un código seguro de verificación publicado en el diario oficial",
+        "El sello de tiempo emitido por el registro electrónico general"
+      ],
+      "explicacion": "El artículo 38.6 exige que las sedes electrónicas se identifiquen con certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente. El código seguro de verificación sirve para comprobar documentos, no para identificar la sede."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 38.6 de la Llei 40/2015, per identificar-se i garantir una comunicació segura, les seus electròniques utilitzen:",
+      "opciones": [
+        "Certificats reconeguts o qualificats d'autenticació de lloc web o un mitjà equivalent",
+        "El certificat de signatura electrònica personal del titular de l'òrgan",
+        "Un codi segur de verificació publicat al diari oficial",
+        "El segell de temps emès pel registre electrònic general"
+      ],
+      "explicacion": "L'article 38.6 exigeix que les seus electròniques s'identifiquin amb certificats reconeguts o qualificats d'autenticació de lloc web o un mitjà equivalent. El codi segur de verificació serveix per comprovar documents, no per identificar la seu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "38.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a38"
+    },
+    "cita": "Las sedes electrónicas utilizarán, para identificarse y garantizar una comunicación segura con las mismas, certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-003",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo define el artículo 39 de la Ley 40/2015 el portal de internet?",
+      "opciones": [
+        "Como el punto de acceso electrónico de titularidad pública que permite acceder a la información publicada y, en su caso, a la sede electrónica",
+        "Como la dirección electrónica donde se hacen todos los trámites con plena validez jurídica",
+        "Como el registro donde se anotan las entradas y salidas de documentos electrónicos",
+        "Como el sistema de notificaciones electrónicas de cada Administración"
+      ],
+      "explicacion": "El artículo 39 define el portal de internet como el punto de acceso electrónico de una Administración, organismo o entidad que permite acceder a la información publicada y, en su caso, a la sede electrónica; los trámites se hacen en la sede."
+    },
+    "ca": {
+      "enunciado": "Com defineix l'article 39 de la Llei 40/2015 el portal d'internet?",
+      "opciones": [
+        "Com el punt d'accés electrònic de titularitat pública que permet accedir a la informació publicada i, si escau, a la seu electrònica",
+        "Com l'adreça electrònica on es fan tots els tràmits amb plena validesa jurídica",
+        "Com el registre on s'anoten les entrades i sortides de documents electrònics",
+        "Com el sistema de notificacions electròniques de cada administració"
+      ],
+      "explicacion": "L'article 39 defineix el portal d'internet com el punt d'accés electrònic d'una administració, organisme o entitat que permet accedir a la informació publicada i, si escau, a la seu electrònica; els tràmits es fan a la seu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "39",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a39"
+    },
+    "cita": "Se entiende por portal de internet el punto de acceso electrónico cuya titularidad corresponda a una Administración Pública, organismo público o entidad de Derecho Público que permite el acceso a través de internet a la información publicada y, en su caso, a la sede electrónica correspondiente.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-004",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 9.2 de la Ley 39/2015, las administraciones deben garantizar que, en todo procedimiento, sea posible la identificación electrónica mediante:",
+      "opciones": [
+        "Sistemas de clave concertada con registro previo como usuario",
+        "Un nombre de usuario y una contraseña de correo electrónico",
+        "La videollamada con un empleado público de la oficina de registro",
+        "Sistemas basados en certificados electrónicos cualificados de firma o de sello electrónico"
+      ],
+      "explicacion": "El artículo 9.2 obliga a garantizar en todo procedimiento los sistemas de las letras a) y b), basados en certificados cualificados de firma y de sello electrónico, aunque se admitan también otros sistemas de la letra c), como los de clave concertada con registro previo."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 9.2 de la Llei 39/2015, les administracions han de garantir que, en tot procediment, sigui possible la identificació electrònica mitjançant:",
+      "opciones": [
+        "Sistemes de clau concertada amb registre previ com a usuari",
+        "Un nom d'usuari i una contrasenya de correu electrònic",
+        "La videotrucada amb un empleat públic de l'oficina de registre",
+        "Sistemes basats en certificats electrònics qualificats de signatura o de segell electrònic"
+      ],
+      "explicacion": "L'article 9.2 obliga a garantir en tot procediment els sistemes de les lletres a) i b), basats en certificats qualificats de signatura i de segell electrònic, encara que s'admetin també altres sistemes de la lletra c), com els de clau concertada amb registre previ."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "9.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a9"
+    },
+    "cita": "Las Administraciones Públicas deberán garantizar que la utilización de uno de los sistemas previstos en las letras a) y b) sea posible para todo procedimiento, aun cuando se admita para ese mismo procedimiento alguno de los previstos en la letra c).",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-005",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 10.1 de la Ley 39/2015, los interesados pueden firmar a través de cualquier medio que permita acreditar:",
+      "opciones": [
+        "Únicamente la identidad del firmante, sin necesidad de garantizar el contenido",
+        "La autenticidad de la expresión de su voluntad y consentimiento, y la integridad e inalterabilidad del documento",
+        "La fecha de entrada en el registro y el órgano destinatario",
+        "La capacidad de obrar del interesado y la representación que ostenta"
+      ],
+      "explicacion": "El artículo 10.1 exige que el medio de firma acredite la autenticidad de la voluntad y el consentimiento del firmante y la integridad e inalterabilidad del documento; identificar no es lo mismo que firmar."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 10.1 de la Llei 39/2015, els interessats poden signar a través de qualsevol mitjà que permeti acreditar:",
+      "opciones": [
+        "Únicament la identitat del signant, sense necessitat de garantir-ne el contingut",
+        "L'autenticitat de l'expressió de la seva voluntat i consentiment, i la integritat i inalterabilitat del document",
+        "La data d'entrada al registre i l'òrgan destinatari",
+        "La capacitat d'obrar de l'interessat i la representació que té"
+      ],
+      "explicacion": "L'article 10.1 exigeix que el mitjà de signatura acrediti l'autenticitat de la voluntat i el consentiment del signant i la integritat i inalterabilitat del document; identificar no és el mateix que signar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "10.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a10"
+    },
+    "cita": "Los interesados podrán firmar a través de cualquier medio que permita acreditar la autenticidad de la expresión de su voluntad y consentimiento, así como la integridad e inalterabilidad del documento.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-006",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una ciudadana, identificada en la sede electrónica con un sistema de identificación admitido, quiere hacer varias gestiones. Según el artículo 11.2 de la Ley 39/2015, ¿para cuál de ellas puede la Administración exigirle firma?",
+      "opciones": [
+        "Consultar el estado de tramitación de su expediente",
+        "Descargar la información general de un procedimiento",
+        "Consultar el listado de oficinas de asistencia en materia de registros",
+        "Interponer un recurso de alzada contra una resolución"
+      ],
+      "explicacion": "El artículo 11.2 limita la firma obligatoria a formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos; para el resto basta con acreditar la identidad (artículo 11.1)."
+    },
+    "ca": {
+      "enunciado": "Una ciutadana, identificada a la seu electrònica amb un sistema d'identificació admès, vol fer diverses gestions. Segons l'article 11.2 de la Llei 39/2015, per a quina d'aquestes gestions li pot exigir signatura l'Administració?",
+      "opciones": [
+        "Consultar l'estat de tramitació del seu expedient",
+        "Descarregar la informació general d'un procediment",
+        "Consultar la llista d'oficines d'assistència en matèria de registres",
+        "Interposar un recurs d'alçada contra una resolució"
+      ],
+      "explicacion": "L'article 11.2 limita la signatura obligatòria a formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir d'accions i renunciar a drets; per a la resta n'hi ha prou d'acreditar la identitat (article 11.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "11.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a11"
+    },
+    "cita": "Las Administraciones Públicas sólo requerirán a los interesados el uso obligatorio de firma para: … c) Interponer recursos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-007",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 10.5 de la Ley 39/2015, cuando un interesado utiliza uno de los sistemas de firma previstos en la ley:",
+      "opciones": [
+        "Debe identificarse además con un sistema de clave concertada",
+        "Debe aportar una copia de su documento nacional de identidad",
+        "Su identidad se entiende ya acreditada mediante el propio acto de la firma",
+        "Su identidad debe comprobarla un funcionario habilitado"
+      ],
+      "explicacion": "El artículo 10.5 establece que el acto de firmar con un sistema admitido acredita por sí mismo la identidad del firmante, sin necesidad de una identificación adicional."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 10.5 de la Llei 39/2015, quan un interessat utilitza un dels sistemes de signatura previstos a la llei:",
+      "opciones": [
+        "S'ha d'identificar a més amb un sistema de clau concertada",
+        "Ha d'aportar una còpia del document nacional d'identitat",
+        "La seva identitat s'entén ja acreditada mitjançant el mateix acte de la signatura",
+        "La seva identitat l'ha de comprovar un funcionari habilitat"
+      ],
+      "explicacion": "L'article 10.5 estableix que l'acte de signar amb un sistema admès acredita per si mateix la identitat del signant, sense necessitat d'una identificació addicional."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "10.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a10"
+    },
+    "cita": "Cuando los interesados utilicen un sistema de firma de los previstos en este artículo, su identidad se entenderá ya acreditada mediante el propio acto de la firma.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-008",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El presidente de una asociación de vecinos quiere presentar en papel, en una oficina de la Generalitat, la solicitud de subvención de la asociación. Según el artículo 14.2 de la Ley 39/2015:",
+      "opciones": [
+        "Puede hacerlo, porque las entidades sin ánimo de lucro pueden elegir el medio de relación",
+        "No puede hacerlo: la asociación, como persona jurídica, está obligada a relacionarse electrónicamente con la Administración",
+        "Puede hacerlo si la firma de forma manuscrita en su condición de persona física",
+        "Solo puede hacerlo si la asociación tiene menos de cincuenta socios"
+      ],
+      "explicacion": "El artículo 14.2.a obliga a las personas jurídicas, sea cual sea su finalidad, a relacionarse electrónicamente con las administraciones para cualquier trámite; la libertad de elección del artículo 14.1 es solo de las personas físicas."
+    },
+    "ca": {
+      "enunciado": "El president d'una associació de veïns vol presentar en paper, en una oficina de la Generalitat, la sol·licitud de subvenció de l'associació. Segons l'article 14.2 de la Llei 39/2015:",
+      "opciones": [
+        "Ho pot fer, perquè les entitats sense ànim de lucre poden escollir el mitjà de relació",
+        "No ho pot fer: l'associació, com a persona jurídica, està obligada a relacionar-se electrònicament amb l'Administració",
+        "Ho pot fer si la signa de manera manuscrita en la seva condició de persona física",
+        "Només ho pot fer si l'associació té menys de cinquanta socis"
+      ],
+      "explicacion": "L'article 14.2.a obliga les persones jurídiques, sigui quina sigui la seva finalitat, a relacionar-se electrònicament amb les administracions per a qualsevol tràmit; la llibertat d'elecció de l'article 14.1 és només de les persones físiques."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "a) Las personas jurídicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-009",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una auxiliar administrativa de la Generalitat debe presentar dos solicitudes ante la Generalitat: su participación en un concurso de provisión de puestos y una beca de comedor para su hija. Según el artículo 14.2.e de la Ley 39/2015, está obligada a relacionarse electrónicamente:",
+      "opciones": [
+        "En las dos solicitudes, porque todo empleado público está obligado a relacionarse electrónicamente para cualquier trámite",
+        "Solo en la beca, porque los trámites de personal se hacen siempre en papel",
+        "En la solicitud del concurso, porque la hace por razón de su condición de empleada pública, en la forma que se determine reglamentariamente",
+        "En ninguna de las dos, porque es una persona física y puede elegir siempre el medio"
+      ],
+      "explicacion": "El artículo 14.2.e obliga a los empleados públicos a relacionarse electrónicamente solo en los trámites que hagan por razón de su condición de empleado público; en la beca actúa como cualquier persona física y puede elegir el medio."
+    },
+    "ca": {
+      "enunciado": "Una auxiliar administrativa de la Generalitat ha de presentar dues sol·licituds davant la Generalitat: la participació en un concurs de provisió de llocs i una beca de menjador per a la seva filla. Segons l'article 14.2.e de la Llei 39/2015, està obligada a relacionar-se electrònicament:",
+      "opciones": [
+        "En totes dues sol·licituds, perquè tot empleat públic està obligat a relacionar-se electrònicament per a qualsevol tràmit",
+        "Només en la beca, perquè els tràmits de personal es fan sempre en paper",
+        "En la sol·licitud del concurs, perquè la fa per raó de la seva condició d'empleada pública, en la forma que es determini per reglament",
+        "En cap de les dues, perquè és una persona física i sempre pot escollir el mitjà"
+      ],
+      "explicacion": "L'article 14.2.e obliga els empleats públics a relacionar-se electrònicament només en els tràmits que facin per raó de la seva condició d'empleat públic; en la beca actua com qualsevol persona física i pot escollir el mitjà."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "e) Los empleados de las Administraciones Públicas para los trámites y actuaciones que realicen con ellas por razón de su condición de empleado público, en la forma en que se determine reglamentariamente por cada Administración.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-010",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una persona física no obligada a relacionarse electrónicamente inició un procedimiento por la sede electrónica y ahora quiere presentar los siguientes escritos en papel. Según el artículo 14.1 de la Ley 39/2015:",
+      "opciones": [
+        "No puede: una vez elegida la vía electrónica, debe mantenerla hasta el final del procedimiento",
+        "Solo puede hacerlo si lo autoriza el órgano instructor",
+        "Puede hacerlo, porque puede modificar en cualquier momento el medio elegido",
+        "Solo puede hacerlo si han transcurrido seis meses desde que eligió la vía electrónica"
+      ],
+      "explicacion": "El artículo 14.1 permite a las personas físicas no obligadas elegir en todo momento si se comunican por medios electrónicos o no, y modificar en cualquier momento el medio elegido."
+    },
+    "ca": {
+      "enunciado": "Una persona física no obligada a relacionar-se electrònicament va iniciar un procediment per la seu electrònica i ara vol presentar els escrits següents en paper. Segons l'article 14.1 de la Llei 39/2015:",
+      "opciones": [
+        "No pot: un cop escollida la via electrònica, l'ha de mantenir fins al final del procediment",
+        "Només ho pot fer si ho autoritza l'òrgan instructor",
+        "Ho pot fer, perquè pot modificar en qualsevol moment el mitjà escollit",
+        "Només ho pot fer si han passat sis mesos des que va escollir la via electrònica"
+      ],
+      "explicacion": "L'article 14.1 permet a les persones físiques no obligades escollir en tot moment si es comuniquen per mitjans electrònics o no, i modificar en qualsevol moment el mitjà escollit."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "El medio elegido por la persona para comunicarse con las Administraciones Públicas podrá ser modificado por aquella en cualquier momento.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-011",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un gestor presenta, en nombre de su cliente, un recurso de alzada contra una resolución de un departamento de la Generalitat. Según el artículo 5.3 de la Ley 39/2015:",
+      "opciones": [
+        "La representación se presume, porque la interposición de un recurso es un acto de mero trámite",
+        "No necesita acreditarla si es un profesional colegiado",
+        "Debe acreditar la representación, porque se trata de interponer un recurso",
+        "Solo debe acreditarla si la Administración se lo pide al resolver el recurso"
+      ],
+      "explicacion": "El artículo 5.3 exige acreditar la representación para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir y renunciar; solo se presume en los actos y gestiones de mero trámite."
+    },
+    "ca": {
+      "enunciado": "Un gestor presenta, en nom del seu client, un recurs d'alçada contra una resolució d'un departament de la Generalitat. Segons l'article 5.3 de la Llei 39/2015:",
+      "opciones": [
+        "La representació es presumeix, perquè la interposició d'un recurs és un acte de mer tràmit",
+        "No l'ha d'acreditar si és un professional col·legiat",
+        "Ha d'acreditar la representació, perquè es tracta d'interposar un recurs",
+        "Només l'ha d'acreditar si l'Administració l'hi demana en resoldre el recurs"
+      ],
+      "explicacion": "L'article 5.3 exigeix acreditar la representació per formular sol·licituds, presentar declaracions responsables o comunicacions, interposar recursos, desistir i renunciar; només es presumeix en els actes i gestions de mer tràmit."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "5.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a5"
+    },
+    "cita": "Para formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos en nombre de otra persona, deberá acreditarse la representación. Para los actos y gestiones de mero trámite se presumirá aquella representación.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-012",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 5.6 de la Ley 39/2015, la falta o insuficiente acreditación de la representación no impide que se tenga por realizado el acto, siempre que se aporte o se subsane el defecto en el plazo que conceda el órgano, que es de:",
+      "opciones": [
+        "Cinco días improrrogables",
+        "Quince días hábiles",
+        "Un mes desde la notificación del requerimiento",
+        "Diez días, o un plazo superior cuando las circunstancias lo requieran"
+      ],
+      "explicacion": "El artículo 5.6 concede un plazo de diez días para aportar la acreditación o subsanar el defecto, o un plazo superior si las circunstancias del caso lo requieren."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 5.6 de la Llei 39/2015, la manca d'acreditació de la representació, o la insuficient, no impedeix que es tingui per fet l'acte, sempre que s'aporti o s'esmeni el defecte en el termini que concedeixi l'òrgan, que és de:",
+      "opciones": [
+        "Cinc dies improrrogables",
+        "Quinze dies hàbils",
+        "Un mes des de la notificació del requeriment",
+        "Deu dies, o un termini superior quan les circumstàncies ho requereixin"
+      ],
+      "explicacion": "L'article 5.6 concedeix un termini de deu dies per aportar l'acreditació o esmenar el defecte, o un termini superior si les circumstàncies del cas ho requereixen."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "5.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a5"
+    },
+    "cita": "siempre que se aporte aquélla o se subsane el defecto dentro del plazo de diez días que deberá conceder al efecto el órgano administrativo",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-013",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 5.4 de la Ley 39/2015, se entiende acreditada la representación otorgada mediante apoderamiento apud acta efectuado:",
+      "opciones": [
+        "Solo ante notario, mediante escritura pública",
+        "Mediante una simple declaración del representante en el escrito que presenta",
+        "Por comparecencia personal o por comparecencia electrónica en la sede electrónica correspondiente",
+        "Solo por comparecencia personal ante el órgano que resolverá el procedimiento"
+      ],
+      "explicacion": "El artículo 5.4 admite el apoderamiento apud acta por comparecencia personal o electrónica en la sede, así como la acreditación de su inscripción en el registro electrónico de apoderamientos; no exige escritura notarial."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 5.4 de la Llei 39/2015, s'entén acreditada la representació atorgada mitjançant apoderament apud acta efectuat:",
+      "opciones": [
+        "Només davant notari, mitjançant escriptura pública",
+        "Mitjançant una simple declaració del representant en l'escrit que presenta",
+        "Per compareixença personal o per compareixença electrònica a la seu electrònica corresponent",
+        "Només per compareixença personal davant l'òrgan que resoldrà el procediment"
+      ],
+      "explicacion": "L'article 5.4 admet l'apoderament apud acta per compareixença personal o electrònica a la seu, així com l'acreditació de la seva inscripció en el registre electrònic d'apoderaments; no exigeix escriptura notarial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "5.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a5"
+    },
+    "cita": "se entenderá acreditada la representación realizada mediante apoderamiento apud acta efectuado por comparecencia personal o comparecencia electrónica en la correspondiente sede electrónica, o a través de la acreditación de su inscripción en el registro electrónico de apoderamientos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-014",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un ciudadano inscribió el 10 de marzo de 2024 un poder general en el registro electrónico de apoderamientos y no lo ha revocado ni prorrogado. Según el artículo 6.6 de la Ley 39/2015, el poder será válido, como máximo, hasta:",
+      "opciones": [
+        "El 10 de marzo de 2029",
+        "El 10 de marzo de 2026",
+        "El 10 de marzo de 2027",
+        "El 10 de marzo de 2034"
+      ],
+      "explicacion": "El artículo 6.6 fija una validez máxima de cinco años desde la fecha de inscripción, sin perjuicio de que el poderdante lo revoque o prorrogue antes; inscrito en marzo de 2024, vence como máximo en marzo de 2029."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà va inscriure el 10 de març de 2024 un poder general al registre electrònic d'apoderaments i no l'ha revocat ni prorrogat. Segons l'article 6.6 de la Llei 39/2015, el poder serà vàlid, com a màxim, fins al:",
+      "opciones": [
+        "10 de març de 2029",
+        "10 de març de 2026",
+        "10 de març de 2027",
+        "10 de març de 2034"
+      ],
+      "explicacion": "L'article 6.6 fixa una validesa màxima de cinc anys des de la data d'inscripció, sens perjudici que el poderdant el revoqui o el prorrogui abans; inscrit el març de 2024, venç com a màxim el març de 2029."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "6.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a6"
+    },
+    "cita": "Los poderes inscritos en el registro tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-015",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 6.4 de la Ley 39/2015, ¿cuál de los siguientes es uno de los tipos de poder que pueden inscribirse en los registros electrónicos de apoderamientos?",
+      "opciones": [
+        "Un poder para actuar en nombre del poderdante también ante los órganos judiciales",
+        "Un poder indefinido, sin límite temporal, para cualquier actuación privada",
+        "Un poder para que el apoderado delegue a su vez en terceras personas",
+        "Un poder para actuar en nombre del poderdante únicamente en determinados trámites especificados en el poder"
+      ],
+      "explicacion": "El artículo 6.4 prevé tres tipologías: poder general ante cualquier Administración, poder ante una Administración u organismo concreto y poder solo para determinados trámites especificados en él."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 6.4 de la Llei 39/2015, quin dels següents és un dels tipus de poder que es poden inscriure als registres electrònics d'apoderaments?",
+      "opciones": [
+        "Un poder per actuar en nom del poderdant també davant els òrgans judicials",
+        "Un poder indefinit, sense límit temporal, per a qualsevol actuació privada",
+        "Un poder perquè l'apoderat delegui al seu torn en terceres persones",
+        "Un poder per actuar en nom del poderdant únicament en determinats tràmits especificats en el poder"
+      ],
+      "explicacion": "L'article 6.4 preveu tres tipologies: poder general davant qualsevol administració, poder davant una administració o un organisme concret i poder només per a determinats tràmits especificats en el poder."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "6.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a6"
+    },
+    "cita": "c) Un poder para que el apoderado pueda actuar en nombre del poderdante únicamente para la realización de determinados trámites especificados en el poder.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-016",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 16.1 de la Ley 39/2015, en el Registro Electrónico General de cada Administración:",
+      "opciones": [
+        "Solo se anotan los documentos presentados por personas jurídicas",
+        "Solo se anotan las salidas de documentos dirigidos a particulares",
+        "Se hace el asiento de todo documento presentado o recibido en cualquier órgano, y también puede anotarse la salida de documentos oficiales",
+        "Se inscriben los poderes otorgados por los interesados a sus representantes"
+      ],
+      "explicacion": "El artículo 16.1 obliga a cada Administración a tener un Registro Electrónico General donde se asienta todo documento presentado o recibido, y en el que también pueden anotarse las salidas. Los poderes se inscriben en el registro de apoderamientos (artículo 6)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 16.1 de la Llei 39/2015, al Registre Electrònic General de cada administració:",
+      "opciones": [
+        "Només s'anoten els documents presentats per persones jurídiques",
+        "Només s'anoten les sortides de documents adreçats a particulars",
+        "Es fa l'assentament de tot document presentat o rebut en qualsevol òrgan, i també s'hi pot anotar la sortida de documents oficials",
+        "S'inscriuen els poders atorgats pels interessats als seus representants"
+      ],
+      "explicacion": "L'article 16.1 obliga cada administració a tenir un Registre Electrònic General on s'assenta tot document presentat o rebut, i en què també es poden anotar les sortides. Els poders s'inscriuen al registre d'apoderaments (article 6)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "Cada Administración dispondrá de un Registro Electrónico General, en el que se hará el correspondiente asiento de todo documento que sea presentado o que se reciba en cualquier órgano administrativo",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-017",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un ciudadano presenta una solicitud en el registro electrónico de la Generalitat un domingo a las 18.00 h. Ninguna norma permite la recepción en día inhábil. Según el artículo 41.8 de la Ley 26/2010, a efectos del cómputo de plazos la presentación se entiende hecha:",
+      "opciones": [
+        "El domingo a las 18.00 h, porque el registro electrónico funciona todos los días",
+        "En la primera hora del primer día hábil siguiente",
+        "Al final del primer día hábil siguiente",
+        "Cuando la unidad tramitadora la abra en su bandeja de entrada"
+      ],
+      "explicacion": "El artículo 41.8 permite presentar documentos en el registro electrónico todos los días del año, las 24 horas, pero a efectos de cómputo la presentación en día inhábil se entiende hecha en la primera hora del primer día hábil siguiente."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà presenta una sol·licitud al registre electrònic de la Generalitat un diumenge a les 18.00 h. Cap norma no permet la recepció en dia inhàbil. Segons l'article 41.8 de la Llei 26/2010, a l'efecte del còmput de terminis la presentació s'entén feta:",
+      "opciones": [
+        "El diumenge a les 18.00 h, perquè el registre electrònic funciona tots els dies",
+        "A la primera hora del primer dia hàbil següent",
+        "Al final del primer dia hàbil següent",
+        "Quan la unitat tramitadora l'obri a la seva safata d'entrada"
+      ],
+      "explicacion": "L'article 41.8 permet presentar documents al registre electrònic tots els dies de l'any, les 24 hores, però a l'efecte del còmput la presentació en dia inhàbil s'entén feta a la primera hora del primer dia hàbil següent."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "41.8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a41"
+    },
+    "cita": "Al efecto del cómputo legal de los plazos, la presentación en un día inhábil se entiende efectuada en la primera hora del primer día hábil siguiente, excepto que una norma permita su recepción en día inhábil.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-018",
+    "tema": 10,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 41.9 de la Ley 26/2010, cuando el servicio de registro electrónico deba interrumpirse por motivos técnicos, operativos o de mantenimiento:",
+      "opciones": [
+        "Los plazos de todos los procedimientos quedan suspendidos automáticamente durante un mes",
+        "La interrupción debe anunciarse a los usuarios y en la sede con la máxima antelación posible, indicando el sistema alternativo de registro",
+        "Debe publicarse previamente una orden del consejero competente en el DOGC",
+        "Solo puede hacerse en días inhábiles y entre las 0 y las 6 horas"
+      ],
+      "explicacion": "El artículo 41.9 admite la interrupción justificada del registro electrónico, pero exige anunciarla con la máxima antelación posible a los usuarios y en la sede, indicando el sistema alternativo que se puede utilizar."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 41.9 de la Llei 26/2010, quan el servei de registre electrònic s'hagi d'interrompre per motius tècnics, operatius o de manteniment:",
+      "opciones": [
+        "Els terminis de tots els procediments queden suspesos automàticament durant un mes",
+        "La interrupció s'ha d'anunciar als usuaris i a la seu amb la màxima antelació possible, indicant el sistema alternatiu de registre",
+        "S'ha de publicar prèviament una ordre del conseller competent al DOGC",
+        "Només es pot fer en dies inhàbils i entre les 0 i les 6 hores"
+      ],
+      "explicacion": "L'article 41.9 admet la interrupció justificada del registre electrònic, però exigeix anunciar-la amb la màxima antelació possible als usuaris i a la seu, indicant el sistema alternatiu que es pot utilitzar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "41.9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a41"
+    },
+    "cita": "La interrupción debe anunciarse a los usuarios y en la sede electrónica con la máxima antelación posible, indicando el sistema alternativo de registro que puede ser utilizado mientras dure la interrupción.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-019",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 45.1 de la Ley 26/2010, ¿qué sistema de firma electrónica pueden utilizar siempre las personas físicas en sus relaciones con las administraciones?",
+      "opciones": [
+        "El incorporado en el documento nacional de identidad",
+        "El certificado de representante de persona jurídica",
+        "El sello electrónico de órgano",
+        "El código seguro de verificación"
+      ],
+      "explicacion": "El artículo 45.1 garantiza que las personas físicas pueden utilizar siempre los sistemas de firma incorporados en el DNI; además pueden usar otros sistemas admitidos por las administraciones (artículo 45.2)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 45.1 de la Llei 26/2010, quin sistema de signatura electrònica poden utilitzar sempre les persones físiques en les seves relacions amb les administracions?",
+      "opciones": [
+        "El que incorpora el document nacional d'identitat",
+        "El certificat de representant de persona jurídica",
+        "El segell electrònic d'òrgan",
+        "El codi segur de verificació"
+      ],
+      "explicacion": "L'article 45.1 garanteix que les persones físiques poden utilitzar sempre els sistemes de signatura incorporats al DNI; a més, en poden fer servir d'altres admesos per les administracions (article 45.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "45.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a45"
+    },
+    "cita": "Las personas físicas pueden utilizar siempre, en las relaciones con las administraciones, los sistemas de firma electrónica incorporados en el documento nacional de identidad.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-020",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una persona física no obligada a relacionarse electrónicamente consintió recibir comunicaciones electrónicas en un procedimiento de la Generalitat y ahora quiere volver al papel. Según el artículo 43.5 de la Ley 26/2010:",
+      "opciones": [
+        "No puede revocarlo hasta que finalice el procedimiento",
+        "Puede revocar el consentimiento en cualquier momento del procedimiento, mediante solicitud expresa",
+        "La revocación se produce automáticamente si no accede a las notificaciones durante diez días",
+        "Solo puede revocarlo si justifica dificultades técnicas"
+      ],
+      "explicacion": "El artículo 43.5 permite a la persona interesada, en cualquier momento del procedimiento, utilizar un medio no electrónico y revocar el consentimiento a las comunicaciones electrónicas, pero exige una solicitud expresa. No acceder a una notificación durante diez días equivale a rechazarla, no a revocar el consentimiento."
+    },
+    "ca": {
+      "enunciado": "Una persona física no obligada a relacionar-se electrònicament va consentir rebre comunicacions electròniques en un procediment de la Generalitat i ara vol tornar al paper. Segons l'article 43.5 de la Llei 26/2010:",
+      "opciones": [
+        "No el pot revocar fins que acabi el procediment",
+        "Pot revocar el consentiment en qualsevol moment del procediment, mitjançant sol·licitud expressa",
+        "La revocació es produeix automàticament si no accedeix a les notificacions durant deu dies",
+        "Només el pot revocar si justifica dificultats tècniques"
+      ],
+      "explicacion": "L'article 43.5 permet a la persona interessada, en qualsevol moment del procediment, utilitzar un mitjà no electrònic i revocar el consentiment a les comunicacions electròniques, però exigeix una sol·licitud expressa. No accedir a una notificació durant deu dies equival a rebutjar-la, no a revocar el consentiment."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "43.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a43"
+    },
+    "cita": "puede ejercer el derecho a utilizar un medio no electrónico y a revocar el consentimiento para las comunicaciones electrónicas. El ejercicio de este derecho requiere una solicitud expresa de la persona interesada.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-021",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 13.1 de la Ley 29/2010, los ciudadanos y las empresas tienen derecho a disponer, en la sede electrónica corporativa, de un espacio personalizado desde el que pueden, entre otras acciones:",
+      "opciones": [
+        "Modificar los datos de otras personas interesadas en el mismo procedimiento",
+        "Firmar resoluciones en nombre del órgano competente",
+        "Consultar los expedientes de cualquier ciudadano",
+        "Acceder a las notificaciones y comunicaciones que les envía la Administración"
+      ],
+      "explicacion": "El artículo 13.1 enumera las acciones del espacio personalizado: acceder al estado de los trámites, a la documentación anexada, al documento de resolución, a las notificaciones y comunicaciones, al propio perfil y poner información a disposición del sector público."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13.1 de la Llei 29/2010, els ciutadans i les empreses tenen dret a disposar, a la seu electrònica corporativa, d'un espai personalitzat des del qual poden, entre altres accions:",
+      "opciones": [
+        "Modificar les dades d'altres persones interessades en el mateix procediment",
+        "Signar resolucions en nom de l'òrgan competent",
+        "Consultar els expedients de qualsevol ciutadà",
+        "Accedir a les notificacions i comunicacions que els envia l'Administració"
+      ],
+      "explicacion": "L'article 13.1 enumera les accions de l'espai personalitzat: accedir a l'estat dels tràmits, a la documentació annexada, al document de resolució, a les notificacions i comunicacions, al propi perfil i posar informació a disposició del sector públic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "13.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a13"
+    },
+    "cita": "tienen derecho a disponer de un espacio personalizado en la sede electrónica corporativa, en que, debidamente identificados y autenticados, puedan, de forma sencilla, llevar a cabo las siguientes acciones",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-022",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 4 de la Ley 29/2010, el principio que obliga a permitir el uso de los medios electrónicos independientemente de las opciones tecnológicas de los destinatarios y a promover los estándares abiertos es el de:",
+      "opciones": [
+        "Proporcionalidad",
+        "Proximidad",
+        "Cooperación y colaboración",
+        "Neutralidad tecnológica"
+      ],
+      "explicacion": "El principio de neutralidad tecnológica del artículo 4 impide condicionar el acceso a una tecnología concreta y obliga a promover estándares abiertos. La proporcionalidad se refiere a las garantías y datos exigidos y la proximidad a acercar la Administración a los ciudadanos."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 4 de la Llei 29/2010, el principi que obliga a permetre l'ús dels mitjans electrònics independentment de les opcions tecnològiques dels destinataris i a promoure els estàndards oberts és el de:",
+      "opciones": [
+        "Proporcionalitat",
+        "Proximitat",
+        "Cooperació i col·laboració",
+        "Neutralitat tecnològica"
+      ],
+      "explicacion": "El principi de neutralitat tecnològica de l'article 4 impedeix condicionar l'accés a una tecnologia concreta i obliga a promoure estàndards oberts. La proporcionalitat es refereix a les garanties i dades exigides i la proximitat, a acostar l'Administració als ciutadans."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13843",
+      "norma": "Ley 29/2010, de 3 de agosto, del uso de los medios electrónicos en el sector público de Cataluña",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13843#a4"
+    },
+    "cita": "Neutralidad tecnológica.–Las entidades del sector público deben permitir el uso de los medios electrónicos independientemente de las opciones tecnológicas escogidas por los destinatarios y deben promover el uso de estándares abiertos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-023",
+    "tema": 10,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 42 de la Ley 40/2015, en la actuación administrativa automatizada cada Administración puede utilizar como sistemas de firma:",
+      "opciones": [
+        "El sello electrónico de Administración u órgano y el código seguro de verificación",
+        "La firma electrónica personal del empleado que programó el sistema",
+        "La firma manuscrita digitalizada del titular del órgano",
+        "El certificado de representante de persona jurídica"
+      ],
+      "explicacion": "El artículo 42 prevé dos sistemas de firma para la actuación automatizada: el sello electrónico basado en certificado cualificado y el código seguro de verificación, que permite comprobar la integridad del documento en la sede electrónica."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 42 de la Llei 40/2015, en l'actuació administrativa automatitzada cada administració pot utilitzar com a sistemes de signatura:",
+      "opciones": [
+        "El segell electrònic d'administració o d'òrgan i el codi segur de verificació",
+        "La signatura electrònica personal de l'empleat que va programar el sistema",
+        "La signatura manuscrita digitalitzada del titular de l'òrgan",
+        "El certificat de representant de persona jurídica"
+      ],
+      "explicacion": "L'article 42 preveu dos sistemes de signatura per a l'actuació automatitzada: el segell electrònic basat en certificat qualificat i el codi segur de verificació, que permet comprovar la integritat del document a la seu electrònica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "42",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a42"
+    },
+    "cita": "b) Código seguro de verificación vinculado a la Administración Pública, órgano, organismo público o entidad de Derecho Público",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t10-024",
+    "tema": 10,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 13.a de la Ley 39/2015, las personas tienen derecho a comunicarse con las administraciones públicas a través de:",
+      "opciones": [
+        "Un punto de acceso general electrónico de la Administración",
+        "El correo electrónico personal de cada empleado público",
+        "Las redes sociales institucionales",
+        "El tablón de anuncios de cada órgano"
+      ],
+      "explicacion": "El artículo 13.a reconoce el derecho a comunicarse con las administraciones a través de un punto de acceso general electrónico, que funciona como portal de acceso, por ejemplo, a las notificaciones (artículo 43.4)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13.a de la Llei 39/2015, les persones tenen dret a comunicar-se amb les administracions públiques a través de:",
+      "opciones": [
+        "Un punt d'accés general electrònic de l'Administració",
+        "El correu electrònic personal de cada empleat públic",
+        "Les xarxes socials institucionals",
+        "El tauler d'anuncis de cada òrgan"
+      ],
+      "explicacion": "L'article 13.a reconeix el dret a comunicar-se amb les administracions a través d'un punt d'accés general electrònic, que funciona com a portal d'accés, per exemple, a les notificacions (article 43.4)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a13"
+    },
+    "cita": "a) A comunicarse con las Administraciones Públicas a través de un Punto de Acceso General electrónico de la Administración.",
+    "origen": "ia"
+  }
+]

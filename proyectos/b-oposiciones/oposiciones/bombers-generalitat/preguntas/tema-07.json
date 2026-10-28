@@ -1,0 +1,422 @@
+[
+  {
+    "id": "bomb-t07-001",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 5/1994, ¿cómo se organiza territorialmente el Cuerpo de Bomberos de la Generalitat?",
+      "opciones": [
+        "En parques, zonas y brigadas",
+        "En parques, comarcas y veguerías",
+        "En unidades, sectores y demarcaciones",
+        "En parques, secciones y distritos"
+      ],
+      "explicacion": "El artículo 24 de la Ley 5/1994 organiza territorialmente el Cuerpo en parques, zonas y brigadas; el detalle de la organización territorial, funcional y operativa se remite al reglamento (art. 25.4)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 5/1994, com s'organitza territorialment el Cos de Bombers de la Generalitat?",
+      "opciones": [
+        "En parcs, zones i brigades",
+        "En parcs, comarques i vegueries",
+        "En unitats, sectors i demarcacions",
+        "En parcs, seccions i districtes"
+      ],
+      "explicacion": "L'article 24 de la Llei 5/1994 organitza territorialment el Cos en parcs, zones i brigades; el detall de l'organització territorial, funcional i operativa es remet al reglament (art. 25.4)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "24",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a24"
+    },
+    "cita": "El Cuerpo de Bomberos de la Generalidad se organiza territorialmente en parques, zonas y brigadas.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-002",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 5/1994, el parque es:",
+      "opciones": [
+        "Una unidad territorial de ámbito superior que agrupa varias zonas",
+        "El conjunto de medios personales y materiales, con organización propia, situado en un municipio y con un ámbito territorial de intervención funcional concreto",
+        "Un conjunto de zonas con unidad de coordinación y ámbito comarcal",
+        "El edificio donde se guardan los vehículos del Cuerpo, sin organización propia"
+      ],
+      "explicacion": "El artículo 25.1 de la Ley 5/1994 define así el parque. La zona es un conjunto de parques de ámbito comarcal (art. 25.2) y la brigada agrupa varias zonas (art. 25.3)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 5/1994, el parc és:",
+      "opciones": [
+        "Una unitat territorial d'àmbit superior que agrupa diverses zones",
+        "El conjunt de mitjans personals i materials, amb organització pròpia, situat en un municipi i amb un àmbit territorial d'intervenció funcional concret",
+        "Un conjunt de zones amb unitat de coordinació i àmbit comarcal",
+        "L'edifici on es guarden els vehicles del Cos, sense organització pròpia"
+      ],
+      "explicacion": "L'article 25.1 de la Llei 5/1994 defineix així el parc. La zona és un conjunt de parcs d'àmbit comarcal (art. 25.2) i la brigada agrupa diverses zones (art. 25.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "25.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a25"
+    },
+    "cita": "El parque es el conjunto de medios personales y materiales, con organización propia, situado en un municipio y con un ámbito territorial de intervención funcional concreto.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-003",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes es una categoría de la escala de apoyo del Cuerpo de Bomberos de la Generalitat?",
+      "opciones": [
+        "Bombero/a de primera",
+        "Cabo",
+        "Técnico/a Gestor/a de Sala de Coordinación (TECOR)",
+        "Subinspector/a"
+      ],
+      "explicacion": "El artículo 15.d) de la Ley 5/1994 incluye en la escala de apoyo las categorías TECOR, TEOV, EPAF y TELOG. Bombero de primera y cabo son de la escala técnica, y subinspector, de la ejecutiva."
+    },
+    "ca": {
+      "enunciado": "Quina de les següents és una categoria de l'escala de suport del Cos de Bombers de la Generalitat?",
+      "opciones": [
+        "Bomber/a de primera",
+        "Caporal",
+        "Tècnic/a Gestor/a de Sala de Coordinació (TECOR)",
+        "Sotsinspector/a"
+      ],
+      "explicacion": "L'article 15.d) de la Llei 5/1994 inclou a l'escala de suport les categories TECOR, TEOV, EPAF i TELOG. Bomber de primera i caporal són de l'escala tècnica, i sotsinspector, de l'executiva."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a15"
+    },
+    "cita": "Escala de apoyo, que comprende la categoría de Técnico/a Gestor/a de Sala de Coordinación (TECOR)",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-004",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En la organización territorial del Cuerpo de Bomberos de la Generalitat, ¿qué unidad de ámbito superior agrupa varias zonas y vela por su coordinación operativa y funcional?",
+      "opciones": [
+        "El parque",
+        "La región",
+        "La sección",
+        "La brigada"
+      ],
+      "explicacion": "El artículo 25.3 de la Ley 5/1994 define la brigada como la unidad territorial de ámbito superior que agrupa varias zonas."
+    },
+    "ca": {
+      "enunciado": "En l'organització territorial del Cos de Bombers de la Generalitat, quina unitat d'àmbit superior agrupa diverses zones i vetlla per la seva coordinació operativa i funcional?",
+      "opciones": [
+        "El parc",
+        "La regió",
+        "La secció",
+        "La brigada"
+      ],
+      "explicacion": "L'article 25.3 de la Llei 5/1994 defineix la brigada com la unitat territorial d'àmbit superior que agrupa diverses zones."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "25.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a25"
+    },
+    "cita": "La brigada es una unidad territorial de ámbito superior que agrupa a varias zonas y vela por su coordinación, operativa y funcional.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-005",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿A qué escala del Cuerpo de Bomberos de la Generalitat corresponden preferentemente las funciones de coordinación y mando de unidades técnicas y operativas de nivel intermedio?",
+      "opciones": [
+        "A la escala ejecutiva",
+        "A la escala superior",
+        "A la escala técnica",
+        "A la escala de apoyo"
+      ],
+      "explicacion": "El artículo 16.1.b) de la Ley 5/1994 atribuye a la escala ejecutiva la coordinación y el mando de unidades de nivel intermedio; la escala superior se ocupa de las de nivel superior (art. 16.1.a)."
+    },
+    "ca": {
+      "enunciado": "A quina escala del Cos de Bombers de la Generalitat corresponen preferentment les funcions de coordinació i comandament d'unitats tècniques i operatives de nivell intermedi?",
+      "opciones": [
+        "A l'escala executiva",
+        "A l'escala superior",
+        "A l'escala tècnica",
+        "A l'escala de suport"
+      ],
+      "explicacion": "L'article 16.1.b) de la Llei 5/1994 atribueix a l'escala executiva la coordinació i el comandament d'unitats de nivell intermedi; l'escala superior s'ocupa de les de nivell superior (art. 16.1.a)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a16"
+    },
+    "cita": "En la escala ejecutiva, las de coordinación y mando de unidades técnicas y las operativas de nivel intermedio",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-006",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A qué escala corresponden preferentemente las funciones operativas en tareas de prevención y extinción de incendios, de salvamentos y de apoyo sanitario en emergencias?",
+      "opciones": [
+        "A la escala de apoyo",
+        "A la escala técnica",
+        "A la escala ejecutiva",
+        "A la escala superior"
+      ],
+      "explicacion": "El artículo 16.1.c) de la Ley 5/1994 asigna estas funciones operativas a la escala técnica, junto con las de inspección y el mando de unidades operativas y logísticas que determine el reglamento."
+    },
+    "ca": {
+      "enunciado": "A quina escala corresponen preferentment les funcions operatives en tasques de prevenció i extinció d'incendis, de salvaments i de suport sanitari en emergències?",
+      "opciones": [
+        "A l'escala de suport",
+        "A l'escala tècnica",
+        "A l'escala executiva",
+        "A l'escala superior"
+      ],
+      "explicacion": "L'article 16.1.c) de la Llei 5/1994 assigna aquestes funcions operatives a l'escala tècnica, juntament amb les d'inspecció i el comandament d'unitats operatives i logístiques que determini el reglament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a16"
+    },
+    "cita": "En la escala técnica, las operativas en tareas de prevención y extinción de incendios y de salvamentos y de apoyo sanitario en emergencias",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-007",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 16 de la Ley 5/1994, ¿qué escalas tienen atribuida la dirección o el mando de las unidades correspondientes cuando se les encomienda ejercer como jefe de guardia?",
+      "opciones": [
+        "Solo la escala técnica",
+        "La escala técnica y la escala de apoyo",
+        "La escala superior y la escala ejecutiva",
+        "Solo la escala superior"
+      ],
+      "explicacion": "El artículo 16.1 de la Ley 5/1994 menciona el ejercicio como jefe de guardia en la escala superior (dirección y mando, letra a) y en la ejecutiva (mando, letra b)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 16 de la Llei 5/1994, quines escales tenen atribuïda la direcció o el comandament de les unitats corresponents quan se'ls encomana exercir com a cap de guàrdia?",
+      "opciones": [
+        "Només l'escala tècnica",
+        "L'escala tècnica i l'escala de suport",
+        "L'escala superior i l'escala executiva",
+        "Només l'escala superior"
+      ],
+      "explicacion": "L'article 16.1 de la Llei 5/1994 esmenta l'exercici com a cap de guàrdia a l'escala superior (direcció i comandament, lletra a) i a l'executiva (comandament, lletra b)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "16.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a16"
+    },
+    "cita": "así como la dirección y mando de las unidades correspondientes en las situaciones en que le sea encomendado ejercer como jefe de guardia … así como el mando de las unidades correspondientes en las situaciones en que le sea encomendado ejercer como jefe de guardia",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-008",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Respecto de la escala de apoyo del Cuerpo de Bomberos de la Generalitat, el artículo 17 bis de la Ley 5/1994 establece que:",
+      "opciones": [
+        "Sus miembros pueden acceder por promoción interna a cualquier otra escala",
+        "Su acceso se realiza exclusivamente por promoción interna",
+        "Su acceso no exige superar ningún curso selectivo",
+        "Desde ella no se puede acceder por promoción interna al resto de escalas del Cuerpo"
+      ],
+      "explicacion": "El artículo 17 bis.3 de la Ley 5/1994 cierra la promoción interna desde la escala de apoyo al resto de escalas. Su acceso es por concurso-oposición libre, con curso selectivo en el Instituto de Seguridad Pública de Cataluña y periodo de prácticas (art. 17 bis.1)."
+    },
+    "ca": {
+      "enunciado": "Pel que fa a l'escala de suport del Cos de Bombers de la Generalitat, l'article 17 bis de la Llei 5/1994 estableix que:",
+      "opciones": [
+        "Els seus membres poden accedir per promoció interna a qualsevol altra escala",
+        "L'accés s'hi fa exclusivament per promoció interna",
+        "L'accés no exigeix superar cap curs selectiu",
+        "Des d'aquesta escala no es pot accedir per promoció interna a la resta d'escales del Cos"
+      ],
+      "explicacion": "L'article 17 bis.3 de la Llei 5/1994 tanca la promoció interna des de l'escala de suport a la resta d'escales. L'accés és per concurs oposició lliure, amb curs selectiu a l'Institut de Seguretat Pública de Catalunya i període de pràctiques (art. 17 bis.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "17 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a17bis"
+    },
+    "cita": "Desde la escala de apoyo del Cuerpo de Bomberos de la Generalitat no se puede acceder por promoción interna al resto de escalas de este Cuerpo.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-009",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Sin perjuicio de las funciones que corresponden preferentemente a cada escala, el artículo 16.2 de la Ley 5/1994 dispone que los miembros del Cuerpo:",
+      "opciones": [
+        "Realizarán las tareas que sean necesarias para la ejecución de los servicios que tienen encomendados",
+        "Solo pueden realizar las funciones propias de su escala",
+        "Pueden negarse a realizar tareas propias de una escala inferior",
+        "Necesitan una orden escrita para realizar tareas de otra escala"
+      ],
+      "explicacion": "El artículo 16.2 de la Ley 5/1994 obliga a todos los miembros a realizar las tareas necesarias para ejecutar los servicios encomendados; las funciones del apartado 1 son solo «preferentes»."
+    },
+    "ca": {
+      "enunciado": "Sens perjudici de les funcions que corresponen preferentment a cada escala, l'article 16.2 de la Llei 5/1994 disposa que els membres del Cos:",
+      "opciones": [
+        "Faran les tasques que siguin necessàries per a l'execució dels serveis que tenen encomanats",
+        "Només poden fer les funcions pròpies de la seva escala",
+        "Es poden negar a fer tasques pròpies d'una escala inferior",
+        "Necessiten una ordre escrita per fer tasques d'una altra escala"
+      ],
+      "explicacion": "L'article 16.2 de la Llei 5/1994 obliga tots els membres a fer les tasques necessàries per executar els serveis encomanats; les funcions de l'apartat 1 són només «preferents»."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "16.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a16"
+    },
+    "cita": "Sin perjuicio de lo que se establece en el apartado 1, los miembros del Cuerpo realizarán las tareas que sean necesarias para la ejecución de los servicios que tienen encomendados.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-010",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes funciones atribuye el artículo 14.2 de la Ley 5/1994 al departamento competente respecto del Cuerpo de Bomberos de la Generalitat?",
+      "opciones": [
+        "Aprobar el Plan de protección civil de Cataluña",
+        "Ejercer la potestad disciplinaria",
+        "Declarar la activación de los planes municipales de protección civil",
+        "Homologar los planes básicos de emergencia municipal"
+      ],
+      "explicacion": "El artículo 14.2 de la Ley 5/1994 incluye la potestad disciplinaria, el despliegue territorial de efectivos y las distinciones y recompensas. Aprobar el Plan de protección civil de Cataluña corresponde al Gobierno y activar los planes municipales, al alcalde (Ley 4/1997)."
+    },
+    "ca": {
+      "enunciado": "Quina de les funcions següents atribueix l'article 14.2 de la Llei 5/1994 al departament competent respecte del Cos de Bombers de la Generalitat?",
+      "opciones": [
+        "Aprovar el Pla de protecció civil de Catalunya",
+        "Exercir la potestat disciplinària",
+        "Declarar l'activació dels plans municipals de protecció civil",
+        "Homologar els plans bàsics d'emergència municipal"
+      ],
+      "explicacion": "L'article 14.2 de la Llei 5/1994 inclou la potestat disciplinària, el desplegament territorial d'efectius i les distincions i recompenses. Aprovar el Pla de protecció civil de Catalunya correspon al Govern i activar els plans municipals, a l'alcalde (Llei 4/1997)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a14"
+    },
+    "cita": "Ejercer la potestad disciplinaria.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-011",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué antigüedad mínima de servicio activo en la categoría inmediatamente inferior exige la Ley 5/1994 para acceder por promoción interna a la categoría de cabo?",
+      "opciones": [
+        "Un año",
+        "Tres años",
+        "Dos años",
+        "Cinco años"
+      ],
+      "explicacion": "El artículo 19 de la Ley 5/1994 exige dos años de servicio activo en la categoría inmediatamente inferior y superar un curso de capacitación selectivo; los tres años corresponden a la promoción interna a subinspector e inspector (art. 21.1)."
+    },
+    "ca": {
+      "enunciado": "Quina antiguitat mínima de servei actiu en la categoria immediatament inferior exigeix la Llei 5/1994 per accedir per promoció interna a la categoria de caporal?",
+      "opciones": [
+        "Un any",
+        "Tres anys",
+        "Dos anys",
+        "Cinc anys"
+      ],
+      "explicacion": "L'article 19 de la Llei 5/1994 exigeix dos anys de servei actiu en la categoria immediatament inferior i superar un curs de capacitació selectiu; els tres anys corresponen a la promoció interna a sotsinspector i inspector (art. 21.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a19"
+    },
+    "cita": "El personal del Cuerpo de Bomberos de la Generalidad que tenga un mínimo de dos años de antigüedad de servicio activo en la categoría inmediatamente inferior",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t07-012",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En las convocatorias de acceso a las categorías de subinspector e inspector, ¿qué porcentaje máximo de plazas puede reservarse a la promoción interna según la Ley 5/1994?",
+      "opciones": [
+        "El 25%",
+        "El 50%",
+        "El 75%",
+        "El 65%"
+      ],
+      "explicacion": "El artículo 21.1 de la Ley 5/1994 permite reservar hasta un 65% de las plazas para promoción interna de quienes tengan tres años de antigüedad en la categoría inmediatamente inferior, la titulación adecuada y el curso de capacitación."
+    },
+    "ca": {
+      "enunciado": "En les convocatòries d'accés a les categories de sotsinspector i inspector, quin percentatge màxim de places es pot reservar a la promoció interna segons la Llei 5/1994?",
+      "opciones": [
+        "El 25%",
+        "El 50%",
+        "El 75%",
+        "El 65%"
+      ],
+      "explicacion": "L'article 21.1 de la Llei 5/1994 permet reservar fins a un 65% de les places per a promoció interna dels qui tinguin tres anys d'antiguitat en la categoria immediatament inferior, la titulació adequada i el curs de capacitació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1994-12665",
+      "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-12665#a21"
+    },
+    "cita": "Puede reservarse hasta un 65 por 100 de las plazas de cada convocatoria para la promoción interna",
+    "origen": "ia"
+  }
+]

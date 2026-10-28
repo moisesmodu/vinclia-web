@@ -1,0 +1,827 @@
+[
+  {
+    "id": "agen-t09-001",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una persona acude sin cita previa a una oficina de atención ciudadana de la Generalitat para pedir información sobre una ayuda. Según la Ley 26/2010, ¿cómo debe actuarse?",
+      "opciones": [
+        "Debe pedir cita previa por teléfono o en línea, porque la cita previa es obligatoria en la atención presencial",
+        "Solo puede ser atendida sin cita si acredita una situación de urgencia o de vulnerabilidad",
+        "Debe ser atendida: la cita previa no puede ser obligatoria en ningún caso y solo puede establecerse para mejorar la atención presencial",
+        "Solo debe ser atendida si la oficina no ha implantado un sistema de cita previa"
+      ],
+      "explicacion": "El artículo 21.4 de la Ley 26/2010 establece que la cita previa no puede ser obligatoria en ningún caso y que solo puede establecerse para mejorar la atención presencial; por tanto, no puede exigirse para atender a la persona."
+    },
+    "ca": {
+      "enunciado": "Una persona va sense cita prèvia a una oficina d'atenció ciutadana de la Generalitat per demanar informació sobre un ajut. Segons la Llei 26/2010, com s'ha d'actuar?",
+      "opciones": [
+        "Ha de demanar cita prèvia per telèfon o en línia, perquè la cita prèvia és obligatòria en l'atenció presencial",
+        "Només se la pot atendre sense cita si acredita una situació d'urgència o de vulnerabilitat",
+        "S'ha d'atendre: la cita prèvia no pot ser obligatòria en cap cas i només es pot establir per millorar l'atenció presencial",
+        "Només se l'ha d'atendre si l'oficina no ha implantat un sistema de cita prèvia"
+      ],
+      "explicacion": "L'article 21.4 de la Llei 26/2010 estableix que la cita prèvia no pot ser obligatòria en cap cas i que només es pot establir per millorar l'atenció presencial; per tant, no es pot exigir per atendre la persona."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "21.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a21"
+    },
+    "cita": "La cita previa no puede ser obligatoria en ningún caso y solo puede establecerse para mejorar los servicios de atención presencial.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-002",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 21.3 de la Ley 26/2010, el derecho a obtener servicios de atención, información y orientación incluye el derecho a:",
+      "opciones": [
+        "Ser atendido siempre de forma presencial, aunque existan medios electrónicos",
+        "Escoger, entre los medios disponibles en cada momento, el que se desea utilizar para recibir esos servicios",
+        "Recibir la atención exclusivamente por el canal que fije cada unidad administrativa",
+        "Exigir la creación de un canal de atención específico para cada procedimiento"
+      ],
+      "explicacion": "El artículo 21.3 reconoce el derecho a escoger, entre los medios disponibles (oficinas presenciales, atención telefónica, medios electrónicos u otros), el que se desea utilizar; no impone un canal único ni obliga a crear canales nuevos."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21.3 de la Llei 26/2010, el dret a obtenir serveis d'atenció, informació i orientació inclou el dret a:",
+      "opciones": [
+        "Ser atès sempre de manera presencial, encara que hi hagi mitjans electrònics",
+        "Escollir, entre els mitjans disponibles en cada moment, el que es vol utilitzar per rebre aquests serveis",
+        "Rebre l'atenció exclusivament pel canal que fixi cada unitat administrativa",
+        "Exigir la creació d'un canal d'atenció específic per a cada procediment"
+      ],
+      "explicacion": "L'article 21.3 reconeix el dret a escollir, entre els mitjans disponibles (oficines presencials, atenció telefònica, mitjans electrònics o d'altres), el que es vol utilitzar; no imposa un canal únic ni obliga a crear canals nous."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "21.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a21"
+    },
+    "cita": "el derecho a escoger, entre los medios que en cada momento estén disponibles, el que los ciudadanos desean utilizar para recibir los servicios de atención, información y orientación",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-003",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 21.1 de la Ley 26/2010, la atención adecuada a la que tienen derecho los ciudadanos incluye el derecho a un trato:",
+      "opciones": [
+        "Correcto, respetuoso y accesible, con las preceptivas adaptaciones y apoyo a la toma de decisiones",
+        "Preferente, gratuito y personalizado, con la asignación de un gestor único",
+        "Cordial, rápido y presencial, con cita previa garantizada",
+        "Confidencial, inmediato y bilingüe, con intérprete en cualquier lengua"
+      ],
+      "explicacion": "El artículo 21.1 define la atención adecuada como el derecho a un trato correcto, respetuoso y accesible, con las adaptaciones preceptivas y apoyo a la toma de decisiones, de acuerdo con la Convención sobre los derechos de las personas con discapacidad."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21.1 de la Llei 26/2010, l'atenció adequada a què tenen dret els ciutadans inclou el dret a un tracte:",
+      "opciones": [
+        "Correcte, respectuós i accessible, amb les adaptacions preceptives i suport a la presa de decisions",
+        "Preferent, gratuït i personalitzat, amb l'assignació d'un gestor únic",
+        "Cordial, ràpid i presencial, amb cita prèvia garantida",
+        "Confidencial, immediat i bilingüe, amb intèrpret en qualsevol llengua"
+      ],
+      "explicacion": "L'article 21.1 defineix l'atenció adequada com el dret a un tracte correcte, respectuós i accessible, amb les adaptacions preceptives i suport a la presa de decisions, d'acord amb la Convenció sobre els drets de les persones amb discapacitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a21"
+    },
+    "cita": "La atención adecuada incluye el derecho a un trato correcto, respetuoso y accesible, con las preceptivas adaptaciones y apoyo a la toma de decisiones",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-004",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un ciudadano aportó hace un año su título académico en un procedimiento de un departamento de la Generalitat. Ahora, en otro procedimiento del mismo departamento, le vuelven a pedir el título. Según el artículo 25.4 de la Ley 26/2010:",
+      "opciones": [
+        "Debe presentarlo de nuevo, porque cada procedimiento exige su propia documentación",
+        "No debe presentarlo de nuevo, aunque se le puede pedir que indique el expediente o archivo en el que se encuentra",
+        "Solo puede negarse a presentarlo si aporta una declaración jurada sobre su autenticidad",
+        "Debe presentar una copia legitimada por notario en el plazo de diez días"
+      ],
+      "explicacion": "El artículo 25.4 dispone que no deben presentarse los datos o documentos que ya estén en poder de las administraciones públicas, aunque se puede requerir a la persona que indique el expediente, actuación o archivo en que se encuentran."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà va aportar fa un any el seu títol acadèmic en un procediment d'un departament de la Generalitat. Ara, en un altre procediment del mateix departament, li tornen a demanar el títol. Segons l'article 25.4 de la Llei 26/2010:",
+      "opciones": [
+        "L'ha de tornar a presentar, perquè cada procediment exigeix la seva pròpia documentació",
+        "No l'ha de tornar a presentar, tot i que se li pot demanar que indiqui l'expedient o l'arxiu en què es troba",
+        "Només pot negar-se a presentar-lo si aporta una declaració jurada sobre la seva autenticitat",
+        "Ha de presentar una còpia legitimada per notari en el termini de deu dies"
+      ],
+      "explicacion": "L'article 25.4 disposa que no s'han de presentar les dades o els documents que ja siguin en poder de les administracions públiques, tot i que es pot requerir la persona que indiqui l'expedient, l'actuació o l'arxiu en què es troben."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "25.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a25"
+    },
+    "cita": "no debiendo presentar los que ya se encuentren en poder de las administraciones públicas, si bien en dicho caso se les puede requerir que faciliten información sobre el expediente, actuación o archivo en que se encuentra el dato o el documento",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-005",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de estos derechos forma parte, según el artículo 22.1 de la Ley 26/2010, del derecho a una buena administración?",
+      "opciones": [
+        "Obtener siempre una resolución favorable si la solicitud se presenta dentro de plazo",
+        "Elegir al empleado público que tramitará el procedimiento",
+        "Conocer en cualquier momento el estado de tramitación de los procedimientos en los que se es persona interesada",
+        "Obtener la tramitación preferente del propio expediente frente a los demás"
+      ],
+      "explicacion": "El artículo 22.1.f incluye en la buena administración el derecho a conocer en cualquier momento el estado de tramitación de los procedimientos en que se es persona interesada. Ninguna norma garantiza una resolución favorable ni la elección del tramitador."
+    },
+    "ca": {
+      "enunciado": "Quin d'aquests drets forma part, segons l'article 22.1 de la Llei 26/2010, del dret a una bona administració?",
+      "opciones": [
+        "Obtenir sempre una resolució favorable si la sol·licitud es presenta dins de termini",
+        "Escollir l'empleat públic que tramitarà el procediment",
+        "Conèixer en qualsevol moment l'estat de tramitació dels procediments en què s'és persona interessada",
+        "Obtenir la tramitació preferent del propi expedient davant dels altres"
+      ],
+      "explicacion": "L'article 22.1.f inclou en la bona administració el dret a conèixer en qualsevol moment l'estat de tramitació dels procediments en què s'és persona interessada. Cap norma garanteix una resolució favorable ni l'elecció del tramitador."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "22.1.f",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a22"
+    },
+    "cita": "f) El derecho a conocer en cualquier momento el estado de tramitación de los procedimientos en los que son personas interesadas.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-006",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 23.4 de la Ley 26/2010, las cartas de servicios de las unidades orgánicas de la Administración de la Generalitat con rango mínimo de dirección general deben:",
+      "opciones": [
+        "Evaluarse cada año y actualizarse, como mínimo, cada tres años",
+        "Evaluarse cada cinco años y actualizarse, como mínimo, cada diez años",
+        "Evaluarse cada dos años y actualizarse, como mínimo, cada cinco años",
+        "Evaluarse cada tres años y actualizarse, como mínimo, cada cuatro años"
+      ],
+      "explicacion": "El artículo 23.4 exige una carta por cada servicio finalista, que debe evaluarse cada dos años y actualizarse, como mínimo, cada cinco años."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 23.4 de la Llei 26/2010, les cartes de serveis de les unitats orgàniques de l'Administració de la Generalitat amb rang mínim de direcció general s'han de:",
+      "opciones": [
+        "Avaluar cada any i actualitzar, com a mínim, cada tres anys",
+        "Avaluar cada cinc anys i actualitzar, com a mínim, cada deu anys",
+        "Avaluar cada dos anys i actualitzar, com a mínim, cada cinc anys",
+        "Avaluar cada tres anys i actualitzar, com a mínim, cada quatre anys"
+      ],
+      "explicacion": "L'article 23.4 exigeix una carta per cada servei finalista, que s'ha d'avaluar cada dos anys i actualitzar, com a mínim, cada cinc anys."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "23.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a23"
+    },
+    "cita": "deben evaluarse cada dos años y deben actualizarse, como mínimo, cada cinco años",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-007",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una vecina se presenta en una oficina de registro de la Generalitat con un escrito dirigido a un ministerio de la Administración General del Estado. Según el artículo 25.2 de la Ley 26/2010, el personal de la oficina debe:",
+      "opciones": [
+        "Rechazarlo e indicarle que lo presente en una oficina de la Administración del Estado",
+        "Admitirlo solo si el ministerio ha firmado un convenio específico para ese trámite",
+        "Admitirlo, porque en los registros de la Generalitat pueden presentarse documentos dirigidos a otra administración",
+        "Recogerlo como simple consulta, sin efectos de presentación"
+      ],
+      "explicacion": "El artículo 25.2 permite presentar en los registros de la Administración de la Generalitat y de sus organismos documentos dirigidos a otra administración; el registro debe admitirlo y remitirlo."
+    },
+    "ca": {
+      "enunciado": "Una veïna es presenta en una oficina de registre de la Generalitat amb un escrit adreçat a un ministeri de l'Administració General de l'Estat. Segons l'article 25.2 de la Llei 26/2010, el personal de l'oficina ha de:",
+      "opciones": [
+        "Rebutjar-lo i indicar-li que el presenti en una oficina de l'Administració de l'Estat",
+        "Admetre'l només si el ministeri ha signat un conveni específic per a aquest tràmit",
+        "Admetre'l, perquè als registres de la Generalitat s'hi poden presentar documents adreçats a una altra administració",
+        "Recollir-lo com a simple consulta, sense efectes de presentació"
+      ],
+      "explicacion": "L'article 25.2 permet presentar als registres de l'Administració de la Generalitat i dels seus organismes documents adreçats a una altra administració; el registre l'ha d'admetre i trametre."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "25.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a25"
+    },
+    "cita": "Los ciudadanos pueden presentar en los registros de la Administración de la Generalidad y de los organismos y entidades públicas que dependen de esta o están vinculados a la misma, documentos dirigidos a otra administración.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-008",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 30 de la Ley 26/2010, en sus relaciones con las administraciones públicas de Cataluña y en el uso de los servicios públicos, los ciudadanos deben actuar con:",
+      "opciones": [
+        "La diligencia, responsabilidad y respeto debidos a las personas, instituciones y bienes públicos",
+        "Lealtad institucional, transparencia y colaboración con los órganos de control",
+        "Buena fe, puntualidad y conocimiento de la normativa aplicable",
+        "Discreción, neutralidad y austeridad en el uso de los recursos públicos"
+      ],
+      "explicacion": "El artículo 30 regula los deberes de los ciudadanos: actuar con la diligencia, responsabilidad y respeto debidos a las personas, instituciones y bienes públicos. La neutralidad o la austeridad son principios que se exigen a los empleados públicos."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 30 de la Llei 26/2010, en les seves relacions amb les administracions públiques de Catalunya i en l'ús dels serveis públics, els ciutadans han d'actuar amb:",
+      "opciones": [
+        "La diligència, la responsabilitat i el respecte deguts a les persones, les institucions i els béns públics",
+        "Lleialtat institucional, transparència i col·laboració amb els òrgans de control",
+        "Bona fe, puntualitat i coneixement de la normativa aplicable",
+        "Discreció, neutralitat i austeritat en l'ús dels recursos públics"
+      ],
+      "explicacion": "L'article 30 regula els deures dels ciutadans: actuar amb la diligència, la responsabilitat i el respecte deguts a les persones, les institucions i els béns públics. La neutralitat o l'austeritat són principis que s'exigeixen als empleats públics."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "30",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a30"
+    },
+    "cita": "deben actuar con la diligencia, responsabilidad y respeto debidos a las personas, instituciones y bienes públicos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-009",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Señale la opción INCORRECTA. Según el artículo 31.2 de la Ley 26/2010, son principios generales de actuación de las administraciones públicas de Cataluña:",
+      "opciones": [
+        "La jerarquía y la centralización",
+        "La proximidad",
+        "La simplificación y racionalidad administrativa",
+        "La lealtad institucional"
+      ],
+      "explicacion": "El artículo 31.2 enumera, entre otros, la proximidad, la simplificación y racionalidad administrativa y la lealtad institucional. La jerarquía y la centralización no figuran en esa lista de principios."
+    },
+    "ca": {
+      "enunciado": "Assenyaleu l'opció INCORRECTA. Segons l'article 31.2 de la Llei 26/2010, són principis generals d'actuació de les administracions públiques de Catalunya:",
+      "opciones": [
+        "La jerarquia i la centralització",
+        "La proximitat",
+        "La simplificació i la racionalitat administrativa",
+        "La lleialtat institucional"
+      ],
+      "explicacion": "L'article 31.2 enumera, entre d'altres, la proximitat, la simplificació i la racionalitat administrativa i la lleialtat institucional. La jerarquia i la centralització no figuren en aquesta llista de principis."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "31.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a31"
+    },
+    "cita": "Tercero. Proximidad. … Sexto. Simplificación y racionalidad administrativa. … Noveno. Lealtad institucional.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-010",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un señor de 80 años, no obligado a relacionarse electrónicamente y sin certificado digital, acude a la oficina de asistencia en materia de registros para presentar una solicitud por vía electrónica. Según el artículo 12.2 de la Ley 39/2015:",
+      "opciones": [
+        "Cualquier empleado de la oficina puede firmar en su nombre sin necesidad de dejar constancia",
+        "No es posible: la firma electrónica es personal y solo puede hacerla el interesado o un representante con poder notarial",
+        "Debe presentar la solicitud en papel y esperar a que la digitalice la unidad tramitadora",
+        "Un funcionario habilitado puede firmar por él con su propio sistema de firma, si el interesado se identifica y presta su consentimiento expreso, del que debe quedar constancia"
+      ],
+      "explicacion": "El artículo 12.2 permite que la identificación o firma electrónica de quien no dispone de medios la haga un funcionario público con su sistema de firma, siempre que el interesado se identifique y preste consentimiento expreso, del que debe quedar constancia."
+    },
+    "ca": {
+      "enunciado": "Un senyor de 80 anys, no obligat a relacionar-se electrònicament i sense certificat digital, va a l'oficina d'assistència en matèria de registres per presentar una sol·licitud per via electrònica. Segons l'article 12.2 de la Llei 39/2015:",
+      "opciones": [
+        "Qualsevol empleat de l'oficina pot signar en nom seu sense necessitat de deixar-ne constància",
+        "No és possible: la signatura electrònica és personal i només la pot fer l'interessat o un representant amb poder notarial",
+        "Ha de presentar la sol·licitud en paper i esperar que la digitalitzi la unitat tramitadora",
+        "Un funcionari habilitat pot signar per ell amb el seu propi sistema de signatura, si l'interessat s'identifica i hi presta el consentiment exprés, del qual n'ha de quedar constància"
+      ],
+      "explicacion": "L'article 12.2 permet que la identificació o la signatura electrònica de qui no disposa de mitjans la faci un funcionari públic amb el seu sistema de signatura, sempre que l'interessat s'identifiqui i hi presti el consentiment exprés, del qual n'ha de quedar constància."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "12.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a12"
+    },
+    "cita": "su identificación o firma electrónica en el procedimiento administrativo podrá ser válidamente realizada por un funcionario público mediante el uso del sistema de firma electrónica del que esté dotado para ello … se identifique ante el funcionario y preste su consentimiento expreso para esta actuación",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-011",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 13 de la Ley 39/2015, las personas tienen derecho a ser tratadas por las autoridades y los empleados públicos con:",
+      "opciones": [
+        "Prioridad y preferencia",
+        "Respeto y deferencia",
+        "Cortesía y gratuidad",
+        "Discreción y reserva"
+      ],
+      "explicacion": "El artículo 13.e reconoce el derecho a ser tratados con respeto y deferencia por las autoridades y empleados públicos, que deben facilitar el ejercicio de los derechos y el cumplimiento de las obligaciones."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13 de la Llei 39/2015, les persones tenen dret a ser tractades per les autoritats i els empleats públics amb:",
+      "opciones": [
+        "Prioritat i preferència",
+        "Respecte i deferència",
+        "Cortesia i gratuïtat",
+        "Discreció i reserva"
+      ],
+      "explicacion": "L'article 13.e reconeix el dret a ser tractats amb respecte i deferència per les autoritats i els empleats públics, que han de facilitar l'exercici dels drets i el compliment de les obligacions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a13"
+    },
+    "cita": "e) A ser tratados con respeto y deferencia por las autoridades y empleados públicos, que habrán de facilitarles el ejercicio de sus derechos y el cumplimiento de sus obligaciones.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-012",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Una ciudadana que reside temporalmente en Argentina quiere presentar en papel un escrito dirigido a un órgano de la Generalitat. Según el artículo 16.4 de la Ley 39/2015, puede presentarlo en:",
+      "opciones": [
+        "La representación diplomática u oficina consular de España en ese país",
+        "Cualquier sucursal de un banco con sede en España",
+        "Una notaría del país de residencia, que lo remitirá al órgano destinatario",
+        "Ningún lugar del extranjero: desde fuera de España solo cabe el registro electrónico"
+      ],
+      "explicacion": "El artículo 16.4.c incluye, entre los lugares de presentación, las representaciones diplomáticas u oficinas consulares de España en el extranjero."
+    },
+    "ca": {
+      "enunciado": "Una ciutadana que resideix temporalment a l'Argentina vol presentar en paper un escrit adreçat a un òrgan de la Generalitat. Segons l'article 16.4 de la Llei 39/2015, el pot presentar a:",
+      "opciones": [
+        "La representació diplomàtica o oficina consular d'Espanya en aquest país",
+        "Qualsevol sucursal d'un banc amb seu a Espanya",
+        "Una notaria del país de residència, que el trametrà a l'òrgan destinatari",
+        "Cap lloc de l'estranger: des de fora d'Espanya només és possible el registre electrònic"
+      ],
+      "explicacion": "L'article 16.4.c inclou, entre els llocs de presentació, les representacions diplomàtiques o oficines consulars d'Espanya a l'estranger."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "c) En las representaciones diplomáticas u oficinas consulares de España en el extranjero.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-013",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una oficina de asistencia en materia de registros, un ciudadano presenta en papel una solicitud acompañada de documentos originales. Según el artículo 16.5 de la Ley 39/2015, con carácter general la oficina debe:",
+      "opciones": [
+        "Quedarse los originales y entregar al interesado una fotocopia sellada",
+        "Digitalizar los documentos para incorporarlos al expediente electrónico y devolver los originales al interesado",
+        "Enviar los originales en papel por correo interno a la unidad tramitadora",
+        "Pedir al ciudadano que vuelva a presentarlos por el registro electrónico"
+      ],
+      "explicacion": "Según el artículo 16.5, los documentos presentados presencialmente deben ser digitalizados por la oficina de asistencia en materia de registros donde se presentan, para incorporarlos al expediente electrónico, y los originales se devuelven al interesado, salvo los casos de custodia obligatoria."
+    },
+    "ca": {
+      "enunciado": "En una oficina d'assistència en matèria de registres, un ciutadà presenta en paper una sol·licitud acompanyada de documents originals. Segons l'article 16.5 de la Llei 39/2015, amb caràcter general l'oficina ha de:",
+      "opciones": [
+        "Quedar-se els originals i lliurar a l'interessat una fotocòpia segellada",
+        "Digitalitzar els documents per incorporar-los a l'expedient electrònic i retornar els originals a l'interessat",
+        "Enviar els originals en paper per correu intern a la unitat tramitadora",
+        "Demanar al ciutadà que els torni a presentar pel registre electrònic"
+      ],
+      "explicacion": "Segons l'article 16.5, els documents presentats presencialment els ha de digitalitzar l'oficina d'assistència en matèria de registres on es presenten, per incorporar-los a l'expedient electrònic, i els originals es retornen a l'interessat, llevat dels casos de custòdia obligatòria."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "deberán ser digitalizados, de acuerdo con lo previsto en el artículo 27 y demás normativa aplicable, por la oficina de asistencia en materia de registros en la que hayan sido presentados para su incorporación al expediente administrativo electrónico, devolviéndose los originales al interesado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-014",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 16.3 de la Ley 39/2015, al registrar electrónicamente un documento se emite automáticamente un recibo consistente en:",
+      "opciones": [
+        "Un justificante en papel con el sello de la oficina y la firma manuscrita del funcionario",
+        "Un correo electrónico informativo sin valor acreditativo",
+        "Una certificación del secretario general del departamento destinatario",
+        "Una copia autenticada del documento, con la fecha y hora de presentación y el número de entrada de registro"
+      ],
+      "explicacion": "El artículo 16.3 prevé la emisión automática de un recibo que es una copia autenticada del documento, con fecha y hora de presentación y número de entrada, que garantiza su integridad y no repudio."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 16.3 de la Llei 39/2015, en registrar electrònicament un document s'emet automàticament un rebut que consisteix en:",
+      "opciones": [
+        "Un justificant en paper amb el segell de l'oficina i la signatura manuscrita del funcionari",
+        "Un correu electrònic informatiu sense valor acreditatiu",
+        "Una certificació del secretari general del departament destinatari",
+        "Una còpia autenticada del document, amb la data i l'hora de presentació i el número d'entrada de registre"
+      ],
+      "explicacion": "L'article 16.3 preveu l'emissió automàtica d'un rebut que és una còpia autenticada del document, amb data i hora de presentació i número d'entrada, que en garanteix la integritat i el no-repudi."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "se emitirá automáticamente un recibo consistente en una copia autenticada del documento de que se trate, incluyendo la fecha y hora de presentación y el número de entrada de registro",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-015",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En el ámbito de la Administración de la Generalitat, ¿cómo se aprueban las cartas de servicios según el artículo 59.6 de la Ley 19/2014?",
+      "opciones": [
+        "Por acuerdo del Gobierno, a propuesta del departamento competente en materia de transparencia",
+        "Por decreto del presidente o presidenta de la Generalitat, previo dictamen de la Comisión Jurídica Asesora",
+        "Por resolución de la dirección general afectada, sin necesidad de informe previo",
+        "Por resolución de los titulares de los departamentos competentes, previo informe favorable de la unidad departamental competente en materia de calidad"
+      ],
+      "explicacion": "El artículo 59.6 atribuye la aprobación a los titulares de los departamentos competentes de los servicios, mediante resolución y previo informe favorable de la unidad departamental de calidad; entran en vigor con su publicación en el diario oficial."
+    },
+    "ca": {
+      "enunciado": "En l'àmbit de l'Administració de la Generalitat, com s'aproven les cartes de serveis segons l'article 59.6 de la Llei 19/2014?",
+      "opciones": [
+        "Per acord del Govern, a proposta del departament competent en matèria de transparència",
+        "Per decret del president o presidenta de la Generalitat, amb el dictamen previ de la Comissió Jurídica Assessora",
+        "Per resolució de la direcció general afectada, sense necessitat d'informe previ",
+        "Per resolució dels titulars dels departaments competents, amb l'informe favorable previ de la unitat departamental competent en matèria de qualitat"
+      ],
+      "explicacion": "L'article 59.6 atribueix l'aprovació als titulars dels departaments competents dels serveis, mitjançant resolució i amb l'informe favorable previ de la unitat departamental de qualitat; entren en vigor amb la publicació al diari oficial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-470",
+      "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
+      "articulo": "59.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-470#a59"
+    },
+    "cita": "las cartas de servicios se aprueban por resolución de los titulares de los departamentos competentes de los servicios objeto de las cartas, previo informe favorable de la unidad departamental competente en materia de calidad",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-016",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 60 de la Ley 19/2014, las consultas periódicas a los usuarios sobre su grado de satisfacción con los servicios públicos:",
+      "opciones": [
+        "Deben garantizar siempre el anonimato de los participantes y se hacen, con carácter general, a través del Portal de la Transparencia",
+        "Deben identificar a cada participante para poder responderle individualmente",
+        "Solo pueden hacerse de forma presencial en el centro donde se presta el servicio",
+        "Se hacen una vez cada cinco años, coincidiendo con la actualización de la carta de servicios"
+      ],
+      "explicacion": "El artículo 60 exige garantizar siempre el anonimato en las consultas de satisfacción y fija el Portal de la Transparencia como instrumento general para hacer las encuestas y recibir las opiniones de los usuarios."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 60 de la Llei 19/2014, les consultes periòdiques als usuaris sobre el seu grau de satisfacció amb els serveis públics:",
+      "opciones": [
+        "Han de garantir sempre l'anonimat dels participants i es fan, amb caràcter general, a través del Portal de la Transparència",
+        "Han d'identificar cada participant per poder-li respondre individualment",
+        "Només es poden fer de manera presencial al centre on es presta el servei",
+        "Es fan un cop cada cinc anys, coincidint amb l'actualització de la carta de serveis"
+      ],
+      "explicacion": "L'article 60 exigeix garantir sempre l'anonimat en les consultes de satisfacció i fixa el Portal de la Transparència com a instrument general per fer les enquestes i rebre les opinions dels usuaris."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-470",
+      "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
+      "articulo": "60",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-470#a60"
+    },
+    "cita": "garantizando siempre el anonimato de los participantes … El instrumento que debe utilizarse con carácter general para realizar la encuesta a la que se refiere el presente artículo y para recibir las opiniones de los usuarios es el Portal de la Transparencia.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-017",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 61 de la Ley 19/2014, ¿qué debe hacer la Administración con las propuestas y sugerencias ciudadanas que recibe sobre el funcionamiento de los servicios públicos?",
+      "opciones": [
+        "Publicarlas con el nombre de quien las formula, para garantizar la transparencia",
+        "Darlas a conocer de forma anonimizada y reconocer y hacer públicas las que supongan una mejora sustancial de los servicios",
+        "Mantenerlas reservadas y comunicarlas solo al Síndic de Greuges",
+        "Contestarlas en el plazo de tres meses o entenderlas estimadas por silencio"
+      ],
+      "explicacion": "El artículo 61.3 obliga a dar a conocer las propuestas y sugerencias de forma anonimizada y a reconocer y hacer públicas las iniciativas cuya aplicación comporte una mejora sustancial de los servicios."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 61 de la Llei 19/2014, què ha de fer l'Administració amb les propostes i els suggeriments ciutadans que rep sobre el funcionament dels serveis públics?",
+      "opciones": [
+        "Publicar-los amb el nom de qui els formula, per garantir la transparència",
+        "Donar-los a conèixer de manera anonimitzada i reconèixer i fer públics els que comportin una millora substancial dels serveis",
+        "Mantenir-los reservats i comunicar-los només al Síndic de Greuges",
+        "Contestar-los en el termini de tres mesos o entendre'ls estimats per silenci"
+      ],
+      "explicacion": "L'article 61.3 obliga a donar a conèixer les propostes i els suggeriments de manera anonimitzada i a reconèixer i fer públiques les iniciatives l'aplicació de les quals comporti una millora substancial dels serveis."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-470",
+      "norma": "Ley 19/2014, de 29 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
+      "articulo": "61.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-470#a61"
+    },
+    "cita": "La Administración pública debe dar a conocer de forma anonimizada las propuestas y sugerencias recibidas, y debe reconocer y hacer públicas las iniciativas ciudadanas cuya aplicación conlleve una mejora sustancial de los servicios públicos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-018",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un ciudadano residente en Girona que tramita un procedimiento ante la Generalitat pide por escrito recibir las notificaciones en castellano. Según el artículo 10 de la Ley 1/1998, de Política Lingüística:",
+      "opciones": [
+        "Debe recibirlas en catalán, porque es la lengua de los procedimientos de la Generalitat",
+        "Solo puede recibirlas en castellano si acredita que no entiende el catalán",
+        "Debe recibirlas en ambas lenguas en todo caso",
+        "Tiene derecho a recibirlas en castellano, porque lo ha solicitado"
+      ],
+      "explicacion": "El artículo 10.1 establece que en los procedimientos de la Generalitat se utiliza el catalán, sin perjuicio del derecho de los ciudadanos a recibir las notificaciones en castellano si lo solicitan; no hace falta justificar la petición."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà resident a Girona que tramita un procediment davant la Generalitat demana per escrit rebre les notificacions en castellà. Segons l'article 10 de la Llei 1/1998, de política lingüística:",
+      "opciones": [
+        "Les ha de rebre en català, perquè és la llengua dels procediments de la Generalitat",
+        "Només les pot rebre en castellà si acredita que no entén el català",
+        "Les ha de rebre en totes dues llengües en tot cas",
+        "Té dret a rebre-les en castellà, perquè ho ha sol·licitat"
+      ],
+      "explicacion": "L'article 10.1 estableix que en els procediments de la Generalitat s'utilitza el català, sens perjudici del dret dels ciutadans a rebre les notificacions en castellà si ho sol·liciten; no cal justificar la petició."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1998-2989",
+      "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística",
+      "articulo": "10.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-2989#a10"
+    },
+    "cita": "sin perjuicio del derecho de los ciudadanos y ciudadanas a presentar documentos, hacer manifestaciones y, si lo solicitan, a recibir notificaciones en castellano",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-019",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 10.2 de la Ley 1/1998, cuando una persona interesada pide un testimonio traducido, en la lengua oficial que solicita, de aquello que le afecta en un procedimiento:",
+      "opciones": [
+        "Debe abonar la tasa de traducción que establezca la Generalitat",
+        "Se le entrega el testimonio, pero el plazo para resolver queda suspendido mientras se traduce",
+        "Solo puede pedirlo si es parte en un procedimiento sancionador",
+        "La solicitud no puede suponerle perjuicio ni gasto, ni retrasar el procedimiento, ni suspender su tramitación ni los plazos"
+      ],
+      "explicacion": "El artículo 10.2 obliga a entregar el testimonio traducido a quien lo requiera y precisa que la solicitud no puede comportar perjuicio, gasto, retrasos ni suspensión de la tramitación o de los plazos."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 10.2 de la Llei 1/1998, quan una persona interessada demana un testimoniatge traduït, en la llengua oficial que sol·licita, del que l'afecta en un procediment:",
+      "opciones": [
+        "Ha d'abonar la taxa de traducció que estableixi la Generalitat",
+        "Se li lliura el testimoniatge, però el termini per resoldre queda suspès mentre es tradueix",
+        "Només el pot demanar si és part en un procediment sancionador",
+        "La sol·licitud no li pot comportar perjudici ni despesa, ni endarrerir el procediment, ni suspendre'n la tramitació ni els terminis"
+      ],
+      "explicacion": "L'article 10.2 obliga a lliurar el testimoniatge traduït a qui el requereixi i precisa que la sol·licitud no pot comportar perjudici, despesa, endarreriments ni suspensió de la tramitació o dels terminis."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1998-2989",
+      "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística",
+      "articulo": "10.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-2989#a10"
+    },
+    "cita": "La solicitud de traducción no puede suponer ningún perjuicio o gasto al solicitante ni retrasos en el procedimiento ni suspender su tramitación ni los plazos establecidos.",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-020",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En comunicación interpersonal, la escucha activa consiste en:",
+      "opciones": [
+        "Preparar la respuesta mientras el interlocutor todavía habla, para ganar tiempo",
+        "Interrumpir al interlocutor para corregir sobre la marcha los errores de su exposición",
+        "Escuchar en silencio, sin dar ninguna señal verbal ni no verbal de atención",
+        "Prestar plena atención al interlocutor y mostrarle que se le ha entendido, por ejemplo resumiendo o parafraseando lo que dice"
+      ],
+      "explicacion": "La escucha activa supone atender al mensaje completo (verbal y no verbal) y dar señales de comprensión, como parafrasear, resumir o preguntar para aclarar. Interrumpir o preparar la respuesta mientras el otro habla son barreras de la escucha."
+    },
+    "ca": {
+      "enunciado": "En comunicació interpersonal, l'escolta activa consisteix a:",
+      "opciones": [
+        "Preparar la resposta mentre l'interlocutor encara parla, per guanyar temps",
+        "Interrompre l'interlocutor per corregir sobre la marxa els errors de la seva exposició",
+        "Escoltar en silenci, sense donar cap senyal verbal ni no verbal d'atenció",
+        "Prestar plena atenció a l'interlocutor i mostrar-li que se l'ha entès, per exemple resumint o parafrasejant el que diu"
+      ],
+      "explicacion": "L'escolta activa suposa atendre el missatge complet (verbal i no verbal) i donar senyals de comprensió, com ara parafrasejar, resumir o preguntar per aclarir. Interrompre o preparar la resposta mentre l'altre parla són barreres de l'escolta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en atenció a la ciutadania i comunicació",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-021",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Usted atiende el teléfono de información de una unidad de la Generalitat. ¿Cuál es la forma más adecuada de contestar una llamada?",
+      "opciones": [
+        "Responder «¿Diga?» y esperar a que la persona se identifique",
+        "Pedir el DNI de la persona antes de saludarla",
+        "Identificar la unidad, saludar y ofrecer ayuda (por ejemplo: «Servicio de …, buenos días, ¿en qué puedo ayudarle?»)",
+        "Contestar «¿Sí?» y pasar directamente la llamada a la persona responsable"
+      ],
+      "explicacion": "En la atención telefónica la persona que llama debe saber desde el primer momento con quién habla: se identifica la unidad, se saluda y se ofrece ayuda. Un «¿Diga?» o un «¿Sí?» no identifican la organización."
+    },
+    "ca": {
+      "enunciado": "Vostè atén el telèfon d'informació d'una unitat de la Generalitat. Quina és la manera més adequada de respondre una trucada?",
+      "opciones": [
+        "Respondre «Digui?» i esperar que la persona s'identifiqui",
+        "Demanar el DNI de la persona abans de saludar-la",
+        "Identificar la unitat, saludar i oferir ajuda (per exemple: «Servei de…, bon dia, en què el puc ajudar?»)",
+        "Contestar «Sí?» i passar directament la trucada a la persona responsable"
+      ],
+      "explicacion": "En l'atenció telefònica la persona que truca ha de saber des del primer moment amb qui parla: s'identifica la unitat, se saluda i s'ofereix ajuda. Un «Digui?» o un «Sí?» no identifiquen l'organització."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en atenció a la ciutadania i comunicació",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-022",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Durante una llamada, usted comprueba que la consulta corresponde a otra unidad y debe transferir la llamada. ¿Cuál es la actuación correcta?",
+      "opciones": [
+        "Transferir la llamada sin decir nada, para no hacerle perder tiempo",
+        "Pedirle que cuelgue y que busque por su cuenta el teléfono de la otra unidad",
+        "Informar a la persona de que se le pasará con la unidad competente, indicándole cuál es, antes de transferir la llamada",
+        "Dejar la llamada en espera, sin explicaciones, hasta que alguien de la otra unidad la atienda"
+      ],
+      "explicacion": "Antes de transferir una llamada hay que explicar al interlocutor qué se hará y con quién se le pondrá en contacto; transferir sin avisar o dejarle en espera sin información genera desconfianza y llamadas perdidas."
+    },
+    "ca": {
+      "enunciado": "Durant una trucada, vostè comprova que la consulta correspon a una altra unitat i ha de transferir la trucada. Quina és l'actuació correcta?",
+      "opciones": [
+        "Transferir la trucada sense dir res, per no fer-li perdre temps",
+        "Demanar-li que pengi i que busqui pel seu compte el telèfon de l'altra unitat",
+        "Informar la persona que se la passarà amb la unitat competent, indicant-li quina és, abans de transferir la trucada",
+        "Deixar la trucada en espera, sense explicacions, fins que algú de l'altra unitat l'atengui"
+      ],
+      "explicacion": "Abans de transferir una trucada cal explicar a l'interlocutor què es farà i amb qui se'l posarà en contacte; transferir sense avisar o deixar-lo en espera sense informació genera desconfiança i trucades perdudes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en atenció a la ciutadania i comunicació",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-023",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el proceso de comunicación, la retroalimentación (feedback) es:",
+      "opciones": [
+        "El conjunto de signos y reglas que comparten el emisor y el receptor",
+        "La respuesta del receptor al emisor, que permite comprobar si el mensaje se ha entendido",
+        "El medio físico por el que se transmite el mensaje",
+        "Cualquier interferencia que distorsiona el mensaje"
+      ],
+      "explicacion": "La retroalimentación es la respuesta del receptor que permite al emisor saber si el mensaje ha llegado y se ha comprendido. Los signos compartidos son el código, el medio es el canal y las interferencias son el ruido."
+    },
+    "ca": {
+      "enunciado": "En el procés de comunicació, la retroalimentació (feedback) és:",
+      "opciones": [
+        "El conjunt de signes i regles que comparteixen l'emissor i el receptor",
+        "La resposta del receptor a l'emissor, que permet comprovar si el missatge s'ha entès",
+        "El mitjà físic pel qual es transmet el missatge",
+        "Qualsevol interferència que distorsiona el missatge"
+      ],
+      "explicacion": "La retroalimentació és la resposta del receptor que permet a l'emissor saber si el missatge ha arribat i s'ha comprès. Els signes compartits són el codi, el mitjà és el canal i les interferències són el soroll."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en atenció a la ciutadania i comunicació",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t09-024",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En la atención a la ciudadanía, la comunicación asertiva consiste en:",
+      "opciones": [
+        "Expresar con claridad la información o la propia posición respetando los derechos y opiniones del interlocutor",
+        "Ceder siempre a las peticiones del ciudadano para evitar conflictos",
+        "Imponer el criterio de la Administración sin dar explicaciones",
+        "Evitar las respuestas negativas aplazando la decisión de forma indefinida"
+      ],
+      "explicacion": "La asertividad es el estilo de comunicación que permite decir lo que hay que decir, incluso un no, de forma clara y respetuosa. Ceder siempre es un estilo pasivo e imponer sin explicar es un estilo agresivo."
+    },
+    "ca": {
+      "enunciado": "En l'atenció a la ciutadania, la comunicació assertiva consisteix a:",
+      "opciones": [
+        "Expressar amb claredat la informació o la pròpia posició respectant els drets i les opinions de l'interlocutor",
+        "Cedir sempre a les peticions del ciutadà per evitar conflictes",
+        "Imposar el criteri de l'Administració sense donar explicacions",
+        "Evitar les respostes negatives ajornant la decisió de manera indefinida"
+      ],
+      "explicacion": "L'assertivitat és l'estil de comunicació que permet dir el que cal dir, fins i tot un no, de manera clara i respectuosa. Cedir sempre és un estil passiu i imposar sense explicar és un estil agressiu."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Escola d'Administració Pública de Catalunya (EAPC) · materials de formació en atenció a la ciutadania i comunicació",
+      "url": "https://eapc.gencat.cat/"
+    },
+    "origen": "ia"
+  }
+]

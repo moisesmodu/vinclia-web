@@ -1,0 +1,772 @@
+[
+  {
+    "id": "tcai-t05-001",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se aplica el TREBEP al personal estatutario de los servicios de salud?",
+      "opciones": [
+        "El TREBEP no le es aplicable en ningún caso",
+        "Se rige por su legislación específica estatal y autonómica y por lo previsto en el TREBEP, con algunas excepciones",
+        "Se le aplica íntegramente el TREBEP, sin legislación específica",
+        "Solo se le aplica el TREBEP en materia de régimen disciplinario"
+      ],
+      "explicacion": "El artículo 2.3 dispone que el personal estatutario se rige por la legislación específica del Estado y de las comunidades autónomas (como el Estatuto Marco) y por el TREBEP, salvo los preceptos que el propio artículo exceptúa."
+    },
+    "ca": {
+      "enunciado": "Com s'aplica el TREBEP al personal estatutari dels serveis de salut?",
+      "opciones": [
+        "El TREBEP no li és aplicable en cap cas",
+        "Es regeix per la seva legislació específica estatal i autonòmica i pel que preveu el TREBEP, amb algunes excepcions",
+        "Se li aplica íntegrament el TREBEP, sense legislació específica",
+        "Només se li aplica el TREBEP en matèria de règim disciplinari"
+      ],
+      "explicacion": "L'article 2.3 disposa que el personal estatutari es regeix per la legislació específica de l'Estat i de les comunitats autònomes (com l'Estatut marc) i pel TREBEP, llevat dels preceptes que el mateix article exceptua."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "2.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a2"
+    },
+    "cita": "El personal docente y el personal estatutario de los Servicios de Salud se regirán por la legislación específica dictada por el Estado y por las comunidades autónomas en el ámbito de sus respectivas competencias y por lo previsto en el presente Estatuto",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-002",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 8 del TREBEP, los empleados públicos se clasifican en:",
+      "opciones": [
+        "Funcionarios de carrera, funcionarios interinos, personal laboral y personal directivo",
+        "Funcionarios de carrera, funcionarios interinos, personal laboral y personal eventual",
+        "Funcionarios de carrera, personal estatutario, personal laboral y personal de alta dirección",
+        "Funcionarios de carrera, funcionarios en prácticas, personal laboral fijo y personal contratado"
+      ],
+      "explicacion": "El artículo 8.2 recoge cuatro clases: funcionarios de carrera, funcionarios interinos, personal laboral (fijo, indefinido o temporal) y personal eventual. El personal directivo se regula aparte (art. 13) y no es una clase del artículo 8."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 8 del TREBEP, els empleats públics es classifiquen en:",
+      "opciones": [
+        "Funcionaris de carrera, funcionaris interins, personal laboral i personal directiu",
+        "Funcionaris de carrera, funcionaris interins, personal laboral i personal eventual",
+        "Funcionaris de carrera, personal estatutari, personal laboral i personal d'alta direcció",
+        "Funcionaris de carrera, funcionaris en pràctiques, personal laboral fix i personal contractat"
+      ],
+      "explicacion": "L'article 8.2 recull quatre classes: funcionaris de carrera, funcionaris interins, personal laboral (fix, indefinit o temporal) i personal eventual. El personal directiu es regula a part (art. 13) i no és una classe de l'article 8."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "8.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a8"
+    },
+    "cita": "a) Funcionarios de carrera. … b) Funcionarios interinos. … c) Personal laboral, ya sea fijo, por tiempo indefinido o temporal. … d) Personal eventual.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-003",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el TREBEP, las funciones que impliquen la participación directa o indirecta en el ejercicio de las potestades públicas corresponden:",
+      "opciones": [
+        "Indistintamente a funcionarios y personal laboral fijo",
+        "Exclusivamente a los funcionarios públicos",
+        "Al personal eventual de confianza",
+        "Al personal directivo profesional"
+      ],
+      "explicacion": "El artículo 9.2 reserva en todo caso a los funcionarios públicos el ejercicio de funciones que impliquen participación en las potestades públicas o en la salvaguardia de los intereses generales."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, les funcions que impliquin la participació directa o indirecta en l'exercici de les potestats públiques corresponen:",
+      "opciones": [
+        "Indistintament a funcionaris i a personal laboral fix",
+        "Exclusivament als funcionaris públics",
+        "Al personal eventual de confiança",
+        "Al personal directiu professional"
+      ],
+      "explicacion": "L'article 9.2 reserva en tot cas als funcionaris públics l'exercici de funcions que impliquin participació en les potestats públiques o en la salvaguarda dels interessos generals."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "9.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a9"
+    },
+    "cita": "el ejercicio de las funciones que impliquen la participación directa o indirecta en el ejercicio de las potestades públicas o en la salvaguardia de los intereses generales del Estado y de las Administraciones Públicas corresponden exclusivamente a los funcionarios públicos",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-004",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el TREBEP, el personal laboral presta servicios retribuidos en las Administraciones públicas en virtud de:",
+      "opciones": [
+        "Un contrato de trabajo formalizado por escrito",
+        "Un nombramiento legal regulado por el Derecho administrativo",
+        "Un nombramiento libre por razones de confianza",
+        "Un acuerdo verbal con el órgano de personal"
+      ],
+      "explicacion": "El artículo 11.1 exige un contrato de trabajo formalizado por escrito, en cualquiera de las modalidades de la legislación laboral. El nombramiento regulado por el Derecho administrativo es propio de los funcionarios (art. 9.1)."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, el personal laboral presta serveis retribuïts a les administracions públiques en virtut de:",
+      "opciones": [
+        "Un contracte de treball formalitzat per escrit",
+        "Un nomenament legal regulat pel dret administratiu",
+        "Un nomenament lliure per raons de confiança",
+        "Un acord verbal amb l'òrgan de personal"
+      ],
+      "explicacion": "L'article 11.1 exigeix un contracte de treball formalitzat per escrit, en qualsevol de les modalitats de la legislació laboral. El nomenament regulat pel dret administratiu és propi dels funcionaris (art. 9.1)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "11.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a11"
+    },
+    "cita": "Es personal laboral el que en virtud de contrato de trabajo formalizado por escrito, en cualquiera de las modalidades de contratación de personal previstas en la legislación laboral, presta servicios retribuidos por las Administraciones Públicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-005",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Puede la condición de personal eventual valorarse como mérito para acceder a la función pública?",
+      "opciones": [
+        "Sí, como experiencia profesional en la fase de concurso",
+        "No, no puede constituir mérito para el acceso a la función pública ni para la promoción interna",
+        "Sí, pero solo para la promoción interna",
+        "Sí, si se ha desempeñado durante más de dos años"
+      ],
+      "explicacion": "El artículo 12.4 prohíbe que la condición de personal eventual constituya mérito para el acceso a la función pública o para la promoción interna."
+    },
+    "ca": {
+      "enunciado": "Es pot valorar la condició de personal eventual com a mèrit per accedir a la funció pública?",
+      "opciones": [
+        "Sí, com a experiència professional en la fase de concurs",
+        "No, no pot constituir mèrit per a l'accés a la funció pública ni per a la promoció interna",
+        "Sí, però només per a la promoció interna",
+        "Sí, si s'ha exercit durant més de dos anys"
+      ],
+      "explicacion": "L'article 12.4 prohibeix que la condició de personal eventual constitueixi mèrit per a l'accés a la funció pública o per a la promoció interna."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "12.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a12"
+    },
+    "cita": "La condición de personal eventual no podrá constituir mérito para el acceso a la Función Pública o para la promoción interna.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-006",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el TREBEP, la determinación de las condiciones de empleo del personal directivo profesional:",
+      "opciones": [
+        "No es materia objeto de negociación colectiva",
+        "Debe negociarse en la mesa general de negociación",
+        "Se negocia en la mesa sectorial correspondiente",
+        "Se fija por convenio colectivo del personal laboral"
+      ],
+      "explicacion": "El artículo 13.4 excluye de la negociación colectiva las condiciones de empleo del personal directivo; si es personal laboral, queda sometido a la relación laboral especial de alta dirección."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, la determinació de les condicions d'ocupació del personal directiu professional:",
+      "opciones": [
+        "No és matèria objecte de negociació col·lectiva",
+        "S'ha de negociar a la mesa general de negociació",
+        "Es negocia a la mesa sectorial corresponent",
+        "Es fixa per conveni col·lectiu del personal laboral"
+      ],
+      "explicacion": "L'article 13.4 exclou de la negociació col·lectiva les condicions d'ocupació del personal directiu; si és personal laboral, queda sotmès a la relació laboral especial d'alta direcció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "13.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a13"
+    },
+    "cita": "La determinación de las condiciones de empleo del personal directivo no tendrá la consideración de materia objeto de negociación colectiva a los efectos de esta ley.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-007",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es, según el TREBEP, un derecho individual que se ejerce de forma colectiva?",
+      "opciones": [
+        "La libre asociación profesional",
+        "La formación continua y la actualización permanente",
+        "La inamovilidad en la condición de funcionario de carrera",
+        "El ejercicio de la huelga, con la garantía del mantenimiento de los servicios esenciales"
+      ],
+      "explicacion": "El artículo 15 incluye entre los derechos individuales ejercidos colectivamente la libertad sindical, la negociación colectiva, la huelga, los conflictos colectivos y la reunión. La libre asociación profesional, la formación continua y la inamovilidad son derechos individuales del artículo 14."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és, segons el TREBEP, un dret individual que s'exerceix de manera col·lectiva?",
+      "opciones": [
+        "La lliure associació professional",
+        "La formació contínua i l'actualització permanent",
+        "La inamovibilitat en la condició de funcionari de carrera",
+        "L'exercici de la vaga, amb la garantia del manteniment dels serveis essencials"
+      ],
+      "explicacion": "L'article 15 inclou entre els drets individuals exercits col·lectivament la llibertat sindical, la negociació col·lectiva, la vaga, els conflictes col·lectius i la reunió. La lliure associació professional, la formació contínua i la inamovibilitat són drets individuals de l'article 14."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a15"
+    },
+    "cita": "c) Al ejercicio de la huelga, con la garantía del mantenimiento de los servicios esenciales de la comunidad.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-008",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes principios figura entre los que inspiran el Código de Conducta de los empleados públicos (artículo 52 del TREBEP)?",
+      "opciones": [
+        "Competitividad",
+        "Rentabilidad",
+        "Ejemplaridad",
+        "Discrecionalidad"
+      ],
+      "explicacion": "El artículo 52 enumera, entre otros, objetividad, integridad, neutralidad, responsabilidad, imparcialidad, confidencialidad, transparencia, ejemplaridad, austeridad, accesibilidad, eficacia y honradez. Ninguno de los otros tres figura en la lista."
+    },
+    "ca": {
+      "enunciado": "Quin dels principis següents figura entre els que inspiren el Codi de conducta dels empleats públics (article 52 del TREBEP)?",
+      "opciones": [
+        "Competitivitat",
+        "Rendibilitat",
+        "Exemplaritat",
+        "Discrecionalitat"
+      ],
+      "explicacion": "L'article 52 enumera, entre d'altres, objectivitat, integritat, neutralitat, responsabilitat, imparcialitat, confidencialitat, transparència, exemplaritat, austeritat, accessibilitat, eficàcia i honradesa. Cap dels altres tres no figura a la llista."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "52",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a52"
+    },
+    "cita": "transparencia, ejemplaridad, austeridad, accesibilidad, eficacia, honradez",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-009",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "La familia de un paciente quiere hacer un regalo a una TCAI. Según los principios de conducta del TREBEP, debe rechazarse cualquier regalo, favor o servicio en condiciones ventajosas que:",
+      "opciones": [
+        "Vaya más allá de los usos habituales, sociales y de cortesía",
+        "Supere los 300 euros de valor",
+        "Se ofrezca durante la jornada laboral",
+        "No haya sido comunicado previamente a la dirección del centro"
+      ],
+      "explicacion": "El artículo 54.6 obliga a rechazar cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía, sin perjuicio del Código Penal. La ley no fija un importe concreto."
+    },
+    "ca": {
+      "enunciado": "La família d'un pacient vol fer un regal a una TCAI. Segons els principis de conducta del TREBEP, s'ha de rebutjar qualsevol regal, favor o servei en condicions avantatjoses que:",
+      "opciones": [
+        "Vagi més enllà dels usos habituals, socials i de cortesia",
+        "Superi els 300 euros de valor",
+        "S'ofereixi durant la jornada laboral",
+        "No s'hagi comunicat prèviament a la direcció del centre"
+      ],
+      "explicacion": "L'article 54.6 obliga a rebutjar qualsevol regal, favor o servei en condicions avantatjoses que vagi més enllà dels usos habituals, socials i de cortesia, sens perjudici del Codi penal. La llei no fixa cap import concret."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "54.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a54"
+    },
+    "cita": "Se rechazará cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-010",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el TREBEP, los empleados públicos garantizarán la atención al ciudadano en la lengua que este solicite:",
+      "opciones": [
+        "Siempre que sea oficial en el territorio",
+        "Solo si es el castellano",
+        "En cualquier lengua de la Unión Europea",
+        "Solo si el empleado la domina con un certificado oficial"
+      ],
+      "explicacion": "El artículo 54.11 establece que se garantizará la atención en la lengua que solicite el ciudadano siempre que sea oficial en el territorio; en Cataluña, catalán o castellano (y aranés en Arán)."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, els empleats públics garantiran l'atenció al ciutadà en la llengua que aquest sol·liciti:",
+      "opciones": [
+        "Sempre que sigui oficial al territori",
+        "Només si és el castellà",
+        "En qualsevol llengua de la Unió Europea",
+        "Només si l'empleat la domina amb un certificat oficial"
+      ],
+      "explicacion": "L'article 54.11 estableix que es garantirà l'atenció en la llengua que sol·liciti el ciutadà sempre que sigui oficial al territori; a Catalunya, català o castellà (i aranès a l'Aran)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "54.11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a54"
+    },
+    "cita": "Garantizarán la atención al ciudadano en la lengua que lo solicite siempre que sea oficial en el territorio.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-011",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si un superior da a un empleado público una orden que constituye una infracción manifiesta del ordenamiento jurídico, según el TREBEP el empleado:",
+      "opciones": [
+        "Debe cumplirla y presentar después una queja escrita",
+        "No debe obedecerla y la pondrá inmediatamente en conocimiento de los órganos de inspección procedentes",
+        "Debe cumplirla si se la reitera por escrito",
+        "Puede elegir libremente entre cumplirla o no, sin más trámite"
+      ],
+      "explicacion": "El artículo 54.3 obliga a obedecer las órdenes de los superiores salvo que constituyan una infracción manifiesta del ordenamiento; en ese caso, deben ponerse inmediatamente en conocimiento de los órganos de inspección."
+    },
+    "ca": {
+      "enunciado": "Si un superior dona a un empleat públic una ordre que constitueix una infracció manifesta de l'ordenament jurídic, segons el TREBEP l'empleat:",
+      "opciones": [
+        "L'ha de complir i presentar després una queixa escrita",
+        "No l'ha d'obeir i la posarà immediatament en coneixement dels òrgans d'inspecció pertinents",
+        "L'ha de complir si se li reitera per escrit",
+        "Pot triar lliurement entre complir-la o no, sense cap altre tràmit"
+      ],
+      "explicacion": "L'article 54.3 obliga a obeir les ordres dels superiors llevat que constitueixin una infracció manifesta de l'ordenament; en aquest cas, s'han de posar immediatament en coneixement dels òrgans d'inspecció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "54.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a54"
+    },
+    "cita": "Obedecerán las instrucciones y órdenes profesionales de los superiores, salvo que constituyan una infracción manifiesta del ordenamiento jurídico, en cuyo caso las pondrán inmediatamente en conocimiento de los órganos de inspección procedentes.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-012",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es un principio que debe garantizarse en los procedimientos de selección según el artículo 55 del TREBEP?",
+      "opciones": [
+        "La designación política de los miembros de los órganos de selección",
+        "La preferencia de los aspirantes residentes en la comunidad autónoma",
+        "La confidencialidad de las bases de la convocatoria",
+        "La independencia y discrecionalidad técnica en la actuación de los órganos de selección"
+      ],
+      "explicacion": "El artículo 55.2 incluye la publicidad de las convocatorias y sus bases, la transparencia, la imparcialidad y profesionalidad, la independencia y discrecionalidad técnica de los órganos de selección, la adecuación de las pruebas a las funciones y la agilidad."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un principi que s'ha de garantir en els procediments de selecció segons l'article 55 del TREBEP?",
+      "opciones": [
+        "La designació política dels membres dels òrgans de selecció",
+        "La preferència dels aspirants residents a la comunitat autònoma",
+        "La confidencialitat de les bases de la convocatòria",
+        "La independència i la discrecionalitat tècnica en l'actuació dels òrgans de selecció"
+      ],
+      "explicacion": "L'article 55.2 inclou la publicitat de les convocatòries i les bases, la transparència, la imparcialitat i la professionalitat, la independència i la discrecionalitat tècnica dels òrgans de selecció, l'adequació de les proves a les funcions i l'agilitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "55.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a55"
+    },
+    "cita": "d) Independencia y discrecionalidad técnica en la actuación de los órganos de selección.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-013",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el TREBEP, ¿qué edad mínima se exige con carácter general para participar en los procesos selectivos de acceso al empleo público?",
+      "opciones": [
+        "Dieciocho años",
+        "Diecisiete años",
+        "Dieciséis años",
+        "Veintiún años"
+      ],
+      "explicacion": "El artículo 56.1.c) exige tener cumplidos dieciséis años. Ojo: para el personal estatutario, el Estatuto Marco (art. 30.5.d) exige 18 años."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, quina edat mínima s'exigeix amb caràcter general per participar en els processos selectius d'accés a l'ocupació pública?",
+      "opciones": [
+        "Divuit anys",
+        "Disset anys",
+        "Setze anys",
+        "Vint-i-un anys"
+      ],
+      "explicacion": "L'article 56.1.c) exigeix tenir setze anys complerts. Compte: per al personal estatutari, l'Estatut marc (art. 30.5.d) n'exigeix 18."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "56.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a56"
+    },
+    "cita": "c) Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-014",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué cupo mínimo de vacantes de las ofertas de empleo público debe reservarse, según el TREBEP, para personas con discapacidad?",
+      "opciones": [
+        "No inferior al cinco por ciento",
+        "No inferior al dos por ciento",
+        "No inferior al diez por ciento",
+        "No inferior al siete por ciento"
+      ],
+      "explicacion": "El artículo 59.1 fija una reserva no inferior al siete por ciento, de la que al menos un dos por ciento de las plazas ofertadas debe destinarse a personas con discapacidad intelectual."
+    },
+    "ca": {
+      "enunciado": "Quina reserva mínima de vacants de les ofertes d'ocupació pública s'ha de fer, segons el TREBEP, per a persones amb discapacitat?",
+      "opciones": [
+        "No inferior al cinc per cent",
+        "No inferior al dos per cent",
+        "No inferior al deu per cent",
+        "No inferior al set per cent"
+      ],
+      "explicacion": "L'article 59.1 fixa una reserva no inferior al set per cent, de la qual almenys un dos per cent de les places ofertes s'ha de destinar a persones amb discapacitat intel·lectual."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "59.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a59"
+    },
+    "cita": "En las ofertas de empleo público se reservará un cupo no inferior al siete por ciento de las vacantes para ser cubiertas entre personas con discapacidad",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-015",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el TREBEP, ¿quién NO puede formar parte de los órganos de selección?",
+      "opciones": [
+        "Los funcionarios de carrera de otra Administración",
+        "El personal laboral fijo con titulación adecuada",
+        "Los funcionarios de carrera del mismo cuerpo que se convoca",
+        "Los funcionarios interinos"
+      ],
+      "explicacion": "El artículo 60.2 excluye de los órganos de selección al personal de elección o designación política, a los funcionarios interinos y al personal eventual. Además, la pertenencia es siempre a título individual (art. 60.3)."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, qui NO pot formar part dels òrgans de selecció?",
+      "opciones": [
+        "Els funcionaris de carrera d'una altra administració",
+        "El personal laboral fix amb titulació adequada",
+        "Els funcionaris de carrera del mateix cos que es convoca",
+        "Els funcionaris interins"
+      ],
+      "explicacion": "L'article 60.2 exclou dels òrgans de selecció el personal d'elecció o designació política, els funcionaris interins i el personal eventual. A més, la pertinença és sempre a títol individual (art. 60.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "60.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a60"
+    },
+    "cita": "El personal de elección o de designación política, los funcionarios interinos y el personal eventual no podrán formar parte de los órganos de selección.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-016",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el TREBEP, el sistema de concurso, consistente únicamente en la valoración de méritos, para seleccionar funcionarios de carrera:",
+      "opciones": [
+        "Es el sistema ordinario de selección de funcionarios",
+        "Puede aplicarlo libremente cada órgano convocante",
+        "Está prohibido en todo caso para los funcionarios",
+        "Solo puede aplicarse con carácter excepcional y en virtud de ley"
+      ],
+      "explicacion": "El artículo 61.6 fija como sistemas de los funcionarios de carrera la oposición y el concurso-oposición; el concurso solo puede aplicarse excepcionalmente y en virtud de ley."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, el sistema de concurs, que consisteix únicament en la valoració de mèrits, per seleccionar funcionaris de carrera:",
+      "opciones": [
+        "És el sistema ordinari de selecció de funcionaris",
+        "El pot aplicar lliurement cada òrgan convocant",
+        "Està prohibit en tot cas per als funcionaris",
+        "Només es pot aplicar amb caràcter excepcional i en virtut de llei"
+      ],
+      "explicacion": "L'article 61.6 fixa com a sistemes dels funcionaris de carrera l'oposició i el concurs oposició; el concurs només es pot aplicar excepcionalment i en virtut de llei."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "61.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a61"
+    },
+    "cita": "Sólo en virtud de ley podrá aplicarse, con carácter excepcional, el sistema de concurso que consistirá únicamente en la valoración de méritos.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-017",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es un principio de la potestad disciplinaria según el artículo 94 del TREBEP?",
+      "opciones": [
+        "Oportunidad",
+        "Retroactividad de las disposiciones sancionadoras desfavorables",
+        "Presunción de inocencia",
+        "Responsabilidad objetiva"
+      ],
+      "explicacion": "El artículo 94.2 recoge los principios de legalidad y tipicidad, irretroactividad de las disposiciones desfavorables y retroactividad de las favorables, proporcionalidad, culpabilidad y presunción de inocencia. La culpabilidad excluye la responsabilidad objetiva."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un principi de la potestat disciplinària segons l'article 94 del TREBEP?",
+      "opciones": [
+        "Oportunitat",
+        "Retroactivitat de les disposicions sancionadores desfavorables",
+        "Presumpció d'innocència",
+        "Responsabilitat objectiva"
+      ],
+      "explicacion": "L'article 94.2 recull els principis de legalitat i tipicitat, irretroactivitat de les disposicions desfavorables i retroactivitat de les favorables, proporcionalitat, culpabilitat i presumpció d'innocència. La culpabilitat exclou la responsabilitat objectiva."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "94.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a94"
+    },
+    "cita": "e) Principio de presunción de inocencia.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-018",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el TREBEP, el acoso laboral es una falta:",
+      "opciones": [
+        "Muy grave",
+        "Grave",
+        "Leve",
+        "Grave o leve, según lo que establezca el convenio colectivo"
+      ],
+      "explicacion": "El artículo 95.2.o) tipifica expresamente el acoso laboral como falta muy grave."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, l'assetjament laboral és una falta:",
+      "opciones": [
+        "Molt greu",
+        "Greu",
+        "Lleu",
+        "Greu o lleu, segons el que estableixi el conveni col·lectiu"
+      ],
+      "explicacion": "L'article 95.2.o) tipifica expressament l'assetjament laboral com a falta molt greu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "95.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a95"
+    },
+    "cita": "o) El acoso laboral.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-019",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué duración máxima tiene, según el TREBEP, la sanción de suspensión firme de funciones?",
+      "opciones": [
+        "Dos años",
+        "Tres años",
+        "Seis años",
+        "Diez años"
+      ],
+      "explicacion": "El artículo 96.1.c) fija una duración máxima de seis años para la suspensión firme de funciones (o de empleo y sueldo para el personal laboral)."
+    },
+    "ca": {
+      "enunciado": "Quina durada màxima té, segons el TREBEP, la sanció de suspensió ferma de funcions?",
+      "opciones": [
+        "Dos anys",
+        "Tres anys",
+        "Sis anys",
+        "Deu anys"
+      ],
+      "explicacion": "L'article 96.1.c) fixa una durada màxima de sis anys per a la suspensió ferma de funcions (o d'ocupació i sou per al personal laboral)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "96.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a96"
+    },
+    "cita": "c) Suspensión firme de funciones, o de empleo y sueldo en el caso del personal laboral, con una duración máxima de 6 años.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-020",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el TREBEP, la sanción de demérito consiste en:",
+      "opciones": [
+        "La penalización a efectos de carrera, promoción o movilidad voluntaria",
+        "La pérdida de los trienios devengados",
+        "La reducción temporal del sueldo base",
+        "La anotación de la falta en el expediente sin otros efectos"
+      ],
+      "explicacion": "El artículo 96.1.e) define el demérito como la penalización a efectos de carrera, promoción o movilidad voluntaria."
+    },
+    "ca": {
+      "enunciado": "Al TREBEP, la sanció de demèrit consisteix en:",
+      "opciones": [
+        "La penalització a efectes de carrera, promoció o mobilitat voluntària",
+        "La pèrdua dels triennis meritats",
+        "La reducció temporal del sou base",
+        "L'anotació de la falta a l'expedient sense altres efectes"
+      ],
+      "explicacion": "L'article 96.1.e) defineix el demèrit com la penalització a efectes de carrera, promoció o mobilitat voluntària."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "96.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a96"
+    },
+    "cita": "e) Demérito, que consistirá en la penalización a efectos de carrera, promoción o movilidad voluntaria.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-021",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el TREBEP, ¿en qué plazos prescriben las faltas disciplinarias?",
+      "opciones": [
+        "Muy graves, cuatro años; graves, dos años; leves, seis meses",
+        "Muy graves, tres años; graves, dos años; leves, seis meses",
+        "Muy graves, seis años; graves, tres años; leves, un año",
+        "Muy graves, cinco años; graves, tres años; leves, un mes"
+      ],
+      "explicacion": "El artículo 97 fija tres años para las muy graves, dos para las graves y seis meses para las leves. No hay que confundirlo con el Estatuto Marco, que para el personal estatutario fija cuatro años para las muy graves (art. 72.6)."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, en quins terminis prescriuen les faltes disciplinàries?",
+      "opciones": [
+        "Molt greus, quatre anys; greus, dos anys; lleus, sis mesos",
+        "Molt greus, tres anys; greus, dos anys; lleus, sis mesos",
+        "Molt greus, sis anys; greus, tres anys; lleus, un any",
+        "Molt greus, cinc anys; greus, tres anys; lleus, un mes"
+      ],
+      "explicacion": "L'article 97 fixa tres anys per a les molt greus, dos per a les greus i sis mesos per a les lleus. No s'ha de confondre amb l'Estatut marc, que per al personal estatutari fixa quatre anys per a les molt greus (art. 72.6)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "97",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a97"
+    },
+    "cita": "Las infracciones muy graves prescribirán a los tres años, las graves a los dos años y las leves a los seis meses",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t05-022",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el TREBEP, la suspensión provisional como medida cautelar durante la tramitación de un expediente disciplinario no puede exceder, salvo paralización imputable al interesado, de:",
+      "opciones": [
+        "Tres meses",
+        "Un año",
+        "Seis meses",
+        "Dos años"
+      ],
+      "explicacion": "El artículo 98.3 limita la suspensión provisional a seis meses, salvo paralización del procedimiento imputable al interesado; durante ella se perciben las retribuciones básicas."
+    },
+    "ca": {
+      "enunciado": "Segons el TREBEP, la suspensió provisional com a mesura cautelar durant la tramitació d'un expedient disciplinari no pot excedir, llevat de paralització imputable a l'interessat, de:",
+      "opciones": [
+        "Tres mesos",
+        "Un any",
+        "Sis mesos",
+        "Dos anys"
+      ],
+      "explicacion": "L'article 98.3 limita la suspensió provisional a sis mesos, llevat de paralització del procediment imputable a l'interessat; durant aquest temps es perceben les retribucions bàsiques."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-11719",
+      "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público",
+      "articulo": "98.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719#a98"
+    },
+    "cita": "La suspensión provisional como medida cautelar en la tramitación de un expediente disciplinario no podrá exceder de 6 meses, salvo en caso de paralización del procedimiento imputable al interesado.",
+    "origen": "ia"
+  }
+]

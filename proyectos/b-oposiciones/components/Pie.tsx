@@ -29,6 +29,7 @@ export default function Pie({ idioma }: { idioma: Idioma }) {
             <li><Link className="text-slate-600 hover:text-marca" href={l('/legal/cookies')}>{d.pie.cookies}</Link></li>
             <li><Link className="text-slate-600 hover:text-marca" href={l('/legal/condiciones')}>{d.pie.condiciones}</Link></li>
             <li><Link className="text-slate-600 hover:text-marca" href={l('/contacto')}>{d.pie.contacto}</Link></li>
+            <li><Link className="text-slate-600 hover:text-marca" href={l('/erratas')}>{d.pie.erratas}</Link></li>
           </ul>
           <p className="mt-4 text-xs text-slate-500">© {new Date().getFullYear()} {marca.nombre}</p>
         </div>

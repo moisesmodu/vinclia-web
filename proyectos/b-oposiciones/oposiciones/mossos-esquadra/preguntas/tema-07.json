@@ -1,0 +1,570 @@
+[
+  {
+    "id": "moss-t07-001",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según su artículo 1, la Ley Orgánica 3/2018, de protección de datos personales y garantía de los derechos digitales, tiene por objeto adaptar el ordenamiento jurídico español a:",
+      "opciones": [
+        "La Directiva 95/46/CE de protección de datos",
+        "El Reglamento (UE) 2016/679 (Reglamento general de protección de datos)",
+        "El Convenio de Budapest sobre ciberdelincuencia",
+        "La Ley Orgánica 15/1999 de protección de datos"
+      ],
+      "explicacion": "El artículo 1.a) fija como objeto adaptar el ordenamiento español al Reglamento (UE) 2016/679 y completar sus disposiciones, además de garantizar los derechos digitales. La LO 15/1999 es la ley anterior, que la de 2018 sustituyó."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 1, la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals, té per objecte adaptar l'ordenament jurídic espanyol a:",
+      "opciones": [
+        "La Directiva 95/46/CE de protecció de dades",
+        "El Reglament (UE) 2016/679 (Reglament general de protecció de dades)",
+        "El Conveni de Budapest sobre ciberdelinqüència",
+        "La Llei orgànica 15/1999 de protecció de dades"
+      ],
+      "explicacion": "L'article 1.a) fixa com a objecte adaptar l'ordenament espanyol al Reglament (UE) 2016/679 i completar-ne les disposicions, a més de garantir els drets digitals. La LO 15/1999 és la llei anterior, que la de 2018 va substituir."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a1"
+    },
+    "cita": "Adaptar el ordenamiento jurídico español al Reglamento (UE) 2016/679 del Parlamento Europeo y el Consejo, de 27 de abril de 2016",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-002",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 7 de la Ley Orgánica 3/2018, el tratamiento de los datos personales de un menor de edad solo puede fundarse en su propio consentimiento cuando sea mayor de:",
+      "opciones": [
+        "Doce años",
+        "Dieciséis años",
+        "Dieciocho años",
+        "Catorce años"
+      ],
+      "explicacion": "El artículo 7.1 fija el límite en los catorce años; por debajo, hace falta el consentimiento del titular de la patria potestad o tutela (art. 7.2). Los dieciséis años son el límite general del Reglamento europeo, que España rebajó."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 7 de la Llei orgànica 3/2018, el tractament de les dades personals d'un menor d'edat només es pot fonamentar en el seu propi consentiment quan sigui més gran de:",
+      "opciones": [
+        "Dotze anys",
+        "Setze anys",
+        "Divuit anys",
+        "Catorze anys"
+      ],
+      "explicacion": "L'article 7.1 fixa el límit en els catorze anys; per sota, cal el consentiment del titular de la pàtria potestat o tutela (art. 7.2). Els setze anys són el límit general del Reglament europeu, que Espanya va rebaixar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "7.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    "cita": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de catorce años.",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-003",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 3 de la Ley Orgánica 3/2018, los familiares y herederos de una persona fallecida pueden solicitar el acceso a sus datos personales y su rectificación o supresión, excepto cuando:",
+      "opciones": [
+        "La persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley",
+        "Hayan transcurrido más de seis meses desde el fallecimiento",
+        "Los datos se encuentren en ficheros de una administración pública",
+        "No exista testamento otorgado ante notario"
+      ],
+      "explicacion": "El artículo 3.1 exceptúa los casos en que la persona fallecida lo hubiese prohibido expresamente o lo establezca una ley; aun así, los herederos pueden acceder a los datos de carácter patrimonial."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 3 de la Llei orgànica 3/2018, els familiars i hereus d'una persona morta poden sol·licitar l'accés a les seves dades personals i la rectificació o supressió, excepte quan:",
+      "opciones": [
+        "La persona morta ho hagués prohibit expressament o així ho estableixi una llei",
+        "Hagin transcorregut més de sis mesos des de la mort",
+        "Les dades es trobin en fitxers d'una administració pública",
+        "No hi hagi testament atorgat davant notari"
+      ],
+      "explicacion": "L'article 3.1 n'exceptua els casos en què la persona morta ho hagués prohibit expressament o ho estableixi una llei; tot i això, els hereus poden accedir a les dades de caràcter patrimonial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a3"
+    },
+    "cita": "las personas a las que se refiere el párrafo anterior no podrán acceder a los datos del causante, ni solicitar su rectificación o supresión, cuando la persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley.",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-004",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El derecho de los usuarios a que los proveedores de servicios de Internet ofrezcan sus servicios de forma transparente y sin discriminación por motivos técnicos o económicos se denomina, en la Ley Orgánica 3/2018:",
+      "opciones": [
+        "Derecho de acceso universal a Internet",
+        "Derecho a la seguridad digital",
+        "Derecho a la neutralidad de Internet",
+        "Derecho a la portabilidad"
+      ],
+      "explicacion": "El artículo 80 regula el derecho a la neutralidad de Internet. El acceso universal (art. 81) se refiere a que todos puedan conectarse con independencia de su condición."
+    },
+    "ca": {
+      "enunciado": "El dret dels usuaris que els proveïdors de serveis d'internet ofereixin els serveis de manera transparent i sense discriminació per motius tècnics o econòmics s'anomena, a la Llei orgànica 3/2018:",
+      "opciones": [
+        "Dret d'accés universal a internet",
+        "Dret a la seguretat digital",
+        "Dret a la neutralitat d'internet",
+        "Dret a la portabilitat"
+      ],
+      "explicacion": "L'article 80 regula el dret a la neutralitat d'internet. L'accés universal (art. 81) es refereix que tothom s'hi pugui connectar amb independència de la seva condició."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "80",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a80"
+    },
+    "cita": "Los usuarios tienen derecho a la neutralidad de Internet. Los proveedores de servicios de Internet proporcionarán una oferta transparente de servicios sin discriminación por motivos técnicos o económicos.",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-005",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 88 de la Ley Orgánica 3/2018, el derecho de los trabajadores y de los empleados públicos a que se respete su tiempo de descanso, permisos y vacaciones fuera del tiempo de trabajo se denomina derecho:",
+      "opciones": [
+        "Al olvido",
+        "A la intimidad informática",
+        "A la conciliación telemática",
+        "A la desconexión digital"
+      ],
+      "explicacion": "El artículo 88.1 reconoce a trabajadores y empleados públicos el derecho a la desconexión digital fuera del tiempo de trabajo legal o convencionalmente establecido."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 88 de la Llei orgànica 3/2018, el dret dels treballadors i dels empleats públics que es respecti el seu temps de descans, permisos i vacances fora del temps de treball s'anomena dret:",
+      "opciones": [
+        "A l'oblit",
+        "A la intimitat informàtica",
+        "A la conciliació telemàtica",
+        "A la desconnexió digital"
+      ],
+      "explicacion": "L'article 88.1 reconeix a treballadors i empleats públics el dret a la desconnexió digital fora del temps de treball legal o convencionalment establert."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "88.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a88"
+    },
+    "cita": "Los trabajadores y los empleados públicos tendrán derecho a la desconexión digital a fin de garantizar, fuera del tiempo de trabajo legal o convencionalmente establecido, el respeto de su tiempo de descanso, permisos y vacaciones",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-006",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 89.2 de la Ley Orgánica 3/2018, ¿en qué lugares no se admite en ningún caso la instalación de sistemas de videovigilancia o de grabación de sonidos en el trabajo?",
+      "opciones": [
+        "En los accesos al centro de trabajo",
+        "En lugares destinados al descanso o esparcimiento, como vestuarios, aseos y comedores",
+        "En los almacenes y zonas de carga",
+        "En las zonas de atención al público"
+      ],
+      "explicacion": "El artículo 89.2 prohíbe estos sistemas en lugares de descanso o esparcimiento, «tales como vestuarios, aseos, comedores y análogos»."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 89.2 de la Llei orgànica 3/2018, en quins llocs no s'admet en cap cas la instal·lació de sistemes de videovigilància o d'enregistrament de sons a la feina?",
+      "opciones": [
+        "Als accessos al centre de treball",
+        "En llocs destinats al descans o a l'esbarjo, com ara vestidors, lavabos i menjadors",
+        "Als magatzems i zones de càrrega",
+        "A les zones d'atenció al públic"
+      ],
+      "explicacion": "L'article 89.2 prohibeix aquests sistemes en llocs de descans o esbarjo, «com ara vestidors, lavabos, menjadors i anàlegs»."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "89.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a89"
+    },
+    "cita": "En ningún caso se admitirá la instalación de sistemas de grabación de sonidos ni de videovigilancia en lugares destinados al descanso o esparcimiento de los trabajadores o los empleados públicos, tales como vestuarios, aseos, comedores y análogos.",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-007",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El derecho de una persona a que los motores de búsqueda eliminen de los resultados obtenidos a partir de su nombre los enlaces con información inadecuada, inexacta, no pertinente, no actualizada o excesiva se denomina, en la Ley Orgánica 3/2018:",
+      "opciones": [
+        "Derecho al olvido en búsquedas de Internet",
+        "Derecho de rectificación en Internet",
+        "Derecho a la portabilidad",
+        "Derecho al testamento digital"
+      ],
+      "explicacion": "El artículo 93 regula el derecho al olvido en búsquedas de Internet. El de rectificación (art. 85) se refiere a corregir contenidos que atenten contra el derecho al honor o la intimidad."
+    },
+    "ca": {
+      "enunciado": "El dret d'una persona que els motors de cerca eliminin dels resultats obtinguts a partir del seu nom els enllaços amb informació inadequada, inexacta, no pertinent, no actualitzada o excessiva s'anomena, a la Llei orgànica 3/2018:",
+      "opciones": [
+        "Dret a l'oblit en cerques d'internet",
+        "Dret de rectificació a internet",
+        "Dret a la portabilitat",
+        "Dret al testament digital"
+      ],
+      "explicacion": "L'article 93 regula el dret a l'oblit en cerques d'internet. El de rectificació (art. 85) es refereix a corregir continguts que atemptin contra el dret a l'honor o a la intimitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "93.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a93"
+    },
+    "cita": "Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre los enlaces publicados que contuvieran información relativa a esa persona cuando fuesen inadecuados, inexactos, no pertinentes, no actualizados o excesivos",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-008",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 83.4 de la Ley Orgánica 3/2018, ¿qué deben incorporar las Administraciones Públicas a los temarios de acceso a los cuerpos cuyas funciones impliquen habitualmente el acceso a datos personales?",
+      "opciones": [
+        "Una prueba práctica de programación informática",
+        "Una certificación oficial de ciberseguridad",
+        "Materias relacionadas con la garantía de los derechos digitales y, en particular, la protección de datos",
+        "Un curso obligatorio de ofimática avanzada"
+      ],
+      "explicacion": "El artículo 83.4 obliga a incluir en esos temarios materias sobre la garantía de los derechos digitales y, en particular, sobre protección de datos; es una de las razones por las que este contenido aparece en el temario."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 83.4 de la Llei orgànica 3/2018, què han d'incorporar les administracions públiques als temaris d'accés als cossos les funcions dels quals impliquen habitualment l'accés a dades personals?",
+      "opciones": [
+        "Una prova pràctica de programació informàtica",
+        "Una certificació oficial de ciberseguretat",
+        "Matèries relacionades amb la garantia dels drets digitals i, en particular, la protecció de dades",
+        "Un curs obligatori d'ofimàtica avançada"
+      ],
+      "explicacion": "L'article 83.4 obliga a incloure en aquests temaris matèries sobre la garantia dels drets digitals i, en particular, sobre protecció de dades; és una de les raons per les quals aquest contingut apareix al temari."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "83.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a83"
+    },
+    "cita": "Las Administraciones Públicas incorporarán a los temarios de las pruebas de acceso a los cuerpos superiores y a aquéllos en que habitualmente se desempeñen funciones que impliquen el acceso a datos personales materias relacionadas con la garantía de los derechos digitales y en particular el de protección de datos.",
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-009",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En informática, ¿cuántos bits forman un byte?",
+      "opciones": [
+        "8",
+        "2",
+        "10",
+        "16"
+      ],
+      "explicacion": "Un byte es la unidad básica de información formada por 8 bits; cada bit solo puede valer 0 o 1."
+    },
+    "ca": {
+      "enunciado": "En informàtica, quants bits formen un byte?",
+      "opciones": [
+        "8",
+        "2",
+        "10",
+        "16"
+      ],
+      "explicacion": "Un byte és la unitat bàsica d'informació formada per 8 bits; cada bit només pot valer 0 o 1."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-010",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué indica que la dirección de una página web empiece por «https» en lugar de «http»?",
+      "opciones": [
+        "Que la página está alojada en un servidor público",
+        "Que la página es oficial de una administración",
+        "Que la comunicación entre el navegador y el servidor va cifrada",
+        "Que la página no utiliza cookies"
+      ],
+      "explicacion": "La «s» de HTTPS significa que la conexión está protegida con cifrado (TLS), de modo que terceros no pueden leer ni alterar los datos en tránsito. No garantiza por sí sola que el sitio sea legítimo u oficial."
+    },
+    "ca": {
+      "enunciado": "Què indica que l'adreça d'una pàgina web comenci per «https» en lloc de «http»?",
+      "opciones": [
+        "Que la pàgina està allotjada en un servidor públic",
+        "Que la pàgina és oficial d'una administració",
+        "Que la comunicació entre el navegador i el servidor va xifrada",
+        "Que la pàgina no utilitza galetes"
+      ],
+      "explicacion": "La «s» d'HTTPS indica que la connexió està protegida amb xifratge (TLS), de manera que tercers no poden llegir ni alterar les dades en trànsit. No garanteix per si sola que el lloc sigui legítim o oficial."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-011",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cómo se denomina la técnica de ciberdelincuencia que consiste en suplantar a una entidad de confianza, normalmente por correo electrónico, para engañar a la víctima y obtener sus credenciales o datos bancarios?",
+      "opciones": [
+        "Spam",
+        "Cookie",
+        "Firewall",
+        "Phishing"
+      ],
+      "explicacion": "El phishing es la suplantación de identidad de una entidad de confianza para obtener contraseñas o datos bancarios. El spam es correo no deseado y el firewall, un sistema de protección."
+    },
+    "ca": {
+      "enunciado": "Com s'anomena la tècnica de ciberdelinqüència que consisteix a suplantar una entitat de confiança, normalment per correu electrònic, per enganyar la víctima i obtenir-ne les credencials o dades bancàries?",
+      "opciones": [
+        "Correu brossa (spam)",
+        "Galeta (cookie)",
+        "Tallafoc (firewall)",
+        "Pesca de credencials (phishing)"
+      ],
+      "explicacion": "El phishing és la suplantació d'identitat d'una entitat de confiança per obtenir contrasenyes o dades bancàries. El correu brossa és correu no desitjat i el tallafoc, un sistema de protecció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-012",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué tipo de programa malicioso cifra los archivos de un equipo o de una red y exige un pago para devolver el acceso a ellos?",
+      "opciones": [
+        "Spyware",
+        "Ransomware",
+        "Adware",
+        "Troyano bancario"
+      ],
+      "explicacion": "El ransomware (secuestro de datos) cifra la información de la víctima y pide un rescate. El spyware espía la actividad del usuario y el adware muestra publicidad no deseada."
+    },
+    "ca": {
+      "enunciado": "Quin tipus de programari maliciós xifra els fitxers d'un equip o d'una xarxa i exigeix un pagament per tornar-hi l'accés?",
+      "opciones": [
+        "Programari espia (spyware)",
+        "Programari de segrest (ransomware)",
+        "Programari publicitari (adware)",
+        "Troià bancari"
+      ],
+      "explicacion": "El ransomware (segrest de dades) xifra la informació de la víctima i en demana un rescat. El programari espia vigila l'activitat de l'usuari i el publicitari mostra publicitat no desitjada."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-013",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿En qué consiste la autenticación en dos factores (2FA)?",
+      "opciones": [
+        "En combinar dos elementos de verificación de tipo distinto, como una contraseña y un código recibido en el móvil",
+        "En escribir la misma contraseña dos veces",
+        "En usar dos contraseñas diferentes en dos webs distintas",
+        "En cambiar la contraseña cada dos meses"
+      ],
+      "explicacion": "La 2FA exige dos factores de categorías distintas: algo que se sabe (contraseña), algo que se tiene (móvil, token) o algo que se es (huella). Repetir la contraseña no añade un segundo factor."
+    },
+    "ca": {
+      "enunciado": "En què consisteix l'autenticació en dos factors (2FA)?",
+      "opciones": [
+        "A combinar dos elements de verificació de tipus diferent, com una contrasenya i un codi rebut al mòbil",
+        "A escriure la mateixa contrasenya dues vegades",
+        "A fer servir dues contrasenyes diferents en dues webs diferents",
+        "A canviar la contrasenya cada dos mesos"
+      ],
+      "explicacion": "La 2FA exigeix dos factors de categories diferents: alguna cosa que se sap (contrasenya), que es té (mòbil, testimoni) o que s'és (empremta). Repetir la contrasenya no hi afegeix un segon factor."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-014",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué característica tiene la memoria RAM de un ordenador?",
+      "opciones": [
+        "Es de solo lectura y contiene el programa de arranque",
+        "Conserva los datos aunque se apague el equipo",
+        "Es un tipo de disco duro externo",
+        "Es volátil: su contenido se pierde al apagar el equipo"
+      ],
+      "explicacion": "La RAM es la memoria de trabajo, de acceso aleatorio y volátil: pierde su contenido sin alimentación eléctrica. La memoria de solo lectura con el arranque es la ROM/firmware."
+    },
+    "ca": {
+      "enunciado": "Quina característica té la memòria RAM d'un ordinador?",
+      "opciones": [
+        "És només de lectura i conté el programa d'arrencada",
+        "Conserva les dades encara que s'apagui l'equip",
+        "És un tipus de disc dur extern",
+        "És volàtil: el contingut es perd en apagar l'equip"
+      ],
+      "explicacion": "La RAM és la memòria de treball, d'accés aleatori i volàtil: perd el contingut sense alimentació elèctrica. La memòria només de lectura amb l'arrencada és la ROM/microprogramari."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-015",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En inteligencia artificial, ¿qué es el aprendizaje automático (machine learning)?",
+      "opciones": [
+        "Un sistema de copias de seguridad automáticas",
+        "Un programa que solo ejecuta instrucciones fijas escritas paso a paso",
+        "Un conjunto de técnicas que permiten a un sistema aprender patrones a partir de datos y mejorar sus resultados sin programar cada regla",
+        "Un tipo de conexión inalámbrica entre dispositivos"
+      ],
+      "explicacion": "El aprendizaje automático es la rama de la IA en la que el sistema extrae patrones de los datos para hacer predicciones o tomar decisiones, en lugar de seguir reglas programadas una a una."
+    },
+    "ca": {
+      "enunciado": "En intel·ligència artificial, què és l'aprenentatge automàtic (machine learning)?",
+      "opciones": [
+        "Un sistema de còpies de seguretat automàtiques",
+        "Un programa que només executa instruccions fixes escrites pas a pas",
+        "Un conjunt de tècniques que permeten a un sistema aprendre patrons a partir de dades i millorar-ne els resultats sense programar cada regla",
+        "Un tipus de connexió sense fil entre dispositius"
+      ],
+      "explicacion": "L'aprenentatge automàtic és la branca de la IA en què el sistema extreu patrons de les dades per fer prediccions o prendre decisions, en lloc de seguir regles programades una a una."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-016",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo se denomina la variante del phishing que se realiza mediante mensajes SMS?",
+      "opciones": [
+        "Vishing",
+        "Smishing",
+        "Pharming",
+        "Sexting"
+      ],
+      "explicacion": "El smishing (de SMS y phishing) usa mensajes de texto con enlaces fraudulentos. El vishing se hace por llamada de voz y el pharming redirige a webs falsas manipulando la resolución de direcciones."
+    },
+    "ca": {
+      "enunciado": "Com s'anomena la variant del phishing que es fa mitjançant missatges SMS?",
+      "opciones": [
+        "Vishing",
+        "Smishing",
+        "Pharming",
+        "Sexting"
+      ],
+      "explicacion": "L'smishing (de SMS i phishing) fa servir missatges de text amb enllaços fraudulents. El vishing es fa per trucada de veu i el pharming redirigeix a webs falses manipulant la resolució d'adreces."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "moss-t07-017",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué enfoque sigue el Reglamento (UE) 2024/1689, de inteligencia artificial, para regular los sistemas de IA?",
+      "opciones": [
+        "Un enfoque basado en el riesgo: cuanto mayor es el riesgo del sistema, más estrictas son las obligaciones, y algunas prácticas se prohíben",
+        "Una prohibición general del uso de la IA por las administraciones públicas",
+        "Una autorización previa de cada sistema por un organismo mundial único",
+        "La autorregulación voluntaria de las empresas, sin obligaciones legales"
+      ],
+      "explicacion": "El Reglamento europeo de IA clasifica los sistemas según su riesgo (inaceptable, alto, limitado o mínimo): prohíbe las prácticas de riesgo inaceptable e impone requisitos más exigentes a los de alto riesgo."
+    },
+    "ca": {
+      "enunciado": "Quin enfocament segueix el Reglament (UE) 2024/1689, d'intel·ligència artificial, per regular els sistemes d'IA?",
+      "opciones": [
+        "Un enfocament basat en el risc: com més risc té el sistema, més estrictes són les obligacions, i algunes pràctiques es prohibeixen",
+        "Una prohibició general de l'ús de la IA per les administracions públiques",
+        "Una autorització prèvia de cada sistema per un organisme mundial únic",
+        "L'autoregulació voluntària de les empreses, sense obligacions legals"
+      ],
+      "explicacion": "El Reglament europeu d'IA classifica els sistemes segons el risc (inacceptable, alt, limitat o mínim): prohibeix les pràctiques de risc inacceptable i imposa requisits més exigents als d'alt risc."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Guia d'estudi per accedir a la categoria de mosso/a (edició juny 2026), tema A.7 (inclou apartat nou sobre intel·ligència artificial)",
+      "url": "https://mossos.gencat.cat/web/.content/home/01_els_mossos_desquadra/ingres-cos/Escala-bAsica/convocatoria-46-26/Guia_Mossos_Edicio_Juny_2026.pdf"
+    },
+    "origen": "ia"
+  }
+]

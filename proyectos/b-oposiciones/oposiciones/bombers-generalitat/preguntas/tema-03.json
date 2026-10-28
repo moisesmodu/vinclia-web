@@ -1,0 +1,422 @@
+[
+  {
+    "id": "bomb-t03-001",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 3.2 de la Ley de Prevención de Riesgos Laborales, respecto de los servicios operativos de protección civil, la Ley:",
+      "opciones": [
+        "No se aplica a las actividades cuyas particularidades lo impidan en los casos de grave riesgo, catástrofe y calamidad pública",
+        "No se aplica en ningún caso a su personal, ni siquiera como inspiración de su normativa específica",
+        "Se aplica íntegramente y sin ninguna peculiaridad",
+        "Solo se aplica al personal laboral y no al personal funcionario"
+      ],
+      "explicacion": "El artículo 3.2 LPRL excluye las actividades de los servicios operativos de protección civil cuyas particularidades lo impidan en casos de grave riesgo, catástrofe y calamidad pública; aun así, la Ley inspira su normativa específica."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 3.2 de la Llei de prevenció de riscos laborals, pel que fa als serveis operatius de protecció civil, la Llei:",
+      "opciones": [
+        "No s'aplica a les activitats les particularitats de les quals ho impedeixin en els casos de risc greu, catàstrofe i calamitat pública",
+        "No s'aplica en cap cas al seu personal, ni tan sols com a inspiració de la seva normativa específica",
+        "S'aplica íntegrament i sense cap peculiaritat",
+        "Només s'aplica al personal laboral i no al personal funcionari"
+      ],
+      "explicacion": "L'article 3.2 LPRL exclou les activitats dels serveis operatius de protecció civil les particularitats de les quals ho impedeixin en casos de risc greu, catàstrofe i calamitat pública; tot i així, la Llei inspira la seva normativa específica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "3.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a3"
+    },
+    "cita": "La presente Ley no será de aplicación en aquellas actividades cuyas particularidades lo impidan en el ámbito de las funciones públicas de: … Servicios operativos de protección civil y peritaje forense en los casos de grave riesgo, catástrofe y calamidad pública.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-002",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la LPRL, para calificar un riesgo desde el punto de vista de su gravedad se valoran conjuntamente:",
+      "opciones": [
+        "La frecuencia de exposición y la duración de la jornada",
+        "La probabilidad de que se produzca el daño y la severidad del mismo",
+        "El número de trabajadores expuestos y el coste de las medidas",
+        "La severidad del daño y los antecedentes de siniestralidad"
+      ],
+      "explicacion": "El artículo 4.2.º LPRL define el riesgo laboral y precisa que su gravedad se califica valorando conjuntamente la probabilidad del daño y su severidad."
+    },
+    "ca": {
+      "enunciado": "Segons la LPRL, per qualificar un risc des del punt de vista de la seva gravetat es valoren conjuntament:",
+      "opciones": [
+        "La freqüència d'exposició i la durada de la jornada",
+        "La probabilitat que es produeixi el dany i la severitat d'aquest",
+        "El nombre de treballadors exposats i el cost de les mesures",
+        "La severitat del dany i els antecedents de sinistralitat"
+      ],
+      "explicacion": "L'article 4 LPRL (apartat 2n) defineix el risc laboral i precisa que la seva gravetat es qualifica valorant conjuntament la probabilitat del dany i la seva severitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Para calificar un riesgo desde el punto de vista de su gravedad, se valorarán conjuntamente la probabilidad de que se produzca el daño y la severidad del mismo.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-003",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cómo define la LPRL el «riesgo laboral grave e inminente»?",
+      "opciones": [
+        "El que ya se ha materializado causando un daño grave a la salud",
+        "El que puede producirse en cualquier momento, aunque el daño previsible sea leve",
+        "Aquel que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave para la salud",
+        "Aquel cuya probabilidad es remota pero cuya severidad sería muy alta"
+      ],
+      "explicacion": "El artículo 4.4.º LPRL exige dos notas: probabilidad racional de materializarse en un futuro inmediato y posibilidad de daño grave para la salud de los trabajadores."
+    },
+    "ca": {
+      "enunciado": "Com defineix la LPRL el «risc laboral greu i imminent»?",
+      "opciones": [
+        "El que ja s'ha materialitzat i ha causat un dany greu a la salut",
+        "El que es pot produir en qualsevol moment, encara que el dany previsible sigui lleu",
+        "Aquell que sigui racionalment probable que es materialitzi en un futur immediat i pugui suposar un dany greu per a la salut",
+        "Aquell la probabilitat del qual és remota però la severitat del qual seria molt alta"
+      ],
+      "explicacion": "L'article 4 LPRL (apartat 4t) exigeix dues notes: probabilitat racional de materialitzar-se en un futur immediat i possibilitat de dany greu per a la salut dels treballadors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Se entenderá como «riesgo laboral grave e inminente» aquel que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave para la salud de los trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-004",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes es uno de los principios de la acción preventiva del artículo 15 de la LPRL?",
+      "opciones": [
+        "Anteponer la protección individual a la colectiva",
+        "Adaptar la persona al puesto de trabajo",
+        "Evaluar en primer lugar todos los riesgos, incluso los que se puedan evitar",
+        "Anteponer la protección colectiva a la individual"
+      ],
+      "explicacion": "El artículo 15.1.h) LPRL ordena adoptar medidas que antepongan la protección colectiva a la individual. Los principios también piden adaptar el trabajo a la persona (no al revés) y evaluar los riesgos que no se puedan evitar."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents és un dels principis de l'acció preventiva de l'article 15 de la LPRL?",
+      "opciones": [
+        "Anteposar la protecció individual a la col·lectiva",
+        "Adaptar la persona al lloc de treball",
+        "Avaluar en primer lloc tots els riscos, fins i tot els que es puguin evitar",
+        "Anteposar la protecció col·lectiva a la individual"
+      ],
+      "explicacion": "L'article 15.1.h) LPRL ordena adoptar mesures que anteposin la protecció col·lectiva a la individual. Els principis també demanen adaptar el treball a la persona (no a l'inrevés) i avaluar els riscos que no es puguin evitar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "15.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a15"
+    },
+    "cita": "h) Adoptar medidas que antepongan la protección colectiva a la individual.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-005",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 21.2 de la LPRL, cuando un trabajador considere que su actividad entraña un riesgo grave e inminente para su vida o su salud:",
+      "opciones": [
+        "Debe continuar trabajando hasta recibir una orden escrita de su superior",
+        "Tiene derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario",
+        "Solo puede detener la actividad si lo acuerdan los delegados de prevención",
+        "Debe comunicarlo a la autoridad laboral, que decide en veinticuatro horas"
+      ],
+      "explicacion": "El artículo 21.2 LPRL reconoce al trabajador el derecho a interrumpir su actividad y abandonar el lugar de trabajo. La decisión de los representantes y la ratificación de la autoridad laboral se refieren a la paralización colectiva del artículo 21.3."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 21.2 de la LPRL, quan un treballador consideri que la seva activitat comporta un risc greu i imminent per a la seva vida o la seva salut:",
+      "opciones": [
+        "Ha de continuar treballant fins que rebi una ordre escrita del seu superior",
+        "Té dret a interrompre la seva activitat i abandonar el lloc de treball, si cal",
+        "Només pot aturar l'activitat si ho acorden els delegats de prevenció",
+        "Ho ha de comunicar a l'autoritat laboral, que decideix en vint-i-quatre hores"
+      ],
+      "explicacion": "L'article 21.2 LPRL reconeix al treballador el dret a interrompre la seva activitat i abandonar el lloc de treball. La decisió dels representants i la ratificació de l'autoritat laboral es refereixen a la paralització col·lectiva de l'article 21.3."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "21.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a21"
+    },
+    "cita": "el trabajador tendrá derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, cuando considere que dicha actividad entraña un riesgo grave e inminente para su vida o su salud.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-006",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Si los representantes legales de los trabajadores acuerdan paralizar la actividad por un riesgo grave e inminente, ¿en qué plazo debe la autoridad laboral anular o ratificar la paralización?",
+      "opciones": [
+        "Veinticuatro horas",
+        "Cuarenta y ocho horas",
+        "Setenta y dos horas",
+        "Diez días"
+      ],
+      "explicacion": "El artículo 21.3 LPRL obliga a comunicar el acuerdo de inmediato a la empresa y a la autoridad laboral, que lo anula o ratifica en el plazo de veinticuatro horas."
+    },
+    "ca": {
+      "enunciado": "Si els representants legals dels treballadors acorden paralitzar l'activitat per un risc greu i imminent, en quin termini l'autoritat laboral ha d'anul·lar o ratificar la paralització?",
+      "opciones": [
+        "Vint-i-quatre hores",
+        "Quaranta-vuit hores",
+        "Setanta-dues hores",
+        "Deu dies"
+      ],
+      "explicacion": "L'article 21.3 LPRL obliga a comunicar l'acord immediatament a l'empresa i a l'autoritat laboral, que l'anul·la o el ratifica en el termini de vint-i-quatre hores."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "21.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a21"
+    },
+    "cita": "Tal acuerdo será comunicado de inmediato a la empresa y a la autoridad laboral, la cual, en el plazo de veinticuatro horas, anulará o ratificará la paralización acordada.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-007",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "El incumplimiento por un funcionario público de sus obligaciones en materia de prevención de riesgos laborales tiene, según el artículo 29.3 de la LPRL, la consideración de:",
+      "opciones": [
+        "Infracción administrativa sancionable por la Inspección de Trabajo",
+        "Delito contra los derechos de los trabajadores",
+        "Falta, conforme a la normativa sobre régimen disciplinario de los funcionarios públicos",
+        "Incumplimiento sin consecuencias disciplinarias si no causa daños"
+      ],
+      "explicacion": "El artículo 29.3 LPRL considera ese incumplimiento como incumplimiento laboral (personal laboral) o como falta según la normativa disciplinaria de los funcionarios públicos."
+    },
+    "ca": {
+      "enunciado": "L'incompliment per un funcionari públic de les seves obligacions en matèria de prevenció de riscos laborals té, segons l'article 29.3 de la LPRL, la consideració de:",
+      "opciones": [
+        "Infracció administrativa sancionable per la Inspecció de Treball",
+        "Delicte contra els drets dels treballadors",
+        "Falta, d'acord amb la normativa sobre règim disciplinari dels funcionaris públics",
+        "Incompliment sense conseqüències disciplinàries si no causa danys"
+      ],
+      "explicacion": "L'article 29.3 LPRL considera aquest incompliment com a incompliment laboral (personal laboral) o com a falta segons la normativa disciplinària dels funcionaris públics."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "29.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a29"
+    },
+    "cita": "o de falta, en su caso, conforme a lo establecido en la correspondiente normativa sobre régimen disciplinario de los funcionarios públicos",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-008",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿En qué empresas o centros de trabajo debe constituirse un Comité de Seguridad y Salud?",
+      "opciones": [
+        "En los que cuenten con 31 o más trabajadores",
+        "En los que cuenten con 100 o más trabajadores",
+        "En los que cuenten con 250 o más trabajadores",
+        "En los que cuenten con 50 o más trabajadores"
+      ],
+      "explicacion": "El artículo 38.2 LPRL exige el Comité de Seguridad y Salud, órgano paritario y colegiado, en las empresas o centros con 50 o más trabajadores."
+    },
+    "ca": {
+      "enunciado": "En quines empreses o centres de treball s'ha de constituir un comitè de seguretat i salut?",
+      "opciones": [
+        "En els que tinguin 31 o més treballadors",
+        "En els que tinguin 100 o més treballadors",
+        "En els que tinguin 250 o més treballadors",
+        "En els que tinguin 50 o més treballadors"
+      ],
+      "explicacion": "L'article 38.2 LPRL exigeix el comitè de seguretat i salut, òrgan paritari i col·legiat, a les empreses o centres amb 50 o més treballadors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "38.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a38"
+    },
+    "cita": "Se constituirá un Comité de Seguridad y Salud en todas las empresas o centros de trabajo que cuenten con 50 o más trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-009",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En las empresas de hasta treinta trabajadores, ¿quién es el Delegado de Prevención?",
+      "opciones": [
+        "El Delegado de Personal",
+        "El propio empresario o la persona que designe",
+        "Un técnico del servicio de prevención ajeno",
+        "La persona elegida por y entre los miembros del comité de empresa"
+      ],
+      "explicacion": "El artículo 35.2 LPRL establece que en las empresas de hasta treinta trabajadores el Delegado de Prevención es el Delegado de Personal; de treinta y uno a cuarenta y nueve, se elige uno por y entre los Delegados de Personal."
+    },
+    "ca": {
+      "enunciado": "A les empreses de fins a trenta treballadors, qui és el delegat de prevenció?",
+      "opciones": [
+        "El delegat de personal",
+        "El mateix empresari o la persona que designi",
+        "Un tècnic del servei de prevenció aliè",
+        "La persona elegida per i entre els membres del comitè d'empresa"
+      ],
+      "explicacion": "L'article 35.2 LPRL estableix que a les empreses de fins a trenta treballadors el delegat de prevenció és el delegat de personal; de trenta-un a quaranta-nou, se n'elegeix un per i entre els delegats de personal."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "35.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a35"
+    },
+    "cita": "En las empresas de hasta treinta trabajadores el Delegado de Prevención será el Delegado de Personal.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-010",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes queda excluido de la definición de equipo de protección individual del Real Decreto 773/1997?",
+      "opciones": [
+        "Los guantes de protección frente a riesgos mecánicos",
+        "Los protectores auditivos",
+        "Los equipos de los servicios de socorro y salvamento",
+        "Los equipos de protección respiratoria"
+      ],
+      "explicacion": "El artículo 2.2.b) del Real Decreto 773/1997 excluye de su definición de EPI los equipos de los servicios de socorro y salvamento, junto con la ropa de trabajo corriente, el material de deporte y otros."
+    },
+    "ca": {
+      "enunciado": "Quin dels següents queda exclòs de la definició d'equip de protecció individual del Reial decret 773/1997?",
+      "opciones": [
+        "Els guants de protecció contra riscos mecànics",
+        "Els protectors auditius",
+        "Els equips dels serveis de socors i salvament",
+        "Els equips de protecció respiratòria"
+      ],
+      "explicacion": "L'article 2.2.b) del Reial decret 773/1997 exclou de la seva definició d'EPI els equips dels serveis de socors i salvament, juntament amb la roba de treball corrent, el material d'esport i d'altres."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "2.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a2"
+    },
+    "cita": "Se excluyen de la definición contemplada en el apartado 1: … b) Los equipos de los servicios de socorro y salvamento.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-011",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el Real Decreto 773/1997, el empresario debe proporcionar a los trabajadores los equipos de protección individual que deban utilizar:",
+      "opciones": [
+        "Con cargo al trabajador, que abona su coste en la nómina",
+        "Compartiendo el coste a partes iguales con el trabajador",
+        "Gratuitamente solo la primera vez, sin obligación de reponerlos",
+        "Gratuitamente, reponiéndolos cuando resulte necesario"
+      ],
+      "explicacion": "El artículo 3.c) del Real Decreto 773/1997 obliga a proporcionar los EPI gratuitamente y a reponerlos cuando sea necesario, en línea con el artículo 14.5 LPRL, según el cual el coste de las medidas de seguridad no puede recaer sobre los trabajadores."
+    },
+    "ca": {
+      "enunciado": "Segons el Reial decret 773/1997, l'empresari ha de proporcionar als treballadors els equips de protecció individual que hagin d'utilitzar:",
+      "opciones": [
+        "A càrrec del treballador, que n'abona el cost a la nòmina",
+        "Compartint el cost a parts iguals amb el treballador",
+        "Gratuïtament només la primera vegada, sense obligació de reposar-los",
+        "Gratuïtament, i reposant-los quan sigui necessari"
+      ],
+      "explicacion": "L'article 3.c) del Reial decret 773/1997 obliga a proporcionar els EPI gratuïtament i a reposar-los quan calgui, en línia amb l'article 14.5 LPRL, segons el qual el cost de les mesures de seguretat no pot recaure sobre els treballadors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a3"
+    },
+    "cita": "Proporcionar gratuitamente a los trabajadores los equipos de protección individual que deban utilizar, reponiéndolos cuando resulte necesario.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t03-012",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Real Decreto 773/1997, los equipos de protección individual están destinados, en principio, a:",
+      "opciones": [
+        "Un uso compartido por todos los trabajadores del turno",
+        "Un uso personal",
+        "Un uso exclusivo en situaciones de emergencia",
+        "Un uso rotatorio entre los trabajadores del mismo puesto"
+      ],
+      "explicacion": "El artículo 7.3 del Real Decreto 773/1997 los destina en principio a un uso personal; si varias personas deben usar un mismo equipo, hay que adoptar medidas para que no origine problemas de salud o de higiene."
+    },
+    "ca": {
+      "enunciado": "Segons el Reial decret 773/1997, els equips de protecció individual estan destinats, en principi, a:",
+      "opciones": [
+        "Un ús compartit per tots els treballadors del torn",
+        "Un ús personal",
+        "Un ús exclusiu en situacions d'emergència",
+        "Un ús rotatori entre els treballadors del mateix lloc"
+      ],
+      "explicacion": "L'article 7.3 del Reial decret 773/1997 els destina en principi a un ús personal; si diverses persones han d'utilitzar un mateix equip, cal adoptar mesures perquè no origini problemes de salut o d'higiene."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "7.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a7"
+    },
+    "cita": "Los equipos de protección individual estarán destinados, en principio, a un uso personal.",
+    "origen": "ia"
+  }
+]

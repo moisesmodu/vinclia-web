@@ -1,0 +1,492 @@
+[
+  {
+    "id": "ajun-t09-001",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Con qué periodicidad mínima celebra sesión ordinaria el Pleno de un Ayuntamiento de un municipio de 12.000 habitantes?",
+      "opciones": [
+        "Cada mes",
+        "Cada dos meses",
+        "Cada tres meses",
+        "Cada seis meses"
+      ],
+      "explicacion": "Según el artículo 46.2.a) LBRL, el Pleno celebra sesión ordinaria como mínimo cada mes en los municipios de más de 20.000 habitantes, cada dos meses en los de 5.001 a 20.000 y cada tres en los de hasta 5.000."
+    },
+    "ca": {
+      "enunciado": "Amb quina periodicitat mínima fa sessió ordinària el Ple d'un ajuntament d'un municipi de 12.000 habitants?",
+      "opciones": [
+        "Cada mes",
+        "Cada dos mesos",
+        "Cada tres mesos",
+        "Cada sis mesos"
+      ],
+      "explicacion": "Segons l'article 46.2.a) LBRL, el Ple fa sessió ordinària com a mínim cada mes als municipis de més de 20.000 habitants, cada dos mesos als de 5.001 a 20.000 i cada tres als de fins a 5.000."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "cada dos meses en los Ayuntamientos de los municipios de una población entre 5.001 habitantes y 20.000 habitantes",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-002",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Además de cuando lo decida el Presidente, el Pleno celebra sesión extraordinaria cuando lo solicite:",
+      "opciones": [
+        "Un tercio de los miembros presentes en la última sesión, sin límite anual",
+        "La mayoría absoluta de los Concejales, con un máximo de dos solicitudes por Concejal al año",
+        "Cualquier grupo municipal, sin límite",
+        "La cuarta parte, al menos, del número legal de miembros, sin que ningún Concejal pueda solicitar más de tres anualmente"
+      ],
+      "explicacion": "El artículo 46.2.a) LBRL exige la solicitud de la cuarta parte, al menos, del número legal de miembros de la Corporación, y limita a tres por año las solicitudes de cada Concejal."
+    },
+    "ca": {
+      "enunciado": "A més de quan ho decideixi el president, el Ple fa sessió extraordinària quan ho sol·liciti:",
+      "opciones": [
+        "Un terç dels membres presents a la darrera sessió, sense límit anual",
+        "La majoria absoluta dels regidors, amb un màxim de dues sol·licituds per regidor a l'any",
+        "Qualsevol grup municipal, sense límit",
+        "La quarta part, almenys, del nombre legal de membres, sense que cap regidor en pugui sol·licitar més de tres anualment"
+      ],
+      "explicacion": "L'article 46.2.a) LBRL exigeix la sol·licitud de la quarta part, almenys, del nombre legal de membres de la corporació, i limita a tres per any les sol·licituds de cada regidor."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "el Pleno celebra sesión extraordinaria cuando así lo decida el Presidente o lo solicite la cuarta parte, al menos, del número legal de miembros de la Corporación, sin que ningún concejal pueda solicitar más de tres anualmente.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-003",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Si el Presidente no convoca dentro del plazo legal el Pleno extraordinario solicitado por el número de Concejales exigido, este queda automáticamente convocado:",
+      "opciones": [
+        "Para el décimo día hábil siguiente al de la finalización de dicho plazo, a las doce horas",
+        "Para el quinto día natural siguiente, a la hora de la última sesión ordinaria",
+        "Para el día que fije el Concejal de mayor edad",
+        "Para el primer día hábil siguiente, a las diez horas"
+      ],
+      "explicacion": "El artículo 46.2.a) LBRL prevé la convocatoria automática para el décimo día hábil siguiente al de la finalización del plazo de quince días hábiles, a las doce horas, lo que notifica el Secretario a todos los miembros."
+    },
+    "ca": {
+      "enunciado": "Si el president no convoca dins del termini legal el Ple extraordinari sol·licitat pel nombre de regidors exigit, aquest queda automàticament convocat:",
+      "opciones": [
+        "Per al desè dia hàbil següent al de la finalització d'aquest termini, a les dotze hores",
+        "Per al cinquè dia natural següent, a l'hora de la darrera sessió ordinària",
+        "Per al dia que fixi el regidor de més edat",
+        "Per al primer dia hàbil següent, a les deu hores"
+      ],
+      "explicacion": "L'article 46.2.a) LBRL preveu la convocatòria automàtica per al desè dia hàbil següent al de la finalització del termini de quinze dies hàbils, a les dotze hores, cosa que el secretari notifica a tots els membres."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "quedará automáticamente convocado para el décimo día hábil siguiente al de la finalización de dicho plazo, a las doce horas",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-004",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Con qué antelación mínima han de convocarse las sesiones plenarias, salvo las extraordinarias urgentes?",
+      "opciones": [
+        "Veinticuatro horas",
+        "Cinco días naturales",
+        "Dos días hábiles",
+        "Diez días hábiles"
+      ],
+      "explicacion": "El artículo 46.2.b) LBRL exige convocar las sesiones plenarias al menos con dos días hábiles de antelación; la convocatoria de las extraordinarias urgentes debe ser ratificada por el Pleno."
+    },
+    "ca": {
+      "enunciado": "Amb quina antelació mínima s'han de convocar les sessions plenàries, llevat de les extraordinàries urgents?",
+      "opciones": [
+        "Vint-i-quatre hores",
+        "Cinc dies naturals",
+        "Dos dies hàbils",
+        "Deu dies hàbils"
+      ],
+      "explicacion": "L'article 46.2.b) LBRL exigeix convocar les sessions plenàries almenys amb dos dies hàbils d'antelació; la convocatòria de les extraordinàries urgents l'ha de ratificar el Ple."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "Las sesiones plenarias han de convocarse, al menos, con dos días hábiles de antelación, salvo las extraordinarias que lo hayan sido con carácter urgente",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-005",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Con carácter general, ¿qué quórum se requiere para la válida constitución del Pleno según la Ley de Bases del Régimen Local?",
+      "opciones": [
+        "La mayoría absoluta del número legal de miembros",
+        "Un tercio del mínimo legal de miembros, que nunca podrá ser inferior a tres",
+        "La cuarta parte de los miembros, que nunca podrá ser inferior a dos",
+        "La mitad más uno de los miembros presentes en la convocatoria anterior"
+      ],
+      "explicacion": "El artículo 46.2.c) LBRL exige un tercio del mínimo legal de miembros, nunca inferior a tres, quórum que debe mantenerse durante toda la sesión; además deben asistir el Presidente y el Secretario o quienes legalmente les sustituyan."
+    },
+    "ca": {
+      "enunciado": "Amb caràcter general, quin quòrum es requereix per a la constitució vàlida del Ple segons la Llei de bases del règim local?",
+      "opciones": [
+        "La majoria absoluta del nombre legal de membres",
+        "Un terç del mínim legal de membres, que mai no pot ser inferior a tres",
+        "La quarta part dels membres, que mai no pot ser inferior a dos",
+        "La meitat més un dels membres presents a la convocatòria anterior"
+      ],
+      "explicacion": "L'article 46.2.c) LBRL exigeix un terç del mínim legal de membres, mai inferior a tres, quòrum que s'ha de mantenir durant tota la sessió; a més, hi han d'assistir el president i el secretari o els que legalment els substitueixin."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "El Pleno se constituye válidamente con la asistencia de un tercio del mínimo legal de miembros del mismo, que nunca podrá ser inferior a tres.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-006",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué efecto tiene la ausencia de un Concejal del salón una vez iniciada la deliberación de un asunto?",
+      "opciones": [
+        "Equivale, a efectos de la votación correspondiente, a la abstención",
+        "Equivale a un voto negativo",
+        "Impide votar el asunto hasta que regrese",
+        "Obliga a repetir la deliberación"
+      ],
+      "explicacion": "El artículo 46.2.d) LBRL dispone que la ausencia de uno o varios Concejales una vez iniciada la deliberación de un asunto equivale, a efectos de la votación, a la abstención."
+    },
+    "ca": {
+      "enunciado": "Quin efecte té l'absència d'un regidor de la sala un cop iniciada la deliberació d'un assumpte?",
+      "opciones": [
+        "Equival, a efectes de la votació corresponent, a l'abstenció",
+        "Equival a un vot negatiu",
+        "Impedeix votar l'assumpte fins que torni",
+        "Obliga a repetir la deliberació"
+      ],
+      "explicacion": "L'article 46.2.d) LBRL disposa que l'absència d'un o diversos regidors un cop iniciada la deliberació d'un assumpte equival, a efectes de la votació, a l'abstenció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "46.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a46"
+    },
+    "cita": "La ausencia de uno o varios Concejales o Diputados, una vez iniciada la deliberación de un asunto, equivale, a efectos de la votación correspondiente, a la abstención.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-007",
+    "tema": 9,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuándo existe mayoría simple en la adopción de acuerdos de las corporaciones locales?",
+      "opciones": [
+        "Cuando votan a favor más de la mitad del número legal de miembros",
+        "Cuando votan a favor más de la mitad de los miembros presentes",
+        "Cuando votan a favor dos tercios de los presentes",
+        "Cuando los votos afirmativos son más que los negativos"
+      ],
+      "explicacion": "El artículo 47.1 LBRL establece como regla general la mayoría simple de los miembros presentes, que existe cuando los votos afirmativos son más que los negativos; las abstenciones no se computan como votos en contra."
+    },
+    "ca": {
+      "enunciado": "Quan hi ha majoria simple en l'adopció d'acords de les corporacions locals?",
+      "opciones": [
+        "Quan voten a favor més de la meitat del nombre legal de membres",
+        "Quan voten a favor més de la meitat dels membres presents",
+        "Quan voten a favor dues terceres parts dels presents",
+        "Quan els vots afirmatius són més que els negatius"
+      ],
+      "explicacion": "L'article 47.1 LBRL estableix com a regla general la majoria simple dels membres presents, que existeix quan els vots afirmatius són més que els negatius; les abstencions no es computen com a vots en contra."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "47.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a47"
+    },
+    "cita": "Los acuerdos de las corporaciones locales se adoptan, como regla general, por mayoría simple de los miembros presentes. Existe mayoría simple cuando los votos afirmativos son más que los negativos.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-008",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué mayoría se requiere para aprobar o modificar el reglamento orgánico propio de la corporación?",
+      "opciones": [
+        "Mayoría simple de los miembros presentes",
+        "Mayoría de dos tercios del número legal de miembros",
+        "Mayoría absoluta del número legal de miembros de la corporación",
+        "Mayoría absoluta de los miembros presentes"
+      ],
+      "explicacion": "El artículo 47.2.f) LBRL incluye la aprobación y modificación del reglamento orgánico entre las materias que requieren el voto favorable de la mayoría absoluta del número legal de miembros de la corporación."
+    },
+    "ca": {
+      "enunciado": "Quina majoria es requereix per aprovar o modificar el reglament orgànic propi de la corporació?",
+      "opciones": [
+        "Majoria simple dels membres presents",
+        "Majoria de dues terceres parts del nombre legal de membres",
+        "Majoria absoluta del nombre legal de membres de la corporació",
+        "Majoria absoluta dels membres presents"
+      ],
+      "explicacion": "L'article 47.2.f) LBRL inclou l'aprovació i la modificació del reglament orgànic entre les matèries que requereixen el vot favorable de la majoria absoluta del nombre legal de membres de la corporació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1985-5392",
+      "norma": "Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local",
+      "articulo": "47.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a47"
+    },
+    "cita": "f) Aprobación y modificación del reglamento orgánico propio de la corporación.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-009",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En una sesión extraordinaria urgente del Pleno, ¿qué ocurre si el Pleno no aprecia la urgencia?",
+      "opciones": [
+        "Se tratan los asuntos como sesión ordinaria",
+        "Se levanta acto seguido la sesión",
+        "Se aplaza la sesión cuarenta y ocho horas",
+        "Decide el Alcalde con su voto de calidad"
+      ],
+      "explicacion": "Según el artículo 79 ROF, el primer punto del orden del día de la sesión extraordinaria urgente es el pronunciamiento del Pleno sobre la urgencia; si no se aprecia, se levanta acto seguido la sesión."
+    },
+    "ca": {
+      "enunciado": "En una sessió extraordinària urgent del Ple, què passa si el Ple no aprecia la urgència?",
+      "opciones": [
+        "Es tracten els assumptes com a sessió ordinària",
+        "S'aixeca tot seguit la sessió",
+        "S'ajorna la sessió quaranta-vuit hores",
+        "Decideix l'alcalde amb el seu vot de qualitat"
+      ],
+      "explicacion": "Segons l'article 79 ROF, el primer punt de l'ordre del dia de la sessió extraordinària urgent és el pronunciament del Ple sobre la urgència; si no s'aprecia, s'aixeca tot seguit la sessió."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "79",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a79"
+    },
+    "cita": "En este caso debe incluirse como primer punto del orden del día el pronunciamiento del Pleno sobre la urgencia. Si ésta no resulta apreciada por el Pleno, se levantará acto seguido la sesión.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-010",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 90.2 del ROF, si en primera convocatoria no existe el quórum necesario para constituir el Pleno:",
+      "opciones": [
+        "Se entiende convocada la sesión automáticamente a la misma hora, dos días después",
+        "Se celebra media hora más tarde con los miembros presentes",
+        "El Alcalde debe convocar una nueva sesión en el plazo de diez días",
+        "Los asuntos se entienden aprobados por silencio"
+      ],
+      "explicacion": "El artículo 90.2 ROF prevé la segunda convocatoria automática a la misma hora, dos días después; si tampoco hay quórum, se deja sin efecto la convocatoria y los asuntos pasan a la primera sesión posterior."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 90.2 del ROF, si en primera convocatòria no hi ha el quòrum necessari per constituir el Ple:",
+      "opciones": [
+        "S'entén convocada la sessió automàticament a la mateixa hora, dos dies després",
+        "Es fa mitja hora més tard amb els membres presents",
+        "L'alcalde ha de convocar una nova sessió en el termini de deu dies",
+        "Els assumptes s'entenen aprovats per silenci"
+      ],
+      "explicacion": "L'article 90.2 ROF preveu la segona convocatòria automàtica a la mateixa hora, dos dies després; si tampoc no hi ha quòrum, es deixa sense efecte la convocatòria i els assumptes passen a la primera sessió posterior."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "90.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a90"
+    },
+    "cita": "Si en primera convocatoria no existiera el quórum necesario según lo dispuesto en el número anterior, se entenderá convocada la sesión automáticamente a la misma hora, dos días después.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-011",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 102 del ROF, ¿para qué puede utilizarse la votación secreta en el Pleno?",
+      "opciones": [
+        "Para cualquier asunto, si lo pide un grupo municipal",
+        "Para la aprobación de las ordenanzas fiscales",
+        "Para los asuntos que afecten al derecho a la intimidad, en todo caso",
+        "Solo para la elección o destitución de personas"
+      ],
+      "explicacion": "El artículo 102.3 ROF limita la votación secreta a la elección o destitución de personas. El sistema normal es la votación ordinaria y la nominal requiere solicitud de un grupo aprobada por mayoría simple (art. 102.1 y 2)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 102 del ROF, per a què es pot utilitzar la votació secreta al Ple?",
+      "opciones": [
+        "Per a qualsevol assumpte, si ho demana un grup municipal",
+        "Per a l'aprovació de les ordenances fiscals",
+        "Per als assumptes que afectin el dret a la intimitat, en tot cas",
+        "Només per a l'elecció o la destitució de persones"
+      ],
+      "explicacion": "L'article 102.3 ROF limita la votació secreta a l'elecció o la destitució de persones. El sistema normal és la votació ordinària i la nominal requereix sol·licitud d'un grup aprovada per majoria simple (art. 102.1 i 2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "102.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a102"
+    },
+    "cita": "La votación secreta sólo podrá utilizarse para elección o destitución de personas.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-012",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Pueden expedirse certificaciones de acuerdos de los órganos de gobierno locales antes de aprobarse el acta que los contiene?",
+      "opciones": [
+        "No, en ningún caso",
+        "Solo con autorización expresa del Pleno",
+        "Sí, siempre que se haga la advertencia o salvedad en este sentido y a reserva de los términos que resulten de la aprobación del acta",
+        "Sí, pero solo las expide el Alcalde, sin intervención del Secretario"
+      ],
+      "explicacion": "El artículo 206 ROF lo permite con la advertencia o salvedad correspondiente y a reserva de la aprobación del acta. Las certificaciones las expide siempre el Secretario, con el visto bueno del Presidente (arts. 204 y 205)."
+    },
+    "ca": {
+      "enunciado": "Es poden expedir certificats d'acords dels òrgans de govern locals abans que s'aprovi l'acta que els conté?",
+      "opciones": [
+        "No, en cap cas",
+        "Només amb autorització expressa del Ple",
+        "Sí, sempre que es faci l'advertiment o la salvetat en aquest sentit i a reserva dels termes que resultin de l'aprovació de l'acta",
+        "Sí, però només els expedeix l'alcalde, sense intervenció del secretari"
+      ],
+      "explicacion": "L'article 206 ROF ho permet amb l'advertiment o la salvetat corresponent i a reserva de l'aprovació de l'acta. Els certificats els expedeix sempre el secretari, amb el vistiplau del president (arts. 204 i 205)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1986-33252",
+      "norma": "Real Decreto 2568/1986, de 28 de noviembre, por el que se aprueba el Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales",
+      "articulo": "206",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33252#a206"
+    },
+    "cita": "Podrán expedirse certificaciones de las resoluciones y acuerdos de los órganos de gobierno y administración de las entidades locales, antes de ser aprobadas las actas que los contengan, siempre que se haga la advertencia o salvedad en este sentido",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-013",
+    "tema": 9,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Texto refundido de la Ley municipal y de régimen local de Cataluña, ¿en qué plazo deben contestarse las preguntas formuladas por los miembros de la corporación para ser respondidas por escrito?",
+      "opciones": [
+        "En la sesión siguiente",
+        "En el plazo máximo de un mes",
+        "En el plazo máximo de quince días hábiles",
+        "En el plazo máximo de tres meses"
+      ],
+      "explicacion": "El artículo 105 del Texto refundido fija un plazo máximo de un mes para las preguntas a responder por escrito. Las formuladas oralmente se contestan en la sesión siguiente, salvo respuesta inmediata."
+    },
+    "ca": {
+      "enunciado": "Segons el Text refós de la Llei municipal i de règim local de Catalunya, en quin termini s'han de contestar les preguntes formulades pels membres de la corporació per ser respostes per escrit?",
+      "opciones": [
+        "A la sessió següent",
+        "En el termini màxim d'un mes",
+        "En el termini màxim de quinze dies hàbils",
+        "En el termini màxim de tres mesos"
+      ],
+      "explicacion": "L'article 105 del Text refós fixa un termini màxim d'un mes per a les preguntes amb resposta per escrit. Les formulades oralment es contesten a la sessió següent, llevat de resposta immediata."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "105",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "Pueden formularse también preguntas a responder por escrito. En este caso, tienen que ser contestadas en el plazo máximo de un mes.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t09-014",
+    "tema": 9,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Al someter a votación el acta de la sesión anterior, ¿qué rectificaciones pueden hacerse según el artículo 110.3 del Texto refundido catalán?",
+      "opciones": [
+        "Solo las de errores materiales, sin que en ningún caso pueda modificarse el fondo de los acuerdos",
+        "Cualquier rectificación aprobada por mayoría absoluta, incluido el fondo de los acuerdos",
+        "Solo las que proponga el Secretario",
+        "Ninguna: el acta se aprueba o se rechaza en su totalidad"
+      ],
+      "explicacion": "El artículo 110.3 del Texto refundido limita las rectificaciones del acta a los errores materiales y prohíbe en todo caso modificar el fondo de los acuerdos; el acta se vota en la sesión ordinaria siguiente."
+    },
+    "ca": {
+      "enunciado": "En sotmetre a votació l'acta de la sessió anterior, quines rectificacions es poden fer segons l'article 110.3 del Text refós català?",
+      "opciones": [
+        "Només les d'errors materials, sense que en cap cas es pugui modificar el fons dels acords",
+        "Qualsevol rectificació aprovada per majoria absoluta, inclòs el fons dels acords",
+        "Només les que proposi el secretari",
+        "Cap: l'acta s'aprova o es rebutja en la seva totalitat"
+      ],
+      "explicacion": "L'article 110.3 del Text refós limita les rectificacions de l'acta als errors materials i prohibeix en tot cas modificar el fons dels acords; l'acta es vota a la sessió ordinària següent."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "DOGC-f-2003-90008",
+      "norma": "Decreto Legislativo 2/2003, de 28 de abril, por el que se aprueba el Texto refundido de la Ley municipal y de régimen local de Cataluña",
+      "articulo": "110.3",
+      "url": "https://portaljuridic.gencat.cat/eli/es-ct/dlg/2003/04/28/2"
+    },
+    "cita": "en ningún caso puede modificar el fondo de los acuerdos, y las rectificaciones tienen que limitarse a los errores materiales.",
+    "origen": "ia"
+  }
+]

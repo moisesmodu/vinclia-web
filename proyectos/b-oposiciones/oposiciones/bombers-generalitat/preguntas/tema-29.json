@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t29-001",
+    "tema": 29,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el triaje START, ¿qué color se asigna a una víctima que puede caminar por sí misma?",
+      "opciones": [
+        "Rojo",
+        "Verde",
+        "Amarillo",
+        "Negro"
+      ],
+      "explicacion": "El primer paso del START es pedir que se desplacen quienes puedan caminar: estas víctimas se clasifican como verdes (leves o diferibles) y se reevalúan después."
+    },
+    "ca": {
+      "enunciado": "En el triatge START, quin color s'assigna a una víctima que pot caminar per si mateixa?",
+      "opciones": [
+        "Vermell",
+        "Verd",
+        "Groc",
+        "Negre"
+      ],
+      "explicacion": "El primer pas del START és demanar que es desplacin els qui puguin caminar: aquestes víctimes es classifiquen com a verdes (lleus o diferibles) i es reavaluen després."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-002",
+    "tema": 29,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Una víctima no respira y, tras abrirle la vía aérea, sigue sin respirar. Según el START, ¿qué categoría le corresponde?",
+      "opciones": [
+        "Negra (fallecida)",
+        "Roja (inmediata)",
+        "Amarilla (demorable)",
+        "Verde (leve)"
+      ],
+      "explicacion": "En el START, si la víctima no respira después de abrir la vía aérea se clasifica como negra y se pasa a la siguiente; en un incidente con múltiples víctimas no se inicia la RCP durante el triaje."
+    },
+    "ca": {
+      "enunciado": "Una víctima no respira i, després d'obrir-li la via aèria, continua sense respirar. Segons el START, quina categoria li correspon?",
+      "opciones": [
+        "Negra (morta)",
+        "Vermella (immediata)",
+        "Groga (demorable)",
+        "Verda (lleu)"
+      ],
+      "explicacion": "En el START, si la víctima no respira després d'obrir la via aèria es classifica com a negra i es passa a la següent; en un incident amb múltiples víctimes no s'inicia la RCP durant el triatge."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-003",
+    "tema": 29,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "En el triaje START, una víctima que no respiraba empieza a hacerlo al abrirle la vía aérea. ¿Qué color se le asigna?",
+      "opciones": [
+        "Verde",
+        "Amarillo",
+        "Negro",
+        "Rojo"
+      ],
+      "explicacion": "Si la víctima solo respira tras la apertura de la vía aérea, depende de esa maniobra para sobrevivir: se clasifica como roja (prioridad inmediata) y, si es posible, se deja en una posición que mantenga la vía aérea abierta."
+    },
+    "ca": {
+      "enunciado": "En el triatge START, una víctima que no respirava comença a fer-ho quan se li obre la via aèria. Quin color se li assigna?",
+      "opciones": [
+        "Verd",
+        "Groc",
+        "Negre",
+        "Vermell"
+      ],
+      "explicacion": "Si la víctima només respira després de l'obertura de la via aèria, depèn d'aquesta maniobra per sobreviure: es classifica com a vermella (prioritat immediata) i, si és possible, es deixa en una posició que mantingui la via aèria oberta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-004",
+    "tema": 29,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el START, una víctima que no camina y respira más de 30 veces por minuto se clasifica como...",
+      "opciones": [
+        "amarilla",
+        "verde",
+        "roja",
+        "negra"
+      ],
+      "explicacion": "Una frecuencia respiratoria superior a 30 por minuto es un criterio de gravedad del START: la víctima se clasifica directamente como roja, sin seguir valorando la circulación ni el estado mental."
+    },
+    "ca": {
+      "enunciado": "Segons el START, una víctima que no camina i respira més de 30 vegades per minut es classifica com a...",
+      "opciones": [
+        "groga",
+        "verda",
+        "vermella",
+        "negra"
+      ],
+      "explicacion": "Una freqüència respiratòria superior a 30 per minut és un criteri de gravetat del START: la víctima es classifica directament com a vermella, sense continuar valorant la circulació ni l'estat mental."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-005",
+    "tema": 29,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el START, una víctima que no camina y respira 20 veces por minuto presenta un relleno capilar superior a 2 segundos. ¿Cómo se clasifica?",
+      "opciones": [
+        "Amarilla",
+        "Roja",
+        "Verde",
+        "Negra"
+      ],
+      "explicacion": "Con una respiración por debajo de 30 por minuto se valora la circulación: un relleno capilar superior a 2 segundos (o la ausencia de pulso radial) indica mala perfusión y la víctima es roja. Se aprovecha para controlar las hemorragias graves."
+    },
+    "ca": {
+      "enunciado": "En el START, una víctima que no camina i respira 20 vegades per minut presenta un ompliment capil·lar superior a 2 segons. Com es classifica?",
+      "opciones": [
+        "Groga",
+        "Vermella",
+        "Verda",
+        "Negra"
+      ],
+      "explicacion": "Amb una respiració per sota de 30 per minut es valora la circulació: un ompliment capil·lar superior a 2 segons (o l'absència de pols radial) indica mala perfusió i la víctima és vermella. S'aprofita per controlar les hemorràgies greus."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-006",
+    "tema": 29,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una víctima no camina, respira 18 veces por minuto, tiene un relleno capilar inferior a 2 segundos y obedece órdenes sencillas. Según el START, es...",
+      "opciones": [
+        "roja",
+        "verde",
+        "negra",
+        "amarilla"
+      ],
+      "explicacion": "Si la víctima no camina pero respira, perfunde y obedece órdenes sencillas con normalidad, se clasifica como amarilla (urgente pero demorable). Si no obedeciera órdenes, sería roja."
+    },
+    "ca": {
+      "enunciado": "Una víctima no camina, respira 18 vegades per minut, té un ompliment capil·lar inferior a 2 segons i obeeix ordres senzilles. Segons el START, és...",
+      "opciones": [
+        "vermella",
+        "verda",
+        "negra",
+        "groga"
+      ],
+      "explicacion": "Si la víctima no camina però respira, perfon i obeeix ordres senzilles amb normalitat, es classifica com a groga (urgent però demorable). Si no obeís ordres, seria vermella."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-007",
+    "tema": 29,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál es la finalidad principal del triaje en un incidente con múltiples víctimas?",
+      "opciones": [
+        "Clasificar a las víctimas según su prioridad de asistencia y evacuación",
+        "Identificar a las víctimas y comunicarlo a sus familias",
+        "Tratar por completo a cada víctima antes de pasar a la siguiente",
+        "Determinar las causas del incidente para la investigación posterior"
+      ],
+      "explicacion": "Cuando las víctimas superan los recursos disponibles, el triaje las clasifica rápidamente por gravedad para asignar la asistencia y la evacuación de forma que se salve al mayor número posible de personas."
+    },
+    "ca": {
+      "enunciado": "Quina és la finalitat principal del triatge en un incident amb múltiples víctimes?",
+      "opciones": [
+        "Classificar les víctimes segons la seva prioritat d'assistència i evacuació",
+        "Identificar les víctimes i comunicar-ho a les seves famílies",
+        "Tractar completament cada víctima abans de passar a la següent",
+        "Determinar les causes de l'incident per a la investigació posterior"
+      ],
+      "explicacion": "Quan les víctimes superen els recursos disponibles, el triatge les classifica ràpidament per gravetat per assignar l'assistència i l'evacuació de manera que se salvi el nombre més gran possible de persones."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-008",
+    "tema": 29,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Durante el triaje START, ¿qué maniobras realiza el interviniente?",
+      "opciones": [
+        "Inicia la RCP en las víctimas que no respiran",
+        "Inmoviliza las fracturas antes de clasificar a la víctima",
+        "Abre la vía aérea y controla las hemorragias externas graves",
+        "Administra oxígeno a todas las víctimas clasificadas como rojas"
+      ],
+      "explicacion": "El START es un triaje rápido: solo se realizan maniobras salvadoras sencillas, como abrir la vía aérea, colocar en posición lateral o controlar una hemorragia grave por compresión. La RCP y las inmovilizaciones retrasarían la clasificación del resto."
+    },
+    "ca": {
+      "enunciado": "Durant el triatge START, quines maniobres fa l'intervinent?",
+      "opciones": [
+        "Inicia la RCP en les víctimes que no respiren",
+        "Immobilitza les fractures abans de classificar la víctima",
+        "Obre la via aèria i controla les hemorràgies externes greus",
+        "Administra oxigen a totes les víctimes classificades com a vermelles"
+      ],
+      "explicacion": "El START és un triatge ràpid: només es fan maniobres salvadores senzilles, com obrir la via aèria, col·locar en posició lateral o controlar una hemorràgia greu per compressió. La RCP i les immobilitzacions endarreririen la classificació de la resta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-009",
+    "tema": 29,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Por qué se dice que el triaje es un proceso dinámico?",
+      "opciones": [
+        "Porque solo puede hacerlo personal médico",
+        "Porque debe repetirse, ya que el estado de las víctimas puede cambiar",
+        "Porque el color asignado no puede modificarse una vez colocado",
+        "Porque se hace únicamente a la llegada al hospital receptor"
+      ],
+      "explicacion": "El estado de una víctima puede empeorar o mejorar, por lo que la clasificación se repite en cada escalón asistencial (zona de rescate, puesto médico avanzado, evacuación) y la tarjeta se modifica si es necesario."
+    },
+    "ca": {
+      "enunciado": "Per què es diu que el triatge és un procés dinàmic?",
+      "opciones": [
+        "Perquè només el pot fer personal mèdic",
+        "Perquè s'ha de repetir, ja que l'estat de les víctimes pot canviar",
+        "Perquè el color assignat no es pot modificar un cop col·locat",
+        "Perquè es fa únicament a l'arribada a l'hospital receptor"
+      ],
+      "explicacion": "L'estat d'una víctima pot empitjorar o millorar, per la qual cosa la classificació es repeteix a cada esglaó assistencial (zona de rescat, lloc mèdic avançat, evacuació) i la targeta es modifica si cal."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t29-010",
+    "tema": 29,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo se denomina el lugar seguro y próximo al foco donde se reúnen provisionalmente las víctimas rescatadas antes de trasladarlas al puesto médico avanzado?",
+      "opciones": [
+        "Nido de heridos",
+        "Área base",
+        "Puesto de mando avanzado",
+        "Centro de recepción de evacuados"
+      ],
+      "explicacion": "El nido de heridos es un punto de concentración provisional cercano a la zona del siniestro y protegido de sus riesgos, desde el que las víctimas pasan al puesto médico avanzado. El área base reúne los medios de reserva y el puesto de mando dirige la intervención."
+    },
+    "ca": {
+      "enunciado": "Com s'anomena el lloc segur i proper al focus on es reuneixen provisionalment les víctimes rescatades abans de traslladar-les al lloc mèdic avançat?",
+      "opciones": [
+        "Niu de ferits",
+        "Àrea base",
+        "Lloc de comandament avançat",
+        "Centre de recepció d'evacuats"
+      ],
+      "explicacion": "El niu de ferits és un punt de concentració provisional proper a la zona del sinistre i protegit dels seus riscos, des del qual les víctimes passen al lloc mèdic avançat. L'àrea base reuneix els mitjans de reserva i el lloc de comandament dirigeix la intervenció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

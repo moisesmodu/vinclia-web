@@ -1,0 +1,772 @@
+[
+  {
+    "id": "tcai-t03-001",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley catalana 21/2000, ¿a quién corresponde garantizar el cumplimiento del derecho del paciente a la información asistencial?",
+      "opciones": [
+        "Al médico responsable del paciente, con la corresponsabilidad de los profesionales asistenciales que le atienden",
+        "Exclusivamente a la dirección del centro sanitario",
+        "Al servicio de atención al usuario del centro",
+        "A los familiares del paciente, en todo caso"
+      ],
+      "explicacion": "El artículo 2.3 encarga al médico responsable garantizar el derecho a la información, y añade que también asumen responsabilidad los profesionales asistenciales que atienden al paciente o le aplican una técnica o un procedimiento concreto."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei catalana 21/2000, a qui correspon garantir el compliment del dret del pacient a la informació assistencial?",
+      "opciones": [
+        "Al metge responsable del pacient, amb la corresponsabilitat dels professionals assistencials que l'atenen",
+        "Exclusivament a la direcció del centre sanitari",
+        "Al servei d'atenció a l'usuari del centre",
+        "Als familiars del pacient, en tot cas"
+      ],
+      "explicacion": "L'article 2.3 encarrega al metge responsable garantir el dret a la informació, i afegeix que també n'assumeixen responsabilitat els professionals assistencials que atenen el pacient o li apliquen una tècnica o un procediment concret."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "2.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a2"
+    },
+    "cita": "Corresponde al médico responsable del paciente garantizar el cumplimiento del derecho a la información. También deben asumir responsabilidad en el proceso de información los profesionales asistenciales que le atienden",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-002",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Quién es el titular del derecho a la información asistencial?",
+      "opciones": [
+        "La familia del paciente, en primer lugar",
+        "El paciente; las personas vinculadas a él son informadas en la medida en que él lo permita",
+        "El representante legal del paciente, en todo caso",
+        "El médico de familia del paciente"
+      ],
+      "explicacion": "El artículo 3.1 de la Ley 21/2000 establece que el titular es el paciente y que se informa a las personas vinculadas en la medida en que este lo permita expresa o tácitamente."
+    },
+    "ca": {
+      "enunciado": "Qui és el titular del dret a la informació assistencial?",
+      "opciones": [
+        "La família del pacient, en primer lloc",
+        "El pacient; les persones que hi estan vinculades són informades en la mesura que ell ho permeti",
+        "El representant legal del pacient, en tot cas",
+        "El metge de família del pacient"
+      ],
+      "explicacion": "L'article 3.1 de la Llei 21/2000 estableix que el titular és el pacient i que s'informa les persones vinculades en la mesura que aquest ho permeti expressament o tàcitament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a3"
+    },
+    "cita": "El titular del derecho a la información es el paciente. Debe informarse a las personas a él vinculadas en la medida en que éste lo permita expresa o tácitamente.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-003",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley catalana 21/2000, cuando un menor no es competente para comprender el alcance de una intervención, su representante da el consentimiento después de haber escuchado en todo caso la opinión del menor si este es mayor de:",
+      "opciones": [
+        "Diez años",
+        "Catorce años",
+        "Dieciséis años",
+        "Doce años"
+      ],
+      "explicacion": "El artículo 7.2.d) obliga a escuchar en todo caso la opinión del menor mayor de doce años; los menores emancipados y los adolescentes de más de dieciséis años dan personalmente su consentimiento."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei catalana 21/2000, quan un menor no és competent per comprendre l'abast d'una intervenció, el seu representant dona el consentiment després d'haver escoltat en tot cas l'opinió del menor si aquest és major de:",
+      "opciones": [
+        "Deu anys",
+        "Catorze anys",
+        "Setze anys",
+        "Dotze anys"
+      ],
+      "explicacion": "L'article 7.2.d) obliga a escoltar en tot cas l'opinió del menor de més de dotze anys; els menors emancipats i els adolescents de més de setze anys donen personalment el consentiment."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "7.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a7"
+    },
+    "cita": "el consentimiento debe darlo el representante del menor, después de haber escuchado, en todo caso, su opinión si es mayor de doce años.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-004",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Si el documento de voluntades anticipadas se formaliza ante testigos (Ley catalana 21/2000), ¿qué se exige?",
+      "opciones": [
+        "Dos testigos mayores de edad, sin otros requisitos",
+        "Tres testigos, que deben ser todos familiares del otorgante",
+        "Cinco testigos, de los que uno debe ser profesional sanitario",
+        "Tres testigos mayores de edad y con plena capacidad de obrar, de los que al menos dos no sean parientes hasta el segundo grado ni tengan relación patrimonial con el otorgante"
+      ],
+      "explicacion": "El artículo 8.2.b) exige tres testigos mayores de edad con plena capacidad de obrar; al menos dos no pueden tener parentesco hasta el segundo grado ni vínculo patrimonial con el otorgante. Ante notario no hacen falta testigos."
+    },
+    "ca": {
+      "enunciado": "Si el document de voluntats anticipades es formalitza davant testimonis (Llei catalana 21/2000), què s'exigeix?",
+      "opciones": [
+        "Dos testimonis majors d'edat, sense altres requisits",
+        "Tres testimonis, que han de ser tots familiars de l'atorgant",
+        "Cinc testimonis, dels quals un ha de ser professional sanitari",
+        "Tres testimonis majors d'edat i amb plena capacitat d'obrar, dels quals com a mínim dos no siguin parents fins al segon grau ni tinguin relació patrimonial amb l'atorgant"
+      ],
+      "explicacion": "L'article 8.2.b) exigeix tres testimonis majors d'edat amb plena capacitat d'obrar; com a mínim dos no poden tenir parentiu fins al segon grau ni vincle patrimonial amb l'atorgant. Davant notari no calen testimonis."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "8.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a8"
+    },
+    "cita": "b) Ante tres testigos mayores de edad y con plena capacidad de obrar, de los cuales dos, como mínimo, no deben tener relación de parentesco hasta el segundo grado ni estar vinculados por relación patrimonial con el otorgante.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-005",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley catalana 21/2000, la integración de la documentación clínica de cada paciente debe hacerse, como mínimo:",
+      "opciones": [
+        "En el ámbito de cada centro, donde debe existir una historia clínica única por paciente",
+        "En el ámbito de cada servicio o unidad, con una historia por especialidad",
+        "En el ámbito de cada región sanitaria",
+        "Solo cuando el paciente lo solicite por escrito"
+      ],
+      "explicacion": "El artículo 9.1 exige integrar la documentación clínica como mínimo en el ámbito de cada centro, con una historia clínica única para cada paciente."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei catalana 21/2000, la integració de la documentació clínica de cada pacient s'ha de fer, com a mínim:",
+      "opciones": [
+        "En l'àmbit de cada centre, on ha d'haver-hi una història clínica única per pacient",
+        "En l'àmbit de cada servei o unitat, amb una història per especialitat",
+        "En l'àmbit de cada regió sanitària",
+        "Només quan el pacient ho sol·liciti per escrit"
+      ],
+      "explicacion": "L'article 9.1 exigeix integrar la documentació clínica com a mínim en l'àmbit de cada centre, amb una història clínica única per a cada pacient."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "9.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a9"
+    },
+    "cita": "Esta integración debe hacerse, como mínimo, en el ámbito de cada centro, donde debe existir una historia clínica única para cada paciente.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-006",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El personal que se ocupa de tareas de administración y gestión de un centro sanitario, ¿a qué datos de la historia clínica puede acceder?",
+      "opciones": [
+        "Solo a los datos relacionados con sus funciones de administración y gestión",
+        "A toda la historia clínica, sin limitación",
+        "A ningún dato de la historia clínica",
+        "Solo a los datos clínicos, nunca a los de identificación"
+      ],
+      "explicacion": "El artículo 11.4 de la Ley 21/2000 limita el acceso del personal de administración y gestión a los datos de la historia clínica relacionados con esas funciones."
+    },
+    "ca": {
+      "enunciado": "El personal que s'ocupa de tasques d'administració i gestió d'un centre sanitari, a quines dades de la història clínica pot accedir?",
+      "opciones": [
+        "Només a les dades relacionades amb les seves funcions d'administració i gestió",
+        "A tota la història clínica, sense limitació",
+        "A cap dada de la història clínica",
+        "Només a les dades clíniques, mai a les d'identificació"
+      ],
+      "explicacion": "L'article 11.4 de la Llei 21/2000 limita l'accés del personal d'administració i gestió a les dades de la història clínica relacionades amb aquestes funcions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "11.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a11"
+    },
+    "cita": "El personal que se ocupa de las tareas de administración y gestión de los centros sanitarios puede acceder sólo a los datos de la historia clínica relacionados con las mencionadas funciones.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-007",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Un técnico en cuidados auxiliares de enfermería que, en el ejercicio de sus funciones, accede a datos de la historia clínica de un paciente:",
+      "opciones": [
+        "Queda sujeto al deber de guardar secreto sobre esos datos",
+        "Puede comentarlos con los familiares del paciente si lo considera útil",
+        "Solo debe guardar secreto si el paciente lo pide expresamente",
+        "Queda liberado del secreto una vez dado el alta al paciente"
+      ],
+      "explicacion": "El artículo 11.6 de la Ley 21/2000 sujeta al deber de secreto a todo el personal que accede, en uso de sus competencias, a cualquier dato de la historia clínica."
+    },
+    "ca": {
+      "enunciado": "Un tècnic en cures auxiliars d'infermeria que, en l'exercici de les seves funcions, accedeix a dades de la història clínica d'un pacient:",
+      "opciones": [
+        "Queda subjecte al deure de guardar secret sobre aquestes dades",
+        "Les pot comentar amb els familiars del pacient si ho considera útil",
+        "Només ha de guardar secret si el pacient ho demana expressament",
+        "Queda alliberat del secret un cop donada l'alta al pacient"
+      ],
+      "explicacion": "L'article 11.6 de la Llei 21/2000 subjecta al deure de secret tot el personal que accedeix, en ús de les seves competències, a qualsevol dada de la història clínica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "11.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a11"
+    },
+    "cita": "Aquel personal que accede en uso de sus competencias a cualquier clase de datos de la historia clínica queda sujeto al deber de guardar el secreto de los mismos.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-008",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley catalana 21/2000, las hojas de consentimiento informado y los informes de alta deben conservarse, como mínimo, durante:",
+      "opciones": [
+        "Cinco años desde la fecha de alta de cada proceso asistencial",
+        "Diez años desde la primera visita del paciente",
+        "Toda la vida del paciente y cinco años más",
+        "Quince años desde la fecha de alta de cada proceso asistencial"
+      ],
+      "explicacion": "El artículo 12.4 obliga a conservar quince años desde el alta, entre otros documentos, las hojas de consentimiento informado y los informes de alta; el resto de la documentación puede destruirse a los cinco años (art. 12.6)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei catalana 21/2000, els fulls de consentiment informat i els informes d'alta s'han de conservar, com a mínim, durant:",
+      "opciones": [
+        "Cinc anys des de la data d'alta de cada procés assistencial",
+        "Deu anys des de la primera visita del pacient",
+        "Tota la vida del pacient i cinc anys més",
+        "Quinze anys des de la data d'alta de cada procés assistencial"
+      ],
+      "explicacion": "L'article 12.4 obliga a conservar quinze anys des de l'alta, entre altres documents, els fulls de consentiment informat i els informes d'alta; la resta de la documentació es pot destruir als cinc anys (art. 12.6)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "12.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a12"
+    },
+    "cita": "como mínimo durante quince años desde la fecha de alta de cada proceso asistencial, la siguiente documentación: … a) Las hojas de consentimiento informado. … b) Los informes de alta.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-009",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El derecho del paciente a acceder a su historia clínica tiene un límite relativo a los profesionales que la han elaborado. ¿Cuál?",
+      "opciones": [
+        "Los profesionales deben autorizar por escrito cada acceso del paciente",
+        "Los profesionales pueden invocar la reserva de sus observaciones, apreciaciones o anotaciones subjetivas",
+        "El paciente solo puede acceder a lo escrito por el médico responsable",
+        "El acceso solo es posible tras la muerte del profesional que redactó la historia"
+      ],
+      "explicacion": "El artículo 13.2 de la Ley 21/2000 establece que el acceso no puede perjudicar el derecho de terceros a la confidencialidad ni el de los profesionales a reservarse sus observaciones, apreciaciones o anotaciones subjetivas."
+    },
+    "ca": {
+      "enunciado": "El dret del pacient a accedir a la seva història clínica té un límit relatiu als professionals que l'han elaborada. Quin?",
+      "opciones": [
+        "Els professionals han d'autoritzar per escrit cada accés del pacient",
+        "Els professionals poden invocar la reserva de les seves observacions, apreciacions o anotacions subjectives",
+        "El pacient només pot accedir al que ha escrit el metge responsable",
+        "L'accés només és possible després de la mort del professional que va redactar la història"
+      ],
+      "explicacion": "L'article 13.2 de la Llei 21/2000 estableix que l'accés no pot perjudicar el dret de tercers a la confidencialitat ni el dels professionals a reservar-se les seves observacions, apreciacions o anotacions subjectives."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Llei 21/2000, de 29 de desembre, sobre els drets d'informació concernents a la salut i l'autonomia del pacient, i la documentació clínica",
+      "articulo": "13.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a13"
+    },
+    "cita": "ni del derecho de los profesionales que han intervenido en su elaboración, que pueden invocar la reserva de sus observaciones, apreciaciones o anotaciones subjetivas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-010",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La Ley 41/2002 define el consentimiento informado como:",
+      "opciones": [
+        "La firma del paciente en cualquier documento que le presente el centro sanitario",
+        "La autorización que el médico responsable da al paciente para recibir un tratamiento",
+        "La conformidad libre, voluntaria y consciente del paciente, manifestada en pleno uso de sus facultades tras recibir la información adecuada",
+        "La declaración escrita de un médico que da fe del estado de salud de una persona"
+      ],
+      "explicacion": "Es la definición literal del artículo 3. La declaración escrita de un médico sobre el estado de salud de una persona es, según el mismo artículo, el certificado médico."
+    },
+    "ca": {
+      "enunciado": "La Llei 41/2002 defineix el consentiment informat com:",
+      "opciones": [
+        "La signatura del pacient en qualsevol document que li presenti el centre sanitari",
+        "L'autorització que el metge responsable dona al pacient per rebre un tractament",
+        "La conformitat lliure, voluntària i conscient del pacient, manifestada en ple ús de les seves facultats després de rebre la informació adequada",
+        "La declaració escrita d'un metge que dona fe de l'estat de salut d'una persona"
+      ],
+      "explicacion": "És la definició literal de l'article 3. La declaració escrita d'un metge sobre l'estat de salut d'una persona és, segons el mateix article, el certificat mèdic."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a3"
+    },
+    "cita": "Consentimiento informado: la conformidad libre, voluntaria y consciente de un paciente, manifestada en el pleno uso de sus facultades después de recibir la información adecuada, para que tenga lugar una actuación que afecta a su salud.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-011",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según las definiciones de la Ley 41/2002, la persona que utiliza los servicios sanitarios de educación y promoción de la salud, de prevención de enfermedades y de información sanitaria es el:",
+      "opciones": [
+        "Paciente",
+        "Beneficiario",
+        "Usuario",
+        "Asegurado"
+      ],
+      "explicacion": "El artículo 3 llama usuario a quien utiliza esos servicios; paciente es la persona que requiere asistencia sanitaria y está sometida a cuidados profesionales para mantener o recuperar su salud."
+    },
+    "ca": {
+      "enunciado": "Segons les definicions de la Llei 41/2002, la persona que utilitza els serveis sanitaris d'educació i promoció de la salut, de prevenció de malalties i d'informació sanitària és l':",
+      "opciones": [
+        "Pacient",
+        "Beneficiari",
+        "Usuari",
+        "Assegurat"
+      ],
+      "explicacion": "L'article 3 anomena usuari qui utilitza aquests serveis; pacient és la persona que requereix assistència sanitària i està sotmesa a cures professionals per mantenir o recuperar la salut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a3"
+    },
+    "cita": "Usuario: la persona que utiliza los servicios sanitarios de educación y promoción de la salud, de prevención de enfermedades y de información sanitaria.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-012",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, ¿cómo se proporciona, como regla general, la información asistencial al paciente?",
+      "opciones": [
+        "Siempre por escrito y firmada por el paciente",
+        "Por escrito, solo a petición de los familiares",
+        "Mediante un folleto informativo general del centro",
+        "Verbalmente, dejando constancia en la historia clínica"
+      ],
+      "explicacion": "El artículo 4.1 dispone que la información se proporciona, como regla general, verbalmente y dejando constancia en la historia clínica; comprende como mínimo la finalidad, la naturaleza, los riesgos y las consecuencias de la intervención."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, com es proporciona, com a regla general, la informació assistencial al pacient?",
+      "opciones": [
+        "Sempre per escrit i signada pel pacient",
+        "Per escrit, només a petició dels familiars",
+        "Mitjançant un fullet informatiu general del centre",
+        "Verbalment, deixant-ne constància a la història clínica"
+      ],
+      "explicacion": "L'article 4.1 disposa que la informació es proporciona, com a regla general, verbalment i deixant-ne constància a la història clínica; comprèn com a mínim la finalitat, la naturalesa, els riscos i les conseqüències de la intervenció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "4.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a4"
+    },
+    "cita": "La información, que como regla general se proporcionará verbalmente dejando constancia en la historia clínica, comprende, como mínimo, la finalidad y la naturaleza de cada intervención, sus riesgos y sus consecuencias.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-013",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué se entiende por «necesidad terapéutica» en la Ley 41/2002?",
+      "opciones": [
+        "La obligación de aplicar un tratamiento aunque el paciente se niegue",
+        "La posibilidad de dar el alta forzosa a quien rechaza el tratamiento",
+        "El derecho del paciente a no ser informado de su diagnóstico",
+        "La facultad del médico para actuar sin informar antes al paciente cuando, por razones objetivas, conocer su situación pueda perjudicar gravemente su salud"
+      ],
+      "explicacion": "El artículo 5.4 define así la necesidad terapéutica; en ese caso el médico debe dejar constancia razonada en la historia clínica y comunicar su decisión a las personas vinculadas al paciente. El derecho a no ser informado es otra figura, que parte de la voluntad del paciente."
+    },
+    "ca": {
+      "enunciado": "Què s'entén per «necessitat terapèutica» a la Llei 41/2002?",
+      "opciones": [
+        "L'obligació d'aplicar un tractament encara que el pacient s'hi negui",
+        "La possibilitat de donar l'alta forçosa a qui rebutja el tractament",
+        "El dret del pacient a no ser informat del seu diagnòstic",
+        "La facultat del metge per actuar sense informar abans el pacient quan, per raons objectives, conèixer la seva situació pugui perjudicar greument la seva salut"
+      ],
+      "explicacion": "L'article 5.4 defineix així la necessitat terapèutica; en aquest cas el metge ha de deixar constància raonada a la història clínica i comunicar la decisió a les persones vinculades al pacient. El dret a no ser informat és una altra figura, que parteix de la voluntat del pacient."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "5.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a5"
+    },
+    "cita": "Se entenderá por necesidad terapéutica la facultad del médico para actuar profesionalmente sin informar antes al paciente, cuando por razones objetivas el conocimiento de su propia situación pueda perjudicar su salud de manera grave.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-014",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, el consentimiento informado:",
+      "opciones": [
+        "Debe prestarse siempre por escrito ante dos testigos",
+        "Es verbal por regla general y se presta por escrito en intervenciones quirúrgicas y procedimientos invasores, entre otros casos",
+        "Solo es necesario en intervenciones quirúrgicas",
+        "Lo presta siempre la familia cuando el paciente está hospitalizado"
+      ],
+      "explicacion": "El artículo 8.2 fija como regla general el consentimiento verbal y exige la forma escrita en intervenciones quirúrgicas, procedimientos diagnósticos y terapéuticos invasores y procedimientos con riesgos notorios y previsibles."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, el consentiment informat:",
+      "opciones": [
+        "S'ha de prestar sempre per escrit davant dos testimonis",
+        "És verbal per regla general i es presta per escrit en intervencions quirúrgiques i procediments invasius, entre altres casos",
+        "Només és necessari en intervencions quirúrgiques",
+        "El presta sempre la família quan el pacient està hospitalitzat"
+      ],
+      "explicacion": "L'article 8.2 fixa com a regla general el consentiment verbal i exigeix la forma escrita en intervencions quirúrgiques, procediments diagnòstics i terapèutics invasius i procediments amb riscos notoris i previsibles."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "8.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a8"
+    },
+    "cita": "El consentimiento será verbal por regla general. … Sin embargo, se prestará por escrito en los casos siguientes: intervención quirúrgica, procedimientos diagnósticos y terapéuticos invasores",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-015",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, en el caso de un paciente de 17 años, capaz y no emancipado, que va a someterse a una intervención ordinaria:",
+      "opciones": [
+        "El consentimiento lo dan siempre sus padres, tras oír al menor",
+        "No cabe el consentimiento por representación; lo presta el propio menor",
+        "Deben consentir conjuntamente el menor y sus padres",
+        "Debe autorizar la intervención el Ministerio Fiscal"
+      ],
+      "explicacion": "El artículo 9.4 excluye el consentimiento por representación para los mayores de 16 años y los emancipados capaces. Solo si la actuación es de grave riesgo para su vida o salud, a criterio del facultativo, consiente el representante legal, oída la opinión del menor."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, en el cas d'un pacient de 17 anys, capaç i no emancipat, que s'ha de sotmetre a una intervenció ordinària:",
+      "opciones": [
+        "El consentiment el donen sempre els pares, després d'escoltar el menor",
+        "No hi cap el consentiment per representació; el presta el mateix menor",
+        "Han de consentir conjuntament el menor i els pares",
+        "Ha d'autoritzar la intervenció el Ministeri Fiscal"
+      ],
+      "explicacion": "L'article 9.4 exclou el consentiment per representació per als majors de 16 anys i els emancipats capaços. Només si l'actuació és de risc greu per a la seva vida o salut, a criteri del facultatiu, consent el representant legal, un cop escoltada l'opinió del menor."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "9.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a9"
+    },
+    "cita": "Cuando se trate de menores emancipados o mayores de 16 años que no se encuentren en los supuestos b) y c) del apartado anterior, no cabe prestar el consentimiento por representación.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-016",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según los principios básicos de la Ley 41/2002, si un paciente se niega a un tratamiento:",
+      "opciones": [
+        "Su negativa no tiene efecto si el médico considera el tratamiento necesario",
+        "Tiene derecho a hacerlo, salvo en los casos determinados en la ley, y su negativa debe constar por escrito",
+        "Basta con que lo manifieste verbalmente, sin dejar constancia",
+        "Debe ser dado de alta forzosa de inmediato"
+      ],
+      "explicacion": "El artículo 2.4 reconoce el derecho a negarse al tratamiento, excepto en los casos que determine la ley, y exige que la negativa conste por escrito."
+    },
+    "ca": {
+      "enunciado": "Segons els principis bàsics de la Llei 41/2002, si un pacient es nega a un tractament:",
+      "opciones": [
+        "La negativa no té efecte si el metge considera el tractament necessari",
+        "Té dret a fer-ho, llevat dels casos que determini la llei, i la negativa ha de constar per escrit",
+        "N'hi ha prou que ho manifesti verbalment, sense deixar-ne constància",
+        "Se li ha de donar l'alta forçosa immediatament"
+      ],
+      "explicacion": "L'article 2.4 reconeix el dret a negar-se al tractament, excepte en els casos que determini la llei, i exigeix que la negativa consti per escrit."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "2.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a2"
+    },
+    "cita": "Todo paciente o usuario tiene derecho a negarse al tratamiento, excepto en los casos determinados en la Ley. Su negativa al tratamiento constará por escrito.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-017",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, ¿durante cuánto tiempo mínimo deben conservar los centros sanitarios la documentación clínica?",
+      "opciones": [
+        "Dos años desde la última visita del paciente",
+        "Diez años desde la apertura de la historia clínica",
+        "Cinco años desde la fecha del alta de cada proceso asistencial",
+        "Veinte años desde la fecha de nacimiento del paciente"
+      ],
+      "explicacion": "El artículo 17.1 fija un mínimo de cinco años desde el alta de cada proceso asistencial, aunque no necesariamente en el soporte original. La ley catalana 21/2000 eleva a quince años el plazo para determinados documentos."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, durant quant de temps mínim han de conservar els centres sanitaris la documentació clínica?",
+      "opciones": [
+        "Dos anys des de l'última visita del pacient",
+        "Deu anys des de l'obertura de la història clínica",
+        "Cinc anys des de la data d'alta de cada procés assistencial",
+        "Vint anys des de la data de naixement del pacient"
+      ],
+      "explicacion": "L'article 17.1 fixa un mínim de cinc anys des de l'alta de cada procés assistencial, encara que no necessàriament en el suport original. La llei catalana 21/2000 eleva a quinze anys el termini per a determinats documents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "17.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a17"
+    },
+    "cita": "como mínimo, cinco años contados desde la fecha del alta de cada proceso asistencial.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-018",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Si un paciente no acepta el tratamiento prescrito y tampoco firma el alta voluntaria, según la Ley 41/2002:",
+      "opciones": [
+        "El médico responsable puede darle el alta forzosa por sí solo",
+        "El paciente debe permanecer ingresado hasta que acepte el tratamiento",
+        "La dirección del centro, a propuesta del médico responsable, puede disponer el alta forzosa",
+        "El caso se remite directamente al Ministerio Fiscal para que decida"
+      ],
+      "explicacion": "El artículo 21.1 prevé proponer el alta voluntaria y, si no se firma, que la dirección del centro, a propuesta del médico responsable, pueda disponer el alta forzosa. No procede si hay tratamientos alternativos, aunque sean paliativos, que el centro preste y el paciente acepte."
+    },
+    "ca": {
+      "enunciado": "Si un pacient no accepta el tractament prescrit i tampoc no signa l'alta voluntària, segons la Llei 41/2002:",
+      "opciones": [
+        "El metge responsable li pot donar l'alta forçosa tot sol",
+        "El pacient ha de romandre ingressat fins que accepti el tractament",
+        "La direcció del centre, a proposta del metge responsable, pot disposar l'alta forçosa",
+        "El cas es remet directament al Ministeri Fiscal perquè decideixi"
+      ],
+      "explicacion": "L'article 21.1 preveu proposar l'alta voluntària i, si no se signa, que la direcció del centre, a proposta del metge responsable, pugui disposar l'alta forçosa. No escau si hi ha tractaments alternatius, encara que siguin pal·liatius, que el centre presti i el pacient accepti."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "21.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a21"
+    },
+    "cita": "En caso de no aceptar el tratamiento prescrito, se propondrá al paciente o usuario la firma del alta voluntaria. Si no la firmara, la dirección del centro sanitario, a propuesta del médico responsable, podrá disponer el alta forzosa",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-019",
+    "tema": 3,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley Orgánica 3/2018, el tratamiento de los datos personales de un menor puede fundarse en su propio consentimiento cuando sea mayor de:",
+      "opciones": [
+        "Doce años",
+        "Catorce años",
+        "Dieciséis años",
+        "Dieciocho años"
+      ],
+      "explicacion": "El artículo 7.1 fija la edad en catorce años; por debajo, el tratamiento basado en el consentimiento solo es lícito si consta el del titular de la patria potestad o tutela."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei orgànica 3/2018, el tractament de les dades personals d'un menor es pot fonamentar en el seu propi consentiment quan sigui major de:",
+      "opciones": [
+        "Dotze anys",
+        "Catorze anys",
+        "Setze anys",
+        "Divuit anys"
+      ],
+      "explicacion": "L'article 7.1 fixa l'edat en catorze anys; per sota, el tractament basat en el consentiment només és lícit si consta el del titular de la pàtria potestat o tutela."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "7.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a7"
+    },
+    "cita": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de catorce años.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-020",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El deber de confidencialidad que la Ley Orgánica 3/2018 impone a quienes intervienen en el tratamiento de datos:",
+      "opciones": [
+        "Se mantiene aunque haya finalizado su relación con el responsable o encargado del tratamiento",
+        "Se extingue al finalizar la relación laboral",
+        "Dura solo dos años después de finalizar la relación",
+        "Sustituye y deja sin efecto el secreto profesional"
+      ],
+      "explicacion": "El artículo 5.3 mantiene el deber aunque haya terminado la relación. Además, según el apartado 2, ese deber es complementario del secreto profesional, no lo sustituye."
+    },
+    "ca": {
+      "enunciado": "El deure de confidencialitat que la Llei orgànica 3/2018 imposa als qui intervenen en el tractament de dades:",
+      "opciones": [
+        "Es manté encara que hagi finalitzat la relació amb el responsable o encarregat del tractament",
+        "S'extingeix en finalitzar la relació laboral",
+        "Dura només dos anys després de finalitzar la relació",
+        "Substitueix i deixa sense efecte el secret professional"
+      ],
+      "explicacion": "L'article 5.3 manté el deure encara que hagi acabat la relació. A més, segons l'apartat 2, aquest deure és complementari del secret professional, no el substitueix."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "5.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a5"
+    },
+    "cita": "Las obligaciones establecidas en los apartados anteriores se mantendrán aun cuando hubiese finalizado la relación del obligado con el responsable o encargado del tratamiento.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-021",
+    "tema": 3,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley Orgánica 3/2018, las personas vinculadas a un fallecido por razones familiares o de hecho no pueden solicitar el acceso a sus datos personales cuando:",
+      "opciones": [
+        "La persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley",
+        "Haya transcurrido un año desde el fallecimiento",
+        "No sean herederos testamentarios",
+        "Los datos sean de salud, en todo caso"
+      ],
+      "explicacion": "El artículo 3.1 permite a familiares, personas vinculadas y herederos pedir el acceso, la rectificación o la supresión, salvo que el fallecido lo hubiese prohibido expresamente o lo establezca una ley; la prohibición no afecta al acceso de los herederos a los datos patrimoniales."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei orgànica 3/2018, les persones vinculades a un difunt per raons familiars o de fet no poden sol·licitar l'accés a les seves dades personals quan:",
+      "opciones": [
+        "La persona difunta ho hagués prohibit expressament o així ho estableixi una llei",
+        "Hagi transcorregut un any des de la defunció",
+        "No siguin hereus testamentaris",
+        "Les dades siguin de salut, en tot cas"
+      ],
+      "explicacion": "L'article 3.1 permet a familiars, persones vinculades i hereus demanar l'accés, la rectificació o la supressió, llevat que el difunt ho hagués prohibit expressament o ho estableixi una llei; la prohibició no afecta l'accés dels hereus a les dades patrimonials."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a3"
+    },
+    "cita": "no podrán acceder a los datos del causante, ni solicitar su rectificación o supresión, cuando la persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t03-022",
+    "tema": 3,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley Orgánica 3/2018, las actuaciones del responsable del tratamiento para atender una solicitud de acceso a los propios datos personales son, con carácter general:",
+      "opciones": [
+        "Sujetas a una tasa fija por solicitud",
+        "Gratuitas solo para menores de edad",
+        "Gratuitas",
+        "Gratuitas solo la primera vez en cada año natural"
+      ],
+      "explicacion": "El artículo 12.7 declara gratuitas las actuaciones para atender el ejercicio de los derechos, sin perjuicio de lo dispuesto en los artículos 12.5 y 15.3 del Reglamento (UE) 2016/679 y en el artículo 13.3 y 4 de la propia ley orgánica."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei orgànica 3/2018, les actuacions del responsable del tractament per atendre una sol·licitud d'accés a les pròpies dades personals són, amb caràcter general:",
+      "opciones": [
+        "Subjectes a una taxa fixa per sol·licitud",
+        "Gratuïtes només per als menors d'edat",
+        "Gratuïtes",
+        "Gratuïtes només la primera vegada en cada any natural"
+      ],
+      "explicacion": "L'article 12.7 declara gratuïtes les actuacions per atendre l'exercici dels drets, sens perjudici del que disposen els articles 12.5 i 15.3 del Reglament (UE) 2016/679 i l'article 13.3 i 4 de la mateixa llei orgànica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2018-16673",
+      "norma": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+      "articulo": "12.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a12"
+    },
+    "cita": "Serán gratuitas las actuaciones llevadas a cabo por el responsable del tratamiento para atender las solicitudes de ejercicio de estos derechos",
+    "origen": "ia"
+  }
+]

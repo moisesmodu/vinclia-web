@@ -5,7 +5,7 @@
   "description": "Tests, simulacros y repaso espaciado para oposiciones catalanas (proyecto B de la cartera).",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && node scripts/db-preparar.mjs && next build",
     "start": "next start",
     "check": "tsc --noEmit",
     "postinstall": "prisma generate",

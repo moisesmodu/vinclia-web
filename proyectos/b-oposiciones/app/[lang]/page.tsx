@@ -11,6 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Idi
   return { title: { absolute: `${titulo} · ${marca.nombre}` }, description: t(lang).heroTexto, alternates: alternates(lang, '') };
 }
 
+const corta = (r: string) => { const x = r.split(',')[0]; return x.length > 70 ? x.slice(0, 67) + '…' : x; };
+
 export default async function Inicio({ params }: { params: Promise<{ lang: Idioma }> }) {
   const { lang } = await params;
   const d = t(lang);
@@ -38,7 +40,7 @@ export default async function Inicio({ params }: { params: Promise<{ lang: Idiom
               <p className="mt-2 text-sm text-slate-600">
                 {b.resumen.total} {d.preguntas} · {o.temas.length} {d.temas} · {o.examen.preguntas} {d.preguntas} / {o.examen.minutos} {d.minutos}
               </p>
-              <p className="mt-1 text-xs text-slate-500">{d.convocatoria}: {o.convocatoria.referencia}</p>
+              <p className="mt-1 text-xs text-slate-500">{d.convocatoria}: {corta(o.convocatoria.referencia)}</p>
               <div className="mt-auto flex gap-2 pt-4">
                 <Link href={`/${lang}/practicar/${o.slug}`} className="boton flex-1">{d.testGratis}</Link>
                 <Link href={`/${lang}/${o.slug}`} className="boton-sec">{d.temario}</Link>

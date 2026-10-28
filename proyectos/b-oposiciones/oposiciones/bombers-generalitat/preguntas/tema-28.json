@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t28-001",
+    "tema": 28,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Qué significan las siglas PAS de la conducta general ante una emergencia?",
+      "opciones": [
+        "Prevenir, Atender, Salvar",
+        "Parar, Asegurar, Sacar",
+        "Proteger, Avisar, Socorrer",
+        "Proteger, Asistir, Señalizar"
+      ],
+      "explicacion": "La conducta PAS ordena la actuación: primero proteger (al interviniente, a la víctima y al entorno), después avisar a los servicios de emergencia y, por último, socorrer a la víctima."
+    },
+    "ca": {
+      "enunciado": "Què signifiquen les sigles PAS de la conducta general davant d'una emergència?",
+      "opciones": [
+        "Prevenir, Atendre, Salvar",
+        "Parar, Assegurar, Treure",
+        "Protegir, Avisar, Socórrer",
+        "Protegir, Assistir, Senyalitzar"
+      ],
+      "explicacion": "La conducta PAS ordena l'actuació: primer protegir (l'intervinent, la víctima i l'entorn), després avisar els serveis d'emergència i, finalment, socórrer la víctima."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Cos de Bombers · Intervenció bàsica en assistència sanitària, Manual Operatiu MAN.SANI.000 V.3 (guia d'estudi 81/26, tema 28)",
+      "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/ACCES-81_26/ACTUALITZACIO-GUIA-ESTUDI/MAN.SANI.000-Tema-28.-Assistencia-sanitaria.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-002",
+    "tema": 28,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según las recomendaciones del ERC para el soporte vital básico en adultos, ¿a qué ritmo deben realizarse las compresiones torácicas?",
+      "opciones": [
+        "60-80 por minuto",
+        "100-120 por minuto",
+        "130-150 por minuto",
+        "80-100 por minuto"
+      ],
+      "explicacion": "Las guías del ERC de 2021 recomiendan comprimir a un ritmo de 100 a 120 compresiones por minuto, con las mínimas interrupciones posibles."
+    },
+    "ca": {
+      "enunciado": "Segons les recomanacions de l'ERC per al suport vital bàsic en adults, a quin ritme s'han de fer les compressions toràciques?",
+      "opciones": [
+        "60-80 per minut",
+        "100-120 per minut",
+        "130-150 per minut",
+        "80-100 per minut"
+      ],
+      "explicacion": "Les guies de l'ERC del 2021 recomanen comprimir a un ritme de 100 a 120 compressions per minut, amb les mínimes interrupcions possibles."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-003",
+    "tema": 28,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué profundidad de compresión torácica recomienda el ERC en un adulto?",
+      "opciones": [
+        "Entre 2 y 3 cm",
+        "Entre 3 y 4 cm",
+        "Al menos 7 cm",
+        "Al menos 5 cm, sin superar 6 cm"
+      ],
+      "explicacion": "El ERC indica comprimir el centro del pecho al menos 5 cm pero no más de 6 cm, dejando que el tórax se reexpanda por completo tras cada compresión."
+    },
+    "ca": {
+      "enunciado": "Quina profunditat de compressió toràcica recomana l'ERC en un adult?",
+      "opciones": [
+        "Entre 2 i 3 cm",
+        "Entre 3 i 4 cm",
+        "Almenys 7 cm",
+        "Almenys 5 cm, sense superar 6 cm"
+      ],
+      "explicacion": "L'ERC indica comprimir el centre del pit almenys 5 cm però no més de 6 cm, i deixar que el tòrax es reexpandeixi del tot després de cada compressió."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-004",
+    "tema": 28,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Qué relación entre compresiones y ventilaciones se aplica en la RCP básica de un adulto?",
+      "opciones": [
+        "30:2",
+        "15:2",
+        "5:1",
+        "30:5"
+      ],
+      "explicacion": "En el adulto se alternan 30 compresiones torácicas con 2 ventilaciones de rescate. La relación 15:2 es la que se usa en la RCP pediátrica por personal entrenado."
+    },
+    "ca": {
+      "enunciado": "Quina relació entre compressions i ventilacions s'aplica en la RCP bàsica d'un adult?",
+      "opciones": [
+        "30:2",
+        "15:2",
+        "5:1",
+        "30:5"
+      ],
+      "explicacion": "En l'adult s'alternen 30 compressions toràciques amb 2 ventilacions de rescat. La relació 15:2 és la que s'utilitza en la RCP pediàtrica per personal entrenat."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-005",
+    "tema": 28,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una víctima no responde y solo presenta respiraciones agónicas (boqueadas) aisladas. Según el ERC, ¿qué debe hacerse?",
+      "opciones": [
+        "Colocarla en posición lateral de seguridad y vigilarla",
+        "Esperar a que la respiración se normalice antes de actuar",
+        "Considerarla en parada cardiaca y empezar la RCP",
+        "Darle solo ventilaciones de rescate, sin compresiones"
+      ],
+      "explicacion": "La respiración agónica no es una respiración normal: es frecuente en los primeros minutos de la parada cardiaca. Si la víctima no responde y no respira con normalidad, se activa la emergencia y se inicia la RCP."
+    },
+    "ca": {
+      "enunciado": "Una víctima no respon i només presenta respiracions agòniques (badalls) aïllades. Segons l'ERC, què s'ha de fer?",
+      "opciones": [
+        "Col·locar-la en posició lateral de seguretat i vigilar-la",
+        "Esperar que la respiració es normalitzi abans d'actuar",
+        "Considerar-la en aturada cardíaca i començar la RCP",
+        "Fer-li només ventilacions de rescat, sense compressions"
+      ],
+      "explicacion": "La respiració agònica no és una respiració normal: és freqüent en els primers minuts de l'aturada cardíaca. Si la víctima no respon i no respira amb normalitat, s'activa l'emergència i s'inicia la RCP."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-006",
+    "tema": 28,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Inmediatamente después de que el DEA administre una descarga, ¿qué indica el ERC?",
+      "opciones": [
+        "Comprobar el pulso carotídeo durante 10 segundos",
+        "Reanudar de inmediato las compresiones torácicas",
+        "Retirar los parches y colocarlos en otra posición",
+        "Esperar un minuto a que el DEA vuelva a analizar"
+      ],
+      "explicacion": "Tras la descarga se reanuda inmediatamente la RCP (30:2) sin comprobar el pulso ni la respiración; el DEA volverá a analizar el ritmo al cabo de unos dos minutos y dará nuevas instrucciones."
+    },
+    "ca": {
+      "enunciado": "Immediatament després que el DEA administri una descàrrega, què indica l'ERC?",
+      "opciones": [
+        "Comprovar el pols caròtidi durant 10 segons",
+        "Reprendre immediatament les compressions toràciques",
+        "Retirar els elèctrodes i col·locar-los en una altra posició",
+        "Esperar un minut que el DEA torni a analitzar"
+      ],
+      "explicacion": "Després de la descàrrega es reprèn immediatament la RCP (30:2) sense comprovar el pols ni la respiració; el DEA tornarà a analitzar el ritme al cap d'uns dos minuts i donarà noves instruccions."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-007",
+    "tema": 28,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿En qué caso está indicada la posición lateral de seguridad?",
+      "opciones": [
+        "Víctima que no responde pero respira con normalidad",
+        "Víctima que no responde y no respira con normalidad",
+        "Víctima consciente con dificultad para respirar",
+        "Víctima consciente con obstrucción grave de la vía aérea"
+      ],
+      "explicacion": "La posición lateral de seguridad mantiene abierta la vía aérea y permite el drenaje de vómitos en una víctima inconsciente que respira con normalidad. Si no respira con normalidad, lo indicado es la RCP."
+    },
+    "ca": {
+      "enunciado": "En quin cas està indicada la posició lateral de seguretat?",
+      "opciones": [
+        "Víctima que no respon però respira amb normalitat",
+        "Víctima que no respon i no respira amb normalitat",
+        "Víctima conscient amb dificultat per respirar",
+        "Víctima conscient amb obstrucció greu de la via aèria"
+      ],
+      "explicacion": "La posició lateral de seguretat manté oberta la via aèria i permet el drenatge de vòmits en una víctima inconscient que respira amb normalitat. Si no respira amb normalitat, el que s'indica és la RCP."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-008",
+    "tema": 28,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un adulto consciente se atraganta y su tos se vuelve ineficaz. ¿Qué secuencia recomienda el ERC?",
+      "opciones": [
+        "Iniciar de inmediato compresiones torácicas con una relación 30:2",
+        "Darle agua para ayudar a desplazar el cuerpo extraño",
+        "Hacerle un barrido digital a ciegas en la boca",
+        "Hasta 5 golpes en la espalda y, si no se resuelve, hasta 5 compresiones abdominales"
+      ],
+      "explicacion": "Con tos ineficaz y la víctima consciente, el ERC indica alternar hasta 5 golpes interescapulares y hasta 5 compresiones abdominales. Si pierde la conciencia, se inicia la RCP. El barrido digital a ciegas no se recomienda."
+    },
+    "ca": {
+      "enunciado": "Un adult conscient s'ennuega i la seva tos esdevé ineficaç. Quina seqüència recomana l'ERC?",
+      "opciones": [
+        "Iniciar immediatament compressions toràciques amb una relació 30:2",
+        "Donar-li aigua per ajudar a desplaçar el cos estrany",
+        "Fer-li un escombratge digital a cegues a la boca",
+        "Fins a 5 cops a l'esquena i, si no es resol, fins a 5 compressions abdominals"
+      ],
+      "explicacion": "Amb tos ineficaç i la víctima conscient, l'ERC indica alternar fins a 5 cops interescapulars i fins a 5 compressions abdominals. Si perd la consciència, s'inicia la RCP. L'escombratge digital a cegues no es recomana."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-009",
+    "tema": 28,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según las recomendaciones de primeros auxilios del ERC, ¿cuándo está indicado el torniquete en una hemorragia de una extremidad?",
+      "opciones": [
+        "Siempre como primera medida, antes de presionar la herida",
+        "Solo cuando la hemorragia se produce en el tronco",
+        "Cuando la presión directa no controla una hemorragia potencialmente mortal",
+        "Únicamente después de elevar el miembro durante diez minutos"
+      ],
+      "explicacion": "La primera medida ante una hemorragia externa es la presión directa sobre la herida; el torniquete se reserva para la hemorragia de extremidad que amenaza la vida y no se controla con presión directa. En el tronco no puede aplicarse."
+    },
+    "ca": {
+      "enunciado": "Segons les recomanacions de primers auxilis de l'ERC, quan està indicat el torniquet en una hemorràgia d'una extremitat?",
+      "opciones": [
+        "Sempre com a primera mesura, abans de pressionar la ferida",
+        "Només quan l'hemorràgia es produeix al tronc",
+        "Quan la pressió directa no controla una hemorràgia potencialment mortal",
+        "Únicament després d'elevar el membre durant deu minuts"
+      ],
+      "explicacion": "La primera mesura davant d'una hemorràgia externa és la pressió directa sobre la ferida; el torniquet es reserva per a l'hemorràgia d'extremitat que amenaça la vida i no es controla amb pressió directa. Al tronc no es pot aplicar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "European Resuscitation Council (ERC) · Guidelines 2021: soporte vital básico en adultos y primeros auxilios",
+      "url": "https://cprguidelines.eu/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t28-010",
+    "tema": 28,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la regla de los nueves de Wallace, en un adulto, ¿qué porcentaje de la superficie corporal representa una extremidad inferior completa?",
+      "opciones": [
+        "9 %",
+        "18 %",
+        "27 %",
+        "36 %"
+      ],
+      "explicacion": "La regla de los nueves asigna un 9 % a la cabeza y a cada extremidad superior, un 18 % a cada extremidad inferior y a cada cara del tronco, y un 1 % al periné. Se usa para estimar la extensión de las quemaduras."
+    },
+    "ca": {
+      "enunciado": "Segons la regla dels nous de Wallace, en un adult, quin percentatge de la superfície corporal representa una extremitat inferior completa?",
+      "opciones": [
+        "9 %",
+        "18 %",
+        "27 %",
+        "36 %"
+      ],
+      "explicacion": "La regla dels nous assigna un 9 % al cap i a cada extremitat superior, un 18 % a cada extremitat inferior i a cada cara del tronc, i un 1 % al perineu. S'utilitza per estimar l'extensió de les cremades."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Cos de Bombers · Intervenció bàsica en assistència sanitària, Manual Operatiu MAN.SANI.000 V.3 (guia d'estudi 81/26, tema 28)",
+      "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/ACCES-81_26/ACTUALITZACIO-GUIA-ESTUDI/MAN.SANI.000-Tema-28.-Assistencia-sanitaria.pdf"
+    },
+    "origen": "ia"
+  }
+]

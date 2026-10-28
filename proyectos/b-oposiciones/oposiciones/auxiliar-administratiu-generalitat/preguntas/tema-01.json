@@ -1,0 +1,842 @@
+[
+  {
+    "id": "agen-t01-001",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 1.1 de la Constitución, ¿cuáles son los valores superiores del ordenamiento jurídico?",
+      "opciones": [
+        "La libertad, la seguridad, la igualdad y la solidaridad",
+        "La dignidad, la justicia, la igualdad y la legalidad",
+        "La libertad, la justicia, la igualdad y el pluralismo político",
+        "La libertad, la justicia, la unidad y el pluralismo territorial"
+      ],
+      "explicacion": "El artículo 1.1 CE propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político. La seguridad jurídica o la legalidad son principios del artículo 9.3, no valores superiores."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 1.1 de la Constitució, quins són els valors superiors de l'ordenament jurídic?",
+      "opciones": [
+        "La llibertat, la seguretat, la igualtat i la solidaritat",
+        "La dignitat, la justícia, la igualtat i la legalitat",
+        "La llibertat, la justícia, la igualtat i el pluralisme polític",
+        "La llibertat, la justícia, la unitat i el pluralisme territorial"
+      ],
+      "explicacion": "L'article 1.1 CE propugna com a valors superiors la llibertat, la justícia, la igualtat i el pluralisme polític. La seguretat jurídica o la legalitat són principis de l'article 9.3, no valors superiors."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "1.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a1"
+    },
+    "cita": "propugna como valores superiores de su ordenamiento jurídico la libertad, la justicia, la igualdad y el pluralismo político",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-002",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes principios garantiza expresamente el artículo 9.3 de la Constitución?",
+      "opciones": [
+        "La irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales",
+        "La irretroactividad de todas las disposiciones normativas, sean o no sancionadoras",
+        "La retroactividad obligatoria de cualquier norma que resulte más favorable",
+        "La irretroactividad exclusivamente de las normas penales de rango orgánico"
+      ],
+      "explicacion": "El artículo 9.3 CE garantiza la irretroactividad solo de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales; no proclama una irretroactividad general de todas las normas."
+    },
+    "ca": {
+      "enunciado": "Quin dels principis següents garanteix expressament l'article 9.3 de la Constitució?",
+      "opciones": [
+        "La irretroactivitat de les disposicions sancionadores no favorables o restrictives de drets individuals",
+        "La irretroactivitat de totes les disposicions normatives, siguin sancionadores o no",
+        "La retroactivitat obligatòria de qualsevol norma que resulti més favorable",
+        "La irretroactivitat exclusivament de les normes penals de rang orgànic"
+      ],
+      "explicacion": "L'article 9.3 CE garanteix la irretroactivitat només de les disposicions sancionadores no favorables o restrictives de drets individuals; no proclama una irretroactivitat general de totes les normes."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "9.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a9"
+    },
+    "cita": "la irretroactividad de las disposiciones sancionadoras no favorables o restrictivas de derechos individuales",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-003",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "De acuerdo con el artículo 10.2 de la Constitución, las normas relativas a los derechos fundamentales y libertades se interpretarán de conformidad con:",
+      "opciones": [
+        "La jurisprudencia del Tribunal Supremo y la doctrina del Consejo de Estado",
+        "Las leyes orgánicas que desarrollen los derechos fundamentales",
+        "Los estatutos de autonomía y las cartas de derechos aprobadas por los parlamentos autonómicos",
+        "La Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España"
+      ],
+      "explicacion": "El artículo 10.2 CE remite, como criterio interpretativo, a la Declaración Universal de Derechos Humanos y a los tratados y acuerdos internacionales ratificados por España."
+    },
+    "ca": {
+      "enunciado": "D'acord amb l'article 10.2 de la Constitució, les normes relatives als drets fonamentals i a les llibertats s'han d'interpretar de conformitat amb:",
+      "opciones": [
+        "La jurisprudència del Tribunal Suprem i la doctrina del Consell d'Estat",
+        "Les lleis orgàniques que despleguin els drets fonamentals",
+        "Els estatuts d'autonomia i les cartes de drets aprovades pels parlaments autonòmics",
+        "La Declaració Universal de Drets Humans i els tractats i els acords internacionals sobre les mateixes matèries ratificats per Espanya"
+      ],
+      "explicacion": "L'article 10.2 CE remet, com a criteri interpretatiu, a la Declaració Universal de Drets Humans i als tractats i els acords internacionals ratificats per Espanya."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "10.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a10"
+    },
+    "cita": "se interpretarán de conformidad con la Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-004",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una persona es detenida preventivamente por la policía el lunes a las 10:00 horas. Según la Constitución, ¿cuál es el momento límite en que debe ser puesta en libertad o a disposición de la autoridad judicial?",
+      "opciones": [
+        "El miércoles a las 10:00 horas",
+        "El jueves a las 10:00 horas",
+        "El martes a las 10:00 horas",
+        "El viernes a las 10:00 horas"
+      ],
+      "explicacion": "El artículo 17.2 CE fija un plazo máximo de setenta y dos horas: desde el lunes a las 10:00, el límite es el jueves a las 10:00. El miércoles correspondería a 48 horas."
+    },
+    "ca": {
+      "enunciado": "Una persona és detinguda preventivament per la policia el dilluns a les 10.00 hores. Segons la Constitució, quin és el moment límit en què ha de ser posada en llibertat o a disposició de l'autoritat judicial?",
+      "opciones": [
+        "El dimecres a les 10.00 hores",
+        "El dijous a les 10.00 hores",
+        "El dimarts a les 10.00 hores",
+        "El divendres a les 10.00 hores"
+      ],
+      "explicacion": "L'article 17.2 CE fixa un termini màxim de setanta-dues hores: des del dilluns a les 10.00, el límit és el dijous a les 10.00. El dimecres correspondria a 48 hores."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "17.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a17"
+    },
+    "cita": "en todo caso, en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-005",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Unos agentes quieren entrar en un domicilio cuyo titular no da su consentimiento y no disponen de resolución judicial. Según el artículo 18.2 de la Constitución, ¿pueden hacerlo?",
+      "opciones": [
+        "Solo en caso de flagrante delito",
+        "Sí, si lo autoriza por escrito el Ministerio Fiscal",
+        "Sí, si lo ordena la autoridad gubernativa competente",
+        "No, en ningún caso, ni siquiera en flagrante delito"
+      ],
+      "explicacion": "El artículo 18.2 CE exige consentimiento del titular o resolución judicial para entrar en un domicilio, salvo en caso de flagrante delito. Ni el Ministerio Fiscal ni la autoridad gubernativa pueden sustituir la resolución judicial."
+    },
+    "ca": {
+      "enunciado": "Uns agents volen entrar en un domicili el titular del qual no hi dona el consentiment i no disposen de resolució judicial. Segons l'article 18.2 de la Constitució, ho poden fer?",
+      "opciones": [
+        "Només en cas de delicte flagrant",
+        "Sí, si ho autoritza per escrit el Ministeri Fiscal",
+        "Sí, si ho ordena l'autoritat governativa competent",
+        "No, en cap cas, ni tan sols en delicte flagrant"
+      ],
+      "explicacion": "L'article 18.2 CE exigeix el consentiment del titular o una resolució judicial per entrar en un domicili, llevat del cas de delicte flagrant. Ni el Ministeri Fiscal ni l'autoritat governativa no poden substituir la resolució judicial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "18.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a18"
+    },
+    "cita": "Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-006",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una asociación vecinal quiere convocar una manifestación por las calles de su municipio. Según la Constitución, ¿qué debe hacer?",
+      "opciones": [
+        "Solicitar autorización previa a la autoridad",
+        "Dar comunicación previa a la autoridad",
+        "Obtener una resolución judicial que la permita",
+        "Inscribir previamente la convocatoria en el registro de asociaciones"
+      ],
+      "explicacion": "El artículo 21.2 CE solo exige comunicación previa a la autoridad para las reuniones en lugares de tránsito público y las manifestaciones; el apartado 1 precisa que el derecho de reunión no necesita autorización previa."
+    },
+    "ca": {
+      "enunciado": "Una associació de veïns vol convocar una manifestació pels carrers del seu municipi. Segons la Constitució, què ha de fer?",
+      "opciones": [
+        "Sol·licitar autorització prèvia a l'autoritat",
+        "Comunicar-ho prèviament a l'autoritat",
+        "Obtenir una resolució judicial que la permeti",
+        "Inscriure prèviament la convocatòria al registre d'associacions"
+      ],
+      "explicacion": "L'article 21.2 CE només exigeix la comunicació prèvia a l'autoritat per a les reunions en llocs de trànsit públic i les manifestacions; l'apartat 1 precisa que el dret de reunió no necessita autorització prèvia."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "21.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a21"
+    },
+    "cita": "En los casos de reuniones en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-007",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un sargento del Ejército quiere presentar, junto con otros compañeros de su unidad, un escrito de petición colectiva. Según la Constitución:",
+      "opciones": [
+        "Puede presentarlo, porque el derecho de petición es individual y colectivo para todos los españoles",
+        "Puede presentarlo colectivamente si lo autoriza previamente su superior jerárquico",
+        "No puede ejercer el derecho de petición en ningún caso",
+        "Solo puede ejercer el derecho de petición individualmente y con arreglo a su legislación específica"
+      ],
+      "explicacion": "El artículo 29.2 CE permite a los miembros de las Fuerzas Armadas y de los cuerpos sometidos a disciplina militar ejercer el derecho de petición, pero solo individualmente y conforme a su legislación específica."
+    },
+    "ca": {
+      "enunciado": "Un sergent de l'Exèrcit vol presentar, juntament amb altres companys de la seva unitat, un escrit de petició col·lectiva. Segons la Constitució:",
+      "opciones": [
+        "El pot presentar, perquè el dret de petició és individual i col·lectiu per a tots els espanyols",
+        "El pot presentar col·lectivament si ho autoritza prèviament el seu superior jeràrquic",
+        "No pot exercir el dret de petició en cap cas",
+        "Només pot exercir el dret de petició individualment i d'acord amb la seva legislació específica"
+      ],
+      "explicacion": "L'article 29.2 CE permet als membres de les Forces Armades i dels cossos sotmesos a disciplina militar exercir el dret de petició, però només individualment i d'acord amb la seva legislació específica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "29.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a29"
+    },
+    "cita": "Los miembros de las Fuerzas o Institutos armados o de los Cuerpos sometidos a disciplina militar podrán ejercer este derecho sólo individualmente y con arreglo a lo dispuesto en su legislación específica",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-008",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 53.2 de la Constitución, el recurso de amparo ante el Tribunal Constitucional protege:",
+      "opciones": [
+        "Todos los derechos y deberes del Título I de la Constitución",
+        "Todo el Capítulo segundo del Título I, incluida su Sección segunda",
+        "El artículo 14, la Sección primera del Capítulo segundo del Título I y la objeción de conciencia del artículo 30",
+        "Los derechos del Capítulo segundo y los principios rectores del Capítulo tercero"
+      ],
+      "explicacion": "El artículo 53.2 CE limita la tutela preferente y sumaria y el amparo al artículo 14 y a la Sección primera del Capítulo segundo, y extiende el amparo a la objeción de conciencia del artículo 30. Los principios del Capítulo tercero solo se alegan según las leyes que los desarrollen (art. 53.3)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 53.2 de la Constitució, el recurs d'empara davant el Tribunal Constitucional protegeix:",
+      "opciones": [
+        "Tots els drets i deures del títol I de la Constitució",
+        "Tot el capítol segon del títol I, inclosa la secció segona",
+        "L'article 14, la secció primera del capítol segon del títol I i l'objecció de consciència de l'article 30",
+        "Els drets del capítol segon i els principis rectors del capítol tercer"
+      ],
+      "explicacion": "L'article 53.2 CE limita la tutela preferent i sumària i l'empara a l'article 14 i a la secció primera del capítol segon, i estén l'empara a l'objecció de consciència de l'article 30. Els principis del capítol tercer només es poden al·legar d'acord amb les lleis que els despleguin (art. 53.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "53.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a53"
+    },
+    "cita": "Cualquier ciudadano podrá recabar la tutela de las libertades y derechos reconocidos en el artículo 14 y la Sección primera del Capítulo segundo … Este último recurso será aplicable a la objeción de conciencia reconocida en el artículo 30",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-009",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En caso de declaración del estado de excepción, ¿qué contenido del artículo 17 de la Constitución NO puede ser suspendido?",
+      "opciones": [
+        "Los derechos de la persona detenida del apartado 3 (información de sus derechos y asistencia de abogado)",
+        "El plazo máximo de setenta y dos horas de detención preventiva del apartado 2",
+        "El derecho general a la libertad y a la seguridad del apartado 1",
+        "El procedimiento de habeas corpus del apartado 4"
+      ],
+      "explicacion": "El artículo 55.1 CE permite suspender el artículo 17 en los estados de excepción y de sitio, pero exceptúa el apartado 3 en el supuesto de estado de excepción."
+    },
+    "ca": {
+      "enunciado": "En cas de declaració de l'estat d'excepció, quin contingut de l'article 17 de la Constitució NO es pot suspendre?",
+      "opciones": [
+        "Els drets de la persona detinguda de l'apartat 3 (informació dels seus drets i assistència d'advocat)",
+        "El termini màxim de setanta-dues hores de detenció preventiva de l'apartat 2",
+        "El dret general a la llibertat i a la seguretat de l'apartat 1",
+        "El procediment d'habeas corpus de l'apartat 4"
+      ],
+      "explicacion": "L'article 55.1 CE permet suspendre l'article 17 en els estats d'excepció i de setge, però n'exceptua l'apartat 3 en el supòsit d'estat d'excepció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "55.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a55"
+    },
+    "cita": "Se exceptúa de lo establecido anteriormente el apartado 3 del artículo 17 para el supuesto de declaración de estado de excepción",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-010",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el artículo 13.2 de la Constitución, a las personas extranjeras se les puede reconocer, por tratado o ley y atendiendo a criterios de reciprocidad:",
+      "opciones": [
+        "El derecho de sufragio activo en las elecciones a los parlamentos autonómicos",
+        "El derecho de sufragio activo y pasivo en las elecciones municipales",
+        "El derecho de sufragio activo y pasivo en las elecciones generales",
+        "El derecho de acceso a todas las funciones y cargos públicos"
+      ],
+      "explicacion": "El artículo 13.2 CE reserva a los españoles los derechos del artículo 23, salvo el sufragio activo y pasivo en las elecciones municipales, que puede reconocerse por tratado o ley atendiendo a la reciprocidad."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 13.2 de la Constitució, a les persones estrangeres se'ls pot reconèixer, per tractat o llei i atenent criteris de reciprocitat:",
+      "opciones": [
+        "El dret de sufragi actiu en les eleccions als parlaments autonòmics",
+        "El dret de sufragi actiu i passiu en les eleccions municipals",
+        "El dret de sufragi actiu i passiu en les eleccions generals",
+        "El dret d'accés a totes les funcions i els càrrecs públics"
+      ],
+      "explicacion": "L'article 13.2 CE reserva als espanyols els drets de l'article 23, llevat del sufragi actiu i passiu en les eleccions municipals, que es pot reconèixer per tractat o llei atenent la reciprocitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "13.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a13"
+    },
+    "cita": "Solamente los españoles serán titulares de los derechos reconocidos en el artículo 23, salvo lo que, atendiendo a criterios de reciprocidad, pueda establecerse por tratado o ley para el derecho de sufragio activo y pasivo en las elecciones municipales",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-011",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 54 de la Constitución, el Defensor del Pueblo es:",
+      "opciones": [
+        "Un alto comisionado del Gobierno de la Nación",
+        "Un órgano del Consejo General del Poder Judicial",
+        "Un órgano consultivo del Tribunal Constitucional",
+        "Un alto comisionado de las Cortes Generales"
+      ],
+      "explicacion": "El artículo 54 CE configura el Defensor del Pueblo como alto comisionado de las Cortes Generales, designado por estas para defender los derechos del Título I."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 54 de la Constitució, el Defensor del Poble és:",
+      "opciones": [
+        "Un alt comissionat del Govern de la Nació",
+        "Un òrgan del Consell General del Poder Judicial",
+        "Un òrgan consultiu del Tribunal Constitucional",
+        "Un alt comissionat de les Corts Generals"
+      ],
+      "explicacion": "L'article 54 CE configura el Defensor del Poble com a alt comissionat de les Corts Generals, designat per aquestes per defensar els drets del títol I."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1978-31229",
+      "norma": "Constitución Española de 1978",
+      "articulo": "54",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a54"
+    },
+    "cita": "Una ley orgánica regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-012",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 2.2 del Estatuto de Autonomía de Cataluña, la Generalitat está integrada por:",
+      "opciones": [
+        "El Parlamento y el Gobierno, únicamente",
+        "El Gobierno, los departamentos y los organismos autónomos de la Administración",
+        "El Parlamento, la Presidencia de la Generalitat, el Gobierno y las demás instituciones que establece el capítulo V del título II",
+        "El Parlamento, el Gobierno y el Tribunal Superior de Justicia de Cataluña"
+      ],
+      "explicacion": "El artículo 2.2 EAC integra en la Generalitat el Parlamento, la Presidencia, el Gobierno y las demás instituciones del capítulo V del título II (Consejo de Garantías Estatutarias, Síndic de Greuges, Sindicatura de Cuentas...). El TSJ es un órgano del Poder Judicial."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 2.2 de l'Estatut d'autonomia de Catalunya, la Generalitat està integrada per:",
+      "opciones": [
+        "El Parlament i el Govern, únicament",
+        "El Govern, els departaments i els organismes autònoms de l'Administració",
+        "El Parlament, la Presidència de la Generalitat, el Govern i les altres institucions que estableix el capítol V del títol II",
+        "El Parlament, el Govern i el Tribunal Superior de Justícia de Catalunya"
+      ],
+      "explicacion": "L'article 2.2 EAC integra en la Generalitat el Parlament, la Presidència, el Govern i les altres institucions del capítol V del títol II (Consell de Garanties Estatutàries, Síndic de Greuges, Sindicatura de Comptes...). El TSJ és un òrgan del Poder Judicial."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "2.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a2"
+    },
+    "cita": "La Generalitat está integrada por el Parlamento, la Presidencia de la Generalitat, el Gobierno y las demás instituciones que establece el Capítulo V, del Título II",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-013",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Estatuto de Autonomía, gozan de la condición política de catalanes:",
+      "opciones": [
+        "Los ciudadanos españoles que tienen vecindad administrativa en Cataluña",
+        "Todas las personas que residen legalmente en Cataluña",
+        "Las personas nacidas en Cataluña, con independencia de su residencia",
+        "Los ciudadanos españoles con al menos diez años de residencia en Cataluña"
+      ],
+      "explicacion": "El artículo 7.1 EAC vincula la condición política de catalán a la ciudadanía española y a la vecindad administrativa en Cataluña."
+    },
+    "ca": {
+      "enunciado": "Segons l'Estatut d'autonomia, gaudeixen de la condició política de catalans:",
+      "opciones": [
+        "Els ciutadans espanyols que tenen veïnatge administratiu a Catalunya",
+        "Totes les persones que resideixen legalment a Catalunya",
+        "Les persones nascudes a Catalunya, amb independència de la seva residència",
+        "Els ciutadans espanyols amb almenys deu anys de residència a Catalunya"
+      ],
+      "explicacion": "L'article 7.1 EAC vincula la condició política de català a la ciutadania espanyola i al veïnatge administratiu a Catalunya."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "7.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a7"
+    },
+    "cita": "Gozan de la condición política de catalanes o ciudadanos de Cataluña los ciudadanos españoles que tienen vecindad administrativa en Cataluña",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-014",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un ciudadano se dirige por escrito en castellano a una oficina de la Generalitat. Según el artículo 33.1 del Estatuto, ¿cómo debe actuar la Administración?",
+      "opciones": [
+        "Exigirle que presente el escrito traducido al catalán",
+        "Respetar su derecho a utilizar la lengua oficial que elija",
+        "Tramitarlo solo si acredita que no conoce el catalán",
+        "Devolverlo, porque el catalán es la única lengua de uso administrativo"
+      ],
+      "explicacion": "El artículo 33.1 EAC reconoce el derecho de opción lingüística: todas las personas pueden utilizar la lengua oficial que elijan en sus relaciones con las administraciones públicas en Cataluña."
+    },
+    "ca": {
+      "enunciado": "Un ciutadà s'adreça per escrit en castellà a una oficina de la Generalitat. Segons l'article 33.1 de l'Estatut, com ha d'actuar l'Administració?",
+      "opciones": [
+        "Exigir-li que presenti l'escrit traduït al català",
+        "Respectar el seu dret a utilitzar la llengua oficial que triï",
+        "Tramitar-lo només si acredita que no coneix el català",
+        "Retornar-lo, perquè el català és l'única llengua d'ús administratiu"
+      ],
+      "explicacion": "L'article 33.1 EAC reconeix el dret d'opció lingüística: totes les persones poden utilitzar la llengua oficial que triïn en les seves relacions amb les administracions públiques a Catalunya."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "33.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a33"
+    },
+    "cita": "En las relaciones con las instituciones, las organizaciones y las Administraciones públicas en Cataluña, todas las personas tienen derecho a utilizar la lengua oficial que elijan",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-015",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 29.5 del Estatuto, ¿quién tiene derecho a dirigir peticiones y plantear quejas a las instituciones y la Administración de la Generalitat?",
+      "opciones": [
+        "Solo los ciudadanos de Cataluña",
+        "Solo las personas con vecindad administrativa en Cataluña",
+        "Solo los ciudadanos españoles mayores de edad",
+        "Todas las personas"
+      ],
+      "explicacion": "A diferencia de otros apartados del artículo 29, que se refieren a los ciudadanos de Cataluña, el apartado 5 reconoce el derecho de petición y de queja a todas las personas."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 29.5 de l'Estatut, qui té dret a adreçar peticions i plantejar queixes a les institucions i l'Administració de la Generalitat?",
+      "opciones": [
+        "Només els ciutadans de Catalunya",
+        "Només les persones amb veïnatge administratiu a Catalunya",
+        "Només els ciutadans espanyols majors d'edat",
+        "Totes les persones"
+      ],
+      "explicacion": "A diferència d'altres apartats de l'article 29, que es refereixen als ciutadans de Catalunya, l'apartat 5 reconeix el dret de petició i de queixa a totes les persones."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "29.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a29"
+    },
+    "cita": "Todas las personas tienen derecho a dirigir peticiones y a plantear quejas, en la forma y con los efectos que establecen las leyes, a las instituciones y la Administración de la Generalitat",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-016",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el artículo 38.1 del Estatuto, los derechos reconocidos en los capítulos I, II y III del título I y en la Carta de los derechos y deberes de los ciudadanos de Cataluña son tutelados por:",
+      "opciones": [
+        "El Síndic de Greuges",
+        "El Tribunal Constitucional",
+        "El Consejo de Garantías Estatutarias",
+        "La Comisión Jurídica Asesora"
+      ],
+      "explicacion": "El artículo 38.1 EAC atribuye esta tutela al Consejo de Garantías Estatutarias. El apartado 2 añade que los actos que vulneren estos derechos pueden recurrirse ante el Tribunal Superior de Justicia de Cataluña."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 38.1 de l'Estatut, els drets reconeguts en els capítols I, II i III del títol I i en la Carta dels drets i els deures dels ciutadans de Catalunya són tutelats per:",
+      "opciones": [
+        "El Síndic de Greuges",
+        "El Tribunal Constitucional",
+        "El Consell de Garanties Estatutàries",
+        "La Comissió Jurídica Assessora"
+      ],
+      "explicacion": "L'article 38.1 EAC atribueix aquesta tutela al Consell de Garanties Estatutàries. L'apartat 2 afegeix que els actes que vulnerin aquests drets es poden recórrer davant el Tribunal Superior de Justícia de Catalunya."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "38.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a38"
+    },
+    "cita": "son tutelados por el Consejo de Garantías Estatutarias, de acuerdo con lo establecido por el artículo 76.2.b) y c)",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-017",
+    "tema": 1,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el ámbito de sus competencias exclusivas, según el artículo 110 del Estatuto, corresponden a la Generalitat:",
+      "opciones": [
+        "La potestad reglamentaria y la función ejecutiva, pero no la legislativa",
+        "De forma íntegra, la potestad legislativa, la potestad reglamentaria y la función ejecutiva",
+        "La potestad legislativa en el marco de las bases que fije el Estado",
+        "Únicamente la función ejecutiva, incluida la organización de su administración"
+      ],
+      "explicacion": "El artículo 110.1 EAC atribuye a la Generalitat, en las competencias exclusivas, de forma íntegra la potestad legislativa, la reglamentaria y la función ejecutiva. El marco de las bases estatales es propio de las competencias compartidas (art. 111)."
+    },
+    "ca": {
+      "enunciado": "En l'àmbit de les seves competències exclusives, segons l'article 110 de l'Estatut, corresponen a la Generalitat:",
+      "opciones": [
+        "La potestat reglamentària i la funció executiva, però no la legislativa",
+        "De manera íntegra, la potestat legislativa, la potestat reglamentària i la funció executiva",
+        "La potestat legislativa en el marc de les bases que fixi l'Estat",
+        "Únicament la funció executiva, inclosa l'organització de la seva administració"
+      ],
+      "explicacion": "L'article 110.1 EAC atribueix a la Generalitat, en les competències exclusives, de manera íntegra la potestat legislativa, la reglamentària i la funció executiva. El marc de les bases estatals és propi de les competències compartides (art. 111)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "110.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a110"
+    },
+    "cita": "Corresponden a la Generalitat, en el ámbito de sus competencias exclusivas, de forma íntegra la potestad legislativa, la potestad reglamentaria y la función ejecutiva",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-018",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una materia en la que el Estatuto atribuye a la Generalitat solo competencia ejecutiva, el Gobierno pretende aprobar un decreto. ¿Qué alcance puede tener esa norma?",
+      "opciones": [
+        "Puede aprobar disposiciones para la ejecución de la normativa del Estado",
+        "Puede regular la materia de forma íntegra, con preferencia sobre el derecho estatal",
+        "Puede desarrollar las bases estatales y establecer políticas propias por ley",
+        "No puede aprobarlo, porque en las competencias ejecutivas no hay potestad reglamentaria"
+      ],
+      "explicacion": "El artículo 112 EAC incluye en las competencias ejecutivas la potestad reglamentaria para ejecutar la normativa del Estado, además de la función ejecutiva y la organización de la propia administración."
+    },
+    "ca": {
+      "enunciado": "En una matèria en què l'Estatut atribueix a la Generalitat només competència executiva, el Govern vol aprovar un decret. Quin abast pot tenir aquesta norma?",
+      "opciones": [
+        "Pot aprovar disposicions per a l'execució de la normativa de l'Estat",
+        "Pot regular la matèria de manera íntegra, amb preferència sobre el dret estatal",
+        "Pot desplegar les bases estatals i establir polítiques pròpies per llei",
+        "No el pot aprovar, perquè en les competències executives no hi ha potestat reglamentària"
+      ],
+      "explicacion": "L'article 112 EAC inclou en les competències executives la potestat reglamentària per executar la normativa de l'Estat, a més de la funció executiva i l'organització de la pròpia administració."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2006-13087",
+      "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña",
+      "articulo": "112",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-13087#a112"
+    },
+    "cita": "Corresponde a la Generalitat en el ámbito de sus competencias ejecutivas, la potestad reglamentaria, que comprende la aprobación de disposiciones para la ejecución de la normativa del Estado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-019",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La primera votación de investidura en el Parlamento de Cataluña se celebra el 10 de marzo y, tras sucesivas propuestas, ningún candidato resulta elegido. ¿Qué sucede?",
+      "opciones": [
+        "El 10 de abril la legislatura queda disuelta automáticamente y las elecciones deben celebrarse entre 40 y 60 días después de la convocatoria",
+        "El 10 de mayo la legislatura queda disuelta automáticamente y las elecciones deben celebrarse entre 30 y 45 días después de la convocatoria",
+        "El 10 de junio la legislatura queda disuelta automáticamente y las elecciones deben celebrarse entre 54 y 60 días después de la convocatoria",
+        "El 10 de mayo la legislatura queda disuelta automáticamente y las elecciones deben celebrarse entre 40 y 60 días después de la convocatoria"
+      ],
+      "explicacion": "El artículo 4.7 de la Ley 13/2008 (y el art. 67.3 EAC) dispone la disolución automática transcurridos dos meses desde la primera votación de investidura, y elecciones entre cuarenta y sesenta días después de la convocatoria."
+    },
+    "ca": {
+      "enunciado": "La primera votació d'investidura al Parlament de Catalunya se celebra el 10 de març i, després de propostes successives, cap candidat no resulta elegit. Què passa?",
+      "opciones": [
+        "El 10 d'abril la legislatura queda dissolta automàticament i les eleccions s'han de fer entre 40 i 60 dies després de la convocatòria",
+        "El 10 de maig la legislatura queda dissolta automàticament i les eleccions s'han de fer entre 30 i 45 dies després de la convocatòria",
+        "El 10 de juny la legislatura queda dissolta automàticament i les eleccions s'han de fer entre 54 i 60 dies després de la convocatòria",
+        "El 10 de maig la legislatura queda dissolta automàticament i les eleccions s'han de fer entre 40 i 60 dies després de la convocatòria"
+      ],
+      "explicacion": "L'article 4.7 de la Llei 13/2008 (i l'art. 67.3 EAC) disposa la dissolució automàtica un cop transcorreguts dos mesos des de la primera votació d'investidura, i eleccions entre quaranta i seixanta dies després de la convocatòria."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "4.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a4"
+    },
+    "cita": "Si transcurridos dos meses desde la primera votación de investidura no ha sido elegido ningún candidato o candidata, la legislatura queda disuelta automáticamente",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-020",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 13/2008, el nombramiento del presidente o presidenta de la Generalitat tiene efectos a partir de la toma de posesión, que debe celebrarse:",
+      "opciones": [
+        "En el plazo de diez días a partir de la investidura",
+        "En el plazo de quince días a partir de la publicación en el DOGC",
+        "En el plazo de cinco días a partir del nombramiento",
+        "En el plazo de un mes a partir del nombramiento"
+      ],
+      "explicacion": "El artículo 5.2 de la Ley 13/2008 fija la toma de posesión en el plazo de cinco días desde el nombramiento, que se publica en el DOGC."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 13/2008, el nomenament del president o presidenta de la Generalitat té efectes a partir de la presa de possessió, que s'ha de fer:",
+      "opciones": [
+        "En el termini de deu dies a partir de la investidura",
+        "En el termini de quinze dies a partir de la publicació al DOGC",
+        "En el termini de cinc dies a partir del nomenament",
+        "En el termini d'un mes a partir del nomenament"
+      ],
+      "explicacion": "L'article 5.2 de la Llei 13/2008 fixa la presa de possessió en el termini de cinc dies des del nomenament, que es publica al DOGC."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "5.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a5"
+    },
+    "cita": "tiene efectos a partir de la toma de posesión, que debe celebrarse en el plazo de cinco días a partir del nombramiento",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-021",
+    "tema": 1,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El cese del presidente o presidenta de la Generalitat por incapacidad permanente, física o mental, debe ser:",
+      "opciones": [
+        "Solicitado por una quinta parte de los diputados y reconocido por la mayoría absoluta",
+        "Solicitado por la mayoría absoluta de los diputados y reconocido por una mayoría de dos tercios",
+        "Solicitado por el Gobierno y reconocido por la mayoría absoluta del Parlamento",
+        "Solicitado por dos grupos parlamentarios y reconocido por una mayoría de tres quintos"
+      ],
+      "explicacion": "El artículo 7.1.d) de la Ley 13/2008 exige que la incapacidad sea solicitada por la mayoría absoluta de los diputados y reconocida por dos tercios. La quinta parte de los diputados es el requisito de la moción de censura."
+    },
+    "ca": {
+      "enunciado": "El cessament del president o presidenta de la Generalitat per incapacitat permanent, física o mental, ha de ser:",
+      "opciones": [
+        "Sol·licitat per una cinquena part dels diputats i reconegut per la majoria absoluta",
+        "Sol·licitat per la majoria absoluta dels diputats i reconegut per una majoria de dos terços",
+        "Sol·licitat pel Govern i reconegut per la majoria absoluta del Parlament",
+        "Sol·licitat per dos grups parlamentaris i reconegut per una majoria de tres cinquenes parts"
+      ],
+      "explicacion": "L'article 7.1.d) de la Llei 13/2008 exigeix que la incapacitat sigui sol·licitada per la majoria absoluta dels diputats i reconeguda per dos terços. La cinquena part dels diputats és el requisit de la moció de censura."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "7.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a7"
+    },
+    "cita": "Por incapacidad permanente, física o mental, que lo inhabilite para el ejercicio del cargo, que debe ser solicitada por la mayoría absoluta de los diputados y reconocida por una mayoría de dos tercios",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-022",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "El Gobierno está formado por el presidente y doce consejeros. A una reunión asisten el presidente y cinco consejeros. ¿Son válidas sus deliberaciones y decisiones?",
+      "opciones": [
+        "No, porque deben estar presentes por lo menos la mitad de los consejeros, es decir, seis",
+        "Sí, porque basta la presencia del presidente y de un tercio de los consejeros",
+        "Sí, porque en caso de empate el voto del presidente es dirimente",
+        "No, porque deben estar presentes al menos dos tercios de los consejeros"
+      ],
+      "explicacion": "El artículo 28.2 de la Ley 13/2008 exige la presencia del presidente (o quien lo supla) y de por lo menos la mitad de los consejeros: con doce, hacen falta seis. El voto dirimente (art. 29.1) solo opera en la votación."
+    },
+    "ca": {
+      "enunciado": "El Govern està format pel president i dotze consellers. A una reunió hi assisteixen el president i cinc consellers. Són vàlides les seves deliberacions i decisions?",
+      "opciones": [
+        "No, perquè hi han de ser presents almenys la meitat dels consellers, és a dir, sis",
+        "Sí, perquè n'hi ha prou amb la presència del president i d'un terç dels consellers",
+        "Sí, perquè en cas d'empat el vot del president és diriment",
+        "No, perquè hi han de ser presents almenys dos terços dels consellers"
+      ],
+      "explicacion": "L'article 28.2 de la Llei 13/2008 exigeix la presència del president (o qui el supleixi) i d'almenys la meitat dels consellers: amb dotze, en calen sis. El vot diriment (art. 29.1) només opera en la votació."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "28.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a28"
+    },
+    "cita": "es preciso que estén presentes el presidente o presidenta de la Generalidad, o quien lo supla, y por lo menos la mitad de los consejeros",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-023",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Cuando el Gobierno de la Generalitat se halla en funciones, ¿cuál de las siguientes actuaciones puede llevar a cabo según la Ley 13/2008?",
+      "opciones": [
+        "Aprobar el proyecto de ley de presupuestos de la Generalitat",
+        "Presentar proyectos de ley al Parlamento",
+        "Dictar decretos legislativos",
+        "Dictar decretos ley, conforme al procedimiento y en los supuestos previstos"
+      ],
+      "explicacion": "El artículo 27 de la Ley 13/2008 prohíbe al Gobierno en funciones aprobar el proyecto de presupuestos, presentar proyectos de ley y dictar decretos legislativos, pero le permite dictar decretos ley."
+    },
+    "ca": {
+      "enunciado": "Quan el Govern de la Generalitat està en funcions, quina de les actuacions següents pot dur a terme segons la Llei 13/2008?",
+      "opciones": [
+        "Aprovar el projecte de llei de pressupostos de la Generalitat",
+        "Presentar projectes de llei al Parlament",
+        "Dictar decrets legislatius",
+        "Dictar decrets llei, d'acord amb el procediment i en els supòsits previstos"
+      ],
+      "explicacion": "L'article 27 de la Llei 13/2008 prohibeix al Govern en funcions aprovar el projecte de pressupostos, presentar projectes de llei i dictar decrets legislatius, però li permet dictar decrets llei."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "27",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a27"
+    },
+    "cita": "no puede aprobar el proyecto de ley de presupuestos de la Generalidad, ni presentar proyectos de ley al Parlamento, ni dictar decretos legislativos … puede dictar decretos ley",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t01-024",
+    "tema": 1,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 13/2008, la moción de censura debe ser propuesta como mínimo por:",
+      "opciones": [
+        "Una décima parte de los diputados o un grupo parlamentario",
+        "Una tercera parte de los diputados o tres grupos parlamentarios",
+        "Una quinta parte de los diputados o dos grupos parlamentarios",
+        "La mayoría absoluta de los diputados"
+      ],
+      "explicacion": "El artículo 43.1 de la Ley 13/2008 exige una quinta parte de los diputados o dos grupos parlamentarios, con un candidato que haya aceptado. La mayoría absoluta es la necesaria para aprobarla (art. 43.5)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 13/2008, la moció de censura l'ha de proposar com a mínim:",
+      "opciones": [
+        "Una desena part dels diputats o un grup parlamentari",
+        "Una tercera part dels diputats o tres grups parlamentaris",
+        "Una cinquena part dels diputats o dos grups parlamentaris",
+        "La majoria absoluta dels diputats"
+      ],
+      "explicacion": "L'article 43.1 de la Llei 13/2008 exigeix una cinquena part dels diputats o dos grups parlamentaris, amb un candidat que hagi acceptat. La majoria absoluta és la necessària per aprovar-la (art. 43.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2008-19526",
+      "norma": "Ley 13/2008, de 5 de noviembre, de la presidencia de la Generalidad y del Gobierno",
+      "articulo": "43.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-19526#a43"
+    },
+    "cita": "La moción de censura debe ser propuesta como mínimo por una quinta parte de los diputados o por dos grupos parlamentarios",
+    "origen": "ia"
+  }
+]

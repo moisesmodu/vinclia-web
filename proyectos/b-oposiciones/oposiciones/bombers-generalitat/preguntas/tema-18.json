@@ -1,0 +1,337 @@
+[
+  {
+    "id": "bomb-t18-001",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Reglamento General de Vehículos, los aparatos emisores de señales acústicas especiales:",
+      "opciones": [
+        "Solo se instalarán en vehículos que tengan el carácter de prioritarios, siempre que estén debidamente autorizados",
+        "Pueden instalarse en cualquier vehículo de motor que circule por vías interurbanas",
+        "Pueden instalarse en vehículos prioritarios sin necesidad de autorización",
+        "Son obligatorios en todos los vehículos que transportan mercancías peligrosas"
+      ],
+      "explicacion": "El artículo 11.7 del RGV reserva las señales acústicas especiales a los vehículos prioritarios, con autorización. Todos los vehículos de motor (salvo los motocultores conducidos a pie) llevan, además, un avisador acústico ordinario de sonido continuo y uniforme."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament general de vehicles, els aparells emissors de senyals acústics especials:",
+      "opciones": [
+        "Només s'instal·laran en vehicles que tinguin el caràcter de prioritaris, sempre que estiguin degudament autoritzats",
+        "Es poden instal·lar en qualsevol vehicle de motor que circuli per vies interurbanes",
+        "Es poden instal·lar en vehicles prioritaris sense necessitat d'autorització",
+        "Són obligatoris en tots els vehicles que transporten mercaderies perilloses"
+      ],
+      "explicacion": "L'article 11.7 del RGV reserva els senyals acústics especials als vehicles prioritaris, amb autorització. Tots els vehicles de motor (llevat dels motocultors conduïts a peu) porten, a més, un avisador acústic ordinari de so continu i uniforme."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-1826",
+      "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos",
+      "articulo": "11.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826#a11"
+    },
+    "cita": "Sólo en los vehículos que tengan el carácter de prioritarios se instalarán aparatos emisores de señales acústicas especiales, siempre que estén debidamente autorizados",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-002",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Reglamento General de Vehículos, debe llevar indicador de velocidad todo vehículo de motor capaz de alcanzar en llano una velocidad superior a:",
+      "opciones": [
+        "25 km/h",
+        "40 km/h",
+        "45 km/h",
+        "60 km/h"
+      ],
+      "explicacion": "Así lo establece el artículo 11.11 del RGV: el indicador de velocidad, en kilómetros por hora, es obligatorio a partir de una velocidad máxima en llano superior a 40 km/h."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament general de vehicles, ha de portar indicador de velocitat tot vehicle de motor capaç d'assolir en pla una velocitat superior a:",
+      "opciones": [
+        "25 km/h",
+        "40 km/h",
+        "45 km/h",
+        "60 km/h"
+      ],
+      "explicacion": "Així ho estableix l'article 11.11 del RGV: l'indicador de velocitat, en quilòmetres per hora, és obligatori a partir d'una velocitat màxima en pla superior a 40 km/h."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-1826",
+      "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos",
+      "articulo": "11.11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826#a11"
+    },
+    "cita": "Todo vehículo de motor capaz de alcanzar en llano una velocidad superior a los 40 kilómetros por hora deberá estar provisto de un indicador de velocidad en kilómetros por hora.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-003",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Como norma general, según el Reglamento General de Vehículos, un vehículo tractor puede arrastrar a la vez:",
+      "opciones": [
+        "Hasta dos remolques, si son ligeros",
+        "Un remolque y un semirremolque",
+        "Un solo remolque o semirremolque",
+        "Tantos remolques como permita su masa máxima autorizada"
+      ],
+      "explicacion": "El artículo 9.2 del RGV establece que, salvo excepciones reglamentarias, ningún vehículo tractor puede arrastrar a la vez más de un remolque o semirremolque."
+    },
+    "ca": {
+      "enunciado": "Com a norma general, segons el Reglament general de vehicles, un vehicle tractor pot arrossegar alhora:",
+      "opciones": [
+        "Fins a dos remolcs, si són lleugers",
+        "Un remolc i un semiremolc",
+        "Un sol remolc o semiremolc",
+        "Tants remolcs com permeti la seva massa màxima autoritzada"
+      ],
+      "explicacion": "L'article 9.2 del RGV estableix que, llevat d'excepcions reglamentàries, cap vehicle tractor no pot arrossegar alhora més d'un remolc o semiremolc."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-1826",
+      "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos",
+      "articulo": "9.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826#a9"
+    },
+    "cita": "Como norma general y salvo las excepciones reglamentariamente establecidas, ningún vehículo tractor podrá arrastrar a la vez más de un remolque o semirremolque.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-004",
+    "tema": 18,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el Reglamento General de Vehículos, una vez comprobada la identificación del vehículo, la inspección técnica versará sobre:",
+      "opciones": [
+        "Únicamente las condiciones de seguridad vial del vehículo",
+        "La vigencia del seguro obligatorio y el pago del impuesto de circulación",
+        "El estado del permiso de conducción del titular",
+        "Las condiciones relativas a seguridad vial, protección del medio ambiente, inscripciones reglamentarias y reformas"
+      ],
+      "explicacion": "El artículo 10.1 del RGV fija ese contenido e incluye también, en su caso, la vigencia de los certificados para el transporte de mercancías peligrosas y perecederas."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament general de vehicles, un cop comprovada la identificació del vehicle, la inspecció tècnica versarà sobre:",
+      "opciones": [
+        "Únicament les condicions de seguretat viària del vehicle",
+        "La vigència de l'assegurança obligatòria i el pagament de l'impost de circulació",
+        "L'estat del permís de conducció del titular",
+        "Les condicions relatives a seguretat viària, protecció del medi ambient, inscripcions reglamentàries i reformes"
+      ],
+      "explicacion": "L'article 10.1 del RGV fixa aquest contingut i inclou també, si escau, la vigència dels certificats per al transport de mercaderies perilloses i peribles."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-1826",
+      "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos",
+      "articulo": "10.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826#a10"
+    },
+    "cita": "La inspección técnica, una vez comprobada la identificación del vehículo, versará sobre las condiciones del vehículo relativas a seguridad vial, protección del medio ambiente, inscripciones reglamentarias, reformas",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-005",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el Reglamento General de Vehículos, las luces instaladas en un vehículo:",
+      "opciones": [
+        "Pueden ser intermitentes siempre que sean de color amarillo auto",
+        "No serán intermitentes ni de intensidad variable, salvo las indicadas en la reglamentación del anexo I",
+        "Pueden ser de intensidad variable si el vehículo es de servicio público",
+        "Solo pueden ser intermitentes durante la noche"
+      ],
+      "explicacion": "El artículo 15.2 del RGV prohíbe con carácter general las luces intermitentes o de intensidad variable y admite solo las excepciones previstas en la reglamentación del anexo I (por ejemplo, los indicadores de dirección)."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament general de vehicles, els llums instal·lats en un vehicle:",
+      "opciones": [
+        "Poden ser intermitents sempre que siguin de color groc auto",
+        "No seran intermitents ni d'intensitat variable, llevat dels indicats a la reglamentació de l'annex I",
+        "Poden ser d'intensitat variable si el vehicle és de servei públic",
+        "Només poden ser intermitents durant la nit"
+      ],
+      "explicacion": "L'article 15.2 del RGV prohibeix amb caràcter general els llums intermitents o d'intensitat variable i admet només les excepcions previstes a la reglamentació de l'annex I (per exemple, els indicadors de direcció)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1999-1826",
+      "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826#a15"
+    },
+    "cita": "Ninguna luz instalada en un vehículo será intermitente o de intensidad variable, a excepción de las indicadas en la reglamentación que se recoge en el anexo I.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-006",
+    "tema": 18,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la norma UNE-EN 1846-1, un vehículo contra incendios de clase M (media) tiene una masa máxima en carga:",
+      "opciones": [
+        "De más de 3 t y hasta 7,5 t",
+        "De hasta 3 t",
+        "De más de 7,5 t y hasta 16 t",
+        "De más de 16 t"
+      ],
+      "explicacion": "La UNE-EN 1846-1 clasifica los vehículos por masa en L (ligeros, más de 3 t y hasta 7,5 t), M (medios, más de 7,5 t y hasta 16 t) y S (superpesados, más de 16 t)."
+    },
+    "ca": {
+      "enunciado": "Segons la norma UNE-EN 1846-1, un vehicle contra incendis de classe M (mitjana) té una massa màxima en càrrega:",
+      "opciones": [
+        "De més de 3 t i fins a 7,5 t",
+        "De fins a 3 t",
+        "De més de 7,5 t i fins a 16 t",
+        "De més de 16 t"
+      ],
+      "explicacion": "La UNE-EN 1846-1 classifica els vehicles per massa en L (lleugers, més de 3 t i fins a 7,5 t), M (mitjans, més de 7,5 t i fins a 16 t) i S (superpesants, més de 16 t)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 · norma UNE-EN 1846-1 (vehículos contra incendios y de servicios auxiliares)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-007",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la norma UNE-EN 1846-1, la categoría 3 de un vehículo contra incendios indica que es:",
+      "opciones": [
+        "Un vehículo urbano",
+        "Un vehículo rural",
+        "Un vehículo de servicios auxiliares sin bomba",
+        "Un vehículo todo terreno"
+      ],
+      "explicacion": "Por su movilidad, la UNE-EN 1846-1 distingue la categoría 1 (urbana), la 2 (rural) y la 3 (todo terreno), esta última pensada para circular fuera de vías pavimentadas."
+    },
+    "ca": {
+      "enunciado": "Segons la norma UNE-EN 1846-1, la categoria 3 d'un vehicle contra incendis indica que és:",
+      "opciones": [
+        "Un vehicle urbà",
+        "Un vehicle rural",
+        "Un vehicle de serveis auxiliars sense bomba",
+        "Un vehicle tot terreny"
+      ],
+      "explicacion": "Per la mobilitat, la UNE-EN 1846-1 distingeix la categoria 1 (urbana), la 2 (rural) i la 3 (tot terreny), aquesta última pensada per circular fora de vies pavimentades."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 · norma UNE-EN 1846-1 (vehículos contra incendios y de servicios auxiliares)",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-008",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Antes de desplegar la escalera de un vehículo autoescala, hay que:",
+      "opciones": [
+        "Apoyar los estabilizadores sobre terreno firme y nivelar el vehículo",
+        "Desinflar parcialmente los neumáticos para bajar el centro de gravedad",
+        "Mantener el motor apagado durante toda la maniobra",
+        "Colocar el vehículo en la pendiente más pronunciada disponible"
+      ],
+      "explicacion": "Los estabilizadores amplían la base de apoyo y, junto con la nivelación, evitan el vuelco al extender y girar la escalera. Deben apoyarse sobre suelo resistente, con placas de reparto si es necesario."
+    },
+    "ca": {
+      "enunciado": "Abans de desplegar l'escala d'un vehicle autoescala, cal:",
+      "opciones": [
+        "Recolzar els estabilitzadors sobre terreny ferm i anivellar el vehicle",
+        "Desinflar parcialment els pneumàtics per abaixar el centre de gravetat",
+        "Mantenir el motor aturat durant tota la maniobra",
+        "Col·locar el vehicle en el pendent més pronunciat disponible"
+      ],
+      "explicacion": "Els estabilitzadors amplien la base de suport i, juntament amb l'anivellament, eviten la bolcada en estendre i girar l'escala. S'han de recolzar sobre terra resistent, amb plaques de repartiment si cal."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-009",
+    "tema": 18,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La misión principal de un vehículo nodriza en un servicio de extinción es:",
+      "opciones": [
+        "Trasladar al mando de la intervención",
+        "Transportar material de rescate en altura",
+        "Transportar una gran cantidad de agua para abastecer a otros vehículos",
+        "Iluminar la zona de intervención durante la noche"
+      ],
+      "explicacion": "El vehículo nodriza lleva una cisterna de gran capacidad y su función es alimentar a las autobombas que atacan el fuego, sobre todo donde no hay hidrantes cerca."
+    },
+    "ca": {
+      "enunciado": "La missió principal d'un vehicle nodrissa en un servei d'extinció és:",
+      "opciones": [
+        "Traslladar el comandament de la intervenció",
+        "Transportar material de rescat en alçada",
+        "Transportar una gran quantitat d'aigua per abastir altres vehicles",
+        "Il·luminar la zona d'intervenció durant la nit"
+      ],
+      "explicacion": "El vehicle nodrissa porta una cisterna de gran capacitat i la seva funció és alimentar les autobombes que ataquen el foc, sobretot on no hi ha hidrants a prop."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t18-010",
+    "tema": 18,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Qué ventaja principal ofrece un vehículo de brazo articulado frente a una autoescala de tramos rectos?",
+      "opciones": [
+        "Puede circular sin estabilizadores mientras trabaja",
+        "Sus tramos articulados permiten salvar obstáculos y alcanzar puntos situados detrás de ellos",
+        "No tiene limitación de carga en la cesta",
+        "Se puede usar en cualquier pendiente sin nivelar"
+      ],
+      "explicacion": "Gracias a sus articulaciones, el brazo puede pasar por encima de cornisas, árboles o cables y llegar a puntos sin acceso en línea recta; como la autoescala, necesita estabilizadores y respeta una carga máxima en la cesta."
+    },
+    "ca": {
+      "enunciado": "Quin avantatge principal ofereix un vehicle de braç articulat davant d'una autoescala de trams rectes?",
+      "opciones": [
+        "Pot circular sense estabilitzadors mentre treballa",
+        "Els seus trams articulats permeten salvar obstacles i arribar a punts situats darrere seu",
+        "No té limitació de càrrega a la cistella",
+        "Es pot utilitzar en qualsevol pendent sense anivellar"
+      ],
+      "explicacion": "Gràcies a les articulacions, el braç pot passar per sobre de cornises, arbres o cables i arribar a punts sense accés en línia recta; com l'autoescala, necessita estabilitzadors i respecta una càrrega màxima a la cistella."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

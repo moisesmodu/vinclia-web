@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t27-001",
+    "tema": 27,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el panel naranja de un vehículo que transporta mercancías peligrosas según el ADR, ¿qué indica el número de la mitad inferior?",
+      "opciones": [
+        "El número ONU de la materia",
+        "El número de identificación del peligro",
+        "La clase de peligro de la materia",
+        "El código de la empresa transportista"
+      ],
+      "explicacion": "En el panel naranja, la mitad superior lleva el número de identificación del peligro y la inferior el número ONU, de cuatro cifras, que identifica la materia concreta."
+    },
+    "ca": {
+      "enunciado": "Al panell taronja d'un vehicle que transporta mercaderies perilloses segons l'ADR, què indica el número de la meitat inferior?",
+      "opciones": [
+        "El número ONU de la matèria",
+        "El número d'identificació del perill",
+        "La classe de perill de la matèria",
+        "El codi de l'empresa transportista"
+      ],
+      "explicacion": "Al panell taronja, la meitat superior porta el número d'identificació del perill i la inferior el número ONU, de quatre xifres, que identifica la matèria concreta."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ADR · Acuerdo Europeo relativo al Transporte Internacional de Mercancías Peligrosas por Carretera (UNECE), capítulos 5.2 y 5.3",
+      "url": "https://unece.org/transport/dangerous-goods"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-002",
+    "tema": 27,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Si el número de identificación del peligro de un panel naranja va precedido de la letra X, significa que la materia...",
+      "opciones": [
+        "es explosiva",
+        "es radiactiva",
+        "reacciona peligrosamente con el agua",
+        "se transporta a temperatura elevada"
+      ],
+      "explicacion": "Según el ADR, la letra X delante del número de peligro indica que la materia reacciona de forma peligrosa con el agua, por lo que no debe usarse agua salvo autorización de expertos."
+    },
+    "ca": {
+      "enunciado": "Si el número d'identificació del perill d'un panell taronja va precedit de la lletra X, vol dir que la matèria...",
+      "opciones": [
+        "és explosiva",
+        "és radioactiva",
+        "reacciona perillosament amb l'aigua",
+        "es transporta a temperatura elevada"
+      ],
+      "explicacion": "Segons l'ADR, la lletra X davant del número de perill indica que la matèria reacciona de manera perillosa amb l'aigua, per la qual cosa no s'ha d'utilitzar aigua llevat d'autorització d'experts."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ADR · Acuerdo Europeo relativo al Transporte Internacional de Mercancías Peligrosas por Carretera (UNECE), capítulos 5.2 y 5.3",
+      "url": "https://unece.org/transport/dangerous-goods"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-003",
+    "tema": 27,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En el panel naranja, ¿qué indica el número de identificación del peligro 33?",
+      "opciones": [
+        "Gas muy inflamable",
+        "Líquido muy inflamable",
+        "Sólido muy inflamable",
+        "Materia muy comburente"
+      ],
+      "explicacion": "La primera cifra 3 indica líquido inflamable y su repetición señala una intensificación del peligro: 33 es un líquido muy inflamable. Los gases empiezan por 2, los sólidos inflamables por 4 y las materias comburentes por 5."
+    },
+    "ca": {
+      "enunciado": "Al panell taronja, què indica el número d'identificació del perill 33?",
+      "opciones": [
+        "Gas molt inflamable",
+        "Líquid molt inflamable",
+        "Sòlid molt inflamable",
+        "Matèria molt comburent"
+      ],
+      "explicacion": "La primera xifra 3 indica líquid inflamable i la seva repetició assenyala una intensificació del perill: 33 és un líquid molt inflamable. Els gasos comencen per 2, els sòlids inflamables per 4 i les matèries comburents per 5."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ADR · Acuerdo Europeo relativo al Transporte Internacional de Mercancías Peligrosas por Carretera (UNECE), capítulos 5.2 y 5.3",
+      "url": "https://unece.org/transport/dangerous-goods"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-004",
+    "tema": 27,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "En un incidente NRBQ, ¿en qué zona se sitúa habitualmente el corredor de descontaminación?",
+      "opciones": [
+        "En la zona caliente",
+        "En la zona fría",
+        "En la zona templada",
+        "Fuera de cualquier zona delimitada"
+      ],
+      "explicacion": "La zona caliente es la de intervención, donde está el riesgo; la templada es la de transición, donde se instala la descontaminación de personas y equipos que salen de la caliente; la fría es la zona limpia de apoyo."
+    },
+    "ca": {
+      "enunciado": "En un incident NRBQ, a quina zona se situa habitualment el corredor de descontaminació?",
+      "opciones": [
+        "A la zona calenta",
+        "A la zona freda",
+        "A la zona temperada",
+        "Fora de qualsevol zona delimitada"
+      ],
+      "explicacion": "La zona calenta és la d'intervenció, on hi ha el risc; la temperada és la de transició, on s'instal·la la descontaminació de persones i equips que surten de la calenta; la freda és la zona neta de suport."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-005",
+    "tema": 27,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿En qué zona se ubican el puesto de mando y los medios de apoyo en un incidente NRBQ?",
+      "opciones": [
+        "En la zona caliente, junto al foco",
+        "En el límite entre la zona caliente y la templada",
+        "En la zona templada, junto a la descontaminación",
+        "En la zona fría"
+      ],
+      "explicacion": "El puesto de mando, la reserva de medios y los servicios de apoyo se sitúan en la zona fría, libre de contaminación y fuera del alcance del riesgo."
+    },
+    "ca": {
+      "enunciado": "A quina zona s'ubiquen el lloc de comandament i els mitjans de suport en un incident NRBQ?",
+      "opciones": [
+        "A la zona calenta, al costat del focus",
+        "Al límit entre la zona calenta i la temperada",
+        "A la zona temperada, al costat de la descontaminació",
+        "A la zona freda"
+      ],
+      "explicacion": "El lloc de comandament, la reserva de mitjans i els serveis de suport se situen a la zona freda, lliure de contaminació i fora de l'abast del risc."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-006",
+    "tema": 27,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Cómo debe realizarse la aproximación a un accidente con fuga de una sustancia peligrosa?",
+      "opciones": [
+        "Con el viento de espaldas y, si es posible, desde una cota más alta",
+        "Con el viento de cara y desde una cota más baja",
+        "Desde la dirección hacia la que se desplaza la nube",
+        "Por la cota más baja, donde se acumulan menos vapores"
+      ],
+      "explicacion": "Llegar con el viento a la espalda (viento arriba) y desde una posición elevada aleja al equipo de la nube y de los vapores, muchos de los cuales son más densos que el aire y se acumulan en las zonas bajas."
+    },
+    "ca": {
+      "enunciado": "Com s'ha de fer l'aproximació a un accident amb fuita d'una substància perillosa?",
+      "opciones": [
+        "Amb el vent d'esquena i, si és possible, des d'una cota més alta",
+        "Amb el vent de cara i des d'una cota més baixa",
+        "Des de la direcció cap on es desplaça el núvol",
+        "Per la cota més baixa, on s'acumulen menys vapors"
+      ],
+      "explicacion": "Arribar amb el vent a l'esquena (vent amunt) i des d'una posició elevada allunya l'equip del núvol i dels vapors, molts dels quals són més densos que l'aire i s'acumulen a les zones baixes."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-007",
+    "tema": 27,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una placa-etiqueta ADR con la cifra 8 en el vértice inferior identifica materias...",
+      "opciones": [
+        "tóxicas",
+        "radiactivas",
+        "comburentes",
+        "corrosivas"
+      ],
+      "explicacion": "La cifra del vértice inferior de la placa-etiqueta indica la clase ADR: la clase 8 corresponde a las materias corrosivas. Las tóxicas son la 6.1, las radiactivas la 7 y las comburentes la 5.1."
+    },
+    "ca": {
+      "enunciado": "Una placa-etiqueta ADR amb la xifra 8 al vèrtex inferior identifica matèries...",
+      "opciones": [
+        "tòxiques",
+        "radioactives",
+        "comburents",
+        "corrosives"
+      ],
+      "explicacion": "La xifra del vèrtex inferior de la placa-etiqueta indica la classe ADR: la classe 8 correspon a les matèries corrosives. Les tòxiques són la 6.1, les radioactives la 7 i les comburents la 5.1."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ADR · Acuerdo Europeo relativo al Transporte Internacional de Mercancías Peligrosas por Carretera (UNECE), capítulos 5.2 y 5.3",
+      "url": "https://unece.org/transport/dangerous-goods"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-008",
+    "tema": 27,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuáles son los tres factores básicos de protección frente a la radiación ionizante externa?",
+      "opciones": [
+        "Ventilación, descontaminación y filtración",
+        "Tiempo, distancia y blindaje",
+        "Temperatura, presión y humedad",
+        "Detección, confinamiento y dilución"
+      ],
+      "explicacion": "La dosis recibida disminuye al reducir el tiempo de exposición, al aumentar la distancia a la fuente y al interponer un blindaje entre la fuente y las personas."
+    },
+    "ca": {
+      "enunciado": "Quins són els tres factors bàsics de protecció davant la radiació ionitzant externa?",
+      "opciones": [
+        "Ventilació, descontaminació i filtració",
+        "Temps, distància i blindatge",
+        "Temperatura, pressió i humitat",
+        "Detecció, confinament i dilució"
+      ],
+      "explicacion": "La dosi rebuda disminueix en reduir el temps d'exposició, en augmentar la distància a la font i en interposar un blindatge entre la font i les persones."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-009",
+    "tema": 27,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la clasificación europea de la ropa de protección química, ¿qué tipo corresponde al traje estanco a gases?",
+      "opciones": [
+        "Tipo 4",
+        "Tipo 5",
+        "Tipo 1",
+        "Tipo 3"
+      ],
+      "explicacion": "El tipo 1 (UNE-EN 943) es el traje estanco a gases. Los tipos 3 y 4 protegen frente a productos líquidos en forma de chorro y pulverizados, respectivamente, y el tipo 5 frente a partículas sólidas."
+    },
+    "ca": {
+      "enunciado": "Segons la classificació europea de la roba de protecció química, quin tipus correspon al vestit estanc a gasos?",
+      "opciones": [
+        "Tipus 4",
+        "Tipus 5",
+        "Tipus 1",
+        "Tipus 3"
+      ],
+      "explicacion": "El tipus 1 (UNE-EN 943) és el vestit estanc a gasos. Els tipus 3 i 4 protegeixen davant de productes líquids en forma de raig i polvoritzats, respectivament, i el tipus 5 davant de partícules sòlides."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t27-010",
+    "tema": 27,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En el número de identificación del peligro, ¿qué significa un 0 como segunda cifra (por ejemplo, 30)?",
+      "opciones": [
+        "Que el peligro queda suficientemente indicado por la primera cifra",
+        "Que la materia se transporta vacía o sin limpiar",
+        "Que el peligro principal es de intensidad reducida",
+        "Que la materia no reacciona con el agua"
+      ],
+      "explicacion": "El ADR establece que, cuando el peligro de una materia puede indicarse suficientemente con una sola cifra, esta se completa con un cero. La reacción peligrosa con el agua se indica con la letra X."
+    },
+    "ca": {
+      "enunciado": "En el número d'identificació del perill, què vol dir un 0 com a segona xifra (per exemple, 30)?",
+      "opciones": [
+        "Que el perill queda prou indicat per la primera xifra",
+        "Que la matèria es transporta buida o sense netejar",
+        "Que el perill principal és d'intensitat reduïda",
+        "Que la matèria no reacciona amb l'aigua"
+      ],
+      "explicacion": "L'ADR estableix que, quan el perill d'una matèria es pot indicar prou amb una sola xifra, aquesta es completa amb un zero. La reacció perillosa amb l'aigua s'indica amb la lletra X."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ADR · Acuerdo Europeo relativo al Transporte Internacional de Mercancías Peligrosas por Carretera (UNECE), capítulos 5.2 y 5.3",
+      "url": "https://unece.org/transport/dangerous-goods"
+    },
+    "origen": "ia"
+  }
+]

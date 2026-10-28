@@ -1,0 +1,322 @@
+[
+  {
+    "id": "bomb-t13-001",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según el principio de Pascal, la presión ejercida sobre un líquido en reposo contenido en un recipiente cerrado:",
+      "opciones": [
+        "Se transmite solo en la dirección en que se aplica la fuerza",
+        "Se transmite íntegramente y por igual en todas las direcciones",
+        "Disminuye en proporción a la distancia al punto de aplicación",
+        "Se transforma íntegramente en energía cinética del líquido"
+      ],
+      "explicacion": "El principio de Pascal establece que la presión aplicada a un fluido en reposo y confinado se transmite sin pérdida a todos sus puntos y en todas las direcciones. Es la base de los equipos hidráulicos (separadores, cizallas, gatos)."
+    },
+    "ca": {
+      "enunciado": "Segons el principi de Pascal, la pressió exercida sobre un líquid en repòs contingut en un recipient tancat:",
+      "opciones": [
+        "Es transmet només en la direcció en què s'aplica la força",
+        "Es transmet íntegrament i per igual en totes les direccions",
+        "Disminueix en proporció a la distància al punt d'aplicació",
+        "Es transforma íntegrament en energia cinètica del líquid"
+      ],
+      "explicacion": "El principi de Pascal estableix que la pressió aplicada a un fluid en repòs i confinat es transmet sense pèrdua a tots els seus punts i en totes les direccions. És la base dels equips hidràulics (separadors, cisalles, gats)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-002",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Con el mismo caudal y la misma longitud de tendido, si se sustituye una manguera de 25 mm por otra de 45 mm, la pérdida de carga por rozamiento:",
+      "opciones": [
+        "Aumenta, porque hay más superficie de contacto con el agua",
+        "Se mantiene igual, porque solo depende del caudal",
+        "Aumenta, porque el agua circula a mayor velocidad",
+        "Disminuye, porque el agua circula a menor velocidad"
+      ],
+      "explicacion": "Para un mismo caudal, una sección mayor implica menor velocidad del agua y, por tanto, menor pérdida de carga. Por eso los tendidos largos o de gran caudal se hacen con mangueras de mayor diámetro."
+    },
+    "ca": {
+      "enunciado": "Amb el mateix cabal i la mateixa longitud d'estesa, si se substitueix una mànega de 25 mm per una de 45 mm, la pèrdua de càrrega per fricció:",
+      "opciones": [
+        "Augmenta, perquè hi ha més superfície de contacte amb l'aigua",
+        "Es manté igual, perquè només depèn del cabal",
+        "Augmenta, perquè l'aigua circula a més velocitat",
+        "Disminueix, perquè l'aigua circula a menys velocitat"
+      ],
+      "explicacion": "Per a un mateix cabal, una secció més gran implica menys velocitat de l'aigua i, per tant, menys pèrdua de càrrega. Per això les esteses llargues o de gran cabal es fan amb mànegues de diàmetre més gran."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-003",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Manteniendo el caudal y el diámetro, si se duplica la longitud de un tendido de mangueras, la pérdida de carga por rozamiento:",
+      "opciones": [
+        "Se duplica aproximadamente",
+        "Se cuadruplica aproximadamente",
+        "Se reduce a la mitad",
+        "No varía, porque solo depende del diámetro"
+      ],
+      "explicacion": "La pérdida de carga por rozamiento es proporcional a la longitud de la conducción: el doble de metros de manguera supone, aproximadamente, el doble de pérdida. Lo que crece con el cuadrado es la dependencia respecto al caudal, no respecto a la longitud."
+    },
+    "ca": {
+      "enunciado": "Mantenint el cabal i el diàmetre, si es duplica la longitud d'una estesa de mànegues, la pèrdua de càrrega per fricció:",
+      "opciones": [
+        "Es duplica aproximadament",
+        "Es quadruplica aproximadament",
+        "Es redueix a la meitat",
+        "No varia, perquè només depèn del diàmetre"
+      ],
+      "explicacion": "La pèrdua de càrrega per fricció és proporcional a la longitud de la conducció: el doble de metres de mànega suposa, aproximadament, el doble de pèrdua. El que creix amb el quadrat és la dependència respecte del cabal, no respecte de la longitud."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-004",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Sin tener en cuenta las pérdidas por rozamiento, ¿qué presión aproximada hace falta solo para vencer un desnivel de 30 m?",
+      "opciones": [
+        "0,3 bar",
+        "30 bar",
+        "3 bar",
+        "1 bar"
+      ],
+      "explicacion": "Una columna de agua de 10 m equivale aproximadamente a 1 bar; por tanto, 30 m de desnivel suponen unos 3 bar que la bomba debe aportar además de las pérdidas por rozamiento."
+    },
+    "ca": {
+      "enunciado": "Sense tenir en compte les pèrdues per fricció, quina pressió aproximada cal només per vèncer un desnivell de 30 m?",
+      "opciones": [
+        "0,3 bar",
+        "30 bar",
+        "3 bar",
+        "1 bar"
+      ],
+      "explicacion": "Una columna d'aigua de 10 m equival aproximadament a 1 bar; per tant, 30 m de desnivell suposen uns 3 bar que la bomba ha d'aportar a més de les pèrdues per fricció."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-005",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El golpe de ariete en una instalación de mangueras se produce, sobre todo, cuando:",
+      "opciones": [
+        "Se abre lentamente la lanza",
+        "Se cierra bruscamente una lanza o una válvula",
+        "La bomba aspira con muy poca altura geométrica",
+        "Se utilizan mangueras de gran diámetro"
+      ],
+      "explicacion": "Al detener de golpe la columna de agua en movimiento, su energía se transforma en una sobrepresión que recorre la instalación y puede reventar mangueras o dañar la bomba. Se previene abriendo y cerrando lanzas y válvulas de forma progresiva."
+    },
+    "ca": {
+      "enunciado": "El cop d'ariet en una instal·lació de mànegues es produeix, sobretot, quan:",
+      "opciones": [
+        "S'obre lentament la llança",
+        "Es tanca bruscament una llança o una vàlvula",
+        "La bomba aspira amb molt poca altura geomètrica",
+        "S'utilitzen mànegues de gran diàmetre"
+      ],
+      "explicacion": "En aturar de cop la columna d'aigua en moviment, la seva energia es transforma en una sobrepressió que recorre la instal·lació i pot rebentar mànegues o danyar la bomba. Es prevé obrint i tancant llances i vàlvules de manera progressiva."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-006",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Por qué una bomba centrífuga necesita un dispositivo de cebado para aspirar agua de un depósito abierto situado por debajo de ella?",
+      "opciones": [
+        "Porque, llena de aire, no genera la depresión suficiente para elevar el agua por el tubo de aspiración",
+        "Porque el rodete gira en sentido contrario mientras dura la aspiración",
+        "Porque el agua debe llegar a la bomba a una presión superior a la atmosférica",
+        "Porque la voluta necesita lubricarse con aceite antes de empezar a girar"
+      ],
+      "explicacion": "La bomba centrífuga impulsa líquidos, pero girando en vacío con aire no crea la depresión necesaria para que la presión atmosférica empuje el agua hasta el rodete. El cebador (bomba de vacío) extrae el aire de la aspiración y del cuerpo de bomba."
+    },
+    "ca": {
+      "enunciado": "Per què una bomba centrífuga necessita un dispositiu d'encebament per aspirar aigua d'un dipòsit obert situat per sota seu?",
+      "opciones": [
+        "Perquè, plena d'aire, no genera la depressió suficient per elevar l'aigua pel tub d'aspiració",
+        "Perquè el rodet gira en sentit contrari mentre dura l'aspiració",
+        "Perquè l'aigua ha d'arribar a la bomba a una pressió superior a l'atmosfèrica",
+        "Perquè la voluta necessita lubricar-se amb oli abans de començar a girar"
+      ],
+      "explicacion": "La bomba centrífuga impulsa líquids, però girant en buit amb aire no crea la depressió necessària perquè la pressió atmosfèrica empenyi l'aigua fins al rodet. L'encebador (bomba de buit) extreu l'aire de l'aspiració i del cos de bomba."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-007",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Al nivel del mar, ¿cuál es la altura máxima teórica de aspiración de una bomba?",
+      "opciones": [
+        "Unos 7 m",
+        "Unos 15 m",
+        "Unos 5 m",
+        "Unos 10,33 m"
+      ],
+      "explicacion": "Es la altura de la columna de agua que equilibra la presión atmosférica normal (1 atm ≈ 10,33 m c.a.). En la práctica la altura útil es menor por las pérdidas en la aspiración y la tensión de vapor del agua, y disminuye con la altitud."
+    },
+    "ca": {
+      "enunciado": "Al nivell del mar, quina és l'altura màxima teòrica d'aspiració d'una bomba?",
+      "opciones": [
+        "Uns 7 m",
+        "Uns 15 m",
+        "Uns 5 m",
+        "Uns 10,33 m"
+      ],
+      "explicacion": "És l'altura de la columna d'aigua que equilibra la pressió atmosfèrica normal (1 atm ≈ 10,33 m c.a.). A la pràctica l'altura útil és menor per les pèrdues a l'aspiració i la tensió de vapor de l'aigua, i disminueix amb l'altitud."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-008",
+    "tema": 13,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La cavitación en una bomba centrífuga consiste en:",
+      "opciones": [
+        "La entrada de aire por una junta defectuosa del colector de impulsión",
+        "El sobrecalentamiento del motor por funcionar sin dar caudal",
+        "La formación y el colapso de burbujas de vapor cuando la presión a la entrada del rodete baja hasta la tensión de vapor del agua",
+        "La pérdida de presión debida al rozamiento en las mangueras de impulsión"
+      ],
+      "explicacion": "Si la presión en la aspiración baja demasiado (aspiración excesiva, filtro obstruido, agua caliente), el agua se vaporiza y las burbujas implotan al llegar a zonas de mayor presión: ruido, vibraciones, caída de rendimiento y erosión del rodete."
+    },
+    "ca": {
+      "enunciado": "La cavitació en una bomba centrífuga consisteix en:",
+      "opciones": [
+        "L'entrada d'aire per una junta defectuosa del col·lector d'impulsió",
+        "El sobreescalfament del motor per funcionar sense donar cabal",
+        "La formació i el col·lapse de bombolles de vapor quan la pressió a l'entrada del rodet baixa fins a la tensió de vapor de l'aigua",
+        "La pèrdua de pressió deguda a la fricció a les mànegues d'impulsió"
+      ],
+      "explicacion": "Si la pressió a l'aspiració baixa massa (aspiració excessiva, filtre obstruït, aigua calenta), l'aigua es vaporitza i les bombolles implosionen en arribar a zones de més pressió: soroll, vibracions, caiguda de rendiment i erosió del rodet."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-009",
+    "tema": 13,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En una bomba centrífuga, ¿qué elemento transforma buena parte de la energía cinética que el rodete comunica al agua en energía de presión?",
+      "opciones": [
+        "La voluta o el difusor",
+        "El eje del rodete",
+        "El dispositivo de cebado",
+        "La válvula de pie de la aspiración"
+      ],
+      "explicacion": "El rodete acelera el agua por fuerza centrífuga; la voluta (cuerpo en espiral de sección creciente) o el difusor la frenan progresivamente y convierten esa velocidad en presión a la salida."
+    },
+    "ca": {
+      "enunciado": "En una bomba centrífuga, quin element transforma bona part de l'energia cinètica que el rodet comunica a l'aigua en energia de pressió?",
+      "opciones": [
+        "La voluta o el difusor",
+        "L'eix del rodet",
+        "El dispositiu d'encebament",
+        "La vàlvula de peu de l'aspiració"
+      ],
+      "explicacion": "El rodet accelera l'aigua per força centrífuga; la voluta (cos en espiral de secció creixent) o el difusor la frenen progressivament i converteixen aquesta velocitat en pressió a la sortida."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t13-010",
+    "tema": 13,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Dos bombas centrífugas iguales acopladas en serie (la impulsión de la primera alimenta la aspiración de la segunda) permiten, respecto a una sola bomba:",
+      "opciones": [
+        "Duplicar aproximadamente el caudal con la misma presión",
+        "Reducir la presión a la mitad con el mismo caudal",
+        "Duplicar a la vez el caudal y la presión",
+        "Aumentar la presión manteniendo aproximadamente el mismo caudal"
+      ],
+      "explicacion": "En serie se suman las alturas (presiones) con el mismo caudal; en paralelo se suman los caudales a la misma presión. Es el fundamento de las bombas multietapa y de los relevos en tendidos largos o con mucho desnivel."
+    },
+    "ca": {
+      "enunciado": "Dues bombes centrífugues iguals acoblades en sèrie (la impulsió de la primera alimenta l'aspiració de la segona) permeten, respecte d'una sola bomba:",
+      "opciones": [
+        "Duplicar aproximadament el cabal amb la mateixa pressió",
+        "Reduir la pressió a la meitat amb el mateix cabal",
+        "Duplicar alhora el cabal i la pressió",
+        "Augmentar la pressió mantenint aproximadament el mateix cabal"
+      ],
+      "explicacion": "En sèrie se sumen les altures (pressions) amb el mateix cabal; en paral·lel se sumen els cabals a la mateixa pressió. És el fonament de les bombes multietapa i dels relleus en esteses llargues o amb molt desnivell."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]

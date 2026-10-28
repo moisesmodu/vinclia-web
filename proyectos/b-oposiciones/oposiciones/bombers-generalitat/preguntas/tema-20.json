@@ -1,0 +1,340 @@
+[
+  {
+    "id": "bomb-t20-001",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Real Decreto 773/1997, se entiende por «equipo de protección individual»:",
+      "opciones": [
+        "Cualquier equipo destinado a ser llevado o sujetado por el trabajador para que le proteja de uno o varios riesgos que puedan amenazar su seguridad o su salud",
+        "Cualquier medio técnico de protección colectiva instalado en el lugar de trabajo",
+        "La ropa de trabajo corriente y los uniformes facilitados por la empresa",
+        "Los aparatos portátiles para la detección y señalización de riesgos"
+      ],
+      "explicacion": "Es la definición del artículo 2.1, que incluye también cualquier complemento o accesorio destinado a tal fin. La ropa de trabajo corriente y los detectores portátiles están expresamente excluidos (art. 2.2)."
+    },
+    "ca": {
+      "enunciado": "Segons el Reial decret 773/1997, s'entén per «equip de protecció individual»:",
+      "opciones": [
+        "Qualsevol equip destinat a ser portat o subjectat pel treballador perquè el protegeixi d'un o diversos riscos que puguin amenaçar la seva seguretat o salut",
+        "Qualsevol mitjà tècnic de protecció col·lectiva instal·lat al lloc de treball",
+        "La roba de treball corrent i els uniformes facilitats per l'empresa",
+        "Els aparells portàtils per a la detecció i senyalització de riscos"
+      ],
+      "explicacion": "És la definició de l'article 2.1, que inclou també qualsevol complement o accessori destinat a aquesta finalitat. La roba de treball corrent i els detectors portàtils estan expressament exclosos (art. 2.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "2.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a2"
+    },
+    "cita": "cualquier equipo destinado a ser llevado o sujetado por el trabajador para que le proteja de uno o varios riesgos que puedan amenazar su seguridad o su salud",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-002",
+    "tema": 20,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "A efectos del Real Decreto 773/1997, los equipos de los servicios de socorro y salvamento:",
+      "opciones": [
+        "Se incluyen como una categoría especial de equipos de protección individual",
+        "Están expresamente excluidos de la definición de equipo de protección individual",
+        "Solo se consideran equipos de protección individual si son de uso colectivo",
+        "Se consideran equipos de protección individual únicamente si protegen las vías respiratorias"
+      ],
+      "explicacion": "El artículo 2.2.b) excluye de la definición de EPI los equipos de los servicios de socorro y salvamento, igual que la ropa de trabajo corriente, el material de deporte o los aparatos portátiles de detección."
+    },
+    "ca": {
+      "enunciado": "A l'efecte del Reial decret 773/1997, els equips dels serveis de socors i salvament:",
+      "opciones": [
+        "S'inclouen com una categoria especial d'equips de protecció individual",
+        "Estan expressament exclosos de la definició d'equip de protecció individual",
+        "Només es consideren equips de protecció individual si són d'ús col·lectiu",
+        "Es consideren equips de protecció individual únicament si protegeixen les vies respiratòries"
+      ],
+      "explicacion": "L'article 2.2.b) exclou de la definició d'EPI els equips dels serveis de socors i salvament, igual que la roba de treball corrent, el material d'esport o els aparells portàtils de detecció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "2.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a2"
+    },
+    "cita": "Se excluyen de la definición contemplada en el apartado 1: … b) Los equipos de los servicios de socorro y salvamento.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-003",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el Real Decreto 773/1997, los equipos de protección individual deben utilizarse:",
+      "opciones": [
+        "Siempre, como primera medida preventiva ante cualquier riesgo",
+        "Solo cuando lo solicite expresamente el trabajador",
+        "Cuando los riesgos no hayan podido evitarse o limitarse suficientemente por medios técnicos de protección colectiva o por medidas de organización del trabajo",
+        "Únicamente en las actividades enumeradas en el anexo III, sin excepción"
+      ],
+      "explicacion": "El artículo 4 configura el EPI como medida subsidiaria: se recurre a él cuando la protección colectiva y las medidas organizativas no bastan. El anexo III recoge actividades en las que puede resultar necesario, no una lista cerrada."
+    },
+    "ca": {
+      "enunciado": "Segons el Reial decret 773/1997, els equips de protecció individual s'han d'utilitzar:",
+      "opciones": [
+        "Sempre, com a primera mesura preventiva davant de qualsevol risc",
+        "Només quan ho sol·liciti expressament el treballador",
+        "Quan els riscos no s'hagin pogut evitar o limitar suficientment per mitjans tècnics de protecció col·lectiva o per mesures d'organització del treball",
+        "Únicament en les activitats enumerades a l'annex III, sense excepció"
+      ],
+      "explicacion": "L'article 4 configura l'EPI com a mesura subsidiària: s'hi recorre quan la protecció col·lectiva i les mesures organitzatives no són suficients. L'annex III recull activitats en què pot ser necessari, no una llista tancada."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a4"
+    },
+    "cita": "Los equipos de protección individual deberán utilizarse cuando existan riesgos para la seguridad o salud de los trabajadores que no hayan podido evitarse o limitarse suficientemente por medios técnicos de protección colectiva",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-004",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Respecto a los equipos de protección individual que deban utilizar los trabajadores, el Real Decreto 773/1997 obliga al empresario a:",
+      "opciones": [
+        "Cobrar al trabajador la mitad de su coste",
+        "Descontar su importe de la nómina en cómodos plazos",
+        "Facilitarlos solo si el trabajador los solicita por escrito",
+        "Proporcionarlos gratuitamente y reponerlos cuando resulte necesario"
+      ],
+      "explicacion": "Es una de las obligaciones generales del empresario del artículo 3.c). Además debe determinar los puestos que los requieren, elegirlos adecuadamente y velar por su correcta utilización y mantenimiento."
+    },
+    "ca": {
+      "enunciado": "Pel que fa als equips de protecció individual que hagin d'utilitzar els treballadors, el Reial decret 773/1997 obliga l'empresari a:",
+      "opciones": [
+        "Cobrar al treballador la meitat del seu cost",
+        "Descomptar-ne l'import de la nòmina en terminis còmodes",
+        "Facilitar-los només si el treballador els sol·licita per escrit",
+        "Proporcionar-los gratuïtament i reposar-los quan sigui necessari"
+      ],
+      "explicacion": "És una de les obligacions generals de l'empresari de l'article 3.c). A més, ha de determinar els llocs que els requereixen, triar-los adequadament i vetllar per la utilització i el manteniment correctes."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a3"
+    },
+    "cita": "Proporcionar gratuitamente a los trabajadores los equipos de protección individual que deban utilizar, reponiéndolos cuando resulte necesario.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-005",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Real Decreto 773/1997, los equipos de protección individual están destinados, en principio:",
+      "opciones": [
+        "A un uso personal; si deben utilizarlos varias personas, se adoptarán medidas para que no origine problemas de salud o de higiene",
+        "A un uso colectivo por todo el personal del turno",
+        "Al uso exclusivo durante las prácticas de formación",
+        "A un uso compartido sin limitaciones entre trabajadores del mismo puesto"
+      ],
+      "explicacion": "El artículo 7.3 establece el uso personal como regla y, si las circunstancias exigen que un equipo lo usen varias personas, obliga a tomar las medidas necesarias para evitar problemas de salud o higiene."
+    },
+    "ca": {
+      "enunciado": "Segons el Reial decret 773/1997, els equips de protecció individual estan destinats, en principi:",
+      "opciones": [
+        "A un ús personal; si els han d'utilitzar diverses persones, s'adoptaran mesures perquè no originin problemes de salut o d'higiene",
+        "A un ús col·lectiu per tot el personal del torn",
+        "A l'ús exclusiu durant les pràctiques de formació",
+        "A un ús compartit sense limitacions entre treballadors del mateix lloc"
+      ],
+      "explicacion": "L'article 7.3 estableix l'ús personal com a regla i, si les circumstàncies exigeixen que un equip l'utilitzin diverses persones, obliga a prendre les mesures necessàries per evitar problemes de salut o higiene."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "7.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a7"
+    },
+    "cita": "Los equipos de protección individual estarán destinados, en principio, a un uso personal.",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-006",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si un trabajador aprecia un defecto en su equipo de protección individual que, a su juicio, puede suponer una pérdida de su eficacia protectora, el Real Decreto 773/1997 le obliga a:",
+      "opciones": [
+        "Repararlo él mismo con los medios disponibles",
+        "Informar de inmediato a su superior jerárquico directo",
+        "Seguir utilizándolo hasta el final de la jornada",
+        "Comunicarlo al fabricante en el plazo de un mes"
+      ],
+      "explicacion": "Es una de las obligaciones de los trabajadores del artículo 10, junto con utilizar y cuidar correctamente los equipos y colocarlos, después de usarlos, en el lugar indicado."
+    },
+    "ca": {
+      "enunciado": "Si un treballador aprecia un defecte en el seu equip de protecció individual que, segons el seu parer, pot suposar una pèrdua de l'eficàcia protectora, el Reial decret 773/1997 l'obliga a:",
+      "opciones": [
+        "Reparar-lo ell mateix amb els mitjans disponibles",
+        "Informar immediatament el seu superior jeràrquic directe",
+        "Continuar utilitzant-lo fins al final de la jornada",
+        "Comunicar-ho al fabricant en el termini d'un mes"
+      ],
+      "explicacion": "És una de les obligacions dels treballadors de l'article 10, juntament amb utilitzar i tenir cura correctament dels equips i col·locar-los, després d'utilitzar-los, al lloc indicat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-12735",
+      "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+      "articulo": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735#a10"
+    },
+    "cita": "Informar de inmediato a su superior jerárquico directo de cualquier defecto, anomalía o daño apreciado en el equipo de protección individual utilizado",
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-007",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La norma UNE-EN 469 establece los requisitos de:",
+      "opciones": [
+        "Los cascos para la lucha contra incendios en edificios",
+        "Los guantes de protección para bomberos",
+        "La ropa de protección para bomberos en la lucha contra incendios",
+        "Los equipos de respiración autónomos de circuito abierto"
+      ],
+      "explicacion": "La UNE-EN 469 regula el traje de intervención (chaquetón y cubrepantalón) de los bomberos. Los cascos se rigen por la UNE-EN 443, los guantes por la UNE-EN 659 y los equipos de respiración autónomos de circuito abierto por la UNE-EN 137."
+    },
+    "ca": {
+      "enunciado": "La norma UNE-EN 469 estableix els requisits de:",
+      "opciones": [
+        "Els cascos per a la lluita contra incendis en edificis",
+        "Els guants de protecció per a bombers",
+        "La roba de protecció per a bombers en la lluita contra incendis",
+        "Els equips de respiració autònoms de circuit obert"
+      ],
+      "explicacion": "La UNE-EN 469 regula el vestit d'intervenció (jaqueta i cobrepantalons) dels bombers. Els cascos es regeixen per la UNE-EN 443, els guants per la UNE-EN 659 i els equips de respiració autònoms de circuit obert per la UNE-EN 137."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-008",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "La norma UNE-EN 137 se refiere a:",
+      "opciones": [
+        "Los filtros contra gases y vapores para máscaras",
+        "Las capuchas de protección contra el fuego",
+        "El calzado de bombero",
+        "Los equipos de protección respiratoria autónomos de circuito abierto de aire comprimido"
+      ],
+      "explicacion": "La UNE-EN 137 fija los requisitos de los equipos de respiración autónomos de circuito abierto de aire comprimido con máscara completa, que aíslan al usuario de la atmósfera exterior, a diferencia de los equipos filtrantes."
+    },
+    "ca": {
+      "enunciado": "La norma UNE-EN 137 es refereix a:",
+      "opciones": [
+        "Els filtres contra gasos i vapors per a màscares",
+        "Les caputxes de protecció contra el foc",
+        "El calçat de bomber",
+        "Els equips de protecció respiratòria autònoms de circuit obert d'aire comprimit"
+      ],
+      "explicacion": "La UNE-EN 137 fixa els requisits dels equips de respiració autònoms de circuit obert d'aire comprimit amb màscara completa, que aïllen l'usuari de l'atmosfera exterior, a diferència dels equips filtrants."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-009",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Reglamento (UE) 2016/425, los equipos de protección individual de categoría III son los que protegen frente a:",
+      "opciones": [
+        "Riesgos que pueden tener consecuencias muy graves, como la muerte o daños irreversibles para la salud",
+        "Riesgos mínimos, como el contacto con productos de limpieza de acción débil",
+        "Riesgos derivados exclusivamente de las condiciones meteorológicas",
+        "Riesgos estéticos o de imagen corporativa"
+      ],
+      "explicacion": "El Reglamento (UE) 2016/425 clasifica los EPI en tres categorías: la I para riesgos mínimos, la II para los intermedios y la III para riesgos muy graves (sustancias peligrosas, atmósferas con falta de oxígeno, calor intenso, caídas de altura…). La mayoría de los EPI de intervención de bomberos son de categoría III."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament (UE) 2016/425, els equips de protecció individual de categoria III són els que protegeixen davant de:",
+      "opciones": [
+        "Riscos que poden tenir conseqüències molt greus, com la mort o danys irreversibles per a la salut",
+        "Riscos mínims, com el contacte amb productes de neteja d'acció feble",
+        "Riscos derivats exclusivament de les condicions meteorològiques",
+        "Riscos estètics o d'imatge corporativa"
+      ],
+      "explicacion": "El Reglament (UE) 2016/425 classifica els EPI en tres categories: la I per a riscos mínims, la II per als intermedis i la III per a riscos molt greus (substàncies perilloses, atmosferes amb manca d'oxigen, calor intensa, caigudes d'alçada…). La majoria dels EPI d'intervenció de bombers són de categoria III."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "bomb-t20-010",
+    "tema": 20,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Sin tener en cuenta la compresibilidad del aire, ¿qué volumen aproximado de aire a presión atmosférica contiene una botella de 6 litros de un equipo de respiración autónomo cargada a 300 bar?",
+      "opciones": [
+        "300 litros",
+        "600 litros",
+        "1.800 litros",
+        "3.000 litros"
+      ],
+      "explicacion": "El volumen de aire libre se estima multiplicando la capacidad de la botella por su presión de carga: 6 l × 300 bar = 1.800 l. La autonomía real depende del consumo del usuario, que aumenta mucho con el esfuerzo y el estrés."
+    },
+    "ca": {
+      "enunciado": "Sense tenir en compte la compressibilitat de l'aire, quin volum aproximat d'aire a pressió atmosfèrica conté una ampolla de 6 litres d'un equip de respiració autònom carregada a 300 bar?",
+      "opciones": [
+        "300 litres",
+        "600 litres",
+        "1.800 litres",
+        "3.000 litres"
+      ],
+      "explicacion": "El volum d'aire lliure s'estima multiplicant la capacitat de l'ampolla per la pressió de càrrega: 6 l × 300 bar = 1.800 l. L'autonomia real depèn del consum de l'usuari, que augmenta molt amb l'esforç i l'estrès."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/"
+    },
+    "origen": "ia"
+  }
+]
