@@ -1,0 +1,511 @@
+{
+  "slug": "bombers-generalitat",
+  "pais": "es",
+  "activa": true,
+  "nombre": {
+    "es": "Bombero/a de primera de la escala técnica del Cuerpo de Bomberos de la Generalitat de Catalunya",
+    "ca": "Bomber/a de primera de l'escala tècnica del Cos de Bombers de la Generalitat de Catalunya"
+  },
+  "nombreCorto": { "es": "Bomberos Generalitat", "ca": "Bombers Generalitat" },
+  "cuerpo": {
+    "es": "Cuerpo de Bomberos de la Generalitat · escala técnica, categoría bombero/a de primera (grupo C, subgrupo C1), turno libre",
+    "ca": "Cos de Bombers de la Generalitat · escala tècnica, categoria bomber/a de primera (grup C, subgrup C1), torn lliure"
+  },
+  "administracion": "Generalitat de Catalunya",
+  "convocatoria": {
+    "referencia": "Resolució ISP/3218/2026, de 10 de setembre (convocatòria 81/26)",
+    "diario": "DOGC",
+    "numero": "9751",
+    "fecha": "2026-09-15",
+    "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/",
+    "plazas": 300,
+    "estado": "en curso",
+    "notas": "1) La categoria de bomber/a de l'escala bàsica ja no es convoca: la disposició transitòria dotzena de la Llei 5/1994 (afegida per la Llei 2/2021) declara extingida aquesta categoria i l'accés per torn lliure es fa ara a bomber/a de primera de l'escala tècnica (C1) (verificat al text consolidat BOE-A-1994-12665, art. 17.2 i DT 12a). 2) Convocatòria 81/26: 300 places, 120 reservades a dones; sol·licituds del 16 al 29 de setembre de 2026 només telemàticament; taxa 42,20 EUR; requisits citats per fonts secundàries: titulació de batxillerat o tècnic (o superior), permís de conducció C i català C1 (o prova de llengua). Termini tancat; a 28/10/2026 encara no consta la llista d'admesos ni la data de la prova de coneixements. Una font situa la resolució el 10 de setembre; la data de publicació 15/09/2026 i el núm. 9751 coincideixen en diverses fonts. 3) Temari: annex de la Resolució ISP/2428/2026, de 13 de juliol (DOGC núm. 9709, de 16/07/2026), 34 temes (1-5 generals, 6-34 específics); substitueix el programa anterior de 32 temes. La pàgina oficial d'Interior publica una Guia orientativa d'estudi (temes 8-34) amb correccions de 21/10/2026 que afecten els temes 12, 15, 21, 23, 26, 27, 28 i 34. No s'ha pogut llegir el text del DOGC (dogc.gencat.cat, interior.gencat.cat bloquejats): els títols dels temes estan reconstruïts a partir de diverses acadèmies coincidents (Institut Rocafort, Serebomber, Encert, tuoposicion, formacion.ninja) i poden no ser literals. Punts dubtosos: el contingut exacte del tema 7 (les fonts indiquen Decret 276/2016 i Decret 12/2023, però no està confirmat per al programa 2026), el títol exacte del tema 17 (\"Comunicacions per ràdio\" o \"Comunicacions per a emergències\") i l'abast dels temes 1-5. 4) Format de la prova de coneixements (70+7 preguntes, 4 opcions, 80 minuts, -1/4 per error, 0-8 punts, mínim 4) segons acadèmies/premsa; no contrastat amb les bases. Fórmula citada: Q = (A - E/4) x P / N. 5) Convocatòries anteriors de la mateixa categoria: 81/23, 81/24 (Resolució INT/1/2024, de 2 de gener, 300 places) i 81/25.",
+    "verificado": "fuente secundaria (academias/prensa: redopositor.com, bombers.encert.cat, Institut Rocafort, La Administración al Día-INAP, el9nou.cat) + página oficial de Interior vista solo como resultado de búsqueda (no leída): comprobar en el DOGC 9751 y 9709"
+  },
+  "examen": {
+    "preguntas": 70,
+    "reserva": 7,
+    "opciones": 4,
+    "minutos": 80,
+    "penalizacion": 0.25,
+    "notaMaxima": 8,
+    "notaCorte": 4,
+    "descripcion": {
+      "es": "Primera prueba de la fase de oposición: cuestionario tipo test de 70 preguntas más 7 de reserva sobre el temario oficial de 34 temas, con 4 opciones de respuesta y una sola correcta, en 1 hora y 20 minutos. Cada error resta una cuarta parte del valor de un acierto; se puntúa de 0 a 8 y hay que obtener al menos 4 puntos. Es eliminatoria. (Datos de fuentes secundarias: comprobar en las bases.)",
+      "ca": "Primera prova de la fase d'oposició: qüestionari tipus test de 70 preguntes més 7 de reserva sobre el temari oficial de 34 temes, amb 4 opcions de resposta i una sola de correcta, en 1 hora i 20 minuts. Cada error resta una quarta part del valor d'un encert; es puntua de 0 a 8 i cal obtenir com a mínim 4 punts. És eliminatòria. (Dades de fonts secundàries: comprovar a les bases.)"
+    },
+    "otrasPruebas": {
+      "es": [
+        "Prueba física (eliminatoria): tres ejercicios que simulan intervenciones —incendio de vegetación, incendio estructural (con chaleco de 10 kg) y rescate acuático (apnea de 15 m, 30 s de flotación, crol, crol de salvamento y remolque de un maniquí de 35 kg)—; un solo intento por ejercicio, las faltas suman segundos (10 s en vegetación y acuático, 5 s en estructural) y superar el tiempo límite da 0; se exige media mínima de 5 sobre 10",
+        "Prueba de oficios (eliminatoria): circuito de tareas prácticas, con mínimo exigido en conducción (según una sola fuente: 4 tareas y mínimo de 6 en conducción)",
+        "Evaluación psicológica (eliminatoria, mínimo 5): hasta 10 competencias profesionales (adaptabilidad, aceptación de normas y jerarquía, autocontrol bajo estrés, trabajo en equipo, motivación de servicio público…)",
+        "Reconocimiento médico según cuadro de exclusiones (apto/no apto)",
+        "Conocimiento de lengua catalana nivel C1 (exentos quienes lo acrediten) y de castellano para quienes no tengan la nacionalidad española",
+        "Requisito: permiso de conducción de clase C y titulación de bachillerato o técnico (o superior)",
+        "Fase de concurso: valoración de experiencia profesional y, como novedad, de determinados ciclos formativos de grado medio",
+        "Curso selectivo en el Institut de Seguretat Pública de Catalunya y 700 horas de prácticas en un parque de bomberos"
+      ],
+      "ca": [
+        "Prova física (eliminatòria): tres exercicis que simulen intervencions —incendi de vegetació, incendi estructural (amb armilla de 10 kg) i rescat aquàtic (apnea de 15 m, 30 s de flotació, crol, crol de salvament i remolc d'un maniquí de 35 kg)—; un sol intent per exercici, les faltes sumen segons (10 s a vegetació i aquàtic, 5 s a estructural) i superar el temps límit és un 0; cal una mitjana mínima de 5 sobre 10",
+        "Prova d'oficis (eliminatòria): circuit de tasques pràctiques, amb mínim exigit en conducció (segons una sola font: 4 tasques i mínim de 6 en conducció)",
+        "Avaluació psicològica (eliminatòria, mínim 5): fins a 10 competències professionals (adaptabilitat, acceptació de normes i jerarquia, autocontrol sota estrès, treball en equip, motivació de servei públic…)",
+        "Reconeixement mèdic segons quadre d'exclusions (apte/no apte)",
+        "Coneixements de llengua catalana nivell C1 (exempts qui l'acreditin) i de castellà per a qui no tingui la nacionalitat espanyola",
+        "Requisit: permís de conducció de classe C i titulació de batxillerat o tècnic (o superior)",
+        "Fase de concurs: valoració de l'experiència professional i, com a novetat, de determinats cicles formatius de grau mitjà",
+        "Curs selectiu a l'Institut de Seguretat Pública de Catalunya i 700 hores de pràctiques en un parc de bombers"
+      ]
+    }
+  },
+  "temas": [
+    {
+      "n": 1,
+      "titulo": {
+        "es": "La Constitución española: estructura y contenido general. El Estatuto de autonomía de Cataluña: estructura y contenido general. Organización de la Administración catalana. Instituciones y organismos de la Generalitat",
+        "ca": "La Constitució espanyola: estructura i contingut general. L'Estatut d'autonomia de Catalunya: estructura i contingut general. Organització de l'Administració catalana. Institucions i organismes de la Generalitat"
+      },
+      "slug": "constitucio-estatut",
+      "bloque": { "es": "Temario general", "ca": "Temari general" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1978-31229", "norma": "Constitución Española", "articulos": "1-9, 10-55, 56-65, 66-96, 97-107, 117, 137-158, 159-169" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "1-14, 15-54, 55-94, 132, 164" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 2,
+      "titulo": {
+        "es": "La función pública: el empleo público; derechos y deberes; situaciones administrativas; movilidad; incompatibilidades y régimen disciplinario",
+        "ca": "La funció pública: l'ocupació pública; drets i deures; situacions administratives; mobilitat; incompatibilitats i règim disciplinari"
+      },
+      "slug": "funcio-publica",
+      "bloque": { "es": "Temario general", "ca": "Temari general" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-11719", "norma": "Real Decreto Legislativo 5/2015, de 30 de octubre, texto refundido de la Ley del Estatuto Básico del Empleado Público", "articulos": "1-13, 14-20, 52-54, 55-62, 63-68, 78-84, 85-92, 93-98" },
+        { "tipo": "web", "norma": "Decret legislatiu 1/1997, de 31 d'octubre, pel qual s'aprova la refosa en un text únic dels preceptes de determinats textos legals vigents a Catalunya en matèria de funció pública (sense ID BOE localitzat al mirall legalize-es; consultar al Portal Jurídic de Catalunya)", "url": "https://portaljuridic.gencat.cat/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 3,
+      "titulo": {
+        "es": "Prevención de riesgos laborales y equipos de protección individual",
+        "ca": "Prevenció de riscos laborals i equips de protecció individual"
+      },
+      "slug": "prevencio-riscos-laborals",
+      "bloque": { "es": "Temario general", "ca": "Temari general" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1995-24292", "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales", "articulos": "1-5, 14-29, 30-32, 33-40" },
+        { "tipo": "boe", "id": "BOE-A-1997-12735", "norma": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual", "articulos": "1-10" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 4,
+      "titulo": {
+        "es": "Igualdad y no discriminación",
+        "ca": "Igualtat i no-discriminació"
+      },
+      "slug": "igualtat-no-discriminacio",
+      "bloque": { "es": "Temario general", "ca": "Temari general" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2015-9676", "norma": "Ley 17/2015, de 21 de julio, de igualdad efectiva de mujeres y hombres (Cataluña)", "articulos": "1-3, 5-15" },
+        { "tipo": "boe", "id": "BOE-A-2021-1663", "norma": "Ley 19/2020, de 30 de diciembre, de igualdad de trato y no discriminación (Cataluña)", "articulos": "1-6, 21" },
+        { "tipo": "boe", "id": "BOE-A-2007-6115", "norma": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres", "articulos": "1-16" },
+        { "tipo": "boe", "id": "BOE-A-2014-11990", "norma": "Ley 11/2014, de 10 de octubre, para garantizar los derechos de lesbianas, gays, bisexuales, transgéneros e intersexuales y para erradicar la homofobia, la bifobia y la transfobia (Cataluña)", "articulos": "1-6, 21" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 5,
+      "titulo": {
+        "es": "Política lingüística",
+        "ca": "Política lingüística"
+      },
+      "slug": "politica-linguistica",
+      "bloque": { "es": "Temario general", "ca": "Temari general" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1998-2989", "norma": "Ley 1/1998, de 7 de enero, de Política Lingüística (Cataluña)", "articulos": "1-11" },
+        { "tipo": "boe", "id": "BOE-A-2006-13087", "norma": "Ley Orgánica 6/2006, de 19 de julio, de reforma del Estatuto de Autonomía de Cataluña", "articulos": "6, 32-36, 50" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 6,
+      "titulo": {
+        "es": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña. Ley 4/1997, de 20 de mayo, de protección civil de Cataluña",
+        "ca": "Llei 5/1994, de 4 de maig, de regulació dels serveis de prevenció i extinció d'incendis i de salvaments de Catalunya. Llei 4/1997, de 20 de maig, de protecció civil de Catalunya"
+      },
+      "slug": "llei-bombers-proteccio-civil",
+      "bloque": { "es": "Temario específico · Legislación", "ca": "Temari específic · Legislació" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1994-12665", "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña (consolidada, incluye Decreto-ley 14/2025)", "articulos": "1-10, 11-16, 17-23, 24-25, 26-45, 46-58, disposición transitoria duodécima" },
+        { "tipo": "boe", "id": "BOE-A-1997-14409", "norma": "Ley 4/1997, de 20 de mayo, de Protección Civil de Cataluña", "articulos": "1-11, 12-38, 39-64, 65-71" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 7,
+      "titulo": {
+        "es": "Funciones de guardia y sistema de mando de los servicios de prevención, extinción de incendios y salvamentos (Decreto 276/2016). Estructura del Departamento de Interior (Decreto 12/2023) — pendiente de confirmar en el DOGC",
+        "ca": "Funcions de guàrdia i sistema de comandament dels serveis de prevenció, extinció d'incendis i salvaments (Decret 276/2016). Estructura del Departament d'Interior (Decret 12/2023) — pendent de confirmar al DOGC"
+      },
+      "slug": "guardia-comandament",
+      "bloque": { "es": "Temario específico · Legislación", "ca": "Temari específic · Legislació" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Decret 276/2016, de 19 de juliol, de les funcions de guàrdia i del sistema de comandament dels serveis de prevenció, extinció d'incendis i salvaments (només DOGC; consultar al Portal Jurídic de Catalunya)", "url": "https://portaljuridic.gencat.cat/" },
+        { "tipo": "web", "norma": "Decret 12/2023, de 24 de gener, de reestructuració del Departament d'Interior (només DOGC; comprovar si el temari 2026 cita la norma d'estructura vigent del Departament d'Interior i Seguretat Pública)", "url": "https://portaljuridic.gencat.cat/" },
+        { "tipo": "boe", "id": "BOE-A-1994-12665", "norma": "Ley 5/1994, de 4 de mayo, de regulación de los servicios de prevención y extinción de incendios y de salvamentos de Cataluña", "articulos": "14-16, 24-25" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 8,
+      "titulo": { "es": "Teoría del fuego y agentes extintores", "ca": "Teoria del foc i agents extintors" },
+      "slug": "teoria-foc",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 9,
+      "titulo": { "es": "Física aplicada", "ca": "Física aplicada" },
+      "slug": "fisica",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 10,
+      "titulo": { "es": "Química aplicada", "ca": "Química aplicada" },
+      "slug": "quimica",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 11,
+      "titulo": { "es": "Electricidad", "ca": "Electricitat" },
+      "slug": "electricitat",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-2002-18099", "norma": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión", "articulos": "1-4" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 12,
+      "titulo": { "es": "Instalaciones", "ca": "Instal·lacions" },
+      "slug": "instal-lacions",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-2017-6606", "norma": "Real Decreto 513/2017, de 22 de mayo, por el que se aprueba el Reglamento de instalaciones de protección contra incendios", "articulos": "1-6, anexo I" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 13,
+      "titulo": { "es": "Hidráulica y bombas", "ca": "Hidràulica i bombes" },
+      "slug": "hidraulica",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 14,
+      "titulo": { "es": "Cartografía y orientación", "ca": "Cartografia i orientació" },
+      "slug": "cartografia-orientacio",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "web", "norma": "Institut Cartogràfic i Geològic de Catalunya (ICGC) · cartografia oficial, coordenades UTM ETRS89", "url": "https://www.icgc.cat/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 15,
+      "titulo": { "es": "Construcción", "ca": "Construcció" },
+      "slug": "construccio",
+      "bloque": { "es": "Temario específico · Ciencias aplicadas", "ca": "Temari específic · Ciències aplicades" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26 (tema corregit el 21/10/2026)", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-2006-5515", "norma": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación", "articulos": "1-4, parte I" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 16,
+      "titulo": { "es": "Intervención básica en asistencias técnicas", "ca": "Intervenció bàsica en assistències tècniques" },
+      "slug": "assistencies-tecniques",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 17,
+      "titulo": { "es": "Comunicaciones por radio en emergencias", "ca": "Comunicacions per ràdio en emergències" },
+      "slug": "comunicacions-radio",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 18,
+      "titulo": { "es": "Vehículos de intervención en emergencias", "ca": "Vehicles d'intervenció en emergències" },
+      "slug": "vehicles-intervencio",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-1999-1826", "norma": "Real Decreto 2822/1998, de 23 de diciembre, por el que se aprueba el Reglamento General de Vehículos", "articulos": "1-15, anexo II" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 19,
+      "titulo": { "es": "Conducción y mecánica de vehículos de emergencia", "ca": "Conducció i mecànica de vehicles d'emergència" },
+      "slug": "conduccio-mecanica",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-2015-11722", "norma": "Real Decreto Legislativo 6/2015, de 30 de octubre, texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial", "articulos": "10-13, 61" },
+        { "tipo": "boe", "id": "BOE-A-2003-23514", "norma": "Real Decreto 1428/2003, de 21 de noviembre, Reglamento General de Circulación", "articulos": "67-70" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 20,
+      "titulo": { "es": "Equipos de protección individual de intervención en emergencias", "ca": "Equips de protecció individual d'intervenció en emergències" },
+      "slug": "epi-intervencio",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals de referència del Cos de Bombers (temes 8-34), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-1997-12735", "norma": "Real Decreto 773/1997, de 30 de mayo, equipos de protección individual", "articulos": "1-10, anexos" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 21,
+      "titulo": { "es": "Introducción a la gestión de emergencias y al sistema de protección civil", "ca": "Introducció a la gestió d'emergències i el sistema de protecció civil" },
+      "slug": "gestio-emergencies",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-1997-14409", "norma": "Ley 4/1997, de 20 de mayo, de Protección Civil de Cataluña", "articulos": "12-38, 39-64" },
+        { "tipo": "boe", "id": "BOE-A-2015-7730", "norma": "Ley 17/2015, de 9 de julio, del Sistema Nacional de Protección Civil", "articulos": "1-24" },
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 22,
+      "titulo": { "es": "Principios y características del Sistema de Mando del Cuerpo de Bomberos (SISCOM)", "ca": "Principis i característiques del Sistema de Comandament del Cos de Bombers (SISCOM)" },
+      "slug": "siscom",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi; manual de referència MAN.COMD.001 (Principis i comandament en emergències), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 23,
+      "titulo": { "es": "Prevención básica de incendios", "ca": "Prevenció bàsica d'incendis" },
+      "slug": "prevencio-incendis",
+      "bloque": { "es": "Temario específico · Medios y organización", "ca": "Temari específic · Mitjans i organització" },
+      "fuentes": [
+        { "tipo": "boe", "id": "BOE-A-2010-5882", "norma": "Ley 3/2010, de 18 de febrero, de prevención y seguridad en materia de incendios en establecimientos, actividades, infraestructuras y edificios (Cataluña)", "articulos": "1-5, 13-19" },
+        { "tipo": "boe", "id": "BOE-A-2006-5515", "norma": "Real Decreto 314/2006, Código Técnico de la Edificación (DB SI · Seguridad en caso de incendio)", "articulos": "11, DB SI" },
+        { "tipo": "boe", "id": "BOE-A-2004-21216", "norma": "Real Decreto 2267/2004, de 3 de diciembre, Reglamento de seguridad contra incendios en los establecimientos industriales", "articulos": "1-7, anexos I-III" },
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026), convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 24,
+      "titulo": { "es": "Intervención básica en incendios estructurales", "ca": "Intervenció bàsica en incendis estructurals" },
+      "slug": "incendis-estructurals",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 25,
+      "titulo": { "es": "Intervención básica en incendios forestales", "ca": "Intervenció bàsica en incendis forestals" },
+      "slug": "incendis-forestals",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" },
+        { "tipo": "boe", "id": "BOE-A-2003-10529", "norma": "Ley 5/2003, de 22 de abril, de medidas de prevención de los incendios forestales en las urbanizaciones sin continuidad inmediata con la trama urbana (Cataluña)", "articulos": "1-6" },
+        { "tipo": "boe", "id": "BOE-A-2003-21339", "norma": "Ley 43/2003, de 21 de noviembre, de Montes", "articulos": "43-50" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 26,
+      "titulo": { "es": "Intervención básica en incendios diversos", "ca": "Intervenció bàsica en incendis diversos" },
+      "slug": "incendis-diversos",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 27,
+      "titulo": { "es": "Intervención básica en riesgos NRBQ", "ca": "Intervenció bàsica en riscos NRBQ" },
+      "slug": "riscos-nrbq",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 28,
+      "titulo": { "es": "Intervención básica en asistencia sanitaria", "ca": "Intervenció bàsica en assistència sanitària" },
+      "slug": "assistencia-sanitaria",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Cos de Bombers · Intervenció bàsica en assistència sanitària, Manual Operatiu MAN.SANI.000 V.3 (guia d'estudi 81/26, tema 28)", "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/ACCES-81_26/ACTUALITZACIO-GUIA-ESTUDI/MAN.SANI.000-Tema-28.-Assistencia-sanitaria.pdf" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 29,
+      "titulo": { "es": "Intervención básica en incidentes con múltiples víctimas", "ca": "Intervenció bàsica en incidents amb múltiples víctimes" },
+      "slug": "multiples-victimes",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 30,
+      "titulo": { "es": "Intervención básica en estructuras colapsadas", "ca": "Intervenció bàsica en estructures col·lapsades" },
+      "slug": "estructures-col-lapsades",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 31,
+      "titulo": { "es": "Intervención básica en salvamentos en el medio natural terrestre", "ca": "Intervenció bàsica en salvaments al medi natural terrestre" },
+      "slug": "salvaments-medi-natural",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 32,
+      "titulo": { "es": "Intervención básica en accidentes de movilidad viaria", "ca": "Intervenció bàsica en accidents de mobilitat viària" },
+      "slug": "accidents-transit",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 33,
+      "titulo": { "es": "Intervención básica en rescate urbano", "ca": "Intervenció bàsica en rescat urbà" },
+      "slug": "rescat-urba",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    },
+    {
+      "n": 34,
+      "titulo": { "es": "Intervención básica en inundaciones", "ca": "Intervenció bàsica en inundacions" },
+      "slug": "inundacions",
+      "bloque": { "es": "Temario específico · Intervención básica", "ca": "Temari específic · Intervenció bàsica" },
+      "fuentes": [
+        { "tipo": "web", "norma": "Departament d'Interior i Seguretat Pública · Guia orientativa d'estudi (tema corregit el 21/10/2026) i manuals operatius del Cos de Bombers, convocatòria 81/26", "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/acces-a-bomber-a-de-1a-de-lescala-tecnica-81-26/" }
+      ],
+      "peso": 1
+    }
+  ],
+  "examenesAnteriores": [
+    {
+      "anio": 2025,
+      "titulo": "Accés a bomber/a de primera de l'escala tècnica (81/25) · qüestionari model B (models A i C i plantilla de correcció al repositori DSP)",
+      "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/ACCES-81_25/PLANTILLES/QUESTIONARI_MODEL_B_81-25.pdf",
+      "plantilla": "https://dsp.interior.gencat.cat/handle/20.500.14007/6523"
+    },
+    {
+      "anio": 2023,
+      "titulo": "Accés a bomber/a de primera de l'escala tècnica (81/23) · pàgina amb models A, B i C i plantilla de correcció de la 1a prova",
+      "url": "https://interior.gencat.cat/ca/arees_dactuacio/bombers/convocatories/bombers-funcionaris/Acces-a-bomber_a-de-1a-de-lescala-tecnica-81_23/"
+    },
+    {
+      "anio": 2022,
+      "titulo": "Bomber/a de primera (82/22) · plantilla del qüestionari",
+      "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/BOMBER-DE-1A-82_22/MODELS-I-PLANTILLES/PLANTILLA_QUEST_B1A_82-22.pdf"
+    },
+    {
+      "anio": 2021,
+      "titulo": "Accés a bomber/a de l'escala bàsica (81/21) · qüestionari model B (1a prova: coneixements i test d'avaluació psicològica)",
+      "url": "https://interior.gencat.cat/web/.content/home/030_arees_dactuacio/bombers/acces_al_cos_de_bombers/convocatories/convocatories_de_bombers/ACCES-81_21/PLANTILLA-I-MODELS-EXAMEN/QUESTIONARI_MODEL_B.pdf"
+    },
+    {
+      "anio": 2021,
+      "titulo": "Accés a bomber/a de l'escala bàsica (81/21) · qüestionari model A (còpia a bombers.es)",
+      "url": "https://bombers.es/images/Examens/examens_bombers_generalitat/2021_QUESTIONARI_MODEL_A.pdf"
+    },
+    {
+      "anio": 2016,
+      "titulo": "Accés al cos de bombers (81/16) · plantilla de la 1a prova (aptitudinal i coneixements), models A, B i C",
+      "url": "https://govern.cat/govern/docs/2016/06/03/13/29/dff2aea4-8fa4-44ac-ac99-54010feb2b41.pdf",
+      "plantilla": "https://govern.cat/govern/docs/2016/06/03/13/29/dff2aea4-8fa4-44ac-ac99-54010feb2b41.pdf"
+    }
+  ],
+  "seo": {
+    "palabrasClave": {
+      "es": [
+        "test bomberos generalitat",
+        "oposiciones bomberos generalitat 2026",
+        "oposiciones bomberos cataluña",
+        "temario bomberos generalitat",
+        "examen bomberos generalitat",
+        "test bombero de primera generalitat",
+        "convocatoria bomberos generalitat 81/26",
+        "preguntas examen bomberos cataluña",
+        "test ley 5/1994 bomberos",
+        "simulacro examen bomberos generalitat"
+      ],
+      "ca": [
+        "test bombers generalitat",
+        "oposicions bombers generalitat 2026",
+        "temari bombers generalitat",
+        "examen bombers generalitat",
+        "test bomber de primera",
+        "convocatòria bombers 81/26",
+        "preguntes examen bombers",
+        "test llei 5/1994 bombers",
+        "oposicions bombers catalunya",
+        "simulacre examen bombers generalitat"
+      ]
+    }
+  }
+}
