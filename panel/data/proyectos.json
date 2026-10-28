@@ -1420,7 +1420,9 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Buscador de Amazon; Amazon Ads solo en lanzamiento",
-    "enlaces": {},
+    "enlaces": {
+      "Numimates (código)": "https://github.com/moisesmodu/numimates"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1441,6 +1443,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Prompt actualizado: los cuadernos parten de los imprimibles y actividades sin pantalla de Numi Tech y de los ejercicios de Numi Mates"
       }
     ],
     "proximos": [
@@ -1451,6 +1457,7 @@
       "Subir los paquetes"
     ],
     "mejoras": [
+      "Reutilizar los imprimibles de Numi Tech y el banco de ejercicios de Numi Mates (1º de primaria a 4º de ESO) como base de los cuadernos; abre además una serie de cuadernos de matemáticas por curso",
       "Serie por edades (6-8, 9-12) y por lengua con el mismo motor; título con 'pensamiento computacional' y 'sin pantallas', los términos que usan padres y docentes.",
       "Precio de 11,99 a 12,99 € (por encima del umbral del 60 %) con 100 a 120 páginas en blanco y negro; color solo en la cubierta.",
       "Páginas de explicación para padres y QR a soluciones y vídeos, puente con los cursos.",
@@ -1643,7 +1650,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Buscador de Udemy; cupones de lanzamiento",
-    "enlaces": {},
+    "enlaces": {
+      "Numimates (código)": "https://github.com/moisesmodu/numimates",
+      "Numi Tech (app)": "https://app.numimates.com"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1664,9 +1674,14 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Prompt actualizado: los cursos 1 y 2 se producen a partir de los 108 sesiones de Numi Tech (Robot, Creadors, Robòtica, Digital) con sus presentaciones, guías e imprimibles"
       }
     ],
     "proximos": [
+      "Sesión J: traducir y convertir las sesiones de Numi Tech en lecciones en vídeo (presentaciones + simulador grabado + voz)",
       "Abrir la sesión J"
     ],
     "paraMoises": [
@@ -1674,6 +1689,7 @@
       "Subir los cursos"
     ],
     "mejoras": [
+      "Reutilizar Numi Tech: 4 cursos revisados con 108 sesiones, guías del profesor, presentaciones, imprimibles y solucionario; de ahí salen el curso para padres y el de robótica con micro:bit sin escribirlos desde cero, y la app es la venta cruzada natural",
       "Udemy como embudo a precio bajo y la versión extendida con plantillas y actualizaciones en Hotmart o web propia a 49-99 €.",
       "Pipeline reproducible Markdown → Marp → voz → ffmpeg para 30 a 60 lecciones cortas y regrabar rápido cuando cambien las herramientas; intros con cámara para humanizar.",
       "Curso para padres por edades (5-7 sin pantalla con el libro de KDP, 8-10 Scratch, 11-13 Python) con plan semanal de 20 minutos y versión catalana.",
@@ -1841,10 +1857,10 @@
       "Versión en inglés de 'IA para pequeños negocios'"
     ],
     "juicio": {
-      "probabilidad": 35,
+      "probabilidad": 45,
       "veredicto": "Adelante, sin expectativas",
       "exito": "2 cursos, 200 alumnos y 100 €/mes (publicar: 60 %)",
-      "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe.",
+      "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe. Con el material de Numi Tech ya hecho (108 sesiones revisadas), el coste de producción baja a casi solo montaje y la probabilidad sube.",
       "contra": "Udemy se queda el 63 % y cambia las reglas; 4 a 7 € por venta; la voz sintética puede restar.",
       "parada": "No hace falta; actualización trimestral y piloto automático."
     }

@@ -93,7 +93,7 @@ Criterio de hecho: el de SESIONES.md, más un pedido de prueba de punta a punta 
 ## I · Libros en Amazon KDP (`proyectos/i-kdp`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto I en proyectos/i-kdp.
+Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto I en proyectos/i-kdp. Punto de partida: reutiliza el material de Numimates (repositorio público moisesmodu/numimates): los imprimibles de Numi Tech (imprimeix.html y las guías tech-guide-*.js de los cursos Robot, Creadors, Robòtica y Digital), las actividades sin pantalla de sus 108 sesiones y los ejercicios de Numi Mates (curriculum.js, de 1º de primaria a 4º de ESO) como banco para los cuadernos; lee NUMI-TECH-ESTAT.md antes de nada. El contenido está en catalán: tradúcelo al castellano y conserva la edición catalana.
 
 Producto: catálogo de libros de actividades para niños de 6 a 12 años sobre lógica, pensamiento computacional y programación sin pantalla, en castellano y catalán, para Amazon KDP en tapa blanda (y versión Kindle donde tenga sentido). Esta sesión entrega 5 títulos listos para subir: por ejemplo, "Lógica para peques 6-8", "Pensamiento computacional 8-10", "Scratch paso a paso", "Pasatiempos de programación", "Lògica per a nens" (catalán). Cada título: 60 a 100 páginas de actividades generadas con IA y verificadas (soluciones correctas, dificultad progresiva), maquetadas en PDF de interior con las medidas de KDP, portada en PDF con lomo calculado, descripción optimizada con palabras clave, 7 palabras clave y categorías, precio con margen de 2 a 5 € calculado con la calculadora de KDP. Construye el generador como pipeline reutilizable (tema → actividades → PDF) para que cada título nuevo cueste una tarea programada. Declaración de contenido generado con IA preparada según la política de KDP.
 
@@ -107,13 +107,21 @@ Criterio de hecho: 5 paquetes completos (interior, portada, ficha) en el almacen
 ## J · Cursos en Udemy (`proyectos/j-cursos`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto J en proyectos/j-cursos.
+Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos, y en panel/data/proyectos.json el campo lider del proyecto j-cursos. Construye el proyecto J en proyectos/j-cursos.
 
-Producto: dos cursos en vídeo para Udemy (y después Hotmart): "Programación para niños desde casa: guía para padres" (Scratch y lógica, 3 horas) y "IA práctica para pequeños negocios y autónomos" (4 horas), en castellano. Cada curso: guion completo por lección (lecciones de 5 a 8 minutos), diapositivas generadas (HTML a vídeo o imágenes), demostraciones de pantalla grabadas con Playwright donde haga falta, voz con ElevenLabs (clona la de Moisés solo si él lo pide; si no, voz neutra de catálogo), montaje automático con ffmpeg, subtítulos, ejercicios y cuestionarios por sección, descripción y palabras clave optimizadas para el buscador de Udemy, miniatura. Tope de créditos de voz: documenta el gasto. Entrega los vídeos en el almacenamiento del proyecto, no en git.
+Punto de partida: NO se escribe desde cero. Moisés ya tiene Numimates (repositorio público moisesmodu/numimates, app en app.numimates.com; web en moisesmodu/numimates-web): cuatro apps sobre un mismo motor (Numi Mates, primaria; Numi Pro, ESO; Numi Ment, adultos; Numi Tech, programación y robótica). Numi Tech tiene cuatro cursos completos y revisados: Robot (6-8 años, 32 sesiones, tech-c1.js), Creadors (9-11, 32 sesiones, tech-c3.js), Robòtica con micro:bit y Maqueen (10-12, 32 sesiones, tech-c2.js, simulador y exportación a MakeCode) y Digital (9-12, 12 sesiones, tech-c5.js), cada uno con guía del profesor (tech-guide-*.js), presentaciones (presenta.html), imprimibles (imprimeix.html), solucionario (tech-sol.js) y 212 animaciones. Lee NUMI-TECH-ESTAT.md del repo antes de nada. El contenido está en catalán (y en castellano donde exista): tradúcelo al castellano de España con revisión por muestreo.
 
-Marketing: ninguno pagado; cupones de lanzamiento preparados y plan de reseñas iniciales. Tarea programada: cada mes, responder preguntas de alumnos (borradores para aprobar) y proponer el siguiente curso.
+Cursos a producir (en este orden):
+1. "Programación para niños desde casa: guía para padres" (3 horas): a partir de Robot y Creadors. Habla al padre, no al niño: plan de 4 semanas, qué hacer cuando el niño se frustra, seguridad online; las sesiones de Numi son las actividades de cada semana y los imprimibles son los recursos descargables.
+2. "Robótica con micro:bit y Maqueen para niños y profes" (4 horas): a partir de Robòtica; el simulador grabado con Playwright y el kit de compra de NUMI-TECH-KIT.md como lección de materiales.
+3. "IA práctica para pequeños negocios y autónomos" (4 horas): este sí se escribe nuevo, con casos de autónomos españoles (facturación, Verifactu 2027, RGPD, atención al cliente).
+4. Opcional y corto: "Bienestar digital en familia" a partir de Digital, como curso gratuito que trae alumnos a los otros.
 
-Criterio de hecho: los dos cursos completos y listos para subir, con la estructura exacta que pide Udemy. Moisés solo debe: abrir la cuenta de instructor y subir siguiendo PARA-MOISES.md.
+Producción: guion por lección (5 a 8 minutos) generado desde las sesiones y guías; diapositivas a partir de presenta.html (reutiliza su diseño y color por curso) o Marp; demostraciones de pantalla del simulador grabadas con Playwright; voz con ElevenLabs (clona la de Moisés solo si lo pide; si no, voz neutra de catálogo) o Kokoro para borradores; montaje con ffmpeg; subtítulos; cuestionario por sección a partir del solucionario; miniaturas; descripción y palabras clave para el buscador de Udemy con la fórmula del líder (resultado + herramienta + "para" + público). Tope de créditos de voz: documenta el gasto. Entrega los vídeos en el almacenamiento del proyecto, no en git. Licencias: las piezas 3D de Kenney son CC0 y el resto es de Moisés; no uses nada con licencia no comercial.
+
+Venta cruzada: una clase extra en cada curso que lleve a la app Numi Tech (cupón o plan escuela) y a los cuadernos de KDP; cupones propios al 97 % para la web de Numimates. Marketing: ninguno pagado; cupones de lanzamiento limitados para conseguir las 30 primeras valoraciones y plan de vídeos cortos a partir de las lecciones. Tarea programada: cada mes, responder preguntas de alumnos (borradores para aprobar), actualización trimestral con fecha en el título y propuesta del siguiente curso (Numi Mates y Pro: "matemáticas de primaria explicadas a los padres").
+
+Criterio de hecho: los cursos 1 y 2 completos y listos para subir con la estructura exacta que pide Udemy, el 3 con guion y primera sección grabada, los 4 archivos de SESIONES.md e informe. Moisés solo debe: abrir la cuenta de instructor y subir siguiendo PARA-MOISES.md.
 ```
 
 ---

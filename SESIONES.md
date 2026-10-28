@@ -78,4 +78,8 @@ cualquier plantilla. Si durante la sesión descubres algo nuevo del líder, añ�
 ## Lo que ya existe y se puede reutilizar
 - `moisesmodu/algorithmics-portal`: Next.js + Prisma + Stripe + Resend + bot de WhatsApp con Claude + SEPA. Copia
   patrones (auth, Stripe webhooks, correos) pero **no** copies datos ni dependencias de Odoo.
+- **`moisesmodu/numimates`** (público; web en `moisesmodu/numimates-web`): cuatro apps educativas sobre un motor (Numi Mates,
+  Pro, Ment, Tech). Numi Tech tiene 4 cursos de programación y robótica con 108 sesiones, guías, presentaciones,
+  imprimibles y solucionario; Numi Mates sigue el currículo de 1º de primaria a 4º de ESO. Contenido propio de Moisés,
+  en catalán y castellano: base de los proyectos J (cursos) e I (libros) y venta cruzada para los de niños.
 - Conectores de Moisés: ElevenLabs (voz), Higgsfield (imagen y vídeo), Gmail, Drive, Notion, GitHub.
