@@ -90,6 +90,10 @@
    {
     "fecha": "2026-10-28",
     "texto": "Prueba de humo en producción desde la nube: portada, aviso legal completo, muro de pago, registro en Neon y sesión real de Stripe Checkout en modo prueba, todo OK. Falta completar el pago con la tarjeta 4242 en el navegador (checkout.stripe.com no es accesible desde la nube)"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Portada rehecha para convertir: 6 fotos reales generadas (Higgsfield, 1,5 créditos), cuenta atrás al cierre de inscripción, test gancho «¿Aprobarías hoy?» de 5 preguntas, comparativa con el PDF y la app oficial, bloque de precio anclado a la tasa de 85 €, barra fija en móvil, plan diario hasta el examen e imagen para compartir por WhatsApp en 8 idiomas"
    }
   ],
   "proximos": [
@@ -111,7 +115,8 @@
    "Garantía de aprobado y aviso de desistimiento en Checkout (hecho)",
    "Lectura en voz alta gratis con la voz del dispositivo (hecho); voz neuronal para la prueba adaptada como mejora futura",
    "Página mensual 'Examen CCSE <mes>: fechas y resultados' para robar el SEO a los despachos",
-   "Mover el proyecto a un repositorio privado: el repo actual es público y expone las explicaciones de pago"
+   "Mover el proyecto a un repositorio privado: el repo actual es público y expone las explicaciones de pago",
+   "Medir la conversión del test gancho → simulacro → pago y probar variantes del titular cuando haya tráfico"
   ],
   "competidores": [
    {

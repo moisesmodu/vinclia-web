@@ -39,6 +39,7 @@ export function PanelProgreso() {
           </select>
         </div>
       </div>
+      <PlanDiario dias={dias} dominadas={prep.dominadas} />
       <div className="tarjeta p-5">
         <h2 className="font-bold">{t('prog.porTema')}</h2>
         <ul className="mt-3 grid gap-3">
@@ -65,6 +66,24 @@ export function PanelProgreso() {
           </ul>
         )}
       </div>
+    </div>
+  );
+}
+
+/** Plan hasta el examen: preguntas sin dominar repartidas entre los días que faltan (con 2 días de margen para simulacros). */
+function PlanDiario({ dias, dominadas }: { dias: number | null; dominadas: number }) {
+  const { t, locale } = useEstado();
+  const faltan = PREGUNTAS.length - dominadas;
+  if (dias === null || dias < 0)
+    return <div className="tarjeta border-2 border-terracota/40 p-5"><h2 className="font-bold">{t('plan.t')}</h2><p className="mt-1 text-suave">{t('plan.sinFecha')}</p></div>;
+  const utiles = Math.max(1, dias - 2);
+  const alDia = Math.min(faltan, Math.max(5, Math.ceil(faltan / utiles)));
+  const tema = (Math.floor(Date.now() / 86400000) % 5) + 1;
+  return (
+    <div className="tarjeta border-2 border-terracota p-5">
+      <h2 className="font-bold">{t('plan.t')}</h2>
+      <p className="mt-1">{t('plan.d', { q: faltan, n: dias, x: alDia })}</p>
+      <Link href={`/${locale}/temas/${tema}`} className="boton boton-1 mt-3">{t('plan.hoy')}</Link>
     </div>
   );
 }

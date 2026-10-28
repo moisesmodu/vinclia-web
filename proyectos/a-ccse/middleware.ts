@@ -32,5 +32,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|nuevo-en-espana|\\.well-known|sw\\.js|manifest\\.webmanifest|sitemap\\.xml|robots\\.txt|icons|favicon\\.ico|.*\\.(?:png|svg|jpg|ico|txt|xml|json|webmanifest)).*)'],
+  matcher: ['/((?!api|_next|nuevo-en-espana|\\.well-known|sw\\.js|manifest\\.webmanifest|sitemap\\.xml|robots\\.txt|icons|img|marca|og|favicon\\.ico|.*\\.(?:png|svg|jpg|webp|avif|ico|txt|xml|json|webmanifest)).*)'],
 };

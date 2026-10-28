@@ -25,7 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     applicationName: t('marca'),
     manifest: '/manifest.webmanifest',
     icons: { icon: [{ url: '/icons/icon.svg', type: 'image/svg+xml' }, { url: '/icons/icon-192.png', sizes: '192x192' }], apple: '/icons/apple-touch-icon.png' },
-    openGraph: { siteName: t('marca'), type: 'website', locale },
+    openGraph: { siteName: t('marca'), type: 'website', locale, title: t('lema'), images: [{ url: `/og/${locale}.jpg`, width: 1200, height: 630 }] },
+    twitter: { card: 'summary_large_image', images: [`/og/${locale}.jpg`] },
     appleWebApp: { capable: true, title: 'CCSE' },
     ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {}),
   };

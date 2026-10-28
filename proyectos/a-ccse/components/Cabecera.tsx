@@ -14,11 +14,11 @@ export function Cabecera({ locale }: { locale: Locale }) {
   ];
   return (
     <header className="border-b border-[#EADFCD] bg-white">
-      <div className="contenedor flex flex-wrap items-center justify-between gap-2 py-3">
+      <div className="contenedor flex items-center justify-between gap-2 py-2.5">
         <Link href={`/${locale}`} className="flex items-center" aria-label={`${t('marca')} · ${t('marcaPor')}`}>
-          <img src="/marca/logo.svg" alt={`${t('marca')} · ${t('marcaPor')}`} width={219} height={34} className="h-8 w-auto sm:h-9" dir="ltr" />
+          <img src="/marca/logo.svg" alt={`${t('marca')} · ${t('marcaPor')}`} width={219} height={34} className="h-7 w-auto sm:h-9" dir="ltr" />
         </Link>
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-1.5">
           <SelectorIdioma locale={locale} etiqueta={t('pie.idioma')} />
           <EnlaceCuenta />
         </div>

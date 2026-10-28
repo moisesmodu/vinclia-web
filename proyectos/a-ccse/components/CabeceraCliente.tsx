@@ -11,7 +11,7 @@ export function SelectorIdioma({ locale, etiqueta }: { locale: Locale; etiqueta:
     <label className="text-sm">
       <span className="sr-only">{etiqueta}</span>
       <select
-        className="rounded-lg border border-[#DCCDB6] bg-white px-2 py-2"
+        className="w-[5.5rem] rounded-lg border border-[#DCCDB6] bg-white px-1.5 py-2 text-sm sm:w-auto sm:px-2"
         value={locale}
         onChange={(e) => router.push(ruta.replace(/^\/[a-z]{2}(?=\/|$)/, `/${e.target.value}`))}
       >
@@ -24,7 +24,7 @@ export function SelectorIdioma({ locale, etiqueta }: { locale: Locale; etiqueta:
 export function EnlaceCuenta() {
   const { t, locale, usuario, acceso } = useEstado();
   return (
-    <Link href={`/${locale}/${acceso ? 'cuenta' : usuario ? 'precio' : 'cuenta'}`} className={`boton ${acceso ? 'boton-2' : 'boton-1'} px-3 py-2 text-sm`}>
+    <Link href={`/${locale}/${acceso ? 'cuenta' : usuario ? 'precio' : 'cuenta'}`} className={`boton ${acceso ? 'boton-2' : 'boton-1'} min-h-10 px-3 py-2 text-sm`}>
       {acceso ? '★ ' + t('nav.cuenta') : usuario ? t('nav.precio') : t('cuenta.entrar')}
     </Link>
   );
