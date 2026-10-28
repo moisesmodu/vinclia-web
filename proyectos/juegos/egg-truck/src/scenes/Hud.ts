@@ -104,7 +104,8 @@ export class Hud extends Phaser.Scene {
     const arrow = this.add.image(110, 0, 'ic-play').setDisplaySize(70, 70).setTint(PALETTE.yellow);
     c.add([ring, hand, arrow]);
     this.tutorial = c;
-    this.tutorialStart = this.time.now;
+    // el reloj de la escena aún no está al día en create(): se fija en el primer update()
+    this.tutorialStart = -1;
     this.tweens.add({ targets: hand, y: 4, duration: 420, yoyo: true, repeat: -1, ease: 'Sine.inOut', hold: 500 });
     this.tweens.add({ targets: ring, scale: 1.35, alpha: 0.2, duration: 840, repeat: -1, hold: 100 });
     this.tweens.add({ targets: arrow, x: 140, duration: 420, yoyo: true, repeat: -1, hold: 500 });
@@ -114,6 +115,7 @@ export class Hud extends Phaser.Scene {
   update(_t: number, dt: number) {
     if (!this.tutorial) return;
     if (this.holdPointers.size > 0 || this.registry.get('hold')) this.tutorialHeld += dt;
+    if (this.tutorialStart < 0) this.tutorialStart = this.time.now;
     const done = this.tutorialHeld > 1500 || this.time.now - this.tutorialStart > 10000;
     this.tutorial.setAlpha(this.holdPointers.size > 0 ? 0.35 : 1);
     if (done) {

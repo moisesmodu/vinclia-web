@@ -36,13 +36,25 @@
   {
     "slug": "snow-plow",
     "titulo": "Snow Plow",
-    "genero": "",
-    "estado": "en desarrollo",
+    "genero": "Conducción con físicas navideña (coches tipo plataforma), una pulsación: empujar regalos con la pala",
+    "estado": "listo para enviar (a principios de diciembre)",
     "color": "#6cc8ff",
     "ids": {
       "gamedistribution": "",
       "gamemonetize": ""
-    }
+    },
+    "descripcion": "Hold to drive, release to brake. Push a wobbly pile of presents over snowy hills to Santa's sleigh!",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "hill-climb-games",
+      "no-download-games",
+      "christmas-games"
+    ]
   },
   {
     "slug": "rocket-hop",
