@@ -241,24 +241,24 @@
     "dificultad": 2,
     "correcta": 3,
     "es": {
-      "enunciado": "¿Qué potencia consume un aparato conectado a 230 V por el que circula una corriente de 10 A?",
+      "enunciado": "¿Qué potencia consume un aparato puramente resistivo conectado a 230 V por el que circula una corriente de 10 A?",
       "opciones": [
         "23 W",
         "230 W",
         "23 000 W",
         "2 300 W"
       ],
-      "explicacion": "La potencia eléctrica es P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
+      "explicacion": "En una carga puramente resistiva (factor de potencia 1), la potencia es P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
     },
     "ca": {
-      "enunciado": "Quina potència consumeix un aparell connectat a 230 V pel qual circula un corrent de 10 A?",
+      "enunciado": "Quina potència consumeix un aparell purament resistiu connectat a 230 V pel qual circula un corrent de 10 A?",
       "opciones": [
         "23 W",
         "230 W",
         "23 000 W",
         "2 300 W"
       ],
-      "explicacion": "La potència elèctrica és P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
+      "explicacion": "En una càrrega purament resistiva (factor de potència 1), la potència és P = V · I = 230 V × 10 A = 2 300 W (2,3 kW)."
     },
     "fuente": {
       "tipo": "web",
