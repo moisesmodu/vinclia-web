@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Copiar from '@/components/Copiar';
 import Lider from '@/components/Lider';
+import Marca from '@/components/Marca';
 import Juicio from '@/components/Juicio';
-import { proyecto, proyectos, promptDe, euros, fecha, REPO, RAMA } from '@/lib/data';
+import { proyecto, proyectos, promptDe, identidad, euros, fecha, REPO, RAMA } from '@/lib/data';
 
 export function generateStaticParams() {
   return proyectos().map((p) => ({ clave: p.clave }));
@@ -12,6 +13,7 @@ export function generateStaticParams() {
 export default async function Ficha({ params }: { params: Promise<{ clave: string }> }) {
   const { clave } = await params;
   const p = proyecto(clave);
+  const m = identidad(clave);
   if (!p) notFound();
   const prompt = promptDe(clave);
   const acciones = [...p.acciones].sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
@@ -49,6 +51,8 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
       </section>
 
       {p.juicio && <Juicio j={p.juicio} />}
+
+      {m && <Marca m={m} />}
 
       <section className="rentabilidad">
         <div><b>{euros(p.ingresosMes)}</b><span>ingresos al mes</span></div>
