@@ -10,7 +10,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 WORK = os.environ.get('WORK', '/home/user/jwork'); OUT = os.environ.get('OUT', os.path.join(WORK, 'out'))
 ENT = os.environ.get('ENTREGA', os.path.join(WORK, 'entrega'))
 FF = ['ffmpeg', '-v', 'error', '-y']
-VENC = ['-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-pix_fmt', 'yuv420p', '-r', '30']
+VENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '24', '-pix_fmt', 'yuv420p', '-r', '30']
 AENC = ['-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-ac', '2']
 
 def run(a): subprocess.run(a, check=True)
