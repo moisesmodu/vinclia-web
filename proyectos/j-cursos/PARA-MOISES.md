@@ -13,7 +13,7 @@ foto, y esta biografía (pégala, cámbiala si quieres):
 > Moisés Mora dirige en Lleida una academia de programación y robótica para niños y ha creado Numi, una familia de
 > aplicaciones educativas: Numi Mates, Numi Pro, Numi Ment y Numi Tech, cursos de programación, robótica y ciudadanía
 > digital que se usan en extraescolares de primaria. Sus cursos están pensados para que familias, profesores y pequeños
-> negocios pasen a la práctica desde la primera clase, con actividades listas para usar.
+> negocios pasen a la práctica desde la primera clase, con actividades listas para usar. Contacto: hola@numimates.com.
 
 Después: «Herramientas» → **Pagos** (datos fiscales: formulario W-8BEN como autónomo en España, y PayPal o Payoneer)
 y **Programa de promociones** (activar las ofertas de Udemy: es donde vende el buscador).

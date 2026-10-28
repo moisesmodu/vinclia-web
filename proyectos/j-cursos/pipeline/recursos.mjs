@@ -8,6 +8,8 @@ const NUMI = process.env.NUMI_URL || 'http://127.0.0.1:5190', ENT = process.env.
 const curso = process.argv[2], gdir = path.join(ROOT, 'guiones', curso), out = path.join(ENT, curso, 'recursos');
 fs.mkdirSync(out, { recursive: true });
 const b = await chromium.launch(), map = {};
+const FICHA = JSON.parse(fs.readFileSync(path.join(ROOT, 'udemy', 'fichas.json'), 'utf8'))[curso];
+const PIE = FICHA.titulo + (curso === 'c3' ? ' · La IA redacta, tú decides: revisa siempre cifras, nombres y datos legales' : '') + ' · Numi Tech · Hecho en Lleida';
 const md2html = md => {
   const e = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const inl = s => e(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`(.+?)`/g, '<code>$1</code>');
@@ -23,9 +25,9 @@ const md2html = md => {
   return h + (list ? `</${list}>` : '');
 };
 const CSS = `@font-face{font-family:Lexend;font-weight:100 900;src:url(file://${HERE}/assets/fonts/Lexend-latin-c0dd90.woff2)}
-body{font-family:Lexend,sans-serif;color:#14204A;font-size:11.5pt;line-height:1.5;margin:0}h1{font-size:22pt;color:#7C4DFF;margin:0 0 6pt}
+body{font-family:Lexend,sans-serif;color:#14204A;font-size:11.5pt;line-height:1.5;margin:0}h1{font-size:22pt;color:#5B5BD6;margin:0 0 6pt}
 h2{font-size:14.5pt;margin:16pt 0 4pt;color:#14204A;border-bottom:2px solid #E6DEFF;padding-bottom:3pt}h3{font-size:12pt;margin:12pt 0 2pt}
-code{background:#F1ECFF;padding:1pt 4pt;border-radius:4pt}blockquote{background:#F6F3FF;border-left:4pt solid #7C4DFF;margin:6pt 0;padding:6pt 10pt;white-space:pre-wrap}
+code{background:#F1ECFF;padding:1pt 4pt;border-radius:4pt}blockquote{background:#F6F3FF;border-left:4pt solid #5B5BD6;margin:6pt 0;padding:6pt 10pt;white-space:pre-wrap}
 li{margin:2pt 0}.pie{margin-top:18pt;font-size:9pt;color:#56628A}`;
 for (const f of fs.readdirSync(gdir).filter(f => /^c\d-\d+\.json$/.test(f)).sort()) {
   const G = JSON.parse(fs.readFileSync(path.join(gdir, f), 'utf8'));
@@ -40,7 +42,7 @@ for (const f of fs.readdirSync(gdir).filter(f => /^c\d-\d+\.json$/.test(f)).sort
     } else if (k === 'plantilla') {
       file = `${v}.pdf`; const src = path.join(gdir, 'plantillas', v + '.md');
       if (!fs.existsSync(src)) { console.log('falta plantilla', v); continue; }
-      const p = await b.newPage(); await p.setContent(`<html><head><meta charset="utf-8"><style>${CSS}</style></head><body>${md2html(fs.readFileSync(src, 'utf8'))}<p class="pie">IA práctica para autónomos y pequeños negocios · Plantilla descargable. La IA redacta, tú decides: revisa siempre cifras, nombres y datos legales.</p></body></html>`);
+      const p = await b.newPage(); await p.setContent(`<html><head><meta charset="utf-8"><style>${CSS}</style></head><body>${md2html(fs.readFileSync(src, 'utf8'))}<p class="pie">${PIE} · hola@numimates.com</p></body></html>`);
       await p.evaluate(() => document.fonts.ready); await p.pdf({ path: path.join(out, file), format: 'A4', margin: { top: '18mm', bottom: '18mm', left: '18mm', right: '18mm' }, printBackground: true }); await p.close();
     } else continue;
     (map[G.id] ||= []).push(file);
