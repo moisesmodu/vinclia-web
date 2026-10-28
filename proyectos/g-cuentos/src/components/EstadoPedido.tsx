@@ -26,7 +26,7 @@ export async function EstadoPedido({ id, idioma, ok }: { id: string; idioma: Idi
         <ol className="space-y-3 mb-8">
           {pasos.map((e, i) => (
             <li key={e} className={`tarjeta p-4 flex items-center gap-3 ${i <= actual ? "" : "opacity-50"}`}>
-              <span className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-sm ${i < actual || final ? "bg-salvia" : i === actual ? "bg-terracota" : "bg-[#d8cdb9]"}`}>{i + 1}</span>
+              <span className={`w-7 h-7 rounded-full flex items-center justify-center text-white text-sm ${i < actual || final ? "bg-salvia" : i === actual ? "bg-primario" : "bg-[#d9d6e6]"}`}>{i + 1}</span>
               <span className="font-bold">{x.pedido.estados[e]}</span>
             </li>
           ))}

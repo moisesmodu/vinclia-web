@@ -1,5 +1,10 @@
 # G · Lunilla — cuentos infantiles personalizados
 
+> **Un cuento donde el protagonista eres tú.** · Familia de marca Lunilla (`MARCAS.md`, `marcas/tokens.json`):
+> azul luna #2B3A67, amarillo luna #F5C84C, rosa nube #F7D6E0, crema #FFF8EC, verde hoja #6FBF8E; Baloo 2 y Nunito;
+> logotipo `marcas/logos/g-cuentos.svg`; sello «Hecho en Lleida · Precio claro · Cancela en un clic». Lunilla, la luna
+> con bufanda, aparece en las portadas y en la última página, que termina con una frase para decir en voz alta juntos.
+
 Tienda de cuentos personalizados en castellano y catalán. El cliente rellena nombre, edad, ciudad, mascota,
 afición y un miedo o valor; elige colección (Dormir, Valores, Hermanito nuevo, Mi ciudad) e idioma; ve gratis
 la portada, la dedicatoria y 3 páginas; y compra el **PDF (7,90 €)** o el **libro de tapa dura (36,90 €, envío
@@ -34,7 +39,7 @@ Estados: `borrador → pagado → ilustrando → maquetando → entregado` (PDF)
 | Relleno determinista (género, artículo personal catalán, contracciones) | `src/lib/rellenar.ts` | Test con más de 1.000 combinaciones: `npm test` |
 | Texto con IA | `src/lib/texto.ts` | `claude-sonnet-5-5`, salida estructurada, validación y caída a plantilla |
 | Protagonistas y prompts | `src/lib/ilustracion-prompts.ts`, `public/personajes/` | Niño y niña con hoja de personaje; nunca fotos |
-| Maquetación | `src/lib/maquetacion.ts` | Andika (lectura infantil) + Sniglet; TrimBox/BleedBox |
+| Maquetación | `src/lib/maquetacion.ts` | Baloo 2 + Nunito, Lunilla del logo dibujada en vector; TrimBox/BleedBox |
 | Imprenta | `src/lib/imprenta/gelato.ts` | Gelato API v4; `GELATO_MODO=borrador` por defecto |
 | Pagos | `src/lib/pagos.ts`, `src/app/api/stripe/webhook`, `scripts/stripe-configurar.mjs` | Stripe Checkout (cuenta Numi Mates) + webhook firmado |
 | Correo | `src/lib/correo.ts` | Resend; sin clave guarda los correos en `datos-locales/correos` |
@@ -86,6 +91,14 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 
 ## Decisiones tomadas (regla 4 de SESIONES.md)
 
+0. **Identidad de marca aplicada** (MARCAS.md) con tres matices que quedan anotados para decidir:
+   (a) MARCAS pide «ilustración plana y cálida»; las ilustraciones son gouache y acuarela cálidas porque ya estaban
+   hechas y la textura de álbum es el diferencial frente a la competencia; (b) el texto de la ficha dice «bufanda
+   amarilla» y el logotipo la dibuja azul luna: las ilustraciones siguen el texto (ocre dorado, para que se distinga
+   de la luna) y el logotipo no se toca; (c) el cuento de Leo conserva su Lunilla sin bufanda en las páginas
+   interiores: rehacer 11 ilustraciones superaba el tope de 80 créditos. Los cuentos nuevos ya llevan la Lunilla de
+   marca (hoja de personaje como referencia en cada encargo).
+
 1. **Marca «Lunilla»** (luna pequeña; funciona en castellano y catalán y une con la luna del cuento de dormir).
    Dominio propuesto `lunilla.es` (sin comprobar disponibilidad; alternativas en PARA-MOISES.md).
 2. **Imprenta: Gelato**, no Lulu: imprime en la UE (sin aduanas), tiene pedidos en borrador para probar y el
@@ -121,7 +134,7 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 
 | Concepto | Coste |
 |---|---|
-| Esta sesión: Higgsfield | **56 créditos de 80** (2 hojas de personaje + 2 × 13 ilustraciones, Nano Banana Pro 2k, sin repeticiones) |
+| Esta sesión: Higgsfield | **62 créditos de 80**: 2 hojas de protagonistas + 2 × 13 ilustraciones (56), hoja de Lunilla con bufanda (2), portada y última página de Martina con Lunilla (4). Nano Banana Pro 2k, sin repeticiones |
 | Por cuento vendido | ≈26 créditos de Higgsfield (≈1 €), texto Sonnet < 0,05 €, Stripe 1,5 % + 0,25 € |
 | Tapa dura | impresión + envío Gelato (estimado 23,60 €, por confirmar) |
 | Fijos | Vercel Pro 20 $/mes (compartido por la cartera), Neon y Resend gratis, dominio ≈10 €/año |
@@ -135,4 +148,4 @@ Precios, IVA, imprenta, fechas límite y datos legales están en `src/config/pai
 `content/es-ES` y `content/ca-ES`. Segundo mercado: EE. UU. en español e inglés (Gelato imprime allí), solo cuando
 España tenga 100 clientes.
 
-Licencias de fuentes: Andika y Sniglet, SIL Open Font License (`assets/fuentes/OFL-*.txt`).
+Licencias de fuentes: Baloo 2 y Nunito, SIL Open Font License (`assets/fuentes/OFL-*.txt`); instancias estáticas generadas con fontTools para que el PDF use los mismos pesos que la web.

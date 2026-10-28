@@ -14,7 +14,7 @@ export function LectorMuestra({ slug, idioma }: { slug: string; idioma: Idioma }
   return (
     <Pagina idioma={idioma}>
       <article className="mx-auto max-w-5xl px-4 py-8" lang={c.idioma}>
-        <p className="text-terracota font-bold">{idioma === "ca" ? "Conte de mostra" : "Cuento de muestra"}</p>
+        <p className="text-primario font-bold">{idioma === "ca" ? "Conte de mostra" : "Cuento de muestra"}</p>
         <h1 className="text-3xl sm:text-5xl mt-1 mb-6">{c.titulo}</h1>
         <div className="tarjeta p-3 mb-6">
           <div className="relative rounded-xl overflow-hidden">

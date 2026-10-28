@@ -50,7 +50,7 @@ export async function PanelAfiliado({ token, idioma }: { token?: string; idioma:
         <div className="tarjeta p-5">
           <p className="etiqueta">{ca ? "Últimes vendes" : "Últimas ventas"}</p>
           {d.ventas.length === 0 ? <p className="text-suave">{ca ? "Encara cap." : "Todavía ninguna."}</p> : (
-            <ul className="divide-y divide-[#eadfcb]">{d.ventas.slice(0, 50).map((v) => (
+            <ul className="divide-y divide-[#efe4cf]">{d.ventas.slice(0, 50).map((v) => (
               <li key={v.id} className="py-2 flex justify-between text-sm"><span>{v.pagadoEn?.toLocaleDateString("es-ES")} · {v.formato === "pdf" ? "PDF" : ca ? "Tapa dura" : "Tapa dura"}</span><span className="font-bold">{euros(v.comisionCents ?? 0, idioma)}</span></li>
             ))}</ul>
           )}

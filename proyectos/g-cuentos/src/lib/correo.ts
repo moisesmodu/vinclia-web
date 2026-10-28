@@ -23,15 +23,15 @@ export async function enviarCorreo(a: string, asunto: string, html: string, etiq
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
 
 function plantilla(cuerpo: string) {
-  return `<!doctype html><html><body style="margin:0;background:#fbf6ec;font-family:Georgia,serif;color:#33291f">
+  return `<!doctype html><html><body style="margin:0;background:#FFF8EC;font-family:Nunito,'Segoe UI',Arial,sans-serif;color:#1B2444">
 <div style="max-width:560px;margin:0 auto;padding:32px 24px">
-<p style="font-size:22px;color:#29395f;margin:0 0 24px"><b>Lunilla</b></p>${cuerpo}
-<p style="font-size:12px;color:#8a7a68;margin-top:40px">Lunilla · cuentos personalizados · lunilla.es<br>¿Alguna duda? Responde a este correo.</p>
+<p style="font-size:22px;color:#2B3A67;margin:0 0 24px"><span style="color:#F5C84C">☾</span> <b>Lunilla</b></p>${cuerpo}
+<p style="font-size:12px;color:#5b6382;margin-top:40px">Lunilla · Un cuento donde el protagonista eres tú<br>Hecho en Lleida · Precio claro · Cancela en un clic<br>¿Alguna duda? Responde a este correo.</p>
 </div></body></html>`;
 }
 
 const boton = (url: string, txt: string) =>
-  `<p style="margin:28px 0"><a href="${url}" style="background:#bd664a;color:#fff;padding:14px 22px;border-radius:999px;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold">${esc(txt)}</a></p>`;
+  `<p style="margin:28px 0"><a href="${url}" style="background:#2B3A67;color:#FFF8EC;padding:14px 22px;border-radius:999px;text-decoration:none;font-family:Arial,sans-serif;font-weight:bold">${esc(txt)}</a></p>`;
 
 export function correoEntrega(o: { idioma: "es" | "ca"; nombre: string; titulo: string; pdfUrl: string; tapaDura: boolean }) {
   const ca = o.idioma === "ca";

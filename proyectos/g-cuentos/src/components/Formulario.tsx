@@ -41,7 +41,7 @@ export function Formulario({ idioma }: { idioma: Idioma }) {
         <div className="grid grid-cols-2 gap-2">
           {COLECCIONES.map((c) => (
             <button type="button" key={c.id} onClick={() => { setColeccion(c.id); setTema(c.temas[0].id); }}
-              className={`rounded-xl border-2 p-3 text-left min-h-[48px] ${coleccion === c.id ? "border-terracota bg-[#fdf0e6]" : "border-[#e2d6c1] bg-white"}`}>
+              className={`rounded-xl border-2 p-3 text-left min-h-[48px] ${coleccion === c.id ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white"}`}>
               <span className="font-bold text-noche">{c.nombre[idioma]}</span>
               <span className="block text-xs text-suave">{c.descripcion[idioma]}</span>
             </button>
@@ -57,8 +57,8 @@ export function Formulario({ idioma }: { idioma: Idioma }) {
           </label>
           <fieldset><legend className="etiqueta">{x.protagonista}</legend>
             <div className="flex gap-2">
-              <label className="flex-1"><input type="radio" name="genero" value="m" defaultChecked className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-terracota peer-checked:bg-[#fdf0e6] cursor-pointer">{x.nino}</span></label>
-              <label className="flex-1"><input type="radio" name="genero" value="f" className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-terracota peer-checked:bg-[#fdf0e6] cursor-pointer">{x.nina}</span></label>
+              <label className="flex-1"><input type="radio" name="genero" value="m" defaultChecked className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nino}</span></label>
+              <label className="flex-1"><input type="radio" name="genero" value="f" className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nina}</span></label>
             </div>
           </fieldset>
         </div>
@@ -91,7 +91,7 @@ export function Formulario({ idioma }: { idioma: Idioma }) {
       {/* Campo trampa contra bots */}
       <input name="web" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
       <p className="text-sm text-suave">{x.privacidad}</p>
-      {error && <p className="text-terracota-osc font-bold" role="alert">{error}</p>}
+      {error && <p className="text-primario-osc font-bold" role="alert">{error}</p>}
       <button className="boton w-full text-lg" disabled={enviando}>{enviando ? x.creando : x.enviar}</button>
     </form>
   );

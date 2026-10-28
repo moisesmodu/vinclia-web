@@ -24,7 +24,8 @@ export async function POST(req: Request) {
   const enlace = `${URL_BASE()}/r/${a.codigo}`;
   const panel = `${URL_BASE()}/afiliados/panel?t=${a.token}`;
   const c = correoAfiliado({ nombre: a.nombre, enlace, panel });
-  await enviarCorreo(a.email, c.asunto, c.html, `afiliado-${a.codigo}`);
+  // Si el correo falla, el alta sigue valiendo: el enlace y el panel se muestran en pantalla.
+  await enviarCorreo(a.email, c.asunto, c.html, `afiliado-${a.codigo}`).catch((e) => evento("afiliado-correo-fallido", undefined, { codigo: a.codigo, error: String(e) }));
   await evento("afiliado-alta", undefined, { codigo: a.codigo, nueva: !existente });
   // Por seguridad, si el correo ya existía solo se reenvía el acceso por correo.
   return NextResponse.json(existente ? { reenviado: true } : { codigo: a.codigo, enlace, panel });

@@ -1,7 +1,7 @@
 import fontkit from "@pdf-lib/fontkit";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { PDFDocument, rgb, degrees, type PDFFont, type PDFImage, type PDFPage } from "pdf-lib";
+import { PDFDocument, rgb, degrees, LineCapStyle, type PDFFont, type PDFImage, type PDFPage } from "pdf-lib";
 import sharp from "sharp";
 import type { Cuento } from "./cuento";
 import type { Idioma } from "./catalogo";
@@ -13,10 +13,14 @@ import type { Idioma } from "./catalogo";
 export const MM = 72 / 25.4;
 export const LIBRO = { corteMm: 200, sangradoMm: 4, paginas: 28, dpi: 300 };
 
-const CREMA = rgb(0.984, 0.965, 0.925);
-const TINTA = rgb(0.2, 0.17, 0.15);
-const TERRACOTA = rgb(0.74, 0.4, 0.29);
-const AZUL_NOCHE = rgb(0.16, 0.23, 0.38);
+// Familia Lunilla (marcas/tokens.json)
+const hex = (h: string) => rgb(parseInt(h.slice(1, 3), 16) / 255, parseInt(h.slice(3, 5), 16) / 255, parseInt(h.slice(5, 7), 16) / 255);
+const CREMA = hex("#FFF8EC");
+const TINTA = hex("#1B2444");
+const AZUL_NOCHE = hex("#2B3A67");
+const TERRACOTA = hex("#2B3A67"); // acento de textos pequeños: azul luna
+const AMARILLO = hex("#F5C84C");
+const ROSA = hex("#F7D6E0");
 
 export type ModoPdf = "imprenta" | "pantalla";
 
@@ -40,11 +44,12 @@ async function cargarFuentes(doc: PDFDocument): Promise<Fuentes> {
   doc.registerFontkit(fontkit);
   const dir = path.join(process.cwd(), "assets", "fuentes");
   const f = (n: string) => readFile(path.join(dir, n));
-  const [r, i, t, b] = await Promise.all([f("Andika-Regular.ttf"), f("Andika-Italic.ttf"), f("Sniglet-ExtraBold.ttf"), f("Andika-Bold.ttf")]);
+  const [r, i, t, b] = await Promise.all([f("Nunito-Regular.ttf"), f("Nunito-Italic.ttf"), f("Baloo2-Bold.ttf"), f("Nunito-Bold.ttf")]);
   return {
     texto: await doc.embedFont(r, { subset: true }),
     cursiva: await doc.embedFont(i, { subset: true }),
-    titulo: await doc.embedFont(t, { subset: true }),
+    // Baloo 2 se incrusta entera: el subconjunto de pdf-lib pierde glifos con sus tablas OpenType.
+    titulo: await doc.embedFont(t, { subset: false }),
     negrita: await doc.embedFont(b, { subset: true }),
   };
 }
@@ -88,7 +93,18 @@ function bloqueCentrado(
 }
 
 function adorno(page: PDFPage, cx: number, y: number) {
-  for (const dx of [-14, 0, 14]) page.drawCircle({ x: cx + dx, y, size: dx === 0 ? 2.6 : 1.8, color: TERRACOTA });
+  for (const dx of [-14, 0, 14]) page.drawCircle({ x: cx + dx, y, size: dx === 0 ? 2.6 : 1.8, color: AMARILLO });
+}
+
+/** Lunilla tal como está en marcas/logos/g-cuentos-icono.svg (viewBox 56×56), centrada en (cx, cy) con lado `lado`. */
+export function dibujarLunilla(page: PDFPage, cx: number, cy: number, lado: number) {
+  const k = lado / 56;
+  const o = { x: cx - lado / 2, y: cy + lado / 2, scale: k };
+  page.drawSvgPath("M34.2 5.9A23 23 0 1 0 41 47A21 21 0 0 1 34.2 5.9Z", { ...o, color: AMARILLO });
+  page.drawCircle({ x: o.x + 13.5 * k, y: o.y - 24 * k, size: 2.4 * k, color: TINTA });
+  page.drawCircle({ x: o.x + 10.5 * k, y: o.y - 31 * k, size: 2.6 * k, color: ROSA });
+  page.drawSvgPath("M13 35q4 3 8 0", { ...o, borderColor: TINTA, borderWidth: 2.2 * k, borderLineCap: LineCapStyle.Round });
+  page.drawSvgPath("M9 40q8 6 17 3", { ...o, borderColor: AZUL_NOCHE, borderWidth: 5.5 * k, borderLineCap: LineCapStyle.Round });
 }
 
 async function prepararImagen(buf: Buffer, ladoPx: number, calidad: number): Promise<Buffer> {
@@ -138,6 +154,7 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
     const s = 105 * MM;
     p.drawImage(imgs[0], { x: cx - s / 2, y: b + 28 * MM, width: s, height: s });
     const w = F.texto.widthOfTextAtSize(t.marca, 10);
+    dibujarLunilla(p, cx - w / 2 - 6 * MM, b + 17.3 * MM, 9 * MM);
     p.drawText(t.marca, { x: cx - w / 2, y: b + 16 * MM, size: 10, font: F.texto, color: TERRACOTA });
   }
   // 2 · Dedicatoria
@@ -165,14 +182,16 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   // 28 · Fin y colofón
   {
     const p = nueva();
-    bloqueCentrado(p, t.fin, F.titulo, cx, cy + 22 * MM, anchoTexto, 30, 20 * MM, AZUL_NOCHE);
-    adorno(p, cx, cy + 8 * MM);
+    dibujarLunilla(p, cx, cy + 45 * MM, 28 * MM);
+    bloqueCentrado(p, t.fin, F.titulo, cx, cy + 16 * MM, anchoTexto, 30, 20 * MM, AZUL_NOCHE);
+    adorno(p, cx, cy + 2 * MM);
     bloqueCentrado(p, t.colofon(e.nombre), F.texto, cx, b + 34 * MM, anchoTexto, 8.5, 40 * MM, TINTA, 1.4);
   }
   if (!imprenta) {
     const p = nueva();
     bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cx, cy + 10 * MM, anchoTexto, 16, 40 * MM);
-    bloqueCentrado(p, "lunilla.es", F.titulo, cx, cy - 25 * MM, anchoTexto, 14, 10 * MM, TERRACOTA);
+    dibujarLunilla(p, cx, cy - 18 * MM, 18 * MM);
+    bloqueCentrado(p, "lunilla.es", F.titulo, cx, cy - 34 * MM, anchoTexto, 14, 10 * MM, TERRACOTA);
   }
   const total = doc.getPageCount();
   const esperado = LIBRO.paginas + (imprenta ? 0 : 2);
@@ -189,12 +208,15 @@ function dibujarFrontal(p: PDFPage, imagen: PDFImage, titulo: string, marca: str
   const lado = Math.min(vis.w, vis.h);
   const bandaAlto = lado * 0.24;
   const margen = lado * 0.07;
+  // La banda deja libre la esquina superior derecha: ahí vive Lunilla en todas las portadas.
+  const bandaAncho = (vis.w - 2 * margen) * 0.7;
   const yBanda = vis.y + vis.h - margen - bandaAlto;
-  p.drawRectangle({ x: vis.x + margen, y: yBanda, width: vis.w - 2 * margen, height: bandaAlto, color: CREMA, opacity: 0.9 });
-  bloqueCentrado(p, titulo, F.titulo, vis.x + vis.w / 2, yBanda + bandaAlto * 0.58, vis.w - 2 * margen - 24, lado / 16, bandaAlto * 0.62, AZUL_NOCHE, 1.15);
+  p.drawRectangle({ x: vis.x + margen, y: yBanda, width: bandaAncho, height: bandaAlto, color: CREMA, opacity: 0.9 });
+  const cxBanda = vis.x + margen + bandaAncho / 2;
+  bloqueCentrado(p, titulo, F.titulo, cxBanda, yBanda + bandaAlto * 0.58, bandaAncho - 20, lado / 17, bandaAlto * 0.62, AZUL_NOCHE, 1.1);
   const tam = lado / 55;
   const w = F.texto.widthOfTextAtSize(marca, tam);
-  p.drawText(marca, { x: vis.x + vis.w / 2 - w / 2, y: yBanda + bandaAlto * 0.1, size: tam, font: F.texto, color: TERRACOTA });
+  p.drawText(marca, { x: cxBanda - w / 2, y: yBanda + bandaAlto * 0.1, size: tam, font: F.texto, color: TERRACOTA });
 }
 
 export interface DimensionesCubierta {
@@ -224,8 +246,9 @@ export async function generarCubierta(e: Omit<EntradaPdf, "modo">, dim: Dimensio
   // Contraportada (izquierda)
   const cxBack = env + tapa / 2;
   bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cxBack, H / 2 + 15 * MM, tapa - 40 * MM, 15, 50 * MM);
+  dibujarLunilla(p, cxBack, env + 42 * MM, 20 * MM);
   bloqueCentrado(p, "Lunilla · lunilla.es", F.titulo, cxBack, env + 25 * MM, tapa - 40 * MM, 12, 10 * MM, TERRACOTA);
-  bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 45 * MM, tapa - 50 * MM, 7, 20 * MM, TINTA, 1.35);
+  bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 12 * MM, tapa - 50 * MM, 6.5, 12 * MM, TINTA, 1.35);
   // Lomo
   p.drawRectangle({ x: env + tapa, y: 0, width: lomo, height: H, color: AZUL_NOCHE });
   if (lomo >= 5 * MM) {

@@ -31,16 +31,16 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
       <div className="tarjeta overflow-x-auto mb-8">
         <table className="w-full"><thead><tr className="text-left">{["fecha", "id", "estado", "formato", "importe", "correo", "afiliada", "error", "PDF"].map((h) => <th key={h} className="p-2">{h}</th>)}</tr></thead>
           <tbody>{pedidos.map((p) => (
-            <tr key={p.id} className="border-t border-[#eadfcb] align-top">
+            <tr key={p.id} className="border-t border-[#efe4cf] align-top">
               <td className="p-2 whitespace-nowrap">{p.creadoEn.toLocaleString("es-ES")}</td><td className="p-2 font-mono">{p.id}</td>
               <td className="p-2 font-bold">{p.estado}</td><td className="p-2">{p.formato}</td><td className="p-2">{p.precioCents ? euros(p.precioCents) : ""}</td>
-              <td className="p-2">{p.email}</td><td className="p-2">{p.afiliado}</td><td className="p-2 text-terracota-osc">{p.error}</td>
+              <td className="p-2">{p.email}</td><td className="p-2">{p.afiliado}</td><td className="p-2 text-primario-osc">{p.error}</td>
               <td className="p-2">{p.pdfUrl && <a className="underline" href={p.pdfUrl}>PDF</a>}</td>
             </tr>))}</tbody></table>
       </div>
       <h2 className="text-xl mb-2">Afiliadas</h2>
       <div className="tarjeta overflow-x-auto"><table className="w-full"><tbody>{afiliados.map((a) => (
-        <tr key={a.codigo} className="border-t border-[#eadfcb]"><td className="p-2 font-mono">{a.codigo}</td><td className="p-2">{a.nombre}</td><td className="p-2">{a.email}</td><td className="p-2">{a.redSocial}</td><td className="p-2">{a.clics} clics</td><td className="p-2">{a.activo ? "activa" : "baja"}</td></tr>
+        <tr key={a.codigo} className="border-t border-[#efe4cf]"><td className="p-2 font-mono">{a.codigo}</td><td className="p-2">{a.nombre}</td><td className="p-2">{a.email}</td><td className="p-2">{a.redSocial}</td><td className="p-2">{a.clics} clics</td><td className="p-2">{a.activo ? "activa" : "baja"}</td></tr>
       ))}</tbody></table></div>
     </div>
   );

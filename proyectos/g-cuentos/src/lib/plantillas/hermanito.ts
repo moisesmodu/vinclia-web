@@ -9,7 +9,7 @@ export const hermanito: Plantilla = {
     ca: "{Elnom} i el nadó més petit del món",
   },
   portada:
-    "{NINO} proudly and gently holding a tiny sleeping baby wrapped in a cream knitted blanket, {COMPA} looking up lovingly, cozy living room with soft warm light",
+    "{NINO} proudly and gently holding a tiny sleeping baby wrapped in a cream knitted blanket, {COMPA} looking up lovingly, cozy living room with soft warm light, {LUNILLA} smiling in the upper right corner of the sky",
   contraportada: {
     es: "Un cuento para dar la bienvenida a un hermanito y descubrir que el cariño se multiplica.",
     ca: "Un conte per donar la benvinguda a un germanet i descobrir que l'estima es multiplica.",
@@ -116,11 +116,11 @@ export const hermanito: Plantilla = {
     },
     {
       texto: {
-        es: "Por la noche, los dos dormían en la misma habitación. {nombre} miró la cuna y susurró: —Buenas noches, {bebeVoc}. Yo te enseñaré todo lo que sé. Y {mascota} se quedó de guardia, vigilando a los dos.",
-        ca: "A la nit, tots dos dormien a la mateixa habitació. {Elnom} va mirar el bressol i va xiuxiuejar: —Bona nit, {bebeVoc}. Jo t'ensenyaré tot el que sé. I {compa} es va quedar de guàrdia, vigilant tots dos.",
+        es: "Por la noche, los dos dormían en la misma habitación. {nombre} miró la cuna y susurró: —Buenas noches, {bebeVoc}. Yo te enseñaré todo lo que sé. Y {mascota} se quedó de guardia, vigilando a los dos. Y ahora, todos juntos, como susurra Lunilla: «El cariño no se reparte: crece».",
+        ca: "A la nit, tots dos dormien a la mateixa habitació. {Elnom} va mirar el bressol i va xiuxiuejar: —Bona nit, {bebeVoc}. Jo t'ensenyaré tot el que sé. I {compa} es va quedar de guàrdia, vigilant tots dos. I ara, tots junts, com xiuxiueja la Lunilla: «L'estima no es reparteix: creix».",
       },
       escena:
-        "night, shared bedroom lit by a moon-shaped night light, {NINO} in pajamas in bed smiling toward the baby sleeping in the crib, {COMPA} keeping guard between them, peaceful blue tones",
+        "night, shared bedroom lit by a moon-shaped night light, {NINO} in pajamas in bed smiling toward the baby sleeping in the crib, {COMPA} keeping guard between them, peaceful blue tones, {LUNILLA} watching tenderly from the sky",
       ropa: "pijama",
     },
   ],

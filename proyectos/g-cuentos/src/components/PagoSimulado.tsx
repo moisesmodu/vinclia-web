@@ -33,7 +33,7 @@ export function PagoSimulado({ idioma, pedidoId, sessionId, formato, importe }: 
         </>
       )}
       <p className="text-sm text-suave">Tarjeta de prueba: 4242 4242 4242 4242 (no se pide aquí).</p>
-      {error && <p className="text-terracota-osc text-sm break-all">{error}</p>}
+      {error && <p className="text-primario-osc text-sm break-all">{error}</p>}
       <button className="boton w-full" disabled={cargando}>{cargando ? "Procesando…" : `Pagar ${importe} (prueba)`}</button>
     </form>
   );

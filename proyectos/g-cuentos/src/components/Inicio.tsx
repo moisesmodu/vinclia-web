@@ -4,7 +4,7 @@ import { COLECCIONES, type Idioma } from "@/lib/catalogo";
 import { configPais, euros, URL_BASE } from "@/lib/config";
 import { MUESTRAS } from "@/lib/muestras";
 import { pref, t } from "@/i18n/textos";
-import { Pagina } from "./Marco";
+import { Luna, Pagina } from "./Marco";
 
 const PORTADAS_COLECCION: Record<string, string> = {
   dormir: "/muestras/leo-y-la-luz-de-la-luna/07-p.webp",
@@ -38,7 +38,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
       {/* Portada */}
       <section className="mx-auto max-w-6xl px-4 pt-8 pb-12 grid gap-10 md:grid-cols-2 items-center">
         <div>
-          <p className="text-terracota font-bold mb-3">{x.lema}</p>
+          <p className="text-primario font-bold mb-3 flex items-center gap-2"><Luna className="w-7 h-7" />{x.lema}</p>
           <h1 className="text-4xl sm:text-5xl leading-[1.05] mb-5">{x.hero.titulo}</h1>
           <p className="text-lg text-suave mb-7">{x.hero.sub}</p>
           <div className="flex flex-wrap gap-3 items-center">
@@ -53,21 +53,31 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {/* Precios */}
-      <section className="mx-auto max-w-4xl px-4 grid gap-4 sm:grid-cols-2">
-        <div className="tarjeta p-6">
-          <p className="font-bold text-noche">{x.precios.pdf}</p>
-          <p className="titulo text-4xl my-2">{euros(c.precios.pdf, idioma)}</p>
-          <p className="text-suave">{x.precios.entrega}</p>
+      {/* Pantalla de precio (MARCAS.md §3): gratis, de pago, IVA, sin suscripción, sello */}
+      <section className="mx-auto max-w-5xl px-4" aria-labelledby="precio">
+        <h2 id="precio" className="text-3xl mb-6 text-center">{x.precio.titulo}</h2>
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="tarjeta p-6">
+            <p className="font-bold text-noche">{x.precio.gratis}</p>
+            <p className="titulo text-4xl my-2">0 €</p>
+            <ul className="text-suave space-y-1">{x.precio.gratisLista.map((l) => <li key={l}>✓ {l}</li>)}</ul>
+          </div>
+          <div className="tarjeta p-6">
+            <p className="font-bold text-noche">{x.precios.pdf}</p>
+            <p className="titulo text-4xl my-2">{euros(c.precios.pdf, idioma)}</p>
+            <p className="text-suave">{x.precios.entrega}</p>
+          </div>
+          <div className="tarjeta p-6 ring-2 ring-luna">
+            <p className="font-bold text-noche">{x.precios.tapaDura}</p>
+            <p className="titulo text-4xl my-2">{euros(c.precios.tapaDura, idioma)}</p>
+            <p className="text-suave">{x.precios.envio}. {x.precios.entregaLibro}</p>
+          </div>
         </div>
-        <div className="tarjeta p-6 ring-2 ring-terracota">
-          <p className="font-bold text-noche">{x.precios.tapaDura}</p>
-          <p className="titulo text-4xl my-2">{euros(c.precios.tapaDura, idioma)} <span className="text-base text-suave" style={{ fontFamily: "var(--font-texto)" }}>· {x.precios.envio}</span></p>
-          <p className="text-suave">{x.precios.entregaLibro}</p>
-        </div>
-        <p className="sm:col-span-2 text-center text-sm text-terracota-osc font-bold">
+        <p className="text-center mt-4 text-suave">{x.precio.iva} · {x.precio.unico}</p>
+        <p className="text-center text-sm text-primario-osc font-bold mt-2">
           {x.fechas(fecha(c.fechasLimite.navidadTapaDura, idioma), fecha(c.fechasLimite.reyesTapaDura, idioma))}
         </p>
+        <p className="text-center text-sm font-bold text-noche mt-3">{x.sello}</p>
       </section>
 
       {/* Cómo funciona */}
@@ -76,7 +86,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         <ol className="grid gap-4 sm:grid-cols-3">
           {x.comoFunciona.pasos.map(([h, d], i) => (
             <li key={h} className="tarjeta p-6">
-              <span className="titulo text-terracota text-3xl">{i + 1}</span>
+              <span className="titulo text-primario text-3xl">{i + 1}</span>
               <h3 className="text-xl mt-1 mb-2">{h}</h3>
               <p className="text-suave">{d}</p>
             </li>
@@ -101,7 +111,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
                 <p className="text-suave mt-1">
                   {m.datos.idioma === "ca" ? "Col·lecció La meva ciutat · en català · 6 anys" : "Colección Dormir · en castellano · 4 años"}
                 </p>
-                <span className="inline-block mt-3 font-bold text-terracota group-hover:underline">{x.muestras.leer} →</span>
+                <span className="inline-block mt-3 font-bold text-primario group-hover:underline">{x.muestras.leer} →</span>
               </div>
             </Link>
           ))}

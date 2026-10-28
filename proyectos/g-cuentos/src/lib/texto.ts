@@ -23,6 +23,8 @@ Tu trabajo es pulirlo y personalizarlo, no reescribirlo:
 - En catalán, usa el article personal davant dels noms (en Pau, la Martina, l'Oriol) excepte en vocatius, i un català normatiu i natural.
 - Nunca añadas datos que no te han dado (hermanos, nombres de padres, colegio). La familia, en neutro.
 - Nada de marcas, personajes con derechos de autor ni contenido que asuste de verdad.
+- La última página termina con una frase entre comillas «…» para decir en voz alta juntos (con Lunilla, la luna de la marca): consérvala literal.
+- Lunilla nunca grita ni habla con mayúsculas.
 - Cada página: como máximo ${MAX_CHARS_PAGINA} caracteres.`;
 
 function cliente(): Anthropic | null {

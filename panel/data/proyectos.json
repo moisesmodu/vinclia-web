@@ -1414,10 +1414,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca aplicada: nombre, promesa, colores, Baloo 2 y Nunito, logotipo e icono, sello en el pie y pantalla de precio (MARCAS.md); Lunilla con bufanda en portadas y última página, con frase final para decir juntos",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
       }
     ],
     "proximos": [
-      "Aplicar la identidad de marca de MARCAS.md",
       "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
       "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
       "Apertura el 15/11"
@@ -1550,7 +1554,8 @@
       "Las webs de Gelato y Lulu no son accesibles desde el entorno de las sesiones: el precio real (estimado 17,60 € + 6 € de envío) se confirma con npm run cotizar al tener la clave.",
       "Con la estimación, 34,90 € dejaba 9,2 € de margen sin colchón: se sube a 36,90 € con envío incluido (≈10 €), aún por debajo de Aventopía (43,99 €).",
       "Cada cuento ilustrado gasta unos 26 créditos de Higgsfield (Nano Banana Pro 2k, 13 imágenes): unos 30 cuentos al mes caben en el saldo actual; más exige recargar.",
-      "La API pública de Higgsfield no está documentada de forma verificable: la ilustración por pedido la hace una tarea programada horaria con el conector."
+      "La API pública de Higgsfield no está documentada de forma verificable: la ilustración por pedido la hace una tarea programada horaria con el conector.",
+      "Desde este contenedor el proxy bloquea upload.higgsfield.ai: no se pueden subir imágenes propias (el logotipo) como referencia; la hoja de Lunilla se generó por descripción."
     ],
     "lider": {
       "nombre": "Wonderbly (y Aventopía como competidor local)",

@@ -9,6 +9,11 @@ export const ESTILO =
 export const NEGATIVO =
   "no text, no letters, no words, no captions, no watermark, no signature, no frame, no border, no photo realism, no extra limbs, consistent character design";
 
+// Personaje de marca (MARCAS.md, familia Lunilla): aparece como secundario en portadas y en la última página.
+export const LUNILLA =
+  "Lunilla (exactly as in the mascot reference sheet), a small friendly sunflower-yellow crescent moon character with two small dark navy eyes, rosy pink cheeks, a calm closed-mouth smile and a cozy golden-ochre knitted scarf with fringe, softly glowing,";
+export const LUNILLA_HOJA_JOB = "a0ebeb4a-fe55-4a52-be3b-e174cde42720";
+
 export interface Protagonista {
   id: "nino" | "nina";
   genero: Genero;
@@ -83,13 +88,16 @@ export function promptsDelCuento(d: DatosNino): PromptIlustracion[] {
       .replace(/\{CIUDAD\}/g, d.ciudad)
       .replace(/\{LUGAR\}/g, lug.ingles)
       .replace(/\{BEBE\}/g, "a tiny baby in a cream knitted onesie");
+    // Lunilla: descripción completa la primera vez, nombre después.
+    let primeraLunilla = true;
+    s = s.replace(/\{LUNILLA\}/g, () => (primeraLunilla ? ((primeraLunilla = false), LUNILLA) : "Lunilla"));
     return s;
   };
   const montar = (escena: string, ropa: "dia" | "pijama") =>
     `${ESTILO}. Scene: ${sustituir(escena, ropa).replace(/,\s*,/g, ",")}. Keep the child exactly as in the reference character sheet (same face, hair, skin tone and outfit). ${NEGATIVO}.`;
 
   return [
-    { indice: 0, prompt: montar(p.portada, p.coleccion === "dormir" ? "pijama" : "dia") + " Leave calm empty space in the upper third for the book title." },
+    { indice: 0, prompt: montar(p.portada, p.coleccion === "dormir" ? "pijama" : "dia") + " Leave calm empty space in the upper left two thirds of the top for the book title; Lunilla stays in the upper right corner." },
     ...p.paginas.map((pg, i) => ({ indice: i + 1, prompt: montar(pg.escena, pg.ropa) })),
   ];
 }

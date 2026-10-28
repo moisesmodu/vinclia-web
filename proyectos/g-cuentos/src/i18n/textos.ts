@@ -4,9 +4,16 @@ export const T = {
   es: {
     marca: "Lunilla",
     lema: "Cuentos personalizados con nombre, ilustrados con cariño",
+    promesa: "Un cuento donde el protagonista eres tú.",
+    sello: "Hecho en Lleida · Precio claro · Cancela en un clic",
+    precio: {
+      titulo: "Lo que es gratis y lo que se paga",
+      gratis: "Gratis", gratisLista: ["Crear el cuento con su nombre", "Vista previa: portada, dedicatoria y 3 páginas"],
+      pago: "Pagas solo si te gusta", iva: "IVA incluido (4 %)", unico: "Pago único: sin suscripción, nada que cancelar",
+    },
     nav: { crear: "Crear cuento", muestras: "Ver muestras", ideas: "Ideas de regalo", afiliados: "Afiliadas", otroIdioma: "Català" },
     hero: {
-      titulo: "Un cuento donde tu peque es el protagonista",
+      titulo: "Un cuento donde el protagonista eres tú",
       sub: "Con su nombre, su ciudad, su mascota y lo que más le gusta. 12 páginas ilustradas y una historia que le ayuda con un miedo o un valor. Sin fotos del niño.",
       cta: "Crear su cuento gratis",
       nota: "Ves 3 páginas antes de pagar. PDF en menos de 2 horas.",
@@ -68,9 +75,16 @@ export const T = {
   ca: {
     marca: "Lunilla",
     lema: "Contes personalitzats amb nom, il·lustrats amb estima",
+    promesa: "Un conte on el protagonista ets tu.",
+    sello: "Fet a Lleida · Preu clar · Cancel·la amb un clic",
+    precio: {
+      titulo: "El que és gratis i el que es paga",
+      gratis: "Gratis", gratisLista: ["Crear el conte amb el seu nom", "Vista prèvia: portada, dedicatòria i 3 pàgines"],
+      pago: "Pagues només si t'agrada", iva: "IVA inclòs (4 %)", unico: "Pagament únic: sense subscripció, res a cancel·lar",
+    },
     nav: { crear: "Crear conte", muestras: "Veure mostres", ideas: "Idees de regal", afiliados: "Afiliades", otroIdioma: "Castellano" },
     hero: {
-      titulo: "Un conte on el teu petit és el protagonista",
+      titulo: "Un conte on el protagonista ets tu",
       sub: "Amb el seu nom, la seva ciutat, la seva mascota i el que més li agrada. 12 pàgines il·lustrades i una història que l'ajuda amb una por o un valor. Sense fotos de l'infant.",
       cta: "Crear el seu conte gratis",
       nota: "Veus 3 pàgines abans de pagar. PDF en menys de 2 hores.",

@@ -7,7 +7,7 @@ export const ciudad: Plantilla = {
   coleccion: "ciudad",
   titulo: { es: "{nombre} y los secretos {deciudad}", ca: "{Elnom} i els secrets {deciudad}" },
   portada:
-    "{NINO} holding an old hand-drawn treasure map and pointing excitedly at the skyline of {CIUDAD} ({LUGAR}), {COMPA} beside, golden morning light",
+    "{NINO} holding an old hand-drawn treasure map and pointing excitedly at the skyline of {CIUDAD} ({LUGAR}), {COMPA} beside, golden morning light, {LUNILLA} smiling in the upper right corner of the sky",
   contraportada: {
     es: "Una búsqueda del tesoro por los rincones de tu ciudad.",
     ca: "Una cerca del tresor pels racons de la teva ciutat.",
@@ -112,11 +112,11 @@ export const ciudad: Plantilla = {
     },
     {
       texto: {
-        es: "Esa noche, las luces {deciudad} brillaban como estrellas caídas. {nombre} pegó su mapa junto a la cama y se durmió pensando en su próxima aventura. Porque {ciudad} todavía guardaba muchos secretos.",
-        ca: "Aquella nit, els llums {deciudad} brillaven com estrelles caigudes. {Elnom} va enganxar el seu mapa al costat del llit i es va adormir pensant en la seva propera aventura. Perquè {ciudad} encara guardava molts secrets.",
+        es: "Esa noche, las luces {deciudad} brillaban como estrellas caídas. {nombre} pegó su mapa junto a la cama y se durmió pensando en su próxima aventura. Porque {ciudad} todavía guardaba muchos secretos. Y ahora, todos juntos, como Lunilla desde el cielo: «Buenas noches, {ciudad}; mañana, más secretos».",
+        ca: "Aquella nit, els llums {deciudad} brillaven com estrelles caigudes. {Elnom} va enganxar el seu mapa al costat del llit i es va adormir pensant en la seva propera aventura. Perquè {ciudad} encara guardava molts secrets. I ara, tots junts, com la Lunilla des del cel: «Bona nit, {ciudad}; demà, més secrets».",
       },
       escena:
-        "night bedroom, the hand-drawn map pinned on the wall next to the bed, {NINO} falling asleep smiling, {COMPA} curled up, window showing the twinkling lights of {CIUDAD} and its landmark ({LUGAR})",
+        "night bedroom, the hand-drawn map pinned on the wall next to the bed, {NINO} falling asleep smiling, {COMPA} curled up, window showing the twinkling lights of {CIUDAD} and its landmark ({LUGAR}), {LUNILLA} watching tenderly from the sky",
       ropa: "pijama",
     },
   ],

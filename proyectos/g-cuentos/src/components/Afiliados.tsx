@@ -33,7 +33,7 @@ export function FormAfiliada({ idioma }: { idioma: "es" | "ca" }) {
       <input name="web" className="hidden" tabIndex={-1} autoComplete="off" />
       <label className="flex gap-2 items-start text-sm"><input type="checkbox" name="acepto" required className="mt-1" />
         <span>{ca ? "Accepto les condicions del programa i la política de privacitat." : "Acepto las condiciones del programa y la política de privacidad."}</span></label>
-      {res?.error && <p className="text-terracota-osc font-bold">{res.error}</p>}
+      {res?.error && <p className="text-primario-osc font-bold">{res.error}</p>}
       <button className="boton w-full" disabled={cargando}>{ca ? "Vull el meu enllaç" : "Quiero mi enlace"}</button>
     </form>
   );

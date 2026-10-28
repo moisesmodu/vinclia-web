@@ -1,6 +1,7 @@
 import type { Plantilla } from "./tipos";
 
 // Colección VALORES · «{nombre} y la semilla que crecía con los gestos bonitos»
+// Frase final para decir juntos (MARCAS.md, voz de Lunilla) en la página 12.
 // Arco: presentación → semilla mágica → prueba del valor (tema) → error → la planta se mustia →
 // reflexión → gesto bonito → la planta florece → lección.
 export const valores: Plantilla = {
@@ -10,7 +11,7 @@ export const valores: Plantilla = {
     ca: "{Elnom} i la llavor dels gestos bonics",
   },
   portada:
-    "{NINO} kneeling happily next to a small magical glowing tree in a clay pot whose leaves sparkle, {COMPA} beside, warm sunny garden in {CIUDAD}, little floating golden light specks",
+    "{NINO} kneeling happily next to a small magical glowing tree in a clay pot whose leaves sparkle, {COMPA} beside, warm sunny garden in {CIUDAD}, little floating golden light specks, {LUNILLA} smiling in the upper right corner of the sky",
   escenasTema: {
     compartir: {
       situacion: "playground in {CIUDAD}, a shy new girl looking longingly at {AFICION} held by {NINO}, {COMPA} nearby",
@@ -149,11 +150,11 @@ export const valores: Plantilla = {
     },
     {
       texto: {
-        es: "Por la noche, el arbolito brillaba en la ventana como una lamparita. —Buenas noches, semilla —dijo {nombre}. Y el arbolito, muy bajito, contestó: —Buenas noches. Hoy has crecido tú también.",
-        ca: "A la nit, l'arbret brillava a la finestra com un llumet. —Bona nit, llavor —va dir {elnom}. I l'arbret, molt baixet, va contestar: —Bona nit. Avui també has crescut tu.",
+        es: "Por la noche, el arbolito brillaba en la ventana como una lamparita. —Buenas noches, semilla —dijo {nombre}. Y el arbolito, muy bajito, contestó: —Buenas noches. Hoy has crecido tú también. Y ahora, todos juntos, como dice Lunilla desde la ventana: «Un gesto bonito, una flor nueva».",
+        ca: "A la nit, l'arbret brillava a la finestra com un llumet. —Bona nit, llavor —va dir {elnom}. I l'arbret, molt baixet, va contestar: —Bona nit. Avui també has crescut tu. I ara, tots junts, com diu la Lunilla des de la finestra: «Un gest bonic, una flor nova».",
       },
       escena:
-        "night, the little magical tree glowing softly like a night light on the windowsill, {NINO} in pajamas in bed smiling at it, {COMPA} asleep at the foot of the bed, stars outside over {CIUDAD}",
+        "night, the little magical tree glowing softly like a night light on the windowsill, {NINO} in pajamas in bed smiling at it, {COMPA} asleep at the foot of the bed, stars outside over {CIUDAD}, {LUNILLA} watching tenderly from the sky",
       ropa: "pijama",
     },
   ],

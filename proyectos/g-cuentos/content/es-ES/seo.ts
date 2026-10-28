@@ -118,7 +118,7 @@ export const SEO_ES: PaginaSeo[] = [
     intro: "A los 5 y 6 años muchos niños empiezan a leer. Un libro donde aparece su nombre una y otra vez es un buen aliado: lo intentan leer solos porque quieren saber qué les pasa.",
     secciones: [
       { h2: "Historias con más trama", parrafos: ["En «Mi ciudad», el protagonista recibe un mapa misterioso con los cinco secretos de su ciudad y lo recorre con su mascota: el mercado, el río, el parque, el mirador. En «Valores», encuentra una semilla que solo crece con gestos bonitos."] },
-      { h2: "Tipografía pensada para aprender a leer", parrafos: ["Usamos Andika, una letra diseñada para lectores que empiezan: cada letra se distingue bien de las demás, como la «a» y la «d»."] },
+      { h2: "Letra grande y clara", parrafos: ["El texto va en letra redondeada y grande, con pocas líneas por página, para que puedan seguirlo con el dedo mientras un adulto lee o intentarlo solos."] },
     ],
     faq: [["¿Sale su colegio?", "No pedimos datos del colegio; la historia ocurre en su ciudad."]],
     coleccion: "ciudad",

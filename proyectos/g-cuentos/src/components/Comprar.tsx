@@ -19,7 +19,7 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
     window.location.href = j.url;
   }
   const opcion = (f: "pdf" | "tapaDura", titulo: string, precio: string, nota: string) => (
-    <label className={`block rounded-2xl border-2 p-4 cursor-pointer ${formato === f ? "border-terracota bg-[#fdf0e6]" : "border-[#e2d6c1] bg-white"}`}>
+    <label className={`block rounded-2xl border-2 p-4 cursor-pointer ${formato === f ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white"}`}>
       <input type="radio" name="formato" className="sr-only" checked={formato === f} onChange={() => setFormato(f)} />
       <span className="flex justify-between items-baseline gap-2"><span className="font-bold text-noche">{titulo}</span><span className="titulo text-2xl">{precio}</span></span>
       <span className="block text-sm text-suave mt-1">{nota}</span>
@@ -33,8 +33,9 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
       <label className="block"><span className="etiqueta">{x.vista.email}</span>
         <input type="email" className="campo" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" inputMode="email" />
       </label>
-      {error && <p className="text-terracota-osc font-bold" role="alert">{error}</p>}
+      {error && <p className="text-primario-osc font-bold" role="alert">{error}</p>}
       <button className="boton w-full text-lg" onClick={pagar} disabled={cargando}>{x.vista.pagar} · {formato === "pdf" ? precios.pdf : precios.tapaDura}</button>
+      <p className="text-xs text-suave text-center">{x.precio.iva} · {x.precio.unico}</p>
       <p className="text-xs text-suave text-center">{x.garantia}</p>
     </div>
   );

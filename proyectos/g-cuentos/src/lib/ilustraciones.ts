@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 import type { ColeccionId, Genero } from "./catalogo";
-import { promptsDelCuento, protagonistaDe } from "./ilustracion-prompts";
+import { LUNILLA_HOJA_JOB, promptsDelCuento, protagonistaDe } from "./ilustracion-prompts";
 import type { DatosNino } from "./rellenar";
 
 // ── Biblioteca (vistas previas) ─────────────────────────────────────────────
@@ -45,7 +45,7 @@ export function encargoIlustracion(d: DatosNino): Encargo {
     modelo: "nano_banana_pro",
     resolucion: "2k",
     proporcion: "1:1",
-    referencias: [protagonistaDe(d.genero).hojaJobId],
+    referencias: [protagonistaDe(d.genero).hojaJobId, LUNILLA_HOJA_JOB], // niño/niña + Lunilla
     prompts: promptsDelCuento(d),
   };
 }

@@ -23,7 +23,7 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
   return (
     <Pagina idioma={idioma}>
       <div className="mx-auto max-w-5xl px-4 py-8">
-        <p className="text-terracota font-bold">{x.vista.titulo}</p>
+        <p className="text-primario font-bold">{x.vista.titulo}</p>
         <h1 className="text-3xl sm:text-4xl mt-1 mb-2">{cuento.titulo}</h1>
         <p className="text-suave mb-6">{x.vista.aviso}</p>
         <div className="grid gap-8 lg:grid-cols-[1fr_360px] items-start">
