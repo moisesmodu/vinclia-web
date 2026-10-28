@@ -1,0 +1,1 @@
+export default function NoTrobat() { return <html lang="ca"><body style={{ fontFamily: 'system-ui', padding: 32 }}><h1>404</h1><p>Pàgina no trobada · Página no encontrada. <a href="/ca">Aprova</a></p></body></html>; }

@@ -1,0 +1,130 @@
+// Un proyecto de Neon por producto (SESIONES.md): cartera-m-catala.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+model Usuari {
+  id                String      @id @default(cuid())
+  email             String      @unique
+  hash              String
+  idioma            String      @default("ca")
+  pais              String      @default("es")
+  nivell            String?     // B1, B2, C1, C2
+  convocatoria      String?     // id de config/convocatories.json
+  creat             DateTime    @default(now())
+  stripeCustomerId  String?     @unique
+  subscripcioId     String?
+  subscripcioEstat  String?     // active, trialing, past_due, canceled, demo, passi
+  subscripcioFins   DateTime?
+  pla               String?     // mensual, anual, pase
+  cancelaAlFinal    Boolean     @default(false)
+  sincronitzat      DateTime?
+  progressos        Progres[]
+  simulacres        Simulacre[]
+  correccions       Correccio[]
+}
+
+/// Progreso de un usuario por nivel: diagnóstico, plan, tarjetas FSRS, mapa de dominio, racha (JSON). Permanente y exportable.
+model Progres {
+  usuariId    String
+  nivell      String
+  dades       Json
+  actualitzat DateTime @updatedAt
+  usuari      Usuari   @relation(fields: [usuariId], references: [id], onDelete: Cascade)
+
+  @@id([usuariId, nivell])
+}
+
+/// Resultado de cada simulacro (también anónimos, con anonId del navegador): alimenta la comparación con la cohorte de la convocatoria.
+model Simulacre {
+  id           String   @id @default(cuid())
+  usuariId     String?
+  anonId       String?
+  nivell       String
+  convocatoria String?
+  simulacreId  String
+  nota         Float
+  arees        Json
+  apte         Boolean
+  data         DateTime @default(now())
+  usuari       Usuari?  @relation(fields: [usuariId], references: [id], onDelete: SetNull)
+
+  @@index([nivell, convocatoria, nota])
+}
+
+/// Corrección escrita: texto, resultado por criterios, latencia y coste (tokens) para el informe de coste por usuario.
+model Correccio {
+  id        String   @id @default(cuid())
+  usuariId  String?
+  anonId    String?
+  nivell    String
+  tascaId   String?
+  paraules  Int
+  resultat  Json
+  motor     String   // regles | lt | lt+llm | llm
+  ms        Int
+  tokensIn  Int      @default(0)
+  tokensOut Int      @default(0)
+  data      DateTime @default(now())
+  usuari    Usuari?  @relation(fields: [usuariId], references: [id], onDelete: SetNull)
+
+  @@index([data])
+}
+
+/// Consumo mensual por persona (anónima o con cuenta) para las cuotas gratuitas y el coste por usuario.
+model Us {
+  clau         String   @id // <anonId|usuariId>:<AAAA-MM>
+  correccions  Int      @default(0)
+  simulacres   Int      @default(0)
+  oralSegons   Int      @default(0)
+  ttsCaracters Int      @default(0)
+  sttSegons    Int      @default(0)
+  minutsUs     Int      @default(0)
+  actualitzat  DateTime @updatedAt
+}
+
+/// Alertas de convocatoria por correo (calendario 2027).
+model Alerta {
+  id       String   @id @default(cuid())
+  email    String
+  nivell   String
+  idioma   String   @default("ca")
+  creat    DateTime @default(now())
+  enviat   DateTime?
+
+  @@unique([email, nivell])
+}
+
+/// Prueba de validez: 20 candidatos reales comparan la corrección de la app con la de un profesor (JUICIO.md, condición de parada).
+model Validesa {
+  id          String   @id @default(cuid())
+  codi        String   // código del candidato (sin nombre)
+  tascaId     String
+  text        String
+  notaApp     Json
+  notaProfe   Json?
+  observacions String?
+  creat       DateTime @default(now())
+}
+
+/// Mensajes de contacto y soporte (los responde la tarea semanal; Moisés pulsa enviar).
+model Contacte {
+  id     String   @id @default(cuid())
+  email  String?
+  text   String
+  tipus  String   @default("contacte")
+  estat  String   @default("obert")
+  data   DateTime @default(now())
+}
+
+/// Ajustes que la app crea sola (ids de precios de Stripe, configuración del portal…).
+model Ajust {
+  clau  String @id
+  valor String
+}

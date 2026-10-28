@@ -1,0 +1,55 @@
+{
+  "id": "b1-co-0001",
+  "nivell": "B1",
+  "area": "co",
+  "titol": "Avís de megafonia a l'estació",
+  "genere": "avís de megafonia",
+  "text": "Atenció, si us plau. Informem els viatgers que el tren de Rodalies de la línia R1 amb destinació Blanes, previst a les 17.42, circula amb un retard aproximat de deu minuts a causa d'una incidència a la via. Aquest tren efectuarà la sortida per l'andana 3, en comptes de l'andana 1. Repetim: el tren cap a Blanes sortirà per l'andana 3. Recordeu que, per accedir a l'andana 3, cal fer servir el pas subterrani o l'ascensor situat al costat de la cafeteria. Els viatgers amb destinació Mataró poden agafar també el tren de les 17.50, que farà parada a totes les estacions. Disculpeu les molèsties. Gràcies per la vostra atenció.",
+  "paraules": 110,
+  "veus": [
+    "central"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Quant de retard porta el tren cap a Blanes?",
+      "opcions": [
+        "Uns deu minuts",
+        "Uns vint minuts",
+        "Uns tres minuts"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p2",
+      "enunciat": "Per quina andana sortirà el tren?",
+      "opcions": [
+        "Per l'andana 1",
+        "Per l'andana 2",
+        "Per l'andana 3"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p3",
+      "enunciat": "Com es pot arribar a l'andana 3?",
+      "opcions": [
+        "Creuant les vies",
+        "Pel pas subterrani o per l'ascensor del costat de la cafeteria",
+        "Per la sortida principal de l'estació"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p4",
+      "enunciat": "Què poden fer els viatgers que van a Mataró?",
+      "opcions": [
+        "Agafar el tren de les 17.50",
+        "Agafar un autobús",
+        "Esperar el tren de demà"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

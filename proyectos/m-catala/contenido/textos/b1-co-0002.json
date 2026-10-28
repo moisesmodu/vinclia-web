@@ -1,0 +1,55 @@
+{
+  "id": "b1-co-0002",
+  "nivell": "B1",
+  "area": "co",
+  "titol": "Missatge de veu de la clínica dental",
+  "genere": "missatge de veu",
+  "text": "Hola, bona tarda. Et truco de la clínica dental Ponent, de Lleida. És per la visita que tens demà dijous a les sis de la tarda amb la doctora Farré. Resulta que la doctora ha tingut un imprevist i demà no podrà venir. Et volíem oferir dues opcions: divendres a les onze del matí o dilluns vinent a les cinc de la tarda. Si et va bé alguna d'aquestes hores, truca'ns al 973 20 40 60 i et confirmem la cita. Som aquí fins a les vuit del vespre. També ens pots enviar un missatge al mateix número. Ah, i recorda que has de portar la radiografia que et van fer al CAP. Perdona les molèsties i fins aviat.",
+  "paraules": 119,
+  "veus": [
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Per què truquen de la clínica?",
+      "opcions": [
+        "Per recordar la visita de demà",
+        "Per demanar que pagui la factura",
+        "Per canviar la visita perquè la doctora no pot venir"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quines opcions ofereixen?",
+      "opcions": [
+        "Divendres al matí o dilluns a la tarda",
+        "Dijous a les sis o divendres a les sis",
+        "Dissabte al matí o dilluns al matí"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Fins a quina hora es pot trucar a la clínica?",
+      "opcions": [
+        "Fins a les sis",
+        "Fins a les vuit",
+        "Fins a les onze"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p4",
+      "enunciat": "Què ha de portar a la visita?",
+      "opcions": [
+        "La targeta sanitària",
+        "Els diners de la visita",
+        "Una radiografia"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}

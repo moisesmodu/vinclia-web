@@ -1,0 +1,111 @@
+/** Regles pròpies de detecció de calcs del castellà (segures: es marquen com a error). Complementen LanguageTool quan no hi
+ *  ha connexió i serveixen per a la pràctica de «detectar castellanismes». Cada regla cita la fitxa de contenido/regles. */
+export type ErrorText = { offset: number; length: number; fragment: string; forma: string; regla: string; missatge: { ca: string; es: string }; segur: boolean; origen: 'regles' | 'lt' | 'llm' };
+
+type R = { re: RegExp; forma: string | ((m: RegExpExecArray) => string); regla: string; ca: string; es: string; segur?: boolean };
+const w = (s: string, flags = 'giu') => new RegExp(`(?<![\\p{L}'])(?:${s})(?![\\p{L}])`, flags);
+
+export const REGLES: R[] = [
+  { re: w("tinc que|tens que|té que|tenim que|teniu que|tenen que|tenia que|tenies que|tindré que|tindria que|tenir que"), forma: (m) => ({ 'tinc que': "he de", 'tens que': 'has de', 'té que': 'ha de', 'tenim que': 'hem de', 'teniu que': 'heu de', 'tenen que': 'han de', 'tenia que': 'havia de', 'tenies que': 'havies de', 'tindré que': 'hauré de', 'tindria que': 'hauria de', 'tenir que': 'haver de' }[m[0].toLowerCase()] ?? 'haver de'), regla: 'perifrasis-obligacio', ca: "«Tenir que» és un calc: l'obligació es diu amb «haver de» o «caldre».", es: '«Tenir que» es un calco: la obligación se dice con «haver de» o «caldre».' },
+  { re: w('hi ha que'), forma: 'cal', regla: 'perifrasis-obligacio', ca: '«Hi ha que» és un calc de «hay que»: digues «cal» o «s\'ha de».', es: '«Hi ha que» es un calco de «hay que»: di «cal» o «s\'ha de».' },
+  { re: w('lo que'), forma: 'el que', regla: 'calcs-sintactics', ca: "L'article neutre «lo» no existeix en català: «el que», «això que», «allò que».", es: 'El artículo neutro «lo» no existe en catalán: «el que», «això que», «allò que».' },
+  { re: w('lo (?=(?:bo|dolent|millor|pitjor|important|normal|únic|mateix|màxim|mínim|principal|essencial|greu|lògic|just)\\b)'), forma: 'el', regla: 'calcs-sintactics', ca: "«Lo» + adjectiu és un calc: «el bo», «el millor», «el més important» o «allò important».", es: '«Lo» + adjetivo es un calco: «el bo», «el millor» o «allò important».' },
+  { re: w('a nivell de'), forma: 'pel que fa a', regla: 'calcs-sintactics', ca: "«A nivell de» només és correcte amb sentit físic (a nivell del mar). Digues «pel que fa a», «en l'àmbit de».", es: '«A nivell de» solo es correcto en sentido físico. Di «pel que fa a», «en l\'àmbit de».' },
+  { re: w('degut a (?!que)'), forma: 'a causa de', regla: 'calcs-sintactics', ca: '«Degut a» amb valor causal és un calc: «a causa de», «per», «gràcies a».', es: '«Degut a» con valor causal es un calco: «a causa de», «per», «gràcies a».' },
+  { re: w('en base a'), forma: "d'acord amb", regla: 'calcs-sintactics', ca: "«En base a» és un calc: «d'acord amb», «segons», «a partir de», «basant-se en».", es: '«En base a» es un calco: «d\'acord amb», «segons», «a partir de».' },
+  { re: w('algo'), forma: 'alguna cosa', regla: 'calcs-sintactics-2', ca: '«Algo» no és català: «alguna cosa», «res» (en interrogatives), «una mica».', es: '«Algo» no es catalán: «alguna cosa», «res», «una mica».' },
+  { re: w('varis|vàries|varios|varias'), forma: 'diversos', regla: 'calcs-sintactics-2', ca: '«Varis» com a quantificador és un calc: «diversos», «uns quants», «alguns».', es: '«Varis» como cuantificador es un calco: «diversos», «uns quants», «alguns».' },
+  { re: w('quant més|quant menys|quant major|quant menor'), forma: (m) => m[0].toLowerCase().replace('quant', 'com'), regla: 'calcs-sintactics-2', ca: '«Quant més… més» és un calc: «com més… més».', es: '«Quant més… més» es un calco: «com més… més».' },
+  { re: w('bueno'), forma: 'bé', regla: 'barbarismes-lexic-1', ca: '«Bueno» és un barbarisme: «bé», «d\'acord», «doncs».', es: '«Bueno» es un barbarismo: «bé», «d\'acord», «doncs».' },
+  { re: w('vale'), forma: "d'acord", regla: 'barbarismes-lexic-1', ca: '«Vale» és un barbarisme: «d\'acord», «entesos», «molt bé».', es: '«Vale» es un barbarismo: «d\'acord», «entesos».' },
+  { re: w('pues'), forma: 'doncs', regla: 'barbarismes-lexic-1', ca: '«Pues» no és català: «doncs» (però «doncs» mai amb valor causal).', es: '«Pues» no es catalán: «doncs» (nunca con valor causal).' },
+  { re: w('hasta'), forma: 'fins a', regla: 'barbarismes-lexic-1', ca: '«Hasta» és un barbarisme: «fins», «fins a», «fins i tot».', es: '«Hasta» es un barbarismo: «fins», «fins a», «fins i tot».' },
+  { re: w('entonces'), forma: 'aleshores', regla: 'barbarismes-lexic-1', ca: '«Entonces» no és català: «aleshores», «llavors», «doncs».', es: '«Entonces» no es catalán: «aleshores», «llavors».' },
+  { re: w('menos mal|menys mal'), forma: 'sort que', regla: 'barbarismes-lexic-1', ca: '«Menys mal» és un calc: «sort que», «encara sort», «encara bo».', es: '«Menys mal» es un calco: «sort que», «encara sort».' },
+  { re: w('desde luego'), forma: 'i tant', regla: 'barbarismes-lexic-1', ca: '«Desde luego» és castellà: «i tant», «és clar», «per descomptat».', es: '«Desde luego» es castellano: «i tant», «és clar».' },
+  { re: w('a lo millor'), forma: 'potser', regla: 'barbarismes-lexic-1', ca: '«A lo millor» és un calc: «potser», «tal vegada», «si de cas».', es: '«A lo millor» es un calco: «potser», «tal vegada».' },
+  { re: w('inclús'), forma: 'fins i tot', regla: 'barbarismes-lexic-1', ca: '«Inclús» és un barbarisme: «fins i tot», «àdhuc».', es: '«Inclús» es un barbarismo: «fins i tot».' },
+  { re: w('(?:em|et|es|ens|us|se) (?:dono|dones|dona|donem|doneu|donen|vaig donar|va donar|he donat|ha donat) compte'), forma: "me n'adono", regla: 'barbarismes-lexic-2', ca: '«Donar-se compte» és un calc: «adonar-se (de)».', es: '«Donar-se compte» es un calco: «adonar-se (de)».' },
+  { re: w("donar-se compte|donar-me compte|donar-te compte|donar-nos compte|donar-vos compte|adonar-se compte"), forma: 'adonar-se', regla: 'barbarismes-lexic-2', ca: '«Donar-se compte» és un calc: «adonar-se (de)».', es: '«Donar-se compte» es un calco: «adonar-se (de)».' },
+  { re: w('apret[ao]|apretar|apreten|apretem|apreteu|apretava|apretat'), forma: 'prémer', regla: 'barbarismes-lexic-2', ca: '«Apretar» no és normatiu: «prémer», «estrènyer», «pitjar».', es: '«Apretar» no es normativo: «prémer», «estrènyer», «pitjar».' },
+  { re: w("assentar-se|m'assento|t'assentes|s'assenta|ens assentem|us assenteu|s'assenten|assenta't|assenteu-vos"), forma: "asseure's", regla: 'barbarismes-lexic-2', ca: '«Assentar-se» (per seure) és un calc: «asseure\'s», «seure».', es: '«Assentar-se» (por sentarse) es un calco: «asseure\'s», «seure».' },
+  { re: w("enterar-se|m'entero|t'enteres|s'entera|ens enterem|us entereu|s'enteren|enterat|enterada"), forma: 'assabentar-se', regla: 'barbarismes-lexic-2', ca: '«Enterar-se» és un barbarisme: «assabentar-se», «saber».', es: '«Enterar-se» es un barbarismo: «assabentar-se», «saber».' },
+  { re: w('recolz(?:a|o|es|em|eu|en|ar|at|ada|ava)(?= (?:la|el|les|els|aquesta|aquest|una|un) (?:proposta|decisió|idea|candidat|candidata|mesura|iniciativa|projecte|reforma|moció|petició))'), forma: 'donar suport a', regla: 'barbarismes-lexic-2', ca: '«Recolzar una proposta» és un calc: «donar suport a», «fer costat a». «Recolzar» és físic (recolzar-se a la paret).', es: '«Recolzar una proposta» es un calco: «donar suport a». «Recolzar» es físico.' },
+  { re: w('tenir ganes de'), forma: 'tenir ganes de', regla: 'barbarismes-lexic-2', ca: '', es: '', segur: false },
+  { re: w('composar'), forma: 'compondre', regla: 'lexic-parelles', ca: '«Composar» vol dir imposar una sanció. Per a música o parts: «compondre».', es: '«Composar» significa imponer una sanción. Para música o partes: «compondre».' },
+  { re: w('trobar en falta|trobo en falta|trobem en falta|trobar a faltar?'), forma: 'trobar a faltar', regla: 'lexic-parelles', ca: '', es: '', segur: false },
+  { re: w('sentir (?:la ràdio|la música|el programa|les notícies|la conferència)'), forma: 'escoltar', regla: 'lexic-parelles', ca: '«Sentir» és percebre; parar atenció és «escoltar».', es: '«Sentir» es percibir; prestar atención es «escoltar».', segur: false },
+  { re: w('número de persones|número de casos|número de pacients|número d\'alumnes|número de'), forma: 'nombre de', regla: 'lexic-parelles', ca: '«Número» és la xifra concreta; la quantitat és «nombre».', es: '«Número» es la cifra concreta; la cantidad es «nombre».', segur: false },
+  { re: w('medi ambient'), forma: 'medi ambient', regla: 'lexic-parelles', ca: '', es: '', segur: false },
+  { re: w('plaç|plaços'), forma: 'termini', regla: 'lexic-precisio-registre', ca: '«Plaç» no existeix: «termini».', es: '«Plaç» no existe: «termini».' },
+  { re: w('despedir|despedit|despedida|despedeix|despedeixen|despedim'), forma: 'acomiadar', regla: 'lexic-precisio-registre', ca: '«Despedir» és un barbarisme: «acomiadar».', es: '«Despedir» es un barbarismo: «acomiadar».' },
+  { re: w('quedar-se amb|em quedo amb|es queda amb|ens quedem amb'), forma: 'quedar-se', regla: 'lexic-precisio-registre', ca: '', es: '', segur: false },
+  { re: w('aconteixement|aconteixements'), forma: 'esdeveniment', regla: 'lexic-precisio-registre', ca: '«Aconteixement» és un barbarisme: «esdeveniment», «fet».', es: '«Aconteixement» es un barbarismo: «esdeveniment», «fet».' },
+  { re: w('entremig|entremitj'), forma: 'enmig', regla: 'barbarismes-lexic-2', ca: '', es: '', segur: false },
+  { re: w('tamany'), forma: 'mida', regla: 'barbarismes-lexic-1', ca: '«Tamany» és un barbarisme: «mida», «grandària».', es: '«Tamany» es un barbarismo: «mida», «grandària».' },
+  { re: w('adiós|adios'), forma: 'adeu', regla: 'barbarismes-lexic-1', ca: '«Adiós» és castellà: «adeu».', es: '«Adiós» es castellano: «adeu».' },
+  { re: w('sin embargo'), forma: 'tanmateix', regla: 'frases-fetes-connectors', ca: '«Sin embargo» és castellà: «tanmateix», «no obstant això», «això no obstant».', es: '«Sin embargo» es castellano: «tanmateix», «no obstant això».' },
+  { re: w('no obstant(?! això| aquest| aquesta| la | el | els | les )'), forma: 'no obstant això', regla: 'frases-fetes-connectors', ca: '«No obstant» sol necessita un complement: «no obstant això», «això no obstant», «tanmateix».', es: '«No obstant» solo necesita complemento: «no obstant això», «tanmateix».', segur: false },
+  { re: w('per lo tant'), forma: 'per tant', regla: 'calcs-sintactics', ca: '«Per lo tant» és un calc: «per tant».', es: '«Per lo tant» es un calco: «per tant».' },
+  { re: w('els mateixos|les mateixes|el mateix|la mateixa(?=[ ,.]*$)'), forma: 'aquests', regla: 'calcs-sintactics-2', ca: '«El mateix» com a pronom anafòric (…i el seu ús) és un calc: «aquest», «el seu ús», «en», «hi».', es: '«El mateix» como pronombre anafórico es un calco: «aquest», pronombre.', segur: false },
+  { re: w('al (?:arribar|sortir|acabar|entrar|començar|veure|saber|rebre|finalitzar|tornar)'), forma: (m) => m[0].toLowerCase().replace(/^al /, 'en '), regla: 'calcs-sintactics-2', ca: "«Al» + infinitiu amb valor temporal: la GIEC prefereix «en» + infinitiu («en arribar»). «Al» s'admet en registres informals.", es: '«Al» + infinitivo temporal: la GIEC prefiere «en» + infinitivo. «Al» se admite en registros informales.', segur: false },
+  { re: w("(?:,|;|\\.) ?doncs (?!,)(?=\\S+ (?:no|ja|encara|sempre|mai|ha|he|és|era|estava|tenia|tinc|té))"), forma: 'perquè', regla: 'calcs-sintactics', ca: '«Doncs» no pot introduir una causa (calc de «pues»): «perquè», «ja que», «atès que».', es: '«Doncs» no puede introducir una causa (calco de «pues»): «perquè», «ja que».', segur: false },
+  { re: w("perque"), forma: 'perquè', regla: 'accents-regles', ca: '«Perquè» (causal o final) porta accent; «per què» (interrogatiu) va separat.', es: '«Perquè» lleva acento; «per què» interrogativo va separado.' },
+  { re: w("no se (?=que|si|com|quan|on|res)"), forma: 'no sé', regla: 'accent-diacritic-dieresi', ca: '«Sé» (del verb saber) porta accent diacrític; «se» és el pronom.', es: '«Sé» (saber) lleva acento diacrítico; «se» es el pronombre.' },
+  { re: w("mes (?=(?:gran|petit|bo|dolent|important|car|barat|alt|baix|ràpid|lent|fàcil|difícil|tard|aviat|lluny|a prop)\\b)"), forma: 'més', regla: 'accent-diacritic-dieresi', ca: '«Més» (quantitat) porta accent diacrític; «mes» és el període de l\'any.', es: '«Més» (cantidad) lleva acento diacrítico; «mes» es el periodo del año.' },
+  { re: w("(?:aquest|aquesta|el|la|un|una|l') ?(?:ciutat|poble|casa|empresa|escola|hospital|carrer|zona|barri|país|oficina|botiga|edifici|sala|classe) (?:es|son|està|estan) (?=molt|força|bastant|massa)"), forma: 'és', regla: 'accent-diacritic-dieresi', ca: '', es: '', segur: false },
+  { re: w("(?<!\\S)es (?=(?:un|una|el|la|molt|força|bastant|massa|important|necessari|possible|cert|evident|clar|difícil|fàcil|millor|pitjor|veritat|bo|dolent|aquí|allà|així)\\b)"), forma: 'és', regla: 'accent-diacritic-dieresi', ca: '«És» (del verb ser) porta accent diacrític; «es» és el pronom.', es: '«És» (ser) lleva acento diacrítico; «es» es el pronombre.', segur: false },
+  { re: w("amb lo"), forma: 'amb el', regla: 'calcs-sintactics', ca: "L'article neutre «lo» no existeix: «amb el que», «amb això».", es: 'El artículo neutro «lo» no existe: «amb el que», «amb això».' },
+  { re: w("lo (?:qual|seu|seva|nostre|vostre|de|important)"), forma: (m) => m[0].toLowerCase().replace(/^lo /, 'el '), regla: 'calcs-sintactics', ca: "L'article neutre «lo» no existeix en català normatiu.", es: 'El artículo neutro «lo» no existe en catalán normativo.' },
+  { re: w("tenir en compte|tingui en compte|tingueu en compte|tenint en compte"), forma: 'tenir en compte', regla: 'frases-fetes-connectors', ca: '', es: '', segur: false },
+  { re: w("abans de res"), forma: 'abans que res', regla: 'frases-fetes-connectors', ca: '«Abans de res» és un calc: «abans que res», «primer de tot».', es: '«Abans de res» es un calco: «abans que res», «primer de tot».' },
+  { re: w("en quant a"), forma: 'quant a', regla: 'frases-fetes-connectors', ca: '«En quant a» és un calc: «quant a», «pel que fa a».', es: '«En quant a» es un calco: «quant a», «pel que fa a».' },
+  { re: w("donat que"), forma: 'atès que', regla: 'frases-fetes-connectors', ca: '«Donat que» és un calc: «atès que», «ja que», «com que».', es: '«Donat que» es un calco: «atès que», «ja que».' },
+  { re: w("tal i com"), forma: 'tal com', regla: 'frases-fetes-connectors', ca: '«Tal i com» és un calc: «tal com».', es: '«Tal i com» es un calco: «tal com».' },
+  { re: w("per a que"), forma: 'perquè', regla: 'per-per-a', ca: "«Per a que» no és normatiu: la finalitat amb verb conjugat és «perquè» (+ subjuntiu).", es: '«Per a que» no es normativo: la finalidad con verbo conjugado es «perquè» (+ subjuntivo).' },
+  { re: w("per a (?=(?:què|res|tant|sempre|lo)\\b)"), forma: 'per', regla: 'per-per-a', ca: '', es: '', segur: false },
+  { re: w("s'ha de tenir que|ha de que"), forma: 'ha de', regla: 'perifrasis-obligacio', ca: '', es: '', segur: false },
+  { re: w("doncs bé"), forma: 'doncs bé', regla: 'frases-fetes-connectors', ca: '', es: '', segur: false },
+  { re: w("cada vegada més|cada cop més"), forma: 'cada vegada més', regla: 'frases-fetes-connectors', ca: '', es: '', segur: false },
+  { re: w("fer-se amb"), forma: 'aconseguir', regla: 'barbarismes-lexic-2', ca: '«Fer-se amb» (apoderar-se) és un calc: «aconseguir», «apoderar-se de», «fer-se seu».', es: '«Fer-se amb» es un calco: «aconseguir», «apoderar-se de».' },
+  { re: w("tenir lloc"), forma: 'tenir lloc', regla: 'frases-fetes-connectors', ca: '', es: '', segur: false },
+  { re: w("[Ee]n plan"), forma: 'en pla', regla: 'barbarismes-lexic-1', ca: '«En plan» és castellà col·loquial: «en pla», «com si», «tipus».', es: '«En plan» es castellano coloquial.', segur: false },
+  { re: w("ademés|ademes"), forma: 'a més', regla: 'barbarismes-lexic-1', ca: '«Ademés» no és català: «a més», «a més a més».', es: '«Ademés» no es catalán: «a més».' },
+  { re: w("mentres"), forma: 'mentre', regla: 'barbarismes-lexic-1', ca: '«Mentres» no és normatiu: «mentre», «mentrestant».', es: '«Mentres» no es normativo: «mentre», «mentrestant».' },
+  { re: w("tonteria|tonteries"), forma: 'ximpleria', regla: 'barbarismes-lexic-1', ca: '«Tonteria» és un barbarisme: «ximpleria», «bestiesa».', es: '«Tonteria» es un barbarismo: «ximpleria», «bestiesa».' },
+  { re: w("cumplir|cumpleix|cumplim|cumplit"), forma: 'complir', regla: 'ortografia-b-v-g-j', ca: '«Cumplir» és un barbarisme: «complir».', es: '«Cumplir» es un barbarismo: «complir».' },
+  { re: w("recolzament"), forma: 'suport', regla: 'barbarismes-lexic-2', ca: '«Recolzament» (d\'una proposta) és un calc: «suport».', es: '«Recolzament» (de una propuesta) es un calco: «suport».' },
+  { re: w("reflexar|reflexa|reflexen|reflexat"), forma: 'reflectir', regla: 'lexic-precisio-registre', ca: '«Reflexar» no existeix: «reflectir».', es: '«Reflexar» no existe: «reflectir».' },
+  { re: w("nombrar|nombrat|nombren"), forma: 'anomenar', regla: 'lexic-parelles', ca: '«Nombrar» no existeix: «anomenar» (dir el nom) o «nomenar» (designar per a un càrrec).', es: '«Nombrar» no existe: «anomenar» o «nomenar».' },
+  { re: w("sentar"), forma: 'asseure', regla: 'barbarismes-lexic-2', ca: '', es: '', segur: false },
+  { re: w("tindre"), forma: 'tenir', regla: 'verbs-incoatius-irregulars', ca: '«Tindre» és col·loquial: l\'estàndard és «tenir» (en valencià s\'admet «tindre»).', es: '«Tindre» es coloquial; el estándar es «tenir».', segur: false },
+  { re: w("vindre"), forma: 'venir', regla: 'verbs-incoatius-irregulars', ca: '«Vindre» és col·loquial: l\'estàndard és «venir».', es: '«Vindre» es coloquial; el estándar es «venir».', segur: false },
+  { re: w("poguer"), forma: 'poder', regla: 'verbs-velaritzats', ca: '«Poguer» no és normatiu: «poder».', es: '«Poguer» no es normativo: «poder».' },
+  { re: w("sapiguer|sapiguem|sapigueu"), forma: 'saber', regla: 'verbs-velaritzats', ca: '«Sapiguer» no és normatiu: «saber» (però «sàpiga», «sapiguem» sí que són formes de subjuntiu correctes).', es: '«Sapiguer» no es normativo: «saber».', segur: false },
+  { re: w("hi han"), forma: 'hi ha', regla: 'concordanca-genere-nombre', ca: '«Hi ha» és impersonal i no concorda: «hi ha molts casos», no «hi han».', es: '«Hi ha» es impersonal y no concuerda: «hi ha molts casos».' },
+  { re: w("hi havien"), forma: 'hi havia', regla: 'concordanca-genere-nombre', ca: '«Hi havia» és impersonal: no es posa en plural.', es: '«Hi havia» es impersonal: no se pone en plural.' },
+  { re: w("la calor|el calor"), forma: 'la calor', regla: 'concordanca-genere-nombre', ca: '', es: '', segur: false },
+  { re: w("el costum|la costum"), forma: 'el costum', regla: 'concordanca-genere-nombre', ca: '', es: '', segur: false },
+  { re: w("la senyal"), forma: 'el senyal', regla: 'concordanca-genere-nombre', ca: '«Senyal» és masculí en català: «el senyal».', es: '«Senyal» es masculino en catalán: «el senyal».' },
+  { re: w("la compte"), forma: 'el compte', regla: 'concordanca-genere-nombre', ca: '«Compte» és masculí: «el compte».', es: '«Compte» es masculino: «el compte».' },
+  { re: w("el dent|els dents"), forma: 'la dent', regla: 'concordanca-genere-nombre', ca: '«Dent» és femení: «la dent», «les dents».', es: '«Dent» es femenino: «la dent».' },
+  { re: w("la anàlisi|el anàlisi"), forma: "l'anàlisi", regla: 'apostrof-article', ca: "Davant de vocal l'article s'apostrofa: «l'anàlisi» (femení).", es: 'Delante de vocal el artículo se apostrofa: «l\'anàlisi».' },
+  { re: w("de el|de els|a el|a els|per el|per els"), forma: (m) => ({ 'de el': 'del', 'de els': 'dels', 'a el': 'al', 'a els': 'als', 'per el': 'pel', 'per els': 'pels' }[m[0].toLowerCase()] ?? m[0]), regla: 'apostrof-article', ca: 'Les contraccions són obligatòries: del, dels, al, als, pel, pels.', es: 'Las contracciones son obligatorias: del, dels, al, als, pel, pels.' },
+  { re: w("la universitat|la una|la unió|la hora"), forma: 'la una', regla: 'apostrof-article', ca: '', es: '', segur: false },
+  { re: w("l'universitat|l'unió|l'humitat"), forma: (m) => m[0].toLowerCase().replace("l'", 'la '), regla: 'apostrof-article', ca: "L'article femení no s'apostrofa davant de i/u àtones: «la universitat», «la unió», «la humitat».", es: 'El artículo femenino no se apostrofa delante de i/u átonas: «la universitat», «la unió».' },
+];
+
+export function detectar(text: string): ErrorText[] {
+  const res: ErrorText[] = [];
+  for (const r of REGLES) {
+    if (r.segur === false && !r.ca) continue; // entrades de "no marcar" (formes correctes que s'assemblen a errors)
+    r.re.lastIndex = 0;
+    let m: RegExpExecArray | null;
+    while ((m = r.re.exec(text))) {
+      const forma = typeof r.forma === 'function' ? r.forma(m) : r.forma;
+      res.push({ offset: m.index, length: m[0].length, fragment: m[0], forma, regla: r.regla, missatge: { ca: r.ca, es: r.es }, segur: r.segur !== false, origen: 'regles' });
+      if (!r.re.global) break;
+    }
+  }
+  return res.sort((a, b) => a.offset - b.offset);
+}

@@ -1,0 +1,10 @@
+'use client';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
+/** Enlace Entrar / Mi cuenta según haya sesión (la cabecera es estática). */
+export default function EnlaceCuenta({ idioma, entrar, cuenta }: { idioma: string; entrar: string; cuenta: string }) {
+  const [sesion, setSesion] = useState<boolean | null>(null);
+  useEffect(() => { fetch('/api/yo').then((r) => r.json()).then((j) => setSesion(!!j?.usuari)).catch(() => setSesion(false)); }, []);
+  return <Link href={`/${idioma}/${sesion ? 'compte' : 'entrar'}`} className="rounded-lg px-2 py-2 text-nit no-underline hover:text-marca">{sesion ? cuenta : entrar}</Link>;
+}

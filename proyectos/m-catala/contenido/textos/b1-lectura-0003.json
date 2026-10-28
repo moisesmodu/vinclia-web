@@ -1,0 +1,62 @@
+{
+  "id": "b1-lectura-0003",
+  "nivell": "B1",
+  "area": "lectura",
+  "titol": "Girona estrena una nova línia de bus fins a l'hospital",
+  "genere": "notícia breu",
+  "text": "L'Ajuntament de Girona ha posat en marxa aquest dilluns la línia L12, que uneix el barri de Santa Eugènia amb l'Hospital Josep Trueta en vint-i-cinc minuts. Fins ara, els veïns d'aquest barri havien de fer un transbordament al centre per arribar a l'hospital, cosa que allargava el viatge fins a tres quarts d'hora.\n\nLa nova línia funcionarà de dilluns a divendres, de les sis del matí a les onze de la nit, amb un autobús cada quinze minuts. Els dissabtes el servei començarà a les set i hi haurà un bus cada mitja hora. Els diumenges i festius, de moment, no hi haurà servei.\n\nEls autobusos de la L12 són elèctrics i tenen plataforma baixa i espai per a dues cadires de rodes. El bitllet senzill costa el mateix que a la resta de línies urbanes, i es poden fer servir les targetes T-usual i T-casual.\n\nLa regidora de Mobilitat ha explicat que la línia s'ha creat després de recollir més de dues mil signatures d'una plataforma veïnal. Ha afegit que, si la demanda és alta, l'Ajuntament estudiarà ampliar el servei als caps de setmana a partir de la primavera.\n\nDurant la primera setmana, el viatge serà gratuït per a tothom perquè els usuaris puguin provar el recorregut.",
+  "paraules": 208,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Quin avantatge principal té la línia L12 per als veïns de Santa Eugènia?",
+      "opcions": [
+        "El bitllet és més barat que a les altres línies",
+        "Ja no han de canviar d'autobús per anar a l'hospital",
+        "Passa per davant de totes les escoles del barri"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin dia no hi ha servei?",
+      "opcions": [
+        "El dissabte",
+        "El divendres",
+        "El diumenge"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p3",
+      "enunciat": "Cada quant passa l'autobús els dissabtes?",
+      "opcions": [
+        "Cada quinze minuts",
+        "Cada mitja hora",
+        "Cada hora"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p4",
+      "enunciat": "Per què s'ha creat la línia?",
+      "opcions": [
+        "Perquè els veïns van recollir signatures",
+        "Perquè l'hospital ho va demanar",
+        "Perquè els autobusos antics s'havien espatllat"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p5",
+      "enunciat": "Què passarà durant la primera setmana?",
+      "opcions": [
+        "Els autobusos aniran més a poc a poc",
+        "No caldrà pagar el bitllet",
+        "Només hi podran pujar persones amb cadira de rodes"
+      ],
+      "resposta": 1
+    }
+  ],
+  "revisio": "sessio"
+}

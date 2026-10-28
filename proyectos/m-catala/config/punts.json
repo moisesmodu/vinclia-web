@@ -1,0 +1,25 @@
+{
+  "_nota": "Punts del mapa de domini per àrea d'ús de la llengua. El pes és relatiu dins el nivell (suma lliure). nivells: en quins certificats compta.",
+  "punts": [
+    { "id": "ortografia-accents", "nom": { "ca": "Accentuació i dièresi", "es": "Acentuación y diéresis" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 3 },
+    { "id": "apostrof-contraccions", "nom": { "ca": "Apòstrof, guionet i contraccions", "es": "Apóstrofo, guion y contracciones" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 2 },
+    { "id": "ortografia-consonants", "nom": { "ca": "Grafies: b/v, s/ss/z/c/ç, g/j, x/ix, l·l", "es": "Grafías: b/v, s/ss/z/c/ç, g/j, x/ix, l·l" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 3 },
+    { "id": "pronoms-febles", "nom": { "ca": "Pronoms febles (en, hi, ho i combinacions)", "es": "Pronombres débiles (en, hi, ho y combinaciones)" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 5 },
+    { "id": "ser-estar", "nom": { "ca": "Ser i estar", "es": "Ser y estar" }, "nivells": ["B1", "B2", "C1"], "pes": 2 },
+    { "id": "per-per-a", "nom": { "ca": "Per i per a", "es": "Per y per a" }, "nivells": ["B2", "C1", "C2"], "pes": 3 },
+    { "id": "preposicions", "nom": { "ca": "Preposicions (a/en, amb, de, canvi i caiguda)", "es": "Preposiciones (a/en, amb, de, cambio y caída)" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 4 },
+    { "id": "relatius", "nom": { "ca": "Relatius (que, què, qui, el qual, on)", "es": "Relativos" }, "nivells": ["B2", "C1", "C2"], "pes": 3 },
+    { "id": "verbs-irregulars", "nom": { "ca": "Morfologia verbal (irregulars, velaritzats)", "es": "Morfología verbal (irregulares, velarizados)" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 4 },
+    { "id": "temps-mode", "nom": { "ca": "Temps i mode: subjuntiu, condicional, perifràstic", "es": "Tiempos y modo: subjuntivo, condicional, perifrástico" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 3 },
+    { "id": "perifrasis", "nom": { "ca": "Perífrasis d'obligació i probabilitat (haver de, caldre, deure)", "es": "Perífrasis de obligación y probabilidad" }, "nivells": ["B1", "B2", "C1"], "pes": 2 },
+    { "id": "concordanca", "nom": { "ca": "Concordança i gènere i nombre", "es": "Concordancia, género y número" }, "nivells": ["B1", "B2", "C1"], "pes": 2 },
+    { "id": "determinants-quantificadors", "nom": { "ca": "Articles, possessius, demostratius i quantificadors", "es": "Artículos, posesivos, demostrativos y cuantificadores" }, "nivells": ["B1", "B2", "C1"], "pes": 2 },
+    { "id": "castellanismes-lexic", "nom": { "ca": "Barbarismes i calcs lèxics", "es": "Barbarismos y calcos léxicos" }, "nivells": ["B1", "B2", "C1", "C2"], "pes": 4 },
+    { "id": "castellanismes-sintaxi", "nom": { "ca": "Calcs sintàctics (lo, tenir que, doncs causal, a nivell de)", "es": "Calcos sintácticos" }, "nivells": ["B2", "C1", "C2"], "pes": 3 },
+    { "id": "lexic-precisio", "nom": { "ca": "Precisió lèxica i parelles confusibles", "es": "Precisión léxica y pares confundibles" }, "nivells": ["B2", "C1", "C2"], "pes": 3 },
+    { "id": "frases-fetes", "nom": { "ca": "Locucions, frases fetes i connectors", "es": "Locuciones, frases hechas y conectores" }, "nivells": ["B2", "C1", "C2"], "pes": 2 },
+    { "id": "registre-formal", "nom": { "ca": "Registre formal i llenguatge administratiu", "es": "Registro formal y lenguaje administrativo" }, "nivells": ["C1", "C2"], "pes": 2 },
+    { "id": "puntuacio", "nom": { "ca": "Puntuació i majúscules", "es": "Puntuación y mayúsculas" }, "nivells": ["B2", "C1", "C2"], "pes": 2 },
+    { "id": "lexic-tematic", "nom": { "ca": "Lèxic per temes (salut, feina, habitatge, tràmits)", "es": "Léxico por temas" }, "nivells": ["B1", "B2"], "pes": 3 }
+  ]
+}

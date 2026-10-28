@@ -1,0 +1,62 @@
+{
+  "id": "b1-lectura-0002",
+  "nivell": "B1",
+  "area": "lectura",
+  "titol": "Recordatori de la visita amb la infermera",
+  "genere": "correu electrònic del CAP",
+  "text": "Benvolguda senyora Puig,\n\nLi escrivim des del CAP Sant Roc per recordar-li que té una visita programada amb la infermera el dijous 14 de novembre a les 10.20 h, a la consulta 7 de la primera planta.\n\nEs tracta de la revisió anual de la diabetis. Per això, li demanem que vingui en dejú: no mengi res des de les deu de la nit anterior, però pot beure aigua. Si pren medicació al matí, no la deixi de prendre; porti-la i la podrà prendre després de l'anàlisi.\n\nRecordi que ha de portar la targeta sanitària i, si en té, el registre dels valors de sucre de les darreres setmanes. Si fa servir una aplicació al mòbil, n'hi ha prou que la mostri a la consulta.\n\nSi no pot venir aquest dia, li agrairem que anul·li la visita amb un mínim de 24 hores d'antelació, a través de l'aplicació La Meva Salut o trucant al telèfon del centre. D'aquesta manera, una altra persona podrà aprofitar l'hora.\n\nFinalment, li recordem que la campanya de vacunació de la grip ja ha començat. Si ho desitja, el mateix dia de la visita podrà vacunar-se sense demanar hora.\n\nAtentament,\nUnitat d'Atenció a l'Usuari\nCAP Sant Roc",
+  "paraules": 201,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "On és la consulta de la infermera?",
+      "opcions": [
+        "A la planta baixa",
+        "A la setena planta",
+        "A la primera planta, consulta 7"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Què ha de fer la senyora Puig abans de la visita?",
+      "opcions": [
+        "No menjar res des de les deu de la nit",
+        "No beure gens d'aigua",
+        "No prendre la medicació del matí"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què ha de portar a la visita?",
+      "opcions": [
+        "El mòbil amb l'aplicació La Meva Salut, obligatòriament",
+        "La targeta sanitària i, si en té, el registre del sucre",
+        "Només la targeta sanitària"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p4",
+      "enunciat": "Si no pot anar-hi, què li demanen?",
+      "opcions": [
+        "Que vingui un altre dia sense avisar",
+        "Que truqui el mateix dia al matí",
+        "Que avisi amb almenys un dia d'antelació"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p5",
+      "enunciat": "Què podrà fer el dia de la visita, si vol?",
+      "opcions": [
+        "Vacunar-se contra la grip",
+        "Fer-se una radiografia",
+        "Canviar de metge de capçalera"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

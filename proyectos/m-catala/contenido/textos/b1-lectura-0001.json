@@ -1,0 +1,62 @@
+{
+  "id": "b1-lectura-0001",
+  "nivell": "B1",
+  "area": "lectura",
+  "titol": "Avís als veïns: obres a l'ascensor",
+  "genere": "avís de la comunitat de veïns",
+  "text": "Benvolguts veïns i veïnes,\n\nUs informem que a partir de dilluns vinent, dia 3 de novembre, començaran les obres de renovació de l'ascensor de l'escala. Els treballs duraran aproximadament tres setmanes i, durant aquest temps, l'ascensor no funcionarà.\n\nSabem que això és una molèstia, sobretot per a les persones grans i per a les famílies amb cotxets. Per aquest motiu, hem parlat amb l'empresa perquè faci primer la feina més sorollosa, entre les nou del matí i les dues del migdia. A les tardes només hi haurà treballs d'instal·lació elèctrica, que fan menys soroll.\n\nSi algú necessita ajuda per pujar la compra o algun objecte pesant, pot avisar la presidenta, que viu al segon primera, i mirarem d'organitzar-nos entre tots.\n\nTambé us recordem que, mentre durin les obres, la porta del vestíbul ha de quedar sempre tancada, perquè els operaris deixaran material al replà de la planta baixa.\n\nEl cost de la reforma ja està aprovat des de la reunió del mes de juny i es pagarà amb el fons de reserva, de manera que no caldrà fer cap derrama.\n\nGràcies per la vostra paciència.\n\nLa Junta de la comunitat",
+  "paraules": 190,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Quan començaran les obres de l'ascensor?",
+      "opcions": [
+        "Dijous 3 de novembre",
+        "Dilluns 3 de novembre",
+        "Durant el mes de juny"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Per què els treballs més sorollosos es faran al matí?",
+      "opcions": [
+        "Per molestar menys els veïns",
+        "Perquè els operaris només treballen al matí",
+        "Perquè a la tarda no hi ha llum"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què poden fer els veïns que no puguin pujar la compra?",
+      "opcions": [
+        "Demanar-ho a l'empresa d'ascensors",
+        "Esperar que s'acabin les obres",
+        "Avisar la presidenta de la comunitat"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Per què la porta del vestíbul ha d'estar sempre tancada?",
+      "opcions": [
+        "Perquè hi ha hagut robatoris a l'escala",
+        "Perquè hi haurà material a la planta baixa",
+        "Perquè l'ascensor no funciona"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Com es pagarà la reforma?",
+      "opcions": [
+        "Amb els diners del fons de reserva",
+        "Amb una derrama entre tots els veïns",
+        "Encara no s'ha decidit"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

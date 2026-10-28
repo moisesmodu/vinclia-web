@@ -1,0 +1,56 @@
+{
+  "id": "b1-co-0004",
+  "nivell": "B1",
+  "area": "co",
+  "titol": "A la sabateria",
+  "genere": "diàleg breu",
+  "text": "A: Hola, bona tarda. Busco unes botes per a l'hivern, que siguin còmodes per caminar.\nB: Bona tarda. Quin número calça?\nA: El trenta-vuit, normalment. Però depèn de la marca.\nB: Miri, aquestes són de pell, van molt bé per a la pluja i són molt còmodes. Les tenim en negre i en marró.\nA: Quant valen?\nB: Vuitanta-nou euros. Però aquesta setmana tenen un quinze per cent de descompte.\nA: Me les puc emprovar en marró?\nB: I tant. Segui aquí, que ara les hi porto. Com les nota?\nA: Em van una mica estretes de davant. Les té en un trenta-nou?\nB: Sí, un moment. Provi aquestes.\nA: Ara sí, molt millor. Me les quedo.\nB: Molt bé. Si no li van bé, les pot canviar en quinze dies amb el tiquet. Pagarà amb targeta o en efectiu?\nA: Amb targeta.\nB: Perfecte. Són setanta-cinc euros amb seixanta-cinc cèntims.",
+  "paraules": 151,
+  "veus": [
+    "nord-occidental",
+    "central"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Què busca la clienta?",
+      "opcions": [
+        "Unes sabatilles d'esport",
+        "Unes botes còmodes per a l'hivern",
+        "Unes sandàlies d'estiu"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin número s'acaba quedant?",
+      "opcions": [
+        "El 37",
+        "El 38",
+        "El 39"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p3",
+      "enunciat": "Per què paga menys de vuitanta-nou euros?",
+      "opcions": [
+        "Perquè hi ha un descompte aquesta setmana",
+        "Perquè les botes tenen un defecte",
+        "Perquè paga en efectiu"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p4",
+      "enunciat": "Quant temps té per canviar les botes?",
+      "opcions": [
+        "Una setmana",
+        "Un mes",
+        "Quinze dies"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}

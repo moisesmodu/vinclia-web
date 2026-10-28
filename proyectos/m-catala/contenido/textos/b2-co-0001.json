@@ -1,0 +1,66 @@
+{
+  "id": "b2-co-0001",
+  "nivell": "B2",
+  "area": "co",
+  "titol": "Un canvi de torn a la feina",
+  "genere": "diàleg breu",
+  "text": "A: Carles, tens un moment? Volia comentar-te una cosa dels torns del mes vinent.\nB: Digues, Sílvia.\nA: M'han posat el torn de nit les dues primeres setmanes de desembre, i justament la meva mare té una operació el dia 4. Hauria de poder estar amb ella uns quants dies.\nB: Ho entenc. El problema és que el torn de nit ja va costar molt de cobrir. Has parlat amb algú per fer un canvi?\nA: Sí, el Pau m'ha dit que ell s'hi posaria aquelles dues setmanes si després jo li agafo les de Nadal.\nB: Home, si el Pau hi està d'acord, per mi cap problema. Però ho hauríeu de demanar per escrit a recursos humans, que si no, després hi ha embolics amb les nòmines.\nA: D'acord. Hi ha algun formulari?\nB: Sí, és a la intranet, a l'apartat de personal. L'ompliu tots dos i jo el signo. I feu-ho abans de divendres, que els quadrants es tanquen el dia 20.\nA: Perfecte. Moltes gràcies, Carles, de debò.\nB: No es mereixen. I que vagi bé l'operació de la teva mare.",
+  "paraules": 184,
+  "veus": [
+    "central",
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Per què la Sílvia vol canviar el torn?",
+      "opcions": [
+        "Perquè no li agrada treballar de nit",
+        "Perquè la seva mare s'ha d'operar",
+        "Perquè vol fer vacances per Nadal"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin acord té amb el Pau?",
+      "opcions": [
+        "Ell farà les nits de desembre i ella, les de Nadal",
+        "Ell farà les nits de Nadal i ella, les de desembre",
+        "Es repartiran les nits de desembre a parts iguals"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Quina condició posa el Carles?",
+      "opcions": [
+        "Que el Pau faci també les nits de gener",
+        "Que la Sílvia treballi els caps de setmana",
+        "Que demanin el canvi per escrit a recursos humans"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "On es troba el formulari?",
+      "opcions": [
+        "A la intranet, a l'apartat de personal",
+        "A l'oficina de recursos humans",
+        "A l'entrada de l'edifici"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p5",
+      "enunciat": "Per què s'ha de fer abans de divendres?",
+      "opcions": [
+        "Perquè el Carles marxa de vacances",
+        "Perquè els quadrants es tanquen el dia 20",
+        "Perquè és l'últim dia de la Sílvia a l'empresa"
+      ],
+      "resposta": 1
+    }
+  ],
+  "revisio": "sessio"
+}

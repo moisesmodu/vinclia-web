@@ -1,0 +1,29 @@
+{
+  "id": "c1-escrit-0003",
+  "nivell": "C1",
+  "tipus": "argumentatiu-3-fonts",
+  "titol": "La mobilitat a les ciutats mitjanes",
+  "enunciat": "L'ajuntament d'una ciutat mitjana catalana (uns 60.000 habitants) ha proposat restringir el trànsit de vehicles privats al centre i convertir-lo en una zona de baixes emissions, i ha obert un procés de participació ciutadana. Escriviu un article d'opinió (entre 220 i 280 paraules) per a la publicació municipal en què defenseu una posició clara sobre la proposta. Llegiu les tres fonts, que presenten punts de vista diferents, i incorporeu-hi la informació rellevant sense copiar-ne frases. El text ha de tenir títol, introducció amb tesi, dos o tres arguments (almenys un contraargument refutat) i conclusió. Registre formal.",
+  "fonts": [
+    {
+      "titol": "Font 1. Resum d'un estudi d'una associació de municipis",
+      "text": "Les onze ciutats catalanes d'entre 40.000 i 100.000 habitants que han pacificat el centre en els darrers cinc anys han reduït el trànsit de pas una mitjana del 32 % i les concentracions de diòxid de nitrogen un 21 %. El nombre d'atropellaments ha baixat gairebé a la meitat. Contràriament al que es temia, la facturació del comerç del centre s'ha mantingut o ha crescut en nou de les onze ciutats, perquè els vianants s'aturen més i compren més sovint que els conductors. L'estudi assenyala, això sí, que els resultats són millors on la restricció s'ha acompanyat d'aparcaments dissuasius gratuïts a la perifèria i d'una millora prèvia dels autobusos urbans."
+    },
+    {
+      "titol": "Font 2. Manifest d'una associació de comerciants del centre",
+      "text": "Els comerciants no som enemics del medi ambient, però tampoc no volem ser les víctimes d'una mesura mal planificada. A la nostra ciutat, una part molt important dels clients ve dels pobles de la comarca, on l'autobús passa dues vegades al dia i no hi ha cap alternativa real al cotxe. Si no poden arribar al centre, aniran al centre comercial de la carretera, que té dos mil places d'aparcament gratuïtes. Abans de tancar carrers, demanem que es construeixin els aparcaments perifèrics promesos, que es reforci el transport comarcal i que s'escolti qui obre la persiana cada matí. Tancar primer i arreglar després és fer les coses al revés."
+    },
+    {
+      "titol": "Font 3. Article d'un enginyer especialista en mobilitat",
+      "text": "Les ciutats mitjanes cometen sovint l'error de copiar les solucions de Barcelona sense tenir-ne ni la densitat ni la xarxa de metro. Prohibir el cotxe sense oferir res a canvi només desplaça el problema uns carrers més enllà. Però esperar a tenir el transport públic perfecte per començar és una manera elegant de no fer mai res: la demanda de bus només creix quan conduir deixa de ser l'opció més còmoda. La clau és la seqüència: carrils bici segurs i continus, aparcaments de dissuasió connectats amb llançadores freqüents, i aleshores sí, restricció progressiva del trànsit, començant per les hores d'entrada i sortida de les escoles."
+    }
+  ],
+  "paraulesMin": 220,
+  "paraulesMax": 280,
+  "minuts": 90,
+  "registre": "formal",
+  "guia": {
+    "ca": "El corrector aplica la rúbrica oficial de C1. Adequació: article d'opinió amb títol, posició clara (a favor, en contra o a favor amb una seqüència determinada, com proposa la font 3), registre formal propi d'una publicació municipal, entre 220 i 280 paraules, i ús reformulat d'almenys dues fonts amb dades concretes (percentatges, exemples). Coherència i cohesió: introducció que situï el debat i formuli la tesi, un paràgraf per argument, contraargument refutat (típicament, el dels comerciants o el risc de desplaçar el problema), connectors de contrast, causa i conseqüència ben triats (ara bé, tanmateix, atès que, per tal que, així doncs) i una conclusió propositiva. Correcció: atenció a l'ús de per / per a davant d'infinitiu, als quantificadors (gaire, prou, força), a l'apostrofació i a les concordances amb percentatges (un 32 % dels vehicles). Riquesa: lèxic precís de l'àmbit (zona de baixes emissions, trànsit de pas, aparcament dissuasiu, pacificació, llançadora, vianant), sense abusar de «cotxe» i «gent». Penalitza: no prendre posició; reproduir frases de les fonts; els calcs (a nivell de, en quant a, degut a, tenir que, «peatonal» en lloc de per a vianants, «atasco» en lloc d'embús); els arguments sense cap suport de les fonts; la manca de títol; i el to de pamflet. Sense contraargument ni dades, el text no arriba als 25 punts de 40."
+  },
+  "revisio": "sessio"
+}

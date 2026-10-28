@@ -1,0 +1,82 @@
+{
+  "id": "c1-lectura-0001",
+  "nivell": "C1",
+  "area": "lectura",
+  "titol": "La finestreta que no existeix",
+  "genere": "article d'opinió",
+  "text": "Fa uns mesos vaig acompanyar la meva veïna, una dona de setanta-vuit anys que ha treballat tota la vida i que no ha demanat mai res a ningú, a sol·licitar un ajut per a la rehabilitació del seu pis. La cita prèvia només es podia demanar per internet. El formulari exigia un certificat digital que, al seu torn, només es podia obtenir amb una altra cita prèvia. Quan finalment vam aconseguir entrar al sistema, la sessió va caducar mentre buscàvem una factura escanejada. Hi vam dedicar tres tardes. Ella, sola, no ho hauria aconseguit mai.\n\nAquesta anècdota no és una excepció, sinó la norma per a una part considerable de la població. L'administració catalana ha fet, en pocs anys, un salt digital que cal reconèixer: es poden fer més tràmits que mai sense moure's de casa, els terminis s'han escurçat i el paper ha desaparegut de molts procediments. Tanmateix, el salt s'ha fet amb una premissa discutible: que tothom disposa d'un ordinador, d'una connexió estable, d'un certificat digital i, sobretot, de la competència i la paciència necessàries per fer-los servir.\n\nLes dades desmenteixen aquesta premissa. Prop d'un terç de les persones més grans de seixanta-cinc anys no ha fet mai cap gestió en línia amb l'administració, i entre la població amb rendes baixes la proporció és semblant. No es tracta només d'edat: hi ha famílies joves que només tenen un mòbil amb dades limitades, persones nouvingudes que encara no dominen la llengua escrita i treballadors amb horaris que no coincideixen amb els d'una oficina d'atenció que, a més, cada vegada té menys personal. La paradoxa és cruel: els col·lectius que més necessiten els ajuts públics són precisament els que tenen més dificultats per sol·licitar-los.\n\nAlguns responen que la solució és formar la ciutadania. És un argument raonable a mitjà termini, però insuficient ara mateix. Mentrestant, qui no arriba a la finestreta digital es queda sense l'ajut, sense la beca o sense la cita mèdica, i això no és un problema tècnic, sinó una qüestió de drets. La llei reconeix el dret de les persones físiques a relacionar-se amb l'administració per mitjans no electrònics; a la pràctica, aquest dret s'ha convertit en una via lenta, residual i sovint desincentivada.\n\nNo proposo tornar enrere. Proposo que la digitalització es dissenyi des del cas més difícil, no des del més fàcil. Això vol dir, com a mínim, tres coses: mantenir una atenció presencial sense cita prèvia a cada municipi, amb personal format per fer el tràmit al costat de la persona; simplificar els formularis fins que algú amb estudis primaris els pugui emplenar sense ajuda; i avaluar cada procediment nou no només per la rapidesa que guanya, sinó pel nombre de persones que deixa fora.\n\nLa meva veïna va acabar rebent l'ajut. Però no deixo de pensar en totes les veïnes que no tenen ningú que els dediqui tres tardes.",
+  "paraules": 477,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Quin és el propòsit principal de l'article?",
+      "opcions": [
+        "Explicar pas a pas com s'obté un certificat digital",
+        "Denunciar que la digitalització de l'administració deixa fora una part de la ciutadania",
+        "Defensar que l'administració torni a fer tots els tràmits en paper"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Per què comença l'autor amb l'anècdota de la veïna?",
+      "opcions": [
+        "Per il·lustrar amb un cas concret un problema general",
+        "Per demostrar que les persones grans no volen aprendre",
+        "Per criticar la gestió dels ajuts a la rehabilitació"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Al segon paràgraf, el connector «Tanmateix» introdueix…",
+      "opcions": [
+        "una conseqüència del que s'ha dit abans",
+        "un exemple dels avenços digitals",
+        "una objecció al reconeixement que s'acaba de fer"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Què significa «desmenteixen» a «Les dades desmenteixen aquesta premissa»?",
+      "opcions": [
+        "Contradiuen",
+        "Confirmen",
+        "Amaguen"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p5",
+      "enunciat": "En què consisteix la «paradoxa cruel» de què parla el text?",
+      "opcions": [
+        "Que els ajuts són més cars del que semblen",
+        "Que les oficines d'atenció tenen massa personal",
+        "Que els qui més necessiten els ajuts són els qui tenen més dificultats per demanar-los"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p6",
+      "enunciat": "Quina és la posició de l'autor respecte a la formació digital de la ciutadania?",
+      "opcions": [
+        "La considera l'única solució possible",
+        "La considera útil, però insuficient per resoldre el problema immediat",
+        "La considera una pèrdua de temps"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p7",
+      "enunciat": "A l'última frase, l'expressió «no deixo de pensar» indica que l'autor…",
+      "opcions": [
+        "hi pensa constantment",
+        "ha decidit no pensar-hi més",
+        "ha oblidat el tema"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

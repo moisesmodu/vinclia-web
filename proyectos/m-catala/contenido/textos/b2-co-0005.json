@@ -1,0 +1,76 @@
+{
+  "id": "b2-co-0005",
+  "nivell": "B2",
+  "area": "co",
+  "titol": "Entrevista de ràdio: abelles als terrats",
+  "genere": "entrevista de ràdio",
+  "text": "A: Avui tenim amb nosaltres la Mireia Pons, apicultora i impulsora d'un projecte de ruscos als terrats de Lleida. Mireia, bon dia. Abelles a la ciutat? Això no és perillós?\nB: Bon dia. És la pregunta que em fa tothom, i la resposta és que no. L'abella de la mel només pica si se sent amenaçada, i als terrats hi ha molt poca gent. En tres anys no hem tingut cap incident.\nA: Com va començar tot plegat?\nB: Vaig estudiar biologia i treballava en una cooperativa agrària. Vaig veure que al camp les abelles es moren per culpa dels pesticides i que, en canvi, a la ciutat tenen flors tot l'any als parcs i als balcons, i sense tractaments químics.\nA: I la mel, és bona?\nB: Boníssima, i cada barri té un gust diferent. La del centre té molt de til·ler; la de la zona de l'horta, més de flor de fruiter.\nA: Quants ruscos teniu ara?\nB: Vint-i-dos, repartits en set terrats. Quatre són d'escoles, i això és el que més m'agrada: els nens veuen d'on surt la mel i perden la por.\nA: I de cara al futur?\nB: Volem arribar a cinquanta ruscos el 2027 i obrir un petit obrador. Però sobretot volem que la gent entengui que sense pol·linitzadors no hi ha menjar.\nA: Doncs moltes gràcies, Mireia, i molta sort.",
+  "paraules": 227,
+  "veus": [
+    "central",
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Per què diu la Mireia que les abelles a la ciutat no són perilloses?",
+      "opcions": [
+        "Perquè les abelles de ciutat no tenen fibló",
+        "Perquè només piquen si se senten amenaçades i als terrats hi ha poca gent",
+        "Perquè els ruscos estan tancats amb reixes"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin avantatge té la ciutat per a les abelles, segons l'entrevistada?",
+      "opcions": [
+        "Hi ha flors tot l'any i no s'hi fan servir pesticides",
+        "Hi fa menys fred que al camp",
+        "Hi ha menys ocells que se les mengin"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què caracteritza la mel del centre de la ciutat?",
+      "opcions": [
+        "El gust de flor de fruiter",
+        "El gust de romaní",
+        "El gust de til·ler"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Quants terrats tenen ruscos actualment?",
+      "opcions": [
+        "Vint-i-dos",
+        "Set",
+        "Quatre"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Per què li agraden especialment els ruscos de les escoles?",
+      "opcions": [
+        "Perquè les escoles paguen més pel servei",
+        "Perquè els nens veuen d'on surt la mel i perden la por",
+        "Perquè els terrats de les escoles són més grans"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p6",
+      "enunciat": "Quin és l'objectiu principal del projecte, segons la Mireia?",
+      "opcions": [
+        "Vendre mel a tot Catalunya",
+        "Obrir una botiga al centre de Lleida",
+        "Que la gent entengui la importància dels pol·linitzadors"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}

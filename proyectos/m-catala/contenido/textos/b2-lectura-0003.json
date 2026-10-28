@@ -1,0 +1,72 @@
+{
+  "id": "b2-lectura-0003",
+  "nivell": "B2",
+  "area": "lectura",
+  "titol": "El retorn del mercat municipal",
+  "genere": "reportatge",
+  "text": "A les onze del matí d'un dimarts, el Mercat del Lleó de Girona no és precisament un lloc solitari. A la parada de peix hi ha cua, al bar del fons no queda cap tamboret lliure i una colla d'estudiants d'hostaleria pren notes davant la parada de formatges. Fa quinze anys, aquesta mateixa escena hauria estat impensable: els mercats municipals perdien clients cada any i molts paradistes es jubilaven sense ningú que els rellevés.\n\nQuè ha passat? Els experts assenyalen tres factors. El primer és la reforma física: la majoria de mercats catalans s'han renovat amb fons públics, han guanyat llum, aire condicionat i aparcament, i han incorporat un supermercat que fa de reclam. El segon és el canvi generacional: fills i filles de paradistes, molts amb estudis universitaris, han tornat al negoci familiar amb idees noves, com ara la venda en línia o el repartiment a domicili. El tercer, i potser el més important, és el canvi d'hàbits dels consumidors, que valoren cada cop més el producte de proximitat i volen saber d'on ve el que mengen.\n\nAixò no vol dir que tot siguin bones notícies. La Montse, que regenta una parada de fruita des de fa vint-i-sis anys, ho explica sense embuts: «La gent ve, fa fotos, compra quatre cireres i se'n va al supermercat a fer la compra grossa». Els números li donen la raó: segons un estudi recent, només un de cada quatre clients fa la compra setmanal completa al mercat; la resta hi va a buscar productes concrets o, simplement, a passejar.\n\nHi ha també el risc de la gentrificació comercial. En alguns mercats de Barcelona, les parades de tota la vida han estat substituïdes per bars de tapes i botigues de productes gurmet adreçades sobretot als turistes. Els veïns, aleshores, deixen d'anar-hi perquè ja no hi troben el que necessiten, i el mercat perd la funció per a la qual va ser creat.\n\nEls gestors municipals en són conscients i alguns ajuntaments han començat a limitar el percentatge d'espai dedicat a la restauració. L'equilibri no és fàcil: cal que el mercat atregui prou gent per ser viable, però sense deixar de ser, abans que res, el lloc on el barri va a comprar el menjar de cada dia.",
+  "paraules": 374,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Com era la situació dels mercats municipals fa quinze anys?",
+      "opcions": [
+        "Tenien més clients que ara",
+        "Acabaven de ser reformats",
+        "Perdien clients i no trobaven relleu generacional"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin factor consideren més important els experts?",
+      "opcions": [
+        "El canvi d'hàbits dels consumidors",
+        "La reforma dels edificis",
+        "La incorporació d'un supermercat"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què vol dir que la Montse ho explica «sense embuts»?",
+      "opcions": [
+        "Amb tristesa",
+        "Sense donar detalls",
+        "Amb franquesa, sense amagar res"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Segons l'estudi citat, quants clients fan tota la compra setmanal al mercat?",
+      "opcions": [
+        "La majoria",
+        "Només una quarta part",
+        "Aproximadament la meitat"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Quin problema s'ha detectat en alguns mercats de Barcelona?",
+      "opcions": [
+        "Que les parades tradicionals han estat substituïdes per negocis per a turistes",
+        "Que els paradistes no volen vendre en línia",
+        "Que no tenen aire condicionat"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p6",
+      "enunciat": "Quina mesura han pres alguns ajuntaments?",
+      "opcions": [
+        "Prohibir l'entrada de turistes",
+        "Tancar els supermercats dels mercats",
+        "Limitar l'espai dedicat als bars i restaurants"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}
