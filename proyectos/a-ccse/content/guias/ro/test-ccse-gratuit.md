@@ -37,7 +37,7 @@ Dreptul la grevă este recunoscut de Constituție.
 a) **En los Pirineos** (în Pirinei). b) En el Sistema Central (în Sistemul Central). c) En Sierra Nevada.
 
 **4. ¿Qué celebramos el 24 de diciembre?** (Ce sărbătorim pe 24 decembrie?)
-a) Carnaval. b) **Nochebuena** (Ajunul Crăciunului). c) San Juan (Sânziene / Noaptea Sfântului Ioan).
+a) Carnaval. b) **Nochebuena** (Ajunul Crăciunului). c) San Juan (Noaptea Sfântului Ioan).
 
 **5. ¿Cuál es la edad mínima para conducir un coche en España?** (Care este vârsta minimă pentru a conduce o mașină în Spania?)
 a) 16 años (16 ani). b) **18 años (18 ani).** c) 20 años (20 de ani).

@@ -31,10 +31,12 @@ r = await api('/api/progreso', { method: 'PUT', body: JSON.stringify({ v: 1, act
 ok(r.d.preguntas['1001'] && r.d.preguntas['1002'] && r.d.simulacros.length === 1, 'el progreso se fusiona sin perder datos');
 r = await api('/api/simulacro', { method: 'POST' }); ok(r.d.permitido === true, 'primer simulacro gratis permitido');
 r = await api('/api/simulacro', { method: 'POST' }); ok(r.d.permitido === false, 'segundo simulacro sin pagar bloqueado');
+await fetch(BASE + '/ro?ref=accem', { headers: { cookie } }).then((x) => { const c = (x.headers.getSetCookie?.() ?? []).find((s) => s.startsWith('ccse_ref=')); if (c) cookie += '; ' + c.split(';')[0]; });
 r = await api('/api/stripe/checkout', { method: 'POST', body: JSON.stringify({ locale: 'ro' }) });
 ok(r.s === 200 && r.d.url?.startsWith('https://checkout.stripe.com/'), 'crea sesión de Checkout');
 const sesion = [...sesiones.values()].at(-1);
 ok(sesion.amount_total === 999 && sesion.currency === 'eur' && sesion.custom_text_ok, 'Checkout: 9,99 €, EUR y aviso de desistimiento');
+ok(sesion.afiliado === 'accem' && sesion.promos === 'true', 'Checkout: afiliado ?ref= y códigos promocionales');
 ok(sesion.success_url.includes('/ro/pago/ok?session_id={CHECKOUT_SESSION_ID}'), 'Checkout vuelve a la página de pago en el idioma');
 r = await api(`/api/stripe/verificar?session_id=${sesion.id}`); ok(r.d.pagado === false && !r.d.ok, 'sin pagar no da acceso');
 // Webhook firmado como lo firma Stripe

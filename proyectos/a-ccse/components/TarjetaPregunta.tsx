@@ -43,8 +43,7 @@ export function TarjetaPregunta({
                   correcta ? 'border-ok bg-green-50' : mal ? 'border-mal bg-orange-50' : elegida === i ? 'border-marca bg-red-50' : 'border-[#e7e2da] bg-white hover:border-suave'
                 }`}
               >
-                <span className="me-2 font-bold uppercase text-suave">{LETRAS[i]})</span>
-                <span lang="es" dir="ltr">{o}</span>
+                <span lang="es" dir="ltr" className="block text-left"><span className="me-2 font-bold uppercase text-suave">{LETRAS[i]})</span>{o}</span>
                 {trad?.opciones?.[i] && verTrad && <span className="mt-0.5 block text-sm text-suave">{trad.opciones[i]}</span>}
               </button>
             </li>

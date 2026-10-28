@@ -139,4 +139,4 @@ CCSE西班牙入籍考试题库
 
 ## Notas
 
-La descripción en chino incluye una sección extra («适合这样的你», para quién es) y más datos del examen (resultados en ~3 semanas, certificado válido 4 años, cierre de inscripción ~3 semanas antes; todos en hechos.md) para alcanzar el mínimo de 2.500 caracteres, porque el chino es mucho más compacto. «不会自动续费» (no se renueva automáticamente) se deduce de «pago único»; confirmarlo con la configuración real del producto en Play.
+La descripción en chino incluye secciones extra (plan de estudio, «适合这样的你» y preguntas frecuentes) y más datos del examen (resultados en ~3 semanas, certificado válido 4 años, cierre de inscripción ~3 semanas antes; todos en hechos.md) para alcanzar el mínimo de 2.500 caracteres, porque el chino es mucho más compacto. «不会自动续费» (no se renueva automáticamente) se deduce de «pago único»; confirmarlo con la configuración real del producto en Play.

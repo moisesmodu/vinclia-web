@@ -55,11 +55,12 @@ export async function asegurarWebhook() {
   }
 }
 
-export async function crearCheckout(opts: { usuarioId: string; email: string; locale: string }) {
+export async function crearCheckout(opts: { usuarioId: string; email: string; locale: string; ref?: string | null }) {
   await asegurarWebhook();
   const stripeLocale = (['es', 'fr', 'en', 'ro', 'zh'] as const).includes(opts.locale as 'es') ? (opts.locale as 'es') : 'auto';
   return stripe().checkout.sessions.create({
     mode: 'payment',
+    allow_promotion_codes: true,
     client_reference_id: opts.usuarioId,
     customer_email: opts.email,
     locale: stripeLocale,
@@ -82,7 +83,7 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
           'Al pagar aceptas las condiciones de venta y pides que el acceso empiece ya, por lo que pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Garantía de aprobado incluida.',
       },
     },
-    metadata: { usuarioId: opts.usuarioId, producto: 'a-ccse', pais: PAIS.pais },
+    metadata: { usuarioId: opts.usuarioId, producto: 'a-ccse', pais: PAIS.pais, afiliado: opts.ref ?? '' },
     success_url: `${SITE_URL}/${opts.locale}/pago/ok?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${SITE_URL}/${opts.locale}/precio?cancelado=1`,
   });

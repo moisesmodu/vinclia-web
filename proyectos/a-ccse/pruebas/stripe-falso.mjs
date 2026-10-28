@@ -13,10 +13,10 @@ export function arrancar(puerto = 12111) {
     if (req.method === 'POST' && u.pathname === '/v1/checkout/sessions') {
       for (const k of ['mode', 'success_url', 'cancel_url', 'line_items[0][price_data][unit_amount]', 'line_items[0][price_data][currency]', 'client_reference_id'])
         if (!f.get(k)) return json({ error: { message: `falta ${k}` } }, 400);
-      const id = `cs_test_falso${++n}`;
+      const id = `cs_test_${Date.now().toString(36)}${++n}`;
       const s = { id, object: 'checkout.session', url: `https://checkout.stripe.com/c/pay/${id}`, mode: f.get('mode'), payment_status: 'unpaid',
         client_reference_id: f.get('client_reference_id'), metadata: { usuarioId: f.get('metadata[usuarioId]') }, amount_total: Number(f.get('line_items[0][price_data][unit_amount]')),
-        currency: f.get('line_items[0][price_data][currency]'), livemode: false, success_url: f.get('success_url'), custom_text_ok: !!f.get('custom_text[submit][message]') };
+        currency: f.get('line_items[0][price_data][currency]'), livemode: false, success_url: f.get('success_url'), custom_text_ok: !!f.get('custom_text[submit][message]'), afiliado: f.get('metadata[afiliado]'), promos: f.get('allow_promotion_codes') };
       sesiones.set(id, s);
       return json(s);
     }

@@ -12,17 +12,23 @@ function preferido(req: NextRequest) {
   return LOCALE_POR_DEFECTO;
 }
 
+function conRef(req: NextRequest, r: NextResponse) {
+  const ref = req.nextUrl.searchParams.get('ref');
+  if (ref && /^[\w-]{2,40}$/.test(ref)) r.cookies.set('ccse_ref', ref, { path: '/', maxAge: 60 * 86400, sameSite: 'lax' });
+  return r;
+}
+
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
   const primero = pathname.split('/')[1];
   if ((LOCALES as readonly string[]).includes(primero)) {
     const r = NextResponse.next();
     r.cookies.set('ccse_idioma', primero, { path: '/', maxAge: 31536000, sameSite: 'lax' });
-    return r;
+    return conRef(req, r);
   }
   const url = req.nextUrl.clone();
   url.pathname = `/${preferido(req)}${pathname === '/' ? '' : pathname}`;
-  return NextResponse.redirect(url);
+  return conRef(req, NextResponse.redirect(url));
 }
 
 export const config = {
