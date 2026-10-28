@@ -86,6 +86,20 @@ function lider(l, titulo) {
   ${l.planAccion?.length ? `<div class="lider-bloque plan"><h3>Plan para superarlo</h3><ol class="tareas">${lis(l.planAccion)}</ol></div>` : ''}</section>`;
 }
 
+const tokens = fs.existsSync(path.join(raiz, 'marcas', 'tokens.json')) ? JSON.parse(fs.readFileSync(path.join(raiz, 'marcas', 'tokens.json'), 'utf8')) : null;
+function identidad(clave) {
+  const pr = tokens?.proyectos?.[clave]; if (!pr) return '';
+  const f = tokens.familias[pr.familia];
+  const leer = (n) => { const r = path.join(raiz, 'marcas', 'logos', n); return fs.existsSync(r) ? fs.readFileSync(r, 'utf8').replace(/^<\?xml[^>]*>\s*/, '') : ''; };
+  const ac = pr.acento ?? f.colores.primario;
+  const colores = Object.entries(f.colores).filter(([k]) => k !== 'texto').concat([['acento del producto', ac]]);
+  return `<section class="identidad"><h2>Marca e identidad</h2>
+  <div class="marca-cab"><div class="marca-logo">${leer(clave + '.svg')}</div><div><p class="marca-promesa">${esc(pr.promesa.es ?? Object.values(pr.promesa)[0])}</p><p class="marca-meta">Familia <b>${esc(f.nombre)}</b> · ${esc(pr.dominio)}${pr.alternativas?.length ? ` · alternativas: ${esc(pr.alternativas.join(', '))}` : ''}</p></div></div>
+  <div class="marca-grid"><div><h3>Colores</h3><ul class="muestras">${colores.map(([k, v]) => `<li><span style="background:${v}"></span><code>${v}</code><small>${esc(k)}</small></li>`).join('')}</ul>
+  <h3>Tipografía</h3><p><b>${esc(f.tipografia.titulos)}</b> para títulos · ${esc(f.tipografia.texto)} para texto</p></div>
+  <div><h3>Promesa</h3><ul>${Object.entries(pr.promesa).map(([k, v]) => `<li><small>${k}</small> ${esc(v)}</li>`).join('')}</ul><h3>Personalidad y voz</h3><p>${esc(f.personalidad)}</p><p>${esc(pr.voz)}</p><p class="marca-meta">Motivo: ${esc(f.motivo)}</p></div></div></section>`;
+}
+
 const fichas = lista.map((p) => {
   const acciones = [...p.acciones].sort((a, b) => (a.fecha < b.fecha ? 1 : -1));
   const cpo = p.margenCliente > 0 ? Math.ceil(p.objetivoMes12 / p.margenCliente) : null;
@@ -97,6 +111,7 @@ const fichas = lista.map((p) => {
   <header class="ficha-cab"><span class="letra grande">${esc(p.letra)}</span><div><h1>${esc(p.nombre)}</h1><p class="resumen">${esc(p.resumen)}</p><p class="meta"><span class="pastilla">${esc(p.estado)}</span> ${esc(p.marca)}${p.fechaLimite ? ` · fecha límite ${fecha(p.fechaLimite)}` : ''}</p></div></header>
   <section class="empezar"><h2>Empezar la sesión de este proyecto</h2><ol class="tareas"><li>Abre una sesión nueva de Claude Code sobre el repositorio <code>${REPO}</code>, rama <code>${RAMA}</code>.</li><li>Pega el prompt de abajo tal cual. La sesión lee las reglas, el plan, la viabilidad y esta ficha antes de construir.</li><li>Al terminar, la sesión abre un PR hacia esa rama y actualiza esta ficha.</li></ol>${prompt ? `<button type="button" class="boton" data-copiar="pr-${p.clave}">Copiar prompt</button><pre class="prompt" id="pr-${p.clave}">${esc(prompt)}</pre>` : '<p class="vacio">Sin prompt.</p>'}</section>
   ${p.juicio ? `<section class="juicio"><h2>Juicio a 6 meses</h2><div class="juicio-cab">${prob(p.juicio.probabilidad)}${veredicto(p.juicio.veredicto)}</div><p class="juicio-exito">Éxito a 6 meses significa: ${esc(p.juicio.exito)}.</p><div class="dos"><div><h3>A favor</h3><p>${esc(p.juicio.porQue)}</p></div><div><h3>En contra</h3><p>${esc(p.juicio.contra)}</p></div></div><p class="juicio-parada"><b>Criterio de parada:</b> ${esc(p.juicio.parada)}</p></section>` : ''}
+  ${identidad(p.clave)}
   <section class="rentabilidad"><div><b>${euros(p.ingresosMes)}</b><span>ingresos al mes</span></div><div><b>${euros(p.costesMes)}</b><span>costes al mes</span></div><div class="${res < 0 ? 'rojo' : ''}"><b>${euros(res)}</b><span>resultado</span></div><div><b>${p.clientes}</b><span>clientes</span></div><div><b>${euros(p.objetivoMes12)}</b><span>objetivo mes 12</span></div><div><b>${cpo ?? '—'}</b><span>${cpo ? 'clientes para llegar' : 'depende de la plataforma'}</span></div></section>
   <p class="modelo"><b>Cómo cobra:</b> ${esc(p.modelo)}. <b>Cómo llegan:</b> ${esc(p.canal)}.</p>
   <div class="dos"><div>
@@ -115,7 +130,7 @@ const fichas = lista.map((p) => {
 </section>`;
 }).join('');
 
-const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md'], ['producto-m', 'M-CATALA-PRODUCTE.md']]
+const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md'], ['marcas', 'MARCAS.md'], ['despliegues', 'DESPLIEGUES.md'], ['producto-m', 'M-CATALA-PRODUCTE.md']]
   .map(([slug, archivo]) => `<section class="vista doc" id="v-${slug}" hidden><p class="volver"><a href="#inicio">Panel</a></p><div class="md">${md(archivo)}</div></section>`).join('');
 
 const html = `<title>La cartera</title>
@@ -124,7 +139,7 @@ const html = `<title>La cartera</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>${css}</style>
 <div class="pagina">
-<header class="cabecera"><a href="#inicio" class="marca">La cartera</a><nav class="nav"><a href="#plan">Plan</a><a href="#viabilidad">Viabilidad</a><a href="#reglas">Reglas</a><a href="#prompts">Prompts</a><a href="#juicio">Juicio</a></nav></header>
+<header class="cabecera"><a href="#inicio" class="marca">La cartera</a><nav class="nav"><a href="#plan">Plan</a><a href="#viabilidad">Viabilidad</a><a href="#reglas">Reglas</a><a href="#prompts">Prompts</a><a href="#juicio">Juicio</a><a href="#marcas">Marcas</a><a href="#despliegues">Despliegues</a></nav></header>
 <main class="contenido">
 <p class="aviso-instantanea">Copia publicada el ${fecha(new Date().toISOString().slice(0, 10))} desde el repositorio. La versión que se actualiza sola con cada sesión es la de Vercel.</p>
 <section class="vista" id="v-inicio">${inicio}</section>
