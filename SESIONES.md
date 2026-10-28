@@ -64,6 +64,14 @@
    lanza en el primer mercado (normalmente España); el segundo (ver `CARTERA.md`, «Expansión internacional») se abre
    solo cuando el primero tenga datos de conversión. Cada ficha del panel lleva su campo `expansion`.
 
+## Enlaces públicos en el panel (todo lo que se pueda abrir, se enlaza)
+
+En `panel/data/proyectos.json`, el objeto `enlaces` de tu proyecto debe contener **todas** las URL públicas que existan,
+una por línea y con nombre claro: cada juego (su página de juego y su guía), cada sitio web, cada calculadora destacada,
+cada ficha en una tienda (Google Play, CrazyGames, Poki, itch.io, Amazon, Udemy), la página de precios, la vista previa
+privada si la hay, y el PR. Moisés revisa los proyectos desde el panel: lo que no esté enlazado no existe para él.
+Se actualiza en cada push, no al final.
+
 ## Monetizar primero (lo más importante de todas las sesiones)
 
 Un proyecto sin un camino de cobro activo no está hecho, por bonito que sea. Antes de dar nada por terminado:

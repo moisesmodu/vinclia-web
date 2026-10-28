@@ -31,7 +31,9 @@ claude/estrategia-ingresos-recurrentes-tx0rvw y abre un PR hacia ella al acabar.
    - Fichas: copia fichas/egg-truck/FICHAS.md a fichas/<slug>/ y adáptala; 4 páginas SEO del juego en seo/paginas.json
      y etiquetas en juegos.json.
    - npm run paquetes. Los zips quedan en paquetes/<slug>/.
-3. Actualiza panel/data/proyectos.json (acciones, enlaces, próximos, paraMoises) y la fila del registro de CARTERA.md.
+3. Actualiza panel/data/proyectos.json (acciones, enlaces, próximos, paraMoises). En enlaces, en el mismo push en que
+   se crea cada juego: «<Juego> · jugar» (https://juegos-casuales.vercel.app/<slug>/) y «<Juego> · guía» (/play/<slug>/), y
+   las fichas de CrazyGames, Poki e itch.io en cuanto existan y la fila del registro de CARTERA.md.
 4. Informe a Moisés (en el PR y en el chat): juego nuevo con enlace de Vercel, qué cambió en los anteriores, datos de
    los portales, créditos de IA gastados, y la lista exacta de lo que él tiene que pulsar (subir el zip X a CrazyGames,
    enviar la URL Y a Poki). Nada se publica sin su aprobación.
