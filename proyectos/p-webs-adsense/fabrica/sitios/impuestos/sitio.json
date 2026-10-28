@@ -16,16 +16,18 @@
     "ca": "IRPF per comunitat, IVA, factura amb retenció, models 303 i 130, Verifactu 2027, recàrrecs i obligació de declarar. Càlculs amb la normativa de l’AEAT, en català i castellà."
   },
   "colores": {
-    "primario": "#2b3a8c",
-    "primarioOscuro": "#1f2a68",
-    "acento": "#e4572e",
-    "fondo": "#f5f6fa",
-    "superficie": "#ffffff",
-    "tinta": "#191b25",
-    "suave": "#575c70",
-    "borde": "#d9dce8"
+    "primario": "#0C6E60",
+    "primarioOscuro": "#09564B",
+    "marca": "#14A38B",
+    "acento": "#FFD166",
+    "cabecera": "#0B1F17",
+    "fondo": "#FFFFFF",
+    "tenue": "#F1F7F6",
+    "superficie": "#FFFFFF",
+    "tinta": "#0B1F17",
+    "suave": "#4A5C58",
+    "borde": "#D7E4E1"
   },
-  "marca": "%",
   "anioPorDefecto": 2027,
   "autor": {
     "nombre": "Moisés Mora",
@@ -121,5 +123,24 @@
         "ca": "IRPF segons el salari"
       }
     }
-  ]
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Números claros, sin letra pequeña.",
+      "ca": "Números clars, sense lletra petita."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros",
+      "ca": "Fet a Lleida · Números clars"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Impuesto",
+      "Claro"
+    ]
+  }
 }

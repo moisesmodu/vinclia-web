@@ -109,6 +109,14 @@ Variables opcionales, sin tocar el código:
 
 ## Decisiones tomadas
 
+- **Identidad de la familia Claro** (`MARCAS.md`, `marcas/tokens.json`): C abierta con línea de horizonte, apellido
+  «Claro» en cada sitio y un verde propio por sitio. NetoClaro usa `#0E9F6E` y ImpuestoClaro `#14A38B` en la marca,
+  sobre una cabecera tinta. Para texto, enlaces y la caja del resultado se usa un verde más oscuro de cada sitio, que
+  pasa el contraste mínimo (4,5:1): el verde de la familia sobre blanco se queda en 3,4:1. Manrope e Inter van alojadas
+  en el propio sitio en vez de cargarse desde Google Fonts: mismo aspecto, sin enviar la IP del visitante a Google y sin
+  perder rendimiento (`font-display: optional`, CLS 0). Lleva la promesa «Números claros, sin letra pequeña» y el sello
+  «Hecho en Lleida · Números claros», sin «cancela en un clic» porque no hay suscripción.
+
 - **Astro 5 y no Astro 7.** Astro 7 exige Node 22.23 o superior, que no está ni en el contenedor ni en muchos
   entornos de compilación. Astro 5 da el mismo HTML estático.
 - **Sin framework de interfaz.** Las calculadoras son HTML con un único script común de 12 KB comprimido, más un

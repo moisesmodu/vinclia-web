@@ -16,16 +16,18 @@
     "ca": "Calcula el teu sou net 2027, la quitança, l’acomiadament, l’atur, la baixa, les hores extra i la quota d’autònoms amb els paràmetres del BOE. En català i castellà, amb el mètode i les fonts publicats."
   },
   "colores": {
-    "primario": "#0f5c4a",
-    "primarioOscuro": "#0a4537",
-    "acento": "#f2b134",
-    "fondo": "#f7f5f0",
-    "superficie": "#ffffff",
-    "tinta": "#1b1f1d",
-    "suave": "#5b625e",
-    "borde": "#dcd8cf"
+    "primario": "#087A54",
+    "primarioOscuro": "#06603F",
+    "marca": "#0E9F6E",
+    "acento": "#FFD166",
+    "cabecera": "#0B1F17",
+    "fondo": "#FFFFFF",
+    "tenue": "#F2F7F4",
+    "superficie": "#FFFFFF",
+    "tinta": "#0B1F17",
+    "suave": "#4A5C54",
+    "borde": "#D9E5DF"
   },
-  "marca": "N",
   "anioPorDefecto": 2027,
   "autor": {
     "nombre": "Moisés Mora",
@@ -121,5 +123,24 @@
         "ca": "Sou net per comunitat autònoma"
       }
     }
-  ]
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Números claros, sin letra pequeña.",
+      "ca": "Números clars, sense lletra petita."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros",
+      "ca": "Fet a Lleida · Números clars"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Neto",
+      "Claro"
+    ]
+  }
 }

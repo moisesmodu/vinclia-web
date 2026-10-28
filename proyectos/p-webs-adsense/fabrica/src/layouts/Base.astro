@@ -6,6 +6,10 @@ import type { Lang } from '../lib/def';
 import { sitio, anunciosActivos, pubId } from '../lib/sitio';
 import { url, absoluta, buscar } from '../lib/rutas';
 import { UI } from '../lib/ui';
+// Tipografías de la familia Claro alojadas en el propio sitio (sin peticiones a Google): Manrope 700 e Inter 400/600
+import manrope700 from '@fontsource/manrope/files/manrope-latin-700-normal.woff2?url';
+import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import inter600 from '@fontsource/inter/files/inter-latin-600-normal.woff2?url';
 
 interface Props {
   lang: Lang;
@@ -19,12 +23,19 @@ interface Props {
 const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual } = Astro.props;
 const u = UI[lang];
 const c = sitio.colores;
-const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--acento:${c.acento};--fondo:${c.fondo};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`;
+const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--marca:${c.marca};--acento:${c.acento};--cabecera:${c.cabecera};--fondo:${c.fondo};--tenue:${c.tenue};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`
+  // font-display: optional evita cualquier salto de diseño (CLS 0): si la letra no llega a tiempo, se usa la del sistema
+  + `@font-face{font-family:Manrope;font-weight:700;font-display:optional;src:url(${manrope700}) format('woff2')}`
+  + `@font-face{font-family:Inter;font-weight:400;font-display:optional;src:url(${inter400}) format('woff2')}`
+  + `@font-face{font-family:Inter;font-weight:600;font-display:optional;src:url(${inter600}) format('woff2')}`;
+const mc = sitio.marcaClaro;
+// Marca de la familia Claro: una C abierta con una línea de horizonte (marcas/logos/p-webs-adsense-icono.svg)
+const marcaSvg = (horizonte: string) => `<svg viewBox="0 0 56 56" width="32" height="32" aria-hidden="true" focusable="false"><path d="M44 16a20 20 0 1 0 0 24" stroke="${c.marca}" stroke-width="9" fill="none" stroke-linecap="round"/><rect x="26" y="25" width="26" height="6" rx="3" fill="${horizonte}"/></svg>`;
 const otra: Lang = lang === 'es' ? 'ca' : 'es';
 const inicio = buscar('inicio', lang)!;
 const datos = buscar('fichas', lang)!;
 const sobre = buscar('legal:sobre', lang)!;
-const favicon = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="${c.primario}"/><text x="32" y="44" font-family="system-ui,sans-serif" font-size="34" font-weight="900" text-anchor="middle" fill="${c.acento}">${sitio.marca}</text></svg>`)}`;
+const favicon = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56"><rect width="56" height="56" rx="12" fill="#FFFFFF"/><path d="M44 16a20 20 0 1 0 0 24" stroke="${c.marca}" stroke-width="9" fill="none" stroke-linecap="round"/><rect x="26" y="25" width="26" height="6" rx="3" fill="${c.tinta}"/></svg>`)}`;
 const ads = anunciosActivos();
 const cliente = sitio.adsense.cliente;
 const titCompleto = titulo.includes(sitio.nombre) ? titulo : `${titulo} | ${sitio.nombre}`;
@@ -49,6 +60,8 @@ const anio = new Date().getFullYear();
   <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'ca_ES'} />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href={favicon} type="image/svg+xml" />
+  <link rel="preload" href={manrope700} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin />
   {sitio.searchConsole.verificacion && <meta name="google-site-verification" content={sitio.searchConsole.verificacion} />}
   <style set:html={vars}></style>
   {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
@@ -68,7 +81,7 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
   <a class="saltar" href="#contenido">{u.saltar}</a>
   <header class="cab">
     <div class="env">
-      <a class="logo" href={url(inicio.ruta)} aria-label={`${sitio.nombre}: ${u.inicio}`}><span class="logo-m" aria-hidden="true">{sitio.marca}</span>{sitio.nombre}</a>
+      <a class="logo" href={url(inicio.ruta)} aria-label={`${sitio.nombre}: ${u.inicio}`}><Fragment set:html={marcaSvg('#FFFFFF')} /><span>{mc.partes[0]}<b>{mc.partes[1]}</b></span></a>
       <nav class="nav" aria-label={u.menu}>
         <a href={url(inicio.ruta) + '#calculadoras'} aria-current={actual === 'inicio' ? 'page' : undefined}>{u.calculadoras}</a>
         <a href={url(datos.ruta)} aria-current={actual === 'datos' ? 'page' : undefined}>{u.datos}</a>
@@ -82,8 +95,10 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
   <footer class="pie">
     <div class="env">
       <div>
-        <h2>{sitio.nombre}</h2>
+        <p class="pie-marca"><Fragment set:html={marcaSvg(c.tinta)} /><span>{mc.partes[0]}<b>{mc.partes[1]}</b></span></p>
+        <p class="promesa">{mc.promesa[lang]}</p>
         <p>{sitio.lema[lang]}.</p>
+        <p class="sello">{mc.sello[lang]}</p>
         <p>© {anio} {sitio.titular.nombre} · <a href={url(sobre.ruta)}>{u.legal.sobre}</a></p>
       </div>
       <div>
