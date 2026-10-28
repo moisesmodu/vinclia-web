@@ -16,7 +16,7 @@ const server = createServer(async (req, res) => {
   let p = decodeURIComponent((req.url || '/').split('?')[0]); if (p.endsWith('/')) p += 'index.html';
   try { res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' }); res.end(await readFile(join(root, 'dist-portales', game, portalName, p))); }
   catch { res.writeHead(404); res.end(); }
-}).listen(5088);
+}).listen(+(process.env.PORT || 5088));
 
 const MOCKS = {
   crazygames: { url: 'https://sdk.crazygames.com/crazygames-sdk-v3.js', body: `
@@ -42,7 +42,7 @@ const errors = [];
 page.on('pageerror', (e) => errors.push(e.message));
 const mock = MOCKS[portalName];
 await page.route(mock.url, (r) => r.fulfill({ contentType: 'text/javascript', body: mock.body }));
-await page.goto('http://localhost:5088/');
+await page.goto(`http://localhost:${process.env.PORT || 5088}/`);
 await page.waitForFunction(() => window.__game?.scene.isActive('Menu'), null, { timeout: 20000 });
 const step = async (label, fn, wait = 800) => { await page.evaluate(fn); await page.waitForTimeout(wait); console.log(label.padEnd(26), (await page.evaluate(() => window.__log.splice(0))).join(', ')); };
 console.log('arranque'.padEnd(26), (await page.evaluate(() => window.__log.splice(0))).join(', '));

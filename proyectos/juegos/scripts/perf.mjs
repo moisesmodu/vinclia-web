@@ -21,7 +21,7 @@ const server = createServer(async (req, res) => {
   let p = decodeURIComponent((req.url || '/').split('?')[0]); if (p.endsWith('/')) p += 'index.html';
   try { res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' }); res.end(await readFile(join(root, 'dist', p))); }
   catch { res.writeHead(404); res.end(); }
-}).listen(5077);
+}).listen(+(process.env.PORT || 5077));
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 800, height: 360 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
@@ -32,7 +32,7 @@ page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
 const cdp = await ctx.newCDPSession(page);
 await cdp.send('Emulation.setCPUThrottlingRate', { rate: throttle });
 const t0 = Date.now();
-await page.goto(`http://localhost:5077/${game}/`);
+await page.goto(`http://localhost:${process.env.PORT || 5077}/${game}/`);
 await page.waitForFunction(() => window.__game?.scene.isActive('Menu'), null, { timeout: 30000 });
 const loadMs = Date.now() - t0;
 

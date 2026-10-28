@@ -3,7 +3,7 @@
 //   node scripts/build.mjs all  → además dist-portales/<slug>/<portal>/ para CrazyGames, Poki e itch.io
 //   GAME=egg-truck limita a un juego.
 import { build } from 'vite';
-import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -56,7 +56,9 @@ console.log('✔ dist/index.html (catálogo)');
 // Páginas SEO de la web propia (seo/paginas.json): guías por juego y categorías que se llenan solas con las etiquetas
 // de juegos.json. Más sitemap.xml y robots.txt. SITE_URL la pone Vercel (VERCEL_PROJECT_PRODUCTION_URL).
 const site = process.env.SITE_URL || (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '');
-const pages = JSON.parse(readFileSync(resolve(root, 'seo', 'paginas.json'), 'utf8'));
+// seo/paginas.json (catálogo y Egg Truck) + seo/paginas-<juego>.json (una por juego nuevo, así no se pisan)
+const pages = readdirSync(resolve(root, 'seo')).filter((f) => /^paginas(-[a-z0-9-]+)?\.json$/.test(f)).sort()
+  .flatMap((f) => JSON.parse(readFileSync(resolve(root, 'seo', f), 'utf8')));
 const catalog = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8'));
 const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 for (const pg of pages) {
