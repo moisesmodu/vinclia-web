@@ -208,3 +208,19 @@ b { font-weight: 600; }
 :root[data-theme='dark'] .veredicto.condiciones { color: var(--azafran); }
 .fila-juicio { grid-template-columns: 2.4fr 1.6fr 1.6fr; }
 @media (max-width: 760px) { .fila-juicio { grid-template-columns: 1fr 1fr; } .fila-juicio .fila-nombre { grid-column: 1 / -1; } .veredicto { white-space: normal; } }
+
+/* Marca e identidad */
+.marca-cab { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+.marca-logo { background: #fff; border-radius: 14px; padding: 14px 18px; border: 1px solid var(--borde, #e6e3dc); }
+.marca-logo svg { height: 56px; width: auto; max-width: 100%; display: block; }
+.marca-promesa { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.35rem; font-weight: 600; margin: 0 0 4px; }
+.marca-meta { opacity: .7; font-size: .9rem; margin: 0; }
+.marca-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.marca-grid h3 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; opacity: .7; margin: 12px 0 6px; }
+.marca-grid ul { padding-left: 18px; margin: 0; }
+.muestras { list-style: none; padding: 0 !important; display: flex; flex-wrap: wrap; gap: 10px; }
+.muestras li { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; font-size: .8rem; }
+.muestras span { width: 56px; height: 36px; border-radius: 8px; border: 1px solid rgba(0,0,0,.08); display: block; }
+.muestras code { font-size: .75rem; }
+.muestras small { opacity: .65; }
+@media (max-width: 720px) { .marca-grid { grid-template-columns: 1fr; } }
