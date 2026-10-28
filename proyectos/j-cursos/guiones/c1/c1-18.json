@@ -1,0 +1,103 @@
+{
+  "id": "c1-18",
+  "titulo": "Contar, recordar y repetir hasta que…",
+  "descripcion": "Cerráis la semana 3 con variables y bucles con condición: la caja de los números, el plato de macarrones, el bucle infinito y el proyecto del tesoro de la cueva.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r6-1", "imprimible:r7-1", "imprimible:r7-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Contar, recordar y repetir hasta que…",
+      "subtitulo": "Semana 3 · Actividad 4",
+      "narracion": "Llegamos a la última clase de la semana 3 del plan, la de eventos, condiciones, funciones y variables. Hoy hay dos ideas nuevas y un pequeño proyecto. La primera idea es la variable, una caja que recuerda un número. La segunda es un bucle que repite hasta que pasa algo. El proyecto es el tesoro de la cueva. Es mucho para un solo día, así que repartidlo en dos o tres ratos."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Una variable es una caja con nombre que recuerda un número.",
+      "narracion": "Empieza con una pregunta: ¿cómo podemos recordar un número que cambia todo el rato? Saldrán ideas como contar con los dedos o apuntarlo. Después busca variables de la vida diaria. El marcador de un partido, el contador de pasos de un reloj, la temperatura del termómetro. Todas tienen un nombre y un número que cambia. En la app de Numi, la variable de Bit se llama contador, y tiene tres bloques: suma, resta y pon el contador a un número."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La caja de los números, sin pantalla",
+      "pasos": [
+        "Un bote con una etiqueta: «contador»",
+        "Botones, macarrones o piedrecitas",
+        "Tú das órdenes: «Suma 2», «Resta 1», «Pon a 0»",
+        "Antes de abrir, adivina cuántos hay",
+        "Contadlos y cambiad los papeles"
+      ],
+      "narracion": "La actividad sin pantalla es la caja de los números. Coged un bote, ponedle una etiqueta con la palabra contador y preparad unos botones o macarrones. Tú das órdenes y el peque pone o quita. Antes de abrir el bote, que adivine cuántos hay. Después, contadlos. Cambiad los papeles. Si se equivoca, repetid las órdenes despacio, una a una. Y cuidado con las piezas pequeñas si hay niños pequeños cerca."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r6-1:8",
+      "narracion": "Esta diapositiva aclara la confusión más común. Si el contador vale 4, sumar 1 lo deja en 5. Pero poner el contador a 1 lo deja en 1, porque poner borra lo que había. Para entenderlo, volved al bote: ¿pongo un botón más, o los saco todos y pongo uno? Otro error frecuente es no poner el contador a 0 al principio. Si trae un número de antes, la cuenta sale mal. Pregunta: ¿cuánto valía antes de empezar?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Repite hasta que…",
+      "puntos": [
+        "Repite lo de dentro hasta que se cumple la condición",
+        "Pregunta antes de cada vuelta: «¿ya he llegado?»",
+        "Sirve cuando no sabes cuántas veces hay que repetir",
+        "Si nada acerca a Bit a la condición, no acaba nunca"
+      ],
+      "narracion": "La segunda idea empieza en la mesa. Pregunta: ¿cuántas cucharadas haces para comerte un plato de sopa? Nadie lo sabe antes de empezar. Comemos hasta que el plato está vacío. Eso es un bucle con condición. El bloque Repite hasta que hace los bloques de dentro y, antes de cada vuelta, pregunta si ya se cumple la condición. Si la respuesta es no, sigue. Si es sí, para. Va muy bien cuando no sabes cuántas veces habrá que repetir."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Hasta que el plato esté vacío",
+      "pasos": [
+        "Macarrones crudos en un plato, sin contarlos",
+        "Programa: hasta que el plato esté vacío, pasa uno",
+        "Antes de cada macarrón: «¿Está vacío?»",
+        "Repetid con más macarrones: ¿cambia el programa?"
+      ],
+      "narracion": "La actividad sin pantalla es muy sencilla. Poned un puñado de macarrones crudos en un plato, sin contarlos. El robot pasa macarrones al otro plato, de uno en uno. Antes de cada uno, pregunta en voz alta: ¿está vacío? Después, repetid con más macarrones. Pregunta: ¿hemos tenido que cambiar el programa? No. Funciona con cualquier cantidad. Esa es la gracia del hasta que."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r7-1:8",
+      "narracion": "En la app, Bit también puede avanzar hasta que haya un obstáculo delante. Antes de ejecutar, pregunta dónde parará: ¿encima de la roca, justo antes o una casilla antes? Ahora mira. Bit para justo antes de la roca. Mientras tiene camino libre delante, sigue. Cuando la casilla de delante es la roca, la condición se cumple y ya no da ningún paso más. Si alguna vez para donde no esperabais, mirad la condición con calma."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r7-1:9",
+      "narracion": "Y esta diapositiva enseña el bucle infinito. Si los bloques de dentro no acercan a Bit a la condición, el bucle no se acaba nunca. Por ejemplo, repite hasta que llegues a la bandera, y dentro solo un giro. Bit da vueltas sin moverse de la casilla. La app lo para sola cuando ve demasiadas vueltas, y también hay un botón para pararlo. La pregunta que ayuda: ¿los bloques de dentro acercan a Bit a la condición?"
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Proyecto: el tesoro de la cueva",
+      "pasos": [
+        "Avanza hasta que haya una caja",
+        "Coge la caja",
+        "Da media vuelta: dos giros iguales",
+        "Avanza hasta que haya un obstáculo",
+        "Deja la caja en la casa"
+      ],
+      "narracion": "El proyecto de la semana es el tesoro de la cueva. Los pasillos cambian cada vez y Bit no puede contar casillas. La clave es hacer primero el plan con palabras, en cinco trozos, y después pasarlo a bloques. La versión de casa: el robot camina hasta que toca una silla, y luego alejáis la silla. El mismo programa sigue funcionando. Si usáis Numi Tech, pedidle que lo pruebe en las dos cuevas y que os explique dónde para cada bucle."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En Scratch",
+      "puntos": [
+        "«Repetir hasta que», en el grupo Control",
+        "Variables: «Crear una variable», por ejemplo «puntos»",
+        "Al empezar, pon la variable a 0",
+        "En la semana 4 la usaréis para el marcador y las vidas"
+      ],
+      "narracion": "En Scratch, el bloque repetir hasta que está en el grupo Control. Las variables están en su propio grupo: se pulsa Crear una variable y se le pone un nombre, por ejemplo puntos. Hay bloques para darle un valor y para sumarle. La regla es la misma que con Bit: al empezar el programa, la variable se pone a 0. En la semana 4 la vais a necesitar para el marcador y las vidas del videojuego."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Semana 3, completada",
+      "puntos": [
+        "Una variable es una caja con nombre que recuerda un número",
+        "Sumar no es poner; antes de contar, a 0",
+        "Repite hasta que: para cuando se cumple la condición",
+        "Tarea: la caja de los números y el plato de macarrones"
+      ],
+      "narracion": "Con esto cerráis la semana 3. Una variable es una caja con nombre que recuerda un número. Sumar no es poner, y antes de contar se pone a 0. Repite hasta que para cuando se cumple la condición, y si nada acerca a Bit, el bucle es infinito. Tu tarea: la caja de los números y el plato de macarrones. En Numi Tech, las sesiones son El contador de Bit, Repite hasta que llegues y el proyecto del tesoro. La semana que viene, su primer videojuego."
+    }
+  ]
+}

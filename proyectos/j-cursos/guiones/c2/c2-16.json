@@ -1,0 +1,106 @@
+{
+  "id": "c2-16",
+  "titulo": "Proyecto: aparcamiento automático con «si» anidados",
+  "descripcion": "Cierra la unidad del sensor de distancia con un proyecto de ingeniería: una carretilla que va rápido lejos, frena cerca y se para a la distancia justa, con un «si» dentro de otro.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k3-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: aparcamiento automático",
+      "subtitulo": "Lejos, rápido; cerca, despacio; muy cerca, se para",
+      "narracion": "Llegamos al proyecto que cierra la unidad del sensor de distancia. La capitana del puerto tiene una idea: un aparcamiento automático para las carretillas del muelle. Cada carretilla entra en su plaza, frena poco a poco al acercarse a la pared y se para a la distancia justa. Y las plazas no miden todas lo mismo. Hoy vas a trabajar como un ingeniero o una ingeniera: planificar, programar, probar y mejorar."
+    },
+    {
+      "tipo": "frase",
+      "texto": "¿Por qué el sensor de aparcamiento de un coche pita más deprisa cuanto más cerca está la pared?",
+      "narracion": "Seguro que has oído alguna vez el bip, bip de un coche que aparca. Muchos coches llevan sensores de ultrasonidos en el parachoques, como el de nuestro Maqueen. Cuanto más cerca está la pared, más rápido suenan los pitidos. Nuestro robot hará lo mismo, pero con la velocidad. Lejos, irá rápido. Cerca, despacio. Muy cerca, se parará. Son tres comportamientos, y hasta ahora un «si» solo nos daba dos caminos."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-4:4",
+      "narracion": "Estas son las tres franjas del plan. En verde, lejos de la pared: adelante rápido, a velocidad 200. En amarillo, a menos de 30 centímetros: frena y va despacio, a 70. En rojo, a menos de 8 centímetros: se para del todo. Y cuando ya ha aparcado, puede mostrar la distancia en la micro:bit. Fíjate en el 70. Recuerda la zona muerta de la unidad 1: por debajo de unos 30, el motor no tiene fuerza y la carretilla se quedaría quieta antes de llegar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Un «si» dentro de otro «si»",
+      "pasos": [
+        "Si distancia < 8: para el motor",
+        "Si no, si distancia < 30: adelante a 70",
+        "Si no: adelante a 200",
+        "Todo dentro de «para siempre»"
+      ],
+      "narracion": "Un «si» tiene dos caminos. Para tener tres, ponemos otro «si» dentro de la parte «si no» del primero. Se llama «si» anidado. Leámoslo: si la distancia es menor que 8, para. Si no, si la distancia es menor que 30, adelante a 70. Si no, adelante a 200. Y todo dentro de «para siempre». El segundo «si» solo se pregunta cuando la primera respuesta es no. Si lo pones fuera, uno detrás de otro, los motores pueden recibir órdenes contrarias."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-4:5",
+      "narracion": "Vamos a ver el programa de tres casos. Antes de ejecutar, haz la traza con tres números. A 50 centímetros, ¿qué hace? ¿A 20? ¿Y a 5? Ahora, míralo. A 50, las dos preguntas dicen no: va rápido. A 20, la primera dice no y la segunda, sí: va despacio. A 5, la primera ya dice sí: se para. Mira cómo frena al entrar en la plaza. Profes, esta traza en la pizarra con 50, 20 y 5 es la mejor manera de explicarlo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-4:7",
+      "narracion": "Ahora hemos cambiado el orden de las preguntas. Arriba está: ¿distancia menor que 30? Y debajo: ¿menor que 8? Para el vídeo y predice: ¿se parará en la plaza? Míralo. La carretilla frena, pero toca la pared. ¿Por qué? El robot pregunta de arriba abajo y se queda con la primera que dice sí. A 5 centímetros, la pregunta de menor que 30 también dice sí, y nunca llega a la de pararse. Por eso, primero va el caso más urgente: muy cerca."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plan en papel",
+      "pasos": [
+        "Dibuja la plaza vista desde arriba, con la pared",
+        "Pinta las franjas verde, amarilla y roja",
+        "Escribe al lado qué hace el robot y a qué velocidad",
+        "Escribe el programa con palabras y explícalo a alguien"
+      ],
+      "narracion": "Antes de programar, se planifica. Coge una hoja y un lápiz, o la ficha imprimible del plan. Dibuja la plaza vista desde arriba, con la pared del fondo. Pinta las tres franjas: verde, amarilla y roja. Al lado de cada una, escribe qué tiene que hacer el robot y a qué velocidad. Después, escribe el programa con palabras. Enséñaselo a alguien de casa o del grupo y explícaselo. Si lo entiende, el plan está claro. En clase, el grupo elige qué plan prueba primero."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Reto extra: la zona de seguridad",
+      "columnas": ["Si la distancia…", "El robot…"],
+      "filas": [
+        ["es menor que 10 cm", "va atrás a 100"],
+        ["si no, es mayor que 16 cm", "va adelante a 100"],
+        ["si no", "se queda quieto"]
+      ],
+      "narracion": "En la app hay un reto extra para quien vaya rápido. La carretilla tiene que quedar entre 9 y 17 centímetros del contenedor, pero a veces empieza demasiado cerca. Pararse no basta: tiene que alejarse. Así que hay tres casos. A menos de 10 centímetros, atrás. A más de 16, adelante. Si no, quieta. Un error típico es olvidar el caso de ir atrás. En la pista 2, la carretilla empieza muy cerca y se queda ahí. Mira dónde empieza antes de ejecutar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: aparca en la plaza",
+      "pasos": [
+        "Abre el programa con el botón «MakeCode» y descárgalo",
+        "Plaza de unos 26 cm de ancho, con una pared rígida al fondo",
+        "Pared a 80, 95 y 110 cm de la salida",
+        "Mide dónde se para y cambia un solo número cada vez"
+      ],
+      "narracion": "Ahora el proyecto pasa al Maqueen de verdad. En la app, el botón MakeCode abre el programa ya en bloques. Conecta la micro:bit con el cable USB y pulsa Descargar, con el robot apagado. Marca en el suelo una plaza de unos 26 centímetros de ancho, con una pared rígida al fondo, de libros o una caja con peso. Prueba la pared a 80, 95 y 110 centímetros de la salida. Si se para más cerca o más lejos que en el simulador, es lo normal: calibrar es parte del trabajo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-4:12",
+      "narracion": "Para terminar en clase, un concurso de precisión. El objetivo es aparcar a 5 centímetros de la pared, en las tres longitudes de plaza, sin tocarla. Cada grupo suma los centímetros de error de sus tres intentos, y gana quien tenga menos. La regla de los ingenieros: cambia un solo número cada vez, prueba y apúntalo. Si cambias muchos a la vez, no sabrás cuál ha mejorado el resultado. El resto del grupo mira desde fuera de la cinta, y alguien está preparado para coger el robot."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Presenta tu proyecto",
+      "puntos": [
+        "¿Qué velocidades y qué umbrales has elegido?",
+        "¿Qué falló en la primera prueba?",
+        "¿Qué has mejorado?",
+        "Comentarios: una cosa que gusta y una idea para mejorar"
+      ],
+      "narracion": "Un proyecto termina cuando se presenta. En clase, dos o tres alumnos explican el suyo en un minuto. En casa, enséñaselo a la familia. Tres preguntas: qué velocidades y qué umbrales has elegido y por qué, qué falló en la primera prueba y qué has mejorado. Si eres quien escucha, haz comentarios amables y útiles: una cosa que te gusta y una idea para mejorar. Explicar tus decisiones es tan importante como que el robot aparque bien."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido en esta unidad",
+      "puntos": [
+        "El sensor de ultrasonidos mide con el eco",
+        "«Para siempre» más «si» hace que el robot decida solo",
+        "Con «si» anidados hay más casos, y el orden importa",
+        "Tu proyecto: aparca entre 3 y 10 cm en las 3 plazas"
+      ],
+      "narracion": "Repasamos la unidad entera. Primero aprendimos a medir con el eco. Después, a pararse con «para siempre» y «si… si no». Luego, a esquivar con una maniobra dentro del «si». Y hoy, con un «si» dentro de otro, tres casos, y el más urgente siempre primero. Tu proyecto: un aparcamiento con tu plan, rápido lejos, frenando al acercarse, que se pare entre 3 y 10 centímetros en las 3 plazas. En la próxima unidad miraremos hacia abajo: los sensores de línea."
+    }
+  ]
+}

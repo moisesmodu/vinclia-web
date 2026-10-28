@@ -1,0 +1,40 @@
+{
+ "id": "c3-promo",
+ "titulo": "Vídeo promocional",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Ahorra horas con IA en tu negocio",
+   "subtitulo": "Para autónomos y pequeños negocios de España",
+   "narracion": "Eres autónomo o tienes un pequeño negocio y oyes hablar de inteligencia artificial cada día. Pero, ¿qué haces con ella el lunes por la mañana? Este curso va de eso."
+  },
+  {
+   "tipo": "chat",
+   "titulo": "Una reseña de una estrella, resuelta en un minuto",
+   "usuario": "Ayúdame a responder esta reseña de una estrella de mi peluquería: «Esperé 40 minutos aunque tenía cita». Tono cercano, sin excusas, y ofrece una solución.",
+   "ia": "Hola, Laura. Tienes toda la razón: si tenías cita, no debías esperar 40 minutos. Lo sentimos de verdad. Ese día se nos alargaron dos servicios y no avisamos, y eso sí depende de nosotros. Si quieres, la próxima vez te reservamos la primera hora de la mañana. Un abrazo, Marta.",
+   "narracion": "Por ejemplo, una reseña de una estrella en tu peluquería. Le das a la inteligencia artificial el contexto y el tono, y en un minuto tienes una respuesta que tú revisas y publicas."
+  },
+  {
+   "tipo": "pasos",
+   "titulo": "Lo que vas a hacer",
+   "pasos": [
+    "Atender WhatsApp, correos y reseñas",
+    "Marketing sin agencia: ficha de Google y redes",
+    "Presupuestos y Verifactu 2027",
+    "RGPD y Ley de IA, sin sustos"
+   ],
+   "narracion": "Vas a atender WhatsApp, correos y reseñas en la mitad de tiempo, hacer marketing sin agencia, preparar presupuestos claros y entender qué cambia con Verifactu en 2027. Y lo vas a hacer cumpliendo el RGPD y la Ley Europea de inteligencia artificial."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Tu plan de IA en una página",
+   "puntos": [
+    "Más de 100 instrucciones descargables",
+    "Herramientas gratuitas",
+    "Actualizado cada trimestre"
+   ],
+   "narracion": "Sales con tu plan de IA en una página y más de cien instrucciones descargables, con herramientas gratuitas. La inteligencia artificial redacta. Tú decides."
+  }
+ ]
+}

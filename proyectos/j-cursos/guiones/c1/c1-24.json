@@ -1,0 +1,111 @@
+{
+  "id": "c1-24",
+  "titulo": "La presentación final: feria en casa y diploma",
+  "descripcion": "Cierras las cuatro semanas con una feria en casa: tu hijo o tu hija prepara su juego para el público, lo presenta en dos minutos, recibe comentarios útiles y se lleva su diploma.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r8-3", "imprimible:r8-4", "imprimible:g8-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La presentación final: feria en casa",
+      "subtitulo": "Semana 4 · Presentar, escuchar y celebrar",
+      "narracion": "Llegamos al final del plan de cuatro semanas. Hoy no hay bloques nuevos. Hoy toca enseñar lo que ha hecho tu hijo o tu hija, escuchar lo que opinan los demás y celebrarlo. Lo haremos con una feria en casa, inspirada en las ferias con que terminan los cursos de Numi Tech: la Feria de los Retos de Tech Robot y la Feria de Videojuegos de Tech Creadores. Sirve tanto si ha hecho el juego en Scratch como si es más pequeño y ha hecho los retos de Bit."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El viaje de las cuatro semanas",
+      "puntos": [
+        "Semana 1: órdenes en orden y cazar errores",
+        "Semana 2: bucles y patrones",
+        "Semana 3: eventos, condiciones, funciones y variables",
+        "Semana 4: escenario, animación, interacción y su videojuego"
+      ],
+      "narracion": "Antes de la feria, repasad juntos el camino. Empezó dando órdenes en orden, como en una receta, y cazando errores sin dramas. Después aprendió a repetir con bucles y a ver patrones. En la tercera semana, el programa empezó a decidir: eventos, condiciones, funciones y variables. Y esta semana ha pasado al escenario, con animación, teclas, mensajes, coordenadas y un juego con marcador. Pídele que diga una palabra o un bloque que recuerde de cada semana. Te sorprenderá cuánto recuerda cuando lo ve todo junto."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Preparar el juego para el público",
+      "pasos": [
+        "Pantalla de título: al pulsar la bandera, el nombre del juego",
+        "Una frase de instrucciones: qué hacer y con qué teclas",
+        "Comprobar que se puede ganar y perder",
+        "Créditos: quién lo ha hecho y quién lo ha probado"
+      ],
+      "narracion": "El primer paso es publicar, que en Creadores significa dejar el juego a punto para alguien que no lo conoce. Quien lo abre por primera vez no sabe qué hacer. Por eso, al pulsar la bandera verde, el juego dice su título y una frase de instrucciones. Luego envía un mensaje que pone la partida en marcha. Insiste en que sea corta: qué tienes que hacer y con qué teclas. Unas instrucciones larguísimas no las lee nadie. Si quiere, que añada los créditos: quién lo ha hecho y quién lo ha probado."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g8-4:4",
+      "narracion": "Así es una pantalla de título en Creadores. En Scratch se hace con bloques que ya conoce: la bandera verde, un «decir» con el título durante dos segundos, otro con las instrucciones y «enviar mensaje empezar». Los guiones del juego, en lugar de empezar con la bandera, empiezan con «al recibir empezar». Un aviso importante de la guía: hoy solo son retoques. Si quiere hacer cambios grandes justo antes de la feria, es fácil que algo deje de funcionar. Guardad antes una copia en el ordenador desde el menú Archivo de Scratch."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La ficha de publicación",
+      "puntos": [
+        "Título y una frase de qué va",
+        "Controles: qué teclas o clics usa",
+        "Cómo se gana y cómo se pierde",
+        "Créditos y número de versión"
+      ],
+      "narracion": "Mientras tanto, que rellene la ficha de publicación, que está en los recursos. Es como la ficha que ves en una tienda de juegos: título, de qué va, los controles, cómo se gana y se pierde, y los créditos. Lleva también un número de versión, que dice cuántas mejoras tiene. La primera es la uno punto cero. Escribir poco y claro también es un aprendizaje, porque la leerá alguien que no conoce el juego. Si tiene un hermano pequeño que ha hecho los retos de Bit, para él está el guion de la presentación, también en los recursos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El estreno en dos minutos",
+      "columnas": ["Paso", "Qué hace"],
+      "filas": [
+        ["1. La ficha", "Título, de qué va y controles"],
+        ["2. Una regla", "«Si toca la cesta, puntos más 1»"],
+        ["3. Un cambio", "Qué mejoró gracias a su tester"],
+        ["4. Una partida", "Alguien del público juega"]
+      ],
+      "narracion": "El estreno dura un par de minutos y tiene cuatro partes. Primero lee la ficha. Después enseña una regla y el guion que la hace, por ejemplo: si la manzana toca la cesta, puntos sube uno. Luego explica un cambio que hizo gracias a lo que dijo su tester. Y al final deja que alguien del público juegue una partida. Para un peque de la ruta de Bit hay tres preguntas parecidas: qué tiene que hacer Bit, qué herramienta ha usado y qué deseo ha cumplido. Ensayadlo antes una vez en voz alta: basta con un minuto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las normas de la feria",
+      "puntos": [
+        "Quien presenta: manos en el regazo mientras otro juega",
+        "Una sola pista si el jugador se atasca",
+        "El público regala una estrella y un deseo",
+        "Se habla del juego, no de la persona"
+      ],
+      "narracion": "Ahora, las normas. Mientras alguien de la familia juega, el autor mira con las manos en el regazo y sin dar pistas. Solo puede dar una si el jugador se atasca. Cuesta, porque se sabe la solución, y precisamente por eso vale la pena: quien no la sabe ve lo que el autor ya no ve. Al terminar, cada persona del público le regala una estrella y un deseo. La estrella es algo concreto que le ha gustado. El deseo es un cambio que le gustaría ver. Y siempre se habla del juego, nunca de la persona."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Comentarios que ayudan",
+      "mal": "«Muy bien» o «está mal», sin nada concreto",
+      "bien": "«Me ha gustado que la roca acabe la partida. ¿Y si cayera más deprisa?»",
+      "narracion": "Fíjate en la diferencia. «Muy bien» suena amable, pero no le da nada con qué trabajar, y «está mal», todavía menos. «Me ha gustado que la roca acabe la partida; ¿y si cayera más deprisa?» le da una pista exacta. Da tú ejemplo primero, porque el resto de la familia te imitará. Y cuando le toque recibir deseos, recuérdale la regla de Tech Robot: escucha hasta el final, da las gracias y decide tú qué deseos cumples. Al día siguiente, que elija uno, lo programe y lo llame versión uno punto uno."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si falla en el estreno, se explica como un bug: también es programar.",
+      "narracion": "Puede pasar que el juego falle justo en el estreno. Tranquilidad: también pasa en los estudios de verdad. La guía de Numi propone convertirlo en parte del espectáculo. Que explique qué tendría que pasar, dónde cree que está el error y qué cambiará en la versión siguiente. Si le da mucha vergüenza presentar, no insistas. Puede hacerlo con la ficha en la mano, solo para una persona, o con alguien al lado que pulse las teclas. Lo importante es que explique una regla, no que haga un gran discurso."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El diploma y las fotos",
+      "puntos": [
+        "Diplomas de Tech Robot y Tech Creadores en los recursos",
+        "Si habéis usado Scratch o papel, haced vuestro diploma a mano",
+        "Al entregarlo, di algo concreto que ha hecho bien",
+        "Fotos: con su permiso y sin publicar caras ni nombres"
+      ],
+      "narracion": "Y para terminar, el diploma. En los recursos tienes los diplomas imprimibles de Tech Robot y de Tech Creadores, pensados para quien ha hecho esos cursos. Si habéis seguido el plan con Scratch o sin pantalla, haced vuestro propio diploma a mano, con lo que ha aprendido: vale exactamente igual. Al entregarlo, dile algo concreto que ha hecho bien durante estas semanas, no solo «qué bien». Si queréis hacer fotos, pedidle permiso, y no publiquéis su cara ni su nombre sin pensarlo. Colgad el diploma al lado de la ficha del juego."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte hoy",
+      "puntos": [
+        "Repasad juntos las cuatro semanas",
+        "Pantalla de título, ficha y un estreno de dos minutos",
+        "El autor no toca; el público regala estrella y deseo",
+        "Si algo falla, se explica como un bug",
+        "Diploma con un elogio concreto"
+      ],
+      "narracion": "Repasamos la feria en casa. Primero, recordad juntos el camino de las cuatro semanas. Después, el juego se prepara para el público, con pantalla de título y ficha. En el estreno, el autor explica una regla y un cambio, y alguien juega sin su ayuda. El público regala una estrella y un deseo, y si algo falla, se explica como un bug. Y al final, el diploma, con un elogio concreto. En la siguiente sección hablaremos de qué hacer cuando tu hijo se frustra, que también forma parte de aprender."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "c1-08",
+  "titulo": "La derecha y la izquierda del robot",
+  "descripcion": "Ayudas a tu hijo o tu hija a superar la dificultad más habitual del curso: entender que la derecha y la izquierda dependen de hacia dónde mira el robot.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r1-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La derecha y la izquierda del robot",
+      "subtitulo": "Ponte en su lugar",
+      "narracion": "Hoy toca la dificultad más habitual de todo el curso, según la guía de Numi Tech. Mientras Bit mira hacia la derecha de la pantalla, todo va bien. Pero cuando Bit baja, viene hacia nosotros, y entonces su derecha es nuestra izquierda. Muchos niños se atascan aquí, y también muchos adultos. Vamos a ver cómo trabajarlo con el cuerpo, con calma y con un truco muy sencillo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El espejo",
+      "pasos": [
+        "Poneos cara a cara",
+        "Los dos levantáis la mano derecha",
+        "Mirad: ¡quedan en lados diferentes!",
+        "Ahora uno detrás del otro, mirando al mismo sitio",
+        "Levantad otra vez la mano derecha"
+      ],
+      "narracion": "Empezad con la actividad sin pantalla de esta sesión: el espejo. Os ponéis cara a cara y los dos levantáis la mano derecha. Sorpresa: vuestras manos quedan en lados diferentes. Después os ponéis uno detrás del otro, mirando hacia el mismo sitio, y lo repetís. Ahora sí coinciden. Deja que tu hijo saque la conclusión con sus palabras. La que buscamos es esta: para saber hacia dónde gira alguien, ponte en su lugar."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La derecha y la izquierda dependen de hacia dónde mira cada uno.",
+      "narracion": "Esta frase es la idea de toda la sesión. No hay una derecha para todo el mundo. Cada uno tiene la suya, según hacia dónde mira. Cuando programamos un robot, la que cuenta es la del robot, no la nuestra ni la de la pantalla. Por eso los programadores de robots tienen un truco: se ponen en el lugar del robot. Girar la cabeza, el cuerpo o incluso la hoja no es hacer trampa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuartos, medias y vueltas enteras",
+      "puntos": [
+        "Un giro es un cuarto de vuelta",
+        "Dos giros iguales: media vuelta, mira al revés",
+        "Cuatro giros iguales: vuelta entera, mira como al principio",
+        "Tres a la derecha acaban igual que uno a la izquierda"
+      ],
+      "narracion": "La sesión también trabaja las vueltas. Cada giro es un cuarto de vuelta. Con dos giros iguales, el robot da media vuelta y mira al revés. Con cuatro, da la vuelta entera y vuelve a mirar donde miraba. Haced los giros de pie, despacio, contando en voz alta: un cuarto, dos cuartos. Y si pregunta, sí: tres giros a la derecha acaban igual que uno a la izquierda, pero el programa es más largo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te preguntará",
+      "puntos": [
+        "¿Por qué va a la izquierda si le digo derecha?",
+        "¿Puedo girar la cabeza? ¿No es trampa?",
+        "¿Por qué los mayores también se confunden?"
+      ],
+      "narracion": "Estas son las preguntas que más salen en esta sesión. ¿Por qué Bit va hacia la izquierda si le he dicho gira a la derecha? Porque gira hacia su derecha. Si mira hacia nosotros, su derecha queda a nuestra izquierda. Ponte de espaldas a la pantalla y lo verás. ¿Puedo girar la cabeza? Sí, no es trampa, aunque mejor la cabeza o el cuerpo que el ordenador. ¿Por qué hay mayores que se confunden? Porque cuesta a todo el mundo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-2:8",
+      "narracion": "Vamos a predecir. Bit mira hacia arriba, gira dos veces y avanza. ¿Hacia dónde irá? Piénsalo antes de ver el vídeo. Ahora mira. Dos giros iguales hacen media vuelta, así que Bit queda mirando hacia abajo y avanza hacia abajo. Un error muy habitual es creer que, después de dos giros, Bit vuelve a mirar donde miraba. Si tu hijo lo piensa así, haced los dos giros de pie y comprobadlo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-2:9",
+      "narracion": "Ahora la difícil. Bit mira hacia nosotros. El programa es: adelante, adelante, gira a la derecha, adelante, adelante. ¿Dónde terminará? Piénsalo antes de ver el vídeo. Bit baja dos casillas. Después gira hacia su derecha, que en la pantalla es nuestra izquierda. Y avanza dos casillas hacia la izquierda de la pantalla. Un truco de la app: fíjate en sus manos. Cuando te mira, su mano derecha queda en tu lado izquierdo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Si se atasca con los giros",
+      "columnas": [
+        "Lo que pasa",
+        "Qué hacer"
+      ],
+      "filas": [
+        [
+          "Usa la derecha de la pantalla",
+          "Que gire el cuerpo hasta mirar igual"
+        ],
+        [
+          "Pierde la cuenta en un programa largo",
+          "Una flecha en un papel tras cada giro"
+        ],
+        [
+          "Duda con su propia derecha",
+          "Pegatina en la mano derecha"
+        ],
+        [
+          "En el camino en U, falla el segundo giro",
+          "Ejecutar hasta el primer giro y mirar"
+        ],
+        [
+          "Se marea con tantos giros",
+          "Sentarse y girar una figurita"
+        ]
+      ],
+      "narracion": "Estas son las ayudas que propone la guía para cada atasco. Si usa la derecha de la pantalla, pregúntale hacia dónde mira Bit y que gire el cuerpo hasta mirar igual. Si pierde la cuenta en un programa largo, que dibuje una flecha pequeña después de cada giro. Si duda con su propia derecha, una pegatina en la mano. Es una ayuda normal. Y si se marea, que se siente y gire una figurita."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En la cuadrícula: el robot que viene hacia ti",
+      "puntos": [
+        "El robot empieza mirando hacia el programador",
+        "Antes de cada giro, el programador se pone detrás",
+        "Si no va donde queríais, cambiad una sola tarjeta"
+      ],
+      "narracion": "En la cuadrícula del suelo, la actividad de esta sesión es el robot que viene hacia ti. El robot empieza mirando hacia el programador. Antes de poner una tarjeta de giro, el programador se coloca detrás del robot, mirando hacia donde mira él, y decide. Así se ve de verdad qué significa ponerse en su lugar. Los giros, siempre despacio, sin correr y nunca con los ojos cerrados."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-2:15",
+      "narracion": "Estos son los retos de la app en esta sesión, y aquí tienes una solución posible para cada uno. Bit empieza mirando abajo: dos adelante, gira a la izquierda, dos adelante, gira a la izquierda y dos adelante. En el camino en U: tres adelante, gira a la derecha, dos adelante, gira a la derecha y tres adelante. Sin la app, en los recursos tienes la ficha «¿Hacia dónde mira Bit?» para hacerla en papel."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para practicar durante la semana",
+      "puntos": [
+        "Brújula de casa: un dibujo en cada pared",
+        "Tú dices giros; él o ella dice hacia qué dibujo mira",
+        "Guía de cara: llevar al otro hasta una silla"
+      ],
+      "narracion": "Dos juegos de la guía para reforzar durante la semana. La brújula de casa: pegad un dibujo distinto en cada pared de una habitación. Tú dices giros, por ejemplo derecha, derecha, izquierda, y tu hija dice hacia qué dibujo mira. Y la guía de cara: uno guía al otro, que lo mira de frente, hasta una silla. Solo puede decir adelante, gira a tu derecha y gira a tu izquierda. Después cambiáis."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para esta sesión",
+      "puntos": [
+        "La derecha depende de hacia dónde mira cada uno",
+        "Dos giros iguales: media vuelta; cuatro: vuelta entera",
+        "Girar la cabeza o la hoja no es trampa",
+        "Hoy: haced el espejo y el robot que viene hacia ti"
+      ],
+      "narracion": "Para quedarte. La derecha y la izquierda dependen de hacia dónde mira cada uno. Dos giros iguales hacen media vuelta, y cuatro, una vuelta entera. Y el truco del programador es ponerse en el lugar del robot. Para hoy: haced el espejo y el robot que viene hacia ti en la cuadrícula. Para cerrar, pregúntale: si Bit mira abajo y gira a su derecha, ¿hacia dónde va en la pantalla? En la próxima clase, cazaremos errores."
+    }
+  ]
+}

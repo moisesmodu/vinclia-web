@@ -1,0 +1,77 @@
+{
+  "id": "c3-37",
+  "titulo": "Clase extra: novedades y recursos, octubre de 2026",
+  "descripcion": "Repaso del curso, cómo se actualiza cada trimestre, tu siguiente paso y los enlaces actualizados: cupones para los otros cursos de la serie y recursos para seguir.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:enlaces-y-cupones"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Clase extra: novedades y recursos",
+      "subtitulo": "Revisada en octubre de 2026",
+      "narracion": "Esta es la clase extra del curso. Es corta y sin deberes obligatorios. Vamos a repasar lo que has aprendido, a ver cómo se mantiene al día el curso y a darte un siguiente paso natural. Al final te cuento qué tienes en los recursos de esta clase. Fíjate en el título. Lleva la fecha de la última revisión, octubre de 2026. Esa fecha te dice si lo que ves está al día."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te llevas del curso",
+      "puntos": [
+        "Instrucciones con contexto, tu ficha y tu asistente",
+        "Atención al cliente, reseñas y marketing en menos tiempo",
+        "Presupuestos y números, con la factura en su programa",
+        "Privacidad, RGPD y Ley de IA sin miedo",
+        "Automatizaciones, cuaderno de horas y tu plan"
+      ],
+      "narracion": "Repasemos lo que te llevas. Sabes pedir bien, con contexto, y tienes tu ficha de negocio y tu asistente guardado. Contestas WhatsApp, correos y reseñas en menos tiempo, y preparas un mes de publicaciones en un rato. Haces presupuestos claros, sabiendo que la factura sale de un programa adaptado. Conoces tus obligaciones de privacidad y de la Ley de IA, sin miedo y sin humo. Y tienes una automatización, un cuaderno de horas y un plan en una página."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un curso que se actualiza cada trimestre",
+      "puntos": [
+        "Cada tres meses revisamos fechas, leyes y herramientas",
+        "Las clases cambiadas llevan la fecha en el título",
+        "Verifactu, Ley de IA y factura electrónica, vigiladas",
+        "Si algo ha cambiado, lo verás aquí primero"
+      ],
+      "narracion": "Las herramientas de IA cambian cada pocos meses, y algunas normas también. Por eso revisamos el curso cada trimestre. Comprobamos las fechas de Verifactu, la Ley de IA, la factura electrónica entre empresas, que aún no tiene fecha, y los menús de las herramientas. Cuando una clase cambia, su título lleva la fecha de la revisión, como esta. Si ves una fecha reciente en una clase que ya hiciste, vuelve a verla. Y si encuentras algo desactualizado, avísanos en el apartado de preguntas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu siguiente paso",
+      "pasos": [
+        "Cumple los primeros 30 días de tu plan",
+        "Revisa tu cuaderno de horas a las dos semanas",
+        "A los 90 días, añade una tarea o una automatización",
+        "Vuelve a esta clase en cada actualización"
+      ],
+      "narracion": "El siguiente paso natural no es aprender más cosas, sino usar las que ya sabes. Cumple los primeros treinta días de tu plan. Revisa tu cuaderno de horas a las dos semanas y quédate con lo que funciona. A los noventa días, añade una tarea nueva o una segunda automatización. Y pasa por esta clase cuando veas una actualización. Con eso, en unos meses la IA será una parte normal de tu forma de trabajar, como el móvil o la hoja de cálculo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "En los recursos de esta clase",
+      "columnas": ["Recurso", "Para qué"],
+      "filas": [
+        ["Enlaces actualizados", "Herramientas y ayudas oficiales"],
+        ["Cupones de otros cursos", "Programación, robótica, bienestar"],
+        ["Numi Tech", "Si en casa o en tu academia hay peques"],
+        ["Cuadernos sin pantalla", "Cuando salgan, los enlazaremos"]
+      ],
+      "narracion": "En los recursos de esta clase tienes los enlaces actualizados. Los de las herramientas que hemos usado y los de sus páginas de ayuda oficiales. También tienes cupones para los otros cursos de esta serie. Hay uno de programación para niños, otro de robótica con micro:bit y otro de bienestar digital en familia. Si en casa o en tu academia hay peques, encontrarás la app Numi Tech, con la primera sesión gratis. Los centros tienen un mes de prueba del plan escuela con el código del curso. Y los cuadernos sin pantalla, cuando salgan, los enlazaremos aquí."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA redacta, tú decides y revisas.",
+      "narracion": "Si de todo el curso te quedas con una sola frase, que sea esta. La IA redacta, tú decides y revisas. Revisa siempre cifras, nombres, precios, plazos y datos legales. Y ante cualquier duda concreta de impuestos, facturas o protección de datos, pregunta a tu gestoría o a un profesional. La IA te ahorra horas. Tu criterio es lo que hace que esas horas valgan la pena."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Gracias por llegar hasta aquí",
+      "puntos": [
+        "Usa tu plan: treinta días, luego noventa",
+        "Clases con fecha en el título: revisadas",
+        "Enlaces y cupones en los recursos",
+        "La IA redacta, tú decides y revisas"
+      ],
+      "narracion": "Gracias por llegar hasta aquí. Pon en marcha tu plan durante treinta días y revísalo a los noventa. Fíjate en las fechas de los títulos para saber qué clases se han actualizado. En los recursos tienes los enlaces y los cupones. Y si el curso te ha sido útil, una valoración sincera ayuda mucho a otros autónomos a encontrarlo. Mucha suerte con tu negocio."
+    }
+  ]
+}

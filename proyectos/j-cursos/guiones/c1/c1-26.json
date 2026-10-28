@@ -1,0 +1,94 @@
+{
+  "id": "c1-26",
+  "titulo": "Cinco frases que ayudan y tres que no",
+  "descripcion": "Cinco frases concretas, sacadas de las guías de aula de Numi Tech, para acompañar a tu hijo cuando el programa falla, y tres frases habituales que conviene cambiar.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r5-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cinco frases que ayudan y tres que no",
+      "subtitulo": "Qué decir cuando el programa no sale",
+      "narracion": "En la clase anterior viste por qué se frustra el peque. Ahora vamos a lo práctico: qué decir. Las palabras que usamos en ese momento pesan mucho. Una frase puede devolverle el control o quitárselo. En esta clase tienes cinco frases que ayudan, sacadas de las guías de aula de Numi Tech, y tres frases muy habituales que conviene evitar. Todas están pensadas para que las digas en casa tal cual, aunque no sepas programar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las cinco frases que ayudan",
+      "puntos": [
+        "«¿Hasta qué bloque ha ido bien?»",
+        "«Vamos a verlo paso a paso.»",
+        "«Un cambio, una prueba.»",
+        "«Primero que funcione; después, que sea corto.»",
+        "«¡Has cazado un bug!»"
+      ],
+      "narracion": "Aquí las tienes juntas. Quizá te convenga escribirlas en un pósit y pegarlo cerca del ordenador. Fíjate en lo que tienen en común. Ninguna da la solución. Ninguna dice si está bien o mal. Todas ponen el foco en el método y dejan que sea tu hijo quien encuentre el error. Es la misma idea que ya vimos sobre vuestro papel: el adulto pregunta y el niño toca el ratón. Vamos a verlas una a una, con ejemplos de cómo suenan en casa."
+    },
+    {
+      "tipo": "frase",
+      "texto": "«¿Hasta qué bloque ha ido bien?»",
+      "narracion": "La primera sirve para el momento en que quiere borrarlo todo. Imagina la escena. Tu hija dice: «Ya está, lo borro y empiezo otra vez». Tú respondes: «Espera. ¿Hasta qué bloque ha ido bien?». Ella mira la pantalla y contesta: «Hasta el segundo adelante». «Pues el error está a partir de ahí». Con esa pregunta, el problema deja de ser todo el programa y pasa a ser un trozo pequeño. Además, salva el trabajo que ya estaba bien."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-3:10",
+      "narracion": "La segunda frase es «vamos a verlo paso a paso». Esta diapositiva de la sesión «Caza el error» resume el método en cuatro pasos. Ejecuta y mira dónde falla. Hazlo paso a paso. Cambia solo el bloque equivocado. Vuelve a probar. El botón «Paso a paso» hace un solo bloque cada vez, como a cámara lenta. Un ejemplo de diálogo. «Bit choca al final, así que el error es el último bloque». «Puede ser. ¿Lo vemos paso a paso y miramos hacia dónde mira antes de chocar?». A menudo el culpable es un giro de mucho antes."
+    },
+    {
+      "tipo": "frase",
+      "texto": "«Un cambio, una prueba.»",
+      "narracion": "La tercera frase es una norma de la guía de Tech Robot. Se usa cuando el niño cambia tres o cuatro bloques a la vez y ya no sabe cuál era el bueno. Suena así: «Has cambiado muchas cosas. Vamos a dejarlo como estaba y probamos una sola. Un cambio, una prueba». Es corta y se recuerda bien. Podéis convertirla en un juego: cada vez que cambie un bloque, dice «¡prueba!» antes de tocar otro. Si hay dos bugs, el truco es el mismo: arregla uno, prueba y busca el siguiente."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r5-3:9",
+      "narracion": "La cuarta frase viene de la sesión «Pocos bloques, mucho trabajo». Allí los retos tienen un máximo de bloques, y muchos niños se atascan porque quieren el programa perfecto a la primera. La guía propone otra cosa: primero que funcione y, después, buscar el trozo que se repite para acortarlo con una función. En casa suena así: «Olvídate del máximo de momento. Haz que Bit llegue. Luego buscamos juntos dónde se repite lo mismo». Si no encuentra el trozo repetido, que lea el programa en voz alta o lo siga con el dedo."
+    },
+    {
+      "tipo": "frase",
+      "texto": "«¡Has cazado un bug! Eso es lo que hacen los programadores.»",
+      "narracion": "La quinta es la más sencilla y la que más se olvida. Cuando encuentra un error, celébralo. No esperes a que el programa funcione para felicitarle. La guía lo dice así: hay que felicitar cada error encontrado, no solo los programas que funcionan. Por ejemplo: «¡Lo has cazado! Era el giro, ¿eh? Bien visto». Con el tiempo, el niño asocia el error con una pequeña victoria, no con un fracaso. Y evita comparar quién termina antes: cada uno caza sus bugs a su ritmo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las tres frases que no",
+      "puntos": [
+        "«Trae, que lo hago yo.»",
+        "«¡Pero si es facilísimo!»",
+        "«Bórralo todo y empieza otra vez.»"
+      ],
+      "narracion": "Ahora, las tres frases que conviene evitar. No son frases malas en sí. Las decimos con cariño y con prisa, porque queremos que el mal rato termine pronto. El problema es lo que transmiten. La primera le quita el control. La segunda le dice que, si no le sale algo tan fácil, el problema es él. Y la tercera le enseña a huir del error en vez de buscarlo. Para cada una tienes una alternativa. No hace falta hacerlo perfecto: basta con darte cuenta y cambiar de frase."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "En lugar de coger el ratón",
+      "mal": "«Trae, que lo hago yo.»",
+      "bien": "«Tú mandas en el ratón. Yo pregunto: ¿qué querías que pasara? ¿Y qué ha pasado?»",
+      "narracion": "Cuando cogemos el ratón, el programa sale, pero el niño no aprende a encontrar el error. Y la próxima vez nos volverá a llamar. La alternativa es mantener el reparto de papeles: el niño toca, tú preguntas. Dos preguntas funcionan casi siempre. ¿Qué querías que pasara? ¿Y qué ha pasado? La diferencia entre las dos respuestas es justo donde está el bug. Si de verdad está bloqueado, puedes dar una pista pequeña, como «mira el primer giro», pero sin tocar nada."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "En lugar de quitarle importancia",
+      "mal": "«¡Pero si es facilísimo!»",
+      "bien": "«Este reto cuesta. Por eso es un buen reto. ¿Qué parte ya te sale?»",
+      "narracion": "Decir que algo es facilísimo pretende animar, pero suele tener el efecto contrario. Si es fácil y no me sale, debo de ser torpe. Reconocer la dificultad, en cambio, tranquiliza. Un ejemplo: «Este reto cuesta, a mí también me costaría. ¿Qué parte ya te sale?». También puedes recordarle que los programadores se equivocan a diario. No hace falta un discurso. Una frase corta y un tono tranquilo bastan."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "En lugar de empezar de cero",
+      "mal": "«Bórralo todo y empieza otra vez.»",
+      "bien": "«¿Qué parte ya funciona? Esa no la tocamos. Buscamos el fallo a partir de ahí.»",
+      "narracion": "La guía responde a esta duda en sus preguntas frecuentes. Un niño pregunta por qué no puede borrarlo todo y empezar de nuevo. La respuesta: puedes, pero pierdes todo lo que estaba bien y quizá vuelvas a cometer el mismo error. Es más rápido encontrar el bloque que falla. En casa, dilo así: «¿Qué parte ya funciona? Esa la dejamos». Y si algún día empezar de cero le sirve para despejarse, tampoco pasa nada."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte",
+      "puntos": [
+        "Cinco frases: hasta dónde, paso a paso, un cambio, que funcione, ¡bug!",
+        "Tres a evitar: lo hago yo, es facilísimo, bórralo todo",
+        "El niño toca el ratón; tú preguntas",
+        "Hoy: pega las cinco frases cerca del ordenador"
+      ],
+      "narracion": "Repasamos. Cinco frases que ayudan: ¿hasta qué bloque ha ido bien?, vamos a verlo paso a paso, un cambio y una prueba, primero que funcione y has cazado un bug. Tres que conviene cambiar: lo hago yo, es facilísimo y bórralo todo. Para hoy, escribe las cinco frases en un pósit y pégalo junto al ordenador. En los recursos tienes la ficha del concurso de los pocos bloques, para practicar la cuarta frase. En la próxima clase veremos qué hacer cuando directamente no quiere seguir."
+    }
+  ]
+}

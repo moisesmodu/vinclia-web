@@ -1,0 +1,117 @@
+{
+  "id": "c4-07",
+  "titulo": "Mensajes trampa y permisos de las apps",
+  "descripcion": "Los disfraces de los mensajes trampa, los cuatro pasos para no caer, qué hacer si ya habéis caído y cómo revisar juntos los permisos de las apps de casa.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:d4-1", "imprimible:d4-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Mensajes trampa y permisos de las apps",
+      "subtitulo": "Qué hay detrás del disfraz y a quién dejamos las llaves",
+      "narracion": "Un paquete que no llega, un premio de gemas, un amigo con un número nuevo. Los mensajes trampa llegan a los móviles de casa, a los chats y a los videojuegos, y no solo a los adultos. En esta clase juntamos dos sesiones de Tech Digital: mensajes trampa y permisos de las apps. Verás qué enseñar a tu hijo, qué norma poner en casa y qué revisar hoy en la tableta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los disfraces del engaño",
+      "puntos": [
+        "Un paquete retenido que nadie espera",
+        "Un premio de un sorteo en el que no has participado",
+        "Un amigo o familiar con número nuevo",
+        "El falso soporte del videojuego: «Oficial» en el nombre",
+        "El truco es siempre el mismo: que hagas algo deprisa"
+      ],
+      "narracion": "El disfraz cambia, pero el truco no. Si llega por SMS, se llama smishing, que mezcla SMS y phishing, la palabra inglesa que viene de pescar. A menudo piden un importe pequeño para que parezca poca cosa, pero lo que quieren son los datos de la tarjeta. Los generadores de gemas gratis no existen: quieren la cuenta. Y ponerse Oficial o Soporte en el nombre lo puede hacer cualquiera."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d4-1:4",
+      "narracion": "Este es el SMS inventado que se trabaja en clase. Nadie en casa espera ningún paquete. Antes de seguir, mira la diapositiva con tu hija y buscad las pistas. Hay prisa, un enlace con una dirección rara, un importe pequeño y un paquete que no existe. Si esperáis un paquete de verdad, un adulto lo mira en la app o la web de siempre. Nunca desde el enlace del mensaje."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Nadie de verdad te pide por mensaje la contraseña, el código de verificación ni pagar para recibir un premio.",
+      "narracion": "Convierte esta frase en una norma de casa: ningún código ni contraseña por mensaje, nunca. Vale para los niños y para los adultos. El equipo de verdad de un videojuego o de una app no pide la contraseña por chat. Un premio de verdad no se paga. Y el código que llega al móvil es el segundo candado de la cuenta: quien lo pide quiere entrar en ella."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Los cuatro pasos",
+      "pasos": [
+        "Para: no toques ningún enlace ni respondas",
+        "Compruébalo por otro camino",
+        "Cuéntaselo a un adulto de confianza",
+        "Denuncia y borra: bloquea el número o marca el correo como basura"
+      ],
+      "narracion": "Las prisas son la pista más clara, porque si paras a pensar o a preguntar, el engaño no funciona. Por eso el primer paso es parar: hay todo el tiempo del mundo para preguntar. Y el segundo paso tiene una trampa que conviene explicar bien. Comprobar por otro camino quiere decir no usar nada del mensaje: ni el enlace, ni el número, ni responder."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Comprobar por otro camino",
+      "mal": "Responder al mismo mensaje: ¿de verdad eres Pau? Si es un engaño, dirá que sí.",
+      "bien": "Escribir o llamar al número de siempre de Pau, o preguntarle en el cole.",
+      "narracion": "En la sesión, alguien que dice ser Pau escribe desde un número nuevo y pide un código. Muchos niños responden al mismo número para preguntar si es él. Pero quien suplanta a otro siempre dirá que sí. El otro camino es llamar al número de siempre, abrir la app de siempre o preguntar en persona. Lo mismo vale para el mensaje de un familiar que pide dinero con urgencia."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si ya habéis caído",
+      "pasos": [
+        "Se cuenta enseguida a un adulto: no es culpa suya",
+        "Cambiad la contraseña desde la app de siempre",
+        "Activad la verificación en dos pasos",
+        "Avisad a los amigos y denunciad el mensaje",
+        "Si dudáis, llamad al 017; si hubo tarjeta, al banco"
+      ],
+      "narracion": "Este es el reto más importante de la sesión. Los engaños están hechos para engañar a todo el mundo, también a los adultos. Si tu hija ha tocado un enlace o ha escrito la contraseña, lo que lo arregla es contarlo pronto. Felicítale por contarlo. Después, cambiad la contraseña y activad los dos pasos. Para dudas, el cero, uno, siete es la línea gratuita de ayuda en ciberseguridad del INCIBE."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los permisos: las llaves del dispositivo",
+      "puntos": [
+        "Cámara, micrófono, ubicación, contactos y fotos",
+        "Un permiso es dejar una llave a una app",
+        "La pregunta clave: ¿para qué lo necesita?",
+        "Si no tiene sentido, no se permite"
+      ],
+      "narracion": "Pasamos a los permisos. Una app de mapas necesita la ubicación para guiarte. Una app de videollamadas con la abuela necesita la cámara y el micrófono. Pero una calculadora no necesita tus contactos. ¿Por qué algunas apps piden tanto? A veces porque los datos sirven para enseñar anuncios o se comparten con otras empresas. Las apps gratis también tienen que ganar dinero. Y recuerda: los contactos son datos de otras personas."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d4-2:6",
+      "narracion": "Aquí está CalcuBit, una calculadora inventada que pide la ubicación, el micrófono, los contactos y las fotos. Pregúntale a tu niño cuáles tienen sentido para hacer sumas. La respuesta es ninguno. Si una app pide tanto, lo mejor es no instalarla y buscar otra juntos. Antes de instalar cualquier app, mirad en la tienda oficial para qué edad es, qué dice que hace y qué permisos pide."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "No todo es sí o no",
+      "puntos": [
+        "«Mientras uso la app» o «Solo esta vez»",
+        "En las fotos, solo las que elijas",
+        "«Siempre», casi nunca: la app para encontrar el móvil",
+        "Los permisos se pueden quitar en la configuración"
+      ],
+      "narracion": "La regla es elegir la opción más pequeña que sirva. La app funciona igual y no tiene más de lo que necesita. La ubicación siempre tiene sentido en muy pocos casos, como la herramienta para encontrar el dispositivo si se pierde, que configura un adulto. Y si un día dijisteis que sí y ahora no lo veis claro, no pasa nada. En la configuración hay un apartado de permisos o de privacidad donde se quitan."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Para hacer hoy",
+      "pasos": [
+        "Abrid la configuración y buscad «Permisos» o «Privacidad»",
+        "Elegid tres apps y mirad qué permisos tienen",
+        "Quitad juntos los que no tengan sentido",
+        "Desinstalad las apps que ya no uséis",
+        "Buscad mensajes raros en los móviles de casa, sin tocar enlaces"
+      ],
+      "narracion": "Hoy tenéis dos actividades cortas. La primera es la inspección de permisos: tres apps, una pregunta, y fuera lo que no tenga sentido. Cada dispositivo es diferente; si no encontráis el apartado, buscadlo juntos en la ayuda. La segunda es el museo de las trampas: buscad mensajes raros que hayan llegado a la familia, apuntad de qué se disfrazan y qué pistas tienen. Después, borradlos y bloquead los números."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Los engaños se disfrazan, pero siempre tienen prisa",
+        "Contraseña, códigos y pagos: nunca por mensaje",
+        "Se comprueba por otro camino; si caéis, se cuenta",
+        "Permisos: ¿para qué lo necesita? La opción más pequeña"
+      ],
+      "narracion": "En los recursos tienes la ficha para practicar el otro camino con varios mensajes inventados y las tarjetas de una tienda de apps de papel. Con ellas decidís qué permisos daríais a cada app y con qué opción. En la próxima clase, la última, juntamos todo lo que has visto en un plan digital para toda la familia."
+    }
+  ]
+}

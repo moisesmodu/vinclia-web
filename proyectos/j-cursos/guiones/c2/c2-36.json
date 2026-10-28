@@ -1,0 +1,123 @@
+{
+  "id": "c2-36",
+  "titulo": "Presentación y diploma: la Muestra de Robots",
+  "descripcion": "Prepara una presentación de dos minutos de tu misión, prueba la de otra persona con un informe útil y amable, y demuéstrala con el Maqueen de verdad para cerrar el curso con tu diploma.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k8-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La Muestra de Robots",
+      "subtitulo": "Presentación y diploma: el gran día",
+      "narracion": "La plaza se ha llenado de pistas de cinta y de familias curiosas: hoy es la Muestra de Robots. Presentarás tu misión, otra persona la probará y, al final, recibirás el diploma. Antes, recuerda el viaje del curso. Robots, motores, distancias y giros. Ultrasonidos y sensores de línea. Luz, sonido, botones, variables y control inteligente. Y misiones, hasta llegar a tu robot. Piensa una cosa que recuerdes de cada parte. Hoy no hace falta que todo salga perfecto: explica cómo lo has pensado."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cuatro partes y una demo",
+      "pasos": [
+        "La misión: «Mi robot tiene que…»",
+        "Cómo funciona: sensores, decisiones y motores",
+        "Un problema que tuve y cómo lo resolví",
+        "La demostración delante del público"
+      ],
+      "narracion": "Una buena presentación de ingeniería tiene cuatro partes. Primero, la misión: mi robot tiene que… Segundo, cómo funciona: sensores, decisiones y motores. Tercero, un problema que tuviste y cómo lo resolviste. Y cuarto, la demostración. En dos minutos es suficiente. ¿Por qué en este orden? Porque si el público entiende antes qué verá, en la demo sabrá qué mirar. Y la parte que más interesa suele ser la tercera: el problema y cómo lo arreglaste. Habla mirando al público, no a la pantalla."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-4:4",
+      "narracion": "Para explicar cómo funciona, usa el ciclo de cualquier robot, el de la primera clase: siente, piensa y actúa. Mira este robot y prepara tres frases antes de que se mueva. ¿Qué siente? ¿Qué piensa? ¿Cómo actúa? Ahora, mira la demo. Una explicación modelo sería: mi robot siente la cinta y la caja. Piensa: si la caja está a menos de 10 centímetros, se tiene que parar. Y actúa: gira las ruedas y enciende las luces verdes. El público entiende mejor lo que hace que cada bloque."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "El informe de pruebas",
+      "mal": "«Está bien.» «Es horrible.» «La mía es mucho mejor.»",
+      "bien": "«La parada es perfecta; en la curva se pasa: acorta el giro unos 50 ms.»",
+      "narracion": "Cuando pruebes la misión de otra persona, serás ingeniero o ingeniera de pruebas. Tu trabajo acaba con un informe de pruebas. Un mal informe dice está bien, o es horrible, y ya está. No ayuda nada. Un buen informe es concreto y amable: dice qué funciona y qué habría que ajustar, con un número si puede ser. Por ejemplo: la parada es perfecta; en la curva se pasa, acorta el giro unos 50 milisegundos. La fórmula es fácil: funciona… y habría que ajustar…"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las normas del banco de pruebas",
+      "puntos": [
+        "Cambiad de ordenador con vuestra pareja",
+        "El autor mira, pero no toca ni da la solución",
+        "Si te atascas, di dónde y por qué",
+        "El autor decide qué ajustes aplica"
+      ],
+      "narracion": "En la sesión de Numi Tech, cambiáis de ordenador por parejas. El ingeniero de pruebas programa la misión del compañero. El autor puede mirar, pero no puede tocar ni dar la solución. ¿Por qué? Porque donde se atasca el otro es información valiosa: ahí la misión es difícil o poco clara. Al terminar, se rellena el informe y se dice de palabra qué funciona y qué número calibrarías en el Maqueen real. De vuelta a tu sitio, tú decides qué cambios hacen mejor tu misión."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-4:12",
+      "narracion": "Este es el ensayo general. El programa ya sigue la cinta y se para delante de la caja. Le añadimos una bienvenida para el público: un corazón en la micro:bit y las notas do, mi y sol. Y cuando se para, luces verdes. Predice: ¿dónde tienen que ir las tres notas para que suenen una sola vez, al empezar? Mira. Van en «al iniciar». Si las pusieras en «para siempre», sonarían sin parar. Un detalle así hace que la demo se entienda mejor."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Robots, IA y planeta",
+      "puntos": [
+        "Muchos robots llevan IA: aprenden de muchos ejemplos",
+        "También se equivocan",
+        "¿Es seguro? ¿Trata bien a todo el mundo? ¿Quién responde si falla?",
+        "Reparar antes que tirar; las pilas gastadas, al contenedor"
+      ],
+      "narracion": "Una idea para añadir a la presentación. Muchos robots llevan inteligencia artificial: programas que han aprendido de muchos ejemplos a reconocer caras o voces. Y que también se equivocan. Por eso hay que preguntarse: ¿es seguro? ¿Trata bien a todo el mundo? ¿Quién responde si falla? Y pensar en el planeta: reparar antes que tirar. Los aparatos viejos van al punto limpio, y las pilas gastadas, al contenedor de pilas, nunca a la basura. ¿Qué norma pondrías tú a los robots que ayudan en casa?"
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La Muestra con el Maqueen",
+      "pasos": [
+        "Cada grupo, en su estación con el robot y la pista",
+        "Programa descargado con el robot apagado y cable fuera",
+        "Mitad presentan, mitad visitan; a los 6 minutos, cambio",
+        "Dos minutos por persona: cuatro partes y la demo",
+        "Visitantes: una pregunta en cada estación"
+      ],
+      "narracion": "Ahora, la Muestra con el robot de verdad. Cada grupo elige una de sus misiones, o la pista del aula, y la descarga en el Maqueen con el botón MakeCode, o directamente en MakeCode. Las estaciones van en el suelo, separadas y lejos del paso. Solo el piloto enciende y apaga el robot, y hay pilas de recambio en la mesa. La mitad de los grupos presenta y la otra mitad visita; a los 6 minutos, se cambia. Si hay familias, no se hacen fotos sin el permiso del centro y de las familias."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Lee el programa bloque a bloque", "Mi robot siente, piensa y actúa"],
+        ["El informe solo dice «está bien»", "Funciona… y habría que ajustar…"],
+        ["El autor dice la solución", "Manos en el bolsillo"],
+        ["El robot falla en la demo", "Explica por qué y vuelve a probar"],
+        ["Da vergüenza hablar en público", "Presentar en pareja o a pocos"]
+      ],
+      "narracion": "Los errores típicos del gran día. Si lees el programa bloque a bloque, el público se pierde: usa siente, piensa y actúa. Si el informe solo dice está bien, añade un número o un tramo concreto. Si el autor dice la solución, el ingeniero de pruebas no aprende nada. ¿Y si el robot falla en la demo? Les pasa a los mejores equipos. Explica qué crees que ha pasado, las pilas, la cinta o un número, y vuelve a probar. Si da vergüenza, presenta en pareja."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla y en casa",
+      "puntos": [
+        "Ficha del guion: una o dos frases por parte",
+        "Ensayo por parejas: dos minutos cronometrados",
+        "Quien escucha: algo que le gusta y una idea",
+        "En casa: enseña el diploma y explica tu misión"
+      ],
+      "narracion": "Antes de presentar, rellena la ficha del guion: una o dos frases para cada parte. No hace falta leerla, solo es para recordarla. Después, ensayad por parejas. Una persona presenta en dos minutos cronometrados y la otra escucha y dice algo que le ha gustado y una idea para mejorar. Después, cambiáis. Y en casa, enseña el diploma y explica a tu familia tu misión: cómo es la pista y qué hace el robot. Busca tres robots de la vida real y piensa qué sensores deben usar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si das el curso: diplomas y despedida",
+      "pasos": [
+        "Imprime y firma los diplomas; el nombre, a mano",
+        "Prepara una estación de reserva con la pista del aula",
+        "Parejas de pruebas de grupos diferentes",
+        "Entrega cada diploma diciendo algo que ha hecho bien"
+      ],
+      "narracion": "Si das el curso, prepara la sesión con calma. Imprime y firma los diplomas, con el nombre de cada alumno escrito a mano. Prueba uno antes en horizontal. Prepara una estación de reserva con la pista del aula y un robot ya cargado. Si un robot falla justo antes de presentar, la misión propia se enseña en el simulador. Forma las parejas de pruebas con alumnos de grupos diferentes. Y al final, entrega cada diploma diciendo su nombre y algo que ha hecho bien durante el curso."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas del curso",
+      "puntos": [
+        "Un robot siente, piensa y actúa",
+        "Planifica, programa, prueba y mejora",
+        "Del simulador al robot real: calibrar y usar sensores",
+        "Si falla: mira dónde, mide, ajusta y vuelve a probar"
+      ],
+      "narracion": "¡Misión cumplida! Has terminado el curso de robótica y ya sabes el secreto de todos los robots: sienten, piensan y actúan. Sabes trabajar en ciclo: planificar, programar, probar y mejorar. Y sabes pasar del simulador al robot real calibrando y usando sensores. Si una misión funcionaba en el simulador y en el Maqueen falla, ya sabes qué hacer: mirar dónde falla, medir, ajustar el número y volver a probar. Última pregunta de salida: ¿qué es lo más importante que has aprendido? Enhorabuena, ingeniero o ingeniera."
+    }
+  ]
+}

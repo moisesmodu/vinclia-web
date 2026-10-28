@@ -1,0 +1,148 @@
+{
+  "id": "c1-22",
+  "titulo": "Coordenadas, choques y condiciones",
+  "descripcion": "El escenario se convierte en un mapa con coordenadas y el juego gana reglas: choques y comparaciones con números. Tu hijo o tu hija programa en Scratch una manzana que cae y sabe cuándo la han atrapado.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:g4-1",
+    "imprimible:g5-1"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Coordenadas, choques y condiciones",
+      "subtitulo": "Semana 4 · El escenario es un mapa",
+      "narracion": "Hoy vamos a dar a tu hija o a tu hijo dos herramientas que convierten cualquier escena en un juego. La primera son las coordenadas: el escenario es un mapa, y cada sitio tiene dos números. La segunda son las condiciones con choques y con números, que son las reglas del juego. Las dos conectan con lo que ve en matemáticas: los ejes, la recta numérica y los números negativos. Al terminar tendréis una manzana que cae de un árbol y sabe cuándo la han atrapado."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El escenario es un mapa",
+      "puntos": [
+        "Dos números para cada sitio: primero x, después y",
+        "La x va de -240, a la izquierda, a 240, a la derecha",
+        "La y va de -180, abajo, a 180, arriba",
+        "El (0, 0) está en el centro, no en la esquina"
+      ],
+      "narracion": "Cada punto del escenario tiene dos coordenadas. La equis dice si está a la izquierda o a la derecha, y va de menos 240 a 240. La i griega dice si está abajo o arriba, y va de menos 180 a 180. El cero, cero está en el centro, no en la esquina como en una hoja de papel. Y el orden importa: siempre va primero la equis. Por eso el punto 100, 50 y el punto 50, 100 son sitios distintos. La guía propone una frase para recordarlo: primero el pasillo, después el ascensor."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "De Creadores a Scratch",
+      "columnas": [
+        "Tech Creadores",
+        "Scratch"
+      ],
+      "filas": [
+        [
+          "ve a x: 150 y: 100",
+          "ir a x: 150 y: 100"
+        ],
+        [
+          "pon x a 150",
+          "fijar x a 150"
+        ],
+        [
+          "cambia y en -5",
+          "cambiar y por -5"
+        ],
+        [
+          "si toca la cesta",
+          "si ¿tocando Cesta? entonces"
+        ],
+        [
+          "si y < -150",
+          "si posición en y < -150 entonces"
+        ]
+      ],
+      "narracion": "Estos son los bloques de hoy en Scratch. «Ir a», «fijar» y «cambiar» están en Movimiento. Un truco muy útil: cuando arrastras un personaje con el ratón, los números del bloque «ir a» de la paleta cambian a su posición. Así puede colocar algo donde quiera, mirar sus números y copiarlos. El «si… entonces» está en Control, con un hueco para la condición. «¿Tocando?» está en Sensores, en azul claro. Los signos de mayor que y menor que están en Operadores, en verde. Y «posición en i griega» está al final de Movimiento."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el tesoro escondido",
+      "pasos": [
+        "Una cruz en una hoja cuadriculada: la raya horizontal es la x",
+        "Numerad 1, 2, 3, 4 a la derecha y arriba; negativos al otro lado",
+        "Uno esconde un tesoro en un cruce, sin enseñarlo",
+        "El otro dice coordenadas, siempre primero la x",
+        "Pistas: «más a la derecha» cambia la x; «más arriba», la y"
+      ],
+      "narracion": "Antes de la pantalla, jugad al tesoro escondido. Solo necesitas una hoja cuadriculada y un lápiz. Dibujad una cruz en el centro: la raya horizontal es la equis y la vertical, la i griega. Numerad las rayas: positivos a la derecha y arriba, negativos a la izquierda y abajo. Una persona esconde un tesoro en un cruce sin enseñarlo, y la otra dice coordenadas. Quien esconde solo responde con pistas: más a la derecha, más arriba. Es como el juego de los barcos, pero con números negativos. Tienes la cuadrícula en los recursos."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g4-1:12",
+      "narracion": "En esta diapositiva, un solo bloque lleva a Numi de un salto al punto exacto. Antes de ejecutar, pregúntale adónde irá. Si duda, que piense por partes: ¿la equis es positiva o negativa? Entonces, ¿derecha o izquierda? Un error típico es poner varios «ir a» seguidos y decir que el personaje no pasa por las estrellas. Sí que pasa, pero tan deprisa que no se ve, igual que pasaba con los disfraces. La solución es la misma: un «esperar 1 segundos» entre salto y salto. Otro error es probar números al azar: pídele que estime antes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las reglas del juego son preguntas",
+      "puntos": [
+        "«Si» dentro de «por siempre»: pregunta en cada fotograma",
+        "Una condición puede ser un choque: ¿tocando la cesta?",
+        "O un número: ¿posición en y menor que -150?",
+        "Antes del bucle, el «si» pregunta una sola vez"
+      ],
+      "narracion": "Ahora, las condiciones. El «si» ya lo conoce de la semana 3; lo nuevo es qué se puede preguntar. Puede ser un choque: ¿toco la cesta? O puede ser un número: ¿mi i griega es menor que menos 150? Eso quiere decir: ¿he llegado al suelo? La clave es dónde va. Dentro de un «por siempre», el «si» pregunta 30 veces por segundo y no se le escapa nada. Si lo pone antes del bucle, pregunta una sola vez, al principio, cuando la manzana aún está arriba. Y luego no pasa nada."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g5-1:8",
+      "narracion": "Esta es la diapositiva más interesante de la clase. Dos manzanas bajan de 7 en 7. Una pregunta si su i griega es igual a menos 150, y la otra, si es menor que menos 150. Pide a tu hijo que prediga cuál volverá arriba. La primera pasa de menos 144 a menos 151 y nunca vale exactamente menos 150, así que cae y desaparece. La segunda lo detecta siempre. Por eso, cuando algo se mueve a saltos, «menor que» o «mayor que» son más seguros que «igual». Haced la lista de números en un papel: 150, 143, 136, y así hasta abajo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y qué preguntar",
+      "columnas": [
+        "Lo que verás",
+        "Qué preguntarle"
+      ],
+      "filas": [
+        [
+          "Escribe primero la y",
+          "¿Qué número va primero?"
+        ],
+        [
+          "Cree que -100 está a la derecha de 50",
+          "¿A qué lado del cero está?"
+        ],
+        [
+          "Usa «igual» y la fruta pasa de largo",
+          "¿Aparece -150 en la lista?"
+        ],
+        [
+          "El «si» está antes del bucle",
+          "¿Cuántas veces pregunta?"
+        ],
+        [
+          "Funciona en una prueba y no en otra",
+          "¿Dónde está la cesta ahora?"
+        ]
+      ],
+      "narracion": "Estos son los tropiezos de hoy. Con los negativos, el termómetro ayuda mucho: menos 10 grados hace más frío que menos 5. Si dice que menos 160 es mayor que menos 150, dibujad juntos la recta vertical. Presta atención al último. En Creadores, muchos retos tienen dos pruebas con la cesta en sitios distintos. Si funciona en una y no en la otra, el programa no está preguntando: ha acertado por casualidad. Esa es la razón de ser del «si»: el programa no sabe dónde está la cesta y tiene que preguntarlo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El reto de hoy: la manzana que cae",
+      "pasos": [
+        "Una manzana arriba y un objeto que haga de cesta abajo",
+        "Manzana: bandera verde, «fijar y a 150» y «por siempre»",
+        "Dentro: «cambiar y por -5»",
+        "Si ¿tocando la cesta?: «fijar y a 150»",
+        "Si posición en y menor que -150: «fijar y a 150»"
+      ],
+      "narracion": "El reto de hoy prepara el juego de la próxima clase. Una manzana arriba y cualquier objeto que haga de cesta abajo. Mientras el programa funciona, en el editor de Scratch puedes arrastrar la cesta con el ratón. La manzana empieza con «fijar i griega a 150» y luego un «por siempre». Dentro, baja cinco puntos y hace dos preguntas. Si toca la cesta, vuelve arriba. Si ha llegado abajo, también vuelve arriba. Antes de pulsar la bandera, que te explique con palabras qué hará la manzana en cada vuelta. Si quiere más, que la manzana diga algo al ser atrapada."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte hoy",
+      "puntos": [
+        "Coordenadas: primero x, después y; el centro es (0, 0)",
+        "«Ir a» salta; con varios saltos, pon esperas",
+        "Las reglas del juego son «si» dentro del «por siempre»",
+        "Con saltos, mejor «menor que» que «igual»",
+        "Hoy: el tesoro escondido y la manzana que cae"
+      ],
+      "narracion": "Repasamos. El escenario es un mapa con el cero, cero en el centro, y las coordenadas se dicen siempre en el mismo orden, primero la equis. Las reglas de un juego son condiciones, y van dentro del «por siempre» para que pregunten en cada vuelta. Cuando algo se mueve a saltos, mejor «menor que» que «igual». En los recursos tienes la cuadrícula del cielo escondido y las tarjetas de los comparadores humanos. Y una idea de la guía para casa: buscad máquinas que comparan, como el termostato. En la próxima clase, el juego completo."
+    }
+  ]
+}

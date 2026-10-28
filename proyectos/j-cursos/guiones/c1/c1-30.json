@@ -1,0 +1,99 @@
+{
+  "id": "c1-30",
+  "titulo": "Pantallas, videojuegos y el plan digital de la familia",
+  "descripcion": "Por qué cuesta tanto parar, cómo cuidar el sueño, qué mirar antes de instalar un videojuego, cómo funcionan las compras dentro del juego y cómo hacer un pacto digital para toda la familia.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:d3-4", "imprimible:d3-1", "imprimible:d3-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Pantallas, videojuegos y el plan digital de la familia",
+      "subtitulo": "Acuerdos que valen para todos",
+      "narracion": "Llegamos a la pregunta que más se hacen las familias: ¿cuánta pantalla es demasiada? Y si programar también es pantalla, ¿cómo encaja con los videojuegos, los vídeos y los deberes? En esta clase verás por qué cuesta tanto parar y qué mirar antes de instalar un juego. También, cómo funcionan las compras dentro de los videojuegos y cómo hacer un pacto digital para toda la familia. Al final tendrás los tres teléfonos de ayuda que conviene tener siempre a mano."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-1:3",
+      "narracion": "Empecemos quitando culpas. Algunas aplicaciones están diseñadas para que no paremos. El vídeo siguiente empieza solo, las notificaciones llaman, las rachas te hacen volver cada día y la pantalla no se acaba nunca. Si a tu hijo le cuesta parar, no es que tenga un problema: están hechas así. Y a los adultos nos pasa lo mismo. Saberlo es el primer paso para decidir. Un truco que propone la guía: desactivad juntos la reproducción automática y las notificaciones que no hacen falta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Cuánto es demasiado?",
+      "puntos": [
+        "No hay una cifra mágica para todo el mundo",
+        "Poco rato de ocio, y con pausas",
+        "Que no quite tiempo al sueño, al movimiento ni a la familia",
+        "Señales: ojos cansados, dolor de cabeza, mal humor"
+      ],
+      "narracion": "No hay una cifra mágica. Lo que dice la guía es que los pediatras recomiendan poco rato de ocio, con pausas, y que no quite tiempo al sueño, al movimiento ni a la familia. Más que contar minutos, mirad cómo os sentís. El cuerpo avisa: ojos cansados, dolor de cabeza o enfadarse más deprisa. Cuando aparecen, toca pausa. Mirad lejos, estiraos y haced otra cosa. Y distingue usos: programar un juego no es lo mismo que ver vídeos sin fin, aunque los ojos necesiten descanso igual."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las pantallas también se van a dormir",
+      "puntos": [
+        "Entre 9 y 12 horas de sueño a esta edad",
+        "Pantallas apagadas un rato antes, mejor una hora",
+        "Por la noche, fuera de la habitación",
+        "La norma vale también para los adultos"
+      ],
+      "narracion": "El sueño merece un apartado propio. Según la guía, a esta edad el cuerpo necesita entre nueve y doce horas de sueño. La luz de la pantalla y los vídeos emocionantes hacen que cueste dormirse. Por eso las pantallas se apagan un rato antes de dormir, mejor una hora, y pasan la noche fuera de la habitación. Si te dice que la tableta no le despierta porque está en silencio, recuerda que las ganas de mirarla un momento también cuentan. Si el móvil de los adultos duerme en la cocina, todo es más fácil."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-2:7",
+      "narracion": "Pasemos a los videojuegos. En Europa llevan la etiqueta PEGI. Un número, 3, 7, 12, 16 o 18, indica la edad mínima recomendada. Unos iconos avisan del contenido, como violencia, miedo o lenguaje, y también de si hay compras dentro del juego. Miradla en familia antes de instalar nada. Es una forma tranquila de decir que no sin entrar en discusiones: no es que a ti no te guste, es que el juego no es para su edad."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Partidas en línea",
+      "puntos": [
+        "En la partida, se habla de la partida",
+        "Ni nombre completo, ni colegio, ni dónde vive",
+        "Chat de voz y de texto: mejor solo amigos de verdad",
+        "Silenciar, bloquear, denunciar y contárselo a un adulto"
+      ],
+      "narracion": "Muchos niños de esta edad ya juegan en línea, a menudo con chat de texto o de voz. Allí puede haber desconocidos. La regla de la guía es fácil de recordar: en la partida, se habla de la partida. Nada de nombre completo, colegio o dónde vive, ni fotos, ni pasar a otra aplicación. Configurad juntos quién puede hablarle; mejor solo amigos de verdad. Y si alguien le molesta, cuatro botones: silenciar, bloquear, denunciar y contárselo a un adulto. Si te lo cuenta, buscad la solución juntos, sin quitarle el juego de golpe."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Gemas y cajas sorpresa",
+      "mal": "«Las gemas no son dinero de verdad. Y la próxima caja seguro que me sale.»",
+      "bien": "«Las gemas cuestan dinero y la caja es como una lotería. Ninguna compra sin un adulto.»",
+      "narracion": "Las monedas, gemas o pases de un videojuego se compran con dinero de verdad, aunque parezcan de mentira. Los avisos de «solo hoy» buscan que compres deprisa. Las cajas sorpresa son otra trampa: pagas sin saber qué hay dentro, como en una lotería. Haber abierto muchas no hace que la siguiente sea mejor, y por eso enganchan. Acordad una norma clara, ninguna compra sin un adulto, y activad el bloqueo de compras del control parental. Si un día gasta sin permiso, no es culpa suya: las tiendas están hechas para que sea fácil."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Acuerdos que funcionan",
+      "mal": "«¡Se acabaron las pantallas, nunca más!»",
+      "bien": "«De lunes a jueves, pantallas después de los deberes y hasta las 8.»",
+      "narracion": "Con todo esto, llega el momento de pactar. La guía da tres claves para un buen acuerdo. Que sea concreto: qué, cuándo y dónde. Que esté dicho en positivo y se pueda cumplir. Y que valga para toda la familia, también para los adultos. «Menos pantallas» no sirve, porque nadie sabe qué significa. «Nunca más videojuegos» no se cumple ni una semana. En cambio, «la tableta duerme en la cocina» se entiende y se puede comprobar. Si un acuerdo no funciona, se vuelve a hablar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El pacto digital de casa",
+      "pasos": [
+        "Sentaos juntos con papel y boli",
+        "Un acuerdo por tema: tiempo, lugares, partidas, compras, ayuda",
+        "Cada persona añade uno, también los adultos",
+        "Firmadlo, colgadlo en la nevera y revisadlo en unas semanas"
+      ],
+      "narracion": "Así se hace el pacto digital de casa, el proyecto final de esta unidad de Tech Digital. Sentaos juntos. Escribid un acuerdo para cada tema. Cuánto tiempo, en qué lugares no hay pantallas y cómo son las partidas. Qué pasa con las compras y qué hacemos si algo va mal. Que cada persona añada uno, también los adultos. Firmadlo todos y colgadlo donde se vea. Dentro de unas semanas, revisadlo y cambiad lo que no funcione. En los recursos tienes la ficha del pacto lista para imprimir."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-4:5",
+      "narracion": "El pacto se completa con la tarjeta de ayuda. Primero, siempre, un adulto de confianza: alguien de casa, alguien del colegio y otra persona, como una tía o un monitor. Si no hay ninguno cerca, el uno uno seis, uno uno uno es el teléfono de ayuda a la infancia y la adolescencia. Lo atiende la Fundación ANAR, es gratuito, confidencial y funciona las veinticuatro horas. El cero diecisiete es la línea de ayuda en ciberseguridad del INCIBE, también para familias. Y el uno uno dos, para emergencias."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte",
+      "puntos": [
+        "Si cuesta parar, no es culpa suya: hay apps hechas así",
+        "Sueño: pantallas apagadas antes y fuera de la habitación",
+        "PEGI antes de instalar; ninguna compra sin un adulto",
+        "Hoy: el pacto digital y la tarjeta con 116 111, 017 y 112"
+      ],
+      "narracion": "Resumimos. Si cuesta parar, no es culpa de nadie: muchas aplicaciones están diseñadas así. Cuidad el sueño, con las pantallas fuera de la habitación. Antes de instalar un juego, mirad la etiqueta PEGI, y ninguna compra sin un adulto. En las partidas, se habla de la partida. Para hoy, haced el pacto digital de casa y la tarjeta de ayuda con los tres números. Con esto cerramos la sección de seguridad. En la última sección veremos qué hacer en los próximos seis meses."
+    }
+  ]
+}

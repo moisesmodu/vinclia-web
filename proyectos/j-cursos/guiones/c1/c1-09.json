@@ -1,0 +1,131 @@
+{
+  "id": "c1-09",
+  "titulo": "Caza el error: depurar sin dramas",
+  "descripcion": "Conviertes los errores en un juego: tu hijo o tu hija aprende qué es un bug, los cuatro tipos más habituales y un método de cuatro pasos para arreglarlos sin borrarlo todo.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r1-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Caza el error",
+      "subtitulo": "Depurar sin dramas",
+      "narracion": "Esta es, quizá, la sesión más importante para la actitud de tu hijo o tu hija. Hoy el error deja de ser un problema y pasa a ser una parte normal de programar. Incluso una parte divertida. Vas a ver qué es un bug, los cuatro errores más habituales, un método para arreglarlos y cómo reaccionar tú cuando las cosas no salen."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Todos los programadores cometen errores. Los buenos los saben encontrar.",
+      "narracion": "Empieza con una historia, que a los niños les encanta. Un error en un programa se llama bug, que en inglés quiere decir bicho. En 1947, un equipo de científicos encontró una polilla atrapada dentro de un ordenador gigante que fallaba. La pegaron en el cuaderno con una nota. La palabra ya existía, pero esta historia la hizo famosa. Y buscar y arreglar errores tiene nombre: se llama depurar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los cuatro bugs más habituales",
+      "columnas": [
+        "Tipo de bug",
+        "Ejemplo con Bit"
+      ],
+      "filas": [
+        [
+          "Falta un bloque",
+          "Se queda una casilla antes"
+        ],
+        [
+          "Sobra un bloque",
+          "Se pasa de la bandera"
+        ],
+        [
+          "Bloque equivocado",
+          "Izquierda en lugar de derecha"
+        ],
+        [
+          "Bloques en mal orden",
+          "Gira antes de tiempo"
+        ]
+      ],
+      "narracion": "Casi siempre, el error es uno de estos cuatro. Falta un bloque. Sobra un bloque. Hay un bloque equivocado, por ejemplo izquierda en lugar de derecha. O los bloques están en mal orden. Ponerle nombre al tipo de bug ayuda mucho. Cuando algo falle, en lugar de decir «no funciona», pregúntale: ¿qué tipo de bug crees que es? Ya está investigando, no lamentándose."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Preguntas de detective",
+      "puntos": [
+        "¿Hasta qué bloque ha ido bien?",
+        "¿Hacia dónde mira Bit justo antes de chocar?",
+        "¿Qué bloque lo ha dejado mirando así?",
+        "¿Qué tipo de bug es?"
+      ],
+      "narracion": "Un error muy habitual es buscar el bug en el bloque donde Bit choca. Pero muchas veces el problema viene de antes, por ejemplo de un giro equivocado. Estas preguntas ayudan a mirar hacia atrás. ¿Hasta qué bloque ha ido bien? ¿Hacia dónde mira Bit justo antes de chocar? ¿Qué bloque lo ha dejado mirando así? Con ellas, tu hijo aprende a seguir la pista del error hasta su origen, como un detective."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo se caza un bug",
+      "pasos": [
+        "Ejecuta y mira dónde falla",
+        "Hazlo paso a paso, un bloque cada vez",
+        "Cambia solo el bloque equivocado",
+        "Vuelve a probarlo"
+      ],
+      "narracion": "Este es el método de cuatro pasos de la sesión. Primero, ejecuta y mira dónde falla. Segundo, hazlo paso a paso: en la app hay un botón que ejecuta un solo bloque cada vez, como a cámara lenta. Tercero, cambia solo el bloque equivocado. Cuarto, vuelve a probar. Añade la norma de oro para los que cambian todo a la vez: un cambio, una prueba."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-3:7",
+      "narracion": "Practiquemos. Queríamos que Bit llegara a la casilla C. El programa es: gira a la izquierda, adelante, adelante. Antes de ver el vídeo, piensa: ¿dónde terminará? Ahora mira. Bit no llega a la C. Avanza bien, pero en la dirección equivocada. El bug está en el primer bloque: el giro. Es un bloque equivocado. Fíjate en algo: Bit falla al final, pero el error estaba al principio."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-3:8",
+      "narracion": "Y aquí, el programa arreglado. Solo hemos cambiado un bloque, el giro. ¿Ahora llega a la C? Predice antes de ver el vídeo. Efectivamente, llega. Esto es lo que queremos que tu hijo vea: no hacía falta borrar nada. Los dos bloques adelante estaban bien. Cuando lo borras todo, pierdes lo que funcionaba y quizá vuelves a cometer el mismo error."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el bug de papel",
+      "pasos": [
+        "Dibujad con flechas un camino corto hasta la puerta",
+        "Uno cambia una sola flecha sin que el otro lo vea",
+        "El otro hace de robot, flecha a flecha",
+        "¿Dónde se equivoca de camino? Arreglad solo esa flecha"
+      ],
+      "narracion": "La actividad sin pantalla de esta sesión es el bug de papel. Dibujáis con flechas un camino corto hasta la puerta: adelante, izquierda y derecha. Uno de los dos cambia una sola flecha sin que el otro lo vea. Ese es el bug. El otro hace de robot, flecha a flecha, y descubre dónde se equivoca de camino. Después arregláis solo esa flecha y volvéis a probar. Cambiad los papeles, y deja que te esconda bugs a ti."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo reaccionar ante un error",
+      "mal": "«¿Otra vez? Si te lo he dicho antes». El error se vive como un fracaso.",
+      "bien": "«¡Has encontrado un bug! ¿De qué tipo es?». El error es una pista.",
+      "narracion": "Algunos niños lo pasan mal cuando se equivocan y no quieren seguir. La guía lo dice claro: felicita cada error encontrado, no solo los programas que funcionan. Tu reacción cuenta mucho. Evita los suspiros y el «otra vez». Celebra el hallazgo: has encontrado un bug. Y no compares con hermanos ni con lo rápido que lo hacía otro. Una idea más para casa: un diario de bugs pegado en la nevera."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Soluciones de los retos",
+      "puntos": [
+        "Bit choca: el bloque culpable es el giro a la derecha",
+        "Sobra un bloque: el tercer adelante",
+        "Se pasa de la bandera: bastan cuatro adelante",
+        "Dos bugs: arregla uno, prueba y busca el otro"
+      ],
+      "narracion": "Para que sepas qué esperar en la app. En el primer reto, Bit choca porque gira a la derecha y queda mirando hacia las rocas: tenía que girar a la izquierda. En el segundo sobra el tercer adelante. Cuando se pasa de la bandera, bastan cuatro adelante. Y en el reto de los dos bugs, hay un giro equivocado y un bloque que falta. Cuando arregle el primero, pregúntale: ¿ya llega a la bandera? Si no, todavía queda otro."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Receta con bugs",
+      "puntos": [
+        "Lee una receta de pan con tomate con tres trampas",
+        "Un paso que falta, uno que sobra y uno en mal orden",
+        "Tu hijo los caza y dice de qué tipo es cada uno"
+      ],
+      "narracion": "Y un juego para la cocina, sacado de las ampliaciones de la guía: la receta con bugs. Lee en voz alta la receta del pan con tomate con tres trampas. Un paso que falta, como cortar el pan. Uno que sobra, como meterlo en la nevera. Y uno en mal orden, como echar el aceite antes de tostarlo. Tu hijo tiene que cazarlos y decir de qué tipo es cada bug. Después, que te prepare una receta con bugs a ti."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para cazar bugs",
+      "puntos": [
+        "Un bug es un error; depurar es encontrarlo y arreglarlo",
+        "Cuatro tipos: falta, sobra, equivocado o mal orden",
+        "Paso a paso y un cambio cada vez",
+        "Hoy: el bug de papel, y celebra cada error encontrado"
+      ],
+      "narracion": "Resumiendo. Un bug es un error en un programa, y depurar es encontrarlo y arreglarlo. Casi siempre es uno de cuatro tipos: falta un bloque, sobra, está equivocado o en mal orden. Y el método es paso a paso, con un cambio cada vez. Para hoy: jugad al bug de papel. Y al terminar, pregúntale qué quiere decir depurar y dos tipos de bug. En la próxima clase, el proyecto de la semana."
+    }
+  ]
+}

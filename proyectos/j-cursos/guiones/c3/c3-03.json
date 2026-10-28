@@ -1,0 +1,138 @@
+{
+  "id": "c3-03",
+  "titulo": "Qué herramienta usar: ChatGPT, Gemini, Copilot, Claude y compañía",
+  "descripcion": "Conoces las cinco herramientas de IA más útiles para un pequeño negocio, eliges una principal y una de reserva según dónde trabajas, y las configuras para empezar gratis.",
+  "vistaPrevia": true,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Qué herramienta usar",
+      "subtitulo": "ChatGPT, Gemini, Copilot, Claude y Le Chat",
+      "narracion": "Cada semana sale una herramienta nueva de IA y es fácil agobiarse. La buena noticia es que para un negocio pequeño no hace falta probarlas todas. Con una principal y otra de reserva tienes de sobra. En esta clase vas a conocer las cinco más útiles, todas con plan gratuito. Verás en qué se diferencia cada una y cómo elegir según dónde trabajas tú. Y acabarás con tu herramienta lista para usar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Las cinco que vas a oír nombrar",
+      "columnas": [
+        "Herramienta",
+        "Empresa",
+        "Encaja si…"
+      ],
+      "filas": [
+        [
+          "ChatGPT",
+          "OpenAI",
+          "Quieres la más conocida"
+        ],
+        [
+          "Gemini",
+          "Google",
+          "Vives en Gmail y Google Docs"
+        ],
+        [
+          "Copilot",
+          "Microsoft",
+          "Trabajas con Word y Outlook"
+        ],
+        [
+          "Claude",
+          "Anthropic",
+          "Escribes textos largos"
+        ],
+        [
+          "Le Chat",
+          "Mistral",
+          "Prefieres una opción europea"
+        ]
+      ],
+      "narracion": "Estas son las cinco. ChatGPT, de OpenAI, es la más conocida y la que más gente usa. Gemini es de Google y, si tienes Google Workspace, aparece dentro de Gmail y de Docs. Copilot es de Microsoft y se integra en Word y Outlook con Microsoft 365. Claude, de Anthropic, va muy bien para redactar y revisar textos largos. Y Le Chat es de Mistral, una empresa europea. La columna de la derecha es orientativa. Las cinco sirven para casi todo lo que verás en el curso."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Gratis primero, de pago si te compensa",
+      "puntos": [
+        "Todas tienen plan gratuito, con límites de uso",
+        "El gratuito basta para empezar y para este curso",
+        "Los planes individuales de pago rondan 20 euros al mes",
+        "Paga solo cuando choques con el límite a menudo"
+      ],
+      "narracion": "Todas tienen un plan gratuito. Los límites cambian, pero suelen afectar al número de mensajes al día o a las funciones más avanzadas. Para empezar y para seguir este curso, el plan gratuito te basta. Los planes individuales de pago rondan los 20 euros al mes, como orden de magnitud, porque los precios cambian a menudo. El consejo es sencillo. No pagues hasta que choques con el límite varias veces por semana. Entonces sabrás que te compensa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si ya pagas Google Workspace o Microsoft 365",
+      "puntos": [
+        "Con Workspace, Gemini aparece dentro de Gmail y Docs",
+        "Con Microsoft 365, Copilot aparece en Word y Outlook",
+        "Revisa qué incluye tu plan antes de pagar otra cosa",
+        "Pregunta a quien te lleva la informática si tienes dudas"
+      ],
+      "narracion": "Un caso especial. Muchos negocios ya pagan el correo profesional con Google Workspace o con Microsoft 365. Si es tu caso, mira qué incluye tu plan antes de contratar nada más. Con Workspace, Gemini puede aparecer dentro de Gmail y de Docs, y te ayuda a redactar sin cambiar de pantalla. Con Microsoft 365 pasa lo mismo con Copilot en Word y Outlook. Las funciones incluidas dependen del plan y cambian con el tiempo. Si no lo tienes claro, pregunta a quien te lleva la informática."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo elegir la tuya",
+      "mal": "Elegir la que está de moda esta semana o la que usa tu cuñado.",
+      "bien": "Elegir la que encaja con tu correo y tus documentos, y probar la misma tarea en dos.",
+      "narracion": "La forma floja de elegir es seguir la moda o lo que te dice un conocido. La forma buena es mirar dónde trabajas ya. Si tu correo es Gmail y usas Google Docs, Gemini te queda a mano. Si trabajas con Outlook y Word, Copilot encaja mejor. Si no tienes preferencia, ChatGPT o Claude son buenas opciones generales. Y si te importa que la empresa sea europea, prueba Le Chat. Después, haz la prueba que viene ahora."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La prueba: la misma instrucción en dos",
+      "usuario": "Tengo un centro de fisioterapia. Escribe un mensaje de WhatsApp para recordar a un paciente su cita de mañana a las 10:00. Máximo 3 frases, tono amable, de tú. Recuérdale que si no puede venir avise con 24 horas.",
+      "ia": "¡Hola! Te recordamos tu cita de mañana a las 10:00 en Fisio Marina. Si no puedes venir, avísanos con 24 horas de antelación, por favor. ¡Hasta mañana!",
+      "narracion": "Para elegir con criterio, copia esta instrucción y pégala en dos herramientas distintas. Es un recordatorio de cita para un centro de fisioterapia. Fíjate en que no lleva el nombre del paciente ni ningún dato de salud. Compara las dos respuestas. Cuál suena más a ti, cuál respeta mejor las tres frases, cuál añade cosas que no pediste. Con tres o cuatro pruebas así sabrás cuál te gusta más. Esa será tu principal, y la otra, tu reserva."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En el móvil y en el ordenador",
+      "puntos": [
+        "Todas tienen web y aplicación para el móvil",
+        "En el móvil puedes dictar en lugar de escribir",
+        "Usa la misma cuenta y tendrás el historial en ambos",
+        "Crea la cuenta con el correo del negocio"
+      ],
+      "narracion": "Todas estas herramientas funcionan en la web y tienen aplicación para el móvil. Esto es muy práctico si pasas el día fuera, como un electricista o una fontanera entre obra y obra. En el móvil puedes dictar con la voz en lugar de escribir, y la IA ordena lo que dices. Si entras con la misma cuenta, tendrás tus conversaciones en el móvil y en el ordenador. Un consejo práctico: crea la cuenta con el correo del negocio, no con el personal."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Configúrala en cinco minutos",
+      "pasos": [
+        "Crea la cuenta con el correo del negocio",
+        "Busca la configuración de datos o privacidad",
+        "Desactiva el uso de tus chats para entrenar",
+        "Instala la app en el móvil y entra con la misma cuenta",
+        "Haz la prueba del recordatorio en dos herramientas"
+      ],
+      "narracion": "Vamos con la configuración básica. Crea la cuenta con el correo del negocio. Entra en la configuración y busca el apartado de datos o privacidad. En ChatGPT está en Configuración, dentro de Controles de datos. En las demás hay una opción equivalente. Desactiva el uso de tus conversaciones para entrenar el modelo. Después instala la aplicación en el móvil y entra con la misma cuenta. Y por último, haz la prueba del recordatorio en dos herramientas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Y además, otras que verás en el curso",
+      "puntos": [
+        "Canva con IA, para imágenes y diseño",
+        "WhatsApp Business, gratis, para atender clientes",
+        "Google Business Profile, tu ficha en Google Maps",
+        "Zapier, Make y n8n, para automatizar tareas"
+      ],
+      "narracion": "Además de estas cinco, en el curso usaremos otras herramientas que no son asistentes de conversación, pero que se complementan muy bien con ellos. Canva tiene funciones de IA para imágenes y diseño. WhatsApp Business es gratuita y la usaremos para atender clientes. Google Business Profile es tu ficha en Google Maps, también gratis. Y Zapier, Make y n8n sirven para automatizar tareas sin programar. Cada una tiene su clase. No las instales todavía."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La mejor herramienta es la que usas todos los días, no la que más sale en las noticias.",
+      "narracion": "Una última idea antes de terminar. Las herramientas cambian y mejoran cada pocos meses. Si este curso dependiera de una sola, se quedaría viejo enseguida. Por eso aquí aprenderás a pedir bien, que vale para cualquiera. Lo que funciona en ChatGPT funciona en Gemini, en Copilot, en Claude y en Le Chat. La mejor herramienta es la que usas todos los días."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Cinco opciones con plan gratuito: elige según dónde trabajas",
+        "Una principal y una de reserva son suficientes",
+        "Desactiva el entrenamiento y usa el correo del negocio",
+        "Tarea: misma instrucción en dos herramientas y elige"
+      ],
+      "narracion": "Repasamos. Tienes cinco buenas opciones con plan gratuito, y la mejor manera de elegir es mirar dónde trabajas ya. Una principal y otra de reserva son suficientes. Crea la cuenta con el correo del negocio y desactiva el entrenamiento con tus conversaciones. Tu tarea de hoy, en 10 minutos. Pega la instrucción del recordatorio, adaptada a tu negocio, en dos herramientas. Compara y elige tu principal. En la próxima sección aprenderás la fórmula de una buena instrucción."
+    }
+  ]
+}

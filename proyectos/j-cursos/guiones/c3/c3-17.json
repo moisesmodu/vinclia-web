@@ -1,0 +1,122 @@
+{
+  "id": "c3-17",
+  "titulo": "Correos, ofertas y fidelización",
+  "descripcion": "Redacta con IA el correo mensual, los asuntos, las ofertas con condiciones claras y un plan sencillo para que tus clientes vuelvan, sin meter sus datos personales en la herramienta.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:correos-fidelizacion"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Correos, ofertas y fidelización",
+      "subtitulo": "Que tus clientes vuelvan sin que te cueste horas",
+      "narracion": "Conseguir un cliente nuevo cuesta mucho más que mantener a uno que ya te conoce. Lo sabe cualquier negocio de barrio. Pero mantener el contacto lleva tiempo: el correo del mes, la oferta de temporada, el recordatorio de la revisión. En esta clase vas a usar la IA para preparar todo eso en pocos minutos. Nuestro ejemplo será una fisioterapeuta con consulta propia. Y vamos a hacerlo sin meter nunca los datos de tus clientes en la herramienta, porque en su caso, además, son datos de salud."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que de verdad funciona en un negocio pequeño",
+      "puntos": [
+        "Un correo al mes, corto y útil, no publicitario",
+        "Un recordatorio cuando toca volver",
+        "Ofertas con fecha de fin y condiciones claras",
+        "Un detalle de agradecimiento a los de siempre",
+        "Un sistema sencillo: sellos, bonos o descuento"
+      ],
+      "narracion": "No necesitas una estrategia de gran empresa. Con cuatro o cinco hábitos tienes un sistema de fidelización que funciona. Un correo mensual que aporte algo útil, como un consejo de tu oficio. Un recordatorio cuando el cliente debería volver, por ejemplo a los tres meses. Ofertas de vez en cuando, siempre con condiciones claras. Y algún detalle con tus clientes de toda la vida. La IA te ayuda a redactar cada pieza. Lo que decides tú es qué ofreces, a quién y cuándo. Empieza poco a poco y ve sumando lo que te funcione."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El correo del mes",
+      "usuario": "Soy fisioterapeuta con consulta propia. Escribe el correo de noviembre para mis pacientes: un consejo práctico sobre la espalda para quien teletrabaja, en 3 pasos, y un aviso de que hay huecos libres por las mañanas. Máximo 150 palabras, tono cercano y profesional. Sin prometer resultados médicos.",
+      "ia": "Hola:\n\nSi trabajas desde casa, tu espalda lo nota. Tres gestos sencillos para este mes:\n1. Pon la pantalla a la altura de los ojos, aunque sea con libros debajo.\n2. Levántate cada hora y camina dos minutos.\n3. Al acabar la jornada, estira suavemente el cuello hacia cada lado.\n\nSi notas molestias que no se van, mejor que lo valoremos en consulta. Este mes tengo huecos libres por las mañanas. Responde a este correo o escríbeme por WhatsApp.\n\nUn saludo,\n[Tu nombre]",
+      "narracion": "Aquí tienes el correo del mes. La clave es que el cliente gane algo al leerlo, aunque no reserve. Fíjate en una frase de la instrucción: sin prometer resultados médicos. Es muy importante en sectores de salud o estética. Revisa también el consejo con tu criterio profesional. La IA puede escribir algo que suena bien pero que tú no recomendarías. Si es así, cámbialo o pídele otro. El correo se envía con tu nombre, así que lo que dice es responsabilidad tuya, no de la herramienta."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Asuntos que se abren",
+      "usuario": "Dame 5 asuntos para ese correo, de menos de 50 caracteres. Sin mayúsculas gritonas, sin signos de exclamación y sin palabras de oferta.",
+      "ia": "1. Tres gestos para tu espalda si teletrabajas\n2. Tu espalda y el ordenador: un consejo\n3. ¿Teletrabajas? Esto le va bien a tu espalda\n4. El consejo de noviembre de tu fisio\n5. Dos minutos cada hora",
+      "narracion": "El asunto decide si el correo se abre o se queda en la bandeja. Pide varias opciones y elige la que tú abrirías. Las condiciones de esta instrucción tienen sentido. Las mayúsculas, los signos de exclamación y las palabras de oferta hacen que el correo parezca publicidad, y algunos programas de correo lo mandan a la carpeta de promociones. Un asunto que promete algo útil y concreto, como tres gestos para tu espalda, suele funcionar mejor que un gran descuento solo para ti. Y si tienes dudas entre dos, envía cada una a la mitad de tus clientes y mira cuál se abre más."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Una oferta confusa frente a una clara",
+      "mal": "¡Descuentazo en bonos! Aprovecha antes de que se acabe. Consulta condiciones.",
+      "bien": "Bono de 5 sesiones a [precio]. Reservas hasta el [fecha]. Se usa en 3 meses. Pídelo por WhatsApp.",
+      "narracion": "Cuando prepares una oferta, pide a la IA que incluya siempre cuatro cosas: qué se ofrece, a qué precio, hasta cuándo y cómo se pide. A la izquierda, una oferta que genera dudas y llamadas. A la derecha, una oferta que se entiende sola. El precio y las fechas van entre corchetes porque los decides tú. Y antes de enviarla, piensa en la letra pequeña: ¿qué pasa si alguien no usa el bono a tiempo? Escríbelo en la oferta. Evitarás discusiones después."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un sistema de fidelización sencillo",
+      "usuario": "Propón 3 ideas de fidelización para una consulta de fisioterapia pequeña, que pueda gestionar yo sola sin programas especiales. Para cada una: cómo funciona, qué cuesta en tiempo y un riesgo a tener en cuenta.",
+      "ia": "1. Tarjeta de sellos: a la sexta sesión, la séptima con descuento. Tiempo: ninguno. Riesgo: que se pierda la tarjeta.\n2. Recordatorio de revisión a los 3 meses. Tiempo: 10 minutos al mes. Riesgo: escribir a quien no lo quiere.\n3. Trae a un amigo: descuento para los dos. Tiempo: poco. Riesgo: que el descuento salga caro si se usa mucho.",
+      "narracion": "Esta instrucción tiene un detalle útil: pide el riesgo de cada idea. Así la IA no solo te vende la idea, también te ayuda a pensar en lo que puede salir mal. Elige una sola idea y pruébala unos meses. Si funciona, mantenla. Si no, cambia. Un aviso con el recordatorio de revisión. Para enviarlo necesitas saber quién vino y cuándo. Esa lista la gestionas en tu agenda o en tu programa, no en la IA. A la IA solo le pides el texto del mensaje."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tu año de fidelización, de un vistazo",
+      "columnas": [
+        "Cuándo",
+        "Mensaje",
+        "Canal"
+      ],
+      "filas": [
+        [
+          "Cada mes",
+          "Consejo útil y huecos libres",
+          "Correo"
+        ],
+        [
+          "Tras la primera visita",
+          "Gracias y cómo seguir",
+          "WhatsApp"
+        ],
+        [
+          "A los 3 meses",
+          "Recordatorio de revisión",
+          "WhatsApp o correo"
+        ],
+        [
+          "Dos veces al año",
+          "Oferta con fecha de fin",
+          "Correo y redes"
+        ],
+        [
+          "Fin de año",
+          "Agradecimiento a los de siempre",
+          "Correo"
+        ]
+      ],
+      "narracion": "Con esta tabla tienes un año de fidelización organizado. No hace falta hacerlo todo. Empieza por una o dos filas. Puedes pedirle a la IA que te prepare de una vez los textos de todas las filas. Después los guardas en la biblioteca de instrucciones que montaste en la sección 2. Así, cuando llegue el momento, solo tienes que copiar, revisar y enviar. Y recuerda el permiso: envía correos y mensajes de este tipo solo a clientes que han aceptado recibirlos."
+    },
+    {
+      "tipo": "frase",
+      "texto": "A la IA le pides el texto, nunca la lista de tus clientes.",
+      "narracion": "Esta es la idea más importante de la clase. Para redactar un correo, la IA no necesita saber quiénes son tus clientes. No pegues en el chat nombres, teléfonos, correos ni, en el caso de una fisio, lesiones o tratamientos. Los datos de salud son una categoría especial y requieren mucho más cuidado. Si necesitas personalizar, escribe cliente A o paciente con dolor lumbar, y luego cambias el nombre tú en tu programa de correo. En la sección legal veremos esto con detalle."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Elige un consejo útil de tu oficio para este mes",
+        "Pide el correo del mes con la instrucción de la clase",
+        "Pide 5 asuntos y quédate con uno",
+        "Revisa el consejo, las promesas y los datos",
+        "Envíalo o prográmalo a tus clientes con permiso"
+      ],
+      "narracion": "Hoy te toca preparar tu primer correo del mes. Piensa en un consejo que repites a menudo a tus clientes. Un electricista puede explicar qué hacer si salta el diferencial. Una peluquería, cómo cuidar el color en verano. Pide el correo y los asuntos, revisa que no promete nada que no puedas cumplir y envíalo. En los recursos de esta clase tienes la plantilla de correos y fidelización, con estas instrucciones y la tabla del año lista para rellenar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Un correo útil al mes vale más que mil ofertas",
+        "Asuntos concretos, sin gritos ni exclamaciones",
+        "Ofertas con qué, precio, hasta cuándo y cómo",
+        "Datos de clientes, fuera de la IA"
+      ],
+      "narracion": "Resumiendo la clase y la sección. La IA te ayuda a mantener el contacto con tus clientes: correos útiles, asuntos que se abren, ofertas claras y un pequeño sistema de fidelización. Tú decides qué ofreces y revisas cada promesa. Y los datos de tus clientes nunca entran en la herramienta. Con esto cierras la sección de marketing sin agencia. Haz el cuestionario de la sección y, en la siguiente, entramos en los números: presupuestos, facturas, Verifactu e impuestos."
+    }
+  ]
+}

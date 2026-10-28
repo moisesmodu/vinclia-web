@@ -1,0 +1,82 @@
+{
+  "id": "c2-38",
+  "titulo": "Clase extra: Numi Tech para tu centro y más recursos",
+  "descripcion": "Repasa lo aprendido en el curso, descubre cómo seguir con MakeCode y el robot, y encuentra los enlaces actualizados a Numi Tech, el plan escuela para centros y los otros cursos de la serie.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Clase extra: y ahora, ¿qué?",
+      "subtitulo": "Lo que has aprendido y cómo seguir",
+      "narracion": "Has llegado al final del curso. Esta clase es corta y sin prisas. Repasamos lo que has aprendido, vemos cómo seguir con el robot en casa o en clase y te contamos qué recursos tienes a mano. Si eres profe, también verás cómo llevar Numi Tech a tu centro. Nada de esto es obligatorio: todo lo que has hecho en el curso se puede seguir haciendo con MakeCode, que es gratis, y con el Maqueen."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que ya sabes hacer",
+      "puntos": [
+        "Motores, velocidad, giros y figuras",
+        "Ultrasonidos y sensores de línea para decidir",
+        "Luz, sonido, LED y variables",
+        "Misiones con estrategia, prioridades y fases",
+        "Tu propia misión: diseñar, probar, calibrar y presentar"
+      ],
+      "narracion": "Repasemos el camino. Empezaste con motores, velocidad y giros, y dibujaste figuras con el robot. Después, los sensores: los ultrasonidos para medir distancias y los sensores de línea para seguir cintas. Luego, luz, sonido, LED y variables, hasta el control inteligente. En las misiones aprendiste estrategias, prioridades y fases. Y al final diseñaste, programaste, calibraste y presentaste tu propia misión. Y por el camino, aprendiste algo que hacen los equipos de ingeniería: equivocarte, depurar y mejorar. Todo con la misma idea: un robot siente, piensa y actúa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cómo seguir en casa",
+      "puntos": [
+        "Inventa misiones nuevas y pruébalas en el suelo",
+        "MakeCode, gratis: extensión maqueen y el robot",
+        "Sin robot: el simulador de MakeCode es de la micro:bit",
+        "Mira el JavaScript de tus programas en MakeCode"
+      ],
+      "narracion": "El siguiente paso natural es seguir inventando. Diseña una misión nueva, constrúyela en el suelo con cinta y cajas, y programa el Maqueen en MakeCode con la extensión maqueen. Si quieres un reto, abre la pestaña JavaScript y mira tus programas en texto. Cambia un número allí y vuelve a los bloques. Si no tienes robot, MakeCode trae un simulador, pero es de la micro:bit, no del Maqueen. Verás la pantalla y los botones, no las ruedas. Y guarda tus misiones del curso: son un buen punto de partida para la siguiente."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Numi Tech: la app de los vídeos",
+      "puntos": [
+        "La primera sesión, gratis y sin cuenta",
+        "Simulador del Maqueen con botón MakeCode",
+        "En castellano y en catalán, sin anuncios",
+        "Otros cursos: Tech Robot, Tech Creadores y Tech Digital"
+      ],
+      "narracion": "El simulador que has visto en los vídeos es el de Numi Tech, una app web de programación y robótica para extraescolares. La primera sesión se puede probar gratis y sin cuenta en tech punto numimates punto com. Está en castellano y en catalán, y no tiene anuncios. Además de Tech Robótica, hay otros cursos. Tech Robot, de 6 a 8 años, con Bit, un robot virtual de una isla. Tech Creadores, de 9 a 11, con bloques para animaciones y videojuegos. Y Tech Digital, de 9 a 12, de ciudadanía digital. Si tienes hermanos pequeños en casa, Tech Robot no necesita ningún robot físico."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si eres profe: el plan escuela",
+      "pasos": [
+        "Para centros, AMPA y extraescolares",
+        "Presupuesto a medida para tu grupo",
+        "Pide una demo en numimates punto com",
+        "Un mes de prueba con el código de este curso"
+      ],
+      "narracion": "Si eres profe, el paso natural es llevar el curso a tu centro. Numi Tech tiene un plan escuela para centros, AMPA y extraescolares, con un presupuesto a medida. Puedes pedir una demo en numimates punto com. Y con el código de este curso tienes un mes de prueba. Con la clase anterior y las guías de cada sesión ya tienes el plan de 60 minutos, los grupos, las pistas y las rúbricas. Solo te falta probar un kit antes de la primera clase."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En los recursos de esta clase",
+      "puntos": [
+        "Los enlaces actualizados a la app Numi Tech",
+        "El plan escuela y el código para el mes de prueba",
+        "Los cuadernos sin pantalla: cuando salgan, aquí",
+        "Cupones para los otros cursos de esta serie"
+      ],
+      "narracion": "En los recursos de esta clase tienes los enlaces actualizados. Está la app Numi Tech, con la primera sesión gratis, y el plan escuela, con el código del curso para el mes de prueba. Estamos preparando cuadernos de actividades sin pantalla en Amazon: cuando salgan, los enlazaremos aquí. Y tienes cupones para los otros cursos de esta serie, por si quieres seguir con otra edad o con otro tema."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Gracias por llegar hasta aquí",
+      "puntos": [
+        "Un robot siente, piensa y actúa",
+        "Planifica, programa, prueba y mejora",
+        "Sigue gratis con MakeCode y el Maqueen",
+        "Para centros: el plan escuela de Numi Tech"
+      ],
+      "narracion": "Gracias por llegar hasta aquí. Te llevas una idea que sirve para cualquier robot: siente, piensa y actúa. Y una manera de trabajar que sirve para casi todo: planifica, programa, prueba y mejora. Puedes seguir gratis con MakeCode y el Maqueen. Y si das clase, el plan escuela de Numi Tech te espera. Para hoy, una última misión: inventa una pista nueva y enséñasela a alguien. Hasta pronto, ingeniero o ingeniera."
+    }
+  ]
+}

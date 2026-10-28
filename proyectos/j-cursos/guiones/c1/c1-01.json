@@ -1,0 +1,78 @@
+{
+  "id": "c1-01",
+  "titulo": "Bienvenida: vuestro primer juego de programación en 10 minutos",
+  "descripcion": "Jugáis en casa a «Haz de robot», sin pantalla y sin saber programar, y descubrís en diez minutos la idea que sostiene todo el curso: un robot hace exactamente lo que le dices.",
+  "vistaPrevia": true,
+  "recursos": ["imprimible:r1-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Vuestro primer juego de programación",
+      "subtitulo": "Haz de robot: diez minutos, sin pantalla",
+      "narracion": "Hola, y bienvenida o bienvenido a este curso para madres y padres que quieren acompañar a sus hijos en sus primeros pasos con la programación. Antes de explicarte nada, vamos a jugar. En los próximos diez minutos, tu hijo o tu hija y tú vais a hacer vuestro primer juego de programación. No necesitas ordenador, ni tableta, ni saber programar. Solo necesitas un pasillo, un sofá o una puerta, y ganas de reíros un poco."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un robot hace exactamente lo que le dices. Ni más, ni menos.",
+      "autor": "Bit, el robot de la isla",
+      "narracion": "Esta es la idea de todo el juego. Un robot no adivina lo que quieres. No piensa solo. Hace exactamente lo que le dices, en el orden en que se lo dices. Si las órdenes están bien, llega a donde querías. Si están mal, choca contra una roca. Así funciona Bit, el robot de la isla con el que trabajaremos en la primera parte del curso. Y así funciona cualquier máquina que sigue un programa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué necesitáis",
+      "puntos": [
+        "Dos personas: una programa y la otra hace de robot",
+        "Un destino en casa: la puerta de la cocina, el sofá…",
+        "Tres órdenes: adelante, gira a la izquierda, gira a la derecha",
+        "Diez minutos y el suelo despejado"
+      ],
+      "narracion": "Para jugar necesitáis dos papeles. Una persona hace de programadora y la otra, de robot. Elegid un destino que se vea desde la salida: la puerta de la cocina, el sofá o la cama. El programador solo puede usar tres órdenes: un paso adelante, gira a la izquierda y gira a la derecha. Nada de «ve hacia allí» ni de señalar con el dedo. Y despejad el camino de juguetes, porque el robot camina despacio y sin correr."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo se juega",
+      "pasos": [
+        "Elegid el destino y dónde empieza el robot",
+        "El programador da las órdenes de una en una",
+        "El robot hace exactamente lo que oye, aunque sea un error",
+        "Si choca, no pasa nada: volved al inicio y arreglad el programa",
+        "Al llegar, cambiad los papeles"
+      ],
+      "narracion": "Empezad así. El robot se coloca en la salida, mirando hacia un lado. El programador dice una orden, el robot la hace y espera la siguiente. Lo importante es que el robot no ayuda. Si le dicen gira a la derecha cuando tocaba la izquierda, gira a la derecha. Si choca con el sofá, no pasa nada: es un error del programa, no de la persona. Volved al principio y cambiad la orden que ha fallado. Cuando lleguéis, cambiad los papeles. Te recomendamos empezar tú haciendo de robot: a los niños les encanta mandar."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-1:11",
+      "narracion": "Esta diapositiva sale de la sesión de Numi Tech en la que se basa el juego. Resume las tres reglas que conviene repetir en voz alta antes de empezar. Una orden es un movimiento. El robot no hace nada que no diga una orden. Y si choca, no pasa nada: arreglamos el programa. La última es la más importante. Desde el primer día, equivocarse forma parte del juego."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Así se dan las órdenes",
+      "mal": "«Ve a la cocina». El robot no sabe por dónde ni cuántos pasos.",
+      "bien": "«Un paso adelante. Gira a la derecha. Un paso adelante.»",
+      "narracion": "Al principio tu hijo dará órdenes de persona, como «ve a la cocina» o «tira por allí». Es normal. No lo corrijas: haz de robot y quédate quieto, con cara de no entender. Después pregúntale: ¿cuántos pasos? ¿Hacia qué lado? Verás que enseguida empieza a contar pasos y a pensar el camino antes de hablar. Ese momento, cuando se para a pensar antes de dar la orden, es exactamente lo que buscamos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que vais a descubrir",
+      "puntos": [
+        "Girar no es moverse: el robot gira sin cambiar de sitio",
+        "Después de un giro casi siempre hace falta un paso adelante",
+        "Si el robot te mira de frente, su derecha es tu izquierda",
+        "Equivocarse y arreglarlo también es programar"
+      ],
+      "narracion": "Fíjate en estas sorpresas, porque saldrán en cuanto juguéis. La primera: cuando el robot gira, se queda en el mismo sitio. Solo cambia hacia dónde mira. Muchos niños creen que «gira a la derecha» significa ir hacia la derecha. Pídele que gire sin caminar y que mire dónde tiene los pies. La segunda: cuando el robot os mira de frente, su derecha es vuestra izquierda. No hace falta resolverlo hoy. Lo trabajaremos con calma en la primera semana."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "Un robot hace exactamente lo que le dices",
+        "Tres órdenes bastan: adelante, izquierda y derecha",
+        "Si choca, se arregla el programa; no se riñe a nadie",
+        "Hoy: jugad diez minutos y cambiad los papeles"
+      ],
+      "narracion": "Resumiendo. Hoy solo tienes una tarea: jugar a «Haz de robot» con tu hijo o tu hija durante diez minutos y cambiar los papeles al menos una vez. No hace falta explicar qué es un algoritmo ni corregir nada. En los recursos de esta clase tienes las tarjetas de órdenes, por si queréis usarlas ya. En la próxima clase veremos por qué merece la pena programar entre los seis y los once años, y qué no conviene esperar. Ahora, a jugar."
+    }
+  ]
+}

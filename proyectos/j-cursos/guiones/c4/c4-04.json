@@ -1,0 +1,114 @@
+{
+  "id": "c4-04",
+  "titulo": "Bulos, imágenes falsas e inteligencia artificial",
+  "descripcion": "Las tres preguntas para cazar bulos, cómo verificar una imagen sospechosa, qué es de verdad una inteligencia artificial y las normas para usarla en casa con cabeza.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:d2-1",
+    "imprimible:d5-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Bulos, imágenes falsas e IA",
+      "subtitulo": "Pensar antes de creer, también en el grupo de la familia",
+      "narracion": "Un mensaje corre por el chat de clase: mañana no hay cole por una nevada gigante. Muchos ya lo han reenviado. ¿Es verdad? Así empieza la sesión de Tech Digital sobre bulos. En esta clase juntamos tres sesiones: cazar bulos, verificar imágenes falsas y entender qué es una inteligencia artificial. Verás que no hace falta ser experto. Bastan unas pocas preguntas y la costumbre de pararse antes de compartir."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es un bulo y por qué corre",
+      "puntos": [
+        "Una información falsa que se hace pasar por verdad",
+        "Corre porque la compartimos sin comprobarla",
+        "De un móvil a tres, de tres a nueve, de nueve a veintisiete",
+        "Busca emociones fuertes: miedo, rabia o sorpresa"
+      ],
+      "narracion": "Un bulo puede nacer como broma, para engañar o para tener muchos clics. Y muchas veces se difunde sin mala intención, porque alguien se lo ha creído. Por eso el mensaje para los niños es que comprobar no es acusar. Una pista muy útil: si una noticia te provoca de golpe mucho miedo o mucha rabia, párate. Sentirlo es normal. Pero los bulos están hechos justamente para que compartas sin pensar. Y si le llega una cadena que amenaza con que pasará algo malo si no la reenvía, tranquilízale: no pasa nada por no reenviarla."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La lupa del cazador de bulos",
+      "pasos": [
+        "Para: todavía no lo compartas",
+        "¿Quién lo dice? ¿Tiene firma o fuente?",
+        "¿De cuándo es? Una noticia vieja puede parecer de hoy",
+        "¿Quién más lo dice? Busca otras fuentes fiables",
+        "Si aún dudas, no lo compartas y pregunta"
+      ],
+      "narracion": "Estas son las tres preguntas de la lupa, con un paso antes y otro después. El primero es el que más cuesta: pararse. Una fuente fiable tiene nombre, fecha y alguien responsable, como un periódico o la web del colegio. Me lo ha dicho el primo de un amigo no es una fuente. Y que lo haya compartido mucha gente no lo hace verdad. Para saber si hay clase, se mira la web o la agenda del colegio."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d2-1:7",
+      "narracion": "Esta diapositiva muestra un caso muy habitual. La foto es real, pero es de otro momento: la han sacado de su contexto para hacer creer algo falso. En clase se pide a los niños que lean el pie de foto y la fecha, y que piensen si tiene sentido. ¿Una nevada gigante en pleno julio? Una foto real puede engañar igual que una inventada. Por eso la fecha y el lugar importan tanto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuatro tipos de imágenes",
+      "puntos": [
+        "Real",
+        "Retocada: filtros o recortes que cambian lo que se ve",
+        "Fuera de contexto: real, pero de otro lugar o momento",
+        "Hecha con IA: algo que no ha pasado nunca",
+        "Sin etiqueta de IA no quiere decir que sea real"
+      ],
+      "narracion": "Las cuatro pueden correr como si fueran la verdad. Las pistas visuales, como dedos de más o letras raras, ayudan cada vez menos, porque estas herramientas mejoran. La prueba más fuerte es la fuente y el contexto: quién la publica, dónde está el original, cuándo y dónde se hizo, y quién más lo cuenta. Con un adulto, también se puede buscar la imagen en el buscador para ver dónde ha salido antes. En la sesión, quien comparte una foto falsa de un puente roto es la tía, en el grupo de la familia. Y es el niño quien le dice: espera, antes miremos quién la ha publicado."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La cara de los demás no se toca: ni de broma.",
+      "narracion": "Habla también del respeto. Con la cara, el cuerpo o la voz de una persona real no se hacen imágenes, vídeos ni audios falsos, aunque sea de broma. Hacen mucho daño. Y si algún día alguien hace uno de tu hija, no es culpa suya. No se comparte, se guarda una captura, se denuncia en la app y se avisa al colegio. Y aprovecha para hablar de los filtros: compararse con una foto retocada es compararse con algo que no es real."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es una inteligencia artificial",
+      "puntos": [
+        "Un programa que aprende de muchos ejemplos",
+        "Busca patrones y hace predicciones",
+        "No piensa ni siente: se puede equivocar con mucha seguridad",
+        "Si los ejemplos son poco variados, aprende mal: es el sesgo"
+      ],
+      "narracion": "Muchos niños ya usan cosas con inteligencia artificial: un traductor, el asistente de voz o las recomendaciones de vídeos. En Tech Digital la entrenan con ejemplos. Por ejemplo, si todos los gatos que ve están en un sofá, puede creer que sofá quiere decir gato. Eso es un sesgo. Con personas, un sesgo es injusto: la IA funciona peor con quien no sale en los ejemplos. No es magia. La hacen personas, con ejemplos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Responde muy segura… y se equivoca",
+      "usuario": "¿Cuántas patas tiene una araña?",
+      "ia": "Las arañas tienen 6 patas, como todos los insectos.",
+      "narracion": "Este ejemplo es de la propia sesión. La respuesta suena segura y está mal: las arañas tienen ocho patas y no son insectos. Una IA que escribe no sabe las cosas como tú. Elige palabras que suelen ir juntas según todo lo que ha leído, y por eso a veces se inventa cosas. No miente, porque no tiene intenciones. Se equivoca. Por eso lo que dice una IA se comprueba, igual que una noticia."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La IA en casa, con cabeza",
+      "puntos": [
+        "Sin datos personales: ni nombre completo, ni colegio, ni fotos",
+        "Se comprueba lo que dice en una fuente fiable",
+        "Si le ha ayudado, lo dice: no lo hace pasar por suyo",
+        "Con permiso, con un adulto y mirando la edad mínima"
+      ],
+      "narracion": "Estas son las normas que aprenden los niños, y valen tal cual para casa. Muchas herramientas guardan lo que se escribe, así que nada de datos personales ni fotos de personas. Muchas tienen además una edad mínima: miradla juntos. Para los deberes, depende de las normas del colegio. Una buena regla es que la IA puede dar ideas, pero el trabajo lo hace él, con sus palabras, y si le ha ayudado, lo dice."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Para hacer hoy",
+      "pasos": [
+        "Haced juntos el detector de bulos: una lupa con las tres preguntas",
+        "Alrededor, tres pistas de engaño y «si dudo, pregunto a…»",
+        "La próxima vez que llegue algo sorprendente, usad la lupa juntos",
+        "Buscad dónde hay IA en casa y acordad vuestras normas"
+      ],
+      "narracion": "La tarea de hoy es una cartulina. Tu hijo dibuja una lupa grande con las tres preguntas dentro. Alrededor pone tres pistas de engaño, y debajo, el nombre de un adulto a quien preguntar si duda. Colgadla cerca del ordenador o de la tableta. Y un reto para los adultos: la próxima vez que llegue un mensaje sorprendente al grupo de la familia, mirad juntos la lupa antes de reenviarlo. Los niños aprenden mucho viéndonos hacerlo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Antes de compartir: quién lo dice, de cuándo es, quién más lo dice",
+        "Una imagen puede ser real, retocada, fuera de contexto o de IA",
+        "Con la cara de los demás no se hacen falsos",
+        "La IA se equivoca: datos fuera, se comprueba y se dice"
+      ],
+      "narracion": "Hoy has visto cómo pensar antes de creer: noticias, fotos y respuestas de una inteligencia artificial pasan por las mismas preguntas. En los recursos tienes dos fichas: una para investigar una noticia con la lupa y otra para hacer de verificadores con imágenes descritas con palabras. En la próxima clase hablaremos de algo más delicado: el respeto en la red y qué hacer ante el ciberacoso."
+    }
+  ]
+}

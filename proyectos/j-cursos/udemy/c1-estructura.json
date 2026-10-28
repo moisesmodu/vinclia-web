@@ -1,0 +1,940 @@
+{
+ "curso": "c1",
+ "ficha": {
+  "titulo": "Enseña a programar a tu hijo con Scratch: guía para padres",
+  "subtitulo": "Plan de 4 semanas para niños de 6 a 11 años: juegos sin pantalla, Scratch y su primer videojuego, sin saber programar",
+  "idioma": "Español (España)",
+  "nivel": "Principiante",
+  "categoria": "Desarrollo personal > Crianza y relaciones",
+  "temaPrincipal": "Programación para niños",
+  "precioLista": "44,99 €",
+  "gratis": false,
+  "objetivos": [
+   "Seguir un plan de 4 semanas, 20 minutos al día, para que tu hijo aprenda a programar en casa",
+   "Explicar algoritmos, bucles, condiciones, eventos, funciones y variables con juegos sin pantalla",
+   "Acompañar a tu hijo en Scratch hasta que cree su primer videojuego con marcador y vidas",
+   "Saber qué decir cuando se frustra, se atasca o no quiere seguir, sin hacerle tú el trabajo",
+   "Configurar cuentas, privacidad y tiempo de pantalla para que programe con seguridad",
+   "Elegir el siguiente paso según su edad: Scratch, robótica con micro:bit o una extraescolar"
+  ],
+  "requisitos": [
+   "No hace falta saber programar: el curso está pensado para madres y padres sin experiencia",
+   "Un ordenador o una tableta con navegador (Scratch es gratuito) y, si puede ser, una impresora para las fichas",
+   "20 minutos, tres días por semana, con tu hijo o tu hija de 6 a 11 años"
+  ],
+  "publico": [
+   "Madres y padres de niños de 6 a 11 años que quieren que aprendan a programar en casa",
+   "Familias que no saben programar y quieren acompañar a sus hijos con un plan claro",
+   "Abuelos, tíos y monitores de tiempo libre que buscan actividades de programación para hacer con niños",
+   "Docentes de primaria que buscan ideas de pensamiento computacional fáciles de llevar al aula"
+  ],
+  "palabrasClave": [
+   "programación para niños",
+   "enseñar a programar a niños",
+   "Scratch para padres",
+   "programar con niños en casa",
+   "pensamiento computacional",
+   "Scratch para niños",
+   "programación sin pantalla",
+   "robótica para niños",
+   "videojuegos con Scratch",
+   "extraescolar de programación"
+  ]
+ },
+ "secciones": [
+  {
+   "n": 1,
+   "titulo": "Empieza aquí",
+   "clases": [
+    {
+     "n": 1,
+     "id": "c1-01",
+     "titulo": "Bienvenida: vuestro primer juego de programación en 10 minutos",
+     "descripcion": "Jugáis en casa a «Haz de robot», sin pantalla y sin saber programar, y descubrís en diez minutos la idea que sostiene todo el curso: un robot hace exactamente lo que le dices.",
+     "video": "01 - Bienvenida vuestro primer juego de programación en 10 minutos.mp4",
+     "subtitulos": "01 - Bienvenida vuestro primer juego de programación en 10 minutos.vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "fichas-r1-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 2,
+     "id": "c1-02",
+     "titulo": "Por qué programar entre los 6 y los 11 años (y qué no esperar)",
+     "descripcion": "Entiendes qué es el pensamiento computacional, qué puede ganar tu hijo o tu hija programando en casa y qué expectativas conviene dejar fuera.",
+     "video": "02 - Por qué programar entre los 6 y los 11 años (y qué no esperar).mp4",
+     "subtitulos": "02 - Por qué programar entre los 6 y los 11 años (y qué no esperar).vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": null
+    },
+    {
+     "n": 3,
+     "id": "c1-03",
+     "titulo": "Cómo usar este curso: el plan de 4 semanas y los descargables",
+     "descripcion": "Conoces el plan de cuatro semanas, cómo repartir tres ratos de veinte minutos y qué encontrarás en los recursos descargables de cada clase.",
+     "video": "03 - Cómo usar este curso el plan de 4 semanas y los descargables.mp4",
+     "subtitulos": "03 - Cómo usar este curso el plan de 4 semanas y los descargables.vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "fichas-r1-1.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": null
+  },
+  {
+   "n": 2,
+   "titulo": "Vuestro papel como madre o padre",
+   "clases": [
+    {
+     "n": 4,
+     "id": "c1-04",
+     "titulo": "No hace falta saber programar: preguntar antes de responder",
+     "descripcion": "Aprendes a acompañar sin saber programar: pedir predicciones antes de ejecutar, hacer las preguntas adecuadas ante un error y dejar el ratón en sus manos.",
+     "video": "04 - No hace falta saber programar preguntar antes de responder.mp4",
+     "subtitulos": "04 - No hace falta saber programar preguntar antes de responder.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 5,
+     "id": "c1-05",
+     "titulo": "El rincón, el horario y las normas de pantalla",
+     "descripcion": "Preparas un rincón de programación en casa, eliges un horario que funcione y acordáis en familia unas normas de pantalla sencillas y para todos.",
+     "video": "05 - El rincón, el horario y las normas de pantalla.mp4",
+     "subtitulos": "05 - El rincón, el horario y las normas de pantalla.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-d3-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 6,
+     "id": "c1-06",
+     "titulo": "¿Por dónde empezamos según la edad? Bit (6-8) y Scratch (9-11)",
+     "descripcion": "Decides por dónde empezar según la edad y la experiencia de tu hijo o tu hija, y conoces las herramientas gratuitas para la parte de pantalla.",
+     "video": "06 - ¿Por dónde empezamos según la edad Bit (6-8) y Scratch (9-11).mp4",
+     "subtitulos": "06 - ¿Por dónde empezamos según la edad Bit (6-8) y Scratch (9-11).vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 2,
+    "titulo": "Cuestionario: vuestro papel como madre o padre",
+    "preguntas": [
+     {
+      "pregunta": "Tu hijo va a ejecutar un programa en el que Bit tiene que llegar a la bandera. Según el método PRIMM, ¿qué conviene hacer justo antes?",
+      "respuestas": [
+       "Comprobar tú el programa y corregirle los fallos",
+       "Pedirle que diga o señale dónde cree que terminará Bit",
+       "Dejar que ejecute muchas veces hasta que salga",
+       "Enseñarle la solución para que la compare"
+      ],
+      "correcta": 1,
+      "explicacion": "Predecir antes de ejecutar es el primer paso de PRIMM. Hace visible lo que piensa el niño y deja que sea el robot quien le muestre si acertaba."
+     },
+     {
+      "pregunta": "Bit choca contra una roca y tu hija quiere borrar todo el programa. ¿Qué pregunta le ayuda más?",
+      "respuestas": [
+       "¿Hasta qué bloque ha ido bien?",
+       "¿Quieres que lo haga yo?",
+       "¿Por qué no te fijas más?"
+      ],
+      "correcta": 0,
+      "explicacion": "Buscar el último bloque que funcionaba y cambiar solo lo que viene después es lo que hacen los programadores. Borrarlo todo hace perder lo que estaba bien."
+     },
+     {
+      "pregunta": "Según las guías de aula que sigue el curso, ¿cada cuánto conviene hacer una pausa activa de pie y lejos de la pantalla?",
+      "respuestas": [
+       "Cada cinco minutos",
+       "Después de quince o veinte minutos de pantalla",
+       "Solo al terminar la sesión, sea cual sea su duración",
+       "No hace falta si el niño está concentrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Después de quince o veinte minutos de ordenador, una pausa de pie: hacer de robot, unos giros o mirar algo lejos para descansar los ojos."
+     },
+     {
+      "pregunta": "¿Cuál de estos es un buen acuerdo familiar de pantallas?",
+      "respuestas": [
+       "Quien se pase, un mes sin tableta",
+       "Pantallas, las que quieras",
+       "Prohibido todo, para siempre",
+       "Mientras cenamos, ningún móvil, tampoco los adultos"
+      ],
+      "correcta": 3,
+      "explicacion": "Un buen acuerdo es concreto y vale para todo el mundo, también para los adultos. Un castigo o una prohibición total no son acuerdos."
+     },
+     {
+      "pregunta": "Tu hija de diez años pasa de Bit al escenario y pone «muévete 10», pero el actor casi no se mueve. ¿Por qué?",
+      "respuestas": [
+       "Porque el bloque está fuera del guion",
+       "Porque «muévete» solo funciona con números negativos",
+       "Porque el escenario se mide en puntos y una casilla de Bit son unos 50"
+      ],
+      "correcta": 2,
+      "explicacion": "El escenario mide 480 puntos de ancho. Diez puntos es un trocito; conviene que estime dónde está la marca y pruebe con 100 o 200."
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "titulo": "Semana 1: órdenes en orden",
+   "clases": [
+    {
+     "n": 7,
+     "id": "c1-07",
+     "titulo": "Algoritmos en casa: recetas, mochilas y dientes",
+     "descripcion": "Explicas qué es un algoritmo con tareas de casa, preparáis la cuadrícula del suelo y hacéis juntos la primera sesión con Bit, con sus errores típicos y sus soluciones.",
+     "video": "07 - Algoritmos en casa recetas, mochilas y dientes.mp4",
+     "subtitulos": "07 - Algoritmos en casa recetas, mochilas y dientes.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 8,
+     "id": "c1-08",
+     "titulo": "La derecha y la izquierda del robot",
+     "descripcion": "Ayudas a tu hijo o tu hija a superar la dificultad más habitual del curso: entender que la derecha y la izquierda dependen de hacia dónde mira el robot.",
+     "video": "08 - La derecha y la izquierda del robot.mp4",
+     "subtitulos": "08 - La derecha y la izquierda del robot.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-2.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 9,
+     "id": "c1-09",
+     "titulo": "Caza el error: depurar sin dramas",
+     "descripcion": "Conviertes los errores en un juego: tu hijo o tu hija aprende qué es un bug, los cuatro tipos más habituales y un método de cuatro pasos para arreglarlos sin borrarlo todo.",
+     "video": "09 - Caza el error depurar sin dramas.mp4",
+     "subtitulos": "09 - Caza el error depurar sin dramas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 10,
+     "id": "c1-10",
+     "titulo": "Proyecto de la semana: el repartidor de la isla",
+     "descripcion": "Cerráis la primera semana con un proyecto: tu hijo o tu hija descompone un reparto en trozos, hace un plan antes de programar y te lo presenta como un programador de verdad.",
+     "video": "10 - Proyecto de la semana el repartidor de la isla.mp4",
+     "subtitulos": "10 - Proyecto de la semana el repartidor de la isla.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-4.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 3,
+    "titulo": "Cuestionario: órdenes en orden",
+    "preguntas": [
+     {
+      "pregunta": "Bit mira hacia la derecha de la pantalla. Si le dices «Gira a la izquierda», ¿hacia dónde mirará?",
+      "respuestas": [
+       "Hacia abajo",
+       "Hacia la izquierda",
+       "Hacia arriba"
+      ],
+      "correcta": 2,
+      "explicacion": "Un giro es un cuarto de vuelta: de mirar a la derecha pasa a mirar arriba. Y no cambia de casilla: solo cambia hacia dónde mira."
+     },
+     {
+      "pregunta": "Bit mira hacia abajo, es decir, hacia nosotros. Si gira a su derecha, ¿hacia dónde mirará en la pantalla?",
+      "respuestas": [
+       "Hacia la izquierda de la pantalla",
+       "Hacia la derecha de la pantalla",
+       "Hacia arriba",
+       "Seguirá mirando abajo"
+      ],
+      "correcta": 0,
+      "explicacion": "Cuando Bit nos mira, su derecha queda a nuestra izquierda. El truco es ponerse en su lugar y mirar hacia donde mira él."
+     },
+     {
+      "pregunta": "Un programa hace chocar a Bit. ¿Qué es lo primero que conviene hacer?",
+      "respuestas": [
+       "Borrarlo todo y empezar de nuevo",
+       "Añadir bloques al azar hasta que funcione",
+       "Ejecutarlo paso a paso para ver dónde falla",
+       "Cambiar varios bloques a la vez"
+      ],
+      "correcta": 2,
+      "explicacion": "Paso a paso se ve qué hace cada bloque y dónde empieza el problema. Después se cambia solo el bloque equivocado y se vuelve a probar: un cambio, una prueba."
+     },
+     {
+      "pregunta": "Queríamos: adelante, adelante, gira a la derecha, adelante. Hemos escrito: adelante, gira a la derecha, adelante, adelante. ¿Qué tipo de bug es?",
+      "respuestas": [
+       "Falta un bloque",
+       "Bloques en mal orden",
+       "Sobra un bloque"
+      ],
+      "correcta": 1,
+      "explicacion": "Están los mismos bloques, pero el giro va antes de tiempo. Los cuatro bugs habituales son: falta un bloque, sobra, está equivocado o están en mal orden."
+     },
+     {
+      "pregunta": "En el proyecto del repartidor, ¿cuál de estas órdenes no mueve a Bit de casilla?",
+      "respuestas": [
+       "Adelante",
+       "Coge la caja",
+       "Ninguna: todas lo mueven"
+      ],
+      "correcta": 1,
+      "explicacion": "Coger y dejar son acciones: Bit se queda donde está. Por eso antes hay que llegar a la casilla de la caja con Adelante."
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "titulo": "Semana 2: repetir y encontrar patrones",
+   "clases": [
+    {
+     "n": 11,
+     "id": "c1-11",
+     "titulo": "Repetir sin cansarse: los bucles",
+     "descripcion": "Empiezas la semana 2 presentando el bucle en casa: un juego con el cuerpo, cómo contar bien las vueltas y qué preguntar cuando el número no cuadra.",
+     "video": "11 - Repetir sin cansarse los bucles.mp4",
+     "subtitulos": "11 - Repetir sin cansarse los bucles.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r2-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 12,
+     "id": "c1-12",
+     "titulo": "Encuentra el patrón",
+     "descripcion": "Ayudas a tu hijo o a tu hija a encontrar el trozo que se repite, en casa y en un programa, y a convertirlo en un bucle con varios bloques dentro.",
+     "video": "12 - Encuentra el patrón.mp4",
+     "subtitulos": "12 - Encuentra el patrón.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r2-2.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 13,
+     "id": "c1-13",
+     "titulo": "Dibujar con código: el lápiz de Bit",
+     "descripcion": "Conviertes los bucles y patrones de la semana en dibujos: el juego del robot dibujante en papel cuadriculado, las reglas del lápiz y cómo dibujar un cuadrado en Scratch.",
+     "video": "13 - Dibujar con código el lápiz de Bit.mp4",
+     "subtitulos": "13 - Dibujar con código el lápiz de Bit.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r2-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 14,
+     "id": "c1-14",
+     "titulo": "Proyecto de la semana: el mosaico",
+     "descripcion": "Cerráis la semana 2 con un proyecto que lo junta todo: planificar un mosaico fila a fila, programarlo con bucles, uno dentro de otro, y presentarlo en casa.",
+     "video": "14 - Proyecto de la semana el mosaico.mp4",
+     "subtitulos": "14 - Proyecto de la semana el mosaico.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r2-4.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 4,
+    "titulo": "Cuestionario: repetir y encontrar patrones",
+    "preguntas": [
+     {
+      "pregunta": "La bandera está a 4 saltos de Bit. ¿Qué número va en el bucle «Repite N veces: Adelante»?",
+      "respuestas": [
+       "5, contando la casilla donde está Bit",
+       "4, contando solo los saltos",
+       "3, porque la última casilla no cuenta"
+      ],
+      "correcta": 1,
+      "explicacion": "Se cuentan los saltos, no la casilla donde ya está Bit. El truco: dedo sobre Bit y decir «uno» solo cuando el dedo salta a la casilla siguiente."
+     },
+     {
+      "pregunta": "Este programa hace una escalera: Adelante, Gira a la derecha, Adelante, Gira a la izquierda, y otra vez lo mismo. ¿Cuál es el bucle bueno?",
+      "respuestas": [
+       "Repite 4 veces: Adelante, Gira a la derecha",
+       "Repite 4 veces: Adelante",
+       "Repite 2 veces: Adelante, Gira a la derecha, Adelante, Gira a la izquierda"
+      ],
+      "correcta": 2,
+      "explicacion": "El trozo entero tiene 4 bloques y sale 2 veces. Con solo «Adelante, Gira a la derecha», Bit no vuelve a mirar como al principio y choca en la segunda vuelta."
+     },
+     {
+      "pregunta": "Bit lleva el lápiz puesto y hace: Adelante, Adelante, Gira a la derecha, Adelante. ¿Cuántas casillas pinta?",
+      "respuestas": [
+       "3",
+       "4",
+       "2"
+      ],
+      "correcta": 0,
+      "explicacion": "Solo pintan los Adelante, porque el lápiz pinta las casillas a las que entra Bit. Ni el giro ni la casilla de salida se pintan."
+     },
+     {
+      "pregunta": "Tu hijo pone en el mosaico «Pinta, Pinta, Pinta» y no sale la fila. ¿Qué está pasando?",
+      "respuestas": [
+       "El color elegido no es el bueno",
+       "Falta un bucle grande",
+       "Pinta no mueve a Bit: pinta tres veces la misma casilla"
+      ],
+      "correcta": 2,
+      "explicacion": "El bloque Pinta pinta la casilla donde está Bit, sin moverlo. Para hacer una fila hay que alternar: Adelante, Pinta, Adelante, Pinta."
+     },
+     {
+      "pregunta": "Tu hija empieza el mosaico poniendo bloques sin plan y se pierde. ¿Qué es lo más útil?",
+      "respuestas": [
+       "Hacerle tú la primera fila",
+       "Pedirle que cuente las filas y busque las iguales antes de programar",
+       "Decirle que lo deje para otro día",
+       "Darle el programa completo"
+      ],
+      "correcta": 1,
+      "explicacion": "Primero el plan, después los bloques: contar las filas, buscar las iguales y programar solo la primera fila antes de seguir."
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "titulo": "Semana 3: el robot decide",
+   "clases": [
+    {
+     "n": 15,
+     "id": "c1-15",
+     "titulo": "Eventos: cuando pulso el botón…",
+     "descripcion": "Empiezas la semana 3 con secuencias de luces y con los eventos: juegos de semáforo y de robot teledirigido en casa, la diferencia entre «al empezar» y «al pulsar» y su equivalente en Scratch.",
+     "video": "15 - Eventos cuando pulso el botón….mp4",
+     "subtitulos": "15 - Eventos cuando pulso el botón….vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r3-1.pdf",
+      "fichas-r3-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 16,
+     "id": "c1-16",
+     "titulo": "Si hay una pared… las condiciones",
+     "descripcion": "Presentas sensores y condiciones en casa: el robot con sensor entre cojines, el «si» dentro del bucle, el «si… si no…» y diagramas de decisión para la nevera.",
+     "video": "16 - Si hay una pared… las condiciones.mp4",
+     "subtitulos": "16 - Si hay una pared… las condiciones.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r4-1.pdf",
+      "fichas-r4-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 17,
+     "id": "c1-17",
+     "titulo": "Funciones: ponle nombre a un grupo de órdenes",
+     "descripcion": "Explicas las funciones con órdenes de casa como «pon la mesa», jugáis al baile con nombre y aprendéis a reutilizar: escribirlo una vez, usarlo muchas, también en Scratch.",
+     "video": "17 - Funciones ponle nombre a un grupo de órdenes.mp4",
+     "subtitulos": "17 - Funciones ponle nombre a un grupo de órdenes.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r5-1.pdf",
+      "fichas-r5-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 18,
+     "id": "c1-18",
+     "titulo": "Contar, recordar y repetir hasta que…",
+     "descripcion": "Cerráis la semana 3 con variables y bucles con condición: la caja de los números, el plato de macarrones, el bucle infinito y el proyecto del tesoro de la cueva.",
+     "video": "18 - Contar, recordar y repetir hasta que….mp4",
+     "subtitulos": "18 - Contar, recordar y repetir hasta que….vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r6-1.pdf",
+      "fichas-r7-1.pdf",
+      "fichas-r7-4.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 5,
+    "titulo": "Cuestionario: el robot decide",
+    "preguntas": [
+     {
+      "pregunta": "¿Cuándo se hacen los bloques que están debajo de «Al pulsar A»?",
+      "respuestas": [
+       "Una sola vez, al tocar Ejecuta",
+       "Cada vez que alguien pulsa el botón A",
+       "Cuando se pulsa cualquier botón"
+      ],
+      "correcta": 1,
+      "explicacion": "Pulsar un botón es un evento: pasa algo y el programa reacciona. Lo de «Al empezar» se hace una vez; lo de un botón, cada vez que se pulsa ese botón."
+     },
+     {
+      "pregunta": "Si llueve, cojo el paraguas; si no, cojo la gorra. Hoy hace sol. ¿Qué cojo?",
+      "respuestas": [
+       "El paraguas",
+       "Las dos cosas",
+       "La gorra"
+      ],
+      "correcta": 2,
+      "explicacion": "No llueve, así que se hace la rama del «si no». En un «Si… si no…» siempre se hace una sola rama, nunca las dos."
+     },
+     {
+      "pregunta": "¿Por qué ponemos el bloque «Si hay un obstáculo delante» dentro del «Repite»?",
+      "respuestas": [
+       "Para que el sensor mire antes de cada paso",
+       "Para que Bit vaya más deprisa",
+       "Para que el programa sea más largo"
+      ],
+      "correcta": 0,
+      "explicacion": "Fuera del bucle, Bit solo mira una vez, al principio. Dentro, mira en cada vuelta, y así el mismo programa funciona aunque las rocas cambien de sitio."
+     },
+     {
+      "pregunta": "Tu hijo escribe los bloques dentro de una función, pero el programa está vacío. ¿Qué hace Bit?",
+      "respuestas": [
+       "Hace la función una vez, al principio",
+       "La repite sin parar",
+       "Nada: la función solo se hace cuando el programa la llama"
+      ],
+      "correcta": 2,
+      "explicacion": "La función espera en la libreta hasta que el programa pone su bloque lila. Escribir una función no es llamarla."
+     },
+     {
+      "pregunta": "El contador vale 4. Bit hace «Pon el contador a 1». ¿Cuánto vale ahora?",
+      "respuestas": [
+       "5",
+       "1",
+       "4",
+       "0"
+      ],
+      "correcta": 1,
+      "explicacion": "Poner borra lo que había y deja el número nuevo. «Suma 1» lo habría dejado en 5."
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "titulo": "Semana 4: su primer videojuego",
+   "clases": [
+    {
+     "n": 19,
+     "id": "c1-19",
+     "titulo": "Del robot al escenario: personajes y diálogos",
+     "descripcion": "Empiezas la semana del videojuego pasando de Bit al escenario de Scratch: puntos en lugar de casillas, varios personajes a la vez, grados y diálogos por turnos. Sabrás qué bloque usar, qué preguntar y qué errores esperar.",
+     "video": "19 - Del robot al escenario personajes y diálogos.mp4",
+     "subtitulos": "19 - Del robot al escenario personajes y diálogos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g1-1.pdf",
+      "fichas-g1-2.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 20,
+     "id": "c1-20",
+     "titulo": "Animación y bucles para siempre",
+     "descripcion": "Tu hijo o tu hija descubre el secreto de los dibujos animados (disfraces y esperas) y el bucle «por siempre», y programa en Scratch un pez que nada sin parar. Sabrás cómo calcular la velocidad juntos y qué errores esperar.",
+     "video": "20 - Animación y bucles para siempre.mp4",
+     "subtitulos": "20 - Animación y bucles para siempre.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g2-1.pdf",
+      "fichas-g2-2.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 21,
+     "id": "c1-21",
+     "titulo": "Interacción: teclas, clics y mensajes",
+     "descripcion": "La animación se convierte en juego: tu hijo o tu hija programa personajes que responden a un clic, se mueven con las flechas y conversan por turnos con mensajes. Sabrás qué bloques de Scratch usar y cómo resolver los errores más habituales.",
+     "video": "21 - Interacción teclas, clics y mensajes.mp4",
+     "subtitulos": "21 - Interacción teclas, clics y mensajes.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g3-1.pdf",
+      "fichas-g3-2.pdf",
+      "fichas-g3-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 22,
+     "id": "c1-22",
+     "titulo": "Coordenadas, choques y condiciones",
+     "descripcion": "El escenario se convierte en un mapa con coordenadas y el juego gana reglas: choques y comparaciones con números. Tu hijo o tu hija programa en Scratch una manzana que cae y sabe cuándo la han atrapado.",
+     "video": "22 - Coordenadas, choques y condiciones.mp4",
+     "subtitulos": "22 - Coordenadas, choques y condiciones.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g4-1.pdf",
+      "fichas-g5-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 23,
+     "id": "c1-23",
+     "titulo": "Marcador, vidas y su juego: atrapa la fruta",
+     "descripcion": "Tu hijo o tu hija añade variables al juego (puntos y vidas), programa el fin de partida y construye «Atrapa la fruta» con un plan en papel y por trozos. Tú haces de tester y le ayudas a mejorarlo.",
+     "video": "23 - Marcador, vidas y su juego atrapa la fruta.mp4",
+     "subtitulos": "23 - Marcador, vidas y su juego atrapa la fruta.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g6-1.pdf",
+      "fichas-g6-2.pdf",
+      "fichas-g5-4.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 24,
+     "id": "c1-24",
+     "titulo": "La presentación final: feria en casa y diploma",
+     "descripcion": "Cierras las cuatro semanas con una feria en casa: tu hijo o tu hija prepara su juego para el público, lo presenta en dos minutos, recibe comentarios útiles y se lleva su diploma.",
+     "video": "24 - La presentación final feria en casa y diploma.mp4",
+     "subtitulos": "24 - La presentación final feria en casa y diploma.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r8-3.pdf",
+      "fichas-r8-4.pdf",
+      "fichas-g8-4.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 6,
+    "titulo": "Cuestionario: su primer videojuego",
+    "preguntas": [
+     {
+      "pregunta": "En Scratch, el pez repite «por siempre: mover 3 pasos» y tu hija lo quiere el doble de rápido. ¿Qué le sugieres que cambie?",
+      "respuestas": [
+       "Añadir «esperar 1 segundos» dentro del bucle",
+       "Poner «mover 6 pasos»",
+       "Poner otro «por siempre» debajo",
+       "Quitar el «por siempre»"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada vuelta del bucle dura un fotograma y hay 30 por segundo: 3 × 30 = 90 puntos por segundo; 6 × 30 = 180. Una espera lo haría más lento, y un bucle debajo de un «por siempre» no se ejecuta nunca."
+     },
+     {
+      "pregunta": "Una manzana baja de 7 en 7 desde y = 150. ¿Qué condición detecta con seguridad que ha llegado al suelo?",
+      "respuestas": [
+       "si posición en y > 150",
+       "si posición en y = -150",
+       "si posición en y < -150"
+      ],
+      "correcta": 2,
+      "explicacion": "De 7 en 7, la manzana pasa de -144 a -151 y nunca vale exactamente -150. «Menor que -150» es cierto en cualquier punto de debajo, así que no se le escapa."
+     },
+     {
+      "pregunta": "Dos personajes conversan con mensajes, pero los bocadillos se pisan y hablan a la vez. ¿Cuál es la causa más probable?",
+      "respuestas": [
+       "El «enviar mensaje» está antes del «decir», o el «decir» no tiene segundos",
+       "Los mensajes solo funcionan con la tecla espacio",
+       "Faltan más personajes en el escenario",
+       "El escenario es demasiado pequeño"
+      ],
+      "correcta": 0,
+      "explicacion": "El mensaje pasa el turno: tiene que enviarse cuando la frase ha terminado. Por eso va después de «decir… durante 2 segundos»."
+     },
+     {
+      "pregunta": "En el juego, la nave pierde las 3 vidas en un solo choque con el meteorito. ¿Qué le falta al guion?",
+      "respuestas": [
+       "Un «fijar vidas a 3» dentro del «por siempre»",
+       "Un «esperar 1 segundos» justo después de restar la vida",
+       "Un segundo «por siempre»"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras el meteorito atraviesa la nave, la toca durante muchos fotogramas y en cada vuelta resta una vida. Con una espera después del choque, cada choque cuenta una sola vez."
+     },
+     {
+      "pregunta": "En la feria en casa, alguien de la familia prueba el juego y se atasca. ¿Qué hace el autor o la autora?",
+      "respuestas": [
+       "Le coge el ratón y lo resuelve",
+       "Le explica la solución entera",
+       "Para la partida y empieza otra",
+       "Mira sin tocar y, como mucho, da una sola pista"
+      ],
+      "correcta": 3,
+      "explicacion": "Quien no sabe la solución ve lo que el autor ya no ve. Por eso el autor solo mira, da una pista si hace falta y apunta dónde se atasca: es lo que necesita para mejorar el juego."
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "titulo": "Cuando el niño se frustra",
+   "clases": [
+    {
+     "n": 25,
+     "id": "c1-25",
+     "titulo": "Por qué se frustra (y por qué es buena señal)",
+     "descripcion": "Entiende de dónde sale la frustración al programar, reconoce sus señales y aprende qué preguntar en cada caso para que el error se convierta en un reto y no en un drama.",
+     "video": "25 - Por qué se frustra (y por qué es buena señal).mp4",
+     "subtitulos": "25 - Por qué se frustra (y por qué es buena señal).vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r1-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 26,
+     "id": "c1-26",
+     "titulo": "Cinco frases que ayudan y tres que no",
+     "descripcion": "Cinco frases concretas, sacadas de las guías de aula de Numi Tech, para acompañar a tu hijo cuando el programa falla, y tres frases habituales que conviene cambiar.",
+     "video": "26 - Cinco frases que ayudan y tres que no.mp4",
+     "subtitulos": "26 - Cinco frases que ayudan y tres que no.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r5-3.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 27,
+     "id": "c1-27",
+     "titulo": "Cuando no quiere seguir: motivación sin premios ni castigos",
+     "descripcion": "Averigua por qué tu hijo no quiere seguir y recupera las ganas con tres palancas: una dificultad en su punto, la posibilidad de elegir y alguien para quien crear.",
+     "video": "27 - Cuando no quiere seguir motivación sin premios ni castigos.mp4",
+     "subtitulos": "27 - Cuando no quiere seguir motivación sin premios ni castigos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-r8-1.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 7,
+    "titulo": "Cuestionario: cuando el niño se frustra",
+    "preguntas": [
+     {
+      "pregunta": "Tu hija dice «lo borro todo y empiezo otra vez». Según la guía de Tech Robot, ¿qué conviene preguntarle?",
+      "respuestas": [
+       "¿Hasta qué bloque ha ido bien?",
+       "¿Quieres que lo haga yo?",
+       "¿Por qué no te concentras?",
+       "¿Cuánto tardó tu hermano?"
+      ],
+      "correcta": 0,
+      "explicacion": "Preguntar hasta dónde ha ido bien reduce el problema a un trozo pequeño y salva lo que ya funcionaba. Borrarlo todo hace perder lo bueno y, a menudo, repetir el mismo error."
+     },
+     {
+      "pregunta": "¿Cuáles son los cuatro tipos de bug más habituales que enseña la sesión «Caza el error»?",
+      "respuestas": [
+       "Errores del ratón, de la pantalla, del teclado y de internet",
+       "Falta un bloque, sobra un bloque, un bloque equivocado o bloques en mal orden",
+       "Programas lentos, rápidos, largos o cortos"
+      ],
+      "correcta": 1,
+      "explicacion": "Casi todos los errores son de uno de estos cuatro tipos. Ponerles nombre ayuda al niño a ver el error como un enigma con pocas opciones y no como un fracaso."
+     },
+     {
+      "pregunta": "¿Qué propone la norma «un cambio, una prueba»?",
+      "respuestas": [
+       "Probar el programa una sola vez al día",
+       "Cambiar todos los bloques y probar al final",
+       "Cambiar un solo bloque y ejecutar antes de tocar otro",
+       "Que un adulto pruebe cada cambio"
+      ],
+      "correcta": 2,
+      "explicacion": "Si cambia varios bloques a la vez, ya no sabe cuál era el bueno. Cambiando uno cada vez y probando, ve exactamente qué efecto tiene cada cambio."
+     },
+     {
+      "pregunta": "Tu hijo quiere un videojuego con diez niveles y veinte personajes, y no sabe por dónde empezar. ¿Qué propone la guía de Tech Creadores?",
+      "respuestas": [
+       "Prohibirle los proyectos grandes",
+       "Programar todas las reglas y probarlo al final",
+       "Ofrecerle un premio si lo termina",
+       "Empezar por una versión 1 pequeña y añadir una regla cada vez"
+      ],
+      "correcta": 3,
+      "explicacion": "Se felicita la idea y se buscan las tres reglas mínimas para que ya sea un juego. La versión 1 hace una sola cosa bien; después se añade una regla, se prueba y se sigue."
+     },
+     {
+      "pregunta": "Según la guía de Tech Robot, ¿cómo es un buen reto?",
+      "respuestas": [
+       "Hace pensar, pero tiene solución",
+       "Cuanto más difícil, mejor",
+       "Se resuelve con uno o dos bloques"
+      ],
+      "correcta": 0,
+      "explicacion": "Si es demasiado fácil, aburre; si es imposible, da rabia. Un reto en su punto mantiene las ganas sin necesidad de premios ni castigos."
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "titulo": "Seguridad en internet y bienestar digital",
+   "clases": [
+    {
+     "n": 28,
+     "id": "c1-28",
+     "titulo": "Cuentas, edades mínimas y privacidad",
+     "descripcion": "Qué edad hace falta para cada cosa, qué herramientas del curso funcionan sin cuenta, cómo abrir una cuenta de Scratch con seguridad y cómo explicar a tu hijo las contraseñas y los datos personales.",
+     "video": "28 - Cuentas, edades mínimas y privacidad.mp4",
+     "subtitulos": "28 - Cuentas, edades mínimas y privacidad.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-d1-2.pdf",
+      "fichas-d1-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 29,
+     "id": "c1-29",
+     "titulo": "Compartir proyectos y hablar con desconocidos",
+     "descripcion": "Qué revisar antes de publicar un proyecto, cómo reconocer las señales de alarma de un desconocido, qué hacer ante el ciberacoso o un mensaje trampa y cómo conseguir que tu hijo te lo cuente.",
+     "video": "29 - Compartir proyectos y hablar con desconocidos.mp4",
+     "subtitulos": "29 - Compartir proyectos y hablar con desconocidos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-d2-3.pdf",
+      "fichas-d4-1.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 30,
+     "id": "c1-30",
+     "titulo": "Pantallas, videojuegos y el plan digital de la familia",
+     "descripcion": "Por qué cuesta tanto parar, cómo cuidar el sueño, qué mirar antes de instalar un videojuego, cómo funcionan las compras dentro del juego y cómo hacer un pacto digital para toda la familia.",
+     "video": "30 - Pantallas, videojuegos y el plan digital de la familia.mp4",
+     "subtitulos": "30 - Pantallas, videojuegos y el plan digital de la familia.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-d3-4.pdf",
+      "fichas-d3-1.pdf",
+      "fichas-d3-2.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 8,
+    "titulo": "Cuestionario: seguridad y bienestar digital",
+    "preguntas": [
+     {
+      "pregunta": "En España, ¿a partir de qué edad puede un menor consentir por sí mismo el tratamiento de sus datos personales?",
+      "respuestas": [
+       "12 años",
+       "14 años",
+       "16 años",
+       "18 años"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley española de protección de datos fija la edad en 14 años. Por debajo, hace falta el consentimiento de los padres. Además, la mayoría de redes sociales piden 13 años o más."
+     },
+     {
+      "pregunta": "Alguien de una partida en línea, a quien no conocéis en persona, le pide a tu hijo una foto y que no se lo cuente a nadie. ¿Qué debe hacer?",
+      "respuestas": [
+       "Enviarla si le parece simpático",
+       "Responderle con un insulto",
+       "No contestar, bloquearlo y contárselo a un adulto de confianza"
+      ],
+      "correcta": 2,
+      "explicacion": "Pedir fotos o secretos es una señal de alarma. Si ni él ni su familia lo conocen en persona, es un desconocido aunque sea simpático. No es culpa suya: lo importante es contarlo."
+     },
+     {
+      "pregunta": "¿Para qué sirve el teléfono 017?",
+      "respuestas": [
+       "Ayuda gratuita en ciberseguridad, del INCIBE",
+       "Emergencias con un peligro inmediato",
+       "Ayuda a la infancia y la adolescencia",
+       "Información sobre la etiqueta PEGI"
+      ],
+      "correcta": 0,
+      "explicacion": "El 017 ayuda con problemas de internet, también a familias. El 116 111 es el teléfono de ayuda a la infancia y la adolescencia, y el 112, el de emergencias."
+     },
+     {
+      "pregunta": "¿Cuál de estos acuerdos del pacto digital de casa está mejor planteado?",
+      "respuestas": [
+       "Menos pantallas",
+       "Nunca más videojuegos",
+       "Pantallas solo cuando se porte bien",
+       "La tableta duerme en la cocina"
+      ],
+      "correcta": 3,
+      "explicacion": "Un buen acuerdo es concreto (qué, cuándo y dónde), en positivo, posible de cumplir y válido para toda la familia, también para los adultos."
+     },
+     {
+      "pregunta": "Antes de compartir un proyecto, ¿qué tres preguntas propone el semáforo de Tech Digital?",
+      "respuestas": [
+       "¿Es amable? ¿Es verdad? ¿Me importaría que lo viera todo el mundo?",
+       "¿Es largo? ¿Es bonito? ¿Tiene música?",
+       "¿Cuántos «me gusta» tendrá? ¿Lo verán mis amigos? ¿Es gracioso?"
+      ],
+      "correcta": 0,
+      "explicacion": "Si las tres respuestas son que sí, adelante. Si hay dudas, no se publica o se pregunta a un adulto. Lo publicado se puede copiar aunque después se borre."
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "titulo": "Y ahora, ¿qué?",
+   "clases": [
+    {
+     "n": 31,
+     "id": "c1-31",
+     "titulo": "La ruta de los próximos 6 meses",
+     "descripcion": "Un plan para seguir después de las cuatro semanas: Tech Creadores completo, después Tech Digital y, en el sexto mes, robótica con micro:bit y Maqueen, con alternativas gratuitas y un ritmo que se sostiene.",
+     "video": "31 - La ruta de los próximos 6 meses.mp4",
+     "subtitulos": "31 - La ruta de los próximos 6 meses.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-g8-4.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 32,
+     "id": "c1-32",
+     "titulo": "Clase extra: Numi Tech, cuadernos y más recursos",
+     "descripcion": "Repaso de lo aprendido, el siguiente paso natural y dónde encontrar la app Numi Tech, los cuadernos de actividades sin pantalla y los cupones para los otros cursos de esta serie.",
+     "video": "32 - Clase extra Numi Tech, cuadernos y más recursos.mp4",
+     "subtitulos": "32 - Clase extra Numi Tech, cuadernos y más recursos.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    }
+   ],
+   "cuestionario": null
+  }
+ ],
+ "clases": 32,
+ "duracionMin": 0.0
+}

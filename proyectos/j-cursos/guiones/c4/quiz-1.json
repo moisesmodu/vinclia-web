@@ -1,0 +1,59 @@
+{
+  "seccion": 1,
+  "titulo": "Cuestionario: bienestar digital en familia",
+  "preguntas": [
+    {
+      "pregunta": "Tu hijo quiere una contraseña nueva para la plataforma del colegio. ¿Cuál es la mejor opción?",
+      "respuestas": [
+        "El nombre del perro y el año en que nació",
+        "Una palabra corta con símbolos, como G4t!",
+        "Cuatro palabras sin relación que formen una escena absurda",
+        "La misma contraseña que usa la familia para todo"
+      ],
+      "correcta": 2,
+      "explicacion": "Una contraseña fuerte es larga, variada y sin datos personales. Una frase de cuatro palabras sin relación es difícil de adivinar y fácil de recordar. La longitud cuenta más que los símbolos."
+    },
+    {
+      "pregunta": "Tu hija de 10 años quiere abrirse una red social porque «la tiene todo el mundo». ¿Qué dato le puedes explicar?",
+      "respuestas": [
+        "En España hacen falta 14 años para consentir el uso de sus datos sin los padres",
+        "Basta con poner que tiene 14 años al registrarse",
+        "No hay ninguna edad mínima para las redes sociales"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley española de protección de datos fija los 14 años para consentir sin los padres, y la mayoría de redes piden en sus normas al menos 13. Las edades mínimas están para proteger."
+    },
+    {
+      "pregunta": "Llega al grupo de la familia una foto sorprendente de un puente roto «ahora mismo». ¿Qué es lo primero que conviene hacer?",
+      "respuestas": [
+        "Reenviarla enseguida para avisar a todo el mundo",
+        "Parar y mirar quién la publica, de cuándo es y quién más lo cuenta",
+        "Creerla si tiene muchos me gusta",
+        "Mirar solo si tiene la etiqueta «Hecho con IA»"
+      ],
+      "correcta": 1,
+      "explicacion": "La prueba más fuerte es la fuente y el contexto. Una foto real puede ser de otro lugar o de otro año, y que no lleve etiqueta de IA no quiere decir que sea real. Si no está claro, no se comparte."
+    },
+    {
+      "pregunta": "Tu hijo te cuenta que en el chat de clase llevan semanas burlándose de él. ¿Cuál es la mejor primera respuesta?",
+      "respuestas": [
+        "Quitarle el móvil para que deje de verlo",
+        "Decirle que lo ignore, que ya pasará",
+        "Escribir enseguida a los compañeros implicados",
+        "Agradecerle que lo cuente, decirle que no es culpa suya y buscar la solución juntos"
+      ],
+      "correcta": 3,
+      "explicacion": "Nunca es culpa de quien lo sufre. Si contarlo tiene castigo, la próxima vez callará. Guardad las pruebas, hablad con la tutoría y recordad el 116 111, gratuito y confidencial."
+    },
+    {
+      "pregunta": "Un mensaje dice ser de un amigo con número nuevo y pide el código que acaba de llegar al móvil. ¿Qué haces?",
+      "respuestas": [
+        "Responder al mismo número para preguntar si de verdad es él",
+        "No dar el código y comprobarlo por otro camino, como llamar a su número de siempre",
+        "Darle el código si el mensaje parece urgente"
+      ],
+      "correcta": 1,
+      "explicacion": "El código de verificación no se da nunca. Comprobar por otro camino quiere decir no usar nada del mensaje: ni el enlace, ni el número, ni responder. Si ya habéis caído, contadlo pronto y cambiad la contraseña."
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "c2-33",
+  "titulo": "Diseña la misión: tu proyecto final empieza en papel",
+  "descripcion": "Aprende qué hace buena una misión de robot, dibújala a escala en una cuadrícula de 10 centímetros por casilla y prepárala para programarla y probarla con el Maqueen.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k8-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Diseña la misión",
+      "subtitulo": "Empieza el proyecto final: tu misión para la Muestra de Robots",
+      "narracion": "Empieza la última unidad del curso. El Museo de Ciencias prepara la Muestra de Robots, y te ha invitado como ingeniero o ingeniera. Cada participante lleva una misión inventada por él o por ella. En cuatro clases la diseñarás, la programarás, la pasarás al Maqueen de verdad y la presentarás. Hoy, el diseño. Antes de seguir, piensa: ¿qué misión te gustaría ver? ¿Un robot que rescata una lata, que sigue un circuito, que esquiva cajas? Apunta tu idea."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Una misión bien pensada",
+      "puntos": [
+        "Un objetivo claro: llegar a la meta, llevar una lata…",
+        "Obstáculos que obligan a pensar",
+        "Un sensor que el robot necesita",
+        "Una manera de comprobar si se ha cumplido"
+      ],
+      "narracion": "Una misión bien pensada tiene cuatro partes. Un objetivo claro, como llegar a la meta o llevar una lata. Obstáculos que obligan a pensar. Un sensor que el robot necesita de verdad. Y una manera de comprobar si se ha cumplido. Piensa en el público de la Muestra: una misión clara se entiende de un vistazo. Si alguien la mira y sabe enseguida qué tiene que pasar, vas por buen camino."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-1:4",
+      "narracion": "Esta misión es llevar la lata a la meta sin chocar. En el editor de Numi Tech eliges las comprobaciones. Hay cinco: llegar a la meta y pararse, no chocar, llevar la lata, tardar menos de 20 segundos o seguir la cinta. La app las revisa cada vez, como un juez que no se distrae nunca. Predice: ¿qué comprobaciones pondrías aquí? Mira la demo. Son dos: la lata en la meta y ningún choque. Las comprobaciones tienen que decir exactamente lo que pide la misión."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-1:5",
+      "narracion": "Si una misión se resuelve solo con tiempo, como adelante 3 segundos, el robot va a ciegas. Si la caja puede cambiar de sitio, el robot tiene que sentir. Predice: este robot usa los ultrasonidos. Si movemos la vitrina, ¿dónde se parará? Mira. Se para solo a 10 centímetros de la vitrina, esté donde esté. Por eso las mejores misiones necesitan un sensor: así el robot decide solo. Y, además, funcionan mejor en el robot de verdad, como verás en dos clases."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-1:6",
+      "narracion": "Y ahora, lo contrario. Aquí la meta está muy cerca del robot. Predice: ¿cuánto durará la misión? Mira. Se termina en un segundo, y aburre. En el otro extremo, una meta encerrada entre cajas sería imposible. La buena misión está en su punto: hace pensar, pero tiene solución. Es un error típico creer que cuantas más cajas y paredes, mejor es la misión. Si se puede hacer con adelante 2 segundos y para, le falta un obstáculo o un sensor."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "¿Cuál está mejor pensada?",
+      "columnas": ["Misión", "Veredicto"],
+      "filas": [
+        ["Meta a 10 cm, sin nada en medio", "Demasiado fácil"],
+        ["Cinta con curvas hasta una caja", "En su punto: dos sensores"],
+        ["Meta dentro de un cuadrado de cajas", "Imposible"]
+      ],
+      "narracion": "Tres ingenieros han diseñado tres misiones. En la primera, la meta está a 10 centímetros del robot, sin nada en medio. En la segunda, una cinta con curvas lleva hasta una caja: el robot tiene que seguirla y pararse delante. En la tercera, la meta está dentro de un cuadrado de cajas cerrado. ¿Cuál está mejor pensada? La segunda. Tiene objetivo, obstáculos, dos sensores, el de línea y los ultrasonidos, y se puede comprobar. La primera es demasiado fácil, y la tercera, imposible."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El boceto a escala",
+      "puntos": [
+        "Pista de 120 por 80 cm: cuadrícula de 12 por 8 casillas",
+        "Cada casilla, 10 por 10 cm",
+        "Robot con una flecha hacia donde mira",
+        "Pasillos de al menos una casilla libre, mejor dos",
+        "Meta de 2 por 2 casillas"
+      ],
+      "narracion": "Antes de construir, se dibuja un boceto. La pista mide 120 por 80 centímetros. En una cuadrícula de 12 por 8 casillas, cada casilla son 10 centímetros. La tienes en la ficha de esta clase. Dibuja las cajas, la cinta, las latas, la meta y el robot, con una flecha hacia donde mira. El robot mide unos 8 centímetros y medio: cabe justo en una casilla. Deja pasillos de al menos una casilla libre, mejor dos. Como está a escala, después la podrás construir en el suelo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo se diseña una misión",
+      "pasos": [
+        "Pienso la idea: ¿qué tiene que conseguir y qué sensor usará?",
+        "Dibujo la pista en la cuadrícula de papel",
+        "La paso al editor, elijo las comprobaciones y le pongo nombre",
+        "Compruebo que se puede hacer y, si hace falta, la mejoro"
+      ],
+      "narracion": "Pensar, dibujar, construir y comprobar: es el camino de cualquier proyecto de ingeniería. Debajo del dibujo, escribe el objetivo, el sensor que hará falta y las comprobaciones. Después, intercambia la hoja con un compañero o con el adulto que te acompaña. La otra persona hace de robot con el dedo sobre la hoja. ¿Encuentra un camino? ¿Cabe? ¿Se termina demasiado rápido? Que te devuelva la hoja con un consejo. Si das el curso, recoge las hojas: se usan en las tres clases siguientes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Calentamos motores y pasamos al editor",
+      "puntos": [
+        "Motores y tiempo: adelante, giro de 90 grados y adelante",
+        "Línea: sigue la cinta con los sensores L y R",
+        "Empujar: rescata la lata por un paso estrecho",
+        "Extra: párate a entre 4 y 12 cm de la vitrina",
+        "Editor: meta y robot, después cajas, cinta y comprobaciones"
+      ],
+      "narracion": "En la sesión de Numi Tech hay misiones de calentamiento que repasan el curso: motores y tiempo, línea y empujar. Son para recordar, no para examinar. Si te atascas más de 3 minutos en una, pasa a la siguiente. Después, el editor de misiones. Primero la meta y el robot. Para girar el robot, tócalo dos veces. La cinta se hace tocando casillas en orden. Al final, las comprobaciones y el nombre. Sin la app, tu hoja de papel es el diseño y la construirás en el suelo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La vitrina de verdad",
+      "pasos": [
+        "Botón MakeCode, cable USB y Descargar, con el robot apagado",
+        "Caja de zapatos en la marca de 40 cm",
+        "Cable fuera, robot en el suelo y encendido",
+        "¿A cuántos centímetros de la caja se para?",
+        "Repetid con la caja a 60 y a 80 cm"
+      ],
+      "narracion": "Con el robot de verdad, probad la misión de la vitrina. El programa es: para siempre, si la distancia es menor que 10, para; si no, adelante a 150. Pasadlo con el botón MakeCode, o montadlo en MakeCode con la extensión maqueen. Descargad con el robot apagado. Poned una caja de zapatos en la marca de 40 centímetros y medid a cuántos centímetros se para. Repetid a 60 y a 80. Si se para un poco más cerca o más lejos que en el simulador, es normal. Apuntad la diferencia."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Misión imposible o demasiado fácil", "Que alguien haga de robot con el dedo"],
+        ["Cajas pegadas: el robot no cabe", "Pasillo de una casilla, mejor dos"],
+        ["Comprobaciones que no encajan", "Lee el objetivo y las comprobaciones"],
+        ["Muchas esquinas de 90 grados seguidas", "Propón alguna diagonal"],
+        ["En el editor, el robot mira mal", "Dibuja la flecha y gíralo"]
+      ],
+      "narracion": "Los errores típicos al diseñar. Una misión imposible o demasiado fácil se descubre enseguida si alguien hace de robot con el dedo. Si pones cajas en casillas pegadas, el robot no cabe. Si eliges seguir la cinta sin ninguna cinta, las comprobaciones no encajan: lee en voz alta el objetivo y las comprobaciones. ¿Dicen lo mismo? Muchas esquinas de 90 grados seguidas son difíciles de seguir: la próxima clase verás cómo resolverlas. Y dibuja siempre la flecha del robot."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas hoy",
+      "puntos": [
+        "Una buena misión: objetivo, obstáculos, sensor y comprobaciones",
+        "Ni demasiado fácil ni imposible",
+        "Primero en papel, a escala: 1 casilla, 10 cm",
+        "Hoy: la pista del comedor y tu hoja de diseño"
+      ],
+      "narracion": "Resumen. Una buena misión tiene objetivo, obstáculos, un sensor y comprobaciones. No es ni demasiado fácil ni imposible. Y primero se dibuja en papel, a escala, con casillas de 10 centímetros. Para hoy, con alguien de casa, haced la pista del comedor: una salida y una meta con dos objetos, un obstáculo y un camino de cordel. Una persona hace de robot con los ojos cerrados; la otra le dice solo lo que sienten los sensores. En la próxima clase, programarás tu misión."
+    }
+  ]
+}

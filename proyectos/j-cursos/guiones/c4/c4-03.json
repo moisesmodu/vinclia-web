@@ -1,0 +1,119 @@
+{
+  "id": "c4-03",
+  "titulo": "Lo que compartimos y la huella digital",
+  "descripcion": "Qué datos personales se guardan, qué edad hace falta para las redes sociales en España, qué hacer si un desconocido escribe y el semáforo antes de publicar, también para las fotos que suben los adultos.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:d1-2",
+    "imprimible:d1-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Lo que compartimos y la huella digital",
+      "subtitulo": "Datos que se guardan, fotos que hablan y el semáforo",
+      "narracion": "En esta clase juntamos dos sesiones de Tech Digital: qué compartimos y la huella digital. Verás qué datos conviene guardar y qué decir cuando tu hijo te pida una red social porque la tiene todo el mundo. También qué hacer si un desconocido le escribe, y una herramienta muy sencilla para antes de publicar. Y hablaremos de las fotos que subimos los adultos, porque los niños se fijan en lo que hacemos."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Se guarda o se puede compartir",
+      "mal": "Datos personales: nombre completo, dirección, teléfono, colegio, cumpleaños, dónde estás ahora.",
+      "bien": "Gustos y creaciones: un color, un animal, un libro, un dibujo. Con un alias y un avatar dibujado.",
+      "narracion": "La regla que aprenden los niños es fácil de recordar. Los datos personales dicen quién eres y dónde te pueden encontrar, y se guardan. Los gustos no dicen dónde vives, y esos sí se pueden compartir. Un truco muy útil es usar un alias, un nombre inventado, y un avatar dibujado que no se parezca a su cara. Y ojo con el colegio: parece poca cosa, pero dice dónde está cada día y a qué hora."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Y las redes sociales?",
+      "puntos": [
+        "En España hacen falta 14 años para consentir el uso de sus datos",
+        "Por debajo, el consentimiento lo dan los padres",
+        "La mayoría de redes piden en sus normas 13 años o más",
+        "Antes de instalar una app, mirad juntos su edad mínima"
+      ],
+      "narracion": "Tarde o temprano llegará la frase: todos mis amigos la tienen. Aquí tienes los datos. En España, la ley de protección de datos fija los 14 años para que un menor pueda consentir por sí mismo el uso de sus datos. Y la mayoría de redes sociales piden en sus normas al menos 13 años. Puedes explicarlo así: las edades mínimas están para protegerte, no para fastidiarte. Mientras tanto, hay apps del colegio supervisadas por adultos."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d1-2:6",
+      "narracion": "Esta diapositiva enseña algo que a muchos adultos también se nos escapa. Una foto puede decir más de lo que parece. En el fondo puede salir el nombre de la calle, el número del portal, el uniforme del colegio o la matrícula del coche. Antes de compartir una foto, mirad juntos el fondo. Si hay pistas, se elige otra o se recorta. Es un juego de detectives que a los niños les encanta."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Quién ve cada cosa",
+      "columnas": [
+        "Dato",
+        "Quién lo ve"
+      ],
+      "filas": [
+        [
+          "Alias y gustos",
+          "Puede verlo todo el mundo"
+        ],
+        [
+          "Dibujos y fotos de lo que hace",
+          "Amigos que conoce de verdad"
+        ],
+        [
+          "Colegio, dirección, teléfono",
+          "Solo yo"
+        ],
+        [
+          "Ubicación en directo",
+          "Solo la familia, y lo decide un adulto"
+        ]
+      ],
+      "narracion": "En la sesión, los niños configuran la privacidad de un perfil inventado. Puedes hacer lo mismo con una app real que uséis en casa. Para cada dato, preguntaos quién debería verlo. Y aclarad una palabra: amigos quiere decir gente que conoce en persona, no gente de internet. La ubicación es especial. Muchas apps la piden para añadirla a fotos y mensajes. Decir dónde estás ahora es como dejarle a cualquiera un mapa con una chincheta."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si un desconocido le escribe",
+      "pasos": [
+        "No contesta",
+        "Lo bloquea",
+        "Te lo cuenta, sin borrar los mensajes",
+        "Nadie le riñe por contarlo"
+      ],
+      "narracion": "Habla de esto con calma, sin contar casos de las noticias que den miedo. La mayoría de mensajes son normales. Pero si alguien que no conoce en persona le pide datos, fotos, secretos o quedar, son tres acciones: no contesto, lo bloqueo y se lo cuento a un adulto. Y una idea clave: aunque lleven días chateando y sea muy simpático, si ni él ni vosotros lo conocéis en persona, sigue siendo un desconocido. Si te pregunta si el otro se enterará al bloquearlo, la respuesta es sencilla: bloquear es un derecho y no hay que dar explicaciones a quien te incomoda."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si alguien te pide que no lo digas en casa, es justo lo que tienes que contar en casa.",
+      "narracion": "Esta frase merece repetirse. Pedir secretos con la familia, ofrecer regalos a cambio de fotos o proponer quedar son señales de alarma claras. Si alguna vez pasa, guardad los mensajes como prueba y no los borréis. Si hay un peligro inmediato, llama al uno, uno, dos. Para orientación, el uno, uno, seis, uno, uno, uno es el teléfono gratuito de ayuda a la infancia y la adolescencia. Lo veremos con más detalle en la clase de respeto."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d1-3:5",
+      "narracion": "Pasamos a la huella digital. Cada foto, comentario, me gusta o búsqueda deja rastro. Esta diapositiva lo explica con un ejemplo. El original se borra, pero alguien puede haber hecho una captura y reenviarla a otro grupo. En clase lo demuestran con papel: el profesor enseña un mensaje, los grupos lo copian y él rompe el original. ¿Dónde está ahora el mensaje? En todos los folios. Borrar ayuda, pero no lo quita todo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El semáforo antes de publicar",
+      "pasos": [
+        "Rojo: para un momento",
+        "Amarillo: ¿es amable? ¿Es verdad?",
+        "Amarillo: ¿me importaría que lo viera todo el mundo?",
+        "Verde: si todo es que sí, adelante",
+        "Si dudas, no lo publiques o pregunta a un adulto"
+      ],
+      "narracion": "Este semáforo es la herramienta más útil de la clase. Vale para un mensaje en el grupo del colegio, una foto o un comentario. Y la última pregunta incluye a la familia, al colegio y a uno mismo dentro de unos años. Recuérdale también que la huella no es solo mala: un dibujo, algo que ha aprendido o felicitar a alguien dejan una huella que suma. Se trata de pensar antes, no de tener miedo. Un detalle que suele sorprender: enviar una foto a un grupo de chat también es publicar. Del grupo de clase puede llegar a gente que nadie conoce."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La foto es de quien sale",
+      "mal": "Subir una foto graciosa de alguien sin preguntarle, y borrarla si se queja.",
+      "bien": "Preguntar antes: ¿te parece bien que la suba? Si dice que no, se respeta.",
+      "narracion": "Antes de publicar una foto donde sale otra persona, se le pide permiso. Esto vale para los niños con sus amigos y, ojo, también para los adultos con sus hijos. El propio curso propone que en casa se acuerde en las dos direcciones. Tu hija también tiene derecho a decir qué le parece una foto suya. Si quieres que pregunte antes de subir la foto de una amiga, empieza preguntándole tú a ella."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Datos personales, se guardan; gustos, se comparten",
+        "14 años para consentir sus datos; la mayoría de redes piden 13",
+        "Desconocido que pide algo: no contesto, bloqueo, lo cuento",
+        "Semáforo y permiso antes de publicar"
+      ],
+      "narracion": "Para hoy tienes dos fichas en los recursos. En el escudo de los datos dibujáis juntos qué se guarda y qué se comparte, y escribís debajo los nombres de tres adultos de confianza. Aprovechad para revisar la privacidad de una app que uséis. Y acordad la norma de las fotos: antes de subir una foto de alguien de la familia, le preguntamos. En la próxima clase veremos bulos, imágenes falsas e inteligencia artificial."
+    }
+  ]
+}

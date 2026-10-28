@@ -1,0 +1,115 @@
+{
+  "id": "c2-27",
+  "titulo": "Sigue al líder",
+  "descripcion": "Usa el control proporcional para que el Maqueen siga a un objetivo que se mueve sin chocar, entiende por qué lo sigue más lejos cuando el líder corre y haz que retroceda y avise con luces de freno.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k6-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Sigue al líder",
+      "subtitulo": "Unidad 6 · Control inteligente · El convoy del mercado",
+      "narracion": "Tercera sesión de la unidad 6. El sábado hay mercado y vamos a hacer un convoy. Un robot líder abre el camino y los demás lo siguen en fila, sin nada que los una. ¿Cómo? Con el control proporcional de la clase anterior. El programa es casi el mismo que el de la estación de carga, pero ahora el muro se mueve. Hoy verás que el robot acelera, frena y se para solo, sin que nadie le diga que el líder ha parado."
+    },
+    {
+      "tipo": "frase",
+      "texto": "¿Cómo puede un robot ir detrás de otro sin tocarlo nunca?",
+      "narracion": "Piensa en esta pregunta: ¿qué tiene que hacer el segundo robot si el primero frena? ¿Y qué pasaría si no frenara? Antes, un repaso con números. El error es la distancia menos 10, y la velocidad es el error por 5. Si el ultrasonido mide 30 centímetros, ¿a qué velocidad va? 30 menos 10 son 20, y 20 por 5 son 100. Recuerda también: con un k pequeño se para lejos, y con un k grande llega rápido y más cerca."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un objetivo que se mueve",
+      "puntos": [
+        "El ultrasonido mide la distancia hasta el líder",
+        "Si el líder se aleja, el error crece y el seguidor acelera",
+        "Si el líder se acerca o frena, el seguidor frena",
+        "El programa de la estación de carga sirve para seguir"
+      ],
+      "narracion": "El ultrasonido mide la distancia hasta el líder. Si el líder acelera, la distancia crece, el error crece y el seguidor acelera. Si el líder frena, la distancia baja y el seguidor frena. El seguidor no necesita saber qué hace el líder. Solo mide, calcula y mueve los motores, una y otra vez. A esto se le llama realimentación: volver a medir después de actuar para corregir lo que se hace. Es el mismo programa de la estación de carga."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-3:5",
+      "narracion": "Vamos al simulador. El líder, en gris, avanza a 8 centímetros por segundo y en el segundo 9 se para, como en un semáforo. El seguidor calcula la velocidad con el error por 10. Antes de ejecutar, predice: cuando el líder pare, ¿qué hará el seguidor? ¿Chocará? Mira. Frena poco a poco y se para a unos 13 centímetros del líder. No lo sabe, solo nota que la distancia baja. Y como la velocidad depende de la distancia, frena solo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-3:6",
+      "narracion": "Ahora el líder va más deprisa, a 14 centímetros por segundo. Predice: ¿lo seguirá a la misma distancia que antes? Fíjate en el hueco entre los dos robots. Lo sigue a unos 24 centímetros, no a 10. ¿Por qué? Para ir más rápido, el seguidor necesita más velocidad. Y como la velocidad es el error por k, necesita más error. Más error quiere decir más distancia. El error típico es pensar que el seguidor siempre va justo a 10 centímetros del líder."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "¿Por qué lo sigue más lejos?",
+      "columnas": ["Ganancia k", "Error para velocidad 90", "Distancia al líder"],
+      "filas": [
+        ["k 10", "9 cm", "unos 19 cm"],
+        ["k 30", "3 cm", "unos 13 cm"]
+      ],
+      "narracion": "Hagamos la cuenta. El líder va a 8 centímetros por segundo y el seguidor necesita velocidad 90 para ir igual. Con k igual a 10, ¿qué error necesita? 90 entre 10, 9 centímetros. Lo seguirá a unos 19, que son 10 más 9. Con k igual a 30, basta un error de 3, porque 3 por 30 son 90. Lo sigue más cerca. Si el error fuera 0, la velocidad sería 0 y no se movería. Por eso, cuando el líder se mueve, siempre hay un poco de error."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-3:8",
+      "narracion": "Solo si tienes curiosidad, un paso más. Este líder vuelve atrás, hacia el seguidor. El seguidor quiere estar a 15 centímetros. Si está más cerca, el error es negativo. Entonces calcula la velocidad como el error por menos 15 y pone el motor hacia atrás. ¿Por qué menos 15? Porque negativo por negativo da positivo, y el motor necesita un número positivo; la dirección la pone el bloque. Predice: sin este si, ¿qué pasaría? El líder chocaría con él. Mira cómo retrocede."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la tabla del seguidor",
+      "pasos": [
+        "Regla en la mesa: seguidor en 0 y líder en 30 centímetros",
+        "Mide la distancia y calcula el error: distancia menos 10",
+        "El seguidor avanza la mitad del error",
+        "El líder avanza 8 centímetros, hasta la ronda 4",
+        "Desde la ronda 4 el líder para: ¿qué pasa con la distancia?"
+      ],
+      "narracion": "Actividad sin pantalla con la ficha del imprimible. Por parejas, con una regla en la mesa y dos gomas de borrar, una es el líder y otra el seguidor. El seguidor empieza en 0 y el líder en 30 centímetros. En cada ronda, medid la distancia, calculad el error, el seguidor avanza la mitad del error y después el líder avanza 8 centímetros. Apuntad cada ronda en la tabla. A partir de la ronda 4, el líder se para. Mirad qué pasa con la distancia."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En el Maqueen: sigue la caja",
+      "pasos": [
+        "Un grupo carga el programa del seguidor",
+        "El otro arrastra una caja de zapatos con un cordel corto",
+        "Despacio, más deprisa, parada… y un poco hacia atrás",
+        "Observad a qué distancia la sigue cuando va lenta y rápida",
+        "Después, cambiad los papeles"
+      ],
+      "narracion": "Con el robot de verdad, dos grupos por calle. Un grupo carga el programa del seguidor del imprimible. El otro arrastra una caja de zapatos con un cordel de unos 80 centímetros, delante del robot. Despacio, más deprisa, se para y, al final, un poco hacia el robot. Con el programa 2, el robot debe retroceder. Quien arrastra camina con cuidado, nunca corriendo. Si la caja no queda delante del ultrasonido, marca 500 y el robot acelera: arrastradla recta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos del convoy",
+      "puntos": [
+        "Primer viaje: seguir al líder entre 4 y 30 centímetros",
+        "El semáforo: en cada pista el líder va a otra velocidad",
+        "Luces de freno: rojas si la velocidad es menor de 60",
+        "Reto extra · El líder vuelve atrás: hay que retroceder",
+        "Crea: tu robot del convoy, que avisa cuando frena"
+      ],
+      "narracion": "En el primer reto, el robot va a 150 y choca con el líder: hazlo proporcional. En el del semáforo, cada pista tiene un líder a otra velocidad. Si en alguna se queda atrás, ¿qué cambias? En el de seguridad, los de detrás tienen que saber cuándo frenas: luces de abajo rojas cuando la velocidad calculada sea menor de 60 y verdes cuando no. Usa la misma variable para decidir el color. El reto extra es el líder que vuelve atrás."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pregunta que ayuda"],
+      "filas": [
+        ["Choca: el motor va a un número fijo", "¿El motor usa la velocidad?"],
+        ["Cree que el programa falla", "Con error 0, ¿qué velocidad hay?"],
+        ["Velocidad negativa al retroceder", "¿Por qué número multiplicas?"],
+        ["Luces de freno al revés", "Cuando va lento, ¿qué signo toca?"],
+        ["Con el si, sigue sin retroceder", "¿Qué dirección tiene el motor?"]
+      ],
+      "narracion": "Errores típicos. Si el seguidor choca, que mire el panel: la velocidad calculada cambia, pero ¿el motor la usa? Si cree que el programa está mal porque no va justo a 10, que vuelva a la tabla de la ficha. Para retroceder, error menos 5 por 15 da menos 75, y el motor no lo entiende: hay que multiplicar por menos 15. Si las luces de freno van al revés, cuando va lento la velocidad es pequeña, así que es menor que 60."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "El control proporcional sirve para seguir algo que se mueve",
+        "Líder rápido: lo sigue más lejos; k más grande: más cerca",
+        "Error negativo: retrocede. La velocidad decide las luces de freno"
+      ],
+      "narracion": "Resumen. El control proporcional sirve para seguir un objetivo que se mueve. Si el líder corre, el seguidor lo sigue más lejos, porque necesita error para tener velocidad. Con un k más grande, lo sigue más cerca. Con error negativo, retrocede. Y la velocidad calculada sirve también para encender las luces de freno. Para hoy: haced el convoy humano por el pasillo con alguien de casa. En la próxima clase, el coche autónomo."
+    }
+  ]
+}

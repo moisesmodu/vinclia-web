@@ -1,0 +1,36 @@
+{
+  "seccion": 3,
+  "titulo": "Cuestionario: movimiento preciso",
+  "preguntas": [
+    {
+      "pregunta": "A velocidad 150, el Maqueen hace unos 15 cm cada segundo. ¿Cuánto avanza en 3 segundos?",
+      "respuestas": ["Unos 450 cm", "Unos 45 cm", "Unos 30 cm", "Unos 150 cm"],
+      "correcta": 1,
+      "explicacion": "Distancia = velocidad × tiempo: 15 × 3 = 45 cm. 450 sería multiplicar 150 × 3, pero el número del bloque no son centímetros por segundo."
+    },
+    {
+      "pregunta": "Vuestro Maqueen, a velocidad 150, ha hecho 48 cm en 4 segundos. Queréis que avance 60 cm. ¿Qué espera pondréis?",
+      "respuestas": ["4000 ms", "6000 ms", "5000 ms"],
+      "correcta": 2,
+      "explicacion": "48 ÷ 4 = 12 cm cada segundo. Para 60 cm: 60 ÷ 12 = 5 segundos, es decir, 5000 ms."
+    },
+    {
+      "pregunta": "Para dibujar un triángulo equilátero, ¿cuántos grados tiene que girar el robot en cada punta?",
+      "respuestas": ["120 grados", "60 grados", "90 grados", "180 grados"],
+      "correcta": 0,
+      "explicacion": "El robot gira lo que necesita para cambiar de dirección: 360 ÷ 3 = 120 grados (unos 800 ms a velocidad 100). 60 grados es el ángulo de dentro."
+    },
+    {
+      "pregunta": "Motor izquierdo a 100 y motor derecho a 200. ¿Hacia dónde gira el robot?",
+      "respuestas": ["Hacia la derecha", "Va recto", "Gira sobre sí mismo", "Hacia la izquierda"],
+      "correcta": 3,
+      "explicacion": "El robot siempre gira hacia el lado de la rueda más lenta: aquí, la izquierda."
+    },
+    {
+      "pregunta": "Quieres que el robot dibuje un círculo más grande que el de 150 y 100. ¿Qué haces?",
+      "respuestas": ["Poner velocidades más parecidas, por ejemplo 130 y 100", "Esperar más rato", "Poner una rueda parada"],
+      "correcta": 0,
+      "explicacion": "El tamaño lo deciden las velocidades: cuanto más parecidas, más grande. Esperar más solo da más vueltas al mismo círculo."
+    }
+  ]
+}

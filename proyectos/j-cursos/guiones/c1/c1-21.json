@@ -1,0 +1,104 @@
+{
+  "id": "c1-21",
+  "titulo": "Interacción: teclas, clics y mensajes",
+  "descripcion": "La animación se convierte en juego: tu hijo o tu hija programa personajes que responden a un clic, se mueven con las flechas y conversan por turnos con mensajes. Sabrás qué bloques de Scratch usar y cómo resolver los errores más habituales.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:g3-1", "imprimible:g3-2", "imprimible:g3-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Interacción: teclas, clics y mensajes",
+      "subtitulo": "Semana 4 · Cuando el público toca, el juego responde",
+      "narracion": "Hasta ahora, tu hijo o tu hija ha hecho animaciones: se miran y ya está. Hoy cruzamos la línea que separa una animación de un videojuego. Quien mira va a participar: hará clic en un personaje, pulsará una flecha, y el escenario responderá. Veremos tres eventos nuevos y una idea que cuesta un poco más: varios guiones funcionando a la vez. Es la clase con más contenido de la semana, así que puedes repartirla en dos tardes."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los eventos de hoy en Scratch",
+      "columnas": ["Tech Creadores", "Scratch"],
+      "filas": [
+        ["Al tocar este personaje", "al hacer clic en este objeto"],
+        ["Al pulsar la tecla flecha derecha", "al presionar tecla flecha derecha"],
+        ["envía el mensaje", "enviar mensaje1"],
+        ["Al recibir el mensaje", "al recibir mensaje1"],
+        ["muéstrate y escóndete", "mostrar y esconder"]
+      ],
+      "narracion": "Estos son los bloques de hoy. Los cuatro primeros están en Eventos, en amarillo, y los de cabecera tienen forma de sombrero: siempre van arriba del guion. «Al hacer clic en este objeto» espera a que alguien pulse sobre el personaje. En «al presionar tecla» se elige la tecla en un desplegable. Los mensajes se crean desde el desplegable de «enviar», con la opción «nuevo mensaje», donde les das nombre. «Mostrar» y «esconder» están en Apariencia. Recuérdale que la cabecera dice cuándo empieza cada guion."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un clic, dos guiones a la vez",
+      "puntos": [
+        "Un mismo evento puede arrancar varios guiones",
+        "Funcionan en paralelo, cada uno a su ritmo",
+        "Para saber el orden, suma las esperas de cada guion",
+        "Un clic nuevo hace volver a empezar el guion"
+      ],
+      "narracion": "La idea nueva de Creadores es la concurrencia: varias cosas a la vez. Un dragón puede tener dos guiones con el mismo «al hacer clic en este objeto». Uno lo hace crecer y encoger; el otro espera medio segundo y ruge. Al hacer clic, empiezan los dos a la vez y no se esperan. Para saber qué se verá primero, hay que sumar las esperas de cada guion por separado. Dibujad una línea de tiempo en un papel. Otra regla: si vuelves a hacer clic antes de que acabe, el guion vuelve a empezar desde arriba. En Scratch pasa lo mismo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g3-1:9",
+      "narracion": "Esta diapositiva muestra un conflicto. El gato 1 tiene dos guiones que dicen dos frases en el mismo momento, y el «¡Miau!» no se ve nunca. El gato 2 tiene una espera de un segundo en el segundo guion, y las frases van por turnos. Antes de ponerla en marcha, pregúntale qué verá. Una imagen ayuda mucho: dos personas escriben en la misma pizarra en el mismo instante, y solo se lee lo de encima. Si en su juego dos frases se pisan, ya sabe dónde buscar."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Las flechas del teclado",
+      "mal": "Flecha izquierda con «mover -10»: va de espaldas",
+      "bien": "«Apuntar en dirección -90» y «mover 10»: mira hacia donde va",
+      "narracion": "Ahora, las teclas. Para mover un personaje con las cuatro flechas hacen falta cuatro guiones, uno por flecha. Cada uno apunta hacia su lado y avanza diez pasos. Un error frecuente es usar «mover menos 10» para ir a la izquierda: funciona a medias, porque el personaje va de espaldas. Otro es meter un «por siempre» dentro del guion de la tecla: basta un toque y el personaje ya no para. No hace falta, porque si mantienes la flecha pulsada, el guion se repite solo. Primero hay una pequeña pausa, como cuando mantienes pulsada una letra."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g3-2:9",
+      "narracion": "Una tecla avisa a todos los personajes a la vez. En esta diapositiva, la barra espaciadora hace hablar al caballero, crecer al dragón y volar al pájaro, cada uno con su guion. Es lo que pasa en cualquier videojuego: un botón, y salto, sonido y animación a la vez. Hay una actividad sin pantalla muy divertida para esto: el regidor de escena. Cada persona de casa escribe en un papel dos guiones de tecla, como «cuando oigo espacio, hago una reverencia». Alguien levanta tarjetas con teclas, y reaccionan a la vez todos los que tienen esa tecla."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Mensajes: hablar por turnos",
+      "puntos": [
+        "«Enviar mensaje» lo oyen todos los personajes",
+        "Solo reacciona quien tiene «al recibir» con ese nombre",
+        "Cada uno habla y, al terminar, pasa el turno con un mensaje",
+        "El nombre tiene que ser exactamente el mismo"
+      ],
+      "narracion": "La tercera sesión trae los mensajes, la mejor manera de que dos personajes conversen. «Enviar mensaje» es como decir un nombre en voz alta: lo oyen todos, pero solo reaccionan los que tienen «al recibir» con ese nombre. En un diálogo, cada personaje dice su frase con segundos y, al terminar, envía un mensaje que pasa el turno. Un consejo de la guía: poned al mensaje el nombre de quien tiene que hablar. Para practicar sin pantalla, jugad a la palabra secreta. Cada uno elige una palabra y una acción, y alguien va diciendo palabras en voz alta."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y qué preguntar",
+      "columnas": ["Lo que verás", "Qué preguntarle"],
+      "filas": [
+        ["Las flechas no hacen nada", "¿Has hecho clic en el escenario?"],
+        ["Hablan a la vez aunque hay mensaje", "¿Envía antes o después de hablar?"],
+        ["El otro no responde nunca", "¿Los dos nombres son iguales?"],
+        ["Programa el personaje equivocado", "¿Qué objeto tienes seleccionado?"],
+        ["Hace clic sin parar", "¿Qué pasa con cada clic nuevo?"]
+      ],
+      "narracion": "Estos son los errores que más verás hoy. Si las flechas no hacen nada, a menudo basta con hacer clic una vez en el escenario para que la página reciba las teclas. Si los personajes hablan a la vez, casi siempre el «enviar» está antes del «decir», o el «decir» no tiene segundos. Si el otro no responde, que ponga un dedo en el nombre que se envía y otro en el que se recibe. Y en Scratch es fácil poner los bloques en el objeto que no toca: que mire cuál está seleccionado, debajo del escenario, antes de arrastrar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El reto de hoy: una conversación",
+      "pasos": [
+        "Dos objetos de la biblioteca, uno a cada lado",
+        "El primero, con la bandera: habla 2 segundos y envía el turno",
+        "El segundo, al recibirlo: contesta y devuelve el turno",
+        "Cuatro frases como mínimo, por turnos",
+        "Extra: un regalo que, al hacer clic, hace aparecer a alguien"
+      ],
+      "narracion": "El reto de hoy es una conversación de teatro, como la de Guida y Tuga en Creadores. Dos personajes, uno a cada lado. El primero, con la bandera verde, dice su frase durante dos segundos y envía un mensaje con el nombre del segundo. El segundo, al recibirlo, contesta y devuelve el turno. Mínimo cuatro frases. Proponle escribir antes el diálogo en papel, como un guion de teatro. Si quiere más, que añada un regalo que, al hacer clic, envía «sorpresa» y se esconde, y un personaje escondido que aparece al recibirlo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte hoy",
+      "puntos": [
+        "Clic, tecla o mensaje: cada uno es un evento",
+        "Un evento puede arrancar varios guiones a la vez",
+        "Flechas: un guion por flecha, sin «por siempre»",
+        "Mensajes para hablar por turnos, con el mismo nombre",
+        "Hoy: el regidor de escena y la conversación"
+      ],
+      "narracion": "Repasamos. Un clic, una tecla o un mensaje son eventos, y cada uno pone en marcha los guiones que lo esperan. Varios guiones pueden funcionar a la vez, y si dos cambian lo mismo en el mismo instante, gana el último. Para moverse con flechas, un guion por flecha con «apuntar» y «mover». Y para conversar, un mensaje después de cada frase. En los recursos tienes las tarjetas del regidor de escena y del teatro de los mensajes. En la próxima clase, el escenario se convierte en un mapa: coordenadas, choques y condiciones."
+    }
+  ]
+}

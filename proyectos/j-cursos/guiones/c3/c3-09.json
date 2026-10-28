@@ -1,0 +1,111 @@
+{
+  "id": "c3-09",
+  "titulo": "Reseñas de Google: responder bien, también a las malas",
+  "descripcion": "Respondes reseñas de Google positivas y negativas con una estructura clara y la ayuda de la IA, sin ponerte a la defensiva y sin revelar datos de tus clientes.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:respuestas-resenas"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Reseñas de Google",
+      "subtitulo": "Responder bien, también a las malas",
+      "narracion": "En la primera clase respondiste una reseña con ayuda de la IA. Ahora vamos a convertirlo en un hábito con método. Las reseñas de Google son hoy el escaparate de muchos negocios pequeños. Antes de pedir cita en una peluquería o de llamar a un fontanero, mucha gente mira las estrellas y lee las respuestas. En esta clase aprenderás una estructura para las reseñas negativas, un truco para las positivas y una rutina semanal de diez minutos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué merece la pena responder",
+      "puntos": [
+        "Tus futuros clientes leen la reseña y tu respuesta",
+        "Responder a las buenas demuestra que estás atento",
+        "Una mala bien respondida da confianza",
+        "Se responde gratis desde Google Business Profile"
+      ],
+      "narracion": "Responder reseñas no es para convencer al cliente que se quejó. Es para los que vienen detrás. Quien lee una reseña negativa bien respondida piensa que, si algo sale mal, ahí le van a escuchar. Responder también a las positivas demuestra que estás atento y que cada cliente cuenta. Todo esto se hace gratis desde Google Business Profile, la ficha de tu negocio en Google, en el ordenador o en el móvil. Y con la IA, cada respuesta te lleva un minuto."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La estructura para una reseña negativa",
+      "pasos": [
+        "Agradece que te lo haya contado",
+        "Reconoce lo que tenga de razón, sin peros",
+        "Explica en una frase, sin excusas ni culpas",
+        "Ofrece una solución o un canal privado",
+        "Firma con tu nombre"
+      ],
+      "narracion": "Para las reseñas negativas, usa siempre esta estructura de cinco pasos. Primero, agradece que te lo haya contado. Segundo, reconoce lo que tenga de razón, sin añadir un pero detrás. Tercero, si hace falta, explica qué pasó en una sola frase, sin excusas y sin culpar a nadie. Cuarto, ofrece una solución o invita a hablarlo por un canal privado, como el teléfono del negocio. Y quinto, firma con tu nombre. Una persona que firma da mucha más confianza que una empresa sin cara."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un bar ante una reseña de una estrella",
+      "usuario": "Tengo un bar de menú del día. Reseña de una estrella: «La comida llegó fría y el camarero fue borde cuando lo dijimos». Mis notas: ese día faltaba una persona en cocina; ya he hablado con el equipo; quiero invitarle a un menú si vuelve. Responde con esta estructura: agradece, reconoce sin peros, explica en una frase, ofrece solución, firma Luis. Máximo 5 frases.",
+      "ia": "Gracias por contárnoslo. Tienes razón: la comida tiene que llegar caliente y a ti te tenían que atender con amabilidad, y no fue así. Ese día íbamos cortos en cocina, y ya lo hemos hablado con todo el equipo. Nos gustaría invitarte a un menú para que nos des otra oportunidad: pregunta por mí cuando vengas. Un saludo, Luis.",
+      "narracion": "Veamos un caso real en tipo. Luis tiene un bar de menú del día y recibe una reseña de una estrella. Comida fría y un camarero borde. Le da a la IA la reseña, sus notas y la estructura. La respuesta reconoce las dos quejas sin discutir, explica en una frase y ofrece una invitación. Esa invitación la ha decidido Luis, no la IA. Fíjate también en que no menciona al camarero por su nombre ni le echa la culpa."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "A la defensiva frente a con calma",
+      "mal": "Llevamos 20 años abiertos y nunca nadie se ha quejado. Ese día estaba lleno y había que esperar.",
+      "bien": "Tienes razón, no fue lo que queremos. Ya lo hemos hablado con el equipo. ¿Nos das otra oportunidad?",
+      "narracion": "Compara estas dos respuestas. La primera es la que nos sale cuando estamos dolidos. Presume de años, niega el problema y casi culpa al cliente por venir un día lleno. Quien la lee piensa que, si se queja, le van a contestar igual. La segunda reconoce, explica lo que has hecho y abre la puerta. Si notas que estás enfadado, pídele a la IA el borrador y espera una hora antes de publicarlo. Esa hora vale oro."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Las positivas: personaliza en una línea",
+      "usuario": "Responde a esta reseña de 5 estrellas de mi centro de fisioterapia: «Marina es una profesional como la copa de un pino, me ha ayudado muchísimo». 2 frases, cálido, de tú. No menciones ninguna lesión ni tratamiento. Firma Marina.",
+      "ia": "¡Muchísimas gracias por tus palabras! Nos alegra mucho haberte ayudado, aquí nos tienes para lo que necesites. Un abrazo, Marina.",
+      "narracion": "A las reseñas positivas también hay que contestar, y no con un gracias a secas copiado en todas. Basta con dos frases cálidas que recojan algo de lo que dice el cliente. Fíjate en el límite que pone Marina, fisioterapeuta: no menciones ninguna lesión ni tratamiento. Aunque el paciente cuente su caso en la reseña, tú no debes confirmarlo ni añadir detalles. Los datos de salud son una categoría especial y una respuesta pública no es el sitio."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que nunca va en una respuesta",
+      "puntos": [
+        "Datos del cliente: nombre completo, visitas, compras",
+        "Detalles de salud o de un tratamiento",
+        "Acusaciones, ironías o amenazas",
+        "Promesas que no vas a poder cumplir"
+      ],
+      "narracion": "Hay cosas que nunca deben aparecer en una respuesta pública, aunque la reseña te parezca injusta. Ningún dato del cliente: ni su nombre completo, ni cuándo vino, ni qué compró. Ningún detalle de salud ni de tratamientos. Nada de acusaciones, ironías ni amenazas, porque se leen peor de lo que suenan en tu cabeza. Y ninguna promesa que no puedas cumplir. Pídele a la IA que respete estos límites y compruébalo tú al leer."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si la reseña es injusta o falsa",
+      "puntos": [
+        "Responde igual, breve y con calma",
+        "Di que no encuentras su visita y ofrece hablarlo",
+        "Puedes denunciarla desde tu ficha de Google",
+        "No entres en una discusión pública"
+      ],
+      "narracion": "A veces llega una reseña que te parece falsa o que no corresponde a ningún cliente. Aun así, responde con calma y en pocas frases. Por ejemplo, di que no encuentras su visita y que te encantaría hablarlo por teléfono. Quien lo lea entenderá la situación. Si la reseña incumple las normas de Google, puedes denunciarla desde tu ficha, pero no cuentes con que la quiten. Lo que nunca funciona es entrar en una discusión pública."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Varias reseñas de una vez",
+      "usuario": "[Pegas tu ficha]\nResponde a estas 4 reseñas positivas de mi peluquería. Para cada una, 2 frases que recojan algo concreto de lo que dicen. Que no se repitan las frases entre respuestas. Tutea y firma Nuria.\n1. «Me encanta cómo me deja el pelo»\n2. «Muy puntuales»\n3. «Mi hija salió feliz»\n4. «Precio justo y buen trato»",
+      "ia": "1. ¡Qué bien leer esto! Nos encanta que salgas contenta con tu pelo, te esperamos pronto. Nuria.\n2. ¡Gracias! Para nosotras tu tiempo vale mucho, así que intentamos no hacerte esperar. Nuria.\n3. ¡Qué ilusión! Dale un beso de nuestra parte, aquí la esperamos para la próxima. Nuria.\n4. Gracias por tus palabras, intentamos que todo el mundo se sienta en casa. Nuria.",
+      "narracion": "Para las positivas, ahorra tiempo haciendo varias a la vez. Pega tu ficha y las reseñas de la semana, y pide dos frases para cada una, que recojan algo concreto y que no se repitan. Así no parecen copiadas. Nuria lo hace con cuatro reseñas de su peluquería. Después solo tiene que revisar y pegar cada respuesta en su sitio. Como siempre, sin pegar nombres de clientes. Basta con el texto de la reseña."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La rutina semanal de diez minutos",
+      "pasos": [
+        "Un día fijo a la semana, por ejemplo el lunes",
+        "Abre tu ficha y mira las reseñas nuevas",
+        "Positivas: todas juntas en una instrucción",
+        "Negativas: una a una con la estructura",
+        "Revisa, publica y apunta si se repite una queja"
+      ],
+      "narracion": "Para que no se te acumulen, convierte esto en rutina. Elige un día fijo, por ejemplo el lunes a primera hora. Abre tu ficha de Google y mira las reseñas nuevas. Las positivas, todas juntas en una instrucción. Las negativas, una a una con la estructura de cinco pasos. Revisa y publica. Y un último paso que muchos olvidan: si una queja se repite, apúntala. Las reseñas también te dicen qué mejorar en el negocio."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Negativas: agradece, reconoce, explica, ofrece, firma",
+        "Positivas: dos frases personalizadas, varias a la vez",
+        "Nunca datos del cliente ni detalles de salud",
+        "Tarea: responde tus reseñas pendientes con la plantilla"
+      ],
+      "narracion": "Repasamos. A las reseñas negativas, agradece, reconoce sin peros, explica en una frase, ofrece una solución y firma. A las positivas, dos frases personalizadas, y puedes hacer varias de una vez. Nunca incluyas datos del cliente ni detalles de salud, y no discutas en público. Tu tarea de hoy, en 10 minutos. Descarga la plantilla de respuestas a reseñas de esta clase y responde todas las que tengas pendientes. En la próxima clase prepararemos tus mensajes automáticos de WhatsApp Business."
+    }
+  ]
+}

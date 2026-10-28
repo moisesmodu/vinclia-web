@@ -1,0 +1,104 @@
+{
+  "id": "c3-18",
+  "titulo": "Presupuestos claros en 2 minutos",
+  "descripcion": "Convierte tus notas de la visita en un presupuesto ordenado y claro, con partidas, plazos, validez y lo que no incluye, y aprende a revisar las cifras antes de enviarlo.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:presupuesto"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Presupuestos claros en 2 minutos",
+      "subtitulo": "De las notas de la visita a un documento profesional",
+      "narracion": "Empezamos la sección de presupuestos, facturas y números. Y empezamos por lo que más tiempo roba a muchos oficios: el presupuesto. Vas a casa del cliente, tomas notas en el móvil y luego, por la noche, toca pasarlo a limpio. En esta clase vas a convertir esas notas desordenadas en un presupuesto claro en un par de minutos. El ejemplo será un electricista de Zaragoza, pero sirve igual para una reforma, una web o un catering. La IA ordena y redacta. Las cifras las decides y las compruebas tú."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Lo que debe tener un buen presupuesto",
+      "columnas": [
+        "Parte",
+        "Para qué sirve"
+      ],
+      "filas": [
+        [
+          "Partidas detalladas",
+          "Que el cliente vea qué paga"
+        ],
+        [
+          "Materiales y mano de obra",
+          "Evitar dudas sobre el precio"
+        ],
+        [
+          "Qué no incluye",
+          "Evitar discusiones después"
+        ],
+        [
+          "Plazo y validez",
+          "Saber cuándo y hasta cuándo"
+        ],
+        [
+          "Forma de pago",
+          "Cobrar sin sorpresas"
+        ]
+      ],
+      "narracion": "Antes de pedir nada, ten claro qué tiene que llevar un buen presupuesto. Partidas detalladas, para que el cliente entienda qué está pagando. Materiales separados de la mano de obra. Una lista de lo que no incluye, que es lo que más discusiones evita. El plazo de ejecución y hasta cuándo es válido el precio. Y cómo se paga: transferencia, Bizum, un adelanto. Los impuestos se indican aparte, y el tipo que te corresponde lo confirmas con tu gestoría o con tu programa de facturación. Con estas cinco partes delante, la IA tiene claro qué estructura debe seguir."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "De notas sueltas a presupuesto",
+      "usuario": "Convierte mis notas en un presupuesto ordenado para cliente A. Notas: cambiar cuadro eléctrico piso años 70, 1 día de trabajo yo solo, cuadro nuevo 180, diferencial y magnetotérmicos 140, cable y material pequeño 45, mano de obra 320. No incluye pintar ni tapar rozas. Pago: mitad al aceptar, resto al acabar. Válido 30 días. Calcula la base sin impuestos y deja el IVA para que lo ponga yo.",
+      "ia": "PRESUPUESTO · Cliente A\nTrabajo: sustitución del cuadro eléctrico de vivienda.\n\nMateriales\n· Cuadro eléctrico nuevo: 180 euros\n· Diferencial y magnetotérmicos: 140 euros\n· Cable y material auxiliar: 45 euros\nMano de obra (1 jornada): 320 euros\n\nBase imponible: 685 euros\nIVA: [lo indicas tú]\nTotal: [base más IVA]\n\nNo incluye: pintura ni tapado de rozas.\nPago: 50 % al aceptar y 50 % al terminar.\nValidez: 30 días.",
+      "narracion": "Esta es la instrucción principal. Escribes las notas tal como las tomaste, con abreviaturas y sin orden, y la IA las convierte en un documento limpio. Fíjate en dos cosas. Primero, el cliente se llama cliente A. Su nombre, dirección y teléfono los pones tú después en tu programa. Segundo, le pido que deje el IVA para mí. Así la IA no elige un tipo de impuesto por su cuenta. Y ahora, lo más importante: suma tú las cifras. Ciento ochenta, más ciento cuarenta, más cuarenta y cinco, más trescientos veinte. Da seiscientos ochenta y cinco. Esta vez ha acertado, pero no siempre lo hace."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA redacta el presupuesto. Las sumas las compruebas tú, siempre.",
+      "narracion": "Los asistentes de chat escriben muy bien, pero pueden equivocarse con los números, sobre todo cuando hay muchas partidas, descuentos o decimales. Y un error de cien euros en un presupuesto es un problema serio con el cliente. Por eso, la regla es fija. Comprueba cada suma con la calculadora del móvil o, mejor aún, pasa las cifras a tu hoja de cálculo o a tu programa de facturación, que calculan sin errores. La IA te da el texto y el orden. El número final lo firmas tú."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un presupuesto vago frente a uno claro",
+      "mal": "Cambio de cuadro eléctrico: 685 euros más IVA. Material incluido.",
+      "bien": "Cuadro y material: 365 euros. Mano de obra, 1 jornada: 320 euros. No incluye pintura. Válido 30 días.",
+      "narracion": "Los dos presupuestos tienen el mismo precio. Pero el de la izquierda genera preguntas: ¿qué material?, ¿cuánto es mano de obra?, ¿y si hay que pintar? Esas preguntas se convierten en llamadas, regateos o discusiones al terminar el trabajo. El de la derecha responde a todo antes de que el cliente pregunte. Además, transmite profesionalidad, que a menudo pesa más que el precio. Si te ves escribiendo presupuestos de una línea, este es el cambio que más te va a rentar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la IA revise antes de enviar",
+      "usuario": "Revisa este presupuesto como si fueras el cliente. Dime 3 cosas que podrían generar dudas o discusiones y cómo aclararlas. No cambies ninguna cifra.",
+      "ia": "1. No dice cuándo empezaría el trabajo. Añade una fecha aproximada o un plazo desde la aceptación.\n2. Falta qué pasa si aparece una avería oculta al abrir la pared. Indica que se presupuestaría aparte.\n3. No dice si retiras el cuadro viejo. Aclara si lo retiras tú y está incluido.",
+      "narracion": "Este paso lleva treinta segundos y te puede ahorrar un disgusto. Le pides a la IA que lea tu presupuesto como si fuera el cliente y que busque lo que podría generar dudas. Fíjate en la última frase de la instrucción: no cambies ninguna cifra. Así te aseguras de que solo revisa el texto y no te toca los números que ya has comprobado. Las tres observaciones de la respuesta son muy típicas en reformas. Decide tú cuáles aplican y cómo las redactas. Si alguna observación te parece útil para todos tus trabajos, añádela a tu plantilla para no olvidarla nunca."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El mensaje para enviarlo",
+      "usuario": "Escribe un mensaje corto de WhatsApp para enviar este presupuesto a cliente A. Tono cercano y profesional. Ofrece resolver dudas por teléfono y recuerda la validez.",
+      "ia": "Hola, buenas tardes. Te envío el presupuesto del cambio de cuadro que vimos ayer. Está detallado por partidas y es válido durante 30 días. Si tienes cualquier duda, llámame y lo vemos en un momento. Gracias por contar conmigo. Un saludo, Andrés.",
+      "narracion": "Y por último, el mensaje para enviarlo. Parece un detalle, pero un presupuesto que llega con un mensaje amable y claro tiene más posibilidades de aceptarse que un archivo suelto sin explicación. Recuerda que el presupuesto en sí lo generas en tu programa de facturación o en tu plantilla, con tus datos y los del cliente. La IA te ha dado el texto ordenado, que copias allí. Si tu programa permite guardar plantillas, guarda la estructura para reutilizarla."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Busca las notas de tu último presupuesto",
+        "Pégalas en la IA con la instrucción de la clase",
+        "Usa cliente A y deja el IVA para ti",
+        "Comprueba cada suma con la calculadora",
+        "Pide la revisión como si fueras el cliente"
+      ],
+      "narracion": "Para hoy, un ejercicio con un caso real. Busca las notas de tu último presupuesto, el que sea. Pégalas en la IA con la instrucción de la clase, usando cliente A en lugar del nombre real, y deja el impuesto para ti. Comprueba cada suma con la calculadora. Después pide la revisión como si fueras el cliente y compara el resultado con el presupuesto que enviaste de verdad. En los recursos de esta clase tienes la plantilla de presupuesto, con la estructura completa y las tres instrucciones listas para copiar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Notas desordenadas, presupuesto claro en minutos",
+        "Partidas, lo que no incluye, plazo, validez y pago",
+        "Cliente A en la IA, datos reales en tu programa",
+        "Impuestos y sumas: los decides y compruebas tú"
+      ],
+      "narracion": "Repasemos. Con una sola instrucción conviertes las notas de la visita en un presupuesto ordenado. Pide siempre partidas, lo que no incluye, plazo, validez y forma de pago. No metas los datos del cliente en la IA. El tipo de impuesto lo confirmas con tu gestoría y cada suma la compruebas tú. En la próxima clase hablamos de facturación: qué puede hacer la IA para ayudarte y, sobre todo, qué no puede hacer. Te recomiendo verla con calma, porque es la que más dudas genera entre los autónomos."
+    }
+  ]
+}

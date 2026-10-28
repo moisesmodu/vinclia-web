@@ -1,0 +1,90 @@
+{
+ "id": "c4",
+ "slug": "bienestar-digital-familia",
+ "color": "#3CC47C",
+ "color2": "#2F6BFF",
+ "base": [
+  "digital"
+ ],
+ "gratis": true,
+ "titulo": "Bienestar digital en familia: guía rápida para padres",
+ "duracionObjetivoMin": 50,
+ "secciones": [
+  {
+   "t": "Bienestar digital en familia",
+   "l": [
+    {
+     "t": "Bienvenida: lo que de verdad importa",
+     "src": [
+      "d3-1"
+     ],
+     "nota": "",
+     "id": "c4-01"
+    },
+    {
+     "t": "Contraseñas y cuentas de toda la familia",
+     "src": [
+      "d1-1",
+      "d4-3"
+     ],
+     "nota": "",
+     "id": "c4-02"
+    },
+    {
+     "t": "Lo que compartimos y la huella digital",
+     "src": [
+      "d1-2",
+      "d1-3"
+     ],
+     "nota": "",
+     "id": "c4-03"
+    },
+    {
+     "t": "Bulos, imágenes falsas e inteligencia artificial",
+     "src": [
+      "d2-1",
+      "d5-2",
+      "d2-2"
+     ],
+     "nota": "",
+     "id": "c4-04"
+    },
+    {
+     "t": "Respeto en la red y ciberacoso",
+     "src": [
+      "d2-3"
+     ],
+     "nota": "",
+     "id": "c4-05"
+    },
+    {
+     "t": "Pantallas, videojuegos y compras dentro del juego",
+     "src": [
+      "d3-1",
+      "d3-2",
+      "d6-2"
+     ],
+     "nota": "",
+     "id": "c4-06"
+    },
+    {
+     "t": "Mensajes trampa y permisos de las apps",
+     "src": [
+      "d4-1",
+      "d4-2"
+     ],
+     "nota": "",
+     "id": "c4-07"
+    },
+    {
+     "t": "Vuestro plan digital familiar y siguientes pasos",
+     "src": [
+      "d3-4"
+     ],
+     "nota": "",
+     "id": "c4-08"
+    }
+   ]
+  }
+ ]
+}

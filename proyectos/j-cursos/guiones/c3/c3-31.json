@@ -1,0 +1,101 @@
+{
+  "id": "c3-31",
+  "titulo": "Medir el ahorro: tu cuaderno de horas",
+  "descripcion": "Mide con un cuaderno sencillo cuánto tiempo te ahorra de verdad la IA en cinco tareas, con la revisión incluida, y decide qué seguir usando y qué dejar.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:cuaderno-horas"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Medir el ahorro: tu cuaderno de horas",
+      "subtitulo": "Cifras tuyas, no promesas de nadie",
+      "narracion": "Llevas varias secciones probando la IA en tu negocio. Seguramente tienes la sensación de que ahorras tiempo. Pero una sensación no sirve para decidir si pagar un plan, si automatizar algo o si dejar de usar una herramienta. En esta clase vas a montar tu cuaderno de horas. Es una tabla muy sencilla en la que apuntas cuánto tardabas antes y cuánto tardas ahora, con la revisión incluida. En dos semanas tendrás tus propias cifras. Y con ellas, decidirás con datos."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si no incluyes el tiempo de revisar, no estás midiendo el ahorro: estás midiendo una ilusión.",
+      "narracion": "Esta es la idea que más se olvida. La IA escribe en segundos, pero tú tienes que leer, corregir y comprobar cifras y nombres. Ese tiempo también cuenta. A veces una tarea parece que pasa de veinte minutos a uno, y en realidad pasa de veinte a ocho, porque revisar lleva siete. Sigue siendo un gran ahorro. Pero es el ahorro real, el que puedes planificar. Y hay tareas en las que, con la revisión, no ahorras nada. Esas también conviene descubrirlas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo medir en dos semanas",
+      "pasos": [
+        "Elige cinco tareas que repites cada semana",
+        "Semana 1: hazlas como siempre y cronometra",
+        "Semana 2: hazlas con IA y cronometra, revisión incluida",
+        "Apunta cada vez en el cuaderno, no de memoria",
+        "Al final, compara y decide"
+      ],
+      "narracion": "El método tiene cinco pasos. Elige cinco tareas que repitas cada semana. Por ejemplo, responder WhatsApp, contestar reseñas, preparar presupuestos, escribir publicaciones y resumir correos. La primera semana hazlas como siempre y cronométralas con el móvil. La segunda semana, hazlas con IA y cronométralas también, revisión incluida. Apunta cada vez en el cuaderno, en el momento, no de memoria al final de la semana. La memoria siempre exagera. Y al final, compara los números y decide."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Así se ve tu cuaderno (ejemplo inventado)",
+      "columnas": ["Tarea semanal", "Antes", "Con IA y revisión"],
+      "filas": [
+        ["Responder 30 WhatsApp", "90 minutos", "45 minutos"],
+        ["Contestar 5 reseñas", "25 minutos", "10 minutos"],
+        ["Preparar 4 presupuestos", "80 minutos", "40 minutos"],
+        ["Publicaciones de la semana", "60 minutos", "20 minutos"],
+        ["Resumir correos largos", "30 minutos", "15 minutos"]
+      ],
+      "narracion": "Así se ve un cuaderno relleno. Los números son inventados, para que veas el formato. Cada fila es una tarea semanal, con lo que tardabas antes y lo que tardas ahora con IA y revisión. En este ejemplo, la semana pasa de casi cinco horas a poco más de dos. Pero lo importante no es el total, sino ver dónde está el ahorro de verdad. Aquí, los WhatsApp, los presupuestos y las publicaciones se llevan casi todo el ahorro. Tus cifras serán distintas. Por eso hay que medirlas."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo contar el ahorro",
+      "mal": "Con la IA ahorro un montón de tiempo.",
+      "bien": "Reseñas: de 25 a 10 minutos a la semana, revisión incluida. Unas 13 horas al año.",
+      "narracion": "Fíjate en la diferencia. Decir que ahorras un montón no te ayuda a decidir nada. Decir que las reseñas te llevan diez minutos en lugar de veinticinco, con revisión incluida, sí. Quince minutos a la semana parecen poco. Pero multiplicados por cincuenta y dos semanas son unas trece horas al año. Casi dos jornadas de trabajo. Cuando ves las tareas así, sabes cuáles merecen la pena y cuáles no compensan el esfuerzo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: analizar tu cuaderno",
+      "usuario": "Te pego mi cuaderno de horas de dos semanas: tarea, minutos antes y minutos con IA. Calcula el ahorro semanal de cada tarea y el total, y ordénalas de más a menos ahorro. Señala las tareas donde casi no ahorro. Muestra las operaciones para que pueda comprobarlas.",
+      "ia": "Ahorro semanal por tarea:\n1. Publicaciones: 60 − 20 = 40 minutos\n2. Presupuestos: 80 − 40 = 40 minutos\n3. WhatsApp: 90 − 45 = 45 minutos\n4. Reseñas: 25 − 10 = 15 minutos\n5. Correos: 30 − 15 = 15 minutos\nTotal: 155 minutos a la semana.",
+      "narracion": "Cuando tengas tus datos, la IA te ayuda a analizarlos. Pega el cuaderno y pídele el ahorro por tarea, el total y el orden de más a menos. La clave está en la última frase. Muestra las operaciones para que pueda comprobarlas. Las IA se equivocan con las cuentas más de lo que parece. Mira el ejemplo. Ha puesto WhatsApp en tercer lugar con cuarenta y cinco minutos, cuando es la tarea que más ahorra. Por eso las operaciones a la vista. Las cifras, siempre las revisas tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Mejor aún: que la hoja haga las cuentas",
+      "usuario": "Tengo una hoja de Google con tres columnas: A tarea, B minutos antes, C minutos con IA. Dame la fórmula para calcular el ahorro en la columna D y el total al final. Explícamelo como si nunca hubiera usado fórmulas.",
+      "ia": "En la celda D2 escribe =B2-C2 y pulsa intro. Así calculas el ahorro de la primera tarea. Después arrastra el cuadradito de la esquina de D2 hacia abajo hasta la última tarea. Para el total, en la celda debajo de la última fila escribe =SUMA(D2:D6).",
+      "narracion": "Para las cuentas, mejor que la IA te enseñe a usar la hoja de cálculo, que no se equivoca sumando. Pídele las fórmulas y que te lo explique como si nunca hubieras usado una. Con una resta y una suma tienes el cuaderno completo. Además, cada semana solo tendrás que añadir los minutos y el total se actualiza solo. Si ya hiciste la clase de tickets y gastos, esto te resultará familiar. En los recursos tienes el cuaderno de horas ya preparado, con las fórmulas puestas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Más allá de los minutos",
+      "puntos": [
+        "Valor: horas ahorradas por lo que vale tu hora",
+        "Coste: el plan de pago, si lo usas",
+        "Calidad: errores, quejas y citas perdidas",
+        "Ánimo: tareas que antes dejabas para el domingo"
+      ],
+      "narracion": "El tiempo no es lo único que puedes medir. Multiplica las horas ahorradas por lo que vale tu hora de trabajo y compáralo con lo que pagas. Si usas un plan de pago, piensa en unos veinte euros al mes como orden de magnitud. Mide también la calidad. Si te equivocas menos en los presupuestos o pierdes menos citas, eso es dinero. Y hay un dato que no sale en ninguna tabla. Esas tareas que antes dejabas para el domingo por la noche. Anótalo también."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Abre la plantilla del cuaderno de horas",
+        "Escribe tus cinco tareas semanales",
+        "Pon una alarma para cronometrar la primera mañana",
+        "Apunta en el cuaderno cada vez que hagas una tarea",
+        "Ponte un recordatorio para revisarlo en dos semanas"
+      ],
+      "narracion": "Tu tarea de hoy son diez minutos. Abre la plantilla del cuaderno de horas de los recursos o crea una hoja con tres columnas. Escribe tus cinco tareas semanales. Pon una alarma en el móvil para acordarte de cronometrar mañana. Desde ese momento, apunta cada vez que hagas una de esas tareas. Y ponte un recordatorio en el calendario para dentro de dos semanas. Ese día analizas el cuaderno y decides qué tareas mantienes con IA y cuáles no."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Mide cinco tareas, dos semanas, antes y con IA",
+        "Incluye siempre el tiempo de revisión",
+        "Apunta en el momento, no de memoria",
+        "Las cuentas, en la hoja de cálculo",
+        "Decide con tus cifras qué mantener y qué dejar"
+      ],
+      "narracion": "Repasamos. Mide cinco tareas durante dos semanas, antes y con IA. Incluye siempre el tiempo de revisión. Apunta en el momento, no de memoria. Deja que la hoja de cálculo haga las cuentas y revisa lo que te diga la IA. Y decide con tus propias cifras qué mantienes y qué dejas. Así cerramos la sección de automatizaciones. En la siguiente recorremos negocios reales en tipo, de principio a fin, empezando por una peluquería en Lleida."
+    }
+  ]
+}

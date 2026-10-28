@@ -1,0 +1,122 @@
+{
+  "id": "c2-30",
+  "titulo": "Sumo de robots: el orden de los «si» es la prioridad",
+  "descripcion": "Programa un Maqueen de sumo que no sale nunca del dohyo, busca al rival con los ultrasonidos y ataca, y descubre por qué el orden de las condiciones decide quién gana.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k7-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Sumo",
+      "subtitulo": "Misión 2: la competición de sumo de robots",
+      "narracion": "Segunda misión de la semana: ¡la competición de sumo de robots! Dos robots entran en un círculo, el dohyo, y cada uno intenta sacar al otro empujándolo. Quien sale, pierde. Primero entrenaremos con latas y con el muñeco de entrenamiento, una caja que hace de rival. Antes de empezar, piensa tres preguntas. ¿Cómo sabe el robot que está en el borde? ¿Cómo encuentra al rival sin ojos? ¿Y qué es más importante: atacar o no caer?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El dohyo",
+      "puntos": [
+        "Círculo blanco con borde negro; más allá, el vacío",
+        "Sensores de línea: 0 en el blanco, 1 en el negro y en el aire",
+        "Si L o R valen 1, el robot está a punto de caer",
+        "Nuestro dohyo mide 76 cm de ancho"
+      ],
+      "narracion": "Empecemos por el campo. El dohyo es un círculo blanco con un borde negro y, más allá, el vacío. Ya conoces los sensores de línea de la unidad 4: dan 0 en el blanco y 1 en el negro. Y aquí hay una novedad útil: también dan 1 en el aire, cuando no hay suelo debajo. Así que, si L o R valen 1, el robot está a punto de caer y tiene que retroceder. Nuestro dohyo mide 76 centímetros de ancho. El Maqueen cabe muchas veces."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-2:4",
+      "narracion": "Primera regla del sumo: no salir nunca. El programa dice: si L igual a 1 o R igual a 1, atrás y gira; si no, adelante. Fíjate en la palabra «o». Predice antes de mirar: ¿qué pasará cuando el robot llegue al borde de lado, con un solo sensor sobre el negro? Mira la demo. Con un solo sensor ya basta para retroceder. Si hubiéramos puesto «y», el robot esperaría a que los dos vieran negro. Llegando de lado, caería."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Busca y ataca",
+      "puntos": [
+        "Gira sobre sí mismo como un faro",
+        "Si la distancia es menor que 60: ¡ataque a velocidad 255!",
+        "¿Por qué 60? El dohyo mide 76 cm: lo que ve está dentro",
+        "Con 500 atacaría siempre: 500 quiere decir «no veo nada»"
+      ],
+      "narracion": "Para encontrar al rival, el robot gira sobre sí mismo como un faro, mientras los ultrasonidos miran adelante. Si la distancia es menor que 60, hay algo delante: ¡ataque a velocidad 255! ¿Por qué 60 y no otro número? Porque el dohyo mide 76 centímetros: algo a menos de 60 está dentro. Si pusieras 500, atacaría siempre, aunque no hubiera nada. Recuerda que 500 quiere decir no veo nada. Elegir el umbral es pensar en el tamaño del campo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-2:6",
+      "narracion": "Ahora juntamos las dos ideas contra el muñeco. Son tres «si», uno dentro del otro. Primero, si ve el borde, atrás un poco. Si no, y ve al rival, adelante a 255. Si no ve nada, gira para buscar. Predice: si el primer empujón no saca al muñeco, ¿qué hará el robot? Mira. Retrocede poco en el borde, vuelve a ver al muñeco y ataca otra vez. Insistir funciona. Por eso retrocede tan poco: así se queda cerca del rival."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-2:7",
+      "narracion": "Este programa tiene los mismos bloques, pero en otro orden. El «si ve al rival» va primero y el del borde, después. Predice: ¿cambia algo? Piénsalo antes de mirar. Mira la demo. El robot empuja la lata hasta el borde. Como todavía la ve delante, sigue atacando. Nunca llega a mirar el borde… y cae. Es un error típico pensar que el orden de los «si» no cambia nada. El primer «si» que se cumple es el que manda."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El orden de los «si» es la prioridad",
+      "pasos": [
+        "Seguridad: el borde",
+        "Ataque: el rival delante",
+        "Búsqueda: girar cuando no ve nada"
+      ],
+      "narracion": "Esta es la idea grande de hoy. Cuando se cumple el primer «si», los demás ni se miran. Por eso, en el primero ponemos lo más importante: la seguridad, no salir del dohyo. Después, el ataque, si el rival está delante. Y al final, la búsqueda, que es lo que hace cuando no pasa nada más. A esto lo llamamos prioridad. Pasa lo mismo fuera de los robots: antes de cruzar corriendo para coger una pelota, miras si viene un coche."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla: el dohyo de cuerda",
+      "puntos": [
+        "Un círculo de cuerda de unos dos metros, sin muebles cerca",
+        "Robot: ojos cerrados, brazos adelante y despacio",
+        "Sensores: solo dicen «¡borde!» o «¡rival delante!»",
+        "¡Borde!: dos pasitos atrás y un cuarto de vuelta",
+        "Misión: sacar un cojín sin pisar fuera"
+      ],
+      "narracion": "Esta actividad desconectada se hace con alguien de casa o en grupo. Con una cuerda, haced un círculo de unos dos metros, lejos de los muebles. Una persona hace de robot: ojos cerrados, brazos adelante y camina despacio. La otra hace de sensores: solo puede decir «¡borde!» o «¡rival delante!». Con borde, dos pasitos atrás y un cuarto de vuelta. Con rival, adelante a empujar el cojín. Si no, gira despacio. Después, probad a dar el aviso del borde tarde. ¿Qué pasa? El robot cae."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Entrenamientos en el simulador",
+      "puntos": [
+        "1. ¡No salgas! 20 segundos y al menos 150 cm sin caer",
+        "2. Fuera la lata: empújala, retrocede y párate",
+        "3. Busca el muñeco: cambia de sitio en cada pista",
+        "Extra: limpia el dohyo de tres latas en 45 segundos",
+        "Crea: gana al muñeco con las luces rojas al atacar"
+      ],
+      "narracion": "En la sesión de Numi Tech tienes tres entrenamientos. En el primero, el robot va adelante y cae. Haz que se pasee 20 segundos sin salir, recorriendo al menos 150 centímetros. En el segundo, empuja la lata fuera, retrocede sin caer y párate. En el tercero, busca al muñeco con los ultrasonidos. Para escribir «L igual a 1 o R igual a 1» necesitas el botón «Añade y, o». Y en el proyecto, prepara tu campeón con las luces del coche rojas cuando ataca."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La competición con el Maqueen",
+      "pasos": [
+        "Dohyo en el suelo: cordel de 38 cm y cinta negra por dentro",
+        "Papeles: programador, piloto, árbitro y secretario",
+        "Prueba solo con una lata: no tiene que salir nunca",
+        "Combate: de espaldas en el medio, se encienden a la vez",
+        "Un minuto como mucho; entre combates, un solo cambio"
+      ],
+      "narracion": "Con el robot de verdad, el dohyo va siempre en el suelo, nunca sobre una mesa. Sobre un cartón blanco de unos 80 por 80 centímetros, marcad el centro. Con un cordel de 38 centímetros y un lápiz, dibujad el círculo y pegad la cinta negra por dentro. Pasad el programa con el botón MakeCode, o en MakeCode con la extensión maqueen, y descargadlo con el robot apagado. Primero, cada robot prueba solo con una lata. Después, combates: robots de espaldas en el medio y los pilotos los encienden a la vez. Nadie los toca durante el combate. Al terminar, se felicita al rival."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Cae al llegar al borde de lado", "Condición con «o», no con «y»"],
+        ["Empuja hasta el borde y cae", "El «si» del borde, el primero"],
+        ["Pierde al muñeco tras retroceder", "Espera más corta: 200 ms, no 800"],
+        ["Ataca siempre, aunque no haya nada", "Umbral de 60, no de 500"],
+        ["El robot real sale otra vez por ahí", "Un giro un poco más largo"]
+      ],
+      "narracion": "Repasemos los errores más comunes. Con «y» en lugar de «o», el robot cae cuando llega al borde de lado. Si el ataque va antes que el borde, empuja y cae. Si retrocede y gira mucho, pierde al muñeco de vista: compara 200 con 800 milisegundos. Con umbral 500, ataca siempre. Y en el robot real, a veces retrocede pero vuelve a salir por el mismo sitio: prueba un giro un poco más largo. Si tu robot pierde un combate, pregúntate qué hace el ganador que el tuyo no hace."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas del sumo",
+      "puntos": [
+        "Borde negro y vacío dan 1: ¡atrás!",
+        "Ultrasonidos: girar para buscar y atacar cuando lo ve",
+        "El orden de los «si» es la prioridad: seguridad primero",
+        "Hoy: el dohyo de cuerda, despacio y en un espacio libre"
+      ],
+      "narracion": "Resumen del sumo. Los sensores de línea dan 1 en el borde negro y en el vacío: entonces, atrás. Los ultrasonidos sirven para buscar girando y atacar cuando ven al rival. Y el orden de los «si» es la prioridad: primero la seguridad, después el ataque y al final la búsqueda. En las competiciones de robots, todos siguen las mismas reglas y gana la mejor estrategia, no la más fuerte. Para hoy, el dohyo de cuerda. En la próxima clase, un rescate en una cueva."
+    }
+  ]
+}

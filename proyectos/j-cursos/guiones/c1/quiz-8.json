@@ -1,0 +1,59 @@
+{
+  "seccion": 8,
+  "titulo": "Cuestionario: seguridad y bienestar digital",
+  "preguntas": [
+    {
+      "pregunta": "En España, ¿a partir de qué edad puede un menor consentir por sí mismo el tratamiento de sus datos personales?",
+      "respuestas": [
+        "12 años",
+        "14 años",
+        "16 años",
+        "18 años"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley española de protección de datos fija la edad en 14 años. Por debajo, hace falta el consentimiento de los padres. Además, la mayoría de redes sociales piden 13 años o más."
+    },
+    {
+      "pregunta": "Alguien de una partida en línea, a quien no conocéis en persona, le pide a tu hijo una foto y que no se lo cuente a nadie. ¿Qué debe hacer?",
+      "respuestas": [
+        "Enviarla si le parece simpático",
+        "Responderle con un insulto",
+        "No contestar, bloquearlo y contárselo a un adulto de confianza"
+      ],
+      "correcta": 2,
+      "explicacion": "Pedir fotos o secretos es una señal de alarma. Si ni él ni su familia lo conocen en persona, es un desconocido aunque sea simpático. No es culpa suya: lo importante es contarlo."
+    },
+    {
+      "pregunta": "¿Para qué sirve el teléfono 017?",
+      "respuestas": [
+        "Ayuda gratuita en ciberseguridad, del INCIBE",
+        "Emergencias con un peligro inmediato",
+        "Ayuda a la infancia y la adolescencia",
+        "Información sobre la etiqueta PEGI"
+      ],
+      "correcta": 0,
+      "explicacion": "El 017 ayuda con problemas de internet, también a familias. El 116 111 es el teléfono de ayuda a la infancia y la adolescencia, y el 112, el de emergencias."
+    },
+    {
+      "pregunta": "¿Cuál de estos acuerdos del pacto digital de casa está mejor planteado?",
+      "respuestas": [
+        "Menos pantallas",
+        "Nunca más videojuegos",
+        "Pantallas solo cuando se porte bien",
+        "La tableta duerme en la cocina"
+      ],
+      "correcta": 3,
+      "explicacion": "Un buen acuerdo es concreto (qué, cuándo y dónde), en positivo, posible de cumplir y válido para toda la familia, también para los adultos."
+    },
+    {
+      "pregunta": "Antes de compartir un proyecto, ¿qué tres preguntas propone el semáforo de Tech Digital?",
+      "respuestas": [
+        "¿Es amable? ¿Es verdad? ¿Me importaría que lo viera todo el mundo?",
+        "¿Es largo? ¿Es bonito? ¿Tiene música?",
+        "¿Cuántos «me gusta» tendrá? ¿Lo verán mis amigos? ¿Es gracioso?"
+      ],
+      "correcta": 0,
+      "explicacion": "Si las tres respuestas son que sí, adelante. Si hay dudas, no se publica o se pregunta a un adulto. Lo publicado se puede copiar aunque después se borre."
+    }
+  ]
+}
