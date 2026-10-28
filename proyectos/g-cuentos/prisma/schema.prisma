@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+// Estados del pedido:
+// borrador → (pago) pagado → ilustrando → maquetando → entregado → [impreso: enviado_imprenta → enviado]
+// Cualquier paso puede pasar a "incidencia" con `error` relleno; la tarea diaria las revisa.
+model Pedido {
+  id               String    @id @default(cuid())
+  creadoEn         DateTime  @default(now())
+  actualizadoEn    DateTime  @updatedAt
+  estado           String    @default("borrador")
+  pais             String    @default("ES")
+  idioma           String
+  coleccion        String
+  tema             String
+  genero           String
+  datos            Json      // DatosNino completos
+  cuento           Json      // { titulo, dedicatoria, paginas[12], contraportada, fuente }
+  formato          String?   // "pdf" | "tapaDura"
+  precioCents      Int?
+  moneda           String    @default("EUR")
+  email            String?
+  nombreCliente    String?
+  envio            Json?     // dirección de envío (tapa dura)
+  stripeSessionId  String?   @unique
+  stripePaymentId  String?
+  pagadoEn         DateTime?
+  afiliado         String?   // código del afiliado
+  comisionCents    Int?
+  ilustraciones    Json?     // { "0": url, "1": url, ... "12": url }
+  trabajosIlustr   Json?     // ids de trabajos del proveedor de imagen
+  pdfUrl           String?   // PDF de lectura (pantalla)
+  interiorUrl      String?   // PDF de imprenta (interior con sangrado)
+  cubiertaUrl      String?   // PDF de imprenta (cubierta)
+  imprentaPedidoId String?
+  imprentaEstado   String?
+  seguimientoUrl   String?
+  entregadoEn      DateTime?
+  intentos         Int       @default(0)
+  error            String?
+  notas            String?
+
+  @@index([estado])
+  @@index([afiliado])
+}
+
+model Afiliado {
+  codigo      String   @id
+  creadoEn    DateTime @default(now())
+  nombre      String
+  email       String   @unique
+  redSocial   String
+  seguidores  String?
+  token       String   @unique // acceso al panel sin contraseña
+  clics       Int      @default(0)
+  activo      Boolean  @default(true)
+  iban        String?
+  pagadoCents Int      @default(0)
+}
+
+model Evento {
+  id       Int      @id @default(autoincrement())
+  creadoEn DateTime @default(now())
+  pedidoId String?
+  tipo     String
+  detalle  Json?
+
+  @@index([pedidoId])
+}
