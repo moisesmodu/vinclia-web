@@ -224,3 +224,12 @@ b { font-weight: 600; }
 .muestras code { font-size: .75rem; }
 .muestras small { opacity: .65; }
 @media (max-width: 720px) { .marca-grid { grid-template-columns: 1fr; } }
+
+/* Dónde ver cada proyecto */
+.fila-ver { grid-template-columns: 2fr 2fr 1.6fr 1fr; }
+.fila-ver a { word-break: break-word; }
+.boton-web, .boton-prev { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: .85rem; font-weight: 600; text-decoration: none; margin: 2px 6px 2px 0; }
+.boton-web { background: var(--acento, #0E9F6E); color: #fff; }
+.boton-prev { background: transparent; border: 1px solid var(--borde, #e6e3dc); color: inherit; }
+.botones-web { margin: 10px 0 0; }
+@media (max-width: 720px) { .fila-ver { grid-template-columns: 1fr; } }

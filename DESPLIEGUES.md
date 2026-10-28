@@ -29,7 +29,7 @@ de las sesiones de proyecto: menú del entorno en la barra de título de la sesi
 | `STRIPE_SECRET_KEY` | dashboard.stripe.com (cuenta **Numi Mates**, modo real) → Developers → API keys → **Restricted key** con permisos de escritura en Products, Prices, Checkout Sessions, Customers, Subscriptions, Webhook Endpoints, Coupons; lectura en Balance y Payment Intents | Cobros reales de todos los proyectos |
 | `STRIPE_TEST_SECRET_KEY` | la misma cuenta en modo prueba → Developers → API keys → Secret key `sk_test_` | Desarrollo y pruebas de punta a punta |
 | `RESEND_API_KEY` | resend.com → API Keys → Create (la cuenta ya existe; dominio `algorithmicslleida.com` verificado) | Correo transaccional |
-| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas | Textos legales de cada producto |
+| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas. **`LEGAL_EMAIL` = `hola@numimates.com`** en todos los proyectos hasta que cada uno tenga dominio propio; nunca el correo personal de Moisés ni nada de Algorithmics | Textos legales de cada producto |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (solo si P va en Cloudflare Pages) | dash.cloudflare.com → My Profile → API Tokens → plantilla «Edit Cloudflare Workers» + Pages; Account ID en la página de inicio del dominio | Publicar los sitios de P sin coste |
 | `GELATO_API_KEY` (G) | dashboard.gelato.com → Developer → API keys; la cuenta la abre Moisés (identidad y tarjeta) | Pedidos de impresión de cuentos |
 | `GOOGLE_PLAY_JSON` (más adelante) | Google Play Console → cuenta de servicio | Publicar apps Android |
@@ -101,6 +101,7 @@ de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
 | #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
 | #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
 | #5 | G · Lunilla | `claude/g-cuentos` | sí | Neon `cartera-g-cuentos` (aws-eu-west-2), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, `scripts/stripe-configurar.mjs` (PDF 7,90 €, tapa dura 36,90 €), Resend; Gelato lo abre Moisés |
+| — | Panel «La cartera» | rama base | `panel/DESPLIEGUE.md` | Proyecto `cartera`, Root Directory `panel`, Next.js estático, integración Git para que se publique con cada push; protección con contraseña si hay plan Pro |
 | #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos caminos: (A) Cloudflare Pages con wrangler y el workflow `p-webs-adsense.yml`, que publica solo en cada push a la base si existe `CLOUDFLARE_API_TOKEN`; (B) Vercel Pro (`netoclaro`, `impuestoclaro`, Root Directory `proyectos/p-webs-adsense/fabrica`). Variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
 
 Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
@@ -120,3 +121,13 @@ los PR abiertos de moisesmodu/vinclia-web hacia la rama base cuyo diff añada un
 esté marcado como ejecutado; ejecuta cada uno en orden según DESPLIEGUES.md §3, anota la URL de producción y el estado
 `lanzado` en panel/data/proyectos.json, añade al final del DESPLIEGUE.md la línea `Ejecutado el <fecha>` y haz push a
 la rama del PR. Si falta un acceso, créalo (sección 1) y guárdalo también como secreto del entorno en la nube.»
+
+## 6. Correo de contacto: hola@numimates.com en todo (decisión del 28/10)
+
+Hasta que cada proyecto tenga su dominio, el correo de contacto, el del aviso legal, el de respuesta (`reply-to`) y el
+que ve el cliente en Stripe es **hola@numimates.com**. El remitente técnico de Resend sigue siendo `noreply@numimates.com`.
+Ningún proyecto muestra el correo personal de Moisés ni ningún correo de Algorithmics. Cuando llegue el dominio propio
+(lunilla.es, nuevoenespana.app, netoclaro.es…), se cambia `LEGAL_EMAIL` y el `correo` de la configuración del país,
+se verifica el dominio en Resend y se redespliega. Tras el cambio del 28/10, la sesión del Mac cambia el secreto
+`LEGAL_EMAIL` del entorno a `hola@numimates.com` y **redespliega todos los proyectos** cuando sus PR lleven el commit
+del correo.
