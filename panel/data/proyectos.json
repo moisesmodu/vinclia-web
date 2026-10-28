@@ -432,7 +432,7 @@
   "nombre": "Oposiciones de cola larga",
   "marca": "Exámenes",
   "resumen": "Aprova: tests, simulacros con el formato real y repaso espaciado para 5 oposiciones catalanas (Generalitat C2, ayuntamientos, Mossos, Bombers, TCAI ICS), en catalán y castellano, con 1.737 preguntas verificadas contra la ley.",
-  "estado": "en construcción",
+  "estado": "lanzado",
   "orden": 3,
   "modelo": "Suscripción 9,99 €/mes",
   "margenCliente": 55,
@@ -442,8 +442,8 @@
   "clientes": 0,
   "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
   "enlaces": {
+   "demo": "https://aprova-oposicions.vercel.app",
    "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/proyecto-b-oposiciones/proyectos/b-oposiciones",
-   "demo": "https://aprova-oposicions.vercel.app (pendiente de desplegar)",
    "pr": "https://github.com/moisesmodu/vinclia-web/pull/7"
   },
   "acciones": [
@@ -486,6 +486,10 @@
    {
     "fecha": "2026-10-28",
     "texto": "Marketing: 246 URLs SEO, página Convocatorias 2027, ficha de Google Play, 10 guiones, campaña de búsqueda preparada sin activar; DESPLIEGUE.md para la sesión del Mac"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Desplegado en producción (https://aprova-oposicions.vercel.app) desde la sesión del Mac: proyecto de Vercel aprova-oposicions, Neon cartera-b-oposiciones (Londres) con las tablas creadas en el build, Stripe en el entorno de prueba de Numi Mates (precios mensual, trimestral y anual y webhook)."
    }
   ],
   "proximos": [
@@ -498,7 +502,10 @@
   "paraMoises": [
    "Nada hoy: el despliegue lo hace la sesión del Mac",
    "Opcional: dominio propio (aprova.cat o similar)",
-   "Mes 2: aprobar o no los anuncios de búsqueda"
+   "Mes 2: aprobar o no los anuncios de búsqueda",
+   "Poner LEGAL_NOM, LEGAL_NIF, LEGAL_EMAIL y LEGAL_ADRECA en Vercel (aprova-oposicions)",
+   "Poner RESEND_API_KEY en Vercel para recuperar la contraseña por correo",
+   "Pago de prueba con 4242 4242 4242 4242 en https://aprova-oposicions.vercel.app/es/precios"
   ],
   "mejoras": [
    "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",

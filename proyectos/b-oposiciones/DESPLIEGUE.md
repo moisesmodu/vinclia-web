@@ -78,3 +78,17 @@ llega hasta la página de Checkout y comprueba el resto del flujo.
 ## Después
 Anotar en `panel/data/proyectos.json` (ficha `b-oposiciones`): `enlaces.demo` = la URL, `estado` = `lanzado`, y push a la
 rama base. Crear la tarea programada con el prompt de `TAREA-PROGRAMADA.md`.
+
+## Cómo se ejecutó (sesión del Mac, 28-10-2026)
+- Vercel: proyecto `aprova-oposicions` (Node 22) creado con el CLI ya autenticado en el Mac (sin `VERCEL_TOKEN`), Root
+  Directory `proyectos/b-oposiciones`. URL de producción: https://aprova-oposicions.vercel.app
+- Neon: recurso `cartera-b-oposiciones` (región `lhr1`, Londres, plan gratis) creado con la integración de Neon del equipo
+  de Vercel (sin `NEON_API_KEY`); `DATABASE_URL` y `DATABASE_URL_UNPOOLED` las pone la integración. Tablas creadas por el build.
+- Stripe: recurso `numi-mates` de la integración de Stripe del equipo conectado al proyecto. Pone `STRIPE_SECRET_KEY` (`sk_test_`)
+  del «Entorno de prueba de Numi Mates» (`acct_1UKvWA9ds25vHCsF`, sandbox), que `lib/pagos.ts` acepta con `STRIPE_MODO=prueba`.
+  `scripts/stripe-preparar.mjs` creó ahí los tres precios y el webhook; `STRIPE_WEBHOOK_SECRET` está en Vercel.
+- Faltan (los pone Moisés en Vercel → aprova-oposicions → Settings → Environment Variables): `LEGAL_NOM`, `LEGAL_NIF`,
+  `LEGAL_EMAIL`, `LEGAL_ADRECA` y `RESEND_API_KEY`. Falta también el pago de prueba con la tarjeta 4242 (paso 6) y la
+  tarea programada de `TAREA-PROGRAMADA.md`.
+
+Ejecutado el 2026-10-28
