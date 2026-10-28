@@ -25,6 +25,22 @@ semanal (TAREA-PROGRAMADA.md). Última actualización: 28/10/2026, sin datos rea
 Sin `ca-pub` no se carga nada de Google, así que la página sigue con Lighthouse 100. El paso a paso está en
 DESPLIEGUE.md, en el apartado «Después».
 
+## Segunda vía: afiliación (más rápida que AdSense)
+
+Los bloques «Publicidad · Enlace patrocinado» ya están bajo el resultado de las calculadoras que encajan (`AFILIACION.md`).
+Se encienden solos con la variable `AFILIADO_<ID>`. Funcionan sin dominio propio y sin esperar a que Google apruebe
+AdSense, así que pueden dar el primer euro antes.
+
+| Programa | Pago | Dónde va | Altas necesarias para el primer euro |
+|---|---|---|---|
+| Xolo (gestoría de autónomos) | 29 € por cliente | Neto de autónomo, precio por hora, «¿autónomo o asalariado?» | 1 alta. Con una conversión del 0,3 % sobre unas 330 visitas a esas calculadoras |
+| Qonto (cuenta de negocio) | 20 € por cuenta activa | Tarifa plana, factura | 1 cuenta |
+| Quipu (facturación) | 30 % de la cuota durante 12 meses | Factura, IVA, 303, 130, Verifactu | 1 cliente, unos 3–5 € al mes durante un año |
+
+**Fecha prevista del primer euro con afiliación:** unos 7–10 días después de que Moisés se dé de alta en Xolo y Qonto y
+lleguen las primeras visitas de foros (las 100 primeras visitas, más abajo). Es una estimación y depende sobre todo de
+la tasa de conversión, que hoy no conocemos.
+
 ## Previsión de RPM, en euros por 1.000 páginas vistas
 
 Son estimaciones y no datos medidos. Las he sacado de rangos públicos de AdSense para España en nichos de finanzas

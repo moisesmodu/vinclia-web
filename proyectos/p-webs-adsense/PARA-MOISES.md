@@ -3,20 +3,27 @@
 Tareas que exigen a una persona. El despliegue (Cloudflare Pages o Vercel), las variables y la analítica los hace la
 sesión del Mac con `DESPLIEGUE.md`. No hace falta que crees proyectos ni pegues claves.
 
-## 1. Comprar los 2 dominios (5 minutos, unos 8–12 € al año cada uno)
+## 1. Comprar los dominios (mañana, 10 minutos)
 
-He propuesto tres opciones por sitio, en orden de preferencia. Desde la sesión en la nube no he podido comprobar si
-están libres, porque el registro de dominios está bloqueado por la red. Compra la primera libre de cada lista en
-[DonDominio](https://www.dondominio.com/es/) o en cualquier registrador de .es, y dímelo. La sesión del Mac la conecta
-al despliegue.
+No he podido comprobar desde aquí si están libres, porque la red bloquea los registros de dominios. Compra la primera
+opción libre de cada fila en [DonDominio](https://www.dondominio.com/es/) o en tu registrador habitual.
 
-| Sitio | Opción 1 (la que lleva el código) | Opción 2 | Opción 3 |
-|---|---|---|---|
-| 1 · Nómina y laboral («NetoClaro») | **netoclaro.es** | calculanomina.es | sounet.es |
-| 2 · Impuestos y autónomos («ImpuestoClaro») | **impuestoclaro.es** | cuotaclara.es | irpfacil.es |
-| 3 · Finanzas de EE. UU. en español (dentro de 6–8 semanas; **no comprar aún**) | chequeclaro.com | taxesclaros.com | nominaclara.com |
+| Prioridad | Sitio | Opción 1 (la que lleva el código) | Opción 2 | Opción 3 | Precio aproximado |
+|---|---|---|---|---|---|
+| **Imprescindible** | 1 · NetoClaro (nómina y laboral) | **netoclaro.es** | calculanomina.es | sounet.es | 8–12 €/año |
+| **Imprescindible** | 2 · ImpuestoClaro (impuestos y autónomos) | **impuestoclaro.es** | cuotaclara.es | irpfacil.es | 8–12 €/año |
+| Recomendado, porque ya se está construyendo | 3 · ChequeClaro (finanzas de EE. UU. en español) | **chequeclaro.com** | taxesclaros.com | nominaclara.com | 10–15 €/año |
+| Opcional, para reservar el nombre | 4 · PisoClaro (vivienda e hipotecas) | pisoclaro.es | hipotecaclara.es | casaclara.es | 8–12 €/año |
+| Opcional, para reservar el nombre | 5 · MotorClaro (coche) | motorclaro.es | cocheclaro.es | circulaclaro.es | 8–12 €/año |
 
-He descartado «CuentaClara» para el sitio 2 porque ABANCA tiene cuentas «Cuenta Clara» para autónomos.
+- **Coste:** los dos imprescindibles suman unos 20 € al año. Los cinco juntos, unos 50 € al año.
+- **Marcas que he cambiado:**
+  - Para el sitio 2 he descartado «CuentaClara», porque ABANCA tiene cuentas «Cuenta Clara» para autónomos.
+  - Para el sitio 4 he descartado «HipotecaClara», porque existe un curso de pago llamado «Método Hipoteca Clara».
+- **Después de comprar:** dime qué dominios has comprado. La sesión del Mac los conecta a Vercel con
+  `DESPLIEGUE.md`. Si el registrador te pide DNS, son estos dos registros:
+  - un registro **A** en `@` con el valor `76.76.21.21`;
+  - un registro **CNAME** en `www` con el valor `cname.vercel-dns.com`.
 
 ## 2. AdSense: cuenta, código y mensaje de consentimiento (10 minutos)
 

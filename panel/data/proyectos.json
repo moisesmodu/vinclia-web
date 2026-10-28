@@ -3085,12 +3085,29 @@
       {
         "fecha": "2026-10-28",
         "texto": "Correo de contacto y aviso legal: hola@numimates.com en los dos sitios. MONETIZACION.md con RPM previsto (4 € y 6 €), visitas para el primer euro y para 100 €/mes, 100 primeras visitas sin anuncios y primer euro previsto el 30/11/2026 si los dominios se compran el 30/10"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Rediseño propio de la familia Claro: portada con calculadora en directo, barra «a dónde va cada euro», cifra animada, bento, cifras clave del año, 24 iconos propios y barra fija en el móvil; Lighthouse móvil 100 en las 16 páginas de muestra"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Afiliación preparada (Quipu, Xolo, Qonto y 9 más investigados en AFILIACION.md): bloques patrocinados que se encienden con AFILIADO_<ID>, página «Cómo nos financiamos»"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Vigilancia diaria de todas las webs de la cartera (scripts/vigilar-webs.mjs) y tarea programada de informe semanal los lunes"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Sitios 4 (PisoClaro, vivienda) y 5 (MotorClaro, coche) definidos con 20 calculadoras, parámetros 2026 y 200 palabras clave cada uno"
       }
     ],
     "proximos": [
-      "Sesión del Mac: redesplegar con el commit del correo (LEGAL_EMAIL=hola@numimates.com)",
-      "Moisés: comprar los dominios; con ellos, AdSense y Search Console el mismo día (primer euro previsto el 30/11)",
-      "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
+      "Moisés: comprar netoclaro.es e impuestoclaro.es (y chequeclaro.com) y darse de alta en Xolo, Qonto y Quipu",
+      "Sesión del Mac: redesplegar NetoClaro e ImpuestoClaro con el rediseño (PR #6) y conectar los dominios",
+      "Sitio 3 ChequeClaro (EE. UU. en español) en construcción",
+      "Construir PisoClaro y MotorClaro con la fábrica"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
