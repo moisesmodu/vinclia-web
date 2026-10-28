@@ -101,4 +101,4 @@ Después, abre una calculadora en el móvil y cambia una cifra: el resultado se 
   redespliega.
 - Añade al final de este archivo: `Ejecutado el <fecha>`.
 
-Ejecutado el: (pendiente)
+Ejecutado el 28/10/2026 desde la sesión del Mac, camino B (Vercel Pro): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con SITIO, SITE_URL y LEGAL_* en production.
