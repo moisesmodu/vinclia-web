@@ -50,19 +50,19 @@ export function Formulario({ idioma }: { idioma: Idioma }) {
       </fieldset>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <label><span className="etiqueta">{x.nombre}</span><input name="nombre" required maxLength={24} className="campo" autoComplete="off" /></label>
+        <label><span className="etiqueta">{x.nombre}</span><input id="f-nombre" name="nombre" required maxLength={24} className="campo" autoComplete="off" defaultValue={sp.get("nombre") ?? ""} /></label>
         <div className="grid grid-cols-2 gap-3">
           <label><span className="etiqueta">{x.edad}</span>
             <select name="edad" className="campo" defaultValue="4">{[2, 3, 4, 5, 6, 7, 8].map((n) => <option key={n}>{n}</option>)}</select>
           </label>
           <fieldset><legend className="etiqueta">{x.protagonista}</legend>
             <div className="flex gap-2">
-              <label className="flex-1"><input type="radio" name="genero" value="m" defaultChecked className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nino}</span></label>
-              <label className="flex-1"><input type="radio" name="genero" value="f" className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nina}</span></label>
+              <label className="flex-1"><input type="radio" name="genero" value="m" defaultChecked={sp.get("genero") !== "f"} className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nino}</span></label>
+              <label className="flex-1"><input type="radio" name="genero" value="f" defaultChecked={sp.get("genero") === "f"} className="peer sr-only" /><span className="campo flex items-center justify-center peer-checked:border-luna peer-checked:bg-[#FEF3D3] cursor-pointer">{x.nina}</span></label>
             </div>
           </fieldset>
         </div>
-        <label><span className="etiqueta">{x.ciudad}</span><input name="ciudad" required maxLength={40} className="campo" placeholder="Lleida" /></label>
+        <label><span className="etiqueta">{x.ciudad}</span><input id="f-ciudad" name="ciudad" required maxLength={40} className="campo" placeholder="Lleida" defaultValue={sp.get("ciudad") ?? ""} /></label>
         <label><span className="etiqueta">{x.aficion}</span>
           <select name="aficion" className="campo">{AFICIONES.map((a) => <option key={a.id} value={a.id}>{a.etiqueta[idioma]}</option>)}</select>
         </label>

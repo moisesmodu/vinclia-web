@@ -41,6 +41,17 @@ for (const p of PRODUCTOS) {
   salida.push(`${p.env}=${precio.id}`);
 }
 
+// Cupón para hermanos (anunciado en la portada): 20 % con el código HERMANOS20. Repetible.
+const codigos = await stripe.promotionCodes.list({ code: "HERMANOS20", limit: 1 });
+if (codigos.data[0]) console.log("= código HERMANOS20 ya existe");
+else {
+  const cupones = await stripe.coupons.list({ limit: 100 });
+  const cupon = cupones.data.find((c) => c.metadata?.proyecto === "g-cuentos" && c.percent_off === 20)
+    ?? (await stripe.coupons.create({ percent_off: 20, duration: "once", name: "Cartera · Cuentos · Hermanos 20 %", metadata: { proyecto: "g-cuentos" } }));
+  await stripe.promotionCodes.create({ coupon: cupon.id, code: "HERMANOS20", metadata: { proyecto: "g-cuentos" } });
+  console.log(`+ código HERMANOS20 (cupón ${cupon.id})`);
+}
+
 const url = `${base}/api/stripe/webhook`;
 const eventos = ["checkout.session.completed", "checkout.session.async_payment_succeeded"];
 const hooks = await stripe.webhookEndpoints.list({ limit: 100 });

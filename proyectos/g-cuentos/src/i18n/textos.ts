@@ -47,6 +47,11 @@ export const T = {
       ["¿Lo puedo ver antes de pagar?", "Sí: la vista previa gratuita muestra la portada, la dedicatoria y las primeras páginas con su nombre."],
       ["¿Está hecho con inteligencia artificial?", "Sí, con ayuda de IA y siempre a partir de plantillas escritas y revisadas por nosotros. Lo indicamos en el propio libro."],
       ["¿Puedo devolverlo?", "Al ser un producto personalizado no hay derecho de desistimiento, pero si algo no te gusta te lo rehacemos gratis una vez."],
+      ["¿Para qué edades es?", "De 2 a 8 años. El texto se adapta a la edad que escribes: frases cortas y repetitivas para los pequeños, algo más de historia a partir de los 6."],
+      ["¿Y si me equivoco al escribir un dato?", "Escríbenos en cuanto lo veas. Si el PDF ya ha salido, lo corregimos y te lo volvemos a enviar; si es tapa dura y aún no se ha impreso, lo paramos."],
+      ["¿Lo podéis enviar a otra casa?", "Sí. Al pagar pones la dirección de envío que quieras, por ejemplo la de tus nietos. Enviamos a la península y Baleares."],
+      ["¿Qué calidad tiene el libro impreso?", "Tapa dura laminada mate de 20 × 20 cm y 28 páginas a todo color en papel estucado de 170 g, con las ilustraciones a página completa."],
+      ["¿Puedo hacer uno para cada hermano?", "Sí, cada cuento lleva un nombre. El segundo tiene un 20 % de descuento con el código HERMANOS20."],
     ],
     form: {
       titulo: "Crea su cuento",
@@ -118,6 +123,11 @@ export const T = {
       ["El puc veure abans de pagar?", "Sí: la vista prèvia gratuïta mostra la portada, la dedicatòria i les primeres pàgines amb el seu nom."],
       ["Està fet amb intel·ligència artificial?", "Sí, amb ajuda d'IA i sempre a partir de plantilles escrites i revisades per nosaltres. Ho indiquem al mateix llibre."],
       ["El puc tornar?", "En ser un producte personalitzat no hi ha dret de desistiment, però si alguna cosa no t'agrada te'l refem gratis una vegada."],
+      ["Per a quines edats és?", "De 2 a 8 anys. El text s'adapta a l'edat que escrius: frases curtes i repetitives per als petits, una mica més d'història a partir dels 6."],
+      ["I si m'equivoco en escriure una dada?", "Escriu-nos tan aviat com ho vegis. Si el PDF ja ha sortit, el corregim i te'l tornem a enviar; si és tapa dura i encara no s'ha imprès, l'aturem."],
+      ["El podeu enviar a una altra casa?", "Sí. En pagar poses l'adreça d'enviament que vulguis, per exemple la dels teus néts. Enviem a la península i les Balears."],
+      ["Quina qualitat té el llibre imprès?", "Tapa dura laminada mat de 20 × 20 cm i 28 pàgines a tot color en paper estucat de 170 g, amb les il·lustracions a pàgina sencera."],
+      ["Puc fer-ne un per a cada germà?", "Sí, cada conte porta un nom. El segon té un 20 % de descompte amb el codi HERMANOS20."],
     ],
     form: {
       titulo: "Crea el seu conte",
