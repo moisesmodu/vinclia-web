@@ -65,6 +65,7 @@ eventos de webhook de Stripe; comandos a ejecutar en orden. La sesión del Mac l
 
 Orden de trabajo: (0) sección 0 (red del entorno); (1) sección 1 completa, para que las sesiones en la nube sean autónomas desde hoy; (2) ejecutar los
 `DESPLIEGUE.md` que ya existan (N está en el PR #3, rama `claude/n-nuevo-en-espana`, con `scripts/stripe-configurar.mjs`
-que crea productos y webhook de forma repetible; A llegará en su PR); (3) anotar en `panel/data/proyectos.json` la URL
+que crea productos y webhook de forma repetible; A está en el PR #2, rama `claude/a-ccse`, proyecto de Vercel obligatoriamente llamado `ccse-en-tu-idioma` porque la
+app Android ya lleva ese dominio, con su propio `scripts/stripe-configurar.mjs`); (3) anotar en `panel/data/proyectos.json` la URL
 de producción y el estado `lanzado` de cada uno, y hacer push a la rama base. Si una acción exige la sesión del
 navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo "abre esta página", nada más.
