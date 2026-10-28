@@ -1,0 +1,842 @@
+[
+  {
+    "id": "agen-t05-001",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, los menores de edad tienen capacidad de obrar ante las administraciones públicas:",
+      "opciones": [
+        "Para el ejercicio y defensa de los derechos e intereses cuya actuación esté permitida por el ordenamiento sin la asistencia de quien ejerza la patria potestad, tutela o curatela",
+        "En ningún caso, ya que deben actuar siempre por medio de sus representantes legales",
+        "En todos los procedimientos, a partir de los catorce años",
+        "Solo cuando estén emancipados y lo acrediten documentalmente"
+      ],
+      "explicacion": "El artículo 3.b) de la Ley 39/2015 reconoce capacidad de obrar a los menores para los derechos e intereses cuya actuación permita el ordenamiento sin asistencia de quien ejerza la patria potestad, tutela o curatela."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, els menors d'edat tenen capacitat d'obrar davant les administracions públiques:",
+      "opciones": [
+        "Per a l'exercici i la defensa dels drets i interessos l'actuació dels quals estigui permesa per l'ordenament sense l'assistència de qui exerceixi la pàtria potestat, la tutela o la curatela",
+        "En cap cas, ja que han d'actuar sempre per mitjà dels seus representants legals",
+        "En tots els procediments, a partir dels catorze anys",
+        "Només quan estiguin emancipats i ho acreditin documentalment"
+      ],
+      "explicacion": "L'article 3.b) de la Llei 39/2015 reconeix capacitat d'obrar als menors per als drets i interessos l'actuació dels quals permeti l'ordenament sense l'assistència de qui exerceixi la pàtria potestat, la tutela o la curatela."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a3"
+    },
+    "cita": "Los menores de edad para el ejercicio y defensa de aquellos de sus derechos e intereses cuya actuación esté permitida por el ordenamiento jurídico sin la asistencia de la persona que ejerza la patria potestad, tutela o curatela",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-002",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, quienes tienen intereses legítimos que puedan resultar afectados por la resolución, sin haber iniciado el procedimiento, se consideran interesados:",
+      "opciones": [
+        "Automáticamente, desde el inicio del procedimiento, aunque no se personen",
+        "Solo si la Administración les notifica de oficio el inicio del procedimiento",
+        "Si se personan en el procedimiento en tanto no haya recaído resolución definitiva",
+        "Solo si se personan antes del trámite de audiencia"
+      ],
+      "explicacion": "El artículo 4.1.c) de la Ley 39/2015 exige a los titulares de intereses legítimos que se personen en el procedimiento mientras no haya recaído resolución definitiva; los titulares de derechos afectados son interesados sin necesidad de personarse (letra b)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, els qui tenen interessos legítims que puguin resultar afectats per la resolució, sense haver iniciat el procediment, es consideren interessats:",
+      "opciones": [
+        "Automàticament, des de l'inici del procediment, encara que no s'hi personin",
+        "Només si l'Administració els notifica d'ofici l'inici del procediment",
+        "Si es personen en el procediment mentre no hi hagi hagut resolució definitiva",
+        "Només si es personen abans del tràmit d'audiència"
+      ],
+      "explicacion": "L'article 4.1.c) de la Llei 39/2015 exigeix als titulars d'interessos legítims que es personin en el procediment mentre no hi hagi hagut resolució definitiva; els titulars de drets afectats són interessats sense necessitat de personar-s'hi (lletra b)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "4.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a4"
+    },
+    "cita": "Aquellos cuyos intereses legítimos, individuales o colectivos, puedan resultar afectados por la resolución y se personen en el procedimiento en tanto no haya recaído resolución definitiva",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-003",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Un abogado interpone un recurso en nombre de su cliente, pero no acredita la representación. Según la Ley 39/2015, ¿qué debe hacer el órgano administrativo?",
+      "opciones": [
+        "Inadmitir el recurso de forma inmediata, sin posibilidad de subsanación",
+        "Conceder un plazo de diez días para que se aporte la acreditación o se subsane el defecto, y tener por realizado el acto si se hace",
+        "Presumir la representación, ya que interponer un recurso es un acto de mero trámite",
+        "Conceder un plazo de quince días y suspender el plazo para resolver"
+      ],
+      "explicacion": "El artículo 5.6 de la Ley 39/2015 permite subsanar la falta de acreditación en un plazo de diez días (o superior si lo requieren las circunstancias). Interponer recursos exige acreditar la representación; solo se presume en los actos de mero trámite (art. 5.3)."
+    },
+    "ca": {
+      "enunciado": "Un advocat interposa un recurs en nom del seu client, però no n'acredita la representació. Segons la Llei 39/2015, què ha de fer l'òrgan administratiu?",
+      "opciones": [
+        "Inadmetre el recurs de manera immediata, sense possibilitat d'esmena",
+        "Concedir un termini de deu dies perquè s'aporti l'acreditació o s'esmeni el defecte, i tenir per realitzat l'acte si es fa",
+        "Presumir la representació, ja que interposar un recurs és un acte de mer tràmit",
+        "Concedir un termini de quinze dies i suspendre el termini per resoldre"
+      ],
+      "explicacion": "L'article 5.6 de la Llei 39/2015 permet esmenar la manca d'acreditació en un termini de deu dies (o superior si ho requereixen les circumstàncies). Interposar recursos exigeix acreditar la representació; només es presumeix en els actes de mer tràmit (art. 5.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "5.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a5"
+    },
+    "cita": "La falta o insuficiente acreditación de la representación no impedirá que se tenga por realizado el acto de que se trate, siempre que se aporte aquélla o se subsane el defecto dentro del plazo de diez días que deberá conceder al efecto el órgano administrativo",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-004",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Tres hermanos firman conjuntamente una solicitud dirigida a la Generalitat sin señalar a ninguno como representante. Según la Ley 39/2015, ¿con quién se efectuarán las actuaciones?",
+      "opciones": [
+        "Con los tres hermanos, por separado",
+        "Con el de mayor edad",
+        "Con el que elija el órgano tramitador",
+        "Con el interesado que figure en primer término"
+      ],
+      "explicacion": "El artículo 7 de la Ley 39/2015 establece que, si hay varios interesados, las actuaciones se efectúan con el representante o interesado señalado y, en su defecto, con el que figure en primer término."
+    },
+    "ca": {
+      "enunciado": "Tres germans signen conjuntament una sol·licitud adreçada a la Generalitat sense assenyalar-ne cap com a representant. Segons la Llei 39/2015, amb qui s'han de fer les actuacions?",
+      "opciones": [
+        "Amb els tres germans, per separat",
+        "Amb el de més edat",
+        "Amb el que triï l'òrgan tramitador",
+        "Amb l'interessat que figuri en primer lloc"
+      ],
+      "explicacion": "L'article 7 de la Llei 39/2015 estableix que, si hi ha diversos interessats, les actuacions es fan amb el representant o l'interessat assenyalat i, si no n'hi ha, amb el que figuri en primer lloc."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a7"
+    },
+    "cita": "las actuaciones a que den lugar se efectuarán con el representante o el interesado que expresamente hayan señalado, y, en su defecto, con el que figure en primer término",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-005",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el artículo 29 de la Ley 39/2015, los términos y plazos establecidos en esta u otras leyes obligan:",
+      "opciones": [
+        "A las autoridades y al personal al servicio de las administraciones competentes y a los interesados",
+        "Solo a los interesados en el procedimiento",
+        "Solo a las autoridades y al personal de las administraciones",
+        "Solo a los órganos que deben resolver el procedimiento"
+      ],
+      "explicacion": "El artículo 29 de la Ley 39/2015 vincula los términos y plazos tanto a las autoridades y al personal de las administraciones como a los interesados."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 29 de la Llei 39/2015, els termes i els terminis establerts en aquesta o altres lleis obliguen:",
+      "opciones": [
+        "Les autoritats i el personal al servei de les administracions competents i els interessats",
+        "Només els interessats en el procediment",
+        "Només les autoritats i el personal de les administracions",
+        "Només els òrgans que han de resoldre el procediment"
+      ],
+      "explicacion": "L'article 29 de la Llei 39/2015 vincula els termes i els terminis tant a les autoritats i el personal de les administracions com als interessats."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "29",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a29"
+    },
+    "cita": "Los términos y plazos establecidos en ésta u otras leyes obligan a las autoridades y personal al servicio de las Administraciones Públicas competentes para la tramitación de los asuntos, así como a los interesados en los mismos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-006",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Se notifica el viernes día 3 un acto que concede diez días para presentar alegaciones, sin indicar que sean naturales. Ninguno de los días siguientes es festivo. ¿Qué día es el primero del plazo?",
+      "opciones": [
+        "El viernes día 3",
+        "El sábado día 4",
+        "El lunes día 6",
+        "El martes día 7"
+      ],
+      "explicacion": "Según el artículo 30 de la Ley 39/2015, los plazos en días son hábiles (se excluyen sábados, domingos y festivos) y se cuentan desde el día siguiente a la notificación; como el sábado 4 y el domingo 5 son inhábiles, el primer día es el lunes 6."
+    },
+    "ca": {
+      "enunciado": "Es notifica el divendres dia 3 un acte que concedeix deu dies per presentar al·legacions, sense indicar que siguin naturals. Cap dels dies següents no és festiu. Quin dia és el primer del termini?",
+      "opciones": [
+        "El divendres dia 3",
+        "El dissabte dia 4",
+        "El dilluns dia 6",
+        "El dimarts dia 7"
+      ],
+      "explicacion": "Segons l'article 30 de la Llei 39/2015, els terminis en dies són hàbils (s'exclouen els dissabtes, els diumenges i els festius) i es compten des de l'endemà de la notificació; com que el dissabte 4 i el diumenge 5 són inhàbils, el primer dia és el dilluns 6."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "30",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a30"
+    },
+    "cita": "excluyéndose del cómputo los sábados, los domingos y los declarados festivos … Los plazos expresados en días se contarán a partir del día siguiente a aquel en que tenga lugar la notificación o publicación del acto de que se trate",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-007",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una resolución que abre un plazo de un mes para interponer recurso se notifica el 31 de enero de un año no bisiesto. El último día de febrero es hábil. ¿Cuándo vence el plazo?",
+      "opciones": [
+        "El 3 de marzo",
+        "El 28 de febrero",
+        "El 1 de marzo",
+        "El 31 de marzo"
+      ],
+      "explicacion": "El artículo 30.4 de la Ley 39/2015 hace concluir el plazo en meses el mismo día de la notificación en el mes de vencimiento y, si no existe día equivalente (31 de febrero), el plazo expira el último día del mes: el 28 de febrero."
+    },
+    "ca": {
+      "enunciado": "Una resolució que obre un termini d'un mes per interposar recurs es notifica el 31 de gener d'un any no de traspàs. L'últim dia de febrer és hàbil. Quan venç el termini?",
+      "opciones": [
+        "El 3 de març",
+        "El 28 de febrer",
+        "L'1 de març",
+        "El 31 de març"
+      ],
+      "explicacion": "L'article 30.4 de la Llei 39/2015 fa concloure el termini en mesos el mateix dia de la notificació en el mes de venciment i, si no hi ha dia equivalent (31 de febrer), el termini expira l'últim dia del mes: el 28 de febrer."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "30.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a30"
+    },
+    "cita": "Si en el mes de vencimiento no hubiera día equivalente a aquel en que comienza el cómputo, se entenderá que el plazo expira el último día del mes",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-008",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, cuando el último día de un plazo es inhábil:",
+      "opciones": [
+        "El plazo vence el último día hábil anterior",
+        "El plazo vence ese mismo día a las 24:00 horas",
+        "El plazo se amplía automáticamente en la mitad de su duración",
+        "El plazo se entiende prorrogado al primer día hábil siguiente"
+      ],
+      "explicacion": "El artículo 30.5 de la Ley 39/2015 prorroga el plazo al primer día hábil siguiente cuando el último día es inhábil."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, quan l'últim dia d'un termini és inhàbil:",
+      "opciones": [
+        "El termini venç l'últim dia hàbil anterior",
+        "El termini venç aquell mateix dia a les 24.00 hores",
+        "El termini s'amplia automàticament en la meitat de la seva durada",
+        "El termini s'entén prorrogat al primer dia hàbil següent"
+      ],
+      "explicacion": "L'article 30.5 de la Llei 39/2015 prorroga el termini al primer dia hàbil següent quan l'últim dia és inhàbil."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "30.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a30"
+    },
+    "cita": "Cuando el último día del plazo sea inhábil, se entenderá prorrogado al primer día hábil siguiente",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-009",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "A efectos del cómputo de un plazo, un día es hábil en el municipio donde reside el interesado, pero es inhábil en la sede del órgano administrativo. Según el artículo 30.6 de la Ley 39/2015, ese día:",
+      "opciones": [
+        "Se considera inhábil en todo caso",
+        "Se considera hábil, porque prevalece el domicilio del interesado",
+        "Se considera hábil, porque prevalece el calendario de la Comunidad Autónoma",
+        "Se considera hábil solo para la Administración"
+      ],
+      "explicacion": "El artículo 30.6 de la Ley 39/2015 establece que, si un día es hábil en el lugar de residencia del interesado e inhábil en la sede del órgano, o a la inversa, se considera inhábil en todo caso. Esta regla no se aplica a los registros electrónicos (art. 31.3)."
+    },
+    "ca": {
+      "enunciado": "A efectes del còmput d'un termini, un dia és hàbil al municipi on resideix l'interessat, però és inhàbil a la seu de l'òrgan administratiu. Segons l'article 30.6 de la Llei 39/2015, aquest dia:",
+      "opciones": [
+        "Es considera inhàbil en tot cas",
+        "Es considera hàbil, perquè preval el domicili de l'interessat",
+        "Es considera hàbil, perquè preval el calendari de la comunitat autònoma",
+        "Es considera hàbil només per a l'Administració"
+      ],
+      "explicacion": "L'article 30.6 de la Llei 39/2015 estableix que, si un dia és hàbil al lloc de residència de l'interessat i inhàbil a la seu de l'òrgan, o a la inversa, es considera inhàbil en tot cas. Aquesta regla no s'aplica als registres electrònics (art. 31.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "30.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a30"
+    },
+    "cita": "Cuando un día fuese hábil en el municipio o Comunidad Autónoma en que residiese el interesado, e inhábil en la sede del órgano administrativo, o a la inversa, se considerará inhábil en todo caso",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-010",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Una persona presenta un escrito de alegaciones por el registro electrónico de la Generalitat el sábado a las 18:00. Ninguna norma permite la recepción en día inhábil. A efectos del cumplimiento de plazos por el interesado, ¿cuándo se entiende presentado?",
+      "opciones": [
+        "El sábado a las 18:00, porque el registro electrónico funciona todos los días",
+        "El viernes anterior, último día hábil",
+        "En la primera hora del lunes, primer día hábil siguiente",
+        "El lunes a las 18:00"
+      ],
+      "explicacion": "El artículo 31.2.b) de la Ley 39/2015 establece que la presentación electrónica en día inhábil se entiende realizada en la primera hora del primer día hábil siguiente, salvo que una norma permita expresamente la recepción en día inhábil."
+    },
+    "ca": {
+      "enunciado": "Una persona presenta un escrit d'al·legacions pel registre electrònic de la Generalitat el dissabte a les 18.00. Cap norma no permet la recepció en dia inhàbil. A efectes del compliment de terminis per l'interessat, quan s'entén presentat?",
+      "opciones": [
+        "El dissabte a les 18.00, perquè el registre electrònic funciona tots els dies",
+        "El divendres anterior, últim dia hàbil",
+        "A la primera hora del dilluns, primer dia hàbil següent",
+        "El dilluns a les 18.00"
+      ],
+      "explicacion": "L'article 31.2.b) de la Llei 39/2015 estableix que la presentació electrònica en dia inhàbil s'entén feta a la primera hora del primer dia hàbil següent, llevat que una norma permeti expressament la recepció en dia inhàbil."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "31.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a31"
+    },
+    "cita": "la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-011",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una persona presenta una solicitud el viernes día 3 a las 16:00 por el registro electrónico del departamento competente para tramitarla. ¿Qué determina el inicio del cómputo del plazo que tiene la Administración para cumplir sus obligaciones?",
+      "opciones": [
+        "La primera hora del lunes día 6, primer día hábil siguiente",
+        "La fecha y hora de presentación en el registro electrónico: el viernes 3 a las 16:00",
+        "El sábado día 4, día siguiente a la presentación",
+        "La fecha en que el órgano competente acuerde la admisión a trámite"
+      ],
+      "explicacion": "El artículo 31.2.c) de la Ley 39/2015 fija el inicio del cómputo de los plazos de la Administración en la fecha y hora de presentación en su registro electrónico, que debe comunicarse a quien presentó el documento. El viernes es hábil, por lo que no se aplica la regla de los días inhábiles."
+    },
+    "ca": {
+      "enunciado": "Una persona presenta una sol·licitud el divendres dia 3 a les 16.00 pel registre electrònic del departament competent per tramitar-la. Què determina l'inici del còmput del termini que té l'Administració per complir les seves obligacions?",
+      "opciones": [
+        "La primera hora del dilluns dia 6, primer dia hàbil següent",
+        "La data i l'hora de presentació en el registre electrònic: el divendres 3 a les 16.00",
+        "El dissabte dia 4, l'endemà de la presentació",
+        "La data en què l'òrgan competent n'acordi l'admissió a tràmit"
+      ],
+      "explicacion": "L'article 31.2.c) de la Llei 39/2015 fixa l'inici del còmput dels terminis de l'Administració en la data i l'hora de presentació en el seu registre electrònic, que s'ha de comunicar a qui va presentar el document. El divendres és hàbil, de manera que no s'aplica la regla dels dies inhàbils."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "31.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a31"
+    },
+    "cita": "El inicio del cómputo de los plazos que hayan de cumplir las Administraciones Públicas vendrá determinado por la fecha y hora de presentación en el registro electrónico de cada Administración u Organismo",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-012",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Un interesado dispone de diez días hábiles para aportar documentación y, antes de que venza el plazo, pide una ampliación. Las circunstancias lo aconsejan y no se perjudican derechos de terceros. Según la Ley 39/2015, la Administración puede ampliarlo:",
+      "opciones": [
+        "Como máximo diez días hábiles más",
+        "Como máximo quince días hábiles más",
+        "Por el tiempo que estime conveniente, incluso una vez vencido el plazo",
+        "Como máximo cinco días hábiles más"
+      ],
+      "explicacion": "El artículo 32 de la Ley 39/2015 permite una ampliación que no exceda de la mitad del plazo (cinco días sobre diez), acordada antes del vencimiento; un plazo vencido no puede ampliarse."
+    },
+    "ca": {
+      "enunciado": "Un interessat disposa de deu dies hàbils per aportar documentació i, abans que venci el termini, en demana una ampliació. Les circumstàncies ho aconsellen i no es perjudiquen drets de tercers. Segons la Llei 39/2015, l'Administració el pot ampliar:",
+      "opciones": [
+        "Com a màxim deu dies hàbils més",
+        "Com a màxim quinze dies hàbils més",
+        "Pel temps que consideri convenient, fins i tot un cop vençut el termini",
+        "Com a màxim cinc dies hàbils més"
+      ],
+      "explicacion": "L'article 32 de la Llei 39/2015 permet una ampliació que no excedeixi la meitat del termini (cinc dies sobre deu), acordada abans del venciment; un termini vençut no es pot ampliar."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "32",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a32"
+    },
+    "cita": "una ampliación de los plazos establecidos, que no exceda de la mitad de los mismos … En ningún caso podrá ser objeto de ampliación un plazo ya vencido",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-013",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Cuando se acuerda la tramitación de urgencia de un procedimiento, según la Ley 39/2015:",
+      "opciones": [
+        "Se reducen a la mitad los plazos del procedimiento ordinario, salvo los de presentación de solicitudes y recursos",
+        "Se reducen a la mitad todos los plazos, incluidos los de presentación de recursos",
+        "Se reducen a una tercera parte los plazos de instrucción",
+        "Se suprime el trámite de audiencia a los interesados"
+      ],
+      "explicacion": "El artículo 33.1 de la Ley 39/2015 reduce a la mitad los plazos del procedimiento ordinario, excepto los de presentación de solicitudes y recursos; contra el acuerdo de urgencia no cabe recurso (art. 33.2)."
+    },
+    "ca": {
+      "enunciado": "Quan s'acorda la tramitació d'urgència d'un procediment, segons la Llei 39/2015:",
+      "opciones": [
+        "Es redueixen a la meitat els terminis del procediment ordinari, llevat dels de presentació de sol·licituds i recursos",
+        "Es redueixen a la meitat tots els terminis, inclosos els de presentació de recursos",
+        "Es redueixen a una tercera part els terminis d'instrucció",
+        "Se suprimeix el tràmit d'audiència als interessats"
+      ],
+      "explicacion": "L'article 33.1 de la Llei 39/2015 redueix a la meitat els terminis del procediment ordinari, excepte els de presentació de sol·licituds i recursos; contra l'acord d'urgència no hi ha recurs (art. 33.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "33.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a33"
+    },
+    "cita": "se reducirán a la mitad los plazos establecidos para el procedimiento ordinario, salvo los relativos a la presentación de solicitudes y recursos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-014",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes actos debe motivarse, con sucinta referencia de hechos y fundamentos de derecho, según el artículo 35 de la Ley 39/2015?",
+      "opciones": [
+        "El que estima íntegramente la solicitud del interesado en un procedimiento reglado",
+        "El que se separa del criterio seguido en actuaciones precedentes o del dictamen de órganos consultivos",
+        "El acto de trámite que acuerda la incorporación de un documento al expediente",
+        "La comunicación al interesado de la fecha de entrada de su solicitud"
+      ],
+      "explicacion": "El artículo 35.1.c) de la Ley 39/2015 exige motivar los actos que se separan del criterio seguido en actuaciones precedentes o del dictamen de órganos consultivos."
+    },
+    "ca": {
+      "enunciado": "Quin dels actes següents s'ha de motivar, amb una referència succinta de fets i fonaments de dret, segons l'article 35 de la Llei 39/2015?",
+      "opciones": [
+        "El que estima íntegrament la sol·licitud de l'interessat en un procediment reglat",
+        "El que s'aparta del criteri seguit en actuacions precedents o del dictamen d'òrgans consultius",
+        "L'acte de tràmit que acorda la incorporació d'un document a l'expedient",
+        "La comunicació a l'interessat de la data d'entrada de la seva sol·licitud"
+      ],
+      "explicacion": "L'article 35.1.c) de la Llei 39/2015 exigeix motivar els actes que s'aparten del criteri seguit en actuacions precedents o del dictamen d'òrgans consultius."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "35.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a35"
+    },
+    "cita": "Los actos que se separen del criterio seguido en actuaciones precedentes o del dictamen de órganos consultivos",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-015",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, los actos administrativos se producirán:",
+      "opciones": [
+        "Por escrito en papel, salvo que el interesado elija los medios electrónicos",
+        "De forma verbal, con constancia escrita posterior en todo caso",
+        "Por escrito a través de medios electrónicos, a menos que su naturaleza exija otra forma más adecuada",
+        "En la forma que elija libremente el órgano que los dicta"
+      ],
+      "explicacion": "El artículo 36.1 de la Ley 39/2015 establece como forma ordinaria el escrito a través de medios electrónicos, salvo que la naturaleza del acto exija otra forma."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, els actes administratius s'han de produir:",
+      "opciones": [
+        "Per escrit en paper, llevat que l'interessat triï els mitjans electrònics",
+        "De forma verbal, amb constància escrita posterior en tot cas",
+        "Per escrit a través de mitjans electrònics, llevat que la seva naturalesa n'exigeixi una altra forma més adequada",
+        "En la forma que triï lliurement l'òrgan que els dicta"
+      ],
+      "explicacion": "L'article 36.1 de la Llei 39/2015 estableix com a forma ordinària l'escrit a través de mitjans electrònics, llevat que la naturalesa de l'acte n'exigeixi una altra."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "36.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a36"
+    },
+    "cita": "Los actos administrativos se producirán por escrito a través de medios electrónicos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-016",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "El principio de inderogabilidad singular de los reglamentos, recogido en el artículo 37 de la Ley 39/2015, implica que:",
+      "opciones": [
+        "Una disposición general no puede ser derogada por otra posterior de igual rango",
+        "Una resolución particular puede dejar sin efecto una disposición general si la dicta un órgano superior",
+        "Las disposiciones generales solo pueden derogarse mediante ley",
+        "Una resolución particular no puede vulnerar una disposición general, aunque proceda de un órgano de igual o superior jerarquía al que la dictó"
+      ],
+      "explicacion": "El artículo 37.1 de la Ley 39/2015 impide que las resoluciones particulares vulneren disposiciones generales, aunque procedan de un órgano de igual o superior jerarquía; las que lo hagan son nulas (art. 37.2)."
+    },
+    "ca": {
+      "enunciado": "El principi d'inderogabilitat singular dels reglaments, recollit en l'article 37 de la Llei 39/2015, implica que:",
+      "opciones": [
+        "Una disposició general no pot ser derogada per una altra de posterior d'igual rang",
+        "Una resolució particular pot deixar sense efecte una disposició general si la dicta un òrgan superior",
+        "Les disposicions generals només es poden derogar mitjançant una llei",
+        "Una resolució particular no pot vulnerar una disposició general, encara que provingui d'un òrgan d'igual o superior jerarquia al que la va dictar"
+      ],
+      "explicacion": "L'article 37.1 de la Llei 39/2015 impedeix que les resolucions particulars vulnerin disposicions generals, encara que provinguin d'un òrgan d'igual o superior jerarquia; les que ho facin són nul·les (art. 37.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "37.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a37"
+    },
+    "cita": "Las resoluciones administrativas de carácter particular no podrán vulnerar lo establecido en una disposición de carácter general, aunque aquéllas procedan de un órgano de igual o superior jerarquía al que dictó la disposición general",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-017",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, los actos de las administraciones públicas sujetos al derecho administrativo:",
+      "opciones": [
+        "Se presumen válidos y producen efectos desde la fecha en que se dictan, salvo que en ellos se disponga otra cosa",
+        "Producen efectos desde que son firmes en vía administrativa",
+        "Solo producen efectos desde su publicación en el diario oficial",
+        "Se presumen anulables hasta que se notifican"
+      ],
+      "explicacion": "El artículo 39.1 de la Ley 39/2015 establece la presunción de validez y la eficacia desde la fecha en que se dictan, salvo que el propio acto disponga otra cosa o la eficacia quede demorada (art. 39.2)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, els actes de les administracions públiques subjectes al dret administratiu:",
+      "opciones": [
+        "Es presumeixen vàlids i produeixen efectes des de la data en què es dicten, llevat que s'hi disposi una altra cosa",
+        "Produeixen efectes des que són ferms en via administrativa",
+        "Només produeixen efectes des de la seva publicació al diari oficial",
+        "Es presumeixen anul·lables fins que es notifiquen"
+      ],
+      "explicacion": "L'article 39.1 de la Llei 39/2015 estableix la presumpció de validesa i l'eficàcia des de la data en què es dicten, llevat que el mateix acte disposi una altra cosa o l'eficàcia quedi demorada (art. 39.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "39.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a39"
+    },
+    "cita": "se presumirán válidos y producirán efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-018",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, excepcionalmente puede otorgarse eficacia retroactiva a los actos administrativos:",
+      "opciones": [
+        "Cuando lo solicite cualquier interesado, aunque perjudique a terceros",
+        "Cuando sean actos sancionadores dictados por un órgano superior",
+        "Cuando se dicten en sustitución de actos anulados o produzcan efectos favorables al interesado, si se cumplen los demás requisitos legales",
+        "Siempre que lo acuerde el Gobierno por razones de urgencia"
+      ],
+      "explicacion": "El artículo 39.3 de la Ley 39/2015 admite la retroactividad en sustitución de actos anulados y cuando produzca efectos favorables, siempre que los supuestos de hecho ya existieran y no se lesionen derechos o intereses legítimos de otras personas."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, excepcionalment es pot atorgar eficàcia retroactiva als actes administratius:",
+      "opciones": [
+        "Quan ho sol·liciti qualsevol interessat, encara que perjudiqui tercers",
+        "Quan siguin actes sancionadors dictats per un òrgan superior",
+        "Quan es dictin en substitució d'actes anul·lats o produeixin efectes favorables a l'interessat, si es compleixen els altres requisits legals",
+        "Sempre que ho acordi el Govern per raons d'urgència"
+      ],
+      "explicacion": "L'article 39.3 de la Llei 39/2015 admet la retroactivitat en substitució d'actes anul·lats i quan produeixi efectes favorables, sempre que els supòsits de fet ja existissin i no es lesionin drets o interessos legítims d'altres persones."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "39.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a39"
+    },
+    "cita": "podrá otorgarse eficacia retroactiva a los actos cuando se dicten en sustitución de actos anulados, así como cuando produzcan efectos favorables al interesado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-019",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, la notificación de un acto administrativo debe cursarse:",
+      "opciones": [
+        "Dentro del plazo de quince días a partir de la firma del acto",
+        "Dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado",
+        "Dentro del plazo de un mes desde que el acto sea firme",
+        "Dentro del plazo de cinco días desde la entrada de la solicitud"
+      ],
+      "explicacion": "El artículo 40.2 de la Ley 39/2015 exige cursar la notificación en diez días desde que se dicta el acto, con el texto íntegro y la indicación de los recursos procedentes."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, la notificació d'un acte administratiu s'ha de cursar:",
+      "opciones": [
+        "Dins el termini de quinze dies a partir de la signatura de l'acte",
+        "Dins el termini de deu dies a partir de la data en què l'acte s'hagi dictat",
+        "Dins el termini d'un mes des que l'acte sigui ferm",
+        "Dins el termini de cinc dies des de l'entrada de la sol·licitud"
+      ],
+      "explicacion": "L'article 40.2 de la Llei 39/2015 exigeix cursar la notificació en deu dies des que es dicta l'acte, amb el text íntegre i la indicació dels recursos procedents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "40.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a40"
+    },
+    "cita": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-020",
+    "tema": 5,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, un acto dictado por un órgano manifiestamente incompetente por razón de la materia o del territorio es:",
+      "opciones": [
+        "Anulable",
+        "Válido, pero ineficaz hasta su convalidación",
+        "Irregular no invalidante",
+        "Nulo de pleno derecho"
+      ],
+      "explicacion": "El artículo 47.1.b) de la Ley 39/2015 incluye entre las causas de nulidad de pleno derecho los actos dictados por órgano manifiestamente incompetente por razón de la materia o del territorio. La incompetencia no manifiesta (jerárquica) es convalidable (art. 52.3)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, un acte dictat per un òrgan manifestament incompetent per raó de la matèria o del territori és:",
+      "opciones": [
+        "Anul·lable",
+        "Vàlid, però ineficaç fins a la seva convalidació",
+        "Irregular no invalidant",
+        "Nul de ple dret"
+      ],
+      "explicacion": "L'article 47.1.b) de la Llei 39/2015 inclou entre les causes de nul·litat de ple dret els actes dictats per òrgan manifestament incompetent per raó de la matèria o del territori. La incompetència no manifesta (jeràrquica) és convalidable (art. 52.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "47.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a47"
+    },
+    "cita": "Los dictados por órgano manifiestamente incompetente por razón de la materia o del territorio",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-021",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, el defecto de forma de un acto administrativo solo determina su anulabilidad cuando:",
+      "opciones": [
+        "El acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a indefensión de los interesados",
+        "Lo alegue cualquier interesado dentro del plazo de recurso",
+        "El acto se haya dictado fuera del plazo establecido",
+        "El acto no haya sido publicado en el diario oficial"
+      ],
+      "explicacion": "El artículo 48.2 de la Ley 39/2015 limita la anulabilidad por defecto de forma a los casos en que falten requisitos formales indispensables para alcanzar el fin del acto o se produzca indefensión."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, el defecte de forma d'un acte administratiu només en determina l'anul·labilitat quan:",
+      "opciones": [
+        "L'acte no tingui els requisits formals indispensables per assolir la seva finalitat o doni lloc a indefensió dels interessats",
+        "Ho al·legui qualsevol interessat dins el termini de recurs",
+        "L'acte s'hagi dictat fora del termini establert",
+        "L'acte no s'hagi publicat al diari oficial"
+      ],
+      "explicacion": "L'article 48.2 de la Llei 39/2015 limita l'anul·labilitat per defecte de forma als casos en què manquin requisits formals indispensables per assolir la finalitat de l'acte o es produeixi indefensió."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "48.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a48"
+    },
+    "cita": "el defecto de forma sólo determinará la anulabilidad cuando el acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a la indefensión de los interesados",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-022",
+    "tema": 5,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Un acto anulable adolece de un vicio de incompetencia no determinante de nulidad. Según la Ley 39/2015, ¿quién puede convalidarlo?",
+      "opciones": [
+        "Cualquier órgano del mismo departamento",
+        "El propio órgano incompetente que lo dictó",
+        "El órgano competente, cuando sea superior jerárquico del que dictó el acto viciado",
+        "Solo el Gobierno, mediante decreto"
+      ],
+      "explicacion": "El artículo 52.3 de la Ley 39/2015 permite la convalidación por el órgano competente cuando sea superior jerárquico del que dictó el acto; la convalidación produce efectos desde su fecha, salvo retroactividad (art. 52.2)."
+    },
+    "ca": {
+      "enunciado": "Un acte anul·lable té un vici d'incompetència no determinant de nul·litat. Segons la Llei 39/2015, qui el pot convalidar?",
+      "opciones": [
+        "Qualsevol òrgan del mateix departament",
+        "El mateix òrgan incompetent que el va dictar",
+        "L'òrgan competent, quan sigui superior jeràrquic del que va dictar l'acte viciat",
+        "Només el Govern, mitjançant un decret"
+      ],
+      "explicacion": "L'article 52.3 de la Llei 39/2015 permet la convalidació per l'òrgan competent quan sigui superior jeràrquic del que va dictar l'acte; la convalidació produeix efectes des de la seva data, llevat de retroactivitat (art. 52.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "52.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a52"
+    },
+    "cita": "Si el vicio consistiera en incompetencia no determinante de nulidad, la convalidación podrá realizarse por el órgano competente cuando sea superior jerárquico del que dictó el acto viciado",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-023",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Una asociación solicita a un departamento de la Generalitat una subvención y, vencido el plazo máximo, no se le ha notificado resolución expresa. Según la Ley 26/2010:",
+      "opciones": [
+        "Puede entender estimada su solicitud por silencio administrativo",
+        "El procedimiento caduca y se archivan las actuaciones",
+        "Debe presentar una nueva solicitud para que se resuelva",
+        "Puede entender desestimada su solicitud por silencio administrativo"
+      ],
+      "explicacion": "El artículo 54 de la Ley 26/2010 establece como regla general el silencio estimatorio, pero el apartado 2.e) lo hace desestimatorio en los procedimientos cuya estimación puede comportar la concesión de ayudas y subvenciones públicas."
+    },
+    "ca": {
+      "enunciado": "Una associació sol·licita a un departament de la Generalitat una subvenció i, vençut el termini màxim, no se li ha notificat resolució expressa. Segons la Llei 26/2010:",
+      "opciones": [
+        "Pot entendre estimada la seva sol·licitud per silenci administratiu",
+        "El procediment caduca i s'arxiven les actuacions",
+        "Ha de presentar una nova sol·licitud perquè es resolgui",
+        "Pot entendre desestimada la seva sol·licitud per silenci administratiu"
+      ],
+      "explicacion": "L'article 54 de la Llei 26/2010 estableix com a regla general el silenci estimatori, però l'apartat 2.e) el fa desestimatori en els procediments l'estimació dels quals pot comportar la concessió d'ajuts i subvencions públiques."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "54.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a54"
+    },
+    "cita": "Los procedimientos cuya estimación de la solicitud puede comportar la concesión de ayudas y subvenciones públicas",
+    "origen": "ia"
+  },
+  {
+    "id": "agen-t05-024",
+    "tema": 5,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 26/2010, en un procedimiento sancionador iniciado de oficio, el vencimiento del plazo sin que se haya dictado y notificado resolución expresa produce:",
+      "opciones": [
+        "La desestimación por silencio administrativo",
+        "La caducidad del procedimiento",
+        "La estimación por silencio administrativo",
+        "La prescripción automática de la infracción"
+      ],
+      "explicacion": "El artículo 55.1.b) de la Ley 26/2010 dispone la caducidad en los procedimientos de oficio sancionadores o de intervención con efectos desfavorables; la resolución que la declare debe ordenar el archivo de las actuaciones."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 26/2010, en un procediment sancionador iniciat d'ofici, el venciment del termini sense que s'hagi dictat i notificat resolució expressa produeix:",
+      "opciones": [
+        "La desestimació per silenci administratiu",
+        "La caducitat del procediment",
+        "L'estimació per silenci administratiu",
+        "La prescripció automàtica de la infracció"
+      ],
+      "explicacion": "L'article 55.1.b) de la Llei 26/2010 disposa la caducitat en els procediments d'ofici sancionadors o d'intervenció amb efectes desfavorables; la resolució que la declari ha d'ordenar l'arxiu de les actuacions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2010-13313",
+      "norma": "Ley 26/2010, de 3 de agosto, de régimen jurídico y de procedimiento de las administraciones públicas de Cataluña",
+      "articulo": "55.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-13313#a55"
+    },
+    "cita": "En los procedimientos en que la Administración ejerza potestades sancionadoras o, en general, de intervención, susceptibles de producir efectos desfavorables o de gravamen, se produce la caducidad",
+    "origen": "ia"
+  }
+]

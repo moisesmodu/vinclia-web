@@ -1,0 +1,492 @@
+[
+  {
+    "id": "ajun-t20-001",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Cuando los interesados utilizan uno de los sistemas de firma admitidos por la Ley 39/2015, su identidad:",
+      "opciones": [
+        "Debe acreditarse además aportando copia del documento nacional de identidad",
+        "Se entiende ya acreditada mediante el propio acto de la firma",
+        "Debe verificarse presencialmente en una oficina de asistencia en materia de registros",
+        "Solo queda acreditada si se ha firmado con un sello electrónico cualificado"
+      ],
+      "explicacion": "Lo dispone el artículo 10.5 de la Ley 39/2015: el acto de firmar acredita ya la identidad del firmante."
+    },
+    "ca": {
+      "enunciado": "Quan les persones interessades utilitzen un dels sistemes de signatura admesos per la Llei 39/2015, la seva identitat:",
+      "opciones": [
+        "S'ha d'acreditar a més aportant còpia del document nacional d'identitat",
+        "S'entén ja acreditada mitjançant el mateix acte de la signatura",
+        "S'ha de verificar presencialment en una oficina d'assistència en matèria de registres",
+        "Només queda acreditada si s'ha signat amb un segell electrònic qualificat"
+      ],
+      "explicacion": "Ho disposa l'article 10.5 de la Llei 39/2015: l'acte de signar ja acredita la identitat del signant."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "10.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a10"
+    },
+    "cita": "Cuando los interesados utilicen un sistema de firma de los previstos en este artículo, su identidad se entenderá ya acreditada mediante el propio acto de la firma.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-002",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Las personas físicas que no están obligadas a relacionarse electrónicamente con las Administraciones públicas:",
+      "opciones": [
+        "Pueden elegir en todo momento si se comunican por medios electrónicos o no, y modificar el medio elegido en cualquier momento",
+        "Deben mantener el medio elegido hasta que finalice el procedimiento",
+        "Solo pueden comunicarse por medios no electrónicos",
+        "Deben comunicar el cambio de medio con una antelación mínima de diez días"
+      ],
+      "explicacion": "El artículo 14.1 de la Ley 39/2015 reconoce el derecho de elección y permite modificar el medio elegido en cualquier momento."
+    },
+    "ca": {
+      "enunciado": "Les persones físiques que no estan obligades a relacionar-se electrònicament amb les administracions públiques:",
+      "opciones": [
+        "Poden triar en tot moment si es comuniquen per mitjans electrònics o no, i modificar el mitjà triat en qualsevol moment",
+        "Han de mantenir el mitjà triat fins que acabi el procediment",
+        "Només es poden comunicar per mitjans no electrònics",
+        "Han de comunicar el canvi de mitjà amb una antelació mínima de deu dies"
+      ],
+      "explicacion": "L'article 14.1 de la Llei 39/2015 reconeix el dret d'elecció i permet modificar el mitjà triat en qualsevol moment."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "Las personas físicas podrán elegir en todo momento si se comunican con las Administraciones Públicas para el ejercicio de sus derechos y obligaciones a través de medios electrónicos o no, salvo que estén obligadas a relacionarse a través de medios electrónicos",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-003",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes sujetos está obligado en todo caso a relacionarse con las Administraciones públicas a través de medios electrónicos?",
+      "opciones": [
+        "Las personas físicas mayores de edad",
+        "Las personas físicas que soliciten una subvención",
+        "Las personas jurídicas",
+        "Las personas físicas empadronadas en municipios de más de 20.000 habitantes"
+      ],
+      "explicacion": "El artículo 14.2 de la Ley 39/2015 incluye, entre otros, a las personas jurídicas, las entidades sin personalidad jurídica y los profesionales de colegiación obligatoria en el ejercicio de su actividad."
+    },
+    "ca": {
+      "enunciado": "Quin dels subjectes següents està obligat en tot cas a relacionar-se amb les administracions públiques per mitjans electrònics?",
+      "opciones": [
+        "Les persones físiques majors d'edat",
+        "Les persones físiques que sol·licitin una subvenció",
+        "Les persones jurídiques",
+        "Les persones físiques empadronades en municipis de més de 20.000 habitants"
+      ],
+      "explicacion": "L'article 14.2 de la Llei 39/2015 hi inclou, entre d'altres, les persones jurídiques, les entitats sense personalitat jurídica i els professionals de col·legiació obligatòria en l'exercici de la seva activitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "14.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a14"
+    },
+    "cita": "En todo caso, estarán obligados a relacionarse a través de medios electrónicos con las Administraciones Públicas para la realización de cualquier trámite de un procedimiento administrativo, al menos, los siguientes sujetos: a) Las personas jurídicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-004",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 39/2015, los documentos que los interesados dirigen a los órganos de las Administraciones públicas pueden presentarse, entre otros lugares:",
+      "opciones": [
+        "En cualquier notaría",
+        "En las entidades financieras colaboradoras",
+        "En los colegios profesionales",
+        "En las oficinas de Correos, en la forma que reglamentariamente se establezca"
+      ],
+      "explicacion": "El artículo 16.4 de la Ley 39/2015 enumera los registros electrónicos de cualquier Administración, las oficinas de Correos, las representaciones diplomáticas y consulares, las oficinas de asistencia en materia de registros y cualquier otro que establezcan las disposiciones vigentes."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 39/2015, els documents que les persones interessades adrecen als òrgans de les administracions públiques es poden presentar, entre d'altres llocs:",
+      "opciones": [
+        "En qualsevol notaria",
+        "En les entitats financeres col·laboradores",
+        "En els col·legis professionals",
+        "En les oficines de Correus, en la forma que s'estableixi per reglament"
+      ],
+      "explicacion": "L'article 16.4 de la Llei 39/2015 enumera els registres electrònics de qualsevol Administració, les oficines de Correus, les representacions diplomàtiques i consulars, les oficines d'assistència en matèria de registres i qualsevol altre que estableixin les disposicions vigents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "Los documentos que los interesados dirijan a los órganos de las Administraciones Públicas podrán presentarse: … b) En las oficinas de Correos, en la forma que reglamentariamente se establezca.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-005",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Al presentar un documento en el registro electrónico, se emite automáticamente un recibo consistente en:",
+      "opciones": [
+        "Un justificante genérico de presentación, sin valor de copia",
+        "Una copia autenticada del documento, con la fecha y hora de presentación y el número de entrada de registro",
+        "Una diligencia firmada por un funcionario habilitado en el plazo de diez días",
+        "Un código de verificación que se envía por correo postal"
+      ],
+      "explicacion": "Lo establece el artículo 16.3 de la Ley 39/2015, junto con un recibo acreditativo de los demás documentos que acompañen al presentado."
+    },
+    "ca": {
+      "enunciado": "En presentar un document al registre electrònic, s'emet automàticament un rebut que consisteix en:",
+      "opciones": [
+        "Un justificant genèric de presentació, sense valor de còpia",
+        "Una còpia autenticada del document, amb la data i l'hora de presentació i el número d'entrada de registre",
+        "Una diligència signada per un funcionari habilitat en el termini de deu dies",
+        "Un codi de verificació que s'envia per correu postal"
+      ],
+      "explicacion": "Ho estableix l'article 16.3 de la Llei 39/2015, juntament amb un rebut acreditatiu de la resta de documents que acompanyin el presentat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "se emitirá automáticamente un recibo consistente en una copia autenticada del documento de que se trate, incluyendo la fecha y hora de presentación y el número de entrada de registro",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-006",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Los documentos que se presentan de manera presencial ante las Administraciones públicas, como regla general:",
+      "opciones": [
+        "Deben ser digitalizados por la oficina de asistencia en materia de registros donde se presentan, devolviéndose los originales al interesado",
+        "Se remiten en papel, en su original, a la unidad que tramita el expediente",
+        "Deben ser digitalizados previamente por el propio interesado",
+        "Se conservan en la oficina de registro durante cinco años"
+      ],
+      "explicacion": "Lo dispone el artículo 16.5 de la Ley 39/2015, salvo que la norma determine su custodia por la Administración o se trate de soportes no susceptibles de digitalización."
+    },
+    "ca": {
+      "enunciado": "Els documents que es presenten de manera presencial davant les administracions públiques, com a regla general:",
+      "opciones": [
+        "Els ha de digitalitzar l'oficina d'assistència en matèria de registres on es presenten, i se'n retornen els originals a la persona interessada",
+        "Es trameten en paper, en original, a la unitat que tramita l'expedient",
+        "Els ha de digitalitzar prèviament la mateixa persona interessada",
+        "Es conserven a l'oficina de registre durant cinc anys"
+      ],
+      "explicacion": "Ho disposa l'article 16.5 de la Llei 39/2015, llevat que la norma en determini la custòdia per l'Administració o que es tracti de suports no susceptibles de digitalització."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "16.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a16"
+    },
+    "cita": "Los documentos presentados de manera presencial ante las Administraciones Públicas, deberán ser digitalizados, de acuerdo con lo previsto en el artículo 27 y demás normativa aplicable, por la oficina de asistencia en materia de registros en la que hayan sido presentados",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-007",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Para los documentos electrónicos que corresponden a procedimientos finalizados, cada Administración debe mantener:",
+      "opciones": [
+        "Un registro electrónico de apoderamientos",
+        "Un registro de funcionarios habilitados",
+        "Un archivo electrónico único",
+        "Un punto de acceso general electrónico"
+      ],
+      "explicacion": "Lo exige el artículo 17.1 de la Ley 39/2015. Los documentos deben conservarse en un formato que garantice su autenticidad, integridad y conservación (17.2)."
+    },
+    "ca": {
+      "enunciado": "Per als documents electrònics que corresponen a procediments finalitzats, cada Administració ha de mantenir:",
+      "opciones": [
+        "Un registre electrònic d'apoderaments",
+        "Un registre de funcionaris habilitats",
+        "Un arxiu electrònic únic",
+        "Un punt d'accés general electrònic"
+      ],
+      "explicacion": "Ho exigeix l'article 17.1 de la Llei 39/2015. Els documents s'han de conservar en un format que en garanteixi l'autenticitat, la integritat i la conservació (17.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "17.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a17"
+    },
+    "cita": "Cada Administración deberá mantener un archivo electrónico único de los documentos electrónicos que correspondan a procedimientos finalizados",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-008",
+    "tema": 20,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Cuando un interesado solicita la expedición de una copia auténtica de un documento público administrativo válidamente emitido, la copia debe expedirse, salvo excepciones, en el plazo de:",
+      "opciones": [
+        "Tres días",
+        "Diez días",
+        "Un mes",
+        "Quince días"
+      ],
+      "explicacion": "El artículo 27.4 de la Ley 39/2015 fija quince días desde la recepción de la solicitud en el registro electrónico del órgano que emitió el original."
+    },
+    "ca": {
+      "enunciado": "Quan una persona interessada sol·licita l'expedició d'una còpia autèntica d'un document públic administratiu vàlidament emès, la còpia s'ha d'expedir, llevat d'excepcions, en el termini de:",
+      "opciones": [
+        "Tres dies",
+        "Deu dies",
+        "Un mes",
+        "Quinze dies"
+      ],
+      "explicacion": "L'article 27.4 de la Llei 39/2015 fixa quinze dies des de la recepció de la sol·licitud al registre electrònic de l'òrgan que va emetre l'original."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "27.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a27"
+    },
+    "cita": "debiendo expedirse, salvo las excepciones derivadas de la aplicación de la Ley 19/2013, de 9 de diciembre, en el plazo de quince días a contar desde la recepción de la solicitud en el registro electrónico",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-009",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En ningún caso se efectuarán por medios electrónicos las notificaciones:",
+      "opciones": [
+        "Que contengan medios de pago a favor de los obligados, tales como cheques",
+        "Dirigidas a personas jurídicas",
+        "De actos de trámite",
+        "De resoluciones sancionadoras"
+      ],
+      "explicacion": "Según el artículo 41.2 de la Ley 39/2015, tampoco se notifican electrónicamente los actos acompañados de elementos no susceptibles de conversión en formato electrónico. A las personas jurídicas, al contrario, se les notifica electrónicamente."
+    },
+    "ca": {
+      "enunciado": "En cap cas no es practicaran per mitjans electrònics les notificacions:",
+      "opciones": [
+        "Que continguin mitjans de pagament a favor dels obligats, com ara xecs",
+        "Adreçades a persones jurídiques",
+        "D'actes de tràmit",
+        "De resolucions sancionadores"
+      ],
+      "explicacion": "Segons l'article 41.2 de la Llei 39/2015, tampoc no es notifiquen electrònicament els actes acompanyats d'elements no susceptibles de conversió en format electrònic. A les persones jurídiques, al contrari, se'ls notifica electrònicament."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "En ningún caso se efectuarán por medios electrónicos las siguientes notificaciones: … b) Las que contengan medios de pago a favor de los obligados, tales como cheques.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-010",
+    "tema": 20,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Si el interesado ha sido notificado de un mismo acto por distintos cauces, se toma como fecha de notificación:",
+      "opciones": [
+        "La de la notificación producida en último lugar",
+        "La de la notificación producida en primer lugar",
+        "En todo caso, la de la notificación electrónica",
+        "La que elija el interesado"
+      ],
+      "explicacion": "Lo establece el artículo 41.7 de la Ley 39/2015."
+    },
+    "ca": {
+      "enunciado": "Si la persona interessada ha estat notificada d'un mateix acte per diferents vies, es pren com a data de notificació:",
+      "opciones": [
+        "La de la notificació produïda en darrer lloc",
+        "La de la notificació produïda en primer lloc",
+        "En tot cas, la de la notificació electrònica",
+        "La que triï la persona interessada"
+      ],
+      "explicacion": "Ho estableix l'article 41.7 de la Llei 39/2015."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "41.7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a41"
+    },
+    "cita": "Cuando el interesado fuera notificado por distintos cauces, se tomará como fecha de notificación la de aquélla que se hubiera producido en primer lugar.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-011",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Cuando la notificación por medios electrónicos es obligatoria o ha sido elegida por el interesado, se entiende rechazada si no se accede a su contenido en el plazo, desde su puesta a disposición, de:",
+      "opciones": [
+        "Cinco días hábiles",
+        "Diez días hábiles",
+        "Diez días naturales",
+        "Quince días naturales"
+      ],
+      "explicacion": "El artículo 43.2 de la Ley 39/2015 fija diez días naturales. La notificación electrónica se entiende practicada en el momento del acceso a su contenido."
+    },
+    "ca": {
+      "enunciado": "Quan la notificació per mitjans electrònics és obligatòria o l'ha triada la persona interessada, s'entén rebutjada si no se n'accedeix al contingut en el termini, des que es posa a disposició, de:",
+      "opciones": [
+        "Cinc dies hàbils",
+        "Deu dies hàbils",
+        "Deu dies naturals",
+        "Quinze dies naturals"
+      ],
+      "explicacion": "L'article 43.2 de la Llei 39/2015 fixa deu dies naturals. La notificació electrònica s'entén practicada en el moment de l'accés al contingut."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "43.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a43"
+    },
+    "cita": "se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-012",
+    "tema": 20,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 70 de la Ley 39/2015, no forma parte del expediente administrativo:",
+      "opciones": [
+        "La copia electrónica certificada de la resolución adoptada",
+        "Los informes preceptivos solicitados antes de la resolución que ponga fin al procedimiento",
+        "Las notificaciones practicadas en el procedimiento",
+        "La información de carácter auxiliar o de apoyo, como notas, borradores u opiniones"
+      ],
+      "explicacion": "El artículo 70.4 excluye la información auxiliar o de apoyo, salvo los informes preceptivos y facultativos solicitados antes de la resolución. Las notificaciones y la copia de la resolución sí se integran en el expediente (70.2)."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 70 de la Llei 39/2015, no forma part de l'expedient administratiu:",
+      "opciones": [
+        "La còpia electrònica certificada de la resolució adoptada",
+        "Els informes preceptius sol·licitats abans de la resolució que posi fi al procediment",
+        "Les notificacions practicades en el procediment",
+        "La informació de caràcter auxiliar o de suport, com ara notes, esborranys o opinions"
+      ],
+      "explicacion": "L'article 70.4 exclou la informació auxiliar o de suport, llevat dels informes preceptius i facultatius sol·licitats abans de la resolució. Les notificacions i la còpia de la resolució sí que s'integren a l'expedient (70.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10565",
+      "norma": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+      "articulo": "70.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565#a70"
+    },
+    "cita": "No formará parte del expediente administrativo la información que tenga carácter auxiliar o de apoyo, como la contenida en aplicaciones, ficheros y bases de datos informáticas, notas, borradores, opiniones, resúmenes",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-013",
+    "tema": 20,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 40/2015, la sede electrónica es:",
+      "opciones": [
+        "La dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración pública u organismo o entidad de derecho público",
+        "El registro electrónico general en el que se anotan los documentos presentados",
+        "El archivo electrónico único de los procedimientos finalizados",
+        "La dirección de correo electrónico que el interesado comunica para recibir avisos"
+      ],
+      "explicacion": "Es la definición del artículo 38.1 de la Ley 40/2015. Su titular responde de la integridad, veracidad y actualización de la información y los servicios (38.2)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 40/2015, la seu electrònica és:",
+      "opciones": [
+        "L'adreça electrònica, disponible per a la ciutadania a través de xarxes de telecomunicacions, la titularitat de la qual correspon a una administració pública o a un organisme o entitat de dret públic",
+        "El registre electrònic general en què s'anoten els documents presentats",
+        "L'arxiu electrònic únic dels procediments finalitzats",
+        "L'adreça de correu electrònic que la persona interessada comunica per rebre avisos"
+      ],
+      "explicacion": "És la definició de l'article 38.1 de la Llei 40/2015. El seu titular respon de la integritat, la veracitat i l'actualització de la informació i els serveis (38.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "38.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a38"
+    },
+    "cita": "La sede electrónica es aquella dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública",
+    "origen": "ia"
+  },
+  {
+    "id": "ajun-t20-014",
+    "tema": 20,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Se entiende por actuación administrativa automatizada:",
+      "opciones": [
+        "Cualquier actuación firmada electrónicamente por un empleado público",
+        "Cualquier acto o actuación realizada íntegramente a través de medios electrónicos en un procedimiento sin intervención directa de un empleado público",
+        "La presentación de documentos en el registro electrónico fuera del horario de oficina",
+        "La notificación practicada mediante la dirección electrónica habilitada única"
+      ],
+      "explicacion": "Es la definición del artículo 41.1 de la Ley 40/2015, que exige además establecer previamente el órgano responsable a efectos de impugnación (41.2)."
+    },
+    "ca": {
+      "enunciado": "S'entén per actuació administrativa automatitzada:",
+      "opciones": [
+        "Qualsevol actuació signada electrònicament per un empleat públic",
+        "Qualsevol acte o actuació feta íntegrament per mitjans electrònics en un procediment sense intervenció directa d'un empleat públic",
+        "La presentació de documents al registre electrònic fora de l'horari d'oficina",
+        "La notificació practicada mitjançant l'adreça electrònica habilitada única"
+      ],
+      "explicacion": "És la definició de l'article 41.1 de la Llei 40/2015, que exigeix a més establir prèviament l'òrgan responsable a efectes d'impugnació (41.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2015-10566",
+      "norma": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+      "articulo": "41.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566#a41"
+    },
+    "cita": "Se entiende por actuación administrativa automatizada, cualquier acto o actuación realizada íntegramente a través de medios electrónicos por una Administración Pública en el marco de un procedimiento administrativo y en la que no haya intervenido de forma directa un empleado público.",
+    "origen": "ia"
+  }
+]

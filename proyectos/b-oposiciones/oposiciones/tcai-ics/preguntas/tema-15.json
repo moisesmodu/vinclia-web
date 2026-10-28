@@ -1,0 +1,745 @@
+[
+  {
+    "id": "tcai-t15-001",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley catalana 21/2000, las hojas de consentimiento informado, los informes de alta y los informes quirúrgicos, entre otros documentos, deben conservarse como mínimo durante:",
+      "opciones": [
+        "Cinco años desde la fecha de alta",
+        "Diez años desde la fecha de ingreso",
+        "Quince años desde la fecha de alta de cada proceso asistencial",
+        "Veinte años desde el fallecimiento del paciente"
+      ],
+      "explicacion": "El art. 12.4 de la Ley 21/2000 fija un mínimo de quince años desde el alta para esa documentación; el resto puede destruirse a los cinco años (art. 12.6)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei catalana 21/2000, els fulls de consentiment informat, els informes d'alta i els informes quirúrgics, entre altres documents, s'han de conservar com a mínim durant:",
+      "opciones": [
+        "Cinc anys des de la data d'alta",
+        "Deu anys des de la data d'ingrés",
+        "Quinze anys des de la data d'alta de cada procés assistencial",
+        "Vint anys des de la mort del pacient"
+      ],
+      "explicacion": "L'art. 12.4 de la Llei 21/2000 fixa un mínim de quinze anys des de l'alta per a aquesta documentació; la resta es pot destruir als cinc anys (art. 12.6)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Ley 21/2000, de 29 de diciembre, sobre los derechos de información concernientes a la salud y la autonomía del paciente, y la documentación clínica",
+      "articulo": "12.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a12"
+    },
+    "cita": "como mínimo durante quince años desde la fecha de alta de cada proceso asistencial, la siguiente documentación:",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-002",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 21/2000, la documentación de la historia clínica que no debe conservarse quince años puede destruirse una vez transcurridos, desde la fecha de alta de cada proceso asistencial:",
+      "opciones": [
+        "Cinco años",
+        "Dos años",
+        "Diez años",
+        "Un año"
+      ],
+      "explicacion": "El art. 12.6 de la Ley 21/2000 permite destruir a los cinco años desde el alta la documentación no incluida en la lista del apartado 4, salvo la que deba conservarse por los criterios del apartado 7."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 21/2000, la documentació de la història clínica que no s'ha de conservar quinze anys es pot destruir un cop transcorreguts, des de la data d'alta de cada procés assistencial:",
+      "opciones": [
+        "Cinc anys",
+        "Dos anys",
+        "Deu anys",
+        "Un any"
+      ],
+      "explicacion": "L'art. 12.6 de la Llei 21/2000 permet destruir als cinc anys des de l'alta la documentació no inclosa en la llista de l'apartat 4, llevat de la que s'hagi de conservar pels criteris de l'apartat 7."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Ley 21/2000, de 29 de diciembre, sobre los derechos de información concernientes a la salud y la autonomía del paciente, y la documentación clínica",
+      "articulo": "12.6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a12"
+    },
+    "cita": "La documentación que integra la historia clínica no mencionada por el apartado 4 puede destruirse una vez hayan transcurrido cinco años desde la fecha de alta de cada proceso asistencial.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-003",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley básica estatal 41/2002, los centros sanitarios deben conservar la documentación clínica, como mínimo, durante:",
+      "opciones": [
+        "Dos años desde la última consulta",
+        "Quince años desde el fallecimiento",
+        "Diez años desde el ingreso",
+        "Cinco años contados desde la fecha del alta de cada proceso asistencial"
+      ],
+      "explicacion": "El art. 17.1 de la Ley 41/2002 fija como mínimo cinco años desde el alta; la Ley catalana 21/2000 amplía a quince años el plazo para determinados documentos."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei bàsica estatal 41/2002, els centres sanitaris han de conservar la documentació clínica, com a mínim, durant:",
+      "opciones": [
+        "Dos anys des de l'última consulta",
+        "Quinze anys des de la mort",
+        "Deu anys des de l'ingrés",
+        "Cinc anys comptats des de la data de l'alta de cada procés assistencial"
+      ],
+      "explicacion": "L'art. 17.1 de la Llei 41/2002 fixa com a mínim cinc anys des de l'alta; la Llei catalana 21/2000 amplia a quinze anys el termini per a determinats documents."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "17.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a17"
+    },
+    "cita": "para la debida asistencia al paciente durante el tiempo adecuado a cada caso y, como mínimo, cinco años contados desde la fecha del alta de cada proceso asistencial.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-004",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cuál de los siguientes documentos forma parte del contenido mínimo de la historia clínica según la Ley 41/2002?",
+      "opciones": [
+        "El cuadrante de turnos del personal de la unidad",
+        "La evolución y planificación de cuidados de enfermería",
+        "El registro de visitas de los familiares",
+        "La hoja de pedido de material al almacén"
+      ],
+      "explicacion": "El art. 15.2 de la Ley 41/2002 incluye, entre otros, la evolución y planificación de cuidados de enfermería, la aplicación terapéutica de enfermería y el gráfico de constantes."
+    },
+    "ca": {
+      "enunciado": "Quin dels documents següents forma part del contingut mínim de la història clínica segons la Llei 41/2002?",
+      "opciones": [
+        "El quadrant de torns del personal de la unitat",
+        "L'evolució i planificació de cures d'infermeria",
+        "El registre de visites dels familiars",
+        "El full de comanda de material al magatzem"
+      ],
+      "explicacion": "L'art. 15.2 de la Llei 41/2002 inclou, entre d'altres, l'evolució i planificació de cures d'infermeria, l'aplicació terapèutica d'infermeria i el gràfic de constants."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a15"
+    },
+    "cita": "La evolución y planificación de cuidados de enfermería.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-005",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, el gráfico de constantes forma parte del contenido mínimo de la historia clínica, pero solo es exigible:",
+      "opciones": [
+        "En la atención primaria",
+        "Cuando el paciente es menor de edad",
+        "Cuando se trate de procesos de hospitalización o así se disponga",
+        "Cuando lo solicite expresamente el paciente"
+      ],
+      "explicacion": "El art. 15.2 de la Ley 41/2002 dispone que, entre otros, el gráfico de constantes (letra ñ) solo es exigible en procesos de hospitalización o cuando así se disponga."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, el gràfic de constants forma part del contingut mínim de la història clínica, però només és exigible:",
+      "opciones": [
+        "En l'atenció primària",
+        "Quan el pacient és menor d'edat",
+        "Quan es tracti de processos d'hospitalització o així es disposi",
+        "Quan ho demani expressament el pacient"
+      ],
+      "explicacion": "L'art. 15.2 de la Llei 41/2002 disposa que, entre d'altres, el gràfic de constants (lletra ñ) només és exigible en processos d'hospitalització o quan així es disposi."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a15"
+    },
+    "cita": "El gráfico de constantes.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-006",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, el personal de administración y gestión de los centros sanitarios puede acceder a la historia clínica:",
+      "opciones": [
+        "Solo a los datos relacionados con sus propias funciones",
+        "Sin ninguna limitación, por ser personal del centro",
+        "Únicamente con autorización judicial",
+        "Nunca, en ningún caso"
+      ],
+      "explicacion": "El art. 16.4 de la Ley 41/2002 limita el acceso del personal de administración y gestión a los datos relacionados con sus propias funciones."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, el personal d'administració i gestió dels centres sanitaris pot accedir a la història clínica:",
+      "opciones": [
+        "Només a les dades relacionades amb les seves pròpies funcions",
+        "Sense cap limitació, pel fet de ser personal del centre",
+        "Únicament amb autorització judicial",
+        "Mai, en cap cas"
+      ],
+      "explicacion": "L'art. 16.4 de la Llei 41/2002 limita l'accés del personal d'administració i gestió a les dades relacionades amb les seves pròpies funcions."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "16.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a16"
+    },
+    "cita": "El personal de administración y gestión de los centros sanitarios sólo puede acceder a los datos de la historia clínica relacionados con sus propias funciones.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-007",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Cuando un paciente ejerce su derecho de acceso a la historia clínica, los profesionales que han participado en su elaboración pueden, según la Ley 41/2002:",
+      "opciones": [
+        "Negar el acceso a toda la historia clínica",
+        "Exigir el pago de una tasa por cada anotación",
+        "Retirar los informes de alta",
+        "Oponer la reserva de sus anotaciones subjetivas"
+      ],
+      "explicacion": "El art. 18.3 de la Ley 41/2002 permite a los profesionales oponer la reserva de sus anotaciones subjetivas; el acceso tampoco puede perjudicar la confidencialidad de terceros."
+    },
+    "ca": {
+      "enunciado": "Quan un pacient exerceix el seu dret d'accés a la història clínica, els professionals que han participat en la seva elaboració poden, segons la Llei 41/2002:",
+      "opciones": [
+        "Denegar l'accés a tota la història clínica",
+        "Exigir el pagament d'una taxa per cada anotació",
+        "Retirar els informes d'alta",
+        "Oposar la reserva de les seves anotacions subjectives"
+      ],
+      "explicacion": "L'art. 18.3 de la Llei 41/2002 permet als professionals oposar la reserva de les seves anotacions subjectives; l'accés tampoc no pot perjudicar la confidencialitat de tercers."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "18.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a18"
+    },
+    "cita": "ni en perjuicio del derecho de los profesionales participantes en su elaboración, los cuales pueden oponer al derecho de acceso la reserva de sus anotaciones subjetivas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-008",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, el acceso a la historia clínica de un paciente fallecido se facilitará a las personas vinculadas a él por razones familiares o de hecho:",
+      "opciones": [
+        "Solo si lo autoriza un juez",
+        "Salvo que el fallecido lo hubiese prohibido expresamente y así se acredite",
+        "Únicamente si son herederos testamentarios",
+        "Solo transcurridos cinco años desde el fallecimiento"
+      ],
+      "explicacion": "El art. 18.4 de la Ley 41/2002 permite el acceso de las personas vinculadas salvo prohibición expresa y acreditada del fallecido, sin incluir datos que afecten a su intimidad ni las anotaciones subjetivas."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, l'accés a la història clínica d'un pacient mort s'ha de facilitar a les persones vinculades a aquest per raons familiars o de fet:",
+      "opciones": [
+        "Només si ho autoritza un jutge",
+        "Llevat que el difunt ho hagués prohibit expressament i així s'acrediti",
+        "Únicament si són hereus testamentaris",
+        "Només transcorreguts cinc anys des de la mort"
+      ],
+      "explicacion": "L'art. 18.4 de la Llei 41/2002 permet l'accés de les persones vinculades llevat de prohibició expressa i acreditada del difunt, sense incloure dades que afectin la seva intimitat ni les anotacions subjectives."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "18.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a18"
+    },
+    "cita": "sólo facilitarán el acceso a la historia clínica de los pacientes fallecidos a las personas vinculadas a él, por razones familiares o de hecho, salvo que el fallecido lo hubiese prohibido expresamente y así se acredite.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-009",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "En los centros con pacientes hospitalizados, la Ley 41/2002 atribuye la gestión de la historia clínica a la unidad de admisión y documentación clínica, mientras que la custodia de las historias está bajo la responsabilidad de:",
+      "opciones": [
+        "La dirección del centro sanitario",
+        "Cada médico responsable de sus pacientes",
+        "La supervisora de enfermería de cada unidad",
+        "El servicio de atención al usuario"
+      ],
+      "explicacion": "El art. 17.4 de la Ley 41/2002 encomienda la gestión a la unidad de admisión y documentación clínica y la custodia a la dirección del centro; los profesionales individuales custodian su propia documentación (art. 17.5)."
+    },
+    "ca": {
+      "enunciado": "En els centres amb pacients hospitalitzats, la Llei 41/2002 atribueix la gestió de la història clínica a la unitat d'admissió i documentació clínica, mentre que la custòdia de les històries és responsabilitat de:",
+      "opciones": [
+        "La direcció del centre sanitari",
+        "Cada metge responsable dels seus pacients",
+        "La supervisora d'infermeria de cada unitat",
+        "El servei d'atenció a l'usuari"
+      ],
+      "explicacion": "L'art. 17.4 de la Llei 41/2002 encomana la gestió a la unitat d'admissió i documentació clínica i la custòdia a la direcció del centre; els professionals individuals custodien la seva pròpia documentació (art. 17.5)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "17.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a17"
+    },
+    "cita": "se realizará a través de la unidad de admisión y documentación clínica, encargada de integrar en un solo archivo las historias clínicas. La custodia de dichas historias clínicas estará bajo la responsabilidad de la dirección del centro sanitario.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-010",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 21/2000, entre los datos de identificación del enfermo y de la asistencia que debe incluir la historia clínica figura:",
+      "opciones": [
+        "La profesión de los familiares",
+        "El nombre del TCAI de cada turno",
+        "El número de habitación y de cama, en caso de ingreso",
+        "La religión del paciente"
+      ],
+      "explicacion": "El art. 10.1.a) de la Ley 21/2000 incluye, entre otros datos de identificación, el número de habitación y de cama en caso de ingreso y el médico responsable del enfermo."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 21/2000, entre les dades d'identificació del malalt i de l'assistència que ha d'incloure la història clínica hi ha:",
+      "opciones": [
+        "La professió dels familiars",
+        "El nom del TCAI de cada torn",
+        "El número d'habitació i de llit, en cas d'ingrés",
+        "La religió del pacient"
+      ],
+      "explicacion": "L'art. 10.1.a) de la Llei 21/2000 inclou, entre altres dades d'identificació, el número d'habitació i de llit en cas d'ingrés i el metge responsable del malalt."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Ley 21/2000, de 29 de diciembre, sobre los derechos de información concernientes a la salud y la autonomía del paciente, y la documentación clínica",
+      "articulo": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a10"
+    },
+    "cita": "Número de habitación y de cama, en caso de ingreso.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-011",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 21/2000, las historias clínicas pueden elaborarse en soporte papel, audiovisual e informático siempre que se garantice:",
+      "opciones": [
+        "Que el paciente firme cada hoja",
+        "La autenticidad de su contenido y su plena reproductibilidad futura",
+        "Que se impriman al alta del paciente",
+        "Que solo el médico responsable pueda modificarlas"
+      ],
+      "explicacion": "El art. 9.3 de la Ley 21/2000 admite cualquier soporte que garantice la autenticidad y la reproductibilidad futura, y exige registrar todos los cambios e identificar a quien los realiza."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 21/2000, les històries clíniques es poden elaborar en suport paper, audiovisual i informàtic sempre que es garanteixi:",
+      "opciones": [
+        "Que el pacient signi cada full",
+        "L'autenticitat del seu contingut i la seva plena reproductibilitat futura",
+        "Que s'imprimeixin a l'alta del pacient",
+        "Que només el metge responsable les pugui modificar"
+      ],
+      "explicacion": "L'art. 9.3 de la Llei 21/2000 admet qualsevol suport que garanteixi l'autenticitat i la reproductibilitat futura, i exigeix registrar tots els canvis i identificar qui els fa."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2001-2353",
+      "norma": "Ley 21/2000, de 29 de diciembre, sobre los derechos de información concernientes a la salud y la autonomía del paciente, y la documentación clínica",
+      "articulo": "9.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-2353#a9"
+    },
+    "cita": "Las historias clínicas se pueden elaborar mediante soporte papel, audiovisual e informático, siempre que se garantice la autenticidad del contenido de las mismas y su plena reproductibilidad futura.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-012",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, los profesionales sanitarios tienen el deber de cooperar en la creación y el mantenimiento de una documentación clínica:",
+      "opciones": [
+        "Resumida y elaborada solo al alta",
+        "Redactada exclusivamente por el personal administrativo",
+        "Archivada fuera del centro",
+        "Ordenada y secuencial del proceso asistencial"
+      ],
+      "explicacion": "El art. 17.3 de la Ley 41/2002 impone a los profesionales el deber de cooperar en una documentación clínica ordenada y secuencial; por eso los registros del TCAI deben hacerse en el momento y de forma clara."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, els professionals sanitaris tenen el deure de cooperar en la creació i el manteniment d'una documentació clínica:",
+      "opciones": [
+        "Resumida i elaborada només a l'alta",
+        "Redactada exclusivament pel personal administratiu",
+        "Arxivada fora del centre",
+        "Ordenada i seqüencial del procés assistencial"
+      ],
+      "explicacion": "L'art. 17.3 de la Llei 41/2002 imposa als professionals el deure de cooperar en una documentació clínica ordenada i seqüencial; per això els registres del TCAI s'han de fer en el moment i de manera clara."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "17.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a17"
+    },
+    "cita": "Los profesionales sanitarios tienen el deber de cooperar en la creación y el mantenimiento de una documentación clínica ordenada y secuencial del proceso asistencial de los pacientes.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-013",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 41/2002, el paciente tiene derecho a que los centros sanitarios establezcan un mecanismo de custodia de las historias clínicas que sea:",
+      "opciones": [
+        "Pasiva y centralizada en el Ministerio de Sanidad",
+        "Delegada en el propio paciente, que conserva el original",
+        "Activa y diligente",
+        "Externalizada a una empresa privada en todo caso"
+      ],
+      "explicacion": "El art. 19 de la Ley 41/2002 reconoce el derecho a una custodia activa y diligente que permita la recogida, integración, recuperación y comunicación de la información con sujeción al principio de confidencialidad."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 41/2002, el pacient té dret que els centres sanitaris estableixin un mecanisme de custòdia de les històries clíniques que sigui:",
+      "opciones": [
+        "Passiva i centralitzada al Ministeri de Sanitat",
+        "Delegada en el mateix pacient, que en conserva l'original",
+        "Activa i diligent",
+        "Externalitzada a una empresa privada en tot cas"
+      ],
+      "explicacion": "L'art. 19 de la Llei 41/2002 reconeix el dret a una custòdia activa i diligent que permeti la recollida, la integració, la recuperació i la comunicació de la informació amb subjecció al principi de confidencialitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-2002-22188",
+      "norma": "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+      "articulo": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188#a19"
+    },
+    "cita": "El paciente tiene derecho a que los centros sanitarios establezcan un mecanismo de custodia activa y diligente de las historias clínicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-014",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la clasificación del Decreto 27/1999 de Cataluña, los residuos sanitarios específicos o de riesgo (por ejemplo, los infecciosos y el material punzante y cortante) pertenecen al:",
+      "opciones": [
+        "Grupo I",
+        "Grupo II",
+        "Grupo III",
+        "Grupo IV"
+      ],
+      "explicacion": "El grupo III reúne los residuos sanitarios específicos o de riesgo; el grupo I son asimilables a municipales, el II sanitarios no específicos y el IV los tipificados en normativas singulares (citostáticos, químicos…)."
+    },
+    "ca": {
+      "enunciado": "Segons la classificació del Decret 27/1999 de Catalunya, els residus sanitaris específics o de risc (per exemple, els infecciosos i el material punxant i tallant) pertanyen al:",
+      "opciones": [
+        "Grup I",
+        "Grup II",
+        "Grup III",
+        "Grup IV"
+      ],
+      "explicacion": "El grup III aplega els residus sanitaris específics o de risc; el grup I són assimilables als municipals, el II sanitaris no específics i el IV els tipificats en normatives singulars (citostàtics, químics…)."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament de Sanitat i Seguretat Social · Guia de gestió de residus sanitaris (Decret 27/1999)",
+      "url": "https://scientiasalut.gencat.cat/handle/11351/2896"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-015",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el Decreto 27/1999 de Cataluña, los restos de medicamentos citostáticos y el material contaminado por ellos se clasifican en el:",
+      "opciones": [
+        "Grupo I, residuos asimilables a municipales",
+        "Grupo II, residuos sanitarios no específicos",
+        "Grupo III, residuos sanitarios específicos o de riesgo",
+        "Grupo IV, residuos tipificados en normativas singulares"
+      ],
+      "explicacion": "Los citostáticos forman parte del grupo IV, junto con otros residuos regulados por normativas específicas, como los químicos o los radiactivos."
+    },
+    "ca": {
+      "enunciado": "Segons el Decret 27/1999 de Catalunya, les restes de medicaments citostàtics i el material contaminat per aquests es classifiquen en el:",
+      "opciones": [
+        "Grup I, residus assimilables als municipals",
+        "Grup II, residus sanitaris no específics",
+        "Grup III, residus sanitaris específics o de risc",
+        "Grup IV, residus tipificats en normatives singulars"
+      ],
+      "explicacion": "Els citostàtics formen part del grup IV, juntament amb altres residus regulats per normatives específiques, com els químics o els radioactius."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament de Sanitat i Seguretat Social · Guia de gestió de residus sanitaris (Decret 27/1999)",
+      "url": "https://scientiasalut.gencat.cat/handle/11351/2896"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-016",
+    "tema": 15,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "El material de curas, los yesos y la ropa desechable manchados de sangre o secreciones de un paciente sin infección transmisible se clasifican, según el Decreto 27/1999, como residuos:",
+      "opciones": [
+        "Del grupo I, asimilables a municipales",
+        "Del grupo II, sanitarios no específicos",
+        "Del grupo III, sanitarios específicos o de riesgo",
+        "Del grupo IV, citostáticos"
+      ],
+      "explicacion": "Son residuos del grupo II: proceden de la actividad sanitaria pero no tienen riesgo infeccioso específico, por lo que no requieren la gestión diferenciada del grupo III."
+    },
+    "ca": {
+      "enunciado": "El material de cures, els guixos i la roba d'un sol ús tacats de sang o secrecions d'un pacient sense infecció transmissible es classifiquen, segons el Decret 27/1999, com a residus:",
+      "opciones": [
+        "Del grup I, assimilables als municipals",
+        "Del grup II, sanitaris no específics",
+        "Del grup III, sanitaris específics o de risc",
+        "Del grup IV, citostàtics"
+      ],
+      "explicacion": "Són residus del grup II: procedeixen de l'activitat sanitària però no tenen risc infecciós específic, per la qual cosa no requereixen la gestió diferenciada del grup III."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament de Sanitat i Seguretat Social · Guia de gestió de residus sanitaris (Decret 27/1999)",
+      "url": "https://scientiasalut.gencat.cat/handle/11351/2896"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-017",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Una aguja usada debe desecharse:",
+      "opciones": [
+        "Directamente en el contenedor rígido para objetos punzantes, sin reencapuchar",
+        "Reencapuchada con las dos manos y en la bolsa de residuos general",
+        "En la bolsa de ropa sucia, envuelta en una gasa",
+        "Doblada para que no pinche, en la papelera de la habitación"
+      ],
+      "explicacion": "Las agujas se depositan, sin reencapuchar ni manipular, en contenedores rígidos y resistentes a la perforación (residuos del grupo III), situados cerca del punto de uso."
+    },
+    "ca": {
+      "enunciado": "Una agulla utilitzada s'ha de llençar:",
+      "opciones": [
+        "Directament al contenidor rígid per a objectes punxants, sense tornar-hi a posar el caputxó",
+        "Amb el caputxó posat amb les dues mans i a la bossa de residus general",
+        "A la bossa de roba bruta, embolicada amb una gasa",
+        "Doblegada perquè no punxi, a la paperera de l'habitació"
+      ],
+      "explicacion": "Les agulles es dipositen, sense tornar-hi a posar el caputxó ni manipular-les, en contenidors rígids i resistents a la perforació (residus del grup III), situats a prop del punt d'ús."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "Departament de Sanitat i Seguretat Social · Guia de gestió de residus sanitaris (Decret 27/1999)",
+      "url": "https://scientiasalut.gencat.cat/handle/11351/2896"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-018",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "La cama cerrada es la que:",
+      "opciones": [
+        "Está ocupada por un paciente que no puede levantarse",
+        "Se prepara para recibir a un paciente que vuelve del quirófano",
+        "Está preparada, sin ocupar, a la espera de un nuevo ingreso",
+        "Se deja con la ropa retirada para su desinfección"
+      ],
+      "explicacion": "La cama cerrada se hace con toda la ropa colocada y cubierta, pendiente de un nuevo ingreso; la cama abierta o quirúrgica se prepara para acoger a un paciente concreto."
+    },
+    "ca": {
+      "enunciado": "El llit tancat és el que:",
+      "opciones": [
+        "Està ocupat per un pacient que no es pot aixecar",
+        "Es prepara per rebre un pacient que torna del quiròfan",
+        "Està preparat, sense ocupar, a l'espera d'un nou ingrés",
+        "Es deixa amb la roba retirada per desinfectar-lo"
+      ],
+      "explicacion": "El llit tancat es fa amb tota la roba col·locada i coberta, pendent d'un nou ingrés; el llit obert o quirúrgic es prepara per acollir un pacient concret."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-019",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "En la cama quirúrgica (o de anestesia), preparada para recibir a un paciente recién operado, la ropa superior se dispone:",
+      "opciones": [
+        "Remetida por los cuatro lados del colchón",
+        "Doblada en abanico hacia un lateral o los pies, para facilitar la transferencia",
+        "Retirada por completo y guardada en el armario",
+        "Colocada debajo del colchón para que no se ensucie"
+      ],
+      "explicacion": "En la cama quirúrgica la sábana encimera y la manta se doblan en abanico, de manera que el paciente pueda pasar de la camilla a la cama sin obstáculos y se le cubra enseguida."
+    },
+    "ca": {
+      "enunciado": "En el llit quirúrgic (o d'anestèsia), preparat per rebre un pacient acabat d'operar, la roba superior es disposa:",
+      "opciones": [
+        "Ficada pels quatre costats del matalàs",
+        "Doblegada en ventall cap a un lateral o els peus, per facilitar la transferència",
+        "Retirada del tot i guardada a l'armari",
+        "Col·locada sota el matalàs perquè no es tacï"
+      ],
+      "explicacion": "En el llit quirúrgic el llençol de sobre i la manta es dobleguen en ventall, de manera que el pacient pugui passar de la llitera al llit sense obstacles i se'l cobreixi de seguida."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-020",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Al retirar la ropa sucia de la cama de un paciente, el TCAI debe:",
+      "opciones": [
+        "Sacudirla para eliminar restos antes de llevarla al carro",
+        "Dejarla en el suelo de la habitación hasta terminar",
+        "Apoyarla contra el uniforme para transportarla mejor",
+        "Enrollarla sin sacudirla y depositarla directamente en la bolsa o el carro de ropa sucia"
+      ],
+      "explicacion": "La ropa sucia se enrolla hacia dentro, sin sacudirla para no dispersar microorganismos, sin dejarla en el suelo y sin que toque el uniforme."
+    },
+    "ca": {
+      "enunciado": "En retirar la roba bruta del llit d'un pacient, el TCAI ha de:",
+      "opciones": [
+        "Sacsejar-la per eliminar-ne restes abans de portar-la al carro",
+        "Deixar-la al terra de l'habitació fins que acabi",
+        "Recolzar-la contra l'uniforme per transportar-la millor",
+        "Enrotllar-la sense sacsejar-la i dipositar-la directament a la bossa o al carro de roba bruta"
+      ],
+      "explicacion": "La roba bruta s'enrotlla cap endins, sense sacsejar-la per no dispersar microorganismes, sense deixar-la al terra i sense que toqui l'uniforme."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-021",
+    "tema": 15,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Al reponer productos sanitarios en el almacén de la unidad, la norma correcta es:",
+      "opciones": [
+        "Colocar delante los productos con la fecha de caducidad más próxima para que se utilicen primero",
+        "Colocar delante los productos recién recibidos",
+        "Mezclar los lotes para agotar el espacio disponible",
+        "Retirar los envoltorios para ahorrar espacio"
+      ],
+      "explicacion": "La rotación de existencias exige que se use primero lo que caduca antes; además, el material estéril debe conservar íntegro su envoltorio hasta el momento de su uso."
+    },
+    "ca": {
+      "enunciado": "En reposar productes sanitaris al magatzem de la unitat, la norma correcta és:",
+      "opciones": [
+        "Col·locar al davant els productes amb la data de caducitat més pròxima perquè es facin servir primer",
+        "Col·locar al davant els productes acabats de rebre",
+        "Barrejar els lots per aprofitar l'espai disponible",
+        "Retirar els embolcalls per estalviar espai"
+      ],
+      "explicacion": "La rotació d'existències exigeix que es faci servir primer el que caduca abans; a més, el material estèril ha de conservar íntegre l'embolcall fins al moment d'utilitzar-lo."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t15-022",
+    "tema": 15,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Antes de utilizar un paquete de material estéril, el TCAI debe comprobar:",
+      "opciones": [
+        "Que el paquete pese lo indicado en la etiqueta",
+        "La integridad del envoltorio, que esté seco y que no haya caducado",
+        "Que se haya abierto previamente para revisar el contenido",
+        "Únicamente el color de la cinta del fabricante"
+      ],
+      "explicacion": "Un envoltorio roto, húmedo o caducado invalida la esterilidad: el material debe retirarse y enviarse a reprocesar o desecharse."
+    },
+    "ca": {
+      "enunciado": "Abans d'utilitzar un paquet de material estèril, el TCAI ha de comprovar:",
+      "opciones": [
+        "Que el paquet pesi el que indica l'etiqueta",
+        "La integritat de l'embolcall, que estigui sec i que no hagi caducat",
+        "Que s'hagi obert prèviament per revisar-ne el contingut",
+        "Únicament el color de la cinta del fabricant"
+      ],
+      "explicacion": "Un embolcall trencat, humit o caducat invalida l'esterilitat: el material s'ha de retirar i enviar a reprocessar o llençar."
+    },
+    "fuente": {
+      "tipo": "web",
+      "norma": "ICS · Activitats dels tècnics i tècniques en cures auxiliars d'infermeria en l'atenció hospitalària",
+      "url": "https://ics.gencat.cat/web/.content/Assistencia/cures-infermeres/tcai/71AD-TCAI-HOSPITAL.pdf"
+    },
+    "origen": "ia"
+  }
+]
