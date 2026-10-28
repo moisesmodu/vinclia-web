@@ -4,6 +4,15 @@
 > Regla: **ninguna sesión le pide a Moisés claves, cuentas ni "crea el proyecto en Vercel"**. Moisés solo abre en el
 > navegador las páginas que se le indiquen cuando una acción exige su sesión iniciada; el resto lo hace Claude.
 
+## 0. Una sola vez: la red del entorno en la nube
+
+Las sesiones en la nube no llegan a `api.stripe.com` (la sesión N lo comprobó el 28/10): la política de red del entorno
+lo bloquea. En el mismo menú del entorno (barra de título de la sesión → Editar → Network access), con el nivel
+«Limited», añadir a Allowed domains, dejando marcada la casilla de gestores de paquetes:
+`api.stripe.com`, `api.vercel.com`, `vercel.com`, `console.neon.tech`, `api.resend.com`, `api.elevenlabs.io`,
+`api.anthropic.com`, `*.neon.tech`, `*.vercel.app`. Pasos: https://code.claude.com/docs/en/cloud-environments#network-access.
+Sin esto, las sesiones no pueden crear productos de Stripe ni desplegar aunque tengan los secretos.
+
 ## 1. Una sola vez: los accesos como secretos del entorno en la nube
 
 La sesión del Mac (con el navegador de Moisés abierto) obtiene estos accesos y los guarda en el entorno en la nube
@@ -54,7 +63,8 @@ eventos de webhook de Stripe; comandos a ejecutar en orden. La sesión del Mac l
 
 ## 5. La sesión del Mac
 
-Orden de trabajo: (1) sección 1 completa, para que las sesiones en la nube sean autónomas desde hoy; (2) ejecutar los
-`DESPLIEGUE.md` que ya existan (A y N están construidos y esperando); (3) anotar en `panel/data/proyectos.json` la URL
+Orden de trabajo: (0) sección 0 (red del entorno); (1) sección 1 completa, para que las sesiones en la nube sean autónomas desde hoy; (2) ejecutar los
+`DESPLIEGUE.md` que ya existan (N está en el PR #3, rama `claude/n-nuevo-en-espana`, con `scripts/stripe-configurar.mjs`
+que crea productos y webhook de forma repetible; A llegará en su PR); (3) anotar en `panel/data/proyectos.json` la URL
 de producción y el estado `lanzado` de cada uno, y hacer push a la rama base. Si una acción exige la sesión del
 navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo "abre esta página", nada más.
