@@ -79,12 +79,21 @@
   {
     "slug": "jelly-stack",
     "titulo": "Jelly Stack",
-    "genero": "",
-    "estado": "en desarrollo",
+    "genero": "Hipercasual de apilar (gelatina con física blanda), una pulsación",
+    "estado": "listo para enviar",
     "color": "#6cc8ff",
     "ids": {
       "gamedistribution": "",
       "gamemonetize": ""
-    }
+    },
+    "descripcion": "Tap to drop the jelly. Stack it high — whatever hangs over wobbles and falls off!",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games",
+      "stacking-games"
+    ]
   }
 ]

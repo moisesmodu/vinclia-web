@@ -1,0 +1,76 @@
+[
+  {
+    "path": "play/jelly-stack",
+    "title": "Jelly Stack – Free One-Tap Stacking Game",
+    "description": "Play Jelly Stack free in your browser: tap to drop wobbly jelly blocks, line them up perfectly and build the tallest tower you can.",
+    "h1": "Jelly Stack",
+    "body": [
+      "A cute jelly block slides back and forth above your tower. Tap to drop it. Whatever hangs over the edge is sliced off and wobbles away, and the next block is only as wide as what was left.",
+      "Drop it perfectly and the jelly keeps its full width, sparkles and plays a rising note. Five perfect drops in a row and it even grows back a little. One tap, no text, runs of one to three minutes, on phones, tablets, Chromebooks and desktops.",
+      "New here? Read <a href=\"../../jelly-stack/how-to-play/\">how to play</a> and the <a href=\"../../jelly-stack/tips/\">tips to stack higher</a>."
+    ],
+    "game": "jelly-stack",
+    "hub": null,
+    "embed": true
+  },
+  {
+    "path": "jelly-stack/how-to-play",
+    "title": "How to Play Jelly Stack – Controls and Rules",
+    "description": "Jelly Stack in one line: tap to drop the sliding jelly onto the tower. Learn how cutting, perfect drops, combos and stars work.",
+    "h1": "How to play Jelly Stack",
+    "body": [
+      "Jelly Stack uses a single input. <b>Tap</b> the screen, <b>click</b> the mouse or press <b>Space</b> to drop the jelly block that slides above the tower.",
+      "The part of the block that hangs over the block below is cut off and falls. The new top block keeps only the overlapping width, so every sloppy drop makes the next one harder.",
+      "A <b>perfect drop</b> lines up with the block below within a few pixels. It keeps the full width, gives you a star and starts a combo. From the fifth perfect drop in a row, each perfect drop makes the block a little wider again.",
+      "The block slides faster as the tower gets taller. If you miss the tower completely, the run is over and your height is your score. On some sites you can watch an optional video once per run to get one more block."
+    ],
+    "game": "jelly-stack",
+    "hub": null
+  },
+  {
+    "path": "jelly-stack/tips",
+    "title": "Jelly Stack Tips: Stack Higher and Keep Your Combo",
+    "description": "Practical tips to beat your best height in Jelly Stack: timing, rhythm, saving a narrow tower and chaining perfect drops.",
+    "h1": "Jelly Stack tips and tricks",
+    "body": [
+      "<b>Watch the edge, not the middle.</b> Line up the leading edge of the sliding jelly with the edge of the block below; it is easier to judge than the centre.",
+      "<b>Find the rhythm.</b> The block always bounces between the same two points. Count the beat of one pass and tap on it instead of chasing the block with your eyes.",
+      "<b>Protect your width early.</b> The first twenty blocks are slow. Every perfect drop there keeps your tower wide for the fast part later.",
+      "<b>Chase five in a row.</b> After five perfect drops the block starts growing back, so a long combo can repair an earlier mistake.",
+      "<b>When the tower gets thin, slow down your thumb, not the game.</b> A narrow block is still fine as long as you do not miss completely. Wait for a full pass if you are not sure.",
+      "<b>Ignore the wobble.</b> The tower sways a little as it grows, but the sliding block sways with it, so what you see lined up is what lands."
+    ],
+    "game": "jelly-stack",
+    "hub": null
+  },
+  {
+    "path": "jelly-stack/for-schools",
+    "title": "Jelly Stack for Schools and Kids – Safe, Short, No Sign-up",
+    "description": "Jelly Stack is a short, text-free timing game that works on school Chromebooks: no chat, no purchases, no account.",
+    "h1": "Jelly Stack for classrooms and kids",
+    "body": [
+      "Jelly Stack has no chat, no purchases, no account and no personal data. A run lasts one to three minutes, which makes it a good short break between tasks.",
+      "There is no text in the game, only numbers and icons, so it works the same for children who are still learning to read and for students of any language.",
+      "It is also a playful way to talk about estimation and timing: each drop is a small measurement, and students can see how a small error at the start makes every following block narrower.",
+      "It runs in the browser on Chromebooks, tablets and computers with a single tap, click or the Space bar, and needs no download or installation."
+    ],
+    "game": "jelly-stack",
+    "hub": null
+  },
+  {
+    "path": "jelly-stack/faq",
+    "title": "Jelly Stack FAQ",
+    "description": "Answers about Jelly Stack: is it free, does it save, does it work on mobile and Chromebook, what is a perfect drop.",
+    "h1": "Jelly Stack: frequently asked questions",
+    "body": [
+      "<b>Is it free?</b> Yes, it is free to play in the browser.",
+      "<b>Does it save my progress?</b> Yes. Your best height and your stars are stored in your browser.",
+      "<b>Does it work on phones and Chromebooks?</b> Yes, with touch, mouse or keyboard, in portrait or landscape. It plays especially well in portrait on a phone.",
+      "<b>What is a perfect drop?</b> A drop that lines up with the block below within a few pixels. The block keeps its full width and you earn a star.",
+      "<b>Why did my run end?</b> The sliding block missed the tower completely. Any overlap at all keeps you going, even a thin one.",
+      "<b>Can I turn the music off?</b> Yes, with the speaker button in the top right corner."
+    ],
+    "game": "jelly-stack",
+    "hub": null
+  }
+]
