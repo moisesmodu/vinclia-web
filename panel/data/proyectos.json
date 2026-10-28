@@ -5,7 +5,7 @@
     "nombre": "CCSE nacionalidad",
     "marca": "Nuevo en España",
     "resumen": "App y web para aprobar el examen CCSE de nacionalidad española, con las 300 preguntas oficiales explicadas en 7 idiomas.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 1,
     "modelo": "Pago único 9,99 € (3 meses)",
     "margenCliente": 8.5,
@@ -14,7 +14,9 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
-    "enlaces": {},
+    "enlaces": {
+      "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -35,17 +37,22 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Web/PWA, app Android, Stripe y marketing orgánico construidos (PR #2)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac; proyecto Vercel «ccse-en-tu-idioma»"
       }
     ],
     "proximos": [
-      "Abrir la sesión A con el prompt",
-      "Stripe en modo prueba",
-      "Publicar en Google Play"
+      "Sesión del Mac: ejecutar proyectos/a-ccse/DESPLIEGUE.md",
+      "Primer pago real verificado"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Proyecto en Vercel y Neon",
-      "Publicar en Google Play"
+      "Publicar en Google Play y guardar la clave de firma Android (cuando la sesión del Mac haya desplegado)"
     ],
     "mejoras": [
       "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
@@ -213,7 +220,7 @@
     "nombre": "Nuevo en España",
     "marca": "Nuevo en España",
     "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 2,
     "modelo": "Suscripción 4,99 €/mes o pack 19,90 €",
     "margenCliente": 22,
@@ -222,7 +229,9 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
-    "enlaces": {},
+    "enlaces": {
+      "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -243,15 +252,21 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Guías de trámites en 7 idiomas con pago en modo prueba construidas (PR #3)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs (productos y webhook repetibles) listos para la sesión del Mac"
       }
     ],
     "proximos": [
-      "Abrir la sesión N después de A (comparten código)"
+      "Sesión del Mac: ejecutar proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
+      "Verificar un pago en producción"
     ],
-    "paraMoises": [
-      "Claves de Stripe",
-      "Proyecto en Vercel y Neon"
-    ],
+    "paraMoises": [],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
       "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
@@ -653,7 +668,7 @@
     "nombre": "Juegos",
     "marca": "Juegos",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -662,7 +677,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "La plataforma distribuye; sin marketing",
-    "enlaces": {},
+    "enlaces": {
+      "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
+      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -683,15 +701,25 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Primer juego «Egg Truck» terminado: paquetes para CrazyGames, Poki e itch.io, fichas, portadas y plantilla reutilizable (PR #4)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md listo: proyecto Vercel «juegos-casuales» (Root Directory proyectos/juegos), sin Neon ni Stripe"
       }
     ],
     "proximos": [
-      "Primer juego web y plantilla",
-      "Cuentas en CrazyGames, Poki e itch.io"
+      "Sesión del Mac: ejecutar proyectos/juegos/DESPLIEGUE.md",
+      "Segundo juego con la plantilla",
+      "Plan de Roblox"
     ],
     "paraMoises": [
-      "Cuentas de desarrollador",
-      "Pulsar enviar con el paquete"
+      "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",
+      "Cuenta en Poki y enviar la URL del juego cuando esté desplegado",
+      "Cuenta en itch.io y publicar egg-truck-itch.zip"
     ],
     "mejoras": [
       "Un adaptador de portal propio en TypeScript (init, gameplayStart/Stop, anuncio intermedio, anuncio con recompensa) con implementaciones para CrazyGames v3, Poki e itch.io, para compilar un build por portal con una variable.",
@@ -1290,7 +1318,7 @@
     "nombre": "Cuentos personalizados",
     "marca": "Niños",
     "resumen": "Cuentos infantiles ilustrados y personalizados, en PDF e impresos bajo demanda. Tienda abierta el 15/11 para Navidad.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 6,
     "fechaLimite": "2026-11-15",
     "modelo": "PDF 7,90 € · impreso 34,90 €",
@@ -1300,7 +1328,9 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
-    "enlaces": {},
+    "enlaces": {
+      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1321,16 +1351,29 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Tienda «Lunilla» de cuentos personalizados (es/ca) construida y probada de punta a punta en modo simulado; apertura prevista el 15/11 (PR #5)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Pedido a la sesión: sustituir las tareas de Neon/Stripe/Vercel de PARA-MOISES por un DESPLIEGUE.md para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "DESPLIEGUE.md y scripts/stripe-configurar.mjs listos para la sesión del Mac (Neon «cartera-g-cuentos», Vercel, Stripe de prueba, Resend). Precios: PDF 7,90 €, tapa dura 36,90 € con envío (margen ≥ 9 €; se confirma con la cotización real de Gelato)"
       }
     ],
     "proximos": [
-      "Abrir la sesión G antes del 1/11",
-      "Cuenta de imprenta"
+      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
+      "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
+      "Apertura el 15/11"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Cuenta en Gelato",
-      "Vercel y Neon"
+      "Cuenta en Gelato (imprenta) con clave de API",
+      "Comprar el dominio (lunilla.es, contelunilla.com o cuentoslunilla.es)",
+      "NIF para los textos legales"
     ],
     "mejoras": [
       "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",
