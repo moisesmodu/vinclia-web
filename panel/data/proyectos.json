@@ -2301,7 +2301,7 @@
     "nombre": "Webs con AdSense",
     "marca": "Pasivos",
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 11,
     "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas",
     "margenCliente": 0,
@@ -2310,7 +2310,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Solo Google: búsquedas de utilidad ('calcular sueldo neto 2027', 'festivos Lleida 2027'); nunca anuncios de pago",
-    "enlaces": {},
+    "enlaces": {
+      "Vista previa sitio 1 (NetoClaro)": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
+      "Vista previa sitio 2 (ImpuestoClaro)": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq"
+    },
     "acciones": [
       {
         "fecha": "2026-10-24",
@@ -2327,17 +2330,24 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Fábrica de sitios (Astro) y sitios 1 NetoClaro (nómina) y 2 ImpuestoClaro (impuestos): 40 calculadoras en castellano y catalán, 20 fichas de datos, 238 páginas programáticas, Lighthouse móvil 100; vista previa publicada, pendiente de dominio"
       }
     ],
     "proximos": [
-      "Abrir la sesión P: fábrica y sitios 1 (nómina) y 2 (impuestos y autónomos)",
-      "Sitio 3 (EE. UU. en español) a las 6-8 semanas: abre las redes premium",
-      "Comprar dominios (.es, .es, .com), cuenta de AdSense y Search Console"
+      "Moisés: comprar netoclaro.es e impuestoclaro.es y conectar Cloudflare Pages (PARA-MOISES.md)",
+      "Solicitar AdSense con el sitio 1 en su dominio; publicar el mensaje RGPD de Google",
+      "Crear la tarea programada semanal: BOE, 20 páginas nuevas, Search Console e informe",
+      "Sitio 3 (EE. UU. en español, chequeclaro.com) a las 6–8 semanas: abre Mediavine y Raptive"
     ],
     "paraMoises": [
-      "Comprar los 3 dominios",
-      "Cuenta de AdSense y código de verificación",
-      "Conectar Search Console"
+      "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
+      "Cloudflare Pages: conectar el repositorio, un proyecto por sitio (4 min)",
+      "Pasar el NIF para el aviso legal",
+      "Cuenta de AdSense, pegar el ca-pub y publicar el mensaje RGPD",
+      "Search Console: verificar los dos dominios y enviar el sitemap"
     ],
     "mejoras": [
       "Arquitectura 'herramienta, explicación y dato local': cada calculadora en castellano y catalán con tablas oficiales actualizadas (IRPF estatal y catalán, SMI, cotizaciones, impuestos por comunidad) y fecha visible; es el formato con menor exposición a los resúmenes de IA.",
@@ -2347,7 +2357,10 @@
       "Catalán como ventaja estructural: catalanizar primero las herramientas con más volumen en castellano (sou net, hipoteca, IRPF, dies festius) donde no hay competencia monetizada.",
       "Monetización por capas: AdSense desde el primer día; afiliación financiera selectiva en páginas de alta intención; descartar redes de ventanas emergentes por riesgo de políticas.",
       "Bucle automatizado del agente: Search Console, priorizar herramientas con impresiones sin clics, publicar o actualizar, enviar al índice; revisión humana semanal del 10 % de las páginas nuevas.",
-      "Capa de 'noticia útil' para Discover solo en el sitio de datos locales (cambios normativos, fechas de pago, calendario fiscal) enlazando a la calculadora; abandonar si no supera el 15 % del tráfico en 6 meses."
+      "Capa de 'noticia útil' para Discover solo en el sitio de datos locales (cambios normativos, fechas de pago, calendario fiscal) enlazando a la calculadora; abandonar si no supera el 15 % del tráfico en 6 meses.",
+      "Cargar AdSense y el consentimiento de Google tras la primera interacción o a los 3 segundos mantiene Lighthouse en 100 sin perder la primera impresión.",
+      "Calculadoras con el resultado de ejemplo ya calculado en el HTML: Google indexa una cifra real y la página se pinta sin esperar al JavaScript.",
+      "Enlace permanente con los datos del cálculo en la URL y botón de imprimir o guardar en PDF: retención propia que el líder no tiene."
     ],
     "competidores": [
       {
@@ -2456,6 +2469,13 @@
         "licencia": "no verificado",
         "uso": "Auditoría SEO que cruza el código con datos reales de Search Console; bucle de mejora para el agente",
         "estrellas": "34"
+      },
+      {
+        "nombre": "vitest-dev/vitest",
+        "url": "https://github.com/vitest-dev/vitest",
+        "licencia": "MIT",
+        "uso": "186 pruebas de cálculo de los motores de nómina e impuestos; cada cambio de parámetros pasa por ellas antes de publicar",
+        "estrellas": "15.000"
       }
     ],
     "hallazgos": [
@@ -2468,7 +2488,13 @@
       "Las políticas contra el contenido escalado (marzo de 2024) castigan el volumen sin valor, sea de IA o humano. Lo que funciona: herramienta interactiva, datos propios o locales, autor y fecha, revisión humana por muestreo y eliminación de variantes casi duplicadas.",
       "El catalán está admitido como idioma principal en AdSense y la demanda de utilidades en catalán es enorme sin oferta monetizada: Softcatalà sumó 39,7 millones de visitas en su corrector en un año.",
       "Discover pesa el 30 % o más del tráfico de los medios españoles y el núcleo de febrero de 2026 premia la proximidad geográfica y la autoridad temática de nicho, pero exige publicación fresca y no muestra herramientas estáticas.",
-      "Tiempos reales: hasta los 3 primeros meses no suele haber ingresos; 300 €/mes equivalen a 60.000 a 100.000 páginas vistas al mes con tráfico español y suelen llegar a los 9 a 18 meses por dominio. Hay que presupuestar de 6 a 12 meses sin retorno y trabajar en cartera de 3 a 5 sitios."
+      "Tiempos reales: hasta los 3 primeros meses no suele haber ingresos; 300 €/mes equivalen a 60.000 a 100.000 páginas vistas al mes con tráfico español y suelen llegar a los 9 a 18 meses por dominio. Hay que presupuestar de 6 a 12 meses sin retorno y trabajar en cartera de 3 a 5 sitios.",
+      "La retención en nómina usa una escala única estatal; el IRPF real depende de la comunidad. Mostrar las dos cifras y la diferencia que sale en la renta es el diferencial frente a las calculadoras de bancos, que solo dan la retención.",
+      "Quien cobra el SMI de 2026 (17.094 €) soporta unos 37 € de retención por paga por el límite del 43 %, aunque la deducción del RDL 5/2026 (590,89 €) deja su cuota en cero: se recupera en la renta. Es un tema con búsquedas y casi sin respuestas claras.",
+      "Verifactu: la fecha legal sigue siendo el 1/1/2027 (sociedades) y el 1/7/2027 (resto) por el RDL 15/2025; Hacienda anunció el 5/10/2026 otro aplazamiento a 2028 sin norma publicada. Con elecciones el 29/11/2026, la incertidumbre dura meses: la página que lo explique bien captará el pico.",
+      "«Cuenta Clara» es una marca de cuentas de ABANCA para autónomos y nóminas: descartada como nombre del sitio 2 (ahora ImpuestoClaro).",
+      "Astro 7 exige Node 22.23 o superior; los entornos de compilación habituales van por detrás. Astro 5 da el mismo resultado estático.",
+      "El plan gratuito de Vercel prohíbe uso comercial; Cloudflare Pages gratuito lo permite y no cuesta nada por sitio: es la opción para los 7 sitios del catálogo."
     ],
     "lider": {
       "nombre": "Calcular Sueldo (calcularsueldo.com.ar)",
