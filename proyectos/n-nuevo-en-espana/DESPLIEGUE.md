@@ -134,3 +134,8 @@ Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y
   `cs_test_` de Stripe para la suscripción y para el pack; aviso legal con los datos de `LEGAL_*`.
 - **Pendiente:** completar el pago con la tarjeta 4242. La red de la sesión en la nube no deja abrir
   `checkout.stripe.com` (solo `api.stripe.com`); hacerlo desde el navegador del Mac o añadir ese dominio a la red del entorno.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:09)
+Publicada la identidad de marca (commit 0938832) en https://nuevo-en-espana.vercel.app. Sin cambios de variables ni de Stripe. Pendiente: pago de prueba con la tarjeta 4242.
+
+Ejecutado el 2026-10-28
