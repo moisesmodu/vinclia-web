@@ -28,8 +28,9 @@ for (const g of games) {
 
 // Marca del estudio (MARCAS.md · Nuvolet Games): logotipo e icono de marcas/logos, pie común en todas las páginas.
 const STUDIO = 'Nuvolet Games', TAGLINE = 'Tiny games, big smiles.';
-// Correo de contacto de toda la cartera (SESIONES.md «Correo de contacto»): LEGAL_EMAIL o, por defecto, hola@numimates.com
-const CONTACT = process.env.LEGAL_EMAIL || 'hola@numimates.com';
+// Correo de contacto de toda la cartera (SESIONES.md «Correo de contacto»). Fijo a propósito: LEGAL_EMAIL del entorno
+// contenía un correo personal, que SESIONES.md prohíbe publicar.
+const CONTACT = 'hola@numimates.com';
 mkdirSync(resolve(root, 'dist', 'marca'), { recursive: true });
 for (const f of ['juegos.svg', 'juegos-icono.svg']) cpSync(resolve(root, '..', '..', 'marcas', 'logos', f), resolve(root, 'dist', 'marca', f));
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap">';
