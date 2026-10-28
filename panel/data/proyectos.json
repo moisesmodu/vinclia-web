@@ -653,7 +653,7 @@
     "nombre": "Juegos",
     "marca": "Juegos",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "pendiente",
+    "estado": "en construcción",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -662,7 +662,12 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "La plataforma distribuye; sin marketing",
-    "enlaces": {},
+    "enlaces": {
+      "Código y paquetes": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos",
+      "Fichas de los portales": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/fichas/egg-truck/FICHAS.md",
+      "Zip CrazyGames": "https://github.com/moisesmodu/vinclia-web/raw/claude/juegos-primer-juego/proyectos/juegos/paquetes/egg-truck/egg-truck-crazygames.zip",
+      "Plan Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/ROBLOX.md"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -683,22 +688,35 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Primer juego, Egg Truck (conducción con físicas de un botón), listo: paquetes para CrazyGames, Poki e itch.io, fichas, portadas, 14 páginas SEO, plantilla reutilizable, catálogo de 11 juegos y plan de Roblox"
       }
     ],
     "proximos": [
-      "Primer juego web y plantilla",
-      "Cuentas en CrazyGames, Poki e itch.io"
+      "Moisés: proyecto en Vercel (Root Directory proyectos/juegos) y cuentas de CrazyGames, Poki e itch.io",
+      "Enviar Egg Truck a los tres portales",
+      "Probarlo en un Android real de gama media",
+      "Juego 2: Bike Flip (11/11/2026) con la tarea programada"
     ],
     "paraMoises": [
-      "Cuentas de desarrollador",
-      "Pulsar enviar con el paquete"
+      "Crear proyecto en Vercel (Root Directory proyectos/juegos)",
+      "Cuenta CrazyGames y subir el zip",
+      "Cuenta Poki y enviar la URL de Vercel",
+      "Cuenta itch.io y subir el zip",
+      "Visto bueno a la tarea programada quincenal"
     ],
     "mejoras": [
       "Un adaptador de portal propio en TypeScript (init, gameplayStart/Stop, anuncio intermedio, anuncio con recompensa) con implementaciones para CrazyGames v3, Poki e itch.io, para compilar un build por portal con una variable.",
       "Pipeline de Roblox 100 % en CI: Rojo build, luau-analyze, publicación con rbxcloud a un place de pruebas y luego a producción.",
       "Catálogo de rehechos con diferenciación mínima: partir de los 14 juegos MIT y 2048 cambiando mecánica secundaria, arte Kenney y tema, para pasar el filtro anticlon.",
       "Optimizar los indicadores que deciden el lanzamiento completo en CrazyGames: tutorial en menos de 10 segundos, partidas cortas, guardado con el SDK y build menor de 8 MB para enviarlo también a Poki.",
-      "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles."
+      "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles.",
+      "Hecho: adaptador de portal en TypeScript (comun/portal.ts) con CrazyGames v3, Poki v2, itch y web, elegido al compilar; probado con SDK simulados (npm run test:sdk).",
+      "Física Matter a 60 Hz fijos con acumulador y motor aplicado por paso: misma velocidad de juego a 20, 30 o 120 FPS.",
+      "Pendiente: AdSense for Games (H5 Games Ads) en la web propia cuando haya tráfico directo.",
+      "Pendiente: embudo anónimo sin cookies (inicio, primera partida, tercera partida) con Umami."
     ],
     "competidores": [
       {
@@ -789,7 +807,12 @@
       "Roblox DevEx en 2026: 0,0038 $ por Robux, mínimo 30.000 Robux ganados, formulario W-8BEN para España; desde junio de 2026, 0,0054 $ por Robux para gasto de jugadores de EE. UU. mayores de 18 verificados en juegos R15 con avatares articulados.",
       "Open Cloud publica el place con un POST a /universes/v1/{universeId}/places/{placeId}/versions con cabecera x-api-key; la clave necesita permiso universe-places:write.",
       "Géneros que funcionan en web en 2026: hipercasual (79 % del tiempo de juego en CrazyGames) y puzle (21 %); los runners dominan y simulación e idle tienen demanda con poca oferta.",
-      "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego."
+      "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego.",
+      "Poki, Game Intelligence: car games (29/09/2026, partidas de EE. UU.): los coches son el 10 % de las partidas; los de tipo plataforma son el 7 % de los títulos y el 30 % de las partidas, y Drive Mad solo se lleva el 23 %. Hueco elegido para el juego 1.",
+      "Poki Web Gaming Report (25/06/2026): el 46 % de los jugadores ha abandonado un juego móvil por tardar en cargar; el 49 % prueba 2 o 3 juegos por sesión. Peso y primera partida rápida mandan.",
+      "Phaser 3 entrega a update() un delta suavizado y topado a 16,7 ms: para física en tiempo real hay que usar game.loop.rawDelta.",
+      "Graphics de Phaser se re-tesela en cada fotograma: el terreno se hornea en texturas por bloque.",
+      "La red de las sesiones de Claude bloquea crazygames.com, poki.com y la API de Vercel: los datos de género salen de búsqueda web y el despliegue lo hace Moisés con un clic."
     ],
     "lider": {
       "nombre": "Monkey Mart (TinyDobbins)",
@@ -854,7 +877,8 @@
         "Semanas 3 y 4: economía con 10 desbloqueos escalonados, 2 ayudantes, guardado local; integrar el SDK de Poki y pasar su inspector",
         "Semana 5: arte final del personaje, 3 miniaturas para probar, nombre de 2 palabras, página del juego con SEO",
         "Semana 6: enviar a Poki y CrazyGames; publicar en itch.io y en web propia para tráfico directo al 100 %",
-        "Después del lanzamiento: medir retención a 1 y 7 días y duración de sesión; una actualización cada 2 o 3 semanas y pedir opiniones en el portal; a los 3 meses, versión Android"
+        "Después del lanzamiento: medir retención a 1 y 7 días y duración de sesión; una actualización cada 2 o 3 semanas y pedir opiniones en el portal; a los 3 meses, versión Android",
+        "28/10/2026: aplicado a Egg Truck el \"primer bucle completo en menos de 30 s\" (primera estrella a los 3 s, primer banderín a los 100 m) y el arte de personaje grande sobre fondo plano en la miniatura."
       ]
     },
     "segundoLider": {
