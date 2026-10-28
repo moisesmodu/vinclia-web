@@ -1,0 +1,772 @@
+[
+  {
+    "id": "tcai-t07-001",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley de Prevención de Riesgos Laborales, para calificar la gravedad de un riesgo laboral se valoran conjuntamente:",
+      "opciones": [
+        "El número de trabajadores expuestos y el coste de las medidas",
+        "La antigüedad del trabajador y su categoría profesional",
+        "La probabilidad de que se produzca el daño y su severidad",
+        "La duración de la jornada y el tipo de contrato"
+      ],
+      "explicacion": "El artículo 4.2.º define el riesgo laboral como la posibilidad de que un trabajador sufra un daño derivado del trabajo, y para calificar su gravedad se valoran conjuntamente la probabilidad del daño y su severidad."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei de prevenció de riscos laborals, per qualificar la gravetat d'un risc laboral es valoren conjuntament:",
+      "opciones": [
+        "El nombre de treballadors exposats i el cost de les mesures",
+        "L'antiguitat del treballador i la seva categoria professional",
+        "La probabilitat que es produeixi el dany i la seva severitat",
+        "La durada de la jornada i el tipus de contracte"
+      ],
+      "explicacion": "L'article 4.2n defineix el risc laboral com la possibilitat que un treballador pateixi un dany derivat del treball, i per qualificar-ne la gravetat es valoren conjuntament la probabilitat del dany i la seva severitat."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Para calificar un riesgo desde el punto de vista de su gravedad, se valorarán conjuntamente la probabilidad de que se produzca el daño y la severidad del mismo.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-002",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Qué se consideran «daños derivados del trabajo» según la Ley 31/1995?",
+      "opciones": [
+        "Solo los accidentes de trabajo con baja médica",
+        "Solo las enfermedades profesionales incluidas en el cuadro oficial",
+        "Los desperfectos causados por el trabajador en los equipos de la empresa",
+        "Las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo"
+      ],
+      "explicacion": "El artículo 4.3.º considera daños derivados del trabajo las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo, un concepto más amplio que el de accidente o enfermedad profesional."
+    },
+    "ca": {
+      "enunciado": "Què es consideren «danys derivats del treball» segons la Llei 31/1995?",
+      "opciones": [
+        "Només els accidents de treball amb baixa mèdica",
+        "Només les malalties professionals incloses en el quadre oficial",
+        "Els desperfectes causats pel treballador en els equips de l'empresa",
+        "Les malalties, patologies o lesions patides amb motiu o en ocasió del treball"
+      ],
+      "explicacion": "L'article 4.3r considera danys derivats del treball les malalties, patologies o lesions patides amb motiu o en ocasió del treball, un concepte més ampli que el d'accident o malaltia professional."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Se considerarán como «daños derivados del trabajo» las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-003",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según la Ley 31/1995, un «riesgo laboral grave e inminente» es aquel que:",
+      "opciones": [
+        "Ya ha producido un daño grave a algún trabajador",
+        "Ha sido declarado así por la Inspección de Trabajo",
+        "Resulta probable racionalmente que se materialice en un futuro inmediato y puede suponer un daño grave para la salud",
+        "Afecta a más de la mitad de la plantilla de un centro"
+      ],
+      "explicacion": "Es la definición del artículo 4.4.º; en caso de exposición a agentes que pueden causar daños graves, existe riesgo grave e inminente aunque los daños no se manifiesten de forma inmediata."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 31/1995, un «risc laboral greu i imminent» és aquell que:",
+      "opciones": [
+        "Ja ha produït un dany greu a algun treballador",
+        "Ha estat declarat així per la Inspecció de Treball",
+        "És racionalment probable que es materialitzi en un futur immediat i pot suposar un dany greu per a la salut",
+        "Afecta més de la meitat de la plantilla d'un centre"
+      ],
+      "explicacion": "És la definició de l'article 4.4t; en cas d'exposició a agents que poden causar danys greus, hi ha risc greu i imminent encara que els danys no es manifestin de manera immediata."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Se entenderá como «riesgo laboral grave e inminente» aquel que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave para la salud de los trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-004",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la Ley 31/1995, un equipo destinado a ser llevado o sujetado por el trabajador para protegerle de uno o varios riesgos (por ejemplo, unos guantes) es:",
+      "opciones": [
+        "Un equipo de trabajo",
+        "Un equipo de protección individual",
+        "Una medida de protección colectiva",
+        "Un dispositivo de seguridad de la instalación"
+      ],
+      "explicacion": "El artículo 4.8.º define así el equipo de protección individual (EPI), incluidos sus complementos o accesorios. Equipo de trabajo es cualquier máquina, aparato, instrumento o instalación usada en el trabajo (art. 4.6.º)."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 31/1995, un equip destinat a ser portat o subjectat pel treballador per protegir-lo d'un o diversos riscos (per exemple, uns guants) és:",
+      "opciones": [
+        "Un equip de treball",
+        "Un equip de protecció individual",
+        "Una mesura de protecció col·lectiva",
+        "Un dispositiu de seguretat de la instal·lació"
+      ],
+      "explicacion": "L'article 4.8è defineix així l'equip de protecció individual (EPI), inclosos els complements o accessoris. Equip de treball és qualsevol màquina, aparell, instrument o instal·lació que s'utilitza en el treball (art. 4.6è)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a4"
+    },
+    "cita": "Se entenderá por «equipo de protección individual» cualquier equipo destinado a ser llevado o sujetado por el trabajador para que le proteja de uno o varios riesgos",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-005",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según los principios de la acción preventiva del artículo 15 de la Ley 31/1995:",
+      "opciones": [
+        "Deben adoptarse medidas que antepongan la protección colectiva a la individual",
+        "La protección individual tiene siempre preferencia sobre la colectiva",
+        "Ambas protecciones son equivalentes y el empresario elige libremente",
+        "La protección colectiva solo se usa si no hay equipos de protección individual"
+      ],
+      "explicacion": "El artículo 15.1.h) obliga a anteponer la protección colectiva a la individual; los EPI se utilizan cuando los riesgos no pueden evitarse o limitarse suficientemente por otros medios."
+    },
+    "ca": {
+      "enunciado": "Segons els principis de l'acció preventiva de l'article 15 de la Llei 31/1995:",
+      "opciones": [
+        "S'han d'adoptar mesures que anteposin la protecció col·lectiva a la individual",
+        "La protecció individual té sempre preferència sobre la col·lectiva",
+        "Totes dues proteccions són equivalents i l'empresari tria lliurement",
+        "La protecció col·lectiva només s'utilitza si no hi ha equips de protecció individual"
+      ],
+      "explicacion": "L'article 15.1.h) obliga a anteposar la protecció col·lectiva a la individual; els EPI s'utilitzen quan els riscos no es poden evitar o limitar prou per altres mitjans."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "15.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a15"
+    },
+    "cita": "h) Adoptar medidas que antepongan la protección colectiva a la individual.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-006",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según la Ley 31/1995, la formación en materia preventiva de los trabajadores:",
+      "opciones": [
+        "Se imparte siempre que sea posible dentro de la jornada y su coste no recae nunca sobre los trabajadores",
+        "Se imparte fuera de la jornada y la paga el trabajador",
+        "Solo es obligatoria en el momento de la contratación",
+        "Solo la reciben los delegados de prevención"
+      ],
+      "explicacion": "El artículo 19 exige formación teórica y práctica al contratar, al cambiar de funciones o de equipos y periódicamente si hace falta; debe darse, siempre que sea posible, dentro de la jornada (o descontando el tiempo de esta) y su coste no puede recaer en el trabajador."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 31/1995, la formació en matèria preventiva dels treballadors:",
+      "opciones": [
+        "S'imparteix sempre que sigui possible dins la jornada i el seu cost no recau mai sobre els treballadors",
+        "S'imparteix fora de la jornada i la paga el treballador",
+        "Només és obligatòria en el moment de la contractació",
+        "Només la reben els delegats de prevenció"
+      ],
+      "explicacion": "L'article 19 exigeix formació teòrica i pràctica en contractar, en canviar de funcions o d'equips i periòdicament si cal; s'ha de donar, sempre que sigui possible, dins la jornada (o descomptant-ne el temps) i el seu cost no pot recaure en el treballador."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "19.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a19"
+    },
+    "cita": "La formación a que se refiere el apartado anterior deberá impartirse, siempre que sea posible, dentro de la jornada de trabajo … y su coste no recaerá en ningún caso sobre los trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-007",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Si un trabajador considera que su actividad entraña un riesgo grave e inminente para su vida o su salud, según la Ley 31/1995:",
+      "opciones": [
+        "Tiene derecho a interrumpir su actividad y abandonar el lugar de trabajo en caso necesario",
+        "Debe continuar trabajando hasta que lo autorice su superior",
+        "Solo puede parar si lo acuerdan los delegados de prevención",
+        "Necesita autorización previa de la Inspección de Trabajo"
+      ],
+      "explicacion": "El artículo 21.2 reconoce al trabajador el derecho a interrumpir la actividad y abandonar el lugar de trabajo; según el apartado 4, no puede sufrir perjuicio salvo mala fe o negligencia grave."
+    },
+    "ca": {
+      "enunciado": "Si un treballador considera que la seva activitat comporta un risc greu i imminent per a la seva vida o la seva salut, segons la Llei 31/1995:",
+      "opciones": [
+        "Té dret a interrompre l'activitat i abandonar el lloc de treball si cal",
+        "Ha de continuar treballant fins que ho autoritzi el seu superior",
+        "Només pot parar si ho acorden els delegats de prevenció",
+        "Necessita autorització prèvia de la Inspecció de Treball"
+      ],
+      "explicacion": "L'article 21.2 reconeix al treballador el dret a interrompre l'activitat i abandonar el lloc de treball; segons l'apartat 4, no pot patir cap perjudici llevat de mala fe o negligència greu."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "21.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a21"
+    },
+    "cita": "el trabajador tendrá derecho a interrumpir su actividad y abandonar el lugar de trabajo, en caso necesario, cuando considere que dicha actividad entraña un riesgo grave e inminente para su vida o su salud.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-008",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Cuando los representantes de los trabajadores acuerdan paralizar la actividad por riesgo grave e inminente, ¿en qué plazo debe la autoridad laboral anular o ratificar la paralización?",
+      "opciones": [
+        "Veinticuatro horas",
+        "Cuarenta y ocho horas",
+        "Setenta y dos horas",
+        "Diez días hábiles"
+      ],
+      "explicacion": "El artículo 21.3 obliga a comunicar el acuerdo de inmediato a la empresa y a la autoridad laboral, que en veinticuatro horas lo anula o ratifica."
+    },
+    "ca": {
+      "enunciado": "Quan els representants dels treballadors acorden paralitzar l'activitat per risc greu i imminent, en quin termini l'autoritat laboral ha d'anul·lar o ratificar la paralització?",
+      "opciones": [
+        "Vint-i-quatre hores",
+        "Quaranta-vuit hores",
+        "Setanta-dues hores",
+        "Deu dies hàbils"
+      ],
+      "explicacion": "L'article 21.3 obliga a comunicar l'acord immediatament a l'empresa i a l'autoritat laboral, que en vint-i-quatre hores l'anul·la o el ratifica."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "21.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a21"
+    },
+    "cita": "Tal acuerdo será comunicado de inmediato a la empresa y a la autoridad laboral, la cual, en el plazo de veinticuatro horas, anulará o ratificará la paralización acordada.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-009",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según la Ley 31/1995, la vigilancia periódica del estado de salud de los trabajadores es, con carácter general:",
+      "opciones": [
+        "Obligatoria en todos los casos",
+        "Voluntaria para el empresario",
+        "Obligatoria solo para el personal sanitario",
+        "Voluntaria para el trabajador, salvo las excepciones legales previstas"
+      ],
+      "explicacion": "El artículo 22.1 exige el consentimiento del trabajador; solo se exceptúa, previo informe de los representantes, cuando el reconocimiento es imprescindible para evaluar los efectos del trabajo sobre la salud, cuando el estado de salud puede ser un peligro o cuando lo establece una disposición legal."
+    },
+    "ca": {
+      "enunciado": "Segons la Llei 31/1995, la vigilància periòdica de l'estat de salut dels treballadors és, amb caràcter general:",
+      "opciones": [
+        "Obligatòria en tots els casos",
+        "Voluntària per a l'empresari",
+        "Obligatòria només per al personal sanitari",
+        "Voluntària per al treballador, llevat de les excepcions legals previstes"
+      ],
+      "explicacion": "L'article 22.1 exigeix el consentiment del treballador; només s'exceptua, amb l'informe previ dels representants, quan el reconeixement és imprescindible per avaluar els efectes del treball sobre la salut, quan l'estat de salut pot ser un perill o quan ho estableix una disposició legal."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "22.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a22"
+    },
+    "cita": "Esta vigilancia sólo podrá llevarse a cabo cuando el trabajador preste su consentimiento.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-010",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Respecto a los resultados de la vigilancia de la salud, ¿qué información puede recibir el empresario sin consentimiento expreso del trabajador?",
+      "opciones": [
+        "Toda la información médica personal del trabajador",
+        "Los diagnósticos, pero no los tratamientos",
+        "Ninguna información de ningún tipo",
+        "Solo las conclusiones sobre la aptitud del trabajador para el puesto o la necesidad de mejorar las medidas preventivas"
+      ],
+      "explicacion": "El artículo 22.4 limita el acceso a la información médica personal al personal médico y a las autoridades sanitarias; el empresario y los responsables de prevención solo son informados de las conclusiones sobre la aptitud y la necesidad de medidas de protección."
+    },
+    "ca": {
+      "enunciado": "Pel que fa als resultats de la vigilància de la salut, quina informació pot rebre l'empresari sense el consentiment exprés del treballador?",
+      "opciones": [
+        "Tota la informació mèdica personal del treballador",
+        "Els diagnòstics, però no els tractaments",
+        "Cap informació de cap tipus",
+        "Només les conclusions sobre l'aptitud del treballador per al lloc o la necessitat de millorar les mesures preventives"
+      ],
+      "explicacion": "L'article 22.4 limita l'accés a la informació mèdica personal al personal mèdic i a les autoritats sanitàries; l'empresari i els responsables de prevenció només són informats de les conclusions sobre l'aptitud i la necessitat de mesures de protecció."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "22.4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a22"
+    },
+    "cita": "El acceso a la información médica de carácter personal se limitará al personal médico y a las autoridades sanitarias que lleven a cabo la vigilancia de la salud de los trabajadores, sin que pueda facilitarse al empresario o a otras personas sin consentimiento expreso del trabajador.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-011",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "Según el artículo 26 de la Ley 31/1995, para realizar exámenes prenatales y técnicas de preparación al parto que deban hacerse dentro de la jornada, la trabajadora embarazada:",
+      "opciones": [
+        "Puede ausentarse, pero sin remuneración",
+        "Debe recuperar después las horas de ausencia",
+        "Debe solicitar una excedencia por cuidado de familiares",
+        "Puede ausentarse con derecho a remuneración, previo aviso y justificación"
+      ],
+      "explicacion": "El artículo 26.5 reconoce el derecho a ausentarse con remuneración para esos exámenes y técnicas, previo aviso al empresario y justificación de la necesidad de hacerlos dentro de la jornada."
+    },
+    "ca": {
+      "enunciado": "Segons l'article 26 de la Llei 31/1995, per fer exàmens prenatals i tècniques de preparació al part que s'hagin de fer dins la jornada, la treballadora embarassada:",
+      "opciones": [
+        "Es pot absentar, però sense remuneració",
+        "Ha de recuperar després les hores d'absència",
+        "Ha de sol·licitar una excedència per cura de familiars",
+        "Es pot absentar amb dret a remuneració, amb avís previ i justificació"
+      ],
+      "explicacion": "L'article 26.5 reconeix el dret a absentar-se amb remuneració per a aquests exàmens i tècniques, amb avís previ a l'empresari i justificació de la necessitat de fer-los dins la jornada."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "26.5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a26"
+    },
+    "cita": "Las trabajadoras embarazadas tendrán derecho a ausentarse del trabajo, con derecho a remuneración, para la realización de exámenes prenatales y técnicas de preparación al parto",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-012",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Una TCAI detecta una situación que, por motivos razonables, entraña un riesgo para la seguridad y la salud de los trabajadores. Según la Ley 31/1995, debe:",
+      "opciones": [
+        "Esperar a la siguiente reunión del Comité de Seguridad y Salud",
+        "Informar de inmediato a su superior jerárquico directo y a los designados para la prevención o al servicio de prevención",
+        "Comunicarlo solo si ya se ha producido un daño",
+        "Denunciarlo directamente ante la Inspección de Trabajo antes de avisar a nadie"
+      ],
+      "explicacion": "El artículo 29.2.4.º obliga a los trabajadores a informar de inmediato a su superior jerárquico directo y a los trabajadores designados o al servicio de prevención de cualquier situación de riesgo."
+    },
+    "ca": {
+      "enunciado": "Una TCAI detecta una situació que, per motius raonables, comporta un risc per a la seguretat i la salut dels treballadors. Segons la Llei 31/1995, ha de:",
+      "opciones": [
+        "Esperar la reunió següent del Comitè de Seguretat i Salut",
+        "Informar immediatament el seu superior jeràrquic directe i els designats per a la prevenció o el servei de prevenció",
+        "Comunicar-ho només si ja s'ha produït un dany",
+        "Denunciar-ho directament a la Inspecció de Treball abans d'avisar ningú"
+      ],
+      "explicacion": "L'article 29.2.4t obliga els treballadors a informar immediatament el seu superior jeràrquic directe i els treballadors designats o el servei de prevenció de qualsevol situació de risc."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "29.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a29"
+    },
+    "cita": "4.º Informar de inmediato a su superior jerárquico directo, y a los trabajadores designados para realizar actividades de protección y de prevención o, en su caso, al servicio de prevención",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-013",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Para el personal estatutario, el incumplimiento de sus obligaciones en materia de prevención de riesgos laborales tiene la consideración de:",
+      "opciones": [
+        "Simple recomendación sin consecuencias",
+        "Falta, conforme a su normativa de régimen disciplinario",
+        "Infracción administrativa del empresario, no del trabajador",
+        "Delito contra los derechos de los trabajadores en todo caso"
+      ],
+      "explicacion": "El artículo 29.3 considera el incumplimiento como incumplimiento laboral o, en el caso de funcionarios y personal estatutario, como falta conforme a su régimen disciplinario."
+    },
+    "ca": {
+      "enunciado": "Per al personal estatutari, l'incompliment de les seves obligacions en matèria de prevenció de riscos laborals té la consideració de:",
+      "opciones": [
+        "Simple recomanació sense conseqüències",
+        "Falta, d'acord amb la seva normativa de règim disciplinari",
+        "Infracció administrativa de l'empresari, no del treballador",
+        "Delicte contra els drets dels treballadors en tot cas"
+      ],
+      "explicacion": "L'article 29.3 considera l'incompliment com a incompliment laboral o, en el cas de funcionaris i personal estatutari, com a falta d'acord amb el seu règim disciplinari."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "29.3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a29"
+    },
+    "cita": "o de falta, en su caso, conforme a lo establecido en la correspondiente normativa sobre régimen disciplinario de los funcionarios públicos o del personal estatutario al servicio de las Administraciones públicas.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-014",
+    "tema": 7,
+    "dificultad": 1,
+    "correcta": 2,
+    "es": {
+      "enunciado": "¿Quiénes son los delegados de prevención?",
+      "opciones": [
+        "Los técnicos del servicio de prevención ajeno",
+        "Los inspectores de trabajo asignados a la empresa",
+        "Los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos",
+        "Los mandos intermedios responsables de cada unidad"
+      ],
+      "explicacion": "El artículo 35.1 los define como los representantes de los trabajadores con funciones específicas en prevención; son designados por y entre los representantes del personal."
+    },
+    "ca": {
+      "enunciado": "Qui són els delegats de prevenció?",
+      "opciones": [
+        "Els tècnics del servei de prevenció aliè",
+        "Els inspectors de treball assignats a l'empresa",
+        "Els representants dels treballadors amb funcions específiques en matèria de prevenció de riscos",
+        "Els comandaments intermedis responsables de cada unitat"
+      ],
+      "explicacion": "L'article 35.1 els defineix com els representants dels treballadors amb funcions específiques en prevenció; són designats per i entre els representants del personal."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "35.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a35"
+    },
+    "cita": "Los Delegados de Prevención son los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos en el trabajo.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-015",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 1,
+    "es": {
+      "enunciado": "Según la escala del artículo 35 de la Ley 31/1995, ¿cuántos delegados de prevención corresponden a una empresa de 800 trabajadores?",
+      "opciones": [
+        "Tres",
+        "Cuatro",
+        "Cinco",
+        "Seis"
+      ],
+      "explicacion": "La escala del artículo 35.2 asigna 3 delegados de 101 a 500 trabajadores, 4 de 501 a 1.000 y 5 de 1.001 a 2.000."
+    },
+    "ca": {
+      "enunciado": "Segons l'escala de l'article 35 de la Llei 31/1995, quants delegats de prevenció corresponen a una empresa de 800 treballadors?",
+      "opciones": [
+        "Tres",
+        "Quatre",
+        "Cinc",
+        "Sis"
+      ],
+      "explicacion": "L'escala de l'article 35.2 assigna 3 delegats de 101 a 500 treballadors, 4 de 501 a 1.000 i 5 de 1.001 a 2.000."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "35.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a35"
+    },
+    "cita": "De 501 a 1.000 trabajadores: 4 Delegados de Prevención.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-016",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿Cómo define la Ley 31/1995 el Comité de Seguridad y Salud?",
+      "opciones": [
+        "Como el servicio técnico que realiza la evaluación de riesgos",
+        "Como el órgano paritario y colegiado de participación para la consulta regular y periódica de las actuaciones preventivas de la empresa",
+        "Como el órgano unipersonal que representa a los trabajadores en prevención",
+        "Como un órgano de la Inspección de Trabajo en cada empresa"
+      ],
+      "explicacion": "El artículo 38.1 lo define como órgano paritario y colegiado de participación; lo forman los delegados de prevención y, en igual número, el empresario o sus representantes (art. 38.2)."
+    },
+    "ca": {
+      "enunciado": "Com defineix la Llei 31/1995 el Comitè de Seguretat i Salut?",
+      "opciones": [
+        "Com el servei tècnic que fa l'avaluació de riscos",
+        "Com l'òrgan paritari i col·legiat de participació per a la consulta regular i periòdica de les actuacions preventives de l'empresa",
+        "Com l'òrgan unipersonal que representa els treballadors en prevenció",
+        "Com un òrgan de la Inspecció de Treball a cada empresa"
+      ],
+      "explicacion": "L'article 38.1 el defineix com a òrgan paritari i col·legiat de participació; el formen els delegats de prevenció i, en el mateix nombre, l'empresari o els seus representants (art. 38.2)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "38.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a38"
+    },
+    "cita": "El Comité de Seguridad y Salud es el órgano paritario y colegiado de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-017",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 1,
+    "es": {
+      "enunciado": "¿A partir de cuántos trabajadores debe constituirse un Comité de Seguridad y Salud en una empresa o centro de trabajo?",
+      "opciones": [
+        "30 o más trabajadores",
+        "50 o más trabajadores",
+        "100 o más trabajadores",
+        "250 o más trabajadores"
+      ],
+      "explicacion": "El artículo 38.2 obliga a constituirlo en las empresas o centros de trabajo con 50 o más trabajadores; se reúne trimestralmente y siempre que lo solicite alguna de las representaciones (art. 38.3)."
+    },
+    "ca": {
+      "enunciado": "A partir de quants treballadors s'ha de constituir un Comitè de Seguretat i Salut en una empresa o centre de treball?",
+      "opciones": [
+        "30 o més treballadors",
+        "50 o més treballadors",
+        "100 o més treballadors",
+        "250 o més treballadors"
+      ],
+      "explicacion": "L'article 38.2 obliga a constituir-lo a les empreses o centres de treball amb 50 o més treballadors; es reuneix trimestralment i sempre que ho demani alguna de les representacions (art. 38.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1995-24292",
+      "norma": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+      "articulo": "38.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292#a38"
+    },
+    "cita": "Se constituirá un Comité de Seguridad y Salud en todas las empresas o centros de trabajo que cuenten con 50 o más trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-018",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 0,
+    "es": {
+      "enunciado": "Según el Reglamento de los Servicios de Prevención, la evaluación de los riesgos laborales es el proceso dirigido a:",
+      "opciones": [
+        "Estimar la magnitud de los riesgos que no hayan podido evitarse, para decidir sobre las medidas preventivas",
+        "Sancionar a los trabajadores que incumplen las normas de seguridad",
+        "Calcular las indemnizaciones por accidente de trabajo",
+        "Certificar la aptitud médica de cada trabajador"
+      ],
+      "explicacion": "El artículo 3.1 la define como el proceso dirigido a estimar la magnitud de los riesgos que no hayan podido evitarse, obteniendo la información necesaria para que el empresario decida si deben adoptarse medidas preventivas y de qué tipo."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament dels serveis de prevenció, l'avaluació dels riscos laborals és el procés adreçat a:",
+      "opciones": [
+        "Estimar la magnitud dels riscos que no s'hagin pogut evitar, per decidir sobre les mesures preventives",
+        "Sancionar els treballadors que incompleixen les normes de seguretat",
+        "Calcular les indemnitzacions per accident de treball",
+        "Certificar l'aptitud mèdica de cada treballador"
+      ],
+      "explicacion": "L'article 3.1 la defineix com el procés adreçat a estimar la magnitud dels riscos que no s'hagin pogut evitar, obtenint la informació necessària perquè l'empresari decideixi si cal adoptar mesures preventives i de quin tipus."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-1853",
+      "norma": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+      "articulo": "3.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853#a3"
+    },
+    "cita": "La evaluación de los riesgos laborales es el proceso dirigido a estimar la magnitud de aquellos riesgos que no hayan podido evitarse",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-019",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el Reglamento de los Servicios de Prevención, ¿cuál de las siguientes circunstancias obliga a volver a evaluar un puesto de trabajo?",
+      "opciones": [
+        "El cambio de nombre del puesto en la relación de puestos de trabajo",
+        "La renovación anual del contrato del trabajador que lo ocupa",
+        "La incorporación de un trabajador especialmente sensible, por sus características personales o estado biológico conocido, a las condiciones del puesto",
+        "El cambio de titular de la dirección del centro"
+      ],
+      "explicacion": "El artículo 4.2 exige reevaluar los puestos afectados por la elección de equipos o sustancias, nuevas tecnologías o cambios en los lugares de trabajo, por el cambio en las condiciones de trabajo y por la incorporación de un trabajador especialmente sensible."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament dels serveis de prevenció, quina de les circumstàncies següents obliga a tornar a avaluar un lloc de treball?",
+      "opciones": [
+        "El canvi de nom del lloc a la relació de llocs de treball",
+        "La renovació anual del contracte del treballador que l'ocupa",
+        "La incorporació d'un treballador especialment sensible, per les seves característiques personals o estat biològic conegut, a les condicions del lloc",
+        "El canvi de titular de la direcció del centre"
+      ],
+      "explicacion": "L'article 4.2 exigeix reavaluar els llocs afectats per l'elecció d'equips o substàncies, noves tecnologies o canvis en els llocs de treball, pel canvi en les condicions de treball i per la incorporació d'un treballador especialment sensible."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-1853",
+      "norma": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+      "articulo": "4.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853#a4"
+    },
+    "cita": "c) La incorporación de un trabajador cuyas características personales o estado biológico conocido lo hagan especialmente sensible a las condiciones del puesto.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-020",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 3,
+    "es": {
+      "enunciado": "¿Cuál de las siguientes es una de las modalidades de organización de los recursos para las actividades preventivas previstas en el artículo 10 del Reglamento de los Servicios de Prevención?",
+      "opciones": [
+        "Delegarlas en el Comité de Seguridad y Salud",
+        "Encomendarlas a los delegados de prevención",
+        "Delegarlas en la Inspección de Trabajo",
+        "Recurrir a un servicio de prevención ajeno"
+      ],
+      "explicacion": "El artículo 10.1 prevé cuatro modalidades: que el empresario asuma personalmente la actividad, designar trabajadores, constituir un servicio de prevención propio o recurrir a uno ajeno. El Comité y los delegados son órganos de participación, no modalidades de organización."
+    },
+    "ca": {
+      "enunciado": "Quina de les següents és una de les modalitats d'organització dels recursos per a les activitats preventives previstes a l'article 10 del Reglament dels serveis de prevenció?",
+      "opciones": [
+        "Delegar-les en el Comitè de Seguretat i Salut",
+        "Encomanar-les als delegats de prevenció",
+        "Delegar-les en la Inspecció de Treball",
+        "Recórrer a un servei de prevenció aliè"
+      ],
+      "explicacion": "L'article 10.1 preveu quatre modalitats: que l'empresari assumeixi personalment l'activitat, designar treballadors, constituir un servei de prevenció propi o recórrer a un d'aliè. El Comitè i els delegats són òrgans de participació, no modalitats d'organització."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-1853",
+      "norma": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+      "articulo": "10.1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853#a10"
+    },
+    "cita": "d) Recurriendo a un servicio de prevención ajeno.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-021",
+    "tema": 7,
+    "dificultad": 2,
+    "correcta": 2,
+    "es": {
+      "enunciado": "Según el Reglamento de los Servicios de Prevención, el empresario debe constituir un servicio de prevención propio, en todo caso, cuando la empresa cuente con:",
+      "opciones": [
+        "Más de 50 trabajadores",
+        "Más de 100 trabajadores",
+        "Más de 500 trabajadores",
+        "Más de 250 trabajadores, sea cual sea su actividad"
+      ],
+      "explicacion": "El artículo 14.a) lo exige a las empresas de más de 500 trabajadores; entre 250 y 500 solo si desarrollan actividades del anexo I, o cuando lo decida la autoridad laboral."
+    },
+    "ca": {
+      "enunciado": "Segons el Reglament dels serveis de prevenció, l'empresari ha de constituir un servei de prevenció propi, en tot cas, quan l'empresa tingui:",
+      "opciones": [
+        "Més de 50 treballadors",
+        "Més de 100 treballadors",
+        "Més de 500 treballadors",
+        "Més de 250 treballadors, sigui quina sigui l'activitat"
+      ],
+      "explicacion": "L'article 14.a) ho exigeix a les empreses de més de 500 treballadors; entre 250 i 500 només si fan activitats de l'annex I, o quan ho decideixi l'autoritat laboral."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-1853",
+      "norma": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+      "articulo": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853#a14"
+    },
+    "cita": "a) Que se trate de empresas que cuenten con más de 500 trabajadores.",
+    "origen": "ia"
+  },
+  {
+    "id": "tcai-t07-022",
+    "tema": 7,
+    "dificultad": 3,
+    "correcta": 0,
+    "es": {
+      "enunciado": "¿Con cuántas especialidades o disciplinas preventivas, como mínimo, debe contar un servicio de prevención propio?",
+      "opciones": [
+        "Dos",
+        "Una",
+        "Tres",
+        "Cuatro"
+      ],
+      "explicacion": "El artículo 15.2 exige al servicio de prevención propio un mínimo de dos especialidades o disciplinas preventivas; en cambio, los servicios de prevención mancomunados deben contar con al menos tres (art. 21.3)."
+    },
+    "ca": {
+      "enunciado": "Amb quantes especialitats o disciplines preventives, com a mínim, ha de comptar un servei de prevenció propi?",
+      "opciones": [
+        "Dues",
+        "Una",
+        "Tres",
+        "Quatre"
+      ],
+      "explicacion": "L'article 15.2 exigeix al servei de prevenció propi un mínim de dues especialitats o disciplines preventives; en canvi, els serveis de prevenció mancomunats n'han de tenir almenys tres (art. 21.3)."
+    },
+    "fuente": {
+      "tipo": "boe",
+      "id": "BOE-A-1997-1853",
+      "norma": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+      "articulo": "15.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853#a15"
+    },
+    "cita": "El servicio de prevención habrá de contar, como mínimo, con dos de las especialidades o disciplinas preventivas previstas en el artículo 34 de la presente disposición",
+    "origen": "ia"
+  }
+]
