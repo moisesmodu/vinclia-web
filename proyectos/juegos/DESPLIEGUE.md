@@ -81,3 +81,9 @@ Ejecutado el 2026-10-28
 Bike Flip, Snow Plow, Rocket Hop y Jelly Stack están terminados y marcados como listos en `juegos.json`. Volver a
 desplegar la rama: la portada debe mostrar 5 juegos y `/bike-flip/`, `/snow-plow/`, `/rocket-hop/`, `/jelly-stack/` deben
 cargar su menú.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 06:40)
+Publicado el commit d686ba1 con los 5 juegos: la portada enlaza Egg Truck, Bike Flip, Snow Plow, Rocket Hop y Jelly Stack, y
+`/egg-truck/`, `/bike-flip/`, `/snow-plow/`, `/rocket-hop/` y `/jelly-stack/` responden 200 con su script.
+
+Ejecutado el 2026-10-28
