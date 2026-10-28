@@ -101,6 +101,21 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
         </div>
       </div>
 
+      {p.examenes?.length ? (
+        <section>
+          <h2>Exámenes oficiales que entrena</h2>
+          <p className="nota">Documento de producto completo: <Link href="/docs/producto-m/">Producto M</Link>.</p>
+          <table className="tabla">
+            <thead><tr><th>Nivel</th><th>Estructura y apto</th><th>Convocatorias</th><th>Para qué se exige</th></tr></thead>
+            <tbody>
+              {p.examenes.map((e) => (
+                <tr key={e.nivel}><td><b>{e.nivel}</b><br /><small>{e.organismo}</small></td><td>{e.estructura}<br /><small>{e.demanda}</small></td><td>{e.convocatorias}</td><td>{e.usos}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      ) : null}
+
       {p.lider && <Lider lider={p.lider} titulo="Ingeniería inversa del líder" />}
       {p.segundoLider && <Lider lider={p.segundoLider} titulo="Segundo referente" />}
 

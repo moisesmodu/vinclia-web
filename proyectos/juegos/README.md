@@ -27,7 +27,7 @@ npm run test:rendimiento          # móvil de gama media emulado (ver más abajo
 npm run test:sdk                  # ciclo completo con SDK simulados de CrazyGames y Poki (tras npm run paquetes)
 ```
 
-## Despliegue en Vercel (una vez; luego cada push publica)
+## Despliegue en Vercel (lo hace la sesión del Mac con `DESPLIEGUE.md`; luego cada push publica)
 1. vercel.com → Add New → Project → importar `moisesmodu/vinclia-web`.
 2. **Root Directory: `proyectos/juegos`**. Framework: Other. El resto lo lee de `vercel.json` (build `npm run build`,
    salida `dist`).

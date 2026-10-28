@@ -668,7 +668,8 @@
       "Fichas de los portales": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/fichas/egg-truck/FICHAS.md",
       "Zip CrazyGames": "https://github.com/moisesmodu/vinclia-web/raw/claude/juegos-primer-juego/proyectos/juegos/paquetes/egg-truck/egg-truck-crazygames.zip",
       "Plan Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/ROBLOX.md",
-      "PR": "https://github.com/moisesmodu/vinclia-web/pull/4"
+      "PR": "https://github.com/moisesmodu/vinclia-web/pull/4",
+      "Despliegue (sesión del Mac)": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/DESPLIEGUE.md"
     },
     "acciones": [
       {
@@ -694,20 +695,22 @@
       {
         "fecha": "2026-10-28",
         "texto": "Primer juego, Egg Truck (conducción con físicas de un botón), listo: paquetes para CrazyGames, Poki e itch.io, fichas, portadas, 14 páginas SEO, plantilla reutilizable, catálogo de 11 juegos y plan de Roblox"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Comprobador del entorno: sin red a Vercel ni VERCEL_TOKEN; DESPLIEGUE.md listo para la sesión del Mac"
       }
     ],
     "proximos": [
-      "Moisés: proyecto en Vercel (Root Directory proyectos/juegos) y cuentas de CrazyGames, Poki e itch.io",
+      "Sesión del Mac: desplegar con proyectos/juegos/DESPLIEGUE.md (Vercel, proyecto juegos-casuales)",
       "Enviar Egg Truck a los tres portales",
       "Probarlo en un Android real de gama media",
       "Juego 2: Bike Flip (11/11/2026) con la tarea programada"
     ],
     "paraMoises": [
-      "Crear proyecto en Vercel (Root Directory proyectos/juegos)",
       "Cuenta CrazyGames y subir el zip",
       "Cuenta Poki y enviar la URL de Vercel",
-      "Cuenta itch.io y subir el zip",
-      "Visto bueno a la tarea programada quincenal"
+      "Cuenta itch.io y subir el zip"
     ],
     "mejoras": [
       "Un adaptador de portal propio en TypeScript (init, gameplayStart/Stop, anuncio intermedio, anuncio con recompensa) con implementaciones para CrazyGames v3, Poki e itch.io, para compilar un build por portal con una variable.",
@@ -964,19 +967,21 @@
   {
     "clave": "m-catala",
     "letra": "M",
-    "nombre": "Catalán con IA por voz",
+    "nombre": "Certificados de catalán (B1 a C2)",
     "marca": "Nuevo en España",
-    "resumen": "Tutor conversacional de catalán por voz para oposiciones, arraigo y trabajo; niveles B2 y C1.",
+    "resumen": "La app para aprobar los certificados oficiales de catalán, del B1 al C2: entrena exactamente las partes de cada examen con sus pesos y mínimos y dice cada día la probabilidad de aprobar. Lo mejor de Duolingo, Busuu, ELSA, Langua, Kwiziq, Anki y Magoosh aplicado al examen de la DPL.",
     "estado": "pendiente",
     "orden": 5,
-    "modelo": "Suscripción 9,99 €/mes",
-    "margenCliente": 40,
-    "objetivoMes12": 250,
+    "modelo": "Gratis con diagnóstico y un simulacro al mes; premium 9,99 €/mes, 59,99 €/año o pase de convocatoria de 3 meses a 24,99 €; revisión humana 4,99 €; B2B de 4 a 6 € por asiento",
+    "margenCliente": 45,
+    "objetivoMes12": 300,
     "ingresosMes": 0,
     "costesMes": 0,
     "clientes": 0,
-    "canal": "Google (aprender catalán, nivell C); anuncios de búsqueda desde el mes 2",
-    "enlaces": {},
+    "canal": "Google en catalán y castellano ('examen C1 català 2027', 'qué nivel de catalán piden las oposiciones'), calendario de convocatorias, vídeos en catalán; anuncios de búsqueda desde el mes 2; B2B con hospitales, academias de oposiciones y ayuntamientos",
+    "enlaces": {
+      "Documento de producto": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/M-CATALA-PRODUCTE.md"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -997,125 +1002,204 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Producto redefinido: certificados oficiales del B1 al C2; estructura de los 4 exámenes, 13 competidores catalanes y 10 apps de referencia analizadas; documento M-CATALA-PRODUCTE.md y prompt nuevo"
       }
     ],
     "proximos": [
-      "Abrir la sesión M",
-      "Elegir TTS barato con buen catalán"
+      "Abrir la sesión M con el prompt nuevo (sesión 1: diagnóstico, plan, práctica, corrección escrita, simulacros B1 a C1)",
+      "Conseguir 20 candidatos reales al C1 para la prueba de validez (academias de Lleida o el CNL)",
+      "Verificar la licencia de la voz Matxa o entrenar voz propia"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel, Neon y TTS"
+      "Claves de Stripe, Vercel, Neon y del proveedor de voz",
+      "Conseguir 20 candidatos al C1 para la prueba de validez"
     ],
     "mejoras": [
-      "Simulacro oral exacto del nivell C con cronómetro de preparación y puntuación según la rúbrica oficial, más informe de castellanismos detectados.",
-      "Selector de variante (central, valencià, balear, nord-occidental) para la voz y el léxico: ventaja única.",
-      "Freemium de 5 minutos al día; 9,99 €/mes ilimitado; plan B2B para hospitales, ayuntamientos y academias, anclado frente a los 263 € del curso del CPNL.",
-      "Calendario de examen integrado (8 de mayo de 2027 y convocatorias universitarias) con plan de estudio inverso; cubrir también el escrito con corrección IA.",
-      "Marketing en catalán en TikTok e Instagram, colaboración con Voluntariat per la llengua y Softcatalà, y presentarse al Aina Challenge para financiar la voz propia."
+      "De Parla.cat: el itinerario completo por niveles y la prueba inicial; superarlo con un diagnóstico adaptativo de 10 minutos mapeado a las áreas exactas del certificado y un 'índice de probabilidad de apto' por área.",
+      "De Qüestiocat y AprènCatalà: el banco masivo de ítems de uso de la lengua; superarlos generando ítems validados con LanguageTool y, sobre todo, cubriendo el 70 % que ignoran: redacción argumentativa de 3 fuentes (C1), correo de 100 palabras (B1 y B2) y texto de 250 (C2) corregidos con la rúbrica oficial y la regla citada.",
+      "Del CPNL y el Voluntariat: la práctica oral entre pares; superarlo con un simulacro oral con IA 24 horas que replique el formato real (monólogo con 2 imágenes y diálogo en C1; imagen y negociación en parejas en B2) más emparejamiento opcional entre usuarios por nivel.",
+      "De Redopositor: el posicionamiento 'qué nivel pide cada oposición' y el calendario; superarlo integrándolo: el usuario elige su objetivo (enfermería del ICS = C1, subalterno = B2, docente = C1 o C2, arraigo = A1 o A2), la app fija la fecha y genera un plan inverso con recordatorios de la ventana de inscripción de 8 días.",
+      "De las editoriales: los exámenes modelo completos; superarlos con simulacros digitales idénticos al formato 2026, con tiempos por área y mínimos, corrección instantánea y comparación con la media, a un tercio del precio del libro.",
+      "De Easy Catalan y 'Català fàcil': el input auténtico y el humor con el error; superarlos generando audios con los 4 acentos en el formato exacto del examen y con transcripción sincronizada.",
+      "De Softcatalà: el corrector y el transcriptor; superarlo convirtiendo cada corrección en microlección con el error recurrente del usuario (pronombres débiles, apóstrofo, ser y estar, per y per a), la regla de Optimot y repaso espaciado; rastrear interferencias del castellano con Apertium.",
+      "Del nicho sanitario y las universidades: la venta B2B a hospitales, ICS, colegios profesionales, academias de oposiciones y ayuntamientos (Lleida primero) con panel de grupo, y una versión de arraigo A1 y A2 multilingüe gratuita que alimente el embudo hacia B2 y C1 de pago.",
+      "Diagnóstico adaptativo de 12 minutos antes del registro que devuelve 'probabilidad de aprobar hoy' por áreas (Duolingo English Test, Busuu, ELSA).",
+      "Nota siempre en la escala del examen real con pesos y mínimos de la DPL (Magoosh, ELSA).",
+      "Plan hacia la fecha de la convocatoria con recalibración semanal y aviso de la ventana de inscripción (Busuu, Magoosh).",
+      "Racha desacoplada del objetivo diario con minisesión de 2 minutos y pantalla de compromiso (Duolingo).",
+      "Repaso espaciado FSRS de cada error y preguntar antes de explicar (Anki, Quizlet).",
+      "Corrección escrita por criterios con la rúbrica oficial y 'posible error' cuando la IA dude (Write & Improve).",
+      "Oral que corrige al final y deja informe, y puntuación de pronunciación por fonema (Langua, ELSA).",
+      "Simulacro completo gratis al mes, reto de 60 días con dinero que vuelve, liga por convocatoria (Magoosh, Lingoda, Duolingo).",
+      "Precio anual anclado, pase de convocatoria, aviso antes de renovar y cancelación en un clic (Babbel, Kwiziq)."
     ],
     "competidores": [
       {
-        "nombre": "Parla.cat (Generalitat)",
-        "url": "https://www.parla.cat/",
-        "precio": "Autoaprendizaje gratis; tutorizado de 60 a 150 €",
-        "debilidad": "Plataforma antigua sin conversación por voz ni IA; sin simulacro oral del C1"
+        "nombre": "Parla.cat (Generalitat e Institut Ramon Llull)",
+        "url": "https://www.parla.cat",
+        "precio": "Modalidad libre gratuita; con tutoría de 60 a 150 € según entidad; niveles A2 a C1 en 3 cursos de 45 h por nivel",
+        "debilidad": "Plataforma de 2008 sin app ni IA; no corrige expresión escrita ni oral en modo libre; sin simulacros cronometrados con el formato real · Lo que extraemos: Itinerario completo y gratuito alineado con los niveles oficiales, prueba de nivel inicial y posibilidad de examen presencial al acabar el tercer curso"
       },
       {
-        "nombre": "CPNL",
-        "url": "https://www.cpnl.cat/",
-        "precio": "Curso de Suficiència (C1) unos 263 €",
-        "debilidad": "Plazas limitadas, listas de espera, poca práctica oral individual"
+        "nombre": "CPNL y Voluntariat per la llengua",
+        "url": "https://www.cpnl.cat",
+        "precio": "A1 y A2 gratis; Suficiència 98,50 € por grado o 262,67 € el nivel completo (120 h); reducciones del 50 y 70 %",
+        "debilidad": "9.000 personas en lista de espera, el 15 % abandona, horarios fijos y 85 % presencial; sin práctica oral a demanda ni feedback inmediato · Lo que extraemos: 103.123 inscripciones en 2024 y 42.000 plazas por trimestre; emite certificados equivalentes a los oficiales; el voluntariado lingüístico tiene 11.509 parejas y el 95 % gana fluidez"
       },
       {
         "nombre": "Duolingo Català",
-        "url": "https://www.duolingo.com/course/ca/es/Learn-Catalan",
+        "url": "https://www.duolingo.com/course/ca/es",
+        "precio": "Gratis con anuncios; Super unos 13 €/mes",
+        "debilidad": "Solo desde castellano, hecho por 8 voluntarios y sin mantener; pocas lecciones de gramática; no sirve para B2 ni para el formato de examen · Lo que extraemos: Gamificación, rachas, microlecciones y notificaciones; es la única gran app con catalán"
+      },
+      {
+        "nombre": "Qüestiocat (app Android)",
+        "url": "https://play.google.com/store/apps/details?id=com.jrechach.questiocat",
         "precio": "Gratis",
-        "debilidad": "Solo desde español, nivel básico y poco mantenido; no sirve para B2 ni C1"
+        "debilidad": "Solo tests cerrados de uso de la lengua: ignora el 70 % de la nota del C1 (redacción y oral); interfaz anticuada · Lo que extraemos: Más de 5.000 preguntas tipo test para B1, B2, C1, C2 y lenguaje administrativo"
       },
       {
-        "nombre": "Talkpal",
-        "url": "https://talkpal.ai/",
-        "precio": "De 5 a 10 $/mes",
-        "debilidad": "Catalán no confirmado; genérico, sin estructura del examen"
+        "nombre": "AprènCatalà",
+        "url": "https://aprencatala.cat/",
+        "precio": "Gratis",
+        "debilidad": "Volumen pequeño, sin C2, sin IA ni corrección de producción · Lo que extraemos: Más de 450 ejercicios interactivos de A1 a C1 orientados a los exámenes oficiales"
       },
       {
-        "nombre": "ChatGPT por voz (guía de la UB)",
-        "url": "https://diposit.ub.edu/items/095b5894-66c6-4e11-982a-2bda19a35a91",
-        "precio": "Gratis o Plus",
-        "debilidad": "La propia guía advierte de errores en catalán; sin rúbrica ni progreso"
+        "nombre": "Recursos gratuitos de la Generalitat (itinerarios B2 y C1, dictados, Optimot, curso de nivell C de Justícia)",
+        "url": "https://llengua.gencat.cat",
+        "precio": "Gratis",
+        "debilidad": "Disperso en decenas de PDF y webs antiguas, sin seguimiento, sin móvil, sin feedback · Lo que extraemos: Material normativo fiable y recomendado por las universidades; Optimot integra el diccionario y las fichas normativas"
       },
       {
-        "nombre": "Examen oficial del Departament de Política Lingüística",
-        "url": "https://llengua.gencat.cat/",
-        "precio": "Tasa C1 57,45 €; próxima prueba 8 de mayo de 2027",
-        "debilidad": "Referencia, no competidor: convocatoria anual y resultados lentos"
+        "nombre": "Redopositor (guías para opositores)",
+        "url": "https://redopositor.com/blog/ca-on-treure-c1-catala-oposicions-cpnl-universitat-preu/",
+        "precio": "Contenido gratuito y packs de pago",
+        "debilidad": "No enseña ni evalúa: es un blog · Lo que extraemos: Guías muy prácticas: qué nivel pide cada oposición, calendario 2026-27 de DPL, universidades y EOI, dónde sacar el C1 y cuánto cuesta"
+      },
+      {
+        "nombre": "Universidades CIFALC y UdL (exámenes libres)",
+        "url": "https://www.udl.cat",
+        "precio": "UdL 75 € para externos y 50 € para su comunidad; UPF 120 €",
+        "debilidad": "Plazas limitadas y precio de 2 a 3 veces la tasa de la DPL · Lo que extraemos: Tres convocatorias al año frente a una de la DPL; en Lleida es la alternativa local"
+      },
+      {
+        "nombre": "Editoriales (Abadia de Montserrat 'A punt', Castellnou 'Nou Nivell', Barcanova, '10 proves per al nivell C2')",
+        "url": "https://www.cpnl.cat",
+        "precio": "De 30 a 52 € por nivel",
+        "debilidad": "Caros, sin audio interactivo ni corrección, y con ediciones de 2018 a 2022 que no reflejan la estructura de 2026 · Lo que extraemos: Material prescrito por el CPNL con progresión validada y libros de pruebas con exámenes modelo completos"
+      },
+      {
+        "nombre": "Creadores (Easy Catalan, Català al Natural, DailyCatalan, aprendecatalan_, 'Català fàcil' de 3Cat)",
+        "url": "https://easy-languages.org/easy-catalan",
+        "precio": "Gratis; Patreon y clases particulares",
+        "debilidad": "Sin estructura por nivel de examen ni evaluación; la mayoría apunta a principiantes y anglófonos · Lo que extraemos: Input auténtico (entrevistas de calle subtituladas, más de 25.000 suscriptores), humor con el error; DailyCatalan supera los 105.000 seguidores en Instagram"
+      },
+      {
+        "nombre": "Softcatalà (corrector LanguageTool, transcriptor, traductor)",
+        "url": "https://www.softcatala.org",
+        "precio": "Gratis",
+        "debilidad": "Corrige pero no explica la regla ni mide el progreso; sin itinerario de examen · Lo que extraemos: Corrector con más de 1.700 reglas usado por cientos de miles de personas; transcriptor de audio; arena para comparar modelos de IA en catalán"
+      },
+      {
+        "nombre": "Tutores en Preply",
+        "url": "https://preply.com/en/Barcelona/catalan-tutors",
+        "precio": "De 23 a 40 $ por clase de 50 minutos; de 90 a 160 € al mes con una clase semanal",
+        "debilidad": "Caro y con pocos tutores especializados en el formato de la DPL · Lo que extraemos: Práctica oral real con feedback humano"
+      },
+      {
+        "nombre": "Preparación del valenciano (JQCV): app MITJÀ, cursos de CCOO, UJI y UPV",
+        "url": "https://provesjqcv.gva.es",
+        "precio": "Tasa JQCV C1 y C2 de 23,39 €",
+        "debilidad": "Apps genéricas de test, sin oral ni redacción corregida · Lo que extraemos: Estructura por áreas con mínimos trasladable a un motor multicertificado; la saturación (cita previa obligatoria, más de 700 impugnaciones en 2024) muestra la demanda"
       }
     ],
     "repos": [
       {
-        "nombre": "projecte-aina/whisper-large-v3-ca-3catparla",
-        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla",
+        "nombre": "BSC-LT/salamandra-7b-instruct y ALIA-40b",
+        "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
         "licencia": "Apache-2.0",
-        "uso": "Reconocimiento de voz en catalán afinado por el BSC",
+        "uso": "Modelos entrenados con catalán para generar ejercicios, corregir redacciones y simular al examinador",
         "estrellas": ""
       },
       {
-        "nombre": "projecte-aina/whisper-large-v3-tiny-caesar",
-        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-tiny-caesar",
+        "nombre": "projecte-aina/whisper-large-v3-ca-3catparla",
+        "url": "https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla",
         "licencia": "Apache-2.0",
-        "uso": "Detectar mezcla catalán-castellano: los castellanismos del alumno",
+        "uso": "Reconocimiento de voz en catalán para transcribir la expresión oral del alumno; variante para mezcla catalán-castellano",
         "estrellas": ""
       },
       {
         "nombre": "projecte-aina/matxa-tts-cat-multiaccent",
         "url": "https://huggingface.co/projecte-aina/matxa-tts-cat-multiaccent",
-        "licencia": "CC-BY-NC-4.0 (uso comercial requiere licencia)",
-        "uso": "Voz en 4 variantes (central, nord-occidental, balear, valencià); negociar licencia o entrenar voz propia",
+        "licencia": "Mixta: una ficha no comercial y otra Apache-2.0 (verificar)",
+        "uso": "Voz en catalán central, nord-occidental (Lleida), balear y valenciano para los audios de comprensión oral",
         "estrellas": ""
       },
       {
-        "nombre": "shivammehta25/Matcha-TTS",
-        "url": "https://github.com/shivammehta25/Matcha-TTS",
+        "nombre": "languagetool-org/languagetool",
+        "url": "https://github.com/languagetool-org/languagetool",
+        "licencia": "LGPL-2.1",
+        "uso": "Corrector con el módulo catalán de Softcatalà (1.700 reglas): corrección explicable con la regla citada",
+        "estrellas": "15.200"
+      },
+      {
+        "nombre": "Softcatala/whisper-ctranslate2",
+        "url": "https://github.com/Softcatala/whisper-ctranslate2",
         "licencia": "MIT",
-        "uso": "Entrenar una voz catalana propia sin la restricción no comercial",
-        "estrellas": "1.369"
+        "uso": "Transcripción 4 veces más rápida y barata para el simulacro oral",
+        "estrellas": "1.367"
       },
       {
-        "nombre": "BSC-LT/salamandra-7b-instruct",
-        "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
-        "licencia": "Apache-2.0",
-        "uso": "Modelo de lenguaje entrenado con catalán para corrección y tareas",
-        "estrellas": ""
+        "nombre": "Softcatala/catalan-dict-tools",
+        "url": "https://github.com/Softcatala/catalan-dict-tools",
+        "licencia": "GPL/LGPL (verificar)",
+        "uso": "Diccionario morfológico para generar ejercicios de huecos y morfosintaxis automáticamente",
+        "estrellas": "65"
       },
       {
         "nombre": "Softcatala/arena-cat",
         "url": "https://github.com/Softcatala/arena-cat",
         "licencia": "no verificado",
-        "uso": "Comparativa de competencia en catalán de los modelos, para elegir el del tutor",
+        "uso": "Comparativa de competencia en catalán de los modelos: para elegir el corrector menos propenso a castellanismos",
         "estrellas": "22"
       },
       {
-        "nombre": "pipecat-ai/pipecat",
-        "url": "https://github.com/pipecat-ai/pipecat",
-        "licencia": "BSD-2",
-        "uso": "Agente de voz en tiempo real con proveedores intercambiables",
-        "estrellas": "16.757"
+        "nombre": "apertium/apertium-spa-cat",
+        "url": "https://github.com/apertium/apertium-spa-cat",
+        "licencia": "GPL",
+        "uso": "Traducción por reglas castellano-catalán para detectar calcos e interferencias del hispanohablante",
+        "estrellas": "9"
       },
       {
-        "nombre": "livekit/agents",
-        "url": "https://github.com/livekit/agents",
-        "licencia": "Apache-2.0",
-        "uso": "Alternativa WebRTC para el agente de voz con SDK web y móvil",
-        "estrellas": "14.910"
+        "nombre": "projecte-aina/tts-api",
+        "url": "https://github.com/projecte-aina/tts-api",
+        "licencia": "no verificado",
+        "uso": "API lista para servir voz en catalán",
+        "estrellas": "17"
       }
     ],
     "hallazgos": [
-      "Demanda récord: el CPNL ofreció 42.000 plazas en un trimestre (un 25 % más que el año anterior) y los grupos se llenan; la práctica oral individual es el cuello de botella.",
-      "El C1 es requisito en oposiciones y sanidad (el Departament de Salut hace sus propias pruebas): canal B2B claro con el ICS, hospitales y ayuntamientos.",
-      "Estructura oficial del C1: escrito 70 % (comprensión, expresión escrita de 100-120 y 180-195 palabras, uso de la lengua) y oral 30 % (monólogo con 2 imágenes más diálogo); apto con el 65 % global y mínimos por área.",
-      "Hueco real: Duolingo es básico, Parla.cat no tiene voz ni IA, las apps de idiomas con IA no confirman catalán; nadie ofrece simulacro oral del C1 con rúbrica.",
-      "Pila abierta madura: reconocimiento y modelos de lenguaje Apache-2.0 del BSC; el riesgo está en la voz (Matxa es no comercial) y en la calidad desigual de los modelos en catalán.",
-      "Riesgo competitivo: el proyecto AINA o la Generalitat podrían lanzar un tutor gratuito; diferenciarse por preparación de examen, dialecto y feedback estructurado."
+      "El C1 es la llave del empleo público catalán: lo exigen los cuerpos A1, A2 y C1 de la Generalitat (1.325 plazas en 31 procesos), docentes e ICS; la oferta pública de 2026 es de 8.474 plazas: decenas de miles de candidatos necesitan acreditar C1 cada año.",
+      "La demanda de C2 se ha disparado por el decreto escolar: los certificados de C2 de la DPL pasaron de 770 en 2020 a 4.876 en 2024 y el C2 ya es el 70 % de todos; unas 7.000 personas se examinaron en 2022 y 2023.",
+      "El sistema oficial está saturado: 103.123 inscripciones en el CPNL en 2024, 9.000 personas en lista de espera, 15 % de abandono; la demanda insatisfecha es estructural.",
+      "La DPL convoca una sola prueba al año por nivel con inscripción del 20 al 28 de enero y resultados en septiembre: quien suspende pierde un año. Un simulador que diga 'estás listo' antes de pagar tiene valor claro.",
+      "Las apps actuales solo entrenan el uso de la lengua (del 12,5 al 30 % de la nota) y dejan sin cubrir el 70 u 87 % restante: redacción y oral.",
+      "Entre 1 de cada 4 y 1 de cada 5 candidatos suspende (aptos: B1 82 %, B2 76 %, C1 75 %, C2 77 %): mercado recurrente.",
+      "El colectivo sanitario es un nicho definido y financiado: Prescriu-te el català pasó de 1.071 examinados a 1.640 inscritos; Salut emite certificados desde 2025 y el ICS exige C1 a enfermería.",
+      "Inmigración: 1.522.819 extranjeros en Cataluña (18,7 %); la entrada natural es A1 y A2 por el arraigo y la salida económica es B2 y C1 para el empleo público.",
+      "El catalán casi no existe en las apps globales (Babbel, Busuu, Rosetta Stone no lo tienen; Duolingo lo tiene abandonado): ningún competidor corrige redacciones ni simula la oral con IA.",
+      "Hay un ecosistema abierto de IA en catalán con licencia permisiva (Salamandra, Whisper catalán, LanguageTool, voz con acento de Lleida) que reduce el coste de licencias a casi cero.",
+      "Precios de referencia: CPNL 262,67 € por el C1 completo, libros de 32 a 52 €, tutor de 90 a 160 € al mes, exámenes universitarios de 50 a 120 €. Un plan de 10 a 15 €/mes o de 39 a 59 € por convocatoria queda muy por debajo de cualquier alternativa con feedback.",
+      "Lleida: la UdL convoca exámenes libres de B2, C1 y C2 y la DPL examina en Lleida en todas las convocatorias; el acento nord-occidental está disponible en la voz sintética.",
+      "Duolingo tiene 58,7 millones de usuarios diarios y 12,7 millones de suscriptores (segundo trimestre de 2026); su retención documentada no viene del contenido sino de la racha (un 3,3 % más a 14 días) y las ligas (un 17 % más de tiempo), pero sus peores reseñas son por gamificación sobre aprendizaje y contenido de IA sin revisar.",
+      "Todas las apps analizadas concentran sus peores reseñas en cobros y cancelación, no en pedagogía (ELSA 2,5, Praktika 3,5, Busuu 4,0 a 4,5, Babbel 4,5 en Trustpilot): avisar antes de renovar y cancelar en un clic es un diferenciador barato.",
+      "Precios anuales efectivos de referencia: Duolingo Super unos 7 $/mes, Busuu Premium Plus 6,66 €, Babbel 9 $, Kwiziq 9,50 $, Langua 16,67 $; ninguna prepara catalán ni tiene simulacros oficiales.",
+      "FSRS supera al algoritmo clásico de repaso en el 99,6 % de 10.000 colecciones y ahorra un 20 a 30 % de repasos; existe como librería abierta.",
+      "La corrección automática de escritura es creíble si se limita a lo seguro: Cambridge Write & Improve solo marca errores con un 90 % de confianza; los alumnos piden explicación por criterios y regla citada.",
+      "Una academia catalana (Aulacat) declara un 181 % más de matrículas de C1 y un 391 % más de C2 en 2025 con 1.706 alumnos."
     ],
     "lider": {
       "nombre": "Speak (Speakeasy Labs), modelo de tutor de idiomas por voz con IA; Parla.cat como incumbente catalán",
@@ -1187,13 +1271,47 @@
       "El catalán no se exporta; el motor sí: vasco y gallego, portugués para inmigrantes en Portugal, italiano"
     ],
     "juicio": {
-      "probabilidad": 35,
+      "probabilidad": 40,
       "veredicto": "Adelante con condiciones",
-      "exito": "50 suscriptores o 300 €/mes",
-      "porQue": "Demanda récord (42.000 plazas del CPNL en un trimestre), requisito en oposiciones y sanidad, nadie hace simulacro oral del C1 con rúbrica.",
-      "contra": "La calidad de voz y corrección en catalán es el producto entero; modelo de voz Matxa no comercial; coste por usuario; la Generalitat podría lanzar algo gratis.",
-      "parada": "Prueba previa con 20 candidatos al C1: si la corrección no coincide con la de un profesor en el 80 % de los casos, se para."
-    }
+      "exito": "50 suscriptores o 300 €/mes, y corrección validada con candidatos reales",
+      "porQue": "Demanda récord y creciente (el C2 pasó de 770 a 4.876 certificados; 9.000 personas en lista de espera del CPNL), el C1 es requisito del empleo público, uno de cada cuatro suspende y nadie cubre la redacción ni la oral. Con el B1 como entrada el embudo es mucho más ancho y el producto queda definido con lo mejor de las grandes apps.",
+      "contra": "La calidad de la corrección en catalán normativo es el producto entero; la voz catalana comercial exige verificar licencias; coste por usuario real; el proyecto AINA o la Generalitat podrían lanzar algo gratis; estacionalidad de enero a mayo.",
+      "parada": "Prueba con 20 candidatos reales al C1: si la nota de la app no coincide con la del profesor en el 80 % de los casos, no se lanza. Tras el lanzamiento: conversión de diagnóstico a pago inferior al 3 % a los 3 meses."
+    },
+    "examenes": [
+      {
+        "nivel": "B1 (elemental)",
+        "organismo": "Departament de Política Lingüística (DPL); equivalentes: CPNL (Elemental 3), Departament de Salut desde 2025, Institut Ramon Llull en el exterior, universidades CIFALC",
+        "estructura": "Escrita 75 %: comprensión oral 25 % (40 min), comprensión lectora 25 % (45 min), expresión escrita 12,5 % (40 min, un correo de unas 100 palabras), gramática y vocabulario 12,5 % (30 min). Oral 25 %, unos 15 min. Apto: 60 % en la oral y 60 % en el resto; hay que aprobar las dos partes",
+        "convocatorias": "DPL: una al año; 2026 inscripción del 20 al 28 de enero, escrita el 16 de mayo, resultados en septiembre; prevista para 2027 el 17 de abril. Tasa DPL no verificada (referencias: 17,11 € en Baleares, 35 € en el exterior)",
+        "demanda": "Aptos 82 % (DPL 2024); Salut 2025: 84 % aptos; demanda de A2 y B1 a la baja",
+        "usos": "TCAI y celador del ICS; nivel de referencia para informes de arraigo (el 72 % de los informes desfavorables de 2019 fueron por falta de catalán); la DPL creó la prueba A1 en 2025-26 por la demanda de arraigo"
+      },
+      {
+        "nivel": "B2 (intermedi)",
+        "organismo": "DPL; CPNL (Intermedi 3), Salut, IRL, universidades CIFALC (febrero y junio)",
+        "estructura": "Escrita 80 %: comprensión oral (5 diálogos breves con 3 opciones y una entrevista con respuesta abierta), comprensión lectora 20 %, expresión escrita 20 % (texto informativo de unas 60 palabras y correo de unas 100), gramática y vocabulario 20 %. Oral 20 %: conversación con el examinador a partir de una imagen y conversación en parejas para llegar a un acuerdo. Apto: 60 % en la oral y 60 % en el resto",
+        "convocatorias": "DPL 2026: escrita el 25 de abril; prevista para 2027 el 24 de abril. Universidades: 13 de febrero y 12 de junio de 2027 (UdL 75 € externos, UPF 120 €)",
+        "demanda": "Salut 2025: 76 % aptos; el CNL Alt Penedès-Garraf registró 1.711 inscritos en 2024",
+        "usos": "Cuerpo subalterno de la Generalitat, técnicos sanitarios del ICS, ayuntamientos para grupos C2 y agrupaciones profesionales; Andorra lo exige a sanitarios"
+      },
+      {
+        "nivel": "C1 (suficiència, el antiguo nivell C)",
+        "organismo": "DPL; CPNL (Suficiència 3, 120 h, 262,67 €), Salut (programa Prescriu-te el català), universidades CIFALC (9 de octubre de 2026, 13 de febrero y 12 de junio de 2027), IRL en el exterior (60 €). Las EOI de Cataluña ya no examinan C1 de catalán",
+        "estructura": "Área 1, comprensión lectora y expresión escrita, 40 % (1 h 30): texto argumentativo a partir de 3 fuentes. Área 2, uso de la lengua, 30 % (1 h): 3 ejercicios de huecos, 2 de morfosintaxis y 1 de léxico, 45 ítems. Área 3, expresión oral, 30 % (20 min con 10 de preparación): monólogo a partir de dos imágenes y diálogo con el examinador. Total 3 h. Apto: 65 % global y además 25 de 40 en la escrita y 19 de 30 en la oral",
+        "convocatorias": "DPL 2026: inscripción del 20 al 28 de enero, escrita el 9 de mayo, resultados en septiembre; prevista para 2027 el 8 de mayo. Tasa 57,45 € con bonificaciones del 30 y 50 % y exenciones (no verificado)",
+        "demanda": "Salut 2025: 75 % aptos; Prescriu-te el català: 1.640 sanitarios inscritos en la segunda edición; en el CNL de Reus los examinandos de C1 bajaron un 22 % y los de C2 subieron un 25 % en 2025",
+        "usos": "Requisito general de oposiciones de la Generalitat (cuerpos A1, A2 y C1; 1.325 plazas en 31 procesos en 2026), docentes, enfermería y auxiliar administrativo del ICS, Mossos (cuarta prueba), ayuntamientos y universidades. Es el certificado llave del empleo público en Cataluña"
+      },
+      {
+        "nivel": "C2 (superior, el antiguo nivell D)",
+        "organismo": "DPL; EOI (única convocatoria libre de catalán en EOI: febrero y mayo-junio, 96,65 €), universidades CIFALC (13 de febrero, 12 de junio y 23 de julio de 2027), CPNL (más de 1.000 plazas nuevas en 2025), IRL en el exterior",
+        "estructura": "Dos partes obligatorias: escrita (comprensión lectora, expresión escrita, uso de la lengua) y oral. Referencia de la prueba de la Generalitat: escrita de 2 h 20 (texto argumentativo y uso de la lengua), oral de 40 min (30 de preparación y 10 de exposición con síntesis de argumentos de varios textos), apto con el 70 %. Detalle oficial por áreas no verificado",
+        "convocatorias": "DPL 2026: escrita el 11 de abril; prevista para 2027 el 23 de abril (provisional). EOI: 12 de febrero y 31 de mayo de 2027",
+        "demanda": "Récord: de 2.362 examinados en 2021 a unos 7.000 en 2022 y 2023; certificados DPL de C2 de 770 en 2020 a 4.876 en 2024; el C2 es el 70 % de los certificados de la DPL; aptos 77 % (2024)",
+        "usos": "El decreto escolar de 2024 lo exige a docentes nuevos desde 2025-26 (suspendido cautelarmente y con excepción temporal en 2026; desde 2027-28 también para promoción); mérito en Generalitat (5 puntos), Mossos y docentes; correctores, periodistas, profesores de catalán"
+      }
+    ]
   },
   {
     "clave": "g-cuentos",
@@ -1446,7 +1564,9 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Buscador de Amazon; Amazon Ads solo en lanzamiento",
-    "enlaces": {},
+    "enlaces": {
+      "Numimates (código)": "https://github.com/moisesmodu/numimates"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1467,6 +1587,10 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Prompt actualizado: los cuadernos parten de los imprimibles y actividades sin pantalla de Numi Tech y de los ejercicios de Numi Mates"
       }
     ],
     "proximos": [
@@ -1477,6 +1601,7 @@
       "Subir los paquetes"
     ],
     "mejoras": [
+      "Reutilizar los imprimibles de Numi Tech y el banco de ejercicios de Numi Mates (1º de primaria a 4º de ESO) como base de los cuadernos; abre además una serie de cuadernos de matemáticas por curso",
       "Serie por edades (6-8, 9-12) y por lengua con el mismo motor; título con 'pensamiento computacional' y 'sin pantallas', los términos que usan padres y docentes.",
       "Precio de 11,99 a 12,99 € (por encima del umbral del 60 %) con 100 a 120 páginas en blanco y negro; color solo en la cubierta.",
       "Páginas de explicación para padres y QR a soluciones y vídeos, puente con los cursos.",
@@ -1669,7 +1794,10 @@
     "costesMes": 0,
     "clientes": 0,
     "canal": "Buscador de Udemy; cupones de lanzamiento",
-    "enlaces": {},
+    "enlaces": {
+      "Numimates (código)": "https://github.com/moisesmodu/numimates",
+      "Numi Tech (app)": "https://app.numimates.com"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1690,9 +1818,14 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Prompt actualizado: los cursos 1 y 2 se producen a partir de los 108 sesiones de Numi Tech (Robot, Creadors, Robòtica, Digital) con sus presentaciones, guías e imprimibles"
       }
     ],
     "proximos": [
+      "Sesión J: traducir y convertir las sesiones de Numi Tech en lecciones en vídeo (presentaciones + simulador grabado + voz)",
       "Abrir la sesión J"
     ],
     "paraMoises": [
@@ -1700,6 +1833,7 @@
       "Subir los cursos"
     ],
     "mejoras": [
+      "Reutilizar Numi Tech: 4 cursos revisados con 108 sesiones, guías del profesor, presentaciones, imprimibles y solucionario; de ahí salen el curso para padres y el de robótica con micro:bit sin escribirlos desde cero, y la app es la venta cruzada natural",
       "Udemy como embudo a precio bajo y la versión extendida con plantillas y actualizaciones en Hotmart o web propia a 49-99 €.",
       "Pipeline reproducible Markdown → Marp → voz → ffmpeg para 30 a 60 lecciones cortas y regrabar rápido cuando cambien las herramientas; intros con cámara para humanizar.",
       "Curso para padres por edades (5-7 sin pantalla con el libro de KDP, 8-10 Scratch, 11-13 Python) con plan semanal de 20 minutos y versión catalana.",
@@ -1867,10 +2001,10 @@
       "Versión en inglés de 'IA para pequeños negocios'"
     ],
     "juicio": {
-      "probabilidad": 35,
+      "probabilidad": 45,
       "veredicto": "Adelante, sin expectativas",
       "exito": "2 cursos, 200 alumnos y 100 €/mes (publicar: 60 %)",
-      "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe.",
+      "porQue": "Nicho de IA para negocios desactualizado desde 2023; Udemy trae el tráfico; el curso para padres no existe. Con el material de Numi Tech ya hecho (108 sesiones revisadas), el coste de producción baja a casi solo montaje y la probabilidad sube.",
       "contra": "Udemy se queda el 63 % y cambia las reglas; 4 a 7 € por venta; la voz sintética puede restar.",
       "parada": "No hace falta; actualización trimestral y piloto automático."
     }
