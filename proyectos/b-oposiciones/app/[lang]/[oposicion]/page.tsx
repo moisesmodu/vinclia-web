@@ -42,8 +42,8 @@ export default async function PaginaOposicion({ params }: P) {
     {
       q: lang === 'ca' ? `Quantes preguntes té l'examen de ${o.nombreCorto.ca}?` : `¿Cuántas preguntas tiene el examen de ${o.nombreCorto.es}?`,
       a: lang === 'ca'
-        ? `${o.examen.preguntas} preguntes tipus test de ${o.examen.opciones} opcions en ${o.examen.minutos} minuts${o.examen.penalizacion ? `; cada error resta ${o.examen.penalizacion} d'encert` : ', sense penalització'}, segons la ${o.convocatoria.referencia}.`
-        : `${o.examen.preguntas} preguntas tipo test de ${o.examen.opciones} opciones en ${o.examen.minutos} minutos${o.examen.penalizacion ? `; cada error resta ${o.examen.penalizacion} de acierto` : ', sin penalización'}, según la ${o.convocatoria.referencia}.`,
+        ? `${o.examen.preguntas} preguntes tipus test de ${o.examen.opciones} opcions en ${o.examen.minutos} minuts${o.examen.penalizacion ? `; cada error resta ${o.examen.penalizacion === 0.25 ? "1/4" : o.examen.penalizacion} d'encert` : ', sense penalització'}, segons la ${o.convocatoria.referencia}.`
+        : `${o.examen.preguntas} preguntas tipo test de ${o.examen.opciones} opciones en ${o.examen.minutos} minutos${o.examen.penalizacion ? `; cada error resta ${o.examen.penalizacion === 0.25 ? "1/4" : o.examen.penalizacion} de acierto` : ', sin penalización'}, según la ${o.convocatoria.referencia}.`,
     },
     {
       q: lang === 'ca' ? 'Quants temes té el temari?' : '¿Cuántos temas tiene el temario?',

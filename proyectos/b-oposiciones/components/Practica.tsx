@@ -21,6 +21,7 @@ type Sesion = {
 type Resultado = { modo: Modo; aciertos: number; fallos: number; blancos: number; nota?: number; segundos: number; n: number; percentil?: number | null; ids: string[]; marcadas: Record<string, number | null> };
 
 const CLAVE = (slug: string) => `aprova:progreso:${slug}`;
+const fraccion = (x: number, idioma: Idioma) => (x === 0.25 ? '1/4' : Math.abs(x - 1 / 3) < 1e-6 ? '1/3' : x.toLocaleString(idioma));
 
 function cargarLocal(slug: string): Progreso {
   try {
@@ -204,7 +205,7 @@ export default function Practica({ idioma, op, inicial }: { idioma: Idioma; op: 
         </div>
         <div className="tarjeta">
           <h2 className="font-bold">{d.app.simulacro}</h2>
-          <p className="mt-2 text-sm text-slate-600">{op.examen.preguntas} {d.preguntas}{op.examen.reserva ? ` + ${op.examen.reserva} reserva` : ''} · {op.examen.minutos} {d.minutos} · {op.examen.penalizacion ? `${d.penaliza} ${op.examen.penalizacion}` : d.sinPenalizacion}</p>
+          <p className="mt-2 text-sm text-slate-600">{op.examen.preguntas} {d.preguntas}{op.examen.reserva ? ` + ${op.examen.reserva} reserva` : ''} · {op.examen.minutos} {d.minutos} · {op.examen.penalizacion ? `${d.penaliza} ${fraccion(op.examen.penalizacion, idioma)}` : d.sinPenalizacion}</p>
           {preguntas.length < op.examen.preguntas ? <p className="mt-1 text-xs text-amber-700">{idioma === 'ca' ? `Simulacre reduït a ${preguntas.length} preguntes (pla gratuït).` : `Simulacro reducido a ${preguntas.length} preguntas (plan gratuito).`}</p> : null}
           <button className="boton mt-4 w-full" onClick={() => empezar('simulacro')}>{d.app.empezar}</button>
         </div>
@@ -349,7 +350,7 @@ function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscr
         <div className={`tarjeta mt-4 text-center ${aprobado ? 'border-ok' : 'border-mal'}`}>
           <p className="text-sm text-slate-500">{d.app.nota}</p>
           <p className={`text-5xl font-extrabold ${aprobado ? 'text-ok' : 'text-mal'}`}>{r.nota.toLocaleString(idioma)}</p>
-          <p className="text-xs text-slate-500">/ {op.examen.notaMaxima ?? 10} · {op.examen.penalizacion ? `${d.penaliza} ${op.examen.penalizacion}` : d.sinPenalizacion}</p>
+          <p className="text-xs text-slate-500">/ {op.examen.notaMaxima ?? 10} · {op.examen.penalizacion ? `${d.penaliza} ${fraccion(op.examen.penalizacion, idioma)}` : d.sinPenalizacion}</p>
           {r.percentil != null ? <p className="mt-2 text-sm font-semibold text-marca">{d.app.percentil(r.percentil)}</p> : null}
         </div>
       ) : null}

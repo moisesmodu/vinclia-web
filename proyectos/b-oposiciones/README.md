@@ -16,6 +16,24 @@ falladas, estadísticas por tema, ranking por percentil, historial permanente y 
 de idioma en cada pregunta). Gratis: 20 preguntas por oposición, sin registro. Suscripción: 9,99 €/mes (también 7,99 €/mes
 en trimestral y 5,99 €/mes en anual) con acceso a **todas** las oposiciones.
 
+## Banco de preguntas v1 (28/10/2026)
+
+| Oposición | Temas | En la app | Cita literal comprobada por máquina | Segunda pasada: ok / corregidas / rechazadas |
+|---|---|---|---|---|
+| Auxiliar Generalitat | 15 | 359 | 336 | 344 / 15 / 1 |
+| Auxiliar ayuntamientos | 24 | 330 | 322 | 314 / 16 / 0 |
+| Mossos d'Esquadra | 21 | 346 | 262 | 334 / 12 / 0 |
+| Bombers | 34 | 350 | 138 | 345 / 5 / 1 |
+| TCAI ICS | 16 | 352 | 272 | 341 / 11 / 0 |
+| **Total** | **110** | **1.737** | **1.330** | **1.678 / 59 / 2** |
+
+- Generadas en esta sesión en modo sesión (IA, a partir del texto vigente de cada norma). Revisadas por revisores distintos de los
+  autores, pregunta a pregunta con el artículo delante. Auditoría manual adicional de 24 preguntas al azar: 24 correctas.
+- Las preguntas sin cita (temas técnicos de Bombers y de cuidados de TCAI, geografía e historia de Mossos, ofimática) solo
+  tienen la segunda pasada y se marcan como "fuente web".
+- Exámenes oficiales anteriores: ninguno en la v1 (ver decisiones).
+- Gratis: 20 por oposición, repartidas entre temas (100 en total).
+
 ## Estructura
 ```
 app/                 Next.js (App Router): páginas por idioma /ca y /es, API en app/api
@@ -67,16 +85,19 @@ tablas. Variables en `.env.example`. En local: Postgres, `cp .env.example .env`,
 necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula para probar el flujo entero.
 
 ## Qué se ha probado (28/10/2026)
-- `npm run build` limpio y `tsc` sin errores.
-- `scripts/e2e.mjs` en un Pixel 7 emulado (Playwright) contra `next start` y Postgres 16 local, en modo de pago demo:
-  redirección por idioma, página de oposición, página de tema, la API solo entrega las gratuitas sin suscripción, test por
-  tema con corrección, artículo y cita, aviso de plan gratuito, registro, pago, banco completo, simulacro completo con nota,
-  estadísticas, progreso sincronizado en el servidor, cancelación en un clic, sin errores de JavaScript.
-- Stripe contra `stripe-mock` (el simulador oficial de la API): creación de cliente y precio, sesión de Checkout de suscripción,
-  portal de cliente con configuración creada sola, cancelación al final del periodo, sincronización periódica y webhook
-  firmado (la firma válida activa la suscripción; la falsa da 400).
-- **Sin probar:** una compra real en Stripe Checkout con tarjeta de prueba (necesita la clave `sk_test_` de Moisés) y el
-  despliegue en Vercel/Neon (necesitan sus cuentas).
+- `npm run build` limpio (270 páginas estáticas) y `tsc` sin errores.
+- `scripts/e2e.mjs` en un Pixel 7 emulado (Playwright) contra `next start` y Postgres 16 local, **en las cinco oposiciones**,
+  en modo de pago demo: redirección por idioma, página de oposición y de tema, la API solo entrega las 20 gratuitas sin
+  suscripción, test por tema con corrección, artículo y cita, aviso de plan gratuito, registro, pago, banco completo, simulacro
+  completo con el formato real (30, 45, 55, 77 y 82 preguntas con reserva) y nota con penalización, estadísticas, progreso
+  sincronizado en el servidor, cancelación en un clic, sin errores de JavaScript.
+- Stripe contra `stripe-mock` (simulador oficial de la API): cliente, producto «Cartera · Oposiciones · <Plan>» y precio
+  idempotentes, sesión de Checkout de suscripción, portal de cliente, cancelación al final del periodo, sincronización cada
+  12 h, webhook firmado (válido → suscripción activa; falso → 400) y `scripts/stripe-preparar.mjs`.
+- Motor en modo API contra un servidor simulado de la API de Anthropic (generación con Haiku 5.5, revisión con Sonnet 5.5 y
+  respaldo automático, descarte de citas inventadas, compilación).
+- **Sin probar:** una compra real en Stripe Checkout con tarjeta de prueba (necesita la clave `sk_test_` de Numi Mates), el
+  correo de recuperación con Resend real y el despliegue en Vercel/Neon: lo hace la sesión del Mac con `DESPLIEGUE.md`.
 
 ## Decisiones tomadas (y por qué)
 - **Marca "Aprova"** y dominio gratuito `aprova-oposicions.vercel.app` hasta que haya dominio propio (`config/marca.json`).
