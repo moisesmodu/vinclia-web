@@ -6,7 +6,8 @@ raíz, 0,64 MB). Portadas: `portadas/`. Capturas 1920×1080: `capturas/`.
 ## Datos comunes
 - **Nombre:** Egg Truck
 - **Estudio / desarrollador (developer name en los tres portales):** Nuvolet Games · lema «Tiny games, big smiles.»
-  · web https://juegos-casuales.vercel.app (dominio previsto nuvolet.games) · icono del estudio: `fichas/estudio-icono-512.png`
+  · web https://juegos-casuales.vercel.app (dominio previsto nuvolet.games)
+  · **correo de contacto / soporte (en todos los formularios):** hola@numimates.com · icono del estudio: `fichas/estudio-icono-512.png`
 - **Género / categoría:** Driving · Physics · Casual (CrazyGames: *Driving* → subcategoría *Car*; Poki: *Car games* / *Driving*)
 - **Etiquetas:** driving, physics, car, truck, one button, egg, hill climb, casual, kids, mobile
 - **Controles:** ratón (mantener clic), táctil (mantener el dedo), teclado (espacio / flecha arriba / flecha derecha / W / D)
@@ -72,5 +73,6 @@ Poki revisa a mano y lo primero que pide es **un enlace jugable**. Enviar la URL
 - Viewport: 1280×720, marcar *Mobile friendly*, *Fullscreen button* y *Automatically start on page load: no*.
 - Cover image: `egg-truck-itch-630x500.jpg`. Screenshots: `capturas/01-menu.jpg` a `08-final.jpg`.
 - Classification: Games · Genre: Racing / Physics · Tags: driving, physics, one-button, casual, egg, hill-climb, 2d.
-- Pricing: *No payments* (sin donaciones al principio). AI disclosure: *Yes* (gráficos y música).
+- Pricing: **Donate / pay what you want**, mínimo 0 $, **sugerido 2 $** (ver `MONETIZACION.md`). AI disclosure: *Yes* (gráficos y música).
+- Contacto en la página: hola@numimates.com.
 - Visibilidad: **Draft** hasta que Moisés pulse "Public".

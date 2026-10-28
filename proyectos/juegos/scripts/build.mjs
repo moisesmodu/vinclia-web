@@ -28,10 +28,12 @@ for (const g of games) {
 
 // Marca del estudio (MARCAS.md · Nuvolet Games): logotipo e icono de marcas/logos, pie común en todas las páginas.
 const STUDIO = 'Nuvolet Games', TAGLINE = 'Tiny games, big smiles.';
+// Correo de contacto de toda la cartera (SESIONES.md «Correo de contacto»): LEGAL_EMAIL o, por defecto, hola@numimates.com
+const CONTACT = process.env.LEGAL_EMAIL || 'hola@numimates.com';
 mkdirSync(resolve(root, 'dist', 'marca'), { recursive: true });
 for (const f of ['juegos.svg', 'juegos-icono.svg']) cpSync(resolve(root, '..', '..', 'marcas', 'logos', f), resolve(root, 'dist', 'marca', f));
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap">';
-const footer = (up) => `<footer style="text-align:center;padding:24px 16px 32px;color:#1E2A3A"><img src="${up}marca/juegos-icono.svg" alt="" width="28" height="28" style="vertical-align:middle"> <b>${STUDIO}</b> · ${TAGLINE}</footer>`;
+const footer = (up) => `<footer style="text-align:center;padding:24px 16px 32px;color:#1E2A3A"><img src="${up}marca/juegos-icono.svg" alt="" width="28" height="28" style="vertical-align:middle"> <b>${STUDIO}</b> · ${TAGLINE}<br><span style="font-size:.9em">Contact: <a href="mailto:${CONTACT}" style="color:#1E2A3A">${CONTACT}</a></span></footer>`;
 
 // Portada del catálogo en la web propia (tráfico directo: el 100 % de los ingresos es nuestro).
 const cards = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).map((g) => {
