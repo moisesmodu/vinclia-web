@@ -9,7 +9,7 @@ import datos from '@/contenido/convocatorias.json';
 type Conv = {
   id: string; organismo: string; cuerpo: Record<Idioma, string>; grupo?: string | null; plazas?: number | null; estado: string;
   referencia?: string | null; diario?: string | null; fechaPublicacion?: string | null; plazoHasta?: string | null; fechaExamen?: string | null;
-  url?: string | null; oposicion?: string | null; verificado?: string; nota?: Record<Idioma, string>;
+  url?: string | null; oposicion?: string | null; verificado?: string; nota?: Record<Idioma, string>; agrupa?: boolean;
 };
 
 const ORDEN: Record<string, number> = { abierta: 0, 'en curso': 1, prevista: 2, cerrada: 3 };
@@ -25,7 +25,8 @@ export default async function Convocatorias({ params }: { params: Promise<{ lang
   const { lang } = await params;
   const d = t(lang);
   const lista = [...(datos.convocatorias as Conv[])].sort((a, b) => (ORDEN[a.estado] ?? 9) - (ORDEN[b.estado] ?? 9) || (b.plazas ?? 0) - (a.plazas ?? 0));
-  const total = lista.reduce((s, c) => s + (c.plazas ?? 0), 0);
+  // Las convocatorias que agrupan otras (p. ej. la 100-2025 del ICS o la 870) no suman: sus plazas ya están en las de cada cuerpo.
+  const total = lista.reduce((s, c) => s + (c.agrupa ? 0 : c.plazas ?? 0), 0);
   const ld = {
     '@context': 'https://schema.org', '@type': 'ItemList', name: d.convocatoriasTitulo,
     itemListElement: lista.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: `${c.organismo}: ${c.cuerpo[lang]}`, url: c.url ?? undefined })),
@@ -52,6 +53,7 @@ export default async function Convocatorias({ params }: { params: Promise<{ lang
               <div><dt className="text-xs text-slate-500">{lang === 'ca' ? 'Inscripció fins' : 'Inscripción hasta'}</dt><dd>{fecha(c.plazoHasta, lang)}</dd></div>
               <div><dt className="text-xs text-slate-500">{lang === 'ca' ? 'Examen' : 'Examen'}</dt><dd>{fecha(c.fechaExamen, lang)}</dd></div>
             </dl>
+            {c.agrupa ? <p className="mt-2 text-xs font-semibold text-slate-500">{lang === 'ca' ? 'Convocatòria que agrupa diversos cossos: les places de cada cos surten també per separat.' : 'Convocatoria que agrupa varios cuerpos: las plazas de cada cuerpo salen también por separado.'}</p> : null}
             {c.nota?.[lang] ? <p className="mt-2 text-sm text-slate-600">{c.nota[lang]}</p> : null}
             <p className="mt-2 flex flex-wrap items-center gap-3 text-sm">
               {c.referencia ? (c.url ? <a href={c.url} target="_blank" rel="noopener" className="text-marca underline">{c.referencia}{c.diario && c.diario !== '—' ? ` (${c.diario})` : ''}</a> : <span className="text-slate-600">{c.referencia}</span>) : null}
