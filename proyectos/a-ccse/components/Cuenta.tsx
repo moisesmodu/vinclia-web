@@ -101,6 +101,17 @@ export function Cuenta() {
       {!acceso && <Link href={`/${locale}/precio`} className="boton boton-1">{t('nav.precio')}</Link>}
       <Link href={`/${locale}/progreso`} className="boton boton-2">{t('nav.progreso')}</Link>
       <button className="text-sm underline" onClick={async () => { await fetch('/api/auth/salir', { method: 'POST' }); await recargarUsuario(); }}>{t('cuenta.salir')}</button>
+      <button
+        className="text-sm text-mal underline"
+        onClick={async () => {
+          if (!confirm(t('cuenta.borrarConfirm'))) return;
+          await fetch('/api/auth/cuenta', { method: 'DELETE' });
+          try { localStorage.removeItem('ccse.progreso.v1'); localStorage.removeItem('ccse.simulacros.gratis'); } catch {}
+          await recargarUsuario();
+        }}
+      >
+        {t('cuenta.borrar')}
+      </button>
     </div>
   );
 }

@@ -20,7 +20,8 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
   return (
     <div className="grid gap-10">
       <section className="pt-4 text-center sm:pt-10">
-        <p className="mb-3 inline-block rounded-full bg-oro/25 px-3 py-1 text-sm font-semibold">{t('inicio.badge')}</p>
+        <p className="titulos mb-2 text-lg font-bold text-marca">{t('lema')}</p>
+        <p className="mb-3 inline-block rounded-full bg-oro/20 px-3 py-1 text-sm font-semibold">{t('inicio.badge')}</p>
         <h1 className="mx-auto max-w-3xl text-3xl font-black leading-tight sm:text-5xl">{t('inicio.h1')}</h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-suave">{t('inicio.sub')}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">

@@ -6,8 +6,9 @@ import { FUENTE } from '@/lib/preguntas';
 export function Pie({ locale }: { locale: Locale }) {
   const t = traductor(locale);
   return (
-    <footer className="mt-16 border-t border-[#e7e2da] bg-white py-8 text-sm text-suave">
+    <footer className="mt-16 border-t border-[#EADFCD] bg-white py-8 text-sm text-suave">
       <div className="contenedor grid gap-4">
+        <p className="titulos text-base font-bold text-tinta">{t('sello')}</p>
         <p>
           {t('inicio.fuente')}: <a className="underline" href={FUENTE.url} rel="noopener" target="_blank">{FUENTE.titulo}</a>, {FUENTE.autor}.
         </p>
@@ -20,7 +21,7 @@ export function Pie({ locale }: { locale: Locale }) {
           <Link href="/es/preguntas">{t('pie.preguntas')}</Link>
           <Link href={`/${locale}/guia`}>{t('pie.guias')}</Link>
         </nav>
-        <p>© {new Date().getFullYear()} Nuevo en España</p>
+        <p>© {new Date().getFullYear()} {t('marca')} · {t('marcaPor')}</p>
       </div>
     </footer>
   );

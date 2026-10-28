@@ -111,7 +111,7 @@ export function Simulacro() {
         </div>
         <nav className="flex flex-wrap gap-1" aria-label="Preguntas">
           {ids.map((_, k) => (
-            <button key={k} onClick={() => setI(k)} className={`h-9 w-9 rounded-lg text-sm ${k === i ? 'bg-marca text-white' : resp[k] !== null ? 'bg-tinta/80 text-white' : 'bg-white border border-[#d6d0c6]'}`}>{k + 1}</button>
+            <button key={k} onClick={() => setI(k)} className={`h-9 w-9 rounded-lg text-sm ${k === i ? 'bg-marca text-white' : resp[k] !== null ? 'bg-tinta/80 text-white' : 'bg-white border border-[#DCCDB6]'}`}>{k + 1}</button>
           ))}
         </nav>
         <button className="boton boton-2" onClick={() => (respondidas < ids.length && !confirm(t('sim.confirmarEntregar')) ? null : entregar())}>{t('sim.entregar')}</button>

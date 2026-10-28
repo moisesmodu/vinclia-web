@@ -7,7 +7,7 @@ Solo queda lo que Google Play exige a una persona.
 1. Abre https://play.google.com/console → **Crear app** → nombre `Test CCSE Nacionalidad 2026`, gratuita.
    Si aún no tienes cuenta de desarrollador, Google la pide a tu nombre (25 $, una vez).
 2. *Prueba interna* (o *Producción*) → **Crear versión** → sube este archivo:
-   https://github.com/moisesmodu/vinclia-web/raw/entregas/a-ccse-android/ccse-1.0.0.aab
+   https://github.com/moisesmodu/vinclia-web/raw/entregas/a-ccse-android/ccse-1.0.1.aab
 3. La ficha (textos en 7 idiomas, icono y capturas) está en `proyectos/a-ccse/marketing/google-play/`. La sesión del Mac puede
    rellenarla en tu navegador. Pulsa **Publicar**.
 

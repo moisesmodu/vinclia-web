@@ -30,15 +30,27 @@ export function Precio() {
   return (
     <div className="grid gap-4">
       {cancelado && <p className="rounded-lg bg-amber-50 p-3">{t('precio.cancelado')}</p>}
-      <div className="tarjeta border-2 border-marca p-6">
-        <p className="text-5xl font-black">{p}</p>
-        <p className="mt-1 text-suave">{t('precio.pago', { p, d: PAIS.accesoDias })}</p>
-        <ul className="mt-4 grid gap-2">
-          {[1, 2, 3, 4, 5].map((n) => <li key={n} className="flex gap-2"><span className="text-ok">✓</span>{t(`precio.incluye${n}` as 'precio.incluye1')}</li>)}
-        </ul>
-        <p className="mt-4 rounded-lg bg-green-50 p-3 text-sm">{t('precio.garantia', { p })}</p>
-        <p className="mt-2 text-sm text-suave">{t('precio.comparar', { t: PAIS.convocatoria.tasaEuros })}</p>
+      {/* Estructura común de precio (MARCAS.md §3): gratis, de pago, precio con IVA, cancela en un clic y sello. */}
+      <div className="grid gap-3 sm:grid-cols-2">
+        <section className="tarjeta p-5">
+          <h2 className="text-lg font-bold">{t('precio.gratisT')}</h2>
+          <p className="mt-1 text-3xl font-black">0 €</p>
+          <ul className="mt-3 grid gap-2 text-sm">
+            {[1, 2, 3].map((n) => <li key={n} className="flex gap-2"><span className="text-oro">✓</span>{t(`precio.gratis${n}` as 'precio.gratis1')}</li>)}
+          </ul>
+        </section>
+        <section className="tarjeta border-2 border-terracota p-5">
+          <h2 className="text-lg font-bold">{t('precio.pagoT')}</h2>
+          <p className="mt-1 text-3xl font-black">{p}</p>
+          <p className="text-sm text-suave">{t('precio.iva', { d: PAIS.accesoDias })}</p>
+          <ul className="mt-3 grid gap-2 text-sm">
+            {[1, 2, 3, 4, 5].map((n) => <li key={n} className="flex gap-2"><span className="text-ok">✓</span>{t(`precio.incluye${n}` as 'precio.incluye1')}</li>)}
+          </ul>
+        </section>
       </div>
+      <p className="rounded-lg bg-oro/15 p-3 text-sm"><b>{t('precio.cancela')}</b></p>
+      <p className="rounded-lg bg-green-50 p-3 text-sm">{t('precio.garantia', { p })}</p>
+      <p className="text-sm text-suave">{t('precio.comparar', { t: PAIS.convocatoria.tasaEuros })}</p>
       {!listo ? null : acceso ? (
         <div className="tarjeta p-5">
           <p>{t('precio.yaTienes')}</p>
@@ -48,6 +60,7 @@ export function Precio() {
         <div className="grid gap-2">
           <button disabled={ocupado} onClick={pagar} className="boton boton-1 text-lg">{t('precio.comprar', { p })}</button>
           <p className="text-center text-sm text-suave">{t('precio.seguro')}</p>
+          <p className="titulos text-center text-sm font-bold">{t('sello')}</p>
           <p className="text-center text-xs text-suave">{t('precio.desistimiento')} <Link className="underline" href={`/${locale}/legal/condiciones`}>{t('pie.condiciones')}</Link></p>
           {msg && <p role="alert" className="rounded-lg bg-amber-50 p-2 text-sm">{msg}</p>}
         </div>

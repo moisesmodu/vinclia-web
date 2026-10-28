@@ -11,7 +11,7 @@ export function SelectorIdioma({ locale, etiqueta }: { locale: Locale; etiqueta:
     <label className="text-sm">
       <span className="sr-only">{etiqueta}</span>
       <select
-        className="rounded-lg border border-[#d6d0c6] bg-white px-2 py-2"
+        className="rounded-lg border border-[#DCCDB6] bg-white px-2 py-2"
         value={locale}
         onChange={(e) => router.push(ruta.replace(/^\/[a-z]{2}(?=\/|$)/, `/${e.target.value}`))}
       >

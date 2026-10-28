@@ -53,6 +53,13 @@ node pruebas/e2e-movil.mjs # 15 pruebas en navegador con pantalla de Pixel 7
 2. `npm run revisar` comprueba que hay 300 × 7 lenguas, el número de opciones, la escritura de cada lengua (árabe, chino, cirílico), las longitudes y la ausencia de duplicados. También comprueba que cada explicación nombra la opción correcta, que las de verdadero/falso dicen lo mismo que la respuesta oficial y que las revisiones negativas llevan nota. Resultado: **0 errores y 0 avisos**. Se probó metiendo fallos a propósito, y los detecta.
 3. Pendiente y recomendado: que un nativo revise por muestreo el árabe y el chino antes de invertir en marketing en esos idiomas.
 
+## Identidad de marca
+Ficha `proyectos.a-ccse` de `marcas/tokens.json` y `MARCAS.md`: **CCSE en tu idioma**, por Nuevo en España. Promesa: «Aprueba el examen de nacionalidad en tu idioma», en los 8 idiomas.
+- **Colores:** terracota `#D9603B` para formas, y `#B4492A` en botones y texto pequeño porque el terracota de la marca solo da 3,7:1 sobre blanco. Azul noche `#1F2A44`, crema `#FBF5EC` y oliva `#7A8F3C`.
+- **Tipografía:** Outfit en títulos y Noto Sans en el texto, cargadas de Google Fonts. Noto Sans Arabic y Noto Sans SC se cargan solo en esos idiomas.
+- **Logotipo e iconos:** se usan sin cambios. Están en `public/marca/logo.svg` y `public/icons/icon.svg`, y la variante adaptable (maskable) solo añade margen.
+- **Sello común en el pie y pantalla de precio con la estructura común.** «Cancela en un clic» es literal: no hay suscripción y la cuenta se borra con un botón (`DELETE /api/auth/cuenta`). La cuenta se anonimiza, y los pagos se guardan 6 años por obligación fiscal.
+
 ## Decisiones tomadas (y por qué)
 - **Las preguntas salen de un banco ya extraído, no del PDF directamente.** La red de la sesión bloquea `examenes.cervantes.es`. Se tomaron solo los datos oficiales (enunciado, opciones, respuesta y página) del repositorio `combimauri/ccse-estudio`, extraídos del manual 2026. Sus explicaciones no se copiaron: todas las de aquí son propias. El reparto por tareas coincide con el oficial (120/36/24/36/84). La tarea programada debe contrastarlo con el PDF oficial (ver TAREA-PROGRAMADA.md).
 - **Cuenta con correo y contraseña** (scrypt + cookie JWT firmada), sin enlace mágico. Así no hace falta abrir Resend para que funcione. Si se añade `RESEND_API_KEY`, funciona la recuperación de contraseña por correo. Sin ella, se recupera por soporte.

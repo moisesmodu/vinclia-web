@@ -2,15 +2,15 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: '/',
-    name: 'CCSE en tu idioma · Test nacionalidad española',
+    name: 'CCSE en tu idioma · por Nuevo en España',
     short_name: 'CCSE',
-    description: 'Las 300 preguntas oficiales del examen CCSE explicadas en tu idioma. Test, simulacro y repaso.',
+    description: 'Aprueba el examen de nacionalidad en tu idioma: las 300 preguntas oficiales del CCSE explicadas, simulacro y repaso.',
     start_url: '/?fuente=app',
     scope: '/',
     display: 'standalone',
     orientation: 'portrait',
-    background_color: '#faf8f5',
-    theme_color: '#b4232a',
+    background_color: '#FBF5EC',
+    theme_color: '#D9603B',
     lang: 'es',
     categories: ['education'],
     icons: [

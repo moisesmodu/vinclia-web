@@ -13,11 +13,10 @@ export function Cabecera({ locale }: { locale: Locale }) {
     [`/${locale}/examen`, t('nav.examen')],
   ];
   return (
-    <header className="border-b border-[#e7e2da] bg-white">
+    <header className="border-b border-[#EADFCD] bg-white">
       <div className="contenedor flex flex-wrap items-center justify-between gap-2 py-3">
-        <Link href={`/${locale}`} className="flex items-center gap-2 font-extrabold">
-          <img src="/icons/icon.svg" alt="" width={32} height={32} />
-          <span>{t('marca')}</span>
+        <Link href={`/${locale}`} className="flex items-center" aria-label={`${t('marca')} · ${t('marcaPor')}`}>
+          <img src="/marca/logo.svg" alt={`${t('marca')} · ${t('marcaPor')}`} width={219} height={34} className="h-8 w-auto sm:h-9" dir="ltr" />
         </Link>
         <div className="flex items-center gap-2">
           <SelectorIdioma locale={locale} etiqueta={t('pie.idioma')} />

@@ -61,6 +61,9 @@ r = await api('/api/stripe/checkout', { method: 'POST', body: JSON.stringify({ l
 ok(r.s === 200 && productos.length === 1 && precios.length === 1, 'segundo Checkout reutiliza el producto y el precio (idempotente)');
 r = await fetch(BASE + '/es/legal/aviso-legal'); const al = await r.text();
 ok(al.includes(process.env.LEGAL_NIF_ESPERADO || '[falta LEGAL_NIF]'), 'aviso legal lee LEGAL_* en tiempo de ejecución o muestra el marcador');
+r = await api('/api/auth/cuenta', { method: 'DELETE' }); ok(r.s === 200 && r.d.borrada, 'borrar la cuenta en un clic');
+r = await api('/api/auth/yo'); ok(r.d.anonimo === true, 'tras borrar, la sesión se cierra');
+r = await api('/api/auth/entrar', { method: 'POST', body: JSON.stringify({ email, clave: 'clave-segura-1' }) }); ok(r.s === 401, 'tras borrar, el correo ya no entra');
 r = await fetch(BASE + '/.well-known/assetlinks.json'); ok(r.status === 200 && Array.isArray(await r.json()), 'assetlinks.json responde');
 r = await fetch(BASE + '/sitemap.xml'); const sm = await r.text(); ok(sm.includes('/es/preguntas/5084') && sm.includes('/ar/examen'), 'sitemap con preguntas e idiomas');
 console.log(fallos ? `\n${fallos} prueba(s) fallida(s)` : '\nTodas las pruebas pasan');

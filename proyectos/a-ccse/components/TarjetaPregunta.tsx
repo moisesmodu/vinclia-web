@@ -40,7 +40,7 @@ export function TarjetaPregunta({
                 onClick={() => onElegir?.(i)}
                 aria-pressed={elegida === i}
                 className={`w-full rounded-xl border-2 p-3 text-start transition ${
-                  correcta ? 'border-ok bg-green-50' : mal ? 'border-mal bg-orange-50' : elegida === i ? 'border-marca bg-red-50' : 'border-[#e7e2da] bg-white hover:border-suave'
+                  correcta ? 'border-ok bg-green-50' : mal ? 'border-mal bg-orange-50' : elegida === i ? 'border-marca bg-red-50' : 'border-[#EADFCD] bg-white hover:border-suave'
                 }`}
               >
                 <span lang="es" dir="ltr" className="block text-left"><span className="me-2 font-bold uppercase text-suave">{LETRAS[i]})</span>{o}</span>
@@ -56,7 +56,7 @@ export function TarjetaPregunta({
         </button>
       )}
       {corregida && (
-        <div className="mt-4 rounded-xl bg-[#f6f3ee] p-4" aria-live="polite">
+        <div className="mt-4 rounded-xl bg-[#F6EEE2] p-4" aria-live="polite">
           <p className={`font-bold ${acierto ? 'text-ok' : 'text-mal'}`}>
             {acierto ? t('test.correcta') : elegida === null ? t('sim.sinRespuesta') : t('test.incorrecta')}{' '}
             {!acierto && <span lang="es">{LETRAS[p.respuesta]}) {p.opciones[p.respuesta]}</span>}

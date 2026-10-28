@@ -43,7 +43,7 @@ export default async function PaginaPregunta({ params }: { params: Promise<{ loc
       <h1 className="mt-2 text-2xl font-black">{p.texto}</h1>
       <ol className="mt-4 grid gap-2">
         {p.opciones.map((o, i) => (
-          <li key={i} className={`rounded-xl border-2 p-3 ${i === p.respuesta ? 'border-ok bg-green-50 font-semibold' : 'border-[#e7e2da] bg-white'}`}>
+          <li key={i} className={`rounded-xl border-2 p-3 ${i === p.respuesta ? 'border-ok bg-green-50 font-semibold' : 'border-[#EADFCD] bg-white'}`}>
             {LETRAS[i]}) {o} {i === p.respuesta && <span className="text-ok">✓ {t('preg.respuesta')}</span>}
           </li>
         ))}
