@@ -1344,6 +1344,11 @@
       {
         "fecha": "2026-10-28",
         "texto": "Adaptado a DESPLIEGUES.md: Stripe de Numi Mates con productos por script repetible y DESPLIEGUE.md para la sesión del Mac (el entorno en la nube no llega a Stripe, Vercel ni Neon)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "PR #5 con proyectos/g-cuentos/DESPLIEGUE.md listo para la sesión del Mac",
+        "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
       }
     ],
     "proximos": [
@@ -1354,10 +1359,9 @@
       "Abrir el 15/11 y empezar vídeos y afiliadas"
     ],
     "paraMoises": [
-      "Abrir la página de alta de Gelato cuando la sesión del Mac lo pida",
-      "Visto bueno para abrir el 15/11 (pasar Stripe a real y crear las tareas programadas)",
-      "Dominio opcional (lunilla.es)",
-      "Legales al gestor"
+      "Gelato: crear la cuenta y la clave de API (y la tarjeta al abrir)",
+      "Comprar el dominio (lunilla.es)",
+      "NIF para los textos legales"
     ],
     "mejoras": [
       "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",

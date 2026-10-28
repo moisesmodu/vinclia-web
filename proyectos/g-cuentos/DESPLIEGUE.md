@@ -10,7 +10,7 @@ en la rama `claude/g-cuentos` (PR #5), salvo que se diga otra cosa.
 | Concepto | Valor |
 |---|---|
 | Proyecto de Vercel | `lunilla` (equipo `$VERCEL_TEAM_ID`), Root Directory `proyectos/g-cuentos`, framework Next.js |
-| Proyecto de Neon | `cartera-g-cuentos`, región `aws-eu-west-2` |
+| Proyecto de Neon | `cartera-g-cuentos`, región `aws-eu-west-2` (nombre y región de `DESPLIEGUES.md` §3) |
 | Productos de Stripe (cuenta Numi Mates) | `Cartera · Cuentos · PDF 7,90 €` y `Cartera · Cuentos · Tapa dura 36,90 €` (lo crea el script) |
 | Webhook de Stripe | `https://<url>/api/stripe/webhook`, eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded` |
 | Imprenta | Gelato, producto fotolibro tapa dura 200 × 200 mm, 28 páginas (`src/config/paises/es-ES.json`) |
@@ -86,7 +86,14 @@ URL_BASE=$URL_BASE ADMIN_TOKEN=$ADMIN_TOKEN npm run prueba:e2e
 #    Comprobar en https://dashboard.gelato.com que aparece el pedido en borrador con cubierta e interior correctos
 #    (tipos de archivo, sangrado de 4 mm, lomo). Si Gelato pide otros tipos de archivo, cambiar GELATO_TIPOS_ARCHIVO.
 
-# 8. Anotar la URL en panel/data/proyectos.json (ficha g-cuentos: enlaces.demo, estado «lanzado» solo tras el paso 7)
+# 8. Comprobación tras desplegar
+curl -s -o /dev/null -w "%{http_code}\n" $URL_BASE/                      # 200
+curl -s -o /dev/null -w "%{http_code}\n" $URL_BASE/ca/muestras/la-martina-i-els-secrets-de-lleida   # 200
+curl -s -H "x-admin-token: $ADMIN_TOKEN" $URL_BASE/api/admin/resumen     # JSON con ventas e incidencias
+#    /admin?t=$ADMIN_TOKEN debe mostrar: stripe «prueba», imprenta «borrador», correo «Resend», almacén «Vercel Blob».
+
+# 9. Anotar la URL en panel/data/proyectos.json (ficha g-cuentos: enlaces.demo; estado «lanzado» solo tras el paso 7)
+#    y añadir al final de este archivo la línea «Ejecutado el <fecha>».
 ```
 
 ## Al lanzar (cambio a cobros reales)
@@ -95,3 +102,6 @@ URL_BASE=$URL_BASE ADMIN_TOKEN=$ADMIN_TOKEN npm run prueba:e2e
    `STRIPE_SECRET_KEY`, `STRIPE_PRICE_*` y `STRIPE_WEBHOOK_SECRET` por los del modo real.
 2. `GELATO_MODO=produccion` y añadir un medio de pago en Gelato (lo hace Moisés en su panel: es su tarjeta).
 3. Crear las tres tareas programadas de `TAREA-PROGRAMADA.md` con `URL_BASE` y `ADMIN_TOKEN` en su entorno.
+
+---
+Ejecutado el: (pendiente; lo rellena la sesión del Mac)
