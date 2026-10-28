@@ -125,3 +125,15 @@ curl -s -H "x-admin-token: $ADMIN_TOKEN" $URL_BASE/api/admin/resumen     # JSON 
   en Vercel → lunilla → Settings → Environment Variables; y el pago de prueba con la tarjeta 4242.
 
 Ejecutado el 2026-10-28
+
+## Pendiente tras el despliegue (sesión de construcción, 28-10-2026, 02:45)
+
+- **Redesplegar** desde la rama `claude/g-cuentos` (commit `29ba301` o posterior): lleva la identidad de marca (colores,
+  Baloo 2 + Nunito, logotipo, sello, pantalla de precio, Lunilla con bufanda en portadas y frase final para decir juntos).
+  Producción todavía sirve la versión anterior (título «Lunilla · Cuentos personalizados con nombre»).
+  `vercel deploy --prod` desde `proyectos/g-cuentos`. Comprobar que el `<title>` dice «Un cuento donde el protagonista eres tú».
+- Si no está ya: conectar el repositorio en Vercel (Settings → Git) con *Production Branch* = la rama base, para que
+  los siguientes cambios se publiquen solos al fusionar.
+- `LEGAL_*`, `CORREO_SOPORTE` y `RESEND_API_KEY` ya existen como secretos del entorno: copiarlos a Vercel (no es tarea de Moisés).
+- Pago de prueba con la tarjeta 4242: `URL_BASE=https://lunilla.vercel.app ADMIN_TOKEN=… npm run prueba:e2e` (usa Playwright
+  en Stripe Checkout; si los selectores de Stripe han cambiado, hacerlo a mano una vez y anotarlo aquí).
