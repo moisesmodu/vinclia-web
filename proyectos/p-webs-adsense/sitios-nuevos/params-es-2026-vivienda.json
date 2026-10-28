@@ -1,0 +1,227 @@
+{
+  "pais": "es",
+  "anio": 2026,
+  "sitio": "vivienda",
+  "estado": "vigente",
+  "actualizado": "2026-10-28",
+  "convenio_verificado": "true = cifra que aparece igual en la fuente oficial o en al menos dos fuentes que citan la norma oficial; false = cifra de una sola fuente secundaria, discrepante, o tomada del texto de la norma sin poder abrir boe.es / bde.es / ine.es desde la sesión. null en 'valor' = dato pendiente: la calculadora debe pedirlo al usuario o no publicarse.",
+  "notas_generales": [
+    "Red de la sesión restringida: WebFetch no resuelve boe.es, bde.es, ine.es, guiafiscal.es ni hipotecas.me. Todo se ha contrastado con resultados de búsqueda que citan esas páginas. Revisar contra la fuente oficial antes de publicar (tarea semanal).",
+    "Contexto normativo a 28/10/2026: Cortes disueltas (RD 806/2026), elecciones el 29/11/2026. El RDL 26/2026 (vivienda) no se convalidó el 2/10/2026 y quedó derogado. El RDL 29/2026 (BOE 7/10/2026, en vigor el 8/10/2026) repite su contenido tributario y está pendiente de convalidación por la Diputación Permanente. Todo lo que dependa del RDL 29/2026 lleva 'provisional': true.",
+    "El BCE subió tipos en junio y en septiembre de 2026 (facilidad de depósito 2,50 % desde el 10/9/2026, según prensa; sin verificar en ecb.europa.eu). Reunión siguiente: 28-29/10/2026. El Euríbor está en máximos del año: no usar textos que hablen de 'Euríbor a la baja'.",
+    "La fábrica usa 2027 como año por defecto. Para 2027 copiar este archivo como params/es/2027/vivienda.json con 'estado': 'provisional' y aplicar los cambios con fecha de efecto (coeficientes de plusvalía del RDL 29/2026 desde el 1/12/2026 si se convalida)."
+  ],
+  "euribor_12m": {
+    "descripcion": "Media mensual del Euríbor a 12 meses (índice de referencia oficial, Orden EHA/2899/2011 y Circular BdE 5/2012). Lo publica EMMI y lo confirma el Banco de España en el BOE a primeros del mes siguiente.",
+    "serie": [
+      { "mes": "2025-09", "valor": 2.172, "verificado": false, "nota": "Solo Gibobs (blog)." },
+      { "mes": "2026-07", "valor": 2.855, "verificado": true, "nota": "Citado como mes anterior en la nota del BdE de 1/9/2026." },
+      { "mes": "2026-08", "valor": 2.954, "verificado": true, "nota": "Nota informativa BdE presbe2026-80 y BOE-A-2026-18507 (2/9/2026), vistos en resultados de búsqueda. Bankinter publica 2,952." },
+      { "mes": "2026-09", "valor": 3.247, "verificado": false, "nota": "Mayoría de fuentes (hipotecas.me, Gibobs, prensa) dicen 3,247 % publicado en el BOE del 1 o 2/10/2026; Bankinter da 3,238 %. Comprobar en el BOE de octubre." },
+      { "mes": "2026-10", "valor": null, "verificado": false, "nota": "Media provisional a 27/10/2026 ≈ 3,227 % (euribordiario.es). No publicar hasta el BOE de noviembre." }
+    ],
+    "fuente": {
+      "nombre": "Banco de España · Tipos de interés de referencia oficiales del mercado hipotecario (publicación mensual en el BOE)",
+      "url": "https://www.bde.es/webbe/es/estadisticas/temas/tipos-interes.html"
+    },
+    "verificado": false,
+    "actualizacion": "Mensual, script el día 2-3 de cada mes. Si falta el dato, la página dice 'último dato oficial: <mes>'."
+  },
+  "irph_entidades": {
+    "valor": null,
+    "verificado": false,
+    "nota": "No se encontró el dato de septiembre de 2026. Solo para la calculadora de revisión de hipotecas antiguas referenciadas a IRPH.",
+    "fuente": { "nombre": "Banco de España · tipos de referencia oficiales", "url": "https://www.bde.es/webbe/es/estadisticas/temas/tipos-interes.html" }
+  },
+  "hipotecas_ine": {
+    "descripcion": "Estadística de Hipotecas (INE), dato provisional de julio de 2026 publicado el 28/9/2026. Sirve de valor por defecto realista en el simulador y para la ficha citable.",
+    "periodo": "2026-07",
+    "numero_hipotecas_vivienda": 43372,
+    "variacion_anual_numero_pct": -3.5,
+    "importe_medio_eur": 180785,
+    "variacion_anual_importe_pct": 10.9,
+    "tipo_interes_medio_pct": 3.01,
+    "plazo_medio_anios": 26,
+    "porcentaje_tipo_fijo": 62.3,
+    "tipo_inicial_medio_fijo_pct": 3.03,
+    "porcentaje_tipo_variable": 37.7,
+    "tipo_inicial_medio_variable_pct": 2.97,
+    "verificado": true,
+    "fuente": { "nombre": "INE · Hipotecas (H), julio 2026, nota de prensa 28/9/2026", "url": "https://www.ine.es/dyngs/Prensa/H0726.htm" }
+  },
+  "itp_vivienda_usada": {
+    "descripcion": "Impuesto sobre Transmisiones Patrimoniales Onerosas, vivienda de segunda mano. Tipo general y escalas autonómicas (tributo cedido, Ley 22/2009 art. 49). Los tipos reducidos dependen de requisitos (edad, renta, valor, vivienda habitual) que cambian casi cada año: la calculadora los pregunta y muestra el requisito.",
+    "base": "Valor declarado o, desde la Ley 11/2021, el valor de referencia de Catastro si es mayor (art. 10 TRLITPAJD).",
+    "fuente_general": { "nombre": "Leyes de tributos cedidos de cada comunidad; resumen en Agencia Tributaria autonómica", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1993-25359" },
+    "comunidades": {
+      "AN": { "nombre": "Andalucía", "tipo_general": 7, "reducidos": [ { "tipo": 3.5, "requisito": "Vivienda habitual, menores de 35 años, familia numerosa, discapacidad u otros (con límite de valor)", "verificado": false } ], "verificado": true, "nota": "7 % general coincide en todas las fuentes; tipos reducidos 6 % y 3,5 % según una fuente.", "fuente": { "nombre": "Junta de Andalucía · Agencia Tributaria de Andalucía", "url": "https://www.juntadeandalucia.es/agenciatributariadeandalucia/" } },
+      "AR": { "nombre": "Aragón", "escala": "8-10 % por tramos (una fuente da 7 %)", "tipo_general": null, "verificado": false, "fuente": { "nombre": "Gobierno de Aragón · Tributos", "url": "https://www.aragon.es/-/impuesto-sobre-transmisiones-patrimoniales-y-actos-juridicos-documentados" } },
+      "AS": { "nombre": "Principado de Asturias", "escala": "8-10 % por tramos (una fuente da 7 %)", "tipo_general": null, "verificado": false, "fuente": { "nombre": "Ente Tributario del Principado de Asturias", "url": "https://www.tributasenasturias.es/" } },
+      "IB": { "nombre": "Illes Balears", "escala": "8 % a 13 % por tramos de valor", "tipo_general": null, "reducidos": [ { "tipo": 4, "requisito": "Vivienda habitual con límites (según fuentes)", "verificado": false } ], "verificado": false, "fuente": { "nombre": "Agència Tributària de les Illes Balears", "url": "https://www.atib.es/" } },
+      "CN": { "nombre": "Canarias", "tipo_general": 6.5, "reducidos": [ { "tipo": 5, "requisito": "Vivienda habitual (según fuentes)", "verificado": false } ], "verificado": false, "nota": "La Ley 9/2025 de presupuestos canarios sube la edad a 40 años y el valor máximo a 200.000 € en los beneficios de vivienda habitual (una fuente).", "fuente": { "nombre": "Agencia Tributaria Canaria", "url": "https://www.gobiernodecanarias.org/tributos/" } },
+      "CB": { "nombre": "Cantabria", "tipo_general": 9, "nota": "Varias fuentes 9 % (10 % en valores altos según una).", "verificado": false, "fuente": { "nombre": "Agencia Cántabra de Administración Tributaria", "url": "https://www.agenciatributariacantabria.es/" } },
+      "CM": { "nombre": "Castilla-La Mancha", "tipo_general": 9, "verificado": false, "fuente": { "nombre": "Junta de Comunidades de Castilla-La Mancha · Tributos", "url": "https://tributos.jccm.es/" } },
+      "CL": { "nombre": "Castilla y León", "tipo_general": 8, "nota": "8 % en las tablas consultadas; existe tramo superior en valores altos (no confirmado).", "verificado": false, "fuente": { "nombre": "Junta de Castilla y León · Tributos", "url": "https://tributos.jcyl.es/" } },
+      "CT": { "nombre": "Cataluña", "escala": [ { "hasta": 600000, "tipo": 10 }, { "hasta": 900000, "tipo": 11 }, { "hasta": 1500000, "tipo": 12 }, { "hasta": null, "tipo": 13 } ], "escala_progresiva_por_tramos": true, "reducidos": [ { "tipo": 5, "requisito": "Vivienda habitual de menores de 35 años (y víctimas de violencia machista) con límites de base imponible", "verificado": false }, { "tipo": 20, "requisito": "Grandes tenedores y compra de edificios enteros de viviendas, con excepciones", "verificado": false } ], "verificado": true, "nota": "Decreto ley 5/2025 (DOGC), ITP en vigor desde el 27/6/2025. La escala coincide en Rankia, RSM, Uría e Idealista. No se ha confirmado la convalidación en el Parlament.", "fuente": { "nombre": "Agència Tributària de Catalunya · ITP-AJD", "url": "https://atc.gencat.cat/es/tributs/itp-ajd/" } },
+      "VC": { "nombre": "Comunitat Valenciana", "tipo_general": 9, "tipo_desde": "2026-06-01", "tipo_anterior": 10, "tramo_alto": { "desde": 1000000, "tipo": 11 }, "reducidos": [ { "tipo": 6, "requisito": "Primera vivienda habitual de menores de 35 años y VPO hasta 180.000 € (una fuente; otra habla de 8/6/4/3 %)", "verificado": false } ], "verificado": true, "nota": "Rebaja del 10 % al 9 % con efectos desde el 1/6/2026 (taxdown, Valencia News sept. 2026 citando a la Generalitat). Manda la fecha de la escritura.", "fuente": { "nombre": "Generalitat Valenciana · ATV, Ley 13/1997 arts. 13 y 14", "url": "https://atv.gva.es/" } },
+      "EX": { "nombre": "Extremadura", "escala": "8 % a 11 % por tramos", "tipo_general": null, "reducidos": [ { "tipo": 4, "requisito": "Jóvenes, familia numerosa y VPO con condiciones", "verificado": false } ], "verificado": false, "fuente": { "nombre": "Junta de Extremadura · Tributos", "url": "https://www.juntaex.es/" } },
+      "GA": { "nombre": "Galicia", "tipo_general": 8, "nota": "Fuentes discrepan (8 % único / 9-10 %).", "verificado": false, "fuente": { "nombre": "Axencia Tributaria de Galicia", "url": "https://www.atriga.gal/" } },
+      "MD": { "nombre": "Comunidad de Madrid", "tipo_general": 6, "reducidos": [ { "tipo": 4, "requisito": "VPO / vivienda protegida (según fuentes)", "verificado": false } ], "verificado": true, "nota": "6 % en todas las fuentes. Existen bonificaciones por edad para vivienda habitual (no detalladas aquí).", "fuente": { "nombre": "Comunidad de Madrid · Tributos", "url": "https://www.comunidad.madrid/servicios/atencion-contribuyente" } },
+      "MC": { "nombre": "Región de Murcia", "tipo_general": 7.75, "nota": "Fuentes entre 7 % y 8 %; 7,75 % en una tabla 2026.", "verificado": false, "fuente": { "nombre": "Agencia Tributaria de la Región de Murcia", "url": "https://agenciatributaria.carm.es/" } },
+      "RI": { "nombre": "La Rioja", "tipo_general": 7, "verificado": false, "fuente": { "nombre": "Gobierno de La Rioja · Tributos", "url": "https://www.larioja.org/hacienda/es" } },
+      "NA": { "nombre": "Navarra (foral)", "tipo_general": 6, "verificado": false, "foral": true, "fuente": { "nombre": "Hacienda Foral de Navarra", "url": "https://hacienda.navarra.es/" } },
+      "PV": { "nombre": "País Vasco (foral, tres diputaciones)", "tipo_general": 4, "verificado": false, "foral": true, "nota": "4 % citado en todas las tablas; confirmar por territorio histórico.", "fuente": { "nombre": "Diputaciones forales de Álava, Bizkaia y Gipuzkoa", "url": "https://www.euskadi.eus/" } },
+      "CE": { "nombre": "Ceuta", "tipo_general": 6, "verificado": false, "nota": "Una fuente de 2025. Bonificación del 50 % de la cuota en Ceuta y Melilla (sin confirmar).", "fuente": { "nombre": "AEAT (gestión estatal)", "url": "https://sede.agenciatributaria.gob.es/" } },
+      "ML": { "nombre": "Melilla", "tipo_general": 6, "verificado": false, "fuente": { "nombre": "AEAT (gestión estatal)", "url": "https://sede.agenciatributaria.gob.es/" } }
+    }
+  },
+  "ajd_documentos_notariales": {
+    "descripcion": "Cuota gradual de AJD en la primera transmisión de vivienda (obra nueva, junto con el IVA). En la escritura de hipoteca el sujeto pasivo es el prestamista desde el RDL 17/2018 (art. 29 TRLITPAJD): no lo paga el cliente.",
+    "comunidades": {
+      "AN": { "tipo_general": 1.2, "reducidos": [ { "tipo": 0.3, "requisito": "Menores de 35 años, vivienda hasta 150.000 € (una fuente)", "verificado": false } ], "verificado": true },
+      "AR": { "tipo_general": 1.5, "verificado": false },
+      "IB": { "tipo_general": 1.5, "tramo_alto": { "desde": 1000000, "tipo": 2 }, "verificado": false },
+      "CT": { "tipo_general": 1.5, "verificado": true },
+      "CL": { "tipo_general": 1.5, "verificado": false },
+      "GA": { "tipo_general": 1.5, "nota": "Una tabla da 0,80-1,50 % según valor y uso.", "verificado": false },
+      "MD": { "tipo_general": 0.75, "verificado": true },
+      "NA": { "tipo_general": 0.5, "verificado": false, "foral": true },
+      "VC": { "tipo_general": 1.4, "tipo_desde": "2026-06-01", "tipo_anterior": 1.5, "reducidos": [ { "tipo": 0.1, "requisito": "Escritura de adquisición de vivienda habitual (según una fuente)", "verificado": false } ], "verificado": true },
+      "resto": { "tipo_general": null, "nota": "Según guiafiscal (sept. 2026) el rango va del 0,5 % (Navarra) al 1,5 % de nueve comunidades. Rellenar AS, CN, CB, CM, EX, MC, RI, PV, CE, ML con su boletín antes de publicar.", "verificado": false }
+    },
+    "fuente": { "nombre": "Leyes autonómicas de tributos cedidos; resumen guiafiscal.es 'AJD por comunidad autónoma 2026'", "url": "https://guiafiscal.es/patrimonio/ajd-por-ccaa-2026/" },
+    "verificado": false
+  },
+  "iva_vivienda": {
+    "general_vivienda_nueva": { "tipo": 10, "norma": "Ley 37/1992 del IVA, art. 91.Uno.1.7º (incluye hasta dos plazas de garaje y anexos transmitidos conjuntamente)", "verificado": true },
+    "superreducido": { "tipo": 4, "norma": "Ley 37/1992, art. 91.Dos.1.6º: viviendas de protección oficial de régimen especial o promoción pública", "verificado": false },
+    "canarias_igic": { "tipo": null, "nota": "Las fuentes dan 5 % (tipo reducido de 'determinadas entregas de vivienda') o 7 % (general). VPO, tipo cero según una guía. Confirmar en la Agencia Tributaria Canaria.", "verificado": false },
+    "ceuta_melilla_ipsi": { "tipo": null, "verificado": false },
+    "rdl_29_2026_obras": { "nota": "Extiende el IVA del 10 % a obras de renovación y reparación de viviendas en alquiler habitual desde el 1/12/2026, con requisitos. Pendiente de convalidación.", "provisional": true, "verificado": false },
+    "fuente": { "nombre": "BOE · Ley 37/1992 del IVA (texto consolidado)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740" }
+  },
+  "arancel_notarial": {
+    "descripcion": "RD 1426/1989, anexo I, número 2 (documentos de cuantía). Escala acumulativa sobre el exceso de cada tramo. Base: valor comprobado fiscalmente o, en su defecto, el declarado. No incluye copias, folios ni IVA (21 %).",
+    "escala": [
+      { "hasta": 6010.12, "fijo": 90.151816 },
+      { "hasta": 30050.61, "por_mil": 4.5 },
+      { "hasta": 60101.21, "por_mil": 1.5 },
+      { "hasta": 150253.03, "por_mil": 1.0 },
+      { "hasta": 601012.10, "por_mil": 0.5 },
+      { "hasta": 6010121.04, "por_mil": 0.3 },
+      { "hasta": null, "por_mil": null, "nota": "Libre acuerdo con las partes" }
+    ],
+    "rebaja_general_pct": 5,
+    "reduccion_prestamos_hipotecarios_pct": 25,
+    "nota": "Rebajas adicionales para vivienda habitual y VPO existen en el anexo; no se han verificado y la calculadora no las aplica (lo dice). Coste de copias y folios: dato no regulado de forma sencilla; se pide como 'otros gastos de notaría' con valor editable.",
+    "verificado": true,
+    "fuente": { "nombre": "BOE · RD 1426/1989, Arancel de los Notarios (texto consolidado)", "url": "https://www.boe.es/eli/es/rd/1989/11/17/1426/con" }
+  },
+  "arancel_registral": {
+    "descripcion": "RD 1427/1989, anexo I, número 2 (inscripción). Escala acumulativa sobre el exceso. Más IVA 21 %.",
+    "escala": [
+      { "hasta": 6010.12, "fijo": 24.040484, "verificado": true },
+      { "hasta": 30050.61, "por_mil": 1.75, "verificado": true },
+      { "hasta": 60101.21, "por_mil": 1.25, "verificado": true },
+      { "hasta": 150253.03, "por_mil": 0.75, "verificado": true },
+      { "hasta": 601012.10, "por_mil": 0.5, "verificado": false },
+      { "hasta": null, "por_mil": 0.4, "verificado": false }
+    ],
+    "maximo_eur": null,
+    "nota": "Los dos últimos tramos y el máximo por inscripción se toman del texto de la norma tal como se recuerda; no se han podido cotejar. Subrogación: número 2 con reducción del 90 % sobre el capital pendiente (verificado en resultados).",
+    "verificado": false,
+    "fuente": { "nombre": "BOE · RD 1427/1989, Arancel de los Registradores", "url": "https://www.boe.es/eli/es/rd/1989/11/17/1427" }
+  },
+  "gastos_no_regulados": {
+    "gestoria_compraventa": { "valor": null, "nota": "Precio libre. La calculadora lo pide con un valor de ejemplo editable, rotulado como ejemplo." },
+    "tasacion": { "valor": null, "nota": "Precio libre; lo paga el prestatario (Ley 5/2019 art. 14.1.e). Pedir al usuario." },
+    "verificado": false
+  },
+  "reparto_gastos_hipoteca": {
+    "prestamista_paga": [ "Notaría de la escritura de préstamo (salvo copias que pida el cliente)", "Registro de la hipoteca", "Gestoría", "AJD de la hipoteca (RDL 17/2018)" ],
+    "prestatario_paga": [ "Tasación", "Copias que solicite" ],
+    "verificado": false,
+    "nota": "Texto de la Ley 5/2019 art. 14.1.e; no se pudo abrir boe.es.",
+    "fuente": { "nombre": "BOE · Ley 5/2019 reguladora de los contratos de crédito inmobiliario", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814" }
+  },
+  "comision_amortizacion_anticipada": {
+    "descripcion": "Ley 5/2019, art. 23. Topes; nunca puede superar la pérdida financiera real del banco. Solo para préstamos firmados desde el 16/6/2019.",
+    "variable": { "opcion_a": { "tope_pct": 0.25, "durante_anios": 3 }, "opcion_b": { "tope_pct": 0.15, "durante_anios": 5 }, "despues": 0, "nota": "El contrato elige una de las dos opciones." },
+    "fijo": { "primeros_10_anios_pct": 2, "resto_pct": 1.5 },
+    "novacion_variable_a_fijo": { "tope_pct": null, "nota": "Fuentes discrepan (0,05 % tras el RDL 19/2022 o 0,15 % los 3 primeros años). No usar hasta verificar." },
+    "verificado": true,
+    "fuente": { "nombre": "BOE · Ley 5/2019, art. 23", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3814" }
+  },
+  "plusvalia_municipal": {
+    "descripcion": "IIVTNU. Método objetivo: valor catastral del suelo × coeficiente por años de tenencia (máximos del art. 107.4 TRLRHL; el ayuntamiento puede fijar menores) × tipo municipal (máximo 30 %, art. 108.4). Método real: (precio de venta − precio de compra) × (valor catastral del suelo / valor catastral total). El contribuyente elige el menor. No hay impuesto si no hay ganancia (RDL 26/2021).",
+    "tipo_maximo_pct": 30,
+    "coeficientes_maximos_vigentes": {
+      "norma": "Columna 2024 del RDL 8/2023. Siguen vigentes porque el RDL 9/2024 (2025) no se convalidó y el RDL 16/2025 (2026) fue derogado por Resolución del Congreso de 27/1/2026 (BOE 28/1/2026).",
+      "por_anios": { "0": 0.15, "1": 0.15, "2": 0.14, "3": 0.15, "4": 0.17, "5": 0.18, "6": 0.19, "7": 0.20, "8": 0.19, "9": 0.15, "10": 0.12, "11": 0.10, "12": 0.09, "13": 0.09, "14": 0.09, "15": 0.09, "16": 0.10, "17": 0.13, "18": 0.17, "19": 0.23, "20_o_mas": 0.40 },
+      "verificado": false,
+      "nota": "Confirmados en fuentes oficiales municipales (Santa Cruz de Tenerife) los valores de 1, 2, 18, 19 y 20+ años; el resto coincide con la tabla que se buscó y que la fuente dijo coincidir, pero no se vio año a año.",
+      "fuente": { "nombre": "Ayto. de Santa Cruz de Tenerife · T239 cálculo de la cuota de plusvalía 2024 (coeficientes RDL 8/2023)", "url": "https://sede.santacruzdetenerife.es/sede/fileadmin/user_upload/Sede/tramites/Tributos/T239_CALCULO_DE_LA_CUOTA_TRIBUTARIA_DE_LA_PLUSVALIA_2024.pdf" }
+    },
+    "coeficientes_rdl_29_2026": {
+      "efectos_desde": "2026-12-01",
+      "provisional": true,
+      "estado": "Pendiente de convalidación por la Diputación Permanente (a 24/10/2026 sin constancia). Si no se convalida, no se aplica.",
+      "conocidos": { "9": 0.25, "10": 0.22, "14": 0.11, "15": 0.11, "16": 0.11, "17": 0.11, "20_o_mas": 0.30 },
+      "resto": null,
+      "verificado": false,
+      "fuente": { "nombre": "RDL 29/2026, art. 10 (BOE 7/10/2026); resúmenes Economist & Jurist y guiafiscal", "url": "https://www.economistjurist.es/articulos-juridicos-destacados/medidas-tributarias-del-real-decreto-ley-29-2026-sobre-vivienda/" }
+    },
+    "tipos_municipales": { "valor": null, "nota": "Uno por ordenanza: va en sitios/vivienda/datos/plusvalia-tipos-2026.csv con municipio, código INE, tipo, coeficientes propios y URL del BOP." }
+  },
+  "ibi": {
+    "descripcion": "Cuota = valor catastral (o base liquidable con reducción) × tipo municipal. Art. 72 TRLRHL fija para bienes urbanos un tipo entre 0,4 % y 1,10 %, con incrementos posibles.",
+    "tipo_urbano_minimo_pct": 0.4,
+    "tipo_urbano_maximo_general_pct": 1.1,
+    "verificado": false,
+    "nota": "Horquilla del texto del art. 72; no cotejada. Tipos por municipio: Catastro publica la tabla anual de tipos de gravamen.",
+    "fuente": { "nombre": "Dirección General del Catastro · Tipos de gravamen IBI por municipio", "url": "https://www.catastro.hacienda.gob.es/esp/tipos_gravamen.asp" }
+  },
+  "irav_alquiler": {
+    "descripcion": "Índice de referencia para la actualización anual de los contratos de arrendamiento de vivienda (Ley 12/2023, DA 11.ª), INE. Aplica a contratos firmados desde el 26/5/2023 cuya cláusula remita a un índice.",
+    "serie": [
+      { "mes": "2026-05", "valor": 2.48, "verificado": false },
+      { "mes": "2026-06", "valor": 2.44, "verificado": false },
+      { "mes": "2026-07", "valor": 2.49, "verificado": false },
+      { "mes": "2026-08", "valor": 2.47, "verificado": false },
+      { "mes": "2026-09", "valor": 2.54, "verificado": false, "nota": "Máximo desde la creación del índice (Raisin, 19/10/2026)." }
+    ],
+    "fuente": { "nombre": "INE · Índice de Referencia de Arrendamientos de Vivienda (IRAV)", "url": "https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177033" },
+    "verificado": false,
+    "nota": "Cifras de prensa especializada (Raisin, Housfy, Demócrata). Cotejar con ine.es."
+  },
+  "deduccion_vivienda_habitual_transitoria": {
+    "porcentaje": 15,
+    "base_maxima_eur": 9040,
+    "deduccion_maxima_eur": 1356,
+    "requisitos": "Vivienda adquirida (o pagadas cantidades para su construcción) antes del 1/1/2013 y deducción aplicada en algún ejercicio anterior a 2013. 7,5 % tramo estatal + 7,5 % autonómico.",
+    "verificado": true,
+    "fuente": { "nombre": "LIRPF disposición transitoria 18.ª; AEAT Manual Renta", "url": "https://sede.agenciatributaria.gob.es/Sede/irpf.html" }
+  },
+  "ganancia_patrimonial_venta": {
+    "escala_ahorro": "Usar irpf.escala_ahorro_total (o estatal + autonomica) de fabrica/params/es/2026/fiscal.json (no duplicar).",
+    "exencion_reinversion_vivienda_habitual": "Art. 38.1 LIRPF (reinversión en 2 años). Mayores de 65: exención art. 33.4.b.",
+    "rdl_29_2026_exencion_venta": { "desde": "2026-10-08", "hasta": "2027-12-31", "provisional": true, "verificado": false, "nota": "Exención para ciertas ventas de vivienda (DIG); requisitos exactos no confirmados. No calcular hasta convalidación y lectura del BOE." },
+    "verificado": false
+  },
+  "deduccion_alquiler_inquilinos_rdl_29_2026": {
+    "porcentaje": 10,
+    "base_maxima_eur": 11630,
+    "base_imponible_maxima_eur": 33007.20,
+    "desde": "2026-10-08",
+    "provisional": true,
+    "verificado": false,
+    "nota": "Solo guiafiscal. Ya estuvo en el RDL 26/2026, derogado. Mostrar solo como 'pendiente de convalidación'.",
+    "fuente": { "nombre": "RDL 29/2026 (BOE 7/10/2026); boletín AEAT", "url": "https://sede.agenciatributaria.gob.es/static_files/Sede/Actualidad/Novedades/2026/BOLINFORM_RDL%2029_2026.pdf" }
+  },
+  "criterios_editoriales_no_normativos": {
+    "esfuerzo_maximo_cuota_sobre_ingresos_netos_pct": 35,
+    "financiacion_habitual_sobre_tasacion_pct": 80,
+    "verificado": false,
+    "nota": "No son normas: es la práctica bancaria habitual. La calculadora debe rotularlos como 'criterio de la mayoría de bancos', dejarlos editables y no citar al Banco de España como si los fijara."
+  }
+}

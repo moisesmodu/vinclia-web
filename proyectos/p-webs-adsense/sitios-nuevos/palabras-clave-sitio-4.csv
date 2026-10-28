@@ -1,0 +1,201 @@
+palabra_clave,idioma,intencion,ruta_destino,tipo_destino,prioridad,grupo,enlaza_desde
+simulador hipoteca 2027,es,calcular,/simulador-hipoteca/,calc,1,hipoteca,/
+calcular cuota hipoteca,es,calcular,/simulador-hipoteca/,calc,1,hipoteca,/
+simulador hipoteca con euríbor actual,es,calcular,/simulador-hipoteca/,calc,1,hipoteca,/datos/euribor-historico/
+calculadora hipoteca tipo fijo,es,calcular,/simulador-hipoteca/,calc,2,hipoteca,/hipoteca-fija-o-variable/
+cuánto pagaré de intereses en mi hipoteca,es,calcular,/tabla-amortizacion-hipoteca/,calc,1,hipoteca,/simulador-hipoteca/
+cuadro de amortización hipoteca excel gratis,es,tabla,/tabla-amortizacion-hipoteca/,calc,2,hipoteca,/simulador-hipoteca/
+tabla amortización sistema francés,es,tabla,/tabla-amortizacion-hipoteca/,calc,2,hipoteca,/simulador-hipoteca/
+cuota hipoteca 100000 euros a 25 años,es,calcular,/hipoteca-100000-euros-25-anos/,prog,2,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 120000 euros a 30 años,es,calcular,/hipoteca-120000-euros-30-anos/,prog,2,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 150000 euros a 20 años,es,calcular,/hipoteca-150000-euros-20-anos/,prog,2,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 150000 euros a 25 años,es,calcular,/hipoteca-150000-euros-25-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 150000 euros a 30 años,es,calcular,/hipoteca-150000-euros-30-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 180000 euros a 30 años,es,calcular,/hipoteca-180000-euros-30-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 200000 euros a 25 años,es,calcular,/hipoteca-200000-euros-25-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 200000 euros a 30 años,es,calcular,/hipoteca-200000-euros-30-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 250000 euros a 25 años,es,calcular,/hipoteca-250000-euros-25-anos/,prog,2,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 250000 euros a 30 años,es,calcular,/hipoteca-250000-euros-30-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 300000 euros a 30 años,es,calcular,/hipoteca-300000-euros-30-anos/,prog,1,hipoteca,/datos/cuota-hipoteca-por-importe/
+cuota hipoteca 400000 euros a 30 años,es,calcular,/hipoteca-400000-euros-30-anos/,prog,2,hipoteca,/datos/cuota-hipoteca-por-importe/
+tabla cuota hipoteca por importe y plazo,es,tabla,/datos/cuota-hipoteca-por-importe/,ficha,2,hipoteca,/simulador-hipoteca/
+revisión hipoteca euríbor calcular,es,calcular,/calculadora-revision-hipoteca-euribor/,calc,1,euribor,/
+cuánto sube mi hipoteca con el euríbor,es,calcular,/calculadora-revision-hipoteca-euribor/,calc,1,euribor,/datos/euribor-historico/
+revisión hipoteca euríbor octubre 2026,es,calcular,/revision-hipoteca-euribor-octubre-2026/,prog,1,euribor,/calculadora-revision-hipoteca-euribor/
+revisión hipoteca euríbor noviembre 2026,es,calcular,/revision-hipoteca-euribor-noviembre-2026/,prog,2,euribor,/calculadora-revision-hipoteca-euribor/
+revisión hipoteca euríbor diciembre 2026,es,calcular,/revision-hipoteca-euribor-diciembre-2026/,prog,2,euribor,/calculadora-revision-hipoteca-euribor/
+revisión hipoteca euríbor enero 2027,es,calcular,/revision-hipoteca-euribor-enero-2027/,prog,1,euribor,/calculadora-revision-hipoteca-euribor/
+euríbor septiembre 2026 dato oficial,es,comprobar,/datos/euribor-historico/,ficha,1,euribor,/calculadora-revision-hipoteca-euribor/
+euríbor histórico mensual tabla,es,tabla,/datos/euribor-historico/,ficha,1,euribor,/calculadora-revision-hipoteca-euribor/
+euríbor medio 2026 por meses,es,tabla,/datos/euribor-historico/,ficha,2,euribor,/calculadora-revision-hipoteca-euribor/
+diferencial más euríbor cuánto pago,es,calcular,/calculadora-revision-hipoteca-euribor/,calc,2,euribor,/simulador-hipoteca/
+hipoteca fija o variable 2027 qué conviene,es,comparar,/hipoteca-fija-o-variable/,calc,1,comparar,/
+comparar hipoteca fija y variable con el euríbor subiendo,es,comparar,/hipoteca-fija-o-variable/,calc,2,comparar,/calculadora-revision-hipoteca-euribor/
+pasar hipoteca variable a fija compensa,es,comparar,/calculadora-cambiar-hipoteca-de-banco/,calc,2,comparar,/hipoteca-fija-o-variable/
+cuánta hipoteca puedo pedir con mi sueldo,es,calcular,/cuanta-hipoteca-puedo-pedir/,calc,1,capacidad,/
+qué sueldo necesito para una hipoteca de 200000 euros,es,calcular,/sueldo-para-hipoteca-200000-euros/,prog,1,capacidad,/cuanta-hipoteca-puedo-pedir/
+sueldo para hipoteca de 150000 euros,es,calcular,/sueldo-para-hipoteca-150000-euros/,prog,1,capacidad,/cuanta-hipoteca-puedo-pedir/
+sueldo para hipoteca de 250000 euros,es,calcular,/sueldo-para-hipoteca-250000-euros/,prog,2,capacidad,/cuanta-hipoteca-puedo-pedir/
+sueldo para hipoteca de 300000 euros,es,calcular,/sueldo-para-hipoteca-300000-euros/,prog,2,capacidad,/cuanta-hipoteca-puedo-pedir/
+cuánto tengo que ganar para un piso de 250000,es,calcular,/cuanta-hipoteca-puedo-pedir/,calc,2,capacidad,/sueldo-para-hipoteca-250000-euros/
+hipoteca con 2000 euros de sueldo cuánto me dan,es,calcular,/cuanta-hipoteca-puedo-pedir/,calc,1,capacidad,/datos/esfuerzo-hipotecario-por-sueldo/
+hipoteca con 1500 euros netos,es,calcular,/cuanta-hipoteca-puedo-pedir/,calc,2,capacidad,/datos/esfuerzo-hipotecario-por-sueldo/
+tabla hipoteca máxima según sueldo neto,es,tabla,/datos/esfuerzo-hipotecario-por-sueldo/,ficha,2,capacidad,/cuanta-hipoteca-puedo-pedir/
+cuánto ahorro necesito para comprar un piso,es,calcular,/calculadora-ahorro-entrada-piso/,calc,1,capacidad,/
+entrada piso 20 por ciento más gastos,es,calcular,/calculadora-ahorro-entrada-piso/,calc,1,capacidad,/calculadora-gastos-compraventa/
+ahorros para comprar piso de 200000 euros,es,calcular,/calculadora-ahorro-entrada-piso/,calc,2,capacidad,/cuanta-hipoteca-puedo-pedir/
+hipoteca 100% para jóvenes aval ico cuánto ahorro necesito,es,calcular,/calculadora-ahorro-entrada-piso/,calc,2,capacidad,/cuanta-hipoteca-puedo-pedir/
+gastos de compraventa de vivienda calcular,es,calcular,/calculadora-gastos-compraventa/,calc,1,gastos,/
+cuánto cuesta comprar un piso en impuestos y gastos,es,calcular,/calculadora-gastos-compraventa/,calc,1,gastos,/
+gastos compra piso segunda mano 2027,es,calcular,/calculadora-gastos-compraventa/,calc,1,gastos,/calculadora-itp-vivienda/
+gastos de compra de piso por comunidades tabla,es,tabla,/datos/gastos-compraventa-por-comunidad/,ficha,1,gastos,/calculadora-gastos-compraventa/
+gastos compra vivienda Madrid,es,calcular,/gastos-compra-vivienda-madrid/,prog,1,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Cataluña,es,calcular,/gastos-compra-vivienda-cataluna/,prog,1,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Andalucía,es,calcular,/gastos-compra-vivienda-andalucia/,prog,1,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Comunidad Valenciana,es,calcular,/gastos-compra-vivienda-comunidad-valenciana/,prog,1,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Galicia,es,calcular,/gastos-compra-vivienda-galicia/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Castilla y León,es,calcular,/gastos-compra-vivienda-castilla-y-leon/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda País Vasco,es,calcular,/gastos-compra-vivienda-pais-vasco/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Aragón,es,calcular,/gastos-compra-vivienda-aragon/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Murcia,es,calcular,/gastos-compra-vivienda-murcia/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Baleares,es,calcular,/gastos-compra-vivienda-baleares/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Canarias,es,calcular,/gastos-compra-vivienda-canarias/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Asturias,es,calcular,/gastos-compra-vivienda-asturias/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+gastos compra vivienda Castilla-La Mancha,es,calcular,/gastos-compra-vivienda-castilla-la-mancha/,prog,2,gastos,/datos/gastos-compraventa-por-comunidad/
+ITP Madrid 2027,es,calcular,/gastos-compra-vivienda-madrid/,prog,1,itp,/datos/itp-por-comunidad/
+ITP Andalucía 2027,es,calcular,/gastos-compra-vivienda-andalucia/,prog,1,itp,/datos/itp-por-comunidad/
+ITP Comunidad Valenciana 9% 2027,es,calcular,/gastos-compra-vivienda-comunidad-valenciana/,prog,1,itp,/datos/itp-por-comunidad/
+ITP Cataluña 2027,es,calcular,/gastos-compra-vivienda-cataluna/,prog,1,itp,/datos/itp-por-comunidad/
+ITP Galicia 2027,es,calcular,/gastos-compra-vivienda-galicia/,prog,2,itp,/datos/itp-por-comunidad/
+ITP Murcia 2027,es,calcular,/gastos-compra-vivienda-murcia/,prog,2,itp,/datos/itp-por-comunidad/
+ITP Canarias 2027,es,calcular,/gastos-compra-vivienda-canarias/,prog,2,itp,/datos/itp-por-comunidad/
+ITP Baleares 2027,es,calcular,/gastos-compra-vivienda-baleares/,prog,2,itp,/datos/itp-por-comunidad/
+calculadora ITP vivienda segunda mano,es,calcular,/calculadora-itp-vivienda/,calc,1,itp,/
+tabla ITP por comunidades 2027,es,tabla,/datos/itp-por-comunidad/,ficha,1,itp,/calculadora-itp-vivienda/
+ITP reducido jóvenes menores de 35 por comunidad,es,tabla,/datos/itp-por-comunidad/,ficha,1,itp,/calculadora-itp-vivienda/
+ITP familia numerosa vivienda habitual,es,calcular,/calculadora-itp-vivienda/,calc,2,itp,/datos/itp-por-comunidad/
+ITP sobre valor de referencia catastral o precio,es,comprobar,/calculadora-itp-vivienda/,calc,2,itp,/calculadora-gastos-compraventa/
+ITP Comunidad Valenciana baja al 9 desde cuándo,es,plazo,/gastos-compra-vivienda-comunidad-valenciana/,prog,2,itp,/datos/itp-por-comunidad/
+impuestos compra vivienda obra nueva,es,calcular,/calculadora-iva-ajd-obra-nueva/,calc,1,obranueva,/
+IVA vivienda nueva 10 por ciento más AJD calcular,es,calcular,/calculadora-iva-ajd-obra-nueva/,calc,1,obranueva,/calculadora-gastos-compraventa/
+AJD por comunidad autónoma 2027,es,tabla,/datos/ajd-por-comunidad/,ficha,1,obranueva,/calculadora-iva-ajd-obra-nueva/
+gastos de notaría y registro compra piso,es,calcular,/calculadora-notaria-registro/,calc,1,notaria,/calculadora-gastos-compraventa/
+cuánto cobra el notario por una compraventa de 200000 euros,es,calcular,/calculadora-notaria-registro/,calc,2,notaria,/calculadora-gastos-compraventa/
+aranceles notariales tabla compraventa,es,tabla,/datos/aranceles-notaria-registro/,ficha,2,notaria,/calculadora-notaria-registro/
+quién paga los gastos de la hipoteca notaría registro gestoría,es,comprobar,/calculadora-notaria-registro/,calc,2,notaria,/simulador-hipoteca/
+amortizar hipoteca reducir cuota o plazo,es,comparar,/calculadora-amortizacion-anticipada/,calc,1,amortizacion,/
+calculadora amortización anticipada hipoteca,es,calcular,/calculadora-amortizacion-anticipada/,calc,1,amortizacion,/tabla-amortizacion-hipoteca/
+comisión amortización anticipada hipoteca variable calcular,es,calcular,/calculadora-amortizacion-anticipada/,calc,2,amortizacion,/calculadora-amortizacion-anticipada/
+cuánto me ahorro amortizando 10000 euros de hipoteca,es,calcular,/calculadora-amortizacion-anticipada/,calc,2,amortizacion,/tabla-amortizacion-hipoteca/
+subrogación hipoteca gastos calcular,es,calcular,/calculadora-cambiar-hipoteca-de-banco/,calc,2,cambio,/calculadora-cambiar-hipoteca-de-banco/
+cambiar hipoteca de banco compensa,es,comparar,/calculadora-cambiar-hipoteca-de-banco/,calc,1,cambio,/
+calcular TAE hipoteca con vinculaciones,es,calcular,/calculadora-tae-hipoteca/,calc,2,cambio,/simulador-hipoteca/
+TIN y TAE hipoteca diferencia calcular,es,calcular,/calculadora-tae-hipoteca/,calc,2,cambio,/simulador-hipoteca/
+hipoteca bonificada seguro de vida compensa,es,comparar,/calculadora-tae-hipoteca/,calc,2,cambio,/calculadora-tae-hipoteca/
+calculadora plusvalía municipal 2027,es,calcular,/calculadora-plusvalia-municipal/,calc,1,plusvalia,/
+coeficientes plusvalía 2027 tabla,es,tabla,/datos/coeficientes-plusvalia/,ficha,1,plusvalia,/calculadora-plusvalia-municipal/
+nuevos coeficientes plusvalía diciembre 2026,es,tabla,/datos/coeficientes-plusvalia/,ficha,1,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal método real u objetivo cuál elegir,es,comparar,/calculadora-plusvalia-municipal/,calc,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía si vendo con pérdidas,es,comprobar,/calculadora-plusvalia-municipal/,calc,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía herencia calcular,es,calcular,/calculadora-plusvalia-municipal/,calc,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Madrid calcular,es,calcular,/plusvalia-madrid/,prog,1,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Barcelona calcular,es,calcular,/plusvalia-barcelona/,prog,1,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Valencia calcular,es,calcular,/plusvalia-valencia/,prog,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Sevilla calcular,es,calcular,/plusvalia-sevilla/,prog,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Málaga calcular,es,calcular,/plusvalia-malaga/,prog,2,plusvalia,/calculadora-plusvalia-municipal/
+plusvalía municipal Zaragoza calcular,es,calcular,/plusvalia-zaragoza/,prog,2,plusvalia,/calculadora-plusvalia-municipal/
+cuánto pago a Hacienda por vender mi piso,es,calcular,/calculadora-ganancia-venta-vivienda/,calc,1,venta,/
+ganancia patrimonial venta vivienda calcular,es,calcular,/calculadora-ganancia-venta-vivienda/,calc,1,venta,/calculadora-plusvalia-municipal/
+vender piso exento IRPF mayores de 65,es,comprobar,/calculadora-ganancia-venta-vivienda/,calc,2,venta,/calculadora-ganancia-venta-vivienda/
+reinversión vivienda habitual exención plazo,es,plazo,/calculadora-ganancia-venta-vivienda/,calc,2,venta,/calculadora-ganancia-venta-vivienda/
+exención venta vivienda decreto 2026,es,comprobar,/calculadora-ganancia-venta-vivienda/,calc,2,venta,/calculadora-ganancia-venta-vivienda/
+deducción vivienda habitual antes de 2013 cuánto me devuelven,es,calcular,/calculadora-deduccion-vivienda-habitual/,calc,2,deduccion,/
+desgravar hipoteca renta 2026,es,calcular,/calculadora-deduccion-vivienda-habitual/,calc,1,deduccion,/calculadora-deduccion-vivienda-habitual/
+calcular IBI de mi piso,es,calcular,/calculadora-ibi/,calc,1,ibi,/
+tipo IBI por municipio 2027,es,tabla,/datos/tipos-ibi-municipios/,nueva,2,ibi,/calculadora-ibi/
+IBI Madrid 2027 tipo,es,calcular,/ibi-madrid/,nueva,2,ibi,/calculadora-ibi/
+IBI Barcelona cuánto se paga,es,calcular,/ibi-barcelona/,nueva,2,ibi,/calculadora-ibi/
+quién paga el IBI en la compraventa prorrateo,es,calcular,/calculadora-ibi/,calc,2,ibi,/calculadora-gastos-compraventa/
+calculadora subida alquiler 2027,es,calcular,/calculadora-subida-alquiler/,calc,1,alquiler,/
+subida alquiler IRAV calcular,es,calcular,/calculadora-subida-alquiler/,calc,1,alquiler,/datos/irav-mensual/
+IRAV septiembre 2026,es,comprobar,/subida-alquiler-irav-septiembre-2026/,prog,1,alquiler,/calculadora-subida-alquiler/
+IRAV octubre 2026,es,comprobar,/subida-alquiler-irav-octubre-2026/,prog,2,alquiler,/calculadora-subida-alquiler/
+índice IRAV mensual tabla,es,tabla,/datos/irav-mensual/,ficha,1,alquiler,/calculadora-subida-alquiler/
+cuánto me pueden subir el alquiler este año,es,calcular,/calculadora-subida-alquiler/,calc,1,alquiler,/datos/irav-mensual/
+actualizar alquiler con IPC o IRAV qué índice,es,comparar,/calculadora-subida-alquiler/,calc,2,alquiler,/calculadora-subida-alquiler/
+rentabilidad alquiler piso calcular,es,calcular,/calculadora-rentabilidad-alquiler/,calc,1,inversion,/
+rentabilidad neta alquiler con IRPF,es,calcular,/calculadora-rentabilidad-alquiler/,calc,2,inversion,/calculadora-rentabilidad-alquiler/
+reducción rendimientos alquiler 2027 IRPF,es,calcular,/calculadora-rentabilidad-alquiler/,calc,2,inversion,/calculadora-rentabilidad-alquiler/
+alquilar o comprar piso calculadora,es,comparar,/alquilar-o-comprar/,calc,1,inversion,/
+qué sale más barato alquilar o comprar 2027,es,comparar,/alquilar-o-comprar/,calc,2,inversion,/cuanta-hipoteca-puedo-pedir/
+deducción alquiler inquilino 2026 decreto,es,comprobar,/deduccion-alquiler-inquilinos/,nueva,2,alquiler,/calculadora-subida-alquiler/
+índice referencia alquiler zona tensionada calcular,es,calcular,/indice-referencia-alquiler/,nueva,2,alquiler,/calculadora-subida-alquiler/
+simulador hipoteca 2027,ca,calcular,/ca/simulador-hipoteca/,calc,1,hipoteca,/ca/
+calcular quota hipoteca,ca,calcular,/ca/simulador-hipoteca/,calc,1,hipoteca,/ca/
+simulador hipoteca amb euríbor actual,ca,calcular,/ca/simulador-hipoteca/,calc,2,hipoteca,/ca/dades/euribor-historic/
+quadre amortització hipoteca,ca,tabla,/ca/taula-amortitzacio-hipoteca/,calc,2,hipoteca,/ca/simulador-hipoteca/
+quota hipoteca 150000 euros a 25 anys,ca,calcular,/ca/hipoteca-150000-euros-25-anys/,prog,2,hipoteca,/ca/dades/quota-hipoteca-per-import/
+quota hipoteca 150000 euros a 30 anys,ca,calcular,/ca/hipoteca-150000-euros-30-anys/,prog,1,hipoteca,/ca/dades/quota-hipoteca-per-import/
+quota hipoteca 200000 euros a 25 anys,ca,calcular,/ca/hipoteca-200000-euros-25-anys/,prog,2,hipoteca,/ca/dades/quota-hipoteca-per-import/
+quota hipoteca 200000 euros a 30 anys,ca,calcular,/ca/hipoteca-200000-euros-30-anys/,prog,1,hipoteca,/ca/dades/quota-hipoteca-per-import/
+quota hipoteca 250000 euros a 30 anys,ca,calcular,/ca/hipoteca-250000-euros-30-anys/,prog,2,hipoteca,/ca/dades/quota-hipoteca-per-import/
+quota hipoteca 300000 euros a 30 anys,ca,calcular,/ca/hipoteca-300000-euros-30-anys/,prog,2,hipoteca,/ca/dades/quota-hipoteca-per-import/
+revisió hipoteca euríbor calcular,ca,calcular,/ca/calculadora-revisio-hipoteca-euribor/,calc,1,euribor,/ca/
+quant puja la meva hipoteca amb l'euríbor,ca,calcular,/ca/calculadora-revisio-hipoteca-euribor/,calc,2,euribor,/ca/dades/euribor-historic/
+euríbor històric mensual,ca,tabla,/ca/dades/euribor-historic/,ficha,2,euribor,/ca/calculadora-revisio-hipoteca-euribor/
+revisió hipoteca euríbor gener 2027,ca,calcular,/ca/revisio-hipoteca-euribor-gener-2027/,prog,2,euribor,/ca/calculadora-revisio-hipoteca-euribor/
+hipoteca fixa o variable què em convé,ca,comparar,/ca/hipoteca-fixa-o-variable/,calc,1,comparar,/ca/
+quanta hipoteca puc demanar amb el meu sou,ca,calcular,/ca/quanta-hipoteca-puc-demanar/,calc,1,capacidad,/ca/
+quin sou necessito per a una hipoteca de 200000 euros,ca,calcular,/ca/sou-per-hipoteca-200000-euros/,prog,2,capacidad,/ca/quanta-hipoteca-puc-demanar/
+quin sou cal per a una hipoteca de 150000 euros,ca,calcular,/ca/sou-per-hipoteca-150000-euros/,prog,2,capacidad,/ca/quanta-hipoteca-puc-demanar/
+quants estalvis necessito per comprar un pis,ca,calcular,/ca/calculadora-estalvi-entrada-pis/,calc,1,capacidad,/ca/
+entrada pis 20 per cent més despeses,ca,calcular,/ca/calculadora-estalvi-entrada-pis/,calc,2,capacidad,/ca/calculadora-despeses-compravenda/
+despeses de compravenda pis calcular,ca,calcular,/ca/calculadora-despeses-compravenda/,calc,1,gastos,/ca/
+despeses compravenda pis Catalunya,ca,calcular,/ca/despeses-compra-habitatge-catalunya/,prog,1,gastos,/ca/calculadora-despeses-compravenda/
+quant costa comprar un pis en impostos,ca,calcular,/ca/calculadora-despeses-compravenda/,calc,1,gastos,/ca/
+despeses compra habitatge Illes Balears,ca,calcular,/ca/despeses-compra-habitatge-illes-balears/,prog,2,gastos,/ca/calculadora-despeses-compravenda/
+despeses compra habitatge Comunitat Valenciana,ca,calcular,/ca/despeses-compra-habitatge-comunitat-valenciana/,prog,1,gastos,/ca/calculadora-despeses-compravenda/
+despeses compra habitatge Madrid,ca,calcular,/ca/despeses-compra-habitatge-madrid/,prog,3,gastos,/ca/calculadora-despeses-compravenda/
+ITP Catalunya 2027 habitatge,ca,calcular,/ca/despeses-compra-habitatge-catalunya/,prog,1,itp,/ca/dades/itp-per-comunitat/
+calculadora ITP habitatge segona mà,ca,calcular,/ca/calculadora-itp-habitatge/,calc,1,itp,/ca/
+ITP reduït joves 5 per cent Catalunya requisits,ca,comprobar,/ca/despeses-compra-habitatge-catalunya/,prog,1,itp,/ca/calculadora-itp-habitatge/
+ITP per comunitats taula,ca,tabla,/ca/dades/itp-per-comunitat/,ficha,2,itp,/ca/calculadora-itp-habitatge/
+ITP grans tenidors 20 per cent,ca,comprobar,/ca/despeses-compra-habitatge-catalunya/,prog,3,itp,/ca/calculadora-itp-habitatge/
+ITP Comunitat Valenciana 9 per cent,ca,calcular,/ca/despeses-compra-habitatge-comunitat-valenciana/,prog,2,itp,/ca/calculadora-itp-habitatge/
+ITP Illes Balears habitatge,ca,calcular,/ca/despeses-compra-habitatge-illes-balears/,prog,2,itp,/ca/calculadora-itp-habitatge/
+impostos habitatge obra nova IVA AJD,ca,calcular,/ca/calculadora-iva-ajd-obra-nova/,calc,1,obranueva,/ca/
+AJD per comunitats autònomes,ca,tabla,/ca/dades/ajd-per-comunitat/,ficha,2,obranueva,/ca/calculadora-iva-ajd-obra-nova/
+despeses notaria i registre compra pis,ca,calcular,/ca/calculadora-notaria-registre/,calc,1,notaria,/ca/calculadora-despeses-compravenda/
+qui paga les despeses de la hipoteca,ca,comprobar,/ca/calculadora-notaria-registre/,calc,2,notaria,/ca/simulador-hipoteca/
+amortitzar hipoteca reduir quota o termini,ca,comparar,/ca/calculadora-amortitzacio-anticipada/,calc,1,amortizacion,/ca/
+comissió amortització anticipada hipoteca,ca,calcular,/ca/calculadora-amortitzacio-anticipada/,calc,2,amortizacion,/ca/calculadora-amortitzacio-anticipada/
+canviar hipoteca de banc surt a compte,ca,comparar,/ca/calculadora-canviar-hipoteca-de-banc/,calc,2,cambio,/ca/
+calcular TAE hipoteca,ca,calcular,/ca/calculadora-tae-hipoteca/,calc,2,cambio,/ca/simulador-hipoteca/
+calculadora plusvàlua municipal,ca,calcular,/ca/calculadora-plusvalua-municipal/,calc,1,plusvalia,/ca/
+calculadora plusvàlua municipal Barcelona,ca,calcular,/ca/plusvalua-barcelona/,prog,1,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua municipal Lleida calcular,ca,calcular,/ca/plusvalua-lleida/,prog,1,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua municipal Girona,ca,calcular,/ca/plusvalua-girona/,prog,2,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua municipal Tarragona,ca,calcular,/ca/plusvalua-tarragona/,prog,2,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua Sabadell calcular,ca,calcular,/ca/plusvalua-sabadell/,prog,3,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua Terrassa calcular,ca,calcular,/ca/plusvalua-terrassa/,prog,3,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua l'Hospitalet de Llobregat,ca,calcular,/ca/plusvalua-hospitalet-de-llobregat/,prog,3,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua València calcular,ca,calcular,/ca/plusvalua-valencia/,prog,2,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua Palma calcular,ca,calcular,/ca/plusvalua-palma/,prog,2,plusvalia,/ca/calculadora-plusvalua-municipal/
+coeficients plusvàlua 2027,ca,tabla,/ca/dades/coeficients-plusvalua/,ficha,1,plusvalia,/ca/calculadora-plusvalua-municipal/
+plusvàlua herència calcular,ca,calcular,/ca/calculadora-plusvalua-municipal/,calc,2,plusvalia,/ca/calculadora-plusvalua-municipal/
+quant pago a Hisenda per vendre el pis,ca,calcular,/ca/calculadora-guany-venda-habitatge/,calc,1,venta,/ca/
+guany patrimonial venda habitatge,ca,calcular,/ca/calculadora-guany-venda-habitatge/,calc,2,venta,/ca/calculadora-plusvalua-municipal/
+deducció habitatge habitual abans de 2013,ca,calcular,/ca/calculadora-deduccio-habitatge-habitual/,calc,2,deduccion,/ca/
+calcular IBI del meu pis,ca,calcular,/ca/calculadora-ibi/,calc,2,ibi,/ca/
+IBI Barcelona quant es paga,ca,calcular,/ca/ibi-barcelona/,nueva,3,ibi,/ca/calculadora-ibi/
+calculadora pujada lloguer 2027,ca,calcular,/ca/calculadora-pujada-lloguer/,calc,1,alquiler,/ca/
+pujada del lloguer IRAV,ca,calcular,/ca/calculadora-pujada-lloguer/,calc,1,alquiler,/ca/dades/irav-mensual/
+IRAV setembre 2026,ca,comprobar,/ca/pujada-lloguer-irav-setembre-2026/,prog,2,alquiler,/ca/calculadora-pujada-lloguer/
+quant em poden apujar el lloguer,ca,calcular,/ca/calculadora-pujada-lloguer/,calc,1,alquiler,/ca/
+índex de referència de preus de lloguer,ca,calcular,/ca/index-referencia-lloguer/,nueva,1,alquiler,/ca/calculadora-pujada-lloguer/
+preu màxim lloguer zona tensionada,ca,comprobar,/ca/index-referencia-lloguer/,nueva,1,alquiler,/ca/calculadora-pujada-lloguer/
+rendibilitat lloguer pis calcular,ca,calcular,/ca/calculadora-rendibilitat-lloguer/,calc,2,inversion,/ca/
+llogar o comprar pis què surt més a compte,ca,comparar,/ca/llogar-o-comprar/,calc,1,inversion,/ca/
+hipoteca amb 2000 euros de sou,ca,calcular,/ca/quanta-hipoteca-puc-demanar/,calc,2,capacidad,/ca/dades/esforc-hipotecari-per-sou/
+taula hipoteca màxima segons sou,ca,tabla,/ca/dades/esforc-hipotecari-per-sou/,ficha,3,capacidad,/ca/quanta-hipoteca-puc-demanar/
+despeses compravenda per comunitats,ca,tabla,/ca/dades/despeses-compravenda-per-comunitat/,ficha,2,gastos,/ca/calculadora-despeses-compravenda/

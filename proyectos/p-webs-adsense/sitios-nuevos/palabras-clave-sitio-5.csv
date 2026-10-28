@@ -1,0 +1,201 @@
+palabra_clave,idioma,intencion,ruta_destino,tipo_destino,prioridad,grupo,enlaza_desde
+calcular impuesto de circulación,es,calcular,/calculadora-impuesto-circulacion/,calc,1,ivtm,/
+calculadora impuesto de circulación 2027,es,calcular,/calculadora-impuesto-circulacion/,calc,1,ivtm,/
+cuánto pago de impuesto de circulación por caballos,es,tabla,/datos/ivtm-por-caballos/,ficha,1,ivtm,/calculadora-impuesto-circulacion/
+tabla impuesto de circulación por caballos fiscales,es,tabla,/datos/ivtm-por-caballos/,ficha,1,ivtm,/calculadora-impuesto-circulacion/
+impuesto de circulación capitales de provincia comparativa,es,tabla,/datos/impuesto-circulacion-capitales/,ficha,1,ivtm,/calculadora-impuesto-circulacion/
+ciudad más barata impuesto de circulación,es,comparar,/datos/impuesto-circulacion-capitales/,ficha,2,ivtm,/calculadora-impuesto-circulacion/
+impuesto de circulación coche eléctrico bonificación,es,calcular,/calculadora-impuesto-circulacion/,calc,1,ivtm,/electrico-o-combustion/
+impuesto de circulación coche híbrido etiqueta ECO,es,calcular,/calculadora-impuesto-circulacion/,calc,2,ivtm,/etiqueta-ambiental-dgt/
+impuesto de circulación coche de más de 25 años,es,comprobar,/calculadora-impuesto-circulacion/,calc,2,ivtm,/calculadora-impuesto-circulacion/
+impuesto de circulación moto cuánto se paga,es,calcular,/calculadora-impuesto-circulacion/,calc,2,ivtm,/calculadora-impuesto-circulacion/
+impuesto de circulación si vendo el coche a mitad de año,es,calcular,/calculadora-impuesto-circulacion/,calc,2,ivtm,/calculadora-cambio-de-nombre/
+quién paga el impuesto de circulación al vender el coche,es,comprobar,/calculadora-impuesto-circulacion/,calc,2,ivtm,/calculadora-cambio-de-nombre/
+plazo para pagar impuesto de circulación 2027,es,plazo,/datos/calendario-impuesto-circulacion/,nueva,2,ivtm,/calculadora-impuesto-circulacion/
+impuesto de circulación Madrid,es,calcular,/impuesto-circulacion-madrid/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Barcelona,es,calcular,/impuesto-circulacion-barcelona/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Valencia,es,calcular,/impuesto-circulacion-valencia/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Sevilla,es,calcular,/impuesto-circulacion-sevilla/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Zaragoza,es,calcular,/impuesto-circulacion-zaragoza/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Málaga,es,calcular,/impuesto-circulacion-malaga/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Murcia,es,calcular,/impuesto-circulacion-murcia/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Palma,es,calcular,/impuesto-circulacion-palma/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Las Palmas de Gran Canaria,es,calcular,/impuesto-circulacion-las-palmas-de-gran-canaria/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Bilbao,es,calcular,/impuesto-circulacion-bilbao/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Alicante,es,calcular,/impuesto-circulacion-alicante/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Córdoba,es,calcular,/impuesto-circulacion-cordoba/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Valladolid,es,calcular,/impuesto-circulacion-valladolid/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Vigo,es,calcular,/impuesto-circulacion-vigo/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Gijón,es,calcular,/impuesto-circulacion-gijon/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación L'Hospitalet de Llobregat,es,calcular,/impuesto-circulacion-hospitalet-de-llobregat/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Vitoria,es,calcular,/impuesto-circulacion-vitoria/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación A Coruña,es,calcular,/impuesto-circulacion-a-coruna/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Granada,es,calcular,/impuesto-circulacion-granada/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Elche,es,calcular,/impuesto-circulacion-elche/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Oviedo,es,calcular,/impuesto-circulacion-oviedo/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Badalona,es,calcular,/impuesto-circulacion-badalona/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Terrassa,es,calcular,/impuesto-circulacion-terrassa/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Sabadell,es,calcular,/impuesto-circulacion-sabadell/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Santa Cruz de Tenerife,es,calcular,/impuesto-circulacion-santa-cruz-de-tenerife/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Pamplona,es,calcular,/impuesto-circulacion-pamplona/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Almería,es,calcular,/impuesto-circulacion-almeria/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación San Sebastián,es,calcular,/impuesto-circulacion-san-sebastian/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Santander,es,calcular,/impuesto-circulacion-santander/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Burgos,es,calcular,/impuesto-circulacion-burgos/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Castellón de la Plana,es,calcular,/impuesto-circulacion-castellon-de-la-plana/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Salamanca,es,calcular,/impuesto-circulacion-salamanca/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Logroño,es,calcular,/impuesto-circulacion-logrono/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Lleida,es,calcular,/impuesto-circulacion-lleida/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Tarragona,es,calcular,/impuesto-circulacion-tarragona/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Girona,es,calcular,/impuesto-circulacion-girona/,prog,3,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Madrid 2027 tarifas,es,tabla,/impuesto-circulacion-madrid/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Barcelona 2027 cuánto,es,calcular,/impuesto-circulacion-barcelona/,prog,1,ivtm,/datos/impuesto-circulacion-capitales/
+impuesto de circulación Valencia plazo pago,es,plazo,/impuesto-circulacion-valencia/,prog,2,ivtm,/datos/impuesto-circulacion-capitales/
+calcular caballos fiscales coche,es,calcular,/calculadora-caballos-fiscales/,calc,1,caballos,/
+caballos fiscales coche eléctrico cómo se calculan,es,calcular,/calculadora-caballos-fiscales/,calc,2,caballos,/electrico-o-combustion/
+diferencia entre caballos fiscales y CV de potencia,es,comprobar,/calculadora-caballos-fiscales/,calc,2,caballos,/calculadora-impuesto-circulacion/
+calcular ITP coche usado,es,calcular,/calculadora-itp-coche/,calc,1,itp,/
+ITP coche segunda mano 2027,es,calcular,/calculadora-itp-coche/,calc,1,itp,/datos/itp-coche-por-comunidad/
+tabla ITP coches por comunidad,es,tabla,/datos/itp-coche-por-comunidad/,ficha,1,itp,/calculadora-itp-coche/
+ITP coche usado Madrid,es,calcular,/itp-coche-madrid/,prog,1,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Cataluña,es,calcular,/itp-coche-cataluna/,prog,1,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Andalucía,es,calcular,/itp-coche-andalucia/,prog,1,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Comunidad Valenciana,es,calcular,/itp-coche-comunidad-valenciana/,prog,1,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Galicia,es,calcular,/itp-coche-galicia/,prog,2,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Castilla y León,es,calcular,/itp-coche-castilla-y-leon/,prog,2,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Murcia,es,calcular,/itp-coche-murcia/,prog,2,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Aragón,es,calcular,/itp-coche-aragon/,prog,2,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Canarias,es,calcular,/itp-coche-canarias/,prog,2,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Baleares,es,calcular,/itp-coche-baleares/,prog,3,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Asturias,es,calcular,/itp-coche-asturias/,prog,3,itp,/datos/itp-coche-por-comunidad/
+ITP coche usado Castilla-La Mancha,es,calcular,/itp-coche-castilla-la-mancha/,prog,3,itp,/datos/itp-coche-por-comunidad/
+cuánto cuesta el cambio de nombre de un coche,es,calcular,/calculadora-cambio-de-nombre/,calc,1,cambio,/
+precio transferencia coche 2027 tasa DGT e ITP,es,calcular,/calculadora-cambio-de-nombre/,calc,1,cambio,/datos/tasas-dgt/
+cambio de titularidad moto precio,es,calcular,/calculadora-cambio-de-nombre/,calc,2,cambio,/calculadora-cambio-de-nombre/
+cambio de nombre coche entre familiares impuestos,es,calcular,/calculadora-cambio-de-nombre/,calc,2,cambio,/calculadora-itp-coche/
+tasa DGT cambio de titularidad 2027,es,tabla,/datos/tasas-dgt/,ficha,1,cambio,/calculadora-cambio-de-nombre/
+tasas DGT 2027 todas,es,tabla,/datos/tasas-dgt/,ficha,2,cambio,/calculadora-cambio-de-nombre/
+tabla precios medios Hacienda coches 2027,es,tabla,/datos/tabla-depreciacion-hacienda/,ficha,1,valor,/calculadora-itp-coche/
+porcentaje depreciación Hacienda por años coche,es,tabla,/datos/tabla-depreciacion-hacienda/,ficha,1,valor,/calculadora-itp-coche/
+cambio de nombre seat ibiza 2018 cuánto cuesta,es,calcular,/cambio-de-nombre-seat-ibiza-2018/,nueva,3,cambio,/calculadora-cambio-de-nombre/
+cambio de nombre volkswagen golf 2016 precio,es,calcular,/cambio-de-nombre-volkswagen-golf-2016/,nueva,3,cambio,/calculadora-cambio-de-nombre/
+calcular impuesto de matriculación,es,calcular,/calculadora-impuesto-matriculacion/,calc,1,matriculacion,/
+impuesto de matriculación por emisiones CO2 tramos,es,tabla,/datos/tramos-impuesto-matriculacion/,ficha,1,matriculacion,/calculadora-impuesto-matriculacion/
+impuesto matriculación coche importado de Alemania,es,calcular,/calculadora-impuesto-matriculacion/,calc,2,matriculacion,/calculadora-impuesto-matriculacion/
+impuesto de matriculación Canarias,es,calcular,/impuesto-matriculacion-canarias/,nueva,3,matriculacion,/calculadora-impuesto-matriculacion/
+precio final coche nuevo con impuestos,es,calcular,/calculadora-precio-final-coche-nuevo/,calc,1,matriculacion,/
+cuánto cuesta matricular un coche nuevo,es,calcular,/calculadora-precio-final-coche-nuevo/,calc,2,matriculacion,/calculadora-impuesto-matriculacion/
+cuándo me toca pasar la ITV,es,plazo,/cuando-pasar-itv/,calc,1,itv,/
+ITV coche de 10 años cada cuánto,es,plazo,/cuando-pasar-itv/,calc,1,itv,/datos/frecuencia-itv/
+primera ITV coche nuevo cuándo,es,plazo,/cuando-pasar-itv/,calc,1,itv,/cuando-pasar-itv/
+ITV moto cada cuánto,es,plazo,/cuando-pasar-itv/,calc,2,itv,/datos/frecuencia-itv/
+ITV furgoneta frecuencia,es,plazo,/cuando-pasar-itv/,calc,2,itv,/datos/frecuencia-itv/
+ITV caducada multa y puedo circular,es,comprobar,/cuando-pasar-itv/,calc,2,itv,/calculadora-multa-velocidad/
+tabla frecuencia ITV por tipo de vehículo,es,tabla,/datos/frecuencia-itv/,ficha,2,itv,/cuando-pasar-itv/
+precio ITV 2027 por comunidades,es,tabla,/datos/precio-itv-por-comunidad/,ficha,1,itv,/precio-itv/
+precio ITV Andalucía,es,tabla,/precio-itv-andalucia/,prog,1,itv,/datos/precio-itv-por-comunidad/
+precio ITV Cataluña,es,tabla,/precio-itv-cataluna/,prog,1,itv,/datos/precio-itv-por-comunidad/
+precio ITV Madrid,es,tabla,/precio-itv-madrid/,prog,1,itv,/datos/precio-itv-por-comunidad/
+precio ITV Comunidad Valenciana,es,tabla,/precio-itv-comunidad-valenciana/,prog,2,itv,/datos/precio-itv-por-comunidad/
+precio ITV Galicia,es,tabla,/precio-itv-galicia/,prog,2,itv,/datos/precio-itv-por-comunidad/
+precio ITV Castilla y León,es,tabla,/precio-itv-castilla-y-leon/,prog,3,itv,/datos/precio-itv-por-comunidad/
+precio ITV diésel o gasolina,es,tabla,/precio-itv/,calc,2,itv,/cuando-pasar-itv/
+qué etiqueta DGT tiene mi coche,es,comprobar,/etiqueta-ambiental-dgt/,calc,1,etiqueta,/
+etiqueta B o C según año de matriculación,es,comprobar,/etiqueta-ambiental-dgt/,calc,1,etiqueta,/etiqueta-ambiental-dgt/
+coche diésel de 2015 qué etiqueta tiene,es,comprobar,/etiqueta-ambiental-dgt/,calc,2,etiqueta,/etiqueta-ambiental-dgt/
+coche sin etiqueta qué año,es,comprobar,/etiqueta-ambiental-dgt/,calc,2,etiqueta,/etiqueta-ambiental-dgt/
+híbrido enchufable etiqueta cero o eco,es,comprobar,/etiqueta-ambiental-dgt/,calc,2,etiqueta,/electrico-o-combustion/
+puedo entrar en la ZBE de Madrid con mi coche,es,comprobar,/zbe-madrid/,nueva,2,etiqueta,/etiqueta-ambiental-dgt/
+ZBE Barcelona coches sin etiqueta,es,comprobar,/zbe-barcelona/,nueva,2,etiqueta,/etiqueta-ambiental-dgt/
+calcular gasolina de un viaje,es,calcular,/calculadora-coste-viaje/,calc,1,costes,/
+cuánto cuesta un viaje en coche gasolina y peajes,es,calcular,/calculadora-coste-viaje/,calc,1,costes,/calculadora-coste-por-km/
+calcular gasto de diésel por kilómetro,es,calcular,/calculadora-coste-por-km/,calc,1,costes,/calculadora-coste-viaje/
+cuánto cuesta mantener un coche al año,es,calcular,/calculadora-coste-anual-coche/,calc,1,costes,/
+coste real por kilómetro de un coche,es,calcular,/calculadora-coste-por-km/,calc,2,costes,/calculadora-coste-anual-coche/
+consumo l/100 km a euros,es,calcular,/calculadora-coste-viaje/,calc,2,costes,/calculadora-coste-viaje/
+precio medio gasolina y diésel por mes,es,tabla,/datos/precio-carburantes-mensual/,ficha,1,costes,/calculadora-coste-viaje/
+"kilometraje exento IRPF 0,26 euros por km calcular",es,calcular,/calculadora-coste-por-km/,calc,2,costes,/calculadora-coste-por-km/
+cuánto vale mi coche usado según Hacienda,es,calcular,/calculadora-valor-venal/,calc,1,valor,/
+valor venal de mi coche,es,calcular,/calculadora-valor-venal/,calc,1,valor,/calculadora-depreciacion-coche/
+siniestro total valor venal o de mercado,es,comprobar,/calculadora-valor-venal/,calc,2,valor,/calculadora-valor-venal/
+cuánto se deprecia un coche al año,es,calcular,/calculadora-depreciacion-coche/,calc,1,valor,/
+depreciación coche eléctrico vs gasolina,es,comparar,/calculadora-depreciacion-coche/,calc,2,valor,/electrico-o-combustion/
+ayudas coche eléctrico 2027,es,calcular,/calculadora-ayudas-coche-electrico/,calc,1,electrico,/
+plan auto+ cuánto me dan,es,calcular,/calculadora-ayudas-coche-electrico/,calc,1,electrico,/electrico-o-combustion/
+plan auto plus requisitos importe por coche,es,comprobar,/calculadora-ayudas-coche-electrico/,calc,1,electrico,/calculadora-ayudas-coche-electrico/
+plan moves 2026 sigue vigente,es,comprobar,/calculadora-ayudas-coche-electrico/,calc,2,electrico,/calculadora-ayudas-coche-electrico/
+deducción IRPF compra coche eléctrico,es,calcular,/calculadora-ayudas-coche-electrico/,calc,2,electrico,/calculadora-ayudas-coche-electrico/
+coche eléctrico o gasolina qué sale más barato,es,comparar,/electrico-o-combustion/,calc,1,electrico,/
+cuánto cuesta cargar un coche eléctrico en casa,es,calcular,/calculadora-coste-recarga-electrico/,calc,1,electrico,/electrico-o-combustion/
+coste recarga coche eléctrico por 100 km,es,calcular,/calculadora-coste-recarga-electrico/,calc,2,electrico,/calculadora-coste-recarga-electrico/
+híbrido o diésel para 20000 km al año,es,comparar,/electrico-o-combustion/,calc,2,electrico,/calculadora-coste-por-km/
+renting o compra coche calculadora,es,comparar,/renting-o-compra/,calc,1,financiacion,/
+renting coche particular compensa,es,comparar,/renting-o-compra/,calc,2,financiacion,/renting-o-compra/
+calcular cuota préstamo coche,es,calcular,/calculadora-prestamo-coche/,calc,1,financiacion,/
+financiación concesionario o préstamo banco coche,es,comparar,/calculadora-prestamo-coche/,calc,2,financiacion,/renting-o-compra/
+TAE financiación coche calcular,es,calcular,/calculadora-prestamo-coche/,calc,2,financiacion,/calculadora-prestamo-coche/
+multa por exceso de velocidad cuánto y cuántos puntos,es,calcular,/calculadora-multa-velocidad/,calc,1,multas,/
+cuadro de multas y puntos velocidad 2027,es,tabla,/datos/multas-velocidad-puntos/,ficha,1,multas,/calculadora-multa-velocidad/
+multa por ir a 140 en autovía,es,calcular,/calculadora-multa-velocidad/,calc,2,multas,/calculadora-multa-velocidad/
+multa 50 por ciento pronto pago plazo,es,plazo,/calculadora-multa-velocidad/,calc,2,multas,/calculadora-multa-velocidad/
+cuántos puntos quitan por ir a 70 en zona de 50,es,calcular,/calculadora-multa-velocidad/,calc,2,multas,/calculadora-multa-velocidad/
+qué seguro de coche me conviene según valor del coche,es,comparar,/calculadora-valor-venal/,calc,2,seguro,/calculadora-valor-venal/
+seguro a terceros o todo riesgo coche de 8 años,es,comparar,/calculadora-valor-venal/,calc,2,seguro,/calculadora-depreciacion-coche/
+cuánto cuesta tener un coche al mes con seguro,es,calcular,/calculadora-coste-anual-coche/,calc,2,seguro,/calculadora-coste-anual-coche/
+calcular impost de circulació,ca,calcular,/ca/calculadora-impost-circulacio/,calc,1,ivtm,/ca/
+impost de circulació per cavalls fiscals,ca,tabla,/ca/dades/ivtm-per-cavalls/,ficha,1,ivtm,/ca/calculadora-impost-circulacio/
+impost de circulació cotxe elèctric bonificació,ca,calcular,/ca/calculadora-impost-circulacio/,calc,2,ivtm,/ca/electric-o-combustio/
+impost de circulació Barcelona,ca,calcular,/ca/impost-circulacio-barcelona/,prog,1,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Lleida,ca,calcular,/ca/impost-circulacio-lleida/,prog,1,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Girona,ca,calcular,/ca/impost-circulacio-girona/,prog,1,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Tarragona,ca,calcular,/ca/impost-circulacio-tarragona/,prog,1,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Sabadell,ca,calcular,/ca/impost-circulacio-sabadell/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Terrassa,ca,calcular,/ca/impost-circulacio-terrassa/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Badalona,ca,calcular,/ca/impost-circulacio-badalona/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació l'Hospitalet de Llobregat,ca,calcular,/ca/impost-circulacio-hospitalet-de-llobregat/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Mataró,ca,calcular,/ca/impost-circulacio-mataro/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Reus,ca,calcular,/ca/impost-circulacio-reus/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Santa Coloma de Gramenet,ca,calcular,/ca/impost-circulacio-santa-coloma-de-gramenet/,prog,3,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Cornellà de Llobregat,ca,calcular,/ca/impost-circulacio-cornella-de-llobregat/,prog,3,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Sant Cugat del Vallès,ca,calcular,/ca/impost-circulacio-sant-cugat-del-valles/,prog,3,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Manresa,ca,calcular,/ca/impost-circulacio-manresa/,prog,3,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Granollers,ca,calcular,/ca/impost-circulacio-granollers/,prog,3,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació València,ca,calcular,/ca/impost-circulacio-valencia/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+impost de circulació Palma,ca,calcular,/ca/impost-circulacio-palma/,prog,2,ivtm,/ca/dades/impost-circulacio-capitals/
+calcular cavalls fiscals cotxe,ca,calcular,/ca/calculadora-cavalls-fiscals/,calc,2,caballos,/ca/
+calcular ITP cotxe de segona mà,ca,calcular,/ca/calculadora-itp-cotxe/,calc,1,itp,/ca/
+ITP cotxe usat Catalunya,ca,calcular,/ca/itp-cotxe-catalunya/,prog,1,itp,/ca/dades/itp-cotxe-per-comunitat/
+ITP cotxe més de 10 anys Catalunya exempció,ca,comprobar,/ca/itp-cotxe-catalunya/,prog,2,itp,/ca/calculadora-itp-cotxe/
+ITP cotxe Illes Balears,ca,calcular,/ca/itp-cotxe-illes-balears/,prog,3,itp,/ca/dades/itp-cotxe-per-comunitat/
+ITP cotxe Comunitat Valenciana,ca,calcular,/ca/itp-cotxe-comunitat-valenciana/,prog,2,itp,/ca/dades/itp-cotxe-per-comunitat/
+quant costa el canvi de nom d'un cotxe,ca,calcular,/ca/calculadora-canvi-de-nom-cotxe/,calc,1,cambio,/ca/
+canvi de titularitat moto preu,ca,calcular,/ca/calculadora-canvi-de-nom-cotxe/,calc,2,cambio,/ca/calculadora-canvi-de-nom-cotxe/
+taxa DGT canvi de titularitat,ca,tabla,/ca/dades/taxes-dgt/,ficha,2,cambio,/ca/calculadora-canvi-de-nom-cotxe/
+taula preus mitjans Hisenda cotxes,ca,tabla,/ca/dades/taula-depreciacio-hisenda/,ficha,2,valor,/ca/calculadora-itp-cotxe/
+calcular impost de matriculació,ca,calcular,/ca/calculadora-impost-matriculacio/,calc,2,matriculacion,/ca/
+preu final cotxe nou amb impostos,ca,calcular,/ca/calculadora-preu-final-cotxe-nou/,calc,3,matriculacion,/ca/
+quan em toca passar la ITV,ca,plazo,/ca/quan-passar-itv/,calc,1,itv,/ca/
+ITV cotxe de 10 anys cada quant,ca,plazo,/ca/quan-passar-itv/,calc,2,itv,/ca/quan-passar-itv/
+preu ITV Catalunya 2027,ca,tabla,/ca/preu-itv-catalunya/,prog,1,itv,/ca/dades/preu-itv-per-comunitat/
+quina etiqueta DGT té el meu cotxe,ca,comprobar,/ca/etiqueta-ambiental-dgt/,calc,1,etiqueta,/ca/
+ZBE Barcelona cotxes sense etiqueta,ca,comprobar,/ca/zbe-barcelona/,nueva,2,etiqueta,/ca/etiqueta-ambiental-dgt/
+ZBE Lleida quan comença,ca,plazo,/ca/zbe-lleida/,nueva,3,etiqueta,/ca/etiqueta-ambiental-dgt/
+calcular gasolina d'un viatge,ca,calcular,/ca/calculadora-cost-viatge/,calc,1,costes,/ca/
+cost per quilòmetre d'un cotxe,ca,calcular,/ca/calculadora-cost-per-km/,calc,2,costes,/ca/calculadora-cost-viatge/
+quant costa mantenir un cotxe a l'any,ca,calcular,/ca/calculadora-cost-anual-cotxe/,calc,1,costes,/ca/
+valor venal del meu cotxe,ca,calcular,/ca/calculadora-valor-venal/,calc,2,valor,/ca/
+quant es deprecia un cotxe cada any,ca,calcular,/ca/calculadora-depreciacio-cotxe/,calc,2,valor,/ca/
+ajuts cotxe elèctric 2027,ca,calcular,/ca/calculadora-ajuts-cotxe-electric/,calc,1,electrico,/ca/
+pla auto+ quant em donen,ca,calcular,/ca/calculadora-ajuts-cotxe-electric/,calc,2,electrico,/ca/electric-o-combustio/
+cotxe elèctric o de gasolina què surt més barat,ca,comparar,/ca/electric-o-combustio/,calc,1,electrico,/ca/
+quant costa carregar un cotxe elèctric a casa,ca,calcular,/ca/calculadora-cost-recarrega-electric/,calc,2,electrico,/ca/electric-o-combustio/
+rènting o compra de cotxe,ca,comparar,/ca/renting-o-compra/,calc,2,financiacion,/ca/
+calcular quota préstec cotxe,ca,calcular,/ca/calculadora-prestec-cotxe/,calc,2,financiacion,/ca/
+multa per excés de velocitat i punts,ca,calcular,/ca/calculadora-multa-velocitat/,calc,1,multas,/ca/
+quadre de multes i punts de velocitat,ca,tabla,/ca/dades/multes-velocitat-punts/,ficha,2,multas,/ca/calculadora-multa-velocitat/
+termini per pagar l'impost de circulació Barcelona,ca,plazo,/ca/impost-circulacio-barcelona/,prog,2,ivtm,/ca/calculadora-impost-circulacio/
+preu mitjà gasolina i gasoil per mesos,ca,tabla,/ca/dades/preu-carburants-mensual/,ficha,3,costes,/ca/calculadora-cost-viatge/
+freqüència ITV per tipus de vehicle,ca,tabla,/ca/dades/frequencia-itv/,ficha,3,itv,/ca/quan-passar-itv/
+trams impost de matriculació CO2,ca,tabla,/ca/dades/trams-impost-matriculacio/,ficha,3,matriculacion,/ca/calculadora-impost-matriculacio/
+impost de circulació capitals comparativa,ca,tabla,/ca/dades/impost-circulacio-capitals/,ficha,2,ivtm,/ca/calculadora-impost-circulacio/
+cotxe dièsel 2015 quina etiqueta té,ca,comprobar,/ca/etiqueta-ambiental-dgt/,calc,2,etiqueta,/ca/etiqueta-ambiental-dgt/
