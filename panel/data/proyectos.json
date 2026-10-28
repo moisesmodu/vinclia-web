@@ -1290,7 +1290,7 @@
     "nombre": "Cuentos personalizados",
     "marca": "Niños",
     "resumen": "Lunilla: cuentos ilustrados y personalizados en castellano y catalán, PDF en menos de 2 horas o tapa dura. Tienda construida y probada de punta a punta en modo simulado; falta pegar claves para abrir el 15/11.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 6,
     "fechaLimite": "2026-11-15",
     "modelo": "PDF 7,90 € · tapa dura 36,90 € con envío incluido",
@@ -1302,7 +1302,8 @@
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
       "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/g-cuentos/proyectos/g-cuentos",
-      "pr": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      "pr": "https://github.com/moisesmodu/vinclia-web/pull/5",
+      "demo": "https://lunilla.vercel.app"
     },
     "acciones": [
       {
@@ -1349,6 +1350,10 @@
         "fecha": "2026-10-28",
         "texto": "PR #5 con proyectos/g-cuentos/DESPLIEGUE.md listo para la sesión del Mac",
         "enlace": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en producción (https://lunilla.vercel.app) desde la sesión del Mac: proyecto de Vercel lunilla (cron cada 5 min, plan Pro), Neon cartera-g-cuentos (Londres), Vercel Blob público lunilla-archivos (París), Stripe en el entorno de prueba de Numi Mates (PDF 7,90 € y tapa dura 36,90 € y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478). Imprenta en «simulado» hasta tener GELATO_API_KEY."
       }
     ],
     "proximos": [
@@ -1361,7 +1366,10 @@
     "paraMoises": [
       "Gelato: crear la cuenta y la clave de API (y la tarjeta al abrir)",
       "Comprar el dominio (lunilla.es)",
-      "NIF para los textos legales"
+      "NIF para los textos legales",
+      "Alta en Gelato (https://dashboard.gelato.com/signup) y poner GELATO_API_KEY en Vercel (lunilla); hasta entonces la imprenta va en «simulado»",
+      "Poner LEGAL_NOM, LEGAL_NIF, LEGAL_EMAIL, LEGAL_ADRECA, CORREO_SOPORTE y RESEND_API_KEY en Vercel (lunilla)",
+      "Pago de prueba con 4242 4242 4242 4242 en https://lunilla.vercel.app"
     ],
     "mejoras": [
       "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",

@@ -104,4 +104,24 @@ curl -s -H "x-admin-token: $ADMIN_TOKEN" $URL_BASE/api/admin/resumen     # JSON 
 3. Crear las tres tareas programadas de `TAREA-PROGRAMADA.md` con `URL_BASE` y `ADMIN_TOKEN` en su entorno.
 
 ---
-Ejecutado el: (pendiente; lo rellena la sesión del Mac)
+
+## Cómo se ejecutó (sesión del Mac, 28-10-2026)
+- Vercel: proyecto `lunilla` creado con el CLI ya autenticado en el Mac (sin `VERCEL_TOKEN`), Root Directory
+  `proyectos/g-cuentos`. El equipo ya es Pro, así que el cron de 5 minutos funciona. URL: https://lunilla.vercel.app
+- Neon: recurso `cartera-g-cuentos` (región `lhr1`, Londres, plan gratis) creado con la integración de Neon del equipo
+  de Vercel (sin `NEON_API_KEY`). El build sincronizó el esquema (`prisma db push`).
+- Blob: almacén público `lunilla-archivos` en `cdg1` (París) conectado al proyecto; `BLOB_READ_WRITE_TOKEN` lo pone Vercel.
+- Stripe: recurso `numi-mates` de la integración de Stripe del equipo conectado al proyecto. Pone `STRIPE_SECRET_KEY`
+  (`sk_test_`) del «Entorno de prueba de Numi Mates» (`acct_1UKvWA9ds25vHCsF`, sandbox). `scripts/stripe-configurar.mjs`
+  creó ahí los dos productos, sus precios y el webhook; `STRIPE_PRICE_PDF`, `STRIPE_PRICE_TAPA_DURA` y
+  `STRIPE_WEBHOOK_SECRET` están en Vercel.
+- `ADMIN_TOKEN` está como variable **no sensible**, para que se pueda leer en Vercel y copiar a las tareas programadas.
+  El resto de variables que se añaden con el CLI quedan como sensibles (no se pueden volver a leer).
+- Next.js subido de 15.5.6 a 15.5.28: Vercel bloquea el despliegue de 15.5.6 por el CVE-2025-66478.
+- Comprobado en producción: `/` y `/ca/muestras/la-martina-i-els-secrets-de-lleida` dan 200; `/api/admin/resumen` da el
+  JSON; `/admin` muestra stripe «prueba», imprenta «simulado», texto «plantilla (sin IA)» y almacén «Vercel Blob»;
+  `/api/cron/procesar` responde.
+- Faltan (Moisés): alta en Gelato y `GELATO_API_KEY` (pasos 2, 6 y 7); `LEGAL_*`, `CORREO_SOPORTE` y `RESEND_API_KEY`
+  en Vercel → lunilla → Settings → Environment Variables; y el pago de prueba con la tarjeta 4242.
+
+Ejecutado el 2026-10-28
