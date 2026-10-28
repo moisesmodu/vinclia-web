@@ -137,3 +137,8 @@ Ejecutado el 2026-10-28
 - `LEGAL_*`, `CORREO_SOPORTE` y `RESEND_API_KEY` ya existen como secretos del entorno: copiarlos a Vercel (no es tarea de Moisés).
 - Pago de prueba con la tarjeta 4242: `URL_BASE=https://lunilla.vercel.app ADMIN_TOKEN=… npm run prueba:e2e` (usa Playwright
   en Stripe Checkout; si los selectores de Stripe han cambiado, hacerlo a mano una vez y anotarlo aquí).
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:09)
+Publicados la identidad de marca y la portada nueva (commit 6b3d3e0) en https://lunilla.vercel.app; el título es «Lunilla · Un cuento donde el protagonista eres tú». `LEGAL_*`, `CORREO_SOPORTE` (= `LEGAL_EMAIL`) y `RESEND_API_KEY` copiados en Vercel desde el proyecto ccse-en-tu-idioma; remitente `Lunilla <noreply@numimates.com>`. No se ha conectado el repositorio a Vercel: con commits de «Claude», Vercel bloquearía los despliegues automáticos. Pendiente: alta en Gelato y `GELATO_API_KEY` (Moisés) y el pago de prueba con la tarjeta 4242.
+
+Ejecutado el 2026-10-28
