@@ -94,3 +94,22 @@ Pon el código en la variable `GOOGLE_SITE_VERIFICATION` (la web la añade en `<
 ## Lanzamiento con dinero real (cuando se decida)
 `STRIPE_MODO=live`, `STRIPE_SECRET_KEY` (clave restringida de Numi Mates) y volver a ejecutar el paso 3 con `STRIPE_KEY="$STRIPE_SECRET_KEY"`
 (crea el producto, el precio y el webhook en modo real) y desplegar.
+
+## Cómo se ejecutó (sesión del Mac, 28-10-2026)
+- Vercel: proyecto `ccse-en-tu-idioma` creado con el CLI ya autenticado en el Mac (sin `VERCEL_TOKEN`), Root Directory
+  `proyectos/a-ccse`, conectado a `moisesmodu/vinclia-web`. URL de producción: https://ccse-en-tu-idioma.vercel.app
+- Neon: recurso `cartera-a-ccse` (región `lhr1`, Londres, plan gratis) creado con la integración de Neon del equipo de
+  Vercel (sin `NEON_API_KEY`); `DATABASE_URL` la pone la integración. Migración `0001_inicial` aplicada.
+- Stripe: recurso `numi-mates` de la integración de Stripe del equipo conectado al proyecto. Pone `STRIPE_SECRET_KEY`
+  del «Entorno de prueba de Numi Mates» (`acct_1UKvWA9ds25vHCsF`, sandbox), que `lib/stripe.ts` usa con `STRIPE_MODO=test`.
+  `scripts/stripe-configurar.mjs` creó ahí el precio y el webhook; `STRIPE_WEBHOOK_SECRET` está en Vercel.
+- Next.js subido de 15.5.6 a 15.5.28: Vercel bloquea el despliegue de 15.5.6 por el CVE-2025-66478.
+- En un equipo Hobby conectado a GitHub, Vercel bloquea (`TEAM_ACCESS_REQUIRED`) los despliegues cuyo último commit es de
+  «Claude <noreply@anthropic.com>»: el despliegue a producción se hizo desde un commit de moisesmodu.
+- Faltan (los pone Moisés en Vercel → ccse-en-tu-idioma → Settings → Environment Variables): `LEGAL_NOM`, `LEGAL_NIF`,
+  `LEGAL_EMAIL`, `LEGAL_ADRECA` y, opcional, `RESEND_API_KEY`. Falta también el pago de prueba con la tarjeta 4242
+  (crear cuenta en `/es/precio`, pagar y ver «Acceso completo hasta…» a 90 días).
+
+Ejecutado el 2026-10-28
+
+Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://ccse-en-tu-idioma.vercel.app (aviso legal con NIF comprobado). Ignored Build Step `git diff HEAD^ HEAD --quiet -- proyectos/a-ccse` puesto en Vercel. Pendiente: pago de prueba con la tarjeta 4242.
