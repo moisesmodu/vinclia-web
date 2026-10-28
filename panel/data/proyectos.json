@@ -2486,7 +2486,7 @@
     "nombre": "Webs con AdSense",
     "marca": "Pasivos",
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 11,
     "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas",
     "margenCliente": 0,
@@ -2498,7 +2498,9 @@
     "enlaces": {
       "PR #6": "https://github.com/moisesmodu/vinclia-web/pull/6",
       "Vista previa NetoClaro": "https://claude.ai/artifact/F9sSMk1BPYGb7vDcERaAke",
-      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq"
+      "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
+      "NetoClaro": "https://netoclaro.vercel.app/",
+      "ImpuestoClaro": "https://impuestoclaro.vercel.app/"
     },
     "acciones": [
       {
@@ -2528,10 +2530,13 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md listo para la sesión del Mac con dos caminos: Cloudflare Pages (gratis, publicación automática en cada push si hay token) o dos proyectos de Vercel (netoclaro e impuestoclaro); variable SITIO y datos legales LEGAL_*; sin Neon ni Stripe"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md",
       "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
       "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
     ],
