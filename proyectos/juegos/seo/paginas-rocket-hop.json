@@ -1,0 +1,77 @@
+[
+  {
+    "path": "play/rocket-hop",
+    "title": "Rocket Hop – Free One-Button Rocket Landing Game",
+    "description": "Play Rocket Hop free in your browser: hold to fire the thruster, release to fall, and land softly on moving platforms before the fuel runs out.",
+    "h1": "Rocket Hop",
+    "body": [
+      "Hold to fire the thruster, release to fall, and hop your little rocket from one floating platform to the next. Land slowly and upright, or it goes boom.",
+      "A perfect landing on the yellow target refills your fuel and gives bonus points. One button, no text, runs of one to three minutes, and it works on phones, tablets, Chromebooks and desktops. Your best score is saved automatically.",
+      "New here? Read <a href=\"../../rocket-hop/how-to-play/\">how to play</a> and the <a href=\"../../rocket-hop/tips/\">tips for perfect landings</a>."
+    ],
+    "game": "rocket-hop",
+    "hub": null,
+    "embed": true
+  },
+  {
+    "path": "rocket-hop/how-to-play",
+    "title": "How to Play Rocket Hop – Controls, Fuel and Perfect Landings",
+    "description": "Rocket Hop controls in one line: hold to thrust, release to fall. Learn how fuel, perfect landings, combos and wind work.",
+    "h1": "How to play Rocket Hop",
+    "body": [
+      "Rocket Hop uses a single input. <b>Hold</b> the mouse button, your finger or the Space bar to fire the thruster. <b>Release</b> to cut the engine and fall.",
+      "While the thruster is on, the rocket leans by itself towards the next platform, the one with the blinking yellow light. When you let go it straightens up, so you can line up a landing.",
+      "The bar in the top left corner is your fuel. It drains while you hold. Every new platform gives a little back; a <b>perfect landing</b> (slow, upright and on the yellow stripe in the middle) gives a lot back and earns bonus points. Perfect landings in a row are worth +1, +2 and then +3 extra.",
+      "The run ends if you hit a platform too hard, land tilted, clip the side of a platform, tip over, fall past the platforms, or sit on a platform with an empty tank. Later platforms move faster, get narrower and sit farther apart, and from platform 12 gusts of space wind (shown by an arrow under the score) push the rocket sideways."
+    ],
+    "game": "rocket-hop",
+    "hub": null
+  },
+  {
+    "path": "rocket-hop/tips",
+    "title": "Rocket Hop Tips: Perfect Landings and Saving Fuel",
+    "description": "Seven practical tips to beat your best score in Rocket Hop: short bursts, braking before touchdown, moving platforms and wind.",
+    "h1": "Rocket Hop tips and tricks",
+    "body": [
+      "<b>Short bursts beat long holds.</b> A long hold burns fuel and sends you high and fast. Two or three short bursts get you across with fuel to spare.",
+      "<b>Brake late, not early.</b> Fall freely towards the platform and give one firm burst just above it. Hovering all the way down empties the tank.",
+      "<b>Let go just before touchdown.</b> The rocket straightens up when you release, so releasing a moment before landing gives the upright touchdown a perfect landing needs.",
+      "<b>Watch moving platforms for one cycle.</b> Take off when the platform is heading towards you, not away from you.",
+      "<b>Aim for the yellow stripe.</b> Perfect landings refuel you; chains of them are where the big scores come from.",
+      "<b>Low fuel?</b> When the bar turns red, stop chasing combos and just reach the next platform safely: every landing gives a little fuel back.",
+      "<b>Wind arrow?</b> Wait on the platform for the gust to pass before you take off."
+    ],
+    "game": "rocket-hop",
+    "hub": null
+  },
+  {
+    "path": "rocket-hop/for-schools",
+    "title": "Rocket Hop for Schools and Kids – Safe, Short, No Sign-up",
+    "description": "Rocket Hop is a short, text-free physics game that works on school Chromebooks: no chat, no purchases, no account.",
+    "h1": "Rocket Hop for classrooms and kids",
+    "body": [
+      "Rocket Hop has no chat, no purchases, no account and no personal data. Runs last one to three minutes, which makes it a good reward between tasks.",
+      "There is no text in the game, so it works the same for children who are still learning to read and for students of any language.",
+      "It is a playful introduction to forces: thrust against gravity, momentum that keeps the rocket moving, and why a soft landing needs braking before touchdown. Managing the fuel bar adds a small lesson in planning.",
+      "It runs in the browser on Chromebooks, tablets and phones, and loads in a couple of seconds (1.6 MB)."
+    ],
+    "game": "rocket-hop",
+    "hub": null
+  },
+  {
+    "path": "rocket-hop/faq",
+    "title": "Rocket Hop FAQ",
+    "description": "Answers about Rocket Hop: is it free, does it save, does it work on mobile and Chromebook, why did my rocket explode.",
+    "h1": "Rocket Hop: frequently asked questions",
+    "body": [
+      "<b>Is it free?</b> Yes, it is free to play in the browser.",
+      "<b>Does it save my progress?</b> Yes. Your best score and your total number of perfect landings are stored in your browser.",
+      "<b>Does it work on phones and Chromebooks?</b> Yes, with touch, mouse or keyboard, in landscape or portrait.",
+      "<b>Why did my rocket explode?</b> It landed too fast, too tilted, hit the side of a platform or fell past them. Brake with a short burst just above the platform and let go right before touchdown.",
+      "<b>What does the yellow stripe do?</b> Landing on it slowly and upright is a perfect landing: it refills fuel and gives bonus points.",
+      "<b>Can I turn the music off?</b> Yes, with the speaker button in the top right corner."
+    ],
+    "game": "rocket-hop",
+    "hub": null
+  }
+]

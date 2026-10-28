@@ -59,13 +59,22 @@
   {
     "slug": "rocket-hop",
     "titulo": "Rocket Hop",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff",
+    "genero": "Habilidad con físicas (aterrizajes de cohete), una pulsación",
+    "estado": "listo para enviar",
+    "color": "#211a78",
     "ids": {
       "gamedistribution": "",
       "gamemonetize": ""
-    }
+    },
+    "descripcion": "Hold to fire the thruster, release to fall. Hop between moving platforms and nail perfect landings before the fuel runs out!",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games",
+      "space-games"
+    ]
   },
   {
     "slug": "jelly-stack",

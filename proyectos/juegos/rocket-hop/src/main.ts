@@ -2,10 +2,14 @@ import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#211a78',
+  scenes: [Boot, Menu, Play, Hud],
+  // Matter a paso fijo (Play.update hace world.step a 60 Hz con acumulador, como Egg Truck).
+  physics: {
+    default: 'matter',
+    matter: { autoUpdate: false, gravity: { x: 0, y: 1 }, positionIterations: 8, velocityIterations: 6, debug: false },
+  },
 });
