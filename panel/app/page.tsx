@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Camino from '@/components/Camino';
 import { Probabilidad, Veredicto } from '@/components/Juicio';
-import { cartera, proyectos, ultimaAccion, euros, fecha } from '@/lib/data';
+import { webs, cartera, proyectos, ultimaAccion, euros, fecha } from '@/lib/data';
 
 export default function Inicio() {
   const c = cartera();
@@ -78,6 +78,26 @@ export default function Inicio() {
           </div>
         </section>
       )}
+
+      <section className="donde-ver">
+        <h2>Dónde ver cada proyecto</h2>
+        <p className="nota">Las webs en producción se abren desde cualquier sitio; las vistas previas son páginas privadas tuyas en claude.ai.</p>
+        <div className="libro">
+          <div className="fila fila-ver fila-cab"><span>Proyecto</span><span>Web en producción</span><span>Vista previa</span><span>Código</span></div>
+          {lista.map((p) => {
+            const w = webs(p); const prod = w.filter((x) => x.tipo === 'web'); const prev = w.filter((x) => x.tipo === 'vista previa');
+            const pr = Object.entries(p.enlaces).find(([k]) => k.startsWith('PR'));
+            return (
+              <div className={`fila fila-ver estado-${p.estado.replace(' ', '-')}`} key={p.clave}>
+                <span className="fila-nombre"><span className="letra">{p.letra}</span><span><b><Link href={`/p/${p.clave}/`}>{p.nombre}</Link></b><small>{p.estado}</small></span></span>
+                <span data-etiqueta="Web">{prod.length ? prod.map((x) => <a key={x.url} href={x.url} target="_blank" rel="noopener" className="boton-web">{x.nombre}</a>) : <small>todavía no</small>}</span>
+                <span data-etiqueta="Vista previa">{prev.length ? prev.map((x) => <a key={x.url} href={x.url} target="_blank" rel="noopener">{x.nombre}</a>) : <small>—</small>}</span>
+                <span data-etiqueta="Código">{pr ? <a href={pr[1]} target="_blank" rel="noopener">{pr[0]}</a> : <small>sin PR</small>}</span>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       <section>
         <h2>Los proyectos</h2>

@@ -4,7 +4,7 @@ import Copiar from '@/components/Copiar';
 import Lider from '@/components/Lider';
 import Marca from '@/components/Marca';
 import Juicio from '@/components/Juicio';
-import { proyecto, proyectos, promptDe, identidad, euros, fecha, REPO, RAMA } from '@/lib/data';
+import { proyecto, proyectos, promptDe, identidad, webs, euros, fecha, REPO, RAMA } from '@/lib/data';
 
 export function generateStaticParams() {
   return proyectos().map((p) => ({ clave: p.clave }));
@@ -32,6 +32,11 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
             <span className="pastilla">{p.estado}</span> {p.marca}
             {p.fechaLimite && <> · fecha límite {fecha(p.fechaLimite)}</>}
           </p>
+          {webs(p).length > 0 && (
+            <p className="botones-web">
+              {webs(p).map((x) => <a key={x.url} href={x.url} target="_blank" rel="noopener" className={x.tipo === 'web' ? 'boton-web' : 'boton-prev'}>{x.tipo === 'web' ? 'Abrir ' : 'Vista previa: '}{x.nombre}</a>)}
+            </p>
+          )}
         </div>
       </header>
 

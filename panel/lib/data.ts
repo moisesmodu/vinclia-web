@@ -123,3 +123,10 @@ export const REPO = 'moisesmodu/vinclia-web';
 
 export const fecha = (iso: string) =>
   new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso));
+
+/** Enlaces «de fuera»: URLs de producción o vistas previas, sin GitHub ni documentos internos. */
+export function webs(p: Proyecto): { nombre: string; url: string; tipo: 'web' | 'vista previa' }[] {
+  return Object.entries(p.enlaces)
+    .filter(([, u]) => !u.includes('github.com'))
+    .map(([nombre, url]) => ({ nombre, url, tipo: url.includes('claude.ai') ? 'vista previa' : 'web' }));
+}
