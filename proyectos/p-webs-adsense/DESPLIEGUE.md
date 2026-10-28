@@ -99,6 +99,10 @@ Después, abre una calculadora en el móvil y cambia una cifra: el resultado se 
   a `lanzado`.
 - Cuando Moisés mande el `ca-pub-…`, ponlo como variable `ADSENSE_CLIENT` del repositorio (A) o del proyecto (B) y
   redespliega.
+  Activa los anuncios automáticos en AdSense. Cuando cree los bloques «bajo-resultado» y «fin-contenido», pon sus IDs
+  en `ADSENSE_SLOT_RESULTADO` y `ADSENSE_SLOT_FINAL` y redespliega. No hay que tocar código (MONETIZACION.md).
+- Correo (DESPLIEGUES.md §6): `LEGAL_EMAIL=hola@numimates.com` y **no** definas `LEGAL_EMAIL_SITIO` hasta tener los
+  dominios. Sin variable, el código ya usa hola@numimates.com.
 - Añade al final de este archivo: `Ejecutado el <fecha>`.
 
 Ejecutado el 28/10/2026 desde la sesión del Mac, camino B (Vercel Pro): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con SITIO, SITE_URL y LEGAL_* en production.
