@@ -753,6 +753,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca aplicada: nube Nuvolet en la pantalla de carga (Egg Truck y plantilla), favicon con el icono del estudio, «Nuvolet Games» en las fichas de CrazyGames/Poki/itch.io, en /play y en el pie del sitio; paquetes zip regenerados"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Redesplegado en producción (https://juegos-casuales.vercel.app) con la identidad Nuvolet Games (commit e21928d) desde la sesión del Mac. El proyecto de Vercel juegos-casuales tiene ahora Root Directory proyectos/juegos para que el build lea marcas/logos de la raíz."
       }
     ],
     "proximos": [

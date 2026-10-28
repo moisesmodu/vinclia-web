@@ -47,3 +47,15 @@ vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
 ```
 Comprobar: la pantalla de carga de `/egg-truck/` muestra la nube azul y «Nuvolet Games»; la portada del sitio lleva el
 logotipo arriba y el pie «Nuvolet Games · Tiny games, big smiles.».
+
+### Hecho (sesión del Mac, 28-10-2026)
+Redesplegado `juegos-casuales` con el commit e21928d: la portada, `/egg-truck/` y `/marca/juegos.svg` llevan Nuvolet Games y
+hay `sitemap.xml`. El build nuevo copia `../../marcas/logos/*.svg` desde la raíz del repo, y desplegar solo
+`proyectos/juegos` fallaba (`ENOENT /marcas/logos/juegos.svg`). Por eso el proyecto de Vercel tiene ahora **Root Directory
+`proyectos/juegos`** y se despliega **desde la raíz del repositorio**:
+```bash
+vercel link --yes --project juegos-casuales   # en la raíz del repo, no en proyectos/juegos
+vercel deploy --prod --yes
+```
+
+Ejecutado el 2026-10-28
