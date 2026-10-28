@@ -83,7 +83,7 @@ Reglas que cumple cada juego (las piden ambos portales):
 ## Gasto de IA de esta sesión
 | Herramienta | Uso | Créditos |
 |---|---|---|
-| Higgsfield | 3 portadas en alta calidad 2K (2,75 cada una) + fondo de menú en calidad media 1K | ≈ 9 de los 60 de tope |
+| Higgsfield | 3 portadas en alta calidad 2K (2,75 cada una) + fondo de menú en calidad media 1K (0,5) | 8,75 de los 60 de tope (comprobado en el historial de transacciones) |
 | ElevenLabs | 1 pista de música de 32 s (Music v2.5) | 900 créditos de ElevenLabs (0,18 $) |
 
 El tope de 60 se ha aplicado a Higgsfield. En ElevenLabs los créditos son otra unidad (1.500 ≈ 0,30 $), así que se ha
