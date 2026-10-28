@@ -46,4 +46,6 @@ precios, guía SEO, versión en castellano, registro en Neon y sesión real de S
 checkout.stripe.com (no se abre desde la sesión), el correo real de recuperación y de alertas (Resend configurado, no disparado), la voz
 sintetizada y el Whisper (sin proveedor), y la corrección con modelo de lenguaje (sin clave).
 
+**Aviso:** un despliegue lanzado por error desde `proyectos/m-catala` (en vez de la raíz) creó un segundo proyecto de Vercel llamado `m-catala` (https://m-catala.vercel.app), sin base de datos ni variables. No se usa: Moisés puede borrarlo en vercel.com → m-catala → Settings → Delete (la sesión no tuvo permiso para borrarlo). El bueno es `aprova-catala`.
+
 Ejecutado el 2026-10-28

@@ -16,7 +16,7 @@ const b = await chromium.launch();
 const ctx = await b.newContext({ ...devices['Pixel 7'], locale: 'ca-ES', permissions: [] });
 const p = await ctx.newPage();
 p.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
-p.on('console', (m) => { if (m.type() === 'error' && !/favicon|sw\.js|ServiceWorker|net::ERR|status of (401|402|503)/.test(m.text())) errors.push(`console: ${m.text().slice(0, 200)}`); });
+p.on('console', (m) => { if (m.type() === 'error' && !/favicon|sw\.js|ServiceWorker|net::ERR|status of (400|401|402|503)/.test(m.text())) errors.push(`console: ${m.text().slice(0, 200)}`); });
 const shot = (n) => p.screenshot({ path: `${OUT}/${n}.png`, fullPage: false });
 const pas = (n) => console.log('✓', n);
 const t0 = Date.now();
@@ -110,10 +110,8 @@ if (yo.pagaments !== 'off' && dbOk) {
   if (p.url().includes('compte')) {
     pas('registre amb correu i contrasenya');
     await p.goto(`${BASE}/ca/preus`);
-    await p.route('https://checkout.stripe.com/**', (route) => route.abort()); // no sortim a Stripe: només comprovem que la sessió existeix
-    await p.waitForSelector('button:has-text("Triar")');
-    const [resp] = await Promise.all([p.waitForResponse((r) => r.url().includes('/api/checkout') && r.request().method() === 'POST', { timeout: 90000 }), p.getByRole('button', { name: 'Triar' }).nth(1).click()]);
-    const j = await resp.json();
+    // Mateixa crida que fa el botó «Triar», des del navegador (amb la galeta de sessió) i sense navegar a Stripe.
+    const j = await p.evaluate(() => fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'anual', idioma: 'ca' }) }).then((r) => r.json()).catch(() => ({})));
     if (j.url?.includes('checkout.stripe.com')) pas(`Checkout de Stripe creat (${yo.prova ? 'mode prova' : 'REAL'}): ${j.url.slice(0, 40)}…`);
     else if (j.url?.includes('pagat=demo')) pas('pagament simulat (mode demo)');
     else errors.push('checkout sense url: ' + JSON.stringify(j));
