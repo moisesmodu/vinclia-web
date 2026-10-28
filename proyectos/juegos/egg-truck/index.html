@@ -6,18 +6,22 @@
   <title>Egg Truck</title>
   <meta name="description" content="Hold to drive, release to brake. Carry the egg over the hills without cracking it!" />
   <link rel="icon" type="image/png" href="./favicon.png" />
+  <meta name="author" content="Nuvolet Games" />
   <style>
     html, body { margin: 0; height: 100%; background: #6cc8ff; overflow: hidden; touch-action: none;
       -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }
     #game { position: fixed; inset: 0; }
-    #loader { position: fixed; inset: 0; display: grid; place-items: center; background: #6cc8ff; z-index: 10; }
-    #loader .egg { width: 54px; height: 70px; background: #fff8ec; border: 5px solid #2b2340;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; animation: wob .7s ease-in-out infinite alternate; }
-    @keyframes wob { from { transform: rotate(-12deg) translateY(0) } to { transform: rotate(12deg) translateY(-14px) } }
+    /* Pantalla de carga con la nube de Nuvolet Games (MARCAS.md): igual en todos los juegos del estudio */
+    #loader { position: fixed; inset: 0; display: grid; place-content: center; justify-items: center; gap: 10px; background: #F4FAFF; z-index: 10;
+      font-family: "Fredoka", "Nunito", "Arial Rounded MT Bold", system-ui, sans-serif; color: #1E2A3A; }
+    #loader .nube { animation: flota .9s ease-in-out infinite alternate; }
+    #loader .estudio { font-weight: 600; font-size: 20px; letter-spacing: .02em; }
+    @keyframes flota { from { transform: translateY(0) } to { transform: translateY(-12px) } }
+    @media (prefers-reduced-motion: reduce) { #loader .nube { animation: none } }
   </style>
 </head>
 <body>
-  <div id="loader"><div class="egg"></div></div>
+  <div id="loader"><svg class="nube" viewBox="0 0 56 56" width="96" height="96" aria-hidden="true"><path d="M16 46a10 10 0 0 1-2-19.8A14 14 0 0 1 41 22a9 9 0 0 1 2 24z" fill="#4FB3FF"/><circle cx="24" cy="33" r="2" fill="#1E2A3A"/><circle cx="36" cy="33" r="2" fill="#1E2A3A"/><path d="M25 39q5 4 10 0" stroke="#1E2A3A" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg><div class="estudio">Nuvolet Games</div></div>
   <div id="game"></div>
   <script type="module" src="./src/main.ts"></script>
 </body>

@@ -25,6 +25,13 @@ for (const g of games) {
   }
 }
 
+// Marca del estudio (MARCAS.md · Nuvolet Games): logotipo e icono de marcas/logos, pie común en todas las páginas.
+const STUDIO = 'Nuvolet Games', TAGLINE = 'Tiny games, big smiles.';
+mkdirSync(resolve(root, 'dist', 'marca'), { recursive: true });
+for (const f of ['juegos.svg', 'juegos-icono.svg']) cpSync(resolve(root, '..', '..', 'marcas', 'logos', f), resolve(root, 'dist', 'marca', f));
+const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap">';
+const footer = (up) => `<footer style="text-align:center;padding:24px 16px 32px;color:#1E2A3A"><img src="${up}marca/juegos-icono.svg" alt="" width="28" height="28" style="vertical-align:middle"> <b>${STUDIO}</b> · ${TAGLINE}</footer>`;
+
 // Portada del catálogo en la web propia (tráfico directo: el 100 % de los ingresos es nuestro).
 const cards = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).map((g) => {
   const img = existsSync(resolve(root, 'fichas', g.slug, 'portadas', `${g.slug}-800x800.jpg`));
@@ -36,14 +43,14 @@ const cards = JSON.parse(readFileSync(resolve(root, 'juegos.json'), 'utf8')).map
 }).join('\n');
 mkdirSync(resolve(root, 'dist'), { recursive: true });
 writeFileSync(resolve(root, 'dist', 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Free Casual Games – play in your browser</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Nuvolet Games – free casual games</title><link rel="icon" href="./marca/juegos-icono.svg">${FONTS}
 <meta name="description" content="Free casual browser games. No download, no sign-up: play instantly on phone or computer.">
-<style>body{margin:0;font-family:system-ui,sans-serif;background:#6cc8ff;color:#2b2340}h1{text-align:center;margin:24px 16px}
+<style>body{margin:0;font-family:Nunito,system-ui,sans-serif;background:#F4FAFF;color:#1E2A3A}h1{font-family:Fredoka,Nunito,sans-serif;text-align:center;margin:8px 16px 24px}header{text-align:center;padding:24px 16px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;max-width:1000px;margin:0 auto;padding:0 16px 32px}
-.card{display:block;background:#fff;border:4px solid #2b2340;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;font-weight:800;text-align:center}
+.card{display:block;background:#fff;border:4px solid #1E2A3A;border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;font-weight:700;text-align:center}
 .card img{width:100%;display:block;aspect-ratio:1}.card span{display:block;padding:10px}</style></head>
-<body><h1>Free Casual Games</h1><div class="grid">${cards}</div>
-<p style="text-align:center;padding:0 16px 32px">${JSON.parse(readFileSync(resolve(root, 'seo', 'paginas.json'), 'utf8')).filter((p) => p.hub).map((p) => `<a href="./${p.path}/" style="color:#2b2340;margin:0 8px">${p.h1}</a>`).join(' · ')}</p></body></html>`);
+<body><header><img src="./marca/juegos.svg" alt="Nuvolet Games" height="56"></header><h1>Free casual games</h1><div class="grid">${cards}</div>
+<p style="text-align:center;padding:0 16px 32px">${JSON.parse(readFileSync(resolve(root, 'seo', 'paginas.json'), 'utf8')).filter((p) => p.hub).map((p) => `<a href="./${p.path}/" style="color:#1E2A3A;margin:0 8px">${p.h1}</a>`).join(' · ')}</p>${footer('./')}</body></html>`);
 console.log('✔ dist/index.html (catálogo)');
 
 // Páginas SEO de la web propia (seo/paginas.json): guías por juego y categorías que se llenan solas con las etiquetas
@@ -59,14 +66,14 @@ for (const pg of pages) {
   const cardsHtml = listed.map((x) => `<a class="card" href="${up}${x.slug}/"><img src="${up}portadas/${x.slug}.jpg" alt="${esc(x.titulo)}" loading="lazy"><span>Play ${esc(x.titulo)}</span></a>`).join('');
   const embed = pg.embed && g ? `<div class="embed"><iframe src="${up}${g.slug}/" title="${esc(g.titulo)}" allow="autoplay; fullscreen" loading="lazy"></iframe></div>` : '';
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(pg.title)}</title><meta name="description" content="${esc(pg.description)}">${site ? `<link rel="canonical" href="${site}/${pg.path}/">` : ''}
-<style>body{margin:0;font-family:system-ui,sans-serif;background:#6cc8ff;color:#2b2340;line-height:1.55}main{max-width:820px;margin:0 auto;padding:16px}
-h1{font-size:2rem;margin:.6em 0}.box{background:#fff;border:4px solid #2b2340;border-radius:18px;padding:8px 20px;margin:16px 0}
-.embed{position:relative;aspect-ratio:16/9;border:4px solid #2b2340;border-radius:18px;overflow:hidden;background:#000}.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}.card{display:block;background:#fff;border:4px solid #2b2340;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;font-weight:800;text-align:center}
-.card img{width:100%;display:block;aspect-ratio:1}.card span{display:block;padding:8px}nav a{color:#2b2340;font-weight:700}</style></head>
-<body><main><nav><a href="${up}">← All games</a></nav><h1>${esc(pg.h1)}</h1>${embed}
-<div class="box">${pg.body.map((p) => `<p>${p}</p>`).join('')}</div>${cardsHtml ? `<div class="grid">${cardsHtml}</div>` : ''}</main></body></html>`;
+<title>${esc(pg.title)}</title><link rel="icon" href="${up}marca/juegos-icono.svg">${FONTS}<meta name="author" content="${STUDIO}"><meta name="description" content="${esc(pg.description)}">${site ? `<link rel="canonical" href="${site}/${pg.path}/">` : ''}
+<style>body{margin:0;font-family:Nunito,system-ui,sans-serif;background:#F4FAFF;color:#1E2A3A;line-height:1.55}h1,h2{font-family:Fredoka,Nunito,sans-serif}.by{margin:-.4em 0 1em;font-weight:700;color:#4a6a8a}main{max-width:820px;margin:0 auto;padding:16px}
+h1{font-size:2rem;margin:.6em 0}.box{background:#fff;border:4px solid #1E2A3A;border-radius:18px;padding:8px 20px;margin:16px 0}
+.embed{position:relative;aspect-ratio:16/9;border:4px solid #1E2A3A;border-radius:18px;overflow:hidden;background:#000}.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}.card{display:block;background:#fff;border:4px solid #1E2A3A;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;font-weight:800;text-align:center}
+.card img{width:100%;display:block;aspect-ratio:1}.card span{display:block;padding:8px}nav a{color:#1E2A3A;font-weight:700}</style></head>
+<body><main><nav><a href="${up}">← All games</a></nav><h1>${esc(pg.h1)}</h1>${g ? `<p class="by">by ${STUDIO}</p>` : ''}${embed}
+<div class="box">${pg.body.map((p) => `<p>${p}</p>`).join('')}</div>${cardsHtml ? `<div class="grid">${cardsHtml}</div>` : ''}</main>${footer(up)}</body></html>`;
   mkdirSync(resolve(root, 'dist', pg.path), { recursive: true });
   writeFileSync(resolve(root, 'dist', pg.path, 'index.html'), html);
 }

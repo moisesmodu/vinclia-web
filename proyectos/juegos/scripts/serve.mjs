@@ -3,7 +3,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { resolve, extname, join } from 'node:path';
 const dir = resolve(process.argv[2] || 'dist'), port = +(process.argv[3] || 5055);
-const types = { '.html': 'text/html', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.png': 'image/png', '.mp3': 'audio/mpeg', '.json': 'application/json', '.css': 'text/css' };
+const types = { '.html': 'text/html', '.js': 'text/javascript', '.jpg': 'image/jpeg', '.png': 'image/png', '.mp3': 'audio/mpeg', '.json': 'application/json', '.css': 'text/css', '.svg': 'image/svg+xml' };
 export const server = createServer(async (req, res) => {
   let p = decodeURIComponent((req.url || '/').split('?')[0]);
   if (p.endsWith('/')) p += 'index.html';

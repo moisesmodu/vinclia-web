@@ -14,6 +14,12 @@ Un juego nuevo cada 2 semanas con la plantilla. El primero es **Egg Truck**.
 | `CATALOGO.md` | Los 11 juegos siguientes con género y gancho |
 | `ROBLOX.md` | Plan del primer juego de Roblox publicado por Open Cloud (sin construir) |
 
+## Marca
+Estudio **Nuvolet Games** («Tiny games, big smiles.», `MARCAS.md` y `marcas/tokens.json`). La nube del estudio sale en la
+pantalla de carga de todos los juegos (`index.html` de cada juego y de la plantilla), el favicon es
+`marcas/logos/juegos-icono.svg` y el sitio usa el logotipo, Fredoka y Nunito, y el pie común. Dentro del juego, la
+paleta es la de cada título.
+
 ## Comandos
 ```bash
 cd proyectos/juegos

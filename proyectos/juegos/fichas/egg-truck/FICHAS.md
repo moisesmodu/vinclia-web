@@ -5,6 +5,8 @@ raíz, 0,64 MB). Portadas: `portadas/`. Capturas 1920×1080: `capturas/`.
 
 ## Datos comunes
 - **Nombre:** Egg Truck
+- **Estudio / desarrollador (developer name en los tres portales):** Nuvolet Games · lema «Tiny games, big smiles.»
+  · web https://juegos-casuales.vercel.app (dominio previsto nuvolet.games) · icono del estudio: `fichas/estudio-icono-512.png`
 - **Género / categoría:** Driving · Physics · Casual (CrazyGames: *Driving* → subcategoría *Car*; Poki: *Car games* / *Driving*)
 - **Etiquetas:** driving, physics, car, truck, one button, egg, hill climb, casual, kids, mobile
 - **Controles:** ratón (mantener clic), táctil (mantener el dedo), teclado (espacio / flecha arriba / flecha derecha / W / D)
@@ -34,6 +36,8 @@ raíz, 0,64 MB). Portadas: `portadas/`. Capturas 1920×1080: `capturas/`.
 > • Collect stars, beat your best distance, plant a flag every 100 m
 > • Short runs of 1 to 3 minutes, instant restart
 > • Works on phone, tablet, Chromebook and desktop
+>
+> Made by Nuvolet Games. Tiny games, big smiles.
 
 **How to play / Controls**
 > Hold the mouse button, your finger or Space to drive. Release to brake. In the air: hold to lean back, release to
