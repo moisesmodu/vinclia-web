@@ -123,3 +123,8 @@ Los precios ya creados en Stripe sirven: el nombre del producto es «Cartera · 
   STRIPE_TEST_SECRET_KEY=… node scripts/stripe-preparar.mjs https://placa-oposicions.vercel.app` y guardar el
   `STRIPE_WEBHOOK_SECRET` que imprime.
 - Pago con la tarjeta 4242: checkout.stripe.com no se abre desde las sesiones en la nube; hay que hacerlo desde un navegador normal.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:09)
+Publicado el commit ed88527 (convocatorias 2027) en https://placa-oposicions.vercel.app; https://aprova-oposicions.vercel.app sigue respondiendo con la misma versión. `LEGAL_*` y `RESEND_API_KEY` copiados en Vercel desde el proyecto ccse-en-tu-idioma; el aviso legal ya muestra el NIF. Pendiente (Moisés): `STRIPE_TEST_SECRET_KEY` del modo prueba de la cuenta Numi Mates (`acct_1UKx8H4…`) y la clave real, si se quiere dejar el sandbox de la integración; y el pago de prueba con la tarjeta 4242.
+
+Ejecutado el 2026-10-28
