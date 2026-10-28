@@ -70,3 +70,9 @@ El redespliegue de 9ddf2ff publicó `/bike-flip/` (y el catálogo enlazaba rocke
 plantilla de ejemplo. Desde este commit, `npm run build` solo publica los juegos de `juegos.json` cuyo `estado` no sea
 «en desarrollo» (hoy: egg-truck y snow-plow). Volver a desplegar la rama con los comandos de arriba; comprobar que
 `/bike-flip/` da 404 hasta que ese juego se marque como listo.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 05:09)
+Publicado el commit 8fb4c96: solo salen los juegos terminados. Responden `/egg-truck/`, `/snow-plow/`, `/rocket-hop/` y
+`/jelly-stack/`, el catálogo enlaza esos cuatro y `/bike-flip/` da 404 (sigue «en desarrollo»).
+
+Ejecutado el 2026-10-28
