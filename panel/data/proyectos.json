@@ -86,6 +86,10 @@
    {
     "fecha": "2026-10-28",
     "texto": "Identidad de marca aplicada: CCSE en tu idioma por Nuevo en España (terracota, azul noche, crema y oliva; Outfit y Noto Sans; logotipo de arco), sello en el pie, pantalla de precio común con «cancela en un clic» real (borrar cuenta), app Android 1.0.1 con el icono nuevo"
+   },
+   {
+    "fecha": "2026-10-28",
+    "texto": "Prueba de humo en producción desde la nube: portada, aviso legal completo, muro de pago, registro en Neon y sesión real de Stripe Checkout en modo prueba, todo OK. Falta completar el pago con la tarjeta 4242 en el navegador (checkout.stripe.com no es accesible desde la nube)"
    }
   ],
   "proximos": [
@@ -96,9 +100,7 @@
   ],
   "paraMoises": [
    "Publicar el AAB en Google Play (enlace en PARA-MOISES.md)",
-   "Decidir dónde se guarda la clave de subida de Android",
-   "Poner LEGAL_NOM, LEGAL_NIF, LEGAL_EMAIL y LEGAL_ADRECA en Vercel (el aviso legal muestra «[falta LEGAL_…]»)",
-   "Opcional: RESEND_API_KEY en Vercel para recuperar la contraseña por correo"
+   "Decidir dónde se guarda la clave de subida de Android"
   ],
   "mejoras": [
    "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
