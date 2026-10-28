@@ -1,6 +1,6 @@
 # Para Moisés · Proyecto P (webs de herramientas con AdSense)
 
-Tres tareas que exigen a una persona. El despliegue en Vercel, los datos del aviso legal y la analítica los hace la
+Tareas que exigen a una persona. El despliegue (Cloudflare Pages o Vercel), las variables y la analítica los hace la
 sesión del Mac con `DESPLIEGUE.md`. No hace falta que crees proyectos ni pegues claves.
 
 ## 1. Comprar los 2 dominios (5 minutos, unos 8–12 € al año cada uno)
@@ -8,7 +8,7 @@ sesión del Mac con `DESPLIEGUE.md`. No hace falta que crees proyectos ni pegues
 He propuesto tres opciones por sitio, en orden de preferencia. Desde la sesión en la nube no he podido comprobar si
 están libres, porque el registro de dominios está bloqueado por la red. Compra la primera libre de cada lista en
 [DonDominio](https://www.dondominio.com/es/) o en cualquier registrador de .es, y dímelo. La sesión del Mac la conecta
-a Vercel.
+al despliegue.
 
 | Sitio | Opción 1 (la que lleva el código) | Opción 2 | Opción 3 |
 |---|---|---|---|
@@ -39,3 +39,8 @@ Hazlo cuando netoclaro.es ya cargue.
 3. En **Sitemaps** envía `https://netoclaro.es/sitemap.xml` y `https://impuestoclaro.es/sitemap.xml`.
 
 Para que el informe semanal lea los datos, conecta Search Console en claude.ai (**Ajustes → Conectores**) si aparece.
+
+## 4. NIF para el aviso legal (30 segundos, solo si hace falta)
+
+La ley obliga a mostrar el NIF del titular. Si la sesión del Mac ya tiene el secreto `LEGAL_NIF`, no hagas nada. Si no
+lo tiene, escribe en el PR #6 el NIF que quieras usar.

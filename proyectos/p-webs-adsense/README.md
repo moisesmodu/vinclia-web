@@ -64,17 +64,19 @@ SITIO=nomina npm run dev        # desarrollo
 node scripts/vista-previa.mjs nomina   # copia con enlaces relativos para alojar en una subcarpeta
 ```
 
-## Despliegue: un proyecto de Vercel por sitio
+## Despliegue: un proyecto por sitio
 
-Sigue `DESPLIEGUES.md` de la raíz. Esta sesión no tenía red hacia Vercel ni secretos, así que los pasos exactos para
-la sesión del Mac están en `DESPLIEGUE.md`: proyectos `netoclaro` e `impuestoclaro` en el equipo
-`moisesmodu-3705s-projects`. `vercel.json` fija la instalación, la compilación (`npm run publicar`) y la salida
-(`publicar`). Cloudflare Pages también sirve con los mismos valores si algún día se prefiere.
+Sigue `DESPLIEGUES.md` de la raíz. Esta sesión no tenía red ni secretos para desplegar, así que `DESPLIEGUE.md` deja los
+pasos exactos a la sesión del Mac. Hay dos caminos:
+
+- **A, recomendado: Cloudflare Pages.** Es gratis y admite uso comercial. Proyectos `netoclaro` e `impuestoclaro`.
+  El flujo de GitHub Actions compila y publica los dos sitios en cada push a la rama base cuando existen los secretos
+  `CLOUDFLARE_API_TOKEN` y `CLOUDFLARE_ACCOUNT_ID`.
+- **B: Vercel Pro.** Usa `vercel.json`, con Root Directory `proyectos/p-webs-adsense/fabrica`.
 
 | Campo | Valor |
 |---|---|
-| Root Directory | `proyectos/p-webs-adsense/fabrica` |
-| Build command / output | `npm run publicar` / `publicar` (en `vercel.json`) |
+| Build / output | `npm run publicar` / `publicar` |
 | Variables | `SITIO` = `nomina` o `impuestos`; `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` para el aviso legal |
 
 Variables opcionales, sin tocar el código:
@@ -103,7 +105,7 @@ Variables opcionales, sin tocar el código:
 - **Un país:** crea `params/<pais>/pais.json` y `params/<pais>/<año>/`, y el sitio con `"pais": "<pais>"`. Los motores
   de España no sirven para otro país: el sitio 3 (EE. UU.) tendrá sus propios motores en `src/lib/calc/us/`.
 - **Un sitio:** crea `sitios/<id>/sitio.json`, sus contenidos y sus fichas en `src/fichas/<id>.ts`, regístralas en
-  `src/lib/rutas.ts` y crea otro proyecto de Vercel con `SITIO=<id>` (DESPLIEGUE.md).
+  `src/lib/rutas.ts` y crea otro proyecto con `SITIO=<id>` (DESPLIEGUE.md).
 
 ## Decisiones tomadas
 

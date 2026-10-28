@@ -2469,19 +2469,20 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "DESPLIEGUE.md para la sesión del Mac (la nube no llega a api.vercel.com ni tiene secretos); PARA-MOISES reducido a dominios, AdSense y Search Console"
+        "texto": "PR #6: DESPLIEGUE.md con dos caminos (Cloudflare Pages por API y GitHub Actions, o Vercel Pro) para la sesión del Mac; PARA-MOISES solo con dominios, AdSense, Search Console y NIF si falta"
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md (dos proyectos de Vercel, LEGAL_* y dominios)",
+      "Sesión del Mac: ejecutar proyectos/p-webs-adsense/DESPLIEGUE.md (camino A Cloudflare Pages, o B Vercel) del PR #6",
       "Solicitar AdSense con el sitio 1 en su dominio; publicar el mensaje RGPD de Google",
       "Crear la tarea programada semanal: BOE, 20 páginas nuevas, Search Console e informe",
       "Sitio 3 (EE. UU. en español, chequeclaro.com) a las 6–8 semanas: abre Mediavine y Raptive"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
-      "Cuenta de AdSense: pasar el ca-pub y publicar el mensaje RGPD de Google",
-      "Search Console: verificar los dos dominios y enviar los sitemaps"
+      "Cuenta de AdSense: añadir el sitio, mandar el ca-pub y publicar el mensaje RGPD",
+      "Search Console: verificar los dos dominios y enviar los sitemaps",
+      "NIF para el aviso legal, solo si la sesión del Mac no tiene LEGAL_NIF"
     ],
     "mejoras": [
       "Arquitectura 'herramienta, explicación y dato local': cada calculadora en castellano y catalán con tablas oficiales actualizadas (IRPF estatal y catalán, SMI, cotizaciones, impuestos por comunidad) y fecha visible; es el formato con menor exposición a los resúmenes de IA.",
