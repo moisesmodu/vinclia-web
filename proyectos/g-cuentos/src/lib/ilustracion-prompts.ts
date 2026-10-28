@@ -22,7 +22,7 @@ export const PROTAGONISTAS: Record<"nino" | "nina", Protagonista> = {
   nino: {
     id: "nino",
     genero: "m",
-    hoja: "/personajes/nino-hoja.png",
+    hoja: "/personajes/nino-hoja.webp",
     hojaJobId: "b942fe56-e85b-445f-8d28-0517ad5ba957",
     descripcion:
       "the boy from the reference character sheet: a 5-year-old boy with light olive skin, round face with rosy cheeks, a few freckles across the nose, big dark-brown eyes and short tousled chestnut-brown curly hair",
@@ -34,7 +34,7 @@ export const PROTAGONISTAS: Record<"nino" | "nina", Protagonista> = {
   nina: {
     id: "nina",
     genero: "f",
-    hoja: "/personajes/nina-hoja.png",
+    hoja: "/personajes/nina-hoja.webp",
     hojaJobId: "b0d8da4c-2092-4e62-9371-97c9f0b7f21a",
     descripcion:
       "the girl from the reference character sheet: a 5-year-old girl with warm medium-brown skin, round soft cheeks, big bright dark-brown eyes and black curly hair in two round puffs tied with coral-red hair ties",

@@ -10,7 +10,9 @@
     "db:push": "prisma db push",
     "muestras": "tsx scripts/generar-muestras.ts",
     "prueba:e2e": "tsx scripts/prueba-e2e.ts",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "pg-local": "node scripts/pg-local.mjs",
+    "cotizar": "tsx scripts/cotizar.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

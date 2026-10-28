@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-crema: #fbf6ec;
+  --color-papel: #fffdf8;
+  --color-tinta: #33291f;
+  --color-suave: #7a6a58;
+  --color-noche: #29395f;
+  --color-terracota: #bd664a;
+  --color-terracota-osc: #9c4f37;
+  --color-salvia: #8fa68a;
+  --color-ocre: #d9a441;
+  --font-titulo: var(--font-sniglet), ui-rounded, system-ui, sans-serif;
+  --font-texto: var(--font-andika), ui-sans-serif, system-ui, sans-serif;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--color-crema); color: var(--color-tinta); font-family: var(--font-texto); }
+h1, h2, h3, .titulo { font-family: var(--font-titulo); color: var(--color-noche); letter-spacing: -0.01em; }
+a { text-underline-offset: 3px; }
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: 999px; background: var(--color-terracota); color: #fff; font-weight: 700; padding: .9rem 1.5rem; transition: background .15s; min-height: 48px; }
+.boton:hover { background: var(--color-terracota-osc); }
+.boton[disabled] { opacity: .6; }
+.boton-sec { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; border: 2px solid var(--color-noche); color: var(--color-noche); font-weight: 700; padding: .75rem 1.25rem; min-height: 48px; }
+.tarjeta { background: var(--color-papel); border-radius: 1.25rem; box-shadow: 0 1px 0 #e9dfcd, 0 10px 30px -18px #6b5434; }
+.campo { width: 100%; border-radius: .9rem; border: 1.5px solid #e2d6c1; background: #fff; padding: .75rem .9rem; font-size: 1rem; min-height: 48px; }
+.campo:focus { outline: 3px solid #f0c9a8; border-color: var(--color-terracota); }
+.etiqueta { display: block; font-weight: 700; margin-bottom: .35rem; font-size: .95rem; }
+.prosa p { margin: 0 0 1rem; line-height: 1.7; }
+.prosa h2 { font-size: 1.5rem; margin: 2rem 0 .75rem; }
+.prosa ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; }
+.prosa li { margin-bottom: .4rem; line-height: 1.6; }
+.marca-agua { position: relative; }
+.marca-agua::after { content: "VISTA PREVIA · LUNILLA"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transform: rotate(-24deg); font-family: var(--font-titulo); font-size: clamp(1rem, 4vw, 1.6rem); color: rgba(255,255,255,.55); text-shadow: 0 1px 4px rgba(0,0,0,.25); pointer-events: none; letter-spacing: .1em; }
