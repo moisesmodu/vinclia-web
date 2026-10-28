@@ -36,18 +36,19 @@ Estados: `borrador → pagado → ilustrando → maquetando → entregado` (PDF)
 | Protagonistas y prompts | `src/lib/ilustracion-prompts.ts`, `public/personajes/` | Niño y niña con hoja de personaje; nunca fotos |
 | Maquetación | `src/lib/maquetacion.ts` | Andika (lectura infantil) + Sniglet; TrimBox/BleedBox |
 | Imprenta | `src/lib/imprenta/gelato.ts` | Gelato API v4; `GELATO_MODO=borrador` por defecto |
-| Pagos | `src/lib/pagos.ts`, `src/app/api/stripe/webhook` | Stripe Checkout + webhook firmado |
+| Pagos | `src/lib/pagos.ts`, `src/app/api/stripe/webhook`, `scripts/stripe-configurar.mjs` | Stripe Checkout (cuenta Numi Mates) + webhook firmado |
 | Correo | `src/lib/correo.ts` | Resend; sin clave guarda los correos en `datos-locales/correos` |
 | Configuración por país | `src/config/paises/es-ES.json`, `content/es-ES`, `content/ca-ES` | Precios, IVA, imprenta, fechas, legal |
 
-## Despliegue (Vercel + Neon)
+## Despliegue (Vercel + Neon + Stripe de Numi Mates)
 
-1. Neon: crear proyecto `lunilla` en Frankfurt y copiar las dos cadenas de conexión.
-2. Vercel: importar el repo con **Root Directory = `proyectos/g-cuentos`**, plan Pro (uso comercial y cron cada 5 min).
-   Crear un Blob store en *Storage* (añade `BLOB_READ_WRITE_TOKEN`). Variables: ver `.env.example`.
-3. El esquema se aplica solo en cada build (`prisma db push`, que nunca borra datos: si un cambio lo exigiera, el build falla).
-4. Stripe: webhook a `https://<dominio>/api/stripe/webhook` con el evento `checkout.session.completed`.
-5. Gelato: `GELATO_API_KEY` y `GELATO_MODO=borrador` hasta haber visto un pedido de prueba correcto; luego `produccion`.
+Lo hace la sesión del Mac siguiendo **`DESPLIEGUE.md`** (receta exacta según `DESPLIEGUES.md` de la raíz): proyecto
+de Vercel `lunilla` con Root Directory `proyectos/g-cuentos`, Neon `cartera-g-cuentos`, productos y webhook de Stripe con
+`scripts/stripe-configurar.mjs` (repetible), alta en Gelato y prueba de punta a punta en producción. El esquema de la
+base de datos se aplica en cada build (`prisma db push`, que nunca borra datos). Variables: `.env.example`.
+
+Comprobador del entorno en esta sesión (`node scripts/comprobar-entorno.mjs`): red bloqueada a Stripe, Vercel, Neon y
+Resend, y sin secretos. Por eso no se desplegó desde la nube.
 
 Local:
 

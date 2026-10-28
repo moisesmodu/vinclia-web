@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { tokenValido } from "@/lib/admin";
 import { euros, margenEstimado } from "@/lib/config";
 import { db } from "@/lib/db";
+import { claveStripe } from "@/lib/pagos";
 import { modoImprenta } from "@/lib/imprenta/gelato";
 
 export const dynamic = "force-dynamic";
@@ -17,7 +18,7 @@ export default async function Admin({ searchParams }: { searchParams: Promise<{ 
     db.pedido.count(),
   ]);
   const modos = {
-    stripe: process.env.STRIPE_SECRET_KEY ? (process.env.STRIPE_SECRET_KEY.startsWith("sk_live") ? "REAL" : "prueba") : "simulador",
+    stripe: claveStripe() ? (/^(sk|rk)_live/.test(claveStripe()!) ? "REAL" : "prueba") : "simulador",
     imprenta: modoImprenta(), correo: process.env.RESEND_API_KEY ? "Resend" : "simulado (disco)",
     texto: process.env.ANTHROPIC_API_KEY ? "Claude Sonnet 5.5" : "plantilla (sin IA)", almacen: process.env.BLOB_READ_WRITE_TOKEN ? "Vercel Blob" : "disco local",
   };

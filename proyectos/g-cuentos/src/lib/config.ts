@@ -6,7 +6,18 @@ const PAISES: Record<string, ConfigPais> = { ES: es };
 export function configPais(pais = process.env.PAIS ?? "ES"): ConfigPais {
   const c = PAISES[pais];
   if (!c) throw new Error(`País sin configurar: ${pais}`);
-  return c;
+  // Datos del titular desde los secretos del entorno (DESPLIEGUES.md §1), si existen.
+  const e = process.env;
+  return {
+    ...c,
+    legal: {
+      ...c.legal,
+      titular: e.LEGAL_NOM || c.legal.titular,
+      nif: e.LEGAL_NIF || c.legal.nif,
+      domicilio: e.LEGAL_ADRECA || c.legal.domicilio,
+      email: e.LEGAL_EMAIL || c.legal.email,
+    },
+  };
 }
 
 export type Formato = "pdf" | "tapaDura";

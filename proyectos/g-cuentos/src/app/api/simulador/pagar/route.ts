@@ -3,7 +3,7 @@ import Stripe from "stripe";
 import { z } from "zod";
 import { precioCents, URL_BASE } from "@/lib/config";
 import { db } from "@/lib/db";
-import { secretoWebhook } from "@/lib/pagos";
+import { claveStripe, secretoWebhook } from "@/lib/pagos";
 
 export const runtime = "nodejs";
 
@@ -16,7 +16,7 @@ const Esquema = z.object({
 });
 
 export async function POST(req: Request) {
-  if (process.env.STRIPE_SECRET_KEY) return NextResponse.json({ error: "simulador desactivado: hay claves de Stripe" }, { status: 403 });
+  if (claveStripe()) return NextResponse.json({ error: "simulador desactivado: hay claves de Stripe" }, { status: 403 });
   const r = Esquema.safeParse(await req.json().catch(() => ({})));
   if (!r.success) return NextResponse.json({ error: r.error.issues.map((i) => i.path.join(".")).join(", ") }, { status: 400 });
   const d = r.data;

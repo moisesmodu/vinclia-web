@@ -3,10 +3,11 @@ import { notFound } from "next/navigation";
 import { Pagina } from "@/components/Marco";
 import { PagoSimulado } from "@/components/PagoSimulado";
 import { euros, precioCents } from "@/lib/config";
+import { claveStripe } from "@/lib/pagos";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { robots: { index: false } };
 export default async function Page({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ s?: string; f?: string }> }) {
-  if (process.env.STRIPE_SECRET_KEY) notFound();
+  if (claveStripe()) notFound();
   const { id } = await params;
   const { s, f } = await searchParams;
   const formato = f === "pdf" ? "pdf" : "tapaDura";

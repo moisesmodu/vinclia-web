@@ -1340,21 +1340,24 @@
       {
         "fecha": "2026-10-28",
         "texto": "Prueba de punta a punta superada en modo simulado (pago, PDF, pedido a imprenta en borrador, comisión de afiliada)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Adaptado a DESPLIEGUES.md: Stripe de Numi Mates con productos por script repetible y DESPLIEGUE.md para la sesión del Mac (el entorno en la nube no llega a Stripe, Vercel ni Neon)"
       }
     ],
     "proximos": [
-      "Moisés: 5 pasos de PARA-MOISES.md (Neon, Stripe, Gelato, Vercel, dominio y Resend)",
-      "Claude: pedido de prueba con Stripe de prueba real y Gelato en borrador; npm run cotizar para fijar el precio",
-      "Crear las 3 tareas programadas (taller horario, operación diaria, informe semanal)",
+      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md (Vercel, Neon, Stripe Numi Mates, Gelato) y la prueba de punta a punta en producción",
+      "npm run cotizar para fijar el precio de la tapa dura con el coste real",
+      "Crear las 3 tareas programadas",
       "Completar la biblioteca de vistas previas (6 combinaciones, 144 créditos)",
       "Abrir el 15/11 y empezar vídeos y afiliadas"
     ],
     "paraMoises": [
-      "Neon: crear proyecto y copiar la conexión",
-      "Stripe: claves de prueba y webhook",
-      "Gelato: cuenta y clave de API",
-      "Vercel: importar proyecto, Blob y variables",
-      "Dominio (lunilla.es) y Resend"
+      "Abrir la página de alta de Gelato cuando la sesión del Mac lo pida",
+      "Visto bueno para abrir el 15/11 (pasar Stripe a real y crear las tareas programadas)",
+      "Dominio opcional (lunilla.es)",
+      "Legales al gestor"
     ],
     "mejoras": [
       "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",

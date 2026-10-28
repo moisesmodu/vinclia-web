@@ -3,7 +3,8 @@ import path from "node:path";
 import { Resend } from "resend";
 
 // Resend en producción; sin RESEND_API_KEY el correo se guarda en datos-locales/correos/.
-const REMITENTE = process.env.CORREO_REMITENTE ?? "Lunilla <hola@lunilla.es>";
+// Hasta tener dominio propio: remitente común de la cartera (DESPLIEGUES.md §3.4).
+const REMITENTE = process.env.CORREO_REMITENTE ?? "Lunilla <noreply@algorithmicslleida.com>";
 
 export async function enviarCorreo(a: string, asunto: string, html: string, etiqueta: string): Promise<{ id: string; simulado: boolean }> {
   const k = process.env.RESEND_API_KEY;
@@ -14,7 +15,7 @@ export async function enviarCorreo(a: string, asunto: string, html: string, etiq
     await writeFile(path.join(dir, `${id}.html`), `<!-- Para: ${a}\nAsunto: ${asunto} -->\n${html}`);
     return { id, simulado: true };
   }
-  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE ?? "hola@lunilla.es" });
+  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE ?? process.env.LEGAL_EMAIL ?? "hola@lunilla.es" });
   if (r.error) throw new Error(`Resend: ${r.error.message}`);
   return { id: r.data!.id, simulado: false };
 }
