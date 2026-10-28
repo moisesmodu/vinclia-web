@@ -300,4 +300,4 @@ teléfono y plan Creator de ElevenLabs.
 | 24/10/2026 | Ingeniería inversa del líder de cada proyecto; proyecto P (webs con AdSense) añadido con investigación y viabilidad | — |
 | 24/10/2026 | Catálogo de 7 sitios de P ordenado por RPM y plan de expansión internacional para los 11 proyectos | — |
 | 24/10/2026 | `JUICIO.md`: probabilidad de éxito a 6 y 12 meses (Montecarlo) y veredicto por idea con criterio de parada | — |
-| 28/10/2026 | G · Lunilla (cuentos): tienda completa es/ca, 2 cuentos de muestra ilustrados, PDF de imprenta, Stripe, Gelato, afiliadas, 23 páginas SEO; prueba de punta a punta en modo simulado | PR de `claude/g-cuentos` |
+| 28/10/2026 | G · Lunilla (cuentos): tienda completa es/ca, 2 cuentos de muestra ilustrados, PDF de imprenta, Stripe, Gelato, afiliadas, 23 páginas SEO; prueba de punta a punta en modo simulado | PR #5 |
