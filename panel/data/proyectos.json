@@ -1351,7 +1351,7 @@
     "nombre": "Cuentos personalizados",
     "marca": "Lunilla",
     "resumen": "Lunilla: cuentos ilustrados y personalizados en castellano y catalán, PDF en menos de 2 horas o tapa dura. Tienda construida y probada de punta a punta en modo simulado; falta pegar claves para abrir el 15/11.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 6,
     "fechaLimite": "2026-11-15",
     "modelo": "PDF 7,90 € · tapa dura 36,90 € con envío incluido",
@@ -1363,7 +1363,8 @@
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
       "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/g-cuentos/proyectos/g-cuentos",
-      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5",
+      "demo": "https://lunilla.vercel.app"
     },
     "acciones": [
       {
@@ -1413,7 +1414,7 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Identidad de marca definida: Lunilla («Un cuento donde el protagonista eres tú.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+        "texto": "Desplegado en producción (https://lunilla.vercel.app) desde la sesión del Mac: proyecto de Vercel lunilla (cron cada 5 min, plan Pro), Neon cartera-g-cuentos (Londres), Vercel Blob público lunilla-archivos (París), Stripe en el entorno de prueba de Numi Mates (PDF 7,90 € y tapa dura 36,90 € y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478). Imprenta en «simulado» hasta tener GELATO_API_KEY."
       },
       {
         "fecha": "2026-10-28",
@@ -1422,12 +1423,14 @@
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/g-cuentos/DESPLIEGUE.md",
-      "Pedido de prueba real con Gelato y confirmar el precio de la tapa dura (36,90 € o 34,90 €)",
+      "Sesión del Mac: GELATO_API_KEY, LEGAL_*, CORREO_SOPORTE y RESEND_API_KEY en Vercel (lunilla) y redesplegar con la identidad de marca",
+      "Pago de prueba con la tarjeta 4242 en https://lunilla.vercel.app y pedido a Gelato en borrador (npm run prueba:e2e con URL_BASE de producción)",
+      "npm run cotizar para fijar el precio de la tapa dura",
+      "Crear las 3 tareas programadas",
       "Apertura el 15/11"
     ],
     "paraMoises": [
-      "Cuenta en Gelato (imprenta) con clave de API",
+      "Gelato: crear la cuenta y la clave de API (y la tarjeta al abrir)",
       "Comprar el dominio (lunilla.es, contelunilla.com o cuentoslunilla.es)",
       "NIF para los textos legales"
     ],
