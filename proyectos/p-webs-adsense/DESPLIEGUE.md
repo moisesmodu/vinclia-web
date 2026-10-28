@@ -102,3 +102,8 @@ Después, abre una calculadora en el móvil y cambia una cifra: el resultado se 
 - Añade al final de este archivo: `Ejecutado el <fecha>`.
 
 Ejecutado el 28/10/2026 desde la sesión del Mac, camino B (Vercel Pro): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con SITIO, SITE_URL y LEGAL_* en production.
+
+### Redespliegue (sesión del Mac, 28-10-2026, 04:09)
+Redesplegados `netoclaro` e `impuestoclaro` con el commit bef9859 (marca de la familia Claro), desde `proyectos/p-webs-adsense/fabrica`. Comprobado: calculadoras con título 2027 y aviso legal sin `PENDIENTE-NIF`.
+
+Ejecutado el 2026-10-28
