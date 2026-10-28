@@ -672,7 +672,7 @@
     "nombre": "Juegos",
     "marca": "Juegos",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "en construcción",
+    "estado": "lanzado",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -683,7 +683,8 @@
     "canal": "La plataforma distribuye; sin marketing",
     "enlaces": {
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
-      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv"
+      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
+      "Web": "https://juegos-casuales.vercel.app/egg-truck/"
     },
     "acciones": [
       {
@@ -713,10 +714,13 @@
       {
         "fecha": "2026-10-28",
         "texto": "DESPLIEGUE.md listo: proyecto Vercel «juegos-casuales» (Root Directory proyectos/juegos), sin Neon ni Stripe"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado en Vercel (proyecto juegos-casuales): https://juegos-casuales.vercel.app/egg-truck/"
       }
     ],
     "proximos": [
-      "Sesión del Mac: ejecutar proyectos/juegos/DESPLIEGUE.md",
       "Segundo juego con la plantilla",
       "Plan de Roblox"
     ],
