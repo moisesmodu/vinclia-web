@@ -7,20 +7,20 @@
     "es": {
       "enunciado": "¿Cómo se aplica el TREBEP al personal estatutario de los servicios de salud?",
       "opciones": [
-        "El TREBEP no le es aplicable en ningún caso",
+        "Se rige solo por su legislación específica; el TREBEP no le es aplicable en ningún caso",
         "Se rige por su legislación específica estatal y autonómica y por lo previsto en el TREBEP, con algunas excepciones",
-        "Se le aplica íntegramente el TREBEP, sin legislación específica",
-        "Solo se le aplica el TREBEP en materia de régimen disciplinario"
+        "Se le aplica íntegramente el TREBEP, sin que exista una legislación específica propia",
+        "Solo se le aplica el TREBEP en materia de régimen disciplinario y de situaciones"
       ],
       "explicacion": "El artículo 2.3 dispone que el personal estatutario se rige por la legislación específica del Estado y de las comunidades autónomas (como el Estatuto Marco) y por el TREBEP, salvo los preceptos que el propio artículo exceptúa."
     },
     "ca": {
       "enunciado": "Com s'aplica el TREBEP al personal estatutari dels serveis de salut?",
       "opciones": [
-        "El TREBEP no li és aplicable en cap cas",
+        "Es regeix només per la seva legislació específica; el TREBEP no li és aplicable en cap cas",
         "Es regeix per la seva legislació específica estatal i autonòmica i pel que preveu el TREBEP, amb algunes excepcions",
-        "Se li aplica íntegrament el TREBEP, sense legislació específica",
-        "Només se li aplica el TREBEP en matèria de règim disciplinari"
+        "Se li aplica íntegrament el TREBEP, sense que hi hagi una legislació específica pròpia",
+        "Només se li aplica el TREBEP en matèria de règim disciplinari i de situacions"
       ],
       "explicacion": "L'article 2.3 disposa que el personal estatutari es regeix per la legislació específica de l'Estat i de les comunitats autònomes (com l'Estatut marc) i pel TREBEP, llevat dels preceptes que el mateix article exceptua."
     },
@@ -147,20 +147,20 @@
     "es": {
       "enunciado": "¿Puede la condición de personal eventual valorarse como mérito para acceder a la función pública?",
       "opciones": [
-        "Sí, como experiencia profesional en la fase de concurso",
+        "Sí, se valora como experiencia profesional en la fase de concurso del proceso",
         "No, no puede constituir mérito para el acceso a la función pública ni para la promoción interna",
-        "Sí, pero solo para la promoción interna",
-        "Sí, si se ha desempeñado durante más de dos años"
+        "Sí, pero solo para la promoción interna y no para el acceso a la función pública",
+        "Sí, siempre que se haya desempeñado durante más de dos años de forma continuada"
       ],
       "explicacion": "El artículo 12.4 prohíbe que la condición de personal eventual constituya mérito para el acceso a la función pública o para la promoción interna."
     },
     "ca": {
       "enunciado": "Es pot valorar la condició de personal eventual com a mèrit per accedir a la funció pública?",
       "opciones": [
-        "Sí, com a experiència professional en la fase de concurs",
+        "Sí, es valora com a experiència professional en la fase de concurs del procés",
         "No, no pot constituir mèrit per a l'accés a la funció pública ni per a la promoció interna",
-        "Sí, però només per a la promoció interna",
-        "Sí, si s'ha exercit durant més de dos anys"
+        "Sí, però només per a la promoció interna i no per a l'accés a la funció pública",
+        "Sí, sempre que s'hagi exercit durant més de dos anys de manera continuada"
       ],
       "explicacion": "L'article 12.4 prohibeix que la condició de personal eventual constitueixi mèrit per a l'accés a la funció pública o per a la promoció interna."
     },
@@ -217,8 +217,8 @@
     "es": {
       "enunciado": "¿Cuál de los siguientes es, según el TREBEP, un derecho individual que se ejerce de forma colectiva?",
       "opciones": [
-        "La libre asociación profesional",
-        "La formación continua y la actualización permanente",
+        "La libre asociación profesional en colegios y asociaciones",
+        "La formación continua y la actualización permanente de conocimientos",
         "La inamovilidad en la condición de funcionario de carrera",
         "El ejercicio de la huelga, con la garantía del mantenimiento de los servicios esenciales"
       ],
@@ -227,8 +227,8 @@
     "ca": {
       "enunciado": "Quin dels següents és, segons el TREBEP, un dret individual que s'exerceix de manera col·lectiva?",
       "opciones": [
-        "La lliure associació professional",
-        "La formació contínua i l'actualització permanent",
+        "La lliure associació professional en col·legis i associacions",
+        "La formació contínua i l'actualització permanent de coneixements",
         "La inamovibilitat en la condició de funcionari de carrera",
         "L'exercici de la vaga, amb la garantia del manteniment dels serveis essencials"
       ],
@@ -357,20 +357,20 @@
     "es": {
       "enunciado": "Si un superior da a un empleado público una orden que constituye una infracción manifiesta del ordenamiento jurídico, según el TREBEP el empleado:",
       "opciones": [
-        "Debe cumplirla y presentar después una queja escrita",
+        "Debe cumplirla igualmente y presentar después una queja escrita ante su superior",
         "No debe obedecerla y la pondrá inmediatamente en conocimiento de los órganos de inspección procedentes",
-        "Debe cumplirla si se la reitera por escrito",
-        "Puede elegir libremente entre cumplirla o no, sin más trámite"
+        "Debe cumplirla si el superior se la reitera por escrito y asume la responsabilidad",
+        "Puede elegir libremente entre cumplirla o no, sin tener que comunicarlo a nadie"
       ],
       "explicacion": "El artículo 54.3 obliga a obedecer las órdenes de los superiores salvo que constituyan una infracción manifiesta del ordenamiento; en ese caso, deben ponerse inmediatamente en conocimiento de los órganos de inspección."
     },
     "ca": {
       "enunciado": "Si un superior dona a un empleat públic una ordre que constitueix una infracció manifesta de l'ordenament jurídic, segons el TREBEP l'empleat:",
       "opciones": [
-        "L'ha de complir i presentar després una queixa escrita",
+        "L'ha de complir igualment i presentar després una queixa escrita davant el superior",
         "No l'ha d'obeir i la posarà immediatament en coneixement dels òrgans d'inspecció pertinents",
-        "L'ha de complir si se li reitera per escrit",
-        "Pot triar lliurement entre complir-la o no, sense cap altre tràmit"
+        "L'ha de complir si el superior li reitera per escrit i n'assumeix la responsabilitat",
+        "Pot triar lliurement entre complir-la o no, sense haver-ho de comunicar a ningú"
       ],
       "explicacion": "L'article 54.3 obliga a obeir les ordres dels superiors llevat que constitueixin una infracció manifesta de l'ordenament; en aquest cas, s'han de posar immediatament en coneixement dels òrgans d'inspecció."
     },

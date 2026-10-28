@@ -7,9 +7,9 @@
     "es": {
       "enunciado": "¿Cómo configura la Ley 8/2007 al Institut Català de la Salut?",
       "opciones": [
-        "Como organismo autónomo administrativo sin personalidad jurídica propia",
-        "Como sociedad anónima participada por la Generalitat y los entes locales",
-        "Como fundación privada del sector público sanitario",
+        "Como organismo autónomo administrativo de la Generalitat, sujeto íntegramente al derecho público",
+        "Como sociedad anónima participada por la Generalitat y los entes locales de Cataluña",
+        "Como fundación privada del sector público sanitario, sin personalidad jurídica propia",
         "Como entidad de derecho público de la Generalitat que actúa sujeta al derecho privado, con personalidad jurídica propia"
       ],
       "explicacion": "El artículo 1 crea el ICS como entidad de derecho público de la Generalitat que actúa sujeta al derecho privado, con personalidad jurídica propia y plena capacidad de obrar, conforme al Estatuto de la empresa pública catalana."
@@ -17,9 +17,9 @@
     "ca": {
       "enunciado": "Com configura la Llei 8/2007 l'Institut Català de la Salut?",
       "opciones": [
-        "Com a organisme autònom administratiu sense personalitat jurídica pròpia",
-        "Com a societat anònima participada per la Generalitat i els ens locals",
-        "Com a fundació privada del sector públic sanitari",
+        "Com a organisme autònom administratiu de la Generalitat, subjecte íntegrament al dret públic",
+        "Com a societat anònima participada per la Generalitat i els ens locals de Catalunya",
+        "Com a fundació privada del sector públic sanitari, sense personalitat jurídica pròpia",
         "Com a entitat de dret públic de la Generalitat que actua subjecta al dret privat, amb personalitat jurídica pròpia"
       ],
       "explicacion": "L'article 1 crea l'ICS com a entitat de dret públic de la Generalitat que actua subjecta al dret privat, amb personalitat jurídica pròpia i plena capacitat d'obrar, d'acord amb l'Estatut de l'empresa pública catalana."
@@ -147,20 +147,20 @@
     "es": {
       "enunciado": "Según el artículo 5 de la Ley 8/2007, la dirección y gestión de los centros propios del ICS:",
       "opciones": [
-        "Pueden contratarse con empresas privadas de gestión sanitaria mediante concurso",
-        "Corresponden a las regiones sanitarias del Servicio Catalán de la Salud",
-        "Corresponden exclusivamente a los cargos directivos y al personal con funciones de mando del Instituto, sin que puedan contratarse a terceros",
-        "Se encomiendan a los consejos de participación de cada centro"
+        "Pueden contratarse con empresas privadas de gestión sanitaria mediante concurso público",
+        "Corresponden a las regiones sanitarias del Servicio Catalán de la Salud de cada territorio",
+        "Corresponden solo a sus cargos directivos y personal con funciones de mando, sin poder contratarse a terceros",
+        "Se encomiendan a los consejos de participación de cada centro, servicio o establecimiento"
       ],
       "explicacion": "El artículo 5.7 reserva la dirección y gestión de los centros propios a los cargos directivos y al personal con funciones de mando del ICS, y prohíbe en todo caso contratarlas a terceros."
     },
     "ca": {
       "enunciado": "Segons l'article 5 de la Llei 8/2007, la direcció i la gestió dels centres propis de l'ICS:",
       "opciones": [
-        "Es poden contractar amb empreses privades de gestió sanitària mitjançant concurs",
-        "Corresponen a les regions sanitàries del Servei Català de la Salut",
-        "Corresponen exclusivament als càrrecs directius i al personal amb funcions de comandament de l'Institut, sense que es puguin contractar a tercers",
-        "S'encomanen als consells de participació de cada centre"
+        "Es poden contractar amb empreses privades de gestió sanitària mitjançant concurs públic",
+        "Corresponen a les regions sanitàries del Servei Català de la Salut de cada territori",
+        "Corresponen només als seus càrrecs directius i al personal amb funcions de comandament, sense poder-se contractar a tercers",
+        "S'encomanen als consells de participació de cada centre, servei o establiment"
       ],
       "explicacion": "L'article 5.7 reserva la direcció i la gestió dels centres propis als càrrecs directius i al personal amb funcions de comandament de l'ICS, i prohibeix en tot cas contractar-les a tercers."
     },

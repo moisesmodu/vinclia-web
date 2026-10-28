@@ -7,8 +7,8 @@
     "es": {
       "enunciado": "Según el Estatuto Marco, es personal estatutario fijo el que:",
       "opciones": [
-        "Ha prestado servicios temporales durante más de tres años en la misma plaza",
-        "Tras superar el proceso selectivo, obtiene un nombramiento para desempeñar con carácter permanente las funciones correspondientes",
+        "Ha prestado servicios temporales durante más de tres años seguidos en la misma plaza",
+        "Tras superar el proceso selectivo, obtiene nombramiento para desempeñar funciones con carácter permanente",
         "Ocupa una plaza vacante mientras no se cubre por el procedimiento ordinario",
         "Sustituye a otro profesional durante una ausencia con reserva de plaza"
       ],
@@ -17,8 +17,8 @@
     "ca": {
       "enunciado": "Segons l'Estatut marc, és personal estatutari fix el que:",
       "opciones": [
-        "Ha prestat serveis temporals durant més de tres anys a la mateixa plaça",
-        "Després de superar el procés selectiu, obté un nomenament per exercir amb caràcter permanent les funcions corresponents",
+        "Ha prestat serveis temporals durant més de tres anys seguits a la mateixa plaça",
+        "Després de superar el procés selectiu, obté nomenament per exercir funcions amb caràcter permanent",
         "Ocupa una plaça vacant mentre no es cobreix pel procediment ordinari",
         "Substitueix un altre professional durant una absència amb reserva de plaça"
       ],
@@ -252,20 +252,20 @@
     "es": {
       "enunciado": "Según el Estatuto Marco, ¿a qué edad se declara la jubilación forzosa del personal estatutario?",
       "opciones": [
-        "A los 67 años, sin posibilidad de prolongación",
+        "A los 67 años, sin posibilidad de prolongar el servicio activo",
         "A los 65 años, con posibilidad de prolongar voluntariamente el servicio activo hasta los 70",
-        "A los 70 años en todo caso",
-        "A los 60 años, con posibilidad de prolongación hasta los 65"
+        "A los 70 años en todo caso, sin posibilidad de prórroga alguna",
+        "A los 60 años, con posibilidad de prolongar el servicio activo hasta los 65"
       ],
       "explicacion": "El artículo 26.2 fija la jubilación forzosa a los 65 años y permite solicitar prolongar la permanencia en servicio activo hasta los 70 si se acredita la capacidad funcional y lo autoriza el servicio de salud."
     },
     "ca": {
       "enunciado": "Segons l'Estatut marc, a quina edat es declara la jubilació forçosa del personal estatutari?",
       "opciones": [
-        "Als 67 anys, sense possibilitat de prolongació",
+        "Als 67 anys, sense possibilitat d'allargar el servei actiu",
         "Als 65 anys, amb possibilitat d'allargar voluntàriament el servei actiu fins als 70",
-        "Als 70 anys en tot cas",
-        "Als 60 anys, amb possibilitat de prolongació fins als 65"
+        "Als 70 anys en tot cas, sense possibilitat de cap pròrroga",
+        "Als 60 anys, amb possibilitat d'allargar el servei actiu fins als 65"
       ],
       "explicacion": "L'article 26.2 fixa la jubilació forçosa als 65 anys i permet sol·licitar allargar la permanència en servei actiu fins als 70 si s'acredita la capacitat funcional i ho autoritza el servei de salut."
     },
@@ -287,20 +287,20 @@
     "es": {
       "enunciado": "¿Qué grados de incapacidad permanente producen la pérdida de la condición de personal estatutario?",
       "opciones": [
-        "Solo la gran invalidez",
+        "Únicamente la gran invalidez, por ser el grado más severo",
         "La total para la profesión habitual, la absoluta para todo trabajo y la gran invalidez",
-        "Solo la absoluta para todo trabajo y la gran invalidez",
-        "Cualquier grado, incluida la incapacidad permanente parcial"
+        "Solo la absoluta para todo trabajo y la gran invalidez, no la total",
+        "Cualquier grado, incluida la incapacidad permanente parcial para la profesión"
       ],
       "explicacion": "El artículo 27 menciona tres grados: total para la profesión habitual, absoluta para todo trabajo y gran invalidez. Si la incapacidad se revisa, puede recuperarse la condición (art. 28.2)."
     },
     "ca": {
       "enunciado": "Quins graus d'incapacitat permanent produeixen la pèrdua de la condició de personal estatutari?",
       "opciones": [
-        "Només la gran invalidesa",
+        "Únicament la gran invalidesa, perquè és el grau més sever",
         "La total per a la professió habitual, l'absoluta per a qualsevol treball i la gran invalidesa",
-        "Només l'absoluta per a qualsevol treball i la gran invalidesa",
-        "Qualsevol grau, inclosa la incapacitat permanent parcial"
+        "Només l'absoluta per a qualsevol treball i la gran invalidesa, no la total",
+        "Qualsevol grau, inclosa la incapacitat permanent parcial per a la professió"
       ],
       "explicacion": "L'article 27 esmenta tres graus: total per a la professió habitual, absoluta per a qualsevol treball i gran invalidesa. Si la incapacitat es revisa, es pot recuperar la condició (art. 28.2)."
     },
@@ -357,9 +357,9 @@
     "es": {
       "enunciado": "Durante el desempeño de funciones en promoción interna temporal, el personal estatutario percibe:",
       "opciones": [
-        "Las retribuciones de su categoría de origen, sin ninguna diferencia",
+        "Las retribuciones de su categoría de origen, sin ninguna diferencia por las nuevas funciones",
         "Las retribuciones de la nueva categoría, incluidos los trienios de esa categoría",
-        "Solo un complemento de productividad añadido a su sueldo de origen",
+        "Solo un complemento de productividad que se suma al sueldo de su categoría de origen",
         "Las retribuciones de las funciones efectivamente desempeñadas, salvo los trienios, que son los de su nombramiento original"
       ],
       "explicacion": "El artículo 35.2 mantiene al interesado en servicio activo en su categoría de origen y le abona las retribuciones de las funciones que realiza, excepto los trienios, que siguen siendo los de su nombramiento original. No consolida derechos retributivos (art. 35.3)."
@@ -367,9 +367,9 @@
     "ca": {
       "enunciado": "Durant l'exercici de funcions en promoció interna temporal, el personal estatutari percep:",
       "opciones": [
-        "Les retribucions de la seva categoria d'origen, sense cap diferència",
+        "Les retribucions de la seva categoria d'origen, sense cap diferència per les noves funcions",
         "Les retribucions de la nova categoria, inclosos els triennis d'aquesta categoria",
-        "Només un complement de productivitat afegit al sou d'origen",
+        "Només un complement de productivitat que se suma al sou de la seva categoria d'origen",
         "Les retribucions de les funcions efectivament exercides, llevat dels triennis, que són els del seu nomenament original"
       ],
       "explicacion": "L'article 35.2 manté l'interessat en servei actiu en la categoria d'origen i li abona les retribucions de les funcions que fa, excepte els triennis, que continuen sent els del nomenament original. No consolida drets retributius (art. 35.3)."
@@ -427,20 +427,20 @@
     "es": {
       "enunciado": "¿Cuál es la duración máxima conjunta de la jornada ordinaria y la complementaria del personal estatutario, salvo otro cómputo pactado?",
       "opciones": [
-        "40 horas semanales en cómputo mensual",
+        "40 horas semanales de trabajo efectivo de promedio en cómputo mensual",
         "48 horas semanales de trabajo efectivo de promedio en cómputo semestral",
-        "37,5 horas semanales en cómputo anual",
-        "60 horas semanales en cómputo trimestral"
+        "37,5 horas semanales de trabajo efectivo de promedio en cómputo anual",
+        "60 horas semanales de trabajo efectivo de promedio en cómputo trimestral"
       ],
       "explicacion": "El artículo 48.2 fija 48 horas semanales de trabajo efectivo de promedio en cómputo semestral, salvo que un acuerdo, pacto o convenio establezca otro cómputo; los periodos de localización no cuentan salvo que haya trabajo efectivo."
     },
     "ca": {
       "enunciado": "Quina és la durada màxima conjunta de la jornada ordinària i la complementària del personal estatutari, llevat d'un altre còmput pactat?",
       "opciones": [
-        "40 hores setmanals en còmput mensual",
+        "40 hores setmanals de treball efectiu de mitjana en còmput mensual",
         "48 hores setmanals de treball efectiu de mitjana en còmput semestral",
-        "37,5 hores setmanals en còmput anual",
-        "60 hores setmanals en còmput trimestral"
+        "37,5 hores setmanals de treball efectiu de mitjana en còmput anual",
+        "60 hores setmanals de treball efectiu de mitjana en còmput trimestral"
       ],
       "explicacion": "L'article 48.2 fixa 48 hores setmanals de treball efectiu de mitjana en còmput semestral, llevat que un acord, pacte o conveni estableixi un altre còmput; els períodes de localització no compten llevat que hi hagi treball efectiu."
     },

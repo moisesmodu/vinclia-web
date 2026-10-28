@@ -8,9 +8,9 @@
       "enunciado": "Según la Ley catalana 21/2000, ¿a quién corresponde garantizar el cumplimiento del derecho del paciente a la información asistencial?",
       "opciones": [
         "Al médico responsable del paciente, con la corresponsabilidad de los profesionales asistenciales que le atienden",
-        "Exclusivamente a la dirección del centro sanitario",
-        "Al servicio de atención al usuario del centro",
-        "A los familiares del paciente, en todo caso"
+        "Exclusivamente a la dirección del centro sanitario donde se presta la asistencia",
+        "Al servicio de atención al usuario, que es el único que puede informar al paciente",
+        "A los familiares del paciente, que deciden qué información se le transmite"
       ],
       "explicacion": "El artículo 2.3 encarga al médico responsable garantizar el derecho a la información, y añade que también asumen responsabilidad los profesionales asistenciales que atienden al paciente o le aplican una técnica o un procedimiento concreto."
     },
@@ -18,9 +18,9 @@
       "enunciado": "Segons la Llei catalana 21/2000, a qui correspon garantir el compliment del dret del pacient a la informació assistencial?",
       "opciones": [
         "Al metge responsable del pacient, amb la corresponsabilitat dels professionals assistencials que l'atenen",
-        "Exclusivament a la direcció del centre sanitari",
-        "Al servei d'atenció a l'usuari del centre",
-        "Als familiars del pacient, en tot cas"
+        "Exclusivament a la direcció del centre sanitari on es presta l'assistència",
+        "Al servei d'atenció a l'usuari, que és l'únic que pot informar el pacient",
+        "Als familiars del pacient, que decideixen quina informació se li transmet"
       ],
       "explicacion": "L'article 2.3 encarrega al metge responsable garantir el dret a la informació, i afegeix que també n'assumeixen responsabilitat els professionals assistencials que atenen el pacient o li apliquen una tècnica o un procediment concret."
     },
@@ -42,20 +42,20 @@
     "es": {
       "enunciado": "¿Quién es el titular del derecho a la información asistencial?",
       "opciones": [
-        "La familia del paciente, en primer lugar",
+        "La familia del paciente, que decide si se informa al propio paciente",
         "El paciente; las personas vinculadas a él son informadas en la medida en que él lo permita",
-        "El representante legal del paciente, en todo caso",
-        "El médico de familia del paciente"
+        "El representante legal del paciente, en todo caso y aunque el paciente sea capaz",
+        "El médico de familia, que custodia la información en nombre del paciente"
       ],
       "explicacion": "El artículo 3.1 de la Ley 21/2000 establece que el titular es el paciente y que se informa a las personas vinculadas en la medida en que este lo permita expresa o tácitamente."
     },
     "ca": {
       "enunciado": "Qui és el titular del dret a la informació assistencial?",
       "opciones": [
-        "La família del pacient, en primer lloc",
+        "La família del pacient, que decideix si s'informa el mateix pacient",
         "El pacient; les persones que hi estan vinculades són informades en la mesura que ell ho permeti",
-        "El representant legal del pacient, en tot cas",
-        "El metge de família del pacient"
+        "El representant legal del pacient, en tot cas i encara que el pacient sigui capaç",
+        "El metge de família, que custodia la informació en nom del pacient"
       ],
       "explicacion": "L'article 3.1 de la Llei 21/2000 estableix que el titular és el pacient i que s'informa les persones vinculades en la mesura que aquest ho permeti expressament o tàcitament."
     },
@@ -112,20 +112,20 @@
     "es": {
       "enunciado": "Si el documento de voluntades anticipadas se formaliza ante testigos (Ley catalana 21/2000), ¿qué se exige?",
       "opciones": [
-        "Dos testigos mayores de edad, sin otros requisitos",
-        "Tres testigos, que deben ser todos familiares del otorgante",
-        "Cinco testigos, de los que uno debe ser profesional sanitario",
-        "Tres testigos mayores de edad y con plena capacidad de obrar, de los que al menos dos no sean parientes hasta el segundo grado ni tengan relación patrimonial con el otorgante"
+        "Dos testigos mayores de edad, que pueden ser familiares de cualquier grado del otorgante",
+        "Tres testigos mayores de edad, que deben ser todos familiares directos del otorgante",
+        "Cinco testigos mayores de edad, de los que al menos uno debe ser profesional sanitario",
+        "Tres testigos mayores de edad y capaces, al menos dos sin parentesco hasta el segundo grado ni relación patrimonial con el otorgante"
       ],
       "explicacion": "El artículo 8.2.b) exige tres testigos mayores de edad con plena capacidad de obrar; al menos dos no pueden tener parentesco hasta el segundo grado ni vínculo patrimonial con el otorgante. Ante notario no hacen falta testigos."
     },
     "ca": {
       "enunciado": "Si el document de voluntats anticipades es formalitza davant testimonis (Llei catalana 21/2000), què s'exigeix?",
       "opciones": [
-        "Dos testimonis majors d'edat, sense altres requisits",
-        "Tres testimonis, que han de ser tots familiars de l'atorgant",
-        "Cinc testimonis, dels quals un ha de ser professional sanitari",
-        "Tres testimonis majors d'edat i amb plena capacitat d'obrar, dels quals com a mínim dos no siguin parents fins al segon grau ni tinguin relació patrimonial amb l'atorgant"
+        "Dos testimonis majors d'edat, que poden ser familiars de qualsevol grau de l'atorgant",
+        "Tres testimonis majors d'edat, que han de ser tots familiars directes de l'atorgant",
+        "Cinc testimonis majors d'edat, dels quals almenys un ha de ser professional sanitari",
+        "Tres testimonis majors d'edat i capaços, almenys dos sense parentiu fins al segon grau ni relació patrimonial amb l'atorgant"
       ],
       "explicacion": "L'article 8.2.b) exigeix tres testimonis majors d'edat amb plena capacitat d'obrar; com a mínim dos no poden tenir parentiu fins al segon grau ni vincle patrimonial amb l'atorgant. Davant notari no calen testimonis."
     },
@@ -324,7 +324,7 @@
       "opciones": [
         "La firma del paciente en cualquier documento que le presente el centro sanitario",
         "La autorización que el médico responsable da al paciente para recibir un tratamiento",
-        "La conformidad libre, voluntaria y consciente del paciente, manifestada en pleno uso de sus facultades tras recibir la información adecuada",
+        "La conformidad libre, voluntaria y consciente del paciente, tras recibir la información adecuada",
         "La declaración escrita de un médico que da fe del estado de salud de una persona"
       ],
       "explicacion": "Es la definición literal del artículo 3. La declaración escrita de un médico sobre el estado de salud de una persona es, según el mismo artículo, el certificado médico."
@@ -334,7 +334,7 @@
       "opciones": [
         "La signatura del pacient en qualsevol document que li presenti el centre sanitari",
         "L'autorització que el metge responsable dona al pacient per rebre un tractament",
-        "La conformitat lliure, voluntària i conscient del pacient, manifestada en ple ús de les seves facultats després de rebre la informació adequada",
+        "La conformitat lliure, voluntària i conscient del pacient, després de rebre la informació adequada",
         "La declaració escrita d'un metge que dona fe de l'estat de salut d'una persona"
       ],
       "explicacion": "És la definició literal de l'article 3. La declaració escrita d'un metge sobre l'estat de salut d'una persona és, segons el mateix article, el certificat mèdic."
@@ -427,20 +427,20 @@
     "es": {
       "enunciado": "¿Qué se entiende por «necesidad terapéutica» en la Ley 41/2002?",
       "opciones": [
-        "La obligación de aplicar un tratamiento aunque el paciente se niegue",
-        "La posibilidad de dar el alta forzosa a quien rechaza el tratamiento",
-        "El derecho del paciente a no ser informado de su diagnóstico",
-        "La facultad del médico para actuar sin informar antes al paciente cuando, por razones objetivas, conocer su situación pueda perjudicar gravemente su salud"
+        "La obligación de aplicar un tratamiento indispensable aunque el paciente se niegue a recibirlo",
+        "La posibilidad de que la dirección dé el alta forzosa a quien rechaza el tratamiento prescrito",
+        "El derecho del paciente a no ser informado de su diagnóstico cuando así lo manifiesta",
+        "La facultad del médico de actuar sin informar antes al paciente si conocer su situación puede perjudicar gravemente su salud"
       ],
       "explicacion": "El artículo 5.4 define así la necesidad terapéutica; en ese caso el médico debe dejar constancia razonada en la historia clínica y comunicar su decisión a las personas vinculadas al paciente. El derecho a no ser informado es otra figura, que parte de la voluntad del paciente."
     },
     "ca": {
       "enunciado": "Què s'entén per «necessitat terapèutica» a la Llei 41/2002?",
       "opciones": [
-        "L'obligació d'aplicar un tractament encara que el pacient s'hi negui",
-        "La possibilitat de donar l'alta forçosa a qui rebutja el tractament",
-        "El dret del pacient a no ser informat del seu diagnòstic",
-        "La facultat del metge per actuar sense informar abans el pacient quan, per raons objectives, conèixer la seva situació pugui perjudicar greument la seva salut"
+        "L'obligació d'aplicar un tractament indispensable encara que el pacient es negui a rebre'l",
+        "La possibilitat que la direcció doni l'alta forçosa a qui rebutja el tractament prescrit",
+        "El dret del pacient a no ser informat del seu diagnòstic quan així ho manifesta",
+        "La facultat del metge d'actuar sense informar abans el pacient si conèixer la seva situació pot perjudicar greument la seva salut"
       ],
       "explicacion": "L'article 5.4 defineix així la necessitat terapèutica; en aquest cas el metge ha de deixar constància raonada a la història clínica i comunicar la decisió a les persones vinculades al pacient. El dret a no ser informat és una altra figura, que parteix de la voluntat del pacient."
     },
@@ -462,20 +462,20 @@
     "es": {
       "enunciado": "Según la Ley 41/2002, el consentimiento informado:",
       "opciones": [
-        "Debe prestarse siempre por escrito ante dos testigos",
-        "Es verbal por regla general y se presta por escrito en intervenciones quirúrgicas y procedimientos invasores, entre otros casos",
-        "Solo es necesario en intervenciones quirúrgicas",
-        "Lo presta siempre la familia cuando el paciente está hospitalizado"
+        "Debe prestarse siempre por escrito y ante dos testigos, sea cual sea la actuación",
+        "Es verbal por regla general, y escrito en intervenciones quirúrgicas y procedimientos invasores, entre otros",
+        "Solo es necesario en intervenciones quirúrgicas y nunca en pruebas diagnósticas",
+        "Lo presta siempre la familia cuando el paciente está hospitalizado, aunque sea capaz"
       ],
       "explicacion": "El artículo 8.2 fija como regla general el consentimiento verbal y exige la forma escrita en intervenciones quirúrgicas, procedimientos diagnósticos y terapéuticos invasores y procedimientos con riesgos notorios y previsibles."
     },
     "ca": {
       "enunciado": "Segons la Llei 41/2002, el consentiment informat:",
       "opciones": [
-        "S'ha de prestar sempre per escrit davant dos testimonis",
-        "És verbal per regla general i es presta per escrit en intervencions quirúrgiques i procediments invasius, entre altres casos",
-        "Només és necessari en intervencions quirúrgiques",
-        "El presta sempre la família quan el pacient està hospitalitzat"
+        "S'ha de prestar sempre per escrit i davant dos testimonis, sigui quina sigui l'actuació",
+        "És verbal per regla general, i escrit en intervencions quirúrgiques i procediments invasius, entre d'altres",
+        "Només és necessari en intervencions quirúrgiques i mai en proves diagnòstiques",
+        "El presta sempre la família quan el pacient està hospitalitzat, encara que sigui capaç"
       ],
       "explicacion": "L'article 8.2 fixa com a regla general el consentiment verbal i exigeix la forma escrita en intervencions quirúrgiques, procediments diagnòstics i terapèutics invasius i procediments amb riscos notoris i previsibles."
     },
@@ -534,8 +534,8 @@
       "opciones": [
         "Su negativa no tiene efecto si el médico considera el tratamiento necesario",
         "Tiene derecho a hacerlo, salvo en los casos determinados en la ley, y su negativa debe constar por escrito",
-        "Basta con que lo manifieste verbalmente, sin dejar constancia",
-        "Debe ser dado de alta forzosa de inmediato"
+        "Basta con que lo manifieste verbalmente, sin que deba quedar constancia escrita",
+        "Debe ser dado de alta forzosa de inmediato por la dirección del centro"
       ],
       "explicacion": "El artículo 2.4 reconoce el derecho a negarse al tratamiento, excepto en los casos que determine la ley, y exige que la negativa conste por escrito."
     },
@@ -544,8 +544,8 @@
       "opciones": [
         "La negativa no té efecte si el metge considera el tractament necessari",
         "Té dret a fer-ho, llevat dels casos que determini la llei, i la negativa ha de constar per escrit",
-        "N'hi ha prou que ho manifesti verbalment, sense deixar-ne constància",
-        "Se li ha de donar l'alta forçosa immediatament"
+        "N'hi ha prou que ho manifesti verbalment, sense que n'hagi de quedar constància escrita",
+        "Se li ha de donar l'alta forçosa immediatament per part de la direcció del centre"
       ],
       "explicacion": "L'article 2.4 reconeix el dret a negar-se al tractament, excepte en els casos que determini la llei, i exigeix que la negativa consti per escrit."
     },
@@ -673,9 +673,9 @@
       "enunciado": "El deber de confidencialidad que la Ley Orgánica 3/2018 impone a quienes intervienen en el tratamiento de datos:",
       "opciones": [
         "Se mantiene aunque haya finalizado su relación con el responsable o encargado del tratamiento",
-        "Se extingue al finalizar la relación laboral",
-        "Dura solo dos años después de finalizar la relación",
-        "Sustituye y deja sin efecto el secreto profesional"
+        "Se extingue en el momento en que finaliza la relación laboral con el responsable",
+        "Se mantiene solo durante los dos años siguientes al fin de la relación",
+        "Sustituye al secreto profesional, que deja de ser exigible en estos casos"
       ],
       "explicacion": "El artículo 5.3 mantiene el deber aunque haya terminado la relación. Además, según el apartado 2, ese deber es complementario del secreto profesional, no lo sustituye."
     },
@@ -683,9 +683,9 @@
       "enunciado": "El deure de confidencialitat que la Llei orgànica 3/2018 imposa als qui intervenen en el tractament de dades:",
       "opciones": [
         "Es manté encara que hagi finalitzat la relació amb el responsable o encarregat del tractament",
-        "S'extingeix en finalitzar la relació laboral",
-        "Dura només dos anys després de finalitzar la relació",
-        "Substitueix i deixa sense efecte el secret professional"
+        "S'extingeix en el moment en què finalitza la relació laboral amb el responsable",
+        "Es manté només durant els dos anys següents a la fi de la relació",
+        "Substitueix el secret professional, que deixa de ser exigible en aquests casos"
       ],
       "explicacion": "L'article 5.3 manté el deure encara que hagi acabat la relació. A més, segons l'apartat 2, aquest deure és complementari del secret professional, no el substitueix."
     },
@@ -708,9 +708,9 @@
       "enunciado": "Según la Ley Orgánica 3/2018, las personas vinculadas a un fallecido por razones familiares o de hecho no pueden solicitar el acceso a sus datos personales cuando:",
       "opciones": [
         "La persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley",
-        "Haya transcurrido un año desde el fallecimiento",
-        "No sean herederos testamentarios",
-        "Los datos sean de salud, en todo caso"
+        "Haya transcurrido más de un año desde la fecha del fallecimiento",
+        "No hayan sido designados herederos en el testamento del fallecido",
+        "Los datos sean relativos a la salud, sea cual sea la voluntad del fallecido"
       ],
       "explicacion": "El artículo 3.1 permite a familiares, personas vinculadas y herederos pedir el acceso, la rectificación o la supresión, salvo que el fallecido lo hubiese prohibido expresamente o lo establezca una ley; la prohibición no afecta al acceso de los herederos a los datos patrimoniales."
     },
@@ -718,9 +718,9 @@
       "enunciado": "Segons la Llei orgànica 3/2018, les persones vinculades a un difunt per raons familiars o de fet no poden sol·licitar l'accés a les seves dades personals quan:",
       "opciones": [
         "La persona difunta ho hagués prohibit expressament o així ho estableixi una llei",
-        "Hagi transcorregut un any des de la defunció",
-        "No siguin hereus testamentaris",
-        "Les dades siguin de salut, en tot cas"
+        "Hagi transcorregut més d'un any des de la data de la defunció",
+        "No hagin estat designats hereus en el testament del difunt",
+        "Les dades siguin relatives a la salut, sigui quina sigui la voluntat del difunt"
       ],
       "explicacion": "L'article 3.1 permet a familiars, persones vinculades i hereus demanar l'accés, la rectificació o la supressió, llevat que el difunt ho hagués prohibit expressament o ho estableixi una llei; la prohibició no afecta l'accés dels hereus a les dades patrimonials."
     },

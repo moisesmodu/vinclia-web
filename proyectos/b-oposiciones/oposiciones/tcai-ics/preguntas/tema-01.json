@@ -287,20 +287,20 @@
     "es": {
       "enunciado": "¿Qué mayoría exige, en principio, la aprobación por el Consejo de Dirección del Servicio Catalán de la Salud de la propuesta de anteproyecto de presupuesto del ente?",
       "opciones": [
-        "Mayoría simple",
+        "Mayoría simple de los miembros presentes",
         "Mayoría de dos tercios de sus miembros",
-        "Mayoría absoluta",
-        "Unanimidad"
+        "Mayoría absoluta de sus miembros",
+        "Unanimidad de todos sus miembros"
       ],
       "explicacion": "El artículo 14.2 exige dos tercios para los acuerdos de las letras a) (criterios de actuación) y e) (propuesta de anteproyecto de presupuesto); el resto se adopta por mayoría simple. Si no se alcanzan los dos tercios, la propuesta se remite igualmente al departamento con el sentido del voto de cada miembro."
     },
     "ca": {
       "enunciado": "Quina majoria exigeix, en principi, l'aprovació pel Consell de Direcció del Servei Català de la Salut de la proposta d'avantprojecte de pressupost de l'ens?",
       "opciones": [
-        "Majoria simple",
+        "Majoria simple dels membres presents",
         "Majoria de dos terços dels membres",
-        "Majoria absoluta",
-        "Unanimitat"
+        "Majoria absoluta dels membres",
+        "Unanimitat de tots els membres"
       ],
       "explicacion": "L'article 14.2 exigeix dos terços per als acords de les lletres a) (criteris d'actuació) i e) (proposta d'avantprojecte de pressupost); la resta s'adopten per majoria simple. Si no s'arriba als dos terços, la proposta es tramet igualment al departament amb el sentit del vot de cada membre."
     },
@@ -532,20 +532,20 @@
     "es": {
       "enunciado": "En la composición del equipo de atención primaria que establece el artículo 41 de la Ley 15/1990, los auxiliares de clínica de atención primaria figuran dentro del:",
       "opciones": [
-        "Personal no sanitario del equipo",
+        "Personal no sanitario, junto con el personal administrativo",
         "Personal auxiliar sanitario, junto con los ATS/diplomados en enfermería",
         "Grupo de asistentes sociales de atención primaria",
-        "Grupo de funcionarios sanitarios locales"
+        "Grupo de funcionarios sanitarios locales de cuerpos titulares"
       ],
       "explicacion": "El artículo 41.2.a.2) incluye en el personal auxiliar sanitario a los ATS/diplomados en enfermería y a los auxiliares de clínica de atención primaria, dentro del personal sanitario del equipo."
     },
     "ca": {
       "enunciado": "En la composició de l'equip d'atenció primària que estableix l'article 41 de la Llei 15/1990, els auxiliars de clínica d'atenció primària figuren dins del:",
       "opciones": [
-        "Personal no sanitari de l'equip",
+        "Personal no sanitari, juntament amb el personal administratiu",
         "Personal auxiliar sanitari, juntament amb els ATS/diplomats en infermeria",
         "Grup d'assistents socials d'atenció primària",
-        "Grup de funcionaris sanitaris locals"
+        "Grup de funcionaris sanitaris locals de cossos titulars"
       ],
       "explicacion": "L'article 41.2.a.2) inclou en el personal auxiliar sanitari els ATS/diplomats en infermeria i els auxiliars de clínica d'atenció primària, dins del personal sanitari de l'equip."
     },
@@ -603,8 +603,8 @@
       "enunciado": "¿Puede el Servicio Catalán de la Salud contratar con centros sanitarios que no pertenecen al SISCAT?",
       "opciones": [
         "Sí, libremente y con preferencia sobre los centros del SISCAT",
-        "No, en ningún caso",
-        "Sí, solo con carácter excepcional y por una duración limitada, cuando los centros del sistema no sean suficientes",
+        "No, en ningún caso, aunque los centros del sistema no basten",
+        "Sí, pero solo excepcionalmente, por tiempo limitado y si los centros del sistema no bastan",
         "Sí, pero solo con entidades sin ánimo de lucro y por tiempo indefinido"
       ],
       "explicacion": "El artículo 43.3 lo permite solo con carácter excepcional, por una duración limitada y cuando los centros y establecimientos del sistema no sean suficientes."
@@ -613,8 +613,8 @@
       "enunciado": "Pot el Servei Català de la Salut contractar amb centres sanitaris que no pertanyen al SISCAT?",
       "opciones": [
         "Sí, lliurement i amb preferència sobre els centres del SISCAT",
-        "No, en cap cas",
-        "Sí, només amb caràcter excepcional i per una durada limitada, quan els centres del sistema no siguin suficients",
+        "No, en cap cas, encara que els centres del sistema no siguin suficients",
+        "Sí, però només excepcionalment, per temps limitat i si els centres del sistema no són suficients",
         "Sí, però només amb entitats sense ànim de lucre i per temps indefinit"
       ],
       "explicacion": "L'article 43.3 ho permet només amb caràcter excepcional, per una durada limitada i quan els centres i establiments del sistema no siguin suficients."

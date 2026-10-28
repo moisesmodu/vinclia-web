@@ -42,20 +42,20 @@
     "es": {
       "enunciado": "¿Cómo define el Estatuto Marco la carrera profesional?",
       "opciones": [
-        "Como el ascenso automático de categoría cada cinco años de servicio",
-        "Como el derecho de los profesionales a progresar de forma individualizada, como reconocimiento a su desarrollo profesional en conocimientos, experiencia y cumplimiento de objetivos",
-        "Como el derecho a cambiar de centro de trabajo por antigüedad",
-        "Como un complemento lineal igual para todo el personal de una misma categoría"
+        "El ascenso automático de categoría profesional cada cinco años de servicios prestados",
+        "El derecho a progresar de forma individualizada, como reconocimiento del desarrollo profesional en conocimientos, experiencia y objetivos",
+        "El derecho a cambiar de centro de trabajo según la antigüedad acumulada en la categoría",
+        "Un complemento lineal igual para todo el personal de una misma categoría, sin evaluación"
       ],
       "explicacion": "El artículo 40.2 la define como el derecho a progresar de forma individualizada, reconociendo el desarrollo profesional en conocimientos, experiencia y cumplimiento de los objetivos de la organización."
     },
     "ca": {
       "enunciado": "Com defineix l'Estatut marc la carrera professional?",
       "opciones": [
-        "Com l'ascens automàtic de categoria cada cinc anys de servei",
-        "Com el dret dels professionals a progressar de manera individualitzada, com a reconeixement del seu desenvolupament professional en coneixements, experiència i compliment d'objectius",
-        "Com el dret a canviar de centre de treball per antiguitat",
-        "Com un complement lineal igual per a tot el personal d'una mateixa categoria"
+        "L'ascens automàtic de categoria professional cada cinc anys de serveis prestats",
+        "El dret a progressar de manera individualitzada, com a reconeixement del desenvolupament professional en coneixements, experiència i objectius",
+        "El dret a canviar de centre de treball segons l'antiguitat acumulada en la categoria",
+        "Un complement lineal igual per a tot el personal d'una mateixa categoria, sense avaluació"
       ],
       "explicacion": "L'article 40.2 la defineix com el dret a progressar de manera individualitzada, reconeixent el desenvolupament professional en coneixements, experiència i compliment dels objectius de l'organització."
     },
@@ -147,20 +147,20 @@
     "es": {
       "enunciado": "Según el Estatuto Marco, ¿hacia qué se orientan prioritariamente las retribuciones complementarias?",
       "opciones": [
-        "A compensar exclusivamente la antigüedad en el servicio",
-        "A igualar las retribuciones de todas las categorías",
+        "A compensar exclusivamente la antigüedad acumulada en el servicio activo, sin valorar la actividad",
+        "A igualar las retribuciones de todas las categorías profesionales con independencia de su título",
         "A la motivación del personal, la incentivación de la actividad y la calidad, la dedicación y la consecución de objetivos",
-        "A cubrir los gastos de desplazamiento del personal"
+        "A cubrir los gastos de desplazamiento y manutención del personal en comisión de servicio"
       ],
       "explicacion": "El artículo 41.2 orienta las retribuciones complementarias a la motivación, la incentivación de la actividad y la calidad del servicio, la dedicación y los objetivos planificados. La antigüedad se retribuye con los trienios, que son retribución básica."
     },
     "ca": {
       "enunciado": "Segons l'Estatut marc, cap a què s'orienten prioritàriament les retribucions complementàries?",
       "opciones": [
-        "A compensar exclusivament l'antiguitat en el servei",
-        "A igualar les retribucions de totes les categories",
+        "A compensar exclusivament l'antiguitat acumulada en el servei actiu, sense valorar l'activitat",
+        "A igualar les retribucions de totes les categories professionals amb independència del títol",
         "A la motivació del personal, la incentivació de l'activitat i la qualitat, la dedicació i la consecució d'objectius",
-        "A cobrir les despeses de desplaçament del personal"
+        "A cobrir les despeses de desplaçament i manutenció del personal en comissió de servei"
       ],
       "explicacion": "L'article 41.2 orienta les retribucions complementàries a la motivació, la incentivació de l'activitat i la qualitat del servei, la dedicació i els objectius planificats. L'antiguitat es retribueix amb els triennis, que són retribució bàsica."
     },
@@ -252,20 +252,20 @@
     "es": {
       "enunciado": "¿Qué efecto retributivo tiene para el personal estatutario el ejercicio del derecho de huelga?",
       "opciones": [
-        "Se pierde la paga extraordinaria del semestre",
-        "Se descuenta el doble del tiempo no trabajado",
-        "No tiene ningún efecto retributivo",
-        "No se devengan las retribuciones del tiempo de huelga, sin que la deducción sea sanción ni afecte a sus prestaciones sociales"
+        "Se pierde la paga extraordinaria completa del semestre en que se produce la huelga",
+        "Se descuenta el doble del tiempo no trabajado, como sanción disciplinaria automática",
+        "No tiene ningún efecto retributivo, porque la huelga es un derecho fundamental",
+        "No se devenga la retribución del tiempo de huelga; la deducción no es sanción ni afecta a las prestaciones sociales"
       ],
       "explicacion": "El artículo 41.7 establece que no se devengan ni perciben las retribuciones del tiempo de huelga; la deducción no es sanción disciplinaria ni afecta al régimen de prestaciones sociales."
     },
     "ca": {
       "enunciado": "Quin efecte retributiu té per al personal estatutari l'exercici del dret de vaga?",
       "opciones": [
-        "Es perd la paga extraordinària del semestre",
-        "Es descompta el doble del temps no treballat",
-        "No té cap efecte retributiu",
-        "No es meriten les retribucions del temps de vaga, sense que la deducció sigui sanció ni afecti les prestacions socials"
+        "Es perd la paga extraordinària sencera del semestre en què es fa la vaga",
+        "Es descompta el doble del temps no treballat, com a sanció disciplinària automàtica",
+        "No té cap efecte retributiu, perquè la vaga és un dret fonamental",
+        "No es merita la retribució del temps de vaga; la deducció no és sanció ni afecta les prestacions socials"
       ],
       "explicacion": "L'article 41.7 estableix que no es meriten ni es perceben les retribucions del temps de vaga; la deducció no és sanció disciplinària ni afecta el règim de prestacions socials."
     },
@@ -322,20 +322,20 @@
     "es": {
       "enunciado": "Las cuantías del sueldo y los trienios del personal estatutario:",
       "opciones": [
-        "Las fija libremente cada servicio de salud",
+        "Las fija libremente cada servicio de salud según sus disponibilidades presupuestarias",
         "Son iguales en todos los servicios de salud y se fijan cada año en las Leyes de Presupuestos",
-        "Se negocian en cada centro sanitario",
-        "Varían según la comunidad autónoma y el tamaño del centro"
+        "Se negocian en cada centro sanitario con la junta de personal correspondiente",
+        "Varían según la comunidad autónoma y el tamaño del centro donde se prestan servicios"
       ],
       "explicacion": "El artículo 42.2 dispone que las retribuciones básicas y las cuantías del sueldo y los trienios son iguales en todos los servicios de salud y se determinan cada año en las Leyes de Presupuestos; coinciden con las de los funcionarios públicos."
     },
     "ca": {
       "enunciado": "Les quanties del sou i dels triennis del personal estatutari:",
       "opciones": [
-        "Les fixa lliurement cada servei de salut",
+        "Les fixa lliurement cada servei de salut segons les seves disponibilitats pressupostàries",
         "Són iguals a tots els serveis de salut i es fixen cada any a les lleis de pressupostos",
-        "Es negocien a cada centre sanitari",
-        "Varien segons la comunitat autònoma i la mida del centre"
+        "Es negocien a cada centre sanitari amb la junta de personal corresponent",
+        "Varien segons la comunitat autònoma i la mida del centre on es presten serveis"
       ],
       "explicacion": "L'article 42.2 disposa que les retribucions bàsiques i les quanties del sou i dels triennis són iguals a tots els serveis de salut i es determinen cada any a les lleis de pressupostos; coincideixen amb les dels funcionaris públics."
     },
@@ -497,20 +497,20 @@
     "es": {
       "enunciado": "Según el Estatuto Marco, el complemento de carrera retribuye:",
       "opciones": [
-        "Los años de servicio prestados, por cada tres años",
+        "Los años de servicio prestados en la categoría, por cada tres años completos",
         "El grado alcanzado en la carrera profesional, cuando ese sistema se haya implantado en la categoría",
-        "El nivel del puesto de trabajo que se desempeña",
-        "La participación en programas de formación continuada"
+        "El nivel del puesto de trabajo que se desempeña dentro de la organización",
+        "La participación en programas de formación continuada organizados por el centro"
       ],
       "explicacion": "El artículo 43.2.e) destina el complemento de carrera a retribuir el grado alcanzado en la carrera profesional, siempre que el sistema esté implantado en la categoría correspondiente. Los años de servicio se retribuyen con trienios."
     },
     "ca": {
       "enunciado": "Segons l'Estatut marc, el complement de carrera retribueix:",
       "opciones": [
-        "Els anys de servei prestats, per cada tres anys",
+        "Els anys de servei prestats en la categoria, per cada tres anys complets",
         "El grau assolit en la carrera professional, quan aquest sistema s'hagi implantat en la categoria",
-        "El nivell del lloc de treball que s'ocupa",
-        "La participació en programes de formació continuada"
+        "El nivell del lloc de treball que s'ocupa dins l'organització",
+        "La participació en programes de formació continuada organitzats pel centre"
       ],
       "explicacion": "L'article 43.2.e) destina el complement de carrera a retribuir el grau assolit en la carrera professional, sempre que el sistema estigui implantat en la categoria corresponent. Els anys de servei es retribueixen amb triennis."
     },
@@ -567,20 +567,20 @@
     "es": {
       "enunciado": "Según la Ley 44/2003, de ordenación de las profesiones sanitarias, el reconocimiento del desarrollo profesional se articula en:",
       "opciones": [
-        "Tres grados, sin grado inicial",
-        "Cinco grados obligatorios",
+        "Tres grados, sin posibilidad de establecer un grado inicial",
+        "Cinco grados obligatorios para todos los servicios de salud",
         "Cuatro grados, con la posibilidad de un grado inicial previo",
-        "Seis niveles retributivos"
+        "Seis niveles retributivos ligados a la antigüedad en el puesto"
       ],
       "explicacion": "El artículo 38.1.a) articula el reconocimiento en cuatro grados y permite a las Administraciones sanitarias establecer un grado inicial previo, que debe homologarse."
     },
     "ca": {
       "enunciado": "Segons la Llei 44/2003, d'ordenació de les professions sanitàries, el reconeixement del desenvolupament professional s'articula en:",
       "opciones": [
-        "Tres graus, sense grau inicial",
-        "Cinc graus obligatoris",
+        "Tres graus, sense possibilitat d'establir un grau inicial",
+        "Cinc graus obligatoris per a tots els serveis de salut",
         "Quatre graus, amb la possibilitat d'un grau inicial previ",
-        "Sis nivells retributius"
+        "Sis nivells retributius lligats a l'antiguitat en el lloc"
       ],
       "explicacion": "L'article 38.1.a) articula el reconeixement en quatre graus i permet a les administracions sanitàries establir un grau inicial previ, que s'ha d'homologar."
     },
@@ -637,20 +637,20 @@
     "es": {
       "enunciado": "Según la Ley 44/2003, ¿quién realiza la evaluación para el reconocimiento del desarrollo profesional?",
       "opciones": [
-        "El superior jerárquico directo del profesional, por sí solo",
-        "Un tribunal único del Ministerio de Sanidad",
-        "La junta de personal del centro",
-        "Un comité específico de cada centro, integrado mayoritariamente por profesionales de la misma profesión del evaluado y con evaluadores externos"
+        "El superior jerárquico directo del profesional evaluado, por sí solo y sin comité",
+        "Un tribunal único del Ministerio de Sanidad para todo el Sistema Nacional de Salud",
+        "La junta de personal del centro, en representación de los trabajadores",
+        "Un comité específico de cada centro, formado sobre todo por profesionales de la misma profesión y con evaluadores externos"
       ],
       "explicacion": "El artículo 38.1.d) encarga la evaluación a un comité específico de cada centro, formado mayoritariamente por profesionales de la misma profesión, con representantes del servicio del evaluado y evaluadores externos de agencias de calidad o sociedades científicas."
     },
     "ca": {
       "enunciado": "Segons la Llei 44/2003, qui fa l'avaluació per al reconeixement del desenvolupament professional?",
       "opciones": [
-        "El superior jeràrquic directe del professional, tot sol",
-        "Un tribunal únic del Ministeri de Sanitat",
-        "La junta de personal del centre",
-        "Un comitè específic de cada centre, integrat majoritàriament per professionals de la mateixa professió de l'avaluat i amb avaluadors externs"
+        "El superior jeràrquic directe del professional avaluat, tot sol i sense comitè",
+        "Un tribunal únic del Ministeri de Sanitat per a tot el Sistema Nacional de Salut",
+        "La junta de personal del centre, en representació dels treballadors",
+        "Un comitè específic de cada centre, format sobretot per professionals de la mateixa professió i amb avaluadors externs"
       ],
       "explicacion": "L'article 38.1.d) encarrega l'avaluació a un comitè específic de cada centre, format majoritàriament per professionals de la mateixa professió, amb representants del servei de l'avaluat i avaluadors externs d'agències de qualitat o societats científiques."
     },
@@ -707,20 +707,20 @@
     "es": {
       "enunciado": "¿Qué retribución restablece la Ley catalana 13/2020 para el personal estatutario del ICS y el personal del SISCAT?",
       "opciones": [
-        "El complemento de carrera profesional suspendido en 2012",
+        "El complemento de carrera profesional ligado al grado reconocido a cada profesional",
         "El complemento de productividad variable ligado al cumplimiento de los objetivos de cada ejercicio",
-        "La paga extraordinaria de diciembre de 2012",
-        "El complemento de atención continuada de las guardias"
+        "La paga extraordinaria de junio y diciembre del personal estatutario temporal",
+        "El complemento de atención continuada por noches, festivos y guardias"
       ],
       "explicacion": "El artículo 1 de la Ley 13/2020 tiene por objeto restablecer el complemento de productividad variable, relativo al cumplimiento de los objetivos fijados para cada ejercicio por el II Acuerdo de la Mesa Sectorial de Negociación de Sanidad."
     },
     "ca": {
       "enunciado": "Quina retribució restableix la Llei catalana 13/2020 per al personal estatutari de l'ICS i el personal del SISCAT?",
       "opciones": [
-        "El complement de carrera professional suspès el 2012",
+        "El complement de carrera professional lligat al grau reconegut a cada professional",
         "El complement de productivitat variable lligat al compliment dels objectius de cada exercici",
-        "La paga extraordinària de desembre de 2012",
-        "El complement d'atenció continuada de les guàrdies"
+        "La paga extraordinària de juny i desembre del personal estatutari temporal",
+        "El complement d'atenció continuada per nits, festius i guàrdies"
       ],
       "explicacion": "L'article 1 de la Llei 13/2020 té per objecte restablir el complement de productivitat variable, relatiu al compliment dels objectius fixats per a cada exercici pel II Acord de la Mesa Sectorial de Negociació de Sanitat."
     },
