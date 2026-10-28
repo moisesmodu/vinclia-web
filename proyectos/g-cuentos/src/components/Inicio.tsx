@@ -62,7 +62,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
         <div className="tarjeta p-6 ring-2 ring-terracota">
           <p className="font-bold text-noche">{x.precios.tapaDura}</p>
-          <p className="titulo text-4xl my-2">{euros(c.precios.tapaDura, idioma)} <span className="text-base font-[var(--font-texto)] text-suave">· {x.precios.envio}</span></p>
+          <p className="titulo text-4xl my-2">{euros(c.precios.tapaDura, idioma)} <span className="text-base text-suave" style={{ fontFamily: "var(--font-texto)" }}>· {x.precios.envio}</span></p>
           <p className="text-suave">{x.precios.entregaLibro}</p>
         </div>
         <p className="sm:col-span-2 text-center text-sm text-terracota-osc font-bold">

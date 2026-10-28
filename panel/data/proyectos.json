@@ -1174,18 +1174,20 @@
     "letra": "G",
     "nombre": "Cuentos personalizados",
     "marca": "Niños",
-    "resumen": "Cuentos infantiles ilustrados y personalizados, en PDF e impresos bajo demanda. Tienda abierta el 15/11 para Navidad.",
-    "estado": "pendiente",
+    "resumen": "Lunilla: cuentos ilustrados y personalizados en castellano y catalán, PDF en menos de 2 horas o tapa dura. Tienda construida y probada de punta a punta en modo simulado; falta pegar claves para abrir el 15/11.",
+    "estado": "en construcción",
     "orden": 6,
     "fechaLimite": "2026-11-15",
-    "modelo": "PDF 7,90 € · impreso 34,90 €",
-    "margenCliente": 9,
+    "modelo": "PDF 7,90 € · tapa dura 36,90 € con envío incluido",
+    "margenCliente": 10,
     "objetivoMes12": 100,
     "ingresosMes": 0,
     "costesMes": 0,
     "clientes": 0,
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
-    "enlaces": {},
+    "enlaces": {
+      "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/g-cuentos/proyectos/g-cuentos"
+    },
     "acciones": [
       {
         "fecha": "2026-10-23",
@@ -1206,23 +1208,47 @@
       {
         "fecha": "2026-10-24",
         "texto": "Juicio y probabilidad de éxito a 6 meses añadidos"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Marca Lunilla, 2 protagonistas con hoja de personaje y 4 plantillas de 12 páginas en castellano y catalán (17 miedos y valores)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "2 cuentos de muestra completos ilustrados con Higgsfield (56 de 80 créditos) y maquetación a PDF de imprenta con sangrado y cubierta"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Tienda completa: vista previa gratis, Stripe, webhook, correo, pedido a Gelato, afiliadas al 20 %, 23 páginas SEO, legales y panel de administración"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Prueba de punta a punta superada en modo simulado (pago, PDF, pedido a imprenta en borrador, comisión de afiliada)"
       }
     ],
     "proximos": [
-      "Abrir la sesión G antes del 1/11",
-      "Cuenta de imprenta"
+      "Moisés: 5 pasos de PARA-MOISES.md (Neon, Stripe, Gelato, Vercel, dominio y Resend)",
+      "Claude: pedido de prueba con Stripe de prueba real y Gelato en borrador; npm run cotizar para fijar el precio",
+      "Crear las 3 tareas programadas (taller horario, operación diaria, informe semanal)",
+      "Completar la biblioteca de vistas previas (6 combinaciones, 144 créditos)",
+      "Abrir el 15/11 y empezar vídeos y afiliadas"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Cuenta en Gelato",
-      "Vercel y Neon"
+      "Neon: crear proyecto y copiar la conexión",
+      "Stripe: claves de prueba y webhook",
+      "Gelato: cuenta y clave de API",
+      "Vercel: importar proyecto, Blob y variables",
+      "Dominio (lunilla.es) y Resend"
     ],
     "mejoras": [
       "Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",
       "Posicionar el catalán como diferencial: landing y SEO en 'conte personalitzat', acuerdos con escoles bressol, AMPAs y llibreries.",
       "Añadir audiocuento narrado incluido en el PDF mediante QR; coste casi nulo y casi nadie lo ofrece.",
       "Vista previa gratuita de 2 o 3 páginas antes de pagar para reducir el abandono.",
-      "Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez."
+      "Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez.",
+      "Si Higgsfield publica una API estable, ilustrar en el servidor y entregar el PDF en minutos en vez de en menos de 2 horas.",
+      "Si las afiliadas venden sobre todo tapa dura, bajar su comisión en ese formato al 15 % (margen con afiliada ≈2,65 €).",
+      "Más protagonistas (tonos de piel y pelo) con su hoja de personaje."
     ],
     "competidores": [
       {
@@ -1310,6 +1336,20 @@
         "licencia": "no verificado",
         "uso": "Envoltorio de la API de impresión de Lulu (costes, envío, pedidos)",
         "estrellas": ""
+      },
+      {
+        "nombre": "Hopding/pdf-lib",
+        "url": "https://github.com/Hopding/pdf-lib",
+        "licencia": "MIT",
+        "uso": "Usado: interior de 28 páginas con TrimBox/BleedBox y pliego de cubierta con lomo",
+        "estrellas": "8.400"
+      },
+      {
+        "nombre": "SIL Andika (Google Fonts)",
+        "url": "https://github.com/google/fonts/tree/main/ofl/andika",
+        "licencia": "OFL",
+        "uso": "Usada: tipografía diseñada para lectores que empiezan",
+        "estrellas": ""
       }
     ],
     "hallazgos": [
@@ -1318,7 +1358,12 @@
       "Costes de impresión no oficiales: Peecho tapa dura desde 5,20 €, Gelato fotolibro tapa dura de 12 a 19 $ con producción en España, Lulu de 11 a 15 $. Margen bruto estimado sobre 34,90 €: de 12 a 22 € antes de envío (3 a 6 €) y pasarela. Confirmar por la API de precios de Gelato.",
       "Plazos: la ventana real de venta de tapa dura acaba hacia el 10 o 14 de diciembre por las fechas límite de Gelato; después solo PDF.",
       "Gasto navideño en regalos en España: de 462 a 580 € por hogar, con tendencia al regalo con componente emocional.",
-      "Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad."
+      "Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad.",
+      "Gelato exige un mínimo de 28 páginas interiores en el fotolibro de tapa dura y no tiene sandbox: los pedidos «draft» no se producen ni se cobran y sirven de prueba.",
+      "Las webs de Gelato y Lulu no son accesibles desde el entorno de las sesiones: el precio real (estimado 17,60 € + 6 € de envío) se confirma con npm run cotizar al tener la clave.",
+      "Con la estimación, 34,90 € dejaba 9,2 € de margen sin colchón: se sube a 36,90 € con envío incluido (≈10 €), aún por debajo de Aventopía (43,99 €).",
+      "Cada cuento ilustrado gasta unos 26 créditos de Higgsfield (Nano Banana Pro 2k, 13 imágenes): unos 30 cuentos al mes caben en el saldo actual; más exige recargar.",
+      "La API pública de Higgsfield no está documentada de forma verificable: la ilustración por pedido la hace una tarea programada horaria con el conector."
     ],
     "lider": {
       "nombre": "Wonderbly (y Aventopía como competidor local)",

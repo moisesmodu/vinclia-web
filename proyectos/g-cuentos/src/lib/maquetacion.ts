@@ -129,7 +129,7 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   const cy = lado / 2;
   const anchoTexto = corte - 2 * 30 * MM;
 
-  if (!imprenta) dibujarFrontal(nueva(), imgs[0], e.cuento.titulo, t.marca, F, 0, 0, lado);
+  if (!imprenta) dibujarFrontal(nueva(), imgs[0], e.cuento.titulo, t.marca, F, { x: 0, y: 0, w: lado, h: lado });
 
   // 1 · Portadilla
   {
@@ -180,15 +180,21 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   return doc.save();
 }
 
-function dibujarFrontal(p: PDFPage, img: PDFImage, titulo: string, marca: string, F: Fuentes, x0: number, y0: number, lado: number, ancho = lado) {
-  p.drawImage(img, { x: x0, y: y0, width: ancho, height: lado });
-  // Banda del título en el tercio superior (las ilustraciones de portada dejan ese hueco).
+interface Rect { x: number; y: number; w: number; h: number }
+
+/** Portada: la ilustración cubre `img` (con sangrado/solapas) y el título se coloca dentro de `vis` (lo que se ve). */
+function dibujarFrontal(p: PDFPage, imagen: PDFImage, titulo: string, marca: string, F: Fuentes, img: Rect, vis: Rect = img) {
+  p.drawImage(imagen, { x: img.x, y: img.y, width: img.w, height: img.h });
+  // Banda del título en el tercio superior de la parte visible (las ilustraciones de portada dejan ese hueco).
+  const lado = Math.min(vis.w, vis.h);
   const bandaAlto = lado * 0.24;
-  const margen = lado * 0.08;
-  p.drawRectangle({ x: x0 + margen, y: y0 + lado - bandaAlto - margen * 0.6, width: ancho - 2 * margen, height: bandaAlto, color: CREMA, opacity: 0.88 });
-  bloqueCentrado(p, titulo, F.titulo, x0 + ancho / 2, y0 + lado - bandaAlto / 2 - margen * 0.6 + lado * 0.012, ancho - 2 * margen - 20, lado / 16, bandaAlto * 0.7, AZUL_NOCHE, 1.15);
-  const w = F.texto.widthOfTextAtSize(marca, lado / 55);
-  p.drawText(marca, { x: x0 + ancho / 2 - w / 2, y: y0 + lado - bandaAlto - margen * 0.6 + lado * 0.022, size: lado / 55, font: F.texto, color: TERRACOTA });
+  const margen = lado * 0.07;
+  const yBanda = vis.y + vis.h - margen - bandaAlto;
+  p.drawRectangle({ x: vis.x + margen, y: yBanda, width: vis.w - 2 * margen, height: bandaAlto, color: CREMA, opacity: 0.9 });
+  bloqueCentrado(p, titulo, F.titulo, vis.x + vis.w / 2, yBanda + bandaAlto * 0.58, vis.w - 2 * margen - 24, lado / 16, bandaAlto * 0.62, AZUL_NOCHE, 1.15);
+  const tam = lado / 55;
+  const w = F.texto.widthOfTextAtSize(marca, tam);
+  p.drawText(marca, { x: vis.x + vis.w / 2 - w / 2, y: yBanda + bandaAlto * 0.1, size: tam, font: F.texto, color: TERRACOTA });
 }
 
 export interface DimensionesCubierta {
@@ -214,11 +220,12 @@ export async function generarCubierta(e: Omit<EntradaPdf, "modo">, dim: Dimensio
   const img = await doc.embedJpg(await sharp(e.imagenes[0]).resize(px, Math.round((H / MM / 25.4) * LIBRO.dpi), { fit: "cover" }).jpeg({ quality: 92 }).toBuffer());
   // Portada (derecha), a sangre hasta el borde exterior
   const xFront = env + tapa + lomo;
-  dibujarFrontal(p, img, e.cuento.titulo, TEXTOS[e.idioma].marca, F, xFront, 0, H, W - xFront);
+  dibujarFrontal(p, img, e.cuento.titulo, TEXTOS[e.idioma].marca, F, { x: xFront, y: 0, w: W - xFront, h: H }, { x: xFront, y: env, w: tapa, h: H - 2 * env });
   // Contraportada (izquierda)
   const cxBack = env + tapa / 2;
   bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cxBack, H / 2 + 15 * MM, tapa - 40 * MM, 15, 50 * MM);
   bloqueCentrado(p, "Lunilla · lunilla.es", F.titulo, cxBack, env + 25 * MM, tapa - 40 * MM, 12, 10 * MM, TERRACOTA);
+  bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 45 * MM, tapa - 50 * MM, 7, 20 * MM, TINTA, 1.35);
   // Lomo
   p.drawRectangle({ x: env + tapa, y: 0, width: lomo, height: H, color: AZUL_NOCHE });
   if (lomo >= 5 * MM) {
