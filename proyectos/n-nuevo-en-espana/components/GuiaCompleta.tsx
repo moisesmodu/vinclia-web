@@ -3,11 +3,12 @@ import type { Dicc } from "@/lib/i18n";
 import type { Guia } from "@/lib/contenido";
 import Checklist from "./Checklist";
 import FormRecordatorio from "./FormRecordatorio";
+import OfertaTrasGuia from "./OfertaTrasGuia";
 
-export default function GuiaCompleta({ g, idioma, d }: { g: Guia; idioma: string; d: Dicc }) {
+export default function GuiaCompleta({ g, idioma, d, oferta = false }: { g: Guia; idioma: string; d: Dicc; oferta?: boolean }) {
   return (
     <div className="space-y-6">
-      <Checklist slug={g.slug} items={g.checklist} d={d} />
+      <Checklist slug={g.slug} items={g.checklist} d={d} siguiente={oferta ? d.oferta.titulo : undefined} />
       <section>
         <h2 className="font-bold text-xl mb-3">{d.guia.pasos}</h2>
         <ol className="space-y-3">
@@ -69,6 +70,7 @@ export default function GuiaCompleta({ g, idioma, d }: { g: Guia; idioma: string
       ) : null}
 
       <FormRecordatorio slug={g.slug} idioma={idioma} r={g.recordatorio} d={d} />
+      {oferta ? <OfertaTrasGuia idioma={idioma} d={d} /> : null}
     </div>
   );
 }

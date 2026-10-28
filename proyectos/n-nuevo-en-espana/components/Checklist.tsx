@@ -4,7 +4,7 @@ import type { Dicc } from "@/lib/i18n";
 import { t } from "@/lib/texto";
 
 // Lista de comprobación: se guarda solo en el navegador (localStorage), sin cuenta y sin enviar nada.
-export default function Checklist({ slug, items, d }: { slug: string; items: { id: string; texto: string }[]; d: Dicc }) {
+export default function Checklist({ slug, items, d, siguiente }: { slug: string; items: { id: string; texto: string }[]; d: Dicc; siguiente?: string }) {
   const clave = `nee-check-${slug}`;
   const [hechos, setHechos] = useState<Record<string, boolean>>({});
   useEffect(() => {
@@ -36,7 +36,8 @@ export default function Checklist({ slug, items, d }: { slug: string; items: { i
         ))}
       </ul>
       {n === items.length && items.length > 0 ? (
-        <p className="mt-3 rounded-xl p-3 bg-ok-claro text-ok font-semibold" role="status">🎉 {d.guia.celebracion}</p>
+        <p className="mt-3 rounded-xl p-3 bg-ok-claro text-ok font-semibold" role="status">🎉 {d.guia.celebracion}{" "}
+          {siguiente ? <a href="#siguiente" className="enlace">{siguiente}</a> : null}</p>
       ) : null}
       <div className="flex justify-between items-center mt-3 text-sm text-suave">
         <span>{d.guia.checklistAyuda}</span>

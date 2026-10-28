@@ -44,6 +44,7 @@ const gratis = (await import("../content/es/es/guias/empadronamiento.json", { wi
 const pago = (await import("../content/es/es/guias/renovacion-residencia.json", { with: { type: "json" } })).default;
 html = await (await fetch(`${B}/es/guias/empadronamiento`)).text();
 ok(html.includes(gratis.pasos[2].titulo.replace(/"/g, "&quot;")) && html.includes(gratis.checklist[0].texto.slice(0, 20)), "La guía gratis se ve completa en el HTML");
+ok(html.includes("desde=guia-gratis"), "Al final de la guía gratis aparece la oferta de pago");
 html = await (await fetch(`${B}/es/guias/renovacion-residencia`)).text();
 ok(html.includes(pago.titulo) && !html.includes(pago.pasos[1].texto.slice(0, 40)), "La guía de pago muestra el resumen y NO el paso a paso en el HTML");
 for (const ruta of ["/sitemap.xml", "/robots.txt", "/manifest.webmanifest", "/sw.js", "/es/precios", "/zh/guias/nacionalidad", "/es/legal/condiciones", "/es/preguntas"]) {

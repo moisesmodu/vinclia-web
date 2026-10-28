@@ -8,6 +8,7 @@ import { dicc, LOCALE_BCP47 } from "@/lib/i18n";
 import Cabecera from "@/components/Cabecera";
 import Pie from "@/components/Pie";
 import RegistroSW from "@/components/RegistroSW";
+import AvisoRecuperacion from "@/components/AvisoRecuperacion";
 
 const titulo = Outfit({ subsets: ["latin", "latin-ext"], weight: ["700"], variable: "--font-titulo", display: "swap" });
 const texto = Noto_Sans({ subsets: ["latin", "latin-ext", "cyrillic"], weight: ["400", "600"], variable: "--font-texto", display: "swap" });
@@ -50,6 +51,7 @@ export default async function Layout({ children, params }: { children: React.Rea
         <main id="contenido" className="flex-1 w-full max-w-3xl mx-auto px-4 py-6">{children}</main>
         <Pie idioma={idioma} d={d} />
         <RegistroSW />
+        <AvisoRecuperacion idioma={idioma} textos={d.recuperacion} />
         {plausible ? <Script defer data-domain={plausible} src="https://plausible.io/js/script.js" strategy="afterInteractive" /> : null}
       </body>
     </html>

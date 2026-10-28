@@ -244,7 +244,8 @@
       "demo": "https://nuevo-en-espana.vercel.app",
       "pr": "https://github.com/moisesmodu/vinclia-web/pull/3",
       "codigo": "https://github.com/moisesmodu/vinclia-web/tree/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana",
-      "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/DESPLIEGUE.md"
+      "despliegue": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/DESPLIEGUE.md",
+      "monetizacion": "https://github.com/moisesmodu/vinclia-web/blob/claude/n-nuevo-en-espana/proyectos/n-nuevo-en-espana/MONETIZACION.md"
     },
     "acciones": [
       {
@@ -282,13 +283,22 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado en producción (https://nuevo-en-espana.vercel.app) desde la sesión del Mac: proyecto de Vercel nuevo-en-espana, Neon cartera-n-nuevo-en-espana (Londres) con migraciones, Stripe en el entorno de prueba de Numi Mates (productos, precios y webhook) y Next.js 15.5.28 (parche del CVE-2025-66478)."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Correo de contacto, aviso legal y reply-to: hola@numimates.com (remitente noreply@numimates.com)."
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Monetizar primero: oferta de pago al acabar la guía gratis de empadronamiento (2 pantallas hasta Stripe), aviso único de recuperación para pagos a medias, eventos checkout/pago y MONETIZACION.md con embudo, 100 primeras visitas y primer euro como muy tarde el 11/11/2026."
       }
     ],
     "proximos": [
-      "Publicar en producción la versión con la identidad de marca (comando en DESPLIEGUE.md; el despliegue desde la nube lo bloqueó el control de permisos)",
-      "Pago de prueba con 4242 en producción desde un navegador con acceso a checkout.stripe.com; la creación de la sesión de pago ya está comprobada",
-      "Primera revisión semanal: confirmar tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)",
-      "Marzo 2027: campaña de la guía de renovación como producto de 19,90 € (condición del juicio)"
+      "Publicar en producción la versión con marca, oferta y correo (commit «correo hola@numimates.com»; comando en DESPLIEGUE.md)",
+      "Pago de prueba con 4242 en producción y pasar Stripe a modo real con un pago real reembolsado (D1, 29/10)",
+      "Primeras 100 visitas sin anuncios según MONETIZACION.md (comunidades, enlace desde A, Search Console, 3 vídeos)",
+      "Primer euro como muy tarde el 11/11/2026",
+      "Primera revisión semanal: tasas 790-052/012, DELE A2, DGT 2026 y convenios de canje (China, Argelia, Senegal)"
     ],
     "paraMoises": [
       "Aprobar la tarea programada semanal (prompt en TAREA-PROGRAMADA.md)",

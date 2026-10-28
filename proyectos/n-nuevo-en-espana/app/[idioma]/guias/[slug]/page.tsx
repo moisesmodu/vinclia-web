@@ -80,7 +80,7 @@ export default async function PaginaGuia({ params }: { params: Promise<{ idioma:
         ) : null}
 
         {completa ? (
-          <GuiaCompleta g={completa} idioma={idioma} d={d} />
+          <GuiaCompleta g={completa} idioma={idioma} d={d} oferta />
         ) : (
           <CargarGuia slug={slug} idioma={idioma} d={d} />
         )}

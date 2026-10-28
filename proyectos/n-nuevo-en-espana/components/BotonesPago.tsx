@@ -1,10 +1,13 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Plan = { id: "suscripcion" | "pack"; titulo: string; precio: string; periodo: string; iva: string; nota: string; texto: string; destacado?: boolean };
 type Textos = { pagar: string; desistimiento: string; condiciones: string; marcaCasillas: string; errorPago: string; enlaceCondiciones: string };
 
 export default function BotonesPago({ idioma, planes, textos }: { idioma: string; planes: Plan[]; textos: Textos }) {
+  // ?plan=pack|suscripcion (viene del aviso de recuperación): se destaca el plan que se quedó a medias.
+  const [planInicial, setPlanInicial] = useState<string | undefined>();
+  useEffect(() => { setPlanInicial(new URLSearchParams(window.location.search).get("plan") ?? undefined); }, []);
   const [desist, setDesist] = useState(false);
   const [cond, setCond] = useState(false);
   const [error, setError] = useState("");
@@ -18,7 +21,11 @@ export default function BotonesPago({ idioma, planes, textos }: { idioma: string
       body: JSON.stringify({ plan, idioma, desistimiento: desist, condiciones: cond })
     }).catch(() => null);
     const j = r?.ok ? await r.json() : null;
-    if (j?.url) window.location.href = j.url;
+    if (j?.url) {
+      try { localStorage.setItem("nee-pago-pendiente", JSON.stringify({ plan, ts: Date.now() })); } catch {}
+      (window as unknown as { plausible?: (e: string, o?: object) => void }).plausible?.("checkout", { props: { plan } });
+      window.location.href = j.url;
+    }
     else { setError(textos.errorPago); setCargando(null); }
   }
 
@@ -30,7 +37,7 @@ export default function BotonesPago({ idioma, planes, textos }: { idioma: string
       </div>
       <div className="grid sm:grid-cols-2 gap-3">
         {planes.map((p) => (
-          <div key={p.id} className={`tarjeta p-5 flex flex-col ${p.destacado ? "border-2 border-marca" : ""}`}>
+          <div key={p.id} className={`tarjeta p-5 flex flex-col ${(planInicial ? p.id === planInicial : p.destacado) ? "border-2 border-marca" : ""}`}>
             <h2 className="font-bold text-lg">{p.titulo}</h2>
             <p className="mt-1"><span className="text-3xl font-bold">{p.precio}</span> <span className="text-suave">/ {p.periodo}</span></p>
             <p className="text-sm text-suave">{p.iva}</p>

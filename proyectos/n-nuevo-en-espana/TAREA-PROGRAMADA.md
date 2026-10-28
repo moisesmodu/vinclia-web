@@ -36,9 +36,11 @@ claude/estrategia-ingresos-recurrentes-tx0rvw.
    hayas detectado, y 2 guiones de vídeo corto en marketing/videos-<idioma>.md sobre los cambios de la semana.
    Nada se publica fuera: solo se deja preparado.
 6. Abre un PR hacia claude/estrategia-ingresos-recurrentes-tx0rvw con el título «N: revisión semanal <fecha>».
-7. Actualiza panel/data/proyectos.json (ficha n-nuevo-en-espana): añade una acción con la fecha y lo cambiado,
+7. Monetización: actualiza la tabla «Cifras reales» de MONETIZACION.md con las cifras de la semana (pagos y
+   clientes desde Stripe; visitas desde la analítica). Si hay un pago nuevo, refléjalo en el panel.
+8. Actualiza panel/data/proyectos.json (ficha n-nuevo-en-espana): añade una acción con la fecha y lo cambiado,
    y en `hallazgos` cualquier novedad normativa relevante.
-8. Informe final (en el PR y en el chat), corto y en castellano: qué cambió (dato, antes, después, fuente), qué no se
+9. Informe final (en el PR y en el chat), corto y en castellano: qué cambió (dato, antes, después, fuente), qué no se
    pudo verificar y por qué, y si hay algo que Moisés deba aprobar. Si no cambió nada, dilo en una línea.
 ```
 

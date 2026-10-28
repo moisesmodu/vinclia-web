@@ -12,7 +12,11 @@ export default function Gracias({ idioma, textos, irGuias }: { idioma: string; t
     let intentos = 0;
     const probar = () =>
       fetch(`/api/acceso/stripe?session_id=${encodeURIComponent(id)}`).then((r) => {
-        if (r.ok) setEstado("ok");
+        if (r.ok) {
+          setEstado("ok");
+          try { localStorage.removeItem("nee-pago-pendiente"); } catch {}
+          (window as unknown as { plausible?: (e: string) => void }).plausible?.("pago");
+        }
         else if (++intentos < 5) setTimeout(probar, 2000);
         else setEstado("pendiente");
       }).catch(() => setEstado("pendiente"));
