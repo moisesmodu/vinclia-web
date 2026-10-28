@@ -120,3 +120,5 @@ Repetir el paso 3 con `STRIPE_SECRET_KEY` (modo real) y cambiar en Vercel `STRIP
   `LEGAL_EMAIL`, `LEGAL_ADRECA` y `RESEND_API_KEY`. Falta también el pago de prueba con la tarjeta 4242 en producción.
 
 Ejecutado el 2026-10-28
+
+Completado el 28/10/2026 desde la sesión del Mac: `LEGAL_*`, `RESEND_API_KEY` y `CORREO_REMITENTE` (noreply@numimates.com, sin Algorithmics) en production y preview; redesplegado en https://nuevo-en-espana.vercel.app (aviso legal con NIF comprobado). Pendiente: pago de prueba con la tarjeta 4242.
