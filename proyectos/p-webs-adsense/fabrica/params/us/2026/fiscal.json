@@ -1,0 +1,294 @@
+{
+  "pais": "us",
+  "anio": 2026,
+  "estado": "vigente",
+  "actualizado": "2026-10-28",
+  "nota_general": "Año fiscal 2026 (se declara en 2027). Cifras federales del IRS Rev. Proc. 2025-32 (ajustes por inflación de 2026 tras la ley One Big Beautiful Bill, P.L. 119-21). irs.gov y las webs estatales estaban bloqueadas por el proxy de la sesión: los importes se contrastaron con al menos dos fuentes secundarias que citan la Rev. Proc. o al organismo (KPMG, Accounting Today, Thomson Reuters, Kiplinger, Tax Foundation y guías fiscales). Estados civiles: single (soltero), mfj (casado, declaración conjunta), hoh (cabeza de familia), mfs (casado, declaración separada).",
+  "federal": {
+    "tramos": {
+      "single": [
+        { "hasta": 12400, "tipo": 10 }, { "hasta": 50400, "tipo": 12 }, { "hasta": 105700, "tipo": 22 }, { "hasta": 201775, "tipo": 24 },
+        { "hasta": 256225, "tipo": 32 }, { "hasta": 640600, "tipo": 35 }, { "hasta": null, "tipo": 37 }
+      ],
+      "mfj": [
+        { "hasta": 24800, "tipo": 10 }, { "hasta": 100800, "tipo": 12 }, { "hasta": 211400, "tipo": 22 }, { "hasta": 403550, "tipo": 24 },
+        { "hasta": 512450, "tipo": 32 }, { "hasta": 768700, "tipo": 35 }, { "hasta": null, "tipo": 37 }
+      ],
+      "hoh": [
+        { "hasta": 17700, "tipo": 10 }, { "hasta": 67450, "tipo": 12 }, { "hasta": 105700, "tipo": 22 }, { "hasta": 201775, "tipo": 24 },
+        { "hasta": 256200, "tipo": 32 }, { "hasta": 640600, "tipo": 35 }, { "hasta": null, "tipo": 37 }
+      ],
+      "mfs": [
+        { "hasta": 12400, "tipo": 10 }, { "hasta": 50400, "tipo": 12 }, { "hasta": 105700, "tipo": 22 }, { "hasta": 201775, "tipo": 24 },
+        { "hasta": 256225, "tipo": 32 }, { "hasta": 384350, "tipo": 35 }, { "hasta": null, "tipo": 37 }
+      ]
+    },
+    "tramos_nota": "Cabeza de familia, tramo del 24 %: unas fuentes dan 201.750 $ y otras 201.775 $. Se usa 201.775 $ porque en 2024 y 2025 ese límite coincidió con el de soltero (191.950 $ y 197.300 $); diferencia máxima 6 $ de impuesto. Pendiente de confirmar en la Rev. Proc. 2025-32, sección 4.01, tabla 2.",
+    "deduccion_estandar": { "single": 16100, "mfj": 32200, "hoh": 24150, "mfs": 16100 },
+    "verificado": true,
+    "nota": "Rev. Proc. 2025-32, secciones 4.01 (tablas de tipos) y 4.14 (deducción estándar). Comprobado con KPMG TaxNewsFlash, Accounting Today y Reed Corp/salaryafter.tax.",
+    "fuente": {
+      "nombre": "IRS Rev. Proc. 2025-32 (ajustes por inflación del año fiscal 2026)",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+    }
+  },
+  "credito_hijos": {
+    "por_hijo": 2200,
+    "reembolsable_max": 1700,
+    "umbral_ingreso_ganado": 2500,
+    "pct_reembolsable": 15,
+    "otros_dependientes": 500,
+    "umbral_reduccion": { "single": 200000, "mfj": 400000, "hoh": 200000, "mfs": 200000 },
+    "reduccion_por_1000": 50,
+    "edad_maxima": 16,
+    "verificado": true,
+    "nota": "Ley OBBBA §70104: 2.200 $ por hijo menor de 17 años desde 2025, indexado a partir de 2027; parte reembolsable (ACTC) de 1.700 $ en 2026, igual al 15 % del ingreso ganado que pase de 2.500 $. Se reduce 50 $ por cada 1.000 $ (o fracción) de ingreso bruto ajustado modificado por encima del umbral. El hijo y quien lo reclama necesitan número de Seguro Social (SSN) válido para el empleo; con ITIN solo se puede pedir el crédito de 500 $ por otros dependientes.",
+    "fuente": {
+      "nombre": "IRS: Child Tax Credit y Rev. Proc. 2025-32, sección 4.05",
+      "url": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit"
+    }
+  },
+  "obbba": {
+    "propinas": { "max": 25000, "umbral": { "single": 150000, "mfj": 300000, "hoh": 150000 }, "reduccion_por_1000": 100, "desde": 2025, "hasta": 2028 },
+    "horas_extra": { "max": 12500, "max_mfj": 25000, "umbral": { "single": 150000, "mfj": 300000, "hoh": 150000 }, "reduccion_por_1000": 100, "desde": 2025, "hasta": 2028 },
+    "intereses_auto": { "max": 10000, "umbral": { "single": 100000, "mfj": 200000, "hoh": 100000 }, "reduccion_por_1000": 200, "desde": 2025, "hasta": 2028 },
+    "mfs_excluido": true,
+    "verificado": false,
+    "nota": "Deducciones de la ley One Big Beautiful Bill (IRC §224, §225 y §163(h)(4)) para 2025–2028, también para quien no detalla deducciones. Propinas: hasta 25.000 $ en ocupaciones que habitualmente reciben propina. Horas extra: solo la prima (la mitad del «tiempo y medio») exigida por la FLSA, hasta 12.500 $ (25.000 $ en conjunta). Intereses del préstamo de un auto nuevo ensamblado en EE. UU. y comprado para uso personal: hasta 10.000 $. Casados que declaran por separado no pueden usar las de propinas y horas extra. Topes y umbrales confirmados por noticias que citan la guía del IRS; el ritmo de reducción (100 $ y 200 $ por cada 1.000 $) sale del texto de la ley y no se pudo abrir en irs.gov.",
+    "fuente": {
+      "nombre": "IRS: One, Big, Beautiful Bill provisions (no tax on tips, no tax on overtime, car loan interest)",
+      "url": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions"
+    }
+  },
+  "qbi": {
+    "pct": 20,
+    "umbral": { "single": 201750, "mfj": 403500, "hoh": 201750, "mfs": 201775 },
+    "verificado": true,
+    "nota": "Deducción del 20 % del ingreso calificado de negocio (sección 199A), permanente desde la OBBBA. Por debajo del umbral no se aplican los límites por salarios ni la exclusión de servicios profesionales (SSTB). Umbrales de la Rev. Proc. 2025-32, sección 4.26, según varias guías; la calculadora no modela la zona de transición por encima.",
+    "fuente": {
+      "nombre": "IRS: Qualified business income deduction",
+      "url": "https://www.irs.gov/newsroom/qualified-business-income-deduction"
+    }
+  },
+  "jubilacion": {
+    "aporte_401k": 24500,
+    "recuperacion_50": 8000,
+    "recuperacion_60_63": 11250,
+    "ira": 7500,
+    "ira_recuperacion_50": 1100,
+    "limite_total_415c": 72000,
+    "verificado": true,
+    "nota": "IRS Notice 2025-67 y comunicado IR-2025-111: 401(k), 403(b), 457 gubernamental y TSP 24.500 $; 8.000 $ adicionales desde los 50 años; 11.250 $ entre los 60 y los 63 años (SECURE 2.0).",
+    "fuente": {
+      "nombre": "IRS: 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500",
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    }
+  },
+  "remesas": {
+    "impuesto_pct": 1,
+    "desde": "2026-01-01",
+    "verificado": true,
+    "nota": "Impuesto especial del 1 % (IRC §4475, ley OBBBA §70604) sobre envíos de dinero al extranjero hechos después del 31/12/2025 cuando el remitente paga en efectivo, giro postal (money order), cheque de caja u otro instrumento físico. Exentos: envíos pagados desde una cuenta bancaria o de cooperativa en EE. UU. y con tarjeta de débito o crédito emitida en EE. UU. Lo cobra la empresa de envíos. Contrastado con RSM, Mayer Brown, Cherry Bekaert y el Notice 2025-55 del IRS.",
+    "fuente": {
+      "nombre": "IRS Notice 2025-55 (impuesto sobre transferencias de remesas, sección 4475)",
+      "url": "https://www.irs.gov/pub/irs-drop/n-25-55.pdf"
+    }
+  },
+  "estados": {
+    "CA": {
+      "tipo": "progresivo",
+      "base": "agi",
+      "deduccion_estandar": { "single": 5900, "mfj": 11800, "hoh": 11800, "mfs": 5900 },
+      "credito_personal": { "single": 158, "mfj": 316, "hoh": 158, "mfs": 158 },
+      "credito_dependiente": 491,
+      "tramos": {
+        "single": [
+          { "hasta": 11456, "tipo": 1 }, { "hasta": 27157, "tipo": 2 }, { "hasta": 42861, "tipo": 4 }, { "hasta": 59498, "tipo": 6 }, { "hasta": 75197, "tipo": 8 },
+          { "hasta": 384109, "tipo": 9.3 }, { "hasta": 460927, "tipo": 10.3 }, { "hasta": 768213, "tipo": 11.3 }, { "hasta": null, "tipo": 12.3 }
+        ],
+        "mfj": [
+          { "hasta": 22912, "tipo": 1 }, { "hasta": 54314, "tipo": 2 }, { "hasta": 85722, "tipo": 4 }, { "hasta": 118996, "tipo": 6 }, { "hasta": 150394, "tipo": 8 },
+          { "hasta": 768218, "tipo": 9.3 }, { "hasta": 921854, "tipo": 10.3 }, { "hasta": 1536426, "tipo": 11.3 }, { "hasta": null, "tipo": 12.3 }
+        ],
+        "hoh": [
+          { "hasta": 22927, "tipo": 1 }, { "hasta": 54316, "tipo": 2 }, { "hasta": 70018, "tipo": 4 }, { "hasta": 86654, "tipo": 6 }, { "hasta": 102356, "tipo": 8 },
+          { "hasta": 522385, "tipo": 9.3 }, { "hasta": 626864, "tipo": 10.3 }, { "hasta": 1044771, "tipo": 11.3 }, { "hasta": null, "tipo": 12.3 }
+        ]
+      },
+      "sobretasa": { "umbral": 1000000, "pct": 1 },
+      "verificado": false,
+      "nota": "FTB (Tax News, octubre de 2026): índice de inflación de California del 3,4 %, deducción estándar 5.900 $ / 11.800 $ y crédito personal 158 $ / 316 $. Los tramos de soltero coinciden en dos guías y con los de 2025 × 1,034; los de conjunta son el doble de los de soltero, como cada año. Cabeza de familia (tramos) y crédito por dependiente (475 $ × 1,034 = 491 $) son DERIVADOS con ese índice, sin confirmar en la tabla oficial. No se modela la reducción de los créditos para rentas altas. Sobretasa del 1 % sobre la renta imponible que pase de 1 millón (Behavioral Health Services Tax).",
+      "fuente": {
+        "nombre": "California Franchise Tax Board: 2026 tax rate schedules y Tax News",
+        "url": "https://www.ftb.ca.gov/file/personal/tax-calculator-tables-rates.asp"
+      }
+    },
+    "NY": {
+      "tipo": "progresivo",
+      "base": "agi",
+      "deduccion_estandar": { "single": 8000, "mfj": 16050, "hoh": 11200, "mfs": 8000 },
+      "exencion_dependiente": 1000,
+      "tramos": {
+        "single": [
+          { "hasta": 8500, "tipo": 3.9 }, { "hasta": 11700, "tipo": 4.4 }, { "hasta": 13900, "tipo": 5.15 }, { "hasta": 80650, "tipo": 5.4 }, { "hasta": 215400, "tipo": 5.9 },
+          { "hasta": 1077550, "tipo": 6.85 }, { "hasta": 5000000, "tipo": 9.65 }, { "hasta": 25000000, "tipo": 10.3 }, { "hasta": null, "tipo": 10.9 }
+        ],
+        "mfj": [
+          { "hasta": 17150, "tipo": 3.9 }, { "hasta": 23600, "tipo": 4.4 }, { "hasta": 27900, "tipo": 5.15 }, { "hasta": 161550, "tipo": 5.4 }, { "hasta": 323200, "tipo": 5.9 },
+          { "hasta": 2155350, "tipo": 6.85 }, { "hasta": 5000000, "tipo": 9.65 }, { "hasta": 25000000, "tipo": 10.3 }, { "hasta": null, "tipo": 10.9 }
+        ],
+        "hoh": [
+          { "hasta": 12800, "tipo": 3.9 }, { "hasta": 17650, "tipo": 4.4 }, { "hasta": 20900, "tipo": 5.15 }, { "hasta": 107650, "tipo": 5.4 }, { "hasta": 269300, "tipo": 5.9 },
+          { "hasta": 1616450, "tipo": 6.85 }, { "hasta": 5000000, "tipo": 9.65 }, { "hasta": 25000000, "tipo": 10.3 }, { "hasta": null, "tipo": 10.9 }
+        ]
+      },
+      "verificado": true,
+      "nota": "Presupuesto del estado FY2026: los cinco tipos más bajos bajan 0,1 puntos en 2026 (3,9 % a 5,9 %). Límites de tramo sin cambios. Contrastado con ustax.tools, NYC Accounting Consulting y CountryTaxCalc. No se modela la recuperación de tramos (benefit recapture) para ingresos altos ni el impuesto de la ciudad de Nueva York o de Yonkers.",
+      "fuente": {
+        "nombre": "New York State Department of Taxation and Finance: tax tables y tax rate schedules",
+        "url": "https://www.tax.ny.gov/pit/file/tax_tables.htm"
+      }
+    },
+    "IL": {
+      "tipo": "plano",
+      "pct": 4.95,
+      "base": "agi",
+      "exencion_persona": 2925,
+      "verificado": true,
+      "nota": "Tipo único del 4,95 %. Exención de 2.925 $ por contribuyente, cónyuge y dependiente en 2026 (2.850 $ en 2025), confirmada por el boletín de nómina del USDA NFC y guías de nómina; no se puede pedir con AGI de más de 250.000 $ (500.000 $ en conjunta).",
+      "fuente": {
+        "nombre": "Illinois Department of Revenue: Income tax rates y exemption allowance",
+        "url": "https://tax.illinois.gov/research/taxrates/income.html"
+      }
+    },
+    "AZ": {
+      "tipo": "plano",
+      "pct": 2.5,
+      "base": "agi",
+      "deduccion_estandar": "federal",
+      "verificado": false,
+      "nota": "Tipo único del 2,5 % (confirmado). Arizona adopta la deducción estándar federal; no se pudo confirmar que la ley de conformidad de 2026 recoja los importes federales de 2026, por eso verificado:false. No se modela el crédito por dependientes (100 $ / 25 $).",
+      "fuente": {
+        "nombre": "Arizona Department of Revenue: Individual income tax",
+        "url": "https://azdor.gov/individual-income-tax-information"
+      }
+    },
+    "NJ": {
+      "tipo": "progresivo",
+      "base": "agi",
+      "exencion_personal": { "single": 1000, "mfj": 2000, "hoh": 1000, "mfs": 1000 },
+      "exencion_dependiente": 1500,
+      "tramos": {
+        "single": [
+          { "hasta": 20000, "tipo": 1.4 }, { "hasta": 35000, "tipo": 1.75 }, { "hasta": 40000, "tipo": 3.5 }, { "hasta": 75000, "tipo": 5.525 },
+          { "hasta": 500000, "tipo": 6.37 }, { "hasta": 1000000, "tipo": 8.97 }, { "hasta": null, "tipo": 10.75 }
+        ],
+        "mfj": [
+          { "hasta": 20000, "tipo": 1.4 }, { "hasta": 50000, "tipo": 1.75 }, { "hasta": 70000, "tipo": 2.45 }, { "hasta": 80000, "tipo": 3.5 }, { "hasta": 150000, "tipo": 5.525 },
+          { "hasta": 500000, "tipo": 6.37 }, { "hasta": 1000000, "tipo": 8.97 }, { "hasta": null, "tipo": 10.75 }
+        ]
+      },
+      "tramos_alias": { "hoh": "mfj", "mfs": "single" },
+      "verificado": true,
+      "nota": "Escalas no indexadas, sin cambios desde 2020. Cabeza de familia usa la tabla de conjunta y casado por separado la de soltero. Nueva Jersey no tiene deducción estándar: exención de 1.000 $ por contribuyente y 1.500 $ por dependiente. Una fuente aislada habla de un tipo plano en 2026 que no se ha podido confirmar y no se aplica.",
+      "fuente": {
+        "nombre": "New Jersey Division of Taxation: Tax rate tables",
+        "url": "https://www.nj.gov/treasury/taxation/taxtables.shtml"
+      }
+    },
+    "CO": {
+      "tipo": "plano",
+      "pct": 4.4,
+      "base": "federal_imponible",
+      "verificado": true,
+      "nota": "Tipo único del 4,4 % sobre la renta imponible federal (Tax Foundation 2026 y otras guías; una fuente desfasada da 4,25 %, que fue la rebaja temporal de 2024 por TABOR). No se modelan las sumas y restas de Colorado.",
+      "fuente": {
+        "nombre": "Colorado Department of Revenue: Individual income tax",
+        "url": "https://tax.colorado.gov/individual-income-tax"
+      }
+    },
+    "NM": {
+      "tipo": "progresivo",
+      "base": "agi",
+      "deduccion_estandar": "federal",
+      "tramos": {
+        "single": [
+          { "hasta": 5500, "tipo": 1.5 }, { "hasta": 16500, "tipo": 3.2 }, { "hasta": 33500, "tipo": 4.3 }, { "hasta": 66500, "tipo": 4.7 }, { "hasta": 210000, "tipo": 4.9 }, { "hasta": null, "tipo": 5.9 }
+        ],
+        "mfj": [
+          { "hasta": 8000, "tipo": 1.5 }, { "hasta": 25000, "tipo": 3.2 }, { "hasta": 50000, "tipo": 4.3 }, { "hasta": 100000, "tipo": 4.7 }, { "hasta": 315000, "tipo": 4.9 }, { "hasta": null, "tipo": 5.9 }
+        ],
+        "mfs": [
+          { "hasta": 4000, "tipo": 1.5 }, { "hasta": 12500, "tipo": 3.2 }, { "hasta": 25000, "tipo": 4.3 }, { "hasta": 50000, "tipo": 4.7 }, { "hasta": 157500, "tipo": 4.9 }, { "hasta": null, "tipo": 5.9 }
+        ]
+      },
+      "tramos_alias": { "hoh": "mfj" },
+      "verificado": false,
+      "nota": "Escala de la HB 252 (2024), vigente desde 2025. Soltero confirmado por dos guías; conjunta y separada según el texto de la ley, sin confirmar en la tabla del departamento. Nuevo México parte de la renta federal y usa la deducción estándar federal. No se modelan la exención por bajos ingresos ni la deducción por dependientes.",
+      "fuente": {
+        "nombre": "New Mexico Taxation and Revenue Department: Personal income tax",
+        "url": "https://www.tax.newmexico.gov/individuals/personal-income-tax-information-overview/"
+      }
+    },
+    "GA": {
+      "tipo": "plano",
+      "pct": 4.99,
+      "base": "agi",
+      "deduccion_estandar": { "single": 12000, "mfj": 24000, "hoh": 12000, "mfs": 12000 },
+      "exencion_dependiente": 4000,
+      "verificado": true,
+      "nota": "4,99 % en 2026 (5,19 % en 2025), retroactivo al 1/1/2026 según Paylocity y varias guías; las fuentes discrepan sobre el número de la ley (HB 463 o HB 1001). Deducción estándar de 12.000 $ (24.000 $ en conjunta) y 4.000 $ por dependiente.",
+      "fuente": {
+        "nombre": "Georgia Department of Revenue: Individual income tax",
+        "url": "https://dor.georgia.gov/taxes/individual-taxes"
+      }
+    },
+    "NC": {
+      "tipo": "plano",
+      "pct": 3.99,
+      "base": "agi",
+      "deduccion_estandar": { "single": 12750, "mfj": 25500, "hoh": 19125, "mfs": 12750 },
+      "verificado": true,
+      "nota": "Último paso de la rebaja escalonada: del 4,25 % al 3,99 % el 1/1/2026 (Tax Foundation). Deducción estándar de Carolina del Norte sin cambios. No se modela la deducción por hijos.",
+      "fuente": {
+        "nombre": "North Carolina Department of Revenue: Individual income tax",
+        "url": "https://www.ncdor.gov/taxes-forms/individual-income-tax"
+      }
+    },
+    "PA": {
+      "tipo": "plano",
+      "pct": 3.07,
+      "base": "salario_bruto",
+      "deduce_401k": false,
+      "verificado": true,
+      "nota": "3,07 % sobre la compensación, sin deducción estándar ni exenciones; las aportaciones al 401(k) no reducen la base en Pensilvania. No incluye el impuesto local sobre la renta ganada (EIT) de cada municipio ni el de Filadelfia.",
+      "fuente": {
+        "nombre": "Pennsylvania Department of Revenue: Personal income tax",
+        "url": "https://www.revenue.pa.gov/TaxTypes/PIT/Pages/default.aspx"
+      }
+    },
+    "MA": {
+      "tipo": "plano",
+      "pct": 5,
+      "base": "agi",
+      "exencion_personal": { "single": 4400, "mfj": 8800, "hoh": 6800, "mfs": 4400 },
+      "exencion_dependiente": 1000,
+      "sobretasa": { "umbral": 1107750, "pct": 4 },
+      "verificado": false,
+      "nota": "5 % sobre la renta ordinaria. Sobretasa del 4 % (millionaires tax) por encima de 1.107.750 $ en 2026 según una guía (1.083.150 $ en 2025); sin confirmar en el DOR. Exenciones personales de 4.400 $, 8.800 $ y 6.800 $ y 1.000 $ por dependiente.",
+      "fuente": {
+        "nombre": "Massachusetts Department of Revenue: Massachusetts tax rates",
+        "url": "https://www.mass.gov/info-details/massachusetts-tax-rates"
+      }
+    },
+    "TX": { "tipo": "ninguno", "verificado": true, "nota": "Texas no tiene impuesto estatal sobre la renta personal (Constitución de Texas, art. 8, §24-a).", "fuente": { "nombre": "Texas Comptroller of Public Accounts", "url": "https://comptroller.texas.gov/taxes/" } },
+    "FL": { "tipo": "ninguno", "verificado": true, "nota": "Florida no tiene impuesto estatal sobre la renta personal (Constitución de Florida, art. VII, §5).", "fuente": { "nombre": "Florida Department of Revenue", "url": "https://floridarevenue.com/taxes/taxesfees/Pages/default.aspx" } },
+    "NV": { "tipo": "ninguno", "verificado": true, "nota": "Nevada no tiene impuesto estatal sobre la renta personal.", "fuente": { "nombre": "Nevada Department of Taxation", "url": "https://tax.nv.gov/" } },
+    "WA": { "tipo": "ninguno", "verificado": true, "nota": "Washington no grava los salarios. Tiene un impuesto sobre ganancias de capital a largo plazo que no afecta al cheque de pago. Sí se descuenta WA Cares (0,58 %).", "fuente": { "nombre": "Washington State Department of Revenue: Income tax", "url": "https://dor.wa.gov/taxes-rates/income-tax" } },
+    "AK": { "tipo": "ninguno", "verificado": true, "nota": "Alaska no tiene impuesto estatal sobre la renta personal.", "fuente": { "nombre": "Alaska Department of Revenue", "url": "https://tax.alaska.gov/" } },
+    "SD": { "tipo": "ninguno", "verificado": true, "nota": "Dakota del Sur no tiene impuesto estatal sobre la renta personal.", "fuente": { "nombre": "South Dakota Department of Revenue", "url": "https://dor.sd.gov/" } },
+    "TN": { "tipo": "ninguno", "verificado": true, "nota": "Tennessee no grava los salarios; el impuesto Hall sobre intereses y dividendos se eliminó en 2021.", "fuente": { "nombre": "Tennessee Department of Revenue", "url": "https://www.tn.gov/revenue.html" } },
+    "WY": { "tipo": "ninguno", "verificado": true, "nota": "Wyoming no tiene impuesto estatal sobre la renta personal.", "fuente": { "nombre": "Wyoming Department of Revenue", "url": "https://revenue.wyo.gov/" } },
+    "NH": { "tipo": "ninguno", "verificado": true, "nota": "Nuevo Hampshire no grava los salarios y desde 2025 tampoco los intereses y dividendos.", "fuente": { "nombre": "New Hampshire Department of Revenue Administration", "url": "https://www.revenue.nh.gov/" } }
+  }
+}

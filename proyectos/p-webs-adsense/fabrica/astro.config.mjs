@@ -14,6 +14,8 @@ import { readFileSync } from 'node:fs';
 const SITIO = process.env.SITIO || 'nomina';
 const cfg = JSON.parse(readFileSync(new URL(`./sitios/${SITIO}/sitio.json`, import.meta.url), 'utf8'));
 const site = process.env.SITE_URL || cfg.dominio;
+// País del sitio: moneda y formato de números (es-ES y EUR en España, es-US y USD en EE. UU.)
+const pais = JSON.parse(readFileSync(new URL(`./params/${cfg.pais}/pais.json`, import.meta.url), 'utf8'));
 
 // Quita de los parámetros las notas y fuentes (documentación para personas) antes de empaquetarlos:
 // el navegador solo necesita las cifras.
@@ -40,6 +42,11 @@ export default defineConfig({
   devToolbar: { enabled: false },
   vite: {
     plugins: [paramsLigeros],
-    define: { 'import.meta.env.SITIO': JSON.stringify(SITIO) },
+    define: {
+      'import.meta.env.SITIO': JSON.stringify(SITIO),
+      'import.meta.env.PAIS': JSON.stringify(cfg.pais),
+      'import.meta.env.MONEDA': JSON.stringify(pais.moneda),
+      'import.meta.env.LOCALES': JSON.stringify(pais.locales),
+    },
   },
 });

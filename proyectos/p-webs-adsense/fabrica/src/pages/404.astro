@@ -1,9 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
 import { url, buscar } from '../lib/rutas';
+import { LANGS } from '../lib/sitio';
 const ini = buscar('inicio', 'es')!;
+const bilingue = LANGS.includes('ca');
 ---
 <Base lang="es" titulo="Página no encontrada" descripcion="La página que buscas no existe." ruta="404" alternas={{}}>
-  <h1 style="margin-top:2rem">Página no encontrada · Pàgina no trobada</h1>
-  <p><a class="btn" href={url(ini.ruta)}>Ir al inicio · Anar a l’inici</a></p>
+  <h1 style="margin-top:2rem">{bilingue ? 'Página no encontrada · Pàgina no trobada' : 'Página no encontrada'}</h1>
+  <p><a class="btn" href={url(ini.ruta)}>{bilingue ? 'Ir al inicio · Anar a l’inici' : 'Ir al inicio'}</a></p>
 </Base>

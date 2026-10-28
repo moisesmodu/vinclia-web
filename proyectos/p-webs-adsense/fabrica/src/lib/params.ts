@@ -2,8 +2,17 @@
 // Estructura: params/<pais>/pais.json y params/<pais>/<anio>/<bloque>.json
 // Nada de cifras legales dentro del código: todo sale de aquí.
 
-const archivos = import.meta.glob('../../params/*/*/*.json', { eager: true, import: 'default' }) as Record<string, any>;
-const paises = import.meta.glob('../../params/*/pais.json', { eager: true, import: 'default' }) as Record<string, any>;
+// Un glob por país: al compilar un sitio, import.meta.env.PAIS (astro.config.mjs) es una constante y el empaquetador
+// descarta los parámetros de los otros países, así el JavaScript del navegador solo lleva los de su país.
+// Sin PAIS (pruebas) se cargan todos.
+type Mapa = Record<string, any>;
+
+const ES: Mapa = import.meta.glob('../../params/es/*/*.json', { eager: true, import: 'default' });
+const US: Mapa = import.meta.glob('../../params/us/*/*.json', { eager: true, import: 'default' });
+const PAISES: Mapa = import.meta.glob('../../params/*/pais.json', { eager: true, import: 'default' });
+const PAIS = import.meta.env.PAIS as string | undefined;
+const archivos: Mapa = PAIS === 'es' ? ES : PAIS === 'us' ? US : { ...ES, ...US };
+const paises: Mapa = PAISES;
 
 export type Bloques = { laboral: any; fiscal: any; anio: number; pais: string; provisional: boolean };
 

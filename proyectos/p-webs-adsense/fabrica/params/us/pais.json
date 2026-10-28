@@ -1,0 +1,219 @@
+{
+  "pais": "us",
+  "nombre": {
+    "es": "Estados Unidos",
+    "ca": "Estats Units"
+  },
+  "moneda": "USD",
+  "locales": {
+    "es": "es-US",
+    "ca": "es-US"
+  },
+  "nota": "Códigos de dos letras del USPS. Nombres en español de uso común en los medios hispanos de EE. UU.; slugs sin tildes.",
+  "estados": {
+    "AL": {
+      "nombre": "Alabama",
+      "slug": "alabama"
+    },
+    "AK": {
+      "nombre": "Alaska",
+      "slug": "alaska"
+    },
+    "AZ": {
+      "nombre": "Arizona",
+      "slug": "arizona"
+    },
+    "AR": {
+      "nombre": "Arkansas",
+      "slug": "arkansas"
+    },
+    "CA": {
+      "nombre": "California",
+      "slug": "california"
+    },
+    "CO": {
+      "nombre": "Colorado",
+      "slug": "colorado"
+    },
+    "CT": {
+      "nombre": "Connecticut",
+      "slug": "connecticut"
+    },
+    "DE": {
+      "nombre": "Delaware",
+      "slug": "delaware"
+    },
+    "DC": {
+      "nombre": "Distrito de Columbia",
+      "slug": "distrito-de-columbia"
+    },
+    "FL": {
+      "nombre": "Florida",
+      "slug": "florida"
+    },
+    "GA": {
+      "nombre": "Georgia",
+      "slug": "georgia"
+    },
+    "HI": {
+      "nombre": "Hawái",
+      "slug": "hawai"
+    },
+    "ID": {
+      "nombre": "Idaho",
+      "slug": "idaho"
+    },
+    "IL": {
+      "nombre": "Illinois",
+      "slug": "illinois"
+    },
+    "IN": {
+      "nombre": "Indiana",
+      "slug": "indiana"
+    },
+    "IA": {
+      "nombre": "Iowa",
+      "slug": "iowa"
+    },
+    "KS": {
+      "nombre": "Kansas",
+      "slug": "kansas"
+    },
+    "KY": {
+      "nombre": "Kentucky",
+      "slug": "kentucky"
+    },
+    "LA": {
+      "nombre": "Luisiana",
+      "slug": "luisiana"
+    },
+    "ME": {
+      "nombre": "Maine",
+      "slug": "maine"
+    },
+    "MD": {
+      "nombre": "Maryland",
+      "slug": "maryland"
+    },
+    "MA": {
+      "nombre": "Massachusetts",
+      "slug": "massachusetts"
+    },
+    "MI": {
+      "nombre": "Míchigan",
+      "slug": "michigan"
+    },
+    "MN": {
+      "nombre": "Minnesota",
+      "slug": "minnesota"
+    },
+    "MS": {
+      "nombre": "Misisipi",
+      "slug": "misisipi"
+    },
+    "MO": {
+      "nombre": "Misuri",
+      "slug": "misuri"
+    },
+    "MT": {
+      "nombre": "Montana",
+      "slug": "montana"
+    },
+    "NE": {
+      "nombre": "Nebraska",
+      "slug": "nebraska"
+    },
+    "NV": {
+      "nombre": "Nevada",
+      "slug": "nevada"
+    },
+    "NH": {
+      "nombre": "Nuevo Hampshire",
+      "slug": "nuevo-hampshire"
+    },
+    "NJ": {
+      "nombre": "Nueva Jersey",
+      "slug": "nueva-jersey"
+    },
+    "NM": {
+      "nombre": "Nuevo México",
+      "slug": "nuevo-mexico"
+    },
+    "NY": {
+      "nombre": "Nueva York",
+      "slug": "nueva-york"
+    },
+    "NC": {
+      "nombre": "Carolina del Norte",
+      "slug": "carolina-del-norte"
+    },
+    "ND": {
+      "nombre": "Dakota del Norte",
+      "slug": "dakota-del-norte"
+    },
+    "OH": {
+      "nombre": "Ohio",
+      "slug": "ohio"
+    },
+    "OK": {
+      "nombre": "Oklahoma",
+      "slug": "oklahoma"
+    },
+    "OR": {
+      "nombre": "Oregón",
+      "slug": "oregon"
+    },
+    "PA": {
+      "nombre": "Pensilvania",
+      "slug": "pensilvania"
+    },
+    "RI": {
+      "nombre": "Rhode Island",
+      "slug": "rhode-island"
+    },
+    "SC": {
+      "nombre": "Carolina del Sur",
+      "slug": "carolina-del-sur"
+    },
+    "SD": {
+      "nombre": "Dakota del Sur",
+      "slug": "dakota-del-sur"
+    },
+    "TN": {
+      "nombre": "Tennessee",
+      "slug": "tennessee"
+    },
+    "TX": {
+      "nombre": "Texas",
+      "slug": "texas"
+    },
+    "UT": {
+      "nombre": "Utah",
+      "slug": "utah"
+    },
+    "VT": {
+      "nombre": "Vermont",
+      "slug": "vermont"
+    },
+    "VA": {
+      "nombre": "Virginia",
+      "slug": "virginia"
+    },
+    "WA": {
+      "nombre": "Washington",
+      "slug": "washington"
+    },
+    "WV": {
+      "nombre": "Virginia Occidental",
+      "slug": "virginia-occidental"
+    },
+    "WI": {
+      "nombre": "Wisconsin",
+      "slug": "wisconsin"
+    },
+    "WY": {
+      "nombre": "Wyoming",
+      "slug": "wyoming"
+    }
+  }
+}

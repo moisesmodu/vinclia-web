@@ -2,15 +2,19 @@
 import { t, type Formato, type Lang, type Resultado, type Txt } from './def';
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
-const LOC: Record<Lang, string> = { es: 'es-ES', ca: 'ca-ES' };
+// Moneda y locale del país del sitio (astro.config.mjs los toma de params/<pais>/pais.json). Sin ellos (pruebas), España.
+// Los formatos 'eur' y 'eur0' significan «importe en la moneda del sitio».
+const LOC: Record<Lang, string> = (import.meta.env.LOCALES as Record<Lang, string> | undefined) ?? { es: 'es-ES', ca: 'ca-ES' };
+export const MONEDA: string = (import.meta.env.MONEDA as string | undefined) ?? 'EUR';
 
-export function fmt(v: number | string, f: Formato | undefined, lang: Lang, moneda = 'EUR'): string {
+export function fmt(v: number | string, f: Formato | undefined, lang: Lang, moneda = MONEDA, locale?: string): string {
   if (typeof v === 'string' && f !== 'fecha') return v;
-  const loc = LOC[lang];
+  const loc = locale ?? LOC[lang];
+  const pct = loc.endsWith('-US') ? '%' : ' %';
   switch (f) {
     case 'eur': return new Intl.NumberFormat(loc, { style: 'currency', currency: moneda, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(+v);
     case 'eur0': return new Intl.NumberFormat(loc, { style: 'currency', currency: moneda, maximumFractionDigits: 0 }).format(+v);
-    case 'pct': return new Intl.NumberFormat(loc, { maximumFractionDigits: 2 }).format(+v) + ' %';
+    case 'pct': return new Intl.NumberFormat(loc, { maximumFractionDigits: 2 }).format(+v) + pct;
     case 'num0': return new Intl.NumberFormat(loc, { maximumFractionDigits: 0 }).format(+v);
     case 'dias': return new Intl.NumberFormat(loc, { maximumFractionDigits: 2 }).format(+v) + (lang === 'es' ? ' días' : ' dies');
     case 'meses': return new Intl.NumberFormat(loc, { maximumFractionDigits: 1 }).format(+v) + (lang === 'es' ? ' meses' : ' mesos');
@@ -26,8 +30,8 @@ export function fmt(v: number | string, f: Formato | undefined, lang: Lang, mone
 
 const tx = (x: Txt, lang: Lang) => esc(t(x, lang));
 
-export function renderResultado(r: Resultado, lang: Lang, moneda = 'EUR'): string {
-  const F = (v: any, f?: Formato) => (v && typeof v === 'object' ? tx(v, lang) : esc(fmt(v, f, lang, moneda)));
+export function renderResultado(r: Resultado, lang: Lang, moneda = MONEDA, locale?: string): string {
+  const F = (v: any, f?: Formato) => (v && typeof v === 'object' ? tx(v, lang) : esc(fmt(v, f, lang, moneda, locale)));
   let h = `<div class="res-dest"><span class="res-et">${tx(r.destacado.e, lang)}</span><output class="res-val">${F(r.destacado.v, r.destacado.f ?? 'eur')}</output>`;
   if (r.destacado.nota) h += `<span class="res-nota">${tx(r.destacado.nota, lang)}</span>`;
   h += '</div>';
@@ -56,7 +60,7 @@ export function renderResultado(r: Resultado, lang: Lang, moneda = 'EUR'): strin
   return h;
 }
 
-export function renderTablas(tablas: Resultado['tablas'], lang: Lang): string {
-  const h = renderResultado({ destacado: { e: '', v: '' }, tablas }, lang);
+export function renderTablas(tablas: Resultado['tablas'], lang: Lang, moneda = MONEDA, locale?: string): string {
+  const h = renderResultado({ destacado: { e: '', v: '' }, tablas }, lang, moneda, locale);
   return h.replace(/^<div class="res-dest">[\s\S]*?<\/div>/, '');
 }
