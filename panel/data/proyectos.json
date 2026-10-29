@@ -3040,7 +3040,8 @@
       "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
       "NetoClaro": "https://netoclaro.vercel.app/",
       "ImpuestoClaro": "https://impuestoclaro.vercel.app/",
-      "ChequeClaro": "https://cheque-claro.vercel.app/"
+      "ChequeClaro": "https://cheque-claro.vercel.app/",
+      "CalculaClaro (portal)": "https://calculaclaro.vercel.app/"
     },
     "acciones": [
       {
@@ -3114,7 +3115,7 @@
     ],
     "proximos": [
       "Moisés: comprar netoclaro.es e impuestoclaro.es (y chequeclaro.com) y darse de alta en Xolo, Qonto y Quipu",
-      "Sesión del Mac: crear el proyecto claro-portal (SITIO=portal) en Vercel",
+      "Redesplegar netoclaro, impuestoclaro y chequeclaro con el pie «Familia Claro» (commit 4425d53 o posterior)",
       "Sesión del Mac: redesplegar NetoClaro e ImpuestoClaro con el rediseño (PR #6) y conectar los dominios",
       "Sesión del Mac: crear el proyecto chequeclaro (SITIO=eeuu) en Vercel",
       "Construir PisoClaro y MotorClaro con la fábrica"

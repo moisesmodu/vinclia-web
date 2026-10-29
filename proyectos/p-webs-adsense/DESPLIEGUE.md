@@ -145,14 +145,16 @@ Ejecutado el 2026-10-29
 (`scripts/portal.mjs`, que lee `familia.json`). Se crea como un proyecto más del camino B:
 
 ```bash
-n=claro-portal; vercel project add $n $T && vercel link --yes --project $n $T
+n=calculaclaro; vercel project add $n $T && vercel link --yes --project $n $T
 printf "portal" | vercel env add SITIO production $T
-printf "https://claro-portal.vercel.app" | vercel env add PORTAL_URL production $T
+printf "https://calculaclaro.vercel.app" | vercel env add PORTAL_URL production $T
 for v in LEGAL_NOM LEGAL_NIF LEGAL_EMAIL LEGAL_ADRECA; do printf "${!v}" | vercel env add $v production $T; done
 vercel deploy --prod --yes $T && rm -rf .vercel
 ```
 
 Cuando cambie la dirección de un sitio, por ejemplo al conectar un dominio, se edita su `url` en `fabrica/familia.json`.
 Después se redespliegan los sitios, porque el pie «Familia Claro» de cada uno enlaza a los demás, y también el portal.
-Si el proyecto `claro-portal` sale con otro nombre, como pasó con `cheque-claro`, hay que poner su URL en
+Si el proyecto `calculaclaro` sale con otro nombre, como pasó con `cheque-claro`, hay que poner su URL en
 `familia.json` → `portal.url`.
+
+Portal ejecutado el 29/10/2026 desde la sesión en la nube (salida ya compilada, Build Output API): https://calculaclaro.vercel.app/ (proyecto `calculaclaro`). Pendiente: redesplegar netoclaro, impuestoclaro y chequeclaro para que salga el pie «Familia Claro».
