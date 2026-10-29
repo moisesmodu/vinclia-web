@@ -3,9 +3,18 @@ import Base from '../layouts/Base.astro';
 import { url, buscar } from '../lib/rutas';
 import { LANGS } from '../lib/sitio';
 const ini = buscar('inicio', 'es')!;
+const datos = buscar('fichas', 'es')!;
 const bilingue = LANGS.includes('ca');
 ---
-<Base lang="es" titulo="Página no encontrada" descripcion="La página que buscas no existe." ruta="404" alternas={{}}>
-  <h1 style="margin-top:2rem">{bilingue ? 'Página no encontrada · Pàgina no trobada' : 'Página no encontrada'}</h1>
-  <p><a class="btn" href={url(ini.ruta)}>{bilingue ? 'Ir al inicio · Anar a l’inici' : 'Ir al inicio'}</a></p>
+<Base lang="es" titulo="Página no encontrada" descripcion="La página que buscas no existe." ruta="404" alternas={{}} tipo="404">
+  <section class="e404">
+    <b aria-hidden="true">404</b>
+    <h1>{bilingue ? 'Página no encontrada · Pàgina no trobada' : 'Página no encontrada'}</h1>
+    <p>{bilingue ? 'Puede que el enlace esté mal escrito o que la página haya cambiado de dirección. · Potser l’enllaç està mal escrit o la pàgina ha canviat d’adreça.' : 'Puede que el enlace esté mal escrito o que la página haya cambiado de dirección.'}</p>
+    <div class="acciones">
+      <a class="btn" href={url(ini.ruta)}>{bilingue ? 'Ir al inicio · Anar a l’inici' : 'Ir al inicio'}</a>
+      <a class="btn-csv" href={url(ini.ruta) + '#calculadoras'}>{bilingue ? 'Ver las calculadoras' : 'Ver las calculadoras'}</a>
+      <a class="btn-csv" href={url(datos.ruta)}>Datos oficiales</a>
+    </div>
+  </section>
 </Base>

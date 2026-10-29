@@ -44,6 +44,10 @@ export const PLANTILLAS_US: Record<string, (fila: Record<string, string>, ctx: C
       tablas,
       calc: 'us-cheque-pago',
       query: { estado: e },
+      cifra: { e: 'Neto cada dos semanas con $50,000 al año', v: r50.porPeriodo.neto, f: 'eur', nota: 'Soltero/a sin hijos, 26 cheques al año',
+        extra: [{ e: 'Neto al año', v: r50.netoAnual, f: 'eur0' }, { e: 'Salario mínimo por hora', v: min, f: 'eur' }] },
+      grafico: { tipo: 'reparto', titulo: `A dónde va cada cheque de $50,000 al año en ${n}`, formato: 'eur',
+        partes: [{ e: 'Neto para ti', v: r50.porPeriodo.neto }, { e: 'Impuesto federal', v: r50.porPeriodo.federal }, { e: 'Seguro Social y Medicare', v: r50.porPeriodo.ss + r50.porPeriodo.medicare }, { e: 'Estatal', v: r50.porPeriodo.estatal + r50.porPeriodo.contrib }].filter((p) => p.v > 0) },
       enlaces: filas.filter((f) => f !== fila).map((f) => ({ fila: f, texto: nombreEstado(f.estado) })),
     };
   },
@@ -78,6 +82,10 @@ export const PLANTILLAS_US: Record<string, (fila: Record<string, string>, ctx: C
       ],
       calc: 'us-cheque-pago',
       query: { bruto: b, estado: e },
+      cifra: { e: 'Neto en cada cheque quincenal', v: r.porPeriodo.neto, f: 'eur', nota: `Soltero/a sin hijos con $${num(b)} al año en ${n}`,
+        extra: [{ e: 'Neto al año', v: r.netoAnual, f: 'eur0' }, { e: 'Impuestos y cotizaciones', v: r.tipoTotal, f: 'pct' }] },
+      grafico: { tipo: 'reparto', titulo: `A dónde van tus $${num(b)} al año`, formato: 'eur0',
+        partes: [{ e: 'Neto para ti', v: r.netoAnual }, { e: 'Impuesto federal', v: r.federal.anual }, { e: 'Seguro Social y Medicare', v: r.fica.ss + r.fica.medicare + r.fica.adicional }, { e: `Estatal de ${n}`, v: r.estatal.impuesto + r.contribTotal }].filter((p) => p.v > 0) },
       enlaces: [
         ...filas.filter((f) => f.estado === e && f !== fila).map((f) => ({ fila: f, texto: `$${num(+f.salario)} en ${n}` })),
         ...filas.filter((f) => f.salario === fila.salario && f.estado !== e).slice(0, 6).map((f) => ({ fila: f, texto: `$${num(b)} en ${nombreEstado(f.estado)}` })),
@@ -104,6 +112,10 @@ export const PLANTILLAS_US: Record<string, (fila: Record<string, string>, ctx: C
       ],
       calc: 'us-salario-hora',
       query: { modo: 'hora', tarifa: h },
+      cifra: { e: 'Al año a tiempo completo', v: r.anual, f: 'eur0', nota: '40 horas a la semana, 52 semanas, antes de impuestos',
+        extra: [{ e: 'Al mes', v: r.mensual, f: 'eur0' }, { e: 'A la semana', v: r.semanal, f: 'eur0' }] },
+      grafico: { tipo: 'barras', titulo: 'Neto anual según el estado (soltero/a)', formato: 'eur0', desc: `Texas ${usd(tx.netoAnual)}, California ${usd(ca.netoAnual)}, Nueva York ${usd(ny.netoAnual)}.`,
+        filas: [{ e: 'Texas', v: tx.netoAnual }, { e: 'California', v: ca.netoAnual }, { e: 'Nueva York', v: ny.netoAnual }].sort((x, y) => y.v - x.v) },
       enlaces: vecinos(filas, fila).map((f) => ({ fila: f, texto: `$${f.hora} la hora` })),
     };
   },
@@ -127,6 +139,10 @@ export const PLANTILLAS_US: Record<string, (fila: Record<string, string>, ctx: C
       ],
       calc: 'us-salario-hora',
       query: { modo: 'anual', anual: a },
+      cifra: { e: 'Por hora con 40 horas a la semana', v: h, f: 'eur', nota: '2,080 horas al año, antes de impuestos',
+        extra: [{ e: 'Al mes', v: a / 12, f: 'eur0' }, { e: 'Neto por hora en Texas', v: hNeta, f: 'eur' }] },
+      grafico: { tipo: 'barras', titulo: 'Neto anual según el estado (soltero/a)', formato: 'eur0', desc: `Texas ${usd(tx.netoAnual)}, Florida ${usd(fl.netoAnual)}, California ${usd(ca.netoAnual)}, Illinois ${usd(il.netoAnual)}.`,
+        filas: [{ e: 'Texas', v: tx.netoAnual }, { e: 'Florida', v: fl.netoAnual }, { e: 'California', v: ca.netoAnual }, { e: 'Illinois', v: il.netoAnual }].sort((x, y) => y.v - x.v) },
       enlaces: vecinos(filas, fila).map((f) => ({ fila: f, texto: `$${num(+f.anual)} al año` })),
     };
   },
