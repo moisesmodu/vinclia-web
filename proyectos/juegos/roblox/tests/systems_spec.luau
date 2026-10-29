@@ -127,12 +127,12 @@ return function(T)
 
 	T.test("los huevos raros pagan más; con valor 1 es el pago de siempre", function()
 		local p = Config.Payout
-		T.eq(Economy.payoutUnits(6, 6, 900, p, 1), Economy.payout(6, 6, 900, p, 1), "solo normales")
+		T.eq(Economy.payoutUnits(6, 6, 6, 900, p, 1), Economy.payout(6, 6, 900, p, 1), "solo normales")
 		local silver = Config.RarityTiers[1].value
-		local withSilver = Economy.payoutUnits(5 + silver, 6, 900, p, 1)
+		local withSilver = Economy.payoutUnits(5 + silver, 6, 6, 900, p, 1)
 		T.truthy(withSilver > Economy.payout(6, 6, 900, p, 1), "un huevo de plata sube el pago")
-		T.near(Economy.payoutUnits(12, 6, 900, p, 2), Economy.payoutUnits(12, 6, 900, p, 1) * 2, 1, "pase 2×")
-		T.eq(Economy.payoutUnits(0, 0, 900, p, 1), 0, "nada")
+		T.near(Economy.payoutUnits(12, 6, 6, 900, p, 2), Economy.payoutUnits(12, 6, 6, 900, p, 1) * 2, 1, "pase 2×")
+		T.eq(Economy.payoutUnits(0, 0, 6, 900, p, 1), 0, "nada")
 	end)
 
 	T.section("Recompensa diaria")
