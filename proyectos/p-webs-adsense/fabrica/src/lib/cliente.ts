@@ -52,20 +52,35 @@ function animar(out: HTMLElement, antes: number | null, lang: Lang) {
   requestAnimationFrame(paso);
 }
 
-// Barra fija en el móvil con la cifra principal mientras el resultado no está a la vista
+// Barra fija en el móvil con la cifra principal: visible mientras la calculadora está en pantalla pero el resultado no
 function barraMovil(el: HTMLElement, out: HTMLElement) {
   const b = el.querySelector<HTMLElement>('.calc-fija');
   if (!b || !('IntersectionObserver' in window)) return () => {};
-  let visible = true, tocado = false;
-  new IntersectionObserver(([e]) => { visible = e.isIntersecting; b.hidden = visible || !tocado; }).observe(out);
-  b.addEventListener('click', () => out.scrollIntoView({ behavior: quieto ? 'auto' : 'smooth', block: 'center' }));
-  return () => {
-    tocado = true;
+  let enCalc = false, enRes = true;
+  const ver = () => { b.hidden = !enCalc || enRes; };
+  const io = new IntersectionObserver((es) => { for (const e of es) { if (e.target === out) enRes = e.isIntersecting; else enCalc = e.isIntersecting; } ver(); });
+  io.observe(out); io.observe(el.querySelector('form')!);
+  b.addEventListener('click', () => out.scrollIntoView({ behavior: quieto ? 'auto' : 'smooth', block: 'start' }));
+  const pintar = () => {
     const et = out.querySelector('.res-et')?.textContent ?? '', val = out.querySelector<HTMLElement>('.res-val');
     b.querySelector('.cf-et')!.textContent = et;
     b.querySelector('.cf-val')!.textContent = val?.dataset.n ? fmt(Number(val.dataset.n), val.dataset.f as any, el.dataset.lang as Lang) : val?.textContent ?? '';
-    b.hidden = visible;
+    b.querySelector('.cf-barra')!.innerHTML = out.querySelector('.reparto-barra')?.innerHTML ?? '';
   };
+  pintar();
+  return pintar;
+}
+
+// Deslizador del importe principal: refleja el número (y al revés) y pinta el tramo recorrido con --p
+function deslizar(form: HTMLFormElement, objetivo: EventTarget | null, lang: Lang) {
+  const t = objetivo as HTMLInputElement | null;
+  const r = t?.classList?.contains('rango') ? t : t?.name ? form.querySelector<HTMLInputElement>(`[data-rango="${t.name}"]`) : null;
+  if (!r) return;
+  const n = form.elements.namedItem(r.dataset.rango!) as HTMLInputElement;
+  if (t === r) n.value = r.value; else r.value = String(parseFloat(n.value.replace(',', '.')) || 0);
+  const min = +r.min, max = +r.max, x = Math.min(max, Math.max(min, +r.value));
+  r.parentElement!.style.setProperty('--p', `${((x - min) / (max - min)) * 100}%`);
+  r.setAttribute('aria-valuetext', fmt(parseFloat(n.value.replace(',', '.')) || 0, 'eur0', lang));
 }
 
 async function iniciar(el: HTMLElement) {
@@ -90,6 +105,7 @@ async function iniciar(el: HTMLElement) {
     desdeUrl = true;
     if (inp.type === 'checkbox') inp.checked = val === '1';
     else inp.value = val;
+    deslizar(form, inp, lang);
   });
 
   let contado = false;
@@ -102,7 +118,11 @@ async function iniciar(el: HTMLElement) {
     visibilidad(form, d, v);
     try {
       const r = d.calcular(v, { P: params(pais, v.anio ?? anioDef), lang, pais });
+      // Los tramos de la barra parten de su tamaño anterior para que la transición se vea al recalcular
+      const viejos = [...out.querySelectorAll<HTMLElement>('.reparto-barra .rp')].map((s) => s.style.flexGrow);
       out.innerHTML = renderResultado(r, lang);
+      const nuevos = out.querySelectorAll<HTMLElement>('.reparto-barra .rp');
+      if (!quieto && viejos.length === nuevos.length) nuevos.forEach((s, i) => { const f = s.style.flexGrow; s.style.flexGrow = viejos[i]; requestAnimationFrame(() => requestAnimationFrame(() => { s.style.flexGrow = f; })); });
       out.classList.remove('error');
       animar(out, Number.isFinite(antes) ? antes : null, lang);
       fija();
@@ -123,7 +143,7 @@ async function iniciar(el: HTMLElement) {
     }
   };
   let tmr: number | undefined;
-  form.addEventListener('input', () => { clearTimeout(tmr); tmr = window.setTimeout(calcular, 120); });
+  form.addEventListener('input', (e) => { deslizar(form, e.target, lang); clearTimeout(tmr); tmr = window.setTimeout(calcular, 120); });
   form.addEventListener('change', calcular);
   form.addEventListener('submit', (e) => { e.preventDefault(); calcular(); });
   el.querySelector('[data-accion="compartir"]')?.addEventListener('click', async (ev) => {

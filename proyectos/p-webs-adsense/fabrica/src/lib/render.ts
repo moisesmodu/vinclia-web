@@ -39,11 +39,13 @@ export function renderResultado(r: Resultado, lang: Lang, moneda = MONEDA, local
   if (r.destacado.nota) h += `<span class="res-nota">${tx(r.destacado.nota, lang)}</span>`;
   const partes = repartoDe(r);
   if (partes) {
+    // Barra «a dónde va cada euro»: cada tramo y su fila de la leyenda comparten índice (rpN) para resaltarse a la vez
     const total = partes.reduce((a, p) => a + p.v, 0);
-    h += '<div class="reparto"><div class="reparto-barra" role="img" aria-label="' + partes.map((p) => `${tx(p.e, lang)}: ${fmt(Math.round((p.v / total) * 1000) / 10, 'pct', lang)}`).join(', ') + '">';
+    const pc = (v: number) => fmt(Math.round((v / total) * 1000) / 10, 'pct', lang, moneda, locale);
+    h += '<div class="reparto"><div class="reparto-barra" role="img" aria-label="' + partes.map((p) => `${tx(p.e, lang)}: ${pc(p.v)}`).join(', ') + '">';
     partes.forEach((p, i) => { h += `<span class="rp rp${i}" style="flex-grow:${Math.max(p.v, total * 0.004).toFixed(2)}"></span>`; });
     h += '</div><ul class="reparto-ley">';
-    partes.forEach((p, i) => { h += `<li><i class="rp${i}"></i>${tx(p.e, lang)} <b>${fmt(Math.round((p.v / total) * 1000) / 10, 'pct', lang)}</b></li>`; });
+    partes.forEach((p, i) => { h += `<li class="rl${i}"><i class="rp${i}"></i><span class="rl-e">${tx(p.e, lang)}</span><span class="rl-v">${esc(fmt(p.v, 'eur', lang, moneda, locale))}</span><b>${pc(p.v)}</b></li>`; });
     h += '</ul></div>';
   }
   h += '</div>';
@@ -53,11 +55,12 @@ export function renderResultado(r: Resultado, lang: Lang, moneda = MONEDA, local
     h += '</dl>';
   }
   if (r.filas?.length) {
-    h += '<table class="res-filas"><tbody>';
+    h += `<p class="res-tit">${lang === 'ca' ? 'Desglossament' : 'Desglose'}</p><table class="res-filas"><tbody>`;
     for (const f of r.filas) {
+      const neg = f.signo === '-' && typeof f.v === 'number' && f.v !== 0;
       const cls = [f.fuerte ? 'fuerte' : '', f.sub ? 'sub' : ''].filter(Boolean).join(' ');
-      const val = (f.signo === '-' && typeof f.v === 'number' && f.v !== 0 ? '− ' : f.signo === '+' ? '+ ' : '') + F(f.v, f.f ?? 'eur');
-      h += `<tr${cls ? ` class="${cls}"` : ''}><th scope="row">${tx(f.e, lang)}</th><td>${val}</td></tr>`;
+      const val = (neg ? '− ' : f.signo === '+' ? '+ ' : '') + F(f.v, f.f ?? 'eur');
+      h += `<tr${cls ? ` class="${cls}"` : ''}><th scope="row">${tx(f.e, lang)}</th><td${neg ? ' class="neg"' : f.signo === '+' ? ' class="pos"' : ''}>${val}</td></tr>`;
     }
     h += '</tbody></table>';
   }
