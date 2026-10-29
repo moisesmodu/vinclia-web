@@ -30,7 +30,7 @@ const ico = (d: string) => `<svg viewBox="0 0 24 24" width="18" height="18" fill
   {!mini && <h2 id="calc-t" class="vh">{u.calculadora}</h2>}
   <form class="calc-form" novalidate>
     {!mini && <p class="calc-paso" aria-hidden="true"><span>1</span>{ca ? 'Les teves dades' : 'Tus datos'}</p>}
-    {d.anual && !mini && (anioSeg ? (
+    {d.anual && !mini && anios.length > 1 && (anioSeg ? (
       <fieldset class="campo campo-seg campo-anio">
         <legend>{u.anio}</legend>
         <div class="seg" style={`--n:${anios.length}`}>
