@@ -138,3 +138,21 @@ de EE. UU. en español, USD, solo castellano).
 - Panel: `enlaces.ChequeClaro` añadido en la ficha `p-webs-adsense`.
 
 Ejecutado el 2026-10-29
+
+## Portal CalculaClaro (puerta de entrada a toda la familia)
+
+`SITIO=portal` genera una portada con buscador de las 57 calculadoras y enlaces por interés a cada sitio
+(`scripts/portal.mjs`, que lee `familia.json`). Se crea como un proyecto más del camino B:
+
+```bash
+n=claro-portal; vercel project add $n $T && vercel link --yes --project $n $T
+printf "portal" | vercel env add SITIO production $T
+printf "https://claro-portal.vercel.app" | vercel env add PORTAL_URL production $T
+for v in LEGAL_NOM LEGAL_NIF LEGAL_EMAIL LEGAL_ADRECA; do printf "${!v}" | vercel env add $v production $T; done
+vercel deploy --prod --yes $T && rm -rf .vercel
+```
+
+Cuando cambie la dirección de un sitio, por ejemplo al conectar un dominio, se edita su `url` en `fabrica/familia.json`.
+Después se redespliegan los sitios, porque el pie «Familia Claro» de cada uno enlaza a los demás, y también el portal.
+Si el proyecto `claro-portal` sale con otro nombre, como pasó con `cheque-claro`, hay que poner su URL en
+`familia.json` → `portal.url`.

@@ -3106,10 +3106,15 @@
       {
         "fecha": "2026-10-28",
         "texto": "Sitio 3 ChequeClaro construido (EE. UU. en español, USD): 17 calculadoras (cheque de pago, impuesto federal y estatal, reembolso, 1099, propinas y horas extra OBBBA, crédito por hijos, 401(k), remesas…), 149 páginas, parámetros 2026 del IRS/SSA y 15 estados, 249 pruebas, Lighthouse móvil 100"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Portal CalculaClaro: portada con buscador de las 57 calculadoras y acceso por interés a NetoClaro, ImpuestoClaro y ChequeClaro (PisoClaro y MotorClaro como «muy pronto»); pie «Familia Claro» en cada sitio enlazando a los hermanos y al portal; Lighthouse 100"
       }
     ],
     "proximos": [
       "Moisés: comprar netoclaro.es e impuestoclaro.es (y chequeclaro.com) y darse de alta en Xolo, Qonto y Quipu",
+      "Sesión del Mac: crear el proyecto claro-portal (SITIO=portal) en Vercel",
       "Sesión del Mac: redesplegar NetoClaro e ImpuestoClaro con el rediseño (PR #6) y conectar los dominios",
       "Sesión del Mac: crear el proyecto chequeclaro (SITIO=eeuu) en Vercel",
       "Construir PisoClaro y MotorClaro con la fábrica"

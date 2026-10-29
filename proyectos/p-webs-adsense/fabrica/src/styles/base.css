@@ -138,7 +138,7 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
 .eyebrow{display:inline-block;font-weight:600;font-size:.9rem;color:var(--primario);background:color-mix(in srgb,var(--acento) 35%,var(--superficie));border-radius:999px;padding:.2rem .75rem;margin:0 0 .8rem}
 .pie{margin-top:56px;background:var(--tenue);border-top:1px solid var(--borde);font-size:.88rem;color:var(--suave)}
 .pie .env{padding-top:24px;padding-bottom:32px;display:grid;gap:16px}
-@media (min-width:760px){.pie .env{grid-template-columns:1.4fr 1fr 1fr}}
+@media (min-width:760px){.pie .env{grid-template-columns:1.3fr 1fr 1.2fr 1fr}}
 .pie h2{font-size:.9rem;margin:0 0 .5rem;color:var(--tinta)}
 .pie ul{list-style:none;padding:0;margin:0;display:grid;gap:.3rem}
 .pie a{color:var(--suave)}
@@ -273,3 +273,7 @@ main>section>h2,.cifras h2{margin-top:2.6rem}
 .afi-cta{justify-self:start;background:var(--primario);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:.55rem 1.1rem}
 .afi-cta:hover{background:var(--primarioOscuro)}
 .afi-nota{margin:0;font-size:.8rem;color:var(--suave)}
+
+.familia a{display:flex;flex-direction:column;text-decoration:none;line-height:1.35}
+.familia b{color:#fff;font-weight:600}
+.familia span{font-size:.8rem}

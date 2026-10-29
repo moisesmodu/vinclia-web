@@ -3,9 +3,10 @@
 // consentimiento de Google (TCF 2.2) y AdSense solo si hay cuenta, y Umami (analítica sin cookies).
 import '../styles/base.css';
 import type { Lang } from '../lib/def';
-import { sitio, anunciosActivos, pubId } from '../lib/sitio';
+import { sitio, anunciosActivos, pubId, SITIO_ID } from '../lib/sitio';
 import { url, absoluta, buscar } from '../lib/rutas';
 import { UI } from '../lib/ui';
+import familia from '../../familia.json';
 // Tipografías de la familia Claro alojadas en el propio sitio (sin peticiones a Google): Manrope 700 e Inter 400/600
 import manrope700 from '@fontsource/manrope/files/manrope-latin-700-normal.woff2?url';
 import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
@@ -40,6 +41,8 @@ const ads = anunciosActivos();
 const cliente = sitio.adsense.cliente;
 const titCompleto = titulo.includes(sitio.nombre) ? titulo : `${titulo} | ${sitio.nombre}`;
 const anio = new Date().getFullYear();
+// Sitios hermanos de la familia Claro (familia.json): el visitante salta al que le interesa
+const hermanos = familia.sitios.filter((x) => x.id !== SITIO_ID && x.estado === 'activo' && x.url);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -108,6 +111,15 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
           <li><a href={url(inicio.ruta) + '#calculadoras'}>{u.calculadoras}</a></li>
         </ul>
       </div>
+      {hermanos.length > 0 && (
+        <div>
+          <h2>{lang === 'ca' ? 'Família Claro' : 'Familia Claro'}</h2>
+          <ul class="familia">
+            {hermanos.map((x) => <li><a href={x.url + (lang !== 'es' && x.idiomas.includes(lang) ? `/${lang}/` : '/')}><b>{x.nombre}</b><span>{x.interes[lang] ?? x.interes.es}</span></a></li>)}
+            {familia.portal.url && <li><a href={familia.portal.url + '/'}><b>CalculaClaro</b><span>{lang === 'ca' ? 'Totes les calculadores de la família' : 'Todas las calculadoras de la familia'}</span></a></li>}
+          </ul>
+        </div>
+      )}
       <div>
         <h2>Legal</h2>
         <ul>

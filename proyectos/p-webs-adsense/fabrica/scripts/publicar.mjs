@@ -4,7 +4,8 @@ import { execSync } from 'node:child_process';
 import { rmSync, cpSync } from 'node:fs';
 const sitio = process.env.SITIO;
 if (!sitio) { console.error('Falta la variable SITIO (nomina, impuestos…)'); process.exit(1); }
-execSync('npx astro build', { stdio: 'inherit' });
+// El portal (SITIO=portal) no es un sitio de Astro: lo genera scripts/portal.mjs
+execSync(sitio === 'portal' ? 'npm run build:portal' : 'npx astro build', { stdio: 'inherit' });
 rmSync('publicar', { recursive: true, force: true });
 cpSync(`dist/${sitio}`, 'publicar', { recursive: true });
 console.log(`Listo: ./publicar contiene ${sitio}`);
