@@ -27,6 +27,20 @@ Regla: los juegos que Poki acepte en exclusiva salen de los portales web no excl
 | R3 | Snow Plow Simulator | Simulador de temporada (diciembre) | Quitar nieve del pueblo, mejorar la máquina, mascotas de nieve |
 | R4 | Rocket Hop Tycoon | Tycoon espacial | Base lunar que crece; cohetes que se pilotan con un botón |
 
+## Próximos por datos de los líderes (29/10/2026, ver `IDEAS-LIDERES.md`)
+Orden actualizado: primero las mecánicas con más partidas en Poki y CrazyGames que aún no tenemos.
+
+| # | Juego | Inspirado en | Mecánica (una) | Gancho propio |
+|---|---|---|---|---|
+| 6 | **Hook Hop** | Stickman Hook | Mantener = engancharse a la liana; soltar = salir disparado | Un mono que recoge plátanos en el aire; lianas que se rompen |
+| 7 | **Trick Floor** | Level Devil | Flechas o toques para moverse y saltar | Castillo de gelatina donde el suelo, los pinchos y la meta engañan; reintento instantáneo |
+| 8 | **Lane Dash** | Subway Surfers | Deslizar izquierda, derecha, arriba | Carrito de supermercado por pasillos; ofertas que dan turbo |
+| 9 | **Fruit Stand** | Monkey Mart | Mover el personaje con el dedo | Puesto de fruta que crece a mercado; ayudantes que no se duermen |
+| 10 | **Paint Grab** | Paper.io 2 | Dibujar con el dedo para conquistar | Pintar el patio del colegio contra bots; partidas de 2 min |
+| 11 | **Penalty Season** | Retro Bowl | Un gesto para tirar el penalti | Temporada de liga y plantilla entre partidos |
+
+Roblox: **Jelly Pets** (coleccionar, fusionar y llevarse gelatinas; la categoría que más crece) pasa delante del obby.
+
 Criterios: una mecánica, sin texto, partidas de 1 a 3 minutos (salvo los dos de gestión, que prueban sesiones largas
 como el líder Monkey Mart), ratón y táctil, menos de 8 MB. Mezcla de géneros por datos:
 - **Coches tipo plataforma** en Poki: 7 % de los títulos, 30 % de las partidas (informe de Poki, 29/09/2026). Se
