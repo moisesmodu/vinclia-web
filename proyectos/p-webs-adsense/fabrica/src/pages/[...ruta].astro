@@ -79,7 +79,20 @@ if (p.tipo === 'inicio') {
   const fichasRel = fichasSitio().filter((f) => f.calc === p.id).map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang) }));
   const colRel = (sitio.programaticas ?? []).filter((c: any) => c.calc === p.id).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id).slice(0, 24) }));
   titulo = tx.titulo; descripcion = tx.descripcion;
-  vista = { tx, d: defs[`../calculadoras/${p.id}.ts`], relacionadas, fichasRel, colRel };
+  // Títulos del artículo con ancla (id + enlace a sí mismos) y un índice para el lateral en escritorio
+  const ancla = (x: string) => x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const indice: { id: string; t: string }[] = [];
+  const html = tx.html.replace(/<h2>([\s\S]*?)<\/h2>/g, (_: string, h: string) => {
+    let id = ancla(h) || 'seccion';
+    while (indice.some((x) => x.id === id)) id += '-2';
+    indice.push({ id, t: h.replace(/<[^>]+>/g, '') });
+    return `<h2 id="${id}"><a href="#${id}">${h}</a></h2>`;
+  });
+  if (tx.fuentes.length) indice.push({ id: 'fuentes', t: u.fuentes });
+  if (tx.faq.length) indice.push({ id: 'faq', t: u.faq });
+  indice.push({ id: 'relacionadas', t: u.relacionadas });
+  const dominio = (x: string) => { try { return new URL(x).hostname.replace(/^www\./, ''); } catch { return ''; } };
+  vista = { tx, html, indice, dominio, d: defs[`../calculadoras/${p.id}.ts`], relacionadas, fichasRel, colRel };
   jsonld = [
     { '@context': 'https://schema.org', '@type': 'WebApplication', name: tx.h1, url: absoluta(p.ruta), description: tx.descripcion, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: lang, isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: MONEDA }, author: autor, publisher: editor, dateModified: tx.actualizado },
     ...(tx.faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: tx.faq.map((q) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })) }] : []),
@@ -197,28 +210,48 @@ const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.
   )}
 
   {p.tipo === 'calc' && (
-    <>
+    <div class="calc-pag">
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.tx.h1}</span></nav>
-      <div class="cab-calc">
+      <header class="cab-calc">
         <span class="ico-caja grande" set:html={iconoCalc(p.id, 30)} />
         <div><h1>{v.tx.h1}</h1><p class="intro">{v.tx.resumen}</p></div>
-      </div>
-      <p class="meta"><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{u.revisado}</span></p>
+      </header>
+      <ul class="meta-calc">
+        <li><Fragment set:html={icono('calendario', 15)} /><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span></li>
+        <li><Fragment set:html={icono('persona', 15)} /><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></li>
+        <li><Fragment set:html={icono('escudo', 15)} /><span>{u.revisado}</span></li>
+      </ul>
       {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
       <Afiliado calc={p.id} lang={lang} />
       <Anuncio posicion="bajoResultado" lang={lang} />
-      <article class="cuerpo">
-        <Fragment set:html={v.tx.html} />
-        {v.tx.fuentes.length > 0 && (<><h2>{u.fuentes}</h2><ul class="fuentes">{v.tx.fuentes.map((f: any) => <li><a href={f.url} rel="noopener">{f.nombre}</a></li>)}</ul></>)}
-        {v.tx.faq.length > 0 && (<section class="faq"><h2>{u.faq}</h2>{v.tx.faq.map((q: any) => <details><summary>{q.p}</summary><p>{q.r}</p></details>)}</section>)}
-      </article>
-      {v.fichasRel.length > 0 && (<><h2>{u.datos}</h2><ul class="chips">{v.fichasRel.map((f: any) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}</ul></>)}
-      {v.colRel.map((c: any) => (<><h2>{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul></>))}
-      <section class="relacionadas"><h2>{u.relacionadas}</h2><ul class="bento">{v.relacionadas.map((c: any) => <li><a class="bento-t" href={url(c.ruta)}><span class="ico-caja" set:html={iconoCalc(c.id, 24)} /><strong>{c.h1}</strong><span class="bento-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul></section>
+      <div class="calc-doc">
+        <nav class="indice" aria-labelledby="indice-t">
+          <p id="indice-t">{lang === 'es' ? 'En esta página' : 'En aquesta pàgina'}</p>
+          <ol>{v.indice.map((x: any) => <li><a href={`#${x.id}`}>{x.t}</a></li>)}</ol>
+        </nav>
+        <article class="cuerpo">
+          <Fragment set:html={v.html} />
+          {v.tx.fuentes.length > 0 && (
+            <section aria-labelledby="fuentes">
+              <h2 id="fuentes"><a href="#fuentes">{u.fuentes}</a></h2>
+              <ul class="fuentes-c">{v.tx.fuentes.map((f: any) => <li><a class="fuente" href={f.url} rel="noopener"><span set:html={icono('documento', 22)} /><span><strong>{f.nombre}</strong><small>{v.dominio(f.url)}</small></span></a></li>)}</ul>
+            </section>
+          )}
+          {v.tx.faq.length > 0 && (
+            <section class="faq" aria-labelledby="faq">
+              <h2 id="faq"><a href="#faq">{u.faq}</a></h2>
+              <div class="faq-c">{v.tx.faq.map((q: any) => <details><summary>{q.p}</summary><p>{q.r}</p></details>)}</div>
+            </section>
+          )}
+        </article>
+      </div>
+      {v.fichasRel.length > 0 && (<section class="calc-enlaces"><h2 class="sec">{u.datos}</h2><ul class="chips">{v.fichasRel.map((f: any) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}</ul></section>)}
+      {v.colRel.map((c: any) => (<section class="calc-enlaces"><h2 class="sec">{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul></section>))}
+      <section class="relacionadas" aria-labelledby="relacionadas"><h2 class="sec" id="relacionadas"><a href="#relacionadas">{u.relacionadas}</a></h2><ul class="rel-calc">{v.relacionadas.map((c: any) => <li><a href={url(c.ruta)}><span class="ico-caja" set:html={iconoCalc(c.id, 24)} /><strong>{c.h1}</strong><span class="rel-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul></section>
       <Anuncio posicion="finContenido" lang={lang} />
-      <p class="descargo">{u.descargo}</p>
-    </>
+      <p class="descargo descargo-calc"><Fragment set:html={icono('alerta', 18)} /><span>{u.descargo}</span></p>
+    </div>
   )}
 
   {p.tipo === 'fichas' && (
