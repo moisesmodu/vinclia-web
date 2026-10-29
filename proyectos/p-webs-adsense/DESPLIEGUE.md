@@ -127,3 +127,14 @@ de EE. UU. en español, USD, solo castellano).
    variables.
 2. Crear `chequeclaro` con el mismo bucle del camino B: `SITIO=eeuu` y `SITE_URL=https://chequeclaro.vercel.app`.
 3. Anotar las URL en el panel y escribir aquí «Ejecutado el …».
+
+### Redespliegue y sitio 3 (sesión del Mac, 29-10-2026, 13:22)
+- `netoclaro` e `impuestoclaro` redesplegados con el commit 7c82651 (rediseño y bloques de afiliación).
+- `chequeclaro` creado con el camino B (`SITIO=eeuu`, `LEGAL_*` con `LEGAL_EMAIL=hola@numimates.com`). **Ojo:**
+  `chequeclaro.vercel.app` ya era de otra cuenta de Vercel (una web ajena, «El Cheque Claro»), así que el sitio está en
+  **https://cheque-claro.vercel.app** y `SITE_URL` apunta ahí (la URL canónica y el sitemap usan esa dirección). Vercel le dio
+  también `chequeclaro-rho.vercel.app`.
+- Comprobado: los tres sitios dan 200 con su título y su sitemap, y el aviso legal muestra hola@numimates.com.
+- Panel: `enlaces.ChequeClaro` añadido en la ficha `p-webs-adsense`.
+
+Ejecutado el 2026-10-29
