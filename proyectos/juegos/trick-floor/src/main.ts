@@ -1,11 +1,12 @@
 import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
+import { Levels } from './scenes/Levels';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
+// No physics engine: Trick Floor has its own small tile platformer simulation (src/sim.ts).
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#f3e3ff',
+  scenes: [Boot, Menu, Levels, Play, Hud],
 });

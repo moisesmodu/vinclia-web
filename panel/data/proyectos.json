@@ -873,7 +873,9 @@
       "Ideas de los líderes": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/IDEAS-LIDERES.md",
       "Roblox · Jelly Pets": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-jelly-pets",
       "Lane Dash · jugar": "https://juegos-casuales.vercel.app/lane-dash/",
-      "Lane Dash · guía": "https://juegos-casuales.vercel.app/play/lane-dash/"
+      "Lane Dash · guía": "https://juegos-casuales.vercel.app/play/lane-dash/",
+      "Trick Floor · jugar": "https://juegos-casuales.vercel.app/trick-floor/",
+      "Trick Floor · guía": "https://juegos-casuales.vercel.app/play/trick-floor/"
     },
     "acciones": [
       {
@@ -955,6 +957,10 @@
       {
         "fecha": "2026-10-29",
         "texto": "Lane Dash listo (corredor de 3 carriles en pseudo-3D, carrito de supermercado), 5 paquetes, fichas, 5 páginas SEO y categoría runner-games"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Trick Floor listo (plataformas «troll», 25 niveles comprobados por bot, teclado o táctil), 5 paquetes, fichas, 5 páginas SEO y categoría platformer-games"
       }
     ],
     "proximos": [

@@ -1,0 +1,29 @@
+{
+  "juego": "trick-floor",
+  "fecha": "2026-10-29",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4, 45 s",
+  "cargaHastaMenuMs": 2038,
+  "fpsEnEsteContenedor": 17.3,
+  "cpuPorFotogramaMs": {
+    "frames": 748,
+    "media": 3.96,
+    "p50": 3.5,
+    "p95": 8.5,
+    "p99": 12.9
+  },
+  "fpsMaximoPorCpu": 118,
+  "nivelesPilotoAutomatico": [
+    {
+      "level": 1,
+      "deaths": 0
+    },
+    {
+      "level": 2,
+      "deaths": 3
+    }
+  ],
+  "muertesPilotoAutomatico": 3,
+  "uptimeAntes": "23:34:03 up 48 min,  0 user,  load average: 10.69, 11.13, 9.14",
+  "uptimeDespues": "23:34:51 up 49 min,  0 user,  load average: 9.05, 10.61, 9.07",
+  "errores": []
+}

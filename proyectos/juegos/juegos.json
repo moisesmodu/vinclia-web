@@ -117,9 +117,17 @@
   {
     "slug": "trick-floor",
     "titulo": "Trick Floor",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Plataformas «troll» (el nivel te engaña), 25 niveles cortos, teclado o táctil",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Nothing is what it seems in the jelly castle. Floors drop, spikes pop and the door runs away. Can you outsmart 25 levels?",
+    "etiquetas": [
+      "platformer-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
   },
   {
     "slug": "lane-dash",
