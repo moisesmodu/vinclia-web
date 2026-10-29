@@ -1,0 +1,62 @@
+{
+  "name": "JellyPets",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Remotes": {
+        "$className": "Folder",
+        "Fuse": { "$className": "RemoteEvent" },
+        "Sell": { "$className": "RemoteEvent" },
+        "Rebirth": { "$className": "RemoteEvent" },
+        "ClaimDaily": { "$className": "RemoteEvent" },
+        "Lock": { "$className": "RemoteEvent" },
+        "UpgradeLock": { "$className": "RemoteEvent" },
+        "Inventory": { "$className": "RemoteEvent" },
+        "Notify": { "$className": "RemoteEvent" }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "CameraMaxZoomDistance": 80
+      },
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "StreamingEnabled": false
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "ClockTime": 14,
+        "Brightness": 2.6,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [0.62, 0.66, 0.78]
+      }
+    },
+    "Players": {
+      "$className": "Players"
+    },
+    "SoundService": {
+      "$className": "SoundService"
+    }
+  }
+}

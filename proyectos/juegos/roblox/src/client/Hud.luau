@@ -398,9 +398,9 @@ function Hud.start()
 	player.AttributeChanged:Connect(refresh)
 	refresh()
 
-	-- carrera: cuenta atrás
+	-- carrera: cuenta atrás (el bucle arranca antes de colocar gui en PlayerGui: no puede depender de gui.Parent)
 	task.spawn(function()
-		while gui.Parent do
+		while true do
 			local state = Workspace:GetAttribute("RaceState")
 			local at = Workspace:GetAttribute("RaceAt")
 			local remaining = if type(at) == "number" then at - Workspace:GetServerTimeNow() else 0
