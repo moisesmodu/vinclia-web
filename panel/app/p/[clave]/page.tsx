@@ -57,6 +57,17 @@ export default async function Ficha({ params }: { params: Promise<{ clave: strin
 
       {p.juicio && <Juicio j={p.juicio} />}
 
+      {p.pulido && (
+        <section className="listo-vender">
+          <h2>Listo para vender: prioridad {p.pulido.prioridad} de 11 <span className="pastilla">{p.pulido.estado}</span></h2>
+          <p>{p.pulido.porQue}</p>
+          <ul className="checklist">
+            {p.pulido.checklist.map((x) => <li key={x.item} className={x.ok ? 'ok' : 'no'}>{x.ok ? '✓' : '○'} {x.item}</li>)}
+          </ul>
+          {p.pulido.faltan.length > 0 && <p className="faltan"><b>Lo que falta ahora:</b> {p.pulido.faltan.join(' · ')}</p>}
+        </section>
+      )}
+
       {m && <Marca m={m} />}
 
       <section className="rentabilidad">

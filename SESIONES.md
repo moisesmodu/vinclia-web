@@ -64,6 +64,13 @@
    lanza en el primer mercado (normalmente España); el segundo (ver `CARTERA.md`, «Expansión internacional») se abre
    solo cuando el primero tenga datos de conversión. Cada ficha del panel lleva su campo `expansion`.
 
+## Lista «listo para vender» (la revisa Moisés, la mantienes tú)
+
+Cada ficha de `panel/data/proyectos.json` tiene `pulido.checklist` con ocho puntos y `pulido.faltan`. Cuando cumplas un
+punto, ponlo en `ok: true` en el mismo push, y actualiza `faltan` con lo que queda. No marques nada que no hayas probado.
+Cuando los ocho estén en `ok`, cambia `pulido.estado` a «listo para vender». Moisés revisa los proyectos por
+`pulido.prioridad`; lo que te pida en esa revisión va antes que cualquier otra cosa.
+
 ## Enlaces públicos en el panel (todo lo que se pueda abrir, se enlaza)
 
 En `panel/data/proyectos.json`, el objeto `enlaces` de tu proyecto debe contener **todas** las URL públicas que existan,

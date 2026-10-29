@@ -233,3 +233,14 @@ b { font-weight: 600; }
 .boton-prev { background: transparent; border: 1px solid var(--borde, #e6e3dc); color: inherit; }
 .botones-web { margin: 10px 0 0; }
 @media (max-width: 720px) { .fila-ver { grid-template-columns: 1fr; } }
+
+/* Orden de pulido y lista «listo para vender» */
+.pulido-lista { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.pulido-lista li { display: flex; gap: 14px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; background: var(--tarjeta, #fff); border: 1px solid var(--borde, #e6e3dc); }
+.pulido-lista li p { margin: 4px 0 0; font-size: .92rem; }
+.pulido-num { flex: 0 0 34px; height: 34px; border-radius: 10px; background: var(--acento, #0E9F6E); color: #fff; font-weight: 800; display: grid; place-items: center; font-family: 'Bricolage Grotesque', sans-serif; }
+.pulido-listo-para-vender .pulido-num { background: #19B36B; }
+.faltan { opacity: .85; }
+.checklist { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 4px; }
+.checklist li.ok { opacity: .6; text-decoration: line-through; }
+.checklist li.no { font-weight: 500; }

@@ -79,6 +79,26 @@ export default function Inicio() {
         </section>
       )}
 
+      <section className="orden-pulido">
+        <h2>Orden de pulido: dejar cada proyecto a punto para vender</h2>
+        <p className="nota">Se revisan en este orden. Cada ficha tiene la lista «listo para vender»; cuando los ocho puntos estén marcados, el proyecto pasa a «listo para vender».</p>
+        <ol className="pulido-lista">
+          {[...lista].filter((p) => p.pulido).sort((a, b) => a.pulido!.prioridad - b.pulido!.prioridad).map((p) => {
+            const ok = p.pulido!.checklist.filter((x) => x.ok).length;
+            return (
+              <li key={p.clave} className={`pulido-${p.pulido!.estado.replace(/ /g, '-')}`}>
+                <span className="pulido-num">{p.pulido!.prioridad}</span>
+                <div>
+                  <b><Link href={`/p/${p.clave}/`}>{p.nombre}</Link></b> <span className="pastilla">{p.pulido!.estado}</span> <small>{ok}/{p.pulido!.checklist.length} puntos</small>
+                  <p>{p.pulido!.porQue}</p>
+                  {p.pulido!.faltan.length > 0 && <p className="faltan"><b>Falta:</b> {p.pulido!.faltan.join(' · ')}</p>}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+
       <section className="donde-ver">
         <h2>Dónde ver cada proyecto</h2>
         <p className="nota">Las webs en producción se abren desde cualquier sitio; las vistas previas son páginas privadas tuyas en claude.ai.</p>

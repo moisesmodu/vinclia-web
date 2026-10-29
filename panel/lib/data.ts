@@ -19,6 +19,8 @@ export type Identidad = {
   logo: string; icono: string;
 };
 
+export type Pulido = { prioridad: number; estado: 'por revisar' | 'en revisión' | 'listo para vender'; porQue: string; faltan: string[]; checklist: { item: string; ok: boolean }[] };
+
 export type Estado = 'pendiente' | 'en construcción' | 'lanzado' | 'pausado' | 'descartado';
 
 export type Proyecto = {
@@ -29,7 +31,7 @@ export type Proyecto = {
   canal: string; enlaces: Record<string, string>;
   acciones: Accion[]; proximos: string[]; paraMoises: string[];
   mejoras: string[]; competidores: Competidor[]; repos: Repo[]; hallazgos: string[];
-  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio; examenes?: Examen[];
+  lider?: Lider; segundoLider?: Lider; expansion?: string[]; juicio?: Juicio; examenes?: Examen[]; pulido?: Pulido;
 };
 
 export type Cartera = {
