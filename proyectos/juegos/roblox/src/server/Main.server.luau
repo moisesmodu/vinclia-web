@@ -7,8 +7,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Config = require(ReplicatedStorage.Shared.Config)
 local Services = script.Parent.Services
 local DataService = require(Services.DataService)
+local EventService = require(Services.EventService)
 local FarmService = require(Services.FarmService)
 local MonetizationService = require(Services.MonetizationService)
+local PaintService = require(Services.PaintService)
 local PlotService = require(Services.PlotService)
 local RaceService = require(Services.RaceService)
 local RateLimiter = require(Services.RateLimiter)
@@ -30,7 +32,9 @@ TruckService.init(world)
 FarmService.start()
 TruckService.start()
 RaceService.start()
+EventService.start()
 UpgradeService.start()
+PaintService.start()
 MonetizationService.start()
 DataService.startAutosave()
 
@@ -64,6 +68,15 @@ local function onPlayerAdded(player: Player)
 	end
 	if player:GetAttribute("SaveWarning") then
 		Notify:FireClient(player, { kind = "save_warning" })
+	end
+	-- recompensa diaria: solo si cambió el día UTC desde el último cobro (el servidor decide y guarda)
+	local dailyCoins, streak = DataService.claimDaily(player, os.time())
+	if dailyCoins > 0 then
+		task.delay(3, function()
+			if player.Parent == Players then
+				Notify:FireClient(player, { kind = "daily", coins = dailyCoins, streak = streak })
+			end
+		end)
 	end
 	local plot = PlotService.assign(player)
 	if not plot then

@@ -7,6 +7,9 @@ por código y publicación por la API Open Cloud desde GitHub Actions. **Nadie a
 hasta el mercado sin romperlos → cobras → mejoras granja, suspensión, paredes de la caja y capacidad.
 Cada 10 minutos hay una **carrera de huevos** de 3 minutos: quien más huevos entrega gana un premio.
 
+**Para volver cada día** (lo que hace ganar a *Grow a Garden* y a los tycoons de cabeza, `../IDEAS-LIDERES.md` §2):
+huevos raros, recompensa diaria con racha, evento de fin de semana con una pintura limitada y pinturas del camión.
+
 ## Estructura
 
 ```
@@ -15,16 +18,18 @@ rokit.toml             versiones fijadas: rojo 7.4.4, lune 0.8.9, selene 0.27.1,
 selene.toml stylua.toml .luaurc   lint, formato y modo estricto
 src/shared/            ReplicatedStorage.Shared (servidor y cliente)
   Config.luau          precios, curvas, física, IDs de la tienda (0 = apagado)
-  Economy.luau         funciones puras: coste(nivel), pago(huevos, distancia), granja, camión, carrera
+  Economy.luau         funciones puras: coste(nivel), pago(huevos, distancia), granja, camión, carrera,
+                       rareza (rollRarity), racha diaria (dailyStreak), evento (isEventActive)
   TrackGen.luau        función pura: tramos y perfil de la pista a partir de una semilla
 src/server/            ServerScriptService.Server
   Main.server.luau     arranque, entrada/salida de jugadores, BindToClose
   Services/            DataService (guardado), WorldBuilder (pista y mercado), PlotService (12 parcelas),
                        FarmService (gallineros), TruckBuilder + TruckService (camión, huevos, entrega),
                        UpgradeService, MonetizationService (pases, productos, ProcessReceipt),
-                       RaceService (carrera), RateLimiter
+                       RaceService (carrera), EventService (evento de fin de semana),
+                       PaintService (pinturas), RateLimiter
 src/client/            StarterPlayerScripts.Client: Hud (interfaz) y TruckController (conducción y cámara)
-tests/                 pruebas de Lune de Economy y TrackGen: `lune run tests/run`
+tests/                 pruebas de Lune de Economy, TrackGen y los sistemas nuevos (systems_spec): `lune run tests/run`
 scripts/publish.sh     publica un .rbxl con Open Cloud (curl)
 (.github/workflows/roblox.yml en la raíz del repositorio: flujo de GitHub Actions)
 assets/                icono y miniatura (se suben a mano en la ficha del juego)
@@ -71,6 +76,34 @@ En local (con Rokit): `rokit install`, `lune run tests/run`, `rojo build default
 - **Interfaz sin texto.** Emojis y números (monedas, huevos, mejoras, carrera), botones de 76 px escalados con
   `UIScale` y fuera de la zona del joystick. Sin chat propio, sin enlaces externos, sin datos fuera de Roblox.
 - **Marca Nuvolet Games.** Colores cielo, tinta, nube, sol y hierba; fuente FredokaOne; nubes en el cielo.
+
+## Huevos raros, recompensa diaria, evento y pinturas
+
+Todo se decide en el servidor; el cliente solo ve atributos y pide «pinta/compra esta pintura» (RemoteEvent
+`PaintAction`, validado y con el mismo cubo de fichas). Las reglas son funciones puras de `Economy.luau` con sus
+números en `Config.luau`, probadas con Lune en `tests/systems_spec.luau`.
+
+- **Huevos raros.** Cada huevo que pone un gallinero tira un dado (`Economy.rollRarity`, con `Random` del servidor):
+  🥈 plata (6 %, vale ×3), 🥇 oro (1,5 %, ×8) y 🌈 arcoíris (0,3 %, ×25), en `Config.RarityTiers`. La probabilidad
+  se multiplica por la mejora nueva **🍀 Suerte** (+12 % por nivel, 10 niveles), el pase **2× dinero** (×1,25), el
+  producto **Huevo de oro** (×2 durante 10 minutos, guardado en el perfil en la misma escritura que la compra) y el
+  **evento** (×1,5), con tope ×6 y nunca más de la mitad de huevos raros. La caja de la granja cuenta cada rareza;
+  el camión carga primero los raros; cada huevo se ve distinto (color, metal o neón, destellos) y al entregarlo
+  paga su valor (`Economy.payoutUnits`, mismo cálculo de distancia, carga llena y 2×).
+- **Recompensa diaria.** Al entrar, si cambió el día UTC desde el último cobro (`Economy.dailyStreak`): día
+  siguiente, racha + 1 (hasta 7 y ahí se queda); un día sin entrar, vuelta a 1; mismo día o reloj hacia atrás, nada.
+  Monedas = la mayor de `Config.Daily.rewards[racha]` (50…400) y mejor entrega · 0,25 · racha, para que siga
+  contando cuando el jugador avanza. Se guarda enseguida; con el DataStore caído no se da (no quedaría guardada).
+- **Evento de fin de semana.** De viernes 00:00 a lunes 00:00 UTC (`Economy.isEventActive(os.time())`): huevos
+  raros ×1,5 y, entregando **150 huevos** durante el evento, la pintura limitada 🎉 **Festiva** (neón) para siempre.
+  El progreso es por semana (`Economy.eventWeek`) y vuelve a 0 el siguiente fin de semana. La barra superior muestra
+  la cuenta atrás y el progreso (o el tiempo hasta el próximo evento).
+- **Pinturas.** Botón 🎨: muestras de color con su icono y precio en 🪙 (🟥 de serie, 🟦 y 🟩 600, ⬛ metal 2.500,
+  🟨 oro 12.000, 🎉 solo del evento). Tocar una tuya te la pone (✅); una que no es tuya, la compra si te llega.
+  Pinta capó, cabina y caja del camión al instante y en cada aparición.
+- **Guardado (versión 2 del registro).** El perfil añade `dailyDay`, `streak`, `paints`, `paint`, `eventWeek`,
+  `eventEggs` y `luckUntil`. `reconcile()` rellena los que falten con su valor por defecto, así los perfiles de la
+  versión 1 se migran solos al cargar (mismo DataStore `EggTruckTycoon_v1`, mismo bloqueo de sesión).
 
 ## Pendiente (sesión 3 de ROBLOX.md)
 

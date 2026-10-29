@@ -34,7 +34,7 @@ local function buyLevel(player: Player, def: Config.UpgradeDef)
 		if DataService.trySpend(player, cost) then
 			DataService.setLevel(player, def.id, level + 1)
 			Notify:FireClient(player, { kind = "upgrade", id = def.id, level = level + 1 })
-			if def.id ~= "FarmSpeed" then
+			if def.id ~= "FarmSpeed" and def.id ~= "Luck" then
 				TruckService.refresh(player)
 			end
 		else

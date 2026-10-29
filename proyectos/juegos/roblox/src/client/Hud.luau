@@ -1,6 +1,7 @@
 --!strict
--- Interfaz sin texto: iconos (emoji) y números. Monedas, huevos en la caja, huevos en la granja, carrera,
--- botones grandes (cargar, reiniciar, mejoras, tienda) y avisos breves. Escala con la pantalla (móvil incluido).
+-- Interfaz sin texto: iconos (emoji) y números. Monedas, huevos en la caja, huevos en la granja (y raros), carrera,
+-- evento de fin de semana, botones grandes (cargar, reiniciar, mejoras, pinturas, tienda) y avisos breves.
+-- Escala con la pantalla (móvil incluido).
 -- Todo lo que se muestra sale de atributos que pone el servidor; el cliente solo pide, nunca decide.
 
 local MarketplaceService = game:GetService("MarketplaceService")
@@ -17,6 +18,7 @@ local Remotes = ReplicatedStorage:WaitForChild("Remotes")
 local BuyUpgrade = Remotes:WaitForChild("BuyUpgrade") :: RemoteEvent
 local LoadEggs = Remotes:WaitForChild("LoadEggs") :: RemoteEvent
 local ResetTruck = Remotes:WaitForChild("ResetTruck") :: RemoteEvent
+local PaintAction = Remotes:WaitForChild("PaintAction") :: RemoteEvent
 local Notify = Remotes:WaitForChild("Notify") :: RemoteEvent
 
 local player = Players.LocalPlayer
@@ -129,6 +131,17 @@ local function clock(seconds: number): string
 	return string.format("%d:%02d", math.floor(s / 60), s % 60)
 end
 
+-- Cuenta atrás larga (horas:minutos:segundos) para el evento de fin de semana.
+local function longClock(seconds: number): string
+	local s = math.max(0, math.floor(seconds))
+	return string.format("%d:%02d:%02d", math.floor(s / 3600), math.floor(s / 60) % 60, s % 60)
+end
+
+local function rarityIcon(tier: any): string
+	local def = if type(tier) == "number" then Config.RarityTiers[tier] else nil
+	return if def then def.icon else "✨"
+end
+
 function Hud.start()
 	local gui = Instance.new("ScreenGui")
 	gui.Name = "EggTruckHud"
@@ -154,7 +167,7 @@ function Hud.start()
 	local top = Instance.new("Frame")
 	top.AnchorPoint = Vector2.new(0.5, 0)
 	top.Position = UDim2.new(0.5, 0, 0, 6)
-	top.Size = UDim2.fromOffset(660, 52)
+	top.Size = UDim2.fromOffset(880, 52)
 	top.BackgroundTransparency = 1
 	top.Parent = gui
 	list(top, Enum.FillDirection.Horizontal, 8)
@@ -163,6 +176,8 @@ function Hud.start()
 	local farmLabel = pill(top, 3)
 	local raceLabel, raceFrame = pill(top, 4)
 	raceFrame.Size = UDim2.fromOffset(180, 48)
+	local eventLabel, eventFrame = pill(top, 5)
+	eventFrame.Size = UDim2.fromOffset(210, 48)
 
 	-- aviso
 	local toast = text(gui, "", UDim2.fromOffset(560, 54), UDim2.new(0.5, -280, 0, 66))
@@ -194,15 +209,17 @@ function Hud.start()
 	local actions = Instance.new("Frame")
 	actions.AnchorPoint = Vector2.new(1, 0.5)
 	actions.Position = UDim2.new(1, -10, 0.45, 0)
-	actions.Size = UDim2.fromOffset(84, 340)
+	actions.Size = UDim2.fromOffset(84, 430)
 	actions.BackgroundTransparency = 1
 	actions.Parent = gui
 	list(actions, Enum.FillDirection.Vertical, 10)
 	local loadButton = button(actions, "🥚⬆", UDim2.fromOffset(76, 76), C.grass)
 	local resetButton = button(actions, "🔄", UDim2.fromOffset(76, 76), C.sky)
 	local upgradesButton = button(actions, "⬆️", UDim2.fromOffset(76, 76), C.sun)
+	local paintButton = button(actions, "🎨", UDim2.fromOffset(76, 76), C.grass)
 	local shopButton = button(actions, "🛒", UDim2.fromOffset(76, 76), C.red)
-	loadButton.LayoutOrder, resetButton.LayoutOrder, upgradesButton.LayoutOrder, shopButton.LayoutOrder = 1, 2, 3, 4
+	loadButton.LayoutOrder, resetButton.LayoutOrder, upgradesButton.LayoutOrder = 1, 2, 3
+	paintButton.LayoutOrder, shopButton.LayoutOrder = 4, 5
 
 	loadButton.Activated:Connect(function()
 		LoadEggs:FireServer()
@@ -212,7 +229,7 @@ function Hud.start()
 	end)
 
 	-- panel de mejoras
-	local upgrades, upgradeCards = panel(gui, 600, 210)
+	local upgrades, upgradeCards = panel(gui, 744, 210)
 	type Card = { id: string, levelLabel: TextLabel, priceLabel: TextLabel, button: TextButton }
 	local cards: { Card } = {}
 	for i, id in Config.UpgradeOrder do
@@ -272,14 +289,55 @@ function Hud.start()
 	end
 	shopButton.Visible = #offers > 0
 
+	-- pinturas del camión: muestra de color, icono y precio (🪙), ✅ si es la puesta, 🎉 meta del evento
+	local paints, paintCards = panel(gui, 700, 210)
+	type PaintCard = { id: string, statusLabel: TextLabel, button: TextButton }
+	local paintList: { PaintCard } = {}
+	for i, id in Config.PaintOrder do
+		local def = Config.Paints[id]
+		local card = button(paintCards, "", UDim2.fromOffset(100, 186), C.grey)
+		card.LayoutOrder = i
+		local swatch = Instance.new("Frame")
+		swatch.Size = UDim2.new(1, -24, 0.34, 0)
+		swatch.Position = UDim2.new(0, 12, 0.08, 0)
+		swatch.BackgroundColor3 = Color3.fromRGB(def.rgb[1], def.rgb[2], def.rgb[3])
+		round(swatch, 12)
+		outline(swatch)
+		swatch.Parent = card
+		text(card, def.icon, UDim2.new(1, -12, 0.2, 0), UDim2.new(0, 6, 0.46, 0))
+		local statusLabel = text(card, "", UDim2.new(1, -10, 0.22, 0), UDim2.new(0, 5, 0.7, 0))
+		card.Activated:Connect(function()
+			PaintAction:FireServer(id)
+		end)
+		table.insert(paintList, { id = id, statusLabel = statusLabel, button = card })
+	end
+
+	local panels = { upgrades, shop, paints }
+	local function toggle(target: Frame)
+		local open = not target.Visible
+		for _, frame in panels do
+			frame.Visible = false
+		end
+		target.Visible = open
+	end
 	upgradesButton.Activated:Connect(function()
-		upgrades.Visible = not upgrades.Visible
-		shop.Visible = false
+		toggle(upgrades)
 	end)
 	shopButton.Activated:Connect(function()
-		shop.Visible = not shop.Visible
-		upgrades.Visible = false
+		toggle(shop)
 	end)
+	paintButton.Activated:Connect(function()
+		toggle(paints)
+	end)
+
+	local function eventEggs(): number
+		local week = Workspace:GetAttribute("EventWeek")
+		return if player:GetAttribute("EventWeek") == week then attr("EventEggs") else 0
+	end
+	local function eventGoal(): number
+		local goal = Workspace:GetAttribute("EventGoal")
+		return if type(goal) == "number" then goal else Config.Event.eggsGoal
+	end
 
 	-- refresco desde los atributos del servidor
 	local lastBroken = 0
@@ -287,7 +345,14 @@ function Hud.start()
 		local coins = attr("Coins")
 		coinsLabel.Text = "🪙 " .. Economy.short(coins)
 		bedLabel.Text = string.format("🚚 🥚%d/%d", attr("EggsInBed"), attr("Capacity"))
-		farmLabel.Text = string.format("🐔 🥚%d/%d", attr("FarmStored"), attr("FarmCapacity"))
+		local farmText = string.format("🐔 🥚%d/%d", attr("FarmStored"), attr("FarmCapacity"))
+		if attr("FarmRare") > 0 then
+			farmText ..= string.format(" ✨%d", attr("FarmRare"))
+		end
+		if attr("LuckUntil") > Workspace:GetServerTimeNow() then
+			farmText ..= " 🍀"
+		end
+		farmLabel.Text = farmText
 		for _, card in cards do
 			local def = (Config.Upgrades :: any)[card.id] :: Config.UpgradeDef
 			local level = attr("Lvl_" .. card.id)
@@ -299,6 +364,24 @@ function Hud.start()
 			else
 				card.priceLabel.Text = "🪙 " .. Economy.short(cost)
 				card.button.BackgroundColor3 = if coins >= cost then C.grass else C.grey
+			end
+		end
+		local equipped = player:GetAttribute("PaintEquipped")
+		for _, paintCard in paintList do
+			local def = Config.Paints[paintCard.id]
+			local owned = player:GetAttribute("Paint_" .. paintCard.id) == true
+			if equipped == paintCard.id then
+				paintCard.statusLabel.Text = "✅"
+				paintCard.button.BackgroundColor3 = C.sky
+			elseif owned then
+				paintCard.statusLabel.Text = "🎨"
+				paintCard.button.BackgroundColor3 = C.grass
+			elseif def.event then
+				paintCard.statusLabel.Text = string.format("🥚%d/%d", math.min(eventEggs(), eventGoal()), eventGoal())
+				paintCard.button.BackgroundColor3 = C.grey
+			else
+				paintCard.statusLabel.Text = "🪙 " .. Economy.short(def.cost)
+				paintCard.button.BackgroundColor3 = if coins >= def.cost then C.sun else C.grey
 			end
 		end
 		for _, offer in offers do
@@ -328,6 +411,20 @@ function Hud.start()
 				raceLabel.Text = "🏁 ⏳ " .. clock(remaining)
 				raceLabel.TextColor3 = C.cloud
 			end
+			-- evento de fin de semana: tiempo que queda y huevos hacia la pintura (o tiempo hasta que empiece)
+			local now = Workspace:GetServerTimeNow()
+			local startsAt = Workspace:GetAttribute("EventStartsAt")
+			local endsAt = Workspace:GetAttribute("EventEndsAt")
+			if Workspace:GetAttribute("EventActive") == true and type(endsAt) == "number" then
+				local prize = if player:GetAttribute("Paint_" .. Config.Event.paint) == true
+					then "✅"
+					else string.format("🥚%d/%d", math.min(eventEggs(), eventGoal()), eventGoal())
+				eventLabel.Text = string.format("🎉 %s %s", longClock(endsAt - now), prize)
+				eventLabel.TextColor3 = C.sun
+			elseif type(startsAt) == "number" then
+				eventLabel.Text = "🎉 ⏳ " .. longClock(startsAt - now)
+				eventLabel.TextColor3 = C.cloud
+			end
 			task.wait(0.25)
 		end
 	end)
@@ -340,15 +437,35 @@ function Hud.start()
 		local kind = payload.kind
 		if kind == "delivery" then
 			local coins = tonumber(payload.coins) or 0
+			local rare = tonumber(payload.rare) or 0
 			show(
 				string.format(
-					"🏪 +%s 🪙   🥚%d  💥%d",
+					"🏪 +%s 🪙   🥚%d  💥%d%s",
 					Economy.short(coins),
 					payload.intact or 0,
-					payload.broken or 0
+					payload.broken or 0,
+					if rare > 0 then string.format("  ✨%d", rare) else ""
 				),
 				C.sun
 			)
+		elseif kind == "rare_egg" then
+			show(rarityIcon(payload.tier) .. "🥚 ✨", C.sun)
+		elseif kind == "daily" then
+			show(
+				string.format(
+					"📅 🔥%d  +%s 🪙",
+					tonumber(payload.streak) or 1,
+					Economy.short(tonumber(payload.coins) or 0)
+				),
+				C.sun
+			)
+		elseif kind == "paint" then
+			local def = if type(payload.id) == "string" then Config.Paints[payload.id] else nil
+			show((if def then def.icon else "🎨") .. " 🚚 ✅", C.grass)
+		elseif kind == "event_locked" then
+			show("🎉 🔒 🥚", C.sky)
+		elseif kind == "event_paint" then
+			show("🎉 🏆 " .. Config.Paints[Config.Event.paint].icon .. " 🚚", C.sun)
 		elseif kind == "loaded" then
 			show(string.format("🥚 +%d 🚚", payload.n or 0), C.grass)
 		elseif kind == "nomoney" then
@@ -367,7 +484,7 @@ function Hud.start()
 		elseif kind == "repaired" then
 			show(string.format("🔧 🥚%d", payload.n or 0), C.grass)
 		elseif kind == "golden" then
-			show(string.format("🌟 +%s 🪙", Economy.short(tonumber(payload.coins) or 0)), C.sun)
+			show(string.format("🌟 +%s 🪙  🍀", Economy.short(tonumber(payload.coins) or 0)), C.sun)
 		elseif kind == "race_start" then
 			show("🏁 🥚🥚🥚 " .. clock(tonumber(payload.duration) or 0), C.sun)
 		elseif kind == "race_end" then

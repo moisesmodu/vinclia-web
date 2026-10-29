@@ -3,7 +3,8 @@
 -- entrega en el mercado. Todo lo que da monedas se decide aquí, en el servidor:
 -- * los huevos solo los crea el servidor (nunca más que la capacidad ni más que los que había en la granja);
 -- * la entrega cuenta los huevos que el servidor ve dentro de la caja al llegar al mercado;
--- * un viaje más rápido de lo físicamente posible no cobra.
+-- * un viaje más rápido de lo físicamente posible no cobra;
+-- * cada huevo lleva su rareza (0 = normal, i = Config.RarityTiers[i]) y paga su valor al entregarlo.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -13,6 +14,7 @@ local Workspace = game:GetService("Workspace")
 local Config = require(ReplicatedStorage.Shared.Config)
 local Economy = require(ReplicatedStorage.Shared.Economy)
 local DataService = require(script.Parent.DataService)
+local EventService = require(script.Parent.EventService)
 local FarmService = require(script.Parent.FarmService)
 local PlotService = require(script.Parent.PlotService)
 local RaceService = require(script.Parent.RaceService)
@@ -21,7 +23,7 @@ local WorldBuilder = require(script.Parent.WorldBuilder)
 
 local Notify = ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Notify") :: RemoteEvent
 
-type EggInfo = { spawnedAt: number }
+type EggInfo = { spawnedAt: number, tier: number }
 
 type TruckState = {
 	player: Player,
@@ -49,9 +51,45 @@ local trucksFolder = Instance.new("Folder")
 trucksFolder.Name = "Trucks"
 trucksFolder.Parent = Workspace
 
-local TRUCK_RED = WorldBuilder.Colors.red
 local YOLK = Color3.fromRGB(255, 201, 77)
 local SHELL = Color3.fromRGB(255, 248, 231)
+
+-- Aspecto de la pintura puesta del jugador (la de serie si algo no cuadra).
+local function paintStyle(player: Player): (Color3, Enum.Material)
+	local def = Config.Paints[DataService.getPaint(player)] or Config.Paints[Config.DefaultPaint]
+	local material = Enum.Material.SmoothPlastic
+	if def.material == "Metal" then
+		material = Enum.Material.Metal
+	elseif def.material == "Neon" then
+		material = Enum.Material.Neon
+	end
+	return Color3.fromRGB(def.rgb[1], def.rgb[2], def.rgb[3]), material
+end
+
+-- Valor de un huevo al entregarlo (1 = normal).
+local function eggValue(tier: number): number
+	local def = Config.RarityTiers[tier]
+	return if def then def.value else 1
+end
+
+-- Viste el huevo según su rareza: color, material y destellos.
+local function styleEgg(egg: Part, tier: number)
+	local def = Config.RarityTiers[tier]
+	if def then
+		egg.Color = Color3.fromRGB(def.rgb[1], def.rgb[2], def.rgb[3])
+		if def.material == "Foil" then
+			egg.Material = Enum.Material.Foil
+		elseif def.material == "Neon" then
+			egg.Material = Enum.Material.Neon
+		end
+		if def.sparkle then
+			local sparkles = Instance.new("Sparkles")
+			sparkles.SparkleColor = egg.Color
+			sparkles.Parent = egg
+		end
+		egg:SetAttribute("Rarity", def.id)
+	end
+end
 
 local function notify(player: Player, payload: { [string]: any })
 	Notify:FireClient(player, payload)
@@ -145,10 +183,11 @@ local function slotPosition(state: TruckState, slot: number): Vector3
 	return Vector3.new(x, y, z)
 end
 
-local function spawnEggs(state: TruckState, count: number)
+-- Crea un huevo físico por cada rareza de `tiers` (hasta llenar la caja).
+local function spawnEggs(state: TruckState, tiers: { number })
 	local e = Config.Egg
 	local chassis = state.parts.chassis
-	for _ = 1, count do
+	for _, tier in tiers do
 		if state.eggCount >= state.capacity then
 			break
 		end
@@ -162,10 +201,11 @@ local function spawnEggs(state: TruckState, count: number)
 		local mesh = Instance.new("SpecialMesh")
 		mesh.MeshType = Enum.MeshType.Sphere -- se escala con la pieza: elipsoide con forma de huevo
 		mesh.Parent = egg
+		styleEgg(egg, tier)
 		egg.CFrame = chassis.CFrame * CFrame.new(slotPosition(state, state.eggCount))
 		egg:AddTag("Egg")
 
-		state.eggs[egg] = { spawnedAt = os.clock() }
+		state.eggs[egg] = { spawnedAt = os.clock(), tier = tier }
 		state.eggCount += 1
 
 		egg.Touched:Connect(function(other: BasePart)
@@ -220,7 +260,7 @@ end
 
 type SpawnOptions = {
 	at: CFrame?,
-	eggs: number?,
+	eggs: { number }?, -- rareza de cada huevo con el que aparece
 	loaded: number?,
 	leftPadAt: number?,
 	seat: boolean?,
@@ -239,10 +279,12 @@ local function buildTruck(player: Player, plot: PlotService.Plot, options: Spawn
 	local suspensionLevel = DataService.getLevel(player, "Suspension")
 	local damping, travel = Economy.suspension(suspensionLevel, Config.Truck)
 
+	local color, material = paintStyle(player)
 	local parts = TruckBuilder.build({
 		big = hasBig,
 		wallHeight = Economy.wallHeight(wallLevel, Config.Truck),
-		color = TRUCK_RED,
+		color = color,
+		material = material,
 	})
 	parts.model.Name = "Truck_" .. player.UserId
 	parts.model:SetAttribute("OwnerUserId", player.UserId)
@@ -287,8 +329,9 @@ local function buildTruck(player: Player, plot: PlotService.Plot, options: Spawn
 	)
 
 	setOwner(state, player)
-	if options.eggs and options.eggs > 0 then
-		spawnEggs(state, options.eggs)
+	local startEggs = options.eggs
+	if startEggs then
+		spawnEggs(state, startEggs)
 	end
 	updateAttributes(state)
 	if options.seat then
@@ -319,13 +362,23 @@ local function deliver(state: TruckState, w: WorldBuilder.World)
 	state.busy = true
 	local player = state.player
 
-	local intact = 0
-	for egg in state.eggs do
+	local values: { number } = {}
+	for egg, info in state.eggs do
 		if insideBed(state, egg.Position, 0.5) then
-			intact += 1
+			table.insert(values, eggValue(info.tier))
 		end
 	end
-	intact = math.min(intact, state.loaded, state.capacity)
+	local intact = math.min(#values, state.loaded, state.capacity)
+	-- si hubiera que recortar, cuentan los de menos valor
+	table.sort(values)
+	local units = 0
+	local rare = 0
+	for i = 1, intact do
+		units += values[i]
+		if values[i] > 1 then
+			rare += 1
+		end
+	end
 
 	local coins = 0
 	local elapsed = if state.leftPadAt then os.clock() - state.leftPadAt else 0
@@ -334,17 +387,19 @@ local function deliver(state: TruckState, w: WorldBuilder.World)
 			local multiplier = if player:GetAttribute("Pass_DoubleCash") == true
 				then Config.Payout.doubleCashMultiplier
 				else 1
-			coins = Economy.payout(intact, state.capacity, w.track.length, Config.Payout, multiplier)
+			coins = Economy.payoutUnits(units, intact, state.capacity, w.track.length, Config.Payout, multiplier)
 			DataService.addCoins(player, coins)
 			DataService.recordDelivery(player, intact, coins)
 			RaceService.recordDelivery(player, intact)
+			EventService.recordDelivery(player, intact)
 		else
 			warn(string.format("[TruckService] viaje de %d demasiado rápido (%.1fs)", player.UserId, elapsed))
 			intact = 0
+			rare = 0
 		end
 	end
 
-	notify(player, { kind = "delivery", coins = coins, intact = intact, broken = state.broken })
+	notify(player, { kind = "delivery", coins = coins, intact = intact, broken = state.broken, rare = rare })
 	clearEggs(state)
 
 	task.delay(1.5, function()
@@ -379,14 +434,14 @@ function TruckService.loadEggs(player: Player)
 		return
 	end
 	local taken = FarmService.take(player, space)
-	if taken <= 0 then
+	if #taken <= 0 then
 		notify(player, { kind = "farm_empty" })
 		return
 	end
 	spawnEggs(state, taken)
-	state.loaded += taken
+	state.loaded += #taken
 	state.leftPadAt = nil -- el viaje empieza al salir de la parcela
-	notify(player, { kind = "loaded", n = taken })
+	notify(player, { kind = "loaded", n = #taken })
 end
 
 -- Vuelve a la plataforma. Los huevos intactos que siguen en la caja vuelven a la granja.
@@ -401,10 +456,10 @@ function TruckService.reset(player: Player)
 		return
 	end
 	if state then
-		local intact = 0
-		for egg in state.eggs do
+		local intact: { number } = {}
+		for egg, info in state.eggs do
 			if insideBed(state, egg.Position, 0.5) then
-				intact += 1
+				table.insert(intact, info.tier)
 			end
 		end
 		FarmService.give(player, intact)
@@ -424,10 +479,24 @@ function TruckService.instantRepair(player: Player): boolean
 		local position = chassis.Position + Vector3.new(0, 4, 0)
 		at = CFrame.lookAt(position, position + Vector3.new(1, 0, 0))
 	end
+	-- los huevos que quedan conservan su rareza; los rotos vuelven como normales
 	local restore = math.min(state.capacity, state.eggCount + state.broken)
+	local tiers: { number } = {}
+	for _, info in state.eggs do
+		table.insert(tiers, info.tier)
+	end
+	table.sort(tiers, function(a, b)
+		return a > b
+	end)
+	while #tiers < restore do
+		table.insert(tiers, 0)
+	end
+	while #tiers > restore do
+		table.remove(tiers)
+	end
 	spawnTruck(player, {
 		at = at,
-		eggs = restore,
+		eggs = tiers,
 		loaded = math.max(state.loaded, restore),
 		leftPadAt = state.leftPadAt,
 		seat = true,
@@ -460,6 +529,15 @@ function TruckService.refresh(player: Player)
 		at = CFrame.lookAt(position, position + Vector3.new(1, 0, 0))
 	end
 	spawnTruck(player, { at = at, seat = seated, leftPadAt = state.leftPadAt })
+end
+
+-- Pinta el camión actual con la pintura puesta del jugador (los camiones nuevos ya salen pintados).
+function TruckService.applyPaint(player: Player)
+	local state = trucks[player]
+	if state then
+		local color, material = paintStyle(player)
+		TruckBuilder.applyPaint(state.parts, color, material)
+	end
 end
 
 function TruckService.cleanup(player: Player)

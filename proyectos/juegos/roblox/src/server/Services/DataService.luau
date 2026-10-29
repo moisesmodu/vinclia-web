@@ -5,12 +5,16 @@
 -- * Reintentos con espera creciente y respeto del presupuesto de peticiones.
 -- * Guardado automático, al salir y al cerrar el servidor (BindToClose desde Main).
 -- * commitPurchase: registra el PurchaseId en el DataStore en la misma escritura que concede la compra.
+-- * Versión 2 del registro: recompensa diaria (día y racha), pinturas (compradas y puesta), progreso del evento de
+--   fin de semana e impulso de huevos raros. reconcile() rellena con valores por defecto lo que falte en registros
+--   de la versión 1, así los perfiles existentes se migran solos al cargarlos.
 
 local DataStoreService = game:GetService("DataStoreService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Config = require(ReplicatedStorage.Shared.Config)
+local Economy = require(ReplicatedStorage.Shared.Economy)
 
 export type PlayerData = {
 	coins: number,
@@ -18,6 +22,13 @@ export type PlayerData = {
 	delivered: number,
 	upgrades: { [string]: number },
 	receipts: { [string]: number }, -- PurchaseId → os.time() de la concesión
+	dailyDay: number, -- día UTC (Economy.utcDay) del último cobro de la recompensa diaria; 0 = nunca
+	streak: number, -- días seguidos cobrando (1..#Config.Daily.rewards)
+	paints: { [string]: boolean }, -- pinturas del camión que son tuyas
+	paint: string, -- pintura puesta
+	eventWeek: number, -- semana (Economy.eventWeek) del progreso del evento
+	eventEggs: number, -- huevos entregados durante el evento de esa semana
+	luckUntil: number, -- os.time() hasta el que dura el impulso de huevos raros del Huevo de oro
 }
 
 export type Session = {
@@ -33,7 +44,7 @@ export type Session = {
 
 export type CommitResult = "granted" | "already" | "failed"
 
-local RECORD_VERSION = 1
+local RECORD_VERSION = 2
 
 local DataService = {}
 
@@ -52,7 +63,20 @@ local function defaultData(): PlayerData
 	for _, id in Config.UpgradeOrder do
 		upgrades[id] = 0
 	end
-	return { coins = 0, best = 0, delivered = 0, upgrades = upgrades, receipts = {} }
+	return {
+		coins = 0,
+		best = 0,
+		delivered = 0,
+		upgrades = upgrades,
+		receipts = {},
+		dailyDay = 0,
+		streak = 0,
+		paints = { [Config.DefaultPaint] = true },
+		paint = Config.DefaultPaint,
+		eventWeek = 0,
+		eventEggs = 0,
+		luckUntil = 0,
+	}
 end
 
 local function toNumber(value: any, fallback: number): number
@@ -85,6 +109,22 @@ local function reconcile(raw: any): PlayerData
 			end
 		end
 	end
+	-- versión 2 (los registros de la versión 1 no traen estos campos y se quedan con el valor por defecto)
+	data.dailyDay = math.max(0, math.floor(toNumber(raw.dailyDay, 0)))
+	data.streak = math.clamp(math.floor(toNumber(raw.streak, 0)), 0, #Config.Daily.rewards)
+	if type(raw.paints) == "table" then
+		for _, id in Config.PaintOrder do
+			if raw.paints[id] == true then
+				data.paints[id] = true
+			end
+		end
+	end
+	if type(raw.paint) == "string" and data.paints[raw.paint] == true then
+		data.paint = raw.paint
+	end
+	data.eventWeek = math.max(0, math.floor(toNumber(raw.eventWeek, 0)))
+	data.eventEggs = math.max(0, math.floor(toNumber(raw.eventEggs, 0)))
+	data.luckUntil = math.max(0, toNumber(raw.luckUntil, 0))
 	return data
 end
 
@@ -95,6 +135,13 @@ local function copyData(data: PlayerData): PlayerData
 		delivered = data.delivered,
 		upgrades = table.clone(data.upgrades),
 		receipts = table.clone(data.receipts),
+		dailyDay = data.dailyDay,
+		streak = data.streak,
+		paints = table.clone(data.paints),
+		paint = data.paint,
+		eventWeek = data.eventWeek,
+		eventEggs = data.eventEggs,
+		luckUntil = data.luckUntil,
 	}
 end
 
@@ -149,6 +196,14 @@ local function refresh(session: Session)
 	for _, id in Config.UpgradeOrder do
 		player:SetAttribute("Lvl_" .. id, data.upgrades[id] or 0)
 	end
+	for _, id in Config.PaintOrder do
+		player:SetAttribute("Paint_" .. id, data.paints[id] == true)
+	end
+	player:SetAttribute("PaintEquipped", data.paint)
+	player:SetAttribute("Streak", data.streak)
+	player:SetAttribute("LuckUntil", data.luckUntil)
+	player:SetAttribute("EventWeek", data.eventWeek)
+	player:SetAttribute("EventEggs", data.eventEggs)
 end
 
 -- Escribe los datos de la sesión en `activeStore`, con reintentos. Debe llamarse con session.busy tomado.
@@ -339,6 +394,67 @@ function DataService.setLevel(player: Player, id: string, level: number)
 	end
 end
 
+-- PINTURAS
+
+function DataService.getPaint(player: Player): string
+	local session = DataService.get(player)
+	if session then
+		return session.data.paint
+	end
+	return Config.DefaultPaint
+end
+
+function DataService.ownsPaint(player: Player, id: string): boolean
+	local session = DataService.get(player)
+	return session ~= nil and session.data.paints[id] == true
+end
+
+-- Da la pintura `id` (ya validada) al jugador. Devuelve si es nueva.
+function DataService.grantPaint(player: Player, id: string): boolean
+	local session = DataService.get(player)
+	if session and session.data.paints[id] ~= true then
+		session.data.paints[id] = true
+		refresh(session)
+		return true
+	end
+	return false
+end
+
+-- Se pone la pintura `id` si es suya.
+function DataService.setPaint(player: Player, id: string): boolean
+	local session = DataService.get(player)
+	if session and session.data.paints[id] == true then
+		session.data.paint = id
+		refresh(session)
+		return true
+	end
+	return false
+end
+
+-- EVENTO E IMPULSO DE HUEVOS RAROS
+
+-- Suma `eggs` al progreso del evento de la semana `week`. Devuelve (huevos de esta semana, ¿meta alcanzada ahora?).
+function DataService.addEventEggs(player: Player, week: number, eggs: number, goal: number): (number, boolean)
+	local session = DataService.get(player)
+	if session then
+		local data = session.data
+		local total, reached = Economy.eventProgress(data.eventWeek, data.eventEggs, week, eggs, goal)
+		data.eventWeek = week
+		data.eventEggs = total
+		refresh(session)
+		return total, reached
+	end
+	return 0, false
+end
+
+function DataService.getLuckUntil(player: Player): number
+	local session = DataService.get(player)
+	if session then
+		return session.data.luckUntil
+	end
+	return 0
+end
+
 function DataService.save(player: Player): boolean
 	local session = DataService.get(player)
 	if session then
@@ -348,6 +464,29 @@ function DataService.save(player: Player): boolean
 		return ok
 	end
 	return false
+end
+
+-- Recompensa diaria: si cambió el día UTC desde el último cobro, suma las monedas de la racha y guarda enseguida.
+-- Devuelve (monedas, racha); 0 monedas si hoy ya se cobró o si no se puede guardar (DataStore caído: no se regala
+-- nada que luego no quede guardado).
+function DataService.claimDaily(player: Player, now: number): (number, number)
+	local session = DataService.get(player)
+	if session and session.canSave then
+		local data = session.data
+		local today = Economy.utcDay(now)
+		local canClaim, streak = Economy.dailyStreak(data.dailyDay, data.streak, today, #Config.Daily.rewards)
+		if canClaim then
+			local coins = Economy.dailyCoins(streak, data.best, Config.Daily)
+			data.dailyDay = today
+			data.streak = streak
+			data.coins += coins
+			refresh(session)
+			task.spawn(DataService.save, player)
+			return coins, streak
+		end
+		return 0, data.streak
+	end
+	return 0, 0
 end
 
 local function commitLocked(

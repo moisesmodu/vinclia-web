@@ -17,6 +17,7 @@ export type TruckOptions = {
 	big: boolean,
 	wallHeight: number,
 	color: Color3,
+	material: Enum.Material, -- de la pintura (capó, cabina y caja)
 }
 
 export type TruckParts = {
@@ -25,6 +26,7 @@ export type TruckParts = {
 	seat: VehicleSeat,
 	eggsFolder: Folder,
 	springs: { SpringConstraint },
+	paintParts: { BasePart }, -- piezas que llevan la pintura elegida
 	prismatics: { PrismaticConstraint },
 	-- caja, en coordenadas locales del chasis
 	bedFloorY: number,
@@ -100,7 +102,14 @@ function TruckBuilder.build(options: TruckOptions): TruckParts
 	end
 
 	-- cabina abierta: capó, parabrisas, asiento y pared trasera (el avatar se ve conduciendo)
-	body("Hood", Vector3.new(6, 1.6, 2.6), Vector3.new(0, 1.3, -4.7), options.color)
+	local paintParts: { BasePart } = {}
+	local function painted(p: Part): Part
+		p.Material = options.material
+		table.insert(paintParts, p)
+		return p
+	end
+
+	painted(body("Hood", Vector3.new(6, 1.6, 2.6), Vector3.new(0, 1.3, -4.7), options.color))
 	local glass =
 		body("Windshield", Vector3.new(5.6, 1.4, 0.2), Vector3.new(0, 2.8, -3.3), Color3.fromRGB(180, 225, 255))
 	glass.Transparency = 0.45
@@ -134,20 +143,24 @@ function TruckBuilder.build(options: TruckOptions): TruckParts
 	local floor = body("BedFloor", Vector3.new(6, 0.3, bedLength), Vector3.new(0, floorTop - 0.15, bedCenterZ), wood)
 	floor.CustomPhysicalProperties = PhysicalProperties.new(0.3, 1.2, 0, 1, 1)
 	local cabWall = math.max(2.2, wallHeight + 0.3)
-	body("CabWall", Vector3.new(6, cabWall, 0.4), Vector3.new(0, 0.5 + cabWall / 2, -0.8), options.color)
+	painted(body("CabWall", Vector3.new(6, cabWall, 0.4), Vector3.new(0, 0.5 + cabWall / 2, -0.8), options.color))
 	for _, side in { -1, 1 } do
-		body(
-			"BedWall",
-			Vector3.new(0.3, wallHeight, bedLength),
-			Vector3.new(side * 2.85, floorTop + wallHeight / 2, bedCenterZ),
-			options.color
+		painted(
+			body(
+				"BedWall",
+				Vector3.new(0.3, wallHeight, bedLength),
+				Vector3.new(side * 2.85, floorTop + wallHeight / 2, bedCenterZ),
+				options.color
+			)
 		)
 	end
-	body(
-		"Tailgate",
-		Vector3.new(6, wallHeight, 0.3),
-		Vector3.new(0, floorTop + wallHeight / 2, bedMaxZ - 0.15),
-		options.color
+	painted(
+		body(
+			"Tailgate",
+			Vector3.new(6, wallHeight, 0.3),
+			Vector3.new(0, floorTop + wallHeight / 2, bedMaxZ - 0.15),
+			options.color
+		)
 	)
 
 	local eggsFolder = Instance.new("Folder")
@@ -253,6 +266,7 @@ function TruckBuilder.build(options: TruckOptions): TruckParts
 		seat = seat,
 		eggsFolder = eggsFolder,
 		springs = springs,
+		paintParts = paintParts,
 		prismatics = prismatics,
 		bedFloorY = floorTop,
 		bedHalfX = 2.7,
@@ -260,6 +274,14 @@ function TruckBuilder.build(options: TruckOptions): TruckParts
 		bedMaxZ = bedMaxZ - 0.3 - chassisZ,
 		wallHeight = wallHeight,
 	}
+end
+
+-- Cambia la pintura de un camión ya construido (al equipar otra desde la interfaz).
+function TruckBuilder.applyPaint(parts: TruckParts, color: Color3, material: Enum.Material)
+	for _, part in parts.paintParts do
+		part.Color = color
+		part.Material = material
+	end
 end
 
 -- Ajusta muelles y amortiguadores a la masa real del camión (+ conductor) para que repose a media carrera.

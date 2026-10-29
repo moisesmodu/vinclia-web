@@ -1,5 +1,7 @@
 --!strict
 -- Pases (2× dinero, camión grande, segunda granja) y productos de desarrollador (huevo de oro, reparación).
+-- El pase 2× también hace algo más probables los huevos raros, y el Huevo de oro da además un impulso de rareza
+-- de Config.GoldenEgg.luckSeconds (FarmService lo lee de los datos guardados).
 -- * Un ID a 0 en Config está apagado: no se consulta ni se concede nada.
 -- * ProcessReceipt es idempotente: el PurchaseId se guarda en el DataStore en la misma escritura que la compra
 --   (DataService.commitPurchase) y solo entonces se devuelve PurchaseGranted. Si algo falla, NotProcessedYet y
@@ -80,15 +82,20 @@ local function grantProduct(
 	local effect: () -> () = function() end
 
 	if productName == "GoldenEgg" then
+		-- monedas al instante y un rato de huevos raros más probables (se guarda en la misma escritura)
 		local amount = Economy.goldenEggValue(session.data.best, Config.GoldenEgg)
+		local previousLuck = session.data.luckUntil
+		local luckUntil = math.max(os.time(), previousLuck) + Config.GoldenEgg.luckSeconds
 		mutate = function(data)
 			data.coins += amount
+			data.luckUntil = luckUntil
 		end
 		revert = function(data)
 			data.coins = math.max(0, data.coins - amount)
+			data.luckUntil = previousLuck
 		end
 		effect = function()
-			Notify:FireClient(player, { kind = "golden", coins = amount })
+			Notify:FireClient(player, { kind = "golden", coins = amount, luckUntil = luckUntil })
 		end
 	elseif productName == "InstantRepair" then
 		effect = function()

@@ -49,6 +49,10 @@ primera vez; después cada fusión en `main` publica sola en el place de pruebas
 2. **Monetization → Developer Products → Create**: **Golden Egg** (≈ 25 R$) e **Instant Repair** (≈ 15 R$).
 3. Copia cada ID en `src/shared/Config.luau` (`Config.GamePasses` y `Config.Products`) y abre un PR: la CI publica
    en pruebas al fusionar. Con 0, la función sigue apagada.
+4. Descripciones para la ficha de cada uno: **2× Cash** también hace un poco más probables los huevos raros (×1,25);
+   **Golden Egg** da monedas al instante **y 10 minutos de huevos raros ×2**. No hay que crear nada más: la
+   recompensa diaria, el evento de fin de semana y las pinturas se pagan con monedas del juego y no necesitan
+   productos nuevos ni ajustes en el panel (el perfil guardado se migra solo).
 
 ## 6. Ficha y madurez
 1. **Places → producción → Configure → Basic info**: descripción (desde `fichas/` cuando exista), icono

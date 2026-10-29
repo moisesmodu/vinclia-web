@@ -12,6 +12,7 @@
         "BuyUpgrade": { "$className": "RemoteEvent" },
         "LoadEggs": { "$className": "RemoteEvent" },
         "ResetTruck": { "$className": "RemoteEvent" },
+        "PaintAction": { "$className": "RemoteEvent" },
         "Notify": { "$className": "RemoteEvent" }
       }
     },
