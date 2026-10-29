@@ -124,8 +124,16 @@
   {
     "slug": "lane-dash",
     "titulo": "Lane Dash",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Corredor infinito de 3 carriles en pseudo-3D (deslizar para cambiar de carril, saltar y agacharse) con carrito de supermercado",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Swipe to dodge! Race your shopping cart down endless supermarket aisles, grab coins and deals, and don't crash!",
+    "etiquetas": [
+      "runner-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
   }
 ]
