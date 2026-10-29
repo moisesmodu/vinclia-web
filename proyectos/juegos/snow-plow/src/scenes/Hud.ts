@@ -2,10 +2,11 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, pulse, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import type { Play } from './Play';
 
-type OverInfo = { gifts: number; best: number; newBest: boolean; dist: number; canRevive: boolean };
+type OverInfo = { gifts: number; best: number; newBest: boolean; dist: number; canRevive: boolean; canDouble: boolean };
 
 /**
  * Capa de interfaz sobre la partida (sin zoom): regalos entregados, regalos que quedan delante de la pala,
@@ -29,6 +30,7 @@ export class Hud extends Phaser.Scene {
     this.holdPointers.clear();
     this.layoutFns = [];
     this.over = undefined;
+    this.dbl = null;
     this.tutorial = undefined;
     this.tutorialHeld = 0;
     this.busy = false;
@@ -205,10 +207,27 @@ export class Hud extends Phaser.Scene {
       const mini = this.add.image(rev.x + 34 * s, rev.y - 34 * s, 'gift1').setDisplaySize(32 * s, 32 * s);
       c.add([rev, mini]);
     }
+    // ×2 regalos con anuncio (una vez por partida), sobre el borde de arriba del panel
+    if (r.canDouble) {
+      this.dbl = doubleButton(this, {
+        x: w / 2, y: h / 2 - 200 * s, s, currencyIcon: 'gift0', earned: r.gifts,
+        onDoubled: () => {
+          const extra = this.play.doubleGifts();
+          const plus = bigNumber(this, gi.x, gi.y - 50 * s, 44 * s, `+${extra}`).setColor('#ffd23f');
+          c.add(plus);
+          this.tweens.add({ targets: plus, y: plus.y - 30 * s, duration: 600, ease: 'Back.out' });
+          this.tweens.add({ targets: gi, scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (this.dbl) c.add(this.dbl);
+    }
     c.setAlpha(0);
     this.tweens.add({ targets: c, alpha: 1, duration: 180 });
     this.input.keyboard?.once('keydown-SPACE', () => this.restart());
   }
+
+  /** Botón ×2 del panel final (también lo pulsa la prueba automática). */
+  dbl: ReturnType<typeof doubleButton> = null;
 
   restart() {
     if (this.busy) return;

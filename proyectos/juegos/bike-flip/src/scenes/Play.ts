@@ -61,6 +61,9 @@ export class Play extends Phaser.Scene {
   private lastAngle = 0;
   private turbo = 0;
   private flipsRun = 0;
+  /** Monedas ganadas al llegar a la meta (estrellas + volteretas) y si ya se doblaron con el anuncio ×2. */
+  coinsRun = 0;
+  doubled = false;
   private safe: number[] = [];
   private engine: ReturnType<typeof audio.engine> = null;
   private keys: Phaser.Input.Keyboard.Key[] = [];
@@ -87,6 +90,7 @@ export class Play extends Phaser.Scene {
     this.alive = false; this.finished = false; this.started = false; this.revived = false;
     this.dist = 0; this.elapsed = 0; this.grounded = 0; this.groundedNow = 0; this.hold = false; this.acc = 0; this.paused = false;
     this.airSteps = 0; this.airRot = 0; this.airFlips = 0; this.lastAngle = 0; this.turbo = 0; this.flipsRun = 0;
+    this.coinsRun = 0; this.doubled = false;
     this.safe = []; this.clouds = []; this.groundY = 0; this.lastProgress = -1; this.slow = 1;
     this.truck = undefined as unknown as Bike;
 
@@ -412,6 +416,9 @@ export class Play extends Phaser.Scene {
     const newBest = saveResult(this.level, ms, stars);
     if (newBest && prevBest) portal.happyTime();
     if (stars === 3) portal.happyTime();
+    // monedas de la tienda: 1–3 por las estrellas de la meta + 1 por voltereta
+    this.coinsRun = stars + this.flipsRun;
+    save.set('coins', save.get('coins') + this.coinsRun);
     audio.tone(523, 0.12, 'square', 0.1);
     this.time.delayedCall(120, () => audio.tone(659, 0.12, 'square', 0.1));
     this.time.delayedCall(240, () => audio.tone(784, 0.3, 'square', 0.1));
@@ -422,7 +429,16 @@ export class Play extends Phaser.Scene {
     }).setDepth(5).explode(60);
     this.later(700, () => this.events.emit('complete', {
       level: this.level, ms, best: levelTime(this.level), newBest, stars, flips: this.flipsRun, last: this.level >= LEVELS.length,
+      coins: this.coinsRun, canDouble: !this.doubled,
     }));
+  }
+
+  /** ×2 con anuncio con recompensa: suma otra vez las monedas de la meta (una vez por partida). */
+  doubleCoins() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('coins', save.get('coins') + this.coinsRun);
+    return this.coinsRun;
   }
 
   /** Revivir tras anuncio con recompensa (una vez por partida): moto recolocada en el último punto seguro, lanzada. */

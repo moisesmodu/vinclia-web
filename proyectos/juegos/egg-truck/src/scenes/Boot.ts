@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 
@@ -16,7 +18,8 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
-    this.makeTruck();
+    makeExtraIcons(this);
+    makeCosmetics(this);
     this.makeWheel();
     this.makeEgg();
     this.makeScenery();
@@ -30,36 +33,6 @@ export class Boot extends Phaser.Scene {
     draw(g);
     g.generateTexture(key, w, h);
     g.destroy();
-  }
-
-  /** Camioneta roja vista de lado. Origen de diseño (centro del chasis) en (100, 70). */
-  private makeTruck() {
-    this.tex('truck', 200, 110, (g) => {
-      const ox = 100, oy = 70;
-      g.lineStyle(5, INK);
-      // caja trasera
-      g.fillStyle(0xd93636);
-      g.fillRoundedRect(ox - 78, oy - 40, 14, 40, 4);
-      g.strokeRoundedRect(ox - 78, oy - 40, 14, 40, 4);
-      // chasis
-      g.fillStyle(0xff4747);
-      g.fillRoundedRect(ox - 80, oy - 14, 160, 28, 8);
-      g.strokeRoundedRect(ox - 80, oy - 14, 160, 28, 8);
-      // cabina
-      g.fillStyle(0xff4747);
-      g.fillRoundedRect(ox + 18, oy - 52, 52, 42, { tl: 6, tr: 18, bl: 0, br: 0 });
-      g.strokeRoundedRect(ox + 18, oy - 52, 52, 42, { tl: 6, tr: 18, bl: 0, br: 0 });
-      // ventana
-      g.fillStyle(0x9be3ff);
-      g.fillRoundedRect(ox + 30, oy - 45, 32, 22, { tl: 4, tr: 12, bl: 2, br: 2 });
-      g.lineStyle(3, INK);
-      g.strokeRoundedRect(ox + 30, oy - 45, 32, 22, { tl: 4, tr: 12, bl: 2, br: 2 });
-      // faro y parachoques
-      g.fillStyle(0xffe066); g.fillCircle(ox + 76, oy - 4, 6); g.strokeCircle(ox + 76, oy - 4, 6);
-      g.fillStyle(0xc9ccd6); g.fillRoundedRect(ox + 66, oy + 6, 22, 9, 3); g.strokeRoundedRect(ox + 66, oy + 6, 22, 9, 3);
-      // brillo
-      g.fillStyle(0xffffff, 0.35); g.fillRoundedRect(ox - 70, oy - 10, 80, 5, 2);
-    });
   }
 
   private makeWheel() {

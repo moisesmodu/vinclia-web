@@ -10,6 +10,11 @@ export const save = new Save('bike-flip.v1', {
   flips: 0,                                    // volteretas totales
   tutorialDone: false,
   muted: false,
+  coins: 0,                                    // monedas para la tienda: estrellas + volteretas de cada meta
+  owned: [] as string[],                       // cosméticos comprados (comun/tienda.ts)
+  equipped: {} as Record<string, string>,      // cosmético puesto por hueco
+  dailyDate: '',                               // último día con recompensa diaria cobrada (comun/diario.ts)
+  dailyStreak: 0,                              // días seguidos
 });
 
 /** 1 metro de juego = 50 píxeles de mundo. */

@@ -1,6 +1,9 @@
 import Phaser from 'phaser';
 import { menuScreen } from '@comun/pantallas';
+import { menuExtras } from '@comun/extras';
+import { modalOpen } from '@comun/tienda';
 import { save } from '../state';
+import { ITEMS, DEFAULTS, DAILY, applyRocket } from '../cosmeticos';
 
 /** Pantalla de inicio (común): fondo, nombre, jugar, récord, aterrizajes perfectos acumulados y sonido. */
 export class Menu extends Phaser.Scene {
@@ -16,8 +19,20 @@ export class Menu extends Phaser.Scene {
       coins: save.get('perfects'),
       muted: save.get('muted'),
       onMute: (m) => save.set('muted', m),
-      onPlay: () => this.go(),
+      onPlay: () => { if (!modalOpen(this)) this.go(); },
     });
+    // contador de perfectos que dibuja menuScreen: el texto justo después de su icono de estrella
+    const list = this.children.list;
+    const coins = list[list.findIndex((o) => (o as Phaser.GameObjects.Image).texture?.key === 'ic-star') + 1] as Phaser.GameObjects.Text | undefined;
+    // tienda de cosméticos (esquina inferior izquierda) y recompensa diaria
+    const extras = menuExtras(this, {
+      save, currency: 'perfects', currencyIcon: 'ic-star', items: ITEMS, defaults: DEFAULTS, daily: DAILY, color: 0x9b6bff,
+      onChange: () => applyRocket(this), onWallet: (n) => coins?.setText?.(`${n}`),
+    });
+    const place = () => extras.place(Math.max(0.6, Math.min(this.scale.width / 1280, this.scale.height / 720)));
+    place();
+    this.scale.on('resize', place);
+    this.events.once('shutdown', () => this.scale.off('resize', place));
   }
 
   /** Empezar partida (también lo llama la prueba de SDK). */

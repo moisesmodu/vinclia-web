@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, pulse, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import { LEVELS } from '../levels';
 import type { Play } from './Play';
@@ -22,6 +23,8 @@ export class Hud extends Phaser.Scene {
   private flipHint?: Phaser.GameObjects.Image;
   private airFrames = 0;
   over?: Phaser.GameObjects.Container;
+  /** Botón ×2 del panel de meta (también lo pulsa la prueba automática). */
+  dbl: ReturnType<typeof doubleButton> = null;
   private layoutFns: (() => void)[] = [];
   private turboBar!: Phaser.GameObjects.Rectangle;
   private turboIc!: Phaser.GameObjects.Image;
@@ -36,6 +39,7 @@ export class Hud extends Phaser.Scene {
     this.holdPointers.clear();
     this.layoutFns = [];
     this.over = undefined;
+    this.dbl = null;
     this.tutorial = undefined;
     this.flipHint = undefined;
     this.airFrames = 0;
@@ -222,8 +226,8 @@ export class Hud extends Phaser.Scene {
     this.clearHold();
     this.dropHints();
     const flips = r.flips > 0;
-    const { c, w, h, s } = this.panel(flips ? 300 : 250);
-    const top = h / 2 - 30 * s - ((flips ? 300 : 250) * s) / 2;
+    const { c, w, h, s } = this.panel(300);
+    const top = h / 2 - 30 * s - (300 * s) / 2;
     const sy = top + 60 * s;
     for (let k = 0; k < 3; k++) {
       const on = r.stars > k;
@@ -239,8 +243,23 @@ export class Hud extends Phaser.Scene {
     const best = bigNumber(this, w / 2 + 110 * s, ry + 2 * s, 42 * s, fmt(r.best)).setOrigin(0, 0.5);
     c.add([clock, t, trophy, best]);
     if (flips) {
-      const fi = this.add.image(w / 2 - 34 * s, ry + 66 * s, 'ic-flip').setDisplaySize(48 * s, 48 * s).setTint(0xff7a3d);
-      c.add([fi, bigNumber(this, w / 2 - 4 * s, ry + 68 * s, 44 * s, `${r.flips}`).setOrigin(0, 0.5)]);
+      const fi = this.add.image(w / 2 - 150 * s, ry + 66 * s, 'ic-flip').setDisplaySize(48 * s, 48 * s).setTint(0xff7a3d);
+      c.add([fi, bigNumber(this, w / 2 - 120 * s, ry + 68 * s, 44 * s, `${r.flips}`).setOrigin(0, 0.5)]);
+    }
+    // monedas ganadas (estrellas + volteretas) y ×2 con anuncio sobre el borde de arriba del panel
+    const coinIc = this.add.image(w / 2 + (flips ? 40 : -40) * s, ry + 66 * s, 'ic-coin').setDisplaySize(48 * s, 48 * s);
+    const coinN = bigNumber(this, coinIc.x + 32 * s, ry + 68 * s, 44 * s, `+${r.coins}`).setOrigin(0, 0.5);
+    c.add([coinIc, coinN]);
+    if (r.canDouble) {
+      this.dbl = doubleButton(this, {
+        x: w / 2, y: top - 52 * s, s, currencyIcon: 'ic-coin', earned: r.coins,
+        onDoubled: () => {
+          const extra = this.play.doubleCoins();
+          coinN.setText(`+${r.coins + extra}`);
+          this.tweens.add({ targets: [coinIc, coinN], scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (this.dbl) c.add(this.dbl);
     }
     if (r.newBest && r.stars === 3) {
       // lluvia de estrellas desde arriba de la pantalla (no tapa las cifras del panel)
@@ -251,7 +270,7 @@ export class Hud extends Phaser.Scene {
       burst.explode(22);
       this.time.delayedCall(2600, () => burst.destroy());
     }
-    const by = h / 2 + (flips ? 165 : 140) * s;
+    const by = h / 2 + 165 * s;
     const levels = iconButton(this, w / 2 - 150 * s, by + 10 * s, 'grid', PALETTE.purple, 40 * s, () => this.home());
     const replay = iconButton(this, r.last ? w / 2 : w / 2 + 150 * s, r.last ? by : by + 10 * s, 'replay', PALETTE.blue, (r.last ? 62 : 40) * s, () => this.restart());
     c.add([levels, replay]);
@@ -315,4 +334,4 @@ export class Hud extends Phaser.Scene {
 }
 
 type OverInfo = { level: number; canRevive: boolean; canSkip: boolean };
-type DoneInfo = { level: number; ms: number; best: number; newBest: boolean; stars: number; flips: number; last: boolean };
+type DoneInfo = { level: number; ms: number; best: number; newBest: boolean; stars: number; flips: number; last: boolean; coins: number; canDouble: boolean };

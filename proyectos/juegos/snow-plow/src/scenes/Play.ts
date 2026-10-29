@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
 import { Terrain, type SleighSpot } from '../terrain';
+import { hasLights } from '../cosmeticos';
 import { save, PX_PER_M, SLEIGH_EVERY_M } from '../state';
 
 // La librería Matter.js que trae Phaser (sus tipos no la exponen).
@@ -46,6 +47,9 @@ export class Play extends Phaser.Scene {
   private deliveredSaved = 0; // regalos de esta partida ya sumados al total (por si revive)
   private alive = true;
   private revived = false;
+  private xmasLights = false;
+  /** Regalos de la partida ya doblados con el anuncio ×2 (una vez por partida). */
+  doubled = false;
   private grounded = 0;
   private flipT = 0;
   private hold = false;
@@ -67,7 +71,7 @@ export class Play extends Phaser.Scene {
 
   async create() {
     // la instancia de la escena se reutiliza al reiniciar: nada de la partida anterior puede sobrevivir
-    this.alive = true; this.revived = false; this.dist = 0; this.delivered = 0; this.deliveredSaved = 0; this.flipT = 0; this.groundY = 0;
+    this.alive = true; this.revived = false; this.doubled = false; this.xmasLights = hasLights(); this.dist = 0; this.delivered = 0; this.deliveredSaved = 0; this.flipT = 0; this.groundY = 0;
     this.gifts = []; this.sleighs = []; this.hold = false; this.refillPending = 0; this.giftN = 0; this.blinkAt = 0;
     this.lastLoad = -1; this.grounded = 0; this.groundedNow = 0;
     this.truck = undefined as unknown as Truck;
@@ -236,6 +240,11 @@ export class Play extends Phaser.Scene {
     const a = chassis.angle, o = this.toWorld(0, 0);
     sprite.setPosition(o.x, o.y).setRotation(a);
     wheels.forEach((w, i) => wheelSprites[i].setPosition(w.position.x, w.position.y).setRotation(w.angle));
+    // luces de Navidad de la tienda: parpadean alternando dos texturas
+    if (this.xmasLights) {
+      const k = Math.floor(this.time.now / 380) % 2 ? 'plow-b' : 'plow';
+      if (sprite.texture.key !== k) sprite.setTexture(k);
+    }
     const bp = this.toWorld(-3, -70);
     beacon.setPosition(bp.x, bp.y).setAlpha(0.45 + 0.55 * Math.abs(Math.sin(this.time.now / 160)));
     for (const g of this.gifts) if (g.state === 'push') g.sprite.setPosition(g.body.position.x, g.body.position.y).setRotation(g.body.angle);
@@ -411,13 +420,21 @@ export class Play extends Phaser.Scene {
       save.set('gifts', save.get('gifts') + this.delivered - this.deliveredSaved);
       this.deliveredSaved = this.delivered;
       this.events.emit('over', {
-        gifts: this.delivered, best: Math.max(best, this.delivered), newBest, dist: this.dist, canRevive: portal.hasRewarded && !this.revived,
+        gifts: this.delivered, best: Math.max(best, this.delivered), newBest, dist: this.dist, canRevive: portal.hasRewarded && !this.revived, canDouble: !this.doubled,
       });
     });
   }
 
   /** Nombre que usan las pruebas automáticas (scripts/sdk-test.mjs, heredado de Egg Truck): termina la partida. */
   breakEgg() { this.endRun(); }
+
+  /** ×2 con anuncio con recompensa: suma otra vez los regalos entregados en la partida (una vez por partida). */
+  doubleGifts() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('gifts', save.get('gifts') + this.delivered);
+    return this.delivered;
+  }
 
   /** Revivir tras anuncio con recompensa: camión recolocado y montón nuevo de regalos (una vez por partida). */
   revive() {

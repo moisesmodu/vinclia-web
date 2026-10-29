@@ -2,7 +2,9 @@ import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
 import { save } from '../state';
-import { BH, JELLY, SLICE, TEX_W } from '../config';
+import { SLICE, TEX_W } from '../config';
+import { makeExtraIcons } from '@comun/iconos';
+import { applyJelly, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 
@@ -24,10 +26,11 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
-    JELLY.forEach((c, i) => this.makeJelly(`jelly${i}`, c));
-    this.makeFaces();
-    this.makeScenery();
+    makeExtraIcons(this);
     save.load();
+    applyJelly(this);
+    this.makeScenery();
+    makeCosmetics(this);
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -37,61 +40,6 @@ export class Boot extends Phaser.Scene {
     draw(g);
     g.generateTexture(key, w, h);
     g.destroy();
-  }
-
-  /**
-   * One jelly block as a 3-slice source (corners fixed, middle stretched): the game resizes it to any width
-   * with a single NineSlice object. Flat colours, darker base band, glossy highlight and a thick ink outline.
-   */
-  private makeJelly(key: string, c: number) {
-    const w = TEX_W, h = BH, r = 24, lw = 7;
-    this.tex(key, w, h, (g) => {
-      g.fillStyle(INK); g.fillRoundedRect(0, 0, w, h, r);
-      const i = lw;
-      g.fillStyle(shade(c, -0.22)); g.fillRoundedRect(i, i, w - 2 * i, h - 2 * i, r - lw + 2);
-      g.fillStyle(c); g.fillRoundedRect(i, i, w - 2 * i, h - 2 * i - 18, r - lw + 2);
-      g.fillStyle(shade(c, 0.28)); g.fillRoundedRect(i + 4, i + 3, w - 2 * i - 8, 22, 10);
-      g.fillStyle(0xffffff, 0.9); g.fillRoundedRect(SLICE - 4, i + 8, w - 2 * SLICE + 8, 9, 4.5);
-      g.fillStyle(0xffffff, 0.95); g.fillCircle(i + 10, i + 13, 5.5);
-      g.fillStyle(0xffffff, 0.35); g.fillCircle(w - i - 12, h - i - 28, 4);
-    });
-  }
-
-  /** Faces for the top block: happy, blink, joy (perfect drop) and dizzy (miss). */
-  private makeFaces() {
-    const W = 120, H = 56;
-    const eye = (g: Phaser.GameObjects.Graphics, x: number, y: number) => {
-      g.fillStyle(INK); g.fillCircle(x, y, 9);
-      g.fillStyle(0xffffff); g.fillCircle(x + 3, y - 3, 3.4); g.fillCircle(x - 3, y + 3.5, 1.6);
-    };
-    const cheeks = (g: Phaser.GameObjects.Graphics) => {
-      g.fillStyle(0xff3d7f, 0.45); g.fillEllipse(18, 34, 18, 10); g.fillEllipse(W - 18, 34, 18, 10);
-    };
-    const smile = (g: Phaser.GameObjects.Graphics, open: boolean) => {
-      g.lineStyle(5, INK);
-      if (open) {
-        g.fillStyle(INK); g.slice(W / 2, 30, 12, 0, Math.PI, false); g.fillPath();
-        g.fillStyle(0xff6f8f); g.fillCircle(W / 2, 37, 5);
-      } else {
-        g.beginPath(); g.arc(W / 2, 28, 9, 0.25, Math.PI - 0.25, false); g.strokePath();
-      }
-    };
-    this.tex('face-happy', W, H, (g) => { cheeks(g); eye(g, 38, 22); eye(g, W - 38, 22); smile(g, false); });
-    this.tex('face-blink', W, H, (g) => {
-      cheeks(g); g.lineStyle(5, INK);
-      g.lineBetween(30, 23, 46, 23); g.lineBetween(W - 46, 23, W - 30, 23); smile(g, false);
-    });
-    this.tex('face-joy', W, H, (g) => {
-      cheeks(g); g.lineStyle(5, INK);
-      g.beginPath(); g.arc(38, 25, 8, Math.PI + 0.2, -0.2, false); g.strokePath();
-      g.beginPath(); g.arc(W - 38, 25, 8, Math.PI + 0.2, -0.2, false); g.strokePath();
-      smile(g, true);
-    });
-    this.tex('face-oh', W, H, (g) => {
-      cheeks(g); g.lineStyle(5, INK);
-      for (const x of [38, W - 38]) { g.lineBetween(x - 7, 15, x + 7, 29); g.lineBetween(x + 7, 15, x - 7, 29); }
-      g.fillStyle(INK); g.fillEllipse(W / 2, 36, 14, 16);
-    });
   }
 
   private makeScenery() {

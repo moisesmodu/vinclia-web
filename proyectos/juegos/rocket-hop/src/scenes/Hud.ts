@@ -2,12 +2,13 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
-import { tutorialHand, gameOverScreen } from '@comun/pantallas';
+import { tutorialHand, gameOverScreen, uiScale } from '@comun/pantallas';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import { K } from './Boot';
 import type { Play } from './Play';
 
-type OverInfo = { score: number; best: number; newBest: boolean; canRevive: boolean };
+type OverInfo = { score: number; best: number; newBest: boolean; canRevive: boolean; perfects: number; canDouble: boolean };
 
 /**
  * Capa de interfaz sobre la partida (sin zoom): puntuación, récord, barra de combustible, viento, sonido,
@@ -19,6 +20,8 @@ export class Hud extends Phaser.Scene {
   private tutorial?: { done: () => void; container: Phaser.GameObjects.Container };
   private tutorialHeld = 0;
   over?: Phaser.GameObjects.Container;
+  /** Botón ×2 del panel final (también lo pulsa la prueba automática). */
+  dbl: ReturnType<typeof doubleButton> = null;
   private layoutFns: (() => void)[] = [];
   private busy = false;
   private pulseT: Phaser.Tweens.Tween | null = null;
@@ -158,6 +161,22 @@ export class Hud extends Phaser.Scene {
       onHome: () => this.home(),
       onRevive: () => { this.over = undefined; this.play.revive(); },
     });
+    // ×2 aterrizajes perfectos con anuncio (una vez por partida), sobre el borde de arriba del panel común
+    this.dbl = null;
+    if (r.canDouble) {
+      const w = this.scale.width, h = this.scale.height, s = uiScale(this);
+      this.dbl = doubleButton(this, {
+        x: w / 2, y: h / 2 - 200 * s, s, currencyIcon: 'ic-star', earned: r.perfects,
+        onDoubled: () => {
+          const extra = this.play.doublePerfects();
+          const ic = this.add.image(w / 2 + 150 * s, h / 2 + 30 * s, 'ic-star').setDisplaySize(50 * s, 50 * s);
+          const n = bigNumber(this, ic.x + 32 * s, ic.y + 2 * s, 44 * s, `+${extra * 2}`).setOrigin(0, 0.5);
+          this.over?.add([ic, n]);
+          this.tweens.add({ targets: [ic, n], scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (this.dbl) this.over.add(this.dbl);
+    }
   }
 
   /** Reiniciar en un clic (el intersticial se pide al empezar la partida, nunca en la primera). */

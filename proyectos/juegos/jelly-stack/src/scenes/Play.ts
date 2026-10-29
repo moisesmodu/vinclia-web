@@ -3,6 +3,7 @@ import { portal } from '@comun/portal';
 import { audio } from '@comun/audio';
 import { PALETTE } from '@comun/ui';
 import { save } from '../state';
+import { palette } from '../cosmeticos';
 import {
   BH, SLICE, MIN_W, BASE_W, MAX_W, VIEW_W, VIEW_ROWS, RANGE, PERFECT, GROW, SPEED0, SPEED_STEP, SPEED_MAX, GRAVITY, JELLY,
 } from '../config';
@@ -36,6 +37,8 @@ export class Play extends Phaser.Scene {
   combo = 0;
   speed = SPEED0;
   revived = false;
+  /** Estrellas de la partida ya dobladas con el anuncio ×2 (una vez por partida). */
+  doubled = false;
   tower: Block[] = [];
   slider: { x: number; w: number; dir: number; range: number; level: number; color: number; obj: Phaser.GameObjects.NineSlice } | null = null;
   private pieces: Piece[] = [];
@@ -59,7 +62,7 @@ export class Play extends Phaser.Scene {
   async create() {
     // the scene instance is reused on restart: nothing from the previous run may survive
     this.alive = false; this.paused = false; this.score = 0; this.stars = 0; this.starsSaved = 0; this.combo = 0;
-    this.speed = SPEED0; this.revived = false; this.tower = []; this.slider = null; this.pieces = [];
+    this.speed = SPEED0; this.revived = false; this.doubled = false; this.tower = []; this.slider = null; this.pieces = [];
     this.faceMood = 0; this.blinkIn = 2000; this.swayT = 0;
 
     this.makeGround();
@@ -211,7 +214,7 @@ export class Play extends Phaser.Scene {
       obj = this.add.nineslice(x, bottom - BH / 2, `jelly${color}`, undefined, w, BH, SLICE, SLICE, 0, 0);
     } else {
       // a sliver too thin for a block: a round jelly blob
-      obj = this.add.image(x, bottom - BH / 2, 'drop').setTint(JELLY[color]);
+      obj = this.add.image(x, bottom - BH / 2, 'drop').setTint(palette()[color]);
       obj.setDisplaySize(Math.max(26, w * 1.3), BH * 0.8);
     }
     obj.setDepth(5);
@@ -243,7 +246,7 @@ export class Play extends Phaser.Scene {
       if (newBest) { save.set('best', this.score); portal.happyTime(); }
       save.set('coins', save.get('coins') + this.stars - this.starsSaved);
       this.starsSaved = this.stars;
-      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, stars: this.stars, canRevive: portal.hasRewarded && !this.revived });
+      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, stars: this.stars, canRevive: portal.hasRewarded && !this.revived, canDouble: !this.doubled });
     });
   }
 
@@ -252,6 +255,14 @@ export class Play extends Phaser.Scene {
     if (!this.alive || !this.slider) return;
     this.slider.x = this.top.x + this.top.w + 200;
     this.miss();
+  }
+
+  /** ×2 after a rewarded ad: adds this run's stars again (once per run). */
+  doubleStars() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('coins', save.get('coins') + this.stars);
+    return this.stars;
   }
 
   /** Revive after a rewarded ad (once per run): a new block with the width of the top one. */

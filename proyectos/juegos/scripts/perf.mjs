@@ -53,6 +53,9 @@ await page.evaluate(() => {
   }, 50);
 });
 await page.keyboard.press('Space');
+// si había recompensa diaria en el menú, el primer espacio la cobra: otro espacio para jugar
+await page.waitForTimeout(800);
+if (await page.evaluate(() => window.__game.scene.isActive('Menu'))) await page.keyboard.press('Space');
 
 const end = Date.now() + secs * 1000;
 while (Date.now() < end) {

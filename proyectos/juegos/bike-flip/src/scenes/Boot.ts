@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { applyBike, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 /** Paleta de Bike Flip: atardecer en el desierto (Egg Truck es cielo azul y hierba). */
@@ -22,11 +24,13 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
+    makeExtraIcons(this);
     this.makeIcons();
+    save.load();
     this.makeBike();
+    makeCosmetics(this);
     this.makeScenery();
     this.makeDigits();
-    save.load();
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -96,45 +100,7 @@ export class Boot extends Phaser.Scene {
    * coincide con el centro del chasis en Play.ts (ruedas en ±44, +22; casco en -2, -66).
    */
   private makeBike() {
-    this.tex('bike', 180, 150, (g) => {
-      const L = (w: number, c: number, x1: number, y1: number, x2: number, y2: number) => { g.lineStyle(w, c); g.lineBetween(x1, y1, x2, y2); };
-      const fx = (pts: number[][], fill: number, line = 5) => {
-        const v = pts.map(([x, y]) => new Phaser.Math.Vector2(x, y));
-        g.fillStyle(fill); g.fillPoints(v, true); g.lineStyle(line, INK); g.strokePoints(v, true, true);
-      };
-      // basculante y horquilla
-      L(11, INK, 46, 122, 84, 104); L(5, 0xc9ccd6, 46, 122, 84, 104);
-      L(11, INK, 134, 122, 116, 70); L(5, 0xc9ccd6, 134, 122, 116, 70);
-      // tubo de escape
-      L(10, INK, 92, 110, 52, 98); L(5, 0xdfe3ea, 92, 110, 52, 98);
-      // motor
-      g.fillStyle(0x4a4f5e); g.fillRoundedRect(78, 96, 30, 20, 5); g.lineStyle(4, INK); g.strokeRoundedRect(78, 96, 30, 20, 5);
-      // guardabarros trasero, depósito y placa delantera
-      fx([[40, 90], [86, 86], [84, 96], [52, 98]], COL.bike);
-      fx([[70, 84], [116, 78], [124, 92], [96, 100], [74, 98]], COL.bike);
-      fx([[108, 70], [128, 66], [130, 90], [118, 92]], COL.bikeDark);
-      fx([[122, 102], [154, 98], [146, 108]], COL.bike, 4);
-      // número blanco de la placa (adorno)
-      g.fillStyle(0xffffff); g.fillCircle(121, 79, 6); g.lineStyle(3, INK); g.strokeCircle(121, 79, 6);
-      // sillín
-      g.fillStyle(0x2f2a3d); g.fillRoundedRect(58, 80, 40, 9, 4);
-      // brillo
-      g.fillStyle(0xffffff, 0.45); g.fillRoundedRect(80, 85, 26, 4, 2);
-      // piloto: pierna, cuerpo, brazo y casco
-      L(16, INK, 80, 78, 102, 86); L(10, COL.riderDark, 80, 78, 102, 86);
-      L(14, INK, 102, 86, 98, 104); L(8, COL.riderDark, 102, 86, 98, 104);
-      g.fillStyle(0x2f2a3d); g.fillRoundedRect(92, 100, 16, 8, 3);
-      fx([[74, 80], [86, 46], [100, 48], [92, 82]], COL.rider);
-      L(13, INK, 94, 54, 114, 70); L(7, COL.rider, 94, 54, 114, 70);
-      g.fillStyle(0x2f2a3d); g.fillCircle(115, 70, 5);
-      L(6, INK, 110, 64, 120, 62);
-      // casco
-      g.fillStyle(COL.helmet); g.fillCircle(88, 34, 15); g.lineStyle(5, INK); g.strokeCircle(88, 34, 15);
-      g.fillStyle(INK); g.fillRoundedRect(90, 28, 14, 10, 4);
-      g.fillStyle(0x9be3ff); g.fillRoundedRect(93, 30, 9, 5, 2);
-      g.fillStyle(0xff5d5d); g.fillRect(74, 30, 12, 4);
-      g.fillStyle(0xffffff, 0.6); g.fillCircle(82, 27, 4);
-    });
+    applyBike(this);
     this.tex('wheel', 48, 48, (g) => {
       g.fillStyle(0x2b2b33); g.fillCircle(24, 24, 22);
       g.fillStyle(0x15151a);

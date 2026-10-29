@@ -3,6 +3,7 @@ import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
 import { Terrain } from '../terrain';
 import { save, PX_PER_M } from '../state';
+import { truckKey, hatKey } from '../cosmeticos';
 
 // La librería Matter.js que trae Phaser (sus tipos no la exponen).
 const M: any = (Phaser.Physics.Matter as any).Matter;
@@ -34,6 +35,9 @@ export class Play extends Phaser.Scene {
   private truck!: Truck;
   private egg!: MatterJS.BodyType;
   private eggSprite!: Phaser.GameObjects.Image;
+  private hat: Phaser.GameObjects.Image | null = null; // gorro de la tienda (sigue al huevo)
+  /** Estrellas de la partida ya dobladas con el anuncio ×2 (una vez por partida). */
+  doubled = false;
   private crack = 0;
   private startX = 0;
   private dist = 0;
@@ -62,7 +66,7 @@ export class Play extends Phaser.Scene {
   constructor() { super('Play'); }
 
   async create() {
-    this.alive = true; this.revived = false; this.crack = 0; this.dist = 0; this.starsRun = 0; this.starsSaved = 0; this.flipT = 0;
+    this.alive = true; this.revived = false; this.doubled = false; this.hat = null; this.crack = 0; this.dist = 0; this.starsRun = 0; this.starsSaved = 0; this.flipT = 0;
     this.groundY = 0; this.nextFlagM = 100; this.starObjs = []; this.flags = []; this.clouds = []; this.hold = false;
     this.registry.set('hold', false);
     // la instancia de la escena se reutiliza al reiniciar: nada de la partida anterior puede sobrevivir
@@ -140,7 +144,7 @@ export class Play extends Phaser.Scene {
       }));
       return w;
     });
-    const sprite = this.add.image(x, y, 'truck').setOrigin(0.5, 70 / 110).setDepth(2);
+    const sprite = this.add.image(x, y, truckKey()).setOrigin(0.5, 70 / 110).setDepth(2);
     const wheelSprites = wheels.map((w) => this.add.image(w.position.x, w.position.y, 'wheel').setDepth(3));
     this.truck = { chassis, wheels, d, sprite, wheelSprites };
   }
@@ -155,6 +159,9 @@ export class Play extends Phaser.Scene {
     this.matter.world.add(this.egg);
     if (!this.eggSprite) this.eggSprite = this.add.image(p.x, p.y, 'egg0').setDepth(1);
     this.eggSprite.setTexture('egg0').setVisible(true);
+    const hk = hatKey();
+    if (hk && !this.hat) this.hat = this.add.image(p.x, p.y, hk).setOrigin(0.5, 0.85).setDepth(1.1);
+    if (this.hat) { this.tweens.killTweensOf(this.hat); this.hat.setVisible(true).setAlpha(1); }
   }
 
   /** Punto del mundo en el centro de la caja de carga, sobre el chasis. */
@@ -244,7 +251,12 @@ export class Play extends Phaser.Scene {
     sprite.setPosition(chassis.position.x + d.x * Math.cos(a) - d.y * Math.sin(a), chassis.position.y + d.x * Math.sin(a) + d.y * Math.cos(a));
     sprite.setRotation(a);
     wheels.forEach((w, i) => wheelSprites[i].setPosition(w.position.x, w.position.y).setRotation(w.angle));
-    if (this.alive) this.eggSprite.setPosition(this.egg.position.x, this.egg.position.y).setRotation(this.egg.angle);
+    if (this.alive) {
+      const e = this.egg.position, ea = this.egg.angle;
+      this.eggSprite.setPosition(e.x, e.y).setRotation(ea);
+      // gorro sobre la punta del huevo (el huevo mide 50 de alto: punta a -24 del centro)
+      this.hat?.setPosition(e.x + 21 * Math.sin(ea), e.y - 21 * Math.cos(ea)).setRotation(ea);
+    }
 
     if (this.alive) {
       const speed = Math.hypot(chassis.velocity.x, chassis.velocity.y);
@@ -342,6 +354,11 @@ export class Play extends Phaser.Scene {
     const p = { x: this.egg.position.x, y: this.egg.position.y };
     this.eggSprite.setVisible(false);
     this.matter.world.remove(this.egg);
+    if (this.hat) {
+      // el gorro sale volando
+      const hat = this.hat;
+      this.tweens.add({ targets: hat, y: hat.y - 90, angle: hat.angle + 200, alpha: 0, duration: 650, ease: 'Quad.out', onComplete: () => hat.setVisible(false) });
+    }
     audio.noise(0.35, 0.5, 1500);
     audio.tone(300, 0.4, 'sawtooth', 0.12, 80);
     this.cameras.main.shake(220, 0.01);
@@ -360,9 +377,17 @@ export class Play extends Phaser.Scene {
       if (newBest) { save.set('best', this.dist); portal.happyTime(); }
       save.set('stars', save.get('stars') + this.starsRun - this.starsSaved);
       this.starsSaved = this.starsRun;
-      this.events.emit('over', { dist: this.dist, best: Math.max(best, this.dist), newBest, stars: this.starsRun, canRevive: portal.hasRewarded && !this.revived });
+      this.events.emit('over', { dist: this.dist, best: Math.max(best, this.dist), newBest, stars: this.starsRun, canRevive: portal.hasRewarded && !this.revived, canDouble: !this.doubled });
       yolk.destroy();
     });
+  }
+
+  /** ×2 con anuncio con recompensa: suma otra vez las estrellas de la partida (una vez por partida). */
+  doubleStars() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('stars', save.get('stars') + this.starsRun);
+    return this.starsRun;
   }
 
   /** Revivir tras anuncio con recompensa: camión recolocado y huevo nuevo (una vez por partida). */

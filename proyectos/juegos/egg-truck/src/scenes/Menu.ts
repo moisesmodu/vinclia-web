@@ -2,7 +2,10 @@ import Phaser from 'phaser';
 import { iconButton, pulse, bigNumber, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { menuExtras } from '@comun/extras';
+import { modalOpen } from '@comun/tienda';
 import { save } from '../state';
+import { ITEMS, DEFAULTS, DAILY } from '../cosmeticos';
 
 /** Pantalla de inicio: arte, botón de jugar, récord, estrellas y sonido. Sin texto salvo el nombre. */
 export class Menu extends Phaser.Scene {
@@ -32,8 +35,14 @@ export class Menu extends Phaser.Scene {
       sound.setIcon(m ? 'mute' : 'sound');
     });
 
-    this.input.keyboard?.on('keydown-SPACE', () => this.go());
-    this.input.keyboard?.on('keydown-ENTER', () => this.go());
+    // tienda de cosméticos (esquina inferior izquierda) y recompensa diaria
+    const extras = menuExtras(this, {
+      save, currency: 'stars', currencyIcon: 'ic-star', items: ITEMS, defaults: DEFAULTS, daily: DAILY,
+      onWallet: (n) => stars.setText(`${n}`),
+    });
+
+    this.input.keyboard?.on('keydown-SPACE', () => { if (!modalOpen(this)) this.go(); });
+    this.input.keyboard?.on('keydown-ENTER', () => { if (!modalOpen(this)) this.go(); });
 
     const layout = () => {
       const w = this.scale.width, h = this.scale.height;
@@ -51,6 +60,7 @@ export class Menu extends Phaser.Scene {
       star.setPosition(play.x + 40 * s, rowY).setDisplaySize(50 * s, 50 * s);
       stars.setPosition(star.x + 34 * s, rowY).setScale(s);
       sound.setPosition(w - 50 * s, h - 50 * s).setScale(s);
+      extras.place(s);
     };
     layout();
     this.scale.on('resize', layout);

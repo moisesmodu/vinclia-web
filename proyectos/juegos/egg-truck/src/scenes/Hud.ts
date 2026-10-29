@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, pulse, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import type { Play } from './Play';
 
@@ -26,6 +27,7 @@ export class Hud extends Phaser.Scene {
     this.layoutFns = [];
     this.over = undefined;
     this.tutorial = undefined;
+    this.dbl = null;
 
     // distancia (arriba, centro) y estrellas (arriba, izquierda)
     const dist = bigNumber(this, 0, 0, 64, '0');
@@ -177,10 +179,26 @@ export class Hud extends Phaser.Scene {
       const mini = this.add.image(rev.x + 34 * s, rev.y - 34 * s, 'egg0').setDisplaySize(30 * s, 36 * s);
       c.add([rev, mini]);
     }
+    // ×2 estrellas con anuncio (una vez por partida), sobre el borde de arriba del panel
+    if (r.canDouble) {
+      const dbl = doubleButton(this, {
+        x: w / 2, y: h / 2 - 200 * s, s, currencyIcon: 'ic-star', earned: r.stars,
+        onDoubled: () => {
+          const extra = this.play.doubleStars();
+          starN.setText(`+${r.stars + extra}`);
+          this.tweens.add({ targets: [starIc, starN], scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (dbl) c.add(dbl);
+      this.dbl = dbl;
+    }
     c.setAlpha(0);
     this.tweens.add({ targets: c, alpha: 1, duration: 180 });
     this.input.keyboard?.once('keydown-SPACE', () => this.restart());
   }
+
+  /** Botón ×2 del panel final (también lo pulsa la prueba automática). */
+  dbl: ReturnType<typeof doubleButton> = null;
 
   private busy = false;
   private restart() {
@@ -207,4 +225,4 @@ export class Hud extends Phaser.Scene {
   }
 }
 
-type OverInfo = { dist: number; best: number; newBest: boolean; canRevive: boolean; stars: number };
+type OverInfo = { dist: number; best: number; newBest: boolean; canRevive: boolean; canDouble: boolean; stars: number };

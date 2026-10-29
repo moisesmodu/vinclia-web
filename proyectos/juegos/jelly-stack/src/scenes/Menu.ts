@@ -2,7 +2,10 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { menuExtras } from '@comun/extras';
+import { modalOpen } from '@comun/tienda';
 import { save } from '../state';
+import { ITEMS, DEFAULTS, DAILY, applyJelly } from '../cosmeticos';
 
 /** Start screen: art, play button, best height, stars and sound. No text except the name. */
 export class Menu extends Phaser.Scene {
@@ -42,8 +45,14 @@ export class Menu extends Phaser.Scene {
       sound.setIcon(m ? 'mute' : 'sound');
     });
 
-    this.input.keyboard?.on('keydown-SPACE', () => this.go());
-    this.input.keyboard?.on('keydown-ENTER', () => this.go());
+    // cosmetics shop (bottom-left corner) and daily reward
+    const extras = menuExtras(this, {
+      save, currency: 'coins', currencyIcon: 'ic-star', items: ITEMS, defaults: DEFAULTS, daily: DAILY, color: 0xa67bff,
+      onChange: () => applyJelly(this), onWallet: (n) => stars.setText(`${n}`),
+    });
+
+    this.input.keyboard?.on('keydown-SPACE', () => { if (!modalOpen(this)) this.go(); });
+    this.input.keyboard?.on('keydown-ENTER', () => { if (!modalOpen(this)) this.go(); });
 
     const layout = () => {
       const w = this.scale.width, h = this.scale.height, portrait = h > w;
@@ -69,6 +78,7 @@ export class Menu extends Phaser.Scene {
       else star.setPosition(play.x + 40 * s, rowY).setDisplaySize(50 * s, 50 * s);
       stars.setPosition(star.x + 34 * s, star.y).setScale(s);
       sound.setPosition(w - 50 * s, h - 50 * s).setScale(s);
+      extras.place(s);
     };
     layout();
     this.scale.on('resize', layout);

@@ -3,6 +3,7 @@ import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
 import { bigNumber } from '@comun/ui';
 import { save } from '../state';
+import { puffTint } from '../cosmeticos';
 import { K } from './Boot';
 
 // La librería Matter.js que trae Phaser (sus tipos no la exponen).
@@ -51,6 +52,9 @@ export class Play extends Phaser.Scene {
   fuel = 100;
   alive = false;            // true desde create (la escena aún no creada no puede estrellarse)
   revived = false;
+  /** Aterrizajes perfectos de esta partida y si ya se doblaron con el anuncio ×2 (una vez por partida). */
+  perfectsRun = 0;
+  doubled = false;
   hold = false;
   private paused = false;
   private acc = 0;
@@ -80,7 +84,7 @@ export class Play extends Phaser.Scene {
   async create() {
     // la instancia se reutiliza al reiniciar: nada de la partida anterior puede sobrevivir
     this.plats = []; this.planets = []; this.nextIndex = 0; this.cur = 0; this.score = 0; this.fuel = 100;
-    this.alive = true; this.revived = false; this.hold = false; this.paused = false; this.acc = 0; this.stepN = 0;
+    this.alive = true; this.revived = false; this.perfectsRun = 0; this.doubled = false; this.hold = false; this.paused = false; this.acc = 0; this.stepN = 0;
     this.contact = null; this.contactNow = null; this.settle = 0; this.emptyT = 0; this.combo = 0; this.faceT = 0;
     this.wind = 0; this.windT = 0; this.nextGust = 0;
     this.registry.set('hold', false);
@@ -147,7 +151,7 @@ export class Play extends Phaser.Scene {
     this.sprite = this.add.image(x, y, 'rocket0').setOrigin(0.5, 0.5).setScale(1 / K).setDepth(4);
     this.exhaust = this.add.particles(0, 0, 'puff', {
       lifespan: 520, speed: { min: 10, max: 50 }, scale: { start: 0.55, end: 0.05 }, alpha: { start: 0.85, end: 0 },
-      tint: [0xffd23f, 0xff9f43, 0xcfd3e6], frequency: 28, emitting: false,
+      tint: puffTint(), frequency: 28, emitting: false,
     }).setDepth(2);
   }
 
@@ -328,6 +332,7 @@ export class Play extends Phaser.Scene {
       pts += Math.min(this.combo, 3);
       this.fuel = Math.min(100, this.fuel + T.refuelPerfect);
       save.set('perfects', save.get('perfects') + 1);
+      this.perfectsRun++;
       this.sprite.setTexture('rocket2'); this.faceT = 1.2;
       this.burst.explode(14, this.sprite.x, this.sprite.y + 20);
       audio.tone(660, 0.1, 'square', 0.1); this.time.delayedCall(90, () => audio.tone(880, 0.1, 'square', 0.1));
@@ -484,8 +489,16 @@ export class Play extends Phaser.Scene {
       const best = save.get('best');
       const newBest = this.score > best;
       if (newBest) save.set('best', this.score);
-      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, canRevive: portal.hasRewarded && !this.revived });
+      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, canRevive: portal.hasRewarded && !this.revived, perfects: this.perfectsRun, canDouble: !this.doubled });
     });
+  }
+
+  /** ×2 con anuncio con recompensa: suma otra vez los aterrizajes perfectos de la partida. */
+  doublePerfects() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('perfects', save.get('perfects') + this.perfectsRun);
+    return this.perfectsRun;
   }
 
   /** Alias para scripts/sdk-test.mjs (que llama a breakEgg() en todos los juegos). */

@@ -2,11 +2,12 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, pulse, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import { BH, SLICE } from '../config';
 import type { Play } from './Play';
 
-type OverInfo = { score: number; best: number; newBest: boolean; canRevive: boolean; stars: number };
+type OverInfo = { score: number; best: number; newBest: boolean; canRevive: boolean; stars: number; canDouble: boolean };
 
 /**
  * UI layer above the run (no zoom): height, best, stars, sound, 10 s tutorial hand and the end screen with
@@ -168,10 +169,26 @@ export class Hud extends Phaser.Scene {
       const rev = iconButton(this, w / 2 + 150 * s, by + 10 * s, 'video', PALETTE.yellow, 44 * s, () => this.revive());
       c.add(rev);
     }
+    // ×2 stars with a rewarded ad (once per run), on the top edge of the panel
+    this.dbl = null;
+    if (r.canDouble) {
+      this.dbl = doubleButton(this, {
+        x: w / 2, y: h / 2 - 200 * s, s, currencyIcon: 'ic-star', earned: r.stars,
+        onDoubled: () => {
+          const extra = this.play.doubleStars();
+          starN.setText(`+${r.stars + extra}`);
+          this.tweens.add({ targets: [starIc, starN], scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (this.dbl) c.add(this.dbl);
+    }
     c.setAlpha(0);
     this.tweens.add({ targets: c, alpha: 1, duration: 180 });
     this.input.keyboard?.once('keydown-SPACE', () => this.restart());
   }
+
+  /** ×2 button of the game-over panel (the automated test presses it too). */
+  dbl: ReturnType<typeof doubleButton> = null;
 
   restart() {
     if (this.busy) return;

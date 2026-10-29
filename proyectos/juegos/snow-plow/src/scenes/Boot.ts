@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { applyPlow, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 /** Los 4 colores de los regalos: [papel, lazo]. */
@@ -23,12 +25,14 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
+    makeExtraIcons(this);
+    save.load();
     this.makePlow();
     this.makeWheel();
     this.makeGifts();
     this.makeSleigh();
     this.makeScenery();
-    save.load();
+    makeCosmetics(this);
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -42,53 +46,7 @@ export class Boot extends Phaser.Scene {
 
   /** Quitanieves naranja con pala amarilla delante. Origen de diseño (centro del chasis) en (110, 84). */
   private makePlow() {
-    this.tex('plow', 240, 140, (g) => {
-      const ox = 110, oy = 84;
-      g.lineStyle(5, INK);
-      // caja trasera con sal (tolva)
-      g.fillStyle(0xd9692b);
-      g.fillRoundedRect(ox - 78, oy - 34, 40, 26, 5); g.strokeRoundedRect(ox - 78, oy - 34, 40, 26, 5);
-      g.fillStyle(0xffffff); g.fillRoundedRect(ox - 76, oy - 40, 36, 10, 5);
-      // chasis
-      g.fillStyle(0xff8a2a);
-      g.fillRoundedRect(ox - 78, oy - 12, 156, 26, 8); g.strokeRoundedRect(ox - 78, oy - 12, 156, 26, 8);
-      // franjas de aviso
-      g.fillStyle(INK);
-      for (let i = 0; i < 5; i++) g.fillTriangle(ox - 60 + i * 22, oy + 12, ox - 50 + i * 22, oy - 10, ox - 44 + i * 22, oy - 10);
-      g.fillStyle(0xffe066);
-      for (let i = 0; i < 5; i++) g.fillTriangle(ox - 54 + i * 22, oy + 12, ox - 44 + i * 22, oy - 10, ox - 38 + i * 22, oy - 10);
-      g.lineStyle(5, INK); g.strokeRoundedRect(ox - 78, oy - 12, 156, 26, 8);
-      // cabina
-      g.fillStyle(0xff8a2a);
-      g.fillRoundedRect(ox - 34, oy - 58, 60, 48, { tl: 8, tr: 16, bl: 0, br: 0 });
-      g.strokeRoundedRect(ox - 34, oy - 58, 60, 48, { tl: 8, tr: 16, bl: 0, br: 0 });
-      // capó
-      g.fillStyle(0xff8a2a);
-      g.fillRoundedRect(ox + 22, oy - 30, 50, 22, { tl: 4, tr: 10, bl: 0, br: 0 });
-      g.strokeRoundedRect(ox + 22, oy - 30, 50, 22, { tl: 4, tr: 10, bl: 0, br: 0 });
-      // nieve en el techo
-      g.fillStyle(0xffffff); g.fillRoundedRect(ox - 36, oy - 64, 64, 10, 5);
-      // luz giratoria
-      g.fillStyle(0xffc21a); g.fillRoundedRect(ox - 12, oy - 76, 18, 14, { tl: 7, tr: 7, bl: 0, br: 0 });
-      g.lineStyle(3, INK); g.strokeRoundedRect(ox - 12, oy - 76, 18, 14, { tl: 7, tr: 7, bl: 0, br: 0 });
-      // ventana
-      g.fillStyle(0x9be3ff);
-      g.fillRoundedRect(ox - 22, oy - 50, 40, 24, { tl: 4, tr: 10, bl: 2, br: 2 });
-      g.lineStyle(3, INK); g.strokeRoundedRect(ox - 22, oy - 50, 40, 24, { tl: 4, tr: 10, bl: 2, br: 2 });
-      g.fillStyle(0xffffff, 0.6); g.fillTriangle(ox - 16, oy - 30, ox - 6, oy - 48, ox + 2, oy - 48);
-      // faro
-      g.fillStyle(0xfff3a0); g.fillCircle(ox + 70, oy - 18, 6); g.lineStyle(3, INK); g.strokeCircle(ox + 70, oy - 18, 6);
-      // brazos de la pala
-      g.lineStyle(7, 0x6b7080); g.lineBetween(ox + 70, oy + 2, ox + 84, oy - 10); g.lineBetween(ox + 70, oy + 6, ox + 84, oy + 22);
-      // pala amarilla (cuerpo físico: x 82..94, y -54..44)
-      g.fillStyle(0xffd23f);
-      g.fillRoundedRect(ox + 80, oy - 56, 16, 100, { tl: 6, tr: 2, bl: 10, br: 2 });
-      g.lineStyle(5, INK); g.strokeRoundedRect(ox + 80, oy - 56, 16, 100, { tl: 6, tr: 2, bl: 10, br: 2 });
-      g.fillStyle(0xffffff, 0.45); g.fillRect(ox + 85, oy - 48, 4, 76);
-      g.fillStyle(INK); g.fillRect(ox + 80, oy + 37, 16, 6);
-      // brillo
-      g.fillStyle(0xffffff, 0.35); g.fillRoundedRect(ox - 70, oy - 8, 60, 4, 2);
-    });
+    applyPlow(this);
     this.tex('beacon', 40, 40, (g) => { g.fillStyle(0xffc21a, 0.55); g.fillCircle(20, 20, 20); g.fillStyle(0xfff3a0, 0.9); g.fillCircle(20, 20, 9); });
   }
 

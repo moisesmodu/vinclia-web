@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { applyRocket, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 /** Las texturas se dibujan al doble de resolución y se muestran a 0,5 (nítidas con zoom de cámara). */
@@ -18,16 +20,13 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
-    for (let face = 0; face < 3; face++) this.makeRocket(face);
-    // icono cuadrado del cohete asustado (pantalla final)
-    const rt = this.make.renderTexture({ x: 0, y: 0, width: 100 * K, height: 100 * K }, false);
-    rt.draw('rocket1', 18 * K, 0);
-    rt.saveTexture('rocket-ic');
-    this.makeFlame();
+    makeExtraIcons(this);
+    save.load();
+    applyRocket(this);
+    makeCosmetics(this);
     this.makePlatform();
     this.makeSky();
     this.makeBits();
-    save.load();
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -38,71 +37,6 @@ export class Boot extends Phaser.Scene {
     draw(g);
     g.generateTexture(key, w, h);
     g.destroy();
-  }
-
-  /**
-   * Cohete de 64×100 (unidades de diseño). Origen de diseño (32, 50); patas apoyadas en y = 92.
-   * face: 0 normal, 1 asustado (cae rápido o se estrella), 2 feliz (aterrizaje perfecto).
-   */
-  private makeRocket(face: number) {
-    const k = K;
-    this.tex(`rocket${face}`, 64 * k, 100 * k, (g) => {
-      // patas
-      g.lineStyle(9 * k, INK); g.lineBetween(20 * k, 64 * k, 9 * k, 88 * k); g.lineBetween(44 * k, 64 * k, 55 * k, 88 * k);
-      g.lineStyle(5 * k, 0xb9c2d6); g.lineBetween(20 * k, 64 * k, 9 * k, 88 * k); g.lineBetween(44 * k, 64 * k, 55 * k, 88 * k);
-      g.fillStyle(0x8a93ab); g.lineStyle(3 * k, INK);
-      g.fillRoundedRect(2 * k, 85 * k, 16 * k, 7 * k, 3 * k); g.strokeRoundedRect(2 * k, 85 * k, 16 * k, 7 * k, 3 * k);
-      g.fillRoundedRect(46 * k, 85 * k, 16 * k, 7 * k, 3 * k); g.strokeRoundedRect(46 * k, 85 * k, 16 * k, 7 * k, 3 * k);
-      // tobera
-      g.fillStyle(0x8a93ab); g.lineStyle(4 * k, INK);
-      const noz = [new Phaser.Math.Vector2(24 * k, 72 * k), new Phaser.Math.Vector2(40 * k, 72 * k), new Phaser.Math.Vector2(45 * k, 84 * k), new Phaser.Math.Vector2(19 * k, 84 * k)];
-      g.fillPoints(noz, true); g.strokePoints(noz, true, true);
-      // aletas
-      g.fillStyle(0xffc21a);
-      const finL = [new Phaser.Math.Vector2(17 * k, 44 * k), new Phaser.Math.Vector2(3 * k, 74 * k), new Phaser.Math.Vector2(4 * k, 80 * k), new Phaser.Math.Vector2(18 * k, 72 * k)];
-      const finR = finL.map((p) => new Phaser.Math.Vector2(64 * k - p.x, p.y));
-      g.fillPoints(finL, true); g.strokePoints(finL, true, true);
-      g.fillPoints(finR, true); g.strokePoints(finR, true, true);
-      // cuerpo blanco con morro y franja rojos
-      g.fillStyle(0xffffff); g.fillRoundedRect(14 * k, 6 * k, 36 * k, 70 * k, { tl: 18 * k, tr: 18 * k, bl: 8 * k, br: 8 * k });
-      g.fillStyle(0xff4d5e); g.fillRoundedRect(14 * k, 6 * k, 36 * k, 20 * k, { tl: 18 * k, tr: 18 * k, bl: 0, br: 0 });
-      g.fillRect(14 * k, 64 * k, 36 * k, 5 * k);
-      g.fillStyle(0xffffff, 0.6); g.fillRoundedRect(19 * k, 30 * k, 4 * k, 30 * k, 2 * k);
-      g.lineStyle(4.5 * k, INK); g.strokeRoundedRect(14 * k, 6 * k, 36 * k, 70 * k, { tl: 18 * k, tr: 18 * k, bl: 8 * k, br: 8 * k });
-      // ojo de buey con la cara
-      const cx = 32 * k, cy = 44 * k;
-      g.fillStyle(0xc5ccdb); g.fillCircle(cx, cy, 14.5 * k);
-      g.fillStyle(0x9be3ff); g.fillCircle(cx, cy, 11 * k);
-      g.lineStyle(3.5 * k, INK); g.strokeCircle(cx, cy, 14.5 * k); g.lineStyle(2.5 * k, INK); g.strokeCircle(cx, cy, 11 * k);
-      g.fillStyle(INK); g.lineStyle(2.2 * k, INK);
-      if (face === 0) {
-        g.fillCircle(cx - 4.5 * k, cy - 1.5 * k, 2.3 * k); g.fillCircle(cx + 4.5 * k, cy - 1.5 * k, 2.3 * k);
-        g.fillStyle(0xffffff); g.fillCircle(cx - 3.7 * k, cy - 2.3 * k, 0.9 * k); g.fillCircle(cx + 5.3 * k, cy - 2.3 * k, 0.9 * k);
-        g.beginPath(); g.arc(cx, cy + 2.5 * k, 4 * k, 0.35, Math.PI - 0.35); g.strokePath();
-      } else if (face === 1) {
-        g.fillStyle(0xffffff); g.fillCircle(cx - 4.5 * k, cy - 2.5 * k, 3.4 * k); g.fillCircle(cx + 4.5 * k, cy - 2.5 * k, 3.4 * k);
-        g.strokeCircle(cx - 4.5 * k, cy - 2.5 * k, 3.4 * k); g.strokeCircle(cx + 4.5 * k, cy - 2.5 * k, 3.4 * k);
-        g.fillStyle(INK); g.fillCircle(cx - 4.5 * k, cy - 2.5 * k, 1.4 * k); g.fillCircle(cx + 4.5 * k, cy - 2.5 * k, 1.4 * k);
-        g.fillEllipse(cx, cy + 5 * k, 4.5 * k, 5.5 * k);
-      } else {
-        g.lineStyle(2.4 * k, INK);
-        g.beginPath(); g.arc(cx - 4.5 * k, cy, 2.6 * k, Math.PI + 0.3, -0.3); g.strokePath();
-        g.beginPath(); g.arc(cx + 4.5 * k, cy, 2.6 * k, Math.PI + 0.3, -0.3); g.strokePath();
-        g.fillStyle(INK); g.beginPath(); g.arc(cx, cy + 2 * k, 5 * k, 0, Math.PI); g.closePath(); g.fillPath();
-        g.fillStyle(0xff8fb1, 0.8); g.fillCircle(cx - 8 * k, cy + 3 * k, 2 * k); g.fillCircle(cx + 8 * k, cy + 3 * k, 2 * k);
-      }
-    });
-  }
-
-  /** Llama del propulsor (origen arriba, en la tobera). */
-  private makeFlame() {
-    const k = K;
-    this.tex('flame', 32 * k, 56 * k, (g) => {
-      g.fillStyle(0xff7a1a); g.fillEllipse(16 * k, 24 * k, 26 * k, 48 * k);
-      g.lineStyle(3 * k, INK); g.strokeEllipse(16 * k, 24 * k, 26 * k, 48 * k);
-      g.fillStyle(0xffd23f); g.fillEllipse(16 * k, 19 * k, 16 * k, 32 * k);
-      g.fillStyle(0xfff6c8); g.fillEllipse(16 * k, 14 * k, 8 * k, 16 * k);
-    });
   }
 
   /** Plataforma flotante (fuente de un NineSlice: se estira a cualquier ancho sin deformar los bordes). */

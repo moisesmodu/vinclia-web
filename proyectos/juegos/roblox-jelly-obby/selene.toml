@@ -1,0 +1,2 @@
+# Lint de src/ con la biblioteca estándar de Roblox (la CI la genera con `selene generate-roblox-std`).
+std = "roblox"

@@ -7,4 +7,8 @@ export const save = new Save('jelly-stack.v1', {
   runs: 0,
   tutorialDone: false,
   muted: false,
+  owned: [] as string[],                       // cosméticos comprados (comun/tienda.ts)
+  equipped: {} as Record<string, string>,      // cosmético puesto por hueco
+  dailyDate: '',                               // último día con recompensa diaria cobrada (comun/diario.ts)
+  dailyStreak: 0,                              // días seguidos
 });
