@@ -110,9 +110,17 @@
   {
     "slug": "hook-hop",
     "titulo": "Hook Hop",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Habilidad de balanceo con cuerda (tipo Stickman Hook), una pulsación: mantener = engancharse, soltar = volar",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Hold to grab a vine, release to fly! Swing a cheeky monkey through the jungle, grab bananas and don't fall in the river.",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
   },
   {
     "slug": "trick-floor",

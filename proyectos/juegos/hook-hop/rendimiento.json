@@ -1,0 +1,24 @@
+{
+  "juego": "hook-hop",
+  "fecha": "2026-10-29",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 1761,
+  "fpsEnEsteContenedor": 25.8,
+  "cpuPorFotogramaMs": {
+    "media": 3.59,
+    "p50": 3,
+    "p95": 8.5,
+    "p99": 13.6
+  },
+  "fpsMaximoPorCpu": 118,
+  "metrosPorPartidaPilotoAutomatico": [
+    "916 (sin terminar)"
+  ],
+  "segundosPorPartida": [],
+  "cargaDelSistema": [
+    4.87,
+    6.5,
+    7.75
+  ],
+  "errores": []
+}

@@ -1,9 +1,9 @@
 import { Save } from '@comun/save';
 
-/** Guardado del juego. Cambia la clave al copiar la plantilla (scripts/new-game.mjs lo hace solo). */
+/** Todo lo que se guarda de Hook Hop (en la cuenta de CrazyGames o en localStorage). */
 export const save = new Save('hook-hop.v1', {
-  best: 0,
-  coins: 0,
+  best: 0,           // mejor distancia (m)
+  coins: 0,          // plátanos acumulados (la moneda del menú)
   runs: 0,
   tutorialDone: false,
   muted: false,
