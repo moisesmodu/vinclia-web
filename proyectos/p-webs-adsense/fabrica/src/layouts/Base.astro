@@ -5,8 +5,10 @@ import '../styles/base.css';
 import '../styles/calc.css';
 import '../styles/paginas.css';
 import type { Lang } from '../lib/def';
-import { sitio, anunciosActivos, pubId, SITIO_ID } from '../lib/sitio';
-import { url, absoluta, buscar } from '../lib/rutas';
+import { sitio, anunciosActivos, pubId, SITIO_ID, LANGS } from '../lib/sitio';
+import { t } from '../lib/def';
+import { icono } from '../lib/iconos';
+import { url, absoluta, buscar, fichasSitio } from '../lib/rutas';
 import { UI } from '../lib/ui';
 import familia from '../../familia.json';
 // Tipografías de la familia Claro alojadas en el propio sitio (sin peticiones a Google): Manrope 700 e Inter 400/600
@@ -22,8 +24,10 @@ interface Props {
   alternas: Partial<Record<Lang, string>>;
   jsonld?: object[];
   actual?: 'inicio' | 'datos' | 'sobre';
+  /** Tipo de página (rutas.ts): en la calculadora la cabecera no se queda fija para no tapar el resultado. */
+  tipo?: string;
 }
-const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual } = Astro.props;
+const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual, tipo } = Astro.props;
 const u = UI[lang];
 const c = sitio.colores;
 const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--marca:${c.marca};--acento:${c.acento};--cabecera:${c.cabecera};--fondo:${c.fondo};--tenue:${c.tenue};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`
@@ -34,7 +38,11 @@ const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro
 const mc = sitio.marcaClaro;
 // Marca de la familia Claro: una C abierta con una línea de horizonte (marcas/logos/p-webs-adsense-icono.svg)
 const marcaSvg = (horizonte: string) => `<svg viewBox="0 0 56 56" width="32" height="32" aria-hidden="true" focusable="false"><path d="M44 16a20 20 0 1 0 0 24" stroke="${c.marca}" stroke-width="9" fill="none" stroke-linecap="round"/><rect x="26" y="25" width="26" height="6" rx="3" fill="${horizonte}"/></svg>`;
-const otra: Lang = lang === 'es' ? 'ca' : 'es';
+const nombreIdioma: Record<string, string> = { es: 'Castellano', ca: 'Català' };
+const metodo = lang === 'ca' ? 'Mètode' : 'Método';
+const fichasPie = fichasSitio().slice(0, 4).map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang) }));
+// Imagen para compartir (1200×630, JPEG; scripts/og.mjs): una por sitio e idioma
+const og = new URL(`og/${SITIO_ID}${lang === 'ca' ? '-ca' : ''}.jpg`, absoluta('')).href;
 const inicio = buscar('inicio', lang)!;
 const datos = buscar('fichas', lang)!;
 const sobre = buscar('legal:sobre', lang)!;
@@ -56,14 +64,20 @@ const hermanos = familia.sitios.filter((x) => x.id !== SITIO_ID && x.estado === 
   <link rel="canonical" href={absoluta(ruta)} />
   {Object.entries(alternas).map(([l, r]) => <link rel="alternate" hreflang={l} href={absoluta(r!)} />)}
   {alternas.es !== undefined && <link rel="alternate" hreflang="x-default" href={absoluta(alternas.es)} />}
-  <meta name="theme-color" content={c.primario} />
+  <meta name="theme-color" content={c.cabecera} />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content={sitio.nombre} />
   <meta property="og:title" content={titulo} />
   <meta property="og:description" content={descripcion} />
   <meta property="og:url" content={absoluta(ruta)} />
   <meta property="og:locale" content={((import.meta.env.LOCALES as Record<string, string> | undefined)?.[lang] ?? (lang === 'es' ? 'es-ES' : 'ca-ES')).replace('-', '_')} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content={og} />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={`${sitio.nombre}: ${sitio.lema[lang]}`} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={og} />
   <link rel="icon" href={favicon} type="image/svg+xml" />
   <link rel="preload" href={manrope700} as="font" type="font/woff2" crossorigin />
   <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin />
@@ -82,16 +96,38 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
   )}
   {sitio.umami.id && <script is:inline defer src={sitio.umami.src} data-website-id={sitio.umami.id} data-do-not-track="true"></script>}
 </head>
-<body>
+<body class:list={[`t-${tipo ?? 'otra'}`]}>
   <a class="saltar" href="#contenido">{u.saltar}</a>
-  <header class="cab">
-    <div class="env">
+  <header class:list={['cab', { fija: tipo !== 'calc' }]}>
+    <div class="env cab-in">
       <a class="logo" href={url(inicio.ruta)} aria-label={`${sitio.nombre}: ${u.inicio}`}><Fragment set:html={marcaSvg('#FFFFFF')} /><span>{mc.partes[0]}<b>{mc.partes[1]}</b></span></a>
       <nav class="nav" aria-label={u.menu}>
         <a href={url(inicio.ruta) + '#calculadoras'} aria-current={actual === 'inicio' ? 'page' : undefined}>{u.calculadoras}</a>
         <a href={url(datos.ruta)} aria-current={actual === 'datos' ? 'page' : undefined}>{u.datos}</a>
-        {alternas[otra] !== undefined && <a class="idioma" href={url(alternas[otra]!)} hreflang={otra} lang={otra} title={u.cambiarIdioma}>{u.idioma}</a>}
+        <a href={url(sobre.ruta)} aria-current={actual === 'sobre' ? 'page' : undefined}>{metodo}</a>
       </nav>
+      {LANGS.length > 1 && (
+        <div class="idiomas" aria-label={lang === 'ca' ? 'Idioma' : 'Idioma'} role="group">
+          {LANGS.map((l) => l === lang
+            ? <span class="idi act" lang={l} aria-current="true"><span class="vh">{nombreIdioma[l]}</span><span aria-hidden="true">{l.toUpperCase()}</span></span>
+            : alternas[l] !== undefined
+              ? <a class="idi" href={url(alternas[l]!)} hreflang={l} lang={l} title={u.cambiarIdioma}><span class="vh">{nombreIdioma[l]}</span><span aria-hidden="true">{l.toUpperCase()}</span></a>
+              : <span class="idi off" lang={l} aria-hidden="true">{l.toUpperCase()}</span>)}
+        </div>
+      )}
+      <details class="menu">
+        <summary aria-label={u.menu}><span class="hamb" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-t">{u.menu}</span></summary>
+        <div class="menu-panel">
+          <p class="menu-et">{u.calculadoras}</p>
+          <ul class="menu-cats">
+            {(sitio.categorias ?? []).map((c: any) => <li><a href={url(inicio.ruta) + '#cat-' + c.id}><Fragment set:html={icono(c.icono, 20)} />{c.nombre[lang] ?? c.nombre.es}</a></li>)}
+          </ul>
+          <ul class="menu-otros">
+            <li><a href={url(datos.ruta)}><Fragment set:html={icono('tabla', 20)} />{u.datos}</a></li>
+            <li><a href={url(sobre.ruta)}><Fragment set:html={icono('escudo', 20)} />{metodo}</a></li>
+          </ul>
+        </div>
+      </details>
     </div>
   </header>
   <main id="contenido" class="env">
@@ -99,37 +135,51 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
   </main>
   <footer class="pie">
     <div class="env">
-      <div>
-        <p class="pie-marca"><Fragment set:html={marcaSvg('#FFFFFF')} /><span>{mc.partes[0]}<b>{mc.partes[1]}</b></span></p>
-        <p class="promesa">{mc.promesa[lang]}</p>
-        <p>{sitio.lema[lang]}.</p>
-        <p class="sello">{mc.sello[lang]}</p>
-        <p>© {anio} {sitio.titular.nombre} · <a href={url(sobre.ruta)}>{u.legal.sobre}</a></p>
+      <div class="pie-top">
+        <div class="pie-id">
+          <p class="pie-marca"><Fragment set:html={marcaSvg('#FFFFFF')} /><span>{mc.partes[0]}<b>{mc.partes[1]}</b></span></p>
+          <p class="promesa">{mc.promesa[lang] ?? mc.promesa.es}</p>
+          <p class="pie-lema">{sitio.lema[lang]}.</p>
+        </div>
+        <p class="sello"><Fragment set:html={icono('escudo', 18)} /><span>{mc.sello[lang] ?? mc.sello.es}</span></p>
       </div>
-      <div>
-        <h2>{u.datos}</h2>
-        <ul>
-          <li><a href={url(datos.ruta)}>{u.todas}</a></li>
-          <li><a href={url(inicio.ruta) + '#calculadoras'}>{u.calculadoras}</a></li>
-        </ul>
-      </div>
-      {hermanos.length > 0 && (
+      <div class="pie-cols">
         <div>
-          <h2>{lang === 'ca' ? 'Família Claro' : 'Familia Claro'}</h2>
-          <ul class="familia">
-            {hermanos.map((x) => <li><a href={x.url + (lang !== 'es' && x.idiomas.includes(lang) ? `/${lang}/` : '/')}><b>{x.nombre}</b><span>{x.interes[lang] ?? x.interes.es}</span></a></li>)}
-            {familia.portal.url && <li><a href={familia.portal.url + '/'}><b>CalculaClaro</b><span>{lang === 'ca' ? 'Totes les calculadores de la família' : 'Todas las calculadoras de la familia'}</span></a></li>}
+          <h2>{u.calculadoras}</h2>
+          <ul>
+            {(sitio.categorias ?? []).map((c: any) => <li><a href={url(inicio.ruta) + '#cat-' + c.id}>{c.nombre[lang] ?? c.nombre.es}</a></li>)}
           </ul>
         </div>
-      )}
-      <div>
-        <h2>Legal</h2>
-        <ul>
-          <li><a href={url(buscar('legal:aviso', lang)!.ruta)}>{u.legal.aviso}</a></li>
-          <li><a href={url(buscar('legal:privacidad', lang)!.ruta)}>{u.legal.privacidad}</a></li>
-          <li><a href={url(buscar('legal:cookies', lang)!.ruta)}>{u.legal.cookies}</a></li>
-          {ads && <li><button type="button" id="gestionar-cookies">{u.legal.gestionar}</button></li>}
-        </ul>
+        <div>
+          <h2>{u.datos}</h2>
+          <ul>
+            {fichasPie.map((f) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}
+            <li><a href={url(datos.ruta)}>{u.todas} →</a></li>
+          </ul>
+        </div>
+        {hermanos.length > 0 && (
+          <div class="pie-fam">
+            <h2>{lang === 'ca' ? 'Família Claro' : 'Familia Claro'}</h2>
+            <ul class="familia">
+              {hermanos.map((x) => <li><a href={x.url + (lang !== 'es' && x.idiomas.includes(lang) ? `/${lang}/` : '/')}><Fragment set:html={icono(x.icono, 18)} /><span><b>{x.nombre}</b><span>{x.interes[lang] ?? x.interes.es}</span></span></a></li>)}
+              {familia.portal.url && <li><a href={familia.portal.url + '/'}><Fragment set:html={icono('calculadora', 18)} /><span><b>CalculaClaro</b><span>{lang === 'ca' ? 'Totes les calculadores de la família' : 'Todas las calculadoras de la familia'}</span></span></a></li>}
+            </ul>
+          </div>
+        )}
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href={url(sobre.ruta)}>{u.legal.sobre}</a></li>
+            <li><a href={url(buscar('legal:aviso', lang)!.ruta)}>{u.legal.aviso}</a></li>
+            <li><a href={url(buscar('legal:privacidad', lang)!.ruta)}>{u.legal.privacidad}</a></li>
+            <li><a href={url(buscar('legal:cookies', lang)!.ruta)}>{u.legal.cookies}</a></li>
+            {ads && <li><button type="button" id="gestionar-cookies">{u.legal.gestionar}</button></li>}
+          </ul>
+        </div>
+      </div>
+      <div class="pie-base">
+        <p>© {anio} {sitio.titular.nombre} · {sitio.nombre}</p>
+        <p>{lang === 'ca' ? 'Resultats orientatius amb paràmetres oficials. Sense registre.' : 'Resultados orientativos con parámetros oficiales. Sin registro.'}</p>
       </div>
     </div>
   </footer>

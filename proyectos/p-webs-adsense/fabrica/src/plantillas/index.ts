@@ -1,6 +1,6 @@
 // Plantillas de páginas programáticas. Cada una recibe una fila de CSV y devuelve el contenido de la página,
 // siempre con datos calculados que cambian de fila a fila (nada de texto repetido con otra cifra).
-import { tt, type Lang, type T, type Tabla } from '../lib/def';
+import { tt, type Lang, type T, type Tabla, type Formato } from '../lib/def';
 import type { Bloques } from '../lib/params';
 import { sueldoNeto } from '../lib/calc/laboral';
 import { cotizacion } from '../lib/calc/ss';
@@ -18,7 +18,14 @@ export interface PaginaProg {
   calc: string;
   query: Record<string, string | number>;
   enlaces?: { fila: Record<string, string>; texto: string }[];
+  /** Cifra protagonista de la cabecera de la página y datos que la acompañan. */
+  cifra?: { e: string; v: number; f: Formato; nota?: string; extra?: { e: string; v: number; f: Formato }[] };
+  /** Gráfico pequeño de la cabecera: reparto de un total o comparación con barras. */
+  grafico?: GraficoProg;
 }
+export type GraficoProg =
+  | { tipo: 'reparto'; titulo: string; partes: { e: string; v: number }[]; formato: Formato }
+  | { tipo: 'barras'; titulo: string; desc: string; filas: { e: string; v: number; act?: boolean }[]; formato: Formato };
 type Ctx = { P: Bloques; lang: Lang; anio: number; filas: Record<string, string>[] };
 type Plantilla = (fila: Record<string, string>, ctx: Ctx) => PaginaProg;
 
@@ -63,6 +70,10 @@ export const PLANTILLAS: Record<string, Plantilla> = {
       ],
       calc: 'sueldo-neto',
       query: { bruto: b },
+      cifra: { e: L(lang, 'Neto en cada paga (14 pagas)', 'Net a cada paga (14 pagues)'), v: a14.netoOrdinaria, f: 'eur', nota: L(lang, `${eur(a12.netoOrdinaria, lang, 2)} si cobras en 12 pagas`, `${eur(a12.netoOrdinaria, lang, 2)} si cobres en 12 pagues`),
+        extra: [{ e: L(lang, 'Neto anual', 'Net anual'), v: a14.netoAnual, f: 'eur0' }, { e: L(lang, 'Retención de IRPF', 'Retenció d’IRPF'), v: a14.ret.tipo, f: 'pct' }, { e: L(lang, 'Coste para la empresa', 'Cost per a l’empresa'), v: a14.costeEmpresa, f: 'eur0' }] },
+      grafico: { tipo: 'reparto', titulo: L(lang, `A dónde van tus ${num(b, lang)} € brutos al año`, `On van els teus ${num(b, lang)} € bruts l’any`), formato: 'eur0',
+        partes: [{ e: L(lang, 'Neto para ti', 'Net per a tu'), v: a14.netoAnual }, { e: L(lang, 'Seguridad Social', 'Seguretat Social'), v: ss }, { e: L(lang, 'Retención de IRPF', 'Retenció d’IRPF'), v: r2(b - a14.netoAnual - ss) }] },
       enlaces: vecinos(filas, fila).map((f) => ({ fila: f, texto: L(lang, `${num(+f.bruto, lang)} € brutos`, `${num(+f.bruto, lang)} € bruts`) })),
     };
   },
@@ -73,7 +84,8 @@ export const PLANTILLAS: Record<string, Plantilla> = {
     const esc = P.fiscal.irpf.escalas_autonomicas[c];
     const filasT = brutos.map((b) => { const r = sueldoNeto({ brutoAnual: b, pagas: 14, ccaa: c }, P); const real = b - r.ss.trabajador.anual - r.renta!.cuota; return [b, r.netoOrdinaria, r.renta!.cuota, r.renta!.diferencia, r2(real / 14)]; });
     const r30 = sueldoNeto({ brutoAnual: 30000, pagas: 14, ccaa: c }, P);
-    const media30 = COM.reduce((s, x) => s + sueldoNeto({ brutoAnual: 30000, pagas: 14, ccaa: x }, P).renta!.cuota, 0) / COM.length;
+    const cuotas30 = COM.map((x) => ({ x, v: sueldoNeto({ brutoAnual: 30000, pagas: 14, ccaa: x }, P).renta!.cuota }));
+    const media30 = cuotas30.reduce((s, x) => s + x.v, 0) / COM.length;
     const dif = r30.renta!.cuota - media30;
     let d = 0;
     return {
@@ -89,6 +101,11 @@ export const PLANTILLAS: Record<string, Plantilla> = {
       ],
       calc: 'sueldo-neto',
       query: { ccaa: c },
+      cifra: { e: L(lang, 'Neto real por paga con 30.000 € brutos', 'Net real per paga amb 30.000 € bruts'), v: r2((30000 - r30.ss.trabajador.anual - r30.renta!.cuota) / 14), f: 'eur', nota: L(lang, '14 pagas, soltero sin hijos, después de la renta', '14 pagues, solter sense fills, després de la renda'),
+        extra: [{ e: L(lang, 'IRPF anual', 'IRPF anual'), v: r30.renta!.cuota, f: 'eur0' }, { e: L(lang, 'Tipo autonómico mínimo', 'Tipus autonòmic mínim'), v: esc.escala[0].tipo, f: 'pct' }, { e: L(lang, 'Tipo autonómico máximo', 'Tipus autonòmic màxim'), v: esc.escala[esc.escala.length - 1].tipo, f: 'pct' }] },
+      grafico: { tipo: 'barras', titulo: L(lang, 'IRPF anual con 30.000 € brutos en cada comunidad', 'IRPF anual amb 30.000 € bruts a cada comunitat'), formato: 'eur0',
+        desc: L(lang, `Comparación del IRPF anual con 30.000 € brutos en ${COM.length} comunidades, de menor a mayor. ${nom(c, lang)}: ${eur(r30.renta!.cuota, lang)}.`, `Comparació de l’IRPF anual amb 30.000 € bruts a ${COM.length} comunitats, de menor a major. ${nom(c, lang)}: ${eur(r30.renta!.cuota, lang)}.`),
+        filas: [...cuotas30].sort((a, z) => a.v - z.v).map((y) => ({ e: nom(y.x, lang), v: r2(y.v), act: y.x === c })) },
       enlaces: filas.filter((f) => f !== fila).map((f) => ({ fila: f, texto: nom(f.ccaa, lang) })),
     };
   },
@@ -116,6 +133,11 @@ export const PLANTILLAS: Record<string, Plantilla> = {
       ],
       calc: 'irpf-renta',
       query: { ccaa: c },
+      cifra: { e: L(lang, 'IRPF con 40.000 € de base liquidable', 'IRPF amb 40.000 € de base liquidable'), v: r40, f: 'eur0', nota: L(lang, `Puesto ${pos} de ${COM.length}, de la más barata a la más cara`, `Posició ${pos} de ${COM.length}, de la més barata a la més cara`),
+        extra: [{ e: L(lang, 'Tipo mínimo total', 'Tipus mínim total'), v: comb[0].tipo, f: 'pct' }, { e: L(lang, 'Tipo máximo total', 'Tipus màxim total'), v: comb[comb.length - 1].tipo, f: 'pct' }] },
+      grafico: { tipo: 'barras', titulo: L(lang, 'IRPF con 40.000 € de base en cada comunidad', 'IRPF amb 40.000 € de base a cada comunitat'), formato: 'eur0',
+        desc: L(lang, `Comparación de la cuota del IRPF con 40.000 € de base liquidable en ${COM.length} comunidades, de menor a mayor. ${nom(c, lang)} es la ${pos}.ª.`, `Comparació de la quota de l’IRPF amb 40.000 € de base liquidable a ${COM.length} comunitats, de menor a major. ${nom(c, lang)} és la ${pos}a.`),
+        filas: rank.map((y) => ({ e: nom(y.x, lang), v: r2(y.t), act: y.x === c })) },
       enlaces: filas.filter((f) => f !== fila).map((f) => ({ fila: f, texto: nom(f.ccaa, lang) })),
     };
   },
@@ -138,6 +160,11 @@ export const PLANTILLAS: Record<string, Plantilla> = {
         filas: filasC.map(({ c, r }) => [nom(c, lang), r.total, r.tipoMedio, r.tipoMarginal, r2(r.total - ret.importe)]) }],
       calc: 'irpf-renta',
       query: { trabajo: b },
+      cifra: { e: L(lang, 'Retención de IRPF en nómina', 'Retenció d’IRPF a la nòmina'), v: ret.importe, f: 'eur0', nota: L(lang, `Al año, un ${ret.tipo} % del bruto, igual en toda España`, `L’any, un ${ret.tipo} % del brut, igual a tot Espanya`),
+        extra: [{ e: L(lang, 'IRPF mínimo', 'IRPF mínim'), v: min.r.total, f: 'eur0' }, { e: L(lang, 'IRPF máximo', 'IRPF màxim'), v: max.r.total, f: 'eur0' }] },
+      grafico: { tipo: 'barras', titulo: L(lang, `IRPF anual con ${num(b, lang)} € brutos por comunidad`, `IRPF anual amb ${num(b, lang)} € bruts per comunitat`), formato: 'eur0',
+        desc: L(lang, `De ${eur(min.r.total, lang)} en ${nom(min.c, lang)} a ${eur(max.r.total, lang)} en ${nom(max.c, lang)}.`, `De ${eur(min.r.total, lang)} a ${nom(min.c, lang)} a ${eur(max.r.total, lang)} a ${nom(max.c, lang)}.`),
+        filas: filasC.map(({ c, r }) => ({ e: nom(c, lang), v: r2(r.total) })) },
       enlaces: vecinos(filas, fila).map((f) => ({ fila: f, texto: L(lang, `${num(+f.bruto, lang)} € brutos`, `${num(+f.bruto, lang)} € bruts`) })),
     };
   },

@@ -16,6 +16,7 @@ import { PLANTILLAS } from '../plantillas/index';
 import { leerCSV } from '../lib/csv';
 import { nombreComunidad } from '../lib/campos';
 import { icono, iconoCalc } from '../lib/iconos';
+import { graficoFicha, serieFicha, minilinea, reparto, barras } from '../lib/graficos';
 
 export function getStaticPaths() {
   return paginas().map((p) => ({ params: { ruta: p.ruta || undefined }, props: { p } }));
@@ -54,7 +55,16 @@ if (p.tipo === 'inicio') {
   vista = {
     heroe: h && { ...h, d: defs[`../calculadoras/${h.calc}.ts`], ruta: buscar(`calc:${h.calc}`, lang)!.ruta },
     categorias: (sitio.categorias ?? []).map((c: any) => ({ ...c, calcs: c.calcs.map(resumenCalc) })),
-    cifras: (sitio.cifras ?? []).map((c: any) => ({ e: c.e[lang], nota: c.nota?.[lang], v: fmt(leerParam(c.p), c.f, lang), ruta: buscar(`ficha:${c.ficha}`, lang)?.ruta })),
+    cifras: (sitio.cifras ?? []).map((c: any) => {
+      // Si la ficha enlazada tiene serie histórica, la cifra lleva su minigráfico y la variación desde el primer año
+      const f = fichasSitio().find((x) => x.id === c.ficha);
+      const serie = f ? serieFicha(f.id, f.tablas({ P, lang, anio, sitio: SITIO_ID }), lang) : null;
+      const vs = serie?.valores;
+      const delta = vs ? Math.round((vs[vs.length - 1] / vs[0] - 1) * 100) : null;
+      return { e: c.e[lang], nota: c.nota?.[lang], v: fmt(leerParam(c.p), c.f, lang), ruta: buscar(`ficha:${c.ficha}`, lang)?.ruta,
+        mini: vs ? minilinea(vs, `${c.e[lang]}: ${lang === 'es' ? 'evolución desde' : 'evolució des del'} ${serie!.desde}`) : '',
+        delta: vs && delta ? `${delta > 0 ? '+' : '−'}${fmt(Math.abs(delta), 'num0', lang)}${pais === 'us' ? '%' : ' %'} ${lang === 'es' ? 'desde' : 'des del'} ${serie!.desde}` : '', sube: (delta ?? 0) > 0 };
+    }),
     destacadas: sitio.destacadas.slice(0, 5).map((id: string, k: number) => {
       const c = resumenCalc(id);
       if (k > 0) return c;
@@ -66,6 +76,8 @@ if (p.tipo === 'inicio') {
     todas: sitio.calculadoras.filter((id: string) => !sitio.destacadas.includes(id)).map(resumenCalc),
     fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang) })),
     colecciones: (sitio.programaticas ?? []).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id) })),
+    ilu: `/img/heroe-${SITIO_ID}`,
+    numFichas: fichasSitio().length,
   };
   jsonld = [
     { '@context': 'https://schema.org', '@type': 'WebSite', name: sitio.nombre, url: absoluta(inicio.ruta), inLanguage: lang, description: descripcion, publisher: editor },
@@ -103,14 +115,14 @@ if (p.tipo === 'inicio') {
   titulo = sitio.textosDatos?.[lang]?.titulo ?? (lang === 'es' ? `Datos oficiales: tablas para consultar y citar` : `Dades oficials: taules per consultar i citar`);
   descripcion = sitio.textosDatos?.[lang]?.descripcion ?? (lang === 'es' ? `Tablas con datos oficiales del BOE, la Seguridad Social y la Agencia Tributaria, actualizadas y descargables en CSV, de ${sitio.nombre}.` : `Taules amb dades oficials del BOE, la Seguretat Social i l’Agència Tributària, actualitzades i descarregables en CSV, de ${sitio.nombre}.`);
   actual = 'datos';
-  vista = { fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang) })) };
+  vista = { fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang), grafico: !!graficoFicha(f.id, f.tablas({ P, lang, anio, sitio: SITIO_ID }), lang), fuentes: f.fuentes.length })) };
   jsonld = [miga([{ n: u.inicio, r: inicio.ruta }, { n: u.datos, r: p.ruta }])];
 } else if (p.tipo === 'ficha') {
   const f = fichasSitio().find((x) => x.id === p.id)!;
   const tablas = f.tablas({ P, lang, anio, sitio: SITIO_ID });
   titulo = t(f.titulo, lang); descripcion = t(f.descripcion, lang); actual = 'datos';
   const csv = `${url(p.ruta).replace(/\/$/, '')}.csv`;
-  vista = { f, html: renderTablas(tablas, lang), csv, calc: f.calc ? resumenCalc(f.calc) : null };
+  vista = { f, html: renderTablas(tablas, lang), csv, calc: f.calc ? resumenCalc(f.calc) : null, grafico: graficoFicha(f.id, tablas, lang) };
   jsonld = [
     { '@context': 'https://schema.org', '@type': 'Dataset', name: t(f.h1, lang), description: descripcion, url: absoluta(p.ruta), inLanguage: lang, creator: editor, author: autor, license: 'https://creativecommons.org/licenses/by/4.0/', dateModified: hoy, isBasedOn: f.fuentes.map((x) => x.url), distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(csv, import.meta.env.SITE).href }] },
     miga([{ n: u.inicio, r: inicio.ruta }, { n: u.datos, r: datos.ruta }, { n: t(f.h1, lang), r: p.ruta }]),
@@ -124,7 +136,9 @@ if (p.tipo === 'inicio') {
   const calc = resumenCalc(pg.calc);
   const q = new URLSearchParams(Object.entries(pg.query).map(([k, v]) => [k, String(v)])).toString();
   const enlaces = (pg.enlaces ?? []).map((e) => ({ texto: e.texto, ruta: `${lang === 'es' ? '' : lang + '/'}${rellenar(col.slug[lang], e.fila)}` }));
-  vista = { pg, html: renderTablas(pg.tablas, lang), calc, href: `${url(calc.ruta)}?${q}`, enlaces, colTitulo: col.titulo[lang] };
+  const g = pg.grafico;
+  const grafico = !g ? '' : g.tipo === 'reparto' ? reparto({ titulo: g.titulo, partes: g.partes, formato: g.formato, lang }) : barras({ titulo: g.titulo, desc: g.desc, filas: g.filas, formato: g.formato, lang, compacto: true });
+  vista = { pg, html: renderTablas(pg.tablas, lang), calc, href: `${url(calc.ruta)}?${q}`, enlaces, colTitulo: col.titulo[lang], grafico, tipoGraf: g?.tipo };
   jsonld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: pg.h1, url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, dateModified: hoy }, miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: inicio.ruta }, { n: pg.h1, r: p.ruta }])];
 } else {
   const l = legal(p.id, lang, hoy);
@@ -136,25 +150,39 @@ const v = vista;
 // Texto del enlace a una página programática: la columna «etiqueta» del CSV si existe; si no, bruto o comunidad.
 const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0', lang) : x.fila!.ccaa ? nombreComunidad(x.fila!.ccaa, lang) : x.ruta);
 ---
-<Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual}>
+<Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual} tipo={p.tipo}>
   {p.tipo === 'inicio' && (
     <>
       <section class="portada">
         <div class="portada-txt">
-          <p class="eyebrow">{sitio.marcaClaro.promesa[lang]}</p>
+          <p class="eyebrow">{sitio.marcaClaro.promesa[lang] ?? sitio.marcaClaro.promesa.es}</p>
           <h1 set:html={v.heroe ? v.heroe.titulo[lang] : sitio.lema[lang]} />
           <p class="portada-sub">{v.heroe ? v.heroe.texto[lang] : sitio.descripcion[lang]}</p>
           <ul class="confianza">
-            <li><Fragment set:html={icono('escudo', 18)} />{lang === 'es' ? `Parámetros oficiales de ${anio}` : `Paràmetres oficials de ${anio}`}</li>
+            <li><Fragment set:html={icono('escudo', 18)} />{pais === 'us' ? `Cifras oficiales de ${anio}` : lang === 'es' ? `Parámetros oficiales de ${anio}` : `Paràmetres oficials de ${anio}`}</li>
             <li><Fragment set:html={icono('documento', 18)} />{lang === 'es' ? 'Método y fuentes publicados' : 'Mètode i fonts publicats'}</li>
             <li><Fragment set:html={icono('persona', 18)} />{lang === 'es' ? 'Sin registro ni cookies de seguimiento' : 'Sense registre ni galetes de seguiment'}</li>
           </ul>
         </div>
         {v.heroe && (
           <div class="portada-calc">
+            {/* Ilustración solo en pantallas anchas: en el móvil la fuente es un GIF vacío en línea y no se descarga nada */}
+            <picture class="portada-ilu">
+              <source media="(max-width: 959px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+              <img src={`${v.ilu}-800.webp`} srcset={`${v.ilu}-480.webp 480w, ${v.ilu}-800.webp 800w`} sizes="420px" width="800" height="800" alt="" fetchpriority="high" decoding="async" />
+            </picture>
             <Calculadora d={v.heroe.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} solo={v.heroe.campos} completa={{ href: url(v.heroe.ruta), texto: v.heroe.completa[lang] }} />
           </div>
         )}
+      </section>
+
+      <section class="banda" aria-label={lang === 'es' ? 'Cómo trabajamos' : 'Com treballem'}>
+        <ul>
+          <li><span class="ico-caja" set:html={icono('documento', 22)} /><div><strong>{lang === 'es' ? 'Método a la vista' : 'Mètode a la vista'}</strong><span>{lang === 'es' ? 'Cada calculadora explica la fórmula paso a paso.' : 'Cada calculadora explica la fórmula pas a pas.'} <a href={url(sobre.ruta)}>{lang === 'es' ? 'Cómo calculamos' : 'Com calculem'}</a></span></div></li>
+          <li><span class="ico-caja" set:html={icono('escudo', 22)} /><div><strong>{lang === 'es' ? 'Fuentes oficiales' : 'Fonts oficials'}</strong><span>{pais === 'us' ? 'IRS, Seguro Social (SSA), Departamento de Trabajo y cada estado.' : lang === 'es' ? 'BOE, Agencia Tributaria, Seguridad Social y SEPE.' : 'BOE, Agència Tributària, Seguretat Social i SEPE.'}</span></div></li>
+          <li><span class="ico-caja" set:html={icono('calendario', 22)} /><div><strong>{lang === 'es' ? 'Al día' : 'Al dia'}</strong><span>{lang === 'es' ? `Cifras de ${anio} revisadas el ${fecha(hoy)}.` : `Xifres del ${anio} revisades el ${fecha(hoy)}.`}{provisionales.includes(anio) ? (lang === 'es' ? ' Las provisionales, marcadas.' : ' Les provisionals, marcades.') : ''}</span></div></li>
+          <li><span class="ico-caja" set:html={icono('tabla', 22)} /><div><strong>{lang === 'es' ? 'Datos para citar' : 'Dades per citar'}</strong><span>{lang === 'es' ? `${v.numFichas} tablas con gráfico y CSV.` : `${v.numFichas} taules amb gràfic i CSV.`} <a href={url(datos.ruta)}>{u.datos}</a></span></div></li>
+        </ul>
       </section>
 
       <section aria-labelledby="mas-usadas">
@@ -172,21 +200,26 @@ const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.
 
       {v.cifras.length > 0 && (
         <section class="cifras" aria-labelledby="cifras-t">
-          <h2 id="cifras-t">{lang === 'es' ? `Las cifras de ${anio} que tienes que saber` : `Les xifres de ${anio} que has de saber`}</h2>
+          <div class="titulo-sec"><h2 id="cifras-t">{lang === 'es' ? `Las cifras de ${anio} que tienes que saber` : `Les xifres del ${anio} que has de saber`}</h2><a href={url(datos.ruta)}>{u.datos} →</a></div>
           <ul>
             {v.cifras.map((c: any) => (
-              <li><a href={c.ruta ? url(c.ruta) : undefined}><span class="cifra-v">{c.v}</span><span class="cifra-e">{c.e}</span>{c.nota && <span class="cifra-n">{c.nota}</span>}</a></li>
+              <li><a href={c.ruta ? url(c.ruta) : undefined}>
+                <span class="cifra-e">{c.e}</span>
+                <span class="cifra-v">{c.v}</span>
+                {c.nota && <span class="cifra-n">{c.nota}</span>}
+                {c.mini ? <span class="cifra-g"><Fragment set:html={c.mini} /><span class:list={['cifra-d', { sube: c.sube }]}>{c.delta}</span></span> : <span class="cifra-g cifra-ver">{lang === 'es' ? 'Ver la tabla' : 'Mostra la taula'} →</span>}
+              </a></li>
             ))}
           </ul>
         </section>
       )}
 
       <section aria-labelledby="calculadoras">
-        <h2 id="calculadoras">{lang === 'es' ? 'Todas las calculadoras' : 'Totes les calculadores'}</h2>
+        <div class="titulo-sec"><h2 id="calculadoras">{lang === 'es' ? 'Todas las calculadoras' : 'Totes les calculadores'}</h2></div>
         <div class="categorias">
           {v.categorias.map((cat: any) => (
-            <div class="categoria">
-              <h3><span class="ico-caja" set:html={icono(cat.icono, 20)} />{cat.nombre[lang]}</h3>
+            <div class="categoria" id={`cat-${cat.id}`}>
+              <h3><span class="ico-caja" set:html={icono(cat.icono, 20)} /><span>{cat.nombre[lang] ?? cat.nombre.es}</span><small>{cat.calcs.length}</small></h3>
               <ul>{cat.calcs.map((c: any) => <li><a href={url(c.ruta)}><span set:html={iconoCalc(c.id, 18)} />{c.h1.replace(/^Calculadora (de |del |d’|de la )?/i, '').replace(/^./, (x: string) => x.toUpperCase())}</a></li>)}</ul>
             </div>
           ))}
@@ -257,20 +290,33 @@ const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.
   {p.tipo === 'fichas' && (
     <>
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{u.datos}</span></nav>
-      <h1>{u.datos}</h1>
-      <p class="intro">{descripcion}</p>
-      <ul class="rejilla">{v.fichas.map((f: any) => <li><a class="tarjeta" href={url(f.ruta)}><strong>{f.h1}</strong><span>{f.desc}</span></a></li>)}</ul>
+      <header class="cab-pag">
+        <p class="eyebrow">{lang === 'es' ? `${v.fichas.length} tablas · CSV · CC BY 4.0` : `${v.fichas.length} taules · CSV · CC BY 4.0`}</p>
+        <h1>{u.datos}</h1>
+        <p class="intro">{descripcion}</p>
+      </header>
+      <ul class="rejilla">{v.fichas.map((f: any) => (
+        <li><a class="tarjeta" href={url(f.ruta)}>
+          <span class="ico-caja" set:html={icono(f.grafico ? 'subida' : 'tabla', 22)} />
+          <strong>{f.h1}</strong><span>{f.desc}</span>
+          <span class="tarjeta-pie">{f.grafico && <em>{lang === 'es' ? 'Gráfico' : 'Gràfic'}</em>}<em>{lang === 'es' ? 'Tabla' : 'Taula'}</em><em>CSV</em></span>
+        </a></li>
+      ))}</ul>
     </>
   )}
 
   {p.tipo === 'ficha' && (
     <>
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><a href={url(datos.ruta)}>{u.datos}</a><span aria-hidden="true">›</span><span>{t(v.f.h1, lang)}</span></nav>
-      <h1>{t(v.f.h1, lang)}</h1>
-      <div class="intro" set:html={t(v.f.intro, lang)} />
-      <p class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><a href={v.csv} download>{u.descargarCsv}</a></p>
+      <header class="cab-pag">
+        <p class="eyebrow">{u.datos} · CC BY 4.0</p>
+        <h1>{t(v.f.h1, lang)}</h1>
+        <div class="intro" set:html={t(v.f.intro, lang)} />
+        <div class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{v.f.fuentes.length} {lang === 'es' ? (v.f.fuentes.length === 1 ? 'fuente oficial' : 'fuentes oficiales') : (v.f.fuentes.length === 1 ? 'font oficial' : 'fonts oficials')}</span><a class="btn-csv" href={v.csv} download><Fragment set:html={icono('tabla', 16)} />{u.descargarCsv}</a></div>
+      </header>
+      {v.grafico && <Fragment set:html={v.grafico} />}
       <div class="ficha-tablas" set:html={v.html} />
-      {v.calc && <p style="margin-top:1.4rem"><a class="btn" href={url(v.calc.ruta)}>{u.usarCalc}: {v.calc.h1}</a></p>}
+      {v.calc && <a class="cta-calc" href={url(v.calc.ruta)}><span class="ico-caja" set:html={iconoCalc(v.calc.id, 24)} /><span><small>{u.usarCalc}</small><strong>{v.calc.h1}</strong></span><span class="ir" aria-hidden="true">→</span></a>}
       <Anuncio posicion="bajoResultado" lang={lang} />
       <h2>{u.fuentes}</h2>
       <ul class="fuentes">{v.f.fuentes.map((f: any) => <li><a href={f.url} rel="noopener">{t(f.nombre, lang)}</a></li>)}</ul>
@@ -282,11 +328,30 @@ const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.
   {p.tipo === 'prog' && (
     <>
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.colTitulo}</span></nav>
-      <h1>{v.pg.h1}</h1>
-      <div class="intro" set:html={v.pg.intro} />
-      <p class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></p>
-      {provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
-      <p><a class="btn" href={v.href}>{u.usarCalc}: {v.calc.h1}</a></p>
+      <header class="cab-pag">
+        <p class="eyebrow">{v.colTitulo} · {anio}</p>
+        <h1>{v.pg.h1.replace(/ (€|%)/g, '\u00a0$1')}</h1>
+      </header>
+      {v.pg.cifra && (
+        <section class="prog-cifra" aria-label={v.pg.cifra.e}>
+          <div class="pc-principal">
+            <span class="pc-e">{v.pg.cifra.e}</span>
+            <span class="pc-v">{fmt(v.pg.cifra.v, v.pg.cifra.f, lang)}</span>
+            {v.pg.cifra.nota && <span class="pc-n">{v.pg.cifra.nota}</span>}
+          </div>
+          {v.pg.cifra.extra?.length > 0 && <dl class="pc-extra">{v.pg.cifra.extra.map((x: any) => <div><dt>{x.e}</dt><dd>{fmt(x.v, x.f, lang)}</dd></div>)}</dl>}
+          {v.tipoGraf === 'reparto' && <div class="pc-graf"><Fragment set:html={v.grafico} /></div>}
+        </section>
+      )}
+      <div class:list={['prog-cuerpo', { 'con-graf': v.tipoGraf === 'barras' }]}>
+        <div>
+          <div class="intro" set:html={v.pg.intro} />
+          <p class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></p>
+          {provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
+          <a class="cta-calc" href={v.href}><span class="ico-caja" set:html={iconoCalc(v.calc.id, 24)} /><span><small>{u.usarCalc}</small><strong>{v.calc.h1}</strong></span><span class="ir" aria-hidden="true">→</span></a>
+        </div>
+        {v.tipoGraf === 'barras' && <Fragment set:html={v.grafico} />}
+      </div>
       <div class="ficha-tablas" set:html={v.html} />
       <Anuncio posicion="bajoResultado" lang={lang} />
       {v.enlaces.length > 0 && (<><h2>{lang === 'es' ? 'Consulta también' : 'Consulta també'}</h2><ul class="chips">{v.enlaces.map((e: any) => <li><a href={url(e.ruta)}>{e.texto}</a></li>)}</ul></>)}
@@ -297,11 +362,14 @@ const etiquetaProg = (x: Pagina) => x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.
   )}
 
   {p.tipo === 'legal' && (
-    <div class="estrecho">
+    <div class="estrecho legal">
       <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.l.titulo.split(' · ')[0]}</span></nav>
-      <h1>{v.l.titulo.split(' · ')[0]}</h1>
+      <header class="cab-pag">
+        <p class="eyebrow">{p.id === 'sobre' ? (lang === 'es' ? 'Método y equipo' : 'Mètode i equip') : 'Legal'}</p>
+        <h1>{v.l.titulo.split(' · ')[0]}</h1>
+        <p class="meta">{u.actualizado} {fecha(hoy)}</p>
+      </header>
       <div class="cuerpo" set:html={v.l.html} />
-      <p class="meta">{u.actualizado} {fecha(hoy)}</p>
     </div>
   )}
 </Base>
