@@ -1,11 +1,12 @@
 import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
+import { Levels } from './scenes/Levels';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
+// No physics engine: Rope Cut has its own small Verlet rope simulation (src/sim.ts).
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#4aa8ff',
+  scenes: [Boot, Menu, Levels, Play, Hud],
 });

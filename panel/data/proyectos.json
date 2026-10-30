@@ -889,7 +889,9 @@
       "Paper Glide · jugar": "https://juegos-casuales.vercel.app/paper-glide/",
       "Paper Glide · guía": "https://juegos-casuales.vercel.app/play/paper-glide/",
       "Hoop Bounce · jugar": "https://juegos-casuales.vercel.app/hoop-bounce/",
-      "Hoop Bounce · guía": "https://juegos-casuales.vercel.app/play/hoop-bounce/"
+      "Hoop Bounce · guía": "https://juegos-casuales.vercel.app/play/hoop-bounce/",
+      "Rope Cut · jugar": "https://juegos-casuales.vercel.app/rope-cut/",
+      "Rope Cut · guía": "https://juegos-casuales.vercel.app/play/rope-cut/"
     },
     "acciones": [
       {
@@ -1011,13 +1013,17 @@
       {
         "fecha": "2026-10-30",
         "texto": "Hoop Bounce listo (baloncesto de un toque con aro móvil, combos y pelota dorada), 5 paquetes, fichas y 5 páginas SEO"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Rope Cut listo (puzle de físicas, 40 niveles comprobados por bot). 14 juegos web con 70 paquetes y 88 páginas SEO; 4 juegos de Roblox con CI en verde"
       }
     ],
     "proximos": [
-      "Redesplegar la web con los 11 juegos (sesión del Mac)",
-      "Moisés: cuentas de CrazyGames, Poki, itch.io, GameDistribution y GameMonetize y subir los zips",
-      "Roblox: crear las 3 experiencias en create.roblox.com",
-      "Siguiente tanda: Rope Cut Feed, Hoop Bounce, Paper Glide y Snow Plow Simulator (Roblox)"
+      "Redesplegar la web con los 14 juegos (sesión del Mac)",
+      "Moisés: cuentas de los 5 portales y subir los zips",
+      "Roblox: crear las 4 experiencias (Snow Plow Simulator antes del 1/12)",
+      "Siguiente tanda: Pin Rescue, Tow Truck y Rocket Hop Tycoon (Roblox)"
     ],
     "paraMoises": [
       "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",

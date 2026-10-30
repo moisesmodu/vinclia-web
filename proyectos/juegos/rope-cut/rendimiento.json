@@ -1,0 +1,49 @@
+{
+  "juego": "rope-cut",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4, 45 s",
+  "cargaHastaMenuMs": 1986,
+  "fpsEnEsteContenedor": 33.9,
+  "cpuPorFotogramaMs": {
+    "frames": 1495,
+    "media": 2.71,
+    "p50": 2.4,
+    "p95": 5.4,
+    "p99": 8.5
+  },
+  "fpsMaximoPorCpu": 185,
+  "nivelesPilotoAutomatico": [
+    {
+      "level": 11,
+      "fails": 1
+    },
+    {
+      "level": 12,
+      "fails": 0
+    },
+    {
+      "level": 13,
+      "fails": 1
+    },
+    {
+      "level": 14,
+      "fails": 0
+    },
+    {
+      "level": 15,
+      "fails": 1
+    },
+    {
+      "level": 16,
+      "fails": 0
+    },
+    {
+      "level": 17,
+      "fails": 1
+    }
+  ],
+  "caramelosPerdidosAPropósito": 4,
+  "uptimeAntes": "01:59:52 up  3:14,  0 user,  load average: 1.24, 2.97, 4.96",
+  "uptimeDespues": "02:00:40 up  3:15,  0 user,  load average: 3.10, 3.22, 4.95",
+  "errores": []
+}

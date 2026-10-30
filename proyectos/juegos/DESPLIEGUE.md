@@ -91,3 +91,8 @@ Ejecutado el 2026-10-28
 ## Redespliegue pendiente · 11 juegos (30/10/2026)
 Nuevos y listos: Hook Hop, Trick Floor, Lane Dash, Fruit Stand, Paint Grab y Penalty Season; los 5 primeros con tienda,
 recompensa diaria y ×2. Volver a desplegar la rama: la portada debe mostrar 11 juegos y cada `/<juego>/` cargar su menú.
+
+## Redespliegue pendiente · 14 juegos (30/10/2026)
+Nuevos y listos desde el último despliegue: Hook Hop, Trick Floor, Lane Dash, Fruit Stand, Paint Grab, Penalty Season,
+Rope Cut, Hoop Bounce y Paper Glide. Volver a desplegar la rama: la portada debe mostrar 14 juegos y cada `/<juego>/`
+cargar su menú.
