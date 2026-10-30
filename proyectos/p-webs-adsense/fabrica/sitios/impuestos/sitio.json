@@ -107,6 +107,14 @@
       "titulo": {
         "es": "IRPF por comunidad autónoma",
         "ca": "IRPF per comunitat autònoma"
+      },
+      "indice": {
+        "es": "irpf-por-comunidad-autonoma",
+        "ca": "irpf-per-comunitat-autonoma"
+      },
+      "descripcion": {
+        "es": "Tramos del IRPF estatal y autonómico de cada comunidad, con la cuota según la base liquidable y el puesto frente a las demás.",
+        "ca": "Trams de l’IRPF estatal i autonòmic de cada comunitat, amb la quota segons la base liquidable i la posició davant de les altres."
       }
     },
     {
@@ -121,6 +129,102 @@
       "titulo": {
         "es": "IRPF según el salario",
         "ca": "IRPF segons el salari"
+      },
+      "indice": {
+        "es": "irpf-por-salario",
+        "ca": "irpf-per-salari"
+      },
+      "descripcion": {
+        "es": "Cuánto IRPF paga cada salario bruto de 15.000 a 150.000 € en cada comunidad, con la retención y el resultado de la renta.",
+        "ca": "Quant IRPF paga cada salari brut de 15.000 a 150.000 € a cada comunitat, amb la retenció i el resultat de la renda."
+      }
+    },
+    {
+      "id": "autonomos-tramo",
+      "plantilla": "autonomos-tramo",
+      "csv": "autonomos-tramos.csv",
+      "slug": {
+        "es": "cuota-autonomos-tramo-{tramo}",
+        "ca": "quota-autonoms-tram-{tramo}"
+      },
+      "calc": "sueldo-neto-autonomo",
+      "titulo": {
+        "es": "Cuota de autónomos por tramo",
+        "ca": "Quota d’autònoms per tram"
+      },
+      "indice": {
+        "es": "cuota-autonomos-por-tramo",
+        "ca": "quota-autonoms-per-tram"
+      },
+      "descripcion": {
+        "es": "Los 15 tramos de la cuota de autónomos: rendimiento, bases, cuota mínima y máxima, cuánto hay que ganar y el neto con IRPF.",
+        "ca": "Els 15 trams de la quota d’autònoms: rendiment, bases, quota mínima i màxima, quant cal guanyar i el net amb IRPF."
+      }
+    },
+    {
+      "id": "modelo-303-trimestre",
+      "plantilla": "modelo-303-trimestre",
+      "csv": "trimestres.csv",
+      "slug": {
+        "es": "modelo-303-{slug_es}",
+        "ca": "model-303-{slug_ca}"
+      },
+      "calc": "modelo-303",
+      "titulo": {
+        "es": "Modelo 303 por trimestre",
+        "ca": "Model 303 per trimestre"
+      },
+      "indice": {
+        "es": "modelo-303-por-trimestre",
+        "ca": "model-303-per-trimestre"
+      },
+      "descripcion": {
+        "es": "Plazos del modelo 303 de cada trimestre de 2027, con la domiciliación y un ejemplo calculado de principio a fin.",
+        "ca": "Terminis del model 303 de cada trimestre del 2027, amb la domiciliació i un exemple calculat de principi a fi."
+      }
+    },
+    {
+      "id": "modelo-130-trimestre",
+      "plantilla": "modelo-130-trimestre",
+      "csv": "trimestres.csv",
+      "slug": {
+        "es": "modelo-130-{slug_es}",
+        "ca": "model-130-{slug_ca}"
+      },
+      "calc": "modelo-130",
+      "titulo": {
+        "es": "Modelo 130 por trimestre",
+        "ca": "Model 130 per trimestre"
+      },
+      "indice": {
+        "es": "modelo-130-por-trimestre",
+        "ca": "model-130-per-trimestre"
+      },
+      "descripcion": {
+        "es": "Plazos del pago fraccionado del IRPF (modelo 130) de cada trimestre de 2027, con el cálculo acumulado de un ejemplo.",
+        "ca": "Terminis del pagament fraccionat de l’IRPF (model 130) de cada trimestre del 2027, amb el càlcul acumulat d’un exemple."
+      }
+    },
+    {
+      "id": "iva-producto",
+      "plantilla": "iva-producto",
+      "csv": "iva-productos.csv",
+      "slug": {
+        "es": "iva-{slug_es}",
+        "ca": "iva-{slug_ca}"
+      },
+      "calc": "iva",
+      "titulo": {
+        "es": "IVA de productos y servicios",
+        "ca": "IVA de productes i serveis"
+      },
+      "indice": {
+        "es": "iva-por-producto",
+        "ca": "iva-per-producte"
+      },
+      "descripcion": {
+        "es": "Qué IVA lleva cada producto o servicio de uso diario, con su artículo de la Ley 37/1992 y ejemplos para añadir y quitar el IVA.",
+        "ca": "Quin IVA porta cada producte o servei d’ús diari, amb el seu article de la Llei 37/1992 i exemples per afegir i treure l’IVA."
       }
     }
   ],
