@@ -111,3 +111,11 @@ Ejecutado el 2026-10-30
 El despliegue de las 13:16 publicó c7799e1, anterior a Pin Rescue, Tow Truck, Tiny Harbor y Jelly Merge. Volver a
 desplegar la rama actual: la portada debe mostrar 18 juegos y `/pin-rescue/`, `/tow-truck/`, `/tiny-harbor/` y
 `/jelly-merge/` cargar su menú.
+
+### Redespliegue con los 18 juegos (sesión del Mac, 31-10-2026, 00:08)
+Publicada la rama con el código de c1e5021, que incluye Pin Rescue, Tow Truck, Tiny Harbor y Jelly Merge. La nota anterior de
+esta sesión (c7799e1, 14 juegos) se escribió antes de ver la petición de los 18 juegos; esta la sustituye. Comprobado: la
+portada enlaza los 18 juegos listos de `juegos.json`, y cada `/<juego>/` da 200 y carga su script, también `/pin-rescue/`,
+`/tow-truck/`, `/tiny-harbor/` y `/jelly-merge/`.
+
+Ejecutado el 2026-10-31
