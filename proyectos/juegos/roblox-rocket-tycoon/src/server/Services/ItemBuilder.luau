@@ -127,7 +127,7 @@ local function upgrader(model: Model, origin: CFrame, def: Config.ButtonDef)
 end
 
 local function wall(model: Model, origin: CFrame, def: Config.ButtonDef)
-	local size = def.size or { 2, 2 }
+	local size: { number } = def.size or { 2, 2 }
 	local h = 8
 	WorldBuilder.part(
 		model,
@@ -301,7 +301,9 @@ function ItemBuilder.build(parent: Instance, origin: CFrame, def: Config.ButtonD
 	model.Name = def.id
 	model:SetAttribute("Button", def.id)
 	model:SetAttribute("Kind", def.kind)
-	local builder = if def.kind == "deco" then DECOS[def.id] else BUILDERS[def.kind]
+	local builder: ((Model, CFrame, Config.ButtonDef) -> ())? = if def.kind == "deco"
+		then DECOS[def.id]
+		else BUILDERS[def.kind]
 	if builder then
 		builder(model, origin, def)
 	else
