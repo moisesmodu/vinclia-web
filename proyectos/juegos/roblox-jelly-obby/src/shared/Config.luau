@@ -66,7 +66,6 @@ Config.Tower = {
 	padSize = 12, -- checkpoints de 12 × 12
 	baseHeight = 2, -- altura de la cara de arriba del primer checkpoint
 	pieceThickness = 1.6,
-	coreMargin = 20, -- distancia libre entre la columna central y el camino
 	minLength = 1.5, -- ninguna plataforma más corta
 	minWidth = 1.2, -- vigas estrechas: lo mínimo que se pisa
 	minGap = 1, -- hueco mínimo entre plataformas (las giratorias no chocan con sus vecinas)
@@ -238,7 +237,7 @@ Config.AntiCheat = {
 -- GUARDADO (DataStoreService)
 Config.Save = {
 	storeName = "JellyTowerObby_v1",
-	autosaveInterval = 120,
+	autosaveInterval = 60, -- los checkpoints no guardan al momento (límite de escrituras por clave); la cima, sí
 	lockExpiry = 420, -- un bloqueo de sesión más viejo que esto se considera abandonado (servidor caído)
 	loadAttempts = 6,
 	loadRetryDelay = 4,

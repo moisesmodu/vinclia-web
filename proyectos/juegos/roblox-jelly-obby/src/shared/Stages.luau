@@ -42,6 +42,10 @@ export type TowerParams = {
 }
 
 export type ZoneParams = {
+	id: string,
+	icon: string,
+	color: { number },
+	accent: { number },
 	kinds: { [string]: number },
 }
 
@@ -52,6 +56,7 @@ export type ObstacleParams = {
 	beamWidth: { number },
 	jellySize: { number },
 	jellyDelay: { number },
+	jellyRespawn: number,
 	bounceSize: number,
 	bounceLaunch: number,
 	trampolineSize: number,
@@ -59,8 +64,10 @@ export type ObstacleParams = {
 	conveyorLength: { number },
 	conveyorWidth: { number },
 	conveyorSpeed: { number },
+	maxBeltFraction: number,
 	vanishSize: { number },
 	vanishDelay: { number },
+	vanishRespawn: number,
 	movingLength: { number },
 	movingRange: { number },
 	movingSpeed: { number },
