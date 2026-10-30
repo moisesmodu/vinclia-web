@@ -158,3 +158,10 @@ Si el proyecto `calculaclaro` sale con otro nombre, como pasó con `cheque-claro
 `familia.json` → `portal.url`.
 
 Portal ejecutado el 29/10/2026 desde la sesión en la nube (salida ya compilada, Build Output API): https://calculaclaro.vercel.app/ (proyecto `calculaclaro`). Pendiente: redesplegar netoclaro, impuestoclaro y chequeclaro para que salga el pie «Familia Claro».
+
+### Redespliegue para el pie «Familia Claro» (sesión del Mac, 30-10-2026, 13:15)
+`netoclaro`, `impuestoclaro` y `chequeclaro` redesplegados con el commit 6c21b92 (rediseño y portal). Comprobado: los tres
+dan 200 y su pie «Familia Claro» enlaza a NetoClaro, ImpuestoClaro, ChequeClaro (https://cheque-claro.vercel.app) y al
+portal https://calculaclaro.vercel.app.
+
+Ejecutado el 2026-10-30
