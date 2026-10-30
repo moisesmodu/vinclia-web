@@ -1,0 +1,63 @@
+{
+  "name": "RocketHopTycoon",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/shared"
+      },
+      "Remotes": {
+        "$className": "Folder",
+        "CollectCrystal": { "$className": "RemoteEvent" },
+        "ClaimDaily": { "$className": "RemoteEvent" },
+        "Rebirth": { "$className": "RemoteEvent" },
+        "Home": { "$className": "RemoteEvent" },
+        "Notify": { "$className": "RemoteEvent" }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$properties": {
+        "CameraMaxZoomDistance": 120
+      },
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$properties": {
+        "StreamingEnabled": false
+      }
+    },
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "ClockTime": 0.5,
+        "Brightness": 3,
+        "GlobalShadows": true,
+        "Ambient": [0.5, 0.52, 0.62],
+        "OutdoorAmbient": [0.66, 0.68, 0.82],
+        "FogColor": [0.12, 0.1, 0.3],
+        "FogStart": 400,
+        "FogEnd": 1400
+      }
+    },
+    "Players": {
+      "$className": "Players"
+    },
+    "SoundService": {
+      "$className": "SoundService"
+    }
+  }
+}
