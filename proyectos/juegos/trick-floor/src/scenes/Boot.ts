@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save, PALETTES } from '../state';
+import { applyHero, makeCosmetics } from '../cosmeticos';
 import { T } from '../sim';
 
 const INK = PALETTE.ink;
@@ -18,11 +20,13 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
+    makeExtraIcons(this);
+    save.load();
     this.makeIcons();
     this.makeTiles();
     this.makeHero();
+    makeCosmetics(this);
     this.makeProps();
-    save.load();
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -167,19 +171,11 @@ export class Boot extends Phaser.Scene {
     });
   }
 
-  /** The hero: a mint jelly cube with little arms and feet, plus one texture per face. */
+  /** The hero: a jelly cube with little arms and feet (colour from the shop), plus one texture per face. */
   private makeHero() {
     const W = 64, H = 64;
-    this.tex('hero', W, H, (g) => {
-      g.fillStyle(0x1f9e76); g.fillEllipse(19, 58, 16, 10); g.fillEllipse(45, 58, 16, 10);       // feet
-      g.lineStyle(3, INK); g.strokeEllipse(19, 58, 16, 10); g.strokeEllipse(45, 58, 16, 10);
-      g.fillStyle(0x4fd6a8); g.fillCircle(6, 36, 6); g.fillCircle(58, 36, 6);                    // arms
-      g.strokeCircle(6, 36, 6); g.strokeCircle(58, 36, 6);
-      g.fillStyle(0x2fbf8f); g.fillRoundedRect(8, 10, 48, 47, 15);
-      g.fillStyle(0x6ee7bd); g.fillRoundedRect(10, 10, 44, 41, 14);
-      g.fillStyle(0xffffff, 0.6); g.fillRoundedRect(15, 14, 13, 6, 3); g.fillCircle(33, 16, 2.5);
-      g.lineStyle(3.5, INK); g.strokeRoundedRect(8, 10, 48, 47, 15);
-    });
+    // body with the equipped jelly colour (cosmeticos.ts); the faces below go on top
+    applyHero(this);
     const eyes = (g: Phaser.GameObjects.Graphics, r: number, dy = 0) => {
       for (const x of [24, 40]) {
         g.fillStyle(INK); g.fillEllipse(x, 30 + dy, r * 1.6, r * 2);

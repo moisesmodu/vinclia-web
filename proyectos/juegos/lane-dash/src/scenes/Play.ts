@@ -38,6 +38,8 @@ export class Play extends Phaser.Scene {
   // estado de la partida (todo se reinicia en create: la instancia se reutiliza)
   alive = false;
   revived = false;
+  /** ×2 monedas con anuncio ya usado en esta partida. */
+  doubled = false;
   paused = true;
   dist = 0;
   coins = 0;
@@ -75,7 +77,7 @@ export class Play extends Phaser.Scene {
   constructor() { super('Play'); }
 
   async create() {
-    this.alive = true; this.revived = false; this.paused = true;
+    this.alive = true; this.revived = false; this.doubled = false; this.paused = true;
     this.dist = 0; this.coins = 0; this.speed = 13; this.time0 = 0;
     this.lane = 0; this.px = 0; this.py = 0; this.vy = 0; this.duckT = 0;
     this.turboT = 0; this.magnetT = 0; this.invulnT = 0;
@@ -522,8 +524,17 @@ export class Play extends Phaser.Scene {
       const best = save.get('best');
       const newBest = score > best;
       if (newBest) save.set('best', score);
-      this.events.emit('over', { score, best: Math.max(best, score), newBest, canRevive: portal.hasRewarded && !this.revived });
+      this.events.emit('over', { score, best: Math.max(best, score), newBest, canRevive: portal.hasRewarded && !this.revived,
+        coins: this.coins, canDouble: !this.doubled });
     });
+  }
+
+  /** ×2 con anuncio con recompensa: suma otra vez las monedas de la partida (una vez por partida). */
+  doubleCoins() {
+    if (this.doubled || this.alive) return 0;
+    this.doubled = true;
+    save.set('coins', save.get('coins') + this.coins);
+    return this.coins;
   }
 
   /** Alias para scripts/sdk-test.mjs (que llama a breakEgg() en todos los juegos). */

@@ -1,7 +1,9 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { applyMonkey, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 const INK_CSS = '#2b2340';
@@ -16,7 +18,7 @@ export const C = {
 
 /**
  * Carga los dos archivos del juego (fondo del menú y música) y dibuja por código todo lo demás:
- * mono (3 caras), nudos de liana, liana en mosaico, plátano, seta, partículas y las capas de la jungla (paralaje).
+ * mono (3 caras, en cosmeticos.ts), nudos de liana, liana en mosaico, plátano, seta, partículas y las capas de la jungla (paralaje).
  */
 export class Boot extends Phaser.Scene {
   constructor() { super('Boot'); }
@@ -28,17 +30,17 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
-    for (let face = 0; face < 3; face++) this.makeMonkey(face);
-    const rt = this.make.renderTexture({ x: 0, y: 0, width: 112 * K, height: 112 * K }, false);
-    rt.draw('monkey1', 8 * K, 0);
-    rt.saveTexture('monkey-ic');
+    makeExtraIcons(this);
+    save.load();
+    // mono con el pelaje y el gorro equipados (cosmeticos.ts) y vistas previas de la tienda
+    applyMonkey(this);
+    makeCosmetics(this);
     this.makeAnchors();
     this.makeVine();
     this.makeBanana();
     this.makeMushroom();
     this.makeBits();
     this.makeLayers();
-    save.load();
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -49,83 +51,6 @@ export class Boot extends Phaser.Scene {
     draw(g);
     g.generateTexture(key, w, h);
     g.destroy();
-  }
-
-  /**
-   * Mono de 96×112 (unidades de diseño). Centro del cuerpo (48, 70): es el origen físico. La mano que agarra la
-   * liana está en (48, 8), 62 unidades por encima. face: 0 contento, 1 emocionado (volando), 2 asustado (cayendo).
-   */
-  private makeMonkey(face: number) {
-    const k = K;
-    this.tex(`monkey${face}`, 96 * k, 112 * k, (g) => {
-      const limb = (x1: number, y1: number, x2: number, y2: number, w = 10) => {
-        g.lineStyle((w + 6) * k, INK); g.lineBetween(x1 * k, y1 * k, x2 * k, y2 * k);
-        g.lineStyle(w * k, C.fur); g.lineBetween(x1 * k, y1 * k, x2 * k, y2 * k);
-        g.fillStyle(INK); g.fillCircle(x1 * k, y1 * k, (w + 6) / 2 * k); g.fillCircle(x2 * k, y2 * k, (w + 6) / 2 * k);
-        g.fillStyle(C.fur); g.fillCircle(x1 * k, y1 * k, w / 2 * k); g.fillCircle(x2 * k, y2 * k, w / 2 * k);
-      };
-      // cola enroscada
-      g.lineStyle(13 * k, INK); g.beginPath(); g.arc(20 * k, 86 * k, 13 * k, -0.2, Math.PI * 1.45); g.strokePath();
-      g.lineStyle(7 * k, C.furDark); g.beginPath(); g.arc(20 * k, 86 * k, 13 * k, -0.2, Math.PI * 1.45); g.strokePath();
-      // brazo que agarra (detrás de la cabeza) y mano
-      limb(58, 72, 48, 12);
-      g.fillStyle(C.cream); g.lineStyle(4 * k, INK);
-      g.fillCircle(48 * k, 9 * k, 7.5 * k); g.strokeCircle(48 * k, 9 * k, 7.5 * k);
-      // piernas
-      limb(40, 92, 33, 105, 9); limb(56, 92, 64, 105, 9);
-      g.fillStyle(C.cream); g.lineStyle(3.5 * k, INK);
-      g.fillEllipse(31 * k, 106 * k, 15 * k, 9 * k); g.strokeEllipse(31 * k, 106 * k, 15 * k, 9 * k);
-      g.fillEllipse(66 * k, 106 * k, 15 * k, 9 * k); g.strokeEllipse(66 * k, 106 * k, 15 * k, 9 * k);
-      // cuerpo y barriga
-      g.fillStyle(C.fur); g.lineStyle(4.5 * k, INK);
-      g.fillEllipse(48 * k, 80 * k, 40 * k, 34 * k); g.strokeEllipse(48 * k, 80 * k, 40 * k, 34 * k);
-      g.fillStyle(C.cream); g.fillEllipse(48 * k, 84 * k, 22 * k, 20 * k);
-      // otro brazo (suelto, hacia fuera)
-      if (face === 1) limb(34, 70, 16, 54, 9); else if (face === 2) limb(34, 72, 12, 62, 9); else limb(34, 74, 22, 88, 9);
-      // orejas
-      for (const ex of [22, 74]) {
-        g.fillStyle(C.fur); g.lineStyle(4 * k, INK); g.fillCircle(ex * k, 48 * k, 10 * k); g.strokeCircle(ex * k, 48 * k, 10 * k);
-        g.fillStyle(C.cream); g.fillCircle(ex * k, 48 * k, 5.5 * k);
-      }
-      // cabeza
-      g.fillStyle(C.fur); g.lineStyle(4.5 * k, INK); g.fillCircle(48 * k, 46 * k, 25 * k); g.strokeCircle(48 * k, 46 * k, 25 * k);
-      // pelo de punta
-      g.fillStyle(C.fur); g.lineStyle(4 * k, INK);
-      const tuft = [new Phaser.Math.Vector2(42 * k, 24 * k), new Phaser.Math.Vector2(47 * k, 13 * k), new Phaser.Math.Vector2(50 * k, 22 * k), new Phaser.Math.Vector2(56 * k, 15 * k), new Phaser.Math.Vector2(57 * k, 25 * k)];
-      g.fillPoints(tuft, false); g.strokePoints(tuft, false);
-      g.fillCircle(48 * k, 46 * k, 22 * k);
-      // cara crema
-      g.fillStyle(C.cream);
-      g.fillCircle(39 * k, 44 * k, 10.5 * k); g.fillCircle(57 * k, 44 * k, 10.5 * k); g.fillEllipse(48 * k, 56 * k, 32 * k, 20 * k);
-      // ojos
-      g.fillStyle(INK);
-      if (face === 1) {
-        g.lineStyle(3.5 * k, INK);
-        g.beginPath(); g.arc(39 * k, 46 * k, 5 * k, Math.PI * 1.1, Math.PI * 1.9); g.strokePath();
-        g.beginPath(); g.arc(57 * k, 46 * k, 5 * k, Math.PI * 1.1, Math.PI * 1.9); g.strokePath();
-      } else if (face === 2) {
-        g.fillStyle(0xffffff); g.lineStyle(3 * k, INK);
-        g.fillCircle(39 * k, 43 * k, 7 * k); g.strokeCircle(39 * k, 43 * k, 7 * k);
-        g.fillCircle(57 * k, 43 * k, 7 * k); g.strokeCircle(57 * k, 43 * k, 7 * k);
-        g.fillStyle(INK); g.fillCircle(39 * k, 44 * k, 3 * k); g.fillCircle(57 * k, 44 * k, 3 * k);
-      } else {
-        g.fillCircle(39 * k, 44 * k, 4.5 * k); g.fillCircle(57 * k, 44 * k, 4.5 * k);
-        g.fillStyle(0xffffff); g.fillCircle(40.5 * k, 42.5 * k, 1.6 * k); g.fillCircle(58.5 * k, 42.5 * k, 1.6 * k);
-      }
-      // nariz
-      g.fillStyle(INK); g.fillEllipse(45 * k, 53 * k, 3 * k, 2.4 * k); g.fillEllipse(51 * k, 53 * k, 3 * k, 2.4 * k);
-      // boca
-      if (face === 1) {
-        g.fillStyle(INK); g.beginPath(); g.arc(48 * k, 58 * k, 8 * k, 0, Math.PI); g.closePath(); g.fillPath();
-        g.fillStyle(0xff7a8a); g.fillEllipse(48 * k, 63 * k, 8 * k, 4 * k);
-      } else if (face === 2) {
-        g.fillStyle(INK); g.fillEllipse(48 * k, 61 * k, 7 * k, 9 * k);
-      } else {
-        g.lineStyle(3.5 * k, INK); g.beginPath(); g.arc(48 * k, 56 * k, 7 * k, 0.25, Math.PI - 0.25); g.strokePath();
-      }
-      // mejillas
-      g.fillStyle(0xff9a9a, 0.6); g.fillCircle(31 * k, 54 * k, 4 * k); g.fillCircle(65 * k, 54 * k, 4 * k);
-    });
   }
 
   /** Nudo de liana (56×56, centro 28,28): normal (madera y hojas verdes) y frágil (rama clara agrietada, hojas secas). */

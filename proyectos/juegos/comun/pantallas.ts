@@ -23,6 +23,11 @@ function onResize(scene: Phaser.Scene, fn: () => void) {
 export function menuScreen(scene: Phaser.Scene, o: {
   title: string; background?: string; best: number; coins?: number; muted: boolean;
   onMute: (m: boolean) => void; onPlay: () => void;
+  /** En vertical: qué parte del fondo se encuadra en horizontal (0 = izquierda, 1 = derecha; por defecto 0,72). */
+  bgPortraitOrigin?: number;
+  /** En vertical: altura del nombre y del botón de jugar, en fracción de la pantalla (por defecto 0,18 y 0,42). */
+  portraitLogoY?: number;
+  portraitPlayY?: number;
 }) {
   portal.gameplayStop();
   const bg = o.background ? scene.add.image(0, 0, o.background) : null;
@@ -53,9 +58,9 @@ export function menuScreen(scene: Phaser.Scene, o: {
   scene.input.keyboard?.on('keydown-ENTER', go);
   onResize(scene, () => {
     const w = scene.scale.width, h = scene.scale.height, u = Math.min(w / 1280, h / 720), portrait = h > w;
-    bg?.setOrigin(portrait ? 0.72 : 0.5, 0.5).setPosition(w / 2, h / 2).setScale(Math.max(w / bg.width, h / bg.height));
-    logo.setPosition(portrait ? w / 2 : w * 0.3, h * (portrait ? 0.18 : 0.22)).setScale(Math.max(0.45, Math.min(u * (portrait ? 1.5 : 1), w / 1100)));
-    play.setPosition(portrait ? w / 2 : w * 0.3, h * (portrait ? 0.42 : 0.55)).setScale(Math.max(0.7, u * 1.1));
+    bg?.setOrigin(portrait ? o.bgPortraitOrigin ?? 0.72 : 0.5, 0.5).setPosition(w / 2, h / 2).setScale(Math.max(w / bg.width, h / bg.height));
+    logo.setPosition(portrait ? w / 2 : w * 0.3, h * (portrait ? o.portraitLogoY ?? 0.18 : 0.22)).setScale(Math.max(0.45, Math.min(u * (portrait ? 1.5 : 1), w / 1100)));
+    play.setPosition(portrait ? w / 2 : w * 0.3, h * (portrait ? o.portraitPlayY ?? 0.42 : 0.55)).setScale(Math.max(0.7, u * 1.1));
     const s = Math.max(0.6, u), rowY = play.y + 120 * Math.max(0.7, u * 1.1);
     trophy.setPosition(play.x - (coin ? 110 : 30) * s, rowY).setDisplaySize(52 * s, 52 * s);
     best.setPosition(trophy.x + 34 * s, rowY).setScale(s);

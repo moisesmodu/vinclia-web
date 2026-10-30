@@ -5,6 +5,7 @@ import * as Sim from '../sim';
 import { T, P, parse, init, step, doorPos, type Parsed, type State, type Input } from '../sim';
 import { LEVELS } from '../levels';
 import { save, starsFor, saveResult, levelBest, PALETTES, paletteOf } from '../state';
+import { coinsFor, heroTint, accKey } from '../cosmeticos';
 
 const SOLIDISH = '#DFC<>X';
 const HERO_SCALE = 0.72;
@@ -31,6 +32,9 @@ export class Play extends Phaser.Scene {
   alive = false;
   started = false;
   finished = false;
+  /** Coins earned in this level (on finishing it) and whether the ×2 rewarded ad was used. */
+  coinsRun = 0;
+  doubled = false;
   /** Touch buttons, set by Hud each frame. */
   touch: Input = { l: false, r: false, j: false };
   /** Scripted input (performance test autopilot), combined with the keys and the touch buttons. */
@@ -71,7 +75,7 @@ export class Play extends Phaser.Scene {
     // the scene instance is reused on restart: nothing from the previous level may survive
     this.level = Phaser.Math.Clamp(data?.level ?? this.registry.get('level') ?? 1, 1, LEVELS.length);
     this.registry.set('level', this.level);
-    this.deaths = 0; this.alive = false; this.started = false; this.finished = false; this.paused = false; this.acc = 0;
+    this.deaths = 0; this.alive = false; this.started = false; this.finished = false; this.coinsRun = 0; this.doubled = false; this.paused = false; this.acc = 0;
     this.walked = 0; this.jumped = false; this.face = 'n'; this.faceUntil = 0; this.blinkAt = 0; this.sq = { x: 1, y: 1 };
     this.touch = { l: false, r: false, j: false };
     this.auto = { l: false, r: false, j: false };
@@ -89,7 +93,7 @@ export class Play extends Phaser.Scene {
     this.buildHero();
     this.fx = this.add.particles(0, 0, 'dot', {
       speed: { min: 120, max: 420 }, lifespan: 650, scale: { start: 1.1, end: 0 }, gravityY: 900, emitting: false,
-      tint: [0x6ee7bd, 0x4fd6a8, 0xb8f7e0, 0xffffff],
+      tint: heroTint(),
     }).setDepth(5);
     this.crumbs = this.add.particles(0, 0, 'crumb', {
       speed: { min: 60, max: 260 }, angle: { min: 200, max: 340 }, lifespan: 700, scale: { start: 0.9, end: 0.2 }, rotate: { min: 0, max: 360 },
@@ -205,7 +209,11 @@ export class Play extends Phaser.Scene {
   private buildHero() {
     this.heroBody = this.add.image(0, 6, 'hero').setOrigin(0.5, 1).setScale(HERO_SCALE);
     this.heroFace = this.add.image(0, 6, 'face-n').setOrigin(0.5, 1).setScale(HERO_SCALE);
-    this.hero = this.add.container(this.s.x, this.s.y + P.HH, [this.heroBody, this.heroFace]).setDepth(2);
+    const parts = [this.heroBody, this.heroFace];
+    // face style from the shop (sunglasses, moustache, cat ears), over the face
+    const acc = accKey();
+    if (acc) parts.push(this.add.image(0, 6, acc).setOrigin(0.5, 1).setScale(HERO_SCALE));
+    this.hero = this.add.container(this.s.x, this.s.y + P.HH, parts).setDepth(2);
   }
 
   /* ------------------------------------------------------------------ camera and layout */
@@ -434,6 +442,9 @@ export class Play extends Phaser.Scene {
     portal.gameplayStop();
     const stars = starsFor(this.level, this.deaths);
     const newBest = saveResult(this.level, this.deaths, stars);
+    // shop coins: every finished level pays (replays too), so the shop always moves forward
+    this.coinsRun = coinsFor(stars);
+    save.set('coins', save.get('coins') + this.coinsRun);
     Play.sinceAd++;
     if (stars === 3) portal.happyTime();
     this.setFace('h');
@@ -451,7 +462,16 @@ export class Play extends Phaser.Scene {
     }).setDepth(5).explode(50);
     this.later(800, () => this.events.emit('complete', {
       level: this.level, deaths: this.deaths, stars, best: levelBest(this.level), newBest, last: this.level >= LEVELS.length,
+      coins: this.coinsRun, canDouble: !this.doubled,
     }));
+  }
+
+  /** ×2 with a rewarded ad on the level-complete panel: the level's coins once more (once per level). */
+  doubleCoins() {
+    if (this.doubled || !this.finished) return 0;
+    this.doubled = true;
+    save.set('coins', save.get('coins') + this.coinsRun);
+    return this.coinsRun;
   }
 
   /** Ends the run (the "give up" panel: replay, levels, or skip with a rewarded ad). Also used by scripts/sdk-test.mjs. */

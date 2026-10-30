@@ -51,6 +51,8 @@ export class Play extends Phaser.Scene {
   alive = false;
   started = false;
   revived = false;
+  /** ×2 plátanos con anuncio ya usado en esta partida. */
+  doubled = false;
   hold = false;
   score = 0;
   bananas = 0;
@@ -93,7 +95,7 @@ export class Play extends Phaser.Scene {
   async create() {
     // la instancia se reutiliza al reiniciar: nada de la partida anterior puede sobrevivir
     this.anchors = []; this.items = []; this.mushes = []; this.anchor = null; this.target = null;
-    this.alive = true; this.started = false; this.revived = false; this.hold = false; this.score = 0; this.bananas = 0;
+    this.alive = true; this.started = false; this.revived = false; this.doubled = false; this.hold = false; this.score = 0; this.bananas = 0;
     this.grabs = 0; this.savedBananas = 0; this.grace = true; this.pressUsed = false; this.spin = 0; this.rot = 0;
     this.maxX = 0; this.paused = false; this.acc = 0; this.faceT = 0; this.overT = 0;
     this.registry.set('hold', false);
@@ -500,8 +502,17 @@ export class Play extends Phaser.Scene {
       const best = save.get('best');
       const newBest = this.score > best;
       if (newBest) save.set('best', this.score);
-      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, canRevive: portal.hasRewarded && !this.revived });
+      this.events.emit('over', { score: this.score, best: Math.max(best, this.score), newBest, canRevive: portal.hasRewarded && !this.revived,
+        bananas: this.bananas, canDouble: !this.doubled });
     }
+  }
+
+  /** ×2 con anuncio con recompensa: suma otra vez los plátanos de la partida (una vez por partida). */
+  doubleBananas() {
+    if (this.doubled) return 0;
+    this.doubled = true;
+    save.set('coins', save.get('coins') + this.bananas);
+    return this.bananas;
   }
 
   /** Alias para scripts/sdk-test.mjs (que llama a breakEgg() en todos los juegos). */

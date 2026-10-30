@@ -10,6 +10,11 @@ export const save = new Save('trick-floor.v1', {
   runs: 0,
   tutorialDone: false,
   muted: false,
+  coins: 0,                                    // shop coins: 2 per star each time a level is finished
+  owned: [] as string[],                       // cosmetics bought (comun/tienda.ts)
+  equipped: {} as Record<string, string>,      // cosmetic worn per slot
+  dailyDate: '',                               // last day the daily reward was claimed (comun/diario.ts)
+  dailyStreak: 0,                              // days in a row
 });
 
 export const levelStars = (lv: number) => save.get('stars')[lv - 1] || 0;

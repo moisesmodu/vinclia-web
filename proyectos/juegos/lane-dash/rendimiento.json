@@ -1,28 +1,22 @@
 {
   "juego": "lane-dash",
-  "fecha": "2026-10-29",
+  "fecha": "2026-10-30",
   "emulacion": "800x360 táctil, DPR 2, CPU x4",
-  "cargaHastaMenuMs": 2164,
-  "fpsEnEsteContenedor": 16.4,
+  "cargaHastaMenuMs": 2127,
+  "fpsEnEsteContenedor": 15.1,
   "cpuPorFotogramaMs": {
-    "media": 5.35,
-    "p50": 4.8,
-    "p95": 11.1,
-    "p99": 18.3
+    "media": 4.72,
+    "p50": 4.3,
+    "p95": 10.2,
+    "p99": 19.7
   },
-  "fpsMaximoPorCpu": 90,
+  "fpsMaximoPorCpu": 98,
   "partidasPilotoAutomatico": [
     {
-      "m": 363,
-      "s": 22.3,
-      "coins": 52
-    },
-    {
-      "m": 78,
-      "s": 5.8,
+      "m": 399,
+      "s": 25.8,
       "sinTerminar": true
     }
   ],
-  "errores": [],
-  "cargaDelContenedor": "uptime load average 12.3 al empezar y 13.2 al terminar con 4 CPU (otros agentes compilando y probando a la vez): p95 medido con la máquina saturada; con la máquina sola dio 10.2 ms"
+  "errores": []
 }

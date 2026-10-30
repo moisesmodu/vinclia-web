@@ -1,0 +1,34 @@
+{
+  "juego": "fruit-stand",
+  "fecha": "2026-10-30",
+  "primeraCompraS": 21.7,
+  "puestos": [
+    {
+      "stand": 0,
+      "minutes": 15.1,
+      "served": 229,
+      "helpers": 3
+    },
+    {
+      "stand": 1,
+      "minutes": 30,
+      "served": 736,
+      "helpers": 4
+    },
+    {
+      "stand": 2,
+      "minutes": 41.8,
+      "served": 1595,
+      "helpers": 5
+    }
+  ],
+  "compras": 60,
+  "huecoMaxEntreComprasS": 217,
+  "minutosHastaPrestigio": 86.9,
+  "offline": {
+    "1h": 2853,
+    "2h": 5707,
+    "10h": 5707
+  },
+  "fallos": []
+}

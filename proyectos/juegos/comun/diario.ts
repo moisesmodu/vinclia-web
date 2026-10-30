@@ -84,7 +84,8 @@ function showDaily(scene: Phaser.Scene, o: DailyOpts, today: string, streak: num
       speed: { min: 200, max: 560 }, lifespan: 1000, scale: { start: 0.4, end: 0 }, gravityY: 600, emitting: false,
     }).setDepth(70);
     burst.explode(30);
-    scene.time.delayedCall(1100, () => burst.destroy());
+    // tiempo real: el reloj de la escena se ralentiza o se para (FPS bajos, menú en pausa) y la explosión se quedaba congelada
+    setTimeout(() => { if (burst.active) burst.destroy(); }, 1100);
     scene.scale.off('resize', build);
     const r = root;
     root = null;

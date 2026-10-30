@@ -2,8 +2,11 @@ import Phaser from 'phaser';
 import { iconButton, pulse, bigNumber, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { menuExtras } from '@comun/extras';
+import { modalOpen } from '@comun/tienda';
 import { save, totalStars, nextLevel } from '../state';
 import { LEVELS } from '../levels';
+import { ITEMS, DEFAULTS, DAILY, applyHero } from '../cosmeticos';
 
 /** Starts the music the first time the player presses something (browsers require it). */
 export function startMusic(scene: Phaser.Scene) {
@@ -39,8 +42,16 @@ export class Menu extends Phaser.Scene {
       sound.setIcon(m ? 'mute' : 'sound');
     });
 
-    this.input.keyboard?.on('keydown-SPACE', () => this.go());
-    this.input.keyboard?.on('keydown-ENTER', () => this.go());
+    // cosmetics shop (bottom left, with the coins next to it) and daily reward
+    const coin = this.add.image(0, 0, 'ic-coin');
+    const coins = bigNumber(this, 0, 0, 40, `${save.get('coins')}`).setOrigin(0, 0.5);
+    const extras = menuExtras(this, {
+      save, currency: 'coins', currencyIcon: 'ic-coin', items: ITEMS, defaults: DEFAULTS, daily: DAILY, panel: 0xfff4fb,
+      onChange: () => applyHero(this), onWallet: (n) => coins.setText(`${n}`),
+    });
+
+    this.input.keyboard?.on('keydown-SPACE', () => { if (!modalOpen(this)) this.go(); });
+    this.input.keyboard?.on('keydown-ENTER', () => { if (!modalOpen(this)) this.go(); });
 
     const layout = () => {
       const w = this.scale.width, h = this.scale.height, portrait = h > w;
@@ -58,6 +69,9 @@ export class Menu extends Phaser.Scene {
       star.setPosition(cx - 18 * s, rowY).setDisplaySize(50 * s, 50 * s);
       stars.setPosition(star.x + 32 * s, rowY).setScale(s);
       sound.setPosition(w - 50 * s, h - 50 * s).setScale(s);
+      extras.place(s);
+      coin.setPosition(extras.shop.x + 70 * s, extras.shop.y).setDisplaySize(44 * s, 44 * s);
+      coins.setPosition(coin.x + 28 * s, coin.y + 2 * s).setScale(s);
     };
     layout();
     this.scale.on('resize', layout);
@@ -74,7 +88,7 @@ export class Menu extends Phaser.Scene {
   }
 
   private levels() {
-    if (this.going) return;
+    if (this.going || modalOpen(this)) return;
     startMusic(this);
     this.scene.start('Levels');
   }

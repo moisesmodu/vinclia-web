@@ -878,7 +878,9 @@
       "Trick Floor · guía": "https://juegos-casuales.vercel.app/play/trick-floor/",
       "Hook Hop · jugar": "https://juegos-casuales.vercel.app/hook-hop/",
       "Hook Hop · guía": "https://juegos-casuales.vercel.app/play/hook-hop/",
-      "Roblox · Jelly Tower Obby": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-jelly-obby"
+      "Roblox · Jelly Tower Obby": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-jelly-obby",
+      "Fruit Stand · jugar": "https://juegos-casuales.vercel.app/fruit-stand/",
+      "Fruit Stand · guía": "https://juegos-casuales.vercel.app/play/fruit-stand/"
     },
     "acciones": [
       {
@@ -976,6 +978,10 @@
       {
         "fecha": "2026-10-30",
         "texto": "Roblox: Jelly Tower Obby construido (40 fases en 4 zonas, puntos de control validados por el servidor, saltar fase de pago, coils y estelas, recompensa diaria)"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Fruit Stand listo (gestión idle tipo Monkey Mart: 3 puestos, ayudantes, prestigio y ganancias sin conexión); tienda, recompensa diaria y ×2 también en Hook Hop, Trick Floor y Lane Dash"
       }
     ],
     "proximos": [

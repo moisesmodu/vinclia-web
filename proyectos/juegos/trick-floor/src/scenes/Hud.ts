@@ -2,13 +2,14 @@ import Phaser from 'phaser';
 import { iconButton, bigNumber, pulse, PALETTE } from '@comun/ui';
 import { audio } from '@comun/audio';
 import { portal } from '@comun/portal';
+import { doubleButton } from '@comun/doble';
 import { save } from '../state';
 import { LEVELS } from '../levels';
 import { T } from '../sim';
 import type { Play } from './Play';
 
 type OverInfo = { level: number; deaths: number; canSkip: boolean };
-type DoneInfo = { level: number; deaths: number; stars: number; best: number; newBest: boolean; last: boolean };
+type DoneInfo = { level: number; deaths: number; stars: number; best: number; newBest: boolean; last: boolean; coins: number; canDouble: boolean };
 
 /**
  * Interface over the level (no zoom): level number, death counter, sound / restart / levels buttons, the optional
@@ -31,7 +32,7 @@ export class Hud extends Phaser.Scene {
 
   create() {
     this.play = this.scene.get('Play') as Play;
-    this.over = undefined; this.busy = false; this.layoutFns = []; this.btns = []; this.skipBtn = undefined;
+    this.over = undefined; this.busy = false; this.layoutFns = []; this.btns = []; this.skipBtn = undefined; this.dbl = null;
     this.tutorial = undefined; this.tutorialStart = 0;
     this.touchOn = !!this.registry.get('touch') || !!this.sys.game.device.input.touch;
     this.registry.set('touch', this.touchOn);
@@ -253,11 +254,27 @@ export class Hud extends Phaser.Scene {
         onStart: () => { if (on) audio.tone(660 + k * 180, 0.14, 'triangle', 0.14, 1200 + k * 200); } });
     }
     const ry = top + 165 * s;
-    const splat = this.add.image(w / 2 - 150 * s, ry, 'ic-splat').setDisplaySize(64 * s, 64 * s);
-    const d = bigNumber(this, w / 2 - 110 * s, ry + 2 * s, 60 * s, `${r.deaths}`).setOrigin(0, 0.5);
-    const trophy = this.add.image(w / 2 + 70 * s, ry, 'ic-trophy').setDisplaySize(50 * s, 50 * s).setTint(0xf2a900);
-    const best = bigNumber(this, w / 2 + 102 * s, ry + 2 * s, 42 * s, `${r.best}`).setOrigin(0, 0.5);
-    c.add([splat, d, trophy, best]);
+    // deaths, best and the coins this level paid (2 per star)
+    const splat = this.add.image(w / 2 - 200 * s, ry, 'ic-splat').setDisplaySize(64 * s, 64 * s);
+    const d = bigNumber(this, w / 2 - 162 * s, ry + 2 * s, 60 * s, `${r.deaths}`).setOrigin(0, 0.5);
+    const trophy = this.add.image(w / 2 - 36 * s, ry, 'ic-trophy').setDisplaySize(50 * s, 50 * s).setTint(0xf2a900);
+    const best = bigNumber(this, w / 2 - 6 * s, ry + 2 * s, 42 * s, `${r.best}`).setOrigin(0, 0.5);
+    const coinIc = this.add.image(w / 2 + 116 * s, ry, 'ic-coin').setDisplaySize(52 * s, 52 * s);
+    const coinN = bigNumber(this, coinIc.x + 32 * s, ry + 2 * s, 46 * s, `+${r.coins}`).setOrigin(0, 0.5);
+    c.add([splat, d, trophy, best, coinIc, coinN]);
+    // ×2 coins with a rewarded ad (once per level), on the top edge of the panel, away from the buttons
+    this.dbl = null;
+    if (r.canDouble) {
+      this.dbl = doubleButton(this, {
+        x: w / 2, y: top - 52 * s, s, currencyIcon: 'ic-coin', earned: r.coins,
+        onDoubled: () => {
+          const extra = this.play.doubleCoins();
+          coinN.setText(`+${r.coins + extra}`);
+          this.tweens.add({ targets: [coinIc, coinN], scale: '*=1.3', duration: 160, yoyo: true, repeat: 1 });
+        },
+      });
+      if (this.dbl) c.add(this.dbl);
+    }
     if (r.stars === 3 && r.newBest) {
       const burst = this.add.particles(0, -20, 'ic-star', {
         x: { min: 0, max: w }, speedY: { min: 80, max: 260 }, lifespan: 2200, scale: { start: 0.22 * s, end: 0.12 * s },
@@ -280,6 +297,9 @@ export class Hud extends Phaser.Scene {
       this.input.keyboard?.once('keydown-SPACE', () => this.restart());
     }
   }
+
+  /** ×2 button of the level-complete panel (the automatic test presses it too). */
+  dbl: ReturnType<typeof doubleButton> = null;
 
   private dropTutorial() {
     if (this.tutorial) { this.tutorial.destroy(); this.tutorial = undefined; }

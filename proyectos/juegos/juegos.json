@@ -155,9 +155,16 @@
   {
     "slug": "fruit-stand",
     "titulo": "Fruit Stand",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Gestión idle (puesto de fruta tipo Monkey Mart): mover al personaje con el dedo, recoger, reponer, cobrar y contratar ayudantes; 3 puestos y prestigio",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Pick fruit, stock your shelves and hire helpers to grow a tiny orchard stand into a busy city market!",
+    "etiquetas": [
+      "idle-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ]
   },
   {
     "slug": "paint-grab",

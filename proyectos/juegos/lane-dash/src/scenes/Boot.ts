@@ -1,14 +1,15 @@
 import Phaser from 'phaser';
 import { makeIconTextures, PALETTE } from '@comun/ui';
 import { bootDone } from '@comun/boot';
+import { makeExtraIcons } from '@comun/iconos';
 import { save } from '../state';
+import { applyCart, drawCart, makeCosmetics } from '../cosmeticos';
 
 const INK = PALETTE.ink;
 /** Píxeles de textura por unidad de mundo (1 unidad = ancho de un carril). Play escala con S / z / PX. */
 export const PX = 240;
 
 type G = Phaser.GameObjects.Graphics;
-type Face = 'normal' | 'happy' | 'scared' | 'duck' | 'sleepy';
 
 /** Carga los dos archivos del juego (fondo del menú y música) y dibuja por código todo lo demás (cero descargas). */
 export class Boot extends Phaser.Scene {
@@ -21,11 +22,13 @@ export class Boot extends Phaser.Scene {
 
   create() {
     makeIconTextures(this);
-    // carrito del jugador (visto desde atrás, con la cara en el panel trasero)
-    for (const f of ['normal', 'happy', 'scared'] as Face[]) this.tex(`cart-${f}`, 280, 280, (g) => this.cart(g, 0xff5d5d, 0x2ec4b6, f, 1, true));
-    this.tex('cart-duck', 280, 280, (g) => this.cart(g, 0xff5d5d, 0x2ec4b6, 'duck', 0.6, true));
+    makeExtraIcons(this);
+    save.load();
+    // carrito del jugador (visto desde atrás, con la cara en el panel trasero) con la pintura y el banderín de la tienda
+    applyCart(this);
+    makeCosmetics(this);
     // carrito aparcado (obstáculo: cambia de carril)
-    this.tex('ocart', 280, 400, (g) => { g.translateCanvas(0, 120); this.cart(g, 0x4aa8ff, 0xffd23f, 'sleepy', 1, false); });
+    this.tex('ocart', 280, 400, (g) => { g.translateCanvas(0, 120); drawCart(g, 0x4aa8ff, 0xffd23f, 'sleepy', 1, false); });
     this.tex('box', 260, 170, (g) => this.boxes(g));
     this.tex('sign0', 250, 1000, (g) => this.sign(g, 0xffd23f, 0xff5d5d));
     this.tex('sign1', 250, 1000, (g) => this.sign(g, 0x9b6bff, 0xffd23f));
@@ -35,7 +38,6 @@ export class Boot extends Phaser.Scene {
     this.tex('tag-magnet', 150, 110, (g) => this.tag(g, 0x3ddc84, 'magnet'));
     this.tex('puff', 48, 48, (g) => { g.fillStyle(0xffffff); g.fillCircle(24, 24, 22); });
     this.tex('streak', 8, 90, (g) => { g.fillStyle(0xffffff); g.fillRoundedRect(0, 0, 8, 90, 4); });
-    save.load();
     bootDone(this.game, save.get('muted'));
     this.scene.start('Menu');
   }
@@ -46,80 +48,6 @@ export class Boot extends Phaser.Scene {
     draw(g);
     g.generateTexture(key, w, h);
     g.destroy();
-  }
-
-  /** Carrito de 280×280, suelo en y = 268. squash < 1 lo aplasta hacia el suelo (agacharse). */
-  private cart(g: G, body: number, handle: number, face: Face, squash: number, groceries: boolean) {
-    g.fillStyle(0x000000, 0.18); g.fillEllipse(140, 266, 230, 26);
-    g.save();
-    g.translateCanvas(0, 268 * (1 - squash));
-    g.scaleCanvas(1, squash);
-    // ruedas
-    for (const x of [62, 218]) {
-      g.fillStyle(INK); g.fillRoundedRect(x - 16, 236, 32, 32, 10);
-      g.fillStyle(0x8a8fa8); g.fillRoundedRect(x - 6, 244, 12, 16, 4);
-    }
-    g.fillStyle(INK); g.fillRect(56, 222, 168, 14);
-    // compra que asoma
-    if (groceries) {
-      g.lineStyle(7, INK);
-      g.fillStyle(0xf2b35b); g.fillRoundedRect(60, 40, 30, 90, 14); g.strokeRoundedRect(60, 40, 30, 90, 14); // barra de pan
-      g.fillStyle(0xffffff); g.fillRect(150, 52, 46, 70); g.strokeRect(150, 52, 46, 70); // leche
-      g.fillStyle(0x4aa8ff); g.fillTriangle(146, 56, 200, 56, 173, 30); g.strokeTriangle(146, 56, 200, 56, 173, 30);
-      g.fillStyle(0x3ddc84); g.fillCircle(118, 92, 24); g.strokeCircle(118, 92, 24); // manzana
-      g.fillStyle(0x7a4b2a); g.fillRect(116, 60, 5, 12);
-      g.fillStyle(0xffd23f); g.fillCircle(212, 96, 20); g.strokeCircle(212, 96, 20); // limón
-    } else {
-      // carrito aparcado con una montaña de compra (demasiado alto para saltarlo)
-      g.lineStyle(8, INK);
-      g.fillStyle(0xe0a15e); g.fillRect(34, -6, 130, 112); g.strokeRect(34, -6, 130, 112);
-      g.fillStyle(0xf6d29a); g.fillRect(88, -2, 22, 104);
-      g.fillStyle(0xd08a4a); g.fillRect(124, 30, 120, 76); g.strokeRect(124, 30, 120, 76);
-      g.fillStyle(0xf6d29a); g.fillRect(174, 34, 20, 68);
-      for (const [x, y] of [[196, 2], [226, 2], [211, -26]]) { g.fillStyle(0xffffff); g.fillCircle(x, y, 17); g.strokeCircle(x, y, 17); g.fillStyle(0xc9d3e8); g.fillCircle(x, y, 6); }
-      g.fillStyle(0x3ddc84); g.fillEllipse(98, -48, 112, 86); g.strokeEllipse(98, -48, 112, 86);
-      g.lineStyle(7, 0x1f9a5a); g.lineBetween(70, -82, 64, -14); g.lineBetween(98, -88, 98, -8); g.lineBetween(126, -82, 132, -14);
-      g.lineStyle(8, INK); g.strokeEllipse(98, -48, 112, 86);
-    }
-    // cesta
-    g.fillStyle(body); g.lineStyle(9, INK);
-    const pts = [{ x: 22, y: 98 }, { x: 258, y: 98 }, { x: 236, y: 226 }, { x: 44, y: 226 }];
-    g.fillPoints(pts, true); g.strokePoints(pts, true, true);
-    // rejilla
-    g.lineStyle(5, 0xffffff, 0.35);
-    for (let i = 1; i < 6; i++) { const t = i / 6; g.lineBetween(22 + 236 * t, 104, 44 + 192 * t, 220); }
-    g.lineBetween(30, 140, 250, 140);
-    // asa
-    g.fillStyle(handle); g.lineStyle(8, INK);
-    if (groceries) { g.fillRoundedRect(4, 82, 272, 24, 12); g.strokeRoundedRect(4, 82, 272, 24, 12); }
-    else { g.fillRoundedRect(36, 64, 208, 20, 10); g.strokeRoundedRect(36, 64, 208, 20, 10); g.lineBetween(46, 84, 40, 100); g.lineBetween(234, 84, 240, 100); }
-    // cara
-    const cx = 140, cy = 166;
-    g.fillStyle(0xffffff); g.fillRoundedRect(cx - 78, cy - 44, 156, 92, 30);
-    g.lineStyle(6, INK); g.strokeRoundedRect(cx - 78, cy - 44, 156, 92, 30);
-    g.fillStyle(0xff9ec7, 0.9); g.fillCircle(cx - 56, cy + 18, 11); g.fillCircle(cx + 56, cy + 18, 11);
-    g.fillStyle(INK); g.lineStyle(7, INK);
-    if (face === 'normal') {
-      for (const d of [-30, 30]) { g.fillStyle(INK); g.fillCircle(cx + d, cy - 6, 15); g.fillStyle(0xffffff); g.fillCircle(cx + d + 5, cy - 12, 5); }
-      g.beginPath(); g.arc(cx, cy + 10, 16, 0.2, Math.PI - 0.2); g.strokePath();
-    } else if (face === 'happy') {
-      for (const d of [-30, 30]) { g.beginPath(); g.arc(cx + d, cy - 2, 13, Math.PI + 0.2, -0.2); g.strokePath(); }
-      g.fillStyle(INK); g.slice(cx, cy + 10, 20, 0, Math.PI, false); g.fillPath();
-      g.fillStyle(0xff5d5d); g.fillCircle(cx, cy + 22, 8);
-    } else if (face === 'scared') {
-      for (const d of [-30, 30]) {
-        g.lineBetween(cx + d - 11, cy - 17, cx + d + 11, cy + 5); g.lineBetween(cx + d + 11, cy - 17, cx + d - 11, cy + 5);
-      }
-      g.fillStyle(INK); g.fillEllipse(cx, cy + 24, 24, 18);
-    } else if (face === 'duck') {
-      g.lineBetween(cx - 44, cy - 14, cx - 22, cy - 4); g.lineBetween(cx - 22, cy - 4, cx - 44, cy + 6);
-      g.lineBetween(cx + 44, cy - 14, cx + 22, cy - 4); g.lineBetween(cx + 22, cy - 4, cx + 44, cy + 6);
-      g.lineBetween(cx - 12, cy + 22, cx + 12, cy + 22);
-    } else {
-      for (const d of [-30, 30]) { g.beginPath(); g.arc(cx + d, cy - 6, 13, 0.2, Math.PI - 0.2); g.strokePath(); }
-      g.fillStyle(INK); g.fillCircle(cx, cy + 22, 7);
-    }
-    g.restore();
   }
 
   /** Dos cajas apiladas (se saltan). 260×170, suelo en y = 162. */

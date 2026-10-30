@@ -1,0 +1,27 @@
+{
+  "juego": "fruit-stand",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 3596,
+  "cargaMaquina": [
+    12.58,
+    14.87,
+    12.13
+  ],
+  "escena": {
+    "puesto": 3,
+    "comprasEnElPuesto": 21,
+    "clientesMax": 11,
+    "ayudantes": 4,
+    "ventasDuranteLaPrueba": 26
+  },
+  "fpsEnEsteContenedor": 20.3,
+  "cpuPorFotogramaMs": {
+    "media": 4.68,
+    "p50": 4.2,
+    "p95": 10,
+    "p99": 13.6
+  },
+  "fpsMaximoPorCpu": 100,
+  "errores": []
+}
