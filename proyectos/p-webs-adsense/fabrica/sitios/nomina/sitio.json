@@ -107,6 +107,14 @@
       "titulo": {
         "es": "Sueldo neto por salario bruto",
         "ca": "Sou net per salari brut"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-salario-bruto",
+        "ca": "sou-net-per-salari-brut"
+      },
+      "descripcion": {
+        "es": "Lo que cobras en neto con cada salario bruto de 12.000 a 100.000 €, calculado con la retención, la Seguridad Social y el IRPF de 2027.",
+        "ca": "El que cobres en net amb cada salari brut de 12.000 a 100.000 €, calculat amb la retenció, la Seguretat Social i l’IRPF del 2027."
       }
     },
     {
@@ -121,6 +129,102 @@
       "titulo": {
         "es": "Sueldo neto por comunidad autónoma",
         "ca": "Sou net per comunitat autònoma"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-comunidad",
+        "ca": "sou-net-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Tabla de bruto a neto en cada comunidad autónoma, con su escala del IRPF y lo que sale a pagar o a devolver en la renta.",
+        "ca": "Taula de brut a net a cada comunitat autònoma, amb la seva escala de l’IRPF i el que surt a pagar o a retornar a la renda."
+      }
+    },
+    {
+      "id": "neto-bruto-comunidad",
+      "plantilla": "neto-bruto-comunidad",
+      "csv": "neto-bruto-comunidad.csv",
+      "slug": {
+        "es": "sueldo-neto-{bruto}-euros-{slug_es}",
+        "ca": "sou-net-{bruto}-euros-{slug_ca}"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por salario y comunidad",
+        "ca": "Sou net per salari i comunitat"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-salario-y-comunidad",
+        "ca": "sou-net-per-salari-i-comunitat"
+      },
+      "descripcion": {
+        "es": "El neto de cada salario de 20.000 a 60.000 € en las 16 comunidades: nómina, IRPF real, renta y puesto frente a las demás.",
+        "ca": "El net de cada salari de 20.000 a 60.000 € a les 16 comunitats: nòmina, IRPF real, renda i posició davant de les altres."
+      }
+    },
+    {
+      "id": "indemnizacion-anos",
+      "plantilla": "indemnizacion-anos",
+      "csv": "indemnizacion-anos.csv",
+      "slug": {
+        "es": "indemnizacion-despido-{tipo}-{anos}-{ud_es}",
+        "ca": "indemnitzacio-acomiadament-{tipo_ca}-{anos}-{ud_ca}"
+      },
+      "calc": "indemnizacion-despido",
+      "titulo": {
+        "es": "Indemnización por despido según los años",
+        "ca": "Indemnització per acomiadament segons els anys"
+      },
+      "indice": {
+        "es": "indemnizacion-despido-por-anos",
+        "ca": "indemnitzacio-acomiadament-per-anys"
+      },
+      "descripcion": {
+        "es": "Cuánto te corresponde por un despido improcedente u objetivo según los años trabajados y el sueldo, con los topes del Estatuto.",
+        "ca": "Quant et correspon per un acomiadament improcedent o objectiu segons els anys treballats i el sou, amb els topalls de l’Estatut."
+      }
+    },
+    {
+      "id": "paro-base",
+      "plantilla": "paro-base",
+      "csv": "paro-base.csv",
+      "slug": {
+        "es": "paro-con-base-de-{base}-euros",
+        "ca": "atur-amb-base-de-{base}-euros"
+      },
+      "calc": "paro",
+      "titulo": {
+        "es": "Paro según la base de cotización",
+        "ca": "Atur segons la base de cotització"
+      },
+      "indice": {
+        "es": "paro-por-base-de-cotizacion",
+        "ca": "atur-per-base-de-cotitzacio"
+      },
+      "descripcion": {
+        "es": "La prestación por desempleo de cada base de cotización de 1.500 a 2.500 €, con los topes por hijos y lo que entra en tu cuenta.",
+        "ca": "La prestació per desocupació de cada base de cotització de 1.500 a 2.500 €, amb els topalls per fills i el que t’entra al compte."
+      }
+    },
+    {
+      "id": "paro-anos",
+      "plantilla": "paro-anos",
+      "csv": "paro-anos.csv",
+      "slug": {
+        "es": "paro-con-{anos}-{sfx_es}",
+        "ca": "atur-amb-{anos}-{sfx_ca}"
+      },
+      "calc": "paro",
+      "titulo": {
+        "es": "Paro según los años cotizados",
+        "ca": "Atur segons els anys cotitzats"
+      },
+      "indice": {
+        "es": "paro-por-anos-cotizados",
+        "ca": "atur-per-anys-cotitzats"
+      },
+      "descripcion": {
+        "es": "Cuántos meses de paro tienes con 1 a 6 años cotizados y cuánto suman según tu base de cotización.",
+        "ca": "Quants mesos d’atur tens amb 1 a 6 anys cotitzats i quant sumen segons la teva base de cotització."
       }
     }
   ],
