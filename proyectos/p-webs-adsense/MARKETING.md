@@ -10,7 +10,8 @@ demás proyectos de la cartera.
 |---|---|---|
 | Calculadoras con texto propio, en castellano y catalán | 20 × 2 | 20 × 2 |
 | Fichas de datos citables con CSV descargable | 10 × 2 | 10 × 2 |
-| Páginas programáticas con datos que cambian por fila | 146 | 92 |
+| Páginas programáticas con datos que cambian por fila | 520 (146 + 374 por combinación) | 198 (90 + 108 por combinación) |
+| Páginas índice por colección (enlazadas desde la portada) | 12 | 12 |
 | Mapa de palabras clave | 200 (`fabrica/sitios/nomina/palabras-clave.csv`) | 200 (`fabrica/sitios/impuestos/palabras-clave.csv`) |
 | Lighthouse móvil, muestra de 8 páginas | 100 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
 
@@ -64,6 +65,12 @@ corrige desde la primera semana con datos.
   restantes.
 - **Ficha → calculadora** y **portada → todo**, con migas de pan en cada página.
 - **Idioma:** cada página enlaza a su versión en el otro idioma.
+- **Páginas por combinación (octubre de 2026):** cada colección tiene una página índice con la cifra de cada
+  página; la portada enseña 12 chips por colección y un enlace «Ver las N». Cada página nueva lleva 2 o 3 preguntas
+  frecuentes con respuesta calculada (también como `FAQPage`) y enlaza a sus vecinas, a las de otra colección
+  relacionada y a su índice. `tests/programaticas.test.ts` falla si dos páginas repiten título, H1 o intro, si
+  una intro tiene menos de 4 cifras o si una respuesta no lleva números. ChequeClaro suma 118 páginas (cheque por
+  estado y salario, $10–$50 la hora, impuesto estatal, overtime por estado y crédito por hijos).
 - **Pendiente:** la columna `enlaza_desde` del CSV marca qué página existente debe enlazar a cada página nueva. La
   tarea semanal la aplica al crearlas.
 

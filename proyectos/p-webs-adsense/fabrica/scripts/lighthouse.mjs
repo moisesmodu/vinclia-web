@@ -11,10 +11,10 @@ const ejecutar = promisify(execFile);
 const CHROME = process.env.CHROME_PATH || '/opt/pw-browsers/chromium-1243/chrome-linux64/chrome';
 const sitios = process.argv.slice(2).length ? process.argv.slice(2) : ['nomina', 'impuestos'];
 const MUESTRA = {
-  nomina: ['/', '/calculadora-sueldo-neto/', '/ca/calculadora-sou-net/', '/calculadora-finiquito/', '/calculadora-paro/', '/datos/tabla-sueldo-neto/', '/sueldo-neto-30000-euros-brutos/', '/ca/sou-net-catalunya/'],
-  impuestos: ['/', '/calculadora-irpf/', '/ca/calculadora-irpf/', '/calculadora-factura/', '/verifactu-obligacion-fecha/', '/datos/tramos-irpf-comunidades/', '/irpf-cataluna/', '/ca/irpf-30000-euros-bruts/'],
+  nomina: ['/', '/calculadora-sueldo-neto/', '/ca/calculadora-sou-net/', '/calculadora-finiquito/', '/calculadora-paro/', '/datos/tabla-sueldo-neto/', '/sueldo-neto-30000-euros-brutos/', '/ca/sou-net-catalunya/', '/sueldo-neto-30000-euros-madrid/', '/ca/indemnitzacio-acomiadament-improcedent-5-anys/'],
+  impuestos: ['/', '/calculadora-irpf/', '/ca/calculadora-irpf/', '/calculadora-factura/', '/verifactu-obligacion-fecha/', '/datos/tramos-irpf-comunidades/', '/irpf-cataluna/', '/ca/irpf-30000-euros-bruts/', '/cuota-autonomos-tramo-8/', '/ca/iva-llum/'],
   portal: ['/', '/aviso-legal/'],
-  eeuu: ['/', '/calculadora-cheque-de-pago/', '/cheque-de-pago-texas/', '/calculadora-reembolso-taxes/', '/datos/tramos-impuestos-federales/', '/cheque-de-pago-florida-60000/', '/20-dolares-la-hora-al-ano/'],
+  eeuu: ['/', '/calculadora-cheque-de-pago/', '/cheque-de-pago-texas/', '/calculadora-reembolso-taxes/', '/datos/tramos-impuestos-federales/', '/cheque-de-pago-florida-60000/', '/20-dolares-la-hora-al-ano/', '/impuesto-estatal-nueva-york/', '/credito-por-hijos-2-hijos/'],
   vivienda: ['/', '/simulador-hipoteca/', '/ca/simulador-hipoteca/', '/calculadora-gastos-compraventa/', '/datos/euribor-historico/', '/hipoteca-200000-euros-30-anos/', '/ca/despeses-compra-habitatge-catalunya/'],
 };
 const TIPOS = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.xml': 'application/xml', '.txt': 'text/plain', '.csv': 'text/csv', '.svg': 'image/svg+xml' };

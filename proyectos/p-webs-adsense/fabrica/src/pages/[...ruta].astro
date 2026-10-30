@@ -37,6 +37,7 @@ const inicio = buscar('inicio', lang)!;
 const datos = buscar('fichas', lang)!;
 const sobre = buscar('legal:sobre', lang)!;
 const hoy = new Date().toISOString().slice(0, 10);
+const MAX_CHIPS = 12; // chips por colección en la portada; el resto, en la página índice de la colección
 const fecha = (iso: string) => fmt(iso, 'fecha', lang);
 const autor = { '@type': 'Person', name: sitio.autor.nombre, url: absoluta(sobre.ruta) };
 const editor = { '@type': 'Organization', name: sitio.nombre, url: absoluta(inicio.ruta) };
@@ -79,7 +80,8 @@ if (p.tipo === 'inicio') {
     }),
     todas: sitio.calculadoras.filter((id: string) => !sitio.destacadas.includes(id)).map(resumenCalc),
     fichas: fichasSitio().map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang), desc: t(f.descripcion, lang) })),
-    colecciones: (sitio.programaticas ?? []).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id) })),
+    // Cada colección enseña como mucho 12 chips; el resto está en su página índice («Ver las N»)
+    colecciones: (sitio.programaticas ?? []).map((col: any) => { const items = paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id); return { titulo: col.titulo[lang], items: items.slice(0, MAX_CHIPS), total: items.length, indice: buscar(`indice:${col.id}`, lang)?.ruta }; }),
     ilu: sitio.ilustracion?.base ?? `/img/heroe-${SITIO_ID}`,
     numFichas: fichasSitio().length,
   };
@@ -93,7 +95,7 @@ if (p.tipo === 'inicio') {
   const n = sitio.calculadoras.length;
   const relacionadas = [1, 2, -1, -2].map((d) => sitio.calculadoras[(i + d + n) % n]).filter((x: string, k: number, a: string[]) => x !== p.id && a.indexOf(x) === k).map(resumenCalc);
   const fichasRel = fichasSitio().filter((f) => f.calc === p.id).map((f) => ({ ruta: buscar(`ficha:${f.id}`, lang)!.ruta, h1: t(f.h1, lang) }));
-  const colRel = (sitio.programaticas ?? []).filter((c: any) => c.calc === p.id).map((col: any) => ({ titulo: col.titulo[lang], items: paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id).slice(0, 24) }));
+  const colRel = (sitio.programaticas ?? []).filter((c: any) => c.calc === p.id).map((col: any) => { const items = paginas().filter((x) => x.lang === lang && x.tipo === 'prog' && x.id === col.id); return { titulo: col.titulo[lang], items: items.slice(0, 24), total: items.length, indice: buscar(`indice:${col.id}`, lang)?.ruta }; });
   titulo = tx.titulo; descripcion = tx.descripcion;
   // Títulos del artículo con ancla (id + enlace a sí mismos) y un índice para el lateral en escritorio
   const ancla = (x: string) => x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -139,11 +141,38 @@ if (p.tipo === 'inicio') {
   titulo = pg.titulo; descripcion = pg.descripcion;
   const calc = resumenCalc(pg.calc);
   const q = new URLSearchParams(Object.entries(pg.query).map(([k, v]) => [k, String(v)])).toString();
-  const enlaces = (pg.enlaces ?? []).map((e) => ({ texto: e.texto, ruta: `${lang === 'es' ? '' : lang + '/'}${rellenar(col.slug[lang], e.fila)}` }));
+  const colDe = (id?: string) => (id ? (sitio.programaticas ?? []).find((c: any) => c.id === id) : col);
+  const enlaces = (pg.enlaces ?? []).map((e) => ({ texto: e.texto, ruta: `${lang === 'es' ? '' : lang + '/'}${rellenar(colDe(e.col).slug[lang], e.fila)}` }));
+  const indiceCol = buscar(`indice:${col.id}`, lang);
   const g = pg.grafico;
   const grafico = !g ? '' : g.tipo === 'reparto' ? reparto({ titulo: g.titulo, partes: g.partes, formato: g.formato, lang }) : barras({ titulo: g.titulo, desc: g.desc, filas: g.filas, formato: g.formato, lang, compacto: true });
-  vista = { pg, html: renderTablas(pg.tablas, lang), calc, href: `${url(calc.ruta)}?${q}`, enlaces, colTitulo: col.titulo[lang], grafico, tipoGraf: g?.tipo };
-  jsonld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: pg.h1, url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, dateModified: hoy }, miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: inicio.ruta }, { n: pg.h1, r: p.ruta }])];
+  vista = { pg, html: renderTablas(pg.tablas, lang), calc, href: `${url(calc.ruta)}?${q}`, enlaces, colTitulo: col.titulo[lang], colRuta: indiceCol?.ruta, grafico, tipoGraf: g?.tipo };
+  jsonld = [
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.h1, url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, dateModified: hoy },
+    ...(pg.faq?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: pg.faq.map((x) => ({ '@type': 'Question', name: x.p, acceptedAnswer: { '@type': 'Answer', text: x.r } })) }] : []),
+    miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: indiceCol?.ruta ?? inicio.ruta }, { n: pg.h1, r: p.ruta }]),
+  ];
+} else if (p.tipo === 'indice') {
+  // Página índice de una colección: cada página con su cifra protagonista, agrupadas si el CSV trae «grupo»
+  const col = p.coleccion;
+  const filas = leerCSV(SITIO_ID, 'programaticas', col.csv);
+  const calc = resumenCalc(col.calc);
+  const pre = lang === 'es' ? '' : `${lang}/`;
+  const items = filas.map((f) => {
+    const pg = PLANTILLAS[col.plantilla](f, { P, lang, anio, filas });
+    return { ruta: `${pre}${rellenar(col.slug[lang], f)}`, h1: pg.h1, grupo: f[`grupo_${lang}`] || f.grupo || '', cifraE: pg.cifra?.e ?? '', cifra: pg.cifra ? fmt(pg.cifra.v, pg.cifra.f, lang) : '' };
+  });
+  const grupos: { nombre: string; items: typeof items }[] = [];
+  for (const it of items) { const g = grupos.find((x) => x.nombre === it.grupo); if (g) g.items.push(it); else grupos.push({ nombre: it.grupo, items: [it] }); }
+  // Cabecera de la columna de la cifra: la de las páginas si todas la comparten; si no, genérica
+  const cabCifra = (g: { items: typeof items }) => (g.items.every((x) => x.cifraE === g.items[0].cifraE) ? g.items[0].cifraE : lang === 'es' ? 'Dato clave' : 'Dada clau');
+  titulo = lang === 'es' ? `${col.titulo[lang]} (${anio}): las ${items.length} páginas` : `${col.titulo[lang]} (${anio}): les ${items.length} pàgines`;
+  descripcion = col.descripcion?.[lang] ?? titulo;
+  vista = { col, grupos: grupos.map((g) => ({ ...g, cab: cabCifra(g) })), total: items.length, calc };
+  jsonld = [
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: col.titulo[lang], url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, publisher: editor, dateModified: hoy },
+    miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: p.ruta }]),
+  ];
 } else {
   const l = legal(p.id, lang, hoy);
   titulo = l.titulo; descripcion = l.descripcion; actual = p.id === 'sobre' ? 'sobre' : undefined;
@@ -239,7 +268,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
 
       {v.colecciones.map((c: any) => (
         <section class="coleccion">
-          <h2>{c.titulo}</h2>
+          <div class="titulo-sec"><h2>{c.titulo}</h2>{c.indice && c.total > c.items.length && <a href={url(c.indice)}>{lang === 'es' ? `Ver las ${c.total}` : `Mostra-les totes (${c.total})`} →</a>}</div>
           <ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul>
         </section>
       ))}
@@ -284,7 +313,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         </article>
       </div>
       {v.fichasRel.length > 0 && (<section class="calc-enlaces"><h2 class="sec">{u.datos}</h2><ul class="chips">{v.fichasRel.map((f: any) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}</ul></section>)}
-      {v.colRel.map((c: any) => (<section class="calc-enlaces"><h2 class="sec">{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}</ul></section>))}
+      {v.colRel.map((c: any) => (<section class="calc-enlaces"><h2 class="sec">{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}{c.indice && c.total > c.items.length && <li><a href={url(c.indice)}><strong>{lang === 'es' ? `Ver las ${c.total} →` : `Mostra-les totes (${c.total}) →`}</strong></a></li>}</ul></section>))}
       <section class="relacionadas" aria-labelledby="relacionadas"><h2 class="sec" id="relacionadas"><a href="#relacionadas">{u.relacionadas}</a></h2><ul class="rel-calc">{v.relacionadas.map((c: any) => <li><a href={url(c.ruta)}><span class="ico-caja" set:html={iconoCalc(c.id, 24)} /><strong>{c.h1}</strong><span class="rel-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul></section>
       <Anuncio posicion="finContenido" lang={lang} />
       <p class="descargo descargo-calc"><Fragment set:html={icono('alerta', 18)} /><span>{u.descargo}</span></p>
@@ -331,7 +360,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
 
   {p.tipo === 'prog' && (
     <>
-      <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.colTitulo}</span></nav>
+      <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span>{v.colRuta ? <a href={url(v.colRuta)}>{v.colTitulo}</a> : <span>{v.colTitulo}</span>}</nav>
       <header class="cab-pag">
         <p class="eyebrow">{v.colTitulo} · {anio}</p>
         <h1>{v.pg.h1.replace(/ (€|%)/g, '\u00a0$1')}</h1>
@@ -358,10 +387,40 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       </div>
       <div class="ficha-tablas" set:html={v.html} />
       <Anuncio posicion="bajoResultado" lang={lang} />
-      {v.enlaces.length > 0 && (<><h2>{lang === 'es' ? 'Consulta también' : 'Consulta també'}</h2><ul class="chips">{v.enlaces.map((e: any) => <li><a href={url(e.ruta)}>{e.texto}</a></li>)}</ul></>)}
+      {v.pg.faq?.length > 0 && (
+        <section class="faq" aria-labelledby="faq">
+          <h2 id="faq">{u.faq}</h2>
+          <div class="faq-c">{v.pg.faq.map((x: any) => <details><summary>{x.p}</summary><p>{x.r}</p></details>)}</div>
+        </section>
+      )}
+      {v.enlaces.length > 0 && (<><h2>{lang === 'es' ? 'Consulta también' : 'Consulta també'}</h2><ul class="chips">{v.enlaces.map((e: any) => <li><a href={url(e.ruta)}>{e.texto}</a></li>)}{v.colRuta && <li><a href={url(v.colRuta)}><strong>{lang === 'es' ? `Todas: ${v.colTitulo.toLowerCase()}` : `Totes: ${v.colTitulo.toLowerCase()}`}</strong></a></li>}</ul></>)}
       <h2>{u.metodo}</h2>
       <p>{lang === 'es' ? 'Cifras calculadas con la misma calculadora del sitio, con los parámetros del año indicado: método completo y fuentes en ' : 'Xifres calculades amb la mateixa calculadora del lloc, amb els paràmetres de l’any indicat: mètode complet i fonts a '}<a href={url(v.calc.ruta)}>{v.calc.h1}</a>.</p>
       <p class="descargo">{u.descargo}</p>
+    </>
+  )}
+
+  {p.tipo === 'indice' && (
+    <>
+      <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{v.col.titulo[lang]}</span></nav>
+      <header class="cab-pag">
+        <p class="eyebrow">{lang === 'es' ? `${v.total} páginas · ${anio}` : `${v.total} pàgines · ${anio}`}</p>
+        <h1>{v.col.titulo[lang]}</h1>
+        <p class="intro">{descripcion}</p>
+      </header>
+      <a class="cta-calc" href={url(v.calc.ruta)}><span class="ico-caja" set:html={iconoCalc(v.calc.id, 24)} /><span><small>{u.usarCalc}</small><strong>{v.calc.h1}</strong></span><span class="ir" aria-hidden="true">→</span></a>
+      <div class="ficha-tablas">
+        {v.grupos.map((g: any) => (
+          <div class="res-tabla">
+            {g.nombre && <h2 class="res-tabla-t">{g.nombre}</h2>}
+            <div class="scroll"><table>
+              <thead><tr><th scope="col">{lang === 'es' ? 'Página' : 'Pàgina'}</th><th scope="col">{g.cab}</th></tr></thead>
+              <tbody>{g.items.map((x: any) => <tr><td><a href={url(x.ruta)}>{x.h1}</a></td><td>{x.cifra}</td></tr>)}</tbody>
+            </table></div>
+          </div>
+        ))}
+      </div>
+      <Anuncio posicion="finContenido" lang={lang} />
     </>
   )}
 

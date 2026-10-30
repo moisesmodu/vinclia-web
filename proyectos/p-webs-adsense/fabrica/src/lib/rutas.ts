@@ -10,7 +10,7 @@ import { FICHAS as FU } from '../fichas/eeuu';
 import { FICHAS as FV } from '../fichas/vivienda';
 import type { Ficha } from '../fichas/tipos';
 
-export type Tipo = 'inicio' | 'calc' | 'fichas' | 'ficha' | 'prog' | 'legal';
+export type Tipo = 'inicio' | 'calc' | 'fichas' | 'ficha' | 'prog' | 'indice' | 'legal';
 export interface Pagina {
   clave: string; // igual en los dos idiomas
   ruta: string; // sin barras ('' = inicio)
@@ -52,12 +52,20 @@ export function paginas(): Pagina[] {
     out.push({ clave: 'fichas', ruta: `${p}${dat}`, lang, tipo: 'fichas', id: 'fichas' });
     for (const f of fichasSitio()) out.push({ clave: `ficha:${f.id}`, ruta: `${p}${dat}/${f.slug[lang]}`, lang, tipo: 'ficha', id: f.id });
     for (const col of sitio.programaticas ?? []) {
+      // Página índice de la colección: todas sus páginas con su cifra, para no llenar la portada de enlaces
+      if (col.indice?.[lang]) out.push({ clave: `indice:${col.id}`, ruta: `${p}${col.indice[lang]}`, lang, tipo: 'indice', id: col.id, coleccion: col });
       for (const fila of leerCSV(SITIO_ID, 'programaticas', col.csv)) {
         const k = rellenar(col.slug.es, fila);
         out.push({ clave: `prog:${col.id}:${k}`, ruta: `${p}${rellenar(col.slug[lang], fila)}`, lang, tipo: 'prog', id: col.id, fila, coleccion: col });
       }
     }
     for (const [k, v] of Object.entries(LEGAL)) out.push({ clave: `legal:${k}`, ruta: `${p}${v[lang]}`, lang, tipo: 'legal', id: k });
+  }
+  // Dos páginas con la misma ruta romperían la compilación en silencio (la segunda pisa a la primera)
+  const vistas = new Map<string, string>();
+  for (const x of out) {
+    if (vistas.has(x.ruta)) throw new Error(`Ruta duplicada «${x.ruta}»: ${vistas.get(x.ruta)} y ${x.clave}`);
+    vistas.set(x.ruta, x.clave);
   }
   cache = out;
   return out;

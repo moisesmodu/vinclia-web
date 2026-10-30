@@ -102,18 +102,18 @@ sueldo neto 1500 euros brutos al mes,es,calcular,/sueldo-neto-1500-euros-brutos-
 sueldo neto 110000 euros brutos,es,calcular,/sueldo-neto-110000-euros-brutos/,nueva,3,neto,/sueldo-neto-100000-euros-brutos/
 calcular sueldo neto Navarra 2027,es,calcular,/sueldo-neto-navarra/,nueva,2,neto,/sueldo-neto-la-rioja/
 sueldo neto País Vasco Bizkaia calcular,es,calcular,/sueldo-neto-pais-vasco/,nueva,2,neto,/sueldo-neto-cantabria/
-despido improcedente 2 años cuánto me dan,es,calcular,/indemnizacion-despido-improcedente-2-anos/,nueva,2,despido,/datos/tabla-indemnizacion-despido/
-indemnización por despido con 5 años de antigüedad,es,calcular,/indemnizacion-despido-improcedente-5-anos/,nueva,1,despido,/datos/tabla-indemnizacion-despido/
-finiquito por despido con 10 años,es,calcular,/indemnizacion-despido-improcedente-10-anos/,nueva,1,despido,/calculadora-finiquito/
-indemnización despido 15 años trabajados,es,calcular,/indemnizacion-despido-improcedente-15-anos/,nueva,2,despido,/datos/tabla-indemnizacion-despido/
-despido objetivo con 5 años cuánto me corresponde,es,calcular,/indemnizacion-despido-objetivo-5-anos/,nueva,2,despido,/calculadora-indemnizacion-despido/
+despido improcedente 2 años cuánto me dan,es,calcular,/indemnizacion-despido-improcedente-2-anos/,prog,2,despido,/datos/tabla-indemnizacion-despido/
+indemnización por despido con 5 años de antigüedad,es,calcular,/indemnizacion-despido-improcedente-5-anos/,prog,1,despido,/datos/tabla-indemnizacion-despido/
+finiquito por despido con 10 años,es,calcular,/indemnizacion-despido-improcedente-10-anos/,prog,1,despido,/calculadora-finiquito/
+indemnización despido 15 años trabajados,es,calcular,/indemnizacion-despido-improcedente-15-anos/,prog,2,despido,/datos/tabla-indemnizacion-despido/
+despido objetivo con 5 años cuánto me corresponde,es,calcular,/indemnizacion-despido-objetivo-5-anos/,prog,2,despido,/calculadora-indemnizacion-despido/
 paro con 1 hijo cuánto cobro,es,calcular,/paro-con-1-hijo/,nueva,2,paro,/datos/cuantias-paro/
 paro con 2 hijos cuánto cobro 2027,es,calcular,/paro-con-2-hijos/,nueva,1,paro,/datos/cuantias-paro/
 cuánto cobro de paro si ganaba 1200 euros,es,calcular,/paro-con-sueldo-de-1200-euros/,nueva,2,paro,/calculadora-paro/
-paro con un sueldo de 1500 euros cuánto me queda,es,calcular,/paro-con-sueldo-de-1500-euros/,nueva,1,paro,/calculadora-paro/
-cuánto cobro de paro con 2000 euros de sueldo,es,calcular,/paro-con-sueldo-de-2000-euros/,nueva,2,paro,/calculadora-paro/
-cuánto paro me queda con 1 año cotizado,es,calcular,/paro-con-1-ano-cotizado/,nueva,1,paro,/datos/cuantias-paro/
-paro con 2 años cotizados cuántos meses,es,calcular,/paro-con-2-anos-cotizados/,nueva,2,paro,/datos/cuantias-paro/
+paro con un sueldo de 1500 euros cuánto me queda,es,calcular,/paro-con-base-de-1500-euros/,prog,1,paro,/calculadora-paro/
+cuánto cobro de paro con 2000 euros de sueldo,es,calcular,/paro-con-base-de-2000-euros/,prog,2,paro,/calculadora-paro/
+cuánto paro me queda con 1 año cotizado,es,calcular,/paro-con-1-ano-cotizado/,prog,1,paro,/datos/cuantias-paro/
+paro con 2 años cotizados cuántos meses,es,calcular,/paro-con-2-anos-cotizados/,prog,2,paro,/datos/cuantias-paro/
 calendario de pago del paro 2027 SEPE,es,plazo,/fecha-cobro-paro/,nueva,1,paro,/calculadora-paro/
 calcular capitalización del paro pago único,es,calcular,/calculadora-capitalizacion-paro/,nueva,2,paro,/calculadora-cuota-autonomos/
 subsidio para mayores de 52 años cuánto se cobra,es,calcular,/subsidio-mayores-52/,nueva,2,subsidio,/calculadora-subsidio-desempleo/
@@ -186,10 +186,10 @@ tipus de cotització treballador 2027,ca,tabla,/ca/dades/tipus-cotitzacio/,ficha
 2000 nets al mes quant és en brut,ca,calcular,/ca/brut-per-2000-euros-nets-al-mes/,nueva,2,bruto,/ca/calculadora-sou-brut/
 sou net 1500 euros bruts al mes,ca,calcular,/ca/sou-net-1500-euros-bruts-al-mes/,nueva,2,neto,/ca/dades/taula-sou-net/
 2000 euros bruts al mes quant és net,ca,calcular,/ca/sou-net-2000-euros-bruts-al-mes/,nueva,2,neto,/ca/dades/taula-sou-net/
-indemnització acomiadament amb 5 anys d'antiguitat,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-5-anys/,nueva,2,despido,/ca/dades/taula-indemnitzacio-acomiadament/
-quitança per acomiadament amb 10 anys,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-10-anys/,nueva,2,despido,/ca/calculadora-quitanca/
+indemnització acomiadament amb 5 anys d'antiguitat,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-5-anys/,prog,2,despido,/ca/dades/taula-indemnitzacio-acomiadament/
+quitança per acomiadament amb 10 anys,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-10-anys/,prog,2,despido,/ca/calculadora-quitanca/
 atur amb 2 fills quant cobro,ca,calcular,/ca/atur-amb-2-fills/,nueva,2,paro,/ca/dades/quanties-atur/
-quant atur em queda amb 1 any cotitzat,ca,calcular,/ca/atur-amb-1-any-cotitzat/,nueva,2,paro,/ca/dades/quanties-atur/
+quant atur em queda amb 1 any cotitzat,ca,calcular,/ca/atur-amb-1-any-cotitzat/,prog,2,paro,/ca/dades/quanties-atur/
 calendari de cobrament de l'atur 2027,ca,plazo,/ca/data-cobrament-atur/,nueva,2,paro,/ca/calculadora-atur/
 calcular capitalització de l'atur,ca,calcular,/ca/calculadora-capitalitzacio-atur/,nueva,3,paro,/ca/calculadora-quota-autonoms/
 calcular ingrés mínim vital 2027,ca,calcular,/ca/calculadora-ingres-minim-vital/,nueva,3,subsidio,/ca/calculadora-subsidi-atur/

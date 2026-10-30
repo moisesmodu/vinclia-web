@@ -8,6 +8,8 @@ import { cuotaAnual, baseTrabajo, retencion } from '../lib/calc/irpf';
 import { sumarEscalas, r2 } from '../lib/calc/base';
 import paisES from '../../params/es/pais.json';
 import { PLANTILLAS_US } from './us';
+import { PLANTILLAS_NOMINA } from './nomina';
+import { PLANTILLAS_IMPUESTOS } from './impuestos';
 import { PLANTILLAS_VIV } from './vivienda';
 
 export interface PaginaProg {
@@ -18,7 +20,10 @@ export interface PaginaProg {
   tablas: Tabla[];
   calc: string;
   query: Record<string, string | number>;
-  enlaces?: { fila: Record<string, string>; texto: string }[];
+  /** Enlaces a páginas hermanas: de la misma colección o, con «col», de otra colección del sitio. */
+  enlaces?: { fila: Record<string, string>; texto: string; col?: string }[];
+  /** Preguntas frecuentes con respuesta calculada para esta página (se publican también como FAQPage). */
+  faq?: { p: string; r: string }[];
   /** Cifra protagonista de la cabecera de la página y datos que la acompañan. */
   cifra?: { e: string; v: number; f: Formato; nota?: string; extra?: { e: string; v: number; f: Formato }[] };
   /** Gráfico pequeño de la cabecera: reparto de un total o comparación con barras. */
@@ -27,8 +32,8 @@ export interface PaginaProg {
 export type GraficoProg =
   | { tipo: 'reparto'; titulo: string; partes: { e: string; v: number }[]; formato: Formato }
   | { tipo: 'barras'; titulo: string; desc: string; filas: { e: string; v: number; act?: boolean }[]; formato: Formato };
-type Ctx = { P: Bloques; lang: Lang; anio: number; filas: Record<string, string>[] };
-type Plantilla = (fila: Record<string, string>, ctx: Ctx) => PaginaProg;
+export type Ctx = { P: Bloques; lang: Lang; anio: number; filas: Record<string, string>[] };
+export type Plantilla = (fila: Record<string, string>, ctx: Ctx) => PaginaProg;
 
 const COM = Object.keys(paisES.comunidades);
 const nom = (c: string, l: Lang) => (paisES.comunidades as any)[c][l];
@@ -173,6 +178,8 @@ export const PLANTILLAS: Record<string, Plantilla> = {
 
 // Plantillas del sitio de EE. UU. (src/plantillas/us.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_US);
+// Páginas por combinación de NetoClaro e ImpuestoClaro (src/plantillas/nomina.ts e impuestos.ts)
+Object.assign(PLANTILLAS, PLANTILLAS_NOMINA, PLANTILLAS_IMPUESTOS);
 // Plantillas de PisoClaro (src/plantillas/vivienda.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_VIV);
 
