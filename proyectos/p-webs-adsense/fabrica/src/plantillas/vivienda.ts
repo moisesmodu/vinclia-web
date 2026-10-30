@@ -47,6 +47,14 @@ export const PLANTILLAS_VIV: Record<string, (fila: Record<string, string>, ctx: 
         { titulo: tt('Cuota según el interés', 'Quota segons l’interès'), cab: [tt('Interés', 'Interès'), tt('Cuota', 'Quota'), tt('Intereses totales', 'Interessos totals')], formatos: ['pct', 'eur', 'eur0'], filas: tipos.map((t) => { const h = hipotecaFija(imp, t, anios); return [t, h.cuota, h.intereses]; }) },
         { titulo: tt('Cuadro de amortización por años (interés medio)', 'Quadre d’amortització per anys (interès mitjà)'), cab: [tt('Año', 'Any'), tt('Intereses', 'Interessos'), tt('Capital', 'Capital'), tt('Pendiente', 'Pendent')], formatos: ['num0', 'eur', 'eur', 'eur0'], filas: media.cuadro.anios.map((a) => [a.anio, a.interes, a.capital, a.pendiente]) },
       ],
+      faq: [
+        { p: L(lang, `¿Cuánto se paga al mes por una hipoteca de ${num(imp, lang)} € a ${anios} años?`, `Quant es paga al mes per una hipoteca de ${num(imp, lang)} € a ${anios} anys?`),
+          r: L(lang, `Con el interés medio del INE (${pc(H.tipo_interes_medio_pct, lang)}), ${eur(media.cuota, lang, 2)} al mes durante ${anios * 12} meses. Con el tipo fijo medio (${pc(H.tipo_inicial_medio_fijo_pct, lang)}) serían ${eur(fija.cuota, lang, 2)}.`, `Amb l’interès mitjà de l’INE (${pc(H.tipo_interes_medio_pct, lang)}), ${eur(media.cuota, lang, 2)} al mes durant ${anios * 12} mesos. Amb el tipus fix mitjà (${pc(H.tipo_inicial_medio_fijo_pct, lang)}) serien ${eur(fija.cuota, lang, 2)}.`) },
+        { p: L(lang, `¿Cuántos intereses se pagan en total?`, `Quants interessos es paguen en total?`),
+          r: L(lang, `${eur(media.intereses, lang)} en ${anios} años, sobre un total devuelto de ${eur(media.total, lang)}. A ${otro} años serían ${eur(otroH.intereses, lang)} de intereses y una cuota de ${eur(otroH.cuota, lang, 2)}.`, `${eur(media.intereses, lang)} en ${anios} anys, sobre un total retornat de ${eur(media.total, lang)}. A ${otro} anys serien ${eur(otroH.intereses, lang)} d’interessos i una quota de ${eur(otroH.cuota, lang, 2)}.`) },
+        { p: L(lang, `¿Qué sueldo hace falta para esta hipoteca?`, `Quin sou cal per a aquesta hipoteca?`),
+          r: L(lang, `Unos ${eur(ingreso, lang)} netos al mes, si la cuota no pasa del ${V.criterios_editoriales_no_normativos.esfuerzo_maximo_cuota_sobre_ingresos_netos_pct} % de los ingresos. Es el criterio de la mayoría de bancos, no una norma: cada entidad aplica el suyo.`, `Uns ${eur(ingreso, lang)} nets al mes, si la quota no passa del ${V.criterios_editoriales_no_normativos.esfuerzo_maximo_cuota_sobre_ingresos_netos_pct} % dels ingressos. És el criteri de la majoria de bancs, no una norma: cada entitat aplica el seu.`) },
+      ],
       calc: 'viv-simulador-hipoteca',
       query: { importe: imp, anios },
       cifra: { e: L(lang, 'Cuota mensual', 'Quota mensual'), v: media.cuota, f: 'eur', nota: L(lang, `Al ${pc(H.tipo_interes_medio_pct, lang)}, tipo medio del INE. Euríbor de ${nombreMes(eu.mes, 'es')}: ${pc(eu.valor, lang)}${eu.pendiente_cotejo ? ' (sin cotejar)' : ''}.`, `Al ${pc(H.tipo_interes_medio_pct, lang)}, tipus mitjà de l’INE. Euríbor de ${nombreMes(eu.mes, 'ca')}: ${pc(eu.valor, lang)}${eu.pendiente_cotejo ? ' (sense confrontar)' : ''}.`),
@@ -68,8 +76,10 @@ export const PLANTILLAS_VIV: Record<string, (fila: Record<string, string>, ctx: 
     const pend = d.pendiente;
     const nuevaOk = !especial && a.tipo != null;
     const n200 = nuevaOk ? g(200000, true) : null;
+    const fin = V.criterios_editoriales_no_normativos.financiacion_habitual_sobre_tasacion_pct;
+    const entrada = r2(200000 * (1 - fin / 100));
     return {
-      titulo: L(lang, `Gastos de compra de vivienda ${en(c, 'es')} ${anio}: ITP y notaría`, `Despeses de compra d’habitatge ${en(c, 'ca')} ${anio}: ITP i notaria`),
+      titulo: L(lang, `Comprar vivienda ${en(c, 'es')}: gastos e impuestos ${anio}`, `Comprar habitatge ${en(c, 'ca')}: despeses i impostos ${anio}`),
       h1: L(lang, `Gastos de comprar una vivienda ${en(c, 'es')}`, `Despeses de comprar un habitatge ${en(c, 'ca')}`),
       descripcion: L(lang, `Comprar una vivienda usada de 200.000 € ${en(c, 'es')} cuesta ${eur(g200.total, lang)} en impuestos y gastos (${pc(g200.pctSobrePrecio, lang)}): ITP del ${pc(d.tipo!, lang)}, notaría y registro. Tabla de 100.000 a 1 M€.`, `Comprar un habitatge usat de 200.000 € ${en(c, 'ca')} costa ${eur(g200.total, lang)} en impostos i despeses (${pc(g200.pctSobrePrecio, lang)}): ITP del ${pc(d.tipo!, lang)}, notaria i registre. Taula de 100.000 a 1 M€.`),
       intro: L(lang,
@@ -80,6 +90,14 @@ export const PLANTILLAS_VIV: Record<string, (fila: Record<string, string>, ctx: 
           filas: PRECIOS.map((p) => { const x = g(p, false); return [p, x.itp, x.notaria, x.registro, x.total, x.pctSobrePrecio]; }) },
         ...(nuevaOk ? [{ titulo: tt('Vivienda nueva: IVA, AJD y gastos', 'Habitatge nou: IVA, AJD i despeses'), cab: [tt('Precio', 'Preu'), tt('IVA', 'IVA'), tt('AJD', 'AJD'), tt('Total gastos', 'Total despeses')], formatos: ['eur0', 'eur0', 'eur0', 'eur0'] as any,
           filas: PRECIOS.slice(0, 7).map((p) => { const x = g(p, true); return [p, x.iva, x.ajd, x.total]; }) }] : []),
+      ],
+      faq: [
+        { p: L(lang, `¿Cuánto cuesta en impuestos y gastos comprar una vivienda usada de 200.000 € ${en(c, 'es')}?`, `Quant costa en impostos i despeses comprar un habitatge usat de 200.000 € ${en(c, 'ca')}?`),
+          r: L(lang, `${eur(g200.total, lang)}, un ${pc(g200.pctSobrePrecio, lang)} del precio: ${eur(g200.itp, lang)} de ITP, ${eur(g200.notaria, lang, 2)} de notaría, ${eur(g200.registro, lang, 2)} de registro y ${eur(g200.gestoria + g200.tasacion, lang)} de gestoría y tasación de ejemplo, más el IVA de los honorarios.`, `${eur(g200.total, lang)}, un ${pc(g200.pctSobrePrecio, lang)} del preu: ${eur(g200.itp, lang)} d’ITP, ${eur(g200.notaria, lang, 2)} de notaria, ${eur(g200.registro, lang, 2)} de registre i ${eur(g200.gestoria + g200.tasacion, lang)} de gestoria i taxació d’exemple, més l’IVA dels honoraris.`) },
+        { p: L(lang, `¿Cuánto ahorro hace falta para comprar por 200.000 €?`, `Quant estalvi cal per comprar per 200.000 €?`),
+          r: L(lang, `Si el banco financia el ${fin} % (criterio habitual, no norma), ${eur(entrada + g200.total, lang)}: ${eur(entrada, lang)} de entrada y ${eur(g200.total, lang)} de impuestos y gastos.`, `Si el banc finança el ${fin} % (criteri habitual, no norma), ${eur(entrada + g200.total, lang)}: ${eur(entrada, lang)} d’entrada i ${eur(g200.total, lang)} d’impostos i despeses.`) },
+        ...(nuevaOk ? [{ p: L(lang, `¿Y si la vivienda es nueva?`, `I si l’habitatge és nou?`),
+          r: L(lang, `No se paga ITP sino IVA del ${pc(n200!.tipoIVA, lang)} (${eur(n200!.iva, lang)}) y AJD del ${pc(a.tipo!, lang)} (${eur(n200!.ajd, lang)}): ${eur(n200!.total, lang)} en total con notaría, registro y gestoría.`, `No es paga ITP sinó IVA del ${pc(n200!.tipoIVA, lang)} (${eur(n200!.iva, lang)}) i AJD del ${pc(a.tipo!, lang)} (${eur(n200!.ajd, lang)}): ${eur(n200!.total, lang)} en total amb notaria, registre i gestoria.`) }] : []),
       ],
       calc: 'viv-gastos-compraventa',
       query: { ccaa: c },
@@ -99,12 +117,13 @@ export const PLANTILLAS_VIV: Record<string, (fila: Record<string, string>, ctx: 
     const rank = COD_VIV.map((k) => ({ k, v: cuotaComunidad(200000, datosITP(V, k)).cuota })).sort((x, y) => x.v - y.v);
     const pos = rank.findIndex((x) => x.k === c) + 1;
     const escalaTxt = (l: Lang) => d.escala ? d.escala.map((t, i) => `${pc(t.tipo, l)} ${i === 0 ? (l === 'es' ? 'hasta' : 'fins a') : (l === 'es' ? 'hasta' : 'fins a')} ${t.hasta == null ? '∞' : eur(t.hasta, l)}`).join(', ').replace(/hasta ∞|fins a ∞/, l === 'es' ? 'en adelante' : 'en endavant') : d.tramoAlto ? `${pc(d.tipo!, l)}; ${pc(d.tramoAlto.tipo, l)} ${l === 'es' ? 'desde' : 'des de'} ${eur(d.tramoAlto.desde, l)}` : pc(d.tipo!, l);
+    const rangoTxt = (l: Lang) => d.escala ? `${l === 'es' ? 'por tramos del' : 'per trams del'} ${pc(d.escala[0].tipo, l)} al ${pc(d.escala[d.escala.length - 1].tipo, l)}` : `de ${escalaTxt(l)}`;
     const red = (C.reducidos ?? []) as { tipo: number; requisito: string }[];
     let desde = 0;
     return {
       titulo: L(lang, `ITP de vivienda ${en(c, 'es')} ${anio}: tipo y ejemplos`, `ITP d’habitatge ${en(c, 'ca')} ${anio}: tipus i exemples`),
       h1: L(lang, `ITP de la vivienda de segunda mano ${en(c, 'es')}`, `ITP de l’habitatge de segona mà ${en(c, 'ca')}`),
-      descripcion: L(lang, `${nomViv(c, 'es')} aplica un ITP de ${escalaTxt('es')} a la vivienda usada: ${eur(r200.cuota, lang)} por 200.000 €. Tipos reducidos y comparativa.`, `${nomViv(c, 'ca')} aplica un ITP de ${escalaTxt('ca')} a l’habitatge usat: ${eur(r200.cuota, lang)} per 200.000 €. Tipus reduïts i comparativa.`),
+      descripcion: L(lang, `${nomViv(c, 'es')} aplica un ITP ${rangoTxt('es')} a la vivienda usada: ${eur(r200.cuota, lang)} por 200.000 €. Tipos reducidos y comparativa.`, `${nomViv(c, 'ca')} aplica un ITP ${rangoTxt('ca')} a l’habitatge usat: ${eur(r200.cuota, lang)} per 200.000 €. Tipus reduïts i comparativa.`),
       intro: L(lang,
         `<p>El ITP de la vivienda de segunda mano ${en(c, 'es')} es de <strong>${escalaTxt('es')}</strong>${d.progresiva ? ', por tramos: cada tipo se aplica solo a la parte del valor que cae en su tramo' : ''}. Por una vivienda de 200.000 € se pagan <strong>${eur(r200.cuota, lang)}</strong>: es la ${pos}.ª más barata de ${COD_VIV.length}.</p>${red.length ? `<p>Tipos reducidos citados: ${red.map((x) => `${pc(x.tipo, 'es')} (${x.requisito})`).join('; ')}. Sus requisitos cambian a menudo y no están cotejados.</p>` : ''}<p>La base es el precio o el valor de referencia de Catastro, el mayor.${d.pendiente ? ' <strong>Dato sin cotejar</strong> con el boletín oficial: compruébalo antes de firmar.' : ''}</p>`,
         `<p>L’ITP de l’habitatge de segona mà ${en(c, 'ca')} és de <strong>${escalaTxt('ca')}</strong>${d.progresiva ? ', per trams: cada tipus s’aplica només a la part del valor que cau en el seu tram' : ''}. Per un habitatge de 200.000 € es paguen <strong>${eur(r200.cuota, lang)}</strong>: és la ${pos}a més barata de ${COD_VIV.length}.</p>${red.length ? `<p>Tipus reduïts citats: ${red.map((x) => `${pc(x.tipo, 'ca')} (${x.requisito})`).join('; ')}. Els requisits canvien sovint i no estan confrontats.</p>` : ''}<p>La base és el preu o el valor de referència del Cadastre, el més alt.${d.pendiente ? ' <strong>Dada sense confrontar</strong> amb el butlletí oficial: comprova-la abans de signar.' : ''}</p>`),
@@ -112,6 +131,14 @@ export const PLANTILLAS_VIV: Record<string, (fila: Record<string, string>, ctx: 
         { titulo: tt('ITP según el valor de la vivienda', 'ITP segons el valor de l’habitatge'), cab: [tt('Valor', 'Valor'), tt('ITP', 'ITP'), tt('Tipo medio', 'Tipus mitjà'), ...(red.length ? [tt('Con el primer tipo reducido', 'Amb el primer tipus reduït')] : [])], formatos: ['eur0', 'eur0', 'pct', 'eur0'],
           filas: PRECIOS.map((p) => { const x = cuotaComunidad(p, d); return [p, x.cuota, x.tipoEfectivo, ...(red.length ? [r2(p * red[0].tipo / 100)] : [])]; }) },
         ...(d.escala ? [{ titulo: tt('Escala por tramos', 'Escala per trams'), cab: [tt('Tramo', 'Tram'), tt('Tipo', 'Tipus')], formatos: ['txt', 'pct'] as any, filas: d.escala.map((t) => { const f = [{ es: `${eur(desde, 'es')} – ${t.hasta == null ? '∞' : eur(t.hasta, 'es')}`, ca: `${eur(desde, 'ca')} – ${t.hasta == null ? '∞' : eur(t.hasta, 'ca')}` }, t.tipo]; desde = t.hasta ?? desde; return f; }) }] : []),
+      ],
+      faq: [
+        { p: L(lang, `¿Cuánto ITP se paga por una vivienda de 200.000 € ${en(c, 'es')}?`, `Quant d’ITP es paga per un habitatge de 200.000 € ${en(c, 'ca')}?`),
+          r: L(lang, `${eur(r200.cuota, lang)}, un tipo medio del ${pc(r200.tipoEfectivo, lang)}. Por 300.000 € serían ${eur(cuotaComunidad(300000, d).cuota, lang)} y por 500.000 €, ${eur(cuotaComunidad(500000, d).cuota, lang)}.${d.pendiente ? ' Tipo sin cotejar con el boletín oficial.' : ''}`, `${eur(r200.cuota, lang)}, un tipus mitjà del ${pc(r200.tipoEfectivo, lang)}. Per 300.000 € serien ${eur(cuotaComunidad(300000, d).cuota, lang)} i per 500.000 €, ${eur(cuotaComunidad(500000, d).cuota, lang)}.${d.pendiente ? ' Tipus sense confrontar amb el butlletí oficial.' : ''}`) },
+        { p: L(lang, `¿Es más caro que en otras comunidades?`, `És més car que en altres comunitats?`),
+          r: L(lang, `Es la ${pos}.ª más barata de ${COD_VIV.length} para 200.000 €. El ITP va de ${eur(rank[0].v, lang)} ${en(rank[0].k, 'es')} a ${eur(rank[rank.length - 1].v, lang)} ${en(rank[rank.length - 1].k, 'es')}.`, `És la ${pos}a més barata de ${COD_VIV.length} per a 200.000 €. L’ITP va de ${eur(rank[0].v, lang)} ${en(rank[0].k, 'ca')} a ${eur(rank[rank.length - 1].v, lang)} ${en(rank[rank.length - 1].k, 'ca')}.`) },
+        { p: L(lang, `¿Sobre qué valor se calcula?`, `Sobre quin valor es calcula?`),
+          r: L(lang, `Sobre el mayor entre el precio escriturado y el valor de referencia de Catastro. Si compras por 180.000 € y el valor de referencia es de 200.000 €, pagas ${eur(r200.cuota, lang)} y no ${eur(cuotaComunidad(180000, d).cuota, lang)}.`, `Sobre el més alt entre el preu escripturat i el valor de referència del Cadastre. Si compres per 180.000 € i el valor de referència és de 200.000 €, pagues ${eur(r200.cuota, lang)} i no ${eur(cuotaComunidad(180000, d).cuota, lang)}.`) },
       ],
       calc: 'viv-itp',
       query: { ccaa: c },

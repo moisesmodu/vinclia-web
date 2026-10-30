@@ -212,3 +212,19 @@ describe('alquiler', () => {
     expect(Number.isFinite(r.diferencia)).toBe(true);
   });
 });
+
+// La calculadora publicada (no solo el motor) da la cifra del ejemplo de la definición
+describe('simulador de hipoteca (calculadora)', () => {
+  const defs = import.meta.glob('../src/calculadoras/viv-simulador-hipoteca.ts', { eager: true, import: 'default' }) as Record<string, any>;
+  const d = defs['../src/calculadoras/viv-simulador-hipoteca.ts'];
+  it('150.000 € a 30 años al 3,01 % fijo: 633,22 €/mes y 77.957,52 € de intereses', () => {
+    const r = d.calcular({ importe: 150000, anios: 30, modo: 'fijo', tin: 3.01, aniosFijos: 5, euribor: 3, diferencial: 0.6 }, { P, lang: 'es', pais: 'es' });
+    expect(r.destacado.v).toBeCloseTo(633.22, 2);
+    expect(r.secundarios[0].v).toBeCloseTo(77957.52, 0);
+    expect(r.tablas[0].filas).toHaveLength(30);
+  });
+  it('variable con Euríbor 3,247 % + 0,60 a 25 años sobre 150.000 €: 779,14 €', () => {
+    const r = d.calcular({ importe: 150000, anios: 25, modo: 'variable', tin: 3, aniosFijos: 5, euribor: 3.247, diferencial: 0.6 }, { P, lang: 'es', pais: 'es' });
+    expect(r.destacado.v).toBeCloseTo(779.14, 2);
+  });
+});

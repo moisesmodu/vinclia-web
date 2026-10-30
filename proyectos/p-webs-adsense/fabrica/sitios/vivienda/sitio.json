@@ -138,6 +138,14 @@
       "titulo": {
         "es": "Cuota de hipoteca por importe y plazo",
         "ca": "Quota d’hipoteca per import i termini"
+      },
+      "indice": {
+        "es": "cuota-hipoteca-por-importe-y-plazo",
+        "ca": "quota-hipoteca-per-import-i-termini"
+      },
+      "descripcion": {
+        "es": "Cuota mensual, intereses y sueldo orientativo de hipotecas de 80.000 a 400.000 € a 20, 25 y 30 años, con el interés medio del INE.",
+        "ca": "Quota mensual, interessos i sou orientatiu d’hipoteques de 80.000 a 400.000 € a 20, 25 i 30 anys, amb l’interès mitjà de l’INE."
       }
     },
     {
@@ -152,6 +160,14 @@
       "titulo": {
         "es": "Gastos de compra de vivienda por comunidad",
         "ca": "Despeses de compra d’habitatge per comunitat"
+      },
+      "indice": {
+        "es": "gastos-compra-vivienda-por-comunidad",
+        "ca": "despeses-compra-habitatge-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Impuestos, notaría, registro y gestoría de comprar una vivienda de 200.000 € en cada una de las 19 comunidades y ciudades autónomas.",
+        "ca": "Impostos, notaria, registre i gestoria de comprar un habitatge de 200.000 € a cadascuna de les 19 comunitats i ciutats autònomes."
       }
     },
     {
@@ -166,6 +182,14 @@
       "titulo": {
         "es": "ITP de vivienda por comunidad",
         "ca": "ITP d’habitatge per comunitat"
+      },
+      "indice": {
+        "es": "itp-vivienda-por-comunidad",
+        "ca": "itp-habitatge-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Tipo de ITP de la vivienda de segunda mano en cada comunidad, con escalas por tramos, tipos reducidos y ejemplo para 200.000 €.",
+        "ca": "Tipus d’ITP de l’habitatge de segona mà a cada comunitat, amb escales per trams, tipus reduïts i exemple per a 200.000 €."
       }
     }
   ],
