@@ -162,6 +162,7 @@ interface ConfFicha {
   xNumerico?: boolean; // la X es un importe o un año: puntos a su distancia real
   ordenar?: boolean; // barras de mayor a menor
   invertir?: boolean; // la tabla viene de más reciente a más antiguo
+  puntos?: boolean; // tipos de interés o índices: la variación de la portada va en puntos, no en %
   titulo: (lang: Lang, cab: string[]) => string;
 }
 const L = (lang: Lang, es: string, ca: string) => (lang === 'ca' ? ca : es);
@@ -178,6 +179,17 @@ const FICHAS: Record<string, ConfFicha> = {
   'irpf-por-salario-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l, c) => L(l, `IRPF anual con ${c[2]} brutos`, `IRPF anual amb ${c[2]} bruts`) },
   'tipo-marginal-comunidades': { tipo: 'barras', y: [5], ordenar: true, titulo: (l) => L(l, 'Tipo marginal máximo (estatal + autonómico)', 'Tipus marginal màxim (estatal + autonòmic)') },
   'minimos-personales': { tipo: 'barras', tabla: 1, y: [1], ordenar: true, titulo: (l) => L(l, 'Mínimo personal autonómico', 'Mínim personal autonòmic') },
+  // PisoClaro (src/fichas/vivienda.ts)
+  'euribor-historico': { tipo: 'linea', y: [1], invertir: true, puntos: true, titulo: (l) => L(l, 'Euríbor a 12 meses, media mensual', 'Euríbor a 12 mesos, mitjana mensual') },
+  'itp-por-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'ITP de una vivienda usada de 200.000 €', 'ITP d’un habitatge usat de 200.000 €') },
+  'ajd-por-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'AJD de una vivienda nueva de 250.000 €', 'AJD d’un habitatge nou de 250.000 €') },
+  'gastos-compraventa-por-comunidad': { tipo: 'barras', y: [3], ordenar: true, titulo: (l) => L(l, 'Impuestos y gastos de comprar una vivienda de 200.000 €', 'Impostos i despeses de comprar un habitatge de 200.000 €') },
+  'coeficientes-plusvalia': { tipo: 'linea', y: [1], xNumerico: true, titulo: (l) => L(l, 'Coeficiente máximo vigente según los años de tenencia', 'Coeficient màxim vigent segons els anys de tinença') },
+  'cuota-hipoteca-por-importe': { tipo: 'linea', y: [3, 4], xNumerico: true, titulo: (l) => L(l, 'Cuota mensual según el importe, a 25 y 30 años', 'Quota mensual segons l’import, a 25 i 30 anys') },
+  'irav-mensual': { tipo: 'linea', y: [1], invertir: true, puntos: true, titulo: (l) => L(l, 'IRAV mensual', 'IRAV mensual') },
+  'aranceles-notaria-registro': { tipo: 'linea', y: [1, 2], xNumerico: true, titulo: (l) => L(l, 'Notaría y registro según el precio (sin IVA)', 'Notaria i registre segons el preu (sense IVA)') },
+  'hipotecas-ine': { tipo: 'barras', y: [1], titulo: (l) => L(l, 'Interés medio de las hipotecas sobre vivienda (INE)', 'Interès mitjà de les hipoteques sobre habitatge (INE)') },
+  'esfuerzo-hipotecario-por-sueldo': { tipo: 'linea', y: [1, 2, 3], xNumerico: true, titulo: (l) => L(l, 'Hipoteca máxima según el sueldo neto y el esfuerzo', 'Hipoteca màxima segons el sou net i l’esforç') },
   'salario-minimo-estados': { tipo: 'barras', y: [1], ordenar: true, titulo: () => 'Salario mínimo por hora en cada estado' },
   'impuesto-estatal-estados': { tipo: 'barras', y: [3], ordenar: true, titulo: () => 'Impuesto estatal anual con $60,000 (soltero/a)' },
 };
@@ -213,11 +225,11 @@ export function graficoFicha(id: string, tablas: Tabla[], lang: Lang): string {
 }
 
 /** Serie histórica de una ficha (para el minigráfico de las cifras de la portada). */
-export function serieFicha(id: string, tablas: Tabla[], lang: Lang): { desde: string; valores: number[] } | null {
+export function serieFicha(id: string, tablas: Tabla[], lang: Lang): { desde: string; valores: number[]; puntos?: boolean } | null {
   const c = FICHAS[id];
   if (!c || c.tipo !== 'linea' || !c.invertir) return null;
   const k = c.y[c.y.length - 1];
   const filas = tablas[c.tabla ?? 0].filas.filter((f) => Number.isFinite(num(f[k] as Celda))).reverse();
   if (filas.length < 4) return null;
-  return { desde: txt(filas[0][c.x ?? 0] as Celda, lang), valores: filas.map((f) => num(f[k] as Celda)) };
+  return { desde: txt(filas[0][c.x ?? 0] as Celda, lang), valores: filas.map((f) => num(f[k] as Celda)), ...(c.puntos ? { puntos: true } : {}) };
 }

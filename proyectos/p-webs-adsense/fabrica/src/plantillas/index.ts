@@ -8,6 +8,7 @@ import { cuotaAnual, baseTrabajo, retencion } from '../lib/calc/irpf';
 import { sumarEscalas, r2 } from '../lib/calc/base';
 import paisES from '../../params/es/pais.json';
 import { PLANTILLAS_US } from './us';
+import { PLANTILLAS_VIV } from './vivienda';
 
 export interface PaginaProg {
   titulo: string;
@@ -172,5 +173,7 @@ export const PLANTILLAS: Record<string, Plantilla> = {
 
 // Plantillas del sitio de EE. UU. (src/plantillas/us.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_US);
+// Plantillas de PisoClaro (src/plantillas/vivienda.ts)
+Object.assign(PLANTILLAS, PLANTILLAS_VIV);
 
 export type { T };

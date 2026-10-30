@@ -7,6 +7,7 @@ import { leerCSV } from './csv';
 import { FICHAS as FN } from '../fichas/nomina';
 import { FICHAS as FI } from '../fichas/impuestos';
 import { FICHAS as FU } from '../fichas/eeuu';
+import { FICHAS as FV } from '../fichas/vivienda';
 import type { Ficha } from '../fichas/tipos';
 
 export type Tipo = 'inicio' | 'calc' | 'fichas' | 'ficha' | 'prog' | 'legal';
@@ -20,7 +21,7 @@ export interface Pagina {
   coleccion?: any;
 }
 
-export const FICHAS: Record<string, Ficha[]> = { nomina: FN, impuestos: FI, eeuu: FU };
+export const FICHAS: Record<string, Ficha[]> = { nomina: FN, impuestos: FI, eeuu: FU, vivienda: FV };
 export const fichasSitio = (): Ficha[] => FICHAS[SITIO_ID] ?? [];
 
 const pref = (lang: Lang) => (lang === 'es' ? '' : `${lang}/`);
