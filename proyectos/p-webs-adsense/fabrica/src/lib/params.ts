@@ -7,7 +7,8 @@
 // Sin PAIS (pruebas) se cargan todos.
 type Mapa = Record<string, any>;
 
-const ES: Mapa = import.meta.glob('../../params/es/*/*.json', { eager: true, import: 'default' });
+// calendario.json no es un bloque de parámetros: lo carga src/lib/calc/calendario.ts solo donde hace falta
+const ES: Mapa = import.meta.glob(['../../params/es/*/*.json', '!../../params/es/*/calendario.json'], { eager: true, import: 'default' });
 const US: Mapa = import.meta.glob('../../params/us/*/*.json', { eager: true, import: 'default' });
 const PAISES: Mapa = import.meta.glob('../../params/*/pais.json', { eager: true, import: 'default' });
 const PAIS = import.meta.env.PAIS as string | undefined;

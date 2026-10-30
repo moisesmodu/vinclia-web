@@ -178,6 +178,7 @@ const FICHAS: Record<string, ConfFicha> = {
   'irpf-por-salario-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l, c) => L(l, `IRPF anual con ${c[2]} brutos`, `IRPF anual amb ${c[2]} bruts`) },
   'tipo-marginal-comunidades': { tipo: 'barras', y: [5], ordenar: true, titulo: (l) => L(l, 'Tipo marginal máximo (estatal + autonómico)', 'Tipus marginal màxim (estatal + autonòmic)') },
   'minimos-personales': { tipo: 'barras', tabla: 1, y: [1], ordenar: true, titulo: (l) => L(l, 'Mínimo personal autonómico', 'Mínim personal autonòmic') },
+  'festivos-comunidades-2027': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'Festivos entre semana por comunidad en 2027', 'Festius entre setmana per comunitat el 2027') },
   'salario-minimo-estados': { tipo: 'barras', y: [1], ordenar: true, titulo: () => 'Salario mínimo por hora en cada estado' },
   'impuesto-estatal-estados': { tipo: 'barras', y: [3], ordenar: true, titulo: () => 'Impuesto estatal anual con $60,000 (soltero/a)' },
 };

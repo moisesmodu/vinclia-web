@@ -7,6 +7,7 @@ import { sueldoNeto, indemnizacion, requisitoAnio } from '../lib/calc/laboral';
 import { cotizacion } from '../lib/calc/ss';
 import { retencion } from '../lib/calc/irpf';
 import { r2 } from '../lib/calc/base';
+import { tablaComunidades } from '../plantillas/calendario';
 
 const BOE_COT = { nombre: tt('Orden PJC/297/2026 de cotización (BOE)', 'Ordre PJC/297/2026 de cotització (BOE)'), url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296' };
 const LGSS = { nombre: tt('Ley General de la Seguridad Social (BOE)', 'Llei general de la Seguretat Social (BOE)'), url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724' };
@@ -192,5 +193,16 @@ export const FICHAS: Ficha[] = [
         const ss = cotizacion({ brutoAnual: b }, P.laboral).trabajador.anual;
         return [b, ...[0, 1, 2, 3].map((h) => retencion({ brutoAnual: b, ssAnual: ss, hijos: h }, P.fiscal).tipo)];
       }) }],
+  },
+  {
+    id: 'festivos-comunidades-2027',
+    slug: tt('festivos-por-comunidad-2027', 'festius-per-comunitat-2027'),
+    titulo: tt('Festivos por comunidad autónoma en 2027: tabla y laborables', 'Festius per comunitat autònoma el 2027: taula i laborables'),
+    h1: tt('Festivos de 2027 por comunidad autónoma', 'Festius del 2027 per comunitat autònoma'),
+    descripcion: tt('Los 12 festivos de cada comunidad en 2027: cuántos caen entre semana, días laborables de lunes a viernes, comparación con 2026 y fiestas propias de cada una.', 'Els 12 festius de cada comunitat el 2027: quants cauen entre setmana, dies laborables de dilluns a divendres, comparació amb el 2026 i festes pròpies de cadascuna.'),
+    intro: tt('<p>Cada comunidad tiene 12 festivos en 2027, más los dos locales de cada municipio, que no están en esta tabla. Como el 1 de mayo y el 25 de diciembre caen en sábado y el 15 de agosto en domingo, los días laborables de lunes a viernes van de 251 a 252. Los datos salen de la resolución del BOE de 8 de octubre de 2026 y del boletín de cada comunidad.</p>', '<p>Cada comunitat té 12 festius el 2027, més els dos locals de cada municipi, que no són en aquesta taula. Com que l’1 de maig i el 25 de desembre cauen en dissabte i el 15 d’agost en diumenge, els dies laborables de dilluns a divendres van de 251 a 252. Les dades surten de la resolució del BOE de 8 d’octubre de 2026 i del butlletí de cada comunitat.</p>'),
+    fuentes: [{ nombre: tt('Resolución de 8 de octubre de 2026: fiestas laborales de 2027 (BOE-A-2026-21254)', 'Resolució de 8 d’octubre de 2026: festes laborals del 2027 (BOE-A-2026-21254)'), url: 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254' }, ET],
+    calc: 'dias-laborables',
+    tablas: ({ lang }) => [tablaComunidades(lang)],
   },
 ];

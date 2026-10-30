@@ -9,7 +9,7 @@ import { PLANTILLAS } from '../src/plantillas/index';
 
 const SITIOS = ['nomina', 'impuestos', 'eeuu'];
 // Colecciones que estrenan esta tanda (las anteriores no tenían preguntas frecuentes)
-const NUEVAS = ['neto-bruto-comunidad', 'indemnizacion-anos', 'paro-base', 'paro-anos', 'autonomos-tramo', 'modelo-303-trimestre', 'modelo-130-trimestre', 'iva-producto', 'impuesto-estatal-estado', 'overtime-estado', 'credito-hijos', 'cheque-estado-salario', 'hora-a-anual'];
+const NUEVAS = ['neto-bruto-comunidad', 'indemnizacion-anos', 'paro-base', 'paro-anos', 'autonomos-tramo', 'modelo-303-trimestre', 'modelo-130-trimestre', 'iva-producto', 'impuesto-estatal-estado', 'overtime-estado', 'credito-hijos', 'cheque-estado-salario', 'hora-a-anual', 'calendario-laboral'];
 
 for (const sitio of SITIOS) {
   const cfg = JSON.parse(readFileSync(`sitios/${sitio}/sitio.json`, 'utf8'));

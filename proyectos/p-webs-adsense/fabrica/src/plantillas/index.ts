@@ -10,6 +10,7 @@ import paisES from '../../params/es/pais.json';
 import { PLANTILLAS_US } from './us';
 import { PLANTILLAS_NOMINA } from './nomina';
 import { PLANTILLAS_IMPUESTOS } from './impuestos';
+import { PLANTILLAS_CALENDARIO } from './calendario';
 
 export interface PaginaProg {
   titulo: string;
@@ -27,6 +28,8 @@ export interface PaginaProg {
   cifra?: { e: string; v: number; f: Formato; nota?: string; extra?: { e: string; v: number; f: Formato }[] };
   /** Gráfico pequeño de la cabecera: reparto de un total o comparación con barras. */
   grafico?: GraficoProg;
+  /** HTML propio de la página (por ejemplo, el calendario de 12 meses), que va entre la cabecera y las tablas. */
+  bloque?: string;
 }
 export type GraficoProg =
   | { tipo: 'reparto'; titulo: string; partes: { e: string; v: number }[]; formato: Formato }
@@ -179,5 +182,7 @@ export const PLANTILLAS: Record<string, Plantilla> = {
 Object.assign(PLANTILLAS, PLANTILLAS_US);
 // Páginas por combinación de NetoClaro e ImpuestoClaro (src/plantillas/nomina.ts e impuestos.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_NOMINA, PLANTILLAS_IMPUESTOS);
+// Calendario laboral por comunidad y municipio de NetoClaro (src/plantillas/calendario.ts)
+Object.assign(PLANTILLAS, PLANTILLAS_CALENDARIO);
 
 export type { T };

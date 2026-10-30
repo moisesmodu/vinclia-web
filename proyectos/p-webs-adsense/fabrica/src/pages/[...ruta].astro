@@ -17,6 +17,7 @@ import { leerCSV } from '../lib/csv';
 import { nombreComunidad } from '../lib/campos';
 import { icono, iconoCalc } from '../lib/iconos';
 import { graficoFicha, serieFicha, minilinea, reparto, barras } from '../lib/graficos';
+import '../styles/calendario.css';
 
 export function getStaticPaths() {
   return paginas().map((p) => ({ params: { ruta: p.ruta || undefined }, props: { p } }));
@@ -381,6 +382,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         </div>
         {v.tipoGraf === 'barras' && <Fragment set:html={v.grafico} />}
       </div>
+      {v.pg.bloque && <Fragment set:html={v.pg.bloque} />}
       <div class="ficha-tablas" set:html={v.html} />
       <Anuncio posicion="bajoResultado" lang={lang} />
       {v.pg.faq?.length > 0 && (

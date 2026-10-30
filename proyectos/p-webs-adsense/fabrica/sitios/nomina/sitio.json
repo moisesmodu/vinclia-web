@@ -71,6 +71,7 @@
     "finiquito",
     "indemnizacion-despido",
     "vacaciones",
+    "dias-laborables",
     "horas-extra",
     "salario-hora",
     "reduccion-jornada",
@@ -226,6 +227,28 @@
         "es": "Cuántos meses de paro tienes con 1 a 6 años cotizados y cuánto suman según tu base de cotización.",
         "ca": "Quants mesos d’atur tens amb 1 a 6 anys cotitzats i quant sumen segons la teva base de cotització."
       }
+    },
+    {
+      "id": "calendario-laboral",
+      "plantilla": "calendario-laboral",
+      "csv": "calendario-laboral.csv",
+      "slug": {
+        "es": "calendario-laboral-2027-{slug_es}",
+        "ca": "calendari-laboral-2027-{slug_ca}"
+      },
+      "calc": "dias-laborables",
+      "titulo": {
+        "es": "Calendario laboral 2027",
+        "ca": "Calendari laboral 2027"
+      },
+      "indice": {
+        "es": "calendario-laboral-2027",
+        "ca": "calendari-laboral-2027"
+      },
+      "descripcion": {
+        "es": "Festivos nacionales, autonómicos y locales de 2027 en las 17 comunidades y en los municipios con fiestas locales publicadas: días laborables, puentes y comparación con 2026.",
+        "ca": "Festius nacionals, autonòmics i locals del 2027 a les 17 comunitats i als municipis amb festes locals publicades: dies laborables, ponts i comparació amb el 2026."
+      }
     }
   ],
   "marcaClaro": {
@@ -296,7 +319,8 @@
         "horas-extra",
         "salario-hora",
         "reduccion-jornada",
-        "vacaciones"
+        "vacaciones",
+        "dias-laborables"
       ]
     },
     {
