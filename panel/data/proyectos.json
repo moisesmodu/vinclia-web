@@ -67,7 +67,9 @@
       "Primer pago real verificado"
     ],
     "paraMoises": [
-      "Publicar en Google Play y guardar la clave de firma Android (cuando la sesión del Mac haya desplegado)"
+      "Google Play: crear la app y subir el paquete (prueba interna)",
+      "Pago real de prueba de 9,99 € cuando el Mac active Stripe real",
+      "Aprobar la primera tanda de vídeos y mensajes a comunidades (marketing/)"
     ],
     "mejoras": [
       "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
@@ -336,7 +338,10 @@
       "Aplicar la identidad de marca de MARCAS.md",
       "Verificar un pago en producción"
     ],
-    "paraMoises": [],
+    "paraMoises": [
+      "Pago real de prueba cuando el Mac active Stripe real",
+      "Aprobar la tarea programada semanal"
+    ],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
       "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
@@ -612,8 +617,9 @@
       "Preparar campaña de búsqueda sin activar"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Proyecto en Vercel y Neon"
+      "Aprobar y publicar los 5 mensajes de MONETIZACION.md §4 en los grupos de Telegram/WhatsApp",
+      "Pago real de 9,99 € en /es/precios cuando el Mac active Stripe real",
+      "Opcional: dominio placa.cat"
     ],
     "mejoras": [
       "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",
@@ -1266,7 +1272,7 @@
       "Verificar la licencia de la voz Matxa o entrenar voz propia"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel, Neon y del proveedor de voz",
+      "Arrancar la sesión con el prompt cuando toque (prioridad 8)",
       "Conseguir 20 candidatos al C1 para la prueba de validez"
     ],
     "mejoras": [
@@ -2524,8 +2530,7 @@
       "Abrir la sesión L después de B"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel y Neon",
-      "3 dominios"
+      "Arrancar la sesión cuando B tenga ingresos (prioridad 9)"
     ],
     "mejoras": [
       "Vertical DELE A2 'nacionalidad' en inglés, árabe, chino y portugués como entrada mundial, con simulacro completo y corrección IA de la expresión escrita; enlaza con la marca Nuevo en España.",
@@ -2792,7 +2797,7 @@
       "Abrir la sesión O"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel, Neon y proveedor de voz"
+      "Arrancar la sesión tras la Navidad de G (prioridad 10)"
     ],
     "mejoras": [
       "Métrica central: palabras correctas por minuto y precisión frente al baremo por curso, en informe semanal con percentil y evolución.",
