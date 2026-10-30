@@ -260,8 +260,19 @@
   {
     "slug": "tow-truck",
     "titulo": "Tow Truck",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Conducción con físicas (coches tipo plataforma), una pulsación: grúa con remolque y carga suelta",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Hold to drive, release to brake. Tow a wobbly trailer of crates, barrels and sheep over farm hills to the barn!",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "hill-climb-games",
+      "no-download-games"
+    ]
   }
 ]

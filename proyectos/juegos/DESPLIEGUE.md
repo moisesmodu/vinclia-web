@@ -97,5 +97,5 @@ Nuevos y listos desde el último despliegue: Hook Hop, Trick Floor, Lane Dash, F
 Rope Cut, Hoop Bounce y Paper Glide. Volver a desplegar la rama: la portada debe mostrar 14 juegos y cada `/<juego>/`
 cargar su menú.
 
-## Redespliegue pendiente · 15 juegos (30/10/2026)
-Nuevo y listo: Pin Rescue. Volver a desplegar la rama: la portada debe mostrar 15 juegos y `/pin-rescue/` cargar su menú.
+## Redespliegue pendiente · 16 juegos (30/10/2026)
+Nuevos y listos: Pin Rescue y Tow Truck. Volver a desplegar la rama: la portada debe mostrar 16 juegos y `/pin-rescue/` y `/tow-truck/` cargar su menú.
