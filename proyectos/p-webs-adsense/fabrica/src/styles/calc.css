@@ -27,7 +27,7 @@
 .meta-calc strong{color:var(--tinta);font-weight:600}
 
 /* ——— Contenedor de la calculadora ——— */
-.calc{display:grid;gap:18px;background:var(--superficie);border:1px solid var(--linea);border-radius:24px;padding:18px 16px;box-shadow:var(--sombra-m);position:relative}
+.calc{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;background:var(--superficie);border:1px solid var(--linea);border-radius:24px;padding:18px 16px;box-shadow:var(--sombra-m);position:relative}
 .calc:not(.mini)::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;background:linear-gradient(180deg,color-mix(in srgb,var(--marca) 45%,transparent),transparent 38%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
 @media (min-width:860px){
   .calc{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);padding:12px;gap:12px}

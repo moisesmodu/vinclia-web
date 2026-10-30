@@ -24,6 +24,7 @@ const P: Record<string, string> = {
   euro: '<circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.6A4 4 0 0 0 9 12a4 4 0 0 0 6.5 3.4M7.5 10.8h5M7.5 13.2h5"/>',
   calculadora: '<rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7h8M8.5 11.5h.5M11.75 11.5h.5M15 11.5h.5M8.5 15h.5M11.75 15h.5M15 15h.5M8.5 18h.5M11.75 18h3.75"/>',
   tabla: '<rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4.5v15"/>',
+  llave: '<circle cx="8" cy="15" r="4.5"/><path d="m11.3 11.7 8.2-8.2M16.5 6.5l2.5 2.5M14 9l2 2"/>',
   bandera: '<path d="M5 21V4M5 4.5h11.5l-2 4 2 4H5"/>',
 };
 
@@ -40,6 +41,11 @@ export const ICONO_CALC: Record<string, string> = {
   'us-cheque-pago': 'cartera', 'us-salario-hora': 'reloj', 'us-impuesto-federal': 'documento', 'us-reembolso': 'monedas',
   'us-1099': 'persona', 'us-impuesto-estatal': 'bandera', 'us-fica': 'porcentaje', 'us-w4': 'nomina', 'us-overtime': 'reloj',
   'us-propinas-overtime': 'monedas', 'us-credito-hijos': 'escudo', 'us-salario-minimo': 'euro', 'us-401k': 'subida',
+  'viv-simulador-hipoteca': 'casa', 'viv-revision-euribor': 'subida', 'viv-fija-o-variable': 'balanza', 'viv-cuanta-hipoteca': 'cartera',
+  'viv-ahorro-entrada': 'monedas', 'viv-gastos-compraventa': 'factura', 'viv-itp': 'porcentaje', 'viv-iva-ajd': 'porcentaje', 'viv-notaria-registro': 'documento',
+  'viv-tabla-amortizacion': 'tabla', 'viv-amortizacion-anticipada': 'reloj', 'viv-cambiar-banco': 'balanza', 'viv-tae': 'porcentaje', 'viv-plusvalia': 'empresa',
+  'viv-ganancia-venta': 'subida', 'viv-deduccion-vivienda': 'escudo', 'viv-ibi': 'calendario', 'viv-subida-alquiler': 'llave', 'viv-rentabilidad-alquiler': 'euro',
+  'viv-alquilar-o-comprar': 'balanza',
   'us-tarjeta': 'factura', 'us-prestamo-auto': 'coche', 'us-remesas': 'balanza', 'us-tipo-cambio': 'porcentaje',
 };
 

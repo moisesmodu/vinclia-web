@@ -1,8 +1,9 @@
 // Imágenes para compartir (Open Graph, 1200×630) de cada sitio, en cada idioma, y del portal.
 // Se generan una vez (o cuando cambie la marca o las cifras) con una plantilla HTML capturada con Playwright:
 //   node scripts/og.mjs   →   public/og/<sitio>[-ca].jpg y public/og/portal.jpg
+//   node scripts/og.mjs vivienda   →   solo las de ese sitio (sin tocar las demás ni la del portal)
 // JPEG de calidad alta: pesa menos de 300 kB, el límite de WhatsApp para mostrar la vista previa grande.
-import { readFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
@@ -47,23 +48,26 @@ p{margin-top:22px;font-size:25px;line-height:1.4;color:rgba(255,255,255,.78);max
 }
 
 const trabajos = [];
-for (const s of familia.sitios.filter((x) => x.estado === 'activo' && existsSync(`sitios/${x.id}/sitio.json`))) {
+const solo = process.argv.slice(2);
+for (const s of familia.sitios.filter((x) => x.estado === 'activo' && existsSync(`sitios/${x.id}/sitio.json`) && (!solo.length || solo.includes(x.id)))) {
   const cfg = JSON.parse(readFileSync(`sitios/${s.id}/sitio.json`, 'utf8'));
   const pais = JSON.parse(readFileSync(`params/${cfg.pais}/pais.json`, 'utf8'));
-  const P = { laboral: JSON.parse(readFileSync(`params/${cfg.pais}/${cfg.anioPorDefecto}/laboral.json`, 'utf8')), fiscal: JSON.parse(readFileSync(`params/${cfg.pais}/${cfg.anioPorDefecto}/fiscal.json`, 'utf8')) };
-  const leer = (ruta) => ruta.split('.').reduce((o, k) => o?.[k], P);
+  // Todos los bloques del año (laboral, fiscal y los extra como vivienda); «ultimo» toma el último dato de una serie
+  const dir = `params/${cfg.pais}/${cfg.anioPorDefecto}`;
+  const P = Object.fromEntries(readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => [f.replace(/\.json$/, ''), JSON.parse(readFileSync(`${dir}/${f}`, 'utf8'))]));
+  const leer = (ruta) => ruta.split('.').reduce((o, k) => (k === 'ultimo' && Array.isArray(o) ? o.filter((x) => x?.valor != null).at(-1) : o?.[k]), P);
   for (const lang of cfg.idiomas) {
     const t = (x) => (x?.[lang] ?? x?.es ?? '');
     const chips = (cfg.cifras ?? []).slice(0, 3).map((c) => ({ e: t(c.e), v: formato(leer(c.p), c.f, pais.locales[lang], pais.moneda) }));
     const dom = cfg.dominio.replace(/^https?:\/\//, '');
     trabajos.push({ salida: `public/og/${s.id}${lang === 'es' ? '' : '-' + lang}.jpg`, html: plantilla({
       fondo: cfg.colores.cabecera, marca: cfg.colores.marca, partes: cfg.marcaClaro.partes,
-      titulo: t(cfg.heroe.titulo), texto: t(cfg.lema) + '.', chips, ilu: archivo(`public/img/heroe-${s.id}-800.webp`),
+      titulo: t(cfg.heroe.titulo), texto: t(cfg.lema) + '.', chips, ilu: archivo(`public${cfg.ilustracion?.base ?? `/img/heroe-${s.id}`}-800.webp`),
       pie: `${dom} · ${lang === 'ca' ? 'Família Claro' : 'Familia Claro'}`,
     }) });
   }
 }
-trabajos.push({ salida: 'public/og/portal.jpg', html: plantilla({
+if (!solo.length) trabajos.push({ salida: 'public/og/portal.jpg', html: plantilla({
   fondo: '#0B1F17', marca: '#0E9F6E', partes: ['Calcula', 'Claro'],
   titulo: '¿Qué quieres <em>calcular</em> hoy?', texto: 'Calculadoras gratis de sueldo, impuestos y dinero, con datos oficiales y el método a la vista.',
   chips: familia.sitios.filter((x) => x.estado === 'activo').map((x) => ({ e: x.interes.es.split(',')[0], v: x.nombre })),

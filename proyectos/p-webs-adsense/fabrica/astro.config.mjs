@@ -47,6 +47,8 @@ export default defineConfig({
       'import.meta.env.PAIS': JSON.stringify(cfg.pais),
       'import.meta.env.MONEDA': JSON.stringify(pais.moneda),
       'import.meta.env.LOCALES': JSON.stringify(pais.locales),
+      // Bloques de parámetros extra del sitio (sitio.json → «bloques»): sin ellos no se empaquetan (src/lib/params.ts)
+      'import.meta.env.BLOQUES_EXTRA': JSON.stringify(!!cfg.bloques?.length),
     },
   },
 });

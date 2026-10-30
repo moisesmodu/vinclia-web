@@ -10,6 +10,7 @@ import paisES from '../../params/es/pais.json';
 import { PLANTILLAS_US } from './us';
 import { PLANTILLAS_NOMINA } from './nomina';
 import { PLANTILLAS_IMPUESTOS } from './impuestos';
+import { PLANTILLAS_VIV } from './vivienda';
 
 export interface PaginaProg {
   titulo: string;
@@ -179,5 +180,7 @@ export const PLANTILLAS: Record<string, Plantilla> = {
 Object.assign(PLANTILLAS, PLANTILLAS_US);
 // Páginas por combinación de NetoClaro e ImpuestoClaro (src/plantillas/nomina.ts e impuestos.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_NOMINA, PLANTILLAS_IMPUESTOS);
+// Plantillas de PisoClaro (src/plantillas/vivienda.ts)
+Object.assign(PLANTILLAS, PLANTILLAS_VIV);
 
 export type { T };
