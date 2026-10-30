@@ -1087,6 +1087,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Marca propia (tercera pasada, pedida por Moisés): identidad «full de respostes» (papel, bolígrafo azul #2140D6, cuadrícula, marcador fluorescente), Archivo Expanded ExtraBold, logotipo con trazado real y en Volat (el punt volat con cara) como personaje; portada con la necesidad (taxa, meses, plaza) y cuenta atrás de inscripciones. MARCA.md, MARCAS.md §4 y DISSENY.md actualizados"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Auditoría completa (AUDITORIA.md + auditoria/*): técnica de producción (Lighthouse 89–99/96/100/100, 104 rutas OK), código y seguridad (TTS abierto, cuotas evitables, pase rejugable, probabilidad mal calibrada), mercado con fuentes (C1 DPL 2.048 presentados y 41 % aptos en 2023; C2 13.068 inscritos 2026; competidor directo Catfy). Veredicto: beta temprana, viable como producto complementario; no cobrar hasta cerrar fases 0–2"
       }
     ],
     "proximos": [
@@ -1200,7 +1204,8 @@
         "url": "https://provesjqcv.gva.es",
         "precio": "Tasa JQCV C1 y C2 de 23,39 €",
         "debilidad": "Apps genéricas de test, sin oral ni redacción corregida · Lo que extraemos: Estructura por áreas con mínimos trasladable a un motor multicertificado; la saturación (cita previa obligatoria, más de 700 impugnaciones en 2024) muestra la demanda"
-      }
+      },
+      "Catfy (catfy.app): PWA + Play, A1–C2, corrección escrita y oral con IA, simulacros, gratis en lanzamiento, solo en catalán"
     ],
     "repos": [
       {
@@ -1297,7 +1302,8 @@
       "LanguageTool 6.8 con las reglas de Softcatalà se puede ejecutar en la sesión bajándolo de Maven Central (languagetool.org está bloqueado): valida 1.349 textos del banco en unos minutos y detectó una docena de errores reales en el contenido generado (apóstrofos, concordancias, accentos pre-2017).",
       "Hugging Face está bloqueado desde la red del entorno: los modelos del BSC (Salamandra, ALIA) y el Whisper catalán de AINA solo se pueden usar vía un endpoint propio (BSC_API_URL, WHISPER_URL); el motor está preparado y hoy corre con Anthropic o en modo sesión.",
       "La voz en catalán del propio navegador (SpeechSynthesis ca-ES) y el reconocimiento Web Speech ca-ES de Chrome en Android bastan para dictados, comprensión oral y lectura en voz alta sin coste: el coste variable por usuario queda en céntimos hasta activar un TTS de pago.",
-      "Los agentes de contenido dejaron cinco dudas normativas (ser/estar con localización de cosas, caída de preposición en coloquial, al + infinitivo, gaire/molt, quedar-se/romandre) que deben resolverse en la revisión humana antes de marcar esos ítems como diagnósticos."
+      "Los agentes de contenido dejaron cinco dudas normativas (ser/estar con localización de cosas, caída de preposición en coloquial, al + infinitivo, gaire/molt, quedar-se/romandre) que deben resolverse en la revisión humana antes de marcar esos ítems como diagnósticos.",
+      "Auditoría 30/10: el C1 lo suspende la mayoría (41 % aptos 2023), el mercado grande es el C2 (13.068 inscritos 2026) y existe Catfy (gratis, IA). Conversión a planificar en 1,5–2 %. Detalle en proyectos/m-catala/AUDITORIA.md"
     ],
     "lider": {
       "nombre": "Speak (Speakeasy Labs), modelo de tutor de idiomas por voz con IA; Parla.cat como incumbente catalán",

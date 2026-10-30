@@ -26,14 +26,41 @@ capturas de todas las pantallas en Pixel 7 y escritorio, e investigación de mer
 7. **Portada**: «Un de cada quatre suspèn» se queda corta para el C1 (suspenden 3 de cada 5 en 2023); la cifra correcta es más fuerte.
 8. **Viabilidad económica**: coste variable < 0,35 €/usuario/mes, margen > 90 %. Ingresos realistas: 1–4 k€ el primer año, 8–20 k€ al
    tercero con C2, JQCV y licencias B2B. **Negocio complementario, no principal**; cumple el objetivo interno de 25 suscriptores (250 €/mes).
-9. **Técnica**: ver sección 1 (rendimiento, accesibilidad, SEO, API). Sin tests unitarios; 37 errores silenciados; rate limiting en memoria
-   que en Vercel no limita nada.
+9. **Técnica**: sólida en lo básico (104 rutas sin errores, Lighthouse 89–99 en rendimiento, 100 en buenas prácticas, PWA offline, webhook
+   y cookies bien) y floja en lo que no se ve: rate limiting que en Vercel no limita nada, sin CSP, contraste del gris pequeño 3,1:1,
+   hreflang y metadatos duplicados en casi todas las páginas, sin tests unitarios y 37 errores silenciados.
 10. **Decisión recomendada**: seguir, con tres condiciones antes del cobro real: corregir seguridad y probabilidad (sección 6, fases 0–1),
     hacer la prueba de validez y añadir el C2. Estimación total hasta cobro real: 5–6 sesiones de trabajo más una tarde de Moisés.
 
 ## 1. Funcionalidad y técnica (producción)
 
-_(Pendiente: la auditoría automática de producción, con rastreo de rutas, Lighthouse, axe y pruebas de API, se está ejecutando; esta sección se completa en el siguiente commit.)_
+Detalle, tablas por ruta y material bruto en `auditoria/tecnica.md`. Medido el 30/10/2026 sobre producción con Chromium (Pixel 7 emulado).
+
+**Lo que está bien**
+- 104 rutas rastreadas: 103 responden 200 y la inexistente da 404; 0 enlaces internos rotos de 157; 0 desbordamientos horizontales a
+  360, 768 y 1440 px. TTFB 40–80 ms; 315–331 KiB transferidos por página; First Load JS 103–143 kB; `tsc` sin errores.
+- Lighthouse móvil (rendimiento / accesibilidad / buenas prácticas / SEO): portada 89 / 96 / 100 / 100 (LCP 2,4 s); preus 97 / 96 / 100 / 91;
+  guía C1 92 / 96 / 100 / 100; comencar 99 / 92 / 96 / 100.
+- API: webhook sin firma → 400; métodos no permitidos → 405; cuerpos inválidos → 400 o 413; cookies HttpOnly, Secure y SameSite=Lax; HSTS,
+  nosniff y Referrer-Policy presentes. La corrección gramatical detecta los 6 errores del texto de prueba en 0,9–1,3 s.
+- PWA instalable (manifest válido, iconos, service worker activo) y la pantalla Avui se recarga sin red desde el service worker.
+
+**Defectos**
+| Gravedad | Hallazgo | Dónde | Corrección |
+|---|---|---|---|
+| Alta | 30 POST seguidos a la corrección: ningún 429. El limitador es un `Map` en memoria y cada petición cae en otra instancia de Vercel; afecta también a login (fuerza bruta), registro, contacto, alerta y errata | `lib/http.ts:11` | Upstash Redis o tabla en Neon |
+| Alta | 15 POST sin cookie `aprova_anon`: 15 × 200. La cuota gratuita se salta borrando la cookie | `app/api/corregir/route.ts:20-25`, `lib/http.ts:22` | Cookie firmada y conteo en servidor (ver sección 2) |
+| Alta | Sin Content-Security-Policy ni X-Frame-Options en ninguna respuesta: clickjacking posible en entrar y compte | `next.config.mjs:7-9` | Añadir CSP y `frame-ancestors 'none'` |
+| Alta (accesibilidad) | Gris `#8A92AB` sobre blanco = 3,09:1 en textos de 11–13 px (barra inferior, textos terciarios, pie): 46 nodos marcados por axe en las 6 páginas; es la única causa de no llegar a 100 en accesibilidad | `app/globals.css:13`, `components/BarraMovil.tsx:21` | Terciario `#6B7390` (4,6:1) o 14 px mínimo |
+| Alta (accesibilidad) | El botón «Fes el diagnòstic gratuït» de las 62 guías se ve azul oscuro sobre azul (2,2:1): la regla `.prosa a` pisa el blanco del botón | `app/globals.css:134`, `app/[lang]/guia/[slug]/page.tsx:25` | Excluir `.boton-primari` de `.prosa a` |
+| Media (SEO) | hreflang incorrecto en 95 de 96 páginas (apunta a la raíz, sin x-default); 35 páginas sin canonical ni Open Graph (portada y preus incluidas); 27 títulos y 31 descripciones duplicados del layout; 7 páginas sin h1; sitemap con `lastmod` de ahora y sin 62 rutas públicas; favicon.ico y apple-icon.png 404 | `app/[lang]/layout.tsx:19-25`, `app/sitemap.ts` | Metadatos por página; hreflang por ruta; sitemap con fechas reales |
+| Media | `GET /api/progres` devuelve 401 a cada carga anónima: error de consola en 17 páginas y penaliza buenas prácticas | `lib/estat.ts:57-60` | No llamar sin sesión |
+| Media | Sin modelo de lenguaje en producción: los criterios de adecuación, coherencia y riqueza salen de heurística y se marcan como orientativos; dos reglas mal etiquetadas; Stripe en modo prueba (`prova:true`) | `/api/yo`, `lib/correccio` | Clave de modelo en Vercel; etiquetas de regla |
+| Media (accesibilidad) | `aria-pressed` en `role="radio"` (axe crítico, 3 nodos por pregunta) y barra de progreso sin nombre accesible | `components/ItemVista.tsx:77`, `DemoItem.tsx:29`, `ui/Segments.tsx:4` | Quitar `aria-pressed`; `aria-label` en la barra |
+| Media | `npm audit`: postcss ≤ 8.5.22 (3 altas) y deepmerge-ts < 8 (alta, vía Prisma); preus con `force-dynamic` (sin caché ni bfcache) | `package.json` | Actualizar; preus estático con revalidación |
+
+No medido: flujo de pago real, sesión autenticada (no se creó cuenta en la prueba técnica), Safari y Firefox reales, endpoints que exigen
+sesión (oral, tts, portal, subscripció).
 
 ## 2. Código, seguridad y motor pedagógico
 
