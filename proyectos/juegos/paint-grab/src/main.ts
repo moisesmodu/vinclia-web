@@ -2,10 +2,10 @@ import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
+// Sin motor de físicas: el patio es una rejilla (grid.ts) y la simulación es propia (sim.ts).
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#7fd36b',
+  scenes: [Boot, Menu, Play, Hud],
 });
