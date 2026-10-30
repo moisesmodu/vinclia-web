@@ -2,10 +2,10 @@ import { startGame } from '@comun/boot';
 import { Boot } from './scenes/Boot';
 import { Menu } from './scenes/Menu';
 import { Play } from './scenes/Play';
+import { Hud } from './scenes/Hud';
 
+// Sin motor de física: la pelota, el aro y el tablero se resuelven a mano en Play (paso fijo de 120 Hz).
 startGame({
-  background: '#6cc8ff',
-  scenes: [Boot, Menu, Play],
-  // Física arcade para el ejemplo. Para coches, cuerdas o apilar: 'matter' (ver egg-truck/src/main.ts).
-  physics: { default: 'arcade', arcade: { gravity: { x: 0, y: 2200 } } },
+  background: '#fff1d6',
+  scenes: [Boot, Menu, Play, Hud],
 });

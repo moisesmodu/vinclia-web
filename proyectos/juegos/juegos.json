@@ -206,9 +206,18 @@
   {
     "slug": "hoop-bounce",
     "titulo": "Hoop Bounce",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Baloncesto hipercasual de un toque: aro que se mueve, encoge y cambia de lado, combos de canastas limpias y pelota dorada",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Tap to bounce the ball into the moving hoop! Chain clean swishes for fire combos, grab the golden ball and beat your best.",
+    "etiquetas": [
+      "sports-games",
+      "one-button-games",
+      "short-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ]
   },
   {
     "slug": "paper-glide",
