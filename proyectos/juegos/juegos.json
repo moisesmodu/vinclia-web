@@ -1,0 +1,315 @@
+[
+  {
+    "slug": "egg-truck",
+    "titulo": "Egg Truck",
+    "genero": "Conducción con físicas (coches tipo plataforma), una pulsación",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "egg-games",
+      "hill-climb-games",
+      "no-download-games"
+    ],
+    "descripcion": "Hold to drive, release to brake. Carry a fragile egg over wild hills and big jumps without cracking it!",
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    }
+  },
+  {
+    "slug": "bike-flip",
+    "titulo": "Bike Flip",
+    "genero": "Coches tipo plataforma (moto) por niveles, una pulsación: voltereta en el aire = turbo",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    },
+    "descripcion": "Hold to ride, release to lean. Flip in mid-air for a turbo boost and race to the finish flag in 20 desert levels!",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "hill-climb-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "snow-plow",
+    "titulo": "Snow Plow",
+    "genero": "Conducción con físicas navideña (coches tipo plataforma), una pulsación: empujar regalos con la pala",
+    "estado": "listo para enviar (a principios de diciembre)",
+    "color": "#6cc8ff",
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    },
+    "descripcion": "Hold to drive, release to brake. Push a wobbly pile of presents over snowy hills to Santa's sleigh!",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "hill-climb-games",
+      "no-download-games",
+      "christmas-games"
+    ]
+  },
+  {
+    "slug": "rocket-hop",
+    "titulo": "Rocket Hop",
+    "genero": "Habilidad con físicas (aterrizajes de cohete), una pulsación",
+    "estado": "listo para enviar",
+    "color": "#211a78",
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    },
+    "descripcion": "Hold to fire the thruster, release to fall. Hop between moving platforms and nail perfect landings before the fuel runs out!",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games",
+      "space-games"
+    ]
+  },
+  {
+    "slug": "jelly-stack",
+    "titulo": "Jelly Stack",
+    "genero": "Hipercasual de apilar (gelatina con física blanda), una pulsación",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    },
+    "descripcion": "Tap to drop the jelly. Stack it high — whatever hangs over wobbles and falls off!",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games",
+      "stacking-games"
+    ]
+  },
+  {
+    "slug": "hook-hop",
+    "titulo": "Hook Hop",
+    "genero": "Habilidad de balanceo con cuerda (tipo Stickman Hook), una pulsación: mantener = engancharse, soltar = volar",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Hold to grab a vine, release to fly! Swing a cheeky monkey through the jungle, grab bananas and don't fall in the river.",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "trick-floor",
+    "titulo": "Trick Floor",
+    "genero": "Plataformas «troll» (el nivel te engaña), 25 niveles cortos, teclado o táctil",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Nothing is what it seems in the jelly castle. Floors drop, spikes pop and the door runs away. Can you outsmart 25 levels?",
+    "etiquetas": [
+      "platformer-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "lane-dash",
+    "titulo": "Lane Dash",
+    "genero": "Corredor infinito de 3 carriles en pseudo-3D (deslizar para cambiar de carril, saltar y agacharse) con carrito de supermercado",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Swipe to dodge! Race your shopping cart down endless supermarket aisles, grab coins and deals, and don't crash!",
+    "etiquetas": [
+      "runner-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "fruit-stand",
+    "titulo": "Fruit Stand",
+    "genero": "Gestión idle (puesto de fruta tipo Monkey Mart): mover al personaje con el dedo, recoger, reponer, cobrar y contratar ayudantes; 3 puestos y prestigio",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Pick fruit, stock your shelves and hire helpers to grow a tiny orchard stand into a busy city market!",
+    "etiquetas": [
+      "idle-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "paint-grab",
+    "titulo": "Paint Grab",
+    "genero": "Territorio estilo .io para un jugador: pintar el patio del colegio contra bots en rondas de 2 minutos",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Paint the school yard! Leave your colour, loop back home to grab the ground, and never let a rival cross your trail.",
+    "etiquetas": [
+      "io-games",
+      "games-without-text",
+      "chromebook-games",
+      "short-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "penalty-season",
+    "titulo": "Penalty Season",
+    "genero": "Deportes: penaltis con un gesto y gestión ligera de liga (temporada, clasificación, mejoras de plantilla, 3 divisiones)",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Swipe to shoot, tap to save! Win penalty shootouts, upgrade your animal squad and lead your club to the top of the league.",
+    "etiquetas": [
+      "sports-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "rope-cut",
+    "titulo": "Rope Cut",
+    "genero": "Puzle de físicas: desliza para cortar cuerdas y dar el caramelo al monstruo (40 niveles)",
+    "estado": "listo para enviar",
+    "color": "#4aa8ff",
+    "descripcion": "Swipe to cut the ropes and swing the candy into the jelly monster's mouth. Grab 3 stars in 40 bite-sized physics puzzles!",
+    "etiquetas": [
+      "puzzle-games",
+      "games-without-text",
+      "short-games",
+      "chromebook-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "hoop-bounce",
+    "titulo": "Hoop Bounce",
+    "genero": "Baloncesto hipercasual de un toque: aro que se mueve, encoge y cambia de lado, combos de canastas limpias y pelota dorada",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Tap to bounce the ball into the moving hoop! Chain clean swishes for fire combos, grab the golden ball and beat your best.",
+    "etiquetas": [
+      "sports-games",
+      "one-button-games",
+      "short-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "paper-glide",
+    "titulo": "Paper Glide",
+    "genero": "Distancia hipercasual con mejoras entre vuelos (avión de papel), una pulsación",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Launch a paper plane, ride the updrafts and glide as far as you can. Upgrade wings, tail and launcher to fly further!",
+    "etiquetas": [
+      "one-button-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "pin-rescue",
+    "titulo": "Pin Rescue",
+    "genero": "Puzle de físicas de quitar pasadores: agua, lava, arena y oro simulados por partículas (40 niveles)",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Pull the pins in the right order: send water onto lava, sink grumpy slimes and pour the gold down to your jelly friend!",
+    "etiquetas": [
+      "puzzle-games",
+      "games-without-text",
+      "short-games",
+      "chromebook-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "tow-truck",
+    "titulo": "Tow Truck",
+    "genero": "Conducción con físicas (coches tipo plataforma), una pulsación: grúa con remolque y carga suelta",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Hold to drive, release to brake. Tow a wobbly trailer of crates, barrels and sheep over farm hills to the barn!",
+    "etiquetas": [
+      "one-button-games",
+      "physics-driving-games",
+      "car-games-for-kids",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "hill-climb-games",
+      "no-download-games"
+    ]
+  },
+  {
+    "slug": "jelly-merge",
+    "titulo": "Jelly Merge",
+    "genero": "Puzle de físicas de soltar y fusionar (merge), una mecánica: apuntar y soltar",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Drop squishy jelly blobs, merge matching ones into bigger jellies and float the biggest away as a cloud!",
+    "etiquetas": [
+      "puzzle-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ],
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    }
+  },
+  {
+    "slug": "tiny-harbor",
+    "titulo": "Tiny Harbor",
+    "genero": "Gestión idle (puerto): arrastrar el barco a la grúa con un dedo, cargar, zarpar y mejorar; remolcadores y práctico automatizan; 3 puertos como capítulos y prestigio",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Drag boats to the crane, load the cargo and set sail. Grow a tiny dock into a busy harbor with one finger!",
+    "etiquetas": [
+      "idle-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ],
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    }
+  }
+]

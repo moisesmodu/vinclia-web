@@ -1,0 +1,28 @@
+{
+  "juego": "hook-hop",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2156,
+  "fpsEnEsteContenedor": 14.2,
+  "cpuPorFotogramaMs": {
+    "media": 5.72,
+    "p50": 4.3,
+    "p95": 13,
+    "p99": 26.4
+  },
+  "fpsMaximoPorCpu": 77,
+  "metrosPorPartidaPilotoAutomatico": [
+    119,
+    "523 (sin terminar)"
+  ],
+  "segundosPorPartida": [
+    12
+  ],
+  "cargaDelSistema": [
+    12.32,
+    11.92,
+    9.15
+  ],
+  "errores": [],
+  "cargaDelContenedor": "load average 11-15 con 4 CPU (otros agentes compilando y probando): p95 inflado. Comparación A/B intercalada build anterior vs. con tienda/diaria/x2 en la misma carga: sin diferencia (p95 16.2 vs 16.7, 22.5 vs 27.9; media 6.9-7.8 en ambas)."
+}

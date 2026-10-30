@@ -1,0 +1,22 @@
+{
+  "juego": "lane-dash",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2127,
+  "fpsEnEsteContenedor": 15.1,
+  "cpuPorFotogramaMs": {
+    "media": 4.72,
+    "p50": 4.3,
+    "p95": 10.2,
+    "p99": 19.7
+  },
+  "fpsMaximoPorCpu": 98,
+  "partidasPilotoAutomatico": [
+    {
+      "m": 399,
+      "s": 25.8,
+      "sinTerminar": true
+    }
+  ],
+  "errores": []
+}

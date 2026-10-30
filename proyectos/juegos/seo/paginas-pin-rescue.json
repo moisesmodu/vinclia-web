@@ -1,0 +1,82 @@
+[
+ {
+  "path": "play/pin-rescue",
+  "title": "Pin Rescue – Free Pull-the-Pin Physics Puzzle",
+  "description": "Play Pin Rescue free in your browser: pull the pins in the right order, turn lava into stone with water, sink grumpy slimes and pour the gold down to your jelly friend.",
+  "h1": "Pin Rescue",
+  "body": [
+   "A cheerful jelly friend waits at the bottom of an old stone tower. Above it, golden pins hold back rooms full of water, lava, sand, gold coins, bombs and gems. Tap a pin to slide it out and everything behind it pours and tumbles for real: every drop of water and every coin is simulated.",
+   "The order is the puzzle. Water poured on lava hisses into stone, sand smothers lava, grumpy purple slimes gobble any coin that touches them, and lava must never reach your friend. There are 40 short levels in four towers, three stars per level for the gold and gems you save, and an instant retry when something goes wrong. It works with a mouse or one finger, in landscape or portrait, and your stars, coins and the hero's skins are saved.",
+   "New here? Read <a href=\"../../pin-rescue/how-to-play/\">how to play</a> and the <a href=\"../../pin-rescue/tips/\">tips for three stars</a>."
+  ],
+  "game": "pin-rescue",
+  "hub": null,
+  "embed": true
+ },
+ {
+  "path": "pin-rescue/how-to-play",
+  "title": "How to Play Pin Rescue – Pins, Water, Lava, Slimes and Stars",
+  "description": "Pin Rescue rules: tap a pin to pull it, what water, lava, sand, slimes, bombs and crates do, how the level is won and how stars and coins work.",
+  "h1": "How to play Pin Rescue",
+  "body": [
+   "<b>Goal:</b> get at least half of the gold down to the jelly friend at the bottom of the tower, with no grumpy slime left anywhere. Gold that comes close to your friend is collected automatically.",
+   "<b>Pull a pin:</b> tap a golden pin (or swipe across it) and it slides out of its slot in the direction of its ring handle. Whatever it was holding starts to fall. On a computer you can also press the number keys 1 to 9.",
+   "<b>Water and lava:</b> when water touches lava, the lava turns into grey stone and the water boils away. Lava that touches your friend loses the level straight away, and lava melts any gold it touches. <b>Sand</b> also turns lava into stone when it lands on it.",
+   "<b>Slimes</b> are the grumpy purple blobs. They gobble every coin that touches them, and if one lands next to your friend the level is lost. Slimes drown when water covers them and burn in lava.",
+   "<b>Bombs</b> explode when lava touches them. The blast breaks wooden crates, clears lava and finishes off slimes, but it must not happen next to your friend. <b>Gems</b> are tough: only lava destroys them.",
+   "<b>Stars:</b> one star for winning, two for saving at least 70 % of the gold, three for saving 85 % and catching every gem. When something goes wrong the level restarts in a second. Every finished level pays coins for the shop (jelly skins and pin styles)."
+  ],
+  "game": "pin-rescue",
+  "hub": null
+ },
+ {
+  "path": "pin-rescue/tips",
+  "title": "Pin Rescue Tips: How to Get Three Stars",
+  "description": "Practical tips for Pin Rescue: which pin to pull first, cooling lava with water or sand, dealing with slimes and bombs, and saving every gem for three stars.",
+  "h1": "Pin Rescue tips and tricks",
+  "body": [
+   "<b>Look before you pull.</b> Follow each pin's room down with your eyes: where would its water, lava or gold end up? The pin that frees the gold is almost never the first one to pull.",
+   "<b>Cool the lava first.</b> If lava sits anywhere on the gold's way down, pour water or sand onto it before anything else and wait until it has turned into stone. Only then open the floor under it.",
+   "<b>Not every pin has to be pulled.</b> Some pins only hold lava over your friend. If a level can be won without a pin, leave it alone.",
+   "<b>Deal with slimes before the gold moves.</b> Flood their room with water or drop lava on them, and wait until they fizzle away. A slime that falls next to your friend, or that the gold falls onto, ruins the try.",
+   "<b>Use bombs as tools.</b> A bomb that drops into lava blows up wooden crates and clears the lava around it. Make sure it is far from your friend.",
+   "<b>Gems for the third star.</b> Pull the gem's pin before the gold: when enough gold arrives, the level ends, and a gem still on its shelf is lost for this try.",
+   "<b>Stuck?</b> On some portals a video button appears after a few failed tries that skips to the next level. It is always optional."
+  ],
+  "game": "pin-rescue",
+  "hub": null
+ },
+ {
+  "path": "pin-rescue/faq",
+  "title": "Pin Rescue FAQ",
+  "description": "Answers about Pin Rescue: is it free, does it save, does it work on phones and Chromebooks, how many levels, how stars and coins work, how to skip a level.",
+  "h1": "Pin Rescue: frequently asked questions",
+  "body": [
+   "<b>Is it free?</b> Yes, it is free to play in the browser, with no download and no sign-up.",
+   "<b>How many levels are there?</b> 40 levels in four towers of ten. New ideas arrive one at a time: lava and water, sand, slimes, crates and bombs, gems, and finally everything mixed.",
+   "<b>Is every level possible with three stars?</b> Yes. Every level is checked automatically: its solution is replayed with the real game physics and must win with three stars, and doing nothing must never win.",
+   "<b>Is the water really simulated?</b> Yes. Water, lava, sand, stone and gold are thousands of tiny cells that fall, flow and react with each other every frame, so no two careless tries look the same.",
+   "<b>Does it save my progress?</b> Yes. Unlocked levels, stars, coins and cosmetics are stored in your browser (or in your account on portals that offer it).",
+   "<b>Does it work on phones and Chromebooks?</b> Yes. It plays with one finger or a mouse, in portrait or landscape.",
+   "<b>What are the coins for?</b> Every level you finish pays coins, more for more stars, plus a daily gift. Spend them on jelly skins and pin styles. There are no real-money purchases.",
+   "<b>Can I turn the music off?</b> Yes, with the speaker button."
+  ],
+  "game": "pin-rescue",
+  "hub": null
+ },
+ {
+  "path": "pin-rescue/for-schools",
+  "title": "Pin Rescue for Schools and Kids – Logic Puzzles, No Sign-up",
+  "description": "Pin Rescue is a short, text-free logic and physics puzzle that runs on school Chromebooks: no chat, no purchases, no account, a playful way to practise planning and cause and effect.",
+  "h1": "Pin Rescue for classrooms and kids",
+  "body": [
+   "Pin Rescue has no chat, no account, no real-money purchases and no personal data. There is no text to read, only numbers and icons, so it works in any language and for early readers. Each level takes under a minute and can be stopped at any moment.",
+   "It runs in the browser on Chromebooks, tablets and computers with a mouse or a finger, and it is light (well under 1 MB including the music).",
+   "Every level is a small exercise in <b>planning and sequencing</b>: which pin first, and what happens next? Ask students to say out loud where each material will go before they pull a pin, then check their prediction.",
+   "The materials behave in a simple, consistent way, which makes it a playful start for talking about <b>cause and effect</b> and <b>states of matter</b>: liquids flow and spread, grains pile up, hot lava cools into stone when water reaches it. A failed try costs nothing and the level restarts instantly, so trial and error is encouraged. There is no violence: the grumpy slimes simply fizzle away.",
+   "Read <a href=\"../../pin-rescue/how-to-play/\">how to play</a> for the rules."
+  ],
+  "game": "pin-rescue",
+  "hub": null
+ }
+]

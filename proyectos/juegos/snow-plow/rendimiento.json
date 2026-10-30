@@ -1,0 +1,18 @@
+{
+  "juego": "snow-plow",
+  "fecha": "2026-10-28",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 1922,
+  "fpsEnEsteContenedor": 20.6,
+  "cpuPorFotogramaMs": {
+    "media": 6.47,
+    "p50": 5.6,
+    "p95": 11.7,
+    "p99": 33.3
+  },
+  "fpsMaximoPorCpu": 85,
+  "partidasPilotoAutomatico": [
+    43
+  ],
+  "errores": []
+}

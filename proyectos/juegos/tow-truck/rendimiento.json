@@ -1,0 +1,18 @@
+{
+  "juego": "tow-truck",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 1637,
+  "fpsEnEsteContenedor": 30.7,
+  "cpuPorFotogramaMs": {
+    "media": 4.82,
+    "p50": 3.8,
+    "p95": 8.9,
+    "p99": 30.2
+  },
+  "fpsMaximoPorCpu": 112,
+  "partidasPilotoAutomatico": [
+    "305 (sin terminar)"
+  ],
+  "errores": []
+}

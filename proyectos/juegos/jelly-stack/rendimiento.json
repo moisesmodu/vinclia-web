@@ -1,0 +1,26 @@
+{
+  "juego": "jelly-stack",
+  "fecha": "2026-10-28",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2239,
+  "fpsEnEsteContenedor": 22.2,
+  "cpuPorFotogramaMs": {
+    "frames": 971,
+    "media": 3.47,
+    "p50": 2.9,
+    "p95": 8.4,
+    "p99": 16.5
+  },
+  "cpuPorFotogramaConTorreDe40oMas": {
+    "frames": 761,
+    "media": 3.13,
+    "p50": 2.8,
+    "p95": 7,
+    "p99": 12.9
+  },
+  "maxObjetosDeBloque": 17,
+  "partidasPilotoAutomatico": [
+    "97 (unfinished)"
+  ],
+  "errores": []
+}

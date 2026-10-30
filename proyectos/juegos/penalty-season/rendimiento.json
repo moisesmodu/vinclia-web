@@ -1,0 +1,32 @@
+{
+  "juego": "penalty-season",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4, 45 s",
+  "cargaHastaMenuMs": 2604,
+  "fpsEnEsteContenedor": 21.3,
+  "cpuPorFotogramaMs": {
+    "frames": 929,
+    "media": 3.56,
+    "p50": 2.7,
+    "p95": 8.7,
+    "p99": 23.6
+  },
+  "logicaPorFotogramaMs": {
+    "p50": 0.9,
+    "p95": 4.5,
+    "p99": 20.2
+  },
+  "fpsMaximoPorCpu": 115,
+  "partidosPilotoAutomatico": [
+    "3-4"
+  ],
+  "lanzamientos": 11,
+  "estiradasDelPortero": 3,
+  "temporada": {
+    "division": 1,
+    "jornada": 1
+  },
+  "uptimeAntes": "00:51:06 up  2:05,  0 user,  load average: 7.21, 8.46, 10.63",
+  "uptimeDespues": "00:51:54 up  2:06,  0 user,  load average: 7.43, 8.33, 10.47",
+  "errores": []
+}

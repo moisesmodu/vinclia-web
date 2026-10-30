@@ -1,0 +1,19 @@
+{
+  "juego": "bike-flip",
+  "fecha": "2026-10-28",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2009,
+  "fpsEnEsteContenedor": 21.1,
+  "cpuPorFotogramaMs": {
+    "media": 5.04,
+    "p50": 4.4,
+    "p95": 9.9,
+    "p99": 14.8
+  },
+  "fpsMaximoPorCpu": 101,
+  "partidasPilotoAutomatico": [
+    242,
+    "227 (sin terminar)"
+  ],
+  "errores": []
+}

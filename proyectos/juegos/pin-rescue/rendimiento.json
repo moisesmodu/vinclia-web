@@ -1,0 +1,37 @@
+{
+  "juego": "pin-rescue",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4, 45 s",
+  "cargaHastaMenuMs": 1752,
+  "fpsEnEsteContenedor": 18.7,
+  "cpuPorFotogramaMs": {
+    "frames": 811,
+    "media": 4.65,
+    "p50": 3.7,
+    "p95": 11.1,
+    "p99": 26.1
+  },
+  "fpsMaximoPorCpu": 90,
+  "nivelesPilotoAutomatico": [
+    {
+      "level": 7,
+      "fails": 1
+    },
+    {
+      "level": 8,
+      "fails": 0
+    },
+    {
+      "level": 9,
+      "fails": 1
+    },
+    {
+      "level": 10,
+      "fails": 0
+    }
+  ],
+  "fallosAPropósito": 2,
+  "uptimeAntes": "03:07:56 up  4:22,  0 user,  load average: 6.04, 6.06, 5.08",
+  "uptimeDespues": "03:08:43 up  4:23,  0 user,  load average: 6.93, 6.30, 5.21",
+  "errores": []
+}

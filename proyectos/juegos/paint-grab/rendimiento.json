@@ -1,0 +1,42 @@
+{
+  "juego": "paint-grab",
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "maquina": {
+    "uptimeS": 7423,
+    "cargaMedia1min": 5.96,
+    "nucleos": 4
+  },
+  "cargaHastaMenuMs": 1743,
+  "fpsEnEsteContenedor": 25.1,
+  "cpuPorFotogramaMs": {
+    "media": 3.91,
+    "p50": 3.2,
+    "p95": 9.6,
+    "p99": 18.7,
+    "max": 45.6
+  },
+  "fpsMaximoPorCpu": 104,
+  "capturasEnormes": {
+    "forzadas": 8,
+    "msFotograma": [
+      30.5,
+      16.7,
+      9.6,
+      16.1,
+      25.5,
+      20.2,
+      15.6,
+      10.4
+    ]
+  },
+  "partidasPilotoAutomatico": [
+    {
+      "ronda": 1,
+      "pct": 68.1,
+      "puesto": 1,
+      "quedan": 17
+    }
+  ],
+  "errores": []
+}

@@ -1,0 +1,160 @@
+# Snow Plow Simulator (Roblox) · comprobación, build y publicación por Open Cloud, sin Roblox Studio.
+# GitHub solo lee flujos de .github/workflows/ en la raíz: este archivo va en .github/workflows/roblox-snow-plow.yml.
+#
+# PR que toca proyectos/juegos/roblox-snow-plow/** → formato (StyLua), lint (selene), pruebas (Lune), build (Rojo)
+#   y el .rbxl como artefacto. Tipos con luau-lsp, solo informativo.
+# Push a main o a la rama base de la cartera → lo mismo y publica en el place de PRUEBAS (secreto ROBLOX_API_KEY,
+#   variables SNOW_UNIVERSE_ID y SNOW_TEST_PLACE_ID).
+# Después, publicación en PRODUCCIÓN (SNOW_PLACE_ID) en el entorno `production`, que espera la aprobación
+#   manual de Moisés. Sin la variable SNOW_PLACE_ID ese trabajo no se ejecuta.
+# Sin secretos ni variables, los pasos de publicación avisan y terminan en verde.
+
+name: Roblox · Snow Plow Simulator
+
+on:
+  pull_request:
+    paths:
+      - "proyectos/juegos/roblox-snow-plow/**"
+      - ".github/workflows/roblox-snow-plow.yml"
+  push:
+    branches: [main, claude/estrategia-ingresos-recurrentes-tx0rvw]
+    paths:
+      - "proyectos/juegos/roblox-snow-plow/**"
+      - ".github/workflows/roblox-snow-plow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: roblox-snow-plow-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  ROKIT_VERSION: v1.0.0
+  LUAU_LSP_VERSION: "1.32.0"
+
+defaults:
+  run:
+    working-directory: proyectos/juegos/roblox-snow-plow
+
+jobs:
+  check:
+    name: Formato, lint, pruebas y build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Caché de Rokit y herramientas
+        uses: actions/cache@v4
+        with:
+          path: ~/.rokit
+          key: rokit-${{ runner.os }}-${{ env.ROKIT_VERSION }}-${{ hashFiles('proyectos/juegos/roblox-snow-plow/rokit.toml') }}
+
+      - name: Instalar Rokit y las versiones fijadas en rokit.toml
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ ! -x "$HOME/.rokit/bin/rokit" ]; then
+            tmp="$(mktemp -d)"
+            if gh release download "$ROKIT_VERSION" --repo rojo-rbx/rokit --pattern '*linux-x86_64.zip' --dir "$tmp"; then
+              unzip -o "$tmp"/*.zip -d "$tmp"
+              "$tmp/rokit" self-install
+            else
+              curl -sSfL https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.sh | bash
+            fi
+          fi
+          echo "$HOME/.rokit/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.rokit/bin:$PATH"
+          rokit authenticate github --token "$GITHUB_TOKEN" || true
+          rokit install --no-trust-check
+          rojo --version
+          lune --version
+          selene --version
+          stylua --version
+
+      - name: Formato (StyLua)
+        run: stylua --check src tests
+
+      - name: Lint (selene)
+        run: |
+          selene generate-roblox-std
+          selene src
+
+      - name: Pruebas de lógica (Lune)
+        run: lune run tests/run
+
+      - name: Build (Rojo)
+        run: rojo build default.project.json -o build.rbxl
+
+      - name: Tipos (luau-lsp, informativo)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          rojo sourcemap default.project.json -o sourcemap.json
+          tmp="$(mktemp -d)"
+          gh release download "$LUAU_LSP_VERSION" --repo JohnnyMorganz/luau-lsp --pattern 'luau-lsp-linux*.zip' --dir "$tmp"
+          zip="$(ls "$tmp"/*.zip | grep -v arm64 | head -n 1)"
+          unzip -o "$zip" -d "$tmp"
+          curl -sSfL -o globalTypes.d.luau \
+            "https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/${LUAU_LSP_VERSION}/scripts/globalTypes.d.luau"
+          "$tmp/luau-lsp" analyze --definitions=globalTypes.d.luau --sourcemap=sourcemap.json src
+
+      - name: Guardar el .rbxl
+        uses: actions/upload-artifact@v4
+        with:
+          name: snow-plow-rbxl
+          path: proyectos/juegos/roblox-snow-plow/build.rbxl
+          retention-days: 14
+          if-no-files-found: error
+
+  publish-test:
+    name: Publicar en el place de pruebas
+    needs: check
+    if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/claude/estrategia-ingresos-recurrentes-tx0rvw') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: snow-plow-rbxl
+          path: proyectos/juegos/roblox-snow-plow
+
+      - name: Publicar (Open Cloud)
+        env:
+          ROBLOX_API_KEY: ${{ secrets.ROBLOX_API_KEY }}
+          UNIVERSE_ID: ${{ vars.SNOW_UNIVERSE_ID }}
+          PLACE_ID: ${{ vars.SNOW_TEST_PLACE_ID }}
+        run: bash scripts/publish.sh build.rbxl "$UNIVERSE_ID" "$PLACE_ID"
+
+  publish-production:
+    name: Publicar en producción (aprobación manual)
+    needs: publish-test
+    if: >-
+      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/claude/estrategia-ingresos-recurrentes-tx0rvw') &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      vars.SNOW_PLACE_ID != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: snow-plow-rbxl
+          path: proyectos/juegos/roblox-snow-plow
+
+      - name: Publicar (Open Cloud)
+        env:
+          ROBLOX_API_KEY: ${{ secrets.ROBLOX_API_KEY }}
+          UNIVERSE_ID: ${{ vars.SNOW_UNIVERSE_ID }}
+          PLACE_ID: ${{ vars.SNOW_PLACE_ID }}
+        run: bash scripts/publish.sh build.rbxl "$UNIVERSE_ID" "$PLACE_ID"

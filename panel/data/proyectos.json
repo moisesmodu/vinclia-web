@@ -868,8 +868,45 @@
       "Jelly Stack · jugar": "https://juegos-casuales.vercel.app/jelly-stack/",
       "Jelly Stack · guía": "https://juegos-casuales.vercel.app/play/jelly-stack/",
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
-      "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
-      "Portada del estudio": "https://juegos-casuales.vercel.app/"
+      "Código y paquetes": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos",
+      "Fichas de los portales": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/fichas/egg-truck/FICHAS.md",
+      "Zip CrazyGames": "https://github.com/moisesmodu/vinclia-web/raw/claude/juegos-primer-juego/proyectos/juegos/paquetes/egg-truck/egg-truck-crazygames.zip",
+      "Plan Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/ROBLOX.md",
+      "Monetización": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/MONETIZACION.md",
+      "Roblox": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox",
+      "CI Roblox": "https://github.com/moisesmodu/vinclia-web/actions/workflows/roblox.yml",
+      "Egg Truck · vista previa privada": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
+      "Ideas de los líderes": "https://github.com/moisesmodu/vinclia-web/blob/claude/juegos-primer-juego/proyectos/juegos/IDEAS-LIDERES.md",
+      "Roblox · Jelly Pets": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-jelly-pets",
+      "Lane Dash · jugar": "https://juegos-casuales.vercel.app/lane-dash/",
+      "Lane Dash · guía": "https://juegos-casuales.vercel.app/play/lane-dash/",
+      "Trick Floor · jugar": "https://juegos-casuales.vercel.app/trick-floor/",
+      "Trick Floor · guía": "https://juegos-casuales.vercel.app/play/trick-floor/",
+      "Hook Hop · jugar": "https://juegos-casuales.vercel.app/hook-hop/",
+      "Hook Hop · guía": "https://juegos-casuales.vercel.app/play/hook-hop/",
+      "Roblox · Jelly Tower Obby": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-jelly-obby",
+      "Fruit Stand · jugar": "https://juegos-casuales.vercel.app/fruit-stand/",
+      "Fruit Stand · guía": "https://juegos-casuales.vercel.app/play/fruit-stand/",
+      "Paint Grab · jugar": "https://juegos-casuales.vercel.app/paint-grab/",
+      "Paint Grab · guía": "https://juegos-casuales.vercel.app/play/paint-grab/",
+      "Penalty Season · jugar": "https://juegos-casuales.vercel.app/penalty-season/",
+      "Penalty Season · guía": "https://juegos-casuales.vercel.app/play/penalty-season/",
+      "Roblox · Snow Plow Simulator": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-snow-plow",
+      "Paper Glide · jugar": "https://juegos-casuales.vercel.app/paper-glide/",
+      "Paper Glide · guía": "https://juegos-casuales.vercel.app/play/paper-glide/",
+      "Hoop Bounce · jugar": "https://juegos-casuales.vercel.app/hoop-bounce/",
+      "Hoop Bounce · guía": "https://juegos-casuales.vercel.app/play/hoop-bounce/",
+      "Rope Cut · jugar": "https://juegos-casuales.vercel.app/rope-cut/",
+      "Rope Cut · guía": "https://juegos-casuales.vercel.app/play/rope-cut/",
+      "Roblox · Rocket Hop Tycoon": "https://github.com/moisesmodu/vinclia-web/tree/claude/juegos-primer-juego/proyectos/juegos/roblox-rocket-tycoon",
+      "Pin Rescue · jugar": "https://juegos-casuales.vercel.app/pin-rescue/",
+      "Pin Rescue · guía": "https://juegos-casuales.vercel.app/play/pin-rescue/",
+      "Tow Truck · jugar": "https://juegos-casuales.vercel.app/tow-truck/",
+      "Tow Truck · guía": "https://juegos-casuales.vercel.app/play/tow-truck/",
+      "Tiny Harbor · jugar": "https://juegos-casuales.vercel.app/tiny-harbor/",
+      "Tiny Harbor · guía": "https://juegos-casuales.vercel.app/play/tiny-harbor/",
+      "Jelly Merge · jugar": "https://juegos-casuales.vercel.app/jelly-merge/",
+      "Jelly Merge · guía": "https://juegos-casuales.vercel.app/play/jelly-merge/"
     },
     "acciones": [
       {
@@ -894,6 +931,14 @@
       },
       {
         "fecha": "2026-10-28",
+        "texto": "Primer juego, Egg Truck (conducción con físicas de un botón), listo: paquetes para CrazyGames, Poki e itch.io, fichas, portadas, 14 páginas SEO, plantilla reutilizable, catálogo de 11 juegos y plan de Roblox"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Comprobador del entorno: sin red a Vercel ni VERCEL_TOKEN; DESPLIEGUE.md listo para la sesión del Mac"
+      },
+      {
+        "fecha": "2026-10-28",
         "texto": "Primer juego «Egg Truck» terminado: paquetes para CrazyGames, Poki e itch.io, fichas, portadas y plantilla reutilizable (PR #4)"
       },
       {
@@ -910,19 +955,110 @@
       },
       {
         "fecha": "2026-10-28",
+        "texto": "Identidad de marca aplicada: nube Nuvolet en la pantalla de carga (Egg Truck y plantilla), favicon con el icono del estudio, «Nuvolet Games» en las fichas de CrazyGames/Poki/itch.io, en /play y en el pie del sitio; paquetes zip regenerados"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Redesplegado en producción (https://juegos-casuales.vercel.app) con la identidad Nuvolet Games (commit e21928d) desde la sesión del Mac. El proyecto de Vercel juegos-casuales tiene ahora Root Directory proyectos/juegos para que el build lea marcas/logos de la raíz."
+      },
+      {
+        "fecha": "2026-10-28",
         "texto": "Identidad de marca aplicada: Nuvolet Games en la pantalla de carga, favicon, fichas de los portales y pie del sitio (PR #4); redespliegue pendiente para la sesión del Mac"
       },
       {
         "fecha": "2026-10-28",
+        "texto": "MONETIZACION.md: modelo por portal (CrazyGames, Poki, GameDistribution, GameMonetize, itch.io, web, Roblox), 0,3–3,6 $ por 1.000 partidas, primer euro devengado previsto en diciembre de 2026; contacto hola@numimates.com en sitio y fichas"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "4 juegos web nuevos listos con 5 paquetes cada uno (CrazyGames, Poki, GameDistribution, GameMonetize, itch.io), fichas y SEO: Bike Flip (20 niveles, voltereta = turbo), Snow Plow (Navidad), Rocket Hop y Jelly Stack. Egg Truck Tycoon (Roblox) construido; CI en verde (lint, pruebas, build)"
+      },
+      {
+        "fecha": "2026-10-28",
         "texto": "Cinco juegos en producción (Egg Truck, Bike Flip, Snow Plow, Rocket Hop, Jelly Stack) con 25 paquetes para portales, MONETIZACION.md y Egg Truck Tycoon para Roblox (PR #4)"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "IDEAS-LIDERES.md: qué copiar de Drive Mad, Level Devil, Stickman Hook, Monkey Mart, Subway Surfers, Paper.io, Retro Bowl, Grow a Garden y Steal a Brainrot; catálogo reordenado (Hook Hop, Trick Floor, Lane Dash) y mejoras para los 5 juegos (tienda de cosméticos, recompensa diaria, doblar estrellas con anuncio)"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Roblox: Egg Truck Tycoon con huevos raros, recompensa diaria, evento de fin de semana y pinturas (CI en verde); Jelly Pets construido (coleccionar, fusionar y robar gelatinas, rebirth, pases y productos)"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Lane Dash listo (corredor de 3 carriles en pseudo-3D, carrito de supermercado), 5 paquetes, fichas, 5 páginas SEO y categoría runner-games"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Trick Floor listo (plataformas «troll», 25 niveles comprobados por bot, teclado o táctil), 5 paquetes, fichas, 5 páginas SEO y categoría platformer-games"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Hook Hop listo (balanceo con lianas de un botón), 5 paquetes, fichas y 5 páginas SEO"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Egg Truck, Bike Flip, Snow Plow, Rocket Hop y Jelly Stack con tienda de cosméticos (9 objetos cada uno), recompensa diaria con racha de 7 días y botón ×2 con anuncio al final de la partida; módulos comunes reutilizables y 25 paquetes regenerados"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Roblox: Jelly Tower Obby construido (40 fases en 4 zonas, puntos de control validados por el servidor, saltar fase de pago, coils y estelas, recompensa diaria)"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Fruit Stand listo (gestión idle tipo Monkey Mart: 3 puestos, ayudantes, prestigio y ganancias sin conexión); tienda, recompensa diaria y ×2 también en Hook Hop, Trick Floor y Lane Dash"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Paint Grab listo (territorio estilo Paper.io contra bots, rondas de 2 min), 5 paquetes, fichas, 5 páginas SEO y categoría io-games"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Penalty Season listo (penaltis con un gesto y liga con 3 divisiones). 11 juegos web con 55 paquetes regenerados (incluye la corrección de la recompensa diaria) y 72 páginas SEO; 3 juegos de Roblox con CI en verde"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Roblox: Snow Plow Simulator construido (4 zonas, mejoras, mascotas de nieve, calendario de adviento, rebirth, pases y productos); publicar antes del 1 de diciembre"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Paper Glide listo (avión de papel de un botón con 5 mejoras de 10 niveles entre vuelos), 5 paquetes, fichas y 5 páginas SEO"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Hoop Bounce listo (baloncesto de un toque con aro móvil, combos y pelota dorada), 5 paquetes, fichas y 5 páginas SEO"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Rope Cut listo (puzle de físicas, 40 niveles comprobados por bot). 14 juegos web con 70 paquetes y 88 páginas SEO; 4 juegos de Roblox con CI en verde"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Roblox: Rocket Hop Tycoon construido (base lunar con 22 compras, cohete de un botón a por cristales en asteroides, rebirth, ganancias sin conexión, pases y productos)"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Pin Rescue listo (puzle de quitar pasadores con agua, lava, arena y oro simulados por partículas; 40 niveles comprobados por bot), 5 paquetes, fichas y 5 páginas SEO. 15 juegos web"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Tow Truck listo (grúa con remolque y carga suelta: cajas, barriles y ovejas; entregas en graneros), 5 paquetes, fichas y 5 páginas SEO. 16 juegos web"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Tiny Harbor listo (gestión idle de puerto con un dedo: 3 puertos y prestigio, una compra cada ≤ 93 s en los primeros 20 min), 5 paquetes, fichas y 5 páginas SEO. 17 juegos web"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Jelly Merge listo (puzle de soltar y fusionar gelatinas, género de los más jugados; la mayor se convierte en nube), 5 paquetes, fichas y 5 páginas SEO. 18 juegos web"
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Sesión del Mac: redesplegar juegos-casuales con la marca (DESPLIEGUE.md, «Redespliegue pendiente»)",
-      "Segundo juego con la plantilla",
-      "Plan de Roblox"
+      "Redesplegar la web con los 14 juegos (sesión del Mac)",
+      "Moisés: cuentas de los 5 portales y subir los zips",
+      "Roblox: crear las 4 experiencias (Snow Plow Simulator antes del 1/12)",
+      "Siguiente tanda: Pin Rescue, Tow Truck y Rocket Hop Tycoon (Roblox)"
     ],
     "paraMoises": [
       "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",
@@ -934,7 +1070,11 @@
       "Pipeline de Roblox 100 % en CI: Rojo build, luau-analyze, publicación con rbxcloud a un place de pruebas y luego a producción.",
       "Catálogo de rehechos con diferenciación mínima: partir de los 14 juegos MIT y 2048 cambiando mecánica secundaria, arte Kenney y tema, para pasar el filtro anticlon.",
       "Optimizar los indicadores que deciden el lanzamiento completo en CrazyGames: tutorial en menos de 10 segundos, partidas cortas, guardado con el SDK y build menor de 8 MB para enviarlo también a Poki.",
-      "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles."
+      "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles.",
+      "Hecho: adaptador de portal en TypeScript (comun/portal.ts) con CrazyGames v3, Poki v2, itch y web, elegido al compilar; probado con SDK simulados (npm run test:sdk).",
+      "Física Matter a 60 Hz fijos con acumulador y motor aplicado por paso: misma velocidad de juego a 20, 30 o 120 FPS.",
+      "Pendiente: AdSense for Games (H5 Games Ads) en la web propia cuando haya tráfico directo.",
+      "Pendiente: embudo anónimo sin cookies (inicio, primera partida, tercera partida) con Umami."
     ],
     "competidores": [
       {
@@ -1025,7 +1165,12 @@
       "Roblox DevEx en 2026: 0,0038 $ por Robux, mínimo 30.000 Robux ganados, formulario W-8BEN para España; desde junio de 2026, 0,0054 $ por Robux para gasto de jugadores de EE. UU. mayores de 18 verificados en juegos R15 con avatares articulados.",
       "Open Cloud publica el place con un POST a /universes/v1/{universeId}/places/{placeId}/versions con cabecera x-api-key; la clave necesita permiso universe-places:write.",
       "Géneros que funcionan en web en 2026: hipercasual (79 % del tiempo de juego en CrazyGames) y puzle (21 %); los runners dominan y simulación e idle tienen demanda con poca oferta.",
-      "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego."
+      "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego.",
+      "Poki, Game Intelligence: car games (29/09/2026, partidas de EE. UU.): los coches son el 10 % de las partidas; los de tipo plataforma son el 7 % de los títulos y el 30 % de las partidas, y Drive Mad solo se lleva el 23 %. Hueco elegido para el juego 1.",
+      "Poki Web Gaming Report (25/06/2026): el 46 % de los jugadores ha abandonado un juego móvil por tardar en cargar; el 49 % prueba 2 o 3 juegos por sesión. Peso y primera partida rápida mandan.",
+      "Phaser 3 entrega a update() un delta suavizado y topado a 16,7 ms: para física en tiempo real hay que usar game.loop.rawDelta.",
+      "Graphics de Phaser se re-tesela en cada fotograma: el terreno se hornea en texturas por bloque.",
+      "La red de las sesiones de Claude bloquea crazygames.com, poki.com y la API de Vercel: los datos de género salen de búsqueda web y el despliegue lo hace Moisés con un clic."
     ],
     "lider": {
       "nombre": "Monkey Mart (TinyDobbins)",
@@ -1090,7 +1235,8 @@
         "Semanas 3 y 4: economía con 10 desbloqueos escalonados, 2 ayudantes, guardado local; integrar el SDK de Poki y pasar su inspector",
         "Semana 5: arte final del personaje, 3 miniaturas para probar, nombre de 2 palabras, página del juego con SEO",
         "Semana 6: enviar a Poki y CrazyGames; publicar en itch.io y en web propia para tráfico directo al 100 %",
-        "Después del lanzamiento: medir retención a 1 y 7 días y duración de sesión; una actualización cada 2 o 3 semanas y pedir opiniones en el portal; a los 3 meses, versión Android"
+        "Después del lanzamiento: medir retención a 1 y 7 días y duración de sesión; una actualización cada 2 o 3 semanas y pedir opiniones en el portal; a los 3 meses, versión Android",
+        "28/10/2026: aplicado a Egg Truck el \"primer bucle completo en menos de 30 s\" (primera estrella a los 3 s, primer banderín a los 100 m) y el arte de personaje grande sobre fondo plano en la miniatura."
       ]
     },
     "segundoLider": {

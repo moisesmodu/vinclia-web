@@ -225,7 +225,7 @@ Las tareas programadas se crean cuando Moisés dé el visto bueno a la ola 1 (na
   pagan el 50–70 % de la publicidad al desarrollador, y la versión Android con AdMob. Un juego bueno
   en un portal grande gana 200–2.000 $/mes; la mayoría mucho menos. Se juega a catálogo: 12 al año.
 - **Cómo:** Phaser o Three.js; arte y música con Higgsfield y ElevenLabs; inglés primero.
-- **Tareas:** [ ] primer juego · [ ] cuenta de desarrollador · [ ] plantilla de publicación · [ ] un juego cada 2 semanas.
+- **Tareas:** [x] primer juego (Egg Truck, 28/10) · [ ] cuenta de desarrollador · [x] plantilla de publicación · [ ] un juego cada 2 semanas.
 
 ### 9 · Libros en Amazon KDP
 - **Qué vende:** cuadernos de actividades de programación y lógica para 6–12 años (sin pantalla),
@@ -302,3 +302,4 @@ teléfono y plan Creator de ElevenLabs.
 | 24/10/2026 | `JUICIO.md`: probabilidad de éxito a 6 y 12 meses (Montecarlo) y veredicto por idea con criterio de parada | — |
 | 28/10/2026 | `DESPLIEGUES.md`: secretos del entorno y sesión del Mac para desplegar sin pedir nada a Moisés; Stripe real de Numi Mates para todo | — |
 | 28/10/2026 | M redefinido como app de certificados oficiales de catalán B1–C2 (`M-CATALA-PRODUCTE.md`): exámenes, 13 competidores, 10 apps de referencia, prompt nuevo. Stripe 'Numi Mates' conectado | — |
+| 28/10/2026 | Juegos: Egg Truck listo para CrazyGames, Poki e itch.io; plantilla, catálogo de 11 juegos, 14 páginas SEO y plan de Roblox (`proyectos/juegos`) | [PR 4](https://github.com/moisesmodu/vinclia-web/pull/4) |
