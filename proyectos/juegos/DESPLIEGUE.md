@@ -96,3 +96,6 @@ recompensa diaria y ×2. Volver a desplegar la rama: la portada debe mostrar 11 
 Nuevos y listos desde el último despliegue: Hook Hop, Trick Floor, Lane Dash, Fruit Stand, Paint Grab, Penalty Season,
 Rope Cut, Hoop Bounce y Paper Glide. Volver a desplegar la rama: la portada debe mostrar 14 juegos y cada `/<juego>/`
 cargar su menú.
+
+## Redespliegue pendiente · 15 juegos (30/10/2026)
+Nuevo y listo: Pin Rescue. Volver a desplegar la rama: la portada debe mostrar 15 juegos y `/pin-rescue/` cargar su menú.

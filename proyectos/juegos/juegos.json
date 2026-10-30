@@ -245,9 +245,17 @@
   {
     "slug": "pin-rescue",
     "titulo": "Pin Rescue",
-    "genero": "",
-    "estado": "en desarrollo",
-    "color": "#6cc8ff"
+    "genero": "Puzle de físicas de quitar pasadores: agua, lava, arena y oro simulados por partículas (40 niveles)",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Pull the pins in the right order: send water onto lava, sink grumpy slimes and pour the gold down to your jelly friend!",
+    "etiquetas": [
+      "puzzle-games",
+      "games-without-text",
+      "short-games",
+      "chromebook-games",
+      "no-download-games"
+    ]
   },
   {
     "slug": "tow-truck",
