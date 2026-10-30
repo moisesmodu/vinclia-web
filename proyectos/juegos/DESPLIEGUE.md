@@ -99,3 +99,10 @@ cargar su menú.
 
 ## Redespliegue pendiente · 18 juegos (30/10/2026)
 Nuevos y listos: Pin Rescue, Tow Truck, Tiny Harbor y Jelly Merge. Volver a desplegar la rama: la portada debe mostrar 18 juegos y `/pin-rescue/`, `/tow-truck/`, `/tiny-harbor/` y `/jelly-merge/` cargar su menú.
+
+### Redespliegue (sesión del Mac, 30-10-2026, 13:16)
+Publicado el commit c7799e1 con los 14 juegos listos. Comprobado: la portada enlaza los 14 y cada `/<juego>/` da 200 y carga
+su script (egg-truck, bike-flip, snow-plow, rocket-hop, jelly-stack, hook-hop, trick-floor, lane-dash, fruit-stand,
+paint-grab, penalty-season, rope-cut, hoop-bounce, paper-glide). `/pin-rescue/` y `/tow-truck/` dan 404 (en desarrollo).
+
+Ejecutado el 2026-10-30
