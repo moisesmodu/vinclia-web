@@ -276,6 +276,25 @@
     ]
   },
   {
+    "slug": "jelly-merge",
+    "titulo": "Jelly Merge",
+    "genero": "Puzle de físicas de soltar y fusionar (merge), una mecánica: apuntar y soltar",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Drop squishy jelly blobs, merge matching ones into bigger jellies and float the biggest away as a cloud!",
+    "etiquetas": [
+      "puzzle-games",
+      "short-games",
+      "chromebook-games",
+      "games-without-text",
+      "no-download-games"
+    ],
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    }
+  },
+  {
     "slug": "tiny-harbor",
     "titulo": "Tiny Harbor",
     "genero": "Gestión idle (puerto): arrastrar el barco a la grúa con un dedo, cargar, zarpar y mejorar; remolcadores y práctico automatizan; 3 puertos como capítulos y prestigio",

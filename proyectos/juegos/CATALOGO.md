@@ -64,6 +64,7 @@ básico en CrazyGames, se cambia el reparto de géneros hacia lo que mejor haya 
 | 10 | **Tow Truck** | Coches tipo plataforma | Mantener = acelerar | Remolcar un remolque con cuerda y **carga que se mueve** (barriles, ovejas): segunda física del motor | Motor de Egg Truck + cuerda de Rope Cut | Listo (30/10/2026) |
 | 11 | **Hoop Bounce** | Deportes hipercasual | Tocar = rebotar la pelota | El aro **se mueve y cambia de tamaño**; cadena de canastas limpias multiplica los puntos; partidas de 60 s cerradas | Plantilla + Arcade | 17/03/2027 |
 | 12 | **Fruit Stand** | Gestión idle (ola de Monkey Mart) | Mover el personaje con el dedo | Puesto de fruta que se convierte en mercado; **ayudantes que no se duermen** y prestigio al acabar (lo que se critica del líder) | Plantilla + Arcade + guardado en la nube | 31/03/2027 |
+| 13 | **Jelly Merge** | Puzle de soltar y fusionar | Apuntar y soltar | Gelatinas Nuvolet que se aplastan y se fusionan; la mayor se convierte en nube y sale flotando (bonus y espacio libre). Género de los puzles más jugados en CrazyGames y Poki | Plantilla + Matter (Jelly Stack) | Listo (30/10/2026) |
 
 ## Qué se mide de cada juego (para decidir el siguiente)
 - En CrazyGames, el lanzamiento básico y después el completo: retención frente a su referencia, minutos por partida,
