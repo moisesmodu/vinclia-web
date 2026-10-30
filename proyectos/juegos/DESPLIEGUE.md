@@ -106,3 +106,8 @@ su script (egg-truck, bike-flip, snow-plow, rocket-hop, jelly-stack, hook-hop, t
 paint-grab, penalty-season, rope-cut, hoop-bounce, paper-glide). `/pin-rescue/` y `/tow-truck/` dan 404 (en desarrollo).
 
 Ejecutado el 2026-10-30
+
+## Redespliegue pendiente · 18 juegos (sigue pendiente tras el despliegue de c7799e1)
+El despliegue de las 13:16 publicó c7799e1, anterior a Pin Rescue, Tow Truck, Tiny Harbor y Jelly Merge. Volver a
+desplegar la rama actual: la portada debe mostrar 18 juegos y `/pin-rescue/`, `/tow-truck/`, `/tiny-harbor/` y
+`/jelly-merge/` cargar su menú.
