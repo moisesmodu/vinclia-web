@@ -274,5 +274,23 @@
       "hill-climb-games",
       "no-download-games"
     ]
+  },
+  {
+    "slug": "tiny-harbor",
+    "titulo": "Tiny Harbor",
+    "genero": "Gestión idle (puerto): arrastrar el barco a la grúa con un dedo, cargar, zarpar y mejorar; remolcadores y práctico automatizan; 3 puertos como capítulos y prestigio",
+    "estado": "listo para enviar",
+    "color": "#6cc8ff",
+    "descripcion": "Drag boats to the crane, load the cargo and set sail. Grow a tiny dock into a busy harbor with one finger!",
+    "etiquetas": [
+      "idle-games",
+      "games-without-text",
+      "chromebook-games",
+      "no-download-games"
+    ],
+    "ids": {
+      "gamedistribution": "",
+      "gamemonetize": ""
+    }
   }
 ]

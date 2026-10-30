@@ -1,0 +1,65 @@
+{
+  "juego": "tiny-harbor",
+  "fecha": "2026-10-30",
+  "distribucion": "tall",
+  "primeraCompraS": 12.2,
+  "comprasEn20Min": 22,
+  "huecoMaxEn20MinS": 90,
+  "huecoMaxTotalS": 97,
+  "huecoMedianoS": 65,
+  "puertos": [
+    {
+      "port": 1,
+      "minutes": 16.2,
+      "boats": 227,
+      "tugs": 1,
+      "pilot": 1
+    },
+    {
+      "port": 2,
+      "minutes": 17.7,
+      "boats": 479,
+      "tugs": 2,
+      "pilot": 1
+    },
+    {
+      "port": 3,
+      "minutes": 19.6,
+      "boats": 758,
+      "tugs": 3,
+      "pilot": 1
+    }
+  ],
+  "compras": 53,
+  "minutosHastaPrestigio": 53.5,
+  "offline": {
+    "1h": 3770,
+    "2h": 7541,
+    "10h": 7541
+  },
+  "compras20": [
+    "12.2s crane1 (12)",
+    "37.4s berth2 (25)",
+    "70.4s hull3 (40)",
+    "110.4s buoy4 (55)",
+    "157.2s berth5 (75)",
+    "213.6s cargo6 (95)",
+    "258.4s crane7 (120)",
+    "314.8s tug8 (150)",
+    "391.7s hull9 (185)",
+    "456.3s berth10 (225)",
+    "536.8s buoy11 (270)",
+    "626.4s pilot12 (320)",
+    "716.7s cargo13 (380)",
+    "794.4s crane14 (450)",
+    "882.1s hull15 (530)",
+    "970.9s gate16 (650)",
+    "988.3s crane1 (40)",
+    "1012.1s hull2 (70)",
+    "1041.2s berth3 (100)",
+    "1078.7s buoy4 (140)",
+    "1125.8s tug5 (190)",
+    "1185s cargo6 (240)"
+  ],
+  "fallos": []
+}
