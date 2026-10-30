@@ -882,7 +882,9 @@
       "Fruit Stand · jugar": "https://juegos-casuales.vercel.app/fruit-stand/",
       "Fruit Stand · guía": "https://juegos-casuales.vercel.app/play/fruit-stand/",
       "Paint Grab · jugar": "https://juegos-casuales.vercel.app/paint-grab/",
-      "Paint Grab · guía": "https://juegos-casuales.vercel.app/play/paint-grab/"
+      "Paint Grab · guía": "https://juegos-casuales.vercel.app/play/paint-grab/",
+      "Penalty Season · jugar": "https://juegos-casuales.vercel.app/penalty-season/",
+      "Penalty Season · guía": "https://juegos-casuales.vercel.app/play/penalty-season/"
     },
     "acciones": [
       {
@@ -988,14 +990,17 @@
       {
         "fecha": "2026-10-30",
         "texto": "Paint Grab listo (territorio estilo Paper.io contra bots, rondas de 2 min), 5 paquetes, fichas, 5 páginas SEO y categoría io-games"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Penalty Season listo (penaltis con un gesto y liga con 3 divisiones). 11 juegos web con 55 paquetes regenerados (incluye la corrección de la recompensa diaria) y 72 páginas SEO; 3 juegos de Roblox con CI en verde"
       }
     ],
     "proximos": [
-      "Redesplegar la web con los 5 juegos (sesión del Mac)",
-      "Enviar los 5 juegos a CrazyGames, GameDistribution, GameMonetize e itch.io; Egg Truck a Poki",
-      "Escuchar las 5 pistas de música (ElevenLabs marcó «no instrumental»)",
-      "Roblox: limpiar avisos de tipos y crear la experiencia en create.roblox.com",
-      "Tarea programada: 2 juegos web por semana y 1 de Roblox al mes"
+      "Redesplegar la web con los 11 juegos (sesión del Mac)",
+      "Moisés: cuentas de CrazyGames, Poki, itch.io, GameDistribution y GameMonetize y subir los zips",
+      "Roblox: crear las 3 experiencias en create.roblox.com",
+      "Siguiente tanda: Rope Cut Feed, Hoop Bounce, Paper Glide y Snow Plow Simulator (Roblox)"
     ],
     "paraMoises": [
       "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",
