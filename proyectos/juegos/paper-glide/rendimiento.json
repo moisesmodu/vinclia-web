@@ -1,0 +1,32 @@
+{
+  "juego": "paper-glide",
+  "cargaMaquina": [
+    8.4,
+    8.39,
+    7.09
+  ],
+  "fecha": "2026-10-30",
+  "emulacion": "800x360 táctil, DPR 2, CPU x4",
+  "cargaHastaMenuMs": 2121,
+  "fpsEnEsteContenedor": 17.8,
+  "cpuPorFotogramaMs": {
+    "media": 4.81,
+    "p50": 4.2,
+    "p95": 10.3,
+    "p99": 18.5
+  },
+  "fpsMaximoPorCpu": 97,
+  "partidasPilotoAutomatico": [
+    {
+      "m": 355,
+      "s": 30.7,
+      "coins": 2
+    },
+    {
+      "m": 137,
+      "s": 10,
+      "sinTerminar": true
+    }
+  ],
+  "errores": []
+}
