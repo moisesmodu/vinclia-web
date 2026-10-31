@@ -695,6 +695,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica, blog con «Com és l'examen de Mossos 2027», FAQ del simulacre, bloque de nivel de català con enlace a Aprova en las 5 oposiciones, dominio oposita.digital como reserva (commit 1daeac8 en la rama del PR #7; build OK). Pendiente: NEXT_PUBLIC_URL=https://oposita.digital en Vercel, redesplegar y Search Console"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Arreglo de Stripe real publicado en https://oposita.digital (commit 79b93cb): cliente, precio y portal por modo; si falta permiso del portal, mensaje claro. Pendiente: borrar la cuenta de comprobación de producción"
       }
     ],
     "proximos": [
@@ -1829,6 +1833,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica, artículo «Regalos de Navidad 3 a 6 años que no son juguetes», gemela catalana de tapa dura con hreflang, Product con precios en todas las páginas SEO, FAQ de precio en portada (commits fcc17b8…8157185 en la rama del PR #5; build OK). Pendiente: redesplegar y Search Console"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Código HERMANOS20 creado en Stripe real (20 % en la primera compra, cupón 3yGv4vCo); la clave restringida ya tiene permisos de cupones y códigos promocionales"
       }
     ],
     "proximos": [
@@ -3258,6 +3266,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica condicionada a Vercel, verificación de Search Console por variable, guía «Paga extra de Navidad 2026» en la calculadora (es/ca) (commits 98eb08f y dc76976 en la rama del PR #6; 479 tests OK). Pendiente: redesplegar netoclaro e impuestoclaro, Search Console y solicitar AdSense con los dominios"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cuenta de AdSense creada (ca-pub-1805394669180486) con netoclaro.app; conectándola a netoclaro.app e impuestoclaro.es (ADSENSE_CLIENT y ads.txt)"
       }
     ],
     "proximos": [
