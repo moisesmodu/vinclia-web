@@ -1688,6 +1688,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado por el Mac en https://lunilla.vercel.app con identidad de marca y portada nueva; pendientes Gelato (Moisés) y la prueba de pago"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cuenta de Gelato abierta por Moisés; clave de API «cartera-lunilla» creada por el Mac, comprobada (API 200) y guardada como GELATO_API_KEY en Vercel (lunilla, production y preview) y en la copia local. Falta: secreto del entorno en la nube, cotización real (npm run cotizar) y pedido de prueba en borrador (DESPLIEGUE.md pasos 6-7)"
       }
     ],
     "proximos": [
@@ -1698,7 +1702,6 @@
       "Apertura el 15/11"
     ],
     "paraMoises": [
-      "Cuenta en Gelato (imprenta) con clave de API",
       "Comprar el dominio (lunilla.es, contelunilla.com o cuentoslunilla.es)",
       "NIF para los textos legales"
     ],
