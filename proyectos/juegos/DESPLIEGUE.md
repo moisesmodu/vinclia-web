@@ -140,3 +140,8 @@ vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
 - Comprobar: `/snow-plow/` tiene `<title>` con «Christmas» y `<link rel="canonical">`; `/about/` responde 200; `/es/juegos-para-chromebook/`
   responde 200 con `hreflang`; `/` carga `/_vercel/insights/script.js` (y en Vercel → Analytics empiezan a verse visitas);
   `/sitemap.xml` lista 129 URL (18 juegos, 108 guías y categorías, about, chromebook es, portada).
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+Publicado el commit 015114b: `/snow-plow/` con título navideño, `/about/` y `/es/juegos-para-chromebook/` responden, la portada carga el script de analítica y `/sitemap.xml` lista 129 URL. `GOOGLE_SITE_VERIFICATION` no se ha puesto (falta el valor).
+
+Ejecutado el 2026-10-31
