@@ -67,7 +67,7 @@ export default function Editor({ idioma, tasca, regles, context, onCorregit, sen
       <textarea className="campo mt-4 min-h-64 text-[17px]" value={text} onChange={(e) => setText(e.target.value)} lang="ca" spellCheck={false} placeholder={`${t(idioma).diag.escriu}…`} aria-label={tasca.titol} />
       <div className="mt-2 flex items-center justify-between text-[14px] text-secundari">
         <span className={`tab ${paraules < tasca.paraulesMin || paraules > tasca.paraulesMax ? 'text-vermell' : 'text-apte'}`}>{paraules} {d.paraules}</span>
-        {quota && !senseQuota ? <span>{quota.premium ? t(idioma).comu.premium : d.quota(quota.correccions, quota.limit)}</span> : null}
+        {quota && !senseQuota && quota.premium ? <span>{t(idioma).comu.premium}</span> : null}
       </div>
       {err ? <p className="mt-2 text-[15px] text-vermell" role="alert">{err}</p> : null}
       {esgotada ? <p className="mt-2 rounded-[6px] bg-boli-tenue p-3 text-[15px]">{d.quotaEsgotada} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}

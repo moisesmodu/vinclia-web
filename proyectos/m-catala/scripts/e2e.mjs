@@ -65,6 +65,18 @@ const prob = (await p.locator('[role="img"][aria-label*="%"]').first().getAttrib
 if (!(await p.locator('text=Els 3 punts febles').count()) || !(await p.locator('text=Els 3 sons').count())) errors.push('falten punts febles o sons al resultat');
 await p.getByRole('link', { name: 'Crear el meu pla' }).click();
 await p.waitForURL(/\/ca\/avui/);
+// Porta: amb base de dades cal compte (7 dies de prova, sense targeta); en demo local no hi ha porta.
+const yo0 = await p.evaluate(() => fetch('/api/yo').then((r) => r.json()));
+const emailProva = `e2e+${Date.now()}@aprova.test`;
+if (yo0.db && !yo0.usuari) {
+  await p.waitForSelector('text=Guarda el teu pla', { timeout: 15000 }); await shot('05b-porta');
+  await p.getByRole('link', { name: 'Crear el compte' }).click();
+  await p.waitForURL(/entrar/);
+  await p.fill('input[type=email]', emailProva); await p.fill('input[type=password]', 'provaprova1');
+  await p.locator('input[type=checkbox]').check();
+  await p.getByRole('button', { name: 'Crear compte' }).click();
+  await p.waitForURL(/\/ca\/avui/, { timeout: 20000 }); pas('compte creat des de la porta: comença la prova de 7 dies');
+}
 await p.getByRole('radio', { name: '14 dies' }).click(); await p.getByRole('button', { name: 'Em comprometo' }).click();
 await p.waitForSelector('text=/congelacions|congelaciones/'); pas('Avui amb compromís, ratxa i pla'); await shot('06-avui');
 if (!(await p.locator('text=/dies per a la prova|dies/').count())) errors.push('Avui sense dies per a la prova');
@@ -102,15 +114,17 @@ await p.goto(`${BASE}/es`); await p.waitForSelector('text=Sabrás si apruebas');
 const yo = await p.evaluate(() => fetch('/api/yo').then((r) => r.json()));
 const dbOk = await p.evaluate(() => fetch('/api/auth/registre', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' }).then((r) => r.status !== 503));
 if (yo.pagaments !== 'off' && dbOk) {
-  const email = `e2e+${Date.now()}@aprova.test`;
-  await p.goto(`${BASE}/ca/entrar`);
-  await p.getByRole('button', { name: 'Crear compte' }).click();
-  await p.fill('input[type=email]', email); await p.fill('input[type=password]', 'provaprova1');
-  await p.locator('input[type=checkbox]').check();
-  await p.getByRole('button', { name: 'Crear compte' }).click();
-  await p.waitForURL(/compte/, { timeout: 20000 }).catch(() => {});
-  if (p.url().includes('compte')) {
-    pas('registre amb correu i contrasenya');
+  if (!yo.usuari) {
+    await p.goto(`${BASE}/ca/entrar?mode=crear`);
+    await p.fill('input[type=email]', `e2e+${Date.now()}@aprova.test`); await p.fill('input[type=password]', 'provaprova1');
+    await p.locator('input[type=checkbox]').check();
+    await p.getByRole('button', { name: 'Crear compte' }).click();
+    await p.waitForURL(/\/ca\/avui/, { timeout: 20000 }).catch(() => {});
+  }
+  const yo2 = await p.evaluate(() => fetch('/api/yo').then((r) => r.json()));
+  if (yo2.usuari) {
+    pas(`sessió amb compte (${yo2.usuari.acces?.tipus ?? '?'}, ${yo2.usuari.acces?.diesProva ?? 0} dies de prova)`);
+    if (yo2.usuari.acces?.tipus !== 'prova') errors.push('el compte nou no està en prova de 7 dies');
     await p.goto(`${BASE}/ca/preus`);
     // Mateixa crida que fa el botó «Triar», des del navegador (amb la galeta de sessió) i sense navegar a Stripe.
     const j = await p.evaluate(() => fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'anual', idioma: 'ca' }) }).then((r) => r.json()).catch(() => ({})));

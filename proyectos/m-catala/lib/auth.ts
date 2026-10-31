@@ -95,8 +95,11 @@ export async function usuariActual() {
 
 export type UsuariSessio = NonNullable<Awaited<ReturnType<typeof usuariActual>>>;
 
-export function esPremium(u: { subscripcioEstat: string | null; subscripcioFins: Date | null } | null): boolean {
-  if (!u?.subscripcioEstat) return false;
+/** Accés complet: subscripció o passi vigents, o els 7 dies de prova del compte (sense targeta). */
+export function esPremium(u: { subscripcioEstat: string | null; subscripcioFins: Date | null; provaFins?: Date | null } | null): boolean {
+  if (!u) return false;
+  if (enProva(u)) return true;
+  if (!u.subscripcioEstat) return false;
   const viu = ['active', 'trialing', 'past_due', 'demo', 'passi'].includes(u.subscripcioEstat) || (u.subscripcioEstat === 'canceled' && !!u.subscripcioFins);
   return viu && (!u.subscripcioFins || u.subscripcioFins.getTime() > Date.now());
 }
@@ -131,3 +134,16 @@ export function comprovarFirmaBaixa(email: string, t: string): boolean {
 }
 /** URL completa de baja para incluir en cada correo de alerta (la tarea semanal la usa). */
 export const enllacBaixa = (base: string, email: string) => `${base.replace(/\/$/, '')}/api/alerta/baixa?e=${encodeURIComponent(email.trim().toLowerCase())}&t=${firmaBaixa(email)}`;
+
+/** Prova de 7 dies vigent (només si no hi ha subscripció ni passi actius). */
+export function enProva(u: { provaFins?: Date | null } | null): boolean {
+  return !!u?.provaFins && u.provaFins.getTime() > Date.now();
+}
+/** Estat d'accés per a la interfície: 'prova' (amb dies restants), 'premium', 'gratis' (prova acabada: minisessió i repàs). */
+export function estatAcces(u: { subscripcioEstat: string | null; subscripcioFins: Date | null; provaFins?: Date | null } | null): { tipus: 'prova' | 'premium' | 'gratis'; diesProva: number } {
+  if (!u) return { tipus: 'gratis', diesProva: 0 };
+  const pagat = esPremium({ ...u, provaFins: null });
+  if (pagat) return { tipus: 'premium', diesProva: 0 };
+  if (enProva(u)) return { tipus: 'prova', diesProva: Math.max(1, Math.ceil((u.provaFins!.getTime() - Date.now()) / 86400000)) };
+  return { tipus: 'gratis', diesProva: 0 };
+}

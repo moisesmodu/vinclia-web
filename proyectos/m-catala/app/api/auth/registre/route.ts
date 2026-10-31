@@ -1,7 +1,7 @@
 import { db, hayDb } from '@/lib/db';
 import { hashClave, iniciarSesion } from '@/lib/auth';
 import { json, error, limitar } from '@/lib/http';
-import { convocatoria } from '@/lib/datos';
+import { convocatoria, pais } from '@/lib/datos';
 import { NIVELLS } from '@/lib/tipos';
 
 export const dynamic = 'force-dynamic';
@@ -19,7 +19,8 @@ export async function POST(req: Request) {
   const nivell = typeof b?.nivell === 'string' && (NIVELLS as string[]).includes(b.nivell) ? b.nivell : null;
   const conv = typeof b?.convocatoria === 'string' && convocatoria(b.convocatoria) ? b.convocatoria : null;
   if (await db.usuari.findUnique({ where: { email } })) return error('existeix', 409);
-  const u = await db.usuari.create({ data: { email, hash: hashClave(clau), idioma, nivell, convocatoria: conv } });
+  const provaFins = new Date(Date.now() + ((pais as { provaDies?: number }).provaDies ?? 7) * 86400000);
+  const u = await db.usuari.create({ data: { email, hash: hashClave(clau), idioma, nivell, convocatoria: conv, provaFins } });
   await iniciarSesion(u.id, u.sessioVersio);
   return json({ ok: true });
 }

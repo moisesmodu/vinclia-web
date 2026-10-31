@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { Idioma } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
+import { pais } from '@/lib/datos';
 import { llegirEstat, reiniciarSync } from '@/lib/estat';
 
 export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
@@ -10,8 +11,8 @@ export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
   const router = useRouter();
   const sp = useSearchParams();
   const token = sp.get('token');
-  const seguent = sp.get('seguent') || `/${idioma}/compte`;
-  const [mode, setMode] = useState<'entrar' | 'crear' | 'recuperar' | 'nova'>(token ? 'nova' : 'entrar');
+  const seguent = sp.get('seguent') || `/${idioma}/avui`;
+  const [mode, setMode] = useState<'entrar' | 'crear' | 'recuperar' | 'nova'>(token ? 'nova' : sp.get('mode') === 'crear' ? 'crear' : 'entrar');
   const [email, setEmail] = useState(''); const [clau, setClau] = useState(''); const [accepto, setAccepto] = useState(false);
   const [err, setErr] = useState(''); const [ok, setOk] = useState(''); const [carregant, setCarregant] = useState(false);
   const enviar = async (e: React.FormEvent) => {
@@ -30,6 +31,7 @@ export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
     <form onSubmit={enviar} className="tarjeta grid gap-3">
       <h1 className="text-xl font-bold">{mode === 'recuperar' ? d.recuperar : mode === 'nova' ? d.nova : d.titulo}</h1>
       {mode === 'recuperar' ? <p className="text-sm text-secundari">{d.recuperarText}</p> : null}
+      {mode === 'crear' ? <p className="text-[15px] text-secundari">{t(idioma).nou.portaText((pais as { provaDies?: number }).provaDies ?? 7)}</p> : null}
       {mode !== 'nova' ? <input className="campo" type="email" placeholder={d.email} value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" /> : null}
       {mode !== 'recuperar' ? <input className="campo" type="password" placeholder={d.clave} value={clau} onChange={(e) => setClau(e.target.value)} required minLength={8} autoComplete={mode === 'entrar' ? 'current-password' : 'new-password'} /> : null}
       {mode === 'crear' ? <label className="flex items-start gap-2 text-sm"><input type="checkbox" checked={accepto} onChange={(e) => setAccepto(e.target.checked)} required className="mt-1" /><span>{d.acepto} (<a className="underline" href={`/${idioma}/legal/condicions`} target="_blank">·</a>)</span></label> : null}

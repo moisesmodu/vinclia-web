@@ -19,6 +19,8 @@ type Mode = 'buits' | 'transformacio' | 'castellanismes' | 'dictat' | 'lexic' | 
 
 /** Sessió de pràctica: per tipus, repàs espaiat (FSRS), minisessió de 2 minuts o la sessió del pla d'avui (40/40/20). */
 export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode }) {
+  const [acces, setAcces] = useState<'prova' | 'premium' | 'gratis' | 'cap' | null>(null);
+  useEffect(() => { fetch('/api/yo').then((r) => r.json()).then((j) => setAcces(j?.usuari ? j.usuari.acces?.tipus ?? 'gratis' : j?.db ? 'cap' : 'premium')).catch(() => setAcces('premium')); }, []);
   const d = t(idioma).practica;
   const [estat, actualitzar] = useEstat();
   const [banc, setBanc] = useState<BancClient | null>(null);
@@ -82,6 +84,7 @@ export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode 
 
   if (!estat) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
   if (!perfil) return <div className="contenedor py-10"><p>{t(idioma).avui.senseDiag}</p><Link className="boton mt-4" href={`/${idioma}/comencar`}>{t(idioma).nav.comencar}</Link></div>;
+  if (acces === 'gratis' && mode !== 'mini' && mode !== 'repas') return <div className="contenedor py-10"><div className="flex items-start gap-3"><Volat mida={44} postura="pensa" className="shrink-0" /><p className="max-w-[44ch] text-[17px] leading-relaxed">{t(idioma).nou.nomesPremium}</p></div><div className="mt-5 flex flex-wrap gap-2"><Link className="boton-primari" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link><Link className="boton-sec" href={`/${idioma}/practica/mini`}>{t(idioma).avui.mini}</Link><Link className="boton-sec" href={`/${idioma}/practica/repas`}>{t(idioma).avui.repas}</Link></div></div>;
   if (!cua) return <p className="contenedor py-10 text-secundari">{t(idioma).comu.carregant}</p>;
   if (!cua.length) return <div className="contenedor py-10"><p className="max-w-[44ch] text-[17px] leading-relaxed">{mode === 'repas' ? d.resAPendent : d.limit}</p><div className="mt-5 flex gap-2"><Link className="boton-sec" href={`/${idioma}/practica`}>{t(idioma).nav.practica}</Link>{!banc?.premium ? <Link className="boton-primari" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link> : null}</div></div>;
 

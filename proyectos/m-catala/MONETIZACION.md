@@ -5,19 +5,20 @@ tres precios y el webhook creados por API y el flujo completo de la app hasta Ch
 `STRIPE_MODO=real` en Vercel (DESPLIEGUE.md) y se da **solo después de la prueba de validez** (VALIDESA.md): lanzar un corrector que no
 coincide con un profesor destruiría la confianza en el único producto que cobra por corregir.
 
-## 1. Precio y qué incluye
-| | Gratis | Premium |
-|---|---|---|
-| Diagnóstico con probabilidad de aprobar | sí (repetible cada mes) | sí |
-| Simulacro escrito completo | 1 al mes | ilimitados |
-| Minisesión de 2 minutos y repaso de errores | sí | sí + sesión completa del plan (10–20 min) |
-| Correcciones escritas con rúbrica | 3 al mes | ilimitadas |
-| Oral (lectura en voz alta) | 10 min al mes | ilimitada |
-| Precio | 0 € | **9,99 €/mes** · **59,99 €/año** (7 días de prueba) · **pase de convocatoria 24,99 €** (3 meses, pago único) |
+## 1. Modelo de acceso y precio (decidido por Moisés el 31/10/2026)
+| | Sin cuenta | Con cuenta, 7 primeros días | Con cuenta, después | Premium |
+|---|---|---|---|---|
+| Diagnóstico con probabilidad de aprobar | sí, sin registro (repetible cada mes) | sí | sí | sí |
+| Plan hasta la convocatoria y pantalla Hoy | no (se pide la cuenta al crear el plan) | sí | sí | sí |
+| Minisesión de 2 minutos y repaso de errores | no | sí | **sí, siempre gratis** | sí |
+| Sesión completa del plan (10–20 min) | no | sí | no | sí |
+| Simulacros, correcciones con rúbrica, oral | no | **sí, todo abierto, sin tarjeta** | no | ilimitados |
+| Precio | 0 € | 0 € | 0 € | **pase de convocatoria 24,99 €** (3 meses, pago único, oferta principal) · 9,99 €/mes · 59,99 €/año |
 
-Productos en Stripe: `Cartera · Català · Mensual` (price_…AseaQL), `· Anual` (price_…VQjft4), `· Passi de convocatòria` (price_…WjdMjM), en modo
-prueba; `metadata.proyecto = m-catala`; IVA incluido (21 %). Aviso 7 días antes de renovar, cancelación en un clic en la cuenta, 14 días de
-devolución, garantía «90 % del plan y no apruebas: 6 meses gratis».
+Por qué así: el diagnóstico abierto es el gancho (Catfy y Parla.cat son gratis); la cuenta se pide justo después del resultado, cuando ya hay una
+razón para volver; la prueba sin tarjeta multiplica por cinco los registros frente a pedir tarjeta; y dejar la minisesión y el repaso gratis
+mantiene la racha y el correo vivos hasta el pico de inscripción (enero, abril–mayo). Correos automáticos: día 5 («te quedan 2 días») y día 8
+(«la prueba ha terminado»), por Vercel Cron (`/api/cron/prova`, 08:00 UTC) con Resend. El anual ya no lleva prueba de Stripe: la prueba es la del compte.
 
 ## 2. El pago en la primera sesión
 1. Entrada (90 s) → diagnóstico (12 min) → **resultado: probabilidad de aprobar, 3 puntos débiles, 3 sonidos**. Esto es lo que vale y es gratis.

@@ -17,8 +17,9 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
   const d = t(idioma).avui; const n = t(idioma).nou;
   const [estat, actualitzar] = useEstat();
   const [premium, setPremium] = useState<boolean | null>(null);
+  const [acces, setAcces] = useState<{ tipus: 'prova' | 'premium' | 'gratis'; diesProva: number } | null>(null);
   const [compromisSel, setCompromisSel] = useState<7 | 14 | 30 | null>(null);
-  useEffect(() => { fetch('/api/yo').then((r) => r.json()).then((j) => setPremium(!!j?.usuari?.premium)).catch(() => setPremium(false)); }, []);
+  useEffect(() => { fetch('/api/yo').then((r) => r.json()).then((j) => { setPremium(!!j?.usuari?.premium); setAcces(j?.usuari?.acces ?? null); }).catch(() => setPremium(false)); }, []);
   useEffect(() => {
     if (!estat?.perfil || !estat.diagnostic) return;
     const ex = examens[estat.perfil.nivell];
@@ -69,6 +70,7 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
     <div>
       <p className="text-[15px] text-secundari">{fmt(avui, idioma, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
       <h1 className="sr-only">{d.titol}</h1>
+      {acces?.tipus === 'prova' ? <p className="mt-3 inline-block rounded-[8px] bg-marcador-tenue px-3 py-1.5 text-[14px] font-semibold">{n.provaDies(acces.diesProva)}</p> : null}
       <div className="mt-3">
         <p><span className="num text-[44px] leading-none">{estat.diagnostic.probabilitat}<span className="text-[22px]">%</span></span><span className="block text-[13px] text-secundari">{(estat.diagnostic as { oralMesurat?: boolean }).oralMesurat === false ? n.probEscrita : d.probabilitat}</span></p>
         <dl className="mt-3 grid grid-cols-[auto_1fr] items-baseline gap-x-3 gap-y-1 text-[15px]">

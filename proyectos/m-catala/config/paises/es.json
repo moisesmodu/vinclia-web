@@ -1,20 +1,76 @@
 {
   "codigo": "es",
   "nombre": "España (Cataluña)",
-  "idiomas": ["ca", "es"],
+  "idiomas": [
+    "ca",
+    "es"
+  ],
   "idiomaPorDefecto": "ca",
-  "idiomasExplicacion": ["ca", "es", "en", "ar", "ro", "fr"],
+  "idiomasExplicacion": [
+    "ca",
+    "es",
+    "en",
+    "ar",
+    "ro",
+    "fr"
+  ],
   "moneda": "EUR",
-  "locale": { "ca": "ca-ES", "es": "es-ES" },
+  "locale": {
+    "ca": "ca-ES",
+    "es": "es-ES"
+  },
   "stripeLocale": "es",
   "iva": 0.21,
   "preciosIncluyenIva": true,
-  "gratis": { "simulacresMes": 1, "correccionsMes": 3, "oralMinutsMes": 10, "congelacionsMes": 2 },
+  "gratis": {
+    "simulacresMes": 0,
+    "correccionsMes": 0,
+    "oralMinutsMes": 0,
+    "congelacionsMes": 2
+  },
   "planes": [
-    { "id": "mensual", "activo": true, "tipo": "subscripcio", "importe": 999, "intervalo": "month", "intervaloCantidad": 1, "porMes": 999, "destacado": false, "diasPrueba": 0 },
-    { "id": "anual", "activo": true, "tipo": "subscripcio", "importe": 5999, "intervalo": "year", "intervaloCantidad": 1, "porMes": 500, "destacado": false, "diasPrueba": 7 },
-    { "id": "pase", "activo": true, "tipo": "unic", "importe": 2499, "dies": 92, "porMes": 833, "destacado": true, "diasPrueba": 0 },
-    { "id": "revisio", "activo": false, "tipo": "unic", "importe": 499, "dies": 0, "porMes": 0, "destacado": false, "diasPrueba": 0 }
+    {
+      "id": "mensual",
+      "activo": true,
+      "tipo": "subscripcio",
+      "importe": 999,
+      "intervalo": "month",
+      "intervaloCantidad": 1,
+      "porMes": 999,
+      "destacado": false,
+      "diasPrueba": 0
+    },
+    {
+      "id": "anual",
+      "activo": true,
+      "tipo": "subscripcio",
+      "importe": 5999,
+      "intervalo": "year",
+      "intervaloCantidad": 1,
+      "porMes": 500,
+      "destacado": false,
+      "diasPrueba": 0
+    },
+    {
+      "id": "pase",
+      "activo": true,
+      "tipo": "unic",
+      "importe": 2499,
+      "dies": 92,
+      "porMes": 833,
+      "destacado": true,
+      "diasPrueba": 0
+    },
+    {
+      "id": "revisio",
+      "activo": false,
+      "tipo": "unic",
+      "importe": 499,
+      "dies": 0,
+      "porMes": 0,
+      "destacado": false,
+      "diasPrueba": 0
+    }
   ],
   "avisRenovacioDies": 7,
   "legal": {
@@ -28,10 +84,31 @@
     "desistimientoDias": 14
   },
   "organismes": [
-    { "id": "dpl", "nom": "Direcció General de Política Lingüística (Generalitat de Catalunya)", "url": "https://llengua.gencat.cat/ca/certificats/" },
-    { "id": "cifalc", "nom": "Universitats catalanes (CIFALC)", "url": "https://www.cifalc.cat" },
-    { "id": "cpnl", "nom": "Consorci per a la Normalització Lingüística", "url": "https://www.cpnl.cat" },
-    { "id": "salut", "nom": "Departament de Salut", "url": "https://salutweb.gencat.cat" },
-    { "id": "eoi", "nom": "Escoles Oficials d'Idiomes", "url": "https://educacio.gencat.cat" }
-  ]
+    {
+      "id": "dpl",
+      "nom": "Direcció General de Política Lingüística (Generalitat de Catalunya)",
+      "url": "https://llengua.gencat.cat/ca/certificats/"
+    },
+    {
+      "id": "cifalc",
+      "nom": "Universitats catalanes (CIFALC)",
+      "url": "https://www.cifalc.cat"
+    },
+    {
+      "id": "cpnl",
+      "nom": "Consorci per a la Normalització Lingüística",
+      "url": "https://www.cpnl.cat"
+    },
+    {
+      "id": "salut",
+      "nom": "Departament de Salut",
+      "url": "https://salutweb.gencat.cat"
+    },
+    {
+      "id": "eoi",
+      "nom": "Escoles Oficials d'Idiomes",
+      "url": "https://educacio.gencat.cat"
+    }
+  ],
+  "provaDies": 7
 }

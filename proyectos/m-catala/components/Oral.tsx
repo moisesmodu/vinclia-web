@@ -82,7 +82,7 @@ export default function Oral({ idioma, lectures, sons, nivell, compacte, onResul
           {estat === 'idle' || estat === 'fet' ? <button type="button" className="boton-primari" onClick={gravar} disabled={!!esgotada}><span className="inline-block h-2.5 w-2.5 rounded-full bg-vermell" aria-hidden="true" />{estat === 'fet' ? d.tornar : d.gravar}</button> : null}
           {estat === 'gravant' ? <button type="button" className="boton" onClick={parar}><span className="inline-block h-2.5 w-2.5 rounded-sm bg-white" aria-hidden="true" />{d.parar}</button> : null}
           {estat === 'analitzant' ? <span className="text-[15px] text-secundari" aria-live="polite">{d.analitzant}</span> : null}
-          {quota ? <span className="ml-auto text-[13px] text-terciari">{quota.premium ? t(idioma).comu.premium : d.quota(Math.floor(quota.segons / 60), Math.floor(quota.limit / 60))}</span> : null}
+          {quota?.premium ? <span className="ml-auto text-[13px] text-terciari">{t(idioma).comu.premium}</span> : null}
         </div>
         {err ? <p className="mt-2 text-[15px] text-vermell" role="alert">{err}</p> : null}
       </div>

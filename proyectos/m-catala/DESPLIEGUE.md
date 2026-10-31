@@ -30,6 +30,7 @@ navegador), `WHISPER_URL` (+`WHISPER_API_KEY`) si se despliega el Whisper catal�
 |---|---|---|
 | `AUTH_SECRET` | **Sí, en producción** (32+ caracteres aleatorios: `openssl rand -hex 32`). La app lanza un error al arrancar si falta. | Firma de la cookie de sesión, de la cookie anónima `aprova_anon`, de los enlaces de recuperación y de baja de alertas. Cambiarla cierra todas las sesiones. |
 | `VALIDESA_CODIS` | No (sin ella se aceptan `V01`–`V20`) | Lista separada por comas de los códigos de candidato válidos en `/api/validesa` (una por tanda). |
+| `CRON_SECRET` | Correos de la prueba de 7 días | Vercel la envía como `Authorization: Bearer` al cron diario `/api/cron/prova` (vercel.json). Creada desde la sesión. |
 | `VALIDESA_CLAU` | Para la prueba de validez | Clave que el profesor escribe en el formulario para enviar sus notas; también autoriza `DELETE /api/validesa` (borrado de textos). Sin ella no se aceptan notas de profesor. |
 | `LEGAL_NIF` | **Antes de `STRIPE_MODO=real`** | NIF del titular en aviso legal y privacidad; si falta se muestra «(pendent)», que incumple el art. 10 LSSI mientras se cobre. |
 | `PAGO_DEMO_PERMES` | No (solo pruebas) | En producción, `PAGO_DEMO=1` solo activa el modo demo (premium sin cobrar) si además `PAGO_DEMO_PERMES=1`. Fuera de producción el modo demo sigue activo sin claves de Stripe. |

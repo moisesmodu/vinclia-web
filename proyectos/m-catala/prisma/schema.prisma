@@ -25,6 +25,9 @@ model Usuari {
   pla              String? // mensual, anual, pase
   cancelaAlFinal   Boolean     @default(false)
   sincronitzat     DateTime?
+  provaFins        DateTime? // final dels 7 dies de prova completa (sense targeta) que comencen en crear el compte
+  correuProva5     DateTime? // avís «et queden 2 dies» enviat
+  correuProva8     DateTime? // avís «la prova ha acabat» enviat
   sessioVersio     Int         @default(0) // s'incrementa en canviar la contrasenya o tancar totes les sessions: invalida els tokens antics
   progressos       Progres[]
   simulacres       Simulacre[]

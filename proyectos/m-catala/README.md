@@ -75,6 +75,11 @@ LanguageTool en local sin descargar de languagetool.org (bloqueado): `apache-mav
 con `org.languagetool:languagetool-server:6.8` y `language-ca:6.8`, después `java -cp "jars/*" org.languagetool.server.HTTPServer --port 8081`.
 En producción se usa la API pública (`LANGUAGETOOL_URL=https://api.languagetool.org/v2`, 20 peticiones/min); autoalojarlo cuesta ≈ 5 €/mes.
 
+## Modelo de acceso (31/10/2026)
+- Diagnóstico abierto sin registro. Para crear el plan se pide cuenta (`components/RequereixCompte.tsx`): 7 días con todo abierto, sin tarjeta
+  (`Usuari.provaFins`, `estatAcces()` en `lib/auth.ts`). Después, minisesión y repaso gratis para siempre; simulacros, correcciones, oral y
+  sesión completa con el pase de convocatoria (oferta principal) o la suscripción. Correos del día 5 y 8 por Vercel Cron (`app/api/cron/prova`).
+
 ## Qué se ha probado (31/10/2026)
 - `npm run build` limpio, `tsc` sin errores y `npm test` (17 pruebas del motor: probabilidad, θ, dictado, reglas, racha, plan).
 - Auditoría completa en `AUDITORIA.md` (técnica, código, mercado, visual) con el estado de cada hallazgo en su sección 8.
