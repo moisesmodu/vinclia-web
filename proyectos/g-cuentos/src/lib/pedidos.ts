@@ -6,7 +6,7 @@ import type { Cuento } from "./cuento";
 import { db, evento } from "./db";
 import { encargoIlustracion, ilustracionesCompletas, totalIlustraciones } from "./ilustraciones";
 import { crearPedidoImprenta, dimensionesCubierta, estadoPedidoImprenta, type DireccionEnvio } from "./imprenta/gelato";
-import { generarCubierta, generarInterior } from "./maquetacion";
+import { generarCubierta, generarInterior, generarLibroImprenta } from "./maquetacion";
 import type { DatosNino } from "./rellenar";
 
 // Máquina de estados del pedido (idempotente: se puede llamar tantas veces como se quiera).
@@ -82,9 +82,11 @@ async function paso1(p: Pedido): Promise<Pedido> {
       const base = { cuento, datos, idioma: p.idioma as "es" | "ca", nombre: datos.nombre, imagenes };
       const pdf = await generarInterior({ ...base, modo: "pantalla" });
       const pdfUrl = await guardar(`pedidos/${p.id}/${slug(cuento.titulo)}.pdf`, pdf, "application/pdf");
-      let interiorUrl: string | undefined, cubiertaUrl: string | undefined;
+      let interiorUrl: string | undefined, cubiertaUrl: string | undefined, libroUrl: string | undefined;
       if (p.formato === "tapaDura") {
         const dim = await dimensionesCubierta();
+        // PDF único para Gelato (cubierta + guarda + 30 páginas + blanca) y, para revisar, interior y cubierta sueltos
+        libroUrl = await guardar(`pedidos/${p.id}/libro-imprenta.pdf`, await generarLibroImprenta(base, dim), "application/pdf");
         interiorUrl = await guardar(`pedidos/${p.id}/interior.pdf`, await generarInterior({ ...base, modo: "imprenta" }), "application/pdf");
         cubiertaUrl = await guardar(`pedidos/${p.id}/cubierta.pdf`, await generarCubierta(base, dim), "application/pdf");
         await evento("cubierta", p.id, { medidas: dim });
@@ -95,13 +97,13 @@ async function paso1(p: Pedido): Promise<Pedido> {
       }
       return db.pedido.update({
         where: { id: p.id },
-        data: { pdfUrl, interiorUrl, cubiertaUrl, entregadoEn: new Date(), estado: p.formato === "tapaDura" ? "imprenta" : "entregado", error: null, intentos: 0 },
+        data: { pdfUrl, interiorUrl, cubiertaUrl, libroUrl, entregadoEn: new Date(), estado: p.formato === "tapaDura" ? "imprenta" : "entregado", error: null, intentos: 0 },
       });
     }
     case "imprenta": {
       const envio = p.envio as unknown as DireccionEnvio | null;
-      if (!envio || !p.interiorUrl || !p.cubiertaUrl) throw new Error("faltan dirección o PDF de imprenta");
-      const r = await crearPedidoImprenta({ referencia: p.id, interiorUrl: p.interiorUrl, cubiertaUrl: p.cubiertaUrl, envio });
+      if (!envio || !p.libroUrl) throw new Error("faltan dirección o PDF de imprenta");
+      const r = await crearPedidoImprenta({ referencia: p.id, libroUrl: p.libroUrl, interiorUrl: p.interiorUrl ?? undefined, cubiertaUrl: p.cubiertaUrl ?? undefined, envio });
       await evento("imprenta", p.id, r);
       return db.pedido.update({ where: { id: p.id }, data: { imprentaPedidoId: r.id, imprentaEstado: `${r.modo}:${r.estado}`, estado: "enviado_imprenta", error: null, intentos: 0 } });
     }

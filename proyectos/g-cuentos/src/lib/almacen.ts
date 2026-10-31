@@ -11,6 +11,8 @@ export async function guardar(clave: string, datos: Buffer | Uint8Array, tipo: s
     const r = await put(clave, Buffer.from(datos), { access: "public", contentType: tipo, addRandomSuffix: true });
     return r.url;
   }
+  // En Vercel el disco es efímero: sin Blob los PDF se perderían y la imprenta no podría descargarlos.
+  if (process.env.VERCEL) throw new Error("Falta BLOB_READ_WRITE_TOKEN: conecta un Blob store al proyecto en Vercel");
   const destino = path.join(LOCAL, clave);
   await mkdir(path.dirname(destino), { recursive: true });
   await writeFile(destino, datos);

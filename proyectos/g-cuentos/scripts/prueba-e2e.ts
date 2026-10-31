@@ -164,18 +164,23 @@ async function main() {
   const html = await (await fetch(`${BASE}/pedido/${id}`)).text();
   const pdfUrl = html.match(/href="([^"]+\.pdf)"/)?.[1]?.replace(/&amp;/g, "&");
   if (!pdfUrl) falla("la página del pedido no enlaza el PDF");
-  await comprobarPdf(pdfUrl!, 30, "PDF de lectura");
+  await comprobarPdf(pdfUrl!, 32, "PDF de lectura");
   const dirAlmacen = path.join("datos-locales", "almacen", "pedidos", id);
   if (existsSync(dirAlmacen)) {
-    const interior = path.join(dirAlmacen, "interior.pdf");
-    const doc = await PDFDocument.load(readFileSync(interior));
-    const trim = doc.getPage(0).getTrimBox();
-    if (doc.getPageCount() !== 28 || trim.x <= 0) falla("interior de imprenta incorrecto");
-    paso(`interior de imprenta: 28 páginas con sangrado de ${(trim.x / (72 / 25.4)).toFixed(1)} mm; cubierta generada`);
+    const interior = await PDFDocument.load(readFileSync(path.join(dirAlmacen, "interior.pdf")));
+    const trim = interior.getPage(0).getTrimBox();
+    const mm = (v: number) => v / (72 / 25.4);
+    if (interior.getPageCount() !== 30 || Math.abs(mm(trim.x) - 3) > 0.01 || Math.abs(mm(trim.width) - 200) > 0.01) falla("interior de imprenta incorrecto");
+    const libro = await PDFDocument.load(readFileSync(path.join(dirAlmacen, "libro-imprenta.pdf")));
+    const cub = libro.getPage(0);
+    if (libro.getPageCount() !== 33 || cub.getWidth() <= interior.getPage(0).getWidth() * 2) falla(`PDF único de Gelato incorrecto (${libro.getPageCount()} páginas)`);
+    paso(`PDF para Gelato: 33 páginas (pliego de cubierta ${mm(cub.getWidth()).toFixed(0)} × ${mm(cub.getHeight()).toFixed(0)} mm + guarda + 30 interiores de 200 × 200 mm con 3 mm de sangrado + blanca)`);
   }
   const sim = path.join("datos-locales", "imprenta", `SIM-${id}.json`);
   if (existsSync(sim)) {
     const cuerpo = JSON.parse(readFileSync(sim, "utf8"));
+    const it = cuerpo.items[0];
+    if (it.pageCount !== 30 || it.files.length !== 1 || it.files[0].type !== "default" || !String(it.files[0].url).endsWith(".pdf")) falla(`cuerpo de Gelato incorrecto: ${JSON.stringify(it)}`);
     paso(`pedido a imprenta (modo simulado, sin clave de Gelato): ${cuerpo.orderType}, ${cuerpo.items[0].productUid.slice(0, 40)}…, envío a ${cuerpo.shippingAddress.city}`);
     informe.pedidoImprenta = cuerpo;
   } else paso(`pedido a imprenta creado en Gelato: ${JSON.stringify(fin)}`);
@@ -198,7 +203,7 @@ async function main() {
   const fin2 = await esperarEstado(id2, ["entregado"]);
   const html2 = await (await fetch(`${BASE}/ca/pedido/${id2}`)).text();
   const pdf2 = html2.match(/href="([^"]+\.pdf)"/)?.[1]?.replace(/&amp;/g, "&");
-  if (pdf2) await comprobarPdf(pdf2, 30, "PDF de lectura en català (22 pàgines)");
+  if (pdf2) await comprobarPdf(pdf2, 32, "PDF de lectura en català (22 pàgines)");
   paso(`pedido PDF en catalán (22 páginas, 5–8 años) entregado (${fin2.estado})`);
 
   informe.fin = new Date().toISOString();

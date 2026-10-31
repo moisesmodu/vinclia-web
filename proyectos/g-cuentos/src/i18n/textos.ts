@@ -50,7 +50,7 @@ export const T = {
       ["¿Para qué edades es?", "De 2 a 8 años, con una historia distinta según la edad: de 2 a 4 años, 18 páginas con frases cortas y un estribillo para repetir juntos; de 5 a 8, 22 páginas con más aventura, diálogos y una decisión que toma su protagonista."],
       ["¿Y si me equivoco al escribir un dato?", "Escríbenos en cuanto lo veas. Si el PDF ya ha salido, lo corregimos y te lo volvemos a enviar; si es tapa dura y aún no se ha impreso, lo paramos."],
       ["¿Lo podéis enviar a otra casa?", "Sí. Al pagar pones la dirección de envío que quieras, por ejemplo la de tus nietos. Enviamos a la península y Baleares."],
-      ["¿Qué calidad tiene el libro impreso?", "Tapa dura laminada mate de 20 × 20 cm y 28 páginas a todo color en papel estucado de 170 g, con las ilustraciones a página completa."],
+      ["¿Qué calidad tiene el libro impreso?", "Tapa dura laminada mate en formato cuadrado de 20 × 20 cm (un poco más estrecho que un folio y bastante más corto) y 30 páginas interiores a todo color en papel estucado satinado de 170 g, encuadernado con lomo recto. Cada página del cuento lleva su ilustración a sangre."],
       ["¿Puedo hacer uno para cada hermano?", "Sí, cada cuento lleva un nombre. El segundo tiene un 20 % de descuento con el código HERMANOS20."],
     ],
     form: {
@@ -126,7 +126,7 @@ export const T = {
       ["Per a quines edats és?", "De 2 a 8 anys, amb una història diferent segons l'edat: de 2 a 4 anys, 18 pàgines amb frases curtes i una tornada per repetir junts; de 5 a 8, 22 pàgines amb més aventura, diàlegs i una decisió que pren el protagonista."],
       ["I si m'equivoco en escriure una dada?", "Escriu-nos tan aviat com ho vegis. Si el PDF ja ha sortit, el corregim i te'l tornem a enviar; si és tapa dura i encara no s'ha imprès, l'aturem."],
       ["El podeu enviar a una altra casa?", "Sí. En pagar poses l'adreça d'enviament que vulguis, per exemple la dels teus néts. Enviem a la península i les Balears."],
-      ["Quina qualitat té el llibre imprès?", "Tapa dura laminada mat de 20 × 20 cm i 28 pàgines a tot color en paper estucat de 170 g, amb les il·lustracions a pàgina sencera."],
+      ["Quina qualitat té el llibre imprès?", "Tapa dura laminada mat en format quadrat de 20 × 20 cm (una mica més estret que un full i força més curt) i 30 pàgines interiors a tot color en paper estucat setinat de 170 g, enquadernat amb llom recte. Cada pàgina del conte porta la seva il·lustració a sang."],
       ["Puc fer-ne un per a cada germà?", "Sí, cada conte porta un nom. El segon té un 20 % de descompte amb el codi HERMANOS20."],
     ],
     form: {

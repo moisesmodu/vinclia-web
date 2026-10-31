@@ -32,8 +32,9 @@ export interface DireccionEnvio {
 
 export interface PedidoImprenta {
   referencia: string; // id de nuestro pedido
-  interiorUrl: string;
-  cubiertaUrl: string;
+  libroUrl: string; // PDF único: cubierta + guarda + interior + página final en blanco (formato de Gelato)
+  interiorUrl?: string; // solo si GELATO_ARCHIVOS=separados
+  cubiertaUrl?: string;
   envio: DireccionEnvio;
 }
 
@@ -44,9 +45,12 @@ function cabeceras() {
 export function cuerpoPedido(p: PedidoImprenta, modo: ModoImprenta) {
   const c = configPais();
   const [nombre, ...resto] = p.envio.nombre.trim().split(/\s+/);
-  // Tipos de archivo para fotolibros: cubierta y contenido por separado. Si Gelato pidiera otros
-  // nombres, se cambian aquí (GELATO_TIPOS_ARCHIVO="cover,content").
-  const [tCubierta, tInterior] = (process.env.GELATO_TIPOS_ARCHIVO ?? "cover,content").split(",");
+  // Gelato pide los fotolibros en UN solo PDF (cubierta primero). GELATO_ARCHIVOS=separados envía cubierta e interior
+  // por separado («cover» y «content») por si su equipo lo pidiera así para este producto.
+  const separados = process.env.GELATO_ARCHIVOS === "separados" && p.cubiertaUrl && p.interiorUrl;
+  const files = separados
+    ? [{ type: "cover", url: p.cubiertaUrl! }, { type: "content", url: p.interiorUrl! }]
+    : [{ type: "default", url: p.libroUrl }];
   return {
     orderType: modo === "produccion" ? "order" : "draft",
     orderReferenceId: p.referencia,
@@ -58,10 +62,7 @@ export function cuerpoPedido(p: PedidoImprenta, modo: ModoImprenta) {
         productUid: c.imprenta.productUid,
         pageCount: c.imprenta.paginasInterior,
         quantity: 1,
-        files: [
-          { type: tCubierta, url: p.cubiertaUrl },
-          { type: tInterior, url: p.interiorUrl },
-        ],
+        files,
       },
     ],
     shipmentMethodUid: c.imprenta.metodoEnvio,
@@ -80,8 +81,10 @@ export function cuerpoPedido(p: PedidoImprenta, modo: ModoImprenta) {
   };
 }
 
-export function validarPedido(p: PedidoImprenta): string | null {
-  if (!/^https?:\/\//.test(p.interiorUrl) || !/^https?:\/\//.test(p.cubiertaUrl)) return "faltan las URL de los PDF";
+export function validarPedido(p: PedidoImprenta, modo: ModoImprenta = modoImprenta()): string | null {
+  if (!/^https?:\/\//.test(p.libroUrl)) return "falta la URL del PDF de imprenta";
+  // Gelato descarga el PDF por su cuenta: necesita una URL pública https (Vercel Blob), no localhost.
+  if (modo !== "simulado" && !/^https:\/\//.test(p.libroUrl)) return `el PDF de imprenta necesita una URL pública https (${p.libroUrl.slice(0, 60)})`;
   const e = p.envio;
   if (!e.nombre || !e.linea1 || !e.ciudad || !e.cp || !e.email) return "dirección de envío incompleta";
   if (e.pais !== "ES") return `envío a ${e.pais} no habilitado todavía`;
@@ -91,9 +94,9 @@ export function validarPedido(p: PedidoImprenta): string | null {
 }
 
 export async function crearPedidoImprenta(p: PedidoImprenta): Promise<{ id: string; modo: ModoImprenta; estado: string }> {
-  const fallo = validarPedido(p);
-  if (fallo) throw new Error(fallo);
   const modo = modoImprenta();
+  const fallo = validarPedido(p, modo);
+  if (fallo) throw new Error(fallo);
   const cuerpo = cuerpoPedido(p, modo);
   if (modo === "simulado") {
     const dir = path.join(process.cwd(), "datos-locales", "imprenta");
@@ -117,21 +120,30 @@ export async function estadoPedidoImprenta(id: string): Promise<{ estado: string
   return { estado: j.fulfillmentStatus, seguimiento: j.items?.[0]?.fulfillments?.[0]?.trackingUrl };
 }
 
-/** Medidas reales del pliego de cubierta según Gelato; si no hay clave, la reserva. */
-export async function dimensionesCubierta(): Promise<DimensionesCubierta & { fuente: string }> {
+type Medida = number | { width?: number; height?: number; value?: number } | undefined;
+const ancho = (m: Medida) => (typeof m === "number" ? m : m?.width ?? m?.value);
+const alto = (m: Medida) => (typeof m === "number" ? undefined : m?.height);
+
+/** Convierte la respuesta de cover-dimensions en nuestras medidas; null si falta algo esencial. */
+export function leerDimensiones(j: Record<string, Medida>): DimensionesCubierta | null {
+  const env = ancho(j.wraparoundEdgeSize) ?? ancho(j.bleedSize);
+  const contra = ancho(j.contentBackSize), tapa = ancho(j.contentFrontSize), lomo = ancho(j.spineSize);
+  const altoTapa = alto(j.contentFrontSize) ?? alto(j.contentBackSize);
+  if (!env || !contra || !tapa || lomo === undefined || !altoTapa) return null;
+  return { envolturaMm: env, contraMm: contra, tapaMm: tapa, lomoMm: lomo, bisagraMm: ancho(j.jointFrontSize) ?? ancho(j.jointBackSize) ?? 0, altoTapaMm: altoTapa };
+}
+
+/** Medidas reales del pliego de cubierta según Gelato; si no hay clave o la respuesta no se entiende, la reserva. */
+export async function dimensionesCubierta(): Promise<DimensionesCubierta & { fuente: string; bruto?: unknown }> {
   const c = configPais();
   if (!process.env.GELATO_API_KEY) return { ...CUBIERTA_RESERVA, fuente: "reserva" };
   const url = `${PRODUCTS}/${c.imprenta.productUid}/cover-dimensions?pageCount=${c.imprenta.paginasInterior}&measureUnit=mm`;
   const r = await fetch(url, { headers: cabeceras() });
   if (!r.ok) return { ...CUBIERTA_RESERVA, fuente: `reserva (Gelato ${r.status})` };
-  // La respuesta trae el pliego completo y sus zonas; se toman las cifras principales.
-  const j = (await r.json()) as Record<string, { width?: number; height?: number; value?: number } | undefined>;
-  const ancho = j.wholeCoverDimensions?.width ?? j.cover?.width;
-  const alto = j.wholeCoverDimensions?.height ?? j.cover?.height;
-  const lomo = j.spineDimensions?.width ?? j.spine?.width;
-  const env = j.wrapDimensions?.width ?? j.wraparoundEdgeSize?.value;
-  if (!ancho || !alto || !lomo) return { ...CUBIERTA_RESERVA, fuente: "reserva (respuesta inesperada)" };
-  return { anchoMm: ancho, altoMm: alto, lomoMm: lomo, envolturaMm: env ?? CUBIERTA_RESERVA.envolturaMm, fuente: "gelato" };
+  const j = (await r.json()) as Record<string, Medida>;
+  const d = leerDimensiones(j);
+  if (!d) return { ...CUBIERTA_RESERVA, fuente: "reserva (respuesta inesperada)", bruto: j };
+  return { ...d, fuente: "gelato", bruto: j };
 }
 
 /** Cotización real (impresión + envío) para el país; la usa `npm run cotizar`. */

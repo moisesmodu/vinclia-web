@@ -8,7 +8,7 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
-import { generarCubierta, generarInterior } from "../src/lib/maquetacion";
+import { generarCubierta, generarInterior, generarLibroImprenta } from "../src/lib/maquetacion";
 import { MUESTRAS } from "../src/lib/muestras";
 
 const CARPETA: Record<string, string> = { "leo-y-la-luz-de-la-luna": "leo", "la-martina-i-els-secrets-de-lleida": "martina" };
@@ -47,5 +47,6 @@ for (const m of MUESTRAS) {
   await writeFile(path.join(out, `${m.slug}.pdf`), await generarInterior({ ...base, modo: "pantalla" }));
   await writeFile(path.join(out, `${m.slug}-interior-imprenta.pdf`), await generarInterior({ ...base, modo: "imprenta" }));
   await writeFile(path.join(out, `${m.slug}-cubierta-imprenta.pdf`), await generarCubierta(base));
+  await writeFile(path.join(out, `${m.slug}-libro-gelato.pdf`), await generarLibroImprenta(base));
   console.log(`${m.slug}: listo en ${Date.now() - t0} ms`);
 }

@@ -39,6 +39,7 @@ model Pedido {
   pdfUrl           String?   // PDF de lectura (pantalla)
   interiorUrl      String?   // PDF de imprenta (interior con sangrado)
   cubiertaUrl      String?   // PDF de imprenta (cubierta)
+  libroUrl         String?   // PDF único para Gelato: cubierta + guarda + interior + blanca
   imprentaPedidoId String?
   imprentaEstado   String?
   seguimientoUrl   String?

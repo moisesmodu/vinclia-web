@@ -19,4 +19,8 @@ for (const qq of quotes) {
   }
 }
 console.log("Estimación actual en config:", (margenEstimado("tapaDura", false) / 100).toFixed(2), "€");
-console.log("Cubierta:", await dimensionesCubierta());
+const dim = await dimensionesCubierta();
+console.log("Cubierta (fuente):", dim.fuente);
+console.log("Respuesta de Gelato:", JSON.stringify(dim.bruto, null, 2));
+console.log("Medidas usadas:", JSON.stringify({ ...dim, bruto: undefined }));
+if (dim.fuente !== "gelato") console.log("⚠ No se han podido leer las medidas: revisa leerDimensiones() en src/lib/imprenta/gelato.ts con la respuesta de arriba");

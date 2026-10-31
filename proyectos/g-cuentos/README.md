@@ -22,7 +22,7 @@ formulario ──► /api/cuentos ──► texto (claude-sonnet-5-5 sobre plant
 vista previa (biblioteca de ilustraciones) ──► /api/checkout ──► Stripe Checkout (o simulador sin claves)
 webhook firmado ──► pagado ──► encargo de ilustración (hoja propia si la familia eligió aspecto/color + portada + 18 o 22 páginas)
 taller (tarea programada horaria con el conector de Higgsfield) ──► POST /api/admin/pedidos/:id/ilustraciones
-maquetación (pdf-lib): PDF de lectura 30 págs (cada página del cuento ilustrada) + interior de imprenta 28 págs con 4 mm de sangrado + pliego de cubierta
+maquetación (pdf-lib): PDF de lectura 32 págs (cada página del cuento ilustrada) + PDF único para Gelato de 33 págs (pliego de cubierta + guarda + 30 interiores de 200 × 200 mm con 3 mm de sangrado + blanca)
 correo (Resend) ──► PDF entregado ──► tapa dura: pedido a Gelato (borrador = sandbox) ──► seguimiento
 ```
 
@@ -72,8 +72,8 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 - `npm run build` limpio; `tsc` sin errores; `npm test` (plantillas) en verde.
 - **Prueba de punta a punta OK** (`scripts/prueba-e2e.ts`, informe en `datos-locales/e2e.json`): vista previa con el
   nombre → alta de afiliada, clic y cookie aceptada → checkout → pago → **webhook firmado verificado por la librería
-  de Stripe** → encargo de 19 ilustraciones (18 páginas + portada) → retoque del texto antes de pagar → entrega del taller → PDF de lectura (30 págs) + interior de imprenta
-  (28 págs, sangrado 4 mm) + cubierta → correos → **pedido a imprenta** (cuerpo de pedido Gelato `draft`) → comisión
+  de Stripe** → encargo de 19 ilustraciones (18 páginas + portada) → retoque del texto antes de pagar → entrega del taller → PDF de lectura (32 págs) + interior de imprenta
+  (PDF único de 33 págs para Gelato, sangrado 3 mm) → correos → **pedido a imprenta** (cuerpo de pedido Gelato `draft`) → comisión
   a la afiliada. Segundo pedido PDF en catalán de 22 páginas con aspecto propio (hoja de personaje del pedido) entregado.
 - Revisado en móvil (390 px): sin desbordamiento horizontal en portada, formulario, vista previa, pedido, SEO,
   muestra y afiliadas.
@@ -109,10 +109,10 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
    Con afiliada (20 % sobre el precio) el margen de la tapa dura baja a ≈2,65 € y el del PDF a ≈4,60 €: se acepta
    como coste de captación (VIABILIDAD: «el coste de captación lo paga la venta»). Si las afiliadas venden mucho
    tapa dura, bajar su comisión en ese formato al 15 % (un número en `es-ES.json`).
-4. **Libro de 28 páginas interiores** (Gelato exige mínimo 28): portadilla, dedicatoria, «este libro pertenece a»,
+4. **Libro de 20 × 20 cm con 30 páginas interiores** (Gelato admite de 30 a 200 y el precio base incluye 30): portadilla, dedicatoria, «este libro pertenece a»,
    ficha «Así es…» con lo que contó la familia, 18 o 22 páginas de cuento (cada una con su ilustración apaisada a
-   sangre arriba y el texto debajo), «Fin», páginas para la familia hasta completar 28 en el de 18 (diploma, dibujo,
-   foto, notas) y colofón con la declaración de IA. Así el libro crece sin encarecer la impresión.
+   sangre arriba y el texto debajo), «Fin», páginas para la familia hasta completar 30 (diploma, dibujo,
+   foto, notas, frase, familia) y colofón con la declaración de IA. Así el libro crece sin encarecer la impresión.
 5. **Ilustración por pedido mediante un «taller»**: la API pública de Higgsfield no está documentada de forma
    verificable, así que el servidor no la llama. Cada pedido pagado deja un encargo (hoja propia si hace falta + portada + 18 o 22 páginas)
    y una tarea programada **horaria** lo ejecuta con el conector de Higgsfield (38 a 48 créditos por cuento) y sube las

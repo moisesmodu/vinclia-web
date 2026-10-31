@@ -29,7 +29,7 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
   return (
     <div className="tarjeta p-5 sm:p-6 space-y-4" id="comprar">
       <h2 className="text-2xl">{x.vista.elige}</h2>
-      {opcion("tapaDura", x.precios.tapaDura, precios.tapaDura, `${textos.envio}. ${x.vista.libroIncluyePdf}`)}
+      {opcion("tapaDura", x.precios.tapaDura, precios.tapaDura, `${idioma === "ca" ? "20 × 20 cm · 30 pàgines" : "20 × 20 cm · 30 páginas"} · ${textos.envio}. ${x.vista.libroIncluyePdf}`)}
       {opcion("pdf", x.precios.pdf, precios.pdf, x.precios.entrega)}
       <label className="block"><span className="etiqueta">{x.vista.email}</span>
         <input type="email" className="campo" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" inputMode="email" />

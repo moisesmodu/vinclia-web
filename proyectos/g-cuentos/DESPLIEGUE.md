@@ -13,7 +13,7 @@ en la rama `claude/g-cuentos` (PR #5), salvo que se diga otra cosa.
 | Proyecto de Neon | `cartera-g-cuentos`, región `aws-eu-west-2` (nombre y región de `DESPLIEGUES.md` §3) |
 | Productos de Stripe (cuenta Numi Mates) | `Cartera · Cuentos · PDF 7,90 €` y `Cartera · Cuentos · Tapa dura 36,90 €` (lo crea el script) |
 | Webhook de Stripe | `https://<url>/api/stripe/webhook`, eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded` |
-| Imprenta | Gelato, producto fotolibro tapa dura 200 × 200 mm, 28 páginas (`src/config/paises/es-ES.json`) |
+| Imprenta | Gelato, producto fotolibro tapa dura 200 × 200 mm (8 × 8"), 30 páginas interiores, un único PDF (cubierta + guarda + interior + blanca), sangrado 3 mm (`src/config/paises/es-ES.json`) |
 | Cron | `vercel.json`: `/api/cron/procesar` cada 5 minutos (necesita plan Pro) |
 
 Nota de precio: la estrategia nombra la tapa dura a 34,90 €. Se ha subido a 36,90 € con envío incluido porque, con la
@@ -153,3 +153,16 @@ nuevas: basta con `vercel --prod` desde `proyectos/g-cuentos`. Comprobación: `/
 `LEGAL_EMAIL` y `CORREO_SOPORTE` = `hola@numimates.com` (DESPLIEGUES.md §6) y redesplegado (commit 30ad8b8): el aviso legal y la portada ya no muestran el correo personal. Esta rama aún no lleva el commit del correo de la base (e5a9cea); cuando lo fusione, conviene redesplegar.
 
 Ejecutado el 2026-10-28
+
+### Formato de imprenta de Gelato (31-10-2026) — comprobar con la clave
+El libro impreso es el fotolibro de tapa dura de **20 × 20 cm (8 × 8")** con **30 páginas interiores** (Gelato admite
+30–200 y el precio base incluye 30; antes eran 28 y lo habría rechazado). Se envía **un único PDF** (`type: "default"`):
+pliego de cubierta · guarda en blanco · 30 páginas de 206 × 206 mm (200 + 3 mm de sangrado) · página final en blanco.
+Al dar de alta `GELATO_API_KEY`, antes del primer pedido real:
+1. `GELATO_API_KEY=… npm run cotizar`: debe dar precio para `pageCount: 30` y mostrar «Cubierta (fuente): gelato».
+   Si dice «reserva (respuesta inesperada)», ajustar `leerDimensiones()` en `src/lib/imprenta/gelato.ts` con la
+   respuesta que imprime (hoy se leen `wraparoundEdgeSize`, `contentBackSize`, `jointBackSize`, `spineSize`,
+   `jointFrontSize`, `contentFrontSize`).
+2. Un pedido en borrador (`GELATO_MODO=borrador`) y mirar la vista previa en el panel de Gelato: cubierta centrada,
+   título dentro del cartón, 30 páginas en orden. Si su equipo pide cubierta e interior por separado, poner
+   `GELATO_ARCHIVOS=separados` (manda `cover` + `content`).

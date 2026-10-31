@@ -78,7 +78,7 @@ export const SEO_ES: PaginaSeo[] = [
     h1: "Regalo de última hora: su cuento en menos de 2 horas",
     intro: "Nochebuena, la noche de Reyes, un cumpleaños que se te había olvidado. Si el regalo tiene que estar hoy, el cuento en PDF llega a tu correo en menos de 2 horas.",
     secciones: [
-      { h2: "Qué recibes", parrafos: ["Un PDF de 30 páginas con portada, dedicatoria, 18 o 22 páginas ilustradas con su texto, la ficha del protagonista y una página final. Se lee perfecto en tablet, móvil o pantalla, y puedes imprimirlo en casa o en una copistería."] },
+      { h2: "Qué recibes", parrafos: ["Un PDF de 32 páginas con portada, dedicatoria, 18 o 22 páginas ilustradas con su texto, la ficha del protagonista y una página final. Se lee perfecto en tablet, móvil o pantalla, y puedes imprimirlo en casa o en una copistería."] },
       { h2: "Cómo presentarlo", parrafos: [], lista: ["Imprime solo la portada y métela en un sobre con lazo.", "Envía el PDF por WhatsApp a la familia del niño.", "Ponlo en la tablet y léelo juntos esa misma noche."] },
       { h2: "Y si después quieres el libro", parrafos: ["Puedes pedir la versión en tapa dura más adelante: el cuento queda guardado y no tienes que volver a rellenar nada."] },
     ],
@@ -87,11 +87,11 @@ export const SEO_ES: PaginaSeo[] = [
   {
     slug: "libro-personalizado-tapa-dura-ninos",
     titulo: "Libro personalizado de tapa dura para niños, impreso en la UE",
-    descripcion: "Libro infantil personalizado de tapa dura, 20 × 20 cm, 28 páginas, impreso bajo demanda y enviado a casa con el envío incluido. Incluye también el PDF.",
+    descripcion: "Libro infantil personalizado de tapa dura, 20 × 20 cm, 30 páginas, impreso bajo demanda y enviado a casa con el envío incluido. Incluye también el PDF.",
     h1: "Su cuento en tapa dura, para guardarlo años",
     intro: "Un cuento personalizado se lee cientos de veces. Por eso lo imprimimos en tapa dura, en formato cuadrado de 20 × 20 cm y papel estucado, y lo enviamos a casa con el envío incluido.",
     secciones: [
-      { h2: "Características", parrafos: [], lista: ["Tapa dura laminada mate, 20 × 20 cm.", "28 páginas interiores a todo color: portadilla, dedicatoria, 12 ilustraciones a página completa y sus textos.", "Impreso bajo demanda en una imprenta de la red europea de Gelato.", "Incluye el PDF al momento, para leerlo mientras llega."] },
+      { h2: "Características", parrafos: [], lista: ["Tapa dura laminada mate, formato cuadrado de 20 × 20 cm (8 × 8 pulgadas).", "30 páginas interiores a todo color en papel estucado satinado de 170 g: portadilla, dedicatoria, la ficha del protagonista, 18 o 22 páginas ilustradas con su texto y páginas para la familia.", "Impreso bajo demanda en una imprenta de la red europea de Gelato.", "Incluye el PDF al momento, para leerlo mientras llega."] },
       { h2: "Plazos", parrafos: ["La fabricación y el envío suelen tardar alrededor de una semana laborable a la península. En la portada de la web tienes la fecha límite para Navidad y Reyes de este año."] },
       { h2: "Si llega dañado", parrafos: ["Mándanos una foto y lo reimprimimos sin coste."] },
     ],

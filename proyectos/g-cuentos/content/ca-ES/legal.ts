@@ -35,7 +35,7 @@ export const LEGAL_CA: DocumentoLegal[] = [
     slug: "condiciones",
     titulo: "Condicions de venda",
     secciones: [
-      { h2: "Producte", parrafos: ["Conte infantil personalitzat de 18 pàgines il·lustrades (de 2 a 4 anys) o 22 (de 5 a 8), en PDF descarregable o en llibre imprès de tapa dura de 20 × 20 cm i 28 pàgines interiors (que inclou també el PDF). Abans de pagar pots veure gratis una vista prèvia; les il·lustracions de la vista prèvia són de mostra."] },
+      { h2: "Producte", parrafos: ["Conte infantil personalitzat de 18 pàgines il·lustrades (de 2 a 4 anys) o 22 (de 5 a 8), en PDF descarregable o en llibre imprès de tapa dura de 20 × 20 cm i 30 pàgines interiors (que inclou també el PDF). Abans de pagar pots veure gratis una vista prèvia; les il·lustracions de la vista prèvia són de mostra."] },
       { h2: "Preus", parrafos: ["Preus en euros amb l'IVA inclòs (4 % per a llibres). El llibre imprès inclou l'enviament a la península i les Illes Balears. De moment no enviem a Canàries, Ceuta ni Melilla."] },
       { h2: "Lliurament", parrafos: ["El PDF s'envia al correu indicat, normalment en menys de 2 hores. El llibre imprès es fabrica sota demanda i sol arribar en uns 5 a 7 dies feiners."] },
       { h2: "Dret de desistiment", parrafos: ["En ser un producte personalitzat segons les especificacions del consumidor, no s'aplica el dret de desistiment (article 103.c del Reial decret legislatiu 1/2007). Per al PDF, en acceptar la compra consents que el lliurament comenci immediatament i reconeixes que perds el dret de desistiment (article 103.m)."] },

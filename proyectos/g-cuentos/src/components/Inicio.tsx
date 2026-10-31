@@ -5,6 +5,7 @@ import { configPais, euros, URL_BASE } from "@/lib/config";
 import { CUENTOS_MUESTRA } from "@/lib/muestras-contenido";
 import { t } from "@/i18n/textos";
 import { Edades } from "./inicio/Edades";
+import { FichaLibro } from "./inicio/FichaLibro";
 import { TuDecides } from "./inicio/TuDecides";
 import { DentroDelLibro } from "./inicio/DentroDelLibro";
 import { Icono } from "./inicio/Iconos";
@@ -34,7 +35,7 @@ const C = {
     edades: "Edad", temas: "Temas para elegir", crearCol: "Crear este cuento",
     prodOjo: "El libro", prodTitulo: "PDF hoy mismo o tapa dura en casa",
     pdf: ["Se lee en tablet, móvil u ordenador", "Se imprime en casa o en la copistería", "Llega a tu correo en menos de 2 horas", "Perfecto para la noche de Reyes o Nochebuena"],
-    libro: ["Tapa dura laminada mate, 20 × 20 cm", "28 páginas a todo color en papel estucado de 170 g", "Ilustraciones a página completa, a sangre", "Impreso bajo demanda en la UE y enviado a casa", "Incluye también el PDF al momento"],
+    libro: ["Tapa dura laminada mate, formato cuadrado de 20 × 20 cm", "30 páginas interiores a todo color en papel estucado satinado de 170 g", "Ilustraciones a página completa, a sangre", "Impreso bajo demanda en la UE y enviado a casa", "Incluye también el PDF al momento"],
     directo: "¿Es un regalo? Pon la dirección del niño al pagar y le llegará directamente.",
     hermanos: "Segundo cuento para un hermano: 20 % de descuento con el código HERMANOS20.",
     ilustrativa: "Imagen ilustrativa del libro impreso.",
@@ -83,7 +84,7 @@ const C = {
     edades: "Edat", temas: "Temes per triar", crearCol: "Crear aquest conte",
     prodOjo: "El llibre", prodTitulo: "PDF avui mateix o tapa dura a casa",
     pdf: ["Es llegeix a la tauleta, al mòbil o a l'ordinador", "S'imprimeix a casa o a la copisteria", "Arriba al teu correu en menys de 2 hores", "Perfecte per a la nit de Reis o de Nadal"],
-    libro: ["Tapa dura laminada mat, 20 × 20 cm", "28 pàgines a tot color en paper estucat de 170 g", "Il·lustracions a pàgina sencera, a sang", "Imprès sota demanda a la UE i enviat a casa", "Inclou també el PDF a l'instant"],
+    libro: ["Tapa dura laminada mat, format quadrat de 20 × 20 cm", "30 pàgines interiors a tot color en paper estucat setinat de 170 g", "Il·lustracions a pàgina sencera, a sang", "Imprès sota demanda a la UE i enviat a casa", "Inclou també el PDF a l'instant"],
     directo: "És un regal? Posa l'adreça de l'infant en pagar i li arribarà directament.",
     hermanos: "Segon conte per a un germà: 20 % de descompte amb el codi HERMANOS20.",
     ilustrativa: "Imatge il·lustrativa del llibre imprès.",
@@ -239,10 +240,13 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
           <p className="ojo mb-2">{k.prodOjo}</p>
           <h2 className="text-3xl sm:text-4xl mb-8">{k.prodTitulo}</h2>
           <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr] items-start">
-            <figure>
-              <div className="marco-foto"><Image src="/producto/regalo.webp" alt={k.ilustrativa} width={1600} height={1200} className="w-full" /></div>
-              <figcaption className="text-xs text-suave mt-2">{k.ilustrativa}</figcaption>
-            </figure>
+            <div>
+              <figure>
+                <div className="marco-foto"><Image src="/producto/regalo.webp" alt={k.ilustrativa} width={1600} height={1200} className="w-full" /></div>
+                <figcaption className="text-xs text-suave mt-2">{k.ilustrativa}</figcaption>
+              </figure>
+              <FichaLibro idioma={idioma} />
+            </div>
             <div className="grid gap-4">
               <div className="tarjeta p-6">
                 <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precio.gratis}</h3><p className="titulo text-3xl">0 €</p></div>

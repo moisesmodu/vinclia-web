@@ -5,17 +5,25 @@ import { PDFDocument, rgb, degrees, LineCapStyle, type PDFFont, type PDFImage, t
 import sharp from "sharp";
 import type { Cuento } from "./cuento";
 import { aficion, arropa, colorFav, companero, type ColeccionId, type Idioma } from "./catalogo";
+import { configPais } from "./config";
 import { articuloCa, type DatosNino } from "./rellenar";
 
 // ── Medidas ────────────────────────────────────────────────────────────────
-// Libro cuadrado 200 × 200 mm (Gelato «photobooks-hardcover 200x200»), 28 páginas interiores:
+// Libro cuadrado de 20 × 20 cm (Gelato «photobooks-hardcover 200x200 mm / 8x8 inch», tapa dura laminada mate,
+// interior de 170 g estucado satinado, encuadernación encolada). Gelato admite de 30 a 200 páginas interiores y el
+// precio base incluye las 30 primeras: usamos 30 (es-ES.json → imprenta.paginasInterior).
 //   1 portadilla · 2 dedicatoria · 3 «este libro pertenece a» · 4 «así es…» (ficha) ·
 //   5… cuento (18 o 22 páginas, cada una con su ilustración arriba y el texto debajo) · «Fin» ·
-//   páginas para la familia hasta completar (diploma, dibujo, foto, notas) · colofón.
-// El sangrado y las medidas de la cubierta se leen de la API de la imprenta cuando hay clave
-// (imprenta/gelato.ts → dimensionesCubierta); estos valores son los de reserva.
+//   páginas para la familia hasta completar (diploma, frase, dibujo, foto, notas, familia) · colofón.
+// Sangrado de 3 mm por lado (requisito de Gelato para fotolibros en PDF). Las medidas de la cubierta se leen de la
+// API cuando hay clave (imprenta/gelato.ts → dimensionesCubierta); CUBIERTA_RESERVA es la estimación sin clave.
 export const MM = 72 / 25.4;
-export const LIBRO = { corteMm: 200, sangradoMm: 4, paginas: 28, dpi: 300 };
+export const LIBRO = {
+  corteMm: 200,
+  sangradoMm: 3,
+  get paginas() { return configPais().imprenta.paginasInterior; },
+  dpi: 300,
+};
 
 // Familia Lunilla (marcas/tokens.json)
 const hex = (h: string) => rgb(parseInt(h.slice(1, 3), 16) / 255, parseInt(h.slice(3, 5), 16) / 255, parseInt(h.slice(5, 7), 16) / 255);
@@ -140,6 +148,8 @@ const EXTRAS = {
     foto: (deN: string, e: number) => `Pega aquí una foto ${deN} a los ${e} años`,
     fecha: "Fecha:",
     notas: (n: string) => `Lo que queremos decirte, ${n}`,
+    frase: "Nuestra frase para decir juntos",
+    familia: (n: string) => `La familia de ${n}`,
   },
   ca: {
     ficha: (n: string) => `Així és ${n}`,
@@ -157,10 +167,12 @@ const EXTRAS = {
     foto: (deN: string, e: number) => `Enganxa aquí una foto ${deN} als ${e} anys`,
     fecha: "Data:",
     notas: (n: string) => `El que et volem dir, ${n}`,
+    frase: "La nostra frase per dir junts",
+    familia: (n: string) => `La família ${n}`,
   },
 };
 
-/** Interior del libro (28 páginas). En modo pantalla añade cubierta delante y contraportada detrás. */
+/** Interior del libro (LIBRO.paginas, 30). En modo pantalla añade cubierta delante y contraportada detrás. */
 export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
   const imprenta = e.modo === "imprenta";
   const sMm = imprenta ? (e.sangradoMm ?? LIBRO.sangradoMm) : 0;
@@ -283,8 +295,11 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
     bloqueCentrado(p, t.fin, F.titulo, cx, cy - 10 * MM, anchoTexto, 34, 20 * MM, AZUL_NOCHE);
     adorno(p, cx, cy - 26 * MM);
   }
-  // Páginas para la familia hasta completar las 28 (con 22 páginas de cuento no queda hueco)
+  // Páginas para la familia hasta completar LIBRO.paginas (2 con 22 páginas de cuento, 6 con 18)
   const huecos = LIBRO.paginas - (4 + N + 1 + 1);
+  if (huecos < 0) throw new Error(`El cuento (${N} páginas) no cabe en ${LIBRO.paginas} páginas interiores`);
+  // La frase final para decir juntos: el último «…» de la última página del cuento
+  const frase = [...(e.cuento.paginas[N - 1] ?? "").matchAll(/«([^«»]{4,90})»/g)].pop()?.[1];
   const extras: ((p: PDFPage) => void)[] = [
     (p) => {
       p.drawRectangle({ x: b + 14 * MM, y: b + 14 * MM, width: corte - 28 * MM, height: corte - 28 * MM, borderColor: AMARILLO, borderWidth: 3 });
@@ -295,6 +310,13 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
       dibujarLunilla(p, cx + 30 * MM, b + 42 * MM, 16 * MM);
       p.drawLine({ start: { x: cx - 50 * MM, y: b + 36 * MM }, end: { x: cx + 12 * MM, y: b + 36 * MM }, thickness: 0.6, color: TINTA });
       p.drawText(x.firma, { x: cx - 50 * MM, y: b + 30 * MM, size: 9, font: F.texto, color: TERRACOTA });
+    },
+    (p) => {
+      if (!frase) return extras[2](p);
+      titular(p, x.frase, b + corte - 30 * MM);
+      adorno(p, cx, b + corte - 44 * MM);
+      bloqueCentrado(p, `«${frase}»`, F.titulo, cx, cy + 4 * MM, anchoTexto, 30, 70 * MM, AZUL_NOCHE, 1.25);
+      dibujarLunilla(p, cx, b + 40 * MM, 26 * MM);
     },
     (p) => {
       titular(p, x.dibujo(nombreCa), b + corte - 26 * MM);
@@ -312,6 +334,16 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
       for (let y = b + corte - 50 * MM; y > b + 26 * MM; y -= 11 * MM)
         p.drawLine({ start: { x: b + 22 * MM, y }, end: { x: b + corte - 22 * MM, y }, thickness: 0.5, color: hex("#C9BFAE") });
       dibujarLunilla(p, cx, b + 16 * MM, 9 * MM);
+    },
+    (p) => {
+      titular(p, x.familia(e.idioma === "ca" ? deNombre : nombreCa), b + corte - 26 * MM);
+      const anchoM = (corte - 2 * 22 * MM - 2 * 8 * MM) / 3, altoM = 52 * MM;
+      for (let fila = 0; fila < 2; fila++)
+        for (let col = 0; col < 3; col++) {
+          const mx = b + 22 * MM + col * (anchoM + 8 * MM), my = b + 24 * MM + (1 - fila) * (altoM + 18 * MM);
+          p.drawRectangle({ x: mx, y: my, width: anchoM, height: altoM, borderColor: AMARILLO, borderWidth: 1.5, borderDashArray: [5, 4], color: hex("#FFFDF7") });
+          p.drawLine({ start: { x: mx + 4 * MM, y: my - 7 * MM }, end: { x: mx + anchoM - 4 * MM, y: my - 7 * MM }, thickness: 0.5, color: hex("#C9BFAE") });
+        }
     },
   ];
   for (let k = 0; k < huecos; k++) {
@@ -357,44 +389,87 @@ function dibujarFrontal(p: PDFPage, imagen: PDFImage, titulo: string, marca: str
   p.drawText(marca, { x: cxBanda - w / 2, y: yBanda + bandaAlto * 0.1, size: tam, font: F.texto, color: TERRACOTA });
 }
 
+// ── Cubierta de tapa dura ──────────────────────────────────────────────────
+// Pliego de izquierda a derecha: envoltura | contraportada | bisagra | lomo | bisagra | portada | envoltura.
+// La envoltura (lo que se dobla por dentro del cartón) incluye el sangrado. Alto = tapa + 2 envolturas.
+// Con GELATO_API_KEY las cifras salen de GET /v3/products/{uid}/cover-dimensions (wraparoundEdgeSize,
+// contentBackSize, jointBackSize, spineSize, jointFrontSize, contentFrontSize).
 export interface DimensionesCubierta {
-  anchoMm: number; // ancho total del pliego (contra + lomo + tapa + envolturas)
-  altoMm: number;
+  envolturaMm: number;
+  contraMm: number;
+  bisagraMm: number;
   lomoMm: number;
-  envolturaMm: number; // lo que se dobla por dentro de la tapa (incluye sangrado)
+  tapaMm: number; // ancho de la portada (cartón)
+  altoTapaMm: number; // alto del cartón
 }
 
-// Reserva hasta leer la API: tapa dura 200×200 con 28 págs. (estimación, se verifica con la API)
-export const CUBIERTA_RESERVA: DimensionesCubierta = { anchoMm: 2 * 200 + 6 + 2 * 18, altoMm: 200 + 2 * 18, lomoMm: 6, envolturaMm: 18 };
+export const anchoPliego = (d: DimensionesCubierta) => 2 * d.envolturaMm + d.contraMm + d.tapaMm + 2 * d.bisagraMm + d.lomoMm;
+export const altoPliego = (d: DimensionesCubierta) => d.altoTapaMm + 2 * d.envolturaMm;
 
-/** Pliego de cubierta para tapa dura: contraportada | lomo | portada. */
+// Estimación para 200×200 mm y 30 páginas (cartón 3 mm mayor que el corte). Se sustituye por la de la API.
+export const CUBIERTA_RESERVA: DimensionesCubierta = { envolturaMm: 18, contraMm: 203, bisagraMm: 8, lomoMm: 7, tapaMm: 203, altoTapaMm: 206 };
+
+async function pdfCubierta(doc: PDFDocument, e: Omit<EntradaPdf, "modo">, dim: DimensionesCubierta, F: Fuentes) {
+  const W = anchoPliego(dim) * MM, H = altoPliego(dim) * MM;
+  const env = dim.envolturaMm * MM, contra = dim.contraMm * MM, bis = dim.bisagraMm * MM, lomo = dim.lomoMm * MM, tapa = dim.tapaMm * MM;
+  const p = doc.addPage([W, H]);
+  p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CREMA });
+  // Portada: ilustración a sangre desde la bisagra delantera hasta el borde exterior
+  const xBisagra = env + contra + bis + lomo;
+  const anchoImg = W - xBisagra;
+  const img = await doc.embedJpg(
+    await sharp(e.imagenes[0]).resize(Math.round((anchoImg / MM / 25.4) * LIBRO.dpi), Math.round((H / MM / 25.4) * LIBRO.dpi), { fit: "cover" }).jpeg({ quality: 92 }).toBuffer(),
+  );
+  const xTapa = xBisagra + bis;
+  dibujarFrontal(p, img, e.cuento.titulo, TEXTOS[e.idioma].marca, F, { x: xBisagra, y: 0, w: anchoImg, h: H }, { x: xTapa, y: env, w: tapa, h: H - 2 * env });
+  // Contraportada
+  const cxBack = env + contra / 2;
+  bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cxBack, H / 2 + 15 * MM, contra - 40 * MM, 15, 50 * MM);
+  dibujarLunilla(p, cxBack, env + 42 * MM, 20 * MM);
+  bloqueCentrado(p, `Lunilla · ${WEB()}`, F.titulo, cxBack, env + 25 * MM, contra - 40 * MM, 12, 10 * MM, TERRACOTA);
+  bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 12 * MM, contra - 50 * MM, 6.5, 12 * MM, TINTA, 1.35);
+  // Lomo (y bisagras) en azul noche
+  p.drawRectangle({ x: env + contra, y: 0, width: 2 * bis + lomo, height: H, color: AZUL_NOCHE });
+  if (lomo >= 5 * MM) {
+    const tam = Math.min(lomo * 0.55, 10);
+    let txt = e.cuento.titulo;
+    while (F.titulo.widthOfTextAtSize(txt, tam) > (dim.altoTapaMm - 30) * MM && txt.length > 10) txt = `${txt.slice(0, -2).trimEnd()}…`;
+    const w = F.titulo.widthOfTextAtSize(txt, tam);
+    p.drawText(txt, { x: env + contra + bis + lomo / 2 + tam * 0.35, y: H / 2 - w / 2, size: tam, font: F.titulo, color: CREMA, rotate: degrees(90) });
+  }
+  p.setTrimBox(env, env, W - 2 * env, H - 2 * env);
+  p.setBleedBox(0, 0, W, H);
+}
+
+/** Pliego de cubierta suelto (para revisarlo o si la imprenta lo pide aparte). */
 export async function generarCubierta(e: Omit<EntradaPdf, "modo">, dim: DimensionesCubierta = CUBIERTA_RESERVA): Promise<Uint8Array> {
   const doc = await PDFDocument.create();
   doc.setTitle(`${e.cuento.titulo} · cubierta`);
-  const F = await cargarFuentes(doc);
-  const W = dim.anchoMm * MM, H = dim.altoMm * MM, env = dim.envolturaMm * MM, lomo = dim.lomoMm * MM;
-  const tapa = (W - lomo - 2 * env) / 2;
-  const p = doc.addPage([W, H]);
-  p.drawRectangle({ x: 0, y: 0, width: W, height: H, color: CREMA });
-  const px = Math.round((((tapa + env) / MM) / 25.4) * LIBRO.dpi);
-  const img = await doc.embedJpg(await sharp(e.imagenes[0]).resize(px, Math.round((H / MM / 25.4) * LIBRO.dpi), { fit: "cover" }).jpeg({ quality: 92 }).toBuffer());
-  // Portada (derecha), a sangre hasta el borde exterior
-  const xFront = env + tapa + lomo;
-  dibujarFrontal(p, img, e.cuento.titulo, TEXTOS[e.idioma].marca, F, { x: xFront, y: 0, w: W - xFront, h: H }, { x: xFront, y: env, w: tapa, h: H - 2 * env });
-  // Contraportada (izquierda)
-  const cxBack = env + tapa / 2;
-  bloqueCentrado(p, e.cuento.contraportada, F.cursiva, cxBack, H / 2 + 15 * MM, tapa - 40 * MM, 15, 50 * MM);
-  dibujarLunilla(p, cxBack, env + 42 * MM, 20 * MM);
-  bloqueCentrado(p, `Lunilla · ${WEB()}`, F.titulo, cxBack, env + 25 * MM, tapa - 40 * MM, 12, 10 * MM, TERRACOTA);
-  bloqueCentrado(p, TEXTOS[e.idioma].colofon(e.nombre).split("\n")[1], F.texto, cxBack, env + 12 * MM, tapa - 50 * MM, 6.5, 12 * MM, TINTA, 1.35);
-  // Lomo
-  p.drawRectangle({ x: env + tapa, y: 0, width: lomo, height: H, color: AZUL_NOCHE });
-  if (lomo >= 5 * MM) {
-    const tam = Math.min(lomo * 0.55, 10);
-    const txt = e.cuento.titulo.length > 48 ? `${e.cuento.titulo.slice(0, 45)}…` : e.cuento.titulo;
-    const w = F.titulo.widthOfTextAtSize(txt, tam);
-    p.drawText(txt, { x: env + tapa + lomo / 2 + tam * 0.35, y: H / 2 - w / 2, size: tam, font: F.titulo, color: CREMA, rotate: degrees(90) });
-  }
-  p.setTrimBox(env, env, W - 2 * env, H - 2 * env);
+  await pdfCubierta(doc, e, dim, await cargarFuentes(doc));
+  return doc.save();
+}
+
+/**
+ * PDF único para Gelato (fotolibros): 1 pliego de cubierta · 2 guarda en blanco · 3… las 30 páginas interiores ·
+ * última página en blanco (no se imprime). Total = LIBRO.paginas + 3.
+ */
+export async function generarLibroImprenta(e: Omit<EntradaPdf, "modo">, dim: DimensionesCubierta = CUBIERTA_RESERVA): Promise<Uint8Array> {
+  const interior = await PDFDocument.load(await generarInterior({ ...e, modo: "imprenta" }));
+  const doc = await PDFDocument.create();
+  doc.setTitle(e.cuento.titulo);
+  doc.setAuthor("Lunilla");
+  doc.setCreator(`Lunilla · ${WEB()}`);
+  await pdfCubierta(doc, e, dim, await cargarFuentes(doc));
+  const [w, h] = [interior.getPage(0).getWidth(), interior.getPage(0).getHeight()];
+  const trim = interior.getPage(0).getTrimBox();
+  const blanca = () => {
+    const p = doc.addPage([w, h]);
+    p.setTrimBox(trim.x, trim.y, trim.width, trim.height);
+    p.setBleedBox(0, 0, w, h);
+  };
+  blanca();
+  for (const pg of await doc.copyPages(interior, interior.getPageIndices())) doc.addPage(pg);
+  blanca();
+  if (doc.getPageCount() !== LIBRO.paginas + 3) throw new Error(`El PDF de imprenta tiene ${doc.getPageCount()} páginas y debería tener ${LIBRO.paginas + 3}`);
   return doc.save();
 }

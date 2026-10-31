@@ -6,8 +6,8 @@ Regla: SESIONES.md, «Monetizar primero». Se actualiza cada lunes con las cifra
 
 | Producto | Precio (IVA 4 % incl.) | Margen estimado sin afiliada | Con afiliada (20 %) |
 |---|---|---|---|
-| PDF (30 págs, 18 o 22 ilustradas) | **7,90 €** | 5,28 € | 3,70 € |
-| Libro de tapa dura 20 × 20 cm, envío incluido | **36,90 €** | 9,13 € | 1,75 € |
+| PDF (32 págs, 18 o 22 ilustradas) | **7,90 €** | 5,28 € | 3,70 € |
+| Libro de tapa dura 20 × 20 cm, 30 páginas, envío incluido | **36,90 €** | 9,13 € | 1,75 € |
 | Segundo cuento para hermanos | cupón `HERMANOS20` (−20 %) | — | — |
 
 Los márgenes salen de `margenEstimado()` (`src/lib/config.ts`) con el coste de Gelato todavía **estimado** (23,60 €
