@@ -90,6 +90,98 @@
             "ca": "Guia d’ús en PDF"
           }
         }
+      ],
+      "descripcion": {
+        "es": "Excel para autónomos 2027: libro de ingresos y gastos, modelos 303 y 130 calculados solos, cuota por tramos, renta estimada y calendario fiscal. 9,90 €.",
+        "ca": "Excel per a autònoms 2027: llibre d’ingressos i despeses, models 303 i 130 calculats sols, quota per trams, renda estimada i calendari fiscal. 9,90 €."
+      },
+      "titular": {
+        "es": "Tus trimestrales, hechos solos a partir de tus facturas",
+        "ca": "Els teus trimestrals, fets sols a partir de les teves factures"
+      },
+      "incluye": [
+        {
+          "t": {
+            "es": "Libro de ingresos y gastos",
+            "ca": "Llibre d’ingressos i despeses"
+          },
+          "d": {
+            "es": "400 filas por libro, con IVA, retención, % de afectación y trimestre automáticos.",
+            "ca": "400 files per llibre, amb IVA, retenció, % d’afectació i trimestre automàtics."
+          }
+        },
+        {
+          "t": {
+            "es": "Modelos 303 y 130 de cada trimestre",
+            "ca": "Models 303 i 130 de cada trimestre"
+          },
+          "d": {
+            "es": "Calculados solos, con compensación del IVA, retenciones, pagos anteriores y minoración.",
+            "ca": "Calculats sols, amb compensació de l’IVA, retencions, pagaments anteriors i minoració."
+          }
+        },
+        {
+          "t": {
+            "es": "Cuota de autónomos por tramos",
+            "ca": "Quota d’autònoms per trams"
+          },
+          "d": {
+            "es": "Tu tramo según el rendimiento, cuota mes a mes y regularización estimada.",
+            "ca": "El teu tram segons el rendiment, quota mes a mes i regularització estimada."
+          }
+        },
+        {
+          "t": {
+            "es": "Estimación de la renta 2027",
+            "ca": "Estimació de la renda 2027"
+          },
+          "d": {
+            "es": "Escala estatal y de tu comunidad, mínimos y resultado a pagar o a devolver.",
+            "ca": "Escala estatal i de la teva comunitat, mínims i resultat a pagar o a retornar."
+          }
+        },
+        {
+          "t": {
+            "es": "Calendario fiscal 2027",
+            "ca": "Calendari fiscal 2027"
+          },
+          "d": {
+            "es": "Todas las fechas límite, con aviso de lo que vence en 15 días.",
+            "ca": "Totes les dates límit, amb avís del que venç en 15 dies."
+          }
+        },
+        {
+          "t": {
+            "es": "Guía de uso en PDF",
+            "ca": "Guia d’ús en PDF"
+          },
+          "d": {
+            "es": "Paso a paso para dejarlo listo en una tarde.",
+            "ca": "Pas a pas per deixar-ho a punt en una tarda (en castellà)."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "p": {
+            "es": "¿Sirve si estoy en tarifa plana?",
+            "ca": "Serveix si tinc tarifa plana?"
+          },
+          "r": {
+            "es": "Sí. Marca la tarifa plana en «Mis datos» (o mes a mes) y la cuota sale a la tarifa plana; el 130 y la renta la tienen en cuenta.",
+            "ca": "Sí. Marca la tarifa plana a «Mis datos» (o mes a mes) i la quota surt a la tarifa plana; el 130 i la renda la tenen en compte."
+          }
+        },
+        {
+          "p": {
+            "es": "¿Y si estoy en módulos o tengo una sociedad?",
+            "ca": "I si estic en mòduls o tinc una societat?"
+          },
+          "r": {
+            "es": "El kit es para autónomos persona física en estimación directa simplificada, que es lo más habitual. Módulos (modelo 131) y sociedades no están incluidos.",
+            "ca": "El kit és per a autònoms persona física en estimació directa simplificada, que és el més habitual. Mòduls (model 131) i societats no hi són."
+          }
+        }
       ]
     },
     {
@@ -173,6 +265,98 @@
           "alt": {
             "es": "Guía de la papeleta de conciliación (PDF)",
             "ca": "Guia de la papereta de conciliació (PDF)"
+          }
+        }
+      ],
+      "descripcion": {
+        "es": "Comprueba tu finiquito y tu indemnización concepto por concepto, con carta de no conforme, guía de la papeleta de conciliación y plazos. 6,90 €.",
+        "ca": "Comprova la quitança i la indemnització concepte per concepte, amb carta de no conforme, guia de la papereta de conciliació i terminis. 6,90 €."
+      },
+      "titular": {
+        "es": "Que no te paguen de menos al despedirte",
+        "ca": "Que no et paguin de menys quan t’acomiaden"
+      },
+      "incluye": [
+        {
+          "t": {
+            "es": "Comprobador de finiquito",
+            "ca": "Comprovador de quitança"
+          },
+          "d": {
+            "es": "Salario del último mes, vacaciones y pagas extra, frente a lo que te ofrece la empresa.",
+            "ca": "Salari de l’últim mes, vacances i pagues extra, davant del que t’ofereix l’empresa."
+          }
+        },
+        {
+          "t": {
+            "es": "Indemnización por tramos",
+            "ca": "Indemnització per trams"
+          },
+          "d": {
+            "es": "Improcedente, objetivo o fin de contrato, con el tramo anterior a 2012 y los topes legales.",
+            "ca": "Improcedent, objectiu o fi de contracte, amb el tram anterior al 2012 i els límits legals."
+          }
+        },
+        {
+          "t": {
+            "es": "Plazos con los festivos de tu comunidad",
+            "ca": "Terminis amb els festius de la teva comunitat"
+          },
+          "d": {
+            "es": "El último día de los 20 hábiles para la papeleta, el del paro y el de las cantidades.",
+            "ca": "L’últim dia dels 20 hàbils per a la papereta, el de l’atur i el de les quantitats."
+          }
+        },
+        {
+          "t": {
+            "es": "Carta de «no conforme» y de reclamación",
+            "ca": "Carta de «no conforme» i de reclamació"
+          },
+          "d": {
+            "es": "Modelos para rellenar, listos para enviar por burofax.",
+            "ca": "Models per omplir, a punt per enviar per burofax (en castellà)."
+          }
+        },
+        {
+          "t": {
+            "es": "Guía de la papeleta de conciliación",
+            "ca": "Guia de la papereta de conciliació"
+          },
+          "d": {
+            "es": "Qué poner, dónde presentarla y qué pasa después, con las normas citadas.",
+            "ca": "Què hi has de posar, on presentar-la i què passa després, amb les normes citades."
+          }
+        },
+        {
+          "t": {
+            "es": "Checklist de documentos",
+            "ca": "Llista de documents"
+          },
+          "d": {
+            "es": "Todo lo que tienes que reunir antes de firmar o reclamar.",
+            "ca": "Tot el que has de reunir abans de signar o reclamar."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "p": {
+            "es": "¿Es asesoramiento jurídico?",
+            "ca": "És assessorament jurídic?"
+          },
+          "r": {
+            "es": "No. Es una herramienta para comprobar cifras con la ley y unos modelos para rellenar. Si hay mucho en juego o el despido puede ser nulo, consulta con un abogado laboralista o con tu sindicato: en lo social tienes asistencia jurídica gratuita.",
+            "ca": "No. És una eina per comprovar xifres amb la llei i uns models per omplir. Si hi ha molt en joc o l’acomiadament pot ser nul, consulta un advocat laboralista o el teu sindicat: en l’àmbit social tens assistència jurídica gratuïta."
+          }
+        },
+        {
+          "p": {
+            "es": "¿Tengo tiempo? Me despidieron hace días",
+            "ca": "Tinc temps? M’han acomiadat fa dies"
+          },
+          "r": {
+            "es": "El plazo es de 20 días hábiles desde el día siguiente al despido. El Excel te dice el último día con los festivos de tu comunidad; no lo apures.",
+            "ca": "El termini és de 20 dies hàbils des de l’endemà de l’acomiadament. L’Excel et diu l’últim dia amb els festius de la teva comunitat; no l’esgotis."
           }
         }
       ]
@@ -265,6 +449,98 @@
             "ca": "Preguntes per al banc (PDF)"
           }
         }
+      ],
+      "descripcion": {
+        "es": "Excel para comparar hasta 4 ofertas de hipoteca (FEIN) con TAE real, vinculaciones, escenarios de Euríbor y amortización anticipada, más preguntas para el banco. 6,90 €.",
+        "ca": "Excel per comparar fins a 4 ofertes d’hipoteca (FEIN) amb TAE real, vinculacions, escenaris d’Euríbor i amortització anticipada, més preguntes per al banc. 6,90 €."
+      },
+      "titular": {
+        "es": "La hipoteca más barata no siempre es la del TIN más bajo",
+        "ca": "La hipoteca més barata no sempre és la del TIN més baix"
+      },
+      "incluye": [
+        {
+          "t": {
+            "es": "Comparativa de 4 ofertas",
+            "ca": "Comparativa de 4 ofertes"
+          },
+          "d": {
+            "es": "Fija, mixta o variable, con coste total, posición y gráfico.",
+            "ca": "Fixa, mixta o variable, amb cost total, posició i gràfic."
+          }
+        },
+        {
+          "t": {
+            "es": "TAE con vinculaciones",
+            "ca": "TAE amb vinculacions"
+          },
+          "d": {
+            "es": "Seguros de vida y hogar y productos vinculados, y si bonificarte compensa.",
+            "ca": "Assegurances de vida i llar i productes vinculats, i si bonificar-te compensa."
+          }
+        },
+        {
+          "t": {
+            "es": "Escenarios de Euríbor",
+            "ca": "Escenaris d’Euríbor"
+          },
+          "d": {
+            "es": "Tu cuota con el Euríbor un punto más bajo o hasta tres más alto.",
+            "ca": "La teva quota amb l’Euríbor un punt més baix o fins a tres més alt."
+          }
+        },
+        {
+          "t": {
+            "es": "Amortizar antes",
+            "ca": "Amortitzar abans"
+          },
+          "d": {
+            "es": "Reducir cuota o plazo, ahorro y comisión máxima legal.",
+            "ca": "Reduir quota o termini, estalvi i comissió màxima legal."
+          }
+        },
+        {
+          "t": {
+            "es": "Cuadro de amortización",
+            "ca": "Quadre d’amortització"
+          },
+          "d": {
+            "es": "Por años y mes a mes de cada oferta.",
+            "ca": "Per anys i mes a mes de cada oferta."
+          }
+        },
+        {
+          "t": {
+            "es": "Preguntas para el banco (PDF)",
+            "ca": "Preguntes per al banc (PDF)"
+          },
+          "d": {
+            "es": "Lo que pedir y preguntar para negociar el tipo, las vinculaciones y las comisiones.",
+            "ca": "Què demanar i preguntar per negociar el tipus, les vinculacions i les comissions (en castellà)."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "p": {
+            "es": "¿Por qué la TAE sale distinta de la de la FEIN?",
+            "ca": "Per què la TAE surt diferent de la de la FEIN?"
+          },
+          "r": {
+            "es": "Porque incluye los seguros y productos que pongas y porque la oficial sigue la Orden EHA/2899/2011 con sus supuestos. Sirve para comparar ofertas entre sí con los mismos criterios.",
+            "ca": "Perquè inclou les assegurances i els productes que hi posis i perquè l’oficial segueix l’Ordre EHA/2899/2011 amb els seus supòsits. Serveix per comparar ofertes entre si amb els mateixos criteris."
+          }
+        },
+        {
+          "p": {
+            "es": "¿Qué Euríbor usa?",
+            "ca": "Quin Euríbor fa servir?"
+          },
+          "r": {
+            "es": "El último dato mensual publicado, que puedes cambiar, y escenarios de −1 a +3 puntos.",
+            "ca": "L’últim valor mensual publicat, que pots canviar, i escenaris de −1 a +3 punts."
+          }
+        }
       ]
     },
     {
@@ -339,6 +615,80 @@
           "pdf": 2,
           "alt": {
             "es": "Guía rápida en PDF"
+          }
+        }
+      ],
+      "descripcion": {
+        "es": "Excel en español para tus taxes de 2026: impuesto federal y estatal, self-employment tax del 1099, pagos estimados con fechas, checklist y glosario. 7.99 $."
+      },
+      "titular": {
+        "es": "Que abril no te pille sin el dinero de los taxes"
+      },
+      "incluye": [
+        {
+          "t": {
+            "es": "Impuesto federal 2026"
+          },
+          "d": {
+            "es": "Form 1040 y Schedule SE paso a paso: AGI, deducción estándar, QBI, tramos y crédito por hijos."
+          }
+        },
+        {
+          "t": {
+            "es": "Impuesto estatal"
+          },
+          "d": {
+            "es": "20 estados, de California a Nueva York, con sus tramos y créditos (y los que no tienen impuesto sobre la renta, como Texas o Florida)."
+          }
+        },
+        {
+          "t": {
+            "es": "Pagos estimados del 1099"
+          },
+          "d": {
+            "es": "Cuánto pagar cada trimestre, el mínimo sin multa y las fechas de 2026 y 2027."
+          }
+        },
+        {
+          "t": {
+            "es": "Checklist de documentos"
+          },
+          "d": {
+            "es": "W-2, 1099, 1098, créditos y gastos del negocio, para marcar."
+          }
+        },
+        {
+          "t": {
+            "es": "Glosario en español"
+          },
+          "d": {
+            "es": "Más de 30 términos del IRS explicados sin jerga."
+          }
+        },
+        {
+          "t": {
+            "es": "Guía rápida en PDF"
+          },
+          "d": {
+            "es": "Cómo usarlo en diez minutos."
+          }
+        }
+      ],
+      "faq": [
+        {
+          "p": {
+            "es": "¿Sirve si trabajo con W-2 y 1099 a la vez?"
+          },
+          "r": {
+            "es": "Sí. Pon tu salario y retención del W-2 y tus ingresos y gastos del 1099: calcula el self-employment tax descontando el tope del Seguro Social que ya pagaste."
+          }
+        },
+        {
+          "p": {
+            "es": "¿Es del IRS?"
+          },
+          "r": {
+            "es": "No. ChequeClaro es independiente: no somos el IRS ni ninguna agencia del gobierno. Usamos las cifras oficiales de 2026 del IRS y de cada estado."
           }
         }
       ]

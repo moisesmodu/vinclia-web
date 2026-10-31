@@ -42,7 +42,7 @@ for (const sitio of readdirSync('sitios')) {
     if (t) { if (titulos[t]) err(`${sitio}: título repetido «${t}»`); titulos[t] = 1; }
     if (/NaN|undefined|\[object Object\]/.test(h.replace(/<script[\s\S]*?<\/script>/g, ''))) err(`${p}: contiene NaN/undefined`);
     for (const [, href] of h.matchAll(/href="(\/[^"#?]*)/g)) {
-      if (/\.(csv|xml|txt|svg|woff2|js|css)$/.test(href)) { if (!existsSync(dist + href)) err(`${p}: recurso inexistente ${href}`); continue; }
+      if (/\.(csv|xml|txt|svg|woff2|js|css|xlsx|pdf|webp|png|jpg|json)$/.test(href)) { if (!existsSync(dist + href)) err(`${p}: recurso inexistente ${href}`); continue; }
       if (!rutas.has(href)) err(`${p}: enlace interno roto ${href}`);
     }
   }

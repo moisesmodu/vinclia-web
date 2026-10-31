@@ -4,6 +4,10 @@ import Base from '../layouts/Base.astro';
 import Calculadora from '../components/Calculadora.astro';
 import Anuncio from '../components/Anuncio.astro';
 import Afiliado from '../components/Afiliado.astro';
+import ProductoPropio from '../components/ProductoPropio.astro';
+import PaginaProducto from '../components/PaginaProducto.astro';
+import PaginaDescarga from '../components/PaginaDescarga.astro';
+import { producto, precio, capturas, enlacePago, tx } from '../lib/productos';
 import { paginas, url, absoluta, alterna, buscar, fichasSitio, rellenar, type Pagina } from '../lib/rutas';
 import { sitio, SITIO_ID, LANGS } from '../lib/sitio';
 import { texto } from '../lib/contenido';
@@ -174,6 +178,22 @@ if (p.tipo === 'inicio') {
     { '@context': 'https://schema.org', '@type': 'CollectionPage', name: col.titulo[lang], url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, publisher: editor, dateModified: hoy },
     miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: p.ruta }]),
   ];
+} else if (p.tipo === 'producto') {
+  // Página de venta de un producto propio (productos.json)
+  const pr = producto(p.id)!;
+  titulo = `${tx(pr.nombre, lang)} ${lang === 'es' ? 'en Excel y PDF' : 'en Excel i PDF'} (${precio(pr, lang)})`;
+  descripcion = tx(pr.descripcion, lang);
+  const cap = capturas(pr)[0];
+  jsonld = [
+    { '@context': 'https://schema.org', '@type': 'Product', name: tx(pr.nombre, lang), description: descripcion, ...(cap ? { image: absoluta('') + cap.webp['1280'] } : {}), brand: { '@type': 'Brand', name: sitio.nombre },
+      offers: { '@type': 'Offer', price: pr.precio.toFixed(2), priceCurrency: pr.moneda.toUpperCase(), availability: enlacePago(pr) ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder', url: absoluta(p.ruta), seller: editor } },
+    miga([{ n: u.inicio, r: inicio.ruta }, { n: tx(pr.nombre, lang), r: p.ruta }]),
+  ];
+} else if (p.tipo === 'descarga') {
+  // Descarga tras el pago: noindex y fuera del sitemap
+  const pr = producto(p.id)!;
+  titulo = `Descarga: ${tx(pr.nombre, 'es')}`;
+  descripcion = `Página privada de descarga de ${tx(pr.nombre, 'es')} tras la compra.`;
 } else {
   const l = legal(p.id, lang, hoy);
   titulo = l.titulo; descripcion = l.descripcion; actual = p.id === 'sobre' ? 'sobre' : undefined;
@@ -184,7 +204,7 @@ const v = vista;
 // Texto del enlace a una página programática: la columna «etiqueta» del CSV si existe; si no, bruto o comunidad.
 const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqueta || (x.fila!.bruto ? fmt(+x.fila!.bruto, 'eur0', lang) : x.fila!.ccaa ? nombreComunidad(x.fila!.ccaa, lang) : x.ruta);
 ---
-<Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual} tipo={p.tipo}>
+<Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={p.ruta} alternas={alternas} jsonld={jsonld} actual={actual} tipo={p.tipo} noindex={p.tipo === 'descarga'}>
   {p.tipo === 'inicio' && (
     <>
       <section class="portada">
@@ -290,6 +310,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       </ul>
       {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
+      <ProductoPropio calc={p.id} lang={lang} />
       <Afiliado calc={p.id} lang={lang} />
       <Anuncio posicion="bajoResultado" lang={lang} />
       <div class="calc-doc">
@@ -425,6 +446,9 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       <Anuncio posicion="finContenido" lang={lang} />
     </>
   )}
+
+  {p.tipo === 'producto' && <PaginaProducto id={p.id} lang={lang} />}
+  {p.tipo === 'descarga' && <PaginaDescarga id={p.id} lang={lang} />}
 
   {p.tipo === 'legal' && (
     <div class="estrecho legal">

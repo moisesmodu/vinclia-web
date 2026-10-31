@@ -1,0 +1,28 @@
+---
+// Bloque «Producto propio» bajo el resultado: nuestro producto de pago, con frase concreta, precio y enlace a su página.
+// Va antes del de afiliado y, si sale, el de afiliado no (Afiliado.astro): como máximo un bloque comercial por página.
+// Solo aparece si el producto se puede comprar ya (hay Payment Link en su variable).
+import '../styles/producto.css';
+import { productoPara, precio, capturas, tx } from '../lib/productos';
+import { url, buscar } from '../lib/rutas';
+import { sitio } from '../lib/sitio';
+import type { Lang } from '../lib/def';
+interface Props { calc: string; lang: Lang }
+const { calc, lang } = Astro.props;
+const p = productoPara(calc);
+const pag = p ? buscar(`producto:${p.id}`, lang) ?? buscar(`producto:${p.id}`, 'es') : undefined;
+const img = p ? capturas(p)[0] : undefined;
+const es = lang === 'es';
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+---
+{p && pag && (
+  <aside class="propio" aria-label={`${es ? 'Producto de' : 'Producte de'} ${sitio.nombre}`}>
+    <p class="propio-et"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.3l-3.8 2 .7-4.3-3.1-3 4.3-.6z" fill="currentColor"/></svg>{`De ${sitio.nombre} · ${es ? 'Producto propio' : 'Producte propi'}`}</p>
+    <p class="propio-t">{tx(p.frase, lang)}</p>
+    <div class="propio-pie">
+      <span class="propio-precio">{precio(p, lang)}<small>{p.moneda === 'usd' ? 'Pago único · descarga inmediata' : es ? 'Pago único · IVA incluido' : 'Pagament únic · IVA inclòs'}</small></span>
+      <a class="propio-cta" href={url(pag.ruta)} data-producto={p.id}>{tx(p.cta, lang)} <span aria-hidden="true">→</span></a>
+    </div>
+    {img && <img class="propio-img" src={`${base}/${img.webp['640']}`} width="640" height={Math.round(img.alto * 640 / img.ancho)} alt="" loading="lazy" decoding="async" />}
+  </aside>
+)}

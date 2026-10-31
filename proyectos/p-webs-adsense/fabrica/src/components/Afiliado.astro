@@ -1,11 +1,13 @@
 ---
 // Recomendación patrocinada bajo el resultado, separada de AdSense y marcada como publicidad.
+// Si la calculadora ofrece un producto propio que ya se puede comprar, no sale: un bloque comercial por página.
 import { afiliadoPara } from '../lib/afiliados';
+import { productoPara } from '../lib/productos';
 import { url, buscar } from '../lib/rutas';
 import type { Lang } from '../lib/def';
 interface Props { calc: string; lang: Lang }
 const { calc, lang } = Astro.props;
-const a = afiliadoPara(calc);
+const a = productoPara(calc) ? null : afiliadoPara(calc);
 const sobre = buscar('legal:sobre', lang);
 const es = lang === 'es';
 ---
