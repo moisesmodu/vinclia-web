@@ -75,8 +75,9 @@ LanguageTool en local sin descargar de languagetool.org (bloqueado): `apache-mav
 con `org.languagetool:languagetool-server:6.8` y `language-ca:6.8`, después `java -cp "jars/*" org.languagetool.server.HTTPServer --port 8081`.
 En producción se usa la API pública (`LANGUAGETOOL_URL=https://api.languagetool.org/v2`, 20 peticiones/min); autoalojarlo cuesta ≈ 5 €/mes.
 
-## Qué se ha probado (28/10/2026)
-- `npm run build` limpio (≈ 130 páginas estáticas + 23 rutas de API) y `tsc` sin errores.
+## Qué se ha probado (31/10/2026)
+- `npm run build` limpio, `tsc` sin errores y `npm test` (17 pruebas del motor: probabilidad, θ, dictado, reglas, racha, plan).
+- Auditoría completa en `AUDITORIA.md` (técnica, código, mercado, visual) con el estado de cada hallazgo en su sección 8.
 - `scripts/e2e.mjs` en Pixel 7 emulado **en local (modo demo, sin claves)** y **en producción** (https://aprova-catala.vercel.app, Neon y Stripe
   de prueba): entrada en 3 pantallas, diagnóstico completo con «Per què?», resultado con probabilidad, Hoy con compromiso y racha, minisesión,
   mapa, **simulacro de C1 completo** (redacción corregida + 45 ítems) con resultado, escribir, oral, convocatorias, precios, guía SEO, castellano,

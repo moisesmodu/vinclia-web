@@ -1091,6 +1091,10 @@
       {
         "fecha": "2026-10-30",
         "texto": "Auditoría completa (AUDITORIA.md + auditoria/*): técnica de producción (Lighthouse 89–99/96/100/100, 104 rutas OK), código y seguridad (TTS abierto, cuotas evitables, pase rejugable, probabilidad mal calibrada), mercado con fuentes (C1 DPL 2.048 presentados y 41 % aptos en 2023; C2 13.068 inscritos 2026; competidor directo Catfy). Veredicto: beta temprana, viable como producto complementario; no cobrar hasta cerrar fases 0–2"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Arreglados todos los hallazgos de la auditoría que eran arreglos (seguridad y pagos, probabilidad y motor, contenido, interfaz, accesibilidad y SEO) y redesplegado; 17 tests unitarios; e2e local y producción verdes. Pendiente lo que es producto nuevo: C2, más ítems, prueba de validez (AUDITORIA.md §8)"
       }
     ],
     "proximos": [

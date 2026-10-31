@@ -198,3 +198,33 @@ Datos DPL 2024–2026 por nivel (no publicados; pedir por transparencia); volúm
 la validez de la corrección frente a un profesor (requiere la prueba); el comportamiento con usuarios reales (no hay analítica instalada:
 instalar Vercel Analytics o Plausible antes de la prueba); el audio sintetizado y Whisper (sin proveedor configurado); la compatibilidad
 con iOS Safari real (solo Chromium emulado).
+
+## 8. Estado tras los arreglos (31/10/2026)
+
+Todo lo que era un arreglo está hecho y desplegado en https://aprova-catala.vercel.app; lo que es producto nuevo (C2, 250 ítems, prueba
+de validez con candidatos) sigue pendiente y es lo único que separa la app del cobro real.
+
+| Hallazgo | Estado |
+|---|---|
+| TTS de texto libre sin límite | **Cerrado**: solo ids del banco o la frase de demo fija; límite por IP y anónimo; timeouts |
+| Cuotas evitables (cookie, `context`, `inici`) | **Cerrado**: cookie anónima firmada, conteo atómico en SQL, diagnóstico exento una vez al mes, simulacro con inicio comprobado |
+| Pase rejugable, sin idempotencia ni reembolsos | **Cerrado**: tabla `Pagament`, `fins = max(actual, creado + 92 d)`, `livemode`, reembolso, disputa y baja de suscripción (eventos añadidos al webhook de Stripe) |
+| Limitador en memoria | **Cerrado**: tabla `Limit` compartida entre instancias; en demo local sigue en memoria |
+| Sin CSP ni X-Frame-Options | **Cerrado** (CSP con `'unsafe-inline'` en scripts: un nonce rompería el renderizado estático) |
+| Validesa falseable | **Cerrado**: 20 códigos aleatorios y clave de profesor en variables de Vercel; textos con caducidad de 90 días |
+| Ítems premium en el HTML y en la caché | **Cerrado**: ítems por API tras inicio autorizado; service worker sin rutas privadas y vaciado al salir |
+| Sesión sin revocación, secreto derivado, `PAGO_DEMO` | **Cerrado**: `AUTH_SECRET` obligatorio, versión de sesión, salir de todos los dispositivos, demo solo fuera de producción |
+| Probabilidad mal calibrada y oral inventado | **Cerrado**: simulación con condiciones efectivas (candidato en los mínimos ≈ 40 %), sin oral se da la probabilidad de la parte escrita y se dice |
+| Dictado tolerante, reglas con falsos positivos, nota fiable sin LanguageTool | **Cerrado**: tolerancia 0, reglas corregidas y las inseguras como «posible error», aviso cuando LanguageTool falla |
+| Racha, plan a 200 días, estado «el último gana» | **Cerrado**: tope de congelaciones, plan hasta la convocatoria, fusión por campo |
+| RGPD y legal | **Cerrado** salvo el NIF: borrado de cuenta, baja de alertas, texto ODR retirado; `LEGAL_NIF` lo pone Moisés |
+| Contraste, botón ilegible, aria, hreflang, canonical, OG, h1, sitemap, favicon, preus dinámico, 401 en consola | **Cerrado** |
+| Listas como hojas, convocatoria pasada, mapa con n=1, Hoy, pie, concordancias, cifra del C1, pase como oferta | **Cerrado** |
+| 7 ítems discutibles, B2 puntuación con 1 ítem, redacciones repetidas en los simulacros | **Cerrado** (8 ítems nuevos de puntuación; 400 ítems) |
+| Tests unitarios | **Cerrado**: 17 pruebas del motor (`npm test`) |
+| Dependencias con avisos (postcss vía Next, deepmerge-ts vía Prisma) | **Abierto**: solo se cierran con Next 16 y Prisma 7 |
+| C2, 250 ítems para 8 por punto, revisión humana, prueba de validez, analítica | **Abierto** (producto nuevo, no arreglo) |
+
+Verificación: `tsc` y `next build` limpios, `npm test` 17/17, prueba de punta a punta en Pixel 7 en local y en producción (registro y Checkout
+incluidos) sin errores de JavaScript. Variables nuevas en Vercel: `VALIDESA_CLAU`, `VALIDESA_CODIS`; `AUTH_SECRET` ya existía. Las sesiones
+abiertas antes del despliegue caducan (formato de token nuevo).

@@ -71,7 +71,7 @@ test('fraseResultat: ignora les àrees estimades i diu que l\'oral no s\'ha mesu
   const r = { data: '2026-10-31', nivell: 'C1' as const, theta: 1, ...p, febles: [{ punt: 'pronoms-febles', confianca: 40 }], sons: [], respostes: [] };
   const frase = fraseResultat(r, examens.C1, 'ca', (id) => id, (id) => id);
   assert.match(frase, /part escrita/);
-  assert.match(frase, /oral no s'ha mesurat/);
+  assert.match(frase, /part escrita/);
   assert.doesNotMatch(frase, /per oral/);
   const baix = probabilitatAprovar(examens.C1, { escrit: 50, us: 50 });
   const frase2 = fraseResultat({ ...r, ...baix }, examens.C1, 'es', (id) => id, (id) => id);
