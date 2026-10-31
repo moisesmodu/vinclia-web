@@ -148,8 +148,9 @@ Refuerzo: artículo nuevo (M-05) y vídeo 1 (M-06). Pico de demanda: inscripció
 | Cuentas de marca en Instagram y TikTok (Lunilla primero) | G, A, Juegos | Moisés | `PARA-MOISES.md` |
 | Alta de afiliado en Xolo | P | Moisés (formulario, 5 min) | `PARA-MOISES.md` |
 | itch.io en público | Juegos | Moisés (1 clic) | `PARA-MOISES.md` |
-| Dominios propagados → Search Console y AdSense | P, A, N, B, G | Sesión del Mac | `DESPLIEGUES.md` |
-| Analítica sin cookies activa en A, B y M | A, B, M | Sesiones de proyecto (PR pequeño) | `MEDICION.md` §3 |
+| Dominios: ya son la URL canónica en A, N, G y P (31/10); Plaça necesita `NEXT_PUBLIC_URL=https://oposita.digital` y redespliegue | B | Sesión del Mac | `SEO.md` §4 |
+| Search Console: 6 propiedades de dominio; Moisés pega los 6 valores TXT y Claude los pone en el DNS | Todos con dominio | Moisés (2 min por dominio) + `scripts/search-console-txt.mjs` | `PARA-MOISES.md` tarea 3 |
+| Redesplegar las 7 webs con el código SEO (analítica, verificación, artículos, enlaces cruzados) | Todos | Sesión del Mac (esta sesión no tiene permiso de despliegue) | `SEO.md` §4 |
 | Prueba de validez | M | Moisés (visita a academias) + sesión de M | `piezas/m-catala/semana-1.md` |
 
 ## 5. Cómo se decide cada lunes (ciclo de `TAREA-PROGRAMADA.md`)

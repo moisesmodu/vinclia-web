@@ -207,3 +207,73 @@ son las de mayor estacionalidad para noviembre y diciembre.
   con más de 100 impresiones y CTR < 2 % cambia de título y meta esa misma semana.
 - Una búsqueda de la lista sin impresiones en 6 semanas se da por mal elegida y se sustituye.
 - Las páginas «Nueva» con pieza asignada se publican en el PR de la semana en que se aprueba la pieza.
+
+## 4. Indexación: estado del 31/10 y lo que falta para que Google vea las 6 webs con su dominio
+
+### 4.1 Dónde estamos
+
+| Web | Dominio | Canonical y sitemap en producción | Analítica en el código | Qué falta |
+|---|---|---|---|---|
+| A · CCSE en tu idioma | ccsefacil.com | ✅ ya con el dominio (sesión del Mac, 31/10) | commit SEO en `claude/a-ccse` | redesplegar; Search Console |
+| N · Nuevo en España | tuspapeles.app | ✅ | commit SEO en `claude/n-nuevo-en-espana` | redesplegar; Search Console |
+| B · Plaça | oposita.digital | ❌ sigue `placa-oposicions.vercel.app` | commit SEO en `claude/proyecto-b-oposiciones` | `NEXT_PUBLIC_URL=https://oposita.digital` en Vercel + redesplegar; Search Console |
+| G · Lunilla | lunilla.cat | ✅ | commit SEO en `claude/g-cuentos` | redesplegar; Search Console |
+| P · NetoClaro | netoclaro.app | ✅ | commit SEO en `claude/p-webs-adsense-fabrica` | redesplegar; Search Console; AdSense |
+| P · ImpuestoClaro | impuestoclaro.es | ✅ | ídem | redesplegar; Search Console; AdSense |
+| Juegos · Nuvolet | (sin dominio) juegos-casuales.vercel.app | ✅ | commit SEO en `claude/juegos-primer-juego` | redesplegar; Search Console con la URL de Vercel |
+| M · Aprova | (sin dominio) aprova-catala.vercel.app | ✅ | commit SEO en `claude/m-catala` | redesplegar; Search Console tras la validez |
+
+Los `*.vercel.app` **no se redirigen** al dominio: la app Android de A (TWA con assetlinks) y los webhooks de Stripe de
+A, N, B y G apuntan a esas direcciones y un 301 los rompería. El `canonical` y el sitemap con el dominio bastan para que
+Google indexe solo el dominio. Los proyectos de Vercel no están enlazados a GitHub: un push a la rama no despliega; hay
+que desplegar con el CLI.
+
+### 4.2 Lo que hace la sesión del Mac (esta sesión no tiene permiso de despliegue en producción)
+
+Desde la raíz del repositorio, con la rama de cada proyecto comprobada (`git fetch && git checkout <rama>`):
+
+```bash
+T="--token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID"
+# B: primero la URL canónica
+npx vercel@latest env rm NEXT_PUBLIC_URL production --yes $T; printf 'https://oposita.digital' | npx vercel@latest env add NEXT_PUBLIC_URL production $T
+# Despliegue de cada web (el Root Directory ya está configurado en cada proyecto de Vercel)
+for p in ccse-en-tu-idioma:claude/a-ccse nuevo-en-espana:claude/n-nuevo-en-espana placa-oposicions:claude/proyecto-b-oposiciones \
+         lunilla:claude/g-cuentos juegos-casuales:claude/juegos-primer-juego aprova-catala:claude/m-catala; do
+  git checkout "${p#*:}" && npx vercel@latest link --yes --project "${p%%:*}" $T && npx vercel@latest deploy --prod --yes $T
+done
+# P: dos proyectos desde la misma rama
+git checkout claude/p-webs-adsense-fabrica
+for p in netoclaro impuestoclaro; do npx vercel@latest link --yes --project $p $T && npx vercel@latest deploy --prod --yes $T; done
+```
+
+Comprobación después de cada despliegue: `curl -s https://<dominio>/ | grep -o '<link rel="canonical"[^>]*>'` debe
+mostrar el dominio, y `curl -s https://<dominio>/ | grep -c '_vercel/insights'` debe dar 1.
+
+### 4.3 Search Console (Moisés, 2 minutos por dominio) y sitemaps
+
+1. Moisés añade una propiedad de tipo **Dominio** por cada uno de los 6 dominios y pega el valor
+   `google-site-verification=…` en el chat (`PARA-MOISES.md`, tarea 3).
+2. Claude ejecuta `node scripts/search-console-txt.mjs <dominio> <valor>` (TXT en los DNS de Vercel) y avisa.
+3. Moisés pulsa «Verificar» y en «Sitemaps» añade `https://<dominio>/sitemap.xml`:
+
+| Dominio | Sitemap | URL indexables aprox. |
+|---|---|---|
+| ccsefacil.com | https://ccsefacil.com/sitemap.xml | 8 idiomas × (portada, examen, simulacro, temas, 5 tareas, ~20 guías) + 300 preguntas ≈ 560 |
+| tuspapeles.app | https://tuspapeles.app/sitemap.xml | 8 idiomas × (portada, precios, preguntas, 8 guías) + 30 preguntas ≈ 118 |
+| oposita.digital | https://oposita.digital/sitemap.xml | 246 (tras el redespliegue con el dominio) |
+| lunilla.cat | https://lunilla.cat/sitemap.xml | ≈ 40 |
+| netoclaro.app | https://netoclaro.app/sitemap.xml | ≈ 560 |
+| impuestoclaro.es | https://impuestoclaro.es/sitemap.xml | ≈ 240 |
+
+4. Para Juegos y Aprova se añade una propiedad de **prefijo de URL** con la dirección de Vercel y se verifica con la
+   variable `GOOGLE_SITE_VERIFICATION` (meta en el HTML, ya prevista en el código) y un redespliegue.
+5. Bing: Bing Webmaster Tools → «Importar desde Search Console» (un clic, las 6 webs).
+6. Primeras 48 horas: en cada propiedad, «Inspección de URL» → «Solicitar indexación» de la portada y de las 3 páginas
+   más importantes de cada web (las de la tabla del §1 con prioridad de compra). Son 10 inspecciones al día como máximo
+   por propiedad: la tarea semanal lleva la cuenta.
+
+### 4.4 Qué miramos la semana que viene
+
+Páginas indexadas por propiedad (informe «Páginas»), impresiones y consultas (informe «Rendimiento»), errores de
+rastreo. Con 6 dominios nuevos lo normal es ver impresiones en 7–14 días y clics en 3–6 semanas; mientras, el tráfico
+viene de las comunidades (`CALENDARIO.md`).

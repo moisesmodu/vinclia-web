@@ -21,24 +21,26 @@ mismo enlace salvo que la pieza sea de un afiliado.
 
 | Proyecto | Visitas y origen | Pasos del embudo | Pagos y clientes | Estado hoy |
 |---|---|---|---|---|
-| A · CCSE | **Nada** hasta activar Umami o Vercel Web Analytics | `Usuario.checkoutIniciado` en la base de datos | Stripe, `metadata.proyecto=a-ccse`; `Usuario.recuperacionEnviada` | ⚠️ sin visitas: pedir a la sesión de A un PR con analítica (sección 3) |
-| N · Nuevo en España | Plausible cuando esté `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`; mientras, Vercel (visitas totales) | Eventos `checkout` y `pago`; `/precios?desde=guia-gratis` | Stripe, `metadata.proyecto=n-nuevo-en-espana` | ⚠️ Plausible no activo |
-| B · Plaça | **Nada** hasta activar analítica | Tests gratis terminados y clics en «Desbloquejar» (base de datos) | Stripe, `metadata.proyecto=b-oposiciones`; bajas | ⚠️ sin visitas |
+| A · CCSE | Vercel Web Analytics (activado en Vercel el 31/10; el código lo carga desde el commit SEO de la rama `claude/a-ccse`, pendiente de redesplegar) | `Usuario.checkoutIniciado` en la base de datos | Stripe, `metadata.proyecto=a-ccse`; `Usuario.recuperacionEnviada` | 🟡 visitas desde el redespliegue |
+| N · Nuevo en España | Vercel Web Analytics (código en `claude/n-nuevo-en-espana`, pendiente de redesplegar); Plausible opcional | Eventos `checkout` y `pago`; `/precios?desde=guia-gratis` | Stripe, `metadata.proyecto=n-nuevo-en-espana` | 🟡 visitas desde el redespliegue |
+| B · Plaça | Vercel Web Analytics (código en `claude/proyecto-b-oposiciones`, pendiente de redesplegar) | Tests gratis terminados y clics en «Desbloquejar» (base de datos) | Stripe, `metadata.proyecto=b-oposiciones`; bajas | 🟡 visitas desde el redespliegue |
 | G · Lunilla | Vercel Web Analytics (sin cookies) | `GET /api/admin/resumen?dias=7`: borradores, vistas previas, checkouts, pagos, recordatorios, afiliadas | Stripe + panel `/admin` | ✅ completo |
 | P · Claro | Umami (páginas vistas por calculadora) + Search Console cuando haya dominio | Clics en los bloques de afiliación (`AFILIADO_*`) | AdSense (RPM, ingresos) y paneles de afiliados (Xolo, Qonto, Quipu) | ⚠️ Search Console y AdSense esperan al dominio |
 | Juegos · Nuvolet | Panel de desarrollador de CrazyGames, Poki, GameDistribution, GameMonetize; itch.io (vistas, descargas, propinas); Vercel para la web propia | Partidas, minutos medios, retención D1, valoración | Informes mensuales de cada portal (Moisés los deja en `proyectos/juegos/datos/`) | ⚠️ hasta que CrazyGames decida |
-| M · Aprova | **Nada** hasta activar analítica | Diagnósticos empezados y acabados (base de datos) | Stripe (modo prueba hasta la validez) | ⏸ tras la validez |
+| M · Aprova | Vercel Web Analytics (código en `claude/m-catala`, pendiente de redesplegar) | Diagnósticos empezados y acabados (base de datos) | Stripe (modo prueba hasta la validez) | ⏸ tras la validez |
 
 Stripe de toda la cartera: cuenta Numi Mates, filtro por `metadata.proyecto`. El conector de Stripe de la sesión madre
 lee sin problema; con eso se rellena la columna «Pagos» de todos los proyectos cada lunes sin pedir nada a nadie.
 
-## 3. Lo que falta para medir visitas (un PR pequeño por proyecto, sin tocar el pago)
+## 3. Analítica de visitas: hecha en el código, pendiente de redesplegar (31/10)
 
-Vercel Web Analytics es gratuito en el plan Pro y no usa cookies: `@vercel/analytics` en el `layout` de Next.js (A, N,
-B, M) o el script en el HTML estático (P y Juegos ya tienen Umami o lo pueden añadir). Captura `utm_*` y la ruta. Es el
-primer encargo de la tarea semanal a cada sesión de proyecto, porque sin visitas por canal no se puede saber qué canal
-funciona. Hasta entonces, la medición de la semana 1 se hace con lo que hay: pagos (Stripe), checkouts abiertos (base
-de datos de A, N y B), vistas previas (G) y visitas totales de Vercel (todos).
+Vercel Web Analytics (gratuito en Pro, sin cookies, captura `utm_*` y la ruta) está **activado en los 8 proyectos de
+Vercel** y la sesión de marketing ha añadido su carga al código de las 7 webs en sus ramas (`@vercel/analytics` en los
+layouts de Next.js; el script `/_vercel/insights/script.js` en los HTML estáticos de P y Juegos). Empieza a contar en
+cuanto la sesión del Mac redespliegue cada proyecto (comandos en `SEO.md` §4). Hasta entonces, la medición de la
+semana 1 se hace con lo que hay: pagos (Stripe), checkouts abiertos (base de datos de A, N y B), vistas previas (G) y
+visitas totales de Vercel (todos). Los paneles se leen en vercel.com → proyecto → Analytics (Moisés) o por la API de
+Vercel con `VERCEL_TOKEN` (la tarea semanal).
 
 ## 4. Tabla semanal (la rellena la tarea del lunes; una fila por proyecto y semana)
 
