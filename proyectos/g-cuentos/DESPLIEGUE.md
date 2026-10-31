@@ -38,7 +38,7 @@ precio si bajaba de 9 €. El paso 6 lo confirma con la cotización real; si sal
 | `GELATO_MODO` | `borrador` (cambiar a `produccion` solo después del paso 7 correcto) |
 | `ANTHROPIC_API_KEY` | opcional; sin ella el texto sale de la plantilla |
 | `ADMIN_TOKEN` | `openssl rand -hex 24` (guardarlo también como secreto del entorno de las tareas programadas) |
-| `URL_BASE` | la URL de producción, p. ej. `https://lunilla.vercel.app` |
+| `URL_BASE` | la URL de producción: **`https://lunilla.cat`** (dominio propio desde el 31/10/2026; antes `https://lunilla.vercel.app`) |
 | `BLOB_READ_WRITE_TOKEN`, `CRON_SECRET` | los crea Vercel (pasos 3 y 4) |
 
 ## Pasos
@@ -172,3 +172,21 @@ En producción (`VERCEL_ENV=production`) el webhook de Stripe ya **no** acepta e
 `STRIPE_WEBHOOK_SECRET` responde 400 y el pedido no avanza. Comprobar que la variable existe en Vercel (production) antes
 de redesplegar (`vercel env ls production | grep STRIPE_WEBHOOK_SECRET`). El simulador de pago está desactivado en
 producción. La columna nueva `bloqueoHasta` (cerrojo por pedido) la crea `prisma db push` en el build.
+
+## Dominio propio y SEO (31/10/2026)
+
+- **URL pública: https://lunilla.cat** (`www.lunilla.cat` redirige al apex). `URL_BASE=https://lunilla.cat` en Vercel, puesto por la
+  sesión del Mac: canonical, `hreflang`, `robots.txt` y `sitemap.xml` ya salen con el dominio.
+- **`lunilla.vercel.app` sigue sirviendo sin redirección**, a propósito: el webhook de Stripe está registrado en esa URL y Stripe no
+  sigue redirecciones en los POST. La etiqueta `canonical` evita el contenido duplicado. Cuando se cambie el webhook al dominio
+  (`scripts/stripe-configurar.mjs` con `URL_BASE=https://lunilla.cat`), se podrá añadir la redirección 308 en Vercel.
+- **Vercel Web Analytics** (sin cookies) activado en el proyecto `lunilla` y cargado desde `src/app/layout.tsx` (`@vercel/analytics`).
+- **Search Console:** dos caminos. (a) Moisés añade la propiedad de dominio `lunilla.cat`, copia el valor `google-site-verification=…`
+  y la sesión del Mac crea el registro TXT en los DNS de Vercel (`vercel dns add lunilla.cat @ TXT "google-site-verification=…"`).
+  (b) Propiedad de prefijo de URL con la etiqueta HTML: poner `GOOGLE_SITE_VERIFICATION=<valor>` en Vercel (production) y redesplegar;
+  el `layout` emite la `<meta name="google-site-verification">` solo si la variable existe. Después, enviar `https://lunilla.cat/sitemap.xml`.
+- **Páginas SEO nuevas (31/10):** `/cuentos/regalos-navidad-ninos-3-a-6-anos-no-juguetes` (es) y `/ca/contes/llibre-personalitzat-tapa-dura`
+  (ca, emparejada por `hreflang` con `/cuentos/libro-personalizado-tapa-dura-ninos`). Todas las páginas SEO llevan ahora datos
+  estructurados `Product` con precio y moneda además de `FAQPage`; la portada tiene la pregunta «¿Cuánto cuesta?».
+- Redespliegue necesario para publicar estos cambios: `cd proyectos/g-cuentos && npx vercel@latest deploy --prod --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID`
+  (o `vercel redeploy` del último despliegue de producción del proyecto `lunilla`).

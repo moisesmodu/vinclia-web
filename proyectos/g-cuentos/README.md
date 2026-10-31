@@ -15,6 +15,8 @@ incluido, con el PDF de regalo)**. Fecha objetivo de apertura: **15/11/2026**.
 - Afiliadas al 20 %: `/afiliados`, `/ca/afiliades`, enlaces `/r/<código>`, panel `/afiliados/panel?t=…`.
 - Administración: `/admin?t=ADMIN_TOKEN`.
 
+**URL pública:** https://lunilla.cat (desde el 31/10/2026; `lunilla.vercel.app` sigue activo sin redirección por el webhook de Stripe). Detalles de SEO y Search Console en `DESPLIEGUE.md`.
+
 ## Cómo funciona
 
 ```
