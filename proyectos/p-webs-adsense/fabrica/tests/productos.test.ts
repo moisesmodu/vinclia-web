@@ -118,3 +118,47 @@ describe.skipIf(!hayLibreOffice)('Kit del autónomo 2027: el Excel reproduce los
     });
   }
 });
+
+/* ------------------------------------------------------------------ Pack despido y finiquito */
+
+const P26 = params('es', 2026);
+const MOTIVOS: Record<string, string> = {
+  temporal: 'Fin de contrato temporal (12 días por año)', objetivo: 'Despido objetivo o ERE (20 días por año)', improcedente: 'Despido improcedente (33 días; 45 antes de 2012)',
+};
+interface CasoDespido { id: string; sal: number; pagas: 12 | 14; inicio: string; fin: string; notif: string; disfrutadas: number; vac: number; devengo: 'semestral' | 'anual'; tipo: 'temporal' | 'objetivo' | 'improcedente'; bruto?: number; ccaa: string }
+const DESPIDO: CasoDespido[] = [
+  { id: 'despido-improcedente-cataluna', sal: 1600, pagas: 14, inicio: '2015-03-01', fin: '2026-11-15', notif: '2026-11-13', disfrutadas: 15, vac: 30, devengo: 'semestral', tipo: 'improcedente', ccaa: 'CT' },
+  { id: 'despido-objetivo-tope-madrid', sal: 2400, pagas: 12, inicio: '2005-01-10', fin: '2026-06-30', notif: '2026-06-30', disfrutadas: 10, vac: 30, devengo: 'semestral', tipo: 'objetivo', ccaa: 'MD' },
+  { id: 'despido-antes-2012-andalucia', sal: 2100, pagas: 14, inicio: '1994-09-01', fin: '2027-02-26', notif: '2027-02-25', disfrutadas: 0, vac: 31, devengo: 'anual', tipo: 'improcedente', bruto: 32000, ccaa: 'AN' },
+];
+
+describe.skipIf(!hayLibreOffice)('Pack despido: el Excel reproduce los motores', () => {
+  let R: Record<string, Record<string, any>> = {};
+  beforeAll(() => {
+    const cal = JSON.parse(readFileSync('params/es/2027/calendario.json', 'utf8'));
+    R = recalcular(DESPIDO.map((c) => ({
+      id: c.id, xlsx: xlsx('pack-despido'),
+      poner: { SAL: c.sal, PAGAS: c.pagas, INICIO: c.inicio, FIN: c.fin, NOTIFICACION: c.notif, DISFRUTADAS: c.disfrutadas, VAC: c.vac, DEVENGO: c.devengo === 'anual' ? 'Anual' : 'Semestral',
+        MOTIVO: MOTIVOS[c.tipo], ...(c.bruto ? { BRUTO_INDEM: c.bruto } : {}), CCAA_NOMBRE: cal.comunidades[c.ccaa].n.es },
+      leer: ['F_SALMES', 'F_VAC', 'F_VERANO', 'F_NAVIDAD', 'F_TOTAL', 'I_DIAS', 'I_IMPORTE', 'PLAZO_DESPIDO', 'PLAZO_PARO', 'TOTAL_CORRESPONDE'],
+    })));
+  }, 600000);
+
+  for (const c of DESPIDO) {
+    it(`${c.id}: finiquito, indemnización y plazo de 20 días hábiles`, async () => {
+      const { sumarHabiles, lugarComunidad } = await import('../src/lib/calc/calendario');
+      const r = R[c.id];
+      const f = finiquito({ salarioMensual: c.sal, pagas: c.pagas, inicioContrato: c.inicio, fin: c.fin, vacacionesDisfrutadas: c.disfrutadas, diasVacacionesAnuales: c.vac, devengoExtras: c.devengo }, P26.laboral);
+      expect(r.F_SALMES).toBeCloseTo(f.salarioMes, 2);
+      expect(r.F_VAC).toBeCloseTo(f.importeVacaciones, 2);
+      expect(r.F_VERANO + r.F_NAVIDAD).toBeCloseTo(f.totalExtras, 2);
+      expect(r.F_TOTAL).toBeCloseTo(f.total, 2);
+      const ind = indemnizacion({ inicio: c.inicio, fin: c.fin, brutoAnual: c.bruto ?? c.sal * c.pagas, tipo: c.tipo }, P26.laboral);
+      expect(r.I_DIAS).toBeCloseTo(ind.dias, 2);
+      expect(r.I_IMPORTE).toBeCloseTo(ind.importe, 2);
+      expect(r.TOTAL_CORRESPONDE).toBeCloseTo(f.total + ind.importe, 1);
+      expect(r.PLAZO_DESPIDO).toBe(sumarHabiles(lugarComunidad(c.ccaa), c.notif, P26.laboral.despido_plazos.caducidad_dias_habiles).fin);
+      expect(r.PLAZO_PARO).toBe(sumarHabiles(lugarComunidad(c.ccaa), c.fin, P26.laboral.despido_plazos.paro_solicitud_dias_habiles).fin);
+    });
+  }
+});
