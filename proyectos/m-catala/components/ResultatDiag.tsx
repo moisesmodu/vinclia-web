@@ -18,9 +18,10 @@ export default function ResultatDiag({ idioma, resultat, examen, punts, sons, co
   return (
     <div>
       {!compacte ? <>
-        <Dial valor={resultat.probabilitat} etiqueta={d.probabilitat.toLowerCase()} llindar={llindar} />
+        <Dial valor={resultat.probabilitat} etiqueta={((resultat as { oralMesurat?: boolean }).oralMesurat === false ? t(idioma).nou.probEscrita : d.probabilitat).toLowerCase()} llindar={llindar} />
         <div className="mx-auto mt-3 flex max-w-[40ch] items-start justify-center gap-3"><Volat mida={44} postura={resultat.probabilitat >= llindar ? 'content' : 'pensa'} aterra className="mt-0.5 shrink-0" /><p className="text-left text-[19px] leading-snug">{frase}</p></div>
         <p className="mt-2 text-center text-[13px] text-terciari">{examen.curt} · {d.repetir}</p>
+        {(resultat as { oralMesurat?: boolean }).oralMesurat === false ? <p className="mx-auto mt-2 max-w-[44ch] text-center text-[14px] text-secundari">{t(idioma).nou.oralNoMesurat}</p> : null}
       </> : null}
 
       <div className={`${compacte ? '' : 'mt-8'} grid gap-5`}>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { meta } from '@/lib/meta';
 import { esIdioma, t } from '@/lib/i18n';
 import { marca, examens, nivellsActius, pais, preu, BANC, convocatories } from '@/lib/datos';
 import type { Idioma, Nivell } from '@/lib/tipos';
@@ -11,7 +12,7 @@ export const revalidate = 86400; // els comptes enrere de les inscripcions es re
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma;
-  return { title: `${marca.nombre} · ${t(l).nou.heroTitol}`, description: t(l).nou.heroText };
+  return { ...meta(l, '', t(l).nou.heroTitol, t(l).nou.heroText), title: { absolute: `${marca.nombre} · ${t(l).nou.heroTitol}` } };
 }
 
 /** Portada: el ganxo és la necessitat (taxa, mesos, plaça) amb la data real de la propera inscripció, i una pregunta real per respondre. */

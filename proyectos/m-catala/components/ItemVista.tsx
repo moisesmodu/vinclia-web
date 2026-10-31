@@ -73,8 +73,8 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
         <div className="mt-5 grid gap-2" role={aval ? undefined : 'radiogroup'}>
           {item.opcions!.map((o, i) => {
             const sel = resposta === i;
-            const cls = aval ? (i === item.resposta ? 'opcio-ok' : sel ? 'opcio-mal' : '') : '';
-            return <button type="button" key={i} role={aval ? undefined : 'radio'} aria-checked={aval ? undefined : sel} aria-pressed={aval ? undefined : sel} className={`opcio ${cls}`} onClick={() => !aval && setResposta(i)} disabled={!!aval}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>;
+            const cls = aval ? (i === item.resposta ? 'opcio-ok' : sel ? 'opcio-mal' : '') : sel ? 'opcio-sel' : '';
+            return <button type="button" key={i} role={aval ? undefined : 'radio'} aria-checked={aval ? undefined : sel} className={`opcio ${cls}`} onClick={() => !aval && setResposta(i)} disabled={!!aval}><span className="lletra" aria-hidden="true">{String.fromCharCode(97 + i)}</span><span>{o}</span></button>;
           })}
         </div>
       ) : item.tipus === 'dictat' || item.tipus === 'transformacio' ? (

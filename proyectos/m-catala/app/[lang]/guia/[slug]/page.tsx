@@ -9,7 +9,7 @@ export const generateStaticParams = () => ['ca', 'es'].flatMap((lang) => BANC.se
 export const dynamicParams = false;
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; const p = paginaSeo(slug); if (!p) return {};
-  return { title: p.titol[l], description: p.descripcio[l], keywords: p.paraulesClau[l], alternates: { canonical: `${urlBase()}/${l}/guia/${slug}`, languages: { ca: `/ca/guia/${slug}`, es: `/es/guia/${slug}` } }, openGraph: { title: p.titol[l], description: p.descripcio[l], locale: l === 'ca' ? 'ca_ES' : 'es_ES', type: 'article' } };
+  return { title: p.titol[l], description: p.descripcio[l], keywords: p.paraulesClau[l], alternates: { canonical: `${urlBase()}/${l}/guia/${slug}`, languages: { ca: `${urlBase()}/ca/guia/${slug}`, es: `${urlBase()}/es/guia/${slug}`, 'x-default': `${urlBase()}/ca/guia/${slug}` } }, openGraph: { title: p.titol[l], description: p.descripcio[l], locale: l === 'ca' ? 'ca_ES' : 'es_ES', type: 'article' } };
 }
 export default async function Pagina({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug } = await params; const idioma = (esIdioma(lang) ? lang : 'ca') as Idioma; const p = paginaSeo(slug); if (!p) notFound();

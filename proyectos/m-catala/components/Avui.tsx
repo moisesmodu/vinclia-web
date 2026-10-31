@@ -68,10 +68,13 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
   return (
     <div>
       <p className="text-[15px] text-secundari">{fmt(avui, idioma, { weekday: 'long', day: 'numeric', month: 'long' })}</p>
-      <div className="mt-3 flex flex-wrap items-end gap-x-6 gap-y-2">
-        <div><span className="num text-[44px] leading-none">{estat.diagnostic.probabilitat}<span className="text-[22px]">%</span></span><span className="block text-[13px] text-secundari">{d.probabilitat}</span></div>
-        <div className="flex items-center gap-1.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="#E03A2F" aria-hidden="true"><path d="M12 2c1 4 5 5 5 11a5 5 0 0 1-10 0c0-2 1-3 1-3s1 2 2 2c0-4-1-6 2-10z" /></svg><span className="num text-[22px] leading-none">{ratxa.dies}</span><span className="text-[13px] text-secundari">{ratxa.dies === 1 ? (idioma === 'ca' ? 'dia' : 'día') : d.dies} · {n.congelacionsRestants(Math.max(0, 2 - ratxa.congelacionsMes))}</span></div>
-        {diesProva !== null ? <div><span className="num text-[22px] leading-none">{diesProva}</span> <span className="text-[13px] text-secundari">{d.diesExamen(diesProva).replace(/^\d+ /, '')} · {perfil.nivell}{conv ? `, ${fmt(conv.prova, idioma, { day: 'numeric', month: 'short' })}` : ''}</span></div> : null}
+      <h1 className="sr-only">{d.titol}</h1>
+      <div className="mt-3">
+        <p><span className="num text-[44px] leading-none">{estat.diagnostic.probabilitat}<span className="text-[22px]">%</span></span><span className="block text-[13px] text-secundari">{(estat.diagnostic as { oralMesurat?: boolean }).oralMesurat === false ? n.probEscrita : d.probabilitat}</span></p>
+        <dl className="mt-3 grid grid-cols-[auto_1fr] items-baseline gap-x-3 gap-y-1 text-[15px]">
+          {diesProva !== null ? <><dt className="num text-[22px] leading-none">{diesProva}</dt><dd className="text-secundari">{d.diesExamen(diesProva).replace(/^\d+ /, '')}, {perfil.nivell}{conv ? ` (${fmt(conv.prova, idioma, { day: 'numeric', month: 'short' })})` : ''}</dd></> : null}
+          <dt className="num flex items-center gap-1 text-[22px] leading-none">{ratxa.dies >= 3 ? <svg width="16" height="16" viewBox="0 0 24 24" fill="#E03A2F" aria-hidden="true"><path d="M12 2c1 4 5 5 5 11a5 5 0 0 1-10 0c0-2 1-3 1-3s1 2 2 2c0-4-1-6 2-10z" /></svg> : null}{ratxa.dies}</dt><dd className="text-secundari">{ratxa.dies === 1 ? (idioma === 'ca' ? 'dia seguit' : 'día seguido') : (idioma === 'ca' ? 'dies seguits' : 'días seguidos')}. {n.congelacionsRestants(Math.max(0, 2 - ratxa.congelacionsMes))}</dd>
+        </dl>
       </div>
       {insc.estat === 'oberta' ? <p className="mt-4 rounded-[6px] bg-vermell-tenue px-3 py-2 text-[15px] font-semibold text-vermell">{d.inscripcioOberta} {conv?.inscripcio ? d.inscripcio(fmt(conv.inscripcio.inici, idioma, { day: 'numeric', month: 'short' }), fmt(conv.inscripcio.fi, idioma, { day: 'numeric', month: 'short' })) : ''} <a className="underline" href={conv?.url} target="_blank" rel="noopener noreferrer">{conv?.organisme.toUpperCase()}</a></p> : null}
       {insc.estat === 'abans' && insc.dies <= 21 ? <p className="mt-4 rounded-[6px] bg-boli-tenue px-3 py-2 text-[15px]">{d.inscripcioAviat(insc.dies)}</p> : null}
@@ -84,7 +87,7 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
         <ul className="mt-3 space-y-1.5 text-[16px]">
           {(sessio?.blocs ?? []).map((b, i) => <li key={i} className="flex items-baseline gap-3"><span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${b.tipus === 'repas' ? 'bg-tinta' : b.tipus === 'feble' ? 'bg-boli' : 'bg-apte'}`} aria-hidden="true" /><span className="min-w-0 flex-1">{blocNom(b)}</span><span className="tab text-[14px] text-terciari">{b.minuts}′</span></li>)}
         </ul>
-        {premium === false && sessio?.tipus === 'normal' ? <p className="mt-4 text-[14px] leading-relaxed text-secundari">{d.bloquejat} <Link className="font-semibold text-tinta underline decoration-boli decoration-2" href={`/${idioma}/preus`}>{d.veurePreus}</Link></p> : null}
+        {premium === false && sessio?.tipus === 'normal' ? <p className="mt-4 text-[14px] leading-relaxed text-secundari">{d.bloquejat} {conv ? n.passiFins(fmt(conv.prova, idioma, { day: 'numeric', month: 'long' })) : ''} <Link className="font-semibold text-tinta underline decoration-boli decoration-2" href={`/${idioma}/preus`}>{d.veurePreus}</Link></p> : null}
         <Link className="boton-primari mt-5 w-full text-[18px]" href={hrefPrimari}>{sessio?.tipus === 'minisimulacre' || sessio?.tipus === 'simulacre' ? d.comencar : premium ? d.comencar : d.mini}</Link>
       </div>
 

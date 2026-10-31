@@ -10,7 +10,7 @@
   --color-boli-tenue: #E9EDFF;
   --color-tinta: #141C3A;
   --color-secundari: #5B6480;
-  --color-terciari: #8A92AB;
+  --color-terciari: #6B7390;
   --color-linia: #D9DEEC;
   --color-linia-forta: #B9C2DC;
   --color-marcador: #FFF056;
@@ -131,7 +131,7 @@ textarea.campo { line-height: 1.6; }
 .prosa p { @apply mb-3; }
 .prosa ul { @apply mb-3 list-disc pl-5; }
 .prosa ol { @apply mb-3 list-decimal pl-5; }
-.prosa a { @apply text-tinta underline decoration-boli decoration-2 underline-offset-2; }
+.prosa a:not([class*='boton']) { @apply text-tinta underline decoration-boli decoration-2 underline-offset-2; }
 .prosa table { @apply my-3 w-full text-[15px]; }
 .prosa th, .prosa td { @apply border-b border-linia py-1.5 pr-2 align-top text-left; }
 [dir='rtl'] { direction: rtl; }

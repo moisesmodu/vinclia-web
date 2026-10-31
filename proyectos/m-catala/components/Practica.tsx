@@ -89,7 +89,7 @@ export default function Practica({ idioma, mode }: { idioma: Idioma; mode: Mode 
     const errors = cua.length - encerts;
     return (
       <div className="contenedor py-8">
-        <p className="text-[15px] text-secundari">{d.resultat} · {d.tipus[mode] ?? (mode === 'mini' ? t(idioma).avui.mini : t(idioma).nou.sessioTitol)}</p>
+        <h1 className="text-[15px] font-normal text-secundari" style={{ fontStretch: "100%", letterSpacing: 0 }}>{d.resultat} · {d.tipus[mode] ?? (mode === 'mini' ? t(idioma).avui.mini : t(idioma).nou.sessioTitol)}</h1>
         <p className="num mt-1 text-[56px] leading-none">{encerts}<span className="text-[28px] text-terciari">/{cua.length}</span></p>
         <div className="mt-4 flex max-w-[44ch] items-start gap-3"><Volat mida={44} postura={errors ? 'pensa' : 'content'} aterra className="shrink-0" /><p className="text-[17px] leading-relaxed">{errors ? t(idioma).nou.resumBe : t(idioma).nou.resumCap}</p></div>
         <div className="mt-8 grid gap-2">

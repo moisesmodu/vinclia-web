@@ -28,10 +28,10 @@ export default function Mapa({ idioma }: { idioma: Idioma }) {
       {!ambDades ? <p className="text-[15px] text-secundari">{d.sense}</p> : null}
       <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         {files.map((f) => {
-          const v = f.valor;
+          const v = f.n !== undefined && f.n < 3 ? null : f.valor;
           const fons = v === null ? '#FFFFFF' : v < 50 ? '#FDE7E5' : v < 75 ? '#E9EDFF' : '#DEF5EA';
           const vora = v === null ? '#D9DEEC' : v < 50 ? '#E03A2F' : v < 75 ? '#2140D6' : '#138A5C';
-          return <li key={f.id} className="flex min-h-24 flex-col justify-between rounded-[6px] border p-3" style={{ background: fons, borderColor: vora }}><span className="text-[14px] leading-snug">{f.nom[idioma]}</span><span className="num mt-2 text-[22px]">{v === null ? '—' : `${v}%`}<span className="ml-1 text-[12px] font-normal text-secundari">{f.n ? `· ${f.n}` : ''}</span></span></li>;
+          return <li key={f.id} className="flex min-h-24 flex-col justify-between rounded-[6px] border p-3" style={{ background: fons, borderColor: vora }}><span className="text-[14px] leading-snug">{f.nom[idioma]}</span><span className="num mt-2 text-[22px]">{v === null ? '—' : `${v}%`}<span className="ml-1 text-[12px] font-normal text-secundari">{f.n ? (f.n < 3 ? `· ${t(idioma).nou.pocsItems}` : `· ${f.n}`) : ''}</span></span></li>;
         })}
       </ul>
     </div>

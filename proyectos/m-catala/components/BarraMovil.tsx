@@ -18,7 +18,7 @@ export default function BarraMovil({ idioma, etiquetas }: { idioma: string; etiq
       {Object.entries(etiquetas).map(([k, v]) => {
         const actiu = ruta.startsWith(`/${idioma}/${k}`);
         return (
-          <Link key={k} href={`/${idioma}/${k}`} aria-current={actiu ? 'page' : undefined} className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-[11px] font-semibold no-underline ${actiu ? 'text-tinta' : 'text-terciari'}`}>
+          <Link key={k} href={`/${idioma}/${k}`} aria-current={actiu ? 'page' : undefined} className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-[12px] font-semibold no-underline ${actiu ? 'text-tinta' : 'text-terciari'}`}>
             {actiu ? <span className="absolute inset-x-5 top-0 h-0.5 rounded-b bg-boli" aria-hidden="true" /> : null}
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{ICONES[k]}</svg>
             {v}

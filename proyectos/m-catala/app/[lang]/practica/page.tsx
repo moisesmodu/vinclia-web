@@ -1,8 +1,18 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { esIdioma, t } from '@/lib/i18n';
+import { meta } from '@/lib/meta';
 import type { Idioma } from '@/lib/tipos';
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; const d = t(l); return meta(l, '/practica', d.practica.titol, d.nou.sessioTitol); }
 export default async function Pagina({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params; const idioma = (esIdioma(lang) ? lang : 'ca') as Idioma; const d = t(idioma).practica;
   const tipus = ['repas', 'buits', 'transformacio', 'castellanismes', 'dictat', 'lexic'];
-  return <div className="contenedor py-6"><h1>{d.titol}</h1><div className="mt-6 grid gap-2 sm:grid-cols-2">{tipus.map((k) => <Link key={k} href={`/${idioma}/practica/${k}`} className="full no-underline hover:border-tinta"><p className="text-[18px] font-semibold">{d.tipus[k]}</p><p className="mt-1 text-[14px] text-secundari">{d.tipusText[k]}</p></Link>)}<Link href={`/${idioma}/practica/mini`} className="full border-boli no-underline"><p className="text-[18px] font-semibold">{t(idioma).avui.mini}</p></Link></div></div>;
+  return (
+    <div className="contenedor py-6">
+      <h1>{d.titol}</h1>
+      <ul className="mt-6 divide-y divide-linia border-y border-linia">
+        {tipus.map((k) => <li key={k}><Link href={`/${idioma}/practica/${k}`} className="group flex items-center justify-between gap-4 py-4 no-underline"><span><span className="block text-[18px] font-bold group-hover:text-boli">{d.tipus[k]}</span><span className="mt-0.5 block text-[15px] text-secundari">{d.tipusText?.[k] ?? ''}</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="shrink-0 text-terciari group-hover:text-boli"><path d="M9 6l6 6-6 6" /></svg></Link></li>)}
+      </ul>
+    </div>
+  );
 }

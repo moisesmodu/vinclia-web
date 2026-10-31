@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { meta } from '@/lib/meta';
 import { esIdioma, t } from '@/lib/i18n';
 import { BANC } from '@/lib/datos';
 import type { Idioma } from '@/lib/tipos';
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; return { title: t(l).pie.guies }; }
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; return meta(l, '/guia', t(l).pie.guies, t(l).hero.com); }
 export default async function Pagina({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params; const idioma = (esIdioma(lang) ? lang : 'ca') as Idioma;
   const grups = ['examen', 'cos', 'guia', 'calendari'];
