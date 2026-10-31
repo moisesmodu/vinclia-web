@@ -961,7 +961,8 @@
       "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
       "Portada del estudio": "https://juegos-casuales.vercel.app/",
       "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/juegos/semana-1.md",
-      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md"
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "itch.io · Nuvolet Games": "https://nuvoletgames.itch.io"
     },
     "acciones": [
       {
@@ -1019,6 +1020,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica, canonical y Open Graph en las 18 páginas de juego, Snow Plow con «Christmas» en el título, página About (Lleida), página en castellano de juegos para Chromebook, sitemap de 129 URL (commits dabdb88 y 11bfaba en la rama del PR #4; build OK). Pendiente: redesplegar"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Los 18 juegos publicados en itch.io (https://nuvoletgames.itch.io), jugables en el navegador, con portada, 5 capturas y donativo sugerido de 2 $. GameMonetize: 18 fichas creadas con su Game ID y paquetes recompilados (commit 95ab121 en claude/juegos-primer-juego)"
       }
     ],
     "proximos": [
