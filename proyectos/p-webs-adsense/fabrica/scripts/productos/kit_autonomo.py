@@ -125,8 +125,8 @@ def construir(demo: bool = False):
              {'seccion': 'Modelo 130'},
              {'clave': 'PCT_130', 'concepto': 'Pago fraccionado sobre el rendimiento neto acumulado (%)', 'valor': m130['pct'], 'fuente': 'Ley 35/2006 del IRPF, art. 99; RIRPF art. 110', 'url': 'https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820'}]
     for k, t in enumerate(mino['tramos'], 1):
-        filas.append({'clave': f'MIN130_H{k}', 'concepto': f'Minoración: rendimiento del año anterior hasta (€), tramo {k}', 'valor': t['hasta'], 'fmt': E.fmt_dinero0, 'fuente': fuente_de(mino)[0], 'url': fuente_de(mino)[1]})
-        filas.append({'clave': f'MIN130_E{k}', 'concepto': f'Minoración por trimestre (€), tramo {k}', 'valor': t['euros'], 'fmt': E.fmt_dinero0, 'fuente': fuente_de(mino)[0], 'url': fuente_de(mino)[1]})
+        filas.append({'clave': f'MINOR_H{k}', 'concepto': f'Minoración: rendimiento del año anterior hasta (€), tramo {k}', 'valor': t['hasta'], 'fmt': E.fmt_dinero0, 'fuente': fuente_de(mino)[0], 'url': fuente_de(mino)[1]})
+        filas.append({'clave': f'MINOR_E{k}', 'concepto': f'Minoración por trimestre (€), tramo {k}', 'valor': t['euros'], 'fmt': E.fmt_dinero0, 'fuente': fuente_de(mino)[0], 'url': fuente_de(mino)[1]})
     filas += [{'seccion': 'Cuota de autónomos (RETA)'},
               {'clave': 'TIPO_RETA', 'concepto': 'Tipo de cotización total (%)', 'valor': A['tipo_total_pct'], 'fuente': fa[0] + (' · provisional: tabla de 2026' if A.get('provisional') else ''), 'url': fa[1]},
               {'clave': 'TARIFA_PLANA_EUR', 'concepto': 'Tarifa plana (€ al mes)', 'valor': A['tarifa_plana_euros'], 'fmt': E.fmt_dinero, 'fuente': fa[0], 'url': fa[1]},
@@ -431,8 +431,8 @@ def construir(demo: bool = False):
     h3.ws.merge_cells(f'B{fila}:H{fila + 1}')
     h3.ws.row_dimensions[fila].height = 30
     for q, col in enumerate(COLS, 1):
-        nombre(wb, f'RES303_{q}', 'Modelo 303', f'{col}{filas303["res"]}')
-        nombre(wb, f'PAGO303_{q}', 'Modelo 303', f'{col}{filas303["ing"]}')
+        nombre(wb, f'RES_303_{q}', 'Modelo 303', f'{col}{filas303["res"]}')
+        nombre(wb, f'PAGO_303_{q}', 'Modelo 303', f'{col}{filas303["ing"]}')
     h3.resaltar_si(f'D{filas303["res"]}:G{filas303["res"]}', f'D{filas303["res"]}<0', mezclar(E.marca, 0.8))
     h3.ws.freeze_panes = 'C8'
     h3.proteger()
@@ -458,7 +458,7 @@ def construir(demo: bool = False):
     l1('pago', 'Pago fraccionado (20 % del rendimiento positivo)', lambda q, c: f'=MAX(0,{c}{f130["rend"]})*PCT_130/100')
     l1('ret', 'Retenciones de tus facturas, acumuladas', lambda q, c: f'=SUMIFS({ING("K")},{ING("M")},"<="&{q},{ING("N")},ANIO)')
     fant = fila; f130['ant'] = fant; fila += 1
-    l1('min', 'Minoración por rendimientos bajos en 2026', lambda q, c: f'=IF(REND_ANTERIOR<=MIN130_H1,MIN130_E1,IF(REND_ANTERIOR<=MIN130_H2,MIN130_E2,IF(REND_ANTERIOR<=MIN130_H3,MIN130_E3,IF(REND_ANTERIOR<=MIN130_H4,MIN130_E4,0))))*{q}')
+    l1('min', 'Minoración por rendimientos bajos en 2026', lambda q, c: f'=IF(REND_ANTERIOR<=MINOR_H1,MINOR_E1,IF(REND_ANTERIOR<=MINOR_H2,MINOR_E2,IF(REND_ANTERIOR<=MINOR_H3,MINOR_E3,IF(REND_ANTERIOR<=MINOR_H4,MINOR_E4,0))))*{q}')
     l1('res', 'Resultado', lambda q, c: f'={c}{f130["pago"]}-{c}{f130["ret"]}-{c}{fant}-{c}{f130["min"]}', bold=True)
     l1('ing130', 'A INGRESAR', lambda q, c: f'=IF(PRESENTA_130="No",0,MAX(0,{c}{f130["res"]}))', res=True)
     h1.etiqueta(f'B{fant}', 'Pagos de los 130 anteriores del año')
@@ -477,8 +477,8 @@ def construir(demo: bool = False):
     h1.ws.merge_cells(f'B{fila}:G{fila + 1}')
     h1.ws.row_dimensions[fila].height = 30
     for q, col in enumerate(COLS, 1):
-        nombre(wb, f'RES130_{q}', 'Modelo 130', f'{col}{f130["res"]}')
-        nombre(wb, f'PAGO130_{q}', 'Modelo 130', f'{col}{f130["ing130"]}')
+        nombre(wb, f'RES_130_{q}', 'Modelo 130', f'{col}{f130["res"]}')
+        nombre(wb, f'PAGO_130_{q}', 'Modelo 130', f'{col}{f130["ing130"]}')
     h1.ws.freeze_panes = 'C8'
     h1.proteger()
 
@@ -523,7 +523,7 @@ def construir(demo: bool = False):
     fila += 1
     hr.seccion(fila, 'Resultado de la declaración', 'B', 'D'); fila += 1
     lr('ret', 'Retenciones de tus facturas', f'=SUMIFS({ING("K")},{ING("N")},ANIO)', nota_='')
-    lr('p130', 'Pagos fraccionados (modelo 130)', '=PAGO130_1+PAGO130_2+PAGO130_3+PAGO130_4')
+    lr('p130', 'Pagos fraccionados (modelo 130)', '=PAGO_130_1+PAGO_130_2+PAGO_130_3+PAGO_130_4')
     lr('resultado', 'A PAGAR (+) o A DEVOLVER (−)', f'={R["total"]}-{R["ret"]}-{R["p130"]}', res=True)
     lr('netoanual', 'Lo que te queda en el año (tras cuota e IRPF)', f'={R["previo"]}-{R["cuota"]}-{R["total"]}', bold=True)
     lr('netomes', 'Al mes', f'={R["netoanual"]}/12')
@@ -580,7 +580,7 @@ def construir(demo: bool = False):
     hp.tabla_cab(fila, 2, ['A pagar a Hacienda y la Seguridad Social', '1T', '2T', '3T', '4T', 'Año'])
     fila += 1
     p0 = fila
-    filas_panel = [('IVA (modelo 303)', lambda q: f'=PAGO303_{q}'), ('IRPF (modelo 130)', lambda q: f'=PAGO130_{q}'),
+    filas_panel = [('IVA (modelo 303)', lambda q: f'=PAGO_303_{q}'), ('IRPF (modelo 130)', lambda q: f'=PAGO_130_{q}'),
                    ('Cuota de autónomos del trimestre', lambda q: f'=SUMIFS(CUOTA_MES,CUOTA_TRIM,{q})')]
     for txt, fq in filas_panel:
         hp.etiqueta(f'B{fila}', txt)

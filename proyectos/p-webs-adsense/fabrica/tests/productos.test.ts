@@ -69,7 +69,7 @@ const sum = (xs: number[]) => xs.reduce((a, b) => a + b, 0);
 
 describe.skipIf(!hayLibreOffice)('Kit del autónomo 2027: el Excel reproduce los motores', () => {
   let R: Record<string, Record<string, any>> = {};
-  const leer = ['RES303_1', 'RES303_2', 'RES303_3', 'RES303_4', 'RES130_1', 'RES130_2', 'RES130_3', 'RES130_4', 'PAGO130_1', 'PAGO130_2', 'PAGO130_3', 'PAGO130_4', 'TRAMO', 'CUOTA_PREVISTA', 'CUOTA_ANUAL', 'RENTA_TOTAL', 'RENTA_RESULTADO'];
+  const leer = ['RES_303_1', 'RES_303_2', 'RES_303_3', 'RES_303_4', 'RES_130_1', 'RES_130_2', 'RES_130_3', 'RES_130_4', 'PAGO_130_1', 'PAGO_130_2', 'PAGO_130_3', 'PAGO_130_4', 'TRAMO', 'CUOTA_PREVISTA', 'CUOTA_ANUAL', 'RENTA_TOTAL', 'RENTA_RESULTADO'];
   beforeAll(() => {
     R = recalcular(KIT.map((c) => {
       const poner: Record<string, unknown> = {
@@ -90,7 +90,7 @@ describe.skipIf(!hayLibreOffice)('Kit del autónomo 2027: el Excel reproduce los
       for (let q = 1; q <= 4; q++) {
         const ventas = c.ing.filter((x) => trim(x[0]) === q).map((x) => ({ base: x[1], tipo: x[2] }));
         const m = modelo303({ ventas, soportado: sum(c.gas.filter((g) => trim(g[0]) === q).map(ivaDed)), compensar: comp, trimestre: q });
-        expect(r[`RES303_${q}`], `303 ${q}T`).toBeCloseTo(m.resultado, 1);
+        expect(r[`RES_303_${q}`], `303 ${q}T`).toBeCloseTo(m.resultado, 1);
         comp = Math.max(0, -m.resultado);
       }
       // Cuota de autónomos con el rendimiento de los libros
@@ -107,8 +107,8 @@ describe.skipIf(!hayLibreOffice)('Kit del autónomo 2027: el Excel reproduce los
           gastosAcum: sum(c.gas.filter((g) => trim(g[0]) <= q).map(gasIrpf)) + r.CUOTA_PREVISTA * 3 * q,
           retencionesAcum: sum(c.ing.filter((x) => trim(x[0]) <= q).map(retEur)), pagosAnteriores: pagados, trimestre: q, rendAnterior: c.rendAnterior,
         }, P27.fiscal);
-        expect(r[`RES130_${q}`], `130 ${q}T`).toBeCloseTo(m.resultado, 1);
-        expect(r[`PAGO130_${q}`]).toBeCloseTo(m.aIngresar, 1);
+        expect(r[`RES_130_${q}`], `130 ${q}T`).toBeCloseTo(m.resultado, 1);
+        expect(r[`PAGO_130_${q}`]).toBeCloseTo(m.aIngresar, 1);
         pagados += m.aIngresar;
       }
       // Renta: mismo cálculo que la calculadora «sueldo neto autónomo»
@@ -161,4 +161,63 @@ describe.skipIf(!hayLibreOffice)('Pack despido: el Excel reproduce los motores',
       expect(r.PLAZO_PARO).toBe(sumarHabiles(lugarComunidad(c.ccaa), c.fin, P26.laboral.despido_plazos.paro_solicitud_dias_habiles).fin);
     });
   }
+});
+
+/* ------------------------------------------------------------------ Comparador de hipotecas */
+
+const V27 = P27.vivienda;
+const cerca = (a: number, b: number, tol: number) => expect(Math.abs(a - b), `${a} frente a ${b}`).toBeLessThan(tol);
+
+describe.skipIf(!hayLibreOffice)('Comparador de hipotecas: el Excel reproduce los motores', () => {
+  let R: Record<string, Record<string, any>> = {};
+  const oferta = (j: number, o: Record<string, unknown>) => Object.fromEntries(Object.entries(o).map(([k, v]) => [`OF_${k}_${j}`, v]));
+  beforeAll(() => {
+    const leer = ['CUOTA1_1', 'CUOTA2_1', 'TAE_1', 'COSTE_1', 'INTERESES_1', 'CUOTA1_2', 'CUOTA2_2', 'INTERESES_2', 'CA_INT_1', 'CA_PEND_10', 'AA_PENDIENTE', 'AA_CUOTACUOTA', 'AA_AHORROCUOTA', 'AA_MESESPLAZO', 'AA_AHORROPLAZO', 'AA_TOPEPCT', 'AA_COMISION'];
+    R = recalcular([
+      { id: 'hip-fija-vinculaciones', xlsx: xlsx('comparador-hipotecas'), leer,
+        poner: { CAPITAL: 180000, PLAZO: 30, ...oferta(1, { BANCO: 'A', TIPO: 'Fija', TIN: 2.6, VIDA: 300, HOGAR: 250, TASACION: 350, APERTURA: 0 }) } },
+      { id: 'hip-mixta-y-variable-euribor-sube', xlsx: xlsx('comparador-hipotecas'), leer,
+        poner: { CAPITAL: 210000, PLAZO: 28, EURIBOR_HOY: 3, ESCENARIO: 'Sube 1 punto',
+          ...oferta(1, { BANCO: 'Mixta', TIPO: 'Mixta', TIN: 2.2, ANIOS_INI: 5, DIF: 0.75 }), ...oferta(2, { BANCO: 'Variable', TIPO: 'Variable', TIN: 2.5, ANIOS_INI: 0, DIF: 0.9 }) } },
+      { id: 'hip-amortizar-antes', xlsx: xlsx('comparador-hipotecas'), leer,
+        poner: { CAPITAL: 220000, PLAZO: 25, ...oferta(1, { BANCO: 'Fija', TIPO: 'Fija', TIN: 3.1 }), AA_OFERTA: 1, AA_ANIO: 4, AA_IMPORTE: 30000 } },
+    ]);
+  }, 600000);
+
+  it('fija con seguros: cuota, TAE con vinculaciones, coste total y cuadro anual', () => {
+    const r = R['hip-fija-vinculaciones'];
+    const n = 360, c = cuotaHipoteca(180000, 2.6, n), vinc = (300 + 250) / 12, gastos = 350;
+    cerca(r.CUOTA1_1, c, 0.005);
+    cerca(r.TAE_1, tae(180000 - gastos, Array(n).fill(c + vinc)), 0.006);
+    cerca(r.COSTE_1, (c + vinc) * n + gastos - 180000, 0.5);
+    const h = hipotecaFija(180000, 2.6, 30);
+    cerca(r.CA_INT_1, h.cuadro.anios[0].interes, 0.01);
+    cerca(r.CA_PEND_10, h.cuadro.anios[9].pendiente, 0.01);
+    cerca(r.INTERESES_1, h.intereses, 0.5);
+  });
+
+  it('mixta y variable con el Euríbor un punto más alto', () => {
+    const r = R['hip-mixta-y-variable-euribor-sube'];
+    const m = hipotecaVariable(210000, 28, { tinFijo: 2.2, aniosFijos: 5, diferencial: 0.75, euriborAnio: () => 4 });
+    cerca(r.CUOTA1_1, m.cuadro.meses[0].cuota, 0.005);
+    cerca(r.CUOTA2_1, m.cuadro.meses[60].cuota, 0.005);
+    cerca(r.INTERESES_1, m.intereses, 0.5);
+    const v = hipotecaVariable(210000, 28, { diferencial: 0.9, euriborAnio: () => 4 });
+    cerca(r.CUOTA1_2, v.cuadro.meses[0].cuota, 0.005);
+    cerca(r.INTERESES_2, v.intereses, 0.5);
+  });
+
+  it('amortizar 30.000 € al cuarto año: reducir cuota o plazo y comisión legal', () => {
+    const r = R['hip-amortizar-antes'];
+    const h = hipotecaFija(220000, 3.1, 25);
+    const pendiente = h.cuadro.meses[47].pendiente;
+    cerca(r.AA_PENDIENTE, pendiente, 0.01);
+    const a = amortizacionAnticipada({ pendiente, tin: 3.1, mesesRestantes: 300 - 48, importe: 30000, tipo: 'fijo', aniosDesdeFirma: 4 }, V27);
+    cerca(r.AA_CUOTACUOTA, a.cuotaCuota, 0.01);
+    cerca(r.AA_AHORROCUOTA, a.ahorroCuota, 0.5);
+    expect(r.AA_MESESPLAZO).toBe(a.mesesPlazo);
+    cerca(r.AA_AHORROPLAZO, a.ahorroPlazo, 1);
+    expect(r.AA_TOPEPCT).toBe(topeComision(V27, 'fijo', 4));
+    cerca(r.AA_COMISION, a.comision, 0.01);
+  });
 });
