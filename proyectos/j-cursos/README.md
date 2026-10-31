@@ -6,10 +6,10 @@ Kenney (CC0); la voz es Piper con la voz de castellano de España `es_ES-davefx-
 
 | | Curso | Base | Clases | Duración | Estado |
 |---|---|---|---|---|---|
-| c1 | Enseña a programar a tu hijo con Scratch: guía para padres | Tech Robot + Tech Creadores | 32 + promo | ~3 h | ver informe |
-| c2 | Crea robots con micro:bit y Maqueen para niños y profes | Tech Robótica + kit | 38 + promo | ~4 h | ver informe |
-| c3 | Ahorra horas con IA y ChatGPT para autónomos y pymes | nuevo | 37 + promo | ~4 h (guion) | guion completo; sección 1 grabada |
-| c4 | Bienestar digital en familia: pantallas y redes seguras (gratis) | Tech Digital | 8 + promo | ~45 min | ver informe |
+| c1 | Enseña a programar a tu hijo con Scratch: guía para padres | Tech Robot + Tech Creadores | 32 + promo | 2 h 38 min | listo para subir |
+| c2 | Crea robots con micro:bit y Maqueen para niños y profes | Tech Robótica + kit | 38 + promo | 3 h 33 min | listo para subir |
+| c3 | Ahorra horas con IA y ChatGPT para autónomos y pymes | nuevo | 37 + promo | ~4 h (guion); 24 min grabados | guion completo; sección 1 (+ clases 20 y 23) grabada |
+| c4 | Bienestar digital en familia: pantallas y redes seguras (gratis) | Tech Digital | 8 + promo | 37 min | listo para subir |
 
 ## Carpetas
 

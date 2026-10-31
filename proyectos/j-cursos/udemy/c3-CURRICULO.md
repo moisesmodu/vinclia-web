@@ -36,24 +36,24 @@
 
 **Palabras clave (para el título, la descripción y los vídeos cortos):** IA para autónomos, ChatGPT para pymes, inteligencia artificial para negocios, ChatGPT para autónomos, Verifactu, IA para pequeños negocios, marketing con IA, atención al cliente con IA, Gemini, Copilot
 
-**Total:** 37 clases, 25.8 minutos de vídeo montado
+**Total:** 37 clases, 24.1 minutos de vídeo montado
 
 
 ## Sección 1: Empieza aquí
 
 ### Clase 1: Bienvenida: tu primer resultado con IA en 10 minutos · **vista previa gratuita**
-- Vídeo: `01 - Bienvenida tu primer resultado con IA en 10 minutos.mp4` (4:02)
+- Vídeo: `01 - Bienvenida tu primer resultado con IA en 10 minutos.mp4` (3:46)
 - Subtítulos: `01 - Bienvenida tu primer resultado con IA en 10 minutos.vtt` (idioma: español)
 - Descripción: Respondes a una reseña de Google de un cliente molesto con ayuda de la IA, en menos de 10 minutos y sin conocimientos técnicos. Y ves qué vas a conseguir en el resto del curso.
 - Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 2: Qué es (y qué no es) la IA generativa, sin humo · **vista previa gratuita**
-- Vídeo: `02 - Qué es (y qué no es) la IA generativa, sin humo.mp4` (5:10)
+- Vídeo: `02 - Qué es (y qué no es) la IA generativa, sin humo.mp4` (4:50)
 - Subtítulos: `02 - Qué es (y qué no es) la IA generativa, sin humo.vtt` (idioma: español)
 - Descripción: Entiendes en lenguaje llano cómo funciona la IA generativa, en qué tareas te ahorra tiempo y en cuáles se equivoca, para usarla con confianza y sin sustos.
 
 ### Clase 3: Qué herramienta usar: ChatGPT, Gemini, Copilot, Claude y compañía · **vista previa gratuita**
-- Vídeo: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.mp4` (5:27)
+- Vídeo: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.mp4` (5:05)
 - Subtítulos: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.vtt` (idioma: español)
 - Descripción: Conoces las cinco herramientas de IA más útiles para un pequeño negocio, eliges una principal y una de reserva según dónde trabajas, y las configuras para empezar gratis.
 
@@ -261,7 +261,7 @@
 - Recursos descargables: `recursos/conceptos-factura.pdf`
 
 ### Clase 20: Verifactu en 2027: qué es, fechas y qué tienes que hacer
-- Vídeo: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.mp4` (5:43)
+- Vídeo: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.mp4` (5:27)
 - Subtítulos: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.vtt` (idioma: español)
 - Descripción: Entiende qué es Verifactu, desde cuándo te obliga según seas sociedad o autónomo, qué opciones tienes para cumplir y qué preguntas hacer a tu proveedor de software o a tu gestoría.
 - Recursos descargables: `recursos/verifactu-checklist.pdf`
@@ -314,7 +314,7 @@
 ## Sección 6: Legal: RGPD y Ley de IA
 
 ### Clase 23: Qué datos no debes meter nunca en una IA
-- Vídeo: `23 - Qué datos no debes meter nunca en una IA.mp4` (5:23)
+- Vídeo: `23 - Qué datos no debes meter nunca en una IA.mp4` (4:58)
 - Subtítulos: `23 - Qué datos no debes meter nunca en una IA.vtt` (idioma: español)
 - Descripción: Aprende qué datos de clientes no se pegan en un chat de IA y cómo anonimizar un mensaje en un minuto para seguir usando la IA con tranquilidad.
 - Recursos descargables: `recursos/privacidad-checklist.pdf`

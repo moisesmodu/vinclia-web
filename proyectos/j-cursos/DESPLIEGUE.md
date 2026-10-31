@@ -1,5 +1,7 @@
 # J · Cursos en Udemy · despliegue (para la sesión del Mac)
 
+> Voz de todos los vídeos: castellano de España (Piper, `es_ES-davefx-medium`, CC0), rehecha el 31/10/2026.
+>
 > Resultado de `node scripts/comprobar-entorno.mjs` en la sesión de J (28/10/2026): sin `VERCEL_TOKEN` ni el resto de
 > secretos, y sin red a api.vercel.com. Por eso los vídeos no van a Vercel Blob desde la nube: están en el almacén de
 > páginas privadas de claude.ai (enlaces abajo), que ya sirven para ver, descargar por sección en zip y subir a Udemy.
@@ -9,10 +11,10 @@
 
 | Curso | Página privada de entrega | Contenido |
 |---|---|---|
-| c1 · Enseña a programar a tu hijo con Scratch | https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK | 32 clases + promo (164,7 min), 48 PDF, imagen, VTT, cuestionarios y ficha |
-| c4 · Bienestar digital en familia | misma página (pestaña «Bienestar digital») | se añade al terminar el montaje |
-| c2 · Crea robots con micro:bit y Maqueen | https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3 | 38 clases + promo (222,7 min), 33 PDF, imagen, VTT, cuestionarios y ficha |
-| c3 · Ahorra horas con IA (sección 1) | misma página que c1 (pestaña «IA para autónomos») | promo + clases 1-3 (+ 20 y 23 para los vídeos cortos) |
+| c1 · Enseña a programar a tu hijo con Scratch | https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK | 32 clases + promo (158,5 min), 48 PDF, imagen, VTT, cuestionarios y ficha |
+| c4 · Bienestar digital en familia | misma página (pestaña «Bienestar digital») | 8 clases + promo (36,6 min), PDF, imagen, VTT, cuestionarios y ficha |
+| c2 · Crea robots con micro:bit y Maqueen | https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3 | 38 clases + promo (212,8 min), 33 PDF, imagen, VTT, cuestionarios y ficha |
+| c3 · Ahorra horas con IA (sección 1) | misma página que c1 (pestaña «IA para autónomos») | promo + clases 1-3 (+ 20 y 23 para los vídeos cortos), 24,1 min; las 24 plantillas en PDF |
 
 Las páginas son privadas de la cuenta de Moisés. Cada sección se baja en un zip («Descargar sección») con los MP4, los
 `.vtt` y los PDF, que es exactamente lo que pide el cargador masivo de Udemy.

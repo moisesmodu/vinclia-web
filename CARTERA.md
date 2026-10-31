@@ -302,3 +302,4 @@ teléfono y plan Creator de ElevenLabs.
 | 24/10/2026 | `JUICIO.md`: probabilidad de éxito a 6 y 12 meses (Montecarlo) y veredicto por idea con criterio de parada | — |
 | 28/10/2026 | `DESPLIEGUES.md`: secretos del entorno y sesión del Mac para desplegar sin pedir nada a Moisés; Stripe real de Numi Mates para todo | — |
 | 28/10/2026 | M redefinido como app de certificados oficiales de catalán B1–C2 (`M-CATALA-PRODUCTE.md`): exámenes, 13 competidores, 10 apps de referencia, prompt nuevo. Stripe 'Numi Mates' conectado | — |
+| 31/10/2026 | J: cursos 1 (32 clases, 2 h 38 min) y 2 (38 clases, 3 h 33 min) listos para subir a Udemy, curso 4 gratuito (8 clases), curso 3 guionizado y sección 1 grabada; voz en castellano de España (Piper davefx); entregas privadas, PARA-MOISES.md | — |

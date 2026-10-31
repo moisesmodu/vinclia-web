@@ -18,6 +18,24 @@
   "archivo": "01-c1-01.mp4"
  },
  {
+  "n": 1,
+  "curso": "c1",
+  "clase": "c1-01",
+  "gancho": "Tu hijo puede aprender a programar sin pantalla",
+  "prefiere": [
+   "pasos",
+   "captura"
+  ],
+  "cupon": "NUMI-C1",
+  "escenas": [
+   4,
+   5
+  ],
+  "ini": 79.85,
+  "fin": 135.62,
+  "archivo": "01-c1-01.mp4"
+ },
+ {
   "n": 2,
   "curso": "c1",
   "clase": "c1-25",
@@ -36,6 +54,24 @@
   "archivo": "02-c1-25.mp4"
  },
  {
+  "n": 2,
+  "curso": "c1",
+  "clase": "c1-25",
+  "gancho": "¿Se enfada cuando programa? Es buena señal",
+  "prefiere": [
+   "comparar",
+   "frase"
+  ],
+  "cupon": "NUMI-C1",
+  "escenas": [
+   2,
+   3
+  ],
+  "ini": 23.79,
+  "fin": 85.87,
+  "archivo": "02-c1-25.mp4"
+ },
+ {
   "n": 3,
   "curso": "c1",
   "clase": "c1-26",
@@ -50,6 +86,23 @@
   ],
   "ini": 276.54,
   "fin": 330.78,
+  "archivo": "03-c1-26.mp4"
+ },
+ {
+  "n": 3,
+  "curso": "c1",
+  "clase": "c1-26",
+  "gancho": "Lo que nunca debes decirle cuando se atasca",
+  "prefiere": [
+   "comparar"
+  ],
+  "cupon": "NUMI-C1",
+  "escenas": [
+   10,
+   11
+  ],
+  "ini": 265.6,
+  "fin": 316.74,
   "archivo": "03-c1-26.mp4"
  },
  {
@@ -72,6 +125,25 @@
   "archivo": "04-c1-11.mp4"
  },
  {
+  "n": 4,
+  "curso": "c1",
+  "clase": "c1-11",
+  "gancho": "Un bucle, explicado en casa en 1 minuto",
+  "prefiere": [
+   "demo",
+   "captura",
+   "comparar"
+  ],
+  "cupon": "NUMI-C1",
+  "escenas": [
+   7,
+   8
+  ],
+  "ini": 164.73,
+  "fin": 215.82,
+  "archivo": "04-c1-11.mp4"
+ },
+ {
   "n": 5,
   "curso": "c2",
   "clase": "c2-14",
@@ -89,6 +161,23 @@
   "archivo": "05-c2-14.mp4"
  },
  {
+  "n": 5,
+  "curso": "c2",
+  "clase": "c2-14",
+  "gancho": "Este robot se para solo antes de chocar",
+  "prefiere": [
+   "demo"
+  ],
+  "cupon": "NUMI-C2",
+  "escenas": [
+   4,
+   5
+  ],
+  "ini": 76.81,
+  "fin": 136.97,
+  "archivo": "05-c2-14.mp4"
+ },
+ {
   "n": 6,
   "curso": "c2",
   "clase": "c2-14",
@@ -103,6 +192,23 @@
   ],
   "ini": 26.02,
   "fin": 80.53,
+  "archivo": "06-c2-14.mp4"
+ },
+ {
+  "n": 6,
+  "curso": "c2",
+  "clase": "c2-14",
+  "gancho": "El error que hace chocar a todos los robots",
+  "prefiere": [
+   "comparar"
+  ],
+  "cupon": "NUMI-C2",
+  "escenas": [
+   2,
+   3
+  ],
+  "ini": 24.32,
+  "fin": 76.81,
   "archivo": "06-c2-14.mp4"
  },
  {
@@ -124,6 +230,24 @@
   "archivo": "07-c2-03.mp4"
  },
  {
+  "n": 7,
+  "curso": "c2",
+  "clase": "c2-03",
+  "gancho": "Qué robot comprar para una extraescolar",
+  "prefiere": [
+   "tabla",
+   "puntos"
+  ],
+  "cupon": "NUMI-C2",
+  "escenas": [
+   6,
+   7
+  ],
+  "ini": 137.17,
+  "fin": 197.19,
+  "archivo": "07-c2-03.mp4"
+ },
+ {
   "n": 8,
   "curso": "c3",
   "clase": "c3-01",
@@ -141,6 +265,23 @@
   "archivo": "08-c3-01.mp4"
  },
  {
+  "n": 8,
+  "curso": "c3",
+  "clase": "c3-01",
+  "gancho": "Responde así a una reseña de una estrella",
+  "prefiere": [
+   "chat"
+  ],
+  "cupon": "NUMI-C3",
+  "escenas": [
+   3,
+   4
+  ],
+  "ini": 56.17,
+  "fin": 111.73,
+  "archivo": "08-c3-01.mp4"
+ },
+ {
   "n": 9,
   "curso": "c3",
   "clase": "c3-20",
@@ -155,6 +296,23 @@
   ],
   "ini": 74.48,
   "fin": 110.86,
+  "archivo": "09-c3-20.mp4"
+ },
+ {
+  "n": 9,
+  "curso": "c3",
+  "clase": "c3-20",
+  "gancho": "Verifactu en un minuto: ¿cuál es tu fecha?",
+  "prefiere": [
+   "tabla"
+  ],
+  "cupon": "NUMI-C3",
+  "escenas": [
+   3,
+   3
+  ],
+  "ini": 68.29,
+  "fin": 103.38,
   "archivo": "09-c3-20.mp4"
  },
  {
@@ -176,6 +334,24 @@
   "archivo": "10-c3-23.mp4"
  },
  {
+  "n": 10,
+  "curso": "c3",
+  "clase": "c3-23",
+  "gancho": "Lo que nunca debes pegar en ChatGPT",
+  "prefiere": [
+   "comparar",
+   "puntos"
+  ],
+  "cupon": "NUMI-C3",
+  "escenas": [
+   7,
+   8
+  ],
+  "ini": 186.05,
+  "fin": 238.08,
+  "archivo": "10-c3-23.mp4"
+ },
+ {
   "n": 11,
   "curso": "c4",
   "clase": "c4-07",
@@ -194,6 +370,24 @@
   "archivo": "11-c4-07.mp4"
  },
  {
+  "n": 11,
+  "curso": "c4",
+  "clase": "c4-07",
+  "gancho": "Ajustes del móvil de tu hijo que puedes hacer hoy",
+  "prefiere": [
+   "pasos",
+   "puntos"
+  ],
+  "cupon": "gratis",
+  "escenas": [
+   7,
+   8
+  ],
+  "ini": 134.64,
+  "fin": 185.49,
+  "archivo": "11-c4-07.mp4"
+ },
+ {
   "n": 12,
   "curso": "c4",
   "clase": "c4-04",
@@ -209,6 +403,24 @@
   ],
   "ini": 203.06,
   "fin": 253.73,
+  "archivo": "12-c4-04.mp4"
+ },
+ {
+  "n": 12,
+  "curso": "c4",
+  "clase": "c4-04",
+  "gancho": "Cómo saber si una imagen está hecha con IA",
+  "prefiere": [
+   "puntos",
+   "comparar"
+  ],
+  "cupon": "gratis",
+  "escenas": [
+   8,
+   9
+  ],
+  "ini": 198.27,
+  "fin": 249.48,
   "archivo": "12-c4-04.mp4"
  }
 ]

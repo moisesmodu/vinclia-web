@@ -33,55 +33,55 @@
 
 **Palabras clave (para el título, la descripción y los vídeos cortos):** bienestar digital, seguridad en internet para niños, control parental, pantallas y niños, ciberacoso, ciudadanía digital, videojuegos y niños, bulos, plan digital familiar
 
-**Total:** 8 clases, 38.1 minutos de vídeo montado
+**Total:** 8 clases, 36.6 minutos de vídeo montado
 
 
 ## Sección 1: Bienestar digital en familia
 
 ### Clase 1: Bienvenida: lo que de verdad importa · **vista previa gratuita**
-- Vídeo: `01 - Bienvenida lo que de verdad importa.mp4` (3:15)
+- Vídeo: `01 - Bienvenida lo que de verdad importa.mp4` (3:02)
 - Subtítulos: `01 - Bienvenida lo que de verdad importa.vtt` (idioma: español)
 - Descripción: Qué vas a conseguir en este curso, la norma de oro de la vida digital en familia y la primera conversación que puedes tener hoy mismo con tu hijo o tu hija.
 - Recursos descargables: `recursos/fichas-d3-1.pdf`
 
 ### Clase 2: Contraseñas y cuentas de toda la familia
-- Vídeo: `02 - Contraseñas y cuentas de toda la familia.mp4` (4:56)
+- Vídeo: `02 - Contraseñas y cuentas de toda la familia.mp4` (4:44)
 - Subtítulos: `02 - Contraseñas y cuentas de toda la familia.vtt` (idioma: español)
 - Descripción: Cómo enseñar a tu hijo o a tu hija a crear contraseñas fuertes con el truco de la frase, qué hacer con los códigos de verificación y la revisión de la tableta que podéis hacer hoy en casa.
 - Recursos descargables: `recursos/fichas-d1-1.pdf`, `recursos/fichas-d4-3.pdf`
 
 ### Clase 3: Lo que compartimos y la huella digital
-- Vídeo: `03 - Lo que compartimos y la huella digital.mp4` (5:10)
+- Vídeo: `03 - Lo que compartimos y la huella digital.mp4` (4:56)
 - Subtítulos: `03 - Lo que compartimos y la huella digital.vtt` (idioma: español)
 - Descripción: Qué datos personales se guardan, qué edad hace falta para las redes sociales en España, qué hacer si un desconocido escribe y el semáforo antes de publicar, también para las fotos que suben los adultos.
 - Recursos descargables: `recursos/fichas-d1-2.pdf`, `recursos/fichas-d1-3.pdf`
 
 ### Clase 4: Bulos, imágenes falsas e inteligencia artificial
-- Vídeo: `04 - Bulos, imágenes falsas e inteligencia artificial.mp4` (5:07)
+- Vídeo: `04 - Bulos, imágenes falsas e inteligencia artificial.mp4` (5:01)
 - Subtítulos: `04 - Bulos, imágenes falsas e inteligencia artificial.vtt` (idioma: español)
 - Descripción: Las tres preguntas para cazar bulos, cómo verificar una imagen sospechosa, qué es de verdad una inteligencia artificial y las normas para usarla en casa con cabeza.
 - Recursos descargables: `recursos/fichas-d2-1.pdf`, `recursos/fichas-d5-2.pdf`
 
 ### Clase 5: Respeto en la red y ciberacoso
-- Vídeo: `05 - Respeto en la red y ciberacoso.mp4` (5:01)
+- Vídeo: `05 - Respeto en la red y ciberacoso.mp4` (4:51)
 - Subtítulos: `05 - Respeto en la red y ciberacoso.vtt` (idioma: español)
 - Descripción: Cómo distinguir el ciberacoso de una discusión, qué hacer si le pasa a tu hijo o lo ve en el grupo de clase, qué decirle cuando te lo cuenta y a qué teléfonos llamar.
 - Recursos descargables: `recursos/fichas-d2-3.pdf`
 
 ### Clase 6: Pantallas, videojuegos y compras dentro del juego
-- Vídeo: `06 - Pantallas, videojuegos y compras dentro del juego.mp4` (4:56)
+- Vídeo: `06 - Pantallas, videojuegos y compras dentro del juego.mp4` (4:42)
 - Subtítulos: `06 - Pantallas, videojuegos y compras dentro del juego.vtt` (idioma: español)
 - Descripción: Por qué cuesta tanto parar, cómo proteger el sueño, qué vigilar en las partidas en línea y cómo hacer números con las gemas y las cajas sorpresa antes de que nadie compre nada.
 - Recursos descargables: `recursos/fichas-d3-1.pdf`, `recursos/fichas-d6-2.pdf`
 
 ### Clase 7: Mensajes trampa y permisos de las apps
-- Vídeo: `07 - Mensajes trampa y permisos de las apps.mp4` (4:51)
+- Vídeo: `07 - Mensajes trampa y permisos de las apps.mp4` (4:39)
 - Subtítulos: `07 - Mensajes trampa y permisos de las apps.vtt` (idioma: español)
 - Descripción: Los disfraces de los mensajes trampa, los cuatro pasos para no caer, qué hacer si ya habéis caído y cómo revisar juntos los permisos de las apps de casa.
 - Recursos descargables: `recursos/fichas-d4-1.pdf`, `recursos/fichas-d4-2.pdf`
 
 ### Clase 8: Vuestro plan digital familiar y siguientes pasos
-- Vídeo: `08 - Vuestro plan digital familiar y siguientes pasos.mp4` (4:46)
+- Vídeo: `08 - Vuestro plan digital familiar y siguientes pasos.mp4` (4:35)
 - Subtítulos: `08 - Vuestro plan digital familiar y siguientes pasos.vtt` (idioma: español)
 - Descripción: Cómo escribir en familia un pacto digital con acuerdos que funcionan, preparar la tarjeta de ayuda con los adultos de confianza y los teléfonos 116 111, 017 y 112, y qué hacer a partir de aquí.
 - Recursos descargables: `recursos/fichas-d3-4.pdf`, `recursos/enlaces-y-cupones.pdf`

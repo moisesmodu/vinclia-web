@@ -36,24 +36,24 @@
 
 **Palabras clave (para el título, la descripción y los vídeos cortos):** programación para niños, enseñar a programar a niños, Scratch para padres, programar con niños en casa, pensamiento computacional, Scratch para niños, programación sin pantalla, robótica para niños, videojuegos con Scratch, extraescolar de programación
 
-**Total:** 32 clases, 164.7 minutos de vídeo montado
+**Total:** 32 clases, 158.5 minutos de vídeo montado
 
 
 ## Sección 1: Empieza aquí
 
 ### Clase 1: Bienvenida: vuestro primer juego de programación en 10 minutos · **vista previa gratuita**
-- Vídeo: `01 - Bienvenida vuestro primer juego de programación en 10 minutos.mp4` (3:40)
+- Vídeo: `01 - Bienvenida vuestro primer juego de programación en 10 minutos.mp4` (3:35)
 - Subtítulos: `01 - Bienvenida vuestro primer juego de programación en 10 minutos.vtt` (idioma: español)
 - Descripción: Jugáis en casa a «Haz de robot», sin pantalla y sin saber programar, y descubrís en diez minutos la idea que sostiene todo el curso: un robot hace exactamente lo que le dices.
 - Recursos descargables: `recursos/fichas-r1-1.pdf`
 
 ### Clase 2: Por qué programar entre los 6 y los 11 años (y qué no esperar) · **vista previa gratuita**
-- Vídeo: `02 - Por qué programar entre los 6 y los 11 años (y qué no esperar).mp4` (3:46)
+- Vídeo: `02 - Por qué programar entre los 6 y los 11 años (y qué no esperar).mp4` (3:36)
 - Subtítulos: `02 - Por qué programar entre los 6 y los 11 años (y qué no esperar).vtt` (idioma: español)
 - Descripción: Entiendes qué es el pensamiento computacional, qué puede ganar tu hijo o tu hija programando en casa y qué expectativas conviene dejar fuera.
 
 ### Clase 3: Cómo usar este curso: el plan de 4 semanas y los descargables · **vista previa gratuita**
-- Vídeo: `03 - Cómo usar este curso el plan de 4 semanas y los descargables.mp4` (3:46)
+- Vídeo: `03 - Cómo usar este curso el plan de 4 semanas y los descargables.mp4` (3:38)
 - Subtítulos: `03 - Cómo usar este curso el plan de 4 semanas y los descargables.vtt` (idioma: español)
 - Descripción: Conoces el plan de cuatro semanas, cómo repartir tres ratos de veinte minutos y qué encontrarás en los recursos descargables de cada clase.
 - Recursos descargables: `recursos/fichas-r1-1.pdf`
@@ -61,19 +61,19 @@
 ## Sección 2: Vuestro papel como madre o padre
 
 ### Clase 4: No hace falta saber programar: preguntar antes de responder
-- Vídeo: `04 - No hace falta saber programar preguntar antes de responder.mp4` (5:18)
+- Vídeo: `04 - No hace falta saber programar preguntar antes de responder.mp4` (4:59)
 - Subtítulos: `04 - No hace falta saber programar preguntar antes de responder.vtt` (idioma: español)
 - Descripción: Aprendes a acompañar sin saber programar: pedir predicciones antes de ejecutar, hacer las preguntas adecuadas ante un error y dejar el ratón en sus manos.
 - Recursos descargables: `recursos/fichas-r1-3.pdf`
 
 ### Clase 5: El rincón, el horario y las normas de pantalla
-- Vídeo: `05 - El rincón, el horario y las normas de pantalla.mp4` (5:08)
+- Vídeo: `05 - El rincón, el horario y las normas de pantalla.mp4` (4:56)
 - Subtítulos: `05 - El rincón, el horario y las normas de pantalla.vtt` (idioma: español)
 - Descripción: Preparas un rincón de programación en casa, eliges un horario que funcione y acordáis en familia unas normas de pantalla sencillas y para todos.
 - Recursos descargables: `recursos/fichas-d3-1.pdf`
 
 ### Clase 6: ¿Por dónde empezamos según la edad? Bit (6-8) y Scratch (9-11)
-- Vídeo: `06 - ¿Por dónde empezamos según la edad Bit (6-8) y Scratch (9-11).mp4` (4:58)
+- Vídeo: `06 - ¿Por dónde empezamos según la edad Bit (6-8) y Scratch (9-11).mp4` (4:42)
 - Subtítulos: `06 - ¿Por dónde empezamos según la edad Bit (6-8) y Scratch (9-11).vtt` (idioma: español)
 - Descripción: Decides por dónde empezar según la edad y la experiencia de tu hijo o tu hija, y conoces las herramientas gratuitas para la parte de pantalla.
 
@@ -111,25 +111,25 @@
 ## Sección 3: Semana 1: órdenes en orden
 
 ### Clase 7: Algoritmos en casa: recetas, mochilas y dientes
-- Vídeo: `07 - Algoritmos en casa recetas, mochilas y dientes.mp4` (5:21)
+- Vídeo: `07 - Algoritmos en casa recetas, mochilas y dientes.mp4` (5:10)
 - Subtítulos: `07 - Algoritmos en casa recetas, mochilas y dientes.vtt` (idioma: español)
 - Descripción: Explicas qué es un algoritmo con tareas de casa, preparáis la cuadrícula del suelo y hacéis juntos la primera sesión con Bit, con sus errores típicos y sus soluciones.
 - Recursos descargables: `recursos/fichas-r1-1.pdf`
 
 ### Clase 8: La derecha y la izquierda del robot
-- Vídeo: `08 - La derecha y la izquierda del robot.mp4` (5:10)
+- Vídeo: `08 - La derecha y la izquierda del robot.mp4` (4:54)
 - Subtítulos: `08 - La derecha y la izquierda del robot.vtt` (idioma: español)
 - Descripción: Ayudas a tu hijo o tu hija a superar la dificultad más habitual del curso: entender que la derecha y la izquierda dependen de hacia dónde mira el robot.
 - Recursos descargables: `recursos/fichas-r1-2.pdf`
 
 ### Clase 9: Caza el error: depurar sin dramas
-- Vídeo: `09 - Caza el error depurar sin dramas.mp4` (5:01)
+- Vídeo: `09 - Caza el error depurar sin dramas.mp4` (4:47)
 - Subtítulos: `09 - Caza el error depurar sin dramas.vtt` (idioma: español)
 - Descripción: Conviertes los errores en un juego: tu hijo o tu hija aprende qué es un bug, los cuatro tipos más habituales y un método de cuatro pasos para arreglarlos sin borrarlo todo.
 - Recursos descargables: `recursos/fichas-r1-3.pdf`
 
 ### Clase 10: Proyecto de la semana: el repartidor de la isla
-- Vídeo: `10 - Proyecto de la semana el repartidor de la isla.mp4` (5:17)
+- Vídeo: `10 - Proyecto de la semana el repartidor de la isla.mp4` (5:11)
 - Subtítulos: `10 - Proyecto de la semana el repartidor de la isla.vtt` (idioma: español)
 - Descripción: Cerráis la primera semana con un proyecto: tu hijo o tu hija descompone un reparto en trozos, hace un plan antes de programar y te lo presenta como un programador de verdad.
 - Recursos descargables: `recursos/fichas-r1-4.pdf`
@@ -167,25 +167,25 @@
 ## Sección 4: Semana 2: repetir y encontrar patrones
 
 ### Clase 11: Repetir sin cansarse: los bucles
-- Vídeo: `11 - Repetir sin cansarse los bucles.mp4` (5:11)
+- Vídeo: `11 - Repetir sin cansarse los bucles.mp4` (4:59)
 - Subtítulos: `11 - Repetir sin cansarse los bucles.vtt` (idioma: español)
 - Descripción: Empiezas la semana 2 presentando el bucle en casa: un juego con el cuerpo, cómo contar bien las vueltas y qué preguntar cuando el número no cuadra.
 - Recursos descargables: `recursos/fichas-r2-1.pdf`
 
 ### Clase 12: Encuentra el patrón
-- Vídeo: `12 - Encuentra el patrón.mp4` (4:57)
+- Vídeo: `12 - Encuentra el patrón.mp4` (4:47)
 - Subtítulos: `12 - Encuentra el patrón.vtt` (idioma: español)
 - Descripción: Ayudas a tu hijo o a tu hija a encontrar el trozo que se repite, en casa y en un programa, y a convertirlo en un bucle con varios bloques dentro.
 - Recursos descargables: `recursos/fichas-r2-2.pdf`
 
 ### Clase 13: Dibujar con código: el lápiz de Bit
-- Vídeo: `13 - Dibujar con código el lápiz de Bit.mp4` (4:53)
+- Vídeo: `13 - Dibujar con código el lápiz de Bit.mp4` (4:45)
 - Subtítulos: `13 - Dibujar con código el lápiz de Bit.vtt` (idioma: español)
 - Descripción: Conviertes los bucles y patrones de la semana en dibujos: el juego del robot dibujante en papel cuadriculado, las reglas del lápiz y cómo dibujar un cuadrado en Scratch.
 - Recursos descargables: `recursos/fichas-r2-3.pdf`
 
 ### Clase 14: Proyecto de la semana: el mosaico
-- Vídeo: `14 - Proyecto de la semana el mosaico.mp4` (4:45)
+- Vídeo: `14 - Proyecto de la semana el mosaico.mp4` (4:38)
 - Subtítulos: `14 - Proyecto de la semana el mosaico.vtt` (idioma: español)
 - Descripción: Cerráis la semana 2 con un proyecto que lo junta todo: planificar un mosaico fila a fila, programarlo con bucles, uno dentro de otro, y presentarlo en casa.
 - Recursos descargables: `recursos/fichas-r2-4.pdf`
@@ -222,25 +222,25 @@
 ## Sección 5: Semana 3: el robot decide
 
 ### Clase 15: Eventos: cuando pulso el botón…
-- Vídeo: `15 - Eventos cuando pulso el botón….mp4` (4:40)
+- Vídeo: `15 - Eventos cuando pulso el botón….mp4` (4:32)
 - Subtítulos: `15 - Eventos cuando pulso el botón….vtt` (idioma: español)
 - Descripción: Empiezas la semana 3 con secuencias de luces y con los eventos: juegos de semáforo y de robot teledirigido en casa, la diferencia entre «al empezar» y «al pulsar» y su equivalente en Scratch.
 - Recursos descargables: `recursos/fichas-r3-1.pdf`, `recursos/fichas-r3-3.pdf`
 
 ### Clase 16: Si hay una pared… las condiciones
-- Vídeo: `16 - Si hay una pared… las condiciones.mp4` (5:00)
+- Vídeo: `16 - Si hay una pared… las condiciones.mp4` (4:52)
 - Subtítulos: `16 - Si hay una pared… las condiciones.vtt` (idioma: español)
 - Descripción: Presentas sensores y condiciones en casa: el robot con sensor entre cojines, el «si» dentro del bucle, el «si… si no…» y diagramas de decisión para la nevera.
 - Recursos descargables: `recursos/fichas-r4-1.pdf`, `recursos/fichas-r4-3.pdf`
 
 ### Clase 17: Funciones: ponle nombre a un grupo de órdenes
-- Vídeo: `17 - Funciones ponle nombre a un grupo de órdenes.mp4` (4:53)
+- Vídeo: `17 - Funciones ponle nombre a un grupo de órdenes.mp4` (4:44)
 - Subtítulos: `17 - Funciones ponle nombre a un grupo de órdenes.vtt` (idioma: español)
 - Descripción: Explicas las funciones con órdenes de casa como «pon la mesa», jugáis al baile con nombre y aprendéis a reutilizar: escribirlo una vez, usarlo muchas, también en Scratch.
 - Recursos descargables: `recursos/fichas-r5-1.pdf`, `recursos/fichas-r5-3.pdf`
 
 ### Clase 18: Contar, recordar y repetir hasta que…
-- Vídeo: `18 - Contar, recordar y repetir hasta que….mp4` (4:58)
+- Vídeo: `18 - Contar, recordar y repetir hasta que….mp4` (4:42)
 - Subtítulos: `18 - Contar, recordar y repetir hasta que….vtt` (idioma: español)
 - Descripción: Cerráis la semana 3 con variables y bucles con condición: la caja de los números, el plato de macarrones, el bucle infinito y el proyecto del tesoro de la cueva.
 - Recursos descargables: `recursos/fichas-r6-1.pdf`, `recursos/fichas-r7-1.pdf`, `recursos/fichas-r7-4.pdf`
@@ -277,37 +277,37 @@
 ## Sección 6: Semana 4: su primer videojuego
 
 ### Clase 19: Del robot al escenario: personajes y diálogos
-- Vídeo: `19 - Del robot al escenario personajes y diálogos.mp4` (5:28)
+- Vídeo: `19 - Del robot al escenario personajes y diálogos.mp4` (5:15)
 - Subtítulos: `19 - Del robot al escenario personajes y diálogos.vtt` (idioma: español)
 - Descripción: Empiezas la semana del videojuego pasando de Bit al escenario de Scratch: puntos en lugar de casillas, varios personajes a la vez, grados y diálogos por turnos. Sabrás qué bloque usar, qué preguntar y qué errores esperar.
 - Recursos descargables: `recursos/fichas-g1-1.pdf`, `recursos/fichas-g1-2.pdf`
 
 ### Clase 20: Animación y bucles para siempre
-- Vídeo: `20 - Animación y bucles para siempre.mp4` (5:21)
+- Vídeo: `20 - Animación y bucles para siempre.mp4` (5:10)
 - Subtítulos: `20 - Animación y bucles para siempre.vtt` (idioma: español)
 - Descripción: Tu hijo o tu hija descubre el secreto de los dibujos animados (disfraces y esperas) y el bucle «por siempre», y programa en Scratch un pez que nada sin parar. Sabrás cómo calcular la velocidad juntos y qué errores esperar.
 - Recursos descargables: `recursos/fichas-g2-1.pdf`, `recursos/fichas-g2-2.pdf`
 
 ### Clase 21: Interacción: teclas, clics y mensajes
-- Vídeo: `21 - Interacción teclas, clics y mensajes.mp4` (5:21)
+- Vídeo: `21 - Interacción teclas, clics y mensajes.mp4` (5:09)
 - Subtítulos: `21 - Interacción teclas, clics y mensajes.vtt` (idioma: español)
 - Descripción: La animación se convierte en juego: tu hijo o tu hija programa personajes que responden a un clic, se mueven con las flechas y conversan por turnos con mensajes. Sabrás qué bloques de Scratch usar y cómo resolver los errores más habituales.
 - Recursos descargables: `recursos/fichas-g3-1.pdf`, `recursos/fichas-g3-2.pdf`, `recursos/fichas-g3-3.pdf`
 
 ### Clase 22: Coordenadas, choques y condiciones
-- Vídeo: `22 - Coordenadas, choques y condiciones.mp4` (5:43)
+- Vídeo: `22 - Coordenadas, choques y condiciones.mp4` (5:27)
 - Subtítulos: `22 - Coordenadas, choques y condiciones.vtt` (idioma: español)
 - Descripción: El escenario se convierte en un mapa con coordenadas y el juego gana reglas: choques y comparaciones con números. Tu hijo o tu hija programa en Scratch una manzana que cae y sabe cuándo la han atrapado.
 - Recursos descargables: `recursos/fichas-g4-1.pdf`, `recursos/fichas-g5-1.pdf`
 
 ### Clase 23: Marcador, vidas y su juego: atrapa la fruta
-- Vídeo: `23 - Marcador, vidas y su juego atrapa la fruta.mp4` (5:24)
+- Vídeo: `23 - Marcador, vidas y su juego atrapa la fruta.mp4` (5:11)
 - Subtítulos: `23 - Marcador, vidas y su juego atrapa la fruta.vtt` (idioma: español)
 - Descripción: Tu hijo o tu hija añade variables al juego (puntos y vidas), programa el fin de partida y construye «Atrapa la fruta» con un plan en papel y por trozos. Tú haces de tester y le ayudas a mejorarlo.
 - Recursos descargables: `recursos/fichas-g6-1.pdf`, `recursos/fichas-g6-2.pdf`, `recursos/fichas-g5-4.pdf`
 
 ### Clase 24: La presentación final: feria en casa y diploma
-- Vídeo: `24 - La presentación final feria en casa y diploma.mp4` (5:46)
+- Vídeo: `24 - La presentación final feria en casa y diploma.mp4` (5:36)
 - Subtítulos: `24 - La presentación final feria en casa y diploma.vtt` (idioma: español)
 - Descripción: Cierras las cuatro semanas con una feria en casa: tu hijo o tu hija prepara su juego para el público, lo presenta en dos minutos, recibe comentarios útiles y se lleva su diploma.
 - Recursos descargables: `recursos/fichas-r8-3.pdf`, `recursos/fichas-r8-4.pdf`, `recursos/fichas-g8-4.pdf`
@@ -346,19 +346,19 @@
 ## Sección 7: Cuando el niño se frustra
 
 ### Clase 25: Por qué se frustra (y por qué es buena señal)
-- Vídeo: `25 - Por qué se frustra (y por qué es buena señal).mp4` (5:58)
+- Vídeo: `25 - Por qué se frustra (y por qué es buena señal).mp4` (5:43)
 - Subtítulos: `25 - Por qué se frustra (y por qué es buena señal).vtt` (idioma: español)
 - Descripción: Entiende de dónde sale la frustración al programar, reconoce sus señales y aprende qué preguntar en cada caso para que el error se convierta en un reto y no en un drama.
 - Recursos descargables: `recursos/fichas-r1-3.pdf`
 
 ### Clase 26: Cinco frases que ayudan y tres que no
-- Vídeo: `26 - Cinco frases que ayudan y tres que no.mp4` (6:01)
+- Vídeo: `26 - Cinco frases que ayudan y tres que no.mp4` (5:45)
 - Subtítulos: `26 - Cinco frases que ayudan y tres que no.vtt` (idioma: español)
 - Descripción: Cinco frases concretas, sacadas de las guías de aula de Numi Tech, para acompañar a tu hijo cuando el programa falla, y tres frases habituales que conviene cambiar.
 - Recursos descargables: `recursos/fichas-r5-3.pdf`
 
 ### Clase 27: Cuando no quiere seguir: motivación sin premios ni castigos
-- Vídeo: `27 - Cuando no quiere seguir motivación sin premios ni castigos.mp4` (5:49)
+- Vídeo: `27 - Cuando no quiere seguir motivación sin premios ni castigos.mp4` (5:33)
 - Subtítulos: `27 - Cuando no quiere seguir motivación sin premios ni castigos.vtt` (idioma: español)
 - Descripción: Averigua por qué tu hijo no quiere seguir y recupera las ganas con tres palancas: una dificultad en su punto, la posibilidad de elegir y alguien para quien crear.
 - Recursos descargables: `recursos/fichas-r8-1.pdf`
@@ -397,19 +397,19 @@
 ## Sección 8: Seguridad en internet y bienestar digital
 
 ### Clase 28: Cuentas, edades mínimas y privacidad
-- Vídeo: `28 - Cuentas, edades mínimas y privacidad.mp4` (6:22)
+- Vídeo: `28 - Cuentas, edades mínimas y privacidad.mp4` (6:07)
 - Subtítulos: `28 - Cuentas, edades mínimas y privacidad.vtt` (idioma: español)
 - Descripción: Qué edad hace falta para cada cosa, qué herramientas del curso funcionan sin cuenta, cómo abrir una cuenta de Scratch con seguridad y cómo explicar a tu hijo las contraseñas y los datos personales.
 - Recursos descargables: `recursos/fichas-d1-2.pdf`, `recursos/fichas-d1-1.pdf`
 
 ### Clase 29: Compartir proyectos y hablar con desconocidos
-- Vídeo: `29 - Compartir proyectos y hablar con desconocidos.mp4` (5:44)
+- Vídeo: `29 - Compartir proyectos y hablar con desconocidos.mp4` (5:32)
 - Subtítulos: `29 - Compartir proyectos y hablar con desconocidos.vtt` (idioma: español)
 - Descripción: Qué revisar antes de publicar un proyecto, cómo reconocer las señales de alarma de un desconocido, qué hacer ante el ciberacoso o un mensaje trampa y cómo conseguir que tu hijo te lo cuente.
 - Recursos descargables: `recursos/fichas-d2-3.pdf`, `recursos/fichas-d4-1.pdf`
 
 ### Clase 30: Pantallas, videojuegos y el plan digital de la familia
-- Vídeo: `30 - Pantallas, videojuegos y el plan digital de la familia.mp4` (5:44)
+- Vídeo: `30 - Pantallas, videojuegos y el plan digital de la familia.mp4` (5:30)
 - Subtítulos: `30 - Pantallas, videojuegos y el plan digital de la familia.vtt` (idioma: español)
 - Descripción: Por qué cuesta tanto parar, cómo cuidar el sueño, qué mirar antes de instalar un videojuego, cómo funcionan las compras dentro del juego y cómo hacer un pacto digital para toda la familia.
 - Recursos descargables: `recursos/fichas-d3-4.pdf`, `recursos/fichas-d3-1.pdf`, `recursos/fichas-d3-2.pdf`
@@ -448,13 +448,13 @@
 ## Sección 9: Y ahora, ¿qué?
 
 ### Clase 31: La ruta de los próximos 6 meses
-- Vídeo: `31 - La ruta de los próximos 6 meses.mp4` (5:34)
+- Vídeo: `31 - La ruta de los próximos 6 meses.mp4` (5:22)
 - Subtítulos: `31 - La ruta de los próximos 6 meses.vtt` (idioma: español)
 - Descripción: Un plan para seguir después de las cuatro semanas: Tech Creadores completo, después Tech Digital y, en el sexto mes, robótica con micro:bit y Maqueen, con alternativas gratuitas y un ritmo que se sostiene.
 - Recursos descargables: `recursos/fichas-g8-4.pdf`
 
 ### Clase 32: Clase extra: Numi Tech, cuadernos y más recursos
-- Vídeo: `32 - Clase extra Numi Tech, cuadernos y más recursos.mp4` (3:32)
+- Vídeo: `32 - Clase extra Numi Tech, cuadernos y más recursos.mp4` (3:23)
 - Subtítulos: `32 - Clase extra Numi Tech, cuadernos y más recursos.vtt` (idioma: español)
 - Descripción: Repaso de lo aprendido, el siguiente paso natural y dónde encontrar la app Numi Tech, los cuadernos de actividades sin pantalla y los cupones para los otros cursos de esta serie.
 - Recursos descargables: `recursos/enlaces-y-cupones.pdf`
