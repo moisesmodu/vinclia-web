@@ -1,6 +1,6 @@
 'use client';
 import { useEstado } from './Estado';
-import { precioTexto } from '@/lib/config';
+import { enlaceN, precioTexto } from '@/lib/config';
 import { BotonPagar } from './BotonPagar';
 
 export function Muro({ texto }: { texto?: string }) {
@@ -16,13 +16,13 @@ export function Muro({ texto }: { texto?: string }) {
 }
 
 export function SiguientePaso() {
-  const { t } = useEstado();
+  const { t, locale } = useEstado();
   return (
     <aside className="tarjeta mt-6 border-2 border-oro p-5" data-gancho="proyecto-n">
       <p className="text-sm font-semibold uppercase tracking-wide text-marca">Nuevo en España</p>
       <h2 className="mt-1 text-xl font-bold">{t('sig.t')}</h2>
       <p className="mt-1 text-suave">{t('sig.d')}</p>
-      <a href="/nuevo-en-espana" className="boton boton-2 mt-3">{t('sig.cta')} →</a>
+      <a href={enlaceN(locale, 'simulacro')} className="boton boton-2 mt-3">{t('sig.cta')} →</a>
     </aside>
   );
 }

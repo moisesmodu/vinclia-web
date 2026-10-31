@@ -8,6 +8,7 @@ import { Cabecera } from '@/components/Cabecera';
 import { Pie } from '@/components/Pie';
 import { RegistrarSW } from '@/components/RegistrarSW';
 import { AvisoRecuperacion } from '@/components/AvisoRecuperacion';
+import { Analytics } from '@vercel/analytics/next';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -58,6 +59,8 @@ export default async function Layout({ children, params }: { children: React.Rea
         </EstadoProvider>
         <RegistrarSW />
         {umami && <script defer src={umami} data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID} />}
+        {/* Vercel Web Analytics: sin cookies; recoge ruta y utm_* de cada pieza de marketing (marketing/MEDICION.md). */}
+        <Analytics />
       </body>
     </html>
   );

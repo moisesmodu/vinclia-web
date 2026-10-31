@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PAIS, precioTexto, type Locale, lenguaExplicacion } from '@/lib/config';
+import { PAIS, enlaceN, precioTexto, type Locale, lenguaExplicacion } from '@/lib/config';
 import { traductor } from '@/lib/i18n';
 import { TAREAS, deTarea, FUENTE, IDS_GRATIS, POR_ID } from '@/lib/preguntas';
 import { traducciones } from '@/lib/banco';
@@ -212,7 +212,7 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
           <p className="text-sm font-semibold uppercase tracking-wide text-marca">Nuevo en España</p>
           <h2 className="mt-1 text-3xl font-bold">{t('home.despuesT')}</h2>
           <p className="mt-2 text-suave">{t('home.despuesD')}</p>
-          <a href="/nuevo-en-espana" className="boton boton-2 mt-4">{t('sig.cta')} →</a>
+          <a href={enlaceN(locale, 'portada')} className="boton boton-2 mt-4">{t('sig.cta')} →</a>
         </div>
       </section>
 

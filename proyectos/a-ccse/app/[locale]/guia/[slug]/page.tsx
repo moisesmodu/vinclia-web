@@ -27,6 +27,14 @@ export default async function Guia({ params }: { params: Promise<{ locale: Local
         <p className="font-semibold">{t('inicio.sinRegistro')}</p>
         <Link href={`/${locale}/temas`} className="boton boton-1">{t('inicio.cta')}</Link>
       </div>
+      {d.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }),
+          }}
+        />
+      )}
     </article>
   );
 }

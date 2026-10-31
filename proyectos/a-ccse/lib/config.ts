@@ -23,6 +23,12 @@ export function lenguaExplicacion(l: Locale): LenguaExplicacion {
 }
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 
+/** Venta cruzada con N (Nuevo en España, https://tuspapeles.app): la guía de nacionalidad en el idioma del usuario, con utm para medirla. */
+export const URL_N = 'https://tuspapeles.app';
+export function enlaceN(locale: Locale, campaign: string) {
+  return `${URL_N}/${locale}/guias/nacionalidad?utm_source=a-ccse&utm_medium=cruzada&utm_campaign=${campaign}`;
+}
+
 export function precioTexto(locale: Locale = 'es') {
   return new Intl.NumberFormat(locale === 'zh' ? 'zh-CN' : locale, { style: 'currency', currency: PAIS.moneda }).format(
     PAIS.precioCentimos / 100,
