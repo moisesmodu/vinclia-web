@@ -37,52 +37,57 @@
 
 **Palabras clave (para el título, la descripción y los vídeos cortos):** micro:bit, Maqueen, robótica para niños, robótica educativa, MakeCode, programación de robots, STEAM primaria, extraescolar de robótica, sensor de ultrasonidos, seguidor de línea
 
-**Total:** 38 clases
+**Total:** 38 clases, 222.7 minutos de vídeo montado
 
 
 ## Sección 1: Empieza aquí
 
 ### Clase 1: Bienvenida: un robot que se para solo antes del muro · **vista previa gratuita**
-- Vídeo: `01 - Bienvenida un robot que se para solo antes del muro.mp4` (pendiente de montar)
+- Vídeo: `01 - Bienvenida un robot que se para solo antes del muro.mp4` (3:23)
 - Subtítulos: `01 - Bienvenida un robot que se para solo antes del muro.vtt` (idioma: español)
 - Descripción: Descubre qué vas a construir en este curso: un robot Maqueen con micro:bit que avanza, gira, dibuja y se para solo antes de chocar. Verás cómo es cada clase y para quién está pensado.
 
 ### Clase 2: Cómo seguir el curso: niños, familias y profes · **vista previa gratuita**
-- Vídeo: `02 - Cómo seguir el curso niños, familias y profes.mp4` (pendiente de montar)
+- Vídeo: `02 - Cómo seguir el curso niños, familias y profes.mp4` (5:04)
 - Subtítulos: `02 - Cómo seguir el curso niños, familias y profes.vtt` (idioma: español)
 - Descripción: Aprende a sacar partido al curso en casa o en el aula: con el robot y MakeCode gratis, solo con el simulador o con actividades sin pantalla, a una sesión por semana.
 
 ### Clase 3: Materiales: el kit exacto y cuánto cuesta · **vista previa gratuita**
-- Vídeo: `03 - Materiales el kit exacto y cuánto cuesta.mp4` (pendiente de montar)
+- Vídeo: `03 - Materiales el kit exacto y cuánto cuesta.mp4` (5:22)
 - Subtítulos: `03 - Materiales el kit exacto y cuánto cuesta.vtt` (idioma: español)
 - Descripción: Qué comprar para seguir el curso con el robot de verdad: el Maqueen Lite V5 y la micro:bit V2, precios orientativos de octubre de 2026, qué pilas usar y qué modelos evitar.
 
 ### Clase 4: Del simulador al robot: MakeCode paso a paso
-- Vídeo: `04 - Del simulador al robot MakeCode paso a paso.mp4` (pendiente de montar)
+- Vídeo: `04 - Del simulador al robot MakeCode paso a paso.mp4` (5:16)
 - Subtítulos: `04 - Del simulador al robot MakeCode paso a paso.vtt` (idioma: español)
 - Descripción: Pasa tu programa del simulador al Maqueen de verdad con MakeCode: descargar con el robot apagado, emparejar la micro:bit, el camino alternativo si la red lo bloquea y qué hacer si algo falla.
+- Recursos descargables: `recursos/fichas-k1-1.pdf`
 
 ## Sección 2: Unidad 1: Qué es un robot
 
 ### Clase 5: Robots a nuestro alrededor
-- Vídeo: `05 - Robots a nuestro alrededor.mp4` (pendiente de montar)
+- Vídeo: `05 - Robots a nuestro alrededor.mp4` (5:24)
 - Subtítulos: `05 - Robots a nuestro alrededor.vtt` (idioma: español)
 - Descripción: Qué hace que una máquina sea un robot (siente, piensa y actúa), las partes del Maqueen Lite y el primer programa con tres bloques: motor, espera y para.
+- Recursos descargables: `recursos/fichas-k1-1.pdf`
 
 ### Clase 6: Motores y velocidad
-- Vídeo: `06 - Motores y velocidad.mp4` (pendiente de montar)
+- Vídeo: `06 - Motores y velocidad.mp4` (5:32)
 - Subtítulos: `06 - Motores y velocidad.vtt` (idioma: español)
 - Descripción: Qué quiere decir el número de velocidad del motor (de 0 a 255), por qué por debajo de 30 el robot no se mueve, cómo ir adelante y atrás, y cómo medir la velocidad real de tu Maqueen.
+- Recursos descargables: `recursos/fichas-k1-2.pdf`
 
 ### Clase 7: Girar sobre sí mismo
-- Vídeo: `07 - Girar sobre sí mismo.mp4` (pendiente de montar)
+- Vídeo: `07 - Girar sobre sí mismo.mp4` (5:34)
 - Subtítulos: `07 - Girar sobre sí mismo.vtt` (idioma: español)
 - Descripción: Cómo gira un robot sin volante: giro sobre sí mismo (90 grados en unos 600 ms a velocidad 100), giro en arco y cómo calibrar el giro de tu Maqueen en una cruz de cinta.
+- Recursos descargables: `recursos/fichas-k1-3.pdf`
 
 ### Clase 8: Proyecto: el paseo de la feria
-- Vídeo: `08 - Proyecto el paseo de la feria.mp4` (pendiente de montar)
+- Vídeo: `08 - Proyecto el paseo de la feria.mp4` (5:27)
 - Subtítulos: `08 - Proyecto el paseo de la feria.vtt` (idioma: español)
 - Descripción: Proyecto de la unidad 1: descompón una ruta en tramos y giros, planifícala en papel, prográmala trozo a trozo y calíbrala en el Maqueen de verdad sobre una pista en el suelo.
+- Recursos descargables: `recursos/fichas-k1-4.pdf`
 
 ### Cuestionario: Cuestionario: qué es un robot
 
@@ -118,24 +123,28 @@
 ## Sección 3: Unidad 2: Movimiento preciso
 
 ### Clase 9: Velocidad × tiempo
-- Vídeo: `09 - Velocidad × tiempo.mp4` (pendiente de montar)
+- Vídeo: `09 - Velocidad × tiempo.mp4` (5:46)
 - Subtítulos: `09 - Velocidad × tiempo.vtt` (idioma: español)
 - Descripción: La fórmula de los robots precisos: distancia = velocidad × tiempo, y al revés. Aprende que el número de velocidad no son centímetros por segundo y calibra tu Maqueen con una regla.
+- Recursos descargables: `recursos/fichas-k2-1.pdf`
 
 ### Clase 10: Polígonos
-- Vídeo: `10 - Polígonos.mp4` (pendiente de montar)
+- Vídeo: `10 - Polígonos.mp4` (6:02)
 - Subtítulos: `10 - Polígonos.vtt` (idioma: español)
 - Descripción: Gira ángulos exactos controlando el tiempo, descubre la regla de los 360 grados y usa el bloque repite para que el Maqueen dibuje cuadrados, triángulos, hexágonos y una estrella.
+- Recursos descargables: `recursos/fichas-k2-2.pdf`
 
 ### Clase 11: Círculos y curvas
-- Vídeo: `11 - Círculos y curvas.mp4` (pendiente de montar)
+- Vídeo: `11 - Círculos y curvas.mp4` (5:52)
 - Subtítulos: `11 - Círculos y curvas.vtt` (idioma: español)
 - Descripción: Haz que el Maqueen dibuje círculos y curvas con las ruedas a velocidades diferentes: hacia qué lado gira, cómo cambiar el tamaño del círculo y cómo elegir con el tiempo un círculo entero, medio o un cuarto.
+- Recursos descargables: `recursos/fichas-k2-3.pdf`
 
 ### Clase 12: Proyecto: el robot artista
-- Vídeo: `12 - Proyecto el robot artista.mp4` (pendiente de montar)
+- Vídeo: `12 - Proyecto el robot artista.mp4` (5:52)
 - Subtítulos: `12 - Proyecto el robot artista.vtt` (idioma: español)
 - Descripción: Proyecto de la unidad 2: diseña una obra de un solo trazo, pártela en tramos, giros y curvas, calcula el tiempo de cada trozo y pruébala con el Maqueen de verdad sobre papel.
+- Recursos descargables: `recursos/fichas-k2-4.pdf`
 
 ### Cuestionario: Cuestionario: movimiento preciso
 
@@ -171,24 +180,28 @@
 ## Sección 4: Unidad 3: El sensor de distancia
 
 ### Clase 13: ¿Cómo mide un robot? El sensor de ultrasonidos
-- Vídeo: `13 - ¿Cómo mide un robot El sensor de ultrasonidos.mp4` (pendiente de montar)
+- Vídeo: `13 - ¿Cómo mide un robot El sensor de ultrasonidos.mp4` (6:27)
 - Subtítulos: `13 - ¿Cómo mide un robot El sensor de ultrasonidos.vtt` (idioma: español)
 - Descripción: Descubre cómo el Maqueen mide distancias con el eco de un silbido, qué significa el 500 y por qué la medida tiene que ir en «para siempre».
+- Recursos descargables: `recursos/fichas-k3-1.pdf`
 
 ### Clase 14: Para antes del muro: el robot decide con «si… si no»
-- Vídeo: `14 - Para antes del muro el robot decide con «si… si no».mp4` (pendiente de montar)
+- Vídeo: `14 - Para antes del muro el robot decide con «si… si no».mp4` (6:02)
 - Subtítulos: `14 - Para antes del muro el robot decide con «si… si no».vtt` (idioma: español)
 - Descripción: Programa un Maqueen que se para solo delante de una caja, esté donde esté, con «si… si no» dentro de «para siempre», y ajusta el umbral según la velocidad.
+- Recursos descargables: `recursos/fichas-k3-2.pdf`
 
 ### Clase 15: Esquiva obstáculos: gira, apártate y sigue
-- Vídeo: `15 - Esquiva obstáculos gira, apártate y sigue.mp4` (pendiente de montar)
+- Vídeo: `15 - Esquiva obstáculos gira, apártate y sigue.mp4` (5:56)
 - Subtítulos: `15 - Esquiva obstáculos gira, apártate y sigue.vtt` (idioma: español)
 - Descripción: Cambia una sola cosa del programa de pararse para que el Maqueen gire, esquive cajas con una maniobra completa y recorra el almacén sin chocar en todas las pistas.
+- Recursos descargables: `recursos/fichas-k3-3.pdf`
 
 ### Clase 16: Proyecto: aparcamiento automático con «si» anidados
-- Vídeo: `16 - Proyecto aparcamiento automático con «si» anidados.mp4` (pendiente de montar)
+- Vídeo: `16 - Proyecto aparcamiento automático con «si» anidados.mp4` (6:06)
 - Subtítulos: `16 - Proyecto aparcamiento automático con «si» anidados.vtt` (idioma: español)
 - Descripción: Cierra la unidad del sensor de distancia con un proyecto de ingeniería: una carretilla que va rápido lejos, frena cerca y se para a la distancia justa, con un «si» dentro de otro.
+- Recursos descargables: `recursos/fichas-k3-4.pdf`
 
 ### Cuestionario: Cuestionario: el sensor de distancia
 
@@ -223,24 +236,28 @@
 ## Sección 5: Unidad 4: Seguir la línea
 
 ### Clase 17: ¿Blanco o negro? Los sensores de línea
-- Vídeo: `17 - ¿Blanco o negro Los sensores de línea.mp4` (pendiente de montar)
+- Vídeo: `17 - ¿Blanco o negro Los sensores de línea.mp4` (5:50)
 - Subtítulos: `17 - ¿Blanco o negro Los sensores de línea.vtt` (idioma: español)
 - Descripción: Conoce los tres sensores de línea del Maqueen, qué significan el 0, el 1 y el valor de gris, y programa un robot que se para en la cinta negra o en una zona de color.
+- Recursos descargables: `recursos/fichas-k4-1.pdf`
 
 ### Clase 18: El borde de la línea: un seguidor con un sensor
-- Vídeo: `18 - El borde de la línea un seguidor con un sensor.mp4` (pendiente de montar)
+- Vídeo: `18 - El borde de la línea un seguidor con un sensor.mp4` (6:00)
 - Subtítulos: `18 - El borde de la línea un seguidor con un sensor.vtt` (idioma: español)
 - Descripción: Programa un seguidor de línea con un solo sensor que avanza en zigzag por el borde de la cinta y aprende a ajustar las velocidades para no perderse en las curvas.
+- Recursos descargables: `recursos/fichas-k4-2.pdf`
 
 ### Clase 19: Dos sensores y cruces: más recto y más rápido
-- Vídeo: `19 - Dos sensores y cruces más recto y más rápido.mp4` (pendiente de montar)
+- Vídeo: `19 - Dos sensores y cruces más recto y más rápido.mp4` (5:43)
 - Subtítulos: `19 - Dos sensores y cruces más recto y más rápido.vtt` (idioma: español)
 - Descripción: Programa un seguidor de línea con dos sensores que va recto, detecta estaciones y cruces con una condición «y» y, con tres sensores, no se pierde en las curvas de 90 grados.
+- Recursos descargables: `recursos/fichas-k4-3.pdf`
 
 ### Clase 20: Proyecto: el tren de mercancías
-- Vídeo: `20 - Proyecto el tren de mercancías.mp4` (pendiente de montar)
+- Vídeo: `20 - Proyecto el tren de mercancías.mp4` (5:55)
 - Subtítulos: `20 - Proyecto el tren de mercancías.vtt` (idioma: español)
 - Descripción: Cierra la unidad de seguir la línea con un tren que sigue la vía con el chip del Maqueen, para y silba en cada estación y se detiene en la terminal azul, programado a trozos como un ingeniero.
+- Recursos descargables: `recursos/fichas-k4-4.pdf`
 
 ### Cuestionario: Cuestionario: seguir la línea
 
@@ -274,24 +291,28 @@
 ## Sección 6: Unidad 5: Luz, sonido y LED
 
 ### Clase 21: El robot mariposa
-- Vídeo: `21 - El robot mariposa.mp4` (pendiente de montar)
+- Vídeo: `21 - El robot mariposa.mp4` (6:13)
 - Subtítulos: `21 - El robot mariposa.vtt` (idioma: español)
 - Descripción: Conoce los dos sensores de luz del Maqueen, aprende a elegir un umbral midiendo y programa un robot mariposa que compara izquierda y derecha para ir solo hacia la luz.
+- Recursos descargables: `recursos/fichas-k5-1.pdf`
 
 ### Clase 22: Alarmas
-- Vídeo: `22 - Alarmas.mp4` (pendiente de montar)
+- Vídeo: `22 - Alarmas.mp4` (6:10)
 - Subtítulos: `22 - Alarmas.vtt` (idioma: español)
 - Descripción: Usa el zumbador, las luces y la pantalla de LED para que el Maqueen avise, calcula cuánto tardan las notas y programa una alarma con sensor, condición y avisos, y un timbre con el botón A.
+- Recursos descargables: `recursos/fichas-k5-2.pdf`
 
 ### Clase 23: La farola automática
-- Vídeo: `23 - La farola automática.mp4` (pendiente de montar)
+- Vídeo: `23 - La farola automática.mp4` (5:58)
 - Subtítulos: `23 - La farola automática.vtt` (idioma: español)
 - Descripción: Programa una farola que se enciende sola cuando oscurece y se apaga cuando vuelve la luz, usa las 4 luces de abajo del Maqueen y combina dos «si» en un mismo «para siempre».
+- Recursos descargables: `recursos/fichas-k5-3.pdf`
 
 ### Clase 24: Proyecto: la casa inteligente
-- Vídeo: `24 - Proyecto la casa inteligente.mp4` (pendiente de montar)
+- Vídeo: `24 - Proyecto la casa inteligente.mp4` (6:07)
 - Subtítulos: `24 - Proyecto la casa inteligente.vtt` (idioma: español)
 - Descripción: Planifica con una tabla, programa por partes y prueba una casa inteligente en la que el Maqueen hace de luz de noche, timbre y vigilante, con varios guiones a la vez y condiciones dobles con «y».
+- Recursos descargables: `recursos/fichas-k5-4.pdf`
 
 ### Cuestionario: Cuestionario: luz, sonido y LED
 
@@ -325,24 +346,28 @@
 ## Sección 7: Unidad 6: Control inteligente
 
 ### Clase 25: Velocidad que cambia
-- Vídeo: `25 - Velocidad que cambia.mp4` (pendiente de montar)
+- Vídeo: `25 - Velocidad que cambia.mp4` (6:19)
 - Subtítulos: `25 - Velocidad que cambia.vtt` (idioma: español)
 - Descripción: Usa variables como herramienta de ingeniería: un arranque suave en el que la velocidad sube poco a poco y un contador que suma 1 en cada línea, distinguiendo «pon» de «cambia en».
+- Recursos descargables: `recursos/fichas-k6-1.pdf`
 
 ### Clase 26: Cuanto más lejos, más deprisa
-- Vídeo: `26 - Cuanto más lejos, más deprisa.mp4` (pendiente de montar)
+- Vídeo: `26 - Cuanto más lejos, más deprisa.mp4` (6:15)
 - Subtítulos: `26 - Cuanto más lejos, más deprisa.vtt` (idioma: español)
 - Descripción: Calcula la velocidad con la distancia que mide el ultrasonido y descubre el control proporcional: velocidad igual a error por k, el papel de la ganancia k y la zona muerta de los motores.
+- Recursos descargables: `recursos/fichas-k6-2.pdf`
 
 ### Clase 27: Sigue al líder
-- Vídeo: `27 - Sigue al líder.mp4` (pendiente de montar)
+- Vídeo: `27 - Sigue al líder.mp4` (6:00)
 - Subtítulos: `27 - Sigue al líder.vtt` (idioma: español)
 - Descripción: Usa el control proporcional para que el Maqueen siga a un objetivo que se mueve sin chocar, entiende por qué lo sigue más lejos cuando el líder corre y haz que retroceda y avise con luces de freno.
+- Recursos descargables: `recursos/fichas-k6-3.pdf`
 
 ### Clase 28: Proyecto: el coche autónomo
-- Vídeo: `28 - Proyecto el coche autónomo.mp4` (pendiente de montar)
+- Vídeo: `28 - Proyecto el coche autónomo.mp4` (5:59)
 - Subtítulos: `28 - Proyecto el coche autónomo.vtt` (idioma: español)
 - Descripción: Construye a trozos un coche autónomo que sigue la carretera, guarda la distancia con el coche de delante, enciende las luces de freno y los faros de noche, y pruébalo en un circuito de cinta.
+- Recursos descargables: `recursos/fichas-k6-4.pdf`
 
 ### Cuestionario: Cuestionario: control inteligente
 
@@ -376,24 +401,28 @@
 ## Sección 8: Unidad 7: Misiones
 
 ### Clase 29: El robot aspirador: rebotar o hacer zigzag
-- Vídeo: `29 - El robot aspirador rebotar o hacer zigzag.mp4` (pendiente de montar)
+- Vídeo: `29 - El robot aspirador rebotar o hacer zigzag.mp4` (6:46)
 - Subtítulos: `29 - El robot aspirador rebotar o hacer zigzag.vtt` (idioma: español)
 - Descripción: Programa un Maqueen aspirador que limpia un comedor sin mapa, compara la estrategia de rebotar con el zigzag y usa una variable para recordar hacia qué lado gira.
+- Recursos descargables: `recursos/fichas-k7-1.pdf`
 
 ### Clase 30: Sumo de robots: el orden de los «si» es la prioridad
-- Vídeo: `30 - Sumo de robots el orden de los «si» es la prioridad.mp4` (pendiente de montar)
+- Vídeo: `30 - Sumo de robots el orden de los «si» es la prioridad.mp4` (6:11)
 - Subtítulos: `30 - Sumo de robots el orden de los «si» es la prioridad.vtt` (idioma: español)
 - Descripción: Programa un Maqueen de sumo que no sale nunca del dohyo, busca al rival con los ultrasonidos y ataca, y descubre por qué el orden de las condiciones decide quién gana.
+- Recursos descargables: `recursos/fichas-k7-2.pdf`
 
 ### Clase 31: Rescate en la cueva: empujar recto y trabajar por fases
-- Vídeo: `31 - Rescate en la cueva empujar recto y trabajar por fases.mp4` (pendiente de montar)
+- Vídeo: `31 - Rescate en la cueva empujar recto y trabajar por fases.mp4` (6:14)
 - Subtítulos: `31 - Rescate en la cueva empujar recto y trabajar por fases.vtt` (idioma: español)
 - Descripción: Programa un Maqueen que busca una baliza, la empuja en línea recta hasta una base de color y avisa al terminar, usando el valor de gris del sensor de línea y una misión dividida en fases.
+- Recursos descargables: `recursos/fichas-k7-3.pdf`
 
 ### Clase 32: Proyecto: la carrera contrarreloj
-- Vídeo: `32 - Proyecto la carrera contrarreloj.mp4` (pendiente de montar)
+- Vídeo: `32 - Proyecto la carrera contrarreloj.mp4` (6:09)
 - Subtítulos: `32 - Proyecto la carrera contrarreloj.vtt` (idioma: español)
 - Descripción: Programa un seguidor de línea que pasa por todos los puntos de control, se para en la raya de meta y muestra su tiempo, y mejóralo como un equipo de carreras: un cambio, una prueba, una medida.
+- Recursos descargables: `recursos/fichas-k7-4.pdf`
 
 ### Cuestionario: Cuestionario: la Semana de las Misiones
 
@@ -428,24 +457,28 @@
 ## Sección 9: Unidad 8: Tu robot
 
 ### Clase 33: Diseña la misión: tu proyecto final empieza en papel
-- Vídeo: `33 - Diseña la misión tu proyecto final empieza en papel.mp4` (pendiente de montar)
+- Vídeo: `33 - Diseña la misión tu proyecto final empieza en papel.mp4` (6:16)
 - Subtítulos: `33 - Diseña la misión tu proyecto final empieza en papel.vtt` (idioma: español)
 - Descripción: Aprende qué hace buena una misión de robot, dibújala a escala en una cuadrícula de 10 centímetros por casilla y prepárala para programarla y probarla con el Maqueen.
+- Recursos descargables: `recursos/fichas-k8-1.pdf`
 
 ### Clase 34: Programa y prueba: versiones, tramos y depuración
-- Vídeo: `34 - Programa y prueba versiones, tramos y depuración.mp4` (pendiente de montar)
+- Vídeo: `34 - Programa y prueba versiones, tramos y depuración.mp4` (6:17)
 - Subtítulos: `34 - Programa y prueba versiones, tramos y depuración.vtt` (idioma: español)
 - Descripción: Programa tu misión en versiones, divídela en tramos, encuentra los errores con luces y números en la pantalla, y comprueba que funciona en pistas diferentes.
+- Recursos descargables: `recursos/fichas-k8-2.pdf`
 
 ### Clase 35: Del simulador al robot de verdad: MakeCode y calibrar
-- Vídeo: `35 - Del simulador al robot de verdad MakeCode y calibrar.mp4` (pendiente de montar)
+- Vídeo: `35 - Del simulador al robot de verdad MakeCode y calibrar.mp4` (6:42)
 - Subtítulos: `35 - Del simulador al robot de verdad MakeCode y calibrar.vtt` (idioma: español)
 - Descripción: Pasa tu programa del simulador a la micro:bit con MakeCode, relaciona los bloques con su JavaScript y calibra la velocidad y los giros de tu Maqueen: mide, calcula y ajusta.
+- Recursos descargables: `recursos/fichas-k8-3.pdf`
 
 ### Clase 36: Presentación y diploma: la Muestra de Robots
-- Vídeo: `36 - Presentación y diploma la Muestra de Robots.mp4` (pendiente de montar)
+- Vídeo: `36 - Presentación y diploma la Muestra de Robots.mp4` (6:24)
 - Subtítulos: `36 - Presentación y diploma la Muestra de Robots.vtt` (idioma: español)
 - Descripción: Prepara una presentación de dos minutos de tu misión, prueba la de otra persona con un informe útil y amable, y demuéstrala con el Maqueen de verdad para cerrar el curso con tu diploma.
+- Recursos descargables: `recursos/fichas-k8-4.pdf`
 
 ### Cuestionario: Cuestionario: tu robot, de la idea a la Muestra
 
@@ -479,12 +512,14 @@
 ## Sección 10: Para profes y siguientes pasos
 
 ### Clase 37: Cómo dar este curso en una extraescolar o en el aula
-- Vídeo: `37 - Cómo dar este curso en una extraescolar o en el aula.mp4` (pendiente de montar)
+- Vídeo: `37 - Cómo dar este curso en una extraescolar o en el aula.mp4` (6:16)
 - Subtítulos: `37 - Cómo dar este curso en una extraescolar o en el aula.vtt` (idioma: español)
 - Descripción: Plan de 60 minutos por sesión, grupos de 3 o 4 con un kit, montaje de las pistas, normas de seguridad con el robot, rúbrica de 4 criterios y ticket de salida para dar el curso con un grupo.
+- Recursos descargables: `recursos/fichas-k1-1.pdf`, `recursos/fichas-k4-2.pdf`, `recursos/fichas-k8-4.pdf`
 
 ### Clase 38: Clase extra: Numi Tech para tu centro y más recursos
-- Vídeo: `38 - Clase extra Numi Tech para tu centro y más recursos.mp4` (pendiente de montar)
+- Vídeo: `38 - Clase extra Numi Tech para tu centro y más recursos.mp4` (3:36)
 - Subtítulos: `38 - Clase extra Numi Tech para tu centro y más recursos.vtt` (idioma: español)
 - Descripción: Repasa lo aprendido en el curso, descubre cómo seguir con MakeCode y el robot, y encuentra los enlaces actualizados a Numi Tech, el plan escuela para centros y los otros cursos de la serie.
+- Recursos descargables: `recursos/enlaces-y-cupones.pdf`
 

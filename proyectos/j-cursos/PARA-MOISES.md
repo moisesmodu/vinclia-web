@@ -53,6 +53,6 @@ montados la sesión del Mac con `DESPLIEGUE.md`: no tienes que hacer nada.
 ## Entrega
 
 - Cursos 1, 3 (sección 1) y 4: https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK (privada, con tu cuenta).
-- Curso 2: página aparte (se añade aquí al publicarla).
+- Curso 2: https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3 (privada, con tu cuenta).
 
 En cada sección, «Descargar sección (zip)» baja los vídeos, los subtítulos y los PDF juntos para el cargador masivo.

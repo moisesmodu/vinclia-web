@@ -11,7 +11,7 @@
 |---|---|---|
 | c1 · Enseña a programar a tu hijo con Scratch | https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK | 32 clases + promo (164,7 min), 48 PDF, imagen, VTT, cuestionarios y ficha |
 | c4 · Bienestar digital en familia | misma página (pestaña «Bienestar digital») | se añade al terminar el montaje |
-| c2 · Crea robots con micro:bit y Maqueen | página aparte (se anota aquí al publicarla) | 38 clases + promo |
+| c2 · Crea robots con micro:bit y Maqueen | https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3 | 38 clases + promo (222,7 min), 33 PDF, imagen, VTT, cuestionarios y ficha |
 | c3 · Ahorra horas con IA (sección 1) | misma página que c1 (pestaña «IA para autónomos») | promo + clases 1-3 (+ 20 y 23 para los vídeos cortos) |
 
 Las páginas son privadas de la cuenta de Moisés. Cada sección se baja en un zip («Descargar sección») con los MP4, los
