@@ -10,8 +10,8 @@ opción libre de cada fila en [DonDominio](https://www.dondominio.com/es/) o en 
 
 | Prioridad | Sitio | Opción 1 (la que lleva el código) | Opción 2 | Opción 3 | Precio aproximado |
 |---|---|---|---|---|---|
-| **Imprescindible** | 1 · NetoClaro (nómina y laboral) | **netoclaro.es** | calculanomina.es | sounet.es | 8–12 €/año |
-| **Imprescindible** | 2 · ImpuestoClaro (impuestos y autónomos) | **impuestoclaro.es** | cuotaclara.es | irpfacil.es | 8–12 €/año |
+| ✅ Hecho | 1 · NetoClaro (nómina y laboral) | **netoclaro.app** (activo desde el 31/10) | — | — | — |
+| ✅ Hecho | 2 · ImpuestoClaro (impuestos y autónomos) | **impuestoclaro.es** (activo desde el 31/10) | — | — | — |
 | Recomendado, porque ya se está construyendo | 3 · ChequeClaro (finanzas de EE. UU. en español) | **chequeclaro.com** | taxesclaros.com | nominaclara.com | 10–15 €/año |
 | Recomendado | Portal CalculaClaro (buscador de todas las calculadoras y puerta a cada sitio) | **calculaclaro.com** | calculaclaro.es | numerosclaros.com | 10–15 €/año |
 | Recomendado, ya construido | 4 · HogarClaro (vivienda e hipotecas) | **hogarclaro.es** | hogarclaro.com | casaclara.es | 8–12 €/año |
