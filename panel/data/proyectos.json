@@ -74,6 +74,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Stripe en modo real en producción (precio 9,99 €, webhook real); quitado consent_collection del Checkout (Stripe no lo admite en España) y redesplegado"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio ccsefacil.com comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       }
     ],
     "proximos": [
@@ -349,6 +353,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Stripe en modo real en producción: 4,99 €/mes y pack 19,90 €, webhook real; Checkout cs_live comprobado"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio tuspapeles.app comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       }
     ],
     "proximos": [
@@ -634,6 +642,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Stripe en modo real en producción (9,99 €/mes, 23,97 € trimestral, 71,88 € anual), webhook real. Pendiente en código: cliente y portal de Stripe por modo (lib/pagos.ts). Dominio elegido: oposita.digital (también para oposiciones nacionales)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio oposita.digital comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       }
     ],
     "proximos": [
@@ -1708,6 +1720,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Stripe en modo real en producción (PDF 7,90 €, tapa dura 36,90 €), webhook real. Falta HERMANOS20 en real: la clave restringida necesita permiso de Promotion codes/Coupons"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio lunilla.cat comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       }
     ],
     "proximos": [
@@ -3116,6 +3132,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio netoclaro.app e impuestoclaro.es comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       }
     ],
     "proximos": [
