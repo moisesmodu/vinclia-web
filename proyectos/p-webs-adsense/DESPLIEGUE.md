@@ -221,3 +221,8 @@ done
 # Comprobar: la portada carga /_vercel/insights/script.js y la canónica es el dominio propio
 curl -s https://netoclaro.app/ | grep -o '_vercel/insights[^"]*\|<link rel="canonical"[^>]*>'
 ```
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+`netoclaro` e `impuestoclaro` redesplegados con el commit 933681a: https://netoclaro.app e https://impuestoclaro.es con canónica del dominio y el script de analítica en la página; `/calculadora-paga-extra/` (es y ca) responde. Pendiente (Moisés): Search Console y AdSense (`ADSENSE_CLIENT`).
+
+Ejecutado el 2026-10-31
