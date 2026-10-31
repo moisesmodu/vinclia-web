@@ -1,0 +1,28 @@
+{"clave":"n-nuevo-en-espana",
+"competidores":[
+{"nombre":"Parainmigrantes.info","url":"https://www.parainmigrantes.info/","precio":"Contenido gratis; gestión de expedientes de pago","debilidad":"Solo en español, orientado a captar clientes del despacho; sin listas personalizadas ni recordatorios"},
+{"nombre":"Machelin Díaz (blog y YouTube)","url":"https://machelindiaz.com/","precio":"Contenido gratis; asesoría de pago","debilidad":"Solo español, artículos largos, depende de una persona"},
+{"nombre":"Extranjería app (citas, no oficial)","url":"https://apps.apple.com/ca/app/extranjer%C3%ADa-app/id6450997467","precio":"no verificado","debilidad":"Solo alertas de cita; sin guía ni idiomas"},
+{"nombre":"Guías de ONG y administraciones (Red Acoge, Generalitat en 9 idiomas, ayuntamientos)","url":"https://archivo.acoge.org/wp-content/uploads/2026/05/Guia-Regularizacion-2026_Web-1.pdf","precio":"Gratis","debilidad":"PDF estáticos, sin seguimiento de plazos ni actualización ágil; lenguaje jurídico"},
+{"nombre":"Portal oficial de Inclusión","url":"https://www.inclusion.gob.es/","precio":"Gratis","debilidad":"Solo español, lenguaje administrativo"},
+{"nombre":"Creadores de TikTok y asistentes de IA genéricos","url":"https://maldita.es/malditobulo/20260130/lanzan-un-llamamiento-a-todos-los-inmigrantes-para-venir-a-espana-con-la-regularizacion-masiva-y-vivir-de-las-ayudas-sociales/","precio":"Gratis","debilidad":"Desinformación verificada por Maldita; sin fuentes oficiales"},
+{"nombre":"Integreat (Alemania, modelo de referencia)","url":"https://integreat-app.de/en/","precio":"Gratis para el usuario; lo pagan los municipios","debilidad":"No cubre España; muestra que el modelo que funciona es venderlo a ayuntamientos"}],
+"repos":[
+{"nombre":"digitalfabrik/integreat-app","url":"https://github.com/digitalfabrik/integreat-app","licencia":"MIT","uso":"App de guías locales multilingües para recién llegados: arquitectura de categorías, sin conexión e idiomas","estrellas":"58"},
+{"nombre":"fuma-nama/fumadocs","url":"https://github.com/fuma-nama/fumadocs","licencia":"MIT","uso":"Documentación Next.js con búsqueda e idiomas para publicar las guías","estrellas":"13.400"},
+{"nombre":"amannn/next-intl","url":"https://github.com/amannn/next-intl","licencia":"MIT","uso":"Rutas por idioma y árabe de derecha a izquierda","estrellas":"3.000"},
+{"nombre":"legalize-dev/legalize-es","url":"https://github.com/legalize-dev/legalize-es","licencia":"Revisar LICENSE","uso":"Legislación española en Markdown versionada: detectar cambios normativos por diff","estrellas":"1.964"},
+{"nombre":"GeiserX/awesome-spain","url":"https://github.com/GeiserX/awesome-spain","licencia":"CC0","uso":"Catálogo de software abierto de España (Cl@ve, certificados, AEAT)","estrellas":"361"}],
+"hallazgos":[
+"Pico de demanda previsible: la regularización cerró con 1.174.978 solicitudes; la autorización inicial dura un año, así que entre abril y junio de 2027 cerca de un millón de personas tendrán que renovar. La guía de renovación es el producto estrella.",
+"Confusión masiva: muchas solicitudes duplicadas y solo un 30 % admitidas a trámite a mitad de plazo según CEAR; hay apetito por instrucciones claras en lengua materna.",
+"Canales dominantes: YouTube y TikTok de despachos, con mucha desinformación; hueco para contenido con fuente oficial citada.",
+"Las administraciones ya publican guías en árabe, francés, rumano, chino y ucraniano: el conjunto de idiomas está validado, pero hay mucho contenido gratis y la disposición a pagar 4,99 €/mes es incierta; el modelo de pago por municipios sugiere una vía B2B.",
+"Riesgo regulatorio: dar asesoramiento sin ser abogado exige avisos y derivación; la normativa cambia a menudo y exige mantenimiento continuo.",
+"Trámites con fricción real y muy buscados: cita de extranjería y DGT, empadronamiento, tarjeta sanitaria, canje de permiso de conducir, número de la Seguridad Social. Cada uno es una landing por idioma."],
+"mejoras":[
+"Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
+"Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
+"Monitor automático de cambios legales que actualiza las guías y avisa al suscriptor: 'tu trámite ha cambiado'.",
+"Vídeos cortos multilingües con subtítulos y comunidades de WhatsApp y Telegram por idioma; colaborar con despachos verificados por afiliación.",
+"Generadores de documentos (solicitud de empadronamiento, autorización de representación, alegaciones) en español con explicación en el idioma del usuario."]}

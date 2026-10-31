@@ -1,0 +1,28 @@
+{"clave":"j-cursos",
+"competidores":[
+{"nombre":"Scratch para niños: crea videojuegos (Patricio Cordero)","url":"https://www.udemy.com/course/scratch-programacion-de-juegos/","precio":"De 12,99 a 19,99 € en promoción","debilidad":"Dirigido al niño, no al padre; sin plan por edades"},
+{"nombre":"Curso acelerado de programación para niños (Juan Ojeda)","url":"https://www.udemy.com/course/curso-acelerado-de-programacion-para-ninos-y-ninas/","precio":"no verificado; 23 alumnos","debilidad":"Casi sin alumnos: el nicho 'para padres' en español está vacío y exige traer tráfico de fuera"},
+{"nombre":"Scratch 3.0: guía para profesores y padres (en inglés)","url":"https://www.udemy.com/course/scratch-30-a-guide-for-teachers-parents-and-students/","precio":"no verificado; 1.359 alumnos, 4,0 estrellas","debilidad":"En inglés, 41 minutos, de 2022; valida la demanda del ángulo 'para padres'"},
+{"nombre":"Desbloquea el poder de ChatGPT para tu emprendimiento","url":"https://www.udemy.com/course/desbloquea-el-poder-de-chatgpt-para-tu-emprendimiento/","precio":"no verificado; 3.373 alumnos, 4,2 estrellas","debilidad":"Desactualizado (2023); enfoque emprendimiento latinoamericano, no autónomos de España"},
+{"nombre":"ChatGPT para los negocios (Bryan Chávez)","url":"https://www.udemy.com/course/chatgpt-para-negocios/","precio":"no verificado; actualizado 12/2023","debilidad":"Desactualizado; sin casos por sector"},
+{"nombre":"Grupo2000 y Educaweb, cursos de IA para pymes","url":"https://grupo2000.es/cursos/novedades/curso-de-ia-para-pymes-v3/","precio":"De 210 a 349 €, bonificables","debilidad":"Caros y formales; no cubren al autónomo sin empleados, que no puede bonificar"}],
+"repos":[
+{"nombre":"remotion-dev/remotion","url":"https://github.com/remotion-dev/remotion","licencia":"Gratis para empresas de 3 o menos personas","uso":"Intros, títulos animados y vídeos cortos de marketing desde React","estrellas":"50.000"},
+{"nombre":"ManimCommunity/manim","url":"https://github.com/ManimCommunity/manim","licencia":"MIT","uso":"Animaciones de algoritmos, bucles y condicionales para el curso de niños","estrellas":"38.000"},
+{"nombre":"grokify/marp2video","url":"https://github.com/grokify/marp2video","licencia":"no verificado","uso":"Diapositivas Marp + narración + ffmpeg: un MP4 por lección","estrellas":""},
+{"nombre":"hexgrad/kokoro","url":"https://github.com/hexgrad/kokoro","licencia":"Apache-2.0","uso":"TTS local gratuito con voces en español para narrar sin coste por carácter","estrellas":"8.000"},
+{"nombre":"rany2/edge-tts","url":"https://github.com/rany2/edge-tts","licencia":"GPL-3.0","uso":"Voces neuronales gratis en es-ES y ca-ES para borradores y versión catalana","estrellas":""},
+{"nombre":"marp-team/marp-cli","url":"https://github.com/marp-team/marp-cli","licencia":"MIT","uso":"Diapositivas desde Markdown a PNG o PDF","estrellas":""}],
+"hallazgos":[
+"Reparto de Udemy en 2026: 37 % para el instructor en ventas del marketplace, 97 % con cupón propio, 15 % del fondo de Udemy Business. Instructores reportan caídas de ingresos del 30 al 67 %.",
+"El alumno paga de 10 a 20 € en promociones casi permanentes; el ingreso típico por venta orgánica es de 4 a 7 €.",
+"Hotmart cobra 9,9 % más 0,50 € por venta, permite precios de 50 a 150 € y afiliados.",
+"El nicho 'programación para niños para padres' en español está casi vacío en Udemy (23 a 1.359 alumnos, casi todo de 2022): la demanda hay que traerla desde fuera.",
+"El nicho 'IA para pequeños negocios' en español tiene cursos de 2023 desactualizados; ventaja clara para uno de 2026 con casos de autónomos españoles (facturación, Verifactu, RGPD).",
+"Riesgos: dependencia de Udemy, competencia con formación bonificada y cursos gratuitos de Cámaras de Comercio; la voz sintética puede percibirse como baja calidad si no se mezcla con voz propia."],
+"mejoras":[
+"Udemy como embudo a precio bajo y la versión extendida con plantillas y actualizaciones en Hotmart o web propia a 49-99 €.",
+"Pipeline reproducible Markdown → Marp → voz → ffmpeg para 30 a 60 lecciones cortas y regrabar rápido cuando cambien las herramientas; intros con cámara para humanizar.",
+"Curso para padres por edades (5-7 sin pantalla con el libro de KDP, 8-10 Scratch, 11-13 Python) con plan semanal de 20 minutos y versión catalana.",
+"Curso de IA para autónomos con 10 casos por sector y módulo legal de España (RGPD, Verifactu 2027, AI Act) que ningún curso de 2023 cubre.",
+"Captación con vídeos cortos generados desde cada lección, lista de comprobación descargable y venta cruzada con cuentos y libros KDP."]}

@@ -1,0 +1,26 @@
+{"clave":"a-ccse",
+"competidores":[
+{"nombre":"CCSE Nacionalidad Española (app oficial del Instituto Cervantes)","url":"https://apps.apple.com/es/app/ccse-nacionalidad-espa%C3%B1ola/id1461069757","precio":"Gratis","debilidad":"Valorada con 2,7 sobre 5 en 305 reseñas; solo test y simulacro, sin explicaciones ni idiomas, interfaz anticuada"},
+{"nombre":"CCSE Spanish Nationality Test","url":"https://apps.apple.com/app/id6446229630","precio":"Gratis con compras internas","debilidad":"Solo iOS; sin explicaciones en lengua materna"},
+{"nombre":"CCSE Nacionalidad Test 2026","url":"https://apps.apple.com/us/app/id6752815355","precio":"Premium sin anuncios 17,99 $","debilidad":"5 o 6 valoraciones; rastrea datos entre apps; sin explicaciones multilingües"},
+{"nombre":"CCSE Nacionalidad Española (tercero)","url":"https://apps.apple.com/us/app/id1272047610","precio":"Gratis","debilidad":"Preguntas del manual 2023; glosario en 6 idiomas pero sin rumano, chino ni ucraniano"},
+{"nombre":"Spanish Citizenship Test CCSE","url":"https://apps.apple.com/app/id6743101053","precio":"Gratis con compras internas","debilidad":"Traducción automática a 13 idiomas sin explicación pedagógica; solo iOS"},
+{"nombre":"Test CCSE online iNMSOL","url":"https://www.inmsol.com/blog/practice-your-ccse-test-with-iNMSOL/","precio":"Gratis a cambio del correo","debilidad":"25 preguntas al azar y corrección por correo; sin progreso"}],
+"repos":[
+{"nombre":"open-spaced-repetition/ts-fsrs","url":"https://github.com/open-spaced-repetition/ts-fsrs","licencia":"MIT","uso":"Repaso espaciado de las 300 preguntas por usuario","estrellas":"830"},
+{"nombre":"yousyjorge/ccse2026","url":"https://github.com/yousyjorge/ccse2026","licencia":"MIT","uso":"Banco de preguntas 2026 en TypeScript; verificar contra el manual oficial antes de usar","estrellas":"0"},
+{"nombre":"combimauri/ccse-estudio","url":"https://github.com/combimauri/ccse-estudio","licencia":"Sin licencia (solo referencia)","uso":"Referencia de modelo de datos con las 300 preguntas del manual 2026 y explicaciones","estrellas":"0"},
+{"nombre":"amannn/next-intl","url":"https://github.com/amannn/next-intl","licencia":"MIT","uso":"Idiomas en Next.js con rutas por idioma y soporte de escritura de derecha a izquierda para el árabe","estrellas":"3.000"}],
+"hallazgos":[
+"Volumen alto y recurrente: más de 28.000 candidatos en la convocatoria de octubre de 2025, con 9 o 10 convocatorias al año y tasa de 85 €.",
+"El examen es fácil (más del 98 % aprueba): el argumento de venta es seguridad, lengua materna y ahorro de tiempo. El segmento de no alfabetizados (964 inscritos en octubre de 2025) necesita audio y explicación oral.",
+"La app oficial es gratis pero está mal valorada; ninguna app explica en rumano, chino o ucraniano; el árabe y el francés aparecen solo como glosario o traducción automática.",
+"Mercado creciente: 252.476 nacionalizaciones en 2024 y 1,17 millones de solicitudes de regularización en 2026 que serán candidatos a la nacionalidad en 2 a 10 años.",
+"Riesgo legal: las 300 preguntas son del Instituto Cervantes y el manual se renueva cada año; revisar derechos de reproducción y actualizar anualmente.",
+"Casi toda la competencia es iOS con compras de unos 18 $; un pago único de 9,99 € por web evita el 30 % de las tiendas y permite garantía de devolución."],
+"mejoras":[
+"Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
+"Simulacro con el formato exacto y repaso espaciado de los fallos; indicador de 'listo para el examen' con probabilidad estimada.",
+"Garantía 'apruebas o te devolvemos el dinero', de coste casi nulo dado el 98 % de aptos, como gancho frente a las apps gratis.",
+"Distribución por códigos para academias, ONG (Accem, CEAR, Cruz Roja), despachos de extranjería y canales grandes como Parainmigrantes (337.000 suscriptores en YouTube), con afiliación del 30 al 40 %.",
+"SEO y vídeos cortos en cada idioma y páginas por idioma; la fecha del examen como gancho de urgencia con recordatorios de convocatoria."]}
