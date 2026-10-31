@@ -1,0 +1,8 @@
+---
+// Giny per a professionals, en català: /ca/per-a-professionals/ (només als llocs amb català)
+import ParaProfesionales from '../../components/ParaProfesionales.astro';
+import { LANGS } from '../../lib/sitio';
+import { RUTA_PRO } from '../../lib/widget';
+export const getStaticPaths = () => (LANGS.includes('ca') ? [{ params: { pro: RUTA_PRO.ca.replace(/^ca\//, '') } }] : []);
+---
+<ParaProfesionales lang="ca" />

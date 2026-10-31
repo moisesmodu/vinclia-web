@@ -40,6 +40,13 @@ for (const sitio of readdirSync('sitios')) {
     const h = readFileSync(p, 'utf8');
     const t = h.match(/<title>([^<]*)<\/title>/)?.[1];
     if (t) { if (titulos[t]) err(`${sitio}: título repetido «${t}»`); titulos[t] = 1; }
+    // Widget (/embed/): noindex, canónica a una calculadora que existe y sin anuncios
+    if (/[\\/]embed[\\/]/.test(p)) {
+      if (!/<meta name="robots" content="noindex/.test(h)) err(`${p}: página embed sin noindex`);
+      const canon = h.match(/<link rel="canonical" href="https?:\/\/[^/]+(\/[^"]*)"/)?.[1];
+      if (!canon || !rutas.has(canon)) err(`${p}: canónica del widget a una página inexistente (${canon})`);
+      if (/adsbygoogle/.test(h)) err(`${p}: anuncios dentro del widget`);
+    }
     if (/NaN|undefined|\[object Object\]/.test(h.replace(/<script[\s\S]*?<\/script>/g, ''))) err(`${p}: contiene NaN/undefined`);
     for (const [, href] of h.matchAll(/href="(\/[^"#?]*)/g)) {
       if (/\.(csv|xml|txt|svg|woff2|js|css)$/.test(href)) { if (!existsSync(dist + href)) err(`${p}: recurso inexistente ${href}`); continue; }

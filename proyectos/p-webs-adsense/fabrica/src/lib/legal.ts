@@ -91,3 +91,27 @@ ${X.metodo ? X.metodo : `<h2>Com calculem</h2><p>Cada calculadora aplica pas a p
     }
   }
 }
+
+// ——— Condiciones de la suscripción al widget para profesionales («Para profesionales», #condiciones) ———
+// Al final del archivo y aparte del resto, para no chocar con otros cambios. Precios finales con IVA (MARCAS.md §3).
+export function condicionesWidget(lang: Lang, p: { pro: number; proAnio: number; agencia: number; portal?: string }): string {
+  const t = sitio.titular;
+  const base = (x: number) => (x / 1.21).toFixed(2).replace('.', ',');
+  const es = lang === 'es';
+  const portal = p.portal ? `<a href="${p.portal}" rel="noopener">${es ? 'portal de cliente' : 'portal de client'}</a>` : es ? 'portal de cliente de Stripe' : 'portal de client de Stripe';
+  return es
+    ? `<h3>Quién presta el servicio</h3><p>${t.nombre}, NIF ${t.nif}, ${t.domicilio}. Contacto: <a href="mailto:${t.email}">${t.email}</a>. El cobro lo gestiona Stripe Payments Europe, Ltd.: nunca vemos los datos de tu tarjeta.</p>
+<h3>Precio</h3><p>Los precios son finales e incluyen el IVA del 21 %: plan Profesional, ${p.pro} € al mes (${base(p.pro)} € + IVA) o ${p.proAnio} € al año (${base(p.proAnio)} € + IVA); plan Agencia, ${p.agencia} € al mes (${base(p.agencia)} € + IVA). En cada cobro recibes la factura por correo, con tu NIF si lo indicas al pagar. El plan Gratis no tiene coste ni caduca.</p>
+<h3>Renovación</h3><p>La suscripción se renueva sola al final de cada mes o de cada año, al mismo precio, hasta que la canceles. Si algún día cambia el precio, te avisamos por correo con 30 días de antelación y puedes cancelar antes sin coste.</p>
+<h3>Cancelación en un clic</h3><p>Cancelas cuando quieras desde el ${portal} (el enlace está en cada recibo), con un solo clic, sin llamadas ni preguntas. El widget sigue sin enlace hasta el final del periodo pagado; después vuelve solo a la versión gratis, con enlace, sin que tengas que tocar tu web. No se devuelve la parte no usada del periodo, salvo en el desistimiento.</p>
+<h3>Desistimiento</h3><p>Si contratas como consumidor, tienes 14 días naturales para desistir y te devolvemos el importe íntegro: basta un correo a ${t.email}. Si contratas como empresa o profesional, también te devolvemos el primer cobro si lo pides en esos 14 días.</p>
+<h3>Qué incluye</h3><p>Marca blanca (sin el enlace a nuestra web) en los dominios contratados (1 en Profesional y hasta 10 en Agencia), tu logo, tus colores y un aviso por correo cuando cambie una norma que afecte a las calculadoras (SMI, IRPF, cotizaciones, IVA…). Los resultados son orientativos: el widget no es asesoramiento, y lo que publicas en tu web es responsabilidad tuya. Procuramos un servicio continuo, pero no garantizamos una disponibilidad concreta.</p>
+<h3>Ley aplicable</h3><p>Estas condiciones se rigen por la ley española.</p>`
+    : `<h3>Qui presta el servei</h3><p>${t.nombre}, NIF ${t.nif}, ${t.domicilio}. Contacte: <a href="mailto:${t.email}">${t.email}</a>. El cobrament el gestiona Stripe Payments Europe, Ltd.: mai no veiem les dades de la teva targeta.</p>
+<h3>Preu</h3><p>Els preus són finals i inclouen l’IVA del 21 %: pla Professional, ${p.pro} € al mes (${base(p.pro)} € + IVA) o ${p.proAnio} € l’any (${base(p.proAnio)} € + IVA); pla Agència, ${p.agencia} € al mes (${base(p.agencia)} € + IVA). A cada cobrament reps la factura per correu, amb el teu NIF si l’indiques en pagar. El pla Gratuït no té cost ni caduca.</p>
+<h3>Renovació</h3><p>La subscripció es renova sola al final de cada mes o de cada any, al mateix preu, fins que la cancel·lis. Si algun dia canvia el preu, t’avisem per correu amb 30 dies d’antelació i pots cancel·lar abans sense cost.</p>
+<h3>Cancel·lació en un clic</h3><p>Cancel·les quan vulguis des del ${portal} (l’enllaç és a cada rebut), amb un sol clic, sense trucades ni preguntes. El giny continua sense enllaç fins al final del període pagat; després torna sol a la versió gratuïta, amb enllaç, sense que hagis de tocar el teu web. No es retorna la part no utilitzada del període, llevat del desistiment.</p>
+<h3>Desistiment</h3><p>Si contractes com a consumidor, tens 14 dies naturals per desistir i et retornem l’import íntegre: n’hi ha prou amb un correu a ${t.email}. Si contractes com a empresa o professional, també et retornem el primer cobrament si ho demanes en aquests 14 dies.</p>
+<h3>Què inclou</h3><p>Marca blanca (sense l’enllaç al nostre web) als dominis contractats (1 al Professional i fins a 10 a l’Agència), el teu logo, els teus colors i un avís per correu quan canviï una norma que afecti les calculadores (SMI, IRPF, cotitzacions, IVA…). Els resultats són orientatius: el giny no és assessorament, i el que publiques al teu web és responsabilitat teva. Procurem un servei continu, però no garantim una disponibilitat concreta.</p>
+<h3>Llei aplicable</h3><p>Aquestes condicions es regeixen per la llei espanyola.</p>`;
+}

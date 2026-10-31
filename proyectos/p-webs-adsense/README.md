@@ -111,6 +111,42 @@ Variables opcionales, sin tocar el código:
 - **Un sitio:** crea `sitios/<id>/sitio.json`, sus contenidos y sus fichas en `src/fichas/<id>.ts`, regístralas en
   `src/lib/rutas.ts` y crea otro proyecto con `SITIO=<id>` (DESPLIEGUE.md).
 
+## Widget para profesionales (línea B2B)
+
+Cada calculadora de los cuatro sitios se puede incrustar en otra web. Plan comercial y captación en `B2B.md`.
+
+| Pieza | Dónde |
+|---|---|
+| Página embebible: solo formulario y resultado, `noindex`, canónica a la calculadora completa, fuera del sitemap | `/embed/<slug>/` y `/ca/embed/<slug>/` · `src/components/EmbedPagina.astro`, `src/pages/embed/`, `src/pages/ca/embed/` |
+| Opciones por URL: `?color=<hex>`, `?tema=oscuro\|claro`, `?pro=<clave>` y cualquier campo (`?bruto=30000`) | `src/lib/embed.ts` (lógica pura, probada), `src/lib/embed-cliente.ts` |
+| Fragmento para copiar (1,3 KB): crea el iframe y ajusta su altura con `postMessage` | `public/embed.js` |
+| «Para profesionales»: qué es, demo, configurador, planes y condiciones | `/para-profesionales/`, `/ca/per-a-professionals/` · `src/components/ParaProfesionales.astro` |
+| Condiciones de la suscripción | `condicionesWidget()` al final de `src/lib/legal.ts` |
+| Estilos (sin tocar `calc.css`) | `src/styles/embed.css`; el modo oscuro de `base.css` y `calc.css` se convierte a `[data-tema=oscuro]` al compilar (`src/lib/cssTema.ts`) |
+| Cabeceras: `/embed/*` con `frame-ancestors *`; el resto, `X-Frame-Options: SAMEORIGIN` y `frame-ancestors 'self'` | `vercel.json`, `public/_headers` |
+| Productos, precios y Payment Links de Stripe (idempotente, por metadata) | `npm run stripe:widget` (test) · `-- --real` (real, solo con aprobación) |
+| Prueba de punta a punta con Playwright (web externa, altura, recalcular, tema, marca blanca, cabeceras) | `node scripts/prueba-widget.mjs <sitio>` tras compilar |
+
+**Pagos.** Variables del despliegue: `PAGO_WIDGET_PRO_MES_URL`, `PAGO_WIDGET_PRO_ANIO_URL`, `PAGO_WIDGET_AGENCIA_URL`
+(y opcional `PAGO_WIDGET_PORTAL_URL`, el enlace al portal de cliente de Stripe). Sin ellas, cada plan muestra «Pedir
+acceso», que abre un correo a hola@numimates.com. Los enlaces de test están en `fabrica/widget-pagos.test.json`.
+
+**Alta de un cliente de marca blanca (versión 1, sin backend):**
+
+1. Al pagar, Stripe pide el dominio (campo «Dominio de tu web» del Payment Link). Míralo en el pago.
+2. `node scripts/widget-clave.mjs <cliente> <dominio> profesional "#color" "https://logo"` imprime la línea. `cliente`
+   en minúsculas y guiones (`gestoria-puig`); en el plan Agencia, una línea por dominio con el mismo `cliente`.
+3. Pega la línea en `clientes` de `fabrica/widget-clientes.json`, ejecuta `npm test` (valida hash, dominio, color, logo
+   y el límite de dominios del plan) y **redespliega los cuatro sitios**.
+4. Manda al cliente su clave: la pega en el campo «Clave» del configurador y copia el código.
+5. **Baja:** pon `"activo": false` en sus líneas (o bórralas) y redespliega. Desde ese momento vuelve el enlace.
+
+La clave es el SHA-256 de `cliente:dominio` (24 cifras). Las claves y los dominios activos se hornean en cada página
+embed; nombres y notas no. **Es una protección mínima: el JSON es público.** La página comprueba además que la web que
+incrusta el iframe es el dominio del cliente o un subdominio (`location.ancestorOrigins` o `document.referrer`) y, si
+no lo sabe, deja el enlace. Lo que no evita: que alguien copie el HTML y el JS (son públicos) y los sirva desde su
+servidor sin enlace, ni las bajas automáticas. Versión 2 propuesta en `B2B.md`, «Marca blanca v2».
+
 ## Decisiones tomadas
 
 - **Identidad de la familia Claro** (`MARCAS.md`, `marcas/tokens.json`): C abierta con línea de horizonte, apellido

@@ -1,0 +1,167 @@
+---
+// Página «Para profesionales» (/para-profesionales/ y /ca/per-a-professionals/): qué es el widget, demo en vivo con
+// dos calculadoras incrustadas, configurador (calculadora, color, tema, idioma → código para copiar), planes con
+// Payment Links de Stripe (o «Pedir acceso» por correo) y condiciones de la suscripción.
+import Base from '../layouts/Base.astro';
+import '../styles/embed.css';
+import type { Lang } from '../lib/def';
+import { sitio, LANGS } from '../lib/sitio';
+import { absoluta, url, buscar } from '../lib/rutas';
+import { icono } from '../lib/iconos';
+import { UI } from '../lib/ui';
+import { rutasEmbed, rutaPro, alternasPro, PLANES, pagosWidget } from '../lib/widget';
+import { condicionesWidget } from '../lib/legal';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const u = UI[lang];
+const n = sitio.nombre;
+const origen = absoluta('').replace(/\/$/, '');
+const inicio = buscar('inicio', lang)!;
+// Calculadoras en cada idioma del sitio, para el configurador
+const calcs = sitio.calculadoras.map((id: string) => {
+  const x: Record<string, any> = { id };
+  for (const l of LANGS) { const r = rutasEmbed(l).find((y) => y.id === id)!; x[l] = { t: r.h1, e: r.ruta, c: absoluta(r.completa) }; }
+  return x;
+});
+const demo = (sitio.destacadas ?? sitio.calculadoras).slice(0, 2).map((id: string) => rutasEmbed(lang).find((r) => r.id === id)!);
+const pagos = pagosWidget();
+// Correo de la línea B2B (SESIONES.md, «Correo de contacto»): siempre hola@numimates.com salvo WIDGET_EMAIL
+const correo = process.env.WIDGET_EMAIL || 'hola@numimates.com';
+const pedir = (plan: string) => `mailto:${correo}?subject=${encodeURIComponent(`${es ? 'Widget' : 'Giny'} ${plan} · ${n}`)}&body=${encodeURIComponent(es ? `Hola, quiero el plan ${plan} del widget.\n\nMi web (dominio): \nCalculadoras que me interesan: \nNombre y NIF para la factura: \n` : `Hola, vull el pla ${plan} del giny.\n\nEl meu web (domini): \nCalculadores que m’interessen: \nNom i NIF per a la factura: \n`)}`;
+const P = PLANES;
+const portal = process.env.PAGO_WIDGET_PORTAL_URL || '';
+const condiciones = condicionesWidget(lang, { pro: P.profesional.mes, proAnio: P.profesional.anio, agencia: P.agencia.mes, portal });
+const titulo = es ? `Calculadoras gratis para tu web: widget para gestorías y blogs` : `Calculadores gratuïtes per al teu web: giny per a gestories i blogs`;
+const descripcion = es
+  ? `Pon las calculadoras de ${n} en la web de tu gestoría, asesoría, inmobiliaria o blog: gratis con enlace o con tu marca desde ${P.profesional.mes} €/mes. Se actualizan solas con cada cambio legal.`
+  : `Posa les calculadores de ${n} al web de la teva gestoria, assessoria, immobiliària o blog: gratis amb enllaç o amb la teva marca des de ${P.profesional.mes} €/mes. S’actualitzen soles.`;
+const T = es ? {
+  eyebrow: 'Para profesionales', h1: 'Pon nuestras calculadoras en tu web', intro: `Las mismas calculadoras de ${n}, dentro de la web de tu gestoría, asesoría, inmobiliaria o blog. Se copian en un minuto, se adaptan al móvil y se actualizan solas cada vez que cambia una norma.`,
+  probar: 'Configurar mi widget', planes: 'Ver planes',
+  v: [['calculadora', 'Gratis para siempre', 'Con un enlace pequeño a nuestra web. Sin registro y sin límite de visitas.'], ['escudo', 'Siempre al día', 'SMI, IRPF, cotizaciones, IVA: cambiamos la cifra una vez y se actualiza en todas las webs.'], ['persona', 'Sin cookies ni anuncios', 'El widget no pone anuncios ni rastrea a tus visitantes. Todo se calcula en su navegador.'], ['documento', 'Castellano y catalán', 'Con el color de tu marca, tema claro u oscuro y los datos de partida que elijas.']],
+  demoT: 'Demo en vivo', demoP: 'Así se ven dos de nuestras calculadoras dentro de una web cualquiera. Prueba a cambiar los datos: el marco crece y encoge solo, sin barras de scroll.',
+  confT: 'Configurador', confP: 'Elige la calculadora, el color y el idioma, y copia el código en tu web (WordPress: bloque «HTML personalizado»).',
+  calc: 'Calculadora', color: 'Color de acento', tema: 'Tema', claro: 'Claro', oscuro: 'Oscuro', idioma: 'Idioma', clave: 'Clave de marca blanca (planes de pago)', claveA: 'Te la enviamos al contratar. Sin clave, el widget lleva el enlace a nuestra web.',
+  cod1: 'Código recomendado (ajusta la altura solo)', cod2: 'Alternativa: solo el iframe (altura fija)', copiar: 'Copiar', copiado: 'Copiado', vista: 'Vista previa',
+  planesT: 'Planes', planesP: 'Empieza gratis. Si quieres quitar el enlace y poner tu marca, pasa a un plan de pago: cancelas en un clic.',
+  gratis: 'Gratis', pro: 'Profesional', agencia: 'Agencia', mes: '/mes', anio: '/año', iva: 'IVA incluido', recom: 'Recomendado',
+  gI: ['Todas las calculadoras de la familia Claro', 'Color, tema e idioma', 'Enlace pequeño «Calculadora de ' + n + '»', 'Sin límite de visitas'],
+  pI: ['Todo lo del plan Gratis', 'Sin enlace: marca blanca', 'Tu logo y tus colores', 'Aviso por correo de cambios normativos', '1 dominio'],
+  aI: ['Todo lo del plan Profesional', 'Hasta 10 dominios (tus clientes)', 'Un logo y unos colores por dominio', 'Soporte por correo en 24 h laborables'],
+  usar: 'Usar gratis', susMes: `Suscribirme · ${P.profesional.mes} €/mes`, susAnio: `Pago anual · ${P.profesional.anio} €/año`, susAg: `Suscribirme · ${P.agencia.mes} €/mes`, pedir: 'Pedir acceso', anual: `o ${P.profesional.anio} €/año (2 meses gratis)`,
+  sello: ['Hecho en Lleida', 'Precio claro', 'Cancela en un clic'], condT: 'Condiciones de la suscripción',
+} : {
+  eyebrow: 'Per a professionals', h1: 'Posa les nostres calculadores al teu web', intro: `Les mateixes calculadores de ${n}, dins del web de la teva gestoria, assessoria, immobiliària o blog. Es copien en un minut, s’adapten al mòbil i s’actualitzen soles cada vegada que canvia una norma.`,
+  probar: 'Configura el meu giny', planes: 'Mostra els plans',
+  v: [['calculadora', 'Gratuït per sempre', 'Amb un enllaç petit al nostre web. Sense registre i sense límit de visites.'], ['escudo', 'Sempre al dia', 'SMI, IRPF, cotitzacions, IVA: canviem la xifra una vegada i s’actualitza a tots els webs.'], ['persona', 'Sense galetes ni anuncis', 'El giny no posa anuncis ni rastreja els teus visitants. Tot es calcula al seu navegador.'], ['documento', 'Català i castellà', 'Amb el color de la teva marca, tema clar o fosc i les dades de partida que triïs.']],
+  demoT: 'Demo en directe', demoP: 'Així es veuen dues de les nostres calculadores dins d’un web qualsevol. Prova de canviar les dades: el marc creix i s’encongeix sol, sense barres de desplaçament.',
+  confT: 'Configurador', confP: 'Tria la calculadora, el color i l’idioma, i copia el codi al teu web (WordPress: bloc «HTML personalitzat»).',
+  calc: 'Calculadora', color: 'Color d’accent', tema: 'Tema', claro: 'Clar', oscuro: 'Fosc', idioma: 'Idioma', clave: 'Clau de marca blanca (plans de pagament)', claveA: 'Te l’enviem quan contractes. Sense clau, el giny porta l’enllaç al nostre web.',
+  cod1: 'Codi recomanat (ajusta l’alçada sol)', cod2: 'Alternativa: només l’iframe (alçada fixa)', copiar: 'Copia', copiado: 'Copiat', vista: 'Previsualització',
+  planesT: 'Plans', planesP: 'Comença gratis. Si vols treure l’enllaç i posar-hi la teva marca, passa a un pla de pagament: cancel·les en un clic.',
+  gratis: 'Gratuït', pro: 'Professional', agencia: 'Agència', mes: '/mes', anio: '/any', iva: 'IVA inclòs', recom: 'Recomanat',
+  gI: ['Totes les calculadores de la família Claro', 'Color, tema i idioma', 'Enllaç petit «Calculadora de ' + n + '»', 'Sense límit de visites'],
+  pI: ['Tot el del pla Gratuït', 'Sense enllaç: marca blanca', 'El teu logo i els teus colors', 'Avís per correu de canvis normatius', '1 domini'],
+  aI: ['Tot el del pla Professional', 'Fins a 10 dominis (els teus clients)', 'Un logo i uns colors per domini', 'Suport per correu en 24 h feineres'],
+  usar: 'Fes-lo servir gratis', susMes: `Subscriu-m’hi · ${P.profesional.mes} €/mes`, susAnio: `Pagament anual · ${P.profesional.anio} €/any`, susAg: `Subscriu-m’hi · ${P.agencia.mes} €/mes`, pedir: 'Demana accés', anual: `o ${P.profesional.anio} €/any (2 mesos gratis)`,
+  sello: ['Fet a Lleida', 'Preu clar', 'Cancel·la en un clic'], condT: 'Condicions de la subscripció',
+};
+const datosConf = JSON.stringify({ o: origen, n, l: lang, c: calcs, tx: { copiar: T.copiar, copiado: T.copiado } }).replace(/</g, '\\u003c');
+const jsonld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: titulo, url: absoluta(rutaPro(lang)), inLanguage: lang, description: descripcion }];
+---
+<Base lang={lang} titulo={titulo} descripcion={descripcion} ruta={rutaPro(lang)} alternas={alternasPro()} jsonld={jsonld} tipo="pro">
+  <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{u.inicio}</a><span aria-hidden="true">›</span><span>{T.eyebrow}</span></nav>
+  <header class="pro-heroe">
+    <p class="eyebrow">{T.eyebrow}</p>
+    <h1>{T.h1}</h1>
+    <p class="intro">{T.intro}</p>
+    <p class="pro-cta"><a class="btn" href="#configurador">{T.probar}</a><a class="btn-sec" href="#planes">{T.planes}</a></p>
+  </header>
+  <ul class="pro-ventajas">
+    {T.v.map(([ic, t, p]) => <li><Fragment set:html={icono(ic, 24)} /><strong>{t}</strong><p>{p}</p></li>)}
+  </ul>
+
+  <section class="pro-sec" id="demo" aria-labelledby="demo-t">
+    <h2 id="demo-t">{T.demoT}</h2>
+    <p>{T.demoP}</p>
+    <div class="pro-demo">
+      {demo.map((r, i) => (
+        <figure>
+          <figcaption>{r.h1}{i === 1 ? (es ? ' · tema oscuro y color propio' : ' · tema fosc i color propi') : ''}</figcaption>
+          <div class="marco"><div data-claro={url(r.ruta) + (i === 1 ? '?tema=oscuro&color=e76f51' : '')} data-titulo={r.h1} data-alto="900"></div></div>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="pro-sec" id="configurador" aria-labelledby="conf-t">
+    <h2 id="conf-t">{T.confT}</h2>
+    <p>{T.confP}</p>
+    <div class="conf">
+      <form class="conf-form" id="conf" onsubmit="return false">
+        <div><label for="c-calc">{T.calc}</label>
+          <select id="c-calc" name="calc">{calcs.map((c: any) => <option value={c.id}>{c[lang].t}</option>)}</select></div>
+        <div><label for="c-color">{T.color}</label>
+          <span class="conf-color"><input type="color" id="c-color" name="color" value={sitio.colores.primario.toLowerCase()} /><code id="c-hex">{sitio.colores.primario.toLowerCase()}</code></span></div>
+        <fieldset><legend>{T.tema}</legend><div class="conf-ops">
+          <label><input type="radio" name="tema" value="claro" checked />{T.claro}</label>
+          <label><input type="radio" name="tema" value="oscuro" />{T.oscuro}</label></div></fieldset>
+        {LANGS.length > 1 && (
+          <fieldset><legend>{T.idioma}</legend><div class="conf-ops">
+            {LANGS.map((l) => <label><input type="radio" name="idioma" value={l} checked={l === lang} />{l === 'es' ? 'Castellano' : 'Català'}</label>)}</div></fieldset>
+        )}
+        <div><label for="c-pro">{T.clave}</label><input type="text" id="c-pro" name="pro" autocomplete="off" spellcheck="false" inputmode="text" placeholder="8227d517ef8da1c04fb6a272" />
+          <p class="conf-ayuda">{T.claveA}</p></div>
+      </form>
+      <div class="conf-out">
+        <div class="conf-cod"><p><label for="cod1">{T.cod1}</label><button type="button" data-copiar="cod1">{T.copiar}</button></p><textarea id="cod1" readonly rows="5"></textarea></div>
+        <div class="conf-cod"><p><label for="cod2">{T.cod2}</label><button type="button" data-copiar="cod2">{T.copiar}</button></p><textarea id="cod2" readonly rows="3"></textarea></div>
+        <p class="conf-ayuda">{T.vista}</p>
+        <div class="conf-vista" id="vista"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pro-sec" id="planes" aria-labelledby="planes-t">
+    <h2 id="planes-t">{T.planesT}</h2>
+    <p>{T.planesP}</p>
+    <ul class="planes">
+      <li class="plan"><h3>{T.gratis}</h3><p class="precio">0 €</p><p class="iva">{es ? 'Sin tarjeta y sin registro' : 'Sense targeta i sense registre'}</p>
+        <ul>{T.gI.map((x) => <li>{x}</li>)}</ul>
+        <p class="acc"><a class="btn-sec" href="#configurador">{T.usar}</a></p></li>
+      <li class="plan top"><span class="et">{T.recom}</span><h3>{T.pro}</h3><p class="precio">{P.profesional.mes} € <small>{T.mes}</small></p><p class="iva">{T.iva} · {T.anual}</p>
+        <ul>{T.pI.map((x) => <li>{x}</li>)}</ul>
+        <p class="acc">{pagos.proMes
+          ? <><a class="btn" href={pagos.proMes} rel="noopener" data-plan="pro-mes">{T.susMes}</a>{pagos.proAnio && <a class="btn-sec" href={pagos.proAnio} rel="noopener" data-plan="pro-anio">{T.susAnio}</a>}</>
+          : <a class="btn" href={pedir(T.pro)} data-plan="pedir">{T.pedir}</a>}</p></li>
+      <li class="plan"><h3>{T.agencia}</h3><p class="precio">{P.agencia.mes} € <small>{T.mes}</small></p><p class="iva">{T.iva}</p>
+        <ul>{T.aI.map((x) => <li>{x}</li>)}</ul>
+        <p class="acc">{pagos.agencia ? <a class="btn" href={pagos.agencia} rel="noopener" data-plan="agencia">{T.susAg}</a> : <a class="btn" href={pedir(T.agencia)} data-plan="pedir">{T.pedir}</a>}</p></li>
+    </ul>
+    <p class="sello-pro">{T.sello.map((x) => <span>{x}</span>)}</p>
+  </section>
+
+  <section class="pro-sec pro-cond" id="condiciones" aria-labelledby="cond-t">
+    <h2 id="cond-t">{T.condT}</h2>
+    <div class="cuerpo" set:html={condiciones} />
+  </section>
+
+  <script type="application/json" id="conf-datos" set:html={datosConf}></script>
+  <script is:inline src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/embed.js`} async></script>
+  <script is:inline>
+(function(){var D=JSON.parse(document.getElementById('conf-datos').textContent),f=document.getElementById('conf'),v=document.getElementById('vista'),c1=document.getElementById('cod1'),c2=document.getElementById('cod2'),hx=document.getElementById('c-hex'),t;
+var q=new URLSearchParams(location.search).get('calc');if(q&&f.calc.querySelector('option[value="'+q+'"]'))f.calc.value=q;
+function e(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
+function pinta(){var id=f.calc.value,l=(f.idioma&&f.idioma.value)||D.l,c=D.c.find(function(x){return x.id===id})[l],col=f.color.value.replace('#',''),p=[],k=f.pro.value.trim().toLowerCase();
+hx.textContent='#'+col;if(col!==f.color.defaultValue.replace('#',''))p.push('color='+col);if(f.tema.value==='oscuro')p.push('tema=oscuro');if(/^[0-9a-f]{16,64}$/.test(k))p.push('pro='+k);
+var src=D.o+'/'+c.e+'/'+(p.length?'?'+p.join('&'):''),pro=p.some(function(x){return x.indexOf('pro=')===0});
+c1.value='<div data-claro="'+e(src)+'" data-titulo="'+e(c.t)+'">'+(pro?'':'<a href="'+e(c.c)+'">'+e(c.t)+'</a> · '+e(D.n))+'</div>\n<script src="'+D.o+'/embed.js" async><\/script>';
+c2.value='<iframe src="'+e(src)+'" title="'+e(c.t)+'" loading="lazy" style="width:100%;height:1100px;border:0"></iframe>';
+clearTimeout(t);t=setTimeout(function(){v.innerHTML='<div data-claro="'+e(src.replace(D.o,''))+'" data-titulo="'+e(c.t)+'" data-alto="700"></div>';window.ClaroWidget&&ClaroWidget.cargar()},250)}
+f.addEventListener('input',pinta);f.addEventListener('change',pinta);pinta();
+document.querySelectorAll('[data-copiar]').forEach(function(b){b.addEventListener('click',function(){var a=document.getElementById(b.dataset.copiar);a.select();(navigator.clipboard?navigator.clipboard.writeText(a.value):Promise.reject()).catch(function(){document.execCommand('copy')}).then(function(){b.dataset.ok='1';b.textContent=D.tx.copiado;setTimeout(function(){delete b.dataset.ok;b.textContent=D.tx.copiar},1800)})})});
+addEventListener('load',function(){window.ClaroWidget&&ClaroWidget.cargar()})})();
+  </script>
+</Base>

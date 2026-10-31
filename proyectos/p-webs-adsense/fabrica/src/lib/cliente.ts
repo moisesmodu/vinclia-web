@@ -136,7 +136,8 @@ async function iniciar(el: HTMLElement) {
       if (s !== def) q.set(k, s);
     }
     if (mini) { if (enlace) enlace.search = q.toString(); }
-    else history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
+    // En el widget (/embed/…) la URL lleva ?color, ?tema y ?pro: no se reescribe
+    else if (!document.documentElement.hasAttribute('data-embed')) history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
     if (!contado) {
       contado = true;
       try { (window as any).umami?.track('calculo', { calc: id }); } catch {}

@@ -1,0 +1,76 @@
+---
+// Página embebible de una calculadora (/embed/<slug>/ y /ca/embed/<slug>/): solo el formulario y el resultado,
+// sin cabecera, pie ni anuncios. noindex + canónica a la calculadora completa; fuera del sitemap.
+// Se puede incrustar en cualquier dominio (cabeceras en public/_headers y vercel.json) y manda su altura al padre.
+import Calculadora from './Calculadora.astro';
+import type { Lang } from '../lib/def';
+import { sitio } from '../lib/sitio';
+import { params, anios } from '../lib/params';
+import { absoluta } from '../lib/rutas';
+import { texto } from '../lib/contenido';
+import { SITIO_ID } from '../lib/sitio';
+import { iconoCalc } from '../lib/iconos';
+import { analiticaVercel } from '../lib/sitio';
+import { mapaPro, type RutaEmbed } from '../lib/widget';
+import { temaPorAtributo, minCss } from '../lib/cssTema';
+import cssBase from '../styles/base.css?raw';
+import cssCalc from '../styles/calc.css?raw';
+import cssCal from '../styles/calendario.css?raw';
+import cssEmbed from '../styles/embed.css?raw';
+import manrope700 from '@fontsource/manrope/files/manrope-latin-700-normal.woff2?url';
+import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import inter600 from '@fontsource/inter/files/inter-latin-600-normal.woff2?url';
+
+interface Props { r: RutaEmbed }
+const { r } = Astro.props;
+const lang = r.lang as Lang;
+const defs = import.meta.glob('../calculadoras/*.ts', { eager: true, import: 'default' }) as Record<string, any>;
+const d = defs[`../calculadoras/${r.id}.ts`];
+const pais = sitio.pais;
+const anio: number = sitio.anioPorDefecto;
+const listaAnios = anios(pais);
+const provisionales = listaAnios.filter((a) => params(pais, a).provisional);
+const tx = texto(SITIO_ID, r.id, lang);
+const completa = absoluta(r.completa);
+const c = sitio.colores;
+// Colores del sitio en claro y la conversión del modo oscuro a [data-tema=oscuro] (src/lib/cssTema.ts)
+const css = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--marca:${c.marca};--acento:${c.acento};--cabecera:${c.cabecera};--fondo:${c.fondo};--tenue:${c.tenue};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`
+  + `@font-face{font-family:Manrope;font-weight:700;font-display:optional;src:url(${manrope700}) format('woff2')}`
+  + `@font-face{font-family:Inter;font-weight:400;font-display:optional;src:url(${inter400}) format('woff2')}`
+  + `@font-face{font-family:Inter;font-weight:600;font-display:optional;src:url(${inter600}) format('woff2')}`
+  + minCss(temaPorAtributo(cssBase + cssCalc + cssCal + cssEmbed));
+const pro = JSON.stringify(mapaPro()).replace(/</g, '\\u003c');
+const ca = lang === 'ca';
+const favicon = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56"><rect width="56" height="56" rx="12" fill="#FFFFFF"/><path d="M44 16a20 20 0 1 0 0 24" stroke="${c.marca}" stroke-width="9" fill="none" stroke-linecap="round"/><rect x="26" y="25" width="26" height="6" rx="3" fill="${c.tinta}"/></svg>`)}`;
+const marca = `<svg viewBox="0 0 56 56" width="16" height="16" aria-hidden="true" focusable="false"><path d="M44 16a20 20 0 1 0 0 24" stroke="currentColor" stroke-width="9" fill="none" stroke-linecap="round"/><rect x="26" y="25" width="26" height="6" rx="3" fill="currentColor"/></svg>`;
+---
+<!doctype html>
+<html lang={lang} class="emb-html" data-tema="claro" data-embed>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{`${tx.h1} · ${ca ? 'giny' : 'widget'} | ${sitio.nombre}`}</title>
+  <meta name="description" content={tx.resumen} />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href={completa} />
+  <link rel="icon" href={favicon} type="image/svg+xml" />
+  <style set:html={css}></style>
+  <script is:inline>(function(){var q=new URLSearchParams(location.search),r=document.documentElement,c=(q.get('color')||'').replace(/^#/,'');if(q.get('tema')==='oscuro')r.dataset.tema='oscuro';if(/^([0-9a-f]{3}){1,2}$/i.test(c)){c='#'+c;r.style.setProperty('--primario',c);r.style.setProperty('--marca',c);r.style.setProperty('--primarioOscuro','color-mix(in srgb,'+c+' 80%,#000)')}})()</script>
+  <script type="application/json" id="claro-pro" set:html={pro}></script>
+  {analiticaVercel() && <script is:inline defer src="/_vercel/insights/script.js"></script>}
+  {sitio.umami.id && <script is:inline defer src={sitio.umami.src} data-website-id={sitio.umami.id} data-do-not-track="true"></script>}
+</head>
+<body>
+  <main class="emb">
+    <h1 class="emb-t"><Fragment set:html={iconoCalc(r.id, 20)} />{tx.h1}</h1>
+    <Calculadora d={d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
+    <div class="emb-pie">
+      <p class="emb-firma"><a href={completa} target="_blank"><Fragment set:html={marca} />{`Calculadora de ${sitio.nombre}`}</a></p>
+      <p>{ca ? 'Resultat orientatiu amb la normativa vigent.' : 'Resultado orientativo con la normativa vigente.'}</p>
+    </div>
+  </main>
+  <script>
+    import '../lib/embed-cliente';
+  </script>
+</body>
+</html>

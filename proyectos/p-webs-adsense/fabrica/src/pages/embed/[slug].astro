@@ -1,0 +1,7 @@
+---
+// Calculadoras embebibles en castellano: /embed/<slug>/ (src/components/EmbedPagina.astro)
+import EmbedPagina from '../../components/EmbedPagina.astro';
+import { rutasEmbed } from '../../lib/widget';
+export const getStaticPaths = () => rutasEmbed('es').map((r) => ({ params: { slug: r.slug }, props: { r } }));
+---
+<EmbedPagina r={Astro.props.r} />

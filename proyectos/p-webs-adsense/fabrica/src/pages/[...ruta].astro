@@ -13,6 +13,7 @@ import { renderTablas, fmt, MONEDA } from '../lib/render';
 import { t, valoresPorDefecto, type Lang } from '../lib/def';
 import { UI } from '../lib/ui';
 import { PLANTILLAS } from '../plantillas/index';
+import { rutaPro } from '../lib/widget';
 import { leerCSV } from '../lib/csv';
 import { nombreComunidad } from '../lib/campos';
 import { icono, iconoCalc } from '../lib/iconos';
@@ -287,6 +288,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         <li><Fragment set:html={icono('calendario', 15)} /><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span></li>
         <li><Fragment set:html={icono('persona', 15)} /><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></li>
         <li><Fragment set:html={icono('escudo', 15)} /><span>{u.revisado}</span></li>
+        <li><Fragment set:html={icono('calculadora', 15)} /><a href={`${url(rutaPro(lang))}?calc=${p.id}#configurador`}>{lang === 'es' ? 'Pon esta calculadora en tu web →' : 'Posa aquesta calculadora al teu web →'}</a></li>
       </ul>
       {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
