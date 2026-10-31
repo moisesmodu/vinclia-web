@@ -17,6 +17,12 @@ export interface Portal {
   gameplayStop(): void;
   /** Anuncio intersticial en pausa natural. Resuelve siempre (haya anuncio o no). */
   commercialBreak(): Promise<void>;
+  /**
+   * Pre-roll antes de la PRIMERA partida (solo GameDistribution y GameMonetize; en el resto no hace nada: Poki prohíbe
+   * anuncios antes de la primera partida y CrazyGames tiene su propia lógica). Llamar de forma síncrona desde el gesto
+   * del jugador en «jugar» (manejador de clic/toque/tecla) y esperar a la promesa antes de arrancar la partida.
+   */
+  prerollBreak(): Promise<void>;
   /** Anuncio con recompensa. Resuelve true solo si el jugador lo vio entero. */
   rewardedBreak(): Promise<boolean>;
   /** Momento de euforia (récord): CrazyGames lo usa para sus métricas. */
@@ -31,11 +37,20 @@ let audioHook: AudioHook = () => {};
 export function onAdAudio(fn: AudioHook) {
   audioHook = fn;
 }
+type PauseHook = (paused: boolean) => void;
+let pauseHook: PauseHook = () => {};
+/** El arranque común registra aquí cómo pausar el bucle del juego (GameDistribution y GameMonetize lo piden). */
+export function onAdPause(fn: PauseHook) {
+  pauseHook = fn;
+}
 
-function loadScript(src: string, timeoutMs = 6000): Promise<boolean> {
+/** Inserta un <script> (con el id oficial del portal si lo pide) y resuelve true al cargar. */
+function loadScript(src: string, timeoutMs = 6000, id?: string): Promise<boolean> {
   return new Promise((resolve) => {
+    if (id && document.getElementById(id)) return resolve(true);
     const s = document.createElement('script');
     const t = setTimeout(() => resolve(false), timeoutMs);
+    if (id) s.id = id;
     s.src = src;
     s.async = true;
     s.onload = () => { clearTimeout(t); resolve(true); };
@@ -58,6 +73,7 @@ class LocalPortal implements Portal {
   gameplayStart() {}
   gameplayStop() {}
   async commercialBreak() {}
+  async prerollBreak() {}
   async rewardedBreak() { return false; }
   happyTime() {}
   getItem(k: string) { return safeStorage.get(k); }
@@ -98,6 +114,7 @@ class CrazyPortal implements Portal {
     });
   }
   async commercialBreak() { await this.request('midgame'); }
+  async prerollBreak() {}
   rewardedBreak() { return this.request('rewarded'); }
   happyTime() { try { this.sdk?.game.happytime(); } catch { /* */ } }
   // data.* guarda en la cuenta del jugador si ha iniciado sesión en CrazyGames; si no, en local.
@@ -127,6 +144,7 @@ class PokiPortal implements Portal {
     try { await this.sdk.commercialBreak(() => audioHook(true)); } catch { /* */ }
     audioHook(false);
   }
+  async prerollBreak() {} // Poki prohíbe anuncios antes de la primera partida
   async rewardedBreak() {
     if (!this.sdk) return false;
     let ok = false;
@@ -141,53 +159,98 @@ class PokiPortal implements Portal {
 }
 
 /* ------------------------------------------------------------ GameDistribution y GameMonetize */
-// Mismo patrón en los dos: opciones globales con el id del juego, eventos SDK_GAME_PAUSE / SDK_GAME_START alrededor
-// de cada anuncio y showAd() / showBanner(). GameDistribution: html5.api.gamedistribution.com (con recompensa);
-// GameMonetize: api.gamemonetize.com/sdk.js (sin recompensa). Sin guardado en la nube: localStorage.
+// Guías oficiales: opciones globales (GD_OPTIONS / SDK_OPTIONS con gameId y onEvent) definidas ANTES de cargar el SDK
+// con su id de script oficial; pre-roll antes de la primera partida y mid-roll en cada reinicio, lanzados por un gesto
+// del jugador; audio y juego en pausa entre SDK_GAME_PAUSE y SDK_GAME_START (GD también avisa con
+// CONTENT_RESUME_REQUESTED al acabar el anuncio). GameDistribution: html5.api.gamedistribution.com/main.min.js
+// (con recompensa); GameMonetize: api.gamemonetize.com/sdk.js (sin recompensa). Sin guardado en la nube: localStorage.
+const AD_MAX_MS = 30000; // tope de espera con anuncio en pantalla
+const AD_NO_SHOW_MS = 8000; // si en este tiempo no llega SDK_GAME_PAUSE, no hay anuncio: se sigue jugando
 class EventAdsPortal implements Portal {
   private sdk: any = null;
-  private resume: (() => void) | null = null;
+  private waiters: Array<() => void> = [];
+  private adOn = false;
   private rewardedOk = false;
+  private prerollDone = false;
   constructor(readonly name: 'gamedistribution' | 'gamemonetize') {}
   get hasRewarded() { return this.name === 'gamedistribution' && !!this.sdk; }
+
+  private adStart() {
+    if (this.adOn) return;
+    this.adOn = true;
+    audioHook(true);
+    pauseHook(true);
+  }
+  private adEnd() {
+    if (this.adOn) { this.adOn = false; audioHook(false); pauseHook(false); }
+    const ws = this.waiters; this.waiters = [];
+    ws.forEach((w) => w());
+  }
 
   async init() {
     const gameId = import.meta.env.VITE_PORTAL_GAME_ID || '';
     if (!gameId) return; // sin id del panel del portal no hay anuncios (el juego funciona igual)
     const w = window as any;
     const onEvent = (e: { name: string }) => {
-      if (e.name === 'SDK_GAME_PAUSE') audioHook(true);
-      if (e.name === 'SDK_GAME_START') { audioHook(false); const r = this.resume; this.resume = null; r?.(); }
-      if (e.name === 'SDK_REWARDED_WATCH_COMPLETE') this.rewardedOk = true;
+      switch (e?.name) {
+        case 'SDK_GAME_PAUSE': case 'CONTENT_PAUSE_REQUESTED': this.adStart(); break;
+        case 'SDK_GAME_START': case 'CONTENT_RESUME_REQUESTED': this.adEnd(); break;
+        case 'SDK_REWARDED_WATCH_COMPLETE': this.rewardedOk = true; break;
+      }
     };
     if (this.name === 'gamedistribution') {
       w.GD_OPTIONS = { gameId, onEvent };
-      if (await loadScript('https://html5.api.gamedistribution.com/main.min.js')) this.sdk = w.gdsdk ?? null;
+      if (await loadScript('https://html5.api.gamedistribution.com/main.min.js', 8000, 'gamedistribution-jssdk')) this.sdk = w.gdsdk ?? null;
     } else {
       w.SDK_OPTIONS = { gameId, onEvent };
-      if (await loadScript('https://api.gamemonetize.com/sdk.js')) this.sdk = w.sdk ?? null;
+      if (await loadScript('https://api.gamemonetize.com/sdk.js', 8000, 'gamemonetize-sdk')) this.sdk = w.sdk ?? null;
     }
   }
   loadingDone() {}
   gameplayStart() {}
   gameplayStop() {}
-  /** Espera a SDK_GAME_START (fin del anuncio) con un tope, por si el portal no muestra nada. */
-  private waitResume(maxMs: number) {
-    return new Promise<void>((res) => { const t = setTimeout(() => { this.resume = null; audioHook(false); res(); }, maxMs); this.resume = () => { clearTimeout(t); res(); }; });
+
+  /**
+   * Pide el anuncio (de forma síncrona, dentro del gesto del jugador) y espera a SDK_GAME_START /
+   * CONTENT_RESUME_REQUESTED. Topes: 30 s con anuncio en pantalla; 8 s si el portal no llega a mostrar nada.
+   */
+  private adBreak(): Promise<void> {
+    if (!this.sdk) return Promise.resolve();
+    return new Promise<void>((res) => {
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        clearTimeout(tMax); clearTimeout(tNoShow);
+        this.waiters = this.waiters.filter((x) => x !== finish);
+        if (this.adOn) { this.adOn = false; audioHook(false); pauseHook(false); }
+        res();
+      };
+      const tMax = setTimeout(finish, AD_MAX_MS);
+      const tNoShow = setTimeout(() => { if (!this.adOn) finish(); }, AD_NO_SHOW_MS);
+      this.waiters.push(finish);
+      try {
+        if (this.name === 'gamedistribution') {
+          const p = this.sdk.showAd?.('interstitial');
+          // showAd rechaza si no hay anuncio que servir: se sigue sin esperar
+          p?.catch?.(() => { if (!this.adOn) finish(); });
+        } else {
+          this.sdk.showBanner?.();
+        }
+      } catch { finish(); }
+    });
   }
-  async commercialBreak() {
-    if (!this.sdk) return;
-    try {
-      if (this.name === 'gamedistribution') { await this.sdk.showAd?.('interstitial'); }
-      else { const w = this.waitResume(1500); this.sdk.showBanner?.(); await w; }
-    } catch { /* sin anuncio */ }
-    audioHook(false);
+  commercialBreak() { return this.adBreak(); }
+  prerollBreak() {
+    if (this.prerollDone) return Promise.resolve();
+    this.prerollDone = true;
+    return this.adBreak();
   }
   async rewardedBreak() {
     if (!this.hasRewarded) return false;
     this.rewardedOk = false;
-    try { await this.sdk.showAd('rewarded'); } catch { return false; }
-    audioHook(false);
+    try { await this.sdk.showAd('rewarded'); } catch { this.adEnd(); return false; }
+    this.adEnd();
     return this.rewardedOk;
   }
   happyTime() {}

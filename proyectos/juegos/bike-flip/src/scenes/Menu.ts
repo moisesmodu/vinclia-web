@@ -83,11 +83,14 @@ export class Menu extends Phaser.Scene {
   go(level = nextLevel()) {
     if (this.going) return;
     this.going = true;
+    const ad = portal.prerollBreak(); // pre-roll (GD/GM) pedido dentro del gesto del jugador
     startMusic(this);
-    this.cameras.main.fadeOut(160, 255, 210, 160);
-    this.cameras.main.once('camerafadeoutcomplete', () => {
-      this.registry.set('level', level);
-      this.scene.start('Play', { level });
+    void ad.then(() => {
+      this.cameras.main.fadeOut(160, 255, 210, 160);
+      this.cameras.main.once('camerafadeoutcomplete', () => {
+        this.registry.set('level', level);
+        this.scene.start('Play', { level });
+      });
     });
   }
 

@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { portal } from './portal';
+import { portal, onAdPause } from './portal';
 import { audio } from './audio';
 
 /**
@@ -25,6 +25,8 @@ export async function startGame(opts: {
     audio: { disableWebAudio: false },
     scene: opts.scenes,
   });
+  // GameDistribution y GameMonetize: juego en pausa entre SDK_GAME_PAUSE y SDK_GAME_START (el audio lo silencia audio.ts)
+  onAdPause((p) => { try { if (p) game.pause(); else game.resume(); } catch { /* */ } });
   (window as any).__game = game; // para las pruebas automáticas (scripts/perf.mjs)
   return game;
 }

@@ -9,6 +9,7 @@ export class Levels extends Phaser.Scene {
   constructor() { super('Levels'); }
 
   create() {
+    this.starting = false;
     portal.gameplayStop();
     const bg = this.add.tileSprite(0, 0, 10, 10, 'bg0').setOrigin(0, 0);
     const home = iconButton(this, 0, 0, 'home', PALETTE.purple, 38, () => this.scene.start('Menu'));
@@ -57,7 +58,13 @@ export class Levels extends Phaser.Scene {
     this.input.keyboard?.on('keydown-ESC', () => this.scene.start('Menu'));
   }
 
+  private starting = false;
   private start(level: number) {
-    this.scene.start('Play', { level, transition: true });
+    if (this.starting) return;
+    this.starting = true;
+    const ad = portal.prerollBreak(); // pre-roll (GD/GM) si esta es la primera partida
+    void ad.then(() => {
+      this.scene.start('Play', { level, transition: true });
+    });
   }
 }

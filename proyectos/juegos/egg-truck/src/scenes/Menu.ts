@@ -71,13 +71,16 @@ export class Menu extends Phaser.Scene {
   private go() {
     if (this.going) return;
     this.going = true;
+    const ad = portal.prerollBreak(); // pre-roll (GD/GM) pedido dentro del gesto del jugador
     const sm = this.sound as Phaser.Sound.WebAudioSoundManager;
     (sm as any).context?.resume?.();
     if (!this.sound.get('music')) this.sound.add('music', { loop: true, volume: 0.45 }).play();
-    this.cameras.main.fadeOut(180, 108, 200, 255);
-    this.cameras.main.once('camerafadeoutcomplete', () => {
-      this.scene.start('Play');
-      this.going = false;
+    void ad.then(() => {
+      this.cameras.main.fadeOut(180, 108, 200, 255);
+      this.cameras.main.once('camerafadeoutcomplete', () => {
+        this.scene.start('Play');
+        this.going = false;
+      });
     });
   }
 }

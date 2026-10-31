@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { portal } from '@comun/portal';
 import { menuScreen } from '@comun/pantallas';
 import { menuExtras } from '@comun/extras';
 import { modalOpen } from '@comun/tienda';
@@ -50,9 +51,12 @@ export class Menu extends Phaser.Scene {
   go() {
     if (this.going) return;
     this.going = true;
+    const ad = portal.prerollBreak(); // pre-roll (GD/GM) pedido dentro del gesto del jugador
     ((this.sound as any).context as AudioContext | undefined)?.resume?.();
     if (this.cache.audio.exists('music') && !this.sound.get('music')) this.sound.add('music', { loop: true, volume: 0.4 }).play();
-    this.cameras.main.fadeOut(180, 155, 231, 255);
-    this.cameras.main.once('camerafadeoutcomplete', () => { this.scene.start('Play'); this.going = false; });
+    void ad.then(() => {
+      this.cameras.main.fadeOut(180, 155, 231, 255);
+      this.cameras.main.once('camerafadeoutcomplete', () => { this.scene.start('Play'); this.going = false; });
+    });
   }
 }
