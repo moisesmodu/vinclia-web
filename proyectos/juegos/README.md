@@ -41,6 +41,11 @@ PORT=5091 node scripts/sdk-test.mjs gamedistribution   # idem GameDistribution (
 3. Rama de producción: la que se fusione (`claude/estrategia-ingresos-recurrentes-tx0rvw` o `main`).
 4. No hace falta ninguna variable de entorno: los SDK de los portales se cargan solos en sus builds; la web propia no
    lleva anuncios (añadir AdSense for Games es una mejora posterior, ver `MARKETING.md`).
+5. Variables opcionales: `SITE_URL` (canonical, `hreflang` y sitemap con URL absolutas; en Vercel vale la que pone sola) y
+   `GOOGLE_SITE_VERIFICATION` (etiqueta de Search Console). La analítica de Vercel (sin cookies) se incluye sola cuando el
+   build corre en Vercel. Campo opcional `tituloSeo` en `juegos.json`: cambia el `<title>` y `og:title` de la página del juego
+   en la web propia sin tocar el nombre de marca (Snow Plow lo usa para «Christmas»). Páginas estáticas extra (`about`,
+   `es/juegos-para-chromebook`) van en `seo/paginas.json` con `lang`, `alt` (hreflang) y `jsonld` opcionales.
 
 URL resultante: `https://<proyecto>.vercel.app/egg-truck/` (y el catálogo en la raíz).
 

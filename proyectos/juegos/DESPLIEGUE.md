@@ -119,3 +119,24 @@ portada enlaza los 18 juegos listos de `juegos.json`, y cada `/<juego>/` da 200 
 `/tow-truck/`, `/tiny-harbor/` y `/jelly-merge/`.
 
 Ejecutado el 2026-10-31
+
+## Redespliegue pendiente · SEO de la web propia (31/10/2026, sesión de marketing)
+Cambios solo en la web (los paquetes de portal no cambian): analítica de Vercel sin cookies (`/_vercel/insights/script.js`,
+solo cuando el build corre en Vercel o `SITE_URL` es `*.vercel.app`; Web Analytics ya está activado en el proyecto),
+canonical y Open Graph en las 18 páginas de juego, título navideño de Snow Plow (`tituloSeo` en `juegos.json`; el título de
+marca sigue siendo «Snow Plow»), página `/about/` con datos `Organization` (Lleida) enlazada desde el pie, página en
+castellano `/es/juegos-para-chromebook/` con `hreflang` es/en, y verificación de Search Console por variable.
+
+- **Variable nueva, opcional:** `GOOGLE_SITE_VERIFICATION` = el valor `content` que da Search Console (método «etiqueta
+  HTML») para la propiedad `https://juegos-casuales.vercel.app/`. Sin ella no sale ninguna etiqueta. Hasta tener el dominio
+  propio (`nuvolet.games`, sin comprar) la propiedad se verifica sobre `juegos-casuales.vercel.app`.
+- Comandos (desde la raíz del repositorio, Root Directory `proyectos/juegos`):
+```bash
+git fetch origin claude/juegos-primer-juego && git checkout claude/juegos-primer-juego && git pull
+# opcional: printf '%s' "<valor>" | vercel env add GOOGLE_SITE_VERIFICATION production --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
+vercel link --yes --project juegos-casuales --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
+vercel deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID
+```
+- Comprobar: `/snow-plow/` tiene `<title>` con «Christmas» y `<link rel="canonical">`; `/about/` responde 200; `/es/juegos-para-chromebook/`
+  responde 200 con `hreflang`; `/` carga `/_vercel/insights/script.js` (y en Vercel → Analytics empiezan a verse visitas);
+  `/sitemap.xml` lista 129 URL (18 juegos, 108 guías y categorías, about, chromebook es, portada).
