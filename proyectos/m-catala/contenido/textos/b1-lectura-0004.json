@@ -1,0 +1,62 @@
+{
+  "id": "b1-lectura-0004",
+  "nivell": "B1",
+  "area": "lectura",
+  "titol": "Com inscriure's al casal d'estiu municipal",
+  "genere": "instruccions",
+  "text": "El casal d'estiu de Vilafranca del Penedès és per a infants de 3 a 12 anys i funciona de l'1 al 31 de juliol, de nou del matí a una del migdia. Hi ha servei d'acollida des de les vuit i servei de menjador fins a les tres de la tarda.\n\nPer inscriure-hi un infant, seguiu aquests passos:\n\n1. Entreu al web de l'Ajuntament i cliqueu l'apartat «Casals d'estiu». Les inscripcions s'obren el 2 de maig a les nou del matí i es tanquen el 20 de maig.\n\n2. Empleneu el formulari amb les dades de l'infant i de la família. Trieu les setmanes que voleu i marqueu si necessiteu acollida o menjador.\n\n3. Adjunteu una fotografia de la targeta sanitària de l'infant i, si demaneu la beca, el justificant d'ingressos de la família.\n\n4. Quan rebeu el correu de confirmació, feu el pagament en un termini de cinc dies. Si no pagueu dins d'aquest termini, perdreu la plaça.\n\nPreus: 45 euros per setmana. El menjador costa 7 euros al dia i l'acollida matinal, 2 euros al dia. Les famílies nombroses i monoparentals tenen un descompte del 20 %.\n\nSi teniu dubtes, podeu trucar a l'Oficina d'Atenció Ciutadana, de dilluns a divendres, de nou a dues, o escriure a l'adreça de correu que trobareu al web.\n\nLes places són limitades i s'adjudiquen per ordre d'inscripció.",
+  "paraules": 225,
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Fins a quina hora poden quedar-se els infants que es queden a dinar?",
+      "opcions": [
+        "Fins a la una del migdia",
+        "Fins a les tres de la tarda",
+        "Fins a les vuit del vespre"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quan es poden fer les inscripcions?",
+      "opcions": [
+        "Del 2 al 20 de maig",
+        "De l'1 al 31 de juliol",
+        "Només el dia 2 de maig"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què han d'adjuntar totes les famílies?",
+      "opcions": [
+        "El justificant d'ingressos",
+        "El certificat de família nombrosa",
+        "Una fotografia de la targeta sanitària"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Què passa si no es paga dins dels cinc dies?",
+      "opcions": [
+        "Es pot pagar més tard amb un recàrrec",
+        "Es perd la plaça",
+        "S'ha de tornar a emplenar el formulari"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Qui té dret a un descompte?",
+      "opcions": [
+        "Les famílies que s'inscriuen el primer dia",
+        "Els infants de 3 anys",
+        "Les famílies nombroses i monoparentals"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}

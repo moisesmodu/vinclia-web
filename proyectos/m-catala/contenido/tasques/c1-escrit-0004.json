@@ -1,0 +1,29 @@
+{
+  "id": "c1-escrit-0004",
+  "nivell": "C1",
+  "tipus": "argumentatiu-3-fonts",
+  "titol": "La intel·ligència artificial a l'escola",
+  "enunciat": "El Departament d'Educació ha de decidir si regula o restringeix l'ús d'eines d'intel·ligència artificial generativa per part de l'alumnat de secundària. Una revista educativa us demana un article d'opinió (entre 220 i 280 paraules) en què defenseu una posició clara. Llegiu les tres fonts, que ofereixen punts de vista diferents, i incorporeu-hi la informació que considereu rellevant sense copiar-ne frases. El text ha de tenir títol, introducció amb tesi, dos o tres arguments (almenys un contraargument refutat) i conclusió. Registre formal.",
+  "fonts": [
+    {
+      "titol": "Font 1. Comunicat d'un sindicat de docents",
+      "text": "Una enquesta a tres mil professors de secundària revela que el 71 % ha detectat treballs fets totalment o parcialment amb intel·ligència artificial, i que el 58 % ha deixat de demanar redaccions a casa per aquest motiu. Els docents denuncien que es troben sols davant d'un canvi que els obliga a replantejar l'avaluació sense formació, sense criteris comuns i sense temps. El sindicat reclama una normativa clara que estableixi què es pot fer i què no a cada etapa, formació obligatòria dins de l'horari lectiu i la garantia que cap eina no es farà servir per substituir hores de docència o per recollir dades dels menors sense control."
+    },
+    {
+      "titol": "Font 2. Entrevista a una professora de llengua que utilitza la IA a l'aula",
+      "text": "Prohibir la intel·ligència artificial a l'escola és tan inútil com ho va ser prohibir la calculadora o la Viquipèdia: els alumnes la fan servir igualment, però d'amagat i sense criteri. Jo la utilitzo a classe com a esparring: els demano que facin escriure un text a la màquina, que en detectin els errors i els llocs comuns, i que el millorin. Han après més sobre què és un bon paràgraf en un trimestre que en dos cursos. També m'estalvia hores preparant exercicis adaptats a cada nivell, que dedico a atendre els alumnes que van més enrere. El problema no és l'eina, sinó fer-la servir per no pensar. I això és exactament el que l'escola ha d'ensenyar a evitar."
+    },
+    {
+      "titol": "Font 3. Article d'un catedràtic de psicologia de l'aprenentatge",
+      "text": "Aprendre a escriure és aprendre a pensar: ordenar idees, triar paraules, descartar camins. Quan una màquina fa aquesta feina, l'alumne obté un producte, però no el procés, i és el procés el que construeix la capacitat. Les primeres investigacions amb estudiants que han utilitzat assistents d'escriptura de manera habitual mostren una comprensió més superficial dels temes i més dificultat per argumentar sense ajuda. A més, la bretxa creix: qui ja domina l'escriptura treu profit de l'eina, i qui no, s'hi refugia. No defenso una prohibició total, sinó una regla simple: a les etapes en què s'adquireix una competència bàsica, aquesta competència s'ha d'exercitar sense pròtesis."
+    }
+  ],
+  "paraulesMin": 220,
+  "paraulesMax": 280,
+  "minuts": 90,
+  "registre": "formal",
+  "guia": {
+    "ca": "El corrector aplica la rúbrica oficial de C1. Adequació: article d'opinió amb títol, tesi clara sobre si cal regular, restringir o integrar la IA (una posició matisada és vàlida sempre que sigui explícita), registre formal, entre 220 i 280 paraules, i informació d'almenys dues fonts reformulada. Coherència i cohesió: introducció que contextualitzi el debat, arguments desenvolupats amb exemples (el símil de la calculadora de la font 2, les dades del sindicat, la noció de procés de la font 3), un contraargument refutat, connectors variats i ben usats (en efecte, no obstant això, per contra, d'aquesta manera, en darrer terme) i una conclusió amb proposta. Correcció: cura especial amb l'ús de hi i en, amb les oracions de relatiu (en què, amb la qual, on), amb la concordança del participi i amb els signes de puntuació en les enumeracions. Riquesa: terminologia precisa (eina, competència, avaluació, etapa educativa, alfabetització digital), sinònims per no repetir «alumnes» i «IA» contínuament, i estructures complexes (condicionals, concessives). Penalitza: la tesi ambigua o inexistent; copiar frases de les fonts; els anglicismes innecessaris i els calcs (prompt sense cursiva ni alternativa, tenir que, en base a, a nivell de, degut a, «ensenyança» per ensenyament, «deures» mal usat per tasques); les generalitzacions sense suport; la manca de títol; i superar les 300 paraules o no arribar a les 200. Un text ben escrit però sense argumentació ni fonts no supera els 25 punts de 40."
+  },
+  "revisio": "sessio"
+}

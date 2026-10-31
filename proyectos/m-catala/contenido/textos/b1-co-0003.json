@@ -1,0 +1,56 @@
+{
+  "id": "b1-co-0003",
+  "nivell": "B1",
+  "area": "co",
+  "titol": "Al taulell del CAP",
+  "genere": "diàleg breu",
+  "text": "A: Bon dia. Voldria demanar hora per al metge de capçalera, si us plau.\nB: Bon dia. El nom i la targeta sanitària, si us plau.\nA: Marta Soler. Aquí la té.\nB: El seu metge, el doctor Vidal, té hora dijous a les nou del matí o divendres a dos quarts de cinc de la tarda.\nA: Dijous al matí no puc, que treballo. Divendres a la tarda em va bé.\nB: Divendres, doncs. És urgent?\nA: No. Fa dies que em fa mal l'esquena i voldria que me la mirés.\nB: D'acord. Si empitjora abans de divendres, pot venir al matí sense hora, que hi ha un metge de guàrdia.\nA: Perfecte. I puc recollir els resultats de l'anàlisi del meu marit?\nB: Això ho ha de fer ell mateix, o bé mirar-ho a La Meva Salut amb el mòbil.\nA: D'acord, li ho diré. Moltes gràcies.\nB: De res. Fins divendres.",
+  "paraules": 154,
+  "veus": [
+    "central",
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Quan anirà la Marta al metge?",
+      "opcions": [
+        "Dijous al matí",
+        "Divendres al matí",
+        "Divendres a la tarda"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Per què vol anar al metge?",
+      "opcions": [
+        "Perquè li fa mal l'esquena",
+        "Perquè té febre",
+        "Per recollir uns resultats"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què pot fer si es troba pitjor abans de la visita?",
+      "opcions": [
+        "Esperar fins divendres",
+        "Anar al CAP al matí sense hora",
+        "Trucar al doctor Vidal al mòbil"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p4",
+      "enunciat": "Qui ha de recollir els resultats de l'anàlisi?",
+      "opcions": [
+        "La Marta",
+        "El doctor Vidal",
+        "El marit de la Marta"
+      ],
+      "resposta": 2
+    }
+  ],
+  "revisio": "sessio"
+}

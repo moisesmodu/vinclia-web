@@ -1,0 +1,3650 @@
+{
+ "data": "2026-10-28T05:30:47.894Z",
+ "lt": "http://localhost:8081/v2",
+ "peces": 1349,
+ "ambAvisos": 124,
+ "segurs": 0,
+ "resultats": [
+  {
+   "origen": "item",
+   "id": "b1-buits-0005",
+   "camp": "pista",
+   "text": "Després de n s'escriu v.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "SUGGERIMENTS_N",
+     "cat": "SPELLING",
+     "missatge": "¿Volíeu dir «no»?",
+     "fragment": "n",
+     "suggeriments": [
+      "no",
+      "ni",
+      "en"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-buits-0033",
+   "camp": "pista",
+   "text": "Calor és femení en català.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CONCORDANCES_ATRIBUT",
+     "cat": "CONCORDANCES_SUBJECT_VERB",
+     "missatge": "Possible falta de concordança.",
+     "fragment": "femení",
+     "suggeriments": [
+      "femenina"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0001",
+   "camp": "enunciat",
+   "text": "Bueno, demà ens veiem a la porta de l'escola.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "Bueno",
+     "suggeriments": [
+      "Bo",
+      "Bé",
+      "Sí"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0003",
+   "camp": "enunciat",
+   "text": "No vindré a classe, pues tinc hora al metge.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PUES_DONCS",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Si és conjunció, cal dir «doncs». Correcte com a plural de ‘pua’.",
+     "fragment": "pues",
+     "suggeriments": [
+      "doncs"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0003",
+   "camp": "pista",
+   "text": "Aquí s'expressa una causa; doncs només val per a la conseqüència.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DONCS_CAUSAL",
+     "cat": "CONJUNCTIONS",
+     "missatge": "Incorrecte si equival a «perquè» (valor causal). Correcte si equival a «per tant» o indica continuació.",
+     "fragment": "doncs",
+     "suggeriments": [
+      "perquè",
+      "ja que",
+      "puix"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0004",
+   "camp": "enunciat",
+   "text": "L'oficina de correus és oberta hasta les dues.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_HASTA",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «fins»?",
+     "fragment": "hasta",
+     "suggeriments": [
+      "fins",
+      "fins a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0005",
+   "camp": "enunciat",
+   "text": "Vols algo del supermercat? Hi vaig ara.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ALGO",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Eviteu aquest castellanisme.",
+     "fragment": "algo",
+     "suggeriments": [
+      "res",
+      "alguna cosa"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0006",
+   "camp": "enunciat",
+   "text": "Menos mal que has portat el paraigua.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MENYS_MAL",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "Menos mal",
+     "suggeriments": [
+      "Encara sort",
+      "Sort",
+      "Encara rai"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0007",
+   "camp": "enunciat",
+   "text": "No m'he donat compte de l'hora i he perdut el tren.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DONAR_COMPTE",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "«Donar-se compte» és una expressió incorrecta si equival a ‘adonar-se’; és correcta si vol dir ‘retre compte’.",
+     "fragment": "donat compte",
+     "suggeriments": [
+      "adonat"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0008",
+   "camp": "enunciat",
+   "text": "Apreta el botó vermell per cridar la infermera.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "APRETAR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris. Val més fer servir un verb alternatiu.",
+     "fragment": "Apreta",
+     "suggeriments": [
+      "Prem",
+      "Clica",
+      "Fa clic"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0009",
+   "camp": "enunciat",
+   "text": "Assenta't aquí mentre esperes el torn.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ASSENTAR_ASSEURE",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «asseu»? «Assentar» és correcte en altres sentits.",
+     "fragment": "Assenta",
+     "suggeriments": [
+      "Asseu"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0010",
+   "camp": "enunciat",
+   "text": "M'he enterat que tanquen la fàbrica al desembre.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ENTERARSE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "‘Enterar-se’ és un castellanisme que cal evitar.",
+     "fragment": "M'he enterat",
+     "suggeriments": [
+      "M'he adonat",
+      "He sabut",
+      "He entès"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0011",
+   "camp": "enunciat",
+   "text": "L'han despedit de la feina aquest mes.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DESPEDIR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris.",
+     "fragment": "despedit",
+     "suggeriments": [
+      "acomiadat",
+      "despatxat",
+      "fet fora"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0012",
+   "camp": "enunciat",
+   "text": "Vaig disfrutar molt de la festa major del barri.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DISFRUTAR",
+     "cat": "DNV_PRIMARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris.",
+     "fragment": "Vaig disfrutar",
+     "suggeriments": [
+      "Vaig gaudir",
+      "Vaig fruir",
+      "M'ho vaig passar bé"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0013",
+   "camp": "enunciat",
+   "text": "Tinc que renovar el NIE abans de l'estiu.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Tinc que",
+     "suggeriments": [
+      "He de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0014",
+   "camp": "enunciat",
+   "text": "Hi ha que demanar cita prèvia per fer el padró.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "HI_HA_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Hi ha que",
+     "suggeriments": [
+      "Cal",
+      "S'ha de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0016",
+   "camp": "enunciat",
+   "text": "Per la tarda vaig a classe de català.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PER_LA_NIT",
+     "cat": "DATES",
+     "missatge": "La major part dels llibres d’estil recomanen usar la preposició ‘a’.",
+     "fragment": "Per",
+     "suggeriments": [
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-castellanismes-0020",
+   "camp": "enunciat",
+   "text": "Pago l'alquiler el dia 1 de cada mes.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ALQUILER",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «lloguer»?",
+     "fragment": "l'alquiler",
+     "suggeriments": [
+      "el lloguer"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b1-transformacio-0004",
+   "camp": "enunciat",
+   "text": "Reescriu la frase sense «tenir que»: Tinc que anar al CAP demà.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Tinc que anar",
+     "suggeriments": [
+      "He d'anar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-buits-0003",
+   "camp": "pista",
+   "text": "La i es pronuncia separada de la e: dièresi.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ACCENTUATION_CHECK",
+     "cat": "ACCENTUACIO",
+     "missatge": "Si és un adjectiu o un nom, s’escriu amb accent.",
+     "fragment": "pronuncia",
+     "suggeriments": [
+      "pronúncia"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-buits-0006",
+   "camp": "pista",
+   "text": "Darrere de vocal, el pronom el s'apostrofa.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PRONOMS_FEBLES_ORDENACIO",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Combinació incorrecta de pronoms febles.",
+     "fragment": "el s'",
+     "suggeriments": []
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-buits-0021",
+   "camp": "pista",
+   "text": "Davant de que, la preposició cau.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Error de sintaxi.",
+     "fragment": "de que",
+     "suggeriments": [
+      "que",
+      "de què",
+      "del fet que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-buits-0026",
+   "camp": "pista",
+   "text": "Darrere de preposició, el relatiu de cosa és què (amb accent).",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "QUE_SENSE_ACCENT",
+     "cat": "DIACRITICS",
+     "missatge": "Probablement no s’ha d’accentuar. Sí que s’accentua si es pot substituir per ‘quina cosa’.",
+     "fragment": "què",
+     "suggeriments": [
+      "que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-buits-0038",
+   "camp": "pista",
+   "text": "Anàlisi és femení.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CONCORDANCES_ATRIBUT",
+     "cat": "CONCORDANCES_SUBJECT_VERB",
+     "missatge": "Possible falta de concordança.",
+     "fragment": "femení",
+     "suggeriments": [
+      "femenina"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0001",
+   "camp": "enunciat",
+   "text": "A lo millor demà no obren l'oficina del padró.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "A_LO_MILLOR",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "A lo millor",
+     "suggeriments": [
+      "Potser",
+      "Segons com,",
+      "Si molt convé,"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0002",
+   "camp": "enunciat",
+   "text": "Entonces vam decidir canviar de pis.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ENTONCES",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «aleshores»?",
+     "fragment": "Entonces",
+     "suggeriments": [
+      "Aleshores",
+      "Llavors"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0003",
+   "camp": "enunciat",
+   "text": "Ojalà aprovi el B2 en aquesta convocatòria.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_OJALÀ",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «tant de bo»?",
+     "fragment": "Ojalà",
+     "suggeriments": [
+      "Tant de bo",
+      "Tant de bo que",
+      "Així"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0005",
+   "camp": "enunciat",
+   "text": "Els veïns recolzen la proposta de posar un ascensor.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "RECOLZAR",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Incorrecte en el sentit de ‘donar suport’.",
+     "fragment": "recolzen",
+     "suggeriments": [
+      "donen suport a",
+      "fan costat a",
+      "sostenen"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0006",
+   "camp": "enunciat",
+   "text": "Ens vam despedir a l'estació de Sants.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DESPEDIR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris.",
+     "fragment": "despedir",
+     "suggeriments": [
+      "acomiadar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0007",
+   "camp": "enunciat",
+   "text": "Encara no s'ha aclarat qui pagarà la reforma de l'escala.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_ACLARAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "aclarat",
+     "suggeriments": [
+      "aclarit"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0008",
+   "camp": "enunciat",
+   "text": "El cap em té agobiat amb tants informes.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_AGOBIAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "agobiat",
+     "suggeriments": [
+      "aclaparat",
+      "atabalat",
+      "angoixat"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0009",
+   "camp": "enunciat",
+   "text": "Lo millor seria demanar hora al matí.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "Lo",
+     "suggeriments": [
+      "El",
+      "El que és",
+      "La cosa"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0010",
+   "camp": "enunciat",
+   "text": "A nivell de barri, hi ha pocs serveis per a la gent gran.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "A nivell de",
+     "suggeriments": [
+      "En l'àmbit de",
+      "A escala de",
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0011",
+   "camp": "enunciat",
+   "text": "No he anat a la reunió doncs tenia visita al CAP.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DONCS_CAUSAL",
+     "cat": "CONJUNCTIONS",
+     "missatge": "Incorrecte si equival a «perquè» (valor causal). Correcte si equival a «per tant» o indica continuació. Potser hi manquen comes al voltant.",
+     "fragment": "doncs",
+     "suggeriments": [
+      "perquè"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0012",
+   "camp": "enunciat",
+   "text": "Hi havien moltes persones a la cua del padró.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "HAVER_HI_IMPERSONAL_SINGULAR",
+     "cat": "VERBS",
+     "missatge": "En llenguatge formal, és preferible conjugar l’impersonal «haver-hi» en singular.",
+     "fragment": "havien",
+     "suggeriments": [
+      "havia"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0013",
+   "camp": "enunciat",
+   "text": "Degut a la pluja, han suspès la festa de l'escola.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "Degut a",
+     "suggeriments": [
+      "A causa de",
+      "Per",
+      "Per culpa de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0014",
+   "camp": "enunciat",
+   "text": "En base a les dades, el lloguer ha pujat un deu per cent.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "En base a",
+     "suggeriments": [
+      "D'acord amb",
+      "Segons",
+      "A partir de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0016",
+   "camp": "enunciat",
+   "text": "Estic segur de que la reunió és dijous.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Error de sintaxi.",
+     "fragment": "de que",
+     "suggeriments": [
+      "que",
+      "de què",
+      "del fet que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0017",
+   "camp": "enunciat",
+   "text": "Insisteix en venir a la reunió de l'escala.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CANVI_PREPOSICIONS",
+     "cat": "PREPOSITIONS",
+     "missatge": "Probablement cal canviar la preposició.",
+     "fragment": "en",
+     "suggeriments": [
+      "a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0018",
+   "camp": "enunciat",
+   "text": "Vindré a buscar-te per la nit, quan acabi el torn.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PER_LA_NIT",
+     "cat": "DATES",
+     "missatge": "La major part dels llibres d’estil recomanen usar la preposició ‘a’.",
+     "fragment": "per",
+     "suggeriments": [
+      "a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0021",
+   "camp": "enunciat",
+   "text": "Tens que presentar el certificat abans del dia 10.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Tens que",
+     "suggeriments": [
+      "Has de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-castellanismes-0024",
+   "camp": "enunciat",
+   "text": "Han vingut bastantes persones a la xerrada sobre el lloguer.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "BASTANTA",
+     "cat": "NOT_FORMAL",
+     "missatge": "Forma col·loquial de femení.",
+     "fragment": "bastantes",
+     "suggeriments": [
+      "bastants"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-lexic-0015",
+   "camp": "pista",
+   "text": "Malgrat i encara necessiten que.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MALGRAT_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Potser és «malgrat que» o falta una coma abans del verb.",
+     "fragment": "Malgrat",
+     "suggeriments": [
+      "Malgrat que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-transformacio-0004",
+   "camp": "pista",
+   "text": "ens + en darrere del verb: 'ns-en.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MOTS_NO_SEPARATS",
+     "cat": "SPELLING",
+     "missatge": "S’escriu junt.",
+     "fragment": "en darrere",
+     "suggeriments": [
+      "endarrere"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-transformacio-0007",
+   "camp": "enunciat",
+   "text": "Corregeix la preposició: Confio en que arribin a temps a l'examen.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció incorrecta.",
+     "fragment": "en que",
+     "suggeriments": [
+      "en el fet que",
+      "que",
+      "a fer que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-transformacio-0008",
+   "camp": "enunciat",
+   "text": "Corregeix la preposició: Vam tardar molt en trobar aparcament.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CANVI_PREPOSICIONS",
+     "cat": "PREPOSITIONS",
+     "missatge": "Probablement cal canviar la preposició.",
+     "fragment": "en",
+     "suggeriments": [
+      "a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "b2-transformacio-0013",
+   "camp": "enunciat",
+   "text": "Reescriu la frase sense l'article «lo»: Lo important és arribar a temps.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "Lo important",
+     "suggeriments": [
+      "L'important",
+      "El que és important",
+      "La cosa important"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-buits-0057",
+   "camp": "pista",
+   "text": "Anàlisi és femení.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CONCORDANCES_ATRIBUT",
+     "cat": "CONCORDANCES_SUBJECT_VERB",
+     "missatge": "Possible falta de concordança.",
+     "fragment": "femení",
+     "suggeriments": [
+      "femenina"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0001",
+   "camp": "enunciat",
+   "text": "Tinc que acabar l'informe abans de divendres.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Tinc que acabar",
+     "suggeriments": [
+      "He d'acabar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0002",
+   "camp": "enunciat",
+   "text": "Lo important és que arribeu puntuals a l'entrevista.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "Lo important",
+     "suggeriments": [
+      "L'important",
+      "El que és important",
+      "La cosa important"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0003",
+   "camp": "enunciat",
+   "text": "Hi ha que presentar el certificat de residència abans del dia 10.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "HI_HA_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Hi ha que",
+     "suggeriments": [
+      "Cal",
+      "S'ha de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0004",
+   "camp": "enunciat",
+   "text": "No podem començar la sessió, doncs falta la presidenta.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DONCS_CAUSAL",
+     "cat": "CONJUNCTIONS",
+     "missatge": "Incorrecte si equival a «perquè» (valor causal). Correcte si equival a «per tant» o indica continuació.",
+     "fragment": "doncs",
+     "suggeriments": [
+      "perquè",
+      "ja que",
+      "puix"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0005",
+   "camp": "enunciat",
+   "text": "A nivell de personal, el servei està sota mínims.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "A nivell de",
+     "suggeriments": [
+      "En l'àmbit de",
+      "A escala de",
+      "A"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0006",
+   "camp": "enunciat",
+   "text": "L'acte s'ha suspès degut a la pluja.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "degut a",
+     "suggeriments": [
+      "a causa de",
+      "per",
+      "per culpa de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0007",
+   "camp": "enunciat",
+   "text": "La plaça s'adjudicarà en base a la puntuació obtinguda.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "en base a",
+     "suggeriments": [
+      "d'acord amb",
+      "segons",
+      "a partir de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0008",
+   "camp": "enunciat",
+   "text": "Quant més aviat presentis la sol·licitud, abans la resoldran.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "QUANT_QUAN",
+     "cat": "ADVERBS",
+     "missatge": "¿Volíeu dir «quan» (moment en el temps) en comptes de «quant» (quantitat)?",
+     "fragment": "Quant",
+     "suggeriments": [
+      "Quan"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0009",
+   "camp": "enunciat",
+   "text": "Necessites algo més de la farmàcia?",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ALGO",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Eviteu aquest castellanisme.",
+     "fragment": "algo",
+     "suggeriments": [
+      "res",
+      "alguna cosa"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0010",
+   "camp": "enunciat",
+   "text": "Hi havia varis candidats amb la mateixa puntuació.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "VARIS",
+     "cat": "DETERMINANTS",
+     "missatge": "Incorrecte amb valor quantitatiu o indefinit.",
+     "fragment": "varis",
+     "suggeriments": [
+      "diversos",
+      "alguns",
+      "uns quants"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0011",
+   "camp": "enunciat",
+   "text": "Adjuntem els contractes i una còpia dels mateixos.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MATEIX_INCORRECTE",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Construcció probablement incorrecta.",
+     "fragment": "dels mateixos",
+     "suggeriments": [
+      "d'aquests"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0012",
+   "camp": "enunciat",
+   "text": "Al arribar a l'oficina, fitxeu amb la targeta.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_EL_S_APOSTROFEN",
+     "cat": "APOSTROPHATION",
+     "missatge": "Cal apostrofar.",
+     "fragment": "Al arribar",
+     "suggeriments": [
+      "A l'arribar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0013",
+   "camp": "enunciat",
+   "text": "No tinc res que fer aquest cap de setmana.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "COSES_QUE_FER",
+     "cat": "SYNTAX",
+     "missatge": "Si el ‘que’ no és comparatiu, potser cal canviar-lo.",
+     "fragment": "que",
+     "suggeriments": [
+      "a",
+      "per",
+      "per a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0014",
+   "camp": "enunciat",
+   "text": "Hem de fer un recado abans de tornar a la feina.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_RECADO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «encàrrec»?",
+     "fragment": "un recado",
+     "suggeriments": [
+      "un encàrrec",
+      "una comanda",
+      "un avís"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0015",
+   "camp": "enunciat",
+   "text": "El bussó de l'escala està ple de propaganda.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "BUSSO_BUSTIA",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «bústia»? «Bussó» és correcte en altres sentits.",
+     "fragment": "El bussó",
+     "suggeriments": [
+      "La bústia"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0016",
+   "camp": "enunciat",
+   "text": "Al despatx hi ha un enxufe lliure per al portàtil.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_ENXUFAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "enxufe",
+     "suggeriments": [
+      "endolle",
+      "connecte",
+      "empalme"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0017",
+   "camp": "enunciat",
+   "text": "El pis té un tamany ideal per a una parella.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TAMANY",
+     "cat": "DNV_COLLOQUIAL",
+     "missatge": "Paraula admesa només per alguns diccionaris.",
+     "fragment": "un tamany",
+     "suggeriments": [
+      "una mida",
+      "una grandària",
+      "un format"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0018",
+   "camp": "enunciat",
+   "text": "Posa el sello a la carta abans de dur-la a correus.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_SELLO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «segell»?",
+     "fragment": "sello",
+     "suggeriments": [
+      "segell"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0019",
+   "camp": "enunciat",
+   "text": "El sindicat recolza la vaga de dilluns.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "RECOLZAR",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Incorrecte en el sentit de ‘donar suport’.",
+     "fragment": "recolza la",
+     "suggeriments": [
+      "dona suport a la",
+      "dona suport a fa",
+      "dona suport a facen"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0019",
+   "camp": "pista",
+   "text": "Recolzar és repenjar; suportar és aguantar.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "RECOLZAR",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Incorrecte en el sentit de ‘donar suport’.",
+     "fragment": "Recolzar",
+     "suggeriments": [
+      "Donar suport",
+      "Fer costat",
+      "Sostenir"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0020",
+   "camp": "enunciat",
+   "text": "Hem de medir la sala abans de comprar els mobles.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MEDIR",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Verb incorrecte en el sentit de ‘mesurar, fer’.",
+     "fragment": "medir",
+     "suggeriments": [
+      "mesurar",
+      "fer",
+      "fer d'alçada"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0022",
+   "camp": "enunciat",
+   "text": "Vam quedar amb els del sindicat per fer un cafè, però van arribar amb mitja hora de retràs.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "RETRAS_RETARD",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Incorrecte si volíeu dir «retard». Correcte com a futur del v. ‘retre’ (tu retràs).",
+     "fragment": "retràs",
+     "suggeriments": [
+      "retard",
+      "endarreriment"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0023",
+   "camp": "enunciat",
+   "text": "Hem rebut un gran número de queixes pel soroll de les obres.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "NOMBRE_NUMERO",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "En el sentit de ‘quantitat’ cal dir «nombre».",
+     "fragment": "número",
+     "suggeriments": [
+      "nombre"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0024",
+   "camp": "enunciat",
+   "text": "El tribunal està composat per tres membres.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "COMPOSAR",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «compost» en comptes de «composat» (sentits restringits)?",
+     "fragment": "composat",
+     "suggeriments": [
+      "compost"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0026",
+   "camp": "enunciat",
+   "text": "El plaç per presentar al·legacions acaba el 15 de març.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PLAC",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «termini»? «Plaç» és del v. ‘plaçar’ (jo plaç).",
+     "fragment": "plaç",
+     "suggeriments": [
+      "termini",
+      "terme"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0027",
+   "camp": "enunciat",
+   "text": "L'empresa ha despedit dotze treballadors de la planta de Martorell.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DESPEDIR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris. És inapropiat en el sentit de ‘fer fora de la feina’.",
+     "fragment": "despedit",
+     "suggeriments": [
+      "acomiadat",
+      "despatxat",
+      "fet fora"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0028",
+   "camp": "enunciat",
+   "text": "No m'he enterat que havien canviat la data de l'examen.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ENTERARSE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "‘Enterar-se’ és un castellanisme que cal evitar.",
+     "fragment": "m'he enterat",
+     "suggeriments": [
+      "m'he adonat",
+      "he sabut",
+      "he entès"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0029",
+   "camp": "enunciat",
+   "text": "Us ho comuniquem per a que en tingueu constància.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PER_A_QUE_PERQUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Si és conjunció final (seguida de subjuntiu), cal escriure «perquè».",
+     "fragment": "per a que",
+     "suggeriments": [
+      "perquè"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0031",
+   "camp": "enunciat",
+   "text": "En quant a l'horari, el decidirem la setmana vinent.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_QUANT_A_QUANT_A",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "En quant a",
+     "suggeriments": [
+      "Quant a",
+      "Pel que fa a",
+      "Respecte a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0033",
+   "camp": "enunciat",
+   "text": "Estic segur de que aprovaràs l'examen.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Error de sintaxi.",
+     "fragment": "de que",
+     "suggeriments": [
+      "que",
+      "de què",
+      "del fet que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-castellanismes-0034",
+   "camp": "enunciat",
+   "text": "La tècnica a qual vam demanar l'informe és de baixa.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_QUAL",
+     "cat": "CONFUSIONS",
+     "missatge": "Falta un article davant de «qual».",
+     "fragment": "a",
+     "suggeriments": [
+      "al"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-transformacio-0024",
+   "camp": "enunciat",
+   "text": "Corregeix els dos calcs de la frase (l'obligació i l'article neutre): Tinc que acabar lo més urgent avui.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "Tinc que acabar",
+     "suggeriments": [
+      "He d'acabar"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "item",
+   "id": "c1-transformacio-0025",
+   "camp": "enunciat",
+   "text": "Corregeix el calc de la construcció temporal: Al arribar a casa, truca'm.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_EL_S_APOSTROFEN",
+     "cat": "APOSTROPHATION",
+     "missatge": "Cal apostrofar.",
+     "fragment": "Al arribar",
+     "suggeriments": [
+      "A l'arribar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b1-escrit-0001",
+   "camp": "guia",
+   "text": "El corrector valora que el correu tingui salutació i comiat informals adequats (Hola, Clara / Una abraçada), que es tractin els tres punts de l'enunciat i que el to sigui proper i sincer. Cal que el t",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VALE",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «d’acord»?",
+     "fragment": "vale",
+     "suggeriments": [
+      "d'acord",
+      "entesos",
+      "val"
+     ]
+    },
+    {
+     "regla": "PUES_DONCS",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Si és conjunció, cal dir «doncs». Correcte com a plural de ‘pua’.",
+     "fragment": "pues",
+     "suggeriments": [
+      "doncs"
+     ]
+    },
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "tenir que",
+     "suggeriments": [
+      "(haver de)",
+      "(caldre)"
+     ]
+    },
+    {
+     "regla": "DONAR_COMPTE",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "«Donar-se compte» és una expressió incorrecta si equival a «adonar-se»; és correcta si vol dir ‘retre compte’.",
+     "fragment": "donar-se compte",
+     "suggeriments": [
+      "adonar-se"
+     ]
+    },
+    {
+     "regla": "ANAT_ANANT",
+     "cat": "CONFUSIONS",
+     "missatge": "¿Volíeu dir «anar» o «anant»?",
+     "fragment": "anat",
+     "suggeriments": [
+      "anar",
+      "anant"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b1-escrit-0002",
+   "camp": "guia",
+   "text": "Correu semiformal adreçat a un servei municipal: salutació (Bon dia / Benvolguts) i comiat (Cordialment / Atentament) adequats, i tractament de vostè o de vosaltres mantingut en tot el text. El correc",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MAJUSCULA_IMPROBABLE",
+     "cat": "CASING",
+     "missatge": "Possible confusió en l’ús de la majúscula, si no és un títol o un nom propi.",
+     "fragment": ", Em",
+     "suggeriments": [
+      ", em",
+      ". Em"
+     ]
+    },
+    {
+     "regla": "PRONOMS_FEBLES_DAVANT_VERB",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Cal usar la forma reforçada.",
+     "fragment": "me",
+     "suggeriments": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b1-escrit-0003",
+   "camp": "guia",
+   "text": "Correu formal a l'administració: salutació i comiat formals (Senyor/Senyora o Benvolguts, Atentament), to respectuós però ferm, tractament de vostè o de vosaltres institucional sense barrejar-los. El ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MAJUSCULA_IMPROBABLE",
+     "cat": "CASING",
+     "missatge": "Possible confusió en l’ús de la majúscula, si no és un títol o un nom propi.",
+     "fragment": ", Atentament",
+     "suggeriments": [
+      ". Atentament",
+      ", atentament"
+     ]
+    },
+    {
+     "regla": "FAROLA",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «fanal»? «Farola» és sinònim de «far» (en terminologia marítima).",
+     "fragment": "farola",
+     "suggeriments": [
+      "fanal"
+     ]
+    },
+    {
+     "regla": "ACERA",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Incorrecte en el sentit de «vorera». ‘Acera’ pot ser del v. ‘acerar’.",
+     "fragment": "acera",
+     "suggeriments": [
+      "vorera"
+     ]
+    },
+    {
+     "regla": "PER_PARTICIPI",
+     "cat": "VERBS",
+     "missatge": "¿Volíeu dir «espatllar»?",
+     "fragment": "espatllat",
+     "suggeriments": [
+      "espatllar"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BOMBILLA",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bombeta»?",
+     "fragment": "bombilla",
+     "suggeriments": [
+      "bombeta"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b1-escrit-0004",
+   "camp": "guia",
+   "text": "Correu informal adreçat a un grup: salutació col·lectiva (Hola a tothom / Benvolguts veïns i veïnes), to amable i engrescador, comiat proper. El corrector espera que les dades de la convocatòria sigui",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VALE",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «d’acord»?",
+     "fragment": "vale",
+     "suggeriments": [
+      "d'acord",
+      "entesos",
+      "val"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ENTONCES",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «aleshores»?",
+     "fragment": "entonces",
+     "suggeriments": [
+      "aleshores",
+      "llavors"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0001",
+   "camp": "guia",
+   "text": "Text breu, informatiu i impersonal, amb un encapçalament que identifiqui el contingut (Avís: canvi de data de la reunió). El corrector espera un registre formal però proper, frases curtes i completes,",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PUES_DONCS",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Si és conjunció, cal dir «doncs». Correcte com a plural de ‘pua’.",
+     "fragment": "pues",
+     "suggeriments": [
+      "doncs"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "A_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "degut a que",
+     "suggeriments": [
+      "com que",
+      "perquè",
+      "ja que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0002",
+   "camp": "guia",
+   "text": "Nota interna de registre formal: títol o assumpte clar, text impersonal o en primera persona del plural institucional (Us informem que…), frases breus i informació completa i precisa (horari exacte, d",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "FINS_EL_GENERAL",
+     "cat": "PREPOSITIONS",
+     "missatge": "Si no equival a «fins i tot», cal escriure «fins al».",
+     "fragment": "el",
+     "suggeriments": [
+      "al"
+     ]
+    },
+    {
+     "regla": "VERBS_NO_INTRANSITIUS",
+     "cat": "VERBS",
+     "missatge": "Aquest verb és transitiu. Potser cal eliminar la preposició ‘a’.",
+     "fragment": "al",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "REPETICIO_VERB_NOM",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Considereu usar un sinònim per a evitar la repetició de «dubte» i «dubte».",
+     "fragment": "dubte",
+     "suggeriments": [
+      "pregunta",
+      "qüestió"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0003",
+   "camp": "guia",
+   "text": "Text informatiu de difusió, amb títol atractiu i registre formal però engrescador. El corrector espera que la informació sigui completa i estigui ben organitzada (presentació del taller, destinataris,",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "FINS_EL_GENERAL",
+     "cat": "PREPOSITIONS",
+     "missatge": "Si no equival a «fins i tot», cal escriure «fins al».",
+     "fragment": "el",
+     "suggeriments": [
+      "al"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0004",
+   "camp": "guia",
+   "text": "Correu de reclamació formal: assumpte clar, salutació i comiat formals (Benvolguts / Senyors, Atentament / Cordialment), tractament de vostè o de vostès coherent, to ferm però correcte, sense insults ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PRONOMS_FEBLES_DAVANT_VERB",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Cal usar la forma reforçada.",
+     "fragment": "me",
+     "suggeriments": [
+      "em"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_RECIBIR",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «rebre»?",
+     "fragment": "recibir",
+     "suggeriments": [
+      "rebre"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0005",
+   "camp": "guia",
+   "text": "Correu formal de petició a l'administració: salutació i comiat adequats (Benvolgut senyor / Benvolguda senyora regidora, Atentament), ús coherent del vostè o del vosaltres institucional, i estructura ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MAJUSCULA_IMPROBABLE",
+     "cat": "CASING",
+     "missatge": "Possible confusió en l’ús de la majúscula, si no és un títol o un nom propi.",
+     "fragment": ", Atentament",
+     "suggeriments": [
+      ". Atentament",
+      ", atentament"
+     ]
+    },
+    {
+     "regla": "MAJUSCULA_IMPROBABLE",
+     "cat": "CASING",
+     "missatge": "Possible confusió en l’ús de la majúscula, si no és un títol o un nom propi.",
+     "fragment": ", Us",
+     "suggeriments": [
+      ", us",
+      ". Us"
+     ]
+    },
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "en base a",
+     "suggeriments": [
+      "d'acord amb",
+      "segons",
+      "a partir de"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "degut a",
+     "suggeriments": [
+      "a causa de",
+      "per",
+      "per culpa de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "b2-escrit-0006",
+   "camp": "guia",
+   "text": "Correu informal entre companys de feina: salutació i comiat propers (Hola, Marc / Fins demà), to cordial i pràctic. El corrector espera que les propostes siguin concretes (dues dates amb dia de la set",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PRONOMS_FEBLES_COLLOQUIALS",
+     "cat": "NOT_FORMAL",
+     "missatge": "Combinació col·loquial de pronoms febles.",
+     "fragment": "digue'm",
+     "suggeriments": [
+      "digues-me"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VALE",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «d’acord»?",
+     "fragment": "vale",
+     "suggeriments": [
+      "d'acord",
+      "entesos",
+      "val"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    },
+    {
+     "regla": "PUES_DONCS",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Si és conjunció, cal dir «doncs». Correcte com a plural de ‘pua’.",
+     "fragment": "pues",
+     "suggeriments": [
+      "doncs"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "c1-escrit-0001",
+   "camp": "guia",
+   "text": "El corrector aplica la rúbrica oficial de C1 en quatre blocs. Adequació: compliment de l'encàrrec (article d'opinió amb títol, posició clara i sostinguda, registre formal, extensió de 220 a 280 paraul",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VALE",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «d’acord»?",
+     "fragment": "vale",
+     "suggeriments": [
+      "d'acord",
+      "entesos",
+      "val"
+     ]
+    },
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "tenir que",
+     "suggeriments": [
+      "(haver de)",
+      "(caldre)"
+     ]
+    },
+    {
+     "regla": "DONAR_COMPTE",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "«Donar-se compte» és una expressió incorrecta si equival a «adonar-se»; és correcta si vol dir ‘retre compte’.",
+     "fragment": "donar-se compte",
+     "suggeriments": [
+      "adonar-se"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "EN_QUANT_A_QUANT_A",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "en quant a",
+     "suggeriments": [
+      "quant a",
+      "pel que fa a",
+      "respecte a"
+     ]
+    },
+    {
+     "regla": "A_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "degut a que",
+     "suggeriments": [
+      "com que",
+      "perquè",
+      "ja que"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "AMB_EN_AMB_EL",
+     "cat": "REPETITIONS",
+     "missatge": "¿Volíeu dir «el»?",
+     "fragment": "en",
+     "suggeriments": [
+      "el"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "c1-escrit-0002",
+   "camp": "guia",
+   "text": "El corrector aplica la rúbrica oficial de C1. Adequació: article d'opinió amb títol, posició clara sobre l'exigència del C1 (a favor, en contra o a favor amb condicions, però sense ambigüitat), regist",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "en base a",
+     "suggeriments": [
+      "d'acord amb",
+      "segons",
+      "a partir de"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_APOIAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "apoiar",
+     "suggeriments": [
+      "donar suport",
+      "recolzar",
+      "fer costat"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "c1-escrit-0003",
+   "camp": "guia",
+   "text": "El corrector aplica la rúbrica oficial de C1. Adequació: article d'opinió amb títol, posició clara (a favor, en contra o a favor amb una seqüència determinada, com proposa la font 3), registre formal ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "EN_QUANT_A_QUANT_A",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "en quant a",
+     "suggeriments": [
+      "quant a",
+      "pel que fa a",
+      "respecte a"
+     ]
+    },
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "degut a",
+     "suggeriments": [
+      "a causa de",
+      "per",
+      "per culpa de"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_PEATONAL",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «de vianants»?",
+     "fragment": "peatonal",
+     "suggeriments": [
+      "de vianants",
+      "per als vianants"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_ATASCAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "atasco",
+     "suggeriments": [
+      "encallo",
+      "embosso",
+      "embusso"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "tasca",
+   "id": "c1-escrit-0004",
+   "camp": "guia",
+   "text": "El corrector aplica la rúbrica oficial de C1. Adequació: article d'opinió amb títol, tesi clara sobre si cal regular, restringir o integrar la IA (una posició matisada és vàlida sempre que sigui explí",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "en base a",
+     "suggeriments": [
+      "d'acord amb",
+      "segons",
+      "a partir de"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "degut a",
+     "suggeriments": [
+      "a causa de",
+      "per",
+      "per culpa de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "accent-diacritic-dieresi",
+   "camp": "regla.ca",
+   "text": "L'accent diacrític distingeix parelles de paraules que s'escriuen igual. Des de l'Ortografia de l'IEC del 2017 només en queden 15: bé/be, déu/deu, és/es, mà/ma, més/mes, món/mon, pèl/pel, què/que, sé/",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "BE",
+     "cat": "DIACRITICS",
+     "missatge": "Només va sense accent quan és un animal o un nom de lletra. Escriviu «bé» (adverbi) o «ve» (del v. ‘venir’).",
+     "fragment": "be",
+     "suggeriments": [
+      "bé",
+      "ve"
+     ]
+    },
+    {
+     "regla": "ES",
+     "cat": "DIACRITICS",
+     "missatge": "S’accentua si és del verb ‘ser’.",
+     "fragment": "es",
+     "suggeriments": [
+      "és"
+     ]
+    },
+    {
+     "regla": "MON",
+     "cat": "DIACRITICS",
+     "missatge": "S’escriu amb accent diacrític, excepte si és un possessiu (el meu).",
+     "fragment": "mon",
+     "suggeriments": [
+      "món"
+     ]
+    },
+    {
+     "regla": "SE",
+     "cat": "DIACRITICS",
+     "missatge": "Si és del v. ‘saber’, s’accentua.",
+     "fragment": "se",
+     "suggeriments": [
+      "sé"
+     ]
+    },
+    {
+     "regla": "SON",
+     "cat": "DIACRITICS",
+     "missatge": "Si és del verb ‘ser’, s’ha d’accentuar.",
+     "fragment": "son",
+     "suggeriments": [
+      "són"
+     ]
+    },
+    {
+     "regla": "TE",
+     "cat": "DIACRITICS",
+     "missatge": "S’accentua si és del v. ‘tenir’.",
+     "fragment": "te",
+     "suggeriments": [
+      "té"
+     ]
+    },
+    {
+     "regla": "VOS",
+     "cat": "DIACRITICS",
+     "missatge": "Com a pronom personal fort, s’escriu amb accent.",
+     "fragment": "vos",
+     "suggeriments": [
+      "vós"
+     ]
+    },
+    {
+     "regla": "ACCENTUATION_CHECK",
+     "cat": "ACCENTUACIO",
+     "missatge": "Si és un adjectiu o un nom, s’escriu amb accent.",
+     "fragment": "pronuncia",
+     "suggeriments": [
+      "pronúncia"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "accents-regles",
+   "camp": "regla.ca",
+   "text": "Les paraules agudes (síl·laba forta al final) porten accent quan acaben en vocal, vocal + s, -en o -in: camí, cafès, comprèn, Berlín. Les planes (síl·laba forta a la penúltima) porten accent quan NO a",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "AGREEMENT_POSTPONED_ADJ",
+     "cat": "CONCORDANCES_NOUNS",
+     "missatge": "Reviseu la concordança de «agut» amb els noms precedents o bé reviseu la puntuació.",
+     "fragment": "agut",
+     "suggeriments": [
+      "agudes"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "apostrof-article",
+   "camp": "regla.ca",
+   "text": "L'article el i la preposició de s'apostrofen davant de vocal o h: l'home, l'avi, l'escola, d'aigua, d'hora. L'article la també, però NO davant de i o u àtones (sense accent): la universitat, la indúst",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "COMMA_LOCUTION",
+     "cat": "PUNCTUATION",
+     "missatge": "Aquesta locució s’escriu normalment entre comes.",
+     "fragment": "canvi",
+     "suggeriments": [
+      "canvi,"
+     ]
+    },
+    {
+     "regla": "QUAN_QUANT",
+     "cat": "ADVERBS",
+     "missatge": "¿Volíeu dir «quant a» (pel que fa a)? «Quan» és correcte si significa «en el moment en què».",
+     "fragment": "Quan",
+     "suggeriments": [
+      "Quant"
+     ]
+    },
+    {
+     "regla": "CONTRACCIONS",
+     "cat": "SPELLING",
+     "missatge": "Cal escriure «del».",
+     "fragment": "de el",
+     "suggeriments": [
+      "del"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "barbarismes-lexic-1",
+   "camp": "regla.ca",
+   "text": "Hi ha paraules castellanes que es colen contínuament en la conversa i que l'examen penalitza. Les més freqüents i les formes catalanes: «bueno» → bé, doncs, d'acord (segons el sentit); «vale» → d'acor",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VALE",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «d’acord»?",
+     "fragment": "vale",
+     "suggeriments": [
+      "d'acord",
+      "entesos",
+      "val"
+     ]
+    },
+    {
+     "regla": "PUES_DONCS",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "Si és conjunció, cal dir «doncs». Correcte com a plural de ‘pua’.",
+     "fragment": "pues",
+     "suggeriments": [
+      "doncs"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_HASTA",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «fins»?",
+     "fragment": "hasta",
+     "suggeriments": [
+      "fins",
+      "fins a"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ENTONCES",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «aleshores»?",
+     "fragment": "entonces",
+     "suggeriments": [
+      "aleshores",
+      "llavors"
+     ]
+    },
+    {
+     "regla": "ALGO",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Eviteu aquest castellanisme.",
+     "fragment": "algo",
+     "suggeriments": [
+      "res",
+      "alguna cosa"
+     ]
+    },
+    {
+     "regla": "MENYS_MAL",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "menos mal",
+     "suggeriments": [
+      "encara sort",
+      "sort",
+      "encara rai"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ADIÓS",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «adeu»?",
+     "fragment": "adiós",
+     "suggeriments": [
+      "adeu",
+      "adeu-siau"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_OJALÁ",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «tant de bo»?",
+     "fragment": "ojalá",
+     "suggeriments": [
+      "tant de bo",
+      "tant de bo que",
+      "així"
+     ]
+    },
+    {
+     "regla": "APENES",
+     "cat": "CONFUSIONS2",
+     "missatge": "¿Volíeu dir «a penes» (locució adverbial)? «Apenes» pot ser una forma del v. ‘apenar’.",
+     "fragment": "apenes",
+     "suggeriments": [
+      "a penes"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "barbarismes-lexic-2",
+   "camp": "regla.ca",
+   "text": "Molts errors no són paraules castellanes senceres, sinó verbs catalans usats amb el sentit del castellà. Els més habituals: «donar-se compte» → adonar-se (de) (me n'he adonat tard); «apretar» → prémer",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DONAR_COMPTE",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "«Donar-se compte» és una expressió incorrecta si equival a «adonar-se»; és correcta si vol dir ‘retre compte’.",
+     "fragment": "donar-se compte",
+     "suggeriments": [
+      "adonar-se"
+     ]
+    },
+    {
+     "regla": "APRETAR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris. Val més fer servir un verb alternatiu.",
+     "fragment": "apretar",
+     "suggeriments": [
+      "estrènyer",
+      "collar",
+      "prémer"
+     ]
+    },
+    {
+     "regla": "CARGOL_CARBASSA",
+     "cat": "SECONDARY_FORMS",
+     "missatge": "Forma secundària.",
+     "fragment": "cargol",
+     "suggeriments": [
+      "caragol"
+     ]
+    },
+    {
+     "regla": "ENTERARSE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "‘Enterar’ és un castellanisme que cal evitar. Possible confusió amb ‘enterrar’.",
+     "fragment": "enterar-se",
+     "suggeriments": [
+      "assabentar-se",
+      "informar-se",
+      "enterrar-se"
+     ]
+    },
+    {
+     "regla": "DESPEDIR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris. És inapropiat en el sentit de ‘fer fora de la feina’.",
+     "fragment": "despedir",
+     "suggeriments": [
+      "acomiadar",
+      "despatxar",
+      "fer fora"
+     ]
+    },
+    {
+     "regla": "DISFRUTAR",
+     "cat": "DNV_PRIMARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris.",
+     "fragment": "disfrutar",
+     "suggeriments": [
+      "gaudir",
+      "fruir"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_ENXUFAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "enxufar",
+     "suggeriments": [
+      "endollar",
+      "connectar",
+      "empalmar"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_ACLARAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "aclarar",
+     "suggeriments": [
+      "aclarir"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_AVERIGUAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "averiguar",
+     "suggeriments": [
+      "esbrinar",
+      "escatir",
+      "investigar"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_AGOBIAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "agobiar",
+     "suggeriments": [
+      "aclaparar",
+      "atabalar",
+      "angoixar"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_OLVIDAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "olvidar",
+     "suggeriments": [
+      "oblidar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "calcs-sintactics-2",
+   "camp": "regla.ca",
+   "text": "Les correlacions es fan amb com: com més aviat, millor; com més gent vingui, més feina tindrem (no 'quant més… més'). 'Algo' no existeix: es diu alguna cosa o una mica ('Vols alguna cosa?', 'Estic una",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "QUANT_MES_MES",
+     "cat": "ADVERBS",
+     "missatge": "En aquesta construcció és més apropiat dir «com».",
+     "fragment": "quant",
+     "suggeriments": [
+      "com"
+     ]
+    },
+    {
+     "regla": "ALGO",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Eviteu aquest castellanisme.",
+     "fragment": "Algo",
+     "suggeriments": [
+      "Res",
+      "Alguna cosa"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_DIACRITICS_IEC_VÉNS",
+     "cat": "DIACRITICS_IEC",
+     "missatge": "Hi sobra l’accent diacrític (segons les normes noves).",
+     "fragment": "véns",
+     "suggeriments": [
+      "vens"
+     ]
+    },
+    {
+     "regla": "DE_EL_S_APOSTROFEN",
+     "cat": "APOSTROPHATION",
+     "missatge": "Cal apostrofar.",
+     "fragment": "al arribar",
+     "suggeriments": [
+      "a l'arribar"
+     ]
+    },
+    {
+     "regla": "AL_INFINITIU",
+     "cat": "STYLE_OPTIONAL",
+     "missatge": "Davant d’infinitiu, com a subordinada temporal, en llenguatge formal és preferible usar «en».",
+     "fragment": "a l'arribar",
+     "suggeriments": [
+      "en arribar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "calcs-sintactics",
+   "camp": "regla.ca",
+   "text": "El català no té l'article neutre 'lo': 'lo important' es diu el que és important, l'important o allò important, i 'lo més aviat possible', com més aviat millor. L'obligació s'expressa amb haver de o c",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo important",
+     "suggeriments": [
+      "l'important",
+      "el que és important",
+      "la cosa important"
+     ]
+    },
+    {
+     "regla": "ALLO_ADJECTIU",
+     "cat": "SYNTAX",
+     "missatge": "Amb valor abstractiu val més usar una altra construcció. Només és correcte si equival a «aquella cosa important».",
+     "fragment": "allò important",
+     "suggeriments": [
+      "l'important",
+      "el que és important",
+      "el fet important"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_MULTIWORDS_LO_MÉS_AVIAT_POSSIBLE",
+     "cat": "GRAMMAR",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "lo més aviat possible",
+     "suggeriments": [
+      "com més aviat millor",
+      "tan aviat com es pugui"
+     ]
+    },
+    {
+     "regla": "DONCS_CAUSAL",
+     "cat": "CONJUNCTIONS",
+     "missatge": "Incorrecte si equival a «perquè» (valor causal). Correcte si equival a «per tant» o indica continuació.",
+     "fragment": "doncs",
+     "suggeriments": [
+      "perquè",
+      "ja que",
+      "puix"
+     ]
+    },
+    {
+     "regla": "DONCS_CAUSAL",
+     "cat": "CONJUNCTIONS",
+     "missatge": "Incorrecte si equival a «perquè» (valor causal). Correcte si equival a «per tant» o indica continuació.",
+     "fragment": "doncs",
+     "suggeriments": [
+      "perquè",
+      "ja que",
+      "puix"
+     ]
+    },
+    {
+     "regla": "COMMA_JA_QUE",
+     "cat": "SYNTAX",
+     "missatge": "Falta una coma davant de «ja que».",
+     "fragment": " ja que",
+     "suggeriments": [
+      ", ja que",
+      " perquè"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "A nivell de",
+     "suggeriments": [
+      "En l'àmbit de",
+      "A escala de",
+      "A"
+     ]
+    },
+    {
+     "regla": "DEGUT_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Encara que «degut a» és una expressió admesa per la normativa, es recomana fer-ne servir una altra. No hi ha cap objecció si ‘degut’ concorda amb un nom (‘el respecte degut’) o és participi (‘és degut a’).",
+     "fragment": "Degut a",
+     "suggeriments": [
+      "A causa de",
+      "Per",
+      "Per culpa de"
+     ]
+    },
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "En base a",
+     "suggeriments": [
+      "D'acord amb",
+      "Segons",
+      "A partir de"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "canvi-caiguda-preposicio",
+   "camp": "regla.ca",
+   "text": "Les preposicions en i amb no poden anar davant d'un infinitiu: es canvien per a o de. Així, pensar en una cosa però pensar a fer-la; insistir en un tema però insistir a venir; tardar en alguna cosa pe",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció incorrecta.",
+     "fragment": "abans de",
+     "suggeriments": [
+      "abans"
+     ]
+    },
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció incorrecta.",
+     "fragment": "després de",
+     "suggeriments": [
+      "després"
+     ]
+    },
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció incorrecta.",
+     "fragment": "de que",
+     "suggeriments": [
+      "que"
+     ]
+    },
+    {
+     "regla": "DE_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció incorrecta, si no equival a «del qual» o a «de quina cosa».",
+     "fragment": "de que",
+     "suggeriments": [
+      "que"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "concordanca-genere-nombre",
+   "camp": "regla.ca",
+   "text": "Alguns noms tenen un gènere diferent del que tenen en castellà, i l'error es nota en l'article i l'adjectiu. Són masculins el costum, el senyal, el compte, el dubte, el deute, l'avantatge, el pendent,",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ES",
+     "cat": "DIACRITICS",
+     "missatge": "S’accentua si és del verb ‘ser’.",
+     "fragment": "es",
+     "suggeriments": [
+      "és"
+     ]
+    },
+    {
+     "regla": "COMMA_LOCUTION",
+     "cat": "PUNCTUATION",
+     "missatge": "Aquesta locució s’escriu normalment entre comes.",
+     "fragment": "canvi",
+     "suggeriments": [
+      "canvi,"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "determinants-quantificadors",
+   "camp": "regla.ca",
+   "text": "Davant dels noms de persona, en la llengua parlada i en textos informals, s'usa l'article personal: en Pere, la Marta, l'Anna, l'Oriol (també el Pere); en textos formals s'acostuma a ometre. Els posse",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "POSSESSIU_SENSE_ARTICLE",
+     "cat": "POSSESSIVES",
+     "missatge": "Hi falta un article.",
+     "fragment": "meu",
+     "suggeriments": [
+      "el meu"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "frases-fetes-connectors",
+   "camp": "regla.ca",
+   "text": "En un text formal, els connectors han de ser genuïns i precisos. Per oposar idees: tanmateix, això no obstant o no obstant això, ara bé, en canvi (no 'sin embargo' ni 'no obstant' sol). Per donar la c",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "AIXO_AIXO",
+     "cat": "REPETITIONS",
+     "missatge": "Eviteu la repetició de ‘això’.",
+     "fragment": "això no obstant",
+     "suggeriments": [
+      "tanmateix",
+      "així i tot"
+     ]
+    },
+    {
+     "regla": "COMMA_LOCUTION",
+     "cat": "PUNCTUATION",
+     "missatge": "Aquesta locució s’escriu normalment entre comes. Feu servir un punt i coma per a començar una frase nova que contrasta amb l’anterior.",
+     "fragment": " no",
+     "suggeriments": [
+      ", no"
+     ]
+    },
+    {
+     "regla": "NO_OBSTANT",
+     "cat": "DNV_PRIMARY_FORM",
+     "missatge": "Com a locució adverbial, és preferible usar una altra expressió.",
+     "fragment": "no obstant",
+     "suggeriments": [
+      "això no obstant",
+      "no obstant això",
+      "tanmateix"
+     ]
+    },
+    {
+     "regla": "PERQUE_PER_QUE",
+     "cat": "CONFUSIONS",
+     "missatge": "¿Volíeu dir «per què» (per quina raó)?",
+     "fragment": "perquè",
+     "suggeriments": [
+      "per què"
+     ]
+    },
+    {
+     "regla": "A_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "degut a que",
+     "suggeriments": [
+      "com que",
+      "perquè",
+      "ja que"
+     ]
+    },
+    {
+     "regla": "PER_A_QUE_PERQUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Cal dir «perquè» (pel fet que, amb la finalitat que) o «per a què» (per a quina finalitat).",
+     "fragment": "per a que",
+     "suggeriments": [
+      "perquè",
+      "per a què"
+     ]
+    },
+    {
+     "regla": "EN_BASE_A",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Val més fer servir una altra expressió.",
+     "fragment": "en base a",
+     "suggeriments": [
+      "d'acord amb",
+      "segons",
+      "a partir de"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ADEMÉS",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «a més»?",
+     "fragment": "ademés",
+     "suggeriments": [
+      "a més",
+      "a més a més",
+      "de més a més"
+     ]
+    },
+    {
+     "regla": "ALMENYS",
+     "cat": "CONFUSIONS",
+     "missatge": "Gairebé sempre s’escriu junt.",
+     "fragment": "al menys",
+     "suggeriments": [
+      "almenys"
+     ]
+    },
+    {
+     "regla": "EN_QUANT_A_QUANT_A",
+     "cat": "PREPOSITIONS",
+     "missatge": "Expressió incorrecta.",
+     "fragment": "en quant a",
+     "suggeriments": [
+      "quant a",
+      "pel que fa a",
+      "respecte a"
+     ]
+    },
+    {
+     "regla": "COMMA_LOCUTION",
+     "cat": "PUNCTUATION",
+     "missatge": "Aquesta locució s’escriu normalment entre comes.",
+     "fragment": "tant",
+     "suggeriments": [
+      "tant,"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "lexic-parelles",
+   "camp": "regla.ca",
+   "text": "Alguns mots s'assemblen o es tradueixen igual al castellà i s'han de distingir bé. Sentir és percebre un so sense voler ('he sentit un soroll'); escoltar és parar-hi atenció ('escolta el metge'). Prov",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ACOSTUMAR_A",
+     "cat": "PREPOSITIONS",
+     "missatge": "Probablement hi falta una preposició.",
+     "fragment": "posar-se",
+     "suggeriments": [
+      "posar-se a"
+     ]
+    },
+    {
+     "regla": "COMPOSAR",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «compondre» en comptes de «composar» (sentits restringits)?",
+     "fragment": "composar",
+     "suggeriments": [
+      "compondre"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "lexic-precisio-registre",
+   "camp": "regla.ca",
+   "text": "A la feina i en els tràmits administratius hi ha un grapat de mots que els castellanoparlants substitueixen per calcs. El període per fer una cosa és el termini ('el termini acaba divendres'; 'plaç' n",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PLAC",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «termini»? «Plaç» és del v. ‘plaçar’ (jo plaç).",
+     "fragment": "plaç",
+     "suggeriments": [
+      "termini",
+      "terme"
+     ]
+    },
+    {
+     "regla": "DESPEDIR",
+     "cat": "DNV_SECONDARY_FORM",
+     "missatge": "Paraula admesa només en alguns diccionaris. És inapropiat en el sentit de ‘fer fora de la feina’.",
+     "fragment": "Despedir",
+     "suggeriments": [
+      "Acomiadar",
+      "Despatxar",
+      "Fer fora"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_VERBS_LOGRAR",
+     "cat": "TYPOS",
+     "missatge": "Verb incorrecte.",
+     "fragment": "lograr",
+     "suggeriments": [
+      "aconseguir",
+      "assolir",
+      "arribar a"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "lexic-tematic-quotidia",
+   "camp": "regla.ca",
+   "text": "Per als tràmits de cada dia cal dominar el vocabulari exacte de quatre àmbits. Salut: el metge o la metgessa de capçalera (no «de cabecera»), el CAP (centre d'atenció primària), demanar hora o visita,",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_CABECERA",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «capçalera»?",
+     "fragment": "cabecera",
+     "suggeriments": [
+      "capçalera"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ALQUILER",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «lloguer»?",
+     "fragment": "alquiler",
+     "suggeriments": [
+      "lloguer"
+     ]
+    },
+    {
+     "regla": "PLAC",
+     "cat": "INCORRECT_WORDS_IN_CONTEXT",
+     "missatge": "¿Volíeu dir «termini»? «Plaç» és del v. ‘plaçar’ (jo plaç).",
+     "fragment": "plaç",
+     "suggeriments": [
+      "termini",
+      "terme"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "ortografia-b-v-g-j",
+   "camp": "regla.ca",
+   "text": "Moltes paraules que en castellà s'escriuen amb b en català van amb v, i al revés: cavall, haver, canviar, govern, provar, avorrir (amb v); saber, bena, basc, automòbil, biga, corba, arrova (amb b). Pi",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PRONOM_FEBLE_HI",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Hi falta el pronom ‘hi’.",
+     "fragment": "haver",
+     "suggeriments": [
+      "haver-hi"
+     ]
+    },
+    {
+     "regla": "SUGGERIMENTS_N",
+     "cat": "SPELLING",
+     "missatge": "¿Volíeu dir «no»?",
+     "fragment": "n",
+     "suggeriments": [
+      "no",
+      "ni",
+      "en"
+     ]
+    },
+    {
+     "regla": "CONFUSIO_E",
+     "cat": "CONFUSIONS",
+     "missatge": "Possible confusió.",
+     "fragment": "e",
+     "suggeriments": [
+      "i",
+      "en",
+      "el"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "ortografia-essa-sorda-sonora-x",
+   "camp": "regla.ca",
+   "text": "El so de essa sorda (com en castellà «sí») s'escriu s a principi de paraula o després de consonant (sabó, pensar), ss entre vocals (passar, pressa, interessant), c davant de e, i (cel, cinema, decisió",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "L",
+     "cat": "CONFUSIONS",
+     "missatge": "L’article no està ben escrit.",
+     "fragment": "l",
+     "suggeriments": [
+      "la"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "per-per-a",
+   "camp": "regla.ca",
+   "text": "Davant d'un nom o d'un pronom, per a indica destinació, finalitat o destinatari ('una guia per a les famílies', 'el termini per a la matrícula', 'per a mi' amb el sentit de 'segons la meva opinió'). P",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ACCENTUATION_CHECK",
+     "cat": "ACCENTUACIO",
+     "missatge": "Si és un adjectiu o un nom, s’escriu amb accent.",
+     "fragment": "indica",
+     "suggeriments": [
+      "índica"
+     ]
+    },
+    {
+     "regla": "ACCENTUATION_CHECK",
+     "cat": "ACCENTUACIO",
+     "missatge": "Si és un adjectiu o un nom, s’escriu amb accent.",
+     "fragment": "indica",
+     "suggeriments": [
+      "índica"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "perifrasis-obligacio",
+   "camp": "regla.ca",
+   "text": "L'obligació s'expressa amb haver de + infinitiu (he d'anar al CAP, hem de pagar el lloguer, has de portar el padró) o amb el verb caldre: cal + infinitiu quan no diem qui ho ha de fer (cal demanar cit",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "TENIR_QUE",
+     "cat": "VERBS",
+     "missatge": "Incorrecte com a perífrasi d’obligació.",
+     "fragment": "tinc que anar",
+     "suggeriments": [
+      "he d'anar"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "preposicions-a-en",
+   "camp": "regla.ca",
+   "text": "Per a indicar lloc, davant de noms propis i d'article definit s'usa a (a Lleida, a la feina, al CAP, a l'escola), i davant de un, aquest, algun o cap es prefereix en (en un poble petit, en aquest barr",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "DE_EL_S_APOSTROFEN",
+     "cat": "APOSTROPHATION",
+     "missatge": "Cal apostrofar.",
+     "fragment": "de un",
+     "suggeriments": [
+      "d'un"
+     ]
+    },
+    {
+     "regla": "PRONOMS_FEBLES_ORDENACIO",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Combinació incorrecta de pronoms febles.",
+     "fragment": "en s'",
+     "suggeriments": []
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "pronoms-febles-combinacions",
+   "camp": "regla.ca",
+   "text": "Quan dos pronoms febles van junts, l'ordre és fix: primer es (o els pronoms de datiu li, els), després em, et, ens, us, després el, la, els, les, ho i, al final, en i hi: 'me'l dona', 'te la porto', '",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "ES",
+     "cat": "DIACRITICS",
+     "missatge": "S’accentua si és del verb ‘ser’.",
+     "fragment": "es",
+     "suggeriments": [
+      "és"
+     ]
+    },
+    {
+     "regla": "FINS_I_TOT",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "¿Volíeu dir «o» (conjunció) en comptes de «ho» (pronom)?",
+     "fragment": "ho",
+     "suggeriments": [
+      "o"
+     ]
+    },
+    {
+     "regla": "SE",
+     "cat": "DIACRITICS",
+     "missatge": "Si és del v. ‘saber’, s’accentua.",
+     "fragment": "se",
+     "suggeriments": [
+      "sé",
+      "de"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "CONFUSIONS_PRONOMS_FEBLES",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Pronom feble incorrecte.",
+     "fragment": "-se",
+     "suggeriments": [
+      "-vos",
+      "-nos"
+     ]
+    },
+    {
+     "regla": "PRONOMS_FEBLES_DARRERE_VERB",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Forma de pronom feble incorrecta.",
+     "fragment": "-lo",
+     "suggeriments": [
+      "-el"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "pronoms-ho-el",
+   "camp": "regla.ca",
+   "text": "El pronom ho substitueix un complement directe neutre (això, allò, tot, res) o una oració sencera ('Saps que han canviat l'horari? Sí, ho sé'), i també l'atribut dels verbs ser, estar i semblar ('És i",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PRONOMS_FEBLES_ORDENACIO",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Combinació incorrecta de pronoms febles.",
+     "fragment": "la s'",
+     "suggeriments": []
+    },
+    {
+     "regla": "FINS_I_TOT",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "¿Volíeu dir «o» (conjunció) en comptes de «ho» (pronom)?",
+     "fragment": "ho",
+     "suggeriments": [
+      "o"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo",
+     "suggeriments": [
+      "el"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "puntuacio-coma",
+   "camp": "regla.ca",
+   "text": "No s'escriu mai coma entre el subjecte i el verb ni entre el verb i el complement directe, encara que el subjecte sigui llarg ('Els representants dels treballadors han signat l'acord'). Sí que van ent",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "AMB_O_SENSE",
+     "cat": "PREPOSITIONS",
+     "missatge": "L’ordre preferible, més natural, d’aquesta expressió és un altre.",
+     "fragment": "i sense coma",
+     "suggeriments": [
+      "coma i sense"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "registre-formal-administratiu",
+   "camp": "regla.ca",
+   "text": "En els escrits formals de l'administració i de la feina es tracta el destinatari de vós (forma tradicional: 'Us comuniquem que la vostra sol·licitud ha estat admesa', amb el verb en segona persona del",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "MAJUSCULA_IMPROBABLE",
+     "cat": "CASING",
+     "missatge": "Possible confusió en l’ús de la majúscula, si no és un títol o un nom propi.",
+     "fragment": ", Atentament",
+     "suggeriments": [
+      ". Atentament",
+      ", atentament"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "relatius-colloquials",
+   "camp": "regla.ca",
+   "text": "En l'estàndard formal s'eviten les construccions col·loquials amb que seguit d'un pronom que repeteix l'antecedent: 'una empresa que el seu director ha dimitit' s'ha de dir 'una empresa el director de",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "AMB_QUE",
+     "cat": "PREPOSITIONS",
+     "missatge": "Construcció probablement incorrecta. Correcta si vol dir ‘amb la condició que’.",
+     "fragment": "amb que",
+     "suggeriments": [
+      "amb què",
+      "que",
+      "amb el fet que"
+     ]
+    },
+    {
+     "regla": "EL_SEU_AUTOR",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "Aquest possessiu és probablement redundant. Val més eliminar-lo.",
+     "fragment": "el seu",
+     "suggeriments": [
+      "el"
+     ]
+    },
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo que",
+     "suggeriments": [
+      "el que",
+      "allò que",
+      "cosa que"
+     ]
+    },
+    {
+     "regla": "COMMA_COSA_QUE",
+     "cat": "PUNCTUATION",
+     "missatge": "Probablement hi falta una coma.",
+     "fragment": "sinó",
+     "suggeriments": [
+      "sinó,"
+     ]
+    },
+    {
+     "regla": "DE_QUAL",
+     "cat": "CONFUSIONS",
+     "missatge": "Falta un article davant de «qual».",
+     "fragment": "relatiu",
+     "suggeriments": [
+      "relatiu el",
+      "relatiu la"
+     ]
+    },
+    {
+     "regla": "DE_QUAL",
+     "cat": "CONFUSIONS",
+     "missatge": "Falta un article davant de «qual».",
+     "fragment": "a",
+     "suggeriments": [
+      "al"
+     ]
+    },
+    {
+     "regla": "PRONOMS_FEBLES_COLLOQUIALS",
+     "cat": "NOT_FORMAL",
+     "missatge": "Combinació col·loquial de pronoms febles.",
+     "fragment": "Digue'm",
+     "suggeriments": [
+      "Digues-me"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "relatius-que-que",
+   "camp": "regla.ca",
+   "text": "El relatiu que (sense accent) fa de subjecte o de complement directe i no porta mai preposició al davant ('la persona que truca', 'l'informe que vaig enviar'). Amb preposició, per a coses s'usa què tò",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "QUE_SENSE_ACCENT",
+     "cat": "DIACRITICS",
+     "missatge": "Probablement no s’ha d’accentuar. Sí que s’accentua si es pot substituir per ‘quina cosa’.",
+     "fragment": "què",
+     "suggeriments": [
+      "que"
+     ]
+    },
+    {
+     "regla": "CON_COM",
+     "cat": "CONFUSIONS",
+     "missatge": "¿Volíeu dir «com» en comptes de «con» (cos geomètric)?",
+     "fragment": "con",
+     "suggeriments": [
+      "com"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "ser-estar",
+   "camp": "regla.ca",
+   "text": "En català, ser serveix per a les qualitats i característiques (és alta, és simpàtic, és de Lleida, és infermera), per a dir on passa un esdeveniment (la reunió és a la sala 2, l'examen és a l'institut",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "PASSAR_PER",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "No feu pronominal l’expressió «passar per un lloc».",
+     "fragment": "s'hi",
+     "suggeriments": [
+      "hi"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_ESTÁ",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «està»?",
+     "fragment": "está",
+     "suggeriments": [
+      "està"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "subjuntiu-usos",
+   "camp": "regla.ca",
+   "text": "El subjuntiu és obligatori en les subordinades que depenen de verbs de voluntat, dubte o valoració ('vull que vinguis', 'no crec que calgui', 'és important que tothom ompli el full') i darrere de les ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "POTSER_SIGUI",
+     "cat": "SYNTAX",
+     "missatge": "Amb un adverbi de probabilitat («potser») és preferible usar un verb en indicatiu o en futur.",
+     "fragment": "plogui",
+     "suggeriments": [
+      "plou",
+      "plourà"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "regla",
+   "id": "verbs-velaritzats",
+   "camp": "regla.ca",
+   "text": "Molts verbs irregulars afegeixen una consonant velar (c, g) a la primera persona del present d'indicatiu i, a partir d'aquí, a tot el present de subjuntiu, al passat simple, a l'imperfet de subjuntiu ",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "CALGUT",
+     "cat": "PRONOMS_FEBLES",
+     "missatge": "Forma verbal probablement incompleta.",
+     "fragment": "calgut",
+     "suggeriments": [
+      "ha calgut",
+      "havia calgut"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_SAPIGUT",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «sabut»?",
+     "fragment": "sapigut",
+     "suggeriments": [
+      "sabut"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_POGUER",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «poder»?",
+     "fragment": "poguer",
+     "suggeriments": [
+      "poder"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_VOLGUER",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «voler»?",
+     "fragment": "volguer",
+     "suggeriments": [
+      "voler"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_SAPIGUER",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «saber»?",
+     "fragment": "sapiguer",
+     "suggeriments": [
+      "saber"
+     ]
+    }
+   ]
+  },
+  {
+   "origen": "seo",
+   "id": "castellanismes-mes-frequents-examen-catala",
+   "camp": "descripcio",
+   "text": "Els 25 castellanismes que més punts resten al B2, C1 i C2: tenir que, lo que, algo, donar-se compte, a nivell de, bueno… Amb la forma correcta.",
+   "excepcio": true,
+   "avisos": [
+    {
+     "regla": "LO_NEUTRE",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Cal evitar el «‘lo’ neutre».",
+     "fragment": "lo que",
+     "suggeriments": [
+      "el que",
+      "allò que",
+      "cosa que"
+     ]
+    },
+    {
+     "regla": "ALGO",
+     "cat": "INCORRECT_EXPRESSIONS",
+     "missatge": "Eviteu aquest castellanisme.",
+     "fragment": "algo",
+     "suggeriments": [
+      "una cosa",
+      "alguna cosa",
+      "res"
+     ]
+    },
+    {
+     "regla": "DONAR_COMPTE",
+     "cat": "REFLEXIVE_VERBS",
+     "missatge": "«Donar-se compte» és una expressió incorrecta si equival a «adonar-se»; és correcta si vol dir ‘retre compte’.",
+     "fragment": "donar-se compte",
+     "suggeriments": [
+      "adonar-se"
+     ]
+    },
+    {
+     "regla": "A_NIVELL",
+     "cat": "PREFERABLE_EXPRESSIONS",
+     "missatge": "En sentit figurat, val més evitar aquesta expressió.",
+     "fragment": "a nivell de",
+     "suggeriments": [
+      "en l'àmbit de",
+      "a escala de",
+      "a"
+     ]
+    },
+    {
+     "regla": "CA_SIMPLE_REPLACE_SIMPLE_BUENO",
+     "cat": "TYPOS",
+     "missatge": "¿Volíeu dir «bo»?",
+     "fragment": "bueno",
+     "suggeriments": [
+      "bo",
+      "bé",
+      "sí"
+     ]
+    }
+   ]
+  }
+ ]
+}

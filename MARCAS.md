@@ -57,7 +57,9 @@ Outfit (títulos) y Noto Sans (texto, cubre árabe, chino y cirílico). Motivo: 
 - **A · CCSE en tu idioma** (por Nuevo en España). «Aprueba el examen de nacionalidad en tu idioma.» Dominio
   ccseentuidioma.com (la app Android ya usa `ccse-en-tu-idioma`). Voz: explica cada pregunta en el idioma de la
   persona y le dice qué día es su examen; nunca asusta con el suspenso.
-- **M · Aprova.** «El teu certificat de català, del B1 al C2.» Acento ocre `#E0B23A`. Dominio aprova.cat.
+- **M · Aprova.** «Sabràs si aproves abans de pagar la taxa.» Identidad propia (28/10/2026, pedida por Moisés): bolígrafo azul
+  `#2140D6` sobre papel blanco, tinta `#141C3A`, marcador `#FFF056`; Archivo Expanded ExtraBold; personaje **en Volat** (el punt volat
+  con cara). Detalle en `proyectos/m-catala/MARCA.md`. Dominio aprova.cat.
   Alternativas: Certifica't, Nivell. Voz: en català per defecte; entrena exactament les parts de l'examen i diu la nota
   prevista sense embuts.
 

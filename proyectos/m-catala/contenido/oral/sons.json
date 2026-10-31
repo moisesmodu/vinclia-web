@@ -1,0 +1,484 @@
+{
+  "l1": "es",
+  "sons": [
+    {
+      "id": "vocal-neutra",
+      "nom": {
+        "ca": "La vocal neutra [ə]",
+        "es": "La vocal neutra [ə]"
+      },
+      "descripcio": {
+        "ca": "En català central, les lletres a i e en síl·laba àtona no sonen ni com a a ni com a e, sinó com una vocal relaxada i breu, la vocal neutra [ə]. Un castellanoparlant tendeix a pronunciar cada lletra amb el seu valor ple (casa amb dues a clares, pare amb una e clara), i això delata l'accent de seguida. Per fer-la, deixeu la boca mig oberta i la llengua relaxada al centre, sense tensió als llavis, i feu el so curt i fluix. Als parlars nord-occidentals aquesta vocal no existeix: s'hi distingeixen a i e també en posició àtona (casa amb a, pare amb e).",
+        "es": "En catalán central, las letras a y e en sílaba átona no suenan ni como a ni como e, sino como una vocal relajada y breve, la vocal neutra [ə]. Un castellanohablante tiende a pronunciar cada letra con su valor pleno (casa con dos a claras, pare con una e clara), y eso delata el acento enseguida. Para hacerla, deja la boca medio abierta y la lengua relajada en el centro, sin tensión en los labios, y haz el sonido corto y flojo, parecido a la e inglesa de «the». En los hablas noroccidentales esta vocal no existe: allí se distinguen a y e también en posición átona."
+      },
+      "paraules": [
+        "casa",
+        "pare",
+        "mare",
+        "taula",
+        "porta",
+        "setmana",
+        "escola",
+        "cadira",
+        "demanar",
+        "persona"
+      ],
+      "pista": {
+        "ca": "Totes les a i e sense accent tònic sonen igual: afluixeu la boca i no les marqueu.",
+        "es": "Todas las a y e sin acento tónico suenan igual: afloja la boca y no las marques; cuanto menos esfuerzo, mejor."
+      }
+    },
+    {
+      "id": "e-oberta-tancada",
+      "nom": {
+        "ca": "E oberta [ɛ] i e tancada [e]",
+        "es": "E abierta [ɛ] y e cerrada [e]"
+      },
+      "descripcio": {
+        "ca": "El català té dues e tòniques: la tancada [e], semblant a la castellana (cadena, més, bé), i l'oberta [ɛ], que es fa amb la boca força més oberta, a mig camí entre la e i la a (terra, cel, mel, set). Els castellanoparlants les fan totes tancades, i llavors paraules diferents sonen iguals. Per fer l'oberta, abaixeu la mandíbula com si anéssiu a dir una a, però mantingueu la llengua en posició de e. L'accent greu (è) marca sempre l'oberta i l'agut (é), la tancada.",
+        "es": "El catalán tiene dos e tónicas: la cerrada [e], parecida a la castellana (cadena, més, bé), y la abierta [ɛ], que se hace con la boca bastante más abierta, a medio camino entre la e y la a (terra, cel, mel, set). Los castellanohablantes las hacen todas cerradas y entonces palabras distintas suenan iguales. Para hacer la abierta, baja la mandíbula como si fueras a decir una a, pero mantén la lengua en posición de e; se parece a la e de «perro» pronunciada con énfasis. El acento grave (è) marca siempre la abierta y el agudo (é), la cerrada."
+      },
+      "paraules": [
+        "terra",
+        "cel",
+        "mel",
+        "set",
+        "verd",
+        "cafè",
+        "més",
+        "cadena",
+        "cabell",
+        "església"
+      ],
+      "parelles": [
+        "bé (adverbi, tancada) / be (xai, oberta)",
+        "déu (tancada) / deu (número, oberta)",
+        "més (quantitat, tancada) / mes (del calendari, oberta)",
+        "té (verb, tancada) / te (infusió, oberta)",
+        "sec (plec, tancada) / sec (eixut, oberta)"
+      ],
+      "pista": {
+        "ca": "Oberta: boca de a amb llengua de e. Tancada: la e castellana de sempre. L'accent us ho diu: è oberta, é tancada.",
+        "es": "Abierta: boca de a con lengua de e. Cerrada: la e castellana de siempre. El acento te lo dice: è abierta, é cerrada."
+      }
+    },
+    {
+      "id": "o-oberta-tancada",
+      "nom": {
+        "ca": "O oberta [ɔ] i o tancada [o]",
+        "es": "O abierta [ɔ] y o cerrada [o]"
+      },
+      "descripcio": {
+        "ca": "Com amb la e, el català distingeix una o tancada [o], igual que la castellana (amor, cançó, boca), d'una o oberta [ɔ], que es pronuncia amb la mandíbula més baixa i els llavis menys arrodonits (porta, cosa, home, nou). Un castellanoparlant les tanca totes. Per obtenir l'oberta, comenceu a dir una a i, sense tancar la boca, arrodoniu una mica els llavis. L'accent greu (ò) marca l'oberta; l'agut (ó), la tancada. Recordeu, a més, que en català central la o àtona sona [u]: posar es pronuncia [puˈza].",
+        "es": "Como con la e, el catalán distingue una o cerrada [o], igual que la castellana (amor, cançó, boca), de una o abierta [ɔ], que se pronuncia con la mandíbula más baja y los labios menos redondeados (porta, cosa, home, nou). Un castellanohablante las cierra todas. Para conseguir la abierta, empieza a decir una a y, sin cerrar la boca, redondea un poco los labios; se parece a la o de «ahora» dicha con la boca muy abierta. El acento grave (ò) marca la abierta; el agudo (ó), la cerrada. Recuerda, además, que en catalán central la o átona suena [u]: posar se pronuncia [puˈza]."
+      },
+      "paraules": [
+        "porta",
+        "cosa",
+        "home",
+        "nou",
+        "escola",
+        "arròs",
+        "amor",
+        "cançó",
+        "boca",
+        "pont"
+      ],
+      "parelles": [
+        "són (verb, tancada) / son (ganes de dormir, oberta)",
+        "os (animal, tancada) / os (de l'esquelet, oberta)",
+        "molt (quantitat, tancada) / molt (triturat, oberta)",
+        "dona (del verb donar, tancada) / dona (persona, oberta)",
+        "bota (de vi, tancada) / bota (calçat, oberta)"
+      ],
+      "pista": {
+        "ca": "Oberta: comenceu amb una a i arrodoniu. Tancada: la o castellana. I la o sense accent, en central, sona u.",
+        "es": "Abierta: empieza con una a y redondea. Cerrada: la o castellana. Y la o sin acento, en central, suena u."
+      }
+    },
+    {
+      "id": "essa-sonora",
+      "nom": {
+        "ca": "La essa sonora [z]",
+        "es": "La ese sonora [z]"
+      },
+      "descripcio": {
+        "ca": "El català té dues esses: la sorda [s] (passar, caça, cinc) i la sonora [z], que es fa igual però amb vibració de les cordes vocals (casa, rosa, zero, cosí). S'escriu s entre vocals, z, i també apareix quan una s final enllaça amb la vocal següent (els avis). El castellà no té aquest so com a fonema, només com a variant davant de consonant sonora (mismo, desde), i per això els castellanoparlants pronuncien casa com caça. Poseu la mà al coll i feu una s llarga: si vibra, és sonora; si no vibra, és sorda. També ajuda pensar en el brunzit d'una abella.",
+        "es": "El catalán tiene dos eses: la sorda [s] (passar, caça, cinc) y la sonora [z], que se hace igual pero con vibración de las cuerdas vocales (casa, rosa, zero, cosí). Se escribe s entre vocales, z, y también aparece cuando una s final enlaza con la vocal siguiente (els avis). El castellano no tiene este sonido como fonema, solo como variante ante consonante sonora (mismo, desde), y por eso los castellanohablantes pronuncian casa como caça. Ponte la mano en el cuello y haz una s larga: si vibra, es sonora; si no vibra, es sorda. También ayuda pensar en el zumbido de una abeja o en la s de «desde»."
+      },
+      "paraules": [
+        "casa",
+        "rosa",
+        "zero",
+        "cosí",
+        "música",
+        "onze",
+        "posar",
+        "visita",
+        "països",
+        "tresor"
+      ],
+      "parelles": [
+        "casa / caça",
+        "rosa / rossa",
+        "presa / pressa",
+        "pesar / passar",
+        "zel / cel",
+        "cosa / cossa"
+      ],
+      "pista": {
+        "ca": "Una s sola entre vocals o una z: feu-la vibrar com el brunzit d'una abella. Si no, confondreu casa amb caça.",
+        "es": "Una s sola entre vocales o una z: hazla vibrar como el zumbido de una abeja. Si no, confundirás casa con caça."
+      }
+    },
+    {
+      "id": "ela-geminada",
+      "nom": {
+        "ca": "La ela geminada l·l",
+        "es": "La ele geminada l·l"
+      },
+      "descripcio": {
+        "ca": "La ela geminada representa una l llarga o doble [lː]: la llengua toca el paladar una mica més de temps que en una l simple, com si hi hagués dues eles seguides (col·legi, il·lusió, pel·lícula). L'error més habitual dels castellanoparlants és llegir-la com una ll castellana [ʎ] o [ʝ], i també escriure-la amb punt baix o guionet. Pronuncieu-la com una l normal però allargada, sense canviar el punt d'articulació. En la parla ràpida, molts catalanoparlants la redueixen a una l simple, de manera que l'important és no fer-ne mai una ll.",
+        "es": "La ele geminada representa una l larga o doble [lː]: la lengua toca el paladar un poco más de tiempo que en una l simple, como si hubiera dos eles seguidas (col·legi, il·lusió, pel·lícula). El error más habitual de los castellanohablantes es leerla como una ll castellana [ʎ] o [ʝ], y también escribirla con punto bajo o guion. Pronúnciala como una l normal pero alargada, sin cambiar el punto de articulación. En el habla rápida, muchos catalanohablantes la reducen a una l simple, de modo que lo importante es no hacer nunca una ll."
+      },
+      "paraules": [
+        "col·legi",
+        "il·lusió",
+        "pel·lícula",
+        "intel·ligent",
+        "novel·la",
+        "al·lèrgia",
+        "paral·lel",
+        "cèl·lula",
+        "instal·lar",
+        "excel·lent"
+      ],
+      "parelles": [
+        "cela (del verb celar) / cel·la (habitació petita)",
+        "vila / vil·la",
+        "ala / al·là"
+      ],
+      "pista": {
+        "ca": "És una l, no una ll. Allargueu-la una mica i continueu.",
+        "es": "Es una l, no una ll. Alárgala un poco y sigue; nunca la pronuncies como la ll de «lluvia»."
+      }
+    },
+    {
+      "id": "ela-velar",
+      "nom": {
+        "ca": "La ela velar [ɫ]",
+        "es": "La ele velar [ɫ]"
+      },
+      "descripcio": {
+        "ca": "La l catalana, sobretot en central, és més fosca que la castellana: a més de tocar les dents amb la punta de la llengua, s'aixeca la part posterior de la llengua cap al vel del paladar. Es nota molt a final de síl·laba (sal, sol, mal, alt) i darrere de consonant (blau, plou, clau). Els castellanoparlants fan una l clara, molt endavant, que sona massa prima en català. Per practicar-la, digueu la l anglesa de ball o milk, o imagineu que teniu una cullera petita damunt la llengua mentre la feu.",
+        "es": "La l catalana, sobre todo en central, es más oscura que la castellana: además de tocar los dientes con la punta de la lengua, se levanta la parte posterior de la lengua hacia el velo del paladar. Se nota mucho a final de sílaba (sal, sol, mal, alt) y tras consonante (blau, plou, clau). Los castellanohablantes hacen una l clara, muy adelantada, que suena demasiado fina en catalán. Para practicarla, di la l inglesa de ball o milk, o imagina que tienes una cucharilla sobre la lengua mientras la haces."
+      },
+      "paraules": [
+        "sal",
+        "sol",
+        "mal",
+        "alt",
+        "blau",
+        "plou",
+        "clau",
+        "fil",
+        "hotel",
+        "paral·lel"
+      ],
+      "pista": {
+        "ca": "Llengua endarrere i cap avall mentre la punta toca les dents: una l com l'anglesa de ball.",
+        "es": "Lengua hacia atrás y hundida mientras la punta toca los dientes: una l como la inglesa de ball."
+      }
+    },
+    {
+      "id": "xeix",
+      "nom": {
+        "ca": "La xeix [ʃ]",
+        "es": "La xeix [ʃ]"
+      },
+      "descripcio": {
+        "ca": "La xeix és el so de demanar silenci (xxxt), com la sh anglesa o la ch francesa. S'escriu x a començament de paraula i després de consonant o de i (xocolata, Xavier, panxa, caixa) i ix després de les altres vocals (peix, baixar, coix). El castellà no té aquest so i els castellanoparlants el substitueixen per una s (sinó per [ks], com a la x de taxi, que en català només apareix en cultismes com examen o text). Per fer-la, arrodoniu una mica els llavis i deixeu passar l'aire per un canal ample entre la llengua i el paladar, sense que la punta toqui les dents.",
+        "es": "La xeix es el sonido de pedir silencio (shhh), como la sh inglesa o la ch francesa. Se escribe x a principio de palabra y tras consonante o i (xocolata, Xavier, panxa, caixa), e ix tras las demás vocales (peix, baixar, coix). El castellano no tiene este sonido y los castellanohablantes lo sustituyen por una s (o por [ks], como la x de taxi, que en catalán solo aparece en cultismos como examen o text). Para hacerla, redondea un poco los labios y deja pasar el aire por un canal ancho entre la lengua y el paladar, sin que la punta toque los dientes."
+      },
+      "paraules": [
+        "caixa",
+        "xocolata",
+        "peix",
+        "baixar",
+        "xarxa",
+        "Xavier",
+        "coix",
+        "panxa",
+        "eixugar",
+        "xarop"
+      ],
+      "parelles": [
+        "xoc / soc",
+        "xal / sal",
+        "peix / pes",
+        "caixa / casa"
+      ],
+      "pista": {
+        "ca": "El so de fer callar algú: xxxt. Mai una s ni una cs.",
+        "es": "El sonido de mandar callar: shhh. Nunca una s ni una cs (excepto en examen, text, taxi)."
+      }
+    },
+    {
+      "id": "tx-ig",
+      "nom": {
+        "ca": "Els dígrafs tx i ig [tʃ]",
+        "es": "Los dígrafos tx e ig [tʃ]"
+      },
+      "descripcio": {
+        "ca": "Aquest so és el mateix que la ch castellana (cotxe, despatx, fletxa), de manera que no costa de pronunciar; la dificultat és reconèixer-lo en l'escriptura. A final de paraula, darrere de vocal, s'escriu ig: boig, maig, roig, lleig, passeig, i cal pronunciar-lo [tʃ], no com una i ni com una g. Darrere de i s'escriu només g (mig, desig). Els castellanoparlants solen llegir maig com si acabés en una i llarga o pronunciar cotxe amb una t separada. Dins de paraula i a final s'escriu tx (dutxa, esquitxar, despatx).",
+        "es": "Este sonido es el mismo que la ch castellana (cotxe, despatx, fletxa), de modo que no cuesta pronunciarlo; la dificultad está en reconocerlo en la escritura. A final de palabra, tras vocal, se escribe ig: boig, maig, roig, lleig, passeig, y hay que pronunciarlo [tʃ], no como una i ni como una g. Tras i se escribe solo g (mig, desig). Los castellanohablantes suelen leer maig como si terminara en una i larga o pronunciar cotxe con una t separada. Dentro de palabra y a final se escribe tx (dutxa, esquitxar, despatx)."
+      },
+      "paraules": [
+        "cotxe",
+        "despatx",
+        "fletxa",
+        "dutxa",
+        "boig",
+        "maig",
+        "roig",
+        "passeig",
+        "mig",
+        "lleig"
+      ],
+      "parelles": [
+        "boig / boix",
+        "txec / xec",
+        "mig / mix"
+      ],
+      "pista": {
+        "ca": "ig final i tx sonen com la ch castellana: maig es llegeix «matx».",
+        "es": "ig final y tx suenan como la ch castellana: maig se lee «mach», boig se lee «boch»."
+      }
+    },
+    {
+      "id": "ge-jota",
+      "nom": {
+        "ca": "La g/j [ʒ] i la tg/tj [dʒ]",
+        "es": "La g/j [ʒ] y la tg/tj [dʒ]"
+      },
+      "descripcio": {
+        "ca": "La g davant de e i i, i la j en qualsevol posició, representen en català un so [ʒ] que no existeix en castellà: és com la xeix, però amb vibració de les cordes vocals, igual que la j francesa de bonjour (gent, girar, jove, pluja, menjar). Els castellanoparlants hi posen la jota castellana [x], feta a la gola, o una i consonàntica [ʝ] com a yo. Per fer-la, poseu la boca en posició de xeix i afegiu-hi veu. Els dígrafs tg i tj (platja, metge, viatge, jutge) representen la variant africada [dʒ], com la j anglesa de John: comenceu amb una d i acabeu amb [ʒ].",
+        "es": "La g ante e e i, y la j en cualquier posición, representan en catalán un sonido [ʒ] que no existe en castellano: es como la xeix, pero con vibración de las cuerdas vocales, igual que la j francesa de bonjour (gent, girar, jove, pluja, menjar). Los castellanohablantes ponen ahí la jota castellana [x], hecha en la garganta, o una y consonántica [ʝ] como en yo. Para hacerla, pon la boca en posición de xeix y añádele voz. Los dígrafos tg y tj (platja, metge, viatge, jutge) representan la variante africada [dʒ], como la j inglesa de John: empieza con una d y acaba en [ʒ]."
+      },
+      "paraules": [
+        "gent",
+        "girar",
+        "jove",
+        "pluja",
+        "menjar",
+        "gener",
+        "platja",
+        "metge",
+        "viatge",
+        "jutge"
+      ],
+      "parelles": [
+        "joc / xoc",
+        "gerra / xerra",
+        "jaç / llaç",
+        "pluja / platja (fricativa / africada)"
+      ],
+      "pista": {
+        "ca": "Mai la jota castellana de la gola: és una xeix amb veu, com la j francesa. tg/tj: d + aquest so.",
+        "es": "Nunca la jota castellana de la garganta: es una xeix con voz, como la j francesa. tg/tj: d + ese sonido, como la j inglesa."
+      }
+    },
+    {
+      "id": "ny",
+      "nom": {
+        "ca": "El dígraf ny [ɲ]",
+        "es": "El dígrafo ny [ɲ]"
+      },
+      "descripcio": {
+        "ca": "El so és el de la ñ castellana, però en català s'escriu ny i, sobretot, pot aparèixer a final de paraula (any, bany, lluny, Catalunya, estany), cosa que en castellà no passa. Per això els castellanoparlants tendeixen a afegir-hi una vocal (anyi) o a reduir-lo a una n (an). Cal acabar la paraula amb el dors de la llengua enganxat al paladar, deixant sortir l'aire pel nas, i no obrir la boca després. Davant d'un altre mot que comenci per vocal, el so s'enllaça (any_i_mig).",
+        "es": "El sonido es el de la ñ castellana, pero en catalán se escribe ny y, sobre todo, puede aparecer a final de palabra (any, bany, lluny, Catalunya, estany), cosa que en castellano no ocurre. Por eso los castellanohablantes tienden a añadirle una vocal (anyi) o a reducirlo a una n (an). Hay que terminar la palabra con el dorso de la lengua pegado al paladar, dejando salir el aire por la nariz, y no abrir la boca después. Ante otra palabra que empiece por vocal, el sonido se enlaza (any_i_mig)."
+      },
+      "paraules": [
+        "any",
+        "bany",
+        "lluny",
+        "Catalunya",
+        "estany",
+        "muntanya",
+        "senyor",
+        "canya",
+        "enginyer",
+        "pinya"
+      ],
+      "parelles": [
+        "pena / penya",
+        "mana / manya",
+        "cana / canya"
+      ],
+      "pista": {
+        "ca": "A final de paraula, acabeu amb la llengua al paladar i no hi afegiu cap vocal: any, no «anyi».",
+        "es": "A final de palabra, termina con la lengua en el paladar y no añadas ninguna vocal: any, no «anyi» ni «an»."
+      }
+    },
+    {
+      "id": "ll",
+      "nom": {
+        "ca": "La ll [ʎ] sense ieisme",
+        "es": "La ll [ʎ] sin yeísmo"
+      },
+      "descripcio": {
+        "ca": "La ll catalana és un so lateral palatal: el dors de la llengua s'enganxa al paladar, la punta queda darrere de les dents de baix i l'aire surt pels costats (llibre, lluna, cavall, ull). La majoria de castellanoparlants són ieistes i la pronuncien com una i consonàntica [ʝ] (com a yo), cosa que en català estàndard es considera un defecte de pronúncia, sobretot en una prova oral. Per recuperar-la, digueu una l i, sense moure la punta de la llengua, aixequeu el dors fins que toqui tot el paladar; o penseu en la lli de l'anglès million. A final de paraula no s'hi afegeix cap vocal (cavall, no «cavalli»).",
+        "es": "La ll catalana es un sonido lateral palatal: el dorso de la lengua se pega al paladar, la punta queda detrás de los dientes de abajo y el aire sale por los lados (llibre, lluna, cavall, ull). La mayoría de castellanohablantes son yeístas y la pronuncian como una y consonántica [ʝ] (como en yo), lo que en catalán estándar se considera un defecto de pronunciación, sobre todo en una prueba oral. Para recuperarla, di una l y, sin mover la punta de la lengua, levanta el dorso hasta que toque todo el paladar; o piensa en la lli del inglés million. A final de palabra no se añade ninguna vocal (cavall, no «cavalli»)."
+      },
+      "paraules": [
+        "llibre",
+        "lluna",
+        "llet",
+        "cavall",
+        "ull",
+        "pollastre",
+        "lloc",
+        "vell",
+        "llarg",
+        "treballar"
+      ],
+      "parelles": [
+        "lluny / juny",
+        "llaç / jaç",
+        "lloc / joc",
+        "llei / jai (vell, en argot)"
+      ],
+      "pista": {
+        "ca": "Una l amb tota la llengua enganxada al paladar i l'aire pels costats. No és una i.",
+        "es": "Una l con toda la lengua pegada al paladar y el aire por los lados. No es una y: llibre no es «yibre»."
+      }
+    },
+    {
+      "id": "r-final-muda",
+      "nom": {
+        "ca": "La r final muda i la r final pronunciada",
+        "es": "La r final muda y la r final pronunciada"
+      },
+      "descripcio": {
+        "ca": "En català central, la r final de la majoria de paraules no es pronuncia: tots els infinitius (cantar, dormir, córrer, menjar), els noms i adjectius en -er i -or (carrer, primer, fuster, diner, color, senyor), i altres com clar o segur. Els castellanoparlants la pronuncien sempre, i també la fan vibrar més del compte. Ara bé, hi ha un grup de paraules, en general monosíl·labs i alguns cultismes, en què sí que sona: mar, cor, car, por, pur, bar, far, or, amor, tresor. A més, la r muda torna a sonar quan s'hi enganxa un pronom feble (cantar-la, comprar-ne, dur-hi). Als parlars valencians la r final es pronuncia gairebé sempre.",
+        "es": "En catalán central, la r final de la mayoría de palabras no se pronuncia: todos los infinitivos (cantar, dormir, córrer, menjar), los nombres y adjetivos en -er y -or (carrer, primer, fuster, diner, color, senyor), y otros como clar o segur. Los castellanohablantes la pronuncian siempre, y además la hacen vibrar más de la cuenta. Ahora bien, hay un grupo de palabras, en general monosílabos y algunos cultismos, en las que sí suena: mar, cor, car, por, pur, bar, far, or, amor, tresor. Además, la r muda vuelve a sonar cuando se le pega un pronombre débil (cantar-la, comprar-ne, dur-hi). En los hablas valencianas la r final se pronuncia casi siempre."
+      },
+      "paraules": [
+        "cantar",
+        "primer",
+        "carrer",
+        "dormir",
+        "diner",
+        "color",
+        "senyor",
+        "mar",
+        "cor",
+        "por"
+      ],
+      "parelles": [
+        "cantar (r muda) / cantar-la (r pronunciada)",
+        "clar (muda) / car (pronunciada)",
+        "senyor (muda) / amor (pronunciada)",
+        "primer (muda) / mar (pronunciada)"
+      ],
+      "pista": {
+        "ca": "Infinitius i mots en -er/-or: no digueu la r. Monosíl·labs com mar, cor, por: sí. Amb pronom darrere, sempre sona.",
+        "es": "Infinitivos y palabras en -er/-or: no digas la r (cantar suena «cantá»). Monosílabos como mar, cor, por: sí. Con pronombre detrás, siempre suena."
+      }
+    },
+    {
+      "id": "finals-ensordides",
+      "nom": {
+        "ca": "Consonants finals ensordides (fred, llarg)",
+        "es": "Consonantes finales ensordecidas (fred, llarg)"
+      },
+      "descripcio": {
+        "ca": "A final de paraula, les consonants b, d i g s'ensordeixen i es pronuncien [p], [t] i [k], curtes i fermes: fred sona «fret», llarg sona «llarc», verd sona «vert», sang sona «sanc». Els castellanoparlants, acostumats a Madrid pronunciat «Madrí» o «Madriz», tendeixen a afluixar-les, a suprimir-les o a fer-les fricatives. En català cal tancar del tot l'articulació i deixar anar l'aire amb una petita explosió, sense afegir-hi cap vocal. Quan la paraula següent comença per vocal, la consonant es manté sorda però s'enllaça (fred i calor).",
+        "es": "A final de palabra, las consonantes b, d y g se ensordecen y se pronuncian [p], [t] y [k], cortas y firmes: fred suena «fret», llarg suena «llarc», verd suena «vert», sang suena «sanc». Los castellanohablantes, acostumbrados a Madrid pronunciado «Madrí» o «Madriz», tienden a aflojarlas, suprimirlas o hacerlas fricativas. En catalán hay que cerrar del todo la articulación y soltar el aire con una pequeña explosión, sin añadir ninguna vocal. Cuando la palabra siguiente empieza por vocal, la consonante se mantiene sorda pero se enlaza (fred i calor)."
+      },
+      "paraules": [
+        "fred",
+        "llarg",
+        "verd",
+        "sang",
+        "sud",
+        "àcid",
+        "tub",
+        "club",
+        "fang",
+        "cub"
+      ],
+      "parelles": [
+        "fred → sona «fret» (i fret, el mot, sona igual)",
+        "cub → sona «cup» (i cup, el dipòsit de vi, sona igual)",
+        "llarg → sona «llarc»",
+        "verd → sona «vert»"
+      ],
+      "pista": {
+        "ca": "b, d, g finals sonen p, t, c: fermes i seques, sense vocal al darrere.",
+        "es": "b, d, g finales suenan p, t, c: firmes y secas, sin vocal detrás. No te comas la consonante."
+      }
+    },
+    {
+      "id": "enllacos-fonics",
+      "nom": {
+        "ca": "Els enllaços fònics (els avis, dos homes)",
+        "es": "Los enlaces fónicos (els avis, dos homes)"
+      },
+      "descripcio": {
+        "ca": "En català les paraules no es pronuncien aïllades, sinó lligades. Quan una paraula acaba en s i la següent comença per vocal, la s es torna sonora [z] i passa a la síl·laba següent: els avis sona «el-za-vis», dos homes sona «do-zo-mes», sis anys «si-zanys». També es fonen vocals iguals o neutres (una hora sona «u-no-ra», quinze euros «quin-zeu-ros») i les consonants finals s'enllacen amb la vocal següent (tot això, cap aquí, mig any). Els castellanoparlants tendeixen a separar les paraules i a mantenir la s sorda, cosa que fa la parla entretallada i poc natural.",
+        "es": "En catalán las palabras no se pronuncian aisladas, sino ligadas. Cuando una palabra acaba en s y la siguiente empieza por vocal, la s se vuelve sonora [z] y pasa a la sílaba siguiente: els avis suena «el-za-vis», dos homes suena «do-zo-mes», sis anys «si-zanys». También se funden vocales iguales o neutras (una hora suena «u-no-ra», quinze euros «quin-zeu-ros») y las consonantes finales se enlazan con la vocal siguiente (tot això, cap aquí, mig any). Los castellanohablantes tienden a separar las palabras y a mantener la s sorda, lo que hace el habla entrecortada y poco natural."
+      },
+      "paraules": [
+        "els avis",
+        "dos homes",
+        "sis anys",
+        "una hora",
+        "quinze euros",
+        "tot això",
+        "cap aquí",
+        "mig any",
+        "més alt",
+        "les escoles"
+      ],
+      "pista": {
+        "ca": "s final + vocal = essa sonora. Lligueu les paraules com si fossin una de sola.",
+        "es": "s final + vocal = ese sonora (zumbido). Liga las palabras como si fueran una sola: «elzavis», no «els / avis»."
+      }
+    },
+    {
+      "id": "v-b",
+      "nom": {
+        "ca": "La v labiodental (només en algunes variants)",
+        "es": "La v labiodental (solo en algunas variantes)"
+      },
+      "descripcio": {
+        "ca": "En català central i nord-occidental, b i v es pronuncien igual, [b], exactament com en castellà, de manera que un castellanoparlant que estudiï aquestes variants no hi ha de fer res de nou. Ara bé, a les Illes Balears, al Camp de Tarragona, a l'Ebre i a bona part del País Valencià es manté la distinció: la v es fa amb les dents de dalt tocant el llavi de baix, com la v francesa o anglesa (vi, vaca, veure), i la b amb els dos llavis. Si us prepareu amb un professor o una variant que la distingeixi, practiqueu-la; si no, és preferible no forçar-la, perquè una v labiodental mal col·locada sona artificial.",
+        "es": "En catalán central y noroccidental, b y v se pronuncian igual, [b], exactamente como en castellano, de modo que un castellanohablante que estudie estas variantes no tiene que hacer nada nuevo. Ahora bien, en las Islas Baleares, en el Camp de Tarragona, en el Ebro y en buena parte del País Valenciano se mantiene la distinción: la v se hace con los dientes de arriba tocando el labio de abajo, como la v francesa o inglesa (vi, vaca, veure), y la b con los dos labios. Si te preparas con un profesor o una variante que la distinga, practícala; si no, es preferible no forzarla, porque una v labiodental mal colocada suena artificial."
+      },
+      "paraules": [
+        "vi",
+        "vaca",
+        "veure",
+        "vell",
+        "viure",
+        "nevar",
+        "canviar",
+        "avi",
+        "servei",
+        "nou"
+      ],
+      "parelles": [
+        "beure / veure",
+        "bell / vell",
+        "bena / vena",
+        "baca / vaca",
+        "bull / vull"
+      ],
+      "pista": {
+        "ca": "En central, b i v sonen igual: no cal fer res. Només si la vostra variant distingeix, dents de dalt sobre el llavi de baix per a la v.",
+        "es": "En central, b y v suenan igual: no hay que hacer nada. Solo si tu variante distingue, dientes de arriba sobre el labio de abajo para la v."
+      }
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "lectures": [
+    {
+      "id": "lectura-b1-01",
+      "nivell": "B1",
+      "titol": "Al mercat",
+      "text": "Cada dissabte al matí vaig al mercat amb la meva mare. Comprem peix fresc, pomes, enciams i una mica de formatge. A la parada de la cantonada, el venedor sempre ens regala una poma. Després esmorzem xocolata amb xurros al bar de la plaça i tornem a casa caminant pel carrer Major.",
+      "sons": ["vocal-neutra", "xeix", "essa-sonora", "ge-jota", "r-final-muda", "o-oberta-tancada"],
+      "paraulesClau": {
+        "mare": ["vocal-neutra"],
+        "peix": ["xeix"],
+        "pomes": ["o-oberta-tancada", "vocal-neutra"],
+        "formatge": ["ge-jota", "vocal-neutra"],
+        "xocolata": ["xeix", "vocal-neutra"],
+        "plaça": ["vocal-neutra"],
+        "casa": ["essa-sonora", "vocal-neutra"],
+        "carrer": ["r-final-muda"],
+        "enciams": ["vocal-neutra"]
+      }
+    },
+    {
+      "id": "lectura-b1-02",
+      "nivell": "B1",
+      "titol": "Un dia a l'escola",
+      "text": "La meva filla va a l'escola del barri. Cada dia entra a les nou i surt a dos quarts de cinc. Li agrada molt llegir i jugar al pati amb els seus amics. Aquest any té una mestra nova que es diu Núria i que els ensenya cançons en anglès.",
+      "sons": ["ll", "ge-jota", "ny", "r-final-muda", "enllacos-fonics", "o-oberta-tancada", "ela-velar"],
+      "paraulesClau": {
+        "filla": ["ll"],
+        "escola": ["o-oberta-tancada", "ela-velar"],
+        "nou": ["o-oberta-tancada"],
+        "llegir": ["ll", "ge-jota", "r-final-muda"],
+        "jugar": ["ge-jota", "r-final-muda"],
+        "els seus amics": ["enllacos-fonics"],
+        "any": ["ny"],
+        "ensenya": ["ny"],
+        "cançons": ["vocal-neutra", "o-oberta-tancada"]
+      }
+    },
+    {
+      "id": "lectura-b1-03",
+      "nivell": "B1",
+      "titol": "Al metge",
+      "text": "Bon dia, doctor. Fa tres dies que tinc mal de cap i una mica de febre. També em fa mal el coll quan menjo. He pres un parell de pastilles, però no m'ha passat. No he pogut dormir bé aquesta nit i avui no he anat a treballar.",
+      "sons": ["ela-velar", "ll", "ge-jota", "r-final-muda", "e-oberta-tancada", "vocal-neutra"],
+      "paraulesClau": {
+        "dies": ["vocal-neutra"],
+        "mal": ["ela-velar"],
+        "febre": ["e-oberta-tancada", "vocal-neutra"],
+        "coll": ["ll", "o-oberta-tancada"],
+        "menjo": ["ge-jota"],
+        "parell": ["ll"],
+        "pastilles": ["ll", "vocal-neutra"],
+        "dormir": ["r-final-muda"],
+        "bé": ["e-oberta-tancada"],
+        "treballar": ["ll", "r-final-muda"]
+      }
+    },
+    {
+      "id": "lectura-b2-01",
+      "nivell": "B2",
+      "titol": "El pis nou",
+      "text": "Fa un mes que vivim al pis nou. És un tercer sense ascensor, però té molta llum i un balcó que dona a un pati interior ple d'arbres. Els veïns són gent gran, molt amables, i la del quart ens va regalar un pastís el dia que vam arribar. El barri és tranquil, amb botigues de tota la vida i un parc on la gent passeja els gossos.",
+      "sons": ["ll", "ela-velar", "ge-jota", "o-oberta-tancada", "e-oberta-tancada", "vocal-neutra", "v-b"],
+      "paraulesClau": {
+        "vivim": ["v-b"],
+        "veïns": ["v-b", "vocal-neutra"],
+        "llum": ["ll"],
+        "balcó": ["ela-velar", "o-oberta-tancada"],
+        "ple": ["e-oberta-tancada"],
+        "arbres": ["vocal-neutra"],
+        "gent": ["ge-jota"],
+        "són": ["o-oberta-tancada"],
+        "tranquil": ["ela-velar"],
+        "botigues": ["vocal-neutra"],
+        "passeja": ["ge-jota", "vocal-neutra"],
+        "gossos": ["o-oberta-tancada"]
+      }
+    },
+    {
+      "id": "lectura-b2-02",
+      "nivell": "B2",
+      "titol": "La feina",
+      "text": "Treballo en una empresa de logística del Vallès des de fa sis anys. Començo a les set del matí i, quan plegava a les tres, anava a buscar els nens a l'escola. Ara tinc un horari partit i arribo a casa cap a les set del vespre. M'agradaria canviar de feina, però amb els lloguers tan cars no m'ho puc permetre.",
+      "sons": ["ll", "e-oberta-tancada", "enllacos-fonics", "ny", "vocal-neutra", "r-final-muda", "essa-sonora"],
+      "paraulesClau": {
+        "treballo": ["ll"],
+        "vallès": ["ll", "e-oberta-tancada"],
+        "sis anys": ["enllacos-fonics", "ny"],
+        "començo": ["vocal-neutra"],
+        "set": ["e-oberta-tancada"],
+        "escola": ["o-oberta-tancada", "ela-velar"],
+        "casa": ["essa-sonora"],
+        "vespre": ["e-oberta-tancada", "vocal-neutra"],
+        "canviar": ["v-b", "r-final-muda"],
+        "feina": ["vocal-neutra"],
+        "lloguers": ["ll", "e-oberta-tancada", "r-final-muda"],
+        "permetre": ["e-oberta-tancada"]
+      }
+    },
+    {
+      "id": "lectura-b2-03",
+      "nivell": "B2",
+      "titol": "Un cap de setmana",
+      "text": "Dissabte vam anar a Girona amb uns amics. Vam passejar pel barri vell, vam pujar a la muralla i vam dinar en un restaurant de la plaça. A la tarda va ploure i ens vam refugiar en una llibreria. Diumenge, en canvi, va fer un sol esplèndid i vam tornar a casa pel camí de la costa.",
+      "sons": ["ge-jota", "enllacos-fonics", "ll", "r-final-muda", "o-oberta-tancada", "ela-velar", "essa-sonora"],
+      "paraulesClau": {
+        "girona": ["ge-jota", "o-oberta-tancada"],
+        "uns amics": ["enllacos-fonics"],
+        "passejar": ["ge-jota", "r-final-muda"],
+        "vell": ["ll", "e-oberta-tancada"],
+        "pujar": ["ge-jota", "r-final-muda"],
+        "muralla": ["ll"],
+        "ploure": ["ela-velar", "o-oberta-tancada"],
+        "llibreria": ["ll"],
+        "diumenge": ["ge-jota"],
+        "sol": ["ela-velar", "o-oberta-tancada"],
+        "tornar": ["r-final-muda"],
+        "casa": ["essa-sonora"]
+      }
+    },
+    {
+      "id": "lectura-c1-01",
+      "nivell": "C1",
+      "titol": "L'habitatge",
+      "text": "L'accés a l'habitatge s'ha convertit en el principal maldecap de les famílies joves. Els preus del lloguer han crescut molt per sobre dels sous, i les administracions, malgrat els anuncis, no han aconseguit revertir la tendència. Caldria, doncs, una política decidida de construcció d'habitatge públic, acompanyada de mesures fiscals que desincentivin la retenció de pisos buits.",
+      "sons": ["ge-jota", "o-oberta-tancada", "ll", "r-final-muda", "enllacos-fonics", "essa-sonora", "ela-velar", "e-oberta-tancada"],
+      "paraulesClau": {
+        "habitatge": ["ge-jota", "vocal-neutra"],
+        "joves": ["ge-jota", "o-oberta-tancada"],
+        "lloguer": ["ll", "r-final-muda"],
+        "sous": ["o-oberta-tancada"],
+        "els anuncis": ["enllacos-fonics"],
+        "revertir": ["v-b", "r-final-muda"],
+        "tendència": ["e-oberta-tancada", "vocal-neutra"],
+        "caldria": ["ela-velar"],
+        "decidida": ["vocal-neutra"],
+        "fiscals": ["ela-velar"],
+        "pisos": ["essa-sonora"]
+      }
+    },
+    {
+      "id": "lectura-c1-02",
+      "nivell": "C1",
+      "titol": "La llengua a la feina",
+      "text": "Una enquesta recent revela que gairebé la meitat dels treballadors del sector serveis canvien de llengua quan el client els parla en castellà, fins i tot si aquest els entén perfectament. Els experts coincideixen que aquesta convergència, sovint inconscient, és un dels factors que més contribueixen al retrocés de l'ús social del català, i proposen campanyes que fomentin el manteniment de la llengua inicial.",
+      "sons": ["ll", "r-final-muda", "e-oberta-tancada", "enllacos-fonics", "ge-jota", "essa-sonora", "o-oberta-tancada", "ela-velar", "v-b"],
+      "paraulesClau": {
+        "llengua": ["ll", "vocal-neutra"],
+        "meitat": ["vocal-neutra"],
+        "treballadors": ["ll", "r-final-muda"],
+        "serveis": ["v-b", "e-oberta-tancada"],
+        "canvien": ["v-b"],
+        "client": ["e-oberta-tancada"],
+        "els experts": ["enllacos-fonics"],
+        "convergència": ["ge-jota", "e-oberta-tancada"],
+        "social": ["ela-velar"],
+        "proposen": ["essa-sonora", "o-oberta-tancada"],
+        "inicial": ["ela-velar"]
+      }
+    },
+    {
+      "id": "lectura-c1-03",
+      "nivell": "C1",
+      "titol": "Sequera i gestió de l'aigua",
+      "text": "Els episodis de sequera que hem patit els darrers anys ja no es poden considerar excepcionals. Els models climàtics preveuen estius més llargs i calorosos, i pluges concentrades en pocs dies. Davant d'aquest escenari, els ajuntaments haurien de replantejar la gestió de l'aigua: reutilitzar les aigües grises, penalitzar el malbaratament i protegir els aqüífers de la contaminació agrícola.",
+      "sons": ["e-oberta-tancada", "enllacos-fonics", "ny", "ll", "finals-ensordides", "essa-sonora", "ge-jota", "r-final-muda", "vocal-neutra"],
+      "paraulesClau": {
+        "sequera": ["e-oberta-tancada"],
+        "darrers anys": ["enllacos-fonics", "ny", "r-final-muda"],
+        "llargs": ["ll", "finals-ensordides"],
+        "calorosos": ["essa-sonora", "o-oberta-tancada"],
+        "pluges": ["ge-jota", "vocal-neutra"],
+        "escenari": ["vocal-neutra"],
+        "ajuntaments": ["ge-jota"],
+        "gestió": ["ge-jota"],
+        "reutilitzar": ["r-final-muda"],
+        "aigües": ["vocal-neutra"],
+        "penalitzar": ["r-final-muda"],
+        "protegir": ["ge-jota", "r-final-muda"]
+      }
+    },
+    {
+      "id": "lectura-gen-01",
+      "nivell": "general",
+      "titol": "La Paula i la ela geminada",
+      "text": "La Paula té al·lèrgia al pol·len i, cada primavera, el col·legi li sembla una pel·lícula sense final. Tot i això, és una alumna excel·lent i intel·ligent, que col·lecciona novel·les il·lustrades i que vol instal·lar un petit observatori al terrat per mirar els satèl·lits. Els seus pares, tranquil·lament, li diuen que primer acabi els deures.",
+      "sons": ["ela-geminada", "ge-jota", "e-oberta-tancada", "r-final-muda"],
+      "paraulesClau": {
+        "al·lèrgia": ["ela-geminada", "ge-jota", "e-oberta-tancada"],
+        "pol·len": ["ela-geminada"],
+        "col·legi": ["ela-geminada", "ge-jota"],
+        "pel·lícula": ["ela-geminada"],
+        "excel·lent": ["ela-geminada"],
+        "intel·ligent": ["ela-geminada", "ge-jota"],
+        "col·lecciona": ["ela-geminada"],
+        "novel·les": ["ela-geminada"],
+        "il·lustrades": ["ela-geminada"],
+        "instal·lar": ["ela-geminada", "r-final-muda"],
+        "satèl·lits": ["ela-geminada", "e-oberta-tancada"],
+        "tranquil·lament": ["ela-geminada"]
+      }
+    },
+    {
+      "id": "lectura-gen-02",
+      "nivell": "general",
+      "titol": "Xeix, tx, ig i jota",
+      "text": "El Xavier ha deixat la caixa de xocolata a la cuina, al costat del peix. En Jordi, que és un noi lleig però simpàtic, viatja cada maig a Puigcerdà amb el cotxe vermell del seu germà, i sempre torna amb una capsa de bolets de la muntanya, roig de sol i boig d'alegria.",
+      "sons": ["xeix", "tx-ig", "ge-jota", "ll", "o-oberta-tancada", "v-b"],
+      "paraulesClau": {
+        "xavier": ["xeix", "v-b"],
+        "deixat": ["xeix"],
+        "caixa": ["xeix"],
+        "xocolata": ["xeix"],
+        "peix": ["xeix"],
+        "jordi": ["ge-jota", "o-oberta-tancada"],
+        "lleig": ["ll", "tx-ig"],
+        "viatja": ["ge-jota", "v-b"],
+        "maig": ["tx-ig"],
+        "puigcerdà": ["tx-ig"],
+        "cotxe": ["tx-ig", "o-oberta-tancada"],
+        "boig": ["tx-ig", "o-oberta-tancada"]
+      }
+    },
+    {
+      "id": "lectura-gen-03",
+      "nivell": "general",
+      "titol": "La essa sonora i les vocals",
+      "text": "A casa de la Rosa sempre hi ha música. Els dissabtes, les seves cosines venen de Reus amb cireres i presenten la seva nova cançó a tota la família, que les escolta asseguda al sofà amb una tassa de te. Després, la Teresa, que és molt presumida, posa la seva rosa preferida en un gerro blau.",
+      "sons": ["essa-sonora", "e-oberta-tancada", "o-oberta-tancada", "vocal-neutra", "ge-jota", "ela-velar"],
+      "paraulesClau": {
+        "casa": ["essa-sonora", "vocal-neutra"],
+        "rosa": ["essa-sonora", "o-oberta-tancada"],
+        "música": ["essa-sonora"],
+        "cosines": ["essa-sonora"],
+        "reus": ["e-oberta-tancada"],
+        "cireres": ["e-oberta-tancada", "vocal-neutra"],
+        "presenten": ["essa-sonora", "e-oberta-tancada"],
+        "tassa": ["vocal-neutra"],
+        "teresa": ["essa-sonora", "e-oberta-tancada"],
+        "posa": ["essa-sonora", "o-oberta-tancada"],
+        "gerro": ["ge-jota", "e-oberta-tancada"],
+        "blau": ["ela-velar"]
+      }
+    },
+    {
+      "id": "lectura-gen-04",
+      "nivell": "general",
+      "titol": "Erres finals, consonants fermes i enllaços",
+      "text": "Fa fred i el cel és verd fosc, com si hagués de nevar. Els avis han sortit a passejar pel passeig llarg que va del port al far. Volen comprar pa, menjar una mica de peix i tornar abans de dinar. Dos homes amb un gos negre els saluden des del bar; són amics de tota la vida i parlen de futbol.",
+      "sons": ["finals-ensordides", "r-final-muda", "enllacos-fonics", "e-oberta-tancada", "o-oberta-tancada", "tx-ig", "ll"],
+      "paraulesClau": {
+        "fred": ["finals-ensordides", "e-oberta-tancada"],
+        "verd": ["finals-ensordides", "e-oberta-tancada"],
+        "nevar": ["r-final-muda", "v-b"],
+        "els avis": ["enllacos-fonics"],
+        "passejar": ["r-final-muda", "ge-jota"],
+        "passeig": ["tx-ig"],
+        "llarg": ["ll", "finals-ensordides"],
+        "port": ["o-oberta-tancada"],
+        "comprar": ["r-final-muda"],
+        "dinar": ["r-final-muda"],
+        "dos homes": ["enllacos-fonics"],
+        "futbol": ["ela-velar", "o-oberta-tancada"]
+      }
+    },
+    {
+      "id": "lectura-gen-05",
+      "nivell": "general",
+      "titol": "La revetlla: ny i ll",
+      "text": "Cada any, per la revetlla de Sant Joan, la família Vinyals puja a la muntanya amb una cistella plena de coca i xampany. Mengen a la vora de l'estany, canten fins ben lluny de la mitjanit i, quan el cel s'omple d'estrelles, els més petits ja dormen embolicats en una manta de llana.",
+      "sons": ["ny", "ll", "e-oberta-tancada", "ge-jota", "xeix", "ela-velar", "v-b"],
+      "paraulesClau": {
+        "any": ["ny"],
+        "revetlla": ["ll", "e-oberta-tancada", "v-b"],
+        "joan": ["ge-jota"],
+        "vinyals": ["ny", "v-b", "ela-velar"],
+        "muntanya": ["ny"],
+        "cistella": ["ll", "e-oberta-tancada"],
+        "plena": ["e-oberta-tancada"],
+        "xampany": ["xeix", "ny"],
+        "estany": ["ny"],
+        "lluny": ["ll", "ny"],
+        "cel": ["ela-velar", "e-oberta-tancada"],
+        "estrelles": ["ll", "e-oberta-tancada"]
+      }
+    }
+  ]
+}

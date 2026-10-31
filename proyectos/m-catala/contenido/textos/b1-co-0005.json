@@ -1,0 +1,56 @@
+{
+  "id": "b1-co-0005",
+  "nivell": "B1",
+  "area": "co",
+  "titol": "Reunió amb la tutora: l'excursió",
+  "genere": "diàleg breu",
+  "text": "A: Hola, Jordi. Volia parlar amb tu de l'excursió de la setmana vinent.\nB: Hola, Núria. La Laia està molt il·lusionada. On aneu?\nA: Anem al Parc Natural del Montseny, dijous. Sortim de l'escola a les vuit del matí i tornem cap a les cinc de la tarda.\nB: I què ha de portar?\nA: Esmorzar, dinar, una ampolla d'aigua i roba còmoda. Sobretot calçat tancat, perquè farem una caminada d'unes dues hores.\nB: D'acord. I si plou?\nA: Si plou molt, ho farem un altre dia i us avisarem per correu electrònic dimecres al vespre.\nB: Perfecte. Una altra cosa: la Laia és al·lèrgica als fruits secs. Ho teniu apuntat?\nA: Sí, ho tenim a la fitxa. Ho recordaré a la monitora.\nB: I quant costa l'excursió?\nA: Dotze euros, que inclouen l'autocar. Es paguen a través de l'aplicació de l'escola abans de dimarts.\nB: Molt bé, ho faré avui. Gràcies, Núria.",
+  "paraules": 153,
+  "veus": [
+    "central",
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "On van d'excursió?",
+      "opcions": [
+        "A la platja",
+        "Al Parc Natural del Montseny",
+        "A un museu de Barcelona"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Què ha de portar la Laia, sobretot?",
+      "opcions": [
+        "Calçat tancat",
+        "Un paraigua",
+        "Sabates obertes"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què passarà si plou molt?",
+      "opcions": [
+        "L'excursió es farà igualment",
+        "Es farà dins de l'escola",
+        "S'ajornarà i avisaran les famílies per correu"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Com s'ha de pagar l'excursió?",
+      "opcions": [
+        "En efectiu a la tutora",
+        "Per l'aplicació de l'escola abans de dimarts",
+        "El mateix dia, a l'autocar"
+      ],
+      "resposta": 1
+    }
+  ],
+  "revisio": "sessio"
+}

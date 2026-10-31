@@ -1,0 +1,66 @@
+{
+  "id": "b2-co-0004",
+  "nivell": "B2",
+  "area": "co",
+  "titol": "Empadronar-se a l'Oficina d'Atenció Ciutadana",
+  "genere": "diàleg breu",
+  "text": "A: Bon dia. Vinc a empadronar-me. Acabo d'arribar a viure a la ciutat.\nB: Bon dia. Té cita prèvia?\nA: Sí, a les deu i quart. Em dic Omar Benali.\nB: Perfecte, ja el veig. Porta el document d'identitat i el contracte de lloguer?\nA: Porto el passaport i el contracte. El NIE encara l'estic tramitant.\nB: Amb el passaport n'hi ha prou. El contracte està al seu nom?\nA: No, està a nom de la meva dona. Ella ja està empadronada aquí des del mes passat.\nB: Llavors necessito una autorització signada per ella i una còpia del seu document. La té?\nA: No, no la tinc. No sabia que calia.\nB: No es preocupi. Li dono el full d'autorització, ella l'omple i el signa, i me'l pot portar sense cita a la bústia de l'entrada o enviar-lo pel tràmit en línia. Quan el tinguem, el donarem d'alta amb la data d'avui.\nA: Ah, molt bé. I el certificat d'empadronament, quan el podré tenir?\nB: Un cop feta l'alta, el pot descarregar immediatament des del web amb el seu passaport, o venir a buscar-lo aquí.\nA: Perfecte. Gràcies per l'ajuda.",
+  "paraules": 191,
+  "veus": [
+    "nord-occidental",
+    "central"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Què vol fer l'Omar?",
+      "opcions": [
+        "Renovar el passaport",
+        "Demanar el NIE",
+        "Empadronar-se"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin problema hi ha amb el contracte de lloguer?",
+      "opcions": [
+        "No està al seu nom",
+        "Està caducat",
+        "No l'ha portat"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què li falta per completar el tràmit?",
+      "opcions": [
+        "El NIE",
+        "Una factura de la llum",
+        "Una autorització signada per la seva dona i una còpia del seu document"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Com pot lliurar el document que falta?",
+      "opcions": [
+        "Només amb una nova cita prèvia",
+        "A la bústia de l'entrada o pel tràmit en línia",
+        "Per correu postal certificat"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Amb quina data es farà l'alta al padró?",
+      "opcions": [
+        "Amb la data d'avui",
+        "Amb la data en què lliuri l'autorització",
+        "Amb la data del mes passat"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

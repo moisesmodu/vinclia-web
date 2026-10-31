@@ -1,0 +1,20 @@
+{
+  "id": "pronoms-en-hi",
+  "punt": "pronoms-febles",
+  "nivells": ["B1", "B2", "C1", "C2"],
+  "titol": { "ca": "Els pronoms febles en i hi" },
+  "regla": {
+    "ca": "El pronom en substitueix un complement introduït per de (o un complement directe indeterminat: 'En vull dos'). El pronom hi substitueix complements introduïts per a, en, amb, per… i els complements de lloc que no van amb de ('Hi vaig demà'). El castellà no té aquests pronoms: per això els castellanoparlants tendeixen a ometre'ls.",
+    "es": "El pronombre en sustituye un complemento introducido por de (o un complemento directo indeterminado: 'En vull dos'). El pronombre hi sustituye complementos introducidos por a, en, amb, per… y los complementos de lugar que no van con de ('Hi vaig demà'). El castellano no tiene estos pronombres: por eso quien piensa en castellano tiende a omitirlos.",
+    "en": "The pronoun en replaces a complement introduced by de (or an indefinite direct object: 'En vull dos' = I want two of them). The pronoun hi replaces complements introduced by a, en, amb, per… and place complements not introduced by de ('Hi vaig demà' = I'm going there tomorrow). Spanish has no equivalent, so Spanish speakers tend to drop them.",
+    "ar": "الضمير en يحلّ محلّ متمّم يبدأ بـ de (أو مفعول به غير محدّد: 'En vull dos' = أريد اثنين منها). الضمير hi يحلّ محلّ متمّمات تبدأ بـ a أو en أو amb أو per ومتمّمات المكان التي لا تبدأ بـ de ('Hi vaig demà' = سأذهب إلى هناك غدًا). لا يوجد مقابل لهما في الإسبانية، لذلك يميل المتحدثون بها إلى حذفهما.",
+    "ro": "Pronumele en înlocuiește un complement introdus de de (sau un complement direct nedeterminat: 'En vull dos' = vreau două dintre ele). Pronumele hi înlocuiește complemente introduse de a, en, amb, per… și complementele de loc care nu încep cu de ('Hi vaig demà' = merg acolo mâine). Spaniola nu are aceste pronume, de aceea vorbitorii de spaniolă tind să le omită.",
+    "fr": "Le pronom en remplace un complément introduit par de (ou un complément d'objet direct indéterminé : « En vull dos » = j'en veux deux). Le pronom hi remplace les compléments introduits par a, en, amb, per… et les compléments de lieu sans de (« Hi vaig demà » = j'y vais demain). Ils fonctionnent comme « en » et « y » en français ; l'espagnol ne les a pas."
+  },
+  "exemples": [
+    { "malament": "Vaig a Lleida i torno de Lleida a la tarda.", "be": "Vaig a Lleida i en torno a la tarda." },
+    { "malament": "Has anat al metge? Sí, he anat aquest matí.", "be": "Has anat al metge? Sí, hi he anat aquest matí." },
+    { "malament": "Tens pomes? Vull dues.", "be": "Tens pomes? En vull dues." }
+  ],
+  "font": { "nom": "Optimot, fitxes 7405/2 i 7406/2; GIEC §18", "url": "https://aplicacions.llengua.gencat.cat/llc/AppJava/index.html?input_cercar=pronom+en+hi" }
+}

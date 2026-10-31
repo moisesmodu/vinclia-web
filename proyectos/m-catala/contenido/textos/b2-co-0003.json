@@ -1,0 +1,66 @@
+{
+  "id": "b2-co-0003",
+  "nivell": "B2",
+  "area": "co",
+  "titol": "Dos veïns parlen de la inspecció de l'edifici",
+  "genere": "diàleg breu",
+  "text": "A: Hola, Rosa. Ja has vist la convocatòria de la reunió de dijous?\nB: Sí, l'he vista. Però no entenc gaire què és això de la inspecció tècnica.\nA: És la ITE, la inspecció tècnica de l'edifici. Com que l'edifici té més de quaranta-cinc anys, és obligatòria. Ha de venir un arquitecte a mirar la façana, el terrat, les canonades, i fer un informe.\nB: I si l'informe diu que hi ha problemes?\nA: Doncs els haurem d'arreglar, perquè si no, l'Ajuntament pot posar una multa. De fet, per això convoquem la reunió: hem rebut tres pressupostos i n'hem de triar un.\nB: Quant costa, més o menys?\nA: La inspecció, entre mil i mil quatre-cents euros, segons el pressupost. Dividit entre dotze veïns, no és gaire. El que pot ser car són les obres, si en calen.\nB: Ja m'ho imagino. El terrat fa anys que perd aigua quan plou fort.\nA: Doncs això sortirà segur a l'informe. Per això volem demanar també l'ajut de rehabilitació de la Generalitat, que cobreix fins a un quaranta per cent.\nB: Això sí que m'interessa. Dijous a quina hora és?\nA: A les vuit del vespre, al local del primer. Vine, que es vota i cal majoria.",
+  "paraules": 205,
+  "veus": [
+    "central",
+    "nord-occidental"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Per què és obligatòria la inspecció?",
+      "opcions": [
+        "Perquè ho demana l'assegurança",
+        "Perquè l'edifici té més de quaranta-cinc anys",
+        "Perquè hi ha hagut un incendi"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p2",
+      "enunciat": "Quin és l'objectiu de la reunió de dijous?",
+      "opcions": [
+        "Triar un dels tres pressupostos",
+        "Decidir si es fa la inspecció o no",
+        "Canviar de president de la comunitat"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p3",
+      "enunciat": "Què pot ser car, segons el veí?",
+      "opcions": [
+        "La inspecció",
+        "La multa de l'Ajuntament",
+        "Les obres que calgui fer després"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p4",
+      "enunciat": "Què passa amb el terrat?",
+      "opcions": [
+        "L'acaben de reparar",
+        "Hi ha goteres quan plou fort",
+        "S'ha ensorrat parcialment"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p5",
+      "enunciat": "Quin percentatge pot cobrir l'ajut de la Generalitat?",
+      "opcions": [
+        "Fins al 40 %",
+        "Fins al 14 %",
+        "Fins al 100 %"
+      ],
+      "resposta": 0
+    }
+  ],
+  "revisio": "sessio"
+}

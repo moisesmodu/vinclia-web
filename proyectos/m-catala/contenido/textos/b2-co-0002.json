@@ -1,0 +1,66 @@
+{
+  "id": "b2-co-0002",
+  "nivell": "B2",
+  "area": "co",
+  "titol": "Visita a un pis de lloguer",
+  "genere": "diàleg breu",
+  "text": "A: Bon dia, soc l'Anna. Havíem quedat per veure el pis del carrer Major.\nB: Sí, sí, passa. Com veus, és un segon sense ascensor, però les escales són amples. Té dues habitacions, una de doble i una d'individual, i el menjador dona al carrer.\nA: Fa molta llum, sí. I la cuina?\nB: És petita, però està reformada de fa tres anys. Els electrodomèstics hi queden: nevera, rentadora i forn.\nA: El preu de l'anunci són vuit-cents cinquanta euros. Hi va inclosa alguna cosa?\nB: Hi va inclosa la comunitat. L'aigua, la llum i el gas van a part, i la fibra l'hauries de contractar tu.\nA: I de fiança?\nB: Un mes, com marca la llei, més el mes en curs. L'agència no cobra honoraris a l'inquilí.\nA: Molt bé. Accepteu animals? Tinc un gat.\nB: Un gat sí, sense problema. Gossos no, perquè la comunitat ho té prohibit.\nA: Perfecte. Quina documentació necessiteu?\nB: Les tres últimes nòmines i el DNI. Si tot està bé, podríem signar la setmana vinent.\nA: D'acord, us ho envio aquesta tarda.",
+  "paraules": 179,
+  "veus": [
+    "nord-occidental",
+    "central"
+  ],
+  "preguntes": [
+    {
+      "id": "p1",
+      "enunciat": "Com és el pis?",
+      "opcions": [
+        "Un primer amb terrassa",
+        "Un segon amb ascensor",
+        "Un segon sense ascensor"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p2",
+      "enunciat": "Què inclou el preu del lloguer?",
+      "opcions": [
+        "L'aigua i la llum",
+        "La comunitat",
+        "La fibra"
+      ],
+      "resposta": 1
+    },
+    {
+      "id": "p3",
+      "enunciat": "Quant ha de pagar l'Anna per entrar a viure-hi?",
+      "opcions": [
+        "Un mes de fiança i el mes en curs",
+        "Dos mesos de fiança",
+        "Un mes de fiança més els honoraris de l'agència"
+      ],
+      "resposta": 0
+    },
+    {
+      "id": "p4",
+      "enunciat": "Quins animals accepta la comunitat?",
+      "opcions": [
+        "Gats i gossos",
+        "Cap animal",
+        "Només gats"
+      ],
+      "resposta": 2
+    },
+    {
+      "id": "p5",
+      "enunciat": "Què ha d'enviar l'Anna?",
+      "opcions": [
+        "Un aval bancari",
+        "Les tres últimes nòmines i el DNI",
+        "El contracte de feina"
+      ],
+      "resposta": 1
+    }
+  ],
+  "revisio": "sessio"
+}

@@ -1,0 +1,126 @@
+{
+  "slug": "probabilitat-d-aprovar-catala-diagnostic",
+  "nivell": "tots",
+  "tipus": "guia",
+  "titol": {
+    "ca": "Probabilitat d'aprovar el català: el diagnòstic gratuït",
+    "es": "Probabilidad de aprobar el catalán: el diagnóstico gratis"
+  },
+  "descripcio": {
+    "ca": "Com funciona el diagnòstic gratuït d'Aprova: 12 minuts, adaptatiu, sense registre, i com es calcula la probabilitat d'aprovar el B1, B2 o C1 per àrees.",
+    "es": "Cómo funciona el diagnóstico gratuito de Aprova: 12 minutos, adaptativo, sin registro, y cómo calcula la probabilidad de aprobar el B1, B2 o C1 por áreas."
+  },
+  "paraulesClau": {
+    "ca": [
+      "prova de nivell català gratis",
+      "test de nivell català",
+      "quin nivell de català tinc",
+      "diagnòstic català",
+      "probabilitat aprovar C1"
+    ],
+    "es": [
+      "prueba de nivel catalán gratis",
+      "test de nivel catalán",
+      "qué nivel de catalán tengo",
+      "diagnóstico catalán",
+      "probabilidad aprobar C1"
+    ]
+  },
+  "seccions": {
+    "ca": [
+      {
+        "h2": "Què és el diagnòstic i per què és gratis",
+        "text": "El **diagnòstic d'Aprova** és una prova de nivell de **12 a 15 minuts**, pensada per respondre una sola pregunta: *si em presentés avui a l'examen de B1, B2 o C1, quina probabilitat tindria d'aprovar?* No et dona un «nivell aproximat» ni una puntuació abstracta: et dona un **percentatge**, la nota prevista a cada àrea de l'examen i els tres punts febles concrets.\n\nÉs **gratuït i no demana registre**. Fas la prova, veus el resultat complet i després decideixes si vols un compte per guardar-lo i seguir el pla. Això no és un truc de màrqueting sinó el manifest de la casa: la part gratis ha de resoldre alguna cosa de debò, i saber on ets abans de pagar una taxa de 57 € o una matrícula de 262 € és resoldre alguna cosa.\n\nEl pots repetir **cada mes** per veure l'evolució (la probabilitat puja o baixa amb el que fas), i és el primer pas de qualsevol guia d'aquest web, des de [com aprovar el C1 en tres mesos](/ca/guia/com-aprovar-el-c1-de-catala-en-3-mesos) fins a [quin nivell demanen les oposicions](/ca/guia/quin-nivell-de-catala-demanen-les-oposicions)."
+      },
+      {
+        "h2": "Què fas durant els 12 minuts",
+        "text": "El diagnòstic recorre les àrees de l'examen real, amb el mateix tipus de tasques però en versió curta:\n\n1. **Comprensió lectora** (2–3 min): un text breu del nivell amb preguntes.\n2. **Ús de la llengua** (4–5 min): un bloc **adaptatiu** d'ítems (buits, transformació, detecció de castellanismes, lèxic). Si encertes, la dificultat puja; si falles, baixa. Així, amb una tercera part dels ítems d'un test clàssic, el sistema sap on és el teu sostre.\n3. **Expressió escrita** (3 min): un text curt (60–80 paraules) a partir d'una situació, corregit per criteris (adequació, coherència, correcció, riquesa).\n4. **Expressió oral** (2 min): una lectura en veu alta i un monòleg de 60 segons, amb reconeixement de veu en català que puntua la pronúncia per fonema.\n\nAbans de començar tries el certificat (B1, B2 o C1), la convocatòria que tens al cap, el motiu (oposicions, feina, residència, personal) i la teva llengua materna, que serveix per triar el catàleg d'interferències (els errors d'un castellanoparlant no són els d'un arabòfon ni d'un romanès)."
+      },
+      {
+        "h2": "Com es calcula la probabilitat d'aprovar",
+        "text": "La probabilitat no surt d'una fórmula màgica sinó de tres coses juntes:\n\n**1. La nota prevista per àrea.** Cada àrea del diagnòstic es puntua en l'**escala de l'examen real**: l'ús de la llengua, per la dificultat dels ítems que encertes (un model d'estimació de capacitat, el mateix principi que els tests adaptatius d'idiomes); l'escrit i l'oral, per criteris de la rúbrica oficial. La nota es trasllada als punts de l'examen (per exemple, al C1: x de 40 a l'escrita, y de 45 a l'ús de la llengua, z de 30 a l'oral).\n\n**2. Els pesos i mínims oficials.** Al C1: 40/30/30, apte amb 65 % global i mínims de 25/40 i 19/30. Al B2 i B1: 60 % a l'oral i 60 % a la resta. Una persona pot tenir un 70 % global i probabilitat baixa si l'oral queda a 17 de 30. El panell t'ho mostra per separat.\n\n**3. La incertesa.** Un diagnòstic de 12 minuts no és un examen de tres hores. El sistema calcula un interval per a cada àrea i la probabilitat final és la proporció d'escenaris en què compleixes **totes** les condicions alhora. Per això veus «probabilitat d'aprovar avui: 38 %» i no «nota: 6,2». I per això puja quan fas simulacres sencers: cada un afegeix dades i estreny l'interval.\n\nEl detall de cada examen el tens a [B1](/ca/guia/examen-b1-catala-2027), [B2](/ca/guia/examen-b2-catala-2027-prova) i [C1](/ca/guia/examen-c1-catala-2027-model)."
+      },
+      {
+        "h2": "Què rebs al final i què en fas",
+        "text": "En acabar veus una pantalla amb:\n\n- **Probabilitat d'aprovar avui** (un percentatge) per al certificat que has triat.\n- **Nota prevista per àrea** sobre els punts reals de l'examen, amb els mínims marcats.\n- **Tres punts febles** concrets (per exemple: pronoms *en* i *hi*, *per/per a*, extensió insuficient a l'escrit), cadascun amb la seva guia.\n- **Tres sons** que et convé treballar (vocal neutra, vocals obertes, ela geminada, essa sonora…).\n- **Una recomanació de convocatòria** segons el calendari: si la DPL del maig és realista o si val més apuntar a la universitat del juny.\n\nA partir d'aquí, si vols, crees el compte i l'app munta el **pla cap a la data**: sessions de 10 a 20 minuts amb el 40 % dedicat als teus errors, el 40 % a l'àrea més feble i el 20 % a producció. Tot el que surt del diagnòstic ja és dins del pla.\n\nEls resultats són teus: no es venen ni es comparteixen, i pots esborrar-los quan vulguis."
+      },
+      {
+        "h2": "Honestedat: el que el diagnòstic no és",
+        "text": "El diagnòstic **no és un certificat**, no substitueix l'examen i no et promet l'aprovat. És una estimació ben feta, amb l'estructura i els mínims oficials, que millora com més dades li dones. Un 80 % vol dir que, amb el que has mostrat avui, aprovaries en quatre de cada cinc escenaris; no vol dir que puguis deixar d'estudiar.\n\nTampoc no és infal·lible en la correcció: la IA marca només els errors en què té confiança alta, i quan dubta ho diu («possible error») en comptes de penalitzar-te. El contingut el revisa per mostreig una filòloga cada setmana, i abans de llançar l'app, 20 candidats reals al C1 han comparat la correcció de l'app amb la d'un professor.\n\nI una última cosa: el diagnòstic és gratis i ho continuarà sent. Després, un simulacre complet al mes, tres correccions i 10 minuts d'oral també són gratis; Premium costa 9,99 €/mes, 59,99 €/any o 24,99 € el passi de convocatòria de tres mesos, amb el preu a la vista des de la primera pantalla i cancel·lació amb un clic. Fet a Lleida."
+      }
+    ],
+    "es": [
+      {
+        "h2": "Qué es el diagnóstico y por qué es gratis",
+        "text": "El **diagnóstico de Aprova** es una prueba de nivel de **12 a 15 minutos**, pensada para responder una sola pregunta: *si me presentara hoy al examen de B1, B2 o C1, ¿qué probabilidad tendría de aprobar?* No te da un «nivel aproximado» ni una puntuación abstracta: te da un **porcentaje**, la nota prevista en cada área del examen y los tres puntos débiles concretos.\n\nEs **gratuito y no pide registro**. Haces la prueba, ves el resultado completo y después decides si quieres una cuenta para guardarlo y seguir el plan. Esto no es un truco de marketing sino el manifiesto de la casa: la parte gratis tiene que resolver algo de verdad, y saber dónde estás antes de pagar una tasa de 57 € o una matrícula de 262 € es resolver algo.\n\nLo puedes repetir **cada mes** para ver la evolución (la probabilidad sube o baja con lo que haces), y es el primer paso de cualquier guía de esta web, desde [cómo aprobar el C1 en tres meses](/es/guia/com-aprovar-el-c1-de-catala-en-3-mesos) hasta [qué nivel piden las oposiciones](/es/guia/quin-nivell-de-catala-demanen-les-oposicions)."
+      },
+      {
+        "h2": "Qué haces durante los 12 minutos",
+        "text": "El diagnóstico recorre las áreas del examen real, con el mismo tipo de tareas pero en versión corta:\n\n1. **Comprensión lectora** (2–3 min): un texto breve del nivel con preguntas.\n2. **Uso de la lengua** (4–5 min): un bloque **adaptativo** de ítems (huecos, transformación, detección de castellanismos, léxico). Si aciertas, la dificultad sube; si fallas, baja. Así, con una tercera parte de los ítems de un test clásico, el sistema sabe dónde está tu techo.\n3. **Expresión escrita** (3 min): un texto corto (60–80 palabras) a partir de una situación, corregido por criterios (adecuación, coherencia, corrección, riqueza).\n4. **Expresión oral** (2 min): una lectura en voz alta y un monólogo de 60 segundos, con reconocimiento de voz en catalán que puntúa la pronunciación por fonema.\n\nAntes de empezar eliges el certificado (B1, B2 o C1), la convocatoria que tienes en mente, el motivo (oposiciones, trabajo, residencia, personal) y tu lengua materna, que sirve para elegir el catálogo de interferencias (los errores de un castellanohablante no son los de un arabófono ni de un rumano)."
+      },
+      {
+        "h2": "Cómo se calcula la probabilidad de aprobar",
+        "text": "La probabilidad no sale de una fórmula mágica sino de tres cosas juntas:\n\n**1. La nota prevista por área.** Cada área del diagnóstico se puntúa en la **escala del examen real**: el uso de la lengua, por la dificultad de los ítems que aciertas (un modelo de estimación de capacidad, el mismo principio que los tests adaptativos de idiomas); el escrito y la oral, por criterios de la rúbrica oficial. La nota se traslada a los puntos del examen (por ejemplo, en el C1: x de 40 en la escrita, y de 45 en el uso de la lengua, z de 30 en la oral).\n\n**2. Los pesos y mínimos oficiales.** En el C1: 40/30/30, apto con 65 % global y mínimos de 25/40 y 19/30. En el B2 y B1: 60 % en la oral y 60 % en el resto. Una persona puede tener un 70 % global y probabilidad baja si la oral queda en 17 de 30. El panel te lo muestra por separado.\n\n**3. La incertidumbre.** Un diagnóstico de 12 minutos no es un examen de tres horas. El sistema calcula un intervalo para cada área y la probabilidad final es la proporción de escenarios en que cumples **todas** las condiciones a la vez. Por eso ves «probabilidad de aprobar hoy: 38 %» y no «nota: 6,2». Y por eso sube cuando haces simulacros enteros: cada uno añade datos y estrecha el intervalo.\n\nEl detalle de cada examen lo tienes en [B1](/es/guia/examen-b1-catala-2027), [B2](/es/guia/examen-b2-catala-2027-prova) y [C1](/es/guia/examen-c1-catala-2027-model)."
+      },
+      {
+        "h2": "Qué recibes al final y qué haces con ello",
+        "text": "Al acabar ves una pantalla con:\n\n- **Probabilidad de aprobar hoy** (un porcentaje) para el certificado que has elegido.\n- **Nota prevista por área** sobre los puntos reales del examen, con los mínimos marcados.\n- **Tres puntos débiles** concretos (por ejemplo: pronombres *en* e *hi*, *per/per a*, extensión insuficiente en el escrito), cada uno con su guía.\n- **Tres sonidos** que te conviene trabajar (vocal neutra, vocales abiertas, ele geminada, ese sonora…).\n- **Una recomendación de convocatoria** según el calendario: si la DPL de mayo es realista o si vale más apuntar a la universidad de junio.\n\nA partir de ahí, si quieres, creas la cuenta y la app monta el **plan hacia la fecha**: sesiones de 10 a 20 minutos con el 40 % dedicado a tus errores, el 40 % al área más débil y el 20 % a producción. Todo lo que sale del diagnóstico ya está dentro del plan.\n\nLos resultados son tuyos: no se venden ni se comparten, y puedes borrarlos cuando quieras."
+      },
+      {
+        "h2": "Honestidad: lo que el diagnóstico no es",
+        "text": "El diagnóstico **no es un certificado**, no sustituye el examen y no te promete el aprobado. Es una estimación bien hecha, con la estructura y los mínimos oficiales, que mejora cuantos más datos le das. Un 80 % significa que, con lo que has mostrado hoy, aprobarías en cuatro de cada cinco escenarios; no significa que puedas dejar de estudiar.\n\nTampoco es infalible en la corrección: la IA marca solo los errores en los que tiene confianza alta, y cuando duda lo dice («posible error») en lugar de penalizarte. El contenido lo revisa por muestreo una filóloga cada semana, y antes de lanzar la app, 20 candidatos reales al C1 han comparado la corrección de la app con la de un profesor.\n\nY una última cosa: el diagnóstico es gratis y lo seguirá siendo. Después, un simulacro completo al mes, tres correcciones y 10 minutos de oral también son gratis; Premium cuesta 9,99 €/mes, 59,99 €/año o 24,99 € el pase de convocatoria de tres meses, con el precio a la vista desde la primera pantalla y cancelación con un clic. Hecho en Lleida."
+      }
+    ]
+  },
+  "faq": {
+    "ca": [
+      {
+        "p": "El diagnòstic és realment gratuït?",
+        "r": "Sí, i sense registre. Fas la prova, veus el resultat complet (probabilitat, nota per àrea, punts febles) i després decideixes si vols un compte."
+      },
+      {
+        "p": "Quant dura el diagnòstic?",
+        "r": "Entre 12 i 15 minuts: lectura, un bloc adaptatiu d'ús de la llengua, un escrit curt corregit i una lectura en veu alta amb un monòleg de 60 segons."
+      },
+      {
+        "p": "Què vol dir «probabilitat d'aprovar: 38 %»?",
+        "r": "Que, amb el que has mostrat avui i tenint en compte la incertesa d'una prova curta, compliries totes les condicions d'apte (global i mínims per àrea) en un 38 % dels escenaris."
+      },
+      {
+        "p": "El resultat del diagnòstic és un certificat?",
+        "r": "No. És una estimació per orientar-te; el certificat només el dona l'examen oficial de la DPL, el CPNL, les universitats o Salut."
+      },
+      {
+        "p": "Per a quins nivells funciona?",
+        "r": "B1, B2 i C1. El C2 arriba a la segona fase de l'app."
+      }
+    ],
+    "es": [
+      {
+        "p": "¿El diagnóstico es realmente gratuito?",
+        "r": "Sí, y sin registro. Haces la prueba, ves el resultado completo (probabilidad, nota por área, puntos débiles) y después decides si quieres una cuenta."
+      },
+      {
+        "p": "¿Cuánto dura el diagnóstico?",
+        "r": "Entre 12 y 15 minutos: lectura, un bloque adaptativo de uso de la lengua, un escrito corto corregido y una lectura en voz alta con un monólogo de 60 segundos."
+      },
+      {
+        "p": "¿Qué significa «probabilidad de aprobar: 38 %»?",
+        "r": "Que, con lo que has mostrado hoy y teniendo en cuenta la incertidumbre de una prueba corta, cumplirías todas las condiciones de apto (global y mínimos por área) en un 38 % de los escenarios."
+      },
+      {
+        "p": "¿El resultado del diagnóstico es un certificado?",
+        "r": "No. Es una estimación para orientarte; el certificado solo lo da el examen oficial de la DPL, el CPNL, las universidades o Salut."
+      },
+      {
+        "p": "¿Para qué niveles funciona?",
+        "r": "B1, B2 y C1. El C2 llega en la segunda fase de la app."
+      }
+    ]
+  },
+  "cta": {
+    "ca": "Fes el diagnòstic gratuït: en 12 minuts saps la teva probabilitat d'aprovar.",
+    "es": "Haz el diagnóstico gratuito: en 12 minutos sabes tu probabilidad de aprobar."
+  },
+  "revisio": "sessio"
+}

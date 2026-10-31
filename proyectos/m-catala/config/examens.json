@@ -1,0 +1,71 @@
+{
+  "_escala": "Totes les notes de l'app són percentatges 0–100. parts.<part>.minim i aptoGlobal són percentatges de la part i del global (B1/B2: 60 % de cada part). Quan el mínim oficial és en punts d'una àrea (C1: 25/40 a l'àrea 1, 19/30 a l'àrea 3) es declara NOMÉS a arees[].minimPunts/puntsMax i la part corresponent porta minim=null (parts.<part>.minimPunts és text informatiu): així cap condició es compta dues vegades a lib/motor/diagnostic.ts.",
+  "_font": "M-CATALA-PRODUCTE.md §2 i fitxa M del panell (estructura oficial 2026 de la DPL). Els camps amb verificat=false són orientatius fins que la tasca setmanal els contrasti amb el model de prova oficial.",
+  "nivells": {
+    "B1": {
+      "nom": { "ca": "B1 · Certificat de nivell elemental", "es": "B1 · Certificado de nivel elemental" },
+      "curt": "B1",
+      "actiu": true,
+      "aptoGlobal": null,
+      "parts": {
+        "escrita": { "pes": 75, "minim": 60 },
+        "oral": { "pes": 25, "minim": 60 }
+      },
+      "arees": [
+        { "id": "co", "part": "escrita", "nom": { "ca": "Comprensió oral", "es": "Comprensión oral" }, "pes": 25, "minuts": 40, "items": 20, "verificat": true },
+        { "id": "lectura", "part": "escrita", "nom": { "ca": "Comprensió lectora", "es": "Comprensión lectora" }, "pes": 25, "minuts": 45, "items": 20, "verificat": true },
+        { "id": "escrit", "part": "escrita", "nom": { "ca": "Expressió escrita", "es": "Expresión escrita" }, "pes": 12.5, "minuts": 40, "tasques": [{ "tipus": "correu", "paraules": 100 }], "verificat": true },
+        { "id": "us", "part": "escrita", "nom": { "ca": "Gramàtica i vocabulari", "es": "Gramática y vocabulario" }, "pes": 12.5, "minuts": 30, "items": 30, "verificat": true },
+        { "id": "oral", "part": "oral", "nom": { "ca": "Expressió oral", "es": "Expresión oral" }, "pes": 25, "minuts": 15, "tasques": [{ "tipus": "conversa" }, { "tipus": "situacio" }], "verificat": false }
+      ],
+      "usos": { "ca": "TCAI i zelador de l'ICS; referència per als informes d'arrelament", "es": "TCAI y celador del ICS; referencia para los informes de arraigo" }
+    },
+    "B2": {
+      "nom": { "ca": "B2 · Certificat de nivell intermedi", "es": "B2 · Certificado de nivel intermedio" },
+      "curt": "B2",
+      "actiu": true,
+      "aptoGlobal": null,
+      "parts": {
+        "escrita": { "pes": 80, "minim": 60 },
+        "oral": { "pes": 20, "minim": 60 }
+      },
+      "arees": [
+        { "id": "co", "part": "escrita", "nom": { "ca": "Comprensió oral", "es": "Comprensión oral" }, "pes": 20, "minuts": 35, "items": 15, "detall": { "ca": "5 diàlegs breus amb 3 opcions i una entrevista amb resposta oberta" }, "verificat": false },
+        { "id": "lectura", "part": "escrita", "nom": { "ca": "Comprensió lectora", "es": "Comprensión lectora" }, "pes": 20, "minuts": 50, "items": 20, "verificat": false },
+        { "id": "escrit", "part": "escrita", "nom": { "ca": "Expressió escrita", "es": "Expresión escrita" }, "pes": 20, "minuts": 60, "tasques": [{ "tipus": "text-informatiu", "paraules": 60 }, { "tipus": "correu", "paraules": 100 }], "verificat": true },
+        { "id": "us", "part": "escrita", "nom": { "ca": "Gramàtica i vocabulari", "es": "Gramática y vocabulario" }, "pes": 20, "minuts": 40, "items": 40, "verificat": false },
+        { "id": "oral", "part": "oral", "nom": { "ca": "Expressió oral", "es": "Expresión oral" }, "pes": 20, "minuts": 20, "tasques": [{ "tipus": "imatge" }, { "tipus": "negociacio-parelles" }], "verificat": true }
+      ],
+      "usos": { "ca": "Cos subaltern de la Generalitat, tècnics sanitaris, ajuntaments", "es": "Cuerpo subalterno de la Generalitat, técnicos sanitarios, ayuntamientos" }
+    },
+    "C1": {
+      "nom": { "ca": "C1 · Certificat de nivell de suficiència", "es": "C1 · Certificado de nivel de suficiencia" },
+      "curt": "C1",
+      "actiu": true,
+      "aptoGlobal": 65,
+      "parts": {
+        "escrita": { "pes": 70, "minim": null, "minimPunts": "25 de 40 a l'àrea 1 (expressió escrita)" },
+        "oral": { "pes": 30, "minim": null, "minimPunts": "19 de 30 a l'àrea 3 (expressió oral)" }
+      },
+      "arees": [
+        { "id": "escrit", "part": "escrita", "nom": { "ca": "Àrea 1 · Comprensió lectora i expressió escrita", "es": "Área 1 · Comprensión lectora y expresión escrita" }, "pes": 40, "minuts": 90, "minimPunts": 25, "puntsMax": 40, "tasques": [{ "tipus": "argumentatiu-3-fonts", "paraules": 250 }], "verificat": true },
+        { "id": "us", "part": "escrita", "nom": { "ca": "Àrea 2 · Ús de la llengua", "es": "Área 2 · Uso de la lengua" }, "pes": 30, "minuts": 60, "items": 45, "detall": { "ca": "3 exercicis de buits, 2 de morfosintaxi i 1 de lèxic" }, "verificat": true },
+        { "id": "oral", "part": "oral", "nom": { "ca": "Àrea 3 · Expressió oral", "es": "Área 3 · Expresión oral" }, "pes": 30, "minuts": 20, "preparacio": 10, "minimPunts": 19, "puntsMax": 30, "tasques": [{ "tipus": "monoleg-2-imatges" }, { "tipus": "dialeg" }], "verificat": true }
+      ],
+      "usos": { "ca": "Cossos A1, A2 i C1 de la Generalitat, docents, infermeria i administratius de l'ICS, Mossos", "es": "Cuerpos A1, A2 y C1 de la Generalitat, docentes, enfermería y administrativos del ICS, Mossos" }
+    },
+    "C2": {
+      "nom": { "ca": "C2 · Certificat de nivell superior", "es": "C2 · Certificado de nivel superior" },
+      "curt": "C2",
+      "actiu": false,
+      "sessio": 2,
+      "aptoGlobal": 70,
+      "parts": { "escrita": { "pes": 70, "minim": null }, "oral": { "pes": 30, "minim": null } },
+      "arees": [
+        { "id": "escrit", "part": "escrita", "nom": { "ca": "Prova escrita (text argumentatiu i ús de la llengua)", "es": "Prueba escrita (texto argumentativo y uso de la lengua)" }, "pes": 70, "minuts": 140, "verificat": false },
+        { "id": "oral", "part": "oral", "nom": { "ca": "Prova oral (síntesi d'arguments)", "es": "Prueba oral (síntesis de argumentos)" }, "pes": 30, "minuts": 40, "preparacio": 30, "verificat": false }
+      ],
+      "usos": { "ca": "Docents nous des del 2025-26; mèrit a la Generalitat, Mossos i docència", "es": "Docentes nuevos desde 2025-26; mérito en Generalitat, Mossos y docencia" }
+    }
+  }
+}

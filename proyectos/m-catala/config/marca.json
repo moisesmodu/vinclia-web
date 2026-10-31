@@ -1,0 +1,35 @@
+{
+  "nombre": "Aprova",
+  "familia": "Nuevo en España",
+  "lema": {
+    "ca": "El teu certificat de català, del B1 al C2.",
+    "es": "Tu certificado de catalán, del B1 al C2.",
+    "en": "Your official Catalan certificate, B1 to C2."
+  },
+  "sello": {
+    "ca": "Fet a Lleida · Preu clar · Cancel·la amb un clic",
+    "es": "Hecho en Lleida · Precio claro · Cancela en un clic"
+  },
+  "colores": {
+    "primario": "#2140D6",
+    "oscuro": "#141C3A",
+    "fondo": "#FFFFFF",
+    "acento": "#FFF056",
+    "apte": "#138A5C",
+    "texto": "#141C3A"
+  },
+  "tipografia": {
+    "titulos": "Archivo Expanded ExtraBold",
+    "texto": "Archivo"
+  },
+  "color": "#2140D6",
+  "dominio": "aprova-catala.vercel.app",
+  "dominiosPropuestos": [
+    "aprova.cat",
+    "aprova.app"
+  ],
+  "pais": "es",
+  "fuente": "MARCA.md (identitat pròpia aprovada per Moisés el 28/10/2026; substitueix els colors de MARCAS.md §4)",
+  "nota": "Dominio provisional gratuito (.vercel.app). Cambiar aquí y en NEXT_PUBLIC_URL cuando Moisés compre aprova.cat.",
+  "personaje": "En Volat, el punt volat (l·l) amb cara. Vegeu MARCA.md."
+}

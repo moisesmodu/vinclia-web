@@ -1230,7 +1230,7 @@
     "clave": "m-catala",
     "letra": "M",
     "nombre": "Certificados de catalán (B1 a C2)",
-    "marca": "Aprova · familia Nuevo en España",
+    "marca": "Aprova",
     "resumen": "La app para aprobar los certificados oficiales de catalán, del B1 al C2: entrena exactamente las partes de cada examen con sus pesos y mínimos y dice cada día la probabilidad de aprobar. Lo mejor de Duolingo, Busuu, ELSA, Langua, Kwiziq, Anki y Magoosh aplicado al examen de la DPL.",
     "estado": "pendiente",
     "orden": 5,
@@ -1272,6 +1272,46 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Aprova («El teu certificat de català, del B1 al C2.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Sesión 1 construida: entrada sin registro, diagnóstico adaptativo con probabilidad de aprobar, plan hacia la convocatoria, práctica con «Per què?» y repaso FSRS, mapa de dominio, corrección escrita por criterios (reglas + LanguageTool/Softcatalà + modelo de lenguaje con «posible error»), simulacros escritos B1/B2/C1 con tiempos y mínimos oficiales y cohorte, oral básica por sonido, racha desacoplada con congelaciones y compromiso"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Contenido: 30 reglas con explicación en 6 idiomas, 392 ítems, 22 textos de lectura y oral, 14 tareas escritas, 9 simulacros, 15 sonidos y 14 lecturas en voz alta; validado con LanguageTool 6.8 (Softcatalà); lote de 50 ítems para revisión humana"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca aplicada (Aprova, familia Nuevo en España, acento ocre, Outfit + Noto Sans, sello en pie y precios)"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Desplegado desde la sesión: Vercel aprova-catala, Neon cartera-m-catala (integración de Vercel), Stripe Numi Mates en modo prueba (mensual, anual con 7 días, pase de convocatoria) y webhook; prueba de punta a punta en móvil superada en producción hasta la sesión de Checkout"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Marketing preparado sin publicar: 30 páginas SEO ca/es en producción, calendario 2027 con alertas, 10 guiones de vídeo, ficha de Google Play, campaña de búsqueda (100 €/mes) en pausa, 20 comunidades"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "MONETIZACION.md (primer euro previsto 14 días después del cobro real, condicionado a la prueba de validez), COSTES.md (coste variable hoy ≈ 0,02 €/usuario/mes; recomendado ≈ 0,20 €; objetivo < 1,5 €), VALIDESA.md con formulario en la app"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Rediseño completo con las skills frontend-design (Anthropic) y web-design-guidelines / react-best-practices / react-view-transitions (Vercel), instaladas en .claude/skills: sistema propio (crema/noche/ocre, Outfit + Noto Sans), dial de probabilidad como elemento memorable, hoja de examen para cada ítem con frase explicativa, sello APTE / NO APTE, Hoy con una sola acción y precios con selector. Plan en DISSENY.md; e2e local verde"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Marca propia (tercera pasada, pedida por Moisés): identidad «full de respostes» (papel, bolígrafo azul #2140D6, cuadrícula, marcador fluorescente), Archivo Expanded ExtraBold, logotipo con trazado real y en Volat (el punt volat con cara) como personaje; portada con la necesidad (taxa, meses, plaza) y cuenta atrás de inscripciones. MARCA.md, MARCAS.md §4 y DISSENY.md actualizados"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "Auditoría completa (AUDITORIA.md + auditoria/*): técnica de producción (Lighthouse 89–99/96/100/100, 104 rutas OK), código y seguridad (TTS abierto, cuotas evitables, pase rejugable, probabilidad mal calibrada), mercado con fuentes (C1 DPL 2.048 presentados y 41 % aptos en 2023; C2 13.068 inscritos 2026; competidor directo Catfy). Veredicto: beta temprana, viable como producto complementario; no cobrar hasta cerrar fases 0–2"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Arreglados todos los hallazgos de la auditoría que eran arreglos (seguridad y pagos, probabilidad y motor, contenido, interfaz, accesibilidad y SEO) y redesplegado; 17 tests unitarios; e2e local y producción verdes. Pendiente lo que es producto nuevo: C2, más ítems, prueba de validez (AUDITORIA.md §8)"
       }
     ],
     "proximos": [
@@ -1280,11 +1320,20 @@
       "Aplicar la identidad de marca de MARCAS.md",
       "Abrir la sesión M con el prompt nuevo (sesión 1: diagnóstico, plan, práctica, corrección escrita, simulacros B1 a C1)",
       "Conseguir 20 candidatos reales al C1 para la prueba de validez (academias de Lleida o el CNL)",
-      "Verificar la licencia de la voz Matxa o entrenar voz propia"
+      "Verificar la licencia de la voz Matxa o entrenar voz propia",
+      "Prueba de validez: 20 candidatos reales al C1 y un profesor (Moisés con academias de Lleida o CNL); ≥ 80 % de coincidencia para activar el cobro real",
+      "Crear las dos tareas programadas (semanal: 50 ítems validados + fechas oficiales; mensual: informe de coste por usuario)",
+      "Revisión humana del lote de 50 ítems (contenido/revisio/lot-2026-10-28.json) por filólogo",
+      "Añadir como secretos del entorno ANTHROPIC_API_KEY (o BSC_API_URL) para la corrección por criterios y GOOGLE_TTS_API_KEY para la voz sintetizada",
+      "Sesión 2: simulacro oral completo con examinador de voz, C2, liga por convocatoria, reto de 60 días, Android (TWA)",
+      "Mes 2: decidir los anuncios de búsqueda (campaña preparada en marketing/google-ads)"
     ],
     "paraMoises": [
       "Arrancar la sesión con el prompt cuando toque (prioridad 8)",
-      "Conseguir 20 candidatos al C1 para la prueba de validez"
+      "Conseguir 20 candidatos al C1 para la prueba de validez",
+      "Conseguir 20 candidatos al C1 y un profesor para la prueba de validez (correo listo en marketing/comunitats.md)",
+      "Crear las dos tareas programadas con el prompt de TAREA-PROGRAMADA.md",
+      "Opcional: clave del proveedor de voz y de modelo de lenguaje como secretos del entorno"
     ],
     "mejoras": [
       "De Parla.cat: el itinerario completo por niveles y la prueba inicial; superarlo con un diagnóstico adaptativo de 10 minutos mapeado a las áreas exactas del certificado y un 'índice de probabilidad de apto' por área.",
@@ -1303,7 +1352,8 @@
       "Corrección escrita por criterios con la rúbrica oficial y 'posible error' cuando la IA dude (Write & Improve).",
       "Oral que corrige al final y deja informe, y puntuación de pronunciación por fonema (Langua, ELSA).",
       "Simulacro completo gratis al mes, reto de 60 días con dinero que vuelve, liga por convocatoria (Magoosh, Lingoda, Duolingo).",
-      "Precio anual anclado, pase de convocatoria, aviso antes de renovar y cancelación en un clic (Babbel, Kwiziq)."
+      "Precio anual anclado, pase de convocatoria, aviso antes de renovar y cancelación en un clic (Babbel, Kwiziq).",
+      "Hecho en la sesión 1: diagnóstico adaptativo sin registro, nota en la escala real, plan con aviso de inscripción, racha desacoplada con compromiso, FSRS, corrección por criterios con «posible error», simulacro completo gratis al mes, precio anual anclado con aviso y cancelación en un clic. Pendiente (sesión 2): oral con examinador, liga, reto de 60 días."
     ],
     "competidores": [
       {
@@ -1383,7 +1433,8 @@
         "url": "https://provesjqcv.gva.es",
         "precio": "Tasa JQCV C1 y C2 de 23,39 €",
         "debilidad": "Apps genéricas de test, sin oral ni redacción corregida · Lo que extraemos: Estructura por áreas con mínimos trasladable a un motor multicertificado; la saturación (cita previa obligatoria, más de 700 impugnaciones en 2024) muestra la demanda"
-      }
+      },
+      "Catfy (catfy.app): PWA + Play, A1–C2, corrección escrita y oral con IA, simulacros, gratis en lanzamiento, solo en catalán"
     ],
     "repos": [
       {
@@ -1448,6 +1499,13 @@
         "licencia": "no verificado",
         "uso": "API lista para servir voz en catalán",
         "estrellas": "17"
+      },
+      {
+        "nombre": "Maven Central: org.languagetool:languagetool-server + language-ca 6.8",
+        "url": "https://repo1.maven.org/maven2/org/languagetool/",
+        "licencia": "LGPL-2.1",
+        "uso": "Forma de ejecutar LanguageTool con las reglas de Softcatalà en las sesiones (languagetool.org bloqueado): mvn dependency:copy-dependencies",
+        "estrellas": ""
       }
     ],
     "hallazgos": [
@@ -1468,7 +1526,13 @@
       "Precios anuales efectivos de referencia: Duolingo Super unos 7 $/mes, Busuu Premium Plus 6,66 €, Babbel 9 $, Kwiziq 9,50 $, Langua 16,67 $; ninguna prepara catalán ni tiene simulacros oficiales.",
       "FSRS supera al algoritmo clásico de repaso en el 99,6 % de 10.000 colecciones y ahorra un 20 a 30 % de repasos; existe como librería abierta.",
       "La corrección automática de escritura es creíble si se limita a lo seguro: Cambridge Write & Improve solo marca errores con un 90 % de confianza; los alumnos piden explicación por criterios y regla citada.",
-      "Una academia catalana (Aulacat) declara un 181 % más de matrículas de C1 y un 391 % más de C2 en 2025 con 1.706 alumnos."
+      "Una academia catalana (Aulacat) declara un 181 % más de matrículas de C1 y un 391 % más de C2 en 2025 con 1.706 alumnos.",
+      "La organización de Neon está gestionada por Vercel y rechaza crear proyectos por la API de Neon; se crean por la API de Marketplace de Vercel (autorización de facturación + store + conexión) sin pasar por el navegador.",
+      "LanguageTool 6.8 con las reglas de Softcatalà se puede ejecutar en la sesión bajándolo de Maven Central (languagetool.org está bloqueado): valida 1.349 textos del banco en unos minutos y detectó una docena de errores reales en el contenido generado (apóstrofos, concordancias, accentos pre-2017).",
+      "Hugging Face está bloqueado desde la red del entorno: los modelos del BSC (Salamandra, ALIA) y el Whisper catalán de AINA solo se pueden usar vía un endpoint propio (BSC_API_URL, WHISPER_URL); el motor está preparado y hoy corre con Anthropic o en modo sesión.",
+      "La voz en catalán del propio navegador (SpeechSynthesis ca-ES) y el reconocimiento Web Speech ca-ES de Chrome en Android bastan para dictados, comprensión oral y lectura en voz alta sin coste: el coste variable por usuario queda en céntimos hasta activar un TTS de pago.",
+      "Los agentes de contenido dejaron cinco dudas normativas (ser/estar con localización de cosas, caída de preposición en coloquial, al + infinitivo, gaire/molt, quedar-se/romandre) que deben resolverse en la revisión humana antes de marcar esos ítems como diagnósticos.",
+      "Auditoría 30/10: el C1 lo suspende la mayoría (41 % aptos 2023), el mercado grande es el C2 (13.068 inscritos 2026) y existe Catfy (gratis, IA). Conversión a planificar en 1,5–2 %. Detalle en proyectos/m-catala/AUDITORIA.md"
     ],
     "lider": {
       "nombre": "Speak (Speakeasy Labs), modelo de tutor de idiomas por voz con IA; Parla.cat como incumbente catalán",
