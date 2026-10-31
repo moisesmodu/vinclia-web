@@ -131,3 +131,19 @@ Ningún proyecto muestra el correo personal de Moisés ni ningún correo de Algo
 se verifica el dominio en Resend y se redespliega. Tras el cambio del 28/10, la sesión del Mac cambia el secreto
 `LEGAL_EMAIL` del entorno a `hola@numimates.com` y **redespliega todos los proyectos** cuando sus PR lleven el commit
 del correo.
+
+### Dominios propios en Resend (31/10)
+
+Verificados en Resend (región eu-west-1) con DKIM `resend._domainkey`, SPF/MX de retorno en `send`, CNAME `rsend` y
+DMARC `_dmarc` `v=DMARC1; p=none;`, todo en la zona DNS de Vercel. **Los remitentes NO se han cambiado todavía**: siguen
+en `noreply@numimates.com` hasta que Moisés lo decida. Para cambiar, se edita la variable y se redespliega:
+
+- `ccsefacil.com` (A): **verified**. Proyecto Vercel `ccse-en-tu-idioma`, variable `CORREO_REMITENTE` → `noreply@ccsefacil.com`.
+- `tuspapeles.app` (N): **verified**. Proyecto Vercel `nuevo-en-espana`, variable `CORREO_REMITENTE` → `noreply@tuspapeles.app`.
+- `lunilla.cat` (G): **verified**. Proyecto Vercel `lunilla`, variable `CORREO_REMITENTE` → `noreply@lunilla.cat` (`CORREO_SOPORTE` se queda en hola@numimates.com mientras no haya buzón).
+- `oposita.digital` (B): **verified**. Proyecto Vercel `placa-oposicions`, variable `CORREO_REMITENTE` → `noreply@oposita.digital`.
+- `netoclaro.app` e `impuestoclaro.es` (P): sin correo transaccional, no se dan de alta en Resend.
+
+**Recepción:** no hay buzón en ningún dominio propio y no se ha creado MX de recepción en el raíz, así que `hola@<dominio>`
+no recibe correo. Hasta que haya buzón o reenvío, `LEGAL_EMAIL`, `reply-to` y el correo de contacto siguen en
+`hola@numimates.com`.
