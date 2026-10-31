@@ -162,3 +162,8 @@ Ejecutado el 2026-10-28
   la de renovación (es, en). Redesplegar para publicarlo: desde la raíz del repositorio en esta rama,
   `npx vercel@latest deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID` con el proyecto `nuevo-en-espana`
   enlazado (Root Directory `proyectos/n-nuevo-en-espana`).
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+Publicado el commit c643540 en https://tuspapeles.app (canónica y sitemap con el dominio). `@vercel/analytics` va en el código. Pendiente (Moisés): verificación de Search Console.
+
+Ejecutado el 2026-10-31
