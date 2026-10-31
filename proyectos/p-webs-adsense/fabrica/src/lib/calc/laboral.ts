@@ -60,7 +60,7 @@ export type TipoDespido = 'improcedente' | 'objetivo' | 'temporal' | 'procedente
 export function indemnizacion(e: { inicio: string; fin: string; brutoAnual: number; tipo: TipoDespido }, L: any) {
   const I = L.indemnizacion;
   const diario = e.brutoAnual / 365;
-  const corte = '2012-02-12';
+  const corte: string = I.fecha_corte_reforma ?? '2012-02-12';
   const res = { diario: r2(diario), dias: 0, importe: 0, tramos: [] as { desde: string; hasta: string; meses: number; diasPorAno: number; dias: number }[], tope: '' as string, antiguedadDias: diasEntre(e.inicio, e.fin) };
   if (e.tipo === 'procedente') return res;
   if (e.tipo === 'temporal') {

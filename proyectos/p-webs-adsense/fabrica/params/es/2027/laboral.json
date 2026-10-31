@@ -433,7 +433,9 @@
     "fuente": {
       "nombre": "Estatuto de los Trabajadores (RDLeg 2/2015), arts. 38, 49, 53, 56 y DT 11ª",
       "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"
-    }
+    },
+    "fecha_corte_reforma": "2012-02-12",
+    "fecha_corte_reforma_nota": "Entrada en vigor del RDL 3/2012: el tiempo trabajado antes se indemniza a 45 días por año (DT 11.ª ET)."
   },
   "vacaciones": {
     "dias_naturales_minimos": 30
@@ -445,6 +447,18 @@
     "fuente": {
       "nombre": "Real Decreto-ley 9/2025, de 29 de julio (ET art. 48.4 y LGSS)",
       "url": "https://www.boe.es/eli/es/rdl/2025/07/29/9"
+    }
+  },
+  "despido_plazos": {
+    "caducidad_dias_habiles": 20,
+    "reclamacion_cantidades_anios": 1,
+    "conciliacion_max_dias": 30,
+    "paro_solicitud_dias_habiles": 15,
+    "nota": "Despido: 20 días hábiles desde el día siguiente al despido (art. 59.3 ET y art. 103 LRJS); no cuentan sábados, domingos ni festivos (art. 182 LOPJ) y agosto sí cuenta para el despido (art. 43.4 LRJS). La papeleta de conciliación suspende el plazo, que se reanuda al día siguiente del acto o a los 15 días hábiles si no se celebra (art. 65 LRJS); si la conciliación no se celebra en 30 días, se puede seguir con la demanda. Cantidades (finiquito, salarios): 1 año (art. 59.1 y 59.2 ET). Paro: 15 días hábiles desde la situación legal de desempleo para no perder días (art. 276 LGSS).",
+    "verificado": false,
+    "fuente": {
+      "nombre": "Estatuto de los Trabajadores, art. 59; Ley 36/2011 reguladora de la jurisdicción social, arts. 43, 63-65 y 103",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-15936"
     }
   }
 }

@@ -1,0 +1,88 @@
+{
+  "nota": "Productos digitales propios (de pago) de la familia Claro. Cada uno sale de scripts/productos/<script>.py, que lee los parámetros oficiales; los archivos quedan en productos/<id>/. El botón de compra usa el Payment Link de Stripe de la variable «variablePago» (scripts/stripe-productos.mjs la imprime); sin ella, la página dice «Disponible muy pronto» y el bloque bajo el resultado no sale. «token» es la carpeta secreta de la página de descarga (/descarga/<token>/): no se enlaza desde ningún sitio y no entra en el sitemap. Cambiarlo invalida los enlaces de descarga de quien ya compró.",
+  "productos": [
+    {
+      "id": "kit-autonomo-2027",
+      "sitio": "impuestos",
+      "script": "kit_autonomo.py",
+      "nombre": { "es": "Kit del autónomo 2027", "ca": "Kit de l’autònom 2027" },
+      "ruta": { "es": "kit-autonomo-2027", "ca": "kit-autonom-2027" },
+      "precio": 9.9,
+      "moneda": "eur",
+      "token": "OBp6WS9ytD6O0gZ6Q3k4ue8ycLsgXaeB6yXGQELY",
+      "variablePago": "PAGO_KIT_AUTONOMO_2027_URL",
+      "calculadoras": ["modelo-303", "modelo-130", "sueldo-neto-autonomo", "tarifa-plana-autonomos", "precio-hora-autonomo", "autonomo-o-asalariado", "factura", "iva", "recargo-equivalencia"],
+      "archivos": [
+        { "archivo": "kit-autonomo-2027.xlsx", "tipo": "xlsx", "nombre": { "es": "Kit del autónomo 2027 (Excel)", "ca": "Kit de l’autònom 2027 (Excel)" } },
+        { "archivo": "guia-kit-autonomo-2027.pdf", "tipo": "pdf", "nombre": { "es": "Guía de uso (PDF)", "ca": "Guia d’ús (PDF, en castellà)" } }
+      ],
+      "frase": {
+        "es": "¿Llevas tú los números? El Kit del autónomo 2027 hace solos el 303, el 130 y la renta a partir de tus facturas, con el calendario fiscal y la cuota por tramos.",
+        "ca": "Portes tu els números? El Kit de l’autònom 2027 fa sols el 303, el 130 i la renda a partir de les teves factures, amb el calendari fiscal i la quota per trams."
+      },
+      "cta": { "es": "Ver el kit", "ca": "Veure el kit" }
+    },
+    {
+      "id": "pack-despido",
+      "sitio": "nomina",
+      "script": "pack_despido.py",
+      "nombre": { "es": "Pack despido y finiquito", "ca": "Pack acomiadament i quitança" },
+      "ruta": { "es": "pack-despido-finiquito", "ca": "pack-acomiadament-quitanca" },
+      "precio": 6.9,
+      "moneda": "eur",
+      "token": "pAHk2wvFfut7NWQJFN3JgovmiaFbWwPf0B18Vz5q",
+      "variablePago": "PAGO_PACK_DESPIDO_URL",
+      "calculadoras": ["finiquito", "indemnizacion-despido", "paro"],
+      "archivos": [
+        { "archivo": "pack-despido-finiquito.xlsx", "tipo": "xlsx", "nombre": { "es": "Comprobador de finiquito e indemnización (Excel)", "ca": "Comprovador de quitança i indemnització (Excel)" } },
+        { "archivo": "guia-despido-conciliacion.pdf", "tipo": "pdf", "nombre": { "es": "Cartas, papeleta de conciliación y checklist (PDF)", "ca": "Cartes, papereta de conciliació i llista (PDF, en castellà)" } }
+      ],
+      "frase": {
+        "es": "¿Te han despedido? Comprueba tu finiquito concepto por concepto y llévate la carta de «no conforme», la guía de la papeleta y los plazos.",
+        "ca": "T’han acomiadat? Comprova la teva quitança concepte per concepte i emporta’t la carta de «no conforme», la guia de la papereta i els terminis."
+      },
+      "cta": { "es": "Ver el pack", "ca": "Veure el pack" }
+    },
+    {
+      "id": "comparador-hipotecas",
+      "sitio": "vivienda",
+      "script": "comparador_hipotecas.py",
+      "nombre": { "es": "Comparador de hipotecas para negociar", "ca": "Comparador d’hipoteques per negociar" },
+      "ruta": { "es": "comparador-hipotecas-excel", "ca": "comparador-hipoteques-excel" },
+      "precio": 6.9,
+      "moneda": "eur",
+      "token": "8TU4FJV1ai22rsYXdd5DJlRrpmlaBh2wCvvmYoI4",
+      "variablePago": "PAGO_COMPARADOR_HIPOTECAS_URL",
+      "calculadoras": ["viv-simulador-hipoteca", "viv-tae", "viv-fija-o-variable", "viv-cambiar-banco", "viv-cuanta-hipoteca", "viv-tabla-amortizacion", "viv-amortizacion-anticipada", "viv-revision-euribor"],
+      "archivos": [
+        { "archivo": "comparador-hipotecas.xlsx", "tipo": "xlsx", "nombre": { "es": "Comparador de 4 ofertas (Excel)", "ca": "Comparador de 4 ofertes (Excel)" } },
+        { "archivo": "preguntas-banco-hipoteca.pdf", "tipo": "pdf", "nombre": { "es": "Preguntas para el banco (PDF)", "ca": "Preguntes per al banc (PDF, en castellà)" } }
+      ],
+      "frase": {
+        "es": "¿Tienes varias ofertas? Compara hasta 4 FEIN con su TAE real, vinculaciones y escenarios de Euríbor, y negocia con las preguntas que el banco no espera.",
+        "ca": "Tens diverses ofertes? Compara fins a 4 FEIN amb la TAE real, vinculacions i escenaris d’Euríbor, i negocia amb les preguntes que el banc no espera."
+      },
+      "cta": { "es": "Ver el comparador", "ca": "Veure el comparador" }
+    },
+    {
+      "id": "planificador-taxes-2026",
+      "sitio": "eeuu",
+      "script": "planificador_taxes.py",
+      "nombre": { "es": "Planificador de taxes 2026 en español" },
+      "ruta": { "es": "planificador-taxes-2026" },
+      "precio": 7.99,
+      "moneda": "usd",
+      "token": "kUyLSRP86RxP13f0vSXyrbVi6JXy6az1ZWvbuB7q",
+      "variablePago": "PAGO_PLANIFICADOR_TAXES_2026_URL",
+      "calculadoras": ["us-1099", "us-impuesto-federal", "us-impuesto-estatal", "us-reembolso", "us-w4"],
+      "archivos": [
+        { "archivo": "planificador-taxes-2026.xlsx", "tipo": "xlsx", "nombre": { "es": "Planificador de taxes 2026 (Excel)" } },
+        { "archivo": "guia-planificador-taxes-2026.pdf", "tipo": "pdf", "nombre": { "es": "Guía rápida (PDF)" } }
+      ],
+      "frase": {
+        "es": "¿Trabajas con 1099? El Planificador de taxes 2026 calcula tu impuesto federal y estatal, tus 4 pagos estimados con sus fechas y te dice qué papeles juntar."
+      },
+      "cta": { "es": "Ver el planificador" }
+    }
+  ]
+}
