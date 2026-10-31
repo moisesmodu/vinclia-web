@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Familia Lunilla: Baloo 2 (títulos) y Nunito (texto), dos pesos (MARCAS.md §3). Archivos estáticos en assets/fuentes
@@ -22,13 +23,19 @@ export const metadata: Metadata = {
   description: "Cuentos infantiles personalizados con el nombre, la ciudad y la mascota de tu peque. 18 o 22 páginas ilustradas según la edad, PDF en menos de 2 horas o libro de tapa dura. En castellano y catalán.",
   applicationName: "Lunilla",
   openGraph: { siteName: "Lunilla", type: "website", locale: "es_ES", images: ["/muestras/leo-y-la-luz-de-la-luna/00.webp"] },
+  // Search Console: la sesión del Mac pone GOOGLE_SITE_VERIFICATION en Vercel cuando Moisés copie el valor; sin la variable no se emite nada.
+  ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {}),
 };
 export const viewport: Viewport = { themeColor: "#2B3A67", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${nunito.variable} ${baloo.variable}`}>
-      <body className="min-h-dvh antialiased">{children}</body>
+      <body className="min-h-dvh antialiased">
+        {children}
+        {/* Vercel Web Analytics (sin cookies); activado en el proyecto «lunilla» de Vercel. */}
+        <Analytics />
+      </body>
     </html>
   );
 }
