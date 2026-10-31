@@ -2,6 +2,7 @@ import "../globals.css";
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { Outfit, Noto_Sans, Noto_Sans_Arabic, Noto_Sans_SC } from "next/font/google";
 import { IDIOMAS, IDIOMAS_RTL, esIdioma, urlBase } from "@/lib/config";
 import { dicc, LOCALE_BCP47 } from "@/lib/i18n";
@@ -32,7 +33,9 @@ export async function generateMetadata({ params }: { params: Promise<{ idioma: s
       canonical: `/${idioma}`,
       languages: Object.fromEntries(IDIOMAS.map((i) => [LOCALE_BCP47[i], `/${i}`]))
     },
-    openGraph: { title: d.meta.titulo, description: d.meta.descripcion, siteName: d.marca, locale: LOCALE_BCP47[idioma], type: "website" }
+    openGraph: { title: d.meta.titulo, description: d.meta.descripcion, siteName: d.marca, locale: LOCALE_BCP47[idioma], type: "website" },
+    // Search Console: meta de verificación solo si la sesión del Mac define GOOGLE_SITE_VERIFICATION (alternativa: TXT en los DNS de Vercel).
+    ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {})
   };
 }
 
@@ -53,6 +56,8 @@ export default async function Layout({ children, params }: { children: React.Rea
         <RegistroSW />
         <AvisoRecuperacion idioma={idioma} textos={d.recuperacion} />
         {plausible ? <Script defer data-domain={plausible} src="https://plausible.io/js/script.js" strategy="afterInteractive" /> : null}
+        {/* Vercel Web Analytics (sin cookies; activado en el proyecto de Vercel). Captura ruta y utm_* de cada pieza de marketing. */}
+        <Analytics />
       </body>
     </html>
   );
