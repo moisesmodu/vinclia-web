@@ -183,7 +183,7 @@ export const PLANTILLAS: Record<string, Plantilla> = {
 Object.assign(PLANTILLAS, PLANTILLAS_US);
 // Páginas por combinación de NetoClaro e ImpuestoClaro (src/plantillas/nomina.ts e impuestos.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_NOMINA, PLANTILLAS_IMPUESTOS);
-// Plantillas de PisoClaro (src/plantillas/vivienda.ts)
+// Plantillas de HogarClaro (src/plantillas/vivienda.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_VIV);
 // Calendario laboral por comunidad y municipio de NetoClaro (src/plantillas/calendario.ts)
 Object.assign(PLANTILLAS, PLANTILLAS_CALENDARIO);

@@ -165,3 +165,15 @@ dan 200 y su pie «Familia Claro» enlaza a NetoClaro, ImpuestoClaro, ChequeClar
 portal https://calculaclaro.vercel.app.
 
 Ejecutado el 2026-10-30
+
+## 31/10: HogarClaro (sitio 4), calendario laboral 2027 y 600 páginas nuevas
+
+El PR #6 (commit siguiente a 11a5d38) trae el sitio 4 **HogarClaro** (`SITIO=vivienda`), el calendario laboral 2027 de
+NetoClaro y unas 700 páginas nuevas en NetoClaro, ImpuestoClaro y ChequeClaro.
+
+1. Crear el proyecto `hogarclaro` con el camino B: `SITIO=vivienda`, `SITE_URL=https://hogarclaro.vercel.app` y
+   los `LEGAL_*`. Si la URL sale con otro nombre, ponla en `fabrica/familia.json` (sitio `vivienda`, campo `url`).
+2. Borrar el proyecto `pisoclaro` de Vercel. Lo creó la sesión en la nube antes de cambiar el nombre. Está en
+   pisoclaro-three.vercel.app con la canónica mal puesta, porque pisoclaro.vercel.app es de otra web.
+3. Redesplegar `netoclaro`, `impuestoclaro`, `chequeclaro` y `calculaclaro` (`SITIO=portal`, `PORTAL_URL=https://calculaclaro.vercel.app`).
+   Así tienen las páginas nuevas y el pie «Familia Claro» con HogarClaro.

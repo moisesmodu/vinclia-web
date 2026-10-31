@@ -1,4 +1,4 @@
-// Motor de vivienda (PisoClaro): casos de comprobación de sitios-nuevos/SITIO-4-HIPOTECAS.md y comprobaciones propias.
+// Motor de vivienda (HogarClaro): casos de comprobación de sitios-nuevos/SITIO-4-HIPOTECAS.md y comprobaciones propias.
 import { describe, it, expect } from 'vitest';
 import { params, anios } from '../src/lib/params';
 import {

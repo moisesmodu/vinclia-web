@@ -179,7 +179,7 @@ const FICHAS: Record<string, ConfFicha> = {
   'irpf-por-salario-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l, c) => L(l, `IRPF anual con ${c[2]} brutos`, `IRPF anual amb ${c[2]} bruts`) },
   'tipo-marginal-comunidades': { tipo: 'barras', y: [5], ordenar: true, titulo: (l) => L(l, 'Tipo marginal máximo (estatal + autonómico)', 'Tipus marginal màxim (estatal + autonòmic)') },
   'minimos-personales': { tipo: 'barras', tabla: 1, y: [1], ordenar: true, titulo: (l) => L(l, 'Mínimo personal autonómico', 'Mínim personal autonòmic') },
-  // PisoClaro (src/fichas/vivienda.ts)
+  // HogarClaro (src/fichas/vivienda.ts)
   'euribor-historico': { tipo: 'linea', y: [1], invertir: true, puntos: true, titulo: (l) => L(l, 'Euríbor a 12 meses, media mensual', 'Euríbor a 12 mesos, mitjana mensual') },
   'itp-por-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'ITP de una vivienda usada de 200.000 €', 'ITP d’un habitatge usat de 200.000 €') },
   'ajd-por-comunidad': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'AJD de una vivienda nueva de 250.000 €', 'AJD d’un habitatge nou de 250.000 €') },

@@ -1,4 +1,4 @@
-// Fichas de datos «citables» de PisoClaro: Euríbor, ITP y AJD, gastos de compra, plusvalía, cuotas, IRAV, aranceles,
+// Fichas de datos «citables» de HogarClaro: Euríbor, ITP y AJD, gastos de compra, plusvalía, cuotas, IRAV, aranceles,
 // hipotecas del INE y esfuerzo por sueldo. Las cifras salen de params/es/<año>/vivienda.json o del motor.
 import { tt, type Lang } from '../lib/def';
 import type { Ficha } from './tipos';

@@ -14,7 +14,7 @@ opción libre de cada fila en [DonDominio](https://www.dondominio.com/es/) o en 
 | **Imprescindible** | 2 · ImpuestoClaro (impuestos y autónomos) | **impuestoclaro.es** | cuotaclara.es | irpfacil.es | 8–12 €/año |
 | Recomendado, porque ya se está construyendo | 3 · ChequeClaro (finanzas de EE. UU. en español) | **chequeclaro.com** | taxesclaros.com | nominaclara.com | 10–15 €/año |
 | Recomendado | Portal CalculaClaro (buscador de todas las calculadoras y puerta a cada sitio) | **calculaclaro.com** | calculaclaro.es | numerosclaros.com | 10–15 €/año |
-| Opcional, para reservar el nombre | 4 · PisoClaro (vivienda e hipotecas) | pisoclaro.es | hipotecaclara.es | casaclara.es | 8–12 €/año |
+| Recomendado, ya construido | 4 · HogarClaro (vivienda e hipotecas) | **hogarclaro.es** | hogarclaro.com | casaclara.es | 8–12 €/año |
 | Opcional, para reservar el nombre | 5 · MotorClaro (coche) | motorclaro.es | cocheclaro.es | circulaclaro.es | 8–12 €/año |
 
 - **Coste:** los dos imprescindibles suman unos 20 € al año. Los cinco juntos, unos 50 € al año.
@@ -22,7 +22,8 @@ opción libre de cada fila en [DonDominio](https://www.dondominio.com/es/) o en 
   Por eso el portal se llama CalculaClaro, un nombre compuesto como el de los sitios.
 - **Marcas que he cambiado:**
   - Para el sitio 2 he descartado «CuentaClara», porque ABANCA tiene cuentas «Cuenta Clara» para autónomos.
-  - Para el sitio 4 he descartado «HipotecaClara», porque existe un curso de pago llamado «Método Hipoteca Clara».
+  - Para el sitio 4 he descartado «HipotecaClara», porque existe un curso de pago llamado «Método Hipoteca Clara», y
+    «PisoClaro», porque ya hay una web de reseñas de pisos con ese nombre. Queda **HogarClaro**.
 - **Después de comprar:** dime qué dominios has comprado. La sesión del Mac los conecta a Vercel con
   `DESPLIEGUE.md`. Si el registrador te pide DNS, son estos dos registros:
   - un registro **A** en `@` con el valor `76.76.21.21`;

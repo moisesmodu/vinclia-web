@@ -3111,14 +3111,29 @@
       {
         "fecha": "2026-10-29",
         "texto": "Portal CalculaClaro: portada con buscador de las 57 calculadoras y acceso por interés a NetoClaro, ImpuestoClaro y ChequeClaro (PisoClaro y MotorClaro como «muy pronto»); pie «Familia Claro» en cada sitio enlazando a los hermanos y al portal; Lighthouse 100"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "NICHOS.md: 15 nichos priorizados; top 5 de sitios nuevos (NetoClaro México, VatioClaro, AhorroClaro, BebéClaro, NetoClaro Colombia) y 10 ampliaciones"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "600 páginas por combinación nuevas con índices, FAQ propias y prueba automática contra contenido repetido (NetoClaro 604, ImpuestoClaro 282, ChequeClaro 274)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Sitio 4 HogarClaro (vivienda e hipotecas; renombrado desde PisoClaro, que ya existía): 20 calculadoras, 10 fichas con gráfico, 80 programáticas, ilustración propia; 238 páginas"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Calendario laboral 2027 en NetoClaro: 17 comunidades y 29 municipios con calendario visual, puentes y comparación con 2026, más calculadora de días laborables y hábiles"
       }
     ],
     "proximos": [
-      "Moisés: comprar netoclaro.es e impuestoclaro.es (y chequeclaro.com) y darse de alta en Xolo, Qonto y Quipu",
-      "Redesplegar netoclaro, impuestoclaro y chequeclaro con el pie «Familia Claro» (commit 4425d53 o posterior)",
-      "Sesión del Mac: redesplegar NetoClaro e ImpuestoClaro con el rediseño (PR #6) y conectar los dominios",
-      "Sesión del Mac: crear el proyecto chequeclaro (SITIO=eeuu) en Vercel",
-      "Construir PisoClaro y MotorClaro con la fábrica"
+      "Sesión del Mac: crear hogarclaro, borrar pisoclaro y redesplegar los 3 sitios y el portal (DESPLIEGUE.md, 31/10)",
+      "Moisés: comprar netoclaro.es, impuestoclaro.es, chequeclaro.com, calculaclaro.com y hogarclaro.es; alta en Xolo, Qonto y Quipu",
+      "Revisar notas de IVA por producto y completar festivos locales de 2027 cuando se publiquen (Madrid, Valencia, Cataluña)",
+      "Siguiente sitio según NICHOS.md: NetoClaro México o VatioClaro"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",

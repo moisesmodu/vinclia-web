@@ -16,7 +16,7 @@ export function legal(id: string, lang: Lang, actualizado: string): PaginaLegal 
   const t = sitio.titular, n = sitio.nombre, dom = sitio.dominio.replace(/^https?:\/\//, '');
   const ads = anunciosActivos();
   const es = lang === 'es';
-  // Textos propios del sitio (sitio.json → «legal»): PisoClaro no habla de nóminas ni del SEPE. Sin ellos, los de siempre.
+  // Textos propios del sitio (sitio.json → «legal»): HogarClaro no habla de nóminas ni del SEPE. Sin ellos, los de siempre.
   const X: Record<string, string> = sitio.legal?.[lang] ?? {};
   switch (id) {
     case 'aviso':

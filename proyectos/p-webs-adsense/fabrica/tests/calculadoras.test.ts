@@ -49,7 +49,7 @@ describe('calculadoras de EE. UU.', () => {
   }
 });
 
-// PisoClaro (vivienda): las 20 calculadoras con sus valores por defecto, en los dos idiomas y los dos años
+// HogarClaro (vivienda): las 20 calculadoras con sus valores por defecto, en los dos idiomas y los dos años
 describe('calculadoras de vivienda', () => {
   it('hay 20 y todas tienen definición', () => {
     expect(vivienda.calculadoras.length).toBe(20);

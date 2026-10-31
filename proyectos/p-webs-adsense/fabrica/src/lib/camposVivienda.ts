@@ -1,4 +1,4 @@
-// Campos y textos comunes de las calculadoras de vivienda (PisoClaro, src/calculadoras/viv-*.ts).
+// Campos y textos comunes de las calculadoras de vivienda (HogarClaro, src/calculadoras/viv-*.ts).
 // Las cifras salen de params/es/<año>/vivienda.json; aquí solo hay nombres, etiquetas y valores de ejemplo editables.
 import { tt, type Campo, type T, type Txt, type Lang } from './def';
 import { params, anios } from './params';

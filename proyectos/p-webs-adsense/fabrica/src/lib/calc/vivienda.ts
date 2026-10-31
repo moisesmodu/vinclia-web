@@ -1,4 +1,4 @@
-// Motor de vivienda e hipoteca (sitio PisoClaro). Funciones puras: ninguna cifra legal dentro.
+// Motor de vivienda e hipoteca (sitio HogarClaro). Funciones puras: ninguna cifra legal dentro.
 // Los parámetros llegan en V = params/es/<año>/vivienda.json (tipos de ITP y AJD, aranceles, comisiones,
 // coeficientes de plusvalía, Euríbor, IRAV…). Los tipos de interés van siempre en % anual (3.01 = 3,01 %).
 import { r2, cuotaEscala, type Tramo } from './base';

@@ -5,8 +5,8 @@
     "es",
     "ca"
   ],
-  "dominio": "https://pisoclaro.es",
-  "nombre": "PisoClaro",
+  "dominio": "https://hogarclaro.es",
+  "nombre": "HogarClaro",
   "lema": {
     "es": "Calculadoras de hipoteca, compraventa y alquiler con datos oficiales",
     "ca": "Calculadores d’hipoteca, compravenda i lloguer amb dades oficials"
@@ -32,8 +32,8 @@
     "borde": "#D6E5E8"
   },
   "ilustracion": {
-    "nota": "Ilustración de la portada y de la imagen para compartir: hoy se reutiliza la del portal. Para poner la propia, sube public/img/heroe-vivienda-480.webp y -800.webp (cuadradas, 480 y 800 px) y cambia «base» por /img/heroe-vivienda.",
-    "base": "/img/heroe-portal"
+    "nota": "Ilustración propia de HogarClaro (Higgsfield, 0,25 créditos), 480 y 800 px.",
+    "base": "/img/heroe-vivienda"
   },
   "anioPorDefecto": 2027,
   "autor": {
@@ -104,11 +104,11 @@
   "textosDatos": {
     "es": {
       "titulo": "Datos de vivienda e hipotecas para consultar y citar",
-      "descripcion": "Euríbor, ITP y AJD por comunidad, aranceles de notaría y registro, plusvalía, IRAV e hipotecas del INE: tablas con gráfico y CSV de PisoClaro."
+      "descripcion": "Euríbor, ITP y AJD por comunidad, aranceles de notaría y registro, plusvalía, IRAV e hipotecas del INE: tablas con gráfico y CSV de HogarClaro."
     },
     "ca": {
       "titulo": "Dades d’habitatge i hipoteques per consultar i citar",
-      "descripcion": "Euríbor, ITP i AJD per comunitat, aranzels de notaria i registre, plusvàlua, IRAV i hipoteques de l’INE: taules amb gràfic i CSV de PisoClaro."
+      "descripcion": "Euríbor, ITP i AJD per comunitat, aranzels de notaria i registre, plusvàlua, IRAV i hipoteques de l’INE: taules amb gràfic i CSV de HogarClaro."
     }
   },
   "ui": {
@@ -208,7 +208,7 @@
       "texto": "Inter"
     },
     "partes": [
-      "Piso",
+      "Hogar",
       "Claro"
     ]
   },
@@ -352,13 +352,13 @@
       "sustituye": "la oferta vinculante (FEIN) de tu banco, el presupuesto de la notaría, las liquidaciones de la comunidad autónoma o el ayuntamiento ni el asesoramiento de un profesional",
       "comparar": "tu FEIN, tu recibo o tu liquidación",
       "patrocinio": "bróker hipotecario, seguro de hogar o gestoría, siempre inscritos en los registros oficiales",
-      "metodo": "<h2>Cómo calculamos</h2><p>Cada calculadora aplica paso a paso la norma que cita: la Ley 5/2019 de crédito inmobiliario, el texto refundido del ITP y AJD, la Ley del IVA, los aranceles de notarios y registradores (RD 1426/1989 y 1427/1989), la Ley de Haciendas Locales para la plusvalía y el IBI, la Ley del IRPF y la Ley 12/2023 de vivienda. Las cuotas siguen el sistema francés que usan los bancos. El método está publicado en cada página, debajo de la herramienta, con un ejemplo numérico.</p>\n<h2>De dónde salen los datos</h2><p>Los parámetros (Euríbor, tipos de ITP y AJD de cada comunidad, IVA, aranceles, comisiones de la Ley 5/2019, coeficientes de la plusvalía, IRAV, hipotecas del INE) están en archivos separados por año, cada uno con su fuente oficial: BOE, Banco de España, INE, Catastro y agencias tributarias autonómicas. Cada dato lleva su estado: los que todavía no hemos podido cotejar con la fuente oficial se marcan en pantalla como <em>sin cotejar</em>. Los criterios de los bancos (cuánto de tu sueldo puede ir a la cuota, qué parte del precio financian) se presentan como lo que son: criterios, no normas.</p>\n<h2>Cómo se actualiza</h2><p>El Euríbor y el IRAV se actualizan cada mes con el dato oficial. Cada semana se revisan el BOE y los boletines autonómicos. Si cambia una cifra, se actualiza el archivo de parámetros, se ejecutan las pruebas automáticas de cálculo y se vuelve a publicar el sitio; la fecha de cada página indica su última revisión.</p><p>PisoClaro es un sitio independiente: no es un banco, un bróker ni una inmobiliaria, no pide tus datos y no recomienda ninguna entidad.</p>"
+      "metodo": "<h2>Cómo calculamos</h2><p>Cada calculadora aplica paso a paso la norma que cita: la Ley 5/2019 de crédito inmobiliario, el texto refundido del ITP y AJD, la Ley del IVA, los aranceles de notarios y registradores (RD 1426/1989 y 1427/1989), la Ley de Haciendas Locales para la plusvalía y el IBI, la Ley del IRPF y la Ley 12/2023 de vivienda. Las cuotas siguen el sistema francés que usan los bancos. El método está publicado en cada página, debajo de la herramienta, con un ejemplo numérico.</p>\n<h2>De dónde salen los datos</h2><p>Los parámetros (Euríbor, tipos de ITP y AJD de cada comunidad, IVA, aranceles, comisiones de la Ley 5/2019, coeficientes de la plusvalía, IRAV, hipotecas del INE) están en archivos separados por año, cada uno con su fuente oficial: BOE, Banco de España, INE, Catastro y agencias tributarias autonómicas. Cada dato lleva su estado: los que todavía no hemos podido cotejar con la fuente oficial se marcan en pantalla como <em>sin cotejar</em>. Los criterios de los bancos (cuánto de tu sueldo puede ir a la cuota, qué parte del precio financian) se presentan como lo que son: criterios, no normas.</p>\n<h2>Cómo se actualiza</h2><p>El Euríbor y el IRAV se actualizan cada mes con el dato oficial. Cada semana se revisan el BOE y los boletines autonómicos. Si cambia una cifra, se actualiza el archivo de parámetros, se ejecutan las pruebas automáticas de cálculo y se vuelve a publicar el sitio; la fecha de cada página indica su última revisión.</p><p>HogarClaro es un sitio independiente: no es un banco, un bróker ni una inmobiliaria, no pide tus datos y no recomienda ninguna entidad.</p>"
     },
     "ca": {
       "sustituye": "l’oferta vinculant (FEIN) del teu banc, el pressupost de la notaria, les liquidacions de la comunitat autònoma o l’ajuntament ni l’assessorament d’un professional",
       "comparar": "la teva FEIN, el teu rebut o la teva liquidació",
       "patrocinio": "bròquer hipotecari, assegurança de la llar o gestoria, sempre inscrits als registres oficials",
-      "metodo": "<h2>Com calculem</h2><p>Cada calculadora aplica pas a pas la norma que cita: la Llei 5/2019 de crèdit immobiliari, el text refós de l’ITP i AJD, la Llei de l’IVA, els aranzels de notaris i registradors (RD 1426/1989 i 1427/1989), la Llei d’hisendes locals per a la plusvàlua i l’IBI, la Llei de l’IRPF i la Llei 12/2023 d’habitatge. Les quotes segueixen el sistema francès que fan servir els bancs. El mètode està publicat a cada pàgina, sota l’eina, amb un exemple numèric.</p>\n<h2>D’on surten les dades</h2><p>Els paràmetres (Euríbor, tipus d’ITP i AJD de cada comunitat, IVA, aranzels, comissions de la Llei 5/2019, coeficients de la plusvàlua, IRAV, hipoteques de l’INE) són en fitxers separats per any, cadascun amb la seva font oficial: BOE, Banc d’Espanya, INE, Cadastre i agències tributàries autonòmiques. Cada dada porta el seu estat: les que encara no hem pogut confrontar amb la font oficial es marquen en pantalla com a <em>sense confrontar</em>. Els criteris dels bancs (quina part del sou pot anar a la quota, quina part del preu financen) es presenten com el que són: criteris, no normes.</p>\n<h2>Com s’actualitza</h2><p>L’Euríbor i l’IRAV s’actualitzen cada mes amb la dada oficial. Cada setmana es revisen el BOE i els butlletins autonòmics. Si canvia una xifra, s’actualitza el fitxer de paràmetres, s’executen les proves automàtiques de càlcul i es torna a publicar el lloc; la data de cada pàgina indica la seva última revisió.</p><p>PisoClaro és un lloc independent: no és un banc, un bròquer ni una immobiliària, no demana les teves dades i no recomana cap entitat.</p>"
+      "metodo": "<h2>Com calculem</h2><p>Cada calculadora aplica pas a pas la norma que cita: la Llei 5/2019 de crèdit immobiliari, el text refós de l’ITP i AJD, la Llei de l’IVA, els aranzels de notaris i registradors (RD 1426/1989 i 1427/1989), la Llei d’hisendes locals per a la plusvàlua i l’IBI, la Llei de l’IRPF i la Llei 12/2023 d’habitatge. Les quotes segueixen el sistema francès que fan servir els bancs. El mètode està publicat a cada pàgina, sota l’eina, amb un exemple numèric.</p>\n<h2>D’on surten les dades</h2><p>Els paràmetres (Euríbor, tipus d’ITP i AJD de cada comunitat, IVA, aranzels, comissions de la Llei 5/2019, coeficients de la plusvàlua, IRAV, hipoteques de l’INE) són en fitxers separats per any, cadascun amb la seva font oficial: BOE, Banc d’Espanya, INE, Cadastre i agències tributàries autonòmiques. Cada dada porta el seu estat: les que encara no hem pogut confrontar amb la font oficial es marquen en pantalla com a <em>sense confrontar</em>. Els criteris dels bancs (quina part del sou pot anar a la quota, quina part del preu financen) es presenten com el que són: criteris, no normes.</p>\n<h2>Com s’actualitza</h2><p>L’Euríbor i l’IRAV s’actualitzen cada mes amb la dada oficial. Cada setmana es revisen el BOE i els butlletins autonòmics. Si canvia una xifra, s’actualitza el fitxer de paràmetres, s’executen les proves automàtiques de càlcul i es torna a publicar el lloc; la data de cada pàgina indica la seva última revisió.</p><p>HogarClaro és un lloc independent: no és un banc, un bròquer ni una immobiliària, no demana les teves dades i no recomana cap entitat.</p>"
     }
   }
 }

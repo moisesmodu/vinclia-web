@@ -1,4 +1,4 @@
-// Plantillas de las páginas programáticas de PisoClaro. Cada página trae su cifra principal, su tabla y su gráfico,
+// Plantillas de las páginas programáticas de HogarClaro. Cada página trae su cifra principal, su tabla y su gráfico,
 // calculados con el motor de vivienda para su fila (importe y plazo, o comunidad).
 import { tt, type Lang } from '../lib/def';
 import type { PaginaProg } from './index';
