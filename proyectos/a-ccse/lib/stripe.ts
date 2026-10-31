@@ -63,7 +63,13 @@ export async function asegurarWebhook() {
   }
 }
 
-export const NOMBRE_PRODUCTO = 'Cartera · CCSE · Acceso 3 meses';
+/** Nombre comercial que ve el cliente en Checkout, recibos y facturas. */
+export const MARCA = 'CCSE Fácil';
+/** Sufijo del descriptor bancario (prefijo de la cuenta + «* » + esto ≤ 22): solo letras, números y espacios. */
+export const DESCRIPTOR_SUFIJO = 'CCSEFACIL';
+export const NOMBRE_PRODUCTO = `${MARCA} — Acceso 3 meses`;
+/** Nombres anteriores del producto: se reconocen para no duplicarlo (scripts/stripe-configurar.mjs lo renombra). */
+const NOMBRES_PRODUCTO = [NOMBRE_PRODUCTO, 'Cartera · CCSE · Acceso 3 meses'];
 export const LOOKUP_PRECIO = `a-ccse-acceso-${PAIS.accesoDias}d-${PAIS.precioCentimos}${PAIS.moneda.toLowerCase()}`;
 let precioCache: string | null = null;
 
@@ -75,7 +81,7 @@ export async function precioId(): Promise<string> {
   if (ya.data[0]) return (precioCache = ya.data[0].id);
   const productos = await s.products.search({ query: `metadata['proyecto']:'a-ccse' AND active:'true'` }).catch(() => null);
   const producto =
-    productos?.data.find((x) => x.name === NOMBRE_PRODUCTO) ??
+    productos?.data.find((x) => NOMBRES_PRODUCTO.includes(x.name)) ??
     (await s.products.create({
       name: NOMBRE_PRODUCTO,
       description: 'Acceso completo a CCSE en tu idioma: 300 preguntas oficiales explicadas en 7 idiomas, simulacros y repaso.',
@@ -106,10 +112,16 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
     customer_email: opts.email,
     locale: stripeLocale,
     line_items: [{ quantity: 1, price: await precioId() }],
-    payment_intent_data: { metadata: { proyecto: 'a-ccse', usuarioId: opts.usuarioId } },
+    payment_intent_data: {
+      // Así el extracto del banco muestra la web y no solo la cuenta (p. ej. «NUMI MATES* CCSEFACIL»).
+      statement_descriptor_suffix: DESCRIPTOR_SUFIJO,
+      description: NOMBRE_PRODUCTO,
+      metadata: { proyecto: 'a-ccse', usuarioId: opts.usuarioId },
+    },
     custom_text: {
       submit: {
         message:
+          `${MARCA} · ` +
           'Al pagar aceptas las condiciones de venta y pides que el acceso empiece ya, por lo que pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Garantía de aprobado incluida.',
       },
     },

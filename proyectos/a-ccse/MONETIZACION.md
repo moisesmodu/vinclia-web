@@ -6,7 +6,7 @@
 ## Precio
 **9,99 € IVA incluido, pago único, 90 días de acceso completo.** No hay suscripción ni renovación.
 Hay garantía de aprobado: si suspendes habiendo hecho 3 simulacros, se devuelve el dinero.
-Se cobra con Stripe Checkout en la cuenta Numi Mates. El producto es `Cartera · CCSE · Acceso 3 meses` y acepta códigos de afiliado.
+Se cobra con Stripe Checkout en la cuenta Numi Mates. El producto es `CCSE Fácil — Acceso 3 meses` y acepta códigos de afiliado.
 
 Margen por venta: unos 9,2 € en la web, después de Stripe (1,5 % + 0,25 €), y unos 8,2 € en Google Play.
 

@@ -8,15 +8,25 @@ const clave = process.env.STRIPE_KEY;
 const sitio = (process.env.SITE_URL || '').replace(/\/$/, '');
 if (!clave || !sitio.startsWith('https://')) { console.error('Faltan STRIPE_KEY o SITE_URL (https)'); process.exit(1); }
 const s = new Stripe(clave);
-const NOMBRE = 'Cartera · CCSE · Acceso 3 meses';
+// Nombre comercial que ve el cliente; los anteriores se reconocen y se renombran (idempotente).
+const NOMBRE = 'CCSE Fácil — Acceso 3 meses';
+const NOMBRES_ANTIGUOS = ['Cartera · CCSE · Acceso 3 meses'];
 const LOOKUP = `a-ccse-acceso-${PAIS.accesoDias}d-${PAIS.precioCentimos}${PAIS.moneda.toLowerCase()}`;
 let precio = (await s.prices.list({ lookup_keys: [LOOKUP], active: true, limit: 1 })).data[0];
 if (!precio) {
   const prods = await s.products.search({ query: `metadata['proyecto']:'a-ccse' AND active:'true'` });
-  const prod = prods.data.find((p) => p.name === NOMBRE) ?? (await s.products.create({ name: NOMBRE, metadata: { proyecto: 'a-ccse', plan: 'acceso-3-meses' } }));
+  const prod = prods.data.find((p) => p.name === NOMBRE || NOMBRES_ANTIGUOS.includes(p.name)) ?? (await s.products.create({ name: NOMBRE, metadata: { proyecto: 'a-ccse', plan: 'acceso-3-meses' } }));
   precio = await s.prices.create({ product: prod.id, currency: PAIS.moneda.toLowerCase(), unit_amount: PAIS.precioCentimos, tax_behavior: 'inclusive', lookup_key: LOOKUP, metadata: { proyecto: 'a-ccse', dias: String(PAIS.accesoDias) } });
   console.error(`Precio creado: ${precio.id} (${PAIS.precioCentimos / 100} ${PAIS.moneda})`);
 } else console.error(`Precio ya existía: ${precio.id}`);
+// Renombra el producto del precio al nombre comercial si aún tiene el antiguo (no toca precios).
+{
+  const prod = await s.products.retrieve(typeof precio.product === 'string' ? precio.product : precio.product.id);
+  if (prod.name !== NOMBRE) {
+    await s.products.update(prod.id, { name: NOMBRE });
+    console.error(`Producto renombrado: «${prod.name}» → «${NOMBRE}» (${prod.id})`);
+  } else console.error(`Producto ya con nombre comercial: ${prod.id}`);
+}
 const url = `${sitio}/api/stripe/webhook`;
 const ya = (await s.webhookEndpoints.list({ limit: 100 })).data.find((w) => w.url === url);
 const EVENTOS = ['checkout.session.completed', 'checkout.session.async_payment_succeeded', 'checkout.session.expired'];

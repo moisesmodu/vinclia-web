@@ -36,7 +36,7 @@ r = await api('/api/stripe/checkout', { method: 'POST', body: JSON.stringify({ l
 ok(r.s === 200 && r.d.url?.startsWith('https://checkout.stripe.com/'), 'crea sesión de Checkout');
 const sesion = [...sesiones.values()].at(-1);
 ok(sesion.amount_total === 999 && sesion.currency === 'eur' && sesion.custom_text_ok, 'Checkout: 9,99 €, EUR y aviso de desistimiento');
-ok(productos.length === 1 && productos[0].name === 'Cartera · CCSE · Acceso 3 meses' && precios[0].tax_behavior === 'inclusive', 'producto y precio creados por API con el nombre de la cartera');
+ok(productos.length === 1 && productos[0].name === 'CCSE Fácil — Acceso 3 meses' && precios[0].tax_behavior === 'inclusive', 'producto y precio creados por API con el nombre comercial');
 ok(sesion.proyecto === 'a-ccse', 'Checkout lleva metadata.proyecto');
 ok(sesion.afiliado === 'accem' && sesion.promos === 'true', 'Checkout: afiliado ?ref= y códigos promocionales');
 ok(sesion.recuperacion === 'true' && sesion.consentimiento === 'auto' && sesion.expira - Date.now() / 1000 > 3 * 3600 - 120, 'Checkout con recuperación, consentimiento y caducidad de 3 h');

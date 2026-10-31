@@ -14,7 +14,7 @@
 | URL pública (canonical, sitemap, hreflang) | **`https://ccsefacil.com`** (dominio comprado el 31/10/2026, DNS en Vercel; `www` redirige al apex). `NEXT_PUBLIC_SITE_URL=https://ccsefacil.com` en production. |
 | URL técnica | `https://ccse-en-tu-idioma.vercel.app` **se mantiene y no se redirige**: la app Android (TWA, `assetlinks.json`) y el webhook de Stripe la llevan dentro. Google ve una sola URL canónica (ccsefacil.com) en las dos. |
 | Proyecto de Neon | `cartera-a-ccse`, región `aws-eu-west-2`, Postgres 16 |
-| Stripe | Cuenta **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`). Producto `Cartera · CCSE · Acceso 3 meses`, precio 9,99 EUR pago único con IVA incluido, `lookup_key` `a-ccse-acceso-90d-999eur`, `metadata.proyecto=a-ccse` |
+| Stripe | Cuenta **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`). Producto `CCSE Fácil — Acceso 3 meses`, precio 9,99 EUR pago único con IVA incluido, `lookup_key` `a-ccse-acceso-90d-999eur`, `metadata.proyecto=a-ccse` |
 | Eventos del webhook | `checkout.session.completed`, `checkout.session.async_payment_succeeded` → `https://ccse-en-tu-idioma.vercel.app/api/stripe/webhook` |
 
 ## Variables de entorno (production y preview)

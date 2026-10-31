@@ -22,7 +22,7 @@ Lo hace una sesión de Claude, no Moisés. Los pasos exactos (proyecto de Vercel
 `proyectos/a-ccse`, el proyecto de Neon `cartera-a-ccse`, el producto y el webhook de Stripe de la cuenta Numi Mates, las variables y los comandos) están en
 **[DESPLIEGUE.md](DESPLIEGUE.md)**. Las reglas comunes están en `../../DESPLIEGUES.md`.
 
-- **Stripe:** el producto `Cartera · CCSE · Acceso 3 meses` y su precio se crean por API la primera vez, de forma idempotente (por `lookup_key`).
+- **Stripe:** el producto `CCSE Fácil — Acceso 3 meses` y su precio se crean por API la primera vez, de forma idempotente (por `lookup_key`).
   El webhook lo crea `scripts/stripe-configurar.mjs` o, si falta, la propia app en el primer pago. Aunque el webhook fallara,
   la página de vuelta del pago confirma la sesión con Stripe y da el acceso igual. `STRIPE_MODO=test` usa `STRIPE_TEST_SECRET_KEY`, y `live` usa `STRIPE_SECRET_KEY`.
 - **Base de datos:** `npm run build` aplica `prisma/migrations` si hay `DATABASE_URL`, y sigue sin ella.
