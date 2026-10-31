@@ -13,6 +13,8 @@ lo bloquea. En el mismo menú del entorno (barra de título de la sesión → Ed
 `api.anthropic.com`, `*.neon.tech`, `*.vercel.app` y, si P se publica en Cloudflare Pages, `api.cloudflare.com`. Pasos: https://code.claude.com/docs/en/cloud-environments#network-access.
 Sin esto, las sesiones no pueden crear productos de Stripe ni desplegar aunque tengan los secretos.
 
+**Hecho el 28/10/2026** (sesión del Mac): entorno «Default» en Limitado con esos 10 dominios y gestores de paquetes.
+
 ## 1. Una sola vez: los accesos como secretos del entorno en la nube
 
 La sesión del Mac (con el navegador de Moisés abierto) obtiene estos accesos y los guarda en el entorno en la nube
@@ -27,15 +29,27 @@ de las sesiones de proyecto: menú del entorno en la barra de título de la sesi
 | `STRIPE_SECRET_KEY` | dashboard.stripe.com (cuenta **Numi Mates**, modo real) → Developers → API keys → **Restricted key** con permisos de escritura en Products, Prices, Checkout Sessions, Customers, Subscriptions, Webhook Endpoints, Coupons; lectura en Balance y Payment Intents | Cobros reales de todos los proyectos |
 | `STRIPE_TEST_SECRET_KEY` | la misma cuenta en modo prueba → Developers → API keys → Secret key `sk_test_` | Desarrollo y pruebas de punta a punta |
 | `RESEND_API_KEY` | resend.com → API Keys → Create (la cuenta ya existe; dominio `algorithmicslleida.com` verificado) | Correo transaccional |
-| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas | Textos legales de cada producto |
+| `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | Datos del titular (Moisés Mora, autónomo) para aviso legal y facturas. **`LEGAL_EMAIL` = `hola@numimates.com`** en todos los proyectos hasta que cada uno tenga dominio propio; nunca el correo personal de Moisés ni nada de Algorithmics | Textos legales de cada producto |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (solo si P va en Cloudflare Pages) | dash.cloudflare.com → My Profile → API Tokens → plantilla «Edit Cloudflare Workers» + Pages; Account ID en la página de inicio del dominio | Publicar los sitios de P sin coste |
 | `GELATO_API_KEY` (G) | dashboard.gelato.com → Developer → API keys; la cuenta la abre Moisés (identidad y tarjeta) | Pedidos de impresión de cuentos |
 | `GOOGLE_PLAY_JSON` (más adelante) | Google Play Console → cuenta de servicio | Publicar apps Android |
+
+**Hecho el 28/10/2026** (sesión del Mac): el entorno «Default» tiene `VERCEL_TOKEN` (equipo, sin caducidad), `VERCEL_TEAM_ID`,
+`NEON_API_KEY` y `NEON_ORG_ID` (organización «Vercel: moisesmodu-3705's projects»; no usar la de Algorithmics Lleida),
+`STRIPE_SECRET_KEY` (restringida `cartera-sesiones-claude-2`, Numi Mates, modo real), `STRIPE_TEST_SECRET_KEY`, `RESEND_API_KEY` y `LEGAL_*`.
+Copia local en el Mac: `~/.config/cartera/secretos.env` (chmod 600). Correo legal provisional `moisesmodu@gmail.com` hasta tener dominio
+por proyecto. **No se usa nada de Algorithmics** (ni web ni dominio `algorithmicslleida.com`): remitente de Resend `noreply@numimates.com`.
 
 Nunca se pegan claves en el chat. Si una variable no está, la sesión escribe lo que necesita en el `DESPLIEGUE.md` de
 su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 
 ## 2. Stripe: la cuenta real de Numi Mates para todos los proyectos
+
+> Atajo sin claves: la sesión madre («Estrategia ingresos recurrentes») tiene el conector de Stripe de claude.ai conectado a
+> esta cuenta. Lee sin problema, pero el 28/10 las escrituras devolvieron «Forbidden»: el conector está en modo solo
+> lectura. Si Moisés abre claude.ai → Ajustes → Conectores → Stripe y permite las herramientas de escritura, la sesión
+> madre crea los productos, precios y webhooks de todos los proyectos sin ninguna clave. Los scripts
+> `stripe-configurar.mjs` de cada proyecto son repetibles y reutilizan lo que ya exista.
 
 - Cuenta: **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`), modo real. No se abren cuentas nuevas.
 - Desarrollo y pruebas con las claves de **modo prueba de la misma cuenta**; al lanzar, las de modo real.
@@ -52,7 +66,7 @@ su proyecto y sigue con todo lo demás; no se detiene ni pregunta.
 2. **Neon:** `POST https://console.neon.tech/api/v2/projects` con `NEON_API_KEY`, región `aws-eu-west-2`, nombre
    `cartera-<clave>`; guardar la `connection_uri` como `DATABASE_URL` en Vercel; `prisma migrate deploy`.
 3. **Stripe:** productos, precios y webhook por API (sección 2); `STRIPE_WEBHOOK_SECRET` a Vercel.
-4. **Resend:** remitente `noreply@algorithmicslleida.com` hasta tener dominio propio.
+4. **Resend:** remitente `noreply@numimates.com` (verificado) hasta tener dominio propio; nunca `algorithmicslleida.com`.
 5. Comprobar de punta a punta en la URL de producción (pago en modo prueba) y anotar la URL en `panel/data/proyectos.json`.
 
 ## 3 bis. Primero de todo, en cada sesión: `node scripts/comprobar-entorno.mjs`
@@ -87,6 +101,7 @@ de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
 | #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
 | #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
 | #5 | G · Lunilla | `claude/g-cuentos` | sí | Neon `cartera-g-cuentos` (aws-eu-west-2), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, `scripts/stripe-configurar.mjs` (PDF 7,90 €, tapa dura 36,90 €), Resend; Gelato lo abre Moisés |
+| — | Panel «La cartera» | rama base | `panel/DESPLIEGUE.md` | ✔ Ejecutado el 31/10: proyecto `cartera`, Root Directory `panel`, integración Git (se publica con cada push a la rama base), Vercel Authentication. https://cartera-moisesmodu-3705s-projects.vercel.app |
 | #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos caminos: (A) Cloudflare Pages con wrangler y el workflow `p-webs-adsense.yml`, que publica solo en cada push a la base si existe `CLOUDFLARE_API_TOKEN`; (B) Vercel Pro (`netoclaro`, `impuestoclaro`, Root Directory `proyectos/p-webs-adsense/fabrica`). Variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
 
 Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
@@ -106,3 +121,29 @@ los PR abiertos de moisesmodu/vinclia-web hacia la rama base cuyo diff añada un
 esté marcado como ejecutado; ejecuta cada uno en orden según DESPLIEGUES.md §3, anota la URL de producción y el estado
 `lanzado` en panel/data/proyectos.json, añade al final del DESPLIEGUE.md la línea `Ejecutado el <fecha>` y haz push a
 la rama del PR. Si falta un acceso, créalo (sección 1) y guárdalo también como secreto del entorno en la nube.»
+
+## 6. Correo de contacto: hola@numimates.com en todo (decisión del 28/10)
+
+Hasta que cada proyecto tenga su dominio, el correo de contacto, el del aviso legal, el de respuesta (`reply-to`) y el
+que ve el cliente en Stripe es **hola@numimates.com**. El remitente técnico de Resend sigue siendo `noreply@numimates.com`.
+Ningún proyecto muestra el correo personal de Moisés ni ningún correo de Algorithmics. Cuando llegue el dominio propio
+(lunilla.es, nuevoenespana.app, netoclaro.es…), se cambia `LEGAL_EMAIL` y el `correo` de la configuración del país,
+se verifica el dominio en Resend y se redespliega. Tras el cambio del 28/10, la sesión del Mac cambia el secreto
+`LEGAL_EMAIL` del entorno a `hola@numimates.com` y **redespliega todos los proyectos** cuando sus PR lleven el commit
+del correo.
+
+### Dominios propios en Resend (31/10)
+
+Verificados en Resend (región eu-west-1) con DKIM `resend._domainkey`, SPF/MX de retorno en `send`, CNAME `rsend` y
+DMARC `_dmarc` `v=DMARC1; p=none;`, todo en la zona DNS de Vercel. **Los remitentes NO se han cambiado todavía**: siguen
+en `noreply@numimates.com` hasta que Moisés lo decida. Para cambiar, se edita la variable y se redespliega:
+
+- `ccsefacil.com` (A): **verified**. Proyecto Vercel `ccse-en-tu-idioma`, variable `CORREO_REMITENTE` → `noreply@ccsefacil.com`.
+- `tuspapeles.app` (N): **verified**. Proyecto Vercel `nuevo-en-espana`, variable `CORREO_REMITENTE` → `noreply@tuspapeles.app`.
+- `lunilla.cat` (G): **verified**. Proyecto Vercel `lunilla`, variable `CORREO_REMITENTE` → `noreply@lunilla.cat` (`CORREO_SOPORTE` se queda en hola@numimates.com mientras no haya buzón).
+- `oposita.digital` (B): **verified**. Proyecto Vercel `placa-oposicions`, variable `CORREO_REMITENTE` → `noreply@oposita.digital`.
+- `netoclaro.app` e `impuestoclaro.es` (P): sin correo transaccional, no se dan de alta en Resend.
+
+**Recepción:** no hay buzón en ningún dominio propio y no se ha creado MX de recepción en el raíz, así que `hola@<dominio>`
+no recibe correo. Hasta que haya buzón o reenvío, `LEGAL_EMAIL`, `reply-to` y el correo de contacto siguen en
+`hola@numimates.com`.

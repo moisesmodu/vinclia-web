@@ -1,7 +1,7 @@
 # Prompts para abrir una sesión por proyecto
 
 > Cada sesión se abre sobre el repo `moisesmodu/vinclia-web`, rama `claude/estrategia-ingresos-recurrentes-tx0rvw`.
-> Copia el prompt tal cual. Todos empiezan igual: leer `SESIONES.md`, `CARTERA.md` y `VIABILIDAD.md`.
+> Copia el prompt tal cual. Todos empiezan igual: leer `SESIONES.md`, `MARCAS.md` (identidad de marca obligatoria), `DESPLIEGUES.md` (nunca pedir claves ni cuentas de Vercel/Neon/Stripe a Moisés), `CARTERA.md` y `VIABILIDAD.md`.
 > Orden recomendado: A → N → B → Juegos → M → G (antes del 15/11) → I → J → L → O → P.
 
 ---
@@ -9,13 +9,13 @@
 ## A · CCSE nacionalidad (`proyectos/a-ccse`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto A en proyectos/a-ccse.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto A en proyectos/a-ccse.
 
 Producto: web y app (PWA + Android) para aprobar el examen CCSE de nacionalidad española. Contenido: las 300 preguntas oficiales del Instituto Cervantes (públicas; descárgalas de la fuente oficial y cítala), organizadas por las 5 tareas del examen, con explicación de cada respuesta generada con IA y revisada por lógica en castellano, árabe, francés, inglés, rumano, chino y ucraniano. Funciones: test por tema, simulacro de 25 preguntas en 45 minutos con nota, repaso espaciado de las falladas, progreso guardado sin registro (localStorage) y con cuenta opcional (correo). Gratis: 50 preguntas y 1 simulacro. Pago único de 9,99 € por 3 meses de acceso total (Stripe en modo prueba). Incluye una página "Cómo es el examen" con fechas, precio de 85 € y pasos para inscribirse, en los 7 idiomas, pensada para posicionar en Google.
 
 Marketing orgánico dentro de la sesión: 20 páginas SEO (una por tema y una por idioma con "test CCSE gratis"), ficha de Google Play en los 7 idiomas, 10 guiones de vídeo corto. Prepara también el gancho para el proyecto N: en la pantalla final del simulacro, una tarjeta "Siguiente paso: tus trámites" que apunte a /nuevo-en-espana (puede ser un enlace vacío por ahora).
 
-Criterio de hecho: desplegable en Vercel, pago en modo prueba funcionando, TWA para Android generado, los 4 archivos de SESIONES.md, informe final. Moisés solo debe: crear Stripe y pegar claves, crear el proyecto en Vercel y en Neon, y pulsar publicar en Google Play cuando le pases el paquete.
+Criterio de hecho: desplegable en Vercel, pago en modo prueba funcionando, TWA para Android generado, los 4 archivos de SESIONES.md, informe final. Moisés solo debe pulsar publicar en Google Play cuando le pases el paquete; cuentas, claves y despliegue siguen DESPLIEGUES.md.
 ```
 
 ---
@@ -23,13 +23,13 @@ Criterio de hecho: desplegable en Vercel, pago en modo prueba funcionando, TWA p
 ## N · Nuevo en España (`proyectos/n-nuevo-en-espana`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto N en proyectos/n-nuevo-en-espana. Si proyectos/a-ccse ya existe, reutiliza su base de código y su diseño: A y N son la misma marca.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto N en proyectos/n-nuevo-en-espana. Si proyectos/a-ccse ya existe, reutiliza su base de código y su diseño: A y N son la misma marca.
 
 Producto: guías paso a paso, con lista de documentos, plazos, tasas y errores frecuentes, para las personas regularizadas o recién llegadas a España, en castellano, árabe, francés, inglés, rumano, chino y ucraniano. Guías de la versión 1: renovación de la autorización de residencia (incluida la del Real Decreto 316/2026), empadronamiento, número de la Seguridad Social, tarjeta sanitaria, apertura de cuenta bancaria, homologación de títulos, canje y teórico del carnet de conducir, y camino a la nacionalidad (plazos de 2 y 10 años, CCSE y DELE A2). Cada guía termina con una lista de comprobación interactiva y un recordatorio de plazos por correo. Es información pública de fuentes oficiales, siempre citadas y fechadas, con aviso claro de que no es asesoramiento legal; nada de gestión de citas previas ni de tramitar en nombre de nadie. Gratis: la primera guía completa y los resúmenes de todas. Suscripción de 4,99 €/mes o pack de 19,90 € (Stripe en modo prueba).
 
 Marketing orgánico: 30 páginas SEO con las preguntas que la gente busca en cada idioma ("cómo renovar residencia 2027", "empadronarse sin contrato"), 10 guiones de vídeo corto por idioma principal (castellano, árabe, francés), lista de comunidades (sin publicar). Tarea programada: revisar cada semana las fuentes oficiales y actualizar plazos y tasas.
 
-Criterio de hecho: el de SESIONES.md. Moisés solo debe: claves de Stripe, Vercel y Neon.
+Criterio de hecho: el de SESIONES.md. Moisés no pega claves ni crea cuentas: el despliegue sigue DESPLIEGUES.md.
 ```
 
 ---
@@ -37,13 +37,13 @@ Criterio de hecho: el de SESIONES.md. Moisés solo debe: claves de Stripe, Verce
 ## B · Oposiciones de cola larga (`proyectos/b-oposiciones`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto B en proyectos/b-oposiciones.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto B en proyectos/b-oposiciones.
 
 Producto: plataforma de tests para oposiciones que las grandes apps no cubren: en la versión 1, Auxiliar Administratiu de la Generalitat de Catalunya, Auxiliar Administrativo de ayuntamientos de Cataluña (temario común), Mossos d'Esquadra (escala básica), Bombers de la Generalitat y Auxiliar de Enfermería del ICS. Para cada una: temario oficial troceado en temas a partir de la convocatoria del DOGC/BOE (cítala), banco de 300 a 500 preguntas por oposición generadas con IA a partir del texto legal, verificadas con una segunda pasada que comprueba la respuesta contra la fuente, con explicación y referencia al artículo. Tests por tema, simulacros con el formato real de la convocatoria, repaso espaciado, estadísticas, en castellano y catalán. Gratis: 20 preguntas por oposición. Suscripción de 9,99 €/mes (Stripe en modo prueba). Diseña el motor para que añadir una oposición nueva sea un archivo de configuración más el PDF de la convocatoria: así nace el proyecto L.
 
 Marketing orgánico: una página SEO por oposición y por tema ("test auxiliar administratiu Generalitat gratis"), página "Convocatorias 2027" actualizable, 10 guiones de vídeo. Tarea programada: cada semana, nuevas preguntas y vigilancia de convocatorias nuevas en el DOGC. Este proyecto sí admite anuncios de búsqueda desde el mes 2 (100 €/mes, VIABILIDAD §1): prepara la campaña y las palabras clave, sin activarla.
 
-Criterio de hecho: el de SESIONES.md. Moisés solo debe: claves de Stripe, Vercel y Neon.
+Criterio de hecho: el de SESIONES.md. Moisés no pega claves ni crea cuentas: el despliegue sigue DESPLIEGUES.md.
 ```
 
 ---
@@ -51,7 +51,7 @@ Criterio de hecho: el de SESIONES.md. Moisés solo debe: claves de Stripe, Verce
 ## Juegos · web (CrazyGames, Poki, itch.io) y Roblox (`proyectos/juegos`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto Juegos en proyectos/juegos.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto Juegos en proyectos/juegos.
 
 Objetivo de esta sesión: el primer juego web completo, listo para enviar a CrazyGames, Poki e itch.io, y la plantilla para que cada juego siguiente cueste una sesión. Juego: casual, de una mecánica, partidas de 1 a 3 minutos, controles de ratón y táctil, sin texto para que funcione en cualquier país (el público que paga está en EE. UU. y Reino Unido). Elige el género con datos: mira las categorías con más juegos nuevos y mejor valoración en CrazyGames y Poki y escoge un hueco. Pila: Phaser 3 + TypeScript + Vite, exportación HTML5 estática. Integra el SDK de CrazyGames (anuncios en pausas naturales, guardado) y el SDK de Poki de forma intercambiable. Arte y música generados con Higgsfield y ElevenLabs con tope de 60 créditos; lo que falte, con gráficos por código. Incluye pantalla de inicio, tutorial de 10 segundos, puntuación, dificultad progresiva y reinicio en 1 clic. Prueba de rendimiento en móvil de gama media.
 
@@ -75,7 +75,7 @@ Lo que NO se hace: gamificación por encima del aprendizaje, corazones que casti
 
 Marketing orgánico: 30 páginas SEO en catalán y castellano ("examen C1 català 2027 model", "nivell B2 català prova", "qué nivel de catalán piden las oposiciones", una por cuerpo y nivel), calendario de convocatorias 2027 con alertas por correo, 10 guiones de vídeo en catalán con errores típicos, ficha de Google Play. Admite anuncios de búsqueda desde el mes 2 (100 €/mes): prepara la campaña sin activarla. Tarea programada: cada semana, 50 ítems nuevos validados y revisión de las fechas oficiales; cada mes, el informe de coste por usuario.
 
-Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar desde el móvil haciendo el diagnóstico completo y un simulacro de C1, y la prueba de validez preparada (protocolo y formulario para que 20 candidatos reales comparen la corrección de la app con la de un profesor; no se lanza sin el 80 % de coincidencia). Moisés solo debe: claves de Stripe, Vercel, Neon y del proveedor de voz, y conseguir los 20 candidatos de prueba (academias de Lleida o el CNL).
+Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar desde el móvil haciendo el diagnóstico completo y un simulacro de C1, y la prueba de validez preparada (protocolo y formulario para que 20 candidatos reales comparen la corrección de la app con la de un profesor; no se lanza sin el 80 % de coincidencia). Moisés solo debe conseguir los 20 candidatos de prueba (academias de Lleida o el CNL); cuentas, claves y despliegue siguen DESPLIEGUES.md (el proveedor de voz se añade como secreto del entorno).
 ```
 
 ---
@@ -83,13 +83,13 @@ Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar desd
 ## G · Cuentos personalizados (`proyectos/g-cuentos`) · fecha límite 15/11
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto G en proyectos/g-cuentos. La tienda debe poder abrirse el 15 de noviembre para vender para Navidad y Reyes.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto G en proyectos/g-cuentos. La tienda debe poder abrirse el 15 de noviembre para vender para Navidad y Reyes.
 
 Producto: cuentos infantiles personalizados de calidad. El cliente rellena nombre, edad, ciudad, mascota, afición y un valor o miedo a tratar; elige colección (dormir, valores, hermanito nuevo, mi ciudad) e idioma (castellano o catalán). El sistema genera texto con claude-sonnet-5-5 a partir de plantillas narrativas fijas de 12 páginas revisadas por ti, y 12 ilustraciones con Higgsfield con un personaje y estilo consistentes (define 2 protagonistas, niño y niña, con hoja de personaje; nada de fotos del niño). Vista previa gratuita de 3 páginas antes de pagar. Formatos: PDF a 7,90 € y libro impreso tapa dura a 34,90 € mediante impresión bajo demanda con API (Gelato o Lulu; investiga precio real para España y ajusta el precio si el margen baja de 8 €). Maquetación automática a PDF de imprenta con sangrado. Stripe en modo prueba, correo de entrega con Resend, pedido a imprenta automático al pagar. Tope de créditos de Higgsfield en esta sesión: 80; genera 2 cuentos de muestra completos y reutiliza sus ilustraciones en la landing.
 
 Marketing orgánico: landing con los 2 cuentos de muestra, 15 páginas SEO ("cuento personalizado con nombre", "regalo abuelos Navidad"), 20 guiones de vídeo corto para TikTok e Instagram, programa de afiliados al 20 % (enlaces con código, panel mínimo) para cuentas de maternidad. Nada de anuncios. Tarea programada: cada día, pedidos, incidencias y soporte; cada semana, informe.
 
-Criterio de hecho: el de SESIONES.md, más un pedido de prueba de punta a punta (pago de prueba, PDF generado, pedido a imprenta en modo sandbox). Moisés solo debe: claves de Stripe, Vercel, Neon y cuenta de la imprenta.
+Criterio de hecho: el de SESIONES.md, más un pedido de prueba de punta a punta (pago de prueba, PDF generado, pedido a imprenta en modo sandbox). Moisés solo debe abrir la cuenta de la imprenta; cuentas, claves y despliegue siguen DESPLIEGUES.md.
 ```
 
 ---
@@ -97,7 +97,7 @@ Criterio de hecho: el de SESIONES.md, más un pedido de prueba de punta a punta 
 ## I · Libros en Amazon KDP (`proyectos/i-kdp`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto I en proyectos/i-kdp. Punto de partida: reutiliza el material de Numimates (repositorio público moisesmodu/numimates): los imprimibles de Numi Tech (imprimeix.html y las guías tech-guide-*.js de los cursos Robot, Creadors, Robòtica y Digital), las actividades sin pantalla de sus 108 sesiones y los ejercicios de Numi Mates (curriculum.js, de 1º de primaria a 4º de ESO) como banco para los cuadernos; lee NUMI-TECH-ESTAT.md antes de nada. El contenido está en catalán: tradúcelo al castellano y conserva la edición catalana.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto I en proyectos/i-kdp. Punto de partida: reutiliza el material de Numimates (repositorio público moisesmodu/numimates): los imprimibles de Numi Tech (imprimeix.html y las guías tech-guide-*.js de los cursos Robot, Creadors, Robòtica y Digital), las actividades sin pantalla de sus 108 sesiones y los ejercicios de Numi Mates (curriculum.js, de 1º de primaria a 4º de ESO) como banco para los cuadernos; lee NUMI-TECH-ESTAT.md antes de nada. El contenido está en catalán: tradúcelo al castellano y conserva la edición catalana.
 
 Producto: catálogo de libros de actividades para niños de 6 a 12 años sobre lógica, pensamiento computacional y programación sin pantalla, en castellano y catalán, para Amazon KDP en tapa blanda (y versión Kindle donde tenga sentido). Esta sesión entrega 5 títulos listos para subir: por ejemplo, "Lógica para peques 6-8", "Pensamiento computacional 8-10", "Scratch paso a paso", "Pasatiempos de programación", "Lògica per a nens" (catalán). Cada título: 60 a 100 páginas de actividades generadas con IA y verificadas (soluciones correctas, dificultad progresiva), maquetadas en PDF de interior con las medidas de KDP, portada en PDF con lomo calculado, descripción optimizada con palabras clave, 7 palabras clave y categorías, precio con margen de 2 a 5 € calculado con la calculadora de KDP. Construye el generador como pipeline reutilizable (tema → actividades → PDF) para que cada título nuevo cueste una tarea programada. Declaración de contenido generado con IA preparada según la política de KDP.
 
@@ -133,13 +133,13 @@ Criterio de hecho: los cursos 1 y 2 completos y listos para subir con la estruct
 ## L · Motor de exámenes multi-vertical (`proyectos/l-examenes`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto L en proyectos/l-examenes, reutilizando el motor de proyectos/b-oposiciones (si no existe aún, construye primero el motor con los criterios de B).
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto L en proyectos/l-examenes, reutilizando el motor de proyectos/b-oposiciones (si no existe aún, construye primero el motor con los criterios de B).
 
 Producto: el motor de tests y simulacros aplicado a tres verticales nuevas, cada una con su propio dominio y marca pero el mismo código: (1) nueva PAU/EBAU 2027 por materia y comunidad autónoma, con exámenes resueltos de años anteriores (públicos) y generación de exámenes nuevos del mismo formato; (2) DELE y SIELE (A2 a C1) para estudiantes de español de todo el mundo, interfaz en inglés, chino, portugués y francés, con expresión escrita y oral corregidas por IA; (3) nivell C de català. Gratis: una muestra por vertical. Suscripción de 9,99 €/mes por vertical (Stripe en modo prueba).
 
 Marketing orgánico: 20 páginas SEO por vertical en sus idiomas, fichas de Google Play, 10 guiones de vídeo por vertical. Sin anuncios hasta tener datos de B.
 
-Criterio de hecho: el de SESIONES.md, con las tres verticales desplegables desde la misma base. Moisés solo debe: claves de Stripe, Vercel y Neon, y 3 dominios.
+Criterio de hecho: el de SESIONES.md, con las tres verticales desplegables desde la misma base. Moisés solo debe comprar 3 dominios; cuentas, claves y despliegue siguen DESPLIEGUES.md.
 ```
 
 ---
@@ -147,13 +147,13 @@ Criterio de hecho: el de SESIONES.md, con las tres verticales desplegables desde
 ## O · Lectura en voz alta para niños (`proyectos/o-lectura`)
 
 ```
-Lee primero SESIONES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto O en proyectos/o-lectura.
+Lee primero SESIONES.md, MARCAS.md, DESPLIEGUES.md, CARTERA.md y VIABILIDAD.md de este repo y cúmplelos. Construye el proyecto O en proyectos/o-lectura.
 
 Producto: app (PWA + Android) en la que un niño de 5 a 8 años lee textos en voz alta, la app escucha, marca las palabras bien y mal leídas, mide palabras por minuto y precisión, y adapta la dificultad; en castellano y catalán. Reconocimiento con Whisper o equivalente afinado a voces infantiles (prueba 3 proveedores con grabaciones de prueba y documenta precisión y coste por minuto; objetivo menos de 0,5 € por niño y mes). Biblioteca inicial de 100 textos graduados generados con IA y revisados (sílabas, frases, cuentos cortos), con ilustración ligera. Panel para padres con progreso semanal por correo. Privacidad reforzada: audio no se guarda salvo consentimiento explícito; cumplimiento RGPD para menores. Gratis: 5 minutos al día. Suscripción de 6,99 €/mes (Stripe en modo prueba).
 
 Marketing orgánico: 20 páginas SEO ("mi hijo lee mal", "fluidez lectora primaria"), guía descargable para escuelas, 10 guiones de vídeo para padres, ficha de Google Play. Prueba de anuncios de 150 € prevista en el mes 4: prepara la campaña sin activarla.
 
-Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar con un niño real desde el móvil. Moisés solo debe: claves de Stripe, Vercel, Neon y del proveedor de voz.
+Criterio de hecho: el de SESIONES.md, con una demo que Moisés pueda probar con un niño real desde el móvil. Moisés no pega claves ni crea cuentas: el despliegue sigue DESPLIEGUES.md (el proveedor de voz se añade como secreto del entorno).
 ```
 
 ---
@@ -172,4 +172,26 @@ Catálogo (VIABILIDAD.md, «Catálogo de sitios del proyecto P»): 7 sitios orde
 Marketing: solo SEO. Para cada sitio, mapa de 200 palabras clave de cola larga con intención de uso, enlazado interno, y 10 fichas de datos "citables" (tablas con datos oficiales) que atraen enlaces. Nada de anuncios de pago, nunca. Tarea programada: cada semana, 20 páginas nuevas con datos actualizados, revisión de Search Console (cuando Moisés conecte la cuenta) e informe; cada 6 a 8 semanas, el siguiente sitio del catálogo por orden.
 
 Criterio de hecho: el de SESIONES.md, más los dos sitios desplegados en URL temporal, con Lighthouse 95+ en móvil y 40 calculadoras entre los dos sitios, cada una con su página en castellano y catalán. Moisés solo debe: comprar los 2 dominios, crear la cuenta de AdSense y pegar el código de verificación, y conectar Search Console.
+```
+
+
+---
+
+## Sesión transversal · Marketing de toda la cartera (carpeta `marketing/`)
+
+```
+Lee primero SESIONES.md, MARCAS.md, CARTERA.md, VIABILIDAD.md y JUICIO.md de este repo y cúmplelos. Eres la sesión de marketing de toda la cartera: tu trabajo es que a cada proyecto le lleguen clientes solos y que cobre; no construyes producto, construyes demanda. Trabajas en la carpeta marketing/ de la rama base.
+
+Lo que hay: once proyectos en panel/data/proyectos.json (estado, enlaces de producción, marca en marcas/tokens.json, MARKETING.md y MONETIZACION.md dentro de cada proyectos/<clave>/ cuando existan). Los lanzados hoy: Juegos (Nuvolet Games, 5 juegos), P (NetoClaro, ImpuestoClaro), A (CCSE en tu idioma), N (Nuevo en España), G (Lunilla). Primero los lanzados; los demás cuando tengan URL.
+
+Qué entregas, en este orden:
+1. marketing/PLAN.md: para cada proyecto lanzado, los 3 canales gratuitos con más probabilidad de traer las 100 primeras visitas en 14 días (SEO de cola larga, comunidades concretas con nombre y enlace, directorios y portales, programas de afiliados, marketplaces), con el mensaje exacto para cada uno en el idioma del público y el primer euro como meta. Nada de anuncios de pago hasta que un proyecto demuestre más de 30 € de margen por cliente (VIABILIDAD.md).
+2. marketing/CALENDARIO.md: 4 semanas, día a día, qué se publica dónde, para qué proyecto, con el texto listo para aprobar. Máximo 3 piezas al día en total.
+3. marketing/piezas/<clave>/: los textos y creatividades listos (posts, hilos, artículos SEO de 800-1200 palabras con la palabra clave y el enlace, descripciones para directorios, correos a comunidades). Las imágenes las generas con las herramientas disponibles respetando la ficha de marca; sin fotos de archivo genéricas.
+4. marketing/SEO.md: por proyecto, 20 palabras clave de cola larga con intención de compra, en los idiomas del producto, y la página que debe responder a cada una; abre un PR por proyecto con las páginas o cambios de títulos y metadescripciones que falten (sin tocar la lógica de pago).
+5. marketing/MEDICION.md: cómo se mide cada canal (UTM por pieza, Search Console, Vercel Analytics, panel de Stripe) y la tabla semanal visitas → registros → pagos por proyecto. Cada lunes actualizas ingresosMes, clientes y la acción «Marketing: <resultado de la semana>» en panel/data/proyectos.json.
+6. marketing/PARA-MOISES.md: solo lo que exige su identidad (abrir una cuenta en una red, aprobar un mensaje a una comunidad, un pago). Máximo 5 tareas. Nada sale publicado hacia fuera sin su aprobación explícita: deja cada mensaje listo con destinatario, texto y botón «aprobar» en el archivo marketing/APROBAR.md.
+7. marketing/TAREA-PROGRAMADA.md: el prompt de una tarea semanal que repite el ciclo (medir, ajustar, preparar la semana siguiente) cuando Moisés dé el visto bueno.
+
+Reglas duras: todo texto en la voz de la ficha de marca de MARCAS.md; cero spam (una pieza por comunidad y semana, aportando valor antes del enlace); sin datos personales de nadie; sin gasto nuevo >20 €/mes sin anotarlo; coordina con cada sesión de proyecto por SendMessage solo cuando necesites un cambio en su web. Haz commits pequeños a la rama base con mensajes claros y actualiza el panel al final de cada bloque. Criterio de hecho de la primera sesión: los 5 archivos de marketing/ para los cinco proyectos lanzados, las piezas de la primera semana listas para aprobar y el panel actualizado.
 ```

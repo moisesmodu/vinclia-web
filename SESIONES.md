@@ -64,6 +64,53 @@
    lanza en el primer mercado (normalmente España); el segundo (ver `CARTERA.md`, «Expansión internacional») se abre
    solo cuando el primero tenga datos de conversión. Cada ficha del panel lleva su campo `expansion`.
 
+## Lista «listo para vender» (la revisa Moisés, la mantienes tú)
+
+Cada ficha de `panel/data/proyectos.json` tiene `pulido.checklist` con ocho puntos y `pulido.faltan`. Cuando cumplas un
+punto, ponlo en `ok: true` en el mismo push, y actualiza `faltan` con lo que queda. No marques nada que no hayas probado.
+Cuando los ocho estén en `ok`, cambia `pulido.estado` a «listo para vender». Moisés revisa los proyectos por
+`pulido.prioridad`; lo que te pida en esa revisión va antes que cualquier otra cosa.
+
+## Enlaces públicos en el panel (todo lo que se pueda abrir, se enlaza)
+
+En `panel/data/proyectos.json`, el objeto `enlaces` de tu proyecto debe contener **todas** las URL públicas que existan,
+una por línea y con nombre claro: cada juego (su página de juego y su guía), cada sitio web, cada calculadora destacada,
+cada ficha en una tienda (Google Play, CrazyGames, Poki, itch.io, Amazon, Udemy), la página de precios, la vista previa
+privada si la hay, y el PR. Moisés revisa los proyectos desde el panel: lo que no esté enlazado no existe para él.
+Se actualiza en cada push, no al final.
+
+## Monetizar primero (lo más importante de todas las sesiones)
+
+Un proyecto sin un camino de cobro activo no está hecho, por bonito que sea. Antes de dar nada por terminado:
+
+1. **Cobro real activo.** Stripe en modo real con la cuenta Numi Mates (o la monetización de la plataforma: AdSense,
+   ingresos de CrazyGames/Poki, precio en Udemy o KDP) funcionando de punta a punta y probado con un pago real
+   reembolsado.
+2. **El pago aparece en la primera sesión de uso.** La parte gratis resuelve algo, y justo después se ofrece el pago con
+   el precio claro y un motivo concreto (más preguntas, el simulacro completo, el PDF, el libro). Nunca más de dos
+   pantallas entre «quiero esto» y «pagado».
+3. **Recuperación.** Quien se queda a medias recibe un correo o aviso (máximo uno) con el mismo enlace de pago.
+4. **Plan del primer euro.** `MONETIZACION.md` en la carpeta del proyecto: precio, embudo (de visita a pago, con el
+   porcentaje esperado en cada paso), de dónde salen las 100 primeras visitas sin pagar anuncios, y la fecha prevista
+   del primer euro (como máximo 14 días después del despliegue). Se actualiza cada semana con las cifras reales.
+5. **El panel lo refleja.** `ingresosMes`, `clientes` y la acción «Primer euro cobrado» en `panel/data/proyectos.json`
+   en cuanto ocurra. Un proyecto sin ingresos a los 30 días del lanzamiento pasa a revisión según JUICIO.md.
+
+## Correo de contacto
+
+Hasta tener dominio propio, el correo de contacto, del aviso legal y de respuesta es **hola@numimates.com** en todos los
+proyectos (DESPLIEGUES.md §6). El remitente técnico es `noreply@numimates.com`. Nunca el correo personal de Moisés ni
+nada de Algorithmics. Léelo de `LEGAL_EMAIL` y, si no existe, usa ese valor por defecto.
+
+## Identidad de marca (obligatorio antes de cualquier pantalla o texto público)
+
+Lee `MARCAS.md` y `marcas/tokens.json` (tu ficha está en `proyectos.<clave>`). Usa exactamente el nombre, la promesa
+en los idiomas del producto, los colores, las dos fuentes y el logotipo `marcas/logos/<clave>.svg` (y `<clave>-icono.svg`
+para favicon, app y tiendas). Pie con el sello común «Hecho en Lleida · Precio claro · Cancela en un clic» y pantalla de
+precio con la estructura de MARCAS.md §3. Si tu proyecto ya tenía otro nombre o colores, cámbialos en tu rama; si crees
+que tu nombre es mejor, dilo en el PR con el motivo y mantén el de la ficha. Anota «Identidad de marca aplicada» en
+`panel/data/proyectos.json`.
+
 ## Antes de diseñar: el análisis del líder
 En `panel/data/proyectos.json`, tu proyecto tiene (si existe) el campo `lider`: ingeniería inversa de producto del mejor
 competidor, con su modelo y las listas `copiar`, `mejorar`, `adaptar` y `planAccion`. **Léelo antes de diseñar nada** y
