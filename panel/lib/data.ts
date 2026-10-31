@@ -102,6 +102,11 @@ export const documentos: Record<string, { titulo: string; archivo: string }> = {
   marcas: { titulo: 'Marcas e identidad', archivo: 'MARCAS.md' },
   despliegues: { titulo: 'Despliegues y cuentas', archivo: 'DESPLIEGUES.md' },
   'producto-m': { titulo: 'Producto M: certificados de catalán', archivo: 'M-CATALA-PRODUCTE.md' },
+  marketing: { titulo: 'Marketing: plan de la cartera', archivo: 'marketing/PLAN.md' },
+  'marketing-calendario': { titulo: 'Marketing: calendario', archivo: 'marketing/CALENDARIO.md' },
+  'marketing-aprobar': { titulo: 'Marketing: piezas por aprobar', archivo: 'marketing/APROBAR.md' },
+  'marketing-para-moises': { titulo: 'Marketing: para Moisés', archivo: 'marketing/PARA-MOISES.md' },
+  'marketing-medicion': { titulo: 'Marketing: medición', archivo: 'marketing/MEDICION.md' },
 };
 
 export function documentoHtml(slug: string): { titulo: string; html: string } | null {
