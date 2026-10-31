@@ -83,16 +83,26 @@ try {
   await pag.waitForTimeout(700);
   const despues = await f.$eval('.res-val', (e) => e.textContent);
   ok(antes !== despues, `recalcula al escribir (${antes} → ${despues})`);
-  await f.click('.grupo-fam summary').catch(() => {});
-  await pag.waitForTimeout(600);
-  const alto2 = await pag.$eval('#w0 iframe', (i) => parseFloat(i.style.height));
-  ok(alto2 > alto, `la altura sigue al contenido al abrir la sección familiar (${alto} → ${alto2}px)`);
-  await f.click('.grupo-fam summary').catch(() => {});
-  await pag.waitForTimeout(600);
-  await pag.screenshot({ path: `${CAP}/widget-web-externa-movil.png`, fullPage: true });
+  // Cambio de altura sin recargar: abrir la sección familiar (o, si la calculadora no la tiene, cualquier <details>)
+  const plegable = (await f.$('.grupo-fam summary')) ?? (await f.$('details summary'));
+  if (plegable) {
+    await plegable.click();
+    await pag.waitForTimeout(600);
+    const alto2 = await pag.$eval('#w0 iframe', (i) => parseFloat(i.style.height));
+    const real = await f.evaluate(() => Math.ceil(document.querySelector('.emb').getBoundingClientRect().height));
+    ok(alto2 !== alto && Math.abs(alto2 - real) <= 20, `la altura sigue al contenido al desplegar una sección (${alto} → ${alto2}px)`);
+    await plegable.click();
+    await pag.waitForTimeout(600);
+  }
+  const alto3 = await pag.$eval('#w0 iframe', (i) => parseFloat(i.style.height));
+  const real3 = await f.evaluate(() => Math.ceil(document.querySelector('.emb').getBoundingClientRect().height));
+  ok(Math.abs(alto3 - real3) <= 20, `tras recalcular, el iframe mide lo que el contenido (${alto3} / ${real3}px)`);
   const r1 = await altoYScroll(pag, '#w1');
   ok(await r1.f.evaluate(() => document.documentElement.dataset.tema) === 'oscuro', '?tema=oscuro aplica el tema oscuro');
   ok(await r1.f.evaluate(() => getComputedStyle(document.body).backgroundColor) !== 'rgb(255, 255, 255)', 'fondo oscuro en tema oscuro');
+  await pag.evaluate(() => scrollTo(0, 0));
+  await pag.waitForTimeout(300);
+  await pag.screenshot({ path: `${CAP}/widget-web-externa-movil.png`, fullPage: true });
   await ctx.close();
 
   // 2 · Escritorio, valores iniciales por URL

@@ -41,6 +41,15 @@ AdSense, así que pueden dar el primer euro antes.
 lleguen las primeras visitas de foros (las 100 primeras visitas, más abajo). Es una estimación y depende sobre todo de
 la tasa de conversión, que hoy no conocemos.
 
+## Tercera vía: widget para profesionales (suscripción, sin anuncios)
+
+Las calculadoras se incrustan en webs de gestorías, asesorías, inmobiliarias y blogs (`/para-profesionales/` en cada
+sitio). Gratis con enlace a nuestra web, o con su marca por **9 €/mes o 90 €/año (Profesional, 1 dominio)** y
+**29 €/mes (Agencia, hasta 10 dominios)**, IVA incluido, cancelando en un clic. Cobro con Payment Links de Stripe
+(`scripts/stripe-widget.mjs`; en test ya creados, en real pendiente de aprobación). Embudo, captación de las 50
+primeras gestorías (sin enviar nada sin aprobación) y previsión en `B2B.md`: primer cliente de pago previsto entre el
+16/11 y el 15/12/2026 si los correos salen la semana del 2/11.
+
 ## Previsión de RPM, en euros por 1.000 páginas vistas
 
 Son estimaciones y no datos medidos. Las he sacado de rangos públicos de AdSense para España en nichos de finanzas
