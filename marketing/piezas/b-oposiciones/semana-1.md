@@ -2,7 +2,7 @@
 
 > Res es publica sense l'aprovació de Moisés (SESIONES.md, regla 1). Les peces B-01 a B-05 són els cinc missatges de `MONETIZACION.md §4` que Moisés va aprovar el 31/10: només s'hi ha afegit la versió castellana i l'enllaç amb mesura.
 > En cada publicació diem que l'eina és nostra («he fet una web») i que Plaça no és cap administració pública; aportem valor (test gratis, taula de convocatòries) abans de l'enllaç.
-> Una publicació per comunitat i setmana com a màxim; sempre es respon a qui pregunti. Les URL són les de producció actuals (`placa-oposicions.vercel.app`); quan `oposita.digital` propagui, es canvia el domini i es manté el `utm`.
+> Una publicació per comunitat i setmana com a màxim; sempre es respon a qui pregunti. Les URL són les del domini propi `oposita.digital` (actiu des del 31/10; `placa-oposicions.vercel.app` segueix funcionant però no s'usa a les peces).
 
 Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'article de la llei a cada resposta, 20 preguntes gratis per oposició sense registre, simulacres amb el format real, 9,99 €/mes (23,97 € trimestral, 71,88 € anual), l'historial no s'esborra en cancel·lar, botó per avisar d'errors a cada pregunta. La primera prova de la 46/26 de Mossos es va fer el 17/10/2026 [verificar]: el missatge de Mossos apunta a la propera convocatòria i a qui repeteix.
 
