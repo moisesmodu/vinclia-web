@@ -11,8 +11,8 @@ const defs = import.meta.glob('../src/calculadoras/*.ts', { eager: true, import:
 const ids = [...nomina.calculadoras, ...impuestos.calculadoras];
 
 describe('todas las calculadoras', () => {
-  it('hay 40 y todas tienen definición', () => {
-    expect(ids.length).toBe(40);
+  it('hay 41 y todas tienen definición', () => {
+    expect(ids.length).toBe(41);
     for (const id of ids) expect(defs[`../src/calculadoras/${id}.ts`], id).toBeTruthy();
   });
   for (const id of ids) {

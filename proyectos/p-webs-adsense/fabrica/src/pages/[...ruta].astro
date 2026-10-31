@@ -17,6 +17,7 @@ import { leerCSV } from '../lib/csv';
 import { nombreComunidad } from '../lib/campos';
 import { icono, iconoCalc } from '../lib/iconos';
 import { graficoFicha, serieFicha, minilinea, reparto, barras } from '../lib/graficos';
+import '../styles/calendario.css';
 
 export function getStaticPaths() {
   return paginas().map((p) => ({ params: { ruta: p.ruta || undefined }, props: { p } }));
@@ -380,11 +381,12 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         <div>
           <div class="intro" set:html={v.pg.intro} />
           <p class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></p>
-          {provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
+          {provisionales.includes(anio) && p.coleccion?.plantilla !== 'calendario-laboral' && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
           <a class="cta-calc" href={v.href}><span class="ico-caja" set:html={iconoCalc(v.calc.id, 24)} /><span><small>{u.usarCalc}</small><strong>{v.calc.h1}</strong></span><span class="ir" aria-hidden="true">→</span></a>
         </div>
         {v.tipoGraf === 'barras' && <Fragment set:html={v.grafico} />}
       </div>
+      {v.pg.bloque && <Fragment set:html={v.pg.bloque} />}
       <div class="ficha-tablas" set:html={v.html} />
       <Anuncio posicion="bajoResultado" lang={lang} />
       {v.pg.faq?.length > 0 && (

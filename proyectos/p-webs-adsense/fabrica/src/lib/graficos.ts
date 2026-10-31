@@ -190,6 +190,7 @@ const FICHAS: Record<string, ConfFicha> = {
   'aranceles-notaria-registro': { tipo: 'linea', y: [1, 2], xNumerico: true, titulo: (l) => L(l, 'Notaría y registro según el precio (sin IVA)', 'Notaria i registre segons el preu (sense IVA)') },
   'hipotecas-ine': { tipo: 'barras', y: [1], titulo: (l) => L(l, 'Interés medio de las hipotecas sobre vivienda (INE)', 'Interès mitjà de les hipoteques sobre habitatge (INE)') },
   'esfuerzo-hipotecario-por-sueldo': { tipo: 'linea', y: [1, 2, 3], xNumerico: true, titulo: (l) => L(l, 'Hipoteca máxima según el sueldo neto y el esfuerzo', 'Hipoteca màxima segons el sou net i l’esforç') },
+  'festivos-comunidades-2027': { tipo: 'barras', y: [2], ordenar: true, titulo: (l) => L(l, 'Festivos entre semana por comunidad en 2027', 'Festius entre setmana per comunitat el 2027') },
   'salario-minimo-estados': { tipo: 'barras', y: [1], ordenar: true, titulo: () => 'Salario mínimo por hora en cada estado' },
   'impuesto-estatal-estados': { tipo: 'barras', y: [3], ordenar: true, titulo: () => 'Impuesto estatal anual con $60,000 (soltero/a)' },
 };

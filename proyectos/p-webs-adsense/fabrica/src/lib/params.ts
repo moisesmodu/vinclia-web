@@ -12,7 +12,8 @@ const US: Mapa = import.meta.glob('../../params/us/*/{laboral,fiscal}.json', { e
 // Bloques extra de un sitio concreto (params/<pais>/<anio>/<bloque>.json, p. ej. vivienda.json). Solo se empaquetan
 // en los sitios que los declaran en sitio.json → «bloques» (astro.config.mjs define BLOQUES_EXTRA); así el
 // JavaScript de NetoClaro o ImpuestoClaro no lleva los parámetros de vivienda. Sin la variable (pruebas), todos.
-const EXTRA: Mapa = import.meta.glob(['../../params/*/*/*.json', '!../../params/*/*/{laboral,fiscal}.json'], { eager: true, import: 'default' });
+// calendario.json no es un bloque de parámetros: lo carga src/lib/calc/calendario.ts solo donde hace falta
+const EXTRA: Mapa = import.meta.glob(['../../params/*/*/*.json', '!../../params/*/*/{laboral,fiscal}.json', '!../../params/*/*/calendario.json'], { eager: true, import: 'default' });
 const CON_EXTRA = import.meta.env.BLOQUES_EXTRA as boolean | undefined;
 const PAISES: Mapa = import.meta.glob('../../params/*/pais.json', { eager: true, import: 'default' });
 const PAIS = import.meta.env.PAIS as string | undefined;
