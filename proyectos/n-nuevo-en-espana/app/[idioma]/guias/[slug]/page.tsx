@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { IDIOMAS, urlBase } from "@/lib/config";
+import { IDIOMAS, config, urlBase } from "@/lib/config";
 import { dicc, fechaLarga, LOCALE_BCP47 } from "@/lib/i18n";
 import { guia, resumen, slugsGuias } from "@/lib/contenido";
 import GuiaCompleta from "@/components/GuiaCompleta";
@@ -77,6 +77,14 @@ export default async function PaginaGuia({ params }: { params: Promise<{ idioma:
               ))}
             </dl>
           </section>
+        ) : null}
+
+        {slug === "nacionalidad" && config.enlaces?.ccse ? (
+          <aside className="tarjeta p-5 border-2 border-marca">
+            <h2 className="font-bold text-lg">{d.guia.ccseTitulo}</h2>
+            <p className="mt-1 text-suave">{d.guia.ccseTexto}</p>
+            <a className="boton inline-block mt-3" href={config.enlaces.ccse} target="_blank" rel="noopener">{d.guia.ccseBoton}</a>
+          </aside>
         ) : null}
 
         {completa ? (
