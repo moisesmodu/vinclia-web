@@ -1,0 +1,1799 @@
+{
+ "pais": "es",
+ "anio": 2026,
+ "estado": "publicado",
+ "actualizado": "2026-10-30",
+ "nota_general": "Solo los festivos de comunidad, para comparar con 2027. Sin festivos locales. boe.es no era accesible desde el entorno: listas contrastadas por búsqueda web.",
+ "fuente": {
+  "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+  "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+ },
+ "comunidades": {
+  "AN": {
+   "verificado": true,
+   "fuente": {
+    "nombre": "Junta de Andalucía: calendario laboral y fiestas locales",
+    "url": "https://www.juntadeandalucia.es/organismos/empleoempresaytrabajoautonomo/areas/relaciones-laborales/calendario-fiestas.html"
+   },
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-02-28",
+     "n": {
+      "es": "Día de Andalucía",
+      "ca": "Dia d’Andalusia"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "AR": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-23",
+     "n": {
+      "es": "San Jorge, Día de Aragón",
+      "ca": "Sant Jordi, Dia d’Aragó"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "AS": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-09-08",
+     "n": {
+      "es": "Día de Asturias",
+      "ca": "Dia d’Astúries"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "IB": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Consell de Govern: calendario de festivos laborales de las Illes Balears para 2026",
+    "url": "https://www.caib.es/pidip2front/jsp/es/ficha-convocatoria/consell-de-govern-aprobado-el-calendario-de-festivos-laborales-en-el-ambito-de-las-illes-balears-para-el-ano-2026"
+   },
+   "nota": "Falta una de las 12 fiestas en las fuentes consultadas. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "completo": false,
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-02",
+     "n": {
+      "es": "Día siguiente al Día de las Illes Balears",
+      "ca": "Dia següent a la Diada de les Illes Balears"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CN": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Decreto 61/2025; falta una de las 12 fiestas en las fuentes consultadas. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "completo": false,
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-30",
+     "n": {
+      "es": "Día de Canarias",
+      "ca": "Dia de Canàries"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CB": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-07-28",
+     "n": {
+      "es": "Día de las Instituciones de Cantabria",
+      "ca": "Dia de les Institucions de Cantàbria"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-09-15",
+     "n": {
+      "es": "La Bien Aparecida",
+      "ca": "La Bien Aparecida"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CL": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-23",
+     "n": {
+      "es": "Fiesta de Castilla y León",
+      "ca": "Festa de Castella i Lleó"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CM": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Decreto 44/2025, de 17 de junio. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-04",
+     "n": {
+      "es": "Corpus Christi",
+      "ca": "Corpus Christi"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CT": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Ordre EMT/66/2025 (DOGC de 6 de mayo de 2025). Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-09-11",
+     "n": {
+      "es": "Fiesta Nacional de Cataluña",
+      "ca": "Diada Nacional de Catalunya"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-26",
+     "n": {
+      "es": "San Esteban",
+      "ca": "Sant Esteve"
+     },
+     "o": "autonomico"
+    }
+   ]
+  },
+  "EX": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Hay fuentes que no incluyen el 7 de diciembre. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-09-08",
+     "n": {
+      "es": "Día de Extremadura",
+      "ca": "Dia d’Extremadura"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "GA": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-07-25",
+     "n": {
+      "es": "Día Nacional de Galicia",
+      "ca": "Dia Nacional de Galícia"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "MD": {
+   "verificado": true,
+   "fuente": {
+    "nombre": "Comunidad de Madrid: calendario laboral de 2026 con 12 festivos",
+    "url": "https://www.comunidad.madrid/noticias/2025/09/24/comunidad-madrid-aprueba-calendario-laboral-2026-12-festivos-dos-fijaran-ayuntamientos"
+   },
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-02",
+     "n": {
+      "es": "Fiesta de la Comunidad de Madrid",
+      "ca": "Festa de la Comunitat de Madrid"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-11-02",
+     "n": {
+      "es": "Lunes siguiente a Todos los Santos",
+      "ca": "Dilluns següent a Tots Sants"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "MC": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-09",
+     "n": {
+      "es": "Día de la Región de Murcia",
+      "ca": "Dia de la Regió de Múrcia"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "NA": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Las fuentes no coinciden en el Lunes de Pascua y el 2 de noviembre. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-03",
+     "n": {
+      "es": "San Francisco Javier, Día de Navarra",
+      "ca": "Sant Francesc Xavier, Dia de Navarra"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "PV": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-07-25",
+     "n": {
+      "es": "Santiago Apóstol",
+      "ca": "Sant Jaume"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "RI": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Una fuente no incluye el Lunes de Pascua. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-02",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-09",
+     "n": {
+      "es": "Día de La Rioja",
+      "ca": "Dia de La Rioja"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-07",
+     "n": {
+      "es": "Lunes siguiente al Día de la Constitución",
+      "ca": "Dilluns següent al Dia de la Constitució"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "VC": {
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 17 de octubre de 2025, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2026 (BOE de 28 de octubre de 2025)",
+    "url": "https://www.iberley.es/noticias/publicado-calendario-fiestas-laborales-2026-35536"
+   },
+   "nota": "Decreto 100/2025 del Consell. Lista de 2026 contrastada solo con fuentes secundarias (Iberley, Wolters Kluwer, sindicatos y prensa).",
+   "festivos": [
+    {
+     "f": "2026-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2026-04-03",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-04-06",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-08-15",
+     "n": {
+      "es": "Asunción de la Virgen",
+      "ca": "Assumpció de la Mare de Déu"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-10-09",
+     "n": {
+      "es": "Día de la Comunitat Valenciana",
+      "ca": "Dia de la Comunitat Valenciana"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2026-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2026-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  }
+ }
+}

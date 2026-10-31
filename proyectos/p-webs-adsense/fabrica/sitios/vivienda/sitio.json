@@ -1,0 +1,364 @@
+{
+  "id": "vivienda",
+  "pais": "es",
+  "idiomas": [
+    "es",
+    "ca"
+  ],
+  "dominio": "https://hogarclaro.es",
+  "nombre": "HogarClaro",
+  "lema": {
+    "es": "Calculadoras de hipoteca, compraventa y alquiler con datos oficiales",
+    "ca": "Calculadores d’hipoteca, compravenda i lloguer amb dades oficials"
+  },
+  "descripcion": {
+    "es": "Simulador de hipoteca con el Euríbor del mes, gastos de compraventa e ITP por comunidad, plusvalía, notaría y registro, y subida del alquiler con el IRAV. En castellano y catalán, con el método y las fuentes publicados.",
+    "ca": "Simulador d’hipoteca amb l’Euríbor del mes, despeses de compravenda i ITP per comunitat, plusvàlua, notaria i registre, i pujada del lloguer amb l’IRAV. En català i castellà, amb el mètode i les fonts publicats."
+  },
+  "bloques": [
+    "vivienda"
+  ],
+  "colores": {
+    "primario": "#0A6E80",
+    "primarioOscuro": "#085766",
+    "marca": "#0E98B0",
+    "acento": "#FFD166",
+    "cabecera": "#0B1F17",
+    "fondo": "#FFFFFF",
+    "tenue": "#F0F7F8",
+    "superficie": "#FFFFFF",
+    "tinta": "#0B1F17",
+    "suave": "#4A5A5E",
+    "borde": "#D6E5E8"
+  },
+  "ilustracion": {
+    "nota": "Ilustración propia de HogarClaro (Higgsfield, 0,25 créditos), 480 y 800 px.",
+    "base": "/img/heroe-vivienda"
+  },
+  "anioPorDefecto": 2027,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio",
+      "ca": "Editor i responsable del lloc"
+    },
+    "bio": {
+      "es": "Autónomo en Lleida desde hace años y dueño de una escuela de programación. Programa y revisa cada calculadora contra el texto del BOE, los aranceles de notarios y registradores y los datos del Banco de España y el INE.",
+      "ca": "Autònom a Lleida des de fa anys i propietari d’una escola de programació. Programa i revisa cada calculadora amb el text del BOE, els aranzels de notaris i registradors i les dades del Banc d’Espanya i l’INE."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@numimates.com"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "viv-simulador-hipoteca",
+    "viv-revision-euribor",
+    "viv-fija-o-variable",
+    "viv-cuanta-hipoteca",
+    "viv-ahorro-entrada",
+    "viv-gastos-compraventa",
+    "viv-itp",
+    "viv-iva-ajd",
+    "viv-notaria-registro",
+    "viv-tabla-amortizacion",
+    "viv-amortizacion-anticipada",
+    "viv-cambiar-banco",
+    "viv-tae",
+    "viv-plusvalia",
+    "viv-ganancia-venta",
+    "viv-deduccion-vivienda",
+    "viv-ibi",
+    "viv-subida-alquiler",
+    "viv-rentabilidad-alquiler",
+    "viv-alquilar-o-comprar"
+  ],
+  "destacadas": [
+    "viv-simulador-hipoteca",
+    "viv-revision-euribor",
+    "viv-gastos-compraventa",
+    "viv-cuanta-hipoteca",
+    "viv-plusvalia",
+    "viv-subida-alquiler"
+  ],
+  "rutasDatos": {
+    "es": "datos",
+    "ca": "dades"
+  },
+  "textosDatos": {
+    "es": {
+      "titulo": "Datos de vivienda e hipotecas para consultar y citar",
+      "descripcion": "Euríbor, ITP y AJD por comunidad, aranceles de notaría y registro, plusvalía, IRAV e hipotecas del INE: tablas con gráfico y CSV de HogarClaro."
+    },
+    "ca": {
+      "titulo": "Dades d’habitatge i hipoteques per consultar i citar",
+      "descripcion": "Euríbor, ITP i AJD per comunitat, aranzels de notaria i registre, plusvàlua, IRAV i hipoteques de l’INE: taules amb gràfic i CSV de HogarClaro."
+    }
+  },
+  "ui": {
+    "es": {
+      "revisado": "Parámetros revisados con el BOE, el Banco de España y el INE",
+      "avisoProvisional": "Los parámetros de {anio} son provisionales: el Euríbor y el IRAV se actualizan cada mes y los tipos de ITP y AJD de {anio} se cambian cuando cada comunidad publique su ley. Hasta entonces se usan los vigentes en 2026.",
+      "descargo": "Resultado orientativo calculado con la normativa publicada. No sustituye la FEIN de tu banco, el presupuesto de la notaría ni el asesoramiento de un profesional.",
+      "fuentesBanda": "BOE, Banco de España, INE, Catastro y agencias tributarias autonómicas."
+    },
+    "ca": {
+      "revisado": "Paràmetres revisats amb el BOE, el Banc d’Espanya i l’INE",
+      "avisoProvisional": "Els paràmetres del {anio} són provisionals: l’Euríbor i l’IRAV s’actualitzen cada mes i els tipus d’ITP i AJD del {anio} es canvien quan cada comunitat publiqui la seva llei. Fins aleshores s’utilitzen els vigents el 2026.",
+      "descargo": "Resultat orientatiu calculat amb la normativa publicada. No substitueix la FEIN del teu banc, el pressupost de la notaria ni l’assessorament d’un professional.",
+      "fuentesBanda": "BOE, Banc d’Espanya, INE, Cadastre i agències tributàries autonòmiques."
+    }
+  },
+  "programaticas": [
+    {
+      "id": "cuota-por-importe",
+      "plantilla": "viv-cuota-importe",
+      "csv": "hipoteca-importe.csv",
+      "slug": {
+        "es": "hipoteca-{importe}-euros-{anios}-anos",
+        "ca": "hipoteca-{importe}-euros-{anios}-anys"
+      },
+      "calc": "viv-simulador-hipoteca",
+      "titulo": {
+        "es": "Cuota de hipoteca por importe y plazo",
+        "ca": "Quota d’hipoteca per import i termini"
+      },
+      "indice": {
+        "es": "cuota-hipoteca-por-importe-y-plazo",
+        "ca": "quota-hipoteca-per-import-i-termini"
+      },
+      "descripcion": {
+        "es": "Cuota mensual, intereses y sueldo orientativo de hipotecas de 80.000 a 400.000 € a 20, 25 y 30 años, con el interés medio del INE.",
+        "ca": "Quota mensual, interessos i sou orientatiu d’hipoteques de 80.000 a 400.000 € a 20, 25 i 30 anys, amb l’interès mitjà de l’INE."
+      }
+    },
+    {
+      "id": "gastos-por-comunidad",
+      "plantilla": "viv-gastos-comunidad",
+      "csv": "comunidades-vivienda.csv",
+      "slug": {
+        "es": "gastos-compra-vivienda-{slug_es}",
+        "ca": "despeses-compra-habitatge-{slug_ca}"
+      },
+      "calc": "viv-gastos-compraventa",
+      "titulo": {
+        "es": "Gastos de compra de vivienda por comunidad",
+        "ca": "Despeses de compra d’habitatge per comunitat"
+      },
+      "indice": {
+        "es": "gastos-compra-vivienda-por-comunidad",
+        "ca": "despeses-compra-habitatge-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Impuestos, notaría, registro y gestoría de comprar una vivienda de 200.000 € en cada una de las 19 comunidades y ciudades autónomas.",
+        "ca": "Impostos, notaria, registre i gestoria de comprar un habitatge de 200.000 € a cadascuna de les 19 comunitats i ciutats autònomes."
+      }
+    },
+    {
+      "id": "itp-por-comunidad",
+      "plantilla": "viv-itp-comunidad",
+      "csv": "comunidades-vivienda.csv",
+      "slug": {
+        "es": "itp-vivienda-{slug_es}",
+        "ca": "itp-habitatge-{slug_ca}"
+      },
+      "calc": "viv-itp",
+      "titulo": {
+        "es": "ITP de vivienda por comunidad",
+        "ca": "ITP d’habitatge per comunitat"
+      },
+      "indice": {
+        "es": "itp-vivienda-por-comunidad",
+        "ca": "itp-habitatge-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Tipo de ITP de la vivienda de segunda mano en cada comunidad, con escalas por tramos, tipos reducidos y ejemplo para 200.000 €.",
+        "ca": "Tipus d’ITP de l’habitatge de segona mà a cada comunitat, amb escales per trams, tipus reduïts i exemple per a 200.000 €."
+      }
+    }
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Lo que cuesta tu casa, con números claros.",
+      "ca": "El que costa casa teva, amb números clars."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros",
+      "ca": "Fet a Lleida · Números clars"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Hogar",
+      "Claro"
+    ]
+  },
+  "heroe": {
+    "calc": "viv-simulador-hipoteca",
+    "campos": [
+      "importe",
+      "anios"
+    ],
+    "titulo": {
+      "es": "¿Cuánto vas a pagar <em>al mes</em> por tu casa?",
+      "ca": "Quant pagaràs <em>al mes</em> per casa teva?"
+    },
+    "texto": {
+      "es": "Escribe el importe y el plazo de la hipoteca y mira al instante la cuota, los intereses y el coste total, con el tipo medio del INE. Sin registrarte ni dejar tu teléfono.",
+      "ca": "Escriu l’import i el termini de la hipoteca i mira a l’instant la quota, els interessos i el cost total, amb el tipus mitjà de l’INE. Sense registrar-te ni deixar el teu telèfon."
+    },
+    "completa": {
+      "es": "Simular con Euríbor, fija o mixta",
+      "ca": "Simula amb Euríbor, fixa o mixta"
+    }
+  },
+  "categorias": [
+    {
+      "id": "hipoteca",
+      "icono": "casa",
+      "nombre": {
+        "es": "Tu hipoteca",
+        "ca": "La teva hipoteca"
+      },
+      "calcs": [
+        "viv-simulador-hipoteca",
+        "viv-revision-euribor",
+        "viv-fija-o-variable",
+        "viv-tabla-amortizacion",
+        "viv-tae"
+      ]
+    },
+    {
+      "id": "comprar",
+      "icono": "llave",
+      "nombre": {
+        "es": "Comprar casa",
+        "ca": "Comprar casa"
+      },
+      "calcs": [
+        "viv-cuanta-hipoteca",
+        "viv-ahorro-entrada",
+        "viv-gastos-compraventa",
+        "viv-itp",
+        "viv-iva-ajd",
+        "viv-notaria-registro"
+      ]
+    },
+    {
+      "id": "cambiar",
+      "icono": "subida",
+      "nombre": {
+        "es": "Amortizar o cambiar de banco",
+        "ca": "Amortitzar o canviar de banc"
+      },
+      "calcs": [
+        "viv-amortizacion-anticipada",
+        "viv-cambiar-banco",
+        "viv-deduccion-vivienda"
+      ]
+    },
+    {
+      "id": "vender",
+      "icono": "documento",
+      "nombre": {
+        "es": "Vender, impuestos y alquiler",
+        "ca": "Vendre, impostos i lloguer"
+      },
+      "calcs": [
+        "viv-plusvalia",
+        "viv-ganancia-venta",
+        "viv-ibi",
+        "viv-subida-alquiler",
+        "viv-rentabilidad-alquiler",
+        "viv-alquilar-o-comprar"
+      ]
+    }
+  ],
+  "cifras": [
+    {
+      "e": {
+        "es": "Euríbor a 12 meses",
+        "ca": "Euríbor a 12 mesos"
+      },
+      "p": "vivienda.euribor_12m.serie.ultimo.valor",
+      "f": "pct",
+      "nota": {
+        "es": "media de septiembre de 2026, sin cotejar con el BOE",
+        "ca": "mitjana de setembre del 2026, sense confrontar amb el BOE"
+      },
+      "ficha": "euribor-historico"
+    },
+    {
+      "e": {
+        "es": "Interés medio de las hipotecas",
+        "ca": "Interès mitjà de les hipoteques"
+      },
+      "p": "vivienda.hipotecas_ine.tipo_interes_medio_pct",
+      "f": "pct",
+      "nota": {
+        "es": "INE, julio de 2026",
+        "ca": "INE, juliol del 2026"
+      },
+      "ficha": "hipotecas-ine"
+    },
+    {
+      "e": {
+        "es": "ITP en Cataluña",
+        "ca": "ITP a Catalunya"
+      },
+      "p": "vivienda.itp_vivienda_usada.comunidades.CT.tipo_general",
+      "f": "pct",
+      "nota": {
+        "es": "segunda mano, primer tramo",
+        "ca": "segona mà, primer tram"
+      },
+      "ficha": "itp-por-comunidad"
+    },
+    {
+      "e": {
+        "es": "Subida del alquiler (IRAV)",
+        "ca": "Pujada del lloguer (IRAV)"
+      },
+      "p": "vivienda.irav_alquiler.serie.ultimo.valor",
+      "f": "pct",
+      "nota": {
+        "es": "septiembre de 2026, sin cotejar en el INE",
+        "ca": "setembre del 2026, sense confrontar a l’INE"
+      },
+      "ficha": "irav-mensual"
+    }
+  ],
+  "legal": {
+    "es": {
+      "sustituye": "la oferta vinculante (FEIN) de tu banco, el presupuesto de la notaría, las liquidaciones de la comunidad autónoma o el ayuntamiento ni el asesoramiento de un profesional",
+      "comparar": "tu FEIN, tu recibo o tu liquidación",
+      "patrocinio": "bróker hipotecario, seguro de hogar o gestoría, siempre inscritos en los registros oficiales",
+      "metodo": "<h2>Cómo calculamos</h2><p>Cada calculadora aplica paso a paso la norma que cita: la Ley 5/2019 de crédito inmobiliario, el texto refundido del ITP y AJD, la Ley del IVA, los aranceles de notarios y registradores (RD 1426/1989 y 1427/1989), la Ley de Haciendas Locales para la plusvalía y el IBI, la Ley del IRPF y la Ley 12/2023 de vivienda. Las cuotas siguen el sistema francés que usan los bancos. El método está publicado en cada página, debajo de la herramienta, con un ejemplo numérico.</p>\n<h2>De dónde salen los datos</h2><p>Los parámetros (Euríbor, tipos de ITP y AJD de cada comunidad, IVA, aranceles, comisiones de la Ley 5/2019, coeficientes de la plusvalía, IRAV, hipotecas del INE) están en archivos separados por año, cada uno con su fuente oficial: BOE, Banco de España, INE, Catastro y agencias tributarias autonómicas. Cada dato lleva su estado: los que todavía no hemos podido cotejar con la fuente oficial se marcan en pantalla como <em>sin cotejar</em>. Los criterios de los bancos (cuánto de tu sueldo puede ir a la cuota, qué parte del precio financian) se presentan como lo que son: criterios, no normas.</p>\n<h2>Cómo se actualiza</h2><p>El Euríbor y el IRAV se actualizan cada mes con el dato oficial. Cada semana se revisan el BOE y los boletines autonómicos. Si cambia una cifra, se actualiza el archivo de parámetros, se ejecutan las pruebas automáticas de cálculo y se vuelve a publicar el sitio; la fecha de cada página indica su última revisión.</p><p>HogarClaro es un sitio independiente: no es un banco, un bróker ni una inmobiliaria, no pide tus datos y no recomienda ninguna entidad.</p>"
+    },
+    "ca": {
+      "sustituye": "l’oferta vinculant (FEIN) del teu banc, el pressupost de la notaria, les liquidacions de la comunitat autònoma o l’ajuntament ni l’assessorament d’un professional",
+      "comparar": "la teva FEIN, el teu rebut o la teva liquidació",
+      "patrocinio": "bròquer hipotecari, assegurança de la llar o gestoria, sempre inscrits als registres oficials",
+      "metodo": "<h2>Com calculem</h2><p>Cada calculadora aplica pas a pas la norma que cita: la Llei 5/2019 de crèdit immobiliari, el text refós de l’ITP i AJD, la Llei de l’IVA, els aranzels de notaris i registradors (RD 1426/1989 i 1427/1989), la Llei d’hisendes locals per a la plusvàlua i l’IBI, la Llei de l’IRPF i la Llei 12/2023 d’habitatge. Les quotes segueixen el sistema francès que fan servir els bancs. El mètode està publicat a cada pàgina, sota l’eina, amb un exemple numèric.</p>\n<h2>D’on surten les dades</h2><p>Els paràmetres (Euríbor, tipus d’ITP i AJD de cada comunitat, IVA, aranzels, comissions de la Llei 5/2019, coeficients de la plusvàlua, IRAV, hipoteques de l’INE) són en fitxers separats per any, cadascun amb la seva font oficial: BOE, Banc d’Espanya, INE, Cadastre i agències tributàries autonòmiques. Cada dada porta el seu estat: les que encara no hem pogut confrontar amb la font oficial es marquen en pantalla com a <em>sense confrontar</em>. Els criteris dels bancs (quina part del sou pot anar a la quota, quina part del preu financen) es presenten com el que són: criteris, no normes.</p>\n<h2>Com s’actualitza</h2><p>L’Euríbor i l’IRAV s’actualitzen cada mes amb la dada oficial. Cada setmana es revisen el BOE i els butlletins autonòmics. Si canvia una xifra, s’actualitza el fitxer de paràmetres, s’executen les proves automàtiques de càlcul i es torna a publicar el lloc; la data de cada pàgina indica la seva última revisió.</p><p>HogarClaro és un lloc independent: no és un banc, un bròquer ni una immobiliària, no demana les teves dades i no recomana cap entitat.</p>"
+    }
+  }
+}

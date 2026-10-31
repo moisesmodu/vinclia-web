@@ -1,0 +1,37 @@
+{
+  "name": "fabrica-sitios",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "build:nomina": "SITIO=nomina astro build",
+    "build:impuestos": "SITIO=impuestos astro build",
+    "build:eeuu": "SITIO=eeuu astro build",
+    "build:vivienda": "SITIO=vivienda astro build",
+    "build:portal": "node --experimental-strip-types --no-warnings scripts/portal.mjs",
+    "build:todos": "npm run build:nomina && npm run build:impuestos && npm run build:eeuu && npm run build:vivienda && npm run build:portal",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "comprobar": "node scripts/comprobar.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "publicar": "node scripts/publicar.mjs",
+    "og": "node scripts/og.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "astro": "^5.18.2",
+    "marked": "^18.1.2",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "lighthouse": "^13.6.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=20.3"
+  }
+}

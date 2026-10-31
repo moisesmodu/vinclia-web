@@ -1,0 +1,73 @@
+/* Diseño propio de la fábrica: papel cálido, tipografía del sistema, resultados grandes y tablas legibles.
+   Los colores de cada sitio llegan como variables desde sitio.json. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-feature-settings:"tnum" 1}
+img,svg{display:block;max-width:100%}
+a{color:var(--primario);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+h1,h2,h3{font-family:Manrope,Inter,ui-sans-serif,system-ui,sans-serif;line-height:1.2;letter-spacing:-.015em;font-weight:700;margin:0 0 .5em;text-wrap:balance}
+h1{font-size:clamp(1.65rem,1.2rem + 2vw,2.4rem)}
+h2{font-size:clamp(1.25rem,1.1rem + .8vw,1.55rem);margin-top:1.8em}
+h3{font-size:1.1rem}
+p,ul,ol{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--acento);outline-offset:2px;border-radius:4px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.saltar{position:absolute;left:-999px;top:0}.saltar:focus{left:8px;top:8px;background:var(--superficie);padding:.5rem 1rem;z-index:10}
+.env{max-width:1120px;margin:0 auto;padding:0 16px}
+.estrecho{max-width:760px}
+
+.aviso-prov{background:color-mix(in srgb,var(--acento) 16%,var(--superficie));border-left:4px solid var(--acento);padding:.7rem 1rem;border-radius:8px;font-size:.9rem;margin:0 0 1.2rem}
+
+.btn{display:inline-block;background:var(--primario);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:.65rem 1.2rem}
+.btn:hover{background:var(--primarioOscuro)}
+
+.heroe{padding:28px 0 8px}
+.heroe p{font-size:1.12rem;color:var(--suave);max-width:60ch}
+.cita{background:var(--superficie);border:1px dashed var(--borde);border-radius:12px;padding:.8rem 1rem;font-size:.88rem;color:var(--suave)}
+.cita code{font-size:.82rem;word-break:break-all;color:var(--tinta)}
+
+/* Anuncios: solo se pintan cuando la cuenta de AdSense está activa; reservan alto para no mover la página */
+.anuncio{margin:24px 0;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.anuncio::before{content:attr(data-et);font-size:.7rem;color:var(--suave);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.anuncio ins{display:block;width:100%}
+
+.descargo{font-size:.82rem;color:var(--suave);border-top:1px solid var(--borde);padding-top:1rem;margin-top:2rem}
+
+@media (prefers-color-scheme:dark){
+  :root{--fondo:#0f1513;--tenue:#16201c;--superficie:#18211d;--tinta:#e8efeb;--suave:#a5b2ab;--borde:#2a3631}
+  .res-dest{background:#0a1411;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+  a{color:color-mix(in srgb,var(--primario) 45%,#fff)}
+  .btn-sec{color:color-mix(in srgb,var(--primario) 45%,#fff)}
+}
+@media print{
+  .cab,.pie,.anuncio,.calc-form,.calc-acciones,.faq,.relacionadas,.nav{display:none!important}
+  body{background:#fff;color:#000}.calc{box-shadow:none;border:0;display:block}.res-dest{background:#fff;color:#000;border:2px solid #000}
+}
+
+/* ——— Rediseño Claro: portada, bento, cifras, categorías ——— */
+.ico-caja{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;flex:none;color:var(--primario);background:color-mix(in srgb,var(--marca) 12%,var(--superficie));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--marca) 22%,transparent)}
+.ico-caja.grande{width:60px;height:60px;border-radius:16px}
+.btn-claro{display:flex;justify-content:center;align-items:center;gap:.4rem;margin-top:12px;background:var(--acento);color:var(--cabecera);text-decoration:none;font-weight:700;border-radius:12px;padding:.8rem 1rem;transition:transform .15s,box-shadow .15s}
+.btn-claro:hover{transform:translateY(-1px);box-shadow:0 8px 20px -10px var(--acento)}
+
+.portada-calc .calc{background:var(--superficie);color:var(--tinta);border:0;border-radius:24px;padding:18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06);grid-template-columns:1fr;gap:14px}
+@media (min-width:960px){.portada-calc .calc{padding:24px;transform:rotate(-.6deg)}.portada-calc .calc:hover{transform:none;transition:transform .3s}}
+.calc.mini .calc-form{grid-template-columns:1fr 1fr}
+.calc.mini .campo-select{grid-column:auto}
+.calc.mini .calc-out{position:static}
+.calc.mini .res{min-height:0}
+.calc.mini .res-sec,.calc.mini .res-filas,.calc.mini .res-tabla,.calc.mini .res-avisos{display:none}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+@media print{.calc-fija{display:none!important}}
+
+/* Enlace patrocinado: tarjeta clara con borde discontinuo, distinta de los anuncios de AdSense */
+.afiliado{margin:20px 0 4px;padding:16px 18px;border:1.5px dashed color-mix(in srgb,var(--marca) 45%,var(--borde));border-radius:16px;background:color-mix(in srgb,var(--marca) 5%,var(--superficie));display:grid;gap:8px;max-width:760px}
+.afi-et{margin:0;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);font-weight:600}
+.afi-t{margin:0;font-weight:600}
+.afi-cta{justify-self:start;background:var(--primario);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:.55rem 1.1rem}
+.afi-cta:hover{background:var(--primarioOscuro)}
+.afi-nota{margin:0;font-size:.8rem;color:var(--suave)}
+

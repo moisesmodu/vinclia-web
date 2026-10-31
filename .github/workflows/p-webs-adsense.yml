@@ -1,0 +1,78 @@
+# Puerta de calidad de la fábrica de sitios del proyecto P: pruebas de cálculo, compilación de todos los
+# sitios, comprobaciones de contenido y Lighthouse en móvil (falla si alguna página baja de 95).
+name: Proyecto P · fábrica de sitios
+on:
+  pull_request:
+    paths: ['proyectos/p-webs-adsense/fabrica/**', '.github/workflows/p-webs-adsense.yml']
+  push:
+    branches: ['claude/**']
+    paths: ['proyectos/p-webs-adsense/fabrica/**']
+  workflow_dispatch:
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/p-webs-adsense/fabrica
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: proyectos/p-webs-adsense/fabrica/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:todos
+      - run: npm run comprobar
+      - name: Lighthouse móvil
+        run: node scripts/lighthouse.mjs nomina impuestos eeuu portal
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse
+          path: proyectos/p-webs-adsense/fabrica/informes/lighthouse.json
+
+  # Publicación en Cloudflare Pages (camino A de proyectos/p-webs-adsense/DESPLIEGUE.md). Solo en la rama base y solo
+  # si existen los secretos; sin ellos el paso se salta y no falla.
+  publicar:
+    needs: calidad
+    if: github.ref == 'refs/heads/claude/estrategia-ingresos-recurrentes-tx0rvw' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/p-webs-adsense/fabrica
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      LEGAL_NOM: ${{ secrets.LEGAL_NOM }}
+      LEGAL_NIF: ${{ secrets.LEGAL_NIF }}
+      LEGAL_EMAIL: ${{ secrets.LEGAL_EMAIL }}
+      LEGAL_ADRECA: ${{ secrets.LEGAL_ADRECA }}
+      ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Sitio 1 · NetoClaro
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          SITIO: nomina
+          SITE_URL: ${{ vars.SITE_URL_NOMINA }}
+          UMAMI_ID: ${{ vars.UMAMI_ID_NOMINA }}
+          ADSENSE_SLOT_RESULTADO: ${{ vars.ADSENSE_SLOT_RESULTADO_NOMINA }}
+          ADSENSE_SLOT_FINAL: ${{ vars.ADSENSE_SLOT_FINAL_NOMINA }}
+        run: npm run publicar && npx wrangler@3 pages deploy publicar --project-name netoclaro --branch main --commit-dirty=true
+      - name: Sitio 2 · ImpuestoClaro
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          SITIO: impuestos
+          SITE_URL: ${{ vars.SITE_URL_IMPUESTOS }}
+          UMAMI_ID: ${{ vars.UMAMI_ID_IMPUESTOS }}
+          ADSENSE_SLOT_RESULTADO: ${{ vars.ADSENSE_SLOT_RESULTADO_IMPUESTOS }}
+          ADSENSE_SLOT_FINAL: ${{ vars.ADSENSE_SLOT_FINAL_IMPUESTOS }}
+        run: npm run publicar && npx wrangler@3 pages deploy publicar --project-name impuestoclaro --branch main --commit-dirty=true

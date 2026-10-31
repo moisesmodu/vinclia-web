@@ -1,0 +1,108 @@
+{
+  "nota": "Sitios de la familia Claro. «url» es la dirección pública de hoy: se cambia por el dominio cuando esté conectado (una línea por sitio) y se vuelve a publicar. La usan el pie «Familia Claro» de cada sitio y el portal.",
+  "portal": {
+    "url": "https://calculaclaro.vercel.app",
+    "dominio_previsto": "https://calculaclaro.com"
+  },
+  "sitios": [
+    {
+      "id": "nomina",
+      "nombre": "NetoClaro",
+      "url": "https://netoclaro.app",
+      "dominio": "https://netoclaro.app",
+      "icono": "cartera",
+      "estado": "activo",
+      "interes": {
+        "es": "Tu nómina, despido, paro y jubilación",
+        "ca": "La teva nòmina, acomiadament, atur i jubilació"
+      },
+      "para": {
+        "es": "Si trabajas por cuenta ajena en España",
+        "ca": "Si treballes per compte d’altri a Espanya"
+      },
+      "idiomas": [
+        "es",
+        "ca"
+      ]
+    },
+    {
+      "id": "impuestos",
+      "nombre": "ImpuestoClaro",
+      "url": "https://impuestoclaro.es",
+      "dominio": "https://impuestoclaro.es",
+      "icono": "documento",
+      "estado": "activo",
+      "interes": {
+        "es": "Renta, IVA, facturas y autónomos",
+        "ca": "Renda, IVA, factures i autònoms"
+      },
+      "para": {
+        "es": "Si haces la renta o eres autónomo en España",
+        "ca": "Si fas la renda o ets autònom a Espanya"
+      },
+      "idiomas": [
+        "es",
+        "ca"
+      ]
+    },
+    {
+      "id": "eeuu",
+      "nombre": "ChequeClaro",
+      "url": "https://cheque-claro.vercel.app",
+      "dominio": "https://chequeclaro.com",
+      "icono": "bandera",
+      "estado": "activo",
+      "interes": {
+        "es": "Cheque de pago, taxes y envíos de dinero en EE. UU.",
+        "ca": "Xec de pagament, impostos i enviaments de diners als EUA"
+      },
+      "para": {
+        "es": "Si vives y trabajas en Estados Unidos",
+        "ca": "Si vius i treballes als Estats Units"
+      },
+      "idiomas": [
+        "es"
+      ]
+    },
+    {
+      "id": "vivienda",
+      "nombre": "HogarClaro",
+      "url": "https://hogarclaro.vercel.app",
+      "dominio": "https://hogarclaro.es",
+      "icono": "casa",
+      "estado": "activo",
+      "interes": {
+        "es": "Hipoteca, compra de vivienda y alquiler",
+        "ca": "Hipoteca, compra d’habitatge i lloguer"
+      },
+      "para": {
+        "es": "Si vas a comprar o alquilar casa",
+        "ca": "Si compraràs o llogaràs casa"
+      },
+      "idiomas": [
+        "es",
+        "ca"
+      ]
+    },
+    {
+      "id": "motor",
+      "nombre": "MotorClaro",
+      "url": "",
+      "dominio": "https://motorclaro.es",
+      "icono": "coche",
+      "estado": "pronto",
+      "interes": {
+        "es": "Coste del coche, impuestos y ITV",
+        "ca": "Cost del cotxe, impostos i ITV"
+      },
+      "para": {
+        "es": "Si tienes o vas a comprar coche",
+        "ca": "Si tens o compraràs cotxe"
+      },
+      "idiomas": [
+        "es",
+        "ca"
+      ]
+    }
+  ]
+}

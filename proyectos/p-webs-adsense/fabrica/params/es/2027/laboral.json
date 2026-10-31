@@ -1,0 +1,450 @@
+{
+  "pais": "es",
+  "anio": 2027,
+  "estado": "provisional",
+  "actualizado": "2026-10-27",
+  "nota_general": "boe.es y seg-social.es no eran accesibles desde el entorno (bloqueo de red); valores contrastados mediante búsqueda web con resúmenes de mutuas, despachos y medios que citan la norma oficial. Bloques con 'provisional': true copian el valor de 2026 hasta que se publique la norma de 2027 (SMI, IPREM, Orden de cotización).",
+  "smi": {
+    "mensual14": 1221.0,
+    "anual": 17094.0,
+    "diario": 40.7,
+    "hora_empleo_hogar": 9.55,
+    "eventuales_temporeros_jornada": 57.82,
+    "verificado": false,
+    "nota": "SMI 2027 no publicado a 27/10/2026. Se copia el valor de 2026 (RD 126/2026).",
+    "fuente": {
+      "nombre": "Real Decreto 126/2026, de 18 de febrero (BOE 19/02/2026, BOE-A-2026-3815)",
+      "url": "https://www.boe.es/eli/es/rd/2026/02/18/126/con"
+    },
+    "provisional": true
+  },
+  "iprem": {
+    "diario": 20.0,
+    "mensual": 600.0,
+    "anual12": 7200.0,
+    "anual14": 8400.0,
+    "verificado": false,
+    "nota": "IPREM 2027 depende de la LPGE 2027 (no aprobada). Se copia el valor vigente.",
+    "fuente": {
+      "nombre": "LPGE 2023 (Ley 31/2022, DA 88ª) prorrogada; resumen Asepeyo bases y tipos 2026",
+      "url": "https://www.asepeyo.es/wp-content/uploads/Bases-tipos-cotizacion-2026-ES.pdf"
+    },
+    "provisional": true
+  },
+  "cotizacion": {
+    "base_max_mensual": 5101.2,
+    "base_max_diaria": 170.04,
+    "bases_min_mensual_por_grupo": {
+      "1": 1989.3,
+      "2": 1649.7,
+      "3": 1435.2,
+      "4": 1424.4,
+      "5": 1424.4,
+      "6": 1424.4,
+      "7": 1424.4
+    },
+    "bases_min_diaria_por_grupo": {
+      "8": 47.48,
+      "9": 47.48,
+      "10": 47.48,
+      "11": 47.48
+    },
+    "base_min_hora_tiempo_parcial_por_grupo": {
+      "1": 11.98,
+      "2": 9.94,
+      "3": 8.65,
+      "4_a_11": 8.58
+    },
+    "trabajador": {
+      "cc": 4.7,
+      "desempleo_indefinido": 1.55,
+      "desempleo_temporal": 1.6,
+      "fp": 0.1,
+      "mei": 0.17
+    },
+    "empresa": {
+      "cc": 23.6,
+      "desempleo_indefinido": 5.5,
+      "desempleo_temporal": 6.7,
+      "fogasa": 0.2,
+      "fp": 0.6,
+      "mei": 0.83,
+      "at_ep_referencia": 1.5
+    },
+    "horas_extra": {
+      "fuerza_mayor": {
+        "empresa": 12.0,
+        "trabajador": 2.0
+      },
+      "resto": {
+        "empresa": 23.6,
+        "trabajador": 4.7
+      }
+    },
+    "solidaridad": [
+      {
+        "desde_x_base_max": 1.0,
+        "hasta_x_base_max": 1.1,
+        "tipo_total": 1.38,
+        "empresa": 1.15,
+        "trabajador": 0.23
+      },
+      {
+        "desde_x_base_max": 1.1,
+        "hasta_x_base_max": 1.5,
+        "tipo_total": 1.5,
+        "empresa": 1.25,
+        "trabajador": 0.25
+      },
+      {
+        "desde_x_base_max": 1.5,
+        "hasta_x_base_max": null,
+        "tipo_total": 1.75,
+        "empresa": 1.46,
+        "trabajador": 0.29
+      }
+    ],
+    "contratos_cortos_cotizacion_adicional_euros": 33.62,
+    "verificado": false,
+    "nota": "Ya legislado para 2027: MEI 1,00% (0,83 empresa + 0,17 trabajador; art. 127 bis LGSS, RDL 2/2023), confirmado por fuentes secundarias. Solidaridad 2027: calculada aplicando los incrementos anuales legales (+0,23/+0,25/+0,29 puntos; DT 44ª LGSS) a los tipos de 2026 y reparto 5/6–1/6; ninguna fuente publicada lo confirma literalmente. Bases mínimas/máxima, cotización adicional de contratos cortos y resto de tipos: copia de 2026 pendiente de la Orden de cotización 2027 (la base máxima suele subir con la revalorización de pensiones + 1,2 puntos, RDL 2/2023).",
+    "fuente": {
+      "nombre": "LGSS art. 127 bis y DT 44ª (RDL 2/2023); valores base de la Orden PJC/297/2026",
+      "url": "https://www.boe.es/eli/es/rdl/2023/03/16/2"
+    },
+    "provisional": true
+  },
+  "desempleo": {
+    "duracion": [
+      {
+        "cotizados_desde_dias": 360,
+        "cotizados_hasta_dias": 539,
+        "prestacion_dias": 120
+      },
+      {
+        "cotizados_desde_dias": 540,
+        "cotizados_hasta_dias": 719,
+        "prestacion_dias": 180
+      },
+      {
+        "cotizados_desde_dias": 720,
+        "cotizados_hasta_dias": 899,
+        "prestacion_dias": 240
+      },
+      {
+        "cotizados_desde_dias": 900,
+        "cotizados_hasta_dias": 1079,
+        "prestacion_dias": 300
+      },
+      {
+        "cotizados_desde_dias": 1080,
+        "cotizados_hasta_dias": 1259,
+        "prestacion_dias": 360
+      },
+      {
+        "cotizados_desde_dias": 1260,
+        "cotizados_hasta_dias": 1439,
+        "prestacion_dias": 420
+      },
+      {
+        "cotizados_desde_dias": 1440,
+        "cotizados_hasta_dias": 1619,
+        "prestacion_dias": 480
+      },
+      {
+        "cotizados_desde_dias": 1620,
+        "cotizados_hasta_dias": 1799,
+        "prestacion_dias": 540
+      },
+      {
+        "cotizados_desde_dias": 1800,
+        "cotizados_hasta_dias": 1979,
+        "prestacion_dias": 600
+      },
+      {
+        "cotizados_desde_dias": 1980,
+        "cotizados_hasta_dias": 2159,
+        "prestacion_dias": 660
+      },
+      {
+        "cotizados_desde_dias": 2160,
+        "cotizados_hasta_dias": null,
+        "prestacion_dias": 720
+      }
+    ],
+    "porcentajes": [
+      {
+        "desde_dia": 1,
+        "hasta_dia": 180,
+        "pct": 70
+      },
+      {
+        "desde_dia": 181,
+        "hasta_dia": null,
+        "pct": 60
+      }
+    ],
+    "tope_min_sin_hijos": 560.0,
+    "tope_min_con_hijos": 749.0,
+    "tope_max_sin_hijos": 1225.0,
+    "tope_max_1_hijo": 1400.0,
+    "tope_max_2_o_mas": 1575.0,
+    "cotizacion_trabajador_descuento_pct": 4.87,
+    "subsidio": {
+      "tramos": [
+        {
+          "desde_mes": 1,
+          "hasta_mes": 6,
+          "pct_iprem": 95
+        },
+        {
+          "desde_mes": 7,
+          "hasta_mes": 12,
+          "pct_iprem": 90
+        },
+        {
+          "desde_mes": 13,
+          "hasta_mes": null,
+          "pct_iprem": 80
+        }
+      ],
+      "importe_tramos_euros": [
+        570.0,
+        540.0,
+        480.0
+      ],
+      "mayores_52_pct_iprem": 80,
+      "mayores_52_euros": 480.0,
+      "complemento_apoyo_empleo": "CAE (RDL 2/2024): permite compatibilizar el subsidio con un empleo por cuenta ajena o propia (hasta 180 días); el importe complementario es decreciente según el tiempo trabajado. Detalle de porcentajes no verificado.",
+      "verificado": true,
+      "nota": "Tramos 95/90/80% del IPREM mensual (600 €) por RDL 2/2024, en vigor desde 01/11/2024. Los importes de jornada parcial se prorratean. Detalle del CAE no confirmado con fuente oficial.",
+      "provisional": true
+    },
+    "verificado": true,
+    "nota": "Estructura legal (duración, 70%/60%, tramos del subsidio 95/90/80) sin cambios previstos. Topes e importes dependen del IPREM 2027 (no publicado): se copian los de 2026. Descuento del trabajador: 4,70 CC + 0,17 MEI 2027 = 4,87 (deducido, no verificado).",
+    "fuente": {
+      "nombre": "LGSS arts. 269-270 (redacción Ley 31/2022) y RDL 2/2024; topes según IPREM 2026",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+    },
+    "provisional": true
+  },
+  "incapacidad_temporal": {
+    "comun": [
+      {
+        "desde_dia": 1,
+        "hasta_dia": 3,
+        "pct": 0
+      },
+      {
+        "desde_dia": 4,
+        "hasta_dia": 20,
+        "pct": 60
+      },
+      {
+        "desde_dia": 21,
+        "hasta_dia": 545,
+        "pct": 75
+      }
+    ],
+    "profesional": [
+      {
+        "desde_dia": 1,
+        "hasta_dia": 545,
+        "pct": 75
+      }
+    ],
+    "paga_empresa": "Contingencias comunes: días 1-3 sin prestación legal (salvo mejora por convenio); días 4-15 los paga la empresa a su cargo; desde el día 16 la paga la Seguridad Social/mutua (la empresa la adelanta por pago delegado). Contingencias profesionales: el día de la baja lo paga la empresa como salario; desde el día siguiente 75% a cargo de la mutua/INSS (pago delegado).",
+    "verificado": true,
+    "nota": "Sin cambios legislados para 2027. Duración máxima 365 días prorrogables 180 más (545), no 540 (art. 169 LGSS). Porcentajes sobre base reguladora (base de cotización del mes anterior / días).",
+    "fuente": {
+      "nombre": "LGSS arts. 169-173 y RD 3158/1966 art. 2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+    }
+  },
+  "jubilacion": {
+    "edad_ordinaria_anos": 67,
+    "edad_ordinaria_meses": 0,
+    "cotizacion_para_edad_temprana_anos": 38,
+    "cotizacion_para_edad_temprana_meses": 6,
+    "edad_temprana_anos": 65,
+    "minimo_cotizado_anos": 15,
+    "escala_porcentaje": {
+      "base_15_anos_pct": 50,
+      "tramos": [
+        {
+          "meses": 248,
+          "pct_por_mes": 0.19
+        },
+        {
+          "meses": 16,
+          "pct_por_mes": 0.18
+        }
+      ]
+    },
+    "anos_para_100_pct": "37 años",
+    "anos_base_reguladora": "Sistema dual transitorio (RDL 2/2023): la más favorable entre 25 años (300 meses / 350) y el periodo ampliado (2027: 25 años y 4 meses según fuentes; amplía 4 meses/año descartando los 24 peores meses) hasta el modelo final de 2044 (29 años, se descartan 24 meses: 324/378).",
+    "pension_maxima_mensual": 3359.6,
+    "verificado": false,
+    "nota": "Legislado: desde 2027 edad ordinaria 67 años, o 65 con 38 años y 6 meses cotizados (DT 7ª LGSS); escala definitiva DT 9ª LGSS: 0,19% meses 1-248 y 0,18% los 16 siguientes (100% con 37 años), confirmada por CSIF/actuaris. Pensión máxima 2027 no publicada (revalorización IPC + 0,115 pp adicionales para la máxima, RDL 2/2023): se copia la de 2026.",
+    "fuente": {
+      "nombre": "LGSS DT 7ª y DT 9ª; RDL 2/2023 (DT 40ª LGSS); RDL 3/2026 (revalorización)",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"
+    },
+    "provisional": true
+  },
+  "autonomos": {
+    "tramos": [
+      {
+        "rend_min": 0,
+        "rend_max": 670.0,
+        "base_min": 653.59,
+        "base_max": 718.94,
+        "tabla": "reducida"
+      },
+      {
+        "rend_min": 670.01,
+        "rend_max": 900.0,
+        "base_min": 718.95,
+        "base_max": 900.0,
+        "tabla": "reducida"
+      },
+      {
+        "rend_min": 900.01,
+        "rend_max": 1166.7,
+        "base_min": 849.67,
+        "base_max": 1166.7,
+        "tabla": "reducida"
+      },
+      {
+        "rend_min": 1166.71,
+        "rend_max": 1300.0,
+        "base_min": 950.98,
+        "base_max": 1300.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 1300.01,
+        "rend_max": 1500.0,
+        "base_min": 960.78,
+        "base_max": 1500.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 1500.01,
+        "rend_max": 1700.0,
+        "base_min": 960.78,
+        "base_max": 1700.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 1700.01,
+        "rend_max": 1850.0,
+        "base_min": 1143.79,
+        "base_max": 1900.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 1850.01,
+        "rend_max": 2030.0,
+        "base_min": 1209.15,
+        "base_max": 2030.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 2030.01,
+        "rend_max": 2330.0,
+        "base_min": 1274.51,
+        "base_max": 2330.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 2330.01,
+        "rend_max": 2760.0,
+        "base_min": 1356.21,
+        "base_max": 2760.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 2760.01,
+        "rend_max": 3190.0,
+        "base_min": 1437.91,
+        "base_max": 3190.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 3190.01,
+        "rend_max": 3620.0,
+        "base_min": 1519.61,
+        "base_max": 3620.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 3620.01,
+        "rend_max": 4050.0,
+        "base_min": 1601.31,
+        "base_max": 4050.0,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 4050.01,
+        "rend_max": 6000.0,
+        "base_min": 1732.03,
+        "base_max": 5101.2,
+        "tabla": "general"
+      },
+      {
+        "rend_min": 6000.01,
+        "rend_max": null,
+        "base_min": 1928.1,
+        "base_max": 5101.2,
+        "tabla": "general"
+      }
+    ],
+    "tipo_total_pct": 31.6,
+    "desglose_tipo": {
+      "cc": 28.3,
+      "contingencias_profesionales": 1.3,
+      "cese": 0.9,
+      "fp": 0.1,
+      "mei": 1.0
+    },
+    "tarifa_plana_euros": 80.0,
+    "tarifa_plana_meses": 12,
+    "tarifa_plana_prorroga": "12 meses adicionales si los rendimientos netos previstos son inferiores al SMI (se solicita expresamente). Discapacidad ≥33%, violencia de género o terrorismo: 24 meses + 36 meses si rendimientos < SMI. Algunas fuentes indican cuota efectiva ~88,64 € al sumarse el MEI (no verificado).",
+    "deduccion_gastos_genericos_pct": 7,
+    "deduccion_gastos_genericos_societarios_pct": 3,
+    "verificado": false,
+    "nota": "Tabla de tramos 2027 NO aprobada ni negociada formalmente a octubre de 2026: se copia la de 2026. Lo único fijado por ley es el MEI de 1,00% (tipo total 31,60% si el resto no cambia). La base máxima de los tramos 11-15 seguirá a la base máxima del Régimen General 2027.",
+    "fuente": {
+      "nombre": "Orden PJC/297/2026, de 30 de marzo, normas de cotización 2026 (BOE 31/03/2026, BOE-A-2026-7296); RDL 3/2026 art. 3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"
+    },
+    "provisional": true
+  },
+  "indemnizacion": {
+    "improcedente_dias_por_ano": 33,
+    "improcedente_tope_mensualidades": 24,
+    "anterior_12_02_2012_dias_por_ano": 45,
+    "anterior_tope_mensualidades": 42,
+    "objetivo_dias_por_ano": 20,
+    "objetivo_tope_mensualidades": 12,
+    "fin_contrato_temporal_dias_por_ano": 12,
+    "verificado": true,
+    "nota": "Sin cambios legislados para 2027. Sin cambios legales en 2026. Para contratos anteriores al 12/02/2012: 45 días/año por el tiempo previo y 33 por el posterior; tope 720 días salvo que el periodo anterior ya supere esa cifra, con máximo absoluto de 42 mensualidades (DT 11ª ET).",
+    "fuente": {
+      "nombre": "Estatuto de los Trabajadores (RDLeg 2/2015), arts. 38, 49, 53, 56 y DT 11ª",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"
+    }
+  },
+  "vacaciones": {
+    "dias_naturales_minimos": 30
+  },
+  "permisos": {
+    "nacimiento_semanas": 19,
+    "verificado": true,
+    "nota": "Sin cambios legislados para 2027. RDL 9/2025 (convalidado): 19 semanas por progenitor (6 obligatorias tras el parto, 11 hasta los 12 meses, 2 flexibles hasta los 8 años); 32 semanas en familias monoparentales. Retribuido 100% por la Seguridad Social.",
+    "fuente": {
+      "nombre": "Real Decreto-ley 9/2025, de 29 de julio (ET art. 48.4 y LGSS)",
+      "url": "https://www.boe.es/eli/es/rdl/2025/07/29/9"
+    }
+  }
+}

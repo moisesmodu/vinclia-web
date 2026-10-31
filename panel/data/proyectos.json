@@ -3165,7 +3165,10 @@
       "ImpuestoClaro": "https://impuestoclaro.vercel.app/",
       "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/p-webs-adsense/semana-1.md",
       "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
-      "Web (dominio propio)": "https://netoclaro.app"
+      "Web (dominio propio)": "https://netoclaro.app",
+      "ChequeClaro": "https://cheque-claro.vercel.app/",
+      "CalculaClaro (portal)": "https://calculaclaro.vercel.app/",
+      "HogarClaro": "https://hogarclaro.vercel.app/"
     },
     "acciones": [
       {
@@ -3205,6 +3208,54 @@
         "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
       },
       {
+        "fecha": "2026-10-28",
+        "texto": "Fábrica de sitios (Astro) y sitios 1 NetoClaro (nómina) y 2 ImpuestoClaro (impuestos): 40 calculadoras en castellano y catalán, 20 fichas de datos, 238 páginas programáticas, Lighthouse móvil 100; vista previa publicada, pendiente de dominio"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "PR #6: DESPLIEGUE.md con dos caminos (Cloudflare Pages por API y GitHub Actions, o Vercel Pro) para la sesión del Mac; PARA-MOISES solo con dominios, AdSense, Search Console y NIF si falta"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Identidad de marca aplicada (familia Claro): C abierta con horizonte, verde propio por sitio, Manrope e Inter alojadas en el sitio, promesa «Números claros, sin letra pequeña» y sello «Hecho en Lleida · Números claros»; Lighthouse móvil 100 en las 16 páginas de muestra"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Correo de contacto y aviso legal: hola@numimates.com en los dos sitios. MONETIZACION.md con RPM previsto (4 € y 6 €), visitas para el primer euro y para 100 €/mes, 100 primeras visitas sin anuncios y primer euro previsto el 30/11/2026 si los dominios se compran el 30/10"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Rediseño propio de la familia Claro: portada con calculadora en directo, barra «a dónde va cada euro», cifra animada, bento, cifras clave del año, 24 iconos propios y barra fija en el móvil; Lighthouse móvil 100 en las 16 páginas de muestra"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Afiliación preparada (Quipu, Xolo, Qonto y 9 más investigados en AFILIACION.md): bloques patrocinados que se encienden con AFILIADO_<ID>, página «Cómo nos financiamos»"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Vigilancia diaria de todas las webs de la cartera (scripts/vigilar-webs.mjs) y tarea programada de informe semanal los lunes"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Sitios 4 (PisoClaro, vivienda) y 5 (MotorClaro, coche) definidos con 20 calculadoras, parámetros 2026 y 200 palabras clave cada uno"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Sitio 3 ChequeClaro construido (EE. UU. en español, USD): 17 calculadoras (cheque de pago, impuesto federal y estatal, reembolso, 1099, propinas y horas extra OBBBA, crédito por hijos, 401(k), remesas…), 149 páginas, parámetros 2026 del IRS/SSA y 15 estados, 249 pruebas, Lighthouse móvil 100"
+      },
+      {
+        "fecha": "2026-10-29",
+        "texto": "Portal CalculaClaro: portada con buscador de las 57 calculadoras y acceso por interés a NetoClaro, ImpuestoClaro y ChequeClaro (PisoClaro y MotorClaro como «muy pronto»); pie «Familia Claro» en cada sitio enlazando a los hermanos y al portal; Lighthouse 100"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "NICHOS.md: 15 nichos priorizados; top 5 de sitios nuevos (NetoClaro México, VatioClaro, AhorroClaro, BebéClaro, NetoClaro Colombia) y 10 ampliaciones"
+      },
+      {
+        "fecha": "2026-10-30",
+        "texto": "600 páginas por combinación nuevas con índices, FAQ propias y prueba automática contra contenido repetido (NetoClaro 604, ImpuestoClaro 282, ChequeClaro 274)"
+      },
+      {
         "fecha": "2026-10-31",
         "texto": "Dominio netoclaro.app e impuestoclaro.es comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
       },
@@ -3215,15 +3266,22 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://netoclaro.app y https://impuestoclaro.es (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Sitio 4 HogarClaro (vivienda e hipotecas; renombrado desde PisoClaro, que ya existía): 20 calculadoras, 10 fichas con gráfico, 80 programáticas, ilustración propia; 238 páginas"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Calendario laboral 2027 en NetoClaro: 17 comunidades y 29 municipios con calendario visual, puentes y comparación con 2026, más calculadora de días laborables y hábiles"
       }
     ],
     "proximos": [
+      "Cobro directo: productos digitales (kit autónomo, pack despido, comparador de hipotecas, planner de taxes) y widget B2B con Stripe, en construcción",
+      "Moisés: borrar el proyecto pisoclaro en Vercel; comprar dominios; alta en Xolo, Qonto y Quipu",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Aplicar la identidad de marca de MARCAS.md",
-      "Solicitar AdSense cuando el sitio 1 cargue en su dominio",
-      "Sitio 3 (finanzas EE. UU. en español) en 6–8 semanas"
+      "Solicitar AdSense cuando los sitios carguen en su dominio",
+      "Siguiente sitio según NICHOS.md: NetoClaro México o VatioClaro"
     ],
     "paraMoises": [
       "Comprar netoclaro.es e impuestoclaro.es (o la siguiente opción libre)",

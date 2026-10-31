@@ -1,0 +1,94 @@
+{
+  "pais": "us",
+  "anio": 2026,
+  "estado": "vigente",
+  "actualizado": "2026-10-28",
+  "nota_general": "irs.gov, ssa.gov, dol.gov y los departamentos estatales no eran accesibles desde la sesión (el proxy de red los bloquea). Las cifras se contrastaron con búsquedas web que citan la fuente oficial (Thomson Reuters, Journal of Accountancy, Ballotpedia, EPI, NJBIA, EDD citado, Bloomberg Tax) y, cuando hay dudas, llevan verificado:false y una nota. La tarea semanal debe abrir cada URL oficial y confirmar.",
+  "periodos_pago": {
+    "semanal": 52,
+    "quincenal": 26,
+    "bimensual": 24,
+    "mensual": 12,
+    "nota": "quincenal = cada dos semanas (biweekly, 26 cheques); bimensual = dos veces al mes (semimonthly, 24 cheques). No es una cifra legal."
+  },
+  "fica": {
+    "seguro_social_pct": 6.2,
+    "tope_salarial": 184500,
+    "medicare_pct": 1.45,
+    "medicare_adicional_pct": 0.9,
+    "umbral_retencion_adicional": 200000,
+    "umbrales_adicional": { "single": 200000, "mfj": 250000, "hoh": 200000, "mfs": 125000 },
+    "verificado": true,
+    "nota": "Tope del Seguro Social 2026: 184.500 $ (176.100 $ en 2025), confirmado por la hoja informativa COLA 2026 de la SSA citada por Thomson Reuters y Journal of Accountancy. Medicare 1,45 % sin tope. El 0,9 % adicional lo retiene el empleador sobre el salario que pase de 200.000 $ en el año, sea cual sea el estado civil; en la declaración el umbral depende del estado civil (IRC §3101(b)(2), cifras no indexadas).",
+    "fuente": {
+      "nombre": "SSA: 2026 COLA Fact Sheet (contribution and benefit base); IRS Topic 751 y Questions and answers for the Additional Medicare Tax",
+      "url": "https://www.ssa.gov/cola/factsheets/2026.html"
+    }
+  },
+  "autonomos": {
+    "base_pct": 92.35,
+    "seguro_social_pct": 12.4,
+    "medicare_pct": 2.9,
+    "minimo_ganancia": 400,
+    "deducible_pct": 50,
+    "verificado": true,
+    "nota": "Schedule SE: la base es el 92,35 % de la ganancia neta; 12,4 % de Seguro Social hasta el tope salarial (menos los salarios W-2 ya cotizados) y 2,9 % de Medicare sin tope, más el 0,9 % adicional por encima del umbral. La mitad del impuesto se resta como ajuste al ingreso. No se paga si la ganancia neta es menor de 400 $.",
+    "fuente": {
+      "nombre": "IRS: Self-Employment Tax (Social Security and Medicare Taxes) e instrucciones del Schedule SE (Form 1040)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+    }
+  },
+  "horas_extra": {
+    "umbral_semanal": 40,
+    "factor": 1.5,
+    "estados": {
+      "CA": { "umbral_diario": 8, "factor_diario": 1.5, "umbral_doble": 12, "factor_doble": 2 }
+    },
+    "verificado": true,
+    "nota": "FLSA: tiempo y medio por encima de 40 horas en la semana laboral para empleados no exentos. California añade horas extra diarias: tiempo y medio pasadas 8 horas en un día y doble pasadas 12 (Labor Code §510). No se modela la regla del séptimo día consecutivo.",
+    "fuente": {
+      "nombre": "DOL Wage and Hour Division: Overtime Pay (FLSA); California DIR: Overtime FAQ",
+      "url": "https://www.dol.gov/agencies/whd/overtime"
+    }
+  },
+  "salario_minimo": {
+    "federal": 7.25,
+    "federal_propinas": 2.13,
+    "federal_fuente": "https://www.dol.gov/agencies/whd/minimum-wage",
+    "estados": {
+      "CA": { "hora": 16.90, "desde": "2026-01-01", "verificado": true, "nota": "Mínimo estatal general. Muchas ciudades (Los Ángeles, San Francisco, San Diego) tienen uno más alto.", "url": "https://www.dir.ca.gov/dlse/faq_minimumwage.htm" },
+      "TX": { "hora": 7.25, "desde": "2009-07-24", "verificado": true, "nota": "Texas aplica el mínimo federal.", "url": "https://www.twc.texas.gov/programs/minimum-wage" },
+      "FL": { "hora": 15.00, "desde": "2026-09-30", "anterior": 14.00, "verificado": true, "nota": "Enmienda 2 (2020): 14 $ desde el 30/9/2025 y 15 $ desde el 30/9/2026; después se indexa con la inflación.", "url": "https://floridajobs.org/business-growth-and-partnerships/for-employers/display-posters-and-required-notices" },
+      "NY": { "hora": 16.00, "hora_nyc": 17.00, "desde": "2026-01-01", "verificado": true, "nota": "16 $ en el resto del estado; 17 $ en la ciudad de Nueva York, Long Island y Westchester.", "url": "https://dol.ny.gov/minimum-wage-0" },
+      "IL": { "hora": 15.00, "desde": "2025-01-01", "verificado": true, "nota": "Illinois llegó a 15 $ el 1/1/2025 y no tiene más subidas programadas. Chicago tiene uno propio más alto.", "url": "https://labor.illinois.gov/faqs/minimum-wage-faq.html" },
+      "AZ": { "hora": 15.15, "desde": "2026-01-01", "verificado": true, "nota": "Indexado con la inflación (14,70 $ en 2025). Flagstaff y Tucson tienen mínimos propios.", "url": "https://www.azica.gov/labor-minimum-wage-main-page" },
+      "NJ": { "hora": 15.92, "desde": "2026-01-01", "verificado": true, "nota": "Mayoría de empleadores (15,49 $ en 2025). Empresas de menos de 6 empleados y temporales: 15,23 $.", "url": "https://www.nj.gov/labor/wageandhour/tools-resources/laws/minimumwage.shtml" },
+      "CO": { "hora": 15.16, "desde": "2026-01-01", "verificado": true, "nota": "Indexado (14,81 $ en 2025). Denver tiene un mínimo local más alto.", "url": "https://cdle.colorado.gov/minimum-wage" },
+      "NM": { "hora": 12.00, "desde": "2023-01-01", "verificado": true, "nota": "Sin subidas desde 2023. Santa Fe y Las Cruces tienen mínimos locales.", "url": "https://www.dws.state.nm.us/en-us/Minimum-Wage-Information" },
+      "NV": { "hora": 12.00, "desde": "2024-07-01", "verificado": true, "nota": "Tarifa única desde el 1/7/2024 (AB 456 de 2019).", "url": "https://labor.nv.gov/Wages/Minimum_Wage/" },
+      "GA": { "hora": 7.25, "desde": "2009-07-24", "verificado": true, "nota": "La ley de Georgia fija 5,15 $, pero a casi todos los empleos se les aplica el mínimo federal de 7,25 $.", "url": "https://dol.georgia.gov/" },
+      "NC": { "hora": 7.25, "desde": "2009-07-24", "verificado": true, "nota": "Carolina del Norte aplica el mínimo federal.", "url": "https://www.labor.nc.gov/workplace-rights/employee-rights-regarding-time-worked-and-wages-earned/minimum-wage-nc" },
+      "WA": { "hora": 17.13, "desde": "2026-01-01", "verificado": true, "nota": "Indexado (16,66 $ en 2025). Una fuente cita 17,33 $; la mayoría y Ballotpedia, 17,13 $. Seattle y SeaTac tienen mínimos propios.", "url": "https://lni.wa.gov/workers-rights/wages/minimum-wage/" },
+      "PA": { "hora": 7.25, "desde": "2009-07-24", "verificado": true, "nota": "Pensilvania aplica el mínimo federal.", "url": "https://www.dli.pa.gov/Individuals/Labor-Management-Relations/llc/minimum-wage/Pages/default.aspx" },
+      "MA": { "hora": 15.00, "desde": "2023-01-01", "verificado": true, "nota": "Sin subidas desde 2023.", "url": "https://www.mass.gov/info-details/massachusetts-law-about-minimum-wage" }
+    },
+    "verificado": true,
+    "nota": "Contrastado con Ballotpedia (Minimum wage increases in 2026), EPI, Axios y NJBIA. FL 15 $ y NV, NM, MA, IL sin cambios en 2026 se comprobaron con el calendario legal de cada estado, no con la página oficial (bloqueada).",
+    "fuente": {
+      "nombre": "DOL Wage and Hour Division: State Minimum Wage Laws",
+      "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+    }
+  },
+  "contribuciones_estatales": {
+    "CA": [
+      { "id": "sdi", "nombre": "SDI de California (discapacidad y permiso familiar)", "pct": 1.3, "tope": null, "verificado": true, "url": "https://edd.ca.gov/en/payroll_taxes/rates_and_withholding" }
+    ],
+    "NY": [
+      { "id": "sdi", "nombre": "Seguro de discapacidad de Nueva York (SDI)", "pct": 0.5, "max_semanal": 0.6, "verificado": true, "url": "https://www.wcb.ny.gov/content/main/DisabilityBenefits/Employer/employer-cost.jsp" }
+    ],
+    "WA": [
+      { "id": "wacares", "nombre": "WA Cares Fund (cuidados de larga duración)", "pct": 0.58, "tope": null, "verificado": true, "url": "https://wacaresfund.wa.gov/" }
+    ],
+    "nota": "Solo cotizaciones del empleado con tasa fija y conocida. No incluye el permiso familiar pagado de Nueva York (PFL), el TDI/FLI de Nueva Jersey, el PFML de Washington, Massachusetts y Colorado ni impuestos locales (NYC, Yonkers, EIT de Pensilvania): sus tasas de 2026 no se pudieron verificar. Las calculadoras lo avisan."
+  }
+}

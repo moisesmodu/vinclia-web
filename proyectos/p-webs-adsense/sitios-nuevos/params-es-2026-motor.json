@@ -1,0 +1,192 @@
+{
+  "pais": "es",
+  "anio": 2026,
+  "sitio": "motor",
+  "estado": "vigente",
+  "actualizado": "2026-10-28",
+  "convenio_verificado": "true = cifra igual en la fuente oficial o en al menos dos fuentes que citan la norma; false = una sola fuente secundaria, discrepancias o tomada del texto de la norma sin poder abrir boe.es / dgt.es desde la sesión. null = pendiente: pedir al usuario o no publicar.",
+  "notas_generales": [
+    "Red restringida: WebFetch no resuelve boe.es, dgt.es ni sedes autonómicas. Todo contrastado vía resultados de búsqueda. La tarea semanal debe cotejar contra BOE y DGT antes de publicar.",
+    "La rebaja fiscal sobre carburantes terminó el 30/9/2026 (prensa); los precios de carburante cambian cada día: el sitio no debe incrustar un precio fijo sin fecha.",
+    "Para 2027 copiar como params/es/2027/vehiculos.json con 'estado': 'provisional'. Las cuotas del IVTM y las tasas DGT solo cambian con LPGE; no hay PGE desde 2023 (prórroga)."
+  ],
+  "ivtm": {
+    "descripcion": "Impuesto sobre Vehículos de Tracción Mecánica. Cuota = cuota mínima del art. 95.1 TRLRHL × coeficiente de la ordenanza municipal (máximo 2, puede variar por clase y tramo) − bonificaciones.",
+    "cuotas_minimas_turismos": [
+      { "cvf_hasta": 8, "cuota": 12.62 },
+      { "cvf_hasta": 12, "cuota": 34.08 },
+      { "cvf_hasta": 16, "cuota": 71.94 },
+      { "cvf_hasta": 20, "cuota": 89.61 },
+      { "cvf_hasta": null, "cuota": 112.00 }
+    ],
+    "cuotas_minimas_otras": {
+      "autobuses": [83.30, 118.64, 148.30],
+      "camiones": [42.28, 83.30, 118.64, 148.30],
+      "tractores": [17.67, 27.77, 83.30],
+      "nota": "Tramos por plazas (autobuses), carga útil (camiones) y CVF (tractores). Motos y remolques: pendiente de transcribir.",
+      "verificado": false
+    },
+    "coeficiente_maximo": 2,
+    "bonificaciones": {
+      "carburante_o_motor_hasta_pct": 75,
+      "historicos_o_25_anios_hasta_pct": 100,
+      "nota": "Art. 95.6 TRLRHL; potestativas, cada ordenanza decide. La de 25 años de antigüedad / históricos no se ha cotejado.",
+      "verificado": false
+    },
+    "prorrateo": "Por trimestres en alta y baja definitiva (art. 96 TRLRHL).",
+    "verificado": true,
+    "nota": "Cuotas mínimas de turismos confirmadas en la ordenanza de Valladolid y en INEAF. Coeficiente máximo 2 confirmado en varias ordenanzas.",
+    "fuente": { "nombre": "BOE · RDLeg 2/2004, TRLRHL art. 95", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214" }
+  },
+  "ivtm_municipios_muestra": {
+    "descripcion": "Semilla para sitios/motor/datos/ivtm-coeficientes-2026.csv. Cada fila final necesita: municipio, código INE, cuota por tramo o coeficiente, bonificaciones, plazo de pago y URL de la ordenanza.",
+    "municipios": {
+      "madrid": { "turismo_8_a_11_99": 59.00, "plazo_voluntario_2026": "1/4 a 1/6", "bonificacion_electricos": "75 % (fuentes discrepan: 100 % los dos primeros años y luego 75 %)", "verificado": false, "fuente": { "nombre": "Ayuntamiento de Madrid · IVTM, cálculo de la tarifa", "url": "https://www.madrid.es/portales/munimadrid/es/Inicio/Actividad-economica-y-hacienda/Impuesto-sobre-Vehiculos-de-Traccion-Mecanica-IVTM-Calculo-de-la-tarifa/" } },
+      "barcelona": { "turismo_8_a_11_99": 68, "plazo_voluntario_2026": "15/4 a 15/6", "bonificacion_electricos": "hasta 75 % los cinco primeros años, a solicitud", "verificado": false, "nota": "Importe de una comparativa privada; 68 € sería el máximo legal (34,08 × 2). Cotejar con la Ordenança fiscal 2.3.", "fuente": { "nombre": "Ajuntament de Barcelona · Ordenances fiscals", "url": "https://ajuntament.barcelona.cat/hisenda/es/ordenanzas-fiscales" } },
+      "valladolid": { "coeficiente_2026": 1.8, "turismo_menos_8": 25.24, "nota": "Ordenanza con reducción del 10 % desde 2026 (texto citado en resultados); el importe y el coeficiente no cuadran a simple vista (12,62 × 1,8 = 22,72): revisar.", "verificado": false, "fuente": { "nombre": "Ayuntamiento de Valladolid · Ordenanza IVTM", "url": "https://www.valladolid.gob.es/" } },
+      "valencia": { "plazo_voluntario_2026": "1/9 a 2/11", "verificado": false },
+      "zaragoza": { "plazo_voluntario_2026": "15/4 a 15/6", "verificado": false },
+      "malaga": { "plazo_voluntario_2026": "2/3 a 6/5", "verificado": false }
+    }
+  },
+  "caballos_fiscales": {
+    "descripcion": "Potencia fiscal según el RD 2822/1998 (Reglamento General de Vehículos), anexo V.",
+    "formula_combustion": "CVF = T × (0,785 × D² × R)^0,6 × N, con D diámetro y R carrera en cm, N número de cilindros, T = 0,08 para motores de cuatro tiempos y 0,11 para dos tiempos.",
+    "formula_electricos": "CVF = Pe / 5,152, con Pe la potencia efectiva en kW.",
+    "verificado": false,
+    "nota": "Fórmulas tal como se recuerdan del anexo V; ningún resultado de búsqueda las reproducía. Cotejar con el BOE antes de publicar. En la práctica la ficha técnica trae la potencia fiscal: la calculadora debe ofrecer 'leerla de la ficha' como primera opción.",
+    "fuente": { "nombre": "BOE · RD 2822/1998, Reglamento General de Vehículos, anexo V", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-1826" }
+  },
+  "impuesto_matriculacion": {
+    "descripcion": "Impuesto Especial sobre Determinados Medios de Transporte (Ley 38/1992, art. 70). Base: precio sin IVA en la primera matriculación definitiva en España (o valor de mercado para usados importados). Emisiones CO₂ WLTP.",
+    "epigrafes_turismos": [
+      { "epigrafe": 1, "co2_hasta_g_km": 120, "tipo_pct": 0 },
+      { "epigrafe": 2, "co2_hasta_g_km": 160, "tipo_pct": 4.75 },
+      { "epigrafe": 3, "co2_hasta_g_km": 200, "tipo_pct": 9.75 },
+      { "epigrafe": 4, "co2_hasta_g_km": null, "tipo_pct": 14.75 }
+    ],
+    "limites_tramos_nota": "Los cuatro tipos coinciden en todas las fuentes; los límites exactos (si 160 y 200 g/km caen en el tramo inferior o superior) difieren entre fuentes. Antes de publicar, leer art. 70.1 en el BOE.",
+    "incremento_autonomico_maximo_pct": 15,
+    "autonomico_nota": "Siete comunidades han subido el tipo del tramo alto (guiafiscal, mapa 2026); no se ha obtenido la lista. Canarias tiene tipos propios; Ceuta y Melilla tipo 0; Navarra y País Vasco forales.",
+    "verificado": false,
+    "fuente": { "nombre": "BOE · Ley 38/1992 de Impuestos Especiales, art. 70", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28741" }
+  },
+  "tasas_dgt": {
+    "descripcion": "Tasas de la Jefatura Central de Tráfico (Ley 16/1979, cuantías actualizadas por LPGE).",
+    "tasa_1_5_transferencia_vehiculo": { "valor": 55.70, "verificado": false, "nota": "Coinciden varias gestorías y Practicatest; 54,60 € en fuentes antiguas." },
+    "tasa_1_2_transferencia_ciclomotor": { "valor": 27.85, "verificado": false, "nota": "Una fuente (gestoria247)." },
+    "tasa_4_1_informe_vehiculo": { "valor": 8.67, "verificado": false, "nota": "Las fuentes la describen como informe de vehículo o notificación de venta; aclarar." },
+    "tasa_matriculacion": { "valor": null, "verificado": false, "nota": "No encontrada para 2026 en fuente fiable. No usar hasta cotejar con sede.dgt.gob.es." },
+    "fuente": { "nombre": "DGT · Tasas de tráfico vigentes", "url": "https://sede.dgt.gob.es/es/tramites-y-multas/tasas/" }
+  },
+  "itp_vehiculos_usados": {
+    "descripcion": "ITP en compraventa entre particulares. Base = precio medio de venta (Orden HAC/1501/2025) × porcentaje por años de uso; si el precio pactado es mayor, el pactado. Tipo y cuotas fijas por comunidad.",
+    "comunidades": {
+      "MD": { "tipo_pct": 4, "verificado": false, "nota": "Coinciden casi todas las tablas privadas." },
+      "CT": { "tipo_pct": 5, "nota": "Una fuente cita exención para vehículos de más de 10 años y menos de 40.000 €: sin confirmar.", "verificado": false },
+      "AN": { "tipo_pct": 4, "nota": "Una fuente: 4 % más de 10 años y 5 % el resto; 8 % para más de 15 CVF en varias fuentes.", "verificado": false },
+      "GA": { "tipo_pct": null, "nota": "Fuentes entre 3 % y 8 %; cuota fija para turismos de 15 años o más.", "verificado": false },
+      "VC": { "tipo_pct": null, "nota": "Fuentes entre 6 % y 10 %.", "verificado": false },
+      "CN": { "tipo_pct": null, "nota": "Canarias: fuentes entre 5,5 % y 6,5 %.", "verificado": false },
+      "resto": { "tipo_pct": null, "nota": "Pendiente: AR, AS, IB, CB, CM, CL, EX, MC, RI, NA, PV, CE, ML.", "verificado": false }
+    },
+    "fuente": { "nombre": "Normativa de tributos cedidos de cada comunidad; modelo 620/621", "url": "https://sede.agenciatributaria.gob.es/" },
+    "verificado": false
+  },
+  "precios_medios_hacienda": {
+    "norma": "Orden HAC/1501/2025, de 17 de diciembre (BOE-A-2025-26357, 23/12/2025), en vigor el 1/1/2026; sustituye a la Orden HAC/1484/2024. Anexos I a IV: turismos, todoterrenos, motos, autocaravanas, embarcaciones; identifica por separado los híbridos enchufables.",
+    "porcentajes_por_anios_de_uso": [
+      { "hasta_anios": 1, "pct": 100 },
+      { "hasta_anios": 2, "pct": 84 },
+      { "hasta_anios": 3, "pct": 67 },
+      { "hasta_anios": 4, "pct": 56 },
+      { "hasta_anios": 5, "pct": 47 },
+      { "hasta_anios": 6, "pct": 39 },
+      { "hasta_anios": 7, "pct": 34 },
+      { "hasta_anios": 8, "pct": 28 },
+      { "hasta_anios": 9, "pct": 24 },
+      { "hasta_anios": 10, "pct": 19 },
+      { "hasta_anios": 11, "pct": 17 },
+      { "hasta_anios": 12, "pct": 13 },
+      { "hasta_anios": null, "pct": 10 }
+    ],
+    "verificado": false,
+    "nota": "Existencia y referencia de la orden verificadas (fiscal-impuestos, notariosyregistradores, consejogestores). La tabla de porcentajes es la de órdenes anteriores tal como se recuerda: no se pudo leer el anexo. Cotejar antes de publicar.",
+    "fuente": { "nombre": "BOE-A-2025-26357 · Orden HAC/1501/2025", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26357" }
+  },
+  "itv": {
+    "frecuencia_turismos_particulares": [
+      { "antiguedad_anios_hasta": 4, "frecuencia": "exento" },
+      { "antiguedad_anios_hasta": 10, "frecuencia": "cada 2 años" },
+      { "antiguedad_anios_hasta": null, "frecuencia": "anual" }
+    ],
+    "nota_frecuencia": "No existe ITV semestral para turismos particulares por tener más de 10 años. Motos, furgonetas, taxis, VTC y autocaravanas tienen otras frecuencias (pendiente de transcribir).",
+    "frecuencia_verificado": true,
+    "fuente_frecuencia": { "nombre": "administracion.gob.es · ITV (act. 24/3/2026); RD 920/2017", "url": "https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/ciudadanos/vehiculos/itv" },
+    "precios_gasolina_orientativos_eur": { "CT": 52.27, "PV": 47.50, "MD": 44.94, "AN": 40.60, "VC": 39.27, "GA": 38.15, "CL": 36.80, "CN": 29.50 },
+    "precios_verificado": false,
+    "precios_nota": "De un comparador comercial. En comunidades con precio liberalizado (p. ej. Madrid) varía por estación; en las de precio regulado hay tarifa oficial publicada. No publicar sin la tarifa oficial de cada comunidad y su fecha."
+  },
+  "etiqueta_ambiental_dgt": {
+    "criterios": {
+      "CERO": "Eléctricos de batería (BEV), de autonomía extendida (EREV), híbridos enchufables (PHEV) con autonomía eléctrica ≥ 40 km y pila de combustible.",
+      "ECO": "Híbridos no enchufables (HEV), PHEV con autonomía < 40 km, vehículos de gas (GNC, GNL, GLP) que cumplan C.",
+      "C": "Gasolina Euro 4, 5 y 6 (matriculados en general desde 2006); diésel Euro 6 (en general desde septiembre de 2015).",
+      "B": "Gasolina Euro 3 (en general desde 2000); diésel Euro 4 y 5 (en general desde 2006).",
+      "sin_etiqueta": "El resto."
+    },
+    "verificado": false,
+    "nota": "Criterios de la clasificación DGT tal como se conocen; las fechas son aproximadas porque manda la norma Euro de la ficha técnica. La calculadora pregunta combustible y norma Euro, y usa la fecha solo si no se conoce la norma. Enlazar a la consulta oficial de la DGT por matrícula, sin imitar su diseño.",
+    "fuente": { "nombre": "DGT · Distintivo ambiental", "url": "https://www.dgt.es/muevete-con-seguridad/conoce-el-estado-del-trafico/distintivo-ambiental/" }
+  },
+  "ayudas_plan_auto_plus": {
+    "descripcion": "Programa Auto+ (sucesor de MOVES III, que terminó en 2025). Solo vehículos con etiqueta CERO; HEV y MHEV excluidos.",
+    "turismo_max_eur": 4500,
+    "condicion_maximo": "Eléctrico puro, precio hasta 35.000 € sin impuestos, fabricado en la UE.",
+    "turismo_sin_fabricacion_ue_eur": 3375,
+    "descuento_concesionario_min_eur": 1000,
+    "tramo_precio_35000_45000": "importe menor (cuantía no confirmada)",
+    "seminuevos": "Comprados en concesionario del grupo fabricante, primera matrícula desde el 1/1/2025.",
+    "limite_vehiculos": { "particulares": 1, "empresas_autonomos": 10 },
+    "plazo_solicitud": "Desde el 4/8/2026 hasta el 31/12/2026 (una fuente); retroactivo a compras desde el 1/1/2026 (otra).",
+    "permanencia_anios": 2,
+    "verificado": false,
+    "nota": "Fuentes: Xataka, Zurich, Hyundai, Motor16, Bankinter. Cotejar con el portal de ayudas del Ministerio de Industria y Turismo antes de publicar importes.",
+    "fuente": { "nombre": "Ministerio de Industria y Turismo · Programa Auto+", "url": "https://www.mintur.gob.es/" }
+  },
+  "carburantes": {
+    "descripcion": "Precio medio de venta al público. No se fija en el código: el script mensual lo toma del Boletín Petrolero (UE) o del Geoportal de hidrocarburos (MITECO) y guarda fecha y fuente.",
+    "muestras": [
+      { "fecha": "2026-08", "gasolina95": 1.725, "gasoleoA": 1.852, "ambito": "Península y Baleares, media mensual", "fuente": "CNMC, boletín de supervisión de carburantes", "verificado": false },
+      { "fecha": "2026-09-14", "gasolina95": 1.86, "gasoleoA": 1.84, "fuente": "Carwow citando el Geoportal", "verificado": false },
+      { "fecha": "2026-10-01", "gasolina95": 1.85, "gasoleoA": null, "fuente": "fuel-prices.eu, media simple de ~10.800 estaciones del Geoportal", "verificado": false }
+    ],
+    "fuente": { "nombre": "MITECO · Geoportal de hidrocarburos", "url": "https://geoportalgasolineras.es/" },
+    "verificado": false
+  },
+  "kilometraje_exento_irpf": {
+    "eur_km": 0.26,
+    "norma": "Orden HFP/792/2023 (RIRPF art. 9). Peajes y aparcamiento justificados aparte. Euskadi 0,29 €/km; Navarra discrepa (0,32 o 0,36).",
+    "verificado": true,
+    "fuente": { "nombre": "BOE · Orden HFP/792/2023", "url": "https://www.boe.es/buscar/doc.php?lang=es&q=Orden+HFP%2F792%2F2023" }
+  },
+  "multas_trafico": {
+    "cuantias_generales_eur": { "leve_hasta": 100, "grave": 200, "muy_grave": 500 },
+    "reduccion_pronto_pago_pct": 50,
+    "plazo_pronto_pago_dias_naturales": 20,
+    "velocidad": "Cuadro del anexo IV del RDL 6/2015 (multa y puntos por exceso según límite de la vía): transcribir del BOE; no se ha podido leer.",
+    "verificado": false,
+    "nota": "Cuantías generales del art. 80 y reducción del art. 94 tal como se conocen; cotejar.",
+    "fuente": { "nombre": "BOE · RDLeg 6/2015, Ley de Tráfico", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11722" }
+  },
+  "seguro_coche_referencias_mercado": {
+    "descripcion": "Solo contexto. No son datos oficiales y el sitio no promete precios de pólizas.",
+    "kelisto_indice_2T2026_prima_media_eur": 1411.94,
+    "kelisto_variacion_anual_pct": 7.45,
+    "kelisto_media_2025_eur": 975.6,
+    "check24_prima_media_abril_2026_eur": 399,
+    "nota": "Miden cosas distintas (índice de todas las modalidades frente a pólizas contratadas en un comparador). ICEA no consultado.",
+    "verificado": false
+  },
+  "iva_general_pct": { "valor": 21, "verificado": true, "fuente": { "nombre": "Ley 37/1992, art. 90", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740" } }
+}

@@ -1,0 +1,201 @@
+palabra_clave,idioma,intencion,ruta_destino,tipo_destino,prioridad,grupo,enlaza_desde
+calculadora sueldo neto 2027,es,calcular,/calculadora-sueldo-neto/,calc,1,neto,/
+calcular sueldo neto a partir del bruto anual,es,calcular,/calculadora-sueldo-neto/,calc,1,neto,/datos/tabla-sueldo-neto/
+cuánto cobro neto al mes con 14 pagas,es,calcular,/calculadora-sueldo-neto/,calc,1,neto,/calculadora-paga-extra/
+sueldo neto 12 o 14 pagas cuál me conviene,es,comparar,/calculadora-sueldo-neto/,calc,2,neto,/calculadora-nomina/
+tabla bruto neto 2027,es,tabla,/datos/tabla-sueldo-neto/,ficha,1,neto,/calculadora-sueldo-neto/
+tabla sueldo bruto a neto por tramos,es,tabla,/datos/tabla-sueldo-neto/,ficha,2,neto,/calculadora-sueldo-bruto/
+cuánto es 20000 euros brutos en neto,es,calcular,/sueldo-neto-20000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+sueldo neto 24000 euros brutos al mes,es,calcular,/sueldo-neto-24000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+25000 brutos anuales cuánto es neto al mes,es,calcular,/sueldo-neto-25000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+30000 euros brutos cuánto cobro al mes,es,calcular,/sueldo-neto-30000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+35000 brutos en neto 14 pagas,es,calcular,/sueldo-neto-35000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+40000 euros brutos al año neto mensual,es,calcular,/sueldo-neto-40000-euros-brutos/,prog,1,neto,/datos/tabla-sueldo-neto/
+cuánto es 18000 euros brutos en neto,es,calcular,/sueldo-neto-18000-euros-brutos/,prog,2,neto,/sueldo-neto-20000-euros-brutos/
+neto de 22000 euros brutos al año,es,calcular,/sueldo-neto-22000-euros-brutos/,prog,2,neto,/sueldo-neto-20000-euros-brutos/
+28000 brutos anuales a neto,es,calcular,/sueldo-neto-28000-euros-brutos/,prog,2,neto,/sueldo-neto-30000-euros-brutos/
+sueldo neto 45000 euros brutos,es,calcular,/sueldo-neto-45000-euros-brutos/,prog,2,neto,/sueldo-neto-40000-euros-brutos/
+50000 euros brutos cuánto es neto al mes,es,calcular,/sueldo-neto-50000-euros-brutos/,prog,2,neto,/sueldo-neto-40000-euros-brutos/
+60000 brutos en neto al mes,es,calcular,/sueldo-neto-60000-euros-brutos/,prog,2,neto,/sueldo-neto-50000-euros-brutos/
+sueldo neto 15000 euros brutos al año,es,calcular,/sueldo-neto-15000-euros-brutos/,prog,2,neto,/calculadora-salario-minimo/
+100000 euros brutos cuánto es neto,es,calcular,/sueldo-neto-100000-euros-brutos/,prog,3,neto,/sueldo-neto-90000-euros-brutos/
+calcular sueldo neto Madrid 2027,es,calcular,/sueldo-neto-madrid/,prog,1,neto,/calculadora-sueldo-neto/
+calculadora sueldo neto Cataluña 2027,es,calcular,/sueldo-neto-cataluna/,prog,1,neto,/calculadora-sueldo-neto/
+sueldo neto Andalucía 2027 calcular,es,calcular,/sueldo-neto-andalucia/,prog,2,neto,/calculadora-sueldo-neto/
+calculadora sueldo neto Comunidad Valenciana,es,calcular,/sueldo-neto-comunidad-valenciana/,prog,2,neto,/calculadora-sueldo-neto/
+calculadora sueldo bruto a partir del neto,es,calcular,/calculadora-sueldo-bruto/,calc,1,bruto,/calculadora-sueldo-neto/
+cuánto pedir en bruto para cobrar un neto,es,calcular,/calculadora-sueldo-bruto/,calc,2,bruto,/calculadora-sueldo-neto/
+calcular nómina mensual con pagas prorrateadas,es,calcular,/calculadora-nomina/,calc,1,nomina,/calculadora-sueldo-neto/
+simulador de nómina 2027,es,calcular,/calculadora-nomina/,calc,1,nomina,/
+comprobar descuentos de seguridad social en mi nómina,es,comprobar,/calculadora-nomina/,calc,2,nomina,/datos/tipos-cotizacion/
+tipos de cotización trabajador 2027 tabla,es,tabla,/datos/tipos-cotizacion/,ficha,2,cotizacion,/calculadora-nomina/
+bases de cotización 2027 máxima y mínima,es,tabla,/datos/bases-cotizacion/,ficha,2,cotizacion,/calculadora-nomina/
+calcular coste empresa trabajador 2027,es,calcular,/calculadora-coste-empresa/,calc,1,coste,/calculadora-nomina/
+cuánto le cuesta a la empresa un trabajador de 30000 euros,es,calcular,/calculadora-coste-empresa/,calc,2,coste,/sueldo-neto-30000-euros-brutos/
+coste empresa contrato 1500 euros brutos,es,calcular,/calculadora-coste-empresa/,calc,2,coste,/datos/tipos-cotizacion/
+calculadora retención IRPF nómina 2027,es,calcular,/calculadora-retencion-irpf/,calc,1,irpf,/calculadora-nomina/
+qué porcentaje de IRPF me retienen en la nómina,es,calcular,/calculadora-retencion-irpf/,calc,1,irpf,/calculadora-sueldo-neto/
+tabla retención IRPF 2027 nómina,es,tabla,/datos/tabla-retencion-irpf/,ficha,1,irpf,/calculadora-retencion-irpf/
+retención IRPF con 2 hijos calcular,es,calcular,/calculadora-retencion-irpf/,calc,2,irpf,/datos/tabla-retencion-irpf/
+calcular paga extra de navidad 2026,es,calcular,/calculadora-paga-extra/,calc,1,pagaextra,/
+cuándo se cobra la paga extra de diciembre,es,plazo,/calculadora-paga-extra/,calc,1,pagaextra,/calculadora-nomina/
+calcular paga extra prorrateada,es,calcular,/calculadora-paga-extra/,calc,2,pagaextra,/calculadora-sueldo-neto/
+paga extra de verano proporcional calcular,es,calcular,/calculadora-paga-extra/,calc,2,pagaextra,/calculadora-nomina/
+cuánto es la paga extra si llevo 6 meses trabajando,es,calcular,/calculadora-paga-extra/,calc,2,pagaextra,/calculadora-finiquito/
+calcular subida salarial en neto,es,calcular,/calculadora-subida-sueldo/,calc,2,subida,/calculadora-sueldo-neto/
+subida IPC del sueldo cuánto me queda en neto,es,calcular,/calculadora-subida-sueldo/,calc,2,subida,/calculadora-sueldo-neto/
+calculadora finiquito 2027,es,calcular,/calculadora-finiquito/,calc,1,finiquito,/
+calcular finiquito baja voluntaria,es,calcular,/calculadora-finiquito/,calc,1,finiquito,/calculadora-vacaciones/
+calcular finiquito fin de contrato temporal,es,calcular,/calculadora-finiquito/,calc,1,finiquito,/calculadora-indemnizacion-despido/
+finiquito con vacaciones no disfrutadas calcular,es,calcular,/calculadora-finiquito/,calc,2,finiquito,/calculadora-vacaciones/
+plazo para pagar el finiquito tras el despido,es,plazo,/calculadora-finiquito/,calc,2,finiquito,/calculadora-indemnizacion-despido/
+comprobar si mi finiquito está bien calculado,es,comprobar,/calculadora-finiquito/,calc,1,finiquito,/calculadora-paga-extra/
+calculadora indemnización despido improcedente,es,calcular,/calculadora-indemnizacion-despido/,calc,1,despido,/calculadora-finiquito/
+indemnización despido objetivo 20 días calcular,es,calcular,/calculadora-indemnizacion-despido/,calc,1,despido,/datos/tabla-indemnizacion-despido/
+despido 33 o 45 días por año cuánto me corresponde,es,comparar,/calculadora-indemnizacion-despido/,calc,2,despido,/datos/tabla-indemnizacion-despido/
+indemnización fin de contrato 12 días calcular,es,calcular,/calculadora-indemnizacion-despido/,calc,2,despido,/calculadora-finiquito/
+tabla indemnización despido por años trabajados,es,tabla,/datos/tabla-indemnizacion-despido/,ficha,2,despido,/calculadora-indemnizacion-despido/
+calcular vacaciones proporcionales,es,calcular,/calculadora-vacaciones/,calc,2,vacaciones,/calculadora-finiquito/
+cuántos días de vacaciones me corresponden,es,calcular,/calculadora-vacaciones/,calc,1,vacaciones,/
+cuánto me pagan por vacaciones no disfrutadas,es,calcular,/calculadora-vacaciones/,calc,2,vacaciones,/calculadora-finiquito/
+calcular horas extra 2027,es,calcular,/calculadora-horas-extra/,calc,2,horasextra,/calculadora-nomina/
+calcular sueldo por hora neto,es,calcular,/calculadora-salario-por-hora/,calc,2,salariohora,/calculadora-sueldo-neto/
+pasar salario anual a precio por hora,es,calcular,/calculadora-salario-por-hora/,calc,2,salariohora,/calculadora-horas-extra/
+calculadora reducción de jornada por guarda legal,es,calcular,/calculadora-reduccion-jornada/,calc,1,reduccion,/
+cuánto cobro con reducción de jornada del 50%,es,calcular,/calculadora-reduccion-jornada/,calc,2,reduccion,/calculadora-sueldo-neto/
+reducción de jornada por cuidado de hijos sueldo neto,es,calcular,/calculadora-reduccion-jornada/,calc,2,reduccion,/calculadora-nomina/
+salario mínimo 2027 neto mensual,es,calcular,/calculadora-salario-minimo/,calc,1,smi,/
+SMI 2027 en 14 pagas cuánto es,es,calcular,/calculadora-salario-minimo/,calc,1,smi,/datos/salario-minimo-historico/
+SMI por horas 2027 empleadas de hogar,es,calcular,/calculadora-salario-minimo/,calc,2,smi,/calculadora-salario-por-hora/
+calculadora paro 2027,es,calcular,/calculadora-paro/,calc,1,paro,/
+cuánto cobro de paro,es,calcular,/calculadora-paro/,calc,1,paro,/calculadora-finiquito/
+cuánto paro me corresponde según días cotizados,es,calcular,/calculadora-paro/,calc,1,paro,/datos/cuantias-paro/
+tabla paro por días cotizados,es,tabla,/datos/cuantias-paro/,ficha,2,paro,/calculadora-paro/
+paro máximo y mínimo 2027,es,tabla,/datos/cuantias-paro/,ficha,1,paro,/calculadora-paro/
+paro 70% los primeros 180 días calcular,es,calcular,/calculadora-paro/,calc,2,paro,/datos/cuantias-paro/
+cuánto cobro de paro si trabajaba a tiempo parcial,es,calcular,/calculadora-paro/,calc,2,paro,/calculadora-reduccion-jornada/
+calculadora subsidio desempleo 2027,es,calcular,/calculadora-subsidio-desempleo/,calc,1,subsidio,/calculadora-paro/
+cuánto es el subsidio por desempleo en 2027,es,calcular,/calculadora-subsidio-desempleo/,calc,2,subsidio,/datos/iprem-historico/
+¿tengo derecho al subsidio por desempleo?,es,comprobar,/calculadora-subsidio-desempleo/,calc,1,subsidio,/calculadora-paro/
+IPREM 2027 mensual y anual,es,tabla,/datos/iprem-historico/,ficha,2,subsidio,/calculadora-subsidio-desempleo/
+calcular baja por enfermedad común,es,calcular,/calculadora-baja-laboral/,calc,1,baja,/
+cuánto cobro de baja los primeros 3 días,es,calcular,/calculadora-baja-laboral/,calc,1,baja,/calculadora-nomina/
+baja por accidente de trabajo 75% calcular,es,calcular,/calculadora-baja-laboral/,calc,2,baja,/calculadora-nomina/
+baja laboral del 60% al 75% a partir del día 21,es,calcular,/calculadora-baja-laboral/,calc,2,baja,/calculadora-sueldo-neto/
+calculadora cuota autónomos 2027,es,calcular,/calculadora-cuota-autonomos/,calc,1,autonomos,/
+tramos cuota autónomos 2027 tabla,es,tabla,/datos/tramos-cuota-autonomos/,ficha,1,autonomos,/calculadora-cuota-autonomos/
+cuota de autónomos con rendimientos de 1500 euros,es,calcular,/calculadora-cuota-autonomos/,calc,2,autonomos,/datos/tramos-cuota-autonomos/
+calcular edad de jubilación,es,calcular,/calculadora-edad-jubilacion/,calc,1,jubilacion,/
+a qué edad me jubilo con 38 años cotizados,es,calcular,/calculadora-edad-jubilacion/,calc,1,jubilacion,/datos/calendario-edad-jubilacion/
+tabla edad de jubilación 2027,es,tabla,/datos/calendario-edad-jubilacion/,ficha,2,jubilacion,/calculadora-edad-jubilacion/
+calculadora pensión jubilación 2027,es,calcular,/calculadora-pension-jubilacion/,calc,1,pension,/calculadora-edad-jubilacion/
+cuánto cobraré de pensión con 35 años cotizados,es,calcular,/calculadora-pension-jubilacion/,calc,1,pension,/calculadora-edad-jubilacion/
+jubilación anticipada cuánto pierdo de pensión,es,calcular,/calculadora-pension-jubilacion/,calc,2,pension,/datos/calendario-edad-jubilacion/
+1000 euros netos al mes cuánto es en bruto,es,calcular,/bruto-para-1000-euros-netos-al-mes/,nueva,2,bruto,/calculadora-sueldo-bruto/
+1200 euros netos cuánto es en bruto anual,es,calcular,/bruto-para-1200-euros-netos-al-mes/,nueva,2,bruto,/calculadora-sueldo-bruto/
+1500 euros netos al mes cuánto es en bruto,es,calcular,/bruto-para-1500-euros-netos-al-mes/,nueva,1,bruto,/calculadora-sueldo-bruto/
+cobrar 1800 euros netos cuánto bruto es,es,calcular,/bruto-para-1800-euros-netos-al-mes/,nueva,2,bruto,/calculadora-sueldo-bruto/
+2000 euros netos al mes cuánto es en bruto,es,calcular,/bruto-para-2000-euros-netos-al-mes/,nueva,1,bruto,/calculadora-sueldo-bruto/
+sueldo neto 1500 euros brutos al mes,es,calcular,/sueldo-neto-1500-euros-brutos-al-mes/,nueva,1,neto,/datos/tabla-sueldo-neto/
+1800 euros brutos al mes cuánto es neto,es,calcular,/sueldo-neto-1800-euros-brutos-al-mes/,nueva,2,neto,/datos/tabla-sueldo-neto/
+2000 brutos mensuales cuánto es neto,es,calcular,/sueldo-neto-2000-euros-brutos-al-mes/,nueva,1,neto,/datos/tabla-sueldo-neto/
+sueldo neto 110000 euros brutos,es,calcular,/sueldo-neto-110000-euros-brutos/,nueva,3,neto,/sueldo-neto-100000-euros-brutos/
+calcular sueldo neto Navarra 2027,es,calcular,/sueldo-neto-navarra/,nueva,2,neto,/sueldo-neto-la-rioja/
+sueldo neto País Vasco Bizkaia calcular,es,calcular,/sueldo-neto-pais-vasco/,nueva,2,neto,/sueldo-neto-cantabria/
+despido improcedente 2 años cuánto me dan,es,calcular,/indemnizacion-despido-improcedente-2-anos/,prog,2,despido,/datos/tabla-indemnizacion-despido/
+indemnización por despido con 5 años de antigüedad,es,calcular,/indemnizacion-despido-improcedente-5-anos/,prog,1,despido,/datos/tabla-indemnizacion-despido/
+finiquito por despido con 10 años,es,calcular,/indemnizacion-despido-improcedente-10-anos/,prog,1,despido,/calculadora-finiquito/
+indemnización despido 15 años trabajados,es,calcular,/indemnizacion-despido-improcedente-15-anos/,prog,2,despido,/datos/tabla-indemnizacion-despido/
+despido objetivo con 5 años cuánto me corresponde,es,calcular,/indemnizacion-despido-objetivo-5-anos/,prog,2,despido,/calculadora-indemnizacion-despido/
+paro con 1 hijo cuánto cobro,es,calcular,/paro-con-1-hijo/,nueva,2,paro,/datos/cuantias-paro/
+paro con 2 hijos cuánto cobro 2027,es,calcular,/paro-con-2-hijos/,nueva,1,paro,/datos/cuantias-paro/
+cuánto cobro de paro si ganaba 1200 euros,es,calcular,/paro-con-sueldo-de-1200-euros/,nueva,2,paro,/calculadora-paro/
+paro con un sueldo de 1500 euros cuánto me queda,es,calcular,/paro-con-base-de-1500-euros/,prog,1,paro,/calculadora-paro/
+cuánto cobro de paro con 2000 euros de sueldo,es,calcular,/paro-con-base-de-2000-euros/,prog,2,paro,/calculadora-paro/
+cuánto paro me queda con 1 año cotizado,es,calcular,/paro-con-1-ano-cotizado/,prog,1,paro,/datos/cuantias-paro/
+paro con 2 años cotizados cuántos meses,es,calcular,/paro-con-2-anos-cotizados/,prog,2,paro,/datos/cuantias-paro/
+calendario de pago del paro 2027 SEPE,es,plazo,/fecha-cobro-paro/,nueva,1,paro,/calculadora-paro/
+calcular capitalización del paro pago único,es,calcular,/calculadora-capitalizacion-paro/,nueva,2,paro,/calculadora-cuota-autonomos/
+subsidio para mayores de 52 años cuánto se cobra,es,calcular,/subsidio-mayores-52/,nueva,2,subsidio,/calculadora-subsidio-desempleo/
+calculadora ERTE cuánto cobro,es,calcular,/calculadora-erte/,nueva,2,paro,/calculadora-paro/
+calcular ingreso mínimo vital 2027,es,calcular,/calculadora-ingreso-minimo-vital/,nueva,2,subsidio,/calculadora-subsidio-desempleo/
+prestación por nacimiento y cuidado de menor cuánto cobro,es,calcular,/calculadora-prestacion-nacimiento/,nueva,2,baja,/calculadora-baja-laboral/
+calcular incapacidad permanente total pensión,es,calcular,/calculadora-incapacidad-permanente/,nueva,2,baja,/calculadora-baja-laboral/
+calcular pensión de viudedad 2027,es,calcular,/calculadora-pension-viudedad/,nueva,2,pension,/calculadora-pension-jubilacion/
+fecha de cobro de la pensión y paga extra de diciembre,es,plazo,/fecha-cobro-pension/,nueva,2,pension,/calculadora-pension-jubilacion/
+tabla coeficientes reductores jubilación anticipada,es,tabla,/datos/coeficientes-jubilacion-anticipada/,nueva,2,jubilacion,/calculadora-edad-jubilacion/
+calcular nómina empleada de hogar 2027,es,calcular,/calculadora-empleada-hogar/,nueva,2,nomina,/calculadora-salario-minimo/
+sueldo neto media jornada 20 horas,es,calcular,/sueldo-neto-media-jornada/,nueva,2,neto,/calculadora-reduccion-jornada/
+tablas salariales convenio seguridad privada 2027,es,tabla,/convenio-seguridad-privada-tablas-salariales/,nueva,2,convenio,/calculadora-sueldo-neto/
+tablas salariales convenio grandes almacenes 2027,es,tabla,/convenio-grandes-almacenes-tablas-salariales/,nueva,2,convenio,/calculadora-sueldo-neto/
+tablas salariales hostelería Madrid 2027,es,tabla,/convenio-hosteleria-madrid-tablas-salariales/,nueva,2,convenio,/sueldo-neto-madrid/
+calculadora sou net 2027,ca,calcular,/ca/calculadora-sou-net/,calc,1,neto,/ca/
+calcular sou net a partir del brut,ca,calcular,/ca/calculadora-sou-net/,calc,1,neto,/ca/dades/taula-sou-net/
+quant cobro net al mes amb 14 pagues,ca,calcular,/ca/calculadora-sou-net/,calc,1,neto,/ca/calculadora-paga-extra/
+taula brut net 2027,ca,tabla,/ca/dades/taula-sou-net/,ficha,1,neto,/ca/calculadora-sou-net/
+sou net 20000 euros bruts,ca,calcular,/ca/sou-net-20000-euros-bruts/,prog,2,neto,/ca/dades/taula-sou-net/
+25000 bruts quant és en net,ca,calcular,/ca/sou-net-25000-euros-bruts/,prog,1,neto,/ca/dades/taula-sou-net/
+30000 euros bruts quant cobro al mes,ca,calcular,/ca/sou-net-30000-euros-bruts/,prog,1,neto,/ca/dades/taula-sou-net/
+sou net 35000 euros bruts,ca,calcular,/ca/sou-net-35000-euros-bruts/,prog,2,neto,/ca/dades/taula-sou-net/
+40000 bruts en net al mes,ca,calcular,/ca/sou-net-40000-euros-bruts/,prog,2,neto,/ca/dades/taula-sou-net/
+sou net 18000 euros bruts,ca,calcular,/ca/sou-net-18000-euros-bruts/,prog,2,neto,/ca/sou-net-20000-euros-bruts/
+sou net 50000 euros bruts,ca,calcular,/ca/sou-net-50000-euros-bruts/,prog,3,neto,/ca/sou-net-40000-euros-bruts/
+calculadora sou net Catalunya 2027,ca,calcular,/ca/sou-net-catalunya/,prog,1,neto,/ca/calculadora-sou-net/
+sou net Illes Balears calcular,ca,calcular,/ca/sou-net-illes-balears/,prog,2,neto,/ca/calculadora-sou-net/
+sou net Comunitat Valenciana calcular,ca,calcular,/ca/sou-net-comunitat-valenciana/,prog,2,neto,/ca/calculadora-sou-net/
+calculadora sou brut a partir del net,ca,calcular,/ca/calculadora-sou-brut/,calc,2,bruto,/ca/calculadora-sou-net/
+calculadora nòmina 2027,ca,calcular,/ca/calculadora-nomina/,calc,1,nomina,/ca/
+comprovar els descomptes de la nòmina,ca,comprobar,/ca/calculadora-nomina/,calc,2,nomina,/ca/dades/tipus-cotitzacio/
+calculadora cost empresa treballador,ca,calcular,/ca/calculadora-cost-empresa/,calc,2,coste,/ca/calculadora-nomina/
+calculadora retenció IRPF nòmina,ca,calcular,/ca/calculadora-retencio-irpf/,calc,1,irpf,/ca/calculadora-nomina/
+taula retenció IRPF 2027,ca,tabla,/ca/dades/taula-retencio-irpf/,ficha,2,irpf,/ca/calculadora-retencio-irpf/
+quin percentatge d'IRPF em retenen,ca,calcular,/ca/calculadora-retencio-irpf/,calc,2,irpf,/ca/calculadora-sou-net/
+calcular paga extra de Nadal,ca,calcular,/ca/calculadora-paga-extra/,calc,1,pagaextra,/ca/
+quan es cobra la paga extra de Nadal,ca,plazo,/ca/calculadora-paga-extra/,calc,1,pagaextra,/ca/calculadora-nomina/
+calculadora quitança 2027,ca,calcular,/ca/calculadora-quitanca/,calc,1,finiquito,/ca/
+calcular quitança baixa voluntària,ca,calcular,/ca/calculadora-quitanca/,calc,1,finiquito,/ca/calculadora-vacances/
+calcular quitança fi de contracte,ca,calcular,/ca/calculadora-quitanca/,calc,2,finiquito,/ca/calculadora-indemnitzacio-acomiadament/
+calculadora indemnització acomiadament improcedent,ca,calcular,/ca/calculadora-indemnitzacio-acomiadament/,calc,1,despido,/ca/calculadora-quitanca/
+indemnització acomiadament objectiu 20 dies,ca,calcular,/ca/calculadora-indemnitzacio-acomiadament/,calc,2,despido,/ca/dades/taula-indemnitzacio-acomiadament/
+taula indemnització per acomiadament,ca,tabla,/ca/dades/taula-indemnitzacio-acomiadament/,ficha,3,despido,/ca/calculadora-indemnitzacio-acomiadament/
+calcular dies de vacances que em toquen,ca,calcular,/ca/calculadora-vacances/,calc,2,vacaciones,/ca/calculadora-quitanca/
+calcular hores extra 2027,ca,calcular,/ca/calculadora-hores-extra/,calc,3,horasextra,/ca/calculadora-nomina/
+calcular sou per hora,ca,calcular,/ca/calculadora-salari-per-hora/,calc,3,salariohora,/ca/calculadora-sou-net/
+calculadora reducció de jornada,ca,calcular,/ca/calculadora-reduccio-jornada/,calc,2,reduccion,/ca/
+salari mínim 2027 net mensual,ca,calcular,/ca/calculadora-salari-minim/,calc,1,smi,/ca/
+SMI 2027 en 14 pagues quant és,ca,calcular,/ca/calculadora-salari-minim/,calc,2,smi,/ca/dades/salari-minim-historic/
+calculadora atur 2027,ca,calcular,/ca/calculadora-atur/,calc,1,paro,/ca/
+quant cobraré d'atur,ca,calcular,/ca/calculadora-atur/,calc,1,paro,/ca/calculadora-quitanca/
+taula quanties atur 2027,ca,tabla,/ca/dades/quanties-atur/,ficha,2,paro,/ca/calculadora-atur/
+atur màxim i mínim 2027,ca,tabla,/ca/dades/quanties-atur/,ficha,2,paro,/ca/calculadora-atur/
+calculadora subsidi d'atur,ca,calcular,/ca/calculadora-subsidi-atur/,calc,2,subsidio,/ca/calculadora-atur/
+tinc dret al subsidi d'atur,ca,comprobar,/ca/calculadora-subsidi-atur/,calc,2,subsidio,/ca/calculadora-atur/
+IPREM 2027 mensual,ca,tabla,/ca/dades/iprem-historic/,ficha,3,subsidio,/ca/calculadora-subsidi-atur/
+calcular baixa laboral per malaltia comuna,ca,calcular,/ca/calculadora-baixa-laboral/,calc,1,baja,/ca/
+quant cobro de baixa per accident laboral,ca,calcular,/ca/calculadora-baixa-laboral/,calc,2,baja,/ca/calculadora-nomina/
+calculadora quota autònoms 2027,ca,calcular,/ca/calculadora-quota-autonoms/,calc,1,autonomos,/ca/
+trams quota autònoms 2027,ca,tabla,/ca/dades/trams-quota-autonoms/,ficha,1,autonomos,/ca/calculadora-quota-autonoms/
+calcular edat de jubilació,ca,calcular,/ca/calculadora-edat-jubilacio/,calc,2,jubilacion,/ca/
+calculadora pensió de jubilació 2027,ca,calcular,/ca/calculadora-pensio-jubilacio/,calc,2,pension,/ca/calculadora-edat-jubilacio/
+quant cobraré de pensió amb 35 anys cotitzats,ca,calcular,/ca/calculadora-pensio-jubilacio/,calc,2,pension,/ca/dades/calendari-edat-jubilacio/
+calculadora pujada de sou en net,ca,calcular,/ca/calculadora-pujada-sou/,calc,3,subida,/ca/calculadora-sou-net/
+bases de cotització 2027 màxima i mínima,ca,tabla,/ca/dades/bases-cotitzacio/,ficha,3,cotizacion,/ca/calculadora-nomina/
+tipus de cotització treballador 2027,ca,tabla,/ca/dades/tipus-cotitzacio/,ficha,3,cotizacion,/ca/calculadora-cost-empresa/
+1200 euros nets al mes quant és en brut,ca,calcular,/ca/brut-per-1200-euros-nets-al-mes/,nueva,2,bruto,/ca/calculadora-sou-brut/
+1500 euros nets al mes quant és en brut,ca,calcular,/ca/brut-per-1500-euros-nets-al-mes/,nueva,2,bruto,/ca/calculadora-sou-brut/
+2000 nets al mes quant és en brut,ca,calcular,/ca/brut-per-2000-euros-nets-al-mes/,nueva,2,bruto,/ca/calculadora-sou-brut/
+sou net 1500 euros bruts al mes,ca,calcular,/ca/sou-net-1500-euros-bruts-al-mes/,nueva,2,neto,/ca/dades/taula-sou-net/
+2000 euros bruts al mes quant és net,ca,calcular,/ca/sou-net-2000-euros-bruts-al-mes/,nueva,2,neto,/ca/dades/taula-sou-net/
+indemnització acomiadament amb 5 anys d'antiguitat,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-5-anys/,prog,2,despido,/ca/dades/taula-indemnitzacio-acomiadament/
+quitança per acomiadament amb 10 anys,ca,calcular,/ca/indemnitzacio-acomiadament-improcedent-10-anys/,prog,2,despido,/ca/calculadora-quitanca/
+atur amb 2 fills quant cobro,ca,calcular,/ca/atur-amb-2-fills/,nueva,2,paro,/ca/dades/quanties-atur/
+quant atur em queda amb 1 any cotitzat,ca,calcular,/ca/atur-amb-1-any-cotitzat/,prog,2,paro,/ca/dades/quanties-atur/
+calendari de cobrament de l'atur 2027,ca,plazo,/ca/data-cobrament-atur/,nueva,2,paro,/ca/calculadora-atur/
+calcular capitalització de l'atur,ca,calcular,/ca/calculadora-capitalitzacio-atur/,nueva,3,paro,/ca/calculadora-quota-autonoms/
+calcular ingrés mínim vital 2027,ca,calcular,/ca/calculadora-ingres-minim-vital/,nueva,3,subsidio,/ca/calculadora-subsidi-atur/
+prestació per naixement i cura de menor quant cobro,ca,calcular,/ca/calculadora-prestacio-naixement/,nueva,3,baja,/ca/calculadora-baixa-laboral/
+coeficients reductors jubilació anticipada taula,ca,tabla,/ca/dades/coeficients-jubilacio-anticipada/,nueva,3,jubilacion,/ca/calculadora-edat-jubilacio/
+sou net mitja jornada 20 hores,ca,calcular,/ca/sou-net-mitja-jornada/,nueva,3,neto,/ca/calculadora-reduccio-jornada/
+taules salarials conveni hostaleria Catalunya 2027,ca,tabla,/ca/conveni-hostaleria-catalunya-taules-salarials/,nueva,2,convenio,/ca/sou-net-catalunya/
+taules salarials conveni oficines i despatxos Catalunya,ca,tabla,/ca/conveni-oficines-despatxos-catalunya-taules-salarials/,nueva,2,convenio,/ca/sou-net-catalunya/
+taules salarials conveni neteja d'edificis Catalunya,ca,tabla,/ca/conveni-neteja-edificis-catalunya-taules-salarials/,nueva,3,convenio,/ca/sou-net-catalunya/

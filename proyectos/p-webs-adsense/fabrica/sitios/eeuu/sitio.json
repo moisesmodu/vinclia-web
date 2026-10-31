@@ -1,0 +1,379 @@
+{
+  "id": "eeuu",
+  "pais": "us",
+  "idiomas": [
+    "es"
+  ],
+  "dominio": "https://chequeclaro.com",
+  "nombre": "ChequeClaro",
+  "lema": {
+    "es": "Calculadoras de cheque de pago, taxes y dinero en español"
+  },
+  "descripcion": {
+    "es": "Calcula tu cheque de pago por estado, cuánto te descuentan de taxes, tu reembolso, el crédito por hijos, el self-employment tax del 1099 y el costo de enviar dinero, con las cifras 2026 del IRS y de cada estado. En español, con el método y las fuentes."
+  },
+  "colores": {
+    "primario": "#0B6B7A",
+    "primarioOscuro": "#08535F",
+    "marca": "#1597A8",
+    "acento": "#FFD166",
+    "cabecera": "#0A1C22",
+    "fondo": "#FFFFFF",
+    "tenue": "#F0F6F8",
+    "superficie": "#FFFFFF",
+    "tinta": "#0A1C22",
+    "suave": "#46595F",
+    "borde": "#D5E3E8"
+  },
+  "anioPorDefecto": 2026,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio"
+    },
+    "bio": {
+      "es": "Programador y dueño de una escuela de programación en Lleida (España). Programa cada calculadora y la revisa contra las publicaciones del IRS (Rev. Proc. anual, Publicación 15-T, instrucciones del Schedule SE), la Administración del Seguro Social, el Departamento de Trabajo y los departamentos de impuestos de cada estado. No es preparador de impuestos: las páginas explican el cálculo, no sustituyen a un CPA o agente inscrito."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@numimates.com"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "us-cheque-pago",
+    "us-salario-hora",
+    "us-impuesto-federal",
+    "us-reembolso",
+    "us-1099",
+    "us-impuesto-estatal",
+    "us-fica",
+    "us-w4",
+    "us-overtime",
+    "us-propinas-overtime",
+    "us-credito-hijos",
+    "us-salario-minimo",
+    "us-401k",
+    "us-tarjeta",
+    "us-prestamo-auto",
+    "us-remesas",
+    "us-tipo-cambio"
+  ],
+  "destacadas": [
+    "us-cheque-pago",
+    "us-reembolso",
+    "us-salario-hora",
+    "us-1099",
+    "us-credito-hijos",
+    "us-remesas"
+  ],
+  "rutasDatos": {
+    "es": "datos"
+  },
+  "textosDatos": {
+    "es": {
+      "titulo": "Datos oficiales de taxes y salarios 2026: tablas para consultar y citar",
+      "descripcion": "Tablas con las cifras oficiales del IRS, la SSA, el Departamento de Trabajo y los estados: tramos federales, salario mínimo e impuesto estatal, descargables en CSV."
+    }
+  },
+  "ui": {
+    "es": {
+      "revisado": "Cifras revisadas con el IRS y fuentes oficiales",
+      "descargo": "Resultado orientativo calculado con las reglas publicadas. ChequeClaro es un sitio independiente: no somos el IRS ni ninguna agencia del gobierno. No sustituye a un preparador de impuestos (CPA o agente inscrito), a tu talón de pago ni a tu declaración.",
+      "avisoProvisional": "Las cifras de {anio} son provisionales: algunas aún no se han publicado y se usan las vigentes. Se actualizan en cuanto salgan.",
+      "datos": "Datos oficiales"
+    }
+  },
+  "programaticas": [
+    {
+      "id": "cheque-por-estado",
+      "plantilla": "us-cheque-estado",
+      "csv": "estados.csv",
+      "slug": {
+        "es": "cheque-de-pago-{slug}"
+      },
+      "calc": "us-cheque-pago",
+      "titulo": {
+        "es": "Cheque de pago por estado"
+      },
+      "indice": {
+        "es": "cheque-de-pago-por-estado"
+      },
+      "descripcion": {
+        "es": "Cuánto te descuentan en cada cheque en los 15 estados con más hispanos: impuesto estatal, federal, FICA y salario mínimo."
+      }
+    },
+    {
+      "id": "cheque-estado-salario",
+      "plantilla": "us-cheque-estado-salario",
+      "csv": "estado-salario.csv",
+      "slug": {
+        "es": "cheque-de-pago-{slug}-{salario}"
+      },
+      "calc": "us-cheque-pago",
+      "titulo": {
+        "es": "Cuánto te queda según el salario y el estado"
+      },
+      "indice": {
+        "es": "cheque-de-pago-por-estado-y-salario"
+      },
+      "descripcion": {
+        "es": "El cheque neto de cada salario de $30,000 a $100,000 en 15 estados, con el impuesto federal, FICA y estatal desglosados."
+      }
+    },
+    {
+      "id": "hora-a-anual",
+      "plantilla": "us-hora-anual",
+      "csv": "por-hora.csv",
+      "slug": {
+        "es": "{hora}-dolares-la-hora-al-ano"
+      },
+      "calc": "us-salario-hora",
+      "titulo": {
+        "es": "Cuánto es la hora al año"
+      },
+      "indice": {
+        "es": "salario-por-hora-al-ano"
+      },
+      "descripcion": {
+        "es": "Cuánto es al año, al mes y a la semana cada tarifa de $10 a $50 la hora, con el neto en Texas, California y Nueva York."
+      }
+    },
+    {
+      "id": "anual-a-hora",
+      "plantilla": "us-anual-hora",
+      "csv": "por-ano.csv",
+      "slug": {
+        "es": "{anual}-al-ano-por-hora"
+      },
+      "calc": "us-salario-hora",
+      "titulo": {
+        "es": "Cuánto es el salario anual por hora"
+      },
+      "indice": {
+        "es": "salario-anual-por-hora"
+      },
+      "descripcion": {
+        "es": "Cuánto es por hora cada salario anual de $30,000 a $120,000, con el neto por estado."
+      }
+    },
+    {
+      "id": "impuesto-estatal-estado",
+      "plantilla": "us-impuesto-estatal-estado",
+      "csv": "estados.csv",
+      "slug": {
+        "es": "impuesto-estatal-{slug}"
+      },
+      "calc": "us-impuesto-estatal",
+      "titulo": {
+        "es": "Impuesto estatal por estado"
+      },
+      "indice": {
+        "es": "impuesto-estatal-por-estado"
+      },
+      "descripcion": {
+        "es": "Tramos y cuánto se paga de impuesto estatal sobre la renta en 15 estados, con la comparación con $60,000."
+      }
+    },
+    {
+      "id": "overtime-estado",
+      "plantilla": "us-overtime-estado",
+      "csv": "estados.csv",
+      "slug": {
+        "es": "overtime-{slug}"
+      },
+      "calc": "us-overtime",
+      "titulo": {
+        "es": "Horas extra (overtime) por estado"
+      },
+      "indice": {
+        "es": "overtime-por-estado"
+      },
+      "descripcion": {
+        "es": "Cuánto se paga la hora extra en cada estado y cuánto te queda neto después de impuestos."
+      }
+    },
+    {
+      "id": "credito-hijos",
+      "plantilla": "us-credito-hijos-n",
+      "csv": "hijos.csv",
+      "slug": {
+        "es": "credito-por-hijos-{hijos}-{ud}"
+      },
+      "calc": "us-credito-hijos",
+      "titulo": {
+        "es": "Crédito por hijos según el número de hijos"
+      },
+      "indice": {
+        "es": "credito-por-hijos-segun-numero"
+      },
+      "descripcion": {
+        "es": "El crédito tributario por hijos con 1 a 5 hijos según tu ingreso: parte reembolsable, cuándo se cobra entero y cuándo baja."
+      }
+    }
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Números claros, sin letra pequeña."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Cheque",
+      "Claro"
+    ]
+  },
+  "heroe": {
+    "calc": "us-cheque-pago",
+    "campos": [
+      "bruto",
+      "estado"
+    ],
+    "titulo": {
+      "es": "¿Cuánto llega <em>de verdad</em> a tu cheque?",
+      "ca": "¿Cuánto llega <em>de verdad</em> a tu cheque?"
+    },
+    "texto": {
+      "es": "Escribe tu salario y tu estado y mira al instante cuánto te queda en cada pago, cuánto se lleva el IRS, el Seguro Social, Medicare y tu estado. En español, con las cifras oficiales de 2026.",
+      "ca": "Escribe tu salario y tu estado y mira al instante cuánto te queda en cada pago, cuánto se lleva el IRS, el Seguro Social, Medicare y tu estado. En español, con las cifras oficiales de 2026."
+    },
+    "completa": {
+      "es": "Ver el cálculo completo",
+      "ca": "Ver el cálculo completo"
+    }
+  },
+  "categorias": [
+    {
+      "id": "cheque",
+      "icono": "cartera",
+      "nombre": {
+        "es": "Tu cheque y tu sueldo",
+        "ca": "Tu cheque y tu sueldo"
+      },
+      "calcs": [
+        "us-cheque-pago",
+        "us-salario-hora",
+        "us-overtime",
+        "us-propinas-overtime",
+        "us-salario-minimo"
+      ]
+    },
+    {
+      "id": "impuestos",
+      "icono": "documento",
+      "nombre": {
+        "es": "Impuestos y reembolso",
+        "ca": "Impuestos y reembolso"
+      },
+      "calcs": [
+        "us-impuesto-federal",
+        "us-reembolso",
+        "us-impuesto-estatal",
+        "us-credito-hijos"
+      ]
+    },
+    {
+      "id": "cuenta",
+      "icono": "persona",
+      "nombre": {
+        "es": "Por cuenta propia y retenciones",
+        "ca": "Por cuenta propia y retenciones"
+      },
+      "calcs": [
+        "us-1099",
+        "us-fica",
+        "us-w4"
+      ]
+    },
+    {
+      "id": "dinero",
+      "icono": "monedas",
+      "nombre": {
+        "es": "Ahorro, deudas y envíos",
+        "ca": "Ahorro, deudas y envíos"
+      },
+      "calcs": [
+        "us-401k",
+        "us-tarjeta",
+        "us-prestamo-auto",
+        "us-remesas",
+        "us-tipo-cambio"
+      ]
+    }
+  ],
+  "cifras": [
+    {
+      "e": {
+        "es": "Deducción estándar",
+        "ca": "Deducción estándar"
+      },
+      "p": "fiscal.federal.deduccion_estandar.single",
+      "f": "eur0",
+      "nota": {
+        "es": "soltero; $32,200 en declaración conjunta",
+        "ca": "soltero; $32,200 en declaración conjunta"
+      },
+      "ficha": "cifras-2026"
+    },
+    {
+      "e": {
+        "es": "Tope del Seguro Social",
+        "ca": "Tope del Seguro Social"
+      },
+      "p": "laboral.fica.tope_salarial",
+      "f": "eur0",
+      "nota": {
+        "es": "salario sujeto al 6.2%",
+        "ca": "salario sujeto al 6.2%"
+      },
+      "ficha": "cifras-2026"
+    },
+    {
+      "e": {
+        "es": "Salario mínimo federal",
+        "ca": "Salario mínimo federal"
+      },
+      "p": "laboral.salario_minimo.federal",
+      "f": "eur",
+      "nota": {
+        "es": "por hora; muchos estados pagan más",
+        "ca": "por hora; muchos estados pagan más"
+      },
+      "ficha": "salario-minimo-estados"
+    },
+    {
+      "e": {
+        "es": "Crédito por hijo",
+        "ca": "Crédito por hijo"
+      },
+      "p": "fiscal.credito_hijos.por_hijo",
+      "f": "eur0",
+      "nota": {
+        "es": "por cada hijo menor de 17",
+        "ca": "por cada hijo menor de 17"
+      },
+      "ficha": "cifras-2026"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+---
+// Bloque de anuncio de AdSense. No pinta nada hasta que haya cuenta aprobada y un identificador de bloque;
+// así la página no tiene huecos vacíos ni penaliza el rendimiento antes de tiempo.
+// Posiciones (análisis del líder): bajo el resultado y al final del contenido; nunca antes del formulario.
+import { sitio, anunciosActivos } from '../lib/sitio';
+import { UI } from '../lib/ui';
+import type { Lang } from '../lib/def';
+interface Props { posicion: 'bajoResultado' | 'finContenido'; lang: Lang }
+const { posicion, lang } = Astro.props;
+const slot = sitio.adsense.slots[posicion];
+const mostrar = anunciosActivos() && !!slot;
+---
+{mostrar && (
+  <div class="anuncio" data-et={UI[lang].anuncio}>
+    <ins class="adsbygoogle" data-ad-client={sitio.adsense.cliente} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+)}

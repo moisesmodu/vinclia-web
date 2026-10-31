@@ -1,0 +1,409 @@
+{
+  "id": "nomina",
+  "pais": "es",
+  "idiomas": [
+    "es",
+    "ca"
+  ],
+  "dominio": "https://netoclaro.app",
+  "nombre": "NetoClaro",
+  "lema": {
+    "es": "Calculadoras de nómina y laboral con datos oficiales",
+    "ca": "Calculadores de nòmina i laboral amb dades oficials"
+  },
+  "descripcion": {
+    "es": "Calcula tu sueldo neto 2027, finiquito, despido, paro, baja, horas extra y cuota de autónomos con los parámetros del BOE. En castellano y catalán, con el método y las fuentes publicados.",
+    "ca": "Calcula el teu sou net 2027, la quitança, l’acomiadament, l’atur, la baixa, les hores extra i la quota d’autònoms amb els paràmetres del BOE. En català i castellà, amb el mètode i les fonts publicats."
+  },
+  "colores": {
+    "primario": "#087A54",
+    "primarioOscuro": "#06603F",
+    "marca": "#0E9F6E",
+    "acento": "#FFD166",
+    "cabecera": "#0B1F17",
+    "fondo": "#FFFFFF",
+    "tenue": "#F2F7F4",
+    "superficie": "#FFFFFF",
+    "tinta": "#0B1F17",
+    "suave": "#4A5C54",
+    "borde": "#D9E5DF"
+  },
+  "anioPorDefecto": 2027,
+  "autor": {
+    "nombre": "Moisés Mora",
+    "rol": {
+      "es": "Editor y responsable del sitio",
+      "ca": "Editor i responsable del lloc"
+    },
+    "bio": {
+      "es": "Autónomo en Lleida desde hace años y dueño de una escuela de programación. Programa y revisa cada calculadora contra el texto del BOE y los manuales de la Seguridad Social y la Agencia Tributaria.",
+      "ca": "Autònom a Lleida des de fa anys i propietari d’una escola de programació. Programa i revisa cada calculadora amb el text del BOE i els manuals de la Seguretat Social i l’Agència Tributària."
+    }
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "PENDIENTE-NIF",
+    "domicilio": "Lleida (España)",
+    "email": "hola@numimates.com"
+  },
+  "adsense": {
+    "cliente": "",
+    "slots": {
+      "bajoResultado": "",
+      "finContenido": ""
+    }
+  },
+  "umami": {
+    "src": "https://cloud.umami.is/script.js",
+    "id": ""
+  },
+  "searchConsole": {
+    "verificacion": ""
+  },
+  "calculadoras": [
+    "sueldo-neto",
+    "sueldo-bruto",
+    "nomina",
+    "coste-empresa",
+    "retencion-irpf",
+    "paga-extra",
+    "subida-sueldo",
+    "finiquito",
+    "indemnizacion-despido",
+    "vacaciones",
+    "dias-laborables",
+    "horas-extra",
+    "salario-hora",
+    "reduccion-jornada",
+    "salario-minimo",
+    "paro",
+    "subsidio-desempleo",
+    "baja-it",
+    "cuota-autonomos",
+    "jubilacion-edad",
+    "pension-jubilacion"
+  ],
+  "destacadas": [
+    "sueldo-neto",
+    "finiquito",
+    "indemnizacion-despido",
+    "paro",
+    "cuota-autonomos",
+    "baja-it"
+  ],
+  "rutasDatos": {
+    "es": "datos",
+    "ca": "dades"
+  },
+  "programaticas": [
+    {
+      "id": "neto-por-bruto",
+      "plantilla": "neto-por-bruto",
+      "csv": "sueldo-bruto.csv",
+      "slug": {
+        "es": "sueldo-neto-{bruto}-euros-brutos",
+        "ca": "sou-net-{bruto}-euros-bruts"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por salario bruto",
+        "ca": "Sou net per salari brut"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-salario-bruto",
+        "ca": "sou-net-per-salari-brut"
+      },
+      "descripcion": {
+        "es": "Lo que cobras en neto con cada salario bruto de 12.000 a 100.000 €, calculado con la retención, la Seguridad Social y el IRPF de 2027.",
+        "ca": "El que cobres en net amb cada salari brut de 12.000 a 100.000 €, calculat amb la retenció, la Seguretat Social i l’IRPF del 2027."
+      }
+    },
+    {
+      "id": "neto-por-comunidad",
+      "plantilla": "neto-por-comunidad",
+      "csv": "comunidades.csv",
+      "slug": {
+        "es": "sueldo-neto-{slug_es}",
+        "ca": "sou-net-{slug_ca}"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por comunidad autónoma",
+        "ca": "Sou net per comunitat autònoma"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-comunidad",
+        "ca": "sou-net-per-comunitat"
+      },
+      "descripcion": {
+        "es": "Tabla de bruto a neto en cada comunidad autónoma, con su escala del IRPF y lo que sale a pagar o a devolver en la renta.",
+        "ca": "Taula de brut a net a cada comunitat autònoma, amb la seva escala de l’IRPF i el que surt a pagar o a retornar a la renda."
+      }
+    },
+    {
+      "id": "neto-bruto-comunidad",
+      "plantilla": "neto-bruto-comunidad",
+      "csv": "neto-bruto-comunidad.csv",
+      "slug": {
+        "es": "sueldo-neto-{bruto}-euros-{slug_es}",
+        "ca": "sou-net-{bruto}-euros-{slug_ca}"
+      },
+      "calc": "sueldo-neto",
+      "titulo": {
+        "es": "Sueldo neto por salario y comunidad",
+        "ca": "Sou net per salari i comunitat"
+      },
+      "indice": {
+        "es": "sueldo-neto-por-salario-y-comunidad",
+        "ca": "sou-net-per-salari-i-comunitat"
+      },
+      "descripcion": {
+        "es": "El neto de cada salario de 20.000 a 60.000 € en las 16 comunidades: nómina, IRPF real, renta y puesto frente a las demás.",
+        "ca": "El net de cada salari de 20.000 a 60.000 € a les 16 comunitats: nòmina, IRPF real, renda i posició davant de les altres."
+      }
+    },
+    {
+      "id": "indemnizacion-anos",
+      "plantilla": "indemnizacion-anos",
+      "csv": "indemnizacion-anos.csv",
+      "slug": {
+        "es": "indemnizacion-despido-{tipo}-{anos}-{ud_es}",
+        "ca": "indemnitzacio-acomiadament-{tipo_ca}-{anos}-{ud_ca}"
+      },
+      "calc": "indemnizacion-despido",
+      "titulo": {
+        "es": "Indemnización por despido según los años",
+        "ca": "Indemnització per acomiadament segons els anys"
+      },
+      "indice": {
+        "es": "indemnizacion-despido-por-anos",
+        "ca": "indemnitzacio-acomiadament-per-anys"
+      },
+      "descripcion": {
+        "es": "Cuánto te corresponde por un despido improcedente u objetivo según los años trabajados y el sueldo, con los topes del Estatuto.",
+        "ca": "Quant et correspon per un acomiadament improcedent o objectiu segons els anys treballats i el sou, amb els topalls de l’Estatut."
+      }
+    },
+    {
+      "id": "paro-base",
+      "plantilla": "paro-base",
+      "csv": "paro-base.csv",
+      "slug": {
+        "es": "paro-con-base-de-{base}-euros",
+        "ca": "atur-amb-base-de-{base}-euros"
+      },
+      "calc": "paro",
+      "titulo": {
+        "es": "Paro según la base de cotización",
+        "ca": "Atur segons la base de cotització"
+      },
+      "indice": {
+        "es": "paro-por-base-de-cotizacion",
+        "ca": "atur-per-base-de-cotitzacio"
+      },
+      "descripcion": {
+        "es": "La prestación por desempleo de cada base de cotización de 1.500 a 2.500 €, con los topes por hijos y lo que entra en tu cuenta.",
+        "ca": "La prestació per desocupació de cada base de cotització de 1.500 a 2.500 €, amb els topalls per fills i el que t’entra al compte."
+      }
+    },
+    {
+      "id": "paro-anos",
+      "plantilla": "paro-anos",
+      "csv": "paro-anos.csv",
+      "slug": {
+        "es": "paro-con-{anos}-{sfx_es}",
+        "ca": "atur-amb-{anos}-{sfx_ca}"
+      },
+      "calc": "paro",
+      "titulo": {
+        "es": "Paro según los años cotizados",
+        "ca": "Atur segons els anys cotitzats"
+      },
+      "indice": {
+        "es": "paro-por-anos-cotizados",
+        "ca": "atur-per-anys-cotitzats"
+      },
+      "descripcion": {
+        "es": "Cuántos meses de paro tienes con 1 a 6 años cotizados y cuánto suman según tu base de cotización.",
+        "ca": "Quants mesos d’atur tens amb 1 a 6 anys cotitzats i quant sumen segons la teva base de cotització."
+      }
+    },
+    {
+      "id": "calendario-laboral",
+      "plantilla": "calendario-laboral",
+      "csv": "calendario-laboral.csv",
+      "slug": {
+        "es": "calendario-laboral-2027-{slug_es}",
+        "ca": "calendari-laboral-2027-{slug_ca}"
+      },
+      "calc": "dias-laborables",
+      "titulo": {
+        "es": "Calendario laboral 2027",
+        "ca": "Calendari laboral 2027"
+      },
+      "indice": {
+        "es": "calendario-laboral-2027",
+        "ca": "calendari-laboral-2027"
+      },
+      "descripcion": {
+        "es": "Festivos nacionales, autonómicos y locales de 2027 en las 17 comunidades y en los municipios con fiestas locales publicadas: días laborables, puentes y comparación con 2026.",
+        "ca": "Festius nacionals, autonòmics i locals del 2027 a les 17 comunitats i als municipis amb festes locals publicades: dies laborables, ponts i comparació amb el 2026."
+      }
+    }
+  ],
+  "marcaClaro": {
+    "familia": "Claro",
+    "promesa": {
+      "es": "Números claros, sin letra pequeña.",
+      "ca": "Números clars, sense lletra petita."
+    },
+    "sello": {
+      "es": "Hecho en Lleida · Números claros",
+      "ca": "Fet a Lleida · Números clars"
+    },
+    "fuentes": {
+      "titulos": "Manrope",
+      "texto": "Inter"
+    },
+    "partes": [
+      "Neto",
+      "Claro"
+    ]
+  },
+  "heroe": {
+    "calc": "sueldo-neto",
+    "campos": [
+      "bruto",
+      "ccaa"
+    ],
+    "titulo": {
+      "es": "¿Cuánto vas a cobrar <em>de verdad</em>?",
+      "ca": "Quant cobraràs <em>de veritat</em>?"
+    },
+    "texto": {
+      "es": "Escribe tu sueldo bruto y mira al instante cuánto llega a tu cuenta, cuánto se lleva Hacienda y cuánto la Seguridad Social. Con los parámetros oficiales y el método a la vista.",
+      "ca": "Escriu el teu sou brut i mira a l’instant quant arriba al teu compte, quant s’emporta Hisenda i quant la Seguretat Social. Amb els paràmetres oficials i el mètode a la vista."
+    },
+    "completa": {
+      "es": "Ver la nómina completa",
+      "ca": "Mostra la nòmina completa"
+    }
+  },
+  "categorias": [
+    {
+      "id": "sueldo",
+      "icono": "cartera",
+      "nombre": {
+        "es": "Tu sueldo",
+        "ca": "El teu sou"
+      },
+      "calcs": [
+        "sueldo-neto",
+        "sueldo-bruto",
+        "nomina",
+        "retencion-irpf",
+        "paga-extra",
+        "subida-sueldo",
+        "salario-minimo",
+        "coste-empresa"
+      ]
+    },
+    {
+      "id": "jornada",
+      "icono": "reloj",
+      "nombre": {
+        "es": "Jornada y horas",
+        "ca": "Jornada i hores"
+      },
+      "calcs": [
+        "horas-extra",
+        "salario-hora",
+        "reduccion-jornada",
+        "vacaciones",
+        "dias-laborables"
+      ]
+    },
+    {
+      "id": "despido",
+      "icono": "maletin",
+      "nombre": {
+        "es": "Despido y paro",
+        "ca": "Acomiadament i atur"
+      },
+      "calcs": [
+        "finiquito",
+        "indemnizacion-despido",
+        "paro",
+        "subsidio-desempleo"
+      ]
+    },
+    {
+      "id": "futuro",
+      "icono": "arena",
+      "nombre": {
+        "es": "Baja, jubilación y autónomos",
+        "ca": "Baixa, jubilació i autònoms"
+      },
+      "calcs": [
+        "baja-it",
+        "jubilacion-edad",
+        "pension-jubilacion",
+        "cuota-autonomos"
+      ]
+    }
+  ],
+  "cifras": [
+    {
+      "e": {
+        "es": "Salario mínimo al mes",
+        "ca": "Salari mínim al mes"
+      },
+      "p": "laboral.smi.mensual14",
+      "f": "eur0",
+      "nota": {
+        "es": "en 14 pagas",
+        "ca": "en 14 pagues"
+      },
+      "ficha": "smi-historico"
+    },
+    {
+      "e": {
+        "es": "Base máxima de cotización",
+        "ca": "Base màxima de cotització"
+      },
+      "p": "laboral.cotizacion.base_max_mensual",
+      "f": "eur0",
+      "nota": {
+        "es": "al mes",
+        "ca": "al mes"
+      },
+      "ficha": "bases-cotizacion"
+    },
+    {
+      "e": {
+        "es": "IPREM mensual",
+        "ca": "IPREM mensual"
+      },
+      "p": "laboral.iprem.mensual",
+      "f": "eur0",
+      "nota": {
+        "es": "para ayudas y paro",
+        "ca": "per a ajuts i atur"
+      },
+      "ficha": "iprem-historico"
+    },
+    {
+      "e": {
+        "es": "Contingencias comunes",
+        "ca": "Contingències comunes"
+      },
+      "p": "laboral.cotizacion.trabajador.cc",
+      "f": "pct",
+      "nota": {
+        "es": "lo que cotizas tú",
+        "ca": "el que cotitzes tu"
+      },
+      "ficha": "tipos-cotizacion"
+    }
+  ]
+}

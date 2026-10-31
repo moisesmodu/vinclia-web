@@ -1,0 +1,64 @@
+---
+// Un campo del formulario de una calculadora (número, desplegable, fecha o casilla).
+// · Desplegables de 2 o 3 opciones cortas → control segmentado (radios con el mismo name: cliente.ts los lee
+//   con form.elements, que devuelve un RadioNodeList con .value).
+// · Importe principal → número + deslizador sincronizado (el deslizador no tiene name: no entra en la URL).
+// · Casillas → interruptor (role="switch").
+import { t, type Campo, type Lang } from '../lib/def';
+import { fmt } from '../lib/render';
+interface Props { c: Campo; lang: Lang; v: Record<string, any>; mini?: boolean; principal?: boolean }
+const { c, lang, v, mini = false, principal = false } = Astro.props;
+const et = t(c.etiqueta, lang);
+const oculto = c.si ? !c.si(v) : false;
+const seg = !mini && c.tipo === 'select' && c.opciones.length >= 2 && c.opciones.length <= 3 && c.opciones.every((o) => t(o.t, lang).length <= 34);
+
+// Escala del deslizador: hasta 4 veces el valor por defecto, redondeada a 1, 2 o 5 × 10ⁿ
+const bonito = (x: number) => { const p = 10 ** Math.floor(Math.log10(x)); return [1, 2, 5, 10].map((k) => k * p).find((k) => k >= x)!; };
+const desliz = c.tipo === 'numero' && principal && !mini && c.def > 0 && (c.sufijo === '€' || c.sufijo === '$');
+let rMin = 0, rMax = 0, rPaso = 1, pct = 0;
+if (c.tipo === 'numero' && desliz) {
+  rMin = c.min ?? 0;
+  rMax = c.max ?? bonito(c.def * 4);
+  rPaso = Math.max(c.paso ?? 1, bonito((rMax - rMin) / 400));
+  pct = Math.min(100, Math.max(0, ((c.def - rMin) / (rMax - rMin)) * 100));
+}
+const corto = (n: number) => fmt(n, 'eur0', lang);
+---
+{seg && c.tipo === 'select' ? (
+  <fieldset class="campo campo-seg" data-campo={c.id} hidden={oculto}>
+    <legend>{et}</legend>
+    <div class="seg" style={`--n:${c.opciones.length}`}>
+      {c.opciones.map((o, i) => (
+        <label class="seg-op"><input type="radio" id={i === 0 ? `f-${c.id}` : undefined} name={c.id} value={o.v} checked={o.v === c.def} /><span>{t(o.t, lang)}</span></label>
+      ))}
+    </div>
+    {c.ayuda && <small class="ayuda">{t(c.ayuda, lang)}</small>}
+  </fieldset>
+) : (
+  <div class:list={['campo', `campo-${c.tipo}`, { 'campo-principal': desliz }]} data-campo={c.id} hidden={oculto}>
+    {c.tipo === 'casilla' ? (
+      <label class="interruptor"><input type="checkbox" role="switch" id={`f-${c.id}`} name={c.id} checked={c.def} /><span class="int-pista" aria-hidden="true"></span><span>{et}</span></label>
+    ) : (
+      <label for={`f-${c.id}`}>{et}</label>
+    )}
+    {c.tipo === 'numero' && (
+      <div class="entrada">
+        <input type="number" inputmode="decimal" id={`f-${c.id}`} name={c.id} value={c.def} min={c.min} max={c.max} step={c.paso ?? 'any'} />
+        {c.sufijo && <span class="sufijo" aria-hidden="true">{c.sufijo}</span>}
+      </div>
+    )}
+    {desliz && (
+      <div class="desliz" style={`--p:${pct.toFixed(2)}%`}>
+        <input type="range" class="rango" data-rango={c.id} min={rMin} max={rMax} step={rPaso} value={c.def} aria-label={et} aria-valuetext={corto(c.def)} aria-controls={`f-${c.id}`} />
+        <div class="desliz-esc" aria-hidden="true"><span>{corto(rMin)}</span><span>{corto(rMax)}</span></div>
+      </div>
+    )}
+    {c.tipo === 'select' && (
+      <select id={`f-${c.id}`} name={c.id}>
+        {c.opciones.map((o) => <option value={o.v} selected={o.v === c.def}>{t(o.t, lang)}</option>)}
+      </select>
+    )}
+    {c.tipo === 'fecha' && <input type="date" id={`f-${c.id}`} name={c.id} value={c.def} />}
+    {c.ayuda && <small class="ayuda">{t(c.ayuda, lang)}</small>}
+  </div>
+)}

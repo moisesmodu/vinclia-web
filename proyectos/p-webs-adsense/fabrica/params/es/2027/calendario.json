@@ -1,0 +1,4858 @@
+{
+ "pais": "es",
+ "anio": 2027,
+ "estado": "publicado",
+ "actualizado": "2026-10-30",
+ "nota_general": "boe.es y los boletines autonómicos no eran accesibles desde el entorno (bloqueo de red). Cada fecha se ha contrastado por búsqueda web con extractos del boletín o de la administración que lo publica y, cuando no, con al menos una fuente secundaria que cita la norma. «verificado»: true cuando el dato sale de la administración que lo publica (boletín, ayuntamiento o gobierno); false cuando solo lo hemos visto en prensa, sindicatos o asesorías. Un municipio solo genera página si sus dos festivos locales están publicados.",
+ "fuente": {
+  "nombre": "Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2027 (BOE 13/10/2026, BOE-A-2026-21254)",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+ },
+ "origenes": {
+  "nacional": "Fiesta nacional no sustituible (art. 37.2 ET y RD 2001/1983)",
+  "sustituible": "Fiesta nacional que la comunidad puede sustituir y mantiene",
+  "autonomico": "Fiesta propia de la comunidad, o traslado al lunes de una fiesta que cae en domingo",
+  "local": "Fiesta local del municipio (hasta dos al año)"
+ },
+ "comunidades": {
+  "AN": {
+   "n": {
+    "es": "Andalucía",
+    "ca": "Andalusia"
+   },
+   "slug": {
+    "es": "andalucia",
+    "ca": "andalusia"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 84/2026, de 29 de abril (BOJA núm. 84, de 5 de mayo de 2026)",
+    "url": "https://www.juntadeandalucia.es/boja/2026/84/1"
+   },
+   "nota": "El Día de Andalucía (28 de febrero) cae en domingo y se traslada al lunes 1 de marzo; la Asunción, al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-01",
+     "n": {
+      "es": "Lunes siguiente al Día de Andalucía",
+      "ca": "Dilluns següent al Dia d’Andalusia"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "AR": {
+   "n": {
+    "es": "Aragón",
+    "ca": "Aragó"
+   },
+   "slug": {
+    "es": "aragon",
+    "ca": "arago"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Orden del Departamento de Economía, Empleo e Industria (BOA núm. 180, de 16 de septiembre de 2026)",
+    "url": "https://www.aragonhoy.es/economia-competitividad-y-empleo/aragon-calendario-laboral-2027-12-festivos-autonomicos-traslado-asuncion-16-agosto-106318"
+   },
+   "nota": "San Jorge (23 de abril) cae en viernes. La Asunción se traslada al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-04-23",
+     "n": {
+      "es": "San Jorge, Día de Aragón",
+      "ca": "Sant Jordi, Dia d’Aragó"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "AS": {
+   "n": {
+    "es": "Asturias",
+    "ca": "Astúries"
+   },
+   "slug": {
+    "es": "asturias",
+    "ca": "asturies"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Decreto 7/2026, de 16 de febrero, del Principado de Asturias (BOPA), que sustituye una fiesta nacional por el 8 de septiembre",
+    "url": "https://www.asturiasmundial.com/noticia/144745/calendario-laboral-asturias-2027-todos-festivos-mejores-puentes-dias-conviene-reservar-vacaciones/"
+   },
+   "nota": "Lista contrastada en prensa y sindicatos; no hemos podido abrir el BOPA. La Asunción se traslada al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Día de Asturias",
+      "ca": "Dia d’Astúries"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "IB": {
+   "n": {
+    "es": "Illes Balears",
+    "ca": "Illes Balears"
+   },
+   "slug": {
+    "es": "baleares",
+    "ca": "illes-balears"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Acuerdo del Consell de Govern de 13 de marzo de 2026 (BOIB de 14 de marzo de 2026)",
+    "url": "https://www.caib.es/pidip2front/ficha_convocatoria.xhtml?lang=es&urlSemantica=consell-de-governaprobado-el-calendario-de-fiestas-laborales-de-baleares-para-el-ano-2027"
+   },
+   "nota": "El 15 de agosto, que cae en domingo, no se traslada.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-01",
+     "n": {
+      "es": "Día de las Illes Balears",
+      "ca": "Diada de les Illes Balears"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CN": {
+   "n": {
+    "es": "Canarias",
+    "ca": "Canàries"
+   },
+   "slug": {
+    "es": "canarias",
+    "ca": "canaries"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Decreto 115/2026, de 29 de junio (BOC de 3 de julio de 2026)",
+    "url": "https://www.canarias7.es/canarias/canarias-confirma-calendario-laboral-2027-ayuntamientos-mes-20260629145936-nt.html"
+   },
+   "nota": "El Día de Canarias (30 de mayo) cae en domingo y no se traslada. Cada isla tiene además su fiesta insular (por ejemplo, 2 de febrero en Tenerife y 8 de septiembre en Gran Canaria), que no se incluye aquí.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-30",
+     "n": {
+      "es": "Día de Canarias",
+      "ca": "Dia de Canàries"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CB": {
+   "n": {
+    "es": "Cantabria",
+    "ca": "Cantàbria"
+   },
+   "slug": {
+    "es": "cantabria",
+    "ca": "cantabria"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Orden de la Consejería de Industria, Empleo, Innovación y Comercio (BOC de 15 de julio de 2026)",
+    "url": "https://www.cantabria.es/web/comunicados/w/el-gobierno-de-cantabria-publica-el-calendario-de-fiestas-laborales-para-el-a%C3%B1o-2027"
+   },
+   "nota": "El 28 de julio sustituye a Santiago (25 de julio, domingo) y el 15 de septiembre, a la Asunción (15 de agosto, domingo).",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-07-28",
+     "n": {
+      "es": "Día de las Instituciones de Cantabria",
+      "ca": "Dia de les Institucions de Cantàbria"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-09-15",
+     "n": {
+      "es": "La Bien Aparecida",
+      "ca": "La Bien Aparecida"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CL": {
+   "n": {
+    "es": "Castilla y León",
+    "ca": "Castella i Lleó"
+   },
+   "slug": {
+    "es": "castilla-y-leon",
+    "ca": "castella-i-lleo"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 7/2026, de 26 de marzo (BOCYL núm. 61, de 30 de marzo de 2026)",
+    "url": "https://www.educa.jcyl.es/es/informacion/calendario-escolar-2026-2027.ficheros/1893083-Calendario%20laboral%202027.pdf"
+   },
+   "nota": "La Asunción se traslada al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-04-23",
+     "n": {
+      "es": "Fiesta de Castilla y León",
+      "ca": "Festa de Castella i Lleó"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CM": {
+   "n": {
+    "es": "Castilla-La Mancha",
+    "ca": "Castella-la Manxa"
+   },
+   "slug": {
+    "es": "castilla-la-mancha",
+    "ca": "castella-la-manxa"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 34/2026, de 23 de junio (DOCM núm. 131, de 13 de julio de 2026)",
+    "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026%2F07%2F13%2Fpdf%2F2026_5228.pdf&tipo=rutaDocm"
+   },
+   "nota": "El Corpus Christi sustituye a San José y el Día de Castilla-La Mancha (lunes 31 de mayo), al descanso de la Asunción.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-27",
+     "n": {
+      "es": "Corpus Christi",
+      "ca": "Corpus Christi"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-31",
+     "n": {
+      "es": "Día de Castilla-La Mancha",
+      "ca": "Dia de Castella-la Manxa"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CT": {
+   "n": {
+    "es": "Cataluña",
+    "ca": "Catalunya"
+   },
+   "slug": {
+    "es": "cataluna",
+    "ca": "catalunya"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Ordre EMT/52/2026, de 25 de març (DOGC núm. 9637, d’1 d’abril de 2026)",
+    "url": "https://portaljuridic.gencat.cat/ca/detalls/noticia/calendari_festes_laborals_catalunya_2027_dogc"
+   },
+   "nota": "Tres fiestas caen en sábado (1 de mayo, 11 de septiembre y 25 de diciembre). En Aran, el Lunes de Pascua se sustituye por el 17 de junio (Festa d’Aran).",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-09-11",
+     "n": {
+      "es": "Fiesta Nacional de Cataluña",
+      "ca": "Diada Nacional de Catalunya"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "EX": {
+   "n": {
+    "es": "Extremadura",
+    "ca": "Extremadura"
+   },
+   "slug": {
+    "es": "extremadura",
+    "ca": "extremadura"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 119/2026, de 2 de junio (DOE núm. 108, de 8 de junio de 2026)",
+    "url": "https://laadministracionaldia.inap.es/noticia.asp?id=1266525"
+   },
+   "nota": "El descanso de la Asunción (15 de agosto, domingo) se disfruta el lunes 11 de octubre.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Día de Extremadura",
+      "ca": "Dia d’Extremadura"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-11",
+     "n": {
+      "es": "Descanso de la Asunción de la Virgen (trasladado)",
+      "ca": "Descans de l’Assumpció (traslladat)"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "GA": {
+   "n": {
+    "es": "Galicia",
+    "ca": "Galícia"
+   },
+   "slug": {
+    "es": "galicia",
+    "ca": "galicia"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto de la Xunta de Galicia por el que se determina el calendario laboral para 2027 (DOG)",
+    "url": "https://www.xunta.gal/es/notas-de-prensa/-/nova/026293/xunta-galicia-aprueba-calendario-laboral-para-2027-con-19-marzo-17-mayo-como"
+   },
+   "nota": "El 25 de julio (Día Nacional de Galicia) cae en domingo; la Xunta elige San José y el Día das Letras Galegas (17 de mayo), este en lugar de la Asunción.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-17",
+     "n": {
+      "es": "Día de las Letras Gallegas",
+      "ca": "Dia de les Lletres Gallegues"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "MD": {
+   "n": {
+    "es": "Comunidad de Madrid",
+    "ca": "Comunitat de Madrid"
+   },
+   "slug": {
+    "es": "comunidad-de-madrid",
+    "ca": "comunitat-de-madrid"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 82/2026, de 30 de septiembre (BOCM núm. 234, de 1 de octubre de 2026)",
+    "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/01/BOCM-20261001-19.PDF"
+   },
+   "nota": "El 2 de mayo, Fiesta de la Comunidad, cae en domingo y no se traslada. La Asunción pasa al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Lunes siguiente a la Asunción de la Virgen",
+      "ca": "Dilluns següent a l’Assumpció"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "MC": {
+   "n": {
+    "es": "Región de Murcia",
+    "ca": "Regió de Múrcia"
+   },
+   "slug": {
+    "es": "region-de-murcia",
+    "ca": "regio-de-murcia"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Dirección General de Diálogo Social y Bienestar Laboral (BORM núm. 171, de 27 de julio de 2026)",
+    "url": "https://murcia.satse.es/documents/703768/8065533/Calendario+laboral+2027-BORM.pdf/9a2acc65-9dd3-8a09-3753-d6437ec9d68b?t=1785314737616"
+   },
+   "nota": "El Día de la Región (9 de junio) sustituye al lunes 16 de agosto.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-06-09",
+     "n": {
+      "es": "Día de la Región de Murcia",
+      "ca": "Dia de la Regió de Múrcia"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "NA": {
+   "n": {
+    "es": "Navarra",
+    "ca": "Navarra"
+   },
+   "slug": {
+    "es": "navarra",
+    "ca": "navarra"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución del Servicio de Trabajo del Gobierno de Navarra (BON núm. 103, de 28 de mayo de 2026)",
+    "url": "https://www.noticiasdenavarra.com/sociedad/2026/10/13/calendario-laboral-2027-navarra-son-11642496.html"
+   },
+   "nota": "Lista contrastada en prensa; no hemos podido abrir el BON.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-03",
+     "n": {
+      "es": "San Francisco Javier, Día de Navarra",
+      "ca": "Sant Francesc Xavier, Dia de Navarra"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "PV": {
+   "n": {
+    "es": "País Vasco",
+    "ca": "País Basc"
+   },
+   "slug": {
+    "es": "pais-vasco",
+    "ca": "pais-basc"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Decreto 90/2026, de 9 de junio (BOPV núm. 134, de 16 de julio de 2026)",
+    "url": "https://www.euskadi.eus/bopv2/datos/2026/07/2603215a.shtml"
+   },
+   "nota": "San José deja de ser festivo y lo sustituye el 7 de octubre, aniversario de la constitución del primer Gobierno de Euskadi (1936).",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-10-07",
+     "n": {
+      "es": "Aniversario del primer Gobierno de Euskadi",
+      "ca": "Aniversari del primer Govern d’Euskadi"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "RI": {
+   "n": {
+    "es": "La Rioja",
+    "ca": "La Rioja"
+   },
+   "slug": {
+    "es": "la-rioja",
+    "ca": "la-rioja"
+   },
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución 186/2026, de 30 de abril (BOR núm. 86, de 8 de mayo de 2026)",
+    "url": "https://www.larioja.org/relaciones-laborales/es/calendario-festivos-laborales-2027"
+   },
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-06-09",
+     "n": {
+      "es": "Día de La Rioja",
+      "ca": "Dia de La Rioja"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "VC": {
+   "n": {
+    "es": "Comunitat Valenciana",
+    "ca": "Comunitat Valenciana"
+   },
+   "slug": {
+    "es": "comunidad-valenciana",
+    "ca": "comunitat-valenciana"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Decreto 42/2026, de 20 de marzo, del Consell (DOGV núm. 10329, de 25 de marzo de 2026)",
+    "url": "https://ateval.com/blog/general/calendario-laboral-2027/"
+   },
+   "nota": "Jueves Santo no es festivo; el 24 de junio tampoco (cada ayuntamiento puede elegirlo como local). El 9 de octubre cae en sábado. Lista contrastada en prensa y patronales; no hemos podido abrir el DOGV.",
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-19",
+     "n": {
+      "es": "San José",
+      "ca": "Sant Josep"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-10-09",
+     "n": {
+      "es": "Día de la Comunitat Valenciana",
+      "ca": "Dia de la Comunitat Valenciana"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "CE": {
+   "n": {
+    "es": "Ceuta",
+    "ca": "Ceuta"
+   },
+   "slug": {
+    "es": "ceuta",
+    "ca": "ceuta"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2027 (BOE 13/10/2026, BOE-A-2026-21254)",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+   },
+   "nota": "Ciudad autónoma. Fiestas de la ciudad según prensa; los dos festivos locales están pendientes de confirmar.",
+   "paginas": false,
+   "completo": false,
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-17",
+     "n": {
+      "es": "Fiesta del Sacrificio (Eidul Adha)",
+      "ca": "Festa del Sacrifici (Aïd al-Adha)"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-08-05",
+     "n": {
+      "es": "Nuestra Señora de África",
+      "ca": "Mare de Déu d’Àfrica"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  },
+  "ML": {
+   "n": {
+    "es": "Melilla",
+    "ca": "Melilla"
+   },
+   "slug": {
+    "es": "melilla",
+    "ca": "melilla"
+   },
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de 8 de octubre de 2026, de la Dirección General de Trabajo, por la que se publica la relación de fiestas laborales para el año 2027 (BOE 13/10/2026, BOE-A-2026-21254)",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254"
+   },
+   "nota": "Ciudad autónoma. Falta por confirmar una de sus fiestas de ámbito de ciudad; lista incompleta.",
+   "paginas": false,
+   "completo": false,
+   "festivos": [
+    {
+     "f": "2027-01-01",
+     "n": {
+      "es": "Año Nuevo",
+      "ca": "Any Nou"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-01-06",
+     "n": {
+      "es": "Epifanía del Señor",
+      "ca": "Reis"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "sustituible"
+    },
+    {
+     "f": "2027-03-26",
+     "n": {
+      "es": "Viernes Santo",
+      "ca": "Divendres Sant"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-01",
+     "n": {
+      "es": "Fiesta del Trabajo",
+      "ca": "Festa del Treball"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-05-17",
+     "n": {
+      "es": "Fiesta del Sacrificio (Eidul Adha)",
+      "ca": "Festa del Sacrifici (Aïd al-Adha)"
+     },
+     "o": "autonomico"
+    },
+    {
+     "f": "2027-10-12",
+     "n": {
+      "es": "Fiesta Nacional de España",
+      "ca": "Festa Nacional d’Espanya"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-11-01",
+     "n": {
+      "es": "Todos los Santos",
+      "ca": "Tots Sants"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-06",
+     "n": {
+      "es": "Día de la Constitución",
+      "ca": "Dia de la Constitució"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-08",
+     "n": {
+      "es": "Inmaculada Concepción",
+      "ca": "la Immaculada"
+     },
+     "o": "nacional"
+    },
+    {
+     "f": "2027-12-25",
+     "n": {
+      "es": "Natividad del Señor",
+      "ca": "Nadal"
+     },
+     "o": "nacional"
+    }
+   ]
+  }
+ },
+ "municipios": [
+  {
+   "id": "almeria",
+   "n": {
+    "es": "Almería",
+    "ca": "Almeria"
+   },
+   "ccaa": "AN",
+   "provincia": "Almería",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "roquetas-de-mar",
+   "n": {
+    "es": "Roquetas de Mar",
+    "ca": "Roquetas de Mar"
+   },
+   "ccaa": "AN",
+   "provincia": "Almería",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "el-ejido",
+   "n": {
+    "es": "El Ejido",
+    "ca": "El Ejido"
+   },
+   "ccaa": "AN",
+   "provincia": "Almería",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "cadiz",
+   "n": {
+    "es": "Cádiz",
+    "ca": "Cadis"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "jerez-de-la-frontera",
+   "n": {
+    "es": "Jerez de la Frontera",
+    "ca": "Jerez de la Frontera"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "algeciras",
+   "n": {
+    "es": "Algeciras",
+    "ca": "Algesires"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "san-fernando",
+   "n": {
+    "es": "San Fernando",
+    "ca": "San Fernando"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "el-puerto-de-santa-maria",
+   "n": {
+    "es": "El Puerto de Santa María",
+    "ca": "El Puerto de Santa María"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "chiclana-de-la-frontera",
+   "n": {
+    "es": "Chiclana de la Frontera",
+    "ca": "Chiclana de la Frontera"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "sanlucar-de-barrameda",
+   "n": {
+    "es": "Sanlúcar de Barrameda",
+    "ca": "Sanlúcar de Barrameda"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "la-linea-de-la-concepcion",
+   "n": {
+    "es": "La Línea de la Concepción",
+    "ca": "La Línea de la Concepción"
+   },
+   "ccaa": "AN",
+   "provincia": "Cádiz",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "cordoba",
+   "n": {
+    "es": "Córdoba",
+    "ca": "Còrdova"
+   },
+   "ccaa": "AN",
+   "provincia": "Córdoba",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "granada",
+   "n": {
+    "es": "Granada",
+    "ca": "Granada"
+   },
+   "ccaa": "AN",
+   "provincia": "Granada",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "motril",
+   "n": {
+    "es": "Motril",
+    "ca": "Motril"
+   },
+   "ccaa": "AN",
+   "provincia": "Granada",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "huelva",
+   "n": {
+    "es": "Huelva",
+    "ca": "Huelva"
+   },
+   "ccaa": "AN",
+   "provincia": "Huelva",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "jaen",
+   "n": {
+    "es": "Jaén",
+    "ca": "Jaén"
+   },
+   "ccaa": "AN",
+   "provincia": "Jaén",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "linares",
+   "n": {
+    "es": "Linares",
+    "ca": "Linares"
+   },
+   "ccaa": "AN",
+   "provincia": "Jaén",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "malaga",
+   "n": {
+    "es": "Málaga",
+    "ca": "Màlaga"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Ayuntamiento de Málaga: comunicado del Pleno de 28 de mayo de 2026 sobre las fiestas locales de 2027",
+    "url": "https://www.malaga.eu/visorcontenido/ANUDocumentDisplayer/179458/COMUNICADO.pdf"
+   },
+   "festivos": [
+    {
+     "f": "2027-08-19",
+     "n": {
+      "es": "Incorporación de Málaga a la Corona de Castilla",
+      "ca": "Incorporació de Màlaga a la Corona de Castella"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Nuestra Señora de la Victoria",
+      "ca": "Mare de Déu de la Victòria"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "marbella",
+   "n": {
+    "es": "Marbella",
+    "ca": "Marbella"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "mijas",
+   "n": {
+    "es": "Mijas",
+    "ca": "Mijas"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "velez-malaga",
+   "n": {
+    "es": "Vélez-Málaga",
+    "ca": "Vélez-Málaga"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "fuengirola",
+   "n": {
+    "es": "Fuengirola",
+    "ca": "Fuengirola"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "torremolinos",
+   "n": {
+    "es": "Torremolinos",
+    "ca": "Torremolinos"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "benalmadena",
+   "n": {
+    "es": "Benalmádena",
+    "ca": "Benalmádena"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "estepona",
+   "n": {
+    "es": "Estepona",
+    "ca": "Estepona"
+   },
+   "ccaa": "AN",
+   "provincia": "Málaga",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "sevilla",
+   "n": {
+    "es": "Sevilla",
+    "ca": "Sevilla"
+   },
+   "ccaa": "AN",
+   "provincia": "Sevilla",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "El Pleno de Sevilla aprueba el 14 de abril y el 27 de mayo de 2027 como fiestas locales (Teleprensa, 18/06/2026)",
+    "url": "https://www.teleprensa.com/andalucia/sevilla/pleno-aprueba-14-abril-27-mayo-2027-como-fiestas-locales-feria-corpus/202606181007352445419.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-04-14",
+     "n": {
+      "es": "Miércoles de Feria",
+      "ca": "Dimecres de Fira"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-05-27",
+     "n": {
+      "es": "Corpus Christi",
+      "ca": "Corpus Christi"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "dos-hermanas",
+   "n": {
+    "es": "Dos Hermanas",
+    "ca": "Dos Hermanas"
+   },
+   "ccaa": "AN",
+   "provincia": "Sevilla",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "alcala-de-guadaira",
+   "n": {
+    "es": "Alcalá de Guadaíra",
+    "ca": "Alcalá de Guadaíra"
+   },
+   "ccaa": "AN",
+   "provincia": "Sevilla",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOJA núm. 210, de 29 de octubre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "zaragoza",
+   "n": {
+    "es": "Zaragoza",
+    "ca": "Saragossa"
+   },
+   "ccaa": "AR",
+   "provincia": "Zaragoza",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Sin acuerdo publicado; San Valero (29 de enero) y la Cincomarzada (5 de marzo) son las habituales, pero no están confirmadas para 2027."
+  },
+  {
+   "id": "huesca",
+   "n": {
+    "es": "Huesca",
+    "ca": "Osca"
+   },
+   "ccaa": "AR",
+   "provincia": "Huesca",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "teruel",
+   "n": {
+    "es": "Teruel",
+    "ca": "Terol"
+   },
+   "ccaa": "AR",
+   "provincia": "Teruel",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "oviedo",
+   "n": {
+    "es": "Oviedo",
+    "ca": "Oviedo"
+   },
+   "ccaa": "AS",
+   "provincia": "Asturias",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de 22 de mayo de 2026 de la Consejería de Ciencia, Industria y Empleo: fiestas locales de 2027 (BOPA núm. 110, de 10 de junio de 2026)",
+    "url": "https://spj.facuso.es/wp-content/uploads/2026/06/10.06.26-BOPA-FIESTAS-LOCALES-ASTURIAS-2027.pdf"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-18",
+     "n": {
+      "es": "Martes de Campo",
+      "ca": "Dimarts de Camp"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-21",
+     "n": {
+      "es": "San Mateo",
+      "ca": "Sant Mateu"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "gijon",
+   "n": {
+    "es": "Gijón",
+    "ca": "Gijón"
+   },
+   "ccaa": "AS",
+   "provincia": "Asturias",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de 22 de mayo de 2026 de la Consejería de Ciencia, Industria y Empleo: fiestas locales de 2027 (BOPA núm. 110, de 10 de junio de 2026)",
+    "url": "https://spj.facuso.es/wp-content/uploads/2026/06/10.06.26-BOPA-FIESTAS-LOCALES-ASTURIAS-2027.pdf"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-09",
+     "n": {
+      "es": "Martes de Carnaval (Antroxu)",
+      "ca": "Dimarts de Carnaval (Antroxu)"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-06-29",
+     "n": {
+      "es": "San Pedro",
+      "ca": "Sant Pere"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "aviles",
+   "n": {
+    "es": "Avilés",
+    "ca": "Avilés"
+   },
+   "ccaa": "AS",
+   "provincia": "Asturias",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de 22 de mayo de 2026 de la Consejería de Ciencia, Industria y Empleo: fiestas locales de 2027 (BOPA núm. 110, de 10 de junio de 2026)",
+    "url": "https://spj.facuso.es/wp-content/uploads/2026/06/10.06.26-BOPA-FIESTAS-LOCALES-ASTURIAS-2027.pdf"
+   },
+   "festivos": [
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-08-28",
+     "n": {
+      "es": "San Agustín",
+      "ca": "Sant Agustí"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "San Agustín cae en sábado."
+  },
+  {
+   "id": "palma",
+   "n": {
+    "es": "Palma",
+    "ca": "Palma"
+   },
+   "ccaa": "IB",
+   "provincia": "Illes Balears",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social: calendario laboral general y local de 2027 (BOIB núm. 122, de 29 de septiembre de 2026)",
+    "url": "https://www.caib.es/eboibfront/pdf/es/2026/122/1229310"
+   },
+   "festivos": [
+    {
+     "f": "2027-01-20",
+     "n": {
+      "es": "San Sebastián",
+      "ca": "Sant Sebastià"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "calvia",
+   "n": {
+    "es": "Calvià",
+    "ca": "Calvià"
+   },
+   "ccaa": "IB",
+   "provincia": "Illes Balears",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOIB núm. 122, de 29 de septiembre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "eivissa",
+   "n": {
+    "es": "Ibiza",
+    "ca": "Eivissa"
+   },
+   "ccaa": "IB",
+   "provincia": "Illes Balears",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOIB núm. 122, de 29 de septiembre de 2026; pendiente de contrastar el anexo."
+  },
+  {
+   "id": "las-palmas-de-gran-canaria",
+   "n": {
+    "es": "Las Palmas de Gran Canaria",
+    "ca": "Las Palmas de Gran Canària"
+   },
+   "ccaa": "CN",
+   "provincia": "Las Palmas",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "telde",
+   "n": {
+    "es": "Telde",
+    "ca": "Telde"
+   },
+   "ccaa": "CN",
+   "provincia": "Las Palmas",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "santa-lucia-de-tirajana",
+   "n": {
+    "es": "Santa Lucía de Tirajana",
+    "ca": "Santa Lucía de Tirajana"
+   },
+   "ccaa": "CN",
+   "provincia": "Las Palmas",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "san-bartolome-de-tirajana",
+   "n": {
+    "es": "San Bartolomé de Tirajana",
+    "ca": "San Bartolomé de Tirajana"
+   },
+   "ccaa": "CN",
+   "provincia": "Las Palmas",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "arrecife",
+   "n": {
+    "es": "Arrecife",
+    "ca": "Arrecife"
+   },
+   "ccaa": "CN",
+   "provincia": "Las Palmas",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "santa-cruz-de-tenerife",
+   "n": {
+    "es": "Santa Cruz de Tenerife",
+    "ca": "Santa Cruz de Tenerife"
+   },
+   "ccaa": "CN",
+   "provincia": "Santa Cruz de Tenerife",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "san-cristobal-de-la-laguna",
+   "n": {
+    "es": "San Cristóbal de La Laguna",
+    "ca": "San Cristóbal de La Laguna"
+   },
+   "ccaa": "CN",
+   "provincia": "Santa Cruz de Tenerife",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "arona",
+   "n": {
+    "es": "Arona",
+    "ca": "Arona"
+   },
+   "ccaa": "CN",
+   "provincia": "Santa Cruz de Tenerife",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "adeje",
+   "n": {
+    "es": "Adeje",
+    "ca": "Adeje"
+   },
+   "ccaa": "CN",
+   "provincia": "Santa Cruz de Tenerife",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "granadilla-de-abona",
+   "n": {
+    "es": "Granadilla de Abona",
+    "ca": "Granadilla de Abona"
+   },
+   "ccaa": "CN",
+   "provincia": "Santa Cruz de Tenerife",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Publicados en el BOC núm. 168, de 21 de agosto de 2026, pero no hemos podido contrastar el anexo ni la fiesta insular de cada isla."
+  },
+  {
+   "id": "santander",
+   "n": {
+    "es": "Santander",
+    "ca": "Santander"
+   },
+   "ccaa": "CB",
+   "provincia": "Cantabria",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "torrelavega",
+   "n": {
+    "es": "Torrelavega",
+    "ca": "Torrelavega"
+   },
+   "ccaa": "CB",
+   "provincia": "Cantabria",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "avila",
+   "n": {
+    "es": "Ávila",
+    "ca": "Àvila"
+   },
+   "ccaa": "CL",
+   "provincia": "Ávila",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "burgos",
+   "n": {
+    "es": "Burgos",
+    "ca": "Burgos"
+   },
+   "ccaa": "CL",
+   "provincia": "Burgos",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "En prensa: Curpillos (4 de junio) y San Pedro (29 de junio); falta confirmar en el BOP."
+  },
+  {
+   "id": "leon",
+   "n": {
+    "es": "León",
+    "ca": "Lleó"
+   },
+   "ccaa": "CL",
+   "provincia": "León",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "El Pleno aprobó San Juan y San Froilán según la prensa; falta confirmar las fechas en el BOP."
+  },
+  {
+   "id": "ponferrada",
+   "n": {
+    "es": "Ponferrada",
+    "ca": "Ponferrada"
+   },
+   "ccaa": "CL",
+   "provincia": "León",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "palencia",
+   "n": {
+    "es": "Palencia",
+    "ca": "Palència"
+   },
+   "ccaa": "CL",
+   "provincia": "Palencia",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "salamanca",
+   "n": {
+    "es": "Salamanca",
+    "ca": "Salamanca"
+   },
+   "ccaa": "CL",
+   "provincia": "Salamanca",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Calendario laboral 2027 de Salamanca, con el acuerdo publicado en el BOP (Hostelería de Salamanca)",
+    "url": "https://www.hosteleriasalamanca.es/noticias-hosteleria/octubre-2026/calendario-laboral-2027-festivos-espana-castilla-leon-salamanca"
+   },
+   "festivos": [
+    {
+     "f": "2027-06-12",
+     "n": {
+      "es": "San Juan de Sahagún",
+      "ca": "Sant Joan de Sahagún"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Virgen de la Vega",
+      "ca": "Mare de Déu de la Vega"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "San Juan de Sahagún cae en sábado."
+  },
+  {
+   "id": "segovia",
+   "n": {
+    "es": "Segovia",
+    "ca": "Segòvia"
+   },
+   "ccaa": "CL",
+   "provincia": "Segovia",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "soria",
+   "n": {
+    "es": "Soria",
+    "ca": "Sòria"
+   },
+   "ccaa": "CL",
+   "provincia": "Soria",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "valladolid",
+   "n": {
+    "es": "Valladolid",
+    "ca": "Valladolid"
+   },
+   "ccaa": "CL",
+   "provincia": "Valladolid",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Ya se conoce el calendario de festivos para 2027 en Castilla y León (Valladolid Plural)",
+    "url": "https://www.valladolidplural.com/articulo/castilla-y-leon/conoce-calendario-festivos-2027-castilla-leon-novedades-destacadas-puentes-clave/20260326125822069255.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-13",
+     "n": {
+      "es": "San Pedro Regalado",
+      "ca": "Sant Pere Regalat"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Virgen de San Lorenzo",
+      "ca": "Mare de Déu de Sant Llorenç"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Fechas en prensa; pendientes de su publicación en el BOP."
+  },
+  {
+   "id": "zamora",
+   "n": {
+    "es": "Zamora",
+    "ca": "Zamora"
+   },
+   "ccaa": "CL",
+   "provincia": "Zamora",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "albacete",
+   "n": {
+    "es": "Albacete",
+    "ca": "Albacete"
+   },
+   "ccaa": "CM",
+   "provincia": "Albacete",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "ciudad-real",
+   "n": {
+    "es": "Ciudad Real",
+    "ca": "Ciudad Real"
+   },
+   "ccaa": "CM",
+   "provincia": "Ciudad Real",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Festivos locales de 2027 de la provincia de Ciudad Real publicados en el BOP de 20/10/2026 (ENCLM)",
+    "url": "https://www.encastillalamancha.es/ciudad-real/que-dias-no-tendras-que-trabajar-en-2027-publicados-los-festivos-locales-de-toda-la-provincia-de-ciudad-real/"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-17",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-07-31",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "cuenca",
+   "n": {
+    "es": "Cuenca",
+    "ca": "Conca"
+   },
+   "ccaa": "CM",
+   "provincia": "Cuenca",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Festivos de 2027 en Cuenca: 1 de junio y 21 de septiembre (Vivir Ediciones); aprobación en Pleno (El Digital de Cuenca, 26/10/2026)",
+    "url": "https://eldigitaldecuenca.com/2026/10/26/cuenca-aprueba-sus-festivos-de-2027-y-los-de-sus-pedanias-entre-criticas-por-el-plazo-estas-son-las-fechas-elegidas-para-la-capital-y-sus-pedanias/"
+   },
+   "festivos": [
+    {
+     "f": "2027-06-01",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-21",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Fechas aprobadas en Pleno según la prensa local; pendientes de contrastar con el BOP."
+  },
+  {
+   "id": "guadalajara",
+   "n": {
+    "es": "Guadalajara",
+    "ca": "Guadalajara"
+   },
+   "ccaa": "CM",
+   "provincia": "Guadalajara",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "toledo",
+   "n": {
+    "es": "Toledo",
+    "ca": "Toledo"
+   },
+   "ccaa": "CM",
+   "provincia": "Toledo",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "El 19 y 29 de marzo, festivos locales en Toledo en 2027 (CMM, acuerdo de la Junta de Gobierno Local)",
+    "url": "https://www.cmmedia.es/noticias/castilla-la-mancha/toledo/19-29-marzo-festivos-locales-toledo-2027.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-03-19",
+     "n": {
+      "es": "San José (en lugar de San Ildefonso, que cae en sábado)",
+      "ca": "Sant Josep (en lloc de Sant Ildefons, que cau en dissabte)"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Lunes de Pascua",
+      "ca": "Dilluns de Pasqua"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "talavera-de-la-reina",
+   "n": {
+    "es": "Talavera de la Reina",
+    "ca": "Talavera de la Reina"
+   },
+   "ccaa": "CM",
+   "provincia": "Toledo",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "barcelona",
+   "n": {
+    "es": "Barcelona",
+    "ca": "Barcelona"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Ajuntament de Barcelona: calendari de festius 2026 i 2027",
+    "url": "https://ajuntament.barcelona.cat/calendarifestius/ca/"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-17",
+     "n": {
+      "es": "Lunes de Pascua Granada",
+      "ca": "Dilluns de Pasqua Granada"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-24",
+     "n": {
+      "es": "La Mercè",
+      "ca": "La Mercè"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "lhospitalet-de-llobregat",
+   "n": {
+    "es": "L’Hospitalet de Llobregat",
+    "ca": "L’Hospitalet de Llobregat"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "badalona",
+   "n": {
+    "es": "Badalona",
+    "ca": "Badalona"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "terrassa",
+   "n": {
+    "es": "Terrassa",
+    "ca": "Terrassa"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Festius 2027 a Catalunya per municipis (Berenguer Assessors)",
+    "url": "https://www.berenguerassessors.com/ca/festius-2027-catalunya/"
+   },
+   "festivos": [
+    {
+     "f": "2027-03-25",
+     "n": {
+      "es": "Jueves Santo",
+      "ca": "Dijous Sant"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-07-05",
+     "n": {
+      "es": "Lunes de Fiesta Mayor",
+      "ca": "Dilluns de Festa Major"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Fechas de una guía de asesoría; pendientes de contrastar con el DOGC."
+  },
+  {
+   "id": "sabadell",
+   "n": {
+    "es": "Sabadell",
+    "ca": "Sabadell"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "mataro",
+   "n": {
+    "es": "Mataró",
+    "ca": "Mataró"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "santa-coloma-de-gramenet",
+   "n": {
+    "es": "Santa Coloma de Gramenet",
+    "ca": "Santa Coloma de Gramenet"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "cornella-de-llobregat",
+   "n": {
+    "es": "Cornellà de Llobregat",
+    "ca": "Cornellà de Llobregat"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "sant-boi-de-llobregat",
+   "n": {
+    "es": "Sant Boi de Llobregat",
+    "ca": "Sant Boi de Llobregat"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "sant-cugat-del-valles",
+   "n": {
+    "es": "Sant Cugat del Vallès",
+    "ca": "Sant Cugat del Vallès"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "rubi",
+   "n": {
+    "es": "Rubí",
+    "ca": "Rubí"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "manresa",
+   "n": {
+    "es": "Manresa",
+    "ca": "Manresa"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "vilanova-i-la-geltru",
+   "n": {
+    "es": "Vilanova i la Geltrú",
+    "ca": "Vilanova i la Geltrú"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "viladecans",
+   "n": {
+    "es": "Viladecans",
+    "ca": "Viladecans"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "castelldefels",
+   "n": {
+    "es": "Castelldefels",
+    "ca": "Castelldefels"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "granollers",
+   "n": {
+    "es": "Granollers",
+    "ca": "Granollers"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "el-prat-de-llobregat",
+   "n": {
+    "es": "El Prat de Llobregat",
+    "ca": "El Prat de Llobregat"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "cerdanyola-del-valles",
+   "n": {
+    "es": "Cerdanyola del Vallès",
+    "ca": "Cerdanyola del Vallès"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "mollet-del-valles",
+   "n": {
+    "es": "Mollet del Vallès",
+    "ca": "Mollet del Vallès"
+   },
+   "ccaa": "CT",
+   "provincia": "Barcelona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "girona",
+   "n": {
+    "es": "Girona",
+    "ca": "Girona"
+   },
+   "ccaa": "CT",
+   "provincia": "Girona",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "La sede electrónica municipal da fechas que no hemos podido datar; pendiente del DOGC."
+  },
+  {
+   "id": "lleida",
+   "n": {
+    "es": "Lleida",
+    "ca": "Lleida"
+   },
+   "ccaa": "CT",
+   "provincia": "Lleida",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "tarragona",
+   "n": {
+    "es": "Tarragona",
+    "ca": "Tarragona"
+   },
+   "ccaa": "CT",
+   "provincia": "Tarragona",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "reus",
+   "n": {
+    "es": "Reus",
+    "ca": "Reus"
+   },
+   "ccaa": "CT",
+   "provincia": "Tarragona",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación de la orden de fiestas locales en el DOGC."
+  },
+  {
+   "id": "badajoz",
+   "n": {
+    "es": "Badajoz",
+    "ca": "Badajoz"
+   },
+   "ccaa": "EX",
+   "provincia": "Badajoz",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Calendario de fiestas locales de 2027 de Extremadura (DOE de 27 de octubre de 2026, según EFE Extremadura)",
+    "url": "https://x.com/EfeExtremadura/status/2115002013830512692"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-09",
+     "n": {
+      "es": "Martes de Carnaval",
+      "ca": "Dimarts de Carnaval"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "merida",
+   "n": {
+    "es": "Mérida",
+    "ca": "Mèrida"
+   },
+   "ccaa": "EX",
+   "provincia": "Badajoz",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Mérida fija sus dos festivos locales de 2027: el 13 de mayo y el 10 de diciembre (La Voz de Extremadura)",
+    "url": "https://lavozext.es/merida/merida-fija-sus-dos-festivos-locales-de-2027-el-13-de-mayo-y-el-10-de-diciembre/"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-13",
+     "n": {
+      "es": "Emerita Lvdica",
+      "ca": "Emerita Lvdica"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-12-10",
+     "n": {
+      "es": "Santa Eulalia",
+      "ca": "Santa Eulàlia"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "caceres",
+   "n": {
+    "es": "Cáceres",
+    "ca": "Càceres"
+   },
+   "ccaa": "EX",
+   "provincia": "Cáceres",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Calendario de fiestas locales de 2027 de Extremadura (DOE de 27 de octubre de 2026, según EFE Extremadura)",
+    "url": "https://x.com/EfeExtremadura/status/2115002013830512692"
+   },
+   "festivos": [
+    {
+     "f": "2027-04-23",
+     "n": {
+      "es": "San Jorge",
+      "ca": "Sant Jordi"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-05-28",
+     "n": {
+      "es": "Feria de San Fernando",
+      "ca": "Fira de Sant Ferran"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "a-coruna",
+   "n": {
+    "es": "A Coruña",
+    "ca": "la Corunya"
+   },
+   "ccaa": "GA",
+   "provincia": "A Coruña",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-09",
+     "n": {
+      "es": "Martes de Carnaval",
+      "ca": "Dimarts de Carnaval"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-06-24",
+     "n": {
+      "es": "San Juan",
+      "ca": "Sant Joan"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "ferrol",
+   "n": {
+    "es": "Ferrol",
+    "ca": "Ferrol"
+   },
+   "ccaa": "GA",
+   "provincia": "A Coruña",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-01-07",
+     "n": {
+      "es": "San Julián",
+      "ca": "Sant Julià"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Nuestra Señora de Chamorro",
+      "ca": "Mare de Déu de Chamorro"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "santiago-de-compostela",
+   "n": {
+    "es": "Santiago de Compostela",
+    "ca": "Santiago de Compostel·la"
+   },
+   "ccaa": "GA",
+   "provincia": "A Coruña",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-06",
+     "n": {
+      "es": "Ascensión",
+      "ca": "Ascensió"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Una de las fuentes da fechas distintas; pendiente de contrastar con el DOG."
+  },
+  {
+   "id": "lugo",
+   "n": {
+    "es": "Lugo",
+    "ca": "Lugo"
+   },
+   "ccaa": "GA",
+   "provincia": "Lugo",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-09",
+     "n": {
+      "es": "Martes de Carnaval",
+      "ca": "Dimarts de Carnaval"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-10-05",
+     "n": {
+      "es": "San Froilán",
+      "ca": "Sant Froilà"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "ourense",
+   "n": {
+    "es": "Ourense",
+    "ca": "Ourense"
+   },
+   "ccaa": "GA",
+   "provincia": "Ourense",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-09",
+     "n": {
+      "es": "Martes de Carnaval",
+      "ca": "Dimarts de Carnaval"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-11-11",
+     "n": {
+      "es": "San Martín",
+      "ca": "Sant Martí"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "pontevedra",
+   "n": {
+    "es": "Pontevedra",
+    "ca": "Pontevedra"
+   },
+   "ccaa": "GA",
+   "provincia": "Pontevedra",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-02-10",
+     "n": {
+      "es": "Miércoles de Ceniza",
+      "ca": "Dimecres de Cendra"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "San Cibrán",
+      "ca": "Sant Cebrià"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "vigo",
+   "n": {
+    "es": "Vigo",
+    "ca": "Vigo"
+   },
+   "ccaa": "GA",
+   "provincia": "Pontevedra",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Resolución de la Secretaría Xeral de Emprego e Relacións Laborais: festivos locales de 2027 de los 313 concellos (DOG de 26 de octubre de 2026, según El Debate)",
+    "url": "https://www.eldebate.com/espana/galicia/20261026/calendario-laboral-asi-quedan-festivos-locales-2027-galicia_473846.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-03-29",
+     "n": {
+      "es": "Reconquista (trasladada al lunes)",
+      "ca": "Reconquesta (traslladada a dilluns)"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-08-16",
+     "n": {
+      "es": "San Roque",
+      "ca": "Sant Roc"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "madrid",
+   "n": {
+    "es": "Madrid",
+    "ca": "Madrid"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Ayuntamiento de Madrid: calendario laboral 2027 en la ciudad de Madrid (Diario de Madrid, 10/10/2026)",
+    "url": "https://diario.madrid.es/blog/2026/10/10/calendario-laboral-2027-todos-los-dias-festivos-en-la-ciudad-de-madrid/"
+   },
+   "festivos": [
+    {
+     "f": "2027-05-15",
+     "n": {
+      "es": "San Isidro Labrador",
+      "ca": "Sant Isidre Llaurador"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-11-09",
+     "n": {
+      "es": "Nuestra Señora de la Almudena",
+      "ca": "Mare de Déu de l’Almudena"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Aprobadas por el Pleno; la Almudena solo la hemos contrastado en prensa. San Isidro cae en sábado. El BOCM publica las fiestas locales a principios de diciembre."
+  },
+  {
+   "id": "mostoles",
+   "n": {
+    "es": "Móstoles",
+    "ca": "Móstoles"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "alcala-de-henares",
+   "n": {
+    "es": "Alcalá de Henares",
+    "ca": "Alcalá de Henares"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "fuenlabrada",
+   "n": {
+    "es": "Fuenlabrada",
+    "ca": "Fuenlabrada"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "leganes",
+   "n": {
+    "es": "Leganés",
+    "ca": "Leganés"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "getafe",
+   "n": {
+    "es": "Getafe",
+    "ca": "Getafe"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "alcorcon",
+   "n": {
+    "es": "Alcorcón",
+    "ca": "Alcorcón"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "torrejon-de-ardoz",
+   "n": {
+    "es": "Torrejón de Ardoz",
+    "ca": "Torrejón de Ardoz"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "parla",
+   "n": {
+    "es": "Parla",
+    "ca": "Parla"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "alcobendas",
+   "n": {
+    "es": "Alcobendas",
+    "ca": "Alcobendas"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "las-rozas-de-madrid",
+   "n": {
+    "es": "Las Rozas de Madrid",
+    "ca": "Las Rozas de Madrid"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "san-sebastian-de-los-reyes",
+   "n": {
+    "es": "San Sebastián de los Reyes",
+    "ca": "San Sebastián de los Reyes"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "pozuelo-de-alarcon",
+   "n": {
+    "es": "Pozuelo de Alarcón",
+    "ca": "Pozuelo de Alarcón"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "rivas-vaciamadrid",
+   "n": {
+    "es": "Rivas-Vaciamadrid",
+    "ca": "Rivas-Vaciamadrid"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "coslada",
+   "n": {
+    "es": "Coslada",
+    "ca": "Coslada"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "valdemoro",
+   "n": {
+    "es": "Valdemoro",
+    "ca": "Valdemoro"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "majadahonda",
+   "n": {
+    "es": "Majadahonda",
+    "ca": "Majadahonda"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "collado-villalba",
+   "n": {
+    "es": "Collado Villalba",
+    "ca": "Collado Villalba"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "aranjuez",
+   "n": {
+    "es": "Aranjuez",
+    "ca": "Aranjuez"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "arganda-del-rey",
+   "n": {
+    "es": "Arganda del Rey",
+    "ca": "Arganda del Rey"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "boadilla-del-monte",
+   "n": {
+    "es": "Boadilla del Monte",
+    "ca": "Boadilla del Monte"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "pinto",
+   "n": {
+    "es": "Pinto",
+    "ca": "Pinto"
+   },
+   "ccaa": "MD",
+   "provincia": "Madrid",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el BOCM (normalmente a principios de diciembre)."
+  },
+  {
+   "id": "murcia",
+   "n": {
+    "es": "Murcia",
+    "ca": "Múrcia"
+   },
+   "ccaa": "MC",
+   "provincia": "Murcia",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Calendario laboral 2027 de la Región de Murcia con los festivos locales de los 45 municipios (BORM núm. 171, de 27 de julio de 2026)",
+    "url": "https://murcia.satse.es/documents/703768/8065533/Calendario+laboral+2027-BORM.pdf/9a2acc65-9dd3-8a09-3753-d6437ec9d68b?t=1785314737616"
+   },
+   "festivos": [
+    {
+     "f": "2027-03-30",
+     "n": {
+      "es": "Bando de la Huerta",
+      "ca": "Ban de l’Horta"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-14",
+     "n": {
+      "es": "Romería de la Virgen de la Fuensanta",
+      "ca": "Romeria de la Mare de Déu de la Fuensanta"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "cartagena",
+   "n": {
+    "es": "Cartagena",
+    "ca": "Cartagena"
+   },
+   "ccaa": "MC",
+   "provincia": "Murcia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Solo hay fechas en un calendario escolar; pendiente de contrastar con el BORM."
+  },
+  {
+   "id": "lorca",
+   "n": {
+    "es": "Lorca",
+    "ca": "Llorca"
+   },
+   "ccaa": "MC",
+   "provincia": "Murcia",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": false,
+   "fuente": {
+    "nombre": "Calendario de fiestas laborales de Murcia 2027, tabla por municipios (Froet, a partir del BORM de 27/07/2026)",
+    "url": "https://www.froet.es/calendario-fiestas-laborales-murcia-2027/"
+   },
+   "festivos": [
+    {
+     "f": "2027-09-08",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-11-23",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Fechas de la tabla municipal de Froet; pendientes de contrastar con el BORM."
+  },
+  {
+   "id": "molina-de-segura",
+   "n": {
+    "es": "Molina de Segura",
+    "ca": "Molina de Segura"
+   },
+   "ccaa": "MC",
+   "provincia": "Murcia",
+   "capital": false,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Calendario laboral 2027 de la Región de Murcia con los festivos locales de los 45 municipios (BORM núm. 171, de 27 de julio de 2026)",
+    "url": "https://murcia.satse.es/documents/703768/8065533/Calendario+laboral+2027-BORM.pdf/9a2acc65-9dd3-8a09-3753-d6437ec9d68b?t=1785314737616"
+   },
+   "festivos": [
+    {
+     "f": "2027-01-22",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-09-20",
+     "n": {
+      "es": "Fiesta local",
+      "ca": "Festa local"
+     },
+     "o": "local"
+    }
+   ]
+  },
+  {
+   "id": "pamplona",
+   "n": {
+    "es": "Pamplona",
+    "ca": "Pamplona"
+   },
+   "ccaa": "NA",
+   "provincia": "Navarra",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "vitoria-gasteiz",
+   "n": {
+    "es": "Vitoria-Gasteiz",
+    "ca": "Vitòria"
+   },
+   "ccaa": "PV",
+   "provincia": "Álava",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "bilbao",
+   "n": {
+    "es": "Bilbao",
+    "ca": "Bilbao"
+   },
+   "ccaa": "PV",
+   "provincia": "Bizkaia",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "barakaldo",
+   "n": {
+    "es": "Barakaldo",
+    "ca": "Barakaldo"
+   },
+   "ccaa": "PV",
+   "provincia": "Bizkaia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "getxo",
+   "n": {
+    "es": "Getxo",
+    "ca": "Getxo"
+   },
+   "ccaa": "PV",
+   "provincia": "Bizkaia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "donostia-san-sebastian",
+   "n": {
+    "es": "Donostia / San Sebastián",
+    "ca": "Sant Sebastià"
+   },
+   "ccaa": "PV",
+   "provincia": "Gipuzkoa",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "irun",
+   "n": {
+    "es": "Irun",
+    "ca": "Irun"
+   },
+   "ccaa": "PV",
+   "provincia": "Gipuzkoa",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "logrono",
+   "n": {
+    "es": "Logroño",
+    "ca": "Logronyo"
+   },
+   "ccaa": "RI",
+   "provincia": "La Rioja",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el boletín oficial."
+  },
+  {
+   "id": "valencia",
+   "n": {
+    "es": "València",
+    "ca": "València"
+   },
+   "ccaa": "VC",
+   "provincia": "Valencia",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Ayuntamiento de València: festivos locales de 2027",
+    "url": "https://www.valencia.es/cas/actualidad/-/content/festivos-locales-2027"
+   },
+   "festivos": [
+    {
+     "f": "2027-01-22",
+     "n": {
+      "es": "San Vicente Mártir",
+      "ca": "Sant Vicent Màrtir"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-04-05",
+     "n": {
+      "es": "San Vicente Ferrer",
+      "ca": "Sant Vicent Ferrer"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Aprobadas por el Pleno; falta la resolución autonómica de fiestas locales en el DOGV."
+  },
+  {
+   "id": "torrent",
+   "n": {
+    "es": "Torrent",
+    "ca": "Torrent"
+   },
+   "ccaa": "VC",
+   "provincia": "Valencia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "paterna",
+   "n": {
+    "es": "Paterna",
+    "ca": "Paterna"
+   },
+   "ccaa": "VC",
+   "provincia": "Valencia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "gandia",
+   "n": {
+    "es": "Gandia",
+    "ca": "Gandia"
+   },
+   "ccaa": "VC",
+   "provincia": "Valencia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "sagunto",
+   "n": {
+    "es": "Sagunto",
+    "ca": "Sagunt"
+   },
+   "ccaa": "VC",
+   "provincia": "Valencia",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "alicante",
+   "n": {
+    "es": "Alicante",
+    "ca": "Alacant"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": true,
+   "estado": "publicado",
+   "verificado": true,
+   "fuente": {
+    "nombre": "Alicante declarará el 24 de junio de 2027 como festivo local (Alicante Plaza); acuerdo del Pleno (TodoAlicante)",
+    "url": "https://www.todoalicante.es/alicante-ciudad/alicante-dos-festivos-locales-20260730142738-nt.html"
+   },
+   "festivos": [
+    {
+     "f": "2027-04-08",
+     "n": {
+      "es": "Santa Faz",
+      "ca": "Santa Faç"
+     },
+     "o": "local"
+    },
+    {
+     "f": "2027-06-24",
+     "n": {
+      "es": "San Juan (Hogueras)",
+      "ca": "Sant Joan (Fogueres)"
+     },
+     "o": "local"
+    }
+   ],
+   "nota": "Aprobadas por el Pleno; falta la resolución autonómica de fiestas locales en el DOGV."
+  },
+  {
+   "id": "elche",
+   "n": {
+    "es": "Elche",
+    "ca": "Elx"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "torrevieja",
+   "n": {
+    "es": "Torrevieja",
+    "ca": "Torrevella"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "orihuela",
+   "n": {
+    "es": "Orihuela",
+    "ca": "Oriola"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "benidorm",
+   "n": {
+    "es": "Benidorm",
+    "ca": "Benidorm"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "san-vicente-del-raspeig",
+   "n": {
+    "es": "San Vicente del Raspeig",
+    "ca": "Sant Vicent del Raspeig"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "elda",
+   "n": {
+    "es": "Elda",
+    "ca": "Elda"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "alcoy",
+   "n": {
+    "es": "Alcoy",
+    "ca": "Alcoi"
+   },
+   "ccaa": "VC",
+   "provincia": "Alicante",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "castellon-de-la-plana",
+   "n": {
+    "es": "Castellón de la Plana",
+    "ca": "Castelló de la Plana"
+   },
+   "ccaa": "VC",
+   "provincia": "Castellón",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "vila-real",
+   "n": {
+    "es": "Vila-real",
+    "ca": "Vila-real"
+   },
+   "ccaa": "VC",
+   "provincia": "Castellón",
+   "capital": false,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de publicación en el DOGV (normalmente a mediados de noviembre)."
+  },
+  {
+   "id": "ceuta",
+   "n": {
+    "es": "Ceuta",
+    "ca": "Ceuta"
+   },
+   "ccaa": "CE",
+   "provincia": "Ceuta",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Pendiente de confirmar los dos festivos locales en el BOCCE."
+  },
+  {
+   "id": "melilla",
+   "n": {
+    "es": "Melilla",
+    "ca": "Melilla"
+   },
+   "ccaa": "ML",
+   "provincia": "Melilla",
+   "capital": true,
+   "estado": "pendiente",
+   "verificado": false,
+   "festivos": [],
+   "nota": "Festivos locales publicados en el BOME (8 y 17 de septiembre), pero falta confirmar una fiesta de ámbito de ciudad autónoma."
+  }
+ ]
+}

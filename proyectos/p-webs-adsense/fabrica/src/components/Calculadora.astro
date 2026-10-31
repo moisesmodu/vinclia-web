@@ -1,0 +1,79 @@
+---
+// Formulario + resultado de una calculadora. El resultado con los valores por defecto se calcula en el
+// servidor, así la página tiene un ejemplo real sin JavaScript y el LCP es texto estático.
+// Variante «mini» (portada): solo los campos indicados en `solo` y un enlace a la calculadora completa.
+import { valoresPorDefecto, type DefCalc, type Lang } from '../lib/def';
+import { renderResultado } from '../lib/render';
+import { params } from '../lib/params';
+import { UI } from '../lib/ui';
+import Campo from './Campo.astro';
+
+interface Props { d: DefCalc; lang: Lang; pais: string; anio: number; anios: number[]; provisionales: number[]; solo?: string[]; completa?: { href: string; texto: string } }
+const { d, lang, pais, anio, anios, provisionales, solo, completa } = Astro.props;
+const mini = !!solo;
+const v = valoresPorDefecto(d, anio);
+const resultado = d.calcular(v, { P: params(pais, anio), lang, pais });
+const html = renderResultado(resultado, lang);
+const u = UI[lang];
+const ca = lang === 'ca';
+const FAMILIA = ['situacion', 'edad', 'hijos', 'menores3', 'enteros', 'discapacidad'];
+const visibles = mini ? d.campos.filter((c) => solo!.includes(c.id)) : d.campos;
+const principales = visibles.filter((c) => mini || !FAMILIA.includes(c.id));
+const familiares = mini ? [] : visibles.filter((c) => FAMILIA.includes(c.id));
+// El primer importe del formulario lleva deslizador
+const principal = principales.find((c) => c.tipo === 'numero')?.id;
+const anioSeg = !mini && anios.length <= 3;
+const etAnio = (a: number) => `${a}${provisionales.includes(a) ? ` (${u.provisional})` : ''}`;
+const ico = (d: string) => `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${d}</svg>`;
+---
+<section class:list={['calc', { mini }]} data-calc={d.id} data-lang={lang} data-pais={pais} data-anio={anio} aria-labelledby={mini ? undefined : 'calc-t'} aria-label={mini ? u.calculadora : undefined}>
+  {!mini && <h2 id="calc-t" class="vh">{u.calculadora}</h2>}
+  <form class="calc-form" novalidate>
+    {!mini && <p class="calc-paso" aria-hidden="true"><span>1</span>{ca ? 'Les teves dades' : 'Tus datos'}</p>}
+    {d.anual && !mini && anios.length > 1 && (anioSeg ? (
+      <fieldset class="campo campo-seg campo-anio">
+        <legend>{u.anio}</legend>
+        <div class="seg" style={`--n:${anios.length}`}>
+          {anios.map((a, i) => <label class="seg-op"><input type="radio" id={i === 0 ? 'f-anio' : undefined} name="anio" value={a} checked={a === anio} /><span>{etAnio(a)}</span></label>)}
+        </div>
+      </fieldset>
+    ) : (
+      <div class="campo campo-anio">
+        <label for="f-anio">{u.anio}</label>
+        <select id="f-anio" name="anio">
+          {anios.map((a) => <option value={a} selected={a === anio}>{etAnio(a)}</option>)}
+        </select>
+      </div>
+    ))}
+    {principales.map((c) => <Campo c={c} lang={lang} v={v} mini={mini} principal={c.id === principal} />)}
+    {familiares.length > 0 && (
+      <details class="grupo-fam">
+        <summary><span set:html={ico('<circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16.5 14.6c2.3.2 4 1.7 4.5 4.4"/>')} /><span class="gf-t">{ca ? 'Situació personal i familiar' : 'Situación personal y familiar'}<small>{ca ? 'Opcional · afina la retenció' : 'Opcional · afina la retención'}</small></span></summary>
+        <div class="grupo-campos">{familiares.map((c) => <Campo c={c} lang={lang} v={v} />)}</div>
+      </details>
+    )}
+    <noscript><p class="ayuda">{u.sinJs}</p></noscript>
+  </form>
+  <div class="calc-out">
+    {!mini && <p class="calc-paso" aria-hidden="true"><span>2</span>{ca ? 'El teu resultat' : 'Tu resultado'}</p>}
+    <div class="res" aria-live="polite" set:html={html} />
+    {mini ? (
+      completa && <a class="btn btn-claro" data-completa href={completa.href}>{completa.texto} <span aria-hidden="true">→</span></a>
+    ) : (
+      <div class="calc-acciones">
+        <button type="button" data-accion="compartir" class="btn-sec"><Fragment set:html={ico('<path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/>')} /><span class="ok-no">{u.compartir}</span><span class="ok-si">{u.copiado}</span></button>
+        <button type="button" data-accion="imprimir" class="btn-sec"><Fragment set:html={ico('<path d="M7 9V3.5h10V9"/><rect x="3.5" y="9" width="17" height="8" rx="2"/><path d="M7 14.5h10v6H7z"/>')} />{u.imprimir}</button>
+      </div>
+    )}
+  </div>
+  {!mini && (
+    <button type="button" class="calc-fija" hidden>
+      <span class="cf-barra" aria-hidden="true"></span>
+      <span class="cf-txt"><span class="cf-et"></span><span class="cf-val"></span></span>
+      <span class="cf-ir" aria-hidden="true" set:html={ico('<path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/>')} />
+    </button>
+  )}
+</section>
+<script>
+  import '../lib/cliente';
+</script>

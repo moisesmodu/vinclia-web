@@ -1,0 +1,46 @@
+{
+  "pais": "es",
+  "nombre": { "es": "España", "ca": "Espanya" },
+  "moneda": "EUR",
+  "locales": { "es": "es-ES", "ca": "ca-ES" },
+  "comunidades": {
+    "AN": { "es": "Andalucía", "ca": "Andalusia" },
+    "AR": { "es": "Aragón", "ca": "Aragó" },
+    "AS": { "es": "Asturias", "ca": "Astúries" },
+    "IB": { "es": "Illes Balears", "ca": "Illes Balears" },
+    "CN": { "es": "Canarias", "ca": "Canàries" },
+    "CB": { "es": "Cantabria", "ca": "Cantàbria" },
+    "CL": { "es": "Castilla y León", "ca": "Castella i Lleó" },
+    "CM": { "es": "Castilla-La Mancha", "ca": "Castella-la Manxa" },
+    "CT": { "es": "Cataluña", "ca": "Catalunya" },
+    "EX": { "es": "Extremadura", "ca": "Extremadura" },
+    "GA": { "es": "Galicia", "ca": "Galícia" },
+    "MD": { "es": "Comunidad de Madrid", "ca": "Comunitat de Madrid" },
+    "MC": { "es": "Región de Murcia", "ca": "Regió de Múrcia" },
+    "RI": { "es": "La Rioja", "ca": "La Rioja" },
+    "VC": { "es": "Comunitat Valenciana", "ca": "Comunitat Valenciana" },
+    "CE_ML": { "es": "Ceuta y Melilla", "ca": "Ceuta i Melilla" }
+  },
+  "slugsComunidad": {
+    "AN": { "es": "andalucia", "ca": "andalusia" },
+    "AR": { "es": "aragon", "ca": "arago" },
+    "AS": { "es": "asturias", "ca": "asturies" },
+    "IB": { "es": "baleares", "ca": "illes-balears" },
+    "CN": { "es": "canarias", "ca": "canaries" },
+    "CB": { "es": "cantabria", "ca": "cantabria" },
+    "CL": { "es": "castilla-y-leon", "ca": "castella-i-lleo" },
+    "CM": { "es": "castilla-la-mancha", "ca": "castella-la-manxa" },
+    "CT": { "es": "cataluna", "ca": "catalunya" },
+    "EX": { "es": "extremadura", "ca": "extremadura" },
+    "GA": { "es": "galicia", "ca": "galicia" },
+    "MD": { "es": "madrid", "ca": "madrid" },
+    "MC": { "es": "murcia", "ca": "murcia" },
+    "RI": { "es": "la-rioja", "ca": "la-rioja" },
+    "VC": { "es": "comunidad-valenciana", "ca": "comunitat-valenciana" },
+    "CE_ML": { "es": "ceuta-y-melilla", "ca": "ceuta-i-melilla" }
+  },
+  "foral": {
+    "PV": { "es": "País Vasco (régimen foral, no incluido)", "ca": "País Basc (règim foral, no inclòs)" },
+    "NA": { "es": "Navarra (régimen foral, no incluido)", "ca": "Navarra (règim foral, no inclòs)" }
+  }
+}
