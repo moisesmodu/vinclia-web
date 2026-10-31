@@ -13,7 +13,7 @@
 | Root Directory | `proyectos/n-nuevo-en-espana` · framework Next.js · build `npm run build` (ya en `vercel.json`) |
 | Cron | `/api/cron/recordatorios` cada día a las 08:00 UTC (ya en `vercel.json`) |
 | Proyecto de Neon | `cartera-n-nuevo-en-espana`, región `aws-eu-west-2`, Postgres 16 |
-| Stripe (cuenta Numi Mates, **modo prueba** hasta lanzar) | Producto `Cartera · Nuevo en España · Mensual 4,99 €` con precio 4,99 € mensual · Producto `Cartera · Nuevo en España · Pack 19,90 €` con precio 19,90 € pago único · ambos `metadata.proyecto=n-nuevo-en-espana`, IVA incluido |
+| Stripe (cuenta Numi Mates, **modo prueba** hasta lanzar) | Producto `Tus Papeles — Mensual 4,99 €` con precio 4,99 € mensual · Producto `Tus Papeles — Pack 19,90 €` con precio 19,90 € pago único · ambos `metadata.proyecto=n-nuevo-en-espana`, IVA incluido |
 | Webhook de Stripe | `https://<dominio>/api/stripe/webhook` con `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `invoice.paid`, `customer.subscription.deleted`, `charge.refunded` |
 | Remitente de correo | `Nuevo en España <noreply@numimates.com>` (Resend, dominio numimates.com verificado) |
 

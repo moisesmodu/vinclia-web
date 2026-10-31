@@ -19,7 +19,12 @@ const EVENTOS = ["checkout.session.completed", "checkout.session.async_payment_s
 async function producto(nombre, plan) {
   const lista = await stripe.products.list({ limit: 100, active: true });
   const existe = lista.data.find((p) => p.metadata?.proyecto === PROYECTO && p.metadata?.plan === plan);
-  if (existe) return existe;
+  if (existe) {
+    // Renombra al nombre comercial (p. ej. «Cartera · …» → «Tus Papeles — …») sin tocar precios. Idempotente.
+    if (existe.name === nombre) return existe;
+    console.error(`Producto renombrado: «${existe.name}» → «${nombre}» (${existe.id})`);
+    return stripe.products.update(existe.id, { name: nombre });
+  }
   return stripe.products.create({ name: nombre, metadata: { proyecto: PROYECTO, plan } });
 }
 async function precio(prod, centimos, mensual) {
