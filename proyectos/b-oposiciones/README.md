@@ -77,7 +77,7 @@ boe.es y dogc.gencat.cat no son accesibles desde la red de estas sesiones; el co
 Lo hace la sesión del Mac sin pedir nada a Moisés: pasos exactos en `DESPLIEGUE.md` (reglas en `DESPLIEGUES.md` de la raíz).
 Resumen: proyecto de Vercel `placa-oposicions` con Root Directory `proyectos/b-oposiciones`; Neon `cartera-b-oposiciones`; Stripe
 de la cuenta **Numi Mates** (`STRIPE_TEST_SECRET_KEY` para desarrollar, `STRIPE_SECRET_KEY` + `STRIPE_MODO=real` para cobrar);
-productos `Cartera · Oposiciones · <Plan>` creados por API, idempotentes (`scripts/stripe-preparar.mjs`, que también registra el
+productos `Oposita — <Plan>` creados por API, idempotentes (`scripts/stripe-preparar.mjs`, que también registra el
 webhook); Resend para recuperar contraseñas; `LEGAL_*` para los textos legales. En el build, `scripts/db-preparar.mjs` crea las
 tablas. Variables en `.env.example`. En local: Postgres, `cp .env.example .env`, `npm install && npm run build && npm start`.
 
@@ -91,7 +91,7 @@ necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula p
   suscripción, test por tema con corrección, artículo y cita, aviso de plan gratuito, registro, pago, banco completo, simulacro
   completo con el formato real (30, 45, 55, 77 y 82 preguntas con reserva) y nota con penalización, estadísticas, progreso
   sincronizado en el servidor, cancelación en un clic, sin errores de JavaScript.
-- Stripe contra `stripe-mock` (simulador oficial de la API): cliente, producto «Cartera · Oposiciones · <Plan>» y precio
+- Stripe contra `stripe-mock` (simulador oficial de la API): cliente, producto «Oposita — <Plan>» y precio
   idempotentes, sesión de Checkout de suscripción, portal de cliente, cancelación al final del periodo, sincronización cada
   12 h, webhook firmado (válido → suscripción activa; falso → 400) y `scripts/stripe-preparar.mjs`.
 - Motor en modo API contra un servidor simulado de la API de Anthropic (generación con Haiku 5.5, revisión con Sonnet 5.5 y

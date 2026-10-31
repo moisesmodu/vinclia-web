@@ -1,6 +1,6 @@
 import { usuarioActual } from '@/lib/auth';
 import { db } from '@/lib/db';
-import { modoPago, plan, precioStripe, clienteStripe, stripe } from '@/lib/pagos';
+import { modoPago, plan, precioStripe, clienteStripe, stripe, MARCA_PAGO, nombreProducto } from '@/lib/pagos';
 import { urlBase } from '@/lib/datos';
 import pais from '@/config/paises/es.json';
 import { json, error } from '@/lib/http';
@@ -34,7 +34,13 @@ export async function POST(req: Request) {
     locale: pais.stripeLocale as 'es',
     allow_promotion_codes: true,
     client_reference_id: u.id,
-    subscription_data: { metadata: { usuarioId: u.id, plan: p.id } },
+    // Suscripción: el descriptor bancario dinámico no se puede fijar por sesión (el extracto usa el de la cuenta).
+    subscription_data: { description: nombreProducto(p.id), metadata: { usuarioId: u.id, plan: p.id } },
+    custom_text: {
+      submit: {
+        message: `${MARCA_PAGO} · ` + (idioma === 'es' ? 'Cancela cuando quieras desde tu cuenta.' : 'Cancel·la quan vulguis des del teu compte.'),
+      },
+    },
     metadata: { usuarioId: u.id, plan: p.id },
     // Recuperación: si la sesión caduca sin pagar, Stripe genera un enlace nuevo (lo usa el aviso del webhook).
     after_expiration: { recovery: { enabled: true, allow_promotion_codes: true } },

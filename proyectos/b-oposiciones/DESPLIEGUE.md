@@ -12,7 +12,7 @@ no se ha desplegado desde aquí y se dejan los pasos exactos. Se ejecutan en ord
 | Root Directory | `proyectos/b-oposiciones` · Framework: Next.js · Node 22 |
 | URL resultante | `https://placa-oposicions.vercel.app` (dominio propio cuando Moisés lo compre) |
 | Proyecto de Neon | `cartera-b-oposiciones`, región `aws-eu-west-2` |
-| Stripe | cuenta Numi Mates · productos `Cartera · Oposiciones · Mensual / Trimestral / Anual`, `metadata.proyecto=b-oposiciones` · precios 9,99 € al mes, 23,97 € cada 3 meses y 71,88 € al año, IVA incluido · lookup_key `b-oposiciones_es_<plan>_<importe>` |
+| Stripe | cuenta Numi Mates · productos `Oposita — Mensual / Trimestral / Anual`, `metadata.proyecto=b-oposiciones` · precios 9,99 € al mes, 23,97 € cada 3 meses y 71,88 € al año, IVA incluido · lookup_key `b-oposiciones_es_<plan>_<importe>` |
 | Webhook | `https://placa-oposicions.vercel.app/api/stripe/webhook` · eventos `checkout.session.completed`, `customer.subscription.created/updated/deleted/paused/resumed` |
 | Correo | Resend, remitente `Plaça <noreply@numimates.com>` (recuperación de contraseña) |
 
@@ -105,7 +105,7 @@ El despliegue de arriba se hizo antes de aplicar la identidad de marca. La rama 
    entorno; SESIONES.md regla 3: no se le piden a Moisés). Remitente: `Plaça <noreply@numimates.com>`.
 4. Redesplegar (`vercel deploy --prod`) y hacer el pago de prueba con 4242 4242 4242 4242 en `/es/precios`.
 5. Anotar la URL definitiva en `panel/data/proyectos.json` (ficha `b-oposiciones`, `enlaces.demo`).
-Los precios ya creados en Stripe sirven: el nombre del producto es «Cartera · Oposiciones · <Plan>» y no cambia con la marca.
+Los precios ya creados en Stripe sirven: el nombre del producto es «Oposita — <Plan>»; para renombrar los antiguos «Cartera · …» sin tocar precios ni webhook: `node scripts/stripe-preparar.mjs --solo-nombres`.
 
 ## Redespliegue con la marca (sesión B, 28-10-2026)
 - La red no estaba bloqueada: el proxy de la sesión deja pasar Stripe, Vercel, Neon y Resend. El falso «bloqueado» venía de que

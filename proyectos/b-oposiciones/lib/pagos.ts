@@ -55,12 +55,15 @@ async function guardarAjuste(clave: string, valor: string) {
 }
 
 export const NOMBRE_PROYECTO = 'Oposiciones';
+/** Nombre comercial que ve el cliente en Checkout, recibos y facturas (la cuenta de Stripe es Numi Mates). */
+export const MARCA_PAGO = 'Oposita';
 const NOMBRE_PLAN: Record<string, string> = { mensual: 'Mensual', trimestral: 'Trimestral', anual: 'Anual' };
+export const nombreProducto = (planId: string) => `${MARCA_PAGO} — ${NOMBRE_PLAN[planId] ?? planId}`;
 export const lookupPrecio = (p: Plan) => `b-oposiciones_${pais.codigo}_${p.id}_${p.importe}`;
 
 /**
  * Id del precio del plan. Idempotente (busca antes de crear): precio por lookup_key; producto por metadatos.
- * Producto "Cartera · Oposiciones · <Plan>" con metadata.proyecto = b-oposiciones (DESPLIEGUES.md §2).
+ * Producto "Oposita — <Plan>" (antes "Cartera · Oposiciones · <Plan>") con metadata.proyecto = b-oposiciones (DESPLIEGUES.md §2).
  */
 export async function precioStripe(p: Plan): Promise<string> {
   const env = process.env[`STRIPE_PRICE_${p.id.toUpperCase()}`];
@@ -74,7 +77,7 @@ export async function precioStripe(p: Plan): Promise<string> {
   const existentes = await s.prices.list({ lookup_keys: [lookup], active: true, limit: 1 });
   let id = existentes.data[0]?.id;
   if (!id) {
-    const nombre = `Cartera · ${NOMBRE_PROYECTO} · ${NOMBRE_PLAN[p.id] ?? p.id}`;
+    const nombre = nombreProducto(p.id);
     let producto: string | undefined;
     try {
       producto = (await s.products.search({ query: `metadata['proyecto']:'b-oposiciones' AND metadata['plan']:'${p.id}' AND active:'true'`, limit: 1 })).data[0]?.id;
