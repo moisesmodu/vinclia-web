@@ -4,7 +4,7 @@
 > En todas: decimos que la herramienta la hemos hecho nosotros y que **no es oficial del Instituto Cervantes**; aportamos el dato útil antes del enlace; una publicación por comunidad y semana.
 > Las fechas del examen se citan siempre con «confirma en examenes.cervantes.es». Gancho de la semana: la inscripción del examen del 26 de noviembre **cierra el jueves 5 de noviembre**.
 
-Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (cuando `ccsefacil.com` propague, se sustituye el dominio y se conservan los `utm`).
+Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; la dirección antigua `ccse-en-tu-idioma.vercel.app` sigue funcionando, pero no se usa en piezas).
 
 ---
 
@@ -13,7 +13,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** ar + es
 - **Día previsto:** lun 2 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal con historial; pedir permiso al administrador primero)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
+- **Enlace con medición:** https://ccsefacil.com/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
 - **Estado:** ⬜ pendiente de aprobación
 
 ### Versión en árabe (revisar por hablante nativo)
@@ -27,7 +27,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > - من لا يعرف القراءة أو الكتابة يمكنه طلب **الامتحان المُكيَّف** (يُقرأ له شفوياً). الطلب يكون عند التسجيل.
 >
 > أنا أعمل على موقع صغير اسمه «CCSE en tu idioma»: الأسئلة الـ300 الرسمية مشروحة بالعربية، مع 25 سؤالاً وامتحان تجريبي كامل **مجاناً وبدون تسجيل**. ليس موقعاً رسمياً لمعهد ثربانتس. جرّبوا اختبار «هل ستنجح اليوم؟» هنا:
-> https://ccse-en-tu-idioma.vercel.app/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
+> https://ccsefacil.com/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
 >
 > إذا وجدتم أي خطأ في الشرح، أخبروني وأصحّحه في نفس اليوم. بالتوفيق للجميع.
 
@@ -54,7 +54,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > - Las 300 preguntas posibles son públicas.
 > - Si no sabes leer ni escribir, pide la prueba adaptada al inscribirte.
 >
-> He hecho una web, «CCSE en tu idioma», con las 300 preguntas explicadas en árabe y 25 preguntas y un simulacro gratis, sin registro. No es oficial del Instituto Cervantes. El test «¿Aprobarías hoy?» está aquí: https://ccse-en-tu-idioma.vercel.app/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
+> He hecho una web, «CCSE en tu idioma», con las 300 preguntas explicadas en árabe y 25 preguntas y un simulacro gratis, sin registro. No es oficial del Instituto Cervantes. El test «¿Aprobarías hoy?» está aquí: https://ccsefacil.com/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
 > Si veis un error, decídmelo y lo corrijo.
 
 ---
@@ -64,7 +64,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** ro + es
 - **Día previsto:** mar 3 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial; permiso del administrador primero)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/ro?utm_source=facebook&utm_medium=grupo&utm_campaign=a-02
+- **Enlace con medición:** https://ccsefacil.com/ro?utm_source=facebook&utm_medium=grupo&utm_campaign=a-02
 - **Estado:** ⬜ pendiente de aprobación
 
 ### Versión en rumano (revisar por hablante nativo)
@@ -78,7 +78,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > - Rezultatul se poate folosi pentru dosarul de cetățenie timp de 4 ani [verificar en examenes.cervantes.es].
 >
 > Am făcut un site mic, „CCSE en tu idioma”: cele 300 de întrebări oficiale explicate în română, cu 25 de întrebări și o simulare completă **gratuit, fără cont**. Nu este un site oficial al Institutului Cervantes. Testul „Ai trece azi?” este aici:
-> https://ccse-en-tu-idioma.vercel.app/ro?utm_source=facebook&utm_medium=grupo&utm_campaign=a-02
+> https://ccsefacil.com/ro?utm_source=facebook&utm_medium=grupo&utm_campaign=a-02
 >
 > Dacă vedeți vreo greșeală în explicații, spuneți-mi și o corectez în aceeași zi. Succes!
 
@@ -105,7 +105,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** es
 - **Día previsto:** mar 3 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/es/guia/exentos-examen-ccse?utm_source=facebook&utm_medium=grupo&utm_campaign=a-03
+- **Enlace con medición:** https://ccsefacil.com/es/guia/exentos-examen-ccse?utm_source=facebook&utm_medium=grupo&utm_campaign=a-03
 - **Estado:** ⬜ pendiente de aprobación
 
 > Un dato que confunde a mucha gente y que conviene tener claro antes de pedir la nacionalidad:
@@ -119,7 +119,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > - Próximo examen: 26 de noviembre. **La inscripción cierra el 5 de noviembre.** Después, la siguiente inscripción abre el 23 de noviembre para 2027. Confirma siempre en examenes.cervantes.es.
 >
 > He hecho una web para practicar, «CCSE en tu idioma»: las 300 preguntas oficiales con explicación, 25 preguntas y un simulacro gratis sin registro. Es nuestra, no es oficial del Instituto Cervantes. La guía de quién está exento y el test gratis están aquí:
-> https://ccse-en-tu-idioma.vercel.app/es/guia/exentos-examen-ccse?utm_source=facebook&utm_medium=grupo&utm_campaign=a-03
+> https://ccsefacil.com/es/guia/exentos-examen-ccse?utm_source=facebook&utm_medium=grupo&utm_campaign=a-03
 >
 > Si alguien del grupo ya aprobó y quiere contar cómo le fue, ayuda mucho a los demás.
 
@@ -130,7 +130,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** en
 - **Día previsto:** mié 4 nov (o el día en que aparezca un hilo que encaje) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal de Reddit con historial, no una cuenta nueva de marca)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/en?utm_source=reddit&utm_medium=respuesta&utm_campaign=a-04
+- **Enlace con medición:** https://ccsefacil.com/en?utm_source=reddit&utm_medium=respuesta&utm_campaign=a-04
 - **Estado:** ⬜ pendiente de aprobación
 
 > Short version of how the CCSE works, from someone who went through the process:
@@ -142,7 +142,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > - **Dates:** there's a sitting almost every month. The November 2026 one is on Thursday 26 November at 18:00 and **registration closes on 5 November**; registration for 2027 opens on 23 November. Always double-check at examenes.cervantes.es.
 > - **Can't read or write?** There's an adapted version where the questions are read aloud to you. You request it when you register.
 >
-> Full disclosure: I built a small site to practise it, with the 300 official questions explained in English (and Arabic, French, Romanian, Chinese, Ukrainian), 25 questions and one full mock exam free with no sign-up. It is not affiliated with the Instituto Cervantes. If it helps: https://ccse-en-tu-idioma.vercel.app/en?utm_source=reddit&utm_medium=respuesta&utm_campaign=a-04
+> Full disclosure: I built a small site to practise it, with the 300 official questions explained in English (and Arabic, French, Romanian, Chinese, Ukrainian), 25 questions and one full mock exam free with no sign-up. It is not affiliated with the Instituto Cervantes. If it helps: https://ccsefacil.com/en?utm_source=reddit&utm_medium=respuesta&utm_campaign=a-04
 >
 > Happy to answer anything else about the test or the nationality paperwork.
 
@@ -153,7 +153,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** es
 - **Día previsto:** jue 5 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/es?utm_source=ong&utm_medium=correo&utm_campaign=a-05
+- **Enlace con medición:** https://ccsefacil.com/es?utm_source=ong&utm_medium=correo&utm_campaign=a-05
 - **Estado:** ⬜ pendiente de aprobación
 
 > **Asunto:** Recurso gratuito para preparar el examen CCSE, en 7 idiomas
@@ -174,7 +174,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 > Gracias por vuestro trabajo.
 >
 > Moisés Mora · CCSE en tu idioma · hola@numimates.com
-> https://ccse-en-tu-idioma.vercel.app/es?utm_source=ong&utm_medium=correo&utm_campaign=a-05
+> https://ccsefacil.com/es?utm_source=ong&utm_medium=correo&utm_campaign=a-05
 
 ---
 
@@ -251,7 +251,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 >
 > ## Después de aprobar: tus trámites de nacionalidad
 >
-> El certificado del CCSE es solo uno de los papeles del expediente. Si quieres saber qué viene después (DELE A2 si te toca, antecedentes penales, la solicitud en la sede electrónica y los plazos), tienes la guía paso a paso de nacionalidad en Nuevo en España: https://nuevo-en-espana.vercel.app/es/guias/nacionalidad?utm_source=a-ccse&utm_medium=articulo&utm_campaign=a-06
+> El certificado del CCSE es solo uno de los papeles del expediente. Si quieres saber qué viene después (DELE A2 si te toca, antecedentes penales, la solicitud en la sede electrónica y los plazos), tienes la guía paso a paso de nacionalidad en Nuevo en España: https://tuspapeles.app/es/guias/nacionalidad?utm_source=a-ccse&utm_medium=articulo&utm_campaign=a-06
 >
 > ## Preguntas frecuentes
 >
@@ -276,7 +276,7 @@ Enlaces: dominio de producción actual `https://ccse-en-tu-idioma.vercel.app` (c
 - **Idioma:** es (y versión ar para el mismo vídeo con subtítulos en árabe)
 - **Día previsto:** vie 13 nov (semana 2, cuando exista la cuenta de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde la cuenta de la marca, cuando exista)
-- **Enlace con medición:** https://ccse-en-tu-idioma.vercel.app/es?utm_source=tiktok&utm_medium=video&utm_campaign=a-07 (enlace en la biografía; en el vídeo se dice «enlace en el perfil»)
+- **Enlace con medición:** https://ccsefacil.com/es?utm_source=tiktok&utm_medium=video&utm_campaign=a-07 (enlace en la biografía; en el vídeo se dice «enlace en el perfil»)
 - **Estado:** ⬜ pendiente de aprobación
 
 ### Texto del post (castellano)

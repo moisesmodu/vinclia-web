@@ -2,7 +2,7 @@
 
 > Nada de esto se publica ni se envía sin la aprobación de Moisés (`marketing/APROBAR.md`). En todas las piezas se declara que Lunilla es un proyecto propio de Lleida y que los textos e ilustraciones se hacen con ayuda de IA y se revisan.
 > Primero se aporta valor y después va el enlace. Una sola publicación por comunidad y semana. Nunca fotos de niños reales, nunca reseñas inventadas.
-> Enlaces: `https://lunilla.vercel.app` hasta que propague `lunilla.cat`; cuando propague, se sustituye el dominio y se mantienen los parámetros `utm`.
+> Enlaces: `https://lunilla.cat` (dominio activo desde el 31/10; `lunilla.vercel.app` sigue funcionando, pero no se usa en piezas).
 
 Objetivo de la semana: **no vender todavía** (la campaña abre el 15/11). Captar las primeras 10 afiliadas, abrir las cuentas de la marca con biografía y tres publicaciones listas, dejar indexada una página SEO nueva y sembrar un post útil en un grupo de familias.
 
@@ -13,7 +13,7 @@ Objetivo de la semana: **no vender todavía** (la campaña abre el 15/11). Capta
 - **Idioma:** es
 - **Día previsto:** vie 6 nov (5 mensajes), lun 9 (5 más) y lun 16 (10 más) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, por mensaje directo desde la cuenta de la marca @lunilla.cuentos (si aún no existe, desde su cuenta personal diciendo quién es)
-- **Enlace con medición:** `https://lunilla.vercel.app/afiliados?utm_source=instagram&utm_medium=dm&utm_campaign=g-01` (el enlace `/r/<codigo>` propio se le envía cuando acepta)
+- **Enlace con medición:** `https://lunilla.cat/afiliados?utm_source=instagram&utm_medium=dm&utm_campaign=g-01` (el enlace `/r/<codigo>` propio se le envía cuando acepta)
 - **Estado:** ⬜ pendiente de aprobación
 
 **Variante A · cuenta de crianza**
@@ -22,7 +22,7 @@ Objetivo de la semana: **no vender todavía** (la campaña abre el 15/11). Capta
 >
 > Te escribo porque [detalle concreto de su cuenta: «el post de la semana pasada sobre las noches sin dormir» / «cómo hablas de los celos entre hermanos»] va justo de lo que intentamos hacer con los cuentos.
 >
-> ¿Te haría ilusión que le regaláramos un cuento a [nombre del peque] para que lo veas en casa, sin ningún compromiso? Si te gusta y te apetece recomendarlo, tenemos un programa de afiliadas con el 20 % de cada venta (1,58 € por PDF y 7,38 € por libro de tapa dura), con tu enlace y tu panel: https://lunilla.vercel.app/afiliados?utm_source=instagram&utm_medium=dm&utm_campaign=g-01
+> ¿Te haría ilusión que le regaláramos un cuento a [nombre del peque] para que lo veas en casa, sin ningún compromiso? Si te gusta y te apetece recomendarlo, tenemos un programa de afiliadas con el 20 % de cada venta (1,58 € por PDF y 7,38 € por libro de tapa dura), con tu enlace y tu panel: https://lunilla.cat/afiliados?utm_source=instagram&utm_medium=dm&utm_campaign=g-01
 >
 > Y si no, nada: el cuento es tuyo igual. Gracias por leerme.
 >
@@ -47,7 +47,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Idioma:** ca
 - **Día previsto:** vie 6 nov (5 mensajes), lun 9 (5 más) y lun 16 (10 más) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, per missatge directe des del compte de la marca @lunilla.cuentos
-- **Enlace con medición:** `https://lunilla.vercel.app/ca/afiliades?utm_source=instagram&utm_medium=dm&utm_campaign=g-02`
+- **Enlace con medición:** `https://lunilla.cat/ca/afiliades?utm_source=instagram&utm_medium=dm&utm_campaign=g-02`
 - **Estado:** ⬜ pendiente de aprobación
 
 **Variant A · compte de criança**
@@ -56,7 +56,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 >
 > T'escric perquè [detall concret del seu compte: «el que vas explicar sobre les nits sense dormir» / «com parles de la gelosia entre germans»] va justament del que intentem fer amb els contes.
 >
-> Et faria il·lusió que regaléssim un conte a [nom del petit] perquè el vegis a casa, sense cap compromís? Si t'agrada i et ve de gust recomanar-lo, tenim un programa d'afiliades amb el 20 % de cada venda (1,58 € per PDF i 7,38 € per llibre de tapa dura), amb el teu enllaç i el teu panell: https://lunilla.vercel.app/ca/afiliades?utm_source=instagram&utm_medium=dm&utm_campaign=g-02
+> Et faria il·lusió que regaléssim un conte a [nom del petit] perquè el vegis a casa, sense cap compromís? Si t'agrada i et ve de gust recomanar-lo, tenim un programa d'afiliades amb el 20 % de cada venda (1,58 € per PDF i 7,38 € per llibre de tapa dura), amb el teu enllaç i el teu panell: https://lunilla.cat/ca/afiliades?utm_source=instagram&utm_medium=dm&utm_campaign=g-02
 >
 > I si no, res: el conte és teu igualment. Gràcies per llegir-me.
 >
@@ -134,7 +134,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Idioma:** es y ca (una sola versión por grupo, según el idioma del grupo)
 - **Día previsto:** sáb 7 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde su cuenta personal con historial
-- **Enlace con medición:** `https://lunilla.vercel.app/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04` · ca: `https://lunilla.vercel.app/ca/contes/conte-per-dormir-por-a-la-foscor?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04`
+- **Enlace con medición:** `https://lunilla.cat/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04` · ca: `https://lunilla.cat/ca/contes/conte-per-dormir-por-a-la-foscor?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04`
 - **Estado:** ⬜ pendiente de aprobación
 
 **Castellano**
@@ -145,7 +145,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 > 2. **Mirar juntos lo que da miedo.** Abrir el armario con él, con linterna, y nombrar lo que hay: «la chaqueta, la caja, tu abrigo de invierno». Lo que tiene nombre asusta menos.
 > 3. **Un cuento donde el que tiene miedo sea él y lo resuelva él.** No un héroe que no teme nada: un niño que tiene miedo, mira, y descubre que la sombra era el gato. Lo pedía cada noche durante semanas.
 >
-> Lo tercero lo digo con interés, y por eso lo aviso: soy de Lleida y hago cuentos personalizados en los que el niño sale con su nombre. He escrito un artículo con más ideas sobre el miedo a la oscuridad y cómo contarle un cuento así (hay uno de muestra gratis para leer entero): https://lunilla.vercel.app/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04
+> Lo tercero lo digo con interés, y por eso lo aviso: soy de Lleida y hago cuentos personalizados en los que el niño sale con su nombre. He escrito un artículo con más ideas sobre el miedo a la oscuridad y cómo contarle un cuento así (hay uno de muestra gratis para leer entero): https://lunilla.cat/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04
 >
 > Si a alguien le funcionó otra cosa, la leo con ganas. Las noches largas se llevan mejor en compañía.
 
@@ -157,7 +157,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 > 2. **Mirar plegats el que fa por.** Obrir l'armari amb ell, amb una llanterna, i anomenar el que hi ha: «la jaqueta, la caixa, l'abric d'hivern». El que té nom fa menys por.
 > 3. **Un conte on qui té por és ell i qui ho resol és ell.** No un heroi que no té por de res: un nen que té por, mira, i descobreix que l'ombra era el gat. El demanava cada nit durant setmanes.
 >
-> El tercer punt el dic amb interès, i per això ho aviso: soc de Lleida i faig contes personalitzats on l'infant hi surt amb el seu nom. He escrit un article amb més idees sobre la por a la foscor i com explicar-li un conte així (n'hi ha un de mostra gratis per llegir sencer): https://lunilla.vercel.app/ca/contes/conte-per-dormir-por-a-la-foscor?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04
+> El tercer punt el dic amb interès, i per això ho aviso: soc de Lleida i faig contes personalitzats on l'infant hi surt amb el seu nom. He escrit un article amb més idees sobre la por a la foscor i com explicar-li un conte així (n'hi ha un de mostra gratis per llegir sencer): https://lunilla.cat/ca/contes/conte-per-dormir-por-a-la-foscor?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04
 >
 > Si a algú li va funcionar una altra cosa, la llegeixo amb ganes. Les nits llargues es porten millor en companyia.
 
@@ -168,7 +168,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Idioma:** es y ca
 - **Día previsto:** dom 15 nov (apertura de Lunilla); la biografía, en cuanto exista la cuenta · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca
-- **Enlace con medición:** biografía: `https://lunilla.vercel.app/?utm_source=instagram&utm_medium=bio&utm_campaign=g-05` · vídeos: `https://lunilla.vercel.app/crear?utm_source=instagram&utm_medium=post&utm_campaign=g-05` (en TikTok, cambiar `utm_source=tiktok`)
+- **Enlace con medición:** biografía: `https://lunilla.cat/?utm_source=instagram&utm_medium=bio&utm_campaign=g-05` · vídeos: `https://lunilla.cat/crear?utm_source=instagram&utm_medium=post&utm_campaign=g-05` (en TikTok, cambiar `utm_source=tiktok`)
 - **Estado:** ⬜ pendiente de aprobación
 
 **Biografía (≤ 150 caracteres)**
@@ -229,11 +229,11 @@ Nota en las tres: en la descripción larga de la cuenta (o en un destacado «Có
 
 | # | Título (≤ 100) | Descripción (≤ 500) | Enlace |
 |---|---|---|---|
-| 1 | Regalo de Navidad para niños: un cuento donde el protagonista es él | Un cuento personalizado de 30 páginas con el nombre de tu hijo, su ciudad y su mascota, ilustrado como un álbum y sin usar fotos. PDF en menos de dos horas o libro de tapa dura. Pedido antes del 14 de diciembre, llega para Nochebuena. Vista previa gratis antes de comprar. Hecho en Lleida. | `https://lunilla.vercel.app/cuentos/regalo-abuelos-navidad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
-| 2 | Regalo de Reyes original: cuento personalizado con su nombre | ¿Qué dejan los Reyes junto a los zapatos cuando ya tiene de todo? Un libro donde el niño es el protagonista: su nombre, su ciudad, su mascota y una historia que le ayuda con un miedo o un valor. Tapa dura hasta el 28 de diciembre; PDF en 2 horas hasta el día 5. Vista previa gratis. | `https://lunilla.vercel.app/cuentos/regalo-reyes-magos-cuento-personalizado?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
-| 3 | El regalo de los abuelos que se lee cada noche | Una dedicatoria con el nombre de los abuelos en la primera página y un cuento con el nombre del nieto en todas las demás. Libro de tapa dura de 20 × 20 cm con envío incluido, o PDF para imprimir en casa. Sin fotos del niño: ilustración cálida de álbum. Vista previa gratis. | `https://lunilla.vercel.app/cuentos/regalo-abuelos-navidad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06-abuelos` |
-| 4 | Cuento para el miedo a la oscuridad (con el nombre de tu hijo) | Un cuento para dormir donde el que tiene miedo es él, mira con la linterna y descubre que la sombra era el gato. Con su nombre, su habitación y su mascota. Tres ideas para las noches difíciles y un cuento de muestra gratis para leer entero. | `https://lunilla.vercel.app/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
-| 5 | Cuento personalizado sin fotos de tu hijo | No hace falta subir fotos para que tu hijo sea el protagonista: en Lunilla el personaje se dibuja con su nombre, su edad y lo que le gusta. Ilustración de álbum, 30 páginas, en castellano o catalán. PDF en menos de dos horas. Vista previa gratis antes de pagar. | `https://lunilla.vercel.app/cuentos/cuento-personalizado-sin-fotos?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
+| 1 | Regalo de Navidad para niños: un cuento donde el protagonista es él | Un cuento personalizado de 30 páginas con el nombre de tu hijo, su ciudad y su mascota, ilustrado como un álbum y sin usar fotos. PDF en menos de dos horas o libro de tapa dura. Pedido antes del 14 de diciembre, llega para Nochebuena. Vista previa gratis antes de comprar. Hecho en Lleida. | `https://lunilla.cat/cuentos/regalo-abuelos-navidad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
+| 2 | Regalo de Reyes original: cuento personalizado con su nombre | ¿Qué dejan los Reyes junto a los zapatos cuando ya tiene de todo? Un libro donde el niño es el protagonista: su nombre, su ciudad, su mascota y una historia que le ayuda con un miedo o un valor. Tapa dura hasta el 28 de diciembre; PDF en 2 horas hasta el día 5. Vista previa gratis. | `https://lunilla.cat/cuentos/regalo-reyes-magos-cuento-personalizado?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
+| 3 | El regalo de los abuelos que se lee cada noche | Una dedicatoria con el nombre de los abuelos en la primera página y un cuento con el nombre del nieto en todas las demás. Libro de tapa dura de 20 × 20 cm con envío incluido, o PDF para imprimir en casa. Sin fotos del niño: ilustración cálida de álbum. Vista previa gratis. | `https://lunilla.cat/cuentos/regalo-abuelos-navidad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06-abuelos` |
+| 4 | Cuento para el miedo a la oscuridad (con el nombre de tu hijo) | Un cuento para dormir donde el que tiene miedo es él, mira con la linterna y descubre que la sombra era el gato. Con su nombre, su habitación y su mascota. Tres ideas para las noches difíciles y un cuento de muestra gratis para leer entero. | `https://lunilla.cat/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
+| 5 | Cuento personalizado sin fotos de tu hijo | No hace falta subir fotos para que tu hijo sea el protagonista: en Lunilla el personaje se dibuja con su nombre, su edad y lo que le gusta. Ilustración de álbum, 30 páginas, en castellano o catalán. PDF en menos de dos horas. Vista previa gratis antes de pagar. | `https://lunilla.cat/cuentos/cuento-personalizado-sin-fotos?utm_source=pinterest&utm_medium=pin&utm_campaign=g-06` |
 
 ---
 
@@ -325,14 +325,14 @@ Nota en las tres: en la descripción larga de la cuenta (o en un destacado «Có
 - **Idioma:** ca
 - **Día previsto:** sáb 14 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, des de hola@numimates.com o del correu que decideixi
-- **Enlace con medición:** `https://lunilla.vercel.app/ca/muestras/la-martina-i-els-secrets-de-lleida?utm_source=email&utm_medium=dm&utm_campaign=g-08`
+- **Enlace con medición:** `https://lunilla.cat/ca/muestras/la-martina-i-els-secrets-de-lleida?utm_source=email&utm_medium=dm&utm_campaign=g-08`
 - **Estado:** ⬜ pendiente de aprobación
 
 **Assumpte:** `Un conte amb Lleida dins, de regal per a la classe`
 
 > Bon dia,
 >
-> Em dic Moisés Mora i soc de Lleida. Acabo de posar en marxa Lunilla, un projecte petit de contes personalitzats il·lustrats: l'infant hi surt amb el seu nom, la seva ciutat i la seva mascota, i cada història treballa una por o un valor (anar a dormir, un germanet nou, compartir). Hi ha un conte que passa a Lleida, amb el mercat del Pla, el Segre, els Camps Elisis i la Seu Vella: https://lunilla.vercel.app/ca/muestras/la-martina-i-els-secrets-de-lleida?utm_source=email&utm_medium=dm&utm_campaign=g-08
+> Em dic Moisés Mora i soc de Lleida. Acabo de posar en marxa Lunilla, un projecte petit de contes personalitzats il·lustrats: l'infant hi surt amb el seu nom, la seva ciutat i la seva mascota, i cada història treballa una por o un valor (anar a dormir, un germanet nou, compartir). Hi ha un conte que passa a Lleida, amb el mercat del Pla, el Segre, els Camps Elisis i la Seu Vella: https://lunilla.cat/ca/muestras/la-martina-i-els-secrets-de-lleida?utm_source=email&utm_medium=dm&utm_campaign=g-08
 >
 > Us escric per oferir-vos un conte de regal per a la classe (en PDF, o imprès en tapa dura si el voleu a la biblioteca d'aula), amb el nom de la classe o del personatge que trieu, sense cap compromís i sense demanar-vos res a canvi: ni dades dels infants, ni difusió, ni res. Si us agrada i el voleu llegir a l'hora del conte, me'n faré content; si no, no passa res.
 >

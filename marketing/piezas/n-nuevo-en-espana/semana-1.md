@@ -4,7 +4,7 @@
 > En todas: decimos que la web es nuestra («hago una web de guías de trámites»), damos el dato con su fuente oficial antes del enlace, nunca ofrecemos citas ni gestiones y nunca decimos «te garantizamos». Si el caso es complicado, derivamos a una ONG de acogida o a un abogado.
 > Lo primero que enlazamos es siempre la guía gratuita de empadronamiento o una pregunta con respuesta gratuita, nunca la página de precios. Una publicación por comunidad y semana; en Reddit, nueve aportes sin enlace por cada uno con enlace.
 
-Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cuando `tuspapeles.app` propague, se sustituye el dominio y se conservan los `utm`).
+Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10; `nuevo-en-espana.vercel.app` sigue funcionando, pero no se usa en piezas).
 
 ---
 
@@ -13,7 +13,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 - **Idioma:** en
 - **Día previsto:** vie 6 nov (o el día en que aparezca un hilo que encaje) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal de Reddit con historial)
-- **Enlace con medición:** https://nuevo-en-espana.vercel.app/en/preguntas/empadronarse-sin-contrato-de-alquiler?utm_source=reddit&utm_medium=respuesta&utm_campaign=n-01
+- **Enlace con medición:** https://tuspapeles.app/en/preguntas/empadronarse-sin-contrato-de-alquiler?utm_source=reddit&utm_medium=respuesta&utm_campaign=n-01
 - **Estado:** ⬜ pendiente de aprobación
 
 > You can register (empadronarse) without a rental contract in your name. The padrón is meant to reflect where you actually live, and you can register even if your immigration status isn't sorted yet. What the town hall needs is proof of identity and proof that you live at that address. The usual options:
@@ -26,7 +26,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 >
 > Official references: the Ley 7/1985 de Bases del Régimen Local (art. 15–17) and the 2020 Resolución de instrucciones técnicas del padrón [verify exact citation at boe.es].
 >
-> I run a site with step-by-step guides to Spanish paperwork, with the official sources linked, in 8 languages. The padrón guide is free: https://nuevo-en-espana.vercel.app/en/preguntas/empadronarse-sin-contrato-de-alquiler?utm_source=reddit&utm_medium=respuesta&utm_campaign=n-01
+> I run a site with step-by-step guides to Spanish paperwork, with the official sources linked, in 8 languages. The padrón guide is free: https://tuspapeles.app/en/preguntas/empadronarse-sin-contrato-de-alquiler?utm_source=reddit&utm_medium=respuesta&utm_campaign=n-01
 > It's general information, not legal advice, and we don't book appointments or handle paperwork for anyone. If you spot a mistake, tell me and I'll fix it.
 
 ---
@@ -36,7 +36,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 - **Idioma:** es
 - **Día previsto:** jue 5 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://nuevo-en-espana.vercel.app/es/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-02
+- **Enlace con medición:** https://tuspapeles.app/es/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-02
 - **Estado:** ⬜ pendiente de aprobación
 
 > Hola a todos. Veo que circula mucho el mensaje de que «la autorización de la regularización se renueva sola». Os dejo lo que dice la norma, por si a alguien le sirve, sin alarmar a nadie:
@@ -49,7 +49,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 >
 > Fuente oficial: Real Decreto 316/2026 y artículo 191 del Real Decreto 1155/2024 (boe.es).
 >
-> Hago una web de guías de trámites con las fuentes enlazadas. Esta pregunta, con qué necesitas y cuánto cuesta, está explicada aquí: https://nuevo-en-espana.vercel.app/es/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-02
+> Hago una web de guías de trámites con las fuentes enlazadas. Esta pregunta, con qué necesitas y cuánto cuesta, está explicada aquí: https://tuspapeles.app/es/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-02
 >
 > No es asesoramiento legal y no gestionamos citas: si tu caso es complicado, consulta con una ONG de acogida o con un abogado. Si veis algún error, decídmelo y lo corrijo.
 
@@ -60,7 +60,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 - **Idioma:** ar + es
 - **Día previsto:** dom 8 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://nuevo-en-espana.vercel.app/ar/preguntas/tarjeta-sanitaria-sin-papeles-real-decreto-180-2026?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
+- **Enlace con medición:** https://tuspapeles.app/ar/preguntas/tarjeta-sanitaria-sin-papeles-real-decreto-180-2026?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
 - **Estado:** ⬜ pendiente de aprobación
 
 ### Versión en árabe (revisar por hablante nativo)
@@ -77,7 +77,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 > وبالمناسبة: التسجيل في البلدية (empadronamiento) هو أول خطوة لكل الإجراءات الأخرى، ويمكنك القيام به حتى بدون عقد كراء باسمك.
 >
 > أنا أعمل على موقع فيه أدلة للإجراءات بالعربية مع روابط المصادر الرسمية. دليل التسجيل في البلدية مجاني، وشرح البطاقة الصحية هنا:
-> https://nuevo-en-espana.vercel.app/ar/preguntas/tarjeta-sanitaria-sin-papeles-real-decreto-180-2026?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
+> https://tuspapeles.app/ar/preguntas/tarjeta-sanitaria-sin-papeles-real-decreto-180-2026?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
 >
 > هذه ليست استشارة قانونية، ولا نحجز مواعيد ولا نقوم بالإجراءات عن أحد. إذا كانت حالتك معقدة فاسأل جمعية استقبال أو محامياً. وإذا وجدتم خطأ أخبروني لأصححه.
 
@@ -109,7 +109,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 >
 > Fuente: Real Decreto 180/2026, de 11 de marzo (BOE del 12 de marzo).
 >
-> Hago una web de guías de trámites en 8 idiomas (árabe incluido) con las fuentes enlazadas; la guía de empadronamiento es gratis: https://nuevo-en-espana.vercel.app/es/guias/empadronamiento?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
+> Hago una web de guías de trámites en 8 idiomas (árabe incluido) con las fuentes enlazadas; la guía de empadronamiento es gratis: https://tuspapeles.app/es/guias/empadronamiento?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
 > No es asesoramiento legal ni gestionamos citas. Si veis algún error, decídmelo y lo corrijo.
 
 ---
@@ -119,7 +119,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 - **Idioma:** fr + es
 - **Día previsto:** mar 10 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://nuevo-en-espana.vercel.app/fr/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-04
+- **Enlace con medición:** https://tuspapeles.app/fr/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-04
 - **Estado:** ⬜ pendiente de aprobación
 
 ### Versión en francés
@@ -134,7 +134,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 >
 > Source officielle : Real Decreto 316/2026 et article 191 du Real Decreto 1155/2024 (boe.es).
 >
-> Je fais un site de guides des démarches en Espagne, en français et en 7 autres langues, avec les sources officielles en lien. Le guide de l'empadronamiento est gratuit, et cette question est expliquée ici : https://nuevo-en-espana.vercel.app/fr/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-04
+> Je fais un site de guides des démarches en Espagne, en français et en 7 autres langues, avec les sources officielles en lien. Le guide de l'empadronamiento est gratuit, et cette question est expliquée ici : https://tuspapeles.app/fr/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-04
 >
 > Ce n'est pas un conseil juridique et nous ne prenons pas de rendez-vous à votre place : si votre situation est compliquée, adressez-vous à une association d'accueil ou à un avocat. Si vous voyez une erreur, dites-le-moi et je corrige.
 
@@ -161,7 +161,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 - **Idioma:** es (si la entidad trabaja en catalán, enviar la versión catalana que preparará la sesión al aprobarse)
 - **Día previsto:** mié 11 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com)
-- **Enlace con medición:** https://nuevo-en-espana.vercel.app/es/guias/empadronamiento?utm_source=ong&utm_medium=correo&utm_campaign=n-05
+- **Enlace con medición:** https://tuspapeles.app/es/guias/empadronamiento?utm_source=ong&utm_medium=correo&utm_campaign=n-05
 - **Estado:** ⬜ pendiente de aprobación
 
 > **Asunto:** Guías de trámites en 7 idiomas, gratis para vuestro equipo
@@ -171,7 +171,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 > Soy Moisés Mora, de Lleida. He hecho **Nuevo en España**, una web con guías paso a paso de los trámites que hace una persona recién llegada: empadronamiento, número de la Seguridad Social, tarjeta sanitaria (con el nuevo Real Decreto 180/2026), cuenta bancaria, renovación y modificación de la autorización (la ola de 2027 de la regularización), canje del carnet y nacionalidad. Cada guía dice qué llevar, dónde ir y cuánto tarda, con la fuente oficial enlazada, en español, árabe, francés, inglés, rumano, chino, ucraniano y catalán.
 >
 > Os escribo para ofrecérosla, sin pedir nada a cambio:
-> - La guía de empadronamiento es gratuita para cualquiera: https://nuevo-en-espana.vercel.app/es/guias/empadronamiento?utm_source=ong&utm_medium=correo&utm_campaign=n-05
+> - La guía de empadronamiento es gratuita para cualquiera: https://tuspapeles.app/es/guias/empadronamiento?utm_source=ong&utm_medium=correo&utm_campaign=n-05
 > - Para vuestros técnicos y voluntarios, acceso completo gratuito a todas las guías ([número a confirmar por Moisés] accesos, ampliables).
 > - Y un favor, si tenéis un minuto: si veis cualquier error o algo que en Lleida se hace distinto, decídmelo y lo corrijo el mismo día. Vosotros veis los casos reales; yo solo leo el BOE.
 >
@@ -224,7 +224,7 @@ Enlaces: dominio de producción actual `https://nuevo-en-espana.vercel.app` (cua
 >
 > ## Empadronarse en Lleida sin contrato de alquiler
 >
-> Es la duda más frecuente y la respuesta es sí. El padrón refleja dónde vives de verdad, no si tienes un contrato. Si vives en una habitación o en casa de un familiar o amigo, la persona titular o cualquier adulto ya empadronado allí firma la autorización y te acompaña o te da copia de su documento. Si vives en una situación sin domicilio fijo, pregunta en servicios sociales del Ajuntament por el empadronamiento en un domicilio ficticio. Tienes el detalle en nuestra guía gratuita de empadronamiento: https://nuevo-en-espana.vercel.app/es/guias/empadronamiento
+> Es la duda más frecuente y la respuesta es sí. El padrón refleja dónde vives de verdad, no si tienes un contrato. Si vives en una habitación o en casa de un familiar o amigo, la persona titular o cualquier adulto ya empadronado allí firma la autorización y te acompaña o te da copia de su documento. Si vives en una situación sin domicilio fijo, pregunta en servicios sociales del Ajuntament por el empadronamiento en un domicilio ficticio. Tienes el detalle en nuestra guía gratuita de empadronamiento: https://tuspapeles.app/es/guias/empadronamiento
 >
 > ## Cuánto tarda
 >

@@ -13,16 +13,16 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca (versió es si el grup és en castellà)
 - **Dia previst:** dl 2 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Telegram
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/ca/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01
+- **Enllaç amb mesura:** https://oposita.digital/ca/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01
 - **Estat:** ✅ aprovat el 31/10 · pendent de publicar
 
 **Català**
 
-> He fet una web amb tests per al temari de la 81/26 (bomber/a de primera): 350 preguntes amb l'article de la llei a cada resposta i simulacres de 70 preguntes amb la penalització real. 20 preguntes gratis sense registre: https://placa-oposicions.vercel.app/ca/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01 — si trobeu un error, cada pregunta té un botó per avisar.
+> He fet una web amb tests per al temari de la 81/26 (bomber/a de primera): 350 preguntes amb l'article de la llei a cada resposta i simulacres de 70 preguntes amb la penalització real. 20 preguntes gratis sense registre: https://oposita.digital/ca/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01 — si trobeu un error, cada pregunta té un botó per avisar.
 
 **Castellano**
 
-> He hecho una web con tests para el temario de la 81/26 (bombero/a de primera): 350 preguntas con el artículo de la ley en cada respuesta y simulacros de 70 preguntas con la penalización real. 20 preguntas gratis sin registro: https://placa-oposicions.vercel.app/es/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01 — si encontráis un error, cada pregunta tiene un botón para avisar.
+> He hecho una web con tests para el temario de la 81/26 (bombero/a de primera): 350 preguntas con el artículo de la ley en cada respuesta y simulacros de 70 preguntas con la penalización real. 20 preguntas gratis sin registro: https://oposita.digital/es/bombers-generalitat?utm_source=telegram&utm_medium=grup&utm_campaign=b-01 — si encontráis un error, cada pregunta tiene un botón para avisar.
 
 ---
 
@@ -31,16 +31,16 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca + es
 - **Dia previst:** dl 2 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/ca/tcai-ics?utm_source=telegram&utm_medium=grup&utm_campaign=b-02
+- **Enllaç amb mesura:** https://oposita.digital/ca/tcai-ics?utm_source=telegram&utm_medium=grup&utm_campaign=b-02
 - **Estat:** ✅ aprovat el 31/10 · pendent de publicar
 
 **Català**
 
-> Tests del temari de TCAI de la convocatòria 100-2025 de l'ICS, en català i castellà, amb la llei a cada resposta: https://placa-oposicions.vercel.app/ca/tcai-ics?utm_source=telegram&utm_medium=grup&utm_campaign=b-02 (20 preguntes gratis, sense registre).
+> Tests del temari de TCAI de la convocatòria 100-2025 de l'ICS, en català i castellà, amb la llei a cada resposta: https://oposita.digital/ca/tcai-ics?utm_source=telegram&utm_medium=grup&utm_campaign=b-02 (20 preguntes gratis, sense registre).
 
 **Castellano**
 
-> Tests del temario de TCAI de la convocatoria 100-2025 del ICS, en catalán y castellano, con la ley en cada respuesta: https://placa-oposicions.vercel.app/es/tcai-ics?utm_source=whatsapp&utm_medium=grup&utm_campaign=b-02 (20 preguntas gratis, sin registro).
+> Tests del temario de TCAI de la convocatoria 100-2025 del ICS, en catalán y castellano, con la ley en cada respuesta: https://oposita.digital/es/tcai-ics?utm_source=whatsapp&utm_medium=grup&utm_campaign=b-02 (20 preguntas gratis, sin registro).
 
 *(Per a WhatsApp es fa servir `utm_source=whatsapp`; per a Telegram, `utm_source=telegram`.)*
 
@@ -51,16 +51,16 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca + es (a Forocoches i Reddit, castellà)
 - **Dia previst:** dc 4 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de cada fòrum
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/ca/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
+- **Enllaç amb mesura:** https://oposita.digital/ca/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
 - **Estat:** ✅ aprovat el 31/10 · pendent de publicar
 
 **Català**
 
-> Per a la 46/26 i la propera: tests per tema dels 21 temes i simulacres de 30 preguntes en 35 minuts amb −1/4, com a l'examen: https://placa-oposicions.vercel.app/ca/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
+> Per a la 46/26 i la propera: tests per tema dels 21 temes i simulacres de 30 preguntes en 35 minuts amb −1/4, com a l'examen: https://oposita.digital/ca/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
 
 **Castellano**
 
-> Para la 46/26 y la próxima: tests por tema de los 21 temas y simulacros de 30 preguntas en 35 minutos con −1/4, como en el examen: https://placa-oposicions.vercel.app/es/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
+> Para la 46/26 y la próxima: tests por tema de los 21 temas y simulacros de 30 preguntas en 35 minutos con −1/4, como en el examen: https://oposita.digital/es/mossos-esquadra?utm_source=forocoches&utm_medium=resposta&utm_campaign=b-03
 
 *(A Mediavida: `utm_source=mediavida`. A Reddit: `utm_source=reddit`. Si al fil es pregunta per la data de la 46/27, la resposta és «encara no hi ha resolució; la pàgina de convocatòries s'actualitza cada setmana» amb l'enllaç a `/es/convocatorias`.)*
 
@@ -71,16 +71,16 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca + es
 - **Dia previst:** dc 4 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Facebook
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/ca/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
+- **Enllaç amb mesura:** https://oposita.digital/ca/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
 - **Estat:** ✅ aprovat el 31/10 · pendent de publicar
 
 **Català**
 
-> Tests de la 870 (auxiliar administratiu C2) i del temari comú d'ajuntaments, amb casos pràctics i l'article de cada resposta: https://placa-oposicions.vercel.app/ca/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
+> Tests de la 870 (auxiliar administratiu C2) i del temari comú d'ajuntaments, amb casos pràctics i l'article de cada resposta: https://oposita.digital/ca/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
 
 **Castellano**
 
-> Tests de la 870 (auxiliar administrativo C2) y del temario común de ayuntamientos, con casos prácticos y el artículo de cada respuesta: https://placa-oposicions.vercel.app/es/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
+> Tests de la 870 (auxiliar administrativo C2) y del temario común de ayuntamientos, con casos prácticos y el artículo de cada respuesta: https://oposita.digital/es/auxiliar-administratiu-generalitat?utm_source=facebook&utm_medium=grup&utm_campaign=b-04
 
 ---
 
@@ -89,14 +89,14 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca
 - **Dia previst:** dv 6 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, per correu (remitent amb nom de marca; resposta a hola@numimates.com)
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/ca/convocatorias?utm_source=sindicats&utm_medium=correu&utm_campaign=b-05
+- **Enllaç amb mesura:** https://oposita.digital/ca/convocatorias?utm_source=sindicats&utm_medium=correu&utm_campaign=b-05
 - **Estat:** ✅ aprovat el 31/10 · pendent de publicar
 
 **Assumpte:** `Convocatòries 2027 a Catalunya: recurs gratuït`
 
 > Bon dia,
 >
-> Hem fet una pàgina gratuïta amb les convocatòries de Catalunya per al 2027 (35 processos, places, terminis i dates d'examen), actualitzada cada setmana: https://placa-oposicions.vercel.app/ca/convocatorias?utm_source=sindicats&utm_medium=correu&utm_campaign=b-05. Si us és útil, podeu enllaçar-la.
+> Hem fet una pàgina gratuïta amb les convocatòries de Catalunya per al 2027 (35 processos, places, terminis i dates d'examen), actualitzada cada setmana: https://oposita.digital/ca/convocatorias?utm_source=sindicats&utm_medium=correu&utm_campaign=b-05. Si us és útil, podeu enllaçar-la.
 >
 > Plaça és una eina de tests per a oposicions catalanes feta a Lleida; no és cap administració pública. Qualsevol error que hi vegeu, el corregim el mateix dia.
 >
@@ -110,7 +110,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** es
 - **Dia previst:** dt 10 nov (setmana 2) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Reddit
-- **Enllaç amb mesura:** https://placa-oposicions.vercel.app/es/convocatorias?utm_source=reddit&utm_medium=post&utm_campaign=b-06
+- **Enllaç amb mesura:** https://oposita.digital/es/convocatorias?utm_source=reddit&utm_medium=post&utm_campaign=b-06
 - **Estat:** ⬜ pendent d'aprovació
 
 **Título:** `Convocatorias de Cataluña 2027: 35 procesos en una tabla (plazas, plazos, fecha de examen)`
@@ -130,7 +130,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 > | Guardia Urbana / Policía Local | Barcelona, Badalona, Tarragona, Terrassa, L'Hospitalet, Sabadell, Mataró | [verificar] | Oposición libre, varias en 2027 |
 > | Generalitat · OPO 2026 | Oferta pública de empleo | 8.474 plazas | Se irán convocando por cuerpos |
 >
-> Tabla completa, con plazos y enlaces al DOGC, BOP o portal del ayuntamiento: https://placa-oposicions.vercel.app/es/convocatorias?utm_source=reddit&utm_medium=post&utm_campaign=b-06
+> Tabla completa, con plazos y enlaces al DOGC, BOP o portal del ayuntamiento: https://oposita.digital/es/convocatorias?utm_source=reddit&utm_medium=post&utm_campaign=b-06
 >
 > Transparencia: la web es mía (Plaça, tests para oposiciones catalanas, hecha en Lleida). La tabla es gratis y no pide registro. Si veis un dato mal, decídmelo y lo corrijo ese mismo día.
 
@@ -210,7 +210,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Idioma:** ca + es
 - **Dia previst:** ds 14 nov (setmana 2, quan hi hagi compte de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del compte de la marca (el vídeo el produeix la sessió amb captures reals de l'app; cap crèdit de vídeo d'IA)
-- **Enllaç amb mesura (bio del perfil):** https://placa-oposicions.vercel.app/ca/mossos-esquadra?utm_source=tiktok&utm_medium=video&utm_campaign=b-08
+- **Enllaç amb mesura (bio del perfil):** https://oposita.digital/ca/mossos-esquadra?utm_source=tiktok&utm_medium=video&utm_campaign=b-08
 - **Estat:** ⬜ pendent d'aprovació
 
 **Guió de referència:** `MARKETING.md §3` de B, vídeo 1: pregunta real del simulacre de Mossos en pantalla, compte enrere de 5 s, resposta i article exacte de la Llei 10/1994, tancament «20 preguntes gratis, enllaç al perfil».

@@ -12,7 +12,7 @@ llamada; H1 distinto del título; FAQ con datos estructurados en toda página in
 
 ## 1. Mapa por proyecto
 
-### A · CCSE en tu idioma (`https://ccse-en-tu-idioma.vercel.app`)
+### A · CCSE en tu idioma (`https://ccsefacil.com`)
 
 | # | Búsqueda | Idioma | Página que responde |
 |---|---|---|---|
@@ -37,7 +37,7 @@ llamada; H1 distinto del título; FAQ con datos estructurados en toda página in
 | 19 | examen ccse en français questions | fr | `/fr/guia/test-ccse-gratis` |
 | 20 | resultados examen ccse noviembre 2026 | es | **Nueva** (publicar cuando salgan; la búsqueda que hoy se llevan los despachos) |
 
-### N · Nuevo en España (`https://nuevo-en-espana.vercel.app`)
+### N · Nuevo en España (`https://tuspapeles.app`)
 
 | # | Búsqueda | Idioma | Página que responde |
 |---|---|---|---|
@@ -87,7 +87,7 @@ llamada; H1 distinto del título; FAQ con datos estructurados en toda página in
 | 19 | oposiciones mossos castellano test | es | `/es/mossos-esquadra` |
 | 20 | plaça oposicions preu subscripció | ca | `/ca/precios` |
 
-### G · Lunilla (`https://lunilla.vercel.app`)
+### G · Lunilla (`https://lunilla.cat`)
 
 | # | Búsqueda | Idioma | Página que responde |
 |---|---|---|---|
@@ -112,7 +112,7 @@ llamada; H1 distinto del título; FAQ con datos estructurados en toda página in
 | 19 | regal reis conte personalitzat | ca | `/ca/contes/regal-reis-conte-personalitzat` |
 | 20 | llibre personalitzat nen regal nadal | ca | **Nueva** `/ca/contes/llibre-personalitzat-tapa-dura` (gemela de la 8) |
 
-### P · NetoClaro e ImpuestoClaro (`https://netoclaro.vercel.app` · `https://impuestoclaro.vercel.app`)
+### P · NetoClaro e ImpuestoClaro (`https://netoclaro.app` · `https://impuestoclaro.es`)
 Los dos sitios ya tienen un mapa de 200 palabras clave cada uno (`fabrica/sitios/<sitio>/palabras-clave.csv`). Estas 20
 son las de mayor estacionalidad para noviembre y diciembre.
 

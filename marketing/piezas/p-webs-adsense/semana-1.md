@@ -2,7 +2,7 @@
 
 > **Nada se publica ni se envía sin la aprobación de Moisés** (SESIONES.md, regla 1). Cada respuesta resuelve primero la duda de quien pregunta, con el cálculo hecho y la fuente oficial nombrada; el enlace va al final y siempre se dice que la web es nuestra.
 > Nunca intercambio ni compra de enlaces, nunca artículos patrocinados y nunca anuncios de pago: P vive solo de SEO y de respuestas útiles.
-> Enlaces a `*.vercel.app` hasta que propaguen netoclaro.app e impuestoclaro.es; al cambiar el dominio se cambia solo el host, las rutas y los `utm` se mantienen. Toda cifra marcada **[comprobar]** se verifica en la calculadora antes de pegar.
+> Enlaces a los dominios propios `netoclaro.app` e `impuestoclaro.es` (activos desde el 31/10; las direcciones `*.vercel.app` siguen funcionando, pero no se usan en piezas).
 
 Voz de la familia Claro: el resultado arriba, la explicación corta debajo, la fuente citada. Firma: Moisés Mora · NetoClaro / ImpuestoClaro · hola@numimates.com.
 
@@ -19,7 +19,7 @@ Parámetros usados en los cálculos (verificados el 31/10/2026 en fuentes de div
 - **Idioma:** en
 - **Día previsto:** dom 8 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal con historial, como respuesta a una pregunta real; nunca abrir un hilo propio)
-- **Enlace con medición:** https://netoclaro.vercel.app/calculadora-sueldo-neto/?bruto=32000&utm_source=reddit&utm_medium=respuesta&utm_campaign=p-01
+- **Enlace con medición:** https://netoclaro.app/calculadora-sueldo-neto/?bruto=32000&utm_source=reddit&utm_medium=respuesta&utm_campaign=p-01
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo a la que responde: *«I've been offered 32,000 € gross in Barcelona, single, no kids. What will I actually take home each month?»*
@@ -36,7 +36,7 @@ Pregunta tipo a la que responde: *«I've been offered 32,000 € gross in Barcel
 >
 > Sources: contribution rates from the 2026 contribution order (Orden PJC/297/2026, BOE) and the IRPF scales published by the Agencia Tributaria and the Generalitat.
 >
-> If you want the exact figure with your own situation (age, dependants, region, 12 or 14 payments), I built a free calculator that does the full breakdown: https://netoclaro.vercel.app/calculadora-sueldo-neto/?bruto=32000&utm_source=reddit&utm_medium=respuesta&utm_campaign=p-01 (disclosure: it's my own site, no sign-up, no ads before the result).
+> If you want the exact figure with your own situation (age, dependants, region, 12 or 14 payments), I built a free calculator that does the full breakdown: https://netoclaro.app/calculadora-sueldo-neto/?bruto=32000&utm_source=reddit&utm_medium=respuesta&utm_campaign=p-01 (disclosure: it's my own site, no sign-up, no ads before the result).
 
 ---
 
@@ -45,7 +45,7 @@ Pregunta tipo a la que responde: *«I've been offered 32,000 € gross in Barcel
 - **Idioma:** es
 - **Día previsto:** lun 9 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial, como respuesta)
-- **Enlace con medición:** https://netoclaro.vercel.app/calculadora-indemnizacion-despido/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02 y https://netoclaro.vercel.app/calculadora-finiquito/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02
+- **Enlace con medición:** https://netoclaro.app/calculadora-indemnizacion-despido/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02 y https://netoclaro.app/calculadora-finiquito/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo: *«Me despiden después de 6 años en la empresa, cobro 2.000 € brutos al mes en 12 pagas. ¿Cuánto me corresponde de finiquito y de indemnización? ¿Es lo mismo?»*
@@ -72,7 +72,7 @@ Pregunta tipo: *«Me despiden después de 6 años en la empresa, cobro 2.000 €
 >
 > Fuente: Estatuto de los Trabajadores, arts. 49, 53 y 56 (BOE), y Ley del IRPF art. 7.e.
 >
-> Tengo una calculadora que hace las dos cuentas con tus datos (antigüedad exacta, pagas, vacaciones pendientes): https://netoclaro.vercel.app/calculadora-indemnizacion-despido/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02 y https://netoclaro.vercel.app/calculadora-finiquito/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02. Es mía, gratis y sin registro.
+> Tengo una calculadora que hace las dos cuentas con tus datos (antigüedad exacta, pagas, vacaciones pendientes): https://netoclaro.app/calculadora-indemnizacion-despido/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02 y https://netoclaro.app/calculadora-finiquito/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02. Es mía, gratis y sin registro.
 
 ---
 
@@ -81,7 +81,7 @@ Pregunta tipo: *«Me despiden después de 6 años en la empresa, cobro 2.000 €
 - **Idioma:** es
 - **Día previsto:** mié 11 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://impuestoclaro.vercel.app/cuota-autonomos-por-tramo/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 y https://netoclaro.vercel.app/calculadora-cuota-autonomos/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03
+- **Enlace con medición:** https://impuestoclaro.es/cuota-autonomos-por-tramo/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 y https://netoclaro.app/calculadora-cuota-autonomos/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo: *«Me doy de alta de autónomo en enero. Calculo que me quedarán unos 1.800 € netos al mes. ¿Cuánto voy a pagar de cuota en 2027?»*
@@ -96,7 +96,7 @@ Pregunta tipo: *«Me doy de alta de autónomo en enero. Calculo que me quedarán
 >
 > Fuente: Real Decreto-ley 13/2022 (sistema de cotización por ingresos reales) y las tablas de bases y cuotas que publica la Seguridad Social cada año en el BOE.
 >
-> Aquí tienes la tabla completa de los 15 tramos de 2026 con la cuota mínima y máxima de cada uno, y una calculadora que te dice el tramo a partir de tus ingresos y gastos: https://impuestoclaro.vercel.app/cuota-autonomos-por-tramo/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 · https://netoclaro.vercel.app/calculadora-cuota-autonomos/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 (web mía, gratis; la actualizo el día que salga la tabla de 2027).
+> Aquí tienes la tabla completa de los 15 tramos de 2026 con la cuota mínima y máxima de cada uno, y una calculadora que te dice el tramo a partir de tus ingresos y gastos: https://impuestoclaro.es/cuota-autonomos-por-tramo/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 · https://netoclaro.app/calculadora-cuota-autonomos/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 (web mía, gratis; la actualizo el día que salga la tabla de 2027).
 
 ---
 
@@ -105,7 +105,7 @@ Pregunta tipo: *«Me doy de alta de autónomo en enero. Calculo que me quedarán
 - **Idioma:** es
 - **Día previsto:** vie 13 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
-- **Enlace con medición:** https://impuestoclaro.vercel.app/autonomo-o-asalariado/?utm_source=infoautonomos&utm_medium=respuesta&utm_campaign=p-04
+- **Enlace con medición:** https://impuestoclaro.es/autonomo-o-asalariado/?utm_source=infoautonomos&utm_medium=respuesta&utm_campaign=p-04
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo: *«Una empresa me ofrece facturar 2.500 € al mes como autónomo o un contrato de 2.000 € brutos. ¿Qué me sale más a cuenta?»*
@@ -128,7 +128,7 @@ Pregunta tipo: *«Una empresa me ofrece facturar 2.500 € al mes como autónomo
 >
 > Fuentes: tipos de cotización del Régimen General 2026 (Orden PJC/297/2026), tablas de cuota de autónomos 2026 (Seguridad Social) y escala del IRPF (AEAT).
 >
-> Hice una comparadora que pone las dos columnas con tus cifras exactas (comunidad, hijos, gastos deducibles, tarifa plana sí/no): https://impuestoclaro.vercel.app/autonomo-o-asalariado/?utm_source=infoautonomos&utm_medium=respuesta&utm_campaign=p-04. Es mía, gratuita y sin registro.
+> Hice una comparadora que pone las dos columnas con tus cifras exactas (comunidad, hijos, gastos deducibles, tarifa plana sí/no): https://impuestoclaro.es/autonomo-o-asalariado/?utm_source=infoautonomos&utm_medium=respuesta&utm_campaign=p-04. Es mía, gratuita y sin registro.
 
 ---
 
@@ -137,7 +137,7 @@ Pregunta tipo: *«Una empresa me ofrece facturar 2.500 € al mes como autónomo
 - **Idioma:** en
 - **Día previsto:** dom 15 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial, como respuesta)
-- **Enlace con medición:** https://netoclaro.vercel.app/calculadora-paga-extra/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-05
+- **Enlace con medición:** https://netoclaro.app/calculadora-paga-extra/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-05
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo: *«My contract says 28,000 € in 14 payments. Does that mean I get paid 14 times? When?»*
@@ -152,7 +152,7 @@ Pregunta tipo: *«My contract says 28,000 € in 14 payments. Does that mean I g
 >
 > Source: Estatuto de los Trabajadores, art. 31 (BOE) and your sector's convenio colectivo.
 >
-> If you want to see your exact net per payslip, 12 vs 14, and what your December extra will be if you joined mid-year: https://netoclaro.vercel.app/calculadora-paga-extra/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-05 (my own free calculator, no sign-up).
+> If you want to see your exact net per payslip, 12 vs 14, and what your December extra will be if you joined mid-year: https://netoclaro.app/calculadora-paga-extra/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-05 (my own free calculator, no sign-up).
 
 ---
 
@@ -161,7 +161,7 @@ Pregunta tipo: *«My contract says 28,000 € in 14 payments. Does that mean I g
 - **Idioma:** es
 - **Día previsto:** lun 16 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial; en Facebook, solo donde las normas permitan enlaces)
-- **Enlace con medición:** https://netoclaro.vercel.app/calculadora-paro/?utm_source=facebook&utm_medium=respuesta&utm_campaign=p-06
+- **Enlace con medición:** https://netoclaro.app/calculadora-paro/?utm_source=facebook&utm_medium=respuesta&utm_campaign=p-06
 - **Estado:** ⬜ pendiente de aprobación
 
 Pregunta tipo: *«Se me acaba el contrato en diciembre. He cotizado 2 años seguidos y cobro 1.900 € brutos al mes con las pagas prorrateadas. ¿Cuánto y cuánto tiempo voy a cobrar de paro?»*
@@ -177,7 +177,7 @@ Pregunta tipo: *«Se me acaba el contrato en diciembre. He cotizado 2 años segu
 >
 > Fuente: Ley General de la Seguridad Social, arts. 269 a 270 (BOE) y las cuantías del SEPE para 2026.
 >
-> Aquí tienes una calculadora que lo hace con tu sueldo, tus días cotizados y tus hijos: https://netoclaro.vercel.app/calculadora-paro/?utm_source=facebook&utm_medium=respuesta&utm_campaign=p-06. Es mía, gratis y sin registro.
+> Aquí tienes una calculadora que lo hace con tu sueldo, tus días cotizados y tus hijos: https://netoclaro.app/calculadora-paro/?utm_source=facebook&utm_medium=respuesta&utm_campaign=p-06. Es mía, gratis y sin registro.
 
 ---
 
@@ -186,7 +186,7 @@ Pregunta tipo: *«Se me acaba el contrato en diciembre. He cotizado 2 años segu
 - **Idioma:** es (versión catalana: misma estructura, cambiando el idioma)
 - **Día previsto:** jue 12 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com o desde su cuenta de marca)
-- **Enlace con medición:** https://netoclaro.vercel.app/datos/tabla-sueldo-neto/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07 y https://impuestoclaro.vercel.app/datos/calendario-fiscal-2027/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
+- **Enlace con medición:** https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07 y https://impuestoclaro.es/datos/calendario-fiscal-2027/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
 - **Estado:** ⬜ pendiente de aprobación
 
 Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aquí cuando Moisés o la sesión del Mac las busque):
@@ -202,8 +202,8 @@ Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aq
 >
 > He publicado dos tablas que creo que pueden serviros para el blog o para vuestros clientes:
 >
-> - **Tabla de bruto a neto 2026**, de 15.000 a 100.000 €, con los tipos de cotización de la Orden PJC/297/2026 y la escala de IRPF vigente: https://netoclaro.vercel.app/datos/tabla-sueldo-neto/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
-> - **Calendario fiscal 2027** con los plazos de los modelos 303, 130, 111, 115, 390 y la renta: https://impuestoclaro.vercel.app/datos/calendario-fiscal-2027/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
+> - **Tabla de bruto a neto 2026**, de 15.000 a 100.000 €, con los tipos de cotización de la Orden PJC/297/2026 y la escala de IRPF vigente: https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
+> - **Calendario fiscal 2027** con los plazos de los modelos 303, 130, 111, 115, 390 y la renta: https://impuestoclaro.es/datos/calendario-fiscal-2027/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
 >
 > Las dos se descargan en CSV y tienen licencia Creative Commons (CC BY 4.0): podéis copiarlas, enlazarlas o incrustarlas citando la fuente, sin pedir permiso. Cualquier error que veáis lo corrijo el mismo día.
 >
@@ -219,7 +219,7 @@ Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aq
 - **Idioma:** ca
 - **Día previsto:** mar 17 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (per correu)
-- **Enlace con medición:** https://netoclaro.vercel.app/ca/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08 i https://impuestoclaro.vercel.app/datos/tramos-irpf-comunidades/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
+- **Enlace con medición:** https://netoclaro.app/ca/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08 i https://impuestoclaro.es/datos/tramos-irpf-comunidades/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
 - **Estado:** ⬜ pendiente de aprobación
 
 > **Assumpte:** Calculadores laborals i fiscals en català, lliures per als col·legiats
@@ -228,8 +228,8 @@ Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aq
 >
 > Em dic Moisés Mora i soc de Lleida. He publicat dos webs de calculadores gratuïtes, **en català i castellà**, que potser poden ser útils als col·legiats o al butlletí:
 >
-> - **NetoClaro** (nòmina i laboral): sou net, quitança, indemnització per acomiadament, atur, pagues extres, quota d'autònoms. Versió en català: https://netoclaro.vercel.app/ca/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
-> - **ImpuestoClaro** (impostos i autònoms): IRPF per comunitat, IVA, models 130 i 303, tarifa plana. Inclou la taula de **trams autonòmics de l'IRPF** amb descàrrega en CSV: https://impuestoclaro.vercel.app/datos/tramos-irpf-comunidades/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
+> - **NetoClaro** (nòmina i laboral): sou net, quitança, indemnització per acomiadament, atur, pagues extres, quota d'autònoms. Versió en català: https://netoclaro.app/ca/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
+> - **ImpuestoClaro** (impostos i autònoms): IRPF per comunitat, IVA, models 130 i 303, tarifa plana. Inclou la taula de **trams autonòmics de l'IRPF** amb descàrrega en CSV: https://impuestoclaro.es/datos/tramos-irpf-comunidades/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
 >
 > Totes les pàgines citen la font oficial (BOE, Seguretat Social, AEAT, Generalitat), indiquen la data d'actualització i es poden enllaçar o reutilitzar amb llicència CC BY 4.0. No hi ha registre ni cap producte de pagament: és un projecte personal fet amb cura perquè, fins ara, gairebé cap calculadora d'aquest tipus existia en català.
 >
@@ -259,7 +259,7 @@ Dónde iría cada enlace (bloque «Publicidad · Enlace patrocinado» bajo el re
 
 Texto del formulario (castellano; adaptar los campos a lo que pida cada programa):
 
-> **Nombre y actividad:** Moisés Mora, autónomo en Lleida. Edito NetoClaro (https://netoclaro.vercel.app, pronto netoclaro.app) e ImpuestoClaro (https://impuestoclaro.vercel.app, pronto impuestoclaro.es), dos sitios de calculadoras laborales y fiscales gratuitas en castellano y catalán.
+> **Nombre y actividad:** Moisés Mora, autónomo en Lleida. Edito NetoClaro (https://netoclaro.app, pronto netoclaro.app) e ImpuestoClaro (https://impuestoclaro.es, pronto impuestoclaro.es), dos sitios de calculadoras laborales y fiscales gratuitas en castellano y catalán.
 >
 > **Qué son los sitios:** 20 calculadoras por sitio (sueldo neto, finiquito, paro, cuota de autónomos, IRPF, IVA, modelos 130 y 303, precio por hora, «¿autónomo o asalariado?») más 10 fichas de datos oficiales con CSV y unas 700 páginas de resultados precalculados. Cada página cita la fuente legal (BOE, Seguridad Social, AEAT) y la fecha de actualización. Sin registro y sin anuncios antes del resultado.
 >
@@ -273,7 +273,7 @@ Texto del formulario (castellano; adaptar los campos a lo que pida cada programa
 
 English version (Xolo):
 
-> **Who:** Moisés Mora, self-employed in Lleida, Spain. I run NetoClaro (https://netoclaro.vercel.app, soon netoclaro.app) and ImpuestoClaro (https://impuestoclaro.vercel.app, soon impuestoclaro.es): free payroll and tax calculators in Spanish and Catalan.
+> **Who:** Moisés Mora, self-employed in Lleida, Spain. I run NetoClaro (https://netoclaro.app, soon netoclaro.app) and ImpuestoClaro (https://impuestoclaro.es, soon impuestoclaro.es): free payroll and tax calculators in Spanish and Catalan.
 >
 > **What the sites are:** 20 calculators per site (net salary, severance, unemployment benefit, self-employed quota, income tax, VAT, quarterly forms 130/303, hourly rate, "freelancer or employee?"), 10 open-data tables with CSV download and about 700 precalculated result pages. Every page cites the official source (BOE, Social Security, Tax Agency) and its update date. No sign-up, no ads above the result.
 >
@@ -292,7 +292,7 @@ English version (Xolo):
 - **Idioma:** es
 - **Día previsto:** vie 6 nov (PR a claude/p-webs-adsense-fabrica; no cuenta en el tope diario) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** sesión de proyecto P (PR), no Moisés
-- **Enlace con medición:** página propia `https://netoclaro.vercel.app/paga-extra-navidad-2026/`; enlaces internos sin `utm`. Al compartirla en redes o foros: `?utm_source=<canal>&utm_medium=articulo&utm_campaign=p-10`
+- **Enlace con medición:** página propia `https://netoclaro.app/paga-extra-navidad-2026/`; enlaces internos sin `utm`. Al compartirla en redes o foros: `?utm_source=<canal>&utm_medium=articulo&utm_campaign=p-10`
 - **Estado:** ⬜ pendiente de aprobación
 
 **Palabra clave:** paga extra navidad 2026 · **Slug:** `/paga-extra-navidad-2026/` · **Título (≤ 60):** Paga extra de Navidad 2026: cuándo se cobra y cuánto es · **Meta (≤ 155):** Cuándo se cobra la paga extra de Navidad 2026, cuánto es y cómo se calcula si llevas pocos meses en la empresa. Con ejemplo paso a paso y fuente legal. · **Enlaces internos:** `/calculadora-paga-extra/`, `/calculadora-sueldo-neto/`, `/calculadora-finiquito/`
@@ -389,7 +389,7 @@ English version (Xolo):
 - **Idioma:** es (La Mañana publica en catalán: usar la misma nota traducida si se le envía a ella)
 - **Día previsto:** jue 19 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo)
-- **Enlace con medición:** https://netoclaro.vercel.app/datos/salario-minimo-historico/?utm_source=segre&utm_medium=correo&utm_campaign=p-11 y https://netoclaro.vercel.app/datos/tabla-sueldo-neto/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
+- **Enlace con medición:** https://netoclaro.app/datos/salario-minimo-historico/?utm_source=segre&utm_medium=correo&utm_campaign=p-11 y https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
 - **Estado:** ⬜ pendiente de aprobación
 
 > **Asunto:** Dos tablas con datos oficiales (SMI 2000-2026 y bruto-neto 2026), libres para usar
@@ -398,8 +398,8 @@ English version (Xolo):
 >
 > Soy Moisés Mora, de Lleida. He publicado dos tablas de datos laborales que quizá os sirvan cuando escribáis sobre salarios o sobre la próxima subida del SMI:
 >
-> - **Evolución del salario mínimo de 2000 a 2026**, con el real decreto de cada año: https://netoclaro.vercel.app/datos/salario-minimo-historico/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
-> - **Tabla de bruto a neto 2026**, de 15.000 a 100.000 €, con los tipos de cotización y de IRPF vigentes: https://netoclaro.vercel.app/datos/tabla-sueldo-neto/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
+> - **Evolución del salario mínimo de 2000 a 2026**, con el real decreto de cada año: https://netoclaro.app/datos/salario-minimo-historico/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
+> - **Tabla de bruto a neto 2026**, de 15.000 a 100.000 €, con los tipos de cotización y de IRPF vigentes: https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
 >
 > Las dos se descargan en CSV y están bajo licencia Creative Commons (CC BY 4.0): podéis reproducirlas o hacer un gráfico con ellas citando la fuente. Cada cifra enlaza a su norma en el BOE. No pido nada a cambio; si detectáis un error, lo corrijo el mismo día.
 >
