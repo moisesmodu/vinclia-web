@@ -24,8 +24,12 @@ export const sitio = {
     email: env('LEGAL_EMAIL_SITIO') || env('LEGAL_EMAIL') || base.titular.email,
   },
   umami: { src: env('UMAMI_SRC') || base.umami.src, id: env('UMAMI_ID') || base.umami.id },
-  searchConsole: { verificacion: env('GSC_VERIFICACION') || base.searchConsole.verificacion },
+  searchConsole: { verificacion: env('GOOGLE_SITE_VERIFICATION') || env('GSC_VERIFICACION') || base.searchConsole.verificacion },
 };
+
+// Vercel Web Analytics (sin cookies, activado en el panel de cada proyecto): solo cuando el sitio se compila en Vercel,
+// porque el script /_vercel/insights/script.js solo existe ahí. Se puede forzar o apagar con VERCEL_ANALYTICS=1|0.
+export const analiticaVercel = () => (env('VERCEL_ANALYTICS') ? env('VERCEL_ANALYTICS') === '1' : env('VERCEL') === '1');
 
 export const LANGS: Lang[] = base.idiomas;
 export const anunciosActivos = () => /^ca-pub-\d{10,}$/.test(sitio.adsense.cliente);

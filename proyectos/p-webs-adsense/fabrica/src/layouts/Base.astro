@@ -1,11 +1,11 @@
 ---
 // Plantilla de todas las páginas: SEO (canónica, hreflang, Open Graph, datos estructurados), colores del sitio,
-// consentimiento de Google (TCF 2.2) y AdSense solo si hay cuenta, y Umami (analítica sin cookies).
+// consentimiento de Google (TCF 2.2) y AdSense solo si hay cuenta, y analítica sin cookies (Vercel Web Analytics o Umami).
 import '../styles/base.css';
 import '../styles/calc.css';
 import '../styles/paginas.css';
 import type { Lang } from '../lib/def';
-import { sitio, anunciosActivos, pubId, SITIO_ID, LANGS } from '../lib/sitio';
+import { sitio, anunciosActivos, pubId, SITIO_ID, LANGS, analiticaVercel } from '../lib/sitio';
 import { t } from '../lib/def';
 import { icono } from '../lib/iconos';
 import { url, absoluta, buscar, fichasSitio } from '../lib/rutas';
@@ -95,6 +95,7 @@ document.querySelectorAll('ins.adsbygoogle').forEach(function(){(window.adsbygoo
 addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
   )}
   {sitio.umami.id && <script is:inline defer src={sitio.umami.src} data-website-id={sitio.umami.id} data-do-not-track="true"></script>}
+  {analiticaVercel() && <script is:inline defer src="/_vercel/insights/script.js"></script>}
 </head>
 <body class:list={[`t-${tipo ?? 'otra'}`]}>
   <a class="saltar" href="#contenido">{u.saltar}</a>
