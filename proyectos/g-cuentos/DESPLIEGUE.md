@@ -190,3 +190,8 @@ producción. La columna nueva `bloqueoHasta` (cerrojo por pedido) la crea `prism
   estructurados `Product` con precio y moneda además de `FAQPage`; la portada tiene la pregunta «¿Cuánto cuesta?».
 - Redespliegue necesario para publicar estos cambios: `cd proyectos/g-cuentos && npx vercel@latest deploy --prod --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID`
   (o `vercel redeploy` del último despliegue de producción del proyecto `lunilla`).
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+Publicado el commit 8157185 en https://lunilla.cat: las páginas SEO nuevas responden y las interiores llevan canónica con el dominio (la portada no tiene etiqueta canónica). La columna `bloqueoHasta` ya está en la base de datos. **Aviso:** desde el 31/10 00:50Z la `STRIPE_SECRET_KEY` de producción es una clave real puesta a mano, pero `STRIPE_PRICE_*` y `STRIPE_WEBHOOK_SECRET` siguen siendo los del entorno de prueba: el cobro real no funcionará bien hasta crear precios y webhook en modo real o volver a la clave de prueba (decisión de Moisés). Pendiente también: pasos de Gelato con `GELATO_API_KEY` (ya está en Vercel) y Search Console.
+
+Ejecutado el 2026-10-31
