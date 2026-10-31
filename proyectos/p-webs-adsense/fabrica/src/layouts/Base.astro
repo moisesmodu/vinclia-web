@@ -11,6 +11,7 @@ import { icono } from '../lib/iconos';
 import { url, absoluta, buscar, fichasSitio } from '../lib/rutas';
 import { UI } from '../lib/ui';
 import familia from '../../familia.json';
+import { rutaPro } from '../lib/widget';
 // Tipografías de la familia Claro alojadas en el propio sitio (sin peticiones a Google): Manrope 700 e Inter 400/600
 import manrope700 from '@fontsource/manrope/files/manrope-latin-700-normal.woff2?url';
 import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
@@ -149,6 +150,7 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
           <h2>{u.calculadoras}</h2>
           <ul>
             {(sitio.categorias ?? []).map((c: any) => <li><a href={url(inicio.ruta) + '#cat-' + c.id}>{c.nombre[lang] ?? c.nombre.es}</a></li>)}
+            <li><a href={url(rutaPro(lang))}>{lang === 'ca' ? 'Per al teu web (professionals) →' : 'Para tu web (profesionales) →'}</a></li>
           </ul>
         </div>
         <div>
