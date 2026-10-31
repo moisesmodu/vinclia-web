@@ -21,9 +21,10 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const b = banco(oposicion);
   if (!b) return {};
   const o = b.oposicion;
+  const sufijo = o.seo?.sufijoTitulo?.[lang] ? ` (${o.seo.sufijoTitulo[lang]})` : '';
   const titulo = lang === 'ca'
-    ? `Test ${o.nombre.ca} gratis ${anio()}: ${b.resumen.total} preguntes`
-    : `Test ${o.nombre.es} gratis ${anio()}: ${b.resumen.total} preguntas`;
+    ? `Test ${o.nombre.ca} gratis ${anio()}${sufijo}: ${b.resumen.total} preguntes`
+    : `Test ${o.nombre.es} gratis ${anio()}${sufijo}: ${b.resumen.total} preguntas`;
   const desc = lang === 'ca'
     ? `Tests per tema i simulacres de ${o.nombreCorto.ca} amb el format de la ${o.convocatoria.referencia}. ${pais.gratisPorOposicion} preguntes gratis, explicació i article de la llei a cada resposta.`
     : `Tests por tema y simulacros de ${o.nombreCorto.es} con el formato de la ${o.convocatoria.referencia}. ${pais.gratisPorOposicion} preguntas gratis, explicación y artículo de la ley en cada respuesta.`;
@@ -55,6 +56,7 @@ export default async function PaginaOposicion({ params }: P) {
         ? `Les preguntes estan generades amb IA a partir del text legal de cada tema i verificades contra la font: cada resposta porta l'article i el fragment literal que la justifica.${b.resumen.examenOficial ? ` ${b.resumen.examenOficial} són d'exàmens oficials anteriors.` : ''}`
         : `Las preguntas están generadas con IA a partir del texto legal de cada tema y verificadas contra la fuente: cada respuesta lleva el artículo y el fragmento literal que la justifica.${b.resumen.examenOficial ? ` ${b.resumen.examenOficial} son de exámenes oficiales anteriores.` : ''}`,
     },
+    ...(o.faqExtra ?? []).map((f) => ({ q: f.q[lang], a: f.a[lang] })),
   ];
   const ld = {
     '@context': 'https://schema.org',
@@ -86,6 +88,15 @@ export default async function PaginaOposicion({ params }: P) {
       <p className="mt-2 text-sm text-slate-500">{d.gratisN(pais.gratisPorOposicion)} {d.sinTarjeta}.</p>
 
       <div className="mt-8"><Convocatoria o={o} idioma={lang} /></div>
+      {o.enlaceCatala ? (
+        <aside className="tarjeta mt-4 flex flex-wrap items-center justify-between gap-3 border-l-4 border-l-marca p-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{lang === 'ca' ? 'Nivell de català' : 'Nivel de catalán'}{o.enlaceCatala.nivel ? ` · ${o.enlaceCatala.nivel}` : ''}</p>
+            <p className="mt-1 text-sm text-slate-700">{o.enlaceCatala.texto?.[lang] ?? (lang === 'ca' ? 'Nivell de català que et demanen i com acreditar-lo' : 'Nivel de catalán que te piden y cómo acreditarlo')}</p>
+          </div>
+          <a href={o.enlaceCatala.url} target="_blank" rel="noopener" className="boton-sec min-h-9 px-3 py-1 text-xs">{lang === 'ca' ? 'Veure la guia' : 'Ver la guía'}</a>
+        </aside>
+      ) : null}
 
       <h2 className="mt-10 text-2xl font-bold">{d.temario}</h2>
       {bloques.map((bl) => (

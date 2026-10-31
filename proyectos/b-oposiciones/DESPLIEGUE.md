@@ -133,3 +133,23 @@ Ejecutado el 2026-10-28
 Publicado el commit 0a222b4 (monetizar primero). `scripts/stripe-preparar.mjs` ejecutado de nuevo: el webhook (`we_1UVNlD9ds25vHCsFcNP5oRpl`, en https://aprova-oposicions.vercel.app/api/stripe/webhook, que sirve la misma app) escucha ahora también `checkout.session.expired`; `STRIPE_WEBHOOK_SECRET` actualizado. `LEGAL_EMAIL=hola@numimates.com` (DESPLIEGUES.md §6).
 
 Ejecutado el 2026-10-28
+
+## Dominio propio y SEO (31/10/2026, sesión de marketing)
+
+- Dominio **oposita.digital** comprado y verificado en Vercel (www → apex). `config/marca.json` ya lo lleva como `dominio`
+  (es el valor de reserva de `urlBase()`), pero en Vercel sigue `NEXT_PUBLIC_URL=https://placa-oposicions.vercel.app`.
+  **Pendiente (sesión del Mac):** `printf 'https://oposita.digital' | vercel env add NEXT_PUBLIC_URL production --force
+  --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID` (igual en preview) y redesplegar (`vercel deploy --prod` desde la raíz del
+  repo con el proyecto `placa-oposicions`, Root Directory `proyectos/b-oposiciones`). Con eso la canónica, `hreflang`, el
+  sitemap y `robots.txt` pasan al dominio propio.
+- `placa-oposicions.vercel.app` y `aprova-oposicions.vercel.app` **no se redirigen**: el webhook de Stripe apunta a ellos y
+  Stripe no sigue redirecciones. La etiqueta canónica evita el contenido duplicado.
+- Search Console: cuando Moisés dé el valor `google-site-verification=…` (propiedad de tipo Dominio, TXT en los DNS de
+  Vercel) no hace falta tocar código; si prefiere la verificación por etiqueta, `GOOGLE_SITE_VERIFICATION=<token>` en
+  Vercel y redespliegue: el layout la emite solo si existe.
+- Vercel Web Analytics está activado en el proyecto y el código ya carga `@vercel/analytics` (sin cookies): las visitas
+  por `utm_campaign` se ven en Vercel → Analytics tras el redespliegue.
+- Nuevo en este commit: blog (`/ca/blog`, `/es/blog`, artículo `examen-mossos-2027`), FAQ extra y bloque «Nivell de
+  català» (enlace a Aprova) por oposición (campos `faqExtra`, `enlaceCatala` y `seo.sufijoTitulo` en `oposicion.json`;
+  requiere `npm run compilar`, ya ejecutado y versionado en `generado/`).
+

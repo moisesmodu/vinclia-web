@@ -6,9 +6,9 @@
   "colores": { "primario": "#3B3FD8", "oscuro": "#14142B", "fondo": "#F6F6FB", "acento": "#19B36B", "texto": "#14142B" },
   "tipografia": { "titulos": "Space Grotesk", "texto": "IBM Plex Sans" },
   "color": "#3B3FD8",
-  "dominio": "placa-oposicions.vercel.app",
-  "dominiosPropuestos": ["placa.cat", "treuplaca.cat"],
+  "dominio": "oposita.digital",
+  "dominiosPropuestos": ["oposita.digital", "placa.cat", "treuplaca.cat"],
   "pais": "es",
   "fuente": "marcas/tokens.json → proyectos.b-oposiciones y familias.examenes (MARCAS.md §4)",
-  "nota": "Dominio provisional gratuito (.vercel.app). Cambiar aquí y en NEXT_PUBLIC_URL cuando Moisés compre placa.cat o treuplaca.cat."
+  "nota": "Dominio propio oposita.digital (comprado el 31/10/2026, DNS en Vercel; www redirige al apex). La URL canónica sale de NEXT_PUBLIC_URL y, si falta, de este dominio. placa-oposicions.vercel.app y aprova-oposicions.vercel.app siguen sirviendo sin redirección porque el webhook de Stripe apunta a ellos."
 }

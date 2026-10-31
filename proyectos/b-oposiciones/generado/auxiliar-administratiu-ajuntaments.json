@@ -810,6 +810,10 @@
       }
     ],
     "seo": {
+      "sufijoTitulo": {
+        "ca": "Barcelona 128/2026",
+        "es": "Barcelona 128/2026"
+      },
       "palabrasClave": {
         "es": [
           "test auxiliar administrativo ayuntamiento cataluña",
@@ -839,6 +843,14 @@
           "oposicions auxiliar administratiu c2 catalunya",
           "preguntes test auxiliar administratiu"
         ]
+      }
+    },
+    "enlaceCatala": {
+      "url": "https://aprova-catala.vercel.app/ca/guia/catala-ajuntaments-oposicions-nivell?utm_source=placa&utm_medium=cruzada&utm_campaign=oposicion",
+      "nivel": "C1 (Barcelona 128/2026)",
+      "texto": {
+        "ca": "Nivell de català que et demanen i com acreditar-lo: guia d'Aprova",
+        "es": "Nivel de catalán que te piden y cómo acreditarlo: guía de Aprova"
       }
     }
   },
@@ -14020,7 +14032,7 @@
       "gratis": false
     }
   ],
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-10-31",
   "resumen": {
     "total": 330,
     "porTema": {

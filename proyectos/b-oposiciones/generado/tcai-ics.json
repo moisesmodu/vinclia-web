@@ -627,6 +627,14 @@
           "oposicions cures auxiliars infermeria"
         ]
       }
+    },
+    "enlaceCatala": {
+      "url": "https://aprova-catala.vercel.app/ca/guia/catala-ics-tcai-zelador-b1?utm_source=placa&utm_medium=cruzada&utm_campaign=oposicion",
+      "nivel": "B1",
+      "texto": {
+        "ca": "Nivell de català que et demanen i com acreditar-lo: guia d'Aprova",
+        "es": "Nivel de catalán que te piden y cómo acreditarlo: guía de Aprova"
+      }
     }
   },
   "preguntas": [
@@ -14439,7 +14447,7 @@
       "gratis": false
     }
   ],
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-10-31",
   "resumen": {
     "total": 352,
     "porTema": {

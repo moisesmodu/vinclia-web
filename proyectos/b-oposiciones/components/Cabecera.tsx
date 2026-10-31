@@ -16,6 +16,7 @@ export default function Cabecera({ idioma }: { idioma: Idioma }) {
         </Link>
         <nav className="ml-auto flex items-center gap-1 text-sm font-medium sm:gap-3">
           <Link href={`/${idioma}/convocatorias`} className="hidden rounded-lg px-2 py-2 text-slate-700 no-underline hover:text-marca sm:inline">{d.convocatorias}</Link>
+          <Link href={`/${idioma}/blog`} className="hidden rounded-lg px-2 py-2 text-slate-700 no-underline hover:text-marca sm:inline">Blog</Link>
           <Link href={`/${idioma}/precios`} className="rounded-lg px-2 py-2 text-slate-700 no-underline hover:text-marca">{d.precios}</Link>
           <EnlaceCuenta idioma={idioma} entrar={d.entrar} cuenta={d.cuenta} />
           <CambioIdioma idioma={idioma} />

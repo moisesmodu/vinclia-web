@@ -851,7 +851,37 @@
           "plantilla examen mossos 2026"
         ]
       }
-    }
+    },
+    "enlaceCatala": {
+      "url": "https://aprova-catala.vercel.app/ca/guia/catala-mossos-esquadra-prova-de-catala?utm_source=placa&utm_medium=cruzada&utm_campaign=oposicion",
+      "nivel": "C1 (o prova de català a la primera fase)",
+      "texto": {
+        "ca": "Nivell de català que et demanen i com acreditar-lo: guia d'Aprova",
+        "es": "Nivel de catalán que te piden y cómo acreditarlo: guía de Aprova"
+      }
+    },
+    "faqExtra": [
+      {
+        "q": {
+          "ca": "Com és el simulacre de Plaça per a Mossos?",
+          "es": "¿Cómo es el simulacro de Plaça para Mossos?"
+        },
+        "a": {
+          "ca": "Igual que la subprova de coneixements: 30 preguntes de quatre opcions en 35 minuts, amb penalització de −1/4 per error i les preguntes en blanc sense restar. La nota surt sobre 10 i el mínim de referència és un 4 (12 encerts nets). El simulacre es pot repetir tants cops com vulguis amb la subscripció; el primer és gratis.",
+          "es": "Igual que la subprueba de conocimientos: 30 preguntas de cuatro opciones en 35 minutos, con penalización de −1/4 por error y las preguntas en blanco sin restar. La nota sale sobre 10 y el mínimo de referencia es un 4 (12 aciertos netos). El simulacro se puede repetir tantas veces como quieras con la suscripción; el primero es gratis."
+        }
+      },
+      {
+        "q": {
+          "ca": "Quantes preguntes puc deixar en blanc i aprovar?",
+          "es": "¿Cuántas preguntas puedo dejar en blanco y aprobar?"
+        },
+        "a": {
+          "ca": "Depèn dels errors: amb 0 errors en calen 12 d'encertades (18 en blanc); amb 4 errors, 13 (13 en blanc); amb 8 errors, 14 (8 en blanc). Cada error costa l'equivalent a una pregunta i quart.",
+          "es": "Depende de los errores: con 0 errores necesitas 12 aciertos (18 en blanco); con 4 errores, 13 (13 en blanco); con 8 errores, 14 (8 en blanco). Cada error cuesta el equivalente a una pregunta y cuarto."
+        }
+      }
+    ]
   },
   "preguntas": [
     {
@@ -14443,7 +14473,7 @@
       "gratis": false
     }
   ],
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-10-31",
   "resumen": {
     "total": 346,
     "porTema": {

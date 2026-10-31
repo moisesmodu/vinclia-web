@@ -57,7 +57,11 @@ export type Oposicion = {
   examen: FormatoExamen;
   temas: Tema[];
   examenesAnteriores?: { anio: number; titulo: string; url?: string; plantilla?: string }[];
-  seo?: { palabrasClave?: Record<Idioma, string[]> };
+  seo?: { palabrasClave?: Record<Idioma, string[]>; sufijoTitulo?: Texto };
+  /** Preguntas frecuentes propias de la oposición (se suman a las generadas) y salen en el FAQPage. */
+  faqExtra?: { q: Texto; a: Texto }[];
+  /** Venta cruzada: guía del nivel de catalán que exige la oposición (Aprova). */
+  enlaceCatala?: { url: string; nivel?: string; texto?: Texto };
 };
 
 export type TextoPregunta = { enunciado: string; opciones: string[]; explicacion: string };

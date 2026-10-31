@@ -40,7 +40,7 @@ app/                 Next.js (App Router): páginas por idioma /ca y /es, API en
 components/          Practica.tsx (el motor de tests en el navegador), páginas y formularios
 lib/                 datos, i18n, auth (email + contraseña con scrypt), pagos (Stripe), progreso (FSRS)
 config/paises/es.json  moneda, IVA, planes y precios, textos legales, diarios oficiales (regla 8: varios países)
-config/marca.json    nombre y dominio
+config/marca.json    nombre y dominio (oposita.digital; la URL canónica sale de NEXT_PUBLIC_URL)
 oposiciones/<slug>/  oposicion.json (convocatoria, examen, temario y fuentes) · preguntas/tema-XX.json · revision/ · verificacion.json
 motor/               el motor (ver abajo)
 generado/            banco compilado que lee la app (lo escribe motor/compilar.mjs)
@@ -135,3 +135,12 @@ necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula p
   primera versión de Play irá en modo gratuito y la suscripción se contrata en la web.
 - **Varios países (regla 8):** precios, moneda, IVA, idiomas y textos legales en `config/paises/es.json`; oposiciones con
   campo `pais`. Segundo mercado previsto: concorsi pubblici (Italia) con el mismo motor, cuando España tenga datos.
+
+## Blog y venta cruzada (31/10/2026)
+
+- `contenido/blog/<slug>.json` + `lib/blog.ts`: artículos bilingües con `Article` y `FAQPage`; rutas `/[lang]/blog` y
+  `/[lang]/blog/[slug]`, en el sitemap. Primer artículo: cómo es el examen de Mossos 2027.
+- `oposiciones/<slug>/oposicion.json` admite `faqExtra` (preguntas propias), `enlaceCatala` (guía del nivel de catalán en
+  Aprova, con `utm_source=placa`) y `seo.sufijoTitulo` (por ejemplo «Barcelona 128/2026»). Tras editarlos, `npm run compilar`.
+- Dominio propio `oposita.digital` (ver DESPLIEGUE.md, «Dominio propio y SEO»).
+
