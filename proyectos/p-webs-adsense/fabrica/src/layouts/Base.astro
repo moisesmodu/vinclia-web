@@ -86,6 +86,8 @@ const hermanos = familia.sitios.filter((x) => x.id !== SITIO_ID && x.estado === 
   <link rel="preload" href={manrope700} as="font" type="font/woff2" crossorigin />
   <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin />
   {sitio.searchConsole.verificacion && <meta name="google-site-verification" content={sitio.searchConsole.verificacion} />}
+  {/* Verificación del sitio en AdSense: el script de anuncios se carga en diferido y el rastreador no lo ve en el HTML */}
+  {ads && <meta name="google-adsense-account" content={cliente} />}
   <style set:html={vars}></style>
   {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
   {ads && (
