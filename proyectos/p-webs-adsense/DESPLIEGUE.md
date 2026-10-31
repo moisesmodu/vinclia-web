@@ -227,7 +227,7 @@ curl -s https://netoclaro.app/ | grep -o '_vercel/insights[^"]*\|<link rel="cano
 
 Ejecutado el 2026-10-31
 
-## Productos de pago propios (rama `claude/p-productos-digitales`)
+## Productos de pago propios (ya en `claude/p-webs-adsense-fabrica`)
 
 Cuatro productos digitales que cobran desde la primera visita, sin backend (detalle en MONETIZACION.md):
 
@@ -242,7 +242,7 @@ Cuatro productos digitales que cobran desde la primera visita, sin backend (deta
    redirija a la página de descarga correcta:
    ```bash
    SITE_URL_NOMINA=https://netoclaro.app SITE_URL_IMPUESTOS=https://impuestoclaro.es \
-   SITE_URL_VIVIENDA=https://hogarclaro.es SITE_URL_EEUU=https://chequeclaro.com \
+   SITE_URL_VIVIENDA=https://hogarclaro.vercel.app SITE_URL_EEUU=https://cheque-claro.vercel.app \
    node scripts/stripe-productos.mjs --real
    ```
    (Sin `SITE_URL_<SITIO>` usa la URL de `familia.json`.) Imprime las cuatro `PAGO_…_URL=https://buy.stripe.com/…`.
@@ -253,3 +253,19 @@ Cuatro productos digitales que cobran desde la primera visita, sin backend (deta
 
 Si se cambia de dominio, basta volver a ejecutar el script con el `SITE_URL_<SITIO>` nuevo: actualiza la redirección
 del mismo enlace (no hay que cambiar la variable). Regenerar los archivos: `node scripts/productos/generar.mjs`.
+(Cuando se compren hogarclaro.es y chequeclaro.com, repetir con esos dominios.)
+
+## Widget para profesionales (suscripciones)
+
+1. **Modo real** (solo con el visto bueno de Moisés), desde `fabrica/`:
+   `NODE_USE_ENV_PROXY=1 node scripts/stripe-widget.mjs --real` → imprime `PAGO_WIDGET_PRO_MES_URL`,
+   `PAGO_WIDGET_PRO_ANIO_URL` y `PAGO_WIDGET_AGENCIA_URL`.
+2. En el panel de Stripe (modo real), activar el **portal de cliente** (Settings → Billing → Customer portal, con
+   cancelación permitida) y copiar su enlace en `PAGO_WIDGET_PORTAL_URL`.
+3. Pegar las cuatro variables en los cuatro proyectos de Vercel (Production) y redesplegar. Sin ellas, los planes
+   muestran «Pedir acceso» (correo a hola@numimates.com).
+4. Altas de marca blanca: `node scripts/widget-clave.mjs <cliente> <dominio>` → pegar la línea en
+   `widget-clientes.json` → `npm test` → redesplegar (README del widget).
+
+**La sesión de la nube intentó ejecutar los dos scripts en modo real el 31/10 y el sistema de permisos lo bloqueó
+(transacción real): hace falta el visto bueno de Moisés o que lo ejecute la sesión del Mac.**
