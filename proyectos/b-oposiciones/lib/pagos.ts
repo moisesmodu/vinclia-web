@@ -23,6 +23,15 @@ export const modoPago = (): 'stripe' | 'demo' | 'off' =>
 
 export const esModoPrueba = () => !/^(sk|rk)_live_/.test(claveStripe() ?? '');
 
+/** 'test' o 'live' según la clave en uso. Los ids de Stripe (clientes, precios, portal) no se comparten entre modos. */
+export const modoStripe = (): 'test' | 'live' => (esModoPrueba() ? 'test' : 'live');
+
+/** Error de Stripe por falta de permisos (clave restringida sin el permiso necesario). */
+function esErrorDePermisos(e: unknown): boolean {
+  const x = e as { type?: string; statusCode?: number } | null;
+  return x?.type === 'StripePermissionError' || x?.statusCode === 403;
+}
+
 let _stripe: Stripe | null = null;
 export function stripe(): Stripe {
   const clave = claveStripe();
@@ -57,7 +66,9 @@ export async function precioStripe(p: Plan): Promise<string> {
   const env = process.env[`STRIPE_PRICE_${p.id.toUpperCase()}`];
   if (env) return env;
   const lookup = lookupPrecio(p);
-  const guardado = await ajuste(`precio:${lookup}`);
+  // Por modo: un precio de prueba no existe en modo real (y viceversa).
+  const claveAjuste = `precio_${modoStripe()}:${lookup}`;
+  const guardado = await ajuste(claveAjuste);
   if (guardado) return guardado;
   const s = stripe();
   const existentes = await s.prices.list({ lookup_keys: [lookup], active: true, limit: 1 });
@@ -83,13 +94,26 @@ export async function precioStripe(p: Plan): Promise<string> {
       })
     ).id;
   }
-  await guardarAjuste(`precio:${lookup}`, id);
+  await guardarAjuste(claveAjuste, id);
   return id;
 }
 
+/**
+ * Id del cliente de Stripe del usuario. El id guardado solo se reutiliza si existe (y no está borrado) en el modo
+ * actual: al pasar de prueba a real, el cliente de prueba no existe en real y se crea uno nuevo.
+ */
 export async function clienteStripe(u: Usuario): Promise<string> {
-  if (u.stripeCustomerId) return u.stripeCustomerId;
-  const c = await stripe().customers.create({ email: u.email, metadata: { usuarioId: u.id, proyecto: 'b-oposiciones' }, preferred_locales: ['es'] });
+  const s = stripe();
+  if (u.stripeCustomerId) {
+    try {
+      const c = await s.customers.retrieve(u.stripeCustomerId);
+      if (!c.deleted) return c.id;
+    } catch (e) {
+      const x = e as { code?: string; statusCode?: number } | null;
+      if (x?.code !== 'resource_missing' && x?.statusCode !== 404) throw e;
+    }
+  }
+  const c = await s.customers.create({ email: u.email, metadata: { usuarioId: u.id, proyecto: 'b-oposiciones' }, preferred_locales: ['es'] });
   await db.usuario.update({ where: { id: u.id }, data: { stripeCustomerId: c.id } });
   return c.id;
 }
@@ -133,26 +157,47 @@ export async function sincronizarSiHaceFalta(u: Usuario): Promise<Usuario> {
   }
 }
 
-/** Portal de cliente de Stripe (facturas y tarjeta). Crea la configuración si la cuenta no tiene ninguna. */
+/** El portal de cliente no se puede abrir (normalmente, la clave restringida no tiene permiso de "Customer portal"). */
+export class PortalNoDisponible extends Error {
+  constructor(causa?: unknown) {
+    super('El portal de cliente de Stripe no está disponible: la clave de Stripe no tiene permiso para configurarlo o abrirlo.');
+    this.name = 'PortalNoDisponible';
+    if (causa) (this as { cause?: unknown }).cause = causa;
+  }
+}
+
+/**
+ * Portal de cliente de Stripe (facturas y tarjeta). Crea la configuración si la cuenta no tiene ninguna.
+ * La configuración se guarda por modo (portal_test / portal_live). Lanza PortalNoDisponible si faltan permisos.
+ */
 export async function urlPortal(u: Usuario, volver: string): Promise<string> {
   const s = stripe();
-  let configuration = await ajuste('portal');
-  if (!configuration) {
-    const lista = await s.billingPortal.configurations.list({ is_default: true, limit: 1 });
-    configuration =
-      lista.data[0]?.id ??
-      (
-        await s.billingPortal.configurations.create({
-          business_profile: { headline: `${marca.nombre}: subscripció` },
-          features: {
-            invoice_history: { enabled: true },
-            payment_method_update: { enabled: true },
-            subscription_cancel: { enabled: true, mode: 'at_period_end' },
-          },
-        })
-      ).id;
-    await guardarAjuste('portal', configuration);
+  const claveAjuste = `portal_${modoStripe()}`;
+  try {
+    let configuration = await ajuste(claveAjuste);
+    if (!configuration) {
+      const lista = await s.billingPortal.configurations.list({ is_default: true, limit: 1 });
+      configuration =
+        lista.data[0]?.id ??
+        (
+          await s.billingPortal.configurations.create({
+            business_profile: { headline: `${marca.nombre}: subscripció` },
+            features: {
+              invoice_history: { enabled: true },
+              payment_method_update: { enabled: true },
+              subscription_cancel: { enabled: true, mode: 'at_period_end' },
+            },
+          })
+        ).id;
+      await guardarAjuste(claveAjuste, configuration);
+    }
+    const ses = await s.billingPortal.sessions.create({ customer: await clienteStripe(u), return_url: volver, configuration });
+    return ses.url;
+  } catch (e) {
+    if (esErrorDePermisos(e)) {
+      console.error('[pagos] portal de cliente sin permisos en Stripe', (e as Error)?.message);
+      throw new PortalNoDisponible(e);
+    }
+    throw e;
   }
-  const ses = await s.billingPortal.sessions.create({ customer: await clienteStripe(u), return_url: volver, configuration });
-  return ses.url;
 }
