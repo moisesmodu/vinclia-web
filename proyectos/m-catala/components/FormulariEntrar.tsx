@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { Idioma } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
-import { llegirEstat } from '@/lib/estat';
+import { llegirEstat, reiniciarSync } from '@/lib/estat';
 
 export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
   const d = t(idioma).login;
@@ -18,12 +18,12 @@ export default function FormulariEntrar({ idioma }: { idioma: Idioma }) {
     e.preventDefault(); setErr(''); setOk(''); setCarregant(true);
     try {
       if (mode === 'recuperar') { await fetch('/api/auth/recuperar', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, idioma }) }); setOk(d.enviat); setCarregant(false); return; }
-      if (mode === 'nova') { const r = await fetch('/api/auth/nova-clau', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ token, clau }) }); if (!r.ok) { setErr(t(idioma).comu.error); setCarregant(false); return; } router.push(seguent); return; }
+      if (mode === 'nova') { const r = await fetch('/api/auth/nova-clau', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ token, clau }) }); if (!r.ok) { setErr(t(idioma).comu.error); setCarregant(false); return; } reiniciarSync(); router.push(seguent); return; }
       const perfil = llegirEstat().perfil;
       const r = await fetch(`/api/auth/${mode === 'crear' ? 'registre' : 'entrar'}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, clau, idioma, accepto, nivell: perfil?.nivell, convocatoria: perfil?.convocatoria }) });
       const j = await r.json();
-      if (!r.ok) { setErr(j.error === 'existeix' ? d.existe : j.error === 'curta' ? d.corta : j.error === 'accepto' ? d.acepto : d.error); setCarregant(false); return; }
-      router.push(seguent); router.refresh();
+      if (!r.ok) { setErr(j.error === 'existeix' ? d.existe : j.error === 'curta' ? d.corta : j.error === 'accepto' ? d.acepto : r.status === 429 ? (idioma === 'ca' ? 'Massa intents. Espera uns minuts.' : 'Demasiados intentos. Espera unos minutos.') : d.error); setCarregant(false); return; }
+      reiniciarSync(); router.push(seguent); router.refresh();
     } catch { setErr(t(idioma).comu.error); setCarregant(false); }
   };
   return (

@@ -25,6 +25,24 @@ como orientativos), `GOOGLE_TTS_API_KEY` o `AZURE_TTS_KEY`+`AZURE_TTS_REGION` co
 navegador), `WHISPER_URL` (+`WHISPER_API_KEY`) si se despliega el Whisper catalán de AINA (hoy reconocimiento del navegador),
 `ELEVENLABS_API_KEY` solo para la demo de la landing.
 
+## Variables nuevas tras la auditoría de seguridad (30/10/2026)
+| Variable | Obligatoria | Para qué |
+|---|---|---|
+| `AUTH_SECRET` | **Sí, en producción** (32+ caracteres aleatorios: `openssl rand -hex 32`). La app lanza un error al arrancar si falta. | Firma de la cookie de sesión, de la cookie anónima `aprova_anon`, de los enlaces de recuperación y de baja de alertas. Cambiarla cierra todas las sesiones. |
+| `VALIDESA_CODIS` | No (sin ella se aceptan `V01`–`V20`) | Lista separada por comas de los códigos de candidato válidos en `/api/validesa` (una por tanda). |
+| `VALIDESA_CLAU` | Para la prueba de validez | Clave que el profesor escribe en el formulario para enviar sus notas; también autoriza `DELETE /api/validesa` (borrado de textos). Sin ella no se aceptan notas de profesor. |
+| `LEGAL_NIF` | **Antes de `STRIPE_MODO=real`** | NIF del titular en aviso legal y privacidad; si falta se muestra «(pendent)», que incumple el art. 10 LSSI mientras se cobre. |
+| `PAGO_DEMO_PERMES` | No (solo pruebas) | En producción, `PAGO_DEMO=1` solo activa el modo demo (premium sin cobrar) si además `PAGO_DEMO_PERMES=1`. Fuera de producción el modo demo sigue activo sin claves de Stripe. |
+
+Esquema de base de datos: la auditoría añadió las tablas `Limit` (límite de peticiones compartido entre instancias) y `Pagament` (idempotencia de
+Checkout y del webhook) y los campos `Usuari.sessioVersio`, `Us.diagnostics`, `Us.correccionsSim` y `Validesa.esborrarEl`. El build de Vercel
+ejecuta `prisma db push` (`scripts/db-preparar.mjs`) y los crea solos; no hay que hacer nada a mano. Al desplegar, las sesiones abiertas caducan
+(el token de sesión cambia de formato): los usuarios vuelven a entrar una vez.
+
+Webhook de Stripe: además de `checkout.session.completed` y `customer.subscription.*`, suscribir `charge.refunded` y `charge.dispute.created`
+(revocan el premium). Enlace de baja de alertas: `enllacBaixa(urlBase(), email)` de `lib/auth.ts` → `/api/alerta/baixa?e=…&t=…`; la tarea
+semanal debe incluirlo en cada correo de alerta.
+
 ## Comandos (repetibles)
 ```bash
 # desde la raíz del repositorio, rama con proyectos/m-catala

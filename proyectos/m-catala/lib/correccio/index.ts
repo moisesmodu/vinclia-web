@@ -6,14 +6,18 @@ import { avaluarCriteris, hiHaLLM, type AvaluacioCriteris, type Criteri } from '
 
 /** Correcció escrita per criteris en menys de 60 segons: (1) regles pròpies, (2) LanguageTool amb les regles de Softcatalà per al que és
  *  segur, (3) model de llenguatge per a adequació, coherència i riquesa i per als errors prioritaris; quan dubta, «possible error».
- *  Sense model, els criteris 1, 2 i 4 s'estimen amb heurístiques i es marquen com a orientatius. */
+ *  Només compten com a errors (i baixen la nota de correcció) els `segur`: les regles pròpies amb `segur: false` i els avisos insegurs de
+ *  LanguageTool van a `possibles`. Sense model, els criteris 1, 2 i 4 s'estimen amb heurístiques i es marquen com a orientatius; si
+ *  LanguageTool ha fallat o no respon (`fiable: false`), la nota de correcció també és orientativa (només hi ha ≈ 80 regles pròpies). */
 export type ResultatCorreccio = {
   paraules: number; motor: 'regles' | 'lt' | 'lt+llm' | 'llm';
-  errors: ErrorText[]; possibles: { fragment: string; dubte: string; offset?: number }[];
+  errors: ErrorText[]; possibles: { fragment: string; dubte: string; offset?: number; forma?: string; regla?: string; origen?: ErrorText['origen'] }[];
   criteris: Record<Criteri, { nota: number; comentari: string; orientativa: boolean }>;
   prioritaris: { fragment: string; forma: string; explicacio: string; regla?: string }[];
   nota: { punts: number; max: number; percent: number }; resum: string; reescriptura?: string;
   ms: number; tokensIn: number; tokensOut: number; ltOk: boolean;
+  /** false si LanguageTool ha fallat o no està disponible: la detecció d'errors segurs és parcial i la nota de correcció, orientativa. */
+  fiable: boolean;
 };
 
 const CONNECTORS = ['tanmateix', 'no obstant', 'per tant', 'a més', 'd\'una banda', 'd\'altra banda', 'en primer lloc', 'en segon lloc', 'finalment', 'per acabar', 'en conclusió', 'ja que', 'atès que', 'perquè', 'malgrat', 'tot i', 'en canvi', 'és a dir', 'per exemple', 'així doncs', 'en definitiva', 'quant a', 'pel que fa', 'd\'acord amb', 'amb tot', 'així mateix', 'mentre que', 'en resum'];
@@ -68,22 +72,27 @@ export async function corregir(nivell: Nivell, text: string, tasca: Tasca | null
   const inici = Date.now();
   const paraules = text.trim().split(/\s+/).filter(Boolean).length;
   const propis = detectar(text);
-  const [lt, llm0] = await Promise.all([comprovarLT(text), Promise.resolve(null as AvaluacioCriteris | null)]);
-  let errors = fusionar(propis, lt.errors.filter((e) => e.segur));
-  const possibles: ResultatCorreccio['possibles'] = lt.errors.filter((e) => !e.segur).map((e) => ({ fragment: e.fragment, dubte: e.missatge.ca, offset: e.offset }));
-  let llm: AvaluacioCriteris | null = llm0;
+  const lt = await comprovarLT(text);
+  const fiable = lt.ok;
+  let errors = fusionar(propis.filter((e) => e.segur), lt.errors.filter((e) => e.segur));
+  const aPossible = (e: ErrorText) => ({ fragment: e.fragment, dubte: idiomaExpl === 'es' ? e.missatge.es : e.missatge.ca, offset: e.offset, forma: e.forma, regla: e.regla, origen: e.origen });
+  const possibles: ResultatCorreccio['possibles'] = [...propis.filter((e) => !e.segur), ...lt.errors.filter((e) => !e.segur)]
+    .filter((e) => !errors.some((x) => e.offset < x.offset + x.length && x.offset < e.offset + e.length))
+    .sort((a, b) => a.offset - b.offset).map(aPossible);
+  let llm: AvaluacioCriteris | null = null;
   if (hiHaLLM()) llm = await avaluarCriteris(nivell, tasca, text, errors, idiomaExpl, Math.max(5000, 50000 - (Date.now() - inici)));
   const h = heuristiques(text, tasca, errors.length);
   const criteris = {} as ResultatCorreccio['criteris'];
   for (const k of ['adequacio', 'coherencia', 'correccio', 'riquesa'] as Criteri[]) {
     if (llm) criteris[k] = { ...llm.criteris[k], orientativa: false };
-    else criteris[k] = { ...h[k], orientativa: k !== 'correccio' };
+    else criteris[k] = { ...h[k], orientativa: k !== 'correccio' || !fiable };
   }
   // Correcció: si hi ha LLM, combina la seva nota amb la densitat d'errors segurs (el que és comprovable mana a mitges).
-  if (llm) criteris.correccio = { nota: Math.round((llm.criteris.correccio.nota + h.correccio.nota) / 2), comentari: llm.criteris.correccio.comentari, orientativa: false };
+  // Sense LanguageTool la densitat d'errors segurs és parcial: la nota de correcció queda marcada com a orientativa.
+  if (llm) criteris.correccio = { nota: Math.round((llm.criteris.correccio.nota + h.correccio.nota) / 2), comentari: llm.criteris.correccio.comentari, orientativa: !fiable };
   for (const p of llm?.possibles ?? []) if (!possibles.some((x) => x.fragment === p.fragment)) possibles.push({ fragment: p.fragment, dubte: p.dubte, offset: text.indexOf(p.fragment) >= 0 ? text.indexOf(p.fragment) : undefined });
   const prioritaris = (llm?.errorsPrioritaris?.length ? llm.errorsPrioritaris : errors.slice(0, 3).map((e) => ({ fragment: e.fragment, forma: e.forma, explicacio: idiomaExpl === 'es' ? e.missatge.es : e.missatge.ca, regla: e.regla }))).slice(0, 3);
   errors = errors.slice(0, 60);
   const motor: ResultatCorreccio['motor'] = llm ? (lt.ok ? 'lt+llm' : 'llm') : lt.ok ? 'lt' : 'regles';
-  return { paraules, motor, errors, possibles: possibles.slice(0, 8), criteris, prioritaris, nota: notaExamen(nivell, criteris), resum: llm?.resum ?? '', reescriptura: llm?.reescriptura, ms: Date.now() - inici, tokensIn: llm?.tokensIn ?? 0, tokensOut: llm?.tokensOut ?? 0, ltOk: lt.ok };
+  return { paraules, motor, errors, possibles: possibles.slice(0, 8), criteris, prioritaris, nota: notaExamen(nivell, criteris), resum: llm?.resum ?? '', reescriptura: llm?.reescriptura, ms: Date.now() - inici, tokensIn: llm?.tokensIn ?? 0, tokensOut: llm?.tokensOut ?? 0, ltOk: lt.ok, fiable };
 }

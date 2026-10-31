@@ -88,7 +88,7 @@ export default function ItemVista({ item, regles, idioma, idiomaExpl, onResultat
         <button type="button" className="boton mt-5 w-full" onClick={comprovar} disabled={resposta === null || resposta === ''}>{d.comprovar}</button>
       ) : retroaccio ? (
         <div className="mt-5" aria-live="polite">
-          <p className={`text-[17px] font-semibold ${aval.correcte ? 'text-apte' : 'text-vermell'}`}>{aval.correcte ? d.correcte : d.incorrecte}{aval.quasi ? ' · accents' : ''}{aval.precisio !== undefined ? ` · ${Math.round(aval.precisio * 100)} %` : ''}</p>
+          <p className={`text-[17px] font-semibold ${aval.correcte ? 'text-apte' : 'text-vermell'}`}>{aval.correcte ? d.correcte : d.incorrecte}{aval.quasi ? ` · ${t(idioma).nou.nomesAccents}` : ''}{aval.precisio !== undefined ? ` · ${Math.round(aval.precisio * 100)} %` : ''}</p>
           {!aval.correcte || item.tipus === 'dictat' ? (
             <div className="mt-1 text-[16px]">
               {item.tipus === 'dictat' && aval.detall ? <p className="leading-relaxed">{aval.detall.map((w, i) => <span key={i} className={w.ok ? '' : 'rounded bg-vermell-tenue px-0.5 font-semibold text-vermell'}>{w.paraula} </span>)}</p>

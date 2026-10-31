@@ -15,14 +15,19 @@ import Editor, { Temporitzador } from './Editor';
 import ResultatDiag from './ResultatDiag';
 import Segments from './ui/Segments';
 
-type Props = { idioma: Idioma; sim: Sim; examen: Examen; items: Item[]; textos: Record<string, TextCL>; tasques: Record<string, Tasca>; regles: Record<string, Regla>; punts: Punt[]; sons: So[]; convocatories: Convocatoria[] };
+type Props = { idioma: Idioma; sim: Sim; examen: Examen; regles: Record<string, Regla>; punts: Punt[]; sons: So[]; convocatories: Convocatoria[] };
 type Fase = 'intro' | Area | 'resultat';
+type Contingut = { items: Item[]; textos: Record<string, TextCL>; tasques: Record<string, Tasca> };
 
-/** Simulacre escrit complet amb l'estructura oficial: àrees en l'ordre de l'examen, rellotge real per àrea, mínims i apte o no apte, cohort. */
-export default function Simulacre({ idioma, sim, examen, items, textos, tasques, regles, punts, sons, convocatories }: Props) {
+/** Simulacre escrit complet amb l'estructura oficial: àrees en l'ordre de l'examen, rellotge real per àrea, mínims i apte o no apte, cohort.
+ *  Els ítems (amb resposta) no van a l'HTML: es demanen a /api/banc?simulacre= en prémer «Començar», després de l'inici autoritzat. */
+export default function Simulacre({ idioma, sim, examen, regles, punts, sons, convocatories }: Props) {
   const d = t(idioma).simulacre;
   const [estat, actualitzar] = useEstat();
   const arees = useMemo(() => examen.arees.filter((a) => a.part === 'escrita' && (sim.arees as Record<string, unknown>)[a.id]), [examen, sim]);
+  const [contingut, setContingut] = useState<Contingut>({ items: [], textos: {}, tasques: {} });
+  const [carregant, setCarregant] = useState(false);
+  const { items, textos, tasques } = contingut;
   const [fase, setFase] = useState<Fase>('intro');
   const [idx, setIdx] = useState(0);
   const [encerts, setEncerts] = useState<Record<string, { ok: number; total: number }>>({});
@@ -39,12 +44,23 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
   const [pIdx, setPIdx] = useState(0);
   const [escoltes, setEscoltes] = useState<Record<string, number>>({});
 
+  const nItemsUs = (sim.arees.us?.items ?? []).length;
+  const nTasques = [sim.arees.escrit?.tasca, ...(sim.arees.escrit?.tasques ?? [])].filter(Boolean).length;
   const area = fase !== 'intro' && fase !== 'resultat' ? arees[idx] : null;
   const seguentArea = () => { setPIdx(0); if (idx + 1 < arees.length) { setIdx(idx + 1); setFase(arees[idx + 1].id); } else acabar(); };
 
   const comencar = async () => {
-    setErr('');
-    try { const r = await fetch('/api/simulacre', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ inici: true, nivell: sim.nivell, nota: 0 }) }); if (r.status === 402) { setErr(d.quotaEsgotada); return; } } catch {}
+    setErr(''); setCarregant(true);
+    try {
+      const r = await fetch('/api/simulacre', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ inici: true, nivell: sim.nivell, nota: 0 }) });
+      if (r.status === 402) { setErr(d.quotaEsgotada); setCarregant(false); return; }
+      const b = await fetch(`/api/banc?simulacre=${encodeURIComponent(sim.id)}`);
+      if (!b.ok) { setErr(b.status === 402 || b.status === 403 ? d.quotaEsgotada : t(idioma).comu.error); setCarregant(false); return; }
+      const j = (await b.json()) as Contingut;
+      if (!j.items?.length) { setErr(t(idioma).comu.error); setCarregant(false); return; }
+      setContingut({ items: j.items, textos: j.textos ?? {}, tasques: j.tasques ?? {} });
+    } catch { setErr(t(idioma).comu.error); setCarregant(false); return; }
+    setCarregant(false);
     actualitzar((e) => ({ ...e, quotes: { ...e.quotes, simulacres: e.quotes.simulacres + 1 } }));
     setIdx(0); setFase(arees[0].id);
   };
@@ -78,11 +94,11 @@ export default function Simulacre({ idioma, sim, examen, items, textos, tasques,
       <p className="text-[15px] text-secundari">{sim.nivell} · {examen.nom[idioma].replace(/^\w\d · /, '')}</p>
       <h1 className="mt-1">{sim.nom}</h1>
       <p className="mt-3 max-w-[48ch] text-[16px] leading-relaxed text-secundari">{d.text}</p>
-      <ol className="mt-6 divide-y divide-linia border-y border-linia">{arees.map((a, i) => <li key={a.id} className="grid grid-cols-[28px_1fr_auto] items-baseline gap-3 py-3"><span className="num text-[18px] text-boli">{i + 1}</span><span className="min-w-0">{a.nom[idioma]}<span className="block text-[13px] text-terciari">{a.pes} % · {a.id === 'us' ? `${itemsUs.length} ítems` : a.id === 'escrit' ? `${tasquesEscrit.length} ${idioma === 'ca' ? 'tasca' : 'tarea'}${tasquesEscrit.length > 1 ? 's' : ''}` : `${textosArea(a.id as 'co' | 'lectura').length} ${idioma === 'ca' ? 'textos' : 'textos'}`}</span></span><span className="num text-[17px]">{a.minuts}<span className="text-[13px] font-normal text-terciari"> min</span></span></li>)}</ol>
+      <ol className="mt-6 divide-y divide-linia border-y border-linia">{arees.map((a, i) => <li key={a.id} className="grid grid-cols-[28px_1fr_auto] items-baseline gap-3 py-3"><span className="num text-[18px] text-boli">{i + 1}</span><span className="min-w-0">{a.nom[idioma]}<span className="block text-[13px] text-terciari">{a.pes} % · {a.id === 'us' ? `${nItemsUs} ítems` : a.id === 'escrit' ? `${nTasques} ${idioma === 'ca' ? 'tasca' : 'tarea'}${nTasques > 1 ? 's' : ''}` : `${(sim.arees[a.id as 'co' | 'lectura']?.textos ?? []).length} ${idioma === 'ca' ? 'textos' : 'textos'}`}</span></span><span className="num text-[17px]">{a.minuts}<span className="text-[13px] font-normal text-terciari"> min</span></span></li>)}</ol>
       <p className="mt-3 text-[13px] text-terciari">{d.oralNota}</p>
-      {!(sim as { complet?: boolean }).complet && itemsUs.length < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-[6px] bg-boli-tenue p-3 text-[14px]">{d.incomplet}</p> : null}
+      {!(sim as { complet?: boolean }).complet && nItemsUs < (examen.arees.find((a) => a.id === 'us')?.items ?? 0) ? <p className="mt-2 rounded-[6px] bg-boli-tenue p-3 text-[14px]">{d.incomplet}</p> : null}
       {err ? <p className="mt-3 rounded-[6px] bg-boli-tenue p-3 text-[15px]" role="alert">{err} <Link className="underline" href={`/${idioma}/preus`}>{t(idioma).avui.veurePreus}</Link></p> : null}
-      <button type="button" className="boton-primari mt-6 w-full text-[18px]" onClick={comencar} disabled={!itemsUs.length}>{d.comencar}</button>
+      <button type="button" className="boton-primari mt-6 w-full text-[18px]" onClick={comencar} disabled={!nItemsUs || carregant}>{carregant ? t(idioma).comu.carregant : d.comencar}</button>
     </div>
   );
 

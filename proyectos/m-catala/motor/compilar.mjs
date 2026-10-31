@@ -31,12 +31,15 @@ function montarSimulacre(nivell, n, usados) {
     const elegidos = (pool.length >= rep[tipus] ? pool : poolTodo).slice(0, rep[tipus]);
     for (const e of elegidos) { us.push(e.id); usados.add(e.id); }
   }
+  // Tareas escritas sin reemplazo: una sola barajada por nivel y tipo (semilla fija por nivel) y el simulacro n toma la posición n−1,
+  // así los tres simulacros de un nivel llevan redacciones distintas mientras haya tareas suficientes (antes se rebarajaba con la
+  // semilla del simulacro y los tres de C1 compartían c1-escrit-0003).
   const tareas = Object.values(tasques).filter((t) => t.nivell === nivell);
-  const porTipo = (tp) => barajar(tareas.filter((t) => t.tipus === tp), r);
+  const porTipo = (tp) => { const l = barajar(tareas.filter((t) => t.tipus === tp).sort((x, y) => x.id.localeCompare(y.id)), rng(`${nivell}-tasques-${tp}`)); return l[(n - 1) % Math.max(1, l.length)]?.id; };
   let escrit;
-  if (nivell === 'C1') escrit = { tasca: porTipo('argumentatiu-3-fonts')[(n - 1) % Math.max(1, porTipo('argumentatiu-3-fonts').length)]?.id };
-  else if (nivell === 'B2') escrit = { tasques: [porTipo('text-informatiu')[(n - 1) % Math.max(1, porTipo('text-informatiu').length)]?.id, porTipo('correu')[(n - 1) % Math.max(1, porTipo('correu').length)]?.id].filter(Boolean) };
-  else escrit = { tasca: porTipo('correu')[(n - 1) % Math.max(1, porTipo('correu').length)]?.id };
+  if (nivell === 'C1') escrit = { tasca: porTipo('argumentatiu-3-fonts') };
+  else if (nivell === 'B2') escrit = { tasques: [porTipo('text-informatiu'), porTipo('correu')].filter(Boolean) };
+  else escrit = { tasca: porTipo('correu') };
   const arees = { us: { items: us }, escrit };
   if (nivell !== 'C1') {
     const tx = (area, k) => barajar(Object.values(textos).filter((t) => t.nivell === nivell && t.area === area), rng(`${nivell}-${n}-${area}`)).slice(0, k).map((t) => t.id);

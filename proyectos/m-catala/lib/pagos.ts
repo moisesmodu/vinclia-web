@@ -20,8 +20,10 @@ export function claveStripe(): string | undefined {
   return process.env.STRIPE_TEST_SECRET_KEY || (sk?.match(/^(sk|rk)_test_/) ? sk : undefined);
 }
 
-export const modoPago = (): 'stripe' | 'demo' | 'off' =>
-  claveStripe() ? 'stripe' : process.env.NODE_ENV !== 'production' || process.env.PAGO_DEMO === '1' ? 'demo' : 'off';
+/** Modo demo (premium sin cobrar): siempre fuera de producción; en producción solo con PAGO_DEMO=1 **y** PAGO_DEMO_PERMES=1 (doble llave
+ *  para que una variable heredada de las pruebas no regale premium). */
+const demoPermes = () => process.env.NODE_ENV !== 'production' || (process.env.PAGO_DEMO === '1' && process.env.PAGO_DEMO_PERMES === '1');
+export const modoPago = (): 'stripe' | 'demo' | 'off' => (claveStripe() ? 'stripe' : demoPermes() ? 'demo' : 'off');
 
 export const esModoPrueba = () => !/^(sk|rk)_live_/.test(claveStripe() ?? '');
 
@@ -33,7 +35,7 @@ export function stripe(): Stripe {
     const host = process.env.STRIPE_API_HOST;
     // Detrás del proxy de las sesiones en la nube (HTTPS_PROXY + NODE_USE_ENV_PROXY=1) el cliente fetch respeta el proxy; en Vercel no hace falta.
     const viaProxy = !host && process.env.HTTPS_PROXY && process.env.NODE_USE_ENV_PROXY ? { httpClient: Stripe.createFetchHttpClient() } : {};
-    _stripe = new Stripe(clave, host ? { host, port: Number(process.env.STRIPE_API_PORT || 12111), protocol: 'http' } : viaProxy);
+    _stripe = new Stripe(clave, { timeout: 20_000, maxNetworkRetries: 1, ...(host ? { host, port: Number(process.env.STRIPE_API_PORT || 12111), protocol: 'http' as const } : viaProxy) });
   }
   return _stripe;
 }
@@ -102,14 +104,41 @@ export async function guardarSubscripcio(sub: Stripe.Subscription, usuariId?: st
   });
 }
 
-/** Pase de convocatoria (pago único): acceso premium durante p.dies días. */
-export async function activarPassi(usuariId: string, p: Plan, customer?: string | null) {
+/** Pase de convocatoria (pago único): acceso premium durante p.dies días contados desde el pago (`desde` = ses.created), no desde hoy.
+ *  Si el usuario ya tenía acceso vigente, el pase se suma: fins = max(fins actual, desde + dies). Idempotente por construcción. */
+export async function activarPassi(usuariId: string, p: Plan, customer?: string | null, desde: Date = new Date()) {
   const dies = (p as { dies?: number }).dies ?? 92;
+  const u = await db.usuari.findUnique({ where: { id: usuariId } });
+  if (!u) return null;
+  const nou = new Date(desde.getTime() + dies * 864e5);
+  const actual = u.subscripcioFins && ['passi', 'active', 'trialing', 'demo', 'canceled'].includes(u.subscripcioEstat ?? '') && u.subscripcioFins.getTime() > Date.now() ? u.subscripcioFins : null;
+  const fins = actual && actual.getTime() > nou.getTime() ? actual : nou;
   return db.usuari.update({
     where: { id: usuariId },
-    data: { subscripcioEstat: 'passi', subscripcioFins: new Date(Date.now() + dies * 864e5), subscripcioId: null, pla: p.id, cancelaAlFinal: false, sincronitzat: new Date(), ...(customer ? { stripeCustomerId: customer } : {}) },
+    data: { subscripcioEstat: 'passi', subscripcioFins: fins, subscripcioId: null, pla: p.id, cancelaAlFinal: false, sincronitzat: new Date(), ...(customer ? { stripeCustomerId: customer } : {}) },
   });
 }
+
+/** Registra un pago/evento de Stripe como procesado. Devuelve false si ya se había procesado (id único): el llamador no debe repetir el efecto. */
+export async function registrarPagament(id: string, tipus: string, usuariId?: string | null): Promise<boolean> {
+  try {
+    await db.pagament.create({ data: { id, tipus, usuariId: usuariId ?? null } });
+    return true;
+  } catch (e) {
+    if ((e as { code?: string }).code === 'P2002') return false;
+    throw e;
+  }
+}
+
+/** Revoca el acceso premium (reembolso, disputa, suscripción eliminada). Busca por usuario o por cliente de Stripe. */
+export async function revocarPremium(ref: { usuariId?: string | null; customer?: string | null }, motiu: string) {
+  const u = ref.usuariId ? await db.usuari.findUnique({ where: { id: ref.usuariId } }) : ref.customer ? await db.usuari.findFirst({ where: { stripeCustomerId: ref.customer } }) : null;
+  if (!u) return null;
+  return db.usuari.update({ where: { id: u.id }, data: { subscripcioEstat: motiu, subscripcioFins: new Date(), cancelaAlFinal: false, sincronitzat: new Date() } });
+}
+
+/** Un evento de Stripe en modo prueba no debe tocar cuentas de producción ni al revés. */
+export const livemodeCoherent = (livemode: boolean) => livemode === !esModoPrueba();
 
 /** Sin webhook configurado, la app se mantiene al día preguntando a Stripe cada 12 horas como mucho. */
 export async function sincronitzarSiCal(u: Usuari): Promise<Usuari> {

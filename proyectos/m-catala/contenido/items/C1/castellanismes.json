@@ -15,7 +15,7 @@
     "enunciat": "A nivell de personal, el servei està sota mínims.", "error": "A nivell de", "opcions": ["A nivell del", "En quant al", "Pel que fa al"], "resposta": 2,
     "diagnostic": false, "gratis": false, "revisio": "sessio" },
   { "id": "c1-castellanismes-0006", "nivell": "C1", "area": "us", "tipus": "castellanismes", "punt": "castellanismes-sintaxi", "regla": "calcs-sintactics", "dificultat": 0.2,
-    "enunciat": "L'acte s'ha suspès degut a la pluja.", "error": "degut a", "opcions": ["a causa de", "degut de", "amb motiu de"], "resposta": 0,
+    "enunciat": "La plaça s'adjudicarà en base a la puntuació obtinguda.", "error": "en base a", "opcions": ["d'acord amb", "en base de", "a base de"], "resposta": 0,
     "diagnostic": true, "gratis": true, "revisio": "sessio" },
   { "id": "c1-castellanismes-0007", "nivell": "C1", "area": "us", "tipus": "castellanismes", "punt": "castellanismes-sintaxi", "regla": "calcs-sintactics", "dificultat": 0.5,
     "enunciat": "La plaça s'adjudicarà en base a la puntuació obtinguda.", "error": "en base a", "opcions": ["d'acord a", "d'acord amb", "en base de"], "resposta": 1,

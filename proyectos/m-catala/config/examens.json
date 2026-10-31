@@ -1,4 +1,5 @@
 {
+  "_escala": "Totes les notes de l'app són percentatges 0–100. parts.<part>.minim i aptoGlobal són percentatges de la part i del global (B1/B2: 60 % de cada part). Quan el mínim oficial és en punts d'una àrea (C1: 25/40 a l'àrea 1, 19/30 a l'àrea 3) es declara NOMÉS a arees[].minimPunts/puntsMax i la part corresponent porta minim=null (parts.<part>.minimPunts és text informatiu): així cap condició es compta dues vegades a lib/motor/diagnostic.ts.",
   "_font": "M-CATALA-PRODUCTE.md §2 i fitxa M del panell (estructura oficial 2026 de la DPL). Els camps amb verificat=false són orientatius fins que la tasca setmanal els contrasti amb el model de prova oficial.",
   "nivells": {
     "B1": {
@@ -43,8 +44,8 @@
       "actiu": true,
       "aptoGlobal": 65,
       "parts": {
-        "escrita": { "pes": 70, "minim": 35.7, "minimPunts": "25 de 40 a l'àrea 1 (expressió escrita)" },
-        "oral": { "pes": 30, "minim": 63.3, "minimPunts": "19 de 30" }
+        "escrita": { "pes": 70, "minim": null, "minimPunts": "25 de 40 a l'àrea 1 (expressió escrita)" },
+        "oral": { "pes": 30, "minim": null, "minimPunts": "19 de 30 a l'àrea 3 (expressió oral)" }
       },
       "arees": [
         { "id": "escrit", "part": "escrita", "nom": { "ca": "Àrea 1 · Comprensió lectora i expressió escrita", "es": "Área 1 · Comprensión lectora y expresión escrita" }, "pes": 40, "minuts": 90, "minimPunts": 25, "puntsMax": 40, "tasques": [{ "tipus": "argumentatiu-3-fonts", "paraules": 250 }], "verificat": true },

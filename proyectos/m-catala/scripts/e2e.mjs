@@ -60,7 +60,7 @@ await p.locator('textarea.campo').fill('Benvolgut company, et volia demanar un c
 await p.getByRole('button', { name: 'Enviar' }).click();
 await p.waitForSelector('text=Lectura en veu alta', { timeout: 70000 }); pas('text breu corregit per criteris');
 await p.getByRole('button', { name: 'Saltar aquest bloc' }).click();
-await p.waitForSelector("text=Probabilitat d'aprovar avui", { timeout: 20000 });
+await p.waitForSelector("text=/Probabilitat d.aprovar/i", { timeout: 20000 });
 const prob = (await p.locator('[role="img"][aria-label*="%"]').first().getAttribute('aria-label')) ?? ''; pas(`resultat del diagnòstic: ${prob.trim()}`); await shot('05-resultat');
 if (!(await p.locator('text=Els 3 punts febles').count()) || !(await p.locator('text=Els 3 sons').count())) errors.push('falten punts febles o sons al resultat');
 await p.getByRole('link', { name: 'Crear el meu pla' }).click();

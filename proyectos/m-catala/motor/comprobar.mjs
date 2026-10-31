@@ -41,7 +41,9 @@ for (const it of items) {
   const conOpc = Array.isArray(it.opcions);
   if (conOpc) {
     if (it.opcions.length < 3 || it.opcions.length > 4) err(d, 'opcions: 3 o 4');
-    if (new Set(it.opcions.map((o) => norm(String(o)).toLowerCase())).size !== it.opcions.length) err(d, 'opcions repetidas');
+    // Opciones repetidas (sin distinguir mayúsculas), salvo en el punto «puntuacio», donde las mayúsculas son precisamente lo que se evalúa.
+    const distintasExactas = new Set(it.opcions.map((o) => norm(String(o)))).size === it.opcions.length;
+    if (new Set(it.opcions.map((o) => norm(String(o)).toLowerCase())).size !== it.opcions.length && !(it.punt === 'puntuacio' && distintasExactas)) err(d, 'opcions repetidas');
     if (!Number.isInteger(it.resposta) || it.resposta < 0 || it.resposta >= it.opcions.length) err(d, 'resposta debe ser el índice de la opción correcta');
   }
   switch (it.tipus) {

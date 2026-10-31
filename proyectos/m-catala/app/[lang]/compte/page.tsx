@@ -4,6 +4,9 @@ import { esIdioma, t } from '@/lib/i18n';
 import { usuariActual, esPremium } from '@/lib/auth';
 import { modoPago } from '@/lib/pagos';
 import type { Idioma } from '@/lib/tipos';
+import type { Metadata } from 'next';
+import { meta } from '@/lib/meta';
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; const l = (esIdioma(lang) ? lang : 'ca') as Idioma; const d = t(l); return meta(l, '/compte', d.compte.titol, d.nav.compte, { noIndex: true }); }
 export const dynamic = 'force-dynamic';
 export default async function Pagina({ params, searchParams }: { params: Promise<{ lang: string }>; searchParams: Promise<{ pagat?: string }> }) {
   const { lang } = await params; const idioma = (esIdioma(lang) ? lang : 'ca') as Idioma; const d = t(idioma).compte; const sp = await searchParams;

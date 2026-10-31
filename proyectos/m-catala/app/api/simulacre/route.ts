@@ -1,34 +1,62 @@
 import { usuariActual, esPremium } from '@/lib/auth';
 import { db, hayDb } from '@/lib/db';
-import { json, error, anonId, mesActual, limitar } from '@/lib/http';
+import { BANC, convocatoria as convocatoriaDe } from '@/lib/datos';
+import { json, error, anonId, teAnonValid, clauUs, limitar, consumirQuota, sumarUs, mesActual } from '@/lib/http';
+import { NIVELLS } from '@/lib/tipos';
 import pais from '@/config/paises/es.json';
 
 export const dynamic = 'force-dynamic';
 
-/** Guarda el resultat d'un simulacre (compte o anònim) i retorna la comparació amb la cohort de la mateixa convocatòria i nivell. */
+const AREES = ['us', 'lectura', 'co', 'escrit', 'oral'];
+const nota01 = (x: unknown) => typeof x === 'number' && Number.isFinite(x) && x >= 0 && x <= 100;
+
+/** Inici ({inici:true}): consumeix la quota mensual (1 gratis) de manera atòmica. Resultat: valida rangs i ids contra el banc i la config,
+ *  exigeix la galeta anònima signada (o sessió) i, sense premium, que hi hagi hagut un inici aquest mes i no més resultats que inicis.
+ *  Retorna la comparació amb la cohort de la mateixa convocatòria i nivell. */
 export async function POST(req: Request) {
-  if (!limitar(req, 'simulacre', 10)) return error('massa peticions', 429);
+  if (!(await limitar(req, 'simulacre', 10))) return error('massa peticions', 429);
   const b = await req.json().catch(() => null);
-  if (!b?.nivell || typeof b?.nota !== 'number') return error('dades');
+  if (!b || typeof b !== 'object') return error('dades');
+  const nivell = String(b.nivell ?? '');
+  if (!(NIVELLS as string[]).includes(nivell)) return error('dades');
   const u = await usuariActual();
+  if (!u && !b.inici && !(await teAnonValid())) return error('galeta', 401); // el resultat només s'accepta d'un navegador que ja té galeta signada
   const anon = await anonId();
   if (!hayDb()) return json({ guardat: false, cohort: null });
   const premium = esPremium(u);
-  const clau = `${u?.id ?? anon}:${mesActual()}`;
-  if (!premium && b?.inici) {
-    const us = await db.us.findUnique({ where: { clau } });
-    if ((us?.simulacres ?? 0) >= pais.gratis.simulacresMes) return error('quota', 402);
-    await db.us.upsert({ where: { clau }, update: { simulacres: { increment: 1 } }, create: { clau, simulacres: 1 } });
+  const clau = clauUs(u?.id, anon);
+  if (b.inici) {
+    if (premium) { await sumarUs(clau, 'simulacres', 1); return json({ ok: true }); }
+    if (!(await consumirQuota(clau, 'simulacres', pais.gratis.simulacresMes))) return error('quota', 402);
     return json({ ok: true });
   }
-  await db.simulacre.create({ data: { usuariId: u?.id ?? null, anonId: u ? null : anon, nivell: String(b.nivell), convocatoria: b.convocatoria ? String(b.convocatoria) : null, simulacreId: String(b.simulacreId ?? ''), nota: b.nota, arees: b.arees ?? {}, apte: !!b.apte } });
-  return json({ guardat: true, cohort: await cohort(String(b.nivell), b.convocatoria ? String(b.convocatoria) : null, b.nota) });
+  const simulacreId = String(b.simulacreId ?? '');
+  const sim = BANC.simulacres.find((s) => s.id === simulacreId);
+  if (!sim || sim.nivell !== nivell || !nota01(b.nota)) return error('dades');
+  const convocatoria = b.convocatoria ? String(b.convocatoria) : null;
+  if (convocatoria && !convocatoriaDe(convocatoria)) return error('dades');
+  const arees: Record<string, number> = {};
+  if (b.arees && typeof b.arees === 'object') for (const [k, v] of Object.entries(b.arees as Record<string, unknown>)) if (AREES.includes(k) && nota01(v)) arees[k] = Math.round((v as number) * 10) / 10;
+  if (!premium) {
+    const us = await db.us.findUnique({ where: { clau } });
+    const inicis = us?.simulacres ?? 0;
+    if (inicis < 1) return error('sense inici', 403);
+    const desDe = new Date(`${mesActual()}-01T00:00:00Z`);
+    const fets = await db.simulacre.count({ where: { ...(u ? { usuariId: u.id } : { anonId: anon }), data: { gte: desDe } } });
+    if (fets >= inicis) return error('sense inici', 403);
+  }
+  await db.simulacre.create({ data: { usuariId: u?.id ?? null, anonId: u ? null : anon, nivell, convocatoria, simulacreId, nota: Math.round(b.nota * 10) / 10, arees, apte: !!b.apte } });
+  return json({ guardat: true, cohort: await cohort(nivell, convocatoria, b.nota) });
 }
 
 export async function GET(req: Request) {
+  if (!(await limitar(req, 'simulacre-cohort', 30))) return error('massa peticions', 429);
   const url = new URL(req.url);
   if (!hayDb()) return json({ cohort: null });
-  return json({ cohort: await cohort(url.searchParams.get('nivell') ?? 'C1', url.searchParams.get('convocatoria'), Number(url.searchParams.get('nota') ?? 0)) });
+  const nivell = url.searchParams.get('nivell') ?? 'C1';
+  if (!(NIVELLS as string[]).includes(nivell)) return error('dades');
+  const nota = Number(url.searchParams.get('nota') ?? 0);
+  return json({ cohort: await cohort(nivell, url.searchParams.get('convocatoria'), nota01(nota) ? nota : 0) });
 }
 
 async function cohort(nivell: string, convocatoria: string | null, nota: number) {

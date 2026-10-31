@@ -5,11 +5,21 @@ export function normalitzar(s: string): string {
   return s.normalize('NFC').replace(/[’‘`´]/g, "'").replace(/\s+/g, ' ').replace(/\s*'\s*/g, "'").replace(/[.!?;:,]+$/g, '').trim().toLowerCase();
 }
 
-const senseAccents = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+export const senseAccents = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
 
 export type Avaluacio = { correcte: boolean; esperada: string[]; detall?: { paraula: string; ok: boolean }[]; precisio?: number; quasi?: boolean };
 
-/** Corregeix una resposta segons el tipus d'ítem. `quasi` = només difereix en accents (es marca incorrecte però s'explica). */
+/** Opcions de comparació paraula a paraula. `tolerancia` = lletres de diferència (Levenshtein) admeses en paraules de més de
+ *  `minLletres` lletres; `ignorarAccents` compara sense diacrítics (només per detectar el cas «només accents», mai per donar per bo). */
+export type OpcionsAlineament = { tolerancia?: number; minLletres?: number; ignorarAccents?: boolean };
+
+/** Corregeix una resposta segons el tipus d'ítem. `quasi` = només difereix en accents (es marca incorrecte però s'explica: «només accents»).
+ *  - Opcions: índex exacte.
+ *  - Dictat: comparació paraula a paraula **exacta** (tolerància 0): els accents, b/v, s/ss, l·l i apòstrofs són precisament el que
+ *    s'avalua; correcte si ≥ 90 % de les paraules coincideixen.
+ *  - Transformació: igualtat exacta amb alguna forma acceptada; si no, s'admet 1 lletra de diferència només en paraules de més de 8 lletres
+ *    (errades de tecleig en formes llargues) i mai quan la diferència és només un accent.
+ *  - Buits i resta: igualtat exacta després de normalitzar. */
 export function avaluar(item: Item, resposta: string | number | null): Avaluacio {
   if (Array.isArray(item.opcions)) {
     const idx = typeof resposta === 'number' ? resposta : item.opcions.findIndex((o) => normalitzar(o) === normalitzar(String(resposta ?? '')));
@@ -17,23 +27,48 @@ export function avaluar(item: Item, resposta: string | number | null): Avaluacio
     return { correcte: ok, esperada: [item.opcions[item.resposta as number]] };
   }
   if (item.tipus === 'dictat') {
-    const detall = alinearParaules(item.text ?? '', String(resposta ?? ''));
+    const objectiu = item.text ?? '';
+    const escrit = String(resposta ?? '');
+    const detall = alinearParaules(objectiu, escrit, { tolerancia: 0 });
     const ok = detall.filter((d) => d.ok).length;
     const precisio = detall.length ? ok / detall.length : 0;
-    return { correcte: precisio >= 0.9 && detall.length > 0, esperada: [item.text ?? ''], detall, precisio };
+    const correcte = precisio >= 0.9 && detall.length > 0;
+    let quasi = false;
+    if (!correcte && detall.length) {
+      const senseAcc = alinearParaules(objectiu, escrit, { tolerancia: 0, ignorarAccents: true });
+      quasi = senseAcc.filter((d) => d.ok).length / senseAcc.length >= 0.9;
+    }
+    return { correcte, esperada: [objectiu], detall, precisio, quasi };
   }
   const acceptades = ([] as string[]).concat(item.resposta as string | string[]).concat(item.variants ?? []);
   const r = normalitzar(String(resposta ?? ''));
-  const ok = acceptades.some((a) => normalitzar(a) === r);
+  let ok = acceptades.some((a) => normalitzar(a) === r);
+  if (!ok && item.tipus === 'transformacio') ok = acceptades.some((a) => igualsAmbTolerancia(normalitzar(a), r));
   const quasi = !ok && acceptades.some((a) => senseAccents(normalitzar(a)) === senseAccents(r));
   return { correcte: ok, esperada: acceptades, quasi };
 }
 
-/** Alineament per paraules (LCS) entre l'objectiu i el que s'ha escrit o reconegut. Tolera una lletra de diferència en paraules llargues. */
-export function alinearParaules(objectiu: string, escrit: string): { paraula: string; ok: boolean }[] {
+/** Dues frases són «iguals amb tolerància» si tenen les mateixes paraules i cada parella coincideix o bé difereix en una sola lletra en una
+ *  paraula de més de 8 lletres, sempre que la diferència no sigui només d'accents. */
+export function igualsAmbTolerancia(a: string, b: string, minLletres = 8): boolean {
+  const ta = a.split(/\s+/).filter(Boolean), tb = b.split(/\s+/).filter(Boolean);
+  if (ta.length !== tb.length) return false;
+  return ta.every((x, i) => {
+    const y = tb[i];
+    if (x === y) return true;
+    if (senseAccents(x) === senseAccents(y)) return false; // només accents: no s'admet
+    return x.length > minLletres && y.length > minLletres && levenshtein(x, y) <= 1;
+  });
+}
+
+/** Alineament per paraules (LCS) entre l'objectiu i el que s'ha escrit o reconegut. Per defecte (alineació de l'ASR a l'oral) tolera una
+ *  lletra de diferència en paraules de més de 5 lletres; el dictat passa `tolerancia: 0`. */
+export function alinearParaules(objectiu: string, escrit: string, opcions: OpcionsAlineament = {}): { paraula: string; ok: boolean }[] {
+  const { tolerancia = 1, minLletres = 5, ignorarAccents = false } = opcions;
+  const prep = (s: string) => (ignorarAccents ? senseAccents(s) : s);
   const tok = (s: string) => normalitzar(s).replace(/[^\p{L}\p{N}' -]/gu, '').split(/[\s-]+/).filter(Boolean);
   const a = tok(objectiu), b = tok(escrit);
-  const igual = (x: string, y: string) => x === y || (x.length > 5 && levenshtein(x, y) <= 1);
+  const igual = (x: string, y: string) => { const px = prep(x), py = prep(y); return px === py || (tolerancia > 0 && px.length > minLletres && levenshtein(px, py) <= tolerancia); };
   const n = a.length, m = b.length;
   const L: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
   for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = igual(a[i], b[j]) ? 1 + L[i + 1][j + 1] : Math.max(L[i + 1][j], L[i][j + 1]);

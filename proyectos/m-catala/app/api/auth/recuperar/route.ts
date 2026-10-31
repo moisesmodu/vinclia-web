@@ -8,10 +8,12 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(req: Request) {
   if (!hayDb()) return error('Base de dades no configurada', 503);
-  if (!limitar(req, 'recuperar', 3, 600_000)) return error('massa peticions', 429);
+  if (!(await limitar(req, 'recuperar', 3, 600_000))) return error('massa peticions', 429);
   const b = await req.json().catch(() => null);
-  const email = String(b?.email ?? '').trim().toLowerCase();
+  const email = String(b?.email ?? '').trim().toLowerCase().slice(0, 200);
   const idioma = b?.idioma === 'es' ? 'es' : 'ca';
+  if (!email) return json({ ok: true, correu: hayCorreo() });
+  if (!(await limitar(req, 'recuperar-email', 3, 3600_000, email))) return error('massa peticions', 429);
   const u = await db.usuari.findUnique({ where: { email } });
   if (u && hayCorreo()) {
     const enlace = `${urlBase()}/${idioma}/entrar?token=${tokenRecuperacion(u)}`;

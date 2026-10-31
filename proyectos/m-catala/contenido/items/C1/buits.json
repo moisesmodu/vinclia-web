@@ -42,7 +42,7 @@
     "enunciat": "Hem preparat una guia ___ les famílies nouvingudes.", "opcions": ["per a", "per", "a"], "resposta": 0, "pista": "Destinatari.",
     "diagnostic": true, "gratis": true, "revisio": "sessio" },
   { "id": "c1-buits-0015", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "per-per-a", "regla": "per-per-a", "dificultat": -0.8,
-    "enunciat": "La reunió s'ha ajornat ___ motius de salut.", "opcions": ["per", "per a", "degut a"], "resposta": 0, "pista": "Causa.",
+    "enunciat": "La reunió s'ha ajornat ___ motius de salut.", "opcions": ["per", "per a", "per culpa a"], "resposta": 0, "pista": "Causa.",
     "diagnostic": false, "gratis": false, "revisio": "sessio" },
   { "id": "c1-buits-0016", "nivell": "C1", "area": "us", "tipus": "buits", "punt": "per-per-a", "regla": "per-per-a", "dificultat": 0.3,
     "enunciat": "El termini ___ la presentació de sol·licituds acaba el 30 de juny.", "resposta": ["per a"], "pista": "Davant d'un nom amb valor de destinació o finalitat.",

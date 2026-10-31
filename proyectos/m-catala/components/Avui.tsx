@@ -98,7 +98,7 @@ export default function Avui({ idioma, examens, convocatories, punts }: Props) {
         <Link className="boton-text" href={`/${idioma}/oral`}>{t(idioma).nav.oral}</Link>
         <Link className="boton-text" href={`/${idioma}/mapa`}>{t(idioma).nav.mapa}</Link>
       </div>
-      {compromis ? <div className="mt-8"><div className="flex items-baseline justify-between text-[14px] text-secundari"><span>{d.compromis.replace('?', '')}: {compromis.total} {d.dies}</span><span className="tab">{compromis.fets}/{compromis.total}</span></div><div className="barra mt-2"><span style={{ width: `${(100 * compromis.fets) / compromis.total}%` }} /></div></div> : null}
+      {compromis ? <div className="mt-8"><div className="flex items-baseline justify-between text-[14px] text-secundari"><span>{d.compromis.replace('?', '')}: {compromis.total} {d.dies}</span><span className="tab">{(compromis as { acabat?: boolean }).acabat ? n.compromisAcabat : `${compromis.fets}/${compromis.total}`}</span></div><div className="barra mt-2"><span style={{ width: `${(100 * compromis.fets) / compromis.total}%` }} /></div></div> : null}
     </div>
   );
 }

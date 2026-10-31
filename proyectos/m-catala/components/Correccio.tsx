@@ -25,6 +25,7 @@ export default function Correccio({ idioma, r, text, regles, onReescriure }: { i
         <p className="mt-2 text-[13px] text-terciari">{r.motor.includes('lt') ? d.motor.lt : d.motor.regles}{r.motor.includes('llm') ? ` + ${d.motor.llm}` : ''} · {(r.ms / 1000).toFixed(1)} s</p>
         {orientativa ? <p className="mt-3 rounded-[6px] bg-boli-tenue p-3 text-[14px] text-boli">{d.senseLlm}</p> : null}
       </div>
+      {(r as { fiable?: boolean }).fiable === false ? <p className="mb-4 rounded-[8px] bg-marcador-tenue px-3 py-2 text-[14px]">{t(idioma).nou.senseLT}</p> : null}
       <div className="grid gap-4">
         {(Object.keys(r.criteris) as (keyof typeof r.criteris)[]).map((k) => <div key={k}><div className="flex items-baseline justify-between text-[15px]"><span className="font-semibold">{d.criteris[k]}{r.criteris[k].orientativa ? <span className="xip ml-2">{d.orientativa}</span> : null}</span><span className="num">{r.criteris[k].nota}<span className="text-terciari">/10</span></span></div><div className="barra mt-1.5"><span style={{ width: `${r.criteris[k].nota * 10}%`, background: r.criteris[k].nota < 5 ? '#B9342E' : r.criteris[k].nota < 7 ? '#E0B23A' : '#7A8F3C' }} /></div>{r.criteris[k].comentari ? <p className="mt-1 text-[14px] text-secundari">{r.criteris[k].comentari}</p> : null}</div>)}
       </div>
