@@ -214,18 +214,22 @@ son las de mayor estacionalidad para noviembre y diciembre.
 
 | Web | Dominio | Canonical y sitemap en producción | Analítica en el código | Qué falta |
 |---|---|---|---|---|
-| A · CCSE en tu idioma | ccsefacil.com | ✅ ya con el dominio (sesión del Mac, 31/10) | ✅ commits `3767b7b`, `dd3cee4` en `claude/a-ccse`: analítica, FAQPage en las 22 guías, venta cruzada medible a tuspapeles.app, guías «Examen CCSE noviembre 2026» e «Inscripción CCSE enero 2027» (build 464 páginas OK) | redesplegar; Search Console |
-| N · Nuevo en España | tuspapeles.app | ✅ | ✅ commits `97c99e8`…`c643540` en `claude/n-nuevo-en-espana`: analítica, «Empadronarse en Lleida», tarjeta «Prepara el CCSE» → ccsefacil.com, sección de los 2 años, FAQ NIE/TIE (build OK, validar OK) | redesplegar; Search Console |
-| B · Plaça | oposita.digital | ❌ sigue `placa-oposicions.vercel.app` | ✅ commit `1daeac8` en `claude/proyecto-b-oposiciones`: analítica, blog con «Examen de Mossos 2027», FAQ del simulacre, bloque «Nivell de català» → Aprova en las 5 oposiciones, dominio de reserva oposita.digital (build 275 páginas OK) | `NEXT_PUBLIC_URL=https://oposita.digital` en Vercel + redesplegar; Search Console |
-| G · Lunilla | lunilla.cat | ✅ | ✅ commits `fcc17b8`…`8157185` en `claude/g-cuentos`: analítica, «Regalos de Navidad 3 a 6 años», gemela catalana de tapa dura con hreflang, `Product` con precios en todas las páginas SEO, FAQ de precio en portada (build 62 páginas OK) | redesplegar; Search Console |
-| P · NetoClaro | netoclaro.app | ✅ | ✅ commits `98eb08f`, `dc76976` en `claude/p-webs-adsense-fabrica`: analítica condicionada a Vercel, verificación, guía «Paga extra de Navidad 2026» es/ca en la calculadora (703 páginas, 479 tests OK) | redesplegar; Search Console; AdSense |
-| P · ImpuestoClaro | impuestoclaro.es | ✅ | ídem (283 páginas OK) | redesplegar; Search Console; AdSense |
-| Juegos · Nuvolet | (sin dominio) juegos-casuales.vercel.app | ✅ | ✅ commits `dabdb88`, `11bfaba` en `claude/juegos-primer-juego`: analítica, canonical y Open Graph en las 18 páginas de juego, Snow Plow con «Christmas» en el título, `/about/` con Organization (Lleida), `/es/juegos-para-chromebook/`, sitemap de 129 URL (build OK) | redesplegar; Search Console con la URL de Vercel |
-| M · Aprova | (sin dominio) aprova-catala.vercel.app | ✅ | ✅ commit `3301ad8` en `claude/m-catala`: analítica, guía «Suspès el C1: què fer», título del diagnóstico como «test de nivell gratis», enlace a Plaça en 4 guías (31 páginas SEO, 17 tests OK) | redesplegar; Search Console tras la validez |
+| A · CCSE en tu idioma | ccsefacil.com | ✅ ya con el dominio (sesión del Mac, 31/10) | ✅ commits `3767b7b`, `dd3cee4` en `claude/a-ccse`: analítica, FAQPage en las 22 guías, venta cruzada medible a tuspapeles.app, guías «Examen CCSE noviembre 2026» e «Inscripción CCSE enero 2027» (build 464 páginas OK) | canonical en la portada (hoy sin `<link rel="canonical">`); Search Console |
+| N · Nuevo en España | tuspapeles.app | ✅ | ✅ commits `97c99e8`…`c643540` en `claude/n-nuevo-en-espana`: analítica, «Empadronarse en Lleida», tarjeta «Prepara el CCSE» → ccsefacil.com, sección de los 2 años, FAQ NIE/TIE (build OK, validar OK) | Search Console |
+| B · Plaça | oposita.digital | ✅ (`NEXT_PUBLIC_URL=https://oposita.digital`, verificado 01/11) | ✅ commit `1daeac8` en `claude/proyecto-b-oposiciones`: analítica, blog con «Examen de Mossos 2027», FAQ del simulacre, bloque «Nivell de català» → Aprova en las 5 oposiciones, dominio de reserva oposita.digital (build 275 páginas OK) | Search Console |
+| G · Lunilla | lunilla.cat | ✅ | ✅ commits `fcc17b8`…`8157185` en `claude/g-cuentos`: analítica, «Regalos de Navidad 3 a 6 años», gemela catalana de tapa dura con hreflang, `Product` con precios en todas las páginas SEO, FAQ de precio en portada (build 62 páginas OK) | canonical en la portada (hoy sin `<link rel="canonical">`); Search Console |
+| P · NetoClaro | netoclaro.app | ✅ | ✅ commits `98eb08f`, `dc76976` en `claude/p-webs-adsense-fabrica`: analítica condicionada a Vercel, verificación, guía «Paga extra de Navidad 2026» es/ca en la calculadora (703 páginas, 479 tests OK) | Search Console; AdSense |
+| P · ImpuestoClaro | impuestoclaro.es | ✅ | ídem (283 páginas OK) | Search Console; AdSense |
+| Juegos · Nuvolet | (sin dominio) juegos-casuales.vercel.app | ✅ | ✅ commits `dabdb88`, `11bfaba` en `claude/juegos-primer-juego`: analítica, canonical y Open Graph en las 18 páginas de juego, Snow Plow con «Christmas» en el título, `/about/` con Organization (Lleida), `/es/juegos-para-chromebook/`, sitemap de 129 URL (build OK) | Search Console con la URL de Vercel |
+| M · Aprova | (sin dominio) aprova-catala.vercel.app | ✅ | ✅ commit `3301ad8` en `claude/m-catala`: analítica, guía «Suspès el C1: què fer», título del diagnóstico como «test de nivell gratis», enlace a Plaça en 4 guías (31 páginas SEO, 17 tests OK) | Search Console tras la validez |
 
 Los `*.vercel.app` **no se redirigen** al dominio: la app Android de A (TWA con assetlinks) y los webhooks de Stripe de
 A, N, B y G apuntan a esas direcciones y un 301 los rompería. El `canonical` y el sitemap con el dominio bastan para que
-Google indexe solo el dominio. Los proyectos de Vercel no están enlazados a GitHub: un push a la rama no despliega; hay
+Google indexe solo el dominio.
+
+Publicado en producción el 01/11 (todas las ramas en su último commit; ver panel). La analítica está en el código de las 8
+webs, pero `/_vercel/insights/script.js` da 404 en todas, señal de que falta **activar Web Analytics** en cada proyecto de Vercel
+(Proyecto → Analytics → Enable); hasta entonces no se registran visitas. Los proyectos de Vercel no están enlazados a GitHub: un push a la rama no despliega; hay
 que desplegar con el CLI.
 
 ### 4.2 Lo que hace la sesión del Mac (esta sesión no tiene permiso de despliegue en producción)

@@ -97,6 +97,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Productos de Stripe real renombrados a «CCSE Fácil — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit 97d87a9, incluye 3767b7b y dd3cee4 y el nombre de marca en el pago): ccsefacil.com con canonical y sitemap del dominio, checkout responde (401 sin sesión)"
       }
     ],
     "proximos": [
@@ -397,6 +401,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Productos de Stripe real renombrados a «Tus Papeles — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit 0335a6c, incluye 97c99e8…c643540 y el nombre de marca en el pago): tuspapeles.app con canonical y sitemap del dominio, checkout responde (400 sin datos)"
       }
     ],
     "proximos": [
@@ -711,6 +719,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Productos de Stripe real renombrados a «Oposita — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit f2734dc, incluye 1daeac8 y el nombre de marca en el pago): NEXT_PUBLIC_URL=https://oposita.digital; canonical y sitemap ya con oposita.digital, checkout responde"
       }
     ],
     "proximos": [
@@ -1044,6 +1056,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "GameDistribution: 18 juegos creados (por API), con su Game ID compilado en el paquete (commit 63579b1), zip subido y 5 miniaturas cada uno. GameMonetize: 18 fichas completas con zip e imágenes. Falta en ambos verificar el SDK viendo un anuncio en el visor de cada juego y pulsar «Request activation»"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit 63579b1, incluye dabdb88 y 11bfaba): juegos-casuales.vercel.app con canonical, analítica y sitemap"
       }
     ],
     "proximos": [
@@ -1404,6 +1420,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica, guía «Suspès el C1 de català: què fer», título del diagnóstico como test de nivel gratis, enlace a los tests de Plaça en 4 guías (commit 3301ad8 en la rama del PR #8; tests OK). Pendiente: redesplegar"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit 3301ad8; 5d732b3 solo cambia DESPLIEGUE.md): aprova-catala.vercel.app con canonical y sitemap"
       }
     ],
     "proximos": [
@@ -1853,6 +1873,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Productos de Stripe real renombrados a «Lunilla — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit db86ea8, incluye fcc17b8…8157185 y el nombre de marca en el pago): sitemap de lunilla.cat, canonical en /ca y en las fichas de cuento, checkout responde (400 sin datos)"
       }
     ],
     "proximos": [
@@ -3290,6 +3314,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "AdSense: netoclaro.app e impuestoclaro.es verificados y en revisión («Preparando»); ads.txt y metaetiqueta servidos. Falta publicar el mensaje RGPD (logotipos subidos)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "SEO publicado en producción (commit 68e1eee, incluye 98eb08f y dc76976): netoclaro.app e impuestoclaro.es con canonical, analítica y sitemap del dominio"
       }
     ],
     "proximos": [
