@@ -22,6 +22,10 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
+      "texto": "✔ Panel publicado en Vercel (31/10, proyecto cartera): se vuelve a publicar solo con cada push a la rama base. Protegido con Vercel Authentication: entra con tu cuenta de Vercel",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app"
+    },
+    {
       "texto": "0 · Marketing · Abrir marketing/APROBAR.md y marcar ✅ las piezas de la semana 1 (53 piezas, empieza por B-01 a B-05 ya aprobadas y por A-01 a A-03: la inscripción del CCSE cierra el 5/11). 15 min",
       "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md"
     },
@@ -96,5 +100,5 @@
     ],
     "fecha": "2026-10-24"
   },
-  "panelUrl": ""
+  "panelUrl": "https://cartera-moisesmodu-3705s-projects.vercel.app"
 }

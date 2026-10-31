@@ -40,6 +40,7 @@ export type Cartera = {
   escenario: string; costesFijosMes: number; inversionAcumulada: number;
   decisionesPendientes: { texto: string; donde?: string }[];
   reglas: string[];
+  panelUrl?: string;
   juicioCartera?: { p1000a6: number; p1000a12: number; p350a6: number; p350a12: number; mediana6: number; mediana12: number; nucleo: string[]; fecha: string };
 };
 
