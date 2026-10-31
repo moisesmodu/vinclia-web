@@ -16,7 +16,10 @@
     "canal": "Google (test CCSE), Google Play, TikTok en 6 idiomas; sin anuncios",
     "enlaces": {
       "CCSE en tu idioma · web": "https://ccse-en-tu-idioma.vercel.app/es",
-      "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2"
+      "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/a-ccse/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Web (dominio propio)": "https://ccsefacil.com"
     },
     "acciones": [
       {
@@ -58,16 +61,46 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado por el Mac en https://ccse-en-tu-idioma.vercel.app con datos legales, Resend y remitente noreply@numimates.com; pendiente la prueba de pago"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cuenta de desarrollador de Google Play creada (personal, «Nuevo en España», ID 7523009199602143001, 25 $ pagados); pendiente verificación de identidad (DNI) y del móvil Android antes de crear la app"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "LEGAL_EMAIL = hola@numimates.com en Vercel y web redesplegada"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Google Play: móvil Android verificado y DNI subido; Google está verificando la identidad (varios días). Después: verificar teléfono, crear la app y subir ccse-1.0.1.aab a prueba interna; para producción hace falta prueba cerrada con 12 testers durante 14 días"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (precio 9,99 €, webhook real); quitado consent_collection del Checkout (Stripe no lo admite en España) y redesplegado"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio ccsefacil.com comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing (sesión transversal): plan de 3 canales, 7 piezas de la semana 1 listas para aprobar (grupos de Facebook por nacionalidad con la inscripción que cierra el 5/11, Reddit, ONG de Lleida, artículo «Examen CCSE noviembre 2026»), 20 búsquedas SEO mapeadas; primer euro previsto 3–11/11"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio propio activo con HTTPS: https://ccsefacil.com (zona DNS en Vercel, www → apex)"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Primer pago real verificado"
     ],
     "paraMoises": [
-      "Publicar en Google Play y guardar la clave de firma Android (cuando la sesión del Mac haya desplegado)"
+      "Google Play: crear la app y subir el paquete (prueba interna)",
+      "Pago real de prueba de 9,99 € cuando el Mac active Stripe real",
+      "Aprobar la primera tanda de vídeos y mensajes a comunidades (marketing/)"
     ],
     "mejoras": [
       "Explicación por pregunta en los 6 idiomas con audio y modo 'solo escuchar' para candidatos no alfabetizados; la pregunta siempre también en español, como en el examen real.",
@@ -290,7 +323,10 @@
     "canal": "Venta cruzada desde A, búsquedas en árabe y francés, TikTok y WhatsApp",
     "enlaces": {
       "Nuevo en España · web": "https://nuevo-en-espana.vercel.app/",
-      "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3"
+      "PR #3": "https://github.com/moisesmodu/vinclia-web/pull/3",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/n-nuevo-en-espana/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Web (dominio propio)": "https://tuspapeles.app"
     },
     "acciones": [
       {
@@ -328,15 +364,35 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado por el Mac en https://nuevo-en-espana.vercel.app con identidad de marca; pendiente la prueba de pago con tarjeta 4242"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción: 4,99 €/mes y pack 19,90 €, webhook real; Checkout cs_live comprobado"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio tuspapeles.app comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: plan de 3 canales (venta cruzada desde A, Reddit y Facebook en es/ar/fr, entidades de acogida de Lleida), 6 piezas de la semana 1 listas para aprobar, artículo «Empadronarse en Lleida»; primer euro previsto 6–14/11"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio propio activo con HTTPS: https://tuspapeles.app (zona DNS en Vercel, www → apex)"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
       "Verificar un pago en producción"
     ],
-    "paraMoises": [],
+    "paraMoises": [
+      "Pago real de prueba cuando el Mac active Stripe real",
+      "Aprobar la tarea programada semanal"
+    ],
     "mejoras": [
       "Freemium: guías básicas gratis (SEO en 7 idiomas) y suscripción con lista personalizada por situación, recordatorios de caducidad 90 y 60 días antes y seguimiento de expediente.",
       "Vender a ayuntamientos, ONG y comunidades una versión de marca blanca y mantener la suscripción individual como canal secundario.",
@@ -572,7 +628,10 @@
     "canal": "Google por oposición y tema; anuncios de búsqueda desde el mes 2 (100 €/mes)",
     "enlaces": {
       "Plaça · web": "https://placa-oposicions.vercel.app/",
-      "PR #7": "https://github.com/moisesmodu/vinclia-web/pull/7"
+      "PR #7": "https://github.com/moisesmodu/vinclia-web/pull/7",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/b-oposiciones/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Web (dominio propio)": "https://oposita.digital"
     },
     "acciones": [
       {
@@ -602,9 +661,30 @@
       {
         "fecha": "2026-10-28",
         "texto": "Plaça construido: 5 oposiciones catalanas y 1.737 preguntas verificadas, desplegado en https://placa-oposicions.vercel.app (PR #7)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Moisés aprueba los 5 mensajes para comunidades de oposiciones (MONETIZACION.md §4, PR #7): Bombers, TCAI ICS, Mossos, Generalitat/ajuntaments y sindicatos; enlaces comprobados (200). Telegram/WhatsApp los pega Moisés desde su cuenta"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (9,99 €/mes, 23,97 € trimestral, 71,88 € anual), webhook real. Pendiente en código: cliente y portal de Stripe por modo (lib/pagos.ts). Dominio elegido: oposita.digital (también para oposiciones nacionales)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio oposita.digital comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: los 5 mensajes aprobados el 31/10 ya están en marketing/piezas con versión castellana y enlace medido (publicar lun 2 y mié 4); además r/oposiciones, artículo «Examen Mossos 2027» y vídeo 1; primer euro previsto 4–11/11"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio propio activo con HTTPS: https://oposita.digital (zona DNS en Vercel, www → apex)"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
@@ -612,8 +692,9 @@
       "Preparar campaña de búsqueda sin activar"
     ],
     "paraMoises": [
-      "Claves de Stripe",
-      "Proyecto en Vercel y Neon"
+      "Aprobar y publicar los 5 mensajes de MONETIZACION.md §4 en los grupos de Telegram/WhatsApp",
+      "Pago real de 9,99 € en /es/precios cuando el Mac active Stripe real",
+      "Opcional: dominio placa.cat"
     ],
     "mejoras": [
       "Lanzar primero 3 verticales con convocatoria viva (Auxiliar Administratiu Generalitat 2026, Mossos, TCAE del ICS) con landing por convocatoria, fecha de examen y cuenta atrás.",
@@ -863,7 +944,9 @@
       "Jelly Stack · guía": "https://juegos-casuales.vercel.app/play/jelly-stack/",
       "PR #4": "https://github.com/moisesmodu/vinclia-web/pull/4",
       "Jugar (privado)": "https://claude.ai/artifact/JGnchXupFQeV1Dm1aLb2sv",
-      "Portada del estudio": "https://juegos-casuales.vercel.app/"
+      "Portada del estudio": "https://juegos-casuales.vercel.app/",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/juegos/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md"
     },
     "acciones": [
       {
@@ -909,9 +992,18 @@
       {
         "fecha": "2026-10-28",
         "texto": "Cinco juegos en producción (Egg Truck, Bike Flip, Snow Plow, Rocket Hop, Jelly Stack) con 25 paquetes para portales, MONETIZACION.md y Egg Truck Tycoon para Roblox (PR #4)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Egg Truck enviado a CrazyGames (Awaiting review; build plano sin subcarpeta assets/ porque el subidor la aplana; vídeos de 17 s horizontal y vertical) y a Poki (enlace jugable); página en itch.io creada en borrador con zip jugable, portada y 5 capturas (nuvoletgames.itch.io/egg-truck); cuentas abiertas en GameDistribution y GameMonetize"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: itch.io devlog, r/WebGames, r/playmygame, foro de Phaser, Discord de CrazyGames, hilo de lanzamiento en X/Bluesky y vídeo 1, listos para aprobar; Snow Plow a portales antes del 20/11"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Sesión del Mac: redesplegar juegos-casuales con la marca (DESPLIEGUE.md, «Redespliegue pendiente»)",
@@ -1225,7 +1317,11 @@
     "clientes": 0,
     "canal": "Google en catalán y castellano ('examen C1 català 2027', 'qué nivel de catalán piden las oposiciones'), calendario de convocatorias, vídeos en catalán; anuncios de búsqueda desde el mes 2; B2B con hospitales, academias de oposiciones y ayuntamientos",
     "enlaces": {
-      "Documento de producto": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/M-CATALA-PRODUCTE.md"
+      "Documento de producto": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/M-CATALA-PRODUCTE.md",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/m-catala/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Aprova · web (PR #8)": "https://aprova-catala.vercel.app/",
+      "PR #8": "https://github.com/moisesmodu/vinclia-web/pull/8"
     },
     "acciones": [
       {
@@ -1255,9 +1351,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Aprova («El teu certificat de català, del B1 al C2.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: semana 1 dedicada a la prueba de validez (correos al CNL y academias de Lleida), r/catalan, Telegram de opositores, artículo «Suspès el C1: què fer» y vídeo 1; no se vende hasta superar la validez"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
@@ -1266,7 +1367,7 @@
       "Verificar la licencia de la voz Matxa o entrenar voz propia"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel, Neon y del proveedor de voz",
+      "Arrancar la sesión con el prompt cuando toque (prioridad 8)",
       "Conseguir 20 candidatos al C1 para la prueba de validez"
     ],
     "mejoras": [
@@ -1625,7 +1726,10 @@
     "canal": "TikTok e Instagram, afiliados al 20 %, Navidad; sin anuncios",
     "enlaces": {
       "Lunilla · tienda": "https://lunilla.vercel.app/",
-      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5"
+      "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/g-cuentos/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Web (dominio propio)": "https://lunilla.cat"
     },
     "acciones": [
       {
@@ -1667,9 +1771,30 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado por el Mac en https://lunilla.vercel.app con identidad de marca y portada nueva; pendientes Gelato (Moisés) y la prueba de pago"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cuenta de Gelato abierta por Moisés; clave de API «cartera-lunilla» creada por el Mac, comprobada (API 200) y guardada como GELATO_API_KEY en Vercel (lunilla, production y preview) y en la copia local. Falta: secreto del entorno en la nube, cotización real (npm run cotizar) y pedido de prueba en borrador (DESPLIEGUE.md pasos 6-7)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (PDF 7,90 €, tapa dura 36,90 €), webhook real. Falta HERMANOS20 en real: la clave restringida necesita permiso de Promotion codes/Coupons"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio lunilla.cat comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: plan de afiliadas (mensajes es/ca, lista de búsqueda de 10 cuentas), post para grupos de familias, bio y primeros pies de @lunilla.cuentos, 5 pines, artículo de regalos de Navidad, correo a AMPA; apertura el 15/11 con un vídeo al día hasta el 14/12"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio propio activo con HTTPS: https://lunilla.cat (zona DNS en Vercel, www → apex)"
       }
     ],
     "proximos": [
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
       "Aplicar la identidad de marca de MARCAS.md",
@@ -1677,7 +1802,6 @@
       "Apertura el 15/11"
     ],
     "paraMoises": [
-      "Cuenta en Gelato (imprenta) con clave de API",
       "Comprar el dominio (lunilla.es, contelunilla.com o cuentoslunilla.es)",
       "NIF para los textos legales"
     ],
@@ -2524,8 +2648,7 @@
       "Abrir la sesión L después de B"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel y Neon",
-      "3 dominios"
+      "Arrancar la sesión cuando B tenga ingresos (prioridad 9)"
     ],
     "mejoras": [
       "Vertical DELE A2 'nacionalidad' en inglés, árabe, chino y portugués como entrada mundial, con simulacro completo y corrección IA de la expresión escrita; enlaza con la marca Nuevo en España.",
@@ -2792,7 +2915,7 @@
       "Abrir la sesión O"
     ],
     "paraMoises": [
-      "Claves de Stripe, Vercel, Neon y proveedor de voz"
+      "Arrancar la sesión tras la Navidad de G (prioridad 10)"
     ],
     "mejoras": [
       "Métrica central: palabras correctas por minuto y precisión frente al baremo por curso, en informe semanal con percentil y evolución.",
@@ -3040,6 +3163,9 @@
       "Vista previa ImpuestoClaro": "https://claude.ai/artifact/CRiHRQVake6hS3yq23Uxvq",
       "NetoClaro": "https://netoclaro.vercel.app/",
       "ImpuestoClaro": "https://impuestoclaro.vercel.app/",
+      "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/p-webs-adsense/semana-1.md",
+      "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
+      "Web (dominio propio)": "https://netoclaro.app",
       "ChequeClaro": "https://cheque-claro.vercel.app/",
       "CalculaClaro (portal)": "https://calculaclaro.vercel.app/",
       "HogarClaro": "https://hogarclaro.vercel.app/"
@@ -3063,11 +3189,11 @@
       },
       {
         "fecha": "2026-10-28",
-        "texto": "Fábrica de sitios (Astro) y sitios 1 NetoClaro (nómina) y 2 ImpuestoClaro (impuestos): 40 calculadoras en castellano y catalán, 20 fichas de datos, 238 páginas programáticas, Lighthouse móvil 100; vista previa publicada, pendiente de dominio"
+        "texto": "Fábrica de sitios y sitios 1 (NetoClaro, nómina) y 2 (ImpuestoClaro, impuestos) con 40 calculadoras es/ca (PR #6)"
       },
       {
         "fecha": "2026-10-28",
-        "texto": "PR #6: DESPLIEGUE.md con dos caminos (Cloudflare Pages por API y GitHub Actions, o Vercel Pro) para la sesión del Mac; PARA-MOISES solo con dominios, AdSense, Search Console y NIF si falta"
+        "texto": "La sesión propone Cloudflare Pages (gratis con uso comercial) en vez de Vercel Hobby; pedido: DESPLIEGUE.md para la sesión del Mac en lugar de tareas de configuración para Moisés"
       },
       {
         "fecha": "2026-10-28",
@@ -3080,6 +3206,14 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegados en Vercel Pro (camino B): https://netoclaro.vercel.app/ e https://impuestoclaro.vercel.app/ con aviso legal completo"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "Fábrica de sitios (Astro) y sitios 1 NetoClaro (nómina) y 2 ImpuestoClaro (impuestos): 40 calculadoras en castellano y catalán, 20 fichas de datos, 238 páginas programáticas, Lighthouse móvil 100; vista previa publicada, pendiente de dominio"
+      },
+      {
+        "fecha": "2026-10-28",
+        "texto": "PR #6: DESPLIEGUE.md con dos caminos (Cloudflare Pages por API y GitHub Actions, o Vercel Pro) para la sesión del Mac; PARA-MOISES solo con dominios, AdSense, Search Console y NIF si falta"
       },
       {
         "fecha": "2026-10-28",
@@ -3123,6 +3257,18 @@
       },
       {
         "fecha": "2026-10-31",
+        "texto": "Dominio netoclaro.app e impuestoclaro.es comprado en DonDominio, nameservers a Vercel y añadido al proyecto (www → apex); pendiente de propagación DNS"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing: 6 respuestas en foros con el cálculo hecho (Reddit, Forocoches, Infoautónomos), solicitud de afiliado a Xolo (29 €/cliente) como primer euro antes de AdSense, correos a gestorías y colegios profesionales de Lleida, artículo «Paga extra de Navidad 2026»"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Dominio propio activo con HTTPS: https://netoclaro.app y https://impuestoclaro.es (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
         "texto": "Sitio 4 HogarClaro (vivienda e hipotecas; renombrado desde PisoClaro, que ya existía): 20 calculadoras, 10 fichas con gráfico, 80 programáticas, ilustración propia; 238 páginas"
       },
       {
@@ -3131,16 +3277,16 @@
       }
     ],
     "proximos": [
-      "Sesión del Mac: crear hogarclaro, borrar pisoclaro y redesplegar los 3 sitios y el portal (DESPLIEGUE.md, 31/10)",
-      "Moisés: comprar netoclaro.es, impuestoclaro.es, chequeclaro.com, calculaclaro.com y hogarclaro.es; alta en Xolo, Qonto y Quipu",
-      "Revisar notas de IVA por producto y completar festivos locales de 2027 cuando se publiquen (Madrid, Valencia, Cataluña)",
+      "Cobro directo: productos digitales (kit autónomo, pack despido, comparador de hipotecas, planner de taxes) y widget B2B con Stripe, en construcción",
+      "Moisés: borrar el proyecto pisoclaro en Vercel; comprar dominios; alta en Xolo, Qonto y Quipu",
+      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
+      "Solicitar AdSense cuando los sitios carguen en su dominio",
       "Siguiente sitio según NICHOS.md: NetoClaro México o VatioClaro"
     ],
     "paraMoises": [
-      "Comprar netoclaro.es e impuestoclaro.es (o las alternativas de PARA-MOISES.md)",
-      "Cuenta de AdSense: añadir el sitio, mandar el ca-pub y publicar el mensaje RGPD",
-      "Search Console: verificar los dos dominios y enviar los sitemaps",
-      "NIF para el aviso legal, solo si la sesión del Mac no tiene LEGAL_NIF"
+      "Comprar netoclaro.es e impuestoclaro.es (o la siguiente opción libre)",
+      "Cuenta de AdSense: añadir el sitio 1 y mandar el ca-pub",
+      "Search Console: añadir la propiedad de dominio"
     ],
     "mejoras": [
       "Arquitectura 'herramienta, explicación y dato local': cada calculadora en castellano y catalán con tablas oficiales actualizadas (IRPF estatal y catalán, SMI, cotizaciones, impuestos por comunidad) y fecha visible; es el formato con menor exposición a los resúmenes de IA.",
@@ -3150,10 +3296,7 @@
       "Catalán como ventaja estructural: catalanizar primero las herramientas con más volumen en castellano (sou net, hipoteca, IRPF, dies festius) donde no hay competencia monetizada.",
       "Monetización por capas: AdSense desde el primer día; afiliación financiera selectiva en páginas de alta intención; descartar redes de ventanas emergentes por riesgo de políticas.",
       "Bucle automatizado del agente: Search Console, priorizar herramientas con impresiones sin clics, publicar o actualizar, enviar al índice; revisión humana semanal del 10 % de las páginas nuevas.",
-      "Capa de 'noticia útil' para Discover solo en el sitio de datos locales (cambios normativos, fechas de pago, calendario fiscal) enlazando a la calculadora; abandonar si no supera el 15 % del tráfico en 6 meses.",
-      "Cargar AdSense y el consentimiento de Google tras la primera interacción o a los 3 segundos mantiene Lighthouse en 100 sin perder la primera impresión.",
-      "Calculadoras con el resultado de ejemplo ya calculado en el HTML: Google indexa una cifra real y la página se pinta sin esperar al JavaScript.",
-      "Enlace permanente con los datos del cálculo en la URL y botón de imprimir o guardar en PDF: retención propia que el líder no tiene."
+      "Capa de 'noticia útil' para Discover solo en el sitio de datos locales (cambios normativos, fechas de pago, calendario fiscal) enlazando a la calculadora; abandonar si no supera el 15 % del tráfico en 6 meses."
     ],
     "competidores": [
       {
@@ -3262,13 +3405,6 @@
         "licencia": "no verificado",
         "uso": "Auditoría SEO que cruza el código con datos reales de Search Console; bucle de mejora para el agente",
         "estrellas": "34"
-      },
-      {
-        "nombre": "vitest-dev/vitest",
-        "url": "https://github.com/vitest-dev/vitest",
-        "licencia": "MIT",
-        "uso": "186 pruebas de cálculo de los motores de nómina e impuestos; cada cambio de parámetros pasa por ellas antes de publicar",
-        "estrellas": "15.000"
       }
     ],
     "hallazgos": [
@@ -3281,13 +3417,7 @@
       "Las políticas contra el contenido escalado (marzo de 2024) castigan el volumen sin valor, sea de IA o humano. Lo que funciona: herramienta interactiva, datos propios o locales, autor y fecha, revisión humana por muestreo y eliminación de variantes casi duplicadas.",
       "El catalán está admitido como idioma principal en AdSense y la demanda de utilidades en catalán es enorme sin oferta monetizada: Softcatalà sumó 39,7 millones de visitas en su corrector en un año.",
       "Discover pesa el 30 % o más del tráfico de los medios españoles y el núcleo de febrero de 2026 premia la proximidad geográfica y la autoridad temática de nicho, pero exige publicación fresca y no muestra herramientas estáticas.",
-      "Tiempos reales: hasta los 3 primeros meses no suele haber ingresos; 300 €/mes equivalen a 60.000 a 100.000 páginas vistas al mes con tráfico español y suelen llegar a los 9 a 18 meses por dominio. Hay que presupuestar de 6 a 12 meses sin retorno y trabajar en cartera de 3 a 5 sitios.",
-      "La retención en nómina usa una escala única estatal; el IRPF real depende de la comunidad. Mostrar las dos cifras y la diferencia que sale en la renta es el diferencial frente a las calculadoras de bancos, que solo dan la retención.",
-      "Quien cobra el SMI de 2026 (17.094 €) soporta unos 37 € de retención por paga por el límite del 43 %, aunque la deducción del RDL 5/2026 (590,89 €) deja su cuota en cero: se recupera en la renta. Es un tema con búsquedas y casi sin respuestas claras.",
-      "Verifactu: la fecha legal sigue siendo el 1/1/2027 (sociedades) y el 1/7/2027 (resto) por el RDL 15/2025; Hacienda anunció el 5/10/2026 otro aplazamiento a 2028 sin norma publicada. Con elecciones el 29/11/2026, la incertidumbre dura meses: la página que lo explique bien captará el pico.",
-      "«Cuenta Clara» es una marca de cuentas de ABANCA para autónomos y nóminas: descartada como nombre del sitio 2 (ahora ImpuestoClaro).",
-      "Astro 7 exige Node 22.23 o superior; los entornos de compilación habituales van por detrás. Astro 5 da el mismo resultado estático.",
-      "El plan gratuito de Vercel prohíbe uso comercial; Cloudflare Pages gratuito lo permite y no cuesta nada por sitio: es la opción para los 7 sitios del catálogo."
+      "Tiempos reales: hasta los 3 primeros meses no suele haber ingresos; 300 €/mes equivalen a 60.000 a 100.000 páginas vistas al mes con tráfico español y suelen llegar a los 9 a 18 meses por dominio. Hay que presupuestar de 6 a 12 meses sin retorno y trabajar en cartera de 3 a 5 sitios."
     ],
     "lider": {
       "nombre": "Calcular Sueldo (calcularsueldo.com.ar)",

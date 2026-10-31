@@ -34,3 +34,11 @@ Después, cada push a la rama base que toque `panel/`, `marcas/` o los `.md` pub
 para cualquier otro proyecto que quiera publicarse con cada push.
 
 Después: anotar la URL en `panel/data/cartera.json` → `panelUrl`, y añadir al final de este archivo `Ejecutado el <fecha>`.
+
+Ejecutado el 31/10/2026. Proyecto `cartera` (prj_AlLDF7YHqfMUcty6H6yyNny4f4v9) conectado por Git a moisesmodu/vinclia-web,
+Production Branch = la rama base, Root Directory `panel`. URL de producción:
+https://cartera-moisesmodu-3705s-projects.vercel.app (Vercel Authentication, protección estándar: entra Moisés con su
+cuenta de Vercel). Se quitó el dominio público `cartera-alpha.vercel.app` porque la protección estándar no lo cubría.
+Ignored Build Step real: `git diff HEAD^ HEAD --quiet -- . ../marcas ../marketing '../*.md'` (el comando se ejecuta
+dentro de `panel/`, así que `-- panel` nunca veía cambios). Next.js subido a 15.5.28: Vercel bloquea 15.5.6 por
+vulnerabilidad. El workflow `.github/workflows/panel.yml` no hace falta mientras la integración de Git publique.

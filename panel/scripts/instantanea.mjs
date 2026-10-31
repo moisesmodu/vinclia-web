@@ -143,7 +143,7 @@ const fichas = lista.map((p) => {
 </section>`;
 }).join('');
 
-const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md'], ['marcas', 'MARCAS.md'], ['despliegues', 'DESPLIEGUES.md'], ['producto-m', 'M-CATALA-PRODUCTE.md']]
+const docs = [['plan', 'CARTERA.md'], ['viabilidad', 'VIABILIDAD.md'], ['reglas', 'SESIONES.md'], ['prompts', 'PROMPTS-SESIONES.md'], ['juicio', 'JUICIO.md'], ['marcas', 'MARCAS.md'], ['despliegues', 'DESPLIEGUES.md'], ['producto-m', 'M-CATALA-PRODUCTE.md'], ['marketing', 'marketing/PLAN.md'], ['marketing-calendario', 'marketing/CALENDARIO.md'], ['marketing-aprobar', 'marketing/APROBAR.md'], ['marketing-para-moises', 'marketing/PARA-MOISES.md']]
   .map(([slug, archivo]) => `<section class="vista doc" id="v-${slug}" hidden><p class="volver"><a href="#inicio">Panel</a></p><div class="md">${md(archivo)}</div></section>`).join('');
 
 const html = `<title>La cartera</title>

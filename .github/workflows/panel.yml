@@ -4,7 +4,7 @@ name: Panel · publicar en Vercel
 on:
   push:
     branches: [claude/estrategia-ingresos-recurrentes-tx0rvw]
-    paths: ['panel/**', 'marcas/**', '*.md', '.github/workflows/panel.yml']
+    paths: ['panel/**', 'marcas/**', 'marketing/**', '*.md', '.github/workflows/panel.yml']
   workflow_dispatch:
 jobs:
   publicar:

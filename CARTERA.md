@@ -303,3 +303,4 @@ teléfono y plan Creator de ElevenLabs.
 | 28/10/2026 | `DESPLIEGUES.md`: secretos del entorno y sesión del Mac para desplegar sin pedir nada a Moisés; Stripe real de Numi Mates para todo | — |
 | 28/10/2026 | M redefinido como app de certificados oficiales de catalán B1–C2 (`M-CATALA-PRODUCTE.md`): exámenes, 13 competidores, 10 apps de referencia, prompt nuevo. Stripe 'Numi Mates' conectado | — |
 | 28/10/2026 | Proyecto P: fábrica de sitios (Astro) y sitios 1 NetoClaro y 2 ImpuestoClaro con 40 calculadoras es/ca, 20 fichas de datos, Lighthouse móvil 100 | [#6](https://github.com/moisesmodu/vinclia-web/pull/6) |
+| 31/10/2026 | Sesión de marketing de la cartera: `marketing/` con PLAN, CALENDARIO (4 semanas), SEO (20 búsquedas por proyecto), MEDICION, PARA-MOISES, TAREA-PROGRAMADA y 53 piezas de la semana 1 listas para aprobar en `APROBAR.md` (A, N, B, G, P, Juegos, M); panel con pestañas Marketing y Aprobar | — |

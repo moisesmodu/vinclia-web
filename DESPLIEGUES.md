@@ -101,7 +101,7 @@ de producción y el estado `lanzado` de cada uno, y hacer push a la rama base.
 | #2 | A · CCSE en tu idioma | `claude/a-ccse` | sí | Proyecto de Vercel obligatoriamente `ccse-en-tu-idioma` (la app Android ya lleva ese dominio); `scripts/stripe-configurar.mjs` propio |
 | #4 | Juegos · Egg Truck | `claude/juegos-primer-juego` | sí | Solo Vercel: proyecto `juegos-casuales`, Root Directory `proyectos/juegos`; sin Neon, Stripe ni Resend |
 | #5 | G · Lunilla | `claude/g-cuentos` | sí | Neon `cartera-g-cuentos` (aws-eu-west-2), Vercel Pro con Root Directory `proyectos/g-cuentos` y Blob store, `scripts/stripe-configurar.mjs` (PDF 7,90 €, tapa dura 36,90 €), Resend; Gelato lo abre Moisés |
-| — | Panel «La cartera» | rama base | `panel/DESPLIEGUE.md` | Proyecto `cartera`, Root Directory `panel`, Next.js estático, integración Git para que se publique con cada push; protección con contraseña si hay plan Pro |
+| — | Panel «La cartera» | rama base | `panel/DESPLIEGUE.md` | ✔ Ejecutado el 31/10: proyecto `cartera`, Root Directory `panel`, integración Git (se publica con cada push a la rama base), Vercel Authentication. https://cartera-moisesmodu-3705s-projects.vercel.app |
 | #6 | P · NetoClaro e ImpuestoClaro | `claude/p-webs-adsense-fabrica` | sí | Dos caminos: (A) Cloudflare Pages con wrangler y el workflow `p-webs-adsense.yml`, que publica solo en cada push a la base si existe `CLOUDFLARE_API_TOKEN`; (B) Vercel Pro (`netoclaro`, `impuestoclaro`, Root Directory `proyectos/p-webs-adsense/fabrica`). Variable `SITIO` y `LEGAL_*`; sin Neon ni Stripe. Dominios, AdSense y Search Console los abre Moisés |
 
 Si una acción exige la sesión del navegador de Moisés (crear un token, aprobar un pago de dominio), se le pide solo
@@ -131,3 +131,19 @@ Ningún proyecto muestra el correo personal de Moisés ni ningún correo de Algo
 se verifica el dominio en Resend y se redespliega. Tras el cambio del 28/10, la sesión del Mac cambia el secreto
 `LEGAL_EMAIL` del entorno a `hola@numimates.com` y **redespliega todos los proyectos** cuando sus PR lleven el commit
 del correo.
+
+### Dominios propios en Resend (31/10)
+
+Verificados en Resend (región eu-west-1) con DKIM `resend._domainkey`, SPF/MX de retorno en `send`, CNAME `rsend` y
+DMARC `_dmarc` `v=DMARC1; p=none;`, todo en la zona DNS de Vercel. **Los remitentes NO se han cambiado todavía**: siguen
+en `noreply@numimates.com` hasta que Moisés lo decida. Para cambiar, se edita la variable y se redespliega:
+
+- `ccsefacil.com` (A): **verified**. Proyecto Vercel `ccse-en-tu-idioma`, variable `CORREO_REMITENTE` → `noreply@ccsefacil.com`.
+- `tuspapeles.app` (N): **verified**. Proyecto Vercel `nuevo-en-espana`, variable `CORREO_REMITENTE` → `noreply@tuspapeles.app`.
+- `lunilla.cat` (G): **verified**. Proyecto Vercel `lunilla`, variable `CORREO_REMITENTE` → `noreply@lunilla.cat` (`CORREO_SOPORTE` se queda en hola@numimates.com mientras no haya buzón).
+- `oposita.digital` (B): **verified**. Proyecto Vercel `placa-oposicions`, variable `CORREO_REMITENTE` → `noreply@oposita.digital`.
+- `netoclaro.app` e `impuestoclaro.es` (P): sin correo transaccional, no se dan de alta en Resend.
+
+**Recepción:** no hay buzón en ningún dominio propio y no se ha creado MX de recepción en el raíz, así que `hola@<dominio>`
+no recibe correo. Hasta que haya buzón o reenvío, `LEGAL_EMAIL`, `reply-to` y el correo de contacto siguen en
+`hola@numimates.com`.
