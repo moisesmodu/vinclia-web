@@ -43,6 +43,21 @@ describe('productos.json', () => {
   });
 });
 
+describe('venta: enlace de pago y bloque bajo el resultado', () => {
+  it('sin Payment Link no se ofrece; con uno válido de Stripe, sí; con otro dominio, no', async () => {
+    const { productoPara, enlacePago, producto } = await import('../src/lib/productos');
+    const p = producto('pack-despido')!; // las pruebas compilan como NetoClaro
+    delete process.env[p.variablePago];
+    expect(productoPara('finiquito')).toBeNull();
+    process.env[p.variablePago] = 'https://ejemplo.com/pagar';
+    expect(enlacePago(p)).toBe('');
+    process.env[p.variablePago] = 'https://buy.stripe.com/test_00w8wIaaN6wyfbv1bJbEA04';
+    expect(productoPara('finiquito')?.id).toBe('pack-despido');
+    expect(productoPara('sueldo-neto')).toBeNull();
+    delete process.env[p.variablePago];
+  });
+});
+
 /* ------------------------------------------------------------------ Kit del autónomo 2027 */
 
 const P27 = params('es', 2027);
