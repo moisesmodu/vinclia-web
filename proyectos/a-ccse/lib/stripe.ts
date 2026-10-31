@@ -101,7 +101,7 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
     // Recuperación (SESIONES.md «Monetizar primero»): caduca a las 3 h y Stripe da un enlace de recuperación de 30 días.
     expires_at: Math.floor(Date.now() / 1000) + 3 * 3600,
     after_expiration: { recovery: { enabled: true, allow_promotion_codes: true } },
-    consent_collection: { promotions: 'auto' },
+    // Sin consent_collection: Stripe no lo admite en cuentas de España («not available in your country»).
     client_reference_id: opts.usuarioId,
     customer_email: opts.email,
     locale: stripeLocale,
