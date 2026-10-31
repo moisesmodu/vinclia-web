@@ -9,7 +9,7 @@ Si vas a pedir la nacionalidad española por residencia, tarde o temprano te toc
 - **Precio:** 85 €, con dos oportunidades incluidas.
 - **Formato:** 25 preguntas tipo test en 45 minutos; apruebas con 15 aciertos (60 %).
 - **Idioma:** el examen es siempre en español.
-- **Fechas:** el último jueves de cada mes, salvo agosto y diciembre.
+- **Fechas:** el último jueves de cada mes, salvo agosto y diciembre. La próxima es la de [noviembre de 2026](/es/guia/examen-ccse-noviembre-2026) (inscripción hasta el 5 de noviembre); la [inscripción para enero de 2027](/es/guia/inscripcion-ccse-enero-2027) abre el 23 de noviembre.
 
 ## Quién tiene que hacerlo
 

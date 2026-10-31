@@ -9,12 +9,12 @@ Instituto Cervantes. Se cita en el pie de todas las páginas y en cada pregunta,
 
 ## Qué hace
 - **Test por tema** (5 tareas) con corrección al momento. Muestra la pregunta en español, la traducción y la explicación en el idioma del usuario, la página del manual y la lectura en voz alta.
-- **Simulacro** como el examen real: 25 preguntas (10/3/2/3/7), 45 minutos y apto con 15. Da la nota y deja revisar las respuestas. Al final aparece la tarjeta **"Siguiente paso: tus trámites"**, que apunta a `/nuevo-en-espana` (el gancho al proyecto N).
+- **Simulacro** como el examen real: 25 preguntas (10/3/2/3/7), 45 minutos y apto con 15. Da la nota y deja revisar las respuestas. Al final aparece la tarjeta **"Siguiente paso: tus trámites"**, que apunta a la guía de nacionalidad de Nuevo en España (https://tuspapeles.app) con `utm_source=a-ccse` (venta cruzada medible).
 - **Repaso espaciado** de las preguntas falladas con FSRS (`ts-fsrs`, MIT).
 - **Progreso**: índice "listo para el examen", acierto por tema, historial de simulacros y cuenta atrás hasta la convocatoria.
   Sin cuenta se guarda en el dispositivo. Con cuenta de correo se sincroniza en Neon y se fusiona sin perder datos.
 - **Gratis:** 25 preguntas fijas, con el mismo reparto que el examen, y 1 simulacro. **Pago único de 9,99 € por 90 días** con Stripe Checkout.
-- Página **"Cómo es el examen"** en 8 idiomas, 20 guías SEO, 300 páginas indexables (una por pregunta) y un sitemap con hreflang.
+- Página **"Cómo es el examen"** en 8 idiomas, 22 guías SEO (con `FAQPage`), 300 páginas indexables (una por pregunta) y un sitemap con hreflang. **URL pública: https://ccsefacil.com** (canonical); `ccse-en-tu-idioma.vercel.app` sigue sirviendo sin redirección por la app Android y el webhook. Analítica sin cookies con Vercel Web Analytics.
 - PWA instalable y sin conexión, más la app Android (TWA) en `android/`.
 
 ## Desplegar

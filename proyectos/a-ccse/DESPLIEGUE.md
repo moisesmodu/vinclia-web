@@ -11,7 +11,8 @@
 | Repositorio y rama | `moisesmodu/vinclia-web`, rama `claude/a-ccse` (después, la base cuando se fusione el PR #2) |
 | Root Directory | `proyectos/a-ccse` |
 | Framework, instalación y build | Next.js · `npm install` · `npm run build` (genera Prisma, aplica migraciones si hay `DATABASE_URL` y compila) |
-| URL de producción | `https://ccse-en-tu-idioma.vercel.app`. **Ese nombre es obligatorio**: la app Android ya publicada lo lleva dentro. |
+| URL pública (canonical, sitemap, hreflang) | **`https://ccsefacil.com`** (dominio comprado el 31/10/2026, DNS en Vercel; `www` redirige al apex). `NEXT_PUBLIC_SITE_URL=https://ccsefacil.com` en production. |
+| URL técnica | `https://ccse-en-tu-idioma.vercel.app` **se mantiene y no se redirige**: la app Android (TWA, `assetlinks.json`) y el webhook de Stripe la llevan dentro. Google ve una sola URL canónica (ccsefacil.com) en las dos. |
 | Proyecto de Neon | `cartera-a-ccse`, región `aws-eu-west-2`, Postgres 16 |
 | Stripe | Cuenta **Numi Mates** (`acct_1UKx8H4NbKzEdcfB`). Producto `Cartera · CCSE · Acceso 3 meses`, precio 9,99 EUR pago único con IVA incluido, `lookup_key` `a-ccse-acceso-90d-999eur`, `metadata.proyecto=a-ccse` |
 | Eventos del webhook | `checkout.session.completed`, `checkout.session.async_payment_succeeded` → `https://ccse-en-tu-idioma.vercel.app/api/stripe/webhook` |
@@ -21,7 +22,8 @@
 |---|---|---|
 | `DATABASE_URL` | `connection_uri` del proyecto de Neon (paso 2) | Sí |
 | `AUTH_SECRET` | `openssl rand -base64 48` (nueva, solo para este proyecto) | Sí |
-| `NEXT_PUBLIC_SITE_URL` | `https://ccse-en-tu-idioma.vercel.app` | Sí |
+| `NEXT_PUBLIC_SITE_URL` | `https://ccsefacil.com` (antes `https://ccse-en-tu-idioma.vercel.app`) | Sí |
+| `GOOGLE_SITE_VERIFICATION` | Valor de la etiqueta de Search Console (propiedad «prefijo de URL»). Alternativa sin variable: propiedad «Dominio» con un registro TXT en los DNS de Vercel (`vercel dns add ccsefacil.com @ TXT "google-site-verification=…"`). Sin la variable no se emite la etiqueta. | No |
 | `STRIPE_TEST_SECRET_KEY` | Secreto del entorno (modo prueba de Numi Mates) | Sí, en el desarrollo |
 | `STRIPE_SECRET_KEY` | Secreto del entorno (modo real). Solo se usa con `STRIPE_MODO=live` | Al lanzar |
 | `STRIPE_MODO` | `test` ahora; `live` el día del lanzamiento | Sí |
@@ -143,3 +145,11 @@ Ejecutado el 2026-10-28
 El proyecto de Vercel `ccse-en-tu-idioma` se ha **desconectado de GitHub**: cada push a cualquier rama del repo lanzaba un build que fallaba («Root Directory "proyectos/a-ccse" does not exist»). Se despliega con el CLI desde una copia de la rama, como los demás proyectos.
 
 Ejecutado el 2026-10-28
+
+## SEO (31/10/2026, sesión de marketing)
+- Analítica sin cookies: `@vercel/analytics` (`<Analytics />` en `app/[locale]/layout.tsx`); Web Analytics ya está activado en el proyecto de Vercel. Recoge ruta y `utm_*` de cada pieza de `marketing/`.
+- Venta cruzada con N: los botones «Siguiente paso» (fin del simulacro y portada) apuntan a `https://tuspapeles.app/<idioma>/guias/nacionalidad?utm_source=a-ccse&utm_medium=cruzada&utm_campaign=…` (`enlaceN()` en `lib/config.ts`); `/nuevo-en-espana` redirige allí (308).
+- Guías nuevas: `/es/guia/examen-ccse-noviembre-2026` e `/es/guia/inscripcion-ccse-enero-2027`; todas las guías emiten `FAQPage` a partir de su sección «Preguntas frecuentes».
+- Search Console: cuando Moisés dé el valor, `GOOGLE_SITE_VERIFICATION` en Vercel o TXT en DNS; después enviar `https://ccsefacil.com/sitemap.xml`.
+- Despliegue de estos cambios (sesión del Mac o cualquier sesión con `VERCEL_TOKEN`), desde la raíz del repo en la rama `claude/a-ccse`:
+  `npx vercel@latest link --yes --project ccse-en-tu-idioma --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID && npx vercel@latest deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID`

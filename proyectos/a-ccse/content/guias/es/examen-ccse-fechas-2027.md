@@ -7,6 +7,8 @@ clave: examen CCSE fechas 2027
 
 El examen CCSE se celebra varias veces al año, así que no tienes que esperar mucho para presentarte. En esta página tienes las **fechas del examen CCSE de 2027**, los plazos de inscripción y lo que debes hacer para apuntarte. Recuerda que el calendario lo fija el Instituto Cervantes y puede cambiar: **confirma siempre las fechas en examenes.cervantes.es**.
 
+Si todavía llegas a la de este año, tienes la guía del [examen CCSE de noviembre de 2026](/es/guia/examen-ccse-noviembre-2026); si no, la de la [inscripción para enero de 2027](/es/guia/inscripcion-ccse-enero-2027), que abre el 23 de noviembre.
+
 ## La regla general: el último jueves del mes
 
 El CCSE se celebra el **último jueves de cada mes, salvo en agosto y diciembre**. Por eso hay diez convocatorias al año. La inscripción cierra **unas tres semanas antes** de cada examen, así que conviene apuntarse con margen.
