@@ -1,0 +1,92 @@
+{
+  "id": "c1-15",
+  "titulo": "Eventos: cuando pulso el botón…",
+  "descripcion": "Empiezas la semana 3 con secuencias de luces y con los eventos: juegos de semáforo y de robot teledirigido en casa, la diferencia entre «al empezar» y «al pulsar» y su equivalente en Scratch.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r3-1", "imprimible:r3-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Eventos: cuando pulso el botón…",
+      "subtitulo": "Semana 3 · Actividad 1",
+      "narracion": "Empieza la semana 3 del plan de cuatro semanas. En la semana 1 trabajasteis las órdenes en orden y en la semana 2, los bucles y los patrones. Esta semana el robot empieza a decidir. Son cuatro clases: eventos, condiciones, funciones y, al final, contar y repetir hasta que pasa algo. Es la semana con más ideas nuevas. Si va despacio, no pasa nada: alargadla unos días antes de pasar a la semana 4."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Calentamiento: luces en orden",
+      "puntos": [
+        "El bloque Luz enciende un color y no mueve a Bit",
+        "La luz se queda así hasta que otra Luz la cambia",
+        "El orden cambia el mensaje, como en un semáforo",
+        "Dos colores dentro de un bucle hacen parpadeos"
+      ],
+      "narracion": "Antes de los eventos hay un calentamiento con luces. Bit tiene un bloque Luz que enciende su luz del color que elijas, sin moverlo. La luz se queda encendida hasta que otro bloque la cambia. Si pones varias, se encienden en orden, y el orden cambia el mensaje, como en un semáforo. Y con dos colores dentro de un bucle, la luz parpadea como un faro. Un aviso: si tu peque es sensible a las luces que parpadean, evitad los parpadeos rápidos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El semáforo de casa, sin pantalla",
+      "pasos": [
+        "Cuatro papeles: verde, amarillo, rojo y azul",
+        "Una persona es el semáforo y la otra, el coche",
+        "Verde, camina; amarillo, despacio; rojo, estatua",
+        "Después, de faro: amarillo, amarillo, azul",
+        "El barco repite la señal con palmadas"
+      ],
+      "narracion": "La primera actividad sin pantalla es el semáforo de casa. Haced cuatro papeles de colores. Una persona hace de semáforo y enseña un color cada vez, en el orden que quiera. La otra hace de coche: con el verde camina, con el amarillo va despacio y con el rojo se queda como una estatua. Después, haced de faro: inventad una señal y quien hace de barco la repite con palmadas. Aprovechad para recordar cómo se cruza la calle con el semáforo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r3-1:7",
+      "narracion": "En la app, luces y movimiento se mezclan. Aquí Bit tiene que encender la luz amarilla en la casilla amarilla y la azul en la azul. Antes de ejecutar, pide que señale con el dedo dónde se encenderá cada luz. Ahora mira. Cada luz se enciende justo después de los Adelante que llevan a Bit a su casilla. El error típico es poner la Luz antes de los Adelante. Si pasa, que siga a Bit con el dedo y diga dónde está cuando se enciende."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Pasa algo… y el programa reacciona. Eso es un evento.",
+      "narracion": "Ahora la idea central de hoy. Pulsas el timbre y suena. Tocas el interruptor y se enciende la luz. Pulsas el botón del ascensor y viene a tu piso. Algo pasa y una máquina reacciona: eso es un evento. Pregunta en casa qué aparatos hacen algo cuando pulsas un botón. Saldrán el microondas, el timbre o el mando de la tele. Hasta ahora, los programas iban de arriba abajo y se acababan. Con los eventos, el programa espera y reacciona."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r3-3:7",
+      "narracion": "En la app, Bit tiene un mando con dos botones, A y B. Los bloques de Al empezar se hacen solos, una vez, cuando se toca Ejecuta. Los de Al pulsar A esperan. Antes de ejecutar, pregunta: ¿qué pasará al tocar Ejecuta? ¿Y cada vez que pulse A? Ahora mira. Al ejecutar, solo se hace lo de Al empezar, y Bit se queda esperando. Cada vez que se pulsa A, se hacen sus bloques otra vez. Si nadie pulsa, no pasa nada, como con el timbre."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El robot teledirigido, sin pantalla",
+      "pasos": [
+        "Dos papeles: uno con una A y otro con una B",
+        "A, un paso adelante; B, gira a la derecha",
+        "Llevad al robot hasta el sofá o la puerta",
+        "Sin papel, el robot espera quieto",
+        "Cambiad lo que hace B, por ejemplo aplaudir"
+      ],
+      "narracion": "La segunda actividad sin pantalla es el robot teledirigido, y suele encantar. Una persona hace de robot y la otra tiene el mando: dos papeles, uno con una A y otro con una B. El robot solo se mueve cuando le enseñan un papel. Quien tiene el mando lo lleva hasta un sitio de casa. Y si hay que girar a la izquierda y B solo gira a la derecha, el truco es B, B, B. Tres cuartos de vuelta a la derecha hacen lo mismo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r3-3:9",
+      "narracion": "Esta diapositiva resume lo que más cuesta. Al empezar se hace solo, una vez. Al pulsar A se hace solo cuando pulsas A. Pulsar B no hace los bloques de A. Y si pulsas dos veces, se hace dos veces. El error típico es poner los bloques en Al empezar cuando tenían que ir en el botón, y Bit lo hace todo de golpe. La pregunta que ayuda es esta: ¿cuándo quieres que pase, al principio o cuando alguien pulse A?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En Scratch funciona igual",
+      "puntos": [
+        "«Al hacer clic en la bandera verde» es como Al empezar",
+        "«Al presionar tecla espacio» es como Al pulsar A",
+        "Elegid otra tecla: flecha derecha para mover 10 pasos",
+        "Cada tecla hace solo sus bloques"
+      ],
+      "narracion": "En Scratch, los eventos tienen su propio grupo, llamado Eventos. El bloque al hacer clic en la bandera verde hace lo mismo que Al empezar. El bloque al presionar tecla espacio es como un botón: se puede cambiar la tecla. Probad a hacer un mando con dos teclas: la flecha derecha mueve 10 pasos y la flecha arriba hace decir hola al personaje. Es la base de todos los videojuegos, y la usaréis mucho en la semana 4."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "Las luces se encienden en orden: el orden es el mensaje",
+        "Un evento: pasa algo y el programa reacciona",
+        "Al empezar se hace una vez; un botón, cada vez",
+        "Tarea: el robot teledirigido por casa"
+      ],
+      "narracion": "Resumiendo. Las luces se encienden en orden, y el orden cambia el mensaje. Un evento es algo que pasa y hace que el programa reaccione. Lo de Al empezar se hace solo una vez; lo de un botón, cada vez que alguien lo pulsa. Tu tarea: el robot teledirigido por casa, cambiando los papeles. En Numi Tech, las sesiones son Luces de colores y Cuando pulso el botón. En los recursos tienes las tarjetas y las cuadrículas. En la próxima clase, el robot ve el mundo."
+    }
+  ]
+}

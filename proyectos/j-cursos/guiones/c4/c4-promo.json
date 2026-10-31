@@ -1,0 +1,33 @@
+{
+ "id": "c4-promo",
+ "titulo": "Vídeo promocional",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Bienestar digital en familia",
+   "subtitulo": "Guía gratuita para padres de niños de 8 a 12 años",
+   "narracion": "Tu hijo empieza a tener móvil, tableta o consola. ¿Cuántas normas pones? ¿Cuáles? ¿Y cómo consigues que se cumplan sin pelear cada día? Esta guía gratuita te lo pone fácil."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "Lo que de verdad importa",
+   "puntos": [
+    "Contraseñas y cuentas de toda la familia",
+    "Bulos, imágenes falsas e inteligencia artificial",
+    "Pantallas, videojuegos y compras en el juego",
+    "Qué hacer ante el ciberacoso"
+   ],
+   "narracion": "En unos cincuenta minutos repasamos lo que de verdad importa: contraseñas y cuentas, bulos e imágenes falsas, pantallas, videojuegos y compras dentro del juego, y qué hacer si hay ciberacoso."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Vuestro plan digital familiar",
+   "puntos": [
+    "Una conversación concreta en cada clase",
+    "Algo que hacer hoy, en diez minutos",
+    "Un plan familiar para imprimir y firmar"
+   ],
+   "narracion": "Cada clase te deja una conversación concreta y algo que hacer hoy, en diez minutos. Y al final, vuestro plan digital familiar, para imprimir y firmar juntos. Sin alarmismo y sin prohibirlo todo: con criterio."
+  }
+ ]
+}

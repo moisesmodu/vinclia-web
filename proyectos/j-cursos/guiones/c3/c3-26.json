@@ -1,0 +1,100 @@
+{
+  "id": "c3-26",
+  "titulo": "La Ley Europea de IA para pequeños negocios",
+  "descripcion": "Qué te pide de verdad el Reglamento europeo de IA si eres autónomo o pequeño negocio: formación suficiente, avisar cuando un cliente habla con un chatbot e indicar los contenidos que imitan a personas reales.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:aviso-chatbot"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La Ley Europea de IA para pequeños negocios",
+      "subtitulo": "Lo que te toca, con fechas, y lo que no",
+      "narracion": "Seguro que has oído hablar de la Ley Europea de IA. Oficialmente es el Reglamento europeo de inteligencia artificial, aprobado en 2024. Hay mucho ruido alrededor, y mucha gente que vende miedo. En esta clase vamos a lo concreto. Qué obligaciones afectan a un autónomo o a un pequeño negocio que usa IA para trabajar, desde cuándo y qué tienes que hacer. Te adelanto algo. Son menos de las que crees, y las dos principales se cumplen con sentido común y un par de textos bien escritos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Las fechas que te importan",
+      "columnas": ["Desde", "Qué se aplica", "Te afecta si"],
+      "filas": [
+        ["2 de febrero de 2025", "Alfabetización en IA, art. 4", "Usas IA en tu negocio"],
+        ["2 de agosto de 2026", "Transparencia, art. 50", "Tienes chatbot o imitas personas"],
+        ["Finales de 2027 y 2028", "Alto riesgo, aplazado", "Escribir con ChatGPT no lo es"]
+      ],
+      "narracion": "Tres fechas. Desde el 2 de febrero de 2025 se aplica la alfabetización en IA, el artículo 4. Quien usa IA en la empresa debe tener formación suficiente. Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia, el artículo 50. Si un cliente habla con un chatbot, hay que avisarle de que es una IA. Y los contenidos que imitan a personas reales deben indicarse. El paquete llamado Ómnibus digital, de 2026, aplazó solo las obligaciones de alto riesgo, a finales de 2027 y 2028. No aplazó ni la transparencia ni la alfabetización."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un autónomo que usa ChatGPT para escribir correos o publicaciones no es un sistema de alto riesgo.",
+      "narracion": "Esta frase te quita un peso de encima. Las obligaciones más duras del reglamento son para los sistemas de alto riesgo, y están aplazadas. Usar ChatGPT, Gemini o Claude para redactar correos, presupuestos o publicaciones no entra ahí. Así que, si alguien te dice que necesitas una auditoría carísima por escribir tus posts con IA, desconfía. Lo que sí te toca son dos cosas. Formarte, y ser transparente cuando un cliente habla con una máquina o ve contenido que imita a una persona real."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Alfabetización en IA: qué hacer en la práctica",
+      "puntos": [
+        "Que quien use IA en tu negocio sepa lo básico",
+        "Qué datos no se meten y que todo se revisa",
+        "Que la IA se equivoca y se inventa cosas",
+        "Una norma interna escrita y compartida",
+        "Apuntar quién se ha formado y cuándo"
+      ],
+      "narracion": "Empezamos por la alfabetización. La ley pide formación suficiente para quien usa IA en la empresa. No dice que tengas que hacer un máster. En un negocio pequeño, lo razonable es que todo el que use IA sepa lo básico. Qué datos no se meten, que todo se revisa y que la IA se equivoca. Este curso ya es formación. La norma interna de la clase sobre privacidad, también. Es buena idea apuntar quién se ha formado y cuándo, en una hoja sencilla. Si tienes dudas sobre qué es suficiente en tu caso, pregúntalo a un profesional."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un chatbot que atiende a tus clientes",
+      "mal": "«Hola, soy Laura, ¿en qué te ayudo?» y el cliente cree que habla con una persona.",
+      "bien": "«Hola, soy el asistente virtual del salón y funciono con IA. Si prefieres a una persona, escribe PERSONA.»",
+      "narracion": "Ahora la transparencia. Imagina que pones un chatbot en tu web o en tu WhatsApp para contestar dudas. A la izquierda, el chatbot se presenta con un nombre de persona y el cliente no sabe que es una máquina. Desde el 2 de agosto de 2026, eso no se puede hacer. A la derecha, el chatbot dice desde el primer mensaje que es un asistente con IA. Y además ofrece hablar con una persona. Eso último no lo hemos sacado de la ley. Es simplemente buena atención al cliente."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: el aviso de tu chatbot",
+      "usuario": "Tengo una peluquería en Lleida y voy a poner un asistente con IA en la web para responder dudas sobre horarios y precios. Escribe tres versiones del primer mensaje del asistente, de dos líneas como máximo. Debe quedar claro que es una IA y cómo hablar con una persona del salón.",
+      "ia": "1. Hola, soy el asistente virtual del salón y funciono con inteligencia artificial. Si prefieres hablar con el equipo, llámanos o escribe PERSONA.\n2. ¡Bienvenida! Te atiende un asistente con IA. Para hablar con una persona, escribe EQUIPO.\n3. Hola. Soy una IA que responde dudas sobre horarios y precios. Si quieres hablar con alguien del salón, dímelo.",
+      "narracion": "Con esta instrucción tienes el aviso en un minuto. Cuéntale tu negocio y para qué sirve el asistente. Pídele varias versiones cortas y que quede claro que es una IA. Luego eliges la que más se parezca a tu forma de hablar. Fíjate en que las tres dejan una salida hacia una persona. Revisa que lo que prometes es real. Si dices que alguien del salón contestará, asegúrate de que alguien mira esos mensajes. En los recursos tienes la plantilla de aviso de chatbot con más ejemplos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: indicar contenido que imita a una persona",
+      "usuario": "He hecho un vídeo promocional con un avatar generado con IA que imita mi cara y mi voz. Dame cuatro formas breves y claras de indicarlo en la publicación y en el propio vídeo, en castellano y sin tecnicismos.",
+      "ia": "1. Vídeo generado con IA a partir de mi imagen y mi voz.\n2. Este avatar está creado con inteligencia artificial.\n3. Contenido hecho con IA: no es una grabación real.\n4. Voz e imagen recreadas con IA.",
+      "narracion": "La otra obligación de transparencia afecta a los contenidos que imitan a personas reales, lo que se suele llamar deepfakes. Si haces un vídeo con un avatar que imita tu cara o tu voz, debes indicar que está generado con IA. Esta instrucción te da varias fórmulas para ponerlo en la publicación y sobreimpreso en el vídeo. Y una norma del curso que va más allá. Nunca imites a otras personas reales, ni famosos, ni clientes, ni competidores. Aunque lo indiques, te puedes meter en un buen lío."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "¿Qué me toca a mí?",
+      "columnas": ["Si haces esto", "Qué te pide la ley"],
+      "filas": [
+        ["Escribes correos o posts con IA", "Formación suficiente"],
+        ["Chatbot que habla con clientes", "Avisar de que es una IA"],
+        ["Vídeo o voz que imita a alguien real", "Indicar que es generado"],
+        ["Usas IA para decidir sobre personas", "Consulta a un profesional"]
+      ],
+      "narracion": "Esta tabla es tu chuleta. Si escribes correos o publicaciones con IA, te toca la formación suficiente. Si tienes un chatbot que habla con clientes, avisar de que es una IA. Si publicas vídeo o voz que imita a una persona real, indicar que es generado. Y una fila de prudencia. Si algún día usas IA para decidir sobre personas, por ejemplo para filtrar currículums, eso ya es otra liga. No lo hagas sin consultar antes a un profesional. Para tu caso concreto, tu gestoría o un asesor te dirán qué aplica."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Apunta quién usa IA en tu negocio y para qué",
+        "Anota la fecha en que habéis hecho esta formación",
+        "Si tienes chatbot, revisa su primer mensaje",
+        "Si no avisa de que es IA, cámbialo hoy",
+        "Revisa si tienes vídeos o voces que imiten a alguien"
+      ],
+      "narracion": "Tu tarea de hoy, diez minutos. Haz una lista rápida de quién usa IA en tu negocio y para qué. Anota la fecha en que habéis hecho esta formación. Si tienes un chatbot en la web, en WhatsApp o en redes, escríbele como si fueras un cliente y mira su primer mensaje. Si no dice que es una IA, cámbialo hoy con la instrucción de esta clase. Y repasa tus publicaciones. Si hay algún vídeo o voz que imite a una persona real sin indicarlo, añade la etiqueta."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Alfabetización desde el 2 de febrero de 2025",
+        "Transparencia desde el 2 de agosto de 2026",
+        "Chatbot: avisa de que es IA desde el primer mensaje",
+        "Contenido que imita a personas: indícalo",
+        "Escribir con ChatGPT no es alto riesgo"
+      ],
+      "narracion": "Repasamos. Desde el 2 de febrero de 2025, quien usa IA en tu negocio debe tener formación suficiente. Desde el 2 de agosto de 2026, si un cliente habla con un chatbot, hay que avisarle de que es una IA. Y los contenidos que imitan a personas reales se indican. El Ómnibus digital solo aplazó el alto riesgo, y escribir con ChatGPT no lo es. Cerramos así la sección legal. En la siguiente empezamos a ganar horas con automatizaciones."
+    }
+  ]
+}

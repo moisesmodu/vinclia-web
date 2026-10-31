@@ -1,0 +1,58 @@
+{
+  "seccion": 7,
+  "titulo": "Cuestionario: ganar horas con automatizaciones",
+  "preguntas": [
+    {
+      "pregunta": "Quieres que la IA resuma las condiciones de un contrato con un proveedor. ¿Qué instrucción te permite comprobar mejor que no se ha inventado nada?",
+      "respuestas": [
+        "«Resúmeme esto en pocas palabras»",
+        "«Lista lo que me obliga a algo y copia la frase exacta del contrato donde aparece»",
+        "«Dime si me conviene firmarlo»"
+      ],
+      "correcta": 1,
+      "explicacion": "Pedir la frase exacta te deja buscarla en el original y comprobarla. La IA te ayuda a leer, no a interpretar: si una cláusula te preocupa, llévala a tu gestoría o a un abogado."
+    },
+    {
+      "pregunta": "En una automatización como «formulario web, hoja de cálculo y correo de confirmación», ¿qué es el disparador?",
+      "respuestas": [
+        "El correo de confirmación que recibe el cliente",
+        "La hoja de cálculo donde se guardan los datos",
+        "El hecho que pone en marcha el flujo: que llega una solicitud nueva",
+        "El plan de pago de la herramienta de automatización"
+      ],
+      "correcta": 2,
+      "explicacion": "Una automatización es un disparador (cuando pasa algo, por ejemplo una fila nueva o una solicitud nueva) y una o varias acciones (guardar, enviar un correo). Se monta con bloques en Zapier o Make, sin programar."
+    },
+    {
+      "pregunta": "Montas un flujo para las reseñas nuevas de Google. ¿Cuál es la forma recomendada en el curso?",
+      "respuestas": [
+        "El flujo prepara un borrador con IA y te avisa; tú lo revisas y lo publicas a mano",
+        "El flujo publica la respuesta automáticamente para ganar tiempo",
+        "El flujo envía el nombre y la foto de quien opina a la IA para personalizar"
+      ],
+      "correcta": 0,
+      "explicacion": "Automatiza el borrador, nunca la decisión. Una respuesta automática a una mala reseña o con un dato inventado queda publicada con tu nombre. Envía a la IA solo el texto de la reseña."
+    },
+    {
+      "pregunta": "Configuras un agente de IA que puede hacer cosas por ti en tus herramientas. ¿Qué permiso NO deberías darle?",
+      "respuestas": [
+        "Buscar y comparar proveedores en internet",
+        "Preparar borradores de correo para que los revises",
+        "Ordenar archivos de una carpeta concreta",
+        "Acceso a tu banco o a pagos"
+      ],
+      "correcta": 3,
+      "explicacion": "Si un agente se equivoca, no tienes un texto malo: tienes un correo enviado o una compra hecha. Que pida confirmación antes de enviar, comprar o borrar, y nunca le des acceso al banco ni a pagos."
+    },
+    {
+      "pregunta": "En tu cuaderno de horas, ¿qué debes incluir en el tiempo «con IA» de cada tarea?",
+      "respuestas": [
+        "Solo los segundos que tarda la IA en escribir",
+        "El tiempo de pedir, revisar y corregir, hasta que el resultado está listo",
+        "Una estimación de memoria al final del mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Si no incluyes la revisión, no mides el ahorro real. Apunta en el momento, no de memoria, y deja que la hoja de cálculo haga las cuentas."
+    }
+  ]
+}

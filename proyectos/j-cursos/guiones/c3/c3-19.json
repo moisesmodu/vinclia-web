@@ -1,0 +1,116 @@
+{
+  "id": "c3-19",
+  "titulo": "Facturación: lo que la IA puede y no puede hacer",
+  "descripcion": "Usa la IA para redactar conceptos claros, revisar datos antes de facturar y reclamar cobros con educación, sabiendo por qué la factura tiene que salir siempre de un programa de facturación.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:conceptos-factura"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Facturación: lo que la IA puede y no puede hacer",
+      "subtitulo": "Ayuda para redactar y revisar, no para emitir",
+      "narracion": "En la clase anterior preparaste presupuestos claros. El siguiente paso natural es la factura. Y aquí hay que tener las ideas muy claras, porque es donde más confusión vemos. La IA te puede ahorrar tiempo en muchas tareas alrededor de la factura: redactar conceptos, revisar datos, reclamar un cobro. Pero hay una cosa que no puede hacer, y no debe hacer: emitir la factura. En esta clase vas a ver dónde está la línea y por qué. Y en la siguiente, hablaremos de Verifactu con calma."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dónde está la línea",
+      "columnas": [
+        "Tarea",
+        "¿La IA?",
+        "Dónde se hace"
+      ],
+      "filas": [
+        [
+          "Redactar el concepto",
+          "Sí",
+          "En la IA, y lo copias"
+        ],
+        [
+          "Revisar datos antes de emitir",
+          "Sí, con tu lista",
+          "En la IA, sin datos personales"
+        ],
+        [
+          "Emitir y numerar la factura",
+          "No",
+          "Programa de facturación"
+        ],
+        [
+          "Elegir el tipo de impuesto",
+          "No",
+          "Tú, con tu gestoría"
+        ],
+        [
+          "Reclamar un cobro",
+          "Sí",
+          "En la IA, y lo envías tú"
+        ]
+      ],
+      "narracion": "Esta tabla resume la clase. La IA es una gran ayuda para todo lo que es texto: el concepto que aparece en la factura, el mensaje para reclamar un pago o una revisión de que no te dejas nada. Pero la factura en sí, con su número, su fecha y sus registros, sale de un programa de facturación. Y el tipo de impuesto que aplicas no lo decide un chat, lo decides tú con tu gestoría. Una IA como ChatGPT no es un sistema de facturación. Esta frase la vas a oír varias veces en esta sección."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Conceptos que el cliente entiende",
+      "usuario": "Reescribe estos conceptos de factura para que sean claros y profesionales, de una línea cada uno, sin cambiar lo que significan. Conceptos: repaso instalación, cambio mecanismos x6, desplazamiento urgente sábado, material vario.",
+      "ia": "1. Revisión general de la instalación eléctrica de la vivienda.\n2. Sustitución de 6 mecanismos: enchufes e interruptores.\n3. Desplazamiento por servicio urgente en sábado.\n4. Material eléctrico auxiliar: cable, bornes y fijaciones.",
+      "narracion": "Los conceptos de la factura son lo que el cliente lee para saber qué está pagando. Material vario o repaso no dicen nada y generan llamadas. Con esta instrucción los conviertes en frases claras en segundos. Fíjate en la condición: sin cambiar lo que significan. Revisa de todas formas cada línea. En el cuarto concepto, la IA ha añadido bornes y fijaciones. Si no usaste eso, bórralo. Cuando tengas una lista de conceptos que te guste, guárdala y cópiala en tu programa como conceptos predefinidos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Revisar antes de emitir",
+      "usuario": "Mi gestoría me ha dado esta lista de lo que debe llevar cada factura: [pega aquí la lista de tu gestoría]. Comprueba si este borrador la cumple y dime qué falta. No inventes requisitos que no estén en la lista. Borrador: cliente A, concepto, base 685 euros, IVA, total, fecha.",
+      "ia": "Comparado con tu lista, en el borrador faltan:\n1. Tu NIF y el del cliente.\n2. El número de factura.\n3. La dirección del cliente.\n\nEl resto de puntos de la lista aparecen. Recuerda que el número y la fecha los asigna tu programa de facturación.",
+      "narracion": "Esta instrucción es más delicada y por eso está construida con cuidado. No le preguntas a la IA qué tiene que llevar una factura. Le das la lista que te ha dado tu gestoría o tu programa y le pides que compare. Y le dices expresamente que no invente requisitos. Así la fuente es fiable y la IA solo hace de segundo par de ojos. El borrador va con cliente A, sin NIF ni dirección reales. Esos datos están en tu programa, que es donde deben estar. Si la IA te señala algo que falta, compruébalo en la lista original antes de hacerle caso."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Factura hecha en un chat frente a programa adaptado",
+      "mal": "Pedir a ChatGPT que genere la factura, copiarla en un documento y enviarla en PDF al cliente.",
+      "bien": "Emitir la factura desde un programa adaptado o la aplicación gratuita de la Agencia Tributaria.",
+      "narracion": "A la izquierda, algo que vemos más de lo que parece. Le pides la factura entera a un chat, la pegas en un documento y la envías. Puede quedar bonita, pero no es lo correcto. Con el reglamento Verifactu, los programas de facturación deben generar registros íntegros, inalterables y trazables. Un chat no hace nada de eso. A la derecha, la forma correcta: un programa adaptado o la aplicación gratuita de la Agencia Tributaria, pensada para quien emite pocas facturas. En la próxima clase verás las fechas. La regla es simple: el texto puede venir de la IA, la factura viene siempre del programa."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Reclamar un cobro con educación",
+      "usuario": "Escribe dos mensajes para reclamar una factura pendiente a cliente B. El primero, amable, a los 7 días del vencimiento. El segundo, más firme pero educado, a los 30 días. Sin amenazas. Deja entre corchetes el número de factura, el importe y la fecha.",
+      "ia": "Primer aviso: Hola, ¿qué tal? Te escribo porque no me consta el pago de la factura [número], de [importe], con vencimiento el [fecha]. Seguramente es un despiste. ¿Me confirmas cuándo podrás hacerlo? Gracias.\n\nSegundo aviso: Hola. La factura [número], de [importe], sigue pendiente desde el [fecha]. Te agradecería que la abonaras esta semana o me indicaras una fecha. Si hay algún problema con el trabajo, dímelo y lo hablamos.",
+      "narracion": "Reclamar un pago es de lo más incómodo de ser autónomo. La IA te ayuda a encontrar el tono justo, que no sea ni sumiso ni agresivo. Pide dos versiones, una amable y otra más firme, y guárdalas en tu biblioteca de instrucciones. Fíjate en el final del segundo mensaje: si hay algún problema con el trabajo, lo hablamos. Abre una puerta al diálogo, que muchas veces es lo que desbloquea el pago. El número, el importe y la fecha los copias tú de tu programa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Y la factura electrónica entre empresas?",
+      "puntos": [
+        "La Ley Crea y Crece la hace obligatoria entre empresas",
+        "Aún no tiene fecha en vigor: falta el reglamento",
+        "Desconfía de quien te meta prisa con fechas",
+        "Pregunta a tu proveedor si su programa estará preparado"
+      ],
+      "narracion": "Seguramente has oído hablar de la factura electrónica obligatoria entre empresas y autónomos. Es cierto que la Ley Crea y Crece la establece. Pero a día de hoy no tiene fecha de entrada en vigor, porque falta que se apruebe el reglamento que la desarrolla. Así que, si alguien te dice que es obligatoria desde el mes que viene, desconfía. Lo sensato es preguntar a tu proveedor de software si su programa estará preparado y consultar tu caso con tu gestoría. Y no te creas lo que leas en redes sin una fuente oficial."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Copia los conceptos de tus 5 últimas facturas",
+        "Pide a la IA que los reescriba sin cambiar el sentido",
+        "Revisa cada línea y guarda la lista buena",
+        "Prepara tus dos mensajes de reclamación de cobro",
+        "Pide a tu gestoría su lista de requisitos de factura"
+      ],
+      "narracion": "Para hoy, una tarea sencilla que vas a notar enseguida: mejora tus conceptos. Copia los de tus cinco últimas facturas, sin datos del cliente, y pide a la IA que los reescriba. Revisa cada línea y guarda la lista buena para usarla en tu programa. Prepara también tus dos mensajes de reclamación, aunque ahora no tengas ningún cobro pendiente. Y si no tienes la lista de requisitos de factura de tu gestoría, pídesela. En los recursos de esta clase tienes la plantilla de conceptos de factura con estas instrucciones."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "La IA redacta conceptos, revisa y reclama cobros",
+        "La factura sale de un programa adaptado, no de un chat",
+        "Impuestos y requisitos: de tu gestoría, no de la IA",
+        "Factura electrónica entre empresas: aún sin fecha"
+      ],
+      "narracion": "Recapitulemos. La IA te ayuda alrededor de la factura: conceptos claros, revisión con la lista de tu gestoría y mensajes de cobro con buen tono. La factura en sí sale de un programa de facturación adaptado o de la aplicación gratuita de la Agencia Tributaria. Una IA como ChatGPT no es un sistema de facturación. Y la factura electrónica entre empresas aún no tiene fecha. En la próxima clase, Verifactu: qué es, cuándo te afecta y qué tienes que hacer."
+    }
+  ]
+}

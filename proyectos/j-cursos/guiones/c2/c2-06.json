@@ -1,0 +1,119 @@
+{
+  "id": "c2-06",
+  "titulo": "Motores y velocidad",
+  "descripcion": "Qué quiere decir el número de velocidad del motor (de 0 a 255), por qué por debajo de 30 el robot no se mueve, cómo ir adelante y atrás, y cómo medir la velocidad real de tu Maqueen.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:k1-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Motores y velocidad",
+      "subtitulo": "¿Qué quiere decir velocidad 150?",
+      "narracion": "Hoy estamos en el laboratorio, en el banco de pruebas de los motores. Antes de empezar, un repaso rápido. ¿Qué hace el bloque espera 2000 milisegundos? Deja pasar 2 segundos, y el robot sigue haciendo lo que hacía. Ahora, la pregunta del día: ¿qué quiere decir exactamente velocidad 150? ¿Y por qué, a veces, el robot no se mueve aunque el programa se lo mande? Si eres profe, recoge hipótesis sin corregirlas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un número de 0 a 255",
+      "puntos": [
+        "0 es parado y 255 es el máximo",
+        "A 100, unos 9 cm cada segundo",
+        "A 150, unos 15 cm cada segundo",
+        "A 255, unos 29 cm cada segundo",
+        "El número no son centímetros: hay que medir"
+      ],
+      "narracion": "En el bloque del motor pones la velocidad: de 0, parado, a 255, al máximo. Cada segundo, el Maqueen hace unos 9 centímetros a velocidad 100, unos 15 a 150 y casi 30 a 255. Fíjate: el número no son centímetros ni kilómetros por hora. ¿Y por qué 255? Porque es el número más grande que la micro:bit puede enviar al chip de los motores de una sola vez. Viaja en un byte, que solo cuenta de 0 a 255."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-2:4",
+      "narracion": "Ahora, un misterio. Por debajo de velocidad 30, el motor no tiene fuerza suficiente para vencer el rozamiento. Zumba, pero el robot no se mueve. Es la zona muerta, y en el robot de verdad pasa igual. Mucha gente cree que velocidad 20 es muy lento pero se mueve. No: está dentro de la zona muerta. Si tienes el robot, haz la prueba y escucha el zumbido. El motor recibe corriente, pero no puede con el peso."
+    },
+    {
+      "tipo": "frase",
+      "texto": "El número dice cuánta fuerza recibe el motor, no cuántos centímetros recorre.",
+      "narracion": "Una pregunta que sale siempre: si a 255 hace casi 30 centímetros, ¿a 150 no debería hacer algo más de la mitad? No exactamente. Los primeros 30 puntos casi no sirven para mover el robot, porque son la zona muerta. Por eso a 100 hace unos 9 centímetros cada segundo, y no 11. La única manera de saber cuánto avanza tu robot es medirlo. Y eso es justo lo que harás con la cinta métrica."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-2:5",
+      "narracion": "En el bloque del motor también eliges la dirección: adelante o atrás. Este robot va 3 segundos adelante y 3 segundos atrás, a la misma velocidad. Antes de ejecutarlo, predice: ¿dónde terminará? Mira. Deshace el camino y vuelve justo a donde estaba. Con la misma velocidad y el mismo tiempo, la vuelta mide lo mismo que la ida. Y si volviera atrás solo la mitad del tiempo, desharía solo la mitad del camino."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-2:7",
+      "narracion": "Otra predicción. Ahora el robot va 2 segundos a velocidad 255. Hay tres marcas en la pista: A, B y C. ¿Dónde se parará? Piensa en la tabla de antes. Ejecutamos. Termina en la C. A 255 hace casi 30 centímetros cada segundo, así que en 2 segundos recorre unos 60. Fíjate también en que tarda un poco en acelerar y en frenar. Es la inercia: cuanto más deprisa va, más le cuesta pararse justo donde quieres."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el banco de pruebas humano",
+      "pasos": [
+        "Un robot, un programador y un reloj",
+        "Velocidad 60: pasos de hormiga durante 5 segundos",
+        "Velocidad 150: caminar normal, 5 segundos",
+        "Velocidad 255: muy deprisa, sin correr",
+        "Un calcetín donde llega cada vez",
+        "Velocidad 20: ¡zona muerta, quieto!"
+      ],
+      "narracion": "Ahora, sin pantalla. Necesitas un pasillo libre, tres calcetines y un reloj. Una persona hace de robot y la otra de programador, que dice una velocidad. A 60, pasos de hormiga. A 150, caminar normal. A 255, muy deprisa, pero sin correr. El robot camina 5 segundos exactos, siempre desde el mismo sitio, y deja un calcetín donde llega. ¿Y con velocidad 20? No se mueve: zona muerta. Mismo tiempo y más velocidad: más distancia."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La zona muerta de tu Maqueen",
+      "pasos": [
+        "Cinta métrica en el suelo, con el cero en la salida",
+        "Velocidad 30 durante 2 segundos",
+        "Si no se mueve: 35, 40, 45… hasta que arranque",
+        "Después, 2 segundos a 100, 150 y 255",
+        "Simulador: unos 18, 31 y 58 cm"
+      ],
+      "narracion": "Con el robot de verdad, haz una prueba justa: cambia una sola cosa cada vez. Pega una cinta métrica en el suelo, con el cero en la salida, en un tramo liso de al menos un metro. Descarga el programa a velocidad 30 durante 2 segundos. Si no se mueve, prueba 35, 40, 45, hasta que arranque, y apunta el número. Después, mide 2 segundos a 100, 150 y 255. En el simulador salen unos 18, 31 y 58 centímetros."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un motor nuevo no para el robot",
+      "mal": "Si pongo otro bloque de motor a mitad de camino, el robot se para.",
+      "bien": "Un motor nuevo solo cambia la velocidad. Para detenerlo hace falta para.",
+      "narracion": "Un detalle importante para los retos. Si pones un bloque de motor nuevo en medio del camino, el robot no se para: solo cambia de marcha. Por ejemplo, velocidad 60 por la zona amarilla y después 255. Solo se detiene con para, o con velocidad 0. Y otra cosa: cuando las pilas se gastan, el robot va más lento y gira menos. Apágalo cuando no lo uses, y las pilas gastadas, al contenedor de pilas."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": [
+        "Error",
+        "Qué hacer"
+      ],
+      "filas": [
+        [
+          "Pone velocidad 300 o 1000",
+          "255 es el máximo: alarga el tiempo"
+        ],
+        [
+          "Cree que a 20 se moverá",
+          "Que busque el mínimo que arranca"
+        ],
+        [
+          "Gira para volver atrás",
+          "Usa la dirección atrás del bloque"
+        ],
+        [
+          "Cambia espera y velocidad a la vez",
+          "Prueba justa: una cosa cada vez"
+        ]
+      ],
+      "narracion": "Errores típicos. Poner velocidades mayores de 255: el bloque no deja, y para llegar más lejos hace falta más tiempo. Creer que a 20 el robot se moverá: que lo pruebe y busque el número mínimo. Girar el robot para volver, cuando basta con la dirección atrás. Y cambiar la espera y la velocidad a la vez, sin saber qué cambio ha hecho efecto. Y si tu robot arranca a 35 y el de al lado a 30, los dos están bien."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "La velocidad va de 0 a 255",
+        "Por debajo de 30, zona muerta: no se mueve",
+        "Adelante y atrás, y cambios de marcha",
+        "Reto: la calle del colegio"
+      ],
+      "narracion": "Repasamos. La velocidad va de 0 a 255, y cuanto más grande, más centímetros cada segundo. Por debajo de 30, zona muerta. Y el motor puede ir adelante o atrás, y cambiar de velocidad a mitad de camino. En los retos, para el caracol la solución ronda velocidad 45 durante 6 segundos. Tu proyecto: la calle del colegio. Pasa delante del colegio a 100 o menos, acelera después a 200 o más, y párate en la meta."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "c3-16",
+  "titulo": "Tu web y el SEO local con ayuda de la IA",
+  "descripcion": "Usa la IA para escribir los textos de tu web pensando en las búsquedas de tu zona: páginas de servicio, títulos, descripciones y preguntas frecuentes, con datos coherentes en todas partes.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:seo-local"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tu web y el SEO local con ayuda de la IA",
+      "subtitulo": "Que te encuentren quienes te buscan cerca",
+      "narracion": "SEO es una sigla que asusta, pero la idea es sencilla: que tu negocio aparezca cuando alguien busca lo que haces. Y el SEO local es lo mismo, pero en tu zona. Cuando alguien escribe electricista en Zaragoza o fisio cerca de mí, Google enseña unos pocos negocios. En esta clase vas a usar la IA para mejorar los textos de tu web pensando en esas búsquedas. No necesitas saber programar. Necesitas saber qué buscan tus clientes y escribirlo claro. Y como siempre, la IA redacta y tú decides qué se publica."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las tres patas del SEO local",
+      "puntos": [
+        "Tu ficha de Google Business Profile completa y al día",
+        "Una web que explica qué haces y en qué zona",
+        "Reseñas reales y respuestas a esas reseñas",
+        "Nombre, dirección y teléfono iguales en todas partes"
+      ],
+      "narracion": "Para aparecer en las búsquedas de tu zona hay tres patas que se apoyan entre sí. La ficha de Google, que preparaste hace dos clases. Tu web, que es lo que vamos a trabajar hoy. Y las reseñas, que viste en la sección de atención al cliente. Hay un detalle que se olvida mucho. Tu nombre, tu dirección y tu teléfono deben ser exactamente iguales en la web, en la ficha y en las redes. Si en un sitio pone calle Mayor y en otro avenida, confundes a los clientes y a Google."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Qué escribe tu cliente en Google",
+      "usuario": "Soy electricista autónomo en Zaragoza y trabajo también en Utebo y Cuarte. Hazme una lista de 10 búsquedas que podría escribir un cliente en Google para encontrarme. Mezcla urgencias, reformas y dudas. Son ideas, no datos reales.",
+      "ia": "1. electricista urgente Zaragoza\n2. electricista 24 horas en Utebo\n3. saltan los plomos qué hago\n4. cambiar cuadro eléctrico piso antiguo Zaragoza\n5. instalar punto de carga coche en garaje\n6. presupuesto reforma eléctrica cocina\n7. electricista Cuarte de Huerva\n8. enchufe quemado peligro\n9. instalar lámparas techo precio\n10. electricista de confianza Delicias",
+      "narracion": "Antes de escribir, piensa en las palabras del cliente, no en las tuyas. Tú dices instalación de baja tensión. Tu cliente escribe saltan los plomos qué hago. Fíjate en que la instrucción dice que son ideas, no datos reales. Un asistente de chat no sabe cuánta gente busca cada cosa. Para comprobarlo, empieza a escribir alguna de estas búsquedas en Google y mira qué te sugiere el propio buscador. Quédate con las que de verdad se parecen a lo que te preguntan tus clientes por teléfono."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Una página para cada servicio",
+      "usuario": "Escribe el texto de una página de mi web sobre reparación de averías eléctricas en Zaragoza, Utebo y Cuarte. Unas 200 palabras, frases cortas, tono cercano. Incluye cómo contactar y 3 preguntas frecuentes. Deja entre corchetes mi teléfono, horario y tiempo de respuesta.",
+      "ia": "Reparación de averías eléctricas en Zaragoza\n\n¿Se ha ido la luz en media casa? ¿Salta el diferencial cada vez que enciendes el horno? Soy Andrés, electricista autónomo, y atiendo averías en Zaragoza, Utebo y Cuarte de Huerva.\n\nLlámame al [teléfono]. Atiendo de [horario] y suelo llegar en [tiempo].\n\nPreguntas frecuentes\n¿Cobras el desplazamiento? [Tu respuesta]\n…",
+      "narracion": "Una de las mejores cosas que puedes hacer por tu web es tener una página por cada servicio importante. Así, cuando alguien busca averías, encuentra una página que habla justo de averías. La instrucción pide frases cortas, las zonas donde trabajas y preguntas frecuentes. Las preguntas suelen coincidir con lo que la gente escribe en el buscador. Otra vez, los corchetes para tu teléfono, tu horario y lo que tardas en llegar. Nunca dejes que la IA prometa tiempos de respuesta o precios que no has decidido tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El título y la descripción para Google",
+      "usuario": "Para esa página, dame 3 opciones de título de menos de 60 caracteres y 3 de descripción de menos de 155 caracteres para que aparezcan en Google. Que incluyan el servicio y Zaragoza de forma natural.",
+      "ia": "Títulos:\n1. Electricista para averías en Zaragoza | Andrés\n2. Reparación de averías eléctricas en Zaragoza y Utebo\n3. ¿Averías eléctricas? Electricista en Zaragoza\n\nDescripciones:\n1. ¿Se ha ido la luz o salta el diferencial? Atiendo averías en Zaragoza, Utebo y Cuarte. Llámame y te doy cita.",
+      "narracion": "Cuando apareces en Google, se ven dos cosas: un título en azul y una descripción corta debajo. Casi todas las herramientas de webs, como WordPress, Wix o la de tu proveedor, tienen un apartado para escribirlos. Si nunca lo has rellenado, Google coge cualquier frase de la página. Pide varias opciones y elige la que mejor suene. Los límites de caracteres de la instrucción son orientativos para que no se corte el texto. Cuenta tú los caracteres si tu herramienta no lo hace, porque la IA a veces se pasa."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Escribir para personas, no para robots",
+      "mal": "Electricista Zaragoza. Somos electricistas en Zaragoza. Si buscas electricista Zaragoza, llámanos.",
+      "bien": "Atiendo averías eléctricas en Zaragoza, Utebo y Cuarte. Llámame y te explico qué puede estar pasando.",
+      "narracion": "Hace años, muchas webs repetían la misma palabra una y otra vez para salir en Google. Hoy eso no funciona y además espanta a los clientes. A la izquierda tienes un ejemplo exagerado, pero real. A la derecha, una frase que menciona el servicio y las zonas una sola vez y luego habla con la persona. Si la IA te devuelve un texto que repite demasiado tu ciudad, pídele: reescríbelo para que suene natural, menciona Zaragoza solo una o dos veces. Escribe siempre pensando en la persona que tiene la avería delante. Si a ella le sirve, a Google también."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Revisa que todo cuadre",
+      "columnas": [
+        "Dónde",
+        "Qué compruebas"
+      ],
+      "filas": [
+        [
+          "Web",
+          "Nombre, dirección, teléfono, zonas"
+        ],
+        [
+          "Ficha de Google",
+          "Los mismos datos y el mismo horario"
+        ],
+        [
+          "Redes sociales",
+          "Enlace a la web y teléfono correcto"
+        ],
+        [
+          "Páginas de servicio",
+          "Precios y plazos decididos por ti"
+        ],
+        [
+          "Pie de la web",
+          "Aviso legal y privacidad al día"
+        ]
+      ],
+      "narracion": "Antes de dar por buena tu web, haz esta revisión. Comprueba que los datos de contacto son los mismos en todas partes. Revisa que ningún texto prometa precios o plazos que no has decidido. Y mira el pie de la web: el aviso legal y la política de privacidad tienen que estar al día. De esos textos legales hablaremos en la sección de RGPD. Un consejo práctico: pega en la IA el texto de tu web actual y pídele que te haga una lista de datos de contacto que aparecen. Así detectas incoherencias en un minuto."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Pide a la IA 10 búsquedas de tus clientes",
+        "Comprueba 3 de ellas en el buscador de Google",
+        "Elige tu servicio más importante",
+        "Pide el texto de su página con corchetes para tus datos",
+        "Revisa nombre, dirección y teléfono en web y ficha"
+      ],
+      "narracion": "Tu tarea de hoy: pide a la IA las búsquedas que haría un cliente tuyo y comprueba tres de ellas escribiéndolas en Google. Después elige tu servicio más importante, el que más dinero te deja o el que más te piden, y pide el texto de su página. Revísalo con calma. Si no tienes web, guarda el texto: te servirá para la ficha de Google o para una web sencilla más adelante. En los recursos de esta clase tienes la plantilla de SEO local con las instrucciones y la tabla de revisión."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "SEO local: ficha, web y reseñas, con datos iguales",
+        "Escribe con las palabras de tu cliente, no con las tuyas",
+        "Una página por servicio, con zonas y preguntas",
+        "Títulos y descripciones claros, sin repetir palabras"
+      ],
+      "narracion": "Recapitulemos. El SEO local se apoya en tu ficha, tu web y tus reseñas, con los mismos datos en todas partes. La IA te ayuda a pensar como tu cliente, a escribir páginas de servicio claras y a preparar títulos y descripciones. Las búsquedas que te propone son ideas: compruébalas. Y los precios, plazos y datos de contacto los decides y revisas tú. En la próxima clase cerramos la sección con correos, ofertas y fidelización de clientes. Con una web clara y una ficha completa ya juegas en otra liga."
+    }
+  ]
+}

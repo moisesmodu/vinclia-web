@@ -1,0 +1,108 @@
+{
+  "id": "c2-15",
+  "titulo": "Esquiva obstáculos: gira, apártate y sigue",
+  "descripcion": "Cambia una sola cosa del programa de pararse para que el Maqueen gire, esquive cajas con una maniobra completa y recorra el almacén sin chocar en todas las pistas.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k3-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Esquiva obstáculos",
+      "subtitulo": "El robot ya no se para: gira, se aparta y sigue",
+      "narracion": "Han llegado tres barcos a la vez y el almacén del puerto está lleno de cajas. El Maqueen tiene que llevar un paquete de una punta a la otra. Si se para delante de cada caja, como en la clase anterior, no llegará nunca. Piénsalo así: si vas por el pasillo de casa y hay una silla en medio, ¿te quedas parado para siempre? No. La rodeas y sigues. Hoy el robot aprende a esquivar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Recordemos",
+      "puntos": [
+        "Girar a la izquierda: motor izquierdo atrás, derecho adelante",
+        "A velocidad 100, unos 600 ms hacen 90°",
+        "Para siempre: si distancia < 12, para; si no, adelante",
+        "Hoy cambiamos una sola cosa: lo que hay dentro del «si»"
+      ],
+      "narracion": "Repasemos dos cosas. La primera, cómo gira el Maqueen sobre sí mismo hacia la izquierda: motor izquierdo atrás y motor derecho adelante. La rueda derecha empuja y la izquierda tira hacia atrás. A velocidad 100, unos 600 milisegundos hacen 90 grados. La segunda, el programa de pararse: para siempre, si la distancia es menor que 12, para; si no, adelante. Hoy vamos a cambiar una sola cosa de ese programa. Solo lo que hay dentro del «si»."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-3:4",
+      "narracion": "Es la misma pregunta de ayer: ¿la distancia es menor que 15? Pero dentro del «si» ya no hay un para, sino un giro de 90 grados a la izquierda. Antes de ejecutar, predice: ¿hacia dónde irá el robot después de cada giro? Míralo. Avanza, ve la pared, gira a la izquierda y el bucle vuelve a preguntar. Si delante ya no hay pared, sigue adelante. Así recorre el almacén siguiendo las paredes. El «si» no lo para: lo hace girar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La maniobra completa",
+      "pasos": [
+        "Giro a la derecha: 600 ms",
+        "Adelante 1.200 ms a 150: se aparta unos 19 cm",
+        "Giro a la izquierda: 600 ms, vuelve a mirar adelante",
+        "El «si no» lo hace seguir hasta la meta"
+      ],
+      "narracion": "Ahora la caja está en medio del camino. Girar una sola vez no basta. Dentro del «si» caben muchos bloques, así que hacemos una maniobra entera. Primero, giro a la derecha, 600 milisegundos. Después, adelante 1,2 segundos a velocidad 150, para apartarse unos 19 centímetros. Y por último, giro a la izquierda para volver a mirar adelante. Después, el «si no» lo hace seguir. Un consejo: mientras hace la maniobra, el robot no mira el sensor. Hazla corta y segura."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-3:6",
+      "narracion": "Vamos a ver la maniobra completa en el simulador: giro a la derecha, adelante 1,2 segundos y giro a la izquierda. Para el vídeo y predice: ¿pasará por el lado de la caja sin tocarla? Ahora, míralo. El robot ve la caja, se aparta y vuelve a quedar mirando hacia la meta. ¿Por qué 19 centímetros? Porque el Maqueen mide unos 8,5 centímetros de ancho y tiene que pasar con todo el cuerpo, y un poco más. Si te olvidas del segundo giro, el robot se va de lado."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-3:7",
+      "narracion": "Cuidado con los lados. Recuerda que el sensor solo mira justo delante, en un cono estrecho. Una caja un poco de lado puede quedar fuera del cono, y la esquina del robot puede rozarla. Si el sensor dice 500, no hay nada delante, pero a los lados puede haber cosas. La solución es decidir girar un poco antes, entre 15 y 20 centímetros, y apartarse lo suficiente para pasar con todo el cuerpo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-3:8",
+      "narracion": "Una predicción para pensar despacio. La regla es: si hay pared a menos de 15 centímetros, gira a la izquierda. Fíjate en qué motor va atrás. ¿Dónde estará el robot al cabo de 10 segundos? Elige A, B o C antes de seguir. Vamos a verlo. Llega a la pared de la derecha, gira a la izquierda y sigue hacia arriba hasta C. El robot no tiene mapa ni sabe dónde está la salida. Solo aplica la regla en cada momento: mira y decide."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La espera que deja al robot a ciegas",
+      "mal": "En el «si no»: adelante y espera 2 segundos. Mientras espera, no mira el sensor y choca",
+      "bien": "En el «si no»: solo adelante. El bucle vuelve a mirar el sensor en cada vuelta",
+      "narracion": "En la app hay un reto con un error escondido. El robot debería recorrer el pasillo, pero choca. Mira el «si no»: hay una espera. Mientras el robot espera, no vuelve a mirar el sensor. Está a ciegas, y si en ese rato aparece la pared, se la come. Quita la espera y deja que el bucle pregunte en cada vuelta. Otro aviso: si resuelves el pasillo con tiempos fijos, funcionará en una pista, pero no en las otras, porque cada pasillo tiene una longitud diferente."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el laberinto de cojines",
+      "pasos": [
+        "Haced un pasillo con cojines o sillas",
+        "El robot camina despacio, ojos cerrados y brazos delante",
+        "Si las manos tocan algo, cuarto de vuelta a la izquierda",
+        "Cambiad el pasillo: ¿la misma regla os lleva a la salida?"
+      ],
+      "narracion": "Para hacer en casa o en clase. Montad un pasillo con cojines o sillas. Una persona hace de robot: ojos cerrados y brazos estirados hacia delante, que son el cono del sensor. La regla: si las manos tocan algo, gira un cuarto de vuelta a la izquierda; si no, da un paso adelante. Otra persona vigila, puede decir stop cuando quiera y cuenta los giros. Muy despacio, y nada duro a la altura de la cabeza. Si a alguien no le gusta cerrar los ojos, puede mirar al suelo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: calibra y esquiva",
+      "pasos": [
+        "Calibra el giro: prueba 500, 600 y 700 ms",
+        "Pasillo en L con cajas o libros, de unos 30 cm de ancho",
+        "Descarga con el interruptor apagado y tu tiempo de giro",
+        "Cambia el pasillo de sitio: ¿sigue funcionando?"
+      ],
+      "narracion": "Con el Maqueen de verdad, primero hay que calibrar el giro. Cada suelo es diferente y las pilas también cuentan, así que 600 milisegundos no siempre hacen 90 grados. Programa solo el giro y prueba 500, 600 y 700. Quédate con el que más se acerque a un cuarto de vuelta. Después, montad en el suelo un pasillo en forma de L con cajas rígidas o libros de canto, de unos 30 centímetros de ancho. En los imprimibles tienes la pista a escala y los dos programas para MakeCode."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos",
+      "puntos": [
+        "Gira hacia el lado equivocado: manos como ruedas",
+        "Olvida el segundo giro: hacedlo con el cuerpo",
+        "Se atasca en un rincón: otro giro u otro umbral",
+        "Usa tiempos fijos: enséñale la pista 2"
+      ],
+      "narracion": "Para quien da la clase. Si alguien gira hacia el lado equivocado, que ponga las manos como si fueran las ruedas: si la derecha va adelante y la izquierda atrás, ¿hacia dónde gira el cuerpo? Si olvida el segundo giro de la maniobra, que la haga caminando. En el reto del explorador, a veces el robot se queda atascado en un rincón. Pregunta qué ve después de girar. Que pruebe un giro diferente, por ejemplo 400 milisegundos, o un umbral más grande."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Esquivar: si hay caja, gira; si no, adelante",
+        "Dentro del «si» cabe una maniobra entera",
+        "Una buena regla funciona en todas las pistas",
+        "Tu reto: el explorador, 20 s y 160 cm sin chocar"
+      ],
+      "narracion": "Resumimos. Para esquivar, el «si» no para el robot: lo hace girar cuando ve una caja cerca y, si no hay, lo hace avanzar. Dentro del «si» cabe una maniobra entera: girar, apartarse y volver a girar. Y una buena regla funciona en todas las pistas, aunque las cajas cambien de sitio. Tu reto de hoy: el explorador del almacén. Tiene que pasear 20 segundos, recorrer al menos 160 centímetros y no chocar nunca. Tú eliges hacia dónde gira, cuánto y a qué velocidad."
+    }
+  ]
+}

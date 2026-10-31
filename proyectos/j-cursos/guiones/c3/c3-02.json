@@ -1,0 +1,109 @@
+{
+  "id": "c3-02",
+  "titulo": "Qué es (y qué no es) la IA generativa, sin humo",
+  "descripcion": "Entiendes en lenguaje llano cómo funciona la IA generativa, en qué tareas te ahorra tiempo y en cuáles se equivoca, para usarla con confianza y sin sustos.",
+  "vistaPrevia": true,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Qué es y qué no es la IA generativa",
+      "subtitulo": "Sin humo y sin tecnicismos",
+      "narracion": "En la clase anterior conseguiste tu primer resultado. Ahora vamos a entender qué tienes delante. No hace falta saber cómo funciona un motor para conducir. Pero sí conviene saber que el coche no frena solo. Con la IA pasa lo mismo. Si entiendes tres ideas básicas, sabrás cuándo fiarte, cuándo revisar y cuándo no usarla. En esta clase verás esas tres ideas con ejemplos de negocios como el tuyo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Idea 1: escribe prediciendo palabras",
+      "puntos": [
+        "Ha leído muchísimo texto de todo tipo",
+        "Escribe eligiendo la palabra más probable",
+        "Suena segura aunque no sepa la respuesta",
+        "No consulta tu agenda ni tus precios"
+      ],
+      "narracion": "La IA generativa, como ChatGPT o Gemini, ha aprendido leyendo cantidades enormes de texto. Cuando le pides algo, escribe la respuesta palabra a palabra, eligiendo lo que suena más probable. Por eso redacta tan bien. Y por eso mismo puede equivocarse con toda la seguridad del mundo. No consulta tu agenda, ni tu lista de precios, ni sabe qué pasó ayer en tu local. Solo sabe lo que le cuentas en la conversación y lo que aprendió antes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un error con mucha seguridad",
+      "usuario": "¿Qué horario tiene el Bar La Parada de mi barrio los domingos?",
+      "ia": "El Bar La Parada abre los domingos de 9:00 a 16:00 y sirve menú del día a 14 euros.",
+      "narracion": "Mira este ejemplo. Alguien pregunta por el horario de un bar pequeño de barrio. La IA contesta con un horario y un precio muy concretos. Suena perfecto, pero se lo ha inventado. A esto se le llama alucinación. No es mala fe. Simplemente rellena el hueco con lo más probable. Algunas herramientas pueden buscar en internet y lo hacen mejor, pero también fallan. La lección es clara. Los datos de tu negocio se los das tú, no se los pides a ella."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Idea 2: sabe escribir, no sabe tu negocio",
+      "puntos": [
+        "Muy buena: redactar, resumir, ordenar, traducir",
+        "Buena: dar ideas y proponer variantes",
+        "Floja: datos exactos, cifras y cálculos largos",
+        "Peligrosa: dudas legales o fiscales de tu caso"
+      ],
+      "narracion": "La segunda idea es saber dónde brilla. La IA es muy buena redactando, resumiendo, poniendo en orden lo que le dictas y traduciendo. También es útil para darte ideas y proponerte variantes. En cambio, es floja con datos exactos y con cálculos largos, aunque los haga con aplomo. Y es peligrosa si le preguntas por impuestos, contratos o leyes aplicadas a tu caso. Ahí te puede orientar, pero quien decide es tu gestoría."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir datos frente a pedir redacción",
+      "mal": "¿Cuánto cobra un electricista en Zaragoza por cambiar un cuadro eléctrico?",
+      "bien": "Cobro 380 euros por cambiar un cuadro. Redacta un mensaje al cliente explicando qué incluye ese precio.",
+      "narracion": "Fíjate en la diferencia. En la primera instrucción, el electricista le pide un dato a la IA. La respuesta será un precio inventado o una media que no sirve para nada. En la segunda, el precio lo pone él. La IA solo tiene que explicarlo bien y con buenas formas. Esta es la manera correcta de trabajar. Tú pones los hechos y las decisiones. La IA pone las palabras."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Idea 3: lo que escribes puede no ser privado",
+      "puntos": [
+        "Tus conversaciones pueden usarse para entrenarla",
+        "Desactiva esa opción en la configuración",
+        "No pegues nombres, teléfonos, DNI ni datos de salud",
+        "Usa cliente A o cliente B en lugar del nombre"
+      ],
+      "narracion": "La tercera idea es la privacidad. En muchas herramientas, lo que escribes puede usarse para entrenar futuras versiones. Lo puedes desactivar. En ChatGPT está en Configuración, dentro de Controles de datos, y las demás tienen una opción parecida. Aun así, no metas datos personales de tus clientes. Ni nombres, ni teléfonos, ni DNI, y mucho menos datos de salud si eres fisio o tienes un centro de estética. Escribe cliente A y te ahorras problemas. Lo veremos a fondo en la sección legal."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Para qué sí y para qué no",
+      "columnas": ["Tarea", "¿Le sirve la IA?"],
+      "filas": [
+        ["Responder un WhatsApp o una reseña", "Sí, tú revisas"],
+        ["Escribir un post o una oferta", "Sí, tú pones los datos"],
+        ["Calcular el IVA de un trimestre", "Orienta, no asesora"],
+        ["Emitir una factura válida", "No, eso es tu programa"],
+        ["Decidir un precio o una política", "No, eso es tuyo"]
+      ],
+      "narracion": "Aquí lo tienes resumido. Responder mensajes, reseñas y correos, sí, siempre revisando. Escribir publicaciones y ofertas, también, con los datos que tú le das. Para el IVA o el IRPF te puede ayudar a ordenar números y entender conceptos, pero no sustituye a tu gestoría. Una factura válida no sale de ChatGPT, sale de tu programa de facturación. Y las decisiones del negocio, como precios, horarios o garantías, son tuyas."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pídele que te diga lo que no sabe",
+      "usuario": "Voy a pedirte textos para mi tienda online de cerámica. Si te falta un dato, como un precio, un plazo o una medida, no lo inventes: pregúntamelo o déjalo marcado como PENDIENTE.",
+      "ia": "Entendido. Cuando me falte un dato te lo preguntaré o lo marcaré como PENDIENTE, para que lo completes tú antes de publicar.",
+      "narracion": "Un truco sencillo que reduce mucho los inventos. Al empezar, dile que no rellene lo que no sabe. Que te pregunte o que deje el hueco marcado. Así, cuando leas el borrador, verás de un vistazo qué tienes que completar. No es infalible, por eso sigues revisando. Pero convierte a la IA en una ayudante que avisa, en lugar de una que se lo inventa todo con buena letra."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo trabajar con ella desde hoy",
+      "pasos": [
+        "Dale tú los hechos: precios, horarios, plazos",
+        "Pídele la redacción, el orden o las ideas",
+        "Revisa cifras, nombres, fechas y promesas",
+        "Si es legal o fiscal, confírmalo con tu gestoría"
+      ],
+      "narracion": "Con estas tres ideas ya tienes un método de trabajo que vale para todo el curso. Primero, dale tú los hechos: tus precios, tus horarios, tus plazos y lo que has decidido. Segundo, pídele lo que hace bien, que es redactar, ordenar o proponer ideas. Tercero, revisa siempre cifras, nombres, fechas y cualquier promesa al cliente. Y cuarto, si el tema es legal o fiscal, úsala para entenderlo mejor, pero confírmalo con tu gestoría antes de actuar."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Trátala como a una becaria muy rápida: escribe bien, pero no firma nada sin que tú lo leas.",
+      "narracion": "Si te sirve una imagen, piensa en una becaria muy rápida y muy bien hablada. Te prepara borradores en segundos y nunca se cansa. Pero acaba de llegar, no conoce a tus clientes y a veces se lo inventa para quedar bien. Nadie dejaría que una becaria firmara un presupuesto sin leerlo. Con la IA, lo mismo. Ella redacta, tú decides y revisas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "La IA predice palabras: escribe bien y a veces inventa",
+        "Los datos de tu negocio se los das tú",
+        "Desactiva el entrenamiento con tus conversaciones",
+        "Tarea: pídele algo de tu sector y caza un error"
+      ],
+      "narracion": "Repasamos las tres ideas. La IA escribe prediciendo palabras, así que redacta muy bien y a veces inventa. Sabe escribir, pero no sabe tu negocio, así que los datos los pones tú. Y lo que escribes puede no ser privado. Tu tarea de hoy, en 10 minutos. Entra en la configuración de tu herramienta y desactiva el entrenamiento con tus conversaciones. Después pregúntale algo de tu sector que tú sepas bien y busca un error en su respuesta. En la próxima clase elegimos herramienta."
+    }
+  ]
+}

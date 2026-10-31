@@ -1,0 +1,123 @@
+{
+  "id": "c2-29",
+  "titulo": "El robot aspirador: rebotar o hacer zigzag",
+  "descripcion": "Programa un Maqueen aspirador que limpia un comedor sin mapa, compara la estrategia de rebotar con el zigzag y usa una variable para recordar hacia qué lado gira.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k7-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El robot aspirador",
+      "subtitulo": "Misión 1: limpiar el comedor del hostal",
+      "narracion": "Empieza la unidad 7: la Semana de las Misiones. Son cuatro misiones que usan todo lo que ya sabes: limpiar, una competición de sumo, un rescate y una carrera contrarreloj. Hoy toca la primera. El hostal de la plaza quiere un robot aspirador que limpie el comedor de noche. Antes de empezar, piensa: ¿cómo sabe un aspirador por dónde ha pasado? ¿Tiene un mapa? ¿Qué sensores usa? Apunta tu idea. Al final de la clase la revisamos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo se enfoca una misión",
+      "pasos": [
+        "Entiende la misión: ¿qué quiere decir «lo he conseguido»?",
+        "Elige los sensores que te ayudan",
+        "Piensa una estrategia y escríbela en bloques",
+        "Pruébala en todas las pistas y mejórala"
+      ],
+      "narracion": "Una misión es un problema grande con un objetivo claro, que se comprueba en varias pistas. Los equipos de ingeniería la trabajan en cuatro pasos. Primero, entender qué quiere decir conseguirlo. Segundo, elegir sensores: un aspirador sencillo no tiene mapa, solo nota las paredes y los muebles. Usaremos los ultrasonidos. Tercero, pensar una estrategia, unas reglas que el robot repite sin parar. Y cuarto, probarla en todas las pistas. Un dato real: la robotista Helen Greiner cofundó en 1990 la empresa que en 2002 sacó uno de los primeros robots aspiradores para casa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Cuánto ha limpiado?",
+      "puntos": [
+        "El suelo, en cuadraditos de 5 por 5 cm",
+        "Limpio: el centro del robot pasa por encima",
+        "Porcentaje: cuadraditos limpios de cada 100",
+        "Pasar dos veces por el mismo sitio no cuenta doble"
+      ],
+      "narracion": "¿Cómo sabemos si limpia bien? Imaginamos el suelo dividido en cuadraditos de 5 por 5 centímetros. Un cuadradito queda limpio cuando el centro del robot pasa por encima. Después contamos cuántos hay limpios de cada 100: eso es el porcentaje. El 50 por ciento es la mitad del suelo. Y un detalle importante: pasar dos veces por el mismo cuadradito no cuenta doble. Un sitio limpio no se puede limpiar más. Por eso no basta con moverse mucho: hay que moverse con una buena estrategia."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-1:6",
+      "narracion": "Primera estrategia: rebotar. El programa dice: si los ultrasonidos ven la pared a menos de 10 centímetros, gira 800 milisegundos; si no, adelante. Antes de mirar, predice: ¿pasará por todo el comedor? ¿Repetirá sitios? Piénsalo unos segundos. Ahora, míralo. El robot va recto, ve la pared y gira unos 120 grados. Cada rebote lo envía hacia un sitio nuevo. Poco a poco pasa por todas partes, pero al azar. Repite muchos cuadraditos y deja rincones sin tocar."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-1:8",
+      "narracion": "Ahora, un cambio pequeño. Este robot gira 1200 milisegundos cada vez que ve la pared: justo 180 grados, media vuelta exacta. Predice: si gira más, ¿limpiará mejor? Mira lo que pasa. Vuelve por la misma línea y va y viene siempre por el mismo sitio. El resto del comedor queda sucio. Es un error típico pensar que cuanto más gira, mejor limpia. Un giro que no sea de 180 grados hace que cada rebote vaya hacia un sitio nuevo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-1:7",
+      "narracion": "Segunda estrategia: el zigzag, como quien corta el césped. El robot va hasta la pared, da media vuelta bajando un carril y vuelve. Pero una vez gira a la derecha y la siguiente, a la izquierda. ¿Cómo lo recuerda? Con una variable llamada lado. Si lado vale 0, gira a la derecha y pone lado a 1. Si vale 1, gira a la izquierda y vuelve a 0. Predice: en 45 segundos, ¿quién limpia más? Mira. El zigzag limpia más de la mitad sin tocar ninguna pared; rebotando, menos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El zigzag en cada pared, si lado vale 0",
+      "pasos": [
+        "Los ultrasonidos ven la pared a menos de 8 cm",
+        "Gira 90 grados a la derecha",
+        "Avanza un trozo corto: baja un carril",
+        "Gira 90 grados más a la derecha",
+        "Pone lado a 1: la próxima vez, a la izquierda"
+      ],
+      "narracion": "Ordenemos lo que hace el zigzag en cada pared cuando lado vale 0. Ve la pared a menos de 8 centímetros. Gira 90 grados a la derecha, avanza un trozo corto y gira otros 90 grados hacia el mismo lado. Dos giros de 90 grados hacen media vuelta, con un carril de diferencia. Al final, pone lado a 1. ¿Por qué hace falta la variable? Porque las dos paredes parecen iguales para los ultrasonidos. En la unidad 6, una variable recordaba una velocidad. Ahora recuerda una decisión."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla: el aspirador de lápiz",
+      "puntos": [
+        "Un comedor de 12 por 8 cuadraditos: 96 en total",
+        "Hoja 1: rebota en diagonal y cambia de dirección en cada pared",
+        "Hoja 2: zigzag, fila por fila",
+        "Para a los 40 pasos y cuenta los cuadraditos pintados",
+        "48 de 96 es la mitad: el 50 por ciento"
+      ],
+      "narracion": "Antes de programar, haz esta actividad desconectada, sin pantalla, con un adulto o por parejas. En una hoja cuadriculada, dibuja un comedor de 12 por 8 cuadraditos. En la ficha de esta clase, la mesa son 4 cuadraditos negros en el medio. Primero, rebota: desde una esquina, avanza en diagonal y cambia de dirección en cada pared. Pinta por donde pases y para a los 40 pasos. En otra hoja, haz zigzag. Cuenta y compara. Si has pintado 48 de 96, has limpiado el 50 por ciento."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos en el simulador",
+      "puntos": [
+        "Primer aspirador: rebota y limpia el 20 % en 30 segundos",
+        "Los muebles cambian de sitio: el 20 % en tres pistas",
+        "Zigzag con memoria: el 50 % en 45 segundos, sin tocar paredes",
+        "Crea: dos salas, el 40 % limpio y las luces de abajo encendidas"
+      ],
+      "narracion": "En la sesión de Numi Tech tienes estos retos. En el primero, el robot solo va adelante y se atasca. Haz que rebote y limpie el 20 por ciento en 30 segundos. En el segundo, los muebles cambian cada noche: el mismo programa tiene que funcionar en tres pistas. En el tercero, el zigzag ya gira bien a la derecha. Te falta el giro a la izquierda en la rama «si no», con los motores al revés. Lee primero la rama que funciona. Y en el proyecto, la estrategia la eliges tú."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El aspirador de verdad",
+      "pasos": [
+        "Sala de libros o cajas en el suelo, de unos 80 por 60 cm",
+        "Papeles: programador, piloto, cronometrador y secretario",
+        "Descarga con el robot apagado; enciéndelo en el suelo",
+        "60 segundos dentro: dibujad por dónde pasa",
+        "Cambiad el tiempo del giro y comparad los dibujos"
+      ],
+      "narracion": "Ahora, el Maqueen. Montad en el suelo una sala de libros o cajas de unos 80 por 60 centímetros, con paredes bajas y estables. Repartid los papeles: programador, piloto, cronometrador y secretario. Pasad el rebote con el botón MakeCode de la app. Sin la app, en MakeCode crea un proyecto, añade la extensión maqueen y monta los mismos bloques, que salen en inglés. Las luces de abajo piden también la extensión neopixel, en el pin P15. Descargad con el robot apagado. Después, cable fuera y robot encendido en el suelo. Dibujad su camino durante 60 segundos y probad otro giro."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Gira poco y da vueltas en un rincón", "¿Al acabar el giro aún ve la pared?"],
+        ["En el zigzag gira siempre a la derecha", "En «si no», los motores al revés"],
+        ["Lado nunca llega a valer 1", "«Pon lado a 0» solo en «al iniciar»"],
+        ["Se para en cada vuelta sin ver pared", "El «espera» del giro, dentro del «si»"],
+        ["El robot real choca con los libros", "Reacciona a 15 cm; paredes lisas"]
+      ],
+      "narracion": "Repasemos los errores típicos. Si el robot gira muy poco, menos de 400 milisegundos, vuelve a ver la pared y da vueltas en el mismo rincón. En el zigzag, mucha gente copia la rama de arriba y el robot gira siempre a la derecha. Haz el giro con el cuerpo: ¿qué rueda va atrás? Si pones «pon lado a 0» dentro de «para siempre», lado nunca valdrá 1. Si el «espera» del giro queda fuera del «si», el robot se para en cada vuelta. Y el ultrasonido real ve peor las superficies inclinadas o blandas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas de la misión 1",
+      "puntos": [
+        "Misión: objetivo, sensores, estrategia y pruebas en varias pistas",
+        "Rebotar es sencillo; el zigzag limpia más en el mismo tiempo",
+        "Una variable puede recordar una decisión",
+        "Hoy: el aspirador de lápiz y, si puedes, la sala de libros"
+      ],
+      "narracion": "Resumen de la primera misión. Se enfoca con objetivo, sensores, estrategia y pruebas en varias pistas. Rebotar es sencillo y cubre el suelo al azar; el zigzag limpia más en el mismo tiempo. Y una variable puede recordar una decisión. Para hoy: haz el aspirador de lápiz. Si en casa hay un robot aspirador, obsérvalo cinco minutos: ¿rebota, hace zigzag u otra cosa? Pregunta de salida: 60 cuadraditos limpios de 120, ¿qué porcentaje es? En la próxima clase, sumo."
+    }
+  ]
+}

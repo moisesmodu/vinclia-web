@@ -1,0 +1,143 @@
+{
+  "id": "c3-29",
+  "titulo": "Automatizar sin programar: Zapier, Make y n8n",
+  "descripcion": "Monta dos flujos sin escribir código: formulario web, hoja de cálculo y correo de confirmación; y reseña nueva con borrador de respuesta que tú revisas antes de publicar.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:flujos-sin-programar"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Automatizar sin programar: Zapier, Make y n8n",
+      "subtitulo": "Dos flujos concretos que trabajan mientras tú atiendes",
+      "narracion": "Hasta ahora has usado la IA en un chat. Escribes, te responde, copias y pegas. En esta clase damos un paso más. Vamos a conectar tus herramientas para que algunas tareas pasen solas. Sin escribir ni una línea de código. Veremos dos flujos concretos. El primero recoge una solicitud de tu web, la guarda en una hoja de cálculo y envía un correo de confirmación. El segundo detecta una reseña nueva y te prepara un borrador de respuesta. Y una regla que no cambia. Lo que llega al cliente, lo revisas tú."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es una automatización",
+      "puntos": [
+        "Un disparador: cuando pasa algo",
+        "Una o varias acciones: haz esto, y luego esto",
+        "Ejemplo: cuando llega un formulario, guarda una fila",
+        "Se monta con bloques y menús, sin código"
+      ],
+      "narracion": "Una automatización es como una receta con dos partes. La primera es el disparador. Cuando pasa algo, por ejemplo, cuando alguien rellena el formulario de tu web. La segunda son las acciones. Haz esto y luego esto. Guarda los datos en una hoja de cálculo y envía un correo. Las herramientas de automatización te dejan montar esa receta eligiendo bloques en un menú. Eliges la aplicación, eliges qué tiene que pasar y conectas tus cuentas. No hay que programar, pero sí hay que ser ordenado."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tres herramientas para elegir",
+      "columnas": [
+        "Herramienta",
+        "Para quién",
+        "Plan gratuito"
+      ],
+      "filas": [
+        [
+          "Zapier",
+          "Empezar con flujos sencillos",
+          "Sí, con límites"
+        ],
+        [
+          "Make",
+          "Flujos más visuales y con ramas",
+          "Sí, con límites"
+        ],
+        [
+          "n8n",
+          "Quien tiene ayuda técnica",
+          "Código abierto, autoalojable"
+        ]
+      ],
+      "narracion": "Hay tres herramientas muy conocidas. Zapier es la más habitual para empezar con flujos sencillos. Make muestra el flujo como un dibujo de bloques conectados y es cómoda cuando la receta tiene ramas. Las dos tienen planes gratuitos con límites. Ene ocho ene es de código abierto y se puede instalar en un servidor propio, lo que se llama autoalojar. Es potente, pero pide algo de ayuda técnica. Si un día necesitas un plan de pago, piensa en unos veinte euros al mes como orden de magnitud. Los precios cambian, así que compruébalos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Flujo 1: formulario, hoja y correo",
+      "pasos": [
+        "Crea un formulario de solicitud con Google Forms",
+        "Conecta sus respuestas a una hoja de cálculo",
+        "Disparador en Zapier o Make: fila nueva en la hoja",
+        "Acción: enviar correo de confirmación desde Gmail",
+        "Prueba con tus propios datos antes de publicarlo"
+      ],
+      "narracion": "Vamos con el primer flujo. Imagina una tienda online de cerámica que hace piezas por encargo. Crea un formulario de solicitud con Google Forms y enlázalo a una hoja de cálculo. Forms ya guarda cada respuesta como una fila nueva, sin hacer nada más. Ahora, en Zapier o en Make, el disparador es fila nueva en la hoja. La acción es enviar un correo de confirmación desde tu Gmail a la dirección que ha escrito el cliente. Antes de poner el formulario en tu web, pruébalo tú con tus propios datos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: el correo de confirmación",
+      "usuario": "Tengo una tienda online de cerámica artesanal y recibo encargos por un formulario. Redacta el correo automático de confirmación. Usa los huecos [NOMBRE] y [PIEZA]. Debe agradecer, decir que respondo con presupuesto en dos días laborables y que no hace falta pagar nada todavía. Máximo seis líneas.",
+      "ia": "Asunto: Hemos recibido tu encargo\n\nHola, [NOMBRE]:\n\nGracias por pensar en nuestro taller para tu [PIEZA]. Ya tenemos tu solicitud. En un máximo de dos días laborables te enviaremos el presupuesto y los plazos. No tienes que pagar nada todavía.\n\nUn abrazo desde el taller.",
+      "narracion": "La IA redacta el texto del correo y tú lo pegas en la acción de la automatización. Los huecos entre corchetes se sustituyen por los datos del formulario. En Zapier y en Make eliges el campo del formulario y lo colocas en su sitio. Revisa bien lo que prometes. Si dices dos días laborables, tienes que poder cumplirlo cada semana, también en temporada alta. Y ojo con un detalle. Este flujo guarda nombres y correos de clientes en varios servicios, así que añádelos a tu lista de encargados."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: que la IA te guíe al montarlo",
+      "usuario": "Quiero montar en Make este flujo: cuando aparece una fila nueva en mi hoja de Google, enviar un correo desde Gmail con el nombre y el correo de esa fila. No sé programar. Explícame los pasos uno a uno, con los nombres de los botones si los sabes, y avísame cuando no estés seguro de algún paso.",
+      "ia": "1. Crea un escenario nuevo.\n2. Añade el módulo de Google Sheets y elige el disparador de filas nuevas. Conecta tu cuenta de Google.\n3. Elige tu hoja y la pestaña de respuestas.\n4. Añade el módulo de Gmail para enviar un correo.\n5. Coloca los campos de nombre y correo en su sitio.\nNo estoy seguro de los nombres exactos de algunos botones: consulta la ayuda de Make si no los encuentras.",
+      "narracion": "Si te pierdes al montarlo, la IA puede hacer de profesor particular. Descríbele el flujo con tus palabras y pídele los pasos uno a uno. Como en la clase de privacidad, pídele que te avise cuando no esté seguro, porque los menús de estas herramientas cambian. Ve haciendo cada paso y, si algo no aparece, dile lo que ves en tu pantalla. Funciona como tener a alguien al lado. Y si te atascas de verdad, las dos herramientas tienen plantillas ya hechas para los flujos más comunes."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Flujo 2: reseña nueva, borrador de respuesta",
+      "pasos": [
+        "Disparador: aviso por correo de reseña nueva en tu ficha",
+        "Acción: enviar solo el texto de la reseña a la IA",
+        "La IA redacta un borrador con tus instrucciones",
+        "Acción: guardar el borrador en una hoja o mandártelo",
+        "Tú lo revisas y lo publicas a mano en tu ficha"
+      ],
+      "narracion": "El segundo flujo ahorra tiempo con las reseñas. Google te avisa por correo cuando alguien deja una reseña en tu ficha de Google Business Profile. Ese correo puede ser el disparador. La acción envía el texto de la reseña a la IA, que en Zapier y en Make aparece como un bloque más. La IA redacta un borrador con tus instrucciones y el flujo te lo manda o lo guarda en una hoja. Tú lo lees, lo ajustas y lo publicas a mano. Envía solo el texto, no el nombre de quien opina."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción para el bloque de IA del flujo",
+      "usuario": "Eres quien responde las reseñas de un bar de menú del día en Huesca. Te llega el texto de una reseña. Redacta un borrador de respuesta de tres líneas como máximo, en el idioma de la reseña. Si es positiva, agradece algo concreto. Si es negativa, pide disculpas sin dar la razón en todo e invita a hablar en persona. No ofrezcas descuentos ni inventes datos.",
+      "ia": "Reseña: «Comida rica pero tardaron mucho en servir.»\nBorrador: Gracias por venir y por tu sinceridad. Nos alegra que te gustara la comida y sentimos la espera. Estamos reorganizando el servicio en las horas punta. Si vuelves, pregúntanos por el responsable y lo hablamos.",
+      "narracion": "Esta es la instrucción que pegas dentro del bloque de IA del flujo. Es la misma lógica que trabajaste en la clase de reseñas, pero escrita para que funcione sola. Le dices quién eres, qué recibe y cómo debe responder según la reseña sea buena o mala. Y le pones límites. Nada de descuentos ni de datos inventados. Fíjate en el borrador del ejemplo. Menciona que estás reorganizando el servicio. Si eso no es verdad, lo borras antes de publicar. Por eso el flujo prepara el borrador, pero no publica."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Automatizar el borrador, no la decisión",
+      "mal": "El flujo publica solo la respuesta en tu ficha de Google, sin que nadie la lea.",
+      "bien": "El flujo prepara el borrador y te avisa. Tú lo lees, lo corriges y lo publicas.",
+      "narracion": "Este es el límite más importante de la clase. Se puede llegar a montar un flujo que publique las respuestas sin que nadie las lea. No lo hagas. Una respuesta automática a una reseña negativa puede empeorar mucho las cosas, y un dato inventado queda publicado con tu nombre. Automatiza el trabajo pesado, que es leer, preparar y ordenar. Y deja para ti la decisión final. Revisar un borrador te lleva treinta segundos. Arreglar una mala respuesta publicada te puede costar semanas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Antes de automatizar cualquier cosa",
+      "puntos": [
+        "Haz la tarea a mano varias veces y anota los pasos",
+        "Empieza con un flujo pequeño y pruébalo contigo",
+        "Revisa qué datos personales pasan por cada servicio",
+        "Añade esos servicios a tu lista de encargados",
+        "Mira cada semana que el flujo sigue funcionando"
+      ],
+      "narracion": "Cuatro consejos antes de lanzarte. Primero, no automatices algo que no has hecho a mano. Hazlo varias veces y apunta los pasos, porque esos pasos son tu receta. Segundo, empieza con un flujo pequeño y pruébalo contigo como cliente. Tercero, revisa qué datos personales pasan por cada servicio y añádelos a tu lista de encargados, como vimos en la sección legal. Y cuarto, un flujo puede dejar de funcionar si cambias una contraseña o una hoja. Echa un vistazo cada semana."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Elige uno de los dos flujos de esta clase",
+        "Escribe en un papel el disparador y las acciones",
+        "Pide a la IA el texto del correo o de la instrucción",
+        "Crea una cuenta gratuita en Zapier o Make",
+        "Pide a la IA los pasos y monta el primer bloque"
+      ],
+      "narracion": "Tu tarea de hoy son diez minutos. No hace falta terminar el flujo, solo empezarlo. Elige uno de los dos. Escribe en un papel el disparador y las acciones, con tus palabras. Pide a la IA el texto del correo de confirmación o la instrucción para las reseñas. Crea una cuenta gratuita en Zapier o en Make y monta el primer bloque con la ayuda de la IA. En los recursos tienes una plantilla con los dos flujos dibujados paso a paso para que no te pierdas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Automatización: disparador más acciones",
+        "Zapier y Make con planes gratuitos; n8n autoalojable",
+        "Flujo 1: formulario, hoja y correo de confirmación",
+        "Flujo 2: reseña nueva, borrador, tú publicas",
+        "Automatiza el borrador, nunca la decisión"
+      ],
+      "narracion": "Repasamos. Una automatización es un disparador y una serie de acciones. Zapier y Make tienen planes gratuitos con límites, y ene ocho ene es de código abierto y autoalojable. El primer flujo recoge un formulario, lo guarda en una hoja y envía la confirmación. El segundo prepara borradores de respuesta a las reseñas, que tú publicas. Automatiza el borrador, nunca la decisión. En la próxima clase creamos tu asistente de negocio guardado, tu GPT o tu Gem."
+    }
+  ]
+}

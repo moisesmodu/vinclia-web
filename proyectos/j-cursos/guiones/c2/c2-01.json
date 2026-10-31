@@ -1,0 +1,75 @@
+{
+  "id": "c2-01",
+  "titulo": "Bienvenida: un robot que se para solo antes del muro",
+  "descripcion": "Descubre qué vas a construir en este curso: un robot Maqueen con micro:bit que avanza, gira, dibuja y se para solo antes de chocar. Verás cómo es cada clase y para quién está pensado.",
+  "vistaPrevia": true,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Un robot que se para solo antes del muro",
+      "subtitulo": "Robótica con micro:bit y Maqueen para niños y profes",
+      "narracion": "Hola, te damos la bienvenida a este curso de robótica. Vamos a programar un robot de verdad, el Maqueen, que lleva una micro:bit como cerebro. El curso está pensado para chicos y chicas de 10 a 12 años que aprenden con un adulto al lado. Y también para profes y monitores que quieren darlo en una extraescolar o en clase. Empezamos con una pregunta: ¿puede un robot pararse solo antes de chocar?"
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-1:6",
+      "narracion": "Mira esta escena del simulador. El Maqueen va a avanzar hacia una caja. Antes de que se ponga en marcha, piensa qué hará. ¿Chocará, se parará muy lejos o se parará justo delante? Dilo en voz alta. Ahora, mira. El robot se para delante de la caja, sin tocarla. Nadie le ha dicho cuántos segundos tenía que avanzar. Ha mirado con los ultrasonidos, ha decidido con su programa y ha parado los motores."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es un robot, en tres palabras",
+      "puntos": [
+        "Siente: los sensores recogen información",
+        "Piensa: el programa de la micro:bit decide",
+        "Actúa: motores, luces y sonido hacen cosas"
+      ],
+      "narracion": "Lo que acabas de ver tiene nombre. Un robot siente con sus sensores, piensa con un programa y actúa con motores, luces o sonido. Y lo hace una y otra vez. Un robot aspirador nota la pata de una silla y gira. Un vehículo que explora Marte hace fotos donde ninguna persona puede ir. Pero el robot solo hace lo que dice el programa. Las personas decidimos para qué lo usamos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El viaje del curso",
+      "columnas": ["Unidades", "Qué aprenderás"],
+      "filas": [
+        ["1 y 2", "Moverse, girar y dibujar con precisión"],
+        ["3 y 4", "Medir distancias y seguir una línea"],
+        ["5 y 6", "Luces, sonido y control inteligente"],
+        ["7 y 8", "Misiones y tu propio robot"]
+      ],
+      "narracion": "El curso tiene ocho unidades de cuatro clases cada una. En las dos primeras, el robot aprende a moverse: velocidad, giros, polígonos y círculos. Con eso hará de guía en una feria y de artista en una plaza. Después llegan los sensores: el de distancia, para no chocar, y los de línea, para seguir una pista. Luego, luces, sonido y velocidades que cambian solas. Y al final, misiones como un combate de sumo y tu propio proyecto."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-2:5",
+      "narracion": "Un adelanto de la unidad 3. Este programa no tiene ninguna espera: el robot no cuenta el tiempo. Antes de ejecutarlo, predice. ¿Dónde se parará? Mira ahora. En cada vuelta, el robot pregunta a su sensor si la caja ya está cerca. Mientras la respuesta es no, avanza. Cuando es sí, para. Por eso funcionaría igual aunque la caja estuviera en otro sitio. Llegaremos aquí paso a paso, sin prisa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cómo es cada clase",
+      "puntos": [
+        "Una idea clara y una demo en el simulador",
+        "Predice antes de ejecutar",
+        "Una actividad sin pantalla",
+        "Un reto con el robot de verdad",
+        "Errores típicos y paso a MakeCode"
+      ],
+      "narracion": "Cada clase sigue el mismo camino. Primero, una idea. Después la vemos en el simulador de Numi Tech, y siempre te pediremos que predigas antes de ejecutar. Luego hay una actividad sin pantalla, con el cuerpo, una cinta métrica o una pista en el suelo. Si tienes el robot, harás un reto con el Maqueen de verdad. Y terminamos con los errores más típicos y cómo pasar el programa a MakeCode."
+    },
+    {
+      "tipo": "frase",
+      "texto": "El robot hace exactamente lo que dice el programa, de arriba abajo.",
+      "narracion": "Quédate con esta frase. Cuando algo sale mal, el robot no se ha equivocado: ha hecho lo que le hemos dicho. Y eso es una buena noticia, porque significa que podemos encontrar el error y arreglarlo. Probar, mirar y ajustar. Es lo que hacen cada día los ingenieros y las ingenieras de robots."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para empezar",
+      "puntos": [
+        "Un robot siente, piensa y actúa",
+        "Ocho unidades: de moverse a tu propio robot",
+        "Predice siempre antes de ejecutar",
+        "Siguiente clase: cómo seguir el curso"
+      ],
+      "narracion": "Ya sabes qué es un robot y adónde vamos. En la siguiente clase verás cómo seguir el curso en casa o en el aula, con robot o sin él. En la tercera, qué kit comprar si quieres el Maqueen de verdad. Y algo para hacer hoy mismo: busca en casa tres máquinas con sensores y decide si son robots. ¿Sienten, piensan y actúan?"
+    }
+  ]
+}

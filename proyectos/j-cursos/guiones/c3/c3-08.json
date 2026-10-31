@@ -1,0 +1,131 @@
+{
+  "id": "c3-08",
+  "titulo": "Responder WhatsApp y correos en la mitad de tiempo",
+  "descripcion": "Aplicas un método de cuatro pasos para contestar WhatsApp y correos de clientes con ayuda de la IA: tú decides qué decir en cuatro palabras y ella lo redacta con tu tono.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:100-instrucciones"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "WhatsApp y correos en la mitad de tiempo",
+      "subtitulo": "Tú decides qué decir, la IA lo redacta",
+      "narracion": "Bienvenido a la sección tres, Atención al cliente. Empezamos por la tarea que más tiempo se come en casi cualquier negocio: contestar mensajes. WhatsApp a las once de la noche, correos con cinco preguntas, clientes que quieren saber cuándo vienes y cuánto cuesta. En esta clase verás un método sencillo para responder en la mitad de tiempo, sin sonar a robot y sin perder el trato personal que te diferencia."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dónde se va de verdad el tiempo",
+      "puntos": [
+        "No en teclear, sino en pensar cómo decirlo",
+        "En los mensajes largos con varias preguntas",
+        "En decir que no sin quedar mal",
+        "En responder a deshoras y con prisas"
+      ],
+      "narracion": "Si lo piensas, lo que más cuesta no es teclear. Es pensar cómo decirlo. Cómo contestar a un correo con cinco preguntas sin dejarte ninguna. Cómo decir que no puedes ir hasta la semana que viene sin perder al cliente. Cómo explicar un precio sin parecer caro. Y todo eso, muchas veces, a deshoras y con prisas. Justo ahí es donde la IA ayuda. Tú decides qué contestar y ella encuentra las palabras."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El método en cuatro pasos",
+      "pasos": [
+        "Copia el mensaje del cliente, sin nombre ni teléfono",
+        "Escribe en pocas palabras qué quieres contestar",
+        "Pide el formato del canal: WhatsApp o correo",
+        "Revisa datos, ajusta y envíalo tú"
+      ],
+      "narracion": "El método tiene cuatro pasos. Primero, copia el mensaje del cliente y pégalo en la IA, quitando su nombre, su teléfono y cualquier dato personal. Segundo, escribe en pocas palabras lo que quieres contestar, como si fueran notas para ti. Tercero, pide el formato del canal, porque un WhatsApp es corto y un correo lleva saludo y despedida. Y cuarto, revisa precios, fechas y horas, ajusta lo que no te suene a ti y envíalo tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un electricista contesta desde la furgoneta",
+      "usuario": "Soy electricista en Zaragoza. Un cliente me escribe por WhatsApp: «Hola, quería cambiar 6 enchufes viejos de casa, ¿cuándo podrías venir y cuánto sería más o menos?». Mis notas: jueves por la tarde; 20 euros por enchufe de mano de obra; desplazamiento 30 euros; material aparte según modelo. Responde en 3 o 4 frases, de tú.",
+      "ia": "¡Hola! Podría pasarme el jueves por la tarde. Te cuento: la mano de obra son 20 euros por enchufe y el desplazamiento 30 euros; el material va aparte según el modelo que elijas. Para 6 enchufes, la mano de obra y el desplazamiento serían 150 euros. ¿Te va bien el jueves?",
+      "narracion": "Mira este caso. Javier, electricista en Zaragoza, recibe un mensaje mientras va en la furgoneta. Para el vehículo, dicta sus notas y la IA escribe la respuesta. Fíjate en que ha calculado el total: seis enchufes por veinte euros, más treinta de desplazamiento, ciento cincuenta euros. Es correcto, pero la IA puede fallar en las cuentas. Por eso Javier lo comprueba antes de enviar. Y también ha terminado con una pregunta, que invita a cerrar la cita."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Qué pegar y qué no",
+      "mal": "Pegar el chat entero con el nombre, el teléfono y la dirección del cliente.",
+      "bien": "Pegar solo la pregunta y escribir cliente A. La dirección no le hace falta a la IA.",
+      "narracion": "Un aviso importante sobre privacidad. Cuando copies un mensaje, no pegues el chat entero con el nombre del cliente, su teléfono o su dirección. La IA no necesita esos datos para redactar la respuesta. Pega solo lo que pregunta y, si hace falta, llámalo cliente A. Si usas una cuenta personal o gratuita, sin contrato de encargado del tratamiento, esta precaución es todavía más importante. Lo veremos a fondo en la sección legal."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un correo con muchas preguntas",
+      "usuario": "Tengo una tienda online de cerámica. Te pego el correo de una clienta [correo sin datos personales]. Haz dos cosas: 1. Lista sus preguntas. 2. Escribe la respuesta con estas notas: sí hacemos 40 tazas personalizadas; plazo 4 semanas; 10 por ciento de descuento por cantidad; muestra antes de producir. Tono cálido, de tú.",
+      "ia": "Preguntas: 1. ¿Hacéis tazas personalizadas para una boda? 2. ¿Cuánto tardáis? 3. ¿Hay descuento por cantidad? 4. ¿Puedo ver una antes?\n\nAsunto: Tus tazas para la boda\n¡Hola! Qué ilusión que pienses en nosotros. Sí, podemos hacer las 40 tazas personalizadas, con un plazo de 4 semanas. Por ser un pedido grande te aplicamos un 10 por ciento de descuento, y antes de producir te enviamos una muestra para que des el visto bueno. ¿Te preparo el presupuesto?",
+      "narracion": "Con los correos largos, pide dos cosas. Primero, que liste todas las preguntas del cliente. Así compruebas de un vistazo que no te dejas ninguna. Después, la respuesta con tus notas. Aquí, una tienda online de cerámica recibe una consulta para una boda. Ella decide el plazo, el descuento y lo de la muestra. La IA lo ordena y lo convierte en un correo cálido. Y como ha listado las cuatro preguntas, ella ve enseguida que todas tienen respuesta."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Decir que no sin perder al cliente",
+      "usuario": "Tengo una peluquería en Lleida. Una clienta habitual pide cita este sábado por la mañana para un color, pero está todo lleno. Mis notas: sábado imposible; puedo el viernes a las 18:00 o el martes a las 10:00; si se libera algo el sábado, la aviso. WhatsApp de 3 frases, cariñoso, de tú.",
+      "ia": "¡Hola! Este sábado por la mañana lo tenemos completo, lo siento mucho. Te puedo ofrecer el viernes a las 18:00 o el martes a las 10:00, y si se libera un hueco el sábado te escribo enseguida. ¿Cuál te va mejor?",
+      "narracion": "Uno de los mensajes que más cuesta escribir es el que dice que no. Aquí, Nuria, de la peluquería de Lleida, tiene el sábado lleno y una clienta habitual quiere venir. Sus notas son tres: no puedo, dos alternativas y la aviso si se libera algo. La IA lo convierte en un mensaje cariñoso que no suena a rechazo. Termina con una pregunta sencilla, que facilita la respuesta. Decir que no ofreciendo opciones es la mejor forma de no perder al cliente."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Notas cortas para mensajes de siempre",
+      "columnas": [
+        "Situación",
+        "Tus notas a la IA"
+      ],
+      "filas": [
+        [
+          "Preguntan precio",
+          "Precio, qué incluye, siguiente paso"
+        ],
+        [
+          "Piden cita",
+          "Dos huecos, cómo confirmar"
+        ],
+        [
+          "Vas con retraso",
+          "Disculpa, nueva hora, sin excusas"
+        ],
+        [
+          "Tienes que decir no",
+          "No puedo, alternativa, gracias"
+        ],
+        [
+          "Pago pendiente",
+          "Recordatorio amable, importe, Bizum"
+        ]
+      ],
+      "narracion": "Con el tiempo verás que casi todos los mensajes son de unos pocos tipos. Aquí tienes los más habituales y qué notas darle a la IA en cada uno. Si preguntan precio: el precio, qué incluye y cuál es el siguiente paso. Si piden cita: dos huecos y cómo confirmar. Si vas con retraso: disculpa, nueva hora y nada de excusas. Si tienes que decir no, ofrece una alternativa. Y para un pago pendiente, un recordatorio amable con el importe y cómo pagar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dentro de tu correo y con la voz",
+      "puntos": [
+        "Gemini en Gmail, con Google Workspace",
+        "Copilot en Outlook, con Microsoft 365",
+        "Dicta tus notas en el móvil y deja que lo ordene",
+        "Si no tienes nada de eso, copiar y pegar basta"
+      ],
+      "narracion": "Si usas Gmail con Google Workspace, Gemini puede ayudarte a redactar desde el propio correo. Con Outlook y Microsoft 365 pasa lo mismo con Copilot. Depende de tu plan, así que compruébalo. Y si pasas el día fuera, aprovecha el dictado del móvil. Dicta tus notas tal como te salgan, con sus dudas y sus repeticiones, y deja que la IA las ordene. Si no tienes nada de esto, no pasa nada. Copiar y pegar en cualquier herramienta gratuita funciona igual de bien."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que no conviene delegar",
+      "puntos": [
+        "Precios finales y plazos: siempre los decides tú",
+        "Mensajes delicados: pésames, conflictos, despidos",
+        "Nunca envíes sin leer, ni aunque tengas prisa",
+        "Si el cliente es de confianza, a veces basta un audio"
+      ],
+      "narracion": "Y unos límites. Los precios finales y los plazos los decides tú, siempre. Los mensajes delicados, como un pésame a un cliente de toda la vida o un conflicto serio, merecen tus propias palabras. Puedes pedir ideas, pero escríbelos tú. Nunca envíes nada sin leerlo, ni siquiera con prisa. Y recuerda que la IA es una ayuda, no una obligación. Con un cliente de confianza, a veces lo más rápido y cercano sigue siendo un audio de diez segundos."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Tú decides qué decir; la IA lo redacta",
+        "Pega el mensaje sin datos personales",
+        "En correos largos, pide primero la lista de preguntas",
+        "Tarea: contesta 3 mensajes pendientes con el método"
+      ],
+      "narracion": "Repasamos. El tiempo se va en pensar cómo decir las cosas, y eso es lo que delegas. Tú decides qué contestar en pocas palabras y la IA lo redacta con el formato del canal. Pega el mensaje sin datos personales. En los correos largos, pide primero la lista de preguntas. Y revisa siempre cifras y fechas. Tu tarea de hoy, en 10 minutos. Busca tres mensajes pendientes y contéstalos con el método de los cuatro pasos. Mide cuánto tardas."
+    }
+  ]
+}

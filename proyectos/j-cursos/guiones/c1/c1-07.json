@@ -1,0 +1,134 @@
+{
+  "id": "c1-07",
+  "titulo": "Algoritmos en casa: recetas, mochilas y dientes",
+  "descripcion": "Explicas qué es un algoritmo con tareas de casa, preparáis la cuadrícula del suelo y hacéis juntos la primera sesión con Bit, con sus errores típicos y sus soluciones.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r1-1"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Algoritmos en casa",
+      "subtitulo": "Recetas, mochilas y dientes",
+      "narracion": "Empieza la primera semana. Su tema es «órdenes en orden», y hoy toca la idea más básica de la programación: el algoritmo. Suena a palabra difícil, pero tu hijo o tu hija usa algoritmos cada mañana. En esta clase verás cómo presentarlo con cosas de casa, cómo montar la cuadrícula del suelo y qué esperar de su primer programa con Bit."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un algoritmo es una lista de instrucciones, en orden, para hacer una tarea.",
+      "narracion": "Esta es la definición que usa Numi Tech, y es la que te recomendamos. Una receta es un algoritmo. Las instrucciones para montar un mueble, también. Y un programa es un algoritmo escrito para que lo siga una máquina. Fíjate en las dos palabras clave: instrucciones y orden. Si cambias el orden, el resultado cambia. Primero el calcetín y después el zapato. Al revés no funciona."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Algoritmos de cada día",
+      "puntos": [
+        "Vestirse por la mañana",
+        "Preparar un bocadillo",
+        "Ir de casa al cole"
+      ],
+      "narracion": "La presentación del aula propone tres ejemplos para empezar la conversación: vestirse por la mañana, preparar un bocadillo e ir de casa al cole. Elige uno y pregúntale: ¿cuál es el primer paso? ¿Y el segundo? No busques una respuesta perfecta. Lo interesante es que descubra que hay pasos que pueden cambiar de orden y otros que no. Puedes ponerte el jersey antes o después del pantalón. Pero el calcetín siempre va antes que el zapato."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Ordena: lavarse los dientes",
+      "pasos": [
+        "Coge el cepillo",
+        "Ponle pasta de dientes",
+        "Cepíllate los dientes",
+        "Enjuágate la boca"
+      ],
+      "narracion": "Para empezar, un juego de mesa de dos minutos. Escribe estos cuatro pasos en papelitos, mézclalos y pídele que los ordene. Después cambiad el orden a propósito: ¿qué pasa si te enjuagas antes de cepillarte? ¿Y si te cepillas sin pasta? Con esas preguntas, tu hijo descubre solo que en un algoritmo el orden importa. Si se ríe, mejor: lo recordará."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Algoritmo secreto",
+      "puntos": [
+        "Elige una tarea de casa sin decir cuál es",
+        "Dila paso a paso: «primero cojo…, después…»",
+        "El otro adivina la tarea",
+        "Ideas: hacer la cama, preparar la mochila, un bocadillo"
+      ],
+      "narracion": "Otro juego que sale de la guía del aula: el algoritmo secreto. Uno de los dos piensa una tarea de casa sin decir cuál es, y la describe paso a paso. El otro tiene que adivinarla. Hacer la cama, preparar la mochila, poner la mesa o hacer un bocadillo. Funciona muy bien en el coche o mientras cocináis. Fíjate si se salta pasos: «coger el pan» antes de «abrir el armario». Pregúntale y que lo arregle."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-1:7",
+      "narracion": "Ahora, el robot. Bit entiende tres órdenes. Adelante: avanza una casilla hacia donde mira. Gira a la izquierda y gira a la derecha: se queda en la misma casilla y solo cambia hacia dónde mira. Las órdenes en bloques forman un programa, y Bit las hace una a una, de arriba abajo. Esta diapositiva te sirve para presentarlas. Mejor todavía: haz tú los movimientos mientras tu hijo te los dicta."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Monta la cuadrícula del suelo",
+      "pasos": [
+        "Marca cinco por cinco casillas con cinta de pintor",
+        "Cada casilla, del tamaño de un paso pequeño",
+        "Rocas: cojines o mochilas, nada que pueda hacer daño",
+        "Una bandera de papel como destino",
+        "Recorta las tarjetas de órdenes de los recursos"
+      ],
+      "narracion": "Para la actividad sin pantalla de esta semana necesitas la cuadrícula del suelo. Márcala con cinta de pintor en el pasillo: cinco por cinco casillas, cada una del tamaño de un paso pequeño. Si no tienes sitio, imprime la cuadrícula de los recursos en A3 y usad una figurita. Las rocas son cojines o mochilas. Recorta las tarjetas de órdenes. El programador pone las tarjetas en fila y el robot las hace una a una. Las misiones vienen en la ficha."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-1:13",
+      "narracion": "Esta es la primera sesión en la pantalla, y es la que se puede probar gratis y sin cuenta en Numi Tech. Antes de ver la demostración, piensa qué bloques llevarán a Bit a la bandera. En el aula, cada niño dice un bloque. En casa, os turnáis. Para el primer reto, la recta, la solución es sencilla: cuatro bloques adelante. En la curva: tres adelante, gira a la izquierda y otros tres adelante. Puede haber otras soluciones."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos de esta semana",
+      "columnas": [
+        "Lo que hace",
+        "Qué le dices"
+      ],
+      "filas": [
+        [
+          "Cree que girar lo mueve",
+          "Gira de pie: ¿dónde están tus pies?"
+        ],
+        [
+          "Cuenta la casilla de salida",
+          "Di «uno» cuando el dedo salta"
+        ],
+        [
+          "Pone bloques al azar",
+          "Di el camino en voz alta antes"
+        ],
+        [
+          "Si choca, lo borra todo",
+          "¿Hasta dónde ha ido bien?"
+        ]
+      ],
+      "narracion": "Estos son los errores que la guía del docente da como más habituales. El primero: cree que gira a la derecha mueve a Bit una casilla. Pídele que se ponga de pie y gire sin caminar. El segundo: cuenta también la casilla donde ya está Bit y pone un adelante de más. Que ponga el dedo sobre Bit y diga uno solo cuando el dedo salta a la siguiente. Y si choca y quiere borrarlo todo, ya sabes la pregunta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin la app: alternativas",
+      "puntos": [
+        "Solo en el suelo: las misiones de la ficha, con tarjetas",
+        "En papel: cuadrícula de cuatro por cuatro y flechas",
+        "Con 5 a 7 años: ScratchJr, que también avanza por casillas"
+      ],
+      "narracion": "Si no usáis la app, la semana funciona igual. Haced las misiones de la ficha en el suelo, con las tarjetas. Otra opción en papel: dibujad una cuadrícula de cuatro por cuatro con una bandera y escribid el programa con flechas para que lo siga el otro. Con niños de cinco a siete años, ScratchJr es una buena opción de pantalla, porque su personaje también se mueve por una cuadrícula. Lo importante no es la herramienta, sino pensar el camino antes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te preguntará",
+      "puntos": [
+        "¿Bit piensa solo? No: solo hace lo que dice el programa",
+        "¿Hay un solo programa bueno? No: hay muchos caminos",
+        "¿Y si Bit choca? Se para, y arreglamos el programa"
+      ],
+      "narracion": "Durante la semana te hará preguntas. Estas son las más habituales, con la respuesta de la guía. ¿Bit piensa solo? No: solo hace lo que dice el programa, bloque a bloque. Si el programa está mal, Bit se equivoca. ¿Hay un solo programa bueno? No: muchas veces hay varios caminos que llegan a la bandera. Todos valen si Bit llega, y después podéis buscar el más corto. ¿Y si choca? No pasa nada: se para y arreglamos el bloque que falla."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Esta semana, día a día",
+      "puntos": [
+        "Un algoritmo: instrucciones en orden para una tarea",
+        "Adelante mueve; los giros solo cambian hacia dónde mira",
+        "Día 1: dientes, algoritmo secreto y cuadrícula",
+        "Hoy: monta la cuadrícula y recorta las tarjetas"
+      ],
+      "narracion": "Resumiendo. Un algoritmo es una lista de instrucciones en orden. Un programa es un algoritmo para una máquina. Y Bit tiene tres órdenes: adelante mueve, y los giros solo cambian hacia dónde mira. Para hoy, monta la cuadrícula y recorta las tarjetas. El primer día, el juego de los dientes y el algoritmo secreto. Al cerrar, pregúntale: ¿qué bloque hace que Bit cambie de casilla? En la próxima clase, la derecha y la izquierda del robot."
+    }
+  ]
+}

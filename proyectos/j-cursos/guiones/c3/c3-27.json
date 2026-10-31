@@ -1,0 +1,102 @@
+{
+  "id": "c3-27",
+  "titulo": "Resumir correos, documentos y reuniones",
+  "descripcion": "Convierte hilos de correo, contratos y reuniones en resúmenes de cinco líneas con lo que te piden, las fechas y lo que tienes que hacer, sin perder detalles importantes.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Resumir correos, documentos y reuniones",
+      "subtitulo": "De veinte minutos de lectura a cinco líneas útiles",
+      "narracion": "Empezamos la sección de automatizaciones por lo más sencillo, que es también lo que más horas ahorra. Resumir. Un hilo de correo con un proveedor, un contrato de diez páginas o una reunión de una hora. Todo eso se puede convertir en cinco líneas con lo que importa. Qué te piden, para cuándo, cuánto cuesta y qué tienes que hacer tú. La clave está en pedir el resumen pensando en la decisión que vas a tomar después. Y en revisar siempre las cifras y las fechas contra el original."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir un resumen que sirva",
+      "mal": "Resúmeme esto.",
+      "bien": "Resume este hilo en cinco líneas: qué me piden, fechas, importes y qué debo contestar. Es para decidir hoy.",
+      "narracion": "La diferencia entre un resumen inútil y uno útil está en la instrucción. Si solo dices resúmeme esto, la IA decide qué es importante, y a menudo se equivoca. Si le dices qué datos buscas y para qué lo quieres, el resumen te sirve para actuar. Fíjate en el final de la instrucción buena. Es para decidir hoy. Con esa frase la IA pone delante lo urgente. Recuerda también anonimizar, como vimos en la sección legal, si el texto lleva datos de clientes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: resumir un hilo de correo",
+      "usuario": "Resume este hilo de correos con mi proveedor de café en cinco líneas como máximo. Quiero saber qué me proponen, qué fechas y qué importes aparecen y qué tengo que contestar. Si falta algún dato o hay contradicciones entre correos, avísame. [pego el hilo]",
+      "ia": "1. Proponen subir el precio del kilo de café desde el 1 de diciembre.\n2. Ofrecen mantener el precio actual si firmas un pedido mínimo mensual.\n3. Importe del pedido mínimo: no aparece claro; en un correo dicen 20 kilos y en otro 25.\n4. Piden respuesta antes del viernes.\n5. Tienes que contestar si aceptas el pedido mínimo y aclarar la cantidad.",
+      "narracion": "Aquí tienes la instrucción completa. Cambia el proveedor de café por el tuyo. Fíjate en la última petición. Si falta algún dato o hay contradicciones, avísame. En el ejemplo, la IA detecta que un correo dice veinte kilos y otro veinticinco. Ese tipo de detalle es justo lo que se te escapa leyendo deprisa. Ahora bien, compruébalo tú en el correo original. La IA a veces lee mal una cifra o se inventa una fecha. El resumen te orienta, el original manda."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: las obligaciones de un contrato",
+      "usuario": "Te pego las condiciones de un contrato de alquiler de un datáfono. Haz una lista de todo lo que me obliga a algo: permanencia, penalizaciones, subidas de precio y cómo darme de baja. Para cada punto, copia la frase exacta del contrato donde aparece.",
+      "ia": "1. Permanencia de 24 meses. Texto: «El cliente se compromete a mantener el servicio durante un periodo mínimo de veinticuatro meses».\n2. Penalización por baja anticipada. Texto: «En caso de baja antes del fin de la permanencia…»\n3. Baja: por escrito con un mes de antelación. Texto: «La baja deberá comunicarse por escrito…»",
+      "narracion": "Con los documentos largos, el truco es pedir la frase exacta. Así puedes ir al contrato, buscar esa frase y comprobar que la IA no se lo ha inventado. Usa esta instrucción con contratos de proveedores, condiciones de alquiler del local o de cualquier servicio. Eso sí, la IA te ayuda a leer, no a interpretar. Si una cláusula te preocupa, llévala a tu gestoría o a un abogado. Y si el contrato tiene datos personales, como tu DNI o el de otra persona, bórralos antes de pegarlo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Reuniones: de la charla al acta",
+      "pasos": [
+        "Avisa al principio si vas a grabar o tomar notas",
+        "Al acabar, dicta tus notas al móvil en dos minutos",
+        "Pega el texto en la IA con la instrucción del acta",
+        "Revisa nombres, cifras y fechas",
+        "Envía el acta a los asistentes ese mismo día"
+      ],
+      "narracion": "Las reuniones son el tercer gran devorador de tiempo. El método es sencillo. Si vas a grabar, avisa al principio, es cuestión de respeto. Si no grabas, al terminar dicta tus notas al móvil con el micrófono del teclado. En dos minutos sueltas todo lo que recuerdas, sin orden. Pega ese texto en la IA con la instrucción que verás ahora. Revisa los nombres, las cifras y las fechas. Y envía el acta ese mismo día. Quien manda el acta, manda en la reunión."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: acta de reunión con tareas",
+      "usuario": "Estas son mis notas desordenadas de una reunión con el arquitecto y el fontanero de una reforma. Conviértelas en un acta breve con tres apartados: decisiones tomadas, tareas con responsable y fecha, y dudas pendientes. Si una tarea no tiene responsable o fecha, márcala con [FALTA].",
+      "ia": "Decisiones\n- Se cambia la bañera por un plato de ducha.\nTareas\n- Fontanero: presupuesto del plato de ducha. Fecha: [FALTA]\n- Arquitecto: plano revisado. Fecha: lunes 10.\nDudas pendientes\n- Quién compra la mampara.",
+      "narracion": "Esta instrucción convierte unas notas desordenadas en un acta que se puede enviar. Tiene tres apartados. Decisiones, tareas con responsable y fecha, y dudas pendientes. El detalle importante es la marca de falta. Si una tarea no tiene responsable o fecha, la IA no se la inventa, sino que te avisa. Así sabes qué tienes que cerrar antes de enviar el acta. Si usas nombres reales de personas en las notas, recuerda anonimizarlos o usa una herramienta con contrato de encargado."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué pedir según lo que resumes",
+      "columnas": ["Qué resumes", "Pide", "Comprueba"],
+      "filas": [
+        ["Hilo de correo", "Qué me piden y para cuándo", "Fechas e importes"],
+        ["Contrato", "Obligaciones con cita exacta", "La frase en el original"],
+        ["Reunión", "Decisiones, tareas, dudas", "Nombres y fechas"],
+        ["Circular de la gestoría", "Qué me afecta a mí", "Con tu gestoría"]
+      ],
+      "narracion": "Esta tabla te sirve de chuleta. Para un hilo de correo, pide qué te piden y para cuándo, y comprueba fechas e importes. Para un contrato, pide las obligaciones con la cita exacta, y busca esa frase en el original. Para una reunión, decisiones, tareas y dudas, y revisa nombres y fechas. Y para las circulares que te manda tu gestoría, pide qué te afecta a ti según tu negocio. Si el resumen te deja dudas, pregúntale a tu gestoría directamente."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Resumir dentro de tu correo",
+      "puntos": [
+        "Gemini en Gmail y Docs, con Google Workspace",
+        "Copilot en Outlook y Word, con Microsoft 365",
+        "Resumen con un botón, sin copiar y pegar",
+        "Antes, revisa privacidad y contrato de encargado"
+      ],
+      "narracion": "Si usas Google Workspace o Microsoft 365, puede que ya tengas la IA dentro del correo. Gemini está integrado en Gmail y Docs con Workspace. Copilot está en Outlook y Word con Microsoft 365. Con ellos puedes resumir un hilo con un botón, sin copiar y pegar. Depende de tu plan, así que compruébalo. Y antes de usarlo con correos de clientes, revisa la configuración de privacidad y si tu plan incluye contrato de encargado del tratamiento, como vimos en la sección legal."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Busca el hilo de correo más largo que tengas pendiente",
+        "Quita los datos personales y pégalo en tu IA",
+        "Usa la instrucción del hilo de correo de esta clase",
+        "Compara fechas e importes con el original",
+        "Contesta el correo hoy mismo"
+      ],
+      "narracion": "Tu tarea de hoy dura diez minutos. Busca en tu bandeja el hilo de correo más largo que tengas sin contestar. Quita los datos personales y pégalo en tu IA con la instrucción del hilo de correo. Lee el resumen y compara las fechas y los importes con el original. Después contesta el correo. Apunta cuánto has tardado en total. Ese dato lo vas a necesitar en la clase del cuaderno de horas, donde mediremos lo que ahorras de verdad."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Pide el resumen pensando en la decisión",
+        "Pide que avise de datos que faltan o no cuadran",
+        "En contratos, pide la frase exacta",
+        "Reuniones: acta con decisiones, tareas y dudas",
+        "El resumen orienta, el original manda"
+      ],
+      "narracion": "Repasamos. Pide los resúmenes pensando en la decisión que vas a tomar. Pide que te avise si falta un dato o algo no cuadra. En los contratos, pide la frase exacta para poder comprobarla. En las reuniones, un acta con decisiones, tareas y dudas, enviada el mismo día. Y no lo olvides. El resumen orienta, pero el original manda. La IA redacta, tú decides y revisas. En la próxima clase organizamos la agenda, las reservas y los recordatorios."
+    }
+  ]
+}

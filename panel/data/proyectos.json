@@ -2384,7 +2384,7 @@
     "letra": "J",
     "nombre": "Cursos en Udemy",
     "marca": "Numi Tech",
-    "resumen": "Dos cursos en vídeo: programación para niños desde casa (para padres) e IA práctica para pequeños negocios.",
+    "resumen": "Cuatro cursos en vídeo en castellano de España: programación para niños (para padres), robótica con micro:bit y Maqueen, IA para autónomos y bienestar digital (gratis).",
     "estado": "en construcción",
     "orden": 8,
     "modelo": "15–40 € por curso; Udemy se queda el 63 % si trae al alumno",
@@ -2396,7 +2396,10 @@
     "canal": "Buscador de Udemy; cupones de lanzamiento",
     "enlaces": {
       "Numimates (código)": "https://github.com/moisesmodu/numimates",
-      "Numi Tech (app)": "https://app.numimates.com"
+      "Numi Tech (app)": "https://app.numimates.com",
+      "Entrega c1, c3 y c4 (privada)": "https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK",
+      "Entrega c2 (privada)": "https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3",
+      "PR #9": "https://github.com/moisesmodu/vinclia-web/pull/9"
     },
     "acciones": [
       {
@@ -2430,17 +2433,37 @@
       {
         "fecha": "2026-10-28",
         "texto": "Identidad de marca definida: Numi Tech («Aprende haciendo, con un profesor de verdad.»), paleta, tipografía, tono y logotipo en marcas/ (MARCAS.md)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cursos 1 (32 clases, 2 h 38 min) y 2 (38 clases, 3 h 33 min) en vídeo, listos para subir: subtítulos, cuestionarios, PDF, imagen y ficha"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Curso 4 gratuito (8 clases) montado; curso 3 guionizado entero (37 clases) y con la sección 1 grabada"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Voz en castellano de España (Piper davefx, CC0) elegida por Moisés entre 5 muestras; 0 € de voz"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Identidad de marca aplicada (Numi Tech, Moisés Mora, «Hecho en Lleida», hola@numimates.com)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Marketing sin pago: 12 vídeos cortos, 20 artículos SEO, cupones de lanzamiento para las 30 primeras reseñas"
       }
     ],
     "proximos": [
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Aplicar la identidad de marca de MARCAS.md",
-      "Terminar los vídeos y abrir el PR",
-      "DESPLIEGUE.md: página privada de entrega y tareas programadas por la sesión del Mac"
+      "Moisés: cuenta de instructor y subida de c4, c1 y c2 (PARA-MOISES.md)",
+      "Cupones de lanzamiento al aprobarse cada curso",
+      "Grabar el resto del curso 3 (secciones 2-9, ya guionizadas)",
+      "Sesión del Mac: tareas programadas de DESPLIEGUE.md"
     ],
     "paraMoises": [
-      "Abrir la cuenta de instructor en Udemy y subir los cursos cuando estén entregados"
+      "Abrir la cuenta de instructor en Udemy",
+      "Subir los cursos siguiendo PARA-MOISES.md"
     ],
     "mejoras": [
       "Reutilizar Numi Tech: 4 cursos revisados con 108 sesiones, guías del profesor, presentaciones, imprimibles y solucionario; de ahí salen el curso para padres y el de robótica con micro:bit sin escribirlos desde cero, y la app es la venta cruzada natural",

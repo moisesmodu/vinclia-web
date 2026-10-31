@@ -1,0 +1,978 @@
+{
+ "curso": "c3",
+ "ficha": {
+  "titulo": "Ahorra horas con IA y ChatGPT para autónomos y pymes",
+  "subtitulo": "Clientes, reseñas, marketing, presupuestos, Verifactu 2027, RGPD y Ley de IA con casos de pequeños negocios de España",
+  "idioma": "Español (España)",
+  "nivel": "Principiante",
+  "categoria": "Productividad en la oficina > Otros",
+  "temaPrincipal": "Inteligencia artificial generativa",
+  "precioLista": "49,99 €",
+  "gratis": false,
+  "objetivos": [
+   "Escribir instrucciones que dan buenos resultados en ChatGPT, Gemini, Copilot o Claude a la primera",
+   "Responder WhatsApp, correos y reseñas de Google en la mitad de tiempo sin perder tu tono",
+   "Preparar un mes de publicaciones, tu ficha de Google y correos a clientes en una tarde",
+   "Hacer presupuestos claros y entender qué cambia con Verifactu en 2027 para tu facturación",
+   "Usar la IA cumpliendo el RGPD y la Ley Europea de IA: qué datos no meter y cuándo avisar al cliente",
+   "Automatizar tareas repetitivas sin programar y medir las horas que ahorras",
+   "Salir con tu plan de IA en una página adaptado a tu negocio"
+  ],
+  "requisitos": [
+   "No hace falta saber nada de tecnología ni pagar herramientas: todo se puede hacer con planes gratuitos",
+   "Un ordenador o un móvil con conexión a internet",
+   "Tener un pequeño negocio o ser autónomo, o estar a punto de serlo"
+  ],
+  "publico": [
+   "Autónomos y pequeños negocios de España: peluquerías, oficios, comercios, hostelería, fisios, gestorías y consultores",
+   "Personas que van a darse de alta como autónomas y quieren organizarse desde el principio",
+   "Pymes sin departamento de marketing ni informática que quieren usar la IA con criterio"
+  ],
+  "palabrasClave": [
+   "IA para autónomos",
+   "ChatGPT para pymes",
+   "inteligencia artificial para negocios",
+   "ChatGPT para autónomos",
+   "Verifactu",
+   "IA para pequeños negocios",
+   "marketing con IA",
+   "atención al cliente con IA",
+   "Gemini",
+   "Copilot"
+  ]
+ },
+ "secciones": [
+  {
+   "n": 1,
+   "titulo": "Empieza aquí",
+   "clases": [
+    {
+     "n": 1,
+     "id": "c3-01",
+     "titulo": "Bienvenida: tu primer resultado con IA en 10 minutos",
+     "descripcion": "Respondes a una reseña de Google de un cliente molesto con ayuda de la IA, en menos de 10 minutos y sin conocimientos técnicos. Y ves qué vas a conseguir en el resto del curso.",
+     "video": "01 - Bienvenida tu primer resultado con IA en 10 minutos.mp4",
+     "subtitulos": "01 - Bienvenida tu primer resultado con IA en 10 minutos.vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": 226.192
+    },
+    {
+     "n": 2,
+     "id": "c3-02",
+     "titulo": "Qué es (y qué no es) la IA generativa, sin humo",
+     "descripcion": "Entiendes en lenguaje llano cómo funciona la IA generativa, en qué tareas te ahorra tiempo y en cuáles se equivoca, para usarla con confianza y sin sustos.",
+     "video": "02 - Qué es (y qué no es) la IA generativa, sin humo.mp4",
+     "subtitulos": "02 - Qué es (y qué no es) la IA generativa, sin humo.vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": 290.911
+    },
+    {
+     "n": 3,
+     "id": "c3-03",
+     "titulo": "Qué herramienta usar: ChatGPT, Gemini, Copilot, Claude y compañía",
+     "descripcion": "Conoces las cinco herramientas de IA más útiles para un pequeño negocio, eliges una principal y una de reserva según dónde trabajas, y las configuras para empezar gratis.",
+     "video": "03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.mp4",
+     "subtitulos": "03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": 305.941
+    }
+   ],
+   "cuestionario": null
+  },
+  {
+   "n": 2,
+   "titulo": "Pedir bien: instrucciones que funcionan",
+   "clases": [
+    {
+     "n": 4,
+     "id": "c3-04",
+     "titulo": "La fórmula de una buena instrucción",
+     "descripcion": "Aprendes una fórmula de cinco piezas para pedirle cualquier texto a la IA y conseguir un resultado útil a la primera, con ejemplos de un electricista, un bar y una tienda online.",
+     "video": "04 - La fórmula de una buena instrucción.mp4",
+     "subtitulos": "04 - La fórmula de una buena instrucción.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 5,
+     "id": "c3-05",
+     "titulo": "La ficha de tu negocio: el contexto que lo cambia todo",
+     "descripcion": "Preparas en una página la ficha de tu negocio con horarios, servicios, precios, tono y políticas, para pegarla en la IA y que cada respuesta suene a ti sin repetir lo mismo cada vez.",
+     "video": "05 - La ficha de tu negocio el contexto que lo cambia todo.mp4",
+     "subtitulos": "05 - La ficha de tu negocio el contexto que lo cambia todo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "ficha-negocio.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 6,
+     "id": "c3-06",
+     "titulo": "Iterar: pedir cambios, variantes y tonos",
+     "descripcion": "Aprendes a convertir un primer borrador mediocre en un texto listo para enviar pidiendo cambios concretos, variantes y tonos distintos, en dos o tres mensajes.",
+     "video": "06 - Iterar pedir cambios, variantes y tonos.mp4",
+     "subtitulos": "06 - Iterar pedir cambios, variantes y tonos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 7,
+     "id": "c3-07",
+     "titulo": "Tu biblioteca de instrucciones y asistentes guardados",
+     "descripcion": "Montas tu biblioteca de instrucciones con huecos para rellenar, ordenada por tareas, y aprendes a guardar un asistente con tu ficha para no repetir nunca lo mismo.",
+     "video": "07 - Tu biblioteca de instrucciones y asistentes guardados.mp4",
+     "subtitulos": "07 - Tu biblioteca de instrucciones y asistentes guardados.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 2,
+    "titulo": "Cuestionario: pedir bien a la IA",
+    "preguntas": [
+     {
+      "pregunta": "¿Cuál de estas piezas de una buena instrucción es la que más se olvida y más cambia el resultado?",
+      "respuestas": [
+       "El saludo inicial",
+       "El formato: canal y longitud",
+       "Decir por favor",
+       "El nombre de la herramienta"
+      ],
+      "correcta": 1,
+      "explicacion": "Las cinco piezas son tarea, contexto, destinatario, formato, y tono con límites. Decir el canal y la longitud en frases o líneas ahorra la mitad de las correcciones."
+     },
+     {
+      "pregunta": "La IA te devuelve un texto que no te convence. ¿Qué instrucción de cambio funciona mejor?",
+      "respuestas": [
+       "Acórtalo a 3 frases, tutea y quita los emojis",
+       "Mejóralo",
+       "No me gusta, hazlo otra vez",
+       "Hazlo más profesional y mejor"
+      ],
+      "correcta": 0,
+      "explicacion": "Los cambios concretos (longitud, trato, frases que sobran, tono) aciertan. Los vagos hacen que la IA cambie cosas al azar y estropee lo que sí estaba bien."
+     },
+     {
+      "pregunta": "¿Qué NO debe aparecer nunca en la ficha de tu negocio?",
+      "respuestas": [
+       "Tu horario y formas de pago",
+       "Tu política de cancelaciones",
+       "Nombres, teléfonos o datos de salud de clientes",
+       "Si tratas a tus clientes de tú o de usted"
+      ],
+      "correcta": 2,
+      "explicacion": "La ficha habla de tu negocio, no de tus clientes. Todo lo que va en ella debería poder estar en tu web: nada de datos personales, de salud ni contraseñas."
+     },
+     {
+      "pregunta": "Una conversación lleva cinco rondas, el texto no mejora y la IA repite errores ya corregidos. ¿Qué haces?",
+      "respuestas": [
+       "Seguir insistiendo con el mismo mensaje",
+       "Cambiar de herramienta para siempre",
+       "Aceptar el texto tal cual",
+       "Abrir una conversación nueva con la instrucción mejorada"
+      ],
+      "correcta": 3,
+      "explicacion": "Empezar de cero con todo lo aprendido en las rondas anteriores es más rápido que seguir corrigiendo. Y esa instrucción mejorada merece ir a tu biblioteca."
+     },
+     {
+      "pregunta": "¿Para qué sirven los huecos entre corchetes en una instrucción de tu biblioteca?",
+      "respuestas": [
+       "Para marcar lo que cambia cada vez y reutilizar el resto",
+       "Para que la IA invente esos datos",
+       "Para ocultar información a la IA",
+       "No sirven para nada, es decoración"
+      ],
+      "correcta": 0,
+      "explicacion": "La parte fija ya está probada; solo rellenas los huecos (cliente, fecha, documentos). Así el resultado sale siempre con tu estilo en treinta segundos."
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "titulo": "Atención al cliente",
+   "clases": [
+    {
+     "n": 8,
+     "id": "c3-08",
+     "titulo": "Responder WhatsApp y correos en la mitad de tiempo",
+     "descripcion": "Aplicas un método de cuatro pasos para contestar WhatsApp y correos de clientes con ayuda de la IA: tú decides qué decir en cuatro palabras y ella lo redacta con tu tono.",
+     "video": "08 - Responder WhatsApp y correos en la mitad de tiempo.mp4",
+     "subtitulos": "08 - Responder WhatsApp y correos en la mitad de tiempo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 9,
+     "id": "c3-09",
+     "titulo": "Reseñas de Google: responder bien, también a las malas",
+     "descripcion": "Respondes reseñas de Google positivas y negativas con una estructura clara y la ayuda de la IA, sin ponerte a la defensiva y sin revelar datos de tus clientes.",
+     "video": "09 - Reseñas de Google responder bien, también a las malas.mp4",
+     "subtitulos": "09 - Reseñas de Google responder bien, también a las malas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "respuestas-resenas.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 10,
+     "id": "c3-10",
+     "titulo": "Preguntas frecuentes y mensajes automáticos de WhatsApp Business",
+     "descripcion": "Preparas con la IA las respuestas a las preguntas que te hacen siempre y las conviertes en mensaje de bienvenida, mensaje de ausencia y respuestas rápidas de WhatsApp Business, gratis.",
+     "video": "10 - Preguntas frecuentes y mensajes automáticos de WhatsApp Business.mp4",
+     "subtitulos": "10 - Preguntas frecuentes y mensajes automáticos de WhatsApp Business.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "mensajes-whatsapp-business.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 11,
+     "id": "c3-11",
+     "titulo": "Quejas difíciles y clientes enfadados",
+     "descripcion": "Usas la IA para separar hechos de emociones en una queja, responder con una solución concreta sin ponerte a la defensiva y hasta ensayar conversaciones difíciles antes de tenerlas.",
+     "video": "11 - Quejas difíciles y clientes enfadados.mp4",
+     "subtitulos": "11 - Quejas difíciles y clientes enfadados.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "100-instrucciones.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 12,
+     "id": "c3-12",
+     "titulo": "Atender en inglés, francés o alemán sin saberlos",
+     "descripcion": "Entiendes y respondes mensajes de clientes en inglés, francés o alemán con la IA, comprobando cada traducción con una vuelta al castellano y cuidando el tono de cada idioma.",
+     "video": "12 - Atender en inglés, francés o alemán sin saberlos.mp4",
+     "subtitulos": "12 - Atender en inglés, francés o alemán sin saberlos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "mensajes-whatsapp-business.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 3,
+    "titulo": "Cuestionario: atención al cliente con IA",
+    "preguntas": [
+     {
+      "pregunta": "Vas a pedir a la IA que te ayude a contestar un WhatsApp de un cliente. ¿Qué debes pegar?",
+      "respuestas": [
+       "El chat entero con nombre, teléfono y dirección",
+       "Solo lo que pregunta, y si hace falta llamarlo cliente A",
+       "Una captura de su perfil",
+       "Su DNI para personalizar la respuesta"
+      ],
+      "correcta": 1,
+      "explicacion": "La IA no necesita datos personales para redactar. Pega solo la pregunta y tus notas, y llama al cliente «cliente A» si hace falta."
+     },
+     {
+      "pregunta": "¿Cuál es la estructura recomendada para responder una reseña negativa en Google?",
+      "respuestas": [
+       "Explicar por qué el cliente se equivoca",
+       "Ignorarla para no darle importancia",
+       "Agradecer, reconocer sin peros, explicar en una frase, ofrecer solución y firmar",
+       "Pedirle que la borre a cambio de un descuento"
+      ],
+      "correcta": 2,
+      "explicacion": "La respuesta es para los futuros clientes que la leen. Reconocer, explicar sin excusas y ofrecer una salida da confianza; discutir en público nunca funciona."
+     },
+     {
+      "pregunta": "Eres fisioterapeuta y un paciente cuenta en una reseña de cinco estrellas cómo le ayudaste con su lesión. ¿Qué haces al responder?",
+      "respuestas": [
+       "Agradecer sin mencionar ninguna lesión ni tratamiento",
+       "Contar los detalles del tratamiento",
+       "Confirmar cuántas sesiones hizo",
+       "No responder nunca a las positivas"
+      ],
+      "correcta": 0,
+      "explicacion": "Los datos de salud son una categoría especial. Aunque el paciente cuente su caso, tú no debes confirmarlo ni añadir detalles en una respuesta pública."
+     },
+     {
+      "pregunta": "Desde el 2 de agosto de 2026, si usas un chatbot con IA que conversa solo con tus clientes, ¿qué debes hacer?",
+      "respuestas": [
+       "Nada, solo afecta a grandes empresas",
+       "Darlo de alta como sistema de alto riesgo",
+       "Pedir permiso por escrito a cada cliente",
+       "Avisar al cliente de que está hablando con una IA"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la obligación de transparencia del artículo 50 de la Ley Europea de IA. Los mensajes fijos que escribes tú en WhatsApp Business no son un chatbot."
+     },
+     {
+      "pregunta": "Has traducido al inglés una respuesta con precio y hora. ¿Qué paso te ayuda a comprobar que es correcta?",
+      "respuestas": [
+       "Enviarla sin leerla",
+       "Pedir la vuelta al castellano, literal, y revisar cifras y horas",
+       "Traducirla a un tercer idioma",
+       "Ponerla toda en mayúsculas"
+      ],
+      "correcta": 1,
+      "explicacion": "La retrotraducción muestra si el texto dice lo que querías. Si aparece una hora distinta o una promesa que no hiciste, lo corriges antes de enviar."
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "titulo": "Marketing sin agencia",
+   "clases": [
+    {
+     "n": 13,
+     "id": "c3-13",
+     "titulo": "Tu ficha de Google Business Profile",
+     "descripcion": "Redacta con IA la descripción, los servicios, las publicaciones y las preguntas frecuentes de tu ficha de Google, revisando tú cada dato antes de publicarlo.",
+     "video": "13 - Tu ficha de Google Business Profile.mp4",
+     "subtitulos": "13 - Tu ficha de Google Business Profile.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "ficha-google-business.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 14,
+     "id": "c3-14",
+     "titulo": "Un mes de publicaciones en 20 minutos",
+     "descripcion": "Prepara con IA los temas, el calendario y los textos de un mes de publicaciones para Instagram, Facebook o tu ficha de Google, en una sola sesión de trabajo.",
+     "video": "14 - Un mes de publicaciones en 20 minutos.mp4",
+     "subtitulos": "14 - Un mes de publicaciones en 20 minutos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "calendario-publicaciones.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 15,
+     "id": "c3-15",
+     "titulo": "Imágenes con IA: cuándo sí, cuándo no y los derechos",
+     "descripcion": "Aprende cuándo una imagen generada con IA ayuda a tu negocio y cuándo es mejor una foto real, cómo pedirla bien y qué revisar sobre uso comercial, derechos y transparencia.",
+     "video": "15 - Imágenes con IA cuándo sí, cuándo no y los derechos.mp4",
+     "subtitulos": "15 - Imágenes con IA cuándo sí, cuándo no y los derechos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "imagenes-ia-checklist.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 16,
+     "id": "c3-16",
+     "titulo": "Tu web y el SEO local con ayuda de la IA",
+     "descripcion": "Usa la IA para escribir los textos de tu web pensando en las búsquedas de tu zona: páginas de servicio, títulos, descripciones y preguntas frecuentes, con datos coherentes en todas partes.",
+     "video": "16 - Tu web y el SEO local con ayuda de la IA.mp4",
+     "subtitulos": "16 - Tu web y el SEO local con ayuda de la IA.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "seo-local.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 17,
+     "id": "c3-17",
+     "titulo": "Correos, ofertas y fidelización",
+     "descripcion": "Redacta con IA el correo mensual, los asuntos, las ofertas con condiciones claras y un plan sencillo para que tus clientes vuelvan, sin meter sus datos personales en la herramienta.",
+     "video": "17 - Correos, ofertas y fidelización.mp4",
+     "subtitulos": "17 - Correos, ofertas y fidelización.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "correos-fidelizacion.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 4,
+    "titulo": "Cuestionario: marketing sin agencia",
+    "preguntas": [
+     {
+      "pregunta": "La IA te devuelve una descripción para tu ficha de Google que dice «la mejor peluquería de Lleida, calidad insuperable». ¿Qué haces?",
+      "respuestas": [
+       "La publico tal cual: suena muy profesional",
+       "Pido que quite los superlativos y le doy datos concretos: barrio, especialidad, cómo pedir cita",
+       "Añado más adjetivos para destacar",
+       "Dejo la ficha sin descripción"
+      ],
+      "correcta": 1,
+      "explicacion": "Los superlativos no ayudan a decidir y nadie se los cree. Los datos concretos (dónde estás, qué haces mejor, cómo se pide cita, cuándo abres) sí. Si la IA no los tiene, se los das tú."
+     },
+     {
+      "pregunta": "¿Para qué sirve pedir a la IA que deje entre corchetes lo que tienes que completar tú?",
+      "respuestas": [
+       "Para que no se invente precios, fechas ni datos que solo tú conoces",
+       "Para que el texto quede más bonito",
+       "Para que Google lo posicione mejor",
+       "Para no tener que revisar el texto"
+      ],
+      "correcta": 0,
+      "explicacion": "Los corchetes marcan los huecos para tus datos reales: precio, fechas, teléfono, horario. Así la IA no rellena con datos inventados que podrías publicar sin darte cuenta."
+     },
+     {
+      "pregunta": "Vendes tazas de cerámica en tu tienda online. ¿Qué imagen deberías usar en la ficha de cada producto?",
+      "respuestas": [
+       "Una imagen generada con IA, que queda más bonita",
+       "Una imagen al estilo de un artista famoso",
+       "Una foto real de la taza, mejorada con buena luz si hace falta",
+       "Cualquier foto de una taza parecida sacada de internet"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que el cliente compra debe ser real: espera recibir exactamente eso. La IA va bien para fondos e ilustraciones y para darte consejos que mejoren tus fotos reales."
+     },
+     {
+      "pregunta": "En SEO local, ¿qué conviene revisar en tu web, tu ficha de Google y tus redes?",
+      "respuestas": [
+       "Que cada sitio tenga un teléfono distinto",
+       "Que repitan muchas veces el nombre de tu ciudad",
+       "Que no haya ninguna dirección",
+       "Que el nombre, la dirección y el teléfono sean exactamente iguales"
+      ],
+      "correcta": 3,
+      "explicacion": "Los datos de contacto coherentes en todas partes evitan confundir a clientes y buscadores. Repetir la ciudad muchas veces no funciona y espanta a los clientes."
+     },
+     {
+      "pregunta": "Quieres preparar el correo del mes para tus pacientes de fisioterapia. ¿Qué es correcto?",
+      "respuestas": [
+       "Pegar la lista de pacientes con sus lesiones para que la IA personalice",
+       "Pedir a la IA solo el texto, sin nombres ni datos de salud, y enviarlo a quien ha aceptado recibirlo",
+       "Pedir a la IA que prometa resultados para que reserven más",
+       "Enviar el texto sin revisar el consejo"
+      ],
+      "correcta": 1,
+      "explicacion": "A la IA le pides el texto, nunca la lista de clientes. Los datos de salud son una categoría especial. Revisa el consejo con tu criterio y evita prometer resultados médicos."
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "titulo": "Presupuestos, facturas y números",
+   "clases": [
+    {
+     "n": 18,
+     "id": "c3-18",
+     "titulo": "Presupuestos claros en 2 minutos",
+     "descripcion": "Convierte tus notas de la visita en un presupuesto ordenado y claro, con partidas, plazos, validez y lo que no incluye, y aprende a revisar las cifras antes de enviarlo.",
+     "video": "18 - Presupuestos claros en 2 minutos.mp4",
+     "subtitulos": "18 - Presupuestos claros en 2 minutos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "presupuesto.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 19,
+     "id": "c3-19",
+     "titulo": "Facturación: lo que la IA puede y no puede hacer",
+     "descripcion": "Usa la IA para redactar conceptos claros, revisar datos antes de facturar y reclamar cobros con educación, sabiendo por qué la factura tiene que salir siempre de un programa de facturación.",
+     "video": "19 - Facturación lo que la IA puede y no puede hacer.mp4",
+     "subtitulos": "19 - Facturación lo que la IA puede y no puede hacer.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "conceptos-factura.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 20,
+     "id": "c3-20",
+     "titulo": "Verifactu en 2027: qué es, fechas y qué tienes que hacer",
+     "descripcion": "Entiende qué es Verifactu, desde cuándo te obliga según seas sociedad o autónomo, qué opciones tienes para cumplir y qué preguntas hacer a tu proveedor de software o a tu gestoría.",
+     "video": "20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.mp4",
+     "subtitulos": "20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "verifactu-checklist.pdf"
+     ],
+     "duracion": 327.636
+    },
+    {
+     "n": 21,
+     "id": "c3-21",
+     "titulo": "Tickets, gastos y hojas de cálculo con IA",
+     "descripcion": "Pasa tus tickets a una tabla con ayuda de la IA, clasifícalos con las categorías de tu gestoría y monta una hoja de cálculo de gastos con fórmulas que la IA te explica paso a paso.",
+     "video": "21 - Tickets, gastos y hojas de cálculo con IA.mp4",
+     "subtitulos": "21 - Tickets, gastos y hojas de cálculo con IA.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "hoja-gastos.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 22,
+     "id": "c3-22",
+     "titulo": "Previsión de IVA e IRPF: ayuda, no asesoría",
+     "descripcion": "Usa la IA para entender tus impuestos con tus propios números, estimar cuánto dinero apartar y preparar las preguntas para tu gestoría, sin confundir esta ayuda con asesoría fiscal.",
+     "video": "22 - Previsión de IVA e IRPF ayuda, no asesoría.mp4",
+     "subtitulos": "22 - Previsión de IVA e IRPF ayuda, no asesoría.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "prevision-impuestos.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 5,
+    "titulo": "Cuestionario: presupuestos, facturas y números",
+    "preguntas": [
+     {
+      "pregunta": "La IA te prepara un presupuesto con cuatro partidas y el total. ¿Qué haces antes de enviarlo?",
+      "respuestas": [
+       "Compruebo cada suma con la calculadora o en mi hoja de cálculo",
+       "Lo envío: la IA no se equivoca con los números",
+       "Le pido que elija el tipo de IVA",
+       "Añado el nombre y el DNI del cliente en el chat"
+      ],
+      "correcta": 0,
+      "explicacion": "Los asistentes de chat pueden equivocarse con los números. La IA redacta y ordena; las sumas las compruebas tú y el tipo de impuesto lo confirmas con tu gestoría."
+     },
+     {
+      "pregunta": "Eres autónomo y tributas en el IRPF. Según el calendario vigente a octubre de 2026, ¿desde cuándo te obliga Verifactu?",
+      "respuestas": [
+       "Desde el 1 de enero de 2026",
+       "Desde el 1 de enero de 2027",
+       "Desde el 1 de julio de 2027",
+       "No tiene fecha todavía"
+      ],
+      "correcta": 2,
+      "explicacion": "El Real Decreto-ley 15/2025 aplazó la obligación: 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y 1 de julio de 2027 para el resto, incluidos los autónomos en IRPF."
+     },
+     {
+      "pregunta": "¿Por qué no puedes usar ChatGPT como programa de facturación?",
+      "respuestas": [
+       "Porque escribe mal los conceptos",
+       "Porque es de pago",
+       "Porque las facturas que genera son demasiado largas",
+       "Porque no genera registros íntegros, inalterables y trazables ni el código QR que exige Verifactu"
+      ],
+      "correcta": 3,
+      "explicacion": "Una IA como ChatGPT escribe textos, pero no es un sistema de facturación. La factura sale de un programa adaptado o de la aplicación gratuita de la Agencia Tributaria."
+     },
+     {
+      "pregunta": "Le pasas a la IA la foto de un ticket. ¿Qué frase conviene añadir a la instrucción?",
+      "respuestas": [
+       "Si un dato no se lee bien, escribe ilegible en lugar de suponerlo",
+       "Redondea los importes para que quede más limpio",
+       "Dime si este gasto es deducible",
+       "Inventa la categoría que mejor te parezca"
+      ],
+      "correcta": 0,
+      "explicacion": "Sin esa frase, la IA puede inventarse un número que parece correcto. Las categorías las pone tu gestoría y qué es deducible también lo decide ella."
+     },
+     {
+      "pregunta": "¿Cuál de estas peticiones es un buen uso de la IA para tus impuestos?",
+      "respuestas": [
+       "¿Cuánto tengo que pagar de IRPF este año?",
+       "Con mis totales y el porcentaje que me dio mi gestoría, calcula cuánto apartar y explica cada paso",
+       "¿Qué gastos me puedo desgravar para pagar menos?",
+       "Presenta mi declaración por mí"
+      ],
+      "correcta": 1,
+      "explicacion": "La IA ayuda a preparar y entender: explica conceptos, hace cuentas con tus datos y ordena tus dudas. Las decisiones fiscales y tu caso concreto son de tu gestoría."
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "titulo": "Legal: RGPD y Ley de IA",
+   "clases": [
+    {
+     "n": 23,
+     "id": "c3-23",
+     "titulo": "Qué datos no debes meter nunca en una IA",
+     "descripcion": "Aprende qué datos de clientes no se pegan en un chat de IA y cómo anonimizar un mensaje en un minuto para seguir usando la IA con tranquilidad.",
+     "video": "23 - Qué datos no debes meter nunca en una IA.mp4",
+     "subtitulos": "23 - Qué datos no debes meter nunca en una IA.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "privacidad-checklist.pdf"
+     ],
+     "duracion": 298.087
+    },
+    {
+     "n": 24,
+     "id": "c3-24",
+     "titulo": "Configura la privacidad de tus herramientas",
+     "descripcion": "Desactiva el uso de tus conversaciones para entrenar, ordena cuentas y accesos y deja por escrito una norma de uso de IA para tu negocio.",
+     "video": "24 - Configura la privacidad de tus herramientas.mp4",
+     "subtitulos": "24 - Configura la privacidad de tus herramientas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "privacidad-checklist.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 25,
+     "id": "c3-25",
+     "titulo": "RGPD práctico: avisos, consentimiento y encargados",
+     "descripcion": "Prepara con IA un borrador de aviso de privacidad en lenguaje claro, un mensaje para pedir permiso antes de enviar ofertas y la lista de herramientas que tratan datos de tus clientes.",
+     "video": "25 - RGPD práctico avisos, consentimiento y encargados.mp4",
+     "subtitulos": "25 - RGPD práctico avisos, consentimiento y encargados.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "lista-encargados.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 26,
+     "id": "c3-26",
+     "titulo": "La Ley Europea de IA para pequeños negocios",
+     "descripcion": "Qué te pide de verdad el Reglamento europeo de IA si eres autónomo o pequeño negocio: formación suficiente, avisar cuando un cliente habla con un chatbot e indicar los contenidos que imitan a personas reales.",
+     "video": "26 - La Ley Europea de IA para pequeños negocios.mp4",
+     "subtitulos": "26 - La Ley Europea de IA para pequeños negocios.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "aviso-chatbot.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 6,
+    "titulo": "Cuestionario: RGPD y Ley de IA",
+    "preguntas": [
+     {
+      "pregunta": "Usas una cuenta personal de ChatGPT, sin contrato de encargado del tratamiento. Tienes que contestar la queja de una clienta. ¿Qué haces con sus datos?",
+      "respuestas": [
+       "Pego el mensaje tal cual, con nombre y teléfono, para que la respuesta sea personal",
+       "Lo anonimizo: «clienta A», sin teléfono ni datos de salud, y relleno yo los huecos al enviar",
+       "Pego solo el DNI para que la IA no se confunda de clienta",
+       "Le pido a la IA que borre ella los datos personales después de leerlos"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin contrato de encargado no metas datos personales de clientes. Anonimiza («clienta A», sin contacto ni salud), pide una respuesta con huecos y rellénalos tú en tu herramienta habitual. Pedir a la IA que los borre no sirve: ya los has enviado."
+     },
+     {
+      "pregunta": "¿Dónde se desactiva en ChatGPT el uso de tus conversaciones para entrenar los modelos?",
+      "respuestas": [
+       "En Configuración, apartado Controles de datos",
+       "No se puede desactivar en ningún plan",
+       "Borrando el historial cada noche"
+      ],
+      "correcta": 0,
+      "explicacion": "En ChatGPT está en Configuración, Controles de datos. En Gemini, Copilot, Claude o Le Chat hay una opción equivalente. Como los menús cambian, compruébalo en la ayuda oficial de cada herramienta."
+     },
+     {
+      "pregunta": "Tienes un centro de estética y una clienta te cuenta que es alérgica a un producto. ¿Qué es ese dato y qué haces con él?",
+      "respuestas": [
+       "Un dato normal: lo puedo pegar en la IA para que tenga en cuenta la alergia",
+       "Un dato de marketing: lo uso para recomendarle productos",
+       "Un dato de salud, de categoría especial: lo apunto en su ficha del centro y nunca va a la IA"
+      ],
+      "correcta": 2,
+      "explicacion": "Los datos de salud (alergias, tratamientos, lesiones) son categoría especial. Quedan en la ficha del negocio. Si necesitas ayuda de la IA, escribe algo genérico como «una clienta con piel sensible»."
+     },
+     {
+      "pregunta": "Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia de la Ley Europea de IA. ¿Qué implica si pones un chatbot en tu web?",
+      "respuestas": [
+       "Nada, porque el paquete Ómnibus digital las aplazó",
+       "Necesito una auditoría de alto riesgo antes de usarlo",
+       "Que solo lo pueden usar empresas con más de 50 empleados",
+       "Que debo avisar al cliente de que está hablando con una IA"
+      ],
+      "correcta": 3,
+      "explicacion": "El artículo 50 obliga a avisar de que el cliente habla con una IA y a indicar los contenidos que imitan personas reales. El Ómnibus digital de 2026 solo aplazó las obligaciones de alto riesgo, no la transparencia ni la alfabetización."
+     },
+     {
+      "pregunta": "Eres autónomo y usas ChatGPT para escribir correos y publicaciones. Según la Ley Europea de IA, ¿qué te toca?",
+      "respuestas": [
+       "Tener formación suficiente en IA, exigida desde el 2 de febrero de 2025",
+       "Registrarte como sistema de alto riesgo",
+       "Nada en absoluto: la ley no se aplica a autónomos"
+      ],
+      "correcta": 0,
+      "explicacion": "La alfabetización en IA (artículo 4) se aplica desde el 2 de febrero de 2025: quien usa IA en la empresa debe tener formación suficiente. Escribir con ChatGPT no es un sistema de alto riesgo."
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "titulo": "Ganar horas: automatizaciones",
+   "clases": [
+    {
+     "n": 27,
+     "id": "c3-27",
+     "titulo": "Resumir correos, documentos y reuniones",
+     "descripcion": "Convierte hilos de correo, contratos y reuniones en resúmenes de cinco líneas con lo que te piden, las fechas y lo que tienes que hacer, sin perder detalles importantes.",
+     "video": "27 - Resumir correos, documentos y reuniones.mp4",
+     "subtitulos": "27 - Resumir correos, documentos y reuniones.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    },
+    {
+     "n": 28,
+     "id": "c3-28",
+     "titulo": "Agenda, reservas y recordatorios",
+     "descripcion": "Prepara con IA los mensajes de confirmación, recordatorio y cancelación de citas, guárdalos en WhatsApp Business y organiza tu semana en cinco minutos al día.",
+     "video": "28 - Agenda, reservas y recordatorios.mp4",
+     "subtitulos": "28 - Agenda, reservas y recordatorios.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "mensajes-agenda.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 29,
+     "id": "c3-29",
+     "titulo": "Automatizar sin programar: Zapier, Make y n8n",
+     "descripcion": "Monta dos flujos sin escribir código: formulario web, hoja de cálculo y correo de confirmación; y reseña nueva con borrador de respuesta que tú revisas antes de publicar.",
+     "video": "29 - Automatizar sin programar Zapier, Make y n8n.mp4",
+     "subtitulos": "29 - Automatizar sin programar Zapier, Make y n8n.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "flujos-sin-programar.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 30,
+     "id": "c3-30",
+     "titulo": "Asistentes y agentes: tu GPT o Gem de negocio",
+     "descripcion": "Crea un asistente guardado con la ficha de tu negocio, tu tono y tus límites para no repetir el contexto en cada chat, y aprende qué son los agentes y qué permisos no darles.",
+     "video": "30 - Asistentes y agentes tu GPT o Gem de negocio.mp4",
+     "subtitulos": "30 - Asistentes y agentes tu GPT o Gem de negocio.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "asistente-negocio.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 31,
+     "id": "c3-31",
+     "titulo": "Medir el ahorro: tu cuaderno de horas",
+     "descripcion": "Mide con un cuaderno sencillo cuánto tiempo te ahorra de verdad la IA en cinco tareas, con la revisión incluida, y decide qué seguir usando y qué dejar.",
+     "video": "31 - Medir el ahorro tu cuaderno de horas.mp4",
+     "subtitulos": "31 - Medir el ahorro tu cuaderno de horas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "cuaderno-horas.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 7,
+    "titulo": "Cuestionario: ganar horas con automatizaciones",
+    "preguntas": [
+     {
+      "pregunta": "Quieres que la IA resuma las condiciones de un contrato con un proveedor. ¿Qué instrucción te permite comprobar mejor que no se ha inventado nada?",
+      "respuestas": [
+       "«Resúmeme esto en pocas palabras»",
+       "«Lista lo que me obliga a algo y copia la frase exacta del contrato donde aparece»",
+       "«Dime si me conviene firmarlo»"
+      ],
+      "correcta": 1,
+      "explicacion": "Pedir la frase exacta te deja buscarla en el original y comprobarla. La IA te ayuda a leer, no a interpretar: si una cláusula te preocupa, llévala a tu gestoría o a un abogado."
+     },
+     {
+      "pregunta": "En una automatización como «formulario web, hoja de cálculo y correo de confirmación», ¿qué es el disparador?",
+      "respuestas": [
+       "El correo de confirmación que recibe el cliente",
+       "La hoja de cálculo donde se guardan los datos",
+       "El hecho que pone en marcha el flujo: que llega una solicitud nueva",
+       "El plan de pago de la herramienta de automatización"
+      ],
+      "correcta": 2,
+      "explicacion": "Una automatización es un disparador (cuando pasa algo, por ejemplo una fila nueva o una solicitud nueva) y una o varias acciones (guardar, enviar un correo). Se monta con bloques en Zapier o Make, sin programar."
+     },
+     {
+      "pregunta": "Montas un flujo para las reseñas nuevas de Google. ¿Cuál es la forma recomendada en el curso?",
+      "respuestas": [
+       "El flujo prepara un borrador con IA y te avisa; tú lo revisas y lo publicas a mano",
+       "El flujo publica la respuesta automáticamente para ganar tiempo",
+       "El flujo envía el nombre y la foto de quien opina a la IA para personalizar"
+      ],
+      "correcta": 0,
+      "explicacion": "Automatiza el borrador, nunca la decisión. Una respuesta automática a una mala reseña o con un dato inventado queda publicada con tu nombre. Envía a la IA solo el texto de la reseña."
+     },
+     {
+      "pregunta": "Configuras un agente de IA que puede hacer cosas por ti en tus herramientas. ¿Qué permiso NO deberías darle?",
+      "respuestas": [
+       "Buscar y comparar proveedores en internet",
+       "Preparar borradores de correo para que los revises",
+       "Ordenar archivos de una carpeta concreta",
+       "Acceso a tu banco o a pagos"
+      ],
+      "correcta": 3,
+      "explicacion": "Si un agente se equivoca, no tienes un texto malo: tienes un correo enviado o una compra hecha. Que pida confirmación antes de enviar, comprar o borrar, y nunca le des acceso al banco ni a pagos."
+     },
+     {
+      "pregunta": "En tu cuaderno de horas, ¿qué debes incluir en el tiempo «con IA» de cada tarea?",
+      "respuestas": [
+       "Solo los segundos que tarda la IA en escribir",
+       "El tiempo de pedir, revisar y corregir, hasta que el resultado está listo",
+       "Una estimación de memoria al final del mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Si no incluyes la revisión, no mides el ahorro real. Apunta en el momento, no de memoria, y deja que la hoja de cálculo haga las cuentas."
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "titulo": "Casos por sector",
+   "clases": [
+    {
+     "n": 32,
+     "id": "c3-32",
+     "titulo": "Peluquería, estética y bienestar",
+     "descripcion": "Acompaña a una peluquería inventada de Lleida durante una semana: citas y recordatorios, mensajes en catalán, reseñas, publicaciones del mes y cuidado especial con los datos de salud.",
+     "video": "32 - Peluquería, estética y bienestar.mp4",
+     "subtitulos": "32 - Peluquería, estética y bienestar.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    },
+    {
+     "n": 33,
+     "id": "c3-33",
+     "titulo": "Electricistas, fontaneros y reformas",
+     "descripcion": "Sigue a un electricista inventado de Zaragoza: presupuestos a partir de notas de voz, seguimiento de presupuestos, explicaciones claras al cliente, facturación con Verifactu en el horizonte y la semana de visitas ordenada.",
+     "video": "33 - Electricistas, fontaneros y reformas.mp4",
+     "subtitulos": "33 - Electricistas, fontaneros y reformas.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    },
+    {
+     "n": 34,
+     "id": "c3-34",
+     "titulo": "Comercio y tienda online",
+     "descripcion": "Acompaña a una tienda online inventada de cerámica artesanal: fichas de producto sin datos inventados, clientes en francés, encargos automatizados, boletín con permiso, imágenes honestas y piezas con tara en Wallapop.",
+     "video": "34 - Comercio y tienda online.mp4",
+     "subtitulos": "34 - Comercio y tienda online.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    },
+    {
+     "n": 35,
+     "id": "c3-35",
+     "titulo": "Hostelería, gestorías y servicios profesionales",
+     "descripcion": "Dos casos inventados de principio a fin: un bar de menú del día que publica su menú en diez minutos cada mañana y una gestoría pequeña que explica las novedades a sus clientes sin meter sus datos en la IA.",
+     "video": "35 - Hostelería, gestorías y servicios profesionales.mp4",
+     "subtitulos": "35 - Hostelería, gestorías y servicios profesionales.vtt",
+     "vistaPrevia": false,
+     "recursos": [],
+     "duracion": null
+    }
+   ],
+   "cuestionario": {
+    "seccion": 8,
+    "titulo": "Cuestionario: casos por sector",
+    "preguntas": [
+     {
+      "pregunta": "Un electricista quiere preparar un presupuesto con IA a partir de sus notas de voz. ¿Quién pone los precios?",
+      "respuestas": [
+       "La IA, porque conoce los precios de mercado",
+       "Él, con su tarifa y el coste real del material; la IA deja huecos y ordena las partidas",
+       "Nadie: el presupuesto va sin precios"
+      ],
+      "correcta": 1,
+      "explicacion": "La IA no conoce tus costes ni tu proveedor. Pídele que ordene, redacte y deje huecos como [PRECIO], y pon tú los importes. Revisa siempre cifras, nombres y plazos antes de enviar."
+     },
+     {
+      "pregunta": "Un bar quiere publicar su menú del día con IA. ¿Cómo se gestionan los alérgenos?",
+      "respuestas": [
+       "Se le pide a la IA que los deduzca de los nombres de los platos",
+       "Se omiten en el texto para que sea más corto",
+       "Se copian de una web de recetas parecida",
+       "Los marca el bar con sus recetas reales y la IA solo los coloca en el texto"
+      ],
+      "correcta": 3,
+      "explicacion": "La IA no sabe qué lleva tu plato y puede inventar los alérgenos con mucha seguridad. Los decides tú con tus recetas y fichas; la IA solo los coloca en el texto."
+     },
+     {
+      "pregunta": "Una tienda online pide a la IA la descripción de una taza y no sabe si es apta para microondas. ¿Qué instrucción evita un dato inventado?",
+      "respuestas": [
+       "«Si falta un dato que el cliente querrá saber, escribe [FALTA] y dime cuál»",
+       "«Escribe una descripción bonita y completa»",
+       "«Pon que es apta para todo, que vende más»"
+      ],
+      "correcta": 0,
+      "explicacion": "Con la marca [FALTA], la IA avisa en vez de inventar. Un dato falso en una ficha acaba en devoluciones y malas reseñas. Las fotos de producto, además, siempre reales."
+     },
+     {
+      "pregunta": "Una gestoría quiere enviar a sus clientes una circular sobre Verifactu. ¿Qué fechas son las correctas según el Real Decreto-ley 15/2025?",
+      "respuestas": [
+       "1 de enero de 2026 para todos",
+       "Todavía no hay ninguna fecha",
+       "1 de enero de 2027 para Sociedades y 1 de julio de 2027 para el resto, incluidos autónomos en IRPF"
+      ],
+      "correcta": 2,
+      "explicacion": "El Real Decreto-ley 15/2025 aplazó Verifactu: 1 de enero de 2027 para el Impuesto sobre Sociedades y 1 de julio de 2027 para el resto. En la instrucción, «usa solo estos datos» evita que la IA añada otros."
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "titulo": "Tu plan de IA",
+   "clases": [
+    {
+     "n": 36,
+     "id": "c3-36",
+     "titulo": "Proyecto final: tu plan de IA en una página",
+     "descripcion": "Reúne todo el curso en un plan de una página: tus tres tareas para la IA, tus líneas rojas, una automatización, tus obligaciones y cómo medirás el ahorro, con un calendario de 30 días.",
+     "video": "36 - Proyecto final tu plan de IA en una página.mp4",
+     "subtitulos": "36 - Proyecto final tu plan de IA en una página.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "plan-ia-una-pagina.pdf"
+     ],
+     "duracion": null
+    },
+    {
+     "n": 37,
+     "id": "c3-37",
+     "titulo": "Clase extra: novedades y recursos, octubre de 2026",
+     "descripcion": "Repaso del curso, cómo se actualiza cada trimestre, tu siguiente paso y los enlaces actualizados: cupones para los otros cursos de la serie y recursos para seguir.",
+     "video": "37 - Clase extra novedades y recursos, octubre de 2026.mp4",
+     "subtitulos": "37 - Clase extra novedades y recursos, octubre de 2026.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "enlaces-y-cupones.pdf"
+     ],
+     "duracion": null
+    }
+   ],
+   "cuestionario": null
+  }
+ ],
+ "clases": 37,
+ "duracionMin": 24.1
+}

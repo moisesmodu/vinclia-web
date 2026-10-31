@@ -1,0 +1,136 @@
+{
+  "id": "c2-35",
+  "titulo": "Del simulador al robot de verdad: MakeCode y calibrar",
+  "descripcion": "Pasa tu programa del simulador a la micro:bit con MakeCode, relaciona los bloques con su JavaScript y calibra la velocidad y los giros de tu Maqueen: mide, calcula y ajusta.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k8-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Del simulador al robot de verdad",
+      "subtitulo": "Hoy tu programa sale de la pantalla",
+      "narracion": "En el taller esperan los Maqueen de verdad. El simulador es una copia muy fiel, pero el mundo real tiene sorpresas: pilas que se gastan, suelos que resbalan, motores que no son gemelos. Hoy pasarás tu programa al robot y lo ajustarás. Empezamos con una pregunta. En el simulador, el robot hace 62 centímetros en 4 segundos. ¿El robot de verdad hará 62? ¿Más? ¿Menos? ¿Qué puede influir? Apunta tu hipótesis: la comprobarás con el metro."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El camino del programa",
+      "pasos": [
+        "Toca el botón MakeCode del programa",
+        "Comprueba tus bloques: los del Maqueen salen en inglés",
+        "Conecta la micro:bit con el cable USB, robot apagado",
+        "Pulsa Descargar y espera a que termine",
+        "Cable fuera, robot en el suelo y enciéndelo"
+      ],
+      "narracion": "El botón MakeCode abre MakeCode dentro de la app, con tu programa en bloques y la extensión maqueen ya puesta. Sus bloques salen en inglés. Conecta la micro:bit con el cable USB, con el robot apagado, y pulsa Descargar. La primera vez, con Chrome o Edge, MakeCode pide emparejar la micro:bit. Con otros navegadores se descarga un archivo punto hex que arrastras a la unidad MICROBIT. Con iPad no se puede descargar por cable. Sin la app, haz lo mismo desde MakeCode, que es gratis."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Bloques y JavaScript: el mismo programa",
+      "puntos": [
+        "«Para siempre» es basic.forever",
+        "«Si distancia < 10» es if (Maqueen_V5.Ultrasonic() < 10)",
+        "Maqueen_V5.motorRun(Motors.All, Dir.CW, 150)",
+        "CW es adelante; CCW, atrás"
+      ],
+      "narracion": "Cada bloque tiene su línea de JavaScript. «Para siempre» es basic punto forever. «Si la distancia es menor que 10» empieza con if y usa Maqueen V5 punto Ultrasonic. Lee esta otra línea: motorRun, con Motors punto All, Dir punto CW y 150. ¿Qué bloque es? Es «motor los dos adelante a velocidad 150». MotorRun enciende motores, All quiere decir los dos y CW es adelante. CCW es atrás. En los bloques en castellano salen como sentido horario y antihorario. Son dos maneras de escribir lo mismo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Por qué el robot real hace algo diferente?",
+      "puntos": [
+        "Pilas medio gastadas: los motores van más lentos",
+        "Alfombra o suelo liso: las ruedas resbalan",
+        "Dos motores nunca gemelos: el robot se desvía",
+        "Mejor pilas alcalinas nuevas; con recargables, recalibra"
+      ],
+      "narracion": "El programa es el mismo; lo que cambia es el mundo. Con las pilas medio gastadas, los motores van más lentos. En una alfombra, las ruedas resbalan. Y los dos motores nunca son del todo gemelos, así que el robot se desvía un poco. El Maqueen funciona con 3 pilas AA. Con alcalinas nuevas va a la velocidad prevista. Con recargables queda muy cerca del mínimo: va más lento y gira menos. Si las usas, recalibra los giros cada vez que las cambies. Y no mezcles pilas nuevas y viejas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Mide, calcula, ajusta",
+      "pasos": [
+        "Mide: en 4 segundos hace 48 cm",
+        "Calcula: 48 entre 4 son 12 cm cada segundo",
+        "Para 60 cm: 5 segundos, es decir, 5000 ms",
+        "Giro: si gira demasiado, menos ms; si gira poco, más"
+      ],
+      "narracion": "Calibrar es medir lo que hace tu robot y ajustar los números del programa. Un ejemplo. Tu Maqueen, a velocidad 150, hace 48 centímetros en 4 segundos. Entonces hace 12 centímetros cada segundo. Para avanzar 60, necesita 5 segundos: espera 5000 milisegundos. Cuidado con dividir al revés, 4 entre 48. En un segundo hará menos de 48, pero mucho más que 1. Con los giros, igual: un giro de 600 milisegundos hace unos 90 grados. La mitad del tiempo, la mitad del giro."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-3:7",
+      "narracion": "Ahora compara dos maneras de llegar a la meta. Una usa una espera fija de 5000 milisegundos. La otra avanza hasta que el sensor del medio encuentra la cinta. Predice: con las pilas gastadas, ¿cuál se parará en la meta? Mira la demo. Este robot avanza hasta que línea M vale 1: con pilas nuevas o gastadas, siempre se para en la cinta. Con la espera fija, en 5 segundos haría menos camino y se pararía antes. En el robot real, cambia las esperas largas por sensores siempre que puedas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla: calibra tus pasos",
+      "puntos": [
+        "Camina 10 pasos normales y mídelos con un metro",
+        "Divide entre 10: ¿cuánto mide un paso?",
+        "Calcula cuántos pasos hay hasta un objeto y compruébalo",
+        "Ahora con pasos de hormiga: ¿ha cambiado?"
+      ],
+      "narracion": "Esta actividad desconectada se hace en un pasillo. Camina 10 pasos normales y mide con un metro cuántos centímetros has hecho. Divide entre 10: si has hecho 500 centímetros, cada paso mide 50. Elige un objeto de casa y calcula cuántos pasos hay hasta él. Después, compruébalo caminando. Por último, camina con pasos de hormiga. ¿Ha cambiado la calibración? Claro. Es como el robot con las pilas gastadas: si cambian los pasos, hay que volver a calibrar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Calibra tu Maqueen",
+      "pasos": [
+        "Pista del aula: 120 por 80 cm con cinta negra",
+        "Adelante 4 segundos: medid y calculad los cm por segundo",
+        "Giro de 600 ms sobre una cruz de cinta",
+        "Ajustad la espera de 20 en 20 ms hasta los 90 grados",
+        "La pista del aula: sigue la cinta y para ante la caja"
+      ],
+      "narracion": "Construid la pista del aula de la ficha: 120 por 80 centímetros, con las esquinas marcadas con cinta de pintor. La cinta negra se pega midiendo con el metro, y las curvas, con trozos cortos. En grupo, con programador, piloto, medidor y secretario. Primero, descargad adelante 4 segundos y calculad los centímetros por segundo de vuestro robot. Después, el giro de 600 milisegundos sobre una cruz de cinta: ajustadlo de 20 en 20 hasta los 90 grados. Al final, la pista del aula. Apuntad todos los números."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Retos y tu misión para el robot real",
+      "puntos": [
+        "Calibra el giro en el simulador: 90 grados a la derecha",
+        "A prueba de pilas: párate en la cinta en tres pistas",
+        "Extra: la pista del aula, con la caja en dos sitios",
+        "Tu misión: cinta con curvas suaves y cajas reales",
+        "Cambia las esperas largas por sensores y descárgala"
+      ],
+      "narracion": "En la sesión de Numi Tech, el reto a prueba de pilas pide pararse en la cinta en tres pistas. Es como si el robot fuera más rápido o más lento. La solución: repite hasta que línea M igual a 1, adelante a 120, y después para. Es el mismo programa que acabas de probar en el robot. Después, adapta tu misión para construirla en el aula, con curvas suaves y cajas donde haya cajas. Haz la versión para el robot real, con al menos un sensor, y descárgala."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["MakeCode se queda cargando", "Copia el código y usa MakeCode aparte"],
+        ["Los bloques salen en rojo", "Añade la extensión maqueen"],
+        ["El robot no hace nada", "Interruptor, pilas y descarga acabada"],
+        ["La micro:bit muestra una cruz", "No encuentra el robot: revisa todo"],
+        ["El robot real se desvía al ir recto", "Baja un poco la rueda rápida o usa cinta"]
+      ],
+      "narracion": "Los errores típicos del paso al robot. Si MakeCode se queda cargando, la red lo bloquea. Toca Copia el código, abre MakeCode en otra pestaña, añade la extensión maqueen y pega el código en la pestaña JavaScript. Si los bloques salen en rojo, falta la extensión. Si el robot no hace nada, revisa el interruptor y las pilas. El primer bloque, inicializar Maqueen V5, muestra una cruz si no encuentra el robot y un visto bueno si lo encuentra. Y si se desvía, prueba 150 y 142."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: MakeCode y privacidad",
+      "puntos": [
+        "MakeCode es un servicio de Microsoft, gratis y sin registro",
+        "Desde Numi Tech solo se envía el programa del robot",
+        "Ningún nombre, cuenta ni dato del alumnado",
+        "Si la red filtra webs, pedid que permita MakeCode",
+        "Sin robot, MakeCode simula la micro:bit, no el Maqueen"
+      ],
+      "narracion": "Si das el curso en un centro, esto te interesa. MakeCode es un servicio de Microsoft, hecho para la Micro:bit Educational Foundation. No hace falta registrarse. Desde Numi Tech solo se envía el programa del robot: ningún nombre, ninguna cuenta y ningún dato del alumnado. Si la red del centro filtra webs, pedid a informática que permita la dirección de MakeCode. Y un aviso para familias sin robot: MakeCode tiene un simulador de la micro:bit, pero no del Maqueen. Verás la pantalla y los botones, no las ruedas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas hoy",
+      "puntos": [
+        "Botón MakeCode, Descargar y micro:bit",
+        "El mundo real cambia un poco lo que hace el robot",
+        "Calibrar: mide, calcula y ajusta",
+        "Los sensores hacen el programa más fiable"
+      ],
+      "narracion": "Resumen. El programa pasa al robot con el botón MakeCode, el cable USB y Descargar, siempre con el robot apagado y encendiéndolo en el suelo. El mundo real cambia un poco lo que hace el robot. Por eso se calibra: se mide, se calcula y se ajusta. Y los programas con sensores se adaptan solos. Para hoy, calibra tus pasos en casa y termina la versión para el robot real de tu misión. Revisa tu hipótesis del principio. En la próxima clase, la Muestra de Robots."
+    }
+  ]
+}

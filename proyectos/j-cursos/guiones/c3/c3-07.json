@@ -1,0 +1,110 @@
+{
+  "id": "c3-07",
+  "titulo": "Tu biblioteca de instrucciones y asistentes guardados",
+  "descripcion": "Montas tu biblioteca de instrucciones con huecos para rellenar, ordenada por tareas, y aprendes a guardar un asistente con tu ficha para no repetir nunca lo mismo.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:100-instrucciones"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tu biblioteca de instrucciones",
+      "subtitulo": "Y asistentes guardados para no repetirte",
+      "narracion": "Llevas tres clases mejorando tus instrucciones. Ya sabes usar la fórmula, tienes tu ficha de negocio y sabes pedir cambios. Ahora toca no perder ese trabajo. Cada vez que una instrucción te funciona bien, vale la pena guardarla. En esta clase vas a montar tu biblioteca de instrucciones, ordenada por tareas. Y verás cómo guardar un asistente con tu ficha dentro, para no tener que pegarla cada vez."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué guardar tus instrucciones",
+      "puntos": [
+        "Repites las mismas tareas cada semana",
+        "Una buena instrucción cuesta varias rondas",
+        "En el historial se pierde entre cientos de chats",
+        "Guardada, la reutilizas en 30 segundos"
+      ],
+      "narracion": "Piensa en tu semana. Seguramente repites las mismas tareas: contestar a quien pregunta precios, recordar citas, responder reseñas, preparar la publicación del viernes. Una buena instrucción te ha costado varias rondas. Si la dejas en el historial, en un mes estará perdida entre cientos de conversaciones. Si la guardas bien, la reutilizas en treinta segundos. Es lo mismo que hacen los buenos profesionales con sus plantillas de presupuesto o sus modelos de correo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Monta tu biblioteca en un documento",
+      "pasos": [
+        "Un documento o nota: Mis instrucciones",
+        "Un encabezado por tarea: WhatsApp, reseñas, redes",
+        "Cada instrucción con [huecos] para lo que cambia",
+        "Debajo, un ejemplo de resultado que te gustó",
+        "La ficha del negocio, siempre al principio"
+      ],
+      "narracion": "No necesitas ninguna aplicación especial. Un documento de texto o una nota del móvil sirven. Llámalo Mis instrucciones. Haz un encabezado por tarea: atención por WhatsApp, reseñas, redes sociales, presupuestos. Dentro de cada uno, guarda la instrucción con huecos entre corchetes para lo que cambia cada vez. Debajo, pega un ejemplo de resultado que te gustó, porque te servirá como modelo. Y arriba del todo, tu ficha del negocio. La plantilla de esta clase ya viene organizada así."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Una instrucción con huecos, lista para reutilizar",
+      "usuario": "Soy una gestoría pequeña de Tarragona. Escribe un correo a [tipo de cliente: autónomo, sociedad] recordándole que nos envíe [documentos] antes del [fecha]. Tono cordial y de usted, máximo 5 líneas. Asunto claro. No menciones importes ni plazos legales.",
+      "ia": "Asunto: Documentación pendiente antes del 10 de este mes\nBuenos días:\nLe recordamos que necesitamos las facturas emitidas y recibidas del trimestre antes del día 10, para preparar su declaración con tiempo.\nPuede enviárnoslas respondiendo a este correo.\nMuchas gracias y un saludo,\nGestoría Puig",
+      "narracion": "Este es el aspecto de una instrucción reutilizable. La gestoría Puig, de Tarragona, la usa cada trimestre. Los huecos entre corchetes son lo único que cambia: el tipo de cliente, los documentos y la fecha límite que la propia gestoría decide. El resto está fijo y ya probado. Fíjate en el límite final: no menciones importes ni plazos legales. Así la IA no se inventa una fecha oficial. La gestoría rellena los huecos, revisa y envía."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Instrucción suelta frente a instrucción de biblioteca",
+      "mal": "La escribes de memoria cada vez, distinta, y el resultado sale cada día de una manera.",
+      "bien": "La copias de tu biblioteca, rellenas los huecos y el resultado sale siempre con tu estilo.",
+      "narracion": "Compara las dos formas de trabajar. Si escribes la instrucción de memoria cada vez, cada día te sale distinta. Unas veces olvidas el tono, otras la longitud, y los resultados cambian sin que sepas por qué. Con la biblioteca, copias la instrucción probada, rellenas los huecos y listo. El resultado es coherente y tus clientes reciben siempre el mismo estilo. Además, si un día alguien te ayuda en el negocio, puede usar las mismas instrucciones."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la IA convierta tu conversación en plantilla",
+      "usuario": "Esta conversación me ha funcionado muy bien. Conviértela en una única instrucción reutilizable, con huecos entre corchetes para lo que cambie cada vez. Incluye todos los cambios que te he pedido.",
+      "ia": "Aquí la tienes:\n«Tengo un bar de menú del día en [ciudad]. Escribe una publicación para Instagram sobre [novedad]. Máximo 3 frases, hablando a vosotros, tono de bar de barrio y sin exagerar. Un solo emoji. Termina con [hashtags]».",
+      "narracion": "Un truco que ahorra mucho tiempo. Cuando una conversación de varias rondas te haya dado un buen resultado, no copies la instrucción inicial. Pídele a la IA que convierta toda la conversación en una única instrucción reutilizable. Aquí lo hace con el ejemplo del bar de la clase anterior. Recoge todos los cambios de las rondas y deja huecos para lo que varía. Revísala, pruébala una vez y guárdala en tu biblioteca."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Asistentes guardados: tu ficha siempre dentro",
+      "puntos": [
+        "ChatGPT: GPT personalizados y proyectos",
+        "Gemini: Gems con instrucciones fijas",
+        "Claude: proyectos con instrucciones y documentos",
+        "Copilot y Le Chat tienen opciones parecidas",
+        "Las funciones cambian y algunas piden plan de pago"
+      ],
+      "narracion": "Hay un paso más. Casi todas las herramientas permiten guardar un asistente o un espacio de trabajo con instrucciones fijas. En ChatGPT se llaman GPT personalizados o proyectos. En Gemini, Gems. En Claude, proyectos. Copilot y Le Chat tienen opciones parecidas. La idea es la misma en todas. Metes tu ficha y tus reglas una vez, y cada conversación dentro de ese asistente ya las conoce. Ten en cuenta que estas funciones cambian a menudo y algunas piden plan de pago."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu primer asistente, en cinco pasos",
+      "pasos": [
+        "Ponle nombre: Asistente de atención al cliente",
+        "Pega tu ficha y tus reglas fijas de tono",
+        "Añade: si falta un dato, pregunta o marca PENDIENTE",
+        "Pruébalo con tres mensajes reales sin datos personales",
+        "Ajusta las instrucciones y vuelve a probar"
+      ],
+      "narracion": "Crear uno es sencillo. Ponle un nombre claro, por ejemplo, asistente de atención al cliente. En las instrucciones, pega tu ficha y tus reglas de tono. Añade siempre esta frase: si falta un dato, pregunta o márcalo como pendiente. Después pruébalo con tres mensajes reales de clientes, quitando nombres y teléfonos. Si algo no te convence, ajusta las instrucciones y prueba otra vez. En la sección de automatizaciones montaremos uno más completo, paso a paso."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuida tu biblioteca",
+      "puntos": [
+        "Revísala una vez al mes",
+        "Actualiza precios, horarios y políticas",
+        "Borra lo que no uses y mejora lo que sí",
+        "Nunca guardes datos personales de clientes"
+      ],
+      "narracion": "Una biblioteca útil necesita un poco de cuidado. Revísala una vez al mes, por ejemplo, el primer lunes. Actualiza precios, horarios y políticas, tanto en la ficha como en los asistentes guardados. Borra las instrucciones que no uses y mejora las que más usas. Y una regla que no cambia: en la biblioteca no van datos personales de clientes, ni siquiera en los ejemplos. Sustituye los nombres por cliente A o por un nombre inventado."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Una buena instrucción se escribe una vez y se usa cien.",
+      "narracion": "Esta frase resume la sección. Una buena instrucción se escribe una vez y se usa cien. El tiempo que inviertes hoy en ordenar tu biblioteca lo recuperas en pocos días. Y cuanto más la uses, mejor se vuelve, porque cada mejora queda guardada. En los recursos de esta clase tienes la plantilla con instrucciones de todo el curso, organizada por secciones. Empieza por copiar las que te sirvan y adaptarlas a tu negocio."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Un documento con un encabezado por tarea",
+        "Instrucciones con huecos y un ejemplo de resultado",
+        "Asistente guardado con tu ficha y tus reglas",
+        "Tarea: guarda 5 instrucciones adaptadas a tu negocio"
+      ],
+      "narracion": "Repasamos. Tu biblioteca es un documento con un encabezado por tarea, instrucciones con huecos y un ejemplo de resultado. Si tu herramienta lo permite, guarda un asistente con tu ficha y tus reglas. Revísalo todo una vez al mes. Tu tarea de hoy, en 10 minutos. Descarga la plantilla, elige cinco instrucciones que vayas a usar esta semana y adáptalas a tu negocio. Con esto terminas la sección Pedir bien. Haz el cuestionario y nos vemos en Atención al cliente."
+    }
+  ]
+}

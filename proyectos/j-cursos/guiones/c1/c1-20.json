@@ -1,0 +1,103 @@
+{
+  "id": "c1-20",
+  "titulo": "Animación y bucles para siempre",
+  "descripcion": "Tu hijo o tu hija descubre el secreto de los dibujos animados (disfraces y esperas) y el bucle «por siempre», y programa en Scratch un pez que nada sin parar. Sabrás cómo calcular la velocidad juntos y qué errores esperar.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:g2-1", "imprimible:g2-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Animación y bucles para siempre",
+      "subtitulo": "Semana 4 · Disfraces, esperas y «por siempre»",
+      "narracion": "En la clase anterior los personajes se movían de un salto y hablaban. Hoy van a cobrar vida. Veremos el secreto de los dibujos animados, que son los disfraces y las esperas, y un bucle nuevo que no se acaba nunca. Con estas dos ideas, tu hija o tu hijo podrá hacer un pez que nada sin parar por un acuario. En Tech Creadores, la misión es la pantalla gigante del acuario del muelle. En Scratch haremos exactamente lo mismo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la libreta animada",
+      "pasos": [
+        "Una libreta pequeña u 8 papeles adhesivos y un lápiz",
+        "En la última página, una pelota arriba del todo",
+        "En la página de antes, la pelota un poco más abajo",
+        "Seguid hasta el suelo y, al final, que vuelva a subir",
+        "Pasad las páginas despacio y después deprisa"
+      ],
+      "narracion": "Empezad sin ordenador, con la libreta animada. Necesitáis una libreta pequeña o unos ocho papeles adhesivos. En la última página, tu hija dibuja una pelota arriba del todo. En la página de antes, un poco más abajo: se transparenta y sirve de guía. Así hasta que toque el suelo, y en las últimas páginas vuelve a subir. Ahora pasad las páginas despacio: se ven dibujos sueltos. Pasadlas deprisa: la pelota bota. Pregúntale qué ha cambiado. Cada página es un disfraz, y lo rápido que pasas las páginas es la espera."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los bloques de la animación",
+      "columnas": ["Tech Creadores", "Scratch"],
+      "filas": [
+        ["disfraz siguiente", "siguiente disfraz"],
+        ["pon el disfraz 3", "cambiar disfraz a disfraz3"],
+        ["espera 0,5 segundos", "esperar 0.5 segundos"],
+        ["por siempre", "por siempre"],
+        ["si tocas el borde, rebota", "rebotar si toca un borde"]
+      ],
+      "narracion": "Esta es la traducción de hoy. En Scratch, los disfraces de cada objeto están en la pestaña Disfraces, arriba a la izquierda. El gato ya trae dos, y si los alternas, parece que camina. «Siguiente disfraz» y «cambiar disfraz a» están en Apariencia. «Esperar» y «por siempre» están en Control, en naranja. Y «rebotar si toca un borde» está al final de Movimiento. Un detalle que despista: en Scratch los decimales se escriben con punto. Medio segundo es cero punto cinco."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g2-1:8",
+      "narracion": "Mirad juntos esta diapositiva: la medusa cambia de disfraz cada segundo. Antes, pregúntale qué pasaría sin la espera. La respuesta sorprende: el ordenador cambia el dibujo tan deprisa que no se ve nada. Si pone tres «siguiente disfraz» seguidos, el personaje parece quieto y te dirá que no funciona. Sí funciona, pero no da tiempo a verlo. La guía del docente propone preguntarle cuánto tiempo cree que dura cada disfraz en pantalla. Con una espera de medio segundo entre cambio y cambio, ya se mueve."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un «repite» se acaba. «Por siempre», no.",
+      "narracion": "Ahora el bucle nuevo. En la semana 2 vio el «repite», que da unas cuantas vueltas y se acaba. Pero la pantalla de un acuario tiene que estar encendida todo el día. Para eso está «por siempre»: repite los bloques de dentro sin parar, hasta que pulsas el botón rojo de parar. Una buena pregunta para empezar: si el pez tiene que mover la cola durante una hora, ¿cuántas vueltas pondrías en el «repite»? Deja que se dé cuenta de que hace falta otro bloque."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "30 fotogramas cada segundo",
+      "puntos": [
+        "El escenario se redibuja 30 veces por segundo",
+        "Cada vuelta del bucle dura un fotograma",
+        "«Mover 6» en el bucle: 6 por 30, 180 puntos por segundo",
+        "Más rápido: sube el número, no añadas esperas ni bucles"
+      ],
+      "narracion": "Aquí hay una idea de matemáticas preciosa para esta edad. El escenario se dibuja 30 veces cada segundo, como una película, y cada vuelta del bucle gasta uno de esos dibujos, que se llaman fotogramas. Scratch funciona igual. Así que «mover 6 pasos» dentro de un «por siempre» avanza 6 por 30, 180 puntos cada segundo. Para ir el doble de rápido, se dobla el número. El error típico es añadir una espera o un segundo bucle. La espera hace las vueltas más largas, o sea, más lento. Y un bucle debajo de otro «por siempre» no se llega a hacer nunca."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g2-2:8",
+      "narracion": "En esta diapositiva, el pez repite por siempre «mover 5 pasos» y «rebotar si toca un borde». Antes de verla, pide a tu hijo que calcule su velocidad: 5 por 30, 150 puntos por segundo. Luego, que adivine qué hará al llegar al borde. Fíjate en dónde está el rebote: dentro del bucle. Si lo pone antes del bucle, el pez sale del escenario y no vuelve, porque la pregunta se hace una sola vez. Si lo pone debajo, no se hace nunca. Y en Scratch, recuerda el estilo de rotación izquierda-derecha para que no nade boca abajo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y qué preguntar",
+      "columnas": ["Lo que verás", "Qué preguntarle"],
+      "filas": [
+        ["Disfraces seguidos sin espera", "¿Cuánto dura cada dibujo en pantalla?"],
+        ["Pone una espera para ir más rápido", "¿La espera alarga o acorta la vuelta?"],
+        ["Un bloque debajo del «por siempre»", "¿Cuándo se acaba el «por siempre»?"],
+        ["El rebote fuera del bucle", "¿Cuántas veces se hace ese bloque?"],
+        ["Esperas de 5 o 10 segundos", "¿Cuánto rato tarda en verse un cambio?"]
+      ],
+      "narracion": "Estos son los tropiezos más habituales y la pregunta que los desbloquea. Fíjate en que ninguna respuesta es «ponlo aquí». Son preguntas que le obligan a leer su programa como si fuera el ordenador. Una técnica que funciona muy bien es seguir el guion con el dedo, bloque a bloque, diciendo en voz alta qué hace. Cuando llegue al «por siempre» y vea que no se acaba, entenderá solo por qué el bloque de debajo no se hace. Si se atasca de verdad, enséñale la ficha de los recursos, pero después de unos minutos de intento."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El reto de hoy: el acuario en Scratch",
+      "pasos": [
+        "Elige un pez de la biblioteca de objetos",
+        "Guion 1: bandera verde y «por siempre»",
+        "Dentro: «mover 5 pasos» y «rebotar si toca un borde»",
+        "Guion 2: «por siempre», «siguiente disfraz», «esperar 0.2»",
+        "Calcula cuántos puntos por segundo nada y cambia el número"
+      ],
+      "narracion": "El reto de hoy junta todo. Que elija un pez de la biblioteca de Scratch, con el botón de elegir un objeto. Primer guion: bandera verde, «por siempre», y dentro «mover 5 pasos» y «rebotar si toca un borde». Segundo guion del mismo pez, también con la bandera: «por siempre», «siguiente disfraz» y «esperar cero punto dos segundos». Los dos guiones funcionan a la vez: uno lo mueve y el otro le mueve la cola. Para terminar, que calcule cuántos puntos por segundo nada y pruebe otros números. Si a alguien le molestan los parpadeos rápidos, que alargue la espera."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte hoy",
+      "puntos": [
+        "Una animación son dibujos que cambian deprisa",
+        "Sin espera, los cambios no se ven",
+        "«Por siempre» no se acaba: lo de debajo no se hace",
+        "Velocidad: puntos por vuelta por 30",
+        "Hoy: la libreta animada y el pez del acuario"
+      ],
+      "narracion": "En resumen: una animación son dibujos casi iguales que cambian deprisa, y la espera da tiempo a verlos. «Por siempre» repite sin parar, así que lo que pongas debajo no se hará nunca. La velocidad es una multiplicación: puntos por vuelta por 30. Y el rebote va dentro del bucle. Tareas de hoy: la libreta animada, la ficha de velocidad y ritmo de los recursos y el pez del acuario en Scratch. En la próxima clase, quien mira el escenario podrá participar: teclas, clics y mensajes."
+    }
+  ]
+}

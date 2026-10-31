@@ -1,0 +1,36 @@
+{
+  "seccion": 5,
+  "titulo": "Cuestionario: seguir la línea",
+  "preguntas": [
+    {
+      "pregunta": "El robot pasa por encima de una zona azul. ¿Qué valor de gris lee el sensor M, más o menos?",
+      "respuestas": ["Unos 90", "Unos 360", "Unos 900"],
+      "correcta": 1,
+      "explicacion": "Los colores quedan entre el blanco (unos 90) y el negro (unos 900). Con el 0/1, el azul dice 0, como el blanco: por eso se usa el valor de gris."
+    },
+    {
+      "pregunta": "Con un solo sensor de línea, ¿qué sigue el robot?",
+      "respuestas": ["El borde entre el negro y el blanco", "El centro exacto de la cinta", "La pared del almacén"],
+      "correcta": 0,
+      "explicacion": "Si ve negro gira hacia un lado y si ve blanco, hacia el otro: avanza en zigzag por el borde de la cinta."
+    },
+    {
+      "pregunta": "Con el seguidor de un sensor, el robot pierde la línea en una curva cerrada. ¿Qué puedes probar?",
+      "respuestas": ["Poner los dos motores a la misma velocidad", "Poner los dos motores a 255", "Más diferencia entre los motores o menos velocidad"],
+      "correcta": 2,
+      "explicacion": "Cuanta más diferencia entre los motores, más cerrado es el giro: 180 y 50 aguanta curvas cerradas; 200 y 150, solo suaves."
+    },
+    {
+      "pregunta": "¿Por qué la condición «L = 1 y R = 1» tiene que ir la primera en el seguidor de dos sensores?",
+      "respuestas": ["Porque es la más corta", "No importa el orden de los «si»", "Porque hace ir más rápido al robot", "Porque, si no, en el cruce el robot vería L = 1 y giraría"],
+      "correcta": 3,
+      "explicacion": "En un cruce o una estación, L y R ven negro a la vez. Si primero se pregunta por L, el robot gira y nunca llega al caso especial."
+    },
+    {
+      "pregunta": "En el tren de mercancías, ¿por qué el tren avanza medio segundo después de esperar en la estación, antes de volver a activar el seguimiento?",
+      "respuestas": ["Para ir más deprisa", "Para salir de la raya: si no, volvería a ver 1 1 1 y pararía otra vez", "Porque el chip necesita calentarse"],
+      "correcta": 1,
+      "explicacion": "Mientras sigue encima de la raya, los sensores ven 1 1 1. Hay que salir de ella para que el programa no vuelva a parar el tren."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "c4-08",
+ "titulo": "Vuestro plan digital familiar y siguientes pasos",
+ "descripcion": "Cómo escribir en familia un pacto digital con acuerdos que funcionan, preparar la tarjeta de ayuda con los adultos de confianza y los teléfonos 116 111, 017 y 112, y qué hacer a partir de aquí.",
+ "vistaPrevia": false,
+ "recursos": [
+  "imprimible:d3-4",
+  "plantilla:enlaces-y-cupones"
+ ],
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Vuestro plan digital familiar",
+   "subtitulo": "Un pacto para todos y una tarjeta de ayuda",
+   "narracion": "Has llegado a la última clase. Hemos hablado de contraseñas, de lo que compartimos, de bulos e inteligencia artificial, de respeto, de pantallas y videojuegos, y de mensajes trampa. Ahora toca juntarlo todo en algo que se vea en casa. En Tech Digital, el curso termina con un proyecto: el pacto digital de casa y la tarjeta de ayuda. Eso es lo que vais a hacer hoy, en familia."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "Un pacto para todos",
+   "puntos": [
+    "Tiempo: cuánto rato y cuándo",
+    "Lugares sin pantallas: la mesa, la cama",
+    "Partidas: con quién y qué juegos",
+    "Compras: quién decide",
+    "Ayuda: qué hacemos si algo va mal"
+   ],
+   "narracion": "Un pacto digital es una lista corta de acuerdos que hace toda la familia junta. Tiene cinco temas, y cada uno sale de una clase del curso. Lo más importante no es la lista: es que se hace hablando y que los adultos también la cumplen. Si el pacto solo obliga a los niños, lo vivirán como un castigo. Si ven que mamá o papá dejan el móvil en la mesa, lo vivirán como algo de todos. Antes de la reunión, repasa las fichas que habéis hecho estas semanas: el escudo de los datos, el detector de bulos o la revisión de la tableta. Muchas ideas del pacto ya están ahí."
+  },
+  {
+   "tipo": "comparar",
+   "titulo": "Un acuerdo que funciona",
+   "mal": "Menos pantallas. O bien: nada de videojuegos, nunca más.",
+   "bien": "De lunes a jueves, pantallas después de los deberes y hasta las 8.",
+   "narracion": "Menos pantallas suena bien, pero no dice cuántas, ni cuándo, ni dónde. Nada de videojuegos nunca más es imposible de cumplir y no ayuda a aprender. Un buen acuerdo es concreto, en positivo y posible. Por ejemplo, decir que la tableta duerme en la cocina funciona mucho mejor que decir que se usará menos. Un truco para revisarlos: preguntaos si toda la familia podría cumplir ese acuerdo una semana entera."
+  },
+  {
+   "tipo": "captura",
+   "fuente": "presenta:d3-4:4",
+   "narracion": "Esta diapositiva resume cómo se revisa un acuerdo. Tiene que ser concreto: qué, cuándo y dónde. En positivo y posible de cumplir. Para toda la familia. Y una cuarta idea que quita mucha presión: si no funciona, se vuelve a hablar. El pacto no es un contrato para toda la vida. Es un borrador que mejoráis a medida que vuestro hijo crece."
+  },
+  {
+   "tipo": "tabla",
+   "titulo": "Un pacto de ejemplo",
+   "columnas": [
+    "Tema",
+    "Acuerdo"
+   ],
+   "filas": [
+    [
+     "Tiempo",
+     "Después de los deberes, con temporizador"
+    ],
+    [
+     "Lugares",
+     "En la mesa, ningún móvil, ni los adultos"
+    ],
+    [
+     "Partidas",
+     "En línea, solo con amigos de verdad"
+    ],
+    [
+     "Compras",
+     "Ninguna compra sin un adulto"
+    ],
+    [
+     "Ayuda",
+     "Si algo nos da miedo, lo contamos"
+    ]
+   ],
+   "narracion": "Aquí tienes un ejemplo con un acuerdo por tema. Son los que propone la propia sesión, pero el vuestro será distinto. Quizá en vuestra casa el problema son las mañanas, o el móvil de los adultos en el sofá. Fíjate en el último: si algo nos da miedo, lo contamos en casa. Es la norma de oro con la que empezamos el curso, y conviene que esté escrita. Y añadid alguno que proteja algo que os importa, como una tarde a la semana sin pantallas para salir, jugar a algo de mesa o simplemente aburrirse un poco. De ahí salen las ideas."
+  },
+  {
+   "tipo": "pasos",
+   "titulo": "La reunión del pacto",
+   "pasos": [
+    "Elegid un momento sin prisas, con todos",
+    "Tu hijo propone primero los acuerdos que le gustan",
+    "Cada persona añade uno, también los adultos",
+    "Escribidlo, firmadlo todos y colgadlo en la nevera",
+    "Poned fecha para revisarlo dentro de unas semanas"
+   ],
+   "narracion": "Así se hace la reunión. Deja que tu hijo empiece: en la sesión ya ha elegido sus acuerdos y suele tener ideas muy razonables. Después, cada persona añade uno. Escuchad las propuestas de todos con respeto, aunque no estéis de acuerdo. Escribidlo en un papel, firmadlo y colgadlo donde se vea. Y apuntad en el calendario una fecha para revisarlo. Si una familia no quiere hacer el pacto, no pasa nada: es una propuesta."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "La tarjeta de ayuda",
+   "puntos": [
+    "Tres adultos de confianza: casa, colegio y otro",
+    "116 111: ayuda a la infancia y la adolescencia",
+    "017: ayuda en ciberseguridad del INCIBE",
+    "112: emergencias, un peligro ahora mismo",
+    "En la mochila o en la funda de la tableta"
+   ],
+   "narracion": "La segunda parte del plan es una tarjeta pequeña. Tu hija escribe tres adultos de confianza: alguien de casa, alguien del colegio y otra persona, como una tía, un monitor o una vecina. Si no quiere poner a alguien de casa, respétalo. Después copia los tres números. El uno, uno, seis, uno, uno, uno le escucha, gratis y sin contar a nadie lo que hablan. El cero, uno, siete ayuda con problemas de internet. El uno, uno, dos, para emergencias. Guardadla en la mochila o en la funda de la tableta, y que no se cuelgue en ningún sitio con los nombres a la vista."
+  },
+  {
+   "tipo": "frase",
+   "texto": "Contarlo no es chivarse: es cuidarte.",
+   "narracion": "Esta frase cierra la sesión de Tech Digital, y también este curso. Todo lo que has visto, las contraseñas, los permisos, los acuerdos, ayuda mucho. Pero lo que más protege a tu hijo o a tu hija es saber que puede contarte lo que le pasa. Sin miedo a que le riñan ni a perder la tableta. Llamar a un teléfono de ayuda tampoco quiere decir que haya hecho algo mal. Pedir ayuda es de valientes."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "Y a partir de aquí",
+   "puntos": [
+    "Revisad el pacto dentro de unas semanas",
+    "Repetid las actividades sin pantalla que más os gustaron",
+    "La primera sesión de Numi Tech se prueba gratis y sin cuenta",
+    "Otros cursos de la serie: programación en casa y robótica"
+   ],
+   "narracion": "No hace falta nada más para seguir: revisad el pacto y repetid las actividades que mejor os funcionaron. Si quieres probar la app, la primera sesión de Numi Tech se puede hacer gratis y sin cuenta en tech punto numimates punto com. Si a tu hijo le pica la curiosidad por crear con tecnología, en esta serie hay dos cursos más: programación en casa y robótica. En los recursos tienes los enlaces actualizados, por si algún día os apetece."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Lo que te llevas del curso",
+   "puntos": [
+    "Un pacto digital para toda la familia, concreto y en positivo",
+    "Una tarjeta de ayuda: tres adultos y 116 111, 017 y 112",
+    "Si algo hace sentir mal, se cuenta a un adulto de confianza",
+    "Acompañar, acordar y agradecer que te lo cuenten"
+   ],
+   "narracion": "Para hoy tienes en los recursos la ficha del pacto digital y la tarjeta de ayuda, lista para recortar. Sentaos juntos esta semana, escribid vuestros acuerdos y firmadlos. Y recuerda la idea con la que empezamos: no se trata de vigilar ni de prohibirlo todo, sino de acompañar. Gracias por hacer este curso. Tu familia tiene mucha suerte de tener a alguien que se toma el tiempo de aprender todo esto."
+  }
+ ]
+}

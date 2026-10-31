@@ -1,0 +1,117 @@
+{
+  "id": "c2-12",
+  "titulo": "Proyecto: el robot artista",
+  "descripcion": "Proyecto de la unidad 2: diseña una obra de un solo trazo, pártela en tramos, giros y curvas, calcula el tiempo de cada trozo y pruébala con el Maqueen de verdad sobre papel.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k2-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: el robot artista",
+      "subtitulo": "La Fiesta de la Plaza Pintada: hoy la obra la haces tú",
+      "narracion": "Hoy es el gran día de la Fiesta de la Plaza Pintada. El robot tiene que hacer las últimas obras: una casa, una serpiente, una flor… y tu propia obra de arte. Vas a necesitar todo lo que has aprendido en la unidad. Repaso rápido: motor izquierdo a 150 y derecho a 100 durante 6600 milisegundos. ¿Qué dibuja? Un círculo entero hacia la derecha, porque la rueda derecha es la más lenta. Los buenos dibujos de robot no salen al azar: tienen un plan."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las herramientas del artista",
+      "puntos": [
+        "Tramos: a velocidad 150, unos 15 cm cada segundo",
+        "Giros: 90° en 600 ms; en un polígono, 360° ÷ lados",
+        "Curvas: 150 y 100 hacen un círculo de 26 cm en 6600 ms",
+        "Repite: para lo que sale igual cada vez"
+      ],
+      "narracion": "Estas son tus herramientas, las cifras mágicas de la unidad. Para los tramos, a velocidad 150, unos 15 centímetros cada segundo. Para los giros, la tarjeta: 90 grados en unos 600 milisegundos, y en un polígono, 360 entre los lados. Para las curvas, 150 y 100 hacen un círculo de 26 centímetros en 6600 milisegundos. Y el bloque repite, para todo lo que se repite igual. Ah, y el simulador deja un rastro por donde pasa el robot, como si llevara un lápiz debajo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-4:3",
+      "narracion": "Mira esta casa. El robot la dibuja de un solo trazo, sin levantar el lápiz. Antes de ejecutarla, intenta adivinar cómo está hecha. ¿Cuántos tramos tiene? ¿Cuántos giros? Ahora, mira con atención y cuenta. Sube por la pared, hace el tejado arriba y abajo, baja por la otra pared y vuelve por el suelo. Cinco tramos y cuatro giros. La casa es un cuadrado con un triángulo encima. Vamos a ver su plan."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El plan de la casa",
+      "columnas": ["Trozo", "Qué hace", "Tiempo"],
+      "filas": [
+        ["Pared izquierda", "Tramo de 30 cm", "2000 ms"],
+        ["Hacia el tejado", "Giro de 30° a la derecha", "unos 200 ms"],
+        ["Punta del tejado", "Giro de 120° a la derecha", "unos 800 ms"],
+        ["Hacia la pared", "Giro de 30° a la derecha", "unos 200 ms"],
+        ["Esquina del suelo", "Giro de 90° a la derecha", "unos 600 ms"]
+      ],
+      "narracion": "El plan es una tabla: cada fila es un tramo, con sus centímetros y su tiempo, o un giro, con sus grados y su tiempo. El robot empieza abajo a la izquierda, mirando arriba. Pared izquierda, 30 centímetros: 2000 milisegundos. Giro de 30 grados a la derecha, unos 200. Tejado, 30 centímetros. Giro de 120 en la punta, unos 800. Tejado hacia abajo. Giro de 30, pared derecha, giro de 90 y suelo. Después, cada fila se convierte en bloques."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-4:5",
+      "narracion": "Ahora, una flor. Cada pétalo es un círculo pequeño, con el motor izquierdo a 200 y el derecho a 100 durante 3300 milisegundos, seguido de un giro de 90 grados. Y eso, cuatro veces. Predice: ¿los cuatro pétalos saldrán en cruz? Mira. Salen repartidos en cruz, porque 360 entre 4 son 90 grados. Si el giro entre pétalos fuera de 400 milisegundos, solo 60 grados, quedarían mal repartidos. Cuando encuentres un trozo que se repite, ponlo dentro de un repite."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Los 4 pasos del artista de robots",
+      "pasos": [
+        "Dibuja la obra en papel",
+        "Pártela en tramos, giros y curvas",
+        "Calcula el tiempo de cada trozo",
+        "Programa, prueba y ajusta"
+      ],
+      "narracion": "Así trabaja un artista de robots, en cuatro pasos. Uno: dibuja la obra en papel. Dos: pártela en tramos, giros y curvas. Esto se llama descomponer, y ya lo hiciste con el paseo de la feria. Tres: calcula el tiempo de cada trozo con las cifras de la unidad. Cuatro: programa, prueba y ajusta. Probar, mirar qué falla, mejorar y volver a probar tiene un nombre: iterar. Si la obra sale torcida a partir de un punto, el trozo que falla es justo ese."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: diseña la obra en papel",
+      "pasos": [
+        "Cuadrícula: cada cuadro, 10 cm; la plaza, 150 por 100",
+        "Dibuja la obra de un solo trazo",
+        "Numera los trozos y escribe su tiempo",
+        "Rodea los trozos que se repiten",
+        "Alguien hace de robot de papel con tu plan"
+      ],
+      "narracion": "Ahora, el plan de tu obra. En los recursos tienes una cuadrícula: cada cuadro mide 10 centímetros, y la plaza, 150 por 100. Dibuja tu obra de un solo trazo, porque el robot no puede levantar el lápiz. Marca dónde empieza y hacia dónde mira. Numera los trozos y escribe al lado el tiempo de cada uno. Rodea los que se repiten. Después, alguien de casa o un compañero hace de robot con un lápiz, siguiendo solo tus instrucciones. Si no sale igual, arregla el plan."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Ideas de obras",
+      "puntos": [
+        "Una letra de tu nombre: L, T, E, M",
+        "Un sol: círculo y rayos con repite",
+        "Un barco: casco, mástil y vela triangular",
+        "Una serpiente: medios círculos alternados"
+      ],
+      "narracion": "¿No sabes qué dibujar? Aquí tienes ideas. Una letra de tu nombre, como la L, la T, la E o la M. Para letras curvas, la S son dos medios círculos hacia lados diferentes, y la O, un círculo entero. Un sol, con un círculo y rayos dentro de un repite. Un barco, con casco, mástil y vela triangular. O una serpiente como la del reto: medios círculos alternados, con un repite. Para que se guarde, tu obra necesita al menos un repite y 150 centímetros de trazo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La obra en grande con el Maqueen",
+      "pasos": [
+        "Elegid una obra del grupo y pasadla a MakeCode",
+        "Probadla sobre papel de embalar en el suelo",
+        "Rotulador lavable detrás, o una pegatina en cada giro",
+        "Ajustad los tiempos con vuestra calibración"
+      ],
+      "narracion": "Con el robot de verdad, cada grupo elige una obra: la casa, la flor o la de alguien del grupo. Pasadla a MakeCode y probadla sobre un papel de embalar grande en el suelo. Si pegáis un rotulador lavable detrás, tocando el papel suavemente, veréis el trazo. En las esquinas saldrán pequeños arcos, porque el rotulador no está en el centro de las ruedas: es normal. Si no, poned una pegatina donde el robot cambia de dirección. Usad vuestros números de calibración. Nadie pisa el papel."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Error", "Qué hacer"],
+      "filas": [
+        ["Programa sin plan y se pierde", "Programar y probar 3 trozos"],
+        ["Sale torcida y lo borra todo", "¿Hasta dónde va bien?"],
+        ["Mete en el repite lo que no se repite", "Rodear solo lo que sale igual"],
+        ["Se sale de la plaza", "Contar cuadros: 150 por 100 cm"]
+      ],
+      "narracion": "Errores típicos del proyecto. Empezar a programar sin plan y perderse a mitad: vuelve a la cuadrícula, programa los tres primeros trozos y pruébalos antes de seguir. Borrarlo todo cuando sale torcida: pregunta hasta dónde va bien y cambia solo el número siguiente. Meter en el repite trozos que no se repiten, como el primer tramo. Hacer un dibujo tan grande que se sale de la plaza. Y desanimarse con el robot real: ajustando los tiempos, se acercará."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido en la unidad 2",
+      "puntos": [
+        "Distancia = velocidad × tiempo, y hay que calibrar",
+        "Giros exactos y la regla de los 360°",
+        "Curvas con ruedas a velocidades diferentes",
+        "Un dibujo grande se hace con un plan a trozos"
+      ],
+      "narracion": "Has terminado la unidad 2. Ya sabes calcular distancias con la velocidad y el tiempo, y calibrar. Girar ángulos exactos y dibujar polígonos con la regla de los 360 grados. Hacer curvas y círculos con las ruedas a velocidades diferentes. Y planificar un dibujo grande a trozos. Para casa: suma las esperas de tu obra y sabrás cuánto tarda. La flor, por ejemplo, unos 15 segundos y medio. En la unidad 3, el robot dejará de contar el tiempo: usará el sensor de distancia."
+    }
+  ]
+}

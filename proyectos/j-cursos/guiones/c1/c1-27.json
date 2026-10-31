@@ -1,0 +1,108 @@
+{
+  "id": "c1-27",
+  "titulo": "Cuando no quiere seguir: motivación sin premios ni castigos",
+  "descripcion": "Averigua por qué tu hijo no quiere seguir y recupera las ganas con tres palancas: una dificultad en su punto, la posibilidad de elegir y alguien para quien crear.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r8-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cuando no quiere seguir",
+      "subtitulo": "Motivación sin premios ni castigos",
+      "narracion": "Hay días en que el problema no es un bug. Es que tu hijo o tu hija no quiere sentarse. «Hoy no me apetece». «Es un rollo». «Mañana». Es normal, y pasa con cualquier actividad. En esta clase verás por qué suele ocurrir y qué puedes hacer sin recurrir a premios ni a castigos. Usaremos ideas de dos sesiones de proyecto de Numi Tech. Una es el diseño de un reto propio en Tech Robot. La otra, el documento de diseño de un videojuego en Tech Creadores."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué dice «no quiero»",
+      "puntos": [
+        "El reto es tan difícil que da rabia",
+        "Es tan fácil que aburre",
+        "El proyecto es enorme y no sabe por dónde empezar",
+        "No se le ocurre ninguna idea",
+        "Está cansado o lleva mucho rato de pantalla"
+      ],
+      "narracion": "Antes de buscar la solución, intenta averiguar la causa. Casi siempre es una de estas cinco. Pregúntale con calma, sin interrogatorio: «¿Es que está muy difícil o es que te aburre?». La respuesta cambia mucho lo que toca hacer. Si da rabia, hay que bajar la dificultad. Si aburre, hay que subirla. Si el proyecto es enorme, hay que hacerlo pequeño. Si no hay idea, hay que darle un punto de partida. Y si está cansado, lo mejor es parar. Vamos a ver cada caso."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Premios y castigos",
+      "mal": "«Si acabas la sesión, te dejo media hora más de tableta.»",
+      "bien": "«¿Qué parte te gustó más la última vez? Empezamos por ahí.»",
+      "narracion": "Es tentador negociar. Si terminas, tienes un premio; si no, te quedas sin algo. A corto plazo puede funcionar, pero cambia el sentido de la actividad. Programar pasa a ser el peaje para conseguir otra cosa. Y cuando el premio desaparece, suelen desaparecer las ganas. El castigo es peor todavía, porque une la programación con el mal rato. En lugar de eso, buscamos que la actividad tenga sentido por sí misma. Para eso tenemos tres palancas: una dificultad en su punto, que pueda elegir y que tenga alguien para quien hacerlo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r8-1:6",
+      "narracion": "La primera palanca es la dificultad. En Tech Robot, cuando los niños diseñan su propio reto, la guía lo resume en una frase. Si la bandera está al lado de Bit, aburre. Si nadie puede llegar, da rabia. Un buen reto está en su punto: hace pensar, pero tiene solución. Esa misma regla sirve para elegir qué hace tu hijo en casa. Si se frustra a los cinco minutos, el reto está demasiado lejos. Si termina sin pensar, está demasiado cerca. Tu trabajo es acercarlo o alejarlo un poco."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cómo ajustar la dificultad",
+      "columnas": ["Si…", "Prueba a…"],
+      "filas": [
+        ["Da rabia", "Repetir una sesión que ya domina"],
+        ["Da rabia", "Resolverlo antes en papel o en el suelo"],
+        ["Aburre", "Alejar la meta o poner un obstáculo"],
+        ["Aburre", "Añadir un segundo objetivo"],
+        ["Aburre mucho", "Que diseñe un reto para ti"]
+      ],
+      "narracion": "En la práctica, ajustar la dificultad es más sencillo de lo que parece. Si da rabia, volved a una sesión anterior que ya domina, para que recupere la sensación de que sabe. O resolved el reto primero en papel o en el suelo, con el niño haciendo de robot. Si aburre, la guía propone alejar la bandera o poner un obstáculo en medio. También podéis añadir un segundo objetivo, como recoger estrellas, que le obligue a usar otra herramienta. Y si se aburre mucho, dale la vuelta: que sea él quien diseñe el reto."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un reto es como un regalo para otro programador.",
+      "autor": "Tech Robot, sesión «Diseña tu reto»",
+      "narracion": "Esta es la segunda y la tercera palanca a la vez: que elija y que tenga alguien para quien hacerlo. En la última unidad de Tech Robot, los niños dejan de resolver retos y diseñan uno para un compañero. La guía lo presenta como un regalo. En casa podéis hacer lo mismo. Una habitación se convierte en la isla de Bit y una persona hace de robot. Tu hija prepara el recorrido y tú lo resuelves. Equivócate de vez en cuando: verás qué rápido aparece la cazadora de bugs."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g8-1:9",
+      "narracion": "Ahora, el caso contrario. A veces no quiere seguir porque el proyecto se le ha hecho gigante. Quiere un videojuego con diez niveles y veinte personajes, y no sabe por dónde empezar. La guía de Tech Creadores propone felicitarle por la idea y preguntarle cuáles son las tres reglas mínimas para que ya sea un videojuego. Lo demás queda para más adelante. La versión 1 solo hace una cosa, pero la hace bien: el protagonista se mueve. Después se añade una regla cada vez y se vuelve a probar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El prototipo de papel en familia",
+      "pasos": [
+        "Escribid tres reglas: cuándo pasa algo y qué cambia",
+        "Tu hijo hace de ordenador y aplica las reglas",
+        "Tú haces de piloto y juegas la partida",
+        "Tres partidas; si hace falta, cambiad un número"
+      ],
+      "narracion": "Una actividad de la sesión «El documento de diseño» funciona muy bien para recuperar las ganas, porque se hace sin pantalla. Escribid en un papel tres reglas del juego, cada una con dos partes: cuándo pasa y qué cambia. Por ejemplo: toco el premio, puntos más uno. Tu hijo hace de ordenador: solo cambia el marcador si una regla lo dice. Tú haces de piloto. Jugad tres partidas y apuntad cuánto duran. Si una es eterna o termina enseguida, ajustad un número. Al día siguiente, querrá programarlo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Respuestas para cada «no quiero»",
+      "columnas": ["Si dice…", "Puedes responder…"],
+      "filas": [
+        ["«No se me ocurre nada»", "«Cambia el personaje de uno ya hecho»"],
+        ["«Es muy difícil»", "«¿Qué tres cosas son imprescindibles?»"],
+        ["«Es aburrido»", "«¿Cómo lo harías más difícil para mí?»"],
+        ["«Estoy cansada»", "«Paramos. ¿Qué harás mañana?»"]
+      ],
+      "narracion": "Aquí tienes respuestas concretas para las excusas más habituales. Para la falta de ideas, la guía es clara: una buena idea puede ser pequeña. Que parta de un juego que ya conoce y cambie el personaje, el lugar o una regla. Para el «es muy difícil», pregunta qué tres cosas son imprescindibles. Para el aburrimiento, pídele que lo haga más difícil para ti. Y para el cansancio, acepta parar, pero dejad apuntado el siguiente paso. Así mañana no empezará de cero."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Parar a tiempo también motiva",
+      "puntos": [
+        "Veinte minutos con ganas valen más que una hora a disgusto",
+        "Para en un punto en que sepa cuál es el siguiente paso",
+        "Una semana floja no estropea el plan",
+        "Si el rechazo dura, cambia de formato: papel, Scratch o hacer de robot"
+      ],
+      "narracion": "Y una última idea: parar a tiempo también es motivar. El plan de este curso son veinte minutos, tres días a la semana. Es poco a propósito. Mejor que termine con ganas de más que agotado. Intenta cortar en un punto en que sepa qué hará la próxima vez. Si una semana sale floja, no pasa nada. Y si el rechazo dura semanas, cambia de formato: más actividades en papel, un proyecto libre en Scratch o el juego de hacer de robot. Lo importante es que programar siga siendo algo vuestro y agradable."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte",
+      "puntos": [
+        "Averigua la causa: ¿da rabia, aburre, es enorme o falta la idea?",
+        "Sin premios ni castigos: dificultad en su punto, elegir y público",
+        "Proyecto enorme: primero una versión 1 pequeña",
+        "Hoy: un reto para alguien de casa o el prototipo de papel"
+      ],
+      "narracion": "Resumimos. Cuando no quiere seguir, primero averigua la causa. Después usa las tres palancas: una dificultad en su punto, que pueda elegir y alguien para quien hacerlo. Si el proyecto es enorme, empezad por una versión 1 pequeña y añadid una regla cada vez. Para hoy, en los recursos tienes la cuadrícula para diseñar un reto y la ficha «¿Es un buen reto?». Proponle preparar un reto para alguien de casa. Con esto cerramos la sección sobre la frustración. En la siguiente hablamos de seguridad en internet."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "seccion": 9,
+  "titulo": "Cuestionario: tu robot, de la idea a la Muestra",
+  "preguntas": [
+    {
+      "pregunta": "Tres personas han diseñado una misión para la Muestra de Robots. ¿Cuál está mejor pensada?",
+      "respuestas": ["La meta está a 10 cm del robot, sin nada en medio", "Una cinta con curvas hasta una caja: el robot la sigue y se para delante de la caja", "La meta está dentro de un cuadrado de cajas cerrado"],
+      "correcta": 1,
+      "explicacion": "La primera es demasiado fácil y la tercera, imposible. La segunda tiene un objetivo claro, obstáculos, dos sensores (línea y ultrasonidos) y se puede comprobar."
+    },
+    {
+      "pregunta": "La versión 1 de tu robot se para a 18 cm de la caja y tenía que quedarse a 10. ¿Qué haces para la versión 2?",
+      "respuestas": ["Cambio el umbral, la velocidad y los sensores a la vez", "No cambio nada y lo pruebo diez veces más", "Cambio solo el umbral de distancia y vuelvo a medir"],
+      "correcta": 2,
+      "explicacion": "Una versión, un cambio, una medida: si cambias una sola cosa y mides, sabes exactamente qué ha mejorado el robot."
+    },
+    {
+      "pregunta": "Vuestro Maqueen, a velocidad 150, ha hecho 48 cm en 4 segundos. Queréis que avance 60 cm. ¿Qué espera pondréis?",
+      "respuestas": ["5000 ms", "4000 ms", "6000 ms"],
+      "correcta": 0,
+      "explicacion": "48 entre 4 son 12 cm cada segundo. Para hacer 60 cm hacen falta 5 segundos, es decir, 5000 ms. Así se calibra: medir, calcular y ajustar."
+    },
+    {
+      "pregunta": "Pol ha probado la misión de Julia como ingeniero de pruebas. ¿Qué informe la ayudará más?",
+      "respuestas": ["«Está bien.»", "«La mía es mucho mejor.»", "«Es horrible.»", "«Las luces de la meta funcionan. En la curva se pasa: prueba un giro un poco más corto.»"],
+      "correcta": 3,
+      "explicacion": "Un buen informe de pruebas es concreto y amable: dice qué funciona y qué número habría que ajustar o calibrar."
+    },
+    {
+      "pregunta": "¿Por qué el robot de verdad no hace exactamente lo mismo que el del simulador?",
+      "respuestas": ["Porque MakeCode cambia el programa", "Por las pilas, el suelo y los motores, que no son perfectos", "Porque el robot real es de otra marca"],
+      "correcta": 1,
+      "explicacion": "El programa es el mismo; lo que cambia es el mundo. Por eso se calibra y se usan sensores: un programa con sensores se adapta solo a las pilas y al suelo."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "c2-28",
+  "titulo": "Proyecto: el coche autónomo",
+  "descripcion": "Construye a trozos un coche autónomo que sigue la carretera, guarda la distancia con el coche de delante, enciende las luces de freno y los faros de noche, y pruébalo en un circuito de cinta.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k6-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: el coche autónomo",
+      "subtitulo": "Unidad 6 · Control inteligente · La prueba del carnet",
+      "narracion": "Proyecto final de la unidad 6. Gran día en el Lab de Movilidad: la prueba del carnet de conducir de los robots. Hay una carretera, un coche delante, un semáforo y, a mitad de la prueba, se hace de noche. Harás tu coche autónomo a trozos: carretera, distancia, luces de freno y faros. Hoy no hay ningún bloque nuevo. El reto es juntarlo todo y probar cada trozo antes de añadir el siguiente, como un equipo de ingeniería."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Quien conduce hace muchas cosas a la vez. ¿Cuáles? ¿Con qué sentido?",
+      "narracion": "Piensa en una persona que conduce. Mira la carretera, guarda la distancia con el coche de delante, frena en el semáforo y enciende los faros cuando oscurece. Usa la vista, el oído y las manos. Nuestro robot también sabe hacer cada una de esas cosas por separado. Sigue una línea con dos sensores, de la unidad 4. Enciende luces según la luz, de la unidad 5. Y calcula la velocidad con la distancia, de esta unidad. Hoy lo hará todo a la vez."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Muchos sensores, un solo cerebro",
+      "columnas": ["Trabajo", "Sensor", "Qué decide"],
+      "filas": [
+        ["Seguir la carretera", "Línea izquierda y derecha", "Qué rueda frena"],
+        ["Guardar la distancia", "Ultrasonido", "La velocidad"],
+        ["Saber si es de noche", "Luz", "Los faros"],
+        ["Avisar al de detrás", "La velocidad calculada", "Las luces de freno"]
+      ],
+      "narracion": "El coche siente con tres sensores, piensa con el programa y actúa con los motores y las luces. La línea sirve para seguir la carretera. El ultrasonido, para guardar la distancia. Y el sensor de luz, para saber si es de noche. La velocidad calculada, además, decide las luces de freno. Los coches autónomos de verdad llevan cámaras, radares y muchos más sensores. Y todavía necesitan personas que vigilen su seguridad y decidan las normas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El plan de trabajo, a trozos",
+      "pasos": [
+        "Seguir la carretera con una variable de velocidad y probarlo",
+        "Calcular la velocidad con la distancia y probarlo",
+        "Añadir las luces de freno y probarlo en el semáforo",
+        "Añadir los faros de noche con el sensor de luz",
+        "Probarlo todo en todas las pistas y pasarlo al Maqueen"
+      ],
+      "narracion": "Este es el plan, en el orden en que lo haría un equipo de ingeniería. Primero, seguir la carretera con una variable de velocidad, y probarlo. Después, calcular la velocidad con la distancia al coche de delante, y probarlo. Luego, las luces de freno, probándolas en el semáforo. Después, los faros. Y al final, todo junto en todas las pistas y en el robot real. ¿Por qué así? Porque si algo falla, sabes que el problema está en lo último que has añadido."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-4:5",
+      "narracion": "Trozo 1: la carretera. Es el seguidor de línea de la unidad 4, con una diferencia: los motores van a la variable velocidad, que empieza en 150. Más tarde, esa variable la calculará el control de distancia. Repaso antes de ejecutar: cuando el sensor izquierdo ve negro, ¿qué tiene que hacer? Frenar la rueda izquierda, porque la carretera gira a la izquierda. Predice: ¿dará la vuelta entera al circuito? Mira cómo pasa por los cuatro puntos."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-4:6",
+      "narracion": "Trozo 2: carretera más distancia. Ahora hay un coche delante. La velocidad se calcula como en la clase anterior: el error es la distancia menos 10 y la velocidad, el error por 10. Antes de ejecutar, predice: ¿qué pasará en las curvas? Míralas bien. A veces el coche acelera de golpe aunque el de delante esté cerca. El ultrasonido mira recto, en un cono estrecho. En la curva no ve al coche de delante, marca 500 y el error se hace enorme. En las curvas, mejor no ir demasiado deprisa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Trozos 3 y 4: luces de freno y faros",
+      "puntos": [
+        "Freno: velocidad menor de 60, luces de abajo rojas; si no, verdes",
+        "Faros: luz menor de 100, luces del coche blancas; si no, apagadas",
+        "De día la luz marca unos 260; de noche, unos 25",
+        "Los dos «si» van al final del «para siempre»",
+        "Fuera del seguidor de línea: así se hacen en cada vuelta"
+      ],
+      "narracion": "Los trozos 3 y 4 son dos si más. Luces de freno: si la velocidad calculada es menor de 60, luces de abajo rojas; si no, verdes. Faros: si la luz es menor de 100, luces del coche blancas; si no, apagadas. Recuerda que de día la luz marca unos 260 y de noche, unos 25. ¿Dónde van estos si? Al final del para siempre, fuera del seguidor de línea. Así se hacen en cada vuelta, vaya el coche recto o gire."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plan del equipo",
+      "pasos": [
+        "Grupos de 3 o 4 con el paquete de tarjetas",
+        "Cada tarjeta es un trozo: medir, calcular, seguir la línea…",
+        "Construid el «para siempre» completo, en orden",
+        "Cuidado: hay una tarjeta que no se tiene que usar",
+        "Explicad el plan a otro grupo, que busca errores"
+      ],
+      "narracion": "Actividad sin pantalla con las tarjetas del imprimible. En grupos de tres o cuatro, cada tarjeta es un trozo del programa: medir, calcular, seguir la línea, luces de freno, faros. Construid en la mesa el para siempre completo, en orden, y decidid qué trozo programaréis primero. Ojo: hay una tarjeta trampa, una espera de 5 segundos. ¿Por qué? Durante esos 5 segundos el coche no miraría la línea ni el coche de delante. Después, explicad vuestro plan a otro grupo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-4:13",
+      "narracion": "Y ahora, la prueba del carnet completa: carretera, distancia, semáforo y noche. En la prueba, se hace de noche en el segundo 8 y los faros se comprueban en el segundo 12. Antes de ejecutar, predice: ¿lo supera? Recorre el programa con el dedo, trozo a trozo. Mira la demo. Si tu coche no la supera a la primera, no has fallado. Los equipos de ingeniería prueban, encuentran errores y mejoran. Lo que cuenta es saber encontrar qué trozo falla."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En el circuito de verdad",
+      "pasos": [
+        "Circuito oval de cinta negra en el suelo, como en el imprimible",
+        "El líder sigue la línea con el seguimiento del chip",
+        "Vuestro coche detrás, a unos 20 o 30 centímetros",
+        "Semáforo: parad el líder con la mano abierta delante",
+        "Noche: tapad los sensores de luz con la mano"
+      ],
+      "narracion": "Con el robot de verdad, haced el circuito oval de cinta negra del imprimible, en el suelo. El robot líder sigue la línea con el seguimiento del chip, así va siempre igual, como el líder del simulador. Vuestro coche va detrás, a unos 20 o 30 centímetros. Pasad el programa con el botón MakeCode del simulador. Para el semáforo, parad el líder con la mano abierta delante, sin levantarlo. Para la noche, tapad los sensores de luz. Nadie pisa la pista con los robots en marcha."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Todo de golpe y no sabe qué falla", "Quita el último trozo y prueba"],
+        ["Las luces solo van en las rectas", "Saca los si del seguidor"],
+        ["Faros con distancia o con espera", "¿Qué sensor cambia de noche?"],
+        ["En el real toca al líder", "Objetivo de 15 en lugar de 10"],
+        ["Sale disparado en las curvas", "Límite de 150 antes de los motores"]
+      ],
+      "narracion": "Errores típicos. Si lo programa todo de golpe, que quite el último trozo y compruebe que el anterior funciona. Si las luces solo van en las rectas, las ha metido dentro de una rama del seguidor. Si usa la distancia o una espera para los faros, ¿qué sensor cambia cuando oscurece? En el robot real, si toca al líder, comprobad que la cajita es bastante alta y probad 15 en lugar de 10. Y si sale disparado en las curvas, poned un límite de 150."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "La unidad 6 en cuatro ideas",
+      "puntos": [
+        "Variables: la velocidad y los contadores",
+        "Control proporcional: velocidad igual a error por k",
+        "Seguir al líder: el muro que se mueve",
+        "El coche autónomo: a trozos y probando mucho"
+      ],
+      "narracion": "Así cerramos la unidad 6. Las variables guardan la velocidad y cuentan. El control proporcional calcula la velocidad como el error por k. Seguir al líder es el mismo programa con un muro que se mueve. Y el coche autónomo se hace a trozos, probando mucho, porque los sensores pueden fallar, como el ultrasonido en las curvas. Para hoy: pregunta en casa qué ayudas tiene vuestro coche y qué sensores usan. En la próxima unidad, misiones de robótica."
+    }
+  ]
+}

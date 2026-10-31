@@ -1,0 +1,106 @@
+{
+  "id": "c2-20",
+  "titulo": "Proyecto: el tren de mercancías",
+  "descripcion": "Cierra la unidad de seguir la línea con un tren que sigue la vía con el chip del Maqueen, para y silba en cada estación y se detiene en la terminal azul, programado a trozos como un ingeniero.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k4-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: el tren de mercancías",
+      "subtitulo": "Del muelle a la terminal azul, parándose en cada estación",
+      "narracion": "Gran día en el puerto. El tren de mercancías tiene que llevar las cajas desde el muelle hasta la terminal azul, parándose en cada estación para silbar. Hoy serás su ingeniero o su ingeniera. Es el proyecto que cierra la unidad 4, y vas a usar casi todo lo que has aprendido: los sensores de línea, el valor de gris y la condición con «y». Y un bloque nuevo que hace que el Maqueen siga la línea él solo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El proyecto, a trozos",
+      "pasos": [
+        "Parte 1: seguir la vía hasta la terminal y pararse",
+        "Parte 2: parar y silbar en cada estación",
+        "Parte 3: tu tren, con luces, sonidos y tu estilo",
+        "Después de cada parte, probar en todas las vías"
+      ],
+      "narracion": "Un proyecto grande no se programa de golpe. Los ingenieros y las ingenieras hacen una parte, la prueban y solo entonces añaden la siguiente. Nuestro tren tiene tres partes. La primera: seguir la vía hasta la terminal y pararse allí. La segunda: parar y silbar en cada estación. La tercera: tu tren, con luces, sonidos y tu estilo. Y cuando algo falla, no se borra todo. Se busca qué ha cambiado desde la última vez que funcionaba."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-4:3",
+      "narracion": "El Maqueen lleva un chip que sabe seguir la línea con los tres sensores. Basta con un bloque: seguimiento de línea activado. Mira el vídeo. El robot sigue la cinta a una velocidad fija y lenta, y en los cruces sigue recto. Para pararlo hacen falta dos bloques: seguimiento de línea desactivado y para el motor. Quizá te preguntes para qué hicimos nuestros seguidores. Ahora sabes cómo funciona por dentro, y tus seguidores pueden ir más rápido o poner intermitentes."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-4:4",
+      "narracion": "El programa solo tiene el seguimiento de línea del chip, y nada más. La cinta se acaba antes de la pared. Para el vídeo y predice: ¿qué pasará cuando se acabe la cinta? Míralo. El chip no se para solo. Sin cinta, sigue recto hasta la pared. El chip sigue la línea, pero no sabe dónde tiene que pararse. Eso lo decide tu programa, vigilando los sensores dentro de «para siempre»."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Parte 1: parar en la terminal azul",
+      "pasos": [
+        "Al iniciar: seguimiento de línea activado",
+        "Para siempre: si valor de gris M > 200 y < 600…",
+        "…seguimiento de línea desactivado",
+        "…y para el motor los dos"
+      ],
+      "narracion": "La primera parte. Al iniciar, activamos el seguimiento del chip. En «para siempre», vigilamos la terminal azul con el valor de gris. ¿Recuerdas los números? Blanco, unos 90. Azul, unos 360. Negro, unos 900. Si solo preguntas mayor que 200, el tren se para en la primera cinta negra. Hay que decir entre 200 y 600: mayor que 200 y menor que 600. Entonces, desactivar el seguimiento y parar el motor. Pruébalo en las dos vías antes de seguir."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-4:5",
+      "narracion": "La segunda parte: las estaciones. En la raya, L y R valen 1. El tren desactiva el seguimiento, se para, toca la nota do agudo como silbido y espera 1,5 segundos. Después avanza medio segundo a velocidad 120 y vuelve a activar el seguimiento. Antes de ejecutar, predice: ¿por qué crees que avanza ese medio segundo? Míralo. Si no se moviera, al volver a mirar seguiría encima de la raya, vería uno, uno, uno y se pararía otra vez, para siempre."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k4-4:6",
+      "narracion": "Esto es cómo se hace un proyecto, y sirve para mucho más que robots. Primero, entiende la misión y mira bien las pistas. Después, dibuja un plan. Luego programa a trozos: que el tren siga la vía hasta la terminal. Prueba en todas las pistas. Añade las paradas en las estaciones y vuelve a probar. Y al final, mejóralo con luces y sonidos. Así, si algo falla, sabes dónde buscar: en la última parte que has añadido."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plan del tren",
+      "pasos": [
+        "Marca en la vía las estaciones y la terminal",
+        "¿Qué hace el tren en cada sitio?",
+        "¿Con qué sensor lo sabe?",
+        "Repartid papeles: programador, probador, cronometrador, seguridad"
+      ],
+      "narracion": "Antes de programar, el plan. En grupo, con la ficha imprimible, marcad en la vía dibujada dónde están las estaciones y la terminal. Al lado de cada sitio, escribid qué tiene que hacer el tren y con qué sensor lo sabrá. En clase, repartid los papeles para el robot: quien programa, quien prueba, quien cronometra y quien se encarga de la seguridad. Y para moverse un poco: haced el tren caminando, con chu chu. Al oír estación, parad, silbad y contad hasta 3."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-4:12",
+      "narracion": "La tercera parte es tu tren, en la vía más larga, con dos estaciones. Tiene que hacer todo el recorrido. En cada estación, para, silba y enciende las luces. En la terminal, muestra un icono en la micro:bit. Antes de ejecutar, predice: si la vía tuviera tres estaciones, ¿cuántas veces silbaría? Míralo. Silba en cada estación que encuentra, porque la pregunta está dentro de «para siempre». Sirve para cualquier vía, tenga las estaciones que tenga."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: el tren en la vía del aula",
+      "pasos": [
+        "Vía larga de cinta negra, curvas suaves, dos rayas de estación",
+        "Una hoja A4 azul al final, con la cinta terminando encima",
+        "Mide antes el valor de gris de tu papel azul",
+        "Pasa el programa con el botón «MakeCode» y anota los cambios"
+      ],
+      "narracion": "Para el tren de verdad, montad la vía de la pista imprimible con cinta aislante negra sobre papel blanco, con curvas suaves. El chip se puede perder en las curvas de 90 grados. Poned dos rayas de estación y una hoja azul al final. Antes, medid el valor de gris de vuestro papel azul con el programa de medir de la primera sesión. Si no queda entre 200 y 600, cambiad esos números. Pasad el programa con el botón MakeCode y apuntad qué habéis tenido que cambiar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos",
+      "puntos": [
+        "Espera que el chip pare solo: ¿dónde lo dice el programa?",
+        "No vuelve a arrancar: ¿todavía ve 1 1 1?",
+        "Para en la primera cinta: ¿cómo se dice «entre 200 y 600»?",
+        "Falta «para el motor»: en el robot real sigue un poco"
+      ],
+      "narracion": "Para quien da la clase. Si alguien espera que el tren se pare solo, pregunta dónde lo dice el programa. Si se para en una estación y no vuelve a arrancar, que mire los sensores después de la espera. Si se para en la primera cinta negra, pregunta qué valor da el negro y cuál el azul. Y si desactiva el seguimiento pero no pone para el motor, en el robot real el tren sigue un poco. Si alguien lleva un vagón, que sea una caja vacía y ligera, con un cordel corto."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido en la unidad",
+      "puntos": [
+        "Sensores de línea: 0 o 1, y el valor de gris",
+        "Borde con un sensor; recto con dos; cruces con «y»",
+        "El chip sigue la línea; tu programa decide dónde parar",
+        "Los proyectos se hacen a trozos, probando cada parte"
+      ],
+      "narracion": "Repasamos la unidad entera. Los sensores de línea dan 0 o 1, y el valor de gris distingue los colores. Con un sensor, el robot sigue el borde; con dos, va recto; y con la condición «y», reconoce cruces y estaciones. El chip del Maqueen sigue la línea solo, pero tu programa decide dónde parar. Y los proyectos se hacen a trozos. Tu tarea: termina tu tren y dibuja una vía nueva con tres estaciones. En la próxima unidad, luces, sonido y LED."
+    }
+  ]
+}

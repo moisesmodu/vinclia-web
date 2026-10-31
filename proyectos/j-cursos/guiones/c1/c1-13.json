@@ -1,0 +1,112 @@
+{
+  "id": "c1-13",
+  "titulo": "Dibujar con código: el lápiz de Bit",
+  "descripcion": "Conviertes los bucles y patrones de la semana en dibujos: el juego del robot dibujante en papel cuadriculado, las reglas del lápiz y cómo dibujar un cuadrado en Scratch.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r2-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Dibujar con código: el lápiz de Bit",
+      "subtitulo": "Semana 2 · Actividad 3",
+      "narracion": "Seguimos en la semana 2 del plan, la de repetir y encontrar patrones. Ya sabéis hacer bucles y encontrar el trozo que se repite. Hoy esos patrones van a dejar rastro: Bit recibe un lápiz y cada bucle se convierte en un dibujo. Es una sesión muy visual, perfecta para los peques a los que les gusta dibujar. Y conecta directamente con la geometría del cole: líneas, cuadrados y contar casillas en una cuadrícula."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r2-3:3",
+      "narracion": "Antes de empezar, conviene leer juntos las reglas del lápiz, porque son muy concretas. Bit pinta cada casilla a la que entra. La casilla de salida no se pinta, porque ya estaba allí. Los giros tampoco pintan, porque Bit no cambia de casilla. Y en los retos hay que pintar exactamente el modelo, ni una casilla más. Si tu hijo o tu hija entiende estas cuatro reglas, la mitad del trabajo está hecha. Un consejo: no las expliques todas de golpe. Lee una, haced una prueba en papel y pasad a la siguiente."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot dibujante, sin pantalla",
+      "pasos": [
+        "Hoja de cuadros: un punto en la salida y una flecha",
+        "Tú dictas: «Repite 4 veces: adelante, adelante, derecha»",
+        "El robot pinta solo las casillas a las que entra",
+        "¿Qué dibujo ha salido?",
+        "Cambiad los papeles e inventad otro: una L, una escalera"
+      ],
+      "narracion": "La actividad sin pantalla de hoy es el robot dibujante. Solo necesitáis una hoja de cuadros, como la del cuaderno del cole, y un lápiz. Marcad la casilla de salida con un punto y una flecha hacia donde mira el robot. Tú haces de programador y dictas un bucle. El peque hace de robot y pinta cada casilla a la que entra, y solo esas. Al final, mirad qué dibujo ha salido. Después cambiad los papeles: ahora te dicta él o ella a ti. Si pinta una casilla que no tocaba, no borres tú. Pregunta: ¿en qué casilla has entrado con ese paso?"
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-3:6",
+      "narracion": "Este es el cuadrado de la clase anterior, pero ahora con el lápiz puesto. Repite 4 veces: Adelante, Adelante, Gira a la derecha. Antes de ejecutar, haz la pregunta de la diapositiva: ¿se pintará la casilla de salida? Que lo piense con calma. Ahora mira. En la última vuelta, Bit vuelve a entrar en la casilla de salida, y entonces sí se pinta. La regla se cumple: el lápiz pinta cuando Bit entra en una casilla."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "El bloque Pinta no camina",
+      "mal": "Pinta, Pinta, Pinta: Bit se queda quieto y pinta tres veces la misma casilla",
+      "bien": "Adelante, Pinta, Adelante, Pinta: entra en la casilla y después la pinta",
+      "narracion": "En la app hay otro bloque nuevo: Pinta de, que pinta la casilla donde está Bit del color que elijas. Para cambiar el color, se toca el bloque y se elige Cambia el color. La trampa es que Pinta no mueve a Bit. Si pone tres Pinta seguidos, Bit se queda quieto. Para pintar una fila hay que alternar: Adelante, Pinta, Adelante, Pinta. Y eso, dentro de un bucle, da un patrón de colores."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-3:14",
+      "narracion": "Ahora la L. Bit empieza mirando abajo, hacia nosotros. Tiene que bajar tres casillas y hacer tres hacia la derecha de la pantalla. Pregunta: ¿qué giro necesita, derecha o izquierda? Mucha gente dice derecha. Ahora mira. El giro bueno es a la izquierda. Cuando Bit te mira, su izquierda es tu derecha. Es lo que trabajasteis en la semana 1. Si se lía, que se ponga de pie, mirando hacia donde mira Bit."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores con el lápiz y qué preguntar",
+      "columnas": [
+        "Lo que pasa",
+        "Qué le preguntas"
+      ],
+      "filas": [
+        [
+          "Espera que la salida se pinte",
+          "¿Dónde entra Bit con cada Adelante?"
+        ],
+        [
+          "Pinta una casilla de más",
+          "¿Qué casilla sobra?"
+        ],
+        [
+          "Gira al lado equivocado en la L",
+          "Ponte como Bit: ¿y tu izquierda?"
+        ],
+        [
+          "No sabe cambiar el color",
+          "¿Has tocado el bloque Pinta?"
+        ]
+      ],
+      "narracion": "Estos son los errores que más se repiten. El primero es contar un Adelante de más porque espera que la salida se pinte. Que cuente los recuadros de puntos del modelo, no las casillas desde Bit. El segundo es un dibujo casi bueno con una casilla de más. Comparad con el modelo y buscad qué bloque la ha pintado. Si quiere empezar de cero, en Numi basta con volver a poner a Bit al principio, y el dibujo se borra. Y si gira mal en la L, la pregunta de siempre: ponte como Bit, ¿dónde está tu izquierda?"
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En Scratch: el lápiz de verdad",
+      "pasos": [
+        "Añade la extensión Lápiz, abajo a la izquierda",
+        "Pon «bajar lápiz» al principio",
+        "Repetir 4: mover 100 pasos y girar 90 grados",
+        "Cambiad 4 por 3 y 90 por 120: ¿qué sale?",
+        "«Borrar todo» limpia el escenario"
+      ],
+      "narracion": "Si tu hija ya usa Scratch, esta es la actividad perfecta. Scratch tiene una extensión llamada Lápiz, que se añade con el botón de abajo a la izquierda. Poned bajar lápiz y después repetir 4 veces: mover 100 pasos y girar 90 grados. Sale un cuadrado. Ahora cambiad el 4 por un 3 y el 90 por 120. Antes de ejecutar, que diga qué cree que saldrá. Es un triángulo. Con borrar todo se limpia el escenario."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Más ideas para esta semana",
+      "puntos": [
+        "Dibujar en el aire un cuadrado gigante: 4 lados, 4 giros",
+        "La inicial de su nombre en papel cuadriculado",
+        "Dictado de dibujo: dicta un bucle y lo pintáis los dos",
+        "Numi Tech: sesión «El lápiz de Bit»"
+      ],
+      "narracion": "Si os quedáis con ganas, aquí tienes más ideas. Para mover el cuerpo, dibujad en el aire con el dedo un cuadrado gigante, y luego con el pie. Otra muy buena: programar la inicial de su nombre, una L, una T o una E, y escribir su bucle. O un dictado: uno dicta un bucle y los dos lo pintáis en vuestra hoja; luego comparáis. En Numi Tech, la sesión se llama El lápiz de Bit. En los recursos tienes la cuadrícula y una ficha de dibujos con su programa."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "El lápiz pinta las casillas a las que entra Bit",
+        "La salida no se pinta, salvo si vuelve a entrar",
+        "Pinta no mueve: alterna Adelante y Pinta",
+        "Tarea: robot dibujante con una hoja de cuadros"
+      ],
+      "narracion": "Resumiendo. El lápiz pinta las casillas a las que entra Bit. La de salida no se pinta, salvo que vuelva a entrar, como en el cuadrado. El bloque Pinta no mueve a Bit, así que hay que alternar Adelante y Pinta. Tu tarea de hoy: el robot dibujante con una hoja de cuadros, cambiando los papeles. Guardad los dibujos en una carpeta: al final del curso será bonito verlos todos juntos. En la próxima clase, el proyecto de la semana: un mosaico entero de colores."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "c3-06",
+  "titulo": "Iterar: pedir cambios, variantes y tonos",
+  "descripcion": "Aprendes a convertir un primer borrador mediocre en un texto listo para enviar pidiendo cambios concretos, variantes y tonos distintos, en dos o tres mensajes.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:100-instrucciones"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Iterar: cambios, variantes y tonos",
+      "subtitulo": "La primera respuesta es solo un borrador",
+      "narracion": "Hasta ahora has visto cómo pedir bien a la primera. Pero incluso con una buena instrucción, la primera respuesta casi nunca es la definitiva. Es normal y no pasa nada. La gran ventaja de estas herramientas es que puedes seguir hablando con ellas. Puedes pedir que acorte, que cambie el tono o que te dé tres versiones. En esta clase verás cómo pedir cambios concretos para llegar a un texto listo en dos o tres mensajes, y no en diez."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir cambios: vago frente a concreto",
+      "mal": "Mejóralo. No me gusta.",
+      "bien": "Acórtalo a 3 frases, tutea, quita los emojis y cambia «estimado cliente» por «hola».",
+      "narracion": "El error más habitual al pedir cambios es ser vago. Si escribes mejóralo o no me gusta, la IA no sabe qué falla. Cambiará cosas al azar y quizá estropee lo que sí estaba bien. Si eres concreto, acierta. Di cuántas frases quieres, si prefieres tú o usted, qué palabras sobran y qué expresión prefieres. Piensa en cómo corregirías a un empleado nuevo. No le dirías hazlo mejor. Le dirías exactamente qué cambiar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Ronda 1: el primer borrador",
+      "usuario": "Tengo un bar de menú del día en Teruel. Escribe una publicación para Instagram anunciando que desde el lunes servimos desayunos a partir de las 7:30, con tostada y café por 3,50 euros.",
+      "ia": "¡Grandes noticias! ☀️ A partir del próximo lunes, el Bar La Parada abre sus puertas desde las 7:30 de la mañana para ofreceros los mejores desayunos de la ciudad. Disfruta de una deliciosa tostada acompañada de un café recién hecho por solo 3,50 euros. ¡Te esperamos para empezar el día con energía! #desayunos #Teruel #buenosdías",
+      "narracion": "Veamos un ejemplo completo. Luis tiene un bar de menú del día en Teruel y va a empezar a servir desayunos. Pide una publicación para Instagram. El primer borrador no está mal, pero tiene problemas. Es demasiado largo. Dice que son los mejores desayunos de la ciudad, algo que Luis no ha dicho y que no puede demostrar. Mezcla el tú y el vosotros. Y el tono es de anuncio, no de bar de barrio. Vamos a arreglarlo. Lo primero es leerlo entero con calma y apuntar mentalmente qué cambiarías. Ese repaso es tu trabajo, no el de la IA."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Ronda 2: cambios concretos",
+      "usuario": "Cambios: máximo 3 frases. Quita «los mejores de la ciudad». Habla siempre de vosotros. Tono de bar de barrio, sin exagerar. Un solo emoji. Deja los hashtags.",
+      "ia": "Desde el lunes abrimos a las 7:30 para desayunar ☕ Tostada y café por 3,50 euros, como en casa pero sin fregar. ¡Os esperamos! #desayunos #Teruel #buenosdías",
+      "narracion": "En la segunda ronda, Luis le da cinco cambios concretos en una sola línea. Longitud, una frase que sobra, el trato, el tono y los emojis. El resultado ya suena a su bar. Incluso ha añadido un toque de humor que encaja. Fíjate en que no ha vuelto a explicar nada del negocio. La IA recuerda lo que habéis hablado en esa conversación. Por eso conviene seguir en la misma conversación mientras trabajas en un texto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Instrucciones de cambio que funcionan",
+      "puntos": [
+        "Acórtalo a la mitad o a 3 frases",
+        "Más cercano, más formal o más directo",
+        "Quita esta frase o no menciones esto",
+        "Dilo con palabras más sencillas",
+        "Mantén todo igual salvo el final"
+      ],
+      "narracion": "Estas son las instrucciones de cambio que más vas a usar. Acortar, diciendo cuánto. Cambiar el tono: más cercano, más formal, más directo. Quitar una frase concreta o pedir que no mencione algo. Pedir palabras más sencillas, que va muy bien para clientes mayores o para explicar cosas técnicas. Y una muy útil: mantén todo igual salvo esto. Así evitas que te reescriba lo que ya te gustaba. Guárdalas en tu plantilla de instrucciones."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Variantes: pide tres y elige",
+      "usuario": "Dame 3 versiones distintas de la primera frase: una divertida, una sencilla y una que hable del madrugón.",
+      "ia": "1. Madrugar duele menos con tostada y café.\n2. Desde el lunes, desayunos a partir de las 7:30.\n3. Si te levantas temprano, aquí ya estamos despiertos.",
+      "narracion": "Otra técnica muy útil es pedir variantes. En lugar de discutir una frase, pide tres versiones distintas y elige. Puedes pedir que cada una tenga un enfoque diferente, como aquí: divertida, sencilla y otra que hable del madrugón. Elegir es mucho más rápido que escribir. Y a veces combinarás dos: el principio de una y el final de otra. Esto sirve igual para el asunto de un correo, el título de una oferta o la primera línea de un cartel."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El mismo mensaje en tres tonos",
+      "columnas": [
+        "Tono",
+        "Ejemplo"
+      ],
+      "filas": [
+        [
+          "Cercano",
+          "¡Hola! Mañana cerramos por inventario."
+        ],
+        [
+          "Formal",
+          "Le informamos de que mañana cerraremos."
+        ],
+        [
+          "Directo",
+          "Mañana cerrado por inventario."
+        ]
+      ],
+      "narracion": "El tono cambia mucho cómo se recibe un mensaje. Aquí tienes el mismo aviso en tres tonos. El cercano va bien con clientes habituales y en WhatsApp. El formal, para correos a empresas, a una comunidad de vecinos o a clientes que no conoces. El directo, para carteles y avisos rápidos. Puedes pedir el mismo texto en los tres tonos y quedarte con el que encaje en cada canal. Eso sí, sé coherente: tus clientes deben reconocerte siempre. Si dudas, pregúntate cómo se lo dirías en persona en el mostrador."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuándo empezar de cero",
+      "puntos": [
+        "Después de cuatro o cinco rondas sin mejorar",
+        "Si mezcla datos de otra tarea anterior",
+        "Si se empeña en algo que ya le has corregido",
+        "Abre conversación nueva con la instrucción mejorada"
+      ],
+      "narracion": "A veces la conversación se tuerce. Después de cuatro o cinco rondas, el texto no mejora, o la IA repite algo que ya le corregiste, o mezcla datos de otra cosa que hablasteis antes. Cuando pase, no insistas. Abre una conversación nueva y escribe la instrucción desde el principio, ya con todo lo que has aprendido en las rondas anteriores. Tardarás menos que seguir corrigiendo. Y esa instrucción mejorada es oro: guárdala para la próxima vez. Tenerla a mano te ahorrará todas esas rondas la semana que viene."
+    },
+    {
+      "tipo": "frase",
+      "texto": "No le pidas que lo haga mejor. Dile qué está mal y cómo lo quieres.",
+      "narracion": "Esta es la idea clave de la clase. La IA no sabe qué te disgusta si no se lo dices. Cuanto más concreto seas al corregir, menos rondas necesitarás. Y recuerda la regla de oro. Iterar no es solo pulir el estilo. También es tu momento para revisar los datos: el precio, la hora, el día. En el ejemplo de Luis, la frase de los mejores desayunos de la ciudad se fue en la segunda ronda porque él la leyó con atención."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "La primera respuesta es un borrador",
+        "Pide cambios concretos: longitud, trato, frases, tono",
+        "Pide tres variantes y elige",
+        "Tarea: un texto real en tres rondas hasta enviarlo"
+      ],
+      "narracion": "Repasamos. La primera respuesta es un borrador, no el texto final. Pide cambios concretos: cuántas frases, tú o usted, qué sobra y qué tono. Pide variantes y elige, porque elegir es más rápido que escribir. Y si la conversación se tuerce, empieza de cero con la instrucción mejorada. Tu tarea de hoy, en 10 minutos. Elige un texto que tengas que publicar o enviar esta semana y llévalo a la versión final en tres rondas. En la próxima clase guardarás tus mejores instrucciones."
+    }
+  ]
+}

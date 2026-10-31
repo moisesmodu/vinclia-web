@@ -1,0 +1,112 @@
+{
+  "id": "c2-26",
+  "titulo": "Cuanto más lejos, más deprisa",
+  "descripcion": "Calcula la velocidad con la distancia que mide el ultrasonido y descubre el control proporcional: velocidad igual a error por k, el papel de la ganancia k y la zona muerta de los motores.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k6-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cuanto más lejos, más deprisa",
+      "subtitulo": "Unidad 6 · Control inteligente · El control proporcional",
+      "narracion": "Segunda sesión de la unidad 6. El robot repartidor tiene que acercarse a la estación de carga hasta unos 10 centímetros. Si llega de golpe, choca. Si para lejos, no se carga. Hoy aprenderás una idea de ingeniería real que volverá a salir en el resto del curso: el control proporcional. La velocidad ya no será un número fijo, sino que el robot la calculará en cada vuelta con la distancia que mide el ultrasonido."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Llegas en bici a un semáforo rojo. ¿Frenas de golpe o poco a poco?",
+      "narracion": "Piensa en cuando vas en bici hacia un semáforo rojo. Lejos, vas deprisa. Cerca, cada vez más despacio. Y justo en la línea, paras. En la unidad 3 hicimos otra cosa: si la distancia es menor que 15, párate; si no, adelante. Ese robot va a la misma velocidad hasta el final y para en seco. Es un control de todo o nada. Hoy la velocidad dependerá de la distancia: lejos, alta; cerca, baja; justo donde queremos, cero. Muchos coches modernos frenan solos así."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-2:5",
+      "narracion": "Vamos al simulador con un bloque nuevo, el bloque calcula. Pon velocidad a distancia por 3 multiplica lo que mide el ultrasonido. A 80 centímetros, la velocidad es 240. A 50, 150. A 30, 90. Y a 10, 30. Antes de ejecutar, predice: ¿el robot frenará de golpe o poco a poco? Mira. Como el cálculo está dentro de un para siempre, se repite en cada vuelta y el robot frena solo. El bloque puede sumar, restar, multiplicar y dividir. Y si el resultado pasa de 255, el motor va a 255."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El error y la ganancia k",
+      "columnas": ["Distancia", "Error: distancia menos 10", "Velocidad con k 5"],
+      "filas": [
+        ["50 cm", "40", "200"],
+        ["30 cm", "20", "100"],
+        ["12 cm", "2", "10: no se mueve"]
+      ],
+      "narracion": "Ahora queremos parar a 10 centímetros. El error es lo que falta: la distancia menos 10. A 50 centímetros, el error es 40. A 10, es 0. Después, la velocidad es el error por k. Ese número k se llama ganancia y dice lo valiente que es el robot. Calculemos con k igual a 5. A 50 centímetros, 40 por 5, 200. A 30, 20 por 5, 100. A 12, 2 por 5, 10, y el motor ya no se mueve. Si das la clase, hacedlo juntos en la pizarra."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-2:7",
+      "narracion": "Probemos con el error por 10. Antes de ejecutar, predice: ¿dónde se parará? ¿Justo a 10 centímetros? Mira. Va rápido mientras está lejos, frena al acercarse y se para a unos 13 centímetros. ¿Por qué no a 10? Porque cuando faltan pocos centímetros, la velocidad calculada baja de 30 y el motor ya no tiene fuerza. Es la zona muerta de la unidad 1, que vuelve. Con un k más grande, ese punto queda más cerca."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "¿k pequeño o k grande?",
+      "mal": "k pequeño, por 2 o por 3: frena muy lejos, llega despacio y se queda lejos",
+      "bien": "k grande, por 10 o por 20: va deprisa casi hasta el final y llega más cerca",
+      "narracion": "Con un k pequeño, por 2 o por 3, el robot empieza a frenar muy lejos y llega muy despacio. Con el error por 2, cuando faltan 15 centímetros la velocidad ya es 30, y el motor no se mueve: se para a unos 25 centímetros. Con un k grande, por 10 o por 20, va deprisa casi hasta el final y frena en el último momento. Y con un k exagerado, como 1000, casi siempre da más de 255: vuelve a ser un todo o nada."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-2:9",
+      "narracion": "Una predicción más, y piénsala bien. Ahora la velocidad es la distancia por 2. El robot frena a medida que se acerca al muro. ¿Dónde se quedará parado: en la A, en la B o en la C? Recuerda la zona muerta. Haz la cuenta antes de mirar. Cuando la distancia es 15 centímetros, la velocidad es 15 por 2, 30. El motor ya no tiene fuerza. Se queda a unos 15 o 16 centímetros del muro, en la B."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la tabla del robot proporcional",
+      "pasos": [
+        "Por parejas, para cada distancia calculad el error",
+        "Calculad la velocidad con k 2 y con k 10",
+        "Marcad en rojo las velocidades por debajo de 30",
+        "¿Dónde se parará cada robot?",
+        "Dos voluntarios caminan hacia la pared con pasos proporcionales"
+      ],
+      "narracion": "Actividad sin pantalla con la ficha del imprimible. Por parejas, rellenad la tabla: para cada distancia, calculad el error y la velocidad con k igual a 2 y con k igual a 10. Marcad en rojo las velocidades por debajo de 30, porque ahí el robot no se mueve. Después decidid dónde se para cada robot. Para terminar, dos voluntarios hacen de robot hacia una pared: en cada tic del profe, dan un paso de longitud proporcional a lo que falta. En casa, por el pasillo, con cuidado."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En el Maqueen: el cargador",
+      "pasos": [
+        "Salida a 80 centímetros de una caja firme contra la pared",
+        "Prueba los programas con k 2, k 10 y k 30",
+        "Mide dónde se para y apúntalo en la pizarra",
+        "Compara con el simulador",
+        "En el robot real, limita la velocidad entre 0 y 255"
+      ],
+      "narracion": "Con el robot de verdad, la caja hace de cargador, bien firme contra la pared. Poned el robot a 80 centímetros y probad los tres programas del imprimible: k igual a 2, a 10 y a 30. Después de cada prueba, medid con la cinta dónde se ha parado. El robot real puede pararse un poco más lejos o más cerca, porque cada motor es diferente. Importante: limitad la velocidad entre 0 y 255. Si no, 300 se convierte en 44 y menos 10, en 246."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de la sesión",
+      "puntos": [
+        "Frena solo: velocidad igual a distancia por 3, sin bloque «si»",
+        "Parar a unos 10 centímetros: busca un k que funcione",
+        "Urgente: llegar al cargador antes del segundo 5",
+        "Reto extra · Adelante y atrás si empieza demasiado cerca",
+        "Crea: tu estación de carga, con luces verdes al llegar"
+      ],
+      "narracion": "En los retos no hay bloque si: la velocidad se tiene que calcular. En el primero, el robot va a 150 y choca: haz que la velocidad sea la distancia por 3. En el segundo, con k igual a 3 se queda lejos del cargador: encuentra un k que funcione en las tres pistas. En el urgente, el robot tiene poca batería y la pista 1 es muy larga: hace falta un k valiente. En el reto extra, si el error es negativo, retrocede."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pregunta que ayuda"],
+      "filas": [
+        ["Calcula, pero el motor va fijo", "¿Quién usa la variable calculada?"],
+        ["Cálculo en al iniciar", "¿Cuántas veces se hace al iniciar?"],
+        ["Resta al revés: 10 menos distancia", "A 50 cm, ¿cuánto le falta?"],
+        ["Espera parar justo a 10", "¿Qué velocidad da a 14 cm?"],
+        ["Prueba k al azar", "Apunta dónde para con cada k"]
+      ],
+      "narracion": "Errores típicos. Calcula la velocidad, pero el motor sigue con un número fijo: que siga el camino del número hasta el motor. Pone el cálculo en al iniciar: se hace una sola vez. Hace la resta al revés y el robot no se mueve: el error debe ser positivo cuando está lejos. Espera que pare justo a 10: que calcule la velocidad a 14 centímetros con su k. Y si prueba números al azar, que apunte dónde se para con cada uno y busque la tendencia."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "El bloque calcula hace operaciones con sensores y variables",
+        "Velocidad igual a error por k: cuanto más lejos, más deprisa",
+        "k pequeño: para lejos. k grande: llega rápido y cerca"
+      ],
+      "narracion": "Resumen. El bloque calcula hace operaciones con sensores y variables, y dentro del para siempre se repite en cada vuelta. En el control proporcional, el error es la distancia menos la que quiero, y la velocidad es el error por k. Cuanto más lejos, más deprisa. Con un k pequeño se para lejos, por la zona muerta. Con un k grande, llega rápido y más cerca. Para hoy: fíjate en cómo se frena antes de un semáforo y explícalo con las palabras error y velocidad."
+    }
+  ]
+}

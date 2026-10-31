@@ -1,0 +1,36 @@
+{
+  "seccion": 4,
+  "titulo": "Cuestionario: el sensor de distancia",
+  "preguntas": [
+    {
+      "pregunta": "El robot gira hacia la pared del fondo, pero está muy lejos y el sonido no vuelve. ¿Qué número da el bloque distancia?",
+      "respuestas": ["0", "400", "500", "1023"],
+      "correcta": 2,
+      "explicacion": "Sin eco, el bloque da 500. Quiere decir «no veo nada», no «hay algo a 500 cm». El sensor mide de 2 a 400 cm, justo delante."
+    },
+    {
+      "pregunta": "Quieres que la micro:bit muestre la distancia todo el rato mientras el robot se acerca a una caja. ¿Dónde pones «muestra el número distancia»?",
+      "respuestas": ["En «para siempre»", "En «al iniciar»", "En ningún sitio: la micro:bit ya lo hace sola"],
+      "correcta": 0,
+      "explicacion": "En «al iniciar» mediría una sola vez. En «para siempre» vuelve a medir sin parar y el número siempre está al día."
+    },
+    {
+      "pregunta": "El robot ahora va a velocidad 255 en lugar de 100. ¿Qué tienes que hacer con la distancia a la que se para?",
+      "respuestas": ["Hacerla más pequeña", "Nada: frena igual a todas las velocidades", "Hacerla un poco más grande, porque se desliza más antes de pararse"],
+      "correcta": 2,
+      "explicacion": "El robot no frena en seco: por la inercia, cuanto más deprisa va, más se desliza. Hay que decidir antes, con un umbral más grande."
+    },
+    {
+      "pregunta": "¿Por qué poner una espera larga en el «si no» puede hacer chocar al robot que esquiva obstáculos?",
+      "respuestas": ["Porque las esperas hacen ir más rápido al robot", "Porque mientras espera no vuelve a mirar el sensor", "Porque el sensor se apaga durante la espera"],
+      "correcta": 1,
+      "explicacion": "Durante la espera el robot va a ciegas: si aparece la pared en ese rato, no se entera. En el bucle, el robot tiene que mirar y decidir en cada vuelta."
+    },
+    {
+      "pregunta": "En el aparcamiento automático con tres casos (muy cerca, cerca y lejos), ¿qué pregunta tiene que ir primero?",
+      "respuestas": ["«¿Distancia menor que 30?»", "Da igual: el orden no importa", "«¿Distancia mayor que 30?»", "«¿Distancia menor que 8?», el caso más urgente"],
+      "correcta": 3,
+      "explicacion": "El robot pregunta de arriba abajo y se queda con la primera que dice sí. Si arriba está «menor que 30», a 5 cm también dice sí y nunca llega a pararse."
+    }
+  ]
+}

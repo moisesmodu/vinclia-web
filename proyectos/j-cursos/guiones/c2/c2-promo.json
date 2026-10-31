@@ -1,0 +1,48 @@
+{
+ "id": "c2-promo",
+ "titulo": "Vídeo promocional",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Crea robots con micro:bit y Maqueen",
+   "subtitulo": "32 clases de robótica para niños de 10 a 12 años, y para sus profes",
+   "narracion": "Un robot que se para solo antes de chocar. Que sigue una línea negra. Que limpia una habitación o rescata a alguien en una cueva. Todo eso lo vas a programar en este curso, con el robot Maqueen y la micro bit."
+  },
+  {
+   "tipo": "demo",
+   "fuente": "presenta:k3-2:5",
+   "narracion": "Antes de ejecutar, siempre predecimos. ¿Dónde se parará? Mira: el sensor de distancia mide sin parar y, a quince centímetros del muro, el robot frena. Lo verás en el simulador y después en el robot de verdad."
+  },
+  {
+   "tipo": "pasos",
+   "titulo": "Ocho unidades, de cero a tu robot",
+   "pasos": [
+    "Motores, giros y figuras precisas",
+    "Sensor de distancia y seguir la línea",
+    "Luz, sonido, LED y control inteligente",
+    "Misiones: aspirador, sumo y rescate"
+   ],
+   "narracion": "Son ocho unidades: motores y giros precisos, el sensor de distancia, seguir la línea, luz, sonido y LED, control inteligente y, al final, misiones reales como el robot aspirador, el sumo o el rescate en la cueva."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "Para casa y para el aula",
+   "puntos": [
+    "El kit exacto y cuánto cuesta",
+    "Del simulador al robot con MakeCode",
+    "Cómo dar el curso en una extraescolar"
+   ],
+   "narracion": "Sirve para casa y para el aula: te digo qué kit comprar y cuánto cuesta, cómo pasar el programa del simulador al robot con MakeCode, y cómo dar el curso en una extraescolar, con el plan de cada sesión."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Empieza por la primera clase",
+   "puntos": [
+    "Fichas descargables de cada sesión",
+    "Sin robot también se puede seguir",
+    "Las primeras clases, gratis"
+   ],
+   "narracion": "Cada sesión trae sus fichas descargables, y sin robot también puedes seguirlo. Mira las primeras clases gratis y pon a moverse tu primer robot."
+  }
+ ]
+}

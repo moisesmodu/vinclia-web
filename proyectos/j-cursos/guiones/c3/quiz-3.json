@@ -1,0 +1,36 @@
+{
+  "seccion": 3,
+  "titulo": "Cuestionario: atención al cliente con IA",
+  "preguntas": [
+    {
+      "pregunta": "Vas a pedir a la IA que te ayude a contestar un WhatsApp de un cliente. ¿Qué debes pegar?",
+      "respuestas": ["El chat entero con nombre, teléfono y dirección", "Solo lo que pregunta, y si hace falta llamarlo cliente A", "Una captura de su perfil", "Su DNI para personalizar la respuesta"],
+      "correcta": 1,
+      "explicacion": "La IA no necesita datos personales para redactar. Pega solo la pregunta y tus notas, y llama al cliente «cliente A» si hace falta."
+    },
+    {
+      "pregunta": "¿Cuál es la estructura recomendada para responder una reseña negativa en Google?",
+      "respuestas": ["Explicar por qué el cliente se equivoca", "Ignorarla para no darle importancia", "Agradecer, reconocer sin peros, explicar en una frase, ofrecer solución y firmar", "Pedirle que la borre a cambio de un descuento"],
+      "correcta": 2,
+      "explicacion": "La respuesta es para los futuros clientes que la leen. Reconocer, explicar sin excusas y ofrecer una salida da confianza; discutir en público nunca funciona."
+    },
+    {
+      "pregunta": "Eres fisioterapeuta y un paciente cuenta en una reseña de cinco estrellas cómo le ayudaste con su lesión. ¿Qué haces al responder?",
+      "respuestas": ["Agradecer sin mencionar ninguna lesión ni tratamiento", "Contar los detalles del tratamiento", "Confirmar cuántas sesiones hizo", "No responder nunca a las positivas"],
+      "correcta": 0,
+      "explicacion": "Los datos de salud son una categoría especial. Aunque el paciente cuente su caso, tú no debes confirmarlo ni añadir detalles en una respuesta pública."
+    },
+    {
+      "pregunta": "Desde el 2 de agosto de 2026, si usas un chatbot con IA que conversa solo con tus clientes, ¿qué debes hacer?",
+      "respuestas": ["Nada, solo afecta a grandes empresas", "Darlo de alta como sistema de alto riesgo", "Pedir permiso por escrito a cada cliente", "Avisar al cliente de que está hablando con una IA"],
+      "correcta": 3,
+      "explicacion": "Es la obligación de transparencia del artículo 50 de la Ley Europea de IA. Los mensajes fijos que escribes tú en WhatsApp Business no son un chatbot."
+    },
+    {
+      "pregunta": "Has traducido al inglés una respuesta con precio y hora. ¿Qué paso te ayuda a comprobar que es correcta?",
+      "respuestas": ["Enviarla sin leerla", "Pedir la vuelta al castellano, literal, y revisar cifras y horas", "Traducirla a un tercer idioma", "Ponerla toda en mayúsculas"],
+      "correcta": 1,
+      "explicacion": "La retrotraducción muestra si el texto dice lo que querías. Si aparece una hora distinta o una promesa que no hiciste, lo corriges antes de enviar."
+    }
+  ]
+}

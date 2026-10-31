@@ -1,0 +1,114 @@
+{
+  "id": "c3-15",
+  "titulo": "Imágenes con IA: cuándo sí, cuándo no y los derechos",
+  "descripcion": "Aprende cuándo una imagen generada con IA ayuda a tu negocio y cuándo es mejor una foto real, cómo pedirla bien y qué revisar sobre uso comercial, derechos y transparencia.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:imagenes-ia-checklist"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Imágenes con IA: cuándo sí y cuándo no",
+      "subtitulo": "Y qué tienes que saber sobre los derechos",
+      "narracion": "Con herramientas como Canva, ChatGPT o Gemini puedes crear una imagen en segundos con solo describirla. Es tentador usarlo para todo. Pero en un pequeño negocio, la confianza se construye con lo real: tu local, tu producto, tus manos trabajando. En esta clase vas a aprender a distinguir cuándo una imagen generada te ayuda y cuándo te perjudica. También verás cómo pedirla bien y qué revisar sobre uso comercial y derechos. Usaremos de ejemplo una tienda online de cerámica hecha a mano."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "¿Imagen con IA o foto real?",
+      "columnas": [
+        "Situación",
+        "¿Con IA?",
+        "Mejor opción"
+      ],
+      "filas": [
+        [
+          "Fondo para un cartel de oferta",
+          "Sí",
+          "Imagen generada o diseño"
+        ],
+        [
+          "Foto de un producto que vendes",
+          "No",
+          "Foto real del producto"
+        ],
+        [
+          "Ilustración para un artículo",
+          "Sí, con cuidado",
+          "Imagen generada sencilla"
+        ],
+        [
+          "Cliente sonriente de ejemplo",
+          "No",
+          "Cliente real con permiso"
+        ],
+        [
+          "Antes y después de un trabajo",
+          "Nunca",
+          "Fotos reales del trabajo"
+        ]
+      ],
+      "narracion": "Esta tabla te sirve de brújula. La IA va bien para lo decorativo: un fondo para el cartel de las rebajas, una ilustración para un artículo, un icono. Va mal para todo lo que el cliente va a comprar o a comprobar. Si vendes tazas de cerámica, la foto tiene que ser de tu taza, porque el cliente espera recibir exactamente eso. Y un antes y después generado con IA, en una peluquería o en una reforma, es directamente engañar. Si dudas, hazte esta pregunta: ¿se sentiría engañado mi cliente si supiera que no es real? Si la respuesta es sí, usa una foto real."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pide a la IA que describa la imagen",
+      "usuario": "Voy a crear en Canva un fondo para un cartel de rebajas de mi tienda de cerámica. Escríbeme una descripción para generar la imagen: estilo sencillo, colores tierra, sin texto, sin personas, sin logotipos y con espacio libre a la izquierda para poner yo el texto.",
+      "ia": "Fondo minimalista en tonos terracota, arena y verde oliva suave. Textura de papel artesanal. A la derecha, la silueta difuminada de dos jarrones de barro sobre una mesa de madera clara. Luz natural de mañana. Mitad izquierda despejada y lisa para añadir texto. Sin personas, sin letras, sin marcas.",
+      "narracion": "Un truco que funciona muy bien: pide al asistente de texto que te escriba la descripción de la imagen, y luego pégala en la herramienta de imágenes. Fíjate en lo que lleva la instrucción. Para qué es la imagen, el estilo, los colores y, sobre todo, lo que no quieres: texto, personas y logotipos. Las herramientas de imágenes suelen escribir mal las letras, así que es mejor que el texto lo añadas tú encima en Canva. Y pedir espacio libre te ahorra recortar después. Si el resultado no te convence, no empieces de cero. Pide un cambio concreto, como más luz, menos objetos o colores más suaves, igual que hacías con los textos en la sección 2."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Instrucciones que te meten en líos",
+      "mal": "Un jarrón al estilo de un pintor famoso concreto, con el logo de una marca conocida y una actriz sujetándolo.",
+      "bien": "Un jarrón de barro sencillo sobre una mesa de madera, luz natural, colores tierra, sin personas ni marcas.",
+      "narracion": "A la izquierda, tres errores en una sola frase. Imitar el estilo de un artista concreto, usar la marca de otra empresa y meter a una persona real. Las tres cosas pueden darte problemas, y además son una mala idea para tu imagen. A la derecha, una descripción que funciona sin copiar a nadie: el objeto, el material, la luz y los colores. Si quieres un estilo, descríbelo con palabras normales, como acuarela suave o fotografía de producto con fondo claro, en lugar de nombrar a un autor. Así el resultado es tuyo de verdad y no se parece al de nadie."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los derechos, en cuatro ideas",
+      "puntos": [
+        "Revisa las condiciones de uso comercial de cada herramienta",
+        "No imites marcas, personas reales ni artistas concretos",
+        "En España se protegen las obras humanas",
+        "Una imagen sin aportación creativa puede no tener protección"
+      ],
+      "narracion": "Ahora, los derechos, sin tecnicismos. Primero, cada herramienta tiene sus condiciones, y en algunas cambian según el plan. Antes de usar una imagen en un anuncio o en un producto que vendes, revisa qué permiten para uso comercial. Segundo, nada de marcas, personas reales o estilos de artistas concretos. Tercero, en España la propiedad intelectual protege las obras creadas por personas. Eso significa que una imagen generada sin aportación creativa tuya puede no tener protección. Si es clave para tu marca, como un logotipo, consúltalo con un profesional."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si una imagen parece una persona real y no lo es, dilo claramente.",
+      "narracion": "Hay una regla más que ya está en vigor. Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia de la Ley Europea de IA. Los contenidos generados que imitan a personas reales, lo que se conoce como deepfakes, deben indicarse. En la práctica, para tu negocio: no publiques personas generadas haciéndolas pasar por clientes o por tu equipo. Y si alguna vez usas una imagen de este tipo, indica que está creada con IA. En la sección legal lo veremos con más detalle."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La IA también mejora tus fotos reales",
+      "usuario": "Vendo tazas de cerámica hechas a mano en mi tienda online. Hago las fotos con el móvil en la cocina y salen oscuras y con reflejos. Dame 5 consejos concretos para mejorarlas sin comprar nada caro.",
+      "ia": "1. Fotografía junto a una ventana, con luz de día y sin el flash.\n2. Pon una cartulina blanca enfrente de la ventana para rellenar las sombras.\n3. Usa un fondo liso: una tabla de madera o una sábana sin arrugas.\n4. Gira la taza hasta que el reflejo de la ventana desaparezca.\n5. Haz siempre las mismas tres fotos: frente, asa y detalle del esmalte.",
+      "narracion": "Esta es quizá la mejor forma de usar la IA con las imágenes: no para sustituir tus fotos, sino para mejorarlas. Explícale cómo haces ahora las fotos y qué problema tienes. Te dará consejos prácticos que puedes probar hoy mismo con tu móvil. Las herramientas de edición, incluida Canva, también te permiten quitar un fondo o mejorar la luz de una foto real. Eso es legítimo, siempre que el producto siga siendo el mismo que recibe el cliente. Retocar la luz está bien. Cambiar el color del esmalte, no."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Repasa las últimas 10 imágenes que has publicado",
+        "Marca las que no sean reales y si podrían confundir",
+        "Pide a la IA 5 consejos para mejorar tus fotos",
+        "Rehaz hoy la foto de tu producto o servicio estrella",
+        "Busca las condiciones de uso comercial de tu herramienta"
+      ],
+      "narracion": "Para hoy, una revisión rápida que muchos negocios no han hecho nunca. Abre tus redes o tu web y mira las últimas diez imágenes que has publicado. Marca las que no sean reales y pregúntate si alguna podría confundir a un cliente. Después pide a la IA consejos para mejorar tus fotos, contándole cómo las haces ahora, y rehaz la foto de tu producto o servicio estrella. En los recursos de esta clase tienes una plantilla con la lista de comprobación antes de publicar una imagen generada con IA. Imprímela y tenla junto al ordenador."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "IA para lo decorativo, foto real para lo que se vende",
+        "Describe estilo, colores y lo que no quieres",
+        "Sin marcas, personas reales ni artistas concretos",
+        "Revisa el uso comercial y avisa si imita a una persona"
+      ],
+      "narracion": "Repasemos. La IA es útil para fondos, ilustraciones y carteles, y para mejorar tus fotos reales. Lo que vendes y lo que el cliente comprueba debe ser real. Pide las imágenes describiendo estilo, colores y lo que no quieres. No imites marcas, personas reales ni artistas concretos. Revisa las condiciones de uso comercial y avisa cuando algo imite a una persona real. En la próxima clase pasamos a tu web y a cómo aparecer en las búsquedas de tu zona."
+    }
+  ]
+}

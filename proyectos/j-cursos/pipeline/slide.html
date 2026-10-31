@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- Diapositiva de 1920×1080 para los cursos. render.mjs llama a draw(escena, opciones) y hace la captura.
+     Mismo lenguaje visual que las presentaciones de Numi Tech (present.css): Lexend, fondo punteado, tarjetas con sombra plana. -->
+<style>
+@font-face{font-family:Lexend;font-weight:100 900;src:url(assets/fonts/Lexend-latin-c0dd90.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+@font-face{font-family:Lexend;font-weight:100 900;src:url(assets/fonts/Lexend-latin-ext-7a3188.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF,U+2C60-2C7F,U+A720-A7FF}
+:root{--c:#2F6BFF;--c2:#F08A24;--ink:#14204A;--mut:#56628A;--line:#DCE4FA;--ok:#3CC47C;--ko:#EF5A5A;--sun:#FFC531}
+*{box-sizing:border-box}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;font-family:Lexend,system-ui,sans-serif;color:var(--ink)}
+#s{position:absolute;inset:0;background:#F3F6FF;overflow:hidden}
+#s::before{content:"";position:absolute;inset:0;background-image:radial-gradient(color-mix(in srgb,var(--c) 14%,transparent) 2px,transparent 2.1px);background-size:34px 34px}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.16;background:var(--c)}
+.b1{width:620px;height:620px;right:-180px;top:-220px}.b2{width:380px;height:380px;left:-140px;bottom:-160px;background:var(--c2);opacity:.14}
+.in{position:absolute;inset:92px 120px 150px;display:flex;flex-direction:column;justify-content:center}
+.kick{font-size:28px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--c);margin:0 0 14px}
+h1{font-size:104px;line-height:1.02;margin:0 0 26px;font-weight:900;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:72px;line-height:1.08;margin:0 0 34px;font-weight:900;letter-spacing:-.01em;text-wrap:balance}
+.foot{position:absolute;left:120px;right:120px;bottom:48px;display:flex;align-items:center;gap:22px;font-size:26px;font-weight:700;color:var(--mut)}
+.foot img{height:44px}.foot .tag{background:#fff;border-radius:999px;padding:10px 22px;box-shadow:0 5px 0 var(--line)}
+.foot .sp{flex:1}
+/* portada */
+.cover #s{background:linear-gradient(150deg,color-mix(in srgb,var(--c) 78%,#0B1440),#121C48)}
+.cover #s::before{background-image:radial-gradient(rgba(255,255,255,.09) 2px,transparent 2.1px)}
+.cover{color:#fff}.cover .kick{color:var(--sun)}.cover .foot{color:#C9D3F5}.cover .foot .tag{background:rgba(255,255,255,.12);box-shadow:none;color:#fff}
+.cv{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;height:100%}
+.cv p.sub{font-size:40px;line-height:1.35;font-weight:500;margin:0;color:#E4EAFF;max-width:1000px}
+.hero{width:100%;aspect-ratio:4/3;border-radius:40px;background:center/cover no-repeat;box-shadow:0 30px 70px rgba(0,0,0,.35);transform:rotate(1.5deg);border:10px solid rgba(255,255,255,.12)}
+.badge{position:absolute;width:190px;height:190px;border-radius:50%;background:var(--sun);color:#3A2600;display:grid;place-items:center;text-align:center;font-weight:900;font-size:26px;line-height:1.05;box-shadow:0 12px 0 #C99400;right:96px;top:110px;transform:rotate(-8deg)}
+.badge b{display:block;font-size:76px}
+/* listas */
+.pts{list-style:none;padding:0;margin:0;display:grid;gap:22px;max-width:1500px}
+.pts li{display:flex;gap:26px;align-items:center;font-size:44px;line-height:1.28;font-weight:600;background:#fff;border-radius:28px;padding:22px 32px;box-shadow:0 8px 0 var(--line)}
+.pts li i{flex:none;width:26px;height:26px;border-radius:8px;background:var(--c);transform:rotate(12deg);box-shadow:5px 5px 0 var(--sun)}
+.pts.num{counter-reset:n}.pts.num li{counter-increment:n}.pts.num li i{width:66px;height:66px;border-radius:50%;transform:none;box-shadow:none;display:grid;place-items:center}
+.pts.num li i::after{content:counter(n);color:#fff;font-style:normal;font-weight:900;font-size:36px}
+.pts li.h{visibility:hidden}
+.two{display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:center}
+.char{width:360px;filter:drop-shadow(0 20px 20px rgba(20,32,74,.18))}
+/* frase */
+.q{background:#fff;border-radius:48px;padding:70px 90px;box-shadow:0 14px 0 var(--line);position:relative;max-width:1550px}
+.q::before{content:"“";position:absolute;left:36px;top:-50px;font-size:260px;line-height:1;color:var(--c);font-weight:900}
+.q p{font-size:62px;line-height:1.3;font-weight:700;margin:0;text-wrap:balance}.q small{display:block;margin-top:28px;font-size:32px;color:var(--mut);font-weight:600}
+/* comparar */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.cmp div{border-radius:36px;padding:46px 50px;font-size:44px;line-height:1.32;font-weight:600;background:#fff}
+.cmp .ko{box-shadow:0 10px 0 #F6C9C9;border:5px solid #F6C9C9}.cmp .ok{box-shadow:0 10px 0 #BFEBD2;border:5px solid #BFEBD2}
+.cmp b{display:flex;align-items:center;gap:16px;font-size:32px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px}
+.cmp .ko b{color:var(--ko)}.cmp .ok b{color:#1F9A5B}
+.cmp b span{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:34px}.cmp .ko b span{background:var(--ko)}.cmp .ok b span{background:var(--ok)}
+.cmp div.h{visibility:hidden}
+/* tabla */
+table{border-collapse:separate;border-spacing:0;width:100%;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 10px 0 var(--line);font-size:38px}
+th{background:var(--c);color:#fff;text-align:left;padding:24px 32px;font-weight:800}
+td{padding:22px 32px;border-top:3px solid var(--line);font-weight:500;line-height:1.3}
+tr.h td{visibility:hidden}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:30px;max-width:1600px}
+.bub{border-radius:34px;padding:30px 40px;font-size:35px;line-height:1.42;font-weight:500;white-space:pre-line;max-width:1350px}
+.bub.u{align-self:flex-end;background:var(--c);color:#fff;border-bottom-right-radius:8px}
+.bub.a{align-self:flex-start;background:#fff;box-shadow:0 8px 0 var(--line);border-bottom-left-radius:8px}
+.bub small{display:block;font-size:22px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin-bottom:8px}
+.bub.h{visibility:hidden}
+.chat.sm .bub{font-size:29px}
+/* resumen */
+.chk{list-style:none;padding:0;margin:0;display:grid;gap:22px;max-width:1380px}
+.chk li{display:flex;gap:26px;align-items:center;font-size:44px;font-weight:600;line-height:1.28;background:#fff;border-radius:28px;padding:22px 30px;box-shadow:0 8px 0 var(--line)}
+.chk li span{flex:none;width:64px;height:64px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-weight:900;font-size:36px}
+.chk li.h{visibility:hidden}
+/* título de sección (tarjeta entre secciones) */
+.sec #s{background:var(--c)}.sec{color:#fff}.sec .kick{color:#fff;opacity:.8}.sec .foot{color:#fff}.sec .foot .tag{background:rgba(255,255,255,.18);box-shadow:none}
+</style>
+</head>
+<body>
+<div id="s"><i class="blob b1"></i><i class="blob b2"></i><div class="in" id="in"></div><div class="foot" id="foot"></div></div>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+// fit: si el contenido no cabe, se reduce (como shrink() de present.js) hasta el 70 %
+function fit() { const inn = document.getElementById('in'), c = inn.firstElementChild; if (!c) return; c.style.zoom = 1; const h = c.scrollHeight, H = inn.clientHeight, w = c.scrollWidth, W = inn.clientWidth; const z = Math.min(1, H / h, W / w); if (z < 1) c.style.zoom = Math.max(.6, z * .98).toFixed(3); }
+// e: escena; o: {curso, color, color2, kicker, pie, logo, hero, char, reveal}
+window.draw = function (e, o) {
+  const r = document.documentElement; r.style.setProperty('--c', o.color); r.style.setProperty('--c2', o.color2 || '#F08A24');
+  document.body.className = e.tipo === 'portada' ? 'cover' : e.tipo === 'seccion' ? 'sec' : '';
+  const n = o.reveal ?? 99, H = i => i >= n ? ' class="h"' : '';
+  const kick = o.kicker ? `<p class="kick">${esc(o.kicker)}</p>` : '';
+  const ch = o.char ? `<img class="char" src="${o.char}">` : '';
+  const T = {
+    portada: () => `<div class="cv"><div>${kick}<h1>${esc(e.titulo)}</h1>${e.subtitulo ? `<p class="sub">${esc(e.subtitulo)}</p>` : ''}</div>${o.hero ? `<div class="hero" style="background-image:url(${o.hero})"></div>` : ''}</div>`,
+    seccion: () => `<div>${kick}<h1>${esc(e.titulo)}</h1></div>`,
+    puntos: () => `<div class="${ch ? 'two' : ''}"><div>${kick}<h2>${esc(e.titulo || '')}</h2><ul class="pts">${(e.puntos || []).map((p, i) => `<li${H(i)}><i></i>${esc(p)}</li>`).join('')}</ul></div>${ch}</div>`,
+    pasos: () => `<div>${kick}<h2>${esc(e.titulo || '')}</h2><ul class="pts num">${(e.pasos || []).map((p, i) => `<li${H(i)}><i></i>${esc(p)}</li>`).join('')}</ul></div>`,
+    frase: () => `<div>${kick}<div class="q"><p>${esc(e.texto)}</p>${e.autor ? `<small>${esc(e.autor)}</small>` : ''}</div></div>`,
+    comparar: () => `<div>${kick}<h2>${esc(e.titulo || '')}</h2><div class="cmp"><div class="ko"><b><span>✗</span>Así no</b>${esc(e.mal)}</div><div class="ok${n < 2 ? ' h' : ''}"><b><span>✓</span>Mejor así</b>${esc(e.bien)}</div></div></div>`,
+    tabla: () => `<div>${kick}<h2>${esc(e.titulo || '')}</h2><table><tr>${(e.columnas || []).map(c => `<th>${esc(c)}</th>`).join('')}</tr>${(e.filas || []).map((f, i) => `<tr${H(i)}>${f.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`,
+    chat: () => `<div>${kick}<h2 style="font-size:56px;margin-bottom:24px">${esc(e.titulo || '')}</h2><div class="chat${(e.usuario + e.ia).length > 520 ? ' sm' : ''}"><div class="bub u"><small>Tú escribes</small>${esc(e.usuario)}</div><div class="bub a${n < 2 ? ' h' : ''}"><small>Respuesta de ejemplo</small>${esc(e.ia)}</div></div></div>`,
+    resumen: () => `<div class="${ch ? 'two' : ''}"><div>${kick}<h2>${esc(e.titulo || 'En resumen')}</h2><ul class="chk">${(e.puntos || []).map((p, i) => `<li${H(i)}><span>✓</span>${esc(p)}</li>`).join('')}</ul></div>${ch}</div>`,
+  };
+  document.getElementById('in').innerHTML = (T[e.tipo] || T.puntos)();
+  document.getElementById('foot').innerHTML = `${o.logo ? `<img src="${o.logo}">` : ''}<span class="tag">${esc(o.pie || '')}</span><span class="sp"></span><span>${esc(o.curso || '')}</span>`;
+  fit();
+};
+</script>
+</body>
+</html>

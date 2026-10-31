@@ -1,0 +1,147 @@
+{
+  "id": "c2-10",
+  "titulo": "Polígonos",
+  "descripcion": "Gira ángulos exactos controlando el tiempo, descubre la regla de los 360 grados y usa el bloque repite para que el Maqueen dibuje cuadrados, triángulos, hexágonos y una estrella.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:k2-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Polígonos",
+      "subtitulo": "El escenario, los banderines y el quiosco de la fiesta",
+      "narracion": "La comisión de fiestas quiere un escenario cuadrado, banderines triangulares y un quiosco de seis lados, todo dibujado en el suelo. Son polígonos: figuras de lados rectos. El robot ya sabe hacer tramos exactos. Repaso: a velocidad 150 hace unos 15 centímetros cada segundo, así que para 45 centímetros espera 3000 milisegundos. Ahora le falta otra cosa para dibujar polígonos: girar el ángulo justo. ¿Cómo lo conseguirá?"
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tarjeta de giros, a velocidad 100",
+      "columnas": [
+        "Ángulo",
+        "Tiempo de giro"
+      ],
+      "filas": [
+        [
+          "30°",
+          "unos 200 ms"
+        ],
+        [
+          "60°",
+          "unos 400 ms"
+        ],
+        [
+          "90°",
+          "unos 600 ms"
+        ],
+        [
+          "120°",
+          "unos 800 ms"
+        ],
+        [
+          "180°",
+          "unos 1200 ms"
+        ]
+      ],
+      "narracion": "Girando sobre sí mismo a velocidad 100, el ángulo depende del tiempo. Esta es la tarjeta de giros. 30 grados, unos 200 milisegundos. 60 grados, unos 400. 90, unos 600. 120, unos 800. Y 180, unos 1200. También 45 grados en 300, y 72 en 480. El truco para recordarla: cada 15 grados son unos 100 milisegundos. Es un redondeo: en el simulador el error es de un 2 por ciento. En tu robot puede variar, por eso se calibra."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-2:4",
+      "narracion": "Un cuadrado son cuatro veces lo mismo: un tramo de 2000 milisegundos a velocidad 150, unos 30 centímetros, y un giro de 90 grados, 600 milisegundos. Este programa usa el bloque repite, que hace los bloques de dentro tantas veces como dice el número. Predice: ¿el robot volverá exactamente al punto de salida? Mira. Dibuja el cuadrado y vuelve a donde empezó. Y el programa tiene 6 bloques en lugar de 20. Más corto, y con menos sitios para equivocarse."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La regla de los 360 grados",
+      "puntos": [
+        "Al cerrar un polígono, el robot da una vuelta entera",
+        "Cada giro = 360° ÷ número de lados",
+        "Triángulo 120°, cuadrado 90°",
+        "Pentágono 72°, hexágono 60°"
+      ],
+      "narracion": "Cuando el robot cierra un polígono y vuelve a mirar hacia donde miraba, ¿cuánto ha girado en total? Una vuelta entera: 360 grados. Siempre, tenga los lados que tenga. Por eso, si el polígono tiene lados iguales, cada giro es 360 entre el número de lados. Triángulo, 120 grados. Cuadrado, 90. Pentágono, 72. Hexágono, 60. Para programarlo, dos pasos: de lados a grados, con la regla; de grados a milisegundos, con la tarjeta de giros."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-2:6",
+      "narracion": "Cuidado con el triángulo, que es la trampa de la sesión. Los ángulos de dentro de un triángulo equilátero miden 60 grados. Antes de mirar, piensa: ¿el robot gira 60 grados en cada punta, o más? Mira. Gira 120 grados, unos 800 milisegundos, en cada punta. El robot no hace el ángulo de dentro: gira lo que le hace falta para cambiar de dirección. 180 menos 60, 120. Y tres veces 120 son 360. Si girara 60, saldría medio hexágono."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-2:12",
+      "narracion": "Otra predicción. El robot repite 3 veces un tramo de 30 centímetros y un giro de 90 grados a la derecha. Empieza en la D, mirando hacia arriba. ¿Dónde terminará: en la A, en la B o en la C? Sigue el camino con el dedo antes de mirar. Ejecutamos. Sube hasta la A, va a la derecha hasta la B y baja hasta la C. Termina en la C. Para volver a la D y cerrar el cuadrado, haría falta repetirlo una cuarta vez."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: polígonos con el cuerpo",
+      "pasos": [
+        "Cuadrado: 4 pasos y un cuarto de vuelta, 4 veces",
+        "Triángulo: 4 pasos y un tercio de vuelta, 120°",
+        "Hexágono: giros de un sexto de vuelta, 60°",
+        "Sumad los giros: siempre 360°",
+        "Una pegatina en cada esquina"
+      ],
+      "narracion": "Ahora, sin pantalla, en un trozo de suelo libre. Da 4 pasos y gira un cuarto de vuelta, cuatro veces: has hecho un cuadrado y vuelves donde estabas. Ahora un triángulo: 4 pasos y un tercio de vuelta. Un tercio de vuelta es como la aguja del reloj cuando va de las 12 a las 4. ¿Cuántas veces hay que repetirlo? Después, un hexágono, con giros de un sexto de vuelta. En clase, un alumno da órdenes, otro camina y otro comprueba con un transportador."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Con el Maqueen: calibra el giro de 90°",
+      "pasos": [
+        "Robot en la esquina del cuadrado de 30 cm",
+        "Una tira de cinta en el robot hace de aguja",
+        "Giro: velocidad 100 durante 600 ms",
+        "Transportador: ajusta de 20 en 20 ms",
+        "Prueba el cuadrado con repite 4"
+      ],
+      "narracion": "Con el robot de verdad, marca en el suelo un cuadrado de 30 centímetros de lado. Pon el Maqueen en una esquina, con una tira de cinta pegada encima que haga de aguja. Ejecuta el giro de 90 grados, velocidad 100 durante 600 milisegundos, y compruébalo con el transportador. Si gira de más o de menos, ajusta de 20 en 20 milisegundos. Después, carga el cuadrado con repite 4. ¿Vuelve a la esquina de salida? Si no se cierra, el programa puede estar bien: falta calibrar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El repite en MakeCode",
+      "puntos": [
+        "Está en la categoría Bucles",
+        "Repetir 4 veces: cambia el número",
+        "Dentro va todo lo que se repite",
+        "Muchos lados pequeños: casi un círculo"
+      ],
+      "narracion": "Cuando pases el polígono al robot, el bloque repite de MakeCode está en la categoría Bucles. Es el bloque de repetir 4 veces, y puedes cambiar el número. Dentro va todo lo que se repite: los motores del tramo, la espera, los motores del giro, su espera y el para. Una curiosidad para investigar: si pones repite 100 con giros muy pequeños, sale un polígono de tantos lados que parece un círculo. En la próxima clase haremos círculos de otra manera, con las ruedas a velocidades diferentes."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": [
+        "Error",
+        "Qué hacer"
+      ],
+      "filas": [
+        [
+          "Triángulo con giros de 60°",
+          "Caminarlo y comparar 3 por 60 con 360"
+        ],
+        [
+          "Pone el número de lados en la espera",
+          "Lados, luego grados, luego ms"
+        ],
+        [
+          "Deja el giro fuera del repite",
+          "Lo que se repite, va dentro"
+        ],
+        [
+          "Gira hacia el lado contrario",
+          "Probar un solo giro antes del bucle"
+        ]
+      ],
+      "narracion": "Errores típicos. Hacer el triángulo con giros de 60 grados: que lo camine en el suelo y compare 3 por 60 con 360. Poner el número de lados en la espera, como espera 6 para el hexágono: el número de la espera son milisegundos. Poner dentro del repite solo el tramo y dejar el giro fuera: di el patrón en voz alta, tramo y giro, tramo y giro. Y en el pentágono, cambiar el 5 de veces cuando lo que falla es el tiempo del giro: 360 entre 5, 72 grados, 480 milisegundos."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "El giro se controla con el tiempo: 90° ≈ 600 ms",
+        "Polígono cerrado: 360° en total",
+        "Cada giro, 360° ÷ lados",
+        "El repite hace el patrón las veces que haga falta"
+      ],
+      "narracion": "Repasamos. El giro se controla con el tiempo: a velocidad 100, 90 grados son unos 600 milisegundos. En un polígono cerrado el robot gira 360 grados en total, así que cada giro es 360 entre los lados. Y el repite hace el patrón las veces que haga falta. Reto extra: la estrella de 5 puntas gira 144 grados en cada punta, unos 950 milisegundos, y da dos vueltas completas. Tu proyecto: elige un polígono, dibújalo con un repite y vuelve a casa mirando a la derecha."
+    }
+  ]
+}
