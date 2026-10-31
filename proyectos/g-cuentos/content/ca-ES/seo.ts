@@ -112,4 +112,26 @@ export const SEO_CA: PaginaSeo[] = [
     faq: [["Puc triar un altre color de cabell?", "Ara hi ha dos protagonistes fixos; n'estem preparant més."]],
     alternativa: "cuento-personalizado-sin-fotos",
   },
+  {
+    slug: "llibre-personalitzat-tapa-dura",
+    titulo: "Llibre personalitzat de tapa dura per a nens, imprès a la UE",
+    descripcion: "Llibre infantil personalitzat de tapa dura, 20 × 20 cm, 28 pàgines, imprès sota demanda i enviat a casa amb l'enviament inclòs. Inclou també el PDF.",
+    h1: "El seu conte en tapa dura, per guardar-lo anys",
+    intro: "Un conte personalitzat es llegeix centenars de vegades: a l'hora d'anar a dormir, a casa dels avis, al sofà un diumenge de pluja. Per això l'imprimim en tapa dura, en format quadrat de 20 × 20 cm i paper estucat, i l'enviem a casa amb l'enviament inclòs. Aquí t'expliquem com és el llibre, quant tarda i què passa si arriba malament.",
+    secciones: [
+      { h2: "Com és el llibre", parrafos: ["És un llibre fet per durar a mans petites: tapa dura laminada mat que no es taca amb els dits, 28 pàgines interiors a tot color en paper estucat de 170 g i format quadrat de 20 × 20 cm, el que més bé s'aguanta obert sobre el llit."], lista: ["Portadella amb el nom de l'infant i dedicatòria a la primera pàgina.", "12 il·lustracions a pàgina sencera amb els seus textos, fetes amb full de personatge perquè el protagonista sigui igual a totes les pàgines.", "Imprès sota demanda en una impremta de la xarxa europea de Gelato, a prop de casa: menys quilòmetres i menys dies d'espera.", "Inclou el PDF al moment, per llegir-lo mentre arriba o per imprimir-ne la portada i posar-la en un sobre."] },
+      { h2: "Què s'hi personalitza", parrafos: ["El nom surt al títol, a la portada i al llarg de tota la història. També hi surten la seva ciutat o el seu poble, la mascota, allò que més li agrada i una por o un valor que vulgueu treballar: la por a la foscor, un germanet que arriba, compartir. Tot s'escriu en català correcte, amb l'article que toca (en Pau, la Martina, l'Oriol), perquè el conte soni com el parleu a casa.", "No demanem cap foto de l'infant: trieu entre dos protagonistes il·lustrats, un nen i una nena. És més segur per a la criatura i el resultat és un àlbum il·lustrat de debò, no una cara retallada."] },
+      { h2: "Terminis i enviament", parrafos: ["La fabricació i l'enviament solen tardar al voltant d'una setmana laborable a la península. Enviem a la península i les Balears, amb l'enviament inclòs en el preu, i pots posar l'adreça que vulguis en pagar: la dels avis, la dels padrins o la vostra. A la portada de la web hi tens la data límit d'aquest any perquè arribi abans de Nadal i abans de Reis; si vas just de temps, el PDF arriba en menys de dues hores i el llibre pot venir després."] },
+      { h2: "Preu i què inclou", parrafos: ["El llibre de tapa dura costa 36,90 € amb l'enviament inclòs, i porta el PDF de regal. Si només vols el PDF, són 7,90 €. Abans de pagar res veus gratis la portada, la dedicatòria i les primeres pàgines amb el seu nom, i pots canviar el que vulguis. Preu clar, sense lletra petita, i cancel·les amb un clic si encara no s'ha imprès."] },
+      { h2: "Si arriba malmès", parrafos: ["Envia'ns una foto a hola@numimates.com i el reimprimim sense cap cost. Si en rebre'l veus una errada en una dada (el nom, la ciutat), escriu-nos tan aviat com puguis: si el llibre encara no s'ha imprès, l'aturem i el corregim."] },
+      { h2: "Per a qui és un bon regal", parrafos: ["Per als avis que volen un regal que no sigui una joguina més i que porti la seva dedicatòria. Per al tió i per a Reis, quan vols alguna cosa que l'infant reconegui com a seva entre totes les capses. I per a un germanet nou: el gran torna a ser protagonista d'una història. Si el que busques és un regal de darrera hora, mira la pàgina del PDF en dues hores."] },
+    ],
+    faq: [
+      ["Envieu a les Canàries, Ceuta o Melilla?", "De moment només a la península i les Balears."],
+      ["Puc demanar el llibre en català i en castellà alhora?", "Cada conte és en un idioma; si en vols un en cada llengua, són dos contes. El segon té un 20 % de descompte."],
+      ["Quant triga a arribar?", "Al voltant d'una setmana laborable a la península. El PDF, menys de dues hores."],
+      ["El PDF va inclòs amb el llibre?", "Sí. El reps al correu al moment, i el llibre arriba uns dies després."],
+    ],
+    alternativa: "libro-personalizado-tapa-dura-ninos",
+  },
 ];

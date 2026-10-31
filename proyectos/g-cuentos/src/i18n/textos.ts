@@ -52,6 +52,7 @@ export const T = {
       ["¿Lo podéis enviar a otra casa?", "Sí. Al pagar pones la dirección de envío que quieras, por ejemplo la de tus nietos. Enviamos a la península y Baleares."],
       ["¿Qué calidad tiene el libro impreso?", "Tapa dura laminada mate en formato cuadrado de 20 × 20 cm (un poco más estrecho que un folio y bastante más corto) y 30 páginas interiores a todo color en papel estucado satinado de 170 g, encuadernado con lomo recto. Cada página del cuento lleva su ilustración a sangre."],
       ["¿Puedo hacer uno para cada hermano?", "Sí, cada cuento lleva un nombre. El segundo tiene un 20 % de descuento con el código HERMANOS20."],
+      ["¿Cuánto cuesta un cuento de Lunilla?", "PDF 7,90 € · tapa dura 36,90 € con el envío incluido (y el PDF de regalo). IVA incluido, sin suscripción ni letra pequeña, y la vista previa con su nombre es gratis."],
     ],
     form: {
       titulo: "Crea su cuento",
@@ -128,6 +129,7 @@ export const T = {
       ["El podeu enviar a una altra casa?", "Sí. En pagar poses l'adreça d'enviament que vulguis, per exemple la dels teus néts. Enviem a la península i les Balears."],
       ["Quina qualitat té el llibre imprès?", "Tapa dura laminada mat en format quadrat de 20 × 20 cm (una mica més estret que un full i força més curt) i 30 pàgines interiors a tot color en paper estucat setinat de 170 g, enquadernat amb llom recte. Cada pàgina del conte porta la seva il·lustració a sang."],
       ["Puc fer-ne un per a cada germà?", "Sí, cada conte porta un nom. El segon té un 20 % de descompte amb el codi HERMANOS20."],
+      ["Quant costa un conte de Lunilla?", "PDF 7,90 € · tapa dura 36,90 € amb l'enviament inclòs (i el PDF de regal). IVA inclòs, sense subscripció ni lletra petita, i la vista prèvia amb el seu nom és gratis."],
     ],
     form: {
       titulo: "Crea el seu conte",

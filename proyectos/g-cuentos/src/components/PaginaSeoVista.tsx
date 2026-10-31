@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Idioma } from "@/lib/catalogo";
-import { configPais, euros } from "@/lib/config";
+import { configPais, euros, URL_BASE } from "@/lib/config";
 import { rutaSeo, seo } from "@/lib/contenido";
 import { pref, t } from "@/i18n/textos";
 import { Pagina } from "./Marco";
@@ -21,10 +21,21 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
   const c = configPais();
   const alt = pagina.alternativa ? `${rutaSeo(idioma === "ca" ? "es" : "ca")}/${pagina.alternativa}` : undefined;
   const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: pagina.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) };
+  // Mismo Product que la portada (precio y moneda visibles para Google en cada página SEO).
+  const productLd = {
+    "@context": "https://schema.org", "@type": "Product",
+    name: idioma === "ca" ? "Conte infantil personalitzat Lunilla" : "Cuento infantil personalizado Lunilla",
+    description: pagina.descripcion, image: [`${URL_BASE()}${IMAGEN[pagina.coleccion ?? "dormir"]}`],
+    brand: { "@type": "Brand", name: "Lunilla" }, url: `${URL_BASE()}${rutaSeo(idioma)}/${pagina.slug}`,
+    offers: [
+      { "@type": "Offer", price: (c.precios.pdf / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.pdf },
+      { "@type": "Offer", price: (c.precios.tapaDura / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.tapaDura, shippingDetails: { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "EUR" }, shippingDestination: { "@type": "DefinedRegion", addressCountry: "ES" } } },
+    ],
+  };
   const otras = seo(idioma).filter((p) => p.slug !== slug).slice(0, 6);
   return (
     <Pagina idioma={idioma} alternativa={alt}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqLd, productLd]) }} />
       <article className="mx-auto max-w-3xl px-4 py-10">
         <h1 className="text-3xl sm:text-4xl mb-4">{pagina.h1}</h1>
         <p className="text-lg text-suave mb-6">{pagina.intro}</p>
