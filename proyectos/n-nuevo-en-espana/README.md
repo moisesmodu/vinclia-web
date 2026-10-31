@@ -17,7 +17,8 @@ homologación de títulos · carnet de conducir (canje y teórico) · nacionalid
 ## Pila
 Next.js 15 (App Router) + TypeScript + Tailwind 4 · Postgres (Neon) con Prisma · Stripe Checkout + webhooks ·
 Resend · PWA con service worker (guías visitadas disponibles sin conexión) · TWA para Google Play en `twa/`.
-Analítica sin cookies con Plausible (opcional por variable de entorno).
+Analítica sin cookies con Vercel Web Analytics (`@vercel/analytics`, activada en el proyecto) y Plausible opcional por variable de entorno.
+URL pública: **https://tuspapeles.app** (`nuevo-en-espana.vercel.app` sigue sirviendo sin redirección por el webhook de Stripe).
 
 ## Estructura
 ```

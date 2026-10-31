@@ -21,7 +21,8 @@
 
 | Variable | Valor u origen |
 |---|---|
-| `NEXT_PUBLIC_URL` | `https://nuevo-en-espana.vercel.app` (o el dominio final) |
+| `NEXT_PUBLIC_URL` | **`https://tuspapeles.app`** (dominio propio desde el 31/10/2026; es lo que sale en canonical, hreflang, sitemap y robots) |
+| `GOOGLE_SITE_VERIFICATION` | opcional: el valor `google-site-verification=…` de Search Console si se verifica por meta; la alternativa es un registro TXT en los DNS de Vercel del dominio |
 | `DATABASE_URL` | Neon, cadena **con pooling** (host `ep-…-pooler…`) |
 | `DATABASE_URL_UNPOOLED` | Neon, cadena directa |
 | `STRIPE_SECRET_KEY` | `$STRIPE_TEST_SECRET_KEY` mientras se prueba; `$STRIPE_SECRET_KEY` al lanzar |
@@ -144,3 +145,20 @@ Ejecutado el 2026-10-28
 Publicado el commit 9c07f95 (monetizar primero y recuperación). `LEGAL_EMAIL=hola@numimates.com` (DESPLIEGUES.md §6): el aviso legal y la portada ya no muestran el correo personal. `/api/checkout` sigue devolviendo sesiones `cs_test_`.
 
 Ejecutado el 2026-10-28
+
+### Dominio propio y SEO (sesión de marketing, 31-10-2026)
+- URL pública: **https://tuspapeles.app** (y `www.tuspapeles.app` → apex). `NEXT_PUBLIC_URL` apunta ahí, así que canonical,
+  `hreflang`, `sitemap.xml` y `robots.txt` ya salen con el dominio propio.
+- `nuevo-en-espana.vercel.app` **se mantiene sin redirección**: el webhook de Stripe está registrado en esa URL y Stripe no
+  sigue redirecciones. La etiqueta canonical evita el contenido duplicado. Cuando el webhook se registre en el dominio
+  propio, se puede redirigir el `.vercel.app` con un 308 desde la configuración de dominios de Vercel.
+- Search Console: propiedad de tipo **Dominio** `tuspapeles.app`. Verificación por TXT en los DNS de Vercel (API de
+  dominios, `scripts/search-console-txt.mjs` del repositorio) o por la meta `GOOGLE_SITE_VERIFICATION`. Después, enviar
+  `https://tuspapeles.app/sitemap.xml`.
+- Analítica: Vercel Web Analytics está activado en el proyecto y el código carga `@vercel/analytics` (sin cookies; recoge
+  ruta y `utm_*` de cada pieza de marketing). Plausible sigue siendo opcional.
+- Contenido nuevo: pregunta `empadronarse-en-lleida`, variante «En Lleida» en la guía gratis, variante de los 2 años
+  ampliada en la guía de nacionalidad con tarjeta «Prepara el CCSE» (enlace medido a ccsefacil.com), y «¿NIE o TIE?» en
+  la de renovación (es, en). Redesplegar para publicarlo: desde la raíz del repositorio en esta rama,
+  `npx vercel@latest deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID` con el proyecto `nuevo-en-espana`
+  enlazado (Root Directory `proyectos/n-nuevo-en-espana`).
