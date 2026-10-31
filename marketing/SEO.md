@@ -29,7 +29,7 @@ llamada; H1 distinto del título; FAQ con datos estructurados en toda página in
 | 11 | test ccse tarea 1 gobierno | es | `/es/guia/test-ccse-tarea-1-gobierno` |
 | 12 | app para aprobar el ccse | es | `/es` (portada: WebApplication) |
 | 13 | examen ccse precio 85 euros | es | `/es/examen` |
-| 14 | spain citizenship test ccse practice free | en | `/en/guia/test-ccse-gratis` (comprobar que existe en `/en`) |
+| 14 | spain citizenship test ccse practice free | en | `/en/guia/free-ccse-practice-test` (slug real en inglés, comprobado el 31/10) |
 | 15 | ccse exam questions in english explained | en | `/en` |
 | 16 | امتحان الجنسية الاسبانية ccse أسئلة | ar | `/ar` y `/ar/guia/test-ccse-gratis` |
 | 17 | examen ccse en arabe | es | `/ar` (añadir H1 bilingüe; ver PR) |
@@ -214,14 +214,14 @@ son las de mayor estacionalidad para noviembre y diciembre.
 
 | Web | Dominio | Canonical y sitemap en producción | Analítica en el código | Qué falta |
 |---|---|---|---|---|
-| A · CCSE en tu idioma | ccsefacil.com | ✅ ya con el dominio (sesión del Mac, 31/10) | commit SEO en `claude/a-ccse` | redesplegar; Search Console |
-| N · Nuevo en España | tuspapeles.app | ✅ | commit SEO en `claude/n-nuevo-en-espana` | redesplegar; Search Console |
-| B · Plaça | oposita.digital | ❌ sigue `placa-oposicions.vercel.app` | commit SEO en `claude/proyecto-b-oposiciones` | `NEXT_PUBLIC_URL=https://oposita.digital` en Vercel + redesplegar; Search Console |
-| G · Lunilla | lunilla.cat | ✅ | commit SEO en `claude/g-cuentos` | redesplegar; Search Console |
-| P · NetoClaro | netoclaro.app | ✅ | commit SEO en `claude/p-webs-adsense-fabrica` | redesplegar; Search Console; AdSense |
-| P · ImpuestoClaro | impuestoclaro.es | ✅ | ídem | redesplegar; Search Console; AdSense |
-| Juegos · Nuvolet | (sin dominio) juegos-casuales.vercel.app | ✅ | commit SEO en `claude/juegos-primer-juego` | redesplegar; Search Console con la URL de Vercel |
-| M · Aprova | (sin dominio) aprova-catala.vercel.app | ✅ | commit SEO en `claude/m-catala` | redesplegar; Search Console tras la validez |
+| A · CCSE en tu idioma | ccsefacil.com | ✅ ya con el dominio (sesión del Mac, 31/10) | ✅ commits `3767b7b`, `dd3cee4` en `claude/a-ccse`: analítica, FAQPage en las 22 guías, venta cruzada medible a tuspapeles.app, guías «Examen CCSE noviembre 2026» e «Inscripción CCSE enero 2027» (build 464 páginas OK) | redesplegar; Search Console |
+| N · Nuevo en España | tuspapeles.app | ✅ | ✅ commits `97c99e8`…`c643540` en `claude/n-nuevo-en-espana`: analítica, «Empadronarse en Lleida», tarjeta «Prepara el CCSE» → ccsefacil.com, sección de los 2 años, FAQ NIE/TIE (build OK, validar OK) | redesplegar; Search Console |
+| B · Plaça | oposita.digital | ❌ sigue `placa-oposicions.vercel.app` | ✅ commit `1daeac8` en `claude/proyecto-b-oposiciones`: analítica, blog con «Examen de Mossos 2027», FAQ del simulacre, bloque «Nivell de català» → Aprova en las 5 oposiciones, dominio de reserva oposita.digital (build 275 páginas OK) | `NEXT_PUBLIC_URL=https://oposita.digital` en Vercel + redesplegar; Search Console |
+| G · Lunilla | lunilla.cat | ✅ | ✅ commits `fcc17b8`…`8157185` en `claude/g-cuentos`: analítica, «Regalos de Navidad 3 a 6 años», gemela catalana de tapa dura con hreflang, `Product` con precios en todas las páginas SEO, FAQ de precio en portada (build 62 páginas OK) | redesplegar; Search Console |
+| P · NetoClaro | netoclaro.app | ✅ | ✅ commits `98eb08f`, `dc76976` en `claude/p-webs-adsense-fabrica`: analítica condicionada a Vercel, verificación, guía «Paga extra de Navidad 2026» es/ca en la calculadora (703 páginas, 479 tests OK) | redesplegar; Search Console; AdSense |
+| P · ImpuestoClaro | impuestoclaro.es | ✅ | ídem (283 páginas OK) | redesplegar; Search Console; AdSense |
+| Juegos · Nuvolet | (sin dominio) juegos-casuales.vercel.app | ✅ | ✅ commits `dabdb88`, `11bfaba` en `claude/juegos-primer-juego`: analítica, canonical y Open Graph en las 18 páginas de juego, Snow Plow con «Christmas» en el título, `/about/` con Organization (Lleida), `/es/juegos-para-chromebook/`, sitemap de 129 URL (build OK) | redesplegar; Search Console con la URL de Vercel |
+| M · Aprova | (sin dominio) aprova-catala.vercel.app | ✅ | ✅ commit `3301ad8` en `claude/m-catala`: analítica, guía «Suspès el C1: què fer», título del diagnóstico como «test de nivell gratis», enlace a Plaça en 4 guías (31 páginas SEO, 17 tests OK) | redesplegar; Search Console tras la validez |
 
 Los `*.vercel.app` **no se redirigen** al dominio: la app Android de A (TWA con assetlinks) y los webhooks de Stripe de
 A, N, B y G apuntan a esas direcciones y un 301 los rompería. El `canonical` y el sitemap con el dominio bastan para que

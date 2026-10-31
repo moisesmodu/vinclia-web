@@ -89,9 +89,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://ccsefacil.com (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica Vercel sin cookies, FAQPage en las 22 guías, venta cruzada medible a tuspapeles.app, guías «Examen CCSE noviembre 2026» e «Inscripción CCSE enero 2027» (commits 3767b7b y dd3cee4 en la rama del PR #2; build OK). Pendiente: redesplegar y Search Console"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Aplicar la identidad de marca de MARCAS.md",
@@ -380,9 +385,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://tuspapeles.app (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica, página «Empadronarse en Lleida», tarjeta «Prepara el CCSE» hacia ccsefacil.com, sección de nacionalidad en 2 años, FAQ NIE/TIE (commits 97c99e8…c643540 en la rama del PR #3; build OK). Pendiente: redesplegar y Search Console"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
@@ -681,9 +691,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://oposita.digital (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica, blog con «Com és l'examen de Mossos 2027», FAQ del simulacre, bloque de nivel de català con enlace a Aprova en las 5 oposiciones, dominio oposita.digital como reserva (commit 1daeac8 en la rama del PR #7; build OK). Pendiente: NEXT_PUBLIC_URL=https://oposita.digital en Vercel, redesplegar y Search Console"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
@@ -1000,9 +1015,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Marketing: itch.io devlog, r/WebGames, r/playmygame, foro de Phaser, Discord de CrazyGames, hilo de lanzamiento en X/Bluesky y vídeo 1, listos para aprobar; Snow Plow a portales antes del 20/11"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica, canonical y Open Graph en las 18 páginas de juego, Snow Plow con «Christmas» en el título, página About (Lleida), página en castellano de juegos para Chromebook, sitemap de 129 URL (commits dabdb88 y 11bfaba en la rama del PR #4; build OK). Pendiente: redesplegar"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
@@ -1355,9 +1375,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Marketing: semana 1 dedicada a la prueba de validez (correos al CNL y academias de Lleida), r/catalan, Telegram de opositores, artículo «Suspès el C1: què fer» y vídeo 1; no se vende hasta superar la validez"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica, guía «Suspès el C1 de català: què fer», título del diagnóstico como test de nivel gratis, enlace a los tests de Plaça en 4 guías (commit 3301ad8 en la rama del PR #8; tests OK). Pendiente: redesplegar"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
@@ -1791,9 +1816,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://lunilla.cat (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica, artículo «Regalos de Navidad 3 a 6 años que no son juguetes», gemela catalana de tapa dura con hreflang, Product con precios en todas las páginas SEO, FAQ de precio en portada (commits fcc17b8…8157185 en la rama del PR #5; build OK). Pendiente: redesplegar y Search Console"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
@@ -3215,9 +3245,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Dominio propio activo con HTTPS: https://netoclaro.app y https://impuestoclaro.es (zona DNS en Vercel, www → apex)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "SEO (31/10): analítica condicionada a Vercel, verificación de Search Console por variable, guía «Paga extra de Navidad 2026» en la calculadora (es/ca) (commits 98eb08f y dc76976 en la rama del PR #6; 479 tests OK). Pendiente: redesplegar netoclaro e impuestoclaro, Search Console y solicitar AdSense con los dominios"
       }
     ],
     "proximos": [
+      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
       "Correo de contacto hola@numimates.com y redespliegue",
