@@ -131,7 +131,11 @@
    "They work with the trackpad, the keyboard or the touch screen."
   ],
   "game": null,
-  "hub": "chromebook-games"
+  "hub": "chromebook-games",
+  "alt": {
+   "en": "chromebook-games",
+   "es": "es/juegos-para-chromebook"
+  }
  },
  {
   "path": "games-without-text",
@@ -284,5 +288,59 @@
   ],
   "game": null,
   "hub": "puzzle-games"
+ },
+ {
+  "path": "about",
+  "title": "About Nuvolet Games – Tiny Games From Lleida",
+  "description": "Nuvolet Games is a small studio in Lleida (Catalonia, Spain) making one-button browser games: no download, no sign-up, playable on Chromebooks and phones.",
+  "h1": "About Nuvolet Games",
+  "body": [
+   "Nuvolet Games is a small game studio based in <b>Lleida, Catalonia (Spain)</b>. Our motto is <b>Tiny games, big smiles</b>: every game can be understood in three seconds, played in one to three minutes and restarted with a single tap.",
+   "What our games have in common: <b>one button</b> (hold, release, tap), <b>no text</b> inside the game so anyone can play in any language, <b>no download and no sign-up</b>, and a size under 2 MB so they run smoothly on Chromebooks, school laptops, phones and tablets. They are built with Phaser 3 and TypeScript, with fixed-step physics so they behave the same on every device.",
+   "Where to play: right here on our site, where every title is free, and on game portals such as CrazyGames, Poki and <a href=\"https://nuvoletgames.itch.io\" rel=\"noopener\">itch.io</a>. If you run a portal or a school and want to feature a game, write to us.",
+   "How we make them: a small team with help from artificial intelligence for art, sound and parts of the code; a person reviews and tests every build before it ships. We say so because we think players deserve to know. Our games do not collect personal data and have no in-game purchases; the free web versions show no ads, and portal versions use the portal’s own ad system.",
+   "Contact: <a href=\"mailto:hola@numimates.com\">hola@numimates.com</a>. <a href=\"../\">Browse all games</a>."
+  ],
+  "game": null,
+  "hub": null,
+  "jsonld": {
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "name": "Nuvolet Games",
+   "url": "{{site}}/",
+   "logo": "{{site}}/marca/juegos-icono.svg",
+   "email": "hola@numimates.com",
+   "slogan": "Tiny games, big smiles.",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lleida",
+    "addressRegion": "Catalonia",
+    "addressCountry": "ES"
+   },
+   "sameAs": [
+    "https://nuvoletgames.itch.io"
+   ]
+  }
+ },
+ {
+  "path": "es/juegos-para-chromebook",
+  "lang": "es",
+  "alt": {
+   "en": "chromebook-games",
+   "es": "es/juegos-para-chromebook"
+  },
+  "title": "Juegos para Chromebook gratis y sin descargar (2026)",
+  "description": "18 juegos ligeros que funcionan bien en Chromebook: sin descargar, sin registro, de un solo botón y de 1 a 3 minutos. Para clase, el recreo y el sofá.",
+  "h1": "Juegos para Chromebook: gratis, sin descargar y de un solo botón",
+  "body": [
+   "Un Chromebook no es una consola: tiene poca memoria, un procesador modesto y muchas veces un filtro de red del colegio. Por eso la mayoría de juegos de navegador van a tirones o directamente no cargan. Los de Nuvolet Games están hechos al revés: <b>menos de 2 MB</b> por juego, probados con el procesador ralentizado y sin ninguna descarga ni instalación. Abres la página, pulsas y juegas.",
+   "Todos se controlan <b>con un solo botón</b>: el trackpad, la barra espaciadora o la pantalla táctil si tu Chromebook la tiene. No hay texto dentro del juego, así que da igual el idioma, y una partida dura entre uno y tres minutos: lo justo para un descanso sin que se te vaya la hora.",
+   "<b>Qué encontrarás en la lista de abajo.</b> Juegos de conducir con físicas como Egg Truck (lleva un huevo sin romperlo), Bike Flip (volteretas que dan turbo) o Snow Plow (empuja regalos hasta el trineo en Navidad); juegos de apilar y encajar como Jelly Stack y Jelly Merge; de habilidad como Rocket Hop, Hook Hop, Paper Glide y Hoop Bounce; de puzle con físicas como Rope Cut, Pin Rescue y Trick Floor; de reflejos como Lane Dash y Paint Grab; de gestión ligera como Fruit Stand, Tow Truck y Tiny Harbor; y de deporte con Penalty Season. Todos gratis y sin anuncios en esta web.",
+   "<b>Para profesores y familias.</b> Los juegos no piden registro ni recogen datos personales, no tienen compras ni chat, y no hay texto que leer, así que sirven para alumnos de cualquier edad y nivel de lectura. Cada juego tiene una página «for schools» en inglés con ideas para usarlo en clase (física del movimiento, cálculo mental de trayectorias, turnos cortos). Si tu red bloquea sitios de juegos, el administrador solo tiene que permitir este dominio.",
+   "<b>Si algo va lento.</b> Cierra las pestañas que no uses, desactiva las extensiones pesadas y comprueba que el Chromebook no esté en modo de ahorro de energía. Nuestros juegos ajustan solos la calidad de los efectos cuando notan que el dispositivo no llega. Si aun así un juego no carga, escríbenos a <a href=\"mailto:hola@numimates.com\">hola@numimates.com</a> y dinos el modelo: lo probamos.",
+   "Nuvolet Games es un pequeño estudio de Lleida. Los juegos se hacen con ayuda de inteligencia artificial en el arte y parte del código, y una persona revisa y prueba cada versión antes de publicarla. <a href=\"../../\">Ver todos los juegos</a> · <a href=\"../../chromebook-games/\">This page in English</a>."
+  ],
+  "game": null,
+  "hub": "chromebook-games"
  }
 ]
