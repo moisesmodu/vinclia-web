@@ -22,16 +22,48 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
-      "texto": "Sesión del Mac: abrir la red del entorno en la nube (api.stripe.com, api.vercel.com, console.neon.tech, api.resend.com), crear los accesos y guardarlos como secretos del entorno; después ejecutar el DESPLIEGUE.md de N (PR #3) y el de A",
-      "donde": "DESPLIEGUES.md"
+      "texto": "1 · A · Google Play: crear la app «Test CCSE Nacionalidad 2026» en Play Console y subir el paquete que te deja la sesión (prueba interna primero). 5 min",
+      "donde": "https://play.google.com/console"
     },
     {
-      "texto": "Confirmar escenario de marketing: S0 sin anuncios o S1 prudente",
+      "texto": "2 · A, N, B, G · Pago real de prueba: cuando el Mac active Stripe en modo real, hacer un pago con tu tarjeta en cada web (se reembolsa al momento). 2 min por proyecto",
+      "donde": "panel → Dónde ver cada proyecto"
+    },
+    {
+      "texto": "3 · B · Aprobar los 5 mensajes para los grupos de Telegram/WhatsApp de las oposiciones (MONETIZACION.md §4 del PR #7). 5 min",
+      "donde": "https://github.com/moisesmodu/vinclia-web/pull/7"
+    },
+    {
+      "texto": "4 · G · Abrir la cuenta de Gelato a tu nombre y crear una clave de API (Developer → API keys); guardarla en los secretos del entorno como GELATO_API_KEY. 5 min",
+      "donde": "https://dashboard.gelato.com/signup"
+    },
+    {
+      "texto": "5 · Dominios (≈12 €/año cada uno, en vercel.com/domains para que el Mac los conecte solo): lunilla.es, netoclaro.es, impuestoclaro.es; opcionales placa.cat, ccseentuidioma.es, nuevoenespana.app. 10 min",
+      "donde": "https://vercel.com/domains"
+    },
+    {
+      "texto": "6 · P · AdSense: añadir netoclaro.es, copiar el ca-pub y crear el mensaje RGPD (Privacidad y mensajes); después Search Console con los dos dominios. 15 min",
+      "donde": "https://adsense.google.com/start/"
+    },
+    {
+      "texto": "7 · Juegos · Cuentas de desarrollador en CrazyGames, Poki, itch.io, GameDistribution y GameMonetize, y enviar los paquetes con los textos de FICHAS.md. 10 min por portal",
+      "donde": "https://developer.crazygames.com/"
+    },
+    {
+      "texto": "8 · J · Cuenta de instructor en Udemy y subir los cursos cuando la sesión los entregue. 10 min + 40 min por curso",
+      "donde": "https://www.udemy.com/teaching/"
+    },
+    {
+      "texto": "9 · Marketing · Pegar el prompt de PROMPTS-SESIONES.md en la sesión «Marketing de la cartera» y aprobar cada semana los mensajes de marketing/APROBAR.md",
+      "donde": "PROMPTS-SESIONES.md"
+    },
+    {
+      "texto": "10 · Vercel · Poner tu NIF-IVA en Billing → Tax ID para dejar de pagar el 21 % de IVA por adelantado (si estás en el ROI)",
+      "donde": "https://vercel.com/account/billing"
+    },
+    {
+      "texto": "Decisiones sin prisa: escenario de marketing S0/S1 (VIABILIDAD §5); afiliados de A (30 % bruto o neto); créditos de Higgsfield para G en diciembre; repo privado para A",
       "donde": "VIABILIDAD.md §5"
-    },
-    {
-      "texto": "Cuenta de desarrollador de Google Play (25 $) y cuenta en Gelato: solo cuando A y G estén listos para publicar",
-      "donde": "https://play.google.com/console/signup"
     }
   ],
   "reglas": [
@@ -59,5 +91,6 @@
       "G Cuentos (solo si empieza esta semana)"
     ],
     "fecha": "2026-10-24"
-  }
+  },
+  "panelUrl": ""
 }
