@@ -16,7 +16,9 @@ desplegar desde la nube. PR #6, rama `claude/p-webs-adsense-fabrica`.
 |---|---|---|
 | `SITIO` | `nomina` o `impuestos` | sí |
 | `LEGAL_NOM`, `LEGAL_NIF`, `LEGAL_EMAIL`, `LEGAL_ADRECA` | secretos del titular (DESPLIEGUES.md §1). Rellenan el aviso legal; sin ellos sale `PENDIENTE-NIF` | sí |
-| `SITE_URL` | `https://netoclaro.pages.dev` o `https://impuestoclaro.pages.dev` hasta tener dominio; después se borra | hasta tener dominio |
+| `SITE_URL` | **`https://netoclaro.app`** (nomina) o **`https://impuestoclaro.es`** (impuestos): dominios propios activos desde el 31/10/2026; son la URL canónica, del sitemap y de `hreflang`. Los `*.vercel.app` siguen sirviendo **sin redirección** (la canónica ya apunta al dominio) | sí |
+| `GOOGLE_SITE_VERIFICATION` (o `GSC_VERIFICACION`) | Valor de la metaetiqueta `google-site-verification` de Search Console, **uno por sitio** (propiedad de prefijo de URL). Si Moisés verifica por DNS (propiedad de dominio, TXT en Vercel DNS) no hace falta | no |
+| `VERCEL_ANALYTICS` | Vercel Web Analytics (sin cookies) se carga solo cuando el build corre en Vercel (`VERCEL=1`); `1` lo fuerza y `0` lo apaga. Está activado en el panel de los dos proyectos | no |
 | `UMAMI_ID` | ID de cada sitio en [cloud.umami.is](https://cloud.umami.is), gratis | no |
 | `ADSENSE_CLIENT` | `ca-pub-…` que mande Moisés | cuando lo mande |
 | `ADSENSE_SLOT_RESULTADO`, `ADSENSE_SLOT_FINAL` | IDs de los bloques «bajo-resultado» y «fin-contenido», que se crean en AdSense cuando apruebe la cuenta | cuando existan |
@@ -191,3 +193,31 @@ NetoClaro y unas 700 páginas nuevas en NetoClaro, ImpuestoClaro y ChequeClaro.
 - Panel: `enlaces.HogarClaro` añadido en la ficha `p-webs-adsense`.
 
 Ejecutado el 2026-10-31
+
+## SEO del 31/10/2026 (sesión de marketing): dominios propios, analítica y verificación
+
+Hecho en el código (rama `claude/p-webs-adsense-fabrica`):
+
+- **Vercel Web Analytics**: `src/layouts/Base.astro` carga `/_vercel/insights/script.js` (diferido, sin cookies) cuando el
+  build corre en Vercel. Ya está activado en el panel de `netoclaro` e `impuestoclaro`; empieza a contar visitas y
+  `utm_*` en cuanto se redespliegue.
+- **Search Console**: la metaetiqueta sale con `GOOGLE_SITE_VERIFICATION` (o la antigua `GSC_VERIFICACION`). Alternativa
+  sin redespliegue: propiedad de **dominio** y TXT en los DNS de Vercel (`scripts/search-console-txt.mjs` de la raíz del
+  repositorio). Después: Search Console → Sitemaps → `https://netoclaro.app/sitemap.xml` y
+  `https://impuestoclaro.es/sitemap.xml`.
+- **Contenido**: la calculadora de paga extra (`/calculadora-paga-extra/` y `/ca/calculadora-paga-extra/`) lleva la guía
+  «Paga extra de Navidad 2026» con ejemplo, 4 FAQ nuevas y título con el año.
+- **AdSense**: con los dominios propios ya se puede solicitar la cuenta para `netoclaro.app` (y después
+  `impuestoclaro.es`). Cuando llegue el `ca-pub-…`: `ADSENSE_CLIENT` en production y redesplegar; nada más.
+
+Redespliegue pendiente (sesión del Mac o quien tenga permiso de despliegue), desde la raíz del repositorio en esta rama:
+
+```bash
+git fetch origin && git checkout claude/p-webs-adsense-fabrica
+T="--token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID"
+for n in netoclaro impuestoclaro; do
+  npx vercel@latest link --yes --project $n $T && npx vercel@latest deploy --prod --yes $T && rm -rf .vercel
+done
+# Comprobar: la portada carga /_vercel/insights/script.js y la canónica es el dominio propio
+curl -s https://netoclaro.app/ | grep -o '_vercel/insights[^"]*\|<link rel="canonical"[^>]*>'
+```
