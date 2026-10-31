@@ -81,3 +81,8 @@ Ejecutado el 2026-10-28
   los tests de Plaça (`utm_source=aprova`) al final de las guías de Mossos, TCAI, Generalitat y Bombers. Requiere
   `npm run compilar` (lo hace el build).
 
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+Publicado el commit 3301ad8 en https://aprova-catala.vercel.app (proyecto `aprova-catala`, desde la raíz del repo): `/ca/guia/suspes-c1-catala-que-fer` responde. `@vercel/analytics` va en el código. Pendiente (Moisés): el dominio aprova.cat y Search Console.
+
+Ejecutado el 2026-10-31
