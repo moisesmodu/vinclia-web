@@ -1,0 +1,7 @@
+---
+// Calculadoras embebibles en catalán: /ca/embed/<slug>/ (solo en los sitios con catalán)
+import EmbedPagina from '../../../components/EmbedPagina.astro';
+import { rutasEmbed } from '../../../lib/widget';
+export const getStaticPaths = () => rutasEmbed('ca').map((r) => ({ params: { slug: r.slug }, props: { r } }));
+---
+<EmbedPagina r={Astro.props.r} />

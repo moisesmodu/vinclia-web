@@ -4,3 +4,17 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: frame-ancestors 'self'
+# Widget para profesionales: las páginas /embed/ se pueden incrustar en cualquier web (el resto, solo en el propio sitio)
+/embed/*
+  ! X-Frame-Options
+  ! Content-Security-Policy
+  Content-Security-Policy: frame-ancestors *
+/ca/embed/*
+  ! X-Frame-Options
+  ! Content-Security-Policy
+  Content-Security-Policy: frame-ancestors *
+/embed.js
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *

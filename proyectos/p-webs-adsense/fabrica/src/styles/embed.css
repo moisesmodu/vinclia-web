@@ -1,0 +1,80 @@
+/* Widget embebible (/embed/…) y página «Para profesionales». No cambia calc.css: solo ajusta la calculadora
+   para vivir dentro de un iframe (sin cabecera, sin pie, sin barra fija ni botones de compartir) y pinta lo propio. */
+
+/* ——— Página embed ——— */
+html.emb-html{background:var(--fondo);overflow-x:hidden}
+html.emb-ajustado{overflow:hidden}
+.emb-html body{background:var(--fondo);margin:0;overflow-x:hidden}
+.emb{max-width:1120px;margin:0 auto;padding:8px}
+.emb-t{display:flex;align-items:center;gap:8px;margin:0 2px 8px;font-size:1rem;line-height:1.3;letter-spacing:-.01em}
+.emb-t svg{color:var(--primario);flex:none}
+.emb .calc{box-shadow:none}
+.emb .calc-acciones,.emb .calc-fija{display:none!important}
+.emb-pie{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;margin:8px 4px 0;font-size:.75rem;line-height:1.4;color:var(--suave)}
+.emb-pie p{margin:0}
+.emb-firma a{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--primario);text-decoration:none;padding:6px 0;min-height:24px}
+.emb-firma a:hover{text-decoration:underline}
+.emb-firma svg{flex:none}
+.emb-logo{margin:0 2px 10px}
+.emb-logo img{height:28px;width:auto;max-width:220px;object-fit:contain}
+:root[data-tema=oscuro] .emb-firma a{color:color-mix(in srgb,var(--primario) 45%,#fff)}
+
+/* ——— Para profesionales ——— */
+.pro-heroe{padding:28px 0 8px;max-width:760px}
+.pro-heroe h1{font-size:clamp(1.9rem,1.3rem + 2.6vw,2.9rem);letter-spacing:-.03em;line-height:1.08}
+.pro-heroe .intro{font-size:1.1rem;color:var(--suave);max-width:62ch}
+.pro-cta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+.pro-cta .btn-sec{text-decoration:none}
+.pro-ventajas{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));list-style:none;padding:0;margin:26px 0}
+.pro-ventajas li{background:var(--superficie);border:1px solid var(--borde);border-radius:18px;padding:16px}
+.pro-ventajas strong{display:block;font-family:Manrope,Inter,system-ui,sans-serif;font-size:1.02rem;margin:8px 0 4px}
+.pro-ventajas p{margin:0;color:var(--suave);font-size:.93rem}
+.pro-ventajas svg{color:var(--primario)}
+.pro-sec{margin:44px 0 0;scroll-margin-top:84px}
+.pro-sec>p{max-width:68ch}
+.pro-demo{display:grid;gap:18px}
+@media (min-width:1000px){.pro-demo{grid-template-columns:1fr 1fr;align-items:start}}
+.pro-demo figure{margin:0;min-width:0}
+.pro-demo figcaption{font-size:.85rem;color:var(--suave);margin:0 0 6px}
+.marco{border:1px dashed var(--borde);border-radius:18px;padding:6px;background:var(--tenue);min-height:200px}
+.marco>[data-claro]{min-height:inherit}
+
+/* Configurador */
+.conf{display:grid;gap:18px;background:var(--superficie);border:1px solid var(--borde);border-radius:22px;padding:16px}
+@media (min-width:900px){.conf{grid-template-columns:minmax(0,5fr) minmax(0,7fr);padding:22px}}
+.conf-form{display:grid;gap:14px;align-content:start}
+.conf-form label,.conf-form legend{display:block;font-weight:600;font-size:.92rem;margin:0 0 6px}
+.conf-form fieldset{border:0;padding:0;margin:0}
+.conf-form select,.conf-form input[type=text]{width:100%;font:inherit;font-size:1rem;color:var(--tinta);background:var(--fondo);border:1.5px solid var(--borde);border-radius:12px;padding:.65rem .8rem;min-height:48px}
+.conf-form input[type=color]{width:56px;height:44px;padding:2px;border:1.5px solid var(--borde);border-radius:10px;background:var(--fondo);cursor:pointer}
+.conf-color{display:flex;align-items:center;gap:10px}
+.conf-color code{font-size:.9rem}
+.conf-ops{display:flex;flex-wrap:wrap;gap:6px}
+.conf-ops label{display:inline-flex;align-items:center;gap:6px;font-weight:400;margin:0;padding:.45rem .8rem;border:1.5px solid var(--borde);border-radius:999px;cursor:pointer;min-height:44px}
+.conf-ops label:has(input:checked){border-color:var(--primario);background:color-mix(in srgb,var(--primario) 10%,var(--superficie))}
+.conf-ayuda{font-size:.82rem;color:var(--suave);margin:4px 0 0}
+.conf-out{display:grid;gap:12px;min-width:0}
+.conf-cod{position:relative}
+.conf-cod p{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 6px;font-weight:600;font-size:.92rem}
+.conf-cod textarea{width:100%;min-height:118px;resize:vertical;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--tinta);background:var(--tenue);border:1px solid var(--borde);border-radius:12px;padding:10px 12px}
+.conf-cod button{font:inherit;font-size:.85rem;font-weight:600;cursor:pointer;color:var(--primario);background:var(--superficie);border:1px solid var(--borde);border-radius:999px;padding:.4rem .9rem;min-height:40px}
+.conf-cod button[data-ok]{color:#fff;background:var(--primario);border-color:var(--primario)}
+.conf-vista{border:1px dashed var(--borde);border-radius:16px;padding:6px;background:var(--tenue);min-height:420px}
+
+/* Planes */
+.planes{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));list-style:none;padding:0;margin:0}
+.plan{display:flex;flex-direction:column;gap:10px;background:var(--superficie);border:1px solid var(--borde);border-radius:22px;padding:20px}
+.plan.top{border:2px solid var(--primario);box-shadow:0 24px 48px -32px color-mix(in srgb,var(--primario) 70%,transparent)}
+.plan h3{margin:0;font-size:1.2rem}
+.plan .et{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--primario);border-radius:999px;padding:.2rem .6rem}
+.precio{margin:0;font-family:Manrope,Inter,system-ui,sans-serif;font-size:2rem;font-weight:700;line-height:1.1;letter-spacing:-.02em}
+.precio small{font-family:Inter,system-ui,sans-serif;font-size:.88rem;font-weight:400;color:var(--suave);letter-spacing:0}
+.plan .iva{margin:-4px 0 0;font-size:.82rem;color:var(--suave)}
+.plan ul{margin:0;padding:0 0 0 1.1rem;font-size:.94rem}
+.plan li{margin:.25rem 0}
+.plan .acc{margin-top:auto;display:grid;gap:8px;padding-top:6px}
+.plan .acc .btn,.plan .acc .btn-sec{text-align:center;text-decoration:none;justify-content:center}
+.sello-pro{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;margin:16px 0 0;font-size:.86rem;color:var(--suave)}
+.pro-cond{max-width:760px}
+.pro-cond h3{margin-top:1.4em}
+@media (prefers-color-scheme:dark){.pro-ventajas svg,.conf-cod button{color:color-mix(in srgb,var(--primario) 45%,#fff)}}
