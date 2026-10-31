@@ -221,3 +221,52 @@ describe.skipIf(!hayLibreOffice)('Comparador de hipotecas: el Excel reproduce lo
     cerca(r.AA_COMISION, a.comision, 0.01);
   });
 });
+
+/* ------------------------------------------------------------------ Planificador de taxes 2026 (EE. UU.) */
+
+const PUS = params('us', 2026);
+const paisUS = JSON.parse(readFileSync('params/us/pais.json', 'utf8'));
+const EC_ES: Record<EstadoCivil, string> = { single: 'Soltero (single)', mfj: 'Casado, declaración conjunta (married filing jointly)', hoh: 'Cabeza de familia (head of household)', mfs: 'Casado, declaración separada (married filing separately)' };
+interface CasoUS { id: string; ec: EstadoCivil; estado: string; sal: number; retFed: number; retEst: number; ing: number; gas: number; otros: number; hijos: number; otrosDep: number; prevTax: number; prevAgi: number }
+const US: CasoUS[] = [
+  { id: 'us-single-california', ec: 'single', estado: 'CA', sal: 45000, retFed: 4000, retEst: 1200, ing: 30000, gas: 6000, otros: 0, hijos: 0, otrosDep: 0, prevTax: 7000, prevAgi: 60000 },
+  { id: 'us-conjunta-nueva-york-hijos', ec: 'mfj', estado: 'NY', sal: 90000, retFed: 6000, retEst: 3000, ing: 60000, gas: 10000, otros: 1200, hijos: 2, otrosDep: 1, prevTax: 18000, prevAgi: 160000 },
+  { id: 'us-cabeza-familia-nueva-jersey-solo-1099', ec: 'hoh', estado: 'NJ', sal: 0, retFed: 0, retEst: 0, ing: 120000, gas: 15000, otros: 0, hijos: 1, otrosDep: 0, prevTax: 0, prevAgi: 0 },
+];
+
+describe.skipIf(!hayLibreOffice)('Planificador de taxes 2026: el Excel reproduce los motores', () => {
+  let R: Record<string, Record<string, any>> = {};
+  beforeAll(() => {
+    R = recalcular(US.map((c) => ({
+      id: c.id, xlsx: xlsx('planificador-taxes-2026'),
+      poner: { EC_TXT: EC_ES[c.ec], ESTADO_NOM: paisUS.estados[c.estado].nombre, SAL: c.sal, RET_FED: c.retFed, RET_EST: c.retEst, ING1099: c.ing, GAS1099: c.gas, OTROS: c.otros, HIJOS: c.hijos, OTROSDEP: c.otrosDep, PREV_TAX: c.prevTax, PREV_AGI: c.prevAgi },
+      leer: ['FED_SE', 'FED_AGI', 'FED_QBI', 'FED_IMPONIBLE', 'FED_ESCALA', 'FED_CTCNO', 'FED_CTCRE', 'FED_TOTAL', 'FED_RESULTADO', 'EST_IMPUESTO_R', 'PE_FALTA_R', 'PE_MINIMO_R', 'VENCE_2026_1', 'VENCE_2026_4', 'VENCE_2027_4'],
+    })));
+  }, 600000);
+
+  for (const c of US) {
+    it(`${c.id}: federal (1040 y Schedule SE), estatal y pagos estimados`, () => {
+      const r = R[c.id];
+      const gan = Math.max(0, c.ing - c.gas);
+      const f = impuestoFederal({ ec: c.ec, salarios: c.sal, gananciaAutonomo: gan, otrosIngresos: c.otros, hijos: c.hijos, otrosDependientes: c.otrosDep, retenido: c.retFed, anio: 2026 }, PUS);
+      cerca(r.FED_SE, f.se.total, 0.01);
+      cerca(r.FED_AGI, f.agi, 0.01);
+      cerca(r.FED_QBI, f.qbi, 0.01);
+      cerca(r.FED_IMPONIBLE, f.imponible, 0.01);
+      cerca(r.FED_ESCALA, f.impuestoEscala, 0.01);
+      cerca(r.FED_CTCNO, f.ctc.noReembolsable, 0.01);
+      cerca(r.FED_CTCRE, f.ctc.reembolsable, 0.01);
+      cerca(r.FED_TOTAL, f.impuestoTotal, 0.01);
+      cerca(r.FED_RESULTADO, f.resultado, 0.01);
+      const e = impuestoEstatal({ estado: c.estado, ec: c.ec, agi: f.agi, salarioBruto: c.sal + gan, imponibleFederal: f.imponible, dependientes: c.hijos + c.otrosDep }, PUS.fiscal);
+      cerca(r.EST_IMPUESTO_R, e.impuesto, 0.01);
+      cerca(r.PE_FALTA_R, Math.max(0, f.impuestoTotal - f.pagos), 0.01);
+      const ps = PUS.fiscal.pagos_estimados.puerto_seguro;
+      const anterior = c.prevTax * (c.prevAgi > (c.ec === 'mfs' ? ps.agi_alto_mfs : ps.agi_alto) ? ps.pct_anio_anterior_agi_alto : ps.pct_anio_anterior) / 100;
+      const requerido = c.prevTax > 0 ? Math.min(f.impuestoTotal * ps.pct_anio_actual / 100, anterior) : f.impuestoTotal * ps.pct_anio_actual / 100;
+      cerca(r.PE_MINIMO_R, Math.max(0, requerido - f.pagos), 0.01);
+      // Vencimientos del Form 1040-ES (Pub. 509): 15/4/2026, 15/1/2027 y, para 2027, 18/1/2028 (15 sábado y 17 MLK Day)
+      expect([r.VENCE_2026_1, r.VENCE_2026_4, r.VENCE_2027_4]).toEqual(['2026-04-15', '2027-01-15', '2028-01-18']);
+    });
+  }
+});
