@@ -94,6 +94,7 @@
       "url": "https://www.irs.gov/pub/irs-drop/n-25-55.pdf"
     }
   },
+  "pagos_estimados": {"vencimientos": ["04-15", "06-15", "09-15", "01-15"], "regla_dia": "Si el día 15 cae en sábado, domingo o festivo federal (o el Emancipation Day de Washington D. C. en abril), vence el siguiente día hábil.", "umbral_deber": 1000, "puerto_seguro": {"pct_anio_actual": 90, "pct_anio_anterior": 100, "pct_anio_anterior_agi_alto": 110, "agi_alto": 150000, "agi_alto_mfs": 75000}, "verificado": true, "nota": "Form 1040-ES: pagos estimados si esperas deber 1.000 $ o más tras retenciones y créditos. Sin multa si pagas a tiempo al menos el menor entre el 90 % del impuesto de este año y el 100 % del del año pasado (110 % si tu AGI pasó de 150.000 $, 75.000 $ casado por separado).", "fuente": {"nombre": "IRS: Form 1040-ES (2026) y Publicación 505", "url": "https://www.irs.gov/forms-pubs/about-form-1040-es"}},
   "estados": {
     "CA": {
       "tipo": "progresivo",

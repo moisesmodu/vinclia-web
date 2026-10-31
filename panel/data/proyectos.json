@@ -3150,7 +3150,7 @@
     "resumen": "Catálogo de 7 sitios de herramientas y datos ordenados por lo que pagan (nómina, impuestos, finanzas de EE. UU. en español, vivienda, calendarios, coche y seguros, salud) en castellano, catalán y español de EE. UU., monetizados con publicidad.",
     "estado": "lanzado",
     "orden": 11,
-    "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas",
+    "modelo": "Publicidad: 1,5–3 € por cada 1.000 páginas vistas con AdSense (4–12 € en finanzas); las redes premium exigen tráfico anglosajón o 250.000 usuarios, así que AdSense hasta pasar de 100.000 páginas vistas. Además, productos propios (6,90–9,90 €) y widget de suscripción para profesionales (9–29 €/mes) con Stripe",
     "margenCliente": 0,
     "objetivoMes12": 100,
     "ingresosMes": 0,
@@ -3274,10 +3274,14 @@
       {
         "fecha": "2026-10-31",
         "texto": "Calendario laboral 2027 en NetoClaro: 17 comunidades y 29 municipios con calendario visual, puentes y comparación con 2026, más calculadora de días laborables y hábiles"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Cobro directo hecho en modo test: 4 productos de pago (kit autónomo 9,90 €, pack despido 6,90 €, comparador de hipotecas 6,90 €, planner de taxes 7,99 $) y widget para profesionales (gratis, 9 €/mes, 29 €/mes), con Payment Links de Stripe"
       }
     ],
     "proximos": [
-      "Cobro directo: productos digitales (kit autónomo, pack despido, comparador de hipotecas, planner de taxes) y widget B2B con Stripe, en construcción",
+      "Cobro directo: crear los enlaces de pago reales en Stripe, redesplegar los 4 sitios y hacer una compra real con reembolso",
       "Moisés: borrar el proyecto pisoclaro en Vercel; comprar dominios; alta en Xolo, Qonto y Quipu",
       "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
       "Solicitar AdSense cuando los sitios carguen en su dominio",

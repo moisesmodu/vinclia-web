@@ -34,7 +34,10 @@ export function modelo303(e: { ventas: { base: number; tipo: number }[]; soporta
   return { devengado: r2(devengado), soportado: r2(e.soportado), compensar: r2(e.compensar), resultado: r2(resultado), aIngresar: r2(pos(resultado)), aCompensar: r2(pos(-resultado)), devolucion: e.trimestre === 4 && resultado < 0 };
 }
 
-export function minoracion130(rendAnterior: number): number {
+export function minoracion130(rendAnterior: number, F?: any): number {
+  // Tramos de params (modelos.130.minoracion, art. 110.3.c RIRPF); los de siempre si el año no los trae
+  const t: { hasta: number; euros: number }[] | undefined = F?.modelos?.['130']?.minoracion?.tramos;
+  if (t) return t.find((x) => rendAnterior <= x.hasta)?.euros ?? 0;
   if (rendAnterior <= 9000) return 100;
   if (rendAnterior <= 10000) return 75;
   if (rendAnterior <= 11000) return 50;
@@ -46,7 +49,7 @@ export function modelo130(e: { ingresosAcum: number; gastosAcum: number; retenci
   const pct = F.modelos?.['130']?.pct ?? 20;
   const rend = e.ingresosAcum - e.gastosAcum;
   const pago = pos(rend) * pct / 100;
-  const minor = minoracion130(e.rendAnterior) * e.trimestre;
+  const minor = minoracion130(e.rendAnterior, F) * e.trimestre;
   const resultado = pago - e.retencionesAcum - e.pagosAnteriores - minor;
   return { rend: r2(rend), pct, pago: r2(pago), minoracion: r2(minor), resultado: r2(resultado), aIngresar: r2(pos(resultado)) };
 }

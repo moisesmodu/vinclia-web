@@ -1,0 +1,121 @@
+---
+// Página de venta de un producto propio (productos.json): qué incluye, capturas del propio Excel y PDF, precio,
+// preguntas frecuentes y botón de compra con el Payment Link de Stripe, detrás de la casilla de consentimiento
+// (art. 103.m TRLGDCU). Sin enlace de pago: «Disponible muy pronto» y sin botón.
+import '../styles/producto.css';
+import { producto, enlacePago, precio, capturas, tx } from '../lib/productos';
+import { url, buscar } from '../lib/rutas';
+import { sitio } from '../lib/sitio';
+import { icono } from '../lib/iconos';
+import { texto } from '../lib/contenido';
+import { SITIO_ID } from '../lib/sitio';
+import type { Lang } from '../lib/def';
+interface Props { id: string; lang: Lang }
+const { id, lang } = Astro.props;
+const p = producto(id)!;
+const pago = enlacePago(p);
+const caps = capturas(p);
+const [principal, ...resto] = caps;
+const es = lang === 'es';
+const us = p.moneda === 'usd';
+const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const src = (c: any, w: '640' | '1280') => `${base}/${c.webp[w]}`;
+const alto = (c: any, w: number) => Math.round(c.alto * w / c.ancho);
+const condiciones = buscar('legal:condiciones', lang)!;
+const inicio = buscar('inicio', lang)!;
+const calc = buscar(`calc:${p.calculadoras[0]}`, lang);
+const iconos = ['tabla', 'calculadora', 'calendario', 'documento', 'escudo', 'monedas'];
+const n = sitio.nombre;
+const L = es ? {
+  de: `De ${n} · Producto propio`, unico: us ? 'pago único · descarga inmediata' : 'IVA incluido · pago único · descarga inmediata',
+  consent: `Quiero acceder ya a los archivos y acepto las <a href="${url(condiciones.ruta)}">condiciones de venta</a>. Sé que, al ser contenido digital, pierdo el derecho de desistimiento cuando empieza la descarga (art. 103.m TRLGDCU).`,
+  comprar: `Comprar por ${precio(p, lang)}`, seguro: ['Pago seguro con Stripe', 'Tarjeta, Apple Pay o Google Pay', 'Sin suscripción'],
+  pronto: 'Disponible muy pronto', prontoT: 'Estamos activando el pago. Mientras tanto, usa gratis la calculadora:',
+  ia: `Preparado con ayuda de inteligencia artificial y revisado con las fuentes oficiales, con los mismos parámetros que las calculadoras de ${n}. No es asesoramiento ${p.id === 'pack-despido' ? 'jurídico' : us ? 'fiscal' : p.id === 'comparador-hipotecas' ? 'financiero' : 'fiscal'}.`,
+  incluye: 'Qué incluye', capturas: 'Así es por dentro', capturasSub: 'Capturas del propio Excel y del PDF, con datos de ejemplo.',
+  como: 'Cómo es la compra', pasos: ['Marca la casilla y pagas en la página segura de Stripe.', 'Al terminar, vuelves a una página de descarga con tus archivos.', 'Guárdalos: si cambian las cifras oficiales, la versión nueva sale en esa misma página.'],
+  faq: 'Preguntas frecuentes',
+} : {
+  de: `De ${n} · Producte propi`, unico: 'IVA inclòs · pagament únic · descàrrega immediata',
+  consent: `Vull accedir ja als fitxers i accepto les <a href="${url(condiciones.ruta)}">condicions de venda</a>. Sé que, com que és contingut digital, perdo el dret de desistiment quan comença la descàrrega (art. 103.m TRLGDCU).`,
+  comprar: `Comprar per ${precio(p, lang)}`, seguro: ['Pagament segur amb Stripe', 'Targeta, Apple Pay o Google Pay', 'Sense subscripció'],
+  pronto: 'Disponible molt aviat', prontoT: 'Estem activant el pagament. Mentrestant, fes servir gratis la calculadora:',
+  ia: `Preparat amb ajuda d’intel·ligència artificial i revisat amb les fonts oficials, amb els mateixos paràmetres que les calculadores de ${n}. No és assessorament ${p.id === 'pack-despido' ? 'jurídic' : p.id === 'comparador-hipotecas' ? 'financer' : 'fiscal'}. Els fitxers són en castellà.`,
+  incluye: 'Què inclou', capturas: 'Així és per dins', capturasSub: 'Captures del mateix Excel i del PDF, amb dades d’exemple.',
+  como: 'Com és la compra', pasos: ['Marca la casella i pagues a la pàgina segura de Stripe.', 'En acabar, tornes a una pàgina de descàrrega amb els fitxers.', 'Desa’ls: si canvien les xifres oficials, la versió nova surt a la mateixa pàgina.'],
+  faq: 'Preguntes freqüents',
+};
+const faqComun = es ? [
+  { p: '¿Funciona en Google Sheets y en LibreOffice?', r: 'Sí. Solo usa fórmulas que funcionan igual en Excel, Google Sheets (Archivo → Importar) y LibreOffice, con listas desplegables y hojas protegidas sin contraseña para no borrar una fórmula sin querer.' },
+  { p: '¿Qué pasa si cambian las cifras oficiales?', r: 'Publicamos una versión nueva en la misma página de descarga, sin coste. Guárdala en marcadores.' },
+  { p: '¿Cómo recibo los archivos?', r: 'Al pagar, Stripe te devuelve a una página de descarga con los archivos y te envía el recibo por correo. Si pierdes el enlace, escribe a hola@numimates.com desde el correo de la compra.' },
+  { p: '¿Puedo pedir que me devuelvan el dinero?', r: 'Al ser contenido digital, cuando empieza la descarga con tu consentimiento ya no hay derecho de desistimiento (art. 103.m TRLGDCU). Pero si un archivo no funciona o no hace lo que dice esta página, lo arreglamos o te devolvemos el importe.' },
+] : [
+  { p: 'Funciona a Google Sheets i a LibreOffice?', r: 'Sí. Només fa servir fórmules que funcionen igual a Excel, Google Sheets (Fitxer → Importa) i LibreOffice, amb llistes desplegables i fulls protegits sense contrasenya perquè no esborris una fórmula sense voler.' },
+  { p: 'Què passa si canvien les xifres oficials?', r: 'Publiquem una versió nova a la mateixa pàgina de descàrrega, sense cost. Desa-la a les adreces d’interès.' },
+  { p: 'Com rebo els fitxers?', r: 'En pagar, Stripe et torna a una pàgina de descàrrega amb els fitxers i t’envia el rebut per correu. Si perds l’enllaç, escriu a hola@numimates.com des del correu de la compra.' },
+  { p: 'Puc demanar que em tornin els diners?', r: 'Com que és contingut digital, quan comença la descàrrega amb el teu consentiment ja no hi ha dret de desistiment (art. 103.m TRLGDCU). Però si un fitxer no funciona o no fa el que diu aquesta pàgina, ho arreglem o et retornem l’import.' },
+];
+const faq = [...p.faq.map((f) => ({ p: tx(f.p, lang), r: tx(f.r, lang) })), ...faqComun];
+---
+<div class="prod">
+  <nav class="migas" aria-label="Migas"><a href={url(inicio.ruta)}>{es ? 'Inicio' : 'Inici'}</a><span aria-hidden="true">›</span><span>{tx(p.nombre, lang)}</span></nav>
+  <section class="prod-heroe">
+    <div>
+      <p class="prod-de"><Fragment set:html={icono('escudo', 16)} />{L.de}</p>
+      <h1>{tx(p.titular, lang)}</h1>
+      <p class="prod-sub"><strong>{tx(p.nombre, lang)}.</strong> {tx(p.frase, lang)}</p>
+      <div class="prod-compra" id="comprar">
+        <p class="prod-precio"><strong>{precio(p, lang)}</strong><span>{L.unico}</span></p>
+        <ul class="prod-lista">{p.incluye.map((x) => <li>{tx(x.t, lang)}</li>)}</ul>
+        {pago ? (
+          <>
+            <label class="consent"><input type="checkbox" id="consent" required /><span set:html={L.consent} /></label>
+            <a class="comprar" id="btn-comprar" href={pago} rel="noopener" aria-disabled="true" tabindex="-1" data-producto={p.id}>{L.comprar} <span aria-hidden="true">→</span></a>
+            <ul class="prod-seguro">{L.seguro.map((s) => <li><Fragment set:html={icono('escudo', 14)} />{s}</li>)}</ul>
+            <script is:inline set:html={`(function(){var c=document.getElementById('consent'),a=document.getElementById('btn-comprar');function f(){a.classList.toggle('activo',c.checked);a.setAttribute('aria-disabled',c.checked?'false':'true');a.tabIndex=c.checked?0:-1}c.addEventListener('change',f);a.addEventListener('click',function(e){if(!c.checked){e.preventDefault();c.focus()}});f()})();`} />
+          </>
+        ) : (
+          <p class="pronto"><strong>{L.pronto}</strong><span>{L.prontoT} {calc && <a href={url(calc.ruta)}>{texto(SITIO_ID, p.calculadoras[0], lang).h1}</a>}</span></p>
+        )}
+        <p class="prod-ia">{L.ia}</p>
+      </div>
+    </div>
+    {principal && (
+      <figure class="prod-fig">
+        <img src={src(principal, '1280')} srcset={`${src(principal, '640')} 640w, ${src(principal, '1280')} 1280w`} sizes="(min-width: 900px) 560px, calc(100vw - 32px)" width="1280" height={alto(principal, 1280)} alt={tx(principal.alt, lang)} fetchpriority="high" decoding="async" />
+      </figure>
+    )}
+  </section>
+
+  <section class="prod-sec" aria-labelledby="incluye">
+    <h2 id="incluye">{L.incluye}</h2>
+    <ul class="incluye">{p.incluye.map((x, k) => <li><span class="ico-caja" set:html={icono(iconos[k % iconos.length], 20)} /><strong>{tx(x.t, lang)}</strong><p>{tx(x.d, lang)}</p></li>)}</ul>
+  </section>
+
+  {resto.length > 0 && (
+    <section class="prod-sec" aria-labelledby="capturas">
+      <h2 id="capturas">{L.capturas}</h2>
+      <p class="prod-sub">{L.capturasSub}</p>
+      <ul class="galeria">{resto.map((c) => (
+        <li><figure>
+          <img src={src(c, '1280')} srcset={`${src(c, '640')} 640w, ${src(c, '1280')} 1280w`} sizes="(min-width: 900px) 560px, calc(100vw - 32px)" width="1280" height={alto(c, 1280)} alt={tx(c.alt, lang)} loading="lazy" decoding="async" />
+          <figcaption>{tx(c.alt, lang)}</figcaption>
+        </figure></li>
+      ))}</ul>
+    </section>
+  )}
+
+  <section class="prod-sec" aria-labelledby="como">
+    <h2 id="como">{L.como}</h2>
+    <ol class="pasos-compra">{L.pasos.map((s) => <li>{s}</li>)}</ol>
+  </section>
+
+  <section class="prod-sec faq" aria-labelledby="faq">
+    <h2 id="faq">{L.faq}</h2>
+    <div class="faq-c">{faq.map((q) => <details><summary>{q.p}</summary><p>{q.r}</p></details>)}</div>
+  </section>
+
+  {pago && <p class="prod-sec"><a class="btn" href="#comprar">{L.comprar}</a></p>}
+  <p class="prod-legal">{L.ia} <a href={url(condiciones.ruta)}>{es ? 'Condiciones de venta' : 'Condicions de venda'}</a> · <a href="mailto:hola@numimates.com">hola@numimates.com</a></p>
+</div>

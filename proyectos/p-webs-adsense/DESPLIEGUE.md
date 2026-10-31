@@ -226,3 +226,30 @@ curl -s https://netoclaro.app/ | grep -o '_vercel/insights[^"]*\|<link rel="cano
 `netoclaro` e `impuestoclaro` redesplegados con el commit 933681a: https://netoclaro.app e https://impuestoclaro.es con canónica del dominio y el script de analítica en la página; `/calculadora-paga-extra/` (es y ca) responde. Pendiente (Moisés): Search Console y AdSense (`ADSENSE_CLIENT`).
 
 Ejecutado el 2026-10-31
+
+## Productos de pago propios (rama `claude/p-productos-digitales`)
+
+Cuatro productos digitales que cobran desde la primera visita, sin backend (detalle en MONETIZACION.md):
+
+| Variable (Production) | Proyecto Vercel | Producto | Precio |
+|---|---|---|---|
+| `PAGO_KIT_AUTONOMO_2027_URL` | impuestoclaro | Kit del autónomo 2027 | 9,90 € |
+| `PAGO_PACK_DESPIDO_URL` | netoclaro | Pack despido y finiquito | 6,90 € |
+| `PAGO_COMPARADOR_HIPOTECAS_URL` | hogarclaro | Comparador de hipotecas | 6,90 € |
+| `PAGO_PLANIFICADOR_TAXES_2026_URL` | chequeclaro | Planificador de taxes 2026 | 7,99 $ |
+
+1. **Modo real** (solo con el visto bueno de Moisés): desde `fabrica/`, con los dominios definitivos para que Stripe
+   redirija a la página de descarga correcta:
+   ```bash
+   SITE_URL_NOMINA=https://netoclaro.app SITE_URL_IMPUESTOS=https://impuestoclaro.es \
+   SITE_URL_VIVIENDA=https://hogarclaro.es SITE_URL_EEUU=https://chequeclaro.com \
+   node scripts/stripe-productos.mjs --real
+   ```
+   (Sin `SITE_URL_<SITIO>` usa la URL de `familia.json`.) Imprime las cuatro `PAGO_…_URL=https://buy.stripe.com/…`.
+2. Pegar cada variable en el proyecto de Vercel que toca (Production) y redesplegar ese proyecto. Sin la variable, la
+   página dice «Disponible muy pronto» y bajo las calculadoras sigue el bloque de afiliado (si lo hay).
+3. Comprobar: compra real de 6,90 € con tarjeta propia → la redirección lleva a `/descarga/<token>/` → descargar los
+   dos archivos → reembolsar desde el panel de Stripe.
+
+Si se cambia de dominio, basta volver a ejecutar el script con el `SITE_URL_<SITIO>` nuevo: actualiza la redirección
+del mismo enlace (no hay que cambiar la variable). Regenerar los archivos: `node scripts/productos/generar.mjs`.

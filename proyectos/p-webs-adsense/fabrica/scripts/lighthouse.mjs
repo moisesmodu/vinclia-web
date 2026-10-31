@@ -17,6 +17,9 @@ const MUESTRA = {
   eeuu: ['/', '/calculadora-cheque-de-pago/', '/cheque-de-pago-texas/', '/calculadora-reembolso-taxes/', '/datos/tramos-impuestos-federales/', '/cheque-de-pago-florida-60000/', '/20-dolares-la-hora-al-ano/', '/impuesto-estatal-nueva-york/', '/credito-por-hijos-2-hijos/'],
   vivienda: ['/', '/simulador-hipoteca/', '/ca/simulador-hipoteca/', '/calculadora-gastos-compraventa/', '/datos/euribor-historico/', '/hipoteca-200000-euros-30-anos/', '/ca/despeses-compra-habitatge-catalunya/'],
 };
+// Páginas de venta de los productos propios (productos.json), con su versión en catalán donde la hay
+const PRODUCTOS = { nomina: ['/pack-despido-finiquito/', '/ca/pack-acomiadament-quitanca/'], impuestos: ['/kit-autonomo-2027/', '/ca/kit-autonom-2027/'], vivienda: ['/comparador-hipotecas-excel/', '/ca/comparador-hipoteques-excel/'], eeuu: ['/planificador-taxes-2026/'] };
+for (const [k, v] of Object.entries(PRODUCTOS)) MUESTRA[k] = process.env.SOLO_PRODUCTOS ? v : [...MUESTRA[k], ...v];
 const TIPOS = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.xml': 'application/xml', '.txt': 'text/plain', '.csv': 'text/csv', '.svg': 'image/svg+xml' };
 
 function servir(dir, puerto) {

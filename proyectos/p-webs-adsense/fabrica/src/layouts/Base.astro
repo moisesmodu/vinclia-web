@@ -27,8 +27,10 @@ interface Props {
   actual?: 'inicio' | 'datos' | 'sobre';
   /** Tipo de página (rutas.ts): en la calculadora la cabecera no se queda fija para no tapar el resultado. */
   tipo?: string;
+  /** Páginas privadas (descarga tras el pago): fuera de los buscadores. */
+  noindex?: boolean;
 }
-const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual, tipo } = Astro.props;
+const { lang, titulo, descripcion, ruta, alternas, jsonld = [], actual, tipo, noindex = false } = Astro.props;
 const u = UI[lang];
 const c = sitio.colores;
 const vars = `:root{--primario:${c.primario};--primarioOscuro:${c.primarioOscuro};--marca:${c.marca};--acento:${c.acento};--cabecera:${c.cabecera};--fondo:${c.fondo};--tenue:${c.tenue};--superficie:${c.superficie};--tinta:${c.tinta};--suave:${c.suave};--borde:${c.borde}}`
@@ -62,6 +64,7 @@ const hermanos = familia.sitios.filter((x) => x.id !== SITIO_ID && x.estado === 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{titCompleto}</title>
   <meta name="description" content={descripcion} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
   <link rel="canonical" href={absoluta(ruta)} />
   {Object.entries(alternas).map(([l, r]) => <link rel="alternate" hreflang={l} href={absoluta(r!)} />)}
   {alternas.es !== undefined && <link rel="alternate" hreflang="x-default" href={absoluta(alternas.es)} />}
@@ -176,6 +179,7 @@ addEventListener('load',function(){setTimeout(cargar,3000)})})();`} />
             <li><a href={url(buscar('legal:aviso', lang)!.ruta)}>{u.legal.aviso}</a></li>
             <li><a href={url(buscar('legal:privacidad', lang)!.ruta)}>{u.legal.privacidad}</a></li>
             <li><a href={url(buscar('legal:cookies', lang)!.ruta)}>{u.legal.cookies}</a></li>
+            <li><a href={url(buscar('legal:condiciones', lang)!.ruta)}>{u.legal.condiciones}</a></li>
             {ads && <li><button type="button" id="gestionar-cookies">{u.legal.gestionar}</button></li>}
           </ul>
         </div>

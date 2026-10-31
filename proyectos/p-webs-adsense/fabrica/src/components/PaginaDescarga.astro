@@ -1,0 +1,43 @@
+---
+// Página de descarga tras el pago (/descarga/<token>/): el Payment Link de Stripe redirige aquí. noindex, fuera del
+// sitemap y sin enlaces desde el sitio. Protección mínima: quien conozca la dirección puede descargar (ver informe).
+import '../styles/producto.css';
+import { statSync } from 'node:fs';
+import { producto, tx } from '../lib/productos';
+import { url, buscar } from '../lib/rutas';
+import { LANGS } from '../lib/sitio';
+import type { Lang } from '../lib/def';
+interface Props { id: string; lang: Lang }
+const { id, lang } = Astro.props;
+const p = producto(id)!;
+const pagina = buscar(`producto:${p.id}`, lang);
+const kb = (a: string) => { try { return Math.max(1, Math.round(statSync(`productos/${p.id}/${a}`).size / 1024)); } catch { return null; } };
+const ca = LANGS.includes('ca');
+const us = p.moneda === 'usd';
+---
+<div class="descarga">
+  <p class="eyebrow">Compra completada{us ? '' : ' · pago recibido'}</p>
+  <h1>¡Gracias! Aquí tienes tu {tx(p.nombre, 'es')}</h1>
+  <p>Descarga los archivos y <strong>guárdalos en tu ordenador o en tu nube</strong>. Esta página es personal: no compartas el enlace.</p>
+  <ul class="archivos">
+    {p.archivos.map((a) => (
+      <li><a href={url(`descarga/${p.token}`) + a.archivo} download={a.archivo}>
+        <span class:list={['tipo', a.tipo]}>{a.tipo.toUpperCase()}</span>
+        <span>{tx(a.nombre, 'es')}<small>{a.archivo}{kb(a.archivo) && ` · ${kb(a.archivo)} kB`}</small></span>
+        <span class="baja" aria-hidden="true">↓</span>
+      </a></li>
+    ))}
+  </ul>
+  <div class="aviso-guardar">
+    <p><strong>Confirmación:</strong> has pedido el acceso inmediato a este contenido digital y has aceptado que, al empezar la descarga, pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Stripe te ha enviado el recibo por correo.</p>
+    {ca && <p lang="ca">Has demanat l’accés immediat a aquest contingut digital i has acceptat que, en començar la descàrrega, perds el dret de desistiment (art. 103.m TRLGDCU). Els fitxers són en castellà.</p>}
+  </div>
+  <h2>Siguientes pasos</h2>
+  <ol>
+    <li>Abre el Excel y lee la hoja <strong>Instrucciones</strong>: son cinco minutos.</li>
+    <li>¿Usas Google Sheets? Archivo → Importar → Subir → «Reemplazar hoja de cálculo».</li>
+    <li>Guarda esta página en marcadores: si cambian las cifras oficiales, la versión nueva aparecerá aquí sin coste.</li>
+  </ol>
+  <p>¿Algún problema con la descarga o con un archivo? Escribe a <a href="mailto:hola@numimates.com">hola@numimates.com</a> con el número de tu recibo y lo resolvemos.</p>
+  {pagina && <p><a href={url(pagina.ruta)}>← Volver a la página del producto</a></p>}
+</div>

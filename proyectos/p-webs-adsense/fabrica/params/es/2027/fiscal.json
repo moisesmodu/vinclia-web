@@ -984,7 +984,33 @@
         "1-20 octubre",
         "1-30 enero"
       ],
-      "nota": "20 % del rendimiento neto acumulado desde el 1 de enero menos pagos y retenciones anteriores. No obligado si >= 70 % de ingresos profesionales tuvieron retención el año anterior."
+      "nota": "20 % del rendimiento neto acumulado desde el 1 de enero menos pagos y retenciones anteriores. No obligado si >= 70 % de ingresos profesionales tuvieron retención el año anterior.",
+      "minoracion": {
+        "tramos": [
+          {
+            "hasta": 9000,
+            "euros": 100
+          },
+          {
+            "hasta": 10000,
+            "euros": 75
+          },
+          {
+            "hasta": 11000,
+            "euros": 50
+          },
+          {
+            "hasta": 12000,
+            "euros": 25
+          }
+        ],
+        "nota": "Minoración trimestral del pago fraccionado según los rendimientos netos del año anterior (art. 110.3.c RIRPF): 100 € si no superan 9.000 €, 75 € hasta 10.000 €, 50 € hasta 11.000 € y 25 € hasta 12.000 €. Se acumula por trimestres.",
+        "verificado": true,
+        "fuente": {
+          "nombre": "Reglamento del IRPF (RD 439/2007), art. 110.3.c",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"
+        }
+      }
     },
     "111": {
       "plazos": [

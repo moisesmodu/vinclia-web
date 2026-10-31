@@ -9,8 +9,9 @@ import { FICHAS as FI } from '../fichas/impuestos';
 import { FICHAS as FU } from '../fichas/eeuu';
 import { FICHAS as FV } from '../fichas/vivienda';
 import type { Ficha } from '../fichas/tipos';
+import { productosSitio } from './productos';
 
-export type Tipo = 'inicio' | 'calc' | 'fichas' | 'ficha' | 'prog' | 'indice' | 'legal';
+export type Tipo = 'inicio' | 'calc' | 'fichas' | 'ficha' | 'prog' | 'indice' | 'legal' | 'producto' | 'descarga';
 export interface Pagina {
   clave: string; // igual en los dos idiomas
   ruta: string; // sin barras ('' = inicio)
@@ -30,6 +31,7 @@ export const LEGAL: Record<string, Record<Lang, string>> = {
   privacidad: { es: 'privacidad', ca: 'privacitat' },
   cookies: { es: 'cookies', ca: 'galetes' },
   sobre: { es: 'sobre-nosotros', ca: 'qui-som' },
+  condiciones: { es: 'condiciones-de-venta', ca: 'condicions-de-venda' },
 };
 
 export function slugCalc(id: string, lang: Lang): string {
@@ -60,7 +62,11 @@ export function paginas(): Pagina[] {
       }
     }
     for (const [k, v] of Object.entries(LEGAL)) out.push({ clave: `legal:${k}`, ruta: `${p}${v[lang]}`, lang, tipo: 'legal', id: k });
+    // Productos de pago (productos.json): página de venta en cada idioma que tenga ruta
+    for (const pr of productosSitio()) if ((pr.ruta as Record<string, string>)[lang]) out.push({ clave: `producto:${pr.id}`, ruta: `${p}${(pr.ruta as Record<string, string>)[lang]}`, lang, tipo: 'producto', id: pr.id });
   }
+  // Página de descarga tras el pago: una por producto, en el primer idioma, fuera del sitemap y con noindex
+  for (const pr of productosSitio()) out.push({ clave: `descarga:${pr.id}`, ruta: `descarga/${pr.token}`, lang: LANGS[0], tipo: 'descarga', id: pr.id });
   // Dos páginas con la misma ruta romperían la compilación en silencio (la segunda pisa a la primera)
   const vistas = new Map<string, string>();
   for (const x of out) {
