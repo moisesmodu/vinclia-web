@@ -18,8 +18,11 @@
     ],
     "descripcion": "Hold to drive, release to brake. Carry a fragile egg over wild hills and big jumps without cracking it!",
     "ids": {
-      "gamedistribution": "",
-      "gamemonetize": ""
+      "gamedistribution": "f358df72ee594af7a4cc51617095f488",
+      "gamemonetize": "b4ilcjzujk1hy2upgbqtgnz1c5t48xhf"
+    },
+    "idsInternos": {
+      "gamemonetize": 90420
     }
   },
   {
@@ -30,7 +33,7 @@
     "color": "#6cc8ff",
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "pfoje65op1zqsg0mofmk5z30ygn8cb8d"
     },
     "descripcion": "Hold to ride, release to lean. Flip in mid-air for a turbo boost and race to the finish flag in 20 desert levels!",
     "etiquetas": [
@@ -42,7 +45,10 @@
       "games-without-text",
       "hill-climb-games",
       "no-download-games"
-    ]
+    ],
+    "idsInternos": {
+      "gamemonetize": 90421
+    }
   },
   {
     "slug": "snow-plow",
@@ -52,7 +58,7 @@
     "color": "#6cc8ff",
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "zaz839v6uy8xiwgdk272st4pv0f4wdiv"
     },
     "descripcion": "Hold to drive, release to brake. Push a wobbly pile of presents over snowy hills to Santa's sleigh!",
     "etiquetas": [
@@ -65,7 +71,10 @@
       "hill-climb-games",
       "no-download-games",
       "christmas-games"
-    ]
+    ],
+    "idsInternos": {
+      "gamemonetize": 90422
+    }
   },
   {
     "slug": "rocket-hop",
@@ -75,7 +84,7 @@
     "color": "#211a78",
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "gpulwpj7lih3exlbka0vnh3zcbtkhwqu"
     },
     "descripcion": "Hold to fire the thruster, release to fall. Hop between moving platforms and nail perfect landings before the fuel runs out!",
     "etiquetas": [
@@ -85,7 +94,10 @@
       "games-without-text",
       "no-download-games",
       "space-games"
-    ]
+    ],
+    "idsInternos": {
+      "gamemonetize": 90423
+    }
   },
   {
     "slug": "jelly-stack",
@@ -95,7 +107,7 @@
     "color": "#6cc8ff",
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "h8slxguh9h2rnsa4aysk70tysel57mbv"
     },
     "descripcion": "Tap to drop the jelly. Stack it high — whatever hangs over wobbles and falls off!",
     "etiquetas": [
@@ -105,7 +117,10 @@
       "games-without-text",
       "no-download-games",
       "stacking-games"
-    ]
+    ],
+    "idsInternos": {
+      "gamemonetize": 90424
+    }
   },
   {
     "slug": "hook-hop",
@@ -120,7 +135,16 @@
       "chromebook-games",
       "games-without-text",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "oqfuanvci488z0v6wg3x42bhsm31i0zf"
+    },
+    "idsInternos": {
+      "gamemonetize": 90433
+    },
+    "nombrePortal": {
+      "gamemonetize": "Hook Hop Swing"
+    }
   },
   {
     "slug": "trick-floor",
@@ -135,7 +159,13 @@
       "chromebook-games",
       "games-without-text",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "bx2fvgffjidrb27t7wi6llz9km1ohzdo"
+    },
+    "idsInternos": {
+      "gamemonetize": 90425
+    }
   },
   {
     "slug": "lane-dash",
@@ -150,7 +180,16 @@
       "chromebook-games",
       "games-without-text",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "w4kv1nr0lxmfixq2gk3o6671gcik3gxg"
+    },
+    "idsInternos": {
+      "gamemonetize": 90434
+    },
+    "nombrePortal": {
+      "gamemonetize": "Lane Dash Runner"
+    }
   },
   {
     "slug": "fruit-stand",
@@ -164,7 +203,13 @@
       "games-without-text",
       "chromebook-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "5ppkrl0dzygbhwlp5nhaibv3gtv4a684"
+    },
+    "idsInternos": {
+      "gamemonetize": 90426
+    }
   },
   {
     "slug": "paint-grab",
@@ -179,7 +224,16 @@
       "chromebook-games",
       "short-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "y8xpwb4ulmpjteaumpbc2yp93gbokn5m"
+    },
+    "idsInternos": {
+      "gamemonetize": 90435
+    },
+    "nombrePortal": {
+      "gamemonetize": "Paint Grab Puzzle"
+    }
   },
   {
     "slug": "penalty-season",
@@ -194,7 +248,13 @@
       "chromebook-games",
       "games-without-text",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "0ox0wjrposy144acwi67mkir0cee1oda"
+    },
+    "idsInternos": {
+      "gamemonetize": 90427
+    }
   },
   {
     "slug": "rope-cut",
@@ -209,7 +269,13 @@
       "short-games",
       "chromebook-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "maa8i53u3p9r4sldlixva7vyj22zgfdd"
+    },
+    "idsInternos": {
+      "gamemonetize": 90428
+    }
   },
   {
     "slug": "hoop-bounce",
@@ -225,7 +291,13 @@
       "games-without-text",
       "chromebook-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "0wzqwyv3s92608iho849bagzcbwuzwe0"
+    },
+    "idsInternos": {
+      "gamemonetize": 90429
+    }
   },
   {
     "slug": "paper-glide",
@@ -240,7 +312,13 @@
       "chromebook-games",
       "games-without-text",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "8nnlncn63b071tr534tp9ely4i2oia8s"
+    },
+    "idsInternos": {
+      "gamemonetize": 90430
+    }
   },
   {
     "slug": "pin-rescue",
@@ -255,7 +333,16 @@
       "short-games",
       "chromebook-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "v6lfp7ilz02h7e97zf2ucxgb5u4v0gyo"
+    },
+    "idsInternos": {
+      "gamemonetize": 90436
+    },
+    "nombrePortal": {
+      "gamemonetize": "Pin Rescue Puzzle"
+    }
   },
   {
     "slug": "tow-truck",
@@ -273,7 +360,16 @@
       "games-without-text",
       "hill-climb-games",
       "no-download-games"
-    ]
+    ],
+    "ids": {
+      "gamemonetize": "jme7mvhwvu9fjfe9u42q2tyh247uj7fk"
+    },
+    "idsInternos": {
+      "gamemonetize": 90437
+    },
+    "nombrePortal": {
+      "gamemonetize": "Tow Truck Rescue"
+    }
   },
   {
     "slug": "jelly-merge",
@@ -291,7 +387,13 @@
     ],
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "z8tidqkodtdps2gnvtczvgalx3s21o6c"
+    },
+    "idsInternos": {
+      "gamemonetize": 90438
+    },
+    "nombrePortal": {
+      "gamemonetize": "Jelly Merge Drop"
     }
   },
   {
@@ -309,7 +411,10 @@
     ],
     "ids": {
       "gamedistribution": "",
-      "gamemonetize": ""
+      "gamemonetize": "tp7ult83z5xpgedqoch26jq4edspmg37"
+    },
+    "idsInternos": {
+      "gamemonetize": 90431
     }
   }
 ]
