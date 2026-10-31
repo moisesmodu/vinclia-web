@@ -153,3 +153,8 @@ Ejecutado el 2026-10-28
   català» (enlace a Aprova) por oposición (campos `faqExtra`, `enlaceCatala` y `seo.sufijoTitulo` en `oposicion.json`;
   requiere `npm run compilar`, ya ejecutado y versionado en `generado/`).
 
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+`NEXT_PUBLIC_URL=https://oposita.digital` ya estaba en production y preview (31/10 03:29Z). Publicado el commit 1daeac8 en https://oposita.digital: canónica con el dominio, `/ca/blog` y `/es/blog` responden. `@vercel/analytics` va en el código. Pendiente (Moisés): Search Console.
+
+Ejecutado el 2026-10-31
