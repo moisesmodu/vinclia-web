@@ -177,3 +177,17 @@ NetoClaro y unas 700 páginas nuevas en NetoClaro, ImpuestoClaro y ChequeClaro.
    pisoclaro-three.vercel.app con la canónica mal puesta, porque pisoclaro.vercel.app es de otra web.
 3. Redesplegar `netoclaro`, `impuestoclaro`, `chequeclaro` y `calculaclaro` (`SITIO=portal`, `PORTAL_URL=https://calculaclaro.vercel.app`).
    Así tienen las páginas nuevas y el pie «Familia Claro» con HogarClaro.
+
+### HogarClaro y redespliegue de la familia (sesión del Mac, 31-10-2026, 01:14)
+- Paso 1: `hogarclaro` creado con el camino B (`SITIO=vivienda`, `SITE_URL=https://hogarclaro.vercel.app`, `LEGAL_*` con
+  `LEGAL_EMAIL=hola@numimates.com`). Vercel le dio esa misma dirección, así que `familia.json` no cambia.
+- Paso 3: `netoclaro`, `impuestoclaro`, `chequeclaro` y `calculaclaro` redesplegados con el commit 9ba1791. `calculaclaro`
+  no tenía variables (se subió ya compilado): ahora tiene `SITIO=portal`, `PORTAL_URL`/`SITE_URL=https://calculaclaro.vercel.app`
+  y `LEGAL_*`, y se compila desde la rama como los demás.
+- Comprobado: los cinco dan 200, su pie «Familia Claro» enlaza a los otros cuatro (también HogarClaro), el aviso legal muestra
+  hola@numimates.com y `/calendario-laboral-2027/` de NetoClaro responde.
+- Paso 2, pendiente (Moisés): borrar el proyecto `pisoclaro` en vercel.com → pisoclaro → Settings → Delete Project. Es un borrado
+  definitivo, así que no lo hace la sesión.
+- Panel: `enlaces.HogarClaro` añadido en la ficha `p-webs-adsense`.
+
+Ejecutado el 2026-10-31
