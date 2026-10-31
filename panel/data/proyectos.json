@@ -70,6 +70,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Google Play: móvil Android verificado y DNI subido; Google está verificando la identidad (varios días). Después: verificar teléfono, crear la app y subir ccse-1.0.1.aab a prueba interna; para producción hace falta prueba cerrada con 12 testers durante 14 días"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (precio 9,99 €, webhook real); quitado consent_collection del Checkout (Stripe no lo admite en España) y redesplegado"
       }
     ],
     "proximos": [
@@ -341,6 +345,10 @@
       {
         "fecha": "2026-10-28",
         "texto": "Desplegado por el Mac en https://nuevo-en-espana.vercel.app con identidad de marca; pendiente la prueba de pago con tarjeta 4242"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción: 4,99 €/mes y pack 19,90 €, webhook real; Checkout cs_live comprobado"
       }
     ],
     "proximos": [
@@ -622,6 +630,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Moisés aprueba los 5 mensajes para comunidades de oposiciones (MONETIZACION.md §4, PR #7): Bombers, TCAI ICS, Mossos, Generalitat/ajuntaments y sindicatos; enlaces comprobados (200). Telegram/WhatsApp los pega Moisés desde su cuenta"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (9,99 €/mes, 23,97 € trimestral, 71,88 € anual), webhook real. Pendiente en código: cliente y portal de Stripe por modo (lib/pagos.ts). Dominio elegido: oposita.digital (también para oposiciones nacionales)"
       }
     ],
     "proximos": [
@@ -1692,6 +1704,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Cuenta de Gelato abierta por Moisés; clave de API «cartera-lunilla» creada por el Mac, comprobada (API 200) y guardada como GELATO_API_KEY en Vercel (lunilla, production y preview) y en la copia local. Falta: secreto del entorno en la nube, cotización real (npm run cotizar) y pedido de prueba en borrador (DESPLIEGUE.md pasos 6-7)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Stripe en modo real en producción (PDF 7,90 €, tapa dura 36,90 €), webhook real. Falta HERMANOS20 en real: la clave restringida necesita permiso de Promotion codes/Coupons"
       }
     ],
     "proximos": [
