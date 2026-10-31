@@ -174,7 +174,7 @@ def construir(demo=False):
         ('coste', 'COSTE TOTAL (intereses + vinculaciones + gastos)', lambda j, c: f'=INTERESES_{j + 1}+VINC_TOT_{j + 1}+GASTOS_{j + 1}', E.fmt_dinero0, True),
         ('tae', 'TAE aproximada con las vinculaciones', lambda j, c: f"=((1+IRR('Cuadro mensual'!${col_cm(j, 5)}${R0}:${col_cm(j, 5)}${R0 + MAXM},0.003))^12-1)*100", '0.00" %"', True),
         ('sinbon', 'Coste total sin bonificar (aprox., tipo constante)', lambda j, c: f'=PMT(IF({c}{O["tipo"]}="Fija",{c}{O["sin"]},MAX(0,EURIBOR+{c}{O["sin"]}))/1200,MESES,-CAPITAL)*MESES-CAPITAL+GASTOS_{j + 1}', E.fmt_dinero0, False),
-        ('compensa', '¿Compensa bonificarte?', lambda j, c: f'=IF({c}{O["sin"]}="","—",IF(COSTE_{j + 1}<SINBON_{j + 1},"Sí, ahorras "&FIXED(SINBON_{j + 1}-COSTE_{j + 1},0)&" €","No: te cuesta "&FIXED(COSTE_{j + 1}-SINBON_{j + 1},0)&" € más"))', None, False),
+        ('compensa', '¿Compensa bonificarte?', lambda j, c: f'=IF({c}{O["sin"]}="","—",IF(ABS(COSTE_{j + 1}-SINBON_{j + 1})<1,"Sin diferencia",IF(COSTE_{j + 1}<SINBON_{j + 1},"Sí, ahorras "&FIXED(SINBON_{j + 1}-COSTE_{j + 1},0)&" €","No: te cuesta "&FIXED(COSTE_{j + 1}-SINBON_{j + 1},0)&" € más")))', None, False),
         ('esfuerzo', 'Esfuerzo: cuota + vinculaciones sobre tus ingresos', lambda j, c: f'=IF(INGRESOS>0,(CUOTA1_{j + 1}+VINC_MES_{j + 1})/INGRESOS,"")', '0.0%', False),
         ('rank', 'Posición por coste total', lambda j, c: f'=IF(BANCO_OK_{j + 1},RANK(COSTE_{j + 1},RANK_RANGO,1),"")', '0"º"', True),
     ]
@@ -383,7 +383,7 @@ def construir(demo=False):
         for j, col in enumerate('CDEF'):
             f_ = f'=OF_TIPO_{j + 1}' if clave == 'tipo' else f'={clave.upper()}_{j + 1}'
             if clave == 'tipo':
-                f_ = f'=IF(BANCO_OK_{j + 1},OF_TIPO_{j + 1}&IF(OF_TIPO_{j + 1}="Fija"," "&OF_TIN_{j + 1}&" %"," · "&OF_ANIOS_INI_{j + 1}&" años + E+"&OF_DIF_{j + 1}),"")'
+                f_ = f'=IF(BANCO_OK_{j + 1},OF_TIPO_{j + 1}&IF(OF_TIPO_{j + 1}="Fija"," "&OF_TIN_{j + 1}&" %"," · "&OF_ANIOS_INI_{j + 1}&IF(OF_ANIOS_INI_{j + 1}=1," año"," años")&" + Euríbor + "&OF_DIF_{j + 1}),"")'
             (hc.resultado if fuerte else hc.formula)(f'{col}{fila}', f_, fmt=fmt, **({} if fuerte else {}))
             if clave in ('tipo', 'compensa'):
                 hc.ws[f'{col}{fila}'].alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
@@ -404,6 +404,9 @@ def construir(demo=False):
     graf.y_axis.title = None
     graf.y_axis.numFmt = '#,##0'
     graf.y_axis.majorGridlines = None
+    graf.y_axis.scaling.min = 0
+    graf.y_axis.delete = False
+    graf.x_axis.delete = False
     graf.legend = None
     datos = Reference(hc.ws, min_col=3, max_col=6, min_row=fcoste, max_row=fcoste)
     cats = Reference(hc.ws, min_col=3, max_col=6, min_row=k0 - 1, max_row=k0 - 1)
@@ -413,6 +416,9 @@ def construir(demo=False):
     graf.series[0].graphicalProperties.line.solidFill = E.pri
     graf.dataLabels = DataLabelList()
     graf.dataLabels.showVal = True
+    for k in ('showSerName', 'showCatName', 'showLegendKey', 'showPercent', 'showBubbleSize'):
+        setattr(graf.dataLabels, k, False)
+    graf.varyColors = False
     graf.height, graf.width = 7.5, 17
     hc.ws.add_chart(graf, f'B{fila}')
     hc.nota(f'B{fila + 16}', AVISO, italic=True)

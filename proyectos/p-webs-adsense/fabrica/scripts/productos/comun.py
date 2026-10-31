@@ -222,9 +222,11 @@ class Hoja:
         self.ws.row_dimensions[fila].height = alto
 
     def leyenda(self, fila: int, col='B'):
+        """Una sola celda amarilla con la regla del libro: lo amarillo lo rellenas tú."""
         E = self.E
-        self.entrada(f'{col}{fila}', 'Amarillo', h='center')
-        self.nota(f'{_letra(_col(col) + 1)}{fila}', 'Escribe tú en las celdas amarillas. Las demás se calculan solas: no hace falta tocarlas.' if E.moneda else '')
+        cel = self.c(f'{col}{fila}', '✎  Las celdas amarillas las rellenas tú; el resto se calcula solo.', font=E.f(9, True, '1F3B57'), fill=E.entrada, border=E.b_entrada)
+        cel.alignment = Alignment(vertical='center', wrap_text=False)
+        self.ws.row_dimensions[fila].height = 20
 
     def lista(self, rango: str, opciones: list[str] | str, error='Elige una opción de la lista.'):
         formula = opciones if isinstance(opciones, str) else '"' + ','.join(opciones) + '"'

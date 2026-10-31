@@ -596,7 +596,7 @@ def construir(demo: bool = False):
     for q, col in enumerate('CDEF', 1):
         hp.formula(f'{col}{fila}', fecha_plazo(F['modelos']['303']['plazos'][q - 1], q), fmt=E.fmt_fecha, h='center')
     fila += 2
-    hp.tabla_cab(fila, 2, ['Tu año', 'Importe', '', '', '', ''])
+    hp.tabla_cab(fila, 2, ['Tu año', 'Importe'])
     fila += 1
     for txt, f_, fmt in [('Facturado (base sin IVA)', "='Renta 2027'!C8", E.fmt_dinero), ('Gastos deducibles', "='Renta 2027'!C9", E.fmt_dinero),
                          ('Cuota de autónomos', "='Renta 2027'!C11", E.fmt_dinero), ('IRPF estimado del año', '=RENTA_TOTAL', E.fmt_dinero),
@@ -651,12 +651,12 @@ def _bloque_datos(h: Hoja, fila: int, datos, E: Estilo) -> int:
 
 # Facturas de ejemplo (solo para las capturas de la página de producto y las pruebas)
 DEMO_INGRESOS = [
-    ('2027-01-15', 'F-001', 'Estudio Pla SL', 'B25123456', 'Diseño web', 1800, 21, 15), ('2027-02-10', 'F-002', 'Café Noguera', 'B25987654', 'Identidad de marca', 950, 21, 15),
-    ('2027-03-28', 'F-003', 'Marta Ribes', '', 'Fotografía de producto', 420, 21, 0), ('2027-04-22', 'F-004', 'Estudio Pla SL', 'B25123456', 'Mantenimiento web', 600, 21, 15),
-    ('2027-05-30', 'F-005', 'Agro Segrià SCCL', 'F25111222', 'Campaña de redes', 2400, 21, 15), ('2027-06-18', 'F-006', 'Llibreria Fènix', 'B25333444', 'Catálogo', 780, 21, 15),
-    ('2027-07-09', 'F-007', 'Estudio Pla SL', 'B25123456', 'Mantenimiento web', 600, 21, 15), ('2027-09-25', 'F-008', 'Ajuntament (contrato menor)', 'P2500000A', 'Cartelería fiestas', 1500, 21, 15),
-    ('2027-10-14', 'F-009', 'Café Noguera', 'B25987654', 'Menús y señalética', 650, 21, 15), ('2027-11-20', 'F-010', 'Agro Segrià SCCL', 'F25111222', 'Campaña de Navidad', 2100, 21, 15),
-    ('2027-12-12', 'F-011', 'Formació Lleida', 'B25555666', 'Curso de diseño (exento)', 900, 0, 15),
+    ('2027-01-15', 'F-001', 'Estudio Pla SL', 'B25123456', 'Diseño web', 2800, 21, 15), ('2027-02-10', 'F-002', 'Café Noguera', 'B25987654', 'Identidad de marca', 1950, 21, 15),
+    ('2027-03-28', 'F-003', 'Marta Ribes', '', 'Fotografía de producto', 620, 21, 0), ('2027-03-30', 'F-004', 'Hotel Segrià', 'B25222333', 'Web y reservas', 3400, 21, 15),
+    ('2027-04-22', 'F-005', 'Estudio Pla SL', 'B25123456', 'Mantenimiento web', 900, 21, 15), ('2027-05-30', 'F-006', 'Agro Segrià SCCL', 'F25111222', 'Campaña de redes', 3600, 21, 15),
+    ('2027-06-18', 'F-007', 'Llibreria Fènix', 'B25333444', 'Catálogo', 1480, 21, 15), ('2027-07-09', 'F-008', 'Estudio Pla SL', 'B25123456', 'Mantenimiento web', 900, 21, 15),
+    ('2027-09-25', 'F-009', 'Ajuntament (contrato menor)', 'P2500000A', 'Cartelería fiestas', 4200, 21, 15), ('2027-10-14', 'F-010', 'Café Noguera', 'B25987654', 'Menús y señalética', 1650, 21, 15),
+    ('2027-11-20', 'F-011', 'Agro Segrià SCCL', 'F25111222', 'Campaña de Navidad', 4100, 21, 15), ('2027-12-12', 'F-012', 'Formació Lleida', 'B25555666', 'Curso de diseño (exento)', 1900, 0, 15),
 ]
 DEMO_GASTOS = [
     ('2027-01-03', 'A-221', 'Adobe Systems', '', 'Suscripción Creative Cloud', 'Software y suscripciones', 72.6, 21, '', 100), ('2027-01-31', '7781', 'Movistar', 'A82018474', 'Fibra y móvil', 'Telefonía e internet', 49.5, 21, '', 50),

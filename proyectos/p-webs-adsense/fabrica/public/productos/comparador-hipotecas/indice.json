@@ -1,0 +1,72 @@
+[
+  {
+    "n": 1,
+    "alt": {
+      "es": "Comparativa de cuatro ofertas con coste total y gráfico",
+      "ca": "Comparativa de quatre ofertes amb cost total i gràfic"
+    },
+    "tipo": "hoja",
+    "ancho": 1680,
+    "alto": 1214,
+    "webp": {
+      "640": "productos/comparador-hipotecas/1-640.webp",
+      "1280": "productos/comparador-hipotecas/1-1280.webp"
+    }
+  },
+  {
+    "n": 2,
+    "alt": {
+      "es": "Datos de cada FEIN con TAE y vinculaciones",
+      "ca": "Dades de cada FEIN amb TAE i vinculacions"
+    },
+    "tipo": "hoja",
+    "ancho": 1680,
+    "alto": 1214,
+    "webp": {
+      "640": "productos/comparador-hipotecas/2-640.webp",
+      "1280": "productos/comparador-hipotecas/2-1280.webp"
+    }
+  },
+  {
+    "n": 3,
+    "alt": {
+      "es": "Cuota con el Euríbor más alto o más bajo",
+      "ca": "Quota amb l’Euríbor més alt o més baix"
+    },
+    "tipo": "hoja",
+    "ancho": 1680,
+    "alto": 850,
+    "webp": {
+      "640": "productos/comparador-hipotecas/3-640.webp",
+      "1280": "productos/comparador-hipotecas/3-1280.webp"
+    }
+  },
+  {
+    "n": 4,
+    "alt": {
+      "es": "Amortizar antes: reducir cuota o plazo",
+      "ca": "Amortitzar abans: reduir quota o termini"
+    },
+    "tipo": "hoja",
+    "ancho": 1680,
+    "alto": 1214,
+    "webp": {
+      "640": "productos/comparador-hipotecas/4-640.webp",
+      "1280": "productos/comparador-hipotecas/4-1280.webp"
+    }
+  },
+  {
+    "n": 5,
+    "alt": {
+      "es": "Preguntas para el banco (PDF)",
+      "ca": "Preguntes per al banc (PDF)"
+    },
+    "tipo": "pdf",
+    "ancho": 1680,
+    "alto": 1546,
+    "webp": {
+      "640": "productos/comparador-hipotecas/5-640.webp",
+      "1280": "productos/comparador-hipotecas/5-1280.webp"
+    }
+  }
+]

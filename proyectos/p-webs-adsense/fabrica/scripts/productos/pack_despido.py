@@ -285,7 +285,7 @@ def construir(demo=False):
     hc.resaltar_si(f'E{c0}:F{fila}', f'AND(ISNUMBER($E{c0}),$E{c0}<-1)', mezclar('#E5484D', 0.78), bold=True)
     hc.resaltar_si(f'E{c0}:F{fila}', f'AND(ISNUMBER($E{c0}),$E{c0}>=-1)', 'E3F4EA')
     fila += 2
-    hc.c(f'B{fila}', 'Último día para presentar la papeleta de conciliación', font=E.f(11, True, E.pri))
+    hc.c(f'B{fila}', 'Último día para la papeleta', font=E.f(11, True, E.pri))
     hc.resultado(f'C{fila}', '=IF(OR(TIPO=1,TIPO=2),"No aplica",PLAZO_DESPIDO)', fmt=E.fmt_fecha)
     hc.formula(f'D{fila}', '=IF(OR(TIPO=1,TIPO=2),"",IF(PLAZO_DESPIDO-TODAY()>=0,"Quedan "&(PLAZO_DESPIDO-TODAY())&" días naturales","Plazo vencido"))', h='left')
     hc.ws.merge_cells(f'D{fila}:F{fila}')
