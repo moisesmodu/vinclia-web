@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Narración de cada clase con Kokoro (Apache-2.0, local, 0 €) y subtítulos exactos (cada frase se sintetiza aparte, así
-que sabemos cuándo empieza y acaba). Salida por clase en out/<curso>/<id>/: eNN.wav por escena y voz.json con tiempos.
-Uso: python3 voz.py <curso> [id …]     Variables: KOKORO_DIR (modelo), VOZ (por defecto según curso), WORK."""
+"""Narración de cada clase en castellano de España con Piper y la voz es_ES davefx (CC0, local, 0 €), y subtítulos exactos
+(cada frase se sintetiza aparte, así que sabemos cuándo empieza y acaba). Salida por clase en out/<curso>/<id>/: eNN.wav por
+escena y voz.json con tiempos. MOTOR=kokoro vuelve a la voz anterior (Kokoro, acento latino).
+Uso: python3 voz.py <curso> [id …]     Variables: MOTOR, PIPER_MODEL, KOKORO_DIR, VOZ, LENGTH (pausa de Piper), WORK."""
 import json, os, re, sys, numpy as np, soundfile as sf
-from kokoro_onnx import Kokoro
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 WORK = os.environ.get('WORK', '/home/user/jwork'); OUT = os.environ.get('OUT', os.path.join(WORK, 'out'))
 KD = os.environ.get('KOKORO_DIR', '/home/user/tts')
+MOTOR = os.environ.get('MOTOR', 'piper')
+PIPER = os.environ.get('PIPER_MODEL', '/home/user/tts/piper/vits-piper-es_ES-davefx-medium/es_ES-davefx-medium.onnx')
+LENGTH = float(os.environ.get('LENGTH', '1.08'))   # >1 = más despacio
 VOCES = {'c1': 'ef_dora', 'c2': 'em_alex', 'c3': 'em_alex', 'c4': 'ef_dora'}
 SPEED = float(os.environ.get('SPEED', '0.92'))
-SR = 24000
 PAUSA_FRASE, PAUSA_ESCENA = 0.28, 0.7
 
 # pronunciación: lo que la voz lee mal escrito tal cual
@@ -22,7 +24,7 @@ PRON = [
     (r'\bChatGPT\b', 'chat ge pe te'), (r'\bGPT\b', 'ge pe te'), (r'\bGPTs\b', 'ge pe tes'), (r'\bPDF\b', 'pe de efe'), (r'\bQR\b', 'cu erre'),
     (r'\bWhatsApp\b', 'guasap'), (r'\bGoogle\b', 'gúgel'), (r'\bGemini\b', 'yémini'), (r'\bCopilot\b', 'copáilot'), (r'\bClaude\b', 'clod'),
     (r'\bZapier\b', 'zápier'), (r'\bn8n\b', 'ene ocho ene'), (r'\bCanva\b', 'canva'), (r'\bBizum\b', 'bísum'), (r'\bINCIBE\b', 'incibe'),
-    (r'\bSEO\b', 'seo'), (r'\bpymes\b', 'pimes'), (r'\bPyme\b', 'pime'), (r'\bonline\b', 'online'), (r'\bemail\b', 'imeil'),
+    (r'\bSEO\b', 'seo'), (r'\bpymes\b', 'pimes'), (r'\bPyme\b', 'pime'), (r'\b[Oo]nline\b', 'onláin'), (r'\bemail\b', 'imeil'),
     (r'\bNumi Tech\b', 'numi tec'), (r'\bTech\b', 'tec'), (r'\bBit\b', 'bit'), (r'\bDFRobot\b', 'de efe robot'), (r'\bV2\b', 've dos'), (r'\bV5\b', 've cinco'),
     (r'\bPRIMM\b', 'primm'), (r'\bAMPA\b', 'ampa'), (r'\bTikTok\b', 'tiktok'), (r'\bYouTube\b', 'yutub'), (r'\bInstagram\b', 'instagram'),
     (r'\bWi-?Fi\b', 'uifi'), (r'\bwifi\b', 'uifi'), (r'\bapps?\b', lambda m: 'aps' if m.group(0).endswith('s') else 'ap'),
@@ -50,10 +52,18 @@ def frases(t):
 
 def main():
     curso, only = sys.argv[1], set(sys.argv[2:])
-    import onnxruntime as ort
-    so = ort.SessionOptions(); so.intra_op_num_threads = int(os.environ.get('HILOS', '2')); so.inter_op_num_threads = 1
-    k = Kokoro.from_session(ort.InferenceSession(os.path.join(KD, 'kokoro-v1.0.onnx'), so, providers=['CPUExecutionProvider']), os.path.join(KD, 'voices-v1.0.bin'))
-    voz = os.environ.get('VOZ', VOCES[curso])
+    if MOTOR == 'piper':
+        from piper import PiperVoice, SynthesisConfig
+        pv = PiperVoice.load(PIPER); SR = pv.config.sample_rate; cfg = SynthesisConfig(length_scale=LENGTH)
+        voz, motor = os.path.basename(PIPER).replace('.onnx', ''), f'piper-{LENGTH}'
+        def sintetiza(t): return np.concatenate([c.audio_float_array for c in pv.synthesize(t, syn_config=cfg)])
+    else:
+        import onnxruntime as ort
+        from kokoro_onnx import Kokoro
+        so = ort.SessionOptions(); so.intra_op_num_threads = int(os.environ.get('HILOS', '2')); so.inter_op_num_threads = 1
+        k = Kokoro.from_session(ort.InferenceSession(os.path.join(KD, 'kokoro-v1.0.onnx'), so, providers=['CPUExecutionProvider']), os.path.join(KD, 'voices-v1.0.bin'))
+        voz, motor, SR = os.environ.get('VOZ', VOCES[curso]), 'kokoro-v1.0', 24000
+        def sintetiza(t): return k.create(t, voice=voz, speed=SPEED, lang='es')[0]
     gdir = os.environ.get('GUIONES', os.path.join(ROOT, 'guiones', curso))
     for f in sorted(os.listdir(gdir)):
         if not re.match(rf'{curso}-(\d+|promo)\.json$', f): continue
@@ -66,15 +76,14 @@ def main():
         for i, e in enumerate(G['escenas']):
             chunks, subs, t = [], [], 0.0
             for fr in frases(e.get('narracion', '')):
-                a, sr = k.create(pron(fr), voice=voz, speed=SPEED, lang='es')
-                a = np.asarray(a, dtype=np.float32)
+                a = np.asarray(sintetiza(pron(fr)), dtype=np.float32)
                 subs.append({'ini': round(t, 3), 'fin': round(t + len(a) / SR, 3), 'texto': fr})
                 chunks += [a, np.zeros(int(PAUSA_FRASE * SR), np.float32)]; t += len(a) / SR + PAUSA_FRASE
             chunks.append(np.zeros(int(PAUSA_ESCENA * SR), np.float32))
             audio = np.concatenate(chunks) if chunks else np.zeros(SR, np.float32)
             wav = os.path.join(d, f'e{i + 1:02d}.wav'); sf.write(wav, audio, SR)
             esc.append({'wav': wav, 'dur': round(len(audio) / SR, 3), 'subs': subs})
-        json.dump({'voz': voz, 'motor': 'kokoro-v1.0', 'speed': SPEED, 'escenas': esc, 'dur': round(sum(x['dur'] for x in esc), 2)}, open(meta, 'w'), ensure_ascii=False, indent=1)
+        json.dump({'voz': voz, 'motor': motor, 'speed': SPEED if MOTOR != 'piper' else LENGTH, 'escenas': esc, 'dur': round(sum(x['dur'] for x in esc), 2)}, open(meta, 'w'), ensure_ascii=False, indent=1)
         print(G['id'], round(sum(x['dur'] for x in esc) / 60, 2), 'min', flush=True)
 
 if __name__ == '__main__': main()

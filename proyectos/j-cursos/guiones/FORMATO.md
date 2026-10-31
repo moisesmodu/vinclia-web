@@ -31,7 +31,7 @@ Ruta: `proyectos/j-cursos/guiones/<curso>/<id>.json` (p. ej. `guiones/c1/c1-07.j
   `narracion` entre 50 y 200 palabras. Empieza siempre por `portada` y termina por `resumen`.
 - **Texto en pantalla corto:** `titulo` ≤ 60 caracteres; `puntos`/`pasos` de 2 a 6 elementos de ≤ 75 caracteres;
   `frase` ≤ 140; `comparar` ≤ 110 por lado; tabla ≤ 5 filas × 3 columnas, celdas ≤ 40. La pantalla resume, la voz explica.
-- **Narración para leer en voz alta por una voz sintética (Kokoro):** castellano de España, frases de menos de 30
+- **Narración para leer en voz alta por una voz sintética (Piper, davefx):** castellano de España, frases de menos de 30
   palabras, sin markdown, sin emojis, sin paréntesis largos, sin símbolos (escribe «menor que», «por ciento», «euros»,
   «grados», «centímetros»), sin URL completas (di «numimates punto com» o «busca Scratch en Google»). Números pequeños en
   cifras están bien; los años, en cifras (2027). Siglas que se deletrean, con puntos o separadas solo si es necesario; el

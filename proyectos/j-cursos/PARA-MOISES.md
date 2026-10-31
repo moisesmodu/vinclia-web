@@ -44,9 +44,10 @@ montados la sesión del Mac con `DESPLIEGUE.md`: no tienes que hacer nada.
 
 ## Decisiones que puedes cambiar (no hace falta hacer nada)
 
-- **Voz:** Kokoro (gratis), una voz por curso. Si Udemy la rechazara por «sonar robótica» o prefieres más calidad,
-  narrar c1 y c2 con ElevenLabs cuesta unos 400.000 créditos (un plan Pro de un mes): respóndeme «voz ElevenLabs» y lo
-  rehago con la misma voz en todas las clases. Clonar tu voz: solo si me lo pides.
+- **Voz:** davefx, una voz masculina de castellano de España (gratis, CC0), la que elegiste entre las muestras. Si
+  Udemy la rechazara por «sonar robótica», narrar los cursos 1 y 2 con ElevenLabs cuesta unos 390.000 créditos (un plan
+  Pro de un mes). Respóndeme «voz ElevenLabs» y lo rehago con la misma voz en todas las clases. Clonar tu voz: solo si
+  me lo pides.
 - **Oferta del plan escuela** de la clase extra (`UDEMY26`, un mes de prueba para centros): confírmala o cámbiala.
 - **Precios de lista:** 44,99 € (c1) y 49,99 € (c2 y c3); Udemy los rebaja solo en sus promociones.
 

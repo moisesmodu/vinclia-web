@@ -36,23 +36,24 @@
 
 **Palabras clave (para el título, la descripción y los vídeos cortos):** IA para autónomos, ChatGPT para pymes, inteligencia artificial para negocios, ChatGPT para autónomos, Verifactu, IA para pequeños negocios, marketing con IA, atención al cliente con IA, Gemini, Copilot
 
-**Total:** 37 clases
+**Total:** 37 clases, 25.8 minutos de vídeo montado
 
 
 ## Sección 1: Empieza aquí
 
 ### Clase 1: Bienvenida: tu primer resultado con IA en 10 minutos · **vista previa gratuita**
-- Vídeo: `01 - Bienvenida tu primer resultado con IA en 10 minutos.mp4` (pendiente de montar)
+- Vídeo: `01 - Bienvenida tu primer resultado con IA en 10 minutos.mp4` (4:02)
 - Subtítulos: `01 - Bienvenida tu primer resultado con IA en 10 minutos.vtt` (idioma: español)
 - Descripción: Respondes a una reseña de Google de un cliente molesto con ayuda de la IA, en menos de 10 minutos y sin conocimientos técnicos. Y ves qué vas a conseguir en el resto del curso.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 2: Qué es (y qué no es) la IA generativa, sin humo · **vista previa gratuita**
-- Vídeo: `02 - Qué es (y qué no es) la IA generativa, sin humo.mp4` (pendiente de montar)
+- Vídeo: `02 - Qué es (y qué no es) la IA generativa, sin humo.mp4` (5:10)
 - Subtítulos: `02 - Qué es (y qué no es) la IA generativa, sin humo.vtt` (idioma: español)
 - Descripción: Entiendes en lenguaje llano cómo funciona la IA generativa, en qué tareas te ahorra tiempo y en cuáles se equivoca, para usarla con confianza y sin sustos.
 
 ### Clase 3: Qué herramienta usar: ChatGPT, Gemini, Copilot, Claude y compañía · **vista previa gratuita**
-- Vídeo: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.mp4` (pendiente de montar)
+- Vídeo: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.mp4` (5:27)
 - Subtítulos: `03 - Qué herramienta usar ChatGPT, Gemini, Copilot, Claude y compañía.vtt` (idioma: español)
 - Descripción: Conoces las cinco herramientas de IA más útiles para un pequeño negocio, eliges una principal y una de reserva según dónde trabajas, y las configuras para empezar gratis.
 
@@ -62,21 +63,25 @@
 - Vídeo: `04 - La fórmula de una buena instrucción.mp4` (pendiente de montar)
 - Subtítulos: `04 - La fórmula de una buena instrucción.vtt` (idioma: español)
 - Descripción: Aprendes una fórmula de cinco piezas para pedirle cualquier texto a la IA y conseguir un resultado útil a la primera, con ejemplos de un electricista, un bar y una tienda online.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 5: La ficha de tu negocio: el contexto que lo cambia todo
 - Vídeo: `05 - La ficha de tu negocio el contexto que lo cambia todo.mp4` (pendiente de montar)
 - Subtítulos: `05 - La ficha de tu negocio el contexto que lo cambia todo.vtt` (idioma: español)
 - Descripción: Preparas en una página la ficha de tu negocio con horarios, servicios, precios, tono y políticas, para pegarla en la IA y que cada respuesta suene a ti sin repetir lo mismo cada vez.
+- Recursos descargables: `recursos/ficha-negocio.pdf`
 
 ### Clase 6: Iterar: pedir cambios, variantes y tonos
 - Vídeo: `06 - Iterar pedir cambios, variantes y tonos.mp4` (pendiente de montar)
 - Subtítulos: `06 - Iterar pedir cambios, variantes y tonos.vtt` (idioma: español)
 - Descripción: Aprendes a convertir un primer borrador mediocre en un texto listo para enviar pidiendo cambios concretos, variantes y tonos distintos, en dos o tres mensajes.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 7: Tu biblioteca de instrucciones y asistentes guardados
 - Vídeo: `07 - Tu biblioteca de instrucciones y asistentes guardados.mp4` (pendiente de montar)
 - Subtítulos: `07 - Tu biblioteca de instrucciones y asistentes guardados.vtt` (idioma: español)
 - Descripción: Montas tu biblioteca de instrucciones con huecos para rellenar, ordenada por tareas, y aprendes a guardar un asistente con tu ficha para no repetir nunca lo mismo.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Cuestionario: Cuestionario: pedir bien a la IA
 
@@ -117,26 +122,31 @@
 - Vídeo: `08 - Responder WhatsApp y correos en la mitad de tiempo.mp4` (pendiente de montar)
 - Subtítulos: `08 - Responder WhatsApp y correos en la mitad de tiempo.vtt` (idioma: español)
 - Descripción: Aplicas un método de cuatro pasos para contestar WhatsApp y correos de clientes con ayuda de la IA: tú decides qué decir en cuatro palabras y ella lo redacta con tu tono.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 9: Reseñas de Google: responder bien, también a las malas
 - Vídeo: `09 - Reseñas de Google responder bien, también a las malas.mp4` (pendiente de montar)
 - Subtítulos: `09 - Reseñas de Google responder bien, también a las malas.vtt` (idioma: español)
 - Descripción: Respondes reseñas de Google positivas y negativas con una estructura clara y la ayuda de la IA, sin ponerte a la defensiva y sin revelar datos de tus clientes.
+- Recursos descargables: `recursos/respuestas-resenas.pdf`
 
 ### Clase 10: Preguntas frecuentes y mensajes automáticos de WhatsApp Business
 - Vídeo: `10 - Preguntas frecuentes y mensajes automáticos de WhatsApp Business.mp4` (pendiente de montar)
 - Subtítulos: `10 - Preguntas frecuentes y mensajes automáticos de WhatsApp Business.vtt` (idioma: español)
 - Descripción: Preparas con la IA las respuestas a las preguntas que te hacen siempre y las conviertes en mensaje de bienvenida, mensaje de ausencia y respuestas rápidas de WhatsApp Business, gratis.
+- Recursos descargables: `recursos/mensajes-whatsapp-business.pdf`
 
 ### Clase 11: Quejas difíciles y clientes enfadados
 - Vídeo: `11 - Quejas difíciles y clientes enfadados.mp4` (pendiente de montar)
 - Subtítulos: `11 - Quejas difíciles y clientes enfadados.vtt` (idioma: español)
 - Descripción: Usas la IA para separar hechos de emociones en una queja, responder con una solución concreta sin ponerte a la defensiva y hasta ensayar conversaciones difíciles antes de tenerlas.
+- Recursos descargables: `recursos/100-instrucciones.pdf`
 
 ### Clase 12: Atender en inglés, francés o alemán sin saberlos
 - Vídeo: `12 - Atender en inglés, francés o alemán sin saberlos.mp4` (pendiente de montar)
 - Subtítulos: `12 - Atender en inglés, francés o alemán sin saberlos.vtt` (idioma: español)
 - Descripción: Entiendes y respondes mensajes de clientes en inglés, francés o alemán con la IA, comprobando cada traducción con una vuelta al castellano y cuidando el tono de cada idioma.
+- Recursos descargables: `recursos/mensajes-whatsapp-business.pdf`
 
 ### Cuestionario: Cuestionario: atención al cliente con IA
 
@@ -177,26 +187,31 @@
 - Vídeo: `13 - Tu ficha de Google Business Profile.mp4` (pendiente de montar)
 - Subtítulos: `13 - Tu ficha de Google Business Profile.vtt` (idioma: español)
 - Descripción: Redacta con IA la descripción, los servicios, las publicaciones y las preguntas frecuentes de tu ficha de Google, revisando tú cada dato antes de publicarlo.
+- Recursos descargables: `recursos/ficha-google-business.pdf`
 
 ### Clase 14: Un mes de publicaciones en 20 minutos
 - Vídeo: `14 - Un mes de publicaciones en 20 minutos.mp4` (pendiente de montar)
 - Subtítulos: `14 - Un mes de publicaciones en 20 minutos.vtt` (idioma: español)
 - Descripción: Prepara con IA los temas, el calendario y los textos de un mes de publicaciones para Instagram, Facebook o tu ficha de Google, en una sola sesión de trabajo.
+- Recursos descargables: `recursos/calendario-publicaciones.pdf`
 
 ### Clase 15: Imágenes con IA: cuándo sí, cuándo no y los derechos
 - Vídeo: `15 - Imágenes con IA cuándo sí, cuándo no y los derechos.mp4` (pendiente de montar)
 - Subtítulos: `15 - Imágenes con IA cuándo sí, cuándo no y los derechos.vtt` (idioma: español)
 - Descripción: Aprende cuándo una imagen generada con IA ayuda a tu negocio y cuándo es mejor una foto real, cómo pedirla bien y qué revisar sobre uso comercial, derechos y transparencia.
+- Recursos descargables: `recursos/imagenes-ia-checklist.pdf`
 
 ### Clase 16: Tu web y el SEO local con ayuda de la IA
 - Vídeo: `16 - Tu web y el SEO local con ayuda de la IA.mp4` (pendiente de montar)
 - Subtítulos: `16 - Tu web y el SEO local con ayuda de la IA.vtt` (idioma: español)
 - Descripción: Usa la IA para escribir los textos de tu web pensando en las búsquedas de tu zona: páginas de servicio, títulos, descripciones y preguntas frecuentes, con datos coherentes en todas partes.
+- Recursos descargables: `recursos/seo-local.pdf`
 
 ### Clase 17: Correos, ofertas y fidelización
 - Vídeo: `17 - Correos, ofertas y fidelización.mp4` (pendiente de montar)
 - Subtítulos: `17 - Correos, ofertas y fidelización.vtt` (idioma: español)
 - Descripción: Redacta con IA el correo mensual, los asuntos, las ofertas con condiciones claras y un plan sencillo para que tus clientes vuelvan, sin meter sus datos personales en la herramienta.
+- Recursos descargables: `recursos/correos-fidelizacion.pdf`
 
 ### Cuestionario: Cuestionario: marketing sin agencia
 
@@ -237,26 +252,31 @@
 - Vídeo: `18 - Presupuestos claros en 2 minutos.mp4` (pendiente de montar)
 - Subtítulos: `18 - Presupuestos claros en 2 minutos.vtt` (idioma: español)
 - Descripción: Convierte tus notas de la visita en un presupuesto ordenado y claro, con partidas, plazos, validez y lo que no incluye, y aprende a revisar las cifras antes de enviarlo.
+- Recursos descargables: `recursos/presupuesto.pdf`
 
 ### Clase 19: Facturación: lo que la IA puede y no puede hacer
 - Vídeo: `19 - Facturación lo que la IA puede y no puede hacer.mp4` (pendiente de montar)
 - Subtítulos: `19 - Facturación lo que la IA puede y no puede hacer.vtt` (idioma: español)
 - Descripción: Usa la IA para redactar conceptos claros, revisar datos antes de facturar y reclamar cobros con educación, sabiendo por qué la factura tiene que salir siempre de un programa de facturación.
+- Recursos descargables: `recursos/conceptos-factura.pdf`
 
 ### Clase 20: Verifactu en 2027: qué es, fechas y qué tienes que hacer
-- Vídeo: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.mp4` (pendiente de montar)
+- Vídeo: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.mp4` (5:43)
 - Subtítulos: `20 - Verifactu en 2027 qué es, fechas y qué tienes que hacer.vtt` (idioma: español)
 - Descripción: Entiende qué es Verifactu, desde cuándo te obliga según seas sociedad o autónomo, qué opciones tienes para cumplir y qué preguntas hacer a tu proveedor de software o a tu gestoría.
+- Recursos descargables: `recursos/verifactu-checklist.pdf`
 
 ### Clase 21: Tickets, gastos y hojas de cálculo con IA
 - Vídeo: `21 - Tickets, gastos y hojas de cálculo con IA.mp4` (pendiente de montar)
 - Subtítulos: `21 - Tickets, gastos y hojas de cálculo con IA.vtt` (idioma: español)
 - Descripción: Pasa tus tickets a una tabla con ayuda de la IA, clasifícalos con las categorías de tu gestoría y monta una hoja de cálculo de gastos con fórmulas que la IA te explica paso a paso.
+- Recursos descargables: `recursos/hoja-gastos.pdf`
 
 ### Clase 22: Previsión de IVA e IRPF: ayuda, no asesoría
 - Vídeo: `22 - Previsión de IVA e IRPF ayuda, no asesoría.mp4` (pendiente de montar)
 - Subtítulos: `22 - Previsión de IVA e IRPF ayuda, no asesoría.vtt` (idioma: español)
 - Descripción: Usa la IA para entender tus impuestos con tus propios números, estimar cuánto dinero apartar y preparar las preguntas para tu gestoría, sin confundir esta ayuda con asesoría fiscal.
+- Recursos descargables: `recursos/prevision-impuestos.pdf`
 
 ### Cuestionario: Cuestionario: presupuestos, facturas y números
 
@@ -294,24 +314,28 @@
 ## Sección 6: Legal: RGPD y Ley de IA
 
 ### Clase 23: Qué datos no debes meter nunca en una IA
-- Vídeo: `23 - Qué datos no debes meter nunca en una IA.mp4` (pendiente de montar)
+- Vídeo: `23 - Qué datos no debes meter nunca en una IA.mp4` (5:23)
 - Subtítulos: `23 - Qué datos no debes meter nunca en una IA.vtt` (idioma: español)
 - Descripción: Aprende qué datos de clientes no se pegan en un chat de IA y cómo anonimizar un mensaje en un minuto para seguir usando la IA con tranquilidad.
+- Recursos descargables: `recursos/privacidad-checklist.pdf`
 
 ### Clase 24: Configura la privacidad de tus herramientas
 - Vídeo: `24 - Configura la privacidad de tus herramientas.mp4` (pendiente de montar)
 - Subtítulos: `24 - Configura la privacidad de tus herramientas.vtt` (idioma: español)
 - Descripción: Desactiva el uso de tus conversaciones para entrenar, ordena cuentas y accesos y deja por escrito una norma de uso de IA para tu negocio.
+- Recursos descargables: `recursos/privacidad-checklist.pdf`
 
 ### Clase 25: RGPD práctico: avisos, consentimiento y encargados
 - Vídeo: `25 - RGPD práctico avisos, consentimiento y encargados.mp4` (pendiente de montar)
 - Subtítulos: `25 - RGPD práctico avisos, consentimiento y encargados.vtt` (idioma: español)
 - Descripción: Prepara con IA un borrador de aviso de privacidad en lenguaje claro, un mensaje para pedir permiso antes de enviar ofertas y la lista de herramientas que tratan datos de tus clientes.
+- Recursos descargables: `recursos/lista-encargados.pdf`
 
 ### Clase 26: La Ley Europea de IA para pequeños negocios
 - Vídeo: `26 - La Ley Europea de IA para pequeños negocios.mp4` (pendiente de montar)
 - Subtítulos: `26 - La Ley Europea de IA para pequeños negocios.vtt` (idioma: español)
 - Descripción: Qué te pide de verdad el Reglamento europeo de IA si eres autónomo o pequeño negocio: formación suficiente, avisar cuando un cliente habla con un chatbot e indicar los contenidos que imitan a personas reales.
+- Recursos descargables: `recursos/aviso-chatbot.pdf`
 
 ### Cuestionario: Cuestionario: RGPD y Ley de IA
 
@@ -354,21 +378,25 @@
 - Vídeo: `28 - Agenda, reservas y recordatorios.mp4` (pendiente de montar)
 - Subtítulos: `28 - Agenda, reservas y recordatorios.vtt` (idioma: español)
 - Descripción: Prepara con IA los mensajes de confirmación, recordatorio y cancelación de citas, guárdalos en WhatsApp Business y organiza tu semana en cinco minutos al día.
+- Recursos descargables: `recursos/mensajes-agenda.pdf`
 
 ### Clase 29: Automatizar sin programar: Zapier, Make y n8n
 - Vídeo: `29 - Automatizar sin programar Zapier, Make y n8n.mp4` (pendiente de montar)
 - Subtítulos: `29 - Automatizar sin programar Zapier, Make y n8n.vtt` (idioma: español)
 - Descripción: Monta dos flujos sin escribir código: formulario web, hoja de cálculo y correo de confirmación; y reseña nueva con borrador de respuesta que tú revisas antes de publicar.
+- Recursos descargables: `recursos/flujos-sin-programar.pdf`
 
 ### Clase 30: Asistentes y agentes: tu GPT o Gem de negocio
 - Vídeo: `30 - Asistentes y agentes tu GPT o Gem de negocio.mp4` (pendiente de montar)
 - Subtítulos: `30 - Asistentes y agentes tu GPT o Gem de negocio.vtt` (idioma: español)
 - Descripción: Crea un asistente guardado con la ficha de tu negocio, tu tono y tus límites para no repetir el contexto en cada chat, y aprende qué son los agentes y qué permisos no darles.
+- Recursos descargables: `recursos/asistente-negocio.pdf`
 
 ### Clase 31: Medir el ahorro: tu cuaderno de horas
 - Vídeo: `31 - Medir el ahorro tu cuaderno de horas.mp4` (pendiente de montar)
 - Subtítulos: `31 - Medir el ahorro tu cuaderno de horas.vtt` (idioma: español)
 - Descripción: Mide con un cuaderno sencillo cuánto tiempo te ahorra de verdad la IA en cinco tareas, con la revisión incluida, y decide qué seguir usando y qué dejar.
+- Recursos descargables: `recursos/cuaderno-horas.pdf`
 
 ### Cuestionario: Cuestionario: ganar horas con automatizaciones
 
@@ -452,9 +480,11 @@
 - Vídeo: `36 - Proyecto final tu plan de IA en una página.mp4` (pendiente de montar)
 - Subtítulos: `36 - Proyecto final tu plan de IA en una página.vtt` (idioma: español)
 - Descripción: Reúne todo el curso en un plan de una página: tus tres tareas para la IA, tus líneas rojas, una automatización, tus obligaciones y cómo medirás el ahorro, con un calendario de 30 días.
+- Recursos descargables: `recursos/plan-ia-una-pagina.pdf`
 
 ### Clase 37: Clase extra: novedades y recursos, octubre de 2026
 - Vídeo: `37 - Clase extra novedades y recursos, octubre de 2026.mp4` (pendiente de montar)
 - Subtítulos: `37 - Clase extra novedades y recursos, octubre de 2026.vtt` (idioma: español)
 - Descripción: Repaso del curso, cómo se actualiza cada trimestre, tu siguiente paso y los enlaces actualizados: cupones para los otros cursos de la serie y recursos para seguir.
+- Recursos descargables: `recursos/enlaces-y-cupones.pdf`
 

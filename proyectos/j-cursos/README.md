@@ -2,7 +2,7 @@
 
 Cuatro cursos en vídeo en castellano de España, hechos a partir de Numi Tech (cursos de programación y robótica de
 Numimates) y, el tercero, escritos desde cero. Todo el contenido es de Moisés; las piezas 3D de las imágenes son de
-Kenney (CC0); la voz es Kokoro (Apache-2.0) y el software de montaje es libre. Nada con licencia no comercial.
+Kenney (CC0); la voz es Piper con la voz de castellano de España `es_ES-davefx-medium` (CC0) y el software de montaje es libre. Nada con licencia no comercial.
 
 | | Curso | Base | Clases | Duración | Estado |
 |---|---|---|---|---|---|
@@ -25,15 +25,16 @@ Kenney (CC0); la voz es Kokoro (Apache-2.0) y el software de montaje es libre. N
 
 ## Cómo se produce un curso (todo en local, 0 €)
 
-Requisitos: Node 22 con Playwright (Chromium), Python 3 con `kokoro-onnx`, `soundfile` y `numpy`, ffmpeg, el modelo de
-Kokoro (`kokoro-v1.0.onnx` y `voices-v1.0.bin`, de las versiones de `thewh1teagle/kokoro-onnx`) en `$KOKORO_DIR`, y un
+Requisitos: Node 22 con Playwright (Chromium), Python 3 con `piper-tts`, `soundfile` y `numpy`, ffmpeg, la voz
+`es_ES-davefx-medium` (de `k2-fsa/sherpa-onnx`, release `tts-models`, `vits-piper-es_ES-davefx-medium.tar.bz2`) en
+`$PIPER_MODEL`, y un
 clon de `moisesmodu/numimates` servido en `http://127.0.0.1:5190` (`python3 -m http.server 5190`): las capturas y las
 demostraciones salen de su `presenta.html` y los imprimibles de `imprimeix.html`.
 
 ```bash
 python3 pipeline/check_guiones.py guiones/c1      # formato y longitudes
 node    pipeline/render.mjs c1                    # diapositivas, capturas y demos del simulador → $WORK/out/c1
-python3 pipeline/voz.py c1                        # narración Kokoro por frase + tiempos → $WORK/out/c1
+python3 pipeline/voz.py c1                        # narración Piper (davefx) por frase + tiempos → $WORK/out/c1
 python3 pipeline/montaje.py c1                    # MP4 1080p + SRT/VTT → $WORK/entrega/c1
 node    pipeline/recursos.mjs c1                  # fichas en PDF (o plantillas en el c3) → $WORK/entrega/c1/recursos
 python3 pipeline/udemy.py c1                      # udemy/c1-CURRICULO.md con duraciones
@@ -41,16 +42,17 @@ python3 pipeline/cortos.py                        # vídeos cortos verticales �
 python3 pipeline/seo.py                           # 20 artículos → marketing/seo
 ```
 Cada paso se puede repetir con una lista de clases (`render.mjs c1 c1-07`) y no rehace lo que ya existe (salvo
-`FORCE=1` en la voz). Con 4 núcleos: ~1,2× tiempo real de voz con 2 hilos y ~2-3 min por demo del simulador.
+`FORCE=1` en la voz). Con 4 núcleos: la voz va a ~30× tiempo real y ~2-3 min por demo del simulador.
 
 ## Decisiones tomadas (y por qué)
 
-- **Voz: Kokoro para todas las clases, una voz por curso** (`ef_dora` en c1 y c4, `em_alex` en c2 y c3). Narrar los
-  cursos 1 y 2 con ElevenLabs costaría unos 400.000 créditos (≈ 1 crédito por carácter, medido con la estimación del
-  conector); el tope de este proyecto es 5.000 créditos de prueba. Kokoro es local, gratuito y con licencia comercial.
-  Control de calidad: la transcripción automática de ElevenLabs de una muestra de 80 s reconoció 211 de 211 palabras
-  (coste: 441 créditos). Udemy rechaza la voz «robótica»: si la revisión de calidad la rechazara, el cambio a ElevenLabs
-  es una variable en `voz.py` y un presupuesto que Moisés aprueba (ver `PARA-MOISES.md`). Gasto de voz al final del informe.
+- **Voz: Piper con `es_ES-davefx-medium` en todas las clases** (castellano de España, licencia CC0, local y gratuita).
+  La primera versión usó Kokoro (`ef_dora`/`em_alex`): pronunciaba como en España, pero con entonación latina. El
+  31/10/2026 Moisés eligió davefx entre cinco muestras (Kokoro, davefx, las dos voces de sharvard y ElevenLabs «David»)
+  y se volvió a narrar y montar todo. `MOTOR=kokoro` recupera la voz anterior. Narrar los cursos 1 y 2 con ElevenLabs
+  costaría unos 390.000 créditos (1 crédito por carácter, medido con la muestra: 207 caracteres, 207 créditos), un plan
+  Pro de un mes: supera el tope de 20 €/mes y solo se hace si Moisés lo aprueba. La pronunciación de siglas y
+  anglicismos está en `PRON` (`voz.py`), revisada con los fonemas de espeak. Gasto de voz al final del informe.
 - **Diapositivas** con el lenguaje visual de `presenta.html` (Lexend, fondo punteado, tarjetas, color por curso: azul
   Robot, coral Robótica, violeta IA, verde Digital) y **capturas reales de las presentaciones de Numi Tech en
   castellano** (con Bit y el Maqueen en 3D). Los puntos aparecen mientras se explican.
