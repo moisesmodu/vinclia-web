@@ -19,7 +19,7 @@ const C = {
     pelos: { rubio: "Rubio", castano: "Castaño", pelirrojo: "Pelirrojo", negro: "Negro" },
     pieles: { clara: "Clara", media: "Media", morena: "Morena", oscura: "Oscura" },
     banda: { peques: "Cuento para peques: 18 páginas, frases cortas y un estribillo para repetir juntos.", mayores: "Cuento para mayores: 22 páginas, más aventura, diálogos y una decisión que toma su protagonista." },
-    color: "Su color favorito", colorNota: "Lo llevará en la ropa de las ilustraciones.",
+    color: "Su color favorito", colorNota: "Opcional: lo llevará en la ropa de las ilustraciones (si no eliges, su ropa de siempre).",
     arropa: "¿Quién le da las buenas noches?", amigo: "Su mejor amigo o amiga (opcional)", amigoEs: "es",
     rasgo: "Algo que solo tiene {n} (opcional)", rasgoEj: "Colecciona piedras, dice «supermegaguay», baila cuando hay tormenta…",
     deseo: "¿Alguna idea para el cuento? (opcional)", deseoEj: "Que salga su abuela Rosa, que aprenda a nadar, que celebre su cumpleaños…",
@@ -36,7 +36,7 @@ const C = {
     pelos: { rubio: "Ros", castano: "Castany", pelirrojo: "Pèl-roig", negro: "Negre" },
     pieles: { clara: "Clara", media: "Mitjana", morena: "Morena", oscura: "Fosca" },
     banda: { peques: "Conte per a petits: 18 pàgines, frases curtes i una tornada per repetir junts.", mayores: "Conte per a grans: 22 pàgines, més aventura, diàlegs i una decisió que pren el protagonista." },
-    color: "El seu color preferit", colorNota: "El portarà a la roba de les il·lustracions.",
+    color: "El seu color preferit", colorNota: "Opcional: el portarà a la roba de les il·lustracions (si no tries, la seva roba de sempre).",
     arropa: "Qui li dona la bona nit?", amigo: "El seu millor amic o amiga (opcional)", amigoEs: "és",
     rasgo: "Alguna cosa que només té {n} (opcional)", rasgoEj: "Col·lecciona pedres, diu «supermegaguai», balla quan hi ha tempesta…",
     deseo: "Alguna idea per al conte? (opcional)", deseoEj: "Que hi surti l'àvia Rosa, que aprengui a nedar, que celebri l'aniversari…",
@@ -66,7 +66,7 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
     nombre: sp.get("nombre") ?? "", edad: Number(sp.get("edad")) || 4, genero: g0, ciudad: sp.get("ciudad") ?? "",
     companero: "perro", mascota: "", mascotaDescripcion: "", aficion: AFICIONES[0].id, coleccion: col0,
     tema: COLECCIONES.find((c) => c.id === col0)!.temas[0].id, idioma, bebe: "", bebeGenero: "m",
-    dedicatoria: "", deParteDe: "", arropa: "mamaypapa", color: "azul", amigo: "", amigoGenero: "m",
+    dedicatoria: "", deParteDe: "", arropa: "mamaypapa", color: undefined, amigo: "", amigoGenero: "m",
     rasgo: "", deseo: "", aspecto: ASPECTO_INICIAL[g0], idiomaWeb: idioma, web: "",
   });
   const [enviando, setEnviando] = useState(false);
@@ -181,7 +181,7 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
             <fieldset><legend className="etiqueta">{k.color}</legend>
               <div className="flex flex-wrap gap-3">
                 {COLORES.map((c) => (
-                  <button type="button" key={c.id} title={c.etiqueta[idioma]} aria-label={c.etiqueta[idioma]} aria-pressed={s.color === c.id} onClick={() => set("color", c.id)}
+                  <button type="button" key={c.id} title={c.etiqueta[idioma]} aria-label={c.etiqueta[idioma]} aria-pressed={s.color === c.id} onClick={() => set("color", s.color === c.id ? undefined : c.id)}
                     className={`w-10 h-10 rounded-full border-4 ${s.color === c.id ? "border-noche scale-110" : "border-white shadow"}`} style={{ background: COLOR_HEX[c.id] }} />
                 ))}
               </div>
@@ -276,7 +276,7 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
           </div>
           <p className="text-xs text-crema/70 mt-3">{k.ilustrado}</p>
           <ul className="flex flex-wrap gap-1.5 mt-3 text-xs">
-            {[s.ciudad, s.mascota && `${COMPANEROS.find((c) => c.id === s.companero)!.etiqueta[idioma]} ${s.mascota}`, AFICIONES.find((a) => a.id === s.aficion)!.etiqueta[idioma], s.amigo, COLORES.find((c) => c.id === s.color)!.etiqueta[idioma]]
+            {[s.ciudad, s.mascota && `${COMPANEROS.find((c) => c.id === s.companero)!.etiqueta[idioma]} ${s.mascota}`, AFICIONES.find((a) => a.id === s.aficion)!.etiqueta[idioma], s.amigo, s.color && COLORES.find((c) => c.id === s.color)?.etiqueta[idioma]]
               .filter(Boolean).map((v) => <li key={String(v)} className="rounded-full bg-crema/15 px-2.5 py-1">{v}</li>)}
           </ul>
         </div>

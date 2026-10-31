@@ -22,15 +22,20 @@ export async function guardar(clave: string, datos: Buffer | Uint8Array, tipo: s
 /** Lee un archivo guardado (URL de Blob, URL local o ruta pública /muestras/...). */
 export async function leer(url: string): Promise<Buffer> {
   const local = url.match(/\/api\/archivo\/(.+)$/);
-  if (local) return readFile(path.join(LOCAL, local[1]));
-  if (url.startsWith("/")) return readFile(path.join(process.cwd(), "public", url));
+  if (local) return readFile(rutaLocal(decodeURIComponent(local[1])));
+  if (url.startsWith("/")) return readFile(dentroDe(path.join(process.cwd(), "public"), url));
   const r = await fetch(url);
   if (!r.ok) throw new Error(`No se pudo leer ${url}: ${r.status}`);
   return Buffer.from(await r.arrayBuffer());
 }
 
-export function rutaLocal(clave: string) {
-  const p = path.normalize(path.join(LOCAL, clave));
-  if (!p.startsWith(LOCAL)) throw new Error("ruta no válida");
+function dentroDe(base: string, rel: string) {
+  const p = path.resolve(base, `.${path.sep}${rel}`);
+  const r = path.relative(base, p);
+  if (!r || r.startsWith("..") || path.isAbsolute(r)) throw new Error("ruta no válida");
   return p;
+}
+
+export function rutaLocal(clave: string) {
+  return dentroDe(LOCAL, clave);
 }

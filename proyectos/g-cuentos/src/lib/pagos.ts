@@ -15,8 +15,14 @@ export function stripe(): Stripe | null {
   return k ? new Stripe(k) : null;
 }
 
+/** En producción el secreto local (público en el repo) permitiría falsificar pagos: ahí es obligatorio el real. */
+export const esProduccion = () => process.env.VERCEL_ENV === "production" || process.env.NODE_ENV_LUNILLA === "production";
+
 export function secretoWebhook(): string {
-  return process.env.STRIPE_WEBHOOK_SECRET ?? SECRETO_WEBHOOK_LOCAL;
+  const s = process.env.STRIPE_WEBHOOK_SECRET;
+  if (s) return s;
+  if (esProduccion()) throw new Error("Falta STRIPE_WEBHOOK_SECRET en producción");
+  return SECRETO_WEBHOOK_LOCAL;
 }
 
 function precioStripe(f: Formato): string | undefined {

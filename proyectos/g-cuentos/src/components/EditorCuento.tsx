@@ -5,8 +5,8 @@ import { useState } from "react";
 import type { Idioma } from "@/lib/catalogo";
 
 const C = {
-  es: { titulo: "Lee y retoca todo su cuento", sub: "Cambia lo que quieras: un apodo, una frase de casa, el nombre de la abuela. Las ilustraciones siguen la historia, así que mejor no cambiar lo que pasa en cada página.", pagina: "Página", guardar: "Guardar cambios", guardado: "Guardado ✓", tituloL: "Título", dedicatoria: "Dedicatoria", error: "No se ha podido guardar", abrir: "Leer y retocar las {n} páginas", cerrar: "Cerrar el editor" },
-  ca: { titulo: "Llegeix i retoca tot el seu conte", sub: "Canvia el que vulguis: un sobrenom, una frase de casa, el nom de l'àvia. Les il·lustracions segueixen la història, així que millor no canviar el que passa a cada pàgina.", pagina: "Pàgina", guardar: "Desar els canvis", guardado: "Desat ✓", tituloL: "Títol", dedicatoria: "Dedicatòria", error: "No s'ha pogut desar", abrir: "Llegir i retocar les {n} pàgines", cerrar: "Tancar l'editor" },
+  es: { titulo: "Lee y retoca todo su cuento", sub: "Cambia lo que quieras: un apodo, una frase de casa, el nombre de la abuela. Las ilustraciones siguen la historia, así que mejor no cambiar lo que pasa en cada página. Como mucho 4 líneas por página.", pagina: "Página", guardar: "Guardar cambios", guardado: "Guardado ✓", tituloL: "Título", dedicatoria: "Dedicatoria", error: "No se ha podido guardar", abrir: "Leer y retocar las {n} páginas", cerrar: "Cerrar el editor" },
+  ca: { titulo: "Llegeix i retoca tot el seu conte", sub: "Canvia el que vulguis: un sobrenom, una frase de casa, el nom de l'àvia. Les il·lustracions segueixen la història, així que millor no canviar el que passa a cada pàgina. Com a molt 4 línies per pàgina.", pagina: "Pàgina", guardar: "Desar els canvis", guardado: "Desat ✓", tituloL: "Títol", dedicatoria: "Dedicatòria", error: "No s'ha pogut desar", abrir: "Llegir i retocar les {n} pàgines", cerrar: "Tancar l'editor" },
 };
 
 export function EditorCuento({ id, idioma, titulo, dedicatoria, paginas, max }: { id: string; idioma: Idioma; titulo: string; dedicatoria: string; paginas: string[]; max: number }) {

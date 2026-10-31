@@ -45,6 +45,7 @@ model Pedido {
   seguimientoUrl   String?
   entregadoEn      DateTime?
   intentos         Int       @default(0)
+  bloqueoHasta     DateTime? // cerrojo: solo un proceso avanza el pedido a la vez
   error            String?
   notas            String?
 

@@ -24,7 +24,15 @@ export async function marcarPagado(o: {
 }): Promise<Pedido | null> {
   const p = await db.pedido.findUnique({ where: { id: o.pedidoId } });
   if (!p) return null;
-  if (p.estado !== "borrador") return p; // webhook repetido: no hacer nada
+  if (p.estado !== "borrador") {
+    // Webhook repetido de la misma sesión: nada. Otra sesión pagada para el mismo pedido (dos pestañas): se cobró
+    // dos veces y solo se produce uno → queda anotado para reembolsar (lo revisa la tarea diaria en el resumen).
+    if (o.sessionId !== p.stripeSessionId) {
+      await evento("pago-duplicado", p.id, { sesion: o.sessionId, pago: o.paymentId, importe: o.importe, formato: o.formato });
+      await db.pedido.update({ where: { id: p.id }, data: { notas: `${p.notas ?? ""}\nPAGO DUPLICADO: reembolsar ${o.paymentId ?? o.sessionId} (${(o.importe / 100).toFixed(2)} €, ${o.formato ?? "?"})`.trim() } });
+    }
+    return p;
+  }
   const comision = o.afiliado ? Math.round((o.importe * configPais().afiliados.comisionPorcentaje) / 100) : null;
   const af = o.afiliado ? await db.afiliado.findUnique({ where: { codigo: o.afiliado } }) : null;
   const act = await db.pedido.update({
@@ -41,6 +49,23 @@ export async function marcarPagado(o: {
 }
 
 export async function avanzar(id: string): Promise<Pedido> {
+  // Cerrojo: el webhook, la entrega del taller y el cron pueden coincidir. Solo uno avanza el pedido; los demás
+  // salen sin hacer nada (si no, se duplicarían PDF, correos y el pedido a la imprenta). Caduca a los 6 minutos
+  // por si un proceso muere a medias (maxDuration es de 5).
+  const ahora = new Date();
+  const cogido = await db.pedido.updateMany({
+    where: { id, OR: [{ bloqueoHasta: null }, { bloqueoHasta: { lt: ahora } }] },
+    data: { bloqueoHasta: new Date(ahora.getTime() + 6 * 60_000) },
+  });
+  if (cogido.count !== 1) return db.pedido.findUniqueOrThrow({ where: { id } });
+  try {
+    return await avanzarConCerrojo(id);
+  } finally {
+    await db.pedido.update({ where: { id }, data: { bloqueoHasta: null } }).catch(() => {});
+  }
+}
+
+async function avanzarConCerrojo(id: string): Promise<Pedido> {
   let p = await db.pedido.findUniqueOrThrow({ where: { id } });
   for (let paso = 0; paso < 6; paso++) {
     const antes = p.estado;

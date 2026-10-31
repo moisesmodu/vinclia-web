@@ -94,10 +94,12 @@ function bloqueCentrado(
 ) {
   let tam = tamMax;
   let lineas = partirLineas(texto, fuente, tam, ancho);
-  while (lineas.length * tam * interlineado > altoMax && tam > 10) {
+  while (lineas.length * tam * interlineado > altoMax && tam > 8) {
     tam -= 0.5;
     lineas = partirLineas(texto, fuente, tam, ancho);
   }
+  const caben = Math.max(1, Math.floor(altoMax / (tam * interlineado)));
+  if (lineas.length > caben) lineas = [...lineas.slice(0, caben - 1), `${lineas[caben - 1].replace(/\s*\S*$/, "")}…`];
   const alto = lineas.length * tam * interlineado;
   let y = cy + alto / 2 - tam;
   for (const l of lineas) {
@@ -269,9 +271,10 @@ export async function generarInterior(e: EntradaPdf): Promise<Uint8Array> {
     const xe = b + 26 * MM, xv = b + 80 * MM, anchoV = corte - 80 * MM - 24 * MM;
     for (const [k, v] of filas) {
       p.drawText(k, { x: xe, y, size: 13, font: F.negrita, color: TERRACOTA });
-      const lineas = partirLineas(v, F.texto, 15, anchoV).slice(0, 3);
-      lineas.forEach((l, i) => p.drawText(l, { x: xv, y: y - i * 19, size: 15, font: F.texto, color: TINTA }));
-      y -= Math.max(1, lineas.length) * 19 + 14;
+      const tamV = partirLineas(v, F.texto, 15, anchoV).length > 3 ? 12.5 : 15;
+      const lineas = partirLineas(v, F.texto, tamV, anchoV).slice(0, 4);
+      lineas.forEach((l, i) => p.drawText(l, { x: xv, y: y - i * (tamV + 4), size: tamV, font: F.texto, color: TINTA }));
+      y -= Math.max(1, lineas.length) * (tamV + 4) + 14;
     }
     dibujarLunilla(p, b + corte - 28 * MM, b + 24 * MM, 16 * MM);
     numero(p, 4);

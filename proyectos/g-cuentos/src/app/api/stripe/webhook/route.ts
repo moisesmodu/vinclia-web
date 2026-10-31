@@ -27,7 +27,8 @@ export async function POST(req: Request) {
     shipping_details?: { name?: string | null; address?: Direccion | null } | null;
     collected_information?: { shipping_details?: { name?: string | null; address?: Direccion | null } | null } | null;
   };
-  if (s.payment_status !== "paid") return NextResponse.json({ recibido: true, pendiente: true });
+  // «no_payment_required»: pedido gratis con un cupón del 100 % (también hay que producirlo)
+  if (s.payment_status !== "paid" && s.payment_status !== "no_payment_required") return NextResponse.json({ recibido: true, pendiente: true });
   const pedidoId = s.metadata?.pedidoId ?? s.client_reference_id;
   if (!pedidoId) return NextResponse.json({ error: "sin pedido" }, { status: 400 });
   const envioStripe = s.collected_information?.shipping_details ?? s.shipping_details ?? null;

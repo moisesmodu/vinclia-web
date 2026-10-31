@@ -46,12 +46,30 @@ export interface Aspecto {
 
 const VOCAL = /^[aeiouàáèéíïòóúüh]/i;
 
-/** Artículo personal catalán: "en Pau", "la Martina", "l'Oriol", "l'Anna". */
+/** Artículo personal catalán: "en Pau", "la Martina", "l'Oriol", "l'Anna", "la Isabel". */
 export function articuloCa(nombre: string, genero: Genero): string {
   const n = nombre.trim();
   // h muda seguida de vocal también apostrofa (l'Helena); "l'" solo ante vocal
-  if (VOCAL.test(n) && !/^h[^aeiouàáèéíïòóúü]/i.test(n)) return `l'${n}`;
+  if (VOCAL.test(n) && !/^h[^aeiouàáèéíïòóúü]/i.test(n)) {
+    // «la» no se apostrofa ante i/u átonas: la Isabel, la Irene, la Inés, la Ivet (pero l'Irma, l'Úrsula)
+    if (genero === "f" && /^h?[iuïü]/i.test(n) && !iniciaTonica(n)) return `la ${n}`;
+    return `l'${n}`;
+  }
   return genero === "m" ? `en ${n}` : `la ${n}`;
+}
+
+/** ¿La primera vocal del nombre es la tónica? (reglas de acentuación del catalán, para nombres sueltos) */
+function iniciaTonica(n: string): boolean {
+  const w = n.toLowerCase().split(/[\s-]/)[0];
+  const tilde = w.search(/[àáèéíòóú]/);
+  if (tilde >= 0) return tilde <= 1; // Íngrid, Úrsula → tónica; Inés → átona
+  // Grupos vocálicos (la i/u entre vocales o tras otra vocal hace de semiconsonante)
+  const grupos = w.match(/[aeiouïü]+/g) ?? [];
+  if (grupos.length <= 1) return true; // monosílabo: Ian, Iu
+  // Agudas: acaban en consonante que no sea -s, -en, -in → tónica la última; llanas: la penúltima
+  const aguda = /[^aeiousn]$/.test(w) || (/n$/.test(w) && !/(en|in)$/.test(w));
+  const tonica = aguda ? grupos.length - 1 : grupos.length - 2;
+  return tonica === 0;
 }
 
 function preposicionDeCa(nombre: string, genero: Genero): string {
@@ -138,7 +156,15 @@ export function rellenar(texto: string, d: DatosNino, genero: Genero = d.genero)
     s = s.replace(/\{([A-Za-z.]+)\}/g, (todo, k: string) => (k in v ? v[k] : todo));
     if (s === antes) break;
   }
+  // Los nombres propios no se contraen («de El Mehdi», no «del Mehdi»): se apartan antes de contraer.
+  const nombres = [d.nombre, d.mascota, d.bebe, d.amigo].map((x) => x?.trim()).filter((x): x is string => !!x && /^els?\s/i.test(x));
+  const guardados: string[] = [];
+  for (const n of nombres) {
+    const re = new RegExp(`(?<![\\p{L}])${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}])`, "gu");
+    s = s.replace(re, () => `\u0001${guardados.push(n) - 1}\u0002`);
+  }
   s = contracciones(s, d.idioma);
+  s = s.replace(/\u0001(\d+)\u0002/g, (_, i) => guardados[Number(i)]);
   // Mayúscula tras inicio de frase (catalán: "en Pau" al principio → "En Pau").
   s = s.replace(/(^|[.!?…]\s+|—|«)(en|la|l')(\s?)(?=\p{Lu})/gu, (_, pre, art, esp) => pre + mayus(art) + esp);
   return s;

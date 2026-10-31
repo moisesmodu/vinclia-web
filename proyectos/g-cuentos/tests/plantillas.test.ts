@@ -40,4 +40,13 @@ test("artículo personal catalán", () => {
   assert.equal(articuloCa("Martina", "f"), "la Martina");
   assert.equal(articuloCa("Oriol", "m"), "l'Oriol");
   assert.equal(articuloCa("Anna", "f"), "l'Anna");
+  assert.equal(articuloCa("Isabel", "f"), "la Isabel"); // i átona: no se apostrofa
+  assert.equal(articuloCa("Irene", "f"), "la Irene");
+  assert.equal(articuloCa("Irma", "f"), "l'Irma");
+  assert.equal(articuloCa("Ivan", "m"), "l'Ivan");
+});
+
+test("los nombres propios no se contraen: «de El Mehdi»", () => {
+  const d: DatosNino = { nombre: "El Mehdi", edad: 6, genero: "m", ciudad: "Lleida", companero: "gato", mascota: "Nube", aficion: "dibujar", coleccion: "dormir", tema: "oscuridad", idioma: "es" };
+  for (const s of cuentoDePlantilla(d).paginas) assert.ok(!/\b(Del|del|Al|al) Mehdi/.test(s), s);
 });

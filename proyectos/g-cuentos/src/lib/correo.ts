@@ -16,7 +16,8 @@ export async function enviarCorreo(a: string, asunto: string, html: string, etiq
     await writeFile(path.join(dir, `${id}.html`), `<!-- Para: ${a}\nAsunto: ${asunto} -->\n${html}`);
     return { id, simulado: true };
   }
-  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE || configPais().legal.email });
+  // La etiqueta (p. ej. «entrega-<pedido>») es la clave de idempotencia: un reintento no manda el correo dos veces.
+  const r = await new Resend(k).emails.send({ from: REMITENTE, to: a, subject: asunto, html, replyTo: process.env.CORREO_SOPORTE || configPais().legal.email }, { idempotencyKey: `lunilla-${etiqueta}` });
   if (r.error) throw new Error(`Resend: ${r.error.message}`);
   return { id: r.data!.id, simulado: false };
 }

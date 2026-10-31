@@ -166,3 +166,9 @@ Al dar de alta `GELATO_API_KEY`, antes del primer pedido real:
 2. Un pedido en borrador (`GELATO_MODO=borrador`) y mirar la vista previa en el panel de Gelato: cubierta centrada,
    título dentro del cartón, 30 páginas en orden. Si su equipo pide cubierta e interior por separado, poner
    `GELATO_ARCHIVOS=separados` (manda `cover` + `content`).
+
+### Seguridad del webhook (31-10-2026)
+En producción (`VERCEL_ENV=production`) el webhook de Stripe ya **no** acepta el secreto del simulador: sin
+`STRIPE_WEBHOOK_SECRET` responde 400 y el pedido no avanza. Comprobar que la variable existe en Vercel (production) antes
+de redesplegar (`vercel env ls production | grep STRIPE_WEBHOOK_SECRET`). El simulador de pago está desactivado en
+producción. La columna nueva `bloqueoHasta` (cerrojo por pedido) la crea `prisma db push` en el build.

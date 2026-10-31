@@ -63,7 +63,9 @@ los correos a clientes y afiliadas se dejan como BORRADOR en Gmail, nunca se env
    - Pedidos en "ilustrando" con más de 3 horas: el taller está fallando; avísalo en PARA-MOISES.md.
    - Pedidos en "enviado_imprenta": llama a avanzar para refrescar el estado de Gelato; si lleva más de 7 días
      laborables sin enviarse, prepara borrador al cliente y revisa el pedido en Gelato.
-2. Soporte: en Gmail, busca correos nuevos a hola@numimates.com con «Lunilla» o con «Lunilla» en el asunto de las últimas 24 h.
+1b. En el mismo resumen, «pagosDuplicados»: cada uno es un cobro doble del mismo cuento (dos pestañas). Reembólsalo
+   en Stripe (solo con aprobación de Moisés) y anótalo en INCIDENCIAS.md.
+2. Soporte: en Gmail, busca correos nuevos a hola@numimates.com de las últimas 24 h que mencionen «Lunilla» (en el asunto o en el texto).
    Para cada uno, escribe un borrador de respuesta (castellano o catalán, según el cliente). Si piden rehacer el
    cuento (garantía: una vez), prepara el cambio y déjalo indicado en el borrador.
 3. Afiliadas (solo los lunes): busca 10 cuentas de maternidad o crianza nuevas (3.000–60.000 seguidores, España,

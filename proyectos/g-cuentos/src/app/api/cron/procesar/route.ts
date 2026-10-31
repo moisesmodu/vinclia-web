@@ -14,10 +14,15 @@ export const maxDuration = 300;
 export async function GET(req: Request) {
   const okCron = process.env.CRON_SECRET && req.headers.get("authorization") === `Bearer ${process.env.CRON_SECRET}`;
   if (!okCron && !esAdmin(req)) return NextResponse.json({ error: "no autorizado" }, { status: 401 });
-  const pendientes = await db.pedido.findMany({
-    where: { estado: { in: ESTADOS_ACTIVOS.filter((e) => e !== "ilustrando") } },
-    orderBy: { pagadoEn: "asc" }, take: 10, select: { id: true },
+  // Lo que hay que producir va primero (también «ilustrando»: si la entrega del taller coincidió con otro proceso
+  // que tenía el cerrojo, aquí se completa); los que esperan el envío de la imprenta (días) van aparte y en rueda
+  // (avanzar() toca actualizadoEn al coger el cerrojo), para que nunca bloqueen a los pedidos nuevos.
+  const producir = await db.pedido.findMany({
+    where: { estado: { in: ESTADOS_ACTIVOS.filter((e) => e !== "enviado_imprenta") } },
+    orderBy: { actualizadoEn: "asc" }, take: 20, select: { id: true },
   });
+  const esperando = await db.pedido.findMany({ where: { estado: "enviado_imprenta" }, orderBy: { actualizadoEn: "asc" }, take: 10, select: { id: true } });
+  const pendientes = [...producir, ...esperando];
   const res = [];
   for (const { id } of pendientes) res.push({ id, estado: (await avanzar(id)).estado });
   // Recuperación: un único correo a quien fue al pago, marcó «recuérdamelo» y no terminó en 20 h.

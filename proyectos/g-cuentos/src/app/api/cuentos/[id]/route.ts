@@ -7,7 +7,12 @@ import type { DatosNino } from "@/lib/rellenar";
 
 export const runtime = "nodejs";
 
-const limpio = (s: string) => s.replace(/[<>{}|\\]/g, "").replace(/[ \t]+/g, " ").trim();
+// Saltos de línea: se respetan (poemas, diálogos) pero con tope para que el texto quepa en su caja del libro.
+const saltos = (s: string, max: number) => {
+  const partes = s.replace(/\r/g, "").split(/\n+/).map((x) => x.trim()).filter(Boolean);
+  return partes.length > max + 1 ? [...partes.slice(0, max), partes.slice(max).join(" ")].join("\n") : partes.join("\n");
+};
+const limpio = (s: string, max = 3) => saltos(s.replace(/[<>{}|\\]/g, "").replace(/[ \t]+/g, " "), max).trim();
 
 // Retoque del texto antes de pagar: la familia puede cambiar título, dedicatoria y cualquier página.
 // Solo en borrador; misma cantidad de páginas y el mismo límite de caracteres de su franja de edad.
@@ -28,9 +33,9 @@ export async function PATCH(req: Request, { params }: { params: Promise<{ id: st
   const actual = p.cuento as unknown as Cuento;
   const nuevo: Cuento = {
     ...actual,
-    titulo: r.data.titulo !== undefined ? limpio(r.data.titulo) : actual.titulo,
-    dedicatoria: r.data.dedicatoria !== undefined ? r.data.dedicatoria.replace(/[<>{}|\\]/g, "").trim() : actual.dedicatoria,
-    paginas: r.data.paginas ? r.data.paginas.map(limpio) : actual.paginas,
+    titulo: r.data.titulo !== undefined ? limpio(r.data.titulo, 0) : actual.titulo,
+    dedicatoria: r.data.dedicatoria !== undefined ? limpio(r.data.dedicatoria, 6) : actual.dedicatoria,
+    paginas: r.data.paginas ? r.data.paginas.map((x) => limpio(x)) : actual.paginas,
   };
   if (nuevo.paginas.some((x) => x.length < 20)) return NextResponse.json({ error: "alguna página se ha quedado vacía" }, { status: 400 });
   await db.pedido.update({ where: { id }, data: { cuento: JSON.parse(JSON.stringify({ ...nuevo, retocado: true })) } });
