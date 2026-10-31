@@ -128,3 +128,10 @@ En producción se usa la API pública (`LANGUAGETOOL_URL=https://api.languagetoo
   registro coloquial, «al + infinitiu», «gaire/molt»; están anotadas en el lote de revisión humana y en los informes de los agentes de contenido.
 - **Varios países (regla 8):** precios, cuotas, legal y organismos en `config/paises/es.json`; el motor sirve para vasco, gallego o portugués
   cambiando `config/examens.json`, el banco y las reglas (CARTERA, expansión).
+
+## SEO (31/10/2026)
+
+31 guías SEO en `contenido/seo/` (ca/es, Markdown mínimo con enlaces internos y externos); analítica sin cookies con
+`@vercel/analytics`; verificación de Search Console por variable `GOOGLE_SITE_VERIFICATION`. Venta cruzada con Plaça
+(tests de oposiciones) desde las guías de cuerpos. Ver DESPLIEGUE.md, «SEO y medición».
+

@@ -68,3 +68,16 @@ sintetizada y el Whisper (sin proveedor), y la corrección con modelo de lenguaj
 **Aviso:** un despliegue lanzado por error desde `proyectos/m-catala` (en vez de la raíz) creó un segundo proyecto de Vercel llamado `m-catala` (https://m-catala.vercel.app), sin base de datos ni variables. No se usa: Moisés puede borrarlo en vercel.com → m-catala → Settings → Delete (la sesión no tuvo permiso para borrarlo). El bueno es `aprova-catala`.
 
 Ejecutado el 2026-10-28
+
+## SEO y medición (31/10/2026, sesión de marketing)
+
+- Dominio: sigue en `aprova-catala.vercel.app`; `aprova.cat` pendiente de compra (MARCAS.md). Cuando exista: `NEXT_PUBLIC_URL`
+  al dominio y redespliegue; el `.vercel.app` no se redirige mientras el webhook de Stripe apunte a él.
+- Search Console: con la propiedad de tipo Dominio basta el TXT en los DNS; si se verifica por etiqueta, variable
+  `GOOGLE_SITE_VERIFICATION=<token>` en Vercel y redespliegue (el layout la emite solo si existe).
+- Vercel Web Analytics está activado en el proyecto y el código carga `@vercel/analytics` (sin cookies): visitas por
+  `utm_campaign` en Vercel → Analytics tras el redespliegue.
+- Contenido nuevo: guía `suspes-c1-catala-que-fer` (ca/es), título del diagnóstico con «test de nivell gratis» y enlace a
+  los tests de Plaça (`utm_source=aprova`) al final de las guías de Mossos, TCAI, Generalitat y Bombers. Requiere
+  `npm run compilar` (lo hace el build).
+
