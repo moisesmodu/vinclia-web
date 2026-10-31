@@ -93,6 +93,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica Vercel sin cookies, FAQPage en las 22 guías, venta cruzada medible a tuspapeles.app, guías «Examen CCSE noviembre 2026» e «Inscripción CCSE enero 2027» (commits 3767b7b y dd3cee4 en la rama del PR #2; build OK). Pendiente: redesplegar y Search Console"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Productos de Stripe real renombrados a «CCSE Fácil — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
       }
     ],
     "proximos": [
@@ -389,6 +393,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "SEO (31/10): analítica, página «Empadronarse en Lleida», tarjeta «Prepara el CCSE» hacia ccsefacil.com, sección de nacionalidad en 2 años, FAQ NIE/TIE (commits 97c99e8…c643540 en la rama del PR #3; build OK). Pendiente: redesplegar y Search Console"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Productos de Stripe real renombrados a «Tus Papeles — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
       }
     ],
     "proximos": [
@@ -699,6 +707,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Arreglo de Stripe real publicado en https://oposita.digital (commit 79b93cb): cliente, precio y portal por modo; si falta permiso del portal, mensaje claro. Pendiente: borrar la cuenta de comprobación de producción"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Productos de Stripe real renombrados a «Oposita — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
       }
     ],
     "proximos": [
@@ -1837,6 +1849,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Código HERMANOS20 creado en Stripe real (20 % en la primera compra, cupón 3yGv4vCo); la clave restringida ya tiene permisos de cupones y códigos promocionales"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "Productos de Stripe real renombrados a «Lunilla — …»; código con nombre propio en el pago y sufijo en el extracto subido a la rama (falta publicar en producción)"
       }
     ],
     "proximos": [
@@ -3270,6 +3286,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Cuenta de AdSense creada (ca-pub-1805394669180486) con netoclaro.app; conectándola a netoclaro.app e impuestoclaro.es (ADSENSE_CLIENT y ads.txt)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "AdSense: netoclaro.app e impuestoclaro.es verificados y en revisión («Preparando»); ads.txt y metaetiqueta servidos. Falta publicar el mensaje RGPD (logotipos subidos)"
       }
     ],
     "proximos": [
