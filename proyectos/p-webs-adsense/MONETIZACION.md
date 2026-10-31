@@ -5,7 +5,8 @@ semanal (TAREA-PROGRAMADA.md). Última actualización: 28/10/2026, sin datos rea
 
 ## Cómo se cobra
 
-- **Solo AdSense.** El visitante no paga nada. No hay precio ni pantalla de pago, porque las calculadoras son gratis.
+- **AdSense, afiliación y productos propios.** Las calculadoras son gratis. Además, bajo el resultado de las que
+  encajan se ofrece un producto propio de pago (apartado «Tercera vía»).
 - **Dos bloques de anuncio por página:** uno bajo el resultado y otro al final del texto. Nunca hay anuncios antes del
   formulario.
 - **Nada de anuncios de pago para traer visitas.** Las visitas llegan por SEO.
@@ -40,6 +41,27 @@ AdSense, así que pueden dar el primer euro antes.
 **Fecha prevista del primer euro con afiliación:** unos 7–10 días después de que Moisés se dé de alta en Xolo y Qonto y
 lleguen las primeras visitas de foros (las 100 primeras visitas, más abajo). Es una estimación y depende sobre todo de
 la tasa de conversión, que hoy no conocemos.
+
+## Tercera vía: productos propios de pago (la más rápida: no depende de AdSense ni de altas)
+
+Plantillas en Excel con guía en PDF, generadas desde los mismos parámetros oficiales que las calculadoras
+(`fabrica/productos.json`, `fabrica/scripts/productos/`). Se cobran con un Payment Link de Stripe (cuenta Numi Mates):
+
+| Producto | Sitio | Precio | Se ofrece bajo | Página |
+|---|---|---|---|---|
+| Kit del autónomo 2027 | ImpuestoClaro | 9,90 € | 303, 130, neto autónomo, tarifa plana, precio/hora, factura, IVA… | `/kit-autonomo-2027/` |
+| Pack despido y finiquito | NetoClaro | 6,90 € | finiquito, indemnización, paro | `/pack-despido-finiquito/` |
+| Comparador de hipotecas | HogarClaro | 6,90 € | simulador, TAE, fija o variable, cambiar de banco… | `/comparador-hipotecas-excel/` |
+| Planificador de taxes 2026 | ChequeClaro | 7,99 $ | 1099, federal, estatal, reembolso, W-4 | `/planificador-taxes-2026/` |
+
+- **Embudo:** calculadora (resultado gratis) → bloque «De <Sitio> · Producto propio» con frase y precio → página de
+  producto (capturas, FAQ, casilla de consentimiento) → Stripe → `/descarga/<token>/`. Dos pantallas entre «quiero
+  esto» y «pagado».
+- **Un bloque comercial por página:** si hay producto propio con enlace de pago, no sale el de afiliado.
+- **Conversión esperada (estimación, sin datos):** 2–5 % de las visitas a esas calculadoras hacen clic en el bloque y
+  3–6 % de quienes ven la página compran: 0,06–0,3 % de las visitas. Con unas 500 visitas a esas calculadoras, entre 0 y
+  2 ventas: el primer euro llega con las primeras visitas de foros, sin esperar a AdSense.
+- **Primer euro previsto:** en cuanto se active el modo real y lleguen las 100 primeras visitas (apartado siguiente).
 
 ## Previsión de RPM, en euros por 1.000 páginas vistas
 
