@@ -1024,6 +1024,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Los 18 juegos publicados en itch.io (https://nuvoletgames.itch.io), jugables en el navegador, con portada, 5 capturas y donativo sugerido de 2 $. GameMonetize: 18 fichas creadas con su Game ID y paquetes recompilados (commit 95ab121 en claude/juegos-primer-juego)"
+      },
+      {
+        "fecha": "2026-10-31",
+        "texto": "GameDistribution: 18 juegos creados (por API), con su Game ID compilado en el paquete (commit 63579b1), zip subido y 5 miniaturas cada uno. GameMonetize: 18 fichas completas con zip e imágenes. Falta en ambos verificar el SDK viendo un anuncio en el visor de cada juego y pulsar «Request activation»"
       }
     ],
     "proximos": [
