@@ -153,3 +153,8 @@ Ejecutado el 2026-10-28
 - Search Console: cuando Moisés dé el valor, `GOOGLE_SITE_VERIFICATION` en Vercel o TXT en DNS; después enviar `https://ccsefacil.com/sitemap.xml`.
 - Despliegue de estos cambios (sesión del Mac o cualquier sesión con `VERCEL_TOKEN`), desde la raíz del repo en la rama `claude/a-ccse`:
   `npx vercel@latest link --yes --project ccse-en-tu-idioma --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID && npx vercel@latest deploy --prod --yes --token $VERCEL_TOKEN --scope $VERCEL_TEAM_ID`
+
+### Redespliegue SEO (sesión del Mac, 31-10-2026, 05:15)
+Publicado el commit dd3cee4 en https://ccsefacil.com: `/es/guia/examen-ccse-noviembre-2026` y `/es/guia/inscripcion-ccse-enero-2027` responden y la portada enlaza a tuspapeles.app. `@vercel/analytics` va en el código; las visitas se ven en Vercel → Analytics. Pendiente (Moisés): `GOOGLE_SITE_VERIFICATION` o el TXT de Search Console.
+
+Ejecutado el 2026-10-31
