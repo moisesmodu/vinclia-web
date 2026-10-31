@@ -11,7 +11,7 @@ en la rama `claude/g-cuentos` (PR #5), salvo que se diga otra cosa.
 |---|---|
 | Proyecto de Vercel | `lunilla` (equipo `$VERCEL_TEAM_ID`), Root Directory `proyectos/g-cuentos`, framework Next.js |
 | Proyecto de Neon | `cartera-g-cuentos`, región `aws-eu-west-2` (nombre y región de `DESPLIEGUES.md` §3) |
-| Productos de Stripe (cuenta Numi Mates) | `Cartera · Cuentos · PDF 7,90 €` y `Cartera · Cuentos · Tapa dura 36,90 €` (lo crea el script) |
+| Productos de Stripe (cuenta Numi Mates) | `Lunilla — Cuento en PDF` (7,90 €) y `Lunilla — Cuento en tapa dura` (36,90 €) (lo crea el script; renombra los antiguos «Cartera · Cuentos · …») |
 | Webhook de Stripe | `https://<url>/api/stripe/webhook`, eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded` |
 | Imprenta | Gelato, producto fotolibro tapa dura 200 × 200 mm (8 × 8"), 30 páginas interiores, un único PDF (cubierta + guarda + interior + blanca), sangrado 3 mm (`src/config/paises/es-ES.json`) |
 | Cron | `vercel.json`: `/api/cron/procesar` cada 5 minutos (necesita plan Pro) |

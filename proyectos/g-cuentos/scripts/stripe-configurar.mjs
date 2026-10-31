@@ -14,9 +14,11 @@ const modo = /^(sk|rk)_live/.test(clave) ? "real" : "prueba";
 const config = JSON.parse(readFileSync(new URL("../src/config/paises/es-ES.json", import.meta.url), "utf8"));
 const euros = (c) => (c / 100).toFixed(2).replace(".", ",") + " €";
 
+// Nombre comercial que ve el cliente (antes «Cartera · Cuentos · …»): los productos existentes se renombran, sin tocar precios.
+const MARCA = "Lunilla";
 const PRODUCTOS = [
-  { formato: "pdf", env: "STRIPE_PRICE_PDF", nombre: `Cartera · Cuentos · PDF ${euros(config.precios.pdf)}`, cents: config.precios.pdf },
-  { formato: "tapaDura", env: "STRIPE_PRICE_TAPA_DURA", nombre: `Cartera · Cuentos · Tapa dura ${euros(config.precios.tapaDura)}`, cents: config.precios.tapaDura },
+  { formato: "pdf", env: "STRIPE_PRICE_PDF", nombre: `${MARCA} — Cuento en PDF`, cents: config.precios.pdf },
+  { formato: "tapaDura", env: "STRIPE_PRICE_TAPA_DURA", nombre: `${MARCA} — Cuento en tapa dura`, cents: config.precios.tapaDura },
 ];
 
 const salida = [];
@@ -25,6 +27,12 @@ for (const p of PRODUCTOS) {
   const existentes = await stripe.prices.list({ lookup_keys: [lookup], active: true, limit: 1 });
   if (existentes.data[0]) {
     console.log(`= ${p.nombre}: precio ${existentes.data[0].id} ya existe`);
+    const prodId = typeof existentes.data[0].product === "string" ? existentes.data[0].product : existentes.data[0].product.id;
+    const prod = await stripe.products.retrieve(prodId);
+    if (prod.name !== p.nombre) {
+      await stripe.products.update(prodId, { name: p.nombre });
+      console.log(`  producto ${prodId} renombrado: «${prod.name}» → «${p.nombre}»`);
+    }
     salida.push(`${p.env}=${existentes.data[0].id}`);
     continue;
   }
@@ -43,11 +51,21 @@ for (const p of PRODUCTOS) {
 
 // Cupón para hermanos (anunciado en la portada): 20 % con el código HERMANOS20. Repetible.
 const codigos = await stripe.promotionCodes.list({ code: "HERMANOS20", limit: 1 });
-if (codigos.data[0]) console.log("= código HERMANOS20 ya existe");
+if (codigos.data[0]) {
+  console.log("= código HERMANOS20 ya existe");
+  // El nombre del cupón sale en Checkout junto al descuento: también con la marca.
+  const cupon = codigos.data[0].coupon ?? codigos.data[0].promotion?.coupon;
+  const cuponId = typeof cupon === "string" ? cupon : cupon?.id;
+  const nombreCupon = `${MARCA} · Hermanos 20 %`;
+  if (cuponId) {
+    const c = await stripe.coupons.retrieve(cuponId);
+    if (c.name !== nombreCupon) { await stripe.coupons.update(cuponId, { name: nombreCupon }); console.log(`  cupón ${cuponId} renombrado → «${nombreCupon}»`); }
+  }
+}
 else {
   const cupones = await stripe.coupons.list({ limit: 100 });
   const cupon = cupones.data.find((c) => c.metadata?.proyecto === "g-cuentos" && c.percent_off === 20)
-    ?? (await stripe.coupons.create({ percent_off: 20, duration: "once", name: "Cartera · Cuentos · Hermanos 20 %", metadata: { proyecto: "g-cuentos" } }));
+    ?? (await stripe.coupons.create({ percent_off: 20, duration: "once", name: `${MARCA} · Hermanos 20 %`, metadata: { proyecto: "g-cuentos" } }));
   await stripe.promotionCodes.create({ coupon: cupon.id, code: "HERMANOS20", metadata: { proyecto: "g-cuentos" } });
   console.log(`+ código HERMANOS20 (cupón ${cupon.id})`);
 }

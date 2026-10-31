@@ -5,6 +5,11 @@ import { URL_BASE, precioCents, type Formato } from "./config";
 // el mismo webhook firmado con STRIPE_WEBHOOK_SECRET, para probar el flujo de punta a punta.
 export const SECRETO_WEBHOOK_LOCAL = "whsec_simulador_local_lunilla";
 
+/** Nombre comercial que ve el cliente en Checkout y recibos (la cuenta de Stripe es Numi Mates). */
+export const MARCA = "Lunilla";
+/** Sufijo del descriptor bancario: prefijo de la cuenta + «* » + esto ≤ 22; solo letras, números y espacios. */
+export const DESCRIPTOR_SUFIJO = "LUNILLA";
+
 // Cuenta de Stripe «Numi Mates» (DESPLIEGUES.md §2): STRIPE_SECRET_KEY (real, al lanzar) o STRIPE_TEST_SECRET_KEY.
 export function claveStripe(): string | undefined {
   return process.env.STRIPE_SECRET_KEY || process.env.STRIPE_TEST_SECRET_KEY || undefined;
@@ -46,17 +51,29 @@ export async function crearCheckout(d: DatosCheckout): Promise<{ url: string; se
     const sessionId = `cs_sim_${d.pedidoId}_${Date.now()}`;
     return { url: `${base}${pref}/pago-simulado/${d.pedidoId}?s=${sessionId}&f=${d.formato}`, sessionId, simulado: true };
   }
-  const nombre =
+  const nombre = `${MARCA} — ` + (
     d.formato === "pdf"
       ? d.idioma === "ca" ? `Conte personalitzat en PDF: ${d.titulo}` : `Cuento personalizado en PDF: ${d.titulo}`
-      : d.idioma === "ca" ? `Conte personalitzat en tapa dura: ${d.titulo}` : `Cuento personalizado en tapa dura: ${d.titulo}`;
+      : d.idioma === "ca" ? `Conte personalitzat en tapa dura: ${d.titulo}` : `Cuento personalizado en tapa dura: ${d.titulo}`);
   const sesion = await s.checkout.sessions.create({
     mode: "payment",
     locale: d.idioma === "ca" ? "auto" : "es",
     customer_email: d.email,
     client_reference_id: d.pedidoId,
     metadata: { proyecto: "g-cuentos", pedidoId: d.pedidoId, formato: d.formato, afiliado: d.afiliado ?? "" },
-    payment_intent_data: { metadata: { proyecto: "g-cuentos", pedidoId: d.pedidoId } },
+    payment_intent_data: {
+      // El extracto del banco muestra la web y no solo la cuenta (p. ej. «NUMI MATES* LUNILLA»).
+      statement_descriptor_suffix: DESCRIPTOR_SUFIJO,
+      description: nombre,
+      metadata: { proyecto: "g-cuentos", pedidoId: d.pedidoId },
+    },
+    custom_text: {
+      submit: {
+        message:
+          `${MARCA} · ` +
+          (d.idioma === "ca" ? "Gràcies per crear el teu conte a lunilla.cat." : "Gracias por crear tu cuento en lunilla.cat."),
+      },
+    },
     // Precio creado por scripts/stripe-configurar.mjs (STRIPE_PRICE_*); si no existe, precio en línea.
     line_items: [
       precioStripe(d.formato)
