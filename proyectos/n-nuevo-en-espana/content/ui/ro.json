@@ -1,9 +1,9 @@
 {
   "idioma": "Română",
-  "marca": "Nuevo en España",
+  "marca": "Tus Papeles",
   "lema": "Formalitățile tale în Spania, pas cu pas și în limba ta",
   "meta": {
-    "titulo": "Nuevo en España · Ghiduri pentru formalitățile străinilor, în limba ta",
+    "titulo": "Tus Papeles · Ghiduri pentru formalitățile străinilor, în limba ta",
     "descripcion": "Ghiduri pas cu pas pentru reînnoirea permisului de ședere, înscrierea în registrul primăriei (empadronamiento), obținerea cardului de sănătate, a numărului de Seguridad Social, a permisului de conducere și a cetățeniei spaniole. Surse oficiale, în 7 limbi."
   },
   "nav": {
@@ -42,7 +42,8 @@
       "nacionalidad": "Vreau să cer cetățenia spaniolă"
     },
     "ordenRecomendado": "Ordinea recomandată",
-    "novedad": "Noutate: reînnoirea autorizațiilor acordate prin Real Decreto 316/2026"
+    "novedad": "Noutate: reînnoirea autorizațiilor acordate prin Real Decreto 316/2026",
+    "masBuscado": "Cele mai căutate"
   },
   "guia": {
     "resumen": "Rezumat",
@@ -75,7 +76,9 @@
     "celebracion": "Gata! Ai totul pregătit.",
     "ccseTitulo": "Pregătește examenul CCSE",
     "ccseTexto": "Pentru cetățenie trebuie aproape întotdeauna să promovezi CCSE (25 de întrebări în spaniolă despre Spania). La CCSE en tu idioma ai cele 300 de întrebări oficiale explicate în limba ta, cu 25 de întrebări și un test simulat gratuit.",
-    "ccseBoton": "Pregătește CCSE gratuit"
+    "ccseBoton": "Pregătește CCSE gratuit",
+    "conSuscripcion": "Cu abonament",
+    "incluyeGuia": "Ghidul complet include"
   },
   "recordatorio": {
     "email": "Adresa ta de e-mail",
@@ -119,7 +122,10 @@
     "iva": "TVA inclus",
     "cancela": "Anulezi dintr-un clic din „Contul meu”. Fără obligații.",
     "sinRenovacion": "O singură plată. Nu se reînnoiește singur.",
-    "porMes": "pe lună"
+    "porMes": "pe lună",
+    "garantia": "Garanție de 7 zile: dacă nu îți este util, scrie-ne de pe adresa cu care ai plătit și îți returnăm banii.",
+    "doceMeses": "12 luni",
+    "eligePlan": "Alege planul"
   },
   "acceso": {
     "titulo": "Recuperează accesul",
@@ -152,7 +158,7 @@
   },
   "aviso": {
     "corto": "Informații generale din surse oficiale. Nu este consultanță juridică.",
-    "largo": "Nuevo en España oferă informații publice din surse oficiale, citate și datate. Nu este consultanță juridică, nu face programări (cita previa) și nu face formalități în numele nimănui. Regulile se schimbă: verifică întotdeauna sursa oficială din link. Pentru cazul tău concret, consultă un avocat sau o organizație gratuită de sprijin pentru migranți."
+    "largo": "Tus Papeles oferă informații publice din surse oficiale, citate și datate. Nu este consultanță juridică, nu face programări (cita previa) și nu face formalități în numele nimănui. Regulile se schimbă: verifică întotdeauna sursa oficială din link. Pentru cazul tău concret, consultă un avocat sau o organizație gratuită de sprijin pentru migranți."
   },
   "pie": {
     "avisoLegal": "Mențiuni legale",
@@ -166,7 +172,7 @@
     "confirmarAsunto": "Confirmă mementourile pentru {guia}",
     "confirmarTexto": "Apasă pe acest link pentru a activa mementourile pentru ghidul „{guia}”:",
     "avisoAsunto": "Memento: {guia}",
-    "accesoAsunto": "Linkul tău pentru a intra în Nuevo en España",
+    "accesoAsunto": "Linkul tău pentru a intra în Tus Papeles",
     "accesoTexto": "Apasă pe acest link pentru a intra pe acest dispozitiv. Expiră în 30 de minute:",
     "baja": "Dezabonează-mă de la aceste notificări",
     "abrirGuia": "Deschide ghidul"
@@ -175,7 +181,8 @@
     "volver": "Înapoi",
     "enviar": "Trimite",
     "cerrar": "Închide",
-    "inicio": "Acasă"
+    "inicio": "Acasă",
+    "saltar": "Sari la conținut"
   },
   "oferta": {
     "titulo": "Te-ai înscris la padrón? Ce urmează?",

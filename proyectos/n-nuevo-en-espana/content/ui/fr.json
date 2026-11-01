@@ -1,9 +1,9 @@
 {
   "idioma": "Français",
-  "marca": "Nuevo en España",
+  "marca": "Tus Papeles",
   "lema": "Vos démarches en Espagne, étape par étape et dans votre langue",
   "meta": {
-    "titulo": "Nuevo en España · Guides des démarches pour les étrangers, dans votre langue",
+    "titulo": "Tus Papeles · Padrón, NIE, TIE et titre de séjour en Espagne",
     "descripcion": "Guides étape par étape pour renouveler votre titre de séjour, vous inscrire au registre municipal (empadronamiento), demander la carte de santé, le numéro de Sécurité sociale, le permis de conduire et la nationalité espagnole. Sources officielles, en 7 langues."
   },
   "nav": {
@@ -42,7 +42,8 @@
       "nacionalidad": "Je veux demander la nationalité espagnole"
     },
     "ordenRecomendado": "Ordre conseillé",
-    "novedad": "Nouveau : renouvellement des autorisations du Real Decreto 316/2026"
+    "novedad": "Nouveau : renouvellement des autorisations du Real Decreto 316/2026",
+    "masBuscado": "Les plus recherchées"
   },
   "guia": {
     "resumen": "Résumé",
@@ -75,7 +76,9 @@
     "celebracion": "Démarche prête ! Vous avez tout ce qu'il faut.",
     "ccseTitulo": "Préparez l'examen CCSE",
     "ccseTexto": "Pour la nationalité, il faut presque toujours réussir le CCSE (25 questions en espagnol sur l'Espagne). CCSE en tu idioma explique les 300 questions officielles dans votre langue, avec 25 questions et un examen blanc gratuits.",
-    "ccseBoton": "Préparer le CCSE gratuitement"
+    "ccseBoton": "Préparer le CCSE gratuitement",
+    "conSuscripcion": "Avec abonnement",
+    "incluyeGuia": "Le guide complet comprend"
   },
   "recordatorio": {
     "email": "Votre adresse e-mail",
@@ -119,7 +122,10 @@
     "iva": "TVA incluse",
     "cancela": "Résiliez en un clic depuis « Mon compte ». Sans engagement.",
     "sinRenovacion": "Un seul paiement. Pas de renouvellement automatique.",
-    "porMes": "par mois"
+    "porMes": "par mois",
+    "garantia": "Garantie de 7 jours : si ce n'est pas utile pour vous, écrivez-nous depuis l'adresse utilisée pour payer et nous vous remboursons.",
+    "doceMeses": "12 mois",
+    "eligePlan": "Choisissez votre formule"
   },
   "acceso": {
     "titulo": "Récupérer l'accès",
@@ -152,7 +158,7 @@
   },
   "aviso": {
     "corto": "Informations générales issues de sources officielles. Ce n'est pas un conseil juridique.",
-    "largo": "Nuevo en España propose des informations publiques issues de sources officielles, citées et datées. Ce n'est pas un conseil juridique, le site ne prend pas de rendez-vous (cita previa) et ne fait aucune démarche au nom de quelqu'un. Les règles changent : vérifiez toujours la source officielle indiquée en lien. Pour votre cas précis, consultez un avocat ou une association d'accueil gratuite."
+    "largo": "Tus Papeles propose des informations publiques issues de sources officielles, citées et datées. Ce n'est pas un conseil juridique, le site ne prend pas de rendez-vous (cita previa) et ne fait aucune démarche au nom de quelqu'un. Les règles changent : vérifiez toujours la source officielle indiquée en lien. Pour votre cas précis, consultez un avocat ou une association d'accueil gratuite."
   },
   "pie": {
     "avisoLegal": "Mentions légales",
@@ -166,7 +172,7 @@
     "confirmarAsunto": "Confirmez vos rappels pour {guia}",
     "confirmarTexto": "Cliquez sur ce lien pour activer les rappels du guide « {guia} » :",
     "avisoAsunto": "Rappel : {guia}",
-    "accesoAsunto": "Votre lien pour vous connecter à Nuevo en España",
+    "accesoAsunto": "Votre lien pour vous connecter à Tus Papeles",
     "accesoTexto": "Cliquez sur ce lien pour vous connecter sur cet appareil. Il expire dans 30 minutes :",
     "baja": "Me désinscrire de ces rappels",
     "abrirGuia": "Ouvrir le guide"
@@ -175,7 +181,8 @@
     "volver": "Retour",
     "enviar": "Envoyer",
     "cerrar": "Fermer",
-    "inicio": "Accueil"
+    "inicio": "Accueil",
+    "saltar": "Aller au contenu"
   },
   "oferta": {
     "titulo": "Empadronamiento fait : et maintenant ?",

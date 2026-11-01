@@ -1,9 +1,9 @@
 {
   "idioma": "English",
-  "marca": "Nuevo en España",
+  "marca": "Tus Papeles",
   "lema": "Your paperwork in Spain, step by step, in your language",
   "meta": {
-    "titulo": "Nuevo en España · Guides to official procedures for foreigners, in your language",
+    "titulo": "Tus Papeles · Padrón, NIE, TIE and residency in Spain, step by step",
     "descripcion": "Step-by-step guides to renew your residence permit, register with your town hall (empadronamiento), get your health card, your Social Security number, your driving licence and Spanish nationality. Official sources, in 7 languages."
   },
   "nav": {
@@ -42,7 +42,8 @@
       "nacionalidad": "I want to apply for Spanish nationality"
     },
     "ordenRecomendado": "Recommended order",
-    "novedad": "New: renewal of permits granted under Real Decreto 316/2026"
+    "novedad": "New: renewal of permits granted under Real Decreto 316/2026",
+    "masBuscado": "Most searched"
   },
   "guia": {
     "resumen": "Summary",
@@ -75,7 +76,9 @@
     "celebracion": "Done! You have everything ready.",
     "ccseTitulo": "Prepare for the CCSE test",
     "ccseTexto": "To apply for citizenship you almost always need to pass the CCSE (25 questions in Spanish about Spain). CCSE en tu idioma explains the 300 official questions in your language, with 25 questions and one mock test for free.",
-    "ccseBoton": "Practise the CCSE for free"
+    "ccseBoton": "Practise the CCSE for free",
+    "conSuscripcion": "With subscription",
+    "incluyeGuia": "The full guide includes"
   },
   "recordatorio": {
     "email": "Your email address",
@@ -119,7 +122,10 @@
     "iva": "VAT included",
     "cancela": "Cancel in one click from “My account”. No commitment.",
     "sinRenovacion": "One payment. It does not renew by itself.",
-    "porMes": "per month"
+    "porMes": "per month",
+    "garantia": "7-day guarantee: if it isn't useful to you, email us from the address you paid with and we'll refund you.",
+    "doceMeses": "12 months",
+    "eligePlan": "Choose your plan"
   },
   "acceso": {
     "titulo": "Recover access",
@@ -152,7 +158,7 @@
   },
   "aviso": {
     "corto": "General information from official sources. This is not legal advice.",
-    "largo": "Nuevo en España offers public information from official sources, quoted and dated. It is not legal advice, it does not book appointments (cita previa) and it does not carry out procedures on anyone's behalf. Rules change: always check the linked official source. For your specific case, consult a lawyer or a free support organisation for migrants."
+    "largo": "Tus Papeles offers public information from official sources, quoted and dated. It is not legal advice, it does not book appointments (cita previa) and it does not carry out procedures on anyone's behalf. Rules change: always check the linked official source. For your specific case, consult a lawyer or a free support organisation for migrants."
   },
   "pie": {
     "avisoLegal": "Legal notice",
@@ -166,7 +172,7 @@
     "confirmarAsunto": "Confirm your reminders for {guia}",
     "confirmarTexto": "Click this link to turn on reminders for the guide “{guia}”:",
     "avisoAsunto": "Reminder: {guia}",
-    "accesoAsunto": "Your link to sign in to Nuevo en España",
+    "accesoAsunto": "Your link to sign in to Tus Papeles",
     "accesoTexto": "Click this link to sign in on this device. It expires in 30 minutes:",
     "baja": "Unsubscribe from these reminders",
     "abrirGuia": "Open the guide"
@@ -175,7 +181,8 @@
     "volver": "Back",
     "enviar": "Send",
     "cerrar": "Close",
-    "inicio": "Home"
+    "inicio": "Home",
+    "saltar": "Skip to content"
   },
   "oferta": {
     "titulo": "Registered on the padrón? What comes next?",

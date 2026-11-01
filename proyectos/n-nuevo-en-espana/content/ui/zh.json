@@ -1,9 +1,9 @@
 {
   "idioma": "中文",
-  "marca": "Nuevo en España",
+  "marca": "Tus Papeles",
   "lema": "在西班牙办手续，一步一步，用你的语言",
   "meta": {
-    "titulo": "Nuevo en España · 外国人办事指南，用你的语言",
+    "titulo": "Tus Papeles · 外国人办事指南，用你的语言",
     "descripcion": "一步一步教你续签居留、办理居住登记（empadronamiento）、申请医疗卡、社保号（Seguridad Social）、驾照和西班牙国籍。官方来源，7种语言。"
   },
   "nav": {
@@ -42,7 +42,8 @@
       "nacionalidad": "我想申请西班牙国籍"
     },
     "ordenRecomendado": "建议顺序",
-    "novedad": "新消息：Real Decreto 316/2026 所批许可的续签"
+    "novedad": "新消息：Real Decreto 316/2026 所批许可的续签",
+    "masBuscado": "热门问题"
   },
   "guia": {
     "resumen": "概要",
@@ -75,7 +76,9 @@
     "celebracion": "手续准备好了！一切就绪。",
     "ccseTitulo": "备考 CCSE 考试",
     "ccseTexto": "申请国籍几乎都要通过 CCSE（25 道关于西班牙的西班牙语题）。CCSE en tu idioma 用你的语言讲解全部 300 道官方题目，免费提供 25 道题和一次模拟考试。",
-    "ccseBoton": "免费备考 CCSE"
+    "ccseBoton": "免费备考 CCSE",
+    "conSuscripcion": "订阅可读",
+    "incluyeGuia": "完整指南包括"
   },
   "recordatorio": {
     "email": "你的电子邮箱",
@@ -119,7 +122,10 @@
     "iva": "含增值税",
     "cancela": "在“我的账户”中一键取消。无最短期限。",
     "sinRenovacion": "一次付款，不会自动续费。",
-    "porMes": "每月"
+    "porMes": "每月",
+    "garantia": "7 天保障：如果觉得没有帮助，请用付款时的邮箱联系我们，我们会退款。",
+    "doceMeses": "12 个月",
+    "eligePlan": "选择方案"
   },
   "acceso": {
     "titulo": "恢复访问",
@@ -152,7 +158,7 @@
   },
   "aviso": {
     "corto": "来自官方来源的一般信息。不构成法律咨询。",
-    "largo": "Nuevo en España 提供来自官方来源的公开信息，并注明出处和日期。本网站不提供法律咨询，不代为预约（cita previa），也不代表任何人办理手续。规定会变化：请务必查看所附链接中的官方来源。关于你的具体情况，请咨询律师或免费的移民接待机构。"
+    "largo": "Tus Papeles 提供来自官方来源的公开信息，并注明出处和日期。本网站不提供法律咨询，不代为预约（cita previa），也不代表任何人办理手续。规定会变化：请务必查看所附链接中的官方来源。关于你的具体情况，请咨询律师或免费的移民接待机构。"
   },
   "pie": {
     "avisoLegal": "法律声明",
@@ -166,7 +172,7 @@
     "confirmarAsunto": "请确认“{guia}”的提醒",
     "confirmarTexto": "点击此链接，开启“{guia}”指南的提醒：",
     "avisoAsunto": "提醒：{guia}",
-    "accesoAsunto": "你的 Nuevo en España 登录链接",
+    "accesoAsunto": "你的 Tus Papeles 登录链接",
     "accesoTexto": "点击此链接在这台设备上登录。链接30分钟后失效：",
     "baja": "退订这些提醒",
     "abrirGuia": "打开指南"
@@ -175,7 +181,8 @@
     "volver": "返回",
     "enviar": "发送",
     "cerrar": "关闭",
-    "inicio": "首页"
+    "inicio": "首页",
+    "saltar": "跳到正文"
   },
   "oferta": {
     "titulo": "居住登记办好了？下一步做什么？",

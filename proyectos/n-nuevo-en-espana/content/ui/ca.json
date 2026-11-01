@@ -1,9 +1,9 @@
 {
   "idioma": "Català",
-  "marca": "Nuevo en España",
+  "marca": "Tus Papeles",
   "lema": "Els teus tràmits a Espanya, pas a pas i en el teu idioma",
   "meta": {
-    "titulo": "Nuevo en España · Guies de tràmits per a estrangers en la teva llengua",
+    "titulo": "Tus Papeles · Empadronament, NIE, TIE i residència, pas a pas",
     "descripcion": "Guies pas a pas per renovar la residència, empadronar-te, demanar la targeta sanitària, el número de la Seguretat Social, el carnet de conduir i la nacionalitat. Fonts oficials, en 7 llengües."
   },
   "nav": {
@@ -42,7 +42,8 @@
       "nacionalidad": "Vull demanar la nacionalitat"
     },
     "ordenRecomendado": "Ordre recomanat",
-    "novedad": "Novetat: renovació de les autoritzacions del Reial decret 316/2026"
+    "novedad": "Novetat: renovació de les autoritzacions del Reial decret 316/2026",
+    "masBuscado": "El més buscat"
   },
   "guia": {
     "resumen": "Resum",
@@ -75,7 +76,9 @@
     "celebracion": "Tràmit enllestit! Ho tens tot a punt.",
     "ccseTitulo": "Prepara l'examen CCSE",
     "ccseTexto": "Per a la nacionalitat gairebé sempre cal aprovar el CCSE (25 preguntes en castellà sobre Espanya). A CCSE en tu idioma tens les 300 preguntes oficials explicades en el teu idioma, amb 25 preguntes i un simulacre gratis.",
-    "ccseBoton": "Prepara el CCSE gratis"
+    "ccseBoton": "Prepara el CCSE gratis",
+    "conSuscripcion": "Amb subscripció",
+    "incluyeGuia": "La guia completa inclou"
   },
   "recordatorio": {
     "email": "El teu correu electrònic",
@@ -119,7 +122,10 @@
     "iva": "IVA inclòs",
     "cancela": "Cancel·la amb un clic des d'«El meu compte». Sense permanència.",
     "sinRenovacion": "Un sol pagament. No es renova sol.",
-    "porMes": "al mes"
+    "porMes": "al mes",
+    "garantia": "Garantia de 7 dies: si no et resulta útil, escriu-nos des del correu amb què vas pagar i et tornem els diners.",
+    "doceMeses": "12 mesos",
+    "eligePlan": "Tria el teu pla"
   },
   "acceso": {
     "titulo": "Recuperar l'accés",
@@ -152,7 +158,7 @@
   },
   "aviso": {
     "corto": "Informació general de fonts oficials. No és assessorament legal.",
-    "largo": "Nuevo en España ofereix informació pública de fonts oficials, citades i datades. No és assessorament legal, no demana cites prèvies i no fa tràmits en nom de ningú. Les normes canvien: comprova sempre la font oficial enllaçada. Per al teu cas concret, consulta un advocat o una entitat d'acollida gratuïta."
+    "largo": "Tus Papeles ofereix informació pública de fonts oficials, citades i datades. No és assessorament legal, no demana cites prèvies i no fa tràmits en nom de ningú. Les normes canvien: comprova sempre la font oficial enllaçada. Per al teu cas concret, consulta un advocat o una entitat d'acollida gratuïta."
   },
   "pie": {
     "avisoLegal": "Avís legal",
@@ -166,7 +172,7 @@
     "confirmarAsunto": "Confirma els teus recordatoris de {guia}",
     "confirmarTexto": "Prem aquest enllaç per activar els recordatoris de la guia «{guia}»:",
     "avisoAsunto": "Recordatori: {guia}",
-    "accesoAsunto": "El teu enllaç per entrar a Nuevo en España",
+    "accesoAsunto": "El teu enllaç per entrar a Tus Papeles",
     "accesoTexto": "Prem aquest enllaç per entrar en aquest dispositiu. Caduca d'aquí a 30 minuts:",
     "baja": "Donar-me de baixa d'aquests avisos",
     "abrirGuia": "Obrir la guia"
@@ -175,7 +181,8 @@
     "volver": "Tornar",
     "enviar": "Enviar",
     "cerrar": "Tancar",
-    "inicio": "Inici"
+    "inicio": "Inici",
+    "saltar": "Salta al contingut"
   },
   "oferta": {
     "titulo": "Amb el padró fet, què toca ara?",

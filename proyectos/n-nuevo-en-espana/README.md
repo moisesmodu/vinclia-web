@@ -1,4 +1,4 @@
-# N · Nuevo en España
+# N · Tus Papeles (tuspapeles.app)
 
 Guías paso a paso de los trámites de las personas recién llegadas o recién regularizadas en España, en castellano,
 árabe, francés, inglés, rumano, chino y ucraniano (interfaz también en catalán). Cada guía tiene documentos, plazos,
@@ -54,7 +54,7 @@ npx next start -p 3000 & npm run prueba:e2e   # 43 comprobaciones: idioma, muro,
 `STRIPE_API_BASE` solo existe para las pruebas. Los webhooks de la prueba se firman con la librería oficial de Stripe.
 
 ## Marca
-Ficha `n-nuevo-en-espana` de `MARCAS.md` y `marcas/tokens.json`: logotipo en línea (`components/Logo.tsx`, mismo
+Nombre comercial **Tus Papeles** (antes «Nuevo en España», que queda como nombre de la familia de marcas). Ficha `n-nuevo-en-espana` de `MARCAS.md` y `marcas/tokens.json`: logotipo en línea (`components/Logo.tsx`, mismo
 trazado que `marcas/logos/n-nuevo-en-espana.svg`), icono en `public/marca/`, colores terracota `#D9603B`, azul noche
 `#1F2A44`, crema `#FBF5EC` y oliva `#7A8F3C`, Outfit + Noto Sans (con Noto Sans Arabic y SC) servidas desde el propio
 dominio con `next/font`. Botones y enlaces usan la terracota oscura `#B9472A` para llegar al contraste AA con texto

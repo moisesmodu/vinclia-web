@@ -16,7 +16,7 @@ export default function Pie({ idioma, d }: { idioma: string; d: Dicc }) {
           <a href={`mailto:${titular().correo}`}>{d.pie.contacto}</a>
         </nav>
         <p className="font-semibold text-tinta">{d.pie.sello}</p>
-        <p>© 2026 {d.marca}</p>
+        <p>© 2026 {d.marca} · {d.lema}</p>
       </div>
     </footer>
   );

@@ -17,7 +17,7 @@ const estado = [];
 for (const [url, guias] of urls) {
   let codigo = "error";
   try {
-    const r = await fetch(url, { method: "GET", redirect: "follow", signal: AbortSignal.timeout(15000), headers: { "user-agent": "Mozilla/5.0 (revision de fuentes Nuevo en España)" } });
+    const r = await fetch(url, { method: "GET", redirect: "follow", signal: AbortSignal.timeout(15000), headers: { "user-agent": "Mozilla/5.0 (revision de fuentes Tus Papeles)" } });
     codigo = String(r.status);
   } catch (e) { codigo = `error: ${e.cause?.code ?? e.name}`; }
   estado.push({ url, codigo, guias });

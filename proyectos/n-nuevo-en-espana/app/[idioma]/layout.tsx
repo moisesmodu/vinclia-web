@@ -31,9 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ idioma: s
     icons: { icon: [{ url: "/marca/icono.svg", type: "image/svg+xml" }, { url: "/iconos/favicon-32.png", sizes: "32x32" }], apple: "/iconos/icono-192.png" },
     alternates: {
       canonical: `/${idioma}`,
-      languages: Object.fromEntries(IDIOMAS.map((i) => [LOCALE_BCP47[i], `/${i}`]))
+      languages: { ...Object.fromEntries(IDIOMAS.map((i) => [LOCALE_BCP47[i], `/${i}`])), "x-default": "/es" }
     },
+    applicationName: d.marca,
     openGraph: { title: d.meta.titulo, description: d.meta.descripcion, siteName: d.marca, locale: LOCALE_BCP47[idioma], type: "website" },
+    twitter: { card: "summary_large_image" },
     // Search Console: meta de verificación solo si la sesión del Mac define GOOGLE_SITE_VERIFICATION (alternativa: TXT en los DNS de Vercel).
     ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {})
   };
@@ -49,7 +51,7 @@ export default async function Layout({ children, params }: { children: React.Rea
   return (
     <html lang={LOCALE_BCP47[idioma]} dir={IDIOMAS_RTL.has(idioma) ? "rtl" : "ltr"} className={[titulo.variable, texto.variable, idioma === "ar" ? arabe.variable : "", idioma === "zh" ? chino.variable : ""].join(" ")}>
       <body className="min-h-dvh flex flex-col">
-        <a href="#contenido" className="sr-only focus:not-sr-only focus:absolute focus:p-3 focus:bg-tarjeta">{d.comun.inicio}</a>
+        <a href="#contenido" className="sr-only focus:not-sr-only focus:absolute focus:z-20 focus:p-3 focus:bg-tarjeta">{d.comun.saltar}</a>
         <Cabecera idioma={idioma} d={d} />
         <main id="contenido" className="flex-1 w-full max-w-3xl mx-auto px-4 py-6">{children}</main>
         <Pie idioma={idioma} d={d} />
