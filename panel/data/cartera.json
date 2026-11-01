@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31",
+  "actualizado": "2026-11-01",
   "objetivos": [
     {
       "nombre": "Primer objetivo",
@@ -24,6 +24,10 @@
     {
       "texto": "✔ Panel publicado en Vercel (31/10, proyecto cartera): se vuelve a publicar solo con cada push a la rama base. Protegido con Vercel Authentication: entra con tu cuenta de Vercel",
       "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app"
+    },
+    {
+      "texto": "✔ Centro de control publicado (01/11, panel → Control): ingresos netos, MRR, usuarios de A, N, B, G y M con búsqueda y CSV, pagos, reembolsos y disputas de Stripe, suscripciones y visitas, en vivo. Bases de datos con el rol de solo lectura panel_ro. Pendiente tuyo: crear en Vercel un token de solo lectura y sustituir VERCEL_TOKEN_PANEL en el proyecto cartera",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/control/"
     },
     {
       "texto": "0 bis · SEO · Search Console: añadir las 6 propiedades de dominio (ccsefacil.com, tuspapeles.app, oposita.digital, lunilla.cat, netoclaro.app, impuestoclaro.es) y pegar los 6 valores TXT en el chat; Claude los pone en el DNS. 2 min por dominio",

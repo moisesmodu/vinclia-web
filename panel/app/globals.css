@@ -244,3 +244,48 @@ b { font-weight: 600; }
 .checklist { list-style: none; padding: 0; margin: 8px 0; display: grid; gap: 4px; }
 .checklist li.ok { opacity: .6; text-decoration: line-through; }
 .checklist li.no { font-weight: 500; }
+
+/* Centro de control */
+.ctl-cab { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; flex-wrap: wrap; margin: 0.5rem 0 1rem; }
+.ctl-cab h1 { margin-bottom: 0.2rem; }
+.ctl-cab .nota { margin: 0; }
+.ctl-nav { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+.ctl-nav a { padding: 0.35rem 0.8rem; border: 1px solid var(--linea); border-radius: 999px; background: var(--papel); color: var(--tinta); text-decoration: none; font-size: 0.9rem; }
+.ctl-nav a:hover { border-color: var(--teal); color: var(--teal); }
+.ctl section { margin: 1.75rem 0; }
+.ctl .cifras { margin-top: 0.5rem; }
+.ctl-aviso { background: var(--azafran-suave); border-left: 3px solid var(--rojo); padding: 0.55rem 0.9rem; margin: 0.6rem 0; font-size: 0.92rem; }
+.ctl-aviso small { display: block; word-break: break-word; }
+.ctl-error { color: var(--rojo); }
+.ctl-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-top: 1px solid var(--linea); }
+.ctl-tabla { font-size: 0.9rem; min-width: 640px; }
+.ctl-tabla td, .ctl-tabla th { white-space: nowrap; }
+.ctl-tabla td.ctl-email { white-space: normal; word-break: break-all; min-width: 12rem; }
+.ctl-tabla .d { text-align: right; font-variant-numeric: tabular-nums; }
+.ctl-tabla tbody tr:hover { background: var(--papel); }
+.ctl-proy { display: inline-flex; align-items: center; gap: 0.5rem; }
+.ctl-letra { font-family: var(--display); font-weight: 800; font-size: 0.75rem; width: 1.6rem; height: 1.6rem; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; background: var(--tinta); color: var(--fondo); }
+.ctl-estado { font-size: 0.78rem; padding: 0.1rem 0.55rem; border-radius: 999px; border: 1px solid var(--linea); color: var(--tinta-2); white-space: nowrap; }
+.ctl-estado-pago, .ctl-estado-pagado, .ctl-estado-active, .ctl-estado-succeeded, .ctl-estado-won, .ctl-estado-prevented { border-color: var(--verde); color: var(--verde); }
+.ctl-estado-prueba, .ctl-estado-trialing, .ctl-estado-pendiente, .ctl-estado-reembolso-parcial { border-color: var(--teal); color: var(--teal); }
+.ctl-estado-cancelado, .ctl-estado-canceled, .ctl-estado-reembolsado, .ctl-estado-fallido, .ctl-estado-en-disputa, .ctl-estado-past-due, .ctl-estado-lost, .ctl-estado-needs-response, .ctl-estado-warning-needs-response, .ctl-estado-unpaid, .ctl-estado-failed { border-color: var(--rojo); color: var(--rojo); }
+.ctl-lista { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--linea); }
+.ctl-lista li { display: flex; justify-content: space-between; gap: 0.75rem; align-items: baseline; padding: 0.5rem 0.25rem; border-bottom: 1px solid var(--linea); }
+.ctl-lista li > span { min-width: 0; }
+.ctl-lista li b { word-break: break-all; }
+.ctl-lista li small { display: block; }
+.ctl-lista li > small, .ctl-lista li > a { flex: none; white-space: nowrap; }
+.ctl-filtros { display: flex; gap: 0.75rem; align-items: flex-end; flex-wrap: wrap; margin: 0.5rem 0 0.75rem; }
+.ctl-filtros label { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.8rem; color: var(--tinta-2); }
+.ctl-filtros input, .ctl-filtros select { font: inherit; font-size: 0.95rem; color: var(--tinta); background: var(--papel); border: 1px solid var(--linea); border-radius: 8px; padding: 0.45rem 0.6rem; min-width: 10rem; }
+.ctl-filtros input[type='search'] { min-width: 15rem; }
+.ctl-csv { padding: 0.5rem 0.2rem; font-weight: 600; }
+.ctl-pag { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin: 0.9rem 0; font-size: 0.92rem; color: var(--tinta-2); }
+.portada-control { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; background: var(--papel); border: 1px solid var(--linea); border-left: 4px solid var(--teal); padding: 0.9rem 1.1rem; margin: 1.25rem 0 0; }
+.portada-control p { margin: 0.15rem 0 0; color: var(--tinta-2); font-size: 0.92rem; }
+.portada-control a.boton { text-decoration: none; }
+@media (max-width: 640px) {
+  .ctl-filtros label, .ctl-filtros input, .ctl-filtros select, .ctl-filtros input[type='search'] { width: 100%; min-width: 0; }
+  .ctl-filtros .boton { width: 100%; }
+  .ctl-lista li { flex-direction: column; gap: 0.15rem; }
+}

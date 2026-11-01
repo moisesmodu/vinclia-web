@@ -16,6 +16,14 @@ export default function Inicio() {
     <>
       <Camino actual={actual} previsto={previsto} hitos={c.objetivos} />
 
+      <aside className="portada-control">
+        <div>
+          <b>Centro de control</b>
+          <p>Ingresos, usuarios, pagos, suscripciones y visitas de los proyectos, en vivo.</p>
+        </div>
+        <Link href="/control/" className="boton">Abrir</Link>
+      </aside>
+
       <section className="cifras">
         <div><b>{euros(costes)}</b><span>costes al mes</span></div>
         <div><b>{euros(actual - costes)}</b><span>resultado al mes</span></div>

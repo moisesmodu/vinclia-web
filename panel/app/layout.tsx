@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="cabecera">
           <Link href="/" className="marca">La cartera</Link>
           <nav className="nav">
+            <Link href="/control/">Control</Link>
             <Link href="/docs/cartera/">Plan</Link>
             <Link href="/docs/viabilidad/">Viabilidad</Link>
             <Link href="/docs/sesiones/">Reglas</Link>
