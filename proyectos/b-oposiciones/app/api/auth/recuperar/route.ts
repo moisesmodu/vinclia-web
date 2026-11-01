@@ -1,7 +1,7 @@
 import { db, hayDb } from '@/lib/db';
 import { tokenRecuperacion } from '@/lib/auth';
 import { enviarCorreo, hayCorreo } from '@/lib/correo';
-import { urlBase } from '@/lib/datos';
+import { urlBase, marca } from '@/lib/datos';
 import { json, error, limitar } from '@/lib/http';
 
 export const dynamic = 'force-dynamic';
@@ -20,10 +20,10 @@ export async function POST(req: Request) {
     const ca = idioma === 'ca';
     await enviarCorreo(
       u.email,
-      ca ? 'Canvia la teva contrasenya d\'Plaça' : 'Cambia tu contraseña de Plaça',
+      ca ? `Canvia la teva contrasenya d'${marca.nombre}` : `Cambia tu contraseña de ${marca.nombre}`,
       ca
-        ? `Hola,\n\nPer posar una contrasenya nova, obre aquest enllaç (caduca en 1 hora):\n${enlace}\n\nSi no ho has demanat tu, ignora aquest correu.\n\nPlaça`
-        : `Hola:\n\nPara poner una contraseña nueva, abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.\n\nPlaça`,
+        ? `Hola,\n\nPer posar una contrasenya nova, obre aquest enllaç (caduca en 1 hora):\n${enlace}\n\nSi no ho has demanat tu, ignora aquest correu.\n\n${marca.nombre} · ${marca.dominio}`
+        : `Hola:\n\nPara poner una contraseña nueva, abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.\n\n${marca.nombre} · ${marca.dominio}`,
     ).catch(() => false);
   }
   return json({ ok: true });

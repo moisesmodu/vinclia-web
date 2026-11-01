@@ -1,4 +1,4 @@
-# Plaça · tests de oposiciones catalanas (proyecto B)
+# Oposita (antes Plaça) · tests de oposiciones catalanas (proyecto B)
 
 Plataforma de tests para las oposiciones catalanas que las grandes apps no cubren. Versión 1 con cinco oposiciones:
 

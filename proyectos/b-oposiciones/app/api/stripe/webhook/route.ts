@@ -3,6 +3,7 @@ import { stripe, guardarSuscripcion, modoPago } from '@/lib/pagos';
 import { error, json } from '@/lib/http';
 import { db } from '@/lib/db';
 import { enviarCorreo } from '@/lib/correo';
+import { marca } from '@/lib/datos';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,9 +38,9 @@ export async function POST(req: Request) {
         const u = await db.usuario.findUnique({ where: { id: uid } });
         if (!ya && u && !['active', 'trialing'].includes(u.suscripcionEstado ?? '')) {
           const ca = u.idioma !== 'es';
-          await enviarCorreo(u.email, ca ? 'El teu pagament de Plaça ha quedat a mitges' : 'Tu pago de Plaça se quedó a medias',
-            ca ? `Hola,\n\nVas començar la subscripció a Plaça però no es va completar. Si encara la vols, aquí tens l'enllaç (9,99 €/mes, cancel·la amb un clic):\n${url}\n\nNo t'escriurem més per això.\n\nPlaça`
-               : `Hola:\n\nEmpezaste la suscripción a Plaça pero no se completó. Si aún la quieres, aquí tienes el enlace (9,99 €/mes, cancela en un clic):\n${url}\n\nNo te escribiremos más por esto.\n\nPlaça`).catch(() => false);
+          await enviarCorreo(u.email, ca ? `El teu pagament d'${marca.nombre} ha quedat a mitges` : `Tu pago de ${marca.nombre} se quedó a medias`,
+            ca ? `Hola,\n\nVas començar la subscripció a ${marca.nombre} però no es va completar. Si encara la vols, aquí tens l'enllaç (9,99 €/mes, cancel·la amb un clic):\n${url}\n\nNo t'escriurem més per això.\n\n${marca.nombre} · ${marca.dominio}`
+               : `Hola:\n\nEmpezaste la suscripción a ${marca.nombre} pero no se completó. Si aún la quieres, aquí tienes el enlace (9,99 €/mes, cancela en un clic):\n${url}\n\nNo te escribiremos más por esto.\n\n${marca.nombre} · ${marca.dominio}`).catch(() => false);
           await db.ajuste.create({ data: { clave: `aviso-recuperacion:${uid}`, valor: new Date().toISOString() } });
           await db.ajuste.upsert({ where: { clave: `checkout:${uid}` }, update: { valor: JSON.stringify({ url, hasta: Date.now() + 30 * 864e5 }) }, create: { clave: `checkout:${uid}`, valor: JSON.stringify({ url, hasta: Date.now() + 30 * 864e5 }) } });
         }

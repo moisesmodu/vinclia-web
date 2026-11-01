@@ -1,4 +1,4 @@
-# Monetización · Plaça (proyecto B)
+# Monetización · Oposita (antes Plaça) (proyecto B)
 
 > SESIONES.md, «Monetizar primero». Se actualiza cada semana con las cifras reales (lo hace la tarea programada).
 > Despliegue: 28/10/2026 en https://placa-oposicions.vercel.app. **Primer euro: objetivo el 11/11/2026** (14 días).

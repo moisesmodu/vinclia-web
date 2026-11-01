@@ -1,14 +1,33 @@
 {
-  "nombre": "Plaça",
+  "nombre": "Oposita",
   "familia": "Exámenes",
-  "lema": { "ca": "Treu plaça. Tests per a la teva oposició, per fi.", "es": "Saca plaza. Tests para tu oposición, por fin.", "en": "Practice tests for the public exams nobody else covers." },
-  "sello": { "ca": "Fet a Lleida · Preu clar · Cancel·la amb un clic", "es": "Hecho en Lleida · Precio claro · Cancela en un clic" },
-  "colores": { "primario": "#3B3FD8", "oscuro": "#14142B", "fondo": "#F6F6FB", "acento": "#19B36B", "texto": "#14142B" },
-  "tipografia": { "titulos": "Space Grotesk", "texto": "IBM Plex Sans" },
+  "lema": {
+    "ca": "Tests d'oposicions amb la llei al costat",
+    "es": "Tests de oposiciones con la ley al lado",
+    "en": "Public-exam practice tests with the law beside every answer."
+  },
+  "sello": {
+    "ca": "Fet a Lleida · Preu clar · Cancel·la amb un clic",
+    "es": "Hecho en Lleida · Precio claro · Cancela en un clic"
+  },
+  "colores": {
+    "primario": "#3B3FD8",
+    "oscuro": "#14142B",
+    "fondo": "#F6F6FB",
+    "acento": "#19B36B",
+    "texto": "#14142B"
+  },
+  "tipografia": {
+    "titulos": "Space Grotesk",
+    "texto": "IBM Plex Sans"
+  },
   "color": "#3B3FD8",
   "dominio": "oposita.digital",
-  "dominiosPropuestos": ["oposita.digital", "placa.cat", "treuplaca.cat"],
+  "dominiosPropuestos": [
+    "oposita.digital"
+  ],
   "pais": "es",
   "fuente": "marcas/tokens.json → proyectos.b-oposiciones y familias.examenes (MARCAS.md §4)",
-  "nota": "Dominio propio oposita.digital (comprado el 31/10/2026, DNS en Vercel; www redirige al apex). La URL canónica sale de NEXT_PUBLIC_URL y, si falta, de este dominio. placa-oposicions.vercel.app y aprova-oposicions.vercel.app siguen sirviendo sin redirección porque el webhook de Stripe apunta a ellos."
+  "nota": "Dominio propio oposita.digital (comprado el 31/10/2026, DNS en Vercel; www redirige al apex). La URL canónica sale de NEXT_PUBLIC_URL y, si falta, de este dominio. placa-oposicions.vercel.app y aprova-oposicions.vercel.app siguen sirviendo sin redirección porque el webhook de Stripe apunta a ellos. Marca: «Oposita» desde el 01/11/2026 (antes «Plaça»): coincide con el dominio y sirve como paraguas para crecer a oposiciones nacionales; el contenido sigue siendo catalán primero.",
+  "nombreAnterior": "Plaça"
 }

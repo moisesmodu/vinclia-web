@@ -25,7 +25,7 @@ Ninguna marca corporativa visible: el titular legal es Moisés Mora (autónomo) 
 | Familia | Productos | Público | Por qué juntos |
 |---|---|---|---|
 | **Nuevo en España** | N · Nuevo en España (eje) · A · CCSE en tu idioma · M · Aprova | Recién llegados y quien prepara un examen de integración o de lengua | La misma persona hace los trámites, el CCSE y el catalán en sus primeros tres años |
-| **Exámenes** | B · Plaça · L · Prepa | Quien tiene una prueba con fecha | Mismo motor, misma disciplina; Plaça es local y Prepa es global |
+| **Exámenes** | B · Oposita · L · Prepa | Quien tiene una prueba con fecha | Mismo motor, misma disciplina; Oposita es España (catalán primero) y Prepa es global |
 | **Lunilla** | G · Lunilla (cuentos) · O · Lunilla Lee · I · Cuadernos Lunilla | Familias con niños de 3 a 9 años | Un personaje que el niño reconoce en el cuento, en la app de lectura y en el cuaderno |
 | **Claro** | P · NetoClaro · ImpuestoClaro · ChequeClaro… | Trabajadores, autónomos, familias | Un apellido de marca que se repite en cada sitio y se recuerda |
 | **Nuvolet Games** | Juegos · Egg Truck y los siguientes | Jugadores casuales de todo el mundo | Un estudio con sello reconocible en los portales |
@@ -40,7 +40,7 @@ Ninguna marca corporativa visible: el titular legal es Moisés Mora (autónomo) 
 - **Fotografía e ilustración:** personas reales en Nuevo en España y Claro; ilustración plana y cálida en Lunilla;
   3D blando en Nuvolet. Nunca bancos de imágenes genéricos con sonrisas forzadas.
 - **Texto:** tuteo, verbos en presente, cero jerga administrativa. En catalán cuando el producto es catalán (Aprova,
-  Plaça) y bilingüe es/ca donde el público es local (Lunilla, Claro).
+  Oposita) y bilingüe es/ca donde el público es local (Lunilla, Claro).
 - **Pantalla de precio:** la misma estructura en todos: qué incluye gratis, qué incluye de pago, precio con IVA,
   «cancela en un clic», y el sello común.
 - **Correo y notificaciones:** remitente con nombre de la marca; asunto de menos de 50 caracteres; un solo botón.
@@ -65,9 +65,10 @@ Outfit (títulos) y Noto Sans (texto, cubre árabe, chino y cirílico). Motivo: 
 Personalidad: directa, serena, metódica. Colores: índigo `#3B3FD8`, tinta `#14142B`, papel `#F6F6FB`, verde aprobado
 `#19B36B`. Tipografía: Space Grotesk y IBM Plex Sans. Motivo: un cuadrado con un punto dentro, la plaza que se ocupa.
 
-- **B · Plaça.** «Treu plaça. Tests per a la teva oposició, per fi.» Dominio placa.cat o treuplaca.cat. Alternativas:
-  Oposita't, Temari. Voz: nombra la oposición concreta; muestra el porcentaje de temario dominado cada día; sin frases
-  motivacionales vacías.
+- **B · Oposita** (antes Plaça; cambio del 01/11/2026). «Tests d'oposicions amb la llei al costat.» Dominio oposita.digital.
+  Marca paraguas que coincide con el dominio y permite crecer a oposiciones de toda España sin cambiar de nombre; el
+  contenido sigue siendo catalán primero. Logotipo: «oposita» en minúscula y la O como casilla de respuesta marcada.
+  Voz: nombra la oposición concreta; muestra el porcentaje de temario dominado cada día; sin frases motivacionales vacías.
 - **L · Prepa.** «Practica como en el examen de verdad.» Acento verde. Dominio prepa.app. Alternativas: Examina,
   Simulapp. Voz: internacional desde el primer día (es, ca, en, pt); cada simulacro reproduce formato, tiempo y nota
   oficial.
