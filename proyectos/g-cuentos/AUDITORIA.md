@@ -86,17 +86,16 @@ testimonios inventados.
 
 ## 6. Analítica
 
-`@vercel/analytics` está en el código (`<Analytics />` en el layout), pero **en producción `/_vercel/insights/script.js`
-devuelve 404**: Web Analytics no está activado en el proyecto `lunilla` de Vercel, así que hoy no se mide nada.
-**Pendiente (Moisés, 1 minuto):** Vercel → proyecto `lunilla` → Analytics → Enable. Después, mirar cada lunes: visitas a
-páginas de ideas, clics a `/crear`, vistas previas creadas y pagos (estos dos ya están en `/admin`).
+`@vercel/analytics` está en el código (`<Analytics />` en el layout). Hasta esta revisión `/_vercel/insights/script.js`
+devolvía 404 en producción: Web Analytics se activó en el proyecto `lunilla` el 1/11 pero no se había vuelto a
+desplegar. ✅ Tras el despliegue `dpl_5oLuEXLZyBecUF6gVd4zq8KgZtqU` el guion responde 200 y ya se mide. Mirar cada
+lunes: visitas a páginas de ideas, clics a `/crear`, vistas previas creadas y pagos (estos dos ya están en `/admin`).
 
 ## 7. Pendientes ordenados
 
-1. **P0** Activar Web Analytics en Vercel (Moisés).
-2. **P0** Search Console: `GOOGLE_SITE_VERIFICATION` en Vercel, enviar `https://lunilla.cat/sitemap.xml` y pedir indexación de `/`, `/ca` y las 6 páginas de Navidad (Moisés).
-3. **P0** Biblioteca de vista previa para las 14 combinaciones sin ilustración (taller de Higgsfield, ≈ 56 imágenes).
-4. **P1** Buzón `hola@lunilla.cat` y cambio de `legal.email`.
-5. **P1** Pedido real de tapa dura a Gelato (no borrador) para comprobar plazo y calidad, y fotografiar el libro real en lugar de las imágenes ilustrativas.
-6. **P1** Afiliadas: escribir a 20 cuentas de crianza catalanas y españolas antes del 15/11 (el programa del 20 % ya funciona).
-7. **P2** Opiniones reales de las primeras familias; carrusel accesible.
+1. **P0** Search Console: `GOOGLE_SITE_VERIFICATION` en Vercel, enviar `https://lunilla.cat/sitemap.xml` y pedir indexación de `/`, `/ca` y las 6 páginas de Navidad (Moisés).
+2. **P0** Biblioteca de vista previa para las 14 combinaciones sin ilustración (taller de Higgsfield, ≈ 56 imágenes).
+3. **P1** Buzón `hola@lunilla.cat` y cambio de `legal.email`.
+4. **P1** Pedido real de tapa dura a Gelato (no borrador) para comprobar plazo y calidad, y fotografiar el libro real en lugar de las imágenes ilustrativas.
+5. **P1** Afiliadas: escribir a 20 cuentas de crianza catalanas y españolas antes del 15/11 (el programa del 20 % ya funciona).
+6. **P2** Opiniones reales de las primeras familias; carrusel accesible.
