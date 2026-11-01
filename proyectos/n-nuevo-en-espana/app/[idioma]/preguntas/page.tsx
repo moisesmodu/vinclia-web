@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { dicc, NOMBRES_IDIOMA } from "@/lib/i18n";
+import { dicc, LOCALE_BCP47, NOMBRES_IDIOMA } from "@/lib/i18n";
+import { IDIOMAS } from "@/lib/config";
 import { preguntas } from "@/lib/contenido";
 
 export async function generateMetadata({ params }: { params: Promise<{ idioma: string }> }): Promise<Metadata> {
   const { idioma } = await params;
-  return { title: dicc(idioma).preguntas.titulo, alternates: { canonical: `/${idioma}/preguntas` } };
+  const d = dicc(idioma);
+  const propias = preguntas(idioma).map((p) => p.pregunta);
+  return {
+    title: d.preguntas.titulo,
+    description: (propias.length ? propias.slice(0, 3).join(" · ") : d.meta.descripcion).slice(0, 155),
+    alternates: {
+      canonical: `/${idioma}/preguntas`,
+      languages: { ...Object.fromEntries(IDIOMAS.map((i) => [LOCALE_BCP47[i], `/${i}/preguntas`])), "x-default": "/es/preguntas" }
+    }
+  };
 }
 
 export default async function Preguntas({ params }: { params: Promise<{ idioma: string }> }) {
@@ -18,7 +28,7 @@ export default async function Preguntas({ params }: { params: Promise<{ idioma: 
       <h1 className="text-3xl font-bold">{d.preguntas.titulo}</h1>
       <ul className="grid gap-2">
         {propias.map((p) => (
-          <li key={p.slug}><Link className="tarjeta p-4 block font-medium" href={`/${idioma}/preguntas/${p.slug}`}>{p.pregunta}</Link></li>
+          <li key={p.slug}><Link className="tarjeta tarjeta-enlace p-4 block font-medium" href={`/${idioma}/preguntas/${p.slug}`}>{p.pregunta}</Link></li>
         ))}
       </ul>
       {otras.length ? (

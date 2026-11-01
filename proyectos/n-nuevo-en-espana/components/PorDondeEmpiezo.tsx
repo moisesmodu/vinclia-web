@@ -12,14 +12,15 @@ export default function PorDondeEmpiezo(props: {
   const [sel, setSel] = useState<string | null>(null);
   return (
     <div className="space-y-3">
-      <div className="grid sm:grid-cols-2 gap-2" role="radiogroup">
+      {/* Botones conmutables (aria-pressed): un radiogroup exigiría navegación con flechas. */}
+      <div className="grid sm:grid-cols-2 gap-2">
         {Object.entries(props.situaciones).map(([k, texto]) => (
           <button
             key={k}
-            role="radio"
-            aria-checked={sel === k}
+            type="button"
+            aria-pressed={sel === k}
             onClick={() => setSel(k)}
-            className={`text-start rounded-xl border-2 p-3 min-h-[56px] ${sel === k ? "border-marca bg-marca-claro" : "border-linea bg-tarjeta"}`}
+            className={`text-start rounded-xl border-2 p-3 min-h-[56px] font-medium transition-colors ${sel === k ? "border-marca bg-marca-claro" : "border-linea bg-tarjeta hover:border-marca"}`}
           >
             {texto}
           </button>
@@ -31,7 +32,7 @@ export default function PorDondeEmpiezo(props: {
           <ol className="space-y-2">
             {props.orden[sel].filter((s) => props.titulos[s]).map((s, i) => (
               <li key={s} className="flex gap-3 items-center">
-                <span className="w-7 h-7 shrink-0 rounded-full bg-marca text-white grid place-items-center text-sm font-bold">{i + 1}</span>
+                <span className="w-7 h-7 shrink-0 rounded-full numero grid place-items-center text-sm font-bold">{i + 1}</span>
                 <Link className="enlace" href={`/${props.idioma}/guias/${s}`}>{props.titulos[s]}</Link>
               </li>
             ))}

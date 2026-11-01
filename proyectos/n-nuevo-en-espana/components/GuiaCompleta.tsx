@@ -14,7 +14,7 @@ export default function GuiaCompleta({ g, idioma, d, oferta = false }: { g: Guia
         <ol className="space-y-3">
           {g.pasos.map((p, i) => (
             <li key={i} className="tarjeta p-4 flex gap-3">
-              <span className="w-8 h-8 shrink-0 rounded-full bg-marca text-white grid place-items-center font-bold">{i + 1}</span>
+              <span className="w-8 h-8 shrink-0 rounded-full numero grid place-items-center font-bold cifras">{i + 1}</span>
               <div>
                 <h3 className="font-semibold">{p.titulo}</h3>
                 <p className="mt-1 leading-relaxed whitespace-pre-line">{p.texto}</p>

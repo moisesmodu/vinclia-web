@@ -15,7 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ idioma: s
   const { idioma, slug } = await params;
   const p = pregunta(idioma, slug);
   if (!p) return {};
-  return { title: p.pregunta, description: p.descripcion, alternates: { canonical: `/${idioma}/preguntas/${slug}` } };
+  return {
+    title: p.pregunta,
+    description: p.descripcion,
+    alternates: { canonical: `/${idioma}/preguntas/${slug}` },
+    openGraph: { title: p.pregunta, description: p.descripcion, type: "article", siteName: dicc(idioma).marca, url: `/${idioma}/preguntas/${slug}`, images: [{ url: `/${idioma}/opengraph-image`, width: 1200, height: 630 }] }
+  };
 }
 
 export default async function PaginaPregunta({ params }: { params: Promise<{ idioma: string; slug: string }> }) {

@@ -5,6 +5,10 @@ import { config, PAIS } from "./config";
 export type Guia = {
   slug: string;
   titulo: string;
+  /** Título para Google (la búsqueda real, ≤ 60 caracteres). Si falta, se usa `titulo` + la marca. */
+  tituloSeo?: string;
+  /** Meta descripción (≤ 155 caracteres). Si falta, se recorta `resumen`. */
+  descripcionSeo?: string;
   resumen: string;
   paraQuien: string;
   actualizado: string;
@@ -21,9 +25,11 @@ export type Guia = {
 };
 
 // Lo que se publica gratis de una guía de pago (va al HTML estático).
-export type ResumenGuia = Pick<Guia, "slug" | "titulo" | "resumen" | "paraQuien" | "actualizado" | "datosClave" | "fuentes"> & {
+export type ResumenGuia = Pick<Guia, "slug" | "titulo" | "tituloSeo" | "descripcionSeo" | "resumen" | "paraQuien" | "actualizado" | "datosClave" | "fuentes"> & {
   gratis: boolean;
   idiomaContenido: string;
+  /** Cuánto trae la guía completa (solo números: se publican para que se vea el valor antes de pagar). */
+  cuenta: { pasos: number; documentos: number; errores: number; checklist: number };
 };
 
 export type Pregunta = {
@@ -71,8 +77,9 @@ export function resumen(slug: string, idioma: string): ResumenGuia | null {
   if (!r) return null;
   const { guia: g, idiomaContenido } = r;
   return {
-    slug: g.slug, titulo: g.titulo, resumen: g.resumen, paraQuien: g.paraQuien, actualizado: g.actualizado,
-    datosClave: g.datosClave, fuentes: g.fuentes, gratis: esGratis(slug), idiomaContenido
+    slug: g.slug, titulo: g.titulo, tituloSeo: g.tituloSeo, descripcionSeo: g.descripcionSeo, resumen: g.resumen, paraQuien: g.paraQuien, actualizado: g.actualizado,
+    datosClave: g.datosClave, fuentes: g.fuentes, gratis: esGratis(slug), idiomaContenido,
+    cuenta: { pasos: g.pasos.length, documentos: g.documentos.length, errores: g.errores.length, checklist: g.checklist.length }
   };
 }
 
