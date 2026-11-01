@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-pensio-jubilacio"
-titulo: "Calculadora de pensió de jubilació 2027: quant cobraràs"
-h1: "Calculadora de pensió de jubilació 2027"
+titulo: "Calculadora de pensió de jubilació 2026 i 2027: quant cobraràs"
+h1: "Calculadora de pensió de jubilació 2026 i 2027"
 descripcion: "Estima la teva pensió de jubilació mensual segons els anys cotitzats i la base mitjana de cotització, amb l’escala del 2026 o del 2027 i la pensió màxima."
 resumen: "Escriu els anys que tindràs cotitzats quan et jubilis i la mitjana mensual de les teves bases dels últims 25 anys. Veuràs la base reguladora, el percentatge que et correspon i la pensió que cobraràs en 14 pagues."
-palabraClave: "calculadora pensió jubilació 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora pensió jubilació 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei general de la Seguretat Social, arts. 209 i 210 i disposició transitòria 9a: base reguladora i percentatge (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

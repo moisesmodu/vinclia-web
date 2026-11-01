@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-salario-minimo"
-titulo: "Calculadora del salario mínimo 2027: SMI según tu jornada"
-h1: "Calculadora del salario mínimo 2027"
+titulo: "Calculadora del salario mínimo 2026 y 2027: SMI según tu jornada"
+h1: "Calculadora del salario mínimo 2026 y 2027"
 descripcion: "Calcula el salario mínimo interprofesional que te corresponde según tus horas semanales: anual, mensual en 12 o 14 pagas, por día y por hora."
 resumen: "Escribe las horas de tu contrato y, si quieres, tu salario bruto anual. Verás el SMI que te corresponde y si tu sueldo llega al mínimo legal."
-palabraClave: "calculadora salario mínimo 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora salario mínimo 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Real Decreto 126/2026, salario mínimo interprofesional para 2026 (BOE)"
     url: "https://www.boe.es/eli/es/rd/2026/02/18/126/con"

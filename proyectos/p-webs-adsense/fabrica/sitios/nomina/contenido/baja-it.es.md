@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-baja-laboral"
-titulo: "Calculadora de baja laboral 2027: cuánto cobras de baja"
-h1: "Calculadora de baja laboral 2027"
+titulo: "Calculadora de baja laboral 2026 y 2027: cuánto cobras de baja"
+h1: "Calculadora de baja laboral 2026 y 2027"
 descripcion: "Calcula cuánto cobras durante una baja por enfermedad común o accidente de trabajo: 60 % y 75 % de la base, quién paga cada día y complemento del convenio."
 resumen: "Escribe tu base de cotización, la causa de la baja y los días. Verás lo que cobrarás por tramos, qué parte paga la empresa y cuánto pierdes respecto a tu sueldo."
 palabraClave: "calculadora baja laboral"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley General de la Seguridad Social, arts. 169 a 173: incapacidad temporal (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

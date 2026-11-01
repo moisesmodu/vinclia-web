@@ -1,11 +1,11 @@
 ---
 slug: calculadora-quitanca
-titulo: "Calculadora de quitança 2027: vacances, pagues i indemnització"
-h1: "Calculadora de quitança 2027"
+titulo: "Calculadora de quitança 2026 i 2027: vacances i pagues"
+h1: "Calculadora de quitança 2026 i 2027"
 descripcion: "Calcula la quitança quan deixes l’empresa: salari de l’últim mes, vacances no gaudides, part de les pagues extra i indemnització per acomiadament si correspon."
 resumen: "Posa el teu salari, les dates i les vacances que ja has gaudit, i veuràs què t’han de pagar en acabar el contracte, concepte per concepte."
-palabraClave: "calculadora quitança 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora quitança 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatut dels Treballadors, arts. 31, 38, 49, 53 i 56 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

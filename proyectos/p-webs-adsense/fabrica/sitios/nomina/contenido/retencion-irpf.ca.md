@@ -1,11 +1,11 @@
 ---
 slug: calculadora-retencio-irpf
-titulo: "Calculadora de retenció d’IRPF 2027 a la nòmina"
-h1: "Calculadora de retenció d’IRPF 2027"
+titulo: "Calculadora de retenció d’IRPF 2026 i 2027 a la nòmina"
+h1: "Calculadora de retenció d’IRPF 2026 i 2027"
 descripcion: "Calcula el percentatge de retenció d’IRPF de la teva nòmina pas a pas: reducció per treball, mínim personal i familiar, escala de retencions i límit exempt."
 resumen: "Escriu el teu sou brut anual i la teva situació familiar i veuràs quin percentatge d’IRPF t’ha de retenir l’empresa i per què."
-palabraClave: "calculadora retenció IRPF 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora retenció IRPF 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglament de l’IRPF, arts. 80 a 87: càlcul de la retenció (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

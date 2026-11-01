@@ -1,11 +1,11 @@
 ---
 slug: calculadora-intereses-deposito
-titulo: "Calculadora intereses depósito 2027: neto tras Hacienda"
+titulo: "Calculadora intereses depósito 2026 y 2027: neto tras Hacienda"
 h1: "Calculadora de intereses de un depósito"
 descripcion: "Calcula los intereses de un depósito a plazo fijo en 2027: brutos según el TIN, retención del 19 % y lo que pagarás en la renta con la escala del ahorro."
 resumen: "Escribe el capital, el TIN y el plazo y verás los intereses brutos, la retención que aplica el banco y lo que cobras limpio."
 palabraClave: "calculadora intereses depósito"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF, arts. 25, 66 y 76 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

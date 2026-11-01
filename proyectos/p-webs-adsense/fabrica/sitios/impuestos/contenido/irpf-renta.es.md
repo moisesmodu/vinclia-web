@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-irpf"
-titulo: "Calculadora IRPF 2027: cuota de la renta por comunidad"
-h1: "Calculadora de IRPF 2027"
+titulo: "Calculadora IRPF 2026 y 2027: cuota de la renta por comunidad"
+h1: "Calculadora de IRPF 2026 y 2027"
 descripcion: "Calcula la cuota de IRPF de tu renta con la escala estatal y la de tu comunidad. Sueldo, actividad y ahorro, y si la declaración sale a pagar o a devolver."
 resumen: "Escribe tu sueldo bruto, lo que ganas como autónomo y tus intereses, y verás la cuota de IRPF, tu tipo medio y marginal y si la renta te saldrá a pagar o a devolver."
-palabraClave: "calculadora irpf 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora irpf 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

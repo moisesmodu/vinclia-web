@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-reduccion-jornada"
-titulo: "Calculadora de reducción de jornada 2027: cuánto cobrarás"
-h1: "Calculadora de reducción de jornada 2027"
+titulo: "Calculadora de reducción de jornada 2026 y 2027: cuánto cobrarás"
+h1: "Calculadora de reducción de jornada 2026 y 2027"
 descripcion: "Calcula tu nueva nómina neta si reduces la jornada por cuidado de hijos o familiares. Compara bruto, retención de IRPF y neto antes y después."
 resumen: "Escribe tu bruto a jornada completa y el porcentaje que quieres reducir. Verás tu nueva nómina, cuánto pierdes al mes y por qué pierdes menos de lo que reduces."
 palabraClave: "calculadora reducción de jornada"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, art. 37.6 y 37.7: reducción de jornada por guarda legal (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

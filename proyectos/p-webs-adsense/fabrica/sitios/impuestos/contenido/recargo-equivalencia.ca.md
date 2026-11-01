@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-recarrec-equivalencia"
-titulo: "Recàrrec d’equivalència 2027: calculadora del 5,2, 1,4 i 0,5 %"
+titulo: "Recàrrec d’equivalència 2026 i 2027: calculadora (5,2 %)"
 h1: "Calculadora de recàrrec d’equivalència"
 descripcion: "Calcula el recàrrec d’equivalència de les teves compres: 5,2 % amb IVA del 21 %, 1,4 % amb el 10 % i 0,5 % amb el 4 %. Cost total i preu de venda."
 resumen: "Escriu la base de la compra al proveïdor, el tipus d’IVA i el teu marge, i veuràs el recàrrec, el que pagues en total i a quin preu hauries de vendre."
 palabraClave: "recàrrec d’equivalència"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 37/1992 de l’IVA, arts. 148 a 163: règim especial del recàrrec d’equivalència (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"

@@ -1,11 +1,11 @@
 ---
 slug: calculadora-finiquito
-titulo: "Calculadora de finiquito 2027: vacaciones, pagas e indemnización"
-h1: "Calculadora de finiquito 2027"
+titulo: "Calculadora de finiquito 2026 y 2027: vacaciones y pagas"
+h1: "Calculadora de finiquito 2026 y 2027"
 descripcion: "Calcula tu finiquito al dejar la empresa: salario del último mes, vacaciones no disfrutadas, parte de las pagas extra e indemnización si corresponde."
 resumen: "Pon tu salario, las fechas y las vacaciones que ya has disfrutado, y verás qué te tienen que pagar al terminar el contrato, concepto a concepto."
-palabraClave: "calculadora finiquito 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora finiquito 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, arts. 31, 38, 49, 53 y 56 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

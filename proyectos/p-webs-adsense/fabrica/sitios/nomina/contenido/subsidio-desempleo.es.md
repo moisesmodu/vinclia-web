@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-subsidio-desempleo"
-titulo: "Calculadora del subsidio por desempleo 2027: importe por meses"
-h1: "Calculadora del subsidio por desempleo 2027"
+titulo: "Subsidio por desempleo 2026 y 2027: calculadora del importe"
+h1: "Calculadora del subsidio por desempleo 2026 y 2027"
 descripcion: "Calcula cuánto cobrarás de subsidio por desempleo cada mes y en total: tramos del 95 %, 90 % y 80 % del IPREM, mayores de 52 años y tiempo parcial."
 resumen: "Escribe los meses de subsidio que te han reconocido. Verás el importe de cada mes según los tramos de la reforma de 2024 y el total que cobrarás."
 palabraClave: "calculadora subsidio desempleo"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley General de la Seguridad Social, arts. 274 a 280: subsidio por desempleo (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

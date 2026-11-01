@@ -1,11 +1,11 @@
 ---
 slug: calculadora-tarifa-plana-autonomos
-titulo: "Calculadora tarifa plana autónomos 2027: cuánto ahorras"
+titulo: "Calculadora tarifa plana autónomos 2026 y 2027: cuánto ahorras"
 h1: "Calculadora de tarifa plana de autónomos"
 descripcion: "Calcula cuánto ahorras con la tarifa plana de 80 € en 2027, cuándo termina y qué cuota pagarás después según tu rendimiento neto previsto. Con prórroga."
 resumen: "Indica tu fecha de alta y el rendimiento neto que prevés y verás el ahorro de la tarifa plana, la fecha en que acaba y la cuota que pagarás después."
 palabraClave: "calculadora tarifa plana autónomos"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley General de la Seguridad Social (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

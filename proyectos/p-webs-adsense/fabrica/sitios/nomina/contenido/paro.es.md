@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-paro"
-titulo: "Calculadora del paro 2027: cuánto cobrarás y durante cuánto"
-h1: "Calculadora del paro 2027"
+titulo: "Calculadora del paro 2026 y 2027: cuánto cobrarás y durante cuánto"
+h1: "Calculadora del paro 2026 y 2027"
 descripcion: "Calcula tu prestación por desempleo: duración según los días cotizados, importe al 70 % y al 60 %, topes mínimo y máximo con o sin hijos, y neto aproximado."
 resumen: "Escribe los días que has cotizado en los últimos 6 años y tu base de cotización media. Verás cuántos días de paro te tocan y cuánto cobrarás cada mes."
-palabraClave: "calculadora paro 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora paro 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley General de la Seguridad Social, arts. 269 y 270: duración y cuantía (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

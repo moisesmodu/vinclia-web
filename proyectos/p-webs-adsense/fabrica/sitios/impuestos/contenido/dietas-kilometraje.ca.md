@@ -1,11 +1,11 @@
 ---
 slug: calculadora-dietes-quilometratge
-titulo: "Calculadora dietes i quilometratge 2027: exempt d’IRPF"
+titulo: "Calculadora dietes i quilometratge 2026 i 2027: exempt d’IRPF"
 h1: "Calculadora de dietes i quilometratge"
 descripcion: "Calcula quina part de les dietes i del quilometratge que et paga l’empresa està exempta d’IRPF el 2027: 53,34 € amb pernoctació, 26,67 € sense i 0,26 €/km."
 resumen: "Indica els dies de viatge, els quilòmetres i el que et paga l’empresa, i veuràs l’import exempt d’IRPF i la part que tributa a la teva nòmina."
 palabraClave: "calculadora dietes i quilometratge"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglament de l’IRPF, art. 9: dietes i assignacions per a despeses de viatge (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

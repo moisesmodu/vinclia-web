@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-tipo-marginal-irpf"
-titulo: "Tipo marginal IRPF 2027: calculadora por comunidad autónoma"
+titulo: "Tipo marginal IRPF 2026 y 2027: calculadora por comunidad autónoma"
 h1: "Calculadora del tipo marginal de IRPF"
 descripcion: "Calcula tu tipo marginal de IRPF en 2027 con la escala estatal y la de tu comunidad. Verás cuánto pagas por cada 100 € más, tu tipo medio y la escala completa."
 resumen: "Escribe tu base liquidable y tu comunidad, y verás qué porcentaje se lleva Hacienda de cada euro adicional que ganes y cuánto pagas de media."
-palabraClave: "tipo marginal irpf 2027"
-actualizado: 2026-10-28
+palabraClave: "tipo marginal irpf 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF, arts. 63 y 74 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

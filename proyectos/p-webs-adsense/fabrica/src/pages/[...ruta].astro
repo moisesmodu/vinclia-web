@@ -9,7 +9,8 @@ import PaginaProducto from '../components/PaginaProducto.astro';
 import PaginaDescarga from '../components/PaginaDescarga.astro';
 import { producto, precio, capturas, enlacePago, tx } from '../lib/productos';
 import { paginas, url, absoluta, alterna, buscar, fichasSitio, rellenar, type Pagina } from '../lib/rutas';
-import { sitio, SITIO_ID, LANGS } from '../lib/sitio';
+import { sitio, SITIO_ID, LANGS, anunciosActivos } from '../lib/sitio';
+import familia from '../../familia.json';
 import { texto } from '../lib/contenido';
 import { params, anios } from '../lib/params';
 import { legal } from '../lib/legal';
@@ -43,6 +44,9 @@ const inicio = buscar('inicio', lang)!;
 const datos = buscar('fichas', lang)!;
 const sobre = buscar('legal:sobre', lang)!;
 const hoy = new Date().toISOString().slice(0, 10);
+// Fecha de la última revisión de los datos del sitio (sitio.json → «revisado»). Antes era la fecha de compilación:
+// cada despliegue «actualizaba» cientos de páginas sin cambios, una señal de frescura falsa que Google descuenta.
+const revision: string = sitio.revisado ?? hoy;
 const MAX_CHIPS = 12; // chips por colección en la portada; el resto, en la página índice de la colección
 const fecha = (iso: string) => fmt(iso, 'fecha', lang);
 const autor = { '@type': 'Person', name: sitio.autor.nombre, url: absoluta(sobre.ruta) };
@@ -106,7 +110,8 @@ if (p.tipo === 'inicio') {
   // Títulos del artículo con ancla (id + enlace a sí mismos) y un índice para el lateral en escritorio
   const ancla = (x: string) => x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/<[^>]+>/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const indice: { id: string; t: string }[] = [];
-  const html = tx.html.replace(/<h2>([\s\S]*?)<\/h2>/g, (_: string, h: string) => {
+  // Espacio irrompible entre la cifra y «€» o «%»: en el móvil «5.101,20» y «€» no deben quedar en líneas distintas
+  const html = tx.html.replace(/(\d) (€|%)/g, '$1\u00a0$2').replace(/<h2>([\s\S]*?)<\/h2>/g, (_: string, h: string) => {
     let id = ancla(h) || 'seccion';
     while (indice.some((x) => x.id === id)) id += '-2';
     indice.push({ id, t: h.replace(/<[^>]+>/g, '') });
@@ -116,7 +121,15 @@ if (p.tipo === 'inicio') {
   if (tx.faq.length) indice.push({ id: 'faq', t: u.faq });
   indice.push({ id: 'relacionadas', t: u.relacionadas });
   const dominio = (x: string) => { try { return new URL(x).hostname.replace(/^www\./, ''); } catch { return ''; } };
-  vista = { tx, html, indice, dominio, d: defs[`../calculadoras/${p.id}.ts`], relacionadas, fichasRel, colRel };
+  // Enlaces contextuales a la calculadora hermana de otro sitio Claro (sitio.json → enlacesFamilia; URL de familia.json)
+  const familiaRel = ((sitio.enlacesFamilia ?? {})[p.id] ?? []).map((e: any) => {
+    const h = familia.sitios.find((x) => x.id === e.sitio && x.url && x.estado === 'activo');
+    if (!h) return null;
+    const l = h.idiomas.includes(lang) ? lang : 'es';
+    return { sitio: h.nombre, icono: h.icono, href: `${h.url}/${l === 'es' ? '' : l + '/'}${e.ruta[l]}/`, hreflang: l, texto: e.texto[l], resumen: e.resumen[l] };
+  }).filter(Boolean);
+  if (familiaRel.length) indice.splice(indice.length - 1, 0, { id: 'familia', t: lang === 'es' ? 'En la familia Claro' : 'A la família Claro' });
+  vista = { tx, html, indice, dominio, d: defs[`../calculadoras/${p.id}.ts`], relacionadas, fichasRel, colRel, familiaRel };
   jsonld = [
     { '@context': 'https://schema.org', '@type': 'WebApplication', name: tx.h1, url: absoluta(p.ruta), description: tx.descripcion, applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: lang, isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: MONEDA }, author: autor, publisher: editor, dateModified: tx.actualizado },
     ...(tx.faq.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: tx.faq.map((q) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } })) }] : []),
@@ -136,7 +149,7 @@ if (p.tipo === 'inicio') {
   const csv = `${url(p.ruta).replace(/\/$/, '')}.csv`;
   vista = { f, html: renderTablas(tablas, lang), csv, calc: f.calc ? resumenCalc(f.calc) : null, grafico: graficoFicha(f.id, tablas, lang) };
   jsonld = [
-    { '@context': 'https://schema.org', '@type': 'Dataset', name: t(f.h1, lang), description: descripcion, url: absoluta(p.ruta), inLanguage: lang, creator: editor, author: autor, license: 'https://creativecommons.org/licenses/by/4.0/', dateModified: hoy, isBasedOn: f.fuentes.map((x) => x.url), distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(csv, import.meta.env.SITE).href }] },
+    { '@context': 'https://schema.org', '@type': 'Dataset', name: t(f.h1, lang), description: descripcion, url: absoluta(p.ruta), inLanguage: lang, creator: editor, author: autor, license: 'https://creativecommons.org/licenses/by/4.0/', dateModified: revision, isBasedOn: f.fuentes.map((x) => x.url), distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: new URL(csv, import.meta.env.SITE).href }] },
     miga([{ n: u.inicio, r: inicio.ruta }, { n: u.datos, r: datos.ruta }, { n: t(f.h1, lang), r: p.ruta }]),
   ];
 } else if (p.tipo === 'prog') {
@@ -154,7 +167,7 @@ if (p.tipo === 'inicio') {
   const grafico = !g ? '' : g.tipo === 'reparto' ? reparto({ titulo: g.titulo, partes: g.partes, formato: g.formato, lang }) : barras({ titulo: g.titulo, desc: g.desc, filas: g.filas, formato: g.formato, lang, compacto: true });
   vista = { pg, html: renderTablas(pg.tablas, lang), calc, href: `${url(calc.ruta)}?${q}`, enlaces, colTitulo: col.titulo[lang], colRuta: indiceCol?.ruta, grafico, tipoGraf: g?.tipo };
   jsonld = [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.h1, url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, dateModified: hoy },
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: pg.h1, url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, publisher: editor, dateModified: revision },
     ...(pg.faq?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: pg.faq.map((x) => ({ '@type': 'Question', name: x.p, acceptedAnswer: { '@type': 'Answer', text: x.r } })) }] : []),
     miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: indiceCol?.ruta ?? inicio.ruta }, { n: pg.h1, r: p.ruta }]),
   ];
@@ -176,7 +189,7 @@ if (p.tipo === 'inicio') {
   descripcion = col.descripcion?.[lang] ?? titulo;
   vista = { col, grupos: grupos.map((g) => ({ ...g, cab: cabCifra(g) })), total: items.length, calc };
   jsonld = [
-    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: col.titulo[lang], url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, publisher: editor, dateModified: hoy },
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: col.titulo[lang], url: absoluta(p.ruta), description: descripcion, inLanguage: lang, author: autor, publisher: editor, dateModified: revision },
     miga([{ n: u.inicio, r: inicio.ruta }, { n: col.titulo[lang], r: p.ruta }]),
   ];
 } else if (p.tipo === 'producto') {
@@ -196,7 +209,7 @@ if (p.tipo === 'inicio') {
   titulo = `Descarga: ${tx(pr.nombre, 'es')}`;
   descripcion = `Página privada de descarga de ${tx(pr.nombre, 'es')} tras la compra.`;
 } else {
-  const l = legal(p.id, lang, hoy);
+  const l = legal(p.id, lang, revision);
   titulo = l.titulo; descripcion = l.descripcion; actual = p.id === 'sobre' ? 'sobre' : undefined;
   vista = { l };
   if (p.id === 'sobre') jsonld = [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: l.titulo, url: absoluta(p.ruta), mainEntity: { ...autor, description: sitio.autor.bio[lang], jobTitle: sitio.autor.rol[lang] } }];
@@ -216,7 +229,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
           <ul class="confianza">
             <li><Fragment set:html={icono('escudo', 18)} />{pais === 'us' ? `Cifras oficiales de ${anio}` : lang === 'es' ? `Parámetros oficiales de ${anio}` : `Paràmetres oficials de ${anio}`}</li>
             <li><Fragment set:html={icono('documento', 18)} />{lang === 'es' ? 'Método y fuentes publicados' : 'Mètode i fonts publicats'}</li>
-            <li><Fragment set:html={icono('persona', 18)} />{lang === 'es' ? 'Sin registro ni cookies de seguimiento' : 'Sense registre ni galetes de seguiment'}</li>
+            <li><Fragment set:html={icono('persona', 18)} />{anunciosActivos() ? (lang === 'es' ? 'Gratis, sin registro y en tu navegador' : 'Gratis, sense registre i al teu navegador') : lang === 'es' ? 'Sin registro ni cookies de seguimiento' : 'Sense registre ni galetes de seguiment'}</li>
           </ul>
         </div>
         {v.heroe && (
@@ -235,7 +248,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         <ul>
           <li><span class="ico-caja" set:html={icono('documento', 22)} /><div><strong>{lang === 'es' ? 'Método a la vista' : 'Mètode a la vista'}</strong><span>{lang === 'es' ? 'Cada calculadora explica la fórmula paso a paso.' : 'Cada calculadora explica la fórmula pas a pas.'} <a href={url(sobre.ruta)}>{lang === 'es' ? 'Cómo calculamos' : 'Com calculem'}</a></span></div></li>
           <li><span class="ico-caja" set:html={icono('escudo', 22)} /><div><strong>{lang === 'es' ? 'Fuentes oficiales' : 'Fonts oficials'}</strong><span>{(u as any).fuentesBanda ?? (pais === 'us' ? 'IRS, Seguro Social (SSA), Departamento de Trabajo y cada estado.' : lang === 'es' ? 'BOE, Agencia Tributaria, Seguridad Social y SEPE.' : 'BOE, Agència Tributària, Seguretat Social i SEPE.')}</span></div></li>
-          <li><span class="ico-caja" set:html={icono('calendario', 22)} /><div><strong>{lang === 'es' ? 'Al día' : 'Al dia'}</strong><span>{lang === 'es' ? `Cifras de ${anio} revisadas el ${fecha(hoy)}.` : `Xifres del ${anio} revisades el ${fecha(hoy)}.`}{provisionales.includes(anio) ? (lang === 'es' ? ' Las provisionales, marcadas.' : ' Les provisionals, marcades.') : ''}</span></div></li>
+          <li><span class="ico-caja" set:html={icono('calendario', 22)} /><div><strong>{lang === 'es' ? 'Al día' : 'Al dia'}</strong><span>{lang === 'es' ? `Cifras de ${anio} revisadas el ${fecha(revision)}.` : `Xifres del ${anio} revisades el ${fecha(revision)}.`}{provisionales.includes(anio) ? (lang === 'es' ? ' Las provisionales, marcadas.' : ' Les provisionals, marcades.') : ''}</span></div></li>
           <li><span class="ico-caja" set:html={icono('tabla', 22)} /><div><strong>{lang === 'es' ? 'Datos para citar' : 'Dades per citar'}</strong><span>{lang === 'es' ? `${v.numFichas} tablas con gráfico y CSV.` : `${v.numFichas} taules amb gràfic i CSV.`} <a href={url(datos.ruta)}>{u.datos}</a></span></div></li>
         </ul>
       </section>
@@ -308,13 +321,18 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         <li><Fragment set:html={icono('calendario', 15)} /><span>{u.actualizado} <strong><time datetime={v.tx.actualizado}>{fecha(v.tx.actualizado)}</time></strong></span></li>
         <li><Fragment set:html={icono('persona', 15)} /><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></li>
         <li><Fragment set:html={icono('escudo', 15)} /><span>{u.revisado}</span></li>
-        <li><Fragment set:html={icono('calculadora', 15)} /><a href={`${url(rutaPro(lang))}?calc=${p.id}#configurador`}>{lang === 'es' ? 'Pon esta calculadora en tu web →' : 'Posa aquesta calculadora al teu web →'}</a></li>
       </ul>
-      {v.d.anual && provisionales.includes(anio) && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
+      {v.d.anual && provisionales.includes(anio) && (
+        <details class="aviso-prov plegable">
+          <summary>{lang === 'es' ? `Cifras de ${anio} provisionales; las de ${anio - 1}, oficiales. Elige el año en la calculadora.` : `Xifres del ${anio} provisionals; les del ${anio - 1}, oficials. Tria l’any a la calculadora.`}</summary>
+          <p>{u.avisoProvisional(anio)}</p>
+        </details>
+      )}
       <Calculadora d={v.d} lang={lang} pais={pais} anio={anio} anios={listaAnios} provisionales={provisionales} />
       <ProductoPropio calc={p.id} lang={lang} />
       <Afiliado calc={p.id} lang={lang} />
       <Anuncio posicion="bajoResultado" lang={lang} />
+      <p class="calc-pro"><Fragment set:html={icono('calculadora', 15)} /><a href={`${url(rutaPro(lang))}?calc=${p.id}#configurador`}>{lang === 'es' ? '¿Tienes una web o una gestoría? Pon esta calculadora en tu web →' : 'Tens un web o una gestoria? Posa aquesta calculadora al teu web →'}</a></p>
       <div class="calc-doc">
         <nav class="indice" aria-labelledby="indice-t">
           <p id="indice-t">{lang === 'es' ? 'En esta página' : 'En aquesta pàgina'}</p>
@@ -338,6 +356,12 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       </div>
       {v.fichasRel.length > 0 && (<section class="calc-enlaces"><h2 class="sec">{u.datos}</h2><ul class="chips">{v.fichasRel.map((f: any) => <li><a href={url(f.ruta)}>{f.h1}</a></li>)}</ul></section>)}
       {v.colRel.map((c: any) => (<section class="calc-enlaces"><h2 class="sec">{c.titulo}</h2><ul class="chips">{c.items.map((x: Pagina) => <li><a href={url(x.ruta)}>{etiquetaProg(x)}</a></li>)}{c.indice && c.total > c.items.length && <li><a href={url(c.indice)}><strong>{lang === 'es' ? `Ver las ${c.total} →` : `Mostra-les totes (${c.total}) →`}</strong></a></li>}</ul></section>))}
+      {v.familiaRel.length > 0 && (
+        <section class="relacionadas familia-rel" aria-labelledby="familia">
+          <h2 class="sec" id="familia"><a href="#familia">{lang === 'es' ? 'Sigue en la familia Claro' : 'Continua a la família Claro'}</a></h2>
+          <ul class="rel-calc">{v.familiaRel.map((c: any) => <li><a href={c.href} hreflang={c.hreflang}><span class="ico-caja" set:html={icono(c.icono, 24)} /><small class="rel-sitio">{c.sitio}</small><strong>{c.texto}</strong><span class="rel-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul>
+        </section>
+      )}
       <section class="relacionadas" aria-labelledby="relacionadas"><h2 class="sec" id="relacionadas"><a href="#relacionadas">{u.relacionadas}</a></h2><ul class="rel-calc">{v.relacionadas.map((c: any) => <li><a href={url(c.ruta)}><span class="ico-caja" set:html={iconoCalc(c.id, 24)} /><strong>{c.h1}</strong><span class="rel-r">{c.resumen}</span><span class="ir" aria-hidden="true">→</span></a></li>)}</ul></section>
       <Anuncio posicion="finContenido" lang={lang} />
       <p class="descargo descargo-calc"><Fragment set:html={icono('alerta', 18)} /><span>{u.descargo}</span></p>
@@ -369,7 +393,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
         <p class="eyebrow">{u.datos} · CC BY 4.0</p>
         <h1>{t(v.f.h1, lang)}</h1>
         <div class="intro" set:html={t(v.f.intro, lang)} />
-        <div class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{v.f.fuentes.length} {lang === 'es' ? (v.f.fuentes.length === 1 ? 'fuente oficial' : 'fuentes oficiales') : (v.f.fuentes.length === 1 ? 'font oficial' : 'fonts oficials')}</span><a class="btn-csv" href={v.csv} download><Fragment set:html={icono('tabla', 16)} />{u.descargarCsv}</a></div>
+        <div class="meta"><span>{u.actualizado} <strong><time datetime={revision}>{fecha(revision)}</time></strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span><span>{v.f.fuentes.length} {lang === 'es' ? (v.f.fuentes.length === 1 ? 'fuente oficial' : 'fuentes oficiales') : (v.f.fuentes.length === 1 ? 'font oficial' : 'fonts oficials')}</span><a class="btn-csv" href={v.csv} download><Fragment set:html={icono('tabla', 16)} />{u.descargarCsv}</a></div>
       </header>
       {v.grafico && <Fragment set:html={v.grafico} />}
       <div class="ficha-tablas" set:html={v.html} />
@@ -403,7 +427,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       <div class:list={['prog-cuerpo', { 'con-graf': v.tipoGraf === 'barras' }]}>
         <div>
           <div class="intro" set:html={v.pg.intro} />
-          <p class="meta"><span>{u.actualizado} <strong>{fecha(hoy)}</strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></p>
+          <p class="meta"><span>{u.actualizado} <strong><time datetime={revision}>{fecha(revision)}</time></strong></span><span>{u.por} <a href={url(sobre.ruta)}>{sitio.autor.nombre}</a></span></p>
           {provisionales.includes(anio) && p.coleccion?.plantilla !== 'calendario-laboral' && <p class="aviso-prov">{u.avisoProvisional(anio)}</p>}
           <a class="cta-calc" href={v.href}><span class="ico-caja" set:html={iconoCalc(v.calc.id, 24)} /><span><small>{u.usarCalc}</small><strong>{v.calc.h1}</strong></span><span class="ir" aria-hidden="true">→</span></a>
         </div>
@@ -458,7 +482,7 @@ const etiquetaProg = (x: Pagina) => x.fila![`etiqueta_${lang}`] || x.fila!.etiqu
       <header class="cab-pag">
         <p class="eyebrow">{p.id === 'sobre' ? (lang === 'es' ? 'Método y equipo' : 'Mètode i equip') : 'Legal'}</p>
         <h1>{v.l.titulo.split(' · ')[0]}</h1>
-        <p class="meta">{u.actualizado} {fecha(hoy)}</p>
+        <p class="meta">{u.actualizado} <time datetime={revision}>{fecha(revision)}</time></p>
       </header>
       <div class="cuerpo" set:html={v.l.html} />
     </div>

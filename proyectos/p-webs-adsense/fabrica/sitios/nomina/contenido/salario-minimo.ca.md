@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-salari-minim"
-titulo: "Calculadora del salari mínim 2027: SMI segons la teva jornada"
-h1: "Calculadora del salari mínim 2027"
+titulo: "Calculadora del salari mínim 2026 i 2027: SMI segons la teva jornada"
+h1: "Calculadora del salari mínim 2026 i 2027"
 descripcion: "Calcula el salari mínim interprofessional que et correspon segons les teves hores setmanals: anual, mensual en 12 o 14 pagues, per dia i per hora."
 resumen: "Escriu les hores del teu contracte i, si vols, el teu salari brut anual. Veuràs l’SMI que et correspon i si el teu sou arriba al mínim legal."
-palabraClave: "calculadora salari mínim 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora salari mínim 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reial decret 126/2026, salari mínim interprofessional per al 2026 (BOE)"
     url: "https://www.boe.es/eli/es/rd/2026/02/18/126/con"

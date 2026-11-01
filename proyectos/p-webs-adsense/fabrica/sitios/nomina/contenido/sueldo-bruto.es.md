@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sueldo-bruto
-titulo: "Calculadora de sueldo bruto 2027: de neto a bruto anual"
-h1: "Calculadora de sueldo bruto 2027"
+titulo: "Calculadora de sueldo bruto 2026 y 2027: de neto a bruto anual"
+h1: "Calculadora de sueldo bruto 2026 y 2027"
 descripcion: "Calcula qué salario bruto anual necesitas para cobrar un neto concreto cada mes, con la retención de IRPF y la Seguridad Social, en 12 o 14 pagas."
 resumen: "Escribe el neto que quieres cobrar al mes y verás el bruto anual que tienes que pedir, lo que te retienen y lo que le cuestas a la empresa."
-palabraClave: "calculadora sueldo bruto 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora sueldo bruto 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglamento del IRPF, arts. 80 a 87: cálculo de la retención (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

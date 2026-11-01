@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-iva"
-titulo: "Calculadora de IVA 2027: añadir o quitar el 21, 10 o 4 %"
+titulo: "Calculadora de IVA 2026 y 2027: añadir o quitar el 21, 10 o 4 %"
 h1: "Calculadora de IVA"
 descripcion: "Añade o quita el IVA a cualquier importe: tipo general del 21 %, reducido del 10 % y superreducido del 4 %. Base imponible, cuota y total al céntimo en un paso."
 resumen: "Escribe un importe, elige si quieres sumar o quitar el IVA y el tipo, y verás la base imponible, la cuota de IVA y el total."
 palabraClave: "calculadora iva"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 37/1992 del IVA, arts. 90 y 91: tipos impositivos (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"

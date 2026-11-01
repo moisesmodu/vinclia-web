@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sou-net
-titulo: "Calculadora de sou net 2027: de brut a net per comunitat"
-h1: "Calculadora de sou net 2027"
-descripcion: "Passa el teu salari brut a net amb la retenció d’IRPF i la Seguretat Social del 2027, per comunitat autònoma, 12 o 14 pagues i situació familiar."
+titulo: "Calculadora de sou net 2026 i 2027: de brut a net per comunitat"
+h1: "Calculadora de sou net 2026 i 2027"
+descripcion: "Passa el teu salari brut a net amb la retenció d’IRPF i la Seguretat Social del 2026 i el 2027, per comunitat, en 12 o 14 pagues i amb la teva família."
 resumen: "Escriu el teu brut anual i veuràs el que cobraràs cada mes, el que et retenen i si a la renda et sortirà a pagar o a retornar segons la teva comunitat."
-palabraClave: "calculadora sou net 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora sou net 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

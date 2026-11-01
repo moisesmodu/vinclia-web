@@ -1,11 +1,11 @@
 ---
 slug: calculadora-subida-sueldo
-titulo: "Calculadora de subida de sueldo 2027: cuánto ganas en neto"
-h1: "Calculadora de subida de sueldo 2027"
+titulo: "Calculadora de subida de sueldo 2026 y 2027: cuánto ganas en neto"
+h1: "Calculadora de subida de sueldo 2026 y 2027"
 descripcion: "Calcula cuánto neto ganas de verdad con una subida de sueldo, en porcentaje o en euros brutos: nueva retención de IRPF, neto anual y diferencia en cada nómina."
 resumen: "Escribe tu bruto actual y la subida, y verás cuánto más cobrarás en neto al año y en cada nómina, y cuántos euros te quedan de cada 100 de subida."
-palabraClave: "calculadora subida sueldo 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora subida sueldo 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

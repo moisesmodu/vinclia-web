@@ -1,11 +1,11 @@
 ---
 slug: calculadora-tarifa-plana-autonoms
-titulo: "Calculadora tarifa plana autònoms 2027: quant estalvies"
+titulo: "Calculadora tarifa plana autònoms 2026 i 2027: quant estalvies"
 h1: "Calculadora de tarifa plana d’autònoms"
 descripcion: "Calcula quant estalvies amb la tarifa plana de 80 € el 2027, quan s’acaba i quina quota pagaràs després segons el rendiment net previst. Amb pròrroga."
 resumen: "Indica la teva data d’alta i el rendiment net que preveus i veuràs l’estalvi de la tarifa plana, la data en què s’acaba i la quota que pagaràs després."
 palabraClave: "calculadora tarifa plana autònoms"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei general de la Seguretat Social (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

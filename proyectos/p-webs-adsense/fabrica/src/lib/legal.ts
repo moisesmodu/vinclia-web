@@ -1,7 +1,7 @@
 // Páginas legales (LSSI, RGPD, cookies) y «Quiénes somos y método», generadas con los datos del titular.
 // Revisión recomendada por un gestor antes de solicitar AdSense; el texto sigue la guía de la AEPD.
 import type { Lang } from './def';
-import { sitio, anunciosActivos } from './sitio';
+import { sitio, anunciosActivos, analiticaVercel } from './sitio';
 import { productosSitio, precio } from './productos';
 
 export interface PaginaLegal { titulo: string; descripcion: string; html: string }
@@ -12,6 +12,21 @@ const METODO_US = `<h2>Cómo calculamos</h2><p>Cada calculadora aplica paso a pa
 <h2>De dónde salen los datos</h2><p>Las cifras (tramos federales, deducción estándar, tope del Seguro Social, crédito por hijos, salario mínimo, tramos y deducciones de cada estado) están en archivos separados por año, cada una con su fuente oficial: IRS (Rev. Proc. 2025-32 para 2026), SSA, Departamento de Trabajo y departamentos de impuestos estatales. Las que no se han podido confirmar en la página oficial se marcan como pendientes de verificar y se revisan cada semana.</p>
 <h2>Cómo se actualiza</h2><p>Cada semana se revisan las publicaciones del IRS, la SSA y los estados. Si cambia una cifra, se actualiza el archivo de parámetros, se ejecutan las pruebas automáticas de cálculo y se vuelve a publicar el sitio; la fecha de cada página indica su última revisión.</p>`;
 
+// Analítica que de verdad carga el sitio (Base.astro): Vercel Web Analytics si se compila en Vercel, Umami si tiene ID.
+// La política de privacidad y la de cookies la describen tal cual; si no hay ninguna, lo dicen.
+function analitica(lang: Lang): { nombre: string; privacidad: string } {
+  const es = lang === 'es';
+  const vercel = analiticaVercel(), umami = !!sitio.umami.id;
+  const nombre = [vercel && 'Vercel Web Analytics', umami && 'Umami'].filter(Boolean).join(es ? ' y ' : ' i ');
+  if (!nombre) return { nombre: '', privacidad: '' };
+  return {
+    nombre,
+    privacidad: es
+      ? `<li><strong>Estadísticas:</strong> usamos ${nombre}, una analítica sin cookies que no guarda direcciones IP ni identifica a personas. Mide páginas vistas, país, origen de la visita y tipo de dispositivo de forma agregada.${vercel ? ' La presta Vercel Inc. como encargado del tratamiento.' : ''} Base legal: interés legítimo (art. 6.1.f RGPD) en saber qué herramientas se usan.</li>`
+      : `<li><strong>Estadístiques:</strong> fem servir ${nombre}, una analítica sense galetes que no desa adreces IP ni identifica persones. Mesura pàgines vistes, país, origen de la visita i tipus de dispositiu de manera agregada.${vercel ? ' La presta Vercel Inc. com a encarregat del tractament.' : ''} Base legal: interès legítim (art. 6.1.f RGPD) a saber quines eines es fan servir.</li>`,
+  };
+}
+
 export function legal(id: string, lang: Lang, actualizado: string): PaginaLegal {
   const us = sitio.pais === 'us';
   const t = sitio.titular, n = sitio.nombre, dom = sitio.dominio.replace(/^https?:\/\//, '');
@@ -19,6 +34,9 @@ export function legal(id: string, lang: Lang, actualizado: string): PaginaLegal 
   const es = lang === 'es';
   // Textos propios del sitio (sitio.json → «legal»): HogarClaro no habla de nóminas ni del SEPE. Sin ellos, los de siempre.
   const X: Record<string, string> = sitio.legal?.[lang] ?? {};
+  const an = analitica(lang);
+  const anEs = an.nombre ? `La analítica (${an.nombre}) funciona sin cookies.` : 'No usamos herramientas de analítica.';
+  const anCa = an.nombre ? `L’analítica (${an.nombre}) funciona sense galetes.` : 'No fem servir eines d’analítica.';
   switch (id) {
     case 'aviso':
       return es ? {
@@ -41,7 +59,7 @@ ${us ? OBJETO_US(n) : `<h2>Objeto y uso</h2><p>${n} ofrece calculadoras y tablas
         titulo: `Política de privacidad · ${n}`, descripcion: `Qué datos se tratan en ${n}, con qué base legal y cómo ejercer tus derechos.`,
         html: `<p><strong>Responsable:</strong> ${t.nombre}, NIF ${t.nif}, ${t.domicilio}. Contacto: <a href="mailto:${t.email}">${t.email}</a>.</p>
 <h2>Qué datos tratamos</h2><ul><li><strong>Calculadoras:</strong> los datos que escribes (salario, fechas, situación familiar) se procesan solo en tu navegador. No se envían ni se guardan en ningún servidor. Si usas «Copiar enlace», los datos van en la propia dirección que compartes.</li>
-<li><strong>Estadísticas:</strong> usamos Umami, una analítica sin cookies que no guarda direcciones IP ni identifica a personas. Mide páginas vistas, país y tipo de dispositivo de forma agregada. Base legal: interés legítimo (art. 6.1.f RGPD) en saber qué herramientas se usan.</li>
+${an.privacidad}
 <li><strong>Compras:</strong> si compras un producto digital, el pago lo procesa Stripe Payments Europe, Ltd. (responsable independiente de los datos de pago). Nosotros recibimos tu nombre, tu correo y el importe para entregarte el producto, atender reclamaciones y cumplir las obligaciones fiscales. Base legal: el contrato (art. 6.1.b RGPD) y la obligación legal (art. 6.1.c). Se conservan el tiempo que exige la ley tributaria.</li>
 <li><strong>Correo:</strong> si nos escribes, usamos tu dirección solo para responderte y la borramos cuando ya no es necesaria. Base legal: tu consentimiento.</li>
 ${ads ? `<li><strong>Publicidad:</strong> el sitio muestra anuncios de Google AdSense. Google y sus socios pueden usar cookies e identificadores para mostrar anuncios y medirlos, personalizados o no según lo que elijas en el aviso de consentimiento (marco TCF 2.2 de IAB Europe). Base legal: tu consentimiento, que puedes retirar en cualquier momento desde «Gestionar cookies». Más información en <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">cómo usa Google la información de los sitios que usan sus servicios</a>.</li>` : ''}</ul>
@@ -51,7 +69,7 @@ ${ads ? `<li><strong>Publicidad:</strong> el sitio muestra anuncios de Google Ad
         titulo: `Política de privacitat · ${n}`, descripcion: `Quines dades es tracten a ${n}, amb quina base legal i com exercir els teus drets.`,
         html: `<p><strong>Responsable:</strong> ${t.nombre}, NIF ${t.nif}, ${t.domicilio}. Contacte: <a href="mailto:${t.email}">${t.email}</a>.</p>
 <h2>Quines dades tractem</h2><ul><li><strong>Calculadores:</strong> les dades que escrius (salari, dates, situació familiar) es processen només al teu navegador. No s’envien ni es desen en cap servidor. Si fas servir «Copia l’enllaç», les dades van a la mateixa adreça que comparteixes.</li>
-<li><strong>Estadístiques:</strong> fem servir Umami, una analítica sense galetes que no desa adreces IP ni identifica persones. Mesura pàgines vistes, país i tipus de dispositiu de manera agregada. Base legal: interès legítim (art. 6.1.f RGPD) a saber quines eines es fan servir.</li>
+${an.privacidad}
 <li><strong>Compres:</strong> si compres un producte digital, el pagament el processa Stripe Payments Europe, Ltd. (responsable independent de les dades de pagament). Nosaltres rebem el teu nom, el teu correu i l’import per lliurar-te el producte, atendre reclamacions i complir les obligacions fiscals. Base legal: el contracte (art. 6.1.b RGPD) i l’obligació legal (art. 6.1.c). Es conserven el temps que exigeix la llei tributària.</li>
 <li><strong>Correu:</strong> si ens escrius, fem servir la teva adreça només per respondre’t i l’esborrem quan ja no cal. Base legal: el teu consentiment.</li>
 ${ads ? `<li><strong>Publicitat:</strong> el lloc mostra anuncis de Google AdSense. Google i els seus socis poden fer servir galetes i identificadors per mostrar anuncis i mesurar-los, personalitzats o no segons el que triïs a l’avís de consentiment (marc TCF 2.2 d’IAB Europe). Base legal: el teu consentiment, que pots retirar en qualsevol moment des de «Gestiona les galetes». Més informació a <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">com fa servir Google la informació dels llocs que utilitzen els seus serveis</a>.</li>` : ''}</ul>
@@ -62,13 +80,13 @@ ${ads ? `<li><strong>Publicitat:</strong> el lloc mostra anuncis de Google AdSen
       return es ? {
         titulo: `Política de cookies · ${n}`, descripcion: `Qué cookies usa ${n} y cómo gestionarlas.`,
         html: ads
-          ? `<p>Este sitio no instala cookies propias. La analítica (Umami) funciona sin cookies.</p><p>Los anuncios de <strong>Google AdSense</strong> sí pueden usar cookies e identificadores de Google y de sus socios publicitarios. Antes de usarlos te pedimos permiso con el aviso de consentimiento de Google, certificado para el marco TCF 2.2 de IAB Europe. Puedes aceptar, rechazar o elegir por finalidades, y cambiar tu decisión cuando quieras con el enlace «Gestionar cookies» del pie de página.</p><p>Si rechazas, verás anuncios no personalizados, que solo usan cookies para limitar la frecuencia y detectar fraude. También puedes borrar o bloquear las cookies desde tu navegador. Lista de socios y finalidades: <a href="https://policies.google.com/technologies/cookies" rel="noopener">política de cookies de Google</a>.</p>`
-          : `<p>Este sitio <strong>no usa cookies</strong>: ni propias ni de terceros. La analítica (Umami) funciona sin cookies y sin guardar datos personales, por eso no te mostramos ningún aviso.</p><p>Si en el futuro se incorporan anuncios, se te pedirá consentimiento con el aviso certificado de Google (marco TCF 2.2) antes de instalar ninguna cookie, y esta página se actualizará.</p>`,
+          ? `<p>Este sitio no instala cookies propias. ${anEs}</p><p>Los anuncios de <strong>Google AdSense</strong> sí pueden usar cookies e identificadores de Google y de sus socios publicitarios. Antes de usarlos te pedimos permiso con el aviso de consentimiento de Google, certificado para el marco TCF 2.2 de IAB Europe. Puedes aceptar, rechazar o elegir por finalidades, y cambiar tu decisión cuando quieras con el enlace «Gestionar cookies» del pie de página.</p><p>Si rechazas, verás anuncios no personalizados, que solo usan cookies para limitar la frecuencia y detectar fraude. También puedes borrar o bloquear las cookies desde tu navegador. Lista de socios y finalidades: <a href="https://policies.google.com/technologies/cookies" rel="noopener">política de cookies de Google</a>.</p>`
+          : `<p>Este sitio <strong>no usa cookies</strong>: ni propias ni de terceros. ${anEs} No guardamos datos personales, por eso no te mostramos ningún aviso.</p><p>Si en el futuro se incorporan anuncios, se te pedirá consentimiento con el aviso certificado de Google (marco TCF 2.2) antes de instalar ninguna cookie, y esta página se actualizará.</p>`,
       } : {
         titulo: `Política de galetes · ${n}`, descripcion: `Quines galetes fa servir ${n} i com gestionar-les.`,
         html: ads
-          ? `<p>Aquest lloc no instal·la galetes pròpies. L’analítica (Umami) funciona sense galetes.</p><p>Els anuncis de <strong>Google AdSense</strong> sí que poden fer servir galetes i identificadors de Google i dels seus socis publicitaris. Abans de fer-los servir et demanem permís amb l’avís de consentiment de Google, certificat per al marc TCF 2.2 d’IAB Europe. Pots acceptar, rebutjar o triar per finalitats, i canviar la decisió quan vulguis amb l’enllaç «Gestiona les galetes» del peu de pàgina.</p><p>Si rebutges, veuràs anuncis no personalitzats, que només fan servir galetes per limitar la freqüència i detectar frau. També pots esborrar o bloquejar les galetes des del navegador. Llista de socis i finalitats: <a href="https://policies.google.com/technologies/cookies" rel="noopener">política de galetes de Google</a>.</p>`
-          : `<p>Aquest lloc <strong>no fa servir galetes</strong>: ni pròpies ni de tercers. L’analítica (Umami) funciona sense galetes i sense desar dades personals, per això no et mostrem cap avís.</p><p>Si en el futur s’hi incorporen anuncis, se’t demanarà consentiment amb l’avís certificat de Google (marc TCF 2.2) abans d’instal·lar cap galeta, i aquesta pàgina s’actualitzarà.</p>`,
+          ? `<p>Aquest lloc no instal·la galetes pròpies. ${anCa}</p><p>Els anuncis de <strong>Google AdSense</strong> sí que poden fer servir galetes i identificadors de Google i dels seus socis publicitaris. Abans de fer-los servir et demanem permís amb l’avís de consentiment de Google, certificat per al marc TCF 2.2 d’IAB Europe. Pots acceptar, rebutjar o triar per finalitats, i canviar la decisió quan vulguis amb l’enllaç «Gestiona les galetes» del peu de pàgina.</p><p>Si rebutges, veuràs anuncis no personalitzats, que només fan servir galetes per limitar la freqüència i detectar frau. També pots esborrar o bloquejar les galetes des del navegador. Llista de socis i finalitats: <a href="https://policies.google.com/technologies/cookies" rel="noopener">política de galetes de Google</a>.</p>`
+          : `<p>Aquest lloc <strong>no fa servir galetes</strong>: ni pròpies ni de tercers. ${anCa} No desem dades personals, per això no et mostrem cap avís.</p><p>Si en el futur s’hi incorporen anuncis, se’t demanarà consentiment amb l’avís certificat de Google (marc TCF 2.2) abans d’instal·lar cap galeta, i aquesta pàgina s’actualitzarà.</p>`,
       };
     case 'condiciones': {
       // Condiciones de venta de los productos digitales (productos.json): contenido digital sin soporte material
@@ -103,6 +121,27 @@ ${ads ? `<li><strong>Publicitat:</strong> el lloc mostra anuncis de Google AdSen
 <h2>Què no és</h2><p>Els productes són eines de càlcul orientatives i models de documents. <strong>No són assessorament fiscal, jurídic ni financer</strong> i no substitueixen un professional ni els programes oficials.</p>
 <h2>Ús d’intel·ligència artificial</h2><p>El contingut dels productes s’ha preparat amb ajuda d’intel·ligència artificial i s’ha revisat amb les fonts oficials que se citen a cadascun (BOE, Agència Tributària, Seguretat Social). Les xifres surten dels mateixos paràmetres oficials que fan servir les calculadores del lloc.</p>
 <h2>Llei aplicable</h2><p>Aquestes condicions es regeixen per la llei espanyola. Si ets consumidor, pots reclamar davant els tribunals del teu domicili. Abans, escriu-nos: gairebé tot s’arregla amb un correu.</p>`,
+      };
+    }
+    case 'contacto': {
+      // Página de contacto propia (la piden los revisores de AdSense y da confianza): correo, plazo y qué enviar
+      const a = sitio.autor;
+      return es ? {
+        titulo: `Contacto · ${n}`, descripcion: `Cómo contactar con ${n}: correo, plazo de respuesta y qué datos enviar si un resultado no cuadra.`,
+        html: `<p>${n} lo hace <strong>${a.nombre}</strong> (${t.domicilio}). La forma más rápida de hablar con nosotros es el correo: <a href="mailto:${t.email}?subject=${encodeURIComponent(n)}"><strong>${t.email}</strong></a>. Respondemos en uno o dos días laborables.</p>
+<h2>Si un resultado no cuadra</h2><p>Escríbenos con la dirección de la página (el botón «Copiar enlace con estos datos» de cada calculadora la deja lista con tus cifras) y, si puedes, lo que te sale en ${us ? 'tu talón de pago o tu declaración' : X.comparar ?? 'tu nómina o tu liquidación'}. Revisamos el cálculo con la norma y, si hay un error, se corrige el mismo día y se anota la fecha en la página.</p>
+<h2>Sugerencias y datos nuevos</h2><p>Si echas en falta una calculadora, una comunidad o una tabla, o ves que ha salido una norma nueva que cambia alguna cifra, cuéntanoslo: las peticiones repetidas pasan a la lista de la semana.</p>
+<h2>Profesionales y prensa</h2><p>Para incrustar las calculadoras en tu web, consulta la página para profesionales. Las tablas de datos se pueden citar libremente enlazando a la página de origen.</p>
+<h2>Lo que no hacemos</h2><p>No damos asesoramiento personalizado ni tramitamos ${us ? 'declaraciones' : 'nóminas, prestaciones ni declaraciones'}. Para tu caso concreto, consulta a ${us ? 'un preparador de impuestos' : 'un gestor, un graduado social o el organismo oficial'}.</p>
+<p>Datos del titular: ${t.nombre}, NIF ${t.nif}, ${t.domicilio}.</p>`,
+      } : {
+        titulo: `Contacte · ${n}`, descripcion: `Com contactar amb ${n}: correu, termini de resposta i quines dades enviar si un resultat no quadra.`,
+        html: `<p>${n} el fa <strong>${a.nombre}</strong> (${t.domicilio}). La manera més ràpida de parlar amb nosaltres és el correu: <a href="mailto:${t.email}?subject=${encodeURIComponent(n)}"><strong>${t.email}</strong></a>. Responem en un o dos dies feiners.</p>
+<h2>Si un resultat no quadra</h2><p>Escriu-nos amb l’adreça de la pàgina (el botó «Copia l’enllaç amb aquestes dades» de cada calculadora la deixa a punt amb les teves xifres) i, si pots, el que et surt a ${X.comparar ?? 'la teva nòmina o la teva liquidació'}. Revisem el càlcul amb la norma i, si hi ha un error, es corregeix el mateix dia i s’anota la data a la pàgina.</p>
+<h2>Suggeriments i dades noves</h2><p>Si trobes a faltar una calculadora, una comunitat o una taula, o veus que ha sortit una norma nova que canvia alguna xifra, explica-ho: les peticions repetides passen a la llista de la setmana.</p>
+<h2>Professionals i premsa</h2><p>Per incrustar les calculadores al teu web, consulta la pàgina per a professionals. Les taules de dades es poden citar lliurement enllaçant a la pàgina d’origen.</p>
+<h2>El que no fem</h2><p>No donem assessorament personalitzat ni tramitem nòmines, prestacions ni declaracions. Per al teu cas concret, consulta un gestor, un graduat social o l’organisme oficial.</p>
+<p>Dades del titular: ${t.nombre}, NIF ${t.nif}, ${t.domicilio}.</p>`,
       };
     }
     default: {

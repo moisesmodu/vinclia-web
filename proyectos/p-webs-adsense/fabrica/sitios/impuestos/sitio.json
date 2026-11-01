@@ -381,5 +381,157 @@
       },
       "ficha": "escalas-irpf-comunidades"
     }
-  ]
+  ],
+  "enlacesFamilia": {
+    "irpf-renta": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-sueldo-neto",
+          "ca": "calculadora-sou-net"
+        },
+        "texto": {
+          "es": "Calculadora de sueldo neto",
+          "ca": "Calculadora de sou net"
+        },
+        "resumen": {
+          "es": "De bruto a neto con la retención y la Seguridad Social de tu nómina.",
+          "ca": "De brut a net amb la retenció i la Seguretat Social de la teva nòmina."
+        }
+      },
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-retencion-irpf",
+          "ca": "calculadora-retencio-irpf"
+        },
+        "texto": {
+          "es": "Retención de IRPF en la nómina",
+          "ca": "Retenció d’IRPF a la nòmina"
+        },
+        "resumen": {
+          "es": "El porcentaje que te aplica la empresa, paso a paso.",
+          "ca": "El percentatge que t’aplica l’empresa, pas a pas."
+        }
+      }
+    ],
+    "tipo-marginal-irpf": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-sueldo-neto",
+          "ca": "calculadora-sou-net"
+        },
+        "texto": {
+          "es": "Calculadora de sueldo neto",
+          "ca": "Calculadora de sou net"
+        },
+        "resumen": {
+          "es": "De bruto a neto con la retención y la Seguridad Social de tu nómina.",
+          "ca": "De brut a net amb la retenció i la Seguretat Social de la teva nòmina."
+        }
+      }
+    ],
+    "obligacion-declarar": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-retencion-irpf",
+          "ca": "calculadora-retencio-irpf"
+        },
+        "texto": {
+          "es": "Retención de IRPF en la nómina",
+          "ca": "Retenció d’IRPF a la nòmina"
+        },
+        "resumen": {
+          "es": "El porcentaje que te aplica la empresa, paso a paso.",
+          "ca": "El percentatge que t’aplica l’empresa, pas a pas."
+        }
+      }
+    ],
+    "sueldo-neto-autonomo": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-cuota-autonomos",
+          "ca": "calculadora-quota-autonoms"
+        },
+        "texto": {
+          "es": "Cuota de autónomos por tramos",
+          "ca": "Quota d’autònoms per trams"
+        },
+        "resumen": {
+          "es": "Tu cuota mensual según tus rendimientos netos.",
+          "ca": "La teva quota mensual segons els rendiments nets."
+        }
+      }
+    ],
+    "tarifa-plana-autonomos": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-cuota-autonomos",
+          "ca": "calculadora-quota-autonoms"
+        },
+        "texto": {
+          "es": "Cuota de autónomos por tramos",
+          "ca": "Quota d’autònoms per trams"
+        },
+        "resumen": {
+          "es": "Tu cuota mensual según tus rendimientos netos.",
+          "ca": "La teva quota mensual segons els rendiments nets."
+        }
+      }
+    ],
+    "autonomo-o-asalariado": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-sueldo-neto",
+          "ca": "calculadora-sou-net"
+        },
+        "texto": {
+          "es": "Calculadora de sueldo neto",
+          "ca": "Calculadora de sou net"
+        },
+        "resumen": {
+          "es": "De bruto a neto con la retención y la Seguridad Social de tu nómina.",
+          "ca": "De brut a net amb la retenció i la Seguretat Social de la teva nòmina."
+        }
+      },
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-cuota-autonomos",
+          "ca": "calculadora-quota-autonoms"
+        },
+        "texto": {
+          "es": "Cuota de autónomos por tramos",
+          "ca": "Quota d’autònoms per trams"
+        },
+        "resumen": {
+          "es": "Tu cuota mensual según tus rendimientos netos.",
+          "ca": "La teva quota mensual segons els rendiments nets."
+        }
+      }
+    ],
+    "precio-hora-autonomo": [
+      {
+        "sitio": "nomina",
+        "ruta": {
+          "es": "calculadora-cuota-autonomos",
+          "ca": "calculadora-quota-autonoms"
+        },
+        "texto": {
+          "es": "Cuota de autónomos por tramos",
+          "ca": "Quota d’autònoms per trams"
+        },
+        "resumen": {
+          "es": "Tu cuota mensual según tus rendimientos netos.",
+          "ca": "La teva quota mensual segons els rendiments nets."
+        }
+      }
+    ]
+  },
+  "revisado": "2026-11-01"
 }

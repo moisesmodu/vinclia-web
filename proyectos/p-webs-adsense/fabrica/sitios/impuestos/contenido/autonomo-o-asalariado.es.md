@@ -1,11 +1,11 @@
 ---
 slug: autonomo-o-asalariado
-titulo: "Autónomo o asalariado 2027: ¿con cuál ganas más?"
+titulo: "Autónomo o asalariado 2026 y 2027: ¿con cuál ganas más?"
 h1: "¿Autónomo o asalariado?"
 descripcion: "Compara el neto anual que te queda con el mismo coste como asalariado o como autónomo en 2027: Seguridad Social, cuota de autónomos e IRPF por comunidad."
 resumen: "Escribe lo que paga la empresa o el cliente al año y verás qué te queda limpio como asalariado y como autónomo, con la diferencia entre ambos."
 palabraClave: "autónomo o asalariado"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

@@ -1,11 +1,11 @@
 ---
 slug: calculadora-precio-hora-autonomo
-titulo: "Calculadora precio hora autónomo 2027: cuánto cobrar"
+titulo: "Calculadora precio hora autónomo 2026 y 2027: cuánto cobrar"
 h1: "Calculadora de precio por hora de autónomo"
 descripcion: "Calcula qué precio por hora debes cobrar como autónomo en 2027 para ganar el neto que quieres, después de gastos, cuota de autónomos e IRPF de tu comunidad."
 resumen: "Indica el neto que quieres ganar al mes, tus horas facturables y tus gastos, y verás el precio por hora sin IVA y la facturación que necesitas."
 palabraClave: "calculadora precio hora autónomo"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

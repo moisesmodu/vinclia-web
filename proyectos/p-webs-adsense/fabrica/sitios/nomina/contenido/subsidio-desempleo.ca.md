@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-subsidi-atur"
-titulo: "Calculadora del subsidi d’atur 2027: import per mesos"
-h1: "Calculadora del subsidi d’atur 2027"
+titulo: "Calculadora del subsidi d’atur 2026 i 2027: import per mesos"
+h1: "Calculadora del subsidi d’atur 2026 i 2027"
 descripcion: "Calcula quant cobraràs de subsidi per desocupació cada mes i en total: trams del 95 %, 90 % i 80 % de l’IPREM, majors de 52 anys i temps parcial."
 resumen: "Escriu els mesos de subsidi que t’han reconegut. Veuràs l’import de cada mes segons els trams de la reforma del 2024 i el total que cobraràs."
 palabraClave: "calculadora subsidi atur"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei general de la Seguretat Social, arts. 274 a 280: subsidi per desocupació (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

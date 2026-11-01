@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sueldo-neto-autonomo
-titulo: "Calculadora sueldo neto autónomo 2027: cuota e IRPF"
+titulo: "Calculadora sueldo neto autónomo 2026 y 2027: cuota e IRPF"
 h1: "Calculadora de sueldo neto de autónomo"
 descripcion: "Calcula cuánto te queda limpio como autónomo en 2027: resta gastos, la cuota por tramos de rendimiento y el IRPF de tu comunidad. Método y fuentes publicados."
 resumen: "Escribe lo que facturas y tus gastos y verás tu neto mensual y anual después de pagar la cuota de autónomos y el IRPF de tu comunidad."
 palabraClave: "calculadora sueldo neto autónomo"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

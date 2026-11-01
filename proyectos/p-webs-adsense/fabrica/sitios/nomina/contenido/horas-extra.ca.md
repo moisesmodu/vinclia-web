@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-hores-extra"
-titulo: "Calculadora d’hores extra 2027: preu i net de cada hora"
-h1: "Calculadora d’hores extra 2027"
+titulo: "Calculadora d’hores extra 2026 i 2027: preu i net de cada hora"
+h1: "Calculadora d’hores extra 2026 i 2027"
 descripcion: "Calcula quant cobres per les teves hores extra: preu de l’hora ordinària, recàrrec del conveni, cotització a la Seguretat Social i retenció d’IRPF."
 resumen: "Escriu el teu brut anual, la teva jornada i les hores extra que has fet. Veuràs el preu de cada hora i el que et queda en net després de cotitzar i retenir."
 palabraClave: "calculadora hores extra"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatut dels Treballadors, art. 35: hores extraordinàries (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

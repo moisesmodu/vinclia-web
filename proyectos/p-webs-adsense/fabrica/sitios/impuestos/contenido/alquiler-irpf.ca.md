@@ -1,11 +1,11 @@
 ---
 slug: calculadora-irpf-lloguer
-titulo: "Calculadora IRPF lloguer 2027: quant pagues per llogar"
+titulo: "Calculadora IRPF lloguer 2026 i 2027: quant pagues per llogar"
 h1: "Calculadora d’IRPF del lloguer"
 descripcion: "Calcula quant IRPF pagues per llogar un pis el 2027: despeses deduïbles, amortització del 3 %, reduccions de la Llei d’habitatge i el teu tipus per comunitat."
 resumen: "Escriu el lloguer, les despeses i el valor de la construcció i veuràs el rendiment net, la reducció que et correspon i l’IRPF extra que pagaràs."
 palabraClave: "calculadora IRPF lloguer"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF, arts. 22 a 24 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

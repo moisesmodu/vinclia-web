@@ -1,11 +1,11 @@
 ---
 slug: calculadora-recarrec-fora-de-termini
-titulo: "Calculadora recàrrec fora de termini 2027: Hisenda"
+titulo: "Calculadora recàrrec fora de termini 2026 i 2027: Hisenda"
 h1: "Calculadora de recàrrec per presentar fora de termini"
 descripcion: "Calcula el recàrrec per presentar un impost fora de termini sense requeriment el 2027: 1 % més 1 % per mes complet, 15 % passat un any i reducció del 25 %."
 resumen: "Indica la quota, l’últim dia del termini i la data en què presentes, i veuràs el recàrrec, la reducció per pagar a temps i els interessos si n’hi ha."
 palabraClave: "calculadora recàrrec fora de termini"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 58/2003 general tributària, art. 27 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"

@@ -18,13 +18,16 @@
 .cab-calc .intro{margin:0 0 .2rem;max-width:64ch}
 .cab-calc .ico-caja.grande{width:64px;height:64px;border-radius:18px;background:linear-gradient(150deg,color-mix(in srgb,var(--marca) 20%,var(--superficie)),color-mix(in srgb,var(--marca) 6%,var(--superficie)));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--marca) 26%,transparent),0 10px 24px -14px color-mix(in srgb,var(--marca) 70%,transparent)}
 @media (max-width:560px){
-  .cab-calc{grid-template-columns:1fr;gap:12px}
-  .cab-calc .ico-caja.grande{width:48px;height:48px;border-radius:14px}
+  /* En el móvil la calculadora tiene que asomar en la primera pantalla: sin el icono grande y con la firma en una línea */
+  .cab-calc{grid-template-columns:1fr;gap:0}
+  .cab-calc .ico-caja.grande{display:none}
+  .cab-calc .intro{font-size:1rem;line-height:1.5}
 }
 .meta-calc{display:flex;flex-wrap:wrap;gap:6px 8px;list-style:none;padding:0;margin:.9rem 0 1.3rem;font-size:.84rem;color:var(--suave)}
 .meta-calc li{display:inline-flex;align-items:center;gap:6px;padding:.28rem .7rem .28rem .55rem;border-radius:999px;background:var(--tenue);border:1px solid var(--linea);line-height:1.3}
 .meta-calc svg{color:var(--primario);flex:none}
 .meta-calc strong{color:var(--tinta);font-weight:600}
+@media (max-width:560px){.meta-calc{gap:4px 14px;margin:.6rem 0 .9rem;font-size:.8rem}.meta-calc li{padding:0;background:none;border:0;border-radius:0}}
 
 /* ——— Contenedor de la calculadora ——— */
 .calc{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;background:var(--superficie);border:1px solid var(--linea);border-radius:24px;padding:18px 16px;box-shadow:var(--sombra-m);position:relative}
@@ -280,6 +283,11 @@ table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
   .rel-calc .ir{top:14px;right:14px}
 }
 .rel-calc a:hover .ir{transform:translateX(3px);color:var(--primario)}
+/* Calculadoras hermanas de otro sitio de la familia Claro: misma tarjeta, con el nombre del sitio encima */
+.familia-rel .rel-sitio{font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--primario)}
+@media (max-width:640px){.familia-rel .rel-calc .ico-caja{grid-row:span 3}}
+.calc-pro{display:flex;align-items:center;gap:8px;margin:.4rem 0 1.6rem;font-size:.88rem;color:var(--suave)}
+.calc-pro svg{flex:none;color:var(--primario)}
 .descargo-calc{display:flex;gap:10px;align-items:flex-start;border-top:0;margin-top:2.4rem;padding:.9rem 1rem;border-radius:14px;background:var(--tenue);border:1px solid var(--linea);line-height:1.5}
 .descargo-calc svg{flex:none;color:var(--suave);margin-top:1px}
 

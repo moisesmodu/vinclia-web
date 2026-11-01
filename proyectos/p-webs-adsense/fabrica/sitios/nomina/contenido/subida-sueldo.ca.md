@@ -1,11 +1,11 @@
 ---
 slug: calculadora-pujada-sou
-titulo: "Calculadora de pujada de sou 2027: quant guanyes en net"
-h1: "Calculadora de pujada de sou 2027"
+titulo: "Calculadora de pujada de sou 2026 i 2027: quant guanyes en net"
+h1: "Calculadora de pujada de sou 2026 i 2027"
 descripcion: "Calcula quant net guanyes de debò amb una pujada de sou, en percentatge o en euros bruts: nova retenció d’IRPF, net anual i diferència a cada nòmina ordinària."
 resumen: "Escriu el teu brut actual i la pujada, i veuràs quant més cobraràs en net l’any i a cada nòmina, i quants euros et queden de cada 100 de pujada."
-palabraClave: "calculadora pujada sou 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora pujada sou 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

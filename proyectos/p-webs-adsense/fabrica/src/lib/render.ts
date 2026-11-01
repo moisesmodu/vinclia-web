@@ -11,9 +11,12 @@ export function fmt(v: number | string, f: Formato | undefined, lang: Lang, mone
   if (typeof v === 'string' && f !== 'fecha') return v;
   const loc = locale ?? LOC[lang];
   const pct = loc.endsWith('-US') ? '%' : ' %';
+  // Separador de miles también en los importes de cuatro dígitos (1.956 €): en es-ES Intl lo omite por defecto y en una
+  // misma tabla convivían «1956,00 €» y «23.121,00 €». Navegadores antiguos ignoran 'always' y agrupan como siempre.
+  const G = { useGrouping: 'always' } as unknown as Intl.NumberFormatOptions;
   switch (f) {
-    case 'eur': return new Intl.NumberFormat(loc, { style: 'currency', currency: moneda, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(+v);
-    case 'eur0': return new Intl.NumberFormat(loc, { style: 'currency', currency: moneda, maximumFractionDigits: 0 }).format(+v);
+    case 'eur': return new Intl.NumberFormat(loc, { ...G, style: 'currency', currency: moneda, minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(+v);
+    case 'eur0': return new Intl.NumberFormat(loc, { ...G, style: 'currency', currency: moneda, maximumFractionDigits: 0 }).format(+v);
     case 'pct': return new Intl.NumberFormat(loc, { maximumFractionDigits: 2 }).format(+v) + pct;
     case 'num0': return new Intl.NumberFormat(loc, { maximumFractionDigits: 0 }).format(+v);
     case 'dias': return new Intl.NumberFormat(loc, { maximumFractionDigits: 2 }).format(+v) + (lang === 'es' ? ' días' : ' dies');

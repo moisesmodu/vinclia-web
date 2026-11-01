@@ -1,11 +1,11 @@
 ---
 slug: calculadora-interessos-demora
-titulo: "Calculadora interessos de demora 2027: Hisenda i legal"
+titulo: "Calculadora interessos de demora 2026 i 2027: Hisenda i legal"
 h1: "Calculadora d’interessos de demora"
 descripcion: "Calcula els interessos de demora d’un deute amb Hisenda o l’interès legal dels diners el 2027: dies de retard, tipus del 4,0625 % o del 3,25 % i total a pagar."
 resumen: "Escriu el deute, la fi del termini i la data de pagament i veuràs els dies de retard, els interessos i el total amb interessos."
 palabraClave: "calculadora interessos de demora"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 58/2003 general tributària, art. 26 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"

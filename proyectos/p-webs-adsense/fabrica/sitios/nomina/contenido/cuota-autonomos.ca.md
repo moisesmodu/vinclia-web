@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-quota-autonoms"
-titulo: "Calculadora de quota d’autònoms 2027 per trams d’ingressos"
-h1: "Calculadora de quota d’autònoms 2027"
+titulo: "Calculadora de quota d’autònoms 2026 i 2027 per trams d’ingressos"
+h1: "Calculadora de quota d’autònoms 2026 i 2027"
 descripcion: "Calcula la teva quota mensual d’autònoms segons els teus rendiments nets: tram que et correspon, base mínima i màxima, tipus de cotització i tarifa plana."
 resumen: "Escriu els teus ingressos i despeses previstos de l’any. Veuràs en quin tram cotitzes, quant pagaràs al mes amb la base mínima i quant amb la màxima."
-palabraClave: "calculadora quota autònoms 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora quota autònoms 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ordre PJC/297/2026 de bases i tipus de cotització, art. 18: autònoms (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"

@@ -405,5 +405,219 @@
       },
       "ficha": "tipos-cotizacion"
     }
-  ]
+  ],
+  "enlacesFamilia": {
+    "sueldo-neto": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-irpf",
+          "ca": "calculadora-irpf"
+        },
+        "texto": {
+          "es": "Calculadora de IRPF de la renta",
+          "ca": "Calculadora d’IRPF de la renda"
+        },
+        "resumen": {
+          "es": "Lo que pagas de verdad en tu comunidad y si la renta sale a pagar o a devolver.",
+          "ca": "El que pagues de debò a la teva comunitat i si la renda surt a pagar o a retornar."
+        }
+      },
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-tipo-marginal-irpf",
+          "ca": "calculadora-tipus-marginal-irpf"
+        },
+        "texto": {
+          "es": "Tipo marginal de IRPF",
+          "ca": "Tipus marginal d’IRPF"
+        },
+        "resumen": {
+          "es": "A qué tipo tributa tu último euro y cuánto se queda Hacienda de una subida.",
+          "ca": "A quin tipus tributa el teu últim euro i quant s’emporta Hisenda d’una pujada."
+        }
+      }
+    ],
+    "sueldo-bruto": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-irpf",
+          "ca": "calculadora-irpf"
+        },
+        "texto": {
+          "es": "Calculadora de IRPF de la renta",
+          "ca": "Calculadora d’IRPF de la renda"
+        },
+        "resumen": {
+          "es": "Lo que pagas de verdad en tu comunidad y si la renta sale a pagar o a devolver.",
+          "ca": "El que pagues de debò a la teva comunitat i si la renda surt a pagar o a retornar."
+        }
+      },
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "autonomo-o-asalariado",
+          "ca": "autonom-o-assalariat"
+        },
+        "texto": {
+          "es": "¿Autónomo o asalariado?",
+          "ca": "Autònom o assalariat?"
+        },
+        "resumen": {
+          "es": "Con qué opción te queda más neto con los mismos ingresos.",
+          "ca": "Amb quina opció et queda més net amb els mateixos ingressos."
+        }
+      }
+    ],
+    "nomina": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-irpf",
+          "ca": "calculadora-irpf"
+        },
+        "texto": {
+          "es": "Calculadora de IRPF de la renta",
+          "ca": "Calculadora d’IRPF de la renda"
+        },
+        "resumen": {
+          "es": "Lo que pagas de verdad en tu comunidad y si la renta sale a pagar o a devolver.",
+          "ca": "El que pagues de debò a la teva comunitat i si la renda surt a pagar o a retornar."
+        }
+      },
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "obligacion-declarar-renta",
+          "ca": "obligacio-declarar-renda"
+        },
+        "texto": {
+          "es": "¿Estoy obligado a hacer la renta?",
+          "ca": "Estic obligat a fer la renda?"
+        },
+        "resumen": {
+          "es": "Límites de 22.000 y 15.876 € y qué pasa con dos pagadores.",
+          "ca": "Límits de 22.000 i 15.876 € i què passa amb dos pagadors."
+        }
+      }
+    ],
+    "retencion-irpf": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-irpf",
+          "ca": "calculadora-irpf"
+        },
+        "texto": {
+          "es": "Calculadora de IRPF de la renta",
+          "ca": "Calculadora d’IRPF de la renda"
+        },
+        "resumen": {
+          "es": "Lo que pagas de verdad en tu comunidad y si la renta sale a pagar o a devolver.",
+          "ca": "El que pagues de debò a la teva comunitat i si la renda surt a pagar o a retornar."
+        }
+      },
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "obligacion-declarar-renta",
+          "ca": "obligacio-declarar-renda"
+        },
+        "texto": {
+          "es": "¿Estoy obligado a hacer la renta?",
+          "ca": "Estic obligat a fer la renda?"
+        },
+        "resumen": {
+          "es": "Límites de 22.000 y 15.876 € y qué pasa con dos pagadores.",
+          "ca": "Límits de 22.000 i 15.876 € i què passa amb dos pagadors."
+        }
+      }
+    ],
+    "paga-extra": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-irpf",
+          "ca": "calculadora-irpf"
+        },
+        "texto": {
+          "es": "Calculadora de IRPF de la renta",
+          "ca": "Calculadora d’IRPF de la renda"
+        },
+        "resumen": {
+          "es": "Lo que pagas de verdad en tu comunidad y si la renta sale a pagar o a devolver.",
+          "ca": "El que pagues de debò a la teva comunitat i si la renda surt a pagar o a retornar."
+        }
+      }
+    ],
+    "subida-sueldo": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-tipo-marginal-irpf",
+          "ca": "calculadora-tipus-marginal-irpf"
+        },
+        "texto": {
+          "es": "Tipo marginal de IRPF",
+          "ca": "Tipus marginal d’IRPF"
+        },
+        "resumen": {
+          "es": "A qué tipo tributa tu último euro y cuánto se queda Hacienda de una subida.",
+          "ca": "A quin tipus tributa el teu últim euro i quant s’emporta Hisenda d’una pujada."
+        }
+      }
+    ],
+    "cuota-autonomos": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-sueldo-neto-autonomo",
+          "ca": "calculadora-sou-net-autonom"
+        },
+        "texto": {
+          "es": "Sueldo neto de autónomo",
+          "ca": "Sou net d’autònom"
+        },
+        "resumen": {
+          "es": "Lo que te queda de lo que facturas después de la cuota y el IRPF.",
+          "ca": "El que et queda del que factures després de la quota i l’IRPF."
+        }
+      },
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-tarifa-plana-autonomos",
+          "ca": "calculadora-tarifa-plana-autonoms"
+        },
+        "texto": {
+          "es": "Tarifa plana de autónomos",
+          "ca": "Tarifa plana d’autònoms"
+        },
+        "resumen": {
+          "es": "Cuánto pagas el primer y el segundo año y cuánto ahorras.",
+          "ca": "Quant pagues el primer i el segon any i quant estalvies."
+        }
+      }
+    ],
+    "salario-hora": [
+      {
+        "sitio": "impuestos",
+        "ruta": {
+          "es": "calculadora-precio-hora-autonomo",
+          "ca": "calculadora-preu-hora-autonom"
+        },
+        "texto": {
+          "es": "Precio por hora de autónomo",
+          "ca": "Preu per hora d’autònom"
+        },
+        "resumen": {
+          "es": "Cuánto cobrar por hora para ganar lo mismo que un asalariado.",
+          "ca": "Quant cobrar per hora per guanyar el mateix que un assalariat."
+        }
+      }
+    ]
+  },
+  "revisado": "2026-11-01"
 }

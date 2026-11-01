@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-tipus-marginal-irpf"
-titulo: "Tipus marginal IRPF 2027: calculadora per comunitat autònoma"
+titulo: "Tipus marginal IRPF 2026 i 2027: calculadora per comunitat autònoma"
 h1: "Calculadora del tipus marginal d’IRPF"
 descripcion: "Calcula el teu tipus marginal d’IRPF el 2027 amb l’escala estatal i la de la teva comunitat. Veuràs quant pagues per cada 100 € més, el tipus mitjà i l’escala."
 resumen: "Escriu la teva base liquidable i la teva comunitat, i veuràs quin percentatge s’emporta Hisenda de cada euro addicional que guanyis i quant pagues de mitjana."
-palabraClave: "tipus marginal irpf 2027"
-actualizado: 2026-10-28
+palabraClave: "tipus marginal irpf 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF, arts. 63 i 74 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

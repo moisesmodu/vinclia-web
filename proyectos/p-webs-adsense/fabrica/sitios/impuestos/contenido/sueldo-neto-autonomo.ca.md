@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sou-net-autonom
-titulo: "Calculadora sou net autònom 2027: quota i IRPF"
+titulo: "Calculadora sou net autònom 2026 i 2027: quota i IRPF"
 h1: "Calculadora de sou net d’autònom"
 descripcion: "Calcula quant et queda net com a autònom el 2027: resta despeses, la quota per trams de rendiment i l’IRPF de la teva comunitat. Mètode i fonts publicats."
 resumen: "Escriu el que factures i les teves despeses i veuràs el teu net mensual i anual després de pagar la quota d’autònoms i l’IRPF de la teva comunitat."
 palabraClave: "calculadora sou net autònom"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

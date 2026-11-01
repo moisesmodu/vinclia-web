@@ -1,11 +1,11 @@
 ---
 slug: calculadora-irpf-alquiler
-titulo: "Calculadora IRPF alquiler 2027: cuánto pagas por alquilar"
+titulo: "Calculadora IRPF alquiler 2026 y 2027: cuánto pagas por alquilar"
 h1: "Calculadora de IRPF del alquiler"
 descripcion: "Calcula cuánto IRPF pagas por alquilar un piso en 2027: gastos deducibles, amortización del 3 %, reducciones de la Ley de vivienda y tu tipo por comunidad."
 resumen: "Escribe el alquiler, los gastos y el valor de la construcción y verás el rendimiento neto, la reducción que te corresponde y el IRPF extra que pagarás."
 palabraClave: "calculadora IRPF alquiler"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF, arts. 22 a 24 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sou-brut
-titulo: "Calculadora de sou brut 2027: de net a brut anual"
-h1: "Calculadora de sou brut 2027"
+titulo: "Calculadora de sou brut 2026 i 2027: de net a brut anual"
+h1: "Calculadora de sou brut 2026 i 2027"
 descripcion: "Calcula quin salari brut anual necessites per cobrar un net concret cada mes, amb la retenció d’IRPF i la Seguretat Social. 12 o 14 pagues i situació familiar."
 resumen: "Escriu el net que vols cobrar al mes i veuràs el brut anual que has de demanar, el que et retenen i el que li costes a l’empresa."
-palabraClave: "calculadora sou brut 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora sou brut 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglament de l’IRPF, arts. 80 a 87: càlcul de la retenció (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

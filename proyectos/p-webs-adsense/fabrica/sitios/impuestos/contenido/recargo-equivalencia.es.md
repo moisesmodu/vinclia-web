@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-recargo-equivalencia"
-titulo: "Recargo de equivalencia 2027: calculadora del 5,2, 1,4 y 0,5 %"
+titulo: "Recargo de equivalencia 2026 y 2027: calculadora (5,2 %)"
 h1: "Calculadora de recargo de equivalencia"
 descripcion: "Calcula el recargo de equivalencia de tus compras: 5,2 % con IVA del 21 %, 1,4 % con el 10 % y 0,5 % con el 4 %. Coste total y precio de venta."
 resumen: "Escribe la base de la compra al proveedor, el tipo de IVA y tu margen, y verás el recargo, lo que pagas en total y a qué precio deberías vender."
 palabraClave: "recargo de equivalencia"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 37/1992 del IVA, arts. 148 a 163: régimen especial del recargo de equivalencia (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"

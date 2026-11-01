@@ -1,11 +1,11 @@
 ---
 slug: calculadora-guanys-patrimonials
-titulo: "Calculadora guanys patrimonials 2027: IRPF de l’estalvi"
+titulo: "Calculadora guanys patrimonials 2026 i 2027: IRPF de l’estalvi"
 h1: "Calculadora de guanys patrimonials"
 descripcion: "Calcula l’IRPF del que guanyes en vendre accions, fons o un immoble el 2027: resta despeses de compra i venda i aplica l’escala de l’estalvi del 19 % al 30 %."
 resumen: "Escriu el preu de compra, el de venda i les seves despeses i veuràs el guany, l’impost segons l’escala de l’estalvi i el que et queda."
 palabraClave: "calculadora guanys patrimonials"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF, arts. 33 a 37 i 66 i 76 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

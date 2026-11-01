@@ -1,11 +1,11 @@
 ---
 slug: calculadora-indemnitzacio-acomiadament
-titulo: "Calculadora d’indemnització per acomiadament 2027"
-h1: "Calculadora d’indemnització per acomiadament 2027"
+titulo: "Calculadora d’indemnització per acomiadament 2026 i 2027"
+h1: "Calculadora d’indemnització per acomiadament 2026 i 2027"
 descripcion: "Calcula la indemnització per acomiadament improcedent, objectiu o final de contracte temporal segons antiguitat i salari, amb el tram de 45 dies previ al 2012."
 resumen: "Posa la data d’inici, la de l’acomiadament i el teu salari brut anual, i veuràs els dies de salari i l’import que et corresponen segons el tipus d’acomiadament."
-palabraClave: "calculadora indemnització acomiadament 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora indemnització acomiadament 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatut dels Treballadors, arts. 49, 53, 56 i disposició transitòria 11a (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

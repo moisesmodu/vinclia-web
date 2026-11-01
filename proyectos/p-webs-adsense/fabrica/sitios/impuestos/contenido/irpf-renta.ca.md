@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-irpf"
-titulo: "Calculadora IRPF 2027: quota de la renda per comunitat"
-h1: "Calculadora d’IRPF 2027"
+titulo: "Calculadora IRPF 2026 i 2027: quota de la renda per comunitat"
+h1: "Calculadora d’IRPF 2026 i 2027"
 descripcion: "Calcula la quota d’IRPF de la teva renda amb l’escala estatal i la de la teva comunitat. Sou, activitat i estalvi, i si la declaració surt a pagar o a retornar."
 resumen: "Escriu el teu sou brut, el que guanyes com a autònom i els teus interessos, i veuràs la quota d’IRPF, el tipus mitjà i marginal i si la renda et sortirà a pagar o a retornar."
-palabraClave: "calculadora irpf 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora irpf 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

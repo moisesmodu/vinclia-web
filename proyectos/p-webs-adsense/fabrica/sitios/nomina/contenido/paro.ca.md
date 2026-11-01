@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-atur"
-titulo: "Calculadora de l’atur 2027: quant cobraràs i quant de temps"
-h1: "Calculadora de l’atur 2027"
+titulo: "Calculadora de l’atur 2026 i 2027: quant cobraràs i quant de temps"
+h1: "Calculadora de l’atur 2026 i 2027"
 descripcion: "Calcula la teva prestació per atur: durada segons els dies cotitzats, import al 70 % i al 60 %, topalls mínim i màxim amb fills o sense, i net aproximat."
 resumen: "Escriu els dies que has cotitzat en els últims 6 anys i la teva base de cotització mitjana. Veuràs quants dies d’atur et toquen i quant cobraràs cada mes."
-palabraClave: "calculadora atur 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora atur 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei general de la Seguretat Social, arts. 269 i 270: durada i quantia (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

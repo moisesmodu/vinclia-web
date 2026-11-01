@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-iva"
-titulo: "Calculadora d’IVA 2027: afegir o treure el 21, 10 o 4 %"
+titulo: "Calculadora d’IVA 2026 i 2027: afegir o treure el 21, 10 o 4 %"
 h1: "Calculadora d’IVA"
 descripcion: "Afegeix o treu l’IVA a qualsevol import: tipus general del 21 %, reduït del 10 % i superreduït del 4 %. Base imposable, quota i total al cèntim en un sol pas."
 resumen: "Escriu un import, tria si vols sumar o treure l’IVA i el tipus, i veuràs la base imposable, la quota d’IVA i el total."
 palabraClave: "calculadora iva"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 37/1992 de l’IVA, arts. 90 i 91: tipus impositius (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"

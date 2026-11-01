@@ -1,11 +1,11 @@
 ---
 slug: calculadora-cost-empresa
-titulo: "Calculadora de cost d’empresa 2027: quant costa un treballador"
-h1: "Cost d’un treballador per a l’empresa 2027"
+titulo: "Cost d’empresa 2026 i 2027: quant costa un treballador"
+h1: "Cost d’un treballador per a l’empresa 2026 i 2027"
 descripcion: "Calcula quant costa un treballador a l’empresa: salari brut més la cotització a la Seguretat Social, amb atur, FOGASA, formació, MEI i accidents de treball."
 resumen: "Escriu el brut anual i veuràs la Seguretat Social que paga l’empresa, concepte per concepte, i el cost total l’any i al mes."
-palabraClave: "calculadora cost empresa treballador 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora cost empresa treballador 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ordre PJC/297/2026 de bases i tipus de cotització (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"

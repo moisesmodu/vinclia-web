@@ -19,6 +19,10 @@ p,ul,ol{margin:0 0 1em}
 .estrecho{max-width:760px}
 
 .aviso-prov{background:color-mix(in srgb,var(--acento) 16%,var(--superficie));border-left:4px solid var(--acento);padding:.7rem 1rem;border-radius:8px;font-size:.9rem;margin:0 0 1.2rem}
+/* Aviso de año provisional plegado: una línea encima de la calculadora; el detalle, al pulsar */
+.aviso-prov.plegable{padding:.55rem .9rem;font-size:.86rem}
+.aviso-prov.plegable summary{cursor:pointer;line-height:1.4;list-style-position:outside;margin-left:1rem}
+.aviso-prov.plegable p{margin:.5rem 0 .1rem}
 
 .btn{display:inline-block;background:var(--primario);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:.65rem 1.2rem}
 .btn:hover{background:var(--primarioOscuro)}

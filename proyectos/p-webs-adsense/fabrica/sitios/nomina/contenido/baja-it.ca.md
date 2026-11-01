@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-baixa-laboral"
-titulo: "Calculadora de baixa laboral 2027: quant cobres de baixa"
-h1: "Calculadora de baixa laboral 2027"
+titulo: "Calculadora de baixa laboral 2026 i 2027: quant cobres de baixa"
+h1: "Calculadora de baixa laboral 2026 i 2027"
 descripcion: "Calcula quant cobres durant una baixa per malaltia comuna o accident de treball: 60 % i 75 % de la base, qui paga cada dia i complement del conveni."
 resumen: "Escriu la teva base de cotització, la causa de la baixa i els dies. Veuràs el que cobraràs per trams, quina part paga l’empresa i quant perds respecte al teu sou."
 palabraClave: "calculadora baixa laboral"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei general de la Seguretat Social, arts. 169 a 173: incapacitat temporal (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

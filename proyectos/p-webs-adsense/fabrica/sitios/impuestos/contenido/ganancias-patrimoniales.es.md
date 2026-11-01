@@ -1,11 +1,11 @@
 ---
 slug: calculadora-ganancias-patrimoniales
-titulo: "Calculadora ganancias patrimoniales 2027: IRPF del ahorro"
+titulo: "Calculadora ganancias patrimoniales 2026 y 2027: IRPF del ahorro"
 h1: "Calculadora de ganancias patrimoniales"
 descripcion: "Calcula el IRPF de lo que ganas al vender acciones, fondos o un inmueble en 2027: resta gastos de compra y venta y aplica la escala del ahorro del 19 % al 30 %."
 resumen: "Escribe el precio de compra, el de venta y sus gastos y verás la ganancia, el impuesto según la escala del ahorro y lo que te queda."
 palabraClave: "calculadora ganancias patrimoniales"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF, arts. 33 a 37 y 66 y 76 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

@@ -1,11 +1,11 @@
 ---
 slug: calculadora-recargo-fuera-de-plazo
-titulo: "Calculadora recargo fuera de plazo 2027: Hacienda"
+titulo: "Calculadora recargo fuera de plazo 2026 y 2027: Hacienda"
 h1: "Calculadora de recargo por presentar fuera de plazo"
 descripcion: "Calcula el recargo por presentar un impuesto fuera de plazo sin requerimiento en 2027: 1 % más 1 % por mes completo, 15 % pasado un año y reducción del 25 %."
 resumen: "Indica la cuota, el último día del plazo y la fecha en que presentas, y verás el recargo, la reducción por pagar a tiempo y los intereses si los hay."
 palabraClave: "calculadora recargo fuera de plazo"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 58/2003 General Tributaria, art. 27 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"

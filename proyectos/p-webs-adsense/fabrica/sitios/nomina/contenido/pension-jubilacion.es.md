@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-pension-jubilacion"
-titulo: "Calculadora de pensión de jubilación 2027: cuánto cobrarás"
-h1: "Calculadora de pensión de jubilación 2027"
+titulo: "Calculadora de pensión de jubilación 2026 y 2027: cuánto cobrarás"
+h1: "Calculadora de pensión de jubilación 2026 y 2027"
 descripcion: "Estima tu pensión de jubilación mensual según los años cotizados y tu base media de cotización: porcentaje de la escala de 2026 o 2027 y pensión máxima."
 resumen: "Escribe los años que tendrás cotizados al jubilarte y la media mensual de tus bases de los últimos 25 años. Verás la base reguladora, el porcentaje que te corresponde y la pensión que cobrarás en 14 pagas."
-palabraClave: "calculadora pensión jubilación 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora pensión jubilación 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley General de la Seguridad Social, arts. 209 y 210 y disposición transitoria 9.ª: base reguladora y porcentaje (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724"

@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-cuota-autonomos"
-titulo: "Calculadora de cuota de autónomos 2027 por tramos de ingresos"
-h1: "Calculadora de cuota de autónomos 2027"
+titulo: "Calculadora de cuota de autónomos 2026 y 2027 por tramos de ingresos"
+h1: "Calculadora de cuota de autónomos 2026 y 2027"
 descripcion: "Calcula tu cuota mensual de autónomos según tus rendimientos netos: tramo que te corresponde, base mínima y máxima, tipo de cotización y tarifa plana."
 resumen: "Escribe tus ingresos y gastos previstos del año. Verás en qué tramo cotizas, cuánto pagarás al mes con la base mínima y cuánto con la máxima."
-palabraClave: "calculadora cuota autónomos 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora cuota autónomos 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Orden PJC/297/2026 de bases y tipos de cotización, art. 18: autónomos (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"

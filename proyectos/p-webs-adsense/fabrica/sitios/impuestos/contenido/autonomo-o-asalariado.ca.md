@@ -1,11 +1,11 @@
 ---
 slug: autonom-o-assalariat
-titulo: "Autònom o assalariat 2027: amb quin guanyes més?"
+titulo: "Autònom o assalariat 2026 i 2027: amb quin guanyes més?"
 h1: "Autònom o assalariat?"
 descripcion: "Compara el net anual que et queda amb el mateix cost com a assalariat o com a autònom el 2027: Seguretat Social, quota d’autònoms i IRPF per comunitat."
 resumen: "Escriu el que paga l’empresa o el client l’any i veuràs què et queda net com a assalariat i com a autònom, amb la diferència entre tots dos."
 palabraClave: "autònom o assalariat"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

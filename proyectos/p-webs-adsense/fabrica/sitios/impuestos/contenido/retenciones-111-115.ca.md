@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-models-111-115"
-titulo: "Calculadora models 111 i 115 2027: retencions trimestrals"
+titulo: "Calculadora models 111 i 115 2026 i 2027: retencions trimestrals"
 h1: "Calculadora dels models 111 i 115"
 descripcion: "Calcula el que has d’ingressar als models 111 i 115: retencions de nòmines, factures de professionals al 15 % o al 7 % i lloguer del local al 19 %."
 resumen: "Escriu l’IRPF de les teves nòmines, les factures de professionals que has rebut i el lloguer del local, i veuràs quant has d’ingressar al 111 i al 115 aquest trimestre."
 palabraClave: "model 111 i 115"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglament de l’IRPF: retencions i ingressos a compte (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

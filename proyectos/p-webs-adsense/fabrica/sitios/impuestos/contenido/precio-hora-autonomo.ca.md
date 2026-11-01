@@ -1,11 +1,11 @@
 ---
 slug: calculadora-preu-hora-autonom
-titulo: "Calculadora preu hora autònom 2027: quant cobrar"
+titulo: "Calculadora preu hora autònom 2026 i 2027: quant cobrar"
 h1: "Calculadora de preu per hora d’autònom"
 descripcion: "Calcula quin preu per hora has de cobrar com a autònom el 2027 per guanyar el net que vols, després de despeses, quota d’autònoms i IRPF de la teva comunitat."
 resumen: "Indica el net que vols guanyar al mes, les teves hores facturables i les despeses, i veuràs el preu per hora sense IVA i la facturació que necessites."
 palabraClave: "calculadora preu hora autònom"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

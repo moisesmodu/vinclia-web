@@ -1,11 +1,11 @@
 ---
 slug: calculadora-indemnizacion-despido
-titulo: "Calculadora de indemnización por despido 2027: 33, 20 y 12 días"
-h1: "Calculadora de indemnización por despido 2027"
+titulo: "Indemnización por despido 2026 y 2027: calculadora 33 y 20 días"
+h1: "Calculadora de indemnización por despido 2026 y 2027"
 descripcion: "Calcula la indemnización por despido improcedente, objetivo o fin de contrato temporal según tu antigüedad y salario, con el tramo de 45 días anterior a 2012."
 resumen: "Pon la fecha de inicio, la del despido y tu salario bruto anual, y verás los días de salario y el importe que te corresponden según el tipo de despido."
-palabraClave: "calculadora indemnización despido 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora indemnización despido 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, arts. 49, 53, 56 y disposición transitoria 11.ª (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

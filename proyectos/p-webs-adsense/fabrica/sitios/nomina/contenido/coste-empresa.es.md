@@ -1,11 +1,11 @@
 ---
 slug: calculadora-coste-empresa
-titulo: "Calculadora de coste de empresa 2027: cuánto cuesta un trabajador"
-h1: "Coste de un trabajador para la empresa 2027"
+titulo: "Coste de empresa 2026 y 2027: cuánto cuesta un trabajador"
+h1: "Coste de un trabajador para la empresa 2026 y 2027"
 descripcion: "Calcula cuánto cuesta un trabajador a la empresa: salario bruto más cotización a la Seguridad Social: desempleo, FOGASA, formación, MEI y accidentes de trabajo."
 resumen: "Escribe el bruto anual y verás la Seguridad Social que paga la empresa, concepto a concepto, y el coste total al año y al mes."
-palabraClave: "calculadora coste empresa trabajador 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora coste empresa trabajador 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Orden PJC/297/2026 de bases y tipos de cotización (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"

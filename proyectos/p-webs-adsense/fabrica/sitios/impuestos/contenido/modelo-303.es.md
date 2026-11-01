@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-modelo-303"
-titulo: "Calculadora modelo 303 2027: IVA trimestral a pagar"
+titulo: "Calculadora modelo 303 2026 y 2027: IVA trimestral a pagar"
 h1: "Calculadora del modelo 303"
 descripcion: "Calcula tu modelo 303 de IVA: IVA repercutido de tus ventas menos el IVA soportado deducible y las cuotas a compensar. Con el plazo de cada trimestre."
 resumen: "Escribe tus ventas del trimestre por tipo de IVA y el IVA de tus gastos, y verás si el 303 te sale a ingresar, a compensar o a devolver, y hasta cuándo puedes presentarlo."
 palabraClave: "calculadora modelo 303"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 37/1992 del IVA (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"

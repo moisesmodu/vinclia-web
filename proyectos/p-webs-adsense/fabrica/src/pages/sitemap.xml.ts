@@ -1,15 +1,23 @@
 // Mapa del sitio con alternativas de idioma (hreflang) para cada página.
 import type { APIRoute } from 'astro';
 import { paginas, absoluta, alterna } from '../lib/rutas';
-import { LANGS } from '../lib/sitio';
+import { LANGS, sitio, SITIO_ID } from '../lib/sitio';
+import { texto, existeTexto } from '../lib/contenido';
 import { RUTA_PRO } from '../lib/widget';
 
 export const GET: APIRoute = () => {
-  const hoy = new Date().toISOString().slice(0, 10);
+  // lastmod real: en las calculadoras, la más reciente entre su «actualizado» y la última revisión de datos; en el resto,
+  // la revisión de datos del sitio (sitio.json → «revisado»). Con la fecha de compilación, Google deja de fiarse del lastmod.
+  const hoy: string = sitio.revisado ?? new Date().toISOString().slice(0, 10);
+  const fecha = (p: { tipo: string; id: string; lang: any }) => {
+    if (p.tipo !== 'calc' || !existeTexto(SITIO_ID, p.id, p.lang)) return hoy;
+    const a = String(texto(SITIO_ID, p.id, p.lang).actualizado ?? '').slice(0, 10);
+    return a > hoy ? a : hoy; // la más reciente: el texto o los datos con los que se calcula
+  };
   const prio = (t: string) => (t === 'inicio' ? '1.0' : t === 'calc' ? '0.9' : t === 'producto' ? '0.8' : t === 'ficha' ? '0.7' : t === 'prog' ? '0.6' : t === 'indice' ? '0.5' : '0.3');
   const urls = paginas().filter((p) => p.tipo !== 'descarga').map((p) => {
     const alt = LANGS.map((l) => alterna(p, l)).filter(Boolean).map((a) => `<xhtml:link rel="alternate" hreflang="${a!.lang}" href="${absoluta(a!.ruta)}"/>`).join('');
-    return `<url><loc>${absoluta(p.ruta)}</loc><lastmod>${hoy}</lastmod><priority>${prio(p.tipo)}</priority>${alt}</url>`;
+    return `<url><loc>${absoluta(p.ruta)}</loc><lastmod>${fecha(p)}</lastmod><priority>${prio(p.tipo)}</priority>${alt}</url>`;
   });
   // «Para profesionales» (widget). Las páginas /embed/ no entran: son noindex
   const altPro = LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${absoluta(RUTA_PRO[l])}"/>`).join('');

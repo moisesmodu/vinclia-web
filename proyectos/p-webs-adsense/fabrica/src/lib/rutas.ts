@@ -32,6 +32,7 @@ export const LEGAL: Record<string, Record<Lang, string>> = {
   cookies: { es: 'cookies', ca: 'galetes' },
   sobre: { es: 'sobre-nosotros', ca: 'qui-som' },
   condiciones: { es: 'condiciones-de-venta', ca: 'condicions-de-venda' },
+  contacto: { es: 'contacto', ca: 'contacte' },
 };
 
 export function slugCalc(id: string, lang: Lang): string {

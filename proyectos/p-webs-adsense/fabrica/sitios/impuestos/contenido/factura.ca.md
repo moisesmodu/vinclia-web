@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-factura"
-titulo: "Calculadora de factura 2027: IVA i retenció d’IRPF"
+titulo: "Calculadora de factura 2026 i 2027: IVA i retenció d’IRPF"
 h1: "Calculadora de factura per a autònoms"
 descripcion: "Calcula el total de la teva factura d’autònom amb IVA i retenció d’IRPF del 15 % o del 7 %. També al revés: la base que necessites per cobrar un import exacte."
 resumen: "Escriu la base o el que vols cobrar, tria l’IVA i la retenció, i veuràs el desglossament complet de la factura: base, IVA, recàrrec, retenció i total."
 palabraClave: "calculadora factura"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglament de facturació, RD 1619/2012 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696"

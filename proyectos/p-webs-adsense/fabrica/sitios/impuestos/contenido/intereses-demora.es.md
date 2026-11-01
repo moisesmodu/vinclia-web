@@ -1,11 +1,11 @@
 ---
 slug: calculadora-intereses-demora
-titulo: "Calculadora intereses de demora 2027: Hacienda y legal"
+titulo: "Calculadora intereses de demora 2026 y 2027: Hacienda y legal"
 h1: "Calculadora de intereses de demora"
 descripcion: "Calcula los intereses de demora de una deuda con Hacienda o el interés legal del dinero en 2027: días de retraso, tipo del 4,0625 % o del 3,25 % y total."
 resumen: "Escribe la deuda, el fin del plazo y la fecha de pago y verás los días de retraso, los intereses y el total con intereses."
 palabraClave: "calculadora intereses de demora"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 58/2003 General Tributaria, art. 26 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"

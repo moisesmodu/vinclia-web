@@ -1,11 +1,11 @@
 ---
 slug: calculadora-nomina
-titulo: "Calculadora de nómina 2027: devengos, deducciones y líquido"
-h1: "Calculadora de nómina 2027"
+titulo: "Calculadora de nómina 2026 y 2027: devengos, deducciones y líquido"
+h1: "Calculadora de nómina 2026 y 2027"
 descripcion: "Simula tu nómina mensual línea a línea: salario base, complementos, pagas extra, cotización a la Seguridad Social, retención de IRPF y líquido a percibir."
 resumen: "Pon tu salario base, los complementos y cómo cobras las pagas extra, y verás tu nómina desglosada como la que te da la empresa."
-palabraClave: "calculadora nómina 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora nómina 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, arts. 26 a 31: salario y pagas extraordinarias (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

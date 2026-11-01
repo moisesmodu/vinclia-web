@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-modelo-130"
-titulo: "Calculadora modelo 130 2027: pago fraccionado del IRPF"
+titulo: "Calculadora modelo 130 2026 y 2027: pago fraccionado del IRPF"
 h1: "Calculadora del modelo 130"
 descripcion: "Calcula tu modelo 130: el 20 % del rendimiento neto acumulado del año menos retenciones y pagos anteriores, con la minoración por rendimientos bajos."
 resumen: "Escribe tus ingresos y gastos acumulados desde enero y lo que ya pagaste en el año, y verás cuánto te toca ingresar en el modelo 130 de este trimestre."
 palabraClave: "calculadora modelo 130"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglamento del IRPF, arts. 109 a 112: pagos fraccionados (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

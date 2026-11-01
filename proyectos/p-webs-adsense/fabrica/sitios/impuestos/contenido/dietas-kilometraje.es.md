@@ -1,11 +1,11 @@
 ---
 slug: calculadora-dietas-kilometraje
-titulo: "Calculadora dietas y kilometraje 2027: exento de IRPF"
+titulo: "Calculadora dietas y kilometraje 2026 y 2027: exento de IRPF"
 h1: "Calculadora de dietas y kilometraje"
 descripcion: "Calcula qué parte de las dietas y del kilometraje que te paga la empresa está exenta de IRPF en 2027: 53,34 € con pernocta, 26,67 € sin pernocta y 0,26 €/km."
 resumen: "Indica los días de viaje, los kilómetros y lo que te paga la empresa, y verás el importe exento de IRPF y la parte que tributa en tu nómina."
 palabraClave: "calculadora dietas y kilometraje"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglamento del IRPF, art. 9: dietas y asignaciones para gastos de viaje (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

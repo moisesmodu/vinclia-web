@@ -1,11 +1,11 @@
 ---
 slug: calculadora-sueldo-neto
-titulo: "Calculadora de sueldo neto 2027: de bruto a neto por comunidad"
-h1: "Calculadora de sueldo neto 2027"
-descripcion: "Pasa tu salario bruto a neto con la retención de IRPF y la Seguridad Social de 2027, por comunidad autónoma, 12 o 14 pagas y situación familiar."
+titulo: "Calculadora sueldo neto 2026 y 2027: de bruto a neto"
+h1: "Calculadora de sueldo neto 2026 y 2027"
+descripcion: "Pasa tu salario bruto a neto con la retención de IRPF y la Seguridad Social de 2026 y 2027, por comunidad, en 12 o 14 pagas y con tu familia."
 resumen: "Escribe tu bruto anual y verás lo que cobrarás cada mes, lo que te retienen y si en la renta te saldrá a pagar o a devolver según tu comunidad."
-palabraClave: "calculadora sueldo neto 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora sueldo neto 2026 y 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Ley 35/2006 del IRPF (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"

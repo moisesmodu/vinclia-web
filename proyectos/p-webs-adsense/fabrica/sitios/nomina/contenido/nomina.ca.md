@@ -1,11 +1,11 @@
 ---
 slug: calculadora-nomina
-titulo: "Calculadora de nòmina 2027: meritacions, deduccions i líquid"
-h1: "Calculadora de nòmina 2027"
+titulo: "Calculadora de nòmina 2026 i 2027: meritacions, deduccions i líquid"
+h1: "Calculadora de nòmina 2026 i 2027"
 descripcion: "Simula la teva nòmina mensual línia a línia: salari base, complements, pagues extra, cotització a la Seguretat Social, retenció d’IRPF i líquid a percebre."
 resumen: "Posa el teu salari base, els complements i com cobres les pagues extra, i veuràs la nòmina desglossada com la que et dona l’empresa."
-palabraClave: "calculadora nòmina 2027"
-actualizado: 2026-10-28
+palabraClave: "calculadora nòmina 2026 i 2027"
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatut dels Treballadors, arts. 26 a 31: salari i pagues extraordinàries (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

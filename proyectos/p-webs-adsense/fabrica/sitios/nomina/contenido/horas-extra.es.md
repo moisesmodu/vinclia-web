@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-horas-extra"
-titulo: "Calculadora de horas extra 2027: precio y neto de cada hora"
-h1: "Calculadora de horas extra 2027"
+titulo: "Calculadora de horas extra 2026 y 2027: precio y neto de cada hora"
+h1: "Calculadora de horas extra 2026 y 2027"
 descripcion: "Calcula cuánto cobras por tus horas extra: precio de la hora ordinaria, recargo del convenio, cotización a la Seguridad Social y retención de IRPF."
 resumen: "Escribe tu bruto anual, tu jornada y las horas extra que has hecho. Verás el precio de cada hora y lo que te queda en neto después de cotizar y retener."
 palabraClave: "calculadora horas extra"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, art. 35: horas extraordinarias (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

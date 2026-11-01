@@ -1,11 +1,11 @@
 ---
 slug: calculadora-paga-extra
-titulo: "Calculadora de paga extra 2026: Navidad, prorrateo y meses trabajados"
+titulo: "Calculadora de paga extra 2026: Navidad y prorrateo"
 h1: "Calculadora de paga extra"
 descripcion: "Calcula tu paga extra de Navidad 2026 o de verano: parte proporcional si llevas pocos meses, devengo semestral o anual y neto tras el IRPF. Con ejemplo y fuente."
 resumen: "Pon el importe de la paga completa y tu fecha de alta y verás la parte proporcional que cobrarás y lo que te quedará después del IRPF."
 palabraClave: "calculadora paga extra"
-actualizado: 2026-10-31
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Estatuto de los Trabajadores, art. 31: gratificaciones extraordinarias (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430"

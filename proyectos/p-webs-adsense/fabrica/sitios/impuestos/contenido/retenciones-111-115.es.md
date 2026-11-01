@@ -1,11 +1,11 @@
 ---
 slug: "calculadora-modelos-111-115"
-titulo: "Calculadora modelos 111 y 115 2027: retenciones trimestrales"
+titulo: "Calculadora modelos 111 y 115 2026 y 2027: retenciones trimestrales"
 h1: "Calculadora de los modelos 111 y 115"
 descripcion: "Calcula lo que debes ingresar en los modelos 111 y 115: retenciones de nóminas, facturas de profesionales al 15 % o al 7 % y alquiler del local al 19 %."
 resumen: "Escribe el IRPF de tus nóminas, las facturas de profesionales que has recibido y el alquiler del local, y verás cuánto ingresar en el 111 y en el 115 este trimestre."
 palabraClave: "modelo 111 y 115"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Reglamento del IRPF: retenciones e ingresos a cuenta (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"

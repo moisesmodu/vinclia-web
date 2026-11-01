@@ -1,11 +1,11 @@
 ---
 slug: calculadora-interessos-diposit
-titulo: "Calculadora interessos dipòsit 2027: net després d’Hisenda"
+titulo: "Calculadora interessos dipòsit 2026 i 2027: net després d’Hisenda"
 h1: "Calculadora d’interessos d’un dipòsit"
 descripcion: "Calcula els interessos d’un dipòsit a termini fix el 2027: bruts segons el TIN, retenció del 19 % i el que pagaràs a la renda amb l’escala de l’estalvi."
 resumen: "Escriu el capital, el TIN i el termini i veuràs els interessos bruts, la retenció que aplica el banc i el que cobres net."
 palabraClave: "calculadora interessos dipòsit"
-actualizado: 2026-10-28
+actualizado: 2026-11-01
 fuentes:
   - nombre: "Llei 35/2006 de l’IRPF, arts. 25, 66 i 76 (BOE)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
