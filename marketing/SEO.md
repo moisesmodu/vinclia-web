@@ -208,7 +208,9 @@ son las de mayor estacionalidad para noviembre y diciembre.
 - Una búsqueda de la lista sin impresiones en 6 semanas se da por mal elegida y se sustituye.
 - Las páginas «Nueva» con pieza asignada se publican en el PR de la semana en que se aprueba la pieza.
 
-## 4. Indexación: estado del 31/10 y lo que falta para que Google vea las 6 webs con su dominio
+## 4. Indexación: estado del 31/10 y lo que faltaba para que Google vea las 6 webs con su dominio
+
+> **Actualización del 1/11 (sesión del Mac):** todo lo de §4.2 y §4.3 está hecho: las 8 webs redesplegadas con el código SEO (comprobado: páginas nuevas en producción y Plaça canónica en oposita.digital), Search Console verificado en los 6 dominios con los sitemaps enviados, Web Analytics activo. Lo que sigue vivo de esta sección es §4.4 (qué mirar cada semana) y las propiedades de prefijo de URL para Juegos y Aprova.
 
 ### 4.1 Dónde estamos
 

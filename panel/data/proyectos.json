@@ -19,7 +19,8 @@
       "PR #2": "https://github.com/moisesmodu/vinclia-web/pull/2",
       "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/a-ccse/semana-1.md",
       "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
-      "Web (dominio propio)": "https://ccsefacil.com"
+      "Web (dominio propio)": "https://ccsefacil.com",
+      "Marketing · Google Ads diciembre": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/ads/google-ads-diciembre-2026.md"
     },
     "acciones": [
       {
@@ -101,6 +102,10 @@
       {
         "fecha": "2026-11-01",
         "texto": "SEO publicado en producción (commit 97d87a9, incluye 3767b7b y dd3cee4 y el nombre de marca en el pago): ccsefacil.com con canonical y sitemap del dominio, checkout responde (401 sin sesión)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "Marketing: propuesta de Google Ads para diciembre (300 €/mes: 220 € Plaça, 80 € CCSE como prueba; CPA máximo 25 € y 9 €; gclid a Stripe e importación de conversiones; corte a los 21 días), pendiente de decisión"
       }
     ],
     "proximos": [
@@ -657,7 +662,8 @@
       "PR #7": "https://github.com/moisesmodu/vinclia-web/pull/7",
       "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/b-oposiciones/semana-1.md",
       "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
-      "Web (dominio propio)": "https://oposita.digital"
+      "Web (dominio propio)": "https://oposita.digital",
+      "Marketing · Google Ads diciembre": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/ads/google-ads-diciembre-2026.md"
     },
     "acciones": [
       {
@@ -723,6 +729,10 @@
       {
         "fecha": "2026-11-01",
         "texto": "SEO publicado en producción (commit f2734dc, incluye 1daeac8 y el nombre de marca en el pago): NEXT_PUBLIC_URL=https://oposita.digital; canonical y sitemap ya con oposita.digital, checkout responde"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "Marketing: propuesta de Google Ads para diciembre (300 €/mes: 220 € Plaça, 80 € CCSE como prueba; CPA máximo 25 € y 9 €; gclid a Stripe e importación de conversiones; corte a los 21 días), pendiente de decisión"
       }
     ],
     "proximos": [
@@ -1799,7 +1809,8 @@
       "PR #5": "https://github.com/moisesmodu/vinclia-web/pull/5",
       "Marketing · piezas semana 1": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/piezas/g-cuentos/semana-1.md",
       "Marketing · aprobar": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md",
-      "Web (dominio propio)": "https://lunilla.cat"
+      "Web (dominio propio)": "https://lunilla.cat",
+      "Marketing · campaña de Navidad": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/campanas/lunilla-navidad-2026.md"
     },
     "acciones": [
       {
@@ -1877,6 +1888,10 @@
       {
         "fecha": "2026-11-01",
         "texto": "SEO publicado en producción (commit db86ea8, incluye fcc17b8…8157185 y el nombre de marca en el pago): sitemap de lunilla.cat, canonical en /ca y en las fichas de cuento, checkout responde (400 sin datos)"
+      },
+      {
+        "fecha": "2026-11-01",
+        "texto": "Marketing: campaña de Navidad (4/11–15/12, objetivo 100 libros) lista para aprobar: 8 mensajes para grupos es/ca, 6 vídeos, oferta a afiliadas (20 % PDF, 10 % tapa dura, código LUNA-<NOMBRE> del 10 %) y calendario día a día"
       }
     ],
     "proximos": [

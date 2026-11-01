@@ -95,10 +95,37 @@
 | ⬜ | M-05 | Article SEO (ca) · «Suspès el C1 de català: què fer i quan tornar-t'hi a presentar» | guia nova a `/ca/guia/` d'Aprova (la publica la sessió de projecte M amb un PR; no coincideix amb cap de les 3 | dv 6 nov | [ver](piezas/m-catala/semana-1.md#m-05-article-seo-ca-suspès-el-c1-de-català-què-fer-i-quan-tornar-thi-a-presentar) |
 | ⬜ | M-06 | Vídeo 1 · «Tenir que» (text de publicació) | TikTok, Instagram Reels i YouTube Shorts d'Aprova (comptes de la marca, pendents d'obrir per Moisés) | dg 22 nov | [ver](piezas/m-catala/semana-1.md#m-06-vídeo-1-tenir-que-text-de-publicació) |
 
+## Campaña de Navidad de Lunilla · [campanas/lunilla-navidad-2026.md](campanas/lunilla-navidad-2026.md)
+
+| Casilla | ID | Pieza | Canal | Día | Texto |
+|---|---|---|---|---|---|
+| ⬜ | GN-00 | **La campaña entera**: objetivo de 100 libros, reparto de visitas, calendario del 4/11 al 15/12 | — | — | [ver](campanas/lunilla-navidad-2026.md#1-los-números-que-hacen-falta-para-que-100-libros-no-sea-un-deseo) |
+| ⬜ | GN-01 | Idea de regalo que no es un juguete (es) | WhatsApp / Telegram de familias | jue 6/11 y siguientes | [ver](campanas/lunilla-navidad-2026.md#gn-01--whatsapp-o-telegram-de-familias-es--idea-de-regalo-que-no-es-un-juguete) |
+| ⬜ | GN-02 | Idea de regal que no és una joguina (ca) | WhatsApp / Telegram de famílies | jue 6/11 y siguientes | [ver](campanas/lunilla-navidad-2026.md#gn-02--whatsapp-o-telegram-de-famílies-ca--idea-de-regal-que-no-és-una-joguina) |
+| ⬜ | GN-03 | Tres regalos que no son juguetes (es) | Facebook, grupos de madres y padres | vie 7/11 | [ver](campanas/lunilla-navidad-2026.md#gn-03--facebook-grupo-de-madres-y-padres-por-ciudad-es--publicación-útil--enlace-a-la-página-de-ideas) |
+| ⬜ | GN-04 | Regal dels avis (ca) | Facebook, grups de famílies | mar 11/11 | [ver](campanas/lunilla-navidad-2026.md#gn-04--facebook-grup-de-famílies-ca--regal-dels-avis) |
+| ⬜ | GN-05 | Conte de regal per a la classe (ca) | AMPA / escola bressol | mié 12/11 | [ver](campanas/lunilla-navidad-2026.md#gn-05--grupo-de-ampa-o-escola-bressol-ca--regalo-para-la-clase) |
+| ⬜ | GN-06 | Última semana para tapa dura (es) | WhatsApp / Telegram | lun 8/12 | [ver](campanas/lunilla-navidad-2026.md#gn-06--whatsapp-o-telegram-es--última-semana-para-tapa-dura-del-8-al-1412) |
+| ⬜ | GN-07 | Última setmana per a tapa dura (ca) | WhatsApp / Telegram | lun 8/12 | [ver](campanas/lunilla-navidad-2026.md#gn-07--whatsapp-o-telegram-ca--última-setmana-per-a-tapa-dura-del-8-al-1412) |
+| ⬜ | GN-08 | Respuesta en hilos «regalo para niño de X años» (es) | Foros de crianza | dom 16/11 | [ver](campanas/lunilla-navidad-2026.md#gn-08--respuesta-modelo-en-hilos-regalo-para-niño-de-x-años-foros-de-crianza-es) |
+| ⬜ | GN-V1…V6 | Seis vídeos (gancho, desarrollo, cierre) | TikTok, Reels, Shorts | del 15/11 al 14/12 | [ver](campanas/lunilla-navidad-2026.md#3-seis-vídeos-para-tiktok-reels-y-shorts-vertical-15-a-30-s-subtítulos-siempre-sin-caras-de-niños) |
+| ⬜ | GN-A0 | **Oferta a afiliadas**: 20 % PDF, 10 % tapa dura, código `LUNA-<NOMBRE>` del 10 % (decisión de margen) | — | antes del 5/11 | [ver](campanas/lunilla-navidad-2026.md#41-la-oferta-propuesta-para-que-moisés-la-apruebe) |
+| ⬜ | GN-A1 | Mensaje a cuentas de crianza (es) | Instagram / TikTok, mensaje directo | mié 5/11 | [ver](campanas/lunilla-navidad-2026.md#42-mensaje-a-cuentas-de-crianza-es--gn-a1) |
+| ⬜ | GN-A2 | Missatge a comptes de criança (ca) | Instagram / TikTok, missatge directe | mié 5/11 | [ver](campanas/lunilla-navidad-2026.md#43-missatge-a-comptes-de-criança-ca--gn-a2) |
+| ⬜ | GN-A3 | Texto que copia la afiliada | Historias y publicaciones de las afiliadas | desde el 15/11 | [ver](campanas/lunilla-navidad-2026.md#44-texto-que-la-afiliada-puede-copiar-historia-o-publicación--gn-a3) |
+
+## Google Ads de diciembre · [ads/google-ads-diciembre-2026.md](ads/google-ads-diciembre-2026.md)
+
+| Casilla | ID | Decisión | Importe | Cuándo | Texto |
+|---|---|---|---|---|---|
+| ⬜ | ADS-1 | 300 €/mes desde el 1/12 con reparto 220 € Plaça / 80 € CCSE (alternativa: 220 € solo Plaça) | 300 €/mes | decidir antes del 24/11 | [ver](ads/google-ads-diciembre-2026.md#0-recomendación-en-tres-líneas) |
+| ⬜ | ADS-2 | Autorizar el PR de `gclid` a Stripe en A y B (sin medición no se enciende) | 0 € | antes del 24/11 | [ver](ads/google-ads-diciembre-2026.md#4-medición-de-conversiones-obligatoria-antes-de-encender) |
+| ⬜ | ADS-3 | Crear la cuenta de Google Ads a tu nombre; Claude importa las campañas en pausa | método de pago | semana del 24/11 | [ver](ads/google-ads-diciembre-2026.md#6-lo-que-decide-moisés-en-una-línea-cada-cosa) |
+
 ## Publicadas (📣) y descartadas (✖)
 
 | Fecha | ID | Dónde | Resultado a los 7 días (visitas con su utm) |
 |---|---|---|---|
 | — | — | — | — |
 
-Total de piezas en la bandeja: 53. La tarea semanal mueve aquí lo publicado y archiva lo descartado.
+Total de piezas en la bandeja: 53 de la semana 1, más la campaña de Navidad de Lunilla (14 entradas) y las 3 decisiones de Google Ads. La tarea semanal mueve aquí lo publicado y archiva lo descartado.

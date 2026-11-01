@@ -9,6 +9,8 @@ La sesión transversal de marketing de la cartera. No construye producto: constr
 | `APROBAR.md` | **La bandeja de Moisés:** cada pieza con su casilla. Nada sale sin ✅ | Moisés |
 | `PARA-MOISES.md` | Como máximo 5 tareas de 2 minutos que exigen su identidad | Claude escribe, Moisés hace |
 | `piezas/<clave>/semana-N.md` | Los textos listos para copiar, con enlace medido (`utm_campaign=<id>`) | Claude |
+| `campanas/lunilla-navidad-2026.md` | Campaña de Navidad de Lunilla: números, mensajes, 6 vídeos, afiliadas, día a día 4/11–15/12 | Claude; Moisés aprueba en APROBAR |
+| `ads/google-ads-diciembre-2026.md` | Propuesta de Google Ads (300 €/mes, Plaça y CCSE) con medición y regla de corte | Moisés decide |
 | `SEO.md` | 20 búsquedas por proyecto, la página que responde y la cola de PR | Claude |
 | `MEDICION.md` | Convención de enlaces, dónde se lee cada dato, tabla semanal, reglas de decisión | Claude (lunes) |
 | `TAREA-PROGRAMADA.md` | El prompt semanal que repite el ciclo (medir, ajustar, preparar) | Moisés lo crea con un clic |

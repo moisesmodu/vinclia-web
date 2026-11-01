@@ -11,6 +11,8 @@
 Leyenda de estado: ⬜ pendiente de aprobar · ✅ aprobado · 📣 publicado · ⏸ aplazado. El texto de cada pieza está en
 `piezas/<clave>/semana-1.md` (semana 1) y en `semana-2.md`… cuando la tarea semanal los escriba.
 
+> **1/11:** las filas de Lunilla (G-*, GN-*) las manda ahora `campanas/lunilla-navidad-2026.md` §5 (día a día del 4/11 al 15/12); este calendario conserva el tope global de 3 piezas al día.
+
 ## Semana 1 · 2–8 de noviembre: primer euro de B y A, afiliadas de G, validez de M
 
 | Día | Pieza | Proyecto | Canal | Estado |
