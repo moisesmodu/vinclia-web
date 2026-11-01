@@ -111,7 +111,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Dia previst:** dt 10 nov (setmana 2) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Reddit
 - **Enllaç amb mesura:** https://oposita.digital/es/convocatorias?utm_source=reddit&utm_medium=post&utm_campaign=b-06
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Título:** `Convocatorias de Cataluña 2027: 35 procesos en una tabla (plazas, plazos, fecha de examen)`
 
@@ -142,7 +142,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Dia previst:** dv 6 nov (PR a claude/proyecto-b-oposiciones; no compta al límit diari) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** sessió de projecte B (PR) després de l'aprovació de Moisés
 - **Enllaç amb mesura:** cap (és una pàgina pròpia); els enllaços interns no porten utm
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Paraula clau:** examen mossos 2027
 **Slug proposat:** `/ca/blog/examen-mossos-2027`
@@ -211,7 +211,7 @@ Dades fixes que es poden citar: 5 oposicions, 1.737 preguntes verificades amb l'
 - **Dia previst:** ds 14 nov (setmana 2, quan hi hagi compte de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del compte de la marca (el vídeo el produeix la sessió amb captures reals de l'app; cap crèdit de vídeo d'IA)
 - **Enllaç amb mesura (bio del perfil):** https://oposita.digital/ca/mossos-esquadra?utm_source=tiktok&utm_medium=video&utm_campaign=b-08
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Guió de referència:** `MARKETING.md §3` de B, vídeo 1: pregunta real del simulacre de Mossos en pantalla, compte enrere de 5 s, resposta i article exacte de la Llei 10/1994, tancament «20 preguntes gratis, enllaç al perfil».
 

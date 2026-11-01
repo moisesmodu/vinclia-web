@@ -22,6 +22,10 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
+      "texto": "0 · Marketing · Moisés aprobó todo el 1/11. Lo que queda es publicar desde tus cuentas (10 min al día según marketing/CALENDARIO.md), crear @lunilla.cuentos, abrir la cuenta de Google Ads y pedir el alta en Xolo. La sesión del Mac envía los 9 correos de marketing/correos/semana-1.json",
+      "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/PARA-MOISES.md"
+    },
+    {
       "donde": "~/Desktop/MENSAJES-OPOSITA.html",
       "texto": "1 · B · Pegar los 5 mensajes en los grupos de oposiciones (Telegram, WhatsApp, Facebook, foros). 10 min"
     },
@@ -36,10 +40,6 @@
     {
       "donde": "~/Desktop/juegos-portales/ACTIVAR-JUEGOS.html",
       "texto": "4 · Juegos: comprobar si sale «Request activation» en GameMonetize/GameDistribution (Egg Truck primero) y enviar el correo a soporte de GameMonetize si no"
-    },
-    {
-      "texto": "5 · Marketing: aprobar en marketing/APROBAR.md la campaña de Navidad de Lunilla (GN-00 y la oferta a afiliadas GN-A0) y decidir la propuesta de Google Ads (ADS-1 a ADS-3: 300 €/mes desde el 1/12, 220 € Plaça / 80 € CCSE). 20 min",
-      "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/APROBAR.md"
     },
     {
       "donde": "https://play.google.com/console",
@@ -60,6 +60,10 @@
     {
       "texto": "✔ Centro de control publicado (01/11, panel → Control): ingresos netos, MRR, usuarios de A, N, B, G y M con búsqueda y CSV, pagos, reembolsos y disputas de Stripe, suscripciones y visitas, en vivo. Bases de datos con el rol de solo lectura panel_ro. Pendiente tuyo: crear en Vercel un token de solo lectura y sustituir VERCEL_TOKEN_PANEL en el proyecto cartera",
       "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/control/"
+    },
+    {
+      "texto": "✔ Tarea programada semanal de marketing creada (lunes 06:40, primera el 2/11)",
+      "donde": "marketing/TAREA-PROGRAMADA.md"
     }
   ],
   "reglas": [

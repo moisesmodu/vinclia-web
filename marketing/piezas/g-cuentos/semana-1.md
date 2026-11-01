@@ -14,7 +14,7 @@ Objetivo de la semana: **no vender todavía** (la campaña abre el 15/11). Capta
 - **Día previsto:** vie 6 nov (5 mensajes), lun 9 (5 más) y lun 16 (10 más) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, por mensaje directo desde la cuenta de la marca @lunilla.cuentos (si aún no existe, desde su cuenta personal diciendo quién es)
 - **Enlace con medición:** `https://lunilla.cat/afiliados?utm_source=instagram&utm_medium=dm&utm_campaign=g-01` (el enlace `/r/<codigo>` propio se le envía cuando acepta)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Variante A · cuenta de crianza**
 
@@ -48,7 +48,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Día previsto:** vie 6 nov (5 mensajes), lun 9 (5 más) y lun 16 (10 más) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, per missatge directe des del compte de la marca @lunilla.cuentos
 - **Enlace con medición:** `https://lunilla.cat/ca/afiliades?utm_source=instagram&utm_medium=dm&utm_campaign=g-02`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Variant A · compte de criança**
 
@@ -80,7 +80,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Día previsto:** antes del vie 6 nov (preparación; no se publica) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés rellena la tabla; no se publica nada
 - **Enlace con medición:** no aplica (cada afiliada recibe su `/r/<codigo>` al darse de alta)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **10 consultas de búsqueda (en el buscador de Instagram y TikTok, y en Facebook → Grupos):**
 
@@ -135,7 +135,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Día previsto:** sáb 7 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde su cuenta personal con historial
 - **Enlace con medición:** `https://lunilla.cat/cuentos/cuento-para-dormir-miedo-a-la-oscuridad?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04` · ca: `https://lunilla.cat/ca/contes/conte-per-dormir-por-a-la-foscor?utm_source=facebook&utm_medium=grupo&utm_campaign=g-04`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Castellano**
 
@@ -169,7 +169,7 @@ Notas para Moisés: un mensaje por cuenta, sin copiar y pegar la misma frase de 
 - **Día previsto:** dom 15 nov (apertura de Lunilla); la biografía, en cuanto exista la cuenta · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca
 - **Enlace con medición:** biografía: `https://lunilla.cat/?utm_source=instagram&utm_medium=bio&utm_campaign=g-05` · vídeos: `https://lunilla.cat/crear?utm_source=instagram&utm_medium=post&utm_campaign=g-05` (en TikTok, cambiar `utm_source=tiktok`)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Biografía (≤ 150 caracteres)**
 
@@ -225,7 +225,7 @@ Nota en las tres: en la descripción larga de la cuenta (o en un destacado «Có
 - **Día previsto:** vie 13 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca
 - **Enlace con medición:** uno por pin (abajo); imagen: la portada ilustrada de la muestra o un detalle de página de `public/muestras/`, formato vertical 1000 × 1500
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 | # | Título (≤ 100) | Descripción (≤ 500) | Enlace |
 |---|---|---|---|
@@ -243,7 +243,7 @@ Nota en las tres: en la descripción larga de la cuenta (o en un destacado «Có
 - **Día previsto:** vie 6 nov (PR a claude/g-cuentos; no cuenta en el tope diario) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** la sesión de G (PR) tras la aprobación de Moisés; no es una publicación externa
 - **Enlace con medición:** no aplica (página propia); los enlaces internos no llevan `utm`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Palabra clave:** regalos de navidad niños 3 a 6 años
 **Título (H1):** Regalos de Navidad para niños de 3 a 6 años que no son juguetes (ideas 2026)
@@ -326,7 +326,7 @@ Nota en las tres: en la descripción larga de la cuenta (o en un destacado «Có
 - **Día previsto:** sáb 14 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, des de hola@numimates.com o del correu que decideixi
 - **Enlace con medición:** `https://lunilla.cat/ca/muestras/la-martina-i-els-secrets-de-lleida?utm_source=email&utm_medium=dm&utm_campaign=g-08`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Assumpte:** `Un conte amb Lleida dins, de regal per a la classe`
 

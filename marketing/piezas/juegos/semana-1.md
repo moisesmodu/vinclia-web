@@ -16,7 +16,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** sáb 7 nov (después de que itch.io esté público) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde su cuenta personal con historial (no una cuenta de marca recién creada)
 - **Enlace con medición:** `https://juegos-casuales.vercel.app/play/egg-truck/?utm_source=reddit&utm_medium=post&utm_campaign=j-01`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Título (85 caracteres):**
 
@@ -46,7 +46,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** sáb 7 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca en itch.io
 - **Enlace con medición:** `https://juegos-casuales.vercel.app/?utm_source=itch&utm_medium=post&utm_campaign=j-02`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Título:** Egg Truck is out: one button, one egg, one minute
 
@@ -74,7 +74,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** jue 12 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde su cuenta personal con historial
 - **Enlace con medición:** `https://juegos-casuales.vercel.app/play/egg-truck/?utm_source=reddit&utm_medium=post&utm_campaign=j-03`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **r/playmygame · título:** [PC] (Web) Egg Truck: one-button hill driving, don't crack the egg
 
@@ -107,7 +107,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** sáb 14 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde una cuenta del foro a nombre de Nuvolet Games (creada ese día; en este foro las cuentas de estudio son lo normal)
 - **Enlace con medición:** `https://juegos-casuales.vercel.app/play/egg-truck/?utm_source=phaser-forum&utm_medium=post&utm_campaign=j-04`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Título:** Egg Truck: one-button hill driving with fixed-step physics and baked terrain (Phaser 3)
 
@@ -135,7 +135,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** mar 10 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, con la cuenta de Discord vinculada a la cuenta de desarrollador
 - **Enlace con medición:** ninguno en el mensaje (en Discord no se enlaza la web propia; el juego ya está en su panel)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Mensaje (≈ 560 caracteres):**
 
@@ -149,7 +149,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** dom 15 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca
 - **Enlace con medición:** `https://juegos-casuales.vercel.app/?utm_source=x&utm_medium=post&utm_campaign=j-06` (en Bluesky, `utm_source=bluesky`)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **1/5**
 > We're Nuvolet Games, a tiny studio from Lleida, Spain. Today we're opening our shelf: 18 small browser games, each one playable in under a minute, no download, no sign-up. Tiny games, big smiles. 🧵
@@ -185,7 +185,7 @@ Orden del día: J-02 (itch.io público) va primero; J-01 y J-05 el martes solo s
 - **Día previsto:** sáb 21 nov (semana 3, cuando exista la cuenta de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés, desde la cuenta de la marca
 - **Enlace con medición:** en la biografía: `https://juegos-casuales.vercel.app/play/egg-truck/?utm_source=tiktok&utm_medium=bio&utm_campaign=j-07` (Shorts: `utm_source=youtube`; Reels: `utm_source=instagram`)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Texto en pantalla (ya en el guion):** *POV: you're the egg*
 

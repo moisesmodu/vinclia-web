@@ -14,7 +14,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** vie 6 nov (o el día en que aparezca un hilo que encaje) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal de Reddit con historial)
 - **Enlace con medición:** https://tuspapeles.app/en/preguntas/empadronarse-sin-contrato-de-alquiler?utm_source=reddit&utm_medium=respuesta&utm_campaign=n-01
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > You can register (empadronarse) without a rental contract in your name. The padrón is meant to reflect where you actually live, and you can register even if your immigration status isn't sorted yet. What the town hall needs is proof of identity and proof that you live at that address. The usual options:
 >
@@ -37,7 +37,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** jue 5 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://tuspapeles.app/es/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-02
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > Hola a todos. Veo que circula mucho el mensaje de que «la autorización de la regularización se renueva sola». Os dejo lo que dice la norma, por si a alguien le sirve, sin alarmar a nadie:
 >
@@ -61,7 +61,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** dom 8 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://tuspapeles.app/ar/preguntas/tarjeta-sanitaria-sin-papeles-real-decreto-180-2026?utm_source=facebook&utm_medium=grupo&utm_campaign=n-03
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 ### Versión en árabe (revisar por hablante nativo)
 
@@ -120,7 +120,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** mar 10 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://tuspapeles.app/fr/preguntas/caducidad-autorizacion-regularizacion-modificacion-articulo-191?utm_source=facebook&utm_medium=grupo&utm_campaign=n-04
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 ### Versión en francés
 
@@ -162,7 +162,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** mié 11 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com)
 - **Enlace con medición:** https://tuspapeles.app/es/guias/empadronamiento?utm_source=ong&utm_medium=correo&utm_campaign=n-05
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > **Asunto:** Guías de trámites en 7 idiomas, gratis para vuestro equipo
 >
@@ -189,7 +189,7 @@ Enlaces: dominio de producción `https://tuspapeles.app` (activo desde el 31/10;
 - **Día previsto:** sáb 7 nov (PR a claude/n-nuevo-en-espana; no cuenta en el tope diario) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Claude (PR) · Moisés aprueba el PR
 - **Enlace con medición:** página propia, sin utm. Enlace interno a la guía gratis `/es/guias/empadronamiento`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Palabra clave:** empadronarse en Lleida
 **Slug:** `/es/preguntas/empadronarse-en-lleida`

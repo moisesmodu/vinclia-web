@@ -20,7 +20,7 @@ Parámetros usados en los cálculos (verificados el 31/10/2026 en fuentes de div
 - **Día previsto:** dom 8 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal con historial, como respuesta a una pregunta real; nunca abrir un hilo propio)
 - **Enlace con medición:** https://netoclaro.app/calculadora-sueldo-neto/?bruto=32000&utm_source=reddit&utm_medium=respuesta&utm_campaign=p-01
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo a la que responde: *«I've been offered 32,000 € gross in Barcelona, single, no kids. What will I actually take home each month?»*
 
@@ -46,7 +46,7 @@ Pregunta tipo a la que responde: *«I've been offered 32,000 € gross in Barcel
 - **Día previsto:** lun 9 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial, como respuesta)
 - **Enlace con medición:** https://netoclaro.app/calculadora-indemnizacion-despido/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02 y https://netoclaro.app/calculadora-finiquito/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-02
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo: *«Me despiden después de 6 años en la empresa, cobro 2.000 € brutos al mes en 12 pagas. ¿Cuánto me corresponde de finiquito y de indemnización? ¿Es lo mismo?»*
 
@@ -82,7 +82,7 @@ Pregunta tipo: *«Me despiden después de 6 años en la empresa, cobro 2.000 €
 - **Día previsto:** mié 11 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://impuestoclaro.es/cuota-autonomos-por-tramo/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03 y https://netoclaro.app/calculadora-cuota-autonomos/?utm_source=forocoches&utm_medium=respuesta&utm_campaign=p-03
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo: *«Me doy de alta de autónomo en enero. Calculo que me quedarán unos 1.800 € netos al mes. ¿Cuánto voy a pagar de cuota en 2027?»*
 
@@ -106,7 +106,7 @@ Pregunta tipo: *«Me doy de alta de autónomo en enero. Calculo que me quedarán
 - **Día previsto:** vie 13 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://impuestoclaro.es/autonomo-o-asalariado/?utm_source=infoautonomos&utm_medium=respuesta&utm_campaign=p-04
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo: *«Una empresa me ofrece facturar 2.500 € al mes como autónomo o un contrato de 2.000 € brutos. ¿Qué me sale más a cuenta?»*
 
@@ -138,7 +138,7 @@ Pregunta tipo: *«Una empresa me ofrece facturar 2.500 € al mes como autónomo
 - **Día previsto:** dom 15 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial, como respuesta)
 - **Enlace con medición:** https://netoclaro.app/calculadora-paga-extra/?utm_source=reddit&utm_medium=respuesta&utm_campaign=p-05
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo: *«My contract says 28,000 € in 14 payments. Does that mean I get paid 14 times? When?»*
 
@@ -162,7 +162,7 @@ Pregunta tipo: *«My contract says 28,000 € in 14 payments. Does that mean I g
 - **Día previsto:** lun 16 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial; en Facebook, solo donde las normas permitan enlaces)
 - **Enlace con medición:** https://netoclaro.app/calculadora-paro/?utm_source=facebook&utm_medium=respuesta&utm_campaign=p-06
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Pregunta tipo: *«Se me acaba el contrato en diciembre. He cotizado 2 años seguidos y cobro 1.900 € brutos al mes con las pagas prorrateadas. ¿Cuánto y cuánto tiempo voy a cobrar de paro?»*
 
@@ -187,7 +187,7 @@ Pregunta tipo: *«Se me acaba el contrato en diciembre. He cotizado 2 años segu
 - **Día previsto:** jue 12 nov (semana 2) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com o desde su cuenta de marca)
 - **Enlace con medición:** https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07 y https://impuestoclaro.es/datos/calendario-fiscal-2027/?utm_source=gestorias&utm_medium=correo&utm_campaign=p-07
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aquí cuando Moisés o la sesión del Mac las busque):
 1. Buscar «gestoría laboral Lleida» y «asesoría fiscal Lleida»; quedarse con las que tengan web propia **con blog o noticias actualizadas en 2026** (es la señal de que publican y enlazan).
@@ -220,7 +220,7 @@ Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aq
 - **Día previsto:** mar 17 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (per correu)
 - **Enlace con medición:** https://netoclaro.app/ca/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08 i https://impuestoclaro.es/datos/tramos-irpf-comunidades/?utm_source=collegis&utm_medium=correo&utm_campaign=p-08
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > **Assumpte:** Calculadores laborals i fiscals en català, lliures per als col·legiats
 >
@@ -247,7 +247,7 @@ Cómo elegir las 5 gestorías en Google Maps (sin inventar nombres; se anotan aq
 - **Día previsto:** jue 5 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (formulario, con su nombre y NIF de autónomo; los pagos de afiliación son ingresos de su actividad)
 - **Enlace con medición:** los enlaces de afiliado los dan ellos; se colocan en las calculadoras de abajo con la variable `AFILIADO_<ID>` (ver `AFILIACION.md` del proyecto)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 Dónde iría cada enlace (bloque «Publicidad · Enlace patrocinado» bajo el resultado, ya preparado en el código):
 
@@ -293,7 +293,7 @@ English version (Xolo):
 - **Día previsto:** vie 6 nov (PR a claude/p-webs-adsense-fabrica; no cuenta en el tope diario) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** sesión de proyecto P (PR), no Moisés
 - **Enlace con medición:** página propia `https://netoclaro.app/paga-extra-navidad-2026/`; enlaces internos sin `utm`. Al compartirla en redes o foros: `?utm_source=<canal>&utm_medium=articulo&utm_campaign=p-10`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Palabra clave:** paga extra navidad 2026 · **Slug:** `/paga-extra-navidad-2026/` · **Título (≤ 60):** Paga extra de Navidad 2026: cuándo se cobra y cuánto es · **Meta (≤ 155):** Cuándo se cobra la paga extra de Navidad 2026, cuánto es y cómo se calcula si llevas pocos meses en la empresa. Con ejemplo paso a paso y fuente legal. · **Enlaces internos:** `/calculadora-paga-extra/`, `/calculadora-sueldo-neto/`, `/calculadora-finiquito/`
 
@@ -390,7 +390,7 @@ English version (Xolo):
 - **Día previsto:** jue 19 nov (semana 3) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo)
 - **Enlace con medición:** https://netoclaro.app/datos/salario-minimo-historico/?utm_source=segre&utm_medium=correo&utm_campaign=p-11 y https://netoclaro.app/datos/tabla-sueldo-neto/?utm_source=segre&utm_medium=correo&utm_campaign=p-11
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > **Asunto:** Dos tablas con datos oficiales (SMI 2000-2026 y bruto-neto 2026), libres para usar
 >

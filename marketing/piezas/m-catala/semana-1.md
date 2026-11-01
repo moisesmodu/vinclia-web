@@ -14,7 +14,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dt 3 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, per correu (des d'una adreça amb el nom de la marca; resposta a hola@numimates.com)
 - **Enllaç amb mesura:** https://aprova-catala.vercel.app/ca/guia/probabilitat-d-aprovar-catala-diagnostic?utm_source=cnl-lleida&utm_medium=correu&utm_campaign=m-01
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Assumpte:** `Prova amb 20 alumnes del C1: 3 mesos gratis per a ells`
 
@@ -51,7 +51,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dg 8 nov · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, per correu
 - **Enllaç amb mesura:** https://aprova-catala.vercel.app/ca/guia/probabilitat-d-aprovar-catala-diagnostic?utm_source=academies-lleida&utm_medium=correu&utm_campaign=m-02
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Com triar les acadèmies (cerca a Google Maps «acadèmia oposicions Lleida» i «acadèmia català Lleida»):**
 1. Que preparin oposicions on es demana el C1 (Generalitat, Mossos, ICS, ajuntaments) o que tinguin grups de C1 o C2 de català en curs.
@@ -93,7 +93,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dj 12 nov (setmana 2) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Reddit
 - **Enllaç amb mesura:** https://aprova-catala.vercel.app/ca/guia/examen-c1-catala-2027-model?utm_source=reddit&utm_medium=resposta&utm_campaign=m-03
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **English**
 
@@ -129,7 +129,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dl 9 nov (setmana 2) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del seu compte personal de Telegram
 - **Enllaç amb mesura:** https://aprova-catala.vercel.app/ca/guia/quin-nivell-de-catala-demanen-les-oposicions?utm_source=telegram&utm_medium=grup&utm_campaign=m-04
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Català**
 
@@ -167,7 +167,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dv 6 nov (PR a claude/m-catala; no compta al límit diari) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** sessió de projecte M (PR) després de l'aprovació de Moisés
 - **Enllaç amb mesura:** cap (pàgina pròpia); enllaços interns sense utm
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Paraula clau:** suspès C1 català (variants: «he suspès el C1 de català», «repetir examen C1 català», «reclamació nota C1 català»)
 **Slug proposat:** `/ca/guia/suspes-c1-catala-que-fer`
@@ -240,7 +240,7 @@ Dades fixes que es poden citar: diagnòstic gratuït de 12 minuts sense registre
 - **Dia previst:** dg 22 nov (setmana 3, quan hi hagi compte de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Qui publica:** Moisés, des del compte de la marca (vídeo gravat amb captures reals de l'app i una persona a càmera; cap crèdit de vídeo d'IA)
 - **Enllaç amb mesura (bio del perfil):** https://aprova-catala.vercel.app/ca/guia/probabilitat-d-aprovar-catala-diagnostic?utm_source=tiktok&utm_medium=video&utm_campaign=m-06
-- **Estat:** ⬜ pendent d'aprovació
+- **Estat:** ✅ aprovat l'1/11 per Moisés
 
 **Guió de referència:** `marketing/videos.md` d'M, vídeo 1 («Tenir que», l'error número u): ganxo «Si dius això, suspens el C1» → error (*tinc que estudiar*) → per què (calc de *tener que*) → forma correcta (*haver de*, *caldre*) → crida al diagnòstic.
 

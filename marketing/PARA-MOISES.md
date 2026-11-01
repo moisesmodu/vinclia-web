@@ -1,14 +1,15 @@
 # Para Moisés: lo único que exige tu identidad esta semana (máximo 5)
 
-Todo lo demás lo hace Claude. Orden por impacto en el primer euro. Fecha: 1/11/2026. Search Console, dominios y
-redespliegues ya están hechos por la sesión del Mac.
+Fecha: 1/11/2026, después de tu «aprueba todo, haz todo». Ya está hecho por Claude: aprobaciones anotadas, cupón de
+afiliadas en Stripe, tarea semanal programada (lunes 06:40), `gclid` a Stripe en el código de CCSE y Plaça, y los 9
+correos a entidades preparados (los envía la sesión del Mac). Lo de abajo solo puede salir de tus cuentas.
 
 | # | Tarea | Tiempo | Dónde | Por qué |
 |---|---|---|---|---|
 | 1 | **Pegar los 5 mensajes de Plaça ya aprobados** (B-01 a B-05) en los grupos de Telegram/WhatsApp de Bombers y TCAI, los hilos de Mossos, los grupos de Facebook y el correo a los sindicatos. Lunes 2 y miércoles 4. | 10 min | `marketing/piezas/b-oposiciones/semana-1.md` | El primer euro más cercano: cobro real activo y mensajes aprobados |
-| 2 | **Marcar ✅ en `APROBAR.md`**: las piezas de la semana 1 (empieza por A-01, A-02 y A-03: la inscripción del CCSE cierra el jueves 5) y la **campaña de Navidad de Lunilla** (GN-00 y la oferta a afiliadas GN-A0, que fija la comisión y el código `LUNA-<NOMBRE>`). | 20 min | `marketing/APROBAR.md` | Sin tu ✅ no sale nada; la campaña empieza el 4/11 |
+| 2 | **Publicar las piezas de la semana 1 desde tus cuentas** siguiendo el día de `CALENDARIO.md`: lunes A-01 (Facebook marroquíes), martes A-02 y A-03, miércoles A-04 (Reddit), jueves N-02, viernes N-01 y los 5 primeros mensajes a afiliadas de Lunilla (GN-A1/GN-A2), sábado J-01 (Reddit) y G-04. Copiar, pegar, y poner 📣 en `APROBAR.md`. | 10 min al día | `marketing/piezas/` y `marketing/campanas/lunilla-navidad-2026.md` | Es lo único que ninguna sesión puede hacer por ti |
 | 3 | **Crear la cuenta de Instagram @lunilla.cuentos** (y TikTok si te da tiempo) con la biografía de G-05, y subir 3 ilustraciones de las muestras. | 5 min | https://www.instagram.com/accounts/emailsignup/ · texto en `piezas/g-cuentos/semana-1.md` (G-05) | Los mensajes a afiliadas salen el 5/11 desde esa cuenta |
-| 4 | **Decidir la propuesta de Google Ads** (300 €/mes desde el 1/12, reparto 220 € Plaça / 80 € CCSE, o solo Plaça) y autorizar el cambio pequeño de `gclid` a Stripe. Si dices sí, abre la cuenta de Google Ads a tu nombre y Claude la rellena en pausa. | 10 min de lectura | `marketing/ads/google-ads-diciembre-2026.md` · https://ads.google.com | Decisión antes del 24/11 para encender el 1/12 |
+| 4 | **Abrir la cuenta de Google Ads** a tu nombre (método de pago tuyo) y pasar el ID de cliente a una sesión: Claude importa las campañas de `ads/google-ads-diciembre-2026.md` en pausa y tú pulsas «Activar» el 1/12. | 5 min | https://ads.google.com | Aprobado el 1/11; sin cuenta no se puede montar |
 | 5 | **Solicitar el programa de afiliados de Xolo** con el texto de P-09. | 5 min | https://www.xolo.io/es-en/affiliate-program · `piezas/p-webs-adsense/semana-1.md` (P-09) | 29 € por cliente: el primer euro de NetoClaro sin esperar a AdSense |
 
 ## La semana que viene (para que lo veas venir, sin hacer nada hoy)

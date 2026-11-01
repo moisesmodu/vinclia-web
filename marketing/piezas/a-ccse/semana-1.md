@@ -14,7 +14,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** lun 2 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal con historial; pedir permiso al administrador primero)
 - **Enlace con medición:** https://ccsefacil.com/ar?utm_source=facebook&utm_medium=grupo&utm_campaign=a-01
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 ### Versión en árabe (revisar por hablante nativo)
 
@@ -65,7 +65,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** mar 3 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial; permiso del administrador primero)
 - **Enlace con medición:** https://ccsefacil.com/ro?utm_source=facebook&utm_medium=grupo&utm_campaign=a-02
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 ### Versión en rumano (revisar por hablante nativo)
 
@@ -106,7 +106,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** mar 3 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (cuenta personal con historial)
 - **Enlace con medición:** https://ccsefacil.com/es/guia/exentos-examen-ccse?utm_source=facebook&utm_medium=grupo&utm_campaign=a-03
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > Un dato que confunde a mucha gente y que conviene tener claro antes de pedir la nacionalidad:
 >
@@ -131,7 +131,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** mié 4 nov (o el día en que aparezca un hilo que encaje) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde su cuenta personal de Reddit con historial, no una cuenta nueva de marca)
 - **Enlace con medición:** https://ccsefacil.com/en?utm_source=reddit&utm_medium=respuesta&utm_campaign=a-04
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > Short version of how the CCSE works, from someone who went through the process:
 >
@@ -154,7 +154,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** jue 5 nov · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (por correo, desde hola@numimates.com)
 - **Enlace con medición:** https://ccsefacil.com/es?utm_source=ong&utm_medium=correo&utm_campaign=a-05
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 > **Asunto:** Recurso gratuito para preparar el examen CCSE, en 7 idiomas
 >
@@ -184,7 +184,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** vie 6 nov (PR a claude/a-ccse; no cuenta en el tope diario) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Claude (PR) · Moisés aprueba el PR
 - **Enlace con medición:** página propia, sin utm. Enlaces internos a `/es/examen`, `/es/guia/test-ccse-gratis` y a N con `?utm_source=a-ccse&utm_medium=articulo&utm_campaign=a-06`
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 **Palabra clave:** examen CCSE noviembre 2026
 **Slug:** `/es/guia/examen-ccse-noviembre-2026`
@@ -277,7 +277,7 @@ Enlaces: dominio de producción `https://ccsefacil.com` (activo desde el 31/10; 
 - **Día previsto:** vie 13 nov (semana 2, cuando exista la cuenta de la marca) · segons/según `marketing/CALENDARIO.md`
 - **Quién publica:** Moisés (desde la cuenta de la marca, cuando exista)
 - **Enlace con medición:** https://ccsefacil.com/es?utm_source=tiktok&utm_medium=video&utm_campaign=a-07 (enlace en la biografía; en el vídeo se dice «enlace en el perfil»)
-- **Estado:** ⬜ pendiente de aprobación
+- **Estado:** ✅ aprobado el 1/11 por Moisés
 
 ### Texto del post (castellano)
 
