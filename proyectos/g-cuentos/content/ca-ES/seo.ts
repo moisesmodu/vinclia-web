@@ -10,7 +10,7 @@ export const SEO_CA: PaginaSeo[] = [
     intro: "Un conte amb nom propi és la primera vegada que un infant es veu dins d'una història. L'assenyala, el demana cada nit i el guarda anys. Així funciona el nostre.",
     secciones: [
       { h2: "Què es personalitza", parrafos: ["El nom surt al títol, a la portada i a les 18 o 22 pàgines, amb l'article personal com toca en català: en Pau, la Martina, l'Oriol."], lista: ["Nom i edat: el vocabulari s'adapta de 2 a 8 anys.", "Ciutat o poble: el conte passa on viu.", "Mascota o peluix: l'acompanya en tota l'aventura.", "Afició: dinosaures, futbol, dibuixar, música, l'espai…", "Una por o un valor: la foscor, la gelosia, dir la veritat, compartir."] },
-      { h2: "Sense fotos de l'infant", parrafos: ["No demanem fotos. Trieu entre els nostres dos protagonistes, un nen i una nena dibuixats amb full de personatge perquè siguin iguals a totes les pàgines."] },
+      { h2: "Sense fotos de l'infant", parrafos: ["No demanem fotos. Dissenyes el seu protagonista il·lustrat (pell, cabells, pentinat, ulleres, pigues i color preferit) i el dibuixem amb un full de personatge perquè sigui igual a totes les pàgines."] },
       { h2: "Com es demana", parrafos: ["Omples un formulari d'un minut, veus gratis la portada, la dedicatòria i les primeres pàgines, i tries format: PDF en menys de 2 hores o llibre de tapa dura enviat a casa."] },
     ],
     faq: [["Puc escriure la dedicatòria?", "Sí, o te'n proposem una que pots canviar."]],
@@ -107,9 +107,9 @@ export const SEO_CA: PaginaSeo[] = [
     intro: "Molts llibres personalitzats demanen fotos de l'infant per «posar-li la cara». Nosaltres hem decidit no fer-ho.",
     secciones: [
       { h2: "Per què no demanem fotos", parrafos: ["Una foto de la cara és una dada especialment delicada quan es tracta de menors. Si no la demanem, no hi ha res a guardar ni a protegir."] },
-      { h2: "Com aconseguim que sigui seu", parrafos: ["Amb tota la resta: el nom, la ciutat, la mascota, el que li agrada i allò que el preocupa. I amb dos protagonistes dibuixats amb full de personatge."] },
+      { h2: "Com aconseguim que sigui seu", parrafos: ["Amb tota la resta: el nom, la ciutat, la mascota, el que li agrada i allò que el preocupa. I amb un protagonista que dissenyes tu, dibuixat amb full de personatge perquè sigui idèntic a totes les il·lustracions."] },
     ],
-    faq: [["Puc triar un altre color de cabell?", "Ara hi ha dos protagonistes fixos; n'estem preparant més."]],
+    faq: [["Puc triar el color de cabells o de pell?", "Sí: tries to de pell, color de cabells, pentinat, ulleres i pigues, i el color de la roba. Sense pujar cap foto."]],
     alternativa: "cuento-personalizado-sin-fotos",
   },
   {
@@ -133,5 +133,25 @@ export const SEO_CA: PaginaSeo[] = [
       ["El PDF va inclòs amb el llibre?", "Sí. El reps al correu al moment, i el llibre arriba uns dies després."],
     ],
     alternativa: "libro-personalizado-tapa-dura-ninos",
+  },
+{
+    slug: "regal-nadal-nen-3-anys",
+    titulo: "Regal de Nadal per a un nen o una nena de 3 anys: un conte amb el seu nom",
+    descripcion: "Regal original per a un infant de 3 anys per Nadal, el tió, Reis o l'aniversari: un conte personalitzat en català amb frases curtes, el seu nom, la seva mascota i la seva ciutat.",
+    h1: "Un regal de Nadal per als 3 anys que no és una joguina més",
+    intro: "Als 3 anys comencen a reconèixer el seu nom escrit, demanen la mateixa història deu nits seguides i assenyalen tot el que veuen en una pàgina. Un conte on surten ells aprofita les tres coses, i és dels pocs regals de Nadal que encara són a la tauleta de nit al febrer.",
+    secciones: [
+      { h2: "Com adaptem el text als 3 anys", parrafos: ["Si poses 2, 3 o 4 anys, el conte té 18 pàgines amb frases curtes i una tornada que es repeteix perquè la digui amb vosaltres. Les il·lustracions ocupen la pàgina sencera perquè pugui assenyalar i anomenar el que veu: el seu gat, el fanal del seu carrer, la lluna."] },
+      { h2: "Quina col·lecció triar a aquesta edat", parrafos: ["«Dormir» encaixa amb la rutina de bona nit i amb la por de la foscor, molt habitual a aquesta edat. «Germanet nou», si arriba un nadó. «Valors» i «La meva ciutat» també tenen versió per als més petits, amb menys text per pàgina."] },
+      { h2: "Per Nadal, el tió, Reis o l'aniversari", parrafos: ["El llibre de tapa dura s'imprimeix sota demanda a la UE i arriba a casa amb l'enviament inclòs; a la portada del web tens la data límit d'aquest any per a Nadal i per a Reis. Si vas tard, el PDF arriba en menys de 2 hores, també el 24 de desembre o el 5 de gener: imprimeix la portada, posa-la en un sobre i el llibre arriba després."], lista: ["Si el regalen els avis o els tiets, la dedicatòria amb els seus noms és la primera pàgina.", "El pots enviar directament a casa de l'infant posant la seva adreça en pagar.", "Si té un germà, el segon conte té un 20 % de descompte amb el codi HERMANOS20."] },
+      { h2: "El que veus abans de pagar", parrafos: ["Escrius el seu nom, tries com és el seu protagonista (sense fotos) i veus gratis la portada, la dedicatòria i les primeres pàgines. Si no et convenç, no pagues res."] },
+    ],
+    faq: [
+      ["Aguanta les mans d'un infant de 3 anys?", "La tapa dura laminada i el paper estucat de 170 g aguanten bé; amb el PDF pots tornar a imprimir una pàgina si cal."],
+      ["No és massa llarg per a 3 anys?", "No: la versió de 2 a 4 anys té 18 pàgines amb una o dues frases cadascuna. Es llegeix en uns cinc minuts, just abans de dormir."],
+      ["Quant costa?", "El PDF, 7,90 €. El llibre de tapa dura, 36,90 € amb l'enviament inclòs i el PDF de regal. IVA inclòs."],
+    ],
+    coleccion: "dormir",
+    alternativa: "regalo-original-nino-3-anos",
   },
 ];

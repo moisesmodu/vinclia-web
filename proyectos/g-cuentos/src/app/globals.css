@@ -91,7 +91,7 @@ h1, h2 { text-wrap: balance; }
 
 /* Libro en 3D */
 .personalizador { display: grid; gap: 1.5rem; justify-items: center; }
-.libro3d { position: relative; width: min(78vw, 400px); aspect-ratio: 1; transform: perspective(1400px) rotateY(-14deg) rotateX(3deg); transform-style: preserve-3d; transition: transform .6s ease; }
+.libro3d { position: relative; width: min(66vw, 400px); aspect-ratio: 1; transform: perspective(1400px) rotateY(-14deg) rotateX(3deg); transform-style: preserve-3d; transition: transform .6s ease; }
 .libro3d:hover { transform: perspective(1400px) rotateY(-6deg) rotateX(2deg); }
 .libro3d-tapa { position: absolute; inset: 0; border-radius: 4px 10px 10px 4px; overflow: hidden; box-shadow: 18px 22px 40px rgba(0,0,0,.45), inset 4px 0 6px rgba(0,0,0,.25); background: #2B3A67; z-index: 2; }
 .libro3d-tapa img { width: 100%; height: 100%; object-fit: cover; }
@@ -177,3 +177,14 @@ h1, h2 { text-wrap: balance; }
 .avatar-baile svg { transition: transform .4s ease; }
 .avatar-baile:hover svg { transform: rotate(-4deg) scale(1.04); }
 @media (prefers-color-scheme: dark) { .edad-peques, .edad-mayores { background: #1d2545; } }
+
+/* Páginas de ideas (nov 2026): lectura cómoda y cierre de regalo */
+.prosa-seo { font-size: 1.075rem; }
+.prosa-seo h2 { font-size: clamp(1.45rem, 3vw, 1.85rem); margin: 2.5rem 0 .8rem; }
+.prosa-seo section:first-child h2 { margin-top: 1.25rem; }
+.prosa-seo ul { list-style: none; padding-left: 0; }
+.prosa-seo li { position: relative; padding-left: 1.6rem; }
+.prosa-seo li::before { content: ""; position: absolute; left: .2rem; top: .62em; width: .55rem; height: .55rem; border-radius: 999px; background: #F5C84C; box-shadow: 0 0 0 3px #FEF3D3; }
+.regalo-cierre::after { display: none; }
+.cielo a.underline { color: inherit; }
+@media (prefers-color-scheme: dark) { .prosa-seo li::before { box-shadow: 0 0 0 3px #2c355a; } }

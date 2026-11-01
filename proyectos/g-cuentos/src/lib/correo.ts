@@ -28,7 +28,7 @@ function plantilla(cuerpo: string) {
   return `<!doctype html><html><body style="margin:0;background:#FFF8EC;font-family:Nunito,'Segoe UI',Arial,sans-serif;color:#1B2444">
 <div style="max-width:560px;margin:0 auto;padding:32px 24px">
 <p style="font-size:22px;color:#2B3A67;margin:0 0 24px"><span style="color:#F5C84C">☾</span> <b>Lunilla</b></p>${cuerpo}
-<p style="font-size:12px;color:#5b6382;margin-top:40px">Lunilla · Un cuento donde el protagonista eres tú<br>Hecho en Lleida · Precio claro · Cancela en un clic<br>¿Alguna duda? Responde a este correo.</p>
+<p style="font-size:12px;color:#5b6382;margin-top:40px">Lunilla · Un cuento donde el protagonista eres tú<br>Hecho en Lleida · Precio claro · Sin suscripción<br>¿Alguna duda? Responde a este correo.</p>
 </div></body></html>`;
 }
 

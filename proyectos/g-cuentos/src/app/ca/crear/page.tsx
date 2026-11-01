@@ -1,10 +1,11 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { meta } from "@/lib/meta";
 import { Formulario } from "@/components/Formulario";
 import { Pagina } from "@/components/Marco";
 import { t } from "@/i18n/textos";
 import { PLANTILLAS } from "@/lib/plantillas";
-export const metadata: Metadata = { title: t("ca").form.titulo, robots: { index: false } };
+export const metadata: Metadata = meta({ idioma: "ca", es: "/crear", ca: "/ca/crear", title: t("ca").form.titulo, description: "Crea gratis el seu conte personalitzat i mira la portada, la dedicatòria i 3 pàgines abans de pagar.", noindex: true });
 const titulos = Object.fromEntries(Object.entries(PLANTILLAS).map(([id, p]) => [id, p.titulo])) as Record<keyof typeof PLANTILLAS, { es: string; ca: string }>;
 export default function Page() {
   const x = t("ca").form;

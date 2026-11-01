@@ -10,7 +10,7 @@ export const SEO_ES: PaginaSeo[] = [
     intro: "Un cuento con nombre propio no es solo un libro: es la primera vez que un niño se ve dentro de una historia. Lo señala, lo pide cada noche y lo guarda años. Así funciona el nuestro.",
     secciones: [
       { h2: "Qué se personaliza", parrafos: ["El nombre aparece en el título, en la portada y a lo largo de las 18 o 22 páginas. Pero no nos quedamos ahí: la historia incluye su ciudad o su pueblo, su mascota (o su peluche favorito, si no tiene), aquello que más le gusta y un miedo o un valor que quieras trabajar con él."], lista: ["Nombre y edad: el vocabulario se adapta a niños de 2 a 8 años.", "Ciudad: el cuento ocurre donde vive.", "Mascota o peluche: le acompaña en toda la aventura.", "Afición: dinosaurios, fútbol, dibujar, música, el espacio…", "Un miedo o un valor: la oscuridad, los celos, decir la verdad, compartir."] },
-      { h2: "Sin fotos del niño", parrafos: ["No pedimos fotos. Elegís entre nuestros dos protagonistas, un niño y una niña dibujados con hoja de personaje para que sean iguales en todas las páginas. Es más respetuoso con la privacidad de los menores y el resultado parece un álbum ilustrado de verdad, no un montaje."] },
+      { h2: "Sin fotos del niño", parrafos: ["No pedimos fotos. Diseñas a su protagonista ilustrado (piel, pelo, peinado, gafas, pecas y su color favorito) y lo dibujamos con una hoja de personaje para que sea igual en todas las páginas. Es más respetuoso con la privacidad de los menores y el resultado parece un álbum ilustrado de verdad, no un montaje."] },
       { h2: "Cómo se pide", parrafos: ["Rellenas un formulario de un minuto, ves gratis la portada, la dedicatoria y las primeras páginas con su nombre, y eliges formato: PDF para leer e imprimir, que llega en menos de 2 horas, o libro de tapa dura impreso bajo demanda y enviado a casa."] },
     ],
     faq: [["¿Puedo cambiar la dedicatoria?", "Sí, la escribes tú o te proponemos una que puedes editar."], ["¿En qué idiomas está?", "En castellano y en catalán."]],
@@ -100,16 +100,23 @@ export const SEO_ES: PaginaSeo[] = [
   },
   {
     slug: "regalo-original-nino-3-anos",
-    titulo: "Regalo original para un niño o niña de 3 años: un cuento con su nombre",
-    descripcion: "Ideas de regalo para niños de 3 años que no sean un juguete más: un cuento personalizado con frases cortas, su nombre, su mascota y su ciudad.",
-    h1: "Regalo original para los 3 años",
-    intro: "A los 3 años empiezan a reconocer su nombre escrito y les encanta que les repitan la misma historia. Un cuento en el que salen ellos aprovecha las dos cosas.",
+    titulo: "Regalo de Navidad para un niño o niña de 3 años: un cuento con su nombre",
+    descripcion: "Regalo original para un niño de 3 años en Navidad, Reyes o su cumpleaños: un cuento personalizado con frases cortas, su nombre, su mascota y su ciudad. Vista previa gratis.",
+    h1: "Un regalo de Navidad para los 3 años que no es un juguete más",
+    intro: "A los 3 años empiezan a reconocer su nombre escrito, piden la misma historia diez noches seguidas y señalan todo lo que ven en una página. Un cuento en el que salen ellos aprovecha las tres cosas, y es de los pocos regalos de Navidad que siguen en la mesilla en febrero.",
     secciones: [
-      { h2: "Cómo adaptamos el texto a los 3 años", parrafos: ["Si pones 2 o 3 años, el texto usa frases más cortas y repeticiones que invitan a completar la frase («la silla era la silla, el armario era el armario»). Las ilustraciones ocupan una página entera para que pueda señalar y nombrar lo que ve."] },
-      { h2: "Qué colección elegir a esta edad", parrafos: ["«Dormir» encaja con la rutina de buenas noches; «Hermanito nuevo», si viene un bebé en camino. «Valores» y «Mi ciudad» funcionan mejor a partir de los 4."] },
+      { h2: "Cómo adaptamos el texto a los 3 años", parrafos: ["Si pones 2, 3 o 4 años, el cuento tiene 18 páginas con frases cortas y un estribillo que se repite para que lo diga con vosotros («la silla era la silla, el armario era el armario»). Las ilustraciones ocupan la página entera para que pueda señalar y nombrar lo que ve: su gato, la farola de su calle, la luna."] },
+      { h2: "Qué colección elegir a esta edad", parrafos: ["«Dormir» encaja con la rutina de buenas noches y con el miedo a la oscuridad, muy típico a esta edad. «Hermanito nuevo», si viene un bebé en camino. «Valores» y «Mi ciudad» también tienen versión para los más pequeños, con menos texto por página."] },
+      { h2: "Para Navidad, Reyes o su cumpleaños", parrafos: ["El libro de tapa dura se imprime bajo demanda en la UE y llega a casa con el envío incluido; en la portada de la web tienes la fecha límite de este año para Navidad y para Reyes. Si vas tarde, el PDF llega en menos de 2 horas, también el 24 de diciembre o el 5 de enero: imprime la portada, métela en un sobre y el libro llega después."], lista: ["Si lo regalan los abuelos o los tíos, la dedicatoria con sus nombres es la primera página.", "Puedes enviarlo directamente a casa del niño poniendo su dirección al pagar.", "Si tiene un hermano, el segundo cuento tiene un 20 % de descuento con el código HERMANOS20."] },
+      { h2: "Lo que ves antes de pagar", parrafos: ["Escribes su nombre, eliges cómo es su protagonista (sin fotos) y ves gratis la portada, la dedicatoria y las primeras páginas. Si no te convence, no pagas nada."] },
     ],
-    faq: [["¿Aguanta las manos de un niño de 3 años?", "La tapa dura y el papel estucado aguantan bien; el PDF te permite reimprimirlo si hace falta."]],
+    faq: [
+      ["¿Aguanta las manos de un niño de 3 años?", "La tapa dura laminada y el papel estucado de 170 g aguantan bien; con el PDF puedes volver a imprimir una página si hace falta."],
+      ["¿No es demasiado largo para 3 años?", "No: la versión de 2 a 4 años tiene 18 páginas con una o dos frases cada una. Se lee en unos cinco minutos, lo justo antes de dormir."],
+      ["¿Cuánto cuesta?", "El PDF, 7,90 €. El libro de tapa dura, 36,90 € con el envío incluido y el PDF de regalo. IVA incluido."],
+    ],
     coleccion: "dormir",
+    alternativa: "regal-nadal-nen-3-anys",
   },
   {
     slug: "regalo-original-ninos-5-anos",
@@ -132,10 +139,10 @@ export const SEO_ES: PaginaSeo[] = [
     intro: "Muchos libros personalizados piden varias fotos del niño para «ponerle su cara». Nosotros hemos decidido no hacerlo.",
     secciones: [
       { h2: "Por qué no pedimos fotos", parrafos: ["Una foto de la cara es un dato personal especialmente delicado cuando se trata de menores. Al no pedirla, no hay nada que guardar, borrar ni proteger. Además, los rostros generados a partir de fotos suelen dar resultados extraños, y eso es lo que más se critica de este tipo de libros."] },
-      { h2: "Cómo conseguimos que se sienta suyo", parrafos: ["Con todo lo demás: su nombre, su ciudad, su mascota, lo que le gusta y algo que le preocupa. Y con dos protagonistas, un niño y una niña, dibujados con hoja de personaje para que sean idénticos en las 12 ilustraciones."] },
+      { h2: "Cómo conseguimos que se sienta suyo", parrafos: ["Con todo lo demás: su nombre, su ciudad, su mascota, lo que le gusta y algo que le preocupa. Y con un protagonista que diseñas tú (piel, pelo, peinado, gafas, pecas, color favorito), dibujado con hoja de personaje para que sea idéntico en todas las ilustraciones."] },
       { h2: "Qué datos guardamos", parrafos: ["Solo los que escribes en el formulario para hacer el cuento, y tu correo para enviártelo. Lo explicamos en la política de privacidad."] },
     ],
-    faq: [["¿Puedo pedir otro color de pelo o de piel?", "Ahora mismo hay dos protagonistas fijos. Estamos trabajando en más."]],
+    faq: [["¿Puedo elegir el color de pelo o de piel?", "Sí: eliges tono de piel, color de pelo, peinado, gafas y pecas, y el color de su ropa. Sin subir ninguna foto."]],
   },
   {
     slug: "cuento-valores-ninos-compartir",

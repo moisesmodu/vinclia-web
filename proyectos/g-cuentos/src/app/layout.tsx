@@ -30,7 +30,11 @@ export const viewport: Viewport = { themeColor: "#2B3A67", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${nunito.variable} ${baloo.variable}`}>
+    <html lang="es" className={`${nunito.variable} ${baloo.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Un único layout raíz sirve /ca y el resto: el contenido ya va en <div lang>; esto corrige <html lang> antes de pintar. */}
+        <script dangerouslySetInnerHTML={{ __html: `if(/^\\/ca(\\/|$)/.test(location.pathname))document.documentElement.lang="ca"` }} />
+      </head>
       <body className="min-h-dvh antialiased">
         {children}
         {/* Vercel Web Analytics (sin cookies); activado en el proyecto «lunilla» de Vercel. */}

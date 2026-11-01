@@ -5,7 +5,7 @@ import { MUESTRAS } from "@/lib/muestras";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const b = URL_BASE();
-  const fijas = ["", "/crear", "/cuentos", "/afiliados", "/ca", "/ca/crear", "/ca/contes", "/ca/afiliades"];
+  const fijas = ["", "/cuentos", "/afiliados", "/ca", "/ca/contes", "/ca/afiliades"]; // /crear es noindex: fuera del sitemap
   return [
     ...fijas.map((r) => ({ url: `${b}${r}`, changeFrequency: "weekly" as const, priority: r === "" || r === "/ca" ? 1 : 0.7 })),
     ...MUESTRAS.flatMap((m) => [`${b}/muestras/${m.slug}`, `${b}/ca/muestras/${m.slug}`].map((url) => ({ url, priority: 0.6 }))),

@@ -5,7 +5,7 @@ export const T = {
     marca: "Lunilla",
     lema: "Cuentos personalizados con nombre, ilustrados con cariño",
     promesa: "Un cuento donde el protagonista eres tú.",
-    sello: "Hecho en Lleida · Precio claro · Cancela en un clic",
+    sello: "Hecho en Lleida · Precio claro · Ves antes de pagar",
     precio: {
       titulo: "Lo que es gratis y lo que se paga",
       gratis: "Gratis", gratisLista: ["Crear el cuento con su nombre", "Vista previa: portada, dedicatoria y 3 páginas"],
@@ -42,7 +42,7 @@ export const T = {
     fechas: (navidad: string, reyes: string) => `Libro impreso: pide antes del ${navidad} para Navidad y antes del ${reyes} para Reyes. El PDF llega siempre a tiempo.`,
     faqTitulo: "Preguntas frecuentes",
     faq: [
-      ["¿Necesitáis fotos de mi hijo?", "No. Elegís entre nuestros dos protagonistas, un niño y una niña. No guardamos imágenes de menores."],
+      ["¿Necesitáis fotos de mi hijo?", "No. Diseñas a su protagonista ilustrado: piel, pelo, peinado, gafas, pecas y su color favorito. No pedimos ni guardamos imágenes de menores."],
       ["¿Cuánto tarda?", "El PDF, menos de 2 horas. El libro de tapa dura se imprime bajo demanda y tarda unos 5 a 7 días laborables a península."],
       ["¿Lo puedo ver antes de pagar?", "Sí: la vista previa gratuita muestra la portada, la dedicatoria y las primeras páginas con su nombre."],
       ["¿Está hecho con inteligencia artificial?", "Sí, con ayuda de IA y siempre a partir de plantillas escritas y revisadas por nosotros. Lo indicamos en el propio libro."],
@@ -82,7 +82,7 @@ export const T = {
     marca: "Lunilla",
     lema: "Contes personalitzats amb nom, il·lustrats amb estima",
     promesa: "Un conte on el protagonista ets tu.",
-    sello: "Fet a Lleida · Preu clar · Cancel·la amb un clic",
+    sello: "Fet a Lleida · Preu clar · Ho veus abans de pagar",
     precio: {
       titulo: "El que és gratis i el que es paga",
       gratis: "Gratis", gratisLista: ["Crear el conte amb el seu nom", "Vista prèvia: portada, dedicatòria i 3 pàgines"],
@@ -119,7 +119,7 @@ export const T = {
     fechas: (navidad: string, reyes: string) => `Llibre imprès: demana'l abans del ${navidad} per a Nadal i abans del ${reyes} per a Reis. El PDF arriba sempre a temps.`,
     faqTitulo: "Preguntes freqüents",
     faq: [
-      ["Necessiteu fotos del meu fill?", "No. Trieu entre els nostres dos protagonistes, un nen i una nena. No guardem imatges de menors."],
+      ["Necessiteu fotos del meu fill?", "No. Dissenyes el seu protagonista il·lustrat: pell, cabells, pentinat, ulleres, pigues i el seu color preferit. No demanem ni guardem imatges de menors."],
       ["Quant tarda?", "El PDF, menys de 2 hores. El llibre de tapa dura s'imprimeix sota demanda i tarda uns 5 a 7 dies laborables a la península."],
       ["El puc veure abans de pagar?", "Sí: la vista prèvia gratuïta mostra la portada, la dedicatòria i les primeres pàgines amb el seu nom."],
       ["Està fet amb intel·ligència artificial?", "Sí, amb ajuda d'IA i sempre a partir de plantilles escrites i revisades per nosaltres. Ho indiquem al mateix llibre."],
