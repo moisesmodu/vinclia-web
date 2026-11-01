@@ -269,3 +269,13 @@ del mismo enlace (no hay que cambiar la variable). Regenerar los archivos: `node
 
 **La sesión de la nube intentó ejecutar los dos scripts en modo real el 31/10 y el sistema de permisos lo bloqueó
 (transacción real): hace falta el visto bueno de Moisés o que lo ejecute la sesión del Mac.**
+
+### Auditoría SEO y AdSense (01-11-2026)
+`netoclaro` e `impuestoclaro` redesplegados desde `proyectos/p-webs-adsense/fabrica` con los cambios de `AUDITORIA.md`
+(títulos «2026 y 2027», página de contacto, textos legales con la analítica real, fechas de revisión, enlaces entre
+sitios y cabecera móvil). `vercel.json` redirige ahora `netoclaro.vercel.app` e `impuestoclaro.vercel.app` al dominio
+propio con 308 (fuente en expresión regular `/(.*)`: con `trailingSlash` el patrón `/:path*` no casaba las rutas
+acabadas en `/`). Comprobado en vivo: `ads.txt`, `google-adsense-account`, canónica, sitemap (710 y 290 URL),
+`/contacto/` 200 y redirecciones. `chequeclaro` y `hogarclaro` reciben la página de contacto en su próximo despliegue.
+
+Ejecutado el 2026-11-01

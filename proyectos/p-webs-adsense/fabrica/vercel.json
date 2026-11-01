@@ -6,25 +6,25 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "netoclaro.vercel.app"
         }
       ],
-      "destination": "https://netoclaro.app/:path*",
+      "destination": "https://netoclaro.app/$1",
       "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "impuestoclaro.vercel.app"
         }
       ],
-      "destination": "https://impuestoclaro.es/:path*",
+      "destination": "https://impuestoclaro.es/$1",
       "permanent": true
     }
   ],
