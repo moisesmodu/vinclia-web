@@ -39,15 +39,9 @@ conoces. Trabaja solo con la API de la tienda y el conector de Higgsfield.
    - La respuesta debe traer estado "entregado" o "enviado_imprenta" cuando ya están todas. Si no, anota el error
      en INCIDENCIAS.md.
 4. No envíes correos ni mensajes: la tienda los manda sola.
-5. Si no había pedidos y faltan combinaciones en la biblioteca de vistas previas (ver src/lib/ilustraciones.ts:
-   hay 16 combinaciones colección × edad × protagonista y hoy solo existen dormir-peques-niño y, a medias,
-   ciudad-mayores-niña), genera UNA combinación por ejecución nocturna (entre las 2:00 y las 6:00) con datos de
-   ejemplo inventados y solo la portada y las páginas 1 a 3 (lo que enseña la vista previa: 8 créditos). Guárdala en
-   public/biblioteca/<coleccion>-<peques|mayores>-<nino|nina>/00..03.webp (portada 1200×1200, páginas 1200×800,
-   calidad 78), haz commit en una rama y abre un PR hacia la rama base. Presupuesto: 8 créditos por combinación,
-   120 en total. Antes, completa las 10 páginas que faltan de la muestra de Martina (20 créditos; ver
-   content/muestras/la-martina-i-els-secrets-de-lleida.json → "ilustradas", y scripts/generar-muestras.ts: ficheros
-   datos-locales/originales/martina/nNN.png).
+5. La biblioteca de vistas previas está completa (16 combinaciones, 01/11). Solo si se añade una colección o una
+   plantilla nueva, genera su portada y páginas 1–3 en public/biblioteca/<coleccion>-<peques|mayores>-<nino|nina>/
+   (portada 1200×1200, páginas 1200×800, webp calidad 78) en una ejecución nocturna, commit en rama y PR.
 ```
 
 ## B · Operación diaria

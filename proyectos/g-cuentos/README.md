@@ -121,8 +121,8 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
    imágenes. Por eso se promete el PDF «en menos de 2 horas», no «en minutos». Si Higgsfield publica una API
    estable, se añade como proveedor en `src/lib/ilustraciones.ts` y la entrega pasa a minutos.
 6. **Vista previa sin gastar créditos**: usa la biblioteca de ilustraciones de la colección y el protagonista
-   (hoy: Dormir 2–4 niño y Mi ciudad 5–8 niña, de las muestras; las otras 14 combinaciones las genera la tarea
-   programada, 8 créditos cada una) o el retrato del protagonista, con aviso «ilustración de muestra».
+   (las 16 combinaciones colección × edad × protagonista tienen portada y páginas 1–3: dos de las muestras y 14 en
+   `public/biblioteca/`, generadas el 01/11) o el retrato del protagonista, con aviso «ilustración de muestra».
 7. **Listas cerradas** de compañeros, aficiones y temas: garantizan que la plantilla siempre es correcta, también
    sin IA. 17 temas (miedos y valores) repartidos en las 4 colecciones.
 8. **Lugares reales** solo de 8 ciudades con datos comprobables (Lleida, Barcelona, Girona, Tarragona, Madrid,
@@ -138,7 +138,7 @@ GELATO_API_KEY=… npm run cotizar     # precio real de impresión + envío y ma
 
 | Concepto | Coste |
 |---|---|
-| Esta sesión: Higgsfield | **78 créditos de 80**: 2 hojas de protagonistas + 2 × 13 ilustraciones (56), hoja de Lunilla con bufanda (2), portada y última página de Martina con Lunilla (4), repeticiones (4) y 6 páginas nuevas de Leo para el libro de 18 páginas (12). Nano Banana Pro 2k |
+| Esta sesión: Higgsfield | **198 créditos** (tope ampliado por Moisés el 01/11 para la biblioteca: +120 = 57 vistas previas de las 14 combinaciones y la página 3 de Martina, más 3 repeticiones). Antes, 78: 2 hojas de protagonistas + 2 × 13 ilustraciones (56), hoja de Lunilla con bufanda (2), portada y última página de Martina con Lunilla (4), repeticiones (4) y 6 páginas nuevas de Leo para el libro de 18 páginas (12). Nano Banana Pro 2k |
 | Por cuento vendido | 38 a 50 créditos de Higgsfield (≈1,90 €), texto Sonnet < 0,05 €, Stripe 1,5 % + 0,25 € |
 | Tapa dura | impresión + envío Gelato (estimado 23,60 €, por confirmar) |
 | Fijos | Vercel Pro 20 $/mes (compartido por la cartera), Neon y Resend gratis, dominio ≈10 €/año |

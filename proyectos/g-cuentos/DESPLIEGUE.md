@@ -195,3 +195,9 @@ producción. La columna nueva `bloqueoHasta` (cerrojo por pedido) la crea `prism
 Publicado el commit 8157185 en https://lunilla.cat: las páginas SEO nuevas responden y las interiores llevan canónica con el dominio (la portada no tiene etiqueta canónica). La columna `bloqueoHasta` ya está en la base de datos. **Aviso:** desde el 31/10 00:50Z la `STRIPE_SECRET_KEY` de producción es una clave real puesta a mano, pero `STRIPE_PRICE_*` y `STRIPE_WEBHOOK_SECRET` siguen siendo los del entorno de prueba: el cobro real no funcionará bien hasta crear precios y webhook en modo real o volver a la clave de prueba (decisión de Moisés). Pendiente también: pasos de Gelato con `GELATO_API_KEY` (ya está en Vercel) y Search Console.
 
 Ejecutado el 2026-10-31
+
+### Pendiente de ejecutar: despliegue de ilustraciones de vista previa (01-11-2026)
+Pendiente de ejecutar: despliegue de ilustraciones de vista previa. 56 imágenes WebP (4,7 MB) en
+`public/biblioteca/<plantilla>-<nino|nina>/00..03.webp` para las 14 combinaciones colección × edad × protagonista que no
+tenían muestra, más la página 3 de la muestra de Martina. Sin cambios de código, esquema ni variables: `vercel --prod`.
+Comprobación: crear una vista previa de «Hermanito, 6 años, niña» y ver portada y 3 páginas ilustradas (no el avatar).
