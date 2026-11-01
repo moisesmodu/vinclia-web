@@ -10,8 +10,8 @@ export function meta(idioma: Idioma, cami: string, titol: string, descripcio: st
     title: titol,
     description: descripcio,
     alternates: { canonical: url, languages: { ca: `${base}/ca${cami}`, es: `${base}/es${cami}`, 'x-default': `${base}/ca${cami}` } },
-    openGraph: { title: `${titol} · ${marca.nombre}`, description: descripcio, url, siteName: marca.nombre, locale: idioma === 'ca' ? 'ca_ES' : 'es_ES', type: 'website', images: [{ url: `${base}/icons/icon-512.png`, width: 512, height: 512, alt: marca.nombre }] },
-    twitter: { card: 'summary', title: `${titol} · ${marca.nombre}`, description: descripcio },
+    openGraph: { title: `${titol} · ${marca.nombre}`, description: descripcio, url, siteName: marca.nombre, locale: idioma === 'ca' ? 'ca_ES' : 'es_ES', type: 'website', images: [{ url: `${base}/og/aprova-${idioma}.png`, width: 1200, height: 630, alt: `${marca.nombre} · ${marca.lema[idioma]}` }] },
+    twitter: { card: 'summary_large_image', title: `${titol} · ${marca.nombre}`, description: descripcio, images: [`${base}/og/aprova-${idioma}.png`] },
     robots: opcions.noIndex ? { index: false, follow: true } : undefined,
   };
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { meta } from '@/lib/meta';
 import { esIdioma, t } from '@/lib/i18n';
-import { marca, examens, nivellsActius, pais, preu, BANC, convocatories } from '@/lib/datos';
+import { marca, examens, nivellsActius, pais, preu, BANC, convocatories, urlBase } from '@/lib/datos';
 import type { Idioma, Nivell } from '@/lib/tipos';
 import DemoItem from '@/components/DemoItem';
 import BotoSeguir from '@/components/BotoSeguir';
@@ -33,39 +33,51 @@ export default async function Inici({ params }: { params: Promise<{ lang: string
     const c = convocatories.filter((x) => (x.nivell === niv || x.nivells?.includes(niv)) && x.inscripcio && dies(x.inscripcio.fi) >= 0).sort((a, b) => a.inscripcio!.inici.localeCompare(b.inscripcio!.inici))[0];
     return c ? { niv, c } : null;
   }).filter(Boolean) as { niv: Nivell; c: (typeof convocatories)[number] }[];
+  const agrupades = properes.reduce<{ nivs: Nivell[]; c: (typeof convocatories)[number] }[]>((acc, { niv, c }) => {
+    const g = acc.find((x) => x.c.id === c.id); if (g) g.nivs.push(niv); else acc.push({ nivs: [niv], c }); return acc;
+  }, []);
+
+  // Dades estructurades: qui som i què oferim (preus reals de config/paises/es.json; sense valoracions inventades)
+  const base = urlBase();
+  const jsonld = { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'Organization', '@id': `${base}/#org`, name: marca.nombre, url: base, logo: `${base}/icons/icon-512.png`, slogan: marca.lema[idioma], address: { '@type': 'PostalAddress', addressLocality: 'Lleida', addressCountry: 'ES' } },
+    { '@type': 'WebSite', '@id': `${base}/#web`, url: `${base}/${idioma}`, name: marca.nombre, inLanguage: idioma === 'ca' ? 'ca' : 'es', publisher: { '@id': `${base}/#org` } },
+    { '@type': 'WebApplication', name: marca.nombre, url: `${base}/${idioma}`, applicationCategory: 'EducationalApplication', operatingSystem: 'Web', inLanguage: ['ca', 'es'], description: n.heroText, publisher: { '@id': `${base}/#org` },
+      offers: [{ '@type': 'Offer', name: idioma === 'ca' ? 'Diagnòstic' : 'Diagnóstico', price: '0', priceCurrency: 'EUR' }, ...pais.planes.map((p) => ({ '@type': 'Offer', name: d.preus.plans[p.id] ?? p.id, price: (p.importe / 100).toFixed(2), priceCurrency: 'EUR' }))] },
+  ] };
 
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld).replace(/</g, '\\u003c') }} />
       {/* Portada: llibreta quadriculada de boli; en Volat és el punt final de la frase */}
       <section className="quadricula-boli text-white">
-        <div className="contenedor-portada pt-12 pb-16 sm:pt-20 sm:pb-24">
-          <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_200px] lg:items-end lg:gap-10">
-          <h1 className="display max-w-[14ch] text-[42px] sm:text-[60px] lg:max-w-[17ch] lg:text-[58px]">
-            {n.heroTitol}<span className="ml-[0.1em] inline-block align-baseline"><Volat mida={0.6 * 42} to="#FFFFFF" cara="#2140D6" reflex="#FFFFFF" aterra className="inline-block h-[0.6em] w-[0.6em] translate-y-[0.06em]" titol="Volat" /></span>
-          </h1>
-          <div className="hidden lg:block"><Volat mida={220} postura="vola" to="#FFFFFF" cara="#2140D6" reflex="#FFFFFF" aterra /></div>
+        <div className="contenedor-portada flow-root pt-12 sm:pt-20 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,460px)] lg:items-center lg:gap-12 lg:pb-20">
+          <div>
+            <h1 className="display max-w-[14ch] text-[42px] sm:text-[60px] lg:text-[56px]">
+              {n.heroTitol}<span className="ml-[0.1em] inline-block align-baseline"><Volat mida={0.6 * 42} to="#FFFFFF" cara="#2140D6" reflex="#FFFFFF" aterra className="inline-block h-[0.6em] w-[0.6em] translate-y-[0.06em]" titol="Volat" /></span>
+            </h1>
+            <p className="mt-7 max-w-[44ch] text-[19px] leading-relaxed text-white/85 sm:text-[21px] lg:text-[19px]">{n.heroText}</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link href={l('/comencar')} className="boton-invers text-[18px]">{h.cta}</Link>
+              <BotoSeguir idioma={idioma} text={h.seguir} className="boton-sec border-white text-[18px] text-white hover:border-marcador hover:text-marcador" />
+            </div>
+            <p className="mt-3 text-[14px] text-white/70">{n.heroSub}</p>
           </div>
-          <p className="mt-7 max-w-[44ch] text-[19px] leading-relaxed text-white/85 sm:text-[21px]">{n.heroText}</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link href={l('/comencar')} className="boton-invers text-[18px]">{h.cta}</Link>
-            <BotoSeguir idioma={idioma} text={h.seguir} className="boton-sec border-white text-[18px] text-white hover:border-marcador hover:text-marcador" />
-          </div>
-          <p className="mt-3 text-[14px] text-white/70">{n.heroSub}</p>
+          {/* El full de respostes real: al mòbil trepitja la vora del blau; a l'escriptori, al costat del titular */}
+          {demo && regla ? <div className="relative z-10 mt-10 -mb-10 text-tinta sm:-mb-14 lg:my-0"><DemoItem idioma={idioma} item={demo} regla={regla} /></div> : <div className="pb-16" />}
         </div>
       </section>
-
-      {/* El full de respostes real, que trepitja la vora del blau */}
-      {demo && regla ? <section className="contenedor-portada -mt-8 sm:-mt-12"><div className="lg:max-w-[640px]"><DemoItem idioma={idioma} item={demo} regla={regla} /></div></section> : null}
+      {demo && regla ? <div className="h-10 sm:h-14 lg:hidden" aria-hidden="true" /> : null}
 
       <div className="contenedor-portada">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16">
           {/* Properes inscripcions: la data real, el compte enrere i la taxa */}
-          {properes.length ? <section className="seccio">
+          {agrupades.length ? <section className="seccio">
             <h2>{n.properes}</h2>
             <ul className="mt-5 divide-y divide-linia border-y border-linia">
-              {properes.map(({ niv, c }) => { const ini = dies(c.inscripcio!.inici); const oberta = ini <= 0; return (
-                <li key={c.id} className="grid grid-cols-[64px_1fr] items-start gap-4 py-4">
-                  <span className="num text-[40px] leading-none">{niv}</span>
+              {agrupades.map(({ nivs, c }) => { const ini = dies(c.inscripcio!.inici); const oberta = ini <= 0; return (
+                <li key={c.id} className="grid grid-cols-[72px_1fr] items-start gap-4 py-4">
+                  <span className="flex flex-col gap-1">{nivs.map((nv) => <span key={nv} className={`num leading-none ${nivs.length > 1 ? 'text-[30px]' : 'text-[40px]'}`}>{nv}</span>)}</span>
                   <div className="min-w-0 text-[15px] leading-relaxed">
                     <p className="text-[17px] font-bold">{c.nom[idioma].replace(/ ·.*$/, '')}: <span className={oberta ? 'marcat' : ''}>{oberta ? n.obertaFins(data(c.inscripcio!.fi)) : n.obreEn(ini)}</span></p>
                     <p className="text-secundari">{n.provaEl(data(c.prova))}{c.taxa ? `, ${n.taxaDe(preu(Math.round(c.taxa * 100)))}` : ''}{c.inscripcio!.estimada || !c.verificat ? ` (${d.convocatories.prevista})` : ''}.</p>
@@ -121,8 +133,11 @@ export default async function Inici({ params }: { params: Promise<{ lang: string
             <h2>{n.unPreu}</h2>
             <p className="mt-4 text-[16px] leading-relaxed">{d.preus.gratisTitol}: {d.preus.gratis.slice(0, 3).join(', ').toLowerCase()}.</p>
             <p className="mt-2 text-[16px] leading-relaxed">Premium: <span className="num text-[22px]">{preu(999)}</span> {n.perMes}, <span className="num text-[22px]">{preu(anual.importe)}</span> {n.perAny} {idioma === 'ca' ? 'o passi de convocatòria' : 'o pase de convocatoria'} <span className="num text-[22px]">{preu(2499)}</span>.</p>
-            <p className="mt-2 text-[14px] text-terciari">{d.preus.avis}</p>
-            <Link href={l('/preus')} className="boton-text mt-3">{d.nav.preus}</Link>
+            <p className="mt-2 text-[14px] text-terciari">{d.preus.ivaInclos}. {d.preus.avis}</p>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link href={l('/comencar')} className="boton-primari">{h.cta}</Link>
+              <Link href={l('/preus')} className="boton-text">{idioma === 'ca' ? 'Veure els preus' : 'Ver los precios'}</Link>
+            </div>
           </div>
         </section>
 
@@ -131,6 +146,20 @@ export default async function Inici({ params }: { params: Promise<{ lang: string
           <div className="mt-5 flex flex-wrap gap-2">{nivellsActius().map((nv) => <Link key={nv} href={l(`/guia/examen-${nv.toLowerCase()}-catala-2027${nv === 'C1' ? '-model' : nv === 'B2' ? '-prova' : ''}`)} className="xip no-underline hover:border-boli hover:text-boli">{`Examen ${nv} 2027`}</Link>)}<Link href={l('/convocatories')} className="xip-boli no-underline">{d.nav.convocatories}</Link></div>
         </section>
       </div>
+
+      {/* Tancament: una sola acció, la mateixa que a dalt */}
+      <section className="quadricula-boli mt-4 text-white">
+        <div className="contenedor-portada flex flex-col gap-6 py-14 sm:flex-row sm:items-center sm:justify-between sm:py-16">
+          <div className="flex items-center gap-5">
+            <Volat mida={72} postura="content" to="#FFFFFF" cara="#2140D6" reflex="#FFFFFF" className="h-[56px] w-[56px] shrink-0 sm:h-[72px] sm:w-[72px]" titol="Volat" />
+            <div>
+              <p className="ample text-[24px] leading-tight sm:text-[30px]">{idioma === 'ca' ? 'Quant et falta per a l\'apte?' : '¿Cuánto te falta para el apto?'}</p>
+              <p className="mt-1 text-[15px] text-white/80">{n.heroSub}</p>
+            </div>
+          </div>
+          <Link href={l('/comencar')} className="boton-invers shrink-0 text-[18px]">{h.cta}</Link>
+        </div>
+      </section>
     </div>
   );
 }

@@ -228,3 +228,30 @@ de validez con candidatos) sigue pendiente y es lo único que separa la app del 
 Verificación: `tsc` y `next build` limpios, `npm test` 17/17, prueba de punta a punta en Pixel 7 en local y en producción (registro y Checkout
 incluidos) sin errores de JavaScript. Variables nuevas en Vercel: `VALIDESA_CLAU`, `VALIDESA_CODIS`; `AUTH_SECRET` ya existía. Las sesiones
 abiertas antes del despliegue caducan (formato de token nuevo).
+
+## 9. Segunda pasada: conversión, marca, SEO y front (01/11/2026)
+
+Objetivo de la cartera: 3.000 €/mes en 6 meses. Aprova aporta poco en ese plazo (meta interna 25 suscriptores, ≈ 250 €/mes;
+la demanda llega en la inscripción de la DPL del 20–28/01/2027 y en abril–mayo), así que esta pasada no añade producto:
+quita fricción a lo que ya hay para que el tráfico de enero convierta. Medido sobre producción y en local con Chromium (Pixel 7
+y 1366 px) y axe-core.
+
+| Área | Hallazgo | Gravedad | Estado |
+|---|---|---|---|
+| Analítica | `@vercel/analytics` montado en el layout, pero el script devolvía **404** en producción (`/9603…/script.js`): Web Analytics se activó en el proyecto el 01/11 a las 00:58 y el último despliegue era del 31/10. Sin datos y con un error de consola en cada página | Alta | **Cerrado** con el redespliegue |
+| SEO / compartir | La imagen de Open Graph era el icono de 512×512 y la tarjeta de Twitter `summary`: al compartir en WhatsApp/Telegram/X salía un cuadrado azul sin texto | Media | **Cerrado**: `public/og/aprova-{ca,es}.png` (1200×630, titular de la marca, Archivo, cuadrícula boli) y `summary_large_image` en todas las páginas |
+| SEO | Sin datos estructurados en la portada | Media | **Cerrado**: `Organization` (Lleida), `WebSite` y `WebApplication` con las ofertas reales (0 €, 9,99 €, 59,99 €, 24,99 €). Sin valoraciones ni reseñas: no hay |
+| Conversión | En escritorio la mitad derecha del hero estaba vacía (personaje de 200 px) y la pregunta de demo quedaba debajo del pliegue | Media | **Cerrado**: hero a dos columnas con la pregunta real a la derecha; en móvil sigue pisando el borde azul |
+| Conversión | El bloque de precio de la portada acababa en un enlace «Preus» subrayado; no había ninguna acción después del primer pliegue ni al final de la página | Media | **Cerrado**: botón «Fes el diagnòstic gratuït» en el bloque de precio y banda final con la misma acción (una sola acción en toda la página) |
+| Confianza | El precio de la portada no decía «IVA inclòs» (la pantalla de precio de MARCAS.md §3 lo exige) | Baja | **Cerrado** |
+| Front | «Properes inscripcions» repetía la misma convocatoria CIFALC para B2 y C1 (y con la misma `key` de React) | Baja | **Cerrado**: una línea por convocatoria con los niveles apilados |
+| Accesibilidad | axe-core en portada, precios, guía C1, començar y convocatorias: **0 infracciones**; sin desbordamiento horizontal a 412 px | — | Bien |
+| Marca | La identidad de Aprova (boli `#2140D6`, Archivo, en Volat) no es la ficha de MARCAS.md (familia Nuevo en España: terracota, Outfit/Noto Sans, acento ocre). Es una decisión de Moisés del 28/10 (`MARCA.md`): se mantiene; el sello común y el dominio aprova.cat sí coinciden | — | **Pendiente**: actualizar la ficha M de `MARCAS.md` en la rama base para que diga lo que hay |
+| Confianza | Pie con `hola@numimates.com` (otra marca) como único contacto | Baja | Pendiente: buzón `hola@aprova.cat` cuando se compre el dominio |
+| SEO | Dominio `*.vercel.app`: Search Console no puede verificarse por DNS y la autoridad se pierde al migrar | Media | Pendiente (Moisés): comprar `aprova.cat` antes de enero y redirigir con 301 |
+| Confianza | Cero prueba social. No se inventa: se publicará el resultado de la prueba de validez (fase 2) en `/validesa` | Alta | Pendiente: prueba de validez con 20 candidatos |
+
+**Qué mover para los ingresos (orden):** 1) dominio `aprova.cat` y Search Console antes del 15/12 (las guías tardan 4–8 semanas
+en posicionar y la inscripción DPL es el 20/01); 2) prueba de validez y su página, que es la única prueba social honesta; 3) mirar
+en Web Analytics el embudo portada → `/comencar` → diagnóstico acabado → `/preus` la primera semana de enero; 4) Google Ads en
+castellano solo en la ventana de inscripción si la conversión real ≥ 1,5 % (VIABILIDAD.md).

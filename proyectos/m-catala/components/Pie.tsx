@@ -9,6 +9,7 @@ import Logo from './Logo';
 export default function Pie({ idioma, email = 'hola@numimates.com' }: { idioma: Idioma; email?: string }) {
   const d = t(idioma);
   const ruta = usePathname() || '';
+  const inici = /^\/(ca|es)\/?$/.test(ruta); // la portada acaba amb una banda blava: el peu va enganxat
   const app = /\/(avui|diagnostic|practica\/|simulacre\/|escriure\/|oral|pla|mapa|compte)/.test(ruta);
   const l = (s: string) => `/${idioma}${s}`;
   const slug = (n: string) => `/guia/examen-${n.toLowerCase()}-catala-2027${n === 'C1' ? '-model' : n === 'B2' ? '-prova' : ''}`;
@@ -23,7 +24,7 @@ export default function Pie({ idioma, email = 'hola@numimates.com' }: { idioma: 
     </footer>
   );
   return (
-    <footer className="linia mt-20 pb-20 sm:pb-0">
+    <footer className={`linia pb-20 sm:pb-0 ${inici ? 'mt-0' : 'mt-20'}`}>
       <div className="contenedor grid gap-8 py-10 text-[15px] sm:grid-cols-[1.4fr_1fr_1fr]">
         <div className="max-w-xs">
           <Logo alto={26} />
