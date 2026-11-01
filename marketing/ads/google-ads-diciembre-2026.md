@@ -81,6 +81,8 @@ en castellano pasa el corte: el público árabe busca en árabe y el CPC es más
 
 ## 4. Medición de conversiones (obligatoria antes de encender)
 
+> **Hecho el 1/11** tras la aprobación de Moisés: `gclid` y `utm_*` viajan hasta `metadata` de la sesión de Checkout (y del PaymentIntent en CCSE, de la suscripción en Plaça), guardados 30 días en el navegador sin cookies; script `scripts/conversiones-google-ads.mjs` en cada proyecto para el CSV de importación. Commits `54e2985` (CCSE) y `137f75c` (Plaça); se activa con el siguiente redespliegue. Archivos de importación de las campañas en `ads/importar/`.
+
 Las dos webs ya miden el embudo con eventos de Vercel Web Analytics: CCSE `minitest_terminado`, `checkout_iniciado`,
 `pago_completado`; Plaça `test_inicio`, `test_fin`, `oferta_clic`, `plan_clic`, `registro_ok`, `checkout_ir`. Sirven
 para el diagnóstico del embudo, pero **Google Ads no los ve**. Para que la campaña optimice y para calcular el CPA real

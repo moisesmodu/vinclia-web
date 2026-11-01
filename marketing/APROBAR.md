@@ -130,7 +130,7 @@
 |---|---|
 | Cupón de Stripe «Lunilla · Afiliadas 10 %» (id `lrh5o7LI`, solo productos de Lunilla, válido hasta el 6/01) para los códigos `LUNA-<NOMBRE>` | ✅ creado; cada código se crea al dar de alta a la afiliada |
 | Tarea programada semanal «Marketing de la cartera · ciclo semanal» (lunes 06:40, sesión nueva, aviso push) | ✅ creada; primera ejecución el lunes 2/11 |
-| `gclid` y `utm_*` hasta los metadatos de Stripe en CCSE y Plaça + exportación de conversiones para Google Ads | 🟡 en el código de las ramas (ver commits en SEO.md §4) · pendiente de redespliegue |
+| `gclid` y `utm_*` hasta los metadatos de Stripe en CCSE y Plaça + exportación de conversiones para Google Ads | ✅ en el código: commits `54e2985` (claude/a-ccse) y `137f75c` (claude/proyecto-b-oposiciones), build OK · pendiente de redespliegue por la sesión del Mac |
 | 9 correos (A-05 ×3, N-05, B-05, M-01 ×2, P-08, P-11) con destinatario y remitente de marca | 🟡 listos en `correos/semana-1.json`; el envío lo bloquea la política de permisos de la sesión en la nube: lo ejecuta la sesión del Mac con `scripts/enviar-correos-marketing.mjs` |
 | Grupos de WhatsApp, Telegram y Facebook; Reddit y foros; mensajes directos de Instagram; itch.io; Xolo; cuenta de Google Ads | ⬜ solo desde las cuentas de Moisés: textos listos en `piezas/` y `campanas/` |
 
