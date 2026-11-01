@@ -6,6 +6,9 @@ import { marca, oposiciones, totalPreguntas } from '@/lib/datos';
 export const alt = 'Oposita · tests d\'oposicions';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
+// Se genera en el build (una por idioma): así no depende de leer archivos en la función de Vercel.
+export const dynamic = 'force-static';
+export const generateStaticParams = () => [{ lang: 'ca' }, { lang: 'es' }];
 
 /** Imagen para compartir (Open Graph y X): marca, promesa y los datos reales del banco. Se genera en el build. */
 export default async function Imagen({ params }: { params: Promise<{ lang: string }> }) {
