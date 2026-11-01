@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import type { Idioma } from '@/lib/tipos';
 import { IDIOMAS } from '@/lib/tipos';
-import { banco, oposiciones } from '@/lib/datos';
+import { banco, oposiciones, pais, precioTexto } from '@/lib/datos';
+import { t } from '@/lib/i18n';
 import { alternates } from '@/lib/seo';
 import Practica from '@/components/Practica';
 
@@ -22,5 +23,5 @@ export default async function Pagina({ params, searchParams }: P) {
   const sp = await searchParams;
   const b = banco(oposicion);
   if (!b) notFound();
-  return <Practica idioma={lang} op={b.oposicion} resumen={{ total: b.resumen.total, porTema: b.resumen.porTema }} inicial={{ tema: sp.tema ? Number(sp.tema) : undefined, modo: sp.modo }} />;
+  return <Practica idioma={lang} op={b.oposicion} resumen={{ total: b.resumen.total, porTema: b.resumen.porTema }} inicial={{ tema: sp.tema ? Number(sp.tema) : undefined, modo: sp.modo }} precio={`${precioTexto(pais.planes.find((p) => p.id === 'mensual')!.importe, lang)}${t(lang).porMes}`} />;
 }

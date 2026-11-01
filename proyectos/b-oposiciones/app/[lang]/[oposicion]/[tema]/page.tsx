@@ -52,7 +52,7 @@ export default async function PaginaTema({ params }: P) {
     ],
   };
   return (
-    <div className="contenedor py-8">
+    <div className="contenedor pt-8 pb-24 sm:pb-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
       <nav className="text-xs text-slate-500">
         <Link href={`/${lang}`}>{marca.nombre}</Link> › <Link href={`/${lang}/${o.slug}`}>{o.nombreCorto[lang]}</Link> › {d.tema} {x.n}
@@ -96,6 +96,9 @@ export default async function PaginaTema({ params }: P) {
         {ant ? <Link href={`/${lang}/${o.slug}/${ant.slug}`} className="tarjeta p-4 text-sm no-underline hover:border-marca">← {d.tema} {ant.n}: {ant.titulo[lang]}</Link> : <span />}
         {sig ? <Link href={`/${lang}/${o.slug}/${sig.slug}`} className="tarjeta p-4 text-right text-sm no-underline hover:border-marca">{d.tema} {sig.n}: {sig.titulo[lang]} →</Link> : null}
       </nav>
+      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur sm:hidden">
+        <Link href={`/${lang}/practicar/${o.slug}?tema=${x.n}`} className="boton w-full">{lang === 'ca' ? 'Practica aquest tema' : 'Practica este tema'}</Link>
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { t, otro } from '@/lib/i18n';
 import {
   type Progreso, vacio, registrar, pendientes, falladas, racha, fusionar, notaSimulacro, barajar, elegirSimulacro,
 } from '@/lib/progreso';
+import { evento } from '@/lib/evento';
 
 type Modo = 'tema' | 'simulacro' | 'repaso' | 'falladas';
 type Sesion = {
@@ -30,7 +31,7 @@ function cargarLocal(slug: string): Progreso {
   } catch { return vacio(); }
 }
 
-export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idioma; op: Oposicion; inicial: { tema?: number; modo?: string }; resumen: { total: number; porTema: Record<number, number> } }) {
+export default function Practica({ idioma, op, inicial, resumen, precio }: { idioma: Idioma; op: Oposicion; inicial: { tema?: number; modo?: string }; resumen: { total: number; porTema: Record<number, number> }; precio: string }) {
   const d = t(idioma);
   const [preguntas, setPreguntas] = useState<Pregunta[] | null>(null);
   const [total, setTotal] = useState(0);
@@ -116,6 +117,7 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
     else if (modo === 'falladas') ids = barajar(falladas(progreso, idsDisp)).slice(0, 30);
     if (!ids.length) return;
     setSesion({ modo, ids, reserva, i: 0, marcadas: {}, corregidas: {}, inicio: Date.now(), limite });
+    evento('test_inicio', { op: op.slug, modo, n: ids.length });
     setResultado(null);
     setVista('test');
     setAhora(Date.now());
@@ -155,21 +157,22 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
       }
     }
     setProgreso(p);
+    evento('test_fin', { op: op.slug, modo: s.modo, aciertos, n: contadas.length, suscrito });
     setResultado({ modo: s.modo, aciertos, fallos, blancos, nota, segundos, n: contadas.length, percentil, ids: s.ids, marcadas: s.marcadas });
     setVista('resultado');
     window.scrollTo({ top: 0 });
-  }, [progreso, mapa, op, logueado]);
+  }, [progreso, mapa, op, logueado, suscrito]);
 
   // Fin automático por tiempo.
   useEffect(() => {
     if (vista === 'test' && sesion?.modo === 'simulacro' && sesion.limite && ahora - sesion.inicio >= sesion.limite * 1000) terminar(sesion);
   }, [ahora, vista, sesion, terminar]);
 
-  if (preguntas === null) return <div className="contenedor py-16 text-center text-slate-500">…</div>;
+  if (preguntas === null) return <div className="contenedor py-16 text-center text-slate-500" role="status">{idioma === 'ca' ? 'Carregant les preguntes…' : 'Cargando las preguntas…'}</div>;
 
   if (vista === 'test' && sesion) return <Test {...{ idioma, op, sesion, setSesion, mapa, terminar, ahora, salir: () => setVista('inicio') }} onRespuesta={(id, ok) => setProgreso((p) => registrar(p, id, ok))} />;
 
-  if (vista === 'resultado' && resultado) return <VistaResultado {...{ idioma, op, resultado, mapa, total, logueado }} volver={() => setVista('inicio')} repetir={(ids) => empezar('falladas', { ids })} suscrito={suscrito} />;
+  if (vista === 'resultado' && resultado) return <VistaResultado {...{ idioma, op, resultado, mapa, total, logueado, precio }} volver={() => setVista('inicio')} repetir={(ids) => empezar('falladas', { ids })} suscrito={suscrito} />;
 
   const nPend = pendientes(progreso, idsDisp).length;
   const nFall = falladas(progreso, idsDisp).length;
@@ -201,7 +204,7 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
       {!suscrito ? (
         <div className="mt-4 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm">
           <p>{d.app.bloqueado} ({preguntas.length}/{total})</p>
-          <Link href={`/${idioma}/precios`} className="boton mt-3">{d.app.desbloquear}</Link>
+          <Link href={`/${idioma}/precios`} onClick={() => evento('oferta_clic', { op: op.slug, origen: 'practicar' })} className="boton mt-3">{d.app.desbloquear}</Link>
         </div>
       ) : null}
 
@@ -215,7 +218,7 @@ export default function Practica({ idioma, op, inicial, resumen }: { idioma: Idi
             </select>
           </label>
           <div className="mt-3 flex gap-2" role="group" aria-label={d.app.numPreguntas}>
-            {[10, 20, 30].map((k) => <button key={k} onClick={() => setNum(k)} className={`flex-1 rounded-lg border py-2 text-sm font-semibold ${num === k ? 'border-marca bg-marca-claro text-marca-oscuro' : 'border-slate-300'}`}>{k}</button>)}
+            {[10, 20, 30].map((k) => <button key={k} onClick={() => setNum(k)} aria-pressed={num === k} className={`flex-1 rounded-lg border py-2 text-sm font-semibold ${num === k ? 'border-marca bg-marca-claro text-marca-oscuro' : 'border-slate-300'}`}>{k}</button>)}
           </div>
           <button className="boton mt-3 w-full" disabled={!disponiblesTema(temaSel)} onClick={() => empezar('tema', { tema: temaSel || undefined, n: num })}>{d.app.empezar}</button>
         </div>
@@ -287,7 +290,7 @@ function Test({ idioma, op, sesion, setSesion, mapa, terminar, ahora, salir, onR
       <div className="tarjeta mt-4">
         <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
           <span>{d.tema} {q.tema}{sesion.reserva.has(id) ? ' · reserva' : ''}{q.origen === 'examen-oficial' && q.examen ? ` · ${idioma === 'ca' ? 'examen oficial' : 'examen oficial'} ${q.examen.anio}` : ''}</span>
-          <button onClick={() => setVerIdioma(otro(verIdioma))} className="rounded border border-slate-300 px-2 py-0.5 font-semibold uppercase hover:border-marca">{otro(verIdioma)}</button>
+          <button onClick={() => setVerIdioma(otro(verIdioma))} aria-label={d.app.idiomaPregunta} lang={otro(verIdioma)} className="rounded border border-slate-300 px-2 py-0.5 font-semibold uppercase hover:border-marca">{otro(verIdioma)}</button>
         </div>
         <p className="mt-2 text-lg font-semibold leading-snug">{x.enunciado}</p>
         <div className="mt-4 grid gap-2">
@@ -296,13 +299,13 @@ function Test({ idioma, op, sesion, setSesion, mapa, terminar, ahora, salir, onR
             if (simulacro && marcada === k) cls = 'border-marca bg-marca-claro';
             if (corregida) cls = k === q.correcta ? 'border-ok bg-green-50' : k === marcada ? 'border-mal bg-red-50' : 'border-slate-200 opacity-70';
             return (
-              <button key={k} onClick={() => marcar(k)} className={`flex min-h-12 items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left text-[15px] transition ${cls}`}>
+              <button key={k} onClick={() => marcar(k)} aria-pressed={marcada === k} aria-disabled={!!corregida} className={`flex min-h-12 items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left text-[15px] transition ${cls}`}>
                 <span className="mt-0.5 font-bold text-slate-500">{'abcdef'[k]})</span><span>{o}</span>
               </button>
             );
           })}
         </div>
-        {corregida ? <Explicacion q={q} idioma={verIdioma} acierto={marcada === q.correcta} slug={op.slug} /> : null}
+        <div aria-live="polite">{corregida ? <Explicacion q={q} idioma={verIdioma} acierto={marcada === q.correcta} slug={op.slug} /> : null}</div>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -315,7 +318,7 @@ function Test({ idioma, op, sesion, setSesion, mapa, terminar, ahora, salir, onR
       {simulacro ? (
         <div className="mt-6 grid grid-cols-10 gap-1">
           {sesion.ids.map((qid, k) => (
-            <button key={qid} onClick={() => ir(k)} className={`aspect-square rounded text-xs font-semibold ${k === sesion.i ? 'ring-2 ring-marca' : ''} ${sesion.marcadas[qid] != null ? 'bg-marca text-white' : sesion.reserva.has(qid) ? 'bg-amber-100' : 'bg-slate-200'}`}>{k + 1}</button>
+            <button key={qid} onClick={() => ir(k)} aria-label={`${idioma === 'ca' ? 'Pregunta' : 'Pregunta'} ${k + 1}`} aria-current={k === sesion.i ? 'step' : undefined} className={`aspect-square rounded text-xs font-semibold ${k === sesion.i ? 'ring-2 ring-marca' : ''} ${sesion.marcadas[qid] != null ? 'bg-marca text-white' : sesion.reserva.has(qid) ? 'bg-amber-100' : 'bg-slate-200'}`}>{k + 1}</button>
           ))}
           {sesion.reserva.size ? <p className="col-span-10 mt-1 text-xs text-slate-500">{d.app.reservaNota}</p> : null}
         </div>
@@ -353,14 +356,15 @@ function Explicacion({ q, idioma, acierto, slug }: { q: Pregunta; idioma: Idioma
   );
 }
 
-function OfertaPago({ idioma, op, total, logueado }: { idioma: Idioma; op: Oposicion; total: number; logueado: boolean }) {
+function OfertaPago({ idioma, op, total, logueado, precio }: { idioma: Idioma; op: Oposicion; total: number; logueado: boolean; precio: string }) {
   const ca = idioma === 'ca';
   const [c, setC] = useState(false);
   const pagar = async () => {
     setC(true);
+    evento('oferta_clic', { op: op.slug, origen: 'resultado', logueado });
     if (!logueado) { location.href = `/${idioma}/entrar?plan=mensual`; return; }
     const j = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'mensual', idioma }) }).then((x) => x.json()).catch(() => ({}));
-    if (j.url) location.href = j.url; else setC(false);
+    if (j.url) { evento('checkout_ir', { plan: 'mensual', origen: 'resultado' }); location.href = j.url; } else setC(false);
   };
   const e = op.examen;
   return (
@@ -371,14 +375,15 @@ function OfertaPago({ idioma, op, total, logueado }: { idioma: Idioma; op: Oposi
         <li>✓ {ca ? `El simulacre complet: ${e.preguntas} preguntes, ${e.minutos} minuts, com a l'examen` : `El simulacro completo: ${e.preguntas} preguntas, ${e.minutos} minutos, como en el examen`}</li>
         <li>✓ {ca ? 'Repàs de les que falles i totes les altres oposicions catalanes' : 'Repaso de las que fallas y todas las demás oposiciones catalanas'}</li>
       </ul>
-      <button onClick={pagar} disabled={c} className="boton mt-4 w-full">{c ? '…' : ca ? 'Desbloquejar per 9,99 €/mes' : 'Desbloquear por 9,99 €/mes'}</button>
+      <button onClick={pagar} disabled={c} className="boton mt-4 w-full">{c ? '…' : ca ? `Desbloquejar per ${precio}` : `Desbloquear por ${precio}`}</button>
       <p className="mt-2 text-center text-xs text-slate-500">{ca ? 'IVA inclòs · Cancel·la amb un clic · Pagament segur amb Stripe' : 'IVA incluido · Cancela en un clic · Pago seguro con Stripe'}</p>
+      <p className="mt-1 text-center text-xs"><Link href={`/${idioma}/precios`} className="text-marca">{ca ? 'Veure els plans trimestral i anual' : 'Ver los planes trimestral y anual'}</Link></p>
     </div>
   );
 }
 
-function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscrito, total, logueado }: {
-  idioma: Idioma; op: Oposicion; resultado: Resultado; mapa: Map<string, Pregunta>; volver: () => void; repetir: (ids: string[]) => void; suscrito: boolean; total: number; logueado: boolean;
+function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscrito, total, logueado, precio }: {
+  idioma: Idioma; op: Oposicion; resultado: Resultado; mapa: Map<string, Pregunta>; volver: () => void; repetir: (ids: string[]) => void; suscrito: boolean; total: number; logueado: boolean; precio: string;
 }) {
   const d = t(idioma);
   const malas = r.ids.filter((id) => r.marcadas[id] != null && r.marcadas[id] !== mapa.get(id)?.correcta);
@@ -400,7 +405,7 @@ function VistaResultado({ idioma, op, resultado: r, mapa, volver, repetir, suscr
         <Dato n={r.blancos} t={d.app.blancos} />
         <Dato n={reloj(r.segundos)} t={d.app.tiempo} />
       </div>
-      {!suscrito ? <OfertaPago {...{ idioma, op, total, logueado }} /> : null}
+      {!suscrito ? <OfertaPago {...{ idioma, op, total, logueado, precio }} /> : null}
       <div className="mt-4 flex flex-wrap gap-2">
         {malas.length ? <button className="boton-sec" onClick={() => repetir(malas)}>{d.app.repetirFalladas} ({malas.length})</button> : null}
         <button className="boton-sec" onClick={volver}>{d.app.volver}</button>

@@ -4,8 +4,8 @@ import type { Metadata } from 'next';
 import type { Idioma } from '@/lib/tipos';
 import { IDIOMAS } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
-import { banco, bancoPublico, oposiciones, pais, marca, urlBase } from '@/lib/datos';
-import { alternates, jsonLd } from '@/lib/seo';
+import { banco, bancoPublico, oposiciones, pais, marca, urlBase, precioTexto } from '@/lib/datos';
+import { alternates, jsonLd, imagenOg } from '@/lib/seo';
 import Convocatoria from '@/components/Convocatoria';
 import PreguntaMuestra from '@/components/PreguntaMuestra';
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const desc = lang === 'ca'
     ? `Tests per tema i simulacres de ${o.nombreCorto.ca} amb el format de la ${o.convocatoria.referencia}. ${pais.gratisPorOposicion} preguntes gratis, explicació i article de la llei a cada resposta.`
     : `Tests por tema y simulacros de ${o.nombreCorto.es} con el formato de la ${o.convocatoria.referencia}. ${pais.gratisPorOposicion} preguntas gratis, explicación y artículo de la ley en cada respuesta.`;
-  return { title: { absolute: `${titulo} · ${marca.nombre}` }, description: desc, alternates: alternates(lang, `/${oposicion}`), openGraph: { title: titulo, description: desc } };
+  return { title: { absolute: `${titulo} · ${marca.nombre}` }, description: desc, alternates: alternates(lang, `/${oposicion}`), openGraph: { images: imagenOg(lang), title: titulo, description: desc, siteName: marca.nombre, type: 'website' } };
 }
 
 export default async function PaginaOposicion({ params }: P) {
@@ -69,7 +69,7 @@ export default async function PaginaOposicion({ params }: P) {
     ],
   };
   return (
-    <div className="contenedor py-8">
+    <div className="contenedor pt-8 pb-24 sm:pb-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
       <nav className="text-xs text-slate-500"><Link href={`/${lang}`}>{marca.nombre}</Link> › {o.nombreCorto[lang]}</nav>
       <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
@@ -116,6 +116,21 @@ export default async function PaginaOposicion({ params }: P) {
         </div>
       ))}
 
+      <section className="mt-10 grid gap-5 rounded-3xl bg-tinta p-6 text-white sm:grid-cols-[1.4fr_1fr] sm:items-center sm:p-8">
+        <div>
+          <p className="font-titulos text-2xl font-bold">{lang === 'ca' ? `Les ${b.resumen.total} preguntes de ${o.nombreCorto.ca}, i el simulacre complet` : `Las ${b.resumen.total} preguntas de ${o.nombreCorto.es}, y el simulacro completo`}</p>
+          <p className="mt-2 text-sm text-white/75">{lang === 'ca' ? `${o.examen.preguntas} preguntes en ${o.examen.minutos} minuts, com a l'examen, repàs de les que falles i estadístiques per tema. La mateixa subscripció inclou totes les altres oposicions.` : `${o.examen.preguntas} preguntas en ${o.examen.minutos} minutos, como en el examen, repaso de las que fallas y estadísticas por tema. La misma suscripción incluye todas las demás oposiciones.`}</p>
+        </div>
+        <div className="sm:text-right">
+          <p><span className="font-titulos text-3xl font-bold">{precioTexto(pais.planes.find((p) => p.id === 'mensual')!.importe, lang)}</span><span className="text-white/75">{d.porMes}</span></p>
+          <p className="text-xs text-white/75">{d.ivaIncluido} · {lang === 'ca' ? 'cancel·la amb un clic' : 'cancela en un clic'}</p>
+          <div className="mt-3 flex flex-wrap gap-2 sm:justify-end">
+            <Link href={`/${lang}/practicar/${o.slug}`} className="boton bg-white text-tinta hover:bg-marca-claro">{d.testGratis}</Link>
+            <Link href={`/${lang}/precios`} className="inline-flex min-h-11 items-center px-2 text-sm font-semibold text-white underline">{d.precios}</Link>
+          </div>
+        </div>
+      </section>
+
       {muestras.length ? (
         <>
           <h2 className="mt-10 text-2xl font-bold">{lang === 'ca' ? 'Preguntes d\'exemple' : 'Preguntas de ejemplo'}</h2>
@@ -126,6 +141,9 @@ export default async function PaginaOposicion({ params }: P) {
       <h2 className="mt-10 text-2xl font-bold">{lang === 'ca' ? 'Preguntes freqüents' : 'Preguntas frecuentes'}</h2>
       <div className="prosa mt-2">
         {faq.map((f) => (<div key={f.q}><h3>{f.q}</h3><p>{f.a}</p></div>))}
+      </div>
+      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur sm:hidden">
+        <Link href={`/${lang}/practicar/${o.slug}`} className="boton w-full">{d.testGratis} · {pais.gratisPorOposicion} {d.preguntas}</Link>
       </div>
     </div>
   );

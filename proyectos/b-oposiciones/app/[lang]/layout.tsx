@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     manifest: '/manifest.webmanifest',
     icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }, { url: '/icons/icon-192.png', sizes: '192x192' }], apple: '/icons/icon-192.png' },
     appleWebApp: { capable: true, title: marca.nombre, statusBarStyle: 'default' },
+    applicationName: marca.nombre,
+    openGraph: { type: 'website', siteName: marca.nombre, locale: l === 'ca' ? 'ca_ES' : 'es_ES', alternateLocale: l === 'ca' ? ['es_ES'] : ['ca_ES'] },
+    twitter: { card: 'summary_large_image' },
     ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {}),
   };
 }
@@ -37,8 +40,9 @@ export default async function Layout({ children, params }: { children: React.Rea
   return (
     <html lang={lang}>
       <body className="flex min-h-dvh flex-col">
+        <a href="#contenido" className="saltar">{lang === 'ca' ? 'Ves al contingut' : 'Ir al contenido'}</a>
         <Cabecera idioma={lang} />
-        <main className="flex-1">{children}</main>
+        <main id="contenido" className="flex-1">{children}</main>
         <Pie idioma={lang} />
         <RegistroSW />
         <Analytics />

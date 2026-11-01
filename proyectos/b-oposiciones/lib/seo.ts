@@ -13,3 +13,6 @@ export function alternates(idioma: Idioma, ruta: string) {
 export function jsonLd(obj: unknown) {
   return { __html: JSON.stringify(obj).replace(/</g, '\\u003c') };
 }
+
+/** Imagen de Open Graph de la marca (app/[lang]/opengraph-image.tsx). Hay que repetirla cuando una página define su propio openGraph. */
+export const imagenOg = (idioma: Idioma) => [{ url: `/${idioma}/opengraph-image`, width: 1200, height: 630, alt: 'Oposita' }];

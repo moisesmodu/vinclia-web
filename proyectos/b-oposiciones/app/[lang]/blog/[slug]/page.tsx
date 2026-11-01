@@ -5,7 +5,7 @@ import type { Idioma } from '@/lib/tipos';
 import { IDIOMAS } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
 import { marca, urlBase } from '@/lib/datos';
-import { alternates, jsonLd } from '@/lib/seo';
+import { alternates, jsonLd, imagenOg } from '@/lib/seo';
 import { articulo, articulos } from '@/lib/blog';
 import { fechaLarga } from '@/components/Convocatoria';
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
     description: a.descripcion[lang],
     keywords: [a.palabraClave[lang]],
     alternates: alternates(lang, `/blog/${slug}`),
-    openGraph: { title: a.titulo[lang], description: a.descripcion[lang], type: 'article', publishedTime: a.publicado, modifiedTime: a.actualizado, locale: lang === 'ca' ? 'ca_ES' : 'es_ES' },
+    openGraph: { images: imagenOg(lang), title: a.titulo[lang], description: a.descripcion[lang], type: 'article', publishedTime: a.publicado, modifiedTime: a.actualizado, locale: lang === 'ca' ? 'ca_ES' : 'es_ES' },
   };
 }
 

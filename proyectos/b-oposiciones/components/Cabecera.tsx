@@ -11,7 +11,7 @@ export default function Cabecera({ idioma }: { idioma: Idioma }) {
   return (
     <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="contenedor flex h-14 items-center gap-3">
-        <Link href={`/${idioma}`} className="no-underline" aria-label={marca.nombre}>
+        <Link href={`/${idioma}`} className="text-tinta no-underline" aria-label={`${marca.nombre}, ${d.inicio.toLowerCase()}`}>
           <Logo alto={30} />
         </Link>
         <nav className="ml-auto flex items-center gap-1 text-sm font-medium sm:gap-3">

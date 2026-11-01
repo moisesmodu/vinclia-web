@@ -8,7 +8,7 @@ export default function Pie({ idioma }: { idioma: Idioma }) {
   const d = t(idioma);
   const l = (s: string) => `/${idioma}${s}`;
   return (
-    <footer className="mt-16 border-t border-slate-200 bg-white">
+    <footer className="mt-20 border-t border-slate-200 bg-white">
       <div className="contenedor grid gap-8 py-10 text-sm sm:grid-cols-3">
         <div>
           <Logo alto={28} />
@@ -33,7 +33,7 @@ export default function Pie({ idioma }: { idioma: Idioma }) {
             <li><Link className="text-slate-600 hover:text-marca" href={l('/contacto')}>{d.pie.contacto}</Link></li>
             <li><Link className="text-slate-600 hover:text-marca" href={l('/erratas')}>{d.pie.erratas}</Link></li>
           </ul>
-          <p className="mt-4 text-xs text-slate-500">© {new Date().getFullYear()} {marca.nombre}</p>
+          <p className="mt-4 text-xs text-slate-500">© {new Date().getFullYear()} {marca.nombre} · {marca.dominio}</p>
         </div>
       </div>
     </footer>
