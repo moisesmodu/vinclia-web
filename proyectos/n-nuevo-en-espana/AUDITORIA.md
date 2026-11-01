@@ -86,3 +86,10 @@ casillas lejos) y de **analítica** (el script de Vercel Web Analytics devolvía
 N aporta en el plan ≈ 50 suscriptores (con A). Con 4,99 €/mes o 19,90 € de pack, cada 100 € de ingreso mensual son
 ≈ 20 suscriptores o 5 packs al mes. Lo que mueve la aguja aquí es tráfico orgánico a páginas de trámite con intención
 (S1, S7, S8), Search Console (S9) y medir el embudo (§7) antes de tocar precios.
+
+## 9. Verificación en producción (01/11/2026)
+
+Despliegue `dpl_Dn4bcvFMrfixz2yBspXFZLwXM42U` (commit 68cf7cb) en tuspapeles.app. Comprobado: títulos y canonical
+nuevos, `/ca/guias/*` con canonical a `/es`, sitemap de 112 URL sin guías en catalán, `og:image` en todas las páginas,
+`/_vercel/insights/script.js` responde 200 (antes 404), ninguna mención a «Nuevo en España» en el HTML, y el flujo
+portada → guía de pago → precios → Checkout con Playwright a 390 px (sin errores de consola).
