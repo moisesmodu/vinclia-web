@@ -36,9 +36,17 @@ npm run build        # build de producción (limpio)
 npm run revisar      # revisión lógica del banco: 300 preguntas × 7 lenguas
 npm run unir         # une content/explicaciones/bloque-*.json → content/i18n/<lengua>.json
 node scripts/iconos.mjs                       # PNG de iconos desde los SVG
+STRIPE_MODO=live STRIPE_SECRET_KEY=… node scripts/conversiones-google-ads.mjs 7 salida.csv   # compras con gclid de los últimos 7 días → CSV para importar conversiones en Google Ads (marketing/ads/)
 node pruebas/e2e-api.mjs   # 30 pruebas de API (necesita la app en :3100 con .env.test y Postgres)
 node pruebas/e2e-movil.mjs # 15 pruebas en navegador con pantalla de Pixel 7
 ```
+
+## Atribución de marketing (gclid y utm_*)
+Al llegar con `?gclid=…` o `?utm_source=…&utm_medium=…&utm_campaign=…`, `components/Atribucion.tsx` guarda esos valores 30 días en
+el almacenamiento local (`ccse.atribucion.v1`, sin cookies; declarado en la política de cookies). Al pagar, el cliente los envía a
+`/api/stripe/checkout` y van a `metadata` de la sesión de Checkout y del PaymentIntent (`gclid`, `utm_source`, `utm_medium`,
+`utm_campaign`). Prueba: abre `/es?gclid=prueba&utm_campaign=test`, compra en modo prueba y mira los metadatos del pago en Stripe.
+Cada lunes, `scripts/conversiones-google-ads.mjs` exporta las compras con `gclid` al CSV de importación de Google Ads.
 
 ## Contenido
 - `content/preguntas.json`: banco oficial (id, tarea, texto, opciones, respuesta, página del manual).

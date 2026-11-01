@@ -1,4 +1,5 @@
 'use client';
+import { leerAtribucion } from '@/lib/atribucion';
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
@@ -21,7 +22,7 @@ export function Precio() {
     setMsg(null);
     track('checkout_iniciado', { locale, origen: 'precio' });
     try {
-      const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale }) });
+      const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, atribucion: leerAtribucion() }) });
       const d = await r.json();
       if (d.url) return void (location.href = d.url);
       setMsg(d.error === 'stripe_no_configurado' ? t('precio.noConfig') : t('cuenta.err.generico'));

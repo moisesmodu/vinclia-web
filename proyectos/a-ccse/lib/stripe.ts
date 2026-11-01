@@ -1,3 +1,4 @@
+import { limpiarAtribucion, type Atribucion } from '@/lib/atribucion';
 import 'server-only';
 import Stripe from 'stripe';
 import { db } from './db';
@@ -98,7 +99,9 @@ export async function precioId(): Promise<string> {
   return (precioCache = precio.id);
 }
 
-export async function crearCheckout(opts: { usuarioId: string; email: string; locale: string; ref?: string | null }) {
+export async function crearCheckout(opts: { usuarioId: string; email: string; locale: string; ref?: string | null; atribucion?: Atribucion }) {
+  // gclid y utm_* (lib/atribucion.ts): van en la sesión y en el PaymentIntent para importar conversiones en Google Ads.
+  const atribucion = limpiarAtribucion(opts.atribucion);
   await asegurarWebhook();
   const stripeLocale = (['es', 'fr', 'en', 'ro', 'zh'] as const).includes(opts.locale as 'es') ? (opts.locale as 'es') : 'auto';
   return stripe().checkout.sessions.create({
@@ -116,7 +119,7 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
       // Así el extracto del banco muestra la web y no solo la cuenta (p. ej. «NUMI MATES* CCSEFACIL»).
       statement_descriptor_suffix: DESCRIPTOR_SUFIJO,
       description: NOMBRE_PRODUCTO,
-      metadata: { proyecto: 'a-ccse', usuarioId: opts.usuarioId },
+      metadata: { proyecto: 'a-ccse', usuarioId: opts.usuarioId, ...atribucion },
     },
     custom_text: {
       submit: {
@@ -125,7 +128,7 @@ export async function crearCheckout(opts: { usuarioId: string; email: string; lo
           'Al pagar aceptas las condiciones de venta y pides que el acceso empiece ya, por lo que pierdes el derecho de desistimiento (art. 103.m TRLGDCU). Garantía de aprobado incluida.',
       },
     },
-    metadata: { usuarioId: opts.usuarioId, proyecto: 'a-ccse', pais: PAIS.pais, afiliado: opts.ref ?? '' },
+    metadata: { usuarioId: opts.usuarioId, proyecto: 'a-ccse', pais: PAIS.pais, afiliado: opts.ref ?? '', ...atribucion },
     success_url: `${SITE_URL}/${opts.locale}/pago/ok?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${SITE_URL}/${opts.locale}/precio?cancelado=1`,
   });

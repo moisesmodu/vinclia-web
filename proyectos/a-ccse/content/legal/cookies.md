@@ -10,5 +10,6 @@ Solo usamos elementos técnicos necesarios (exentos de consentimiento según el 
 | ccse_sesion | Cookie propia | Mantener tu sesión si entras con tu cuenta | 180 días |
 | ccse_idioma | Cookie propia | Recordar tu idioma | 1 año |
 | ccse.progreso.v1 | Almacenamiento local | Guardar tu progreso en el dispositivo | Hasta que lo borres |
+| ccse.atribucion.v1 | Almacenamiento local | Recordar desde qué enlace o anuncio llegaste (identificador del clic y parámetros de la campaña), para saber qué publicaciones traen compras | 30 días |
 
 Si en el futuro se añade analítica, será sin cookies y sin datos personales. Durante el pago, Stripe puede usar sus propias cookies para prevenir el fraude.

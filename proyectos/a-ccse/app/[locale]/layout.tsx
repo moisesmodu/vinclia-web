@@ -10,6 +10,7 @@ import { Pie } from '@/components/Pie';
 import { RegistrarSW } from '@/components/RegistrarSW';
 import { AvisoRecuperacion } from '@/components/AvisoRecuperacion';
 import { Analytics } from '@vercel/analytics/next';
+import { Atribucion } from '@/components/Atribucion';
 import { HREFLANG } from '@/lib/seo';
 
 // Fuentes de la familia Nuevo en España servidas desde el propio dominio (sin hoja de estilos externa que bloquee el render).
@@ -65,6 +66,8 @@ export default async function Layout({ children, params }: { children: React.Rea
           <Pie locale={l} />
         </EstadoProvider>
         <RegistrarSW />
+        {/* Atribución sin cookies: gclid y utm_* de la URL → almacenamiento local 30 días → metadatos del pago (lib/atribucion.ts). */}
+        <Atribucion />
         {umami && <script defer src={umami} data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID} />}
         {/* Vercel Web Analytics: sin cookies; recoge ruta y utm_* de cada pieza de marketing (marketing/MEDICION.md). */}
         <Analytics />

@@ -1,4 +1,5 @@
 'use client';
+import { leerAtribucion } from '@/lib/atribucion';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { precioTexto } from '@/lib/config';
@@ -16,7 +17,7 @@ export function BotonPagar({ etiqueta, clase = 'boton boton-1' }: { etiqueta?: s
     setOcupado(true);
     track('checkout_iniciado', { locale, origen: 'oferta' });
     try {
-      const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale }) });
+      const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, atribucion: leerAtribucion() }) });
       const d = await r.json();
       if (d.url) return void (location.href = d.url);
     } catch {}
