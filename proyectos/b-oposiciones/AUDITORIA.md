@@ -17,7 +17,7 @@ Leyenda: ✅ arreglado en este cambio · 🔧 pendiente (con quién y cómo).
 | Velocidad | Estático (SSG), 103 kB JS compartido, TTFB ~0,15–0,35 s | Igual (sin dependencias nuevas) | — |
 | Móvil | Sin desbordes; botones de 44 px | CTA fijo abajo en oposición y tema; plan anual primero en móvil | — |
 | Accesibilidad | Sin enlace «ir al contenido», sin foco visible propio, estados de botones sin ARIA | ✅ (ver §6) | Página 404 propia (🔧) |
-| Analítica | `<Analytics />` montado pero **Web Analytics no activado** en Vercel (el script da 404) y ningún evento de embudo | 6 eventos de embudo instrumentados | **Activar Web Analytics** (🔧, 1 clic) |
+| Analítica | `<Analytics />` montado pero el script daba 404 (Web Analytics se activó en Vercel después del último despliegue) y ningún evento de embudo | Redesplegado: el script responde 200; eventos de embudo instrumentados | Comprobar que los eventos se guardan (🔧) |
 
 ## 2. Marca
 **Decisión:** «Oposita» como marca paraguas. Motivos: coincide con el dominio comprado (oposita.digital), ya era el nombre
@@ -100,8 +100,8 @@ peso en este trabajo: no se añadieron dependencias. 🔧 Medir Core Web Vitals 
 estén activos.
 
 ## 8. Analítica
-- 🔧 **Activar Web Analytics** en el proyecto `placa-oposicions` de Vercel (Analytics → Enable). Hoy
-  `/_vercel/insights/script.js` responde 404 en producción, así que **no se está midiendo nada**.
+- ✅ Web Analytics: estaba activado en el proyecto `placa-oposicions`, pero el despliegue en producción era anterior y
+  `/_vercel/insights/script.js` respondía 404, así que **no se medía nada**. Tras el redespliegue del 01/11 responde 200.
 - ✅ Eventos de embudo (`lib/evento.ts`): `test_inicio`, `test_fin`, `oferta_clic`, `plan_clic`, `registro_ok`/`entrar_ok`,
   `checkout_ir`, con oposición y plan. Los eventos personalizados solo se guardan en planes de Vercel que los incluyen;
   si el plan no los guarda, las llamadas no hacen nada y no rompen nada.
