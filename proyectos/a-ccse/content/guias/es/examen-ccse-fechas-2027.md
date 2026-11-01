@@ -56,4 +56,4 @@ Cuando aciertes de forma estable bastante más de 15 preguntas en los simulacros
 
 Practica con los [tests por tema](/es/temas) y mide tu nivel con el [simulacro gratis](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes. Confirma las fechas en examenes.cervantes.es.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes. Confirma las fechas en examenes.cervantes.es.*

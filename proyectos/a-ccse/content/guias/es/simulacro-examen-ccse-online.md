@@ -57,4 +57,4 @@ Si todavía no sabes cuántos aciertos necesitas o cómo se corrige, lee la guí
 
 Haz ahora el [simulacro gratis de 25 preguntas](/es/simulacro) o, si prefieres ir paso a paso, empieza por los [tests por tema](/es/temas).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

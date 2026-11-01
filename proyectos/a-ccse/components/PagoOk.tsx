@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { fechaLarga } from '@/lib/i18n';
+import { track } from '@vercel/analytics';
 import { useEstado } from './Estado';
 
 export function PagoOk() {
@@ -18,6 +19,7 @@ export function PagoOk() {
         if (d.ok) {
           setHasta(d.accesoHasta);
           setEstado('ok');
+          track('pago_completado', { locale });
           await recargarUsuario();
         } else setEstado('pendiente');
       })

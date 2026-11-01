@@ -1,5 +1,7 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { PAIS, enlaceN, precioTexto, type Locale, lenguaExplicacion } from '@/lib/config';
+import { alternas, ldSitio } from '@/lib/seo';
+import { PAIS, SITE_URL, enlaceN, precioTexto, type Locale, lenguaExplicacion } from '@/lib/config';
 import { traductor } from '@/lib/i18n';
 import { TAREAS, deTarea, FUENTE, IDS_GRATIS, POR_ID } from '@/lib/preguntas';
 import { traducciones } from '@/lib/banco';
@@ -22,6 +24,16 @@ const RETRATOS = [
   { src: '/img/ucraniana.webp', l: 'uk', etiqueta: 'Українська' },
   { src: '/img/senegal.webp', l: 'fr', etiqueta: 'Français' },
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = traductor(locale);
+  return {
+    title: { absolute: `${t('seo.home.t')} | ${t('marca')}` },
+    description: t('seo.home.d'),
+    alternates: alternas(locale, ''),
+  };
+}
 
 function Check({ si }: { si: boolean | 'parcial' }) {
   if (si === 'parcial') return <span className="text-suave">~</span>;
@@ -52,7 +64,15 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
   ];
   const ld = [
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
-    { '@context': 'https://schema.org', '@type': 'WebApplication', name: t('marca'), applicationCategory: 'EducationalApplication', operatingSystem: 'Web, Android', inLanguage: locale, offers: { '@type': 'Offer', price: (PAIS.precioCentimos / 100).toFixed(2), priceCurrency: PAIS.moneda } },
+    {
+      '@context': 'https://schema.org', '@type': 'WebApplication', name: t('marca'), url: `${SITE_URL}/${locale}`, description: t('seo.home.d'),
+      applicationCategory: 'EducationalApplication', operatingSystem: 'Web, Android', inLanguage: locale, publisher: { '@id': `${SITE_URL}/#org` },
+      offers: [
+        { '@type': 'Offer', name: t('precio.gratisT'), price: '0', priceCurrency: PAIS.moneda },
+        { '@type': 'Offer', name: t('precio.pagoT'), price: (PAIS.precioCentimos / 100).toFixed(2), priceCurrency: PAIS.moneda, url: `${SITE_URL}/${locale}/precio`, availability: 'https://schema.org/InStock' },
+      ],
+    },
+    ...ldSitio(locale, t('marca'), t('seo.home.d')),
   ];
 
   return (
@@ -63,13 +83,22 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
         <div className="mx-auto grid max-w-6xl items-center gap-8 lg:grid-cols-[1.1fr_1fr]">
           <div className="text-center lg:text-start">
             <CuentaAtras />
-            <h1 className="mt-5 text-[1.85rem] font-bold leading-[1.1] sm:text-5xl">{t('home.h1')}</h1>
+            <h1 className="mt-5 text-[1.9rem] font-bold leading-[1.06] sm:text-[3.25rem]">{t('home.h1')}</h1>
             <p className="mx-auto mt-4 max-w-xl text-base text-suave sm:text-lg lg:mx-0">{t('home.sub')}</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
               <a href="#test" className="boton boton-1 text-lg shadow-lg shadow-marca/25">{t('home.ctaTest')}</a>
               <Link href={`/${locale}/simulacro`} className="boton boton-2 text-lg">{t('home.ctaSim')}</Link>
             </div>
-            <ul className="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-semibold lg:justify-start">
+            <p className="mt-5 flex justify-center lg:justify-start">
+              <Link href={`/${locale}/precio`} className="sello-precio hover:border-terracota">
+                <span className="text-suave">
+                  {t('home.precioLinea', { p: '\u0000' }).split('\u0000').map((x, k) => (
+                    <span key={k}>{k > 0 && <b className="titulos text-marca">{p}</b>}{x}</span>
+                  ))}
+                </span>
+              </Link>
+            </p>
+            <ul className="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-semibold lg:justify-start">
               {['home.confianza1', 'home.confianza2', 'home.confianza3'].map((k) => (
                 <li key={k} className="flex items-center gap-1.5"><span className="text-ok">✓</span>{t(k as 'home.confianza1')}</li>
               ))}
@@ -164,7 +193,7 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
       {/* COMPARATIVA */}
       <section className="mt-16">
         <h2 className="text-center text-3xl font-bold">{t('home.compT')}</h2>
-        <div className="tarjeta mt-6 overflow-x-auto">
+        <div className="tarjeta mt-6 overflow-x-auto" tabIndex={0} role="region" aria-label={t("home.compT")}>
           <table className="w-full min-w-[520px] text-sm">
             <thead>
               <tr className="border-b border-[#EADFCD]">
@@ -195,6 +224,7 @@ export default async function Inicio({ params }: { params: Promise<{ locale: Loc
             <h2 className="text-3xl font-bold leading-tight sm:text-4xl">{t('home.precioT')}</h2>
             <p className="mt-3 text-white/90">{t('home.precioD')}</p>
             <p className="mt-3 font-semibold">✓ {t('precio.garantia', { p })}</p>
+            <Link href={`/${locale}/legal/condiciones`} className="mt-1 inline-block text-sm text-white/85 underline underline-offset-2 hover:text-white">{t('pie.condiciones')}</Link>
           </div>
           <div className="rounded-2xl bg-white p-6 text-center text-tinta shadow-xl">
             <p className="titulos text-5xl font-bold">{p}</p>

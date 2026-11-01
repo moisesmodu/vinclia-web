@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: '/',
-    name: 'CCSE en tu idioma · por Nuevo en España',
-    short_name: 'CCSE',
+    name: 'CCSE Fácil · por Nuevo en España',
+    short_name: 'CCSE Fácil',
     description: 'Aprueba el examen de nacionalidad en tu idioma: las 300 preguntas oficiales del CCSE explicadas, simulacro y repaso.',
     start_url: '/?fuente=app',
     scope: '/',

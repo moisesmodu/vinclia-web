@@ -165,7 +165,7 @@ export async function recuperarPago(sesion: Stripe.Checkout.Session): Promise<'e
     para: u.email,
     asunto: 'Tu acceso al CCSE quedó a medias',
     texto:
-      `Hola:\n\nEmpezaste a pagar el acceso completo a CCSE en tu idioma, pero no se completó.\n` +
+      `Hola:\n\nEmpezaste a pagar el acceso completo a CCSE Fácil, pero no se completó.\n` +
       `Puedes terminarlo aquí (el enlace vale 30 días): ${url}\n\n` +
       `Son ${(PAIS.precioCentimos / 100).toFixed(2).replace('.', ',')} €, pago único, ${PAIS.accesoDias} días, con garantía de aprobado.\n\n` +
       `Es el único recordatorio que te enviamos. Si no quieres más correos, responde «BAJA».`,

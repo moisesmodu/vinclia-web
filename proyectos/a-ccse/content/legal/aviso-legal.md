@@ -7,7 +7,7 @@ En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la informació
 - **NIF:** {{NIF}}
 - **Domicilio:** {{DOMICILIO}}
 - **Correo de contacto:** {{EMAIL}}
-- **Nombre comercial:** CCSE en tu idioma (marca Nuevo en España).
+- **Nombre comercial:** CCSE Fácil (marca Nuevo en España).
 
 ## Objeto
 Esta web y su aplicación ofrecen material de preparación para la prueba de Conocimientos Constitucionales y Socioculturales de España (CCSE).

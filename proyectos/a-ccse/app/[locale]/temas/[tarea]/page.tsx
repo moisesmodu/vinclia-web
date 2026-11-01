@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCALES, type Locale } from '@/lib/config';
 import { traductor } from '@/lib/i18n';
+import { alternas } from '@/lib/seo';
 import { deTarea, TAREAS } from '@/lib/preguntas';
 import { Test } from '@/components/Test';
 
@@ -11,7 +12,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; tarea: string }> }): Promise<Metadata> {
   const { locale, tarea } = await params;
   const t = traductor(locale);
-  return { title: `Test CCSE ${t('tarea.n', { n: tarea })}: ${t(`tarea.${tarea}` as 'tarea.1')}` };
+  const tema = t(`tarea.${tarea}` as 'tarea.1');
+  return {
+    title: `Test CCSE ${t('tarea.n', { n: tarea })}: ${tema}`,
+    description: t('seo.tema.d', { n: tarea, tema }),
+    alternates: alternas(locale, `/temas/${tarea}`),
+  };
 }
 
 export default async function TestTema({ params }: { params: Promise<{ locale: Locale; tarea: string }> }) {

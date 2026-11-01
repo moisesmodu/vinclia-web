@@ -15,7 +15,7 @@ Toate întrebările din examen provin dintr-o bancă publică de 300 de întreb�
 
 ## De ce să înveți în limba ta?
 
-Examenul este mereu în spaniolă. Dar e mult mai ușor să înțelegi *de ce* un răspuns este corect atunci când explicația este într-o limbă pe care o stăpânești bine. Pe „CCSE en tu idioma”, fiecare dintre cele 300 de întrebări are explicație în română, dar și în spaniolă, arabă, franceză, engleză, chineză și ucraineană. Întrebarea rămâne mereu în spaniolă, exact ca în ziua examenului, ca să te obișnuiești cu cuvintele-cheie. Poți asculta și fiecare întrebare citită cu voce tare.
+Examenul este mereu în spaniolă. Dar e mult mai ușor să înțelegi *de ce* un răspuns este corect atunci când explicația este într-o limbă pe care o stăpânești bine. Pe „CCSE Fácil”, fiecare dintre cele 300 de întrebări are explicație în română, dar și în spaniolă, arabă, franceză, engleză, chineză și ucraineană. Întrebarea rămâne mereu în spaniolă, exact ca în ziua examenului, ca să te obișnuiești cu cuvintele-cheie. Poți asculta și fiecare întrebare citită cu voce tare.
 
 ## Ce primești gratuit
 
@@ -70,4 +70,4 @@ Peste 98 % dintre candidați promovează proba obișnuită. Îți ajung 15 răsp
 
 Alege o temă din [testele pe teme](/ro/temas) sau intră direct în [simularea gratuită](/ro/simulacro). În 45 de minute vei ști cât de aproape ești de „apto”.
 
-*CCSE en tu idioma este un site independent și neoficial. Nu are legătură cu Instituto Cervantes; întrebările provin din manualul său public.*
+*CCSE Fácil este un site independent și neoficial. Nu are legătură cu Instituto Cervantes; întrebările provin din manualul său public.*

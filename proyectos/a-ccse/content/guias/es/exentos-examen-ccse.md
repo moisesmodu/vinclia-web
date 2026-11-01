@@ -59,4 +59,4 @@ Si te preocupa la nota, lee [la nota para aprobar el CCSE](/es/guia/nota-para-ap
 
 Practica gratis con 25 preguntas oficiales y un simulacro sin registro. Empieza por los [tests por tema](/es/temas) o haz directamente el [simulacro](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes ni con el Ministerio de Justicia; confirma tu caso en las fuentes oficiales.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes ni con el Ministerio de Justicia; confirma tu caso en las fuentes oficiales.*

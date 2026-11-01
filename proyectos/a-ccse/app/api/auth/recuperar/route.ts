@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     const enlace = `${SITE_URL}/${locale}/cuenta?token=${token}`;
     await enviarCorreo({
       para: email,
-      asunto: 'Cambia tu contraseña de CCSE en tu idioma',
+      asunto: 'Cambia tu contraseña de CCSE Fácil',
       texto: `Para elegir una contraseña nueva abre este enlace (caduca en 1 hora):\n${enlace}\n\nSi no lo has pedido tú, ignora este correo.`,
     });
   }

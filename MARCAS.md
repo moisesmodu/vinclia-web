@@ -54,8 +54,8 @@ Outfit (títulos) y Noto Sans (texto, cubre árabe, chino y cirílico). Motivo: 
 
 - **N · Nuevo en España.** «Tus trámites en España, paso a paso y en tu idioma.» Dominio nuevoenespana.app. Voz: lista
   de comprobación antes que texto; dice qué llevar, dónde ir y cuánto tarda; celebra cada trámite acabado.
-- **A · CCSE en tu idioma** (por Nuevo en España). «Aprueba el examen de nacionalidad en tu idioma.» Dominio
-  ccseentuidioma.com (la app Android ya usa `ccse-en-tu-idioma`). Voz: explica cada pregunta en el idioma de la
+- **A · CCSE Fácil** (por Nuevo en España; antes «CCSE en tu idioma»). «Aprueba el examen de nacionalidad en tu idioma.»
+  Dominio ccsefacil.com (el proyecto de Vercel y la app Android siguen como `ccse-en-tu-idioma`). Voz: explica cada pregunta en el idioma de la
   persona y le dice qué día es su examen; nunca asusta con el suspenso.
 - **M · Aprova.** «El teu certificat de català, del B1 al C2.» Acento ocre `#E0B23A`. Dominio aprova.cat.
   Alternativas: Certifica't, Nivell. Voz: en català per defecte; entrena exactament les parts de l'examen i diu la nota

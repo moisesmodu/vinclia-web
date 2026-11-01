@@ -57,4 +57,4 @@ La tasa de 85 € incluye **dos oportunidades**. Si no apruebas, o si no te pres
 
 La forma más fiable de saber si llegas a 15 es hacer un examen en las mismas condiciones. Nuestro [simulacro de examen CCSE online](/es/guia/simulacro-examen-ccse-online) tiene 25 preguntas oficiales, 45 minutos y nota final. Pruébalo gratis en [/es/simulacro](/es/simulacro) o refuerza antes tus temas débiles en los [tests por tema](/es/temas).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

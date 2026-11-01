@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { LOCALES, type Locale } from '@/lib/config';
 import { guias, leerDoc } from '@/lib/contenido';
 import { traductor } from '@/lib/i18n';
+import { alternasMapa, equivalentesGuia } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -12,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params;
   const d = leerDoc(`guias/${locale}/${slug}.md`, locale);
-  return { title: { absolute: d?.meta.titulo ?? slug }, description: d?.meta.descripcion, alternates: { canonical: `/${locale}/guia/${slug}` } };
+  return { title: { absolute: d?.meta.titulo ?? slug }, description: d?.meta.descripcion, alternates: alternasMapa(locale, equivalentesGuia(locale, slug)) };
 }
 export default async function Guia({ params }: { params: Promise<{ locale: Locale; slug: string }> }) {
   const { locale, slug } = await params;

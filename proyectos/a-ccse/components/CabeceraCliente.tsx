@@ -29,3 +29,25 @@ export function EnlaceCuenta() {
     </Link>
   );
 }
+
+/** Navegación principal con la página actual marcada (aria-current) y desplazamiento horizontal en móvil. */
+export function NavPrincipal({ enlaces }: { enlaces: [string, string][] }) {
+  const ruta = usePathname();
+  return (
+    <nav className="nav-desliza contenedor -mt-1 flex gap-1 overflow-x-auto pb-2 text-sm" aria-label="Principal">
+      {enlaces.map(([h, l]) => {
+        const activo = ruta === h || ruta.startsWith(h + '/');
+        return (
+          <Link
+            key={h}
+            href={h}
+            aria-current={activo ? 'page' : undefined}
+            className={`whitespace-nowrap rounded-lg px-3 py-2 font-medium transition-colors ${activo ? 'bg-terracota/10 text-marca' : 'text-tinta/80 hover:bg-black/5 hover:text-tinta'}`}
+          >
+            {l}
+          </Link>
+        );
+      })}
+    </nav>
+  );
+}

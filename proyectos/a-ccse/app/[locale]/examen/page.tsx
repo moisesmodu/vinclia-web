@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { LOCALES, type Locale } from '@/lib/config';
 import { leerDoc } from '@/lib/contenido';
 import { traductor } from '@/lib/i18n';
+import { alternas } from '@/lib/seo';
 
 const doc = (l: Locale) => leerDoc(`examen/${l}.md`, l) ?? leerDoc('examen/es.md', l);
 
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return {
     title: d?.meta.titulo ?? t('examen.h1'),
     description: d?.meta.descripcion ?? t('examen.desc'),
-    alternates: { canonical: `/${locale}/examen`, languages: Object.fromEntries(LOCALES.map((l) => [l, `/${l}/examen`])) },
+    alternates: alternas(locale, '/examen'),
   };
 }
 

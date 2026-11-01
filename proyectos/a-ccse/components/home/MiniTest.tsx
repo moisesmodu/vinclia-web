@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { track } from '@vercel/analytics';
 import { POR_ID, IDS_GRATIS, deTarea } from '@/lib/preguntas';
 import { useEstado } from '../Estado';
 import { useBanco } from '../useBanco';
@@ -34,7 +35,7 @@ export function MiniTest() {
   const p = POR_ID.get(IDS[i])!;
   return (
     <div className="grid gap-3">
-      <div className="flex items-center gap-1.5" aria-label={t('test.pregunta', { i: i + 1, n: IDS.length })}>
+      <div className="flex items-center gap-1.5" role="progressbar" aria-valuemin={0} aria-valuemax={IDS.length} aria-valuenow={i} aria-label={t("test.pregunta", { i: i + 1, n: IDS.length })}>
         {IDS.map((_, k) => (
           <span key={k} className={`h-2 flex-1 rounded-full ${k < i ? 'bg-terracota' : k === i ? 'bg-terracota/50' : 'bg-black/10'}`} />
         ))}
@@ -55,7 +56,7 @@ export function MiniTest() {
         bloqueada={false}
       />
       {elegida !== null && (
-        <button className="boton boton-1 justify-self-end" onClick={() => { setElegida(null); setI(i + 1); }}>
+        <button className="boton boton-1 justify-self-end" onClick={() => { setElegida(null); if (i + 1 === IDS.length) track('minitest_terminado', { aciertos, locale }); setI(i + 1); }}>
           {i + 1 < IDS.length ? t('test.siguiente') : t('test.terminar')} →
         </button>
       )}

@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { alternas } from '@/lib/seo';
 import { PAIS, type Locale } from '@/lib/config';
 import { traductor } from '@/lib/i18n';
 import { TAREAS, deTarea, ES_GRATIS } from '@/lib/preguntas';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
   const t = traductor((await params).locale);
-  return { title: t('temas.h1'), description: t('temas.intro'), alternates: { canonical: `/${(await params).locale}/temas` } };
+  return { title: `${t('temas.h1')} 2026`, description: t('seo.temas.d'), alternates: alternas((await params).locale, '/temas') };
 }
 
 export default async function Temas({ params }: { params: Promise<{ locale: Locale }> }) {

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { alternas } from '@/lib/seo';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/lib/config';
@@ -7,7 +8,7 @@ import { TAREAS, deTarea, FUENTE } from '@/lib/preguntas';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = traductor('es');
-  return { title: t('preg.h1'), description: t('preg.intro'), alternates: { canonical: '/es/preguntas' } };
+  return { title: t('preg.h1'), description: t('preg.intro'), alternates: alternas('es', '/preguntas', ['es']) };
 }
 export default async function Indice({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;

@@ -15,7 +15,7 @@ Toutes les questions de l'examen proviennent d'une banque publique de 300 questi
 
 ## Pourquoi réviser dans votre langue ?
 
-L'examen se passe toujours en espagnol. Mais comprendre *pourquoi* une réponse est juste est beaucoup plus facile quand l'explication est dans une langue que vous maîtrisez. Sur « CCSE en tu idioma », chacune des 300 questions est expliquée en français, ainsi qu'en espagnol, arabe, anglais, roumain, chinois et ukrainien. La question reste toujours en espagnol, comme le jour de l'examen, pour que vous reconnaissiez les mots exacts. Vous pouvez aussi écouter chaque question lue à voix haute.
+L'examen se passe toujours en espagnol. Mais comprendre *pourquoi* une réponse est juste est beaucoup plus facile quand l'explication est dans une langue que vous maîtrisez. Sur « CCSE Fácil », chacune des 300 questions est expliquée en français, ainsi qu'en espagnol, arabe, anglais, roumain, chinois et ukrainien. La question reste toujours en espagnol, comme le jour de l'examen, pour que vous reconnaissiez les mots exacts. Vous pouvez aussi écouter chaque question lue à voix haute.
 
 ## Ce qui est gratuit
 
@@ -70,4 +70,4 @@ Plus de 98 % des candidats réussissent l'épreuve ordinaire. Il suffit de 15 bo
 
 Choisissez un thème dans [l'entraînement par thème](/fr/temas) ou lancez directement [l'examen blanc gratuit](/fr/simulacro). En 45 minutes, vous saurez où vous en êtes.
 
-*CCSE en tu idioma est un site indépendant et non officiel. Il n'a aucun lien avec l'Instituto Cervantes ; les questions proviennent de son manuel public.*
+*CCSE Fácil est un site indépendant et non officiel. Il n'a aucun lien avec l'Instituto Cervantes ; les questions proviennent de son manuel public.*

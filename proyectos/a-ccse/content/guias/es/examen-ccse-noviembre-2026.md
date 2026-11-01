@@ -59,7 +59,7 @@ El método que mejor funciona para este examen es sencillo: practicar las 300 pr
 2. Haz un bloque al día, en tu idioma, y lee la explicación de cada fallo. Las preguntas de verdadero o falso tienen su [guía propia](/es/guia/preguntas-verdadero-falso-ccse).
 3. La semana anterior al examen, haz un [simulacro](/es/simulacro) de 25 preguntas en 45 minutos cada día.
 
-En CCSE en tu idioma puedes practicar 25 preguntas y un simulacro completo gratis, sin registrarte. Las explicaciones están en español, árabe, francés, inglés, rumano, chino y ucraniano. Somos una herramienta independiente, hecha en Lleida, y no tenemos relación con el Instituto Cervantes. Toda la información del examen está en la [página del examen](/es/examen).
+En CCSE Fácil puedes practicar 25 preguntas y un simulacro completo gratis, sin registrarte. Las explicaciones están en español, árabe, francés, inglés, rumano, chino y ucraniano. Somos una herramienta independiente, hecha en Lleida, y no tenemos relación con el Instituto Cervantes. Toda la información del examen está en la [página del examen](/es/examen).
 
 ## Después de aprobar: tus trámites de nacionalidad
 

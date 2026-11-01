@@ -1,11 +1,14 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
-import type { Locale } from '@/lib/config';
+import { precioTexto, type Locale } from '@/lib/config';
+import { alternas } from '@/lib/seo';
 import { traductor } from '@/lib/i18n';
 import { Precio } from '@/components/Precio';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
-  const t = traductor((await params).locale);
-  return { title: t('precio.h1') };
+  const { locale } = await params;
+  const t = traductor(locale);
+  const p = precioTexto(locale);
+  return { title: t('seo.precio.t', { p }), description: t('seo.precio.d', { p }), alternates: alternas(locale, '/precio') };
 }
 export default async function Pagina({ params }: { params: Promise<{ locale: Locale }> }) {
   const t = traductor((await params).locale);

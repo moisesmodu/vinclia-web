@@ -35,7 +35,7 @@ Muchas preguntas tratan de la vida diaria, algo que una persona que lleva años 
 
 ## Cómo prepararla si no sabes leer
 
-**Escuchar en vez de leer.** En "CCSE en tu idioma" cada pregunta tiene **lectura en voz alta**: se puede escuchar la pregunta en español y sus opciones, tantas veces como haga falta. Es la forma más parecida a la prueba adaptada.
+**Escuchar en vez de leer.** En "CCSE Fácil" cada pregunta tiene **lectura en voz alta**: se puede escuchar la pregunta en español y sus opciones, tantas veces como haga falta. Es la forma más parecida a la prueba adaptada.
 
 **Estudiar acompañado.** Un familiar, un amigo o un profesor puede leer la explicación en voz alta, en español o en el idioma de la persona. Las explicaciones están en español, árabe, francés, inglés, rumano, chino y ucraniano.
 
@@ -57,4 +57,4 @@ Muchas preguntas tratan de la vida diaria, algo que una persona que lleva años 
 
 Escucha las preguntas en los [tests por tema](/es/temas) y, cuando estés listo, haz el [simulacro](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; consulta las condiciones de la prueba adaptada en examenes.cervantes.es.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; consulta las condiciones de la prueba adaptada en examenes.cervantes.es.*

@@ -54,6 +54,6 @@ El PDF del Instituto Cervantes es la referencia que debes seguir: si una pregunt
 
 ## Estudia el manual con explicaciones
 
-En "CCSE en tu idioma" tienes las 300 preguntas del manual 2026 con su explicación en siete idiomas. Empieza por los [tests por tema](/es/temas) o haz un [simulacro gratis](/es/simulacro).
+En "CCSE Fácil" tienes las 300 preguntas del manual 2026 con su explicación en siete idiomas. Empieza por los [tests por tema](/es/temas) o haz un [simulacro gratis](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

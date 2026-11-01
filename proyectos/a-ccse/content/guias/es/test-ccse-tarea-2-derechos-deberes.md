@@ -86,4 +86,4 @@ Para practicar solo este formato, tienes la lista completa en [preguntas de verd
 
 Entra en el [test del tema 2](/es/temas/2) y repasa las 36 afirmaciones con su explicación en tu idioma. Cuando las tengas dominadas, comprueba tu nivel con un [simulacro completo de 25 preguntas](/es/simulacro). Son 3 puntos que casi todo el mundo puede asegurar.
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

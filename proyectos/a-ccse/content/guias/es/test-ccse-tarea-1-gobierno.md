@@ -84,4 +84,4 @@ Los ciudadanos de la UE y de países con acuerdo de reciprocidad votan en su mun
 
 Haz el [test del tema 1 con las 120 preguntas](/es/temas/1), con explicación en tu idioma, y cuando aciertes la mayoría pasa al [simulacro de 25 preguntas en 45 minutos](/es/simulacro). Complementa con la [guía de la tarea 2](/es/guia/test-ccse-tarea-2-derechos-deberes) y mira cuántos fallos te puedes permitir en la [nota para aprobar el CCSE](/es/guia/nota-para-aprobar-ccse).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

@@ -84,4 +84,4 @@ Un buen complemento para esta tarea es la [tarea 1](/es/guia/test-ccse-tarea-1-g
 
 Repasa las 24 preguntas en el [test del tema 3](/es/temas/3), con explicación en tu idioma. Después haz un [simulacro completo](/es/simulacro) para comprobar que no se te olvida nada bajo presión.
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

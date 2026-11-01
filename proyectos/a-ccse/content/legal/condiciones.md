@@ -2,7 +2,7 @@
 titulo: Condiciones de venta
 ---
 ## Producto
-Acceso completo a "CCSE en tu idioma" (web y app Android): las 300 preguntas oficiales con explicaciones y traducciones, simulacros ilimitados, repaso de fallos y sincronización del progreso.
+Acceso completo a "CCSE Fácil" (web y app Android): las 300 preguntas oficiales con explicaciones y traducciones, simulacros ilimitados, repaso de fallos y sincronización del progreso.
 
 ## Precio y duración
 **9,99 €, IVA incluido, pago único.** El acceso dura **90 días** desde el pago y termina solo, sin renovación automática ni cargos posteriores. Si vuelves a comprar antes de que termine, los días se suman.

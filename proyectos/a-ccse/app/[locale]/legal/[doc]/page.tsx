@@ -7,7 +7,7 @@ const DOCS = ['aviso-legal', 'privacidad', 'cookies', 'condiciones'];
 export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; doc: string }> }) {
   const { locale, doc } = await params;
-  return { title: leerDoc(`legal/${doc}.md`, locale)?.meta.titulo, robots: { index: false } };
+  return { title: leerDoc(`legal/${doc}.md`, locale)?.meta.titulo, robots: { index: false }, alternates: { canonical: `/${locale}/legal/${doc}` } };
 }
 export default async function Legal({ params }: { params: Promise<{ locale: Locale; doc: string }> }) {
   const { locale, doc } = await params;

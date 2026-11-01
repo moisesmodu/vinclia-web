@@ -84,4 +84,4 @@ Muchas fiestas y costumbres también aparecen en la [tarea 5 sobre sociedad espa
 
 Repasa las 36 preguntas en el [test del tema 4](/es/temas/4), con explicación en tu idioma, y vuelve a las que falles con el repaso espaciado. Cuando lo tengas, haz un [simulacro de examen](/es/simulacro) con las cinco tareas mezcladas.
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

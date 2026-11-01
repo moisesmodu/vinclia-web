@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { precioTexto } from '@/lib/config';
+import { track } from '@vercel/analytics';
 import { useEstado } from './Estado';
 
 /** «Quiero esto» → Stripe en una pantalla si ya hay cuenta; si no, a /precio, que crea la cuenta y abre el pago seguido. */
@@ -13,6 +14,7 @@ export function BotonPagar({ etiqueta, clase = 'boton boton-1' }: { etiqueta?: s
   async function ir() {
     if (!usuario) return router.push(`/${locale}/precio?pagar=1`);
     setOcupado(true);
+    track('checkout_iniciado', { locale, origen: 'oferta' });
     try {
       const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale }) });
       const d = await r.json();

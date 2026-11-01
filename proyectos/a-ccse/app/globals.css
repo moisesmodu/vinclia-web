@@ -11,8 +11,8 @@
   --color-fondo: #FBF5EC;
   --color-ok: #15803d;
   --color-mal: #c2410c;
-  --font-sans: "Noto Sans", "Noto Sans Arabic", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-titulos: "Outfit", "Noto Sans", "Noto Sans Arabic", "Noto Sans SC", system-ui, sans-serif;
+  --font-sans: var(--font-noto), "Noto Sans", "Noto Sans Arabic", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-titulos: var(--font-outfit), "Outfit", "Noto Sans", "Noto Sans Arabic", "Noto Sans SC", system-ui, sans-serif;
 }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -37,3 +37,22 @@ html[lang='ar'] h1, html[lang='ar'] h2, html[lang='ar'] h3, html[lang='zh'] h1, 
 .prosa th, .prosa td { border: 1px solid #EADFCD; padding: .45rem .6rem; text-align: start; }
 .prosa th { background: #F4EADB; }
 :focus-visible { outline: 3px solid var(--color-oro); outline-offset: 2px; }
+
+/* Pulido 11/2026: titulares con presencia, estados de pulsación, salto al contenido y cabecera fija. */
+html { scroll-behavior: smooth; scroll-padding-top: 7.5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+h1, h2 { letter-spacing: -0.02em; text-wrap: balance; }
+h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.boton { transition: background-color .18s ease, transform .12s ease, box-shadow .18s ease, border-color .18s ease; }
+.boton:active:not(:disabled) { transform: translateY(1px) scale(.985); }
+.boton-1 { box-shadow: 0 1px 0 rgb(255 255 255 / .18) inset, 0 6px 16px -6px rgb(148 58 33 / .55); }
+.boton-2:hover { border-color: var(--color-terracota); }
+.cifra, dt, .tabular { font-variant-numeric: tabular-nums; }
+.saltar { position: absolute; inset-inline-start: .75rem; top: -3rem; z-index: 50; background: var(--color-tinta); color: white; padding: .6rem 1rem; border-radius: .6rem; font-weight: 600; transition: top .15s; }
+.saltar:focus { top: .75rem; }
+.nav-desliza { scrollbar-width: none; mask-image: linear-gradient(to right, black calc(100% - 2rem), transparent); }
+html[dir='rtl'] .nav-desliza { mask-image: linear-gradient(to left, black calc(100% - 2rem), transparent); }
+.nav-desliza::-webkit-scrollbar { display: none; }
+@media (min-width: 768px) { .nav-desliza { mask-image: none; } }
+.sello-precio { display: inline-flex; align-items: center; gap: .5rem; border-radius: 999px; background: white; border: 1px solid #EADFCD; padding: .4rem .85rem; font-size: .875rem; box-shadow: 0 4px 14px -8px rgb(31 42 68 / .25); }

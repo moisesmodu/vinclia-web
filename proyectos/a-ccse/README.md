@@ -1,4 +1,4 @@
-# A · CCSE en tu idioma
+# A · CCSE Fácil
 
 Web y app (PWA + Android) para aprobar la prueba CCSE de nacionalidad española. Tiene las 300 preguntas oficiales del
 Instituto Cervantes, con la explicación de cada respuesta en castellano, árabe, francés, inglés, rumano, chino y
@@ -54,10 +54,10 @@ node pruebas/e2e-movil.mjs # 15 pruebas en navegador con pantalla de Pixel 7
 3. Pendiente y recomendado: que un nativo revise por muestreo el árabe y el chino antes de invertir en marketing en esos idiomas.
 
 ## Identidad de marca
-Ficha `proyectos.a-ccse` de `marcas/tokens.json` y `MARCAS.md`: **CCSE en tu idioma**, por Nuevo en España. Promesa: «Aprueba el examen de nacionalidad en tu idioma», en los 8 idiomas.
+Ficha `proyectos.a-ccse` de `marcas/tokens.json` y `MARCAS.md`: **CCSE Fácil** (antes «CCSE en tu idioma»), por Nuevo en España. El mismo nombre en el título, el logotipo, el pie, los textos legales y Stripe. Promesa: «Aprueba el examen de nacionalidad en tu idioma», en los 8 idiomas.
 - **Colores:** terracota `#D9603B` para formas, y `#B4492A` en botones y texto pequeño porque el terracota de la marca solo da 3,7:1 sobre blanco. Azul noche `#1F2A44`, crema `#FBF5EC` y oliva `#7A8F3C`.
-- **Tipografía:** Outfit en títulos y Noto Sans en el texto, cargadas de Google Fonts. Noto Sans Arabic y Noto Sans SC se cargan solo en esos idiomas.
-- **Logotipo e iconos:** se usan sin cambios. Están en `public/marca/logo.svg` y `public/icons/icon.svg`, y la variante adaptable (maskable) solo añade margen.
+- **Tipografía:** Outfit en títulos y Noto Sans en el texto, autoalojadas con `next/font` (sin CSS externo que bloquee el render). Noto Sans Arabic y Noto Sans SC se cargan solo en esos idiomas.
+- **Logotipo e iconos:** el arco de la familia con «CCSE **Fácil**» (`components/Logo.tsx` en la web, `public/marca/logo.svg` como archivo). Iconos en `public/icons/icon.svg`, y la variante adaptable (maskable) solo añade margen.
 - **Sello común en el pie y pantalla de precio con la estructura común.** «Cancela en un clic» es literal: no hay suscripción y la cuenta se borra con un botón (`DELETE /api/auth/cuenta`). La cuenta se anonimiza, y los pagos se guardan 6 años por obligación fiscal.
 
 ## Decisiones tomadas (y por qué)
@@ -71,8 +71,8 @@ Ficha `proyectos.a-ccse` de `marcas/tokens.json` y `MARCAS.md`: **CCSE en tu idi
 - **Desistimiento:** Checkout muestra el aviso del art. 103.m TRLGDCU antes de pagar, y la página de precio también.
 - **Afiliados:** `?ref=código` se guarda 60 días y llega a Stripe en `metadata.afiliado`. Checkout acepta códigos promocionales.
 - **Lectura en voz alta** con la voz del dispositivo (Web Speech API): coste cero. ElevenLabs queda para los vídeos.
-- **Sin analítica todavía.** Se activa con `NEXT_PUBLIC_UMAMI_SRC` y `NEXT_PUBLIC_UMAMI_ID` cuando haya un Umami. No hay cookies de seguimiento, así que no hace falta banner.
-- **Fuentes del sistema** en vez de Google Fonts: es más rápido y no depende de la red al compilar.
+- **Analítica:** Vercel Web Analytics (`@vercel/analytics`, sin cookies) con eventos del embudo `minitest_terminado`, `checkout_iniciado` y `pago_completado` (los eventos se ven con plan Pro). Umami opcional con `NEXT_PUBLIC_UMAMI_*`.
+- **SEO:** canonical y hreflang (con `x-default` y `zh-Hans`) en todas las páginas desde `lib/seo.ts`; el sitemap repite los mismos grupos. Auditoría en [AUDITORIA.md](AUDITORIA.md).
 
 ## Android (TWA)
 - `android/twa-manifest.json` es la configuración, y `android/proyecto/` el proyecto Gradle, generado con `@bubblewrap/core` (`node android/generar.mjs <node_modules>`). El paquete es `es.nuevoenespana.ccse` y el dominio `ccse-en-tu-idioma.vercel.app`.

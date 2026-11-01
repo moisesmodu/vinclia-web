@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { PAIS, precioTexto } from '@/lib/config';
+import { track } from '@vercel/analytics';
 import { useEstado } from './Estado';
 import { FormCuenta } from './Cuenta';
 
@@ -18,6 +19,7 @@ export function Precio() {
   async function pagar() {
     setOcupado(true);
     setMsg(null);
+    track('checkout_iniciado', { locale, origen: 'precio' });
     try {
       const r = await fetch('/api/stripe/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale }) });
       const d = await r.json();
@@ -56,9 +58,9 @@ export function Precio() {
             {[1, 2, 3].map((n) => <li key={n} className="flex gap-2"><span className="text-oro">✓</span>{t(`precio.gratis${n}` as 'precio.gratis1')}</li>)}
           </ul>
         </section>
-        <section className="tarjeta border-2 border-terracota p-5">
+        <section className="tarjeta relative border-2 !border-terracota bg-gradient-to-b from-[#FFF7EF] to-white p-5 shadow-[0_18px_40px_-24px_rgb(148_58_33/0.55)]">
           <h2 className="text-lg font-bold">{t('precio.pagoT')}</h2>
-          <p className="mt-1 text-3xl font-black">{p}</p>
+          <p className="titulos mt-1 text-4xl font-bold tracking-tight text-marca">{p}</p>
           <p className="text-sm text-suave">{t('precio.iva', { d: PAIS.accesoDias })}</p>
           <ul className="mt-3 grid gap-2 text-sm">
             {[1, 2, 3, 4, 5].map((n) => <li key={n} className="flex gap-2"><span className="text-ok">✓</span>{t(`precio.incluye${n}` as 'precio.incluye1')}</li>)}
@@ -66,7 +68,10 @@ export function Precio() {
         </section>
       </div>
       <p className="rounded-lg bg-oro/15 p-3 text-sm"><b>{t('precio.cancela')}</b></p>
-      <p className="rounded-lg bg-green-50 p-3 text-sm">{t('precio.garantia', { p })}</p>
+      <p className="rounded-lg bg-green-50 p-3 text-sm">
+        {t('precio.garantia', { p })}{' '}
+        <Link className="underline" href={`/${locale}/legal/condiciones`}>{t('pie.condiciones')}</Link>
+      </p>
       <p className="text-sm text-suave">{t('precio.comparar', { t: PAIS.convocatoria.tasaEuros })}</p>
       {!listo ? null : acceso ? (
         <div className="tarjeta p-5">

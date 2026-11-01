@@ -48,7 +48,7 @@ Una ventaja del CCSE es que **conoces todas las preguntas posibles** antes del e
 
 Prepararlos a la vez tiene sentido. Las preguntas del CCSE están escritas en un español sencillo y tratan de situaciones cotidianas: pedir la tarjeta sanitaria en el centro de salud, empadronarse, saber que el 112 es el teléfono de emergencias. Estudiarlas te da vocabulario útil para el día a día.
 
-Al revés, mejorar tu español hace más fácil entender las preguntas del CCSE sin depender de la traducción. Si tu español todavía es básico, apóyate en las explicaciones en tu idioma: en "CCSE en tu idioma" cada pregunta se explica en español, árabe, francés, inglés, rumano, chino y ucraniano, mientras el enunciado sigue en español como en el examen.
+Al revés, mejorar tu español hace más fácil entender las preguntas del CCSE sin depender de la traducción. Si tu español todavía es básico, apóyate en las explicaciones en tu idioma: en "CCSE Fácil" cada pregunta se explica en español, árabe, francés, inglés, rumano, chino y ucraniano, mientras el enunciado sigue en español como en el examen.
 
 ## En qué orden hacerlos
 
@@ -62,4 +62,4 @@ No hay un orden obligatorio. Algunas ideas para decidir:
 
 Prueba gratis 25 preguntas oficiales en los [tests por tema](/es/temas) o haz un [simulacro de 25 preguntas en 45 minutos](/es/simulacro). Si quieres saber qué nota necesitas, lee la [nota para aprobar el CCSE](/es/guia/nota-para-aprobar-ccse).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; consulta los requisitos del DELE A2 y del CCSE en las fuentes oficiales.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; consulta los requisitos del DELE A2 y del CCSE en las fuentes oficiales.*

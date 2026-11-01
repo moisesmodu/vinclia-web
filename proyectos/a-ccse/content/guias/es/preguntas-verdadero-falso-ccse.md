@@ -53,4 +53,4 @@ Si quieres entender estas ideas con más contexto, tienes la [guía completa de 
 
 Las 36 afirmaciones, con su explicación en tu idioma, están en el [test del tema 2](/es/temas/2). Después, compruébalo con el [simulacro de examen](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

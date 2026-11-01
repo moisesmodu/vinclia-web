@@ -15,7 +15,7 @@ Every exam question comes from a public bank of 300 questions published by the I
 
 ## Why study in your own language?
 
-The exam is always in Spanish. But understanding *why* an answer is right is much easier when the explanation is in a language you are comfortable with. On "CCSE en tu idioma" each of the 300 questions has an explanation in English (and in Spanish, Arabic, French, Romanian, Chinese and Ukrainian). The question itself always stays in Spanish, exactly as you will see it on exam day, so you get used to the key words. You can also listen to each question read aloud.
+The exam is always in Spanish. But understanding *why* an answer is right is much easier when the explanation is in a language you are comfortable with. On "CCSE Fácil" each of the 300 questions has an explanation in English (and in Spanish, Arabic, French, Romanian, Chinese and Ukrainian). The question itself always stays in Spanish, exactly as you will see it on exam day, so you get used to the key words. You can also listen to each question read aloud.
 
 ## What you get for free
 
@@ -72,4 +72,4 @@ More than 98% of candidates pass the standard test. You only need 15 out of 25, 
 
 Choose a topic in [practice by topic](/en/temas) or go straight to the [free mock exam](/en/simulacro). In 45 minutes you will know how close you are to passing.
 
-*CCSE en tu idioma is an independent, unofficial website. It is not affiliated with the Instituto Cervantes; the questions come from its public manual.*
+*CCSE Fácil is an independent, unofficial website. It is not affiliated with the Instituto Cervantes; the questions come from its public manual.*

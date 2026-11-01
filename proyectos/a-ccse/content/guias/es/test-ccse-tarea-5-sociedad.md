@@ -84,4 +84,4 @@ Algunas preguntas de esta tarea enlazan con los derechos sociales de la [tarea 2
 
 Estudia las 84 preguntas en el [test del tema 5](/es/temas/5) con explicación en tu idioma y practica luego con un [simulacro de 25 preguntas en 45 minutos](/es/simulacro).
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

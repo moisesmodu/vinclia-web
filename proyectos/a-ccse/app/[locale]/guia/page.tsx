@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import { traductor } from '@/lib/i18n';
+import { alternas } from '@/lib/seo';
 import type { Locale } from '@/lib/config';
 import { guias } from '@/lib/contenido';
 
-export const metadata = { title: 'Guías del examen CCSE' };
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = traductor(locale);
+  return { title: t('seo.guias.t'), description: t('seo.guias.d'), alternates: alternas(locale, '/guia') };
+}
 export default async function Indice({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
   const propias = guias(locale);

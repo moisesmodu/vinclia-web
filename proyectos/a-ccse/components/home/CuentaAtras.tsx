@@ -24,7 +24,7 @@ export function CuentaAtras() {
         <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-terracota" />
       </span>
       <span>{t('home.cuentaAtras', { f: corta(c.examen, locale), c: corta(limite, locale) })}</span>
-      <span className="rounded-full bg-terracota px-2 py-0.5">{t('home.quedan', { n: dias })}</span>
+      <span className="rounded-full bg-marca px-2 py-0.5">{t('home.quedan', { n: dias })}</span>
     </p>
   );
 }

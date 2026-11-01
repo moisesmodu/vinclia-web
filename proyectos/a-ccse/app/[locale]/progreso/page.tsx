@@ -1,7 +1,9 @@
 import type { Locale } from '@/lib/config';
 import { traductor } from '@/lib/i18n';
 import { PanelProgreso } from '@/components/Progreso';
-export const metadata = { robots: { index: false } };
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
+  return { robots: { index: false }, alternates: { canonical: `/${(await params).locale}/progreso` } };
+}
 export default async function Pagina({ params }: { params: Promise<{ locale: Locale }> }) {
   const t = traductor((await params).locale);
   return (

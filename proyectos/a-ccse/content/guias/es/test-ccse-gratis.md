@@ -15,7 +15,7 @@ Todas las preguntas salen de un banco público de 300 que el Instituto Cervantes
 
 ## Por qué estudiarlo en tu idioma
 
-El examen es siempre en español. Pero entender por qué una respuesta es correcta es mucho más fácil si la explicación está en la lengua que mejor dominas. En "CCSE en tu idioma" cada una de las 300 preguntas tiene su explicación en **español, árabe, francés, inglés, rumano, chino y ucraniano**. La pregunta la ves siempre en español, como en el examen, para que te acostumbres a las palabras exactas que vas a leer el día de la prueba. También puedes escuchar las preguntas en voz alta.
+El examen es siempre en español. Pero entender por qué una respuesta es correcta es mucho más fácil si la explicación está en la lengua que mejor dominas. En "CCSE Fácil" cada una de las 300 preguntas tiene su explicación en **español, árabe, francés, inglés, rumano, chino y ucraniano**. La pregunta la ves siempre en español, como en el examen, para que te acostumbres a las palabras exactas que vas a leer el día de la prueba. También puedes escuchar las preguntas en voz alta.
 
 ## Qué tienes gratis
 
@@ -74,4 +74,4 @@ Más del 98 % de los candidatos aprueba la prueba ordinaria. Con 15 aciertos de 
 
 Elige un tema en [test por temas](/es/temas) o lánzate directamente al [simulacro gratis](/es/simulacro). En 45 minutos sabrás cómo de cerca estás del apto.
 
-*CCSE en tu idioma es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*
+*CCSE Fácil es una web independiente y no oficial. No tiene relación con el Instituto Cervantes; las preguntas proceden de su manual público.*

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { alternas } from '@/lib/seo';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { traducciones } from '@/lib/banco';
@@ -15,9 +16,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const p = POR_ID.get(Number((await params).id));
   if (!p) return {};
   return {
-    title: { absolute: `${p.texto.replace(/…$/, '...')} | Pregunta CCSE ${p.id}` },
+    title: { absolute: `${p.texto.replace(/…$/, '...')} | Test CCSE 2026, pregunta ${p.id}` },
     description: `Pregunta ${p.id} del examen CCSE 2026. Respuesta correcta: ${p.opciones[p.respuesta]} Explicación y test en tu idioma.`,
-    alternates: { canonical: `/es/preguntas/${p.id}` },
+    alternates: alternas('es', `/preguntas/${p.id}`, ['es']),
   };
 }
 
