@@ -12,13 +12,13 @@ export function Cabecera({ idioma, alternativa }: { idioma: Idioma; alternativa?
     <header className="sticky top-0 z-20 bg-crema/90 backdrop-blur border-b border-[#efe4cf]">
       <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-3">
         <Link href={p || "/"} className="flex items-center" aria-label="Lunilla">
-          <Logotipo idioma={idioma} className="h-11 w-auto" />
+          <Logotipo idioma={idioma} className="h-8 min-[400px]:h-9 sm:h-11 w-auto" />
         </Link>
-        <nav className="flex items-center gap-3 sm:gap-5 text-sm font-bold">
+        <nav className="flex items-center gap-2.5 sm:gap-5 text-sm font-bold">
           <Link href={`${p}/#muestras`} className="hidden sm:inline text-noche">{x.nav.muestras}</Link>
           <Link href={idioma === "ca" ? "/ca/contes" : "/cuentos"} className="hidden md:inline text-noche">{x.nav.ideas}</Link>
-          <Link href={otro} className="text-suave" hrefLang={idioma === "ca" ? "es" : "ca"}>{x.nav.otroIdioma}</Link>
-          <Link href={`${p}/crear`} className="boton !py-2 !px-4 !min-h-0 text-sm">{x.nav.crear}</Link>
+          <Link href={otro} className="text-suave py-2" hrefLang={idioma === "ca" ? "es" : "ca"} lang={idioma === "ca" ? "es" : "ca"} aria-label={x.nav.otroIdioma}><span aria-hidden className="min-[400px]:hidden">{idioma === "ca" ? "ES" : "CA"}</span><span className="hidden min-[400px]:inline">{x.nav.otroIdioma}</span></Link>
+          <Link href={`${p}/crear`} className="boton !py-2 !px-4 !min-h-[40px] text-sm whitespace-nowrap">{x.nav.crear}</Link>
         </nav>
       </div>
     </header>

@@ -59,7 +59,7 @@ const C = {
       ["Precio", "PDF 7,90 € · tapa dura 36,90 € con envío", "30–45 €, y el envío aparte"],
     ],
     ocasionesTitulo: "Ideas por ocasión",
-    ocasiones: [["Regalo de los abuelos", "/cuentos/regalo-abuelos-navidad"], ["Reyes", "/cuentos/regalo-reyes-magos-cuento-personalizado"], ["Última hora", "/cuentos/regalo-ultima-hora-cuento-pdf"], ["Cumpleaños", "/cuentos/regalo-cumpleanos-nino-personalizado"], ["Hermanito nuevo", "/cuentos/cuento-hermanito-nuevo-celos"], ["Miedo a la oscuridad", "/cuentos/cuento-para-dormir-miedo-a-la-oscuridad"], ["3 años", "/cuentos/regalo-original-nino-3-anos"], ["5 y 6 años", "/cuentos/regalo-original-ninos-5-anos"]],
+    ocasiones: [["Regalo de los abuelos", "/cuentos/regalo-abuelos-navidad"], ["Reyes", "/cuentos/regalo-reyes-magos-cuento-personalizado"], ["Última hora", "/cuentos/regalo-ultima-hora-cuento-pdf"], ["Cumpleaños", "/cuentos/regalo-cumpleanos-nino-personalizado"], ["Hermanito nuevo", "/cuentos/cuento-hermanito-nuevo-celos"], ["Miedo a la oscuridad", "/cuentos/cuento-para-dormir-miedo-a-la-oscuridad"], ["Navidad con 3 años", "/cuentos/regalo-original-nino-3-anos"], ["5 y 6 años", "/cuentos/regalo-original-ninos-5-anos"]],
     garOjo: "Tranquilidad", garTitulo: "Si algo no te gusta, lo arreglamos",
     gar: [["corazon", "Te lo rehacemos gratis", "Una vez: el texto, las ilustraciones o las dos cosas."], ["regalo", "Reimpresión sin coste", "Si el libro llega dañado o con un defecto, nos mandas una foto y lo volvemos a imprimir."], ["escudo", "Pago seguro", "Con tarjeta, Apple Pay o Google Pay a través de Stripe. No guardamos tu tarjeta."], ["pluma", "Te responde una persona", "Escríbenos a {correo}: contestamos en menos de 24 horas laborables."]],
     finalTitulo: "¿Cómo se llama tu protagonista?", finalSub: "Ves su portada y las primeras páginas antes de pagar nada.",
@@ -108,7 +108,7 @@ const C = {
       ["Preu", "PDF 7,90 € · tapa dura 36,90 € amb enviament", "30–45 €, i l'enviament a part"],
     ],
     ocasionesTitulo: "Idees per ocasió",
-    ocasiones: [["Regal dels avis", "/ca/contes/regal-avis-nadal"], ["Reis", "/ca/contes/regal-reis-conte-personalitzat"], ["El tió", "/ca/contes/regal-tio-de-nadal"], ["Germanet nou", "/ca/contes/conte-germanet-nou"], ["Por de la foscor", "/ca/contes/conte-per-dormir-por-a-la-foscor"], ["Un conte a Lleida", "/ca/contes/conte-personalitzat-lleida"], ["Sense fotos", "/ca/contes/conte-personalitzat-sense-fotos"]],
+    ocasiones: [["Regal dels avis", "/ca/contes/regal-avis-nadal"], ["Reis", "/ca/contes/regal-reis-conte-personalitzat"], ["El tió", "/ca/contes/regal-tio-de-nadal"], ["Germanet nou", "/ca/contes/conte-germanet-nou"], ["Por de la foscor", "/ca/contes/conte-per-dormir-por-a-la-foscor"], ["Un conte a Lleida", "/ca/contes/conte-personalitzat-lleida"], ["Sense fotos", "/ca/contes/conte-personalitzat-sense-fotos"], ["Nadal amb 3 anys", "/ca/contes/regal-nadal-nen-3-anys"], ["Tapa dura", "/ca/contes/llibre-personalitzat-tapa-dura"]],
     garOjo: "Tranquil·litat", garTitulo: "Si alguna cosa no t'agrada, ho arreglem",
     gar: [["corazon", "Te'l refem gratis", "Una vegada: el text, les il·lustracions o totes dues coses."], ["regalo", "Reimpressió sense cost", "Si el llibre arriba malmès o amb un defecte, ens envies una foto i el tornem a imprimir."], ["escudo", "Pagament segur", "Amb targeta, Apple Pay o Google Pay a través de Stripe. No guardem la teva targeta."], ["pluma", "Et respon una persona", "Escriu-nos a {correo}: contestem en menys de 24 hores feineres."]],
     finalTitulo: "Com es diu el teu protagonista?", finalSub: "Veus la seva portada i les primeres pàgines abans de pagar res.",
@@ -154,10 +154,16 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
 
       {/* 1 · Noche: promesa + portada que se personaliza en vivo */}
       <section className="cielo envoltura">
-        <div className="mx-auto max-w-6xl grid gap-10 lg:grid-cols-[1.05fr_1fr] items-center pt-10 pb-24 lg:pt-14 lg:pb-28 relative z-[1]">
-          <div className="order-2 lg:order-1">
+        {/* Móvil: titular → libro con el formulario → argumentos. Escritorio: texto a la izquierda, libro a la derecha. */}
+        <div className="mx-auto max-w-6xl grid gap-x-12 gap-y-7 lg:grid-cols-[1.05fr_1fr] lg:grid-rows-[auto_1fr] pt-7 pb-24 lg:pt-14 lg:pb-28 relative z-[1]">
+          <div className="lg:self-end">
             <p className="ojo mb-3">{k.ojo}</p>
-            <h1 className="text-[2.6rem] sm:text-6xl leading-[1.02] mb-5">{x.promesa.replace(/\.$/, "")}</h1>
+            <h1 className="text-[2.15rem] sm:text-6xl leading-[1.04] text-balance">{x.promesa.replace(/\.$/, "")}</h1>
+          </div>
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-center">
+            <Personalizador idioma={idioma} />
+          </div>
+          <div className="lg:self-start">
             <p className="text-lg opacity-90 mb-7 max-w-[34rem]">{k.sub}</p>
             <ul className="grid sm:grid-cols-2 gap-3 max-w-[34rem]">
               {k.confianza.map(([i, txt]) => {
@@ -168,9 +174,6 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
             <p className="mt-7 text-sm opacity-80">
               PDF <b className="acento">{euros(c.precios.pdf, idioma)}</b> · {x.precios.tapaDura.toLowerCase()} <b className="acento">{euros(c.precios.tapaDura, idioma)}</b> {x.precios.envio} · {x.precio.iva}
             </p>
-          </div>
-          <div className="order-1 lg:order-2">
-            <Personalizador idioma={idioma} />
           </div>
         </div>
       </section>

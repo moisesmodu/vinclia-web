@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Idioma } from "@/lib/catalogo";
 import { t } from "@/i18n/textos";
 
-export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma; pedidoId: string; precios: { pdf: string; tapaDura: string }; textos: { envio: string } }) {
+export function Comprar({ idioma, pedidoId, precios, textos, aviso }: { idioma: Idioma; pedidoId: string; precios: { pdf: string; tapaDura: string }; textos: { envio: string }; aviso?: string }) {
   const x = t(idioma);
   const [formato, setFormato] = useState<"pdf" | "tapaDura">("tapaDura");
   const [email, setEmail] = useState("");
@@ -20,7 +20,7 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
     window.location.href = j.url;
   }
   const opcion = (f: "pdf" | "tapaDura", titulo: string, precio: string, nota: string) => (
-    <label className={`block rounded-2xl border-2 p-4 cursor-pointer ${formato === f ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white"}`}>
+    <label className={`block rounded-2xl border-2 p-4 cursor-pointer has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-[#F5C84C] ${formato === f ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white"}`}>
       <input type="radio" name="formato" className="sr-only" checked={formato === f} onChange={() => setFormato(f)} />
       <span className="flex justify-between items-baseline gap-2"><span className="font-bold text-noche">{titulo}</span><span className="titulo text-2xl">{precio}</span></span>
       <span className="block text-sm text-suave mt-1">{nota}</span>
@@ -29,6 +29,7 @@ export function Comprar({ idioma, pedidoId, precios, textos }: { idioma: Idioma;
   return (
     <div className="tarjeta p-5 sm:p-6 space-y-4" id="comprar">
       <h2 className="text-2xl">{x.vista.elige}</h2>
+      {aviso && <p className="text-sm font-bold text-[#2B3A67] rounded-xl bg-[#FEF3D3] px-3 py-2">☾ {aviso}</p>}
       {opcion("tapaDura", x.precios.tapaDura, precios.tapaDura, `${idioma === "ca" ? "20 × 20 cm · 30 pàgines" : "20 × 20 cm · 30 páginas"} · ${textos.envio}. ${x.vista.libroIncluyePdf}`)}
       {opcion("pdf", x.precios.pdf, precios.pdf, x.precios.entrega)}
       <label className="block"><span className="etiqueta">{x.vista.email}</span>

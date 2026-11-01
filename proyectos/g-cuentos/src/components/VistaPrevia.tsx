@@ -86,7 +86,7 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
             {pagado ? (
               <Link href={`${pref(idioma)}/pedido/${p.id}`} className="boton w-full">{x.pedido.titulo}</Link>
             ) : (
-              <Comprar idioma={idioma} pedidoId={p.id} precios={{ pdf: euros(c.precios.pdf, idioma), tapaDura: euros(c.precios.tapaDura, idioma) }} textos={{ envio: x.precios.envio }} />
+              <Comprar idioma={idioma} pedidoId={p.id} precios={{ pdf: euros(c.precios.pdf, idioma), tapaDura: euros(c.precios.tapaDura, idioma) }} textos={{ envio: x.precios.envio }} aviso={avisoFechas(c.fechasLimite.navidadTapaDura, c.fechasLimite.reyesTapaDura, idioma)} />
             )}
             <Link href={`${pref(idioma)}/crear?coleccion=${p.coleccion}`} className="block text-center text-sm text-suave underline">{x.vista.cambiar}</Link>
           </div>
@@ -94,4 +94,13 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
       </div>
     </Pagina>
   );
+}
+
+/** Fecha límite vigente del libro impreso (Navidad y, pasada esa, Reyes); nada fuera de campaña. */
+function avisoFechas(navidad: string, reyes: string, idioma: Idioma): string | undefined {
+  const hoy = new Date().toISOString().slice(0, 10);
+  const f = (iso: string) => new Intl.DateTimeFormat(idioma === "ca" ? "ca-ES" : "es-ES", { day: "numeric", month: "long" }).format(new Date(`${iso}T12:00:00`));
+  if (hoy <= navidad) return idioma === "ca" ? `Per Nadal: demana la tapa dura fins al ${f(navidad)}. El PDF arriba en menys de 2 hores.` : `Para Navidad: pide la tapa dura hasta el ${f(navidad)}. El PDF llega en menos de 2 horas.`;
+  if (hoy <= reyes) return idioma === "ca" ? `Per Reis: demana la tapa dura fins al ${f(reyes)}. El PDF arriba en menys de 2 hores.` : `Para Reyes: pide la tapa dura hasta el ${f(reyes)}. El PDF llega en menos de 2 horas.`;
+  return undefined;
 }
