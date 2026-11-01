@@ -1,10 +1,12 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { AFICIONES, ARROPA, COLECCIONES, COLORES, COMPANEROS, type Bi, type ColeccionId, type Genero, type Idioma } from "@/lib/catalogo";
 import { BANDAS, bandaDe, type PlantillaId } from "@/lib/plantillas/tipos";
 import { rellenar, type Aspecto, type DatosNino } from "@/lib/rellenar";
+import { portada } from "@/lib/portadas";
 import { pref, t } from "@/i18n/textos";
 import { Avatar, COLOR_HEX, PELO_HEX, PIEL_HEX } from "./Avatar";
 
@@ -27,6 +29,7 @@ const C = {
     resumen: "Así va su libro", paginas: (n: number) => `${n} páginas ilustradas`, solo: "Solo para",
     tuNombre: "Su nombre",
     ilustrado: "Así lo pintarán en todas las páginas.",
+    portadaNota: "Portada de ejemplo de esta colección. En su libro, con su nombre y su aspecto.",
   },
   ca: {
     pasos: ["Protagonista", "El seu món", "El conte", "Dedicatòria"],
@@ -44,6 +47,7 @@ const C = {
     resumen: "Així va el seu llibre", paginas: (n: number) => `${n} pàgines il·lustrades`, solo: "Només per a",
     tuNombre: "El seu nom",
     ilustrado: "Així el pintaran a totes les pàgines.",
+    portadaNota: "Portada d'exemple d'aquesta col·lecció. Al seu llibre, amb el seu nom i el seu aspecte.",
   },
 };
 
@@ -106,20 +110,21 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
         onSubmit={(e) => { e.preventDefault(); if (paso < 3) { if (validoPaso[paso]) setPaso(paso + 1); } else enviar(); }}
         className="tarjeta p-5 sm:p-8 space-y-6 order-2 lg:order-1"
       >
-        <ol className="flex gap-2 text-xs sm:text-sm font-bold" aria-label="pasos">
+        {/* Pasos como fases de la luna: se llena a medida que avanza el cuento */}
+        <ol className="fases" aria-label={idioma === "ca" ? "Passos" : "Pasos"}>
           {k.pasos.map((n, i) => (
-            <li key={n} className="flex-1">
+            <li key={n}>
               <button type="button" onClick={() => i <= paso || validoPaso.slice(0, i).every(Boolean) ? setPaso(i) : null}
-                className={`w-full rounded-full py-2 ${i === paso ? "bg-noche text-crema" : i < paso ? "bg-[#FEF3D3] text-noche" : "bg-[#f1ebdf] text-suave"}`}
-                aria-current={i === paso ? "step" : undefined}>
-                <span className="opacity-70">{i + 1}.</span> {n}
+                className={`fase w-full ${i < paso ? "hecha" : ""}`} aria-current={i === paso ? "step" : undefined}>
+                <span className="fase-luna" style={{ ["--f" as string]: i < paso ? 1 : i === paso ? 0.55 : 0 }} aria-hidden />
+                <span><span className="sr-only">{i + 1}. </span>{n}</span>
               </button>
             </li>
           ))}
         </ol>
 
         {paso === 0 && (
-          <div className="space-y-5">
+          <div className="space-y-5 paso-anim">
             <div className="grid gap-4 sm:grid-cols-2">
               <label><span className="etiqueta">{x.nombre}</span><input autoFocus required maxLength={24} className="campo" autoComplete="off" value={s.nombre} onChange={(e) => set("nombre", e.target.value)} /></label>
               <fieldset><legend className="etiqueta">{x.protagonista}</legend>
@@ -166,7 +171,7 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
         )}
 
         {paso === 1 && (
-          <div className="space-y-5">
+          <div className="space-y-5 paso-anim">
             <div className="grid gap-4 sm:grid-cols-2">
               <label><span className="etiqueta">{x.ciudad}</span><input autoFocus required maxLength={40} className="campo" placeholder="Lleida" value={s.ciudad} onChange={(e) => set("ciudad", e.target.value)} /></label>
               <label><span className="etiqueta">{x.companero}</span>
@@ -205,16 +210,19 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
         )}
 
         {paso === 2 && (
-          <div className="space-y-5">
+          <div className="space-y-5 paso-anim">
             <fieldset>
               <legend className="etiqueta">{x.coleccion}</legend>
               <div className="grid gap-2 sm:grid-cols-2">
                 {COLECCIONES.map((c) => (
                   <button type="button" key={c.id} onClick={() => setS((o) => ({ ...o, coleccion: c.id, tema: c.temas[0].id }))}
-                    className={`rounded-2xl border-2 p-4 text-left min-h-[48px] transition ${s.coleccion === c.id ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white hover:border-luna/60"}`}>
-                    <span className="text-xs font-bold uppercase tracking-wide text-suave">{c.nombre[idioma]}</span>
-                    <span className="block titulo text-lg leading-tight text-noche mt-1">{titulo(c.id)}</span>
-                    <span className="block text-xs text-suave mt-1">{c.descripcion[idioma]}</span>
+                    aria-pressed={s.coleccion === c.id} className={`coleccion-op ${s.coleccion === c.id ? "activa" : ""}`}>
+                    <Image src={portada(c.id, s.edad, s.genero)} alt="" width={152} height={152} sizes="76px" />
+                    <span className="min-w-0">
+                      <span className="text-sm font-bold text-suave">{c.nombre[idioma]}</span>
+                      <span className="block titulo text-lg leading-tight text-noche mt-0.5">{titulo(c.id)}</span>
+                      <span className="block text-xs text-suave mt-1">{c.descripcion[idioma]}</span>
+                    </span>
                   </button>
                 ))}
               </div>
@@ -246,7 +254,7 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
         )}
 
         {paso === 3 && (
-          <div className="space-y-4">
+          <div className="space-y-4 paso-anim">
             <label className="block"><span className="etiqueta">{x.dePartede}</span><input maxLength={60} className="campo" placeholder={x.dePartedeEj} value={s.deParteDe} onChange={(e) => set("deParteDe", e.target.value)} /></label>
             <label className="block"><span className="etiqueta">{x.dedicatoria}</span><textarea maxLength={240} rows={3} className="campo" value={s.dedicatoria} onChange={(e) => set("dedicatoria", e.target.value)} /></label>
             <p className="text-sm text-suave">{x.privacidad}</p>
@@ -258,23 +266,35 @@ export function Formulario({ idioma, titulos }: { idioma: Idioma; titulos: Recor
         {error && <p className="text-primario-osc font-bold" role="alert">{error}</p>}
         <div className="flex gap-3">
           {paso > 0 && <button type="button" className="boton-sec flex-none" onClick={() => setPaso(paso - 1)}>{k.atras}</button>}
-          <button className="boton flex-1 text-lg" disabled={enviando || !validoPaso[paso]}>
-            {paso < 3 ? `${k.siguiente} →` : enviando ? x.creando : x.enviar}
+          <button className={`${paso < 3 ? "boton" : "boton-luna"} flex-1 text-lg`} disabled={enviando || !validoPaso[paso]}>
+            {paso < 3 ? k.siguiente : enviando ? x.creando : x.enviar}
+            {paso < 3 && <svg aria-hidden viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 8h10M9 4l4 4-4 4" /></svg>}
           </button>
         </div>
       </form>
 
       <aside className="order-1 lg:order-2 lg:sticky lg:top-24">
-        <div className="rounded-3xl p-5 text-crema cielo-suave shadow-xl">
-          <p className="text-xs uppercase tracking-widest text-luna font-bold">{k.resumen}</p>
-          <div className="flex items-center gap-4 mt-3">
-            <div className="rounded-2xl bg-crema/10 p-2 flex-none"><Avatar aspecto={s.aspecto} genero={s.genero} color={s.color} tam={110} pijama={s.coleccion === "dormir"} /></div>
-            <div className="min-w-0">
-              <p className="titulo text-xl leading-tight text-crema break-words">{titulo(s.coleccion)}</p>
+        <div className="rounded-[28px] p-5 sm:p-6 text-crema cielo-suave shadow-[0_30px_60px_-30px_rgba(20,27,54,.8)] relative overflow-hidden">
+          <p className="text-sm text-luna font-bold">{k.resumen}</p>
+          {/* Libro vivo: la portada cambia con la colección, la edad y el protagonista */}
+          <div className="grid grid-cols-[minmax(0,150px)_1fr] lg:grid-cols-1 gap-4 items-center mt-4">
+            <div className="libro-vivo" aria-hidden>
+              <div className="libro-vivo-tapa">
+                <Image key={portada(s.coleccion, s.edad, s.genero)} src={portada(s.coleccion, s.edad, s.genero)} alt="" width={600} height={600} sizes="(max-width: 1024px) 150px, 300px" priority />
+                <div className="libro-vivo-titulo"><p>{titulo(s.coleccion)}</p></div>
+              </div>
+              <div className="libro-vivo-paginas" />
+            </div>
+            <div className="min-w-0 lg:mt-3">
+              <p className="titulo text-xl leading-tight text-crema break-words lg:hidden">{titulo(s.coleccion)}</p>
               <p className="text-sm text-crema/75 mt-1">{k.paginas(BANDAS[banda].paginas)} · {BANDAS[banda].etiqueta[idioma]}</p>
+              <p className="text-xs text-crema/60 mt-1">{k.portadaNota}</p>
             </div>
           </div>
-          <p className="text-xs text-crema/70 mt-3">{k.ilustrado}</p>
+          <div className="flex items-center gap-3 mt-5 rounded-2xl bg-crema/8 p-2 pr-3 ring-1 ring-crema/10">
+            <div className="rounded-xl bg-crema/10 p-1 flex-none"><Avatar aspecto={s.aspecto} genero={s.genero} color={s.color} tam={64} pijama={s.coleccion === "dormir"} /></div>
+            <p className="text-xs text-crema/80">{k.ilustrado}</p>
+          </div>
           <ul className="flex flex-wrap gap-1.5 mt-3 text-xs">
             {[s.ciudad, s.mascota && `${COMPANEROS.find((c) => c.id === s.companero)!.etiqueta[idioma]} ${s.mascota}`, AFICIONES.find((a) => a.id === s.aficion)!.etiqueta[idioma], s.amigo, s.color && COLORES.find((c) => c.id === s.color)?.etiqueta[idioma]]
               .filter(Boolean).map((v) => <li key={String(v)} className="rounded-full bg-crema/15 px-2.5 py-1">{v}</li>)}

@@ -17,8 +17,11 @@ export function AvisoCampana({ idioma, navidad, reyes }: { idioma: Idioma; navid
   else if (dr !== null && dr >= 0) texto = ca ? `Llibre imprès per Reis: queden ${dr} dies per demanar-lo` : `Libro impreso para Reyes: quedan ${dr} días para pedirlo`;
   else texto = ca ? "Llibre imprès en tapa dura amb enviament inclòs" : "Libro impreso en tapa dura con envío incluido";
   return (
-    <div className="banda-noche text-center text-sm font-bold py-2 envoltura">
-      <span className="acento" style={{ color: "#F5C84C" }}>☾</span> {texto} · {ca ? "el PDF arriba en menys de 2 hores" : "el PDF llega en menos de 2 horas"}
+    <div className="bg-[#141B36] text-[#FFF8EC] text-center text-xs sm:text-sm font-bold pt-1 pb-2 envoltura">
+      <span className="inline-flex flex-wrap justify-center items-center gap-x-2 rounded-full px-4 py-1.5 bg-[rgba(255,248,236,.07)] ring-1 ring-[rgba(255,248,236,.1)]">
+        <span><span style={{ color: "#F5C84C" }} aria-hidden>☾ </span>{texto}</span>
+        <span className="hidden sm:inline opacity-75 font-normal">{ca ? "El PDF arriba en menys de 2 hores" : "El PDF llega en menos de 2 horas"}</span>
+      </span>
     </div>
   );
 }

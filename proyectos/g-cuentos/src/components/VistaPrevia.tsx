@@ -33,17 +33,17 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
   return (
     <Pagina idioma={idioma}>
       <div className="mx-auto max-w-5xl px-4 py-8">
-        <p className="text-primario font-bold">{x.vista.titulo}</p>
-        <h1 className="text-3xl sm:text-4xl mt-1 mb-2">{cuento.titulo}</h1>
-        {!pagado && <a href="#comprar" className="boton w-full mb-4 lg:hidden">{ca ? `Comprar · des de ${euros(c.precios.pdf, idioma)}` : `Comprar · desde ${euros(c.precios.pdf, idioma)}`}</a>}
+        <p className="ojo">{x.vista.titulo}</p>
+        <h1 className="text-[2.2rem] sm:text-5xl mt-2 mb-3 leading-[1.05]">{cuento.titulo}</h1>
+        {!pagado && <div className="lg:hidden mb-4"><a href="#comprar" className="boton w-full">{ca ? `Comprar · des de ${euros(c.precios.pdf, idioma)}` : `Comprar · desde ${euros(c.precios.pdf, idioma)}`}</a></div>}
         <p className="text-suave mb-6">{ca ? `Aquestes són les primeres pàgines. El conte complet té ${B.paginas} pàgines il·lustrades, pensades per a ${B.etiqueta.ca}.` : `Estas son las primeras páginas. El cuento completo tiene ${B.paginas} páginas ilustradas, pensadas para ${B.etiqueta.es}.`}</p>
         <div className="grid gap-8 lg:grid-cols-[1fr_360px] items-start">
           <div className="space-y-6">
-            <figure className="tarjeta p-3">
-              <div className="relative marca-agua rounded-xl overflow-hidden">
+            <figure>
+              <div className="relative marca-agua lamina">
                 <Image src={portada.url} alt="" width={1200} height={1200} className="w-full" priority />
                 <div className="absolute top-[6%] inset-x-[8%] bg-crema/90 rounded-xl p-3 text-center">
-                  <p className="titulo text-xl sm:text-3xl">{cuento.titulo}</p>
+                  <p className="titulo text-xl sm:text-4xl">{cuento.titulo}</p>
                 </div>
               </div>
               <figcaption className="text-xs text-suave mt-2">{x.vista.ilustracionMuestra}</figcaption>
@@ -57,7 +57,7 @@ export async function VistaPrevia({ id, idioma }: { id: string; idioma: Idioma }
                 </p>
               </div>
             )}
-            <div className="tarjeta p-8 text-center italic whitespace-pre-line text-lg">{cuento.dedicatoria}</div>
+            <div className="tarjeta px-8 py-10 text-center whitespace-pre-line text-xl font-[family-name:var(--font-titulo)] text-noche leading-snug">{cuento.dedicatoria}</div>
             <div className="grid gap-6 sm:grid-cols-2">
               {[0, 1, 2].map((i) => {
                 const img = imagenVistaPrevia(col, edad, g, i + 1);

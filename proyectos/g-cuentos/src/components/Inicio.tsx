@@ -10,8 +10,9 @@ import { TuDecides } from "./inicio/TuDecides";
 import { DentroDelLibro } from "./inicio/DentroDelLibro";
 import { Icono } from "./inicio/Iconos";
 import { Personalizador } from "./inicio/Personalizador";
+import { Hero } from "./inicio/Hero";
 import { AvisoCampana, BarraMovil } from "./inicio/Pequenos";
-import { Pagina } from "./Marco";
+import { Luna, Pagina } from "./Marco";
 
 // Textos propios de la portada (es / ca). El resto viene de i18n/textos.ts.
 const C = {
@@ -63,6 +64,9 @@ const C = {
     garOjo: "Tranquilidad", garTitulo: "Si algo no te gusta, lo arreglamos",
     gar: [["corazon", "Te lo rehacemos gratis", "Una vez: el texto, las ilustraciones o las dos cosas."], ["regalo", "Reimpresión sin coste", "Si el libro llega dañado o con un defecto, nos mandas una foto y lo volvemos a imprimir."], ["escudo", "Pago seguro", "Con tarjeta, Apple Pay o Google Pay a través de Stripe. No guardamos tu tarjeta."], ["pluma", "Te responde una persona", "Escríbenos a {correo}: contestamos en menos de 24 horas laborables."]],
     finalTitulo: "¿Cómo se llama tu protagonista?", finalSub: "Ves su portada y las primeras páginas antes de pagar nada.",
+    tallerTitulo: "Escribe su nombre y mira su portada",
+    navidadAlt: "Un niño y una niña abren su cuento de Lunilla junto al árbol de Navidad",
+    pdfAlt: "Imagen ilustrativa del PDF en una tableta",
   },
   ca: {
     ojo: "Contes personalitzats · català i castellano",
@@ -112,15 +116,20 @@ const C = {
     garOjo: "Tranquil·litat", garTitulo: "Si alguna cosa no t'agrada, ho arreglem",
     gar: [["corazon", "Te'l refem gratis", "Una vegada: el text, les il·lustracions o totes dues coses."], ["regalo", "Reimpressió sense cost", "Si el llibre arriba malmès o amb un defecte, ens envies una foto i el tornem a imprimir."], ["escudo", "Pagament segur", "Amb targeta, Apple Pay o Google Pay a través de Stripe. No guardem la teva targeta."], ["pluma", "Et respon una persona", "Escriu-nos a {correo}: contestem en menys de 24 hores feineres."]],
     finalTitulo: "Com es diu el teu protagonista?", finalSub: "Veus la seva portada i les primeres pàgines abans de pagar res.",
+    tallerTitulo: "Escriu el seu nom i mira la seva portada",
+    navidadAlt: "Un nen i una nena obren el seu conte de Lunilla al costat de l'arbre de Nadal",
+    pdfAlt: "Imatge il·lustrativa del PDF en una tauleta",
   },
 };
 
+// Escenas pintadas para cada colección (public/marca, mismo estilo y protagonistas que los cuentos).
 const IMG_COL: Record<string, string> = {
-  dormir: "/muestras/leo-y-la-luz-de-la-luna/07-p.webp",
-  valores: "/muestras/leo-y-la-luz-de-la-luna/10-p.webp",
-  hermanito: "/muestras/leo-y-la-luz-de-la-luna/12-p.webp",
-  ciudad: "/muestras/la-martina-i-els-secrets-de-lleida/09-p.webp",
+  dormir: "/marca/col-dormir.webp",
+  valores: "/marca/col-valores.webp",
+  hermanito: "/marca/col-hermanito.webp",
+  ciudad: "/marca/col-ciudad.webp",
 };
+const MOSAICO = ["mosaico-a", "mosaico-b", "mosaico-c", "mosaico-d"];
 
 function fecha(iso: string, idioma: Idioma) {
   return new Intl.DateTimeFormat(idioma === "ca" ? "ca-ES" : "es-ES", { day: "numeric", month: "long" }).format(new Date(`${iso}T12:00:00`));
@@ -138,7 +147,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
     {
       "@context": "https://schema.org", "@type": "Product",
       name: ca ? "Conte infantil personalitzat Lunilla" : "Cuento infantil personalizado Lunilla",
-      description: k.sub, image: [`${URL_BASE()}/muestras/leo-y-la-luz-de-la-luna/00.webp`, `${URL_BASE()}/producto/regalo.webp`],
+      description: k.sub, image: [`${URL_BASE()}/muestras/leo-y-la-luz-de-la-luna/00.webp`, `${URL_BASE()}/marca/libro-tapa-dura.webp`],
       brand: { "@type": "Brand", name: "Lunilla" },
       offers: [
         { "@type": "Offer", price: (c.precios.pdf / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.pdf },
@@ -148,44 +157,43 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: x.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ];
   return (
-    <Pagina idioma={idioma}>
+    <Pagina idioma={idioma} noche>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonld) }} />
       <AvisoCampana idioma={idioma} navidad={c.fechasLimite.navidadTapaDura} reyes={c.fechasLimite.reyesTapaDura} />
 
-      {/* 1 · Noche: promesa + portada que se personaliza en vivo */}
+      {/* 1 · La noche pintada: promesa y escena principal */}
+      <Hero idioma={idioma} />
+
+      {/* 1b · El taller: la portada se personaliza en vivo */}
       <section className="cielo envoltura">
-        {/* Móvil: titular → libro con el formulario → argumentos. Escritorio: texto a la izquierda, libro a la derecha. */}
-        <div className="mx-auto max-w-6xl grid gap-x-12 gap-y-7 lg:grid-cols-[1.05fr_1fr] lg:grid-rows-[auto_1fr] pt-7 pb-24 lg:pt-14 lg:pb-28 relative z-[1]">
-          <div className="lg:self-end">
-            <p className="ojo mb-3">{k.ojo}</p>
-            <h1 className="text-[2.15rem] sm:text-6xl leading-[1.04] text-balance">{x.promesa.replace(/\.$/, "")}</h1>
-          </div>
-          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 lg:self-center">
-            <Personalizador idioma={idioma} />
-          </div>
-          <div className="lg:self-start">
-            <p className="text-lg opacity-90 mb-7 max-w-[34rem]">{k.sub}</p>
+        <div className="mx-auto max-w-6xl grid gap-x-14 gap-y-10 lg:grid-cols-[1fr_1.05fr] items-center pt-12 pb-28 lg:pt-16 lg:pb-32 relative z-[1]">
+          <div data-revelar>
+            <h2 className="text-[2rem] sm:text-5xl leading-[1.05] mb-5">{k.tallerTitulo}</h2>
+            <p className="text-lg opacity-90 mb-8 max-w-[34rem]">{k.sub}</p>
             <ul className="grid sm:grid-cols-2 gap-3 max-w-[34rem]">
               {k.confianza.map(([i, txt]) => {
                 const I = Icono[i as keyof typeof Icono];
                 return <li key={txt} className="flex items-center gap-3 font-bold"><span className="acento"><I /></span>{txt}</li>;
               })}
             </ul>
-            <p className="mt-7 text-sm opacity-80">
+            <p className="mt-8 text-sm opacity-80">
               PDF <b className="acento">{euros(c.precios.pdf, idioma)}</b> · {x.precios.tapaDura.toLowerCase()} <b className="acento">{euros(c.precios.tapaDura, idioma)}</b> {x.precios.envio} · {x.precio.iva}
             </p>
+          </div>
+          <div>
+            <Personalizador idioma={idioma} />
           </div>
         </div>
       </section>
 
       {/* 2 · Por dentro del libro */}
       <section className="envoltura" id="muestras">
-        <div className="mx-auto max-w-6xl py-14 scroll-mt-20">
-          <p className="ojo mb-2">{k.dentroOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-3">{k.dentroTitulo}</h2>
-          <p className="text-suave max-w-2xl mb-8">{k.dentroSub}</p>
+        <div className="mx-auto max-w-6xl py-16 sm:py-20">
+          <p className="ojo mb-3">{k.dentroOjo}</p>
+          <h2 className="text-[2rem] sm:text-5xl mb-4 max-w-3xl">{k.dentroTitulo}</h2>
+          <p className="text-suave text-lg max-w-2xl mb-10">{k.dentroSub}</p>
           <DentroDelLibro idioma={idioma} cuentos={muestras} />
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="flex flex-wrap gap-3 mt-8">
             {muestras.map((m) => (
               <Link key={m.slug} href={`${p}/muestras/${m.slug}`} className="boton-sec">{x.muestras.leer}: {m.titulo}</Link>
             ))}
@@ -198,14 +206,13 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
 
       {/* 3 · Qué se personaliza */}
       <section className="banda-rosa curva-arriba envoltura">
-        <div className="mx-auto max-w-6xl py-16">
-          <p className="ojo mb-2">{k.queOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-10 max-w-2xl">{k.queTitulo}</h2>
-          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-            {k.que.map(([i, h, d]) => {
+        <div className="mx-auto max-w-6xl py-20">
+          <h2 className="text-[2rem] sm:text-5xl mb-12 max-w-2xl">{k.queTitulo}</h2>
+          <div className="grid gap-x-10 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
+            {k.que.map(([i, h, d], n) => {
               const I = Icono[i as keyof typeof Icono];
               return (
-                <div key={h} className="flex gap-4">
+                <div key={h} className="flex gap-4" data-revelar style={{ ["--retraso" as string]: `${(n % 3) * 70}ms` }}>
                   <span className="icono-redondo"><I /></span>
                   <div className="min-w-0"><h3 className="text-xl mb-1">{h}</h3><p className="texto-rosa">{d}</p></div>
                 </div>
@@ -215,21 +222,23 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {/* 4 · Colecciones por necesidad */}
+      {/* 4 · Colecciones por necesidad: mosaico con escenas pintadas */}
       <section className="envoltura">
-        <div className="mx-auto max-w-6xl py-16">
-          <p className="ojo mb-2">{k.colOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-8">{k.colTitulo}</h2>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {COLECCIONES.map((col) => (
-              <article key={col.id} className="tarjeta overflow-hidden grid grid-cols-[110px_1fr] sm:grid-cols-[150px_1fr]">
-                <Image src={IMG_COL[col.id]} alt="" width={480} height={480} className="h-full w-full object-cover" />
-                <div className="p-5 min-w-0">
-                  <p className="text-sm font-bold text-primario">{k.colPara[col.id]}</p>
-                  <h3 className="text-2xl mb-1">{col.nombre[idioma]}</h3>
-                  <p className="text-suave text-sm mb-2">{col.descripcion[idioma]} {k.edades}: {col.edades}.</p>
-                  <p className="text-xs text-suave mb-3">{k.temas}: {col.temas.map((tm) => tm.etiqueta[idioma]).join(" · ")}</p>
-                  <Link href={`${p}/crear?coleccion=${col.id}`} className="font-bold text-noche underline decoration-[#F5C84C] decoration-4 underline-offset-4">{k.crearCol} →</Link>
+        <div className="mx-auto max-w-6xl py-20">
+          <p className="ojo mb-3">{k.colOjo}</p>
+          <h2 className="text-[2rem] sm:text-5xl mb-10">{k.colTitulo}</h2>
+          <div className="mosaico">
+            {COLECCIONES.map((col, n) => (
+              <article key={col.id} className={`coleccion ${MOSAICO[n]}`} data-revelar style={{ ["--retraso" as string]: `${(n % 2) * 80}ms` }}>
+                <div className="coleccion-ilus">
+                  <Image src={IMG_COL[col.id]} alt="" width={1600} height={1073} sizes={n === 0 ? "(max-width: 1024px) 94vw, 720px" : n === 3 ? "(max-width: 1024px) 94vw, 600px" : "(max-width: 1024px) 94vw, 360px"} />
+                </div>
+                <div className="coleccion-cuerpo">
+                  <p className="coleccion-para">{k.colPara[col.id]}</p>
+                  <h3>{col.nombre[idioma]}</h3>
+                  <p className="text-suave">{col.descripcion[idioma]} {k.edades}: {col.edades}.</p>
+                  <p className="text-sm text-suave">{k.temas}: {col.temas.map((tm) => tm.etiqueta[idioma]).join(", ")}.</p>
+                  <Link href={`${p}/crear?coleccion=${col.id}`} className="enlace-luna mt-2">{k.crearCol}</Link>
                 </div>
               </article>
             ))}
@@ -240,29 +249,32 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
       {/* 5 · El producto y el precio (MARCAS.md §3) */}
       <section className="envoltura" id="precio">
         <div className="mx-auto max-w-6xl py-16">
-          <p className="ojo mb-2">{k.prodOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-8">{k.prodTitulo}</h2>
-          <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr] items-start">
+          <p className="ojo mb-3">{k.prodOjo}</p>
+          <h2 className="text-[2rem] sm:text-5xl mb-10">{k.prodTitulo}</h2>
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_1fr] items-start">
             <div>
-              <figure>
-                <div className="marco-foto"><Image src="/producto/regalo.webp" alt={k.ilustrativa} width={1600} height={1200} className="w-full" /></div>
+              <figure data-revelar>
+                <div className="producto-foto"><Image src="/marca/libro-tapa-dura.webp" alt={k.ilustrativa} width={1800} height={1344} sizes="(max-width: 1024px) 94vw, 620px" className="w-full" /></div>
                 <figcaption className="text-xs text-suave mt-2">{k.ilustrativa}</figcaption>
               </figure>
               <FichaLibro idioma={idioma} />
             </div>
             <div className="grid gap-4">
-              <div className="tarjeta p-6">
-                <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precio.gratis}</h3><p className="titulo text-3xl">0 €</p></div>
-                <ul className="text-suave mt-2 space-y-1">{x.precio.gratisLista.map((l) => <li key={l}>✓ {l}</li>)}</ul>
+              <div className="precio-tarjeta">
+                <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precio.gratis}</h3><p className="precio-cifra">0 €</p></div>
+                <ul className="lista-luna">{x.precio.gratisLista.map((l) => <li key={l}>{l}</li>)}</ul>
               </div>
-              <div className="tarjeta p-6">
-                <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precios.pdf}</h3><p className="titulo text-3xl">{euros(c.precios.pdf, idioma)}</p></div>
-                <ul className="text-suave mt-2 space-y-1">{k.pdf.map((l) => <li key={l}>✓ {l}</li>)}</ul>
+              <div className="precio-tarjeta grid grid-cols-[1fr_auto] gap-x-4">
+                <div className="min-w-0">
+                  <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precios.pdf}</h3><p className="precio-cifra">{euros(c.precios.pdf, idioma)}</p></div>
+                  <ul className="lista-luna">{k.pdf.map((l) => <li key={l}>{l}</li>)}</ul>
+                </div>
+                <Image src="/marca/libro-pdf.webp" alt={k.pdfAlt} width={1800} height={1344} sizes="120px" className="hidden sm:block w-[120px] h-[120px] object-cover rounded-2xl self-start mt-1" />
               </div>
-              <div className="tarjeta p-6 ring-2 ring-[#F5C84C]">
-                <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precios.tapaDura}</h3><p className="titulo text-3xl">{euros(c.precios.tapaDura, idioma)}</p></div>
-                <p className="text-sm font-bold text-primario">{x.precios.envio}</p>
-                <ul className="text-suave mt-2 space-y-1">{k.libro.map((l) => <li key={l}>✓ {l}</li>)}</ul>
+              <div className="precio-tarjeta destacada">
+                <div className="flex items-baseline justify-between gap-3"><h3 className="text-xl">{x.precios.tapaDura}</h3><p className="precio-cifra">{euros(c.precios.tapaDura, idioma)}</p></div>
+                <p className="text-sm font-bold text-luna-osc mt-1">{x.precios.envio}</p>
+                <ul className="lista-luna">{k.libro.map((l) => <li key={l}>{l}</li>)}</ul>
               </div>
               <p className="text-sm text-suave">{x.precio.iva} · {x.precio.unico}</p>
               <p className="text-sm"><b className="text-noche">{k.directo}</b></p>
@@ -272,35 +284,39 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
         </div>
       </section>
 
-      {/* 6 · Fechas límite */}
-      <section className="banda-noche curva-arriba envoltura">
-        <div className="mx-auto max-w-6xl py-14 grid gap-8 lg:grid-cols-[1fr_1.4fr] items-center">
-          <div>
-            <p className="ojo mb-2">{k.fechasOjo}</p>
-            <h2 className="text-3xl sm:text-4xl">{k.fechasTitulo}</h2>
+      {/* 6 · Fechas límite, con la escena de Navidad */}
+      <section className="navidad envoltura">
+        <div className="estrellas" aria-hidden>{[[6, 12], [22, 8], [64, 10], [88, 16], [94, 70], [4, 80]].map(([l, tp], i) => <i key={i} style={{ left: `${l}%`, top: `${tp}%`, ["--d" as string]: `${3 + i * 0.5}s` }} />)}</div>
+        <div className="relative z-[2] mx-auto max-w-6xl py-20 grid gap-10 lg:grid-cols-[1.05fr_1fr] items-center">
+          <div className="lamina rotate-[-1.5deg]" data-revelar style={{ ["--giro" as string]: "-1.5deg" }}>
+            <Image src="/marca/navidad.webp" alt={k.navidadAlt} width={1800} height={1175} sizes="(max-width: 1024px) 94vw, 560px" />
           </div>
-          <ol className="grid gap-3 sm:grid-cols-3">
-            {k.fechas(fecha(c.fechasLimite.navidadTapaDura, idioma), fecha(c.fechasLimite.reyesTapaDura, idioma)).map(([f, d]) => (
-              <li key={f} className="fecha-tarjeta">
-                <p className="titulo text-2xl acento">{f}</p>
-                <p className="mt-1 opacity-90">{d}</p>
-              </li>
-            ))}
-          </ol>
+          <div>
+            <p className="ojo !text-[#F5C84C] mb-3">{k.fechasOjo}</p>
+            <h2 className="text-[2rem] sm:text-5xl mb-8">{k.fechasTitulo}</h2>
+            <ol className="grid gap-3">
+              {k.fechas(fecha(c.fechasLimite.navidadTapaDura, idioma), fecha(c.fechasLimite.reyesTapaDura, idioma)).map(([f, d]) => (
+                <li key={f} className="fecha-tarjeta flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                  <p className="titulo text-2xl acento">{f}</p>
+                  <p className="opacity-90">{d}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </section>
 
       {/* 7 · Lunilla */}
       <section className="envoltura">
-        <div className="mx-auto max-w-6xl py-16 grid gap-10 lg:grid-cols-2 items-center">
+        <div className="mx-auto max-w-6xl py-20 grid gap-10 lg:grid-cols-2 items-center">
           <div>
-            <p className="ojo mb-2">{k.lunillaOjo}</p>
-            <h2 className="text-3xl sm:text-4xl mb-4">{k.lunillaTitulo}</h2>
-            <p className="text-lg text-suave mb-6">{k.lunillaTexto}</p>
+            <p className="ojo mb-3">{k.lunillaOjo}</p>
+            <h2 className="text-[2rem] sm:text-5xl mb-5">{k.lunillaTitulo}</h2>
+            <p className="text-lg text-suave mb-7">{k.lunillaTexto}</p>
             <blockquote className="cita">{k.lunillaFrase}</blockquote>
             <p className="text-sm text-suave mt-2">{k.lunillaPie}</p>
           </div>
-          <Image src="/personajes/lunilla-hoja.webp" alt="Lunilla" width={1600} height={893} className="w-full rounded-3xl" />
+          <div className="lamina" data-revelar><Image src="/personajes/lunilla-hoja.webp" alt="Lunilla" width={1600} height={893} sizes="(max-width: 1024px) 94vw, 560px" /></div>
         </div>
       </section>
 
@@ -309,9 +325,8 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
 
       {/* 9 · Comparativa */}
       <section className="envoltura">
-        <div className="mx-auto max-w-5xl py-14">
-          <p className="ojo mb-2">{k.compOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-6">{k.compTitulo}</h2>
+        <div className="mx-auto max-w-5xl py-16">
+          <h2 className="text-[2rem] sm:text-5xl mb-8">{k.compTitulo}</h2>
           <div className="tarjeta overflow-x-auto">
             <table className="comparativa sm:min-w-[560px]">
               <thead><tr>{k.compCab.map((h, i) => <th key={i} scope="col">{h}</th>)}</tr></thead>
@@ -323,10 +338,10 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
 
       {/* 10 · Garantías */}
       <section className="banda-rosa curva-arriba envoltura">
-        <div className="mx-auto max-w-6xl py-16">
-          <p className="ojo mb-2">{k.garOjo}</p>
-          <h2 className="text-3xl sm:text-4xl mb-8">{k.garTitulo}</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto max-w-6xl py-20">
+          <p className="ojo mb-3">{k.garOjo}</p>
+          <h2 className="text-[2rem] sm:text-5xl mb-10">{k.garTitulo}</h2>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {k.gar.map(([i, h, d]) => {
               const I = Icono[i as keyof typeof Icono];
               return <div key={h}><span className="icono-redondo mb-3"><I /></span><h3 className="text-lg mb-1">{h}</h3><p className="texto-rosa text-sm">{d.replace("{correo}", c.legal.email)}</p></div>;
@@ -337,14 +352,14 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
 
       {/* 11 · Ocasiones + FAQ */}
       <section className="envoltura">
-        <div className="mx-auto max-w-6xl py-16 grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+        <div className="mx-auto max-w-6xl py-20 grid gap-12 lg:grid-cols-[1fr_1.3fr]">
           <div className="min-w-0">
-            <h2 className="text-3xl mb-5">{k.ocasionesTitulo}</h2>
+            <h2 className="text-3xl sm:text-4xl mb-6">{k.ocasionesTitulo}</h2>
             <div className="flex flex-wrap gap-2">{k.ocasiones.map(([n, href]) => <Link key={href} href={href} className="chip">{n}</Link>)}</div>
-            <div className="mt-8"><Image src="/producto/libro-abierto.webp" alt={k.ilustrativa} width={1200} height={1140} className="marco-foto w-full" /></div>
+            <div className="mt-10 lamina rotate-[1.2deg]"><Image src="/producto/libro-abierto.webp" alt={k.ilustrativa} width={1200} height={1140} sizes="(max-width: 1024px) 94vw, 460px" /></div>
           </div>
           <div className="min-w-0">
-            <h2 className="text-3xl mb-5">{x.faqTitulo}</h2>
+            <h2 className="text-3xl sm:text-4xl mb-6">{x.faqTitulo}</h2>
             <div className="space-y-3">
               {x.faq.map(([q, a]) => (
                 <details key={q} className="tarjeta p-5 group">
@@ -358,12 +373,12 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
       </section>
 
       {/* 12 · Cierre */}
-      <section className="cielo envoltura">
-        <div className="mx-auto max-w-3xl text-center pt-14 pb-24 relative z-[1]">
-          <h2 className="text-4xl sm:text-5xl mb-3">{k.finalTitulo}</h2>
-          <p className="opacity-90 mb-8">{k.finalSub}</p>
+      <section className="envoltura">
+        <div className="mx-auto max-w-3xl text-center pt-10 pb-4">
+          <Luna className="w-20 h-20 mx-auto mb-6 flota" />
+          <h2 className="text-4xl sm:text-6xl mb-4">{k.finalTitulo}</h2>
+          <p className="text-suave text-lg mb-8">{k.finalSub}</p>
           <Link href={`${p}/crear`} className="boton-luna text-lg">{x.hero.cta}</Link>
-          <p className="mt-6 text-sm font-bold acento">{x.sello}</p>
         </div>
       </section>
       <div className="h-20 md:hidden" aria-hidden />

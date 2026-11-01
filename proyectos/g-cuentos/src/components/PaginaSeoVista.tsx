@@ -10,12 +10,19 @@ import { Icono } from "./inicio/Iconos";
 import { AvisoCampana, BarraMovil } from "./inicio/Pequenos";
 import { Luna, Pagina } from "./Marco";
 
+// Escenas pintadas de cada colección (public/marca); las páginas de regalo de Navidad, Reyes o el tió llevan la escena
+// del árbol con el libro.
 const IMAGEN: Record<string, string> = {
-  dormir: "/muestras/leo-y-la-luz-de-la-luna/03.webp",
-  ciudad: "/muestras/la-martina-i-els-secrets-de-lleida/04.webp",
-  valores: "/muestras/la-martina-i-els-secrets-de-lleida/06.webp",
-  hermanito: "/muestras/leo-y-la-luz-de-la-luna/11.webp",
+  dormir: "/marca/col-dormir.webp",
+  ciudad: "/marca/col-ciudad.webp",
+  valores: "/marca/col-valores.webp",
+  hermanito: "/marca/col-hermanito.webp",
+  navidad: "/marca/navidad.webp",
+  libro: "/marca/libro-tapa-dura.webp",
 };
+const esNavidad = (slug: string) => /navidad|nadal|reyes|reis|tio|abuelos|avis|ultima-hora|nino-3-anos/.test(slug);
+const imagenDe = (slug: string, coleccion?: string) =>
+  IMAGEN[/tapa-dura/.test(slug) ? "libro" : esNavidad(slug) ? "navidad" : coleccion ?? "dormir"] ?? IMAGEN.dormir;
 
 const L = {
   es: {
@@ -77,7 +84,7 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
   const url = `${b}${rutaSeo(idioma)}/${pagina.slug}`;
   const alt = pagina.alternativa ? `${rutaSeo(idioma === "ca" ? "es" : "ca")}/${pagina.alternativa}` : undefined;
   const crear = `${pref(idioma)}/crear${pagina.coleccion ? `?coleccion=${pagina.coleccion}` : ""}`;
-  const imagen = IMAGEN[pagina.coleccion ?? "dormir"];
+  const imagen = imagenDe(pagina.slug, pagina.coleccion);
   const muestra = CUENTOS_MUESTRA[pagina.coleccion === "ciudad" || pagina.coleccion === "valores" ? "la-martina-i-els-secrets-de-lleida" : "leo-y-la-luz-de-la-luna"];
   const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: pagina.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) };
   // Mismo Product que la portada (precio y moneda visibles para Google en cada página SEO).
@@ -101,15 +108,15 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
   };
   const otras = seo(idioma).filter((p) => p.slug !== slug).slice(0, 4);
   return (
-    <Pagina idioma={idioma} alternativa={alt}>
+    <Pagina idioma={idioma} alternativa={alt} noche>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([faqLd, productLd, migasLd]) }} />
       <AvisoCampana idioma={idioma} navidad={c.fechasLimite.navidadTapaDura} reyes={c.fechasLimite.reyesTapaDura} />
 
       <header className="cielo envoltura">
-        <div className="mx-auto max-w-6xl grid gap-8 lg:grid-cols-[1.25fr_1fr] items-center pt-8 pb-20 lg:pt-12 lg:pb-24 relative z-[1]">
+        <div className="mx-auto max-w-6xl grid gap-10 lg:grid-cols-[1.15fr_1fr] items-center pt-8 pb-24 lg:pt-14 lg:pb-28 relative z-[1]">
           <div className="min-w-0">
             <Migas idioma={idioma} actual={pagina.h1} />
-            <h1 className="text-[2rem] sm:text-5xl leading-[1.06] mb-4">{pagina.h1}</h1>
+            <h1 className="text-[2.1rem] sm:text-[3.4rem] leading-[1.04] mb-5">{pagina.h1}</h1>
             <p className="text-lg opacity-90 mb-6 max-w-[38rem]">{pagina.intro}</p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
               <Link href={crear} className="boton-luna">{x.hero.cta}</Link>
@@ -119,8 +126,10 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
               {k.confianza.map((txt) => <li key={txt} className="flex items-center gap-2"><span className="acento" aria-hidden>✓</span>{txt}</li>)}
             </ul>
           </div>
-          <div className="hidden sm:block justify-self-center w-full max-w-[420px]">
-            <Image src={imagen} alt="" width={900} height={900} priority sizes="(max-width: 1024px) 60vw, 420px" className="w-full rounded-[28px] shadow-[0_30px_60px_-30px_rgba(0,0,0,.6)] rotate-[1.5deg]" />
+          <div className="justify-self-center w-full max-w-[560px]">
+            <div className="lamina rotate-[1.5deg] !shadow-[0_0_0_6px_#FFFDF6,0_40px_70px_-30px_rgba(0,0,0,.7)]">
+              <Image src={imagen} alt="" width={1600} height={1073} priority sizes="(max-width: 1024px) 92vw, 560px" />
+            </div>
           </div>
         </div>
       </header>
@@ -202,8 +211,8 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
 
 function TarjetaIdea({ idioma, slug, titulo, texto, coleccion }: { idioma: Idioma; slug: string; titulo: string; texto?: string; coleccion?: string }) {
   return (
-    <Link href={`${rutaSeo(idioma)}/${slug}`} className="tarjeta overflow-hidden flex flex-col transition-transform duration-200 hover:-translate-y-0.5">
-      <Image src={(IMAGEN[coleccion ?? "dormir"]).replace(/\.webp$/, "-p.webp")} alt="" width={480} height={480} className="w-full aspect-[16/10] object-cover" />
+    <Link href={`${rutaSeo(idioma)}/${slug}`} className="tarjeta group overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-0.5" data-revelar>
+      <Image src={imagenDe(slug, coleccion)} alt="" width={1600} height={1073} sizes="(max-width: 640px) 92vw, 360px" className="w-full aspect-[16/10] object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
       <span className="p-5 flex-1">
         <span className="block titulo text-lg leading-snug mb-1">{titulo}</span>
         {texto && <span className="block text-sm text-suave">{texto}</span>}
@@ -215,11 +224,11 @@ function TarjetaIdea({ idioma, slug, titulo, texto, coleccion }: { idioma: Idiom
 export function IndiceSeo({ idioma }: { idioma: Idioma }) {
   const k = L[idioma];
   return (
-    <Pagina idioma={idioma} alternativa={rutaSeo(idioma === "ca" ? "es" : "ca")}>
+    <Pagina idioma={idioma} alternativa={rutaSeo(idioma === "ca" ? "es" : "ca")} noche>
       <header className="cielo envoltura">
         <div className="mx-auto max-w-6xl pt-8 pb-20 relative z-[1]">
           <Migas idioma={idioma} />
-          <h1 className="text-[2rem] sm:text-5xl leading-[1.06] mb-3 max-w-3xl">{k.indiceTitulo}</h1>
+          <h1 className="text-[2.1rem] sm:text-[3.4rem] leading-[1.04] mb-4 max-w-3xl">{k.indiceTitulo}</h1>
           <p className="text-lg opacity-90 max-w-2xl">{k.indiceSub}</p>
         </div>
       </header>

@@ -7,8 +7,8 @@ import type { DatosNino } from "./rellenar";
 
 // ── Biblioteca (vistas previas) ─────────────────────────────────────────────
 // Ilustraciones ya generadas por plantilla (colección + edad) y protagonista. Se usan en la vista
-// previa gratuita (3 páginas) sin gastar créditos. Hoy existen las de los 2 cuentos de muestra;
-// la tarea programada completa las demás combinaciones (ver TAREA-PROGRAMADA.md).
+// previa gratuita (3 páginas) sin gastar créditos. Están las 16 combinaciones: 2 en los cuentos de muestra
+// y 14 en public/biblioteca. El creador las enseña en vivo con src/lib/portadas.ts (mantener en línea).
 // Los ficheros siguen la numeración de la plantilla: 00 = portada, 01..N = páginas.
 const BIBLIOTECA: Partial<Record<`${PlantillaId}-${"nino" | "nina"}`, string>> = {
   "dormir-peques-nino": "/muestras/leo-y-la-luz-de-la-luna",

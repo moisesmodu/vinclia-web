@@ -12,8 +12,8 @@ export default function Page() {
   return (
     <Pagina idioma="ca">
       <div className="mx-auto max-w-6xl px-4 py-8">
-        <h1 className="text-3xl sm:text-4xl mb-1">{x.titulo}</h1>
-        <p className="text-suave mb-6">{x.sub}</p>
+        <h1 className="text-[2.2rem] sm:text-5xl mb-2">{x.titulo}</h1>
+        <p className="text-suave text-lg mb-8 max-w-2xl">{x.sub}</p>
         <Suspense><Formulario idioma="ca" titulos={titulos} /></Suspense>
       </div>
     </Pagina>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import type { Idioma } from "@/lib/catalogo";
 import { t } from "@/i18n/textos";
@@ -19,19 +20,24 @@ export function Comprar({ idioma, pedidoId, precios, textos, aviso }: { idioma: 
     if (!r.ok || !j.url) { setError(j.error ?? "error"); setCargando(false); return; }
     window.location.href = j.url;
   }
-  const opcion = (f: "pdf" | "tapaDura", titulo: string, precio: string, nota: string) => (
-    <label className={`block rounded-2xl border-2 p-4 cursor-pointer has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-[#F5C84C] ${formato === f ? "border-luna bg-[#FEF3D3]" : "border-[#e6dcc8] bg-white"}`}>
+  const opcion = (f: "pdf" | "tapaDura", titulo: string, precio: string, nota: string, img: string) => (
+    <label className={`formato has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-[#F5C84C] ${formato === f ? "activo" : ""}`}>
       <input type="radio" name="formato" className="sr-only" checked={formato === f} onChange={() => setFormato(f)} />
-      <span className="flex justify-between items-baseline gap-2"><span className="font-bold text-noche">{titulo}</span><span className="titulo text-2xl">{precio}</span></span>
-      <span className="block text-sm text-suave mt-1">{nota}</span>
+      <Image src={img} alt="" width={128} height={128} sizes="64px" className="formato-img" />
+      <span className="min-w-0">
+        <span className="block font-bold text-noche leading-tight">{titulo}</span>
+        <span className="block titulo text-2xl mt-0.5">{precio}</span>
+        <span className="block text-sm text-suave mt-1">{nota}</span>
+      </span>
+      <span className="formato-check" aria-hidden />
     </label>
   );
   return (
-    <div className="tarjeta p-5 sm:p-6 space-y-4" id="comprar">
-      <h2 className="text-2xl">{x.vista.elige}</h2>
-      {aviso && <p className="text-sm font-bold text-[#2B3A67] rounded-xl bg-[#FEF3D3] px-3 py-2">☾ {aviso}</p>}
-      {opcion("tapaDura", x.precios.tapaDura, precios.tapaDura, `${idioma === "ca" ? "20 × 20 cm · 30 pàgines" : "20 × 20 cm · 30 páginas"} · ${textos.envio}. ${x.vista.libroIncluyePdf}`)}
-      {opcion("pdf", x.precios.pdf, precios.pdf, x.precios.entrega)}
+    <div className="tarjeta p-5 sm:p-6 space-y-4 scroll-mt-24" id="comprar">
+      <h2 className="text-3xl">{x.vista.elige}</h2>
+      {aviso && <p className="text-sm font-bold text-[#FFF8EC] rounded-2xl bg-[#1B2444] px-4 py-3 flex gap-2.5 items-start"><span className="text-[#F5C84C] text-base leading-none mt-0.5" aria-hidden>☾</span><span>{aviso}</span></p>}
+      {opcion("tapaDura", x.precios.tapaDura, precios.tapaDura, `${idioma === "ca" ? "20 × 20 cm · 30 pàgines" : "20 × 20 cm · 30 páginas"} · ${textos.envio}. ${x.vista.libroIncluyePdf}`, "/marca/libro-tapa-dura.webp")}
+      {opcion("pdf", x.precios.pdf, precios.pdf, x.precios.entrega, "/marca/libro-pdf.webp")}
       <label className="block"><span className="etiqueta">{x.vista.email}</span>
         <input type="email" className="campo" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" inputMode="email" />
       </label>
@@ -40,7 +46,7 @@ export function Comprar({ idioma, pedidoId, precios, textos, aviso }: { idioma: 
         <span>{idioma === "ca" ? "Si no acabo la compra, recorda-m'ho una sola vegada per correu." : "Si no termino la compra, recuérdamelo una sola vez por correo."}</span>
       </label>
       {error && <p className="text-primario-osc font-bold" role="alert">{error}</p>}
-      <button className="boton w-full text-lg" onClick={pagar} disabled={cargando}>{x.vista.pagar} · {formato === "pdf" ? precios.pdf : precios.tapaDura}</button>
+      <button className="boton-luna w-full text-lg disabled:opacity-60" onClick={pagar} disabled={cargando}>{x.vista.pagar} · {formato === "pdf" ? precios.pdf : precios.tapaDura}</button>
       <p className="text-xs text-suave text-center">{x.precio.iva} · {x.precio.unico}</p>
       <p className="text-xs text-suave text-center">{x.garantia}</p>
     </div>

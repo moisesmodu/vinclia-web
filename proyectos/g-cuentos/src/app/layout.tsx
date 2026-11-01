@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-// Familia Lunilla: Baloo 2 (títulos) y Nunito (texto), dos pesos (MARCAS.md §3). Archivos estáticos en assets/fuentes
+// Familia Lunilla: Nunito (texto, dos pesos) y Baloo 2 (logotipo), MARCAS.md §3. Archivos estáticos en assets/fuentes
 // porque el PDF usa los mismos.
 const nunito = localFont({
   src: [
@@ -15,6 +15,8 @@ const nunito = localFont({
   display: "swap",
 });
 const baloo = localFont({ src: "../../assets/fuentes/Baloo2-Bold.ttf", weight: "700", variable: "--font-baloo", display: "swap" });
+// Títulos de la web con voz de álbum ilustrado clásico (Young Serif, OFL). Baloo 2 queda para el logotipo y el PDF.
+const cuento = localFont({ src: "../../assets/fuentes/YoungSerif-Regular.woff2", weight: "400", variable: "--font-cuento", display: "swap", fallback: ["Georgia", "serif"] });
 
 const base = process.env.URL_BASE ?? "http://localhost:3000";
 export const metadata: Metadata = {
@@ -30,10 +32,10 @@ export const viewport: Viewport = { themeColor: "#2B3A67", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${nunito.variable} ${baloo.variable}`} suppressHydrationWarning>
+    <html lang="es" className={`${nunito.variable} ${baloo.variable} ${cuento.variable}`} suppressHydrationWarning>
       <head>
         {/* Un único layout raíz sirve /ca y el resto: el contenido ya va en <div lang>; esto corrige <html lang> antes de pintar. */}
-        <script dangerouslySetInnerHTML={{ __html: `if(/^\\/ca(\\/|$)/.test(location.pathname))document.documentElement.lang="ca"` }} />
+        <script dangerouslySetInnerHTML={{ __html: `document.documentElement.classList.add("js");if(/^\\/ca(\\/|$)/.test(location.pathname))document.documentElement.lang="ca"` }} />
       </head>
       <body className="min-h-dvh antialiased">
         {children}
