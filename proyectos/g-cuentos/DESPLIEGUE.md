@@ -196,8 +196,16 @@ Publicado el commit 8157185 en https://lunilla.cat: las páginas SEO nuevas resp
 
 Ejecutado el 2026-10-31
 
-### Pendiente de ejecutar: despliegue de ilustraciones de vista previa (01-11-2026)
-Pendiente de ejecutar: despliegue de ilustraciones de vista previa. 56 imágenes WebP (4,7 MB) en
+### Ejecutado: despliegue de ilustraciones de vista previa (01-11-2026)
+✅ Ejecutado el 01/11/2026 junto con el rediseño visual (despliegue `dpl_GdG7JPraYvNaQtsFckBvt3YXL7Ew`, alias lunilla.cat); comprobado en vivo con una vista previa de «Mi ciudad, 6 años, niña». Despliegue de ilustraciones de vista previa: 56 imágenes WebP (4,7 MB) en
 `public/biblioteca/<plantilla>-<nino|nina>/00..03.webp` para las 14 combinaciones colección × edad × protagonista que no
 tenían muestra, más la página 3 de la muestra de Martina. Sin cambios de código, esquema ni variables: `vercel --prod`.
 Comprobación: crear una vista previa de «Hermanito, 6 años, niña» y ver portada y 3 páginas ilustradas (no el avatar).
+
+### Rediseño visual «La hora del cuento» (01-11-2026)
+Desplegado en producción (`dpl_GdG7JPraYvNaQtsFckBvt3YXL7Ew`, https://lunilla.cat) desde un worktree con `.vercel/project.json`
+en la raíz del repo (el proyecto tiene Root Directory `proyectos/g-cuentos`):
+`npx vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN" --scope "$VERCEL_TEAM_ID"`. Sin cambios de esquema, variables ni Stripe.
+Imágenes nuevas en `public/marca/` (portada, escenas de colección, Navidad y maquetas ilustrativas de tapa dura y PDF) y las
+9 páginas que faltaban de la muestra de Martina. Lighthouse en producción: móvil 99/100/100/100 (LCP 1,9 s, CLS 0,001),
+escritorio 100 de rendimiento (LCP 0,8 s).

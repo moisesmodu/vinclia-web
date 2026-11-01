@@ -49,7 +49,7 @@ género y ciudad ya puestos → 4 pasos → vista previa → elección de format
 |---|---|---|---|
 | 2.1 | En móvil el titular quedaba **debajo** del libro y el formulario: la primera pantalla no decía qué se vende. | P0 | ✅ titular arriba, libro y formulario debajo; en escritorio no cambia |
 | 2.2 | El botón «Crear cuento» de la cabecera se partía en dos líneas en móvil; a 360 px la cabecera desbordaba 5–24 px. | P1 | ✅ |
-| 2.3 | **La vista previa enseña huecos con un avatar en vez de ilustraciones** en 14 de las 16 combinaciones (colección × edad × niño/niña): solo hay biblioteca para «Dormir 2–4 niño» y «Mi ciudad 5–8 niña». Si alguien pulsa «Niña» en la portada y pone 3 años, no ve ninguna ilustración. Es el punto donde más ventas se pierden. | **P0** | **Pendiente**: generar en el taller (Higgsfield) la portada y las páginas 1–3 de las 14 combinaciones restantes (≈ 56 imágenes) y dejarlas en `public/biblioteca/<plantilla>-<nino|nina>/` (el código ya las recoge solo) |
+| 2.3 | **La vista previa enseña huecos con un avatar en vez de ilustraciones** en 14 de las 16 combinaciones (colección × edad × niño/niña): solo hay biblioteca para «Dormir 2–4 niño» y «Mi ciudad 5–8 niña». Si alguien pulsa «Niña» en la portada y pone 3 años, no ve ninguna ilustración. Es el punto donde más ventas se pierden. | **P0** | ✅ 56 ilustraciones en `public/biblioteca/` (commit edbdd28); el creador enseña además la portada de cada combinación en vivo |
 | 2.4 | En la caja de pago no se veía la fecha límite de Navidad. | P1 | ✅ aviso «Para Navidad: pide la tapa dura hasta el 14 de diciembre…» (cambia solo a Reyes y desaparece después) |
 | 2.5 | Las páginas de ideas (entrada desde Google) eran texto plano con un botón: sin aviso de campaña, sin muestra, sin barra fija en móvil. | P0 | ✅ cabecera nocturna con titular, botón y precio; tres páginas reales del cuento de muestra; cierre «listo para regalar» con fechas y garantía; barra fija en móvil |
 | 2.6 | Recordatorio de carrito: existe (casilla opcional). Falta medir cuántos lo marcan. | P2 | Pendiente con analítica |
@@ -84,6 +84,17 @@ cabeceras nocturnas en las páginas de ideas (el «cielo» de la portada), la il
 sobre la mesa, viñetas con la luna amarilla en el texto largo y un cierre de regalo con Lunilla. Sin cifras ni
 testimonios inventados.
 
+### 5b. Rediseño visual del 1/11 («La hora del cuento»)
+La web pasa a ser una noche pintada a la gouache que se convierte en papel de libro: portada con una ilustración a sangre
+(una niña y un niño leen su cuento bajo la luna, con Lunilla), estrellas que parpadean y deriva suave al hacer scroll
+(solo con `prefers-reduced-motion: no-preference`), títulos en Young Serif (OFL, autoalojada) con Nunito para el texto
+(Baloo 2 queda en el logotipo y el PDF), un único acento cálido (el amarillo de Lunilla), colecciones en mosaico con
+escenas propias, maquetas ilustrativas de tapa dura y PDF en el precio y en la caja de pago, escena de Navidad en las
+fechas y en las páginas de regalo, creador con portada de biblioteca en vivo y pasos como fases de la luna, y pie
+nocturno. Sin cambios de textos legales, precios, fechas ni lógica de pedido o pago. Arreglado de paso: la marca de agua
+de la vista previa chocaba con el borde curvo de las páginas (salía una franja blanca) y el botón «Comprar» de móvil se
+veía también en escritorio.
+
 ## 6. Analítica
 
 `@vercel/analytics` está en el código (`<Analytics />` en el layout). Hasta esta revisión `/_vercel/insights/script.js`
@@ -94,7 +105,7 @@ lunes: visitas a páginas de ideas, clics a `/crear`, vistas previas creadas y p
 ## 7. Pendientes ordenados
 
 1. **P0** Search Console: `GOOGLE_SITE_VERIFICATION` en Vercel, enviar `https://lunilla.cat/sitemap.xml` y pedir indexación de `/`, `/ca` y las 6 páginas de Navidad (Moisés).
-2. **P0** Biblioteca de vista previa para las 14 combinaciones sin ilustración (taller de Higgsfield, ≈ 56 imágenes).
+2. ✅ Biblioteca de vista previa completa (16 combinaciones).
 3. **P1** Buzón `hola@lunilla.cat` y cambio de `legal.email`.
 4. **P1** Pedido real de tapa dura a Gelato (no borrador) para comprobar plazo y calidad, y fotografiar el libro real en lugar de las imágenes ilustrativas.
 5. **P1** Afiliadas: escribir a 20 cuentas de crianza catalanas y españolas antes del 15/11 (el programa del 20 % ya funciona).
