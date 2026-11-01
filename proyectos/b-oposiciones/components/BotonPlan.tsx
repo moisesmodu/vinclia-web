@@ -1,4 +1,5 @@
 'use client';
+import { leerAtribucion } from '@/lib/atribucion';
 import { useState } from 'react';
 import { evento } from '@/lib/evento';
 
@@ -13,7 +14,7 @@ export default function BotonPlan({ plan, idioma, texto, destacado }: { plan: st
         onClick={async () => {
           setCargando(true); setErr(''); evento('plan_clic', { plan, idioma });
           try {
-            const r = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan, idioma }) });
+            const r = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan, idioma, atribucion: leerAtribucion() }) });
             const j = await r.json();
             if (j.url) { if (/^https:/.test(j.url)) evento('checkout_ir', { plan, origen: 'precios' }); location.href = j.url; } else { setErr(j.error ?? 'Error'); setCargando(false); }
           } catch { setErr('Error'); setCargando(false); }

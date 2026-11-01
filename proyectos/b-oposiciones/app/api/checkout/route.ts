@@ -4,6 +4,7 @@ import { modoPago, plan, precioStripe, clienteStripe, stripe, MARCA_PAGO, nombre
 import { urlBase } from '@/lib/datos';
 import pais from '@/config/paises/es.json';
 import { json, error } from '@/lib/http';
+import { limpiarAtribucion } from '@/lib/atribucion';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,6 +23,8 @@ export async function POST(req: Request) {
     await db.usuario.update({ where: { id: u.id }, data: { suscripcionEstado: 'demo', suscripcionHasta: hasta, suscripcionId: null, cancelaAlFinal: false } });
     return json({ url: `/${idioma}/cuenta?pagado=demo` });
   }
+  // gclid y utm_* (lib/atribucion.ts): en la sesión y en la suscripción, para importar conversiones en Google Ads.
+  const atribucion = limpiarAtribucion(b?.atribucion);
   const base = urlBase();
   const origen = new URL(req.url).origin;
   const raiz = process.env.NODE_ENV === 'production' ? base : origen;
@@ -35,13 +38,13 @@ export async function POST(req: Request) {
     allow_promotion_codes: true,
     client_reference_id: u.id,
     // Suscripción: el descriptor bancario dinámico no se puede fijar por sesión (el extracto usa el de la cuenta).
-    subscription_data: { description: nombreProducto(p.id), metadata: { usuarioId: u.id, plan: p.id } },
+    subscription_data: { description: nombreProducto(p.id), metadata: { usuarioId: u.id, plan: p.id, ...atribucion } },
     custom_text: {
       submit: {
         message: `${MARCA_PAGO} · ` + (idioma === 'es' ? 'Cancela cuando quieras desde tu cuenta.' : 'Cancel·la quan vulguis des del teu compte.'),
       },
     },
-    metadata: { usuarioId: u.id, plan: p.id },
+    metadata: { usuarioId: u.id, plan: p.id, ...atribucion },
     // Recuperación: si la sesión caduca sin pagar, Stripe genera un enlace nuevo (lo usa el aviso del webhook).
     after_expiration: { recovery: { enabled: true, allow_promotion_codes: true } },
     expires_at: Math.floor(Date.now() / 1000) + 2 * 3600,

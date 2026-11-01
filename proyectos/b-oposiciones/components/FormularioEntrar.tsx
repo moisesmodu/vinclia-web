@@ -1,4 +1,5 @@
 'use client';
+import { leerAtribucion } from '@/lib/atribucion';
 import { useState } from 'react';
 import Link from 'next/link';
 import { t } from '@/lib/i18n';
@@ -24,7 +25,7 @@ export default function FormularioEntrar({ idioma, siguiente, plan, planTexto }:
       evento(modo === 'crear' ? 'registro_ok' : 'entrar_ok', { plan: plan ?? null });
       // Viene de «quiero pagar»: tras crear la cuenta, directo a Stripe (dos pantallas entre quererlo y pagarlo).
       if (plan) {
-        const c = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan, idioma }) }).then((x) => x.json()).catch(() => ({}));
+        const c = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan, idioma, atribucion: leerAtribucion() }) }).then((x) => x.json()).catch(() => ({}));
         if (c.url) { evento('checkout_ir', { plan, origen: 'registro' }); location.href = c.url; return; }
       }
       location.href = siguiente; return;

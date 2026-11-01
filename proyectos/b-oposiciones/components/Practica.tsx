@@ -1,4 +1,5 @@
 'use client';
+import { leerAtribucion } from '@/lib/atribucion';
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Idioma, Oposicion, Pregunta } from '@/lib/tipos';
@@ -363,7 +364,7 @@ function OfertaPago({ idioma, op, total, logueado, precio }: { idioma: Idioma; o
     setC(true);
     evento('oferta_clic', { op: op.slug, origen: 'resultado', logueado });
     if (!logueado) { location.href = `/${idioma}/entrar?plan=mensual`; return; }
-    const j = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'mensual', idioma }) }).then((x) => x.json()).catch(() => ({}));
+    const j = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ plan: 'mensual', idioma, atribucion: leerAtribucion() }) }).then((x) => x.json()).catch(() => ({}));
     if (j.url) { evento('checkout_ir', { plan: 'mensual', origen: 'resultado' }); location.href = j.url; } else setC(false);
   };
   const e = op.examen;

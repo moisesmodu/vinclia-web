@@ -84,6 +84,14 @@ tablas. Variables en `.env.example`. En local: Postgres, `cp .env.example .env`,
 **Sin claves la app ya funciona:** páginas, test gratis y progreso en el navegador. Las cuentas necesitan Neon y los pagos
 necesitan Stripe. Con `PAGO_DEMO=1` (o fuera de producción) el pago se simula para probar el flujo entero.
 
+## Atribución de marketing (gclid y utm_*)
+Al llegar con `?gclid=…` o `?utm_source=…&utm_medium=…&utm_campaign=…`, `components/Atribucion.tsx` los guarda 30 días en el almacenamiento
+local (`placa.atribucion.v1`, sin cookies; declarado en la política de cookies). Al pagar, `BotonPlan`, `Practica` y `FormularioEntrar`
+los envían a `/api/checkout` y van a `metadata` de la sesión de Checkout y de la suscripción (`gclid`, `utm_source`, `utm_medium`,
+`utm_campaign`). Prueba: abre `/ca/mossos-esquadra?gclid=prueba&utm_campaign=test`, suscríbete en modo prueba y mira los metadatos en Stripe.
+Cada lunes, `STRIPE_MODO=real STRIPE_SECRET_KEY=… node scripts/conversiones-google-ads.mjs 7 salida.csv` exporta las altas con `gclid`
+al CSV de importación de conversiones de Google Ads (marketing/ads/google-ads-diciembre-2026.md).
+
 ## Qué se ha probado (28/10/2026)
 - `npm run build` limpio (270 páginas estáticas) y `tsc` sin errores.
 - `scripts/e2e.mjs` en un Pixel 7 emulado (Playwright) contra `next start` y Postgres 16 local, **en las cinco oposiciones**,

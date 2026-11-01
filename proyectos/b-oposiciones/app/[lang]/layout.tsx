@@ -11,6 +11,7 @@ import Cabecera from '@/components/Cabecera';
 import Pie from '@/components/Pie';
 import RegistroSW from '@/components/RegistroSW';
 import { Analytics } from '@vercel/analytics/next';
+import Atribucion from '@/components/Atribucion';
 
 export const generateStaticParams = () => IDIOMAS.map((lang) => ({ lang }));
 export const dynamicParams = false;
@@ -45,6 +46,8 @@ export default async function Layout({ children, params }: { children: React.Rea
         <main id="contenido" className="flex-1">{children}</main>
         <Pie idioma={lang} />
         <RegistroSW />
+        {/* Atribución sin cookies: gclid y utm_* de la URL → almacenamiento local 30 días → metadatos del pago (lib/atribucion.ts). */}
+        <Atribucion />
         <Analytics />
       </body>
     </html>
