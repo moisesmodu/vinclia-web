@@ -150,6 +150,11 @@ for (const [clave, p] of Object.entries(tokens.proyectos ?? {})) {
   const svg = leer(`marcas/logos/${clave}-icono.svg`).replace(/^<\?xml[^>]*>\s*/, '').replace(/ width="\d+" height="\d+"/, '');
   marcas[clave] = { acento: p.acento ?? tokens.familias?.[p.familia]?.colores?.primario ?? '#888', svg };
 }
+// Proyectos de fuera de la cartera de marcas (sin entrada en tokens.json): icono público de su web, guardado en marcas/logos.
+for (const [clave, acento] of Object.entries({ 'numi-mates': '#602B7A', numitech: '#2F5BEA' })) {
+  const svg = leer(`marcas/logos/${clave}-icono.svg`).replace(/^<\?xml[^>]*>\s*/, '').replace(/ width="\d+" height="\d+"/, '');
+  if (svg) marcas[clave] = { acento, svg };
+}
 
 // ---------- Proyectos (lo que el panel necesita de proyectos.json) ----------
 const proyectos = JSON.parse(fs.readFileSync(path.join(panel, 'data', 'proyectos.json'), 'utf8')).map((p) => ({

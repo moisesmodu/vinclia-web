@@ -43,6 +43,28 @@ export type DatosStripe = { pagos: PagoStripe[]; disputas: Disputa[]; disputasAv
 
 const proyectoValido = (v: unknown): string | null => (typeof v === 'string' && v ? v : null);
 
+// Numi Mates y Numitech no ponen metadata.proyecto. Se reconocen así (sin tocar su código):
+// - la suscripción lleva description «<App> Premium» (Numi Mates / Pro / Ment / Tech Premium) y metadata.code;
+// - la sesión de Checkout vuelve a <subdominio>.numimates.com (success_url);
+// - el pago de la primera factura lleva la misma description que la suscripción.
+// «Numi Tech» va a Numitech; el resto (app, pro, ment y la web) a Numi Mates.
+const PRODUCTO_NUMI = 'prod_VLgAQ0Jx1ACLhX';
+function proyectoNumiTexto(t: unknown): string | null {
+  if (typeof t !== 'string') return null;
+  if (/numi\s*tech/i.test(t)) return 'numitech';
+  if (/\bnumi\b/i.test(t)) return 'numi-mates';
+  return null;
+}
+function proyectoNumiUrl(u: unknown): string | null {
+  if (typeof u !== 'string') return null;
+  try {
+    const h = new URL(u).hostname;
+    if (h === 'tech.numimates.com') return 'numitech';
+    if (h === 'numimates.com' || h.endsWith('.numimates.com') || h === 'mates-numi.vercel.app') return 'numi-mates';
+  } catch { /* url no válida */ }
+  return null;
+}
+
 async function cargar(): Promise<DatosStripe> {
   const desde = new Date(Date.now() - 400 * 864e5);
   const gte = String(Math.floor(desde.getTime() / 1000));
@@ -73,7 +95,9 @@ async function cargar(): Promise<DatosStripe> {
     const prodId = typeof prod === 'string' ? prod : prod?.id;
     const fin = s.current_period_end ?? items[0]?.current_period_end ?? null;
     return {
-      id: s.id, proyecto: proyectoValido(s.metadata?.proyecto) ?? (prodId ? proyectoProducto.get(prodId) ?? null : null), estado: s.status,
+      id: s.id, estado: s.status,
+      proyecto: proyectoValido(s.metadata?.proyecto) ?? (prodId ? proyectoProducto.get(prodId) ?? null : null) ?? proyectoNumiTexto(s.description)
+        ?? (prodId === PRODUCTO_NUMI ? 'numi-mates' : null),
       email: typeof s.customer === 'object' ? s.customer?.email ?? null : null, producto: (prodId && nombreProducto.get(prodId)) || items[0]?.price?.nickname || '—',
       mensual: Math.round(mensual), moneda, intervalo, creada: new Date(s.created * 1000), finPeriodo: fin ? new Date(fin * 1000) : null,
       finPrueba: s.trial_end ? new Date(s.trial_end * 1000) : null, cancelaAlFinal: !!s.cancel_at_period_end || !!s.cancel_at,
@@ -88,7 +112,8 @@ async function cargar(): Promise<DatosStripe> {
     const ch = typeof pi.latest_charge === 'object' ? pi.latest_charge : null;
     const sesion = sesionPorIntent.get(pi.id);
     const cliente = typeof pi.customer === 'string' ? pi.customer : pi.customer?.id;
-    const proyecto = proyectoValido(pi.metadata?.proyecto) ?? proyectoValido(sesion?.metadata?.proyecto) ?? (cliente ? proyectoCliente.get(cliente) ?? null : null);
+    const proyecto = proyectoValido(pi.metadata?.proyecto) ?? proyectoValido(sesion?.metadata?.proyecto) ?? proyectoNumiTexto(pi.description)
+      ?? proyectoNumiUrl(sesion?.success_url) ?? (cliente ? proyectoCliente.get(cliente) ?? null : null);
     const importe = ch?.amount ?? pi.amount_received ?? pi.amount;
     const reembolsado = ch?.amount_refunded ?? 0;
     let estado: PagoStripe['estado'];

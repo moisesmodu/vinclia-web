@@ -11,6 +11,8 @@ export const WEBS_ANALYTICS: { nombre: string; vercel: string; web: string }[] =
   { nombre: 'Nuvolet Games', vercel: 'juegos-casuales', web: 'https://juegos-casuales.vercel.app' },
   { nombre: 'NetoClaro', vercel: 'netoclaro', web: 'https://netoclaro.app' },
   { nombre: 'ImpuestoClaro', vercel: 'impuestoclaro', web: 'https://impuestoclaro.es' },
+  { nombre: 'Numi Mates (app, pro, ment y tech)', vercel: 'mates-numi', web: 'https://app.numimates.com' },
+  { nombre: 'Numi Mates (web)', vercel: 'numimates-web', web: 'https://numimates.com' },
 ];
 
 export const enlaceAnalytics = (vercel: string) => `https://vercel.com/${EQUIPO_VERCEL}/${vercel}/analytics`;

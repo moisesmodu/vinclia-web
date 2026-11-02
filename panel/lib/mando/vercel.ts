@@ -1,7 +1,7 @@
 import 'server-only';
 import { cache } from 'react';
 import { intentar, memorizar, type Resultado } from '@/lib/control/comun';
-import { WEBS } from './entidades';
+import { PROYECTOS_VERCEL } from './entidades';
 
 // Lecturas de la API de Vercel (solo GET y consultas de observabilidad, que no cambian nada).
 function credenciales() {
@@ -38,7 +38,7 @@ async function visitasPorDia(vercel: string, dias: number): Promise<Dia[]> {
 }
 
 export const visitasDiarias = cache(async (): Promise<{ vercel: string; r: Resultado<Dia[]> }[]> =>
-  Promise.all(WEBS.map(async (w) => ({ vercel: w.vercel, r: await intentar(() => memorizar(`vd:${w.vercel}`, () => visitasPorDia(w.vercel, 44), 600_000)) }))),
+  Promise.all(PROYECTOS_VERCEL.map(async (v) => ({ vercel: v, r: await intentar(() => memorizar(`vd:${v}`, () => visitasPorDia(v, 44), 600_000)) }))),
 );
 
 export type Despliegue = { estado: string; creado: Date; mensaje: string; url: string; inspector: string | null };
@@ -51,7 +51,7 @@ async function ultimoDespliegue(vercel: string): Promise<Despliegue | null> {
 }
 
 export const despliegues = cache(async () =>
-  Promise.all(WEBS.map(async (w) => ({ vercel: w.vercel, r: await intentar(() => memorizar(`dep:${w.vercel}`, () => ultimoDespliegue(w.vercel), 120_000)) }))),
+  Promise.all(PROYECTOS_VERCEL.map(async (v) => ({ vercel: v, r: await intentar(() => memorizar(`dep:${v}`, () => ultimoDespliegue(v), 120_000)) }))),
 );
 
 /** Respuestas 5xx de producción en las últimas 24 h, por proyecto (observabilidad de Vercel). */

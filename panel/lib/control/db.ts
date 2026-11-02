@@ -1,14 +1,16 @@
 import pg from 'pg';
-import type { ClaveProyecto } from './comun';
+import { variableBase, type ClaveProyecto } from './comun';
 
 // Un pool pequeño por base de datos, con el rol panel_ro (solo lectura) y el pooler de Neon.
-const pools: Map<ClaveProyecto, pg.Pool> = ((globalThis as any).__controlPools ??= new Map());
+// Se indexa por variable: dos proyectos que comparten base (Numi Mates y Numitech) comparten pool.
+const pools: Map<string, pg.Pool> = ((globalThis as any).__controlPools ??= new Map());
 
 function pool(clave: ClaveProyecto): pg.Pool {
-  const existente = pools.get(clave);
+  const variable = variableBase(clave);
+  const existente = pools.get(variable);
   if (existente) return existente;
-  const url = process.env[`DB_RO_${clave}`];
-  if (!url) throw new Error(`Falta la variable DB_RO_${clave}`);
+  const url = process.env[variable];
+  if (!url) throw new Error(`Falta la variable ${variable}`);
   const u = new URL(url);
   u.searchParams.delete('sslmode');
   const p = new pg.Pool({
@@ -20,7 +22,7 @@ function pool(clave: ClaveProyecto): pg.Pool {
     statement_timeout: 15_000,
   });
   p.on('error', () => {});
-  pools.set(clave, p);
+  pools.set(variable, p);
   return p;
 }
 

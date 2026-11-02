@@ -114,3 +114,35 @@ identidad oscura); la cartera estática de antes vive en `/cartera/` y conserva 
 - **Juegos:** comprobación por HTTP de la página pública de cada juego en itch.io (`nuvoletgames.itch.io/<slug>`),
   GameDistribution, GameMonetize, CrazyGames y Poki; en los portales cuenta como publicado solo si la página contiene el
   id del juego o «Nuvolet» (evita confundirlo con un juego ajeno del mismo nombre). Se guarda 15 minutos.
+
+## Numi Mates y Numitech — 02/11/2026
+
+Dos proyectos nuevos en el panel (Hoy, Proyectos, Ventas, Usuarios, Suscripciones y visitas), definidos en
+`lib/mando/entidades.ts` y `lib/control/comun.ts` (claves `NM` y `NT`, slugs `numi-mates` y `numitech`).
+
+- **Webs:** Numi Mates = app, pro y ment.numimates.com (proyecto Vercel `mates-numi`) + la web numimates.com (proyecto
+  `numimates-web`, campo `otros`); Numitech = tech.numimates.com, servido por el mismo `mates-numi`. El semáforo
+  comprueba app.numimates.com, numimates.com y tech.numimates.com; los errores 5xx de `mates-numi` salen en los dos.
+- **Colores:** Numi Mates `#a35bc9`, Numitech `#1aa7b8` (validados con el resto de la paleta oscura). Por eso en `WEBS`
+  Numitech va antes que Numi Mates: el violeta nunca queda junto al rosa de Aprova. Para mostrar se usa `WEBS_VISTA`.
+  Iconos: los públicos `img/brand/icona.svg` e `icona-tech.svg`, guardados en `marcas/logos/numi-mates-icono.svg` y
+  `numitech-icono.svg` (no están en `tokens.json`; los añade `scripts/generar-contenido.mjs`).
+- **Stripe:** el producto «Numi Mates Premium» (prod_VLgAQ0Jx1ACLhX) no lleva `metadata.proyecto`. `lib/control/stripe.ts`
+  lo clasifica por la description de la suscripción y del primer pago («Numi Tech Premium» → Numitech; «Numi
+  Mates/Pro/Ment Premium» → Numi Mates), por la `success_url` del Checkout (tech.numimates.com → Numitech) y, si no,
+  por el producto (→ Numi Mates). Ya no queda nada «fuera de la cartera»; el MRR de la cartera incluye Numi.
+- **Usuarios: pendiente.** La `DATABASE_URL` de `mates-numi` es *sensitive* (la API de Vercel no la devuelve), no es un
+  store de la integración de Neon y no está en ninguna organización de Neon a la que llegue `NEON_API_KEY`; la copia
+  local `~/mates-numi/.env.local` la tiene vacía. El adaptador ya está escrito (`lib/control/usuarios.ts`: tabla
+  `mates.alumnes`, variante en `state.variant`/`survey.variant`, `tech` = Numitech; se muestra el código del alumno
+  porque no hay email) y se activa solo al añadir `DB_RO_NUMI`. Mientras falte, las fichas lo explican y no sale aviso
+  de error. Para conectarla, con la cadena de propietario de esa base (sin `neon_superuser`):
+  `CREATE ROLE panel_ro LOGIN PASSWORD '…'; GRANT CONNECT ON DATABASE <db> TO panel_ro; GRANT USAGE ON SCHEMA mates TO panel_ro;
+  GRANT SELECT ON ALL TABLES IN SCHEMA mates TO panel_ro; ALTER DEFAULT PRIVILEGES IN SCHEMA mates GRANT SELECT ON TABLES TO panel_ro;
+  ALTER ROLE panel_ro SET default_transaction_read_only = on; ALTER ROLE panel_ro SET statement_timeout = '15s';`
+  y guardar la cadena (pooler, `sslmode=require`) como `DB_RO_NUMI` (production, sensitive) en `cartera`.
+  Ojo: las tablas están en el esquema `mates`, no en `public`.
+- **Visitas:** Web Analytics se activó el 02/11 en `mates-numi` y `numimates-web`, pero ninguna de sus páginas carga
+  `/_vercel/insights/script.js`, así que no habrá datos hasta que se añada
+  `<script defer src="/_vercel/insights/script.js"></script>` a sus HTML (repos `numimates` y `numimates-web`). La API de
+  Web Analytics no filtra por hostname, así que las visitas de tech.numimates.com se cuentan dentro de Numi Mates.

@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowSquareOut } from '@phosphor-icons/react/dist/ssr';
 import Barras from '@/components/mando/Barras';
 import { Aviso, Caja, Estado, euros, fechaCorta, fechaHora, haceCuanto, IconoMarca, numero } from '@/components/mando/Piezas';
 import { contenido } from '@/lib/mando/contenido';
-import { enlaces, webPorSlug } from '@/lib/mando/entidades';
+import { enlaces, webPorSlug, WEBS } from '@/lib/mando/entidades';
 import { metricasWeb, tablero } from '@/lib/mando/metricas';
 import { salud } from '@/lib/mando/salud';
 
@@ -30,6 +30,8 @@ export default async function Ficha({ params }: { params: Promise<{ slug: string
   const una = (series: typeof t.ingresos30) => series.filter((x) => x.clave === w.slug);
   const pagos = w.stripe ? t.pagos.filter((p) => p.proyecto === w.stripe && p.estado !== 'fallido').slice(0, 8) : [];
   const altas = w.control ? t.usuarios.filter((u) => u.proyecto === w.control).slice(0, 8) : [];
+  const base = w.control ? t.porProyecto.find((p) => p.clave === w.control) : undefined;
+  const visitasDe = w.visitasEn ? WEBS.find((x) => x.slug === w.visitasEn) : undefined;
 
   return (
     <>
@@ -39,7 +41,7 @@ export default async function Ficha({ params }: { params: Promise<{ slug: string
           <IconoMarca svg={marca?.svg} nombre={w.nombre} grande />
           <div>
             <h1>{w.nombre}</h1>
-            <p style={{ marginTop: 4 }}>{w.dominio} · {w.modelo}{repo ? ` · ${repo.estado}` : ''}</p>
+            <p style={{ marginTop: 4 }}>{[w.dominio, ...(w.otros ?? []).map((o) => o.dominio)].join(' · ')} · {w.modelo}{repo ? ` · ${repo.estado}` : ''}</p>
           </div>
         </div>
         <div className="enlaces">
@@ -49,7 +51,7 @@ export default async function Ficha({ params }: { params: Promise<{ slug: string
           <a className="enlace-p" href={e.logs} target="_blank" rel="noopener noreferrer">Errores<ArrowSquareOut aria-hidden="true" /></a>
           <a className="enlace-p" href={e.searchConsole} target="_blank" rel="noopener noreferrer">Search Console<ArrowSquareOut aria-hidden="true" /></a>
           <a className="enlace-p" href={e.analytics} target="_blank" rel="noopener noreferrer">Analytics<ArrowSquareOut aria-hidden="true" /></a>
-          <a className="enlace-p" href={`/p/${w.repo}/`}>Plan y estrategia</a>
+          {w.plan !== false && <a className="enlace-p" href={`/p/${w.repo}/`}>Plan y estrategia</a>}
         </div>
       </header>
 
@@ -59,12 +61,21 @@ export default async function Ficha({ params }: { params: Promise<{ slug: string
           <div><span>MRR</span><b>{m.mrr == null ? 'n/a' : euros(m.mrr)}</b></div>
           <div><span>Usuarios · altas 30 d</span><b>{m.usuarios == null ? 'n/a' : `${numero(m.usuarios)} · ${numero(m.altas30 ?? 0)}`}</b></div>
           <div><span>Conversión a pago</span><b>{m.conversion}</b></div>
-          <div><span>Visitantes 30 d</span><b>{m.visitantes30 == null ? '—' : numero(m.visitantes30)}</b></div>
+          <div><span>Visitantes 30 d</span><b>{visitasDe ? <small className="t3">en {visitasDe.nombre}</small> : m.visitantes30 == null ? '—' : numero(m.visitantes30)}</b></div>
           <div><span>Estado</span><b><Estado nivel={s.nivel}>{NIVEL[s.nivel]}</Estado></b></div>
           <div><span>HTTP ahora</span><b>{s.http.estado ?? '—'}{s.http.ms != null ? ` · ${s.http.ms} ms` : ''}</b></div>
           <div><span>Errores 5xx 24 h</span><b>{s.errores ?? '—'}</b></div>
         </div>
       </Caja>
+
+      {(w.nota || base?.pendiente) && (
+        <Caja className="seccion">
+          <div className="caja-cab"><h2>De dónde salen los datos</h2></div>
+          {w.nota && <p className="t2" style={{ fontSize: '0.86rem' }}>{w.nota}</p>}
+          {base?.pendiente && <p className="t3" style={{ fontSize: '0.82rem', marginTop: 8 }}>Usuarios pendientes: {base.resultado.ok ? '' : base.resultado.error}. La DATABASE_URL de mates-numi es «sensitive» en Vercel (no se puede leer) y la base no está en las organizaciones de Neon a las que llega el panel. Para conectarla: crear el rol panel_ro de solo lectura en esa base y guardar su cadena como DB_RO_NUMI en el proyecto cartera (ver DESPLIEGUE.md).</p>}
+          {w.otros?.map((o) => <p key={o.vercel} className="t3" style={{ fontSize: '0.82rem', marginTop: 8 }}>{o.dominio}: proyecto de Vercel {o.vercel} (visitas, despliegue y errores sumados aquí).</p>)}
+        </Caja>
+      )}
 
       <div className="rejilla r-md-2 seccion">
         {w.stripe && (
@@ -80,8 +91,8 @@ export default async function Ficha({ params }: { params: Promise<{ slug: string
           </Caja>
         )}
         <Caja>
-          <div className="caja-cab"><h2>Visitantes · 30 días</h2></div>
-          <Barras titulo={`Visitantes de ${w.nombre}, 30 días`} dias={t.dias30} series={una(t.visitas30)} formato="numero" alto={180} vacio="Sin visitas registradas" />
+          <div className="caja-cab"><h2>Visitantes · 30 días</h2>{visitasDe && <small>de {visitasDe.nombre}, que las incluye</small>}</div>
+          <Barras titulo={`Visitantes de ${visitasDe?.nombre ?? w.nombre}, 30 días`} dias={t.dias30} series={t.visitas30.filter((x) => x.clave === (w.visitasEn ?? w.slug))} formato="numero" alto={180} vacio="Sin visitas registradas" />
         </Caja>
         <Caja>
           <div className="caja-cab"><h2>Último despliegue</h2></div>

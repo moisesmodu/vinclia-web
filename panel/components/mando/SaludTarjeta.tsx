@@ -12,7 +12,7 @@ export default function SaludTarjeta({ s }: { s: Salud }) {
       <div className="nucleo apretado salud">
         <div className="salud-cab">
           <IconoMarca svg={marca?.svg} nombre={s.web.nombre} />
-          <div className="crece"><b>{s.web.nombre}</b><small className="t3">{s.web.dominio}</small></div>
+          <div className="crece"><b>{s.web.nombre}</b><small className="t3">{[s.web.dominio, ...s.otras.map((o) => o.dominio)].join(' · ')}</small></div>
         </div>
         <div className="salud-estado"><Estado nivel={s.nivel}>{TEXTO[s.nivel]}</Estado><small>{s.motivo}</small></div>
         <div className="salud-datos">

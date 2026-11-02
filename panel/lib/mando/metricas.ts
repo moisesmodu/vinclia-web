@@ -4,7 +4,7 @@ import { inicioDiaMadrid, inicioMesMadrid, type Resultado } from '@/lib/control/
 import { esDeCartera, ESTADOS_SUSCRIPCION_MRR, netoEntre, type PagoStripe, type SuscripcionStripe } from '@/lib/control/stripe';
 import { usuariosUnificados } from '@/lib/control/unificado';
 import type { UsuarioControl } from '@/lib/control/usuarios';
-import { WEBS, WEBS_PAGO, type Web } from './entidades';
+import { PROYECTOS_VERCEL, vercelDe, WEBS, WEBS_PAGO, type Web } from './entidades';
 import { visitasDiarias, type Dia } from './vercel';
 
 const fmtDia = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit' });
@@ -42,11 +42,16 @@ export function altasPorDia(usuarios: UsuarioControl[], dias: string[], webs: We
   });
 }
 
+/** Visitantes por día de cada web (suma de sus proyectos de Vercel). Las webs sin Analytics propio (visitasEn) no tienen serie. */
 export function visitasPorDia(datos: { vercel: string; r: Resultado<Dia[]> }[], dias: string[], webs: Web[] = WEBS): Serie[] {
-  return webs.map((w) => {
-    const r = datos.find((x) => x.vercel === w.vercel)?.r;
-    const mapa = new Map((r?.ok ? r.datos : []).map((d) => [d.dia, d.visitantes]));
-    return { clave: w.slug, nombre: w.nombre, color: w.serie, valores: dias.map((d) => mapa.get(d) ?? 0) };
+  return webs.filter((w) => !w.visitasEn).map((w) => {
+    const valores = dias.map(() => 0);
+    for (const v of vercelDe(w)) {
+      const r = datos.find((x) => x.vercel === v)?.r;
+      const mapa = new Map((r?.ok ? r.datos : []).map((d) => [d.dia, d.visitantes]));
+      dias.forEach((d, i) => { valores[i] += mapa.get(d) ?? 0; });
+    }
+    return { clave: w.slug, nombre: w.nombre, color: w.serie, valores };
   });
 }
 
@@ -91,7 +96,7 @@ export const tablero = cache(async () => {
     { clave: 'mrr', titulo: 'MRR', valor: s ? mrr : null, formato: 'euros', antes: s ? mrr30 : null, comparacion: 'hace 30 días', detalle: `${subs.filter((x) => esDeCartera(x.proyecto) && ESTADOS_SUSCRIPCION_MRR.has(x.estado)).length} suscripciones activas` },
     { clave: 'ventas', titulo: 'Ventas del mes', valor: s ? nMes.cobros : null, formato: 'numero', antes: s ? nMesAnt.cobros : null, comparacion: 'mismo tramo del mes pasado' },
     { clave: 'usuarios', titulo: 'Usuarios nuevos 7 d', valor: porProyecto.some((p) => p.resultado.ok) ? altas(hace7, ahora) : null, formato: 'numero', antes: altas(hace14, hace7), comparacion: '7 días anteriores', detalle: `${usuarios.length.toLocaleString('es-ES')} en total` },
-    { clave: 'visitas', titulo: 'Visitantes 7 d', valor: fallosVisitas === WEBS.length ? null : suma(visitas44, 37, 44), formato: 'numero', antes: suma(visitas44, 30, 37), comparacion: '7 días anteriores', detalle: fallosVisitas ? `${fallosVisitas} web${fallosVisitas > 1 ? 's' : ''} sin datos` : '8 webs' },
+    { clave: 'visitas', titulo: 'Visitantes 7 d', valor: fallosVisitas === visitasRaw.length ? null : suma(visitas44, 37, 44), formato: 'numero', antes: suma(visitas44, 30, 37), comparacion: '7 días anteriores', detalle: fallosVisitas ? `${fallosVisitas} proyecto${fallosVisitas > 1 ? 's' : ''} de Vercel sin datos` : `${PROYECTOS_VERCEL.length} proyectos de Vercel` },
   ];
 
   const dias30 = dias44.slice(14);
@@ -120,13 +125,13 @@ export function metricasWeb(t: Awaited<ReturnType<typeof tablero>>, w: Web): Met
   const okBase = w.control ? t.porProyecto.find((p) => p.clave === w.control)?.resultado.ok : false;
   const us = w.control && okBase ? t.usuarios.filter((u) => u.proyecto === w.control) : null;
   const pagan = us ? us.filter((u) => u.haPagado).length : null;
-  const vis = t.visitas44.find((x) => x.clave === w.slug)!;
-  const sinVisitas = !t.visitasRaw.find((x) => x.vercel === w.vercel)?.r.ok;
+  const vis = t.visitas44.find((x) => x.clave === w.slug);
+  const sinVisitas = !vis || !vercelDe(w).some((v) => t.visitasRaw.find((x) => x.vercel === v)?.r.ok);
   return {
     ingresosMes: ing, ingresos30: ing30, mrr, usuarios: us ? us.length : null, pagan,
     altas30: us ? us.filter((u) => u.alta >= inicioDiaMadrid(29)).length : null,
-    visitantes30: sinVisitas ? null : vis.valores.slice(14).reduce((a, b) => a + b, 0),
-    visitantes30Ant: sinVisitas ? null : vis.valores.slice(0, 14).reduce((a, b) => a + b, 0),
+    visitantes30: sinVisitas ? null : vis!.valores.slice(14).reduce((a, b) => a + b, 0),
+    visitantes30Ant: sinVisitas ? null : vis!.valores.slice(0, 14).reduce((a, b) => a + b, 0),
     conversion: us && us.length ? `${((pagan! / us.length) * 100).toLocaleString('es-ES', { maximumFractionDigits: 1 })} %` : '—',
   };
 }
