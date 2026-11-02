@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import type { Idioma } from '@/lib/tipos';
 import { t } from '@/lib/i18n';
 import { alternates, jsonLd } from '@/lib/seo';
+import { urlBase } from '@/lib/datos';
+import { ciudadesAuxiliar, RUTA_AUX_AJUNTAMENT } from '@/lib/convocatorias';
 import { fechaLarga } from '@/components/Convocatoria';
 import datos from '@/contenido/convocatorias.json';
 
@@ -29,7 +31,7 @@ export default async function Convocatorias({ params }: { params: Promise<{ lang
   const total = lista.reduce((s, c) => s + (c.agrupa ? 0 : c.plazas ?? 0), 0);
   const ld = {
     '@context': 'https://schema.org', '@type': 'ItemList', name: d.convocatoriasTitulo,
-    itemListElement: lista.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: `${c.organismo}: ${c.cuerpo[lang]}`, url: c.url ?? undefined })),
+    itemListElement: lista.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: `${c.organismo}: ${c.cuerpo[lang]}`, url: `${urlBase()}/${lang}/convocatorias/${c.id}` })),
   };
   return (
     <div className="contenedor py-10">
@@ -37,13 +39,19 @@ export default async function Convocatorias({ params }: { params: Promise<{ lang
       <h1 className="text-3xl font-bold">{d.convocatoriasTitulo}</h1>
       <p className="mt-2 max-w-3xl text-slate-700">{d.convocatoriasTexto}</p>
       <p className="mt-2 flex flex-wrap gap-2 text-sm"><span className="etiqueta">{lista.length} {lang === 'ca' ? 'processos' : 'procesos'}</span><span className="etiqueta">{total.toLocaleString(lang)} {d.plazas}</span><span className="etiqueta">{d.actualizado} {datos.actualizado}</span></p>
+      {ciudadesAuxiliar().length ? (
+        <p className="mt-4 flex flex-wrap items-center gap-2 text-sm">
+          <span className="font-semibold">{lang === 'ca' ? 'Auxiliar administratiu per ajuntament:' : 'Auxiliar administrativo por ayuntamiento:'}</span>
+          {ciudadesAuxiliar().map((x) => <Link key={x.slug} href={`/${lang}${RUTA_AUX_AJUNTAMENT}/${x.slug}`} className="etiqueta no-underline">{x.nombre}</Link>)}
+        </p>
+      ) : null}
       <div className="mt-6 grid gap-3">
         {lista.map((c) => (
           <article key={c.id} className="tarjeta p-4">
             <div className="flex flex-wrap items-start justify-between gap-2">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{c.organismo}{c.grupo ? ` · ${c.grupo}` : ''}</p>
-                <h2 className="font-bold">{c.cuerpo[lang]}</h2>
+                <h2 className="font-bold"><Link href={`/${lang}/convocatorias/${c.id}`} className="text-tinta underline decoration-slate-300 underline-offset-2 hover:text-marca">{c.cuerpo[lang]}</Link></h2>
               </div>
               <span className={`etiqueta ${c.estado === 'abierta' ? 'bg-green-100 text-ok' : ''}`}>{d.estado[c.estado] ?? c.estado}</span>
             </div>

@@ -8,6 +8,7 @@ import { banco, bancoPublico, oposiciones, pais, marca, urlBase, precioTexto } f
 import { alternates, jsonLd, imagenOg } from '@/lib/seo';
 import Convocatoria from '@/components/Convocatoria';
 import PreguntaMuestra from '@/components/PreguntaMuestra';
+import { convocatorias, ordenar, ciudadesAuxiliar, OPOSICION_AUX_AJUNTAMENTS, RUTA_AUX_AJUNTAMENT } from '@/lib/convocatorias';
 
 type P = { params: Promise<{ lang: Idioma; oposicion: string }> };
 
@@ -39,6 +40,8 @@ export default async function PaginaOposicion({ params }: P) {
   const d = t(lang);
   const bloques = [...new Set(o.temas.map((x) => x.bloque?.[lang] ?? ''))];
   const muestras = b.gratis.slice(0, 3);
+  const convs = ordenar(convocatorias().filter((c) => c.oposicion === o.slug));
+  const ciudades = o.slug === OPOSICION_AUX_AJUNTAMENTS ? ciudadesAuxiliar() : [];
   const faq = [
     {
       q: lang === 'ca' ? `Quantes preguntes té l'examen de ${o.nombreCorto.ca}?` : `¿Cuántas preguntas tiene el examen de ${o.nombreCorto.es}?`,
@@ -96,6 +99,23 @@ export default async function PaginaOposicion({ params }: P) {
           </div>
           <a href={o.enlaceCatala.url} target="_blank" rel="noopener" className="boton-sec min-h-9 px-3 py-1 text-xs">{lang === 'ca' ? 'Veure la guia' : 'Ver la guía'}</a>
         </aside>
+      ) : null}
+
+      {convs.length ? (
+        <section className="mt-8">
+          <h2 className="text-xl font-bold">{lang === 'ca' ? 'Convocatòries' : 'Convocatorias'}</h2>
+          <ul className="mt-3 grid gap-2">
+            {convs.map((c) => (
+              <li key={c.id}><Link href={`/${lang}/convocatorias/${c.id}`} className="text-marca underline">{c.organismo}: {c.cuerpo[lang]}</Link></li>
+            ))}
+          </ul>
+          {ciudades.length ? (
+            <p className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+              <span className="font-semibold">{lang === 'ca' ? 'Per ajuntament:' : 'Por ayuntamiento:'}</span>
+              {ciudades.map((x) => <Link key={x.slug} href={`/${lang}${RUTA_AUX_AJUNTAMENT}/${x.slug}`} className="etiqueta no-underline">{x.nombre}</Link>)}
+            </p>
+          ) : null}
+        </section>
       ) : null}
 
       <h2 className="mt-10 text-2xl font-bold">{d.temario}</h2>
