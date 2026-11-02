@@ -24,7 +24,7 @@ const RAMA = 'claude/estrategia-ingresos-recurrentes-tx0rvw', REPO = 'moisesmodu
 const lis = (arr) => (arr ?? []).map((x) => `<li>${esc(x)}</li>`).join('');
 const enlace = (txt, url) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(txt)}</a>` : esc(txt);
 
-let css = fs.readFileSync('app/globals.css', 'utf8');
+let css = fs.readFileSync('app/(plan)/globals.css', 'utf8');
 css = css.replace('--sombra: 0 1px 0 rgba(24, 42, 46, 0.06);', '--sombra: 0 1px 0 rgba(24, 42, 46, 0.06); color-scheme: light;');
 css = css.replace(/--sombra: none;\n  }\n}/, '--sombra: none; color-scheme: dark;\n  }\n}');
 css = css.replace(/--rojo: #e07a70; --sombra: none;\n}/, '--rojo: #e07a70; --sombra: none; color-scheme: dark;\n}');

@@ -73,3 +73,44 @@ cliente. Está detrás de la misma Vercel Authentication que el resto del panel.
 - **Si una base de datos, Stripe o Analytics falla,** su tarjeta muestra un aviso y el resto de la página sigue.
 - **Rotar la contraseña de `panel_ro`:** `ALTER ROLE panel_ro PASSWORD '…'` como `neondb_owner` y actualizar `DB_RO_<letra>`.
 - **Quitarlo todo:** `DROP OWNED BY panel_ro; DROP ROLE panel_ro;` en cada base y borrar las variables de `cartera`.
+
+## Panel de mando — 02/11/2026
+
+La portada del panel (`/`) es ahora el **panel de mando** (route group `app/(mando)`, con su propio layout raíz e
+identidad oscura); la cartera estática de antes vive en `/cartera/` y conserva `/p/<clave>/` y `/docs/<slug>/`
+(route group `app/(plan)`). `/control/*` redirige a las secciones nuevas.
+
+- **Secciones:** Hoy (`/`: ingresos del mes y de hoy, MRR, ventas, usuarios nuevos y visitantes con su variación;
+  barras de ingresos y visitantes de 30 días por proyecto; «Tu siguiente paso»; últimas acciones; semáforo de las 8
+  webs), Proyectos (`/proyectos/` y ficha `/proyectos/<slug>/`), Ventas, Usuarios y Suscripciones (filtros y CSV en
+  `/<sección>/csv/`), Tareas (`/tareas/`, botón «Hecho»), Marketing (`/marketing/`: calendario, piezas con «Copiar
+  texto» y «Publicado», correos a entidades con «Enviar» y «Enviar todos»), Juegos y portales (`/juegos/`) y Más.
+- **Contenido del repositorio:** `scripts/generar-contenido.mjs` (se ejecuta solo en `prebuild`, `predev` y
+  `precheck`) empaqueta en `lib/generado/contenido.json` (ignorado por git) las tareas de `marketing/PARA-MOISES.md` y
+  de `data/cartera.json` → `decisionesPendientes` (omite las informativas ✔ y las ya cubiertas), el calendario
+  (`marketing/CALENDARIO.md`), las piezas (`marketing/piezas/*/semana-*.md`, con el estado de `APROBAR.md`), los
+  correos (`marketing/correos/*.json`), los iconos de `marcas/` y `data/juegos.json` (copia de
+  `proyectos/juegos/juegos.json` de la rama de juegos: actualizarla si cambian los ids). Para que una tarea o una pieza
+  nueva aparezca basta con editar esos archivos y hacer push.
+- **Base de datos propia del panel:** Neon `cartera-panel` (proyecto `twilight-pine-15010674`, aws-eu-west-2), creada
+  como store de la integración de Neon en Vercel (`store_yTIOp72cOgiRLRq9`, plan Free) porque la organización de Neon
+  está gestionada por Vercel y su API ya no deja crear proyectos. Tablas en `scripts/esquema-panel.sql`:
+  `tareas_estado`, `piezas_estado`, `correos_envios` (clave = pieza + destinatario) y `registro`. Solo guarda el
+  estado del panel; no toca las bases de las apps. Copia local de la cadena: `~/.config/cartera/panel_db.env`.
+- **Variables nuevas de `cartera`** (production, sensitive): `PANEL_DB_URL` (pooler) y `RESEND_API_KEY`.
+  Opcional: `PANEL_CORREO_MODO=simulacion` para desactivar el envío real.
+- **Correos:** server action `enviarCorreos` (`app/(mando)/acciones.ts`). Solo envía de verdad con
+  `VERCEL_ENV=production`; en local y en vistas previas simula sin llamar a Resend. Antes de enviar reserva la fila en
+  `correos_envios` con un `INSERT … ON CONFLICT … WHERE estado IN ('error','simulado')`: un correo enviado o en curso
+  no se puede repetir; además manda `Idempotency-Key` a Resend. La interfaz pide confirmación en un diálogo.
+- **Seguridad:** todo detrás de Vercel Authentication; páginas con `force-dynamic` en Node, sin datos en el JavaScript
+  del cliente (los gráficos reciben solo agregados por día). Las server actions comprueban `Origin` = `Host` (además
+  de la comprobación propia de Next) y solo aceptan ids que existen en el contenido del build. Probado: una petición con
+  `Origin` ajeno devuelve 500 y no guarda nada. Sin acciones sobre Stripe ni sobre las apps (solo GET).
+- **Salud:** estado HTTP en vivo de cada web (GET con 8 s de límite), último despliegue de producción
+  (`/v6/deployments`) y respuestas 5xx de las últimas 24 h con la API de observabilidad
+  (`POST /v2/observability/query`, métrica `vercel.request.count`, filtro `http_status ge 500`). Visitas diarias con
+  `/v1/query/web-analytics/visits/aggregate?by=day`.
+- **Juegos:** comprobación por HTTP de la página pública de cada juego en itch.io (`nuvoletgames.itch.io/<slug>`),
+  GameDistribution, GameMonetize, CrazyGames y Poki; en los portales cuenta como publicado solo si la página contiene el
+  id del juego o «Nuvolet» (evita confundirlo con un juego ajeno del mismo nombre). Se guarda 15 minutos.

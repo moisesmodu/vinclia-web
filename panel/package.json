@@ -3,18 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "contenido": "node scripts/generar-contenido.mjs",
+    "predev": "node scripts/generar-contenido.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generar-contenido.mjs",
     "build": "next build",
     "start": "next start",
+    "precheck": "node scripts/generar-contenido.mjs",
     "check": "tsc --noEmit",
     "instantanea": "node scripts/instantanea.mjs"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "marked": "^15.0.0",
     "next": "15.5.28",
     "pg": "^8.23.1",
     "react": "19.1.10",
-    "react-dom": "19.1.10"
+    "react-dom": "19.1.10",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^22",

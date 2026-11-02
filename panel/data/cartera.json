@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01",
+  "actualizado": "2026-11-02",
   "objetivos": [
     {
       "nombre": "Primer objetivo",
@@ -22,7 +22,7 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
-      "texto": "0 · Marketing · Moisés aprobó todo el 1/11. Lo que queda es publicar desde tus cuentas (10 min al día según marketing/CALENDARIO.md), crear @lunilla.cuentos, abrir la cuenta de Google Ads y pedir el alta en Xolo. La sesión del Mac envía los 9 correos de marketing/correos/semana-1.json",
+      "texto": "0 · Marketing · Moisés aprobó todo el 1/11. Lo que queda es publicar desde tus cuentas (10 min al día según marketing/CALENDARIO.md), crear @lunilla.cuentos, abrir la cuenta de Google Ads y pedir el alta en Xolo. Los 9 correos de marketing/correos/semana-1.json los envías tú desde el panel → Marketing → Correos",
       "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/PARA-MOISES.md"
     },
     {
@@ -64,6 +64,10 @@
     {
       "texto": "✔ Tarea programada semanal de marketing creada (lunes 06:40, primera el 2/11)",
       "donde": "marketing/TAREA-PROGRAMADA.md"
+    },
+    {
+      "texto": "✔ Panel de mando publicado (02/11): Hoy, Proyectos, Ventas, Usuarios, Suscripciones, Tareas con botón «Hecho», Marketing con «Copiar», «Publicado» y envío de los 9 correos a entidades (pulsa tú «Enviar»), y Juegos y portales. Desde el iPhone: Safari → Compartir → «Añadir a pantalla de inicio»",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/"
     }
   ],
   "reglas": [
