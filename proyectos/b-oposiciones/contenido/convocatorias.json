@@ -1,9 +1,10 @@
 {
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-11-02",
   "fuentes": [
     "Recopilado el 28/10/2026 solo a partir de los datos ya investigados en oposiciones/*/oposicion.json (campos convocatoria.referencia, notas y verificado), que proceden de resúmenes de buscador de webs oficiales (web.gencat.cat, mossos.gencat.cat, interior.gencat.cat, ICS, bop.diba.cat, boe.es) y de academias, sindicatos y CIDO. En esta sesión no se pudo hacer ninguna búsqueda nueva (límite de WebSearch agotado) y DOGC/BOP/gencat.cat están bloqueados para lectura directa: ningún texto oficial se ha leído completo.",
     "No se incluyen OPO 2026, Educació (docents), Agents Rurals, Guàrdia Urbana/policías locales ni ediciones 2027 porque no hay datos verificados disponibles; quedan pendientes de una búsqueda posterior.",
-    "Actualización del 28/10/2026: 21 entradas nuevas y datos añadidos a 9 de las existentes a partir de resúmenes del buscador (WebSearch). WebFetch no pudo abrir ninguna web (redopositor.com y ccoo.cat no resuelven en la red de la sesión) y DOGC/BOE/gencat.cat están bloqueados, así que ningún texto oficial se ha leído completo. Fuentes de los resúmenes: redopositor.com, adams.es, 3cat.cat, naciodigital.cat, diaridetarragona.com, diarimes.com, campuseducacion.com, csif.es, ccoo.cat (presons y generalitat), cido.diba.cat, preparaoposiciones.com, bop.diba.cat (sumarios) y ajuntament.barcelona.cat (Guàrdia Urbana). Solo se marca fuente primaria donde el resumen cita una web oficial o un boletín. Las ofertas (OPO) no llevan plazas para no sumarlas a las convocatorias que salen de ellas."
+    "Actualización del 28/10/2026: 21 entradas nuevas y datos añadidos a 9 de las existentes a partir de resúmenes del buscador (WebSearch). WebFetch no pudo abrir ninguna web (redopositor.com y ccoo.cat no resuelven en la red de la sesión) y DOGC/BOE/gencat.cat están bloqueados, así que ningún texto oficial se ha leído completo. Fuentes de los resúmenes: redopositor.com, adams.es, 3cat.cat, naciodigital.cat, diaridetarragona.com, diarimes.com, campuseducacion.com, csif.es, ccoo.cat (presons y generalitat), cido.diba.cat, preparaoposiciones.com, bop.diba.cat (sumarios) y ajuntament.barcelona.cat (Guàrdia Urbana). Solo se marca fuente primaria donde el resumen cita una web oficial o un boletín. Las ofertas (OPO) no llevan plazas para no sumarlas a las convocatorias que salen de ellas.",
+    "Comprovació del 02/11/2026: s'han llegit directament el BOPB de 02/07/2026 (bases 128/2026 de l'Ajuntament de Barcelona), el BOE-A-2026-2275 (Figueres), la web oficial de la convocatòria 870 i les fitxes del CIDO de la Diputació de Barcelona. Les dades comprovades són al camp 'comprobado' de cada convocatòria (camps, fonts i dades); són les úniques que es mostren a les pàgines de convocatòries amb font secundària."
   ],
   "convocatorias": [
     {
@@ -12,6 +13,10 @@
       "cuerpo": {
         "ca": "Cos auxiliar d'administració, escala auxiliar administrativa (procés 878)",
         "es": "Cuerpo auxiliar de administración, escala auxiliar administrativa (proceso 878)"
+      },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu Generalitat",
+        "es": "auxiliar administrativo Generalitat"
       },
       "grupo": "C2",
       "plazas": 114,
@@ -27,6 +32,26 @@
       "nota": {
         "ca": "Prova feta el 28/06/2026; els tribunals van publicar les notes el 03/09/2026 i van obrir la fase de concurs (63 places de torn lliure i 51 de promoció interna, segons acadèmies). CCOO preveu que els processos de la 870 acabin el primer trimestre de 2027.",
         "es": "Prueba celebrada el 28/06/2026; los tribunales publicaron las notas el 03/09/2026 y abrieron la fase de concurso (63 plazas de turno libre y 51 de promoción interna, según academias). CCOO prevé que los procesos de la 870 terminen en el primer trimestre de 2027."
+      },
+      "comprobado": {
+        "fecha": "2026-11-02",
+        "campos": [],
+        "fuentes": [
+          {
+            "nombre": "Web de la Generalitat, convocatòria 870",
+            "url": "https://web.gencat.cat/ca/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870"
+          }
+        ],
+        "datos": [
+          {
+            "ca": "Inscripció del 03/02/2026 al 16/02/2026 (la web oficial indica «fins al 16/02/2026 01:00»). El termini ja és tancat.",
+            "es": "Inscripción del 03/02/2026 al 16/02/2026 (la web oficial indica «hasta el 16/02/2026 01:00»). El plazo ya está cerrado."
+          },
+          {
+            "ca": "Concurs oposició: fase d'oposició de 60 punts (una prova) i fase de concurs de 40 punts (mèrits), que només es valora si se supera l'oposició.",
+            "es": "Concurso-oposición: fase de oposición de 60 puntos (una prueba) y fase de concurso de 40 puntos (méritos), que solo se valora si se supera la oposición."
+          }
+        ]
       }
     },
     {
@@ -35,6 +60,10 @@
       "cuerpo": {
         "ca": "Diversos cossos i escales de personal funcionari (31 processos, convocatòria 870)",
         "es": "Diversos cuerpos y escalas de personal funcionario (31 procesos, convocatoria 870)"
+      },
+      "nombreCorto": {
+        "ca": "Generalitat convocatòria 870",
+        "es": "Generalitat convocatoria 870"
       },
       "grupo": "varios",
       "plazas": 1325,
@@ -51,7 +80,31 @@
         "ca": "Convocatòria conjunta amb places de les OPO 2024 i 2025. Desglossament segons fonts secundàries: cos superior 376, administratiu 366, subaltern 228, titulació superior (17 escales) 118, auxiliar 114, diplomatura (9 escales) 95 i gestió 28. Proves el 27 i 28/06/2026; notes i obertura de la fase de mèrits el 03/09/2026 (trámit OPO870, modalitat MERI); final previst el primer trimestre de 2027 segons CCOO.",
         "es": "Convocatoria conjunta con plazas de las OPE 2024 y 2025. Desglose según fuentes secundarias: cuerpo superior 376, administrativo 366, subalterno 228, titulación superior (17 escalas) 118, auxiliar 114, diplomatura (9 escalas) 95 y gestión 28. Pruebas el 27 y 28/06/2026; notas y apertura de la fase de méritos el 03/09/2026 (trámite OPO870, modalidad MERI); final previsto en el primer trimestre de 2027 según CCOO."
       },
-      "agrupa": true
+      "agrupa": true,
+      "comprobado": {
+        "fecha": "2026-11-02",
+        "campos": [],
+        "fuentes": [
+          {
+            "nombre": "Web de la Generalitat, convocatòria 870",
+            "url": "https://web.gencat.cat/ca/generalitat/treballar-generalitat/oposicions/funcionari/funcio-publica/convocatoria-870"
+          }
+        ],
+        "datos": [
+          {
+            "ca": "1.325 vacants en 31 processos de selecció (cossos superior, de gestió, administratiu, auxiliar, subaltern, de titulació superior i de diplomatura). Òrgan convocant: Escola d'Administració Pública de Catalunya.",
+            "es": "1.325 vacantes en 31 procesos de selección (cuerpos superior, de gestión, administrativo, auxiliar, subalterno, de titulación superior y de diplomatura). Órgano convocante: Escuela de Administración Pública de Cataluña."
+          },
+          {
+            "ca": "Inscripció del 03/02/2026 al 16/02/2026 (la web oficial indica «fins al 16/02/2026 01:00»). El termini ja és tancat.",
+            "es": "Inscripción del 03/02/2026 al 16/02/2026 (la web oficial indica «hasta el 16/02/2026 01:00»). El plazo ya está cerrado."
+          },
+          {
+            "ca": "Concurs oposició: fase d'oposició de 60 punts (una prova) i fase de concurs de 40 punts (mèrits), que només es valora si se supera l'oposició.",
+            "es": "Concurso-oposición: fase de oposición de 60 puntos (una prueba) y fase de concurso de 40 puntos (méritos), que solo se valora si se supera la oposición."
+          }
+        ]
+      }
     },
     {
       "id": "generalitat-opo-2024",
@@ -59,6 +112,10 @@
       "cuerpo": {
         "ca": "Oferta pública d'ocupació 2024 (personal funcionari)",
         "es": "Oferta pública de empleo 2024 (personal funcionario)"
+      },
+      "nombreCorto": {
+        "ca": "Generalitat OPO 2024",
+        "es": "Generalitat OPE 2024"
       },
       "grupo": "varios",
       "plazas": null,
@@ -83,6 +140,10 @@
         "ca": "Oferta pública d'ocupació 2025 (personal funcionari)",
         "es": "Oferta pública de empleo 2025 (personal funcionario)"
       },
+      "nombreCorto": {
+        "ca": "Generalitat OPO 2025",
+        "es": "Generalitat OPE 2025"
+      },
       "grupo": "varios",
       "plazas": null,
       "estado": "en curso",
@@ -105,6 +166,10 @@
       "cuerpo": {
         "ca": "Cos de Mossos d'Esquadra, escala bàsica, categoria de mosso/a (convocatòria 46/26)",
         "es": "Cuerpo de Mossos d'Esquadra, escala básica, categoría de mosso/a (convocatoria 46/26)"
+      },
+      "nombreCorto": {
+        "ca": "Mossos d'Esquadra",
+        "es": "Mossos d'Esquadra"
       },
       "grupo": "C1",
       "plazas": 1587,
@@ -129,6 +194,10 @@
         "ca": "Cos de Bombers de la Generalitat, escala tècnica, bomber/a de primera (convocatòria 81/26)",
         "es": "Cuerpo de Bomberos de la Generalitat, escala técnica, bombero/a de primera (convocatoria 81/26)"
       },
+      "nombreCorto": {
+        "ca": "Bombers de la Generalitat",
+        "es": "Bomberos de la Generalitat"
+      },
       "grupo": "C1",
       "plazas": 300,
       "estado": "en curso",
@@ -151,6 +220,10 @@
       "cuerpo": {
         "ca": "Tècnic/a en Cures Auxiliars d'Infermeria (TCAI, codi C2-159)",
         "es": "Técnico/a en Cuidados Auxiliares de Enfermería (TCAI, código C2-159)"
+      },
+      "nombreCorto": {
+        "ca": "TCAI ICS",
+        "es": "TCAE ICS"
       },
       "grupo": "C2",
       "plazas": 757,
@@ -175,6 +248,10 @@
         "ca": "Diplomat/ada sanitari/ària en infermeria (codi A2-129, convocatòria 100-2025)",
         "es": "Diplomado/a sanitario/a en enfermería (código A2-129, convocatoria 100-2025)"
       },
+      "nombreCorto": {
+        "ca": "infermeria ICS",
+        "es": "enfermería ICS"
+      },
       "grupo": "A2",
       "plazas": 1713,
       "estado": "en curso",
@@ -198,6 +275,10 @@
         "ca": "Auxiliar administratiu/iva de la funció administrativa (codi C2-161, convocatòria 100-2025)",
         "es": "Auxiliar administrativo/a de la función administrativa (código C2-161, convocatoria 100-2025)"
       },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu ICS",
+        "es": "auxiliar administrativo ICS"
+      },
       "grupo": "C2",
       "plazas": 1295,
       "estado": "en curso",
@@ -220,6 +301,10 @@
       "cuerpo": {
         "ca": "Personal estatutari fix, 74 categories (convocatòria ordinària 100-2025)",
         "es": "Personal estatutario fijo, 74 categorías (convocatoria ordinaria 100-2025)"
+      },
+      "nombreCorto": {
+        "ca": "ICS convocatòria 100-2025",
+        "es": "ICS convocatoria 100-2025"
       },
       "grupo": "varios",
       "plazas": 6037,
@@ -245,6 +330,10 @@
         "ca": "Auxiliar administratiu/iva, subgrup C2 (convocatòria 128/2026)",
         "es": "Auxiliar administrativo/a, subgrupo C2 (convocatoria 128/2026)"
       },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu Ajuntament de Barcelona",
+        "es": "auxiliar administrativo Ayuntamiento de Barcelona"
+      },
       "grupo": "C2",
       "plazas": 67,
       "estado": "en curso",
@@ -259,6 +348,48 @@
       "nota": {
         "ca": "62 places de torn lliure i 5 per a persones amb discapacitat (una acadèmia en compta 69); el primer examen previst per al febrer de 2027 surt d'una acadèmia i no està confirmat.",
         "es": "62 plazas de turno libre y 5 para personas con discapacidad (una academia cuenta 69); el primer examen previsto para febrero de 2027 procede de una academia y no está confirmado."
+      },
+      "comprobado": {
+        "fecha": "2026-11-02",
+        "campos": [
+          "referencia",
+          "diario",
+          "fechaPublicacion",
+          "plazas",
+          "plazoHasta",
+          "grupo",
+          "url"
+        ],
+        "fuentes": [
+          {
+            "nombre": "BOPB, 02/07/2026 (CVE 202610113296)",
+            "url": "https://bop.diba.cat/anunci/3963057"
+          },
+          {
+            "nombre": "CIDO, Diputació de Barcelona",
+            "url": "https://cido.diba.cat/oposicions/21852726"
+          }
+        ],
+        "datos": [
+          {
+            "ca": "Les bases publicades al BOPB el 02/07/2026 convocaven 64 places de torn lliure i 5 de reserva per a persones amb discapacitat. El DOGC 9713 (22/07/2026) en va modificar el nombre i el CIDO de la Diputació de Barcelona en recull 67, 5 de les quals reservades a persones amb discapacitat.",
+            "es": "Las bases publicadas en el BOPB el 02/07/2026 convocaban 64 plazas de turno libre y 5 de reserva para personas con discapacidad. El DOGC 9713 (22/07/2026) modificó el número y el CIDO de la Diputación de Barcelona recoge 67, 5 de ellas reservadas a personas con discapacidad."
+          },
+          {
+            "ca": "Sistema: concurs oposició lliure. Anunci al BOE 163 (06/07/2026) i bases al DOGC 9703 (08/07/2026).",
+            "es": "Sistema: concurso-oposición libre. Anuncio en el BOE 163 (06/07/2026) y bases en el DOGC 9703 (08/07/2026)."
+          }
+        ],
+        "requisitos": [
+          {
+            "ca": "Graduat en Educació Secundària Obligatòria, equivalent o superior.",
+            "es": "Graduado en Educación Secundaria Obligatoria, equivalente o superior."
+          },
+          {
+            "ca": "Nivell C1 de català (o superar la prova de català del procés).",
+            "es": "Nivel C1 de catalán (o superar la prueba de catalán del proceso)."
+          }
+        ]
       }
     },
     {
@@ -268,9 +399,13 @@
         "ca": "Auxiliar administratiu/iva, subgrup C2, concurs oposició lliure",
         "es": "Auxiliar administrativo/a, subgrupo C2, concurso-oposición libre"
       },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu Ajuntament de Reus",
+        "es": "auxiliar administrativo Ayuntamiento de Reus"
+      },
       "grupo": "C2",
       "plazas": 36,
-      "estado": "en curso",
+      "estado": "cerrada",
       "referencia": "Decret 2025012140, de 20/05/2025 (bases al BOPT; extracte al DOGC 9533)",
       "diario": "DOGC",
       "fechaPublicacion": "2025-11-03",
@@ -280,8 +415,8 @@
       "oposicion": "auxiliar-administratiu-ajuntaments",
       "verificado": "fuente secundaria",
       "nota": {
-        "ca": "La prova es va fer l'11/04/2026; no s'ha pogut comprovar si el procés ja ha acabat.",
-        "es": "La prueba se celebró el 11/04/2026; no se ha podido comprobar si el proceso ya ha terminado."
+        "ca": "La prova es va fer l'11/04/2026. Segons el CIDO de la Diputació de Barcelona, la convocatòria es va resoldre el 14/08/2026 (tauler d'anuncis).",
+        "es": "La prueba se celebró el 11/04/2026. Según el CIDO de la Diputación de Barcelona, la convocatoria se resolvió el 14/08/2026 (tablón de anuncios)."
       }
     },
     {
@@ -290,6 +425,10 @@
       "cuerpo": {
         "ca": "Auxiliar administratiu/iva, subgrup C2, oposició lliure",
         "es": "Auxiliar administrativo/a, subgrupo C2, oposición libre"
+      },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu Ajuntament de Figueres (oposició lliure)",
+        "es": "auxiliar administrativo Ayuntamiento de Figueres (oposición libre)"
       },
       "grupo": "C2",
       "plazas": 12,
@@ -314,6 +453,10 @@
         "ca": "Auxiliar administratiu/iva, subgrup C2, concurs oposició",
         "es": "Auxiliar administrativo/a, subgrupo C2, concurso-oposición"
       },
+      "nombreCorto": {
+        "ca": "auxiliar administratiu Ajuntament de Figueres (concurs oposició)",
+        "es": "auxiliar administrativo Ayuntamiento de Figueres (concurso-oposición)"
+      },
       "grupo": "C2",
       "plazas": 13,
       "estado": "en curso",
@@ -328,6 +471,32 @@
       "nota": {
         "ca": "Procés diferent de l'oposició lliure de 12 places del 2026; no s'ha pogut comprovar en quina fase és.",
         "es": "Proceso distinto de la oposición libre de 12 plazas de 2026; no se ha podido comprobar en qué fase está."
+      },
+      "comprobado": {
+        "fecha": "2026-11-02",
+        "campos": [
+          "referencia",
+          "diario",
+          "fechaPublicacion",
+          "plazas",
+          "url"
+        ],
+        "fuentes": [
+          {
+            "nombre": "BOE núm. 28, 31/01/2026 (BOE-A-2026-2275)",
+            "url": "https://boe.es/boe/dias/2026/01/31/pdfs/BOE-A-2026-2275.pdf"
+          }
+        ],
+        "datos": [
+          {
+            "ca": "Tretze places d'auxiliar administratiu/iva de l'escala d'administració general, subescala auxiliar, per concurs oposició en torn lliure. Les bases es van publicar al DOGC núm. 9559, de 09/12/2025.",
+            "es": "Trece plazas de auxiliar administrativo/a de la escala de administración general, subescala auxiliar, por concurso-oposición en turno libre. Las bases se publicaron en el DOGC núm. 9559, de 09/12/2025."
+          },
+          {
+            "ca": "Termini de sol·licituds: vint dies naturals a comptar de l'endemà de la publicació de l'anunci al DOGC.",
+            "es": "Plazo de solicitudes: veinte días naturales a contar desde el día siguiente a la publicación del anuncio en el DOGC."
+          }
+        ]
       }
     },
     {
@@ -336,6 +505,10 @@
       "cuerpo": {
         "ca": "Oferta pública d'ocupació 2026 (8.474 places)",
         "es": "Oferta pública de empleo 2026 (8.474 plazas)"
+      },
+      "nombreCorto": {
+        "ca": "Generalitat OPO 2026",
+        "es": "Generalitat OPE 2026"
       },
       "grupo": "varios",
       "plazas": null,
@@ -360,6 +533,10 @@
         "ca": "Personal de l'àmbit d'execució penal (OPO 2026)",
         "es": "Personal del ámbito de ejecución penal (OPE 2026)"
       },
+      "nombreCorto": {
+        "ca": "execució penal",
+        "es": "ejecución penal"
+      },
       "grupo": "varios",
       "plazas": 174,
       "estado": "prevista",
@@ -382,6 +559,10 @@
       "cuerpo": {
         "ca": "Cos d'Agents Rurals, escala bàsica, agent (convocatòria DGAR/01/26/AG)",
         "es": "Cuerpo de Agentes Rurales, escala básica, agente (convocatoria DGAR/01/26/AG)"
+      },
+      "nombreCorto": {
+        "ca": "Agents Rurals",
+        "es": "Agentes Rurales"
       },
       "grupo": "C1",
       "plazas": 100,
@@ -406,6 +587,10 @@
         "ca": "Cos de mestres (oposicions 2027)",
         "es": "Cuerpo de maestros (oposiciones 2027)"
       },
+      "nombreCorto": {
+        "ca": "mestres",
+        "es": "maestros Cataluña"
+      },
       "grupo": "A2",
       "plazas": 2653,
       "estado": "prevista",
@@ -428,6 +613,10 @@
       "cuerpo": {
         "ca": "Professorat d'ensenyament secundari i altres cossos docents (convocatòria 2027)",
         "es": "Profesorado de enseñanza secundaria y otros cuerpos docentes (convocatoria 2027)"
+      },
+      "nombreCorto": {
+        "ca": "secundària",
+        "es": "secundaria Cataluña"
       },
       "grupo": "A1",
       "plazas": null,
@@ -452,6 +641,10 @@
         "ca": "Educador/a d'educació especial (personal laboral, OPO 2026)",
         "es": "Educador/a de educación especial (personal laboral, OPE 2026)"
       },
+      "nombreCorto": {
+        "ca": "educador d'educació especial",
+        "es": "educador de educación especial"
+      },
       "grupo": "C1",
       "plazas": 593,
       "estado": "prevista",
@@ -474,6 +667,10 @@
       "cuerpo": {
         "ca": "Tècnic/a especialista en educació infantil (TEEI, OPO 2026)",
         "es": "Técnico/a especialista en educación infantil (TEEI, OPE 2026)"
+      },
+      "nombreCorto": {
+        "ca": "TEEI",
+        "es": "TEEI"
       },
       "grupo": null,
       "plazas": 280,
@@ -498,6 +695,10 @@
         "ca": "Auxiliar d'educació especial (personal laboral)",
         "es": "Auxiliar de educación especial (personal laboral)"
       },
+      "nombreCorto": {
+        "ca": "auxiliar d'educació especial",
+        "es": "auxiliar de educación especial"
+      },
       "grupo": "D1",
       "plazas": 42,
       "estado": "en curso",
@@ -520,6 +721,10 @@
       "cuerpo": {
         "ca": "Cos superior d'administració (A1), convocatòria 870",
         "es": "Cuerpo superior de administración (A1), convocatoria 870"
+      },
+      "nombreCorto": {
+        "ca": "cos superior Generalitat (A1)",
+        "es": "cuerpo superior Generalitat (A1)"
       },
       "grupo": "A1",
       "plazas": 376,
@@ -544,6 +749,10 @@
         "ca": "Cos administratiu (C1), convocatòria 870",
         "es": "Cuerpo administrativo (C1), convocatoria 870"
       },
+      "nombreCorto": {
+        "ca": "administratiu Generalitat (C1)",
+        "es": "administrativo Generalitat (C1)"
+      },
       "grupo": "C1",
       "plazas": 366,
       "estado": "en curso",
@@ -566,6 +775,10 @@
       "cuerpo": {
         "ca": "Cos subaltern d'administració (agrupació professional), convocatòria 870",
         "es": "Cuerpo subalterno de administración (agrupación profesional), convocatoria 870"
+      },
+      "nombreCorto": {
+        "ca": "subaltern Generalitat",
+        "es": "subalterno Generalitat"
       },
       "grupo": "AP",
       "plazas": 228,
@@ -590,6 +803,10 @@
         "ca": "Cos superior d'administració, escala d'estadística i d'anàlisi (convocatòria 907)",
         "es": "Cuerpo superior de administración, escala de estadística y de análisis (convocatoria 907)"
       },
+      "nombreCorto": {
+        "ca": "estadística Generalitat",
+        "es": "estadística Generalitat"
+      },
       "grupo": "A1",
       "plazas": 29,
       "estado": "en curso",
@@ -612,6 +829,10 @@
       "cuerpo": {
         "ca": "Zelador/a (codi E-177, convocatòria 100-2025)",
         "es": "Celador/a (código E-177, convocatoria 100-2025)"
+      },
+      "nombreCorto": {
+        "ca": "zelador ICS",
+        "es": "celador ICS"
       },
       "grupo": null,
       "plazas": 313,
@@ -636,6 +857,10 @@
         "ca": "Agent de la Guàrdia Urbana de Barcelona",
         "es": "Agente de la Guardia Urbana de Barcelona"
       },
+      "nombreCorto": {
+        "ca": "Guàrdia Urbana de Barcelona",
+        "es": "Guardia Urbana de Barcelona"
+      },
       "grupo": null,
       "plazas": 134,
       "estado": "en curso",
@@ -658,6 +883,10 @@
       "cuerpo": {
         "ca": "Places dels subgrups A1, A2 i C1, concurs oposició lliure (exp. 127/2026)",
         "es": "Plazas de los subgrupos A1, A2 y C1, concurso-oposición libre (exp. 127/2026)"
+      },
+      "nombreCorto": {
+        "ca": "Ajuntament de Barcelona A1, A2 i C1",
+        "es": "Ayuntamiento de Barcelona A1, A2 y C1"
       },
       "grupo": "varios",
       "plazas": null,
@@ -682,6 +911,10 @@
         "ca": "Agent de la Guàrdia Urbana de Badalona, oposició lliure",
         "es": "Agente de la Guardia Urbana de Badalona, oposición libre"
       },
+      "nombreCorto": {
+        "ca": "Guàrdia Urbana de Badalona",
+        "es": "Guardia Urbana de Badalona"
+      },
       "grupo": "C1",
       "plazas": 67,
       "estado": "en curso",
@@ -704,6 +937,10 @@
       "cuerpo": {
         "ca": "Agent de la Policia Municipal de Terrassa, oposició lliure",
         "es": "Agente de la Policía Municipal de Terrassa, oposición libre"
+      },
+      "nombreCorto": {
+        "ca": "Policia Municipal de Terrassa",
+        "es": "Policía Municipal de Terrassa"
       },
       "grupo": null,
       "plazas": 7,
@@ -728,6 +965,10 @@
         "ca": "Agent/a de la Policia Municipal de Sabadell, oposició lliure",
         "es": "Agente de la Policía Municipal de Sabadell, oposición libre"
       },
+      "nombreCorto": {
+        "ca": "Policia Municipal de Sabadell",
+        "es": "Policía Municipal de Sabadell"
+      },
       "grupo": null,
       "plazas": 5,
       "estado": "en curso",
@@ -750,6 +991,10 @@
       "cuerpo": {
         "ca": "Agent de la Policia Local de Mataró, oposició lliure",
         "es": "Agente de la Policía Local de Mataró, oposición libre"
+      },
+      "nombreCorto": {
+        "ca": "Policia Local de Mataró",
+        "es": "Policía Local de Mataró"
       },
       "grupo": null,
       "plazas": 15,
@@ -774,6 +1019,10 @@
         "ca": "Agent de la Guàrdia Urbana de Tarragona, oposició lliure",
         "es": "Agente de la Guardia Urbana de Tarragona, oposición libre"
       },
+      "nombreCorto": {
+        "ca": "Guàrdia Urbana de Tarragona",
+        "es": "Guardia Urbana de Tarragona"
+      },
       "grupo": null,
       "plazas": 12,
       "estado": "en curso",
@@ -796,6 +1045,10 @@
       "cuerpo": {
         "ca": "Agent de la Guàrdia Urbana de L'Hospitalet",
         "es": "Agente de la Guardia Urbana de L'Hospitalet"
+      },
+      "nombreCorto": {
+        "ca": "Guàrdia Urbana de L'Hospitalet",
+        "es": "Guardia Urbana de L'Hospitalet"
       },
       "grupo": null,
       "plazas": 7,
