@@ -3,7 +3,7 @@
     "clave": "a-ccse",
     "letra": "A",
     "nombre": "CCSE nacionalidad",
-    "marca": "CCSE en tu idioma · familia Nuevo en España",
+    "marca": "CCSE Fácil · familia Tus Papeles",
     "resumen": "App y web para aprobar el examen CCSE de nacionalidad española, con las 300 preguntas oficiales explicadas en 7 idiomas.",
     "estado": "en construcción",
     "orden": 1,
@@ -332,7 +332,7 @@
     "clave": "n-nuevo-en-espana",
     "letra": "N",
     "nombre": "Nuevo en España",
-    "marca": "Nuevo en España",
+    "marca": "Tus Papeles",
     "resumen": "Guías paso a paso y listas de comprobación multilingües para los trámites de las personas recién regularizadas o llegadas a España.",
     "estado": "en construcción",
     "orden": 2,
@@ -621,7 +621,7 @@
         },
         {
           "item": "Pago real probado: cobro y reembolso en la cuenta Numi Mates (o monetización de la plataforma activa)",
-          "ok": false
+          "ok": true
         },
         {
           "item": "El pago se ofrece en la primera sesión de uso, en 2 pantallas como máximo",
@@ -650,7 +650,7 @@
     "clave": "b-oposiciones",
     "letra": "B",
     "nombre": "Oposiciones de cola larga",
-    "marca": "Plaça · familia Exámenes",
+    "marca": "Oposita · familia Exámenes",
     "resumen": "Tests, simulacros y repaso espaciado para oposiciones catalanas que las grandes apps no cubren.",
     "estado": "en construcción",
     "orden": 3,
@@ -1384,7 +1384,7 @@
     "clave": "m-catala",
     "letra": "M",
     "nombre": "Certificados de catalán (B1 a C2)",
-    "marca": "Aprova · familia Nuevo en España",
+    "marca": "Aprova · familia Tus Papeles",
     "resumen": "La app para aprobar los certificados oficiales de catalán, del B1 al C2: entrena exactamente las partes de cada examen con sus pesos y mínimos y dice cada día la probabilidad de aprobar. Lo mejor de Duolingo, Busuu, ELSA, Langua, Kwiziq, Anki y Magoosh aplicado al examen de la DPL.",
     "estado": "pendiente",
     "orden": 5,

@@ -1,5 +1,7 @@
 # Marcas: la identidad de toda la cartera
 
+> **Nombres definitivos (31/10, según los dominios comprados):** CCSE Fácil (ccsefacil.com), Tus Papeles (tuspapeles.app; la familia pasa a llamarse Tus Papeles), Oposita (oposita.digital), Lunilla (lunilla.cat), NetoClaro (netoclaro.app) e ImpuestoClaro (impuestoclaro.es). Donde abajo diga «Nuevo en España», «CCSE en tu idioma» o «Plaça», léase Tus Papeles, CCSE Fácil y Oposita; los colores, fuentes, tono y logotipos no cambian.
+
 > Esto no son once productos sueltos: son **cinco familias de marca** con una misma forma de tratar a la gente.
 > Cada sesión de proyecto aplica su ficha tal cual (nombre, promesa, colores, tipografía, tono y logotipo) antes de
 > escribir una sola pantalla pública. Los valores exactos están en `marcas/tokens.json`; los logotipos, en `marcas/logos/`.
