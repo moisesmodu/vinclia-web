@@ -15,8 +15,10 @@
 - Panel de mando (https://cartera-moisesmodu-3705s-projects.vercel.app/): Hoy, Proyectos, Tareas, Marketing (con botón «Enviar todos» de los 9 correos), Ventas, Usuarios, Suscripciones y Juegos. BD propia `cartera-panel`; lectura de las BD de las apps con el rol `panel_ro`.
 - Juegos: 18 en itch.io. GameMonetize los rechazó por calidad (y «no aceptan juegos con IA»), CrazyGames rechazó Egg Truck. **Juegos aparcados por decisión de Moisés.**
 
-## En curso al cerrar
-- Agente «Añadir Numi Mates y Numitech al panel» (proyecto Vercel `mates-numi` con app/pro/ment/tech.numimates.com y `numimates-web`). Si no ha subido nada a la rama base, rehacerlo.
+## Numi Mates y Numitech en el panel (commit ed56658)
+- Ya aparecen en Hoy, Proyectos, Ventas y Suscripciones (Stripe «Numi Mates Premium» repartido).
+- Faltan los usuarios: la DATABASE_URL de `mates-numi` es sensitive y no está en Neon accesible. Hace falta que Moisés pegue la conexión en `~/mates-numi/.env.local` o cree el rol `panel_ro` con el SQL de panel/DESPLIEGUE.md (esquema `mates`) y guarde DB_RO_NUMI en `cartera`.
+- Faltan las visitas: añadir `@vercel/analytics` en los repos `numimates` y `numimates-web`.
 
 ## Pendiente de Moisés (también en el panel → Tareas)
 1. Panel → Marketing → Correos → «Enviar todos (9)».
