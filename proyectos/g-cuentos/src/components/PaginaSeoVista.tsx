@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Idioma } from "@/lib/catalogo";
 import { configPais, euros, URL_BASE } from "@/lib/config";
 import { rutaSeo, seo } from "@/lib/contenido";
+import { ofertasLd } from "@/lib/schema-ofertas";
 import { CUENTOS_MUESTRA } from "@/lib/muestras-contenido";
 import { pref, t } from "@/i18n/textos";
 import { Icono } from "./inicio/Iconos";
@@ -93,10 +94,7 @@ export function PaginaSeoVista({ idioma, slug }: { idioma: Idioma; slug: string 
     name: idioma === "ca" ? "Conte infantil personalitzat Lunilla" : "Cuento infantil personalizado Lunilla",
     description: pagina.descripcion, image: [`${b}${imagen}`],
     brand: { "@type": "Brand", name: "Lunilla" }, url,
-    offers: [
-      { "@type": "Offer", price: (c.precios.pdf / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.pdf },
-      { "@type": "Offer", price: (c.precios.tapaDura / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.tapaDura, shippingDetails: { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "EUR" }, shippingDestination: { "@type": "DefinedRegion", addressCountry: "ES" } } },
-    ],
+    offers: ofertasLd(idioma, x.precios, url),
   };
   const migasLd = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",

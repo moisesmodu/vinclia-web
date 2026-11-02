@@ -39,6 +39,16 @@ Mapa de búsquedas → página (amplía `marketing/SEO.md`):
 | regal Nadal nen 3 anys | `/ca/contes/regal-nadal-nen-3-anys` (nueva) |
 | regal tió / Reis | `/ca/contes/regal-tio-de-nadal`, `/ca/contes/regal-reis-conte-personalitzat` |
 
+### 1b. Datos estructurados de producto (Search Console, 2/11)
+Search Console avisó (no crítico) de que faltaban `hasMerchantReturnPolicy`, `shippingDetails` y `deliveryTime` en las
+ofertas, y `review`/`aggregateRating` en el producto. ✅ Las ofertas de la portada y de las páginas de ideas salen ahora de
+`src/lib/schema-ofertas.ts`: tapa dura con envío incluido a ES (0 €), 5 a 7 días laborables según las condiciones de
+venta (reparto fabricación 1–2 + tránsito 4–5 en `es-ES.json` → `entregaTapaDura`, a confirmar con el primer pedido real
+a Gelato) y sin envío a Canarias, Ceuta ni Melilla (`doesNotShip` con prefijos de CP 35/38/51/52); PDF con entrega
+digital (0 € y 0 días); política de devolución `MerchantReturnNotPermitted` en ES (producto personalizado, sin
+desistimiento, art. 103.c y 103.m) con enlace a las condiciones. **`review` y `aggregateRating` no se añaden a propósito:**
+no hay opiniones reales y Google prohíbe inventarlas. Se añadirán cuando haya reseñas reales de familias (pendiente 6).
+
 ## 2. Conversión (portada → crear → vista previa → pago)
 
 Flujo probado de punta a punta en local (es y ca, 390 px): personalizador de la portada → `/crear` con nombre,

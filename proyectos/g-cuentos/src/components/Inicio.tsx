@@ -3,6 +3,7 @@ import Link from "next/link";
 import { COLECCIONES, type Idioma } from "@/lib/catalogo";
 import { configPais, euros, URL_BASE } from "@/lib/config";
 import { CUENTOS_MUESTRA } from "@/lib/muestras-contenido";
+import { ofertasLd } from "@/lib/schema-ofertas";
 import { t } from "@/i18n/textos";
 import { Edades } from "./inicio/Edades";
 import { FichaLibro } from "./inicio/FichaLibro";
@@ -149,10 +150,7 @@ export function Inicio({ idioma }: { idioma: Idioma }) {
       name: ca ? "Conte infantil personalitzat Lunilla" : "Cuento infantil personalizado Lunilla",
       description: k.sub, image: [`${URL_BASE()}/muestras/leo-y-la-luz-de-la-luna/00.webp`, `${URL_BASE()}/marca/libro-tapa-dura.webp`],
       brand: { "@type": "Brand", name: "Lunilla" },
-      offers: [
-        { "@type": "Offer", price: (c.precios.pdf / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.pdf },
-        { "@type": "Offer", price: (c.precios.tapaDura / 100).toFixed(2), priceCurrency: "EUR", availability: "https://schema.org/InStock", name: x.precios.tapaDura, shippingDetails: { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "EUR" }, shippingDestination: { "@type": "DefinedRegion", addressCountry: "ES" } } },
-      ],
+      offers: ofertasLd(idioma, x.precios, `${URL_BASE()}${p || "/"}`),
     },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: x.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ];
