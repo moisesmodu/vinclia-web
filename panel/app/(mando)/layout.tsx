@@ -1,12 +1,16 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
-import { Bricolage_Grotesque, Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import { BarraTabs, Lateral } from '@/components/mando/Navegacion';
 import './mando.css';
 
-const display = Bricolage_Grotesque({ subsets: ['latin'], weight: ['600', '700', '800'], variable: '--fuente-display', display: 'swap' });
-const texto = Geist({ subsets: ['latin'], variable: '--fuente-texto', display: 'swap' });
-const mono = Geist_Mono({ subsets: ['latin'], variable: '--fuente-mono', display: 'swap' });
+// Fuentes servidas desde el propio despliegue (sin pedirlas a Google en el build).
+const display = localFont({
+  src: '../../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2',
+  weight: '200 800', variable: '--fuente-display', display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: { default: 'Panel de mando', template: '%s · Panel de mando' },
@@ -19,7 +23,7 @@ export const viewport: Viewport = { themeColor: '#0b0c0f', width: 'device-width'
 
 export default function LayoutMando({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${display.variable} ${texto.variable} ${mono.variable}`}>
+    <html lang="es" className={`${display.variable} ${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
         <div className="armazon">
           <Lateral />
