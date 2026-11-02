@@ -18,7 +18,8 @@ const POR_PAGINA = 50;
 
 export default async function Usuarios({ searchParams }: { searchParams: Promise<Busqueda> }) {
   const f = leerFiltros(await searchParams);
-  const { usuarios, avisos, stripe } = await usuariosUnificados();
+  const { usuarios, avisos, stripe, porProyecto } = await usuariosUnificados();
+  const pendientes = porProyecto.filter((p) => p.pendiente);
   const lista = filtrar(usuarios, f);
   const base = filtrar(usuarios, { ...f, estado: '' });
   const pagina = Math.min(f.pagina, Math.max(1, Math.ceil(lista.length / POR_PAGINA)));
@@ -34,11 +35,12 @@ export default async function Usuarios({ searchParams }: { searchParams: Promise
   return (
     <>
       <header className="cab entra">
-        <div><h1>Usuarios</h1><p>Los cinco proyectos con cuentas, unificados. Lunilla cuenta cada email con pedido.</p></div>
+        <div><h1>Usuarios</h1><p>Los proyectos con cuentas, unificados. Lunilla cuenta cada email con pedido; en Numi Mates y Numitech se muestra el código del alumno (no hay email).</p></div>
         <a className="boton" href={`/usuarios/csv/?${qs}`}><DownloadSimple aria-hidden="true" />CSV</a>
       </header>
       {avisos.map((a) => <Aviso key={a.clave} titulo={`Base de datos de ${a.nombre} sin datos`}>{a.error}</Aviso>)}
       {!stripe.ok && <Aviso titulo="Stripe (último pago) no respondió">{stripe.error}</Aviso>}
+      {pendientes.length > 0 && <p className="t3" style={{ fontSize: '0.78rem', marginBottom: 8 }}>Sin base conectada todavía: {pendientes.map((p) => p.nombre).join(', ')}. Sus ventas y suscripciones sí salen (Stripe).</p>}
 
       <section className="rejilla r-2 r-md-4 entra entra-2" aria-label="Resumen">
         <Caja apretado><div className="kpi"><span className="kpi-tit">Usuarios</span><span className="kpi-valor">{numero(base.length)}</span><span className="kpi-pie">{f.proyecto ? nombre(f.proyecto) : 'todos los proyectos'}</span></div></Caja>

@@ -2,15 +2,20 @@
 
 export type Resultado<T> = { ok: true; datos: T } | { ok: false; error: string };
 
-export type ClaveProyecto = 'A' | 'N' | 'B' | 'G' | 'M';
+export type ClaveProyecto = 'A' | 'N' | 'B' | 'G' | 'M' | 'NM' | 'NT';
 
-export const PROYECTOS_CONTROL: { clave: ClaveProyecto; slug: string; nombre: string; vercel: string; web: string }[] = [
+/** `db`: sufijo de la variable DB_RO_<db> (por defecto, la clave). Numi Mates y Numitech comparten la base DB_RO_NUMI. */
+export const PROYECTOS_CONTROL: { clave: ClaveProyecto; slug: string; nombre: string; vercel: string; web: string; db?: string }[] = [
   { clave: 'A', slug: 'a-ccse', nombre: 'CCSE Fácil', vercel: 'ccse-en-tu-idioma', web: 'https://ccsefacil.com' },
   { clave: 'N', slug: 'n-nuevo-en-espana', nombre: 'Tus Papeles', vercel: 'nuevo-en-espana', web: 'https://tuspapeles.app' },
   { clave: 'B', slug: 'b-oposiciones', nombre: 'Oposita', vercel: 'placa-oposicions', web: 'https://oposita.digital' },
   { clave: 'G', slug: 'g-cuentos', nombre: 'Lunilla', vercel: 'lunilla', web: 'https://lunilla.cat' },
   { clave: 'M', slug: 'm-catala', nombre: 'Aprova', vercel: 'aprova-catala', web: 'https://aprova-catala.vercel.app' },
+  { clave: 'NM', slug: 'numi-mates', nombre: 'Numi Mates', vercel: 'mates-numi', web: 'https://app.numimates.com', db: 'NUMI' },
+  { clave: 'NT', slug: 'numitech', nombre: 'Numitech', vercel: 'mates-numi', web: 'https://tech.numimates.com', db: 'NUMI' },
 ];
+
+export const variableBase = (clave: ClaveProyecto) => `DB_RO_${PROYECTOS_CONTROL.find((p) => p.clave === clave)?.db ?? clave}`;
 
 export const nombreProyecto = (slug: string | null) =>
   slug ? PROYECTOS_CONTROL.find((p) => p.slug === slug)?.nombre ?? slug : 'Fuera de la cartera';

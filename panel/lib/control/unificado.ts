@@ -1,13 +1,13 @@
 import { cache } from 'react';
 import { datosStripe, type PagoStripe } from './stripe';
 import { usuariosPorProyecto, type EstadoUsuario, type UsuarioControl } from './usuarios';
-import type { ClaveProyecto } from './comun';
+import { PROYECTOS_CONTROL, type ClaveProyecto } from './comun';
 
 export type Filtros = { q: string; proyecto: ClaveProyecto | ''; estado: EstadoUsuario | '' };
 
 const COBRADO = new Set<PagoStripe['estado']>(['pagado', 'reembolso parcial', 'en disputa']);
 
-/** Usuarios de los cinco proyectos, con el último pago completado con lo que diga Stripe. */
+/** Usuarios de los proyectos con base de datos, con el último pago completado con lo que diga Stripe. */
 export const usuariosUnificados = cache(async () => {
   const [porProyecto, stripe] = await Promise.all([usuariosPorProyecto(), datosStripe()]);
   const ultimo = new Map<string, Date>();
@@ -23,7 +23,7 @@ export const usuariosUnificados = cache(async () => {
     usuarios.push({ ...u, ultimoPago, haPagado: u.haPagado || !!ultimoPago });
   }
   usuarios.sort((a, b) => +b.alta - +a.alta);
-  const avisos = porProyecto.filter((p) => !p.resultado.ok).map((p) => ({ clave: p.clave, nombre: p.nombre, error: (p.resultado as { error: string }).error }));
+  const avisos = porProyecto.filter((p) => !p.resultado.ok && !p.pendiente).map((p) => ({ clave: p.clave, nombre: p.nombre, error: (p.resultado as { error: string }).error }));
   return { usuarios, avisos, porProyecto, stripe };
 });
 
@@ -38,7 +38,7 @@ export function leerFiltros(sp: Record<string, string | string[] | undefined>): 
   const estado = uno('estado');
   return {
     q: uno('q').slice(0, 120),
-    proyecto: (['A', 'N', 'B', 'G', 'M'].includes(proyecto) ? proyecto : '') as Filtros['proyecto'],
+    proyecto: (PROYECTOS_CONTROL.some((p) => p.clave === proyecto) ? proyecto : '') as Filtros['proyecto'],
     estado: (['gratis', 'prueba', 'pago', 'cancelado'].includes(estado) ? estado : '') as Filtros['estado'],
     pagina: Math.max(1, parseInt(uno('pagina'), 10) || 1),
   };
