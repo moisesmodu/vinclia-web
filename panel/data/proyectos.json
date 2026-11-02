@@ -982,7 +982,7 @@
     "nombre": "Juegos",
     "marca": "Nuvolet Games",
     "resumen": "Juegos HTML5 casuales para CrazyGames, Poki e itch.io, y experiencias de Roblox publicadas por API.",
-    "estado": "lanzado",
+    "estado": "pausado",
     "orden": 4,
     "modelo": "Publicidad en portales (50–70 % para el creador); Robux",
     "margenCliente": 0,
@@ -1078,16 +1078,14 @@
       {
         "fecha": "2026-11-01",
         "texto": "SEO publicado en producción (commit 63579b1, incluye dabdb88 y 11bfaba): juegos-casuales.vercel.app con canonical, analítica y sitemap"
+      },
+      {
+        "fecha": "2026-11-02",
+        "texto": "Proyecto aparcado: rechazos de CrazyGames (Egg Truck) y GameMonetize (18 juegos, calidad e IA). Siguen vivos en itch.io y GameDistribution"
       }
     ],
     "proximos": [
-      "Redesplegar en Vercel con el commit SEO (sesión del Mac; comandos en marketing/SEO.md §4.2)",
-      "Marketing: publicar las piezas de la semana 1 que Moisés apruebe (marketing/APROBAR.md) y medir el lunes 9/11",
-      "MONETIZACION.md: cobro real activo y plan del primer euro a 14 días",
-      "Correo de contacto hola@numimates.com y redespliegue",
-      "Sesión del Mac: redesplegar juegos-casuales con la marca (DESPLIEGUE.md, «Redespliegue pendiente»)",
-      "Segundo juego con la plantilla",
-      "Plan de Roblox"
+      "Revisar ingresos de itch.io y GameDistribution el 2/12"
     ],
     "paraMoises": [
       "Cuenta de desarrollador en CrazyGames y subir egg-truck-crazygames.zip (textos en FICHAS.md)",
@@ -1336,13 +1334,12 @@
       "parada": "Nunca por un juego; a los 6 juegos, si ninguno pasa del lanzamiento básico, se cambia de género."
     },
     "pulido": {
-      "prioridad": 6,
+      "prioridad": 11,
       "estado": "por revisar",
-      "porQue": "Cinco juegos listos y publicados; el dinero llega cuando los portales los aceptan, y eso lo desbloquean las cuentas de desarrollador.",
+      "porQue": "Aparcado por decisión de Moisés el 2/11: CrazyGames rechazó Egg Truck y GameMonetize los 18 juegos por calidad y por estar hechos con IA. Quedan publicados en itch.io y GameDistribution; se retoma solo si llegan ingresos de ahí.",
       "faltan": [
-        "Cuentas CrazyGames, Poki e itch.io (Moisés) y envío",
-        "Segunda hornada de juegos",
-        "Roblox"
+        "Esperar datos de itch.io y GameDistribution 30 días",
+        "Si se retoma: un juego de más calidad, no 18 de plantilla"
       ],
       "checklist": [
         {
@@ -1754,7 +1751,7 @@
       }
     ],
     "pulido": {
-      "prioridad": 8,
+      "prioridad": 7,
       "estado": "por revisar",
       "porQue": "Producto grande y con mucho potencial (B1 a C2), pero aún sin empezar; se arranca cuando los seis anteriores estén vendiendo.",
       "faltan": [
@@ -2388,7 +2385,7 @@
       "parada": "No hace falta; con menos de 20 libros al mes a los 6 meses, piloto automático."
     },
     "pulido": {
-      "prioridad": 11,
+      "prioridad": 10,
       "estado": "por revisar",
       "porQue": "Ingreso pasivo pequeño; se hace con los imprimibles de Numimates cuando haya un hueco, sin prisa.",
       "faltan": [
@@ -2670,7 +2667,7 @@
       "parada": "No hace falta; actualización trimestral y piloto automático."
     },
     "pulido": {
-      "prioridad": 7,
+      "prioridad": 6,
       "estado": "por revisar",
       "porQue": "Ingreso pasivo con contenido ya hecho de Numi Tech; en producción de vídeo, se revisa cuando esté el PR.",
       "faltan": [
@@ -2938,7 +2935,7 @@
       "parada": "Arranca solo cuando B tenga 100 suscriptores; primero DELE A2 en inglés y árabe."
     },
     "pulido": {
-      "prioridad": 9,
+      "prioridad": 8,
       "estado": "por revisar",
       "porQue": "Reutiliza el motor de B para PAU, DELE y SIELE; conviene esperar a que Plaça demuestre que el motor vende.",
       "faltan": [
@@ -3214,7 +3211,7 @@
       "parada": "Beta gratuita en 5 escuelas a cambio de audio con consentimiento; producto de pago solo en 2027-28."
     },
     "pulido": {
-      "prioridad": 10,
+      "prioridad": 9,
       "estado": "por revisar",
       "porQue": "Lunilla Lee aprovecha la marca de G; mejor lanzarlo con la familia Lunilla ya conocida tras Navidad.",
       "faltan": [

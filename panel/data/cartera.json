@@ -90,11 +90,24 @@
     "nucleo": [
       "A CCSE",
       "B Oposiciones",
-      "Juegos",
       "P Webs",
       "G Cuentos (solo si empieza esta semana)"
     ],
     "fecha": "2026-10-24"
   },
-  "panelUrl": "https://cartera-moisesmodu-3705s-projects.vercel.app"
+  "panelUrl": "https://cartera-moisesmodu-3705s-projects.vercel.app",
+  "decisionesTomadas": [
+    {
+      "fecha": "2026-11-01",
+      "texto": "Google Ads aprobado: 300 €/mes en diciembre (220 € Oposita con CPA máx. 25 €, 80 € CCSE con CPA máx. 9 €). Excepción a la regla de VIABILIDAD §5; se revisa a los 14 días"
+    },
+    {
+      "fecha": "2026-11-02",
+      "texto": "Juegos aparcado tras los rechazos de CrazyGames y GameMonetize; el núcleo de la cartera pasa a A, B, G, N y P"
+    },
+    {
+      "fecha": "2026-11-02",
+      "texto": "Moisés: «haz lo que pueda». Se envían los 9 correos aprobados el 1/11 y se prepara el motor de ventas; las ofertas en Stripe real y el envío automático esperan su autorización"
+    }
+  ]
 }

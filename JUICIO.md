@@ -153,3 +153,10 @@ reasigna el esfuerzo).
 ## 6. Qué se revisa cada mes
 Con los datos del panel: probabilidad actualizada por proyecto, aportación real frente a la esperada, y aplicación de
 los criterios de parada. El primer repaso, el 24/11/2026.
+
+
+## Revisión del 2/11/2026
+
+- **Primera hipótesis caída: Juegos.** CrazyGames rechazó Egg Truck y GameMonetize los 18 juegos («calidad» y «no aceptamos juegos con IA»). Los portales grandes filtran la producción en serie; la vía que queda (itch.io, GameDistribution) paga poco. Aparcado. Lección para el resto: un producto bueno vale más que dieciocho aceptables.
+- **Todo lo demás está en producción con cobro real** (A, N, B, G) o esperando aprobación de terceros (P: AdSense; A: Google Play). Ingresos a 2/11: 0 €. El primer euro depende de los canales de la semana 1 (correos, grupos, SEO) y de la inscripción del CCSE que cierra el 5/11.
+- **Núcleo revisado:** A, B, G, N y P. Probabilidad de 1.000 €/mes a 6 meses: baja respecto al estudio inicial por la caída de Juegos; se recalcula el 1/12 con datos reales de noviembre.
