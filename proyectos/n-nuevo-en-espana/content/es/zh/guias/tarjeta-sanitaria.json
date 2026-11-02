@@ -1,0 +1,132 @@
+{
+  "slug": "tarjeta-sanitaria",
+  "titulo": "个人医疗卡（TSI）",
+  "resumen": "个人医疗卡（tarjeta sanitaria individual，TSI）是使用公共医疗的卡：家庭医生、医疗中心（centro de salud）、专科医生和处方药。它由你所在自治区的卫生服务机构发放，申请免费。通常你需要已办理居住登记（empadronamiento），并且获得医疗保障权利的认定。如果你在西班牙没有合法居留，你也有这项权利：自 2026 年 3 月 13 日起，Real Decreto 180/2026 规定了统一程序，递交申请时会发给你一份临时文件，让你从那时起就能看病，最多 3 个月内给你答复。",
+  "paraQuien": "适用于住在西班牙的人：有居留许可的人（劳动者、家属等），以及没有合法居留的外国人。不适用于游客，也不适用于由其他国家的社会保障或保险覆盖的短期停留。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "办卡费用", "valor": "免费" },
+    { "etiqueta": "由谁发放", "valor": "你所在自治区的卫生服务机构（例如马德里的 SERMAS 或加泰罗尼亚的 CatSalut）" },
+    { "etiqueta": "一般条件", "valor": "居住登记 + 已认定的医疗保障权利" },
+    { "etiqueta": "由谁认定权利", "valor": "如果你有合法居留或在工作，由国家社会保障局（INSS）认定；如果没有合法居留，由你所在的自治区认定" },
+    { "etiqueta": "没有合法居留", "valor": "Real Decreto 180/2026：递交申请时发给临时文件；最多 3 个月内答复" },
+    { "etiqueta": "所需时间（马德里）", "valor": "材料审核通过后约 3-4 周" },
+    { "etiqueta": "急诊", "valor": "拨打 112 或去急诊（urgencias）：不要等拿到卡" }
+  ],
+  "pasos": [
+    {
+      "titulo": "了解你的权利",
+      "texto": "Real Decreto-ley 7/2018 恢复了公共医疗的全民覆盖。住在西班牙但未登记或未获准居留的外国人，如果没有其他强制性医疗保障、不能把本国的保障带过来、也没有第三方有义务付费，就有权享受与西班牙人相同条件的医疗服务（Ley 16/2003 第3 ter条）。Real Decreto 180/2026 规定了具体的申请方式。"
+    },
+    {
+      "titulo": "办理居住登记并开一份近期证明单",
+      "texto": "居住登记（empadronamiento）是办卡的一般条件，因为它证明你住在哪里。马德里和加泰罗尼亚要求 3 个月内开具的居住登记证明单（volante）或证书（certificado）。请参阅我们的居住登记指南。"
+    },
+    {
+      "titulo": "弄清楚由谁认定你的权利",
+      "texto": "如果你在工作并已在社会保障（Seguridad Social）登记，或者你有合法居留，由国家社会保障局（Instituto Nacional de la Seguridad Social，INSS）认定你的权利。如果你没有合法居留，根据 Real Decreto 180/2026，由你所在自治区的卫生服务机构认定。"
+    },
+    {
+      "titulo": "如果由 INSS 认定，申请或下载认定文件",
+      "texto": "如果你在工作，一般在参保登记时权利就会被认定。如果你不工作（例如通过家庭团聚来西班牙），可以在社会保障电子政务网站或预约（cita previa）后到 INSS 的 CAISS 办公室申请认定。带上你的身份证件、TIE 或居留决定书，以及居住登记。之后你可以在社会保障网站下载证明你权利的文件。"
+    },
+    {
+      "titulo": "如果你没有合法居留，提交申请和责任声明",
+      "texto": "向你所在自治区的卫生服务机构（在休达和梅利利亚为 INGESA）提交申请，并附上责任声明（declaración responsable）。身份证明可以用护照或你本国的官方证件；如果没有，可以用你本国其他带照片的官方证件。证明你住在西班牙用居住登记；如果办不了，该法令规定了其他证明，例如孩子的入学注册、你名下的账单或领事登记。"
+    },
+    {
+      "titulo": "保存好你的临时文件",
+      "texto": "没有合法居留的人递交申请时，会当场拿到一份临时文件。在你的案卷处理期间，凭它可以使用公共医疗（在西班牙境外无效）。政府最多有 3 个月时间答复；如果期限内没有答复，你的申请视为批准（默许批准，silencio positivo）。"
+    },
+    {
+      "titulo": "在你的医疗中心申请医疗卡",
+      "texto": "权利认定后，到你住址所属的医疗中心（centro de salud，在加泰罗尼亚叫 CAP）申请医疗卡，如果你所在自治区允许，也可以在其电子政务网站申请。在那里还会为你分配家庭医生（儿童则分配儿科医生）。"
+    },
+    {
+      "titulo": "领取医疗卡",
+      "texto": "在马德里，材料审核通过后约 3-4 周，医疗卡会寄到你的医疗中心（不是寄到家里）。在加泰罗尼亚，正式的实体 TSI 会在你的居住登记生效后发放。在此期间，如果你需要看病，请问医疗中心该如何证明身份。"
+    },
+    {
+      "titulo": "及时更新你的资料",
+      "texto": "如果你换了地址、换了自治区或换了证件（例如从护照换成 TIE），请通知你的医疗中心。在马德里，外国人的医疗卡与其 TIE 的有效期挂钩，并随 TIE 一起更新；为没有合法居留的人发放的 DASE 文件有效期 2 年，可以续期。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "护照或你本国的官方身份证件", "nota": "原件，且在有效期内。" },
+    { "nombre": "TIE 或居留许可决定书", "nota": "如果你在西班牙有合法居留。" },
+    { "nombre": "居住登记证明单或证书", "nota": "在马德里和加泰罗尼亚须为 3 个月内开具。在马德里市，你可以授权他们查询你的居民登记。" },
+    { "nombre": "INSS 出具的权利证明文件", "nota": "如果你有合法居留或在工作。在社会保障网站下载。" },
+    { "nombre": "申请表和责任声明（declaración responsable）", "nota": "适用于没有合法居留的人（Real Decreto 180/2026）。在医疗中心或你所在自治区的网站领取。" },
+    { "nombre": "权利不可转移证明（certificado de no exportación）", "nota": "如果你来自欧盟、欧洲经济区、瑞士、英国或有协议的国家（例如安道尔、智利、摩洛哥或突尼斯）：由你本国的机构出具。" },
+    { "nombre": "未办理居住登记时的其他居住证明", "nota": "根据 Real Decreto 180/2026：入学注册、你名下的账单、领事登记、公立移民中心的证明等。" },
+    { "nombre": "家庭簿（libro de familia）或出生证明", "nota": "用于没有护照或身份证件的未成年人。" }
+  ],
+  "plazos": [
+    { "texto": "Real Decreto 180/2026 自 2026 年 3 月 13 日起生效。" },
+    { "texto": "没有合法居留：政府最多有 3 个月时间作出决定并通知。如果没有答复，你的申请视为批准（默许批准，silencio positivo）。" },
+    { "texto": "为没有合法居留的人出具的权利证明文件（Real Decreto 180/2026），只要你仍符合条件，就不会过期。" },
+    { "texto": "马德里：DASE 临时文件最长有效 3 个月；正式 DASE 有效期 2 年，可以续期。" },
+    { "texto": "马德里：医疗卡约 3-4 周寄到你的医疗中心。" },
+    { "texto": "马德里和加泰罗尼亚：居住登记证明单或证书须为 3 个月内开具。" }
+  ],
+  "tasas": [
+    { "concepto": "申请医疗卡或医疗保障文件", "importe": "0 €", "modelo": "没有缴费表格" },
+    { "concepto": "处方药（马德里的 DASE）", "importe": "价格的 40 %", "modelo": "在药店支付", "nota": "这是马德里自治区为 DASE 规定的自付比例。其他人的自付比例取决于你的情况和收入：请咨询你的卫生服务机构。" }
+  ],
+  "errores": [
+    "等拿到医疗卡才去急诊：如果是紧急情况，拨打 112 或去急诊。",
+    "带一份旧的居住登记证明单：在马德里和加泰罗尼亚，必须是 3 个月内开具的。",
+    "没有合法居留却去 INSS：这种情况下，由你所在的自治区在医疗中心或其指定的部门认定你的权利。",
+    "扔掉或弄丢临时文件：在等待答复期间，是它让你能使用公共医疗。",
+    "来自欧盟或有协议的国家却没带权利不可转移证明：没有它，就不能通过这种途径认定你的权利。",
+    "为了办卡在一个你并不居住的地址登记：CatSalut 认为这是欺诈，可以使医疗卡失效。",
+    "换地址或换证件后没有通知医疗中心：你在预约看病或取处方药时可能会遇到问题。"
+  ],
+  "checklist": [
+    { "id": "empadronado", "texto": "我已在我居住的市镇办理居住登记" },
+    { "id": "volante-reciente", "texto": "我有一份 3 个月内开具的居住登记证明单或证书" },
+    { "id": "doc-identidad", "texto": "我有有效的护照或 TIE" },
+    { "id": "quien-reconoce", "texto": "我知道我的权利由 INSS 还是由我所在的自治区认定" },
+    { "id": "doc-inss", "texto": "如果由 INSS 认定，我有证明我权利的文件" },
+    { "id": "no-exportacion", "texto": "如果我来自欧盟或有协议的国家，我有权利不可转移证明" },
+    { "id": "solicitud-ccaa", "texto": "如果我没有合法居留，我已提交申请和责任声明" },
+    { "id": "provisional", "texto": "我已保存好临时文件，并知道它什么时候过期" },
+    { "id": "centro-salud", "texto": "我知道我的医疗中心是哪一个，并已在那里申请医疗卡" },
+    { "id": "urgencias", "texto": "我知道遇到紧急情况要拨打 112 或去急诊" }
+  ],
+  "recordatorio": {
+    "pregunta": "你的临时医疗文件什么时候过期？",
+    "avisos": [
+      { "dias": -30, "texto": "你的临时医疗文件一个月后过期。如果你还没收到答复或医疗卡，请到医疗中心询问申请进度。" },
+      { "dias": -7, "texto": "你的临时医疗文件一周后过期。问问医疗中心从现在起该用什么文件，并带上你的申请凭证。" }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "在加泰罗尼亚（CatSalut）",
+      "texto": "TSI 在你希望就诊的初级医疗中心（CAP）申请。带上你的身份证件（DNI、NIE 或护照）和 3 个月内开具的居住登记证书（有些市政府允许在线查询）。你可以不去 CAP 就开始申请，但正式的实体卡会在你的居住登记生效后发放。CatSalut 已对没有合法居留的人适用 Real Decreto 180/2026；认定可以就医后，会发给你一张 TSI。信息：https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/qui-te-acces-al-sistema-sanitari-public/"
+    },
+    {
+      "titulo": "在马德里自治区（SERMAS）",
+      "texto": "有合法居留：凭你的 DNI 或 TIE、INSS 文件和 90 天内开具的居住登记证明单，到你的医疗中心或在电子政务网站申请医疗卡。没有合法居留：自治区发放外国人医疗保障文件（Documento de Asistencia Sanitaria para Extranjeros，DASE），效力与医疗卡相同。可以通过你的医疗中心预约，到 SERMAS 的办理处（Unidades de Tramitación）申请，或在电子政务网站申请。递交申请时会发给你一份临时文件（最长 3 个月）。注意：自治区网站曾要求在西班牙居住超过 90 天并办理居住登记满 3 个月；我们无法确认它是否已根据 Real Decreto 180/2026 调整了这些条件——据我们核查，该法令并没有规定最短居住登记时间。信息：https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase"
+    },
+    {
+      "titulo": "如果你是欧盟、欧洲经济区或瑞士公民",
+      "texto": "如果你只是路过，请使用欧洲医疗卡（Tarjeta Sanitaria Europea）。如果你住在西班牙但不在这里工作，通常在认定你的权利之前，你需要一份本国出具的、说明你不能把医疗保障带过来的证明（权利不可转移证明）。"
+    },
+    {
+      "titulo": "在其他自治区",
+      "texto": "各自治区自行决定申请方式和受理部门，但自 2026 年 3 月起，所有自治区都必须对没有合法居留的人适用 Real Decreto 180/2026 的统一程序。请到你的医疗中心询问，或在你所在自治区卫生服务机构的网站上搜索“tarjeta sanitaria”。"
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 7/2018，关于全民享有国家卫生系统服务（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 180/2026, de 11 de marzo，没有合法居留的外国人享受医疗服务的权利（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714", "consultado": "2026-10-28" },
+    { "nombre": "卫生部（Ministerio de Sanidad）：批准加强全民医疗覆盖的法令", "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866", "consultado": "2026-10-28" },
+    { "nombre": "卫生部：个人医疗卡（Tarjeta sanitaria individual）", "url": "https://www.sanidad.gob.es/areas/saludDigital/tarjetaSanitariaSNS/home.htm", "consultado": "2026-10-28" },
+    { "nombre": "社会保障电子政务网站：医疗保障（INSS）", "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/asistencia+sanitaria/202043", "consultado": "2026-10-28" },
+    { "nombre": "CatSalut：首次办理个人医疗卡（TSI）", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
+    { "nombre": "马德里自治区（Comunidad de Madrid）：医疗卡（Tarjeta sanitaria）", "url": "https://www.comunidad.madrid/salud/tarjeta-sanitaria", "consultado": "2026-10-28" },
+    { "nombre": "马德里自治区：外国人医疗保障（DASE）", "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase", "consultado": "2026-10-28" }
+  ]
+}

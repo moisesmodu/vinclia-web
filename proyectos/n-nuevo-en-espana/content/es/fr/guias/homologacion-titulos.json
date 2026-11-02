@@ -1,0 +1,94 @@
+{
+  "slug": "homologacion-titulos",
+  "titulo": "Faire reconnaître (homologación) ou déclarer l'équivalence de vos diplômes",
+  "resumen": "Pour utiliser en Espagne un diplôme obtenu dans un autre pays, il faut sa reconnaissance officielle. Les diplômes universitaires sont reconnus par le Ministerio de Ciencia, Innovación y Universidades (taxe de 166,50 €, réponse dans un délai maximum de 6 mois). Les diplômes d'ESO (fin du collège), de Bachillerato (baccalauréat) et de Formation professionnelle sont reconnus par le Ministerio de Educación, Formación Profesional y Deportes. Presque toujours, il faut une traduction officielle et une apostille ou une légalisation.",
+  "paraQuien": "Pour les personnes avec des diplômes ou des études étrangères qui veulent travailler, étudier ou passer des concours publics (oposiciones) en Espagne. Si vous vivez en Catalogne, en Galice ou au Pays basque, les diplômes non universitaires sont gérés par votre communauté autonome.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Diplômes universitaires", "valor": "Ministerio de Ciencia, Innovación y Universidades (Real Decreto 889/2022)" },
+    { "etiqueta": "Diplômes non universitaires", "valor": "Ministerio de Educación, Formación Profesional y Deportes (Real Decreto 104/1988)" },
+    { "etiqueta": "Taxe universitaire", "valor": "166,50 € (modelo 790, código 107)" },
+    { "etiqueta": "Délai de réponse universitaire", "valor": "6 mois maximum" },
+    { "etiqueta": "Homologation du diplôme d'ESO", "valor": "Sans taxe" },
+    { "etiqueta": "Avis", "valor": "Le site électronique (subsede) d'Universidades est fermé depuis le 22/10/2026 à cause d'un problème technique" }
+  ],
+  "pasos": [
+    { "titulo": "Choisissez la bonne démarche", "texto": "Homologación (homologation) : donne les mêmes effets que le diplôme espagnol et elle est obligatoire pour exercer une profession réglementée (par exemple, médecine, soins infirmiers, pharmacie, kinésithérapie, enseignement). Equivalencia (équivalence) : reconnaît le niveau académique (Grado ou Máster) pour continuer des études, pour les concours publics ou pour des emplois non réglementés ; elle ne permet pas d'exercer une profession réglementée. Convalidación : reconnaît des études partielles pour les continuer en Espagne." },
+    { "titulo": "Vérifiez si votre profession est réglementée", "texto": "Regardez la liste de l'Annexe du Real Decreto 889/2022 sur le portail Valida-TE du Ministère. Si votre profession n'y est pas, vous ne pouvez pas demander l'homologation, mais vous pouvez demander la déclaration d'équivalence. Vous pouvez demander les deux pour le même diplôme, mais ce sont deux demandes et deux taxes." },
+    { "titulo": "Faites apostiller ou légaliser les documents dans votre pays", "texto": "Les originaux (diplôme et relevé de notes) doivent avoir l'Apostille de La Haye si votre pays a signé la Convention, ou la légalisation par voie diplomatique s'il ne l'a pas signée. Ce n'est pas exigé pour les documents de l'UE, de l'Espace économique européen et de la Suisse. Faites apostiller l'original, pas une copie certifiée conforme." },
+    { "titulo": "Demandez la traduction officielle", "texto": "Si les documents ne sont pas en espagnol, il vous faut une traduction assermentée (traducción jurada) faite par un traducteur assermenté nommé par le Ministerio de Asuntos Exteriores, ou une traduction officielle d'un autre pays de l'UE. La traduction doit aussi inclure l'apostille ou les légalisations." },
+    { "titulo": "Payez la taxe", "texto": "Universitaires : modelo 790 código 107, 166,50 € pour chaque démarche. Non universitaires : modelo 790 código 079. Payez le montant complet : s'il arrive moins d'argent à cause des frais bancaires, votre dossier n'est pas ouvert. Ne payez pas avant d'être sûr de la démarche dont vous avez besoin." },
+    { "titulo": "Déposez la demande (universitaires)", "texto": "La demande d'homologation ou d'équivalence se dépose sur internet sur le site officiel (sede electrónica) du Ministère, avec tous les documents scannés. Depuis le 22/10/2026, la subsede d'Universidades est fermée à cause d'un problème technique ; le Ministère indique que vous pouvez utiliser le Registro Electrónico General (ciencia.sede.gob.es) et que les délais des démarches concernées sont prolongés. Lisez l'avis avant de déposer." },
+    { "titulo": "Déposez la demande (ESO, Bachillerato, FP)", "texto": "Remplissez la demande sur le site officiel du Ministerio de Educación (sede.educacion.gob.es) ou déposez-la dans un registre public avec les originaux, pour qu'on fasse les copies vérifiées. En Catalogne, en Galice et au Pays basque, elle se dépose auprès de la communauté autonome." },
+    { "titulo": "Demandez le volante de inscripción condicional si vous allez étudier", "texto": "Pour les diplômes non universitaires, vous pouvez remettre avec la demande le volante de inscripción condicional (document d'inscription provisoire). Une fois tamponné, il vous permet de vous inscrire de façon provisoire pendant le traitement du dossier. Vous l'utilisez sous votre responsabilité et il ne garantit pas une réponse favorable." },
+    { "titulo": "Répondez si on vous demande d'autres documents", "texto": "Le Ministère peut vous demander de corriger ou de compléter la demande (subsanación). Répondez dans le délai qu'on vous donne. Vérifiez souvent votre dossier et vos notifications électroniques." },
+    { "titulo": "Recevez la décision", "texto": "La décision universitaire peut être favorable, défavorable ou conditionnée à une formation complémentaire (par exemple, une épreuve ou des matières). Si 6 mois passent sans réponse, la demande peut être considérée comme rejetée par silence administratif ; vous pouvez faire un recours." }
+  ],
+  "documentos": [
+    { "nombre": "Passeport, TIE ou pièce d'identité en cours de validité", "nota": "Si vous êtes en Espagne, il vous faut un NIF ou un NIE pour payer la taxe." },
+    { "nombre": "Diplôme original ou certificat officiel de délivrance du diplôme", "nota": "Avec apostille ou légalisation si nécessaire." },
+    { "nombre": "Relevé de notes (certificado académico)", "nota": "Universitaires : avec la durée, les matières et les heures ou crédits ECTS. ESO : 4 dernières années. Bachillerato : 3 dernières années." },
+    { "nombre": "Supplément européen au diplôme", "nota": "Facultatif : peut remplacer le relevé de notes pour l'équivalence." },
+    { "nombre": "Traduction assermentée ou officielle en espagnol", "nota": "De tous les documents qui ne sont pas en espagnol, y compris les apostilles." },
+    { "nombre": "Justificatif de paiement de la taxe (modelo 790)", "nota": "Código 107 (universitaires) ou 079 (non universitaires)." },
+    { "nombre": "Preuve du droit d'exercer la profession dans votre pays", "nota": "Seulement pour l'homologation des professions réglementées." },
+    { "nombre": "Preuve de connaissance de l'espagnol", "nota": "Seulement pour certaines professions (par exemple, B2 pour l'enseignement si vous n'êtes pas d'un pays de langue espagnole)." },
+    { "nombre": "Volante de inscripción condicional", "nota": "Facultatif, diplômes non universitaires, si vous voulez vous inscrire pendant l'attente." }
+  ],
+  "plazos": [
+    { "texto": "Universitaires : le Ministère doit décider et notifier dans un délai maximum de 6 mois à partir de l'entrée de la demande dans le registre électronique (Real Decreto 889/2022). Sans réponse dans ce délai, la demande peut être considérée comme rejetée par silence." },
+    { "texto": "À cause de la fermeture de la subsede d'Universidades depuis le 22/10/2026, le Ministère indique que les délais des procédures concernées sont prolongés jusqu'à la résolution du problème." },
+    { "texto": "Non universitaires : le volante de inscripción condicional permet de vous inscrire dans les 6 mois qui suivent son tamponnage et il vaut pour cette année scolaire (Orden du 14 mars 1988). Vérifiez la validité actuelle auprès du Ministerio de Educación." },
+    { "texto": "Nous n'avons pas pu vérifier un délai maximum de réponse publié pour les diplômes non universitaires ; consultez la fiche de la démarche sur le site du Ministerio de Educación." }
+  ],
+  "tasas": [
+    { "concepto": "Homologation d'un diplôme universitaire en Grado ou Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Déclaration d'équivalence au niveau académique de Grado ou Máster", "importe": "166,50 €", "modelo": "Modelo 790 código 107" },
+    { "concepto": "Homologation au diplôme de Graduado en ESO", "importe": "Gratuit", "modelo": "Pas de taxe" },
+    { "concepto": "Homologation au diplôme de Bachiller", "importe": "49,76 €", "modelo": "Modelo 790 código 079", "nota": "Montant publié par le Ministerio de Educación ; nous n'avons pas pu confirmer que c'est celui en vigueur en 2026. Vérifiez-le avant de payer." },
+    { "concepto": "Convalidación pour la 1re année de Bachillerato", "importe": "24,88 €", "modelo": "Modelo 790 código 079", "nota": "Vérifiez le montant en vigueur sur le site du Ministerio de Educación." },
+    { "concepto": "Homologation ou convalidación de Formation professionnelle", "importe": "Consultez le montant en vigueur", "modelo": "Modelo 790 código 079", "nota": "Nous n'avons pas pu vérifier le montant pour 2026 sur le site du Ministerio de Educación." }
+  ],
+  "errores": [
+    "Demander l'équivalence alors que vous devez exercer une profession réglementée. L'équivalence ne vous permet pas de travailler, par exemple, comme médecin ou infirmier : il faut l'homologation.",
+    "Faire apostiller une copie certifiée conforme au lieu de l'original. Le Ministère n'accepte pas cette apostille.",
+    "Traduire le diplôme mais pas l'apostille. La traduction officielle doit aussi inclure les légalisations.",
+    "Payer moins que la taxe à cause des frais du virement. Si le montant complet n'arrive pas, le dossier ne commence pas.",
+    "Payer la taxe avant de savoir de quelle démarche vous avez besoin. Chaque démarche (homologation ou équivalence) a sa propre taxe.",
+    "Ne pas regarder les notifications électroniques. Si vous ne répondez pas à temps à une demande de documents, votre demande peut être classée.",
+    "Utiliser un traducteur qui n'est ni assermenté ni officiel. Si le traducteur est hors UE, sa signature doit être légalisée."
+  ],
+  "checklist": [
+    { "id": "elegir-tramite", "texto": "Je sais si j'ai besoin d'une homologation, d'une équivalence ou d'une convalidación" },
+    { "id": "profesion-regulada", "texto": "J'ai vérifié si ma profession est dans l'Annexe du Real Decreto 889/2022" },
+    { "id": "doc-identidad", "texto": "J'ai un passeport, une TIE ou une pièce d'identité en cours de validité et mon NIE" },
+    { "id": "doc-titulo", "texto": "J'ai le diplôme original apostillé ou légalisé" },
+    { "id": "doc-notas", "texto": "J'ai le relevé de notes apostillé ou légalisé" },
+    { "id": "traduccion", "texto": "J'ai la traduction assermentée ou officielle de tout, y compris les apostilles" },
+    { "id": "tasa", "texto": "J'ai payé la taxe complète avec le bon modelo 790" },
+    { "id": "solicitud", "texto": "J'ai déposé la demande et je garde le justificatif d'enregistrement" },
+    { "id": "volante", "texto": "Si je vais étudier, j'ai remis le volante de inscripción condicional" },
+    { "id": "notificaciones", "texto": "Je regarde souvent mes notifications électroniques" }
+  ],
+  "recordatorio": {
+    "pregunta": "Quel jour avez-vous déposé la demande ?",
+    "avisos": [
+      { "dias": 90, "texto": "3 mois sont passés. Vérifiez l'état de votre dossier et vos notifications, au cas où on vous demanderait d'autres documents." },
+      { "dias": 180, "texto": "6 mois sont passés. Si votre demande concerne un diplôme universitaire et que vous n'avez pas de réponse, elle peut être considérée comme rejetée par silence. Consultez votre dossier et les voies de recours sur le site du Ministère." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Catalogne, Galice et Pays basque (diplômes non universitaires)", "texto": "Si vous vivez dans ces communautés, l'homologation de l'ESO, du Bachillerato et de la FP est gérée par le département de l'éducation de votre communauté autonome, pas par le Ministère." },
+    { "titulo": "Diplômes de l'UE, de l'Espace économique européen et de la Suisse", "texto": "Ils n'ont pas besoin d'apostille ni de légalisation pour les démarches universitaires. Pour exercer une profession réglementée avec un diplôme de l'UE, la reconnaissance des qualifications professionnelles peut s'appliquer : c'est une démarche différente." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto 889/2022, homologation, équivalence et convalidation des études universitaires étrangères (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17045", "consultado": "2026-10-28" },
+    { "nombre": "Orden du 14 mars 1988, application du Real Decreto 104/1988 (diplômes non universitaires) (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-6938", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades : portail Valida-TE", "url": "https://www.ciencia.gob.es/Universidades/validate.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades : Taxe 107", "url": "https://www.ciencia.gob.es/Universidades/validate/tasa.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Ciencia, Innovación y Universidades : avis de fermeture de la subsede électronique d'Universidades", "url": "https://www.ciencia.gob.es/InfoGeneralPortal/Avisos/Cierre-subsede-electronica-Secretar-a-General-Universidades.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes : Homologation et convalidation de diplômes et études étrangers non universitaires", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes : Volante de inscripción condicional", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/05/051270/ficha/051270/convalidacion-no-univ/volante-condicional.html", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Educación, FP y Deportes : Taxe 790 código 079", "url": "https://www.educacionfpydeportes.gob.es/servicios-al-ciudadano/catalogo/general/0/tasa-790-079-ingreso.html", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "empadronamiento-sans-contrat-de-location",
+  "pregunta": "Peut-on faire l'empadronamiento sans contrat de location ?",
+  "descripcion": "Empadronamiento sans contrat de location : autorisation signée par le titulaire ou le propriétaire, ou vérification de la mairie. Gratuit, même sans papiers.",
+  "respuestaCorta": "Oui, vous pouvez vous inscrire au registre municipal (empadronamiento) sans contrat de location à votre nom. Si vous vivez dans une chambre ou chez quelqu'un, apportez une autorisation signée par le titulaire du contrat, le propriétaire ou une personne majeure déjà inscrite dans le logement, avec une copie de sa pièce d'identité. Si vous n'avez aucun papier du logement, la mairie peut vérifier autrement que vous vivez là. C'est gratuit à Madrid, à Barcelone et dans la plupart des mairies.",
+  "secciones": [
+    {
+      "titulo": "Pourquoi l'inscription est possible sans contrat",
+      "texto": "L'empadronamiento, c'est l'inscription au padrón municipal : la liste officielle des personnes qui vivent dans chaque commune. La Ley 7/1985 (article 15) dit que toute personne qui vit en Espagne doit s'inscrire dans la commune où elle vit habituellement. La Ley Orgánica 4/2000 (article 6.3) oblige les mairies (ayuntamientos) à inscrire les personnes étrangères qui ont leur domicile habituel dans la commune.\n\nLe padrón enregistre où vous vivez vraiment. Il ne contrôle pas votre situation de séjour : vous pouvez donc vous inscrire même en situation irrégulière. Les instructions techniques de l'INE du 17 février 2020 disent que le padrón doit indiquer le domicile où vous vivez réellement, quels que soient les conflits sur la propriété ou l'état du logement."
+    },
+    {
+      "titulo": "Si vous louez une chambre ou vivez chez quelqu'un",
+      "texto": "C'est le cas le plus fréquent. Il vous faut une autorisation (autorización) pour vous inscrire, signée par l'une de ces personnes : le titulaire du contrat de location, le propriétaire du logement, ou une personne majeure déjà inscrite à cette adresse. Apportez aussi une copie de sa pièce d'identité.\n\nMadrid et Barcelone ont des modèles officiels d'autorisation sur leur site. À Madrid, si des personnes sont déjà inscrites dans le logement, l'une d'elles doit vous autoriser, sur internet ou avec le formulaire officiel. Apportez votre propre passeport ou votre TIE (carte de séjour) en cours de validité et la hoja padronal (le formulaire du padrón) signée par tous les adultes qui s'inscrivent."
+    },
+    {
+      "titulo": "Si vous n'avez aucun papier du logement",
+      "texto": "Si vous ne pouvez présenter aucun document, la mairie peut vérifier par d'autres moyens que vous vivez là, par exemple avec un rapport de la Policía Local (police municipale) ou une inspection. Si elle confirme que vous y vivez, elle vous inscrit. Cela vaut aussi pour les logements précaires comme les baraques, les caravanes ou les hangars.\n\nÀ Barcelone, si vous n'avez pas de document qui prouve où vous vivez, vous devez aller en personne dans une Oficina de Atención Ciudadana (OAC, bureau d'accueil des citoyens) avec rendez-vous."
+    },
+    {
+      "titulo": "Si vous n'avez pas de domicile fixe",
+      "texto": "Si vous vivez dans la rue ou sans lieu fixe, vous pouvez vous inscrire avec un « domicilio ficticio » (adresse de rattachement) si vous vivez habituellement dans la commune et que les services sociaux vous connaissent (point 3.3 des instructions de 2020). Allez d'abord aux services sociaux municipaux : ils vous indiquent l'adresse utilisée, et c'est là qu'arriveront les courriers de l'Administration. À Barcelone, il faut un informe de conocimiento de residencia (ICR) des Servicios Sociales."
+    },
+    {
+      "titulo": "Rendez-vous, coût et pièges à éviter",
+      "texto": "Prenez rendez-vous (cita previa) seulement sur le site ou au téléphone officiel de votre mairie. À Madrid : madrid.es/citaprevia (au maximum 1 rendez-vous par personne tous les 30 jours). À Barcelone : barcelona.cat/cita. Certaines mairies permettent l'inscription sur internet avec certificat numérique ou Cl@ve.\n\nL'inscription est gratuite à Madrid, à Barcelone et dans la plupart des mairies. Si quelqu'un vous fait payer, ce n'est pas une démarche officielle. Ne payez jamais pour un « empadronamiento » à une adresse où vous ne vivez pas : c'est une inscription irrégulière et la mairie peut vous radier. Si vous venez d'un pays hors UE et n'avez pas la résidence de longue durée, pensez à renouveler votre inscription tous les 2 ans. Cette page est une information générale, pas un conseil juridique."
+    }
+  ],
+  "faq": [
+    { "p": "Qui peut signer l'autorisation pour mon inscription ?", "r": "Le titulaire du contrat de location, le propriétaire du logement ou une personne majeure déjà inscrite à cette adresse. Apportez une copie de sa pièce d'identité." },
+    { "p": "Puis-je m'inscrire si je suis sans papiers ?", "r": "Oui. La mairie doit inscrire toute personne qui vit dans la commune si elle prouve son identité et son domicile. Le padrón enregistre où vous vivez, pas votre situation de séjour." },
+    { "p": "Et si la personne avec qui je vis refuse de signer ?", "r": "Si vous ne pouvez pas présenter de documents, la mairie peut vérifier par d'autres moyens que vous vivez là, par exemple avec un rapport de la Policía Local ou une inspection." },
+    { "p": "Combien coûte l'empadronamiento ?", "r": "C'est gratuit à Madrid, à Barcelone et dans la plupart des mairies. Dans les autres communes, vérifiez sur leur site officiel." },
+    { "p": "Dois-je renouveler mon empadronamiento ?", "r": "Si vous venez d'un pays hors UE, EEE et Suisse et n'avez pas la résidence de longue durée, oui : tous les 2 ans à compter de l'inscription ou du dernier renouvellement." }
+  ],
+  "guia": "empadronamiento",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, texte consolidé)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
+    { "nombre": "Resolución du 17 février 2020 (INE et DGCAL), instructions techniques sur la gestion du Padrón municipal (BOE-A-2020-4784)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
+    { "nombre": "Ley Orgánica 4/2000, sur les droits et libertés des étrangers, art. 6.3 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid : Padrón Municipal. Empadronamiento (inscriptions et changements d'adresse)", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ajuntament de Barcelona : Inscription au Padrón municipal d'habitants", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+  ]
+}

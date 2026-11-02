@@ -1,0 +1,37 @@
+{
+  "titulo": "Política de privacidad",
+  "secciones": [
+    {
+      "titulo": "Responsable",
+      "parrafos": [
+        "{titular}, NIF {nif}, {domicilio}. Contacto para cualquier cuestión de privacidad: {correo}."
+      ]
+    },
+    {
+      "titulo": "Qué datos tratamos y para qué",
+      "parrafos": [
+        "Recordatorios por correo: tu correo electrónico, la guía y la fecha que nos das, para enviarte los avisos que has pedido. Base jurídica: tu consentimiento (art. 6.1.a RGPD), que puedes retirar en cualquier momento con el enlace de baja de cada correo.",
+        "Compra y acceso: tu correo electrónico, el plan contratado, la fecha de fin del acceso y los identificadores de cliente y suscripción de Stripe, para darte acceso y gestionar la suscripción. Base jurídica: ejecución del contrato (art. 6.1.b RGPD) y obligaciones fiscales (art. 6.1.c RGPD).",
+        "No pedimos ni guardamos tu nombre, nacionalidad, número de documento, situación administrativa ni datos de salud. La lista de comprobación de cada guía se guarda solo en tu navegador y nunca se envía a nuestros servidores."
+      ]
+    },
+    {
+      "titulo": "Encargados del tratamiento",
+      "parrafos": [
+        "Stripe Payments Europe Ltd. (pagos; no vemos los datos de tu tarjeta), Vercel Inc. (alojamiento), Neon Inc. (base de datos) y Resend (envío de correos). Cuando hay transferencias fuera del Espacio Económico Europeo, se amparan en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo."
+      ]
+    },
+    {
+      "titulo": "Cuánto tiempo",
+      "parrafos": [
+        "Recordatorios: hasta que te des de baja o hasta 30 días después del último aviso. Datos de compra: mientras dure el acceso y, después, el tiempo exigido por la normativa fiscal (hasta 6 años)."
+      ]
+    },
+    {
+      "titulo": "Tus derechos",
+      "parrafos": [
+        "Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a la dirección de contacto. Si crees que no hemos atendido bien tu petición, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es)."
+      ]
+    }
+  ]
+}

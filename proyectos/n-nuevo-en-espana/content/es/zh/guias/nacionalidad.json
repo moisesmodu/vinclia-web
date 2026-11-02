@@ -1,0 +1,130 @@
+{
+  "slug": "nacionalidad",
+  "titulo": "通过居住申请西班牙国籍",
+  "resumen": "如果你在西班牙合法且不间断地居住了一定时间，就可以申请西班牙国籍（nacionalidad española）：一般为 10 年；难民为 5 年；伊比利亚美洲国家、安道尔、菲律宾、赤道几内亚或葡萄牙国民（或塞法迪犹太人 sefardí）为 2 年；特殊情况为 1 年。通常你需要通过塞万提斯学院（Instituto Cervantes）的两项考试（CCSE 和 DELE A2），并缴纳 104,05 € 的规费。申请通过司法部（Ministerio de Justicia）电子政务网站在线递交。法律规定 1 年内作出决定，但实际上通常更久；获批后你有 180 天时间宣誓或承诺（jura o promesa）。",
+  "paraQuien": "适用于在西班牙合法居住（居留许可、TIE、难民身份）并想成为西班牙人的外国人。不适用于选择取得国籍（por opción）、血统取得国籍（por origen）或特许入籍（carta de naturaleza）。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "所需居住年限", "valor": "一般 10 年 · 难民 5 年 · 伊比利亚美洲、安道尔、菲律宾、赤道几内亚、葡萄牙国民和塞法迪犹太人 2 年 · 特殊情况 1 年" },
+    { "etiqueta": "国籍申请规费", "valor": "104,05 €（modelo 790 código 026）" },
+    { "etiqueta": "CCSE 考试", "valor": "85 €（请在 examenes.cervantes.es 核实）" },
+    { "etiqueta": "DELE A2 考试", "valor": "2026 年在西班牙约 138 €（各考点不同；请核实）" },
+    { "etiqueta": "法定决定期限", "valor": "1 年；如果没有答复，视为拒绝（消极沉默，silencio negativo）" },
+    { "etiqueta": "宣誓或承诺", "valor": "在收到批准通知后的 180 天内" },
+    { "etiqueta": "在哪里申请", "valor": "司法部电子政务网站（网上申请）" }
+  ],
+  "pasos": [
+    {
+      "titulo": "算一算你什么时候满足居住年限",
+      "texto": "根据《民法典》（Código Civil）第22条，居住必须是合法的、连续的，并且紧接在申请之前。从你第一个居留许可的日期开始算（如果你刚来时没有合法身份，就不是从你到达之日算）。持学习居留（estancia por estudios）或没有许可的期间计算方式不同：请根据官方信息核对你的情况。长时间离开西班牙可能会中断连续性。"
+    },
+    {
+      "titulo": "确认适用于你的年限",
+      "texto": "一般年限为 10 年。如果你具有难民身份，为 5 年。如果你原籍是伊比利亚美洲国家、安道尔、菲律宾、赤道几内亚或葡萄牙，或你是塞法迪犹太人（需要证明），为 2 年。以下情况为 1 年，例如：你在西班牙出生；你与西班牙人结婚满 1 年且未分居；你是西班牙人的鳏夫或寡妇；你在西班牙以外出生，父亲或母亲（或祖父母、外祖父母）原本是西班牙人；或你曾连续 2 年受西班牙机构监护或寄养。"
+    },
+    {
+      "titulo": "看看你是否需要考试",
+      "texto": "通常你必须通过 CCSE（西班牙宪法和社会文化知识考试）以及 DELE A2 或更高级别。如果你来自以西班牙语为官方语言的国家，不需要考 DELE，但需要考 CCSE。18 岁以下未成年人不需要考试。如果你在西班牙读完并通过了初中（ESO），可以用该学历代替考试。某些情况下（残疾、不识字的人），可以向司法部申请豁免。"
+    },
+    {
+      "titulo": "提早报名并准备考试",
+      "texto": "在官方网站 examenes.cervantes.es 报名。CCSE 费用为 85 €，每月都有考试；官方手册和题目都公布在该网站上。DELE A2 在 2026 年西班牙考点约 138 €，每年考试次数不多，需提前几周报名。出成绩需要时间：至少在满足年限前 1 年开始准备。"
+    },
+    {
+      "titulo": "申请你本国的无犯罪记录证明",
+      "texto": "你需要原籍国的无犯罪记录证明（certificado de antecedentes penales）（视情况还需要你住过的其他国家的），需办理领事认证或海牙认证，并由宣誓翻译（traductor jurado）译成西班牙语。这类证明的有效期通常有限（常见为 3 个月或 6 个月）：在你准备递交申请前不久再去开。具体要求请在司法部网站核实。"
+    },
+    {
+      "titulo": "准备其他材料",
+      "texto": "准备有效护照、TIE、经领事认证或海牙认证并翻译的出生证明、居住登记证书（certificado de empadronamiento）、考试证书（或豁免证明），以及显示你融入社会和生活来源的文件（合同、工作履历 vida laboral）。如果你与西班牙人结婚，还要加上结婚证明和配偶的国籍证明。"
+    },
+    {
+      "titulo": "缴纳 104,05 € 规费",
+      "texto": "规费用司法部的 modelo 790 código 026 缴纳。你可以在该部网站上在线生成缴费单并付款。不要复印缴费单：每张都有唯一编号。金额可能随国家总预算（Presupuestos Generales del Estado）变化，付款前请核实现行金额。"
+    },
+    {
+      "titulo": "在司法部网站递交申请",
+      "texto": "通过司法部电子政务网站在线申请（手续名称“Nacionalidad española por residencia”）。你需要数字证书（certificado digital）或 Cl@ve，也可以通过代理人递交。保存好带案卷编号（número de expediente）的凭证，以便查询申请进度。"
+    },
+    {
+      "titulo": "等待决定",
+      "texto": "法律规定从申请送达受理机关之日起 1 年内作出决定。实际上通常更久。如果一年过去没有答复，申请视为被拒绝（消极沉默），你可以向国家高等法院（Audiencia Nacional）提起诉讼，也可以继续等待明确答复。等待期间，请保持你的合法居留有效，并按时续签 TIE。"
+    },
+    {
+      "titulo": "在 180 天内宣誓或承诺",
+      "texto": "收到批准通知后，你有 180 天时间宣誓或承诺效忠国王、遵守宪法和法律，并放弃原国籍（伊比利亚美洲国家、安道尔、菲律宾、赤道几内亚和葡萄牙等允许双重国籍的国家除外）。在你住址所属的民事登记处（Registro Civil）或公证人（notario）面前办理。如果错过期限，批准就会失效。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "有效护照", "nota": "完整复印件" },
+    { "nombre": "有效的外国人身份卡（TIE）" },
+    { "nombre": "出生证明", "nota": "经领事认证或海牙认证，并由宣誓翻译译成西班牙语" },
+    { "nombre": "原籍国无犯罪记录证明", "nota": "经领事认证或海牙认证并翻译；会过期，所以在递交前不久再开" },
+    { "nombre": "居住登记证书（certificado de empadronamiento）", "nota": "由你所住地的市政府开具" },
+    { "nombre": "DELE A2 或更高级别证书", "nota": "以西班牙语为官方语言国家的国民和 18 岁以下未成年人不需要" },
+    { "nombre": "CCSE 合格证明", "nota": "18 岁以下未成年人不需要；西班牙的 ESO 学历可以代替两项考试" },
+    { "nombre": "790 código 026 规费缴费凭证" },
+    { "nombre": "生活来源证明", "nota": "劳动合同、工作履历（vida laboral）、工资单或类似文件" },
+    { "nombre": "结婚证明和西班牙配偶的文件", "nota": "仅在以婚姻为由申请时需要（1 年年限）" },
+    { "nombre": "难民身份文件或塞法迪犹太人血统证明", "nota": "仅在因此适用 5 年或 2 年年限时需要" }
+  ],
+  "plazos": [
+    { "texto": "合法、连续且紧接申请前的居住：一般 10 年；难民 5 年；原籍伊比利亚美洲国家、安道尔、菲律宾、赤道几内亚、葡萄牙的国民以及塞法迪犹太人 2 年；特殊情况 1 年（在西班牙出生、与西班牙人结婚满 1 年、西班牙人的鳏夫或寡妇等）。《民法典》（Código Civil）第22条。" },
+    { "texto": "从你满足所需合法居住年限的那一天起，就可以递交申请。" },
+    { "texto": "政府有 1 年时间作出决定并通知。如果没有答复，视为拒绝（消极沉默）。" },
+    { "texto": "获批后，从收到通知的次日起，你有 180 天时间在民事登记处或公证人面前宣誓或承诺。如果不办理，批准就会失效（《民法典》第21.4条）。" },
+    { "texto": "DELE A2 每年考试次数不多，报名在考试前几周截止；CCSE 每月都有考试。请在 examenes.cervantes.es 查看日程。" }
+  ],
+  "tasas": [
+    { "concepto": "通过居住申请国籍的规费", "importe": "104,05 €", "modelo": "Modelo 790 código 026（司法部）", "nota": "可能随国家总预算变化；请在司法部网站核实金额。" },
+    { "concepto": "CCSE 考试（塞万提斯学院）", "importe": "85 €", "modelo": "在 examenes.cervantes.es 报名时支付", "nota": "包括两次考试机会。请在官方网站核实现行价格。" },
+    { "concepto": "DELE A2 考试（塞万提斯学院）", "importe": "约 138 €（西班牙考点，2026 年）", "modelo": "在 examenes.cervantes.es 报名时支付", "nota": "价格因考点和年份而异；报名前请在官方网站核实价格。" },
+    { "concepto": "宣誓翻译和认证", "importe": "不固定", "nota": "取决于国家和译者；不是西班牙政府的规费。" }
+  ],
+  "errores": [
+    "从你到达西班牙那天开始算年限。只有合法居住才算；如果你有一段时间没有许可，那段时间不计入。",
+    "等国籍期间让 TIE 过期。你的居住必须一直合法到最后：请按时续签。",
+    "递交过期、没有海牙认证或没有宣誓翻译的无犯罪记录证明。在递交申请前不久再去开。",
+    "等到满足年限才去考试。DELE 考试日期少，出成绩也慢：提前几个月准备。",
+    "以为伊比利亚美洲国家的人什么考试都不用考。他们免考 DELE，但通常仍需通过 CCSE。",
+    "申请国籍前在西班牙境外待了好几个月。长时间离开可能会中断连续居住。",
+    "错过宣誓或承诺的 180 天期限。如果没有按时办理，你会失去已获批的国籍。"
+  ],
+  "checklist": [
+    { "id": "fecha-plazo", "texto": "我知道我满足所需合法居住年限的准确日期" },
+    { "id": "tipo-plazo", "texto": "我知道适用于我的年限（10、5、2 或 1 年）" },
+    { "id": "tie-vigente", "texto": "我的 TIE 在有效期内，我知道什么时候续签" },
+    { "id": "exencion-examenes", "texto": "我知道我需要考 CCSE、DELE A2，还是都不用考" },
+    { "id": "ccse-aprobado", "texto": "我已通过 CCSE（或我免考）" },
+    { "id": "dele-aprobado", "texto": "我有 DELE A2 或更高级别证书（或我免考）" },
+    { "id": "doc-nacimiento", "texto": "我有经领事认证或海牙认证并翻译的出生证明" },
+    { "id": "doc-antecedentes", "texto": "我有近期开具、经领事认证或海牙认证并翻译的无犯罪记录证明" },
+    { "id": "doc-padron", "texto": "我有居住登记证书" },
+    { "id": "tasa-026", "texto": "我已缴纳 790 código 026 规费" },
+    { "id": "acceso-sede", "texto": "我有数字证书或 Cl@ve，可以登录司法部网站" },
+    { "id": "solicitud-presentada", "texto": "我已递交申请并保存了案卷编号" }
+  ],
+  "recordatorio": {
+    "pregunta": "你哪一天满足所需的合法居住年限？（从你第一个居留许可开始算：根据你的情况为 10、5、2 或 1 年）",
+    "avisos": [
+      { "dias": -365, "texto": "还有 1 年你就可以申请国籍了。现在是在 examenes.cervantes.es 报名 CCSE（如需要，还有 DELE A2）的好时机。也要检查你的 TIE 不会在此之前过期。" },
+      { "dias": -180, "texto": "还有 6 个月。如果你还没考试，马上报名下一次考试。开始申请出生证明并准备翻译。" },
+      { "dias": -60, "texto": "还有 2 个月。申请你本国的无犯罪记录证明，办好海牙认证和宣誓翻译，并开好居住登记证书。" },
+      { "dias": 0, "texto": "今天你满足居住年限了。缴纳 790 código 026 规费（104,05 €），并在司法部网站递交申请。" }
+    ]
+  },
+  "variantes": [
+    { "titulo": "伊比利亚美洲国家、安道尔、菲律宾、赤道几内亚和葡萄牙国民", "texto": "合法居住年限为 2 年。如果你的国家以西班牙语为官方语言，你不需要考 DELE，但需要考 CCSE。通常你不必放弃原国籍。" },
+    { "titulo": "西班牙人的配偶", "texto": "如果申请时你已结婚满 1 年，且没有法律上或事实上的分居，合法居住 1 年即可。" },
+    { "titulo": "未成年人", "texto": "不需要考试。申请由其法定代理人递交；未成年人的居住同样必须合法且连续。" }
+  ],
+  "fuentes": [
+    { "nombre": "《民法典》（Código Civil）第21、22和23条（BOE，合并文本）", "url": "https://boe.es/buscar/act.php?id=BOE-A-1889-4763", "consultado": "2026-10-28" },
+    { "nombre": "通过居住取得西班牙国籍（司法部电子政务网站）", "url": "https://sede.mjusticia.gob.es/tramites/nacionalidad-espanola", "consultado": "2026-10-28" },
+    { "nombre": "如何取得西班牙国籍：居住（司法部）", "url": "https://www.mjusticia.gob.es/es/ciudadania/nacionalidad/que-es-nacionalidad/como-adquiere-nacionalidad/residencia", "consultado": "2026-10-28" },
+    { "nombre": "Formulario 790 código 026：国籍规费（司法部）", "url": "https://www.mjusticia.gob.es/es/ciudadania/formulario-790", "consultado": "2026-10-28" },
+    { "nombre": "Orden JUS/1625/2016，关于通过居住取得国籍的办理程序（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2016-9314", "consultado": "2026-10-28" },
+    { "nombre": "Orden JUS/1018/2022，修订 Orden JUS/1625/2016（凭 ESO 豁免）（BOE）", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-17596", "consultado": "2026-10-28" },
+    { "nombre": "CCSE 和 DELE 考试：报名、价格和日期（塞万提斯学院 Instituto Cervantes）", "url": "https://examenes.cervantes.es/", "consultado": "2026-10-28" }
+  ]
+}

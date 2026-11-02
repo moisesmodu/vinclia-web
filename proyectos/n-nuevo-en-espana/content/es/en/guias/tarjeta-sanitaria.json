@@ -1,0 +1,132 @@
+{
+  "slug": "tarjeta-sanitaria",
+  "titulo": "Public health card (tarjeta sanitaria individual, TSI)",
+  "resumen": "The tarjeta sanitaria individual (TSI, individual health card) is the card you use for public health care: family doctor, health centre, specialists and prescriptions. It is issued by the health service of your autonomous community (region) and applying is free. Usually you need to be registered in the padrón (empadronamiento) and to have your right to health care recognised. If you are in Spain without legal residence, you also have this right: since 13 March 2026, Real Decreto 180/2026 sets a common procedure, with a temporary document that gives you access from the day you apply and an answer within a maximum of 3 months.",
+  "paraQuien": "For people who live in Spain: with a residence permit (workers, family members, etc.) and also foreigners without legal residence. It is not for tourists or for short stays covered by another country's social security or insurance.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Cost of the card", "valor": "Free" },
+    { "etiqueta": "Who issues it", "valor": "The health service of your autonomous community (for example, SERMAS in Madrid or CatSalut in Catalonia)" },
+    { "etiqueta": "Usual requirements", "valor": "Empadronamiento + recognised right to health care" },
+    { "etiqueta": "Who recognises the right", "valor": "The INSS (national social security institute) if you have legal residence or work; your autonomous community if you do not have legal residence" },
+    { "etiqueta": "Without legal residence", "valor": "Real Decreto 180/2026: temporary document when you apply; answer within a maximum of 3 months" },
+    { "etiqueta": "Time (Madrid)", "valor": "About 3-4 weeks from when they validate your documents" },
+    { "etiqueta": "Emergencies", "valor": "Call 112 or go to the emergency department (urgencias): do not wait until you have the card" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Know your right",
+      "texto": "Real Decreto-ley 7/2018 brought back universal access to public health care. Foreigners who live in Spain without being registered or authorised as residents have the right to health care under the same conditions as Spanish people, if they have no other compulsory cover, cannot bring their cover from their country and there is no third party obliged to pay (article 3 ter of Ley 16/2003). Real Decreto 180/2026 sets out how to apply."
+    },
+    {
+      "titulo": "Register in the padrón and get a recent volante",
+      "texto": "Empadronamiento (registering your address with the town hall) is the usual requirement for the card, because it proves where you live. Madrid and Catalonia ask for a volante or certificado de empadronamiento (proof of registration) less than 3 months old. See our empadronamiento guide."
+    },
+    {
+      "titulo": "Find out who recognises your right",
+      "texto": "If you work and are registered with the Social Security, or you have legal residence, the right is recognised by the Instituto Nacional de la Seguridad Social (INSS). If you do not have legal residence, it is recognised by the health service of your autonomous community, under Real Decreto 180/2026."
+    },
+    {
+      "titulo": "If the INSS is responsible for you, request or download the recognition",
+      "texto": "If you work, the right is usually recognised with your registration at work. If you do not work (for example, you came through family reunification), you can request recognition on the Social Security e-office or at an INSS CAISS office with cita previa (appointment). Bring your ID document, your TIE or residence decision and your empadronamiento. Then you can download the document that proves your right on the Social Security website."
+    },
+    {
+      "titulo": "If you do not have legal residence, apply with a declaración responsable",
+      "texto": "You submit an application to the health service of your community (or INGESA in Ceuta and Melilla), with a declaración responsable (a signed statement that what you say is true). For your identity, your passport or an official document from your country is valid; if you do not have one, another official document from your country with a photo. To prove that you live in Spain, empadronamiento is used; if you cannot, the Real Decreto allows other proof, such as school enrolment, bills in your name or consular registration."
+    },
+    {
+      "titulo": "Keep your temporary document",
+      "texto": "When you apply without legal residence, they give you a temporary document straight away. With it you can use public health care while your file is decided (it is not valid outside Spain). The Administration has a maximum of 3 months to answer; if it does not answer in that time, your application is treated as accepted (silencio positivo, 'positive silence')."
+    },
+    {
+      "titulo": "Ask for the card at your health centre",
+      "texto": "Once your right is recognised, you ask for the card at the health centre (centro de salud) for your address (in Catalonia, the CAP), or on your community's e-office if it allows it. There they also give you a family doctor (and a paediatrician for children)."
+    },
+    {
+      "titulo": "Collect the card",
+      "texto": "In Madrid the card arrives at your health centre (not at your home) about 3-4 weeks after they validate your documents. In Catalonia the final physical TSI is given when your empadronamiento is effective. In the meantime, ask at the health centre how to identify yourself if you need care."
+    },
+    {
+      "titulo": "Keep your details up to date",
+      "texto": "If you change your address, your community or your document (for example, from passport to TIE), tell your health centre. In Madrid, the card of foreigners is linked to the validity of their TIE and is renewed with it; the DASE document for people without legal residence lasts 2 years and can be renewed."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Passport or official ID document from your country", "nota": "Original and valid." },
+    { "nombre": "TIE or residence permit decision", "nota": "If you have legal residence in Spain." },
+    { "nombre": "Volante or certificado de empadronamiento", "nota": "Less than 3 months old in Madrid and in Catalonia. In Madrid city you can allow them to check your padrón record." },
+    { "nombre": "INSS document that proves your right", "nota": "If you have legal residence or work. Download it from the Social Security website." },
+    { "nombre": "Application form and declaración responsable", "nota": "For people without legal residence (Real Decreto 180/2026). You get it at the health centre or on your community's website." },
+    { "nombre": "Certificate of non-exportability of the right (certificado de no exportación)", "nota": "If you come from the EU, the EEA, Switzerland, the United Kingdom or a country with an agreement (for example Andorra, Chile, Morocco or Tunisia): it is issued by the relevant office in your country." },
+    { "nombre": "Other proof of residence if you are not registered in the padrón", "nota": "According to Real Decreto 180/2026: school enrolment, bills in your name, consular registration, certificate from a public migration centre, among others." },
+    { "nombre": "Libro de familia (family book) or birth certificate", "nota": "For children without a passport or ID document." }
+  ],
+  "plazos": [
+    { "texto": "Real Decreto 180/2026 has been in force since 13 March 2026." },
+    { "texto": "Without legal residence: the Administration has a maximum of 3 months to decide and notify you. If it does not answer, your application is treated as accepted (silencio positivo)." },
+    { "texto": "The document that proves the right for people without legal residence (Real Decreto 180/2026) does not expire as long as you still meet the requirements." },
+    { "texto": "Madrid: the temporary DASE document is valid for a maximum of 3 months; the final DASE lasts 2 years and can be renewed." },
+    { "texto": "Madrid: the health card arrives at your health centre in about 3-4 weeks." },
+    { "texto": "Madrid and Catalonia: the volante or certificado de empadronamiento must be less than 3 months old." }
+  ],
+  "tasas": [
+    { "concepto": "Applying for the health card or the health care document", "importe": "0 €", "modelo": "No payment form" },
+    { "concepto": "Prescription medicines (DASE in Madrid)", "importe": "40 % of the price", "modelo": "Paid at the pharmacy", "nota": "This is the co-payment set by the Comunidad de Madrid for the DASE. For other people, the co-payment depends on your situation and your income: ask your health service." }
+  ],
+  "errores": [
+    "Waiting to have the card before going to the emergency department: if it is an emergency, call 112 or go to urgencias.",
+    "Bringing an old volante de empadronamiento: in Madrid and Catalonia it must be less than 3 months old.",
+    "Going to the INSS when you do not have legal residence: in that case the right is recognised by your autonomous community, at the health centre or the unit it tells you.",
+    "Throwing away or losing the temporary document: it is what gives you access to health care while you wait for the answer.",
+    "Not bringing the certificado de no exportación if you come from the EU or a country with an agreement: without it they cannot recognise your right this way.",
+    "Registering at an address where you do not live just to get the card: CatSalut considers it fraud and can cancel the card.",
+    "Not telling the health centre when you change address or document: you may have problems booking appointments or getting prescriptions."
+  ],
+  "checklist": [
+    { "id": "empadronado", "texto": "I am registered in the padrón of the town where I live" },
+    { "id": "volante-reciente", "texto": "I have a volante or certificado de empadronamiento less than 3 months old" },
+    { "id": "doc-identidad", "texto": "I have my valid passport or TIE" },
+    { "id": "quien-reconoce", "texto": "I know if my right is recognised by the INSS or by my autonomous community" },
+    { "id": "doc-inss", "texto": "If the INSS is responsible for me, I have the document that proves my right" },
+    { "id": "no-exportacion", "texto": "If I come from the EU or a country with an agreement, I have the certificado de no exportación" },
+    { "id": "solicitud-ccaa", "texto": "If I do not have legal residence, I have applied with the declaración responsable" },
+    { "id": "provisional", "texto": "I have kept my temporary document and I know when it expires" },
+    { "id": "centro-salud", "texto": "I know which health centre is mine and I have asked for the card there" },
+    { "id": "urgencias", "texto": "I know that in an emergency I call 112 or go to urgencias" }
+  ],
+  "recordatorio": {
+    "pregunta": "When does your temporary health document expire?",
+    "avisos": [
+      { "dias": -30, "texto": "Your temporary health document expires in one month. If you still have no answer and no card, ask your health centre about the status of your application." },
+      { "dias": -7, "texto": "Your temporary health document expires in one week. Ask your health centre which document to use from now on and bring your application receipt." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "In Catalonia (CatSalut)",
+      "texto": "You ask for the TSI at the CAP (centre d'atenció primària, primary care centre) where you want to receive care. Bring your ID document (DNI, NIE or passport) and a certificado de empadronamiento less than 3 months old (some town halls let them check it online). You can start the application without going to the CAP, but the final physical card is given when your empadronamiento is effective. CatSalut already applies Real Decreto 180/2026 for people without legal residence; when access is recognised, you get a TSI. Information: https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/qui-te-acces-al-sistema-sanitari-public/"
+    },
+    {
+      "titulo": "In the Comunidad de Madrid (SERMAS)",
+      "texto": "With legal residence: you ask for the card at your health centre or on the e-office, with your DNI or TIE, the INSS document and a volante de empadronamiento less than 90 days old. Without legal residence: the Comunidad issues the Documento de Asistencia Sanitaria para Extranjeros (DASE, health care document for foreigners), which has the same effect as the card. You request it at the SERMAS Unidades de Tramitación (processing units), with an appointment through your health centre, or on the e-office. When you apply, they give you a temporary document (maximum 3 months). Note: the Comunidad's website asked for more than 90 days in Spain and 3 months of empadronamiento; we could not confirm if it has already adapted these requirements to Real Decreto 180/2026, which does not set a minimum time of empadronamiento as far as we could check. Information: https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase"
+    },
+    {
+      "titulo": "If you are an EU, EEA or Swiss citizen",
+      "texto": "If you are just visiting, use your European Health Insurance Card. If you live in Spain and do not work here, you usually need a certificate from your country saying you cannot bring your cover (certificado de no exportación) before your right is recognised."
+    },
+    {
+      "titulo": "In other autonomous communities",
+      "texto": "Each community decides how the application is submitted and which office handles it, but since March 2026 all must follow the common procedure of Real Decreto 180/2026 for people without legal residence. Ask at your health centre or search for \"tarjeta sanitaria\" on your community's health service website."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 7/2018, on universal access to the Sistema Nacional de Salud (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-10752", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 180/2026, of 11 March, right to health care of foreigners without legal residence (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5714", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: approval of the royal decree that strengthens universal access", "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6866", "consultado": "2026-10-28" },
+    { "nombre": "Ministerio de Sanidad: Individual health card", "url": "https://www.sanidad.gob.es/areas/saludDigital/tarjetaSanitariaSNS/home.htm", "consultado": "2026-10-28" },
+    { "nombre": "Social Security e-office: Health care (INSS)", "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/asistencia+sanitaria/202043", "consultado": "2026-10-28" },
+    { "nombre": "CatSalut: Getting your first Tarjeta Sanitaria Individual (TSI)", "url": "https://catsalut.gencat.cat/ca/coneix-catsalut/acces-sistema-salut/la-tsi/obtencio-tsi/", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Health card", "url": "https://www.comunidad.madrid/salud/tarjeta-sanitaria", "consultado": "2026-10-28" },
+    { "nombre": "Comunidad de Madrid: Health care for foreigners (DASE)", "url": "https://sede.comunidad.madrid/prestacion-social/asistencia-sanitaria-extranjeros-dase", "consultado": "2026-10-28" }
+  ]
+}

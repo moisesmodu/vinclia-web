@@ -1,0 +1,125 @@
+{
+  "slug": "numero-seguridad-social",
+  "titulo": "Social Security number (NUSS / NAF)",
+  "resumen": "The Número de la Seguridad Social (NUSS, Social Security number) identifies you in the Spanish Social Security system. When you start working, that same number becomes your affiliation number (NAF, número de afiliación). You need it for a company to register you, to work as self-employed (autónomo) and for many benefit procedures. It is free and it is given by the Tesorería General de la Seguridad Social (TGSS, the Social Security General Treasury): online in Import@ss (the TGSS online portal) or at a TGSS office. With a digital certificate or Cl@ve it is faster; without a digital ID, the TGSS first checks your identity and it takes longer.",
+  "paraQuien": "For people who are going to work in Spain (as an employee or self-employed) and do not have a number yet. If you have worked in Spain before, you already have a number: it is the same for your whole life and you must not ask for another one.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Cost", "valor": "Free" },
+    { "etiqueta": "Who gives it", "valor": "Tesorería General de la Seguridad Social (TGSS)" },
+    { "etiqueta": "Where", "valor": "Import@ss (portal.seg-social.gob.es) or a TGSS office (Administración)" },
+    { "etiqueta": "Form", "valor": "Modelo TA.1 (application for a Social Security number and change of details)" },
+    { "etiqueta": "Document", "valor": "NIE/TIE or passport (with conditions), depending on your case" },
+    { "etiqueta": "Can the company apply for it?", "valor": "Yes. If they are going to hire you and you have no number, the company must apply for it" },
+    { "etiqueta": "Registration at work", "valor": "Always before the first day of work, and at most 60 days before" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Check if you already have a number",
+      "texto": "If you have worked in Spain before, or you received health care as a family member of someone insured, you may already have a number. The number is unique: do not ask for a new one. Look at your old payslips, at your work history report (informe de vida laboral) or ask the TGSS."
+    },
+    {
+      "titulo": "Know the difference between NUSS, NAF and NIE",
+      "texto": "The NIE is your foreigner identity number (número de identidad de extranjero, from the Policía Nacional). The NUSS is your number in the Social Security system. When you join (first registration at work), that number becomes your affiliation number (NAF). They are different numbers: you need both to work."
+    },
+    {
+      "titulo": "Choose how to apply",
+      "texto": "There are three official ways: online in Import@ss, in person at a TGSS office, or through your company (the company applies through the Sistema RED). The CAISS are INSS offices (pensions, benefits, health care): they are not the usual place to ask for the NUSS."
+    },
+    {
+      "titulo": "Online with Cl@ve or a digital certificate",
+      "texto": "Go to Import@ss, choose \"Solicitar el Número de la Seguridad Social\" (apply for the Social Security number), identify yourself with Cl@ve or a digital certificate and fill in your details. This is the fastest way."
+    },
+    {
+      "titulo": "Online without a digital ID",
+      "texto": "In Import@ss you can choose the option that you have no digital ID. Then you fill in your details, take a selfie following the instructions and upload a photo of your ID document (both sides). You need an email address and a phone or device with a camera. The TGSS first checks your identity and then sends you the answer."
+    },
+    {
+      "titulo": "In person at a TGSS office",
+      "texto": "Bring the modelo TA.1 filled in and signed and your original ID document. Find your office on the Social Security website and check first if it serves people with or without an appointment. For information or to book a TGSS video appointment, you can call 901 50 20 50 and 91 541 02 91."
+    },
+    {
+      "titulo": "If the company applies for you",
+      "texto": "If they are going to hire you and you have no number, the company must apply for your affiliation and can request your number through the Sistema RED. Give the company a copy of your ID document and your exact details (name as on the document, date of birth, address)."
+    },
+    {
+      "titulo": "Keep the document with your number",
+      "texto": "The TGSS gives you your number in writing or in Import@ss. Keep it safe: you will use it for your whole working life in Spain."
+    },
+    {
+      "titulo": "Make sure the company registers you on time",
+      "texto": "Having a number is not the same as being registered (estar de alta). The company must request your registration before you start working, and never more than 60 days before (Real Decreto 84/1996, art. 32). Once you are working, you can check your registration in your informe de vida laboral in Import@ss."
+    },
+    {
+      "titulo": "Update your details if they change",
+      "texto": "If your document changes (for example, you go from passport to TIE, or you get an NIE), or your name or address changes, tell the TGSS about the change of details. You use the same modelo TA.1 or Import@ss."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Valid NIE or TIE", "nota": "This is the usual document for foreigners." },
+    { "nombre": "Valid passport", "nota": "According to the modelo TA.1, a passport is accepted for EU, EEA or Swiss citizens, who must provide their NIE within 3 months of entering Spain." },
+    { "nombre": "National ID card (EU, EEA and Swiss citizens)", "nota": "Together with the registration certificate with your NIE, if you already have it." },
+    { "nombre": "Modelo TA.1 filled in and signed", "nota": "Download it from the Social Security website (seg-social.es). Always use the latest version." },
+    { "nombre": "Email address", "nota": "For the online application and to receive notices." },
+    { "nombre": "Phone or computer with a camera", "nota": "For the selfie if you apply online without Cl@ve or a digital certificate." },
+    { "nombre": "Cl@ve or digital certificate (optional)", "nota": "Not required, but it makes the online procedure faster." },
+    { "nombre": "Address in Spain", "nota": "The form asks for your address; give an address where you receive letters." }
+  ],
+  "plazos": [
+    { "texto": "Registration with the Social Security is requested before you start working and never more than 60 calendar days before the start date (Real Decreto 84/1996, art. 32.3)." },
+    { "texto": "If you applied for the number with a passport as an EU, EEA or Swiss citizen, you must provide your NIE within 3 months of entering Spain (modelo TA.1 instructions)." },
+    { "texto": "The Social Security gives a maximum of 45 days to decide on the application; if that time passes with no answer, it is treated as accepted. This comes from an old information page: check it in Import@ss." },
+    { "texto": "From 1 August 2026 (Real Decreto 643/2026), companies have 6 calendar days to report when workers leave (bajas) and changes to their workers' details (before, it was 3)." }
+  ],
+  "tasas": [
+    { "concepto": "Assignment of the Social Security number", "importe": "0 €", "modelo": "Modelo TA.1 (not a payment form)", "nota": "Neither the TGSS nor the company can charge you for this procedure." }
+  ],
+  "errores": [
+    "Asking for a new number when you already have one: the NUSS is unique for life. If you do not remember it, check your vida laboral or ask the TGSS.",
+    "Mixing up the NUSS and the NIE: they are different numbers and you need both to work.",
+    "Going to a CAISS (INSS) to ask for the number: the NUSS is assigned by the Tesorería General (TGSS), in Import@ss or at its offices.",
+    "Starting work without being registered: registration must be done before the first day. Ask the company for the proof of registration or check your vida laboral.",
+    "Writing your name differently from your document: use exactly the first name and surnames on your passport or TIE to avoid errors in contributions and benefits.",
+    "Not updating your details when you change from passport to NIE or TIE: report the change of details with the TA.1 or in Import@ss."
+  ],
+  "checklist": [
+    { "id": "comprobar-numero", "texto": "I have checked that I do not already have a Social Security number" },
+    { "id": "doc-identidad", "texto": "I have my valid NIE/TIE or passport" },
+    { "id": "ta1", "texto": "I have downloaded and filled in the current modelo TA.1" },
+    { "id": "via", "texto": "I know how I will apply: Import@ss, a TGSS office or my company" },
+    { "id": "email-camara", "texto": "I have an email address and a phone with a camera (if I apply online without Cl@ve)" },
+    { "id": "numero-guardado", "texto": "I have kept the document with my number" },
+    { "id": "numero-empresa", "texto": "I gave my number to the company before starting" },
+    { "id": "alta", "texto": "I have checked that the company registered me before the first day" },
+    { "id": "datos-actualizados", "texto": "My details in the Social Security match my current document" }
+  ],
+  "recordatorio": {
+    "pregunta": "When do you start working?",
+    "avisos": [
+      { "dias": -15, "texto": "You start working in 15 days. If you do not have your Social Security number yet, apply now in Import@ss or ask your company if it will apply for it." },
+      { "dias": -7, "texto": "You start working in one week. Give your number to the company and ask if it has already requested your registration: it must be done before your first day." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "If you do not have an NIE",
+      "texto": "If you are from the EU, the EEA or Switzerland, you can apply for the number with your passport, but then you must provide your NIE within 3 months. If you are from outside the EU, to work you usually need a work permit, and with it you will have an NIE: apply for the number with your NIE or TIE. We could not confirm in official sources whether Import@ss accepts only a passport in the no-digital-ID option for people from outside the EU; if this is your case, ask at a TGSS office or on the official phone lines."
+    },
+    {
+      "titulo": "If you work as a domestic worker",
+      "texto": "The person who hires you (the family) must register you. If you have no number, it can be requested first in Import@ss or at the TGSS."
+    },
+    {
+      "titulo": "If you are going to work as self-employed",
+      "texto": "You need the number before registering in the Régimen Especial de Trabajadores Autónomos (RETA, the self-employed scheme). You apply for it yourself in Import@ss or at the TGSS and then you register as self-employed."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS): Apply for the Social Security number", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: How to get the Social Security number", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social: information on assigning the number (modelo TA.1, time to decide)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, General Regulation on company registration and affiliation (BOE, consolidated text)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 643/2026, of 29 July, amending the affiliation Regulation (BOE)", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16557", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social: TGSS information phone line on affiliation", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

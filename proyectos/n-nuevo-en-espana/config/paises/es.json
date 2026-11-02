@@ -1,0 +1,72 @@
+{
+  "pais": "es",
+  "nombre": "España",
+  "marca": "Tus Papeles",
+  "idiomas": [
+    "es",
+    "ar",
+    "fr",
+    "en",
+    "ro",
+    "zh",
+    "uk",
+    "ca"
+  ],
+  "idiomaPorDefecto": "es",
+  "idiomasConGuiaPropia": [
+    "es",
+    "ar",
+    "fr",
+    "en",
+    "ro",
+    "zh",
+    "uk"
+  ],
+  "moneda": "eur",
+  "guiaGratis": "empadronamiento",
+  "ordenGuias": [
+    "empadronamiento",
+    "renovacion-residencia",
+    "numero-seguridad-social",
+    "tarjeta-sanitaria",
+    "cuenta-bancaria",
+    "homologacion-titulos",
+    "carnet-conducir",
+    "nacionalidad"
+  ],
+  "precios": {
+    "suscripcion": {
+      "importeCentimos": 499,
+      "intervalo": "month",
+      "texto": "4,99 €/mes",
+      "productoStripe": "Tus Papeles — Mensual 4,99 €"
+    },
+    "pack": {
+      "importeCentimos": 1990,
+      "mesesAcceso": 12,
+      "texto": "19,90 € · 12 meses",
+      "productoStripe": "Tus Papeles — Pack 19,90 €"
+    }
+  },
+  "iva": {
+    "tipo": 21,
+    "incluido": true
+  },
+  "titular": {
+    "nombre": "Moisés Mora",
+    "nif": "(ver LEGAL_NIF)",
+    "domicilio": "Lleida (España)",
+    "correo": "hola@numimates.com"
+  },
+  "legislacionConsumo": "Real Decreto Legislativo 1/2007 (TRLGDCU), artículo 103.m para contenido digital",
+  "autoridadProteccionDatos": {
+    "nombre": "Agencia Española de Protección de Datos",
+    "url": "https://www.aepd.es"
+  },
+  "proyecto": "n-nuevo-en-espana",
+  "sello": "Hecho en Lleida · Precio claro · Cancela en un clic",
+  "dominio": "tuspapeles.app",
+  "enlaces": {
+    "ccse": "https://ccsefacil.com/es?utm_source=n-nuevo-en-espana&utm_medium=cruzada&utm_campaign=guia-nacionalidad"
+  }
+}

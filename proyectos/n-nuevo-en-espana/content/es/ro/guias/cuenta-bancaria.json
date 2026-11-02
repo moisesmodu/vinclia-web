@@ -1,0 +1,89 @@
+{
+  "slug": "cuenta-bancaria",
+  "titulo": "Deschiderea unui cont bancar",
+  "resumen": "În Spania ai dreptul să deschizi un cont de plăți de bază (cuenta de pago básica), chiar dacă nu ai încă permis de ședere. Îți folosește ca să primești salariul, să plătești facturi, să scoți bani și să folosești un card de debit. Comisionul maxim este de 3 € pe lună și este gratuit dacă ești în situație de vulnerabilitate. Dacă banca îți spune nu, trebuie să îți dea motivele în scris în cel mult 10 zile lucrătoare.",
+  "paraQuien": "Pentru orice persoană care are ședere legală în Uniunea Europeană, care a cerut azil sau care nu are permis de ședere, dar nu poate fi expulzată. Nu se aplică dacă ai deja alt cont de plăți la o bancă din Spania.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Cost maxim", "valor": "3 € pe lună (cont de plăți de bază)" },
+    { "etiqueta": "Gratuit", "valor": "Dacă ești în situație de vulnerabilitate sau în risc de excluziune financiară (Real Decreto 164/2019)" },
+    { "etiqueta": "Răspunsul băncii dacă îți refuză contul", "valor": "În scris și în cel mult 10 zile lucrătoare" },
+    { "etiqueta": "Document", "valor": "Pașaport sau TIE (cardul cu NIE-ul tău) valabil" },
+    { "etiqueta": "Operațiuni incluse", "valor": "Depuneri, retrageri, card de debit și 120 de transferuri sau plăți de facturi (recibos) pe an" }
+  ],
+  "pasos": [
+    { "titulo": "Decide ce tip de cont ceri", "texto": "Dacă ai nevoie doar de serviciile de bază (să primești bani, să plătești facturi, card), cere în mod expres o «cuenta de pago básica» (cont de plăți de bază). Este un drept: banca ce oferă conturi clienților săi trebuie să ofere și acest cont. Alte conturi ale băncii pot avea mai multe servicii, dar nu au limita de 3 € pe lună." },
+    { "titulo": "Pregătește actul de identitate", "texto": "Banca trebuie să te identifice cu un document oficial cu fotografie și valabil: pașaport sau tarjeta de identidad de extranjero (TIE, cardul de străin). Dacă ești din UE, este valabilă și cartea de identitate din țara ta. Du și NIE-ul (numărul de identificare pentru străini), dacă îl ai." },
+    { "titulo": "Du informații despre activitatea ta", "texto": "Din cauza Ley 10/2010 împotriva spălării banilor, banca te va întreba cu ce te ocupi, de unde provin banii tăi și care este domiciliul tău. Este normal și obligatoriu pentru bancă. Poți prezenta un contract de muncă, fluturași de salariu (nóminas), certificado de empadronamiento (certificatul de înscriere la padrón, registrul locuitorilor de la primărie) sau o declarație proprie." },
+    { "titulo": "Depune cererea în scris", "texto": "Cere contul la sucursală sau pe site-ul băncii. Cere o copie ștampilată sau o dovadă (justificante) cu data. Această dată este importantă: din momentul în care banca primește cererea completă începe termenul de 10 zile lucrătoare." },
+    { "titulo": "Dacă ai dreptul, cere să fie gratuit", "texto": "Dacă veniturile tale sunt sub limitele din Real Decreto 164/2019 și nu ai alte locuințe sau participații în firme, poți cere gratuitatea. Va trebui să îți dovedești veniturile și componența familiei (unidad familiar) sau să prezinți un raport de la serviciile sociale ale primăriei tale. Gratuitatea durează 2 ani și se poate reînnoi." },
+    { "titulo": "Citește și semnează contractul", "texto": "Înainte să semnezi, banca trebuie să îți dea informațiile despre comisioane. Verifică dacă în contract scrie «cuenta de pago básica» și comisionul lunar. Păstrează o copie." },
+    { "titulo": "Dacă banca nu răspunde sau îți spune nu, cere răspunsul în scris", "texto": "Refuzul trebuie să fie în scris, gratuit și cu motivele concrete, în cel mult 10 zile lucrătoare. Motivele sunt într-o listă închisă din lege, de exemplu să nu prezinți informațiile cerute de normele împotriva spălării banilor sau să ai deja alt cont în Spania." },
+    { "titulo": "Fă reclamație la serviciul de relații cu clienții al băncii", "texto": "Depune o reclamație în scris la serviciul de relații cu clienții (servicio de atención al cliente) sau la defensor del cliente (ombudsmanul clienților) al băncii. Pentru servicii de plată, banca are în general 15 zile lucrătoare să răspundă; în alte cazuri, până la o lună pentru consumatori. Păstrează dovada reclamației tale." },
+    { "titulo": "Dacă nu îți răspund sau nu ești de acord, fă reclamație la Banco de España", "texto": "Poți face reclamație la Servicio de Reclamaciones al Banco de España (banca centrală a Spaniei) pe internet (cu certificat digital sau Cl@ve), personal sau prin poștă. Ai la dispoziție un an de la reclamația făcută la bancă. Este gratuit." }
+  ],
+  "documentos": [
+    { "nombre": "Pașaport valabil", "nota": "Valabil dacă nu ai încă TIE." },
+    { "nombre": "Tarjeta de identidad de extranjero (TIE) valabilă", "nota": "Dacă o ai. Include NIE-ul tău." },
+    { "nombre": "Cartea de identitate națională din țara ta", "nota": "Doar pentru cetățenii UE, ai Spațiului Economic European sau ai Elveției." },
+    { "nombre": "Dovada domiciliului", "nota": "De exemplu, certificado de empadronamiento sau contractul de închiriere. Banca o poate cere." },
+    { "nombre": "Dovada activității sau a veniturilor", "nota": "Contract de muncă, fluturași de salariu, înregistrarea ca autónomo (lucrător pe cont propriu) sau, dacă nu ai, o declarație despre situația ta." },
+    { "nombre": "Documentul cererii de azil sau de protecție internațională", "nota": "Dacă ești solicitant de azil." },
+    { "nombre": "Documente despre venituri și familie sau raportul serviciilor sociale", "nota": "Doar dacă ceri contul gratuit pe motiv de vulnerabilitate." },
+    { "nombre": "Certificado de no residente (certificat de nerezident)", "nota": "Doar dacă locuiești în afara Spaniei și vrei un cont de nerezident. Îl eliberează Policía Nacional sau un consulat, dacă ai deja NIE." }
+  ],
+  "plazos": [
+    { "texto": "Banca trebuie să deschidă contul sau să îți comunice refuzul în scris, cu motivele, în cel mult 10 zile lucrătoare de la primirea cererii complete (Real Decreto-ley 19/2017, art. 5)." },
+    { "texto": "Serviciul de relații cu clienții al băncii are 15 zile lucrătoare să răspundă la reclamațiile privind serviciile de plată și o lună pentru alte reclamații ale consumatorilor." },
+    { "texto": "Poți face reclamație la Banco de España dacă banca nu răspunde în termen sau îți respinge reclamația, până la un an după ce ai reclamat la bancă." },
+    { "texto": "Gratuitatea pe motiv de vulnerabilitate durează 2 ani și se prelungește pe perioade egale dacă rămâi în aceeași situație." }
+  ],
+  "tasas": [
+    { "concepto": "Comisionul maxim al contului de plăți de bază", "importe": "3 € pe lună", "modelo": "Îl încasează banca (Orden ECE/228/2019, art. 4)", "nota": "Include deschiderea, folosirea și închiderea, depunerile și retragerile de numerar, cardul de debit sau preplătit și 120 de operațiuni pe an (transferuri și plăți de facturi în euro în UE). Banco de España poate actualiza această sumă la fiecare 2 ani; la 28/10/2026 nu am găsit o actualizare, verifică suma în vigoare pe clientebancario.bde.es." },
+    { "concepto": "Operațiuni peste 120 pe an", "importe": "Variabil, cu limită", "modelo": "Îl încasează banca", "nota": "Banco de España publică în fiecare trimestru comisioanele maxime pe care le poate încasa fiecare bancă." },
+    { "concepto": "Cont de plăți de bază pentru persoane vulnerabile", "importe": "0 €", "modelo": "Real Decreto 164/2019", "nota": "Dacă te încadrezi în limitele de venit și de patrimoniu." },
+    { "concepto": "Reclamația la bancă și la Banco de España", "importe": "Gratuit" }
+  ],
+  "errores": [
+    "Să ceri «un cont» fără să spui «cuenta de pago básica»: banca îți poate oferi alt cont, cu comisioane mai mari. Folosește denumirea exactă.",
+    "Să nu păstrezi dovada datei cererii. Fără această dată este greu să dovedești că au trecut cele 10 zile lucrătoare.",
+    "Să accepți un refuz doar verbal. Cere întotdeauna refuzul în scris, cu motivele; este dreptul tău și ai nevoie de el ca să faci reclamație.",
+    "Să mergi direct la Banco de España. Mai întâi trebuie să faci reclamație la serviciul de relații cu clienții al băncii.",
+    "Să crezi că fără NIE sau fără permis de ședere nu poți avea cont. Cu pașaport valabil îl poți cere dacă faci parte din unul dintre grupurile protejate.",
+    "Să dai informații false sau incomplete despre activitatea sau veniturile tale: este un motiv legal pentru a refuza sau a închide contul.",
+    "Să păstrezi contul ca «no residente» (nerezident) când locuiești deja în Spania. Anunță banca atunci când ți se schimbă reședința, ca să aplice situația corectă."
+  ],
+  "checklist": [
+    { "id": "doc-identidad", "texto": "Am pașaport sau TIE valabil" },
+    { "id": "doc-domicilio", "texto": "Am o dovadă a domiciliului (padrón sau contract de închiriere)" },
+    { "id": "doc-actividad", "texto": "Am un document despre munca sau veniturile mele" },
+    { "id": "pedir-cpb", "texto": "Am cerut în mod expres o «cuenta de pago básica»" },
+    { "id": "justificante-fecha", "texto": "Am o dovadă cu data cererii mele" },
+    { "id": "valorar-gratuidad", "texto": "Am verificat dacă pot cere contul gratuit pe motiv de vulnerabilitate" },
+    { "id": "revisar-contrato", "texto": "Am verificat contractul și comisionul lunar înainte să semnez" },
+    { "id": "denegacion-escrito", "texto": "Dacă mi-l refuză, am răspunsul în scris, cu motivele" },
+    { "id": "reclamacion-banco", "texto": "Dacă a fost nevoie, am făcut reclamație la serviciul de relații cu clienții al băncii" },
+    { "id": "reclamacion-bde", "texto": "Dacă banca nu răspunde sau spune nu, știu cum să fac reclamație la Banco de España" }
+  ],
+  "recordatorio": {
+    "pregunta": "În ce zi ai cerut contul la bancă?",
+    "avisos": [
+      { "dias": 10, "texto": "Dacă banca nu ți-a deschis contul și nu ți-a dat un răspuns în scris, poți face reclamație la serviciul de relații cu clienții. Termenul este de 10 zile lucrătoare: dacă au fost sărbători legale, mai așteaptă o zi sau două." },
+      { "dias": 30, "texto": "Dacă ai făcut reclamație la bancă și nu ți-au răspuns sau nu ești de acord, verifică dacă poți face deja reclamație la Banco de España." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Cont de rezident și cont de nerezident", "texto": "Băncile fac diferența între clienții rezidenți și nerezidenți în Spania. Dacă locuiești în Spania, contul tău trebuie să fie de rezident. Dacă locuiești în afara Spaniei, banca îți poate cere un certificado de no residente, pe care îl eliberează Policía Nacional (sau un consulat, dacă ai deja NIE). Condițiile diferă de la o bancă la alta; întreabă la bancă ce îți cer." },
+    { "titulo": "Solicitanți de azil și persoane fără permis de ședere", "texto": "Real Decreto-ley 19/2017 îi include în mod expres pe solicitanții de azil și pe persoanele fără permis de ședere a căror expulzare nu este posibilă din motive legale sau de fapt." }
+  ],
+  "fuentes": [
+    { "nombre": "Real Decreto-ley 19/2017, privind conturile de plăți de bază (BOE)", "url": "https://www.boe.es/eli/es/rdl/2017/11/24/19/con", "consultado": "2026-10-28" },
+    { "nombre": "Orden ECE/228/2019, privind conturile de plăți de bază (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-3113", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 164/2019, regimul gratuit al conturilor de plăți de bază (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-4906", "consultado": "2026-10-28" },
+    { "nombre": "Ley 10/2010, de prevención del blanqueo de capitales (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-6737", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Cine poate cere contul de plăți de bază?", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Gratuitatea contului de plăți de bază", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/gratuidad.html", "consultado": "2026-10-28" },
+    { "nombre": "Banco de España, Cliente Bancario: Cum faci o reclamație", "url": "https://clientebancario.bde.es/pcb/es/menu-horizontal/podemosayudarte/consultasreclama/comorealizarrecl/", "consultado": "2026-10-28" },
+    { "nombre": "Policía Nacional: Extranjería (certificate de rezident și de nerezident)", "url": "https://www.policia.es/_es/extranjeria_extranjeros.php", "consultado": "2026-10-28" }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "carnet-conducir",
+  "titulo": "Permis de conduire : échange (canje) ou examen théorique",
+  "resumen": "Si vous vivez en Espagne avec un permis de conduire d'un autre pays, vous avez deux chemins. Si votre permis vient de l'UE/EEE, il reste valable tant qu'il est en cours de validité. S'il vient d'un pays qui a une convention avec l'Espagne (par exemple le Maroc, la Colombie, l'Équateur, le Pérou, l'Argentine, la Bolivie ou l'Ukraine), vous pouvez l'échanger sans examen (c'est le canje) avec la taxe 2.3 (28,87 €), et vous ne pouvez conduire avec lui que pendant 6 mois à partir du moment où vous avez la résidence légale. Si votre pays n'a pas de convention, vous devez passer le permis B en Espagne : taxe 2.1 (94,05 €), examen théorique et examen pratique.",
+  "paraQuien": "Pour les personnes étrangères qui vivent en Espagne (résidence normale) et veulent conduire une voiture (permis B). Ne couvre pas les permis professionnels de camion ou de bus (C et D), qui ont des épreuves en plus, ni les touristes de passage.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Permis de l'UE/EEE", "valor": "Valable tant qu'il est en cours de validité ; l'échange est volontaire" },
+    { "etiqueta": "Permis d'un pays avec convention", "valor": "Valable 6 mois à partir de votre résidence légale ; ensuite, échange (canje)" },
+    { "etiqueta": "Permis d'un pays sans convention", "valor": "Valable 6 mois ; ensuite, il faut passer le permis espagnol" },
+    { "etiqueta": "Taxe d'échange (2.3)", "valor": "28,87 € (vérifiez le montant en vigueur)" },
+    { "etiqueta": "Taxe d'examen (2.1)", "valor": "94,05 € : donne droit à 2 convocations (vérifiez le montant en vigueur)" },
+    { "etiqueta": "Examen théorique", "valor": "Test de 30 questions ; vérifiez auprès de la DGT le nombre d'erreurs permises" },
+    { "etiqueta": "Langues du théorique B", "valor": "Espagnol, catalan, basque, galicien, valencien, anglais, français et allemand ; aussi en lecture facile" },
+    { "etiqueta": "Où", "valor": "Jefatura Provincial de Tráfico (bureau provincial de la DGT, la Direction générale de la circulation), avec rendez-vous (cita previa) ou échange numérique" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Regardez de quel pays vient votre permis",
+      "texto": "S'il vient d'un pays de l'UE ou de l'EEE (Islande, Liechtenstein, Norvège), vous pouvez conduire avec lui tant qu'il est valable. S'il vient d'un autre pays, cherchez votre pays dans la liste officielle de la DGT « Países con convenio de canjes » (pays avec convention d'échange). Si votre pays n'est pas dans la liste, votre permis ne peut pas être échangé et vous devez passer le permis B en Espagne (étape 6)."
+    },
+    {
+      "titulo": "Surveillez le délai de 6 mois",
+      "texto": "Un permis d'un pays hors UE/EEE ne permet de conduire en Espagne que pendant 6 mois à partir du moment où vous avez votre résidence normale ici (ou à partir de votre entrée légale, si vous n'avez pas de résidence). Après ces 6 mois, vous ne pouvez plus conduire avec lui, même s'il est encore valable. Commencez l'échange ou l'examen à l'avance, car les rendez-vous peuvent prendre du temps."
+    },
+    {
+      "titulo": "Si votre permis vient de l'UE/EEE : décidez si vous faites quelque chose",
+      "texto": "L'échange n'est pas obligatoire. Vous pouvez faire un échange volontaire (taxe 2.3, 28,87 €) ou une inscription à la DGT (taxe 4.1, 8,67 €), qui ne change pas votre permis. Quand il expire, si vous vivez en Espagne, vous devez le renouveler ici (taxe 4.3, 24,58 €) et vous recevez un permis espagnol. Si votre permis n'expire pas ou dure plus de 15 ans, vous devez le renouveler en Espagne après 2 ans de résidence."
+    },
+    {
+      "titulo": "Si votre pays a une convention : passez la visite médicale",
+      "texto": "Avant l'échange, il vous faut un certificat d'aptitude physique et psychique (informe de aptitud psicofísica) d'un Centro de Reconocimiento de Conductores (centre médical agréé pour les conducteurs). Pour échanger seulement des permis moto et voiture (A et B), on demande celui du groupe I. Chaque centre fixe son prix. Vérifiez aussi que votre permis est valable et que vous l'avez obtenu avant de vivre en Espagne : si vous l'avez passé dans votre pays alors que vous étiez déjà résident légal ici, il ne peut pas être échangé."
+    },
+    {
+      "titulo": "Demandez l'échange sur le site officiel de la DGT",
+      "texto": "La DGT propose un échange numérique (canje digital) avec Cl@ve (le système d'identification électronique de l'État) ou un certificat numérique. Pour beaucoup de pays (par exemple le Maroc, la Colombie, l'Équateur, la Bolivie), on demande d'abord la vérification du permis au pays qui l'a délivré ; quand il répond, la DGT vous envoie par e-mail un code (localizador) pour continuer. Pour d'autres pays (par exemple l'Argentine, le Pérou, l'Uruguay, le Royaume-Uni), vous pouvez demander l'échange directement. Si vous n'utilisez pas la voie numérique, prenez rendez-vous (cita previa) sur le site de la DGT ou au 060."
+    },
+    {
+      "titulo": "Remettez votre permis original à la Jefatura",
+      "texto": "Vous devez aller une fois à la Jefatura Provincial de Tráfico pour remettre votre permis original. Là-bas, on vous donne une autorisation provisoire de conduire et le permis espagnol vous arrive par la poste. Payez la taxe 2.3 avant d'y aller. Certains pays demandent une traduction officielle du permis (par exemple la Corée du Sud ou le Japon) : regardez la fiche de votre pays sur le site officiel."
+    },
+    {
+      "titulo": "Si votre pays n'a pas de convention : préparez le théorique",
+      "texto": "Vous devez passer le permis B comme toute personne en Espagne. Il n'est pas obligatoire d'aller dans une auto-école pour l'examen théorique : vous pouvez vous présenter en candidat libre (« por libre ») avec la demande officielle. Entraînez-vous avec les tests gratuits de la DGT sur internet, qui utilisent de vraies questions et existent en plusieurs langues. La DGT a aussi un manuel du permis B en lecture facile."
+    },
+    {
+      "titulo": "Payez la taxe 2.1 et demandez l'examen",
+      "texto": "La taxe d'examen 2.1 coûte 94,05 € et vous donne droit à deux convocations. Si vous échouez deux fois, vous devez redemander l'examen et payer une nouvelle taxe. Dans la demande, vous choisissez la langue de l'examen théorique : espagnol, langues co-officielles, anglais, français ou allemand. Nous n'avons pas trouvé à la DGT d'examen en arabe, roumain, chinois ou dans d'autres langues."
+    },
+    {
+      "titulo": "Passez l'examen théorique",
+      "texto": "C'est un test de 30 questions. Un ancien document de la DGT dit qu'on réussit avec 3 erreurs au maximum ; vérifiez le critère actuel sur le site de la DGT. Si vous réussissez, ce résultat reste valable 2 ans pour passer l'examen pratique."
+    },
+    {
+      "titulo": "Prenez des leçons et passez l'examen pratique",
+      "texto": "Pour l'examen de conduite, il faut une voiture à double commande : c'est pourquoi on fait en général les leçons pratiques et l'examen avec une auto-école. Quand vous réussissez, vous recevez une autorisation provisoire puis le permis espagnol par la poste."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Permis de conduire étranger original et en cours de validité", "nota": "Pour l'échange, on le remet à la Jefatura." },
+    { "nombre": "TIE, NIE ou certificat d'enregistrement de citoyen de l'UE", "nota": "Sert à prouver votre résidence en Espagne." },
+    { "nombre": "Passeport ou pièce d'identité", "nota": "Original en cours de validité." },
+    { "nombre": "Certificat d'aptitude physique et psychique (informe de aptitud psicofísica)", "nota": "D'un Centro de Reconocimiento de Conductores. Groupe I pour moto et voiture." },
+    { "nombre": "Photo récente", "nota": "Vérifiez sur le site officiel si vous en avez besoin ou si le centre médical l'envoie." },
+    { "nombre": "Justificatif de paiement de la taxe", "nota": "Taxe 2.3 pour l'échange sans épreuves ; taxe 2.1 pour l'examen." },
+    { "nombre": "Formulaire officiel de demande", "nota": "Se télécharge sur le site officiel de la DGT (échange ou examen)." },
+    { "nombre": "Traduction officielle du permis", "nota": "Seulement si la fiche de votre pays la demande (par exemple Corée du Sud ou Japon)." },
+    { "nombre": "Code de vérification (localizador)", "nota": "Seulement pour l'échange numérique des pays qui demandent une vérification préalable." },
+    { "nombre": "Cl@ve ou certificat numérique", "nota": "Seulement si vous faites l'échange sur internet." }
+  ],
+  "plazos": [
+    { "texto": "Un permis hors UE/EEE permet de conduire en Espagne au maximum 6 mois à partir du moment où vous avez votre résidence normale ici (Reglamento General de Conductores, art. 21)." },
+    { "texto": "Un permis de l'UE/EEE est valable tant qu'il est en cours de validité. S'il n'expire pas ou dure plus de 15 ans (groupe 1), vous devez le renouveler en Espagne après 2 ans de résidence." },
+    { "texto": "Le renouvellement d'un permis UE/EEE peut se demander à partir de 3 mois avant son expiration." },
+    { "texto": "La taxe d'examen (2.1) donne droit à 2 convocations. La réussite d'une épreuve est gardée 2 ans." },
+    { "texto": "Pour l'échange, la DGT remet une autorisation provisoire et le permis définitif arrive par la poste (environ 6 semaines pour l'échange UE/EEE)." }
+  ],
+  "tasas": [
+    { "concepto": "Échange de permis sans épreuves supplémentaires (UE/EEE ou pays avec convention, permis A et B)", "importe": "28,87 €", "modelo": "Taxe DGT 2.3", "nota": "Montant publié sur le site officiel de la DGT. Vérifiez le montant en vigueur avant de payer." },
+    { "concepto": "Examen pour obtenir le permis (ou échange avec épreuves, comme C et D)", "importe": "94,05 €", "modelo": "Taxe DGT 2.1", "nota": "Donne droit à deux convocations. Vérifiez le montant en vigueur sur le site officiel." },
+    { "concepto": "Inscription d'un permis UE/EEE (ne change pas votre permis)", "importe": "8,67 €", "modelo": "Taxe DGT 4.1", "nota": "Facultatif." },
+    { "concepto": "Renouvellement d'un permis UE/EEE en Espagne", "importe": "24,58 €", "modelo": "Taxe DGT 4.3" },
+    { "concepto": "Certificat d'aptitude physique et psychique", "importe": "Variable", "modelo": "Payé au Centro de Reconocimiento de Conductores", "nota": "Ce n'est pas une taxe de la DGT." }
+  ],
+  "errores": [
+    "Croire que vous pouvez toujours conduire avec votre permis étranger. S'il ne vient pas de l'UE/EEE, il n'est plus valable en Espagne 6 mois après le début de votre résidence, même s'il est encore en cours de validité.",
+    "Confondre les taxes : l'échange sans épreuves, c'est la taxe 2.3 (28,87 €), pas la 4.1. La 4.1 (8,67 €) sert à inscrire un permis UE/EEE.",
+    "Demander l'échange d'un permis passé dans votre pays alors que vous viviez déjà légalement en Espagne. Ce permis ne peut pas être échangé.",
+    "Attendre le dernier mois pour l'échange. La vérification avec votre pays et le rendez-vous peuvent prendre des semaines ; commencez dès que vous avez votre TIE.",
+    "Annuler le rendez-vous d'échange sans réfléchir : vous ne pouvez avoir qu'un seul rendez-vous d'échange à la fois, et l'annuler oblige à tout recommencer, y compris la vérification.",
+    "Croire que vous devez payer une auto-école pour le théorique. Vous pouvez vous présenter en candidat libre et vous entraîner avec les tests gratuits de la DGT.",
+    "Choisir une langue d'examen qui n'existe pas. Pour le permis B, il n'y a que l'espagnol, les langues co-officielles, l'anglais, le français et l'allemand (et la lecture facile)."
+  ],
+  "checklist": [
+    { "id": "pais-convenio", "texto": "J'ai vérifié si mon pays est dans la liste des conventions d'échange de la DGT" },
+    { "id": "fecha-residencia", "texto": "Je connais la date du début de ma résidence légale et quand les 6 mois se terminent" },
+    { "id": "doc-permiso", "texto": "J'ai mon permis étranger original et en cours de validité" },
+    { "id": "doc-tie", "texto": "J'ai ma TIE, mon NIE ou mon certificat d'enregistrement UE" },
+    { "id": "doc-psicotecnico", "texto": "J'ai le certificat d'aptitude physique et psychique du centre médical" },
+    { "id": "doc-traduccion", "texto": "J'ai vérifié si mon pays demande une traduction officielle du permis" },
+    { "id": "tasa-pagada", "texto": "J'ai payé la bonne taxe (2.3 pour l'échange, 2.1 pour l'examen)" },
+    { "id": "solicitud-canje", "texto": "J'ai demandé la vérification, l'échange numérique ou le rendez-vous sur le site de la DGT" },
+    { "id": "entrega-original", "texto": "J'ai remis le permis original à la Jefatura et j'ai l'autorisation provisoire" },
+    { "id": "test-dgt", "texto": "Je me suis entraîné avec les tests gratuits de la DGT (si je passe l'examen)" },
+    { "id": "idioma-examen", "texto": "J'ai choisi la langue de l'examen théorique dans la demande" }
+  ],
+  "recordatorio": {
+    "pregunta": "Depuis quelle date avez-vous la résidence légale en Espagne ?",
+    "avisos": [
+      { "dias": 120, "texto": "4 mois sont passés. Si votre permis ne vient pas de l'UE/EEE, il ne vous reste qu'environ 2 mois pour conduire avec lui. Commencez maintenant l'échange ou l'examen." },
+      { "dias": 150, "texto": "Il reste 1 mois avant que votre permis étranger ne soit plus valable en Espagne. Vérifiez si vous avez déjà la vérification ou le rendez-vous d'échange." },
+      { "dias": 170, "texto": "Dans quelques jours, cela fera 6 mois. Ensuite, vous ne pouvez plus conduire avec votre permis étranger (sauf s'il vient de l'UE/EEE) tant que vous n'avez pas le permis espagnol ou l'autorisation provisoire." }
+    ]
+  },
+  "variantes": [
+    { "titulo": "Permis du Royaume-Uni", "texto": "Depuis 2023, il existe un accord avec le Royaume-Uni. Les résidents en Espagne peuvent échanger leur permis britannique sans examen et sans vérification préalable, dans le délai de 6 mois à partir de la résidence." },
+    { "titulo": "Permis de camion ou de bus (C et D)", "texto": "L'échange des permis professionnels demande des épreuves théoriques et/ou pratiques selon le pays, le certificat médical du groupe II et la taxe 2.1. Ils ne peuvent pas être échangés par la voie numérique." },
+    { "titulo": "Examen dans une langue co-officielle", "texto": "En Catalogne et aux Îles Baléares, vous pouvez passer le théorique en catalan ; au Pays basque et en Navarre, en basque ; en Galice, en galicien ; et dans la Communauté valencienne, en valencien." }
+  ],
+  "fuentes": [
+    { "nombre": "DGT – Pays avec convention d'échange (Países con convenio de canjes)", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/permisos-extranjeros-y-de-fuerzas-y-cuerpos-de-seguridad/canjes-de-permisos/paises-con-convenio-de-canjes/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Échange de permis de pays hors UE (conditions, taxes 2.3 et 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/extracomunitarios/canje-paises-G4-CL-CP/index.html", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Communiqué de presse : service d'échange numérique des permis de conduire", "url": "https://www.dgt.es/comunicacion/notas-de-prensa/20250520-dgt-servicio-de-canje-digital-de-permisos-de-conduccion/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Échange, inscription, renouvellement et remplacement des permis de l'UE et de l'EEE", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/canjes-de-permisos/canjes-de-permisos-extranjeros/canjes-inscripcion-renovacion-y-sustitucion-de-permisos-de-la-ue-y-eee/", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 818/2009, Reglamento General de Conductores (BOE, texte consolidé)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-9481", "consultado": "2026-10-28" },
+    { "nombre": "DGT – Conditions, préparation et présentation à l'examen", "url": "https://www.dgt.es/nuestros-servicios/permisos-de-conducir/obtener-un-nuevo-permiso-de-conducir/requisitos-preparacion-y-presentacion-a-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Demande d'examen en candidat libre (taxe 2.1)", "url": "https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-y-gestion-de-permisos/solicitud-de-prueba-de-aptitud-de-examen/", "consultado": "2026-10-28" },
+    { "nombre": "Sede DGT – Demande de rendez-vous (cita previa)", "url": "https://sede.dgt.gob.es/es/otros-tramites/cita-previa", "consultado": "2026-10-28" }
+  ]
+}

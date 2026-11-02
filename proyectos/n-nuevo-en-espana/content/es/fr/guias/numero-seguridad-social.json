@@ -1,0 +1,125 @@
+{
+  "slug": "numero-seguridad-social",
+  "titulo": "Numéro de Sécurité sociale (NUSS / NAF)",
+  "resumen": "Le numéro de Sécurité sociale (Número de la Seguridad Social, NUSS) vous identifie auprès de la Sécurité sociale espagnole. Quand vous commencez à travailler, ce même numéro devient votre numéro d'affiliation (número de afiliación, NAF). Vous en avez besoin pour qu'une entreprise vous déclare (alta), pour travailler comme indépendant (autónomo) et pour beaucoup de démarches de prestations. Il est gratuit et il est donné par la Trésorerie générale de la Sécurité sociale (Tesorería General de la Seguridad Social, TGSS) : sur internet sur Import@ss (le portail en ligne de la TGSS) ou dans un bureau de la TGSS. Avec un certificat numérique ou Cl@ve, c'est plus rapide ; sans identification numérique, la TGSS vérifie d'abord votre identité et c'est plus long.",
+  "paraQuien": "Pour les personnes qui vont travailler en Espagne (salariées ou indépendantes) et qui n'ont pas encore de numéro. Si vous avez déjà travaillé en Espagne, vous avez déjà un numéro : c'est le même pour toute la vie et vous ne devez pas en demander un autre.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Coût", "valor": "Gratuit" },
+    { "etiqueta": "Qui le donne", "valor": "Tesorería General de la Seguridad Social (TGSS)" },
+    { "etiqueta": "Où", "valor": "Import@ss (portal.seg-social.gob.es) ou un bureau (Administración) de la TGSS" },
+    { "etiqueta": "Formulaire", "valor": "Modelo TA.1 (demande de numéro de Sécurité sociale et modification des données)" },
+    { "etiqueta": "Document", "valor": "NIE/TIE ou passeport (sous conditions), selon votre cas" },
+    { "etiqueta": "L'entreprise peut-elle le demander ?", "valor": "Oui. Si elle va vous embaucher et que vous n'avez pas de numéro, l'entreprise doit le demander" },
+    { "etiqueta": "Déclaration au travail (alta)", "valor": "Toujours avant le premier jour de travail, et au maximum 60 jours avant" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Vérifiez si vous avez déjà un numéro",
+      "texto": "Si vous avez déjà travaillé en Espagne, ou si vous avez bénéficié de l'assurance maladie d'un membre de votre famille, vous avez peut-être déjà un numéro. Le numéro est unique : n'en demandez pas un nouveau. Regardez vos anciennes fiches de paie (nóminas), votre relevé de carrière (informe de vida laboral) ou demandez à la TGSS."
+    },
+    {
+      "titulo": "Faites la différence entre NUSS, NAF et NIE",
+      "texto": "Le NIE est votre numéro d'identité d'étranger (Policía Nacional). Le NUSS est votre numéro à la Sécurité sociale. Quand vous êtes affilié (première déclaration au travail), ce numéro devient votre numéro d'affiliation (NAF). Ce sont des numéros différents : il vous faut les deux pour travailler."
+    },
+    {
+      "titulo": "Choisissez comment le demander",
+      "texto": "Vous avez trois voies officielles : sur internet sur Import@ss, en personne dans un bureau de la TGSS, ou par votre entreprise (l'entreprise le demande par le Sistema RED). Les CAISS sont des bureaux de l'INSS (retraites, prestations, assurance maladie) : ce n'est pas l'endroit habituel pour demander le NUSS."
+    },
+    {
+      "titulo": "Sur internet avec Cl@ve ou certificat numérique",
+      "texto": "Allez sur Import@ss, dans « Solicitar el Número de la Seguridad Social », identifiez-vous avec Cl@ve (le système d'identification électronique de l'État) ou un certificat numérique et remplissez vos données. C'est la voie la plus rapide."
+    },
+    {
+      "titulo": "Sur internet sans identification numérique",
+      "texto": "Sur Import@ss, vous pouvez choisir l'option sans identification numérique. Vous remplissez alors vos données, vous prenez un selfie en suivant les instructions et vous envoyez une photo de votre pièce d'identité (recto et verso). Il vous faut une adresse e-mail et un téléphone ou un appareil avec caméra. La TGSS vérifie d'abord votre identité, puis vous envoie la réponse."
+    },
+    {
+      "titulo": "En personne dans un bureau de la TGSS",
+      "texto": "Apportez le modelo TA.1 rempli et signé et votre pièce d'identité originale. Cherchez votre bureau sur le site de la Seguridad Social et vérifiez avant s'il reçoit avec ou sans rendez-vous. Pour vous informer ou pour demander un rendez-vous en vidéo avec la TGSS, il existe les numéros 901 50 20 50 et 91 541 02 91."
+    },
+    {
+      "titulo": "Si l'entreprise le demande pour vous",
+      "texto": "Si l'entreprise va vous embaucher et que vous n'avez pas de numéro, elle est obligée de demander votre affiliation et peut demander votre numéro avec le Sistema RED. Donnez à l'entreprise une copie de votre pièce d'identité et vos données exactes (nom comme sur le document, date de naissance, adresse)."
+    },
+    {
+      "titulo": "Gardez le document avec votre numéro",
+      "texto": "La TGSS vous communique votre numéro par écrit ou sur Import@ss. Gardez-le bien : vous allez l'utiliser pendant toute votre vie professionnelle en Espagne."
+    },
+    {
+      "titulo": "Vérifiez que l'entreprise vous déclare à temps",
+      "texto": "Avoir un numéro, ce n'est pas la même chose qu'être déclaré (estar de alta). L'entreprise doit demander votre alta avant que vous commenciez à travailler, et jamais plus de 60 jours avant (Real Decreto 84/1996, art. 32). Quand vous travaillez déjà, vous pouvez vérifier votre alta dans votre relevé de carrière (informe de vida laboral) sur Import@ss."
+    },
+    {
+      "titulo": "Mettez à jour vos données si elles changent",
+      "texto": "Si vous changez de document (par exemple, vous passez du passeport à la TIE, ou on vous donne un NIE), de nom ou d'adresse, communiquez la modification à la TGSS. On utilise le même modelo TA.1 ou Import@ss."
+    }
+  ],
+  "documentos": [
+    { "nombre": "NIE ou TIE en cours de validité", "nota": "C'est le document habituel pour les personnes étrangères." },
+    { "nombre": "Passeport en cours de validité", "nota": "Selon le modelo TA.1, le passeport est accepté pour les citoyens de l'UE, de l'EEE ou de Suisse, qui doivent fournir le NIE dans les 3 mois après leur entrée en Espagne." },
+    { "nombre": "Carte d'identité nationale (citoyens UE, EEE et Suisse)", "nota": "Avec le certificat d'enregistrement avec NIE, si vous l'avez déjà." },
+    { "nombre": "Modelo TA.1 rempli et signé", "nota": "Téléchargez-le sur le site de la Seguridad Social (seg-social.es). Utilisez toujours la version la plus récente." },
+    { "nombre": "Adresse e-mail", "nota": "Pour la demande sur internet et pour recevoir les avis." },
+    { "nombre": "Téléphone ou ordinateur avec caméra", "nota": "Pour le selfie si vous demandez le numéro sur internet sans Cl@ve ni certificat." },
+    { "nombre": "Cl@ve ou certificat numérique (facultatif)", "nota": "Ce n'est pas obligatoire, mais cela rend la démarche sur internet plus rapide." },
+    { "nombre": "Adresse en Espagne", "nota": "Le formulaire demande votre domicile ; indiquez une adresse où vous recevez du courrier." }
+  ],
+  "plazos": [
+    { "texto": "La déclaration (alta) à la Sécurité sociale se demande avant de commencer à travailler et jamais plus de 60 jours calendaires avant le début (Real Decreto 84/1996, art. 32.3)." },
+    { "texto": "Si vous avez demandé le numéro avec un passeport en tant que citoyen de l'UE, de l'EEE ou de Suisse, vous devez fournir votre NIE dans un délai de 3 mois après votre entrée en Espagne (instructions du modelo TA.1)." },
+    { "texto": "La Seguridad Social indique un délai maximum de 45 jours pour répondre à la demande ; si ce délai passe sans réponse, la demande est considérée comme acceptée. Cette information vient d'une ancienne page d'information : vérifiez-la sur Import@ss." },
+    { "texto": "Depuis le 1er août 2026 (Real Decreto 643/2026), les entreprises ont 6 jours calendaires pour communiquer les fins de contrat (bajas) et les modifications de données de leurs salariés (avant, c'était 3)." }
+  ],
+  "tasas": [
+    { "concepto": "Attribution du numéro de Sécurité sociale", "importe": "0 €", "modelo": "Modelo TA.1 (ce n'est pas un formulaire de paiement)", "nota": "Ni la TGSS ni l'entreprise ne peuvent vous faire payer pour cette démarche." }
+  ],
+  "errores": [
+    "Demander un nouveau numéro alors que vous en avez déjà un : le NUSS est unique pour toute la vie. Si vous ne vous en souvenez pas, regardez votre vida laboral ou demandez à la TGSS.",
+    "Confondre le NUSS et le NIE : ce sont des numéros différents et il vous faut les deux pour travailler.",
+    "Aller dans un CAISS (INSS) pour demander le numéro : le NUSS est attribué par la Tesorería General (TGSS), sur Import@ss ou dans ses bureaux.",
+    "Commencer à travailler sans être déclaré : l'alta doit être faite avant le premier jour. Demandez à l'entreprise le justificatif d'alta ou regardez votre vida laboral.",
+    "Écrire votre nom autrement que sur votre document : utilisez exactement le nom et les prénoms de votre passeport ou de votre TIE pour éviter des erreurs dans les cotisations et les prestations.",
+    "Ne pas mettre à jour vos données quand vous passez du passeport au NIE ou à la TIE : communiquez la modification avec le TA.1 ou sur Import@ss."
+  ],
+  "checklist": [
+    { "id": "comprobar-numero", "texto": "J'ai vérifié que je n'ai pas déjà un numéro de Sécurité sociale" },
+    { "id": "doc-identidad", "texto": "J'ai mon NIE/TIE ou mon passeport en cours de validité" },
+    { "id": "ta1", "texto": "J'ai téléchargé et rempli le modelo TA.1 en vigueur" },
+    { "id": "via", "texto": "Je sais par quelle voie je le demande : Import@ss, bureau de la TGSS ou mon entreprise" },
+    { "id": "email-camara", "texto": "J'ai une adresse e-mail et un téléphone avec caméra (si je le demande sur internet sans Cl@ve)" },
+    { "id": "numero-guardado", "texto": "J'ai gardé le document avec mon numéro" },
+    { "id": "numero-empresa", "texto": "J'ai donné mon numéro à l'entreprise avant de commencer" },
+    { "id": "alta", "texto": "J'ai vérifié que l'entreprise m'a déclaré (alta) avant le premier jour" },
+    { "id": "datos-actualizados", "texto": "Mes données à la Sécurité sociale correspondent à mon document actuel" }
+  ],
+  "recordatorio": {
+    "pregunta": "Quand commencez-vous à travailler ?",
+    "avisos": [
+      { "dias": -15, "texto": "Vous commencez à travailler dans 15 jours. Si vous n'avez pas encore votre numéro de Sécurité sociale, demandez-le maintenant sur Import@ss ou demandez à votre entreprise si elle va le demander." },
+      { "dias": -7, "texto": "Vous commencez à travailler dans une semaine. Donnez votre numéro à l'entreprise et demandez si elle a déjà fait votre alta : elle doit être faite avant votre premier jour." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "Si vous n'avez pas de NIE",
+      "texto": "Si vous êtes de l'UE, de l'EEE ou de Suisse, vous pouvez demander le numéro avec votre passeport, mais ensuite vous devez fournir le NIE dans les 3 mois. Si vous venez d'un pays hors UE, pour travailler il vous faut en général une autorisation de travail, et avec elle vous aurez un NIE : demandez le numéro avec votre NIE ou votre TIE. Nous n'avons pas pu confirmer dans les sources officielles si Import@ss accepte seulement le passeport, dans la voie sans identification numérique, pour les personnes hors UE ; si c'est votre cas, demandez dans un bureau de la TGSS ou aux numéros officiels."
+    },
+    {
+      "titulo": "Si vous travaillez comme employé de maison",
+      "texto": "C'est la personne qui vous embauche (la famille) qui doit vous déclarer (alta). Si vous n'avez pas de numéro, il peut être demandé avant sur Import@ss ou à la TGSS."
+    },
+    {
+      "titulo": "Si vous allez travailler comme indépendant (autónomo)",
+      "texto": "Il vous faut le numéro avant de vous inscrire au Régimen Especial de Trabajadores Autónomos (RETA, régime des indépendants). Vous le demandez vous-même sur Import@ss ou à la TGSS, puis vous faites votre inscription comme autónomo."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Import@ss (TGSS) : Demander le numéro de Sécurité sociale", "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social : Comment obtenir le numéro de Sécurité sociale", "url": "https://revista.seg-social.es/-/como-obtener-el-nuss-numero-de-la-seguridad-social-1", "consultado": "2026-10-28" },
+    { "nombre": "Seguridad Social : informations sur l'attribution du numéro (modelo TA.1, délai de réponse)", "url": "https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/43384/44147", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 84/1996, Règlement général d'inscription des entreprises et d'affiliation (BOE, texte consolidé)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-4447", "consultado": "2026-10-28" },
+    { "nombre": "Real Decreto 643/2026, du 29 juillet, qui modifie le Règlement d'affiliation (BOE)", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16557", "consultado": "2026-10-28" },
+    { "nombre": "Revista de la Seguridad Social : numéro de téléphone d'information sur l'affiliation de la TGSS", "url": "https://revista.seg-social.es/-/la-seguridad-social-habilita-un-nuevo-tel%C3%A9fono-de-informaci%C3%B3n-sobre-afiliaci%C3%B3n-y-otros-servicios-de-la-tgss", "consultado": "2026-10-28" }
+  ]
+}

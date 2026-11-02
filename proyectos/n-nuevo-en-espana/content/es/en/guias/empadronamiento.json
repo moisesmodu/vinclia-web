@@ -1,0 +1,141 @@
+{
+  "slug": "empadronamiento",
+  "titulo": "How to register your address in Spain (empadronamiento)",
+  "resumen": "Empadronarte means signing up in the padrón municipal: the official list of the people who live in each town. It is compulsory for everyone who lives in Spain, also if you do not have legal status, and it opens the door to the health card, school, social services and many immigration procedures. Registering is free in Madrid, in Barcelona and in most town halls. What usually takes longest is getting the appointment; with the right papers, you do it in one visit or online.",
+  "paraQuien": "For anyone who lives in a town in Spain, with or without a residence permit and with or without a rental contract. If you are only visiting for a few days (tourism), you do not register.",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "Cost", "valor": "Free in Madrid and Barcelona (and in most town halls)" },
+    { "etiqueta": "Where", "valor": "At the town hall (ayuntamiento) of the town where you live: in person with cita previa (appointment) or on its official website (sede electrónica)" },
+    { "etiqueta": "What you need", "valor": "Valid ID document + proof that you live at that address (or permission from the person who lives there)" },
+    { "etiqueta": "No papers?", "valor": "You can register. The padrón records where you live, not your residence status" },
+    { "etiqueta": "Renewal", "valor": "Every 2 years if you are from outside the EU and do not have long-term residence" },
+    { "etiqueta": "Document you get", "valor": "Volante (informs) or certificado (officially certifies) de empadronamiento" },
+    { "etiqueta": "Legal basis", "valor": "Ley 7/1985, articles 15 to 17; Ley Orgánica 4/2000, article 6.3" }
+  ],
+  "pasos": [
+    {
+      "titulo": "Understand why it is compulsory",
+      "texto": "Ley 7/1985 de Bases del Régimen Local (article 15) says that every person who lives in Spain must register in the padrón of the town where they usually live. If you live in several places, you register in the one where you spend most of the year. Ley Orgánica 4/2000 (article 6.3) obliges town halls to add to the padrón the foreigners whose usual home is in the town. The padrón records where you really live: it is not used to check your immigration status."
+    },
+    {
+      "titulo": "Find out how your town hall does it",
+      "texto": "Each town hall manages its own padrón. Go to the official website (sede electrónica) of your town hall and search for \"padrón\", \"empadronamiento\" or \"alta en el padrón\". In many cities you can call 010 for information. Some allow you to register online if you have a digital certificate or Cl@ve (the government's online ID system); if not, you go in person."
+    },
+    {
+      "titulo": "Book your cita previa on the official website",
+      "texto": "The appointment (cita previa) is free and you book it only on the town hall's official website or phone line. In Madrid you book at madrid.es/citaprevia (maximum 1 appointment per person every 30 days and only one address per appointment). In Barcelona, at barcelona.cat/cita. Nobody can charge you for an appointment."
+    },
+    {
+      "titulo": "Prepare your ID document",
+      "texto": "If you are from outside the European Union, bring your valid passport or your residence card (TIE). If you have a TIE, many town halls prefer it, like Madrid. If you are from the EU, bring your national ID card or passport and, if you have it, the registration certificate (certificado de registro) with your NIE (foreigner identity number). Documents must be originals and valid."
+    },
+    {
+      "titulo": "Prepare proof of where you live",
+      "texto": "The most common proof is a valid rental contract, the property deed (escritura) or a nota simple (property record extract) from the Registro de la Propiedad. If you live in a room or in someone else's home and have no contract in your name, you need a permission (autorización) signed by the contract holder, the owner or an adult already registered at that home, with a copy of their ID document. Madrid and Barcelona have official permission forms on their websites."
+    },
+    {
+      "titulo": "If you have no papers for your home",
+      "texto": "The technical instructions of the INE (national statistics institute) and the Ministry (Resolución of 17 February 2020) say the padrón must show the address where you really live, no matter if there are disputes about the property or what condition the home is in. If you cannot show documents, the town hall can check by other means that you live there (for example, with a Policía Local report or an inspection) and, if so, register you. This also applies to substandard housing such as shacks, caravans or warehouses."
+    },
+    {
+      "titulo": "If you have no fixed address",
+      "texto": "If you live on the street or have no fixed place, you can register with a \"domicilio ficticio\" (notional address) if you usually live in the town and the social services know you (section 3.3 of the 2020 instructions). Go first to the municipal social services: they tell you which address is used, and you will receive letters from the Administration there. In Barcelona you need a residence knowledge report (informe de conocimiento de residencia, ICR) from Social Services."
+    },
+    {
+      "titulo": "Fill in the hoja padronal and go to your appointment",
+      "texto": "The hoja padronal (or registration request, solicitud de alta) is the padrón form. All adults who register sign it. If you register a child, bring their family book (libro de familia) or birth certificate and, in general, the signature or permission of the other parent. Foreign documents may need an official translation: in Barcelona they must be in Spanish or Catalan, or translated."
+    },
+    {
+      "titulo": "Ask for the volante or the certificado",
+      "texto": "The volante de empadronamiento informs that you are registered and gives your address. The certificado officially certifies your registration, with registration dates and previous addresses. Each office decides which one it asks for: for many procedures the volante is enough, but for immigration or to prove how long you have lived here, the certificado is usually required. In Madrid both are free and you can ask for them online."
+    },
+    {
+      "titulo": "Write down the date and renew every 2 years if it applies to you",
+      "texto": "If you are from outside the EU (and not from the EEA or Switzerland) and do not have a long-term residence permit, you must renew your registration every 2 years, counted from when you registered or from the last renewal (article 16 of Ley 7/1985). If you do not renew, the town hall can remove you from the padrón without warning you first. Usually the town hall sends a letter to your padrón address, but it is your obligation even if the letter does not arrive."
+    }
+  ],
+  "documentos": [
+    { "nombre": "Valid passport", "nota": "For people from outside the EU without a TIE. Original." },
+    { "nombre": "Valid foreigner ID card (TIE)", "nota": "If you have it, bring it: in Madrid it takes priority over any other document." },
+    { "nombre": "National ID card or passport (EU, EEA and Swiss citizens)", "nota": "Plus the EU citizen registration certificate with your NIE, if you have it." },
+    { "nombre": "Signed hoja padronal or solicitud de alta (registration form)", "nota": "All adults who register sign it. Download it from the town hall website or get it at the office." },
+    { "nombre": "Rental contract, escritura (deed) or nota simple", "nota": "Original and valid. In Madrid the contract must be signed by everyone named in the contract." },
+    { "nombre": "Permission to register you (autorización)", "nota": "If the contract is not in your name: signed by the contract holder, the owner or an adult registered at the home, with a copy of their ID document." },
+    { "nombre": "Libro de familia (family book) or birth certificate of the children", "nota": "Translated if it is not in Spanish (or Catalan in Catalonia)." },
+    { "nombre": "Permission from the other parent", "nota": "When you register a child and only one parent signs, except in special cases (for example, a court decision)." },
+    { "nombre": "Social services report", "nota": "Only if you have no fixed address (in Barcelona it is called informe de conocimiento de residencia, ICR)." },
+    { "nombre": "Official translation of foreign documents", "nota": "The town hall may ask for it (sworn translator, consulate or public administration)." }
+  ],
+  "plazos": [
+    { "texto": "If you are a foreigner from outside the EU, the EEA and Switzerland without a long-term residence permit, your registration is renewed every 2 years from when you registered or from the last renewal (Ley 7/1985, art. 16.1)." },
+    { "texto": "If 2 years pass and you have not renewed, the town hall can declare your registration expired without hearing you first (Ley 7/1985, art. 16.1). You are removed from the padrón." },
+    { "texto": "Renewal is not automatic: you must ask for it yourself, confirming that you still live at the same address." },
+    { "texto": "Madrid: online renewal is only possible with the advance notice letter (carta de preaviso) and within the period it gives; after that, you must go in person with an appointment." },
+    { "texto": "Madrid: maximum 1 padrón appointment per person every 30 days." },
+    { "texto": "For the health card, Madrid and Catalonia ask for a volante or certificado de empadronamiento less than 3 months old." }
+  ],
+  "tasas": [
+    { "concepto": "Registering in the padrón", "importe": "0 €", "modelo": "No payment form", "nota": "Free in Madrid and in Barcelona. In other towns, check on their official website." },
+    { "concepto": "Volante and certificado de empadronamiento in Madrid", "importe": "0 €", "modelo": "No payment form", "nota": "In other town halls the certificado may have a fee: check on their website." },
+    { "concepto": "Padrón renewal", "importe": "0 €", "modelo": "No payment form", "nota": "If someone charges you to register or renew, it is not an official procedure." }
+  ],
+  "errores": [
+    "Thinking you cannot register without a rental contract: with permission from the person who lives there, or with the town hall's check, you can also register.",
+    "Thinking that having no legal status stops you from registering: the town hall must register anyone who lives in the town if they prove their identity and address.",
+    "Bringing an expired passport or TIE: the document must be valid. If your TIE has expired and is being renewed, also bring your passport.",
+    "Forgetting the 2-year renewal: if your registration expires you lose continuity, and this can affect procedures where the time you have been registered counts.",
+    "Not changing your address in the padrón when you move: the renewal letter goes to your old address. You register at the new home or town at the town hall where you live now.",
+    "Asking for a volante when the procedure needs a certificado (or the other way round): always check which document the office asks for and if it must be recent.",
+    "Paying for an \"empadronamiento\" at an address where you do not live: it is an improper registration, the town hall can remove you and it can cause you problems."
+  ],
+  "checklist": [
+    { "id": "cita-oficial", "texto": "I booked the appointment on my town hall's official website or phone line" },
+    { "id": "doc-identidad", "texto": "I have my original and valid passport or TIE" },
+    { "id": "doc-vivienda", "texto": "I have the contract, the deed or the nota simple of the home" },
+    { "id": "doc-autorizacion", "texto": "If the contract is not mine, I have the signed permission and a copy of the ID of the person giving it" },
+    { "id": "hoja-padronal", "texto": "I filled in the hoja padronal and all adults have signed it" },
+    { "id": "doc-menores", "texto": "If I register children, I bring their libro de familia or birth certificate and the other parent's permission if needed" },
+    { "id": "traducciones", "texto": "My foreign documents are translated if the town hall asks for it" },
+    { "id": "sin-domicilio", "texto": "If I have no fixed address, I spoke to the municipal social services first" },
+    { "id": "volante-certificado", "texto": "I know if I need a volante or a certificado for my next procedure" },
+    { "id": "fecha-alta", "texto": "I saved the date I registered in the padrón" },
+    { "id": "renovacion", "texto": "I know if I must renew every 2 years and I have turned on the reminder" }
+  ],
+  "recordatorio": {
+    "pregunta": "On what day did you register in the padrón?",
+    "avisos": [
+      { "dias": 670, "texto": "About 2 months until your registration is 2 years old. If you are from outside the EU and do not have long-term residence, prepare the renewal and check if the town hall's letter has arrived." },
+      { "dias": 700, "texto": "1 month until your registration is 2 years old. If you must renew, book an appointment now or do it online if your town hall allows it." },
+      { "dias": 730, "texto": "Today your registration is 2 years old. If you had to renew and have not done it, the town hall can remove you from the padrón: go and renew as soon as possible." }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "In Madrid (city)",
+      "texto": "You register on the official website (with a digital certificate or Cl@ve) or at the Oficinas de Atención a la Ciudadanía (citizen service offices) with an appointment at madrid.es/citaprevia (1 appointment per person every 30 days). If people are already registered at the home, one of them must give you permission, online or with the official form. A valid TIE takes priority over other documents. Non-EU foreigners can renew online if they received the advance notice letter and are within the deadline; if not, with an appointment. Volantes and certificados are free. Information: 010 or 914 800 010. More information: https://sede.madrid.es (search for \"Padrón Municipal\")."
+    },
+    {
+      "titulo": "In Barcelona",
+      "texto": "Registration is free and you do it online at the Oficina Virtual de Trámites or in person at an Oficina de Atención Ciudadana (OAC, citizen service office) with an appointment at barcelona.cat/cita. If you have no document that proves where you live, you must go in person. If you have no fixed address, you need an informe de conocimiento de residencia (ICR) from Social Services. Documents must be in Catalan or Spanish, or translated. For the 2-year renewal, the Ajuntament sends a letter to your address and tells you which OAC to go to. Questions: 010. Residence and household volantes (volantes de residencia y de convivencia) are requested at the Oficina Virtual: https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20220001581"
+    },
+    {
+      "titulo": "If you are an EU, EEA or Swiss citizen (or have long-term residence)",
+      "texto": "You do not have to renew every 2 years. Some town halls, like Madrid and Barcelona, ask these people to confirm their residence from time to time (Barcelona says every 5 years, or every 2 if they are not in the Registro Central de Extranjeros, the central register of foreigners). If you receive a letter asking you to confirm, answer it."
+    },
+    {
+      "titulo": "In other towns",
+      "texto": "The basic rules are the same all over Spain (Ley 7/1985 and the INE technical instructions), but the way to book an appointment, the forms and whether the certificado has a fee can change. Search for \"padrón\" on your town hall's official website or ask at its citizen service office."
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, consolidated text)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
+    { "nombre": "Resolución of 17 February 2020 (INE and DGCAL), technical instructions on managing the municipal Padrón (BOE-A-2020-4784)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
+    { "nombre": "Resolución of 3 February 2023 amending the Padrón technical instructions (BOE-A-2023-3291)", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-3291", "consultado": "2026-10-28" },
+    { "nombre": "Ley Orgánica 4/2000, on the rights and freedoms of foreigners, art. 6.3 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
+    { "nombre": "INE IDA-Padrón: volante and certificado de empadronamiento", "url": "https://idapadron.ine.es/repositorio/legislacion/A2301vol.htm", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid: Padrón Municipal. Registration (new registrations and changes of address)", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid: Renewal of registration for non-EU foreigners", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=06c0d124bd1de010VgnVCM1000000b205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ajuntament de Barcelona: Registering in the Padrón municipal de habitantes", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+  ]
+}

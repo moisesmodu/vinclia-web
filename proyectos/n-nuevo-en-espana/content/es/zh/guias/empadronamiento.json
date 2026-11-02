@@ -1,0 +1,141 @@
+{
+  "slug": "empadronamiento",
+  "titulo": "如何在西班牙办理居住登记",
+  "resumen": "居住登记（empadronamiento）就是在市镇居民登记册（padrón municipal）上登记：这是每个市镇居住人口的官方名单。所有住在西班牙的人都必须登记，即使你处于非法居留状态也一样。登记后才能办理医疗卡、孩子上学、社会服务以及很多外国人事务手续。在马德里、巴塞罗那和大多数市政府（ayuntamiento），登记是免费的。最花时间的通常是拿到预约；材料齐全的话，去一次窗口或在网上就能办完。",
+  "paraQuien": "适用于住在西班牙任何一个市镇的人，不论你有没有居留许可，也不论你有没有租房合同。如果你只是来玩几天（旅游），不需要登记。",
+  "actualizado": "2026-10-28",
+  "datosClave": [
+    { "etiqueta": "费用", "valor": "马德里和巴塞罗那免费（大多数市政府也免费）" },
+    { "etiqueta": "在哪里办", "valor": "在你居住的市镇的市政府（ayuntamiento）：凭预约（cita previa）到现场办理，或通过其电子政务网站（sede electrónica）办理" },
+    { "etiqueta": "需要什么", "valor": "有效的身份证件 + 证明你住在该地址的材料（或该住处居住人的授权书）" },
+    { "etiqueta": "没有合法身份？", "valor": "也可以登记。居民登记册记录的是你住在哪里，而不是你的居留身份" },
+    { "etiqueta": "更新", "valor": "如果你来自欧盟以外且没有长期居留，每 2 年更新一次" },
+    { "etiqueta": "你会拿到的文件", "valor": "居住登记证明单（volante，用于告知）或居住登记证书（certificado，用于正式证明）" },
+    { "etiqueta": "法律依据", "valor": "Ley 7/1985，第15至17条；Ley Orgánica 4/2000，第6.3条" }
+  ],
+  "pasos": [
+    {
+      "titulo": "了解为什么必须登记",
+      "texto": "Ley 7/1985 de Bases del Régimen Local（第15条）规定，所有住在西班牙的人都必须在其常住市镇的居民登记册（padrón）上登记。如果你住在好几个地方，就在一年中住得最久的那个地方登记。Ley Orgánica 4/2000（第6.3条）规定，市政府必须把在本市镇有常住地址的外国人登记进居民登记册。登记册记录的是你实际住在哪里：它不是用来检查你的行政身份的。"
+    },
+    {
+      "titulo": "查一下你所在市政府的办理方式",
+      "texto": "每个市政府自己管理居民登记册。进入你所在市政府的电子政务网站（sede electrónica），搜索“padrón”“empadronamiento”或“alta en el padrón”。很多城市可以拨打 010 咨询。有些市政府允许你用数字证书（certificado digital）或 Cl@ve 在网上登记；如果不行，就去现场办理。"
+    },
+    {
+      "titulo": "在官方网站上预约",
+      "texto": "预约（cita previa）是免费的，只能通过市政府的官方网站或官方电话预约。马德里在 madrid.es/citaprevia 预约（每人每 30 天最多 1 个预约，每个预约只能办一个地址）。巴塞罗那在 barcelona.cat/cita 预约。任何人都不能因为给你预约而收费。"
+    },
+    {
+      "titulo": "准备好你的身份证件",
+      "texto": "如果你来自欧盟以外，请带上有效的护照或外国人身份卡（TIE）。如果你有 TIE，很多市政府（例如马德里）会优先要求 TIE。如果你是欧盟公民，请带上本国身份证或护照，如有，再带上写有你的外国人识别号（NIE）的登记证明（certificado de registro）。所有证件都必须是原件，并且在有效期内。"
+    },
+    {
+      "titulo": "准备好居住地址证明",
+      "texto": "最常见的是有效的租房合同、房产契约（escritura），或房产登记处（Registro de la Propiedad）出具的简要登记信息（nota simple）。如果你租的是一个房间，或者住在别人家里，合同上没有你的名字，你就需要一份由合同承租人、房东或已在该住处登记的成年人签字的授权书，并附上他的身份证件复印件。马德里和巴塞罗那的官网上有正式的授权书模板。"
+    },
+    {
+      "titulo": "如果你没有任何住房文件",
+      "texto": "国家统计局（INE）和部委的技术说明（Resolución de 17 de febrero de 2020）规定，居民登记册必须反映你真实居住的地址，不管房产有没有纠纷、住房条件如何。如果你拿不出文件，市政府可以用其他方式核实你住在那里（例如由地方警察 Policía Local 出具报告或上门检查），确认后为你登记。这同样适用于棚屋、房车或厂房等不合标准的住处。"
+    },
+    {
+      "titulo": "如果你没有固定住址",
+      "texto": "如果你露宿街头或没有固定住处，只要你经常住在这个市镇，并且市政社会服务部门（servicios sociales）认识你，你可以用“虚拟地址”（domicilio ficticio）登记（2020年技术说明第3.3节）。请先去市政社会服务部门：他们会告诉你使用哪个地址，政府的信件也会寄到那里。在巴塞罗那，需要社会服务部门出具居住知情报告（informe de conocimiento de residencia，ICR）。"
+    },
+    {
+      "titulo": "填写登记表并按预约前往",
+      "texto": "登记表（hoja padronal，也叫 solicitud de alta）是居民登记的表格。所有要登记的成年人都要签字。如果你为未成年人登记，请带上他的家庭簿（libro de familia）或出生证明，一般还需要另一位父母的签字或授权。外国文件可能需要正式翻译：在巴塞罗那，文件必须是西班牙语或加泰罗尼亚语，否则要翻译。"
+    },
+    {
+      "titulo": "申请证明单或证书",
+      "texto": "居住登记证明单（volante de empadronamiento）说明你已登记以及你的地址。居住登记证书（certificado）则正式证明你的登记情况，包括登记日期和以前的地址。具体要哪一种由各个机构决定：很多手续有证明单就够了，但办外国人事务或证明居住时间时，通常要求证书。在马德里，两种都免费，可以在网上申请。"
+    },
+    {
+      "titulo": "记下日期，需要的话每 2 年更新一次",
+      "texto": "如果你来自欧盟以外（不是欧洲经济区 EEE 或瑞士的公民），并且没有长期居留许可，你必须每 2 年更新一次登记，从登记之日或上次更新之日起算（Ley 7/1985 第16条）。如果不更新，市政府可以不事先通知就注销你的登记。通常市政府会往你登记的地址寄信，但即使没收到信，更新也是你自己的义务。"
+    }
+  ],
+  "documentos": [
+    { "nombre": "有效护照", "nota": "适用于没有 TIE 的欧盟以外人士。原件。" },
+    { "nombre": "有效的外国人身份卡（TIE）", "nota": "有的话请带上：在马德里，TIE 优先于其他任何证件。" },
+    { "nombre": "本国身份证或护照（欧盟、欧洲经济区和瑞士公民）", "nota": "如有，再加上写有你 NIE 的欧盟公民登记证明（certificado de registro de ciudadano de la UE）。" },
+    { "nombre": "已签字的登记表（hoja padronal 或 solicitud de alta）", "nota": "所有要登记的成年人都要签字。可在市政府网站下载，或在办公室领取。" },
+    { "nombre": "租房合同、房产契约（escritura）或简要登记信息（nota simple）", "nota": "原件，且在有效期内。在马德里，合同必须由合同上所有的人签字。" },
+    { "nombre": "居住登记授权书", "nota": "如果合同上不是你的名字：由承租人、房东或已在该住处登记的成年人签字，并附上他的身份证件复印件。" },
+    { "nombre": "未成年人的家庭簿（libro de familia）或出生证明", "nota": "如果不是西班牙语（在加泰罗尼亚为加泰罗尼亚语），需要翻译。" },
+    { "nombre": "另一位父母的授权书", "nota": "为未成年人登记而只有一位父母签字时需要，特殊情况除外（例如有法院判决）。" },
+    { "nombre": "社会服务部门的报告", "nota": "仅在你没有固定住址时需要（在巴塞罗那叫居住知情报告，ICR）。" },
+    { "nombre": "外国文件的正式翻译", "nota": "市政府可能会要求（宣誓翻译 traductor jurado、领事馆或政府部门翻译）。" }
+  ],
+  "plazos": [
+    { "texto": "如果你是欧盟、欧洲经济区和瑞士以外的外国人，且没有长期居留许可，你的登记每 2 年更新一次，从登记之日或上次更新之日起算（Ley 7/1985，第16.1条）。" },
+    { "texto": "如果 2 年期满而你没有更新，市政府可以不经事先听证就宣布你的登记失效（Ley 7/1985，第16.1条）。你的登记会被注销。" },
+    { "texto": "更新不是自动的：你必须自己明确申请，确认你仍住在同一个地址。" },
+    { "texto": "马德里：只有收到预先通知信（carta de preaviso），并在信中写明的期限内，才能在网上更新；过了期限，就要预约后到现场办理。" },
+    { "texto": "马德里：每人每 30 天最多 1 个居民登记预约。" },
+    { "texto": "办理医疗卡时，马德里和加泰罗尼亚要求提供 3 个月内开具的居住登记证明单或证书。" }
+  ],
+  "tasas": [
+    { "concepto": "居民登记", "importe": "0 €", "modelo": "没有缴费表格", "nota": "马德里和巴塞罗那免费。其他市镇请在其电子政务网站上查询。" },
+    { "concepto": "马德里的居住登记证明单和证书", "importe": "0 €", "modelo": "没有缴费表格", "nota": "在其他市政府，证书可能要收费：请在其网站上查询。" },
+    { "concepto": "更新居民登记", "importe": "0 €", "modelo": "没有缴费表格", "nota": "如果有人因为帮你登记或更新而收费，那不是官方手续。" }
+  ],
+  "errores": [
+    "以为没有租房合同就不能登记：有该住处居住人的授权书，或经市政府核实，同样可以登记。",
+    "以为非法居留就不能登记：只要能证明身份和住址，市政府就必须为住在本市镇的人登记。",
+    "带着过期的护照或 TIE：证件必须在有效期内。如果你的 TIE 已过期且正在续签，请同时带上护照。",
+    "忘了每 2 年更新：登记失效后，你的登记连续性就中断了，这可能影响那些要计算登记时间的手续。",
+    "搬家后没有在居民登记册上改地址：更新通知信会寄到旧地址。在新住址或新市镇的登记，要到你现在居住地的市政府申请。",
+    "手续要求证书却拿了证明单（或者反过来）：一定要看清楚机构要的是哪种文件，以及是否要求是近期开具的。",
+    "花钱在一个你并不居住的地址“登记”：这是不当登记，市政府可以注销你的登记，还可能给你带来麻烦。"
+  ],
+  "checklist": [
+    { "id": "cita-oficial", "texto": "我已在市政府的官方网站或官方电话预约" },
+    { "id": "doc-identidad", "texto": "我有护照或 TIE 的原件，并且在有效期内" },
+    { "id": "doc-vivienda", "texto": "我有住房的合同、房产契约（escritura）或简要登记信息（nota simple）" },
+    { "id": "doc-autorizacion", "texto": "如果合同不是我的，我有签好字的授权书和授权人证件的复印件" },
+    { "id": "hoja-padronal", "texto": "我已填好登记表（hoja padronal），所有成年人都已签字" },
+    { "id": "doc-menores", "texto": "如果为未成年人登记，我带了家庭簿或出生证明，需要时还有另一位父母的授权书" },
+    { "id": "traducciones", "texto": "如果市政府要求，我的外国文件已经翻译好" },
+    { "id": "sin-domicilio", "texto": "如果我没有固定住址，我已先找过市政社会服务部门" },
+    { "id": "volante-certificado", "texto": "我知道下一个手续需要证明单（volante）还是证书（certificado）" },
+    { "id": "fecha-alta", "texto": "我已记下我的居民登记日期" },
+    { "id": "renovacion", "texto": "我知道自己是否需要每 2 年更新一次，并已开启提醒" }
+  ],
+  "recordatorio": {
+    "pregunta": "你是哪一天办理居住登记的？",
+    "avisos": [
+      { "dias": 670, "texto": "再过大约 2 个月，你的居住登记就满 2 年了。如果你来自欧盟以外且没有长期居留，请准备更新，并看看市政府的信是否已经寄到。" },
+      { "dias": 700, "texto": "再过 1 个月，你的居住登记就满 2 年了。如果你需要更新，现在就预约，或者在市政府允许的情况下在网上办理。" },
+      { "dias": 730, "texto": "今天你的居住登记满 2 年。如果你需要更新但还没办，市政府可以注销你的登记：请尽快去更新。" }
+    ]
+  },
+  "variantes": [
+    {
+      "titulo": "在马德里（市）",
+      "texto": "可以在电子政务网站（用数字证书或 Cl@ve）办理登记，或者在 madrid.es/citaprevia 预约后到市民服务办公室（Oficinas de Atención a la Ciudadanía）办理（每人每 30 天 1 个预约）。如果住处已经有人登记，其中一人必须授权你，可以在网上授权，也可以用官方表格。有效的 TIE 优先于其他证件。非欧盟外国人收到预先通知信并在期限内时，可以在网上更新；否则需要预约。证明单和证书都免费。咨询电话：010 或 914 800 010。更多信息：https://sede.madrid.es（搜索“Padrón Municipal”）。"
+    },
+    {
+      "titulo": "在巴塞罗那",
+      "texto": "登记免费，可以在网上虚拟办事处（Oficina Virtual de Trámites）办理，也可以在 barcelona.cat/cita 预约后到市民服务办公室（OAC）现场办理。如果你没有证明居住地址的文件，必须到现场办理。如果你没有固定住址，需要社会服务部门出具的居住知情报告（ICR）。文件必须是加泰罗尼亚语或西班牙语，否则要翻译。到了 2 年更新时，市政府会往你的地址寄信，告诉你去哪个 OAC。咨询：010。居住证明单和同住证明单（volantes de residencia y de convivencia）在虚拟办事处申请：https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20220001581"
+    },
+    {
+      "titulo": "如果你是欧盟、欧洲经济区或瑞士公民（或有长期居留）",
+      "texto": "你不需要每 2 年更新。有些市政府（如马德里和巴塞罗那）会要求这些人每隔一段时间确认一次居住情况（巴塞罗那写的是每 5 年一次，如果未登记在外国人中央登记处 Registro Central de Extranjeros，则每 2 年一次）。如果收到要求确认的信，请回复。"
+    },
+    {
+      "titulo": "在其他市镇",
+      "texto": "全西班牙的基本规定都一样（Ley 7/1985 和 INE 技术说明），但预约方式、表格以及证书是否收费各有不同。请在你所在市政府的电子政务网站上搜索“padrón”，或到其市民服务办公室咨询。"
+    }
+  ],
+  "fuentes": [
+    { "nombre": "Ley 7/1985, de Bases del Régimen Local，第15-17条（BOE，合并文本）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
+    { "nombre": "Resolución de 17 de febrero de 2020（INE 和 DGCAL），市镇居民登记册管理技术说明（BOE-A-2020-4784）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
+    { "nombre": "Resolución de 3 de febrero de 2023，修订居民登记册技术说明（BOE-A-2023-3291）", "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-3291", "consultado": "2026-10-28" },
+    { "nombre": "Ley Orgánica 4/2000, de derechos y libertades de los extranjeros，第6.3条（BOE）", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
+    { "nombre": "INE IDA-Padrón：居住登记证明单和证书（volante y certificado de empadronamiento）", "url": "https://idapadron.ine.es/repositorio/legislacion/A2301vol.htm", "consultado": "2026-10-28" },
+    { "nombre": "马德里市政府（Ayuntamiento de Madrid）：Padrón Municipal. Empadronamiento（登记和地址变更）", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "马德里市政府：非欧盟外国人登记更新（Renovación de inscripción de los extranjeros no comunitarios）", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=06c0d124bd1de010VgnVCM1000000b205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "巴塞罗那市政府（Ajuntament de Barcelona）：市镇居民登记（Alta en el Padrón municipal de habitantes）", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+  ]
+}

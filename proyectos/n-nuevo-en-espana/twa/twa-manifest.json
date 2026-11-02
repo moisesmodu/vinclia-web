@@ -1,0 +1,21 @@
+{
+  "packageId": "app.nuevoenespana.twa",
+  "host": "tuspapeles.app",
+  "name": "Tus Papeles · Trámites en España en tu idioma",
+  "launcherName": "Tus Papeles",
+  "display": "standalone",
+  "themeColor": "#c2410c",
+  "navigationColor": "#c2410c",
+  "backgroundColor": "#faf8f4",
+  "enableNotifications": false,
+  "startUrl": "/?origen=twa",
+  "iconUrl": "https://tuspapeles.app/iconos/icono-512.png",
+  "maskableIconUrl": "https://tuspapeles.app/iconos/maskable-512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "signingKey": { "path": "./android.keystore", "alias": "nuevoenespana" },
+  "generatorApp": "bubblewrap-cli",
+  "fallbackType": "customtabs",
+  "features": {},
+  "minSdkVersion": 21
+}

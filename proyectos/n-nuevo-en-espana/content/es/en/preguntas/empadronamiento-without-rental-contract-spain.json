@@ -1,0 +1,44 @@
+{
+  "slug": "empadronamiento-without-rental-contract-spain",
+  "pregunta": "How to get empadronamiento without a rental contract in Spain",
+  "descripcion": "Empadronamiento without a rental contract: register with permission signed by the contract holder or owner, or the town hall checks where you live. Free.",
+  "respuestaCorta": "Yes, you can register (empadronarte) without a rental contract in your name. If you live in a room or in someone else's home, bring a permission (autorización) signed by the contract holder, the owner or an adult already registered there, with a copy of their ID. If you have no papers for the home, the town hall can check in other ways that you live there. It is free in Madrid, Barcelona and most town halls.",
+  "secciones": [
+    {
+      "titulo": "Why you can register without a contract",
+      "texto": "Empadronamiento means signing up in the padrón municipal, the official list of people who live in each town. Ley 7/1985 (article 15) says that everyone who lives in Spain must register in the town where they usually live. Ley Orgánica 4/2000 (article 6.3) obliges town halls to add foreigners who have their usual home in the town.\n\nThe padrón records where you really live. It does not check your immigration status, so you can also register if you have no legal status. The technical instructions of the INE (national statistics institute) of 17 February 2020 say the padrón must show the address where you really live, no matter if there are disputes about the property or what condition the home is in."
+    },
+    {
+      "titulo": "If you rent a room or live in someone else's home",
+      "texto": "This is the most common case. You need a permission (autorización) to register you, signed by one of these people: the holder of the rental contract, the owner of the home, or an adult who is already registered at that address. Bring a copy of their ID document too.\n\nMadrid and Barcelona have official permission forms on their websites. In Madrid, if people are already registered at the home, one of them must give you permission, online or with the official form. Bring your own valid passport or TIE (foreigner ID card) and the signed hoja padronal (the padrón form). All adults who register must sign it."
+    },
+    {
+      "titulo": "If you have no papers for your home at all",
+      "texto": "If you cannot show any document, the town hall can check by other means that you live there, for example with a Policía Local (local police) report or an inspection. If it confirms that you live there, it registers you. This also applies to substandard housing such as shacks, caravans or warehouses.\n\nIn Barcelona, if you have no document that proves where you live, you must go in person to an Oficina de Atención Ciudadana (OAC, citizen service office) with an appointment."
+    },
+    {
+      "titulo": "If you have no fixed address",
+      "texto": "If you live on the street or have no fixed place, you can register with a \"domicilio ficticio\" (notional address) if you usually live in the town and the social services know you (section 3.3 of the 2020 instructions). Go first to the municipal social services: they tell you which address is used, and the Administration's letters will go there. In Barcelona you need an informe de conocimiento de residencia (ICR, residence knowledge report) from Social Services."
+    },
+    {
+      "titulo": "How to book and what it costs",
+      "texto": "Book your appointment (cita previa) only on your town hall's official website or phone line. In Madrid you book at madrid.es/citaprevia (maximum 1 appointment per person every 30 days). In Barcelona, at barcelona.cat/cita. Some town halls let you register online with a digital certificate or Cl@ve.\n\nRegistering is free in Madrid, in Barcelona and in most town halls. If someone charges you to register, it is not an official procedure. Never pay for an \"empadronamiento\" at an address where you do not live: it is an improper registration and the town hall can remove you. If you are from outside the EU and do not have long-term residence, remember to renew your registration every 2 years. This page is general information, not legal advice."
+    }
+  ],
+  "faq": [
+    { "p": "Who can sign the permission for me to register?", "r": "The holder of the rental contract, the owner of the home, or an adult already registered at that address. Bring a copy of their ID document." },
+    { "p": "Can I register if I have no legal status?", "r": "Yes. The town hall must register anyone who lives in the town if they prove their identity and address. The padrón records where you live, not your residence status." },
+    { "p": "What if the person I live with will not sign?", "r": "If you cannot show documents, the town hall can check by other means that you live there, for example with a Policía Local report or an inspection." },
+    { "p": "How much does empadronamiento cost?", "r": "It is free in Madrid, in Barcelona and in most town halls. In other towns, check on their official website." },
+    { "p": "Do I need to renew my empadronamiento?", "r": "If you are from outside the EU, the EEA and Switzerland and do not have long-term residence, yes: every 2 years from when you registered or from your last renewal." }
+  ],
+  "guia": "empadronamiento",
+  "actualizado": "2026-10-28",
+  "fuentes": [
+    { "nombre": "Ley 7/1985, de Bases del Régimen Local, arts. 15-17 (BOE, consolidated text)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392", "consultado": "2026-10-28" },
+    { "nombre": "Resolución of 17 February 2020 (INE and DGCAL), technical instructions on managing the municipal Padrón (BOE-A-2020-4784)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4784", "consultado": "2026-10-28" },
+    { "nombre": "Ley Orgánica 4/2000, on the rights and freedoms of foreigners, art. 6.3 (BOE)", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-544", "consultado": "2026-10-28" },
+    { "nombre": "Ayuntamiento de Madrid: Padrón Municipal. Registration (new registrations and changes of address)", "url": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=775ba38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default", "consultado": "2026-10-28" },
+    { "nombre": "Ajuntament de Barcelona: Registering in the Padrón municipal de habitantes", "url": "https://seuelectronica.ajuntament.barcelona.cat/oficinavirtual/es/tramit/20200001402", "consultado": "2026-10-28" }
+  ]
+}
