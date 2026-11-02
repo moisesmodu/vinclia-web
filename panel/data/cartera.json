@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28",
+  "actualizado": "2026-11-02",
   "objetivos": [
     {
       "nombre": "Primer objetivo",
@@ -22,16 +22,52 @@
   "inversionAcumulada": 0,
   "decisionesPendientes": [
     {
-      "texto": "Sesión del Mac: abrir la red del entorno en la nube (api.stripe.com, api.vercel.com, console.neon.tech, api.resend.com), crear los accesos y guardarlos como secretos del entorno; después ejecutar el DESPLIEGUE.md de N (PR #3) y el de A",
-      "donde": "DESPLIEGUES.md"
+      "texto": "0 · Marketing · Moisés aprobó todo el 1/11. Lo que queda es publicar desde tus cuentas (10 min al día según marketing/CALENDARIO.md), crear @lunilla.cuentos, abrir la cuenta de Google Ads y pedir el alta en Xolo. Los 9 correos de marketing/correos/semana-1.json los envías tú desde el panel → Marketing → Correos",
+      "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/PARA-MOISES.md"
     },
     {
-      "texto": "Confirmar escenario de marketing: S0 sin anuncios o S1 prudente",
-      "donde": "VIABILIDAD.md §5"
+      "donde": "~/Desktop/MENSAJES-OPOSITA.html",
+      "texto": "1 · B · Pegar los 5 mensajes en los grupos de oposiciones (Telegram, WhatsApp, Facebook, foros). 10 min"
     },
     {
-      "texto": "Cuenta de desarrollador de Google Play (25 $) y cuenta en Gelato: solo cuando A y G estén listos para publicar",
-      "donde": "https://play.google.com/console/signup"
+      "donde": "https://adsense.google.com/adsense/u/0/pub-1805394669180486/privacymessaging/gdpr",
+      "texto": "2 · P · AdSense: crear y publicar el mensaje RGPD (2 sitios, logotipos ya subidos). 3 min"
+    },
+    {
+      "donde": "https://www.dondominio.com/",
+      "texto": "3 · Dominios: comprar nuvolet.games (juegos) y aprovacatala.cat (Aprova). 5 min"
+    },
+    {
+      "donde": "~/Desktop/juegos-portales/ACTIVAR-JUEGOS.html",
+      "texto": "4 · Juegos: comprobar si sale «Request activation» en GameMonetize/GameDistribution (Egg Truck primero) y enviar el correo a soporte de GameMonetize si no"
+    },
+    {
+      "donde": "https://play.google.com/console",
+      "texto": "6 · A · Google Play: cuando llegue el correo de verificación del DNI, avisar para crear la app y subir el paquete"
+    },
+    {
+      "donde": "https://www.udemy.com/teaching/",
+      "texto": "7 · J · Cuenta de instructor en Udemy (sin prisa)"
+    },
+    {
+      "donde": "https://vercel.com/account/billing",
+      "texto": "8 · Vercel: NIF-IVA en Billing → Tax ID (si estás en el ROI)"
+    },
+    {
+      "texto": "✔ Panel publicado en Vercel (31/10, proyecto cartera): se vuelve a publicar solo con cada push a la rama base. Protegido con Vercel Authentication: entra con tu cuenta de Vercel",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app"
+    },
+    {
+      "texto": "✔ Centro de control publicado (01/11, panel → Control): ingresos netos, MRR, usuarios de A, N, B, G y M con búsqueda y CSV, pagos, reembolsos y disputas de Stripe, suscripciones y visitas, en vivo. Bases de datos con el rol de solo lectura panel_ro. Pendiente tuyo: crear en Vercel un token de solo lectura y sustituir VERCEL_TOKEN_PANEL en el proyecto cartera",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/control/"
+    },
+    {
+      "texto": "✔ Tarea programada semanal de marketing creada (lunes 06:40, primera el 2/11)",
+      "donde": "marketing/TAREA-PROGRAMADA.md"
+    },
+    {
+      "texto": "✔ Panel de mando publicado (02/11): Hoy, Proyectos, Ventas, Usuarios, Suscripciones, Tareas con botón «Hecho», Marketing con «Copiar», «Publicado» y envío de los 9 correos a entidades (pulsa tú «Enviar»), y Juegos y portales. Desde el iPhone: Safari → Compartir → «Añadir a pantalla de inicio»",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/"
     }
   ],
   "reglas": [
@@ -59,5 +95,6 @@
       "G Cuentos (solo si empieza esta semana)"
     ],
     "fecha": "2026-10-24"
-  }
+  },
+  "panelUrl": "https://cartera-moisesmodu-3705s-projects.vercel.app"
 }

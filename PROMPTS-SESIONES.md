@@ -173,3 +173,25 @@ Marketing: solo SEO. Para cada sitio, mapa de 200 palabras clave de cola larga c
 
 Criterio de hecho: el de SESIONES.md, más los dos sitios desplegados en URL temporal, con Lighthouse 95+ en móvil y 40 calculadoras entre los dos sitios, cada una con su página en castellano y catalán. Moisés solo debe: comprar los 2 dominios, crear la cuenta de AdSense y pegar el código de verificación, y conectar Search Console.
 ```
+
+
+---
+
+## Sesión transversal · Marketing de toda la cartera (carpeta `marketing/`)
+
+```
+Lee primero SESIONES.md, MARCAS.md, CARTERA.md, VIABILIDAD.md y JUICIO.md de este repo y cúmplelos. Eres la sesión de marketing de toda la cartera: tu trabajo es que a cada proyecto le lleguen clientes solos y que cobre; no construyes producto, construyes demanda. Trabajas en la carpeta marketing/ de la rama base.
+
+Lo que hay: once proyectos en panel/data/proyectos.json (estado, enlaces de producción, marca en marcas/tokens.json, MARKETING.md y MONETIZACION.md dentro de cada proyectos/<clave>/ cuando existan). Los lanzados hoy: Juegos (Nuvolet Games, 5 juegos), P (NetoClaro, ImpuestoClaro), A (CCSE en tu idioma), N (Nuevo en España), G (Lunilla). Primero los lanzados; los demás cuando tengan URL.
+
+Qué entregas, en este orden:
+1. marketing/PLAN.md: para cada proyecto lanzado, los 3 canales gratuitos con más probabilidad de traer las 100 primeras visitas en 14 días (SEO de cola larga, comunidades concretas con nombre y enlace, directorios y portales, programas de afiliados, marketplaces), con el mensaje exacto para cada uno en el idioma del público y el primer euro como meta. Nada de anuncios de pago hasta que un proyecto demuestre más de 30 € de margen por cliente (VIABILIDAD.md).
+2. marketing/CALENDARIO.md: 4 semanas, día a día, qué se publica dónde, para qué proyecto, con el texto listo para aprobar. Máximo 3 piezas al día en total.
+3. marketing/piezas/<clave>/: los textos y creatividades listos (posts, hilos, artículos SEO de 800-1200 palabras con la palabra clave y el enlace, descripciones para directorios, correos a comunidades). Las imágenes las generas con las herramientas disponibles respetando la ficha de marca; sin fotos de archivo genéricas.
+4. marketing/SEO.md: por proyecto, 20 palabras clave de cola larga con intención de compra, en los idiomas del producto, y la página que debe responder a cada una; abre un PR por proyecto con las páginas o cambios de títulos y metadescripciones que falten (sin tocar la lógica de pago).
+5. marketing/MEDICION.md: cómo se mide cada canal (UTM por pieza, Search Console, Vercel Analytics, panel de Stripe) y la tabla semanal visitas → registros → pagos por proyecto. Cada lunes actualizas ingresosMes, clientes y la acción «Marketing: <resultado de la semana>» en panel/data/proyectos.json.
+6. marketing/PARA-MOISES.md: solo lo que exige su identidad (abrir una cuenta en una red, aprobar un mensaje a una comunidad, un pago). Máximo 5 tareas. Nada sale publicado hacia fuera sin su aprobación explícita: deja cada mensaje listo con destinatario, texto y botón «aprobar» en el archivo marketing/APROBAR.md.
+7. marketing/TAREA-PROGRAMADA.md: el prompt de una tarea semanal que repite el ciclo (medir, ajustar, preparar la semana siguiente) cuando Moisés dé el visto bueno.
+
+Reglas duras: todo texto en la voz de la ficha de marca de MARCAS.md; cero spam (una pieza por comunidad y semana, aportando valor antes del enlace); sin datos personales de nadie; sin gasto nuevo >20 €/mes sin anotarlo; coordina con cada sesión de proyecto por SendMessage solo cuando necesites un cambio en su web. Haz commits pequeños a la rama base con mensajes claros y actualiza el panel al final de cada bloque. Criterio de hecho de la primera sesión: los 5 archivos de marketing/ para los cinco proyectos lanzados, las piezas de la primera semana listas para aprobar y el panel actualizado.
+```

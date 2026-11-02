@@ -1,0 +1,37 @@
+name: Panel · publicar en Vercel
+# Publica el panel «La cartera» en Vercel con cada push a la rama base. Solo actúa si el repositorio tiene los
+# secretos VERCEL_TOKEN, VERCEL_ORG_ID y VERCEL_PROJECT_ID (los pone la sesión del Mac con `gh secret set`).
+on:
+  push:
+    branches: [claude/estrategia-ingresos-recurrentes-tx0rvw]
+    paths: ['panel/**', 'marcas/**', 'marketing/**', '*.md', '.github/workflows/panel.yml']
+  workflow_dispatch:
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    if: ${{ vars.PANEL_VERCEL != 'off' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: ¿Hay secretos de Vercel?
+        id: hay
+        run: echo "ok=${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_PROJECT_ID != '' }}" >> "$GITHUB_OUTPUT"
+      - name: Construir
+        if: steps.hay.outputs.ok == 'true'
+        working-directory: panel
+        run: npm ci || npm install; npm run build
+      - name: Publicar
+        if: steps.hay.outputs.ok == 'true'
+        working-directory: panel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npx vercel@latest pull --yes --environment=production --token "$VERCEL_TOKEN"
+          npx vercel@latest build --prod --token "$VERCEL_TOKEN"
+          npx vercel@latest deploy --prebuilt --prod --token "$VERCEL_TOKEN"
+      - name: Sin secretos
+        if: steps.hay.outputs.ok != 'true'
+        run: echo "Faltan VERCEL_TOKEN / VERCEL_ORG_ID / VERCEL_PROJECT_ID en los secretos del repositorio; no se publica."
