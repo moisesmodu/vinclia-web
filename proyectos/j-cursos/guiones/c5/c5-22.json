@@ -1,0 +1,121 @@
+{
+  "id": "c5-22",
+  "titulo": "Un presupuesto en PDF listo para enviar",
+  "descripcion": "Conviertes la calculadora en un presupuesto profesional con datos del cliente, número, fecha y validez de 30 días, lo guardas en PDF con la impresión del navegador y guardas los presupuestos anteriores para duplicarlos.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:presupuesto-contenido", "demo:presupuestos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Un presupuesto en PDF listo para enviar",
+      "subtitulo": "La hoja imprimible y los presupuestos guardados",
+      "narracion": "Ya tienes una calculadora que hace bien las cuentas y que se comprueba sola. Pero al cliente no le vas a enviar una calculadora. Le vas a enviar un presupuesto. En esta clase hacemos dos versiones. La versión 3 monta la hoja del presupuesto, con tus datos, los del cliente, el número, la fecha y la validez, y la guarda en PDF. La versión 4 guarda los presupuestos anteriores para que puedas duplicarlos en un minuto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué lleva un presupuesto claro",
+      "puntos": [
+        "Tus datos: nombre, dirección, teléfono y NIF",
+        "Datos del cliente y dirección de la obra",
+        "Número, fecha y hasta cuándo es válido",
+        "Partidas, base, IVA y total",
+        "Un espacio para que el cliente lo acepte"
+      ],
+      "narracion": "Primero, pensemos qué tiene que llevar. Tus datos, para que el cliente sepa quién le presupuesta. Los datos del cliente y la dirección de la obra. Un número, para hablar del presupuesto sin confusiones, y la fecha. Hasta cuándo vale, porque los precios de los materiales cambian: aquí usaremos 30 días. Las partidas, la base, el IVA y el total. Y un espacio para que el cliente firme su conformidad. Tienes esta lista en la plantilla de la clase."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La instrucción de la versión 3",
+      "usuario": "Paso 3. Añade arriba los datos del cliente (nombre, NIF, teléfono o correo y dirección de la obra), el número de presupuesto y la fecha. A la derecha, en vez del resumen, muestra la hoja del presupuesto como se imprimirá: mis datos, los del cliente, las líneas, los totales y «Válido hasta», 30 días después de la fecha. Añade un botón «Guardar en PDF» que use window.print, con estilos @media print para que solo se imprima la hoja. Sin librerías.",
+      "ia": "Listo. La hoja se actualiza mientras escribes. El botón llama a window.print y, al imprimir, los estilos de impresión ocultan el formulario y dejan solo la hoja en A4. Calculo «Válido hasta» sumando 30 días a la fecha. Cambia mis datos de ejemplo por los tuyos.",
+      "narracion": "Fíjate en dos detalles técnicos que le damos hechos. El primero: que use window punto print. Es la orden que abre el cuadro de imprimir del navegador, y desde ahí se guarda en PDF sin instalar nada. El segundo: estilos para impresión, que dicen qué se ve al imprimir. Y sin librerías: si no lo dices, la IA puede traer una librería externa para generar el PDF, que añade complejidad y necesita internet. La forma sencilla funciona muy bien."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 3: la hoja se monta sola",
+      "fuente": "demo:presupuestos/v3",
+      "acciones": [
+        { "fill": ["#cli-nombre", "Marta Lafuente"] },
+        { "fill": ["#cli-contacto", "600 000 000"] },
+        { "fill": ["#cli-dir", "Calle Mayor 8, 2.º B, Zaragoza"] }
+      ],
+      "url": "presupuestos/index.html",
+      "narracion": "Así queda. A la izquierda, el formulario, ahora con los datos del cliente arriba. A la derecha, la hoja del presupuesto tal y como saldrá. Escribimos el nombre de una clienta inventada, un teléfono y la dirección de la obra, y aparecen al instante en la hoja. Fíjate arriba a la derecha: el número, la fecha de hoy y la fecha de validez, 30 días después. Abajo, dos frases que importan: válido 30 días, y que esto es un presupuesto, no una factura."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Lo que solo se ve al imprimir",
+      "archivo": "presupuestos/v3/index.html",
+      "lenguaje": "css",
+      "codigo": "@media print {\n  @page { size: A4; margin: 14mm; }\n  body { background: #fff; }\n  .barra-sup, .editor, .lado .acciones {\n    display: none !important;\n  }\n  main { display: block; padding: 0; max-width: none; }\n  .lado { position: static; }\n  .hoja { box-shadow: none; border-radius: 0; padding: 0; }\n  .hoja { font-size: 12px; print-color-adjust: exact; }\n}",
+      "narracion": "Este es el trozo de CSS que hace la magia. Todo lo que está dentro de arroba media print solo se aplica al imprimir. La primera regla pide papel A4 con márgenes. Luego oculta la barra de arriba, el formulario y los botones. Y a la hoja le quita la sombra y los bordes redondeados, que en papel no pintan nada. No hace falta que sepas escribir esto. Basta con que sepas que existe, para pedírselo a la IA con estas palabras."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Lo que sale en el PDF",
+      "fuente": "demo:presupuestos/v3",
+      "acciones": [
+        { "fill": ["#cli-nombre", "Marta Lafuente"] },
+        { "fill": ["#cli-contacto", "600 000 000"] },
+        { "fill": ["#cli-dir", "Calle Mayor 8, 2.º B, Zaragoza"] },
+        { "eval": "for (const s of document.styleSheets) for (const r of s.cssRules) if (r.media && r.media.mediaText === 'print') r.media.mediaText = 'all'; document.body.style.cssText = 'background:#fff;max-width:780px;margin:24px auto'" }
+      ],
+      "url": "Vista de impresión",
+      "narracion": "Y esto es lo que sale al pulsar el botón. Solo la hoja, limpia, sin botones ni formulario. Arriba, tus datos y el número. Después, la clienta, las partidas, los totales y el recuadro de conformidad. Revisa siempre el PDF antes de enviarlo, igual que revisarías un correo importante. Mira que no se corte ninguna línea, que los importes cuadren con tus casos de prueba y que la fecha de validez sea la correcta."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Guardar en PDF, en Chrome o Edge",
+      "pasos": [
+        "Pulsa «Guardar en PDF» en la app",
+        "En Destino, elige «Guardar como PDF»",
+        "En Más ajustes, quita encabezados y pies de página",
+        "Guarda con un nombre claro: número y cliente"
+      ],
+      "narracion": "Los pasos para guardar el PDF en Chrome o en Edge. Pulsa el botón de la app. Se abre el cuadro de imprimir. En destino, elige guardar como PDF. En más ajustes, quita la casilla de encabezados y pies de página, para que no salgan la fecha ni la ruta del archivo en los bordes. Y guarda con un nombre claro, con el número y el cliente. En otros navegadores el cuadro cambia un poco, pero la opción de guardar como PDF siempre está."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La instrucción de la versión 4",
+      "usuario": "Paso 4. Añade un botón «Guardar presupuesto» que lo guarde en localStorage y un panel «Guardados» con la lista: número, cliente, fecha y total, con botones Abrir, Duplicar y Borrar. Duplicar copia las líneas, el IVA y el descuento, pero deja el cliente vacío y pone el siguiente número y la fecha de hoy. Borrar pide confirmación. Indica en el panel que se guardan solo en este navegador.",
+      "ia": "Hecho. Los presupuestos se guardan en localStorage con la clave reformas-jordi-presupuestos. El número se propone solo: año, guion y tres cifras. Al duplicar, se abre la copia lista para editar y aparece un aviso abajo.",
+      "narracion": "Última versión. Muchos presupuestos se parecen: dos baños, tres cocinas, una pintura. Lo práctico es partir de uno anterior. Por eso pedimos guardar y duplicar. Usamos localStorage, que ya conoces del proyecto de hábitos: guarda datos en el navegador. Fíjate en lo que hace duplicar: copia las partidas, pero vacía el cliente y pone número y fecha nuevos. Así nunca envías por error el nombre de otro cliente. Ese tipo de detalle lo decides tú, no la IA."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Duplicar un presupuesto",
+      "archivo": "presupuestos/v4/index.html",
+      "lenguaje": "js",
+      "codigo": "function duplicar(numero) {\n  const orig = leerGuardados().find(p => p.numero === numero);\n  if (!orig) return;\n  const copia = structuredClone(orig);\n  copia.numero = siguienteNumero();\n  copia.fecha = hoyISO();\n  copia.cliente = { nombre: '', nif: '', contacto: '', dir: '' };\n  cargar(copia);",
+      "narracion": "Este es el principio de la función de duplicar. Busca el presupuesto guardado con ese número y hace una copia completa. A la copia le pone el siguiente número libre y la fecha de hoy. Y deja vacíos todos los datos del cliente. Después la carga en el formulario para que la edites. Si lees solo los nombres, número, fecha y cliente, ya entiendes lo que hace. Compruébalo en la app: duplica uno y mira que el cliente sale en blanco."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 4: guardar y duplicar",
+      "fuente": "demo:presupuestos/v4",
+      "acciones": [
+        { "fill": ["#cli-nombre", "Marta Lafuente"] },
+        { "click": "#guardar" },
+        { "click": "#ver-guardados", "wait": 400 },
+        { "click": ".guardado [data-duplicar]", "wait": 400 },
+        { "fill": ["#cli-nombre", "Pedro Ibáñez"] },
+        { "fill": [".linea:nth-child(1) .cantidad", "8"] },
+        { "click": "#guardar" },
+        { "click": "#ver-guardados", "wait": 600 }
+      ],
+      "url": "presupuestos/index.html",
+      "narracion": "Vamos a verlo. Guardamos el presupuesto de Marta. Abrimos el panel de guardados y pulsamos duplicar. Sale el número siguiente, con el cliente vacío. Escribimos otro cliente inventado, cambiamos los metros del alicatado a 8 y guardamos. Ahora el panel muestra los dos presupuestos, cada uno con su total. Fíjate en la frase de arriba: se guardan solo en este navegador, en este ordenador. Es importante, y por eso dedicamos la próxima clase a los datos de clientes."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "La hoja del presupuesto, con validez de 30 días",
+        "PDF con window.print y estilos de impresión",
+        "Guardar y duplicar, con el cliente en blanco",
+        "Tarea: saca tu primer presupuesto en PDF"
+      ],
+      "narracion": "Repasamos. La versión 3 monta la hoja del presupuesto con tus datos, el cliente, el número, la fecha y la validez de 30 días. El PDF sale con la impresión del navegador, sin librerías. La versión 4 guarda los presupuestos y los duplica con el cliente en blanco. Tu tarea de hoy: pon tus datos reales en la cabecera, haz un presupuesto de prueba y guárdalo en PDF. Revisa la hoja con la plantilla de la clase. En la próxima, lo que dice la ley sobre datos de clientes."
+    }
+  ]
+}

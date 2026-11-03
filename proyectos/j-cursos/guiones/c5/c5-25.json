@@ -1,0 +1,120 @@
+{
+  "id": "c5-25",
+  "titulo": "El juego funcionando: mover, chocar y puntuar",
+  "descripcion": "Conviertes la primera versión en un juego de verdad con la IA: choques, puntos, vidas y fin de partida; después, dificultad creciente, récord guardado, controles táctiles para el móvil, pantalla de inicio y sonidos que se pueden apagar.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:diseno-de-juego",
+    "demo:juego"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El juego funcionando",
+      "subtitulo": "Mover, chocar y puntuar",
+      "narracion": "En la clase anterior conseguiste la versión uno. La cesta se mueve y la fruta cae, pero todavía no pasa nada. Hoy vas a convertirlo en un juego de verdad. Primero, choques, puntos, vidas y fin de partida. Después, lo que hace que la gente quiera repetir: dificultad que sube, un récord que batir, controles para el móvil, una pantalla de inicio y sonido. Todo en pasos pequeños, probando cada uno."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 2: choques, puntos y vidas",
+      "usuario": "Paso 2. Ahora también caen piedras, más o menos una de cada cuatro, dibujadas en gris con borde oscuro. Si una fruta entra en la cesta, suma 1 punto y desaparece. Si entra una piedra, pierdes una vida. Empiezas con 3 vidas. Muestra los puntos y las vidas con corazones encima del juego. Con 0 vidas, para el juego y enseña «Fin de la partida» con los puntos y un botón «Jugar otra vez» que también funcione con la barra espaciadora. No cambies nada más.",
+      "ia": "Hecho. Añado piedras con forma irregular y una función tocaCesta que comprueba si un objeto entra por la boca de la cesta. Al tocarla, el objeto desaparece y aparece un texto flotante: más 1 o menos 1 vida. El marcador va en HTML, encima del canvas. Con 0 vidas el estado pasa a fin y sale un panel con los puntos. Al volver a jugar se vacía todo y empiezas con 3 vidas.",
+      "narracion": "La instrucción del paso dos dice qué cae, qué pasa con cada cosa y cómo se acaba. Fíjate en los detalles que evitan malentendidos. Una de cada cuatro, más o menos. Tres vidas. Corazones. Un botón y también la barra espaciadora. Y la frase de siempre al final: no cambies nada más. Sin ella, la IA a veces aprovecha para cambiar colores o reordenar el código, y luego no sabes qué ha tocado."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 2, en plena partida",
+      "fuente": "demo:juego/v2",
+      "url": "lluvia-de-fruta/index.html",
+      "acciones": [
+        {
+          "eval": "__demo(21)"
+        }
+      ],
+      "narracion": "Así queda la versión dos en plena partida. Arriba, los puntos y los corazones. Ya llevamos 16 puntos y hemos perdido una vida. Encima de la cesta aparece un pequeño texto cuando atrapas algo, y eso ayuda mucho a entender qué ha pasado. Prueba tú. Atrapa varias frutas y comprueba que el marcador sube de uno en uno. Luego deja que entre una piedra a propósito. Debe desaparecer un corazón."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "¿Ha entrado en la cesta?",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function tocaCesta(o) {\n  return o.y + o.r >= cesta.y &&\n         o.y - o.r <= cesta.y + cesta.alto &&\n         Math.abs(o.x - cesta.x) <= cesta.ancho / 2 + o.r * 0.5;\n}",
+      "narracion": "Este es el corazón de los choques. La función mira tres cosas. Si el objeto ha llegado a la altura de la boca de la cesta. Si todavía no la ha pasado del todo. Y si está lo bastante cerca a lo ancho. Si se cumplen las tres, ha entrado. No hace falta que lo entiendas línea a línea. Basta con saber que si un choque se nota raro, demasiado fácil o demasiado difícil, es aquí donde la IA tiene que mirar."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Fin de la partida",
+      "fuente": "demo:juego/v2",
+      "url": "lluvia-de-fruta/index.html",
+      "acciones": [
+        {
+          "eval": "__demo(60)"
+        }
+      ],
+      "narracion": "Ahora pierde a propósito. Con la tercera piedra, el juego se para y aparece el panel de fin de partida con tus puntos. Pulsa Jugar otra vez y comprueba tres cosas. Que los puntos vuelven a cero. Que tienes otra vez tres corazones. Y que no quedan frutas viejas colgando. Prueba también la barra espaciadora. Reiniciar mal es uno de los fallos más típicos en los juegos hechos con IA."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 3: dificultad y récord",
+      "usuario": "Paso 3. Haz que el juego se ponga difícil poco a poco: cada 10 puntos sube un nivel; todo cae algo más deprisa, sale más a menudo y hay algo más de piedras, con un tope para que siga siendo jugable. Muestra el nivel en el marcador y un aviso «¡Nivel 2!» al subir. Guarda el récord en localStorage y enséñalo; si lo superas, di «¡Nuevo récord!». Si localStorage falla, el juego tiene que seguir funcionando.",
+      "ia": "Añado una función dificultad que calcula la velocidad, el tiempo entre objetos y la proporción de piedras según el nivel, cada valor con su tope. El aviso de nivel se dibuja en el centro y se desvanece en un segundo y medio. El récord se lee y se guarda con try y catch, para que el modo privado del navegador no rompa el juego.",
+      "narracion": "Un juego que siempre es igual aburre en un minuto. Por eso pedimos que se ponga difícil poco a poco, pero con un tope. Sin ese tope, en el nivel 15 las cosas caen tan rápido que es imposible. Y añadimos el récord, guardado en el navegador con localStorage, como en la app de hábitos. Fíjate en la última frase. Pedimos que, si el guardado falla, el juego siga. En algunas ventanas privadas pasa, y es mejor prevenirlo."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Más rápido, pero con tope",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function dificultad() {\n  return {\n    velocidad: Math.min(2.4, 1 + 0.15 * (nivel - 1)),\n    intervalo: Math.max(0.32, 0.85 / (1 + 0.18 * (nivel - 1))),\n    piedras: Math.min(0.45, 0.22 + 0.03 * (nivel - 1))\n  };\n}",
+      "narracion": "Aquí tienes la dificultad. Son tres números que dependen del nivel. La velocidad de caída, el tiempo entre un objeto y el siguiente, y la proporción de piedras. Cada uno sube o baja un poco por nivel. Y cada uno tiene su límite, con mínimos y máximos. Si tus amigos dicen que el juego se pone imposible demasiado pronto, no hace falta rehacerlo. Pide a la IA que cambie estos números y vuelve a probar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 4: el móvil y la pantalla de inicio",
+      "usuario": "Paso 4. Quiero jugar en el móvil. En pantallas estrechas, que el campo de juego sea vertical. Añade debajo dos botones grandes, izquierda y derecha, que muevan la cesta mientras los mantienes pulsados, y que también se pueda mover arrastrando el dedo sobre el juego. Que la página no haga scroll al arrastrar. Añade también una pantalla de inicio con el nombre, las reglas y un botón «Jugar».",
+      "ia": "Uso eventos de puntero, que valen para dedo y ratón. Al arrastrar, la cesta va hacia la posición del dedo. Los botones solo se muestran en pantallas táctiles o estrechas. Pongo touch-action en none sobre el juego para que no se mueva la página. Si la pantalla mide menos de 600 píxeles de ancho, el campo pasa a 400 por 560. La pantalla de inicio es un panel encima del canvas.",
+      "narracion": "La mayoría de la gente abrirá tu juego en el móvil, y ahí no hay flechas. Pedimos dos formas de jugar: arrastrar el dedo y dos botones grandes. Y algo que suele olvidarse: que la página no se desplace al arrastrar. Sin eso, intentas mover la cesta y se mueve toda la web. También pedimos una pantalla de inicio, para que nadie empiece a jugar sin saber qué hacer. Ya verás en la próxima clase que la primera no nos salió bien."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 3 en el móvil",
+      "nota": "Arrastra el dedo o usa los botones. Nivel y récord, en el marcador.",
+      "fuente": "demo:juego/v3@movil",
+      "acciones": [
+        {
+          "eval": "__demo(23)"
+        }
+      ],
+      "narracion": "Así se ve la versión tres en un móvil. El campo de juego es vertical y debajo están los dos botones. El marcador ahora enseña también el nivel y el récord. Para probarlo de verdad, no basta con estrechar la ventana del ordenador. Abre el archivo en tu móvil. En la clase siguiente lo publicaremos, y probarlo será tan fácil como abrir un enlace. De momento, comprueba al menos que con el ratón puedes arrastrar la cesta."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 5: sonidos que se pueden apagar",
+      "usuario": "Paso 5. Añade sonidos cortos hechos con WebAudio, sin archivos: al coger fruta, al chocar con una piedra, al subir de nivel y al perder. Que empiecen apagados, con un botón «Sonido: sí/no» y la tecla M, y que se recuerde la elección.",
+      "ia": "Creo los sonidos con osciladores: un pitido que sube para la fruta, uno grave para la piedra, tres notas para el nivel y uno que baja para el final. El audio no se activa hasta que pulsas el botón, porque los navegadores no dejan sonar nada antes de que la persona toque la página. La elección se guarda en localStorage.",
+      "narracion": "El sonido da mucha vida a un juego, pero también molesta en el autobús. Por eso pedimos que empiece apagado y que se pueda activar con un botón o con la tecla M. Con WebAudio, el navegador fabrica los pitidos, sin descargar música de nadie. La IA nos explica algo importante. Los navegadores no dejan sonar nada hasta que la persona pulsa algo. Si un día tu juego no suena, empieza por ahí."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Fallos típicos al pedir un juego a la IA",
+      "puntos": [
+        "Va más rápido en un ordenador que en otro",
+        "Las flechas o la barra mueven también la página",
+        "Al reiniciar quedan puntos u objetos viejos",
+        "No suena, o suena antes de tocar nada"
+      ],
+      "narracion": "Estos son los fallos que más vas a ver, y cómo pedir que los arregle. Si el juego va más rápido en un ordenador que en otro, pide que la velocidad no dependa de los fotogramas por segundo. Si las flechas mueven la página, pide que se evite el desplazamiento por defecto. Si al reiniciar quedan restos, pide que reinicie todo el estado. Y si no suena, recuerda que el audio necesita que la persona pulse algo primero."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "v2: choques, puntos, vidas y fin de partida",
+        "v3: dificultad con tope y récord guardado",
+        "Móvil: dedo, botones y pantalla de inicio",
+        "Sonido apagado al empezar; prueba cada paso"
+      ],
+      "narracion": "Repasamos. Con la versión dos el juego ya tiene choques, puntos, vidas y un final. Con la tres, se pone difícil poco a poco, guarda tu récord y se juega en el móvil, con pantalla de inicio y sonido opcional. Tu tarea de hoy es llevar tu juego hasta aquí, paso a paso, guardando cada versión que funcione. Juega al menos tres partidas enteras antes de dar un paso por terminado. En la próxima clase lo pulimos y lo compartimos con un enlace."
+    }
+  ]
+}

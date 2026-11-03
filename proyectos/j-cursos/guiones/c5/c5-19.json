@@ -34,13 +34,13 @@
       "tipo": "pasos",
       "titulo": "La carpeta de la versión 4",
       "pasos": [
-        "index.html: la app, con dos líneas nuevas al final",
+        "index.html: la app, con la tarjeta de instalar",
         "manifest.webmanifest: la ficha de la app",
         "sw.js: el service worker",
         "icon-192.png e icon-512.png: cuadrados, sin texto",
         "Los cinco en la misma carpeta, con esos nombres"
       ],
-      "narracion": "Así queda la carpeta de la versión 4. El index de siempre, con unas líneas nuevas al final. El manifest, que es la ficha de la app. El service worker, en un archivo llamado sw punto js. Y los dos iconos, cuadrados, de 192 y de 512 píxeles. Un consejo para el icono: un dibujo sencillo sobre fondo de color, sin texto, porque se verá muy pequeño. Los cinco archivos van juntos en la misma carpeta y con estos nombres exactos."
+      "narracion": "Así queda la carpeta de la versión 4. El index de siempre, con la tarjeta nueva y unas líneas más al final. El manifest, que es la ficha de la app. El service worker, en un archivo llamado sw punto js. Y los dos iconos, cuadrados, de 192 y de 512 píxeles. Un consejo para el icono: un dibujo sencillo sobre fondo de color, sin texto, porque se verá muy pequeño. Los cinco archivos van juntos en la misma carpeta y con estos nombres exactos."
     },
     {
       "tipo": "codigo",
@@ -56,7 +56,7 @@
       "archivo": "v4/sw.js",
       "lenguaje": "javascript",
       "codigo": "self.addEventListener('fetch', (e) => {\n  if (e.request.method !== 'GET') return;\n  e.respondWith(\n    fetch(e.request)\n      .then(resp => {\n        const copia = resp.clone();\n        caches.open(CACHE).then(c => c.put(e.request, copia));\n        return resp;\n      })\n      .catch(() => caches.match(e.request)\n        .then(r => r || caches.match('./index.html')))\n  );\n});",
-      "narracion": "Y este es el service worker por dentro. Cada vez que la app pide un archivo, lo intenta primero por internet. Si llega, guarda una copia en la caché, que es un almacén del navegador, y lo entrega. Si no hay conexión, entrega la copia guardada. Es la estrategia más tranquila para empezar. Muchas IA proponen la contraria, primero la copia, y entonces los cambios tardan en aparecer. Si un día publicas una versión nueva y no la ves, revisa esto."
+      "narracion": "Y este es el service worker por dentro. Cada vez que la app pide un archivo, lo intenta primero por internet. Si llega, guarda una copia en la caché, que es un almacén del navegador, y lo entrega. Si no hay conexión, entrega la copia guardada. Es la estrategia más tranquila para empezar. Otra opción habitual es la contraria, primero la copia, y entonces los cambios tardan en aparecer. Si un día publicas una versión nueva y no la ves, revisa esto."
     },
     {
       "tipo": "web",
@@ -90,7 +90,7 @@
         "Los datos van unidos a la dirección: no la cambies",
         "Al actualizar, publica en el mismo sitio de Netlify"
       ],
-      "narracion": "Recuerda cómo funciona el almacenamiento local, porque aquí es donde sorprende. La app del móvil empieza vacía: lo que probaste en el ordenador se queda en el ordenador. Los datos van unidos a la dirección de la web. Si publicas otra vez y Netlify te da una dirección nueva, la app nueva no verá tus hábitos. Por eso, para actualizar, sube la carpeta nueva al mismo sitio de Netlify, desde su apartado de publicaciones, y no como un sitio nuevo."
+      "narracion": "Recuerda cómo funciona el almacenamiento local, porque aquí es donde sorprende. La app del móvil empieza vacía: lo que probaste en el ordenador se queda en el ordenador. Los datos van unidos a la dirección de la web. Si publicas otra vez y Netlify te da una dirección nueva, la app nueva no verá tus hábitos. Por eso, para actualizar, sube la carpeta nueva al mismo sitio de Netlify, desde su apartado Deploys, y no como un sitio nuevo."
     },
     {
       "tipo": "chat",
@@ -109,7 +109,7 @@
         { "click": "#exportar", "wait": 500 },
         { "eval": "window.scrollTo(0, document.body.scrollHeight)", "wait": 400 }
       ],
-      "narracion": "Así queda en el móvil. Al pulsar descargar copia, el archivo va a tus descargas y la app te lo confirma. Guárdalo en un sitio seguro, por ejemplo en tu nube o enviándotelo por correo. Haz esta prueba completa una vez: descarga la copia, borra un hábito y recupera la copia. El hábito debe volver con todos sus días. Prueba también a recuperar un archivo cualquiera, como una foto. Debe salir el aviso y tus datos deben quedar intactos."
+      "narracion": "Así queda en el móvil. Al pulsar descargar copia, el archivo va a tus descargas y la app te lo confirma. Guárdalo en un sitio seguro, por ejemplo en tu nube o enviándotelo por correo. Haz esta prueba completa una vez: descarga la copia, borra un hábito y recupera la copia. El hábito debe volver con todos sus días. Prueba también a recuperar un archivo que no sea una copia. Debe salir el aviso y tus datos deben quedar intactos."
     },
     {
       "tipo": "resumen",
