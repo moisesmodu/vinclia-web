@@ -1,0 +1,139 @@
+{
+  "id": "c5-26",
+  "titulo": "Pulirlo y compartirlo con un enlace",
+  "descripcion": "Pules tu juego con la prueba de los 5 segundos, una pantalla de inicio clara, pausa y accesibilidad básica, y lo publicas gratis con Netlify Drop para compartirlo con un enlace y recoger opiniones.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:diseno-de-juego",
+    "demo:juego"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Pulirlo y compartirlo",
+      "subtitulo": "Del juego que funciona al juego que apetece jugar",
+      "narracion": "Tu juego ya funciona. Se mueve, puntúa, se pone difícil y se juega en el móvil. En esta clase damos el último empujón, el que separa un juego que funciona de uno que apetece jugar. Haremos la prueba de los 5 segundos, añadiremos pausa y accesibilidad básica, y lo publicaremos con un enlace, igual que la web del primer proyecto. Al acabar, podrás mandarlo a quien quieras."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La prueba de los 5 segundos",
+      "pasos": [
+        "Abre el juego en la pantalla de inicio",
+        "Enséñaselo a alguien durante 5 segundos",
+        "Tápalo y pregunta: ¿qué hay que hacer?",
+        "Si duda, recorta texto y usa dibujos",
+        "Repite con otra persona"
+      ],
+      "narracion": "Esta prueba es sencilla y no falla. Abre tu juego en la pantalla de inicio. Enséñaselo a alguien de tu casa durante 5 segundos, ni uno más. Tápalo y pregúntale qué hay que hacer. Si contesta algo como atrapar la fruta y esquivar las piedras, perfecto. Si duda o se lía, el problema no es suyo, es de tu pantalla. Recorta texto, usa dibujos y vuelve a probar con otra persona. Apunta las respuestas en la plantilla."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Antes: un muro de texto",
+      "fuente": "demo:juego/v3",
+      "url": "lluvia-de-fruta/index.html",
+      "narracion": "Esta es la pantalla de inicio que nos dio la IA en la versión tres. Todo lo que dice es correcto. Pero es un párrafo entero, y nadie lee un párrafo antes de jugar. Si haces la prueba con ella, lo más probable es que la persona lea la primera línea y diga: hay que mover algo, supongo. Las reglas importantes, que la fruta suma y la piedra resta, estaban enterradas en mitad del texto. Hay que darle la vuelta."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pulir el inicio y añadir pausa",
+      "usuario": "Vamos a pulir el juego. Haz dos cosas y nada más. Uno: la pantalla de inicio tiene demasiado texto. Déjala con el título, dos reglas con un dibujo pequeño, «Atrapa la fruta: +1» y «Esquiva las piedras: −1 vida», una línea de controles distinta en ordenador y en móvil, y el botón «Jugar». Dos: añade pausa con la tecla P, con Escape y con un botón «Pausa» en el marcador, y que el juego se pause solo si cambio de pestaña o de aplicación.",
+      "ia": "Cambio el párrafo por dos etiquetas con un dibujo en SVG: una manzana en verde y una piedra en rojo. Los controles se ven distintos según la pantalla. Añado un estado de pausa con su panel y un botón «Seguir jugando». El botón «Pausa» está desactivado fuera de la partida. Si la página se oculta o pierde el foco, el juego se pausa solo.",
+      "narracion": "La instrucción pide dos cosas y nada más. Para el inicio, le decimos exactamente qué queremos ver: título, dos reglas con dibujo, una línea de controles y el botón. Así la IA no tiene que adivinar. Para la pausa, tres formas de activarla y una automática. Esa última es importante. Si te llaman por teléfono mientras juegas en el móvil, el juego tiene que esperarte, no seguir tirándote piedras."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Después: se entiende de un vistazo",
+      "fuente": "demo:juego/v4",
+      "url": "lluvia-de-fruta/index.html",
+      "narracion": "Y así queda. Título, una manzana con su regla y una piedra con la suya, en colores distintos. Una línea de controles. Y un botón naranja que se ve desde lejos. Fíjate en que la fruta y la piedra no se distinguen solo por el color, también por la forma y por el texto. Esto ayuda a quien no distingue bien los colores. Repite la prueba de los 5 segundos. Con esta pantalla es mucho más fácil acertar."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La pausa por dentro",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function pausar() {\n  if (estado !== 'jugando') return;\n  estado = 'pausa';\n  teclas.ArrowLeft = teclas.ArrowRight = false;\n  botonDir = 0; dedo = null;\n  $('pausado').hidden = false;\n  $('pausa').setAttribute('aria-pressed', 'true');\n  $('seguir').focus();\n  anunciar('En pausa');\n}",
+      "narracion": "Este es el código de la pausa. Primero comprueba que estás jugando, porque no tiene sentido pausar la pantalla de inicio. Cambia el estado a pausa y suelta las teclas y el dedo. Esto evita un fallo curioso: si pausas con la flecha pulsada, al volver la cesta seguiría moviéndose sola. Después enseña el panel, pone el foco en el botón de seguir y avisa al lector de pantalla."
+    },
+    {
+      "tipo": "web",
+      "titulo": "En pausa, esperándote",
+      "fuente": "demo:juego/v4",
+      "url": "lluvia-de-fruta/index.html",
+      "acciones": [
+        {
+          "eval": "__demo(23)"
+        },
+        {
+          "eval": "pausar()"
+        }
+      ],
+      "narracion": "Pruébalo. Empieza una partida, pulsa la letra P y el juego se congela con el panel de pausa. Vuelve a pulsar P, o el botón, y sigue donde estaba. Luego prueba la pausa automática. Empieza a jugar y cambia de pestaña. Al volver, debe estar en pausa. Fíjate también en el botón con el borde amarillo. Es el foco del teclado, y te dice qué se activará si pulsas la tecla Intro."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Accesibilidad básica y listo para compartir",
+      "usuario": "Ahora accesibilidad básica y compartir. Que todo se pueda hacer con teclado y que el foco se vea bien. Un «Modo tranquilo» en el inicio que haga que todo caiga más despacio. Si el sistema pide reducir el movimiento, quita el temblor al chocar. Anuncia para lectores de pantalla cuándo empieza la partida, cuándo pierdes una vida, cuándo subes de nivel y cuándo acaba. Y para compartir: título y descripción claros, un icono de fruta en SVG y las etiquetas para que se vea bien al mandarlo por WhatsApp.",
+      "ia": "Añado un contorno amarillo grueso para el foco y una casilla «Modo tranquilo» que baja la velocidad al 70 por ciento. Compruebo prefers-reduced-motion para quitar el temblor. Los avisos van a una zona invisible con aria-live. Pongo título, descripción, og:title y og:description, y un favicon SVG dentro del archivo. Para que salga una imagen en la tarjeta haría falta un archivo de imagen con su dirección completa.",
+      "narracion": "Accesibilidad básica significa que más gente pueda jugar. Quien no usa ratón, con el teclado. Quien juega más despacio, con el modo tranquilo. Quien se marea con las sacudidas, sin temblores. Y quien usa un lector de pantalla, con avisos de lo importante. No es un juego perfecto para todo el mundo, pero es mucho mejor. Fíjate en la respuesta. La IA avisa de que, sin una imagen, la tarjeta de WhatsApp saldrá solo con texto. Es honesto, y nos vale."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Comprueba la accesibilidad tú mismo",
+      "puntos": [
+        "Juega una partida entera sin tocar el ratón",
+        "Pulsa Tab: siempre ves dónde está el foco",
+        "Prueba el modo tranquilo de principio a fin",
+        "Que nada se entienda solo por el color",
+        "Botones grandes en el móvil, fáciles de tocar"
+      ],
+      "narracion": "No te fíes de que la IA diga que lo ha hecho. Compruébalo. Juega una partida entera sin tocar el ratón: empezar, jugar, pausar y volver a jugar. Pulsa la tecla Tab varias veces y mira que siempre se ve dónde está el foco. Juega en modo tranquilo hasta el final. Mira la pantalla en blanco y negro, o pídeselo a alguien, para ver que nada depende solo del color. Y en el móvil, que los botones se toquen sin fallar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Publicarlo con Netlify Drop",
+      "pasos": [
+        "Una carpeta lluvia-de-fruta con tu index.html",
+        "Busca Netlify Drop y arrastra la carpeta entera",
+        "Entra con tu cuenta gratis para quedártelo",
+        "Cámbiale el nombre en la configuración",
+        "Para actualizar, arrastra otra vez en Deploys"
+      ],
+      "narracion": "Publicar es igual que con la web de la peluquería. Pon tu archivo index.html en una carpeta con un nombre sin tildes ni espacios, por ejemplo lluvia guion de guion fruta. Busca Netlify Drop y arrastra la carpeta entera al recuadro. En unos segundos tienes una dirección. Entra con tu cuenta gratuita para que el proyecto se quede guardado. Cámbiale el nombre en la configuración. Y cuando mejores el juego, vuelve a arrastrar la carpeta en la sección de despliegues."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Tu juego, en internet",
+      "fuente": "demo:juego/v4",
+      "url": "lluvia-de-fruta.netlify.app",
+      "acciones": [
+        {
+          "eval": "__demo(23)"
+        }
+      ],
+      "narracion": "Y aquí está, en internet, con una dirección que puedes mandar a cualquiera. Ábrela en tu móvil y juega una partida entera. Comprueba que el récord se guarda y que los botones responden bien. Mándate el enlace por WhatsApp y mira cómo sale. Recuerda que el récord se guarda en el navegador de cada persona. Cada uno tiene el suyo, y no hay una tabla de récords compartida. Para eso haría falta un servidor, y lo veremos en la siguiente sección."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Compártelo y escucha",
+      "puntos": [
+        "Mándalo a tres personas sin explicar nada",
+        "Pregunta: ¿qué hay que hacer?, ¿cuánto has durado?",
+        "Y: ¿qué cambiarías?",
+        "Cambia una sola cosa cada vez y vuelve a publicar"
+      ],
+      "narracion": "Ahora, lo mejor. Manda el enlace a tres personas sin explicar nada, porque el juego tiene que explicarse solo. Pregúntales tres cosas. Qué había que hacer. Cuántos puntos hicieron. Y qué cambiarían. Si todos dicen que es demasiado difícil al principio, ya sabes qué números tocar. Elige una sola mejora, pídesela a la IA, pruébala y vuelve a publicar. Así se hacen los juegos de verdad: jugando, escuchando y ajustando."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Prueba de los 5 segundos con dos personas",
+        "Inicio claro, pausa y pausa automática",
+        "Teclado, foco visible, modo tranquilo y avisos",
+        "Publícalo con Netlify Drop y mándalo a tres personas"
+      ],
+      "narracion": "Repasamos. Un juego pulido se entiende en 5 segundos, se puede pausar y se para solo si te vas. Se juega con teclado, con el dedo y a un ritmo tranquilo, y no depende solo del color. Tu tarea de hoy es pasar la prueba de los 5 segundos con dos personas, añadir pausa y accesibilidad básica, publicarlo con Netlify Drop y mandarlo a tres personas. Con esto terminas tu cuarto proyecto. En la siguiente sección vemos qué hacer cuando un archivo se te queda pequeño."
+    }
+  ]
+}

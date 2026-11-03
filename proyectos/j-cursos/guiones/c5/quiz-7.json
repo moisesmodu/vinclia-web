@@ -1,0 +1,59 @@
+{
+  "seccion": 7,
+  "titulo": "Cuestionario: tu juego, de la idea al enlace",
+  "preguntas": [
+    {
+      "pregunta": "Vas a pedirle a la IA tu primer juego. ¿Qué instrucción sigue mejor el método del curso?",
+      "respuestas": [
+        "«Hazme un juego completo de atrapar fruta, con niveles, récord, sonido y versión para móvil»",
+        "«Paso 1, solo esto: la cesta se mueve con las flechas y cae fruta. Todavía sin puntos ni choques»",
+        "«Hazme un juego divertido, el que tú quieras»",
+        "«Cópiame un juego famoso con sus personajes»"
+      ],
+      "correcta": 1,
+      "explicacion": "Pasos pequeños: una versión cada vez, probada antes de pedir la siguiente. Si algo falla, sabes dónde buscar. Y nunca copies personajes ni músicas de otros juegos: tienen dueño."
+    },
+    {
+      "pregunta": "En un juego hecho con canvas, ¿qué es el bucle?",
+      "respuestas": [
+        "La parte que guarda el récord en el navegador",
+        "El botón que vuelve a empezar la partida",
+        "Lo que actualiza el estado y lo vuelve a dibujar todo unas 60 veces por segundo"
+      ],
+      "correcta": 2,
+      "explicacion": "El bucle es el corazón del juego: mueve la cesta y lo que cae, comprueba los choques y vuelve a dibujar la escena, una y otra vez, como un cuaderno de dibujos animados."
+    },
+    {
+      "pregunta": "Tus amigos dicen que en el nivel 8 todo cae tan rápido que es imposible. ¿Qué le pides a la IA?",
+      "respuestas": [
+        "Que cambie los números de la dificultad y les ponga un tope más bajo, sin tocar nada más",
+        "Que rehaga el juego desde cero",
+        "Que quite los niveles",
+        "Nada: si es difícil, es mejor"
+      ],
+      "correcta": 0,
+      "explicacion": "La dificultad depende de unos pocos números: velocidad, tiempo entre objetos y proporción de piedras, cada uno con su tope. Ajustarlos es un cambio pequeño y fácil de probar."
+    },
+    {
+      "pregunta": "¿En qué consiste la prueba de los 5 segundos?",
+      "respuestas": [
+        "En comprobar que el juego carga en menos de 5 segundos",
+        "En enseñar la pantalla de inicio 5 segundos a alguien y preguntarle qué hay que hacer",
+        "En jugar 5 segundos para ver si hay errores en la consola"
+      ],
+      "correcta": 1,
+      "explicacion": "Si la persona no sabe qué hacer tras 5 segundos, sobra texto o faltan dibujos. Recorta, usa imágenes con las reglas y repite la prueba con otra persona."
+    },
+    {
+      "pregunta": "Publicas el juego con Netlify Drop y se lo mandas a tus amigos. ¿Qué pasa con el récord guardado en localStorage?",
+      "respuestas": [
+        "Todos ven una tabla con los récords de todos",
+        "Se borra cada vez que alguien abre el enlace",
+        "Netlify lo guarda en su servidor",
+        "Cada persona tiene su propio récord en su navegador"
+      ],
+      "correcta": 3,
+      "explicacion": "localStorage guarda los datos en el navegador de cada persona. Para una tabla de récords compartida haría falta un servidor con base de datos, que es lo que veremos en la siguiente sección."
+    }
+  ]
+}

@@ -3,7 +3,10 @@
   "titulo": "Cálculos, IVA y casos raros",
   "descripcion": "Añades a la calculadora el IVA, el descuento, el redondeo a céntimos y los avisos de datos erróneos, y aprendes a comprobar las cuentas de la IA con casos hechos a mano, incluido el famoso 0,1 + 0,2.",
   "vistaPrevia": false,
-  "recursos": ["plantilla:casos-de-prueba", "demo:presupuestos"],
+  "recursos": [
+    "plantilla:casos-de-prueba",
+    "demo:presupuestos"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -25,7 +28,7 @@
     {
       "tipo": "frase",
       "texto": "El 10 por ciento solo vale para algunas reformas de vivienda que cumplen requisitos. Tu gestoría te dirá cuál aplica.",
-      "narracion": "Un apunte sobre el IVA, porque aquí la IA no decide. El tipo general es el 21 por ciento. Algunas obras de reforma en viviendas particulares pueden llevar el 10, pero solo si cumplen unos requisitos, por ejemplo sobre quién encarga la obra y cuánto pesan los materiales en el precio. No te lo vamos a resumir aquí, ni se lo preguntes a la IA como si fuera tu asesor. Tu gestoría te dirá cuál aplica en cada caso. La app solo te deja elegir."
+      "narracion": "Un apunte sobre el IVA, porque aquí la IA no decide. El tipo general es el 21 por ciento. Algunas obras de reforma en viviendas particulares pueden llevar el 10. Pero solo si cumplen unos requisitos, por ejemplo sobre quién encarga la obra y cuánto pesan los materiales. No te lo vamos a resumir aquí, ni se lo preguntes a la IA como si fuera tu asesor. Tu gestoría te dirá cuál aplica en cada caso. La app solo te deja elegir."
     },
     {
       "tipo": "chat",
@@ -58,13 +61,37 @@
     {
       "tipo": "tabla",
       "titulo": "Casos hechos a mano",
-      "columnas": ["Caso", "A mano", "Debe salir"],
+      "columnas": [
+        "Caso",
+        "A mano",
+        "Debe salir"
+      ],
       "filas": [
-        ["0,10 € + 0,20 €", "0,30", "0,30 €"],
-        ["12,5 m² a 19,99 €", "249,875", "249,88 €"],
-        ["IVA del 21 % de 21,50 €", "4,515", "4,52 €"],
-        ["IVA del 10 % de 1,45 €", "0,145", "0,15 €"],
-        ["99,95 € con 10 % menos e IVA 21 %", "89,95 + 18,8895", "108,84 €"]
+        [
+          "0,10 € + 0,20 €",
+          "0,30",
+          "0,30 €"
+        ],
+        [
+          "12,5 m² a 19,99 €",
+          "249,875",
+          "249,88 €"
+        ],
+        [
+          "IVA del 21 % de 21,50 €",
+          "4,515",
+          "4,52 €"
+        ],
+        [
+          "IVA del 10 % de 1,45 €",
+          "0,145",
+          "0,15 €"
+        ],
+        [
+          "99,95 € con 10 % menos e IVA 21 %",
+          "89,95 + 18,8895",
+          "108,84 €"
+        ]
       ],
       "narracion": "Ahora, el método. Antes de fiarte, haz unos cuantos casos a mano, con papel o con la calculadora. Elige casos que pongan a prueba los redondeos. 12 metros y medio a 19 con 99 da 249 con 875, que se redondea a 249 con 88. El IVA de 21 con 50 da 4 con 515: debe salir 4 con 52. Y un caso completo: 99 con 95, menos un 10 por ciento, más el 21 de IVA, da 108 con 84. Estos números los has calculado tú. Son la referencia."
     },
@@ -80,9 +107,21 @@
       "titulo": "La versión 2, con errores y pruebas",
       "fuente": "demo:presupuestos/v2",
       "acciones": [
-        { "fill": [".linea:nth-child(1) .cantidad", "-3"] },
-        { "fill": [".linea:nth-child(2) .precio", ""] },
-        { "click": "#btn-pruebas" }
+        {
+          "fill": [
+            ".linea:nth-child(1) .cantidad",
+            "-3"
+          ]
+        },
+        {
+          "fill": [
+            ".linea:nth-child(2) .precio",
+            ""
+          ]
+        },
+        {
+          "click": "#btn-pruebas"
+        }
       ],
       "url": "presupuestos/index.html",
       "narracion": "Aquí está la versión 2. Hemos escrito menos 3 en la cantidad del alicatado y hemos borrado el precio del plato de ducha. Los dos campos se ponen en rojo, con un aviso debajo, y esas líneas dejan de contar. Arriba a la derecha, el resumen con subtotal, base, IVA y total. Y abajo, al pulsar comprobar cálculos, la tabla de pruebas: 9 de 9 correctas. Cada vez que cambies algo en la app, vuelve a pulsar este enlace."

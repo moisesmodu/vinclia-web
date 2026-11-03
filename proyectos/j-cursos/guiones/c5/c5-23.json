@@ -1,0 +1,150 @@
+{
+  "id": "c5-23",
+  "titulo": "Formularios y datos de clientes: lo que dice la ley",
+  "descripcion": "Entiendes lo básico del RGPD para tus herramientas y formularios (informar, pedir consentimiento y guardar los datos en un sitio seguro), por qué localStorage no sirve para recoger datos de clientes y por qué un presupuesto no es una factura.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:aviso-privacidad-formulario",
+    "plantilla:casos-de-prueba",
+    "demo:presupuestos"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Formularios y datos de clientes",
+      "subtitulo": "Lo que dice la ley, sin tecnicismos",
+      "narracion": "Tu calculadora ya guarda nombres, teléfonos y direcciones de clientes. Y quizá estés pensando en ir más allá: poner un formulario en tu web para que te pidan presupuesto. Antes de hacerlo, esta clase. Vamos a ver lo básico del Reglamento General de Protección de Datos, el RGPD, aplicado a lo que estás construyendo. No es asesoría legal, es lo mínimo para no meter la pata. Y terminaremos con una diferencia importante: un presupuesto no es una factura."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dos casos muy distintos",
+      "columnas": [
+        "",
+        "Herramienta interna",
+        "Formulario en tu web"
+      ],
+      "filas": [
+        [
+          "Quién escribe los datos",
+          "Tú",
+          "El cliente"
+        ],
+        [
+          "Dónde acaban",
+          "En tu ordenador",
+          "Donde los envíe el formulario"
+        ],
+        [
+          "Aviso de privacidad",
+          "Informas al cliente en persona",
+          "Junto al formulario"
+        ],
+        [
+          "Casilla de permiso",
+          "No hace falta",
+          "Si vas a enviar ofertas"
+        ]
+      ],
+      "narracion": "Distingue bien dos casos. El primero es tu herramienta interna, la calculadora de presupuestos. Ahí tú escribes los datos que el cliente te ha dado por teléfono o en persona, y se quedan en tu ordenador. Siguen siendo datos personales: debes cuidarlos y explicarle al cliente qué haces con ellos. Pero no hay ningún formulario público. El segundo caso es un formulario en tu web, donde el cliente escribe sus datos y te los envía. Ese caso pide más cosas: un aviso, a veces una casilla y un sitio seguro."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El RGPD en cuatro ideas",
+      "puntos": [
+        "Informa: quién eres, para qué y cuánto tiempo",
+        "Pide solo los datos que necesitas",
+        "Publicidad: casilla aparte y sin marcar",
+        "Guarda los datos en un sitio seguro"
+      ],
+      "narracion": "El RGPD, en cuatro ideas. Primera: informa. Junto al formulario, la persona tiene que poder leer quién eres, para qué usarás sus datos, cuánto tiempo los guardarás y cómo puede pedir que los borres. Segunda: pide solo lo que necesitas. Para un presupuesto, nombre, contacto y la obra; no la fecha de nacimiento. Tercera: si además quieres enviar ofertas, pide permiso con una casilla aparte, sin marcar. Y cuarta: guarda los datos en un sitio seguro, al que solo accedas tú."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Un formulario con aviso y casilla",
+      "fuente": "demo:apuntate/v1",
+      "narracion": "Este es el formulario de una página de ejemplo que verás en la sección De idea a producto. Fíjate en tres cosas. Pide solo el correo y una pregunta, nada más. Encima del botón hay una casilla sin marcar, con un enlace a la política de privacidad. Y la frase de arriba explica para qué usarán el correo. Ojo con el aviso amarillo: esta página de ejemplo no envía los datos a ningún sitio. En una web real, ahí empieza la pregunta importante: dónde acaban esos datos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué localStorage no sirve aquí",
+      "puntos": [
+        "Guarda en el navegador de quien escribe, no en el tuyo",
+        "Tú nunca recibirías los datos del cliente",
+        "Se borra si el cliente limpia su navegador",
+        "Perfecto para apps personales como la de hábitos"
+      ],
+      "narracion": "Una tentación muy común: pedirle a la IA un formulario de presupuesto que guarde los datos con localStorage, como hicimos en la calculadora. No sirve. localStorage guarda en el navegador de la persona que escribe. Si un cliente rellena tu formulario en su móvil, los datos se quedan en su móvil. Tú nunca los recibes. Y se borran si limpia el navegador. localStorage es perfecto para apps personales, como la de hábitos o tu calculadora. Para recoger datos de clientes, no."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Dónde guarda la calculadora",
+      "archivo": "presupuestos/v4/index.html",
+      "lenguaje": "js",
+      "codigo": "function leerGuardados() {\n  try { return JSON.parse(localStorage.getItem(CLAVE)) || []; }\n  catch (e) { return []; }\n}\nfunction escribirGuardados(lista) {\n  localStorage.setItem(CLAVE, JSON.stringify(lista));\n  pintarGuardados();\n}",
+      "narracion": "Míralo en el código de la versión 4. Leer guardados toma la lista de presupuestos de localStorage. Escribir guardados la vuelve a guardar ahí. No hay ningún envío a internet. Por eso la calculadora funciona sin conexión y por eso nadie más puede ver tus presupuestos. Es justo lo que queremos para una herramienta interna. Pero también significa que, si se estropea el ordenador o borras los datos del navegador, los pierdes. Tu copia de verdad son los PDF."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Solo en este navegador",
+      "nota": "Los presupuestos guardados solo existen en este navegador, en este ordenador",
+      "fuente": "demo:presupuestos/v4@movil",
+      "acciones": [
+        {
+          "fill": [
+            "#cli-nombre",
+            "Marta Lafuente"
+          ]
+        },
+        {
+          "click": "#guardar"
+        },
+        {
+          "click": "#ver-guardados",
+          "wait": 600
+        }
+      ],
+      "narracion": "Si abres la calculadora en el móvil, verás que no aparecen los presupuestos que guardaste en el ordenador. No es un fallo, es cómo funciona localStorage. Cada navegador tiene su propio cajón. Para una herramienta interna, sigue unas reglas sencillas. Usa un ordenador con contraseña y que no compartas. Borra los presupuestos que ya no necesites. Y no pegues datos reales de clientes en el chat de la IA cuando le pidas cambios. Para probar, usa nombres inventados."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si quieres que te pidan presupuesto en la web",
+      "pasos": [
+        "Lo más sencillo: un botón de WhatsApp, teléfono o correo",
+        "Si quieres formulario, usa un servicio de formularios",
+        "Lee dónde guarda los datos y quién accede",
+        "Añade el aviso de privacidad y revísalo con alguien que sepa",
+        "Si recoges datos sensibles o muchos, llama a un profesional"
+      ],
+      "narracion": "Si quieres que los clientes te pidan presupuesto desde tu web, empieza por lo más sencillo: un botón de WhatsApp, de llamada o de correo. No recoges nada en la web. Si de verdad quieres un formulario, usa un servicio de formularios, como el que incluye Netlify o Google Forms. Lee dónde guardan los datos y quién accede a ellos. Añade el aviso de privacidad. Y si vas a recoger datos sensibles, como de salud, o muchos datos, busca ayuda profesional."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un borrador del aviso, con la IA",
+      "usuario": "Escribe un aviso de privacidad breve para el formulario de presupuestos de mi web de reformas. Pido nombre, teléfono, correo y descripción de la obra, solo para enviar el presupuesto. Responsable: [mi nombre y NIF]. Los datos se guardan en [servicio de formularios]. Incluye cuánto tiempo los guardo y cómo pedir que los borren. Añade una casilla aparte, sin marcar, para recibir ofertas. Marca entre corchetes todo lo que deba revisar un profesional.",
+      "ia": "Aquí tienes un borrador con: responsable, finalidad, base legal, plazo de conservación [a revisar], dónde se guardan, tus derechos y cómo ejercerlos, y el derecho a reclamar ante la Agencia Española de Protección de Datos. Debajo, la casilla opcional para ofertas. Revisa los corchetes con un profesional.",
+      "narracion": "La IA te puede ayudar con un primer borrador. Dale los datos reales de tu caso: qué pides, para qué, quién eres y dónde se guardan. Y pídele que marque entre corchetes lo que debe revisar un profesional. El borrador es un punto de partida, no un texto legal cerrado. En los recursos tienes la plantilla de aviso de privacidad para formularios, marcada con revísalo con un profesional. La Agencia Española de Protección de Datos tiene además una herramienta gratuita, Facilita RGPD."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un presupuesto no es una factura",
+      "puntos": [
+        "El presupuesto es una oferta: puedes hacerlo con tu app",
+        "La factura se emite con un programa de facturación",
+        "Desde 2027, esos programas deben cumplir Verifactu",
+        "No conviertas tu calculadora en un facturador"
+      ],
+      "narracion": "Para terminar, una diferencia que importa. Un presupuesto es una oferta: le dices al cliente cuánto costará. Lo puedes hacer con tu calculadora. La factura es otra cosa. Tiene requisitos legales y, desde 2027, los programas de facturación tendrán que cumplir Verifactu, el sistema de Hacienda para registrar las facturas. Por eso no le pidas a la IA que convierta tu calculadora en un facturador. Usa un programa de facturación adaptado y consulta con tu gestoría qué te conviene."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Informa, pide lo justo y guarda en un sitio seguro",
+        "localStorage: para ti, nunca para recoger datos",
+        "Presupuesto sí; factura, con programa y gestoría",
+        "Tarea: adapta la plantilla de aviso y revísala"
+      ],
+      "narracion": "Repasamos la sección. Has construido una herramienta real para tu trabajo: cuentas comprobadas, IVA, PDF y presupuestos guardados. Y hoy, sus límites legales. Informa, pide solo lo que necesitas y guarda los datos en un sitio seguro. localStorage es para ti, nunca para recoger datos de clientes. Y el presupuesto, sí; la factura, con un programa adaptado y tu gestoría. Tu tarea: si vas a poner un formulario, adapta la plantilla de aviso y revísala con un profesional. Después, al cuestionario."
+    }
+  ]
+}

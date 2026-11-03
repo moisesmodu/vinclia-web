@@ -97,7 +97,7 @@
   }
   .btn-sec:hover { background: var(--acento-suave); }
   .btn-sec svg { width: 18px; height: 18px; }
-  .mensaje { margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--acento-osc); min-height: 1em; }
+  .tarjeta .mensaje { margin: 12px 0 0; font-size: 14px; font-weight: 600; color: var(--acento-osc); min-height: 1em; }
   .mensaje.error { color: var(--rojo); }
   .estado { display: flex; gap: 12px; align-items: flex-start; background: var(--fondo); border-radius: 12px; padding: 12px 14px; font-size: 14.5px; }
   #instalar { margin-top: 14px; }
@@ -125,7 +125,7 @@
     background: var(--texto); color: #fff; border-radius: 12px; padding: 12px 14px 12px 18px;
     display: flex; gap: 16px; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.2);
     transition: transform .25s, opacity .25s; max-width: calc(100% - 32px);
-    opacity: 0; visibility: hidden; white-space: nowrap;
+    opacity: 0; visibility: hidden; width: max-content;
   }
   .aviso.visible { transform: translate(-50%, 0); opacity: 1; visibility: visible; }
   .aviso span { overflow: hidden; text-overflow: ellipsis; }

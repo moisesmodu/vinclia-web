@@ -1,0 +1,61 @@
+{
+  "seccion": 6,
+  "titulo": "Cuestionario: una herramienta para tu trabajo",
+  "preguntas": [
+    {
+      "pregunta": "La IA te entrega la versión con IVA y te asegura que ha revisado las cuentas. ¿Qué haces antes de usarla con clientes?",
+      "respuestas": [
+        "Nada: si la IA dice que lo ha revisado, está bien",
+        "Le pido que lo revise otra vez, por si acaso",
+        "La comparo con casos que he calculado yo a mano",
+        "Cambio el diseño para que se vea más profesional"
+      ],
+      "correcta": 2,
+      "explicacion": "La IA escribe código creíble, pero no suele ejecutarlo, y un fallo de un céntimo no da ningún error. Su «lo he comprobado» no es una prueba. Los casos hechos a mano, con decimales y medios céntimos, son tu referencia."
+    },
+    {
+      "pregunta": "¿Por qué pedimos a la IA que haga todas las cuentas de dinero en céntimos, con números enteros?",
+      "respuestas": [
+        "Porque los ordenadores guardan los decimales de forma aproximada y los redondeos pueden fallar",
+        "Porque Hacienda obliga a escribir los precios en céntimos",
+        "Porque así la app ocupa menos espacio",
+        "Porque el navegador no sabe mostrar decimales"
+      ],
+      "correcta": 0,
+      "explicacion": "En el ordenador, 0,1 + 0,2 da 0,30000000000000004. Por eso el IVA de 21,50 € al 21 % puede salir 4,51 € en vez de 4,52 €. Con céntimos enteros y redondeo en cada paso, las cuentas cuadran con las tuyas."
+    },
+    {
+      "pregunta": "En tu calculadora puedes elegir IVA del 21 o del 10 por ciento. ¿Quién decide cuál aplicar en cada presupuesto?",
+      "respuestas": [
+        "La IA, según lo que pongas en el concepto",
+        "Tu gestoría: el 10 % solo vale para algunas reformas de vivienda con requisitos",
+        "El cliente, según lo que prefiera pagar",
+        "Siempre el 10 %, porque las reformas lo llevan"
+      ],
+      "correcta": 1,
+      "explicacion": "El tipo general es el 21 %. Algunas reformas de vivienda pueden llevar el 10 % si cumplen requisitos. No lo decide la IA ni la app: tu gestoría te dirá cuál aplica en cada caso."
+    },
+    {
+      "pregunta": "Quieres un formulario en tu web para que los clientes te pidan presupuesto. ¿Por qué no sirve guardar sus datos con localStorage?",
+      "respuestas": [
+        "Porque localStorage es de pago a partir de cierto tamaño",
+        "Porque solo funciona en ordenadores, no en móviles",
+        "Sí sirve, si añades un aviso de privacidad",
+        "Porque los datos se quedan en el navegador del cliente y tú nunca los recibes"
+      ],
+      "correcta": 3,
+      "explicacion": "localStorage guarda en el navegador de quien escribe. Es perfecto para herramientas personales, como tu calculadora, pero para recoger datos de clientes necesitas un sitio seguro que te los haga llegar, con aviso de privacidad."
+    },
+    {
+      "pregunta": "Tu calculadora ya saca presupuestos en PDF. ¿Es buena idea pedir a la IA que la convierta en tu programa de facturas?",
+      "respuestas": [
+        "Sí, basta con cambiar «Presupuesto» por «Factura»",
+        "No: las facturas se emiten con un programa adaptado, que desde 2027 debe cumplir Verifactu",
+        "Sí, si numeras las facturas a mano",
+        "Solo si guardas las facturas en localStorage"
+      ],
+      "correcta": 1,
+      "explicacion": "Un presupuesto es una oferta. La factura tiene requisitos legales y, desde 2027, los programas de facturación deben cumplir Verifactu. Usa un programa adaptado y consulta con tu gestoría."
+    }
+  ]
+}

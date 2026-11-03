@@ -3,7 +3,10 @@
   "titulo": "Un presupuesto en PDF listo para enviar",
   "descripcion": "Conviertes la calculadora en un presupuesto profesional con datos del cliente, número, fecha y validez de 30 días, lo guardas en PDF con la impresión del navegador y guardas los presupuestos anteriores para duplicarlos.",
   "vistaPrevia": false,
-  "recursos": ["plantilla:presupuesto-contenido", "demo:presupuestos"],
+  "recursos": [
+    "plantilla:presupuesto-contenido",
+    "demo:presupuestos"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -35,9 +38,24 @@
       "titulo": "La versión 3: la hoja se monta sola",
       "fuente": "demo:presupuestos/v3",
       "acciones": [
-        { "fill": ["#cli-nombre", "Marta Lafuente"] },
-        { "fill": ["#cli-contacto", "600 000 000"] },
-        { "fill": ["#cli-dir", "Calle Mayor 8, 2.º B, Zaragoza"] }
+        {
+          "fill": [
+            "#cli-nombre",
+            "Marta Lafuente"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-contacto",
+            "600 000 000"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-dir",
+            "Calle Mayor 8, 2.º B, Zaragoza"
+          ]
+        }
       ],
       "url": "presupuestos/index.html",
       "narracion": "Así queda. A la izquierda, el formulario, ahora con los datos del cliente arriba. A la derecha, la hoja del presupuesto tal y como saldrá. Escribimos el nombre de una clienta inventada, un teléfono y la dirección de la obra, y aparecen al instante en la hoja. Fíjate arriba a la derecha: el número, la fecha de hoy y la fecha de validez, 30 días después. Abajo, dos frases que importan: válido 30 días, y que esto es un presupuesto, no una factura."
@@ -55,10 +73,27 @@
       "titulo": "Lo que sale en el PDF",
       "fuente": "demo:presupuestos/v3",
       "acciones": [
-        { "fill": ["#cli-nombre", "Marta Lafuente"] },
-        { "fill": ["#cli-contacto", "600 000 000"] },
-        { "fill": ["#cli-dir", "Calle Mayor 8, 2.º B, Zaragoza"] },
-        { "eval": "for (const s of document.styleSheets) for (const r of s.cssRules) if (r.media && r.media.mediaText === 'print') r.media.mediaText = 'all'; document.body.style.cssText = 'background:#fff;max-width:780px;margin:24px auto'" }
+        {
+          "fill": [
+            "#cli-nombre",
+            "Marta Lafuente"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-contacto",
+            "600 000 000"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-dir",
+            "Calle Mayor 8, 2.º B, Zaragoza"
+          ]
+        },
+        {
+          "eval": "for (const s of document.styleSheets) for (const r of s.cssRules) if (r.media && r.media.mediaText === 'print') r.media.mediaText = 'all'; document.body.style.cssText = 'background:#fff;max-width:780px;margin:24px auto'"
+        }
       ],
       "url": "Vista de impresión",
       "narracion": "Y esto es lo que sale al pulsar el botón. Solo la hoja, limpia, sin botones ni formulario. Arriba, tus datos y el número. Después, la clienta, las partidas, los totales y el recuadro de conformidad. Revisa siempre el PDF antes de enviarlo, igual que revisarías un correo importante. Mira que no se corte ninguna línea, que los importes cuadren con tus casos de prueba y que la fecha de validez sea la correcta."
@@ -86,7 +121,7 @@
       "titulo": "Duplicar un presupuesto",
       "archivo": "presupuestos/v4/index.html",
       "lenguaje": "js",
-      "codigo": "function duplicar(numero) {\n  const orig = leerGuardados().find(p => p.numero === numero);\n  if (!orig) return;\n  const copia = structuredClone(orig);\n  copia.numero = siguienteNumero();\n  copia.fecha = hoyISO();\n  copia.cliente = { nombre: '', nif: '', contacto: '', dir: '' };\n  cargar(copia);",
+      "codigo": "function duplicar(numero) {\n  const orig = leerGuardados().find(p => p.numero === numero);\n  if (!orig) return;\n  const copia = structuredClone(orig);\n  copia.numero = siguienteNumero();\n  copia.fecha = hoyISO();\n  copia.cliente = sinCliente();\n  cargar(copia);",
       "narracion": "Este es el principio de la función de duplicar. Busca el presupuesto guardado con ese número y hace una copia completa. A la copia le pone el siguiente número libre y la fecha de hoy. Y deja vacíos todos los datos del cliente. Después la carga en el formulario para que la edites. Si lees solo los nombres, número, fecha y cliente, ya entiendes lo que hace. Compruébalo en la app: duplica uno y mira que el cliente sale en blanco."
     },
     {
@@ -94,14 +129,42 @@
       "titulo": "La versión 4: guardar y duplicar",
       "fuente": "demo:presupuestos/v4",
       "acciones": [
-        { "fill": ["#cli-nombre", "Marta Lafuente"] },
-        { "click": "#guardar" },
-        { "click": "#ver-guardados", "wait": 400 },
-        { "click": ".guardado [data-duplicar]", "wait": 400 },
-        { "fill": ["#cli-nombre", "Pedro Ibáñez"] },
-        { "fill": [".linea:nth-child(1) .cantidad", "8"] },
-        { "click": "#guardar" },
-        { "click": "#ver-guardados", "wait": 600 }
+        {
+          "fill": [
+            "#cli-nombre",
+            "Marta Lafuente"
+          ]
+        },
+        {
+          "click": "#guardar"
+        },
+        {
+          "click": "#ver-guardados",
+          "wait": 400
+        },
+        {
+          "click": ".guardado [data-duplicar]",
+          "wait": 400
+        },
+        {
+          "fill": [
+            "#cli-nombre",
+            "Pedro Ibáñez"
+          ]
+        },
+        {
+          "fill": [
+            ".linea:nth-child(1) .cantidad",
+            "8"
+          ]
+        },
+        {
+          "click": "#guardar"
+        },
+        {
+          "click": "#ver-guardados",
+          "wait": 600
+        }
       ],
       "url": "presupuestos/index.html",
       "narracion": "Vamos a verlo. Guardamos el presupuesto de Marta. Abrimos el panel de guardados y pulsamos duplicar. Sale el número siguiente, con el cliente vacío. Escribimos otro cliente inventado, cambiamos los metros del alicatado a 8 y guardamos. Ahora el panel muestra los dos presupuestos, cada uno con su total. Fíjate en la frase de arriba: se guardan solo en este navegador, en este ordenador. Es importante, y por eso dedicamos la próxima clase a los datos de clientes."

@@ -1,0 +1,59 @@
+{
+  "seccion": 5,
+  "titulo": "Cuestionario: la app de hábitos",
+  "preguntas": [
+    {
+      "pregunta": "En la app de hábitos, ¿por qué guardamos la lista de días hechos y no la racha de cada hábito?",
+      "respuestas": [
+        "Porque la racha ocupa demasiado espacio",
+        "Porque la racha se calcula a partir de los días y así nada se contradice",
+        "Porque localStorage no puede guardar números",
+        "Porque la IA no sabe calcular rachas"
+      ],
+      "correcta": 1,
+      "explicacion": "Guarda lo que pasó y calcula el resto. Si guardaras la racha aparte, tarde o temprano no cuadraría con los días marcados. Y si cambias la forma de contarla, tu historial sigue intacto."
+    },
+    {
+      "pregunta": "Marcas tus hábitos en el móvil y luego abres la misma app en el ordenador. ¿Qué ves?",
+      "respuestas": [
+        "Los mismos hábitos, porque localStorage se sincroniza solo",
+        "Los hábitos del móvil, pero sin los días marcados",
+        "Los datos del ordenador: localStorage es de cada navegador y dispositivo"
+      ],
+      "correcta": 2,
+      "explicacion": "localStorage guarda los datos en ese navegador y en ese dispositivo. No se comparten. Para pasar tus datos de un sitio a otro, usa la copia de seguridad en JSON."
+    },
+    {
+      "pregunta": "Son las diez de la mañana y aún no has marcado «Leer», que ayer llevaba 5 días seguidos. Con la regla del curso, ¿qué racha muestra la app?",
+      "respuestas": [
+        "5 días: si hoy no está hecho, cuenta hasta ayer",
+        "0 días: hoy no está hecho",
+        "6 días: cuenta hoy por adelantado",
+        "Depende de la hora del día"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla que dimos a la IA: si hoy aún no está hecho, la racha cuenta hasta ayer. Así la app no te castiga cada mañana. Las reglas exactas hay que escribirlas en la instrucción."
+    },
+    {
+      "pregunta": "Abres la versión 4 con doble clic en tu ordenador. ¿Qué pasa con el service worker?",
+      "respuestas": [
+        "Se registra y la app ya se puede instalar",
+        "Da un error y la app deja de funcionar",
+        "No se registra, la app funciona igual y la tarjeta explica que hay que publicarla"
+      ],
+      "correcta": 2,
+      "explicacion": "Los navegadores no permiten service workers en archivos abiertos con doble clic. Por eso pedimos que, como archivo, no se cargue nada ni dé errores. Publicada con https, sí se puede instalar."
+    },
+    {
+      "pregunta": "Publicas una versión nueva de la app en Netlify y te da una dirección distinta. Al abrirla en el móvil, tus hábitos no están. ¿Por qué?",
+      "respuestas": [
+        "Porque Netlify borra los datos al publicar",
+        "Porque los datos de localStorage van unidos a la dirección de la web",
+        "Porque el service worker borra la caché",
+        "Porque hay que volver a instalar los iconos"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada dirección tiene su propio cajón de datos. Para actualizar, sube la carpeta al mismo sitio de Netlify. Y descarga una copia antes de cualquier cambio grande."
+    }
+  ]
+}

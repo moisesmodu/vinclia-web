@@ -53,11 +53,36 @@
       "narracion": "Piensa en cómo trabaja hoy Jordi, o muchos autónomos que conoces. Abre un documento de texto, copia el último presupuesto y cambia las líneas a mano. Las cuentas las hace con la calculadora del móvil. Si se equivoca en una suma o en el IVA, lo descubre el cliente, que es lo peor que puede pasar. Y cada presupuesto sale distinto. Una herramienta propia no tiene que ser perfecta. Le basta con ahorrar tiempo y evitar errores."
     },
     {
-      "tipo": "comparar",
+      "tipo": "tabla",
       "titulo": "¿Y por qué no una hoja de cálculo?",
-      "mal": "Hoja de cálculo: sirve, pero una fórmula borrada sin querer rompe el total y nadie avisa",
-      "bien": "Herramienta propia: solo los campos que usas, avisos si algo falla y el PDF siempre igual",
-      "narracion": "Es una pregunta justa. Una hoja de cálculo también sirve para presupuestos, y mucha gente la usa. Si ya te funciona, no la cambies por cambiar. Pero tiene un punto débil: basta con borrar una fórmula sin querer para que el total salga mal, y nadie te avisa. Una herramienta propia solo tiene los campos que usas, te avisa cuando un dato no tiene sentido y saca el presupuesto siempre con el mismo aspecto. Además, es un proyecto perfecto para aprender."
+      "columnas": [
+        "",
+        "Hoja de cálculo",
+        "Herramienta propia"
+      ],
+      "filas": [
+        [
+          "Para empezar",
+          "La tienes ya",
+          "Una tarde con la IA"
+        ],
+        [
+          "Si borras una fórmula",
+          "Total mal y sin aviso",
+          "No hay fórmulas a la vista"
+        ],
+        [
+          "Un dato sin sentido",
+          "Lo acepta",
+          "Lo marca en rojo"
+        ],
+        [
+          "El presupuesto",
+          "Cada vez distinto",
+          "Siempre igual, en PDF"
+        ]
+      ],
+      "narracion": "Es una pregunta justa. Una hoja de cálculo también sirve para presupuestos, ya la tienes y mucha gente la usa. Si te funciona, no la cambies por cambiar. Pero tiene un punto débil: basta con borrar una fórmula sin querer para que el total salga mal, y nadie te avisa. Una herramienta propia solo tiene los campos que usas, marca en rojo los datos que no tienen sentido y saca el presupuesto siempre con el mismo aspecto. Además, es un proyecto perfecto para aprender."
     },
     {
       "tipo": "tabla",

@@ -501,6 +501,8 @@ function guardar() {
   avisar(`Presupuesto ${p.numero} guardado`);
 }
 
+const sinCliente = () => ({ nombre: '', nif: '', contacto: '', dir: '' });
+
 // Duplicar: mismas líneas; cliente, número y fecha nuevos
 function duplicar(numero) {
   const orig = leerGuardados().find(p => p.numero === numero);
@@ -508,7 +510,7 @@ function duplicar(numero) {
   const copia = structuredClone(orig);
   copia.numero = siguienteNumero();
   copia.fecha = hoyISO();
-  copia.cliente = { nombre: '', nif: '', contacto: '', dir: '' };
+  copia.cliente = sinCliente();
   cargar(copia);
   $('#panel').classList.remove('abierto');
   avisar(`Copia lista: presupuesto ${copia.numero}`);
@@ -552,7 +554,7 @@ function avisar(texto) {
 function empezarNuevo() {
   cargar({
     numero: siguienteNumero(), fecha: hoyISO(),
-    cliente: { nombre: '', nif: '', contacto: '', dir: '' },
+    cliente: sinCliente(),
     lineas: [{ concepto: '', cantidad: '', precio: '' }], iva: '21', descuento: '0'
   });
 }
@@ -597,7 +599,7 @@ $('#cerrar-panel').onclick = () => $('#panel').classList.remove('abierto');
 pintarGuardados();
 cargar({
   numero: siguienteNumero(), fecha: hoyISO(),
-  cliente: { nombre: '', nif: '', contacto: '', dir: '' },
+  cliente: sinCliente(),
   lineas: [
     { concepto: 'Alicatado de baño (m²)', cantidad: '12,5', precio: '32' },
     { concepto: 'Plato de ducha de resina', cantidad: '1', precio: '289,90' },
