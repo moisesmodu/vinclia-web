@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista de la compra</title>
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-oscuro: #0A7C6F;
+    --fondo: #EEF5F3;
+    --texto: #1D2B36;
+    --suave: #6B7A86;
+    --linea: #E2E9E7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  .tarjeta {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(20, 60, 55, 0.10);
+    padding: 32px;
+    align-self: flex-start;
+  }
+  h1 { margin: 0; font-size: 28px; }
+  .sub { margin: 6px 0 24px; color: var(--suave); }
+  form { display: flex; gap: 10px; }
+  input {
+    flex: 1;
+    font: inherit;
+    padding: 12px 16px;
+    border: 2px solid var(--linea);
+    border-radius: 12px;
+    outline: none;
+  }
+  input:focus { border-color: var(--acento); }
+  button { font: inherit; cursor: pointer; border-radius: 12px; }
+  #anadir {
+    background: var(--acento);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+  }
+  #anadir:hover { background: var(--acento-oscuro); }
+  ul { list-style: none; margin: 24px 0 0; padding: 0; }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--linea);
+    font-size: 18px;
+  }
+  .borrar {
+    background: #fff;
+    border: 1px solid #F2C5C5;
+    color: #C0392B;
+    padding: 6px 14px;
+    font-size: 15px;
+  }
+  .borrar:hover { background: #FDF0F0; }
+  .vacia { color: var(--suave); text-align: center; padding: 24px 0; }
+  .pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--suave);
+  }
+  #vaciar {
+    background: none;
+    border: none;
+    color: var(--suave);
+    text-decoration: underline;
+    padding: 6px 0;
+  }
+  @media (max-width: 480px) {
+    body { padding: 20px 12px; }
+    .tarjeta { padding: 22px; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<main class="tarjeta">
+  <h1>Lista de la compra</h1>
+  <p class="sub">Lo último que añades sale arriba.</p>
+  <form id="formulario">
+    <input id="producto" placeholder="¿Qué te falta?" autocomplete="off">
+    <button id="anadir" type="submit">Añadir</button>
+  </form>
+  <ul id="lista"></ul>
+  <div class="pie">
+    <span id="contador"></span>
+    <button id="vaciar" type="button">Vaciar lista</button>
+  </div>
+</main>
+<script>
+const ul = document.getElementById('lista');
+const contador = document.getElementById('contador');
+const entrada = document.getElementById('producto');
+let lista = cargar();
+
+function cargar() {
+  try {
+    const datos = localStorage.getItem('lista-compra');
+    if (datos) return JSON.parse(datos);
+  } catch (e) {}
+  return ['Leche', 'Pan', 'Tomates'];
+}
+
+function guardar() {
+  try {
+    localStorage.setItem('lista-compra', JSON.stringify(lista));
+  } catch (e) {}
+}
+
+function pintar() {
+  ul.innerHTML = '';
+  const alReves = [...lista].reverse(); // lo último, arriba
+  alReves.forEach((producto, i) => {
+    const li = document.createElement('li');
+    const nombre = document.createElement('span');
+    nombre.textContent = producto;
+    const boton = document.createElement('button');
+    boton.className = 'borrar';
+    boton.textContent = 'Borrar';
+    boton.onclick = () => borrar(i);
+    li.append(nombre, boton);
+    ul.append(li);
+  });
+  if (lista.length === 0) {
+    ul.innerHTML = '<li class="vacia">La lista está vacía</li>';
+  }
+  const n = lista.length;
+  contador.textContent = n === 1 ? '1 producto' : n + ' productos';
+}
+
+function borrar(i) {
+  lista.splice(i, 1);
+  guardar();
+  pintar();
+}
+
+document.getElementById('formulario').onsubmit = (e) => {
+  e.preventDefault();
+  const texto = entrada.value.trim();
+  if (!texto) return;
+  lista.push(texto);
+  entrada.value = '';
+  guardar();
+  pintar();
+};
+
+document.getElementById('vaciar').onclick = () => {
+  lista = [];
+  guardarLista();
+  pintar();
+};
+
+pintar();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "seccion": 8,
+  "titulo": "Cuestionario: casos por sector",
+  "preguntas": [
+    {
+      "pregunta": "Un electricista quiere preparar un presupuesto con IA a partir de sus notas de voz. ¿Quién pone los precios?",
+      "respuestas": [
+        "La IA, porque conoce los precios de mercado",
+        "Él, con su tarifa y el coste real del material; la IA deja huecos y ordena las partidas",
+        "Nadie: el presupuesto va sin precios"
+      ],
+      "correcta": 1,
+      "explicacion": "La IA no conoce tus costes ni tu proveedor. Pídele que ordene, redacte y deje huecos como [PRECIO], y pon tú los importes. Revisa siempre cifras, nombres y plazos antes de enviar."
+    },
+    {
+      "pregunta": "Un bar quiere publicar su menú del día con IA. ¿Cómo se gestionan los alérgenos?",
+      "respuestas": [
+        "Se le pide a la IA que los deduzca de los nombres de los platos",
+        "Se omiten en el texto para que sea más corto",
+        "Se copian de una web de recetas parecida",
+        "Los marca el bar con sus recetas reales y la IA solo los coloca en el texto"
+      ],
+      "correcta": 3,
+      "explicacion": "La IA no sabe qué lleva tu plato y puede inventar los alérgenos con mucha seguridad. Los decides tú con tus recetas y fichas; la IA solo los coloca en el texto."
+    },
+    {
+      "pregunta": "Una tienda online pide a la IA la descripción de una taza y no sabe si es apta para microondas. ¿Qué instrucción evita un dato inventado?",
+      "respuestas": [
+        "«Si falta un dato que el cliente querrá saber, escribe [FALTA] y dime cuál»",
+        "«Escribe una descripción bonita y completa»",
+        "«Pon que es apta para todo, que vende más»"
+      ],
+      "correcta": 0,
+      "explicacion": "Con la marca [FALTA], la IA avisa en vez de inventar. Un dato falso en una ficha acaba en devoluciones y malas reseñas. Las fotos de producto, además, siempre reales."
+    },
+    {
+      "pregunta": "Una gestoría quiere enviar a sus clientes una circular sobre Verifactu. ¿Qué fechas son las correctas según el Real Decreto-ley 15/2025?",
+      "respuestas": [
+        "1 de enero de 2026 para todos",
+        "Todavía no hay ninguna fecha",
+        "1 de enero de 2027 para Sociedades y 1 de julio de 2027 para el resto, incluidos autónomos en IRPF"
+      ],
+      "correcta": 2,
+      "explicacion": "El Real Decreto-ley 15/2025 aplazó Verifactu: 1 de enero de 2027 para el Impuesto sobre Sociedades y 1 de julio de 2027 para el resto. En la instrucción, «usa solo estos datos» evita que la IA añada otros."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "c3-25",
+  "titulo": "RGPD práctico: avisos, consentimiento y encargados",
+  "descripcion": "Prepara con IA un borrador de aviso de privacidad en lenguaje claro, un mensaje para pedir permiso antes de enviar ofertas y la lista de herramientas que tratan datos de tus clientes.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:lista-encargados"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "RGPD práctico: avisos, consentimiento y encargados",
+      "subtitulo": "Borradores claros con IA, revisados por un profesional",
+      "narracion": "El RGPD suena a papeleo, pero en un negocio pequeño se resume en tres hábitos. Explicar a tus clientes qué haces con sus datos. Pedir permiso antes de mandarles publicidad. Y saber qué herramientas tratan esos datos por ti. En esta clase la IA te ayuda a preparar los borradores. Una advertencia clara desde el principio. La IA no es tu asesora legal. Los textos que salgan de aquí los revisa tu gestoría o un profesional de protección de datos antes de usarlos. Tú ganas tiempo llevando el trabajo medio hecho, y ellos te dicen lo que falta en tu caso."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tres palabras que vas a oír",
+      "columnas": [
+        "Palabra",
+        "Qué significa en tu negocio"
+      ],
+      "filas": [
+        [
+          "Responsable",
+          "Tú: decides qué datos guardas y para qué"
+        ],
+        [
+          "Encargado",
+          "Quien trata datos por ti"
+        ],
+        [
+          "Contrato de encargado",
+          "El acuerdo que firmas con ese servicio"
+        ]
+      ],
+      "narracion": "Antes de redactar nada, tres palabras. El responsable eres tú, porque decides qué datos de clientes guardas y para qué. El encargado es cualquier servicio que trata esos datos por encargo tuyo. Por ejemplo, tu programa de reservas, el de facturación o una IA de empresa. Y el contrato de encargado del tratamiento es el acuerdo que te une a ese servicio. Ya lo mencionamos en las dos clases anteriores. Sin ese contrato, recuerda, nada de datos personales en la herramienta."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: borrador de aviso en lenguaje claro",
+      "usuario": "Tengo un taller de reparación de bicicletas en Zaragoza. Guardo nombre, teléfono y correo de los clientes para avisarles cuando la bici está lista y para la factura. Redacta un borrador de aviso de privacidad en lenguaje sencillo, de unas diez líneas, para colgar en el mostrador y en la web. Márcame con [REVISAR] lo que deba confirmar mi gestoría.",
+      "ia": "Tus datos, explicados claro\nEn el taller guardamos tu nombre, teléfono y correo para avisarte cuando tu bici esté lista y para hacerte la factura. No los usamos para nada más sin pedirte permiso. [REVISAR: cuánto tiempo los guardamos] [REVISAR: datos de contacto del responsable] Puedes pedirnos que los consultemos, corrijamos o borremos escribiendo a [CORREO].",
+      "narracion": "Aquí tienes la primera instrucción. Le cuentas a la IA qué negocio tienes, qué datos guardas y para qué los usas. Le pides un texto corto y sencillo. Y lo más importante, le pides que marque con la palabra revisar todo lo que debe confirmar tu gestoría. Así no das por bueno ningún detalle legal que la IA haya supuesto. El resultado es un borrador limpio que se entiende a la primera. Llévalo a tu gestoría o a un profesional y que lo completen con lo que tu caso necesite."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir permiso para enviar ofertas",
+      "mal": "Meter a todos los clientes en una lista de difusión de WhatsApp y empezar a mandar promociones.",
+      "bien": "Preguntar primero si quieren recibir ofertas, apuntar quién dice que sí y respetar a quien dice que no.",
+      "narracion": "Vamos con el consentimiento. Es muy tentador coger todos los teléfonos de la agenda y mandar promociones. Pero que un cliente te diera su número para recoger la bici no significa que quiera tu publicidad. La forma correcta es preguntar antes. Quien diga que sí, entra en tu lista. Quien diga que no, no entra, y no pasa nada. Apunta quién ha dicho que sí y cuándo, en una hoja sencilla. Tu gestoría te dirá si en tu caso necesitas algo más."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: el mensaje para pedir permiso",
+      "usuario": "Redacta un mensaje corto para preguntar a mis clientes del taller si quieren recibir ofertas por WhatsApp unas dos veces al mes. Que quede claro que pueden decir que no o darse de baja cuando quieran. Tono cercano, sin presión, máximo cuatro líneas.",
+      "ia": "¡Hola! Somos el taller de bicis. De vez en cuando preparamos ofertas de revisiones y accesorios, unas dos al mes. ¿Quieres recibirlas por WhatsApp? Responde SÍ para apuntarte. Si no te interesa, no hace falta que contestes, y puedes darte de baja cuando quieras.",
+      "narracion": "Esta es la instrucción para el mensaje de permiso. Fíjate en lo que le pides. Que diga con qué frecuencia vas a escribir. Que deje claro que pueden decir que no. Y que explique que pueden darse de baja en cualquier momento. La IA lo redacta en un tono amable, sin presión. Revisa que la frecuencia sea la real. Si prometes dos mensajes al mes, no mandes diez. Guárdalo como respuesta rápida en WhatsApp Business o úsalo en el mostrador al entregar la bici."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tu lista de encargados",
+      "columnas": [
+        "Herramienta",
+        "Qué datos trata",
+        "¿Contrato?"
+      ],
+      "filas": [
+        [
+          "Programa de facturación",
+          "Nombre, NIF, dirección",
+          "Compruébalo"
+        ],
+        [
+          "Agenda o reservas",
+          "Nombre, teléfono",
+          "Compruébalo"
+        ],
+        [
+          "Correo electrónico",
+          "Correos de clientes",
+          "Compruébalo"
+        ],
+        [
+          "IA con cuenta personal",
+          "Ninguno: solo anonimizado",
+          "No hace falta"
+        ],
+        [
+          "IA versión de empresa",
+          "Solo lo imprescindible",
+          "Obligatorio"
+        ]
+      ],
+      "narracion": "Ahora haz inventario. Apunta cada herramienta que trata datos de tus clientes. El programa de facturación, la agenda o el sistema de reservas, el correo y, si la usas así, una IA de empresa. Al lado escribe qué datos trata y si tienes contrato de encargado. Muchos servicios lo incluyen en sus condiciones o en un apartado de privacidad para empresas. Si no lo encuentras, pregunta al proveedor. Tu IA con cuenta personal no aparece con datos, porque solo le das textos anonimizados."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que no debes dejar en manos de la IA",
+      "puntos": [
+        "Cuánto tiempo guardar cada dato",
+        "Qué documentos legales necesitas en tu caso",
+        "Cómo responder a un cliente que pide borrar sus datos",
+        "La versión final de cualquier texto legal"
+      ],
+      "narracion": "Una lista de límites. La IA puede sonar muy segura cuando habla de leyes, pero puede equivocarse con plazos u obligaciones. No le preguntes cuánto tiempo debes guardar cada dato y te quedes con la respuesta. Tampoco le dejes decidir qué documentos necesitas ni cómo responder si un cliente te pide borrar sus datos. Esas decisiones las tomas tú con tu gestoría o con un profesional. La IA te ahorra la parte de redactar y ordenar. La parte de decidir es tuya."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: preguntas para tu gestoría",
+      "usuario": "Voy a reunirme con mi gestoría para revisar la protección de datos de mi taller. Uso un programa de facturación, una agenda en el móvil y WhatsApp Business. Prepárame una lista de cinco preguntas claras para llevar a la reunión. No respondas tú a las preguntas.",
+      "ia": "1. ¿Mi aviso de privacidad está completo para mi caso?\n2. ¿Cuánto tiempo debo guardar los datos de clientes?\n3. ¿Qué contratos de encargado necesito y con quién?\n4. ¿Cómo debo guardar los permisos para enviar ofertas?\n5. ¿Qué hago si un cliente me pide borrar sus datos?",
+      "narracion": "Un truco muy útil. En vez de pedir a la IA que te dé respuestas legales, pídele que te prepare las preguntas para el profesional. Fíjate en la última frase de la instrucción. No respondas tú a las preguntas. Así evitas que se invente plazos u obligaciones. Llegas a la reunión con tu gestoría con las dudas ordenadas, la reunión dura menos y sales con respuestas para tu caso concreto. Es un uso de la IA muy rentable y sin ningún riesgo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Pide el borrador de aviso con tus datos reales de negocio",
+        "Pide el mensaje para pedir permiso de ofertas",
+        "Rellena la lista de encargados de los recursos",
+        "Genera las cinco preguntas para tu gestoría",
+        "Envía todo a tu gestoría o pide cita"
+      ],
+      "narracion": "Tu tarea de hoy son diez minutos. Pide el borrador de aviso cambiando el taller por tu negocio y los datos por los que tú guardas. Pide después el mensaje de permiso para las ofertas. Abre la plantilla de lista de encargados de los recursos y rellena una fila por herramienta. Genera las cinco preguntas. Y por último, envía todo a tu gestoría o pide cita. Ese último paso es el que convierte unos borradores en documentos de verdad."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Tú eres el responsable de los datos de tus clientes",
+        "Aviso en lenguaje claro: la IA redacta, el profesional revisa",
+        "Permiso antes de enviar ofertas, y apunta quién dijo sí",
+        "Lista de encargados y sus contratos",
+        "Pide a la IA preguntas, no respuestas legales"
+      ],
+      "narracion": "Repasamos. Tú eres el responsable de los datos de tus clientes. La IA te prepara un aviso de privacidad en lenguaje claro, pero lo revisa un profesional. Antes de enviar ofertas, pide permiso y apunta quién dijo que sí. Ten a mano la lista de herramientas que tratan datos por ti y sus contratos. Y usa la IA para preparar preguntas, no para obtener respuestas legales. En la próxima clase vemos la Ley Europea de IA y lo que significa para un pequeño negocio."
+    }
+  ]
+}

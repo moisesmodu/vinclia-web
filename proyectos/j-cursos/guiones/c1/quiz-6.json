@@ -1,0 +1,59 @@
+{
+  "seccion": 6,
+  "titulo": "Cuestionario: su primer videojuego",
+  "preguntas": [
+    {
+      "pregunta": "En Scratch, el pez repite «por siempre: mover 3 pasos» y tu hija lo quiere el doble de rápido. ¿Qué le sugieres que cambie?",
+      "respuestas": [
+        "Añadir «esperar 1 segundos» dentro del bucle",
+        "Poner «mover 6 pasos»",
+        "Poner otro «por siempre» debajo",
+        "Quitar el «por siempre»"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada vuelta del bucle dura un fotograma y hay 30 por segundo: 3 × 30 = 90 puntos por segundo; 6 × 30 = 180. Una espera lo haría más lento, y un bucle debajo de un «por siempre» no se ejecuta nunca."
+    },
+    {
+      "pregunta": "Una manzana baja de 7 en 7 desde y = 150. ¿Qué condición detecta con seguridad que ha llegado al suelo?",
+      "respuestas": [
+        "si posición en y > 150",
+        "si posición en y = -150",
+        "si posición en y < -150"
+      ],
+      "correcta": 2,
+      "explicacion": "De 7 en 7, la manzana pasa de -144 a -151 y nunca vale exactamente -150. «Menor que -150» es cierto en cualquier punto de debajo, así que no se le escapa."
+    },
+    {
+      "pregunta": "Dos personajes conversan con mensajes, pero los bocadillos se pisan y hablan a la vez. ¿Cuál es la causa más probable?",
+      "respuestas": [
+        "El «enviar mensaje» está antes del «decir», o el «decir» no tiene segundos",
+        "Los mensajes solo funcionan con la tecla espacio",
+        "Faltan más personajes en el escenario",
+        "El escenario es demasiado pequeño"
+      ],
+      "correcta": 0,
+      "explicacion": "El mensaje pasa el turno: tiene que enviarse cuando la frase ha terminado. Por eso va después de «decir… durante 2 segundos»."
+    },
+    {
+      "pregunta": "En el juego, la nave pierde las 3 vidas en un solo choque con el meteorito. ¿Qué le falta al guion?",
+      "respuestas": [
+        "Un «fijar vidas a 3» dentro del «por siempre»",
+        "Un «esperar 1 segundos» justo después de restar la vida",
+        "Un segundo «por siempre»"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras el meteorito atraviesa la nave, la toca durante muchos fotogramas y en cada vuelta resta una vida. Con una espera después del choque, cada choque cuenta una sola vez."
+    },
+    {
+      "pregunta": "En la feria en casa, alguien de la familia prueba el juego y se atasca. ¿Qué hace el autor o la autora?",
+      "respuestas": [
+        "Le coge el ratón y lo resuelve",
+        "Le explica la solución entera",
+        "Para la partida y empieza otra",
+        "Mira sin tocar y, como mucho, da una sola pista"
+      ],
+      "correcta": 3,
+      "explicacion": "Quien no sabe la solución ve lo que el autor ya no ve. Por eso el autor solo mira, da una pista si hace falta y apunta dónde se atasca: es lo que necesita para mejorar el juego."
+    }
+  ]
+}

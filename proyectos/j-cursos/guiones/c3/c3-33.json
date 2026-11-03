@@ -1,0 +1,102 @@
+{
+  "id": "c3-33",
+  "titulo": "Electricistas, fontaneros y reformas",
+  "descripcion": "Sigue a un electricista inventado de Zaragoza: presupuestos a partir de notas de voz, seguimiento de presupuestos, explicaciones claras al cliente, facturación con Verifactu en el horizonte y la semana de visitas ordenada.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Electricistas, fontaneros y reformas",
+      "subtitulo": "La oficina cabe en la furgoneta",
+      "narracion": "Segundo caso por sector. Hoy viajamos a Zaragoza para acompañar a Rubén, un electricista autónomo inventado. Ya lo conociste en la clase de asistentes. Rubén pasa el día entre la furgoneta y las casas de sus clientes. Hace instalaciones, reparaciones y alguna reforma con un fontanero de confianza. Su problema no es el trabajo, que le sobra. Es todo lo que viene después. Presupuestos, mensajes, facturas y fotos. Si eres fontanera, pintor, cerrajero o tienes una pequeña empresa de reformas, esta clase es tuya."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dónde se le van las horas a Rubén",
+      "columnas": ["Tarea", "Cuándo la hace", "El problema"],
+      "filas": [
+        ["Presupuestos", "Por la noche, en casa", "Tarda días en enviarlos"],
+        ["WhatsApp y llamadas", "Subido a una escalera", "Contesta tarde o mal"],
+        ["Facturas", "A final de trimestre", "Se le acumulan"],
+        ["Seguimiento", "Casi nunca", "Presupuestos que se enfrían"]
+      ],
+      "narracion": "Este es el día a día de Rubén. Los presupuestos los escribe por la noche, en casa, cansado, y tarda días en enviarlos. Los WhatsApp le llegan subido a una escalera, así que contesta tarde o con prisas. Las facturas se le acumulan hasta final de trimestre. Y casi nunca hace seguimiento de los presupuestos enviados, así que muchos se enfrían y el cliente acaba llamando a otro. Vamos a ver cómo cambia esto con lo que has aprendido en el curso."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "De la nota de voz al presupuesto",
+      "usuario": "Te paso mis notas dictadas al salir de una visita: «Piso antiguo, cambiar cuadro eléctrico completo, añadir dos enchufes en cocina, revisar toma de tierra, unas seis horas, material del cuadro aparte». Redacta un borrador de presupuesto claro para un particular, con partidas. Pon [PRECIO] donde vaya cada importe. No inventes precios ni plazos.",
+      "ia": "Presupuesto orientativo\n1. Sustitución del cuadro eléctrico completo. Mano de obra: [PRECIO]\n2. Material del cuadro: [PRECIO]\n3. Instalación de dos enchufes nuevos en la cocina: [PRECIO]\n4. Revisión de la toma de tierra: [PRECIO]\nDuración estimada: una jornada de trabajo.\nPrecio a confirmar tras revisar la instalación.",
+      "narracion": "Rubén cambia la noche por dos minutos en la furgoneta. Al salir de cada visita, dicta sus notas al móvil, tal cual le salen. Después pega el texto en su asistente con esta instrucción. La IA ordena las notas en partidas claras y deja huecos para los precios. Fíjate en la última frase. No inventes precios ni plazos. Los importes los pone Rubén con su tarifa y el coste real del material. Así el presupuesto sale el mismo día, cuando el cliente todavía se acuerda de él."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Los precios los pones tú",
+      "mal": "«¿Cuánto debería cobrar por cambiar un cuadro eléctrico?» y copiar la cifra que diga la IA.",
+      "bien": "Poner tu tarifa y el coste del material, y pedir a la IA solo que ordene y redacte.",
+      "narracion": "Esta es la trampa en la que cae mucha gente. Preguntar a la IA cuánto debería cobrar y copiar la cifra. La IA no conoce tus costes, ni el precio del material en tu proveedor, ni lo que cobra la competencia en tu barrio. Te dará un número con mucha seguridad, y puede estar muy lejos de la realidad. Los precios los pones tú. A la IA le pides que ordene, que redacte y que revise que no falta ninguna partida. Revisa siempre cifras, nombres y plazos antes de enviar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Explicar un problema técnico sin tecnicismos",
+      "usuario": "Un cliente me pregunta por qué le salta el diferencial cada vez que llueve. Explícaselo en un WhatsApp de cinco líneas, sin tecnicismos y sin decirle que toque nada de la instalación. Termina proponiendo una visita para localizar el problema.",
+      "ia": "Hola. El diferencial es un sistema de seguridad: corta la luz cuando detecta una fuga de corriente. Si salta cuando llueve, lo más probable es que entre humedad en algún punto, como un enchufe o una luz exterior. No es que el diferencial esté roto: te está protegiendo. Mejor no toques nada. ¿Te va bien que pase esta semana a localizarlo?",
+      "narracion": "Una tarea en la que la IA brilla es explicar cosas técnicas en lenguaje sencillo. El cliente entiende mejor el problema, confía más en ti y acepta antes el presupuesto. Fíjate en lo que pide la instrucción. Sin tecnicismos y sin decirle que toque nada. En oficios con electricidad, gas o agua, nunca dejes que la IA dé instrucciones al cliente para manipular la instalación. Eso lo haces tú. Lee la explicación y comprueba que es correcta, porque el que sabe del oficio eres tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El seguimiento que recupera presupuestos",
+      "usuario": "Envié un presupuesto hace una semana y el cliente no ha contestado. Redacta un mensaje de seguimiento corto y amable para WhatsApp, sin presionar. Ofrece resolver dudas y recuerda que tengo hueco a finales de mes. Usa [NOMBRE].",
+      "ia": "Hola, [NOMBRE]. Te escribo por el presupuesto de la instalación que te envié la semana pasada. ¿Te ha surgido alguna duda? Te la resuelvo encantado. Si te encaja, tengo hueco a finales de mes. Un saludo, Rubén.",
+      "narracion": "El seguimiento es lo que más dinero le devuelve a Rubén. Muchos clientes no contestan porque tienen dudas o simplemente se les olvida. Un mensaje corto y amable a la semana recupera parte de esos trabajos. Rubén lo guarda como respuesta rápida y cada lunes revisa qué presupuestos siguen sin respuesta. Si quiere ir un paso más allá, puede apuntar los presupuestos en una hoja de cálculo con la fecha de envío. Así ve de un vistazo a quién le toca escribir."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Facturas: la IA ayuda, el programa factura",
+      "pasos": [
+        "La IA redacta conceptos claros a partir del presupuesto",
+        "La factura sale de un programa de facturación adaptado",
+        "Verifactu: 1 de julio de 2027 para autónomos en IRPF",
+        "1 de enero de 2027 para el Impuesto sobre Sociedades",
+        "Tu caso concreto, siempre con tu gestoría"
+      ],
+      "narracion": "Con las facturas, recuerda lo que vimos en la sección de números. La IA puede redactar conceptos claros a partir del presupuesto aceptado. Pero la IA no es un sistema de facturación. La factura sale de un programa adaptado. Con Verifactu, la obligación llega el 1 de julio de 2027 para autónomos en IRPF como Rubén. Para quien tributa en el Impuesto sobre Sociedades, como una pequeña empresa de reformas, el 1 de enero de 2027. Rubén ya ha hablado con su gestoría para elegir programa con tiempo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Fontaneros, pintores y reformas: lo mismo, y además",
+      "puntos": [
+        "Fotos de obra: con permiso y sin direcciones ni caras",
+        "Antes y después reales en tu ficha de Google",
+        "Actas de obra cuando trabajas con otros gremios",
+        "Nunca instrucciones de manipular gas, agua o luz"
+      ],
+      "narracion": "Si trabajas en fontanería, pintura o reformas, todo lo anterior te sirve igual. Y añade tres cosas. Las fotos de obra son tu mejor publicidad en Google Business Profile, pero con permiso del cliente y sin que se vean direcciones, caras ni datos. Cuando coincides con otros gremios, usa el acta de reunión de la clase de resúmenes. Decisiones, tareas, responsables y fechas. Y lo repetimos porque es importante. Nunca dejes que la IA dé instrucciones para manipular gas, agua o electricidad."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Dicta al móvil las notas de tu última visita",
+        "Pega las notas con la instrucción del presupuesto",
+        "Pon tú los precios en los huecos",
+        "Escribe el seguimiento de un presupuesto sin respuesta",
+        "Guárdalo como respuesta rápida"
+      ],
+      "narracion": "Tu tarea de hoy son diez minutos. Dicta al móvil las notas de tu última visita, tal como las recuerdes. Pégalas en tu IA con la instrucción del presupuesto y pon tú los precios en los huecos. Después busca un presupuesto que hayas enviado y que no te hayan contestado. Escribe el mensaje de seguimiento con la instrucción de esta clase y envíalo hoy. Guárdalo como respuesta rápida para los próximos. Y apunta en tu cuaderno de horas cuánto has tardado."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Nota de voz a presupuesto el mismo día",
+        "Los precios y plazos los pones tú",
+        "Explica sin tecnicismos y sin que el cliente toque nada",
+        "Seguimiento semanal de presupuestos sin respuesta",
+        "Facturas con programa adaptado; Verifactu, con tu gestoría"
+      ],
+      "narracion": "Repasamos el caso de Rubén. Presupuestos a partir de una nota de voz, enviados el mismo día. Los precios y los plazos los pones tú, nunca la IA. Explicaciones técnicas sin tecnicismos, y sin pedir al cliente que toque nada. Un mensaje de seguimiento cada semana para los presupuestos sin respuesta. Y las facturas, con un programa adaptado, preparando Verifactu con tu gestoría. En la próxima clase visitamos una tienda online de cerámica."
+    }
+  ]
+}

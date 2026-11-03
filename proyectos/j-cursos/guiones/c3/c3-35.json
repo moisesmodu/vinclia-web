@@ -1,0 +1,104 @@
+{
+  "id": "c3-35",
+  "titulo": "Hostelería, gestorías y servicios profesionales",
+  "descripcion": "Dos casos inventados de principio a fin: un bar de menú del día que publica su menú en diez minutos cada mañana y una gestoría pequeña que explica las novedades a sus clientes sin meter sus datos en la IA.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Hostelería, gestorías y servicios profesionales",
+      "subtitulo": "Un bar de menú del día y una gestoría de tres personas",
+      "narracion": "Último caso por sector, y esta vez son dos. Primero, el bar de Rosa y Paco, un bar inventado de menú del día en Huesca. Cocinan para trabajadores de la zona y, en verano, para turistas de paso hacia el Pirineo. Después, una gestoría pequeña de tres personas, también inventada, que lleva la contabilidad y los impuestos de unos cien autónomos. Parecen negocios muy distintos. Pero los dos tienen algo en común. Les falta tiempo para comunicarse bien con sus clientes, y esa parte es la que la IA acelera."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El bar: el menú del día en un minuto",
+      "usuario": "Hoy tenemos de primero: crema de calabaza, ensalada de garbanzos o macarrones con tomate. De segundo: ternasco al horno, merluza a la romana o tortilla de patata. Postre casero o café. Precio [PRECIO] con pan y bebida. Escribe el texto para el estado de WhatsApp y para Instagram, alegre y corto, y una versión para la pizarra.",
+      "ia": "WhatsApp e Instagram: ¡Menú de hoy en el bar! Crema de calabaza, ensalada de garbanzos o macarrones. De segundo, ternasco al horno, merluza a la romana o tortilla de patata. Postre casero o café. [PRECIO] con pan y bebida. ¡Os esperamos!\nPizarra:\nPRIMEROS: crema de calabaza · ensalada de garbanzos · macarrones\nSEGUNDOS: ternasco · merluza · tortilla\nPostre o café · [PRECIO]",
+      "narracion": "Cada mañana, Rosa dicta al móvil los platos del día mientras Paco termina el sofrito. Pega la lista en la IA con esta instrucción y obtiene tres textos. Uno para el estado de WhatsApp, otro para Instagram y otro para la pizarra de la puerta. Rosa revisa que los platos y el precio sean los de hoy, pone el precio en el hueco y publica. Antes tardaba veinte minutos y a veces no lo hacía. Ahora, dos. Y los clientes habituales miran el estado antes de bajar a comer."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Alérgenos: los decides tú, nunca la IA",
+      "mal": "Pedir a la IA que diga qué alérgenos lleva cada plato del menú.",
+      "bien": "Marcar tú los alérgenos con tus recetas reales y pedir a la IA solo que los coloque en el texto.",
+      "narracion": "Aquí hay una línea roja en hostelería. La IA no sabe qué lleva tu merluza a la romana. No sabe si el rebozado lleva huevo, qué aceite usas o si la crema lleva nata. Si le pides los alérgenos, se los inventará con mucha seguridad. Y un error con un alérgeno puede mandar a alguien al hospital. Los alérgenos los marcas tú, con tus recetas reales y tus fichas. La IA solo los coloca en el texto. Y para cualquier duda sobre cómo informar de ellos, pregunta a quien te asesora."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El bar: la carta para turistas",
+      "usuario": "Traduce nuestro menú del día al inglés y al francés para los turistas de verano. Mantén los nombres de platos típicos como ternasco y explica en pocas palabras qué son. No traduzcas los alérgenos: los añadiré yo. Formato para imprimir en una hoja.",
+      "ia": "MENU OF THE DAY\nStarters: pumpkin soup · chickpea salad · macaroni with tomato\nMains: ternasco (roast young lamb, a local speciality) · battered hake · Spanish omelette\nDessert or coffee\n\nMENU DU JOUR\nEntrées : velouté de potiron · salade de pois chiches · macaronis à la tomate\nPlats : ternasco (jeune agneau rôti, spécialité locale) · merlu pané · tortilla espagnole",
+      "narracion": "En verano llegan turistas de paso hacia el Pirineo. Rosa usa la instrucción de idiomas del curso para tener el menú en inglés y en francés. Fíjate en dos detalles. Pide mantener los nombres de los platos típicos, como el ternasco, con una explicación corta, porque eso es parte del encanto. Y deja fuera los alérgenos, que añade ella. Si tienes a alguien de confianza que hable el idioma, pídele que le eche un vistazo la primera vez. Después, solo cambian los platos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La rutina de mañana del bar, en diez minutos",
+      "pasos": [
+        "Dictar los platos del día al móvil",
+        "Pedir los tres textos: WhatsApp, Instagram y pizarra",
+        "Revisar platos, precio y alérgenos con las fichas",
+        "Publicar el estado y la historia antes de las doce",
+        "Por la tarde, borradores para las reseñas del día"
+      ],
+      "narracion": "Así queda la rutina de Rosa. Dicta los platos, pide los tres textos, revisa platos, precio y alérgenos con sus fichas, y publica antes de las doce, cuando la gente empieza a pensar dónde comer. Por la tarde, cuando baja el ritmo, revisa los borradores de respuesta a las reseñas que le prepara el flujo de la clase de automatizaciones. Ese flujo, por cierto, es justo el del ejemplo del bar de Huesca que viste allí. Diez minutos por la mañana y diez por la tarde."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La gestoría: el sector con los datos más delicados",
+      "puntos": [
+        "DNI, nóminas, cuentas bancarias y declaraciones",
+        "Nunca en una cuenta personal de IA",
+        "Versión de empresa con contrato de encargado",
+        "Aun así, solo los datos imprescindibles",
+        "La IA prepara; el profesional firma y responde"
+      ],
+      "narracion": "Cambiamos de negocio. Una gestoría trabaja todo el día con los datos más delicados de sus clientes. DNI, nóminas, cuentas bancarias y declaraciones de impuestos. Ninguno de esos datos puede ir a una cuenta personal de IA. Si la gestoría quiere usar la IA con documentos de clientes, necesita una versión de empresa con contrato de encargado del tratamiento, y aun así solo los datos imprescindibles. Y sobre todo, la IA prepara borradores. Quien asesora, firma y responde es el profesional. Esto vale igual para abogados, arquitectos o consultores."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La gestoría: una circular que se entiende",
+      "usuario": "Redacta una circular breve para los clientes autónomos de nuestra gestoría sobre Verifactu. Datos: el Real Decreto-ley 15/2025 aplazó la obligación al 1 de enero de 2027 para el Impuesto sobre Sociedades y al 1 de julio de 2027 para el resto, incluidos autónomos en IRPF. Lenguaje sencillo, ocho líneas. Usa solo estos datos y termina invitando a pedir cita.",
+      "ia": "Verifactu: qué cambia y cuándo\nLos programas de facturación tendrán que cumplir el sistema Verifactu. El Real Decreto-ley 15/2025 aplazó la obligación:\n• Sociedades: 1 de enero de 2027.\n• Autónomos en IRPF: 1 de julio de 2027.\nTodavía hay tiempo, pero conviene elegir programa con calma.\nSi tienes dudas sobre tu caso, pide cita y lo revisamos contigo.",
+      "narracion": "Este es el uso estrella de la IA en una gestoría. Explicar las novedades a los clientes en lenguaje sencillo. La clave está en la instrucción. Los datos legales los pone la gestoría, y la IA tiene prohibido añadir otros. Fíjate en la frase usa solo estos datos. Así la IA redacta, pero no se inventa fechas ni obligaciones. El profesional revisa la circular antes de enviarla, como haría con cualquier texto de un empleado nuevo. Y la circular termina invitando a pedir cita, porque cada caso es distinto."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Servicios profesionales: qué sí y qué no",
+      "columnas": ["Tarea", "¿Con IA?"],
+      "filas": [
+        ["Circulares y explicaciones", "Sí, con datos que das tú"],
+        ["Resumir normativa pública", "Sí, comprobando el original"],
+        ["Borrador de respuesta a un cliente", "Sí, sin sus datos personales"],
+        ["Dar una opinión profesional", "No: eso es tu trabajo"],
+        ["Documentos con datos de clientes", "Solo con versión de empresa"]
+      ],
+      "narracion": "Esta tabla sirve para una gestoría y para cualquier despacho profesional. Circulares y explicaciones, sí, con los datos que das tú. Resumir normativa pública, sí, pero comprobando el texto original. Borradores de respuesta a preguntas de clientes, sí, sin sus datos personales. Dar una opinión profesional, no. Eso es tu trabajo y tu responsabilidad. Y los documentos con datos de clientes, solo con una versión de empresa con contrato de encargado. Recuerda también la formación en IA del equipo, que se exige desde febrero de 2025."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Elige el mensaje que repites a muchos clientes",
+        "Escribe tú los datos exactos que debe llevar",
+        "Pide el texto con la frase «usa solo estos datos»",
+        "Revisa cada fecha, precio y dato legal",
+        "Envíalo o publícalo hoy"
+      ],
+      "narracion": "Tu tarea de hoy, diez minutos. Elige el mensaje que repites a muchos clientes. En un bar será el menú del día. En una gestoría, una novedad o un recordatorio de plazos. En otro negocio, tus horarios de fiesta o un cambio de precios. Escribe tú los datos exactos que debe llevar. Pide el texto a la IA con la frase usa solo estos datos. Revisa cada fecha, precio y dato legal. Y envíalo o publícalo hoy mismo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Menú del día: tres textos en un minuto",
+        "Alérgenos: los decides tú con tus recetas",
+        "Traducciones con nombres típicos y revisión",
+        "Gestorías: datos delicados, solo versión de empresa",
+        "«Usa solo estos datos»: la IA redacta, tú firmas"
+      ],
+      "narracion": "Repasamos los dos casos. En el bar, el menú del día en tres formatos en un minuto, los alérgenos siempre decididos por ti y la carta traducida para turistas. En la gestoría, datos delicados que nunca van a una cuenta personal, circulares claras con la frase usa solo estos datos, y el profesional que revisa y firma. Con esto terminamos los casos por sector. En la próxima sección juntamos todo lo aprendido en tu plan de IA en una página."
+    }
+  ]
+}

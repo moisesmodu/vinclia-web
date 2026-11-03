@@ -1,0 +1,107 @@
+{
+  "id": "c3-24",
+  "titulo": "Configura la privacidad de tus herramientas",
+  "descripcion": "Desactiva el uso de tus conversaciones para entrenar, ordena cuentas y accesos y deja por escrito una norma de uso de IA para tu negocio.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:privacidad-checklist"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Configura la privacidad de tus herramientas",
+      "subtitulo": "Quince minutos de ajustes que te ahorran sustos",
+      "narracion": "En la clase anterior viste qué datos no deben entrar en un chat de IA. Ahora toca la otra mitad. Revisar cómo tienes configuradas tus herramientas. Son ajustes que se hacen una vez y que casi nadie revisa. Vamos a desactivar el uso de tus conversaciones para entrenar, a ordenar las cuentas y a escribir una norma sencilla para tu equipo. No hace falta saber nada técnico. Si sabes cambiar el tono de llamada del móvil, sabes hacer esto. Ten abierta la herramienta que más uses mientras ves la clase, y ve haciendo los cambios a la vez."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cinco ajustes que revisar hoy",
+      "puntos": [
+        "Que tus conversaciones no se usen para entrenar",
+        "Qué historial guardas y qué conviene borrar",
+        "Verificación en dos pasos en la cuenta",
+        "Una cuenta por persona, nunca compartida",
+        "Qué aplicaciones conectadas ven tu correo o tus archivos"
+      ],
+      "narracion": "Esta es la lista. Lo primero, que tus conversaciones no se usen para entrenar los modelos. Lo segundo, revisar el historial y borrar lo que no debería estar ahí. Tercero, activar la verificación en dos pasos, para que nadie entre con solo tu contraseña. Cuarto, una cuenta por persona. Si tu empleada y tú compartís usuario, no sabéis quién ha pegado qué. Y quinto, mirar qué aplicaciones tienen permiso para leer tu correo o tus documentos. A veces diste permiso a algo hace meses y ya no lo usas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "ChatGPT: que no entrene con tus chats",
+      "pasos": [
+        "Abre ChatGPT y pulsa en tu perfil",
+        "Entra en Configuración",
+        "Abre el apartado Controles de datos",
+        "Desactiva la opción de usar tus chats para mejorar el modelo",
+        "Sal y vuelve a entrar para comprobar que se ha guardado"
+      ],
+      "narracion": "Vamos con ChatGPT, que es la más usada. Pulsa en tu perfil y entra en Configuración. Busca el apartado Controles de datos. Ahí verás una opción para que tus conversaciones sirvan para mejorar el modelo. Desactívala. Después sal y vuelve a entrar para comprobar que sigue desactivada. En Gemini, Copilot, Claude o Le Chat existe una opción equivalente, aunque el nombre y el sitio cambian. Los menús de estas herramientas se mueven a menudo. Por eso en la siguiente escena te enseño cómo encontrarla aunque cambie."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: encuentra el ajuste en tu herramienta",
+      "usuario": "Uso Gemini con una cuenta personal. Explícame paso a paso dónde se desactiva el uso de mis conversaciones para mejorar los modelos. Si no estás seguro de algún paso, dímelo claramente, porque los menús cambian. Al final dime qué buscar en la página de ayuda oficial.",
+      "ia": "Te indico la ruta habitual, aunque puede haber cambiado: entra en los ajustes de tu actividad en Gemini y busca la opción que guarda y usa tu actividad. No estoy seguro del nombre exacto actual. Para confirmarlo, busca en la ayuda oficial de Google: «Gemini actividad de las aplicaciones desactivar».",
+      "narracion": "Esta instrucción te sirve para cualquier herramienta. Cambia Gemini por la que uses. Lo importante es la segunda frase. Le pides que te avise si no está seguro. Así la IA no se inventa un menú que no existe. Y le pides qué buscar en la ayuda oficial, que es donde está la información fiable. Fíjate en que la respuesta reconoce sus dudas. Eso es lo que queremos. Comprueba siempre los pasos en la página de ayuda del fabricante antes de darlos por buenos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuenta personal o versión de empresa",
+      "columnas": ["Aspecto", "Cuenta personal", "Versión de empresa"],
+      "filas": [
+        ["Contrato de encargado", "Normalmente no", "Suele incluirlo: compruébalo"],
+        ["Datos de clientes", "Solo anonimizados", "Solo los imprescindibles"],
+        ["Entrenamiento", "Desactívalo tú", "Revisa lo que dice el contrato"],
+        ["Precio", "Gratis con límites", "De pago"]
+      ],
+      "narracion": "Esta tabla resume la decisión que tienes que tomar. Con una cuenta personal, aunque sea de pago, normalmente no tienes contrato de encargado del tratamiento. Así que trabajas solo con textos anonimizados. Las versiones de empresa suelen incluir ese contrato, pero compruébalo antes de contratar. Y aun con contrato, mete solo los datos imprescindibles. Si estás pensando en dar el salto, pregunta a tu gestoría o a un profesional de protección de datos qué debe incluir el contrato en tu caso."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cuentas y contraseñas",
+      "mal": "Una sola cuenta para todo el equipo, con la contraseña apuntada en un pósit junto a la caja.",
+      "bien": "Cada persona con su cuenta, verificación en dos pasos y acceso retirado el día que alguien se va.",
+      "narracion": "Esto pasa en muchos negocios pequeños. Una cuenta para todos, la contraseña en un papel y nadie sabe quién la tiene. Si un día alguien se va, se lleva el acceso a todas tus conversaciones. La alternativa no cuesta nada. Cada persona entra con su cuenta. Activas la verificación en dos pasos, que te pide un código en el móvil. Y cuando alguien deja de trabajar contigo, le quitas el acceso ese mismo día. Apúntalo en tu lista de tareas para cuando haya cambios en el equipo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: una norma de uso de IA para tu equipo",
+      "usuario": "Tengo una peluquería con cuatro empleadas. Redacta una norma interna de uso de IA en un máximo de ocho puntos, en lenguaje sencillo. Debe decir que no se meten datos de clientes, que todo texto se revisa antes de enviarlo y que cada persona usa su propia cuenta.",
+      "ia": "Norma de uso de IA del salón\n1. Usamos la IA para redactar, nunca para decidir.\n2. No pegamos nombres, teléfonos ni datos de salud de clientas.\n3. Usamos «clienta A» en lugar del nombre.\n4. Revisamos todo antes de enviarlo.\n5. Cada una usa su propia cuenta.\n6. Si dudamos, preguntamos antes de pegar.",
+      "narracion": "Ahora vamos a dejarlo por escrito. Con esta instrucción, la IA te prepara una norma interna en lenguaje claro. Cambia la peluquería por tu negocio y el número de personas por el tuyo. Revisa el resultado, quita lo que no encaje y añade lo que falte. Luego imprímela o compártela en el grupo del equipo. No es un documento legal. Es una guía práctica para que todo el mundo trabaje igual. Y es un buen primer paso para la formación en IA de tu equipo, de la que hablaremos en la clase sobre la ley europea."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Limpieza rápida del historial",
+      "puntos": [
+        "Busca en el historial nombres de clientes o teléfonos",
+        "Borra las conversaciones que tengan datos personales",
+        "Revisa las aplicaciones conectadas a tu correo y archivos",
+        "Retira los permisos que ya no uses"
+      ],
+      "narracion": "Antes de terminar, una limpieza. Casi todas las herramientas tienen un buscador en el historial. Escribe el nombre de algún cliente habitual o el prefijo de un teléfono y mira qué aparece. Si encuentras conversaciones con datos personales, bórralas. Después revisa las aplicaciones conectadas a tu cuenta de Google o de Microsoft. A veces le diste permiso a una herramienta para leer tu correo y ya ni la usas. Retira esos permisos. Es como cambiar la cerradura cuando ya no sabes quién tiene llave."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Desactiva el entrenamiento en tu herramienta principal",
+        "Activa la verificación en dos pasos en esa cuenta",
+        "Busca en el historial datos de clientes y bórralos",
+        "Pide a la IA tu norma interna y revísala",
+        "Marca lo hecho en la lista de comprobación de privacidad"
+      ],
+      "narracion": "Tu tarea de hoy cabe en diez minutos. Desactiva el uso de tus conversaciones para entrenar en la herramienta que más uses. Activa la verificación en dos pasos. Busca en el historial datos de clientes y borra lo que sobre. Después pide tu norma interna con la instrucción de esta clase y revísala con calma. En los recursos tienes la lista de comprobación de privacidad. Marca cada punto a medida que lo hagas y guárdala para repetir la revisión cada pocos meses."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Entrenamiento desactivado en todas tus herramientas",
+        "Una cuenta por persona y verificación en dos pasos",
+        "Historial limpio y permisos revisados",
+        "Una norma interna sencilla y por escrito",
+        "Versión de empresa: comprueba el contrato de encargado"
+      ],
+      "narracion": "Repasamos. Desactiva el uso de tus conversaciones para entrenar en todas tus herramientas. Una cuenta por persona, con verificación en dos pasos. Historial limpio y permisos revisados. Una norma interna corta para que todo el equipo trabaje igual. Y si das el salto a una versión de empresa, comprueba que incluye contrato de encargado. Ante dudas concretas, tu gestoría o un profesional. En la próxima clase vemos el RGPD práctico, con avisos, consentimiento y encargados."
+    }
+  ]
+}

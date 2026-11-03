@@ -1,0 +1,58 @@
+{
+  "seccion": 3,
+  "titulo": "Cuestionario: órdenes en orden",
+  "preguntas": [
+    {
+      "pregunta": "Bit mira hacia la derecha de la pantalla. Si le dices «Gira a la izquierda», ¿hacia dónde mirará?",
+      "respuestas": [
+        "Hacia abajo",
+        "Hacia la izquierda",
+        "Hacia arriba"
+      ],
+      "correcta": 2,
+      "explicacion": "Un giro es un cuarto de vuelta: de mirar a la derecha pasa a mirar arriba. Y no cambia de casilla: solo cambia hacia dónde mira."
+    },
+    {
+      "pregunta": "Bit mira hacia abajo, es decir, hacia nosotros. Si gira a su derecha, ¿hacia dónde mirará en la pantalla?",
+      "respuestas": [
+        "Hacia la izquierda de la pantalla",
+        "Hacia la derecha de la pantalla",
+        "Hacia arriba",
+        "Seguirá mirando abajo"
+      ],
+      "correcta": 0,
+      "explicacion": "Cuando Bit nos mira, su derecha queda a nuestra izquierda. El truco es ponerse en su lugar y mirar hacia donde mira él."
+    },
+    {
+      "pregunta": "Un programa hace chocar a Bit. ¿Qué es lo primero que conviene hacer?",
+      "respuestas": [
+        "Borrarlo todo y empezar de nuevo",
+        "Añadir bloques al azar hasta que funcione",
+        "Ejecutarlo paso a paso para ver dónde falla",
+        "Cambiar varios bloques a la vez"
+      ],
+      "correcta": 2,
+      "explicacion": "Paso a paso se ve qué hace cada bloque y dónde empieza el problema. Después se cambia solo el bloque equivocado y se vuelve a probar: un cambio, una prueba."
+    },
+    {
+      "pregunta": "Queríamos: adelante, adelante, gira a la derecha, adelante. Hemos escrito: adelante, gira a la derecha, adelante, adelante. ¿Qué tipo de bug es?",
+      "respuestas": [
+        "Falta un bloque",
+        "Bloques en mal orden",
+        "Sobra un bloque"
+      ],
+      "correcta": 1,
+      "explicacion": "Están los mismos bloques, pero el giro va antes de tiempo. Los cuatro bugs habituales son: falta un bloque, sobra, está equivocado o están en mal orden."
+    },
+    {
+      "pregunta": "En el proyecto del repartidor, ¿cuál de estas órdenes no mueve a Bit de casilla?",
+      "respuestas": [
+        "Adelante",
+        "Coge la caja",
+        "Ninguna: todas lo mueven"
+      ],
+      "correcta": 1,
+      "explicacion": "Coger y dejar son acciones: Bit se queda donde está. Por eso antes hay que llegar a la casilla de la caja con Adelante."
+    }
+  ]
+}

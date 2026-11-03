@@ -1,0 +1,6 @@
+# los vídeos, audios y PDF se generan en $WORK (/home/user/jwork) y se entregan en el almacenamiento del proyecto, no en git
+*.mp4
+*.wav
+*.webm
+out/
+entrega/

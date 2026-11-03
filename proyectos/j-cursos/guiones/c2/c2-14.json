@@ -1,0 +1,106 @@
+{
+  "id": "c2-14",
+  "titulo": "Para antes del muro: el robot decide con «si… si no»",
+  "descripcion": "Programa un Maqueen que se para solo delante de una caja, esté donde esté, con «si… si no» dentro de «para siempre», y ajusta el umbral según la velocidad.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k3-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Para antes del muro",
+      "subtitulo": "El robot aprende a decidir: «si… si no»",
+      "narracion": "Hoy damos el gran salto de la unidad. Hasta ahora, el robot obedecía tiempos fijos. A partir de esta clase, decide solo. En el puerto, el Maqueen tiene que pararse a unos 10 centímetros de un contenedor, para que la grúa deje el paquete. Pero la grúa lo deja cada noche en un sitio diferente. Con tiempos fijos no funciona. Necesitamos un robot que mire, piense y elija cuándo se para."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Recordemos",
+      "puntos": [
+        "El sensor mide la distancia con el eco, en centímetros",
+        "500 quiere decir que no ve nada",
+        "«Para siempre» repite los bloques sin parar",
+        "Hoy: ¿cómo sabrá el robot cuándo pararse?"
+      ],
+      "narracion": "Un repaso rápido de la clase anterior. El sensor de ultrasonidos mide la distancia con el eco y nos la da en centímetros. Si dice 500, no ve nada. Y si queremos que vuelva a medir sin parar, los bloques van en «para siempre». Con estas tres piezas ya casi lo tenemos. Solo nos falta una: un bloque que haga una pregunta y, según la respuesta, haga una cosa u otra."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "«Si… si no»: una pregunta, dos caminos",
+      "puntos": [
+        "Pregunta: ¿la distancia es menor que 15?",
+        "Si es que sí: para el motor",
+        "Si no: motor los dos adelante",
+        "Nunca hace las dos cosas a la vez"
+      ],
+      "narracion": "El bloque «si» hace una pregunta de sí o no. Por ejemplo: ¿la distancia es menor que 15? Si la respuesta es sí, hace los bloques de dentro: para el motor. Si es no, hace los de la parte «si no»: adelante. Nunca hace las dos cosas a la vez. A esta pregunta la llamamos condición. Y el número que comparamos, aquí 15, se llama umbral: el punto donde el robot cambia lo que hace. En MakeCode, la parte «si no» se añade con el botón más de debajo del bloque."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-2:5",
+      "narracion": "Aquí tienes el programa: para siempre, si la distancia es menor que el umbral, para; si no, adelante. Fíjate en que no hay ninguna espera. Para el vídeo y predice: ¿dónde se parará? Ahora, míralo. En cada vuelta de «para siempre», el robot pregunta: ¿ya estoy? Lejos, la respuesta es no, y avanza. Al llegar al umbral, la respuesta es sí, y se para. Decide el sensor, no el reloj. Y si quitas la caja, vuelve a arrancar, porque «para siempre» sigue preguntando."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-2:6",
+      "narracion": "Mismo programa, con una sola diferencia: el «si» está en «al iniciar». Antes de ejecutar, predice: ¿se parará delante de la caja? Piensa cuántas veces se hace la pregunta. Vamos a verlo. El «si» pregunta una sola vez, al principio. En ese momento la caja está lejos, así que dice adelante. Ya no vuelve a preguntar nunca más, y el robot choca. Es como preguntar ¿ya llegamos? solo al salir de casa. Dentro de «para siempre», la pregunta se repite muchas veces cada segundo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-2:9",
+      "narracion": "Un truco para no liarse con los signos de comparar. El signo menor que y el signo mayor que parecen una boca abierta. La boca siempre se abre hacia el número más grande. Ocho es menor que quince. Cuarenta es mayor que quince. Si giras el signo sin querer, el robot hace cosas raras: no se mueve, o no se para nunca. Para comprobarlo, lee la condición con un número de verdad: ¿60 es menor que 12? No, así que avanza. Tiene sentido al principio del camino."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-2:8",
+      "narracion": "Ahora hemos puesto «muestra el número distancia» dentro del bucle, por si acaso. Predice: ¿se parará a tiempo? Míralo. Cada número tarda casi un segundo en pasar por la pantalla. Mientras sale, el robot no vuelve a preguntar. Cuando por fin se da cuenta de que la caja está cerca, ya es tarde, y choca. La regla es sencilla: dentro del bucle, solo lo que el robot tiene que vigilar. El número, cuando ya está parado. Lo mismo pasa con una espera larga dentro del «si»."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-2:7",
+      "narracion": "El robot no frena en seco. Cuando el programa dice para, los motores se paran, pero el robot todavía se desliza un poco. Eso es la inercia. Cuanto más deprisa va, más se desliza. Por eso, si va rápido, hay que decidir antes: un umbral más grande. En la app hay un reto extra: aparcar en menos de 4 segundos a velocidad 255, quedando entre 6 y 14 centímetros de la caja. Pasa lo mismo con los coches: cerca de los obstáculos, más despacio."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: mide y elige el umbral",
+      "pasos": [
+        "Cinta métrica en el suelo, con el 0 tocando la pared",
+        "Empuja un coche de juguete; al pasar el 15, «¡para!» y suelta",
+        "Mide cuántos centímetros ha resbalado",
+        "Prueba umbrales de 10, 15 y 20, y más deprisa"
+      ],
+      "narracion": "Esta actividad se hace con alguien de casa, una cinta métrica y un coche de juguete o una pelota. Extended la cinta con el cero tocando la pared. Una persona empuja el coche. La otra, cuando pasa del 15, dice para, y se suelta. Medid dónde se ha parado. Probad umbrales de 10, 15 y 20 centímetros, y también más deprisa. ¿Con cuál queda a unos 10 centímetros sin tocar la pared? Acabáis de descubrir el número del «si»."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: se para solo",
+      "pasos": [
+        "Descarga con el interruptor apagado",
+        "Robot en el suelo, nunca en la mesa: ahora se mueve",
+        "Caja rígida a 40, 60 y 80 cm: el mismo programa",
+        "Mide dónde se para; luego prueba a 255"
+      ],
+      "narracion": "Con el Maqueen de verdad, el programa es el mismo: para siempre, si distancia menor que 12, para; si no, adelante a 150. En los imprimibles lo tienes en bloques de MakeCode. Descárgalo con el robot apagado y enciéndelo ya en la línea de salida, sin cable. Pon una caja rígida de al menos 15 centímetros de alto a 40, 60 y 80 centímetros. No pongáis manos ni pies delante para hacerlo parar. Si no se para justo donde en el simulador, es normal: mide y ajusta el número."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos",
+      "puntos": [
+        "El «si» en «al iniciar»: ¿cuántas veces pregunta?",
+        "Signo girado: léelo con un número real",
+        "Falta el «si no»: ¿qué bloque lo hace avanzar?",
+        "Una espera «para que vaya mejor»: ¿qué hace el sensor?"
+      ],
+      "narracion": "Para quien da la clase, cuatro errores que verás seguro. El «si» en «al iniciar»: pregunta cuántas veces se hace la pregunta. El signo girado: que lea la condición con un número real. El robot que no arranca porque falta el «si no»: pregunta qué bloque lo hace avanzar cuando la caja está lejos. Y la espera dentro del «si»: pregunta qué hace el sensor mientras el robot espera. En el reto de las 3 pistas, si alguien usa esperas, deja que la segunda pista le enseñe el problema."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "«Si… si no»: una pregunta, dos caminos",
+        "Dentro de «para siempre», pregunta muchas veces y para a tiempo",
+        "Más velocidad, umbral más grande",
+        "Tu reto: el robot del muelle, entre 5 y 18 cm"
+      ],
+      "narracion": "Resumimos. El bloque «si… si no» hace una pregunta y elige entre dos caminos. Dentro de «para siempre», el robot pregunta muchas veces cada segundo y se para a tiempo, esté donde esté el muro. Y cuanto más deprisa va, antes tiene que decidir. Tu reto de hoy: el robot del muelle. Elige la velocidad y a qué distancia se para, entre 5 y 18 centímetros, en las 3 pistas. Cuando se pare, que muestre la distancia para avisar a la grúa. En la próxima clase, en lugar de pararse, esquivará."
+    }
+  ]
+}

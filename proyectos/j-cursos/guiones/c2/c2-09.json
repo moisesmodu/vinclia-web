@@ -1,0 +1,112 @@
+{
+  "id": "c2-09",
+  "titulo": "Velocidad × tiempo",
+  "descripcion": "La fórmula de los robots precisos: distancia = velocidad × tiempo, y al revés. Aprende que el número de velocidad no son centímetros por segundo y calibra tu Maqueen con una regla.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k2-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Velocidad × tiempo",
+      "subtitulo": "Unidad 2 · Movimiento preciso",
+      "narracion": "Empieza la unidad 2. Llega la Fiesta de la Plaza Pintada, y este año el Maqueen dibujará figuras gigantes en el suelo. Pero hay un problema: no lleva regla. No tiene ningún sensor que cuente las vueltas de las ruedas. Entonces, ¿cómo puede saber cuánto ha avanzado? Piensa una respuesta. Si eres profe, recoge las ideas de la clase sin corregirlas. Hoy descubrirás el secreto de los robots precisos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Distancia = velocidad × tiempo",
+      "puntos": [
+        "A 150, unos 15 cm cada segundo",
+        "1 s: 15 cm · 2 s: 30 cm · 3 s: 45 cm · 4 s: 60 cm",
+        "El tiempo lo decide la espera",
+        "espera 2000 ms son 2 segundos"
+      ],
+      "narracion": "El robot mide con el tiempo. Si hace 15 centímetros cada segundo, que es lo que hace a velocidad 150, y los motores funcionan 2 segundos, recorre 15 por 2: 30 centímetros. En 3 segundos, 45. En 4 segundos, 60. La fórmula es distancia igual a velocidad por tiempo. Y el tiempo lo decide el bloque espera. Espera 2000 milisegundos son 2 segundos. Si duplicas el tiempo sin cambiar la velocidad, el robot recorre el doble."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-1:5",
+      "narracion": "Mira este programa. A velocidad 150, el robot avanza un segundo y para. Avanza otro segundo y para. Y otro. Antes de ejecutarlo, predice: ¿dónde estará después de 3 segundos? Ahora, mira. Cada segundo avanza el mismo trozo, unos 15 centímetros. Después de tres trozos, está a unos 45 de la salida. Es como contar pasos: si cada paso mide lo mismo, sabes cuánto has andado contando los pasos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El número del bloque no son cm/s",
+      "columnas": ["Velocidad del bloque", "Centímetros cada segundo"],
+      "filas": [
+        ["60", "unos 3,9"],
+        ["100", "unos 9"],
+        ["150", "unos 15"],
+        ["200", "unos 22"],
+        ["255", "unos 29"]
+      ],
+      "narracion": "Ahora, el error más habitual de esta unidad. A velocidad 150, ¿el robot avanza 150 centímetros cada segundo? No. Hace unos 15: lo hemos medido. El número del bloque es la fuerza del motor, no centímetros por segundo, y hay que medirlo. En el simulador, a 100 hace unos 9, a 200 unos 22 y a 255 unos 29. Fíjate: a 200 no va el doble que a 100. Los primeros 30 puntos no mueven la rueda: la zona muerta."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-1:13",
+      "narracion": "Ahora te toca calcular. El robot va a velocidad 150 durante 3000 milisegundos. Hay tres marcas en la pista: A, B y C. ¿Dónde se parará? Haz la cuenta antes de mirar: 15 centímetros cada segundo, por 3 segundos. Ejecutamos. Se para en la B, a unos 45 centímetros de la salida. Si alguien ha dicho 450, ha multiplicado 150 por 3. Pero recuerda: 150 no son centímetros por segundo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La fórmula al revés",
+      "puntos": [
+        "tiempo = distancia ÷ velocidad",
+        "30 cm a 15 cm/s: 2 s, es decir, 2000 ms",
+        "Fruta, 36 cm a velocidad 100: 4000 ms",
+        "Fiesta, 90 cm en menos de 4 s: 255 y 3000 ms"
+      ],
+      "narracion": "La fórmula también funciona al revés. Si el puesto está a 30 centímetros y el robot hace 15 cada segundo, ¿cuánto tiene que esperar? ¿Cuántos trozos de 15 caben en 30? Dos: 2 segundos, es decir, 2000 milisegundos. Tiempo igual a distancia entre velocidad. En los retos, la fruta está a 36 centímetros a velocidad 100: 36 entre 9 son 4 segundos. Y para llevar el pastel a 90 centímetros en menos de 4 segundos, velocidad 255 durante 3000."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el robot humano calibrado",
+      "pasos": [
+        "Robot: camina a ritmo constante, sin correr",
+        "Cronometrador: cuenta 5 segundos y dice para",
+        "Medidor: mide los centímetros con la cinta",
+        "Calculad vuestros cm cada segundo",
+        "Predecid cuánto hará en 8 segundos y comprobadlo"
+      ],
+      "narracion": "Ahora, sin pantalla. Necesitáis una cinta métrica y un reloj. Una persona hace de robot y camina a ritmo constante, sin correr. Otra cronometra 5 segundos y dice para. Y otra mide los centímetros. Dividid los centímetros entre 5 y tendréis la velocidad del robot humano. Ahora, predecid cuánto hará en 8 segundos y comprobadlo. En casa, probad a paso de tortuga y a paso de conejo: mismo tiempo, distancias diferentes."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Calibra el Maqueen de verdad",
+      "pasos": [
+        "Recta de cinta de 1,4 m con marcas cada 10 cm",
+        "Centro de las ruedas en la salida",
+        "Velocidad 150 durante 2000 ms: mídelo 3 veces",
+        "Media entre 2: la velocidad de tu robot",
+        "Calcula la espera para parar en el horno, a 45 cm"
+      ],
+      "narracion": "Con el robot de verdad, a calibrar. Haz una recta de cinta de pintor de un metro cuarenta, con una raya cada 10 centímetros. El horno es un cartón naranja con el centro a 45 centímetros. Pon el centro de las ruedas en la salida y ejecuta velocidad 150 durante 2000 milisegundos. Mide tres veces, hasta el centro de las ruedas, y haz la media. Divídela entre 2. Si hace 28 centímetros, tu robot va a 14 cada segundo. Con ese número, calcula la espera del horno."
+    },
+    {
+      "tipo": "frase",
+      "texto": "En 1962, el astronauta John Glenn quiso que Katherine Johnson revisara los cálculos del ordenador.",
+      "narracion": "Calcular velocidades, tiempos y distancias no es solo cosa de robots de juguete. La matemática Katherine Johnson calculaba las trayectorias de las naves de la NASA. En 1962, antes de su vuelo, el astronauta John Glenn quiso que ella revisara los cálculos del ordenador. Tú haces lo mismo a pequeña escala: el simulador te da una idea, y tu regla y tus cuentas dicen la última palabra."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Error", "Qué hacer"],
+      "filas": [
+        ["150 por 2 son 300 cm", "¿Cuántos cm hace en 1 segundo?"],
+        ["Pone espera 3 en vez de 3000", "1 segundo son 1000 ms"],
+        ["Mide desde puntos distintos", "Siempre el centro de las ruedas"],
+        ["Olvida el tiempo que está parado", "Línea del tiempo en papel"]
+      ],
+      "narracion": "Errores típicos de hoy. Multiplicar el número del bloque: 150 por 2, 300 centímetros. Pregunta cuántos centímetros hace en un segundo y compruébalo. Confundir segundos y milisegundos: espera 3 son solo 3 milisegundos. Medir cada vez desde un punto distinto: acordad el centro de las ruedas y marcadlo con cinta. Y en el reto de la foto, olvidar el tiempo parado. Haz una línea del tiempo: de 0 a 2 segundos avanza, de 2 a 4 y medio está quieto, y luego vuelve a avanzar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Distancia = velocidad × tiempo",
+        "El número 0-255 no son cm/s: hay que medir",
+        "Calibrar: probar, medir y ajustar",
+        "Reto: el recorrido entero del mercado"
+      ],
+      "narracion": "Repasamos. Distancia igual a velocidad por tiempo, y tiempo igual a distancia entre velocidad. El número del bloque no son centímetros por segundo: hay que medirlo. Y cada robot se calibra, porque las pilas, el suelo y las ruedas cambian un poco su velocidad. Si tu robot hace 14 y el de al lado 16, los dos están bien. Tu proyecto: el recorrido del mercado, con tres puestos, una parada en cada uno, un giro y la meta. Planifica cada tramo: centímetros y milisegundos."
+    }
+  ]
+}

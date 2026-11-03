@@ -1,0 +1,100 @@
+{
+  "id": "c3-11",
+  "titulo": "Quejas difíciles y clientes enfadados",
+  "descripcion": "Usas la IA para separar hechos de emociones en una queja, responder con una solución concreta sin ponerte a la defensiva y hasta ensayar conversaciones difíciles antes de tenerlas.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:100-instrucciones"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Quejas difíciles y clientes enfadados",
+      "subtitulo": "Sangre fría por escrito",
+      "narracion": "Tarde o temprano llega. Un cliente muy enfadado, un mensaje en mayúsculas, una queja que te parece injusta. Son los mensajes que más cuesta contestar y los que más pueden dañar tu negocio si salen mal. La IA tiene aquí una ventaja enorme: no se enfada, no se lo toma como algo personal y no tiene prisa. En esta clase la usarás para tres cosas. Entender qué pide de verdad el cliente, responder con una solución y ensayar conversaciones difíciles."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Antes de nada: no contestes en caliente",
+      "puntos": [
+        "Lee el mensaje una vez y suelta el móvil",
+        "Si te ha dolido, espera al menos media hora",
+        "Mientras, pide a la IA que lo analice",
+        "Decide tú la solución antes de redactar"
+      ],
+      "narracion": "La primera regla no tiene nada que ver con la tecnología. No contestes en caliente. Lee el mensaje una vez y suelta el móvil. Si te ha dolido, espera al menos media hora. Una respuesta escrita con rabia se queda ahí para siempre, y casi nunca arregla nada. Lo bueno es que mientras esperas puedes ir adelantando trabajo. Pide a la IA que analice el mensaje, como verás ahora, y piensa qué solución estás dispuesto a ofrecer."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Separar hechos de emociones",
+      "usuario": "Tengo una tienda online de cerámica. Te pego el mensaje de un cliente: «ES INCREÍBLE. Pago 65 euros por un jarrón y me llega ROTO. Nadie contesta. No pienso volver a compraros NUNCA». Antes de responder, dime: 1. Qué hechos cuenta. 2. Qué siente. 3. Qué pide de verdad. 4. Qué cosas están en mi mano.",
+      "ia": "1. Hechos: pagó 65 euros, el jarrón llegó roto y no ha recibido respuesta.\n2. Siente: enfado y sensación de que no le hacen caso.\n3. Pide: que alguien le responda ya y que le solucionen el problema.\n4. En tu mano: disculparte, contestar hoy, ofrecer reposición o reembolso y explicar los siguientes pasos.",
+      "narracion": "Este es el primer uso. Antes de pedir la respuesta, pide un análisis. Aquí, una tienda online de cerámica recibe un mensaje furioso por un jarrón roto. La IA separa los hechos de las emociones. Los hechos son tres: pagó, llegó roto y nadie contestó. La emoción es enfado y sentir que no le hacen caso. Y lo que pide de verdad es una respuesta rápida y una solución. Leído así, el mensaje asusta mucho menos. Y ya sabes qué tienes que contestar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La estructura de una buena respuesta",
+      "pasos": [
+        "Reconoce cómo se siente, en una frase",
+        "Pide perdón por lo que sí ha fallado",
+        "Ofrece una solución concreta, o dos a elegir",
+        "Di cuándo y cómo va a pasar",
+        "Deja un canal directo para seguir hablando"
+      ],
+      "narracion": "Con el análisis hecho, la respuesta sigue una estructura de cinco pasos. Primero, reconoce cómo se siente, en una frase y sin exagerar. Segundo, pide perdón por lo que sí ha fallado, sin peros. Tercero, ofrece una solución concreta, o mejor dos para que elija. Cuarto, di cuándo y cómo va a pasar. Y quinto, deja un canal directo para seguir hablando. Elegir entre dos soluciones devuelve al cliente la sensación de control, y eso calma mucho."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La respuesta al jarrón roto",
+      "usuario": "Ahora escribe la respuesta con esta estructura: reconoce cómo se siente, pide perdón, ofrece reposición o reembolso a elegir, di que lo resolvemos en 48 horas tras recibir una foto del paquete, y dile que puede escribirme directamente aquí. Máximo 5 frases, tono humano, de tú. Firma Clara.",
+      "ia": "Tienes toda la razón en estar enfadado: pagaste por un jarrón y te llegó roto, y encima no te contestamos a tiempo. Lo sentimos de verdad. Te proponemos dos opciones: te enviamos otro igual o te devolvemos los 65 euros, lo que prefieras. Mándanos una foto del paquete y lo resolvemos en 48 horas. Puedes escribirme directamente aquí. Clara.",
+      "narracion": "Y esta es la respuesta. Las decisiones son de Clara, la dueña de la tienda. Ella ha elegido ofrecer reposición o reembolso, el plazo de 48 horas y pedir una foto del paquete, que le servirá para reclamar a la empresa de transporte. La IA solo ha puesto las palabras. Fíjate en que reconoce también el retraso en contestar, que era una de las quejas. Clara revisa el importe, que esté bien escrito, y la envía."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Promesas vagas frente a compromisos concretos",
+      "mal": "Lo sentimos mucho, lo revisaremos y te diremos algo lo antes posible.",
+      "bien": "Lo sentimos. Te enviamos otro o te devolvemos el dinero, tú eliges. Lo resolvemos en 48 horas.",
+      "narracion": "Compara estas dos respuestas. La primera suena educada, pero al cliente enfadado le sabe a nada. Lo revisaremos y te diremos algo es lo que oye cuando cree que no le van a hacer caso. La segunda le da algo concreto: dos opciones y un plazo. Cuando le pidas la respuesta a la IA, exige compromisos concretos. Y, sobre todo, no prometas nada que no vayas a cumplir, porque una segunda decepción es mucho peor que la primera."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Cuando el cliente dice que es caro",
+      "usuario": "Soy electricista. Un cliente me escribe que 180 euros por cambiar un termo eléctrico le parece un robo. El precio incluye desplazamiento, retirada del termo viejo y 2 horas de trabajo. No voy a bajar el precio. Responde en 4 frases, con respeto y sin justificarme de más.",
+      "ia": "Entiendo que te parezca mucho y te agradezco que me lo digas. Los 180 euros incluyen el desplazamiento, las dos horas de instalación y la retirada del termo viejo. Es el precio que aplico a todos mis clientes por este trabajo. Si tienes cualquier duda sobre la instalación, aquí estoy.",
+      "narracion": "No todas las quejas tienen razón. A veces el cliente simplemente piensa que es caro. Aquí Javier, el electricista, no quiere bajar el precio, y lo dice en la instrucción. La IA responde con respeto, explica qué incluye el precio y mantiene la postura sin pedir perdón por cobrar. Fíjate en que no discute ni se pone a la defensiva. Explicar qué incluye un precio suele funcionar mejor que justificarlo con mil argumentos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Ensaya antes de la conversación difícil",
+      "usuario": "Quiero practicar. Haz de cliente enfadado porque le cancelé la cita de fisioterapia el mismo día. Contesta como lo haría él, de forma realista. Cuando yo escriba FIN, dime qué he hecho bien y qué podría mejorar.",
+      "ia": "Vale, empezamos. «Mira, me pedí la mañana libre en el trabajo para ir a la cita y me la cancelas dos horas antes. No es la primera vez. ¿Qué pasa, que mi tiempo no vale nada?»",
+      "narracion": "Este es el uso que menos gente conoce y uno de los más útiles. Si tienes que llamar o ver en persona a un cliente enfadado, ensaya antes. Pide a la IA que haga de cliente. Tú contestas como lo harías de verdad y, al terminar, le pides que te diga qué has hecho bien y qué podrías mejorar. Es como un simulacro. Diez minutos de práctica te dan mucha seguridad para la conversación real, que casi siempre es más fácil."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuándo parar y no seguir por chat",
+      "puntos": [
+        "Insultos o amenazas: no entres, responde breve",
+        "Si habla de denunciar o de abogados, no discutas",
+        "Consulta a tu gestoría o a un profesional",
+        "Pasa al teléfono o en persona cuando se alargue"
+      ],
+      "narracion": "Y hay situaciones en las que conviene parar. Si hay insultos o amenazas, no entres al trapo. Una respuesta breve y educada, y nada más. Si el cliente habla de denunciar o de abogados, no discutas por escrito ni le pidas a la IA que te diga qué dice la ley. Consulta a tu gestoría o a un profesional. Y si una conversación por chat se alarga más de tres o cuatro mensajes, propón una llamada. Por teléfono se arreglan muchas cosas que por escrito se enquistan."
+    },
+    {
+      "tipo": "frase",
+      "texto": "El cliente enfadado no quiere tener razón. Quiere que alguien le haga caso y le dé una solución.",
+      "narracion": "Quédate con esta idea. La mayoría de los clientes enfadados no quieren ganar una discusión. Quieren sentir que alguien les escucha y que su problema se va a resolver. Si reconoces cómo se sienten y les das algo concreto, muchos acaban siendo clientes fieles. La IA te ayuda a mantener la calma y a encontrar las palabras. Pero la solución, el plazo y el compromiso los decides tú, como siempre."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "No contestes en caliente: espera y analiza",
+        "Pide hechos, emociones y lo que pide de verdad",
+        "Reconoce, pide perdón, solución, plazo y canal",
+        "Tarea: ensaya con la IA una queja que temas"
+      ],
+      "narracion": "Repasamos. No contestes en caliente. Pide a la IA que separe hechos, emociones y lo que el cliente pide de verdad. Responde reconociendo cómo se siente, pidiendo perdón por lo que falló y ofreciendo una solución concreta con plazo. Si dice que es caro, explica qué incluye el precio. Y si hay amenazas o temas legales, para y consulta. Tu tarea de hoy, en 10 minutos. Ensaya con la IA la queja que más temes en tu negocio. En la próxima clase, atender en otros idiomas."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": "c2-02",
+  "titulo": "Cómo seguir el curso: niños, familias y profes",
+  "descripcion": "Aprende a sacar partido al curso en casa o en el aula: con el robot y MakeCode gratis, solo con el simulador o con actividades sin pantalla, a una sesión por semana.",
+  "vistaPrevia": true,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cómo seguir el curso",
+      "subtitulo": "Niños, familias y profes: una sesión por semana",
+      "narracion": "En esta clase te contamos cómo seguir el curso, estés donde estés. Puede que seas un chico o una chica que aprende en casa con su madre, su padre o su abuelo. Puede que seas profe o monitor de una extraescolar, con un grupo de quince alumnos. O puede que todavía no tengas el robot. Para todos hay un camino, y lo vemos ahora. También te contamos cómo es una sesión por dentro, qué papel tiene cada persona del grupo y qué normas de seguridad conviene repetir siempre."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué necesitas en cada caso",
+      "columnas": ["Situación", "Qué usas"],
+      "filas": [
+        ["En casa, con robot", "MakeCode gratis y el Maqueen"],
+        ["En casa, sin robot", "Simulador y actividades sin pantalla"],
+        ["En el aula", "Un kit por grupo de 3 o 4"],
+        ["Solo con iPad", "Un ordenador para descargar"]
+      ],
+      "narracion": "En los vídeos usamos el simulador de Numi Tech, que reproduce el Maqueen Lite con sus medidas, sensores y motores. En casa o en clase puedes seguir con MakeCode, que es gratis: busca MakeCode micro:bit en Google y añade la extensión maqueen. Un aviso importante. Si no tienes robot, MakeCode trae un simulador de la micro:bit, pero no del robot: verás las luces, no las ruedas. Por eso cada clase tiene también una actividad sin pantalla."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El simulador de Numi Tech",
+      "puntos": [
+        "Mismo robot: medidas, sensores, motores y botones",
+        "Primera sesión gratis y sin cuenta",
+        "Botón MakeCode para pasar el programa al robot",
+        "Plan escuela para centros y extraescolares"
+      ],
+      "narracion": "El simulador está dentro de Numi Tech, una aplicación web de programación y robótica para extraescolares, sin anuncios. La primera sesión se puede probar gratis y sin cuenta en tech punto numimates punto com. Para centros, AMPA y extraescolares hay un plan escuela con presupuesto a medida. Pero no es obligatorio: el curso funciona con MakeCode, con el robot y con las actividades de papel y cuerpo que tienes en los recursos."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-1:11",
+      "narracion": "Así se trabaja en el ordenador en cada sesión. Se abre la sesión del día y se miran las demostraciones de la parte Descubre. Cuando aparece una pregunta del tipo dónde terminará, se elige la respuesta antes de ejecutar el programa. Después hay una pausa activa, de pie, para mover el cuerpo. Y luego llegan los retos. Los que llevan una estrella son opcionales: para quien termina antes o para casa."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-1:8",
+      "narracion": "Vamos a practicar la costumbre más importante del curso. Este robot va adelante a velocidad 150 durante 4 segundos y después se para. ¿Llegará a la meta, se quedará corto o se pasará? Decide antes de mirar. Ahora ejecutamos. Fíjate dónde se para. Primero predecir, después ejecutar y después investigar por qué. Es la idea del método PRIMM, que se usa mucho para enseñar a programar. Acertar no es lo importante; pensar antes, sí."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Una sesión de 45 a 60 minutos",
+      "pasos": [
+        "Inicio: repaso y pregunta del día",
+        "Idea y demo en el proyector",
+        "Actividad sin pantalla, en grupos de 3",
+        "Ordenador: descubre y retos",
+        "Robot de verdad en la pista del suelo",
+        "Crea y ticket de salida"
+      ],
+      "narracion": "Si eres profe, cada clase de unidad corresponde a una sesión de Numi Tech Robótica, de 45 a 60 minutos. El ritmo recomendado es una por semana. Empieza con un repaso y una pregunta. Explica la idea con la demo del proyector. Haz la actividad sin pantalla, que es lo que se llama actividad desconectada. Después, ordenador y robot de verdad. Y cierra con el proyecto creativo y un ticket de salida: una o dos preguntas en la puerta. Cada unidad tiene cuatro clases: tres para aprender ideas nuevas y una cuarta de proyecto, donde se junta todo. En la última sección del curso tienes una clase solo para profes, con el plan completo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un papel para cada persona del grupo",
+      "puntos": [
+        "Programador o programadora: MakeCode",
+        "Piloto: enciende, apaga y coge el robot",
+        "Medidor o medidora: el metro",
+        "Secretario o secretaria: apunta los números"
+      ],
+      "narracion": "Con el robot de verdad se trabaja en grupos de 3 o 4 por kit, y cada persona tiene un papel. Quien programa pasa el código con MakeCode. El piloto es el único que enciende, apaga y coge el robot. Quien mide usa la cinta métrica. Y quien hace de secretario apunta los resultados. Los papeles rotan cada sesión. En casa, con un adulto, os repartís los papeles entre los dos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si acompañas en casa",
+      "puntos": [
+        "No toques el ratón: haz preguntas",
+        "Pide que lea el programa en voz alta",
+        "Celebra el intento, no solo el acierto",
+        "Apuntad juntos los números en la ficha"
+      ],
+      "narracion": "Si acompañas a tu hijo o a tu hija en casa, tu papel es hacer preguntas, no dar soluciones. Evita tocar el ratón. Cuando algo falle, pídele que lea el programa en voz alta, de arriba abajo. Pregunta si el robot se ha quedado corto o se ha pasado, y por cuánto. Celebra los intentos, no solo los aciertos. Y apuntad juntos los números en la ficha: velocidades, tiempos y distancias. Los usaréis en las clases siguientes, porque cada robot tiene sus propios números."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-1:14",
+      "narracion": "Y antes de tocar el robot, estas normas. El robot siempre en el suelo, o en una mesa con borde, lejos de puertas y escaleras. El programa se descarga con el robot apagado, y se enciende sin el cable puesto. Para cogerlo, primero se apaga. Dedos, pelo largo y cordones, lejos de las ruedas. Son normas sencillas que conviene repetir al principio de cada sesión."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que necesitas saber",
+      "puntos": [
+        "Simulador en los vídeos; MakeCode gratis en casa",
+        "Sin robot: actividades sin pantalla y simulador",
+        "Una sesión por semana, de 45 a 60 minutos",
+        "Predice, ejecuta e investiga"
+      ],
+      "narracion": "Recapitulamos. En los vídeos verás el simulador; en casa o en clase puedes seguir con MakeCode y el robot. Sin robot, tienes el simulador y las actividades sin pantalla. Una sesión por semana es un buen ritmo: da tiempo a repetir en casa lo que no salió. Y en cada vídeo, cuando te pidamos una predicción, para el vídeo y piensa. Para hoy, busca un espacio libre en el suelo de al menos un metro y medio, lejos de escaleras, y prepara una cinta métrica. Las fichas imprimibles las tienes en los recursos de cada clase. En la próxima vemos qué kit comprar."
+    }
+  ]
+}

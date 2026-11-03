@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cuánto pone cada uno?</title>
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-suave: #E3F5F2;
+    --bote: #F08A24;
+    --texto: #1D2733;
+    --gris: #6B7785;
+    --borde: #DDE3EA;
+    --fondo: #F4F7F9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  .tarjeta {
+    width: 100%;
+    max-width: 440px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 12px 40px rgba(29, 39, 51, 0.10);
+  }
+  h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.02em; }
+  .sub { margin: 0 0 22px; color: var(--gris); }
+  .campo { margin-bottom: 18px; }
+  .etiqueta { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+  .importe { position: relative; }
+  .importe input {
+    width: 100%;
+    font: inherit;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 12px 48px 12px 16px;
+    border: 2px solid var(--borde);
+    border-radius: 14px;
+    outline: none;
+  }
+  .importe input:focus { border-color: var(--acento); }
+  .importe span {
+    position: absolute; right: 16px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px; color: var(--gris);
+  }
+  .chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .chip {
+    font: inherit; font-weight: 600;
+    padding: 10px 0;
+    border: 2px solid var(--borde);
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .chip.activo { background: var(--acento); border-color: var(--acento); color: #fff; }
+  .contador { display: flex; align-items: center; gap: 12px; }
+  .contador button {
+    width: 48px; height: 48px;
+    font-size: 24px; font-weight: 700;
+    border: none; border-radius: 50%;
+    background: var(--acento-suave); color: var(--acento);
+    cursor: pointer;
+  }
+  .contador button:disabled { opacity: 0.4; cursor: default; }
+  #personas { font-size: 28px; font-weight: 700; min-width: 40px; text-align: center; }
+  .interruptor { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+  .interruptor input { width: 20px; height: 20px; accent-color: var(--acento); }
+  .resultado {
+    margin-top: 22px;
+    background: var(--acento);
+    color: #fff;
+    border-radius: 18px;
+    padding: 20px 22px;
+  }
+  .resultado .cada { font-size: 15px; opacity: 0.9; }
+  #porPersona { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; }
+  .detalle { display: flex; justify-content: space-between; margin-top: 10px; font-size: 15px; opacity: 0.95; }
+  #bote {
+    margin-top: 12px; padding: 8px 12px;
+    background: var(--bote); border-radius: 10px;
+    font-weight: 600; font-size: 15px;
+  }
+  #bote[hidden] { display: none; }
+</style>
+</head>
+<body>
+  <main class="tarjeta">
+    <h1>¿Cuánto pone cada uno?</h1>
+    <p class="sub">Divide la cuenta y la propina en un momento.</p>
+
+    <div class="campo">
+      <label class="etiqueta" for="total">Total de la cuenta</label>
+      <div class="importe">
+        <input id="total" inputmode="decimal" placeholder="0,00" autocomplete="off">
+        <span>€</span>
+      </div>
+    </div>
+
+    <div class="campo">
+      <span class="etiqueta">Propina</span>
+      <div class="chips" id="propinas">
+        <button class="chip" data-p="0">0 %</button>
+        <button class="chip" data-p="5">5 %</button>
+        <button class="chip activo" data-p="10">10 %</button>
+        <button class="chip" data-p="15">15 %</button>
+      </div>
+    </div>
+
+    <div class="campo">
+      <span class="etiqueta">Personas</span>
+      <div class="contador">
+        <button id="menos" aria-label="Una persona menos">−</button>
+        <span id="personas">2</span>
+        <button id="mas" aria-label="Una persona más">+</button>
+      </div>
+    </div>
+
+    <label class="interruptor">
+      <input type="checkbox" id="redondear">
+      Redondear hacia arriba lo que pone cada uno
+    </label>
+
+    <section class="resultado" aria-live="polite">
+      <div class="cada">Cada uno paga</div>
+      <div id="porPersona">0,00 €</div>
+      <div class="detalle"><span>Propina</span><span id="importePropina">0,00 €</span></div>
+      <div class="detalle"><span>Total con propina</span><span id="totalFinal">0,00 €</span></div>
+      <div id="bote" hidden></div>
+    </section>
+  </main>
+
+<script>
+  const euros = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
+  let propina = 10;
+  let personas = 2;
+
+  // Acepta "86,40" y "86.40"
+  function leerImporte() {
+    const texto = document.getElementById("total").value.replace(",", ".");
+    const numero = parseFloat(texto);
+    return isNaN(numero) || numero < 0 ? 0 : numero;
+  }
+
+  function calcular() {
+    const total = leerImporte();
+    const importePropina = total * propina / 100;
+    const totalFinal = total + importePropina;
+    let porPersona = Math.round(totalFinal / personas * 100) / 100;
+    let sobra = 0;
+    if (document.getElementById("redondear").checked) {
+      porPersona = Math.ceil(porPersona);
+      sobra = porPersona * personas - totalFinal;
+    }
+    document.getElementById("porPersona").textContent = euros.format(porPersona);
+    document.getElementById("importePropina").textContent = euros.format(importePropina);
+    document.getElementById("totalFinal").textContent = euros.format(totalFinal);
+    const bote = document.getElementById("bote");
+    bote.hidden = sobra < 0.005;
+    bote.textContent = "Sobran " + euros.format(sobra) + " para el bote";
+  }
+
+  document.getElementById("propinas").addEventListener("click", (e) => {
+    const chip = e.target.closest(".chip");
+    if (!chip) return;
+    propina = Number(chip.dataset.p);
+    document.querySelectorAll(".chip").forEach(c => c.classList.toggle("activo", c === chip));
+    calcular();
+  });
+
+  function cambiarPersonas(cambio) {
+    personas = Math.max(1, Math.min(30, personas + cambio));
+    document.getElementById("personas").textContent = personas;
+    document.getElementById("menos").disabled = personas === 1;
+    calcular();
+  }
+  document.getElementById("menos").addEventListener("click", () => cambiarPersonas(-1));
+  document.getElementById("mas").addEventListener("click", () => cambiarPersonas(1));
+  document.getElementById("total").addEventListener("input", calcular);
+  document.getElementById("redondear").addEventListener("change", calcular);
+  calcular();
+</script>
+</body>
+</html>

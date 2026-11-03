@@ -1,0 +1,48 @@
+{
+ "id": "c1-promo",
+ "titulo": "Vídeo promocional",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Enseña a programar a tu hijo, sin saber programar",
+   "subtitulo": "Plan de 4 semanas para niños de 6 a 11 años",
+   "narracion": "¿Quieres que tu hijo aprenda a programar, pero tú no sabes programar? No pasa nada. Este curso está hecho para ti, no para él: te da un plan de cuatro semanas, veinte minutos al día, para hacerlo en casa."
+  },
+  {
+   "tipo": "captura",
+   "fuente": "presenta:r1-1:11",
+   "narracion": "Empezamos sin pantalla. Tu hijo hace de robot y tú das las órdenes: adelante, gira a la izquierda, gira a la derecha. En diez minutos ya ha entendido qué es un algoritmo, y os habéis reído un rato."
+  },
+  {
+   "tipo": "pasos",
+   "titulo": "Cuatro semanas, paso a paso",
+   "pasos": [
+    "Semana 1: órdenes en orden y cazar errores",
+    "Semana 2: bucles y patrones",
+    "Semana 3: eventos, condiciones y funciones",
+    "Semana 4: su primer videojuego en Scratch"
+   ],
+   "narracion": "Cada semana tiene sus actividades preparadas. Primero, órdenes en orden y cazar errores. Después, bucles y patrones. Luego, eventos, condiciones y funciones. Y la cuarta semana, su primer videojuego en Scratch, con marcador y vidas."
+  },
+  {
+   "tipo": "puntos",
+   "titulo": "Y lo que nadie te cuenta",
+   "puntos": [
+    "Qué decir cuando se frustra",
+    "Cómo preguntar en vez de dar la respuesta",
+    "Cuentas, privacidad y tiempo de pantalla"
+   ],
+   "narracion": "Y también lo que nadie te cuenta: qué decir cuando se frustra, cómo preguntar en vez de darle la respuesta, y cómo configurar cuentas, privacidad y tiempo de pantalla para que programe con seguridad."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Empieza hoy",
+   "puntos": [
+    "Fichas para imprimir en cada semana",
+    "Sin comprar nada: Scratch es gratis",
+    "Las tres primeras clases, gratis"
+   ],
+   "narracion": "Tienes fichas para imprimir en cada semana y no necesitas comprar nada. Mira las tres primeras clases gratis y empieza hoy con el juego del robot."
+  }
+ ]
+}

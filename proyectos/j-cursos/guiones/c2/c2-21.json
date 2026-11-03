@@ -1,0 +1,105 @@
+{
+  "id": "c2-21",
+  "titulo": "El robot mariposa",
+  "descripcion": "Conoce los dos sensores de luz del Maqueen, aprende a elegir un umbral midiendo y programa un robot mariposa que compara izquierda y derecha para ir solo hacia la luz.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k5-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El robot mariposa",
+      "subtitulo": "Unidad 5 · Luz, sonido y LED · Sensores de luz y umbral",
+      "narracion": "Empieza la unidad 5: luz, sonido y LED. Llega la Noche de los Farolillos, una fiesta nocturna en el pueblo. El ayuntamiento nos hace cuatro encargos: un robot mariposa que vaya solo hacia la luz, alarmas para el museo, farolas automáticas y una casa inteligente. Hoy empezamos por la mariposa. El Maqueen aprenderá a notar la luz con dos sensores de delante y a ir hacia ella él solo. Si eres profe, esta clase corresponde a una sesión de unos 45 minutos."
+    },
+    {
+      "tipo": "frase",
+      "texto": "¿Cómo sabe una mariposa nocturna dónde está la farola, si no tiene mapa?",
+      "narracion": "Antes de nada, una pregunta. Muchas mariposas nocturnas vuelan hacia las farolas. No tienen mapa ni GPS. ¿Qué deben de hacer para llegar? Piénsalo un momento y di tu idea en voz alta. Si das la clase, recoge las ideas sin corregirlas todavía. Y recordemos la estructura que ya conocemos de las unidades 3 y 4: un «si» dentro de un «para siempre», que pregunta al sensor una y otra vez. Hoy el sensor es nuevo, pero la estructura es la misma."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dos ojos para la luz",
+      "puntos": [
+        "Dos sensores de luz delante: luz izquierda y luz derecha",
+        "Cada uno da un número de 0 (oscuro) a 1023 (mucha luz)",
+        "Aula de día: unos 260. A oscuras: unos 25",
+        "Con un foco cerca y de cara, el número sube mucho"
+      ],
+      "narracion": "Delante, en las esquinas, el Maqueen tiene dos sensores de luz. Cada uno da un número de 0 a 1023. El 0 es oscuridad total y el 1023, una luz muy fuerte. ¿Por qué 1023 y no 1000? Porque el robot mide la luz con 1024 escalones, del 0 al 1023. En el simulador, un aula de día marca unos 260 y a oscuras, unos 25. Un foco cerca y de cara hace subir mucho el número. Ojo: no son cámaras. No ven formas, solo dicen cuánta luz les llega."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-1:6",
+      "narracion": "Vamos al simulador. El programa dice: si la luz izquierda es mayor que 400, para; si no, adelante. Antes de ejecutarlo, predice: ¿dónde se parará el robot? Señálalo en la pantalla. Predecir antes de ejecutar es la primera fase del método PRIMM y te obliga a leer el programa. Mira ahora el panel: la luz sube a medida que el robot se acerca a la flor. Cuando pasa de 400, el «si» cambia de rama y el robot para. Ese número frontera se llama umbral. Un buen umbral es más alto que la luz normal y más bajo que la del foco."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-1:8",
+      "narracion": "Ahora, la mariposa de verdad. Si el foco está a la izquierda, el sensor izquierdo recibe más luz. Entonces el robot gira a la izquierda: motor izquierdo lento, a 50, y derecho rápido, a 130. Si no, gira a la derecha. Y cuando alguna de las dos luces pasa de 600, para. Antes de ejecutar, predice: ¿irá recto hacia el foco o hará eses? Fíjate en el camino. Hace zigzag, porque en cada vuelta solo sabe qué lado tiene más luz y corrige un poco. Dos sensores unidos a los motores con una regla tan sencilla, y el robot parece vivo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-1:9",
+      "narracion": "Cuidado con esta. Mismo programa, pero el umbral es 900. Predice: ¿se parará en la flor? Mira qué pasa. El robot no para nunca y choca con la maceta. ¿Por qué? Porque este foco no pasa de unos 450. La condición no se cumple jamás. Es un error muy típico: poner 1000 de umbral pensando que así es más seguro que pare. Es al revés. Primero se mide cuánto marca cerca del foco, y después se elige un número un poco más bajo. El umbral se elige midiendo, no adivinando."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la mariposa humana",
+      "pasos": [
+        "Grupos de 4: mariposa, sensor izquierdo, sensor derecho y foco",
+        "Los sensores levantan una tarjeta: 25, 260, 700 o 900",
+        "Si alguna tarjeta pasa de 600, la mariposa para",
+        "Si el izquierdo es mayor, gira a la izquierda; si no, a la derecha",
+        "Un paso y se vuelve a empezar"
+      ],
+      "narracion": "Ahora, sin pantalla. Haced grupos de cuatro: una mariposa, dos sensores y un foco, que puede ser una linterna apagada o una hoja amarilla. Los sensores se ponen a los lados de la mariposa y levantan una tarjeta según lo cerca y de cara que tienen el foco. Foco detrás, 25. Lejos y de cara, 260. Cerca, 700. Tocando, 900. Las tarjetas están en el imprimible de esta clase. La mariposa aplica la regla y da un paso. En casa, con un adulto, sirve igual con dos personas y los brazos estirados como sensores."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Medimos la luz con el Maqueen",
+      "pasos": [
+        "Carga el código «medir la luz»: botón A izquierda, botón B derecha",
+        "Mide: aula, sombra con la mano, linterna a 30 y a 10 centímetros",
+        "Apunta los números y elige vuestro umbral",
+        "Cambia el 600 de la mariposa por vuestro umbral y descárgala",
+        "Robot en el suelo y la linterna nunca a los ojos"
+      ],
+      "narracion": "Con el robot de verdad, lo primero es medir. En MakeCode, gratis en makecode punto microbit punto org, añade la extensión maqueen y carga el código de medir la luz del imprimible. El botón A muestra la luz izquierda y el B, la derecha. Medid de día en la mesa, con la mano haciendo sombra y con la linterna a 30 y a 10 centímetros. Apuntadlo y elegid el umbral. Después cambiad el 600 de la mariposa por vuestro número. Sin robot, MakeCode solo simula la micro:bit, no el Maqueen."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de la mariposa",
+      "puntos": [
+        "Reto 1 · Hasta la flor: parar en la zona amarilla, 3 pistas",
+        "Reto 2 · La mariposa despistada: huye del foco, arréglala",
+        "Reto 3 · La mariposa del pasacalles: desde cero, 4 pistas",
+        "Reto extra · Llegada con fiesta: icono y luces amarillas",
+        "Crea: tu mariposa, con tus velocidades y tu celebración"
+      ],
+      "narracion": "Llegan los retos. En el primero, el foco de la flor cambia de sitio cada noche y el robot debe parar en la zona amarilla sin tocar la maceta. En el segundo, la mariposa huye de la luz. Lee el programa en voz alta antes de tocar nada: si la izquierda tiene más luz, ¿qué motor va lento? En el tercero la programas desde cero y debe funcionar en las cuatro pistas. Con tiempos fijos no lo conseguirás, porque el foco cambia de sitio. El reto extra y el de crear son para quien vaya rápido o para casa."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pista para arreglarlo"],
+      "filas": [
+        ["Umbral de 900 o 1000: no para", "Mira el máximo cerca del foco"],
+        ["Gira hacia el lado contrario", "¿Qué pie da pasos más largos?"],
+        ["Da vueltas sobre el foco", "Añade «o luz derecha mayor que 600»"],
+        ["Rueda quieta a velocidad 20", "Zona muerta: motor lento de 40 a 60"],
+        ["En el aula no encuentra la linterna", "Oscurece el rincón y vuelve a medir"]
+      ],
+      "narracion": "Repasemos los errores típicos. Umbral demasiado alto: que mire el panel y busque el número más alto cerca del foco. Gira al revés: que camine en arco hacia la izquierda. ¿Qué pie da pasos más largos? El de fuera, el derecho. Da vueltas sobre el foco sin parar: solo mira la luz izquierda, le falta «o luz derecha mayor que 600». En el robot real, un motor a 20 no gira: recuerda la zona muerta, por debajo de 30 no tiene fuerza. Y si el aula es muy clara, oscureced un rincón."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Los sensores de luz dan un número de 0 a 1023",
+        "El umbral separa poca luz de mucha, y se elige midiendo",
+        "Comparando izquierda y derecha, el robot gira hacia la luz"
+      ],
+      "narracion": "Resumen. Los sensores de luz dan un número de 0 a 1023. El umbral separa poca luz de mucha luz, y se elige midiendo. Comparando la izquierda con la derecha, el robot gira hacia el foco. Para hoy: haz de detective de la luz. Elige cinco sitios de casa y ponles nota: oscuro, normal o mucha luz. Repítelo a otra hora. Y nunca mires directamente una bombilla o el sol. En la próxima clase, alarmas: el robot aprenderá a avisar con sonido y luces."
+    }
+  ]
+}

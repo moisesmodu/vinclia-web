@@ -1,0 +1,96 @@
+{
+  "id": "c3-14",
+  "titulo": "Un mes de publicaciones en 20 minutos",
+  "descripcion": "Prepara con IA los temas, el calendario y los textos de un mes de publicaciones para Instagram, Facebook o tu ficha de Google, en una sola sesión de trabajo.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:calendario-publicaciones"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Un mes de publicaciones en 20 minutos",
+      "subtitulo": "Temas, calendario y textos de una sentada",
+      "narracion": "¿Te pasa que abres Instagram a las once de la noche pensando qué publicar mañana? Es lo normal cuando llevas un negocio tú solo. En esta clase vas a cambiar ese hábito por uno mejor: una sesión de veinte minutos al mes en la que la IA te ayuda a decidir los temas, montar el calendario y redactar los textos. Tú pones las fotos reales y das el visto bueno. Usaremos de ejemplo un bar de menú del día en Zaragoza, pero el método sirve igual para una tienda online o una fisio."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué trabajar por lotes",
+      "puntos": [
+        "Decides una vez al mes, no cada noche",
+        "Los temas se reparten y no repites lo mismo",
+        "Las fechas clave no te pillan por sorpresa",
+        "Haces las fotos de la semana en un solo rato",
+        "Constancia antes que cantidad: dos o tres por semana"
+      ],
+      "narracion": "Trabajar por lotes significa hacer de golpe algo que antes hacías a trozos. Para las redes funciona muy bien. Decides una vez y el resto del mes solo publicas. Además, al ver el mes entero de un vistazo, te das cuenta de si solo hablas de ofertas o si te olvidas de las fiestas del barrio. Para un pequeño negocio, dos o tres publicaciones por semana con constancia valen más que una avalancha la primera semana y silencio después. Ese es el ritmo que vamos a preparar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 1: los temas fijos",
+      "usuario": "Usa la ficha de mi negocio: bar de menú del día en el barrio de Delicias, Zaragoza. Propón 4 temas fijos para mis redes, que se puedan repetir cada semana. Para cada tema, una frase de explicación y un ejemplo.",
+      "ia": "1. El menú de hoy: foto del primer plato y precio. Ejemplo: hoy hay borraja con patata.\n2. Detrás de la barra: el equipo y la cocina. Ejemplo: Pili preparando las croquetas.\n3. Tu barrio: comercios y fiestas de Delicias. Ejemplo: la fruta nos la trae la frutería de enfrente.\n4. Clientes de siempre: preguntas y anécdotas. Ejemplo: qué postre pide más la gente.",
+      "narracion": "El primer paso es elegir unos pocos temas fijos. Los profesionales del marketing los llaman pilares de contenido. Con cuatro tienes de sobra. La ventaja es que ya no partes de cero: cada semana toca un poco de cada tema. Fíjate en que la IA ha usado datos de la ficha, como el barrio. Pero los nombres y los platos de los ejemplos son inventados. Si en tu cocina no hay ninguna Pili ni haces borraja, cámbialos. Quédate con los temas que te salgan con naturalidad y descarta el resto."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 2: el calendario del mes",
+      "usuario": "Con esos 4 temas, haz un calendario de noviembre con 3 publicaciones por semana: lunes, miércoles y viernes. Ponlo en una tabla con fecha, tema, idea en una frase y qué foto necesito. Ten en cuenta el puente y las fechas de mi zona, pero márcalas como pendientes de confirmar.",
+      "ia": "Lunes 2: El menú de hoy. Primer menú de otoño. Foto: plato de cuchara en la mesa.\nMiércoles 4: Detrás de la barra. Así empieza el día en cocina. Foto: el equipo a las nueve.\nViernes 6: Tu barrio. Recomendamos la frutería de enfrente. Foto: la fachada del vecino.\n…\nFechas a confirmar por ti: festivos locales y eventos del barrio.",
+      "narracion": "Ahora le pides el calendario en forma de tabla. Así lo puedes copiar a una hoja de cálculo o imprimirlo y pegarlo junto a la cafetera. Fíjate en dos detalles de la instrucción. Primero, le pides qué foto necesitas, y así sabes qué hacer durante la semana. Segundo, le pides que marque las fechas locales como pendientes de confirmar. La IA puede equivocarse con festivos y eventos, y a veces se los inventa. Las fechas las compruebas tú en el calendario del ayuntamiento o preguntando en el barrio."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Así queda una semana",
+      "columnas": ["Día", "Tema", "Foto que necesitas"],
+      "filas": [
+        ["Lunes", "El menú de hoy", "Primer plato en la mesa"],
+        ["Miércoles", "Detrás de la barra", "Equipo preparando el día"],
+        ["Viernes", "Tu barrio", "Comercio vecino, con permiso"]
+      ],
+      "narracion": "Esta es una semana del calendario ya limpia. Tres publicaciones, tres temas distintos y una lista de fotos que puedes hacer el lunes por la mañana en cinco minutos. Ojo con la última fila. Si sacas a un vecino, a un cliente o la fachada de otro comercio con su gente, pide permiso antes. Y si sale tu equipo, también. En la sección legal hablaremos de datos personales con más calma. De momento quédate con la idea: la foto real es tuya, el permiso también lo pides tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Paso 3: los textos de la semana",
+      "usuario": "Escribe los textos de las 3 publicaciones de la primera semana. Máximo 4 líneas cada uno, tono de bar de barrio, como hablaría yo en la barra. Un máximo de 2 emojis y 3 etiquetas por texto. Deja entre corchetes el precio y los platos.",
+      "ia": "Lunes: Hoy estrenamos menú de otoño. De primero, [plato de cuchara]; de segundo, [plato]. Todo por [precio]. Te esperamos de una a cuatro. #Delicias #Zaragoza #MenuDelDia\n\nMiércoles: A las nueve ya huele a sofrito. Así empieza el día en nuestra cocina. #DetrásDeLaBarra\n\nViernes: La fruta de nuestros postres viene de [frutería], aquí al lado. Barrio que se cuida.",
+      "narracion": "El tercer paso es redactar. Pide los textos por semanas, no el mes entero de golpe, porque así revisas mejor. Dale pistas de tu forma de hablar: como hablaría yo en la barra funciona muy bien. Limitar los emojis y las etiquetas evita ese aspecto de anuncio automático que a todos nos echa para atrás. Y otra vez, los corchetes. Los platos y el precio del menú cambian cada semana, así que los rellenas tú el mismo día. Si la IA te los rellena, revisa que coinciden con tu pizarra."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Texto genérico frente a texto con vida",
+      "mal": "¡Ven a disfrutar de nuestra deliciosa comida casera! ¡Calidad y sabor en cada plato!",
+      "bien": "A las nueve ya huele a sofrito. Hoy, lentejas de la abuela de Javi. Menú de una a cuatro.",
+      "narracion": "Compara estos dos textos. El de la izquierda podría ser de cualquier bar de España, y por eso nadie lo recuerda. El de la derecha tiene una hora, un olor, un plato y una persona. Si la IA te da textos como el primero, la solución casi nunca es pedir que sea más creativo. La solución es darle un detalle real: qué se cocina hoy, quién lo hace, qué te ha dicho un cliente. Con un solo detalle verdadero, el texto mejora muchísimo. Ese detalle solo lo tienes tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un texto, tres sitios",
+      "usuario": "Adapta el texto del lunes a tres sitios: una publicación de mi ficha de Google sin etiquetas, un estado de WhatsApp Business de una línea y un mensaje para mi lista de difusión de clientes habituales.",
+      "ia": "Ficha de Google: Estrenamos menú de otoño en Delicias. De primero, [plato]; de segundo, [plato]. Menú a [precio], de una a cuatro.\n\nEstado de WhatsApp: Hoy, menú de otoño. Te esperamos a mediodía.\n\nLista de difusión: Hola, ¿qué tal? Hoy estrenamos menú de otoño con [plato]. Si quieres que te guardemos mesa, contesta a este mensaje.",
+      "narracion": "Un mismo contenido puede vivir en varios sitios si lo adaptas. Esta instrucción convierte la publicación del lunes en tres versiones: la ficha de Google, que vimos en la clase anterior, un estado de WhatsApp Business y un mensaje para tu lista de difusión. Cada sitio tiene su tono. En la ficha, información clara. En el estado, una línea. En la lista de difusión, un mensaje cercano que invita a responder. Envía la lista de difusión solo a clientes que han aceptado recibir tus mensajes. Así trabajas una vez y llegas a más gente."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Pide a la IA 4 temas fijos para tus redes",
+        "Quédate con 3 o 4 que te salgan con naturalidad",
+        "Pide el calendario de la próxima semana en tabla",
+        "Apunta las fotos que necesitas y hazlas mañana",
+        "Redacta solo el primer texto y publícalo revisado"
+      ],
+      "narracion": "Hoy no hace falta preparar el mes entero. En diez minutos haz la primera parte: pide tus temas fijos, quédate con los que te convenzan y pide el calendario solo de la semana que viene. Apunta las fotos que necesitas. Mañana, cuando estés trabajando, hazlas con el móvil. Redacta el primer texto, revísalo y publícalo. En los recursos de esta clase tienes la plantilla del calendario de publicaciones, con las tres instrucciones de hoy y una tabla para rellenar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Una sesión al mes en vez de improvisar cada noche",
+        "Temas fijos, calendario en tabla y textos por semanas",
+        "Fechas locales, precios y platos: los confirmas tú",
+        "Un detalle real vale más que cualquier adjetivo"
+      ],
+      "narracion": "Resumiendo. Con tres instrucciones, temas, calendario y textos, preparas un mes de publicaciones en unos veinte minutos. La IA te quita el bloqueo y el trabajo de redacción. Tú confirmas fechas, precios y platos, haces las fotos reales y añades ese detalle que hace que el texto suene a ti. En la próxima clase hablaremos de imágenes generadas con IA: cuándo te pueden ayudar, cuándo es mejor no usarlas y qué pasa con los derechos."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "seccion": 4,
+  "titulo": "Cuestionario: marketing sin agencia",
+  "preguntas": [
+    {
+      "pregunta": "La IA te devuelve una descripción para tu ficha de Google que dice «la mejor peluquería de Lleida, calidad insuperable». ¿Qué haces?",
+      "respuestas": [
+        "La publico tal cual: suena muy profesional",
+        "Pido que quite los superlativos y le doy datos concretos: barrio, especialidad, cómo pedir cita",
+        "Añado más adjetivos para destacar",
+        "Dejo la ficha sin descripción"
+      ],
+      "correcta": 1,
+      "explicacion": "Los superlativos no ayudan a decidir y nadie se los cree. Los datos concretos (dónde estás, qué haces mejor, cómo se pide cita, cuándo abres) sí. Si la IA no los tiene, se los das tú."
+    },
+    {
+      "pregunta": "¿Para qué sirve pedir a la IA que deje entre corchetes lo que tienes que completar tú?",
+      "respuestas": [
+        "Para que no se invente precios, fechas ni datos que solo tú conoces",
+        "Para que el texto quede más bonito",
+        "Para que Google lo posicione mejor",
+        "Para no tener que revisar el texto"
+      ],
+      "correcta": 0,
+      "explicacion": "Los corchetes marcan los huecos para tus datos reales: precio, fechas, teléfono, horario. Así la IA no rellena con datos inventados que podrías publicar sin darte cuenta."
+    },
+    {
+      "pregunta": "Vendes tazas de cerámica en tu tienda online. ¿Qué imagen deberías usar en la ficha de cada producto?",
+      "respuestas": [
+        "Una imagen generada con IA, que queda más bonita",
+        "Una imagen al estilo de un artista famoso",
+        "Una foto real de la taza, mejorada con buena luz si hace falta",
+        "Cualquier foto de una taza parecida sacada de internet"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que el cliente compra debe ser real: espera recibir exactamente eso. La IA va bien para fondos e ilustraciones y para darte consejos que mejoren tus fotos reales."
+    },
+    {
+      "pregunta": "En SEO local, ¿qué conviene revisar en tu web, tu ficha de Google y tus redes?",
+      "respuestas": [
+        "Que cada sitio tenga un teléfono distinto",
+        "Que repitan muchas veces el nombre de tu ciudad",
+        "Que no haya ninguna dirección",
+        "Que el nombre, la dirección y el teléfono sean exactamente iguales"
+      ],
+      "correcta": 3,
+      "explicacion": "Los datos de contacto coherentes en todas partes evitan confundir a clientes y buscadores. Repetir la ciudad muchas veces no funciona y espanta a los clientes."
+    },
+    {
+      "pregunta": "Quieres preparar el correo del mes para tus pacientes de fisioterapia. ¿Qué es correcto?",
+      "respuestas": [
+        "Pegar la lista de pacientes con sus lesiones para que la IA personalice",
+        "Pedir a la IA solo el texto, sin nombres ni datos de salud, y enviarlo a quien ha aceptado recibirlo",
+        "Pedir a la IA que prometa resultados para que reserven más",
+        "Enviar el texto sin revisar el consejo"
+      ],
+      "correcta": 1,
+      "explicacion": "A la IA le pides el texto, nunca la lista de clientes. Los datos de salud son una categoría especial. Revisa el consejo con tu criterio y evita prometer resultados médicos."
+    }
+  ]
+}

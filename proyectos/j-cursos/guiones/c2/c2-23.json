@@ -1,0 +1,118 @@
+{
+  "id": "c2-23",
+  "titulo": "La farola automática",
+  "descripcion": "Programa una farola que se enciende sola cuando oscurece y se apaga cuando vuelve la luz, usa las 4 luces de abajo del Maqueen y combina dos «si» en un mismo «para siempre».",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k5-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La farola automática",
+      "subtitulo": "Unidad 5 · Luz, sonido y LED · El «si no» que apaga",
+      "narracion": "Tercera sesión de la unidad 5. Cada año, en la fiesta, alguien se olvida de encender las farolas de la plaza, o de apagarlas por la mañana. El electricista del pueblo nos pide farolas automáticas: que se enciendan solas cuando oscurece y se apaguen solas cuando vuelve la luz. Así no se malgasta energía. Hoy el Maqueen será una farola, con sus cuatro luces de colores de abajo, y al final también un coche con faros."
+    },
+    {
+      "tipo": "frase",
+      "texto": "¿Alguien pasa cada tarde a encender las farolas? ¿Cómo saben cuándo encenderse?",
+      "narracion": "Una pregunta para empezar. ¿Quién enciende las farolas de tu calle? ¿Pasa alguien cada tarde? ¿A qué hora se encienden? Deja la respuesta abierta, la resolveremos enseguida. Antes, un repaso de la clase de las alarmas. ¿Cuánto dura una nota de un tiempo? Medio segundo, y mientras suena el programa espera. ¿Y qué pasaba si la alarma no tenía si no? Que se quedaba roja para siempre. Guarda esa idea, porque hoy vuelve a salir."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El umbral de la farola",
+      "puntos": [
+        "De día, el sensor marca unos 260; de noche, unos 25",
+        "Elegimos un umbral entre los dos: 100",
+        "¿Luz menor que 100? Es de noche: enciende",
+        "Si no, es de día: apaga",
+        "La mariposa usaba «mayor que»; la farola usa «menor que»"
+      ],
+      "narracion": "Imagina la gráfica de la luz de un día entero. Al mediodía, el sensor marca unos 260. De noche, unos 25. Elegimos un umbral entre los dos, por ejemplo 100. La pregunta de la farola es: ¿la luz es menor que 100? Si lo es, es de noche y enciende. Si no, es de día y apaga. Fíjate en el signo. La mariposa quería saber si había mucha luz y usaba mayor que. La farola quiere saber si hay poca y usa menor que."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuatro luces de colores abajo",
+      "puntos": [
+        "Numeradas del 1 al 4, debajo del Maqueen",
+        "Se encienden todas a la vez o una a una",
+        "Muchos colores: blanco, amarillo, rojo, verde…",
+        "Para apagarlas, elige «apagado»",
+        "En MakeCode necesitan la extensión «neopixel»"
+      ],
+      "narracion": "Para la farola usaremos las cuatro luces de colores de debajo del Maqueen, numeradas del 1 al 4. El bloque luces de abajo las enciende todas a la vez o una sola, del color que quieras. Para apagarlas, eliges apagado. Cada una tiene tres lucecitas, roja, verde y azul, y mezclándolas hace muchos colores. Por eso se llaman RGB, de las palabras inglesas red, green y blue. Un aviso para el robot de verdad: en MakeCode, estas luces necesitan la extensión neopixel, además de la extensión maqueen."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-3:6",
+      "narracion": "Vamos al simulador con la farola completa. En esta prueba, a los 2 segundos oscurece y a los 5 vuelve la luz. Antes de ejecutar, predice: ¿qué harán las luces de abajo en cada momento? Mira el panel. Cuando la luz baja de 260 a 25, el si cambia de rama y las luces se encienden. Cuando vuelve la luz, la parte si no las apaga. La farola no mira el reloj, mira la luz. Por eso funciona igual en verano que en invierno, cuando oscurece antes."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-3:7",
+      "narracion": "Misma prueba, pero esta farola no tiene si no. Predice: ¿se apagará en el último segundo, cuando vuelva la luz? Mira. Se enciende cuando oscurece, pero cuando vuelve el día, nadie le dice que se apague. Las luces se quedan como están hasta que un bloque las cambia. Es el error típico de hoy: pensar que basta con decir cuándo encender, que ya se apagará sola. Hay que decir qué hace en los dos casos: de noche, encendida; de día, apagada."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-3:8",
+      "narracion": "Último ejemplo: el coche del pasacalles. Dentro del para siempre hay dos si seguidos. El primero mira la luz y decide los faros. El segundo mira la distancia y decide los motores: para cerca de la pared y, si no, adelante. Antes de ejecutarlo, predice: ¿el coche solo se moverá de noche? No. Las dos preguntas no dependen la una de la otra. El robot hace primero una y después la otra, tan deprisa que parece que lo haga todo a la vez."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la calle de farolas",
+      "pasos": [
+        "De 6 a 8 farolas de pie, cada una con su umbral: 50, 100, 150 o 200",
+        "El profe hace de cielo: enseña luces que bajan y suben",
+        "Luz menor que tu umbral: brazos arriba",
+        "Si no: brazos abajo",
+        "Ronda 2: una farola sin «si no»"
+      ],
+      "narracion": "Ahora, la calle de farolas, con las tarjetas del imprimible. De seis a ocho personas se ponen en fila. Cada una es una farola con su tarjeta de umbral: 50, 100, 150 o 200. El profe hace de cielo y enseña tarjetas de luz que bajan, 260, 200, 120, 25, y luego suben. Cada farola levanta los brazos cuando la luz es menor que su umbral y los baja cuando no. ¿Quién se enciende primero? ¿Quién se apaga la última? En la segunda ronda, una farola no tiene si no."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El túnel de la calle con el Maqueen",
+      "pasos": [
+        "Carga la farola y tapa el robot con una caja de zapatos",
+        "Con caja, luces encendidas; sin caja, apagadas",
+        "Si no va, mide la luz dentro y fuera y cambia el 100",
+        "Coche: calle de 1 metro con la caja de túnel y un libro de pared",
+        "Faros dentro del túnel y parar ante la pared"
+      ],
+      "narracion": "Con el robot de verdad, cargad la farola y poned una caja de zapatos encima del robot. Las luces de abajo se tienen que encender. Quitad la caja y se tienen que apagar. Si no funciona, medid la luz dentro y fuera con el código de la sesión del robot mariposa, y elegid un umbral entre los dos números. Después, el coche: una calle de cinta de un metro, la caja en medio como túnel y un libro de pie al final como pared. La pista está en el imprimible."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de la farola",
+      "puntos": [
+        "Reto 1 · La luz intermitente: 4 parpadeos amarillos con 5 bloques",
+        "Reto 2 · La farola de la plaza: blanca cuando oscurece",
+        "Reto 3 · De la noche al día: también se apaga por la mañana",
+        "Reto extra · El coche del pasacalles: faros y parar ante la pared",
+        "Crea: tu farola de fiesta, con tus colores"
+      ],
+      "narracion": "En el primer reto, las luces de abajo parpadean cuatro veces: amarillas medio segundo y apagadas medio segundo, con solo cinco bloques. Otra vez el repite. En el segundo, cada pista oscurece en un momento distinto, así que no puedes hacerlo con tiempos. En el tercero vuelve el día, y ahí descubrirás por qué hace falta el si no. El reto extra es el coche del pasacalles, que debe parar a menos de 14 centímetros de la pared. Y luego, crea tu farola de fiesta."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pregunta que ayuda"],
+      "filas": [
+        ["Se enciende de día", "De noche, ¿número grande o pequeño?"],
+        ["No se apaga por la mañana", "¿Qué bloque apaga las luces?"],
+        ["El coche solo anda de noche", "¿Una pregunta depende de la otra?"],
+        ["Farola con espera hasta la noche", "¿Sabe a qué hora oscurecerá?"],
+        ["El si está en al iniciar", "¿Cuántas veces mira la luz?"]
+      ],
+      "narracion": "Errores típicos. Si la farola se enciende de día, ha usado mayor que: de noche la luz es un número pequeño. Si no se apaga, falta el si no. Si el coche solo se mueve de noche, ha metido el si de la distancia dentro del de la luz; que los ponga uno detrás de otro. Si usa una espera, fallará en la otra pista. Si el si está en al iniciar, mira la luz una sola vez. Y si en la caja entra luz, a medir y ajustar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Farola: si luz menor que el umbral, encendida; si no, apagada",
+        "Sin «si no», la farola no se apaga nunca",
+        "Dos «si» seguidos hacen dos trabajos a la vez"
+      ],
+      "narracion": "Resumen. La farola automática enciende si la luz es menor que el umbral y, si no, apaga. Sin el si no, se queda encendida para siempre. Las cuatro luces de abajo se encienden todas o una a una, de muchos colores. Y dos si seguidos hacen dos trabajos a la vez. Para hoy, con un adulto, cuando oscurezca: apunta a qué hora se encienden las farolas de tu calle dos días distintos. Muchas tienen un sensor de luz y otras, un reloj."
+    }
+  ]
+}

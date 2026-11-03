@@ -1,0 +1,139 @@
+{
+  "id": "c2-07",
+  "titulo": "Girar sobre sí mismo",
+  "descripcion": "Cómo gira un robot sin volante: giro sobre sí mismo (90 grados en unos 600 ms a velocidad 100), giro en arco y cómo calibrar el giro de tu Maqueen en una cruz de cinta.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:k1-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Girar sobre sí mismo",
+      "subtitulo": "¿Cómo gira un robot que no tiene volante?",
+      "narracion": "Nos vamos al puerto. Los robots del muelle llevan cajas de un barco a otro, pero el camino tiene esquinas, y hay que girar. Repaso rápido: ¿por debajo de qué velocidad el motor del Maqueen no se mueve? Por debajo de 30, la zona muerta. Ahora la pregunta del día. Un coche gira con el volante. El Maqueen no tiene volante. Entonces, ¿cómo lo hace? Piensa una respuesta antes de seguir."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin volante: tracción diferencial",
+      "puntos": [
+        "Las dos ruedas iguales: va recto",
+        "Una más lenta o hacia atrás: gira",
+        "Gira hacia el lado de la rueda más lenta",
+        "Así giran las excavadoras y los tanques"
+      ],
+      "narracion": "El Maqueen gira haciendo ir sus dos ruedas a velocidades diferentes. Si van igual, va recto. Si una va más despacio, o hacia atrás, el robot se gira hacia el lado de esa rueda. Siempre hacia la rueda más lenta. Las excavadoras, los tanques y muchas sillas de ruedas giran de la misma manera, y se llama tracción diferencial. La bolita de debajo del robot solo lo sostiene: se desliza en todas direcciones, pero no lo hace girar."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-3:4",
+      "narracion": "Mira este programa. Motor izquierdo adelante y motor derecho atrás, a velocidad 100, durante 600 milisegundos. Y eso, cuatro veces. Antes de ejecutarlo, predice: ¿hacia dónde girará, y dónde mirará al final? Ahora, mira. Gira a la derecha sin moverse del sitio. Cada 600 milisegundos, un cuarto de vuelta, es decir, 90 grados. Y después de cuatro cuartos de vuelta, vuelve a mirar hacia donde miraba al principio. Para girar a la izquierda, al revés."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-3:5",
+      "narracion": "Ahora solo funciona la rueda izquierda, a velocidad 100, durante 1200 milisegundos. La derecha está parada. ¿Qué crees que pasará: girará sobre sí mismo, hará una curva o irá recto? Mira. El robot gira alrededor de la rueda que está parada y dibuja un arco. Es un giro más suave, pero más lento: para 90 grados tarda unos 1200 milisegundos, el doble que sobre sí mismo. ¿Por qué? Porque solo trabaja una rueda, y hace un camino más largo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Giros a velocidad 100",
+      "columnas": [
+        "Giro",
+        "Tiempo a velocidad 100"
+      ],
+      "filas": [
+        [
+          "45° sobre sí mismo",
+          "unos 300 ms"
+        ],
+        [
+          "90° sobre sí mismo",
+          "unos 600 ms"
+        ],
+        [
+          "180° sobre sí mismo",
+          "unos 1200 ms"
+        ],
+        [
+          "90° en arco, una rueda",
+          "unos 1200 ms"
+        ]
+      ],
+      "narracion": "Apunta esta tabla, porque la usarás toda la unidad. A velocidad 100, girando sobre sí mismo, 45 grados son unos 300 milisegundos. 90 grados, unos 600. Media vuelta, 180 grados, unos 1200. El doble de tiempo, el doble de ángulo. En arco, con una sola rueda, 90 grados piden unos 1200. Un aviso: estos tiempos son para velocidad 100. Si giras a 150 con 600 milisegundos, te pasarás. Si cambias la velocidad, cambia el tiempo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-3:7",
+      "narracion": "Predicción con trampa. El robot gira con el izquierdo adelante y el derecho atrás, y después avanza. Pero no mira hacia arriba de la pantalla. ¿Hacia dónde mirará, A, B o C? Si dudas, gira tu cuerpo hasta mirar hacia donde mira el robot. Ahora, ejecutamos. Gira 90 grados hacia su derecha. Si miraba hacia la derecha de la pantalla, ahora mira hacia abajo. Su derecha es tu derecha solo cuando miráis hacia el mismo sitio."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: haz de ruedas",
+      "pasos": [
+        "Dos personas del brazo: sois las dos ruedas",
+        "Las dos adelante al mismo ritmo: recto",
+        "Una adelante y otra atrás: giro en el sitio",
+        "Una quieta y la otra camina: arco",
+        "¿Qué giro ocupa menos espacio?"
+      ],
+      "narracion": "Ahora, sin pantalla, con alguien de casa. Poneos uno al lado del otro y cogeos del brazo: sois las dos ruedas del robot. Caminad hacia delante al mismo ritmo y vais rectos. Ahora la persona de la izquierda da pasitos adelante y la de la derecha, atrás: giráis sobre el sitio. Después, la de la derecha se queda quieta y la otra camina: hacéis un arco. Despacio y sin tirar. En clase, un tercer alumno hace de cerebro con tarjetas para cada rueda."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Calibra el giro de tu Maqueen",
+      "pasos": [
+        "Una cruz de cinta: dos tiras de 40 cm a 90°",
+        "Centro de las ruedas en el cruce, mirando una tira",
+        "Descarga el giro: 600 ms a velocidad 100",
+        "¿Mira la otra tira? Si no, ajusta de 20 en 20 ms",
+        "Apunta tu número para el próximo proyecto"
+      ],
+      "narracion": "Con el robot de verdad toca calibrar. Calibrar es probar, medir y ajustar hasta que sale bien. Pega en el suelo una cruz con dos tiras de cinta de 40 centímetros, a 90 grados. Compruébalo con un transportador o con la esquina de una hoja. Pon el centro de las ruedas sobre el cruce, mirando hacia una tira. Descarga el giro de 600 milisegundos. Si se pasa, acorta la espera; si no llega, alárgala, de 20 en 20. Apunta tu número."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Media vuelta: un giro, el doble de espera",
+      "mal": "Dos bloques de giro seguidos, sin espera ni para en medio.",
+      "bien": "Un solo giro: dos motores, una espera de unos 1200 ms y un para.",
+      "narracion": "Un reto de la aplicación pide dejar un paquete en el punto 1, dar media vuelta y volver a la base mirando hacia ella. Hay un error muy común: poner dos bloques de giro seguidos y olvidar la espera o el para de cada uno. Media vuelta es un solo giro con el doble de espera. Cuenta los bloques: dos motores, una espera de unos 1200 milisegundos y un para. Y otra pista para todos los retos: prográmalos a trozos. Un tramo, pruébalo; añade el giro, pruébalo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": [
+        "Error",
+        "Qué hacer"
+      ],
+      "filas": [
+        [
+          "Confunde su derecha con la del robot",
+          "Ponerse en el lugar del robot"
+        ],
+        [
+          "Los dos motores en la misma dirección",
+          "Para girar: uno adelante, otro atrás"
+        ],
+        [
+          "En el robot real gira 80° o 100°",
+          "Es normal: calibrar y apuntar"
+        ],
+        [
+          "Si un giro falla, lo borra todo",
+          "Cambiar solo esa espera"
+        ]
+      ],
+      "narracion": "Los errores de hoy. Confundir la derecha del robot con la de la pantalla: ponte en su lugar, o pon el Maqueen real en la mesa mirando como el de la pantalla. Poner los dos motores en la misma dirección: así sigue recto. Pensar que el robot está roto porque gira 85 grados y el de al lado 95: los dos están bien, porque cada motor es un poco diferente. Y borrar todo cuando falla un giro: busca dónde se desvía primero y cambia solo esa espera."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "El robot gira hacia la rueda más lenta",
+        "Una adelante y otra atrás: sobre sí mismo",
+        "Una sola rueda: en arco, el doble de tiempo",
+        "Calibrar: probar, medir y ajustar"
+      ],
+      "narracion": "Repasamos. El robot gira hacia la rueda más lenta. Con una adelante y la otra atrás gira sobre sí mismo: 90 grados en unos 600 milisegundos a velocidad 100. Con una sola rueda, en arco y en el doble de tiempo. Y en el robot real, calibrar. En los retos del puerto combinarás tramos y giros: el muelle B, la media vuelta y el pasillo de cajas. Tu proyecto: una ruta por los dos barcos hasta el garaje, sin tocar el almacén."
+    }
+  ]
+}

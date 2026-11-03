@@ -1,0 +1,59 @@
+{
+  "seccion": 7,
+  "titulo": "Cuestionario: cuando el niño se frustra",
+  "preguntas": [
+    {
+      "pregunta": "Tu hija dice «lo borro todo y empiezo otra vez». Según la guía de Tech Robot, ¿qué conviene preguntarle?",
+      "respuestas": [
+        "¿Hasta qué bloque ha ido bien?",
+        "¿Quieres que lo haga yo?",
+        "¿Por qué no te concentras?",
+        "¿Cuánto tardó tu hermano?"
+      ],
+      "correcta": 0,
+      "explicacion": "Preguntar hasta dónde ha ido bien reduce el problema a un trozo pequeño y salva lo que ya funcionaba. Borrarlo todo hace perder lo bueno y, a menudo, repetir el mismo error."
+    },
+    {
+      "pregunta": "¿Cuáles son los cuatro tipos de bug más habituales que enseña la sesión «Caza el error»?",
+      "respuestas": [
+        "Errores del ratón, de la pantalla, del teclado y de internet",
+        "Falta un bloque, sobra un bloque, un bloque equivocado o bloques en mal orden",
+        "Programas lentos, rápidos, largos o cortos"
+      ],
+      "correcta": 1,
+      "explicacion": "Casi todos los errores son de uno de estos cuatro tipos. Ponerles nombre ayuda al niño a ver el error como un enigma con pocas opciones y no como un fracaso."
+    },
+    {
+      "pregunta": "¿Qué propone la norma «un cambio, una prueba»?",
+      "respuestas": [
+        "Probar el programa una sola vez al día",
+        "Cambiar todos los bloques y probar al final",
+        "Cambiar un solo bloque y ejecutar antes de tocar otro",
+        "Que un adulto pruebe cada cambio"
+      ],
+      "correcta": 2,
+      "explicacion": "Si cambia varios bloques a la vez, ya no sabe cuál era el bueno. Cambiando uno cada vez y probando, ve exactamente qué efecto tiene cada cambio."
+    },
+    {
+      "pregunta": "Tu hijo quiere un videojuego con diez niveles y veinte personajes, y no sabe por dónde empezar. ¿Qué propone la guía de Tech Creadores?",
+      "respuestas": [
+        "Prohibirle los proyectos grandes",
+        "Programar todas las reglas y probarlo al final",
+        "Ofrecerle un premio si lo termina",
+        "Empezar por una versión 1 pequeña y añadir una regla cada vez"
+      ],
+      "correcta": 3,
+      "explicacion": "Se felicita la idea y se buscan las tres reglas mínimas para que ya sea un juego. La versión 1 hace una sola cosa bien; después se añade una regla, se prueba y se sigue."
+    },
+    {
+      "pregunta": "Según la guía de Tech Robot, ¿cómo es un buen reto?",
+      "respuestas": [
+        "Hace pensar, pero tiene solución",
+        "Cuanto más difícil, mejor",
+        "Se resuelve con uno o dos bloques"
+      ],
+      "correcta": 0,
+      "explicacion": "Si es demasiado fácil, aburre; si es imposible, da rabia. Un reto en su punto mantiene las ganas sin necesidad de premios ni castigos."
+    }
+  ]
+}

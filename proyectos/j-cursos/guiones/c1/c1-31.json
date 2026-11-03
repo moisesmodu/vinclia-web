@@ -1,0 +1,107 @@
+{
+  "id": "c1-31",
+  "titulo": "La ruta de los próximos 6 meses",
+  "descripcion": "Un plan para seguir después de las cuatro semanas: Tech Creadores completo, después Tech Digital y, en el sexto mes, robótica con micro:bit y Maqueen, con alternativas gratuitas y un ritmo que se sostiene.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:g8-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La ruta de los próximos 6 meses",
+      "subtitulo": "Qué hacer cuando termina el plan de 4 semanas",
+      "narracion": "Habéis terminado el plan de cuatro semanas. Tu hijo o tu hija ha dado órdenes a un robot, ha repetido, ha decidido y ha hecho su primer videojuego. ¿Y ahora qué? En esta clase tienes una ruta para los próximos seis meses. No es obligatoria ni hay que seguirla al pie de la letra. Es un orden que tiene sentido: primero, terminar el curso de videojuegos; después, ciudadanía digital; y, al final, robótica, con un robot de verdad o con su simulador."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:g8-4:14",
+      "narracion": "Esta es la diapositiva con la que termina Tech Creadores. Dice que el alumno ya trabaja como un estudio de videojuegos. Diseña con un documento, construye por piezas, prueba con datos, ajusta y publica. Ese ciclo es el hilo de toda la ruta. Cada proyecto de los próximos meses pasará por esas fases. Y cada uno terminará igual: con un estreno en casa, donde tu hijo enseña lo que ha hecho y alguien de la familia lo prueba."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La ruta en tres etapas",
+      "columnas": ["Meses", "Qué", "Edad orientativa"],
+      "filas": [
+        ["1 a 3", "Tech Creadores completo", "9 a 11 años"],
+        ["4 y 5", "Tech Digital", "9 a 12 años"],
+        ["6", "Robótica: micro:bit y Maqueen", "10 a 12 años"]
+      ],
+      "narracion": "Aquí tienes la ruta de un vistazo. Del primer al tercer mes, Tech Creadores completo: las ocho unidades de bloques para animaciones y videojuegos. Los meses cuarto y quinto, Tech Digital, el curso de ciudadanía digital. Y el sexto mes, el salto a la robótica con la placa micro:bit y el robot Maqueen. Las edades son orientativas. Fíjate más en lo que ya domina tu hijo que en el número de años. Si una etapa pide más tiempo, la ruta se estira sin problema."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Meses 1 a 3: Creadores completo",
+      "puntos": [
+        "Escenario, animación, interacción y coordenadas",
+        "Condiciones, variables, azar y el estudio de videojuegos",
+        "Unas tres sesiones por semana, como hasta ahora",
+        "Alternativa gratuita: proyectos libres en Scratch"
+      ],
+      "narracion": "En este curso habéis probado una parte de Tech Creadores. Completo tiene ocho unidades: primeros pasos en el escenario, animación, interacción, coordenadas, condiciones, variables, azar y dificultad, y el estudio de videojuegos. En la última unidad, cada niño diseña, construye, prueba y publica su propio juego. A unas tres sesiones por semana, son unos tres meses. Si preferís no usar Numi, Scratch es gratuito y permite el mismo tipo de proyectos. Las ideas de este curso os servirán de guía."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si tiene entre 6 y 8 años",
+      "puntos": [
+        "Antes, Tech Robot completo: las 8 unidades con Bit",
+        "ScratchJr en tableta, gratis, para crear historias",
+        "Actividades sin pantalla e imprimibles, como hasta ahora",
+        "Creadores, hacia los 9 años"
+      ],
+      "narracion": "Si tu hija tiene entre seis y ocho años, cambia el orden. Primero, Tech Robot completo: ocho unidades con Bit, desde las órdenes en orden hasta su propio reto en la Feria de los Retos. Por el camino aparecen luces, sonidos, sensores, funciones y variables. Como alternativa gratuita, ScratchJr en tableta permite crear historias y animaciones sencillas. Y siguen valiendo todas las actividades sin pantalla. Hacia los nueve años, cuando lea con soltura, llegará el momento de Creadores."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Meses 4 y 5: Tech Digital",
+      "puntos": [
+        "Seguro en la red y pensar antes de creer",
+        "Bienestar y vida digital, y ciberseguridad",
+        "La IA a fondo y consumidores digitales",
+        "Seis unidades, de 9 a 12 años"
+      ],
+      "narracion": "Después de crear, toca entender el mundo digital en el que viven esos proyectos. Tech Digital tiene seis unidades: seguro en la red, pensar antes de creer, bienestar y vida digital, ciberseguridad, la inteligencia artificial a fondo y consumidores digitales. Ya conoces algunas sesiones, porque las hemos usado en la sección de seguridad. A unas tres sesiones por semana, son unos dos meses. Además, prepara el terreno para la conversación del primer móvil, que tarde o temprano llegará."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-1:3",
+      "narracion": "Y en el sexto mes, robótica. El curso Tech Robótica, para diez a doce años, usa un simulador del robot Maqueen con la placa micro:bit. La primera idea que se aprende está en esta diapositiva: un robot siente con los sensores, piensa con el programa y actúa con los motores, una y otra vez. El cerebro del Maqueen es la micro:bit, donde se guarda el programa. Es mejor llegar habiendo hecho Robot o Creadores, porque los bloques ya serán conocidos."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-1:9",
+      "narracion": "Mira esta demostración del simulador. El programa enciende los motores y espera, pero no tiene ningún bloque «para». Antes de verlo, pausa y pregunta en casa: ¿qué pasará cuando termine la espera? Mucha gente cree que el robot se detendrá. Pero no. Esperar solo deja pasar el tiempo. Sin «para», los motores siguen encendidos y el robot continúa. Es el mismo tipo de bug que cazabais con Bit: el robot hace exactamente lo que dice el programa, ni más ni menos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Hace falta comprar el robot?",
+      "puntos": [
+        "No: se puede seguir con el simulador de Numi Tech",
+        "MakeCode es gratis, con la extensión «maqueen»",
+        "Sin robot, MakeCode simula la micro:bit, no el robot",
+        "«Robótica con micro:bit y Maqueen»: otro curso de esta serie"
+      ],
+      "narracion": "Una duda habitual: ¿hay que comprar el robot? No es imprescindible. Tech Robótica se puede seguir con su simulador. Fuera de Numi, MakeCode es la herramienta gratuita para programar la micro:bit, y tiene una extensión para el Maqueen. Ojo con un detalle: sin robot, MakeCode simula la placa micro:bit, pero no el robot entero. Si queréis dar ese paso, en esta serie hay otro curso, «Robótica con micro:bit y Maqueen», que lo explica unidad a unidad."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Un ritmo que se sostiene",
+      "pasos": [
+        "Veinte minutos, tres días a la semana",
+        "Un estreno en casa al terminar cada proyecto",
+        "Ficha de publicación: título, cómo se juega y créditos",
+        "Una vez al mes, revisad juntos el pacto digital"
+      ],
+      "narracion": "Para que la ruta dure seis meses, el ritmo importa más que la velocidad. Mantened los veinte minutos, tres días a la semana. Cuando termine un proyecto, haced un estreno familiar, como en la última sesión de Creadores. Tu hijo lee una ficha de publicación con el título, cómo se juega y los créditos, y alguien de la familia hace una partida. Si el juego falla durante el estreno, no pasa nada: los estudios también publican versiones nuevas. Y una vez al mes, revisad juntos el pacto digital."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para llevarte",
+      "puntos": [
+        "Meses 1 a 3: Creadores; de 6 a 8 años, antes Robot",
+        "Meses 4 y 5: Tech Digital",
+        "Mes 6: robótica con micro:bit y Maqueen",
+        "Hoy: elegid el próximo proyecto y la fecha de su estreno"
+      ],
+      "narracion": "Resumimos la ruta. Del primer al tercer mes, Creadores completo, o Robot si tu hijo tiene entre seis y ocho años. Los meses cuarto y quinto, Tech Digital. Y el sexto, robótica con micro:bit y Maqueen, con robot o con simulador. Todo con el mismo ritmo y un estreno al final de cada proyecto. Para hoy, sentaos y elegid juntos el próximo proyecto. Apuntad en el calendario la fecha de su estreno. En los recursos tienes la ficha de publicación y el diploma. En la clase extra encontrarás más recursos."
+    }
+  ]
+}

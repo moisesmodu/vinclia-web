@@ -1,0 +1,59 @@
+{
+  "seccion": 2,
+  "titulo": "Cuestionario: qué es un robot",
+  "preguntas": [
+    {
+      "pregunta": "Un programa tiene «motor los dos adelante a velocidad 150» y «espera 2000 ms», pero ningún bloque «para». ¿Qué hará el robot?",
+      "respuestas": [
+        "Se parará solo a los 2 segundos",
+        "Seguirá avanzando hasta que choque o se apague",
+        "No se moverá nada",
+        "Irá el doble de rápido"
+      ],
+      "correcta": 1,
+      "explicacion": "La espera solo deja pasar el tiempo: mientras tanto, el robot sigue haciendo lo que hacía. Para detener los motores hace falta el bloque «para»."
+    },
+    {
+      "pregunta": "Tu Maqueen tiene «motor los dos adelante a velocidad 20». Zumba, pero no se mueve. ¿Por qué?",
+      "respuestas": [
+        "Las pilas están gastadas seguro",
+        "El programa está en el guion equivocado",
+        "Por debajo de 30, el motor no tiene fuerza suficiente: es la zona muerta"
+      ],
+      "correcta": 2,
+      "explicacion": "Por debajo de velocidad 30, el motor recibe corriente pero no vence el rozamiento. Con 150 llegaría a la meta."
+    },
+    {
+      "pregunta": "Para que el Maqueen gire sobre sí mismo, ¿cómo tienen que ir las dos ruedas?",
+      "respuestas": [
+        "Una adelante y la otra atrás",
+        "Las dos adelante a la misma velocidad",
+        "Una adelante y la otra parada",
+        "Las dos atrás a la misma velocidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Una adelante y la otra atrás: gira sin moverse del sitio. Con una rueda parada, gira en arco alrededor de ella, y tarda el doble."
+    },
+    {
+      "pregunta": "Un robot gira sobre sí mismo a velocidad 100 con una espera de 1200 ms y da media vuelta. ¿Qué espera pondrías para un cuarto de vuelta?",
+      "respuestas": [
+        "Unos 300 ms",
+        "Unos 2400 ms",
+        "Unos 1200 ms",
+        "Unos 600 ms"
+      ],
+      "correcta": 3,
+      "explicacion": "1200 ms a velocidad 100 hacen 180 grados. Para 90, la mitad: unos 600 ms. Después, en el robot real, se calibra."
+    },
+    {
+      "pregunta": "Tu paseo funciona en el simulador, pero en el robot de verdad gira un poco de más. ¿Qué haces?",
+      "respuestas": [
+        "Nada: el simulador siempre tiene razón",
+        "Calibro: acorto un poco la espera del giro y vuelvo a probarlo",
+        "Borro todo el programa y empiezo de nuevo"
+      ],
+      "correcta": 1,
+      "explicacion": "Un robot real siempre es un poco diferente: pilas, suelo y motores. Se busca dónde se desvía por primera vez y se cambia solo ese número."
+    }
+  ]
+}

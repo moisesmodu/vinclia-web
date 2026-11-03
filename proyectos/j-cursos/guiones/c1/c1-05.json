@@ -1,0 +1,115 @@
+{
+  "id": "c1-05",
+  "titulo": "El rincón, el horario y las normas de pantalla",
+  "descripcion": "Preparas un rincón de programación en casa, eliges un horario que funcione y acordáis en familia unas normas de pantalla sencillas y para todos.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:d3-1"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El rincón, el horario y las normas",
+      "subtitulo": "Preparar la casa antes de empezar",
+      "narracion": "Antes de la primera semana conviene preparar tres cosas: un sitio, un horario y unas normas. Parece poco importante, pero marca la diferencia. Cuando el material está a mano y el niño sabe cuándo toca, no hay que negociar cada vez. Y cuando las normas de pantalla están claras desde el principio, la programación no se convierte en otra discusión más."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El rincón de programación",
+      "puntos": [
+        "Un trozo de suelo libre para la cuadrícula de cinco por cinco",
+        "Una mesa con el ordenador o la tableta en una zona común",
+        "Una caja con tarjetas, fichas, lápices y cinta de pintor",
+        "Buena luz y una silla a la altura del niño"
+      ],
+      "narracion": "El rincón no tiene que ser grande. Necesitáis un trozo de suelo libre, por ejemplo el pasillo, para marcar con cinta de pintor una cuadrícula de cinco por cinco casillas. Una mesa con el ordenador o la tableta, mejor en el salón o la cocina que en su cuarto. Y una caja donde guardar las tarjetas recortadas, las fichas y los lápices. Así, sacar el material cuesta diez segundos y recogerlo, otros diez."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Un horario que se cumpla",
+      "pasos": [
+        "Tres días fijos a la semana, siempre a la misma hora",
+        "Veinte minutos, con un temporizador a la vista",
+        "Nunca justo antes de dormir",
+        "Mejor después de merendar que con hambre o cansancio"
+      ],
+      "narracion": "Para el horario, lo mejor es la rutina. Tres días fijos, a la misma hora, durante veinte minutos. Poned un temporizador a la vista: cuando suene, se para, aunque el reto esté a medias. Parar con ganas de más hace que el siguiente día empiece con ganas. Evitad el rato de antes de dormir, porque las pantallas y los retos emocionantes hacen que cueste conciliar el sueño. Y si un día llega muy cansado, haced la actividad sin pantalla."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si usáis tableta o móvil",
+      "puntos": [
+        "Modo no molestar durante la sesión",
+        "Quitad juntos las notificaciones que no hacen falta",
+        "Desactivad la reproducción automática de vídeos",
+        "Una sola app abierta: la de programar"
+      ],
+      "narracion": "Si la parte de pantalla es en una tableta o en el móvil, prepara el aparato antes. Durante los veinte minutos, activad el modo no molestar para que no entren mensajes. Algunas apps están hechas para que no pares: el vídeo siguiente que empieza solo, las notificaciones, las rachas. Si cuesta parar, no es culpa vuestra: están diseñadas así. Hacedlo juntos: quitad las notificaciones que no hacen falta y desactivad la reproducción automática."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las cuatro normas del programador",
+      "puntos": [
+        "Manos limpias antes de tocar la pantalla",
+        "Sentarse bien, a un brazo de distancia de la pantalla",
+        "Si algo raro aparece, avisar a un adulto",
+        "Descansar los ojos: mirar lejos de vez en cuando"
+      ],
+      "narracion": "La primera sesión de Numi Tech presenta cuatro normas de programador antes de tocar la pantalla. Os sirven igual en casa, uséis la app o Scratch. Manos limpias. Sentarse bien, con la espalda apoyada y a un brazo de distancia de la pantalla. Si aparece algo raro o que no entiende, avisar a un adulto. Y descansar los ojos. Escribidlas juntos en un papel y pegadlo en el rincón."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Después de quince o veinte minutos de pantalla, una pausa de pie y lejos de la pantalla.",
+      "narracion": "Esta es la regla de pausas que siguen las guías del aula. Después de quince o veinte minutos de ordenador, una pausa activa de pie. En la app vienen propuestas: hacer de robot, saltar como una rana o dar cuatro giros. En casa podéis inventar la vuestra. Otra muy sencilla: mirar por la ventana algo bien lejos, contar hasta veinte, parpadear y estirar los brazos hacia el techo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-1:5",
+      "narracion": "Esta diapositiva viene de una sesión de Numi Tech sobre bienestar digital. Habla de las señales del cuerpo: ojos cansados, dolor de cabeza o mal humor. Son el aviso de que hace falta una pausa. Explícaselo a tu hijo con estas palabras. Si después de un rato de pantalla se enfada más deprisa, no siempre es por el reto. A veces es cansancio, y la solución es moverse, beber agua y hacer otra cosa."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Normas que funcionan",
+      "mal": "«Quien se pase, un mes sin tableta». Un castigo no es un acuerdo.",
+      "bien": "«Mientras cenamos, ningún móvil, tampoco los adultos».",
+      "narracion": "Las normas de pantalla funcionan mejor si se deciden en familia y valen para todo el mundo, también para los adultos. Comparad estos dos ejemplos, sacados de los retos de la app. Un castigo de un mes no es un acuerdo: no se puede cumplir y no enseña a usar bien las pantallas. En cambio, «mientras cenamos, ningún móvil» es concreto y vale para todos. Y si un acuerdo no funciona, se vuelve a hablar."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-1:7",
+      "narracion": "Aquí tienes el resumen de cómo hacer los acuerdos. Cuánto rato, cuándo y dónde. Que valgan para todo el mundo. Y que se puedan revisar. Un consejo práctico: guardad momentos sin pantallas, como las comidas, la hora antes de dormir o los deberes. Y que las tabletas y los móviles duerman fuera de las habitaciones. A esta edad, el cuerpo necesita entre nueve y doce horas de sueño."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Una ficha para empezar",
+      "puntos": [
+        "«Mi día en bloques»: un día de cole por medias horas",
+        "Azul: sueño. Amarillo: cole y deberes",
+        "Verde: movimiento y amigos. Rojo: pantallas",
+        "Miradlo juntos, sin reñir a nadie"
+      ],
+      "narracion": "En los recursos de esta clase tienes la ficha «Mi día en bloques». Tu hijo pinta un día de colegio en bloques de media hora. Azul para el sueño, amarillo para el cole y los deberes, verde para moverse y estar con amigos, y rojo para las pantallas. Después lo miráis juntos y buscáis dónde encajan los veinte minutos de programación. Sin comparar con nadie y sin reñir: cada casa es diferente."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si no tienes sitio ni ordenador",
+      "puntos": [
+        "Cuadrícula en A3 sobre la mesa y una figurita de robot",
+        "La primera sesión de Numi Tech funciona en el móvil",
+        "Cada semana tiene actividades sin pantalla"
+      ],
+      "narracion": "¿Y si vivís en un piso pequeño o no tenéis ordenador? No pasa nada. La cuadrícula se puede imprimir en A3 y usar en la mesa, con una figurita o una goma de borrar como robot. La primera sesión de Numi Tech también se puede hacer con el móvil. Y cada semana tiene actividades sin pantalla, con tarjetas y fichas. El curso está pensado para que sirva sin comprar nada."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Antes de la primera semana",
+      "puntos": [
+        "Un rincón con suelo libre, mesa y una caja de material",
+        "Tres días fijos, veinte minutos y un temporizador",
+        "Cuatro normas de programador y pausas de pie",
+        "Hoy: pintad juntos «Mi día en bloques»"
+      ],
+      "narracion": "Repasemos. Un rincón con suelo libre, una mesa en zona común y una caja con el material. Un horario de tres días fijos, veinte minutos y un temporizador. Cuatro normas de programador, pausas de pie y acuerdos de pantalla que valgan para toda la familia. Para hoy: imprimid la ficha «Mi día en bloques» y pintadla juntos. En la próxima clase veremos por dónde empezar según la edad de tu hijo o tu hija."
+    }
+  ]
+}

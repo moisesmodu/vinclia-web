@@ -1,0 +1,123 @@
+{
+  "id": "c3-36",
+  "titulo": "Proyecto final: tu plan de IA en una página",
+  "descripcion": "Reúne todo el curso en un plan de una página: tus tres tareas para la IA, tus líneas rojas, una automatización, tus obligaciones y cómo medirás el ahorro, con un calendario de 30 días.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:plan-ia-una-pagina"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto final: tu plan de IA en una página",
+      "subtitulo": "Todo el curso, en una hoja que puedes pegar en la pared",
+      "narracion": "Has llegado al proyecto final. A lo largo del curso has probado muchas cosas. Instrucciones, asistentes, respuestas a reseñas, presupuestos, automatizaciones y los casos de otros negocios. Ahora toca elegir. No se trata de hacerlo todo. Se trata de decidir qué tres cosas vas a hacer con IA a partir de mañana. Con qué límites, y cómo sabrás si funcionan. Lo vas a escribir en una sola página. En los recursos tienes la plantilla lista para rellenar, en papel o en el ordenador."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué en una sola página",
+      "puntos": [
+        "Si no cabe en una página, no lo vas a hacer",
+        "Se lee en un minuto, también tu equipo",
+        "Obliga a elegir lo importante",
+        "Se revisa fácil cada tres meses"
+      ],
+      "narracion": "Una página tiene una ventaja enorme. Obliga a elegir. Un plan de veinte páginas se queda en un cajón. Uno de una página se pega junto a la caja o en la puerta del despacho, y lo lee todo el equipo en un minuto. Además, es fácil de revisar. Cada tres meses lo miras, tachas lo que no ha funcionado y añades lo siguiente. Piensa en él como la lista de la compra de tu negocio con la IA. Corta, concreta y a la vista."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los cinco apartados de tu plan",
+      "columnas": [
+        "Apartado",
+        "Qué escribes"
+      ],
+      "filas": [
+        [
+          "1. Mi negocio y mis herramientas",
+          "Ficha corta y ajustes de privacidad"
+        ],
+        [
+          "2. Tres tareas para la IA",
+          "Cada una con su instrucción guardada"
+        ],
+        [
+          "3. Mis líneas rojas",
+          "Lo que nunca hago con la IA"
+        ],
+        [
+          "4. Una automatización",
+          "Disparador y acciones"
+        ],
+        [
+          "5. Medir y revisar",
+          "Cuaderno de horas y fecha de revisión"
+        ]
+      ],
+      "narracion": "La plantilla tiene cinco apartados. El primero, tu negocio en tres líneas y las herramientas que usas, con sus ajustes de privacidad hechos. El segundo, las tres tareas que vas a delegar en la IA, cada una con su instrucción guardada. El tercero, tus líneas rojas, lo que nunca haces. Por ejemplo, meter datos de clientes o publicar sin revisar. El cuarto, una sola automatización para empezar. Y el quinto, cómo vas a medir el ahorro y en qué fecha revisarás el plan. Dentro de las líneas rojas incluye también tus obligaciones legales."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: que la IA te ayude a rellenarlo",
+      "usuario": "Voy a hacer mi plan de IA en una página para mi negocio. Tiene cinco apartados: mi negocio y herramientas, tres tareas para la IA, mis líneas rojas, una automatización y cómo mediré el ahorro. Hazme preguntas de una en una para rellenarlo. Al final, escríbelo en menos de 300 palabras. No incluyas datos legales que yo no te haya dado.",
+      "ia": "Vamos allá. Primera pregunta: ¿cuáles son las tres tareas que más tiempo te quitan cada semana y que no son tu trabajo principal?",
+      "narracion": "Puedes rellenar la plantilla a mano o dejar que la IA te entreviste, como hiciste al crear tu asistente. Esta instrucción le explica los cinco apartados y le pide que te pregunte de uno en uno. Contesta con tus propias palabras, como si se lo contaras a un amigo. Fíjate en la última frase. No incluyas datos legales que yo no te haya dado. Así, las fechas y las obligaciones que aparezcan serán las que tú has comprobado en este curso o con tu gestoría."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Así queda el plan de Carla, la peluquera",
+      "usuario": "Ya está. Escribe mi plan final.",
+      "ia": "1. Negocio: peluquería en Lleida, tres personas. ChatGPT con entrenamiento desactivado, cuentas separadas, WhatsApp Business.\n2. Tareas: mensajes de citas en castellano y catalán; respuestas a reseñas; Instagram del mes.\n3. Líneas rojas: ningún dato de clientas ni de salud en la IA; nada se publica sin revisar; ni consejos médicos ni fotos generadas de resultados.\n4. Automatización: reseña nueva, borrador, yo publico.\n5. Medir: cuaderno de horas dos semanas. Revisión: primer lunes de febrero.",
+      "narracion": "Este es el plan de Carla, la peluquera de Lleida que conociste en los casos por sector. Mira qué concreto es. Sus herramientas y los ajustes ya hechos. Tres tareas claras. Sus líneas rojas, con los datos de salud y las fotos de resultados. Una sola automatización, la de las reseñas. Y una fecha de revisión en el calendario. No hay nada que no pueda hacer esta misma semana. Así tiene que quedar el tuyo. Si te sobra algo, quítalo. Si te falta la fecha, pon una."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un plan vago y un plan que se cumple",
+      "mal": "Usar más la IA para el marketing y ahorrar tiempo en general.",
+      "bien": "Cada viernes, 20 minutos: publicaciones de la semana con mi asistente. Medir dos semanas.",
+      "narracion": "La diferencia entre un plan que se cumple y uno que no está en los detalles. Usar más la IA para el marketing no se puede cumplir, porque no sabes cuándo empieza ni cuándo has terminado. Cada viernes, veinte minutos, las publicaciones de la semana con mi asistente, sí. Tiene un día, un tiempo, una tarea y una herramienta. Repasa cada línea de tu plan con esta pregunta. Sabría alguien de mi equipo exactamente qué hacer y cuándo. Si la respuesta es no, concrétala."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: que la IA critique tu plan",
+      "usuario": "Este es mi plan de IA en una página: [pego mi plan]. Hazme de abogado del diablo. Dime qué partes son vagas, qué es poco realista para alguien con poco tiempo y qué riesgo de privacidad ves. Máximo cinco observaciones, sin reescribirlo.",
+      "ia": "1. «Responder reseñas» no dice cuándo: ponle un día y una hora.\n2. Tres tareas nuevas a la vez pueden ser muchas: empieza por una y añade otra cada semana.\n3. La automatización pasa el texto de la reseña: asegúrate de no enviar el nombre de quien opina.\n4. Falta la fecha de revisión.\n5. No dice quién del equipo hace cada tarea.",
+      "narracion": "Antes de darlo por terminado, pide a la IA que te lo critique. Es un uso muy útil y poco conocido. Le pides que haga de abogado del diablo y que busque partes vagas, metas poco realistas y riesgos de privacidad. Y le pides que no lo reescriba, porque el plan es tuyo. Lee las observaciones con calma. Algunas no tendrán sentido para tu negocio, y las descartas. Otras te harán ver un hueco. La IA opina, tú decides qué cambias."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tus primeros 30 días",
+      "pasos": [
+        "Semana 1: ajustes de privacidad y la primera tarea",
+        "Semana 2: segunda tarea y empiezas el cuaderno de horas",
+        "Semana 3: tercera tarea y montas la automatización",
+        "Semana 4: analizas el cuaderno y ajustas el plan",
+        "Día 90: revisión completa y siguiente paso"
+      ],
+      "narracion": "Un plan necesita un calendario. Esta es la propuesta para los primeros treinta días. La primera semana, ajustes de privacidad y la primera tarea. La segunda, la segunda tarea, y empiezas a apuntar en el cuaderno de horas. La tercera, la tercera tarea y la automatización. La cuarta semana analizas el cuaderno y ajustas. Y a los noventa días, revisión completa. Qué mantienes, qué dejas y cuál es el siguiente paso. Apunta esas fechas ahora en tu calendario."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Descarga la plantilla del plan de los recursos",
+        "Rellénala a mano o con la instrucción de la entrevista",
+        "Pide a la IA que la critique y ajusta lo necesario",
+        "Imprímela y pégala donde la veas cada día",
+        "Si quieres, compártela sin datos personales en el curso"
+      ],
+      "narracion": "Tu tarea de hoy es el proyecto final, y cabe en diez minutos si ya has hecho las tareas de las clases. Descarga la plantilla del plan de los recursos. Rellénala a mano o con la instrucción de la entrevista. Pide a la IA que la critique y ajusta lo que veas necesario. Imprímela y pégala donde la veas cada día. Y si te apetece, compártela en el apartado de preguntas del curso, sin datos personales. Ver los planes de otros negocios da muchas ideas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Una página, cinco apartados",
+        "Tres tareas concretas, con día y tiempo",
+        "Líneas rojas y obligaciones por escrito",
+        "Una sola automatización para empezar",
+        "Medir, revisar a los 90 días y seguir"
+      ],
+      "narracion": "Repasamos el proyecto final. Tu plan cabe en una página con cinco apartados. Tres tareas concretas, cada una con su día, su tiempo y su instrucción. Tus líneas rojas y tus obligaciones, por escrito. Una sola automatización para empezar. Y una forma de medir, con una revisión a los noventa días. Recuerda la regla de oro del curso. La IA redacta, tú decides y revisas. Enhorabuena por llegar hasta aquí. Nos vemos en la clase extra."
+    }
+  ]
+}

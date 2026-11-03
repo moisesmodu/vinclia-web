@@ -1,0 +1,97 @@
+{
+  "id": "c3-21",
+  "titulo": "Tickets, gastos y hojas de cálculo con IA",
+  "descripcion": "Pasa tus tickets a una tabla con ayuda de la IA, clasifícalos con las categorías de tu gestoría y monta una hoja de cálculo de gastos con fórmulas que la IA te explica paso a paso.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:hoja-gastos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tickets, gastos y hojas de cálculo con IA",
+      "subtitulo": "Adiós a la caja de zapatos llena de papeles",
+      "narracion": "Muchos autónomos guardan los tickets en una caja, en la guantera o en el bolsillo de la chaqueta. Y una vez cada cierto tiempo, toca sentarse a ordenarlos para la gestoría. En esta clase vas a usar la IA para pasar esos tickets a una tabla, clasificarlos y montar una hoja de cálculo sencilla que sume sola. No hace falta saber de fórmulas: la IA te las escribe y te las explica. Como siempre, la IA hace el trabajo pesado y tú compruebas que los números cuadran."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El circuito de un ticket",
+      "pasos": [
+        "Haces una foto del ticket el mismo día",
+        "La IA extrae los datos en una tabla",
+        "Tú compruebas fecha, proveedor y total",
+        "Lo pegas en tu hoja de gastos",
+        "Guardas el original y lo envías a tu gestoría"
+      ],
+      "narracion": "Este es el circuito completo, de la foto a la gestoría. La clave es el primer paso: hacer la foto el mismo día. Un ticket de papel térmico se borra con el tiempo, y uno arrugado en la guantera ya no se lee. Después la IA saca los datos, tú los compruebas y los pegas en tu hoja. El original lo guardas como te indique tu gestoría. Muchos programas de facturación y de gestoría ya leen tickets de forma automática. Si el tuyo lo hace, úsalo. Esta clase te sirve si no lo tienes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "De la foto a la tabla",
+      "usuario": "Te paso la foto de un ticket de compra para mi bar. Extrae en una tabla: fecha, proveedor, concepto resumido, base, IVA y total. Si algún dato no se lee bien, escribe ilegible en lugar de suponerlo.",
+      "ia": "Fecha: 14/10/2026\nProveedor: Distribuciones Ebro\nConcepto: bebidas y refrescos\nBase: 112,40 euros\nIVA: ilegible\nTotal: 136,00 euros\n\nNota: el importe del IVA está borroso. Compruébalo en el ticket original.",
+      "narracion": "Los asistentes como ChatGPT, Gemini o Claude pueden leer una foto. Le pasas la imagen del ticket y le pides los datos en una tabla. Fíjate en la última frase de la instrucción, porque es la más importante: si no se lee, escribe ilegible en lugar de suponerlo. Sin esa frase, la IA puede inventarse un número que parece correcto. En el ejemplo ha marcado el IVA como ilegible y te avisa. Perfecto. Ahora compruebas tú el total con el papel. Y si el ticket tiene datos de un cliente, tápalos antes de hacer la foto."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA lee el ticket. El total lo compruebas tú con el papel delante.",
+      "narracion": "Leer un ticket con la IA es rápido, pero no es infalible. Puede confundir un uno con un siete, saltarse una línea o leer el cambio como si fuera el total. Por eso, cada ticket que pases, compruébalo de un vistazo: fecha, proveedor y total. Son tres datos y diez segundos. Y una vez al mes, compara la suma de tu hoja con la suma de los tickets o con los cargos del banco. Si no cuadra, busca la diferencia antes de enviarlo a la gestoría."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Clasificar con las categorías de tu gestoría",
+      "usuario": "Clasifica estos gastos usando solo estas categorías que me ha dado mi gestoría: compras de género, suministros, alquiler, reparaciones, otros. Si dudas en alguno, ponlo en dudas en lugar de elegir. Gastos: Distribuciones Ebro bebidas, factura de la luz, fontanero grifo cocina, cafetera nueva, servilletas.",
+      "ia": "Compras de género: Distribuciones Ebro, bebidas.\nSuministros: factura de la luz.\nReparaciones: fontanero, grifo de la cocina.\nOtros: servilletas.\nDudas: cafetera nueva. Podría ser una reparación o una compra de equipo; consúltalo con tu gestoría.",
+      "narracion": "Para clasificar, nunca dejes que la IA invente las categorías. Usa las que te dé tu gestoría, que son las que luego necesita. Y añade una salida para lo dudoso: si dudas, ponlo en dudas. Fíjate en la cafetera. Una compra grande de equipo puede tratarse de forma distinta a un gasto normal, y eso no lo decide un chat. La IA lo ha marcado como duda y te remite a la gestoría. Así debe ser. Qué gasto puedes deducir y cómo lo decide tu gestoría, no la IA."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Las columnas de tu hoja de gastos",
+      "columnas": ["Columna", "Qué pones"],
+      "filas": [
+        ["Fecha", "Día del ticket o la factura"],
+        ["Proveedor y concepto", "Quién y qué, en pocas palabras"],
+        ["Categoría", "Una de las de tu gestoría"],
+        ["Base, IVA y total", "Copiados del ticket y revisados"],
+        ["Comprobado", "Sí o no, tras mirar el original"]
+      ],
+      "narracion": "Con estas columnas tienes una hoja de gastos más que suficiente para un negocio pequeño. Puedes hacerla en Excel, en Google Sheets o en la aplicación de hojas de cálculo que uses. La última columna es un truco sencillo: marcas sí cuando has comprobado el dato con el original. Así sabes de un vistazo qué falta por revisar. Si no quieres montarla tú, pide a la IA: crea una tabla con estas columnas y tres filas de ejemplo para copiar en una hoja de cálculo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la hoja sume sola",
+      "usuario": "Tengo una hoja de Google Sheets con los gastos. La columna C es la categoría y la F es el total. Dame la fórmula para sumar el total de cada categoría y explícamela paso a paso como si nunca hubiera usado fórmulas.",
+      "ia": "Escribe en una celda vacía:\n=SUMAR.SI(C:C; \"Suministros\"; F:F)\n\nQué hace, paso a paso:\n1. Mira la columna C, la de categorías.\n2. Busca las filas donde pone Suministros.\n3. Suma el total de la columna F de esas filas.\n\nCopia la fórmula y cambia Suministros por cada categoría.",
+      "narracion": "Aquí la IA te ahorra horas de buscar tutoriales. Le dices en qué columnas está cada dato y le pides la fórmula, explicada como si nunca hubieras usado una. Te da la fórmula exacta para copiar y una explicación en tres pasos. Pruébala siempre con datos que conozcas. Por ejemplo, suma a mano dos gastos de suministros y comprueba que la fórmula da lo mismo. Si te da error, copia el mensaje de error y pégalo en el chat. Casi siempre es un detalle, como una coma en lugar de un punto y coma."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Qué preguntar y qué no",
+      "mal": "¿Puedo desgravarme la cafetera y el coche? ¿Cuánto me ahorro en impuestos?",
+      "bien": "Ordena estos gastos por categoría y marca los dudosos para preguntar a mi gestoría.",
+      "narracion": "Para cerrar, una diferencia clave. A la izquierda, preguntas que parecen inofensivas pero que son de asesoría fiscal. La IA te responderá con mucha seguridad, y puede estar equivocada o no conocer tu caso. A la derecha, una petición de organización: ordenar, clasificar y señalar dudas. Eso la IA lo hace muy bien. La regla para esta clase y la siguiente es la misma: la IA te ayuda a preparar y entender, y la decisión fiscal es de tu gestoría."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Haz foto a 3 tickets de esta semana",
+        "Pide los datos en tabla con la palabra ilegible",
+        "Comprueba fecha, proveedor y total de cada uno",
+        "Clasifícalos con las categorías de tu gestoría",
+        "Pega todo en una hoja con la columna Comprobado"
+      ],
+      "narracion": "Para hoy, empieza pequeño. Elige tres tickets de esta semana y hazles una foto. Pásalos a la IA con la instrucción de la clase y comprueba cada dato con el papel. Si aún no tienes las categorías de tu gestoría, usa provisionalmente las del ejemplo y pídeselas esta semana. Pega el resultado en una hoja de cálculo con la columna de comprobado. En los recursos de esta clase tienes la plantilla de la hoja de gastos, con las columnas, las instrucciones y la fórmula de suma por categoría."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Foto del ticket el mismo día, datos en tabla",
+        "Pide ilegible en lugar de suposiciones",
+        "Categorías de tu gestoría, con una de dudas",
+        "Fórmulas explicadas y probadas con datos conocidos",
+        "Qué es deducible lo decide tu gestoría"
+      ],
+      "narracion": "Repasemos. La IA lee tus tickets y los pasa a una tabla, siempre que le pidas que marque lo ilegible en lugar de inventarlo. Clasifica con las categorías de tu gestoría y deja aparte lo dudoso. Te escribe y explica las fórmulas de tu hoja, que pruebas con datos conocidos. Y tú compruebas cada total. En la próxima clase, la última de la sección, veremos cómo preparar una previsión de IVA e IRPF para no llevarte sustos. Ayuda para entender, no asesoría."
+    }
+  ]
+}

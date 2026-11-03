@@ -1,0 +1,155 @@
+{
+  "id": "c3-32",
+  "titulo": "Peluquería, estética y bienestar",
+  "descripcion": "Acompaña a una peluquería inventada de Lleida durante una semana: citas y recordatorios, mensajes en catalán, reseñas, publicaciones del mes y cuidado especial con los datos de salud.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Peluquería, estética y bienestar",
+      "subtitulo": "Una semana en un salón de Lleida, de principio a fin",
+      "narracion": "Empezamos los casos por sector. En cada clase vamos a seguir a un negocio inventado, pero muy real en su forma de trabajar, de principio a fin. Hoy conocemos a Carla. Tiene una peluquería en Lleida con dos empleadas. Sus clientas le escriben en castellano y en catalán. Vive del boca a boca y de Google Maps. Y le falta tiempo para todo lo que no es cortar y peinar. Si tienes un centro de estética, de uñas, de masajes o de bienestar, esta clase también es para ti."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La semana de Carla, antes de la IA",
+      "columnas": [
+        "Tarea",
+        "Tiempo semanal",
+        "El problema"
+      ],
+      "filas": [
+        [
+          "WhatsApp de citas",
+          "Unas 4 horas",
+          "Contesta entre clienta y clienta"
+        ],
+        [
+          "Recordatorios",
+          "No los envía",
+          "Dos o tres citas perdidas"
+        ],
+        [
+          "Reseñas de Google",
+          "Casi nunca responde",
+          "Una mala sin contestar"
+        ],
+        [
+          "Instagram",
+          "Domingo por la noche",
+          "Publica a rachas"
+        ]
+      ],
+      "narracion": "Así es la semana de Carla antes de empezar. Las cifras son inventadas, pero seguro que te suenan. Pasa unas cuatro horas a la semana contestando WhatsApp entre clienta y clienta, con las manos llenas de tinte. No envía recordatorios, así que cada semana pierde dos o tres citas. Casi nunca responde a las reseñas de Google, y tiene una negativa sin contestar desde hace un mes. Y publica en Instagram a rachas, los domingos por la noche, cuando ya no puede más. Vamos a resolverlo paso a paso."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Lunes: su asistente y los mensajes en catalán",
+      "usuario": "Eres el asistente de un salón de peluquería de Lleida. Contesta siempre en el idioma en que escriba la clienta. Una clienta escribe: «Hola! Teniu lloc dissabte al matí per tallar i fer color?» Tenemos hueco el sábado a las 10. Redacta la respuesta con el hueco [NOM].",
+      "ia": "Hola, [NOM]! Dissabte tenim lloc a les 10 del matí per tallar i fer color. Vols que te'l reservi? Si et va millor un altre dia, digue-m'ho i ho mirem.",
+      "narracion": "El lunes, Carla dedica diez minutos a crear su asistente con la entrevista de la clase de asistentes. En las instrucciones incluye algo clave para Lleida. Contesta siempre en el idioma en que escriba la clienta. Así, cuando le escriben en catalán, la respuesta sale en catalán, y en castellano cuando le escriben en castellano. Carla revisa el mensaje, rellena el nombre en WhatsApp y lo envía. Fíjate en que ella le dice al asistente qué hueco tiene libre. La IA no ve su agenda, así que nunca inventa una hora."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Martes: recordatorios y respuestas rápidas",
+      "pasos": [
+        "Pide el juego de mensajes de citas en castellano y catalán",
+        "Guárdalos como respuestas rápidas en WhatsApp Business",
+        "Activa el mensaje de ausencia en horario de salón",
+        "Cada tarde, cinco minutos para los recordatorios de mañana",
+        "Añade la política de cancelación a la confirmación"
+      ],
+      "narracion": "El martes toca la agenda. Carla pide el juego de mensajes de citas de la clase de agenda, pero en los dos idiomas. Los guarda como respuestas rápidas en WhatsApp Business. Activa el mensaje de ausencia para las horas en que está con clientas, que es casi todo el día. Y se pone una rutina. Cada tarde, a las siete, cinco minutos para mandar los recordatorios del día siguiente. Añade además una frase amable a la confirmación sobre avisar con tiempo si no se puede venir."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Miércoles: el dato que nunca va a la IA",
+      "mal": "Pegar en la IA: «Montse Puig, alérgica a la parafenilendiamina, reacción en marzo».",
+      "bien": "La alergia queda solo en la ficha del salón. A la IA le dice: «una clienta con piel sensible».",
+      "narracion": "El miércoles, una clienta le cuenta a Carla que tuvo una reacción alérgica a un tinte. Ese dato es de salud, y los datos de salud son categoría especial. Carla lo apunta en la ficha de la clienta, en su programa del salón, y en ningún sitio más. Si necesita ayuda de la IA para redactar un mensaje, escribe una clienta con piel sensible, sin nombre ni diagnóstico. Y una cosa más. Ni Carla ni la IA dan consejos médicos. Si hay una reacción, la clienta va a su médico."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Jueves: la reseña negativa de hace un mes",
+      "usuario": "Responde a esta reseña de Google de mi peluquería: «Me hicieron esperar 40 minutos y nadie me dio una explicación.» Fue un día con una urgencia. Quiero disculparme sin excusas largas, explicar que hemos cambiado la forma de avisar de los retrasos e invitarla a volver. Tres líneas, tono humano.",
+      "ia": "Tienes toda la razón: esperar 40 minutos sin explicación no es lo que queremos para nadie. Lo sentimos de verdad. Desde entonces avisamos por WhatsApp cuando vamos con retraso. Nos encantaría que nos dieras otra oportunidad.",
+      "narracion": "El jueves, Carla por fin responde a la reseña negativa. Usa la instrucción de la sección de atención al cliente y añade lo que ha cambiado de verdad. Ahora avisan por WhatsApp cuando van con retraso. Ese detalle es lo que convierte una disculpa en una respuesta creíble. Pero solo funciona si es verdad. Si la IA hubiera escrito algo que no han cambiado, Carla lo borraría antes de publicar. Después configura el flujo de reseña nueva con borrador, para no volver a dejar ninguna sin contestar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Viernes: un mes de Instagram en veinte minutos",
+      "usuario": "Prepara 8 publicaciones de Instagram para noviembre para mi peluquería de Lleida: dos por semana. Mezcla consejos de cuidado del pelo en invierno, el equipo, un antes y después y un recordatorio de reservas para Navidad. Para cada una: idea de foto, texto de cuatro líneas y llamada a reservar por WhatsApp.",
+      "ia": "Semana 1, publicación 1\nFoto: melena con brillo junto a la ventana del salón.\nTexto: El frío y la calefacción resecan el pelo. Tres trucos para que no se note este invierno. ¿Te los contamos en tu próxima cita?\nLlamada: Reserva por WhatsApp.\n…",
+      "narracion": "El viernes, Carla se sienta veinte minutos con un café y prepara el mes entero de Instagram, como en la sección de marketing. Pide ocho publicaciones con ideas de foto, texto y llamada a reservar. Luego revisa, cambia lo que no suena a ella y programa las publicaciones. Las fotos las hace ella en el salón. Para los antes y después usa fotos reales, con permiso de la clienta, nunca imágenes generadas. Una foto inventada de un resultado sería engañar a quien la ve."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si tienes estética, uñas o un centro de bienestar",
+      "puntos": [
+        "Alergias, tratamientos y lesiones: datos de salud",
+        "Ningún consejo médico ni en mensajes ni en publicaciones",
+        "Antes y después: fotos reales y con permiso",
+        "Si pones un chatbot, avisa de que es una IA",
+        "Dudas concretas de datos: tu gestoría o un profesional"
+      ],
+      "narracion": "Si tu negocio es de estética, de uñas, de masajes o de bienestar, hay cuatro cosas en las que tienes que fijarte más que una peluquería. Las alergias, los tratamientos y las lesiones son datos de salud, de categoría especial. Nada de consejos médicos, ni en mensajes ni en publicaciones. Los antes y después, con fotos reales y con permiso. Y si pones un chatbot en la web, desde agosto de 2026 debe avisar de que es una IA. Ante dudas concretas sobre datos, consulta con tu gestoría o con un profesional."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La semana de Carla, un mes después",
+      "columnas": [
+        "Tarea",
+        "Antes",
+        "Ahora"
+      ],
+      "filas": [
+        [
+          "WhatsApp de citas",
+          "Unas 4 horas",
+          "Unas 2 horas"
+        ],
+        [
+          "Recordatorios",
+          "Ninguno",
+          "5 minutos al día"
+        ],
+        [
+          "Reseñas de Google",
+          "Sin responder",
+          "Todas, en 10 minutos"
+        ],
+        [
+          "Instagram",
+          "A rachas",
+          "20 minutos al mes"
+        ]
+      ],
+      "narracion": "Un mes después, Carla repasa su cuaderno de horas. De nuevo, cifras inventadas para el ejemplo. Los WhatsApp le llevan la mitad. Los recordatorios, cinco minutos al día, y ha dejado de perder casi todas las citas. Las reseñas están todas contestadas en diez minutos a la semana. E Instagram ya no le roba los domingos. Lo más importante no está en la tabla. Carla sigue decidiendo cada mensaje que sale del salón. La IA redacta, ella decide y revisa."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Escribe tu semana actual como la tabla de Carla",
+        "Marca la tarea que más tiempo te roba",
+        "Busca en el curso la clase que la resuelve",
+        "Haz hoy el primer paso de esa clase",
+        "Apunta el tiempo en tu cuaderno de horas"
+      ],
+      "narracion": "Tu tarea de hoy, diez minutos. Escribe tu semana actual como la tabla de Carla, con las tareas, el tiempo y el problema de cada una. Marca la tarea que más tiempo te roba. Busca en el curso la clase que la resuelve, ya sea la de WhatsApp, la de reseñas, la de publicaciones o la de agenda. Y haz hoy el primer paso de esa clase. Apunta el tiempo en tu cuaderno de horas. Si tu negocio es de otro sector, sigue viendo los casos, porque las ideas se pueden trasladar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Asistente que contesta en el idioma de la clienta",
+        "Respuestas rápidas y recordatorios cada tarde",
+        "Datos de salud: solo en la ficha del salón",
+        "Reseñas con cambios reales, y flujo de borrador",
+        "Instagram del mes en veinte minutos, fotos reales"
+      ],
+      "narracion": "Repasamos la semana de Carla. Un asistente que contesta en el idioma de cada clienta. Respuestas rápidas y recordatorios cada tarde. Los datos de salud, solo en la ficha del salón y nunca en la IA. Respuestas a reseñas con cambios reales y un flujo que prepara borradores. Y un mes de Instagram en veinte minutos, con fotos reales. En la próxima clase nos vamos a Zaragoza, con un electricista que pasa el día en la furgoneta."
+    }
+  ]
+}

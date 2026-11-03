@@ -1,0 +1,117 @@
+{
+  "id": "c3-13",
+  "titulo": "Tu ficha de Google Business Profile",
+  "descripcion": "Redacta con IA la descripción, los servicios, las publicaciones y las preguntas frecuentes de tu ficha de Google, revisando tú cada dato antes de publicarlo.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:ficha-google-business"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tu ficha de Google Business Profile",
+      "subtitulo": "Lo primero que ve quien te busca en Google Maps",
+      "narracion": "Empezamos la sección de marketing sin agencia por lo más rentable que tienes: tu ficha de Google Business Profile. Es gratuita y la puedes cambiar tú mismo cuando quieras. Es lo que aparece cuando alguien busca peluquería cerca de mí o electricista en Zaragoza. Muchos clientes deciden ahí, en diez segundos, si te llaman o pasan al siguiente. En esta clase vas a usar la IA para redactar la descripción, los servicios, las publicaciones y las preguntas frecuentes. Y vas a hacerlo con la regla de oro del curso: la IA redacta, tú decides y revisas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué mira un cliente en tu ficha",
+      "puntos": [
+        "Nombre, categoría, horario y cómo llegar",
+        "Una descripción clara de lo que haces y dónde",
+        "Servicios o productos con nombres que entienda",
+        "Fotos reales del local, del equipo y del trabajo",
+        "Publicaciones recientes y respuestas a reseñas"
+      ],
+      "narracion": "Ponte un momento en el lado del cliente. Primero mira si estás abierto y si le pillas cerca. Después lee dos líneas de descripción para saber si haces lo que necesita. Luego mira fotos y reseñas. Si la ficha está a medias, con el horario de hace tres años y sin descripción, transmite abandono aunque tu trabajo sea excelente. La IA no puede hacer fotos de tu local ni poner tu horario real. Eso es cosa tuya. Pero sí puede quitarte el bloqueo de la página en blanco en todo lo que es texto."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La descripción de la ficha",
+      "usuario": "Usa la ficha de mi negocio. Escribe la descripción de mi perfil de Google: peluquería unisex en Cappont, Lleida, 12 años abierta, especialistas en color y cortes infantiles. Tono cercano, sin superlativos, sin emojis, máximo 600 caracteres.",
+      "ia": "En Peluquería Nuria, en el barrio de Cappont de Lleida, llevamos 12 años cuidando el pelo de familias enteras. Somos especialistas en color: mechas, tintes y matices pensados para tu tono de piel. También cortamos el pelo a los peques, con calma y sin prisas. Pide cita por WhatsApp o llámanos. Antes de empezar te asesoramos para que salgas con lo que de verdad querías.",
+      "narracion": "Aquí tienes la primera instrucción copiable. Fíjate en lo que lleva: qué negocio es, dónde está, desde cuándo, en qué destaca, el tono y un límite de longitud. Si guardaste la ficha de tu negocio en la sección 2, pégala delante y te ahorras escribir todo esto. La respuesta menciona el barrio y la ciudad de forma natural, que es justo lo que busca la gente. Ahora te toca revisar. ¿De verdad atiendes por WhatsApp? ¿Son 12 años o son 11? Cambia lo que no sea exacto antes de publicarlo."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Superlativos frente a datos concretos",
+      "mal": "La mejor peluquería de Lleida. Calidad insuperable, precios increíbles y atención de diez.",
+      "bien": "Peluquería en Cappont, Lleida. Especialistas en color. Cita por WhatsApp. Abrimos los sábados por la mañana.",
+      "narracion": "Este es el error más común, con IA y sin ella. A la izquierda, frases que dice todo el mundo y que nadie se cree. A la derecha, datos que ayudan a decidir: dónde estás, qué haces mejor, cómo se pide cita y cuándo abres. Si la IA te devuelve algo como lo de la izquierda, no lo arregles a mano. Pídele: quita los superlativos y sustitúyelos por datos concretos de mi negocio. Y si no tiene esos datos, dáselos tú. La IA no sabe que abres los sábados si no se lo cuentas."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Tres publicaciones para la ficha",
+      "usuario": "Escribe 3 publicaciones cortas para mi ficha de Google: una novedad, una oferta y un consejo de cuidado del pelo. Máximo 3 frases cada una y una llamada a la acción al final. Deja entre corchetes lo que tenga que completar yo.",
+      "ia": "Novedad: Ya trabajamos con una nueva gama de tintes sin amoniaco. Pregúntanos en tu próxima cita. Reserva por WhatsApp.\n\nOferta: Del [fecha] al [fecha], corte y peinado infantil a [precio]. Plazas limitadas por la tarde. Pide cita.\n\nConsejo: Después del tinte, espera 48 horas antes de lavar el pelo. Así el color dura más. ¿Dudas? Escríbenos.",
+      "narracion": "Las publicaciones de la ficha son como pequeños anuncios gratuitos. Una al mes ya es mejor que ninguna. Fíjate en un truco que vas a usar todo el curso: pedirle a la IA que deje entre corchetes lo que tienes que completar tú. Así no se inventa precios ni fechas. En la oferta, el precio y las fechas los pones tú. En la novedad, comprueba que de verdad usas esos tintes. Y en el consejo, asegúrate de que lo compartirías con un cliente en persona. Si no lo dirías tú, no lo publiques."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué hace la IA y qué haces tú",
+      "columnas": [
+        "Parte de la ficha",
+        "La IA te ayuda a",
+        "Tú revisas"
+      ],
+      "filas": [
+        [
+          "Descripción",
+          "Redactar dos versiones",
+          "Que todo sea verdad"
+        ],
+        [
+          "Servicios",
+          "Nombrar y explicar cada uno",
+          "Precios y duración"
+        ],
+        [
+          "Publicaciones",
+          "Ideas y textos cortos",
+          "Fechas y condiciones"
+        ],
+        [
+          "Preguntas frecuentes",
+          "Respuestas claras",
+          "Horarios y políticas"
+        ],
+        [
+          "Fotos",
+          "Pies de foto",
+          "Que las fotos sean tuyas"
+        ]
+      ],
+      "narracion": "Esta tabla resume el reparto de trabajo, parte por parte. Ten la tabla a mano cada vez que actualices la ficha. La columna de la derecha es tu lista de comprobación. Las preguntas frecuentes también te servirán para tu web y tu WhatsApp. Para prepararlas, pídele las diez preguntas que más le haría un cliente a un negocio como el tuyo, con su respuesta. Después borra las que no apliquen y corrige las respuestas. Y las fotos, siempre reales. Una foto de tu local vale más que cualquier imagen bonita generada."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Servicios con nombres que se entienden",
+      "usuario": "Convierte esta lista en servicios para mi ficha de Google, con un nombre claro y una frase de explicación cada uno. No pongas precios. Lista: corte señora, corte caballero, mechas balayage, tinte raíz, peinado evento, corte niño.",
+      "ia": "Corte de mujer: lavado, corte y secado adaptados a tu tipo de pelo.\nCorte de hombre: corte a tijera o máquina con acabado a tu gusto.\nMechas balayage: aclarado degradado a mano para un color natural.\nTinte de raíz: retoque de color en la zona que ha crecido.\nPeinado para eventos: recogidos y ondas para bodas y celebraciones.\nCorte infantil: corte tranquilo para peques, sin prisas.",
+      "narracion": "Muchos negocios tienen los servicios de la ficha vacíos o con nombres de uso interno, como tinte raíz o corte caballero. El cliente busca otras palabras. Esta instrucción convierte tu lista, aunque esté escrita deprisa, en algo que se entiende. Fíjate en que le he pedido que no ponga precios. Los precios cambian y los decides tú, así que los añades a mano en la ficha. Revisa también cada explicación. Si en tu peluquería el corte de mujer no incluye el lavado, la IA acaba de prometer algo que no das. Cámbialo antes de publicar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Busca tu negocio en Google con tu cuenta iniciada",
+        "Comprueba nombre, categoría, horario y teléfono",
+        "Pide a la IA la descripción con la instrucción de la clase",
+        "Corrige cada dato y pega la descripción en tu ficha",
+        "Publica una sola publicación con un dato completado por ti"
+      ],
+      "narracion": "Tu tarea de hoy cabe en diez minutos. Busca tu negocio en Google con la cuenta con la que gestionas la ficha. Antes de escribir nada, comprueba lo básico: nombre, categoría, horario y teléfono. Un horario mal puesto te cuesta más clientes que una descripción floja. Después usa la instrucción de la descripción, revísala y pégala. Si te sobra un minuto, publica una sola publicación. En los recursos de esta clase tienes la plantilla de la ficha de Google, con las instrucciones listas para copiar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "La ficha de Google es gratis y decide muchas visitas",
+        "Pide datos concretos, no superlativos",
+        "Usa corchetes para lo que completas tú",
+        "Precios, horarios y fotos: siempre reales y revisados"
+      ],
+      "narracion": "Repasemos. Tu ficha de Google Business Profile es gratuita y es muchas veces el primer contacto con un cliente nuevo. La IA te ayuda con todo el texto: descripción, servicios, publicaciones y preguntas frecuentes. Tú aportas lo que solo tú sabes y revisas cada dato. Pide frases concretas en vez de superlativos y deja entre corchetes lo que tengas que completar. En la próxima clase vamos a preparar un mes entero de publicaciones para redes en unos veinte minutos."
+    }
+  ]
+}

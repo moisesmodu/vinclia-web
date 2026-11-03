@@ -1,0 +1,36 @@
+{
+  "seccion": 4,
+  "titulo": "Cuestionario: repetir y encontrar patrones",
+  "preguntas": [
+    {
+      "pregunta": "La bandera está a 4 saltos de Bit. ¿Qué número va en el bucle «Repite N veces: Adelante»?",
+      "respuestas": ["5, contando la casilla donde está Bit", "4, contando solo los saltos", "3, porque la última casilla no cuenta"],
+      "correcta": 1,
+      "explicacion": "Se cuentan los saltos, no la casilla donde ya está Bit. El truco: dedo sobre Bit y decir «uno» solo cuando el dedo salta a la casilla siguiente."
+    },
+    {
+      "pregunta": "Este programa hace una escalera: Adelante, Gira a la derecha, Adelante, Gira a la izquierda, y otra vez lo mismo. ¿Cuál es el bucle bueno?",
+      "respuestas": ["Repite 4 veces: Adelante, Gira a la derecha", "Repite 4 veces: Adelante", "Repite 2 veces: Adelante, Gira a la derecha, Adelante, Gira a la izquierda"],
+      "correcta": 2,
+      "explicacion": "El trozo entero tiene 4 bloques y sale 2 veces. Con solo «Adelante, Gira a la derecha», Bit no vuelve a mirar como al principio y choca en la segunda vuelta."
+    },
+    {
+      "pregunta": "Bit lleva el lápiz puesto y hace: Adelante, Adelante, Gira a la derecha, Adelante. ¿Cuántas casillas pinta?",
+      "respuestas": ["3", "4", "2"],
+      "correcta": 0,
+      "explicacion": "Solo pintan los Adelante, porque el lápiz pinta las casillas a las que entra Bit. Ni el giro ni la casilla de salida se pintan."
+    },
+    {
+      "pregunta": "Tu hijo pone en el mosaico «Pinta, Pinta, Pinta» y no sale la fila. ¿Qué está pasando?",
+      "respuestas": ["El color elegido no es el bueno", "Falta un bucle grande", "Pinta no mueve a Bit: pinta tres veces la misma casilla"],
+      "correcta": 2,
+      "explicacion": "El bloque Pinta pinta la casilla donde está Bit, sin moverlo. Para hacer una fila hay que alternar: Adelante, Pinta, Adelante, Pinta."
+    },
+    {
+      "pregunta": "Tu hija empieza el mosaico poniendo bloques sin plan y se pierde. ¿Qué es lo más útil?",
+      "respuestas": ["Hacerle tú la primera fila", "Pedirle que cuente las filas y busque las iguales antes de programar", "Decirle que lo deje para otro día", "Darle el programa completo"],
+      "correcta": 1,
+      "explicacion": "Primero el plan, después los bloques: contar las filas, buscar las iguales y programar solo la primera fila antes de seguir."
+    }
+  ]
+}

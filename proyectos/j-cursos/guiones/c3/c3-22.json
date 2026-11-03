@@ -1,0 +1,101 @@
+{
+  "id": "c3-22",
+  "titulo": "Previsión de IVA e IRPF: ayuda, no asesoría",
+  "descripcion": "Usa la IA para entender tus impuestos con tus propios números, estimar cuánto dinero apartar y preparar las preguntas para tu gestoría, sin confundir esta ayuda con asesoría fiscal.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:prevision-impuestos"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Previsión de IVA e IRPF",
+      "subtitulo": "Ayuda para preparar y entender, no asesoría",
+      "narracion": "Uno de los mayores sustos de ser autónomo llega cuando toca pagar impuestos y el dinero ya no está en la cuenta. En esta clase vas a usar la IA para entender mejor tus impuestos con tus propios números, estimar cuánto conviene apartar y preparar la reunión con tu gestoría. Antes de empezar, una advertencia que vamos a repetir varias veces. Esto es ayuda para preparar y entender, no asesoría fiscal. Para tu caso concreto, consúltalo siempre con tu gestoría. Usaremos el ejemplo del bar de menú del día que ya conoces, con números redondos e inventados."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA te ayuda a preparar y entender. Las decisiones fiscales son de tu gestoría.",
+      "narracion": "Esta frase resume la clase. Un asistente de IA puede explicarte un concepto con palabras sencillas, hacer cuentas con los datos que le das y ayudarte a ordenar tus dudas. Lo que no puede hacer es conocer tu situación completa, ni garantizar que lo que dice está al día. A veces responde con mucha seguridad cosas que no son correctas. Por eso en esta clase no vas a preguntarle cuánto tienes que pagar. Vas a pedirle que te ayude a llegar mejor preparado a quien sí lo sabe."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué sí y qué no",
+      "columnas": [
+        "Pide a la IA",
+        "No le pidas"
+      ],
+      "filas": [
+        [
+          "Explicar un concepto con un ejemplo",
+          "Qué tipo o porcentaje te aplica"
+        ],
+        [
+          "Hacer cuentas con tus totales",
+          "Plazos y casillas de declaraciones"
+        ],
+        [
+          "Ordenar tus dudas para la gestoría",
+          "Qué gastos puedes deducir"
+        ],
+        [
+          "Un resumen de lo que te explicaron",
+          "Presentar nada en tu nombre"
+        ]
+      ],
+      "narracion": "Esta tabla marca la frontera. A la izquierda, lo que la IA hace bien: explicar con ejemplos, calcular con los números que tú le das, ordenar dudas y resumir lo que te ha explicado tu gestoría. A la derecha, lo que no debes pedirle: qué tipo de impuesto o qué porcentaje te aplica, qué plazos o casillas tienen las declaraciones, qué gastos son deducibles o que presente algo por ti. Esas respuestas dependen de tu caso y de normas que cambian. Las da tu gestoría."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Entender un concepto con un ejemplo",
+      "usuario": "Explícame con un ejemplo sencillo qué es el IVA que cobro en mis facturas y el IVA que pago en mis gastos, y por qué el IVA que cobro no es dinero mío. No me digas tipos de IVA ni plazos: usa importes inventados.",
+      "ia": "Imagina que en un periodo cobras a tus clientes 1.000 euros de IVA en tus facturas. Ese dinero no es tuyo: lo recaudas para Hacienda.\n\nEn el mismo periodo pagas 300 euros de IVA en tus compras.\n\nDe forma simplificada, lo que ingresarías es la diferencia: 700 euros. Tu gestoría te dirá cómo se aplica en tu caso.",
+      "narracion": "Empezamos por entender. Esta instrucción pide una explicación con importes inventados y prohíbe expresamente dar tipos y plazos. Así te quedas con la idea, sin datos que podrían estar mal. La idea clave es muy útil para tu tesorería: el IVA que cobras en tus facturas no es dinero tuyo. Si te lo gastas, cuando toque ingresarlo no lo tendrás. Fíjate en que la respuesta dice de forma simplificada y te remite a tu gestoría. Si te responde sin esa cautela, pídesela tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Cuánto apartar, con tus números",
+      "usuario": "Con estos totales de mi programa de facturación, calcula cuánto dinero apartar y explica cada paso. IVA cobrado en facturas: 3.150 euros. IVA pagado en gastos: 840 euros. Ingresos sin IVA: 15.000 euros. Gastos sin IVA: 4.000 euros. Porcentaje para el IRPF que me ha indicado mi gestoría: 20 %. Es una estimación para apartar dinero, no una declaración.",
+      "ia": "1. IVA: 3.150 menos 840 = 2.310 euros.\n2. Diferencia entre ingresos y gastos: 15.000 menos 4.000 = 11.000 euros.\n3. IRPF a apartar con el porcentaje de tu gestoría: 20 % de 11.000 = 2.200 euros.\n4. Total a apartar: 2.310 más 2.200 = 4.510 euros.\n\nEs una estimación. Confirma las cifras con tu gestoría.",
+      "narracion": "Ahora, la previsión. Fíjate en de dónde sale cada dato. Los totales vienen de tu programa de facturación y de tu hoja de gastos, no de la memoria. Y el porcentaje para el IRPF te lo ha indicado tu gestoría. La IA no lo elige. Lo único que hace es la cuenta y te la explica paso a paso. Como en la clase de presupuestos, comprueba cada operación con la calculadora. Y el resultado es lo que conviene apartar en una cuenta aparte, para que el día de pagar no haya sustos. Si los totales de tu programa no te cuadran con tu hoja, resuelve eso primero."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La pregunta peligrosa y la útil",
+      "mal": "¿Cuánto tengo que pagar de IRPF este año y qué puedo desgravarme para pagar menos?",
+      "bien": "Con estos totales y el porcentaje de mi gestoría, calcula cuánto apartar y explícame cada paso.",
+      "narracion": "La diferencia entre estas dos preguntas es la diferencia entre jugar a ser asesor y prepararse bien. La pregunta de la izquierda pide una respuesta fiscal sobre tu caso, sin datos suficientes. La IA te contestará algo, con seguridad y con buena redacción, y es fácil creérselo. La de la derecha da a la IA solo una tarea de cálculo, con datos que vienen de fuentes fiables. Si alguna vez te sorprendes haciendo la pregunta de la izquierda, cámbiala por una pregunta para tu gestoría. Tu gestoría tiene tus datos completos y responde por lo que te dice. Un chat, no."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Preparar la reunión con tu gestoría",
+      "usuario": "Voy a reunirme con mi gestoría. Ayúdame a ordenar estas dudas en una lista clara de preguntas, de la más importante a la menos: no sé cuánto apartar cada mes, compré una cafetera para el bar, quiero saber si me conviene la aplicación gratuita de la AEAT para Verifactu, y si debo cambiar algo el año que viene. No respondas las preguntas.",
+      "ia": "Preguntas para la gestoría:\n1. ¿Qué porcentaje de mis ingresos debería apartar cada mes para impuestos?\n2. ¿Cómo trato la compra de la cafetera del bar?\n3. ¿Me conviene la aplicación gratuita de la AEAT para Verifactu o mejor un programa?\n4. ¿Hay algo que deba cambiar el año que viene?",
+      "narracion": "Este es, quizá, el mejor uso de la IA en temas fiscales. Le escribes tus dudas como te salen, desordenadas, y te las convierte en una lista de preguntas claras y ordenadas. Fíjate en la última frase: no respondas las preguntas. Así evitas que te dé respuestas que podrías tomar por buenas. Llegas a la gestoría con todo preparado y la reunión dura la mitad. Después, puedes pegar tus notas de la reunión y pedirle un resumen de lo que te han dicho, comprobando que no cambia nada."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Saca de tu programa los totales del último periodo",
+        "Si no tienes el porcentaje de tu gestoría, pídelo",
+        "Pide a la IA la cuenta de cuánto apartar, paso a paso",
+        "Comprueba cada operación con la calculadora",
+        "Ordena con la IA tus dudas para la gestoría"
+      ],
+      "narracion": "Para hoy, haz tu primera previsión, aunque sea aproximada. Saca de tu programa de facturación y de tu hoja de gastos los totales del último periodo. Si no sabes qué porcentaje apartar para el IRPF, no lo inventes: pídeselo a tu gestoría y, mientras, haz solo la parte del IVA. Pide la cuenta paso a paso y compruébala. Después ordena tus dudas y envíalas a tu gestoría. En los recursos de esta clase tienes la plantilla de previsión de impuestos, con las instrucciones y una tabla para rellenar cada periodo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Ayuda para preparar y entender, no asesoría",
+        "Conceptos con ejemplos inventados, sin tipos ni plazos",
+        "Cuentas con tus totales y el porcentaje de tu gestoría",
+        "El IVA que cobras no es tuyo: apártalo",
+        "Llega a la gestoría con las preguntas ordenadas"
+      ],
+      "narracion": "Cerramos la clase y la sección. La IA te ayuda a entender tus impuestos con ejemplos y a calcular cuánto apartar con tus totales y el porcentaje que te indica tu gestoría. También te ayuda a ordenar las dudas para tu gestoría. No le pidas tipos, plazos ni qué puedes deducir: eso es asesoría, y la da tu gestoría. Haz el cuestionario de la sección. En la siguiente entramos en lo legal: protección de datos y la Ley Europea de IA."
+    }
+  ]
+}

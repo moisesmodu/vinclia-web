@@ -1,0 +1,36 @@
+{
+  "seccion": 8,
+  "titulo": "Cuestionario: la Semana de las Misiones",
+  "preguntas": [
+    {
+      "pregunta": "En el robot aspirador que hace zigzag, ¿para qué sirve la variable «lado»?",
+      "respuestas": ["Para medir la distancia a la pared", "Para recordar hacia qué lado tiene que girar en la pared siguiente", "Para que el robot vaya más deprisa"],
+      "correcta": 1,
+      "explicacion": "Las dos paredes parecen iguales para los ultrasonidos: solo la variable sabe hacia dónde giró la última vez. Si vale 0 gira a la derecha y pone 1; si vale 1, gira a la izquierda y vuelve a 0."
+    },
+    {
+      "pregunta": "En el programa de sumo, ¿por qué el «si L = 1 o R = 1» tiene que ir el primero?",
+      "respuestas": ["Porque así el robot va más deprisa", "Porque los sensores de línea solo funcionan al principio", "Porque no salir del dohyo es más importante que atacar"],
+      "correcta": 2,
+      "explicacion": "Cuando se cumple el primer «si», los demás ni se miran. Por eso en él va lo más importante: la seguridad. Si el ataque va primero, el robot empuja la lata hasta el borde y cae."
+    },
+    {
+      "pregunta": "En el rescate en la cueva, ¿con qué condición sabe el robot que ha llegado a la base de color?",
+      "respuestas": ["Valor de gris M mayor que 200", "Distancia menor que 10", "Línea M = 1"],
+      "correcta": 0,
+      "explicacion": "En el blanco, el valor de gris es de unos 90 y en la base de color, de unos 360: 200 queda en medio. «Línea M = 1» no sirve, porque solo distingue blanco y negro."
+    },
+    {
+      "pregunta": "En la carrera contrarreloj, ¿por qué usamos «repite hasta que L = 1 y R = 1» y después «para», en lugar de «para siempre»?",
+      "respuestas": ["Porque «para siempre» no puede seguir líneas", "Porque, al encontrar la raya, sale del bucle, se para y ya no vuelve a arrancar", "Porque así el robot va más deprisa", "Porque así el robot no necesita los sensores"],
+      "correcta": 1,
+      "explicacion": "Por la inercia, el robot se desliza un par de centímetros después de «para» y sale de la raya. Con «para siempre», en la vuelta siguiente ya no ve la meta y vuelve a arrancar."
+    },
+    {
+      "pregunta": "Tu robot da la vuelta en 16 segundos a velocidad 200. A 255 hace eses y se confunde en la chicane. ¿Qué hace un buen equipo de carreras?",
+      "respuestas": ["Pone siempre 255, aunque falle", "Vuelve al seguimiento del chip", "Cambia todas las velocidades a la vez", "Prueba velocidades intermedias y se queda con la más rápida que siempre funciona"],
+      "correcta": 3,
+      "explicacion": "La mejor velocidad es la más rápida que siempre funciona. Se prueba 210, 220…, cambiando una sola cosa cada vez, para saber qué ha mejorado el tiempo o qué lo ha estropeado."
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+ "id": "c1",
+ "slug": "programacion-ninos-padres",
+ "color": "#2F6BFF",
+ "color2": "#F08A24",
+ "base": [
+  "robot",
+  "creadors"
+ ],
+ "titulo": "Programación para niños en casa: guía para padres",
+ "duracionObjetivoMin": 180,
+ "secciones": [
+  {
+   "t": "Empieza aquí",
+   "l": [
+    {
+     "t": "Bienvenida: vuestro primer juego de programación en 10 minutos",
+     "src": [
+      "r1-1"
+     ],
+     "nota": "Gancho: el juego 'Haz de robot' sin pantalla, hecho en directo. Vista previa gratuita.",
+     "id": "c1-01"
+    },
+    {
+     "t": "Por qué programar entre los 6 y los 11 años (y qué no esperar)",
+     "src": [
+      "r1-1"
+     ],
+     "nota": "Pensamiento computacional, sin promesas de 'futuro ingeniero'. LOMLOE ya lo incluye.",
+     "id": "c1-02"
+    },
+    {
+     "t": "Cómo usar este curso: el plan de 4 semanas y los descargables",
+     "src": [
+      "r1-1",
+      "r2-1",
+      "g1-1"
+     ],
+     "nota": "20 minutos, 3 días por semana. Cada semana = sesiones de Numi + imprimibles. Qué hay en Recursos.",
+     "id": "c1-03"
+    }
+   ]
+  },
+  {
+   "t": "Vuestro papel como madre o padre",
+   "l": [
+    {
+     "t": "No hace falta saber programar: preguntar antes de responder",
+     "src": [
+      "r1-1",
+      "r1-3"
+     ],
+     "nota": "Predecir antes de ejecutar (PRIMM), el adulto no toca el ratón.",
+     "id": "c1-04"
+    },
+    {
+     "t": "El rincón, el horario y las normas de pantalla",
+     "src": [
+      "r1-1",
+      "d3-1"
+     ],
+     "nota": "Normas de la app (manos limpias, sentarse bien, avisar a un adulto, descansar ojos).",
+     "id": "c1-05"
+    },
+    {
+     "t": "¿Por dónde empezamos según la edad? Bit (6-8) y Scratch (9-11)",
+     "src": [
+      "r1-1",
+      "g1-1"
+     ],
+     "nota": "Ruta Robot → Creadores; herramientas gratis: Scratch, ScratchJr, Code.org y la primera sesión de Numi Tech sin cuenta.",
+     "id": "c1-06"
+    }
+   ]
+  },
+  {
+   "t": "Semana 1: órdenes en orden",
+   "l": [
+    {
+     "t": "Algoritmos en casa: recetas, mochilas y dientes",
+     "src": [
+      "r1-1"
+     ],
+     "nota": "",
+     "id": "c1-07"
+    },
+    {
+     "t": "La derecha y la izquierda del robot",
+     "src": [
+      "r1-2"
+     ],
+     "nota": "",
+     "id": "c1-08"
+    },
+    {
+     "t": "Caza el error: depurar sin dramas",
+     "src": [
+      "r1-3"
+     ],
+     "nota": "",
+     "id": "c1-09"
+    },
+    {
+     "t": "Proyecto de la semana: el repartidor de la isla",
+     "src": [
+      "r1-4"
+     ],
+     "nota": "",
+     "id": "c1-10"
+    }
+   ]
+  },
+  {
+   "t": "Semana 2: repetir y encontrar patrones",
+   "l": [
+    {
+     "t": "Repetir sin cansarse: los bucles",
+     "src": [
+      "r2-1"
+     ],
+     "nota": "",
+     "id": "c1-11"
+    },
+    {
+     "t": "Encuentra el patrón",
+     "src": [
+      "r2-2"
+     ],
+     "nota": "",
+     "id": "c1-12"
+    },
+    {
+     "t": "Dibujar con código: el lápiz de Bit",
+     "src": [
+      "r2-3"
+     ],
+     "nota": "",
+     "id": "c1-13"
+    },
+    {
+     "t": "Proyecto de la semana: el mosaico",
+     "src": [
+      "r2-4"
+     ],
+     "nota": "",
+     "id": "c1-14"
+    }
+   ]
+  },
+  {
+   "t": "Semana 3: el robot decide",
+   "l": [
+    {
+     "t": "Eventos: cuando pulso el botón…",
+     "src": [
+      "r3-1",
+      "r3-3"
+     ],
+     "nota": "",
+     "id": "c1-15"
+    },
+    {
+     "t": "Si hay una pared… las condiciones",
+     "src": [
+      "r4-1",
+      "r4-3"
+     ],
+     "nota": "",
+     "id": "c1-16"
+    },
+    {
+     "t": "Funciones: ponle nombre a un grupo de órdenes",
+     "src": [
+      "r5-1",
+      "r5-3"
+     ],
+     "nota": "",
+     "id": "c1-17"
+    },
+    {
+     "t": "Contar, recordar y repetir hasta que…",
+     "src": [
+      "r6-1",
+      "r7-1",
+      "r7-4"
+     ],
+     "nota": "",
+     "id": "c1-18"
+    }
+   ]
+  },
+  {
+   "t": "Semana 4: su primer videojuego",
+   "l": [
+    {
+     "t": "Del robot al escenario: personajes y diálogos",
+     "src": [
+      "g1-1",
+      "g1-2"
+     ],
+     "nota": "",
+     "id": "c1-19"
+    },
+    {
+     "t": "Animación y bucles para siempre",
+     "src": [
+      "g2-1",
+      "g2-2"
+     ],
+     "nota": "",
+     "id": "c1-20"
+    },
+    {
+     "t": "Interacción: teclas, clics y mensajes",
+     "src": [
+      "g3-1",
+      "g3-2",
+      "g3-3"
+     ],
+     "nota": "",
+     "id": "c1-21"
+    },
+    {
+     "t": "Coordenadas, choques y condiciones",
+     "src": [
+      "g4-1",
+      "g5-1"
+     ],
+     "nota": "",
+     "id": "c1-22"
+    },
+    {
+     "t": "Marcador, vidas y su juego: atrapa la fruta",
+     "src": [
+      "g6-1",
+      "g6-2",
+      "g5-4"
+     ],
+     "nota": "",
+     "id": "c1-23"
+    },
+    {
+     "t": "La presentación final: feria en casa y diploma",
+     "src": [
+      "r8-3",
+      "r8-4",
+      "g8-4"
+     ],
+     "nota": "",
+     "id": "c1-24"
+    }
+   ]
+  },
+  {
+   "t": "Cuando el niño se frustra",
+   "l": [
+    {
+     "t": "Por qué se frustra (y por qué es buena señal)",
+     "src": [
+      "r1-3",
+      "r4-3"
+     ],
+     "nota": "Usa faq, seg y errores típicos de las guías.",
+     "id": "c1-25"
+    },
+    {
+     "t": "Cinco frases que ayudan y tres que no",
+     "src": [
+      "r1-3",
+      "r5-3"
+     ],
+     "nota": "",
+     "id": "c1-26"
+    },
+    {
+     "t": "Cuando no quiere seguir: motivación sin premios ni castigos",
+     "src": [
+      "r8-1",
+      "g8-1"
+     ],
+     "nota": "",
+     "id": "c1-27"
+    }
+   ]
+  },
+  {
+   "t": "Seguridad en internet y bienestar digital",
+   "l": [
+    {
+     "t": "Cuentas, edades mínimas y privacidad",
+     "src": [
+      "d1-1",
+      "d1-2"
+     ],
+     "nota": "",
+     "id": "c1-28"
+    },
+    {
+     "t": "Compartir proyectos y hablar con desconocidos",
+     "src": [
+      "d1-3",
+      "d2-3",
+      "d4-1"
+     ],
+     "nota": "",
+     "id": "c1-29"
+    },
+    {
+     "t": "Pantallas, videojuegos y el plan digital de la familia",
+     "src": [
+      "d3-1",
+      "d3-2",
+      "d3-4"
+     ],
+     "nota": "",
+     "id": "c1-30"
+    }
+   ]
+  },
+  {
+   "t": "Y ahora, ¿qué?",
+   "l": [
+    {
+     "t": "La ruta de los próximos 6 meses",
+     "src": [
+      "g8-4",
+      "k1-1"
+     ],
+     "nota": "",
+     "id": "c1-31"
+    },
+    {
+     "t": "Clase extra: Numi Tech, cuadernos y más recursos",
+     "src": [],
+     "nota": "Venta cruzada. Ver docs de clase extra.",
+     "id": "c1-32"
+    }
+   ]
+  }
+ ]
+}

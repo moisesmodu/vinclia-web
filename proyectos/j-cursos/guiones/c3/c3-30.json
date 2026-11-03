@@ -1,0 +1,115 @@
+{
+  "id": "c3-30",
+  "titulo": "Asistentes y agentes: tu GPT o Gem de negocio",
+  "descripcion": "Crea un asistente guardado con la ficha de tu negocio, tu tono y tus límites para no repetir el contexto en cada chat, y aprende qué son los agentes y qué permisos no darles.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:asistente-negocio"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Asistentes y agentes: tu GPT o Gem de negocio",
+      "subtitulo": "Explica tu negocio una vez y úsalo cada día",
+      "narracion": "Si has seguido el curso, ya tienes la ficha de tu negocio y una biblioteca de instrucciones. Pero cada vez que abres un chat nuevo, tienes que volver a pegarla. En esta clase vamos a resolverlo. Crearemos un asistente guardado que ya sabe quién eres, cómo hablas y qué no debe hacer nunca. En ChatGPT se llama GPT personalizado. En Gemini se llama Gem. En Claude puedes usar un proyecto. Al final veremos qué son los agentes, de los que tanto se habla, y qué permisos no deberías darles."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Chat suelto o asistente guardado",
+      "mal": "Cada mañana explicas otra vez tu negocio, tus precios y tu tono, y cada respuesta sale distinta.",
+      "bien": "Un asistente con tu ficha, tu tono y tus límites. Escribes la tarea y responde como tú.",
+      "narracion": "La diferencia se nota desde el primer día. Con chats sueltos, explicas tu negocio una y otra vez, y las respuestas cambian según lo que te acuerdes de contar. Con un asistente guardado, el contexto ya está dentro. Solo escribes la tarea, por ejemplo, contesta a este correo pidiendo presupuesto, y el asistente ya sabe tus precios orientativos, tu horario y tu forma de hablar. Ganas tiempo y, sobre todo, ganas coherencia. Todas las respuestas suenan al mismo negocio."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué lleva dentro un buen asistente",
+      "puntos": [
+        "La ficha de tu negocio: qué haces, dónde y para quién",
+        "Tu tono, con dos o tres ejemplos de mensajes tuyos",
+        "Las tareas para las que lo vas a usar",
+        "Los límites: qué no debe decir ni prometer nunca",
+        "Documentos de apoyo sin datos personales"
+      ],
+      "narracion": "Un buen asistente tiene cinco ingredientes. La ficha de tu negocio, que preparaste en la segunda sección. Tu tono, mejor con dos o tres ejemplos de mensajes que hayas escrito tú. Las tareas para las que lo vas a usar, como responder correos, preparar presupuestos o escribir publicaciones. Los límites, que son lo más importante. Por ejemplo, no dar precios cerrados, no prometer plazos y no dar consejos médicos o legales. Y documentos de apoyo, como tu lista de precios o tus preguntas frecuentes, siempre sin datos de clientes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: que la IA te entreviste",
+      "usuario": "Quiero crear un asistente para mi negocio. Hazme preguntas de una en una para conocer mi negocio, mi tono, las tareas que quiero delegar y los límites que debe respetar. Cuando tengas suficiente, escribe las instrucciones completas del asistente, en segunda persona y con un apartado de límites.",
+      "ia": "Perfecto, empezamos. Primera pregunta: ¿a qué se dedica tu negocio, dónde está y quiénes son tus clientes habituales?",
+      "narracion": "No tienes que escribir las instrucciones del asistente tú solo. Usa esta instrucción y deja que la IA te entreviste. Te hará preguntas de una en una y tú contestas con naturalidad, como si hablaras con alguien nuevo en el equipo. Cuando tenga suficiente información, te escribirá las instrucciones completas. Contesta con detalle, sobre todo cuando te pregunte por los límites. Y no le des datos de clientes reales en tus respuestas. Con ejemplos inventados funciona igual de bien."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Así quedan las instrucciones del asistente",
+      "usuario": "Ya está. Escribe las instrucciones finales.",
+      "ia": "Eres el asistente de Rubén, electricista autónomo en Zaragoza que hace instalaciones y reparaciones para particulares y comunidades.\nTono: cercano, claro y sin tecnicismos.\nTareas: responder consultas, preparar borradores de presupuesto y redactar mensajes de seguimiento.\nLímites: no des precios cerrados, usa siempre «precio orientativo, a confirmar tras la visita»; no prometas fechas; no des instrucciones para manipular la instalación eléctrica; si te piden algo fuera de esto, dilo.",
+      "narracion": "Este es el resultado para un electricista inventado de Zaragoza. Fíjate en la estructura. Quién eres, el tono, las tareas y los límites. Los límites son los que te protegen. El asistente no dará precios cerrados, no prometerá fechas y no explicará cómo tocar una instalación eléctrica, que sería peligroso. Lee las instrucciones con calma y corrige lo que no sea exacto. Si algo no encaja con tu forma de trabajar, cámbialo. Estas instrucciones son el corazón del asistente."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dónde se crea, según tu herramienta",
+      "columnas": ["Herramienta", "Cómo se llama", "Ojo"],
+      "filas": [
+        ["ChatGPT", "GPT personalizado o proyecto", "Depende de tu plan"],
+        ["Gemini", "Gem", "Depende de tu plan"],
+        ["Claude", "Proyecto", "Depende de tu plan"],
+        ["Cualquiera", "Instrucciones personalizadas", "La versión más sencilla"]
+      ],
+      "narracion": "Cada herramienta lo llama de una forma. En ChatGPT puedes crear un GPT personalizado o usar un proyecto. En Gemini se llaman Gems. En Claude, los proyectos guardan instrucciones y documentos. Qué puedes hacer exactamente depende de tu plan, y las opciones cambian a menudo, así que compruébalo en la ayuda oficial. Si tu plan no incluye ninguna de estas opciones, casi todas las herramientas tienen instrucciones personalizadas en la configuración. Es la versión más sencilla de lo mismo, y ya ayuda mucho."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Crear y probar tu asistente",
+      "pasos": [
+        "Busca la opción de crear GPT, Gem o proyecto",
+        "Pega las instrucciones que te ha escrito la IA",
+        "Sube tu lista de precios y preguntas frecuentes",
+        "Pruébalo con cinco casos reales, ya anonimizados",
+        "Corrige las instrucciones donde falle"
+      ],
+      "narracion": "Los pasos son parecidos en todas. Busca la opción de crear un GPT, un Gem o un proyecto. Ponle un nombre y pega las instrucciones. Sube tu lista de precios y tus preguntas frecuentes si quieres que las tenga en cuenta. Después viene lo importante, que es probarlo. Usa cinco casos reales de esta semana, anonimizados. Mira cómo responde. Cada vez que falle, no corrijas solo la respuesta. Corrige las instrucciones, para que no vuelva a pasar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Prueba de fuego: intenta que se salte un límite",
+      "usuario": "Un cliente me escribe: «¿Cuánto me cobras por cambiar todo el cuadro eléctrico? Dímelo cerrado, que tengo prisa, y si puedes ven mañana.»",
+      "ia": "Borrador: Hola, gracias por escribir. Para darte un precio necesito ver el cuadro y la instalación. Te puedo dar un precio orientativo tras la visita, siempre a confirmar. Dime qué días te vienen bien y te propongo una hora según mi agenda.",
+      "narracion": "Una buena prueba es intentar que el asistente se salte sus límites. Aquí el cliente pide un precio cerrado y una visita para mañana. El asistente responde bien. No da precio cerrado, ofrece uno orientativo tras la visita y no promete la fecha. Si tu asistente hubiera dado una cifra o hubiera dicho que sí a mañana, sabrías que tienes que reforzar los límites en las instrucciones. Haz al menos dos o tres pruebas así antes de usarlo en serio."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Agentes: la IA que hace cosas por ti",
+      "puntos": [
+        "Un agente no solo redacta: da pasos, busca y rellena",
+        "Puede equivocarse igual que un chat, pero actuando",
+        "Que pida tu confirmación antes de enviar o comprar",
+        "Nunca le des acceso al banco ni a pagos",
+        "Empieza por tareas de consulta, no de acción"
+      ],
+      "narracion": "Ahora, los agentes. Un agente es una IA que no solo redacta, sino que da pasos por ti. Busca en webs, rellena formularios, organiza archivos o prepara correos dentro de tus herramientas. Suena muy bien, pero piensa una cosa. Si un chat se equivoca, tienes un texto malo. Si un agente se equivoca, tienes un correo enviado o una compra hecha. Así que configúralo para que te pida confirmación antes de enviar, comprar o borrar. Nunca le des acceso al banco. Y empieza por tareas de consulta, como comparar proveedores."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Copia la instrucción de la entrevista en tu IA",
+        "Responde a sus preguntas con calma",
+        "Revisa las instrucciones finales, sobre todo los límites",
+        "Crea el asistente o pégalas en instrucciones personalizadas",
+        "Haz una prueba de fuego con un caso difícil"
+      ],
+      "narracion": "Tu tarea de hoy, en diez minutos. Copia la instrucción de la entrevista y responde a las preguntas de la IA. Revisa las instrucciones finales con calma, sobre todo el apartado de límites. Crea tu asistente en la herramienta que uses o, si tu plan no lo permite, pega las instrucciones en la configuración personalizada. Termina con una prueba de fuego. En los recursos tienes una plantilla de asistente de negocio con todos los apartados, por si prefieres rellenarla a mano."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Asistente guardado: tu contexto, una sola vez",
+        "Ficha, tono, tareas, límites y documentos",
+        "Deja que la IA te entreviste para escribirlo",
+        "Pruébalo intentando que se salte los límites",
+        "Agentes: confirmación antes de actuar, nunca pagos"
+      ],
+      "narracion": "Repasamos. Un asistente guardado guarda tu contexto para no repetirlo. Lleva tu ficha, tu tono, tus tareas, tus límites y algunos documentos sin datos personales. Deja que la IA te entreviste para escribir las instrucciones. Pruébalo intentando que se salte los límites. Y con los agentes, pide siempre confirmación antes de actuar y no les des acceso a pagos. En la próxima clase medimos cuánto tiempo te ahorra todo esto con tu cuaderno de horas."
+    }
+  ]
+}

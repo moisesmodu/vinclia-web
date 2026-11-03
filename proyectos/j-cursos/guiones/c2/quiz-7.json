@@ -1,0 +1,36 @@
+{
+  "seccion": 7,
+  "titulo": "Cuestionario: control inteligente",
+  "preguntas": [
+    {
+      "pregunta": "La variable velocidad vale 50. El programa hace «cambia velocidad en 30» y después, otra vez, «cambia velocidad en 30». ¿Cuánto vale ahora?",
+      "respuestas": ["30", "80", "110"],
+      "correcta": 2,
+      "explicacion": "50 + 30 = 80, y 80 + 30 = 110. Si hubiera hecho «pon velocidad a 30», valdría 30."
+    },
+    {
+      "pregunta": "Un contador ha contado 561 en una calle con 3 líneas. ¿Qué ha pasado?",
+      "respuestas": ["Mientras el sensor está encima de la misma línea, el bucle pasa muchas veces y suma cada vez", "El sensor de línea está estropeado", "La variable no puede contar más de 3"],
+      "correcta": 0,
+      "explicacion": "El bucle da muchas vueltas cada segundo. Para contar cada línea una vez, después de sumar hay que esperar hasta que el sensor vuelva a ver blanco."
+    },
+    {
+      "pregunta": "El programa hace error = distancia − 10 y velocidad = error × 5. El ultrasonido mide 40 cm. ¿A qué velocidad va el motor?",
+      "respuestas": ["200", "150", "45", "30"],
+      "correcta": 1,
+      "explicacion": "40 − 10 = 30 de error, y 30 × 5 = 150."
+    },
+    {
+      "pregunta": "Tu robot, con control proporcional, se para demasiado lejos de la meta. ¿Qué puedes cambiar?",
+      "respuestas": ["Hacer más pequeño el multiplicador k", "Quitar el «para siempre»", "Hacer más grande el multiplicador k"],
+      "correcta": 2,
+      "explicacion": "Con un k más grande, la velocidad se mantiene por encima de 30 hasta más cerca y el robot llega más lejos antes de entrar en la zona muerta."
+    },
+    {
+      "pregunta": "¿Por qué es buena idea hacer un programa grande, como el coche autónomo, a trozos?",
+      "respuestas": ["Porque el robot va más deprisa", "Porque si algo falla, sabes que está en el último trozo que has añadido", "Porque así no hace falta probarlo"],
+      "correcta": 1,
+      "explicacion": "Programando y probando cada trozo antes de añadir otro, cuando algo falla sabes dónde buscar: en lo último que has añadido."
+    }
+  ]
+}

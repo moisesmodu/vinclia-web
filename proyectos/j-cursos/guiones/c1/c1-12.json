@@ -1,0 +1,105 @@
+{
+  "id": "c1-12",
+  "titulo": "Encuentra el patrón",
+  "descripcion": "Ayudas a tu hijo o a tu hija a encontrar el trozo que se repite, en casa y en un programa, y a convertirlo en un bucle con varios bloques dentro.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r2-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Encuentra el patrón",
+      "subtitulo": "Semana 2 · Actividad 2",
+      "narracion": "Seguimos en la semana 2 del plan, la de repetir y encontrar patrones. En la clase anterior, el bucle tenía un solo bloque dentro. Hoy damos un paso más: dentro de un bucle pueden ir varios bloques. Para saber cuáles, hay que encontrar el patrón. Es una habilidad que sirve mucho más allá de la programación: en matemáticas, en música y para adivinar qué viene después. La actividad de hoy cabe en un rato de veinte minutos: diez de caza de patrones por casa y diez de bloques, si queréis pantalla."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Un patrón es un trozo que se repite siempre igual, en el mismo orden.",
+      "narracion": "Esta es la definición que usaremos con el peque. Fíjate en las dos condiciones: siempre igual y en el mismo orden. Hay patrones en las baldosas del suelo, en las rayas de una camiseta y en el estribillo de una canción. Pruébalo en la mesa con lápices de colores. Pon rojo, azul, azul, rojo, azul, y pregunta qué toca ahora. Toca otro azul, porque el trozo es un rojo y dos azules. Si se equivoca, no digas que está mal. Pídele que lea la fila en voz alta, despacio, y escuche dónde vuelve a empezar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cazadores de patrones, sin pantalla",
+      "pasos": [
+        "Buscad 3 patrones por casa: baldosas, cortinas, rayas",
+        "Decid en voz alta el trozo que se repite y cuántas veces",
+        "Haced uno con cucharas, piezas o lápices",
+        "Dejadlo a medias: la otra persona lo continúa",
+        "Cambiad los papeles"
+      ],
+      "narracion": "La actividad sin pantalla de hoy se llama cazadores de patrones. Salid a buscar tres patrones por casa: las baldosas, una cortina, una camiseta de rayas. Para cada uno, decid en voz alta cuál es el trozo que se repite y cuántas veces sale. Después haced uno vosotros con cucharas, piezas de construcción o lápices, y dejadlo a medias. La otra persona tiene que continuarlo. Recordad la regla: si una pieza cambia, ya no es el mismo patrón."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r2-2:10",
+      "narracion": "Con un programa largo se hace igual. Esta diapositiva resume el método en cuatro pasos. Primero, leer el programa en voz alta. Segundo, buscar dónde vuelve a empezar lo mismo. Tercero, rodear el trozo con el dedo y contar las veces. El trozo va dentro del bucle y el número es cuántas veces sale. Y cuarto, el paso que más se olvida: comprobar que, al terminar el trozo, Bit mira hacia el mismo lado que al principio."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-2:7",
+      "narracion": "Vamos a predecir otra vez antes de ejecutar. El programa dice: repite 4 veces, Adelante, Adelante, Gira a la derecha. Pregunta primero cuántos bloques hay dentro del bucle y cuántas vueltas hará. Después, dónde terminará Bit. Ahora mira. En cada vuelta hace un lado y una esquina. Con cuatro vueltas da la vuelta entera al parterre y vuelve a la casilla de salida. Un cuadrado siempre tiene cuatro vueltas, porque tiene cuatro lados iguales. Si alguien de casa pregunta para qué sirve esto, aquí tienes la respuesta: un solo bucle de tres bloques hace el trabajo de doce."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La escalera: pon el trozo entero",
+      "mal": "Repite 4 veces: Adelante, Gira a la derecha",
+      "bien": "Repite 2 veces: Adelante, Gira a la derecha, Adelante, Gira a la izquierda",
+      "narracion": "La escalera es más difícil. Un escalón son cuatro bloques: adelante, gira a la derecha, adelante, gira a la izquierda. Los dos giros se compensan, y después de cada escalón Bit vuelve a mirar hacia el mismo lado. Hacedlo primero con el cuerpo: un paso, gira a la derecha, un paso, gira a la izquierda, cuatro veces. Al final, pregunta hacia dónde miráis. Con el cuerpo se entiende enseguida por qué hacen falta los dos giros."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-2:12",
+      "narracion": "Esta diapositiva enseña el error más típico de hoy. El bucle solo tiene Adelante y Gira a la derecha. Pregunta: ¿llegará Bit, o chocará? ¿Y en qué vuelta? Ahora mira. La primera vuelta parece ir bien, pero Bit ya no mira como al principio. En la segunda vuelta, choca. Al trozo le falta la otra mitad del escalón. Si le pasa a tu hija, que ejecute solo la primera vuelta y mire hacia dónde queda Bit."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores de patrones y qué preguntar",
+      "columnas": [
+        "Lo que pasa",
+        "Qué le preguntas"
+      ],
+      "filas": [
+        [
+          "Pone solo una parte del trozo",
+          "¿Bit mira como al principio?"
+        ],
+        [
+          "Pone cuántos bloques, no cuántas veces",
+          "¿Cuántas veces sale el trozo entero?"
+        ],
+        [
+          "Deja el giro fuera del cuadrado",
+          "En cada esquina, ¿Bit gira?"
+        ],
+        [
+          "Cambia bloques al azar",
+          "¿Me dices el camino en voz alta?"
+        ]
+      ],
+      "narracion": "Estos son los errores que recogen las guías de Numi, con la pregunta que ayuda. A veces pone en el bucle el número de bloques en lugar del número de veces. Otras deja el giro fuera del bucle del cuadrado. Y a veces cambia bloques al azar hasta que funciona. En ese caso, para con calma y pide que diga el camino en voz alta: una a la derecha, una arriba. Cuando lo repita, ya tendrá el trozo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En pantalla",
+      "puntos": [
+        "Numi Tech: sesión «Encuentra el patrón»",
+        "Bloques mezclados: ordenarlos es un problema de Parsons",
+        "Scratch: repetir 4 con mover 100 pasos y girar 90 grados",
+        "En papel: la ficha «Detectives de patrones»"
+      ],
+      "narracion": "En Numi Tech, la sesión se llama Encuentra el patrón. Trae un ejercicio de bloques mezclados que hay que ordenar. Se llaman problemas de Parsons y son buenos porque no hay que escribir nada, solo pensar el orden. En Scratch podéis hacer el cuadrado con repetir 4 y, dentro, mover 100 pasos y girar 90 grados. Y sin pantalla, en los recursos tienes la ficha de detectives de patrones: se rodea el trozo y se escribe como un bucle."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "Un patrón es un trozo que se repite siempre igual",
+        "El trozo va dentro del bucle; el número, las veces",
+        "Al final del trozo, Bit mira como al principio",
+        "Tarea: cazar tres patrones por casa"
+      ],
+      "narracion": "Resumiendo. Un patrón es un trozo que se repite siempre igual y en el mismo orden. Para hacer el bucle, el trozo va dentro y el número es cuántas veces sale. Y al terminar el trozo, Bit tiene que mirar como al principio. La tarea de hoy: cazar tres patrones por casa y hacer uno a medias para que lo continúe la otra persona. Y si un día no hay tiempo, basta con preguntar en el paseo al cole: ¿ves algún patrón por aquí? En la próxima clase, estos mismos patrones dejarán un dibujo."
+    }
+  ]
+}

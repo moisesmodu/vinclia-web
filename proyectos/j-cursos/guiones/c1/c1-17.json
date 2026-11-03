@@ -1,0 +1,99 @@
+{
+  "id": "c1-17",
+  "titulo": "Funciones: ponle nombre a un grupo de órdenes",
+  "descripcion": "Explicas las funciones con órdenes de casa como «pon la mesa», jugáis al baile con nombre y aprendéis a reutilizar: escribirlo una vez, usarlo muchas, también en Scratch.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r5-1", "imprimible:r5-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Funciones: ponle nombre a un grupo de órdenes",
+      "subtitulo": "Semana 3 · Actividad 3",
+      "narracion": "Seguimos en la semana 3 del plan, la de eventos, condiciones, funciones y variables. Ya habéis visto que el programa puede reaccionar a un botón y decidir con un sensor. Hoy toca otra idea grande: inventar órdenes nuevas. En programación se llaman funciones. Detrás hay una habilidad que los profesores llaman abstracción: esconder muchos pasos detrás de un nombre. Suena difícil, pero en casa lo hacéis cada día."
+    },
+    {
+      "tipo": "frase",
+      "texto": "«Pon la mesa» es una sola orden que esconde muchos pasos.",
+      "narracion": "Empieza con una pregunta: ¿qué haces cuando te digo pon la mesa? Apunta en un papel todos los pasos que diga: el mantel, los platos, los vasos, los cubiertos. Después señala la lista y di: todo esto cabe en tres palabras. Eso es una función. Pedid más ejemplos de casa y del cole: haz la cama, lávate las manos, prepara la mochila. Cada una es una orden hecha de otras órdenes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es una función",
+      "puntos": [
+        "Un grupo de bloques con un nombre: una orden nueva",
+        "Llamarla es poner su bloque lila en el programa",
+        "Solo se hace cuando el programa la llama",
+        "Se escribe una vez y se llama muchas veces"
+      ],
+      "narracion": "En la app de Numi, una función es un grupo de bloques con un nombre. Por ejemplo, Adelante, Gira a la izquierda, Adelante y Gira a la derecha se llaman escalera. A partir de ahí, un solo bloque lila hace el trabajo de los cuatro. Poner ese bloque en el programa se llama llamar a la función. Bit hace todos sus bloques y sigue por el bloque siguiente. Y la puedes llamar tantas veces como quieras."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El baile con nombre, sin pantalla",
+      "pasos": [
+        "Inventad 3 movimientos: palmada, giro y salto",
+        "Ponedles un nombre divertido: «el baile del robot»",
+        "Uno dice el nombre y el otro hace los 3 movimientos",
+        "Programa: baile del robot, un paso, baile del robot",
+        "Cambiad los papeles e inventad otra orden"
+      ],
+      "narracion": "La actividad sin pantalla de hoy es el baile con nombre. Inventad tres movimientos, por ejemplo una palmada, un giro y un salto. Ponedles un nombre divertido. A partir de ahí, una persona dice el nombre y la otra hace los tres movimientos, sin que nadie se los explique. Después haced un programa que use vuestra orden dos veces, con un paso en medio. Acabáis de crear una función. Dejad espacio alrededor para girar sin chocar con nada."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r5-1:9",
+      "narracion": "Vamos a predecir con una función. La función esquina es: Adelante, Adelante, Gira a la derecha. El programa la llama dos veces. Pregunta dónde terminará Bit, en la A, en la B o en la C. Un buen truco es hacer la función con el dedo sobre la pantalla antes de elegir. Ahora mira. Cada llamada hace dos pasos y un giro. Primero sube dos casillas y gira; después avanza dos casillas hacia la derecha. Termina en la A."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Escribir no es llamar",
+      "mal": "Escribe los bloques dentro de la función y deja el programa vacío: Bit no se mueve",
+      "bien": "Pone el bloque lila en el programa: Bit hace la función y sigue con lo siguiente",
+      "narracion": "El error más típico de hoy es este. Escribe los bloques dentro de la función, pero no la llama, y Bit no se mueve. La guía de Numi usa una imagen muy útil: la función espera en la libreta hasta que el programa pone su bloque lila. Pregunta: ¿quién llama a la función? Otra duda frecuente: al acabar la función, Bit no vuelve a la casilla de salida. Se queda donde está y sigue leyendo el programa."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r5-3:4",
+      "narracion": "La segunda sesión de hoy trata de reutilizar: escribirlo una vez y usarlo muchas. La diapositiva lo muestra con números. Tres escaleras escritas a mano son doce bloques. Con una función y un bucle, seis. En la app, el contador de bloques suma los del programa y los de dentro de las funciones que escribe. Por eso a veces le sorprende ver más bloques de los que ve. Contadlos juntos con el dedo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El mensaje más corto, sin pantalla",
+      "pasos": [
+        "Escribid el camino de la puerta a la cocina, orden a orden",
+        "Contad cuántas órdenes habéis escrito",
+        "Buscad trozos que se repiten y ponedles nombre",
+        "Volved a escribir el camino con los nombres nuevos",
+        "¿Cuántas órdenes os habéis ahorrado?"
+      ],
+      "narracion": "Para otro día de la semana, un concurso de programas cortos. Escribid en un papel cómo ir de la puerta de casa hasta la cocina, orden a orden. Contad las órdenes. Después buscad trozos que se repitan y ponedles un nombre. Por ejemplo, pasillo puede ser tres pasos y un giro. Volved a escribir el camino con los nombres nuevos y contad otra vez. En los recursos tienes una ficha con programas largos para acortar."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r5-3:9",
+      "narracion": "Esta diapositiva tiene una lección que vale también para los adultos. Primero, que el programa funcione. Después, buscar el trozo que se repite y convertirlo en una función con nombre. Y volver a probarlo. Muchos niños se atascan porque quieren hacerlo corto a la primera. Si le pasa a tu hijo, proponle que lo haga funcionar sin pensar en el máximo de bloques. Y recuerda que corto no siempre es mejor: un buen programa es corto y claro."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En Scratch: Mis bloques",
+      "puntos": [
+        "Grupo Mis bloques: «Crear un bloque»",
+        "Ponle un nombre que diga qué hace: «cuadrado»",
+        "Debajo de «definir cuadrado», los bloques del cuadrado",
+        "Usa el bloque nuevo tantas veces como quieras"
+      ],
+      "narracion": "En Scratch, las funciones están en el grupo Mis bloques. Se pulsa Crear un bloque, se le pone un nombre y aparece un bloque que dice definir, con ese nombre. Debajo van los bloques de la función. Por ejemplo, el cuadrado de la semana 2 con el lápiz. Después, el bloque nuevo se usa como cualquier otro. Si queréis un reto, cread cuadrado y llamadlo varias veces, moviendo el personaje entre llamada y llamada."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "Una función es un grupo de órdenes con un nombre",
+        "Solo se hace cuando el programa la llama",
+        "Escríbelo una vez, úsalo muchas",
+        "Primero que funcione; después, corto y claro"
+      ],
+      "narracion": "Resumiendo. Una función es un grupo de órdenes con un nombre, como pon la mesa. Solo se hace cuando el programa la llama. Se escribe una vez y se puede usar muchas, y así el programa es más corto y los errores se arreglan en un solo sitio. Tu tarea: el baile con nombre y, otro día, el mensaje más corto. En Numi Tech, las sesiones son Ponle nombre a un grupo de bloques y Pocos bloques, mucho trabajo."
+    }
+  ]
+}

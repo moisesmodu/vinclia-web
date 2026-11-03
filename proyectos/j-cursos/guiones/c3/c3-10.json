@@ -1,0 +1,117 @@
+{
+  "id": "c3-10",
+  "titulo": "Preguntas frecuentes y mensajes automáticos de WhatsApp Business",
+  "descripcion": "Preparas con la IA las respuestas a las preguntas que te hacen siempre y las conviertes en mensaje de bienvenida, mensaje de ausencia y respuestas rápidas de WhatsApp Business, gratis.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:mensajes-whatsapp-business"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Preguntas frecuentes y WhatsApp Business",
+      "subtitulo": "Escríbelo una vez, úsalo cada día",
+      "narracion": "En la clase anterior aprendiste a contestar mensajes uno a uno. Pero muchos son siempre los mismos. Cuánto cuesta, qué horario tenéis, dónde aparco, se puede pagar con Bizum. En esta clase vas a escribir esas respuestas una sola vez, con ayuda de la IA. Y después las vas a guardar en WhatsApp Business, que es gratuita, como mensaje de bienvenida, mensaje de ausencia y respuestas rápidas. El ejemplo es una peluquería, pero sirve para cualquier negocio."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las preguntas que te hacen siempre",
+      "puntos": [
+        "Precios de los servicios o productos más pedidos",
+        "Horario, festivos y vacaciones",
+        "Cómo pedir, cambiar o cancelar una cita",
+        "Dónde estáis, cómo llegar y dónde aparcar",
+        "Formas de pago: tarjeta, efectivo, Bizum"
+      ],
+      "narracion": "Empieza por lo más sencillo. Coge el móvil, repasa los chats del último mes y apunta las preguntas que más se repiten. En casi todos los negocios salen las mismas. Precios de lo más pedido. Horario, festivos y vacaciones. Cómo pedir, cambiar o cancelar una cita. Dónde estáis y dónde se puede aparcar. Y formas de pago. En una tienda online aparecerán también envíos y devoluciones. Con diez preguntas tendrás cubierta la mayoría de los mensajes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "De tu lista desordenada a respuestas claras",
+      "usuario": "[Pegas tu ficha]\nEstas son las preguntas que más me hacen por WhatsApp en mi peluquería: precio del corte, si cogemos cita para el mismo día, dónde aparcar, si se puede pagar con Bizum, si hacemos recogidos para bodas. Escribe una respuesta para cada una, de 1 o 2 frases, de tú. Usa solo los datos de la ficha y marca PENDIENTE lo que no esté.",
+      "ia": "Corte: El corte de mujer cuesta 22 euros y el de hombre 14 euros.\nMismo día: Si tenemos hueco, sí; escríbenos y te decimos al momento.\nAparcar: Hay zona azul en la calle y un parking a dos minutos.\nBizum: Sí, aceptamos Bizum, tarjeta y efectivo.\nRecogidos: Sí, hacemos recogidos para bodas. Precio: PENDIENTE.",
+      "narracion": "Ahora dale la lista a la IA junto con tu ficha. Nuria, de la peluquería de Lleida, pega las preguntas tal como las tenía apuntadas, sin ordenar. Pide una respuesta corta para cada una, usando solo los datos de la ficha. Fíjate en el último punto. El precio de los recogidos no estaba en la ficha y la IA lo ha marcado como pendiente en vez de inventarlo. Nuria lo completa, revisa el resto y ya tiene su lista de preguntas frecuentes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te da WhatsApp Business, gratis",
+      "puntos": [
+        "Mensaje de bienvenida para quien escribe por primera vez",
+        "Mensaje de ausencia fuera de tu horario",
+        "Respuestas rápidas que se insertan con un atajo",
+        "Catálogo con productos o servicios y precios"
+      ],
+      "narracion": "WhatsApp Business es una aplicación gratuita, distinta del WhatsApp normal, pensada para negocios. Tiene cuatro funciones que vamos a aprovechar. El mensaje de bienvenida, que se envía solo a quien te escribe por primera vez. El mensaje de ausencia, que se envía cuando te escriben fuera de tu horario. Las respuestas rápidas, que son textos guardados que insertas escribiendo un atajo. Y el catálogo, donde puedes mostrar tus servicios o productos con su precio. Todos estos textos los escribes tú, con ayuda de la IA."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Bienvenida y ausencia en una instrucción",
+      "usuario": "[Pegas tu ficha]\nEscribe para WhatsApp Business: 1. Un mensaje de bienvenida de 2 frases que diga que respondemos en horario de salón y que para citas indiquen servicio y día. 2. Un mensaje de ausencia de 2 frases con el horario. Tono cercano, un emoji como mucho.",
+      "ia": "Bienvenida: ¡Hola! Gracias por escribir a Peluquería Nuria 💇 Respondemos en horario de salón; si quieres cita, dinos qué servicio y qué día te va bien.\n\nAusencia: Ahora mismo estamos cerradas. Abrimos de martes a sábado de 9:00 a 19:00 y te contestamos en cuanto volvamos.",
+      "narracion": "Con una sola instrucción tienes los dos mensajes automáticos. El de bienvenida tiene una función práctica, además de saludar. Pide al cliente lo que necesitas para darle cita: qué servicio y qué día. Así te ahorras un mensaje de ida y vuelta. El de ausencia deja claro el horario y que contestarás. Copia los dos en WhatsApp Business. Y cuando te vayas de vacaciones, acuérdate de cambiar el de ausencia con las fechas de vuelta."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un mensaje de ausencia flojo y uno útil",
+      "mal": "Ahora no estamos disponibles.",
+      "bien": "Estamos cerrados. Abrimos de martes a sábado de 9:00 a 19:00. Para cita, dinos servicio y día.",
+      "narracion": "Compara estos dos mensajes de ausencia. El primero no ayuda nada. El cliente no sabe cuándo abrirás ni qué tiene que hacer, así que probablemente te escriba otra vez o se vaya a otra peluquería. El segundo dice cuándo abres y qué información necesitas. Cuando lo leas mañana por la mañana, el cliente ya te habrá dicho qué quiere y qué día. Tú solo tienes que mirar la agenda y confirmar. Es un ejemplo de cómo un texto bien pensado ahorra trabajo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Respuestas rápidas: atajo y texto",
+      "columnas": ["Atajo", "Para qué"],
+      "filas": [
+        ["precios", "Precios de lo más pedido"],
+        ["cita", "Cómo pedir, cambiar o cancelar"],
+        ["llegar", "Dirección, aparcamiento"],
+        ["pago", "Tarjeta, efectivo y Bizum"],
+        ["gracias", "Despedida tras el servicio"]
+      ],
+      "narracion": "Las respuestas rápidas son lo que más tiempo ahorra. Cada una tiene un atajo, una palabra corta, y un texto. Cuando un cliente pregunta los precios, escribes el atajo y WhatsApp Business te propone el texto completo, que puedes retocar antes de enviar. Aquí tienes cinco atajos para empezar: precios, cita, cómo llegar, formas de pago y un mensaje de agradecimiento. Los textos son las respuestas que preparaste antes con la IA. Las creas desde el menú de herramientas para la empresa de la aplicación."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Montarlo todo en 10 minutos",
+      "pasos": [
+        "Instala WhatsApp Business y completa el perfil",
+        "Pega tu bienvenida y tu mensaje de ausencia",
+        "Crea 5 respuestas rápidas con sus atajos",
+        "Pruébalo escribiéndote desde otro móvil",
+        "Revísalo cuando cambien precios u horarios"
+      ],
+      "narracion": "Si aún no la tienes, instala WhatsApp Business y completa el perfil con dirección, horario y una descripción breve, que también puedes pedir a la IA. Pega el mensaje de bienvenida y el de ausencia. Crea cinco respuestas rápidas con sus atajos. Después pruébalo: pídele a alguien de confianza que te escriba desde otro móvil y comprueba que todo llega bien. Y como con la ficha, cuando cambien precios u horarios, actualiza los textos. Un precio antiguo en una respuesta automática da muy mala imagen."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si usas un chatbot con IA, avisa",
+      "puntos": [
+        "Tus mensajes fijos los escribes y revisas tú",
+        "Un chatbot de IA conversa solo con el cliente",
+        "Desde el 2 de agosto de 2026: hay que avisar",
+        "Ejemplo: Hola, soy un asistente virtual con IA"
+      ],
+      "narracion": "Una diferencia importante. Lo que has montado hoy son mensajes fijos que has escrito y revisado tú. No es un chatbot. Imagina que algún día usas un chatbot con IA que conversa solo con tus clientes. En ese caso, la Ley Europea de IA te obliga a avisar de que están hablando con una IA. Esta obligación de transparencia se aplica desde el 2 de agosto de 2026. Basta con una frase clara al principio, como hola, soy un asistente virtual con IA. Lo veremos en la sección legal."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Aprovecha tus preguntas frecuentes en otros sitios",
+      "puntos": [
+        "En tu ficha de Google Business Profile",
+        "En una página de preguntas de tu web",
+        "En un cartel junto a la caja o en el mostrador",
+        "En tu asistente guardado, dentro de la ficha"
+      ],
+      "narracion": "Esa lista de preguntas frecuentes que has preparado no sirve solo para WhatsApp. Puedes usarla en tu ficha de Google, en una página de tu web o en un cartel junto a la caja. Y, sobre todo, añádela a la ficha de tu negocio o a tu asistente guardado. Así, cuando le pidas a la IA que conteste un mensaje, ya sabrá tus respuestas de siempre y las usará igual. Has escrito una vez y lo aprovechas en cinco sitios."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Apunta las 10 preguntas que más te hacen",
+        "La IA redacta respuestas cortas con tu ficha",
+        "Bienvenida, ausencia y respuestas rápidas en WhatsApp Business",
+        "Tarea: deja montados los mensajes con la plantilla"
+      ],
+      "narracion": "Repasamos. Apunta las preguntas que más te hacen y pide a la IA respuestas cortas, usando solo los datos de tu ficha. Conviértelas en mensaje de bienvenida, mensaje de ausencia y respuestas rápidas de WhatsApp Business, que es gratuita. Y si algún día usas un chatbot con IA, avisa al cliente. Tu tarea de hoy, en 10 minutos. Descarga la plantilla de mensajes de WhatsApp Business de esta clase y deja montados los tres tipos de mensaje. En la próxima clase, quejas difíciles."
+    }
+  ]
+}

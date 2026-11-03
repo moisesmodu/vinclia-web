@@ -1,0 +1,119 @@
+{
+  "id": "c1-03",
+  "titulo": "Cómo usar este curso: el plan de 4 semanas y los descargables",
+  "descripcion": "Conoces el plan de cuatro semanas, cómo repartir tres ratos de veinte minutos y qué encontrarás en los recursos descargables de cada clase.",
+  "vistaPrevia": true,
+  "recursos": [
+    "imprimible:r1-1"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cómo usar este curso",
+      "subtitulo": "Cuatro semanas, tres ratos de veinte minutos",
+      "narracion": "Esta clase es el mapa del curso. Te contamos cómo está organizado, cuánto tiempo pide a la semana y qué vas a encontrar en los descargables. La idea es sencilla: tú ves las clases antes, preparas lo justo y después hacéis la actividad juntos. Nada de sentarse una tarde entera. Tres ratos cortos a la semana funcionan mucho mejor que uno largo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El plan de cuatro semanas",
+      "columnas": [
+        "Semana",
+        "Qué aprende",
+        "Proyecto"
+      ],
+      "filas": [
+        [
+          "1. Órdenes en orden",
+          "Algoritmos, giros y errores",
+          "El repartidor de la isla"
+        ],
+        [
+          "2. Repetir y patrones",
+          "Bucles y dibujar con código",
+          "El mosaico"
+        ],
+        [
+          "3. El robot decide",
+          "Eventos, condiciones, funciones",
+          "Retos con decisiones"
+        ],
+        [
+          "4. Su primer videojuego",
+          "Personajes, teclas, marcador",
+          "Atrapa la fruta"
+        ]
+      ],
+      "narracion": "El corazón del curso son cuatro semanas. En la primera, órdenes en orden: qué es un algoritmo, cómo gira un robot y cómo se caza un error. En la segunda, repetir y encontrar patrones, con bucles y dibujos. En la tercera, el robot decide: eventos, condiciones y funciones. Y en la cuarta, su primer videojuego, con personajes, teclas, choques y un marcador. Casi todas las semanas terminan con un proyecto que tu hijo o tu hija puede enseñar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Una semana tipo",
+      "pasos": [
+        "Antes: tú ves las clases de la semana, unos veinte minutos",
+        "Día 1: la actividad sin pantalla, con el cuerpo o en papel",
+        "Día 2: la sesión en la pantalla, con la app o con Scratch",
+        "Día 3: el reto o el proyecto, y que te lo explique"
+      ],
+      "narracion": "Te proponemos este ritmo. Antes de empezar la semana, ves sus clases tú solo: son cortas. El primer día hacéis la actividad sin pantalla, de pie o en papel. El segundo, la parte en la pantalla. El tercero, el reto o el proyecto, y lo más importante: que te lo explique en voz alta. Veinte minutos por rato son suficientes. Si un día no sale, no pasa nada; se retoma al siguiente."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-1:10",
+      "narracion": "Así son las actividades sin pantalla. Esta es la de la primera semana, «Haz de robot», tal como aparece en la presentación de Numi Tech para el aula. En clase se juega en grupos de tres: programador, robot y revisor. En casa basta con dos personas. Si hay hermanos, el tercero hace de revisor y comprueba que cada paso coincide con la orden. Todos los papeles son igual de importantes."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dónde se hace la parte de pantalla",
+      "puntos": [
+        "Numi Tech: la primera sesión es gratis y sin cuenta",
+        "ScratchJr, en tableta y gratis, para 5 a 7 años",
+        "Scratch, gratis en el navegador, desde 8 años",
+        "Sin pantalla: todas las semanas tienen alternativa en papel"
+      ],
+      "narracion": "Para la parte de pantalla tienes varias opciones, y ninguna obliga a pagar. Las actividades salen de las sesiones de Numi Tech, una app para extraescolares. La primera sesión se puede probar gratis y sin cuenta en tech punto numimates punto com. Si tu hijo ya la usa en el cole o en una extraescolar, seguid con ella. Si no, en cada clase te damos una alternativa con Scratch, que es gratuito, o sin pantalla. El curso sirve sin comprar nada."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué hay en los recursos",
+      "puntos": [
+        "Tarjetas de órdenes para recortar y usar todo el curso",
+        "Cuadrículas para marcar en el suelo o imprimir en A3",
+        "Fichas para resolver en papel",
+        "Hojas de plan para los proyectos"
+      ],
+      "narracion": "En la pestaña de recursos de muchas clases tienes fichas imprimibles en PDF. Las primeras son las tarjetas de órdenes: recórtalas y, si puedes, plastifícalas, porque se usan todo el curso. También hay cuadrículas para marcar en el suelo con cinta de pintor, o para imprimir en A3 y usar en la mesa. Y fichas para resolver en papel. Las soluciones de los retos te las contamos en cada clase, para que sepas qué esperar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Y además del plan",
+      "puntos": [
+        "Tu papel: preguntar antes de responder",
+        "Qué hacer cuando se frustra",
+        "Seguridad en internet y bienestar digital",
+        "Cómo seguir después de las cuatro semanas"
+      ],
+      "narracion": "Alrededor de las cuatro semanas hay secciones pensadas solo para ti. La siguiente trata de tu papel: cómo acompañar sin saber programar. Más adelante hablamos de qué hacer cuando tu hijo se frustra, de seguridad en internet y del plan digital de la familia. Y al final, cómo seguir. Puedes ver estas secciones cuando te hagan falta, no hace falta esperar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si tienes poco tiempo",
+      "puntos": [
+        "Mínimo: la actividad sin pantalla de cada semana",
+        "Las clases son para ti: míralas en el móvil",
+        "Si os saltáis una semana, retomad donde lo dejasteis"
+      ],
+      "narracion": "Habrá semanas complicadas. Si tienes poco tiempo, quédate con lo mínimo: la actividad sin pantalla de cada semana. Es la que más se recuerda. Las clases del curso son para ti, así que puedes verlas en el móvil, en un rato muerto. Y si os saltáis una semana entera, no pasa nada. Retomad donde lo dejasteis, sin intentar recuperar el tiempo perdido."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para empezar con buen pie",
+      "puntos": [
+        "Cuatro semanas, tres ratos de veinte minutos",
+        "Tú ves las clases antes; después lo hacéis juntos",
+        "Sin pantalla, con Scratch o con Numi Tech: tú eliges",
+        "Hoy: imprime las tarjetas y elige los tres días"
+      ],
+      "narracion": "Para empezar con buen pie, haz hoy dos cosas. Imprime las tarjetas de órdenes que tienes en los recursos de esta clase. Y mira el calendario para elegir tres días fijos, a la misma hora si puede ser. Con eso, la primera semana ya está medio preparada. En la siguiente sección hablamos de tu papel, empezando por lo más importante: no hace falta saber programar."
+    }
+  ]
+}

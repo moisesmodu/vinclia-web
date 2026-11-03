@@ -1,0 +1,1063 @@
+{
+ "curso": "c2",
+ "ficha": {
+  "titulo": "Crea robots con micro:bit y Maqueen para niños y profes",
+  "subtitulo": "Robótica educativa paso a paso: sensores, seguir la línea, LED y misiones con MakeCode y el simulador, de 10 a 12 años",
+  "idioma": "Español (España)",
+  "nivel": "Principiante",
+  "categoria": "Enseñanza y disciplinas académicas > Ingeniería",
+  "temaPrincipal": "Robótica",
+  "precioLista": "49,99 €",
+  "gratis": false,
+  "objetivos": [
+   "Programar el robot Maqueen Lite V5 con la micro:bit V2 en MakeCode, del simulador al robot de verdad",
+   "Controlar motores y velocidad para trazar polígonos, círculos y recorridos precisos",
+   "Usar el sensor de distancia para parar antes de un muro, esquivar obstáculos y aparcar solo",
+   "Seguir una línea con dos sensores, gestionar cruces y hacer un tren de mercancías",
+   "Combinar luz, sonido y LED en proyectos como la casa inteligente y la farola automática",
+   "Resolver misiones reales: robot aspirador, sumo, rescate en la cueva y carrera contrarreloj",
+   "Saber qué kit comprar, cuánto cuesta y cómo dar el curso en una extraescolar o en el aula"
+  ],
+  "requisitos": [
+   "No hace falta experiencia: se empieza desde cero con bloques",
+   "Un ordenador con Chrome o Edge (MakeCode es gratuito). Recomendable: robot DFRobot Maqueen Lite V5 y micro:bit V2, unos 70-80 € el kit",
+   "Para niños de 10 a 12 años, acompañados de un adulto o en clase"
+  ],
+  "publico": [
+   "Profesores, monitores de extraescolares y AMPA que quieren dar robótica con un temario completo de 32 sesiones",
+   "Niños y niñas de 10 a 12 años que quieren programar un robot de verdad, con su familia",
+   "Madres y padres que han comprado una micro:bit o un Maqueen y no saben por dónde empezar",
+   "Docentes de primaria que preparan un proyecto STEAM con robots"
+  ],
+  "palabrasClave": [
+   "micro:bit",
+   "Maqueen",
+   "robótica para niños",
+   "robótica educativa",
+   "MakeCode",
+   "programación de robots",
+   "STEAM primaria",
+   "extraescolar de robótica",
+   "sensor de ultrasonidos",
+   "seguidor de línea"
+  ]
+ },
+ "secciones": [
+  {
+   "n": 1,
+   "titulo": "Empieza aquí",
+   "clases": [
+    {
+     "n": 1,
+     "id": "c2-01",
+     "titulo": "Bienvenida: un robot que se para solo antes del muro",
+     "descripcion": "Descubre qué vas a construir en este curso: un robot Maqueen con micro:bit que avanza, gira, dibuja y se para solo antes de chocar. Verás cómo es cada clase y para quién está pensado.",
+     "video": "01 - Bienvenida un robot que se para solo antes del muro.mp4",
+     "subtitulos": "01 - Bienvenida un robot que se para solo antes del muro.vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": 187.895
+    },
+    {
+     "n": 2,
+     "id": "c2-02",
+     "titulo": "Cómo seguir el curso: niños, familias y profes",
+     "descripcion": "Aprende a sacar partido al curso en casa o en el aula: con el robot y MakeCode gratis, solo con el simulador o con actividades sin pantalla, a una sesión por semana.",
+     "video": "02 - Cómo seguir el curso niños, familias y profes.mp4",
+     "subtitulos": "02 - Cómo seguir el curso niños, familias y profes.vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": 283.576
+    },
+    {
+     "n": 3,
+     "id": "c2-03",
+     "titulo": "Materiales: el kit exacto y cuánto cuesta",
+     "descripcion": "Qué comprar para seguir el curso con el robot de verdad: el Maqueen Lite V5 y la micro:bit V2, precios orientativos de octubre de 2026, qué pilas usar y qué modelos evitar.",
+     "video": "03 - Materiales el kit exacto y cuánto cuesta.mp4",
+     "subtitulos": "03 - Materiales el kit exacto y cuánto cuesta.vtt",
+     "vistaPrevia": true,
+     "recursos": [],
+     "duracion": 309.864
+    },
+    {
+     "n": 4,
+     "id": "c2-04",
+     "titulo": "Del simulador al robot: MakeCode paso a paso",
+     "descripcion": "Pasa tu programa del simulador al Maqueen de verdad con MakeCode: descargar con el robot apagado, emparejar la micro:bit, el camino alternativo si la red lo bloquea y qué hacer si algo falla.",
+     "video": "04 - Del simulador al robot MakeCode paso a paso.mp4",
+     "subtitulos": "04 - Del simulador al robot MakeCode paso a paso.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-1.pdf"
+     ],
+     "duracion": 299.042
+    }
+   ],
+   "cuestionario": null
+  },
+  {
+   "n": 2,
+   "titulo": "Unidad 1: Qué es un robot",
+   "clases": [
+    {
+     "n": 5,
+     "id": "c2-05",
+     "titulo": "Robots a nuestro alrededor",
+     "descripcion": "Qué hace que una máquina sea un robot (siente, piensa y actúa), las partes del Maqueen Lite y el primer programa con tres bloques: motor, espera y para.",
+     "video": "05 - Robots a nuestro alrededor.mp4",
+     "subtitulos": "05 - Robots a nuestro alrededor.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-1.pdf"
+     ],
+     "duracion": 307.74
+    },
+    {
+     "n": 6,
+     "id": "c2-06",
+     "titulo": "Motores y velocidad",
+     "descripcion": "Qué quiere decir el número de velocidad del motor (de 0 a 255), por qué por debajo de 30 el robot no se mueve, cómo ir adelante y atrás, y cómo medir la velocidad real de tu Maqueen.",
+     "video": "06 - Motores y velocidad.mp4",
+     "subtitulos": "06 - Motores y velocidad.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-2.pdf"
+     ],
+     "duracion": 317.235
+    },
+    {
+     "n": 7,
+     "id": "c2-07",
+     "titulo": "Girar sobre sí mismo",
+     "descripcion": "Cómo gira un robot sin volante: giro sobre sí mismo (90 grados en unos 600 ms a velocidad 100), giro en arco y cómo calibrar el giro de tu Maqueen en una cruz de cinta.",
+     "video": "07 - Girar sobre sí mismo.mp4",
+     "subtitulos": "07 - Girar sobre sí mismo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-3.pdf"
+     ],
+     "duracion": 321.318
+    },
+    {
+     "n": 8,
+     "id": "c2-08",
+     "titulo": "Proyecto: el paseo de la feria",
+     "descripcion": "Proyecto de la unidad 1: descompón una ruta en tramos y giros, planifícala en papel, prográmala trozo a trozo y calíbrala en el Maqueen de verdad sobre una pista en el suelo.",
+     "video": "08 - Proyecto el paseo de la feria.mp4",
+     "subtitulos": "08 - Proyecto el paseo de la feria.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-4.pdf"
+     ],
+     "duracion": 316.914
+    }
+   ],
+   "cuestionario": {
+    "seccion": 2,
+    "titulo": "Cuestionario: qué es un robot",
+    "preguntas": [
+     {
+      "pregunta": "Un programa tiene «motor los dos adelante a velocidad 150» y «espera 2000 ms», pero ningún bloque «para». ¿Qué hará el robot?",
+      "respuestas": [
+       "Se parará solo a los 2 segundos",
+       "Seguirá avanzando hasta que choque o se apague",
+       "No se moverá nada",
+       "Irá el doble de rápido"
+      ],
+      "correcta": 1,
+      "explicacion": "La espera solo deja pasar el tiempo: mientras tanto, el robot sigue haciendo lo que hacía. Para detener los motores hace falta el bloque «para»."
+     },
+     {
+      "pregunta": "Tu Maqueen tiene «motor los dos adelante a velocidad 20». Zumba, pero no se mueve. ¿Por qué?",
+      "respuestas": [
+       "Las pilas están gastadas seguro",
+       "El programa está en el guion equivocado",
+       "Por debajo de 30, el motor no tiene fuerza suficiente: es la zona muerta"
+      ],
+      "correcta": 2,
+      "explicacion": "Por debajo de velocidad 30, el motor recibe corriente pero no vence el rozamiento. Con 150 llegaría a la meta."
+     },
+     {
+      "pregunta": "Para que el Maqueen gire sobre sí mismo, ¿cómo tienen que ir las dos ruedas?",
+      "respuestas": [
+       "Una adelante y la otra atrás",
+       "Las dos adelante a la misma velocidad",
+       "Una adelante y la otra parada",
+       "Las dos atrás a la misma velocidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Una adelante y la otra atrás: gira sin moverse del sitio. Con una rueda parada, gira en arco alrededor de ella, y tarda el doble."
+     },
+     {
+      "pregunta": "Un robot gira sobre sí mismo a velocidad 100 con una espera de 1200 ms y da media vuelta. ¿Qué espera pondrías para un cuarto de vuelta?",
+      "respuestas": [
+       "Unos 300 ms",
+       "Unos 2400 ms",
+       "Unos 1200 ms",
+       "Unos 600 ms"
+      ],
+      "correcta": 3,
+      "explicacion": "1200 ms a velocidad 100 hacen 180 grados. Para 90, la mitad: unos 600 ms. Después, en el robot real, se calibra."
+     },
+     {
+      "pregunta": "Tu paseo funciona en el simulador, pero en el robot de verdad gira un poco de más. ¿Qué haces?",
+      "respuestas": [
+       "Nada: el simulador siempre tiene razón",
+       "Calibro: acorto un poco la espera del giro y vuelvo a probarlo",
+       "Borro todo el programa y empiezo de nuevo"
+      ],
+      "correcta": 1,
+      "explicacion": "Un robot real siempre es un poco diferente: pilas, suelo y motores. Se busca dónde se desvía por primera vez y se cambia solo ese número."
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "titulo": "Unidad 2: Movimiento preciso",
+   "clases": [
+    {
+     "n": 9,
+     "id": "c2-09",
+     "titulo": "Velocidad × tiempo",
+     "descripcion": "La fórmula de los robots precisos: distancia = velocidad × tiempo, y al revés. Aprende que el número de velocidad no son centímetros por segundo y calibra tu Maqueen con una regla.",
+     "video": "09 - Velocidad × tiempo.mp4",
+     "subtitulos": "09 - Velocidad × tiempo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k2-1.pdf"
+     ],
+     "duracion": 326.069
+    },
+    {
+     "n": 10,
+     "id": "c2-10",
+     "titulo": "Polígonos",
+     "descripcion": "Gira ángulos exactos controlando el tiempo, descubre la regla de los 360 grados y usa el bloque repite para que el Maqueen dibuje cuadrados, triángulos, hexágonos y una estrella.",
+     "video": "10 - Polígonos.mp4",
+     "subtitulos": "10 - Polígonos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k2-2.pdf"
+     ],
+     "duracion": 349.816
+    },
+    {
+     "n": 11,
+     "id": "c2-11",
+     "titulo": "Círculos y curvas",
+     "descripcion": "Haz que el Maqueen dibuje círculos y curvas con las ruedas a velocidades diferentes: hacia qué lado gira, cómo cambiar el tamaño del círculo y cómo elegir con el tiempo un círculo entero, medio o un cuarto.",
+     "video": "11 - Círculos y curvas.mp4",
+     "subtitulos": "11 - Círculos y curvas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k2-3.pdf"
+     ],
+     "duracion": 329.822
+    },
+    {
+     "n": 12,
+     "id": "c2-12",
+     "titulo": "Proyecto: el robot artista",
+     "descripcion": "Proyecto de la unidad 2: diseña una obra de un solo trazo, pártela en tramos, giros y curvas, calcula el tiempo de cada trozo y pruébala con el Maqueen de verdad sobre papel.",
+     "video": "12 - Proyecto el robot artista.mp4",
+     "subtitulos": "12 - Proyecto el robot artista.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k2-4.pdf"
+     ],
+     "duracion": 339.004
+    }
+   ],
+   "cuestionario": {
+    "seccion": 3,
+    "titulo": "Cuestionario: movimiento preciso",
+    "preguntas": [
+     {
+      "pregunta": "A velocidad 150, el Maqueen hace unos 15 cm cada segundo. ¿Cuánto avanza en 3 segundos?",
+      "respuestas": [
+       "Unos 450 cm",
+       "Unos 45 cm",
+       "Unos 30 cm",
+       "Unos 150 cm"
+      ],
+      "correcta": 1,
+      "explicacion": "Distancia = velocidad × tiempo: 15 × 3 = 45 cm. 450 sería multiplicar 150 × 3, pero el número del bloque no son centímetros por segundo."
+     },
+     {
+      "pregunta": "Vuestro Maqueen, a velocidad 150, ha hecho 48 cm en 4 segundos. Queréis que avance 60 cm. ¿Qué espera pondréis?",
+      "respuestas": [
+       "4000 ms",
+       "6000 ms",
+       "5000 ms"
+      ],
+      "correcta": 2,
+      "explicacion": "48 ÷ 4 = 12 cm cada segundo. Para 60 cm: 60 ÷ 12 = 5 segundos, es decir, 5000 ms."
+     },
+     {
+      "pregunta": "Para dibujar un triángulo equilátero, ¿cuántos grados tiene que girar el robot en cada punta?",
+      "respuestas": [
+       "120 grados",
+       "60 grados",
+       "90 grados",
+       "180 grados"
+      ],
+      "correcta": 0,
+      "explicacion": "El robot gira lo que necesita para cambiar de dirección: 360 ÷ 3 = 120 grados (unos 800 ms a velocidad 100). 60 grados es el ángulo de dentro."
+     },
+     {
+      "pregunta": "Motor izquierdo a 100 y motor derecho a 200. ¿Hacia dónde gira el robot?",
+      "respuestas": [
+       "Hacia la derecha",
+       "Va recto",
+       "Gira sobre sí mismo",
+       "Hacia la izquierda"
+      ],
+      "correcta": 3,
+      "explicacion": "El robot siempre gira hacia el lado de la rueda más lenta: aquí, la izquierda."
+     },
+     {
+      "pregunta": "Quieres que el robot dibuje un círculo más grande que el de 150 y 100. ¿Qué haces?",
+      "respuestas": [
+       "Poner velocidades más parecidas, por ejemplo 130 y 100",
+       "Esperar más rato",
+       "Poner una rueda parada"
+      ],
+      "correcta": 0,
+      "explicacion": "El tamaño lo deciden las velocidades: cuanto más parecidas, más grande. Esperar más solo da más vueltas al mismo círculo."
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "titulo": "Unidad 3: El sensor de distancia",
+   "clases": [
+    {
+     "n": 13,
+     "id": "c2-13",
+     "titulo": "¿Cómo mide un robot? El sensor de ultrasonidos",
+     "descripcion": "Descubre cómo el Maqueen mide distancias con el eco de un silbido, qué significa el 500 y por qué la medida tiene que ir en «para siempre».",
+     "video": "13 - ¿Cómo mide un robot El sensor de ultrasonidos.mp4",
+     "subtitulos": "13 - ¿Cómo mide un robot El sensor de ultrasonidos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k3-1.pdf"
+     ],
+     "duracion": 365.169
+    },
+    {
+     "n": 14,
+     "id": "c2-14",
+     "titulo": "Para antes del muro: el robot decide con «si… si no»",
+     "descripcion": "Programa un Maqueen que se para solo delante de una caja, esté donde esté, con «si… si no» dentro de «para siempre», y ajusta el umbral según la velocidad.",
+     "video": "14 - Para antes del muro el robot decide con «si… si no».mp4",
+     "subtitulos": "14 - Para antes del muro el robot decide con «si… si no».vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k3-2.pdf"
+     ],
+     "duracion": 344.072
+    },
+    {
+     "n": 15,
+     "id": "c2-15",
+     "titulo": "Esquiva obstáculos: gira, apártate y sigue",
+     "descripcion": "Cambia una sola cosa del programa de pararse para que el Maqueen gire, esquive cajas con una maniobra completa y recorra el almacén sin chocar en todas las pistas.",
+     "video": "15 - Esquiva obstáculos gira, apártate y sigue.mp4",
+     "subtitulos": "15 - Esquiva obstáculos gira, apártate y sigue.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k3-3.pdf"
+     ],
+     "duracion": 340.501
+    },
+    {
+     "n": 16,
+     "id": "c2-16",
+     "titulo": "Proyecto: aparcamiento automático con «si» anidados",
+     "descripcion": "Cierra la unidad del sensor de distancia con un proyecto de ingeniería: una carretilla que va rápido lejos, frena cerca y se para a la distancia justa, con un «si» dentro de otro.",
+     "video": "16 - Proyecto aparcamiento automático con «si» anidados.mp4",
+     "subtitulos": "16 - Proyecto aparcamiento automático con «si» anidados.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k3-4.pdf"
+     ],
+     "duracion": 352.821
+    }
+   ],
+   "cuestionario": {
+    "seccion": 4,
+    "titulo": "Cuestionario: el sensor de distancia",
+    "preguntas": [
+     {
+      "pregunta": "El robot gira hacia la pared del fondo, pero está muy lejos y el sonido no vuelve. ¿Qué número da el bloque distancia?",
+      "respuestas": [
+       "0",
+       "400",
+       "500",
+       "1023"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin eco, el bloque da 500. Quiere decir «no veo nada», no «hay algo a 500 cm». El sensor mide de 2 a 400 cm, justo delante."
+     },
+     {
+      "pregunta": "Quieres que la micro:bit muestre la distancia todo el rato mientras el robot se acerca a una caja. ¿Dónde pones «muestra el número distancia»?",
+      "respuestas": [
+       "En «para siempre»",
+       "En «al iniciar»",
+       "En ningún sitio: la micro:bit ya lo hace sola"
+      ],
+      "correcta": 0,
+      "explicacion": "En «al iniciar» mediría una sola vez. En «para siempre» vuelve a medir sin parar y el número siempre está al día."
+     },
+     {
+      "pregunta": "El robot ahora va a velocidad 255 en lugar de 100. ¿Qué tienes que hacer con la distancia a la que se para?",
+      "respuestas": [
+       "Hacerla más pequeña",
+       "Nada: frena igual a todas las velocidades",
+       "Hacerla un poco más grande, porque se desliza más antes de pararse"
+      ],
+      "correcta": 2,
+      "explicacion": "El robot no frena en seco: por la inercia, cuanto más deprisa va, más se desliza. Hay que decidir antes, con un umbral más grande."
+     },
+     {
+      "pregunta": "¿Por qué poner una espera larga en el «si no» puede hacer chocar al robot que esquiva obstáculos?",
+      "respuestas": [
+       "Porque las esperas hacen ir más rápido al robot",
+       "Porque mientras espera no vuelve a mirar el sensor",
+       "Porque el sensor se apaga durante la espera"
+      ],
+      "correcta": 1,
+      "explicacion": "Durante la espera el robot va a ciegas: si aparece la pared en ese rato, no se entera. En el bucle, el robot tiene que mirar y decidir en cada vuelta."
+     },
+     {
+      "pregunta": "En el aparcamiento automático con tres casos (muy cerca, cerca y lejos), ¿qué pregunta tiene que ir primero?",
+      "respuestas": [
+       "«¿Distancia menor que 30?»",
+       "Da igual: el orden no importa",
+       "«¿Distancia mayor que 30?»",
+       "«¿Distancia menor que 8?», el caso más urgente"
+      ],
+      "correcta": 3,
+      "explicacion": "El robot pregunta de arriba abajo y se queda con la primera que dice sí. Si arriba está «menor que 30», a 5 cm también dice sí y nunca llega a pararse."
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "titulo": "Unidad 4: Seguir la línea",
+   "clases": [
+    {
+     "n": 17,
+     "id": "c2-17",
+     "titulo": "¿Blanco o negro? Los sensores de línea",
+     "descripcion": "Conoce los tres sensores de línea del Maqueen, qué significan el 0, el 1 y el valor de gris, y programa un robot que se para en la cinta negra o en una zona de color.",
+     "video": "17 - ¿Blanco o negro Los sensores de línea.mp4",
+     "subtitulos": "17 - ¿Blanco o negro Los sensores de línea.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k4-1.pdf"
+     ],
+     "duracion": 338.295
+    },
+    {
+     "n": 18,
+     "id": "c2-18",
+     "titulo": "El borde de la línea: un seguidor con un sensor",
+     "descripcion": "Programa un seguidor de línea con un solo sensor que avanza en zigzag por el borde de la cinta y aprende a ajustar las velocidades para no perderse en las curvas.",
+     "video": "18 - El borde de la línea un seguidor con un sensor.mp4",
+     "subtitulos": "18 - El borde de la línea un seguidor con un sensor.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k4-2.pdf"
+     ],
+     "duracion": 342.167
+    },
+    {
+     "n": 19,
+     "id": "c2-19",
+     "titulo": "Dos sensores y cruces: más recto y más rápido",
+     "descripcion": "Programa un seguidor de línea con dos sensores que va recto, detecta estaciones y cruces con una condición «y» y, con tres sensores, no se pierde en las curvas de 90 grados.",
+     "video": "19 - Dos sensores y cruces más recto y más rápido.mp4",
+     "subtitulos": "19 - Dos sensores y cruces más recto y más rápido.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k4-3.pdf"
+     ],
+     "duracion": 334.374
+    },
+    {
+     "n": 20,
+     "id": "c2-20",
+     "titulo": "Proyecto: el tren de mercancías",
+     "descripcion": "Cierra la unidad de seguir la línea con un tren que sigue la vía con el chip del Maqueen, para y silba en cada estación y se detiene en la terminal azul, programado a trozos como un ingeniero.",
+     "video": "20 - Proyecto el tren de mercancías.mp4",
+     "subtitulos": "20 - Proyecto el tren de mercancías.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k4-4.pdf"
+     ],
+     "duracion": 337.293
+    }
+   ],
+   "cuestionario": {
+    "seccion": 5,
+    "titulo": "Cuestionario: seguir la línea",
+    "preguntas": [
+     {
+      "pregunta": "El robot pasa por encima de una zona azul. ¿Qué valor de gris lee el sensor M, más o menos?",
+      "respuestas": [
+       "Unos 90",
+       "Unos 360",
+       "Unos 900"
+      ],
+      "correcta": 1,
+      "explicacion": "Los colores quedan entre el blanco (unos 90) y el negro (unos 900). Con el 0/1, el azul dice 0, como el blanco: por eso se usa el valor de gris."
+     },
+     {
+      "pregunta": "Con un solo sensor de línea, ¿qué sigue el robot?",
+      "respuestas": [
+       "El borde entre el negro y el blanco",
+       "El centro exacto de la cinta",
+       "La pared del almacén"
+      ],
+      "correcta": 0,
+      "explicacion": "Si ve negro gira hacia un lado y si ve blanco, hacia el otro: avanza en zigzag por el borde de la cinta."
+     },
+     {
+      "pregunta": "Con el seguidor de un sensor, el robot pierde la línea en una curva cerrada. ¿Qué puedes probar?",
+      "respuestas": [
+       "Poner los dos motores a la misma velocidad",
+       "Poner los dos motores a 255",
+       "Más diferencia entre los motores o menos velocidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Cuanta más diferencia entre los motores, más cerrado es el giro: 180 y 50 aguanta curvas cerradas; 200 y 150, solo suaves."
+     },
+     {
+      "pregunta": "¿Por qué la condición «L = 1 y R = 1» tiene que ir la primera en el seguidor de dos sensores?",
+      "respuestas": [
+       "Porque es la más corta",
+       "No importa el orden de los «si»",
+       "Porque hace ir más rápido al robot",
+       "Porque, si no, en el cruce el robot vería L = 1 y giraría"
+      ],
+      "correcta": 3,
+      "explicacion": "En un cruce o una estación, L y R ven negro a la vez. Si primero se pregunta por L, el robot gira y nunca llega al caso especial."
+     },
+     {
+      "pregunta": "En el tren de mercancías, ¿por qué el tren avanza medio segundo después de esperar en la estación, antes de volver a activar el seguimiento?",
+      "respuestas": [
+       "Para ir más deprisa",
+       "Para salir de la raya: si no, volvería a ver 1 1 1 y pararía otra vez",
+       "Porque el chip necesita calentarse"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras sigue encima de la raya, los sensores ven 1 1 1. Hay que salir de ella para que el programa no vuelva a parar el tren."
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "titulo": "Unidad 5: Luz, sonido y LED",
+   "clases": [
+    {
+     "n": 21,
+     "id": "c2-21",
+     "titulo": "El robot mariposa",
+     "descripcion": "Conoce los dos sensores de luz del Maqueen, aprende a elegir un umbral midiendo y programa un robot mariposa que compara izquierda y derecha para ir solo hacia la luz.",
+     "video": "21 - El robot mariposa.mp4",
+     "subtitulos": "21 - El robot mariposa.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k5-1.pdf"
+     ],
+     "duracion": 355.246
+    },
+    {
+     "n": 22,
+     "id": "c2-22",
+     "titulo": "Alarmas",
+     "descripcion": "Usa el zumbador, las luces y la pantalla de LED para que el Maqueen avise, calcula cuánto tardan las notas y programa una alarma con sensor, condición y avisos, y un timbre con el botón A.",
+     "video": "22 - Alarmas.mp4",
+     "subtitulos": "22 - Alarmas.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k5-2.pdf"
+     ],
+     "duracion": 356.205
+    },
+    {
+     "n": 23,
+     "id": "c2-23",
+     "titulo": "La farola automática",
+     "descripcion": "Programa una farola que se enciende sola cuando oscurece y se apaga cuando vuelve la luz, usa las 4 luces de abajo del Maqueen y combina dos «si» en un mismo «para siempre».",
+     "video": "23 - La farola automática.mp4",
+     "subtitulos": "23 - La farola automática.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k5-3.pdf"
+     ],
+     "duracion": 344.211
+    },
+    {
+     "n": 24,
+     "id": "c2-24",
+     "titulo": "Proyecto: la casa inteligente",
+     "descripcion": "Planifica con una tabla, programa por partes y prueba una casa inteligente en la que el Maqueen hace de luz de noche, timbre y vigilante, con varios guiones a la vez y condiciones dobles con «y».",
+     "video": "24 - Proyecto la casa inteligente.mp4",
+     "subtitulos": "24 - Proyecto la casa inteligente.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k5-4.pdf"
+     ],
+     "duracion": 347.698
+    }
+   ],
+   "cuestionario": {
+    "seccion": 6,
+    "titulo": "Cuestionario: luz, sonido y LED",
+    "preguntas": [
+     {
+      "pregunta": "El robot lee luz izquierda = 520 y luz derecha = 180. ¿Dónde está el foco?",
+      "respuestas": [
+       "A la derecha del robot",
+       "A la izquierda del robot",
+       "Justo detrás del robot"
+      ],
+      "correcta": 1,
+      "explicacion": "El sensor izquierdo recibe mucha más luz: el foco está a la izquierda, y la mariposa tiene que girar hacia allí."
+     },
+     {
+      "pregunta": "¿Cuál es el mejor umbral para saber que el robot está al lado del foco, en una sala oscura?",
+      "respuestas": [
+       "10: más pequeño que todo",
+       "1023: el máximo",
+       "400: más que la oscuridad y menos que cerca del foco"
+      ],
+      "correcta": 2,
+      "explicacion": "Con 10, la condición se cumple siempre; con 1023, casi nunca. El umbral bueno queda entre las dos medidas, y se elige midiendo."
+     },
+     {
+      "pregunta": "Una nota de 2 tiempos, ¿cuánto dura?",
+      "respuestas": [
+       "1 segundo",
+       "2 segundos",
+       "0,5 segundos",
+       "No tarda nada"
+      ],
+      "correcta": 0,
+      "explicacion": "1 tiempo = 0,5 s, así que 2 tiempos = 1 s. Mientras suena, el programa espera a que acabe."
+     },
+     {
+      "pregunta": "La farola se enciende de noche pero no se apaga nunca cuando vuelve la luz. ¿Qué le falta?",
+      "respuestas": [
+       "Un umbral más alto",
+       "Un «espera» de 1000 ms",
+       "Un «si no» que apague las luces"
+      ],
+      "correcta": 2,
+      "explicacion": "Las luces se quedan como están hasta que un bloque las cambia. El «si no» dice qué hacer de día: apagar."
+     },
+     {
+      "pregunta": "La condición «luz < 100 y distancia < 25» es cierta cuando…",
+      "respuestas": [
+       "es de noche, aunque no haya nadie",
+       "es de noche y hay alguien cerca, las dos cosas",
+       "hay alguien cerca, sea la hora que sea"
+      ],
+      "correcta": 1,
+      "explicacion": "Con «y» tienen que cumplirse las dos partes. Con «o» bastaría con una."
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "titulo": "Unidad 6: Control inteligente",
+   "clases": [
+    {
+     "n": 25,
+     "id": "c2-25",
+     "titulo": "Velocidad que cambia",
+     "descripcion": "Usa variables como herramienta de ingeniería: un arranque suave en el que la velocidad sube poco a poco y un contador que suma 1 en cada línea, distinguiendo «pon» de «cambia en».",
+     "video": "25 - Velocidad que cambia.mp4",
+     "subtitulos": "25 - Velocidad que cambia.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k6-1.pdf"
+     ],
+     "duracion": 357.821
+    },
+    {
+     "n": 26,
+     "id": "c2-26",
+     "titulo": "Cuanto más lejos, más deprisa",
+     "descripcion": "Calcula la velocidad con la distancia que mide el ultrasonido y descubre el control proporcional: velocidad igual a error por k, el papel de la ganancia k y la zona muerta de los motores.",
+     "video": "26 - Cuanto más lejos, más deprisa.mp4",
+     "subtitulos": "26 - Cuanto más lejos, más deprisa.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k6-2.pdf"
+     ],
+     "duracion": 362.933
+    },
+    {
+     "n": 27,
+     "id": "c2-27",
+     "titulo": "Sigue al líder",
+     "descripcion": "Usa el control proporcional para que el Maqueen siga a un objetivo que se mueve sin chocar, entiende por qué lo sigue más lejos cuando el líder corre y haz que retroceda y avise con luces de freno.",
+     "video": "27 - Sigue al líder.mp4",
+     "subtitulos": "27 - Sigue al líder.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k6-3.pdf"
+     ],
+     "duracion": 344.379
+    },
+    {
+     "n": 28,
+     "id": "c2-28",
+     "titulo": "Proyecto: el coche autónomo",
+     "descripcion": "Construye a trozos un coche autónomo que sigue la carretera, guarda la distancia con el coche de delante, enciende las luces de freno y los faros de noche, y pruébalo en un circuito de cinta.",
+     "video": "28 - Proyecto el coche autónomo.mp4",
+     "subtitulos": "28 - Proyecto el coche autónomo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k6-4.pdf"
+     ],
+     "duracion": 345.678
+    }
+   ],
+   "cuestionario": {
+    "seccion": 7,
+    "titulo": "Cuestionario: control inteligente",
+    "preguntas": [
+     {
+      "pregunta": "La variable velocidad vale 50. El programa hace «cambia velocidad en 30» y después, otra vez, «cambia velocidad en 30». ¿Cuánto vale ahora?",
+      "respuestas": [
+       "30",
+       "80",
+       "110"
+      ],
+      "correcta": 2,
+      "explicacion": "50 + 30 = 80, y 80 + 30 = 110. Si hubiera hecho «pon velocidad a 30», valdría 30."
+     },
+     {
+      "pregunta": "Un contador ha contado 561 en una calle con 3 líneas. ¿Qué ha pasado?",
+      "respuestas": [
+       "Mientras el sensor está encima de la misma línea, el bucle pasa muchas veces y suma cada vez",
+       "El sensor de línea está estropeado",
+       "La variable no puede contar más de 3"
+      ],
+      "correcta": 0,
+      "explicacion": "El bucle da muchas vueltas cada segundo. Para contar cada línea una vez, después de sumar hay que esperar hasta que el sensor vuelva a ver blanco."
+     },
+     {
+      "pregunta": "El programa hace error = distancia − 10 y velocidad = error × 5. El ultrasonido mide 40 cm. ¿A qué velocidad va el motor?",
+      "respuestas": [
+       "200",
+       "150",
+       "45",
+       "30"
+      ],
+      "correcta": 1,
+      "explicacion": "40 − 10 = 30 de error, y 30 × 5 = 150."
+     },
+     {
+      "pregunta": "Tu robot, con control proporcional, se para demasiado lejos de la meta. ¿Qué puedes cambiar?",
+      "respuestas": [
+       "Hacer más pequeño el multiplicador k",
+       "Quitar el «para siempre»",
+       "Hacer más grande el multiplicador k"
+      ],
+      "correcta": 2,
+      "explicacion": "Con un k más grande, la velocidad se mantiene por encima de 30 hasta más cerca y el robot llega más lejos antes de entrar en la zona muerta."
+     },
+     {
+      "pregunta": "¿Por qué es buena idea hacer un programa grande, como el coche autónomo, a trozos?",
+      "respuestas": [
+       "Porque el robot va más deprisa",
+       "Porque si algo falla, sabes que está en el último trozo que has añadido",
+       "Porque así no hace falta probarlo"
+      ],
+      "correcta": 1,
+      "explicacion": "Programando y probando cada trozo antes de añadir otro, cuando algo falla sabes dónde buscar: en lo último que has añadido."
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "titulo": "Unidad 7: Misiones",
+   "clases": [
+    {
+     "n": 29,
+     "id": "c2-29",
+     "titulo": "El robot aspirador: rebotar o hacer zigzag",
+     "descripcion": "Programa un Maqueen aspirador que limpia un comedor sin mapa, compara la estrategia de rebotar con el zigzag y usa una variable para recordar hacia qué lado gira.",
+     "video": "29 - El robot aspirador rebotar o hacer zigzag.mp4",
+     "subtitulos": "29 - El robot aspirador rebotar o hacer zigzag.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k7-1.pdf"
+     ],
+     "duracion": 389.029
+    },
+    {
+     "n": 30,
+     "id": "c2-30",
+     "titulo": "Sumo de robots: el orden de los «si» es la prioridad",
+     "descripcion": "Programa un Maqueen de sumo que no sale nunca del dohyo, busca al rival con los ultrasonidos y ataca, y descubre por qué el orden de las condiciones decide quién gana.",
+     "video": "30 - Sumo de robots el orden de los «si» es la prioridad.mp4",
+     "subtitulos": "30 - Sumo de robots el orden de los «si» es la prioridad.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k7-2.pdf"
+     ],
+     "duracion": 359.458
+    },
+    {
+     "n": 31,
+     "id": "c2-31",
+     "titulo": "Rescate en la cueva: empujar recto y trabajar por fases",
+     "descripcion": "Programa un Maqueen que busca una baliza, la empuja en línea recta hasta una base de color y avisa al terminar, usando el valor de gris del sensor de línea y una misión dividida en fases.",
+     "video": "31 - Rescate en la cueva empujar recto y trabajar por fases.mp4",
+     "subtitulos": "31 - Rescate en la cueva empujar recto y trabajar por fases.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k7-3.pdf"
+     ],
+     "duracion": 357.94
+    },
+    {
+     "n": 32,
+     "id": "c2-32",
+     "titulo": "Proyecto: la carrera contrarreloj",
+     "descripcion": "Programa un seguidor de línea que pasa por todos los puntos de control, se para en la raya de meta y muestra su tiempo, y mejóralo como un equipo de carreras: un cambio, una prueba, una medida.",
+     "video": "32 - Proyecto la carrera contrarreloj.mp4",
+     "subtitulos": "32 - Proyecto la carrera contrarreloj.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k7-4.pdf"
+     ],
+     "duracion": 351.764
+    }
+   ],
+   "cuestionario": {
+    "seccion": 8,
+    "titulo": "Cuestionario: la Semana de las Misiones",
+    "preguntas": [
+     {
+      "pregunta": "En el robot aspirador que hace zigzag, ¿para qué sirve la variable «lado»?",
+      "respuestas": [
+       "Para medir la distancia a la pared",
+       "Para recordar hacia qué lado tiene que girar en la pared siguiente",
+       "Para que el robot vaya más deprisa"
+      ],
+      "correcta": 1,
+      "explicacion": "Las dos paredes parecen iguales para los ultrasonidos: solo la variable sabe hacia dónde giró la última vez. Si vale 0 gira a la derecha y pone 1; si vale 1, gira a la izquierda y vuelve a 0."
+     },
+     {
+      "pregunta": "En el programa de sumo, ¿por qué el «si L = 1 o R = 1» tiene que ir el primero?",
+      "respuestas": [
+       "Porque así el robot va más deprisa",
+       "Porque los sensores de línea solo funcionan al principio",
+       "Porque no salir del dohyo es más importante que atacar"
+      ],
+      "correcta": 2,
+      "explicacion": "Cuando se cumple el primer «si», los demás ni se miran. Por eso en él va lo más importante: la seguridad. Si el ataque va primero, el robot empuja la lata hasta el borde y cae."
+     },
+     {
+      "pregunta": "En el rescate en la cueva, ¿con qué condición sabe el robot que ha llegado a la base de color?",
+      "respuestas": [
+       "Valor de gris M mayor que 200",
+       "Distancia menor que 10",
+       "Línea M = 1"
+      ],
+      "correcta": 0,
+      "explicacion": "En el blanco, el valor de gris es de unos 90 y en la base de color, de unos 360: 200 queda en medio. «Línea M = 1» no sirve, porque solo distingue blanco y negro."
+     },
+     {
+      "pregunta": "En la carrera contrarreloj, ¿por qué usamos «repite hasta que L = 1 y R = 1» y después «para», en lugar de «para siempre»?",
+      "respuestas": [
+       "Porque «para siempre» no puede seguir líneas",
+       "Porque, al encontrar la raya, sale del bucle, se para y ya no vuelve a arrancar",
+       "Porque así el robot va más deprisa",
+       "Porque así el robot no necesita los sensores"
+      ],
+      "correcta": 1,
+      "explicacion": "Por la inercia, el robot se desliza un par de centímetros después de «para» y sale de la raya. Con «para siempre», en la vuelta siguiente ya no ve la meta y vuelve a arrancar."
+     },
+     {
+      "pregunta": "Tu robot da la vuelta en 16 segundos a velocidad 200. A 255 hace eses y se confunde en la chicane. ¿Qué hace un buen equipo de carreras?",
+      "respuestas": [
+       "Pone siempre 255, aunque falle",
+       "Vuelve al seguimiento del chip",
+       "Cambia todas las velocidades a la vez",
+       "Prueba velocidades intermedias y se queda con la más rápida que siempre funciona"
+      ],
+      "correcta": 3,
+      "explicacion": "La mejor velocidad es la más rápida que siempre funciona. Se prueba 210, 220…, cambiando una sola cosa cada vez, para saber qué ha mejorado el tiempo o qué lo ha estropeado."
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "titulo": "Unidad 8: Tu robot",
+   "clases": [
+    {
+     "n": 33,
+     "id": "c2-33",
+     "titulo": "Diseña la misión: tu proyecto final empieza en papel",
+     "descripcion": "Aprende qué hace buena una misión de robot, dibújala a escala en una cuadrícula de 10 centímetros por casilla y prepárala para programarla y probarla con el Maqueen.",
+     "video": "33 - Diseña la misión tu proyecto final empieza en papel.mp4",
+     "subtitulos": "33 - Diseña la misión tu proyecto final empieza en papel.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k8-1.pdf"
+     ],
+     "duracion": 360.839
+    },
+    {
+     "n": 34,
+     "id": "c2-34",
+     "titulo": "Programa y prueba: versiones, tramos y depuración",
+     "descripcion": "Programa tu misión en versiones, divídela en tramos, encuentra los errores con luces y números en la pantalla, y comprueba que funciona en pistas diferentes.",
+     "video": "34 - Programa y prueba versiones, tramos y depuración.mp4",
+     "subtitulos": "34 - Programa y prueba versiones, tramos y depuración.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k8-2.pdf"
+     ],
+     "duracion": 364.157
+    },
+    {
+     "n": 35,
+     "id": "c2-35",
+     "titulo": "Del simulador al robot de verdad: MakeCode y calibrar",
+     "descripcion": "Pasa tu programa del simulador a la micro:bit con MakeCode, relaciona los bloques con su JavaScript y calibra la velocidad y los giros de tu Maqueen: mide, calcula y ajusta.",
+     "video": "35 - Del simulador al robot de verdad MakeCode y calibrar.mp4",
+     "subtitulos": "35 - Del simulador al robot de verdad MakeCode y calibrar.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k8-3.pdf"
+     ],
+     "duracion": 384.47
+    },
+    {
+     "n": 36,
+     "id": "c2-36",
+     "titulo": "Presentación y diploma: la Muestra de Robots",
+     "descripcion": "Prepara una presentación de dos minutos de tu misión, prueba la de otra persona con un informe útil y amable, y demuéstrala con el Maqueen de verdad para cerrar el curso con tu diploma.",
+     "video": "36 - Presentación y diploma la Muestra de Robots.mp4",
+     "subtitulos": "36 - Presentación y diploma la Muestra de Robots.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k8-4.pdf"
+     ],
+     "duracion": 372.54
+    }
+   ],
+   "cuestionario": {
+    "seccion": 9,
+    "titulo": "Cuestionario: tu robot, de la idea a la Muestra",
+    "preguntas": [
+     {
+      "pregunta": "Tres personas han diseñado una misión para la Muestra de Robots. ¿Cuál está mejor pensada?",
+      "respuestas": [
+       "La meta está a 10 cm del robot, sin nada en medio",
+       "Una cinta con curvas hasta una caja: el robot la sigue y se para delante de la caja",
+       "La meta está dentro de un cuadrado de cajas cerrado"
+      ],
+      "correcta": 1,
+      "explicacion": "La primera es demasiado fácil y la tercera, imposible. La segunda tiene un objetivo claro, obstáculos, dos sensores (línea y ultrasonidos) y se puede comprobar."
+     },
+     {
+      "pregunta": "La versión 1 de tu robot se para a 18 cm de la caja y tenía que quedarse a 10. ¿Qué haces para la versión 2?",
+      "respuestas": [
+       "Cambio el umbral, la velocidad y los sensores a la vez",
+       "No cambio nada y lo pruebo diez veces más",
+       "Cambio solo el umbral de distancia y vuelvo a medir"
+      ],
+      "correcta": 2,
+      "explicacion": "Una versión, un cambio, una medida: si cambias una sola cosa y mides, sabes exactamente qué ha mejorado el robot."
+     },
+     {
+      "pregunta": "Vuestro Maqueen, a velocidad 150, ha hecho 48 cm en 4 segundos. Queréis que avance 60 cm. ¿Qué espera pondréis?",
+      "respuestas": [
+       "5000 ms",
+       "4000 ms",
+       "6000 ms"
+      ],
+      "correcta": 0,
+      "explicacion": "48 entre 4 son 12 cm cada segundo. Para hacer 60 cm hacen falta 5 segundos, es decir, 5000 ms. Así se calibra: medir, calcular y ajustar."
+     },
+     {
+      "pregunta": "Pol ha probado la misión de Julia como ingeniero de pruebas. ¿Qué informe la ayudará más?",
+      "respuestas": [
+       "«Está bien.»",
+       "«La mía es mucho mejor.»",
+       "«Es horrible.»",
+       "«Las luces de la meta funcionan. En la curva se pasa: prueba un giro un poco más corto.»"
+      ],
+      "correcta": 3,
+      "explicacion": "Un buen informe de pruebas es concreto y amable: dice qué funciona y qué número habría que ajustar o calibrar."
+     },
+     {
+      "pregunta": "¿Por qué el robot de verdad no hace exactamente lo mismo que el del simulador?",
+      "respuestas": [
+       "Porque MakeCode cambia el programa",
+       "Por las pilas, el suelo y los motores, que no son perfectos",
+       "Porque el robot real es de otra marca"
+      ],
+      "correcta": 1,
+      "explicacion": "El programa es el mismo; lo que cambia es el mundo. Por eso se calibra y se usan sensores: un programa con sensores se adapta solo a las pilas y al suelo."
+     }
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "titulo": "Para profes y siguientes pasos",
+   "clases": [
+    {
+     "n": 37,
+     "id": "c2-37",
+     "titulo": "Cómo dar este curso en una extraescolar o en el aula",
+     "descripcion": "Plan de 60 minutos por sesión, grupos de 3 o 4 con un kit, montaje de las pistas, normas de seguridad con el robot, rúbrica de 4 criterios y ticket de salida para dar el curso con un grupo.",
+     "video": "37 - Cómo dar este curso en una extraescolar o en el aula.mp4",
+     "subtitulos": "37 - Cómo dar este curso en una extraescolar o en el aula.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "fichas-k1-1.pdf",
+      "fichas-k4-2.pdf",
+      "fichas-k8-4.pdf"
+     ],
+     "duracion": 362.221
+    },
+    {
+     "n": 38,
+     "id": "c2-38",
+     "titulo": "Clase extra: Numi Tech para tu centro y más recursos",
+     "descripcion": "Repasa lo aprendido en el curso, descubre cómo seguir con MakeCode y el robot, y encuentra los enlaces actualizados a Numi Tech, el plan escuela para centros y los otros cursos de la serie.",
+     "video": "38 - Clase extra Numi Tech para tu centro y más recursos.mp4",
+     "subtitulos": "38 - Clase extra Numi Tech para tu centro y más recursos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "enlaces-y-cupones.pdf"
+     ],
+     "duracion": 207.335
+    }
+   ],
+   "cuestionario": null
+  }
+ ],
+ "clases": 38,
+ "duracionMin": 212.8
+}

@@ -1,0 +1,59 @@
+{
+  "seccion": 2,
+  "titulo": "Cuestionario: vuestro papel como madre o padre",
+  "preguntas": [
+    {
+      "pregunta": "Tu hijo va a ejecutar un programa en el que Bit tiene que llegar a la bandera. Según el método PRIMM, ¿qué conviene hacer justo antes?",
+      "respuestas": [
+        "Comprobar tú el programa y corregirle los fallos",
+        "Pedirle que diga o señale dónde cree que terminará Bit",
+        "Dejar que ejecute muchas veces hasta que salga",
+        "Enseñarle la solución para que la compare"
+      ],
+      "correcta": 1,
+      "explicacion": "Predecir antes de ejecutar es el primer paso de PRIMM. Hace visible lo que piensa el niño y deja que sea el robot quien le muestre si acertaba."
+    },
+    {
+      "pregunta": "Bit choca contra una roca y tu hija quiere borrar todo el programa. ¿Qué pregunta le ayuda más?",
+      "respuestas": [
+        "¿Hasta qué bloque ha ido bien?",
+        "¿Quieres que lo haga yo?",
+        "¿Por qué no te fijas más?"
+      ],
+      "correcta": 0,
+      "explicacion": "Buscar el último bloque que funcionaba y cambiar solo lo que viene después es lo que hacen los programadores. Borrarlo todo hace perder lo que estaba bien."
+    },
+    {
+      "pregunta": "Según las guías de aula que sigue el curso, ¿cada cuánto conviene hacer una pausa activa de pie y lejos de la pantalla?",
+      "respuestas": [
+        "Cada cinco minutos",
+        "Después de quince o veinte minutos de pantalla",
+        "Solo al terminar la sesión, sea cual sea su duración",
+        "No hace falta si el niño está concentrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Después de quince o veinte minutos de ordenador, una pausa de pie: hacer de robot, unos giros o mirar algo lejos para descansar los ojos."
+    },
+    {
+      "pregunta": "¿Cuál de estos es un buen acuerdo familiar de pantallas?",
+      "respuestas": [
+        "Quien se pase, un mes sin tableta",
+        "Pantallas, las que quieras",
+        "Prohibido todo, para siempre",
+        "Mientras cenamos, ningún móvil, tampoco los adultos"
+      ],
+      "correcta": 3,
+      "explicacion": "Un buen acuerdo es concreto y vale para todo el mundo, también para los adultos. Un castigo o una prohibición total no son acuerdos."
+    },
+    {
+      "pregunta": "Tu hija de diez años pasa de Bit al escenario y pone «muévete 10», pero el actor casi no se mueve. ¿Por qué?",
+      "respuestas": [
+        "Porque el bloque está fuera del guion",
+        "Porque «muévete» solo funciona con números negativos",
+        "Porque el escenario se mide en puntos y una casilla de Bit son unos 50"
+      ],
+      "correcta": 2,
+      "explicacion": "El escenario mide 480 puntos de ancho. Diez puntos es un trocito; conviene que estime dónde está la marca y pruebe con 100 o 200."
+    }
+  ]
+}

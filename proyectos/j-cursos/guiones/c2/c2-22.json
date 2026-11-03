@@ -1,0 +1,122 @@
+{
+  "id": "c2-22",
+  "titulo": "Alarmas",
+  "descripcion": "Usa el zumbador, las luces y la pantalla de LED para que el Maqueen avise, calcula cuánto tardan las notas y programa una alarma con sensor, condición y avisos, y un timbre con el botón A.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k5-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Alarmas",
+      "subtitulo": "Unidad 5 · Luz, sonido y LED · Avisar con sonido y luz",
+      "narracion": "Segunda sesión de la unidad 5. En la Noche de los Farolillos, el museo del pueblo abre hasta tarde. Expone el primer farolillo de papel del pueblo, y la directora quiere robots vigilantes que avisen si alguien se acerca demasiado a la vitrina. Pero un aviso no sirve de nada si nadie lo oye o lo ve. Hoy el Maqueen aprenderá a avisar con notas, luces e iconos, y a responder cuando alguien pulsa un botón."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Qué avisos conoces?",
+      "puntos": [
+        "Sirenas, timbres, alarmas de coche, el microondas…",
+        "¿Cómo nos avisan? ¿Con sonido, con luz o con las dos cosas?",
+        "Repaso: luz izquierda 90 y luz derecha 410, ¿hacia dónde gira?"
+      ],
+      "narracion": "Piensa en los avisos que conoces: la sirena de una ambulancia, el timbre del cole, la alarma de un coche, el pitido del microondas. ¿Qué tienen en común? Casi todos usan sonido, y muchos también luz. Antes de seguir, un repaso de la mariposa. Si la luz izquierda marca 90 y la derecha 410, ¿hacia dónde gira? Hacia la derecha, porque ese lado recibe más luz. Y en una sala oscura con un foco, el umbral debe quedar entre la oscuridad y la luz del foco."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuatro maneras de avisar",
+      "puntos": [
+        "Zumbador: notas de do a sol agudo",
+        "Luces del coche: rojo, verde, amarillo, azul…",
+        "Las 4 luces de abajo, de colores",
+        "Pantalla de 5 por 5 LED: iconos y números"
+      ],
+      "narracion": "El Maqueen tiene cuatro maneras de avisar. El zumbador, un altavoz pequeño que hace notas. Las luces del coche, que pueden ser rojas, verdes, amarillas o azules. Las cuatro luces de colores de abajo. Y la pantalla de 5 por 5 LED de la micro:bit, que muestra iconos y números. A todas estas piezas que hacen algo las llamamos actuadores. Una buena alarma usa más de uno: si no la oyes, la ves. Las ambulancias hacen lo mismo, con sirena y luces azules que parpadean."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Las notas también tardan",
+      "columnas": ["Bloque", "Cuánto dura"],
+      "filas": [
+        ["Nota de 1/2 tiempo", "0,25 segundos"],
+        ["Nota de 1 tiempo", "0,5 segundos"],
+        ["Nota de 2 tiempos", "1 segundo"],
+        ["Un icono", "0,4 segundos"]
+      ],
+      "narracion": "Aquí está la idea nueva de hoy. El bloque toca la nota tiene dos partes: qué nota y cuánto dura. Un tiempo es medio segundo. Medio tiempo, un cuarto de segundo. Dos tiempos, un segundo. Mientras suena, el programa espera: el bloque siguiente no empieza hasta que la nota se acaba. Con los iconos pasa igual, cada uno tarda 0,4 segundos. Si das la clase, que den palmas de un tiempo y de dos tiempos. Pregunta: si el robot arranca, toca cuatro notas de un tiempo y para, ¿cuánto ha avanzado? Dos segundos, unos 30 centímetros."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-2:6",
+      "narracion": "Vamos con la sirena. Es un patrón que se repite tres veces: luces rojas con do agudo y luces azules con sol. Antes de ejecutarla, predice: ¿cuánto durará en total? Cuenta las notas. Son seis. Si cada una dura medio tiempo, seis por un cuarto de segundo da un segundo y medio. Fíjate también en cómo está hecha: con un bloque repite 3 veces bastan cuatro bloques dentro. Es el mismo repite de la unidad 2, ahora con luz y sonido."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-2:7",
+      "narracion": "Ahora, los botones A y B de la micro:bit. Al pulsar A, el robot muestra la casa y hace ding dong. Al pulsar B, muestra el icono de no. Predice: si el robot está haciendo otra cosa y alguien pulsa A, ¿esperará a terminar? Mira la demo. El guion al pulsar el botón A se ejecuta cada vez que alguien pulsa A, aunque el robot esté ocupado. Todos los guiones funcionan a la vez. Así una persona puede dar órdenes al robot. En los retos, puedes pulsar tú los botones del panel."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-2:8",
+      "narracion": "La alarma de la vitrina junta todo. Dentro de un para siempre, el robot pregunta: ¿la distancia es menor que 25 centímetros? Si lo es, alguien está demasiado cerca: luces rojas, cara de sorpresa y una nota. Si no, luces verdes de todo bien. Antes de ejecutarla, predice: ¿qué pasará cuando el visitante se vaya? Gracias al si no, la alarma vuelve a verde. Una alarma es eso: un sensor, una condición y unos avisos. Así funcionan muchas alarmas de verdad."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: partituras de alarma",
+      "pasos": [
+        "Por parejas, leed una partitura de la ficha",
+        "Calculad cuánto dura sumando los tiempos",
+        "Una persona canta las notas; la otra levanta el color",
+        "Inventad una alarma de 2 segundos exactos",
+        "La pareja de al lado calcula su duración"
+      ],
+      "narracion": "Actividad sin pantalla, con la ficha del imprimible. Por parejas, leed cada partitura de alarma: notas con su duración y colores de luz. Calculad cuánto dura. Después, interpretadla: una persona hace las notas, agudo es niii y grave es nooo, y la otra levanta la tarjeta del color. Para terminar, inventad una alarma de dos segundos exactos. En casa, con alguien de la familia, inventad un código sin palabras: todo bien, cuidado y peligro, con golpes en la mesa y una linterna."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El timbre y la vitrina en el Maqueen",
+      "pasos": [
+        "Carga el timbre y prueba el botón A",
+        "Carga la alarma: robot en el centro de la mesa, mirando la obra",
+        "Acerca un libro despacio y mide dónde salta",
+        "Ajusta el número para que salte a unos 10 centímetros",
+        "Volumen bajo y nada de parpadeos muy rápidos"
+      ],
+      "narracion": "Con el robot de verdad, grupos de tres o cuatro. Primero el timbre: cargad el código del imprimible en MakeCode, con la extensión maqueen, y comprobad que al pulsar A suena el ding dong y sale la casa. Después, la vitrina. Robot en el centro de la mesa, lejos del borde, mirando hacia la obra. Acercad un libro despacio y medid con una regla dónde salta. En la mesa, ajustad el número a unos 10 centímetros. Cuidad los oídos: notas cortas y volumen bajo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de las alarmas",
+      "puntos": [
+        "Reto 1 · El timbre del museo: icono dormido y ding dong con A",
+        "Reto 2 · La sirena: 3 veces rojo y azul, solo 5 bloques",
+        "Reto 3 · La vitrina: rojo y sorpresa a menos de 25 centímetros",
+        "Reto extra · La caja fuerte: alarma cuando entra la luz",
+        "Crea: tu alarma, con distancia o con luz"
+      ],
+      "narracion": "En el primer reto, el robot espera con el icono dormido. Cuando alguien pulsa A, muestra la casa y toca mi agudo de medio tiempo y do agudo de un tiempo. En el segundo, la sirena con solo cinco bloques: piensa qué bloque repite. En el tercero, la vitrina con la distancia. Y en el reto extra, el robot está a oscuras dentro de una caja fuerte. Si alguien la abre, entra la luz y salta la alarma. Mira el panel antes de elegir el umbral."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pregunta que ayuda"],
+      "filas": [
+        ["La alarma se queda roja", "¿Qué hacen las luces sin nadie?"],
+        ["El robot va más lejos de lo previsto", "¿Cuántos segundos suenan las notas?"],
+        ["Timbre con espera en al iniciar", "¿Quién decide: el reloj o la persona?"],
+        ["Sirena de más de 5 bloques", "¿Qué parte se repite?"],
+        ["Caja fuerte con umbral de 900", "¿Cuánto marca al abrirla?"]
+      ],
+      "narracion": "Errores típicos. La alarma se queda roja para siempre: falta el verde en el si no. El robot avanza más de lo esperado: cree que las notas no tardan; que cuente los segundos en voz alta. El timbre con una espera solo funciona en una pista: lo decide la persona, no el reloj. En la caja fuerte, al abrirla entra una luz de unos 260, no de 900. El umbral debe quedar entre 25 y 260. Y en el robot real, recuerda que el ultrasonido mira recto, en un cono estrecho."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Zumbador, luces y pantalla: cuatro maneras de avisar",
+        "1 tiempo son 0,5 segundos: las notas y los iconos tardan",
+        "Alarma: sensor, condición y avisos; el botón A espera a una persona"
+      ],
+      "narracion": "Resumen. El Maqueen avisa con el zumbador, las luces del coche, las luces de abajo y la pantalla. Un tiempo de nota es medio segundo, y mientras suena, el programa espera. Una alarma es un sensor, una condición y unos avisos, con un si no que la devuelve a la calma. Y el guion del botón A espera a una persona. Para hoy: inventa tu código de avisos en casa. En la próxima clase, la farola automática."
+    }
+  ]
+}

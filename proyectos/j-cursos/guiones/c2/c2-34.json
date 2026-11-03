@@ -1,0 +1,123 @@
+{
+  "id": "c2-34",
+  "titulo": "Programa y prueba: versiones, tramos y depuración",
+  "descripcion": "Programa tu misión en versiones, divídela en tramos, encuentra los errores con luces y números en la pantalla, y comprueba que funciona en pistas diferentes.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k8-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Programa y prueba",
+      "subtitulo": "Hoy tu misión cobra vida en el banco de pruebas",
+      "narracion": "En el laboratorio del museo está el banco de pruebas, donde se prueba cada robot una y otra vez. Hoy programarás tu misión, encontrarás los errores y la harás todavía mejor. Antes, un repaso rápido: ¿qué tiene una buena misión? Un objetivo claro, obstáculos que hacen pensar, un sensor necesario y comprobaciones. Si todavía no tienes la tuya, diséñala ahora con la clase anterior. Y una idea para toda la clase: un error no es un fracaso. Es la pista de la versión siguiente."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Una versión, un cambio, una medida",
+      "puntos": [
+        "Planifica, programa, prueba y mejora",
+        "En cada versión se cambia una sola cosa",
+        "Y se mide: centímetros, segundos, aciertos",
+        "Versión 1, versión 2, versión 3…"
+      ],
+      "narracion": "Los equipos de ingeniería trabajan en ciclo: planifican, programan, prueban y mejoran. En cada versión se cambia una sola cosa, como una velocidad o un umbral, y se mide. Así se sabe qué ha funcionado. Un ejemplo: tu versión 1 se para a 18 centímetros de la caja y tenía que quedarse a 10. Para la versión 2, cambias solo el umbral y vuelves a medir. Margaret Hamilton dirigió el equipo que programó las naves Apolo, que en 1969 llegaron a la Luna. Probaban el programa una y otra vez."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-2:4",
+      "narracion": "Una misión larga se programa a trozos, por tramos, y cada tramo se prueba solo. Aquí hay dos tramos. Tramo 1: seguir la cinta. Tramo 2: parar delante de la caja. Predice: ¿qué se programó primero y por qué? Mira la demo. Primero va el seguidor. Cuando funciona, se añade «si la distancia es menor que 10, párate». Si algo falla, sabes en qué tramo está. Un truco: escribe los tramos en un papel antes de tocar ningún bloque. Es tu plan."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Luces y números que explican",
+      "puntos": [
+        "Un color de luz en cada rama del «si»",
+        "Verde: adelante. Rojo: párate",
+        "Muestra el número distancia dentro de «para siempre»",
+        "Depurar: encontrar y arreglar los errores, los bugs"
+      ],
+      "narracion": "Si el robot hace algo raro, haz que te explique qué piensa. Pon luces del coche de un color en cada rama del «si»: verde, adelante; rojo, párate. O muestra el número de la distancia dentro de «para siempre», y verás qué mide el sensor de verdad. Los números largos pasan letra a letra por la pantalla y tardan un poco. Esto se llama depurar: quitar errores, los bugs. En 1947, el equipo de la programadora Grace Hopper encontró una polilla dentro de un ordenador. Fue el primer bug de verdad."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-2:7",
+      "narracion": "En el editor, la cinta hace esquinas de 90 grados. Mira este robot. Predice: girando en arco, con una rueda más lenta que la otra, ¿pasará la esquina? Piénsalo antes de mirar. Ahora, mira. En la esquina, la rueda de dentro va hacia atrás y el robot gira sobre sí mismo. Así no pierde la cinta. Girando en arco, no tendría tiempo de hacer el giro entero y se saldría. En la solución, la rueda de dentro va atrás a 100 y la de fuera, adelante a 140."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k8-2:8",
+      "narracion": "Este programa funcionaba cuando la caja estaba más lejos. Pero alguien la ha movido. Predice: el programa usa tiempos fijos. ¿Se parará a tiempo? Mira. Choca. Los tiempos fijos solo funcionan en una pista. Es un error típico pensar que, si ha funcionado una vez, el programa ya está terminado. Un buen programa funciona en pistas diferentes. Prueba el tuyo moviendo una caja o cambiando la salida. Si sigue funcionando, es un buen programa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Encuentra el bloque equivocado",
+      "puntos": [
+        "El robot debería pararse delante de la caja",
+        "Las luces se vuelven rojas justo a tiempo",
+        "Pero el robot gira y acaba chocando con la pared",
+        "Error: «para el motor izquierdo». Tiene que ser «los dos»"
+      ],
+      "narracion": "Un caso para depurar como un detective. Este robot debería pararse delante de la caja. Las luces se vuelven rojas justo a tiempo, pero el robot gira y acaba chocando con la pared. Las luces nos dan una pista valiosa: si se ponen rojas, la condición funciona bien. El error está en otro sitio. ¿Lo encuentras? Es «para el motor izquierdo». El derecho sigue girando, y por eso el robot gira. Tiene que ser «para el motor los dos»."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: depuradores de papel",
+      "pasos": [
+        "Por parejas, con la ficha: una pista y un programa con un bug",
+        "Una persona hace de robot con el dedo, leyendo el programa",
+        "La otra hace de depuradora: ¿dónde falla? ¿Qué bloque cambia?",
+        "Cambiad los papeles en cada ejercicio",
+        "Al final, escribe los tramos de tu propia misión"
+      ],
+      "narracion": "Esta actividad desconectada está en la ficha de la clase. Cada ejercicio tiene una pista dibujada, con cuadros de 10 centímetros, y un programa con un error. Una persona hace de robot: mueve el dedo por la pista leyendo el programa. La otra hace de depuradora: ¿dónde falla?, ¿qué bloque hay que cambiar? En cada ejercicio, cambiad los papeles. En el último, cada uno escribe los tramos de su propia misión. Y una regla del grupo: ningún bug es culpa de nadie. Se habla de qué hace el programa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En el simulador: el banco de pruebas",
+      "puntos": [
+        "Versión 1 de tu misión, por tramos",
+        "Reto: arregla las esquinas de 90 grados",
+        "Reto: luces de depuración en tres pistas",
+        "Extra: sigue la cinta y párate a entre 4 y 12 cm",
+        "Crea: la versión 2, mejorada y con solución"
+      ],
+      "narracion": "En la sesión de Numi Tech, revisas tu misión y programas la versión 1, tramo a tramo. Después, dos retos: arreglar el seguidor en las esquinas de 90 grados, que te servirá para tu cinta, y las luces de depuración en tres pistas. Al final, haces la versión 2. ¿Era demasiado fácil? Añade una curva, una caja o una lata, y comprueba que sigue teniendo solución. Sin la app, programa tu misión en MakeCode y pruébala en el suelo con la pista de papel."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Luces y números en el robot real",
+      "pasos": [
+        "Programa 1: la pantalla muestra la distancia",
+        "El piloto aguanta el robot en el suelo, motores parados",
+        "Caja a 10, 20 y 30 cm medidos con el metro",
+        "Apuntad el número de la pantalla al lado del metro",
+        "Programa 2: verde adelante, rojo párate"
+      ],
+      "narracion": "Con el Maqueen, comprobad si el sensor dice la verdad. Pasad el primer programa con el botón MakeCode, o en MakeCode con la extensión maqueen, y descargadlo con el robot apagado. Este programa muestra la distancia en la pantalla. El robot no se mueve, pero el piloto lo aguanta en el suelo y nadie pone los dedos en las ruedas. Poned la caja a 10, 20 y 30 centímetros con el metro y apuntad qué dice la pantalla. ¿Coinciden? Después, el programa de las luces: verde mientras avanza, rojo cuando para."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Falla y no sabes dónde", "Deja solo el primer tramo y pruébalo"],
+        ["Cambias muchos números a la vez", "Un solo cambio por prueba, apuntado"],
+        ["Se sale en las esquinas de 90 grados", "Rueda de dentro hacia atrás"],
+        ["El robot no arranca", "¿Pusiste «mayor que» en vez de «menor»?"],
+        ["La luz no cambia nunca", "Un color diferente en cada rama"]
+      ],
+      "narracion": "Los errores típicos del banco de pruebas. Si programas toda la misión de golpe y falla, no sabes dónde está el error: deja solo el primer tramo y pruébalo. Si cambias muchos números a la vez, no sabrás cuál ha servido. Si se sale en las esquinas, piensa qué rueda es la de dentro. Si el robot no arranca, quizá la condición está al revés: mayor que 10 en lugar de menor que 10. Y si quitas los obstáculos para que funcione, vuelve a ponerlos en la versión 3."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas hoy",
+      "puntos": [
+        "Planifica, programa, prueba y mejora",
+        "Las misiones largas, por tramos",
+        "Las luces y la pantalla ayudan a depurar",
+        "Un buen programa funciona en pistas diferentes"
+      ],
+      "narracion": "Resumen del banco de pruebas. Se trabaja en ciclo: planifica, programa, prueba y mejora, con un solo cambio por versión. Las misiones largas se programan por tramos. Las luces y la pantalla te dicen qué piensa el robot. Y un buen programa funciona en pistas diferentes, no solo una vez. Para hoy, explica el ciclo a alguien de casa con un ejemplo de la vida diaria: una receta que sale mejor cada vez, o un avión de papel. En la próxima clase, al robot de verdad."
+    }
+  ]
+}

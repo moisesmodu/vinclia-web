@@ -1,0 +1,107 @@
+{
+  "id": "c2-18",
+  "titulo": "El borde de la línea: un seguidor con un sensor",
+  "descripcion": "Programa un seguidor de línea con un solo sensor que avanza en zigzag por el borde de la cinta y aprende a ajustar las velocidades para no perderse en las curvas.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k4-2"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El borde de la línea",
+      "subtitulo": "Hoy el robot no se para en la cinta: ¡la sigue!",
+      "narracion": "En la clase anterior, el robot se paraba al ver la cinta negra. Hoy las cajas van del muelle al almacén por un camino lleno de curvas, y pararse ya no basta. El robot tiene que seguir la cinta. Y lo sorprendente es que puede hacerlo con un solo sensor, el del medio. ¿Cómo? Siguiendo el borde. Al final de esta clase tendrás tu primer seguidor de línea, uno de los programas más clásicos de la robótica."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Recordemos",
+      "puntos": [
+        "Sobre la cinta negra, el sensor M dice 1",
+        "Sobre el blanco, dice 0",
+        "Un color se distingue con el valor de gris, unos 360",
+        "Para girar: un motor más rápido que el otro"
+      ],
+      "narracion": "Dos preguntas de repaso. Sobre la cinta negra, ¿qué dice el sensor M? 1, porque vuelve poca luz. ¿Y sobre el blanco? 0. ¿Y cómo distinguíamos un color? Con el valor de gris, que en un color da unos 360. Y una más, de la unidad 2: ¿cómo hace una curva el robot? Con un motor más rápido que el otro. El robot gira hacia el lado del motor lento. Con estas piezas vamos a construir el seguidor."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k4-2:3",
+      "narracion": "La idea es esta. Con el sensor M, si ve negro, el robot gira a la derecha y sale de la cinta. En cuanto ve blanco, gira a la izquierda y vuelve. Negro, derecha. Blanco, izquierda. Y vuelta a empezar, sin parar, dentro de «para siempre». Así avanza en zigzag por el borde, justo donde acaba el negro y empieza el blanco. Ojo: con un solo sensor, el robot no sigue el medio de la cinta. Sigue el borde."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-2:4",
+      "narracion": "Este es el seguidor de un sensor. Si M es igual a 1, motor izquierdo a 180 y derecho a 50: curva a la derecha. Si no, izquierdo a 50 y derecho a 180: curva a la izquierda. Antes de ejecutar, predice: ¿irá recto o hará zigzag? Míralo. Va de un lado al otro del borde, sin perder la cinta. Y fíjate en que no hace falta saber la forma del circuito. El sensor lo guía en cada momento."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-2:5",
+      "narracion": "Ahora cambiamos los giros de sitio: con negro, a la izquierda; con blanco, a la derecha. Para el vídeo y predice: ¿funcionará, o se perderá? Vamos a verlo. Funciona, pero sigue el otro borde de la cinta. Las dos maneras son correctas. Elige una y no las mezcles: si giras hacia el mismo lado con el negro y con el blanco, el robot hace círculos. Y si empieza en un sitio todo blanco, lejos de la cinta, también da vueltas: tiene que empezar en el borde."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-2:6",
+      "narracion": "Ahora los motores van a 200 y 150, casi a la misma velocidad. El circuito tiene una curva cerrada. Predice: ¿dará la vuelta entera? Míralo. En las rectas va bien, pero en la primera curva cerrada gira demasiado poco y pierde la línea. Una vez fuera, ya no la encuentra. ¿Qué podemos hacer? Dos opciones: más diferencia entre los motores, como 180 y 50, o menos velocidad. Lo que no funciona es subir los dos a 255."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuanta más diferencia, más gira",
+      "columnas": ["Motores", "Cómo gira", "Sirve para"],
+      "filas": [
+        ["180 y 50", "Gira mucho", "Curvas cerradas"],
+        ["150 y 50", "Gira bastante", "Curvas suaves"],
+        ["200 y 150", "Gira poco", "Casi solo rectas"],
+        ["Menos de 30", "La rueda no se mueve", "Zona muerta"]
+      ],
+      "narracion": "Esta tabla resume la regla. Con 180 y 50, gira mucho y aguanta curvas cerradas. Con 150 y 50, que es la solución de las curvas suaves de la app, gira bastante. Con 200 y 150, gira poco y solo sirve para curvas muy suaves. ¿Y si pongo 255 y 0? Girará muchísimo, pero a golpes, y puede salir de la cinta. Va mejor que el motor lento se mueva un poco. Y recuerda la zona muerta: por debajo de 30, el motor no tiene fuerza."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el zigzag con la moneda",
+      "pasos": [
+        "Por parejas, con la ficha de la curva dibujada",
+        "Uno mueve una moneda: es el robot",
+        "El otro hace de sensor: dice «negro» o «blanco»",
+        "Negro, paso en diagonal a la derecha; blanco, a la izquierda"
+      ],
+      "narracion": "Esta actividad sin pantalla viene en la ficha imprimible. Por parejas. Una persona mueve una moneda, que es el robot, a pasos pequeños sobre la curva dibujada. La otra hace de sensor y dice negro o blanco según dónde está la moneda. Con negro, la moneda da un paso en diagonal a la derecha. Con blanco, a la izquierda. Dibujad el camino con lápiz. Después cambiad los papeles y probad la regla al revés. ¿Qué borde sigue ahora?"
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: el circuito del almacén",
+      "pasos": [
+        "Óvalo de 84 × 52 cm con cinta negra sobre papel blanco",
+        "Curvas con trocitos cortos de cinta, sin burbujas",
+        "Carga el seguidor de 150 y 50, con el interruptor apagado",
+        "Sensor M en el borde; sube la velocidad poco a poco"
+      ],
+      "narracion": "Para el robot de verdad, montad el circuito de la pista imprimible: un óvalo de 84 por 52 centímetros con cinta aislante negra sobre papel blanco. Haced las curvas con trocitos cortos de cinta, sin burbujas. Cargad el seguidor de un sensor con 150 y 50, siempre con el interruptor apagado, y poned el robot con el sensor M en el borde. Después, buscad la velocidad más alta que da la vuelta entera. Una persona vigila y coge el robot si se pierde. Nadie pisa el circuito."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos",
+      "puntos": [
+        "Mismas velocidades en las dos ramas: ¿cómo gira un robot?",
+        "Mismo giro con negro y con blanco: hace círculos",
+        "Empieza en medio del blanco: ¿qué ve al arrancar?",
+        "Zigzag tan fuerte que tiembla: prueba 150 y 70"
+      ],
+      "narracion": "Para quien da la clase. Si alguien pone los dos motores a la misma velocidad en las dos ramas, pregúntale cómo gira un robot. Si el robot hace círculos, que diga en voz alta qué hace en cada rama. Si en el robot real lo pone en medio del blanco, pregunta qué ve el sensor al arrancar. Y si el zigzag es tan fuerte que el robot va lentísimo o tiembla, que pruebe una diferencia más pequeña, por ejemplo 150 y 70. Ajustar también es parte del trabajo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-2:13",
+      "narracion": "Un reto extra: la estación azul. El robot sigue la cinta y tiene que pararse en el azul. Ahora hay tres cosas en el suelo, así que hacen falta tres casos con un «si» dentro de otro. Si el valor de gris es mayor que 600, es negro: derecha. Si no, si es mayor que 200, es azul: para. Si no, es blanco: izquierda. Predice: ¿se parará en el azul? Míralo. Lo consigue, porque el valor de gris distingue los tres colores."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Con un sensor, el robot sigue el borde haciendo zigzag",
+        "Un motor más rápido que el otro: giro",
+        "Curva cerrada: más diferencia o menos velocidad",
+        "Tu reto: la vuelta al almacén con luces que avisan"
+      ],
+      "narracion": "Resumimos. Con un solo sensor, el robot sigue el borde de la línea: con negro gira hacia un lado y con blanco, hacia el otro. Para girar, un motor va más rápido que el otro, y cuanta más diferencia, más cerrado es el giro. En las curvas cerradas, más diferencia o menos velocidad. Tu reto de hoy: la vuelta larga al almacén con luces que avisan, un color con negro y otro con blanco. En la próxima clase usaremos dos sensores para ir recto."
+    }
+  ]
+}

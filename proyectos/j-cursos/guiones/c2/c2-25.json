@@ -1,0 +1,112 @@
+{
+  "id": "c2-25",
+  "titulo": "Velocidad que cambia",
+  "descripcion": "Usa variables como herramienta de ingeniería: un arranque suave en el que la velocidad sube poco a poco y un contador que suma 1 en cada línea, distinguiendo «pon» de «cambia en».",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k6-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Velocidad que cambia",
+      "subtitulo": "Unidad 6 · Control inteligente · Variables y contadores",
+      "narracion": "Empieza la unidad 6: control inteligente. Bienvenido o bienvenida al Lab de Movilidad, donde se inventan vehículos que se conducen solos. Primer trabajo: llevar huevos al horno. Ayer el robot arrancó de golpe a velocidad 255 y los huevos salieron volando. Hoy usarás variables para dos cosas: que el robot arranque suave, subiendo la velocidad poco a poco, y que cuente líneas. Contar te hará falta en todas las sesiones que vienen."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Recordemos: la zona muerta",
+      "puntos": [
+        "La velocidad de los motores va de 0 a 255",
+        "Por debajo de unos 30, el motor no se mueve",
+        "A 255 va a unos 29 centímetros por segundo",
+        "¿Cómo arrancaría alguien que conduce con cuidado?"
+      ],
+      "narracion": "Un repaso de la unidad 1. Si pones los motores a velocidad 20, ¿qué hace el Maqueen? Nada: por debajo de unos 30, el motor no tiene fuerza suficiente. Es la zona muerta. La velocidad va de 0 a 255, y a 255 el robot hace unos 29 centímetros por segundo. Ahora piensa: ¿por qué un robot que arranca de golpe a 255 haría caer los huevos? ¿Y cómo arrancaría una persona que conduce con cuidado? Poco a poco. Eso es lo que vamos a programar."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "«Pon» no es «cambia en»",
+      "mal": "Pon velocidad a 40: borra lo que había y escribe 40",
+      "bien": "Cambia velocidad en 30: suma 30 a lo que había. 40, 70, 100…",
+      "narracion": "Recuerda qué es una variable: una caja con nombre donde el programa guarda un número que puede cambiar mientras funciona. Elige nombres que expliquen qué guardan, como velocidad o contador. Hay dos bloques que se confunden mucho. Pon velocidad a 40 borra lo que había en la caja y escribe 40. Cambia velocidad en 30 le suma 30 a lo que había. Si la velocidad vale 50 y haces dos veces cambia en 30, ¿cuánto vale? 110. Con pon a 30, valdría 30."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-1:6",
+      "narracion": "Vamos al simulador con el arranque suave. El programa pone la velocidad a 40. Dentro de un repite, el motor usa el número de la caja y después lo cambia en 30: 40, 70, 100, 130. Antes de ejecutar, predice: ¿cómo será el rastro que deja el robot? ¿Trozos iguales o cada vez más largos? Mira. Cada trozo es más largo, porque el robot va cada vez más deprisa. Un truco: en el bloque del motor, toca el campo de velocidad y elige la variable en lugar de un número."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-1:7",
+      "narracion": "Ahora, cuidado. Este robot no acelera. Fíjate dónde está el bloque pon velocidad a 40: dentro del repite. Antes de ejecutar, lee el programa vuelta a vuelta. En la primera vuelta, la caja vale 40 y luego 70. En la segunda, ¿qué pasa? Vuelve a 40. Así en todas las vueltas. Míralo en la demo: siempre a la misma velocidad. El pon se hace una sola vez, al principio, antes del bucle. Dentro del bucle va el cambia en."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k6-1:8",
+      "narracion": "Segunda idea: el contador. Es una variable que empieza en 0 y suma 1 cada vez que pasa algo: una línea, un obstáculo, una vuelta. Este robot cuenta pasos de cebra. Avanza hasta que el sensor del medio ve negro, suma 1, muestra el número y avanza hasta que vuelve a ver blanco. Cuando el contador llega a 3, sale del bucle y para en el horno. Antes de ejecutar, predice: ¿parará en la línea 2, en la 3 o en la 4? Mira la pantalla de la micro:bit mientras cuenta."
+    },
+    {
+      "tipo": "frase",
+      "texto": "¡Un contador ha contado 561 en una calle con 3 líneas!",
+      "narracion": "Este caso pasa de verdad. Un programa dice: mientras la distancia sea mayor que 12, adelante, y si el sensor del medio ve negro, cambia contador en 1. En una calle con tres líneas, el contador acaba en 561. ¿Qué ha pasado? El bucle da muchas vueltas cada segundo. Mientras el sensor está encima de la misma línea, suma en cada vuelta. Para contar cada línea una sola vez, después de sumar hay que esperar hasta que el sensor vuelva a ver blanco."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la caja de la variable",
+      "pasos": [
+        "Grupos de 3: programador, guardián de la variable y robot",
+        "El programador lee los bloques de la ficha uno a uno",
+        "El guardián borra y escribe el número en la pizarrita",
+        "El robot da tantos pasos como la caja dividida entre 20",
+        "Parte 2: el robot pisa tres tiras de cinta y el guardián cuenta"
+      ],
+      "narracion": "Actividad sin pantalla con la ficha del imprimible. Grupos de tres. El programador lee los bloques. El guardián de la variable lleva una pizarrita, que es la caja, y borra y escribe el número. Y el robot camina tantos pasos como diga la caja dividida entre 20: con 40, dos pasos; con 100, cinco. Así se ve que pon es borrar y escribir. En la segunda parte, el robot camina sobre tres tiras de cinta y el guardián hace de contador. ¿Cuenta una vez por tira?"
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En el Maqueen: el huevo no se cae",
+      "pasos": [
+        "Pelota de ping-pong en un vaso pegado al robot, en el suelo",
+        "Prueba 1: arranque de golpe a 255 durante 1 segundo",
+        "Prueba 2: rampa de 40 a 190",
+        "Prueba 3: el contador sobre tres tiras de cinta",
+        "En JavaScript, «cambia vel en 30» se escribe vel += 30"
+      ],
+      "narracion": "Con el robot de verdad, pegad un vaso al Maqueen y poned dentro una pelota de ping-pong, que hace de huevo. Siempre en el suelo, nunca en el borde de la mesa. Primero, el arranque de golpe a 255 durante un segundo: ¿salta la pelota? Después, la rampa de 40 a 190 del imprimible, y comparad. Al final, el contador sobre tres tiras de cinta: la micro:bit debe mostrar 1, 2 y 3. Si la pelota rueda bajo un mueble, solo va a buscarla el piloto, con el robot parado."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de la sesión",
+      "puntos": [
+        "La rampa: añade el bloque que sube la velocidad 30 en cada vuelta",
+        "Ruta de reparto: cambia un solo número para parar en 3 sitios",
+        "La tercera línea: cuenta los pasos de cebra y para",
+        "Reto extra · Inspección: cuenta todas las líneas hasta la pared",
+        "Crea: tu repartidor, con rampa y 4 pasos de cebra"
+      ],
+      "narracion": "En el primer reto, el programa repite seis veces los motores, pero la velocidad no cambia y el robot no llega. Añade el bloque que la sube 30 en cada vuelta. En la ruta de reparto, a 100 no llega a tiempo: cambia solo un número. Pista: a 150 hace unos 15 centímetros cada segundo y las paradas están a unos 30 centímetros. En el tercero, los pasos de cebra cambian de sitio en cada pista, así que hay que contar. El reto extra muestra el total al final."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Pregunta que ayuda"],
+      "filas": [
+        ["Usa «pon» esperando que sume", "¿Qué hay en la caja después?"],
+        ["El «pon» dentro del repite", "¿Qué pasa en la segunda vuelta?"],
+        ["El motor sigue con un número fijo", "¿El motor sabe que existe la caja?"],
+        ["El contador suma cientos", "¿Espera a salir de la línea?"],
+        ["Contador sin poner a 0", "¿Con qué número empieza?"]
+      ],
+      "narracion": "Errores típicos. Usa pon esperando que sume: que haga de guardián con la pizarrita. Pone el pon dentro del repite: que lea vuelta a vuelta. Deja un número fijo en el motor: que toque el campo de velocidad y busque la variable. El contador suma cientos: que camine sobre una tira de cinta diciendo uno en cada paso. ¿Cuántos dice? Olvida poner el contador a 0: la caja podría guardar un número de antes. Y si la pantalla no cambia, ¿el bloque de mostrar está dentro del bucle?"
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Una variable guarda un número con nombre que el programa cambia",
+        "«Pon» sustituye; «cambia en» suma",
+        "Un contador suma 1 cada vez, solo una vez por cosa"
+      ],
+      "narracion": "Resumen. Una variable guarda un número con nombre que el programa lee y cambia mientras funciona. Pon sustituye el número; cambia en le suma otro, y si es negativo, resta. Así se hace un arranque suave. Un contador empieza en 0 y suma 1 cada vez que pasa algo, solo una vez por cosa. Para hoy: de camino al cole, cuenta los pasos de cebra que cruzas y apunta tu variable en un papel. En la próxima clase, cuanto más lejos, más deprisa."
+    }
+  ]
+}

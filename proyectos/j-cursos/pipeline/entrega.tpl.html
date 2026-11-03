@@ -1,0 +1,170 @@
+<title>Cursos Numi Tech para Udemy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<style>
+/* Mesa de entrega: cabecera con los cursos como pestañas, ficha para copiar a la izquierda y plan de estudios a la derecha;
+   en el móvil, una columna. Colores de Numi Tech (cada curso, su color) sobre un fondo punteado como las presentaciones. */
+:root{--bg:#F3F6FF;--card:#FFFFFF;--ink:#14204A;--mut:#56628A;--line:#DCE4FA;--acc:#2F6BFF;--ok:#1F9A5B;--warn:#B76E00;--dot:rgba(47,91,234,.09);
+  --f-disp:"Lexend",system-ui,sans-serif;--f-body:"Atkinson Hyperlegible","Lexend",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1530;--card:#18204A;--ink:#EEF1FF;--mut:#A9B3DA;--line:#2B3566;--ok:#4CD38A;--warn:#F2B21B;--dot:rgba(169,193,255,.08);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1530;--card:#18204A;--ink:#EEF1FF;--mut:#A9B3DA;--line:#2B3566;--ok:#4CD38A;--warn:#F2B21B;--dot:rgba(169,193,255,.08);color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);background-image:radial-gradient(var(--dot) 1.6px,transparent 1.7px);background-size:26px 26px;color:var(--ink);font:16px/1.5 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 60px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{font-family:var(--f-disp);text-wrap:balance;margin:0}
+h1{font-size:clamp(26px,4vw,38px);font-weight:800;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:800}h3{font-size:17px;font-weight:600}
+.mut{color:var(--mut)}.small{font-size:13.5px}
+header{display:flex;flex-direction:column;gap:6px}
+.kick{font:800 12.5px var(--f-disp);letter-spacing:.1em;text-transform:uppercase;color:var(--acc)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{font:600 15px var(--f-disp);border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.tab:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.status{border-radius:16px;padding:12px 16px;background:var(--card);border:2px solid var(--line)}
+.status.warn{border-color:var(--warn)}
+.grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.field{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:12px}
+.field:first-of-type{border-top:0;padding-top:0}
+.fh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.lbl{font:800 11.5px var(--f-disp);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.val{white-space:pre-line;overflow-wrap:anywhere}.val.long{max-height:220px;overflow:auto;font-size:14.5px;padding-right:6px}
+button{font:600 14px var(--f-disp);border:0;border-radius:10px;padding:7px 12px;cursor:pointer;background:color-mix(in srgb,var(--acc) 14%,var(--card));color:var(--ink)}
+button.pri{background:var(--acc);color:#fff}button:disabled{opacity:.45;cursor:default}
+.media{display:flex;flex-direction:column;gap:8px}.media img,.media video{width:100%;max-width:100%;border-radius:12px;background:var(--line);aspect-ratio:16/9;object-fit:cover}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.sech{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.lec{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:start;padding:12px 18px;border-bottom:1px solid var(--line)}
+.lec:last-child{border-bottom:0}
+.num{font:800 15px var(--f-disp);color:var(--acc);font-variant-numeric:tabular-nums;padding-top:2px}
+.lt{font-weight:700}.ld{font-size:14px;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font:600 12.5px var(--f-disp);border-radius:999px;padding:3px 10px;border:1px solid var(--line);color:var(--mut)}
+.chip.pv{border-color:var(--ok);color:var(--ok)}.chip.miss{border-color:var(--warn);color:var(--warn)}
+.acts{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;max-width:260px}
+.player{grid-column:2/4}.player video{width:100%;border-radius:12px;background:#000}
+details.quiz{padding:12px 18px;border-top:1px solid var(--line)}details.quiz summary{cursor:pointer;font:600 15px var(--f-disp)}
+.quiz ol{margin:10px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:10px}.quiz li{font-size:14.5px}.quiz .ok{color:var(--ok);font-weight:700}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:12px;padding:10px 16px;font:600 14px var(--f-disp)}
+@media (max-width:560px){.lec{grid-template-columns:34px minmax(0,1fr)}.acts{grid-column:1/3;justify-content:flex-start;max-width:none}.player{grid-column:1/3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="kick">Numi Tech · instructor Moisés Mora · Hecho en Lleida</span>
+    <h1>Cursos Numi Tech para Udemy</h1>
+    <p class="mut">Todo lo que se sube a Udemy, curso a curso: la ficha para copiar y pegar, y cada clase con su vídeo, sus subtítulos y sus recursos. «Descargar sección» baja un zip con los vídeos, los subtítulos (.vtt) y los PDF de esa sección, listo para el cargador masivo.</p>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <div id="estado" class="status small" role="status">Cargando los archivos del almacén…</div>
+  <main id="curso"></main>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const DATA = /*DATA*/null;
+const NOM = { c1: 'Programación en casa', c2: 'Robótica micro:bit', c3: 'IA para autónomos', c4: 'Bienestar digital' };
+let URLS = {}, DL = null, ASSETS = null;
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const mmss = s => s ? `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}` : '—';
+function toast(t) { const el = $('#toast'); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => el.hidden = true, 2600); }
+async function copiar(txt, btn) {
+  try { await navigator.clipboard.writeText(txt); toast('Copiado'); }
+  catch (e) { const r = document.createRange(); const v = btn.closest('.field')?.querySelector('.val'); if (v) { r.selectNodeContents(v); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Seleccionado: pulsa Ctrl+C'); } }
+}
+const url = f => f && f.s ? URLS[f.s] : null;
+async function bajar(nombre, src) {
+  if (!DL) { toast('Descargas no disponibles en esta vista'); return; }
+  try {
+    const data = typeof src === 'string' && !src.startsWith('/') && !src.startsWith('http') ? src : await (await fetch(src)).blob();
+    await DL.save({ filename: nombre, data }); toast('Descargado: ' + nombre);
+  } catch (e) { toast(e && e.code === 'declined' ? 'Descarga cancelada' : 'No se ha podido descargar'); }
+}
+async function zipSeccion(c, sec, btn) {
+  if (!window.JSZip || !DL) { toast('No se puede crear el zip en esta vista'); return; }
+  btn.disabled = true; const z = new JSZip(), dir = `${c.id} - Sección ${sec.n}`; let n = 0, falta = 0;
+  for (const L of sec.clases) {
+    btn.textContent = `Preparando ${++n}/${sec.clases.length}…`;
+    const u = url(L); if (u) z.file(`${dir}/${L.v}`, await (await fetch(u)).blob()); else falta++;
+    if (L.vtt) z.file(`${dir}/${L.vn}`, L.vtt);
+    for (const r of L.r) { const ru = url(r); if (ru) z.file(`${dir}/recursos/${r.n}`, await (await fetch(ru)).blob()); }
+  }
+  if (sec.quiz) z.file(`${dir}/cuestionario.txt`, quizTxt(sec.quiz));
+  btn.textContent = 'Comprimiendo…';
+  const blob = await z.generateAsync({ type: 'blob', compression: 'STORE' });
+  btn.disabled = false; btn.textContent = 'Descargar sección (zip)';
+  if (falta) toast(`Faltan ${falta} vídeos en el almacén`);
+  await bajar(`${dir}.zip`, blob);
+}
+function quizTxt(q) { return `${q.titulo}\n\n` + q.preguntas.map((p, i) => `${i + 1}. ${p.pregunta}\n` + p.respuestas.map((r, j) => `   ${j === p.correcta ? '[correcta] ' : ''}${r}`).join('\n') + `\n   Explicación: ${p.explicacion}`).join('\n\n'); }
+function campo(lbl, txt, long) { return `<div class="field"><div class="fh"><span class="lbl">${esc(lbl)}</span><button data-copy>Copiar</button></div><div class="val${long ? ' long' : ''}">${esc(txt)}</div></div>`; }
+
+function pintar(id) {
+  const c = DATA.find(x => x.id === id) || DATA[0]; document.documentElement.style.setProperty('--acc', c.color);
+  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.id === c.id));
+  const F = c.ficha, totalCl = c.secciones.reduce((a, s) => a + s.clases.length, 0), hechas = c.secciones.reduce((a, s) => a + s.clases.filter(l => l.s).length, 0);
+  $('#curso').innerHTML = `<div class="grid">
+    <section class="card" aria-label="Ficha del curso">
+      <div><span class="kick">${F.gratis ? 'Curso gratuito' : 'Precio de lista ' + esc(F.precioLista)}</span><h2>${esc(F.titulo)}</h2>
+      <p class="mut small">${totalCl} clases · ${c.minutos} min montados · ${hechas}/${totalCl} vídeos en el almacén</p></div>
+      <div class="media">${url(c.imagen) ? `<img src="${url(c.imagen)}" alt="Imagen del curso">` : '<span class="chip miss">Imagen pendiente</span>'}
+        <button data-dl="img">Descargar imagen del curso</button></div>
+      <div class="media">${url(c.promo) ? `<video src="${url(c.promo)}" controls preload="metadata"></video>` : '<span class="chip miss">Vídeo promocional pendiente</span>'}
+        <button data-dl="promo">Descargar vídeo promocional</button></div>
+      ${campo(`Título (${F.titulo.length}/60)`, F.titulo)}${campo(`Subtítulo (${F.subtitulo.length}/120)`, F.subtitulo)}
+      ${campo('Descripción', c.descripcion, true)}
+      ${campo('Qué aprenderán (una por línea)', F.objetivos.join('\n'))}${campo('Requisitos', F.requisitos.join('\n'))}${campo('A quién va dirigido', F.publico.join('\n'))}
+      ${campo('Idioma · nivel · categoría', `${F.idioma} · ${F.nivel} · ${F.categoria}`)}${campo('Tema principal', F.temaPrincipal)}${campo('Palabras clave', F.palabrasClave.join(', '))}
+    </section>
+    <section aria-label="Plan de estudios" style="display:flex;flex-direction:column;gap:16px;min-width:0">
+      ${c.secciones.map((s, si) => `<div class="sec">
+        <div class="sech"><h3>Sección ${s.n}: ${esc(s.t)}</h3><button class="pri" data-zip="${si}">Descargar sección (zip)</button></div>
+        ${s.clases.map((L, li) => `<div class="lec">
+          <span class="num">${String(L.n).padStart(2, '0')}</span>
+          <div style="min-width:0"><div class="lt">${esc(L.t)}</div><div class="ld">${esc(L.d)}</div>
+            <div class="chips"><span class="chip">${mmss(L.dur)}</span>${L.p ? '<span class="chip pv">Vista previa gratuita</span>' : ''}${L.s ? '' : '<span class="chip miss">Vídeo pendiente</span>'}${L.r.map(r => `<span class="chip">${esc(r.n)}</span>`).join('')}</div></div>
+          <div class="acts"><button data-ver="${si}.${li}" ${url(L) ? '' : 'disabled'}>Ver</button><button data-mp4="${si}.${li}" ${url(L) ? '' : 'disabled'}>MP4</button><button data-vtt="${si}.${li}" ${L.vtt ? '' : 'disabled'}>Subtítulos</button>${L.r.length ? `<button data-rec="${si}.${li}">Recursos (${L.r.length})</button>` : ''}</div>
+          <div class="player" id="pl-${si}-${li}" hidden></div>
+        </div>`).join('')}
+        ${s.quiz ? `<details class="quiz"><summary>Cuestionario: ${esc(s.quiz.titulo)} (${s.quiz.preguntas.length} preguntas)</summary><div class="field"><div class="fh"><span class="lbl">Para crear el cuestionario en Udemy</span><button data-copy>Copiar</button></div><div class="val">${esc(quizTxt(s.quiz))}</div></div></details>` : ''}
+      </div>`).join('')}
+    </section></div>`;
+  const main = $('#curso');
+  main.onclick = async e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.hasAttribute('data-copy')) return copiar(b.closest('.field').querySelector('.val').textContent, b);
+    if (b.dataset.dl === 'img') return url(c.imagen) && bajar(c.imagen.n, url(c.imagen));
+    if (b.dataset.dl === 'promo') return url(c.promo) && bajar(`${c.id} - ${c.promo.n}`, url(c.promo));
+    if (b.dataset.zip) return zipSeccion(c, c.secciones[+b.dataset.zip], b);
+    const k = b.dataset.ver || b.dataset.mp4 || b.dataset.vtt || b.dataset.rec; if (!k) return;
+    const [si, li] = k.split('.').map(Number), L = c.secciones[si].clases[li];
+    if (b.dataset.ver) { const p = $(`#pl-${si}-${li}`); p.hidden = !p.hidden; if (!p.hidden && !p.firstChild) p.innerHTML = `<video src="${url(L)}" controls preload="metadata"></video>`; return; }
+    if (b.dataset.mp4) return bajar(L.v, url(L));
+    if (b.dataset.vtt) return bajar(L.vn.replace(/\.vtt$/, '.vtt.txt'), L.vtt);
+    if (b.dataset.rec) for (const r of L.r) if (url(r)) await bajar(r.n, url(r));
+  };
+}
+function ruta() { const id = (location.hash || '').slice(1); pintar(DATA.some(c => c.id === id) ? id : DATA[0].id); }
+$('#tabs').innerHTML = DATA.map(c => `<button class="tab" role="tab" data-id="${c.id}">${esc(NOM[c.id] || c.id)}</button>`).join('');
+$('#tabs').onclick = e => { const t = e.target.closest('.tab'); if (t) location.hash = t.dataset.id; };
+addEventListener('hashchange', ruta); ruta();
+(async () => {
+  const st = $('#estado');
+  try {
+    ASSETS = await window.claude?.use?.('assets'); DL = await window.claude?.use?.('downloads');
+    if (!ASSETS) { st.className = 'status small warn'; st.textContent = 'Los vídeos y PDF solo se ven con la cuenta propietaria de esta página (o con permiso de edición). Los textos para copiar sí están disponibles.'; return; }
+    const r = await ASSETS.list(); for (const a of r.assets) URLS[a.sizeBytes] = a.url;
+    const need = DATA.flatMap(c => [c.imagen, c.promo, ...c.secciones.flatMap(s => s.clases.flatMap(l => [l, ...l.r]))]).filter(f => f && f.s);
+    const ok = need.filter(f => URLS[f.s]).length;
+    st.className = 'status small' + (ok < need.length ? ' warn' : ''); st.textContent = `${ok} de ${need.length} archivos en el almacén (${(r.usage.bytes / 2 ** 30).toFixed(2)} GB).` + (DL ? '' : ' Las descargas no están disponibles en esta vista.');
+    ruta();
+  } catch (e) { st.className = 'status small warn'; st.textContent = 'No se ha podido leer el almacén de archivos: recarga la página.'; }
+})();
+</script>

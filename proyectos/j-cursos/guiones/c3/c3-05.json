@@ -1,0 +1,101 @@
+{
+  "id": "c3-05",
+  "titulo": "La ficha de tu negocio: el contexto que lo cambia todo",
+  "descripcion": "Preparas en una página la ficha de tu negocio con horarios, servicios, precios, tono y políticas, para pegarla en la IA y que cada respuesta suene a ti sin repetir lo mismo cada vez.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:ficha-negocio"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La ficha de tu negocio",
+      "subtitulo": "El contexto que lo cambia todo",
+      "narracion": "En la clase anterior viste que el contexto es una de las cinco piezas de una buena instrucción. El problema es que escribirlo cada vez cansa. Quién eres, qué haces, tu horario, tus precios, cómo hablas a tus clientes. En esta clase vas a escribirlo una sola vez, en una ficha de una página. Después solo tendrás que pegarla al empezar una conversación. Es la clase que más tiempo te va a ahorrar de toda la sección."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué lleva la ficha",
+      "puntos": [
+        "Nombre, sector, ciudad y a quién atiendes",
+        "Servicios o productos principales y precios orientativos",
+        "Horario, cómo se pide cita y cómo se paga",
+        "Políticas: cancelaciones, garantías, envíos, devoluciones",
+        "Tono: de tú o de usted, palabras que usas y que evitas",
+        "Datos que nunca debe inventar"
+      ],
+      "narracion": "La ficha tiene seis bloques. Primero, quién eres: nombre del negocio, sector, ciudad y qué tipo de cliente tienes. Segundo, tus servicios o productos con precios orientativos. Tercero, el horario, cómo se pide cita y cómo se paga, por ejemplo con tarjeta o Bizum. Cuarto, tus políticas: cancelaciones, garantías, plazos de envío o devoluciones. Quinto, tu tono, si tratas de tú o de usted y qué palabras usas. Y sexto, una línea que diga qué datos no debe inventar nunca. Con estos seis bloques, la IA tiene lo que necesita para la gran mayoría de los mensajes del día a día. No hace falta que ocupe más de una página."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la IA te entreviste para hacerla",
+      "usuario": "Quiero preparar una ficha de mi negocio para usarla contigo. Tengo un centro de fisioterapia en Huesca. Hazme las preguntas una a una para completar: servicios y precios, horario, citas y pagos, políticas, tono y lo que no debes inventar. Al final, escribe la ficha en una página.",
+      "ia": "Empezamos. Primera pregunta: ¿qué servicios ofreces y cuál es el precio orientativo de cada uno? Por ejemplo, sesión de fisioterapia general, punción seca o suelo pélvico.",
+      "narracion": "No tienes que redactarla tú solo. Pídele a la IA que te entreviste. Aquí, Marina, fisioterapeuta en Huesca, le pide que le haga las preguntas una a una. Tú contestas como hablarías con alguien, incluso dictando con el móvil. Al final le pides que lo ordene en una página. En diez minutos tienes la ficha. Después la lees con calma y corriges lo que no esté bien, porque es la base de todo lo que escribirá en tu nombre."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que nunca va en la ficha",
+      "puntos": [
+        "Nombres, teléfonos o direcciones de clientes",
+        "Datos de salud de pacientes o historiales",
+        "Contraseñas, números de cuenta o de tarjeta",
+        "Información interna que no quieras que salga"
+      ],
+      "narracion": "La ficha habla de tu negocio, no de tus clientes. Así que nunca metas nombres, teléfonos ni direcciones de personas. Si eres fisio, esteticista o tienes una clínica, cuidado especial con los datos de salud. Son una categoría especial de datos personales y no deben pasar por una herramienta sin las garantías adecuadas. Tampoco pongas contraseñas, números de cuenta ni nada interno que no quieras ver fuera. Todo lo que va en la ficha debería poder estar en tu web."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La misma pregunta, sin ficha y con ficha",
+      "mal": "Sin ficha: respuesta genérica, de usted, con precios inventados y sin tu forma de pedir cita.",
+      "bien": "Con ficha: tu precio, tu horario, tu política de cancelación y tu tono, en tres frases.",
+      "narracion": "Mira la diferencia con un mensaje real. Un posible paciente escribe preguntando cuánto cuesta una sesión y si hay hueco esta semana. Sin ficha, la IA contesta de forma genérica, con un precio que no es el tuyo y un tono de manual. Con la ficha pegada, usa tu precio, tu horario, tu forma de pedir cita y tu política de cancelación. Y lo hace en tres frases y tratando de tú, como haces siempre. Tú solo revisas y envías. La diferencia no está en la herramienta. Está en lo que le has contado antes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La ficha en acción",
+      "usuario": "[Pegas aquí tu ficha]\nUn posible paciente pregunta por WhatsApp cuánto cuesta una sesión y si tengo hueco esta semana. Responde en 3 frases. No confirmes huecos: dile que le paso opciones en cuanto mire la agenda.",
+      "ia": "¡Hola! La sesión de fisioterapia general cuesta 40 euros y dura 50 minutos; puedes pagar con tarjeta o Bizum. Ahora miro la agenda y te paso un par de opciones para esta semana. Si necesitas cambiar la cita, avísanos con 24 horas, por favor.",
+      "narracion": "Así queda en la práctica. Pegas la ficha y debajo escribes lo que necesitas. La IA saca de la ficha el precio, la duración, las formas de pago y la política de cancelación. Fíjate en el límite que pone Marina: no confirmes huecos. La IA no ve su agenda, así que si la dejara, podría prometer una hora que no existe. Los datos que cambian cada día, como huecos libres o stock, los compruebas tú."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dónde guardarla para tenerla a mano",
+      "puntos": [
+        "En una nota del móvil o un documento del ordenador",
+        "En las instrucciones personalizadas de tu herramienta",
+        "En un proyecto, un Gem o un asistente guardado",
+        "Revísala cuando cambien precios u horarios"
+      ],
+      "narracion": "Guarda la ficha donde la tengas siempre a mano. Lo más sencillo es una nota del móvil o un documento en el ordenador, para copiar y pegar. Muchas herramientas permiten además guardar instrucciones personalizadas en la configuración, para que las tenga en cuenta siempre. Y casi todas permiten crear un espacio o asistente con instrucciones fijas, como los proyectos o los Gems. Lo veremos en la próxima clase. Y muy importante: cuando cambies precios u horarios, actualiza la ficha."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo usarla cada día",
+      "pasos": [
+        "Abre una conversación nueva para cada tarea",
+        "Pega la ficha al principio",
+        "Escribe la tarea con la fórmula de la clase anterior",
+        "Revisa precios y datos contra tu ficha",
+        "Si algo falla a menudo, corrígelo en la ficha"
+      ],
+      "narracion": "La rutina es sencilla. Abre una conversación nueva para cada tarea, para que no se mezclen temas. Pega la ficha al principio. Escribe lo que necesitas con la fórmula de la clase anterior. Cuando te devuelva el texto, revisa precios y datos. Y si notas que algo falla una y otra vez, por ejemplo que te trata de usted cuando tú tuteas, no lo corrijas cada vez. Corrígelo en la ficha y se arreglará para siempre."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si tu ficha está bien, la IA suena a ti. Si está mal, suena a cualquiera.",
+      "narracion": "Esta idea resume la clase. Las respuestas de la IA son tan buenas como el contexto que le das. Una ficha bien hecha es lo que convierte un texto genérico en un texto de tu negocio. Por eso merece la pena dedicarle diez minutos hoy y un par de minutos cada vez que cambie algo. Es una inversión pequeña que se nota en cada mensaje, cada reseña y cada publicación que hagas a partir de ahora. Además, si un día contratas a alguien, la ficha también le sirve a esa persona."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Una página con seis bloques sobre tu negocio",
+        "Nada de datos de clientes, salud ni contraseñas",
+        "Pégala al empezar cada conversación",
+        "Tarea: pide a la IA que te entreviste y crea tu ficha"
+      ],
+      "narracion": "Repasamos. La ficha de tu negocio es una página con seis bloques: quién eres, servicios y precios, horario y pagos, políticas, tono y lo que no debe inventar. Nunca lleva datos de clientes, de salud ni contraseñas. La pegas al principio de cada conversación. Tu tarea de hoy, en 10 minutos. Descarga la plantilla de esta clase, pide a la IA que te entreviste y guarda tu ficha en el móvil. En la próxima clase aprenderás a pedir cambios y variantes."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "c2-19",
+  "titulo": "Dos sensores y cruces: más recto y más rápido",
+  "descripcion": "Programa un seguidor de línea con dos sensores que va recto, detecta estaciones y cruces con una condición «y» y, con tres sensores, no se pierde en las curvas de 90 grados.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k4-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Dos sensores y cruces",
+      "subtitulo": "Más recto, más rápido y sabiendo dónde estamos",
+      "narracion": "El almacén del puerto ha crecido. Ahora hay cruces y estaciones, marcadas con una raya transversal de cinta. Nuestro seguidor de un sensor funciona, pero tiene dos problemas. Hace zigzag todo el rato, así que va lento. Y no sabe cuándo llega a una estación. Hoy los vamos a resolver usando dos sensores a la vez, y después los tres. Una pregunta para empezar: ¿cómo sabrá el robot que ha llegado a una estación?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La cinta en medio",
+      "puntos": [
+        "L y R a ambos lados de la cinta: 0 0, recto",
+        "L ve negro, 1 0: gira a la izquierda",
+        "R ve negro, 0 1: gira a la derecha",
+        "En las rectas no hace zigzag: va más deprisa"
+      ],
+      "narracion": "Con dos sensores, la idea cambia. Usamos L y R, que quedan a ambos lados de la cinta. Si los dos ven blanco, cero y cero, la cinta está en medio: recto. Si L ve negro, la cinta se ha ido hacia la izquierda: gira a la izquierda. Si R ve negro, gira a la derecha. El robot gira hacia el sensor que ve la cinta. Como en las rectas los dos motores van igual, ya no hace zigzag y va más rápido."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-3:4",
+      "narracion": "Son tres casos, con un «si» dentro de otro. Si L es 1, motor izquierdo a 30 y derecho a 200. Si no, si R es 1, izquierdo a 200 y derecho a 30. Si no, los dos a 200. Antes de ejecutar, predice: en las rectas, ¿hará zigzag? Míralo. En las rectas va recto y deprisa. Solo corrige cuando un sensor toca la cinta. Una duda típica: si la cinta está a la izquierda, ¿qué motor va lento? El izquierdo."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k4-3:5",
+      "narracion": "Con tres sensores, el robot sabe más. Hay ocho combinaciones posibles, dos por dos por dos. Las importantes son estas. Cero, uno, cero: la cinta está justo en medio, todo va bien, recto. Uno, uno, uno: los tres ven negro, así que es un cruce o la raya de una estación. Y cero, cero, cero: no ve la cinta. En ese caso, lo mejor es no cambiar nada y seguir girando hasta encontrarla. Algunas combinaciones, como uno, cero, uno, casi no salen con una sola cinta."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-3:6",
+      "narracion": "El seguidor de dos sensores llega a un cruce. Recuerda que el programa mira primero L y después R. Para el vídeo y elige: ¿irá hacia A, B o C? Piénsalo antes de seguir. Míralo. En el cruce, L y R ven negro a la vez. Pero el programa pregunta primero por L, dice sí y gira hacia arriba, hacia A. Nunca llega a pensar que es un cruce. Para ir recto, necesitamos una pregunta nueva, y tiene que ir la primera."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Una condición con «y»: el caso especial, primero",
+      "mal": "Primero «si L = 1» y después «si L = 1 y R = 1»: nunca llega al segundo",
+      "bien": "Primero «si L = 1 y R = 1»: el cruce o la estación. Después, los giros",
+      "narracion": "La condición nueva es L igual a 1 y R igual a 1. Con «y», solo es cierta cuando las dos partes lo son a la vez: en la raya de una estación o en un cruce. Tiene que ir arriba del todo, porque es el caso más especial. Si va detrás de «si L igual a 1», el robot verá L, girará y nunca llegará a ella. Y cuidado con «o»: L o R es cierto en el cruce, pero también en cada giro."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-3:7",
+      "narracion": "Ahora la primera pregunta es: si L es 1 y R es 1, para. Debajo está el seguidor de dos sensores de siempre. Predice: ¿se parará en la estación del final, o se la saltará? Vamos a verlo. Sigue la cinta, llega a la raya transversal, los dos sensores ven negro y se para. En la app, otro reto cambia lo que hace en ese caso: en lugar de pararse, adelante a 150. Así cruza recto los cruces."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k4-3:8",
+      "narracion": "El último problema son las curvas de 90 grados. Con dos sensores, el robot se pasa la esquina, ve cero, cero y va recto: se pierde. Con tres sensores, la regla es: si L es 1, gira a la izquierda; si R es 1, a la derecha; si M es 1, recto. Y si no ve nada, no hacemos nada. Predice: ¿qué hará en la esquina? Míralo. Sigue girando hasta encontrar la cinta. Por eso no hay «si no» al final: un «si no» recto lo sacaría de la curva."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el robot de dos pies",
+      "pasos": [
+        "Una cuerda en el suelo, con una curva suave y una tira al final",
+        "Camina despacio con un pie a cada lado: son L y R",
+        "Pie izquierdo en la cuerda: un poco a la izquierda",
+        "Los dos pies en la tira: ¡párate en la estación!"
+      ],
+      "narracion": "Para hacer con alguien de casa o en clase. Poned una cuerda en el suelo haciendo una curva suave, y una tira transversal al final: la estación. Camina despacio con un pie a cada lado de la cuerda. Tus pies son L y R. Si el pie izquierdo toca la cuerda, ve un poco a la izquierda. Si es el derecho, a la derecha. Si los dos pies tocan la tira, párate: has llegado. Sin correr, y sin pisar la cuerda, que puede resbalar. Después, cambiad los papeles."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: para en la estación",
+      "pasos": [
+        "Pista con un cruce y una raya de estación al final",
+        "La raya, bien perpendicular al camino",
+        "Primero, el seguidor sin parada: ¿qué hace en el cruce?",
+        "Después, añade arriba «si L = 1 y R = 1: para»"
+      ],
+      "narracion": "Con el Maqueen de verdad, montad la pista imprimible: un camino con un cruce y una raya de estación al final, con cinta negra sobre papel blanco. La raya, bien perpendicular al camino. Descargad siempre con el interruptor apagado. Probad primero el seguidor de dos sensores sin parada y mirad qué hace en el cruce. Después, añadid arriba la parada. Veréis que también se para en el cruce. Es correcto: allí también ve uno, uno, uno."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos",
+      "puntos": [
+        "La condición «y» va detrás: seguid el programa con el dedo",
+        "Usa «o» en vez de «y»: ¿cuándo más es cierto?",
+        "En la curva de 90° pone «si no: para»",
+        "Se para antes, en una curva cerrada: suavízala o baja la velocidad"
+      ],
+      "narracion": "Para quien da la clase. Si la condición «y» va detrás, que sigan el programa con el dedo con L y R a 1: ¿qué «si» es cierto primero? Si alguien usa «o», pregunta cuándo más es cierto: en cada giro. Si en la curva de 90 grados pone un «si no: para», que mire qué ven los sensores en la esquina. ¿Y si se para también en el cruce? Pregunta cómo lo resolverían, por ejemplo contando las rayas. Lo haremos con variables en la unidad 6."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Dos sensores: la cinta en medio, recto; si uno ve negro, gira",
+        "L = 1 y R = 1: cruce o estación, ¡y va primero!",
+        "0 0 0: no cambies nada y sigue girando",
+        "Tu reto: pon intermitentes a tu robot"
+      ],
+      "narracion": "Resumimos. Con dos sensores, la cinta queda en medio: el robot va recto y solo gira cuando uno de los dos ve negro. Cuando L y R ven negro a la vez, es un cruce o una estación, y esa condición se mira primero. Con tres sensores, si no ve nada, sigue haciendo lo mismo y no se pierde en las esquinas. Tu reto de hoy: intermitentes. Luz izquierda al girar a la izquierda, derecha a la derecha, y recto, las dos de otro color. En la próxima clase, el tren de mercancías."
+    }
+  ]
+}

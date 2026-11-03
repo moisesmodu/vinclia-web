@@ -1,0 +1,105 @@
+{
+  "id": "c2-05",
+  "titulo": "Robots a nuestro alrededor",
+  "descripcion": "Qué hace que una máquina sea un robot (siente, piensa y actúa), las partes del Maqueen Lite y el primer programa con tres bloques: motor, espera y para.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k1-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Robots a nuestro alrededor",
+      "subtitulo": "Unidad 1 · Qué es un robot",
+      "narracion": "Empieza la unidad 1. Ha llegado al taller una caja llena de robots Maqueen, y durante el curso los programarás para hacer misiones de verdad. Pero antes, una pregunta que parece fácil: ¿qué es exactamente un robot? Hoy lo descubrirás, conocerás las partes del Maqueen y harás tu primer programa con solo tres bloques. Al final, si tienes el robot, lo verás pararse en el suelo de tu casa o de tu clase."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-1:2",
+      "narracion": "Vamos a votar. Para cada máquina de la lista, di si es un robot o no. Un robot aspirador. Una bicicleta. Un brazo que monta coches en una fábrica. Una tostadora. Un vehículo que explora Marte. Si eres profe, haz la votación a mano alzada y recoge las razones sin dar la respuesta. Si estás en casa, apunta tu respuesta en un papel. Volvemos a esta lista dentro de un momento, con un criterio claro."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Siente, piensa y actúa",
+      "puntos": [
+        "Siente con los sensores",
+        "Piensa con el programa",
+        "Actúa con motores, luces o sonido: los actuadores",
+        "Y vuelve a empezar, una y otra vez"
+      ],
+      "narracion": "Este es el criterio. Un robot es una máquina que hace tres cosas, una y otra vez. Siente con los sensores, piensa con el programa y actúa con los motores, las luces o el sonido. Las partes que hacen cosas se llaman actuadores. Vuelve a la lista: el aspirador, el brazo de la fábrica y el vehículo de Marte son robots. La bicicleta no tiene programa. Y la tostadora no decide nada según lo que siente."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Los robots solo hacen lo que dice el programa: las personas decidimos para qué los usamos.",
+      "narracion": "Los robots nos ayudan en trabajos pesados o peligrosos, pero no piensan como nosotros. Pensar, para un robot, quiere decir seguir el programa que alguien ha escrito. La investigadora Carme Torras, de Barcelona, crea robots que ayudan a la gente en casa y piensa cómo tienen que ser para tratarnos bien. Una pregunta para comentar en familia o en clase: ¿qué trabajo te gustaría que hiciera un robot? ¿Y cuál no?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres bloques para empezar",
+      "puntos": [
+        "Motor: enciende los motores a una velocidad",
+        "Espera: deja pasar el tiempo, el robot sigue igual",
+        "Para: detiene los motores",
+        "Todo dentro de al iniciar, de arriba abajo",
+        "1000 ms son 1 segundo"
+      ],
+      "narracion": "Para el primer programa necesitas tres bloques. Motor enciende los motores a una velocidad. Espera deja pasar el tiempo, y mientras tanto el robot sigue haciendo lo que hacía. Y para detiene los motores. Los tres van dentro de al iniciar, que se ejecuta una vez al encender el robot, de arriba abajo. La espera cuenta en milisegundos: 1000 milisegundos son 1 segundo, y 4000 son 4 segundos."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-1:8",
+      "narracion": "Predice antes de mirar. El robot va adelante a velocidad 150 durante 4 segundos, y después para. ¿Llegará a la meta? ¿Se quedará corto o se pasará? Decide y luego mira. El robot avanza durante los 4 segundos de la espera y, cuando llega el bloque para, se detiene. Si quisieras que llegara más lejos, no cambiarías el para: alargarías la espera. Con más tiempo de motor encendido, más camino."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-1:9",
+      "narracion": "Ahora, un programa con trampa: no tiene ningún bloque para. Predice: cuando se termine la espera, ¿qué hará el robot? Mucha gente piensa que se parará solo. Mira. Los motores siguen girando y el robot acaba chocando con la caja. Esperar no quiere decir parar. Cuando el programa se acaba, nadie les ha dicho a los motores que se detengan. Si no hay bloque para, el robot sigue hasta que choca o se apaga."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el robot de dos personas",
+      "pasos": [
+        "Una persona hace de motores, con los ojos cerrados",
+        "Solo puede caminar despacio o quedarse quieta",
+        "La otra hace de sensores y cerebro",
+        "Solo puede decir adelante o para",
+        "Misión: parar justo antes de un cojín"
+      ],
+      "narracion": "Ahora, sin pantalla. Con alguien de casa, en un espacio libre sin nada que se pueda romper. Una persona hace de motores: cierra los ojos y solo puede caminar despacio, con las manos hacia delante, o quedarse quieta. La otra hace de sensores y cerebro: mira el camino y solo puede decir adelante o para. Poned un cojín en el suelo. El cerebro tiene que parar los motores justo antes de tocarlo. Después, cambiad los papeles."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Con el Maqueen de verdad",
+      "pasos": [
+        "Meta de 25 por 25 cm a unos 45 cm de la salida",
+        "Botón MakeCode, cable USB y Descargar, robot apagado",
+        "Cable fuera, robot en la salida y enciéndelo",
+        "Marca dónde se para y mídelo",
+        "Ajusta la espera de 500 en 500 ms"
+      ],
+      "narracion": "Si eres profe, en clase se juega con tres personas: sensores, cerebro y motores, con tarjetas de orden. Y luego, al robot. Marca con cinta de pintor una salida y una meta de 25 por 25 centímetros, a unos 45 de distancia. Pasa el programa con MakeCode, siempre con el robot apagado. Enciéndelo en la salida, marca dónde se para y mídelo. Si no se para donde decía el simulador, es normal: las pilas y el suelo cambian la velocidad."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Error", "Pregunta que ayuda"],
+      "filas": [
+        ["Cree que espera para el robot", "¿Quién ha parado los motores?"],
+        ["Pone el para antes de la espera", "Léelo en voz alta: ¿tiene sentido?"],
+        ["Cambia la espera a saltos enormes", "¿Por poco o por mucho? De 500 en 500"],
+        ["Dice que los motores son sensores", "¿Recoge información o hace algo?"]
+      ],
+      "narracion": "Estos son los errores más típicos de hoy. Pensar que la espera para el robot: pregunta quién les ha dicho a los motores que paren. Poner el para antes de la espera: leed el programa en voz alta, enciende, espera, para. Cambiar la espera a lo loco, de 1000 a 9000: pregunta si se ha quedado corto o se ha pasado, y cambia de 500 en 500. Y confundir sensores y actuadores: los ultrasonidos escuchan, los motores hacen."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Un robot siente, piensa y actúa",
+        "El cerebro del Maqueen es la micro:bit",
+        "Motor, espera y para: sin para, no se detiene",
+        "Reto: el autobús del taller con dos paradas"
+      ],
+      "narracion": "Repasamos. Un robot siente, piensa y actúa. El cerebro del Maqueen es la micro:bit, donde está el programa. Y con motor, espera y para el robot recorre un tramo, pero sin para no se detiene. En los retos de la aplicación, las soluciones rondan los 3000, 4300 y 6700 milisegundos a velocidad 150. Tu proyecto: el autobús del taller. Que haga una parada en la zona amarilla y siga hasta la verde. Recuerda: después de parar, hace falta un motor nuevo. Y para casa: buscad tres máquinas de casa o de la calle que tengan sensores y decidid si son robots. ¿Un móvil lo es? Tiene sensores y programa, pero no se mueve solo: buen debate."
+    }
+  ]
+}

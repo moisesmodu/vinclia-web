@@ -1,0 +1,114 @@
+{
+  "id": "c2-13",
+  "titulo": "¿Cómo mide un robot? El sensor de ultrasonidos",
+  "descripcion": "Descubre cómo el Maqueen mide distancias con el eco de un silbido, qué significa el 500 y por qué la medida tiene que ir en «para siempre».",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k3-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "¿Cómo mide un robot?",
+      "subtitulo": "Unidad 3 · El sensor de distancia",
+      "narracion": "Bienvenidos a la unidad 3. Hasta ahora, nuestro Maqueen solo sabía contar tiempo: avanza tantos segundos, gira tantos milisegundos. Hoy va a aprender a notar el mundo. Nos vamos al puerto de la isla, donde las grúas dejan cajas en el muelle cada noche, y nunca en el mismo sitio. Para no chocar, el robot necesita algo nuevo: un sensor. Antes de empezar, una pregunta para pensar: ¿cómo sabe un murciélago dónde está la pared, si vuela a oscuras?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Repaso: motores y tiempo",
+      "puntos": [
+        "A velocidad 150, el Maqueen hace unos 15 cm cada segundo",
+        "En 2 segundos a 150, avanza unos 30 cm",
+        "Girar 90° sobre sí mismo: unos 600 ms a velocidad 100",
+        "Pero no sabe dónde están las cosas: va a ciegas"
+      ],
+      "narracion": "Repasemos la unidad anterior. A velocidad 150, el Maqueen hace unos 15 centímetros cada segundo. Si avanza 2 segundos, ¿cuánto recorre? Unos 30 centímetros: distancia igual a velocidad por tiempo. Y para girar 90 grados sobre sí mismo, unos 600 milisegundos a velocidad 100. Todo esto funciona muy bien si sabemos de antemano dónde está cada cosa. Pero el robot no lo sabe. Solo cuenta tiempo. Va a ciegas."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-1:4",
+      "narracion": "Mira este programa. Ayer la caja estaba más lejos y funcionaba: avanzar 4,5 segundos y parar. Hoy la grúa ha dejado la caja más cerca. Para el vídeo y predice: ¿qué pasará? Piensa antes de seguir. Ahora sí, míralo. El robot avanza sus 4,5 segundos y choca contra la caja. No es que el programa esté mal escrito. Es que el robot no sabe dónde está la caja. Un sensor es justo eso: la parte del robot que nota algo del mundo y lo convierte en un número. Sin sensores, un robot no se adapta a nada."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Un silbido que vuelve",
+      "pasos": [
+        "El altavoz envía un silbido que no oímos",
+        "El sonido viaja hasta la caja y rebota",
+        "El micrófono escucha el eco y se mide el tiempo",
+        "La micro:bit calcula la distancia en centímetros"
+      ],
+      "narracion": "Los dos ojos redondos de delante del Maqueen no son ojos. Uno es un altavoz y el otro, un micrófono. El altavoz envía un silbido tan agudo que no lo oímos: vibra 40.000 veces cada segundo, y las personas solo oímos hasta unas 20.000. El sonido rebota en la caja y el micrófono escucha el eco. Cuanto más lejos está la caja, más tarda en volver. Los murciélagos y los delfines hacen lo mismo. Se llama ecolocalización. Y todo pasa en menos de una centésima de segundo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Del tiempo a los centímetros",
+      "columnas": ["Tiempo del eco", "Camino del sonido", "Distancia a la caja"],
+      "filas": [
+        ["1 ms", "34 cm", "17 cm"],
+        ["2 ms", "68 cm (ida y vuelta)", "34 cm"],
+        ["6 ms", "unos 200 cm", "unos 100 cm"]
+      ],
+      "narracion": "Esto es solo para curiosos. El sonido hace unos 34 centímetros cada milésima de segundo. Si el eco vuelve a los 2 milisegundos, el sonido ha hecho 68 centímetros. Pero ha ido y ha vuelto, así que la caja está a la mitad: 34 centímetros. Por eso se divide entre 2. No tienes que hacer este cálculo: la micro:bit lo hace sola y te da el bloque distancia. Profes, en clase esto se practica con las tarjetas de parejas del eco: tiempo por 34, entre 2."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k3-1:7",
+      "narracion": "El sensor solo ve lo que tiene justo delante, en un cono estrecho, de 2 a 400 centímetros. Y aquí viene una trampa. Si el sonido no encuentra nada donde rebotar, el eco no vuelve, y el bloque distancia da 500. Ojo: 500 no quiere decir que haya algo a 5 metros. Quiere decir que no ha vuelto ningún eco: no ve nada. Tampoco es una cámara. No sabe de qué color es la caja. Y le cuestan las cosas finas, como un lápiz: el sonido rebota mejor en superficies grandes, duras y de cara."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "¿«Al iniciar» o «para siempre»?",
+      "mal": "«Muestra el número distancia» en «al iniciar»: mide una sola vez y el número no cambia",
+      "bien": "En «para siempre»: vuelve a medir sin parar y el número siempre está al día",
+      "narracion": "El bloque distancia es un valor, un número que va dentro de otros bloques. Con «muestra el número distancia», la micro:bit lo escribe en su pantalla. Pero ¿dónde lo ponemos? Los bloques de «al iniciar» se hacen una sola vez, al encender. Los de «para siempre» se repiten sin parar, unas 50 vueltas cada segundo si no hay esperas. Otra cosa: «para siempre» no empieza hasta que «al iniciar» termina. Y mostrar un número de dos cifras tarda casi un segundo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k3-1:10",
+      "narracion": "Ahora el robot avanza despacio hacia la caja y la micro:bit muestra la distancia dentro de «para siempre». Antes de ejecutar, predice: ¿el número de la pantalla se quedará quieto, subirá o bajará? Vamos a verlo. El número baja mientras el robot se acerca. En el tablero de debajo de la arena también ves la distancia, siempre al día. Si pusieras el mismo bloque en «al iniciar», verías un solo número, el del principio, y ya no cambiaría."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: la pelota eco",
+      "pasos": [
+        "A 2 pasos de una pared lisa, haz rodar una pelota",
+        "Cuenta en voz alta hasta que vuelve a tu mano",
+        "Repite a 4 pasos, con la misma fuerza",
+        "¿Tarda más o menos? Así funciona el eco"
+      ],
+      "narracion": "Esta actividad la podéis hacer en casa o en el patio, con un adulto. Ponte a 2 pasos de una pared lisa y haz rodar una pelota hacia ella, siempre con la misma fuerza. Cuenta en voz alta hasta que vuelve a tu mano. Ahora ponte a 4 pasos y repítelo. Verás que tarda más: cuanto más lejos está la pared, más tarda en volver. El sensor hace lo mismo con el sonido, pero muchísimo más deprisa. Rodar, no lanzar, y lejos de cosas que se puedan romper."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Robot de verdad: calibramos el sensor",
+      "pasos": [
+        "En MakeCode: para siempre, muestra el número distancia",
+        "Regla en la mesa, con el cero en los «ojos» del sensor",
+        "Caja a 10, 20 y 40 cm: apunta qué marca",
+        "Prueba un jersey, la caja inclinada y el aire"
+      ],
+      "narracion": "Con el robot de verdad, abre MakeCode con la extensión maqueen y haz un programa de un solo bloque: para siempre, muestra el número distancia. Descárgalo con el cable USB. Pon una regla en la mesa con el cero justo en los ojos del sensor y una caja rígida a 10, 20 y 40 centímetros. Apunta qué marca en la ficha imprimible. Puede salir 1 o 2 centímetros diferente: por eso calibramos. Si no tienes robot, el simulador de MakeCode enseña la micro:bit, pero no el robot."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para profes: errores típicos y retos",
+      "puntos": [
+        "Cree que 500 es algo a 5 metros: ¿hasta cuánto mide?",
+        "Calcula con toda la distancia y choca: dibuja dónde parar",
+        "Pone el número en «al iniciar» y no cambia",
+        "Mide desde las ruedas: se mide desde los «ojos»"
+      ],
+      "narracion": "Para quien da la clase. Si alguien cree que 500 es un obstáculo a 5 metros, pregúntale hasta cuánto mide el sensor: 400. En el primer reto hay que quedarse a unos 10 centímetros de la caja. Si calcula con toda la distancia, choca. Que dibuje dónde tiene que pararse. Una solución es avanzar 3.000 milisegundos a 150. En el robot real, que toque con el dedo los ojos del sensor: desde ahí se mide. Probad también el jersey: la ropa se traga el sonido, y una superficie inclinada lo desvía."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "El sensor envía un silbido y escucha el eco",
+        "Mide de 2 a 400 cm, justo delante; 500 es «no veo nada»",
+        "«Al iniciar» hace los bloques una vez; «para siempre», sin parar",
+        "Tu reto: haz el radar del faro con «para siempre»"
+      ],
+      "narracion": "Resumimos. El sensor de ultrasonidos envía un silbido, escucha el eco y, con el tiempo que tarda, calcula la distancia. Mide de 2 a 400 centímetros, justo delante, y 500 quiere decir que no ve nada. Para vigilar un sensor todo el rato, los bloques van en «para siempre». Tu reto de hoy: el radar del faro. Que el robot gire a trozos pequeños y muestre la distancia en cada dirección. ¿Qué número sale cuando mira una caja? ¿Y la pared del fondo? En la próxima clase, el robot decidirá solo cuándo pararse."
+    }
+  ]
+}

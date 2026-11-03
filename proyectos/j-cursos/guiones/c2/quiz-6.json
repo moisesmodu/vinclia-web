@@ -1,0 +1,36 @@
+{
+  "seccion": 6,
+  "titulo": "Cuestionario: luz, sonido y LED",
+  "preguntas": [
+    {
+      "pregunta": "El robot lee luz izquierda = 520 y luz derecha = 180. ¿Dónde está el foco?",
+      "respuestas": ["A la derecha del robot", "A la izquierda del robot", "Justo detrás del robot"],
+      "correcta": 1,
+      "explicacion": "El sensor izquierdo recibe mucha más luz: el foco está a la izquierda, y la mariposa tiene que girar hacia allí."
+    },
+    {
+      "pregunta": "¿Cuál es el mejor umbral para saber que el robot está al lado del foco, en una sala oscura?",
+      "respuestas": ["10: más pequeño que todo", "1023: el máximo", "400: más que la oscuridad y menos que cerca del foco"],
+      "correcta": 2,
+      "explicacion": "Con 10, la condición se cumple siempre; con 1023, casi nunca. El umbral bueno queda entre las dos medidas, y se elige midiendo."
+    },
+    {
+      "pregunta": "Una nota de 2 tiempos, ¿cuánto dura?",
+      "respuestas": ["1 segundo", "2 segundos", "0,5 segundos", "No tarda nada"],
+      "correcta": 0,
+      "explicacion": "1 tiempo = 0,5 s, así que 2 tiempos = 1 s. Mientras suena, el programa espera a que acabe."
+    },
+    {
+      "pregunta": "La farola se enciende de noche pero no se apaga nunca cuando vuelve la luz. ¿Qué le falta?",
+      "respuestas": ["Un umbral más alto", "Un «espera» de 1000 ms", "Un «si no» que apague las luces"],
+      "correcta": 2,
+      "explicacion": "Las luces se quedan como están hasta que un bloque las cambia. El «si no» dice qué hacer de día: apagar."
+    },
+    {
+      "pregunta": "La condición «luz < 100 y distancia < 25» es cierta cuando…",
+      "respuestas": ["es de noche, aunque no haya nadie", "es de noche y hay alguien cerca, las dos cosas", "hay alguien cerca, sea la hora que sea"],
+      "correcta": 1,
+      "explicacion": "Con «y» tienen que cumplirse las dos partes. Con «o» bastaría con una."
+    }
+  ]
+}

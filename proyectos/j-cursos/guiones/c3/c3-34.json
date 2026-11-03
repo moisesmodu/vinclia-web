@@ -1,0 +1,111 @@
+{
+  "id": "c3-34",
+  "titulo": "Comercio y tienda online",
+  "descripcion": "Acompaña a una tienda online inventada de cerámica artesanal: fichas de producto sin datos inventados, clientes en francés, encargos automatizados, boletín con permiso, imágenes honestas y piezas con tara en Wallapop.",
+  "vistaPrevia": false,
+  "recursos": [],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Comercio y tienda online",
+      "subtitulo": "Una tienda de cerámica artesanal, del taller al envío",
+      "narracion": "Tercer caso por sector. Hoy conocemos a Lucía, una ceramista inventada que tiene su taller en casa y vende por internet. Hace tazas, platos y jarrones a mano. Tiene una tienda online sencilla, una cuenta de Instagram y va a algunas ferias de artesanía. También recibe encargos personalizados, y las piezas con pequeños defectos las vende aparte. Si tienes una tienda de barrio, una tienda online o vendes en ferias y mercados, vas a reconocer muchas de sus tareas. Vamos a ver dónde le ayuda la IA y dónde no."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Lo que le quita tiempo a Lucía",
+      "columnas": ["Tarea", "El problema"],
+      "filas": [
+        ["Fichas de producto", "Cuarenta piezas sin descripción"],
+        ["Mensajes de fuera de España", "Le cuesta contestar en francés"],
+        ["Encargos personalizados", "Se pierden entre el correo y Instagram"],
+        ["Boletín de novedades", "Nunca lo envía"],
+        ["Piezas con tara", "Se acumulan en una caja"]
+      ],
+      "narracion": "Estas son las tareas que se le atascan a Lucía. Tiene cuarenta piezas en la tienda con una descripción de una línea, o sin descripción. Le escriben clientes de Francia y le cuesta contestar. Los encargos le llegan por correo, por Instagram y por WhatsApp, y alguno se le pierde. Tiene una lista de correo que nunca usa. Y las piezas con pequeños defectos se le acumulan en una caja, ocupando sitio en un taller que ya es pequeño. Vamos tarea por tarea."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Fichas de producto sin datos inventados",
+      "usuario": "Escribe la descripción de producto de esta pieza para mi tienda online. Datos: taza de gres hecha a torno, esmalte azul, 350 mililitros, cada pieza es única. No sé si es apta para microondas. Tono cálido y concreto, 60 palabras. Si falta un dato que el cliente querrá saber, escribe [FALTA] y dime cuál.",
+      "ia": "Taza de gres azul hecha a torno\nCada taza sale de mis manos y es única: el esmalte azul cambia de tono según la luz y la cocción. Capacidad de 350 mililitros, perfecta para el café largo de las mañanas.\nUso en microondas: [FALTA]\nDato que falta: indica si es apta para microondas y lavavajillas.",
+      "narracion": "Empezamos por las fichas de producto. Lucía le pasa a la IA los datos reales de cada pieza. Material, técnica, esmalte y capacidad. Y añade una frase muy importante. Si falta un dato, escribe falta. Así la IA no se inventa que la taza es apta para microondas o lavavajillas, algo que Lucía tiene que comprobar. Un dato inventado en una ficha puede acabar en una pieza rota y una devolución. Con este método, Lucía escribe las cuarenta fichas en una tarde y revisa cada una antes de publicarla."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Descripción genérica o descripción tuya",
+      "mal": "Preciosa taza artesanal de alta calidad, ideal para regalar. ¡No te quedes sin la tuya!",
+      "bien": "Taza de gres a torno, esmalte azul, 350 mililitros. Cada pieza es única: el tono cambia en cada cocción.",
+      "narracion": "Mira la diferencia. La descripción de la izquierda podría estar en cualquier tienda del mundo. Preciosa, alta calidad, ideal para regalar. No dice nada. La de la derecha tiene datos concretos y algo que solo puede contar Lucía. Que el tono cambia en cada cocción. Para conseguirlo, dale a la IA tus datos y algún detalle de cómo trabajas. Y pídele que evite palabras vacías como precioso o de alta calidad. Si quieres, añádelo a tu asistente como uno de sus límites."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un cliente escribe en francés",
+      "usuario": "Un cliente de Francia me pregunta en francés si envío a Lyon y cuánto tarda. Envío a Francia en [PLAZO] días laborables y el coste aparece al pagar. Responde en francés, tono amable y breve. Después dame la traducción al castellano para que pueda revisarla.",
+      "ia": "Bonjour, merci pour votre message ! Oui, j'envoie à Lyon. Le délai de livraison est de [PLAZO] jours ouvrés et les frais de port s'affichent au moment du paiement. N'hésitez pas si vous avez d'autres questions.\nTraducción: Hola, gracias por tu mensaje. Sí, envío a Lyon. El plazo es de [PLAZO] días laborables y los gastos de envío aparecen al pagar.",
+      "narracion": "Para los clientes de fuera, Lucía usa lo que aprendiste en la clase de idiomas. Responde en francés con los datos reales de envío que ella misma le da a la IA. Y lo más importante, pide la traducción al castellano. Así sabe exactamente qué está enviando, aunque no hable francés. Los plazos y los costes de envío los pone ella, porque los conoce. Si un día le escriben en alemán o en italiano, la instrucción es la misma. Solo cambia el idioma."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Encargos: el flujo de formulario, hoja y correo",
+      "pasos": [
+        "Un formulario de encargos enlazado en la web e Instagram",
+        "Cada encargo, una fila en la hoja de cálculo",
+        "Correo automático de confirmación al cliente",
+        "Lucía revisa la hoja cada mañana y presupuesta",
+        "Columna de estado: pendiente, presupuestado, aceptado"
+      ],
+      "narracion": "Para los encargos, Lucía monta el flujo que viste en la clase de automatizaciones sin programar. Un formulario de encargos enlazado en la web y en la biografía de Instagram. Cada solicitud cae como una fila en una hoja de cálculo. Y el cliente recibe al momento un correo de confirmación. Lucía revisa la hoja cada mañana con el café y prepara los presupuestos. Añade una columna de estado, para saber qué está pendiente, qué está presupuestado y qué está aceptado. Ningún encargo se vuelve a perder."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un boletín solo para quien dijo que sí",
+      "usuario": "Escribe un correo para las personas que se han apuntado a mi boletín de novedades. Anuncio una colección nueva de cuencos en tonos tierra que sale el día [FECHA]. Tono cercano, cinco líneas, una sola llamada a la acción y una línea final para darse de baja.",
+      "ia": "Asunto: Cuencos nuevos que huelen a otoño\nHola:\nEl [FECHA] salen los cuencos en tonos tierra en los que llevo trabajando todo el verano. Son pocas piezas y cada una es distinta.\nSi quieres verlas antes que nadie, entra en la tienda ese día.\nGracias por estar ahí.\nSi ya no quieres recibir estos correos, puedes darte de baja aquí.",
+      "narracion": "El boletín de novedades es una de las herramientas de venta más rentables para una tienda pequeña. Pero recuerda la sección legal. Solo se envía a quien ha dicho que sí, y siempre con una forma de darse de baja. Lucía tiene a esas personas apuntadas desde las ferias y desde la web. La IA le prepara el correo en un minuto. Cinco líneas, una sola llamada a la acción y la línea de baja. Lucía revisa la fecha y el tono, y lo envía desde su herramienta de correo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Imágenes: lo que vendes, siempre real",
+      "puntos": [
+        "Fotos de producto: siempre de la pieza real",
+        "La IA, para fondos de banners o carteles de feria",
+        "Revisa las condiciones de uso comercial de la herramienta",
+        "No imites marcas, personas reales ni estilos de artistas",
+        "Una imagen generada sin aportación creativa puede no estar protegida"
+      ],
+      "narracion": "Una regla clara para cualquier comercio. Lo que vendes se enseña con fotos reales. Si generas con IA una taza más bonita que la que llega a casa del cliente, estás engañando, y lo vas a pagar en devoluciones y reseñas. La IA sí le sirve a Lucía para un banner de la web o un cartel para la feria, por ejemplo con Canva. Revisa las condiciones de uso comercial de cada herramienta. No imites marcas, personas reales ni estilos de artistas concretos. Y recuerda que una imagen generada sin aportación creativa puede no tener protección."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Piezas con tara en Wallapop",
+      "usuario": "Quiero vender en Wallapop un lote de seis tazas de gres con pequeños defectos de esmalte que no afectan al uso. Escribe un título de menos de 50 caracteres y una descripción honesta de cinco líneas que explique bien los defectos. Precio: [PRECIO].",
+      "ia": "Título: Lote 6 tazas de gres artesanas con tara\nDescripción: Seis tazas de gres hechas a mano en mi taller. Tienen pequeños defectos de esmalte, como alguna gota o un tono irregular, que no afectan al uso. Por eso salen a [PRECIO] el lote. Te envío fotos de cada defecto si quieres verlas. Recogida en mano o envío.",
+      "narracion": "Y la caja de piezas con tara. Lucía decide venderlas como lote en Wallapop. La IA le escribe un título corto y una descripción honesta. Fíjate en que explica bien los defectos y ofrece fotos de cada uno. Ser claro con los defectos evita discusiones y valoraciones negativas. El precio lo pone ella. Si tienes una tienda física, esto sirve igual para una mesa de oportunidades o para un cartel de rebajas en el escaparate. La IA redacta, tú decides qué vendes y a cuánto."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Elige los tres productos con peor descripción",
+        "Apunta los datos reales de cada uno",
+        "Usa la instrucción de las fichas con la marca [FALTA]",
+        "Completa tú los datos que falten",
+        "Publica las tres descripciones nuevas hoy"
+      ],
+      "narracion": "Tu tarea de hoy, diez minutos. Elige los tres productos de tu tienda con la descripción más pobre. Apunta los datos reales de cada uno. Material, medidas, uso y algún detalle de cómo se hace o de dónde viene. Usa la instrucción de las fichas con la marca de falta. Completa tú los datos que falten y publica las tres descripciones nuevas. Si tu tienda es física, hazlo con los carteles de tres productos del escaparate. Y apunta el tiempo en tu cuaderno de horas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Fichas con tus datos reales y la marca [FALTA]",
+        "Clientes extranjeros: respuesta y traducción para revisar",
+        "Encargos con formulario, hoja y confirmación",
+        "Boletín solo a quien dijo que sí, con baja",
+        "Fotos de producto reales; la IA, para carteles"
+      ],
+      "narracion": "Repasamos el caso de Lucía. Fichas de producto con datos reales y una marca para lo que falta. Clientes de fuera atendidos en su idioma, con traducción para revisar. Encargos ordenados con formulario, hoja de cálculo y correo de confirmación. Un boletín solo para quien dijo que sí. Y fotos de producto siempre reales, con la IA reservada para carteles y banners. En la próxima clase, el último caso, con un bar de menú del día y una gestoría pequeña."
+    }
+  ]
+}

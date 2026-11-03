@@ -1,0 +1,138 @@
+{
+  "id": "c1-10",
+  "titulo": "Proyecto de la semana: el repartidor de la isla",
+  "descripcion": "Cerráis la primera semana con un proyecto: tu hijo o tu hija descompone un reparto en trozos, hace un plan antes de programar y te lo presenta como un programador de verdad.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r1-4"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El repartidor de la isla",
+      "subtitulo": "El proyecto de la primera semana",
+      "narracion": "Llegamos al final de la primera semana, y toca proyecto. Bit se convierte en el repartidor de la isla. Tiene que coger cajas y llevarlas a las casas. Para eso aprenderá dos órdenes nuevas. Y tu hijo o tu hija aprenderá una idea muy potente: cuando un problema es grande, se parte en trozos. En esta clase verás cómo plantear el proyecto en casa y cómo celebrarlo al final."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r1-4:5",
+      "narracion": "Primero, las reglas del repartidor. Lleva una sola caja cada vez. Solo coge donde hay una caja. Solo deja en una casa. Y las dos órdenes nuevas, coge y deja, no lo mueven: hacen una acción en la casilla donde está. Por eso antes hay que llegar con adelante. Léelas juntos antes de empezar. Cuando algo falle, casi siempre será porque se ha roto una de estas cuatro reglas."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Descomponer es partir un problema grande en trozos pequeños.",
+      "narracion": "Repartir una caja parece difícil, pero son cuatro problemas pequeños: ir a la caja, cogerla, ir a la casa y dejarla. Esto se llama descomponer. Si tu hijo pregunta si descomponer no es estropearse, la guía da un ejemplo estupendo: es como preparar la mochila. Primero los libros, después el estuche y después el almuerzo. Cada trozo se resuelve solo, y todos juntos resuelven el problema."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plan del repartidor",
+      "pasos": [
+        "Dos objetos son las cajas y dos sillas son las casas",
+        "Poned cada caja lejos de su casa",
+        "El programador dice el plan a trozos antes de moverse",
+        "El robot lo hace con pasos y giros, una caja cada vez",
+        "Cambiad los papeles para la segunda caja"
+      ],
+      "narracion": "La actividad sin pantalla es el plan del repartidor. Necesitáis dos objetos ligeros, que serán las cajas, y dos sillas, que serán las casas. Antes de moverse, el programador dice el plan a trozos: ve a la caja, cógela, ve a la casa, déjala. Después, el robot lo hace con pasos y giros de robot, una caja cada vez. Para la segunda caja, cambiáis los papeles. Las cajas se cogen y se dejan agachándose, sin lanzarlas."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r1-4:8",
+      "narracion": "Ahora, del plan a los bloques. El plan tiene cuatro trozos: sube hasta la caja, cógela, gira y ve a la casa, déjala. Antes de ver el vídeo, intenta decir qué bloques irían en cada trozo. Mira cómo cada trozo se convierte en unos pocos bloques. Esto es lo que hacen los programadores: no ponen bloques al azar. Primero piensan el plan en trozos, después lo pasan a bloques y lo prueban."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos del repartidor",
+      "columnas": [
+        "Lo que hace",
+        "Qué le preguntas"
+      ],
+      "filas": [
+        [
+          "Coge antes de llegar a la caja",
+          "¿Dónde está Bit cuando coge?"
+        ],
+        [
+          "Va por la segunda sin dejar la primera",
+          "Después de coger, ¿qué trozo toca?"
+        ],
+        [
+          "Pone bloques sin plan y se pierde",
+          "¿Me dices el plan en voz alta?"
+        ],
+        [
+          "Tras dejar la caja, falla el giro",
+          "¿Hacia dónde mira Bit ahora?"
+        ],
+        [
+          "Solo prueba al final",
+          "¿Has probado ya el primer trozo?"
+        ]
+      ],
+      "narracion": "Estos son los errores que más se repiten, con la pregunta que te recomendamos. Si pone coge antes de llegar a la caja, pregúntale dónde está Bit y que cuente cuántos adelante faltan. Si va a por la segunda caja sin dejar la primera, recuerda la regla: una caja cada vez. Y si quiere terminar deprisa y solo prueba al final, proponle probar cada trozo. Si falla al final, encontrar el bug es mucho más difícil."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El gran reparto: primero el plan",
+      "puntos": [
+        "¿Qué caja vas a buscar primero?",
+        "¿A qué casa la llevarás?",
+        "Escribe los trozos en la hoja de plan",
+        "Prueba cada trozo antes de seguir"
+      ],
+      "narracion": "El proyecto final es el gran reparto: tres cajas y tres casas. Antes de tocar un bloque, tu hijo rellena la hoja de plan que tienes en los recursos. ¿Qué caja vas a buscar primero? ¿A qué casa la llevarás? Primero con palabras, después con tarjetas o bloques. Puede repartir las cajas en el orden que quiera, mientras cada una acabe en una casa. Sin la app, se hace igual en la cuadrícula del suelo, con las tarjetas nuevas de coge y deja."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Para los que van rápido",
+      "puntos": [
+        "Reparto más corto: otro orden de cajas y contar bloques",
+        "Descomponer una tarea de casa en cinco o seis trozos",
+        "Dibujar un mapa con cajas y casas para que lo resuelvas tú"
+      ],
+      "narracion": "Si tu hijo termina pronto, la guía propone tres ampliaciones. La primera: volver a hacer el gran reparto con otro orden de cajas y comparar cuántos bloques usa cada versión. La segunda: descomponer una tarea de casa en cinco o seis trozos, como preparar una fiesta de cumpleaños. Y la tercera: dibujar en una hoja un mapa de cinco por cinco con dos cajas y dos casas para que lo resuelvas tú en la cuadrícula."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Soluciones para comprobar",
+      "puntos": [
+        "Primer reparto: adelante, coge, adelante, adelante, deja",
+        "Falla el repartidor: «deja» está fuera de lugar",
+        "Gran reparto: abierto; tres cajas, una cada vez"
+      ],
+      "narracion": "Para que puedas comprobar. En el primer reparto, con los bloques mezclados, el orden correcto es: adelante, coge la caja, adelante, adelante y deja la caja. En el reto del repartidor que falla, el bloque fuera de lugar es deja la caja, porque no puede dejar una caja que aún no lleva. El gran reparto es abierto. Solo hay que comprobar dos cosas: que reparte las tres cajas y que lleva una cada vez."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La presentación en casa",
+      "pasos": [
+        "Te enseña su reparto y te explica el plan",
+        "Tú predices qué caja repartirá primero",
+        "Te cuenta un bug que ha encontrado y cómo lo arregló",
+        "Tú dices una cosa que te ha gustado"
+      ],
+      "narracion": "Para cerrar la semana, haced una pequeña presentación. Tu hijo te enseña su reparto y te explica el plan. Antes de ejecutarlo, tú predices qué caja repartirá primero. Después te cuenta un bug que haya encontrado y cómo lo arregló. Al final, tú dices una cosa concreta que te ha gustado. Si hay más familia en casa, invitadla. Presentar es voluntario: si le da vergüenza, que te lo enseñe solo a ti."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te preguntará",
+      "puntos": [
+        "¿Por qué no puede llevar dos cajas? Es la regla del reto",
+        "¿Y si coge donde no hay caja? Bit se para: es un bug",
+        "¿Para qué el plan si ya lo sé hacer? Para no perderse"
+      ],
+      "narracion": "Tres preguntas que suelen salir en el proyecto. ¿Por qué Bit no puede llevar dos cajas a la vez? Es una regla del reto: solo tiene sitio para una, y eso obliga a pensar bien el orden. ¿Qué pasa si hago coge donde no hay ninguna caja? Bit se para y avisa: es un bug, y toca comprobar paso a paso si ya estaba encima. ¿Por qué hacer el plan en papel? Porque en un problema largo es fácil perderse."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Primera semana completada",
+      "puntos": [
+        "Coge y deja son acciones: no mueven a Bit",
+        "Descomponer: ir, coger, ir y dejar",
+        "Primero el plan, después los bloques",
+        "Hoy: el gran reparto y su presentación en casa"
+      ],
+      "narracion": "Primera semana completada. Tu hijo ya sabe qué es un algoritmo y cómo girar poniéndose en el lugar del robot. También sabe cazar bugs paso a paso y resolver un problema grande a trozos. Para hoy: el plan del repartidor, el gran reparto y la presentación en casa. Para terminar, pregúntale: ¿cuáles son los cuatro trozos para repartir una caja? Después, haz tú el cuestionario de la sección. La semana que viene, los bucles."
+    }
+  ]
+}

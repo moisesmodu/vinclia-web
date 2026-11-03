@@ -1,0 +1,129 @@
+{
+  "id": "c4-06",
+  "titulo": "Pantallas, videojuegos y compras dentro del juego",
+  "descripcion": "Por qué cuesta tanto parar, cómo proteger el sueño, qué vigilar en las partidas en línea y cómo hacer números con las gemas y las cajas sorpresa antes de que nadie compre nada.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:d3-1",
+    "imprimible:d6-2"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Pantallas, videojuegos y compras",
+      "subtitulo": "Decidir el tiempo, cuidar el sueño y hacer números",
+      "narracion": "Un domingo, Bit, el robot de Numi, quería ver un vídeo de robots. Después empezó otro solo, y otro. Cuando levantó la cabeza, era de noche y no había cenado. Seguro que te suena. En esta clase juntamos tres sesiones de Tech Digital: el tiempo con pantallas, los videojuegos en línea y las compras dentro de los videojuegos. Y saldrás con varias cosas para configurar hoy mismo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Hechas para que no pares",
+      "puntos": [
+        "El vídeo siguiente empieza solo",
+        "Las notificaciones te llaman para que entres ahora",
+        "Las rachas te hacen volver cada día",
+        "La pantalla no se acaba nunca"
+      ],
+      "narracion": "Muchas apps se hacen para que pasemos en ellas el máximo tiempo posible. Explicárselo a tu hijo sin alarmismo le quita culpa y le da herramientas. Si le cuesta parar, no es que no tenga fuerza de voluntad: es el diseño. Saberlo es el primer paso para decidir él. Y fíjate en las señales del cuerpo: ojos cansados, dolor de cabeza o enfadarse más deprisa piden una pausa. Un truco que funciona: poner un temporizador antes de empezar, o decidir antes cuántos capítulos verá. Cuando suena, guarda la partida y para."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-1:4",
+      "narracion": "Esta es la tableta de Jana, una niña inventada, a las diez menos cuarto de la noche. Llegan varias notificaciones. En clase, los niños buscan cuáles quieren que abra la app ahora: el vídeo que empieza solo, la racha que se perderá, el premio con prisas y los me gusta. Solo el mensaje de una amiga es normal. Haced el ejercicio con la tableta de casa: ¿qué avisos sobran?"
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las pantallas también se van a dormir",
+      "puntos": [
+        "A su edad, el cuerpo necesita entre 9 y 12 horas de sueño",
+        "Las pantallas se apagan un rato antes, mejor una hora",
+        "Por la noche, la tableta duerme fuera de la habitación",
+        "Un rato tranquilo antes de dormir: leer o hablar"
+      ],
+      "narracion": "La luz de la pantalla y los vídeos emocionantes hacen que cueste dormirse. Por eso la propuesta del curso es clara: apagar un rato antes y que el aparato pase la noche fuera de la habitación, por ejemplo cargando en la cocina. Si te dice que no le despierta porque lo tiene en silencio, recuérdale que las ganas de mirarlo un momento también cuentan. Y lo mismo vale para los móviles de los adultos."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Acuerdo o castigo",
+      "mal": "Pantallas, las que quieras. O bien: quien se pase, un mes sin tableta.",
+      "bien": "Mientras cenamos, ningún móvil, tampoco los adultos. Antes de la partida, los deberes.",
+      "narracion": "Un buen acuerdo dice cuándo, cuánto y dónde, y vale para todo el mundo. Pantallas, las que quieras no es un acuerdo. Y un castigo enorme tampoco: es imposible de cumplir y no ayuda a aprender a usarlas bien. No hay una cifra mágica de horas para todas las familias. Más que contar minutos, mirad cómo os sentís y si queda tiempo para dormir, moverse y estar juntos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En la partida, se habla de la partida",
+      "puntos": [
+        "Ni nombre completo, ni colegio, ni dónde vive",
+        "Ni fotos, ni cámara, ni pasar a otra app",
+        "Alarma: regalos, «eres especial», «no lo digas»",
+        "Silenciar, bloquear, denunciar y contarlo"
+      ],
+      "narracion": "Muchos niños de esta edad juegan en línea, a menudo con chat de texto o de voz. En la partida hay amigos, pero también gente que no conocen, y lo que dicen de sí mismos puede ser inventado. Si alguien le hace regalos, le dice que es especial y le pide hablar por otra app, enviar fotos o guardar un secreto, son señales de alarma. Que lo bloquee y te lo cuente. No es culpa suya. Y ojo con la frase hace mucho que le conozco en la partida: si ni él ni vosotros lo conocéis en persona, sigue siendo un desconocido."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La etiqueta PEGI",
+      "puntos": [
+        "Un número: 3, 7, 12, 16 o 18",
+        "Es la edad mínima recomendada",
+        "Iconos: violencia, miedo, lenguaje y compras dentro",
+        "Se mira en familia antes de instalar"
+      ],
+      "narracion": "En Europa, los videojuegos llevan la etiqueta PEGI. El número indica la edad mínima recomendada y los iconos avisan del contenido, también de si hay compras dentro del juego. Si tu hija de diez años quiere un juego PEGI 16, la respuesta puede ser: está recomendado a partir de 16, vamos a elegir otro juntas. Hay muchísimos juegos estupendos para su edad. Y proponle una cosa: que te enseñe a jugar a su favorito."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Diamantes que esconden euros",
+      "columnas": [
+        "En el juego",
+        "En euros"
+      ],
+      "filas": [
+        [
+          "500 diamantes",
+          "5 euros"
+        ],
+        [
+          "Sombrero de 100 diamantes",
+          "1 euro"
+        ],
+        [
+          "Traje de 600, paquetes de 500",
+          "10 euros y sobran 400"
+        ],
+        [
+          "Pase de 4,99 al mes",
+          "Casi 60 euros al año"
+        ]
+      ],
+      "narracion": "Las gemas, monedas o diamantes se compran con dinero de verdad, pero después los precios salen en diamantes, y así cuesta saber cuánto se gasta. Estas cifras son un ejemplo inventado del curso, pero el mecanismo es real. Los paquetes no cuadran y sobran diamantes, para que vuelvas a comprar. Y una suscripción se renueva sola cada mes hasta que alguien la cancela. Haced estos números con los precios de su juego."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d6-2:6",
+      "narracion": "Esta diapositiva explica las cajas sorpresa. Se pagan sin saber qué habrá dentro, como una lotería. Si un juego dice que el dragón sale una de cada cien veces, de media hay que abrir cien cajas para tenerlo, y con mala suerte, más. Si cada caja cuesta un euro, son unos cien euros. Y abrir muchas no hace que la siguiente sea mejor. Por eso pueden enganchar y hacer gastar mucho."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Para configurar hoy",
+      "pasos": [
+        "Desactivad juntos la reproducción automática",
+        "Quitad las notificaciones que no hacen falta",
+        "Activad el permiso de compra: cada compra la aprueba un adulto",
+        "Chat de voz y mensajes privados, solo con amigos de verdad",
+        "Elegid dónde duerme la tableta por la noche"
+      ],
+      "narracion": "Estas cinco cosas se hacen en un rato, y mejor con el peque al lado, explicando por qué. Los dispositivos y las tiendas de apps tienen opciones familiares para que cada compra necesite la aprobación de un adulto. Cada sistema lo llama de una manera. Y si alguna vez compra sin querer, que te lo cuente enseguida. A veces se puede pedir que devuelvan el dinero, y nadie tiene que esconder un error."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Si cuesta parar, es el diseño: temporizador y avisos fuera",
+        "Por la noche, pantallas apagadas y fuera de la habitación",
+        "En la partida: nada de datos, ni fotos, ni otra app",
+        "Antes de comprar: para, calcula y pregunta"
+      ],
+      "narracion": "La regla de las compras que aprenden los niños cabe en tres palabras: para, calcula y pregunta. En los recursos tienes dos fichas. Con la del día en bloques pintáis un día normal: sueño, colegio, movimiento y pantallas. La otra es una tienda de diamantes inventada para hacer números juntos. Y si os apetece, apuntad durante tres días el rato de pantallas de toda la familia, sin reñir a nadie. En la próxima clase: mensajes trampa y permisos."
+    }
+  ]
+}

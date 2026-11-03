@@ -1,0 +1,122 @@
+{
+  "id": "c2-32",
+  "titulo": "Proyecto: la carrera contrarreloj",
+  "descripcion": "Programa un seguidor de línea que pasa por todos los puntos de control, se para en la raya de meta y muestra su tiempo, y mejóralo como un equipo de carreras: un cambio, una prueba, una medida.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k7-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: la carrera contrarreloj",
+      "subtitulo": "Misión 4: una vuelta, todos los puntos de control y parado en la meta",
+      "narracion": "Último día de la Semana de las Misiones: ¡la carrera contrarreloj en el circuito del muelle! Cada robot da una vuelta, pasa por los puntos de control en orden y se para en la meta. Gana quien tarda menos… sin salirse. Es el proyecto de la unidad. Antes de empezar, piensa: ¿qué gana una carrera, ir al máximo o no equivocarse? ¿Cómo sabe el robot que está en la meta? ¿Y se para en seco?"
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Más rápido… hasta que se pierde",
+      "columnas": ["Velocidad", "Circuito del puerto"],
+      "filas": [
+        ["150", "Unos 24 segundos"],
+        ["200", "Unos 17 segundos"],
+        ["255, rueda de dentro a 60", "Se confunde en la chicane"]
+      ],
+      "narracion": "Mira estos datos del circuito del puerto. A velocidad 150, la vuelta dura unos 24 segundos. A 200, unos 17. Y a 255, con la rueda de dentro a 60, el robot se confunde en la chicane, unas eses de la recta. ¿Por qué? En las curvas, la línea se escapa de debajo de los sensores antes de que el robot pueda corregir. Demasiado deprisa, se sale o confunde una curva con la meta. La mejor velocidad es la más rápida que siempre funciona."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-4:4",
+      "narracion": "La meta es una raya que atraviesa el circuito. Durante la vuelta, L y R nunca son negros a la vez. En la raya, sí. Por eso el programa sigue la línea con «repite hasta que L igual a 1 y R igual a 1». Después, un solo «para». Predice antes de mirar: ¿se parará en la primera curva o en la meta? Mira. En las curvas solo un sensor ve negro, y sigue. En la raya, los dos, y se para. Por eso la palabra es «y», no «o»."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-4:5",
+      "narracion": "Ahora compara con el seguimiento del chip: el robot sigue la línea con una función que ya trae hecha. Predice: ¿será más rápido o más lento que nuestro programa? Mira el panel. Es muy seguro, pero lento: unos 40 segundos por vuelta. Y además no sabe que hay una meta, así que no se para. Nuestro programa, a velocidad 200, hace la vuelta en unos 15 segundos y se para en la raya. Para una carrera, hace falta nuestro programa."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-4:6",
+      "narracion": "Este programa usa «para siempre» y dentro: si L y R ven negro, para. Parece lógico. Predice: ¿se quedará quieto en la meta? Piénsalo. Mira la demo. En la raya dice para, pero el robot se desliza un par de centímetros y sale de la raya. En la vuelta siguiente del bucle ya no ve la meta… y vuelve a arrancar. Esto es la inercia: un robot en movimiento tiende a seguir. Con «repite hasta que», una vez sale del bucle, ya no vuelve."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El tiempo en el marcador",
+      "puntos": [
+        "Tiempo en milisegundos: lo cuenta la micro:bit desde que se enciende",
+        "En la meta: segundos = tiempo ÷ 1000",
+        "Muestra el número segundos en la pantalla",
+        "Enciende el robot en la salida: así mide la vuelta"
+      ],
+      "narracion": "Una carrera necesita un cronómetro. La micro:bit cuenta los milisegundos desde que se enciende: es el valor tiempo. En la meta, pon una variable segundos igual a tiempo dividido entre 1000. Después, muestra el número segundos. Así ves cuánto ha tardado. Si enciendes el robot en la salida, al llegar tienes el tiempo de la vuelta, con un poco de arranque. En el robot de verdad funciona igual: en el JavaScript de MakeCode se llama running time."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El ciclo de mejora de un equipo de carreras",
+      "pasos": [
+        "Planifica: ¿qué sensores y qué velocidad usaré?",
+        "Programa la primera versión, segura y despacio",
+        "Pruébala y mide el tiempo",
+        "Cambia una sola cosa, por ejemplo la velocidad",
+        "Vuelve a probar y compara: ¿más rápido y todavía funciona?"
+      ],
+      "narracion": "Así trabaja un equipo de carreras. Planifica, programa una primera versión segura y despacio, la prueba y mide el tiempo. Después cambia una sola cosa y vuelve a probar. ¿Por qué solo una? Porque si cambias muchas a la vez, no sabrás cuál ha mejorado el tiempo, o cuál lo ha estropeado. Por ejemplo: tu robot da la vuelta en 16 segundos a velocidad 200 y a 255 hace eses. Prueba 210, 220, y quédate con la más rápida que siempre funciona."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla: el circuito de lápiz",
+      "puntos": [
+        "Dibuja con rotulador un circuito con dos curvas cerradas y una suave",
+        "Repásalo con el lápiz despacio, normal y muy deprisa",
+        "Alguien cronometra y cuenta las veces que te sales",
+        "Tabla: velocidad, tiempo y salidas"
+      ],
+      "narracion": "Esta actividad desconectada solo necesita una hoja, un rotulador, un lápiz y un reloj. Dibuja un circuito cerrado con dos curvas cerradas y una suave. Repásalo con el lápiz muy despacio mientras alguien te cronometra. Apunta el tiempo y cuántas veces te sales. Repite a velocidad normal y después tan deprisa como puedas. Haz una tabla con velocidad, tiempo y salidas. ¿Dónde te has salido más? Seguramente en las curvas cerradas. A tu robot le pasa lo mismo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos contra el reloj",
+      "puntos": [
+        "Vuelta de reconocimiento: 5 puntos de control y parado en la meta",
+        "Contra el reloj: menos de 18 segundos, en dos circuitos",
+        "Extra: bate el récord del muelle, 13 segundos",
+        "Crea: el gran circuito del puerto en menos de 20 segundos"
+      ],
+      "narracion": "En la sesión de Numi Tech, primero haces la vuelta de reconocimiento, todavía sin límite de tiempo. Dentro del «repite hasta que», si L ve negro, el motor izquierdo va a 40 y el derecho a 150, y al revés con R. Después, contra el reloj: menos de 18 segundos, y el mismo programa en el muelle y en el astillero, con curvas más cerradas. Y el proyecto: el gran circuito del puerto, con su chicane, en menos de 20 segundos y con el tiempo en la pantalla."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La carrera de verdad",
+      "pasos": [
+        "Circuito del muelle: cinta negra de 2 cm sobre papel blanco",
+        "Raya de meta de 10 cm que atraviesa la línea",
+        "Vuelta de prueba a velocidad 150",
+        "Tres intentos oficiales; antes de cada uno, un solo cambio",
+        "Si se sale de la línea, el intento no cuenta"
+      ],
+      "narracion": "Con el Maqueen, construid el circuito del muelle de la ficha sobre papel blanco de unos 140 por 80 centímetros. Cinta negra de 2 centímetros, curvas de 26 centímetros de radio y una raya de meta de 10 centímetros. Pasad el programa con el botón MakeCode o en MakeCode, con la extensión maqueen, y con el robot apagado. Haced una vuelta de prueba a 150 y después tres intentos oficiales. El robot sale justo detrás de la raya. Nadie corre por el aula: solo el piloto enciende y coge el robot."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Para en la meta y vuelve a arrancar", "«Repite hasta que» y después «para»"],
+        ["Todo a 255 y pierde la línea", "Cambia un solo número cada vez"],
+        ["Se para en la primera curva", "L = 1 y R = 1, con «y»"],
+        ["La pantalla pasa un número larguísimo", "Divide el tiempo entre 1000"],
+        ["El robot real se para al arrancar", "Sale justo después de la raya"]
+      ],
+      "narracion": "Los errores típicos de la carrera. Con «para siempre», el robot vuelve a arrancar después de la meta. Si subes todas las velocidades a 255 a la vez, pierde la línea y no sabes por qué. Con «o», se para en la primera curva. Si muestras el tiempo sin dividir, la pantalla pasa un número muy largo: 15340 milisegundos son unos 15 segundos. En el robot real, el tiempo será diferente del simulador por las pilas, las ruedas y el suelo. Es normal: compara tus intentos en el mismo circuito."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "La Semana de las Misiones",
+      "puntos": [
+        "Aspirador: estrategia y variable de memoria",
+        "Sumo: el borde primero, después el rival",
+        "Rescate: empujar recto y trabajar por fases",
+        "Carrera: seguir hasta la meta y mejorar con datos"
+      ],
+      "narracion": "¡Semana de las Misiones superada! Has limpiado el hostal con una estrategia y una variable de memoria. Has ganado en el dohyo mirando el borde primero. Has rescatado balizas empujando recto y por fases. Y has corrido contra el reloj, mejorando con datos. Si tu robot es el último, no has perdido: lo importante es cuánto has mejorado tu tiempo. Para hoy, explica a alguien de casa las cuatro misiones. En la próxima unidad diseñarás tu propia misión."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "seccion": 5,
+  "titulo": "Cuestionario: presupuestos, facturas y números",
+  "preguntas": [
+    {
+      "pregunta": "La IA te prepara un presupuesto con cuatro partidas y el total. ¿Qué haces antes de enviarlo?",
+      "respuestas": [
+        "Compruebo cada suma con la calculadora o en mi hoja de cálculo",
+        "Lo envío: la IA no se equivoca con los números",
+        "Le pido que elija el tipo de IVA",
+        "Añado el nombre y el DNI del cliente en el chat"
+      ],
+      "correcta": 0,
+      "explicacion": "Los asistentes de chat pueden equivocarse con los números. La IA redacta y ordena; las sumas las compruebas tú y el tipo de impuesto lo confirmas con tu gestoría."
+    },
+    {
+      "pregunta": "Eres autónomo y tributas en el IRPF. Según el calendario vigente a octubre de 2026, ¿desde cuándo te obliga Verifactu?",
+      "respuestas": [
+        "Desde el 1 de enero de 2026",
+        "Desde el 1 de enero de 2027",
+        "Desde el 1 de julio de 2027",
+        "No tiene fecha todavía"
+      ],
+      "correcta": 2,
+      "explicacion": "El Real Decreto-ley 15/2025 aplazó la obligación: 1 de enero de 2027 para contribuyentes del Impuesto sobre Sociedades y 1 de julio de 2027 para el resto, incluidos los autónomos en IRPF."
+    },
+    {
+      "pregunta": "¿Por qué no puedes usar ChatGPT como programa de facturación?",
+      "respuestas": [
+        "Porque escribe mal los conceptos",
+        "Porque es de pago",
+        "Porque las facturas que genera son demasiado largas",
+        "Porque no genera registros íntegros, inalterables y trazables ni el código QR que exige Verifactu"
+      ],
+      "correcta": 3,
+      "explicacion": "Una IA como ChatGPT escribe textos, pero no es un sistema de facturación. La factura sale de un programa adaptado o de la aplicación gratuita de la Agencia Tributaria."
+    },
+    {
+      "pregunta": "Le pasas a la IA la foto de un ticket. ¿Qué frase conviene añadir a la instrucción?",
+      "respuestas": [
+        "Si un dato no se lee bien, escribe ilegible en lugar de suponerlo",
+        "Redondea los importes para que quede más limpio",
+        "Dime si este gasto es deducible",
+        "Inventa la categoría que mejor te parezca"
+      ],
+      "correcta": 0,
+      "explicacion": "Sin esa frase, la IA puede inventarse un número que parece correcto. Las categorías las pone tu gestoría y qué es deducible también lo decide ella."
+    },
+    {
+      "pregunta": "¿Cuál de estas peticiones es un buen uso de la IA para tus impuestos?",
+      "respuestas": [
+        "¿Cuánto tengo que pagar de IRPF este año?",
+        "Con mis totales y el porcentaje que me dio mi gestoría, calcula cuánto apartar y explica cada paso",
+        "¿Qué gastos me puedo desgravar para pagar menos?",
+        "Presenta mi declaración por mí"
+      ],
+      "correcta": 1,
+      "explicacion": "La IA ayuda a preparar y entender: explica conceptos, hace cuentas con tus datos y ordena tus dudas. Las decisiones fiscales y tu caso concreto son de tu gestoría."
+    }
+  ]
+}

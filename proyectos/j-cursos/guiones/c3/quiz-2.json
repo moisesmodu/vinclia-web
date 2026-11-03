@@ -1,0 +1,36 @@
+{
+  "seccion": 2,
+  "titulo": "Cuestionario: pedir bien a la IA",
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál de estas piezas de una buena instrucción es la que más se olvida y más cambia el resultado?",
+      "respuestas": ["El saludo inicial", "El formato: canal y longitud", "Decir por favor", "El nombre de la herramienta"],
+      "correcta": 1,
+      "explicacion": "Las cinco piezas son tarea, contexto, destinatario, formato, y tono con límites. Decir el canal y la longitud en frases o líneas ahorra la mitad de las correcciones."
+    },
+    {
+      "pregunta": "La IA te devuelve un texto que no te convence. ¿Qué instrucción de cambio funciona mejor?",
+      "respuestas": ["Acórtalo a 3 frases, tutea y quita los emojis", "Mejóralo", "No me gusta, hazlo otra vez", "Hazlo más profesional y mejor"],
+      "correcta": 0,
+      "explicacion": "Los cambios concretos (longitud, trato, frases que sobran, tono) aciertan. Los vagos hacen que la IA cambie cosas al azar y estropee lo que sí estaba bien."
+    },
+    {
+      "pregunta": "¿Qué NO debe aparecer nunca en la ficha de tu negocio?",
+      "respuestas": ["Tu horario y formas de pago", "Tu política de cancelaciones", "Nombres, teléfonos o datos de salud de clientes", "Si tratas a tus clientes de tú o de usted"],
+      "correcta": 2,
+      "explicacion": "La ficha habla de tu negocio, no de tus clientes. Todo lo que va en ella debería poder estar en tu web: nada de datos personales, de salud ni contraseñas."
+    },
+    {
+      "pregunta": "Una conversación lleva cinco rondas, el texto no mejora y la IA repite errores ya corregidos. ¿Qué haces?",
+      "respuestas": ["Seguir insistiendo con el mismo mensaje", "Cambiar de herramienta para siempre", "Aceptar el texto tal cual", "Abrir una conversación nueva con la instrucción mejorada"],
+      "correcta": 3,
+      "explicacion": "Empezar de cero con todo lo aprendido en las rondas anteriores es más rápido que seguir corrigiendo. Y esa instrucción mejorada merece ir a tu biblioteca."
+    },
+    {
+      "pregunta": "¿Para qué sirven los huecos entre corchetes en una instrucción de tu biblioteca?",
+      "respuestas": ["Para marcar lo que cambia cada vez y reutilizar el resto", "Para que la IA invente esos datos", "Para ocultar información a la IA", "No sirven para nada, es decoración"],
+      "correcta": 0,
+      "explicacion": "La parte fija ya está probada; solo rellenas los huecos (cliente, fecha, documentos). Así el resultado sale siempre con tu estilo en treinta segundos."
+    }
+  ]
+}

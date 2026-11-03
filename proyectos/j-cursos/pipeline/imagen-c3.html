@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* imagen del curso 3 (sin texto, como piden las normas de Udemy): un móvil con una conversación, un presupuesto y un calendario */
+html,body{margin:0;width:1500px;height:844px;overflow:hidden}
+body{background:radial-gradient(circle at 25% 20%,#9B7BFF,#5B32E0 55%,#2A1878);position:relative;font-family:sans-serif}
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 2px,transparent 2.2px);background-size:34px 34px}
+.ph{position:absolute;left:560px;top:70px;width:380px;height:740px;border-radius:56px;background:#0E0A2A;box-shadow:0 40px 80px rgba(0,0,0,.45);padding:22px}
+.sc{width:100%;height:100%;border-radius:40px;background:#F4F1FF;padding:40px 22px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px}
+.b{border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:9px;max-width:78%}.b i{display:block;height:11px;border-radius:6px}
+.u{align-self:flex-end;background:#7C4DFF}.u i{background:rgba(255,255,255,.75)}
+.a{align-self:flex-start;background:#fff;box-shadow:0 6px 0 #E3DCFF}.a i{background:#C9BEF5}
+.card{position:absolute;background:#fff;border-radius:30px;box-shadow:0 26px 60px rgba(0,0,0,.35);padding:28px;box-sizing:border-box}
+.inv{left:120px;top:190px;width:360px;height:440px;transform:rotate(-8deg)}
+.inv .h{height:26px;width:55%;background:#7C4DFF;border-radius:8px;margin-bottom:26px}.inv .r{display:flex;justify-content:space-between;margin:16px 0}
+.inv .r i{height:13px;border-radius:7px;background:#DDD6F6}.inv .tot{margin-top:30px;height:44px;border-radius:12px;background:#14A3B8}
+.qr{position:absolute;right:28px;bottom:28px;width:84px;height:84px;background:repeating-conic-gradient(#14204A 0 25%,#fff 0 50%) 0 0/21px 21px;border:6px solid #fff;outline:3px solid #14204A}
+.cal{left:1040px;top:150px;width:340px;height:330px;transform:rotate(7deg)}.cal .h{height:46px;border-radius:12px;background:#14A3B8;margin-bottom:18px}
+.cal .g{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.cal .g i{height:36px;border-radius:9px;background:#EEE9FF}.cal .g i.on{background:#FFC531}
+.star{left:1090px;top:540px;width:300px;height:150px;transform:rotate(-4deg);display:flex;gap:14px;align-items:center;justify-content:center}
+.star span{width:44px;height:44px;background:#FFC531;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.spark{position:absolute;width:90px;height:90px;background:#FFC531;clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+</style></head><body><div class="dots"></div>
+<div class="card inv"><div class="h"></div>
+<div class="r"><i style="width:55%"></i><i style="width:22%"></i></div><div class="r"><i style="width:45%"></i><i style="width:22%"></i></div><div class="r"><i style="width:60%"></i><i style="width:22%"></i></div><div class="r"><i style="width:40%"></i><i style="width:22%"></i></div>
+<div class="tot"></div><div class="qr"></div></div>
+<div class="ph"><div class="sc">
+<div class="b u"><i style="width:200px"></i><i style="width:150px"></i></div>
+<div class="b a"><i style="width:230px"></i><i style="width:250px"></i><i style="width:190px"></i><i style="width:120px"></i></div>
+<div class="b u"><i style="width:160px"></i></div>
+<div class="b a"><i style="width:240px"></i><i style="width:210px"></i><i style="width:150px"></i></div>
+<div class="b u"><i style="width:180px"></i><i style="width:90px"></i></div>
+</div></div>
+<div class="card cal"><div class="h"></div><div class="g"><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div></div>
+<div class="card star"><span></span><span></span><span></span><span></span><span></span></div>
+<i class="spark" style="left:470px;top:60px"></i><i class="spark" style="left:980px;top:700px;transform:scale(.6)"></i>
+</body></html>

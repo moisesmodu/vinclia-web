@@ -1,0 +1,78 @@
+{
+  "id": "c4-01",
+  "titulo": "Bienvenida: lo que de verdad importa",
+  "descripcion": "Qué vas a conseguir en este curso, la norma de oro de la vida digital en familia y la primera conversación que puedes tener hoy mismo con tu hijo o tu hija.",
+  "vistaPrevia": true,
+  "recursos": ["imprimible:d3-1"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Bienestar digital en familia",
+      "subtitulo": "Guía rápida para padres de niños de 8 a 12 años",
+      "narracion": "Bienvenido, bienvenida. Si tienes en casa un niño o una niña de entre 8 y 12 años, seguramente ya convives con tabletas, móviles, videojuegos y grupos de chat. Y quizá te preguntas si lo estás haciendo bien. Este curso es corto y práctico. No viene a darte miedo ni a decirte que lo prohíbas todo. Viene a darte frases para decir, cosas que configurar y acuerdos que funcionan."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué te llevas de este curso",
+      "puntos": [
+        "Ocho clases cortas, una idea clara en cada una",
+        "Qué decir: conversaciones listas para usar en casa",
+        "Qué configurar hoy: pasos concretos en la tableta o el móvil",
+        "Actividades sin pantalla e imprimibles incluidos",
+        "Todo sirve sin comprar nada"
+      ],
+      "narracion": "El contenido sale de Tech Digital, el curso de ciudadanía digital de Numi Tech para niños de 9 a 12 años. Allí se trabaja en clase. Aquí lo convertimos en conversaciones y acuerdos de familia. Cada clase termina con algo que puedes hacer hoy, en diez o quince minutos. Y en los recursos tienes fichas imprimibles para hacer juntos, sin pantalla."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si algo de internet me hace sentir mal, se lo cuento a un adulto de confianza.",
+      "autor": "La norma de oro de Tech Digital",
+      "narracion": "Si te quedas con una sola idea del curso, que sea esta. Es la norma de oro que acompaña a los niños en todas las sesiones de Tech Digital. Ninguna configuración protege tanto como un hijo que te cuenta lo que le pasa. Las contraseñas, los permisos o los controles ayudan mucho. Pero lo que de verdad funciona es que tu hijo sepa que puede acudir a ti."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres ideas que oirás en todas las clases",
+      "puntos": [
+        "Si cae en un engaño o algo le hace daño, no es culpa suya",
+        "Los acuerdos se hacen juntos y valen también para los adultos",
+        "Contarlo no es chivarse: es cuidarse"
+      ],
+      "narracion": "Hay tres ideas que volverán una y otra vez. La primera: si tu hijo cae en un engaño o alguien le hace daño, no es culpa suya. Los engaños están hechos para engañar a todo el mundo, también a los adultos. La segunda: las normas de casa se deciden juntos y las cumple toda la familia. La tercera: contar lo que pasa no es chivarse, es cuidarse. Conviene que se lo oiga decir a menudo."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Dos formas de acompañar",
+      "mal": "Vigilar a escondidas, castigar sin pantallas cuando algo va mal y prohibir sin explicar.",
+      "bien": "Hablar a menudo, acordar normas que valen para todos y agradecer que te lo cuente.",
+      "narracion": "Hay un detalle que lo cambia todo. Si cada vez que algo va mal la respuesta es quitar el móvil, tu hija aprenderá a callar. Y callar es justo lo que no queremos. Por eso en el curso insistimos en dos cosas: los acuerdos se hacen en familia y valen también para los adultos. Y cuando te cuenta algo, primero se da las gracias. Después ya buscaréis juntos la solución."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d3-1:3",
+      "narracion": "Esta diapositiva es de la sesión sobre el tiempo con pantallas. Muestra una idea que quita mucha culpa. Algunas apps están hechas para que no pares: el vídeo siguiente empieza solo, llegan avisos y las rachas te hacen volver cada día. Si a tu hija le cuesta parar, no es que no tenga fuerza de voluntad. Es el diseño. Saberlo ya ayuda a decidir."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu primera conversación, hoy",
+      "pasos": [
+        "Elige un momento tranquilo: en el coche, paseando o cocinando",
+        "Pregunta: ¿qué es lo que más te gusta hacer con pantallas?",
+        "Pregunta: ¿alguna vez algo te ha hecho sentir raro o mal?",
+        "Escucha sin corregir ni reñir",
+        "Promete: si me lo cuentas, no te quitaré la tableta por eso"
+      ],
+      "narracion": "Esto es lo que puedes hacer hoy. Busca un rato sin prisas, mejor de lado que cara a cara, como en el coche o cocinando. Pregúntale qué le gusta hacer con pantallas y deja que te lo enseñe. Después pregunta si algo le ha hecho sentir raro alguna vez. Escucha sin corregir. Y termina con una promesa clara: si me cuentas algo, no te voy a quitar la tableta por contármelo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que de verdad importa",
+      "puntos": [
+        "La norma de oro: si algo hace sentir mal, se cuenta a un adulto",
+        "Acompañar funciona mejor que vigilar o prohibir",
+        "Si cuesta parar, no es culpa suya: las apps están hechas así",
+        "Hoy: la primera conversación y una promesa"
+      ],
+      "narracion": "En las próximas clases veremos contraseñas, lo que compartimos, bulos e inteligencia artificial, respeto en la red, pantallas y videojuegos, y mensajes trampa. Terminaremos con un plan digital para toda la familia. Hoy, solo una cosa: esa primera conversación. Si te apetece ir más allá, en los recursos tienes la ficha del día en bloques para pintar juntos un día normal. Nos vemos en la siguiente clase."
+    }
+  ]
+}

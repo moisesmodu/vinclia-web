@@ -1,0 +1,118 @@
+{
+  "id": "c2-24",
+  "titulo": "Proyecto: la casa inteligente",
+  "descripcion": "Planifica con una tabla, programa por partes y prueba una casa inteligente en la que el Maqueen hace de luz de noche, timbre y vigilante, con varios guiones a la vez y condiciones dobles con «y».",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k5-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: la casa inteligente",
+      "subtitulo": "Unidad 5 · Luz, sonido y LED · Planificar y probar por partes",
+      "narracion": "Proyecto final de la unidad 5. Para terminar la Noche de los Farolillos, el ayuntamiento monta una casa inteligente de cartón, y el Maqueen será su cerebro. Hará de luz de noche, de timbre, de vigilante e incluso de mayordomo. Es tu proyecto: lo planificarás, lo programarás por partes y lo probarás. Juntaremos todo lo de la unidad: sensores de luz, avisos, botones y el ultrasonido. Y aprenderemos dos ideas nuevas: varios guiones a la vez y las condiciones dobles."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Luces que se encienden solas, persianas que bajan, alarmas… ¿Qué sensores necesita una casa inteligente?",
+      "narracion": "¿Qué hace una casa inteligente? Piensa en luces que se encienden solas, persianas que bajan, alarmas. ¿Qué sensores necesitan? A esto se le llama domótica: sensores, un programa y actuadores repartidos por la casa. Nuestro Maqueen lo hará todo en una sola máquina. Repaso rápido: ¿qué parte apaga la farola cuando vuelve la luz? El si no. ¿Qué guion usas para el timbre? Al pulsar el botón A. Y una alarma es un sensor, una condición y unos avisos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La tabla del proyecto",
+      "columnas": ["Función", "Sensor y condición", "Qué hace"],
+      "filas": [
+        ["Luz de noche", "Luz menor que 100", "Luces de abajo blancas"],
+        ["Timbre", "Botón A", "Melodía mi agudo, do agudo"],
+        ["Vigilante", "Distancia menor que 25", "Avisa con luces y nota"]
+      ],
+      "narracion": "Antes de tocar ningún bloque, hacemos una tabla. Para cada función: qué sensor o botón, qué condición y qué hace. Por ejemplo, la luz de noche: sensor de luz, luz menor que 100, luces de abajo blancas. El timbre: botón A y una melodía. El vigilante: distancia menor que 25 centímetros y un aviso. Piensa también en ahorrar energía, con luces que se apagan cuando no hacen falta. Si das la clase, rellena una fila con todo el grupo en la pizarra."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Probar por partes",
+      "pasos": [
+        "Haz la lista de lo que tiene que hacer la casa",
+        "Para cada función, elige sensor, condición y aviso",
+        "Programa una sola función",
+        "Pruébala y arréglala hasta que funcione",
+        "Añade la siguiente y vuelve a probarlo todo"
+      ],
+      "narracion": "Este es el método más importante de hoy, y te servirá en cualquier proyecto grande. Primero, la lista de lo que tiene que hacer la casa. Después, para cada función, el sensor, la condición y el aviso. Luego programas una sola función, la pruebas y la arreglas hasta que funcione. Y solo entonces añades la siguiente y vuelves a probarlo todo. Programar y probar a trozos hace que encuentres los errores enseguida. Si lo pones todo de golpe y falla, no sabrás dónde buscar."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-4:6",
+      "narracion": "Vamos al simulador. Aquí hay tres guiones a la vez. Al iniciar muestra la casa. Al pulsar A toca el timbre y arranca el robot hacia la puerta. Y el para siempre vigila la distancia: cerca de la puerta, para y sonríe. Antes de ejecutarlo, predice: cuando alguien pulse A, ¿se parará el robot en la puerta, si el guion del botón no dice nada de parar? Mira. Sí se para, porque ningún guion espera a los otros. Cada guion hace su trabajo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k5-4:7",
+      "narracion": "Cuidado con esta. El botón A pone las luces rojas. Pero el para siempre las pone verdes. Predice: cuando pulsemos A, ¿qué color veremos? Mira la demo. Casi no se ve el rojo. El para siempre vuelve a poner verde unos 20 milisegundos después. Cuando dos guiones mandan las mismas luces, gana el que lo hace más a menudo. La regla es sencilla: cada luz, cada motor, la controla un solo guion. Si el botón quiere avisar, que use otra cosa, como una nota o un icono."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Dos condiciones: «y» u «o»",
+      "mal": "Con «o»: basta con una. De día y con alguien cerca, la alarma suena igual",
+      "bien": "Con «y»: tienen que cumplirse las dos. Solo suena de noche y con alguien cerca",
+      "narracion": "Ahora, las condiciones dobles. Con y, la condición es cierta solo si lo son las dos partes. Luz menor que 100 y distancia menor que 25 quiere decir: es de noche y hay alguien cerca. Entonces, alarma. Con o, basta con una, como en la mariposa, que paraba si la luz izquierda o la derecha pasaban de 600. Pruébalo con los cuatro casos: día sin nadie, día con alguien, noche sin nadie y noche con alguien. Con y, solo el último enciende la alarma."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plano de mi casa",
+      "pasos": [
+        "Dibuja el plano: recibidor, puerta y dónde estará el robot",
+        "Elige tres funciones: luz de noche, timbre y alarma",
+        "Rellena la tabla: función, sensor, condición y qué hace",
+        "Comprueba que ninguna luz dependa de dos guiones",
+        "Intercambia la ficha: tu pareja busca dos problemas"
+      ],
+      "narracion": "Antes de programar, se diseña en papel, con la ficha del imprimible. Dibuja el plano de tu casa: el recibidor, la puerta y dónde estará el robot. Elige tres funciones como mínimo y rellena la tabla de cuatro columnas. Comprueba que ninguna luz ni ningún motor dependan de dos guiones a la vez. Después, por parejas, intercambiad la ficha. El compañero busca dos tipos de problema: un actuador mandado por dos guiones o una función sin sensor. Corregid la tabla y guardad la hoja."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las tres partes en el simulador",
+      "puntos": [
+        "Parte 1 · La puerta con dos botones: A abre, B cierra",
+        "Parte 2 · Bienvenida o alarma: depende de si es de día o de noche",
+        "Reto extra · El mayordomo: timbre con A y parar en la puerta",
+        "Crea: tu casa, con luz de noche, timbre y vigilante"
+      ],
+      "narracion": "En el simulador hay tres partes. En la primera, el botón A abre la puerta, con el icono de sí y luces de abajo verdes. El B la cierra, con el icono de no y luces rojas. En la segunda, cuando alguien llega a la puerta, si es de día recibe luces verdes y cara contenta. Si es de noche, luces rojas y una nota. Pon primero la pregunta doble. En el mayordomo, el robot toca el timbre, va hacia la puerta y para a menos de 12 centímetros."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La casa de cartón con el Maqueen",
+      "pasos": [
+        "Robot dentro de la caja, mirando la puerta",
+        "Carga el código del imprimible: extensiones maqueen y neopixel",
+        "Luz de noche: tapa la casa. Timbre: pulsa A",
+        "Vigilante: acerca un libro a la puerta",
+        "Prueba una función cada vez y apunta qué has cambiado"
+      ],
+      "narracion": "Con el robot de verdad, montad la casa con una caja: el robot dentro, mirando la puerta. En MakeCode añadid dos extensiones, maqueen y neopixel, y cargad el código de partida del imprimible. Probad las funciones una a una. Para la luz de noche, tapad la casa. Para el timbre, pulsad A. Para el vigilante, acercad un libro a la puerta. Si algo no va, no siempre es el programa: a menudo hay que ajustar el 100 o el 25 a vuestra aula."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos y cómo ayudar",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["Todo de golpe y no sabe qué falla", "Deja una sola función y pruébala"],
+        ["El botón A parece no hacer nada", "Que use otro actuador"],
+        ["La alarma de noche no sale nunca", "Pon la pregunta doble delante"],
+        ["El mayordomo choca en otra pista", "Distancia en lugar de espera"],
+        ["Con «o» suena de día", "Lee la condición con día y visita"]
+      ],
+      "narracion": "Errores típicos. Si lo programa todo de golpe, que desactive todas las funciones menos una y la pruebe sola. Si el botón no hace nada, seguramente pelea con el para siempre por la misma luz. Si la alarma de noche no sale, ha puesto primero distancia menor que 25: el si responde la primera pregunta cierta, así que la pregunta doble va delante. En el mayordomo, una espera falla en otra pista. Y con o en lugar de y, la alarma suena también de día."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido en esta unidad",
+      "puntos": [
+        "Sensores de luz, umbral y comparar izquierda y derecha",
+        "Avisos con sonido, luces e iconos; botones A y B",
+        "Farolas con «si no» y proyectos planificados por partes"
+      ],
+      "narracion": "Y así cerramos la unidad 5. Hemos usado los sensores de luz, el umbral y la comparación entre izquierda y derecha. Hemos avisado con sonido, luces e iconos, y con los botones A y B. Hemos hecho farolas con si no y un proyecto planificado por partes. Para hoy: enseña tu casa a la familia y buscad en casa algo que podría ser inteligente. ¿Qué sensor usaría y qué haría? En la próxima unidad, el control inteligente."
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+ "id": "c5",
+ "slug": "vibe-coding",
+ "color": "#0E9F8E",
+ "color2": "#F08A24",
+ "base": [],
+ "titulo": "Vibe coding: crea apps y webs con IA sin saber programar",
+ "duracionObjetivoMin": 240,
+ "secciones": [
+  {
+   "t": "Empieza aquí",
+   "l": [
+    {
+     "t": "Bienvenida: tu primera app con IA en 10 minutos",
+     "src": [],
+     "nota": "",
+     "id": "c5-01"
+    },
+    {
+     "t": "Qué es el vibe coding (y qué no es)",
+     "src": [],
+     "nota": "",
+     "id": "c5-02"
+    },
+    {
+     "t": "Las herramientas: cuál usar para qué",
+     "src": [],
+     "nota": "",
+     "id": "c5-03"
+    }
+   ]
+  },
+  {
+   "t": "Lo mínimo que tienes que entender",
+   "l": [
+    {
+     "t": "Cómo funciona una web: HTML, CSS y JavaScript sin tecnicismos",
+     "src": [],
+     "nota": "",
+     "id": "c5-04"
+    },
+    {
+     "t": "Archivos, carpetas y el navegador: tu taller",
+     "src": [],
+     "nota": "",
+     "id": "c5-05"
+    },
+    {
+     "t": "Leer código sin saber programar",
+     "src": [],
+     "nota": "",
+     "id": "c5-06"
+    },
+    {
+     "t": "Lo que puede salir mal: errores, inventos y seguridad",
+     "src": [],
+     "nota": "",
+     "id": "c5-07"
+    }
+   ]
+  },
+  {
+   "t": "El método: pedir bien a la IA",
+   "l": [
+    {
+     "t": "La ficha del proyecto: tu idea en una página",
+     "src": [],
+     "nota": "",
+     "id": "c5-08"
+    },
+    {
+     "t": "Instrucciones que funcionan: contexto, tarea y límites",
+     "src": [],
+     "nota": "",
+     "id": "c5-09"
+    },
+    {
+     "t": "Avanzar en pasos pequeños y guardar versiones",
+     "src": [],
+     "nota": "",
+     "id": "c5-10"
+    },
+    {
+     "t": "Cuando algo falla: cómo pedir que lo arregle",
+     "src": [],
+     "nota": "",
+     "id": "c5-11"
+    }
+   ]
+  },
+  {
+   "t": "Proyecto 1: la web de un negocio",
+   "l": [
+    {
+     "t": "El plan: qué necesita la web de un negocio local",
+     "src": [],
+     "nota": "",
+     "id": "c5-12"
+    },
+    {
+     "t": "Primera versión en un solo archivo",
+     "src": [],
+     "nota": "",
+     "id": "c5-13"
+    },
+    {
+     "t": "Diseño, colores y que se vea bien en el móvil",
+     "src": [],
+     "nota": "",
+     "id": "c5-14"
+    },
+    {
+     "t": "Publicarla gratis en internet con tu propia dirección",
+     "src": [],
+     "nota": "",
+     "id": "c5-15"
+    }
+   ]
+  },
+  {
+   "t": "Proyecto 2: una app de hábitos",
+   "l": [
+    {
+     "t": "El plan: pantallas y datos de una app sencilla",
+     "src": [],
+     "nota": "",
+     "id": "c5-16"
+    },
+    {
+     "t": "La lista de hábitos que se guarda sola",
+     "src": [],
+     "nota": "",
+     "id": "c5-17"
+    },
+    {
+     "t": "Rachas, estadísticas y un gráfico",
+     "src": [],
+     "nota": "",
+     "id": "c5-18"
+    },
+    {
+     "t": "Instálala en el móvil como una app",
+     "src": [],
+     "nota": "",
+     "id": "c5-19"
+    }
+   ]
+  },
+  {
+   "t": "Proyecto 3: una herramienta para tu trabajo",
+   "l": [
+    {
+     "t": "El plan: una calculadora de presupuestos",
+     "src": [],
+     "nota": "",
+     "id": "c5-20"
+    },
+    {
+     "t": "Cálculos, IVA y casos raros",
+     "src": [],
+     "nota": "",
+     "id": "c5-21"
+    },
+    {
+     "t": "Un presupuesto en PDF listo para enviar",
+     "src": [],
+     "nota": "",
+     "id": "c5-22"
+    },
+    {
+     "t": "Formularios y datos de clientes: lo que dice la ley",
+     "src": [],
+     "nota": "",
+     "id": "c5-23"
+    }
+   ]
+  },
+  {
+   "t": "Proyecto 4: un juego",
+   "l": [
+    {
+     "t": "El plan: un juego que se entienda en 5 segundos",
+     "src": [],
+     "nota": "",
+     "id": "c5-24"
+    },
+    {
+     "t": "El juego funcionando: mover, chocar y puntuar",
+     "src": [],
+     "nota": "",
+     "id": "c5-25"
+    },
+    {
+     "t": "Pulirlo y compartirlo con un enlace",
+     "src": [],
+     "nota": "",
+     "id": "c5-26"
+    }
+   ]
+  },
+  {
+   "t": "El siguiente nivel",
+   "l": [
+    {
+     "t": "Apps con usuarios y base de datos: Lovable, Bolt y compañía",
+     "src": [],
+     "nota": "",
+     "id": "c5-27"
+    },
+    {
+     "t": "Trabajar en tu ordenador: Cursor y Claude Code",
+     "src": [],
+     "nota": "",
+     "id": "c5-28"
+    },
+    {
+     "t": "Git y GitHub sin miedo",
+     "src": [],
+     "nota": "",
+     "id": "c5-29"
+    },
+    {
+     "t": "Claves, costes y seguridad cuando la app crece",
+     "src": [],
+     "nota": "",
+     "id": "c5-30"
+    }
+   ]
+  },
+  {
+   "t": "De idea a producto",
+   "l": [
+    {
+     "t": "Validar la idea antes de construir de más",
+     "src": [],
+     "nota": "",
+     "id": "c5-31"
+    },
+    {
+     "t": "Cobrar por lo que haces: enlaces de pago",
+     "src": [],
+     "nota": "",
+     "id": "c5-32"
+    },
+    {
+     "t": "Mantenerla viva y saber cuándo llamar a un programador",
+     "src": [],
+     "nota": "",
+     "id": "c5-33"
+    }
+   ]
+  },
+  {
+   "t": "Cierre",
+   "l": [
+    {
+     "t": "Tu proyecto final: de la ficha a la publicación",
+     "src": [],
+     "nota": "",
+     "id": "c5-34"
+    },
+    {
+     "t": "Clase extra: recursos, plantillas y siguientes pasos",
+     "src": [],
+     "nota": "",
+     "id": "c5-35"
+    }
+   ]
+  }
+ ]
+}

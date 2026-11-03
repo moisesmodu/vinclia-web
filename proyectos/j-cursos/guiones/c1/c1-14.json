@@ -1,0 +1,109 @@
+{
+  "id": "c1-14",
+  "titulo": "Proyecto de la semana: el mosaico",
+  "descripcion": "Cerráis la semana 2 con un proyecto que lo junta todo: planificar un mosaico fila a fila, programarlo con bucles, uno dentro de otro, y presentarlo en casa.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:r2-4"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto de la semana: el mosaico",
+      "subtitulo": "Semana 2 · Proyecto",
+      "narracion": "Llegamos al final de la semana 2 del plan, la de repetir y encontrar patrones. Toca el proyecto, que junta todo lo de estos días: bucles, patrones, el lápiz y el bloque Pinta. La historia es sencilla. El pueblo de la isla quiere un mosaico de baldosas de colores para la fiesta mayor, y Bit lo tiene que pintar. Es más largo que las otras actividades: si podéis, dejadlo para el fin de semana o partidlo en dos ratos."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Primero el plan, después los bloques.",
+      "narracion": "Esta es la idea más importante del proyecto, y te servirá en todo el curso. El mosaico de la plaza tiene dieciséis baldosas. Si pone un bloque para cada cosa, el programa será larguísimo. Lo primero es partir el problema en trozos, como hicisteis en la semana 1 con el repartidor de la isla. Aquí los trozos son las filas. Si tu hijo o tu hija se lanza a poner bloques sin plan, para con amabilidad y pídele que te lo cuente primero."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r2-4:8",
+      "narracion": "Este es el plan del mosaico en cuatro pasos. Uno, contar las filas. Dos, buscar las filas que son iguales. Tres, programar una sola fila y la media vuelta para cambiar de fila. Y cuatro, repetir las filas iguales y probarlo. Una fila se hace con un bucle: Adelante para entrar en la baldosa y Pinta para pintarla. Bit empieza fuera del mosaico, en el borde. Por eso cada baldosa se hace igual: primero entra, después pinta."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Mosaico de casa, sin pantalla",
+      "pasos": [
+        "Dibujad una cuadrícula de 4 por 4 en una hoja",
+        "Elegid las filas: la A, roja y amarilla; la B, azul",
+        "Escribid: «fila A, media vuelta, fila B, media vuelta», 2 veces",
+        "La otra persona rellena siguiendo solo el programa",
+        "¿Ha quedado igual que vuestro plan?"
+      ],
+      "narracion": "La versión sin pantalla es un mosaico de casa. Usad lo que tengáis: papeles de colores, piezas de construcción, tapones o legumbres. Dibujad una cuadrícula de cuatro por cuatro y decidid el patrón de las filas. Después, escribid el programa con palabras. La otra persona rellena el mosaico siguiendo solo el programa, sin mirar el plan. En los recursos tienes una hoja de diseño ya preparada y las tarjetas de pintar, con la tarjeta de media vuelta. Con legumbres o tapones, cuidado si hay hermanos pequeños cerca."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-4:6",
+      "narracion": "La parte nueva es la media vuelta para cambiar de fila. Al final de la fila, Bit hace dos veces: Adelante y gira a la derecha. Antes de ejecutar, pregunta: ¿dónde queda Bit después de esto, y hacia dónde mira? Ahora mira. El primer Adelante lo saca al borde y el segundo lo baja a la fila de abajo. Entre los dos giros, queda mirando hacia el otro lado. Ya puede pintar la fila siguiente."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r2-4:12",
+      "narracion": "Este es el error más típico del proyecto. Aquí la media vuelta gira a la izquierda. Pregunta antes de ejecutar: ¿qué pasará? Ahora mira. Bit gira hacia el lado donde no hay fila y se sale del mapa. Antes de girar hay que mirar dónde está la fila siguiente. Si está a su derecha, la media vuelta va a la derecha; en la fila siguiente, a la izquierda. Los lados se van alternando."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un bucle dentro de otro bucle",
+      "puntos": [
+        "Filas 1 y 3 iguales; filas 2 y 4 iguales",
+        "Trozo: fila roja, media vuelta, fila amarilla, media vuelta",
+        "Ese trozo va dentro de un bucle grande: 2 veces",
+        "4 filas de 4 baldosas son 16 baldosas"
+      ],
+      "narracion": "Y ahora lo más bonito de la semana. En el mosaico de la plaza, las filas 1 y 3 son iguales, y también la 2 y la 4. Así que el trozo de dos filas, con sus medias vueltas, se repite dos veces. Ese trozo va dentro de un bucle grande. Y dentro del trozo ya hay otros bucles, los de cada fila. Es un bucle dentro de otro bucle. No hace falta que lo diga así: basta con que vea que el programa se acorta muchísimo. Y un dato para la mesa: cuatro filas de cuatro son dieciséis baldosas, otra suma repetida."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores del mosaico y qué preguntar",
+      "columnas": [
+        "Lo que pasa",
+        "Qué le preguntas"
+      ],
+      "filas": [
+        [
+          "Olvida un Adelante en la media vuelta",
+          "¿Me dices cada movimiento en voz alta?"
+        ],
+        [
+          "Pone Pinta antes de Adelante",
+          "¿Bit empieza dentro o fuera?"
+        ],
+        [
+          "Pone bloques fuera del bucle grande",
+          "¿Dónde van los bloques nuevos?"
+        ],
+        [
+          "Empieza sin plan y se pierde",
+          "¿Cómo es tu mosaico en la hoja?"
+        ]
+      ],
+      "narracion": "Estos son los errores que recogen las guías, con la pregunta que ayuda. Si olvida un Adelante en la media vuelta, Bit pinta el borde o se queda en la misma fila. Que lo ejecute paso a paso y diga cada movimiento: sale al borde, gira, baja, gira. Si pone los bloques fuera del bucle grande, que toque primero el espacio de dentro. Y si se pierde, que programe solo la primera fila y la pruebe antes de seguir. Mejor un mosaico pequeño que funcione que uno enorme a medias."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Presentad el mosaico",
+      "pasos": [
+        "¿Qué patrón se repite en tu mosaico?",
+        "¿Dónde has puesto el bucle? ¿Cuántas veces repite?",
+        "¿Qué ha fallado y cómo lo has arreglado?",
+        "Quien escucha dice una cosa que le ha gustado"
+      ],
+      "narracion": "Para terminar, una pequeña presentación, como en clase. Tu hijo o tu hija enseña su mosaico a alguien de casa, a una abuela o a un hermano, y responde a estas tres preguntas. La tercera es la más valiosa: contar un fallo y cómo lo ha arreglado. Quien escucha dice una cosa que le ha gustado. Presentar es voluntario: si le da vergüenza, que te lo enseñe solo a ti. En Numi Tech, el proyecto pide al menos ocho baldosas, dos colores y un bucle."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Semana 2, completada",
+      "puntos": [
+        "Un mosaico se programa fila a fila",
+        "Media vuelta: Adelante y un giro, dos veces",
+        "Filas iguales: un bucle grande con bucles dentro",
+        "Tarea: mosaico de casa y presentación"
+      ],
+      "narracion": "Con esto cerráis la semana 2. Un bucle repite lo que tiene dentro, un patrón es un trozo que se repite, el lápiz y Pinta hacen dibujos, y un bucle puede ir dentro de otro. Tu tarea: el mosaico de casa y su presentación. Si usáis Scratch, podéis intentar un bucle que dibuja un cuadrado dentro de otro que lo repite en fila. La semana que viene, el robot empieza a decidir: eventos, condiciones, funciones y variables."
+    }
+  ]
+}

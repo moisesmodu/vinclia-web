@@ -1,0 +1,119 @@
+{
+  "id": "c4-05",
+  "titulo": "Respeto en la red y ciberacoso",
+  "descripcion": "Cómo distinguir el ciberacoso de una discusión, qué hacer si le pasa a tu hijo o lo ve en el grupo de clase, qué decirle cuando te lo cuenta y a qué teléfonos llamar.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:d2-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Respeto en la red y ciberacoso",
+      "subtitulo": "Qué hacer, qué decir y a quién llamar",
+      "narracion": "Esta es la clase más delicada del curso, y también una de las más útiles. En el chat de clase alguien cuelga una foto de un compañero haciendo una mueca, y muchos ponen caritas de risa. El compañero no escribe nada. Así empieza la sesión de Tech Digital sobre respeto en la red. Vamos a ver cómo reconocer el ciberacoso, qué puede hacer tu hijo si lo ve y qué hacer tú si te lo cuenta."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Detrás de cada pantalla hay una persona. ¿Lo dirías si la tuvieras delante?",
+      "narracion": "En la red no vemos la cara de quien nos lee. No sabemos si sonríe o si se siente mal. Por eso un ok seco con punto final puede parecer enfadado, y un comentario concreto alegra el día. Enséñale el semáforo del mensaje. Rojo: si estás enfadado, para. Amarillo: ¿es cierto, es amable, hace falta decirlo? Verde: ahora sí, envíalo. Y si se equivoca, pedir perdón también es un mensaje amable."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Ciberacoso o discusión",
+      "mal": "Ciberacoso: hacer daño a alguien en la red una y otra vez. Burlas, fotos sin permiso, dejarle fuera.",
+      "bien": "Discusión: dos amigos discuten un día y hacen las paces. No es acoso, pero también pide respeto.",
+      "narracion": "La diferencia está en que se repite y en que quiere hacer daño. Puede ser con insultos, burlas, fotos sin permiso, dejar fuera a alguien a propósito o hacerse pasar por él. Y como el móvil va con ellos, puede llegar a cualquier hora, también en casa. Hay una idea que tu hijo tiene que oír de ti con claridad: nunca es culpa de quien lo sufre. Nadie se merece que lo traten mal."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:d2-3:6",
+      "narracion": "Esta diapositiva presenta al espectador activo. Cuando alguien lo pasa mal y otros lo ven, esos son espectadores. El espectador activo no se ríe ni reenvía. Apoya a la persona, por ejemplo escribiéndole en privado: estoy contigo. No se suma. Y se lo cuenta a un adulto. Explícale a tu hija que no hace falta enfrentarse a nadie. Contarlo ya es ser valiente. Y recuérdale que un emoji de risa también es sumarse. Y si te pregunta si contarlo empeorará las cosas, dile la verdad: callarlo suele hacer que dure más."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Si algo le hace daño",
+      "pasos": [
+        "Para: no responde con más daño",
+        "Guarda una prueba: una captura",
+        "Bloquea y lo denuncia en la app",
+        "Se lo cuenta a un adulto de confianza"
+      ],
+      "narracion": "Estos son los cuatro pasos que aprenden los niños. El orden puede cambiar un poco, pero el último es el más importante: no quedárselo para sí. Si tu hija siente rabia y quiere responder con insultos, es normal, pero suele hacerlo más grande. En la sesión practican la respiración del globo: hinchar la barriga contando hasta cuatro, aguantar dos segundos y soltar despacio contando hasta seis. Ayuda a no responder en caliente."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si te lo cuenta, qué le dices",
+      "puntos": [
+        "Gracias por contármelo",
+        "No es culpa tuya",
+        "No te voy a quitar el móvil por esto",
+        "Vamos a buscar la solución juntos"
+      ],
+      "narracion": "El momento en que te lo cuenta es decisivo. Mucha gente que sufre ciberacoso siente vergüenza o culpa, y por eso calla. Escúchale con calma y créele. No le pidas que te lo enseñe todo de golpe ni le hagas un interrogatorio. Si te cuesta mirar las capturas, pídele que te ayude a guardarlas. Y sobre todo, no le castigues sin pantallas: si contarlo tiene castigo, la próxima vez no te lo contará. Y no esperes siempre a que te lo cuente. Si notas que se apaga, que llora o que dice cosas como a mí me pasa, busca un momento tranquilo, a solas, y pregúntale cómo está."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Después, los adultos",
+      "pasos": [
+        "Guarda las pruebas sin borrarlas",
+        "Habla con la tutoría: el colegio tiene un protocolo",
+        "Denuncia en la app o la red donde ha pasado",
+        "Si hay riesgo grave o peligro inmediato, llama al 112"
+      ],
+      "narracion": "Una vez que te lo ha contado, te toca a ti. Guarda las pruebas, sin borrarlas. Si están implicados compañeros, habla con la tutoría: los centros tienen un protocolo ante el acoso y el ciberacoso, y saben actuar con discreción. Evita escribir tú a los implicados en caliente. Si ves amenazas, miedo a ir al colegio o cualquier riesgo grave, no esperes. Y si hay un peligro ahora mismo, llama al uno, uno, dos."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Siempre hay alguien que escucha",
+      "columnas": [
+        "Teléfono",
+        "Para qué"
+      ],
+      "filas": [
+        [
+          "116 111",
+          "Ayuda a la infancia y la adolescencia"
+        ],
+        [
+          "017",
+          "Ayuda en ciberseguridad del INCIBE"
+        ],
+        [
+          "112",
+          "Emergencias: un peligro ahora mismo"
+        ]
+      ],
+      "narracion": "Apunta estos tres números. El uno, uno, seis, uno, uno, uno es el teléfono de ayuda a la infancia y la adolescencia. Es gratuito y confidencial, y tu hija puede llamar si no tiene ningún adulto cerca o no se atreve a contarlo. El cero, uno, siete es la línea de ayuda en ciberseguridad del INCIBE, y también atiende a familias. El uno, uno, dos es para emergencias. Que el peque los conozca no le asusta: le da seguridad."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Contarlo no es chivarse",
+      "mal": "Chivarse es querer que castiguen a alguien.",
+      "bien": "Contarlo es cuidarte o cuidar a alguien que lo pasa mal.",
+      "narracion": "Muchos niños no cuentan nada porque no quieren ser chivatos o temen que empeore. Esta distinción les ayuda mucho. Y una última situación, que también pasa: que tu hijo sea quien ha participado en una burla. En ese caso, no le humilles. Habla con él en privado, pregúntale cómo se sentiría si fuera su cara, y ayúdale a repararlo: borrar, pedir perdón y no volver a sumarse."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Para hacer hoy",
+      "pasos": [
+        "Hablad de sus adultos de confianza, dentro y fuera de casa",
+        "Escribid juntos tres mensajes amables y concretos",
+        "Pasad cada mensaje por el semáforo",
+        "Enviadlos y fijaos en cómo reaccionan"
+      ],
+      "narracion": "La actividad de hoy es el banco de mensajes amables. Tu hijo piensa en tres personas: alguien de casa, un compañero y alguien con quien habla poco. A cada una le escribe un mensaje amable y concreto. No vale solo eres guay: tiene que decir qué le gusta de esa persona. Y antes, hablad de quiénes son sus adultos de confianza. Que tenga claro que puede contar cualquier cosa sin miedo a que le riñan."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "Ciberacoso: hacer daño una y otra vez; nunca es culpa de quien lo sufre",
+        "Espectador activo: apoya, no se suma y lo cuenta",
+        "Para, guarda una prueba, bloquea y cuéntalo",
+        "116 111, 017 y 112"
+      ],
+      "narracion": "Hoy has visto qué es el ciberacoso, qué puede hacer tu hijo si lo ve y qué hacer tú si te lo cuenta. En los recursos tienes la ficha para reescribir mensajes que hacen daño y convertirlos en mensajes amables. Es un buen ejercicio para hacer juntos en la mesa. En la próxima clase cambiamos de tema: pantallas, videojuegos y las compras dentro del juego."
+    }
+  ]
+}

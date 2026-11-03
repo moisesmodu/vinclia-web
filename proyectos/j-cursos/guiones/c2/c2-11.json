@@ -1,0 +1,165 @@
+{
+  "id": "c2-11",
+  "titulo": "Círculos y curvas",
+  "descripcion": "Haz que el Maqueen dibuje círculos y curvas con las ruedas a velocidades diferentes: hacia qué lado gira, cómo cambiar el tamaño del círculo y cómo elegir con el tiempo un círculo entero, medio o un cuarto.",
+  "vistaPrevia": false,
+  "recursos": [
+    "imprimible:k2-3"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Círculos y curvas",
+      "subtitulo": "La rotonda de la fuente: girar sin esquinas",
+      "narracion": "En medio de la plaza hay una fuente redonda, y alrededor pasará el pasacalles. La fiesta quiere círculos y caminos curvos pintados en el suelo. Pero con tramos y giros solo salen esquinas. Repaso: si el robot repite 5 veces un tramo y un giro de 72 grados, ¿qué dibuja? Un pentágono, porque 5 por 72 son 360. Ahora piensa: ¿cómo gira un coche en una rotonda? No se para en cada esquina."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dos ruedas, dos velocidades",
+      "puntos": [
+        "Ruedas a velocidades diferentes: curva",
+        "Gira hacia el lado de la rueda más lenta",
+        "La rueda de fuera hace más camino",
+        "Si van iguales, va recto"
+      ],
+      "narracion": "El secreto está en las ruedas. Si la rueda izquierda va más deprisa que la derecha, hace más camino, y el robot gira hacia la derecha. El robot siempre gira hacia el lado de la rueda más lenta. Pasa lo mismo con un coche en la rotonda: la rueda de fuera hace más camino que la de dentro. Y si las dos ruedas van a la misma velocidad, el robot va recto. La diferencia entre las ruedas es lo que dibuja la curva."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-3:4",
+      "narracion": "Este programa pone el motor izquierdo a 150 y el derecho a 100. Antes de ejecutarlo, predice dos cosas. ¿Hacia qué lado girará? ¿Y cuánto crees que tarda en dar la vuelta entera? Si estás en clase, cronometrad la vuelta. Mira. Gira hacia la derecha, el lado de la rueda lenta, y dibuja un círculo de unos 26 centímetros de ancho. La vuelta entera tarda unos 6600 milisegundos. Apunta este número: es la cifra mágica de la sesión."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Círculos pequeños y grandes",
+      "columnas": [
+        "Izquierda y derecha",
+        "Diámetro aproximado"
+      ],
+      "filas": [
+        [
+          "200 y 100",
+          "unos 16 cm"
+        ],
+        [
+          "150 y 100",
+          "unos 26 cm"
+        ],
+        [
+          "200 y 150",
+          "unos 39 cm"
+        ],
+        [
+          "120 y 100",
+          "unos 54 cm"
+        ]
+      ],
+      "narracion": "¿Y cómo cambiamos el tamaño del círculo? Con las velocidades. Cuanto más se parecen las dos, más grande es el círculo. En el simulador, 200 y 100 hacen un círculo de unos 16 centímetros. 150 y 100, unos 26. 200 y 150, unos 39. Y 120 y 100, unos 54. Una curiosidad: 150 y 100, y 200 y 150, tardan lo mismo en dar la vuelta, porque la diferencia entre las ruedas es la misma. Pero la segunda va más deprisa, y hace un círculo más grande."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k2-3:12",
+      "narracion": "Ahora, el izquierdo a 100 y el derecho a 150, durante 3300 milisegundos. Es justo la mitad de la vuelta. ¿Dónde terminará el robot: en la A, en la B o en la C? Fíjate en qué rueda es la más lenta antes de decidir. Ejecutamos. La rueda izquierda es la lenta, así que hace medio círculo hacia la izquierda. Termina en la A, mirando hacia abajo. Para girar al otro lado, basta con intercambiar las dos velocidades."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Trozos de círculo, con 150 y 100",
+      "columnas": [
+        "Trozo",
+        "Tiempo"
+      ],
+      "filas": [
+        [
+          "Vuelta entera",
+          "unos 6600 ms"
+        ],
+        [
+          "Medio círculo",
+          "unos 3300 ms"
+        ],
+        [
+          "Un cuarto de vuelta",
+          "unos 1650 ms"
+        ],
+        [
+          "Al otro lado",
+          "Intercambia las velocidades"
+        ]
+      ],
+      "narracion": "Con el tiempo decides qué trozo de círculo hace el robot. Con 150 y 100, la vuelta entera son unos 6600 milisegundos. La mitad del tiempo, 3300, medio círculo. Un cuarto, 1650, un cuarto de vuelta. Y encadenando trozos salen formas nuevas. Medio círculo a la derecha y medio a la izquierda hacen una S. Un círculo entero a cada lado, un 8 gigante. Con curvas y rectas, el robot puede seguir casi cualquier camino."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Reto: esquiva el banco con curvas",
+      "pasos": [
+        "Un cuarto a la izquierda: 100 y 150, 1650 ms",
+        "Medio a la derecha: 150 y 100, 3300 ms",
+        "Otro cuarto a la izquierda: 100 y 150, 1650 ms",
+        "Para en la meta sin tocar el banco"
+      ],
+      "narracion": "Uno de los retos de la aplicación junta todo. Un banco corta el camino y hay que esquivarlo con curvas. Primero, un cuarto de círculo a la izquierda: izquierdo a 100 y derecho a 150, durante 1650 milisegundos. Después, medio círculo a la derecha: intercambias las velocidades, 3300 milisegundos. Y otro cuarto a la izquierda, para volver a la dirección de salida. Si te pierdes, dibuja el camino en papel antes de programar: cuarto, medio, cuarto. Y prueba cada trozo antes de añadir el siguiente."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: las ruedas de cuerda",
+      "pasos": [
+        "Dos personas, cada una con una punta de la cuerda",
+        "Las dos a la misma velocidad: recto",
+        "Una más despacio: ¿hacia qué lado giráis?",
+        "Una casi quieta: círculo muy pequeño",
+        "Siempre hacia quien va más lento"
+      ],
+      "narracion": "Ahora, sin pantalla. Con alguien de casa y una cuerda, un pañuelo largo o una bufanda. Coged cada uno una punta, uno al lado del otro: sois las dos ruedas del robot. Caminad a la misma velocidad sin soltar la cuerda y vais rectos. Ahora una persona camina más despacio. ¿Hacia qué lado giráis? Probad que una casi no se mueva: el círculo es muy pequeño. Siempre giráis hacia quien va más lento. Despacio, y sin tirar de la cuerda de golpe."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Con el Maqueen: el círculo alrededor del vaso",
+      "pasos": [
+        "Un vaso en el centro del espacio",
+        "Robot a unos 13 cm a la izquierda, mirando adelante",
+        "Izquierdo 150, derecho 100, 6600 ms",
+        "Marca el punto más lejano y mide el diámetro",
+        "Si no se cierra, ajusta de 100 en 100 ms"
+      ],
+      "narracion": "Con el robot de verdad, pon un vaso en el centro de un espacio libre. Coloca el Maqueen a unos 13 centímetros a la izquierda del vaso, mirando adelante. Ejecuta el círculo: izquierdo a 150, derecho a 100, durante 6600 milisegundos. Marca con cinta el punto más lejano de la vuelta y mide el diámetro. Compáralo con los 26 del simulador. Si la vuelta no se cierra, mide cuánto le falta y ajusta el tiempo de 100 en 100. Nadie dentro del círculo mientras gira."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": [
+        "Error",
+        "Qué hacer"
+      ],
+      "filas": [
+        [
+          "Más velocidad a la rueda del lado",
+          "La rueda del lado del giro, más lenta"
+        ],
+        [
+          "Espera más para un círculo mayor",
+          "El tamaño lo deciden las velocidades"
+        ],
+        [
+          "Rueda lenta por debajo de 30",
+          "Zona muerta: usa 60 o más"
+        ],
+        [
+          "El 8 sale como un círculo repetido",
+          "Intercambia las velocidades"
+        ]
+      ],
+      "narracion": "Errores típicos. Para girar a la izquierda, dar más velocidad al motor izquierdo: es al revés, el izquierdo más lento. Acuérdate de la cuerda. Esperar más para hacer un círculo más grande: así solo da más vueltas al mismo círculo. Usar menos de 30 en la rueda lenta: es la zona muerta, y el robot gira sobre esa rueda; elige 60 o más. Y en el 8, repetir el mismo lado. En el reto del banco, escribe izquierda o derecha al lado de cada trozo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido hoy",
+      "puntos": [
+        "Velocidades diferentes: curva hacia la rueda lenta",
+        "Velocidades más parecidas: círculo más grande",
+        "El tiempo decide el trozo: entero, medio o un cuarto",
+        "Reto: un camino de curvas para el pasacalles"
+      ],
+      "narracion": "Repasamos. Con las ruedas a velocidades diferentes, el robot hace una curva hacia la rueda más lenta. Cuanto más se parecen las velocidades, más grande es el círculo. Y el tiempo decide el trozo. En el reto de la fuente grande, opcional, necesitas un círculo de unos 40 centímetros: 200 y 150 durante 6600. Tu proyecto: un camino para el pasacalles con al menos una curva y 100 centímetros de recorrido. Enséñaselo a alguien y que prediga el dibujo antes de ejecutarlo."
+    }
+  ]
+}

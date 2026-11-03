@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presupuestos Claros · Apúntate</title>
+<style>
+  :root {
+    --acento: #0f766e;
+    --acento-oscuro: #115e59;
+    --suave: #ecfdf5;
+    --texto: #1f2937;
+    --gris: #6b7280;
+    --borde: #e5e7eb;
+    --fondo: #fafaf9;
+    --error: #b91c1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    background: var(--fondo);
+    line-height: 1.55;
+  }
+  .aviso-demo {
+    background: #fef3c7; color: #92400e; text-align: center; font-size: 14px; padding: 8px 16px;
+  }
+  header { max-width: 1000px; margin: 0 auto; padding: 18px 24px; }
+  .marca { font-weight: 700; font-size: 20px; color: var(--acento-oscuro); }
+  .marca span { color: var(--texto); font-weight: 500; }
+  main {
+    max-width: 1000px; margin: 0 auto; padding: 24px 24px 56px;
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: start;
+  }
+  .etiqueta {
+    display: inline-block; background: var(--suave); color: var(--acento-oscuro);
+    font-weight: 600; font-size: 14px; padding: 4px 12px; border-radius: 999px;
+  }
+  h1 { font-size: 42px; line-height: 1.12; margin: 14px 0; letter-spacing: -0.02em; }
+  .sub { font-size: 19px; color: #374151; margin: 0 0 22px; }
+  ul.ventajas { list-style: none; padding: 0; margin: 0 0 22px; }
+  ul.ventajas li { padding: 6px 0 6px 32px; position: relative; }
+  ul.ventajas li::before {
+    content: "✓"; position: absolute; left: 0; top: 6px; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--suave); color: var(--acento); font-weight: 800; font-size: 13px;
+    display: grid; place-items: center;
+  }
+  .previsto { color: var(--gris); font-size: 15px; }
+  .previsto b { color: var(--texto); }
+  .caja {
+    background: #fff; border: 1px solid var(--borde); border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07); padding: 28px;
+  }
+  .caja h2 { margin: 0 0 6px; font-size: 22px; }
+  .caja > p { margin: 0 0 18px; color: var(--gris); }
+  label { display: block; font-weight: 600; font-size: 15px; margin-bottom: 6px; }
+  input[type=email], select {
+    width: 100%; font: inherit; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px;
+    margin-bottom: 16px; background: #fff;
+  }
+  input[type=email]:focus, select:focus { outline: 3px solid rgba(15, 118, 110, 0.25); border-color: var(--acento); }
+  .casilla { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 14px; color: #374151; }
+  .casilla input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--acento); }
+  .casilla a { color: var(--acento-oscuro); }
+  button {
+    width: 100%; margin-top: 18px; font: inherit; font-weight: 700; font-size: 17px; color: #fff;
+    background: var(--acento); border: none; border-radius: 12px; padding: 14px; cursor: pointer;
+    box-shadow: 0 6px 18px rgba(15, 118, 110, 0.28);
+  }
+  button:hover { background: var(--acento-oscuro); }
+  .error { color: var(--error); font-size: 14px; min-height: 20px; margin: 10px 0 0; }
+  .gracias { display: none; text-align: center; padding: 18px 0; }
+  .gracias .ok {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--suave); color: var(--acento);
+    display: grid; place-items: center; font-size: 28px; font-weight: 800; margin: 0 auto 12px;
+  }
+  .gracias h2 { margin: 0 0 8px; }
+  .gracias p { color: #4b5563; margin: 0; }
+  .caja.hecho form { display: none; }
+  .caja.hecho .intro { display: none; }
+  .caja.hecho .gracias { display: block; }
+  footer {
+    max-width: 1000px; margin: 0 auto; padding: 24px; color: var(--gris); font-size: 14px;
+    border-top: 1px solid var(--borde);
+  }
+  footer a { color: var(--gris); }
+  @media (max-width: 800px) {
+    main { grid-template-columns: 1fr; gap: 28px; padding-top: 8px; }
+    h1 { font-size: 31px; }
+    .sub { font-size: 17px; }
+    .caja { padding: 22px; }
+  }
+</style>
+</head>
+<body>
+  <div class="aviso-demo">Página de ejemplo del curso: este formulario no envía ningún dato.</div>
+  <header><div class="marca">Hoja Clara <span>· plantillas</span></div></header>
+
+  <main>
+    <div>
+      <span class="etiqueta">Próximamente</span>
+      <h1>¿Pierdes una tarde cada vez que haces un presupuesto?</h1>
+      <p class="sub">Estoy preparando una plantilla para autónomos de reformas. Partidas, IVA y total en 10 minutos.</p>
+      <ul class="ventajas">
+        <li>Funciona en Excel, LibreOffice y Google Sheets</li>
+        <li>30 partidas de ejemplo para baños, cocinas y pintura</li>
+        <li>Con tu logo y tus datos, lista para enviar en PDF</li>
+      </ul>
+      <p class="previsto">Precio previsto: <b>19 €</b>, pago único. Quien se apunte ahora tendrá un descuento al salir.</p>
+    </div>
+
+    <div class="caja" id="caja">
+      <div class="intro">
+        <h2>Avísame cuando salga</h2>
+        <p>Solo te escribiremos para esto. Puedes darte de baja cuando quieras.</p>
+      </div>
+      <form id="formulario" novalidate>
+        <label for="correo">Tu correo</label>
+        <input type="email" id="correo" placeholder="nombre@ejemplo.com" autocomplete="email">
+
+        <label for="tiempo">¿Cuánto tardas ahora en hacer un presupuesto?</label>
+        <select id="tiempo">
+          <option value="">Elige una opción</option>
+          <option>Menos de 30 minutos</option>
+          <option>Entre 30 minutos y 1 hora</option>
+          <option>Más de 1 hora</option>
+        </select>
+
+        <label class="casilla">
+          <input type="checkbox" id="acepto">
+          <span>He leído la <a href="#">política de privacidad</a> y quiero recibir un correo cuando salga la plantilla.</span>
+        </label>
+
+        <button type="submit" id="apuntarme">Apuntarme a la lista</button>
+        <p class="error" id="error" role="alert"></p>
+      </form>
+      <div class="gracias" id="gracias">
+        <div class="ok">✓</div>
+        <h2>¡Gracias! Ya estás en la lista</h2>
+        <p>Te escribiremos un solo correo cuando la plantilla esté lista.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>Hoja Clara · negocio inventado para el curso · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a></footer>
+
+<script>
+  const formulario = document.getElementById('formulario');
+  const error = document.getElementById('error');
+
+  formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const correo = document.getElementById('correo').value.trim();
+    const acepto = document.getElementById('acepto').checked;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+      error.textContent = 'Escribe un correo válido.';
+      return;
+    }
+    if (!acepto) {
+      error.textContent = 'Marca la casilla para poder avisarte.';
+      return;
+    }
+    // Demo: no se envía nada. En tu web real, envía los datos a un sitio seguro.
+    error.textContent = '';
+    document.getElementById('caja').classList.add('hecho');
+  });
+</script>
+</body>
+</html>

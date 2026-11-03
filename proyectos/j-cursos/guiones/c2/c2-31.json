@@ -1,0 +1,120 @@
+{
+  "id": "c2-31",
+  "titulo": "Rescate en la cueva: empujar recto y trabajar por fases",
+  "descripcion": "Programa un Maqueen que busca una baliza, la empuja en línea recta hasta una base de color y avisa al terminar, usando el valor de gris del sensor de línea y una misión dividida en fases.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k7-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Rescate en la cueva",
+      "subtitulo": "Misión 3: llevar las balizas hasta la base",
+      "narracion": "Tercera misión: ¡alerta en la isla! Unas exploradoras han dejado sus balizas, unas bolas de señal, dentro de la cueva del faro. El túnel es demasiado estrecho para las personas, pero el Maqueen sí que cabe. La misión: encontrar cada baliza y empujarla hasta la base azul. Antes de seguir, piensa: el Maqueen no tiene pinza. ¿Cómo lo llevarías sin manos? ¿Cómo sabrá que ya está en la base? ¿Y si no sabe dónde está la baliza?"
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Sin pinza: de cara o de lado",
+      "mal": "La toca de lado o con una esquina: la baliza resbala y se escapa",
+      "bien": "La toca bien de cara y avanza en línea recta: la baliza va delante",
+      "narracion": "El Maqueen no tiene pinza. La baliza la empuja con la parte de delante. Si la toca bien de cara, la baliza va recta. Si la toca de lado o con una esquina, resbala y se va. Por eso, empujar funciona en línea recta. Esta es la primera regla del rescate: primero apunta y después empuja recto. El Maqueen tiene conectores para servomotores, y con cartón se podría hacer una pala. Hoy, con empujar bien ya basta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Cómo sabe que ha llegado?",
+      "puntos": [
+        "Valor de gris del sensor de línea: blanco, unos 90",
+        "Base de color: unos 360; negro: unos 900",
+        "Repite hasta que valor de gris M sea mayor que 200",
+        "«Línea M = 1» no sirve: la base de color no es negra"
+      ],
+      "narracion": "Para saber que ha llegado, usamos algo de la unidad 4: el valor de gris del sensor de línea, el valor analógico. En el blanco da unos 90. En la base de color, unos 360. En el negro, unos 900. Con «repite hasta que valor de gris M sea mayor que 200», el robot empuja hasta entrar en la base. ¿Y por qué no «línea M igual a 1»? Porque ese sensor solo distingue blanco y negro. Una base de color normalmente da 0."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-3:4",
+      "narracion": "Mira el programa: adelante, repite hasta que el valor de gris M sea mayor que 200, una espera corta de 300 milisegundos y para. Predice antes de ejecutar: cuando el robot se pare, ¿dónde estará su centro? ¿Dentro de la base o fuera? Piensa dónde están los sensores. Ahora, míralo. Los sensores están delante del robot. Ven el azul cuando el centro todavía está fuera, al lado de la base. Pero la baliza, que va delante, ya está dentro. La espera corta la mete un poco más."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-3:5",
+      "narracion": "Ahora el robot no sabe dónde está la baliza. Está en el medio de la cueva. Gira sobre sí mismo, despacio, hasta que los ultrasonidos ven algo a menos de 25 centímetros. Entonces la tiene de cara: adelante hasta la base, y avisa. Predice: ¿por qué 25 y no 60? Mira la demo. Desde el medio de la cueva, las paredes están a más de 30 centímetros. Con 25, solo ve la baliza. Con 60, atacaría la pared."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La misión por fases",
+      "pasos": [
+        "Buscar: girar hasta que los ultrasonidos ven la baliza",
+        "Empujar: adelante, bien de cara",
+        "Llegar: el sensor ve el color de la base",
+        "Dejar: para los motores",
+        "Avisar: luces verdes, icono y sonido"
+      ],
+      "narracion": "Una misión larga se hace por fases. Buscar, empujar, llegar, dejar y avisar. Cada fase empieza cuando termina la anterior. Si te saltas una, la misión falla. El bloque clave es «repite hasta que»: los motores ya giran y este bloque espera a que la fase termine. Y como la misión se hace una sola vez, va en «al iniciar», no en «para siempre». Si la pones en «para siempre», el robot vuelve a empezar la misión al terminar."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k7-3:7",
+      "narracion": "Último experimento. Este robot sigue la línea perfectamente, empujando una lata. Predice: ¿llegará con ella al final? Piénsalo antes de mirar. Mira la demo. En la primera curva, el robot gira, pero la lata sigue recta y se queda atrás. Sin pinza, un objeto redondo no gira con el robot. Es un error típico pensar que, si el robot gira, la baliza gira con él. La solución ya la conoces: primero apunta hacia la base y después empuja en línea recta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin pantalla: empujar sin pinza",
+      "puntos": [
+        "Una caja de zapatos de lado: el lado abierto, adelante",
+        "Empuja una pelota en línea recta hasta la base",
+        "Ahora, tocándola solo con una esquina",
+        "Ahora, con la base detrás de una curva",
+        "Inventa una manera que funcione siempre"
+      ],
+      "narracion": "Para esta actividad desconectada necesitas una caja de zapatos, una pelota pequeña y un pasillo. Marca una base en el suelo con una hoja. Pon la caja de lado, con el lado abierto mirando adelante: es la parte delantera del robot. Empuja la pelota en línea recta. Después, tócala solo con una esquina. ¿Hacia dónde se va? Por último, pon la base detrás de una curva e intenta girar mientras empujas. La caja abierta hace de pala, y algunos robots de rescate llevan una."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Los retos de rescate",
+      "puntos": [
+        "1. La primera baliza: delante, con la base al fondo",
+        "2. ¿Dónde está la base? Usa el valor de gris de M",
+        "3. Busca en la cueva: gira hasta verla, en cuatro pistas",
+        "Extra: rescate con aviso, luces verdes e icono «sí»",
+        "Crea: la gran operación, con el aviso que tú elijas"
+      ],
+      "narracion": "En la sesión de Numi Tech hay tres retos y un extra. En el primero, la baliza está justo delante y basta con el tiempo: adelante a 150 durante 5 segundos y para. En el segundo, la base cambia de distancia en cada pista, así que hace falta el sensor. En el tercero, la baliza puede estar en cualquier lado. Antes de programar, di las fases en voz alta. Una solución gira a velocidad 60 para buscar y empuja a 120. En el proyecto, el aviso lo eliges tú."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Calibra y rescata con el Maqueen",
+      "pasos": [
+        "Programa «mide»: apunta el número del blanco y de la base",
+        "Umbral en el medio: con 90 y 360, unos 225",
+        "Túnel de libros de unos 25 cm de ancho, base al fondo",
+        "Pelota a unos 15 cm delante del robot",
+        "¿Queda la pelota dentro de la base?"
+      ],
+      "narracion": "En el robot real, cada suelo y cada cartulina son diferentes. Por eso, primero se calibra. Pasa el programa «mide» con el botón MakeCode, o en MakeCode con la extensión maqueen. Descárgalo con el robot apagado y apunta el número de la pantalla en el blanco y sobre la base. El umbral va en el medio: con 90 y 360, unos 225. Después, montad un túnel de libros de unos 25 centímetros de ancho, con la base al fondo. Poned la pelota a unos 15 centímetros delante del robot. Encendedlo en el suelo y mirad si la pelota queda dentro."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Lo que pasa", "Qué probar"],
+      "filas": [
+        ["No se para en la base", "Valor de gris, no «línea M = 1»"],
+        ["Se para en cualquier mancha", "Umbral en el medio, no cerca de 90"],
+        ["En la cueva ataca la pared", "Busca con 25 cm, no con 60"],
+        ["Repite la misión al terminar", "Todo en «al iniciar»"],
+        ["La pelota real rueda y se escapa", "Velocidad 100 o pelota de papel"]
+      ],
+      "narracion": "Los errores típicos de hoy. Si usas «línea M igual a 1», el robot no se para en la base, porque no es negra. Si pones el umbral demasiado cerca del blanco, como 100, se para en cualquier mancha. Si buscas con 60, ataca la pared. Si todo va en «para siempre», repite la misión. Y si buscas con «si» dentro de «para siempre», avanza a trompicones: usa «repite hasta que». En el robot real, una pelota ligera rebota. Prueba a velocidad 100 o con papel arrugado."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué te llevas del rescate",
+      "puntos": [
+        "Sin pinza: empujar de cara y en línea recta",
+        "Valor de gris: blanco unos 90, color unos 360",
+        "Umbral en el medio, y siempre medido",
+        "Una misión larga se hace por fases"
+      ],
+      "narracion": "Resumen del rescate. Sin pinza, se empuja de cara y en línea recta. El valor de gris distingue el blanco, unos 90, de una zona de color, unos 360. El umbral va en el medio y, en el robot real, siempre se mide. Y una misión larga se hace por fases, una detrás de otra. Para hoy: prueba a empujar sin pinza con una caja y una naranja. Pregunta de salida: con blanco 90 y base 360, ¿qué umbral pondrías? En la próxima clase, la carrera contrarreloj."
+    }
+  ]
+}

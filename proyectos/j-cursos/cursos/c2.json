@@ -1,0 +1,369 @@
+{
+ "id": "c2",
+ "slug": "robotica-microbit-maqueen",
+ "color": "#E2574C",
+ "color2": "#2F6BFF",
+ "base": [
+  "robotica"
+ ],
+ "titulo": "Robótica con micro:bit y Maqueen para niños y profes",
+ "duracionObjetivoMin": 240,
+ "secciones": [
+  {
+   "t": "Empieza aquí",
+   "l": [
+    {
+     "t": "Bienvenida: un robot que se para solo antes del muro",
+     "src": [
+      "k1-1",
+      "k3-2"
+     ],
+     "nota": "Gancho con demo del simulador. Vista previa gratuita.",
+     "id": "c2-01"
+    },
+    {
+     "t": "Cómo seguir el curso: niños, familias y profes",
+     "src": [
+      "k1-1"
+     ],
+     "nota": "Simulador de Numi Tech en los vídeos; en casa: MakeCode gratis + robot. Ritmo: una sesión por semana, 45-60 min.",
+     "id": "c2-02"
+    },
+    {
+     "t": "Materiales: el kit exacto y cuánto cuesta",
+     "src": [
+      "k1-1",
+      "k1-2"
+     ],
+     "nota": "NUMI-TECH-KIT: Maqueen Lite V5 MBT0046 + micro:bit V2, 70-80 €, pilas AA alcalinas, qué no comprar.",
+     "id": "c2-03"
+    },
+    {
+     "t": "Del simulador al robot: MakeCode paso a paso",
+     "src": [
+      "k8-3"
+     ],
+     "nota": "Kit: Descargar con robot apagado, emparejar en Chrome/Edge, .hex, extensión maqueen, neopixel P15, iPad no.",
+     "id": "c2-04"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 1: Qué es un robot",
+   "l": [
+    {
+     "t": "Robots a nuestro alrededor",
+     "src": [
+      "k1-1"
+     ],
+     "nota": "",
+     "id": "c2-05"
+    },
+    {
+     "t": "Motores y velocidad",
+     "src": [
+      "k1-2"
+     ],
+     "nota": "",
+     "id": "c2-06"
+    },
+    {
+     "t": "Girar sobre sí mismo",
+     "src": [
+      "k1-3"
+     ],
+     "nota": "",
+     "id": "c2-07"
+    },
+    {
+     "t": "Proyecto: el paseo de la feria",
+     "src": [
+      "k1-4"
+     ],
+     "nota": "",
+     "id": "c2-08"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 2: Movimiento preciso",
+   "l": [
+    {
+     "t": "Velocidad × tiempo",
+     "src": [
+      "k2-1"
+     ],
+     "nota": "",
+     "id": "c2-09"
+    },
+    {
+     "t": "Polígonos",
+     "src": [
+      "k2-2"
+     ],
+     "nota": "",
+     "id": "c2-10"
+    },
+    {
+     "t": "Círculos y curvas",
+     "src": [
+      "k2-3"
+     ],
+     "nota": "",
+     "id": "c2-11"
+    },
+    {
+     "t": "Proyecto: el robot artista",
+     "src": [
+      "k2-4"
+     ],
+     "nota": "",
+     "id": "c2-12"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 3: El sensor de distancia",
+   "l": [
+    {
+     "t": "¿Cómo mide un robot?",
+     "src": [
+      "k3-1"
+     ],
+     "nota": "",
+     "id": "c2-13"
+    },
+    {
+     "t": "Para antes del muro",
+     "src": [
+      "k3-2"
+     ],
+     "nota": "",
+     "id": "c2-14"
+    },
+    {
+     "t": "Esquiva obstáculos",
+     "src": [
+      "k3-3"
+     ],
+     "nota": "",
+     "id": "c2-15"
+    },
+    {
+     "t": "Proyecto: aparcamiento automático",
+     "src": [
+      "k3-4"
+     ],
+     "nota": "",
+     "id": "c2-16"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 4: Seguir la línea",
+   "l": [
+    {
+     "t": "¿Blanco o negro?",
+     "src": [
+      "k4-1"
+     ],
+     "nota": "",
+     "id": "c2-17"
+    },
+    {
+     "t": "El borde de la línea",
+     "src": [
+      "k4-2"
+     ],
+     "nota": "",
+     "id": "c2-18"
+    },
+    {
+     "t": "Dos sensores y cruces",
+     "src": [
+      "k4-3"
+     ],
+     "nota": "",
+     "id": "c2-19"
+    },
+    {
+     "t": "Proyecto: el tren de mercancías",
+     "src": [
+      "k4-4"
+     ],
+     "nota": "",
+     "id": "c2-20"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 5: Luz, sonido y LED",
+   "l": [
+    {
+     "t": "El robot mariposa",
+     "src": [
+      "k5-1"
+     ],
+     "nota": "",
+     "id": "c2-21"
+    },
+    {
+     "t": "Alarmas",
+     "src": [
+      "k5-2"
+     ],
+     "nota": "",
+     "id": "c2-22"
+    },
+    {
+     "t": "La farola automática",
+     "src": [
+      "k5-3"
+     ],
+     "nota": "",
+     "id": "c2-23"
+    },
+    {
+     "t": "Proyecto: la casa inteligente",
+     "src": [
+      "k5-4"
+     ],
+     "nota": "",
+     "id": "c2-24"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 6: Control inteligente",
+   "l": [
+    {
+     "t": "Velocidad que cambia",
+     "src": [
+      "k6-1"
+     ],
+     "nota": "",
+     "id": "c2-25"
+    },
+    {
+     "t": "Cuanto más lejos, más deprisa",
+     "src": [
+      "k6-2"
+     ],
+     "nota": "",
+     "id": "c2-26"
+    },
+    {
+     "t": "Sigue al líder",
+     "src": [
+      "k6-3"
+     ],
+     "nota": "",
+     "id": "c2-27"
+    },
+    {
+     "t": "Proyecto: el coche autónomo",
+     "src": [
+      "k6-4"
+     ],
+     "nota": "",
+     "id": "c2-28"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 7: Misiones",
+   "l": [
+    {
+     "t": "El robot aspirador",
+     "src": [
+      "k7-1"
+     ],
+     "nota": "",
+     "id": "c2-29"
+    },
+    {
+     "t": "Sumo",
+     "src": [
+      "k7-2"
+     ],
+     "nota": "",
+     "id": "c2-30"
+    },
+    {
+     "t": "Rescate en la cueva",
+     "src": [
+      "k7-3"
+     ],
+     "nota": "",
+     "id": "c2-31"
+    },
+    {
+     "t": "Proyecto: la carrera contrarreloj",
+     "src": [
+      "k7-4"
+     ],
+     "nota": "",
+     "id": "c2-32"
+    }
+   ]
+  },
+  {
+   "t": "Unidad 8: Tu robot",
+   "l": [
+    {
+     "t": "Diseña la misión",
+     "src": [
+      "k8-1"
+     ],
+     "nota": "",
+     "id": "c2-33"
+    },
+    {
+     "t": "Programa y prueba",
+     "src": [
+      "k8-2"
+     ],
+     "nota": "",
+     "id": "c2-34"
+    },
+    {
+     "t": "Del simulador al robot de verdad",
+     "src": [
+      "k8-3"
+     ],
+     "nota": "",
+     "id": "c2-35"
+    },
+    {
+     "t": "Presentación y diploma",
+     "src": [
+      "k8-4"
+     ],
+     "nota": "",
+     "id": "c2-36"
+    }
+   ]
+  },
+  {
+   "t": "Para profes y siguientes pasos",
+   "l": [
+    {
+     "t": "Cómo dar este curso en una extraescolar o en el aula",
+     "src": [
+      "k1-1",
+      "k4-2",
+      "k8-4"
+     ],
+     "nota": "Plan de 60 min, grupos de 3-4, pista 130x90, rúbricas, seguridad.",
+     "id": "c2-37"
+    },
+    {
+     "t": "Clase extra: Numi Tech para tu centro y más recursos",
+     "src": [],
+     "nota": "Venta cruzada.",
+     "id": "c2-38"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "c2-08",
+  "titulo": "Proyecto: el paseo de la feria",
+  "descripcion": "Proyecto de la unidad 1: descompón una ruta en tramos y giros, planifícala en papel, prográmala trozo a trozo y calíbrala en el Maqueen de verdad sobre una pista en el suelo.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:k1-4"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto: el paseo de la feria",
+      "subtitulo": "Tres puestos y vuelta a la salida",
+      "narracion": "El sábado hay feria de robótica en la plaza, y el Maqueen hará de guía. Pasará a los visitantes por tres puestos, en orden, y los devolverá a la salida sin tocar nada. Es el proyecto de la unidad 1, y vas a necesitar todo lo que has aprendido: motores, velocidad, giros y calibración. Repaso rápido: motor izquierdo atrás y derecho adelante. ¿Hacia dónde gira? Hacia la izquierda, sin moverse del sitio, hacia el lado de la rueda que va atrás."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dos patrones para todo el paseo",
+      "puntos": [
+        "Tramo: motor los dos adelante, espera y para",
+        "Giro: motores en direcciones contrarias, espera y para",
+        "El paseo: tramo, giro, tramo, giro, tramo",
+        "Giro de 90° a velocidad 100: unos 600 ms o tu número"
+      ],
+      "narracion": "Todo el paseo se construye con dos patrones. Un tramo son tres bloques: motor los dos adelante, espera y para. Un giro son cuatro: los dos motores en direcciones contrarias, la espera y el para. Para un cuarto de vuelta a velocidad 100, unos 600 milisegundos, o el número que calibraste con tu robot. Y el paseo es una cadena: tramo, giro, tramo, giro, tramo. Un problema grande convertido en cinco pequeños. Eso se llama descomponer."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:k1-4:3",
+      "narracion": "Mira este programa. Tiene el tramo 1 y un giro a la izquierda. Antes de ejecutarlo, predice: ¿dónde terminará el robot y hacia dónde mirará? Ahora, mira. Avanza el primer tramo, gira a la izquierda y queda mirando hacia arriba. ¿Qué le falta para llegar al final? Otro tramo, con su espera. Cuando programas trozo a trozo, el error siempre está en el último trozo que has añadido. Por eso es más fácil encontrarlo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sin pantalla: el plan del paseo",
+      "pasos": [
+        "Dibuja la ruta en la pista impresa",
+        "Pártela en tramos y giros, y numéralos",
+        "Mide cada tramo: cada cuadro son 10 cm",
+        "Estima la espera de cada tramo",
+        "Para los giros, usa tu número calibrado"
+      ],
+      "narracion": "Antes de poner un solo bloque, se hace el plan en papel. En los recursos tienes la pista. Dibuja la ruta con lápiz, pártela en tramos y giros y mide cada tramo: cada cuadro son 10 centímetros. Para estimar la espera, divide los centímetros entre lo que avanza tu robot cada segundo. A velocidad 150, unos 15 y medio. Por ejemplo, 60 centímetros entre 15 y medio dan casi 4 segundos: unos 3900 milisegundos. Para los giros, tu número calibrado."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "En casa: el mapa del paseo",
+      "pasos": [
+        "Dibuja el plano de una habitación con tres paradas",
+        "Escribe la ruta en pasos y giros",
+        "Otra persona la sigue sin mirar el plano",
+        "Si se desvía, corrige solo el tramo que falla"
+      ],
+      "narracion": "Si estás en casa, prueba esta versión. Dibuja el plano de una habitación y marca tres paradas: la puerta, una silla, la ventana. Escribe el plan en tramos y giros: tramo 1, cuatro pasos; giro a la derecha; tramo 2, tres pasos. Otra persona hace de robot y sigue el plan exactamente, sin mirar el plano. Si se desvía, no borréis todo: buscad el tramo que falla y corregid solo ese. Los pasos de cada uno miden diferente: eso también es calibrar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los retos del paseo",
+      "columnas": ["Reto", "Una solución posible"],
+      "filas": [
+        ["Acaba el paseo de Pau", "3800 ms, giro de 600 y 2700 ms"],
+        ["La vuelta a las flores", "Empieza con 5200 ms y gira a la derecha"],
+        ["Paseo exprés, menos de 6 s", "Tramos a 255: 2450 y 1600 ms"]
+      ],
+      "narracion": "En la aplicación hay tres retos. En el primero, Pau ya tiene el tramo 1 a velocidad 150, con 3800 milisegundos. Tú añades el giro a la izquierda de 600 y un tramo de unos 2700. En la vuelta a las flores, rodeas el puesto con giros a la derecha. Y en el paseo exprés, opcional, todo en menos de 6 segundos. ¿Dónde se pierde el tiempo? Los giros ya son cortos: déjalos a 100 y acelera solo los tramos, a 255."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:k1-4:12",
+      "narracion": "Estos son los criterios de la prueba final, en el simulador y en el suelo. ¿Pasa por los tres puestos en orden? ¿Termina parado en la salida? ¿Toca algún puesto o la fuente? Y una norma de seguridad: cable fuera, robot en la línea de salida y el piloto preparado para pararlo. Si eres profe, alrededor de la pista solo está el grupo que prueba. El resto mira desde fuera de la cinta y aplaude el esfuerzo de todos, lleguen o no."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El paseo con el Maqueen de verdad",
+      "pasos": [
+        "Pista en el suelo de 140 por 90 cm",
+        "Cajas de zapatos para los puestos, bien pegadas",
+        "Abre el paseo con el botón MakeCode y descarga",
+        "Calibra primero los giros, después los tramos",
+        "Un solo número cada vez, del inicio al final"
+      ],
+      "narracion": "Ahora, a la pista de verdad. Constrúyela en el suelo a tamaño real, de 140 por 90 centímetros, con cinta de pintor para el borde y la salida. Las cajas de zapatos hacen de puestos, y una más grande, de fuente. Pégalas para que no se muevan. Abre el paseo con el botón MakeCode y descárgalo. El robot real se desviará un poco en cada tramo, y los errores pequeños se suman. Calibra primero los giros y después los tramos, del inicio hacia el final."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cuando el paseo falla",
+      "mal": "Lo borro todo y empiezo de nuevo, o cambio muchas esperas a la vez.",
+      "bien": "Ejecuto, miro dónde se desvía por primera vez y cambio solo ese número.",
+      "narracion": "La regla de oro del proyecto. Si el paseo falla, no lo borres todo ni cambies muchas esperas a la vez. Ejecuta, mira el primer sitio donde el robot se desvía y ajusta solo ese tramo o ese giro. Esto se llama depurar. Si el robot real gira un poco de más, acorta un poco la espera del giro y vuelve a probar. Un robot real siempre es un poco diferente del simulador, y por eso se calibra. No has hecho nada mal."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores típicos",
+      "columnas": ["Error", "Qué hacer"],
+      "filas": [
+        ["Pone bloques sin plan y se pierde", "Volver al papel: ¿en qué tramo está?"],
+        ["Copia el código y salen errores", "Añadir la extensión maqueen"],
+        ["Enciende con el cable puesto", "Cable fuera y robot en el suelo"],
+        ["Acelera también los giros", "Giros a 100; acelera solo los tramos"]
+      ],
+      "narracion": "Errores típicos del proyecto. Empezar a poner bloques sin plan y perderse a mitad del camino: vuelve al papel y pregunta en qué tramo estás. Copiar el código a mano en MakeCode y olvidar la extensión del Maqueen: con el botón MakeCode ya está puesta; si lo copias, primero Extensiones y maqueen. Encender el robot con el cable conectado o encima de una mesa sin borde. Y en el paseo exprés, acelerar también los giros: el robot gira demasiado."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Qué hemos aprendido en la unidad 1",
+      "puntos": [
+        "Un robot siente, piensa y actúa",
+        "Velocidad de 0 a 255, adelante y atrás, zona muerta",
+        "Giros sobre sí mismo y en arco; calibrar",
+        "Una ruta se descompone en tramos y giros"
+      ],
+      "narracion": "Has terminado tu primer proyecto de robótica. En esta unidad has aprendido que un robot siente, piensa y actúa. Que la velocidad va de 0 a 255, con zona muerta por debajo de 30. A girar sobre sí mismo y en arco, y a calibrar. Y a descomponer una ruta en tramos y giros. Para cerrar, responde en una frase: ¿qué has tenido que cambiar para que el paseo funcionara en el robot de verdad? En la unidad 2 calcularemos las esperas con precisión."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "c3-12",
+  "titulo": "Atender en inglés, francés o alemán sin saberlos",
+  "descripcion": "Entiendes y respondes mensajes de clientes en inglés, francés o alemán con la IA, comprobando cada traducción con una vuelta al castellano y cuidando el tono de cada idioma.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:mensajes-whatsapp-business"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Atender en inglés, francés o alemán",
+      "subtitulo": "Sin saberlos y sin meter la pata",
+      "narracion": "Terminamos la sección de atención al cliente con algo que hace pocos años era impensable para un negocio pequeño. Atender en idiomas que no hablas. Un turista que quiere reservar en tu bar, un paciente alemán que vive en la costa, un pedido de tu tienda online desde Francia. La IA traduce muy bien, mucho mejor que los traductores de hace unos años. Pero tiene sus trampas. En esta clase verás un método sencillo para responder con seguridad, comprobando lo que envías."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuándo te va a hacer falta",
+      "puntos": [
+        "Turistas que preguntan por WhatsApp o en una reseña",
+        "Residentes extranjeros que viven en tu zona",
+        "Pedidos de tu tienda online desde otros países",
+        "Carteles, cartas y avisos en varios idiomas"
+      ],
+      "narracion": "Piensa en cuándo te encuentras con otros idiomas. En zonas turísticas, los turistas preguntan por WhatsApp, por correo o te dejan reseñas en inglés. En muchas zonas de España viven residentes extranjeros que son clientes de todo el año, para un fisio, un electricista o una peluquería. Si vendes online, te llegarán pedidos de otros países. Y también están los carteles, la carta del bar o el aviso de vacaciones. Para todo esto sirve el mismo método."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El método en cinco pasos",
+      "pasos": [
+        "Pide que te traduzca y resuma el mensaje recibido",
+        "Escribe tu respuesta en castellano, con tus datos",
+        "Pide la traducción con el tono adecuado",
+        "Pide la vuelta al castellano para comprobar",
+        "Revisa cifras, fechas y horas, y envía"
+      ],
+      "narracion": "El método tiene cinco pasos. Primero, pega el mensaje que te ha llegado y pide que te lo traduzca y te diga qué pide el cliente. Segundo, escribe tu respuesta en castellano, con tus datos, como harías siempre. Tercero, pide la traducción indicando el canal y el tono. Cuarto, el paso que casi nadie hace: pide que vuelva a traducir el resultado al castellano. Así compruebas que dice lo que querías. Y quinto, revisa cifras, fechas y horas, y envía."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un grupo de turistas quiere reservar",
+      "usuario": "Tengo un bar en Tarragona. Me llega este WhatsApp: «Hi! We are a group of 8, can we book for lunch tomorrow at 2pm? Do you have vegetarian options?». Tradúcemelo y luego escribe la respuesta en inglés, cordial y breve, con esto: sí hay mesa para 8 a las 14:00; menú del día 15 euros; siempre hay un primero y un segundo vegetariano; necesito un nombre para la reserva.",
+      "ia": "Traducción: «¡Hola! Somos un grupo de 8, ¿podemos reservar para comer mañana a las 14:00? ¿Tenéis opciones vegetarianas?»\n\nRespuesta: Hi! Yes, we have a table for 8 tomorrow at 2pm. Our menu of the day is 15 euros, and there is always a vegetarian starter and main course. Could you give me a name for the booking? See you tomorrow!",
+      "narracion": "Aquí tienes los tres primeros pasos en una sola instrucción. El dueño de un bar en Tarragona recibe un mensaje en inglés. Pide la traducción y, a la vez, la respuesta con sus datos. Fíjate en que los datos los pone él: hay mesa, el precio del menú y que siempre hay platos vegetarianos. La IA solo traduce y da forma. Además ha convertido las dos de la tarde al formato que usan en inglés, lo que evita confusiones con la hora."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La vuelta al castellano: tu control de calidad",
+      "usuario": "Traduce tu respuesta en inglés otra vez al castellano, literal, para comprobar que dice exactamente lo que quiero.",
+      "ia": "«¡Hola! Sí, tenemos mesa para 8 mañana a las 14:00. Nuestro menú del día cuesta 15 euros, y siempre hay un primero y un segundo vegetariano. ¿Podrías darme un nombre para la reserva? ¡Hasta mañana!»",
+      "narracion": "Este es el paso que te da tranquilidad. Pides la vuelta al castellano, literal. Si lo que lees coincide con lo que querías decir, la traducción es buena. Si aparece algo raro, como una hora distinta o una promesa que no hiciste, lo corriges antes de enviar. Es un truco que usan los traductores profesionales para revisar textos importantes. Te cuesta diez segundos y te evita la mayoría de los malentendidos. Hazlo siempre que el mensaje lleve precios, fechas u horas."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Traducir a secas o traducir con contexto",
+      "mal": "Traduce esto al francés.",
+      "bien": "Traduce al francés para un cliente de mi tienda online, por correo, tratándole de vous y con tono amable.",
+      "narracion": "Como siempre, el contexto marca la diferencia. Si solo pides traduce esto al francés, la IA elegirá un tono al azar. Puede que demasiado informal para un cliente que no conoces, o demasiado rígido para un WhatsApp. Si le dices quién es el cliente, por qué canal le escribes, si le tratas de tú o de usted, y el tono que quieres, la traducción sonará natural. Es la misma fórmula de la clase cuatro, aplicada a los idiomas."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El tú y el usted en otros idiomas",
+      "columnas": [
+        "Idioma",
+        "Con clientes, en general"
+      ],
+      "filas": [
+        [
+          "Inglés",
+          "No hay tú ni usted: cuida la cortesía"
+        ],
+        [
+          "Francés",
+          "Vous, salvo que haya confianza"
+        ],
+        [
+          "Alemán",
+          "Sie, salvo que haya confianza"
+        ]
+      ],
+      "narracion": "Un detalle cultural que conviene saber. En castellano tuteamos a muchos clientes con naturalidad. En inglés no existe esa diferencia, así que la cortesía se nota en otras cosas, como pedir las cosas por favor. En francés y en alemán, con un cliente que no conoces, lo habitual es tratarle de usted. En francés se dice vous, y en alemán, Sie. Si no lo tienes claro, pregunta a la IA qué trato es el adecuado para tu tipo de cliente. Te lo explicará en una frase."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un paciente escribe en alemán",
+      "usuario": "Tengo un centro de fisioterapia en Alicante. Me llega este mensaje en alemán [mensaje sin datos personales]. Dime en castellano qué pide. Después traduce al alemán mi respuesta, tratando de Sie y en tono amable: la primera sesión cuesta 45 euros y dura 50 minutos; puedo darle cita el lunes a las 17:00 o el miércoles a las 11:00.",
+      "ia": "Qué pide: pregunta si hacéis fisioterapia para la espalda, el precio de una sesión y si hay cita la semana que viene.\n\nRespuesta: Guten Tag, vielen Dank für Ihre Nachricht. Die erste Sitzung kostet 45 Euro und dauert 50 Minuten. Ich kann Ihnen einen Termin am Montag um 17 Uhr oder am Mittwoch um 11 Uhr anbieten. Mit freundlichen Grüßen",
+      "narracion": "Otro ejemplo, ahora con un paciente que escribe en alemán a un centro de fisioterapia en Alicante. La fisio no habla alemán, pero entiende enseguida qué le piden y responde con precio y dos opciones de cita. Fíjate en dos cosas. No ha pegado el nombre ni el teléfono del paciente. Y en la respuesta no entra en detalles de salud por escrito, solo da precio y horarios. Antes de enviar, conviene pedir la vuelta al castellano para comprobar las horas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Prepara tus textos de siempre en otros idiomas",
+      "puntos": [
+        "Bienvenida y ausencia de WhatsApp en inglés",
+        "Respuestas rápidas: precios, horario, cómo llegar",
+        "Aviso de vacaciones y cartel de la puerta",
+        "Carta o lista de servicios, revisada por ti"
+      ],
+      "narracion": "Si recibes mensajes en otros idiomas a menudo, no traduzcas cada vez. Prepara tus textos de siempre. Tu mensaje de bienvenida y de ausencia en inglés. Las respuestas rápidas más usadas, como precios, horario y cómo llegar. El aviso de vacaciones y el cartel de la puerta. Y la carta o la lista de servicios. Guárdalos en WhatsApp Business con atajos fáciles de recordar, uno por idioma. La plantilla de esta clase incluye ejemplos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dónde no basta con la IA",
+      "puntos": [
+        "Contratos, condiciones legales o garantías",
+        "Información de salud que el cliente deba entender bien",
+        "Alérgenos de la carta: revísalos tú siempre",
+        "Si hay mucho en juego, un traductor profesional"
+      ],
+      "narracion": "Y los límites. Para contratos, condiciones legales o garantías por escrito, la traducción automática no basta. Si un error puede costarte dinero o un problema, busca un traductor profesional. Lo mismo con información de salud que el paciente tenga que entender bien. En un bar, cuidado especial con los alérgenos de la carta traducida: revísalos tú, plato por plato, porque un error ahí es grave. Para el día a día, la IA te sobra. Para lo importante, un profesional."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Traduce y resume lo que te llega",
+        "Responde en castellano y pide la traducción con tono",
+        "Vuelta al castellano para comprobar cifras y horas",
+        "Tarea: traduce tus 5 mensajes más usados al inglés"
+      ],
+      "narracion": "Repasamos. Cuando te llegue un mensaje en otro idioma, pide que te lo traduzca y te diga qué pide. Escribe tu respuesta en castellano, pide la traducción con el canal y el tono, y haz siempre la vuelta al castellano para comprobar cifras y horas. Para contratos, salud o alérgenos, revisión profesional. Tu tarea de hoy, en 10 minutos. Traduce al inglés tus cinco mensajes más usados y guárdalos. Con esto terminas la sección. Haz el cuestionario y nos vemos en Marketing sin agencia."
+    }
+  ]
+}

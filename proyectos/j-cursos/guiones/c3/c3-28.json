@@ -1,0 +1,129 @@
+{
+  "id": "c3-28",
+  "titulo": "Agenda, reservas y recordatorios",
+  "descripcion": "Prepara con IA los mensajes de confirmación, recordatorio y cancelación de citas, guárdalos en WhatsApp Business y organiza tu semana en cinco minutos al día.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:mensajes-agenda"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Agenda, reservas y recordatorios",
+      "subtitulo": "Menos citas perdidas y menos mensajes de ida y vuelta",
+      "narracion": "Si trabajas con citas, conoces el problema. Mensajes de ida y vuelta para cuadrar una hora, clientes que se olvidan y huecos vacíos en la agenda. En esta clase vamos a preparar un juego completo de mensajes para cada momento de la cita. Confirmación, recordatorio, cambio y cancelación. La IA los redacta una vez, tú los revisas y los guardas como respuestas rápidas. Después veremos cómo organizar la semana con su ayuda. No hace falta ningún programa nuevo. Con WhatsApp Business, que es gratis, y tu calendario de siempre ya puedes empezar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Un mensaje para cada momento",
+      "columnas": [
+        "Momento",
+        "Mensaje",
+        "Dónde lo guardas"
+      ],
+      "filas": [
+        [
+          "Al reservar",
+          "Confirmación con día y hora",
+          "Respuesta rápida"
+        ],
+        [
+          "El día antes",
+          "Recordatorio con opción de cambio",
+          "Respuesta rápida"
+        ],
+        [
+          "Si cancela",
+          "Mensaje amable y nueva fecha",
+          "Respuesta rápida"
+        ],
+        [
+          "Fuera de horario",
+          "Aviso de cuándo contestas",
+          "Mensaje de ausencia"
+        ],
+        [
+          "Después del servicio",
+          "Gracias y petición de reseña",
+          "Respuesta rápida"
+        ]
+      ],
+      "narracion": "Este es el mapa. Al reservar, un mensaje de confirmación con el día y la hora. El día antes, un recordatorio que permita cambiar la cita si hace falta. Si alguien cancela, un mensaje amable que proponga otra fecha. Fuera de tu horario, el mensaje de ausencia de WhatsApp Business. Y después del servicio, un gracias con la petición de reseña, que ya trabajaste en la sección de atención al cliente. Cinco mensajes. Los preparas hoy y te sirven durante meses."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: el juego de mensajes de tu agenda",
+      "usuario": "Tengo un centro de fisioterapia. Redacta cuatro mensajes cortos de WhatsApp para mis citas: confirmación al reservar, recordatorio el día antes, respuesta cuando alguien cancela y mensaje de ausencia fuera de horario. Usa los huecos [NOMBRE], [DÍA] y [HORA]. Tono cercano y profesional, máximo tres líneas cada uno, sin emojis.",
+      "ia": "Confirmación: Hola, [NOMBRE]. Tu cita queda reservada el [DÍA] a las [HORA]. Si necesitas cambiarla, avísanos con tiempo.\nRecordatorio: Hola, [NOMBRE]. Te recordamos tu cita de mañana a las [HORA]. Responde SÍ para confirmar o CAMBIAR si te viene mal.\nCancelación: Sin problema, [NOMBRE]. ¿Te buscamos otro hueco esta semana?\nAusencia: Ahora estamos con pacientes. Te contestamos en cuanto podamos, dentro de nuestro horario.",
+      "narracion": "Esta es la instrucción principal. Cambia el centro de fisioterapia por tu negocio. Fíjate en los huecos entre corchetes. La IA redacta las plantillas y tú rellenas el nombre, el día y la hora al enviarlas. Así no metes datos de pacientes en la IA, algo especialmente importante en un centro de salud o de estética. Revisa que el tono suene a ti. El recordatorio pide responder sí o cambiar. Esa pequeña pregunta hace que mucha gente conteste y te deja tiempo para llenar el hueco si alguien no puede."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Guárdalos en WhatsApp Business",
+      "pasos": [
+        "Abre WhatsApp Business y entra en Herramientas para la empresa",
+        "Crea una respuesta rápida por cada mensaje",
+        "Ponle un atajo corto, como barra recordatorio",
+        "Activa el mensaje de ausencia con tu horario",
+        "Prueba cada respuesta enviándotela a ti mismo"
+      ],
+      "narracion": "Ahora llévalos a WhatsApp Business. En las herramientas para la empresa encontrarás las respuestas rápidas. Crea una por cada mensaje y ponle un atajo corto, por ejemplo barra recordatorio. Cuando escribas ese atajo en un chat, aparece el mensaje entero y solo tienes que completar los huecos. Activa también el mensaje de ausencia con tu horario. Y antes de usarlos con clientes, pruébalos. Envíatelos a ti o a alguien de confianza y mira cómo se ven en la pantalla del móvil."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Recordatorios: a mano o con tu programa de reservas",
+      "mal": "Acordarte cada noche de mirar la agenda y escribir uno a uno, cuando ya estás cansado.",
+      "bien": "Cinco minutos fijos cada tarde con la respuesta rápida, o recordatorios automáticos si tu programa los tiene.",
+      "narracion": "Hay dos formas de mandar los recordatorios. Si usas un programa de reservas, mira si ya envía recordatorios automáticos. Muchos lo hacen. Entonces solo tienes que pegar ahí el texto que te ha preparado la IA. Si llevas la agenda en el calendario del móvil o en papel, la clave es la rutina. Cinco minutos fijos cada tarde, a la misma hora, con la respuesta rápida. Lo que no funciona es acordarte cuando ya estás agotado. En la próxima clase verás cómo automatizar algunos de estos pasos sin programar."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: tu política de cancelación, sin sonar borde",
+      "usuario": "Quiero avisar a mis clientes de que las citas se cancelan con al menos 24 horas de antelación, porque las ausencias me hacen perder dinero. Redacta un texto breve y amable para el mensaje de confirmación y otro para colgar en el local. Que se entienda el motivo sin sonar a regaño.",
+      "ia": "Para el mensaje: Si no puedes venir, avísanos con 24 horas de antelación, así podemos dar tu hueco a otra persona. ¡Gracias!\nPara el local: Cada hueco que se queda vacío es una persona que no ha podido venir. Si no puedes acudir a tu cita, avísanos con un día de antelación. Gracias por ayudarnos a cuidar la agenda de todos.",
+      "narracion": "Las ausencias sin avisar cuestan dinero, y a mucha gente le cuesta decirlo sin sonar borde. Esta instrucción le pide a la IA dos textos con el mismo mensaje. Uno corto para el mensaje de confirmación y otro para colgar en el local. Fíjate en la última frase de la instrucción. Que se entienda el motivo sin sonar a regaño. Explicar el porqué funciona mejor que una prohibición. Si quieres cobrar algo por las ausencias, eso ya es una decisión tuya, y conviene que la comentes con tu gestoría."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción: ordenar tu semana de visitas",
+      "usuario": "Soy electricista en Zaragoza. Esta semana tengo estas visitas con su duración aproximada y el barrio: [lista]. Trabajo de 8 a 15 y quiero dejar libre el viernes por la tarde. Propón un orden por días agrupando barrios cercanos. Avísame si algo no cabe.",
+      "ia": "Lunes: Delicias, dos visitas cortas, y Universidad, una visita de dos horas.\nMartes: Actur, instalación de cuatro horas.\nMiércoles: San José y Torrero, cerca entre sí.\nJueves: Casco Histórico.\nViernes: libre por la tarde. Ojo: la visita de Valdespartera no cabe esta semana si mantienes el horario.",
+      "narracion": "La IA también te ayuda a ordenar la semana. Si vas a domicilio, como un electricista o una fontanera, pásale la lista de visitas con su duración y el barrio, sin nombres de clientes. Dile tu horario y lo que quieres dejar libre. La IA propone un orden agrupando zonas cercanas y te avisa de lo que no cabe. Ojo, no conoce el tráfico de hoy y puede equivocarse con las distancias. Revisa los trayectos en Google Maps y ajusta. La decisión final, como siempre, es tuya."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Errores típicos con los recordatorios",
+      "puntos": [
+        "Enviar la plantilla con el hueco [NOMBRE] sin rellenar",
+        "Equivocarte de día al copiar la hora",
+        "Mandar recordatorios a horas intempestivas",
+        "Prometer que contestas al momento y no hacerlo"
+      ],
+      "narracion": "Antes de la tarea, cuatro errores que se repiten mucho. El primero, enviar la plantilla con el hueco del nombre sin rellenar. Queda fatal y delata que es un mensaje en serie. El segundo, equivocarte de día al copiar la hora. Revisa siempre el día y la hora con la agenda delante. El tercero, mandar recordatorios a las once de la noche. Y el cuarto, prometer en el mensaje de ausencia que contestas al momento cuando no es verdad. Mejor prometer poco y cumplir."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "pasos": [
+        "Pide tu juego de mensajes con la instrucción de esta clase",
+        "Revisa el tono y adapta cada mensaje a tu negocio",
+        "Guarda cada uno como respuesta rápida",
+        "Activa el mensaje de ausencia con tu horario",
+        "Manda mañana tu primer recordatorio con la plantilla"
+      ],
+      "narracion": "Tu tarea de hoy son diez minutos. Pide tu juego de mensajes cambiando el negocio del ejemplo por el tuyo. Revisa el tono y adapta lo que no te suene natural. Guarda cada mensaje como respuesta rápida en WhatsApp Business y activa el mensaje de ausencia. Mañana, manda tu primer recordatorio con la plantilla. En los recursos tienes todos los mensajes de esta clase en un documento, listos para copiar y adaptar. Y apunta cuántas citas se te pierden en el próximo mes para comparar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Resumen",
+      "puntos": [
+        "Un mensaje para cada momento de la cita",
+        "Plantillas con huecos, sin datos de clientes en la IA",
+        "Respuestas rápidas y mensaje de ausencia en WhatsApp Business",
+        "Cancelaciones: explica el porqué, sin regañar",
+        "Semana de visitas: la IA propone, tú revisas en el mapa"
+      ],
+      "narracion": "Repasamos. Prepara un mensaje para cada momento de la cita. Usa plantillas con huecos para no meter datos de clientes en la IA. Guárdalas como respuestas rápidas en WhatsApp Business y activa el mensaje de ausencia. Para las cancelaciones, explica el porqué sin regañar. Y si vas a domicilio, deja que la IA te proponga el orden de la semana, pero revísalo en el mapa. En la próxima clase damos el salto a las automatizaciones sin programar."
+    }
+  ]
+}

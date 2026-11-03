@@ -1,0 +1,104 @@
+{
+  "id": "c1-16",
+  "titulo": "Si hay una pared… las condiciones",
+  "descripcion": "Presentas sensores y condiciones en casa: el robot con sensor entre cojines, el «si» dentro del bucle, el «si… si no…» y diagramas de decisión para la nevera.",
+  "vistaPrevia": false,
+  "recursos": ["imprimible:r4-1", "imprimible:r4-3"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Si hay una pared… las condiciones",
+      "subtitulo": "Semana 3 · Actividad 2",
+      "narracion": "Seguimos en la semana 3 del plan, la de eventos, condiciones, funciones y variables. En la clase anterior, el programa reaccionaba a un botón. Hoy damos un salto importante: por primera vez, el programa toma decisiones. La historia de Numi lo explica bien. Por la noche, el viento ha movido las rocas de la isla y los programas de ayer ya no sirven. Bit chocaría. Necesita ver el mundo y decidir qué hace."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "¿Qué es un sensor?",
+      "puntos": [
+        "Nota algo del mundo y se lo dice a la máquina",
+        "Los ojos y los oídos son sensores",
+        "En casa: la luz de la escalera, el grifo automático",
+        "El de Bit mira solo la casilla de delante"
+      ],
+      "narracion": "Empieza por los sensores de cada día. Un sensor nota algo del mundo y se lo dice a la máquina. Los ojos y los oídos son sensores. La puerta del supermercado se abre cuando nota que llegas. Proponle una caza de sensores por casa y por la calle: luces que se encienden solas, grifos, puertas. El sensor de Bit es muy sencillo. Mira solo la casilla que tiene justo delante y dice si hay un obstáculo o si el camino está libre."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si hace frío, me pongo la chaqueta.",
+      "narracion": "Con el sensor llega el bloque Si. Hace una pregunta, que se llama condición, y solo tiene dos respuestas: sí o no. Si la respuesta es sí, Bit hace los bloques de dentro. Si es no, se los salta y sigue con el de debajo. No se para. Es lo mismo que pensamos cada día: si hace frío, me pongo la chaqueta. Pide a tu hijo o a tu hija tres frases así sobre su día."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El robot y su sensor, sin pantalla",
+      "pasos": [
+        "Poned unos cojines en el suelo: son los obstáculos",
+        "Programa: repite 10 veces, si hay obstáculo, gira a la derecha; un paso",
+        "Antes de cada paso, el sensor dice «¡Obstáculo!» o «¡Libre!»",
+        "Moved los cojines y probad el mismo programa",
+        "Cambiad los papeles"
+      ],
+      "narracion": "La actividad sin pantalla de hoy es el robot y su sensor. Poned unos cojines en el suelo. Una persona hace de robot y la otra, de sensor. El robot sigue siempre el mismo programa. Antes de cada paso, el sensor mira el sitio de delante y dice obstáculo o libre. Después, moved los cojines y probad otra vez sin cambiar el programa. Ahí está la gracia. Caminad despacio y con pasos cortos, para poder parar a tiempo."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r4-1:9",
+      "narracion": "En la app se predice igual que siempre. El programa dice: repite 4 veces, si hay un obstáculo delante, gira a la derecha; después, Adelante. Pide que diga dónde terminará Bit, en la A, en la B o en la C. Mejor aún, que diga en voz alta qué responde el sensor en cada paso. Ahora mira. Cuando Bit tiene la roca delante, el sensor dice obstáculo y gira a la derecha, hacia abajo. Después avanza hasta la B."
+    },
+    {
+      "tipo": "demo",
+      "fuente": "presenta:r4-1:13",
+      "narracion": "Esta diapositiva muestra el error más importante de la sesión. Aquí el Si va fuera del bucle, al principio, y después hay un repite 5 veces, Adelante. Pregunta: ¿llegará Bit a la bandera? Ahora mira. Bit mira el sensor una sola vez, al principio, y luego avanza sin mirar. Choca. Para que mire antes de cada paso, el Si tiene que ir dentro del Repite. Así, un mismo programa sirve para islas diferentes."
+    },
+    {
+      "tipo": "captura",
+      "fuente": "presenta:r4-3:4",
+      "narracion": "El siguiente paso es el bloque Si, si no. Tiene dos ramas: si la condición es cierta, Bit hace la primera; si no, la segunda. La diapositiva lo explica con un ejemplo de casa. Si llueve, coges el paraguas; si no, la gorra. Siempre se hace una de las dos, nunca las dos. Pregunta: hoy hace sol, ¿qué cojo? La gorra. En la app, dentro de un bucle, Bit decide en cada vuelta: si el camino está libre, adelante; si no, gira."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Mi diagrama de decisión, sin pantalla",
+      "pasos": [
+        "Pensad una decisión de cada día: «¿Hace frío?»",
+        "Dibujad un rombo con la pregunta",
+        "Dos flechas: una dice sí y la otra, si no",
+        "Al final de cada flecha, qué hacéis",
+        "Colgadlo en la nevera: si es sábado…, si no…"
+      ],
+      "narracion": "Para afianzarlo, haced juntos un diagrama de decisión. Pensad una pregunta de cada día, como hace frío. Dibujad un rombo con la pregunta y dos flechas, una para el sí y otra para el si no. Al final de cada flecha, lo que hacéis: chaqueta o camiseta. Después probad uno con una pregunta dentro de otra. Si os gusta, colgad en la nevera un diagrama de la familia. Es una forma muy concreta de pensar un programa antes de hacerlo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Errores con condiciones y qué preguntar",
+      "columnas": ["Lo que pasa", "Qué le preguntas"],
+      "filas": [
+        ["Pone el «Si» fuera del «Repite»", "¿Cuántas veces ha mirado el sensor?"],
+        ["Cree que el sensor ve todo el camino", "Brazos estirados: ¿qué ves ahora?"],
+        ["Cree que hace las dos ramas", "¿Paraguas y gorra a la vez?"],
+        ["Confunde su izquierda con la de Bit", "Ponte como Bit: ¿y tu izquierda?"]
+      ],
+      "narracion": "Estos son los errores que recogen las guías, con la pregunta que ayuda. Si cree que el sensor ve todo el camino, que haga de robot con los brazos estirados, como una linterna corta: solo llegan a la casilla de delante. Las condiciones de la app también miran a los lados de Bit, no de la pantalla. Si Bit mira hacia ti, su izquierda es tu derecha. Y si el Si va fuera del bucle, que cuente cuántas veces se ilumina en el paso a paso."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En Scratch y en Numi Tech",
+      "puntos": [
+        "Scratch: «si… entonces» y «si… entonces, si no», en Control",
+        "Pregunta: «¿tocando borde?», en Sensores",
+        "Por siempre: mover 10 pasos; si toca borde, girar 180 grados",
+        "Numi Tech: sesiones «Si hay una pared…» y «Si… y si no…»"
+      ],
+      "narracion": "En Scratch están los mismos bloques en el grupo Control: si, entonces, y si, entonces, si no. Las preguntas están en Sensores, por ejemplo tocando borde. Probad esto: por siempre, mover 10 pasos y, si toca el borde, girar 180 grados. El personaje irá y vendrá. Fíjate en que el si va dentro del bucle, igual que con Bit. En Numi Tech, las sesiones son Si hay una pared y Si y si no. En los recursos tienes las tarjetas del sensor y las del diagrama."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Para hoy",
+      "puntos": [
+        "Un sensor nota cómo es el mundo",
+        "El «Si» hace lo de dentro solo si la condición es cierta",
+        "El «Si», dentro del «Repite», para mirar en cada paso",
+        "«Si… si no…»: dos ramas, se hace solo una"
+      ],
+      "narracion": "Resumiendo. Un sensor nota cómo es el mundo. El bloque Si hace lo de dentro solo cuando la condición es cierta. Dentro del bucle, Bit mira antes de cada paso, y el mismo programa sirve para muchas islas. Con Si, si no, hay dos ramas y se hace solo una. Tu tarea: el robot con sensor entre cojines y, otro día, un diagrama para la nevera. En la próxima clase, Bit aprenderá órdenes nuevas: las funciones."
+    }
+  ]
+}

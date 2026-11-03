@@ -1,0 +1,58 @@
+{
+  "seccion": 6,
+  "titulo": "Cuestionario: RGPD y Ley de IA",
+  "preguntas": [
+    {
+      "pregunta": "Usas una cuenta personal de ChatGPT, sin contrato de encargado del tratamiento. Tienes que contestar la queja de una clienta. ¿Qué haces con sus datos?",
+      "respuestas": [
+        "Pego el mensaje tal cual, con nombre y teléfono, para que la respuesta sea personal",
+        "Lo anonimizo: «clienta A», sin teléfono ni datos de salud, y relleno yo los huecos al enviar",
+        "Pego solo el DNI para que la IA no se confunda de clienta",
+        "Le pido a la IA que borre ella los datos personales después de leerlos"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin contrato de encargado no metas datos personales de clientes. Anonimiza («clienta A», sin contacto ni salud), pide una respuesta con huecos y rellénalos tú en tu herramienta habitual. Pedir a la IA que los borre no sirve: ya los has enviado."
+    },
+    {
+      "pregunta": "¿Dónde se desactiva en ChatGPT el uso de tus conversaciones para entrenar los modelos?",
+      "respuestas": [
+        "En Configuración, apartado Controles de datos",
+        "No se puede desactivar en ningún plan",
+        "Borrando el historial cada noche"
+      ],
+      "correcta": 0,
+      "explicacion": "En ChatGPT está en Configuración, Controles de datos. En Gemini, Copilot, Claude o Le Chat hay una opción equivalente. Como los menús cambian, compruébalo en la ayuda oficial de cada herramienta."
+    },
+    {
+      "pregunta": "Tienes un centro de estética y una clienta te cuenta que es alérgica a un producto. ¿Qué es ese dato y qué haces con él?",
+      "respuestas": [
+        "Un dato normal: lo puedo pegar en la IA para que tenga en cuenta la alergia",
+        "Un dato de marketing: lo uso para recomendarle productos",
+        "Un dato de salud, de categoría especial: lo apunto en su ficha del centro y nunca va a la IA"
+      ],
+      "correcta": 2,
+      "explicacion": "Los datos de salud (alergias, tratamientos, lesiones) son categoría especial. Quedan en la ficha del negocio. Si necesitas ayuda de la IA, escribe algo genérico como «una clienta con piel sensible»."
+    },
+    {
+      "pregunta": "Desde el 2 de agosto de 2026 se aplican las obligaciones de transparencia de la Ley Europea de IA. ¿Qué implica si pones un chatbot en tu web?",
+      "respuestas": [
+        "Nada, porque el paquete Ómnibus digital las aplazó",
+        "Necesito una auditoría de alto riesgo antes de usarlo",
+        "Que solo lo pueden usar empresas con más de 50 empleados",
+        "Que debo avisar al cliente de que está hablando con una IA"
+      ],
+      "correcta": 3,
+      "explicacion": "El artículo 50 obliga a avisar de que el cliente habla con una IA y a indicar los contenidos que imitan personas reales. El Ómnibus digital de 2026 solo aplazó las obligaciones de alto riesgo, no la transparencia ni la alfabetización."
+    },
+    {
+      "pregunta": "Eres autónomo y usas ChatGPT para escribir correos y publicaciones. Según la Ley Europea de IA, ¿qué te toca?",
+      "respuestas": [
+        "Tener formación suficiente en IA, exigida desde el 2 de febrero de 2025",
+        "Registrarte como sistema de alto riesgo",
+        "Nada en absoluto: la ley no se aplica a autónomos"
+      ],
+      "correcta": 0,
+      "explicacion": "La alfabetización en IA (artículo 4) se aplica desde el 2 de febrero de 2025: quien usa IA en la empresa debe tener formación suficiente. Escribir con ChatGPT no es un sistema de alto riesgo."
+    }
+  ]
+}
