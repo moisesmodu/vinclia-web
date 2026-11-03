@@ -1,0 +1,124 @@
+{
+  "id": "c5-21",
+  "titulo": "Cálculos, IVA y casos raros",
+  "descripcion": "Añades a la calculadora el IVA, el descuento, el redondeo a céntimos y los avisos de datos erróneos, y aprendes a comprobar las cuentas de la IA con casos hechos a mano, incluido el famoso 0,1 + 0,2.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:casos-de-prueba", "demo:presupuestos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cálculos, IVA y casos raros",
+      "subtitulo": "Las cuentas de la IA, comprobadas a mano",
+      "narracion": "En la clase anterior hiciste la versión 1: líneas, importes y total. Hoy toca la parte delicada, la del dinero. Vamos a añadir el IVA, un descuento, el redondeo a céntimos y avisos cuando un dato está mal. Y vas a aprender la lección más importante de esta sección: las cuentas que escribe la IA hay que comprobarlas con ejemplos hechos a mano. Verás por qué con un caso que sorprende a todo el mundo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué añade la versión 2",
+      "puntos": [
+        "IVA del 21 por ciento y opción del 10",
+        "Descuento en porcentaje sobre el subtotal",
+        "Redondeo a céntimos en cada paso",
+        "Avisos si un número es negativo o falta"
+      ],
+      "narracion": "La versión 2 añade cuatro cosas. El IVA, con el 21 por ciento general y la opción del 10. Un descuento en porcentaje, que se aplica sobre el subtotal. El redondeo a céntimos, porque en un presupuesto no puede aparecer un tercio de céntimo. Y avisos: si alguien escribe una cantidad negativa o deja un precio vacío, la línea se marca en rojo y no cuenta en el total. Antes, una letra contaba como cero sin decir nada."
+    },
+    {
+      "tipo": "frase",
+      "texto": "El 10 por ciento solo vale para algunas reformas de vivienda que cumplen requisitos. Tu gestoría te dirá cuál aplica.",
+      "narracion": "Un apunte sobre el IVA, porque aquí la IA no decide. El tipo general es el 21 por ciento. Algunas obras de reforma en viviendas particulares pueden llevar el 10, pero solo si cumplen unos requisitos, por ejemplo sobre quién encarga la obra y cuánto pesan los materiales en el precio. No te lo vamos a resumir aquí, ni se lo preguntes a la IA como si fuera tu asesor. Tu gestoría te dirá cuál aplica en cada caso. La app solo te deja elegir."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La instrucción de la versión 2",
+      "usuario": "Te pego mi index.html actual. Paso 2: añade un selector de IVA (21 por ciento general y 10 por ciento para reformas de vivienda con requisitos), un descuento en porcentaje y un resumen con subtotal, descuento, base imponible, IVA y total. Haz todas las cuentas en céntimos, con números enteros. Redondea al céntimo más cercano; si queda justo en la mitad, hacia arriba. Si una cantidad o un precio es negativo o está vacío, marca el campo en rojo con un aviso y no cuentes esa línea. No cambies el diseño.",
+      "ia": "Hecho. He añadido el bloque «IVA y descuento» y un resumen a la derecha. Ahora las cuentas se hacen en céntimos y solo se dividen entre 100 para mostrarlas. Los campos con errores se marcan en rojo con un mensaje. También acepto «1.234,5» con punto de miles.",
+      "narracion": "Fíjate en una frase de la instrucción: haz todas las cuentas en céntimos, con números enteros. No es un capricho. En la siguiente escena verás por qué. También le decimos cómo redondear, en vez de dejar que elija. Y le pedimos que no cambie el diseño, para que el cambio sea fácil de revisar. La IA contesta con el archivo completo y un resumen. Ojo: el resumen dice lo que la IA cree que ha hecho. Comprobarlo es cosa tuya."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "En la consola del navegador",
+      "lineas": [
+        "$ 0.1 + 0.2",
+        "0.30000000000000004",
+        "$ Math.round(21.5 * 0.21 * 100) / 100",
+        "4.51",
+        "$ Math.round(2150 * 21 / 100) / 100",
+        "4.52"
+      ],
+      "narracion": "Esto es la consola del navegador, que abres con la tecla F12. Escribimos cero coma uno más cero coma dos. Y el ordenador contesta cero coma treinta, seguido de muchos ceros y un cuatro. No es un error de la IA. Los ordenadores guardan los decimales de forma aproximada. Ahora calculamos el IVA del 21 por ciento de 21 euros con 50, redondeado a céntimos. Sale 4 euros con 51. Pero a mano sale 4 con 515, que se redondea a 4 con 52. Con céntimos enteros, sale bien."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Las cuentas, en céntimos",
+      "archivo": "presupuestos/v2/index.html",
+      "lenguaje": "js",
+      "codigo": "function calcular(lineas, descuentoPct, tipoIva) {\n  const subtotal = lineas.reduce((s, l) => s + l.importe, 0);\n  const pct = aCentimos(descuentoPct);\n  const descuento = Math.round(subtotal * pct / 10000);\n  const base = subtotal - descuento;\n  const iva = Math.round(base * tipoIva / 100);\n  return { subtotal, descuento, base, iva, total: base + iva };\n}",
+      "narracion": "Esta es la función que hace las cuentas en la versión 2. Todo lo que entra y sale está en céntimos. Primero suma los importes de las líneas: es el subtotal. Luego calcula el descuento y lo redondea. Resta y obtiene la base imponible. Calcula el IVA sobre la base y lo vuelve a redondear. Y el total es la base más el IVA. Cada paso redondea a un céntimo entero, igual que harías tú en papel. Así nunca se cuela una fracción de céntimo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Casos hechos a mano",
+      "columnas": ["Caso", "A mano", "Debe salir"],
+      "filas": [
+        ["0,10 € + 0,20 €", "0,30", "0,30 €"],
+        ["12,5 m² a 19,99 €", "249,875", "249,88 €"],
+        ["IVA del 21 % de 21,50 €", "4,515", "4,52 €"],
+        ["IVA del 10 % de 1,45 €", "0,145", "0,15 €"],
+        ["99,95 € con 10 % menos e IVA 21 %", "89,95 + 18,8895", "108,84 €"]
+      ],
+      "narracion": "Ahora, el método. Antes de fiarte, haz unos cuantos casos a mano, con papel o con la calculadora. Elige casos que pongan a prueba los redondeos. 12 metros y medio a 19 con 99 da 249 con 875, que se redondea a 249 con 88. El IVA de 21 con 50 da 4 con 515: debe salir 4 con 52. Y un caso completo: 99 con 95, menos un 10 por ciento, más el 21 de IVA, da 108 con 84. Estos números los has calculado tú. Son la referencia."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la app se compruebe sola",
+      "usuario": "Añade un enlace «Comprobar cálculos» que pase estos casos y muestre una tabla con lo que he calculado a mano, lo que da la app y si coincide: [pego mi tabla de casos, más una cantidad de -2, un precio vacío y «1.234,5»]. No cambies las cuentas para que cuadren: si un caso falla, dímelo.",
+      "ia": "He añadido el enlace debajo del IVA. Al pulsarlo, se calculan los 9 casos con las mismas funciones de la app y se muestra una tabla con una marca verde o una cruz roja en cada uno.",
+      "narracion": "En vez de probar los casos uno por uno cada vez, pídele a la IA que la app se compruebe sola. Le das tus casos hechos a mano, más tres casos raros: una cantidad negativa, un precio vacío y un número con punto de miles. Y fíjate en la última frase: no cambies las cuentas para que cuadren. Si un caso falla, dímelo. A veces la IA, para que una prueba pase, retoca el resultado esperado en vez de arreglar el cálculo."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 2, con errores y pruebas",
+      "fuente": "demo:presupuestos/v2",
+      "acciones": [
+        { "fill": [".linea:nth-child(1) .cantidad", "-3"] },
+        { "fill": [".linea:nth-child(2) .precio", ""] },
+        { "click": "#btn-pruebas" }
+      ],
+      "url": "presupuestos/index.html",
+      "narracion": "Aquí está la versión 2. Hemos escrito menos 3 en la cantidad del alicatado y hemos borrado el precio del plato de ducha. Los dos campos se ponen en rojo, con un aviso debajo, y esas líneas dejan de contar. Arriba a la derecha, el resumen con subtotal, base, IVA y total. Y abajo, al pulsar comprobar cálculos, la tabla de pruebas: 9 de 9 correctas. Cada vez que cambies algo en la app, vuelve a pulsar este enlace."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué comprobar a mano",
+      "puntos": [
+        "La IA escribe código creíble, no código probado",
+        "Un fallo de un céntimo no da ningún error",
+        "Su «lo he comprobado» no es una prueba",
+        "El presupuesto lo firmas tú, no la IA"
+      ],
+      "narracion": "Repasemos por qué hay que comprobar las cuentas de la IA con ejemplos hechos a mano. La IA escribe código que parece correcto, pero normalmente no lo ha ejecutado. Un fallo de un céntimo no da ningún error: la app sigue funcionando y el número sale mal. Si le preguntas, a menudo te dirá que lo ha comprobado, y eso no es una prueba. Y, sobre todo, el presupuesto lleva tu nombre. Si el IVA está mal, el cliente no se lo reclamará a la IA."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Otros casos raros que conviene probar",
+      "puntos": [
+        "Coma decimal y punto de miles: 1.234,5",
+        "Un descuento mayor del 100 por ciento",
+        "Una línea vacía al final de la tabla",
+        "1016,28 €: sin punto en cifras de 4 dígitos"
+      ],
+      "narracion": "Más casos raros para tu lista. Números escritos a la española, con punto de miles y coma decimal. Un descuento mayor del 100 por ciento, que no tiene sentido y debe dar aviso. Una línea vacía al final, que no debe molestar. Y uno que parece un fallo pero no lo es. El formato español de los números no pone punto en las cifras de cuatro dígitos. Por eso ves mil dieciséis euros sin punto. Es la norma ortográfica. Si prefieres el punto, pídeselo a la IA."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Cuentas en céntimos y redondeo en cada paso",
+        "El tipo de IVA te lo dice tu gestoría",
+        "Casos hechos a mano antes de fiarte",
+        "Tarea: rellena la plantilla de casos de prueba"
+      ],
+      "narracion": "Repasamos. Las cuentas con dinero, en céntimos enteros, redondeando en cada paso. El tipo de IVA no lo decide la IA: te lo dice tu gestoría. Y antes de fiarte de un cálculo, comprueba con casos hechos a mano, mejor si la app se comprueba sola. Tu tarea de hoy: descarga la plantilla de casos de prueba, calcula a mano al menos cinco casos de tu oficio y pásaselos a tu versión 2. En la próxima clase convertimos esto en un presupuesto en PDF."
+    }
+  ]
+}

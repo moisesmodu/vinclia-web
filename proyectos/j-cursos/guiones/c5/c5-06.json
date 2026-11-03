@@ -3,13 +3,15 @@
   "titulo": "Leer código sin saber programar",
   "descripcion": "Aprendes a orientarte dentro del código que te da la IA: encontrar dónde está cada cosa, entender un trozo con ayuda de la IA y hacer tú mismo cambios pequeños como un texto, un color o un número.",
   "vistaPrevia": false,
-  "recursos": ["plantilla:chuleta-web"],
+  "recursos": [
+    "plantilla:chuleta-web"
+  ],
   "escenas": [
     {
       "tipo": "portada",
       "titulo": "Leer código sin saber programar",
       "subtitulo": "No necesitas escribirlo. Sí orientarte dentro.",
-      "narracion": "No vas a escribir código en este curso. Lo escribe la IA. Pero sí te conviene saber orientarte dentro de él, igual que sabes leer una factura de la luz sin ser electricista. En esta clase vas a aprender a encontrar dónde está cada cosa, a entender un trozo con ayuda de la IA y a hacer tú mismo cambios pequeños sin pedir nada."
+      "narracion": "No vas a escribir código en este curso. Lo escribe la IA. Pero sí te conviene saber orientarte dentro de él, igual que sabes leer una factura de la luz sin ser electricista. En esta clase vas a aprender tres cosas. Encontrar dónde está cada cosa. Entender un trozo con ayuda de la IA. Y hacer tú mismo cambios pequeños, sin pedir nada."
     },
     {
       "tipo": "puntos",
@@ -28,7 +30,7 @@
       "archivo": "index.html",
       "lenguaje": "javascript",
       "codigo": "function calcular() {\n  const total = leerImporte();\n  const importePropina = total * propina / 100;\n  const totalFinal = total + importePropina;\n  const sinRedondeo = totalFinal / personas;\n  let porPersona = Math.round(sinRedondeo * 100) / 100;",
-      "narracion": "Mira este trozo de la versión dos. Es el corazón de la app. Aunque no sepas programar, fíjate en que los nombres son palabras en castellano. Total, importe de la propina, total final, por persona. Si lo lees despacio, casi se entiende solo. La propina es el total por el porcentaje, dividido entre cien. El total final es la suma. Y lo que paga cada uno es el total final entre las personas, redondeado a céntimos."
+      "narracion": "Mira este trozo de la versión dos. Es el corazón de la app. Aunque no sepas programar, fíjate en que los nombres son palabras en castellano. Total, importe de la propina, total final, por persona. Si lo lees despacio, casi se entiende solo. La propina es el total por el porcentaje, dividido entre cien. El total final es la suma. Y lo que paga cada uno es el total final entre las personas, redondeado a céntimos. Un detalle útil. Los nombres los elige quien escribe el código. Si pides a la IA que use nombres en castellano, tu código será mucho más fácil de leer."
     },
     {
       "tipo": "chat",
@@ -48,15 +50,33 @@
     {
       "tipo": "tabla",
       "titulo": "Palabras que vas a ver mucho",
-      "columnas": ["Palabra", "Qué quiere decir"],
-      "filas": [
-        ["function", "Una receta con nombre"],
-        ["const, let", "Una caja con un nombre y un valor"],
-        ["if", "Si pasa esto, haz aquello"],
-        ["getElementById", "Busca el elemento con ese id"],
-        ["addEventListener", "Cuando pase algo, ejecuta esto"]
+      "columnas": [
+        "Palabra",
+        "Qué quiere decir"
       ],
-      "narracion": "Con estas cinco palabras entiendes la mayoría de lo que vas a ver. Function es una receta con nombre. Const y let son cajas donde se guarda un valor, por ejemplo el total. If es una condición. Get element by id busca en la página el elemento con ese nombre de enganche. Y add event listener significa que, cuando pase algo, como un clic, se ejecute una receta. Tienes esta tabla en la chuleta."
+      "filas": [
+        [
+          "function",
+          "Una receta con nombre"
+        ],
+        [
+          "const, let",
+          "Una caja con un nombre y un valor"
+        ],
+        [
+          "if",
+          "Si pasa esto, haz aquello"
+        ],
+        [
+          "getElementById",
+          "Busca el elemento con ese id"
+        ],
+        [
+          "addEventListener",
+          "Cuando pase algo, ejecuta esto"
+        ]
+      ],
+      "narracion": "Con estas cinco palabras entiendes la mayoría de lo que vas a ver. Function es una receta con nombre. Const y let son cajas donde se guarda un valor, por ejemplo el total. If es una condición. Get element by id busca en la página el elemento con ese nombre de enganche. Y add event listener significa que, cuando pase algo, como un clic, se ejecute una receta. Tienes esta tabla en la chuleta. No hace falta memorizarlas. Con verlas un par de veces las irás reconociendo solas."
     },
     {
       "tipo": "codigo",
@@ -72,9 +92,21 @@
       "fuente": "demo:primera/v2",
       "url": "Documentos/propinas/v2/index.html",
       "acciones": [
-        { "eval": "document.documentElement.style.setProperty('--acento', '#5B4BD6'); document.documentElement.style.setProperty('--acento-suave', '#ECEAFB')" },
-        { "fill": ["#total", "86,40"] },
-        { "click": "#mas" }, { "click": "#mas" }
+        {
+          "eval": "document.documentElement.style.setProperty('--acento', '#5B4BD6'); document.documentElement.style.setProperty('--acento-suave', '#ECEAFB')"
+        },
+        {
+          "fill": [
+            "#total",
+            "86,40"
+          ]
+        },
+        {
+          "click": "#mas"
+        },
+        {
+          "click": "#mas"
+        }
       ],
       "narracion": "Este es el resultado de cambiar el acento por un morado, y el acento suave por un morado clarito. Los botones de propina, el contador y el recuadro del resultado han cambiado a la vez. No ha hecho falta tocar nada más. Guarda, recarga y listo. Si algo sale mal, deshaces con control Z y vuelves a guardar. Para cambios así de pequeños, hacerlo tú es más rápido que pedirlo."
     },

@@ -1,0 +1,22 @@
+{ "seccion": 4, "titulo": "Cuestionario: la web de un negocio", "preguntas": [
+  { "pregunta": "Para la web de una peluquería de barrio, ¿qué es lo más útil para conseguir citas?",
+    "respuestas": ["Una tienda online con todos los productos", "Un formulario largo de contacto", "Un botón de WhatsApp y otro de llamar siempre a mano", "Un blog con artículos semanales"],
+    "correcta": 2,
+    "explicacion": "El cliente quiere pedir cita con un toque. Los botones de WhatsApp y llamar, fijos en el móvil, lo consiguen sin formularios ni datos que guardar." },
+  { "pregunta": "Le pides a la IA un nuevo diseño para tu web. ¿Qué límite conviene incluir en la instrucción?",
+    "respuestas": ["No cambies textos ni datos", "Usa todas las fotos que encuentres en internet", "Hazla bonita, como tú veas", "Cambia también los precios si te parecen bajos"],
+    "correcta": 0,
+    "explicacion": "Si la IA no toca textos ni datos, no tienes que revisarlo todo otra vez. Las fotos de internet suelen tener derechos de autor y «hazla bonita» da un resultado genérico." },
+  { "pregunta": "La IA ha añadido a tu web tres opiniones de clientes que no existen. ¿Qué haces antes de publicar?",
+    "respuestas": ["Las dejo: dan confianza", "Las quito o las cambio por opiniones reales y con permiso", "Les cambio los nombres para que parezcan más reales", "Les pongo cinco estrellas a todas"],
+    "correcta": 1,
+    "explicacion": "Presentar opiniones inventadas como reales es engañar al cliente y lo prohíbe la normativa de consumo. Como ejemplo están bien, pero antes de publicar se quitan o se sustituyen por reales." },
+  { "pregunta": "Quieres publicar gratis la web de tu negocio. ¿Qué opción NO encaja con el plan gratuito?",
+    "respuestas": ["Netlify Drop, arrastrando la carpeta", "Probarla antes en tu ordenador con doble clic", "Comprar un dominio propio y conectarlo a Netlify", "El plan Hobby de Vercel"],
+    "correcta": 3,
+    "explicacion": "El plan gratuito Hobby de Vercel es solo para uso personal no comercial. Netlify Drop es gratis y admite uso comercial dentro de sus límites." },
+  { "pregunta": "¿Para qué sirven las etiquetas Open Graph que añadiste en la última versión?",
+    "respuestas": ["Para que la web cargue más rápido", "Para que al compartir el enlace salga una tarjeta con título e imagen", "Para cobrar a los clientes", "Para que funcione sin internet"],
+    "correcta": 1,
+    "explicacion": "Open Graph decide la tarjeta que aparece al compartir el enlace en WhatsApp o redes: título, descripción e imagen, con la dirección completa." }
+] }

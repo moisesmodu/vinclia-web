@@ -3,7 +3,9 @@
   "titulo": "Qué es el vibe coding (y qué no es)",
   "descripcion": "Entiendes qué es el vibe coding, de dónde sale la expresión, para qué sirve y para qué no, y cuál es tu papel: decidir y comprobar mientras la IA escribe el código.",
   "vistaPrevia": true,
-  "recursos": ["plantilla:primera-app"],
+  "recursos": [
+    "plantilla:primera-app"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -15,14 +17,14 @@
       "tipo": "frase",
       "texto": "Describes lo que quieres y dejas que la IA escriba el código.",
       "autor": "La idea del vibe coding, Andrej Karpathy, febrero de 2025",
-      "narracion": "La expresión la popularizó Andrej Karpathy, un investigador muy conocido en inteligencia artificial, en febrero de 2025. La idea es sencilla. En lugar de escribir el código tú, describes con palabras normales lo que quieres. La IA escribe el código, tú lo pruebas y vas pidiendo cambios. Vibe en inglés significa algo así como ambiente o sensación. Programas a base de decir lo que quieres y ver si te convence."
+      "narracion": "La expresión la popularizó Andrej Karpathy, un investigador muy conocido en inteligencia artificial, en febrero de 2025. La idea es sencilla. En lugar de escribir el código tú, describes con palabras normales lo que quieres. La IA escribe el código, tú lo pruebas y vas pidiendo cambios. Vibe en inglés significa algo así como ambiente o sensación. Programas a base de decir lo que quieres y ver si te convence. Para que te hagas una idea, en el curso nadie escribe código a mano. Todas las apps de ejemplo salen de instrucciones como las que viste en la clase anterior."
     },
     {
       "tipo": "comparar",
       "titulo": "Programar de siempre frente a vibe coding",
       "mal": "Aprendes un lenguaje durante meses y escribes cada línea tú. Tardas en ver el primer resultado.",
       "bien": "Describes lo que quieres en castellano, la IA escribe el código y tú pruebas y corriges.",
-      "narracion": "Compara las dos formas. Programar de la manera clásica exige aprender un lenguaje durante meses antes de hacer algo útil. Con vibe coding ves un resultado en minutos. Pero ojo, no hemos dicho que lo de la izquierda sea malo. Los programadores siguen siendo necesarios, y mucho. Lo que cambia es que tú, sin ser programador, ya puedes construir herramientas pequeñas para tu vida y tu trabajo."
+      "narracion": "Compara las dos formas. Programar de la manera clásica exige aprender un lenguaje durante meses antes de hacer algo útil. Con vibe coding ves un resultado en minutos. Pero ojo, no hemos dicho que lo de la izquierda sea malo. Los programadores siguen siendo necesarios, y mucho. Lo que cambia es que tú, sin ser programador, ya puedes construir herramientas pequeñas para tu vida y tu trabajo. Hay un matiz importante. Karpathy lo planteó para proyectos de fin de semana, de usar y tirar. En este curso le añadimos método, para que lo que hagas funcione de verdad y no se rompa al primer cambio."
     },
     {
       "tipo": "pasos",
@@ -34,7 +36,7 @@
         "Si algo falla, cuéntaselo con detalle",
         "Cuando funcione, guarda esa versión"
       ],
-      "narracion": "Todo el curso gira alrededor de este ciclo. Primero describes un cambio pequeño y concreto. La IA escribe el código. Tú lo pruebas, y no solo con los datos fáciles. Si algo falla, se lo cuentas con detalle, igual que se lo contarías a un técnico. Y cuando funciona, guardas esa versión antes de seguir. En la clase anterior hiciste este ciclo tres veces. Por eso hay tres versiones de la app."
+      "narracion": "Todo el curso gira alrededor de este ciclo. Primero describes un cambio pequeño y concreto. La IA escribe el código. Tú lo pruebas, y no solo con los datos fáciles. Si algo falla, se lo cuentas con detalle, igual que se lo contarías a un técnico. Y cuando funciona, guardas esa versión antes de seguir. En la clase anterior hiciste este ciclo tres veces. Por eso hay tres versiones de la app. Un detalle práctico. La IA no sabe nada de tu vida ni de tu negocio. Todo lo que no le digas, se lo inventa con lo más habitual."
     },
     {
       "tipo": "web",
@@ -42,9 +44,21 @@
       "fuente": "demo:primera/v1",
       "url": "Documentos/propinas/v1/index.html",
       "acciones": [
-        { "fill": ["#total", "60"] },
-        { "fill": ["#personas", "0"] },
-        { "click": "#calcular" }
+        {
+          "fill": [
+            "#total",
+            "60"
+          ]
+        },
+        {
+          "fill": [
+            "#personas",
+            "0"
+          ]
+        },
+        {
+          "click": "#calcular"
+        }
       ],
       "narracion": "Mira por qué el paso de probar es tan importante. Esta es la primera versión de la app. Con datos normales funcionaba bien. Pero si escribes cero personas y pulsas Calcular, el resultado dice Infinity euros. Es decir, infinito. La IA no se equivocó al hacer lo que le pediste. Simplemente nadie le dijo qué hacer con cero personas. Ese caso lo tienes que pensar tú."
     },
@@ -58,14 +72,29 @@
     {
       "tipo": "tabla",
       "titulo": "Para qué sirve y dónde ir con cuidado",
-      "columnas": ["Va muy bien para", "Necesita revisión técnica"],
-      "filas": [
-        ["Prototipos para enseñar una idea", "Apps que cobran dinero"],
-        ["Herramientas para ti o tu equipo", "Datos de salud o datos sensibles"],
-        ["Webs sencillas de un negocio", "Muchos usuarios a la vez"],
-        ["Juegos y apps personales", "Cuentas de usuario y contraseñas"]
+      "columnas": [
+        "Va muy bien para",
+        "Necesita revisión técnica"
       ],
-      "narracion": "Ahora, el mapa honesto. El vibe coding va muy bien para prototipos, para herramientas que usas tú o tu equipo, para la web de un negocio pequeño y para juegos o apps personales. En la otra columna están los casos donde un fallo sale caro. Apps que cobran, que guardan datos sensibles, que usan muchas personas o que manejan contraseñas. Ahí puedes empezar tú, pero antes de abrirlo al público necesitas que lo revise alguien que sepa."
+      "filas": [
+        [
+          "Prototipos para enseñar una idea",
+          "Apps que cobran dinero"
+        ],
+        [
+          "Herramientas para ti o tu equipo",
+          "Datos de salud o datos sensibles"
+        ],
+        [
+          "Webs sencillas de un negocio",
+          "Muchos usuarios a la vez"
+        ],
+        [
+          "Juegos y apps personales",
+          "Cuentas de usuario y contraseñas"
+        ]
+      ],
+      "narracion": "Ahora, el mapa honesto. El vibe coding va muy bien para prototipos, para herramientas que usas tú o tu equipo, para la web de un negocio pequeño y para juegos o apps personales. En la otra columna están los casos donde un fallo sale caro. Apps que cobran, que guardan datos sensibles, que usan muchas personas o que manejan contraseñas. Ahí puedes empezar tú, pero antes de abrirlo al público necesitas que lo revise alguien que sepa. Piensa en un ejemplo. Una calculadora de propinas que falla un céntimo no pasa de anécdota. Una tienda que cobra mal o enseña los datos de tus clientes es un problema serio, también legal."
     },
     {
       "tipo": "puntos",
@@ -94,7 +123,7 @@
         "Guardar versiones para poder volver atrás",
         "Saber cuándo pedir ayuda a un programador"
       ],
-      "narracion": "Entonces, cuál es tu papel. Tener claro qué quieres antes de pedirlo. Para eso usaremos una ficha de proyecto de una página. Avanzar en pasos pequeños, uno cada vez. Probar cada cambio. Guardar versiones, para poder volver atrás si algo se rompe. Y reconocer cuándo el proyecto ha crecido tanto que conviene llamar a un profesional. Todo esto lo practicarás en los cuatro proyectos."
+      "narracion": "Entonces, cuál es tu papel. Tener claro qué quieres antes de pedirlo. Para eso usaremos una ficha de proyecto de una página. Avanzar en pasos pequeños, uno cada vez. Probar cada cambio. Guardar versiones, para poder volver atrás si algo se rompe. Y reconocer cuándo el proyecto ha crecido tanto que conviene llamar a un profesional. Todo esto lo practicarás en los cuatro proyectos. Y piensa que nada de esto exige saber programar. Exige lo mismo que un buen encargo a un profesional. Saber qué quieres, explicarlo bien y revisar el resultado."
     },
     {
       "tipo": "resumen",

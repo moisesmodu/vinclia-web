@@ -90,7 +90,7 @@
       "titulo": "Opiniones de ejemplo, avisadas",
       "nota": "Cuando tengas opiniones reales y con permiso, sustituyes estas",
       "fuente": "demo:peluqueria/v3@movil",
-      "acciones": [{ "eval": "document.getElementById('opiniones').scrollIntoView()" }],
+      "acciones": [{ "eval": "document.querySelector('.aviso-ejemplo').scrollIntoView({block: 'center'})" }],
       "narracion": "Bajamos a las opiniones. Fíjate en que cada una dice opinión de ejemplo, y debajo hay un aviso bien visible. Esto es importante. Publicar opiniones inventadas como si fueran de clientes reales es engañar, y la normativa de consumo lo prohíbe. Aquí sirven para ver cómo quedaría la sección. En tu web, usa solo opiniones reales, con permiso de quien las escribió. O quita la sección hasta tenerlas."
     },
     {

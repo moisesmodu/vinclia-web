@@ -1,0 +1,165 @@
+{
+  "id": "c5-07",
+  "titulo": "Lo que puede salir mal: errores, inventos y seguridad",
+  "descripcion": "Reconoces los tres tipos de problemas del vibe coding (errores, fallos silenciosos e inventos de la IA), aprendes a detectarlos probando casos raros y a evitar los dos riesgos de seguridad más comunes: claves en el código y datos personales.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:lista-seguridad"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Lo que puede salir mal",
+      "subtitulo": "Errores, inventos de la IA y seguridad, con ejemplos",
+      "narracion": "Hasta ahora todo ha ido bien. Pero si haces apps con IA, tarde o temprano algo saldrá mal. Es normal y tiene arreglo. En esta clase verás los tres tipos de problemas que te vas a encontrar y cómo detectarlos antes que nadie. Y también las dos reglas de seguridad que no te puedes saltar nunca. Todo con ejemplos sobre tu app de la cuenta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres tipos de problemas",
+      "puntos": [
+        "Error: no funciona y la consola sale en rojo",
+        "Fallo silencioso: funciona, pero da un resultado mal",
+        "Invento: la IA usa algo que no existe",
+        "Riesgo: funciona bien, pero expone datos o claves"
+      ],
+      "narracion": "Hay tres tipos de problemas, y un cuarto que es el más serio. El error es el más fácil. La app no hace nada y la consola te enseña un mensaje en rojo. El fallo silencioso es peor. La app parece que va, pero el resultado está mal y nadie te avisa. El invento es cuando la IA usa algo que no existe. Y el riesgo es cuando todo funciona, pero la app deja a la vista algo que no debería."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Un fallo silencioso: cuenta vacía",
+      "fuente": "demo:primera/v1",
+      "url": "Documentos/propinas/v1/index.html",
+      "acciones": [
+        {
+          "fill": [
+            "#personas",
+            "3"
+          ]
+        },
+        {
+          "click": "#calcular"
+        }
+      ],
+      "narracion": "Mira la primera versión de la app. Hemos puesto tres personas, pero se nos ha olvidado escribir el total, y hemos pulsado Calcular. El resultado dice que cada uno paga NaN euros. NaN significa que no es un número. La consola no se queja de nada. No hay ningún error en rojo. Por eso es un fallo silencioso. Solo lo descubres si pruebas lo que haría alguien con prisa o despistado."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Prueba siempre los casos raros",
+      "pasos": [
+        "Deja un campo vacío y pulsa el botón",
+        "Escribe cero, un número negativo o uno enorme",
+        "Usa coma decimal: 86,40 en lugar de 86.40",
+        "Escribe un nombre muy largo o con tildes",
+        "Ábrela en el móvil, no solo en el ordenador"
+      ],
+      "narracion": "Por eso, después de cada cambio, prueba los casos raros. Deja un campo vacío. Escribe cero, un número negativo o uno enorme. Escribe el decimal con coma, como hacemos en España. Prueba un nombre muy largo o con tildes. Y ábrela en el móvil. Cuando encuentres un fallo, cuéntaselo a la IA con lo que hiciste y lo que salió. La versión dos ya no tiene ninguno de estos problemas, porque los fuimos pidiendo. Fíjate en un detalle. La IA hizo justo lo que le pedimos. El fallo estaba en lo que no le dijimos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Un invento de la IA, y cómo se arregla",
+      "usuario": "En la consola sale: «Uncaught TypeError: total.toEuros is not a function». Arréglalo usando solo funciones que existan en todos los navegadores y explícame qué ha fallado.",
+      "ia": "Reconoce que toEuros no existe en JavaScript: lo había usado por error. Lo cambia por Intl.NumberFormat con «es-ES» y «EUR», que viene de serie en todos los navegadores modernos.",
+      "narracion": "Ahora un invento. Imagina que pides los importes en euros y la IA escribe una función llamada to euros. Suena razonable, pero no existe. Al probar, la app no muestra nada y en la consola sale un error que dice que eso no es una función. A esto se le llama alucinación. La IA se inventa con total seguridad funciones, librerías o datos que no existen. La solución es la de siempre. Copia el error y pídele que use solo funciones estándar."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La versión buena: lo que trae el navegador",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "const euros = new Intl.NumberFormat(\"es-ES\", {\n  style: \"currency\",\n  currency: \"EUR\"\n});",
+      "narracion": "Este es el trozo real que usa la app desde la versión dos. Le dice al navegador que escriba los números como moneda, en euros y al estilo de España. Con coma decimal y el símbolo del euro detrás. Esto sí existe y viene incluido en todos los navegadores modernos. Si tienes dudas de si algo que propone la IA existe, pregúntale en qué documentación oficial aparece y búscalo tú. Un último consejo sobre los inventos. Cuanto más rara o reciente es la función que pides, más probable es que la IA se la invente. Desconfía también si te propone instalar algo con un nombre que no conoces."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Regla 1: ninguna clave en el código",
+      "mal": "Pegar una clave de API o una contraseña en el chat o dentro del HTML de la página.",
+      "bien": "Las claves van en un servidor o en los ajustes secretos de la herramienta. Nunca en el navegador.",
+      "narracion": "Primera regla de seguridad. Algunos servicios, como los de inteligencia artificial o los de pago, te dan una clave secreta para usarlos. Nunca la pegues en el chat ni dentro del HTML. Todo lo que hay en una página web lo puede ver cualquiera, con clic derecho y ver código fuente. Si alguien copia tu clave, puede gastar a tu nombre. Las claves van en un servidor o en los ajustes de secretos de la herramienta. Lo veremos en la sección del siguiente nivel."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Regla 2: cuidado con los datos personales",
+      "puntos": [
+        "En el chat, datos inventados: Ana, Luis, cliente A",
+        "Nada de DNI, teléfonos, direcciones ni datos de salud",
+        "Pedir nombre, correo o teléfono exige aviso de privacidad",
+        "Guardar en el navegador no sirve para datos de clientes"
+      ],
+      "narracion": "Segunda regla, los datos personales. Cuando pruebes o pidas cambios, usa datos inventados. Nunca pegues en el chat DNI, teléfonos, direcciones o datos de salud de nadie. Si tu web pide nombre, correo o teléfono a otras personas, el RGPD te obliga a poner un aviso de privacidad y a guardarlos en un sitio seguro. Y guardar datos en el navegador solo sirve para apps personales. Lo verás a fondo en la sección del proyecto tres."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Esta app no envía nada a ningún sitio",
+      "nota": "Los nombres se quedan en tu móvil. Tú decides si pegas el resumen.",
+      "fuente": "demo:primera/v3@movil",
+      "acciones": [
+        {
+          "fill": [
+            "#total",
+            "52"
+          ]
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Ana"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Luis"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "eval": "document.querySelector('.resultado').scrollIntoView({block: 'center'})"
+        }
+      ],
+      "narracion": "Un ejemplo de cómo se hace bien. Tu app de la cuenta guarda nombres de personas, pero no los envía a ninguna parte. Funciona sin internet, y al cerrar la página se olvidan. El botón de copiar solo deja el texto en tu portapapeles. Eres tú quien decide pegarlo en el grupo. Cuando le pidas a la IA una función nueva, pregúntale siempre si la app envía algún dato fuera y adónde."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuándo llamar a alguien que sepa",
+      "columnas": [
+        "Si tu app…",
+        "Haz esto"
+      ],
+      "filas": [
+        [
+          "Cobra dinero",
+          "Usa un servicio de pago y revisión"
+        ],
+        [
+          "Guarda datos de clientes",
+          "Revisión técnica y aviso de privacidad"
+        ],
+        [
+          "Tiene cuentas y contraseñas",
+          "Revisión técnica antes de publicar"
+        ],
+        [
+          "Usa una clave secreta",
+          "Que viva en un servidor, no en la web"
+        ]
+      ],
+      "narracion": "Y el mapa de cuándo pedir ayuda. Si tu app cobra dinero, usa un servicio de pago reconocido y que alguien lo revise. Si guarda datos de clientes, o tiene cuentas con contraseña, necesita una revisión técnica antes de abrirla al público. Y si usa una clave secreta, esa clave tiene que vivir en un servidor. Puedes construir el prototipo tú. Pero en estos casos, antes de publicar, que lo mire un profesional."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Prueba casos raros: vacío, cero, coma, móvil",
+        "Si hay error, copia la consola y pégasela a la IA",
+        "La IA inventa: exige funciones estándar y compruébalo",
+        "Ni claves ni datos personales en el chat ni en el código"
+      ],
+      "narracion": "Repasamos. Después de cada cambio, prueba los casos raros. Si hay un error, copia lo que dice la consola y pégaselo a la IA. Recuerda que la IA a veces inventa, así que exige funciones estándar y prueba siempre. Y nunca pongas claves ni datos personales en el chat ni en el código. Tu tarea de hoy. Pasa la lista de comprobación de los recursos por tu app de la cuenta. Con esto cierras la sección. En la siguiente aprenderás el método para pedir bien."
+    }
+  ]
+}

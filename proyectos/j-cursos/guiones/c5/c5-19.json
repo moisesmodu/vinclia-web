@@ -1,0 +1,126 @@
+{
+  "id": "c5-19",
+  "titulo": "Instálala en el móvil como una app",
+  "descripcion": "Conviertes la app de hábitos en una app instalable con un manifest y un service worker, la publicas gratis y la instalas en el móvil. Además añades una copia de seguridad en JSON para no perder tus datos.",
+  "vistaPrevia": false,
+  "recursos": ["demo:habitos", "plantilla:pantallas-y-datos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Instálala en el móvil como una app",
+      "subtitulo": "Versión 4 de la app de hábitos",
+      "narracion": "Última clase del proyecto. Tu app de hábitos ya funciona, pero de momento es un archivo en tu ordenador. Hoy vas a tenerla en el móvil, con su icono, junto a las demás apps. Sin tiendas de aplicaciones, sin pagar nada y sin cuentas de desarrollador. Y como tus datos viven en el navegador, añadiremos algo que toda app personal debería tener: una copia de seguridad que puedas descargar y recuperar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es una app web instalable",
+      "puntos": [
+        "Una web normal con dos archivos extra",
+        "Manifest: nombre, icono y colores de la app",
+        "Service worker: guarda una copia para abrir sin red",
+        "Se instala desde el navegador, sin tienda",
+        "Solo funciona publicada, con dirección https"
+      ],
+      "narracion": "Una app web instalable es una web normal con dos archivos extra. El primero es el manifest, una ficha con el nombre de la app, su icono y sus colores. El segundo es el service worker, un pequeño programa que guarda una copia de la app para que abra aunque no haya internet. Con los dos, el móvil te deja instalarla desde el navegador. Se abre a pantalla completa, sin barra de direcciones. Una condición: tiene que estar publicada, con una dirección segura que empiece por https."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 4: que se pueda instalar",
+      "usuario": "Funciona bien. Siguiente paso: quiero instalarla en el móvil. Añade un manifest (nombre «Mis hábitos», color #0E9F8E, iconos icon-192.png e icon-512.png) y un service worker sencillo para abrirla sin internet: primero la red y, si no hay, la copia guardada. Si abro el archivo con doble clic, que no cargue ninguno de los dos ni dé errores. Añade una tarjeta «Instalar como app» que explique qué hacer en cada caso.",
+      "ia": "Te dejo tres archivos: index.html actualizado, manifest.webmanifest y sw.js. No puedo crear imágenes PNG: prepara tú los iconos de 192 y 512 píxeles. Abierta como archivo, la app no registra nada y la tarjeta lo explica.",
+      "narracion": "Esta es la instrucción. Damos el nombre, el color y cómo se llamarán los iconos. Pedimos un service worker sencillo y decimos cómo debe comportarse: primero la red, para que veas siempre la última versión, y si no hay conexión, la copia. Y una condición importante: que al abrirlo con doble clic no dé errores. La IA devuelve tres archivos. Y te avisa de algo honesto: no puede crear los iconos. Prepáralos en cualquier editor de imágenes, por ejemplo en Canva, que es gratis."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La carpeta de la versión 4",
+      "pasos": [
+        "index.html: la app, con dos líneas nuevas al final",
+        "manifest.webmanifest: la ficha de la app",
+        "sw.js: el service worker",
+        "icon-192.png e icon-512.png: cuadrados, sin texto",
+        "Los cinco en la misma carpeta, con esos nombres"
+      ],
+      "narracion": "Así queda la carpeta de la versión 4. El index de siempre, con unas líneas nuevas al final. El manifest, que es la ficha de la app. El service worker, en un archivo llamado sw punto js. Y los dos iconos, cuadrados, de 192 y de 512 píxeles. Un consejo para el icono: un dibujo sencillo sobre fondo de color, sin texto, porque se verá muy pequeño. Los cinco archivos van juntos en la misma carpeta y con estos nombres exactos."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Como archivo, no carga nada",
+      "archivo": "v4/index.html",
+      "lenguaje": "javascript",
+      "codigo": "if (location.protocol !== 'file:') {\n  const enlace = document.createElement('link');\n  enlace.rel = 'manifest';\n  enlace.href = 'manifest.webmanifest';\n  document.head.append(enlace);\n  if ('serviceWorker' in navigator) {\n    navigator.serviceWorker.register('sw.js');\n  }\n}",
+      "narracion": "Este trozo del index explica por qué pedimos que no diera errores. La primera línea pregunta: ¿me han abierto como archivo del ordenador? Los navegadores no permiten service workers en archivos abiertos con doble clic, por seguridad. Así que, si es un archivo, la app no lo intenta y funciona como antes. Si está publicada, añade el manifest y registra el service worker. Por eso en tu ordenador no verás nada nuevo hasta que la publiques."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El service worker: primero la red",
+      "archivo": "v4/sw.js",
+      "lenguaje": "javascript",
+      "codigo": "self.addEventListener('fetch', (e) => {\n  if (e.request.method !== 'GET') return;\n  e.respondWith(\n    fetch(e.request)\n      .then(resp => {\n        const copia = resp.clone();\n        caches.open(CACHE).then(c => c.put(e.request, copia));\n        return resp;\n      })\n      .catch(() => caches.match(e.request)\n        .then(r => r || caches.match('./index.html')))\n  );\n});",
+      "narracion": "Y este es el service worker por dentro. Cada vez que la app pide un archivo, lo intenta primero por internet. Si llega, guarda una copia en la caché, que es un almacén del navegador, y lo entrega. Si no hay conexión, entrega la copia guardada. Es la estrategia más tranquila para empezar. Muchas IA proponen la contraria, primero la copia, y entonces los cambios tardan en aparecer. Si un día publicas una versión nueva y no la ves, revisa esto."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Abierta como archivo: la tarjeta lo explica",
+      "fuente": "demo:habitos/v4",
+      "url": "archivo: habitos/v4/index.html",
+      "acciones": [
+        { "eval": "(()=>{const k=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('sv')};const h=(id,nombre,c,ds)=>({id,nombre,creado:k(c),hechos:ds.map(k)});localStorage.setItem('mis-habitos',JSON.stringify([h(1,'Leer 10 minutos',30,[0,1,2,3,4,5,6,7,8,9,10,11,12,15,16]),h(2,'Caminar 30 minutos',30,[1,2,3,4,5,7,8,10]),h(3,'Beber 2 litros de agua',30,[0,1,3,4,6,8,9]),h(4,'Estirar 5 minutos',3,[1,2])]));location.reload()})()", "wait": 900 },
+        { "eval": "window.scrollTo(0, document.body.scrollHeight)", "wait": 400 }
+      ],
+      "narracion": "Así se ve la versión 4 abierta con doble clic en el ordenador. Arriba, todo lo de la versión 3. Al final, dos tarjetas nuevas. La de instalar te dice la verdad: la has abierto como archivo, y para instalarla tienes que publicarla y abrirla desde el móvil. La consola del navegador no muestra ningún error. Esa es la comprobación de hoy en el ordenador. A su lado, la tarjeta de la copia de seguridad, que veremos enseguida."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Publicar e instalar en el móvil",
+      "pasos": [
+        "Arrastra la carpeta v4 a Netlify Drop, como en la clase 15",
+        "Abre la dirección que te da en el navegador del móvil",
+        "Android, Chrome: menú y «Instalar aplicación»",
+        "iPhone, Safari: Compartir y «Añadir a pantalla de inicio»",
+        "Ábrela desde el icono y prueba en modo avión"
+      ],
+      "narracion": "Ahora, a publicarla. Arrastra la carpeta de la versión 4 a Netlify Drop, como hiciste con la web de la peluquería. Abre la dirección que te da en el navegador del móvil. En Android con Chrome, abre el menú de los tres puntos y elige instalar aplicación. Puede que aparezca también nuestro botón de instalar. En el iPhone, con Safari, toca compartir y luego añadir a pantalla de inicio. Abre la app desde el icono. Y prueba en modo avión: debe abrir igual."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tus datos, en cada móvil por separado",
+      "puntos": [
+        "La app instalada tiene sus propios datos",
+        "Lo del ordenador no pasa al móvil, ni al revés",
+        "Los datos van unidos a la dirección: no la cambies",
+        "Al actualizar, publica en el mismo sitio de Netlify"
+      ],
+      "narracion": "Recuerda cómo funciona el almacenamiento local, porque aquí es donde sorprende. La app del móvil empieza vacía: lo que probaste en el ordenador se queda en el ordenador. Los datos van unidos a la dirección de la web. Si publicas otra vez y Netlify te da una dirección nueva, la app nueva no verá tus hábitos. Por eso, para actualizar, sube la carpeta nueva al mismo sitio de Netlify, desde su apartado de publicaciones, y no como un sitio nuevo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 5: copia de seguridad",
+      "usuario": "Añade una tarjeta «Copia de seguridad» con dos botones. «Descargar copia»: baja los hábitos en un archivo JSON con la fecha en el nombre. «Recuperar copia»: lee ese archivo, comprueba que es una lista de hábitos con nombre y días hechos, y sustituye los datos. Si el archivo no vale, un mensaje claro y no toques nada. No cambies nada más.",
+      "ia": "He añadido la tarjeta con los dos botones. La copia se descarga como mis-habitos-2026-11-03.json. Al recuperarla compruebo el formato; si no es válido, aviso y no cambio nada.",
+      "narracion": "Como el almacenamiento local se puede perder, añadimos una copia de seguridad. La instrucción pide dos botones. Descargar copia guarda todos tus hábitos en un archivo JSON, el mismo formato de texto que usa la app por dentro, con la fecha en el nombre. Recuperar copia lee ese archivo y sustituye los datos. Fíjate en la condición más importante: si el archivo no es válido, que avise y no toque nada. Así una copia equivocada no te borra lo que tienes."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Descargar y recuperar tu copia",
+      "nota": "Pruébalo: descarga, borra un hábito y recupera la copia.",
+      "fuente": "demo:habitos/v4@movil",
+      "acciones": [
+        { "eval": "(()=>{const k=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('sv')};const h=(id,nombre,c,ds)=>({id,nombre,creado:k(c),hechos:ds.map(k)});localStorage.setItem('mis-habitos',JSON.stringify([h(1,'Leer 10 minutos',30,[0,1,2,3,4,5,6,7,8,9,10,11,12,15,16]),h(2,'Caminar 30 minutos',30,[1,2,3,4,5,7,8,10]),h(3,'Beber 2 litros de agua',30,[0,1,3,4,6,8,9]),h(4,'Estirar 5 minutos',3,[1,2])]));location.reload()})()", "wait": 900 },
+        { "click": "#exportar", "wait": 500 },
+        { "eval": "window.scrollTo(0, document.body.scrollHeight)", "wait": 400 }
+      ],
+      "narracion": "Así queda en el móvil. Al pulsar descargar copia, el archivo va a tus descargas y la app te lo confirma. Guárdalo en un sitio seguro, por ejemplo en tu nube o enviándotelo por correo. Haz esta prueba completa una vez: descarga la copia, borra un hábito y recupera la copia. El hábito debe volver con todos sus días. Prueba también a recuperar un archivo cualquiera, como una foto. Debe salir el aviso y tus datos deben quedar intactos."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Manifest y service worker: la web se vuelve instalable",
+        "Como archivo no se registra; publicada, sí",
+        "Datos por dispositivo y por dirección",
+        "Tarea: publícala, instálala y descarga una copia"
+      ],
+      "narracion": "Repasamos. Con un manifest y un service worker, tu web se instala como una app. Abierta como archivo no se registran, y no pasa nada; publicada con https, sí. Los datos son de cada dispositivo y van unidos a la dirección, así que actualiza siempre en el mismo sitio y descarga copias. Tu tarea de hoy, en 20 minutos. Publica tu versión 4, instálala en tu móvil y usa la app una semana. Ya tienes el segundo proyecto terminado."
+    }
+  ]
+}

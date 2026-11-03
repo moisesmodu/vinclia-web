@@ -3,7 +3,9 @@
   "titulo": "Las herramientas: cuál usar para qué",
   "descripcion": "Conoces las tres familias de herramientas de vibe coding (chats de IA, constructores de apps en el navegador y herramientas para tu ordenador) y dónde publicar gratis, y eliges con qué empezar sin pagar nada.",
   "vistaPrevia": true,
-  "recursos": ["plantilla:herramientas-ia"],
+  "recursos": [
+    "plantilla:herramientas-ia"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -14,11 +16,27 @@
     {
       "tipo": "tabla",
       "titulo": "Tres familias de herramientas",
-      "columnas": ["Familia", "Ejemplos", "Para qué"],
+      "columnas": [
+        "Familia",
+        "Ejemplos",
+        "Para qué"
+      ],
       "filas": [
-        ["Chats de IA", "Claude, ChatGPT, Gemini", "Webs y apps de un archivo"],
-        ["Constructores en el navegador", "Lovable, Bolt, v0, Replit", "Apps con usuarios y datos"],
-        ["En tu ordenador", "Cursor, Claude Code, Copilot", "Proyectos grandes y reales"]
+        [
+          "Chats de IA",
+          "Claude, ChatGPT, Gemini",
+          "Webs y apps de un archivo"
+        ],
+        [
+          "Constructores en el navegador",
+          "Lovable, Bolt, v0, Replit",
+          "Apps con usuarios y datos"
+        ],
+        [
+          "En tu ordenador",
+          "Cursor, Claude Code, Copilot",
+          "Proyectos grandes y reales"
+        ]
       ],
       "narracion": "La primera familia son los chats de IA de siempre. Claude, ChatGPT o Gemini. Les pides el código y te lo dan. La segunda son los constructores de apps en el navegador, como Lovable, Bolt, v0 o Replit. Montan la app entera, con base de datos y cuentas de usuario. La tercera son herramientas para trabajar en tu ordenador con un proyecto de verdad, como Cursor o Claude Code. Vamos una por una."
     },
@@ -32,7 +50,7 @@
         "Todos tienen plan gratuito, con límite de uso",
         "Los planes de pago rondan los 20 euros al mes"
       ],
-      "narracion": "Los chats son la herramienta principal del curso. Claude, de la empresa Anthropic, enseña la web al lado de la conversación, en lo que llama artefactos. ChatGPT, de OpenAI, tiene un lienzo llamado Canvas. Gemini es el de Google. Los tres tienen un plan gratuito con un límite de mensajes. Si un día lo agotas, esperas o cambias a otro. Los planes individuales de pago rondan los 20 euros al mes. Los precios y límites cambian a menudo, así que mira siempre la página oficial."
+      "narracion": "Los chats son la herramienta principal del curso. Claude, de la empresa Anthropic, enseña la web al lado de la conversación, en lo que llama artefactos. ChatGPT, de OpenAI, tiene un lienzo llamado Canvas. Gemini es el de Google. Los tres tienen un plan gratuito con un límite de mensajes. Si un día lo agotas, esperas o cambias a otro. Los planes individuales de pago rondan los 20 euros al mes. Los precios y límites cambian a menudo, así que mira siempre la página oficial. Para sacar partido al plan gratuito, trabaja en conversaciones cortas y con un solo proyecto por conversación."
     },
     {
       "tipo": "web",
@@ -40,9 +58,24 @@
       "fuente": "demo:primera/v2",
       "url": "Documentos/propinas/v2/index.html",
       "acciones": [
-        { "fill": ["#total", "120"] },
-        { "click": "#propinas .chip[data-p='15']" },
-        { "click": "#mas" }, { "click": "#mas" }, { "click": "#mas" }
+        {
+          "fill": [
+            "#total",
+            "120"
+          ]
+        },
+        {
+          "click": "#propinas .chip[data-p='15']"
+        },
+        {
+          "click": "#mas"
+        },
+        {
+          "click": "#mas"
+        },
+        {
+          "click": "#mas"
+        }
       ],
       "narracion": "Esta app la hicimos con un chat gratuito, un archivo y el navegador. Podrías hacerla igual en cualquiera de los tres. El código que da cada uno será algo distinto, pero el resultado es parecido. Ciento veinte euros, un 15 por ciento de propina, cinco personas. Para webs sencillas, herramientas personales y juegos, no necesitas nada más. Y lo que aprendas así te sirve después en cualquier otra herramienta."
     },
@@ -72,23 +105,54 @@
     {
       "tipo": "tabla",
       "titulo": "Publicar en internet sin pagar",
-      "columnas": ["Servicio", "Plan gratuito", "Ojo con"],
-      "filas": [
-        ["Netlify Drop", "Arrastras la carpeta y listo", "Uso comercial dentro de límites"],
-        ["GitHub Pages", "Gratis con tu cuenta", "Revisa sus condiciones comerciales"],
-        ["Vercel", "Plan Hobby gratuito", "Solo uso personal, no comercial"]
+      "columnas": [
+        "Servicio",
+        "Plan gratuito",
+        "Ojo con"
       ],
-      "narracion": "Para publicar tu web, en el curso usamos Netlify Drop. Arrastras la carpeta a su página y te da una dirección en internet. Es gratis y admite uso comercial dentro de sus límites. GitHub Pages también es gratis, pero revisa sus condiciones si es para un negocio. Vercel tiene un plan gratuito llamado Hobby, pero es solo para uso personal no comercial. Para la web de tu negocio en Vercel tendrías que pagar."
+      "filas": [
+        [
+          "Netlify Drop",
+          "Arrastras la carpeta y listo",
+          "Uso comercial dentro de límites"
+        ],
+        [
+          "GitHub Pages",
+          "Gratis con tu cuenta",
+          "Revisa sus condiciones comerciales"
+        ],
+        [
+          "Vercel",
+          "Plan Hobby gratuito",
+          "Solo uso personal, no comercial"
+        ]
+      ],
+      "narracion": "Para publicar tu web, en el curso usamos Netlify Drop. Arrastras la carpeta a su página y te da una dirección en internet. Es gratis y admite uso comercial dentro de sus límites. GitHub Pages también es gratis, pero revisa sus condiciones si es para un negocio. Vercel tiene un plan gratuito llamado Hobby, pero es solo para uso personal no comercial. Para la web de tu negocio en Vercel tendrías que pagar. Las tres tienen algo en común. La dirección que te dan es gratuita, pero larga y con su nombre. Más adelante verás cómo usar tu propio dominio."
     },
     {
       "tipo": "tabla",
       "titulo": "Qué usar según lo que quieras",
-      "columnas": ["Si quieres…", "Usa"],
+      "columnas": [
+        "Si quieres…",
+        "Usa"
+      ],
       "filas": [
-        ["Una web o herramienta sencilla", "Un chat gratis y un index.html"],
-        ["Una app con usuarios y datos", "Lovable o Bolt, y revisión"],
-        ["Un proyecto grande en tu ordenador", "Cursor o Claude Code"],
-        ["Publicarla sin pagar", "Netlify Drop"]
+        [
+          "Una web o herramienta sencilla",
+          "Un chat gratis y un index.html"
+        ],
+        [
+          "Una app con usuarios y datos",
+          "Lovable o Bolt, y revisión"
+        ],
+        [
+          "Un proyecto grande en tu ordenador",
+          "Cursor o Claude Code"
+        ],
+        [
+          "Publicarla sin pagar",
+          "Netlify Drop"
+        ]
       ],
       "narracion": "Resumido en una regla práctica. Si quieres una web o una herramienta sencilla, un chat gratuito y un archivo index punto html. Si necesitas que la gente se registre y guarde datos, un constructor como Lovable o Bolt, y alguien que lo revise antes de abrirlo al público. Si el proyecto ya es grande, una herramienta para tu ordenador. Y para publicar, Netlify Drop."
     },
@@ -97,7 +161,7 @@
       "titulo": "Cómo no empezar y cómo sí",
       "mal": "Pagar tres suscripciones el primer día y saltar de herramienta en herramienta.",
       "bien": "Empezar con un chat gratuito y cambiar solo cuando se te quede corto.",
-      "narracion": "Un consejo. No pagues tres suscripciones el primer día ni saltes de una herramienta a otra cada vez que ves un vídeo. Lo que de verdad marca la diferencia es pedir bien y probar bien, y eso se aprende igual en cualquier herramienta. Empieza con un chat gratuito. Cuando se te quede corto, sabrás exactamente qué te falta y podrás elegir con criterio."
+      "narracion": "Un consejo. No pagues tres suscripciones el primer día ni saltes de una herramienta a otra cada vez que ves un vídeo. Lo que de verdad marca la diferencia es pedir bien y probar bien, y eso se aprende igual en cualquier herramienta. Empieza con un chat gratuito. Cuando se te quede corto, sabrás exactamente qué te falta y podrás elegir con criterio. Además, cambiar de herramienta tiene un coste escondido. Cada una guarda los proyectos a su manera y no siempre puedes llevártelos."
     },
     {
       "tipo": "pasos",

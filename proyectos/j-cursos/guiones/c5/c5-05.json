@@ -3,7 +3,10 @@
   "titulo": "Archivos, carpetas y el navegador: tu taller",
   "descripcion": "Preparas tu taller de trabajo: una carpeta por proyecto, el código guardado en un archivo index.html que se abre con doble clic, y la consola del navegador para ver los errores.",
   "vistaPrevia": false,
-  "recursos": ["plantilla:chuleta-web", "demo:primera"],
+  "recursos": [
+    "plantilla:chuleta-web",
+    "demo:primera"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -20,7 +23,7 @@
         "El navegador lo lee y lo convierte en la app",
         "No necesita internet para funcionar en tu equipo"
       ],
-      "narracion": "Empecemos por quitarle misterio. Una página web es un archivo de texto normal y corriente. Lo único especial es que su nombre termina en punto html. El navegador, ya sea Chrome, Edge, Firefox o Safari, lee ese texto y lo convierte en lo que ves. El nombre index punto html se usa para la página principal, y cuando la publiques, los servicios buscarán un archivo con ese nombre. Tus apps del curso no necesitan internet para funcionar."
+      "narracion": "Empecemos por quitarle misterio. Una página web es un archivo de texto normal y corriente. Lo único especial es que su nombre termina en punto html. El navegador, ya sea Chrome, Edge, Firefox o Safari, lee ese texto y lo convierte en lo que ves. El nombre index punto html se usa para la página principal, y cuando la publiques, los servicios buscarán un archivo con ese nombre. Tus apps del curso no necesitan internet para funcionar. Y como es texto, lo puedes abrir y modificar con cualquier editor, igual que una carta. No necesitas ningún programa especial ni pagar nada."
     },
     {
       "tipo": "pasos",
@@ -52,7 +55,7 @@
         "    v3/index.html",
         "    instrucciones.txt"
       ],
-      "narracion": "Te propongo este orden, que es el mismo que tiene la app de ejemplo del curso. Una carpeta por proyecto. Dentro, una subcarpeta por versión, cada una con su index punto html. Y un archivo de texto donde pegas las instrucciones que le diste a la IA. Así, si la versión tres se estropea, la dos sigue intacta. Más adelante aprenderás a guardar versiones con Git, pero este sistema de carpetas ya te salva de muchos sustos."
+      "narracion": "Te propongo este orden, que es el mismo que tiene la app de ejemplo del curso. Una carpeta por proyecto. Dentro, una subcarpeta por versión, cada una con su index punto html. Y un archivo de texto donde pegas las instrucciones que le diste a la IA. Así, si la versión tres se estropea, la dos sigue intacta. Más adelante aprenderás a guardar versiones con Git, pero este sistema de carpetas ya te salva de muchos sustos. Si trabajas así, nunca pierdes lo que ya funcionaba. Y cuando la IA te devuelva una versión nueva, la guardas en una carpeta nueva en lugar de machacar la anterior."
     },
     {
       "tipo": "web",
@@ -60,10 +63,17 @@
       "fuente": "demo:primera/v2",
       "url": "Documentos/propinas/v2/index.html",
       "acciones": [
-        { "fill": ["#total", "45,80"] },
-        { "click": "#mas" }
+        {
+          "fill": [
+            "#total",
+            "45,80"
+          ]
+        },
+        {
+          "click": "#mas"
+        }
       ],
-      "narracion": "Así se ve tu app abierta desde tu propia carpeta. Mira la barra de direcciones. No pone una dirección de internet, sino la ruta del archivo en tu ordenador. Funciona igual que en el chat. Si cambias algo en el archivo, guarda y recarga la página para ver el cambio. En Windows se recarga con la tecla F5 y en un Mac con comando y la letra R."
+      "narracion": "Así se ve tu app abierta desde tu propia carpeta. Mira la barra de direcciones. No pone una dirección de internet, sino la ruta del archivo en tu ordenador. Funciona igual que en el chat. Si cambias algo en el archivo, guarda y recarga la página para ver el cambio. En Windows se recarga con la tecla F5 y en un Mac con comando y la letra R. Si después de recargar no ves el cambio, comprueba que has guardado el archivo y que estás abriendo el de la carpeta correcta. Es el despiste más común."
     },
     {
       "tipo": "puntos",
@@ -85,14 +95,14 @@
         "Los errores salen en rojo, con el número de línea",
         "Copia el error tal cual y pégaselo a la IA"
       ],
-      "narracion": "Ahora, la herramienta más útil que vas a aprender hoy. La consola del navegador. Ábrela con la tecla F12, o con clic derecho en la página e Inspeccionar. Busca la pestaña Consola. Si la app tiene un error, aparece ahí en rojo, con el número de la línea. No hace falta que lo entiendas. Cópialo tal cual y pégaselo a la IA. Con ese texto, arreglarlo suele ser cuestión de un mensaje."
+      "narracion": "Ahora, la herramienta más útil que vas a aprender hoy. La consola del navegador. Ábrela con la tecla F12, o con clic derecho en la página e Inspeccionar. Busca la pestaña Consola. Si la app tiene un error, aparece ahí en rojo, con el número de la línea. No hace falta que lo entiendas. Cópialo tal cual y pégaselo a la IA. Con ese texto, arreglarlo suele ser cuestión de un mensaje. Un consejo extra. Ten la consola abierta mientras pruebas. Así ves los errores en el momento en que pasan, y no cuando ya no recuerdas qué pulsaste."
     },
     {
       "tipo": "chat",
       "titulo": "Si no sabes cómo hacerlo, pregunta",
       "usuario": "Me has dado el código de la app. Uso Windows y Chrome y no he programado nunca. Explícame paso a paso cómo guardarlo como index.html en una carpeta llamada propinas y cómo abrirlo.",
       "ia": "Da los pasos numerados: crear la carpeta, abrir el Bloc de notas, pegar, Guardar como con «Todos los archivos» y UTF-8, y doble clic. Avisa de la trampa del .txt.",
-      "narracion": "Y si te pierdes, pregunta a la propia IA. Dile qué sistema y qué navegador usas y que no has programado nunca. Te dará los pasos para tu caso concreto. Esto vale para todo el curso. La IA no solo escribe código. También es tu ayudante para lo que rodea al código, como guardar archivos, encontrar un menú o entender un mensaje de error."
+      "narracion": "Y si te pierdes, pregunta a la propia IA. Dile qué sistema y qué navegador usas y que no has programado nunca. Te dará los pasos para tu caso concreto. Esto vale para todo el curso. La IA no solo escribe código. También es tu ayudante para lo que rodea al código, como guardar archivos, encontrar un menú o entender un mensaje de error. Pregunta todas las veces que haga falta. No hay preguntas tontas para una IA, y no se cansa de explicar lo mismo."
     },
     {
       "tipo": "resumen",

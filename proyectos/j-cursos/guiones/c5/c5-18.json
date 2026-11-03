@@ -1,0 +1,113 @@
+{
+  "id": "c5-18",
+  "titulo": "Rachas, estadísticas y un gráfico",
+  "descripcion": "Añades a la app de hábitos las rachas de días seguidos, las cifras de la última semana y un gráfico de barras dibujado sin librerías. Aprendes a definir reglas exactas para la IA y a probar los casos raros con datos de ejemplo.",
+  "vistaPrevia": false,
+  "recursos": ["demo:habitos", "plantilla:pantallas-y-datos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Rachas, estadísticas y un gráfico",
+      "subtitulo": "Versión 3 de la app de hábitos",
+      "narracion": "Ya tienes una lista que se guarda sola. Hoy le damos lo que hace que vuelvas cada día: ver tu progreso. Rachas de días seguidos, las cifras de la última semana y un gráfico de barras. Aquí aprenderás algo que vale para cualquier app con cálculos. La IA calcula muy rápido, pero no sabe qué quieres contar. Si no le das reglas exactas, se las inventa. Y luego tú tienes que comprobar que las cuentas salen."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Primero, las reglas exactas",
+      "columnas": ["Pregunta", "Nuestra regla"],
+      "filas": [
+        ["¿Qué es una racha?", "Días seguidos hechos hasta hoy"],
+        ["¿Hoy aún sin marcar?", "Cuenta hasta ayer: aún tienes el día"],
+        ["¿Hábito creado hace 3 días?", "No cuentan los días de antes"],
+        ["¿Qué es un día completo?", "Todos los hábitos de ese día hechos"],
+        ["¿Qué semana?", "Los últimos 7 días, hoy incluido"]
+      ],
+      "narracion": "Antes de escribir la instrucción, decide las reglas. ¿Qué es una racha? Los días seguidos que has hecho un hábito hasta hoy. ¿Y si son las diez de la mañana y aún no has leído? Si la racha se pusiera a cero, la app te castigaría cada mañana. Nuestra regla: si hoy no está hecho, cuenta hasta ayer. ¿Un hábito que creaste hace tres días ha fallado los cuatro anteriores? No, esos días no cuentan. Y la semana son los últimos siete días, hoy incluido."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 3: rachas, semana y gráfico",
+      "usuario": "Funciona bien. Siguiente paso: estadísticas, sin librerías. 1) Racha de cada hábito: días seguidos hechos hasta hoy; si hoy aún no está hecho, cuenta hasta ayer. 2) Bajo el nombre, la racha y 7 puntos con los últimos 7 días. 3) Panel «Últimos 7 días»: porcentaje cumplido, días completos y mejor racha; los días anteriores a «creado» no cuentan. 4) Gráfico de barras en SVG con los hábitos hechos cada día; hoy en naranja. En ordenador, panel a la derecha; en móvil, debajo. No cambies nada más.",
+      "ia": "He añadido una función racha, el panel de los últimos 7 días y un gráfico dibujado en SVG, sin librerías. En pantallas anchas el panel va a la derecha y en el móvil, debajo de la lista.",
+      "narracion": "Esta es la instrucción, y verás que las reglas van dentro, con números. Uno, la racha y qué pasa si hoy no está hecho. Dos, lo que se ve bajo cada nombre. Tres, el panel de la semana y la regla de los días antes de crear el hábito. Cuatro, el gráfico, con un detalle de diseño: hoy en naranja. Y dónde va cada cosa en ordenador y en móvil. La IA devuelve el archivo con todo. Ahora viene lo importante: comprobar."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 3 con tres semanas de datos",
+      "fuente": "demo:habitos/v3",
+      "url": "archivo: habitos/v3/index.html",
+      "acciones": [
+        { "eval": "(()=>{const k=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('sv')};const h=(id,nombre,c,ds)=>({id,nombre,creado:k(c),hechos:ds.map(k)});localStorage.setItem('mis-habitos',JSON.stringify([h(1,'Leer 10 minutos',30,[0,1,2,3,4,5,6,7,8,9,10,11,12,15,16]),h(2,'Caminar 30 minutos',30,[1,2,3,4,5,7,8,10]),h(3,'Beber 2 litros de agua',30,[0,1,3,4,6,8,9]),h(4,'Estirar 5 minutos',3,[1,2])]));location.reload()})()", "wait": 900 }
+      ],
+      "narracion": "Así queda la versión 3. Para que veas el gráfico lleno, he cargado datos de ejemplo de unas tres semanas. Leer lleva trece días seguidos. Caminar lleva cinco: hoy aún no está marcado, pero la racha no se rompe. Estirar se creó hace tres días, y sus puntos de antes salen punteados. A la derecha, el porcentaje de la semana, los días completos y la mejor racha. Y el gráfico, con una barra por día y la de hoy en naranja."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Cómo se cuenta una racha",
+      "archivo": "v3/index.html",
+      "lenguaje": "javascript",
+      "codigo": "function racha(habito) {\n  const hechos = new Set(habito.hechos);\n  const dia = new Date();\n  if (!hechos.has(clave(dia))) dia.setDate(dia.getDate() - 1);\n  let n = 0;\n  while (hechos.has(clave(dia))) {\n    n++;\n    dia.setDate(dia.getDate() - 1);\n  }\n  return n;\n}",
+      "narracion": "Este es el trozo que cuenta la racha, y se lee casi como una frase. Empieza por hoy. Si hoy no está hecho, retrocede a ayer: esa es nuestra regla. Luego, mientras el día esté en la lista de hechos, suma uno y retrocede otro día. Cuando encuentra un hueco, para. Fíjate en que no guarda la racha en ningún sitio. La calcula cada vez a partir de los días, como decidimos en el plan."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cómo probar sin esperar tres semanas",
+      "puntos": [
+        "Pide a la IA un botón temporal «Datos de ejemplo»",
+        "Que cree 4 hábitos con días hechos en el pasado",
+        "Prueba, revisa las cuentas y luego quítalo",
+        "Usa una copia de la carpeta para no mezclar datos"
+      ],
+      "narracion": "Para comprobar una racha de trece días, no vas a esperar trece días. Pide a la IA un botón temporal de datos de ejemplo. Que cree cuatro hábitos con días hechos en el pasado, contados desde hoy. Lo pulsas, revisas las cuentas y, cuando todo cuadre, pides que lo quite. Un aviso: esos datos se guardan en el mismo cajón que los tuyos. Haz las pruebas antes de empezar a usar la app de verdad, o en otro navegador."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Comprueba las cuentas a mano",
+      "pasos": [
+        "Cuenta los puntos de un hábito y compara con su racha",
+        "Desmarca hoy: la racha no debe bajar a cero",
+        "Crea un hábito nuevo: el porcentaje no debe hundirse",
+        "Suma las barras y compara con el porcentaje",
+        "Mira el cambio de mes: del 31 al 1 sigue la racha"
+      ],
+      "narracion": "Con los datos de ejemplo, comprueba con papel y lápiz. Cuenta los puntos verdes seguidos de un hábito y compáralos con su racha. Desmarca hoy en un hábito con racha: debe quedarse en la de ayer, no en cero. Crea un hábito nuevo: el porcentaje de la semana no debe desplomarse. Suma las barras y comprueba que encaja con el porcentaje. Y si tus datos cruzan un cambio de mes, mira que la racha no se corte el día uno. Si algo falla, cópialo tal cual en el chat."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los días antes de crear el hábito no cuentan",
+      "archivo": "v3/index.html",
+      "lenguaje": "javascript",
+      "codigo": "const porDia = dias.map(d => {\n  const activos = habitos.filter(h => h.creado <= d);\n  const n = activos.filter(h => h.hechos.includes(d)).length;\n  posibles += activos.length;\n  hechos += n;\n  if (activos.length && n === activos.length) completos++;\n  return n;\n});\nconst pct = posibles ? Math.round(hechos / posibles * 100) : 0;",
+      "narracion": "Y aquí ves la regla del hábito nuevo convertida en código. Para cada uno de los siete días, primero filtra los hábitos que ya existían ese día. Solo esos cuentan como posibles. Luego cuenta cuántos se hicieron. Si se hicieron todos, ese día es completo. Al final, el porcentaje es hechos entre posibles. Esa línea con el filtro por fecha de creación es la que tienes que buscar si el porcentaje te parece raro. Sin ella, cada hábito nuevo hundiría tu semana."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "El gráfico: ¿librería o SVG a mano?",
+      "mal": "Una librería de gráficos descargada de internet para una sola gráfica de 7 barras.",
+      "bien": "Un SVG de unas 20 líneas: funciona sin internet y no hay nada que actualizar.",
+      "narracion": "Para el gráfico pedimos SVG sin librerías. SVG es un formato de dibujo que el navegador entiende: rectángulos, líneas y textos con sus medidas. Existen librerías de gráficos muy buenas, como Chart.js. Para un panel con muchos gráficos, merecen la pena. Para siete barras, no. Añaden un archivo de fuera que puede fallar si no hay internet. Con SVG, la app sigue siendo un solo archivo, y eso será clave en la próxima clase, cuando la instalemos en el móvil."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Las estadísticas en el móvil",
+      "nota": "En el móvil, el panel y el gráfico van debajo de la lista.",
+      "fuente": "demo:habitos/v3@movil",
+      "acciones": [
+        { "eval": "(()=>{const k=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('sv')};const h=(id,nombre,c,ds)=>({id,nombre,creado:k(c),hechos:ds.map(k)});localStorage.setItem('mis-habitos',JSON.stringify([h(1,'Leer 10 minutos',30,[0,1,2,3,4,5,6,7,8,9,10,11,12,15,16]),h(2,'Caminar 30 minutos',30,[1,2,3,4,5,7,8,10]),h(3,'Beber 2 litros de agua',30,[0,1,3,4,6,8,9]),h(4,'Estirar 5 minutos',3,[1,2])]));location.reload()})()", "wait": 900 },
+        { "eval": "document.querySelector('.columna-stats').scrollIntoView()", "wait": 400 }
+      ],
+      "narracion": "En el móvil, el panel baja debajo de la lista, como pedimos. Las tres cifras caben en una fila y el gráfico se adapta al ancho de la pantalla. Comprueba esto también tú: estrecha la ventana del navegador o abre el archivo en el móvil. Si las cifras se montan unas encima de otras, dile a la IA exactamente qué ves y en qué ancho. Por ejemplo: en el móvil, el porcentaje se parte en dos líneas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Escribe las reglas antes de pedir los cálculos",
+        "Racha: si hoy no está hecho, cuenta hasta ayer",
+        "Prueba con datos de ejemplo y cuentas a mano",
+        "Tarea: construye la versión 3 y comprueba 3 rachas"
+      ],
+      "narracion": "Repasamos. Antes de pedir cálculos, escribe las reglas exactas, porque la IA no sabe qué quieres contar. Nuestra racha no se rompe hasta que acaba el día. Los días anteriores a crear un hábito no cuentan. Y prueba con datos de ejemplo y con papel y lápiz. Tu tarea de hoy, en 25 minutos. Construye la versión 3 a partir de tu versión 2. Comprueba a mano la racha de tres hábitos. En la próxima clase, la instalamos en el móvil."
+    }
+  ]
+}

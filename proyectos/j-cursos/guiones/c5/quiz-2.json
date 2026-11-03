@@ -1,0 +1,60 @@
+{
+  "seccion": 2,
+  "titulo": "Cuestionario: lo mínimo que tienes que entender",
+  "preguntas": [
+    {
+      "pregunta": "Quieres que los botones de propina de tu app sean naranjas en lugar de verdes. ¿En qué parte de la página está ese cambio?",
+      "respuestas": [
+        "En el HTML",
+        "En el CSS",
+        "En el JavaScript",
+        "En el nombre del archivo"
+      ],
+      "correcta": 1,
+      "explicacion": "El CSS decide cómo se ve cada cosa: colores, tamaños y espacios. El HTML dice qué hay en la página y el JavaScript, qué pasa al pulsar."
+    },
+    {
+      "pregunta": "Guardas el código en el Bloc de notas y, al hacer doble clic, ves el texto del código en lugar de la app. ¿Qué es lo más probable?",
+      "respuestas": [
+        "El archivo se ha guardado como index.html.txt",
+        "La IA ha escrito mal todo el código",
+        "Hace falta conexión a internet para abrirlo",
+        "El navegador no admite archivos HTML"
+      ],
+      "correcta": 0,
+      "explicacion": "Windows oculta las extensiones y el Bloc de notas puede añadir .txt. Al guardar, elige «Todos los archivos» y codificación UTF-8, y llama al archivo index.html."
+    },
+    {
+      "pregunta": "Dejas vacío el total, pulsas Calcular y la app dice «Cada uno paga: NaN €», sin ningún error en la consola. ¿Qué tipo de problema es?",
+      "respuestas": [
+        "Un invento de la IA",
+        "Un problema de la conexión",
+        "Un riesgo de seguridad",
+        "Un fallo silencioso: funciona, pero el resultado está mal"
+      ],
+      "correcta": 3,
+      "explicacion": "Nada se queja, pero el resultado no tiene sentido. Estos fallos solo se descubren probando casos raros: campos vacíos, cero, negativos, coma decimal o el móvil."
+    },
+    {
+      "pregunta": "La consola dice «total.toEuros is not a function» después de un cambio que hizo la IA. ¿Qué haces?",
+      "respuestas": [
+        "Borrar el archivo y empezar de cero",
+        "Copiar el error y pedir que lo arregle con funciones estándar",
+        "Ignorarlo si la página se ve bien",
+        "Buscar e instalar una librería llamada toEuros"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una alucinación: la IA ha usado una función que no existe. Pega el error tal cual y pide que use solo funciones que existan en todos los navegadores. Luego prueba otra vez."
+    },
+    {
+      "pregunta": "Tu app va a usar un servicio que te ha dado una clave secreta. ¿Dónde debe ir esa clave?",
+      "respuestas": [
+        "Dentro del HTML, al principio del archivo",
+        "Pegada en el chat para que la IA la use",
+        "En un servidor o en los ajustes de secretos de la herramienta"
+      ],
+      "correcta": 2,
+      "explicacion": "Todo lo que hay en una página web lo puede ver cualquiera con «Ver código fuente». Una clave en el HTML o en el chat la puede copiar otra persona y gastar a tu nombre."
+    }
+  ]
+}

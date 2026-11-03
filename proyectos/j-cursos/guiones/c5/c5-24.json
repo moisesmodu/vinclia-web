@@ -1,0 +1,155 @@
+{
+  "id": "c5-24",
+  "titulo": "El plan: un juego que se entienda en 5 segundos",
+  "descripcion": "Diseñas en una página un juego original de atrapar objetos para el navegador: objetivo, controles, cómo se gana y se pierde y qué lo hace más difícil. Y pides a la IA la primera versión, en la que ya se mueve la cesta y cae la fruta.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:diseno-de-juego",
+    "demo:juego"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Proyecto 4: un juego",
+      "subtitulo": "El plan: que se entienda en 5 segundos",
+      "narracion": "Llegamos al último proyecto, y es el más divertido: un juego. Vas a crear un juego de navegador que funciona en el ordenador y en el móvil, y que podrás compartir con un enlace. En esta clase lo diseñamos en una página y pedimos la primera versión. En la siguiente lo haremos jugable, con choques, puntos y vidas. Y en la última lo puliremos y lo publicaremos. Como siempre, la IA escribe el código. Tú decides y compruebas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué un juego",
+      "puntos": [
+        "Ves enseguida si funciona: o se mueve o no se mueve",
+        "Aprendes ideas que sirven para cualquier app",
+        "Se comparte fácil: un enlace y a jugar",
+        "Es un regalo, un reclamo o una actividad de clase"
+      ],
+      "narracion": "Puede parecer un capricho, pero un juego es un proyecto estupendo para aprender. Ves enseguida si funciona, porque algo se mueve o no se mueve. Trabajas ideas que luego aparecen en cualquier app, como el estado, los eventos y el dibujo en pantalla. Y se comparte muy fácil. Un juego sencillo puede ser un regalo de cumpleaños, un reclamo en la web de tu negocio o una actividad para tus alumnos. Eso sí, empezamos pequeño."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Si alguien no entiende tu juego en 5 segundos, cierra la pestaña.",
+      "narracion": "Esta es la regla que guía todo el proyecto. La gente juega con el móvil en la mano, en un rato muerto. Si al abrir tu juego no entiende en 5 segundos qué tiene que hacer, se va. Por eso no vamos a inventar un juego con mil reglas. Elegimos una idea que se explica en una frase. En nuestro caso, mueve la cesta, atrapa la fruta y esquiva las piedras. Si tu idea necesita un párrafo, recórtala."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El diseño en una página: Lluvia de fruta",
+      "columnas": [
+        "Apartado",
+        "Lluvia de fruta"
+      ],
+      "filas": [
+        [
+          "Objetivo",
+          "Atrapar fruta con una cesta"
+        ],
+        [
+          "Controles",
+          "Flechas, o el dedo en el móvil"
+        ],
+        [
+          "Ganar y perder",
+          "Fruta suma; 3 piedras y fin"
+        ],
+        [
+          "Más difícil",
+          "Cada 10 puntos, todo más rápido"
+        ]
+      ],
+      "narracion": "Antes de abrir el chat, rellena la plantilla de diseño de juego. La tienes en los recursos de esta clase. Son cuatro apartados. El objetivo, en una frase. Los controles, en el ordenador y en el móvil. Cómo se gana y cómo se pierde. Y qué lo hace más difícil con el tiempo. Nuestro juego se llama Lluvia de fruta. Cada fruta que entra en la cesta suma un punto. Cada piedra quita una vida, y con tres piedras se acaba. Y cada 10 puntos todo cae más deprisa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Original y dibujado con formas",
+      "puntos": [
+        "Una idea clásica, con tu tema y tu nombre",
+        "Nada de personajes ni músicas de otros juegos",
+        "Gráficos dibujados con círculos y rectángulos",
+        "Sin imágenes descargadas: no hay líos de derechos"
+      ],
+      "narracion": "Atrapar cosas que caen es una mecánica clásica, y usarla está bien. Lo que no debes copiar son los personajes, los nombres, las músicas ni los dibujos de juegos famosos. Tienen dueño. Además, si lo publicas, te puede dar problemas. Nuestra solución es sencilla. Todo se dibuja con formas en el propio código: círculos para la fruta, un trapecio para la cesta y polígonos grises para las piedras. Así no hay imágenes que descargar ni derechos que pedir."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Las cuatro piezas de cualquier juego",
+      "pasos": [
+        "Un lienzo, el canvas, donde se dibuja todo",
+        "El estado: dónde está cada cosa, puntos y vidas",
+        "Las entradas: teclas, dedo y botones",
+        "El bucle: actualizar y dibujar unas 60 veces por segundo"
+      ],
+      "narracion": "No necesitas programar, pero sí entender cuatro palabras para hablar con la IA. El canvas es un lienzo dentro de la página donde el juego dibuja. El estado son los datos del momento: dónde está la cesta, qué está cayendo, cuántos puntos llevas. Las entradas son lo que hace el jugador. Y el bucle es el corazón. Unas 60 veces por segundo, el juego actualiza el estado y vuelve a dibujarlo todo. Como los dibujos animados de un cuaderno."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El plan en versiones",
+      "columnas": [
+        "Versión",
+        "Qué añade"
+      ],
+      "filas": [
+        [
+          "v1 (hoy)",
+          "La cesta se mueve y cae fruta"
+        ],
+        [
+          "v2",
+          "Choques, puntos, vidas y fin"
+        ],
+        [
+          "v3",
+          "Dificultad, móvil, récord y sonido"
+        ],
+        [
+          "v4",
+          "Pausa, accesibilidad y publicar"
+        ]
+      ],
+      "narracion": "Ahora divide el juego en versiones, igual que hiciste con la web y con las apps. Hoy, la versión uno: solo la cesta que se mueve y la fruta que cae, sin puntos. En la siguiente clase, choques, puntos, vidas y fin de partida. Después, dificultad creciente, controles para el móvil, récord y sonido. Y al final, pausa, accesibilidad y publicarlo. Cada versión se prueba y se guarda antes de pedir la siguiente."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La primera instrucción",
+      "usuario": "Quiero hacer un juego para el navegador en un solo archivo index.html, con HTML, CSS y JavaScript dentro, sin librerías ni imágenes externas. Se llama «Lluvia de fruta». Paso 1, solo esto: un canvas de 800 por 500 con cielo, colinas y la copa de un árbol arriba, todo dibujado con formas. Abajo, una cesta que se mueve con las flechas izquierda y derecha sin salirse. Desde arriba caen manzanas, peras y cerezas en sitios al azar. Todavía sin puntos ni choques. Añade una función window.__demo(segundos) que juegue sola con una semilla fija, para hacer capturas. Textos en castellano de España.",
+      "ia": "Aquí tienes el archivo completo. Dibujo el fondo una vez y lo reutilizo. Un bucle con requestAnimationFrame actualiza y dibuja la escena, con pasos fijos para que la velocidad no dependa del ordenador. La cesta se mueve con las flechas y se queda dentro. Cada 0,9 segundos aparece una fruta. __demo usa números al azar con semilla, así la partida sale siempre igual. Guárdalo como index.html y ábrelo con doble clic.",
+      "narracion": "Esta es la instrucción de la versión uno. Fíjate en las tres partes de siempre. Contexto: un solo archivo, sin librerías ni imágenes. Tarea: el fondo, la cesta y la fruta. Y límites: todavía sin puntos ni choques. Hay una petición extra que te recomiendo. Una función de demostración que juega sola con una semilla fija. La semilla hace que el azar salga siempre igual. Sirve para hacer capturas y, sobre todo, para repetir un fallo cuantas veces quieras."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 1 en el navegador",
+      "fuente": "demo:juego/v1",
+      "url": "lluvia-de-fruta/index.html",
+      "acciones": [
+        {
+          "eval": "__demo(6)"
+        }
+      ],
+      "narracion": "Guarda el archivo, ábrelo con doble clic y prueba. Pulsa las flechas. La cesta se mueve y se para en los bordes. La fruta cae desde la copa del árbol. Y como aún no hay choques, la fruta atraviesa la cesta. Es lo que pedimos, así que está bien. Comprueba también qué pasa si mantienes pulsada una flecha mucho rato, o si pulsas las dos a la vez. Si algo falla, cuéntaselo a la IA con lo que esperabas y lo que ha pasado."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Así nace cada fruta",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function crearFruta() {\n  frutas.push({\n    x: 40 + rnd() * (W - 80), y: -20, r: 20,\n    tipo: TIPOS[Math.floor(rnd() * TIPOS.length)],\n    velocidad: 150 + rnd() * 60\n  });\n}",
+      "narracion": "Echa un vistazo a un trozo del código, aunque no programes. Esta función crea una fruta nueva. Le da una posición al azar a lo ancho, un poco por encima de la pantalla. Elige al azar si es manzana, pera o cereza. Y le pone una velocidad de caída, también algo al azar, para que no caigan todas igual. Si quisieras que cayeran más despacio, ya sabes qué número tocar, o qué pedirle a la IA."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Todo de golpe frente a paso a paso",
+      "mal": "Hazme un juego de atrapar fruta completo, con niveles, sonido, récord, móvil y pantalla de inicio.",
+      "bien": "Paso 1, solo esto: la cesta se mueve con las flechas y cae fruta. Todavía sin puntos.",
+      "narracion": "Puede que te tiente pedirlo todo de una vez. A veces sale, pero cuando algo falla no sabes dónde está el problema. Y en los juegos fallan cosas raras: la cesta que se sale, la fruta que no se ve, el teclado que mueve la página. Con pasos pequeños, cada error tiene un sitio claro. Pierdes cinco minutos en la primera versión y ganas una hora en las siguientes."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Una idea que se explique en una frase",
+        "Rellena la plantilla de diseño de juego",
+        "Gráficos originales, dibujados con formas",
+        "Pide la versión 1 y pruébala con el teclado"
+      ],
+      "narracion": "Repasamos. Un buen primer juego se entiende en 5 segundos y se explica en una frase. Antes de pedir nada, rellena la plantilla de diseño de juego: objetivo, controles, cómo se gana y se pierde, y qué lo hace más difícil. Usa gráficos dibujados con formas, sin copiar a nadie. Tu tarea de hoy es elegir tu idea, rellenar la plantilla y conseguir tu versión uno. Puede ser fruta, copos de nieve o lo que quieras. En la próxima clase lo convertimos en un juego de verdad."
+    }
+  ]
+}

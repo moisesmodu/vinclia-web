@@ -94,18 +94,20 @@ tr.h td{visibility:hidden}
 <div id="s"><i class="blob b1"></i><i class="blob b2"></i><div class="in" id="in"></div><div class="foot" id="foot"></div></div>
 <script>
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const hl = (src, lang) => { let t = esc(src);
-  if (lang === 'term') return t.split('\n').map((l, i) => l.startsWith('$ ') ? `<span class="cmd">${l.slice(2)}</span>` : l).join('\n');
-  t = t.replace(/(&lt;!--[\s\S]*?--&gt;|\/\/[^\n]*|\/\*[\s\S]*?\*\/)/g, '\u0001cm\u0002$1\u0003');
-  t = t.replace(/(&quot;[^\n]*?&quot;|&#39;[^\n]*?&#39;|`[^`\n]*`)/g, m => m.includes('\u0001') ? m : '\u0001st\u0002' + m + '\u0003');
-  t = t.replace(/(&lt;\/?)([a-zA-Z][\w-]*)/g, (m, a, b) => a + '\u0001tg\u0002' + b + '\u0003');
-  t = t.replace(/\b(const|let|var|function|return|if|else|for|while|of|in|new|true|false|null|await|async|import|export|from|class)\b/g, '\u0001k\u0002$1\u0003');
-  t = t.replace(/\b(\d+(?:\.\d+)?)\b/g, '\u0001nu\u0002$1\u0003');
-  // los marcadores se anidan mal si caen dentro de otro: se quitan los internos
-  let out = '', depth = 0; for (let i = 0; i < t.length; i++) { const ch = t[i];
-    if (ch === '\u0001') { const j = t.indexOf('\u0002', i); const cls = t.slice(i + 1, j); if (depth++ === 0) out += `<span class="${cls}">`; i = j; }
-    else if (ch === '\u0003') { if (--depth === 0) out += '</span>'; } else out += ch; }
-  return out; };
+const hl = (src, lang) => {
+  if (lang === 'term') return esc(src).split('\n').map(l => l.startsWith('$ ') ? `<span class="cmd">${l.slice(2)}</span>` : l).join('\n');
+  // una sola pasada: comentario | cadena | etiqueta | palabra clave | número (así un // dentro de una cadena no es comentario)
+  const re = /(<!--[\s\S]*?-->|\/\*[\s\S]*?\*\/|\/\/[^\n]*)|("(?:\\.|[^"\\\n])*"|'(?:\\.|[^'\\\n])*'|`[^`]*`)|(<\/?)([a-zA-Z][\w-]*)|\b(const|let|var|function|return|if|else|for|while|of|in|new|true|false|null|await|async|import|export|from|class)\b|\b(\d+(?:\.\d+)?)\b/g;
+  let out = '', last = 0, m;
+  while ((m = re.exec(src))) {
+    out += esc(src.slice(last, m.index)); last = re.lastIndex;
+    if (m[1]) out += `<span class="cm">${esc(m[1])}</span>`;
+    else if (m[2]) out += `<span class="st">${esc(m[2])}</span>`;
+    else if (m[4]) out += esc(m[3]) + `<span class="tg">${esc(m[4])}</span>`;
+    else if (m[5]) out += `<span class="k">${m[5]}</span>`;
+    else out += `<span class="nu">${m[6]}</span>`;
+  }
+  return out + esc(src.slice(last)); };
 const lines = (html, n) => html.split('\n').map((l, i) => i >= n ? `<span class="h">${l}</span>` : l).join('\n');
 // fit: si el contenido no cabe, se reduce (como shrink() de present.js) hasta el 70 %
 function fit() { const inn = document.getElementById('in'), c = inn.firstElementChild; if (!c) return; c.style.zoom = 1; const h = c.scrollHeight, H = inn.clientHeight, w = c.scrollWidth, W = inn.clientWidth; const z = Math.min(1, H / h, W / w); if (z < 1) c.style.zoom = Math.max(.6, z * .98).toFixed(3); }

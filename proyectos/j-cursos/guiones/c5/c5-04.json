@@ -3,7 +3,10 @@
   "titulo": "Cómo funciona una web: HTML, CSS y JavaScript sin tecnicismos",
   "descripcion": "Distingues las tres partes de cualquier web (HTML, CSS y JavaScript) sobre tu propia app de la cuenta, y aprendes a pedir cambios a la IA diciendo en qué parte están.",
   "vistaPrevia": false,
-  "recursos": ["plantilla:chuleta-web", "demo:primera"],
+  "recursos": [
+    "plantilla:chuleta-web",
+    "demo:primera"
+  ],
   "escenas": [
     {
       "tipo": "portada",
@@ -28,11 +31,45 @@
       "fuente": "demo:primera/v3",
       "url": "Documentos/propinas/v3/index.html",
       "acciones": [
-        { "fill": ["#plan", "Cumple de Laura"] },
-        { "fill": ["#total", "64,50"] },
-        { "fill": ["#nombre", "Ana"] }, { "press": "Enter" },
-        { "fill": ["#nombre", "Luis"] }, { "press": "Enter" },
-        { "fill": ["#nombre", "Marta"] }, { "press": "Enter" }
+        {
+          "fill": [
+            "#plan",
+            "Cumple de Laura"
+          ]
+        },
+        {
+          "fill": [
+            "#total",
+            "64,50"
+          ]
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Ana"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Luis"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Marta"
+          ]
+        },
+        {
+          "press": "Enter"
+        }
       ],
       "narracion": "Esta es la versión tres, funcionando, con las tres partes trabajando juntas. Los campos, los botones y los textos son HTML. El verde azulado, las tarjetas blancas y las esquinas redondas son CSS. Y que al escribir un nombre aparezca en la lista y cambie lo que paga cada uno es JavaScript. Ahora vamos a quitar piezas para ver qué hace cada una."
     },
@@ -42,13 +79,41 @@
       "fuente": "demo:primera/v3",
       "url": "Documentos/propinas/v3/index.html",
       "acciones": [
-        { "fill": ["#plan", "Cumple de Laura"] },
-        { "fill": ["#total", "64,50"] },
-        { "fill": ["#nombre", "Ana"] }, { "press": "Enter" },
-        { "fill": ["#nombre", "Luis"] }, { "press": "Enter" },
-        { "eval": "document.querySelectorAll('style').forEach(s => s.remove())" }
+        {
+          "fill": [
+            "#plan",
+            "Cumple de Laura"
+          ]
+        },
+        {
+          "fill": [
+            "#total",
+            "64,50"
+          ]
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Ana"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "fill": [
+            "#nombre",
+            "Luis"
+          ]
+        },
+        {
+          "press": "Enter"
+        },
+        {
+          "eval": "document.querySelectorAll('style').forEach(s => s.remove())"
+        }
       ],
-      "narracion": "Hemos quitado todo el CSS de la página. Mira qué queda. Están todos los elementos, el título, los campos, los botones y la lista. Pero parece un documento de los años noventa. Letra por defecto, sin colores, todo apilado. Eso es el HTML a pelo. Tiene el contenido y el orden, pero no el aspecto. Si un día algo se ve raro pero todo está ahí, el problema suele estar en el CSS."
+      "narracion": "Hemos quitado todo el CSS de la página. Mira qué queda. Están todos los elementos, el título, los campos, los botones y la lista. Pero parece un documento de los años noventa. Letra por defecto, sin colores, todo apilado. Eso es el HTML a pelo. Tiene el contenido y el orden, pero no el aspecto. Si un día algo se ve raro pero todo está ahí, el problema suele estar en el CSS. Es una prueba que puedes repetir con cualquier web. Te ayuda a entender que el aspecto y el contenido van por separado."
     },
     {
       "tipo": "codigo",
@@ -77,13 +142,31 @@
     {
       "tipo": "tabla",
       "titulo": "Lo que quieres cambiar, y dónde está",
-      "columnas": ["Quiero cambiar…", "Está en"],
+      "columnas": [
+        "Quiero cambiar…",
+        "Está en"
+      ],
       "filas": [
-        ["Un texto, un campo o un botón nuevo", "HTML"],
-        ["Un color, un tamaño o un espacio", "CSS"],
-        ["Cómo se ve en el móvil", "CSS"],
-        ["Un cálculo o qué pasa al pulsar", "JavaScript"],
-        ["Que algo se guarde o se copie", "JavaScript"]
+        [
+          "Un texto, un campo o un botón nuevo",
+          "HTML"
+        ],
+        [
+          "Un color, un tamaño o un espacio",
+          "CSS"
+        ],
+        [
+          "Cómo se ve en el móvil",
+          "CSS"
+        ],
+        [
+          "Un cálculo o qué pasa al pulsar",
+          "JavaScript"
+        ],
+        [
+          "Que algo se guarde o se copie",
+          "JavaScript"
+        ]
       ],
       "narracion": "Esta tabla es la que vas a usar de verdad. Si quieres cambiar un texto o añadir un campo, eso es HTML. Si quieres cambiar un color, un tamaño o cómo se ve en el móvil, es CSS. Si quieres cambiar un cálculo, o lo que pasa al pulsar un botón, o que algo se guarde o se copie, es JavaScript. Muchas veces un cambio toca dos partes, y no pasa nada. La IA se encarga."
     },

@@ -70,7 +70,7 @@ async function web(e, file) {
   }
   await p.screenshot({ path: file, type: 'png' }); await ctx.close(); return movil;
 }
-const NREV = e => ({ terminal: Math.min(6, (e.lineas || []).length), puntos: (e.puntos || []).length, pasos: (e.pasos || []).length, resumen: (e.puntos || []).length, tabla: (e.filas || []).length, chat: 2, comparar: 2 })[e.tipo] || 0;
+const NREV = e => ({ terminal: Math.min(9, (e.lineas || []).length), puntos: (e.puntos || []).length, pasos: (e.pasos || []).length, resumen: (e.puntos || []).length, tabla: (e.filas || []).length, chat: 2, comparar: 2 })[e.tipo] || 0;
 for (const L of lessons) {
   if (only.length && !only.includes(L.id)) continue;
   const gf = path.join(process.env.GUIONES || path.join(ROOT, 'guiones', curso), L.id + '.json'); if (!fs.existsSync(gf)) { console.log('sin guion', L.id); continue; }
