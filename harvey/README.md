@@ -17,6 +17,11 @@ Cada instancia es una copia de Harvey con su `harvey.local.yaml` (gana sobre el 
 y sus `skills/product_knowledge.md`, `skills/competitive_intel.md` y `skills/email_rules.md` (reglas de redacción en
 castellano y catalán, voz de MARCAS.md).
 
+## Guías paso a paso
+
+- `CORREOS.md`: qué buzones faltan, cómo crearlos en Google Workspace y los registros DNS (con `scripts/dns-google-workspace.mjs`).
+- `INSTALAR-MAC.md`: instalación en el Mac comando a comando, y el prompt para que lo haga la sesión del Mac.
+
 ## Qué exige tu identidad (una vez)
 
 1. **Un buzón que envíe y reciba** (Harvey lee las respuestas por IMAP o Gmail). Opciones, de mejor a peor:
