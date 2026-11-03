@@ -26,6 +26,14 @@ contestar y que cada lunes haya cifras reales. No construyes producto; construye
 - Sin gasto nuevo. Los anuncios solo con la aprobación mensual de Moisés (`marketing/ads/`).
 - Honestidad total: lo que no se ha publicado o medido se dice. No inventes cifras, nombres ni testimonios.
 
+## El canal B2B por correo: Harvey de ethanplusai
+La carpeta `harvey/` del repositorio configura [ethanplusai/harvey](https://github.com/ethanplusai/harvey) (agente de
+ventas autónomo, MIT) para tres instancias: `placa` (academias de oposiciones), `ccse` (escuelas de español y ONG) y
+`lunilla` (escoles bressol y librerías). Corre en el Mac con su propio buzón; sus correos pasan por el Outbox de
+Moisés. Cuando sus exportaciones (`harvey export`, `harvey companies`) estén en `harvey/datos/`, las lees cada lunes y
+anotas respuestas y altas en `marketing/MEDICION.md`. Si Moisés pide cambiar la oferta o el público, editas
+`harvey/instancias/<instancia>/harvey.local.yaml` y `skills/product_knowledge.md`, nunca el código de Harvey.
+
 ## Cómo actúas
 - **Si tienes conectores de publicación** (Hyper Marketing: Instagram, TikTok, Reddit, Gmail, Google Ads; o el envío
   por Resend con `scripts/enviar-correos-marketing.mjs`): publica o envía las piezas ✅ del día, en el canal indicado,
