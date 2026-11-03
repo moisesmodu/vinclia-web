@@ -1,0 +1,47 @@
+{
+ "id": "c5-promo",
+ "titulo": "Vídeo promocional",
+ "escenas": [
+  {
+   "tipo": "portada",
+   "titulo": "Vibe coding: crea apps y webs con IA",
+   "subtitulo": "Sin saber programar, en castellano y con herramientas gratuitas",
+   "narracion": "Tienes una idea. La web de tu negocio, una app para tus hábitos, una herramienta que te ahorre horas. Hoy se la puedes pedir a una inteligencia artificial, si sabes cómo."
+  },
+  {
+   "tipo": "chat",
+   "titulo": "Lo que escribes",
+   "usuario": "Hazme una web de un solo archivo para Peluquería Nuria, en Lleida: servicios con precios, horario, cómo llegar y un botón de WhatsApp. Que se vea bien en el móvil.",
+   "ia": "Aquí tienes index.html con la cabecera, los servicios, el horario, el mapa de cómo llegar y el botón de WhatsApp. Ábrelo con doble clic y dime qué cambiamos.",
+   "narracion": "Escribes lo que quieres, con detalle y en tu idioma. La inteligencia artificial escribe el código."
+  },
+  {
+   "tipo": "web",
+   "titulo": "Lo que obtienes",
+   "fuente": "demo:peluqueria/v4",
+   "url": "peluqueria-nuria.netlify.app",
+   "narracion": "Y tú lo pruebas, lo mejoras paso a paso y lo publicas gratis en internet, con su propia dirección."
+  },
+  {
+   "tipo": "pasos",
+   "titulo": "Cuatro proyectos reales",
+   "pasos": [
+    "La web de un negocio, publicada",
+    "Una app de hábitos que se instala en el móvil",
+    "Una calculadora de presupuestos con PDF",
+    "Un juego para teclado y pantalla táctil"
+   ],
+   "narracion": "En el curso construyes cuatro proyectos reales y ves cada versión en pantalla: la web de un negocio, una app de hábitos que se instala en el móvil, una calculadora de presupuestos con IVA y PDF, y un juego."
+  },
+  {
+   "tipo": "resumen",
+   "titulo": "Y un método para seguir solo",
+   "puntos": [
+    "Pedir bien y avanzar en pasos pequeños",
+    "Arreglar errores con ayuda de la IA",
+    "Seguridad, datos personales y cuándo llamar a un programador"
+   ],
+   "narracion": "Y sobre todo, un método para seguir solo: pedir bien, avanzar en pasos pequeños, arreglar errores y saber cuándo llamar a un programador. La inteligencia artificial escribe el código. Tú decides y compruebas."
+  }
+ ]
+}

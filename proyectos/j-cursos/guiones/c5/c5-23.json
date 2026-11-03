@@ -103,7 +103,7 @@
           "wait": 600
         }
       ],
-      "narracion": "Si abres la calculadora en el móvil, verás que no aparecen los presupuestos que guardaste en el ordenador. No es un fallo, es cómo funciona localStorage. Cada navegador tiene su propio cajón. Para una herramienta interna, sigue unas reglas sencillas. Usa un ordenador con contraseña y que no compartas. Borra los presupuestos que ya no necesites. Y no pegues datos reales de clientes en el chat de la IA cuando le pidas cambios. Para probar, usa nombres inventados."
+      "narracion": "Aquí hemos abierto la calculadora en un móvil y hemos guardado un presupuesto. Solo existe en este móvil: en el ordenador no aparecerá. No es un fallo, es cómo funciona localStorage. Cada navegador tiene su propio cajón. Para una herramienta interna, sigue unas reglas sencillas. Usa un ordenador con contraseña y que no compartas. Borra los presupuestos que ya no necesites. Y no pegues datos reales de clientes en el chat de la IA cuando le pidas cambios. Para probar, usa nombres inventados."
     },
     {
       "tipo": "pasos",
