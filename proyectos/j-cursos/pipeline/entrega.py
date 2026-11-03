@@ -8,8 +8,8 @@ import json, os, re, sys, glob, html as H
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 WORK = os.environ.get('WORK', '/home/user/jwork'); ENT = os.path.join(WORK, 'entrega')
-CURSOS = ['c1', 'c2', 'c4', 'c3']
-COLOR = {'c1': '#2F6BFF', 'c2': '#E2574C', 'c3': '#5B5BD6', 'c4': '#2E9E62'}
+CURSOS = ['c1', 'c2', 'c4', 'c3', 'c5']
+COLOR = {'c1': '#2F6BFF', 'c2': '#E2574C', 'c3': '#5B5BD6', 'c4': '#2E9E62', 'c5': '#0E9F8E'}
 
 def size(p): return os.path.getsize(p) if os.path.exists(p) else None
 
@@ -17,7 +17,7 @@ def main():
     nombre = sys.argv[1] if len(sys.argv) > 1 else 'entrega'; cursos = sys.argv[2:] or CURSOS
     F = json.load(open(os.path.join(ROOT, 'udemy', 'fichas.json')))
     desc = open(os.path.join(ROOT, 'udemy', 'descripciones.md')).read().split('\n---\n')
-    D = {c: re.sub(r'^\s*## .*\n', '', d.strip(), count=1).strip() for c, d in zip(['c1', 'c2', 'c3', 'c4'], desc[1:])}
+    D = {c: re.sub(r'^\s*## .*\n', '', d.strip(), count=1).strip() for c, d in zip(['c1', 'c2', 'c3', 'c4', 'c5'], desc[1:])}
     data, subir, sizes = [], [], {}
     def reg(path):
         s = size(path)

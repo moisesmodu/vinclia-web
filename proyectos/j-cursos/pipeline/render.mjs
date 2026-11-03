@@ -13,9 +13,10 @@ const STYLE = {
   c1: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-robot.webp', char: ['assets/img/bit-wave.webp', 'assets/img/bit-think.webp', 'assets/img/bit-happy.webp'], fin: 'assets/img/bit-win.webp' },
   c2: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-robotica.webp', char: ['assets/img/maqueen-happy.webp'], fin: 'assets/img/maqueen-happy.webp' },
   c3: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-ia.webp', char: [], fin: null },
+  c5: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-vibe.webp', char: [], fin: null },
   c4: { logo: 'assets/img/logo-tech-negatiu.svg', logoL: 'assets/img/logo-tech.svg', hero: 'assets/img/hero-digital.webp', char: ['assets/img/bit-think.webp', 'assets/img/bit-happy.webp'], fin: 'assets/img/bit-win.webp' },
 }[curso];
-const SHORT = { c1: 'Programación para niños en casa', c2: 'Robótica con micro:bit y Maqueen', c3: 'IA práctica para autónomos', c4: 'Bienestar digital en familia' }[curso];
+const SHORT = { c1: 'Programación para niños en casa', c2: 'Robótica con micro:bit y Maqueen', c3: 'IA práctica para autónomos', c4: 'Bienestar digital en familia', c5: 'Vibe coding con IA' }[curso];
 const lessons = [{ id: curso + '-promo', sec: 0, n: 0, secT: 'Presentación' }]; C.secciones.forEach((s, si) => s.l.forEach((l, li) => lessons.push({ ...l, sec: si + 1, secT: s.t, n: li + 1 })));
 
 // reloj virtual: performance.now y requestAnimationFrame los mueve __tick(ms)
@@ -24,7 +25,7 @@ const VCLOCK = `(()=>{let vt=0,id=0;const q=new Map();performance.now=()=>vt;win
 const browser = await chromium.launch({ args: ['--ignore-gpu-blocklist', '--enable-webgl', '--use-gl=angle', '--use-angle=swiftshader-webgl'] });
 const slide = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
 await slide.goto('file://' + path.join(HERE, 'slide.html')); await slide.evaluate(() => document.fonts.ready);
-const snap = async (e, o, file) => { await slide.evaluate(([e, o]) => draw(e, o), [e, o]); await slide.waitForTimeout(60); await slide.screenshot({ path: file, type: 'png' }); };
+const snap = async (e, o, file) => { await slide.evaluate(([e, o]) => draw(e, o), [e, o]); await slide.evaluate(() => Promise.all([...document.images].map(i => i.decode().catch(() => {})))); await slide.evaluate(() => fit()); await slide.waitForTimeout(60); await slide.screenshot({ path: file, type: 'png' }); };
 
 async function presenta(sid, idx, file) {
   const p = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
@@ -57,7 +58,19 @@ async function demo(sid, idx, dir, mp4) {
   fs.rmSync(dir, { recursive: true }); return { kind, mp4 };
 }
 
-const NREV = e => ({ puntos: (e.puntos || []).length, pasos: (e.pasos || []).length, resumen: (e.puntos || []).length, tabla: (e.filas || []).length, chat: 2, comparar: 2 })[e.tipo] || 0;
+// captura de una app de ejemplo (demos/<curso>/<proyecto>/<paso>/index.html), con acciones antes de la foto
+// fuente: "demo:<proyecto>/<paso>[@movil]"; acciones: [{click: sel} | {fill: [sel, texto]} | {press: tecla} | {wait: ms} | {eval: js}]
+async function web(e, file) {
+  const [ruta, modo] = e.fuente.slice(5).split('@'), movil = modo === 'movil';
+  const ctx = await browser.newContext(movil ? { viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true } : { viewport: { width: 1440, height: 810 } });
+  const p = await ctx.newPage(); await p.goto('file://' + path.join(ROOT, 'demos', curso, ruta, 'index.html')); await p.waitForTimeout(600);
+  for (const a of e.acciones || []) {
+    if (a.click) await p.click(a.click); if (a.fill) await p.fill(a.fill[0], a.fill[1]); if (a.press) await p.keyboard.press(a.press);
+    if (a.eval) await p.evaluate(a.eval); await p.waitForTimeout(a.wait || 250);
+  }
+  await p.screenshot({ path: file, type: 'png' }); await ctx.close(); return movil;
+}
+const NREV = e => ({ terminal: Math.min(6, (e.lineas || []).length), puntos: (e.puntos || []).length, pasos: (e.pasos || []).length, resumen: (e.puntos || []).length, tabla: (e.filas || []).length, chat: 2, comparar: 2 })[e.tipo] || 0;
 for (const L of lessons) {
   if (only.length && !only.includes(L.id)) continue;
   const gf = path.join(process.env.GUIONES || path.join(ROOT, 'guiones', curso), L.id + '.json'); if (!fs.existsSync(gf)) { console.log('sin guion', L.id); continue; }
@@ -78,6 +91,11 @@ for (const L of lessons) {
         vis.push({ k: 'img', frames: [{ at: 0, png: base + '.png' }] }); continue;
       }
       if (!fs.existsSync(base + '.png')) await presenta(sid, +idx, base + '.png');
+      vis.push({ k: 'img', frames: [{ at: 0, png: base + '.png' }] }); continue;
+    }
+    if (e.tipo === 'web') {
+      const shot = base + '_web.png', movil = await web(e, shot);
+      await snap(e, { ...o, img: 'file://' + shot, movil, url: e.url || (e.fuente.slice(5).split('/')[0] + '.netlify.app') }, base + '.png');
       vis.push({ k: 'img', frames: [{ at: 0, png: base + '.png' }] }); continue;
     }
     const n = NREV(e), frames = [];

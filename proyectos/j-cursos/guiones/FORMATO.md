@@ -60,3 +60,17 @@ del cuestionario de Udemy), sacadas del solucionario o del contenido de la secci
 ```
 Pregunta ≤ 250 caracteres; respuestas ≤ 120 (de 3 a 4); explicación ≤ 300. Varía la posición de la correcta.
 Sin cuestionario en la sección «Empieza aquí» ni en la última sección si solo tiene la clase extra.
+
+## Escenas del curso 5 (vibe coding)
+```json
+{ "tipo": "codigo", "titulo": "…", "archivo": "index.html", "lenguaje": "html", "codigo": "<button id=\"add\">Añadir</button>", "narracion": "…" },
+{ "tipo": "terminal", "titulo": "…", "lineas": ["$ git add .", "$ git commit -m \"Primera versión\"", "[main 1a2b3c4] Primera versión"], "narracion": "…" },
+{ "tipo": "web", "titulo": "opcional", "fuente": "demo:habitos/v2", "acciones": [{ "fill": ["#nuevo", "Leer 10 minutos"] }, { "click": "#add" }], "url": "opcional, p. ej. peluqueria-nuria.netlify.app", "narracion": "…" },
+{ "tipo": "web", "titulo": "…", "nota": "una frase al lado del móvil", "fuente": "demo:habitos/v3@movil", "narracion": "…" }
+```
+- `codigo`: de 4 a 14 líneas de ≤ 64 caracteres, trozo real del archivo de la demo; la voz no lee el código: explica qué hace.
+- `terminal`: de 2 a 8 líneas; las que empiezan por `$ ` son órdenes (se van mostrando una a una).
+- `web`: captura real de `demos/c5/<proyecto>/<paso>/index.html` (1440×810, o móvil 390×844 con `@movil`) tras las
+  `acciones` (selectores CSS: `click`, `fill`, `press`, `wait`, `eval`). Úsala mucho: es lo que el alumno quiere ver.
+- Recursos: `"plantilla:<nombre>"` (Markdown en `guiones/c5/plantillas/<nombre>.md`, se convierte a PDF) y
+  `"demo:<proyecto>"` (zip con todas las versiones de la app de ejemplo, para que el alumno la abra y la compare).

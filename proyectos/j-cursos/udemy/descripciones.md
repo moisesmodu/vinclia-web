@@ -119,3 +119,30 @@ Soy Moisés Mora y dirijo una academia de programación y robótica para niños 
 recomiendo a las familias. Aprende haciendo, con un profesor de verdad.
 
 **Hecho en Lleida.**
+
+---
+
+## c5 · Vibe coding: crea apps y webs con IA sin saber programar
+
+Tienes una idea: la web de tu negocio, una app para tus hábitos, una herramienta que te ahorre horas. Antes hacía falta
+saber programar o pagar a alguien. Hoy se la puedes **pedir a una IA**, si sabes cómo. Eso es el vibe coding, y este curso
+te enseña a hacerlo con método, en castellano y sin pagar herramientas.
+
+Qué vas a construir, paso a paso y viendo cada versión en pantalla:
+
+- **La web de un negocio**, bonita en el móvil y publicada gratis en internet.
+- **Una app de hábitos** con rachas y gráfico, que se guarda sola y se instala en el móvil.
+- **Una calculadora de presupuestos** con IVA y PDF listo para enviar.
+- **Un juego** que se juega con teclado o con el dedo.
+
+Y el método para seguir solo: la **ficha del proyecto**, instrucciones que funcionan, pasos pequeños, cómo **arreglar
+errores** con la IA, Git sin miedo, seguridad (claves, datos personales y RGPD) y cuándo dar el salto a Lovable, Bolt,
+Cursor o Claude Code. También cómo cobrar con un enlace de pago y cuándo llamar a un programador.
+
+Funciona con Claude, ChatGPT o Gemini en sus planes gratuitos. Descargas las apps de ejemplo de cada clase y las
+plantillas del curso. La IA escribe el código; tú decides y compruebas.
+
+Soy Moisés Mora: en Lleida enseño a programar a niños y adultos, y he preparado este curso para que pases de la idea a la
+app publicada en una tarde. Aprende haciendo, con un profesor de verdad.
+
+**Hecho en Lleida.**

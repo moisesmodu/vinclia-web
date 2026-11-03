@@ -1,7 +1,7 @@
 // Recursos descargables de cada clase: fichas imprimibles de Numi Tech en castellano (imprimeix.html → PDF A4) y, en el
 // curso 3, las plantillas Markdown de guiones/c3/plantillas → PDF con el mismo estilo.
 // Uso: node recursos.mjs <curso>     Salida: entrega/<curso>/recursos/*.pdf y recursos.json (clase → archivos)
-import { createRequire } from 'module'; import fs from 'fs'; import path from 'path';
+import { createRequire } from 'module'; import fs from 'fs'; import path from 'path'; import { execFileSync } from 'child_process';
 const require = createRequire(import.meta.url); const { chromium } = require('playwright');
 const HERE = path.dirname(new URL(import.meta.url).pathname), ROOT = path.resolve(HERE, '..');
 const NUMI = process.env.NUMI_URL || 'http://127.0.0.1:5190', ENT = process.env.ENTREGA || '/home/user/jwork/entrega';
@@ -9,12 +9,15 @@ const curso = process.argv[2], gdir = path.join(ROOT, 'guiones', curso), out = p
 fs.mkdirSync(out, { recursive: true });
 const b = await chromium.launch(), map = {};
 const FICHA = JSON.parse(fs.readFileSync(path.join(ROOT, 'udemy', 'fichas.json'), 'utf8'))[curso];
-const PIE = FICHA.titulo + (curso === 'c3' ? ' · La IA redacta, tú decides: revisa siempre cifras, nombres y datos legales' : '') + ' · Numi Tech · Hecho en Lleida';
+const PIE = FICHA.titulo + (curso === 'c3' ? ' · La IA redacta, tú decides: revisa siempre cifras, nombres y datos legales' : curso === 'c5' ? ' · La IA escribe el código, tú decides y compruebas' : '') + ' · Numi Tech · Hecho en Lleida';
 const md2html = md => {
   const e = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const inl = s => e(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`(.+?)`/g, '<code>$1</code>');
-  let h = '', list = null;
+  let h = '', list = null, tab = null;
   for (const l of md.split('\n')) {
+    if (/^\s*\|/.test(l)) { if (/^\s*\|[\s:|-]+\|\s*$/.test(l)) continue; const cs = l.trim().replace(/^\||\|$/g, '').split('|').map(c => inl(c.trim()));
+      if (list) { h += `</${list}>`; list = null; } h += (tab ? '' : '<table>') + `<tr>${cs.map(c => tab ? `<td>${c}</td>` : `<th>${c}</th>`).join('')}</tr>`; tab = true; continue; }
+    if (tab) { h += '</table>'; tab = null; }
     const m = l.match(/^(#{1,3}) (.*)/), li = l.match(/^\s*(?:[-*]|\d+\.) (.*)/);
     if (!li && list) { h += `</${list}>`; list = null; }
     if (m) h += `<h${m[1].length}>${inl(m[2])}</h${m[1].length}>`;
@@ -22,13 +25,13 @@ const md2html = md => {
     else if (l.startsWith('>')) h += `<blockquote>${inl(l.slice(1).trim())}</blockquote>`;
     else if (l.trim()) h += `<p>${inl(l)}</p>`;
   }
-  return h + (list ? `</${list}>` : '');
+  return h + (list ? `</${list}>` : '') + (tab ? '</table>' : '');
 };
 const CSS = `@font-face{font-family:Lexend;font-weight:100 900;src:url(file://${HERE}/assets/fonts/Lexend-latin-c0dd90.woff2)}
 body{font-family:Lexend,sans-serif;color:#14204A;font-size:11.5pt;line-height:1.5;margin:0}h1{font-size:22pt;color:#5B5BD6;margin:0 0 6pt}
 h2{font-size:14.5pt;margin:16pt 0 4pt;color:#14204A;border-bottom:2px solid #E6DEFF;padding-bottom:3pt}h3{font-size:12pt;margin:12pt 0 2pt}
 code{background:#F1ECFF;padding:1pt 4pt;border-radius:4pt}blockquote{background:#F6F3FF;border-left:4pt solid #5B5BD6;margin:6pt 0;padding:6pt 10pt;white-space:pre-wrap}
-li{margin:2pt 0}.pie{margin-top:18pt;font-size:9pt;color:#56628A}`;
+li{margin:2pt 0}table{border-collapse:collapse;width:100%;margin:6pt 0;font-size:10pt}th,td{border:1px solid #DCE4FA;padding:4pt 6pt;text-align:left;vertical-align:top}th{background:#EEF2FF}.pie{margin-top:18pt;font-size:9pt;color:#56628A}`;
 for (const f of fs.readdirSync(gdir).filter(f => /^c\d-\d+\.json$/.test(f)).sort()) {
   const G = JSON.parse(fs.readFileSync(path.join(gdir, f), 'utf8'));
   for (const r of G.recursos || []) {
@@ -44,6 +47,11 @@ for (const f of fs.readdirSync(gdir).filter(f => /^c\d-\d+\.json$/.test(f)).sort
       if (!fs.existsSync(src)) { console.log('falta plantilla', v); continue; }
       const p = await b.newPage(); await p.setContent(`<html><head><meta charset="utf-8"><style>${CSS}</style></head><body>${md2html(fs.readFileSync(src, 'utf8'))}<p class="pie">${PIE} · hola@numimates.com</p></body></html>`);
       await p.evaluate(() => document.fonts.ready); await p.pdf({ path: path.join(out, file), format: 'A4', margin: { top: '18mm', bottom: '18mm', left: '18mm', right: '18mm' }, printBackground: true }); await p.close();
+    } else if (k === 'demo') {   // la app de ejemplo con todas sus versiones, para abrirla y compararla
+      file = `app-${v}.zip`; const src = path.join(ROOT, 'demos', curso, v);
+      if (!fs.existsSync(src)) { console.log('falta demo', v); continue; }
+      fs.rmSync(path.join(out, file), { force: true });
+      execFileSync('zip', ['-qrX', path.join(out, file), v], { cwd: path.join(ROOT, 'demos', curso) });
     } else continue;
     (map[G.id] ||= []).push(file);
   }

@@ -1,0 +1,165 @@
+{
+  "id": "c5-27",
+  "titulo": "Apps con usuarios y base de datos: Lovable, Bolt y compañía",
+  "descripcion": "Descubres cuándo te compensa pasar del archivo HTML a un constructor de apps como Lovable, Bolt, v0 o Replit para tener usuarios, login y base de datos, qué es Supabase, cómo gastar bien los créditos gratuitos y cómo sacar tu código a GitHub para no quedarte atado.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:checklist-seguridad-app"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Apps con usuarios y base de datos",
+      "subtitulo": "Lovable, Bolt, v0 y Replit: cuándo compensan",
+      "narracion": "Bienvenido a la sección del siguiente nivel. Hasta ahora has creado cuatro proyectos con un chat de IA, un archivo y tu navegador. Es una forma de trabajar gratuita, sencilla y muy potente. Pero tiene un techo. En esta clase vas a ver dónde está ese techo y qué herramientas lo superan. Hablaremos de Lovable, Bolt, v0 y Replit. Y sobre todo, de cuándo te compensa usarlas y cuándo no."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El techo de un solo archivo",
+      "puntos": [
+        "Los datos se guardan en el navegador de cada persona",
+        "Nadie puede crearse una cuenta ni entrar con contraseña",
+        "Dos personas no ven los mismos datos",
+        "Perfecto para webs, herramientas propias y juegos"
+      ],
+      "narracion": "Recuerda cómo guardaba los datos tu app de hábitos. Usaba el almacenamiento del navegador. Cada persona tiene sus hábitos en su propio móvil, y nadie más los ve. Para una app personal es perfecto. Pero imagina que quieres que tus clientes se registren, que entren con su contraseña y que tú veas sus reservas desde tu ordenador. Eso no cabe en un archivo. Necesitas un servidor con una base de datos y un sistema de inicio de sesión."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "¿Te basta un archivo o necesitas más?",
+      "columnas": [
+        "Lo que quieres",
+        "Un archivo HTML",
+        "Constructor de apps"
+      ],
+      "filas": [
+        [
+          "Web de tu negocio",
+          "Sí, de sobra",
+          "No hace falta"
+        ],
+        [
+          "Herramienta solo para ti",
+          "Sí",
+          "No hace falta"
+        ],
+        [
+          "Clientes con cuenta y contraseña",
+          "No",
+          "Sí"
+        ],
+        [
+          "Datos compartidos entre varios",
+          "No",
+          "Sí"
+        ],
+        [
+          "Pagos o datos de salud",
+          "No",
+          "Sí, con revisión técnica"
+        ]
+      ],
+      "narracion": "Esta tabla te ayuda a decidir. Para la web de tu negocio, una herramienta tuya o un juego, un archivo te sobra. No pagues por lo que no necesitas. Pasa al siguiente nivel cuando haya usuarios con cuenta, datos que varias personas comparten o un panel donde tú gestionas lo que otros envían. Y fíjate en la última fila. Si tu app maneja pagos, datos de salud o muchos usuarios, la herramienta no basta. Necesitas que un programador revise el trabajo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es Supabase, en una frase",
+      "puntos": [
+        "Una base de datos en la nube con usuarios y login ya hechos",
+        "Tablas parecidas a una hoja de cálculo",
+        "Los constructores de apps la conectan por ti",
+        "Tiene plan gratuito, con límites"
+      ],
+      "narracion": "Vas a oír mucho un nombre: Supabase. En una frase, es una base de datos en la nube que trae el registro de usuarios y el inicio de sesión ya hechos. Por dentro, los datos se guardan en tablas parecidas a una hoja de cálculo. Una tabla de clientes, otra de reservas. Lo bueno es que no tienes que montarla tú. Muchos constructores de apps la crean y la conectan por ti cuando les pides usuarios o datos. Tiene plan gratuito, con límites de uso."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuatro constructores de apps en el navegador",
+      "columnas": [
+        "Herramienta",
+        "Para qué destaca"
+      ],
+      "filas": [
+        [
+          "Lovable",
+          "La más pensada para quien no programa"
+        ],
+        [
+          "Bolt",
+          "Apps completas desde el navegador"
+        ],
+        [
+          "v0, de Vercel",
+          "Interfaces y webs muy cuidadas"
+        ],
+        [
+          "Replit",
+          "Más técnica: editor y servidor en uno"
+        ]
+      ],
+      "narracion": "Estas son las cuatro más conocidas. Todas funcionan en el navegador. Describes la app en un chat y la ves funcionando a la derecha. Lovable es la más pensada para quien no programa, y conecta Supabase con pocos clics. Bolt hace algo parecido y también crea apps completas. v0 es de Vercel y brilla en el diseño de pantallas. Replit es más técnica, porque te enseña el editor y el servidor. Cambian cada pocos meses, así que prueba dos antes de decidir."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción tipo para una app con login",
+      "usuario": "Crea una app de reservas para mi peluquería. Los clientes se registran con correo y contraseña, eligen servicio, día y hora libre, y ven sus citas. Yo entro como administradora y veo todas las reservas del día. Usa Supabase para usuarios y datos. Cada cliente solo puede ver sus propias citas. Textos en castellano. Empieza solo por el registro y el inicio de sesión.",
+      "ia": "Te propongo empezar por el registro y el inicio de sesión con Supabase. Crearé una tabla de perfiles con el rol cliente o administradora, y reglas para que cada cliente vea solo sus datos. Cuando lo pruebes, seguimos con los servicios y las horas libres.",
+      "narracion": "Así se pide una app con usuarios. Usa el mismo método que ya conoces. Contexto: qué negocio es. Tarea: qué hace cada tipo de usuario. Y límites. Fíjate en dos frases clave. Una dice que cada cliente solo puede ver sus propias citas. Esa regla de seguridad tienes que pedirla tú, no la des por hecha. La otra dice que empiece solo por el registro. Pasos pequeños, también aquí. Prueba a crear dos cuentas y comprueba que una no ve lo de la otra."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Antes de dar la app por buena",
+      "pasos": [
+        "Crea dos cuentas de prueba con correos distintos",
+        "Con la primera, haz una reserva",
+        "Entra con la segunda: no debe verla",
+        "Cierra sesión y prueba a entrar sin contraseña",
+        "Repite todo desde el móvil"
+      ],
+      "narracion": "Antes de enseñarle la app a nadie, haz esta prueba. Crea dos cuentas con dos correos distintos. Con la primera, haz una reserva. Después entra con la segunda y comprueba que no la ves. Cierra sesión e intenta entrar en las pantallas privadas sin contraseña. Si puedes, algo está mal. Y repite todo desde el móvil. Si encuentras un fallo, descríbeselo a la IA tal cual: qué hiciste, qué esperabas y qué pasó. Es lo mismo que aprendiste en la sección del método."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Créditos: el plan gratuito se acaba rápido",
+      "puntos": [
+        "Cada mensaje al chat gasta créditos",
+        "El plan gratuito da pocos al día o al mes",
+        "Arreglar errores en bucle es lo que más gasta",
+        "Piensa y escribe la instrucción antes de enviarla",
+        "Los planes de pago rondan los 20 a 25 euros al mes"
+      ],
+      "narracion": "Ahora, el dinero. Estas herramientas funcionan con créditos. Cada mensaje que envías gasta una parte. El plan gratuito da unos pocos créditos al día o al mes, y se acaban antes de lo que crees. Lo que más gasta es entrar en un bucle de arreglos: algo falla, pides que lo arregle, falla otra cosa. Para evitarlo, prepara tu ficha del proyecto antes de abrir la herramienta. Escribe las instrucciones con calma. Los planes de pago rondan los 20 a 25 euros al mes, y los límites cambian a menudo."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "El riesgo de quedarte atado",
+      "mal": "Tu app solo vive dentro de la plataforma. Si sube el precio o cierra, la pierdes.",
+      "bien": "Conectas GitHub desde el primer día. Tienes una copia del código que es tuya.",
+      "narracion": "Hay un riesgo del que se habla poco. Si tu app solo existe dentro de la plataforma, dependes de ella. Si suben el precio, te cambian las condiciones o cierran, tu trabajo queda atrapado. Los programadores lo llaman quedarse atado al proveedor. La solución es sencilla. Desde el primer día, guarda una copia del código fuera, en GitHub. Así, si un día quieres cambiar de herramienta o contratar a un programador, el código es tuyo y está a mano."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Sacar tu código a GitHub",
+      "pasos": [
+        "Crea una cuenta gratuita en GitHub",
+        "En la herramienta, busca la opción GitHub o Exportar",
+        "Autoriza la conexión y crea un repositorio nuevo",
+        "Comprueba en GitHub que aparecen tus archivos",
+        "Si no hay conexión, descarga el proyecto en zip"
+      ],
+      "narracion": "Estos son los pasos generales. Primero, crea una cuenta gratuita en GitHub. Después, dentro de la herramienta, busca un botón que diga GitHub, Conectar o Exportar. El nombre cambia de una a otra. Autoriza la conexión y crea un repositorio nuevo. Entra en GitHub y comprueba que ves tus archivos. Si la herramienta no conecta con GitHub, al menos descarga el proyecto en zip de vez en cuando. En la clase de Git verás qué es exactamente un repositorio."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Un archivo basta para webs, herramientas propias y juegos",
+        "Usuarios y datos compartidos: constructor de apps",
+        "Supabase: base de datos con login ya hecho",
+        "Pide tú las reglas de quién ve qué",
+        "Conecta GitHub desde el primer día"
+      ],
+      "narracion": "Repasamos. Un archivo HTML basta para muchísimas cosas. Pasa a un constructor de apps cuando necesites usuarios con cuenta o datos compartidos. Supabase es la base de datos con inicio de sesión que suelen usar por debajo. Pide siempre las reglas de quién puede ver qué, y compruébalas con dos cuentas. Cuida los créditos y conecta GitHub desde el principio. Tu tarea de hoy: abre una cuenta gratuita en Lovable o Bolt y pídele solo la pantalla de registro. Mira cómo trabaja, sin prisa."
+    }
+  ]
+}

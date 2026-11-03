@@ -2,7 +2,8 @@
 """Comprueba los guiones: JSON válido, tipos de escena, longitudes y palabras por clase.
 Uso: python3 check_guiones.py guiones/c1 [c1-01 c1-02 …]"""
 import json, sys, os, re
-TIPOS = {'portada', 'puntos', 'pasos', 'frase', 'comparar', 'tabla', 'chat', 'captura', 'demo', 'resumen'}
+TIPOS = {'portada', 'puntos', 'pasos', 'frase', 'comparar', 'tabla', 'chat', 'captura', 'demo', 'resumen', 'codigo', 'terminal', 'web'}
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 d = sys.argv[1]; only = set(sys.argv[2:])
 bad = 0
 for f in sorted(os.listdir(d)):
@@ -26,6 +27,14 @@ for f in sorted(os.listdir(d)):
             for x in e.get(k, []):
                 if len(x) > 80: probs.append(f'{k} largo esc {i+1}')
         if e.get('tipo') in ('captura', 'demo') and not re.match(r'^presenta:[a-z]\d-\d:\d+$', e.get('fuente', '')): probs.append(f'fuente {e.get("fuente")}')
+        if e.get('tipo') == 'web':
+            m = re.match(r'^demo:([\w-]+/[\w-]+)(@movil)?$', e.get('fuente', ''))
+            if not m: probs.append(f'fuente {e.get("fuente")}')
+            elif not os.path.exists(os.path.join(ROOT, 'demos', g.get('id', 'x')[:2], m.group(1), 'index.html')): probs.append(f'falta la demo {m.group(1)}')
+        if e.get('tipo') == 'codigo':
+            ls = e.get('codigo', '').split('\n')
+            if not 2 <= len(ls) <= 16 or max(map(len, ls)) > 70: probs.append(f'código de {len(ls)} líneas o líneas largas esc {i+1}')
+        if e.get('tipo') == 'terminal' and not 1 <= len(e.get('lineas', [])) <= 9: probs.append(f'terminal esc {i+1}')
         if re.search(r'[<>%×*#_]|https?://', e.get('narracion', '')): probs.append(f'símbolo en narración esc {i+1}')
     if not ((80 if g.get('id', '').endswith('promo') else 450) <= w <= 1250): probs.append(f'{w} palabras')
     print(f'{g.get("id")}: {w} palabras, {len(esc)} escenas' + (' · ' + '; '.join(probs) if probs else ''))

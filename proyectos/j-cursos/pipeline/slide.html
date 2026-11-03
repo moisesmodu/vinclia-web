@@ -71,12 +71,42 @@ tr.h td{visibility:hidden}
 .chk li.h{visibility:hidden}
 /* título de sección (tarjeta entre secciones) */
 .sec #s{background:var(--c)}.sec{color:#fff}.sec .kick{color:#fff;opacity:.8}.sec .foot{color:#fff}.sec .foot .tag{background:rgba(255,255,255,.18);box-shadow:none}
+/* código, terminal y web (curso 5) */
+.code{background:#14182B;border-radius:30px;box-shadow:0 12px 0 #0A0D1A;overflow:hidden;max-width:1640px}
+.code .bar{display:flex;align-items:center;gap:12px;padding:18px 28px;background:#1E2440;color:#9AA6D6;font:600 26px 'JetBrains Mono',monospace}
+.code .bar i{width:18px;height:18px;border-radius:50%;background:#EF5A5A}.code .bar i+i{background:#FFC531}.code .bar i+i+i{background:#3CC47C;margin-right:14px}
+.code pre{font-variant-ligatures:none;font-feature-settings:"liga" 0,"calt" 0;margin:0;padding:30px 40px;font:500 33px/1.45 'JetBrains Mono',monospace;color:#E6EAFF;white-space:pre-wrap}
+.code pre .h{visibility:hidden}
+.k{color:#C792EA}.st{color:#C3E88D}.cm{color:#7C86A8;font-style:italic}.tg{color:#82AAFF}.nu{color:#F78C6C}
+.term pre .cmd{color:#7FE3C9}.term pre .cmd::before{content:"$ ";color:#FFC531}
+.web{width:fit-content;margin:0 auto;border-radius:24px;overflow:hidden;box-shadow:0 18px 0 var(--line),0 30px 60px rgba(20,32,74,.18);background:#fff}
+.web .bar{display:flex;align-items:center;gap:12px;padding:16px 24px;background:#E9EDF8}
+.web .bar i{width:16px;height:16px;border-radius:50%;background:#EF5A5A}.web .bar i+i{background:#FFC531}.web .bar i+i+i{background:#3CC47C}
+.web .bar span{flex:1;margin-left:20px;background:#fff;border-radius:999px;padding:8px 24px;font-size:22px;color:var(--mut);font-weight:500}
+.web img{display:block;height:640px;width:auto}
+.phone{display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:center}
+.phone .dev{width:360px;border-radius:64px;padding:18px;background:#14182B;box-shadow:0 20px 50px rgba(20,32,74,.3)}
+.phone .dev img{display:block;width:100%;border-radius:48px}
+.phone p{font-size:44px;line-height:1.3;font-weight:600;margin:0}
 </style>
 </head>
 <body>
 <div id="s"><i class="blob b1"></i><i class="blob b2"></i><div class="in" id="in"></div><div class="foot" id="foot"></div></div>
 <script>
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const hl = (src, lang) => { let t = esc(src);
+  if (lang === 'term') return t.split('\n').map((l, i) => l.startsWith('$ ') ? `<span class="cmd">${l.slice(2)}</span>` : l).join('\n');
+  t = t.replace(/(&lt;!--[\s\S]*?--&gt;|\/\/[^\n]*|\/\*[\s\S]*?\*\/)/g, '\u0001cm\u0002$1\u0003');
+  t = t.replace(/(&quot;[^\n]*?&quot;|&#39;[^\n]*?&#39;|`[^`\n]*`)/g, m => m.includes('\u0001') ? m : '\u0001st\u0002' + m + '\u0003');
+  t = t.replace(/(&lt;\/?)([a-zA-Z][\w-]*)/g, (m, a, b) => a + '\u0001tg\u0002' + b + '\u0003');
+  t = t.replace(/\b(const|let|var|function|return|if|else|for|while|of|in|new|true|false|null|await|async|import|export|from|class)\b/g, '\u0001k\u0002$1\u0003');
+  t = t.replace(/\b(\d+(?:\.\d+)?)\b/g, '\u0001nu\u0002$1\u0003');
+  // los marcadores se anidan mal si caen dentro de otro: se quitan los internos
+  let out = '', depth = 0; for (let i = 0; i < t.length; i++) { const ch = t[i];
+    if (ch === '\u0001') { const j = t.indexOf('\u0002', i); const cls = t.slice(i + 1, j); if (depth++ === 0) out += `<span class="${cls}">`; i = j; }
+    else if (ch === '\u0003') { if (--depth === 0) out += '</span>'; } else out += ch; }
+  return out; };
+const lines = (html, n) => html.split('\n').map((l, i) => i >= n ? `<span class="h">${l}</span>` : l).join('\n');
 // fit: si el contenido no cabe, se reduce (como shrink() de present.js) hasta el 70 %
 function fit() { const inn = document.getElementById('in'), c = inn.firstElementChild; if (!c) return; c.style.zoom = 1; const h = c.scrollHeight, H = inn.clientHeight, w = c.scrollWidth, W = inn.clientWidth; const z = Math.min(1, H / h, W / w); if (z < 1) c.style.zoom = Math.max(.6, z * .98).toFixed(3); }
 // e: escena; o: {curso, color, color2, kicker, pie, logo, hero, char, reveal}
@@ -95,6 +125,10 @@ window.draw = function (e, o) {
     comparar: () => `<div>${kick}<h2>${esc(e.titulo || '')}</h2><div class="cmp"><div class="ko"><b><span>✗</span>Así no</b>${esc(e.mal)}</div><div class="ok${n < 2 ? ' h' : ''}"><b><span>✓</span>Mejor así</b>${esc(e.bien)}</div></div></div>`,
     tabla: () => `<div>${kick}<h2>${esc(e.titulo || '')}</h2><table><tr>${(e.columnas || []).map(c => `<th>${esc(c)}</th>`).join('')}</tr>${(e.filas || []).map((f, i) => `<tr${H(i)}>${f.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>`,
     chat: () => `<div>${kick}<h2 style="font-size:56px;margin-bottom:24px">${esc(e.titulo || '')}</h2><div class="chat${(e.usuario + e.ia).length > 520 ? ' sm' : ''}"><div class="bub u"><small>Tú escribes</small>${esc(e.usuario)}</div><div class="bub a${n < 2 ? ' h' : ''}"><small>Respuesta de ejemplo</small>${esc(e.ia)}</div></div></div>`,
+    codigo: () => `<div>${kick}<h2 style="font-size:56px;margin-bottom:24px">${esc(e.titulo || '')}</h2><div class="code"><div class="bar"><i></i><i></i><i></i>${esc(e.archivo || '')}</div><pre>${hl(e.codigo || '', e.lenguaje)}</pre></div></div>`,
+    terminal: () => `<div>${kick}<h2 style="font-size:56px;margin-bottom:24px">${esc(e.titulo || '')}</h2><div class="code term"><div class="bar"><i></i><i></i><i></i>Terminal</div><pre>${lines(hl((e.lineas || []).join('\n'), 'term'), n)}</pre></div></div>`,
+    web: () => o.movil ? `<div class="phone"><div class="dev"><img src="${o.img}"></div><div>${kick}<h2>${esc(e.titulo || '')}</h2>${e.nota ? `<p>${esc(e.nota)}</p>` : ''}</div></div>`
+      : `<div>${e.titulo ? `<h2 style="font-size:50px;margin-bottom:22px">${esc(e.titulo)}</h2>` : ''}<div class="web"><div class="bar"><i></i><i></i><i></i><span>${esc(o.url || '')}</span></div><img src="${o.img}"></div></div>`,
     resumen: () => `<div class="${ch ? 'two' : ''}"><div>${kick}<h2>${esc(e.titulo || 'En resumen')}</h2><ul class="chk">${(e.puntos || []).map((p, i) => `<li${H(i)}><span>✓</span>${esc(p)}</li>`).join('')}</ul></div>${ch}</div>`,
   };
   document.getElementById('in').innerHTML = (T[e.tipo] || T.puntos)();

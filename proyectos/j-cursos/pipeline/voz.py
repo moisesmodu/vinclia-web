@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Narración de cada clase en castellano de España con Piper y la voz es_ES davefx (CC0, local, 0 €), y subtítulos exactos
 (cada frase se sintetiza aparte, así que sabemos cuándo empieza y acaba). Salida por clase en out/<curso>/<id>/: eNN.wav por
-escena y voz.json con tiempos. MOTOR=kokoro vuelve a la voz anterior (Kokoro, acento latino).
+escena y voz.json con tiempos. MOTOR=kokoro vuelve a la voz anterior (Kokoro, acento latino). MOTOR=openai usa cualquier
+servidor de voz compatible con la API de OpenAI (VoiceStudio en el Mac, ver VOZ-STUDIO.md): TTS_URL, TTS_MODEL, TTS_VOICE.
 Uso: python3 voz.py <curso> [id …]     Variables: MOTOR, PIPER_MODEL, KOKORO_DIR, VOZ, LENGTH (pausa de Piper), WORK."""
 import json, os, re, sys, numpy as np, soundfile as sf
 
@@ -52,7 +53,19 @@ def frases(t):
 
 def main():
     curso, only = sys.argv[1], set(sys.argv[2:])
-    if MOTOR == 'piper':
+    if MOTOR == 'openai':   # VoiceStudio u otro servidor local con /v1/audio/speech
+        import io, urllib.request
+        URL = os.environ.get('TTS_URL', 'http://127.0.0.1:3900/v1/audio/speech'); TM = os.environ.get('TTS_MODEL', 'tts-1')
+        voz, motor = os.environ['TTS_VOICE'], 'openai:' + TM
+        def sintetiza(t):
+            body = json.dumps({'model': TM, 'voice': voz, 'input': t, 'response_format': 'wav', 'language': 'es'}).encode()
+            req = urllib.request.Request(URL, body, {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + os.environ.get('TTS_KEY', 'local')})
+            a, sr = sf.read(io.BytesIO(urllib.request.urlopen(req, timeout=300).read()), dtype='float32')
+            if a.ndim > 1: a = a.mean(axis=1)
+            if sr != SR: a = np.interp(np.arange(0, len(a), sr / SR), np.arange(len(a)), a).astype(np.float32)
+            return a
+        SR = int(os.environ.get('TTS_SR', '24000'))
+    elif MOTOR == 'piper':
         from piper import PiperVoice, SynthesisConfig
         pv = PiperVoice.load(PIPER); SR = pv.config.sample_rate; cfg = SynthesisConfig(length_scale=LENGTH)
         voz, motor = os.path.basename(PIPER).replace('.onnx', ''), f'piper-{LENGTH}'

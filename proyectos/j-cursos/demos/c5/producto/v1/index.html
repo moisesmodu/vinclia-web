@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presupuestos Claros · Plantilla para autónomos</title>
+<style>
+  :root {
+    --acento: #0f766e;
+    --acento-oscuro: #115e59;
+    --suave: #ecfdf5;
+    --texto: #1f2937;
+    --gris: #6b7280;
+    --borde: #e5e7eb;
+    --fondo: #fafaf9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    background: var(--fondo);
+    line-height: 1.55;
+  }
+  .aviso-demo {
+    background: #fef3c7;
+    color: #92400e;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  header {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .marca { font-weight: 700; font-size: 20px; color: var(--acento-oscuro); }
+  .marca span { color: var(--texto); font-weight: 500; }
+  header nav a { color: var(--gris); text-decoration: none; margin-left: 20px; font-size: 15px; }
+  .hero {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .etiqueta {
+    display: inline-block;
+    background: var(--suave);
+    color: var(--acento-oscuro);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  h1 { font-size: 44px; line-height: 1.12; margin: 14px 0 14px; letter-spacing: -0.02em; }
+  .sub { font-size: 19px; color: #374151; margin: 0 0 24px; }
+  .compra { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .precio { font-size: 34px; font-weight: 800; }
+  .precio small { font-size: 15px; font-weight: 500; color: var(--gris); }
+  .comprar {
+    display: inline-block;
+    background: var(--acento);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 118, 110, 0.28);
+    transition: background 0.15s, transform 0.15s;
+  }
+  .comprar:hover { background: var(--acento-oscuro); transform: translateY(-1px); }
+  .seguro { font-size: 14px; color: var(--gris); margin-top: 14px; }
+  .muestra {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    padding: 22px;
+    font-size: 14px;
+  }
+  .muestra .cab { display: flex; justify-content: space-between; margin-bottom: 14px; }
+  .muestra .cab b { color: var(--acento-oscuro); font-size: 16px; }
+  .muestra table { width: 100%; border-collapse: collapse; }
+  .muestra th { text-align: left; color: var(--gris); font-weight: 600; border-bottom: 2px solid var(--borde); padding: 6px 4px; }
+  .muestra td { padding: 7px 4px; border-bottom: 1px solid var(--borde); }
+  .muestra td.num, .muestra th.num { text-align: right; }
+  .muestra .total td { font-weight: 800; border-bottom: none; font-size: 16px; color: var(--acento-oscuro); }
+  section.bloque { max-width: 1080px; margin: 0 auto; padding: 40px 24px; }
+  h2 { font-size: 28px; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .tarjetas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .tarjeta { background: #fff; border: 1px solid var(--borde); border-radius: 14px; padding: 22px; }
+  .tarjeta .icono {
+    width: 40px; height: 40px; border-radius: 10px; background: var(--suave); color: var(--acento);
+    display: grid; place-items: center; font-weight: 800; font-size: 18px; margin-bottom: 10px;
+  }
+  .tarjeta h3 { margin: 0 0 6px; font-size: 18px; }
+  .tarjeta p { margin: 0; color: #4b5563; }
+  details { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { margin: 10px 0 0; color: #4b5563; }
+  .final { text-align: center; background: var(--suave); border-radius: 18px; padding: 36px 24px; }
+  .final p { color: #374151; margin: 0 0 18px; }
+  footer {
+    max-width: 1080px; margin: 0 auto; padding: 28px 24px 40px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    color: var(--gris); font-size: 14px; border-top: 1px solid var(--borde);
+  }
+  footer a { color: var(--gris); margin-left: 16px; }
+  @media (max-width: 800px) {
+    header nav { display: none; }
+    .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 12px; }
+    h1 { font-size: 32px; }
+    .sub { font-size: 17px; }
+    .tarjetas { grid-template-columns: 1fr; }
+    .comprar { width: 100%; text-align: center; }
+    footer a { margin: 0 16px 0 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="aviso-demo">Página de ejemplo del curso: el botón de pago apunta a un enlace falso.</div>
+
+  <header>
+    <div class="marca">Hoja Clara <span>· plantillas</span></div>
+    <nav>
+      <a href="#incluye">Qué incluye</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="etiqueta">Plantilla digital · descarga inmediata</span>
+        <h1>Presupuestos claros en 10 minutos</h1>
+        <p class="sub">Una hoja de cálculo para autónomos de reformas: partidas, IVA y total al momento. Ábrela en Excel, LibreOffice o Google Sheets.</p>
+        <div class="compra">
+          <div class="precio">19 € <small>pago único, IVA incluido</small></div>
+          <!-- Botón de pago: pega aquí tu enlace de pago de Stripe -->
+          <a class="comprar" id="comprar"
+             href="https://buy.stripe.com/ENLACE-DE-EJEMPLO-FALSO"
+             target="_blank" rel="noopener">Comprar la plantilla</a>
+        </div>
+        <p class="seguro">Pago seguro con tarjeta a través de Stripe. Recibes el enlace de descarga en tu correo.</p>
+      </div>
+
+      <div class="muestra" aria-label="Vista previa de la plantilla">
+        <div class="cab"><b>Presupuesto 2027-014</b><span>Reforma de baño</span></div>
+        <table>
+          <tr><th>Partida</th><th class="num">Cant.</th><th class="num">Importe</th></tr>
+          <tr><td>Retirada de alicatado</td><td class="num">12 m²</td><td class="num">216,00 €</td></tr>
+          <tr><td>Plato de ducha</td><td class="num">1</td><td class="num">340,00 €</td></tr>
+          <tr><td>Azulejo y colocación</td><td class="num">12 m²</td><td class="num">528,00 €</td></tr>
+          <tr><td>Mano de obra fontanería</td><td class="num">6 h</td><td class="num">210,00 €</td></tr>
+          <tr><td>Base imponible</td><td></td><td class="num">1.294,00 €</td></tr>
+          <tr><td>IVA 21 %</td><td></td><td class="num">271,74 €</td></tr>
+          <tr class="total"><td>Total</td><td></td><td class="num">1.565,74 €</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <section class="bloque" id="incluye">
+      <h2>Qué incluye</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <div class="icono">1</div>
+          <h3>La plantilla</h3>
+          <p>Partidas con cantidad y precio, IVA y total calculados solos. Con tu logo y tus datos.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">2</div>
+          <h3>30 partidas de ejemplo</h3>
+          <p>Baños, cocinas, pintura y suelos, para empezar sin escribir desde cero.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">3</div>
+          <h3>Guía de uso en PDF</h3>
+          <p>Cinco páginas para adaptarla a tu negocio y exportar el presupuesto en PDF.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Qué recibo exactamente?</summary>
+        <p>Un correo con el enlace para descargar la plantilla y la guía. Es un producto digital: no se envía nada por correo postal.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para hacer facturas?</summary>
+        <p>No. Es para presupuestos. Las facturas tienen que salir de un programa de facturación adaptado a la normativa.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir factura de mi compra?</summary>
+        <p>Sí. Escríbenos con tus datos fiscales y te la enviamos.</p>
+      </details>
+    </section>
+
+    <section class="bloque">
+      <div class="final">
+        <h2>Deja de pelearte con los presupuestos</h2>
+        <p>19 € una sola vez. Sin suscripciones.</p>
+        <a class="comprar" id="comprar-2" href="https://buy.stripe.com/ENLACE-DE-EJEMPLO-FALSO" target="_blank" rel="noopener">Comprar la plantilla</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Hoja Clara · negocio inventado para el curso</span>
+    <span>
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Condiciones de venta</a>
+    </span>
+  </footer>
+</body>
+</html>

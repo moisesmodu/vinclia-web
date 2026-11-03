@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis hábitos</title>
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-osc: #0B7F72;
+    --acento-suave: #E3F5F2;
+    --naranja: #F08A24;
+    --texto: #1D2733;
+    --gris: #6B7785;
+    --linea: #E4E8EE;
+    --fondo: #F4F7F9;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.45;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
+  header { margin-bottom: 24px; }
+  .fecha { color: var(--gris); font-size: 15px; text-transform: capitalize; margin: 0 0 4px; }
+  h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
+  .progreso { margin-top: 16px; background: var(--blanco); border-radius: 16px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .progreso p { margin: 0 0 10px; font-weight: 600; }
+  .barra { height: 10px; background: var(--acento-suave); border-radius: 99px; overflow: hidden; }
+  .barra span { display: block; height: 100%; width: 0; background: var(--acento); border-radius: 99px; transition: width .3s; }
+  form { display: flex; gap: 10px; margin-bottom: 20px; }
+  input[type=text] {
+    flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 14px 16px;
+    border: 2px solid var(--linea); border-radius: 12px; background: var(--blanco); color: var(--texto);
+  }
+  input[type=text]:focus { outline: none; border-color: var(--acento); }
+  button { font: inherit; cursor: pointer; }
+  .btn {
+    border: 0; border-radius: 12px; padding: 14px 22px; font-weight: 600; font-size: 16px;
+    background: var(--acento); color: #fff;
+  }
+  .btn:hover { background: var(--acento-osc); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  li {
+    display: flex; align-items: center; gap: 14px; background: var(--blanco);
+    border-radius: 16px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .check {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    border: 2px solid var(--linea); background: var(--blanco); display: grid; place-items: center; padding: 0;
+  }
+  .check svg { width: 18px; height: 18px; stroke: #fff; opacity: 0; }
+  li.hecho .check { background: var(--acento); border-color: var(--acento); }
+  li.hecho .check svg { opacity: 1; }
+  .nombre { flex: 1; font-size: 17px; font-weight: 500; }
+  li.hecho .nombre { color: var(--gris); }
+  .vacio { text-align: center; color: var(--gris); padding: 32px 16px; border: 2px dashed var(--linea); border-radius: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="fecha" id="fecha"></p>
+    <h1>Mis hábitos</h1>
+    <div class="progreso">
+      <p id="resumen">0 de 0 hechos hoy</p>
+      <div class="barra"><span id="barra"></span></div>
+    </div>
+  </header>
+
+  <form id="formulario">
+    <input type="text" id="nuevo" placeholder="Nuevo hábito, por ejemplo: Leer 10 minutos" maxlength="60" autocomplete="off">
+    <button class="btn" id="add" type="submit">Añadir</button>
+  </form>
+
+  <ul id="lista"></ul>
+</main>
+
+<script>
+  // Cada hábito: { id, nombre, creado, hechos: ["2026-11-03", ...] }
+  let habitos = [];
+
+  // Fecha en formato "AAAA-MM-DD" (hora local)
+  function clave(fecha) {
+    const a = fecha.getFullYear();
+    const m = String(fecha.getMonth() + 1).padStart(2, '0');
+    const d = String(fecha.getDate()).padStart(2, '0');
+    return `${a}-${m}-${d}`;
+  }
+  const hoy = () => clave(new Date());
+
+  function anadir(nombre) {
+    habitos.push({ id: Date.now(), nombre, creado: hoy(), hechos: [] });
+    pintar();
+  }
+
+  function alternarHoy(id) {
+    const h = habitos.find(x => x.id === id);
+    const dia = hoy();
+    if (h.hechos.includes(dia)) {
+      h.hechos = h.hechos.filter(d => d !== dia);
+    } else {
+      h.hechos.push(dia);
+    }
+    pintar();
+  }
+
+  const ICONO_OK = '<svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>';
+
+  function pintar() {
+    const lista = document.getElementById('lista');
+    lista.innerHTML = '';
+    if (habitos.length === 0) {
+      lista.innerHTML = '<li class="vacio">Aún no tienes hábitos. Añade el primero arriba.</li>';
+    }
+    for (const h of habitos) {
+      const hecho = h.hechos.includes(hoy());
+      const li = document.createElement('li');
+      if (hecho) li.className = 'hecho';
+      li.innerHTML = `<button class="check" aria-label="Marcar hecho hoy">${ICONO_OK}</button>
+        <span class="nombre"></span>`;
+      li.querySelector('.nombre').textContent = h.nombre;
+      li.querySelector('.check').onclick = () => alternarHoy(h.id);
+      lista.append(li);
+    }
+    const hechos = habitos.filter(h => h.hechos.includes(hoy())).length;
+    document.getElementById('resumen').textContent = `${hechos} de ${habitos.length} hechos hoy`;
+    const pct = habitos.length ? hechos / habitos.length * 100 : 0;
+    document.getElementById('barra').style.width = pct + '%';
+  }
+
+  document.getElementById('formulario').onsubmit = (e) => {
+    e.preventDefault();
+    const campo = document.getElementById('nuevo');
+    const nombre = campo.value.trim();
+    if (nombre) anadir(nombre);
+    campo.value = '';
+    campo.focus();
+  };
+
+  document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  pintar();
+</script>
+</body>
+</html>
