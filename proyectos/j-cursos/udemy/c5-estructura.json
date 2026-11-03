@@ -1,0 +1,1070 @@
+{
+ "curso": "c5",
+ "ficha": {
+  "titulo": "Vibe coding: crea apps y webs con IA sin saber programar",
+  "subtitulo": "De la idea a la app publicada con Claude, ChatGPT o Gemini: 4 proyectos reales, gratis y paso a paso",
+  "idioma": "Español (España)",
+  "nivel": "Principiante",
+  "categoria": "Desarrollo > Desarrollo web",
+  "temaPrincipal": "Vibe coding",
+  "precioLista": "49,99 €",
+  "gratis": false,
+  "objetivos": [
+   "Crear webs, apps y herramientas pidiéndoselas a una IA, sin saber programar",
+   "Escribir instrucciones que funcionan y avanzar en pasos pequeños sin romper lo que ya va",
+   "Publicar gratis en internet la web de un negocio con su propia dirección",
+   "Construir una app de hábitos que se guarda sola y se instala en el móvil",
+   "Hacer una calculadora de presupuestos con IVA y PDF para tu trabajo",
+   "Arreglar errores con ayuda de la IA y entender lo justo del código para revisarlo",
+   "Saber cuándo usar Lovable, Bolt, Cursor o Claude Code, y cuándo llamar a un programador"
+  ],
+  "requisitos": [
+   "No hace falta saber programar: empezamos desde cero",
+   "Un ordenador con navegador e internet (Windows, Mac o Linux)",
+   "Una cuenta gratuita en Claude, ChatGPT o Gemini: el curso no obliga a pagar nada"
+  ],
+  "publico": [
+   "Autónomos, profes y emprendedores que quieren su web o sus herramientas sin depender de nadie",
+   "Personas curiosas que han oído hablar del vibe coding y quieren probarlo con método",
+   "Quien tiene una idea de app y quiere un prototipo para enseñarla o encargarla bien"
+  ],
+  "palabrasClave": [
+   "vibe coding",
+   "programar con IA",
+   "crear apps con IA",
+   "crear una web con IA",
+   "programar sin saber programar",
+   "Claude",
+   "ChatGPT",
+   "Lovable",
+   "Cursor",
+   "no code"
+  ]
+ },
+ "secciones": [
+  {
+   "n": 1,
+   "titulo": "Empieza aquí",
+   "clases": [
+    {
+     "n": 1,
+     "id": "c5-01",
+     "titulo": "Bienvenida: tu primera app con IA en 10 minutos",
+     "descripcion": "Construyes tu primera app con un chat de IA gratuito, en tres instrucciones: una calculadora para dividir la cuenta entre amigos que copia el resumen para WhatsApp. Y ves qué vas a crear en el resto del curso.",
+     "video": "01 - Bienvenida tu primera app con IA en 10 minutos.mp4",
+     "subtitulos": "01 - Bienvenida tu primera app con IA en 10 minutos.vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "primera-app.pdf",
+      "app-primera.zip"
+     ],
+     "duracion": 220.433
+    },
+    {
+     "n": 2,
+     "id": "c5-02",
+     "titulo": "Qué es el vibe coding (y qué no es)",
+     "descripcion": "Entiendes qué es el vibe coding, de dónde sale la expresión, para qué sirve y para qué no, y cuál es tu papel: decidir y comprobar mientras la IA escribe el código.",
+     "video": "02 - Qué es el vibe coding (y qué no es).mp4",
+     "subtitulos": "02 - Qué es el vibe coding (y qué no es).vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "primera-app.pdf"
+     ],
+     "duracion": 308.43
+    },
+    {
+     "n": 3,
+     "id": "c5-03",
+     "titulo": "Las herramientas: cuál usar para qué",
+     "descripcion": "Conoces las tres familias de herramientas de vibe coding (chats de IA, constructores de apps en el navegador y herramientas para tu ordenador) y dónde publicar gratis, y eliges con qué empezar sin pagar nada.",
+     "video": "03 - Las herramientas cuál usar para qué.mp4",
+     "subtitulos": "03 - Las herramientas cuál usar para qué.vtt",
+     "vistaPrevia": true,
+     "recursos": [
+      "herramientas-ia.pdf"
+     ],
+     "duracion": 299.506
+    }
+   ],
+   "cuestionario": null
+  },
+  {
+   "n": 2,
+   "titulo": "Lo mínimo que tienes que entender",
+   "clases": [
+    {
+     "n": 4,
+     "id": "c5-04",
+     "titulo": "Cómo funciona una web: HTML, CSS y JavaScript sin tecnicismos",
+     "descripcion": "Distingues las tres partes de cualquier web (HTML, CSS y JavaScript) sobre tu propia app de la cuenta, y aprendes a pedir cambios a la IA diciendo en qué parte están.",
+     "video": "04 - Cómo funciona una web HTML, CSS y JavaScript sin tecnicismos.mp4",
+     "subtitulos": "04 - Cómo funciona una web HTML, CSS y JavaScript sin tecnicismos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "chuleta-web.pdf",
+      "app-primera.zip"
+     ],
+     "duracion": 277.805
+    },
+    {
+     "n": 5,
+     "id": "c5-05",
+     "titulo": "Archivos, carpetas y el navegador: tu taller",
+     "descripcion": "Preparas tu taller de trabajo: una carpeta por proyecto, el código guardado en un archivo index.html que se abre con doble clic, y la consola del navegador para ver los errores.",
+     "video": "05 - Archivos, carpetas y el navegador tu taller.mp4",
+     "subtitulos": "05 - Archivos, carpetas y el navegador tu taller.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "chuleta-web.pdf",
+      "app-primera.zip"
+     ],
+     "duracion": 289.63
+    },
+    {
+     "n": 6,
+     "id": "c5-06",
+     "titulo": "Leer código sin saber programar",
+     "descripcion": "Aprendes a orientarte dentro del código que te da la IA: encontrar dónde está cada cosa, entender un trozo con ayuda de la IA y hacer tú mismo cambios pequeños como un texto, un color o un número.",
+     "video": "06 - Leer código sin saber programar.mp4",
+     "subtitulos": "06 - Leer código sin saber programar.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "chuleta-web.pdf"
+     ],
+     "duracion": 279.427
+    },
+    {
+     "n": 7,
+     "id": "c5-07",
+     "titulo": "Lo que puede salir mal: errores, inventos y seguridad",
+     "descripcion": "Reconoces los tres tipos de problemas del vibe coding (errores, fallos silenciosos e inventos de la IA), aprendes a detectarlos probando casos raros y a evitar los dos riesgos de seguridad más comunes: claves en el código y datos personales.",
+     "video": "07 - Lo que puede salir mal errores, inventos y seguridad.mp4",
+     "subtitulos": "07 - Lo que puede salir mal errores, inventos y seguridad.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "lista-seguridad.pdf"
+     ],
+     "duracion": 299.528
+    }
+   ],
+   "cuestionario": {
+    "seccion": 2,
+    "titulo": "Cuestionario: lo mínimo que tienes que entender",
+    "preguntas": [
+     {
+      "pregunta": "Quieres que los botones de propina de tu app sean naranjas en lugar de verdes. ¿En qué parte de la página está ese cambio?",
+      "respuestas": [
+       "En el HTML",
+       "En el CSS",
+       "En el JavaScript",
+       "En el nombre del archivo"
+      ],
+      "correcta": 1,
+      "explicacion": "El CSS decide cómo se ve cada cosa: colores, tamaños y espacios. El HTML dice qué hay en la página y el JavaScript, qué pasa al pulsar."
+     },
+     {
+      "pregunta": "Guardas el código en el Bloc de notas y, al hacer doble clic, ves el texto del código en lugar de la app. ¿Qué es lo más probable?",
+      "respuestas": [
+       "El archivo se ha guardado como index.html.txt",
+       "La IA ha escrito mal todo el código",
+       "Hace falta conexión a internet para abrirlo",
+       "El navegador no admite archivos HTML"
+      ],
+      "correcta": 0,
+      "explicacion": "Windows oculta las extensiones y el Bloc de notas puede añadir .txt. Al guardar, elige «Todos los archivos» y codificación UTF-8, y llama al archivo index.html."
+     },
+     {
+      "pregunta": "Dejas vacío el total, pulsas Calcular y la app dice «Cada uno paga: NaN €», sin ningún error en la consola. ¿Qué tipo de problema es?",
+      "respuestas": [
+       "Un invento de la IA",
+       "Un problema de la conexión",
+       "Un riesgo de seguridad",
+       "Un fallo silencioso: funciona, pero el resultado está mal"
+      ],
+      "correcta": 3,
+      "explicacion": "Nada se queja, pero el resultado no tiene sentido. Estos fallos solo se descubren probando casos raros: campos vacíos, cero, negativos, coma decimal o el móvil."
+     },
+     {
+      "pregunta": "La consola dice «total.toEuros is not a function» después de un cambio que hizo la IA. ¿Qué haces?",
+      "respuestas": [
+       "Borrar el archivo y empezar de cero",
+       "Copiar el error y pedir que lo arregle con funciones estándar",
+       "Ignorarlo si la página se ve bien",
+       "Buscar e instalar una librería llamada toEuros"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una alucinación: la IA ha usado una función que no existe. Pega el error tal cual y pide que use solo funciones que existan en todos los navegadores. Luego prueba otra vez."
+     },
+     {
+      "pregunta": "Tu app va a usar un servicio que te ha dado una clave secreta. ¿Dónde debe ir esa clave?",
+      "respuestas": [
+       "Dentro del HTML, al principio del archivo",
+       "Pegada en el chat para que la IA la use",
+       "En un servidor o en los ajustes de secretos de la herramienta"
+      ],
+      "correcta": 2,
+      "explicacion": "Todo lo que hay en una página web lo puede ver cualquiera con «Ver código fuente». Una clave en el HTML o en el chat la puede copiar otra persona y gastar a tu nombre."
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "titulo": "El método: pedir bien a la IA",
+   "clases": [
+    {
+     "n": 8,
+     "id": "c5-08",
+     "titulo": "La ficha del proyecto: tu idea en una página",
+     "descripcion": "Conviertes tu idea en una ficha de una página: para quién es, qué problema resuelve, pantallas, datos, qué no hará y cómo sabrás que funciona. Con ella, la IA construye lo que tú quieres y no lo que se imagina.",
+     "video": "08 - La ficha del proyecto tu idea en una página.mp4",
+     "subtitulos": "08 - La ficha del proyecto tu idea en una página.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "ficha-proyecto.pdf"
+     ],
+     "duracion": 297.068
+    },
+    {
+     "n": 9,
+     "id": "c5-09",
+     "titulo": "Instrucciones que funcionan: contexto, tarea y límites",
+     "descripcion": "Aprendes a escribir instrucciones para la IA en tres partes, contexto, tarea y límites, y ves la instrucción exacta que crea una lista de la compra en un solo archivo. Te llevas 30 instrucciones listas para pedir, iterar, depurar y pulir.",
+     "video": "09 - Instrucciones que funcionan contexto, tarea y límites.mp4",
+     "subtitulos": "09 - Instrucciones que funcionan contexto, tarea y límites.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "instrucciones-vibe-coding.pdf"
+     ],
+     "duracion": 291.734
+    },
+    {
+     "n": 10,
+     "id": "c5-10",
+     "titulo": "Avanzar en pasos pequeños y guardar versiones",
+     "descripcion": "Aprendes a avanzar con un cambio cada vez y a guardar cada versión de tu app en su propia carpeta, sin instalar nada, para poder volver atrás cuando algo se estropea. También sabrás cuándo empezar una conversación nueva con la IA.",
+     "video": "10 - Avanzar en pasos pequeños y guardar versiones.mp4",
+     "subtitulos": "10 - Avanzar en pasos pequeños y guardar versiones.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "app-metodo.zip",
+      "instrucciones-vibe-coding.pdf"
+     ],
+     "duracion": 290.371
+    },
+    {
+     "n": 11,
+     "id": "c5-11",
+     "titulo": "Cuando algo falla: cómo pedir que lo arregle",
+     "descripcion": "Encuentras dos fallos reales en una lista de la compra hecha con IA, abres la consola del navegador con F12 y aprendes qué copiar a la IA para que lo arregle a la primera: qué hiciste, qué esperabas, qué pasa, el mensaje de la consola y qué cambiaste.",
+     "video": "11 - Cuando algo falla cómo pedir que lo arregle.mp4",
+     "subtitulos": "11 - Cuando algo falla cómo pedir que lo arregle.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "checklist-errores.pdf",
+      "app-metodo.zip"
+     ],
+     "duracion": 342.186
+    }
+   ],
+   "cuestionario": {
+    "seccion": 3,
+    "titulo": "Cuestionario: el método para pedir bien a la IA",
+    "preguntas": [
+     {
+      "pregunta": "En la ficha del proyecto, ¿por qué es tan importante el apartado «Qué NO hará»?",
+      "respuestas": [
+       "Porque así la IA escribe el código más rápido",
+       "Porque cada cosa que dejas fuera es una fuente de errores menos y la primera versión queda pequeña",
+       "Porque es obligatorio para publicar la app en internet",
+       "Porque la IA no puede hacer apps con usuarios ni categorías"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo que dejas fuera mantiene la primera versión pequeña y probable de funcionar. Compartir la lista entre dos móviles, por ejemplo, necesita un servidor: mejor dejarlo para una versión posterior."
+     },
+     {
+      "pregunta": "¿Cuáles son las tres partes de una buena instrucción para la IA?",
+      "respuestas": [
+       "Contexto, tarea y límites",
+       "Saludo, petición y agradecimiento",
+       "Código, diseño y textos"
+      ],
+      "correcta": 0,
+      "explicacion": "Contexto: quién eres, la ficha y lo que ya hay. Tarea: una sola cosa. Límites: cómo debe ser el resultado y qué no tocar, por ejemplo un solo archivo, completo, sin librerías."
+     },
+     {
+      "pregunta": "Tu app funciona y quieres añadir algo nuevo. ¿Qué haces antes de pedir el cambio a la IA?",
+      "respuestas": [
+       "Pedir cinco mejoras a la vez para ahorrar tiempo",
+       "Guardar el archivo nuevo encima del que funciona",
+       "Borrar la conversación anterior y empezar sin la ficha",
+       "Copiar la carpeta de la versión buena y trabajar en la copia, por ejemplo v2"
+      ],
+      "correcta": 3,
+      "explicacion": "Sin Git, guardar versiones es copiar la carpeta: v1, v2, v3. La versión que funcionaba no se toca, así que si el cambio sale mal, vuelves a ella abriendo la carpeta anterior."
+     },
+     {
+      "pregunta": "Pulsas el botón «Vaciar lista» y no pasa nada. ¿Cuál es el mejor siguiente paso?",
+      "respuestas": [
+       "Escribir a la IA «no funciona, arréglalo»",
+       "Abrir la consola con F12, repetir la acción y copiar el mensaje en rojo",
+       "Pedir a la IA que rehaga la app desde cero"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando un botón no hace nada, suele haber un error en la consola. En la lista de la compra decía que guardarLista no estaba definido: con ese mensaje y la línea, la IA sabe dónde mirar."
+     },
+     {
+      "pregunta": "¿Qué información conviene darle a la IA cuando algo falla?",
+      "respuestas": [
+       "Solo el mensaje de la consola, nada más",
+       "Tu contraseña y la clave de la app, para que pueda probarla",
+       "Qué hiciste, qué esperabas, qué pasa, el mensaje de la consola y qué cambiaste por última vez",
+       "Una captura de pantalla sin explicación"
+      ],
+      "correcta": 2,
+      "explicacion": "Con esos cinco datos la IA no tiene que adivinar. Si la consola no muestra nada en rojo, dilo también. Y nunca pegues contraseñas, claves ni datos personales en el chat."
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "titulo": "Proyecto 1: la web de un negocio",
+   "clases": [
+    {
+     "n": 12,
+     "id": "c5-12",
+     "titulo": "El plan: qué necesita la web de un negocio local",
+     "descripcion": "Decides qué tiene que llevar la web de un negocio de barrio y qué le sobra, reúnes los datos reales y preparas las cuatro instrucciones con las que la IA la construirá en las próximas clases.",
+     "video": "12 - El plan qué necesita la web de un negocio local.mp4",
+     "subtitulos": "12 - El plan qué necesita la web de un negocio local.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "web-negocio-ficha.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 288.062
+    },
+    {
+     "n": 13,
+     "id": "c5-13",
+     "titulo": "Primera versión en un solo archivo",
+     "descripcion": "Con una sola instrucción, la IA te escribe la primera versión de la web del negocio en un único archivo: la guardas, la abres en el navegador, compruebas cada dato y el botón de WhatsApp, y corriges lo que falle.",
+     "video": "13 - Primera versión en un solo archivo.mp4",
+     "subtitulos": "13 - Primera versión en un solo archivo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "web-negocio-ficha.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 275.418
+    },
+    {
+     "n": 14,
+     "id": "c5-14",
+     "titulo": "Diseño, colores y que se vea bien en el móvil",
+     "descripcion": "Con dos instrucciones conviertes la primera versión en una web con personalidad: paleta de colores, tipos de letra e ilustraciones propias, y después un móvil perfecto con menú, botones fijos de llamar y WhatsApp, opiniones de ejemplo y aviso legal.",
+     "video": "14 - Diseño, colores y que se vea bien en el móvil.mp4",
+     "subtitulos": "14 - Diseño, colores y que se vea bien en el móvil.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "web-negocio-ficha.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 338.567
+    },
+    {
+     "n": 15,
+     "id": "c5-15",
+     "titulo": "Publicarla gratis en internet con tu propia dirección",
+     "descripcion": "Dejas la web lista para Google y para compartir por WhatsApp, la revisas con una lista de comprobación y la publicas gratis con Netlify Drop arrastrando la carpeta; después le pones un nombre claro y, si quieres, tu propio dominio.",
+     "video": "15 - Publicarla gratis en internet con tu propia dirección.mp4",
+     "subtitulos": "15 - Publicarla gratis en internet con tu propia dirección.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "checklist-publicar-web.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 286.64
+    }
+   ],
+   "cuestionario": {
+    "seccion": 4,
+    "titulo": "Cuestionario: la web de un negocio",
+    "preguntas": [
+     {
+      "pregunta": "Para la web de una peluquería de barrio, ¿qué es lo más útil para conseguir citas?",
+      "respuestas": [
+       "Una tienda online con todos los productos",
+       "Un formulario largo de contacto",
+       "Un botón de WhatsApp y otro de llamar siempre a mano",
+       "Un blog con artículos semanales"
+      ],
+      "correcta": 2,
+      "explicacion": "El cliente quiere pedir cita con un toque. Los botones de WhatsApp y llamar, fijos en el móvil, lo consiguen sin formularios ni datos que guardar."
+     },
+     {
+      "pregunta": "Le pides a la IA un nuevo diseño para tu web. ¿Qué límite conviene incluir en la instrucción?",
+      "respuestas": [
+       "No cambies textos ni datos",
+       "Usa todas las fotos que encuentres en internet",
+       "Hazla bonita, como tú veas",
+       "Cambia también los precios si te parecen bajos"
+      ],
+      "correcta": 0,
+      "explicacion": "Si la IA no toca textos ni datos, no tienes que revisarlo todo otra vez. Las fotos de internet suelen tener derechos de autor y «hazla bonita» da un resultado genérico."
+     },
+     {
+      "pregunta": "La IA ha añadido a tu web tres opiniones de clientes que no existen. ¿Qué haces antes de publicar?",
+      "respuestas": [
+       "Las dejo: dan confianza",
+       "Las quito o las cambio por opiniones reales y con permiso",
+       "Les cambio los nombres para que parezcan más reales",
+       "Les pongo cinco estrellas a todas"
+      ],
+      "correcta": 1,
+      "explicacion": "Presentar opiniones inventadas como reales es engañar al cliente y lo prohíbe la normativa de consumo. Como ejemplo están bien, pero antes de publicar se quitan o se sustituyen por reales."
+     },
+     {
+      "pregunta": "Quieres publicar gratis la web de tu negocio. ¿Qué opción NO encaja con el plan gratuito?",
+      "respuestas": [
+       "Netlify Drop, arrastrando la carpeta",
+       "Probarla antes en tu ordenador con doble clic",
+       "Comprar un dominio propio y conectarlo a Netlify",
+       "El plan Hobby de Vercel"
+      ],
+      "correcta": 3,
+      "explicacion": "El plan gratuito Hobby de Vercel es solo para uso personal no comercial. Netlify Drop es gratis y admite uso comercial dentro de sus límites."
+     },
+     {
+      "pregunta": "¿Para qué sirven las etiquetas Open Graph que añadiste en la última versión?",
+      "respuestas": [
+       "Para que la web cargue más rápido",
+       "Para que al compartir el enlace salga una tarjeta con título e imagen",
+       "Para cobrar a los clientes",
+       "Para que funcione sin internet"
+      ],
+      "correcta": 1,
+      "explicacion": "Open Graph decide la tarjeta que aparece al compartir el enlace en WhatsApp o redes: título, descripción e imagen, con la dirección completa."
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "titulo": "Proyecto 2: una app de hábitos",
+   "clases": [
+    {
+     "n": 16,
+     "id": "c5-16",
+     "titulo": "El plan: pantallas y datos de una app sencilla",
+     "descripcion": "Planificas una app de hábitos antes de escribir una sola línea: dibujas sus pantallas, decides qué datos guarda y entiendes dónde se guardan. Sales con la plantilla de pantallas y datos rellena y un plan en cuatro instrucciones.",
+     "video": "16 - El plan pantallas y datos de una app sencilla.mp4",
+     "subtitulos": "16 - El plan pantallas y datos de una app sencilla.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "pantallas-y-datos.pdf",
+      "app-habitos.zip"
+     ],
+     "duracion": 311.639
+    },
+    {
+     "n": 17,
+     "id": "c5-17",
+     "titulo": "La lista de hábitos que se guarda sola",
+     "descripcion": "Construyes con la IA las dos primeras versiones de la app de hábitos: añadir hábitos y marcarlos hechos hoy, y después que se guarden en el navegador para que sigan ahí al recargar, con editar, borrar y deshacer.",
+     "video": "17 - La lista de hábitos que se guarda sola.mp4",
+     "subtitulos": "17 - La lista de hábitos que se guarda sola.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "app-habitos.zip",
+      "pantallas-y-datos.pdf"
+     ],
+     "duracion": 301.418
+    },
+    {
+     "n": 18,
+     "id": "c5-18",
+     "titulo": "Rachas, estadísticas y un gráfico",
+     "descripcion": "Añades a la app de hábitos las rachas de días seguidos, las cifras de la última semana y un gráfico de barras dibujado sin librerías. Aprendes a definir reglas exactas para la IA y a probar los casos raros con datos de ejemplo.",
+     "video": "18 - Rachas, estadísticas y un gráfico.mp4",
+     "subtitulos": "18 - Rachas, estadísticas y un gráfico.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "app-habitos.zip",
+      "pantallas-y-datos.pdf"
+     ],
+     "duracion": 302.855
+    },
+    {
+     "n": 19,
+     "id": "c5-19",
+     "titulo": "Instálala en el móvil como una app",
+     "descripcion": "Conviertes la app de hábitos en una app instalable con un manifest y un service worker, la publicas gratis y la instalas en el móvil. Además añades una copia de seguridad en JSON para no perder tus datos.",
+     "video": "19 - Instálala en el móvil como una app.mp4",
+     "subtitulos": "19 - Instálala en el móvil como una app.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "app-habitos.zip",
+      "pantallas-y-datos.pdf"
+     ],
+     "duracion": 334.554
+    }
+   ],
+   "cuestionario": {
+    "seccion": 5,
+    "titulo": "Cuestionario: la app de hábitos",
+    "preguntas": [
+     {
+      "pregunta": "En la app de hábitos, ¿por qué guardamos la lista de días hechos y no la racha de cada hábito?",
+      "respuestas": [
+       "Porque la racha ocupa demasiado espacio",
+       "Porque la racha se calcula a partir de los días y así nada se contradice",
+       "Porque localStorage no puede guardar números",
+       "Porque la IA no sabe calcular rachas"
+      ],
+      "correcta": 1,
+      "explicacion": "Guarda lo que pasó y calcula el resto. Si guardaras la racha aparte, tarde o temprano no cuadraría con los días marcados. Y si cambias la forma de contarla, tu historial sigue intacto."
+     },
+     {
+      "pregunta": "Marcas tus hábitos en el móvil y luego abres la misma app en el ordenador. ¿Qué ves?",
+      "respuestas": [
+       "Los mismos hábitos, porque localStorage se sincroniza solo",
+       "Los hábitos del móvil, pero sin los días marcados",
+       "Los datos del ordenador: localStorage es de cada navegador y dispositivo"
+      ],
+      "correcta": 2,
+      "explicacion": "localStorage guarda los datos en ese navegador y en ese dispositivo. No se comparten. Para pasar tus datos de un sitio a otro, usa la copia de seguridad en JSON."
+     },
+     {
+      "pregunta": "Son las diez de la mañana y aún no has marcado «Leer», que ayer llevaba 5 días seguidos. Con la regla del curso, ¿qué racha muestra la app?",
+      "respuestas": [
+       "5 días: si hoy no está hecho, cuenta hasta ayer",
+       "0 días: hoy no está hecho",
+       "6 días: cuenta hoy por adelantado",
+       "Depende de la hora del día"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla que dimos a la IA: si hoy aún no está hecho, la racha cuenta hasta ayer. Así la app no te castiga cada mañana. Las reglas exactas hay que escribirlas en la instrucción."
+     },
+     {
+      "pregunta": "Abres la versión 4 con doble clic en tu ordenador. ¿Qué pasa con el service worker?",
+      "respuestas": [
+       "Se registra y la app ya se puede instalar",
+       "Da un error y la app deja de funcionar",
+       "No se registra, la app funciona igual y la tarjeta explica que hay que publicarla"
+      ],
+      "correcta": 2,
+      "explicacion": "Los navegadores no permiten service workers en archivos abiertos con doble clic. Por eso pedimos que, como archivo, no se cargue nada ni dé errores. Publicada con https, sí se puede instalar."
+     },
+     {
+      "pregunta": "Publicas una versión nueva de la app en Netlify y te da una dirección distinta. Al abrirla en el móvil, tus hábitos no están. ¿Por qué?",
+      "respuestas": [
+       "Porque Netlify borra los datos al publicar",
+       "Porque los datos de localStorage van unidos a la dirección de la web",
+       "Porque el service worker borra la caché",
+       "Porque hay que volver a instalar los iconos"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada dirección tiene su propio cajón de datos. Para actualizar, sube la carpeta al mismo sitio de Netlify. Y descarga una copia antes de cualquier cambio grande."
+     }
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "titulo": "Proyecto 3: una herramienta para tu trabajo",
+   "clases": [
+    {
+     "n": 20,
+     "id": "c5-20",
+     "titulo": "El plan: una calculadora de presupuestos",
+     "descripcion": "Planificas una herramienta propia para tu trabajo, una calculadora de presupuestos con IVA y PDF, y construyes con la IA la primera versión: líneas con concepto, cantidad y precio, y el total.",
+     "video": "20 - El plan una calculadora de presupuestos.mp4",
+     "subtitulos": "20 - El plan una calculadora de presupuestos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "ficha-herramienta-presupuestos.pdf",
+      "app-presupuestos.zip"
+     ],
+     "duracion": 322.845
+    },
+    {
+     "n": 21,
+     "id": "c5-21",
+     "titulo": "Cálculos, IVA y casos raros",
+     "descripcion": "Añades a la calculadora el IVA, el descuento, el redondeo a céntimos y los avisos de datos erróneos, y aprendes a comprobar las cuentas de la IA con casos hechos a mano, incluido el famoso 0,1 + 0,2.",
+     "video": "21 - Cálculos, IVA y casos raros.mp4",
+     "subtitulos": "21 - Cálculos, IVA y casos raros.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "casos-de-prueba.pdf",
+      "app-presupuestos.zip"
+     ],
+     "duracion": 344.574
+    },
+    {
+     "n": 22,
+     "id": "c5-22",
+     "titulo": "Un presupuesto en PDF listo para enviar",
+     "descripcion": "Conviertes la calculadora en un presupuesto profesional con datos del cliente, número, fecha y validez de 30 días, lo guardas en PDF con la impresión del navegador y guardas los presupuestos anteriores para duplicarlos.",
+     "video": "22 - Un presupuesto en PDF listo para enviar.mp4",
+     "subtitulos": "22 - Un presupuesto en PDF listo para enviar.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "presupuesto-contenido.pdf",
+      "app-presupuestos.zip"
+     ],
+     "duracion": 309.675
+    },
+    {
+     "n": 23,
+     "id": "c5-23",
+     "titulo": "Formularios y datos de clientes: lo que dice la ley",
+     "descripcion": "Entiendes lo básico del RGPD para tus herramientas y formularios (informar, pedir consentimiento y guardar los datos en un sitio seguro), por qué localStorage no sirve para recoger datos de clientes y por qué un presupuesto no es una factura.",
+     "video": "23 - Formularios y datos de clientes lo que dice la ley.mp4",
+     "subtitulos": "23 - Formularios y datos de clientes lo que dice la ley.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "aviso-privacidad-formulario.pdf",
+      "casos-de-prueba.pdf",
+      "app-presupuestos.zip"
+     ],
+     "duracion": 334.973
+    }
+   ],
+   "cuestionario": {
+    "seccion": 6,
+    "titulo": "Cuestionario: una herramienta para tu trabajo",
+    "preguntas": [
+     {
+      "pregunta": "La IA te entrega la versión con IVA y te asegura que ha revisado las cuentas. ¿Qué haces antes de usarla con clientes?",
+      "respuestas": [
+       "Nada: si la IA dice que lo ha revisado, está bien",
+       "Le pido que lo revise otra vez, por si acaso",
+       "La comparo con casos que he calculado yo a mano",
+       "Cambio el diseño para que se vea más profesional"
+      ],
+      "correcta": 2,
+      "explicacion": "La IA escribe código creíble, pero no suele ejecutarlo, y un fallo de un céntimo no da ningún error. Su «lo he comprobado» no es una prueba. Los casos hechos a mano, con decimales y medios céntimos, son tu referencia."
+     },
+     {
+      "pregunta": "¿Por qué pedimos a la IA que haga todas las cuentas de dinero en céntimos, con números enteros?",
+      "respuestas": [
+       "Porque los ordenadores guardan los decimales de forma aproximada y los redondeos pueden fallar",
+       "Porque Hacienda obliga a escribir los precios en céntimos",
+       "Porque así la app ocupa menos espacio",
+       "Porque el navegador no sabe mostrar decimales"
+      ],
+      "correcta": 0,
+      "explicacion": "En el ordenador, 0,1 + 0,2 da 0,30000000000000004. Por eso el IVA de 21,50 € al 21 % puede salir 4,51 € en vez de 4,52 €. Con céntimos enteros y redondeo en cada paso, las cuentas cuadran con las tuyas."
+     },
+     {
+      "pregunta": "En tu calculadora puedes elegir IVA del 21 o del 10 por ciento. ¿Quién decide cuál aplicar en cada presupuesto?",
+      "respuestas": [
+       "La IA, según lo que pongas en el concepto",
+       "Tu gestoría: el 10 % solo vale para algunas reformas de vivienda con requisitos",
+       "El cliente, según lo que prefiera pagar",
+       "Siempre el 10 %, porque las reformas lo llevan"
+      ],
+      "correcta": 1,
+      "explicacion": "El tipo general es el 21 %. Algunas reformas de vivienda pueden llevar el 10 % si cumplen requisitos. No lo decide la IA ni la app: tu gestoría te dirá cuál aplica en cada caso."
+     },
+     {
+      "pregunta": "Quieres un formulario en tu web para que los clientes te pidan presupuesto. ¿Por qué no sirve guardar sus datos con localStorage?",
+      "respuestas": [
+       "Porque localStorage es de pago a partir de cierto tamaño",
+       "Porque solo funciona en ordenadores, no en móviles",
+       "Sí sirve, si añades un aviso de privacidad",
+       "Porque los datos se quedan en el navegador del cliente y tú nunca los recibes"
+      ],
+      "correcta": 3,
+      "explicacion": "localStorage guarda en el navegador de quien escribe. Es perfecto para herramientas personales, como tu calculadora, pero para recoger datos de clientes necesitas un sitio seguro que te los haga llegar, con aviso de privacidad."
+     },
+     {
+      "pregunta": "Tu calculadora ya saca presupuestos en PDF. ¿Es buena idea pedir a la IA que la convierta en tu programa de facturas?",
+      "respuestas": [
+       "Sí, basta con cambiar «Presupuesto» por «Factura»",
+       "No: las facturas se emiten con un programa adaptado, que desde 2027 debe cumplir Verifactu",
+       "Sí, si numeras las facturas a mano",
+       "Solo si guardas las facturas en localStorage"
+      ],
+      "correcta": 1,
+      "explicacion": "Un presupuesto es una oferta. La factura tiene requisitos legales y, desde 2027, los programas de facturación deben cumplir Verifactu. Usa un programa adaptado y consulta con tu gestoría."
+     }
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "titulo": "Proyecto 4: un juego",
+   "clases": [
+    {
+     "n": 24,
+     "id": "c5-24",
+     "titulo": "El plan: un juego que se entienda en 5 segundos",
+     "descripcion": "Diseñas en una página un juego original de atrapar objetos para el navegador: objetivo, controles, cómo se gana y se pierde y qué lo hace más difícil. Y pides a la IA la primera versión, en la que ya se mueve la cesta y cae la fruta.",
+     "video": "24 - El plan un juego que se entienda en 5 segundos.mp4",
+     "subtitulos": "24 - El plan un juego que se entienda en 5 segundos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "diseno-de-juego.pdf",
+      "app-juego.zip"
+     ],
+     "duracion": 322.383
+    },
+    {
+     "n": 25,
+     "id": "c5-25",
+     "titulo": "El juego funcionando: mover, chocar y puntuar",
+     "descripcion": "Conviertes la primera versión en un juego de verdad con la IA: choques, puntos, vidas y fin de partida; después, dificultad creciente, récord guardado, controles táctiles para el móvil, pantalla de inicio y sonidos que se pueden apagar.",
+     "video": "25 - El juego funcionando mover, chocar y puntuar.mp4",
+     "subtitulos": "25 - El juego funcionando mover, chocar y puntuar.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "diseno-de-juego.pdf",
+      "app-juego.zip"
+     ],
+     "duracion": 305.756
+    },
+    {
+     "n": 26,
+     "id": "c5-26",
+     "titulo": "Pulirlo y compartirlo con un enlace",
+     "descripcion": "Pules tu juego con la prueba de los 5 segundos, una pantalla de inicio clara, pausa y accesibilidad básica, y lo publicas gratis con Netlify Drop para compartirlo con un enlace y recoger opiniones.",
+     "video": "26 - Pulirlo y compartirlo con un enlace.mp4",
+     "subtitulos": "26 - Pulirlo y compartirlo con un enlace.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "diseno-de-juego.pdf",
+      "app-juego.zip"
+     ],
+     "duracion": 340.252
+    }
+   ],
+   "cuestionario": {
+    "seccion": 7,
+    "titulo": "Cuestionario: tu juego, de la idea al enlace",
+    "preguntas": [
+     {
+      "pregunta": "Vas a pedirle a la IA tu primer juego. ¿Qué instrucción sigue mejor el método del curso?",
+      "respuestas": [
+       "«Hazme un juego completo de atrapar fruta, con niveles, récord, sonido y versión para móvil»",
+       "«Paso 1, solo esto: la cesta se mueve con las flechas y cae fruta. Todavía sin puntos ni choques»",
+       "«Hazme un juego divertido, el que tú quieras»",
+       "«Cópiame un juego famoso con sus personajes»"
+      ],
+      "correcta": 1,
+      "explicacion": "Pasos pequeños: una versión cada vez, probada antes de pedir la siguiente. Si algo falla, sabes dónde buscar. Y nunca copies personajes ni músicas de otros juegos: tienen dueño."
+     },
+     {
+      "pregunta": "En un juego hecho con canvas, ¿qué es el bucle?",
+      "respuestas": [
+       "La parte que guarda el récord en el navegador",
+       "El botón que vuelve a empezar la partida",
+       "Lo que actualiza el estado y lo vuelve a dibujar todo unas 60 veces por segundo"
+      ],
+      "correcta": 2,
+      "explicacion": "El bucle es el corazón del juego: mueve la cesta y lo que cae, comprueba los choques y vuelve a dibujar la escena, una y otra vez, como un cuaderno de dibujos animados."
+     },
+     {
+      "pregunta": "Tus amigos dicen que en el nivel 8 todo cae tan rápido que es imposible. ¿Qué le pides a la IA?",
+      "respuestas": [
+       "Que cambie los números de la dificultad y les ponga un tope más bajo, sin tocar nada más",
+       "Que rehaga el juego desde cero",
+       "Que quite los niveles",
+       "Nada: si es difícil, es mejor"
+      ],
+      "correcta": 0,
+      "explicacion": "La dificultad depende de unos pocos números: velocidad, tiempo entre objetos y proporción de piedras, cada uno con su tope. Ajustarlos es un cambio pequeño y fácil de probar."
+     },
+     {
+      "pregunta": "¿En qué consiste la prueba de los 5 segundos?",
+      "respuestas": [
+       "En comprobar que el juego carga en menos de 5 segundos",
+       "En enseñar la pantalla de inicio 5 segundos a alguien y preguntarle qué hay que hacer",
+       "En jugar 5 segundos para ver si hay errores en la consola"
+      ],
+      "correcta": 1,
+      "explicacion": "Si la persona no sabe qué hacer tras 5 segundos, sobra texto o faltan dibujos. Recorta, usa imágenes con las reglas y repite la prueba con otra persona."
+     },
+     {
+      "pregunta": "Publicas el juego con Netlify Drop y se lo mandas a tus amigos. ¿Qué pasa con el récord guardado en localStorage?",
+      "respuestas": [
+       "Todos ven una tabla con los récords de todos",
+       "Se borra cada vez que alguien abre el enlace",
+       "Netlify lo guarda en su servidor",
+       "Cada persona tiene su propio récord en su navegador"
+      ],
+      "correcta": 3,
+      "explicacion": "localStorage guarda los datos en el navegador de cada persona. Para una tabla de récords compartida haría falta un servidor con base de datos, que es lo que veremos en la siguiente sección."
+     }
+    ]
+   }
+  },
+  {
+   "n": 8,
+   "titulo": "El siguiente nivel",
+   "clases": [
+    {
+     "n": 27,
+     "id": "c5-27",
+     "titulo": "Apps con usuarios y base de datos: Lovable, Bolt y compañía",
+     "descripcion": "Descubres cuándo te compensa pasar del archivo HTML a un constructor de apps como Lovable, Bolt, v0 o Replit para tener usuarios, login y base de datos, qué es Supabase, cómo gastar bien los créditos gratuitos y cómo sacar tu código a GitHub para no quedarte atado.",
+     "video": "27 - Apps con usuarios y base de datos Lovable, Bolt y compañía.mp4",
+     "subtitulos": "27 - Apps con usuarios y base de datos Lovable, Bolt y compañía.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "checklist-seguridad-app.pdf"
+     ],
+     "duracion": 315.994
+    },
+    {
+     "n": 28,
+     "id": "c5-28",
+     "titulo": "Trabajar en tu ordenador: Cursor y Claude Code",
+     "descripcion": "Pasas de copiar y pegar en un chat a trabajar con una carpeta real en tu ordenador: ves cómo un agente como Cursor o Claude Code lee y cambia tus archivos, cómo ver la web en tu navegador con una orden y cómo revisar cada cambio antes de aceptarlo.",
+     "video": "28 - Trabajar en tu ordenador Cursor y Claude Code.mp4",
+     "subtitulos": "28 - Trabajar en tu ordenador Cursor y Claude Code.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "chuleta-git.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 313.164
+    },
+    {
+     "n": 29,
+     "id": "c5-29",
+     "titulo": "Git y GitHub sin miedo",
+     "descripcion": "Guardas versiones de tu web con Git en una demostración real, paso a paso: init, add, commit y log. Aprendes a deshacer un cambio que ha roto algo, a recuperar una versión anterior de un archivo y a subir tu proyecto a GitHub, con la terminal o con GitHub Desktop.",
+     "video": "29 - Git y GitHub sin miedo.mp4",
+     "subtitulos": "29 - Git y GitHub sin miedo.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "chuleta-git.pdf",
+      "app-peluqueria.zip"
+     ],
+     "duracion": 302.709
+    },
+    {
+     "n": 30,
+     "id": "c5-30",
+     "titulo": "Claves, costes y seguridad cuando la app crece",
+     "descripcion": "Entiendes qué es una clave de API, por qué nunca debe ir en el HTML, cómo guardarla en variables de entorno, cómo poner límites de gasto, cómo hacer copias de seguridad y cuánto cuesta de verdad mantener una app pequeña. Con una lista de comprobación de seguridad para tu app.",
+     "video": "30 - Claves, costes y seguridad cuando la app crece.mp4",
+     "subtitulos": "30 - Claves, costes y seguridad cuando la app crece.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "checklist-seguridad-app.pdf",
+      "chuleta-git.pdf"
+     ],
+     "duracion": 303.659
+    }
+   ],
+   "cuestionario": {
+    "seccion": 8,
+    "titulo": "Cuestionario: el siguiente nivel",
+    "preguntas": [
+     {
+      "pregunta": "Quieres que tus clientes se registren con correo y contraseña y que tú veas todas sus reservas. ¿Qué te hace falta?",
+      "respuestas": [
+       "Un archivo index.html con localStorage",
+       "Una base de datos con inicio de sesión, por ejemplo con un constructor de apps y Supabase",
+       "Publicar la web en Netlify Drop",
+       "Un plan de pago de un chat de IA"
+      ],
+      "correcta": 1,
+      "explicacion": "localStorage guarda los datos en el navegador de cada persona, así que nadie más los ve. Para usuarios con cuenta y datos compartidos necesitas un servidor con base de datos y login, como Supabase."
+     },
+     {
+      "pregunta": "¿Cuál es la mejor forma de no quedarte atado a una plataforma como Lovable o Bolt?",
+      "respuestas": [
+       "Pagar el plan más caro",
+       "No usar nunca base de datos",
+       "Conectar GitHub desde el primer día para tener una copia del código",
+       "Hacer capturas de pantalla de la app"
+      ],
+      "correcta": 2,
+      "explicacion": "Si el código solo vive dentro de la plataforma, dependes de sus precios y condiciones. Con una copia en GitHub, el código es tuyo y puedes cambiar de herramienta o pasárselo a un programador."
+     },
+     {
+      "pregunta": "Un agente como Cursor o Claude Code te propone un cambio para añadir una línea al horario, y ves que toca 300 líneas en varias secciones. ¿Qué haces?",
+      "respuestas": [
+       "No lo aceptas: le explicas qué querías y le pides solo ese cambio",
+       "Lo aceptas, porque la IA sabe más que tú",
+       "Lo aceptas y lo subes directamente a internet",
+       "Borras la carpeta del proyecto y empiezas de cero"
+      ],
+      "correcta": 0,
+      "explicacion": "Revisa siempre antes de aceptar. Una petición pequeña no debería cambiar cientos de líneas. Recházalo, pide solo lo que necesitas y prueba en el navegador antes de guardar la versión."
+     },
+     {
+      "pregunta": "Has pegado un cambio de la IA en index.html, todavía sin hacer commit, y ha desaparecido el horario. ¿Qué orden lo deja como en la última versión guardada?",
+      "respuestas": [
+       "git push",
+       "git init",
+       "git log --oneline",
+       "git restore index.html"
+      ],
+      "correcta": 3,
+      "explicacion": "git restore con el nombre del archivo descarta los cambios sin guardar y lo deja como en el último commit. git log solo enseña el historial y git push sube las versiones a GitHub."
+     },
+     {
+      "pregunta": "¿Por qué no debes escribir una clave de API dentro del HTML de tu web?",
+      "respuestas": [
+       "Porque la web carga más despacio",
+       "Porque cualquier visitante puede verla con «Ver código fuente» y gastar a tu nombre",
+       "Porque el navegador no sabe leer claves",
+       "Porque Netlify no deja publicar webs con claves"
+      ],
+      "correcta": 1,
+      "explicacion": "Todo lo que hay en la página llega al navegador de cada visitante. La clave debe vivir en un servidor, en una variable de entorno, y el archivo .env debe estar en .gitignore."
+     }
+    ]
+   }
+  },
+  {
+   "n": 9,
+   "titulo": "De idea a producto",
+   "clases": [
+    {
+     "n": 31,
+     "id": "c5-31",
+     "titulo": "Validar la idea antes de construir de más",
+     "descripcion": "Compruebas si tu idea interesa antes de dedicarle semanas: hablas con cinco posibles usuarios, publicas una página de «apúntate» hecha con IA y decides con datos qué hacer.",
+     "video": "31 - Validar la idea antes de construir de más.mp4",
+     "subtitulos": "31 - Validar la idea antes de construir de más.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "validar-idea.pdf",
+      "app-apuntate.zip"
+     ],
+     "duracion": 313.577
+    },
+    {
+     "n": 32,
+     "id": "c5-32",
+     "titulo": "Cobrar por lo que haces: enlaces de pago",
+     "descripcion": "Creas un producto y un enlace de pago en Stripe sin programar, lo pones en el botón de tu web con ayuda de la IA y conoces las obligaciones de facturación antes de vender.",
+     "video": "32 - Cobrar por lo que haces enlaces de pago.mp4",
+     "subtitulos": "32 - Cobrar por lo que haces enlaces de pago.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "app-producto.zip"
+     ],
+     "duracion": 318.565
+    },
+    {
+     "n": 33,
+     "id": "c5-33",
+     "titulo": "Mantenerla viva y saber cuándo llamar a un programador",
+     "descripcion": "Montas una revisión mensual de tu web o app con copias y actualizaciones, reconoces los límites del vibe coding y aprendes a encargar el trabajo a un programador con un buen encargo.",
+     "video": "33 - Mantenerla viva y saber cuándo llamar a un programador.mp4",
+     "subtitulos": "33 - Mantenerla viva y saber cuándo llamar a un programador.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "encargo-a-programador.pdf"
+     ],
+     "duracion": 280.457
+    }
+   ],
+   "cuestionario": {
+    "seccion": 9,
+    "titulo": "Cuestionario: de idea a producto",
+    "preguntas": [
+     {
+      "pregunta": "Vas a hablar con posibles usuarios de tu idea. ¿Qué pregunta te da información más fiable?",
+      "respuestas": [
+       "¿Comprarías una plantilla así?",
+       "¿Te parece buena mi idea?",
+       "¿Cómo hiciste la última vez esa tarea y cuánto tardaste?",
+       "¿Cuánto pagarías por ella?"
+      ],
+      "correcta": 2,
+      "explicacion": "Preguntar por lo que la persona hizo de verdad da hechos. Preguntar por lo que haría en el futuro da respuestas educadas que no valen nada. Es la idea del libro The Mom Test."
+     },
+     {
+      "pregunta": "¿Por qué conviene poner el precio previsto en la página de «apúntate»?",
+      "respuestas": [
+       "Porque apuntarse sabiendo el precio es una señal de interés mucho más fuerte",
+       "Porque la ley obliga a poner precio en cualquier página web",
+       "Porque así Stripe cobra por adelantado"
+      ],
+      "correcta": 0,
+      "explicacion": "Apuntarse gratis a algo que parece gratis es fácil. Si la persona se apunta sabiendo lo que costará, la señal de interés es mucho más fiable."
+     },
+     {
+      "pregunta": "Quieres cobrar desde tu web sencilla sin programar el cobro. ¿Qué es lo más seguro?",
+      "respuestas": [
+       "Pegar la clave secreta de Stripe en el chat para que la IA programe el pago",
+       "Poner tu número de Bizum de particular en la web",
+       "Pedir los datos de la tarjeta en un formulario propio",
+       "Crear un enlace de pago en Stripe y ponerlo en un botón de la web"
+      ],
+      "correcta": 3,
+      "explicacion": "Con un enlace de pago, Stripe cobra en su propia página y tu web solo lleva un enlace público. Una clave secreta en el chat o en el HTML la puede ver cualquiera."
+     },
+     {
+      "pregunta": "Empiezas a vender tu plantilla con regularidad. ¿Qué debes hacer antes de la primera venta?",
+      "respuestas": [
+       "Nada: Stripe se ocupa de todo lo fiscal",
+       "Consultar con tu gestoría el alta de autónomo o empresa, las facturas, el IVA y Verifactu",
+       "Esperar a ganar mucho dinero para darte de alta"
+      ],
+      "correcta": 1,
+      "explicacion": "Si cobras de forma habitual, es una actividad económica: alta, una factura por venta, IVA trimestral y, desde 2027, programas de facturación con Verifactu. Cada caso es distinto: consúltalo con tu gestoría."
+     },
+     {
+      "pregunta": "¿En cuál de estos casos es momento de llamar a un programador?",
+      "respuestas": [
+       "Quieres cambiar el color de los botones de tu web",
+       "Quieres añadir un horario nuevo a la página de tu negocio",
+       "Tu app va a guardar datos de salud de muchos usuarios con cuentas y contraseñas",
+       "Quieres que tu juego tenga un sonido al ganar"
+      ],
+      "correcta": 2,
+      "explicacion": "Datos de salud, muchos usuarios y cuentas con contraseña son límites claros del vibe coding: un fallo afecta a todos y la ley protege esos datos de forma especial. Encárgalo con la ficha del proyecto como punto de partida."
+     }
+    ]
+   }
+  },
+  {
+   "n": 10,
+   "titulo": "Cierre",
+   "clases": [
+    {
+     "n": 34,
+     "id": "c5-34",
+     "titulo": "Tu proyecto final: de la ficha a la publicación",
+     "descripcion": "Eliges un proyecto propio, lo describes en la ficha y lo llevas hasta publicarlo con el método del curso, con ideas para profes, autónomos, comercios, familias y asociaciones.",
+     "video": "34 - Tu proyecto final de la ficha a la publicación.mp4",
+     "subtitulos": "34 - Tu proyecto final de la ficha a la publicación.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "ficha-proyecto.pdf",
+      "app-grupos.zip"
+     ],
+     "duracion": 323.811
+    },
+    {
+     "n": 35,
+     "id": "c5-35",
+     "titulo": "Clase extra: recursos, plantillas y siguientes pasos",
+     "descripcion": "Repaso del curso, tu siguiente paso y los enlaces actualizados: plantillas, herramientas, cupones para los otros cursos de la serie y Numi Tech si tienes hijos o das clase.",
+     "video": "35 - Clase extra recursos, plantillas y siguientes pasos.mp4",
+     "subtitulos": "35 - Clase extra recursos, plantillas y siguientes pasos.vtt",
+     "vistaPrevia": false,
+     "recursos": [
+      "enlaces-y-cupones.pdf"
+     ],
+     "duracion": 185.94
+    }
+   ],
+   "cuestionario": null
+  }
+ ],
+ "clases": 35,
+ "duracionMin": 176.2
+}

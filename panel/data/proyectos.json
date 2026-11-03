@@ -2360,7 +2360,7 @@
     "letra": "J",
     "nombre": "Cursos en Udemy",
     "marca": "Numi Tech",
-    "resumen": "Cuatro cursos en vídeo en castellano de España: programación para niños (para padres), robótica con micro:bit y Maqueen, IA para autónomos y bienestar digital (gratis).",
+    "resumen": "Cinco cursos en vídeo en castellano de España: programación para niños (para padres), robótica con micro:bit y Maqueen, IA para autónomos bienestar digital (gratis) y vibe coding.",
     "estado": "en construcción",
     "orden": 8,
     "modelo": "15–40 € por curso; Udemy se queda el 63 % si trae al alumno",
@@ -2375,7 +2375,8 @@
       "Numi Tech (app)": "https://app.numimates.com",
       "Entrega c1, c3 y c4 (privada)": "https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK",
       "Entrega c2 (privada)": "https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3",
-      "PR #9": "https://github.com/moisesmodu/vinclia-web/pull/9"
+      "PR #9": "https://github.com/moisesmodu/vinclia-web/pull/9",
+      "Entrega c5 (privada)": "https://claude.ai/artifact/1XKsSP1MxwzKZJCQF2krRH"
     },
     "acciones": [
       {
@@ -2429,6 +2430,10 @@
       {
         "fecha": "2026-10-31",
         "texto": "Marketing sin pago: 12 vídeos cortos, 20 artículos SEO, cupones de lanzamiento para las 30 primeras reseñas"
+      },
+      {
+        "fecha": "2026-11-03",
+        "texto": "Curso 5 «Vibe coding: crea apps y webs con IA sin saber programar» (35 clases, 2 h 56 min, 9 apps de ejemplo reales) listo para subir; voz con VoiceStudio preparada en el Mac"
       }
     ],
     "proximos": [

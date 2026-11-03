@@ -28,9 +28,9 @@ preguntas del currículo. Después, **Página de aterrizaje**: copia título, su
 idioma, nivel, categoría, imagen (`imagenes/c1-curso.png`) y vídeo promocional (`00 - Video promocional.mp4`).
 **Precio:** el de la ficha. **Enviar a revisión.**
 
-## 3. Sube el curso 2 igual (unos 45 min)
+## 3. Sube el curso 2 y el 5 igual (unos 45 min cada uno)
 
-Mismo procedimiento con `c2-CURRICULO.md`.
+Mismo procedimiento con `c2-CURRICULO.md` y `c5-CURRICULO.md`.
 
 ## 4. Al aprobarse cada curso: cupones (5 min)
 
@@ -55,5 +55,7 @@ montados la sesión del Mac con `DESPLIEGUE.md`: no tienes que hacer nada.
 
 - Cursos 1, 3 (sección 1) y 4: https://claude.ai/artifact/FM7xrjAKWFWaHGmRJQvJoK (privada, con tu cuenta).
 - Curso 2: https://claude.ai/artifact/1JzaUbRaAAbgmy49WhMbW3 (privada, con tu cuenta).
+- Curso 5 (vibe coding): https://claude.ai/artifact/1XKsSP1MxwzKZJCQF2krRH (privada). Los zips de las apps de ejemplo
+  (recursos `app-*.zip`) no caben en la página: están en tu Mac, en Escritorio → cursos udemy → c5-apps.
 
 En cada sección, «Descargar sección (zip)» baja los vídeos, los subtítulos y los PDF juntos para el cargador masivo.

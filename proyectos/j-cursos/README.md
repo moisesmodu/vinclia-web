@@ -1,6 +1,6 @@
 # J · Cursos en Udemy (Numi)
 
-Cuatro cursos en vídeo en castellano de España, hechos a partir de Numi Tech (cursos de programación y robótica de
+Cinco cursos en vídeo en castellano de España, hechos a partir de Numi Tech (cursos de programación y robótica de
 Numimates) y, el tercero, escritos desde cero. Todo el contenido es de Moisés; las piezas 3D de las imágenes son de
 Kenney (CC0); la voz es Piper con la voz de castellano de España `es_ES-davefx-medium` (CC0) y el software de montaje es libre. Nada con licencia no comercial.
 
@@ -9,6 +9,7 @@ Kenney (CC0); la voz es Piper con la voz de castellano de España `es_ES-davefx-
 | c1 | Enseña a programar a tu hijo con Scratch: guía para padres | Tech Robot + Tech Creadores | 32 + promo | 2 h 38 min | listo para subir |
 | c2 | Crea robots con micro:bit y Maqueen para niños y profes | Tech Robótica + kit | 38 + promo | 3 h 33 min | listo para subir |
 | c3 | Ahorra horas con IA y ChatGPT para autónomos y pymes | nuevo | 37 + promo | ~4 h (guion); 24 min grabados | guion completo; sección 1 (+ clases 20 y 23) grabada |
+| c5 | Vibe coding: crea apps y webs con IA sin saber programar | nuevo (9 apps de ejemplo en `demos/c5`) | 35 + promo | 2 h 56 min | listo para subir |
 | c4 | Bienestar digital en familia: pantallas y redes seguras (gratis) | Tech Digital | 8 + promo | 37 min | listo para subir |
 
 ## Carpetas
