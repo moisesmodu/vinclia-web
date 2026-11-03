@@ -1,0 +1,117 @@
+# Harvey · instància Lunilla (lunilla.cat). Omplir: persona.email, compliance.postal_address.
+persona:
+  name: "Moisés Mora"
+  company: "Lunilla"
+  role: "Fundador"
+  email: "moises@lunilla.cat"
+  linkedin: ""
+  tone: "càlid, curiós, sense sucre de més; tuteja; respecta l'adult cansat a les nou del vespre; sense frases de venedor"
+
+product:
+  name: "Lunilla"
+  description: "Contes infantils personalitzats i il·lustrats: el nen o la nena hi surt amb el seu nom, la seva ciutat i la seva mascota, i cada història treballa una por o un valor (dormir, un germanet nou, compartir, la seva ciutat). Sense fotos de l'infant. PDF en menys de 2 hores o llibre de tapa dura. En català i castellà. Fet a Lleida."
+  pricing: "PDF 7,90 € · llibre de tapa dura 36,90 € amb enviament. Afiliats: 20 % del PDF i 10 % de la tapa dura, amb codi propi del 10 % per als seus clients."
+  key_benefits:
+    - "Es veu gratis abans de pagar: portada, dedicatòria i tres pàgines amb el seu nom"
+    - "Sense fotos de l'infant: il·lustració d'àlbum amb dos protagonistes dibuixats"
+    - "Un conte que passa a la seva ciutat (Lleida: mercat del Pla, el Segre, la Seu Vella)"
+    - "PDF en menys de 2 hores; tapa dura a casa (abans del 14/12 per Nadal)"
+    - "Conte de regal per a la classe o la botiga, sense cap compromís"
+  objection_responses:
+    "no venem productes de tercers": "Cap problema. El conte de regal per a la classe és sense condicions; si algun dia voleu una targeta regal amb QR per a la botiga, ja en parlarem."
+    "ja tenim contes personalitzats": "Quins teniu? El nostre és diferent en dues coses: sense fotos del nen i amb la seva ciutat dins de la història. Us en regalo un perquè ho compareu."
+    "no tenim temps": "No cal reunió. Em dieu el nom que voleu a la portada i us arriba el PDF en un parell de dies."
+    "és car": "El PDF són 7,90 € i el llibre de tapa dura 36,90 € amb l'enviament; la vista prèvia és gratis i no cal registrar-se."
+  offer:
+    primary: "Targeta regal Lunilla amb QR per a la botiga o afiliació: 20 % del PDF i 10 % de la tapa dura, amb codi del 10 % per als seus clients"
+    entry: "Un conte personalitzat de regal per a la classe o la botiga (PDF), amb el nom que trieu, sense cap compromís"
+    goal: "get_reply"
+    booking_method: "ask_preference"
+    booking_url: ""
+    meeting_duration: "10 minuts"
+    meeting_owner: "Moisés Mora"
+
+icp:
+  industries:
+    - "escola bressol"
+    - "llar d'infants"
+    - "centre d'educació infantil"
+    - "llibreria infantil"
+    - "llibreria"
+    - "botiga de joguines"
+    - "ludoteca"
+  company_size: "1-30 empleados"
+  titles:
+    - "Direcció"
+    - "Directora"
+    - "Propietari/ària"
+    - "Responsable de la botiga"
+  geography:
+    - "Lleida, España"
+    - "Balaguer, España"
+    - "Mollerussa, España"
+    - "Tàrrega, España"
+    - "Cervera, España"
+    - "Girona, España"
+    - "Tarragona, España"
+    - "Reus, España"
+    - "Manresa, España"
+    - "Vic, España"
+    - "Sabadell, España"
+    - "Terrassa, España"
+    - "Barcelona, España"
+  hiring_signals: []
+
+channels:
+  email:
+    enabled: true
+    provider: "smtp"
+    max_daily_sends: 15
+    require_approval: true
+    link_domains: ["lunilla.cat", "lunilla.vercel.app"]
+    send_to_risky: false
+    max_bounce_rate: 0.03
+    warmup:
+      start_date: ""
+      min_days: 14
+      start_sends: 5
+      daily_increase: 2
+    send_window:
+      start: "09:00"
+      end: "18:00"
+      weekdays_only: true
+      recipient_timezone: false
+    signature:
+      logo: ""
+  linkedin:
+    enabled: false
+
+usage:
+  max_daily_claude_percent: 40
+  heartbeat_interval_minutes: 30
+  quiet_hours:
+    start: "21:00"
+    end: "08:00"
+    timezone: "Europe/Madrid"
+
+compliance:
+  postal_address: "[LEGAL_ADRECA · adreça postal de Moisés Mora, Lleida]"
+  opt_out_line: 'Si no te interesa, responde "no, gracias" y no te escribo más.'
+  do_not_contact:
+    - "lunilla.cat"
+    - "lunilla.vercel.app"
+    - "ccsefacil.com"
+    - "tuspapeles.app"
+    - "oposita.digital"
+    - "numimates.com"
+    - "algorithmicslleida.com"
+    - "gencat.cat"
+    - "paeria.cat"
+  precleared:
+    enabled: false
+
+brain:
+  provider: "claude"
+
+writer:
+  email_rules: "skills/email_rules.md"

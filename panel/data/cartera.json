@@ -1,0 +1,117 @@
+{
+  "actualizado": "2026-11-02",
+  "objetivos": [
+    {
+      "nombre": "Primer objetivo",
+      "mensual": 1000,
+      "plazo": "2027-10"
+    },
+    {
+      "nombre": "Cubrir la cuota de autónomo y los costes",
+      "mensual": 350,
+      "plazo": "2027-03"
+    },
+    {
+      "nombre": "Libertad financiera (gastos personales cubiertos)",
+      "mensual": 3000,
+      "plazo": "2028-10"
+    }
+  ],
+  "escenario": "S1 prudente (pendiente de confirmar por Moisés)",
+  "costesFijosMes": 25,
+  "inversionAcumulada": 0,
+  "decisionesPendientes": [
+    {
+      "texto": "0 · Marketing · Moisés aprobó todo el 1/11. Lo que queda es publicar desde tus cuentas (10 min al día según marketing/CALENDARIO.md), crear @lunilla.cuentos, abrir la cuenta de Google Ads y pedir el alta en Xolo. Los 9 correos de marketing/correos/semana-1.json los envías tú desde el panel → Marketing → Correos",
+      "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/marketing/PARA-MOISES.md"
+    },
+    {
+      "texto": "0 bis · Harvey (agente de ventas B2B de ethanplusai, 11 skills) configurado en harvey/ para Plaça, CCSE y Lunilla: elige el buzón (Workspace o Fastmail en un dominio de marca, ≈ 3–7 €/mes) y pide a la sesión del Mac que lo instale con harvey/instalar.sh. Aprobarás cada correo en su Outbox",
+      "donde": "https://github.com/moisesmodu/vinclia-web/blob/claude/estrategia-ingresos-recurrentes-tx0rvw/harvey/README.md"
+    },
+    {
+      "donde": "~/Desktop/MENSAJES-OPOSITA.html",
+      "texto": "1 · B · Pegar los 5 mensajes en los grupos de oposiciones (Telegram, WhatsApp, Facebook, foros). 10 min"
+    },
+    {
+      "donde": "https://adsense.google.com/adsense/u/0/pub-1805394669180486/privacymessaging/gdpr",
+      "texto": "2 · P · AdSense: crear y publicar el mensaje RGPD (2 sitios, logotipos ya subidos). 3 min"
+    },
+    {
+      "donde": "https://www.dondominio.com/",
+      "texto": "3 · Dominios: comprar nuvolet.games (juegos) y aprovacatala.cat (Aprova). 5 min"
+    },
+    {
+      "donde": "~/Desktop/juegos-portales/ACTIVAR-JUEGOS.html",
+      "texto": "4 · Juegos: comprobar si sale «Request activation» en GameMonetize/GameDistribution (Egg Truck primero) y enviar el correo a soporte de GameMonetize si no"
+    },
+    {
+      "donde": "https://play.google.com/console",
+      "texto": "6 · A · Google Play: cuando llegue el correo de verificación del DNI, avisar para crear la app y subir el paquete"
+    },
+    {
+      "donde": "https://www.udemy.com/teaching/",
+      "texto": "7 · J · Cuenta de instructor en Udemy (sin prisa)"
+    },
+    {
+      "donde": "https://vercel.com/account/billing",
+      "texto": "8 · Vercel: NIF-IVA en Billing → Tax ID (si estás en el ROI)"
+    },
+    {
+      "texto": "✔ Panel publicado en Vercel (31/10, proyecto cartera): se vuelve a publicar solo con cada push a la rama base. Protegido con Vercel Authentication: entra con tu cuenta de Vercel",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app"
+    },
+    {
+      "texto": "✔ Centro de control publicado (01/11, panel → Control): ingresos netos, MRR, usuarios de A, N, B, G y M con búsqueda y CSV, pagos, reembolsos y disputas de Stripe, suscripciones y visitas, en vivo. Bases de datos con el rol de solo lectura panel_ro. Pendiente tuyo: crear en Vercel un token de solo lectura y sustituir VERCEL_TOKEN_PANEL en el proyecto cartera",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/control/"
+    },
+    {
+      "texto": "✔ Tarea programada semanal de marketing creada (lunes 06:40, primera el 2/11)",
+      "donde": "marketing/TAREA-PROGRAMADA.md"
+    },
+    {
+      "texto": "✔ Panel de mando publicado (02/11): Hoy, Proyectos, Ventas, Usuarios, Suscripciones, Tareas con botón «Hecho», Marketing con «Copiar», «Publicado» y envío de los 9 correos a entidades (pulsa tú «Enviar»), y Juegos y portales. Desde el iPhone: Safari → Compartir → «Añadir a pantalla de inicio»",
+      "donde": "https://cartera-moisesmodu-3705s-projects.vercel.app/"
+    }
+  ],
+  "reglas": [
+    "Correo de contacto hola@numimates.com en todos los proyectos hasta tener dominio propio; nunca el personal ni Algorithmics",
+    "Monetizar primero: ningún proyecto está hecho sin cobro real activo, pago ofrecido en la primera sesión de uso y plan del primer euro a 14 días (SESIONES.md)",
+    "Nada sale hacia fuera sin aprobación de Moisés.",
+    "Ningún gasto nuevo de más de 20 €/mes sin anotarlo antes.",
+    "Cada sesión actualiza panel/data/proyectos.json al terminar.",
+    "Parar cualquier anuncio que no baje de 25 € por cliente al tercer mes.",
+    "Todo nace preparado para varios países; el segundo mercado (EE. UU. en español casi siempre) se abre solo con datos del primero.",
+    "Ninguna sesión pide claves ni cuentas a Moisés: usa los secretos del entorno o deja DESPLIEGUE.md para la sesión del Mac."
+  ],
+  "juicioCartera": {
+    "p1000a6": 17,
+    "p1000a12": 66,
+    "p350a6": 65,
+    "p350a12": 87,
+    "mediana6": 500,
+    "mediana12": 1400,
+    "nucleo": [
+      "A CCSE",
+      "B Oposiciones",
+      "P Webs",
+      "G Cuentos (solo si empieza esta semana)"
+    ],
+    "fecha": "2026-10-24"
+  },
+  "panelUrl": "https://cartera-moisesmodu-3705s-projects.vercel.app",
+  "decisionesTomadas": [
+    {
+      "fecha": "2026-11-01",
+      "texto": "Google Ads aprobado: 300 €/mes en diciembre (220 € Oposita con CPA máx. 25 €, 80 € CCSE con CPA máx. 9 €). Excepción a la regla de VIABILIDAD §5; se revisa a los 14 días"
+    },
+    {
+      "fecha": "2026-11-02",
+      "texto": "Juegos aparcado tras los rechazos de CrazyGames y GameMonetize; el núcleo de la cartera pasa a A, B, G, N y P"
+    },
+    {
+      "fecha": "2026-11-02",
+      "texto": "Moisés: «haz lo que pueda». Se envían los 9 correos aprobados el 1/11 y se prepara el motor de ventas; las ofertas en Stripe real y el envío automático esperan su autorización"
+    }
+  ]
+}

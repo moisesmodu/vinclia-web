@@ -1,0 +1,30 @@
+{"clave":"m-catala",
+"competidores":[
+{"nombre":"Parla.cat (Generalitat)","url":"https://www.parla.cat/","precio":"Autoaprendizaje gratis; tutorizado de 60 a 150 €","debilidad":"Plataforma antigua sin conversación por voz ni IA; sin simulacro oral del C1"},
+{"nombre":"CPNL","url":"https://www.cpnl.cat/","precio":"Curso de Suficiència (C1) unos 263 €","debilidad":"Plazas limitadas, listas de espera, poca práctica oral individual"},
+{"nombre":"Duolingo Català","url":"https://www.duolingo.com/course/ca/es/Learn-Catalan","precio":"Gratis","debilidad":"Solo desde español, nivel básico y poco mantenido; no sirve para B2 ni C1"},
+{"nombre":"Talkpal","url":"https://talkpal.ai/","precio":"De 5 a 10 $/mes","debilidad":"Catalán no confirmado; genérico, sin estructura del examen"},
+{"nombre":"ChatGPT por voz (guía de la UB)","url":"https://diposit.ub.edu/items/095b5894-66c6-4e11-982a-2bda19a35a91","precio":"Gratis o Plus","debilidad":"La propia guía advierte de errores en catalán; sin rúbrica ni progreso"},
+{"nombre":"Examen oficial del Departament de Política Lingüística","url":"https://llengua.gencat.cat/","precio":"Tasa C1 57,45 €; próxima prueba 8 de mayo de 2027","debilidad":"Referencia, no competidor: convocatoria anual y resultados lentos"}],
+"repos":[
+{"nombre":"projecte-aina/whisper-large-v3-ca-3catparla","url":"https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla","licencia":"Apache-2.0","uso":"Reconocimiento de voz en catalán afinado por el BSC","estrellas":""},
+{"nombre":"projecte-aina/whisper-large-v3-tiny-caesar","url":"https://huggingface.co/projecte-aina/whisper-large-v3-tiny-caesar","licencia":"Apache-2.0","uso":"Detectar mezcla catalán-castellano: los castellanismos del alumno","estrellas":""},
+{"nombre":"projecte-aina/matxa-tts-cat-multiaccent","url":"https://huggingface.co/projecte-aina/matxa-tts-cat-multiaccent","licencia":"CC-BY-NC-4.0 (uso comercial requiere licencia)","uso":"Voz en 4 variantes (central, nord-occidental, balear, valencià); negociar licencia o entrenar voz propia","estrellas":""},
+{"nombre":"shivammehta25/Matcha-TTS","url":"https://github.com/shivammehta25/Matcha-TTS","licencia":"MIT","uso":"Entrenar una voz catalana propia sin la restricción no comercial","estrellas":"1.369"},
+{"nombre":"BSC-LT/salamandra-7b-instruct","url":"https://huggingface.co/BSC-LT/salamandra-7b-instruct","licencia":"Apache-2.0","uso":"Modelo de lenguaje entrenado con catalán para corrección y tareas","estrellas":""},
+{"nombre":"Softcatala/arena-cat","url":"https://github.com/Softcatala/arena-cat","licencia":"no verificado","uso":"Comparativa de competencia en catalán de los modelos, para elegir el del tutor","estrellas":"22"},
+{"nombre":"pipecat-ai/pipecat","url":"https://github.com/pipecat-ai/pipecat","licencia":"BSD-2","uso":"Agente de voz en tiempo real con proveedores intercambiables","estrellas":"16.757"},
+{"nombre":"livekit/agents","url":"https://github.com/livekit/agents","licencia":"Apache-2.0","uso":"Alternativa WebRTC para el agente de voz con SDK web y móvil","estrellas":"14.910"}],
+"hallazgos":[
+"Demanda récord: el CPNL ofreció 42.000 plazas en un trimestre (un 25 % más que el año anterior) y los grupos se llenan; la práctica oral individual es el cuello de botella.",
+"El C1 es requisito en oposiciones y sanidad (el Departament de Salut hace sus propias pruebas): canal B2B claro con el ICS, hospitales y ayuntamientos.",
+"Estructura oficial del C1: escrito 70 % (comprensión, expresión escrita de 100-120 y 180-195 palabras, uso de la lengua) y oral 30 % (monólogo con 2 imágenes más diálogo); apto con el 65 % global y mínimos por área.",
+"Hueco real: Duolingo es básico, Parla.cat no tiene voz ni IA, las apps de idiomas con IA no confirman catalán; nadie ofrece simulacro oral del C1 con rúbrica.",
+"Pila abierta madura: reconocimiento y modelos de lenguaje Apache-2.0 del BSC; el riesgo está en la voz (Matxa es no comercial) y en la calidad desigual de los modelos en catalán.",
+"Riesgo competitivo: el proyecto AINA o la Generalitat podrían lanzar un tutor gratuito; diferenciarse por preparación de examen, dialecto y feedback estructurado."],
+"mejoras":[
+"Simulacro oral exacto del nivell C con cronómetro de preparación y puntuación según la rúbrica oficial, más informe de castellanismos detectados.",
+"Selector de variante (central, valencià, balear, nord-occidental) para la voz y el léxico: ventaja única.",
+"Freemium de 5 minutos al día; 9,99 €/mes ilimitado; plan B2B para hospitales, ayuntamientos y academias, anclado frente a los 263 € del curso del CPNL.",
+"Calendario de examen integrado (8 de mayo de 2027 y convocatorias universitarias) con plan de estudio inverso; cubrir también el escrito con corrección IA.",
+"Marketing en catalán en TikTok e Instagram, colaboración con Voluntariat per la llengua y Softcatalà, y presentarse al Aina Challenge para financiar la voz propia."]}

@@ -1,0 +1,28 @@
+{"clave":"o-lectura",
+"competidores":[
+{"nombre":"Read with Ello","url":"https://www.ello.com","precio":"14,99 $/mes digital; 39,99 $/mes con libros físicos","debilidad":"Solo inglés, centrado en iPad"},
+{"nombre":"Amira Learning","url":"https://amiralearning.com/spanish.html","precio":"Venta a distritos de EE. UU.: de 5 a 20 $ por alumno","debilidad":"Español de EE. UU., sin catalán, sin oferta a familias en España"},
+{"nombre":"Google Read Along","url":"https://readalong.google","precio":"Gratis","debilidad":"Español sí, catalán no; sin métricas de fluidez para padres ni normas por curso"},
+{"nombre":"Microsoft Reading Coach","url":"https://support.microsoft.com/en-us/education/reading-coach-language-settings","precio":"Gratis","debilidad":"Tiene catalán pero está pensado para aulas con Teams; no gamificado para 5 a 8 años"},
+{"nombre":"Walinwa","url":"https://www.walinwa.com","precio":"Licencia anual, no verificado","debilidad":"Ortografía y comprensión desde 3º; sin lectura en voz alta"}],
+"repos":[
+{"nombre":"m-bain/whisperX","url":"https://github.com/m-bain/whisperX","licencia":"BSD-2","uso":"Reconocimiento con marcas de tiempo por palabra para calcular palabras por minuto y precisión","estrellas":"24.800"},
+{"nombre":"MahmoudAshraf97/ctc-forced-aligner","url":"https://github.com/MahmoudAshraf97/ctc-forced-aligner","licencia":"BSD-2","uso":"Alinear el texto que debe leer el niño con lo que dijo, para detectar omisiones y sustituciones","estrellas":"571"},
+{"nombre":"MontrealCorpusTools/Montreal-Forced-Aligner","url":"https://github.com/MontrealCorpusTools/Montreal-Forced-Aligner","licencia":"MIT","uso":"Alineamiento por fonema con modelos en español","estrellas":"1.910"},
+{"nombre":"ahmedadelattia/whisperKids","url":"https://github.com/ahmedadelattia/whisperKids","licencia":"no verificado","uso":"Receta de ajuste de Whisper a voz infantil (inglés), replicable en español y catalán","estrellas":""},
+{"nombre":"projecte-aina/whisper-large-v3-ca-3catparla","url":"https://huggingface.co/projecte-aina/whisper-large-v3-ca-3catparla","licencia":"Apache-2.0","uso":"Whisper en catalán (710 horas, WER 9,1) como base","estrellas":""},
+{"nombre":"ccoreilly/wav2vec2-large-100k-voxpopuli-catala","url":"https://huggingface.co/ccoreilly/wav2vec2-large-100k-voxpopuli-catala","licencia":"Apache-2.0","uso":"wav2vec2 catalán, más ligero que Whisper, para puntuar por palabra","estrellas":""},
+{"nombre":"justinhunt/moodle-mod_readaloud","url":"https://github.com/justinhunt/moodle-mod_readaloud","licencia":"GPL","uso":"Único proyecto abierto maduro de análisis de fluidez lectora (palabras por minuto, precisión)","estrellas":"6"}],
+"hallazgos":[
+"Nadie ofrece a familias en España una app de lectura en voz alta con IA en español y catalán: Ello es solo inglés, Amira vende a distritos de EE. UU., Google no tiene catalán.",
+"Hay baremos de referencia del Ministerio (Ripoll 2020): palabras correctas por minuto de 48 en 1º de Primaria a 124 en 6º. No existe baremo oficial catalán.",
+"El reconocimiento de voz infantil es el riesgo técnico principal: los modelos estándar fallan con 5 a 8 años; el ajuste con audio infantil reduce el error del 12 al 30 %. No hay corpus infantil abierto en español ni catalán: habrá que recogerlo con consentimiento.",
+"La literatura confirma que reconocimiento más alineamiento con el pasaje coincide sustancialmente con evaluadores humanos en palabras por minuto.",
+"Canales: AMPAs y escuelas catalanas (preocupación pública por la comprensión lectora), logopedas y maestros de primer ciclo.",
+"Riesgos: privacidad de voz de menores, coste de GPU si se procesa en servidor, y que Google o Microsoft añadan catalán gratis."],
+"mejoras":[
+"Métrica central: palabras correctas por minuto y precisión frente al baremo por curso, en informe semanal con percentil y evolución.",
+"Pipeline: wav2vec2 catalán y español más alineamiento forzado contra el texto, y Whisper solo como respaldo; textos cortos controlados reducen el error.",
+"Beta gratuita en 5 a 10 escuelas catalanas a cambio de audio etiquetado con consentimiento, para ajustar el modelo y construir el primer baremo catalán de fluidez.",
+"Modo bilingüe real y biblioteca de textos graduados con licencia propia.",
+"Licencia de aula para escuelas y logopedas además de la cuota familiar, con panel docente y alerta de riesgo lector."]}

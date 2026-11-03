@@ -1,0 +1,34 @@
+{
+  "clave": "juegos",
+  "competidores": [
+    {"nombre": "Bloxd.io (Arthur Baker, Reino Unido)", "url": "https://www.crazygames.com/game/bloxdhop-io", "precio": "Gratis con anuncios; estudio rentable de 8 personas con más de 11 M de jugadores al mes", "debilidad": "Depende casi al 100 % de portales y publicidad"},
+    {"nombre": "TinyDobbins (Monkey Mart, en Poki)", "url": "https://poki.com/en/g/monkey-mart", "precio": "Unas 300 M de partidas; Poki declara que sus mejores desarrolladores ingresan de 50.000 a 1 M $ al año", "debilidad": "Exclusividad web con Poki; sin compras dentro del juego"},
+    {"nombre": "Grow a Garden (Roblox)", "url": "https://en.wikipedia.org/wiki/Grow_a_Garden", "precio": "Unos 12 M $ en ventas solo en mayo de 2025", "debilidad": "Un solo éxito viral; la mediana de pago DevEx en 2024 fue de unos 1.575 $ por desarrollador"},
+    {"nombre": "Poki (portal, 100 M usuarios al mes)", "url": "https://sdk.poki.com/deals", "precio": "Exclusiva web: 100 % si tú traes al jugador, 50 % si lo trae Poki; no exclusiva: licencia de pago único", "debilidad": "Revisión humana, sin subida abierta; exclusividad web; sin compras dentro del juego"},
+    {"nombre": "CrazyGames (portal, 50 M usuarios al mes)", "url": "https://docs.crazygames.com/faq/", "precio": "Publicar gratis, sin exclusividad; 60 % anuncios y 70 % compras según los términos de su jam de 2026; pago mensual por Tipalti desde 100 €", "debilidad": "El lanzamiento básico no genera ingresos; el completo depende de retención frente a su referencia"}
+  ],
+  "repos": [
+    {"nombre": "phaserjs/template-vite-ts", "url": "https://github.com/phaserjs/template-vite-ts", "licencia": "MIT", "uso": "Base oficial Phaser + TypeScript + Vite; fijar phaser@3.90 para Phaser 3", "estrellas": "200"},
+    {"nombre": "digitsensitive/phaser3-typescript", "url": "https://github.com/digitsensitive/phaser3-typescript", "licencia": "MIT", "uso": "14 juegos completos en Phaser 3 (runner, breakout, snake, shooter...) para rehacer legalmente con arte CC0", "estrellas": "1.000"},
+    {"nombre": "gabrielecirulli/2048", "url": "https://github.com/gabrielecirulli/2048", "licencia": "MIT", "uso": "Lógica de puzle numérico probada", "estrellas": "13.400"},
+    {"nombre": "rojo-rbx/rojo", "url": "https://github.com/rojo-rbx/rojo", "licencia": "MPL-2.0", "uso": "Construir el place de Roblox desde Git: rojo build -o build.rbxl en CI", "estrellas": "1.800"},
+    {"nombre": "Sleitnick/rbxcloud", "url": "https://github.com/Sleitnick/rbxcloud", "licencia": "MIT", "uso": "CLI para Open Cloud: publicar el .rbxl desde GitHub Actions", "estrellas": "140"},
+    {"nombre": "Roblox/luau", "url": "https://github.com/Roblox/luau", "licencia": "MIT", "uso": "luau-analyze para comprobar el código del juego en CI", "estrellas": "4.000"},
+    {"nombre": "Kenney (kenney.nl)", "url": "https://kenney.nl/assets", "licencia": "CC0", "uso": "Más de 30.000 sprites, interfaz, audio y 3D de dominio público para los juegos", "estrellas": ""}
+  ],
+  "hallazgos": [
+    "CrazyGames exige SDK v3, evento GameplayStart, inglés, descarga inicial de 50 MB o menos, portadas de 1920×1080, 800×1200 y 800×800, y rechaza clones: cada juego debe distinguirse claramente.",
+    "Poki exige su SDK como único sistema de anuncios, sin compras internas, 16:9 adaptable, 30 FPS mínimo, descarga inicial menor de 8 MB y carga en menos de 10 segundos.",
+    "Roblox DevEx en 2026: 0,0038 $ por Robux, mínimo 30.000 Robux ganados, formulario W-8BEN para España; desde junio de 2026, 0,0054 $ por Robux para gasto de jugadores de EE. UU. mayores de 18 verificados en juegos R15 con avatares articulados.",
+    "Open Cloud publica el place con un POST a /universes/v1/{universeId}/places/{placeId}/versions con cabecera x-api-key; la clave necesita permiso universe-places:write.",
+    "Géneros que funcionan en web en 2026: hipercasual (79 % del tiempo de juego en CrazyGames) y puzle (21 %); los runners dominan y simulación e idle tienen demanda con poca oferta.",
+    "Ingresos realistas: un casual medio en un portal grande gana de 200 a 2.000 $ al mes; itch.io reparte 90/10 pero casi no trae tráfico; licencias no exclusivas a portales, de 300 a 800 $ por juego."
+  ],
+  "mejoras": [
+    "Un adaptador de portal propio en TypeScript (init, gameplayStart/Stop, anuncio intermedio, anuncio con recompensa) con implementaciones para CrazyGames v3, Poki e itch.io, para compilar un build por portal con una variable.",
+    "Pipeline de Roblox 100 % en CI: Rojo build, luau-analyze, publicación con rbxcloud a un place de pruebas y luego a producción.",
+    "Catálogo de rehechos con diferenciación mínima: partir de los 14 juegos MIT y 2048 cambiando mecánica secundaria, arte Kenney y tema, para pasar el filtro anticlon.",
+    "Optimizar los indicadores que deciden el lanzamiento completo en CrazyGames: tutorial en menos de 10 segundos, partidas cortas, guardado con el SDK y build menor de 8 MB para enviarlo también a Poki.",
+    "En Roblox, priorizar experiencias R15 con pases y productos para optar a la tasa de 0,0054 $ por Robux del público adulto de EE. UU. (simulación y tycoon) en vez de competir con los éxitos infantiles."
+  ]
+}

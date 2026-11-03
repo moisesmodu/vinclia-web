@@ -1,0 +1,29 @@
+{"clave":"g-cuentos",
+"competidores":[
+{"nombre":"Aventopía (España, IA con la cara del niño)","url":"https://aventopia.com/","precio":"40 € el libro físico más 3,99 € de envío, entrega en 8 a 10 días; versión digital 1,99 € como extra","debilidad":"Sin PDF barato independiente; catálogo cerrado de plantillas; entrega lenta para Navidad"},
+{"nombre":"MiCuento (Barcelona)","url":"https://micuento.com/","precio":"Tapa dura de 29 a 45 € según título; envío de 7 a 14 días","debilidad":"Personalización limitada a nombre y rasgos, no historia a medida; sin PDF; plazos largos"},
+{"nombre":"Wonderbly (Penguin Random House)","url":"https://www.wonderbly.com/","precio":"Tapa blanda unos 30 €, tapa dura unos 37 €; imprime en 2 a 4 días","debilidad":"Marca global en inglés, sin catalán, precios altos con envío internacional"},
+{"nombre":"MundoCuento (España, IA)","url":"https://mundocuento.es/","precio":"no verificado","debilidad":"Marca pequeña con pocas reseñas; compite directamente en el mismo SEO"},
+{"nombre":"Ludobooks","url":"https://www.ludobooks.com/","precio":"no verificado (incluye catalán y euskera)","debilidad":"Plantillas fijas, sin historia a medida ni PDF económico"},
+{"nombre":"Fabularis, Hekaya, Taleora (herramientas de IA anglosajonas)","url":"https://bookfoundry.ai/es/personalized-kids-books/","precio":"PDF de 5 a 8 $; impreso aparte","debilidad":"Español traducido, sin catalán, ilustración irregular, no imprimen en España"},
+{"nombre":"Librio (Suiza)","url":"https://librio.com/en/personalized-childrens-books","precio":"no verificado (ofrece catalán, euskera y gallego)","debilidad":"Único con catalán, pero envío internacional y sin IA"}],
+"repos":[
+{"nombre":"puppeteer/puppeteer","url":"https://github.com/puppeteer/puppeteer","licencia":"Apache-2.0","uso":"Convertir el cuento en HTML a PDF con tamaño exacto y sangrado","estrellas":"95.000"},
+{"nombre":"pagedjs/pagedjs","url":"https://github.com/pagedjs/pagedjs","licencia":"MIT","uso":"Paginación de libro (márgenes espejo, pares e impares) antes de imprimir","estrellas":"3.000"},
+{"nombre":"Hopding/pdf-lib","url":"https://github.com/Hopding/pdf-lib","licencia":"MIT","uso":"Unir cubierta e interior, dedicatoria, metadatos, dividir para la imprenta","estrellas":"8.400"},
+{"nombre":"Kozea/WeasyPrint","url":"https://github.com/Kozea/WeasyPrint","licencia":"BSD-3","uso":"Alternativa para PDF con CMYK y perfiles de color de imprenta","estrellas":"8.900"},
+{"nombre":"typst/typst","url":"https://github.com/typst/typst","licencia":"Apache-2.0","uso":"Maquetación determinista de interiores con plantillas en catalán y castellano","estrellas":"55.000"},
+{"nombre":"devlimelabs/lulu-print-mcp","url":"https://glama.ai/mcp/servers/@devlimelabs/lulu-print-mcp","licencia":"no verificado","uso":"Envoltorio de la API de impresión de Lulu (costes, envío, pedidos)","estrellas":""}],
+"hallazgos":[
+"Precio de mercado en España para tapa dura personalizada: de 29 a 45 €. Los 34,90 € quedan en la banda media; el PDF a 7,90 € casi no existe entre competidores españoles.",
+"El catalán es un hueco real: solo Ludobooks y Librio lo ofrecen, y ninguno con historia generada a medida.",
+"Costes de impresión no oficiales: Peecho tapa dura desde 5,20 €, Gelato fotolibro tapa dura de 12 a 19 $ con producción en España, Lulu de 11 a 15 $. Margen bruto estimado sobre 34,90 €: de 12 a 22 € antes de envío (3 a 6 €) y pasarela. Confirmar por la API de precios de Gelato.",
+"Plazos: la ventana real de venta de tapa dura acaba hacia el 10 o 14 de diciembre por las fechas límite de Gelato; después solo PDF.",
+"Gasto navideño en regalos en España: de 462 a 580 € por hogar, con tendencia al regalo con componente emocional.",
+"Riesgo: Aventopía ya usa la fórmula de IA con la cara del niño; nosotros no usamos fotos, lo que evita el problema de RGPD con menores y la crítica a la calidad."],
+"mejoras":[
+"Lanzar primero el PDF a 7,90 € como regalo de última hora (entrega en minutos) con venta adicional de la tapa dura antes del 10 de diciembre; después, PDF más vale canjeable por el libro físico para Reyes.",
+"Posicionar el catalán como diferencial: landing y SEO en 'conte personalitzat', acuerdos con escoles bressol, AMPAs y llibreries.",
+"Añadir audiocuento narrado incluido en el PDF mediante QR; coste casi nulo y casi nadie lo ofrece.",
+"Vista previa gratuita de 2 o 3 páginas antes de pagar para reducir el abandono.",
+"Elegir imprenta con producción en España y mostrar 'impreso en España' como argumento de confianza y rapidez."]}

@@ -1,0 +1,28 @@
+{"clave":"i-kdp",
+"competidores":[
+{"nombre":"E. Gutiérrez, Libro de actividades de lógica para niños 8-12","url":"https://www.amazon.es/dp/B0BV4BDLGV","precio":"10,39 € tapa blanda, 130 páginas, 4,5 estrellas con 47 valoraciones","debilidad":"Diseño genérico, sin enfoque en programación ni catalán"},
+{"nombre":"E. Gutiérrez, Lógica para niños audaces 6-10","url":"https://www.amazon.es/dp/B0B7Q1MS4S","precio":"10,39 €, 4,9 estrellas con 26 valoraciones","debilidad":"Cuatro variantes casi idénticas; sin progresión pedagógica ni soluciones explicadas"},
+{"nombre":"Cora Mendan, Exploradores del cerebro","url":"https://www.amazon.com/dp/B0FG7TG8NX","precio":"no verificado; 60 páginas","debilidad":"Muy corto, portada de stock"},
+{"nombre":"El superpoder de programar (sin pantallas)","url":"https://www.amazon.es/","precio":"12,99 €, 4,8 estrellas (ficha no verificada)","debilidad":"Único título directo de programación sin pantalla en castellano; sin catálogo ni catalán"},
+{"nombre":"García Parga, Pensamiento computacional (Anaya)","url":"https://www.amazon.com/dp/8469844687","precio":"no verificado; 40 páginas","debilidad":"Orientado al aula, poca disponibilidad"}],
+"repos":[
+{"nombre":"john-science/mazelib","url":"https://github.com/john-science/mazelib","licencia":"MIT","uso":"Generar y resolver laberintos por niveles, exportables a SVG","estrellas":"254"},
+{"nombre":"puzzletide (npm)","url":"https://www.npmjs.com/package/puzzletide","licencia":"MIT","uso":"Sopas de letras, crucigramas y sudokus con solución única en Node","estrellas":""},
+{"nombre":"py-sudoku (PyPI)","url":"https://pypi.org/project/py-sudoku/","licencia":"no verificado","uso":"Sudokus 4×4 y 6×6 para niños con dificultad ajustable","estrellas":""},
+{"nombre":"CTAN kdpcover","url":"https://ctan.org/pkg/kdpcover","licencia":"LPPL","uso":"Cálculo de lomo y cubierta completa para KDP","estrellas":""},
+{"nombre":"Kozea/WeasyPrint","url":"https://github.com/Kozea/WeasyPrint","licencia":"BSD-3","uso":"Interior KDP desde HTML y CSS con márgenes según número de páginas","estrellas":"8.900"},
+{"nombre":"Hopding/pdf-lib","url":"https://github.com/Hopding/pdf-lib","licencia":"MIT","uso":"Ensamblar interior y soluciones, comprobar tamaño de página","estrellas":"8.400"},
+{"nombre":"typst/typst","url":"https://github.com/typst/typst","licencia":"Apache-2.0","uso":"Plantillas de interior reproducibles por edad e idioma","estrellas":"55.000"}],
+"hallazgos":[
+"Precio de referencia en Amazon.es para cuadernos de lógica: de 10 a 13 €. El más vendido tiene solo 47 valoraciones: nicho con poca competencia y volumen moderado.",
+"Regalías KDP en 2026: 60 % del precio menos la impresión si el precio es de 9,99 € o más (50 % por debajo). Calcular la impresión en color con la calculadora oficial antes de fijar precio.",
+"Hay que declarar texto o imágenes generados con IA al subir; el contenido asistido por IA no. La declaración no se muestra a los lectores.",
+"Los libros de actividades no cuentan como 'low content': conservan ISBN gratuito y vista previa.",
+"KDP admite catalán como idioma del libro, así que la edición catalana no cambia el pipeline.",
+"Riesgo: saturación de puzles genéricos; la diferenciación es el ángulo 'pensamiento computacional sin pantallas', que casi nadie cubre en castellano y nadie en catalán."],
+"mejoras":[
+"Serie por edades (6-8, 9-12) y por lengua con el mismo motor; título con 'pensamiento computacional' y 'sin pantallas', los términos que usan padres y docentes.",
+"Precio de 11,99 a 12,99 € (por encima del umbral del 60 %) con 100 a 120 páginas en blanco y negro; color solo en la cubierta.",
+"Páginas de explicación para padres y QR a soluciones y vídeos, puente con los cursos.",
+"Ilustraciones por código (SVG determinista: laberintos, cuadrículas, pixel art) para no tener que marcar imágenes de IA y asegurar calidad de impresión.",
+"Vender también a colegios y extraescolares con copias de autor a coste, y apuntar en Amazon.es a 'regalo educativo Navidad' y 'actividades verano'."]}

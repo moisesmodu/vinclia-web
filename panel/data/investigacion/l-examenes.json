@@ -1,0 +1,27 @@
+{"clave":"l-examenes",
+"competidores":[
+{"nombre":"Entrena la PAU (Edelvives)","url":"https://www.educaciontrespuntocero.com/noticias/preparar-la-pau-con-entrena-la-pau-edelvives/","precio":"Gratis con los libros de la editorial","debilidad":"Ligado a la editorial; no cubre DELE ni catalán"},
+{"nombre":"Let's EBAU Selectivitime","url":"https://internetpasoapaso.com/?p=142297","precio":"Gratis","debilidad":"Tipo test sin corrección de desarrollo; no adaptado a la nueva PAU competencial"},
+{"nombre":"Instituto Cervantes, cursos de preparación DELE","url":"https://clic.cervantes.es/en/preparacionDELE","precio":"50 € por nivel en autoaprendizaje; de 130 a 140 € en directo","debilidad":"Institucional, sin práctica ilimitada; el examen B2 ya cuesta unos 190 €"},
+{"nombre":"Apps de preparación DELE","url":"https://apps.apple.com/us/app/-/id1468642025","precio":"Gratis con compras internas","debilidad":"Apps pequeñas, sin corrección de escritura ni oral"},
+{"nombre":"CPNL y Parla.cat (nivell C)","url":"https://www.cpnl.cat","precio":"Gratis o bajo coste","debilidad":"Oferta pública sin simulacros ilimitados ni corrección automática"},
+{"nombre":"Global Exam","url":"https://global-exam.com","precio":"De 49 a 75 € por acceso (DELF)","debilidad":"Fuerte en francés, débil en español y catalán; sin IA de corrección"}],
+"repos":[
+{"nombre":"rogasper/labas-bahasa","url":"https://github.com/rogasper/labas-bahasa","licencia":"AGPL-3.0","uso":"Estructura de práctica de exámenes de idiomas (secciones, tiempos, banco)","estrellas":"98"},
+{"nombre":"open-spaced-repetition/ts-fsrs","url":"https://github.com/open-spaced-repetition/ts-fsrs","licencia":"MIT","uso":"Repaso espaciado compartido con oposiciones","estrellas":"830"},
+{"nombre":"m-bain/whisperX","url":"https://github.com/m-bain/whisperX","licencia":"BSD-2","uso":"Transcripción con marcas de tiempo para evaluar la prueba oral DELE y la expresión oral del nivell C","estrellas":"24.800"},
+{"nombre":"Halleck45/OpenPronounce","url":"https://github.com/Halleck45/OpenPronounce","licencia":"MIT","uso":"Evaluación de pronunciación por fonema, adaptable a español y catalán","estrellas":"152"},
+{"nombre":"Exámenes oficiales PAU (UC3M y comunidades)","url":"https://uc3m.es/pruebasacceso/en/modelos-examenes","licencia":"Administración pública","uso":"Enunciados y criterios de corrección oficiales para alimentar el generador","estrellas":""}],
+"hallazgos":[
+"DELE: 142.379 candidatos en el curso 2024-25; el A2 es el nivel más demandado (62.223) por la nacionalidad española. Mercado mundial y recurrente.",
+"PAU: 281.956 matriculados en 2025; la nueva PAU competencial se completa en 2028. El mensaje debe ser 'nueva PAU', no un año.",
+"Casi el 90 % aprueba la PAU con nota media superior a 7: el dolor no es aprobar sino subir nota. El producto vende décimas.",
+"Nivell C: sin cifras públicas de inscritos; demanda ligada a oposiciones (requisito C1) y a residencia; oferta pública gratuita pero sin simulacros interactivos.",
+"No existen bancos abiertos de DELE; el material oficial del Cervantes tiene copyright. Hay que generar ítems propios alineados al MCER.",
+"Riesgos: estacionalidad (PAU en junio); la marca 'DELE' es del Cervantes (no usarla en nombre ni dominio); la corrección automática de escritura y oral es cara a 9,99 €."],
+"mejoras":[
+"Vertical DELE A2 'nacionalidad' en inglés, árabe, chino y portugués como entrada mundial, con simulacro completo y corrección IA de la expresión escrita; enlaza con la marca Nuevo en España.",
+"PAU: entrenador por asignatura con los criterios de corrección oficiales y 'predicción de nota'; colaboraciones con profesores de 2º de Bachillerato y canales de TikTok de selectividad.",
+"Nivell C: simulacro con la estructura oficial y corrección de expresión escrita con rúbrica; SEO en catalán.",
+"Un motor, tres marcas; precio de 9,99 €/mes o pase por convocatoria (29 € hasta el examen), porque el usuario compra por evento.",
+"Oral con WhisperX y rúbrica MCER como función premium: ninguna app actual lo hace."]}

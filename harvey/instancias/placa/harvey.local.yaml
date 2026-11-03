@@ -1,0 +1,115 @@
+# Harvey · instancia Plaça (oposita.digital). Gana sobre harvey.yaml. Rellenar: persona.email, compliance.postal_address.
+persona:
+  name: "Moisés Mora"
+  company: "Plaça"
+  role: "Fundador"
+  email: "moises@oposita.digital"        # el buzón real que envía y recibe (Workspace o SMTP+IMAP)
+  linkedin: ""
+  tone: "directo, sereno, honesto; tutea; habla de la oposición concreta por su nombre; sin frases de vendedor"
+
+product:
+  name: "Plaça"
+  description: "Tests de oposiciones catalanas (Mossos d'Esquadra, Bombers de la Generalitat, TCAI del ICS, auxiliar administratiu de la Generalitat y ajuntaments) con el artículo exacto de la ley en cada respuesta, simulacros con el formato real de cada convocatoria y repaso espaciado. Hecho en Lleida. En catalán y castellano."
+  pricing: "Particulares: 9,99 €/mes, 23,97 € trimestral, 71,88 € anual. Academias: licencia de grupo a 4 €/alumno y mes (mínimo 10 alumnos) con panel del profesorado."
+  key_benefits:
+    - "Cada pregunta enlaza al artículo del BOE o del DOGC: el alumno ve de dónde sale la respuesta"
+    - "Simulacros con el formato real: 30 preguntas en 35 minutos y −1/4 en Mossos, 70 en Bombers"
+    - "Repaso espaciado: la app vuelve a preguntar lo que falla justo antes de que se olvide"
+    - "Convocatorias 2027 de Cataluña actualizadas cada semana (35 procesos)"
+    - "El historial del alumno no se borra al cancelar"
+  objection_responses:
+    "ya usamos otra app de tests": "Tiene sentido. ¿Qué os falta en la que usáis: la ley en cada respuesta, las oposiciones catalanas concretas o el panel para el profesorado?"
+    "es caro": "Son 4 € por alumno y mes, y el primer mes es gratis para todo el grupo. Si no os ahorra horas de preparar tests, no seguís."
+    "no tenemos tiempo": "No hace falta reunión. Os mando un código, los alumnos entran con él y en una semana me decís qué tal."
+    "las preguntas no son oficiales": "Son generadas a partir de la normativa vigente y verificadas contra el texto legal; cada una enlaza al artículo. Y cada pregunta tiene un botón para avisar de un error, que corregimos el mismo día."
+  offer:
+    primary: "Licencia de grupo: 4 €/alumno y mes, mínimo 10 alumnos, con panel del profesorado y todas las oposiciones"
+    entry: "30 días gratis para todos los alumnos de la academia con un código propio, sin tarjeta"
+    goal: "start_trial"
+    booking_method: "ask_preference"
+    booking_url: ""
+    meeting_duration: "10 minutos"
+    meeting_owner: "Moisés Mora"
+
+icp:
+  industries:
+    - "academia de oposiciones"
+    - "centro de formación de oposiciones"
+    - "academia"
+    - "centro de estudios"
+  company_size: "1-50 empleados"
+  titles:
+    - "Director/a"
+    - "Gerente"
+    - "Responsable de formación"
+    - "Coordinador/a académico/a"
+    - "Preparador/a de oposiciones"
+  geography:
+    - "Lleida, España"
+    - "Tarragona, España"
+    - "Girona, España"
+    - "Barcelona, España"
+    - "Reus, España"
+    - "Manresa, España"
+    - "Sabadell, España"
+    - "Terrassa, España"
+  hiring_signals: []
+
+channels:
+  email:
+    enabled: true
+    provider: "smtp"              # smtp (Fastmail/Workspace con contraseña de aplicación) o gmail
+    max_daily_sends: 15
+    require_approval: true        # Moisés aprueba en el Outbox; autopilot solo tras dos tandas revisadas
+    link_domains: ["oposita.digital", "placa-oposicions.vercel.app"]
+    send_to_risky: false
+    max_bounce_rate: 0.03
+    warmup:
+      start_date: ""              # YYYY-MM-DD del día en que empieza el calentamiento del buzón
+      min_days: 14
+      start_sends: 5
+      daily_increase: 2
+    send_window:
+      start: "09:00"
+      end: "18:00"
+      weekdays_only: true
+      recipient_timezone: false
+    signature:
+      logo: ""
+  linkedin:
+    enabled: false
+
+usage:
+  max_daily_claude_percent: 40
+  heartbeat_interval_minutes: 30
+  quiet_hours:
+    start: "21:00"
+    end: "08:00"
+    timezone: "Europe/Madrid"
+
+compliance:
+  postal_address: "[LEGAL_ADRECA · dirección postal de Moisés Mora, Lleida]"
+  opt_out_line: 'Si no te interesa, responde "no, gracias" y no te escribo más.'
+  do_not_contact:
+    - "oposita.digital"
+    - "placa-oposicions.vercel.app"
+    - "aprova-catala.vercel.app"
+    - "ccsefacil.com"
+    - "tuspapeles.app"
+    - "lunilla.cat"
+    - "netoclaro.app"
+    - "impuestoclaro.es"
+    - "numimates.com"
+    - "algorithmicslleida.com"
+    - "opositatest.com"
+    - "opositer.com"
+    - "gencat.cat"
+    - "mossos.gencat.cat"
+  precleared:
+    enabled: false
+
+brain:
+  provider: "claude"
+
+writer:
+  email_rules: "skills/email_rules.md"

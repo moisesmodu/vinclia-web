@@ -1,0 +1,118 @@
+# Harvey · instancia CCSE en tu idioma (ccsefacil.com). Rellenar: persona.email, compliance.postal_address.
+persona:
+  name: "Moisés Mora"
+  company: "CCSE en tu idioma"
+  role: "Fundador"
+  email: "moises@ccsefacil.com"
+  linkedin: ""
+  tone: "cercano, paciente, concreto; tutea; como alguien que ya pasó por el trámite; sin frases de vendedor"
+
+product:
+  name: "CCSE en tu idioma"
+  description: "Web y app para preparar el examen CCSE de nacionalidad española: las 300 preguntas oficiales del manual 2026 del Instituto Cervantes explicadas una a una en español, árabe, francés, inglés, rumano, chino y ucraniano, con lectura en voz alta, test por tema y simulacro con el formato real. 25 preguntas y un simulacro gratis sin registro. No es oficial del Instituto Cervantes. Hecho en Lleida."
+  pricing: "9,99 € pago único, 90 días de acceso completo, garantía de aprobado. Afiliados: 30 % de cada compra (3 € por venta) con código propio."
+  key_benefits:
+    - "Las 300 preguntas oficiales explicadas en el idioma del alumno (árabe, francés, inglés, rumano, chino, ucraniano)"
+    - "Lectura en voz alta: sirve también para quien prepara la prueba adaptada"
+    - "Simulacro con el formato real: 25 preguntas en 45 minutos, aprobado con 15"
+    - "Profesorado con acceso completo gratuito; alumnos con 25 preguntas gratis sin registro"
+    - "Afiliación al 30 % para academias, centros examinadores y entidades"
+  objection_responses:
+    "ya tenemos material propio": "Seguro que sí. Lo nuestro es la explicación en el idioma del alumno; muchos entienden la pregunta en español y no saben por qué es la respuesta. ¿Os paso acceso para que lo vea el profesorado?"
+    "la app oficial es gratis": "Cierto, y las preguntas son las mismas. La diferencia es la explicación en árabe, rumano o francés y el simulacro con nota. Por eso el acceso completo cuesta 9,99 € una sola vez, y a vosotros no os cuesta nada."
+    "no cobramos comisiones": "Entonces lo dejamos en accesos gratuitos para vuestras clases y ya está. La comisión solo es una opción para academias."
+    "no somos oficiales de nada": "Nosotros tampoco: lo decimos en cada página. Es material de práctica, no un examen."
+  offer:
+    primary: "Programa de afiliados: 30 % de cada compra (3 € de 9,99 €) con código propio para vuestros alumnos, liquidación mensual"
+    entry: "Acceso completo gratuito para el profesorado y 20 accesos para alumnos, sin condiciones"
+    goal: "get_reply"
+    booking_method: "ask_preference"
+    booking_url: ""
+    meeting_duration: "10 minutos"
+    meeting_owner: "Moisés Mora"
+
+icp:
+  industries:
+    - "escuela de español para extranjeros"
+    - "academia de idiomas"
+    - "centro examinador CCSE"
+    - "academia de español"
+    - "ONG de acogida de inmigrantes"
+    - "asociación de inmigrantes"
+    - "escuela de adultos"
+  company_size: "1-50 empleados"
+  titles:
+    - "Director/a"
+    - "Coordinador/a académico/a"
+    - "Responsable de programas"
+    - "Técnico/a de integración"
+    - "Profesor/a de español"
+  geography:
+    - "Madrid, España"
+    - "Barcelona, España"
+    - "Valencia, España"
+    - "Sevilla, España"
+    - "Zaragoza, España"
+    - "Málaga, España"
+    - "Murcia, España"
+    - "Alicante, España"
+    - "Bilbao, España"
+    - "Lleida, España"
+    - "Girona, España"
+    - "Tarragona, España"
+  hiring_signals: []
+
+channels:
+  email:
+    enabled: true
+    provider: "smtp"
+    max_daily_sends: 15
+    require_approval: true
+    link_domains: ["ccsefacil.com", "ccse-en-tu-idioma.vercel.app", "tuspapeles.app"]
+    send_to_risky: false
+    max_bounce_rate: 0.03
+    warmup:
+      start_date: ""
+      min_days: 14
+      start_sends: 5
+      daily_increase: 2
+    send_window:
+      start: "09:00"
+      end: "18:00"
+      weekdays_only: true
+      recipient_timezone: false
+    signature:
+      logo: ""
+  linkedin:
+    enabled: false
+
+usage:
+  max_daily_claude_percent: 40
+  heartbeat_interval_minutes: 30
+  quiet_hours:
+    start: "21:00"
+    end: "08:00"
+    timezone: "Europe/Madrid"
+
+compliance:
+  postal_address: "[LEGAL_ADRECA · dirección postal de Moisés Mora, Lleida]"
+  opt_out_line: 'Si no te interesa, responde "no, gracias" y no te escribo más.'
+  do_not_contact:
+    - "ccsefacil.com"
+    - "ccse-en-tu-idioma.vercel.app"
+    - "tuspapeles.app"
+    - "oposita.digital"
+    - "lunilla.cat"
+    - "numimates.com"
+    - "algorithmicslleida.com"
+    - "cervantes.es"
+    - "examenes.cervantes.es"
+    - "parainmigrantes.info"
+  precleared:
+    enabled: false
+
+brain:
+  provider: "claude"
+
+writer:
+  email_rules: "skills/email_rules.md"
