@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presupuestos · Reformas Jordi</title>
+<style>
+  :root {
+    --acento: #C8552B;
+    --acento-osc: #A3431F;
+    --acento-suave: #FBEDE6;
+    --texto: #1F2633;
+    --gris: #6A7280;
+    --linea: #E5E0D8;
+    --fondo: #F5F2ED;
+    --blanco: #FFFFFF;
+    --error: #C62828;
+    --ok: #2E7D4F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.45;
+  }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+
+  .barra-sup {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 28px; background: var(--texto); color: #fff;
+  }
+  .logo {
+    width: 38px; height: 38px; border-radius: 10px; background: var(--acento);
+    display: grid; place-items: center; font-weight: 800; letter-spacing: -.5px;
+  }
+  .barra-sup h1 { font-size: 19px; margin: 0; font-weight: 700; }
+  .barra-sup .etiqueta {
+    font-size: 13px; padding: 3px 10px; border-radius: 99px;
+    background: rgba(255,255,255,.12); color: #F3D9CD;
+  }
+  .barra-sup .hueco { flex: 1; }
+
+  main {
+    max-width: 1380px; margin: 0 auto; padding: 24px 28px 48px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); gap: 24px; align-items: start;
+  }
+  .tarjeta {
+    background: var(--blanco); border-radius: 16px; padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(31,38,51,.08); margin-bottom: 18px;
+  }
+  .tarjeta h2 { font-size: 16px; margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+  .tarjeta h2 .n {
+    width: 24px; height: 24px; border-radius: 50%; background: var(--acento-suave); color: var(--acento-osc);
+    display: grid; place-items: center; font-size: 13px;
+  }
+
+  label { display: block; font-size: 13px; font-weight: 600; color: var(--gris); }
+  input, select {
+    width: 100%; margin-top: 4px; padding: 9px 11px; border: 1.5px solid var(--linea);
+    border-radius: 10px; background: var(--blanco); font-size: 15px;
+  }
+  input:focus, select:focus { outline: none; border-color: var(--acento); }
+  .rejilla { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+  .rejilla .ancho { grid-column: 1 / -1; }
+
+  .lineas { width: 100%; border-collapse: collapse; }
+  .lineas th {
+    text-align: left; font-size: 12px; font-weight: 700; color: var(--gris);
+    text-transform: uppercase; letter-spacing: .04em; padding: 0 6px 6px;
+  }
+  .lineas td { padding: 4px 6px; vertical-align: top; }
+  .lineas td input { margin-top: 0; }
+  .lineas .num { text-align: right; }
+  .lineas td.importe { padding-top: 13px; text-align: right; font-weight: 600; white-space: nowrap; }
+  .col-cant { width: 92px; } .col-precio { width: 112px; } .col-imp { width: 110px; } .col-x { width: 36px; }
+  .borrar {
+    border: 0; background: none; color: var(--gris); font-size: 20px; line-height: 1;
+    width: 32px; height: 38px; border-radius: 8px;
+  }
+  .borrar:hover { background: var(--acento-suave); color: var(--acento-osc); }
+  input.mal { border-color: var(--error); background: #FFF5F5; }
+  .aviso { display: block; color: var(--error); font-size: 12px; font-weight: 600; margin-top: 2px; }
+
+  .btn {
+    border: 0; border-radius: 10px; padding: 10px 16px; font-weight: 600; font-size: 15px;
+    background: var(--acento); color: #fff;
+  }
+  .btn:hover { background: var(--acento-osc); }
+  .btn.sec { background: var(--acento-suave); color: var(--acento-osc); }
+  .btn.sec:hover { background: #F6DCCF; }
+  .btn.claro { background: rgba(255,255,255,.12); color: #fff; }
+  .btn.claro:hover { background: rgba(255,255,255,.2); }
+  .acciones { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .nota { font-size: 13px; color: var(--gris); margin: 6px 0 0; }
+  .nota a { color: var(--acento-osc); font-weight: 600; }
+  .resultado-pruebas { margin-top: 12px; border: 1.5px solid var(--linea); border-radius: 12px; padding: 10px 14px; }
+  .resultado-pruebas p { margin: 0 0 6px; color: var(--ok); }
+  .resultado-pruebas table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .resultado-pruebas th { text-align: left; color: var(--gris); font-size: 12px; padding: 4px 6px; border-bottom: 1px solid var(--linea); }
+  .resultado-pruebas td { padding: 4px 6px; border-bottom: 1px solid var(--linea); }
+  .resultado-pruebas .si { color: var(--ok); font-weight: 800; }
+  .resultado-pruebas .no { color: var(--error); font-weight: 800; }
+
+  /* Vista del presupuesto (lo que se imprime) */
+  .lado { position: sticky; top: 20px; }
+  .lado .acciones { margin: 0 0 12px; }
+  .hoja {
+    background: var(--blanco); border-radius: 6px; padding: 34px 36px;
+    box-shadow: 0 8px 30px rgba(31,38,51,.12); font-size: 13px;
+  }
+  .hoja .cab { display: flex; justify-content: space-between; gap: 20px; border-bottom: 3px solid var(--acento); padding-bottom: 14px; }
+  .hoja .empresa b { font-size: 18px; color: var(--acento-osc); }
+  .hoja .empresa p, .hoja .datos p { margin: 2px 0; color: var(--gris); }
+  .hoja .datos { text-align: right; }
+  .hoja .datos h3 { margin: 0 0 4px; font-size: 20px; letter-spacing: .06em; }
+  .hoja .cliente { margin: 16px 0; padding: 10px 14px; background: var(--fondo); border-radius: 8px; }
+  .hoja .cliente p { margin: 1px 0; }
+  .hoja .cliente small { color: var(--gris); font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .05em; }
+  .hoja table { width: 100%; border-collapse: collapse; }
+  .hoja th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--gris); border-bottom: 1px solid var(--linea); padding: 6px 4px; }
+  .hoja td { padding: 7px 4px; border-bottom: 1px solid var(--linea); }
+  .hoja .der { text-align: right; white-space: nowrap; }
+  .hoja .totales { margin: 14px 0 0 auto; width: 260px; }
+  .hoja .totales div { display: flex; justify-content: space-between; padding: 3px 0; }
+  .hoja .totales .gran { border-top: 2px solid var(--texto); margin-top: 6px; padding-top: 8px; font-size: 17px; font-weight: 800; }
+  .hoja .pie { margin-top: 22px; display: flex; gap: 20px; justify-content: space-between; align-items: flex-end; }
+  .hoja .pie p { margin: 2px 0; color: var(--gris); font-size: 12px; }
+  .hoja .firma { width: 200px; height: 70px; border: 1px dashed var(--linea); border-radius: 6px; padding: 6px 8px; font-size: 11px; color: var(--gris); }
+  .vacio { color: var(--gris); font-style: italic; }
+
+  /* Presupuestos guardados */
+  .panel {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(420px, 100%); background: var(--blanco);
+    box-shadow: -10px 0 40px rgba(31,38,51,.18); padding: 22px; overflow-y: auto;
+    transform: translateX(105%); transition: transform .25s; z-index: 10;
+  }
+  .panel.abierto { transform: none; }
+  .panel h2 { margin: 0 0 4px; font-size: 20px; }
+  .panel .cerrar { float: right; border: 0; background: var(--fondo); border-radius: 8px; width: 34px; height: 34px; font-size: 18px; }
+  .guardado { border: 1.5px solid var(--linea); border-radius: 12px; padding: 12px 14px; margin-top: 12px; }
+  .guardado .fila { display: flex; justify-content: space-between; gap: 10px; }
+  .guardado b { font-size: 15px; }
+  .guardado .total { font-weight: 800; color: var(--acento-osc); }
+  .guardado p { margin: 2px 0 8px; color: var(--gris); font-size: 13px; }
+  .guardado .acciones { margin: 0; gap: 6px; }
+  .guardado .btn { padding: 6px 10px; font-size: 13px; }
+  .contador { background: var(--acento); color: #fff; border-radius: 99px; padding: 0 7px; font-size: 12px; margin-left: 4px; }
+  .toast {
+    position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 120px); background: var(--texto); color: #fff;
+    padding: 10px 18px; border-radius: 10px; font-weight: 600; transition: transform .25s; z-index: 20;
+  }
+  .toast.ver { transform: translate(-50%, 0); }
+
+  @media screen and (max-width: 900px) {
+    main { grid-template-columns: 1fr; padding: 16px; }
+    .lado { position: static; }
+    .barra-sup { padding: 12px 16px; }
+    .barra-sup .etiqueta { display: none; }
+    .barra-sup h1 { font-size: 17px; }
+    .barra-sup .btn { padding: 8px 12px; font-size: 14px; }
+    .lineas .col-cant, .lineas .col-precio { width: auto; }
+    .rejilla { grid-template-columns: 1fr; }
+    .hoja { padding: 20px 16px; }
+    .hoja .cab { flex-direction: column; }
+    .hoja .datos { text-align: left; }
+    .lineas thead { display: none; }
+    .lineas tr { display: grid; grid-template-columns: 1fr 1fr 36px; gap: 6px; padding: 10px 0; border-bottom: 1px solid var(--linea); }
+    .lineas td { padding: 0; }
+    .lineas td:first-child { grid-column: 1 / -1; }
+    .lineas td.importe { grid-column: 1 / 3; text-align: left; padding: 0; }
+    .lineas td.col-x { grid-row: 2; grid-column: 3; }
+  }
+
+  /* Al imprimir (o «Guardar en PDF») solo sale la hoja */
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { background: #fff; }
+    .barra-sup, .editor, .lado .acciones, .panel, .toast {
+      display: none !important;
+    }
+    main { display: block; padding: 0; max-width: none; }
+    .lado { position: static; }
+    .hoja { box-shadow: none; border-radius: 0; padding: 0; }
+    .hoja { font-size: 12px; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<header class="barra-sup">
+  <div class="logo">RJ</div>
+  <h1>Reformas Jordi</h1>
+  <span class="etiqueta">Presupuestos</span>
+  <span class="hueco"></span>
+  <button class="btn claro" id="ver-guardados">Guardados <span class="contador" id="contador">0</span></button>
+</header>
+
+<main>
+  <section class="editor">
+    <div class="tarjeta">
+      <h2><span class="n">1</span> Cliente y datos del presupuesto</h2>
+      <div class="rejilla">
+        <label class="ancho">Nombre o empresa<input id="cli-nombre" autocomplete="off"></label>
+        <label>NIF o DNI<input id="cli-nif" autocomplete="off"></label>
+        <label>Teléfono o correo<input id="cli-contacto" autocomplete="off"></label>
+        <label class="ancho">Dirección de la obra<input id="cli-dir" autocomplete="off"></label>
+        <label>Número de presupuesto<input id="numero"></label>
+        <label>Fecha<input id="fecha" placeholder="dd/mm/aaaa" inputmode="numeric"></label>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2><span class="n">2</span> Líneas del presupuesto</h2>
+      <table class="lineas">
+        <thead>
+          <tr>
+            <th>Concepto</th><th class="num">Cantidad</th><th class="num">Precio (€)</th>
+            <th class="num">Importe</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="filas"></tbody>
+      </table>
+      <div class="acciones"><button class="btn sec" id="add">+ Añadir línea</button></div>
+    </div>
+
+    <div class="tarjeta">
+      <h2><span class="n">3</span> IVA y descuento</h2>
+      <div class="rejilla">
+        <label>Tipo de IVA
+          <select id="tipo-iva">
+            <option value="21">21 % (general)</option>
+            <option value="10">10 % (reforma de vivienda con requisitos)</option>
+          </select>
+        </label>
+        <label>Descuento (%)<input id="descuento" inputmode="decimal" value="0"></label>
+      </div>
+      <p class="nota">El 10 % solo vale para algunas reformas de vivienda. Tu gestoría te dirá cuál aplica.</p>
+      <p class="nota"><a href="#" id="btn-pruebas">Comprobar cálculos</a></p>
+      <div id="pruebas"></div>
+    </div>
+  </section>
+
+  <aside class="lado">
+    <div class="acciones">
+      <button class="btn" id="pdf">Guardar en PDF</button>
+      <button class="btn sec" id="guardar">Guardar presupuesto</button>
+      <button class="btn sec" id="nuevo">Nuevo</button>
+    </div>
+    <article class="hoja" id="doc">
+      <div class="cab">
+        <div class="empresa">
+          <b>Reformas Jordi</b>
+          <p>Calle del Ejemplo, 12 · 50001 Zaragoza</p>
+          <p>Tel. 976 000 000 · NIF 00000000T</p>
+        </div>
+        <div class="datos">
+          <h3>PRESUPUESTO</h3>
+          <p>Nº <b id="d-numero"></b></p>
+          <p>Fecha: <span id="d-fecha"></span></p>
+          <p>Válido hasta: <b id="d-validez"></b></p>
+        </div>
+      </div>
+      <div class="cliente" id="d-cliente"></div>
+      <table>
+        <thead><tr><th>Concepto</th><th class="der">Cant.</th><th class="der">Precio</th><th class="der">Importe</th></tr></thead>
+        <tbody id="d-lineas"></tbody>
+      </table>
+      <div class="totales">
+        <div><span>Subtotal</span><span id="t-subtotal"></span></div>
+        <div id="fila-descuento"><span>Descuento</span><span id="t-descuento"></span></div>
+        <div><span>Base imponible</span><span id="t-base"></span></div>
+        <div><span id="t-iva-nombre">IVA</span><span id="t-iva"></span></div>
+        <div class="gran"><span>Total</span><span id="t-total"></span></div>
+      </div>
+      <div class="pie">
+        <div>
+          <p>Presupuesto válido durante 30 días desde su fecha.</p>
+          <p>Este documento es un presupuesto, no una factura.</p>
+        </div>
+        <div class="firma">Conforme del cliente (fecha y firma)</div>
+      </div>
+    </article>
+  </aside>
+</main>
+
+<aside class="panel" id="panel">
+  <button class="cerrar" id="cerrar-panel" aria-label="Cerrar">×</button>
+  <h2>Presupuestos guardados</h2>
+  <p class="nota">Se guardan solo en este navegador, en este ordenador.</p>
+  <div id="lista"></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script>
+const euros = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' });
+const $ = s => document.querySelector(s);
+const CLAVE = 'reformas-jordi-presupuestos';
+
+// Todas las cuentas se hacen en céntimos (números enteros)
+const aCentimos = n => Math.round(n * 100);
+const verEuros = c => euros.format(c / 100);
+
+// Convierte "1.234,5" o "12,5" en número, o devuelve el error
+function leerNumero(texto) {
+  let t = String(texto).replace(/\s/g, '');
+  if (t === '') return { error: 'Falta este dato' };
+  if (t.startsWith('-')) return { error: 'No puede ser negativo' };
+  if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
+  else if (/^\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');
+  if (!/^\d+(\.\d{1,2})?$/.test(t)) return { error: 'Número no válido' };
+  return { valor: Number(t) };
+}
+
+// Importe de una línea, en céntimos, redondeado al céntimo
+function importeLinea(cantidad, precio) {
+  const c = aCentimos(cantidad) * aCentimos(precio);
+  return Math.round(c / 100);
+}
+
+function calcular(lineas, descuentoPct, tipoIva) {
+  const subtotal = lineas.reduce((s, l) => s + l.importe, 0);
+  const pct = aCentimos(descuentoPct);
+  const descuento = Math.round(subtotal * pct / 10000);
+  const base = subtotal - descuento;
+  const iva = Math.round(base * tipoIva / 100);
+  return { subtotal, descuento, base, iva, total: base + iva };
+}
+
+const isoLocal = f => [f.getFullYear(), f.getMonth() + 1, f.getDate()]
+  .map(n => String(n).padStart(2, '0')).join('-');
+const hoyISO = () => isoLocal(new Date());
+function fechaBonita(iso) {
+  if (!iso) return '';
+  const [a, m, d] = iso.split('-');
+  return `${d}/${m}/${a}`;
+}
+// "3/11/2026" o "03/11/2026" → "2026-11-03"; null si no es una fecha
+function leerFecha(texto) {
+  const m = String(texto).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (!m) return null;
+  const iso = `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+  const f = new Date(iso + 'T12:00:00');
+  return isNaN(f) || f.getDate() !== +m[1] ? null : iso;
+}
+function sumarDias(iso, dias) {
+  const f = new Date(iso + 'T12:00:00');
+  f.setDate(f.getDate() + dias);
+  return isoLocal(f);
+}
+const limpio = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function nuevaFila(concepto = '', cantidad = '', precio = '') {
+  const tr = document.createElement('tr');
+  tr.className = 'linea';
+  tr.innerHTML = `
+    <td><input class="concepto" placeholder="Ej.: Alicatado de baño (m²)"></td>
+    <td class="col-cant"><input class="cantidad num" inputmode="decimal" placeholder="Cant."></td>
+    <td class="col-precio"><input class="precio num" inputmode="decimal" placeholder="Precio €"></td>
+    <td class="importe col-imp">–</td>
+    <td class="col-x"><button class="borrar" title="Quitar línea">×</button></td>`;
+  tr.querySelector('.concepto').value = concepto;
+  tr.querySelector('.cantidad').value = cantidad;
+  tr.querySelector('.precio').value = precio;
+  tr.querySelector('.borrar').onclick = () => { tr.remove(); actualizar(); };
+  $('#filas').append(tr);
+  return tr;
+}
+
+function marcar(input, resultado) {
+  input.classList.toggle('mal', !!resultado.error);
+  let aviso = input.parentElement.querySelector('.aviso');
+  if (resultado.error && !aviso) {
+    aviso = document.createElement('span');
+    aviso.className = 'aviso';
+    input.after(aviso);
+  }
+  if (aviso) {
+    if (resultado.error) aviso.textContent = resultado.error;
+    else aviso.remove();
+  }
+}
+
+// Lee las líneas del formulario; las que tienen errores no cuentan
+function leerLineas() {
+  const lineas = [];
+  document.querySelectorAll('.linea').forEach(fila => {
+    const concepto = fila.querySelector('.concepto').value.trim();
+    const inCant = fila.querySelector('.cantidad'), inPrecio = fila.querySelector('.precio');
+    const vacia = !concepto && !inCant.value.trim() && !inPrecio.value.trim();
+    const cant = leerNumero(inCant.value), precio = leerNumero(inPrecio.value);
+    marcar(inCant, vacia ? {} : cant);
+    marcar(inPrecio, vacia ? {} : precio);
+    const celda = fila.querySelector('.importe');
+    if (vacia || cant.error || precio.error) { celda.textContent = '–'; return; }
+    const importe = importeLinea(cant.valor, precio.valor);
+    celda.textContent = verEuros(importe);
+    lineas.push({ concepto: concepto || 'Sin concepto', cantidad: cant.valor, precio: precio.valor, importe });
+  });
+  return lineas;
+}
+
+function actualizar() {
+  const lineas = leerLineas();
+  const inDto = $('#descuento');
+  let dto = leerNumero(inDto.value || '0');
+  if (!dto.error && dto.valor > 100) dto = { error: 'Máximo 100 %' };
+  marcar(inDto, dto);
+  const tipo = Number($('#tipo-iva').value);
+  const r = calcular(lineas, dto.error ? 0 : dto.valor, tipo);
+
+  $('#d-numero').textContent = $('#numero').value || '—';
+  const fecha = leerFecha($('#fecha').value);
+  marcar($('#fecha'), fecha ? {} : { error: 'Escribe la fecha así: 03/11/2026' });
+  $('#d-fecha').textContent = fecha ? fechaBonita(fecha) : '—';
+  $('#d-validez').textContent = fecha ? fechaBonita(sumarDias(fecha, 30)) : '—';
+  const nombre = $('#cli-nombre').value.trim();
+  const extra = [$('#cli-nif').value, $('#cli-contacto').value].map(s => s.trim()).filter(Boolean);
+  $('#d-cliente').innerHTML = `<small>Cliente</small>` + (nombre
+    ? `<p><b>${limpio(nombre)}</b></p>` + (extra.length ? `<p>${limpio(extra.join(' · '))}</p>` : '')
+      + ($('#cli-dir').value.trim() ? `<p>Obra: ${limpio($('#cli-dir').value.trim())}</p>` : '')
+    : `<p class="vacio">Escribe los datos del cliente</p>`);
+  $('#d-lineas').innerHTML = lineas.length ? lineas.map(l => `<tr>
+      <td>${limpio(l.concepto)}</td>
+      <td class="der">${l.cantidad.toLocaleString('es-ES')}</td>
+      <td class="der">${verEuros(aCentimos(l.precio))}</td>
+      <td class="der">${verEuros(l.importe)}</td></tr>`).join('')
+    : `<tr><td colspan="4" class="vacio">Añade al menos una línea</td></tr>`;
+
+  $('#t-subtotal').textContent = verEuros(r.subtotal);
+  $('#fila-descuento').style.display = r.descuento ? '' : 'none';
+  $('#t-descuento').textContent = '−' + verEuros(r.descuento) + (dto.valor ? ` (${dto.valor.toLocaleString('es-ES')} %)` : '');
+  $('#t-base').textContent = verEuros(r.base);
+  $('#t-iva-nombre').textContent = `IVA (${tipo} %)`;
+  $('#t-iva').textContent = verEuros(r.iva);
+  $('#t-total').textContent = verEuros(r.total);
+  return { lineas, r };
+}
+
+// ---------- Presupuestos guardados (localStorage) ----------
+function leerGuardados() {
+  try { return JSON.parse(localStorage.getItem(CLAVE)) || []; }
+  catch (e) { return []; }
+}
+function escribirGuardados(lista) {
+  localStorage.setItem(CLAVE, JSON.stringify(lista));
+  pintarGuardados();
+}
+
+function datosActuales() {
+  return {
+    numero: $('#numero').value.trim(),
+    fecha: leerFecha($('#fecha').value) || hoyISO(),
+    cliente: {
+      nombre: $('#cli-nombre').value, nif: $('#cli-nif').value,
+      contacto: $('#cli-contacto').value, dir: $('#cli-dir').value
+    },
+    lineas: [...document.querySelectorAll('.linea')].map(f => ({
+      concepto: f.querySelector('.concepto').value,
+      cantidad: f.querySelector('.cantidad').value,
+      precio: f.querySelector('.precio').value
+    })),
+    iva: $('#tipo-iva').value,
+    descuento: $('#descuento').value
+  };
+}
+
+function cargar(p) {
+  $('#numero').value = p.numero;
+  $('#fecha').value = fechaBonita(p.fecha);
+  $('#cli-nombre').value = p.cliente.nombre;
+  $('#cli-nif').value = p.cliente.nif;
+  $('#cli-contacto').value = p.cliente.contacto;
+  $('#cli-dir').value = p.cliente.dir;
+  $('#filas').innerHTML = '';
+  p.lineas.forEach(l => nuevaFila(l.concepto, l.cantidad, l.precio));
+  if (!p.lineas.length) nuevaFila();
+  $('#tipo-iva').value = p.iva;
+  $('#descuento').value = p.descuento;
+  actualizar();
+}
+
+function siguienteNumero() {
+  const año = new Date().getFullYear();
+  const usados = leerGuardados()
+    .filter(p => p.numero.startsWith(año + '-'))
+    .map(p => parseInt(p.numero.split('-')[1], 10) || 0);
+  const n = Math.max(0, ...usados) + 1;
+  return `${año}-${String(n).padStart(3, '0')}`;
+}
+
+function guardar() {
+  const p = datosActuales();
+  if (!p.numero) { avisar('Pon un número de presupuesto'); return; }
+  p.total = actualizar().r.total;
+  const lista = leerGuardados().filter(x => x.numero !== p.numero);
+  lista.unshift(p);
+  escribirGuardados(lista);
+  avisar(`Presupuesto ${p.numero} guardado`);
+}
+
+// Duplicar: mismas líneas; cliente, número y fecha nuevos
+function duplicar(numero) {
+  const orig = leerGuardados().find(p => p.numero === numero);
+  if (!orig) return;
+  const copia = structuredClone(orig);
+  copia.numero = siguienteNumero();
+  copia.fecha = hoyISO();
+  copia.cliente = { nombre: '', nif: '', contacto: '', dir: '' };
+  cargar(copia);
+  $('#panel').classList.remove('abierto');
+  avisar(`Copia lista: presupuesto ${copia.numero}`);
+}
+
+function borrar(numero) {
+  if (!confirm(`¿Borrar el presupuesto ${numero}?`)) return;
+  escribirGuardados(leerGuardados().filter(p => p.numero !== numero));
+}
+
+function pintarGuardados() {
+  const lista = leerGuardados();
+  $('#contador').textContent = lista.length;
+  $('#lista').innerHTML = lista.length ? lista.map(p => `
+    <div class="guardado">
+      <div class="fila"><b>${limpio(p.numero)}</b><span class="total">${verEuros(p.total || 0)}</span></div>
+      <p>${limpio(p.cliente.nombre || 'Sin cliente')} · ${fechaBonita(p.fecha)}</p>
+      <div class="acciones">
+        <button class="btn sec" data-abrir="${limpio(p.numero)}">Abrir</button>
+        <button class="btn" data-duplicar="${limpio(p.numero)}">Duplicar</button>
+        <button class="btn sec" data-borrar="${limpio(p.numero)}">Borrar</button>
+      </div>
+    </div>`).join('') : '<p class="nota">Todavía no has guardado ninguno.</p>';
+}
+$('#lista').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.abrir) { cargar(leerGuardados().find(p => p.numero === b.dataset.abrir)); $('#panel').classList.remove('abierto'); }
+  if (b.dataset.duplicar) duplicar(b.dataset.duplicar);
+  if (b.dataset.borrar) borrar(b.dataset.borrar);
+});
+
+let temporizador;
+function avisar(texto) {
+  const t = $('#toast');
+  t.textContent = texto;
+  t.classList.add('ver');
+  clearTimeout(temporizador);
+  temporizador = setTimeout(() => t.classList.remove('ver'), 2200);
+}
+
+function empezarNuevo() {
+  cargar({
+    numero: siguienteNumero(), fecha: hoyISO(),
+    cliente: { nombre: '', nif: '', contacto: '', dir: '' },
+    lineas: [{ concepto: '', cantidad: '', precio: '' }], iva: '21', descuento: '0'
+  });
+}
+
+// ---------- Pruebas: casos calculados a mano ----------
+const CASOS = [
+  { caso: '0,10 + 0,20', esperado: 30, app: () => calcular([{ importe: importeLinea(1, 0.10) }, { importe: importeLinea(1, 0.20) }], 0, 21).subtotal },
+  { caso: '3 × 0,70', esperado: 210, app: () => importeLinea(3, 0.70) },
+  { caso: '12,5 m² × 19,99', esperado: 24988, app: () => importeLinea(12.5, 19.99) },
+  { caso: 'IVA 21 % de 21,50', esperado: 452, app: () => calcular([{ importe: 2150 }], 0, 21).iva },
+  { caso: 'IVA 10 % de 1,45', esperado: 15, app: () => calcular([{ importe: 145 }], 0, 10).iva },
+  { caso: '99,95 − 10 % + IVA 21 %', esperado: 10884, app: () => calcular([{ importe: 9995 }], 10, 21).total },
+  { caso: 'Cantidad «-2»', esperado: 'No puede ser negativo', app: () => leerNumero('-2').error },
+  { caso: 'Precio vacío', esperado: 'Falta este dato', app: () => leerNumero('').error },
+  { caso: '«1.234,5»', esperado: 123450, app: () => aCentimos(leerNumero('1.234,5').valor) }
+];
+function pasarPruebas() {
+  const ver = v => typeof v === 'number' ? verEuros(v) : (v || '—');
+  let bien = 0;
+  const filas = CASOS.map(c => {
+    const obtenido = c.app(), ok = obtenido === c.esperado;
+    if (ok) bien++;
+    return `<tr><td>${c.caso}</td><td>${ver(c.esperado)}</td><td>${ver(obtenido)}</td>
+      <td class="${ok ? 'si' : 'no'}">${ok ? '✓' : '✗'}</td></tr>`;
+  }).join('');
+  $('#pruebas').innerHTML = `<div class="resultado-pruebas">
+    <p><b>${bien} de ${CASOS.length} pruebas correctas</b></p>
+    <table><thead><tr><th>Caso</th><th>A mano</th><th>La app</th><th></th></tr></thead>
+    <tbody>${filas}</tbody></table></div>`;
+}
+$('#btn-pruebas').onclick = e => { e.preventDefault(); pasarPruebas(); };
+
+// ---------- Arranque ----------
+document.querySelector('.editor').addEventListener('input', actualizar);
+$('#add').onclick = () => { nuevaFila().querySelector('.concepto').focus(); };
+$('#pdf').onclick = () => { actualizar(); window.print(); };
+$('#guardar').onclick = guardar;
+$('#nuevo').onclick = empezarNuevo;
+$('#ver-guardados').onclick = () => $('#panel').classList.add('abierto');
+$('#cerrar-panel').onclick = () => $('#panel').classList.remove('abierto');
+
+pintarGuardados();
+cargar({
+  numero: siguienteNumero(), fecha: hoyISO(),
+  cliente: { nombre: '', nif: '', contacto: '', dir: '' },
+  lineas: [
+    { concepto: 'Alicatado de baño (m²)', cantidad: '12,5', precio: '32' },
+    { concepto: 'Plato de ducha de resina', cantidad: '1', precio: '289,90' },
+    { concepto: 'Retirada de escombros', cantidad: '1', precio: '150' }
+  ],
+  iva: '21', descuento: '0'
+});
+</script>
+</body>
+</html>

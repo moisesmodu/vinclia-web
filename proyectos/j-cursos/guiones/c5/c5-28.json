@@ -1,0 +1,145 @@
+{
+  "id": "c5-28",
+  "titulo": "Trabajar en tu ordenador: Cursor y Claude Code",
+  "descripcion": "Pasas de copiar y pegar en un chat a trabajar con una carpeta real en tu ordenador: ves cómo un agente como Cursor o Claude Code lee y cambia tus archivos, cómo ver la web en tu navegador con una orden y cómo revisar cada cambio antes de aceptarlo.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:chuleta-git",
+    "demo:peluqueria"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Trabajar en tu ordenador",
+      "subtitulo": "Cursor y Claude Code: la IA dentro de tu carpeta",
+      "narracion": "En todo el curso has trabajado igual. Pides algo en el chat, copias el código, lo pegas en tu archivo y lo pruebas. Funciona muy bien con un archivo. Pero cuando el proyecto crece y tiene varios archivos, copiar y pegar se vuelve lento y da errores. En esta clase vas a ver la alternativa: herramientas que trabajan directamente sobre una carpeta de tu ordenador. Las más conocidas son Cursor y Claude Code."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Del chat al agente",
+      "mal": "Chat: copias, pegas, buscas dónde iba el trozo y a veces pegas en el sitio equivocado.",
+      "bien": "Agente: lee tus archivos, cambia varios a la vez y te enseña qué ha cambiado.",
+      "narracion": "La diferencia es esta. En un chat, la IA no ve tus archivos. Tú le pegas el código, ella te devuelve un trozo y tú tienes que encontrar dónde va. Un agente, en cambio, trabaja dentro de tu carpeta. Lee los archivos que necesita, cambia uno o varios a la vez y, antes de guardar, te enseña exactamente qué líneas ha tocado. Tú sigues decidiendo. Pero te ahorras el copiar y pegar, que es donde se cuelan muchos errores."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dos formas de trabajar con un agente",
+      "columnas": [
+        "",
+        "Cursor",
+        "Claude Code"
+      ],
+      "filas": [
+        [
+          "Qué es",
+          "Un editor de código con IA",
+          "Un agente en la terminal"
+        ],
+        [
+          "Cómo se ve",
+          "Ventanas, archivos y chat",
+          "Texto: escribes y responde"
+        ],
+        [
+          "Coste",
+          "Plan gratuito limitado",
+          "Plan de pago o clave de API"
+        ],
+        [
+          "Para quién",
+          "Quien prefiere ver los archivos",
+          "Quien no teme la terminal"
+        ]
+      ],
+      "narracion": "Cursor es un editor de código, parecido a un procesador de textos para programar. A la izquierda ves tus archivos, en el centro el código y a un lado un chat con un agente. Tiene plan gratuito con un uso limitado. Claude Code, de Anthropic, funciona en la terminal, esa ventana donde escribes órdenes. No tiene plan gratuito: necesitas un plan de pago de Claude o una clave de API, que se paga por uso. Las dos hacen lo mismo en el fondo. Elige la que te resulte más cómoda."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Prepara tu carpeta de trabajo",
+      "pasos": [
+        "Crea una carpeta proyectos en tu carpeta personal",
+        "Dentro, una carpeta por proyecto: peluqueria",
+        "Copia ahí el index.html de tu web",
+        "Sin espacios ni tildes en los nombres de carpeta",
+        "Guarda una versión con Git antes de empezar"
+      ],
+      "narracion": "Antes de abrir ninguna herramienta, ordena tu taller. Crea una carpeta llamada proyectos en tu carpeta personal. Dentro, una carpeta para cada proyecto. Aquí usamos la web de la peluquería. Copia en ella tu archivo index.html. Un consejo práctico: en los nombres de carpeta no uses espacios ni tildes, porque en la terminal dan guerra. Y lo más importante. Antes de dejar que un agente toque nada, guarda una versión con Git. Lo verás en la próxima clase."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Abrir la carpeta y ver la web",
+      "lineas": [
+        "$ cd ~/proyectos/peluqueria",
+        "$ ls",
+        "index.html",
+        "$ npx serve .",
+        " INFO  Accepting connections at http://0.0.0.0:3000"
+      ],
+      "narracion": "Así se ve una sesión real en la terminal. La orden cd significa cambiar de carpeta. Entras en la de la peluquería. La orden ls lista lo que hay dentro, y ves tu index.html. La tercera orden, npx serve, arranca un pequeño servidor en tu ordenador. Necesita tener instalado Node, que es gratuito. Te dice que la web está disponible en el puerto 3000. Escribe en tu navegador localhost, dos puntos, 3000, y la verás. Para pararlo, pulsa control y C."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La web, servida desde tu ordenador",
+      "fuente": "demo:peluqueria/v2",
+      "url": "localhost:3000",
+      "acciones": [
+        {
+          "eval": "document.getElementById('horario').scrollIntoView()"
+        }
+      ],
+      "narracion": "Este es el resultado: la web de la peluquería, servida desde tu propio ordenador. Es la misma que abrías con doble clic, pero ahora a través de un servidor, que es como funcionará en internet. Algunas cosas, como instalar la app en el móvil o ciertas funciones del navegador, solo funcionan así. Fíjate en el horario. Vamos a pedirle al agente que añada un aviso de vacaciones justo debajo."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Una petición a Claude Code",
+      "lineas": [
+        "$ claude",
+        "> Añade bajo el horario: cerrado del 10 al 24 de agosto",
+        "● Read(index.html)",
+        "● Update(index.html)",
+        "Do you want to make this edit to index.html?",
+        "❯ 1. Yes"
+      ],
+      "narracion": "Ahora abres Claude Code escribiendo claude dentro de la carpeta. Le pides el cambio con tus palabras, igual que en el chat. El agente lee el archivo, localiza el horario y prepara la edición. Pero no la guarda sin más. Te enseña el cambio y te pregunta si lo aceptas. Puedes decir que sí, o decir que no y explicarle qué quieres distinto. Los mensajes salen en inglés, pero tú puedes escribirle en castellano. En Cursor pasa lo mismo, con botones para aceptar o rechazar."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El trozo que el agente va a tocar",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<div class=\"tarjeta\">\n  <h3>Horario</h3>\n  <span class=\"estado\" id=\"estado\">Consulta el horario</span>\n  <table class=\"horario\">\n    <tr data-dias=\"1\"><td>Lunes</td><td>Cerrado</td></tr>\n    …\n    <tr data-dias=\"0\"><td>Domingo</td><td>Cerrado</td></tr>\n  </table>\n</div>",
+      "narracion": "Este es el trozo real del horario en el archivo de la peluquería. Hay una tarjeta con un título, una etiqueta que dice si está abierto y una tabla con los días. Los puntos suspensivos marcan filas que no caben en pantalla. El agente debería añadir una sola línea con el aviso, dentro de esta tarjeta y debajo de la tabla. Cuando te enseñe el cambio, verás las líneas nuevas marcadas en verde y las borradas en rojo. Si ves rojo donde no esperabas, por ejemplo en otra sección, di que no."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Revisar antes de aceptar",
+      "mal": "Aceptas todo a la primera porque confías. Una semana después algo falla y no sabes por qué.",
+      "bien": "Lees qué archivos cambia, pruebas en el navegador y solo entonces guardas la versión.",
+      "narracion": "Aquí está el hábito que separa a quien trabaja bien de quien se mete en líos. Es tentador aceptar todo sin mirar, sobre todo cuando el agente trabaja rápido. No lo hagas. Mira qué archivos ha tocado y si el número de cambios encaja con lo que pediste. Una petición pequeña no debería cambiar trescientas líneas. Después, recarga el navegador y prueba. Solo cuando funciona, guardas la versión. Recuerda la regla de oro: la IA escribe el código, tú decides y compruebas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Reglas para trabajar con un agente",
+      "puntos": [
+        "Una tarea pequeña cada vez",
+        "Lee las órdenes que quiere ejecutar antes de permitirlas",
+        "Nunca le des contraseñas ni claves en el chat",
+        "Pídele que explique qué ha cambiado y por qué",
+        "Si se lía, descarta y vuelve a la última versión"
+      ],
+      "narracion": "Cinco reglas para trabajar tranquilo. Primera, una tarea pequeña cada vez, como en el resto del curso. Segunda, un agente también puede pedirte permiso para ejecutar órdenes en la terminal. Léelas antes de permitirlas, y si no entiendes una, pregúntale qué hace. Tercera, nunca le pegues contraseñas ni claves. Cuarta, pídele que te explique en dos frases qué ha cambiado. Y quinta, si se lía, no insistas diez veces. Descarta los cambios y vuelve a tu última versión guardada."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Un agente trabaja dentro de tu carpeta, sin copiar y pegar",
+        "Cursor: editor con IA. Claude Code: agente en la terminal",
+        "npx serve te enseña la web en localhost",
+        "Revisa cada cambio y prueba antes de aceptar",
+        "Guarda una versión antes de dejarle trabajar"
+      ],
+      "narracion": "Repasamos. Un agente lee y cambia tus archivos directamente, así que te ahorra el copiar y pegar. Cursor es un editor con IA y plan gratuito limitado. Claude Code trabaja en la terminal y necesita plan de pago o clave de API. Con npx serve ves tu web desde tu ordenador. Y antes de aceptar, revisa y prueba. Tu tarea de hoy: crea tu carpeta proyectos, mete dentro tu web e instala Cursor para echarle un vistazo. En la próxima clase aprenderás a guardar versiones con Git."
+    }
+  ]
+}

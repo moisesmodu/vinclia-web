@@ -1,0 +1,120 @@
+{
+  "id": "c5-32",
+  "titulo": "Cobrar por lo que haces: enlaces de pago",
+  "descripcion": "Creas un producto y un enlace de pago en Stripe sin programar, lo pones en el botón de tu web con ayuda de la IA y conoces las obligaciones de facturación antes de vender.",
+  "vistaPrevia": false,
+  "recursos": ["demo:producto"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cobrar con enlaces de pago",
+      "subtitulo": "Sin programar el cobro",
+      "narracion": "Tu idea ha pasado la prueba. Hay gente apuntada y alguien pregunta cuándo sale. Ahora toca cobrar. En esta clase vas a poner un botón de pago en tu web sin programar ni una línea del cobro. Usaremos los enlaces de pago de Stripe. Y al final veremos lo que nadie cuenta en los vídeos de vender por internet: las obligaciones con Hacienda."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres formas de cobrar desde una web",
+      "puntos": [
+        "Enlace de pago: Stripe cobra, tu web solo enlaza",
+        "Bizum de particular: no sirve para cobrar en una web",
+        "Pagos dentro de la app: trabajo de un programador"
+      ],
+      "narracion": "Hay varias formas de cobrar, y no todas son para ti ahora mismo. La más sencilla es un enlace de pago. Tu web solo tiene un botón que lleva a una página de Stripe. Allí el cliente paga con tarjeta, y Stripe se encarga de la seguridad. El Bizum de particular no sirve para cobrar desde una web. Y los pagos dentro de una app, con cuentas de usuario y suscripciones, son trabajo de un programador. Lo veremos en la próxima clase."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Crear el producto y el enlace en Stripe",
+      "pasos": [
+        "Crea tu cuenta y completa los datos del negocio",
+        "Prueba primero en el modo de prueba",
+        "Crea un enlace de pago: nombre, precio e imagen",
+        "Elige qué ve el cliente después de pagar",
+        "Copia el enlace: empieza por buy.stripe.com"
+      ],
+      "narracion": "Así se hace, sin programar. Crea una cuenta en Stripe y completa los datos de tu negocio y tu cuenta bancaria. Stripe tiene un modo de prueba, con tarjetas de prueba: úsalo antes de cobrar de verdad. En el panel, busca la sección de enlaces de pago y crea uno nuevo. Pones el nombre del producto, el precio y una imagen. Después eliges qué ve el cliente al pagar: un mensaje de confirmación o una página de tu web. Al guardar, te da un enlace. Cópialo."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La página de venta de Hoja Clara",
+      "fuente": "demo:producto/v1",
+      "url": "hoja-clara.netlify.app",
+      "narracion": "Esta es la página de venta de nuestro ejemplo inventado, la plantilla de presupuestos. La ha hecho la IA a partir de la página de apúntate. Arriba, el resultado que consigue el cliente, presupuestos claros en 10 minutos. El precio, 19 euros, pago único y con el IVA incluido. Y un botón grande para comprar. A la derecha, una vista previa del producto. Fíjate en la franja amarilla: el botón apunta a un enlace falso, porque es un ejemplo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pedir a la IA que conecte el botón",
+      "usuario": "Te pego mi página de venta, index.html. Cambia los dos botones «Comprar la plantilla» para que lleven a este enlace de pago: [pega aquí tu enlace de Stripe]. Que se abra en una pestaña nueva. No cambies nada más.",
+      "ia": "Hecho. He cambiado el destino de los dos botones por tu enlace y he añadido que se abran en una pestaña nueva. El resto del archivo queda igual. Te recomiendo hacer una compra en el modo de prueba para comprobarlo.",
+      "narracion": "Para conectar el botón, pega tu página en el chat y pide el cambio. Fíjate en el límite final: no cambies nada más. Sin esa frase, a veces la IA aprovecha para retocar colores o textos. Un detalle importante. El enlace de pago es público, está hecho para compartirlo, así que puedes pegarlo sin miedo. Lo que nunca pegas en el chat es la clave secreta de Stripe. Esa clave solo la usa un programador, y nunca en el navegador."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El botón de pago es un simple enlace",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<!-- Botón de pago: pega aquí tu enlace de pago de Stripe -->\n<a class=\"comprar\" id=\"comprar\"\n   href=\"https://buy.stripe.com/ENLACE-DE-EJEMPLO-FALSO\"\n   target=\"_blank\" rel=\"noopener\">Comprar la plantilla</a>",
+      "narracion": "Así queda en el código. El botón no es más que un enlace con aspecto de botón. Lo que importa es la dirección, que empieza por buy punto stripe punto com. En tu web irá tu enlace real. La parte de abrir en pestaña nueva es la que pediste. No hay nada más: ni claves, ni datos de tarjetas, ni cálculos. Todo eso pasa en la página de Stripe. Por eso esta forma de cobrar es tan segura para quien no programa."
+    },
+    {
+      "tipo": "web",
+      "titulo": "En el móvil",
+      "nota": "El botón ocupa todo el ancho: fácil de pulsar con el pulgar.",
+      "fuente": "demo:producto/v1@movil",
+      "url": "hoja-clara.netlify.app",
+      "narracion": "Mucha gente comprará desde el móvil, así que míralo ahí. El precio y el botón se ven sin bajar, y el botón ocupa todo el ancho, fácil de pulsar con el pulgar. Antes de publicar, haz el recorrido completo como si fueras un cliente. Abre la página en el móvil, pulsa comprar, paga con una tarjeta del modo de prueba y comprueba qué ves después. Si algo te despista a ti, despistará a tus clientes."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Preguntas y páginas legales",
+      "fuente": "demo:producto/v1",
+      "url": "hoja-clara.netlify.app",
+      "acciones": [
+        { "click": "#preguntas details:nth-of-type(2) summary" },
+        { "eval": "document.getElementById('preguntas').scrollIntoView()" },
+        { "wait": 300 }
+      ],
+      "narracion": "Más abajo están las preguntas frecuentes. Hemos abierto una importante: la plantilla no sirve para hacer facturas, porque las facturas tienen que salir de un programa adaptado a la normativa. Y en el pie de la página verás tres enlaces: aviso legal, privacidad y condiciones de venta. Si vendes, esas páginas tienen que existir de verdad. La IA puede hacerte un borrador, pero revísalo con un profesional."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que cuesta cobrar",
+      "puntos": [
+        "Stripe: sin cuota mensual, comisión por cada venta",
+        "Mira la tarifa actual: cambia según tarjeta y país",
+        "Del precio, una parte es IVA y va a Hacienda",
+        "Lo que queda, menos la comisión, es tu ingreso"
+      ],
+      "narracion": "Hablemos de números sin adornos. Stripe no cobra cuota mensual. Se queda una pequeña comisión por cada venta. No te doy la cifra porque cambia según la tarjeta y el país: mira la tarifa actual en su web. Y recuerda que si el precio lleva el IVA incluido, una parte no es tuya. De 19 euros, unos 3 euros y 30 céntimos son IVA y van a Hacienda. Lo que queda, menos la comisión, es tu ingreso antes de impuestos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Antes de la primera venta",
+      "pasos": [
+        "Alta de autónomo o de empresa",
+        "Una factura por cada venta",
+        "Declarar el IVA cada trimestre",
+        "Verifactu desde 2027 en tu programa de facturas",
+        "Todo esto, consúltalo con tu gestoría"
+      ],
+      "narracion": "Y ahora lo que casi nadie cuenta. Si cobras de forma habitual, estás haciendo una actividad económica. Necesitas darte de alta como autónomo o tener una empresa. Cada venta lleva su factura y el IVA se declara cada trimestre. Desde 2027, los programas de facturación tienen que cumplir Verifactu, el sistema de la Agencia Tributaria. Si vendes a particulares de otros países, el IVA puede cambiar. Cada caso es distinto: consúltalo con tu gestoría antes de la primera venta."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo no y cómo sí",
+      "mal": "Pego mi clave secreta de Stripe en el chat para que la IA me programe el cobro en la web.",
+      "bien": "Creo un enlace de pago en Stripe. Mi web solo lleva un botón con ese enlace público.",
+      "narracion": "Para terminar, una comparación que resume la clase. A veces la IA te propone programar el cobro con la clave secreta de Stripe dentro de la web. No lo hagas. Una clave en el HTML la puede ver cualquiera, y con ella podrían operar en tu cuenta. Lo seguro para ti es el enlace de pago: Stripe cobra y tu web solo enlaza. Si un día necesitas más, eso ya es trabajo de un programador."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Enlace de pago de Stripe: sin programar el cobro",
+        "Tu web solo lleva un botón con el enlace público",
+        "Nunca la clave secreta en el chat ni en el HTML",
+        "Autónomo, facturas, IVA y Verifactu: tu gestoría"
+      ],
+      "narracion": "Repasamos. Para cobrar sin programar, crea un enlace de pago en Stripe y prueba antes en el modo de prueba. Tu web solo lleva un botón con ese enlace, que es público. Nunca pegues la clave secreta en el chat ni en el HTML. Y antes de vender, habla con tu gestoría sobre el alta, las facturas, el IVA y Verifactu. Tu tarea de hoy: crea un enlace de prueba y ponlo en el botón de tu página. En la próxima clase, cómo mantener viva tu app."
+    }
+  ]
+}

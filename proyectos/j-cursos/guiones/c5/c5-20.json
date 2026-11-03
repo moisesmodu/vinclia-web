@@ -1,0 +1,172 @@
+{
+  "id": "c5-20",
+  "titulo": "El plan: una calculadora de presupuestos",
+  "descripcion": "Planificas una herramienta propia para tu trabajo, una calculadora de presupuestos con IVA y PDF, y construyes con la IA la primera versión: líneas con concepto, cantidad y precio, y el total.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:ficha-herramienta-presupuestos",
+    "demo:presupuestos"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El plan: una calculadora de presupuestos",
+      "subtitulo": "Una herramienta hecha a tu medida, para tu trabajo",
+      "narracion": "Empieza el tercer proyecto. Ya tienes una web para un negocio y una app de hábitos para ti. Ahora vamos a algo muy útil si trabajas por tu cuenta: una herramienta para tu trabajo. En concreto, una calculadora de presupuestos con IVA que saca un PDF listo para enviar. La haremos para un negocio inventado, Reformas Jordi, en Zaragoza. Si tú no haces reformas, no pasa nada. El método sirve para cualquier oficio que presupueste por partidas."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Así acabará en la clase 22",
+      "fuente": "demo:presupuestos/v4",
+      "acciones": [
+        {
+          "fill": [
+            "#cli-nombre",
+            "Marta Lafuente"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-contacto",
+            "600 000 000"
+          ]
+        },
+        {
+          "fill": [
+            "#cli-dir",
+            "Calle Mayor 8, 2.º B, Zaragoza"
+          ]
+        }
+      ],
+      "url": "presupuestos/index.html",
+      "narracion": "Este es el resultado final de la sección. A la izquierda, Jordi escribe los datos del cliente y las partidas de la obra. A la derecha, el presupuesto se va montando solo, con el IVA, el total, el número y la fecha de validez. Un botón lo guarda en PDF y otro guarda una copia para reutilizarla. Todo en un solo archivo, que funciona sin internet. Lo vamos a construir en cuatro versiones, una por clase."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "El problema que resuelve",
+      "puntos": [
+        "Cada presupuesto se hace desde cero en un documento de texto",
+        "Las cuentas se hacen con la calculadora del móvil",
+        "Un error en el IVA o en una suma se ve delante del cliente",
+        "Los presupuestos no tienen el mismo aspecto"
+      ],
+      "narracion": "Piensa en cómo trabaja hoy Jordi, o muchos autónomos que conoces. Abre un documento de texto, copia el último presupuesto y cambia las líneas a mano. Las cuentas las hace con la calculadora del móvil. Si se equivoca en una suma o en el IVA, lo descubre el cliente, que es lo peor que puede pasar. Y cada presupuesto sale distinto. Una herramienta propia no tiene que ser perfecta. Le basta con ahorrar tiempo y evitar errores."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "¿Y por qué no una hoja de cálculo?",
+      "mal": "Hoja de cálculo: sirve, pero una fórmula borrada sin querer rompe el total y nadie avisa",
+      "bien": "Herramienta propia: solo los campos que usas, avisos si algo falla y el PDF siempre igual",
+      "narracion": "Es una pregunta justa. Una hoja de cálculo también sirve para presupuestos, y mucha gente la usa. Si ya te funciona, no la cambies por cambiar. Pero tiene un punto débil: basta con borrar una fórmula sin querer para que el total salga mal, y nadie te avisa. Una herramienta propia solo tiene los campos que usas, te avisa cuando un dato no tiene sentido y saca el presupuesto siempre con el mismo aspecto. Además, es un proyecto perfecto para aprender."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La ficha del proyecto",
+      "columnas": [
+        "Campo",
+        "Calculadora de Reformas Jordi"
+      ],
+      "filas": [
+        [
+          "Para quién",
+          "Solo Jordi, en su ordenador"
+        ],
+        [
+          "Objetivo",
+          "Un presupuesto claro en 10 minutos"
+        ],
+        [
+          "Contenido",
+          "Líneas, IVA, descuento, total y PDF"
+        ],
+        [
+          "Estilo",
+          "Sobrio, que parezca profesional"
+        ],
+        [
+          "Límites",
+          "Un archivo, sin internet ni servidor"
+        ]
+      ],
+      "narracion": "Como siempre, antes de pedir nada, la ficha del proyecto. Para quién: solo para Jordi, en su ordenador. Esto es importante y lo veremos en la última clase de la sección. No es una web para clientes, es una herramienta interna. Objetivo: un presupuesto claro en 10 minutos. Contenido: líneas, IVA, descuento, total y PDF. Estilo sobrio. Y límites: un solo archivo, sin internet y sin servidor. Tienes la ficha en blanco en los recursos de la clase."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El plan en cuatro versiones",
+      "pasos": [
+        "v1: líneas con concepto, cantidad y precio, y el total",
+        "v2: IVA, descuento, redondeo y avisos de errores",
+        "v3: el presupuesto imprimible y el botón de PDF",
+        "v4: guardar presupuestos y duplicarlos"
+      ],
+      "narracion": "Ahora partimos el proyecto en pasos pequeños, como aprendiste en la sección del método. Versión 1, hoy: una tabla de líneas con concepto, cantidad y precio, y el total. Versión 2, en la próxima clase: IVA, descuento, redondeo a céntimos y avisos cuando un dato está mal. Versión 3: la hoja del presupuesto, lista para imprimir o guardar en PDF. Y versión 4: guardar los presupuestos para duplicarlos. Cada versión funciona por sí sola. Si te quedas en la segunda, ya tienes algo útil."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La instrucción de la versión 1",
+      "usuario": "Quiero una calculadora de presupuestos para mi empresa de reformas, Reformas Jordi. Un solo archivo index.html con el CSS y el JavaScript dentro, sin librerías ni internet. Paso 1, solo esto: una tabla de líneas con concepto, cantidad y precio, el importe de cada línea, un botón para añadir líneas, una x para quitarlas y el total. Que acepte la coma decimal. Euros en formato español. Diseño sobrio. No añadas nada más.",
+      "ia": "Te dejo el archivo completo. Cada fila tiene concepto, cantidad y precio, y el importe se calcula al escribir. «+ Añadir línea» crea una fila y la x la quita. Los euros se muestran con Intl.NumberFormat en es-ES. He puesto tres líneas de ejemplo para que veas cómo queda.",
+      "narracion": "Esta es la instrucción. Fíjate en tres cosas. Primero, el contexto: qué es y para quién. Segundo, la tarea con límites claros: solo líneas y total, y no añadas nada más. Si no lo dices, la IA te meterá IVA, logotipo y un botón de PDF que aún no has pedido, y será más difícil revisar. Tercero, dos detalles muy españoles: la coma decimal y los euros en nuestro formato. La IA contesta con el archivo completo y un resumen de lo que ha hecho."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 1, funcionando",
+      "fuente": "demo:presupuestos/v1",
+      "acciones": [
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            ".linea:nth-child(4) .concepto",
+            "Pintura de salón (m²)"
+          ]
+        },
+        {
+          "fill": [
+            ".linea:nth-child(4) .cantidad",
+            "35"
+          ]
+        },
+        {
+          "fill": [
+            ".linea:nth-child(4) .precio",
+            "8,50"
+          ]
+        }
+      ],
+      "url": "presupuestos/index.html",
+      "narracion": "Guardas el archivo como index.html, en una carpeta nueva, y lo abres con doble clic. Ahí está. Tres líneas de ejemplo. Pulsamos añadir línea y escribimos pintura de salón, 35 metros cuadrados a 8 euros con 50. El importe aparece al momento, 297 euros con 50, y el total se actualiza. Compruébalo tú con la calculadora: 35 por 8 con 50. Esta costumbre de comprobar a mano la vamos a convertir en método en la próxima clase."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El cálculo de la versión 1",
+      "archivo": "presupuestos/v1/index.html",
+      "lenguaje": "js",
+      "codigo": "function calcularTotal() {\n  let total = 0;\n  for (const fila of document.querySelectorAll('.linea')) {\n    const campo = c => fila.querySelector(c);\n    const cantidad = numero(campo('.cantidad').value);\n    const precio = numero(campo('.precio').value);\n    const importe = cantidad * precio;\n    campo('.importe').textContent = euros.format(importe);\n    total += importe;\n  }\n  $('#t-total').textContent = euros.format(total);\n}",
+      "narracion": "Vamos a leer el código sin miedo, como en la sección dos. Esta función recorre cada línea de la tabla. Lee la cantidad y el precio, los multiplica y escribe el importe en su sitio. Luego lo suma al total. Al final, escribe el total abajo. Se entiende, ¿verdad? Fíjate en la palabra euros punto format. Es lo que pone los números con coma decimal y el símbolo del euro al final, como se escribe en España. Guarda esta función en la cabeza: en la próxima clase la vamos a cambiar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Prueba la versión 1 antes de seguir",
+      "puntos": [
+        "Añade y quita líneas: ¿el total cambia bien?",
+        "Escribe un precio con coma: 289,90",
+        "Escribe letras en la cantidad: ¿qué hace?",
+        "Haz una línea a mano y compara el importe"
+      ],
+      "narracion": "Antes de pasar a la versión 2, prueba esta a conciencia. Añade y quita líneas y mira si el total cambia como esperas. Escribe un precio con coma, por ejemplo 289 con 90. Escribe letras en la cantidad, a ver qué pasa: verás que cuenta como cero, sin avisar. Eso lo arreglaremos. Y haz al menos una línea con la calculadora para comparar. Cuando todo cuadre, guarda una copia de la carpeta con el nombre v1. Así, si la siguiente versión se tuerce, puedes volver."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Herramienta interna: solo para ti, en tu ordenador",
+        "Ficha del proyecto con límites claros",
+        "Cuatro versiones, una por clase",
+        "Tarea: haz tu versión 1 con tus propias partidas"
+      ],
+      "narracion": "Repasamos. Esta vez construimos una herramienta interna, solo para ti y en tu ordenador. Empezamos por la ficha, con límites claros. Dividimos el trabajo en cuatro versiones, y hoy has hecho la primera: líneas, importes y total. Tu tarea de hoy: rellena la ficha de los recursos con tu oficio y pide tu versión 1, con tus partidas reales. Si no haces reformas, cambia los conceptos por los tuyos. En la próxima clase llegan el IVA, los redondeos y los casos raros."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "c5-10",
+  "titulo": "Avanzar en pasos pequeños y guardar versiones",
+  "descripcion": "Aprendes a avanzar con un cambio cada vez y a guardar cada versión de tu app en su propia carpeta, sin instalar nada, para poder volver atrás cuando algo se estropea. También sabrás cuándo empezar una conversación nueva con la IA.",
+  "vistaPrevia": false,
+  "recursos": ["demo:metodo", "plantilla:instrucciones-vibe-coding"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Pasos pequeños y versiones",
+      "subtitulo": "Avanzar sin miedo a romper nada",
+      "narracion": "En la clase anterior pediste la primera versión de tu app. Ahora viene lo difícil: seguir mejorándola sin estropear lo que ya funciona. Es el momento en que mucha gente se pierde. Pide cinco cambios a la vez, algo se rompe y ya no sabe qué fue ni cómo volver. En esta clase aprenderás dos hábitos que lo evitan. Avanzar en pasos pequeños y guardar cada versión en su propia carpeta. No hace falta instalar nada."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Todo de golpe frente a paso a paso",
+      "mal": "Añade categorías, precios, modo oscuro, compartir por WhatsApp y que se pueda tachar.",
+      "bien": "Solo un cambio: al tocar un producto, que se tache. No toques nada más.",
+      "narracion": "Mira la primera instrucción. Pide cinco cosas a la vez. La IA las hará, y reescribirá medio archivo para conseguirlo. Si después algo falla, ¿cuál de los cinco cambios fue? No lo sabrás. Y la IA tampoco. La segunda pide una sola cosa y deja claro que no toque nada más. Si falla, sabes exactamente dónde mirar. Parece más lento, pero es mucho más rápido. Cada paso pequeño se prueba en cinco minutos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El ciclo de cada cambio",
+      "pasos": [
+        "Copia la carpeta de la versión que funciona",
+        "Pide un solo cambio a la IA",
+        "Guarda el archivo nuevo en la copia",
+        "Abre y repite las pruebas de tu ficha",
+        "Apunta en tus notas qué cambió"
+      ],
+      "narracion": "Este es el ciclo que vas a repetir en todos los proyectos del curso. Primero, copia la carpeta de la versión que funciona. Segundo, pide un solo cambio a la IA. Tercero, guarda el archivo nuevo dentro de la copia, nunca encima del bueno. Cuarto, abre la app y repite las pruebas de tu ficha, no solo la del cambio nuevo. Y quinto, apunta en tus notas qué ha cambiado. Cinco pasos que se hacen en pocos minutos."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Guardar versiones sin Git",
+      "pasos": [
+        "Una carpeta por proyecto: lista-compra",
+        "Dentro, una carpeta por versión: v1, v2, v3",
+        "Antes de cada cambio: copiar y pegar la última",
+        "Renombra la copia con el número siguiente",
+        "La versión buena no se toca nunca más"
+      ],
+      "narracion": "Guardar versiones es tan sencillo como copiar una carpeta. Crea una carpeta para el proyecto, por ejemplo lista guion compra. Dentro, una carpeta para cada versión: v1, v2, v3. Antes de pedir un cambio, copia la carpeta de la última versión y pega la copia al lado. Cámbiale el nombre por el número siguiente. El archivo nuevo que te dé la IA va en esa carpeta. La versión anterior se queda como estaba, y no la vuelves a tocar."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Así queda la carpeta del proyecto",
+      "archivo": "lista-compra",
+      "lenguaje": "term",
+      "codigo": "lista-compra/\n  v1/\n    index.html\n  v2/\n    index.html\n  notas.txt",
+      "narracion": "Así queda la carpeta de nuestra lista de la compra. Dentro hay dos carpetas, v1 y v2, cada una con su archivo index punto html. Y al lado, un archivo de notas. Es exactamente lo que tienes en los recursos de esta clase, para que lo abras y lo compares. Si la versión dos se estropea, la uno sigue intacta. Volver atrás es tan fácil como abrir la carpeta anterior. Ninguna instrucción de la IA puede deshacer eso."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Mira siempre qué versión tienes abierta",
+      "fuente": "demo:metodo/v2",
+      "url": "lista-compra/v2/index.html",
+      "narracion": "Un error muy común cuando tienes varias versiones: cambias una y abres otra. Pides un arreglo, lo guardas en la carpeta v2, pero sigues mirando la pestaña de la v1. Y piensas que el arreglo no ha funcionado. Antes de probar nada, mira la barra de direcciones del navegador. Ahí pone la carpeta y el archivo que tienes abiertos. Aquí pone v2. Y después de guardar un archivo nuevo, recarga siempre la página. Con la tecla F5 basta."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Tu cuaderno de versiones",
+      "archivo": "lista-compra/notas.txt",
+      "lenguaje": "term",
+      "codigo": "LISTA DE LA COMPRA · cuaderno de versiones\n\nv1 · Primera versión desde la ficha.\n     Prueba: Borrar quita otro producto. Vaciar no hace nada.\nv2 · Arreglado Borrar y Vaciar. Pasa todas las pruebas.",
+      "narracion": "El último paso del ciclo es apuntar. Basta un archivo de texto en la carpeta del proyecto. Una línea por versión: qué cambió y cómo salieron las pruebas. Mira nuestras notas. En la v1, la prueba de borrar falló y vaciar no hacía nada. En la v2 está arreglado. Dentro de un mes no recordarás nada de esto. Con el cuaderno, en diez segundos sabes qué versión es la buena y qué pasó en cada una."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cuándo empezar una conversación nueva",
+      "puntos": [
+        "El chat es muy largo y la IA olvida decisiones",
+        "Mezcla versiones antiguas con la actual",
+        "Lleva dos o tres intentos sin arreglar algo",
+        "Empiezas una parte nueva del proyecto"
+      ],
+      "narracion": "Los pasos pequeños también tienen que ver con la conversación. Un chat muy largo acaba dando problemas. La IA empieza a olvidar decisiones del principio o a mezclar trozos de versiones antiguas con la actual. Empieza una conversación nueva cuando notes eso, cuando lleve dos o tres intentos sin arreglar algo o cuando vayas a empezar una parte nueva del proyecto. No pierdes nada: tienes la ficha, la última versión buena y tus notas."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Cómo empezar la conversación nueva",
+      "usuario": "Te paso la ficha y la versión 2 de mi app, que funciona y pasa todas las pruebas. [Ficha] [Archivo completo]. Siguiente paso, solo este: al tocar el nombre de un producto, que se tache para marcarlo como comprado. No toques nada más. Dame el archivo completo.",
+      "ia": "Perfecto, he leído la ficha y el archivo. Añado el tachado al tocar el nombre y guardo ese estado junto a cada producto, para que no se pierda al recargar. El resto queda igual. Aquí tienes el archivo completo.",
+      "narracion": "Así empiezas una conversación nueva sin perder el hilo. Pegas la ficha y el archivo completo de la última versión buena. Dices que funciona, para que la IA no se ponga a cambiar cosas que no tocan. Y pides el siguiente paso, solo uno, con sus límites. Esta instrucción es la número dieciséis de la plantilla. El archivo que te dé la IA lo guardas en una carpeta nueva, la v3. Y vuelta a empezar el ciclo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Más adelante: Git, en la sección 8",
+      "puntos": [
+        "Guarda cada versión con una frase que la explica",
+        "Muestra exactamente qué líneas cambiaron",
+        "Vuelve atrás con una orden",
+        "Con GitHub, una copia segura en internet"
+      ],
+      "narracion": "Copiar carpetas funciona muy bien para proyectos de un solo archivo como los de este curso. Cuando tus proyectos crezcan, querrás algo más cómodo. Se llama Git, y es la herramienta que usan todos los programadores para guardar versiones. Guarda cada versión con una frase que la explica, te enseña qué líneas cambiaron y te deja volver atrás. Con GitHub, además, tienes una copia en internet. Lo verás en la sección 8, sin miedo. La idea es la misma."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Un cambio por instrucción, y pruébalo",
+        "Una carpeta por versión: v1, v2, v3",
+        "Apunta cada versión en notas.txt",
+        "Tarea: crea la v2 de tu app con un solo cambio"
+      ],
+      "narracion": "Repasamos. Pide un solo cambio cada vez y pruébalo con las pruebas de tu ficha. Antes de cada cambio, copia la carpeta de la versión buena y trabaja en la copia. Apunta en un archivo de notas qué cambió. Y cuando el chat se alargue, empieza otro con la ficha y la última versión. Tu tarea de hoy. Copia tu carpeta v1, renómbrala v2 y pide un único cambio. En la próxima clase: qué hacer cuando algo falla."
+    }
+  ]
+}

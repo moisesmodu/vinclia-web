@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Lo que ve Google -->
+<title>Peluquería Nuria · Corte y color en Lleida</title>
+<meta name="description" content="Peluquería de barrio en Lleida. Corte de mujer, hombre e infantil, tinte y mechas. Abierto de martes a sábado. Pide cita por WhatsApp.">
+<link rel="canonical" href="https://peluqueria-nuria.netlify.app/">
+
+<!-- Icono de la pestaña -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#7B3F61">
+
+<!-- Lo que se ve al compartir el enlace (Open Graph) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Peluquería Nuria · Lleida">
+<meta property="og:description"
+  content="Corte, color y peinados. Pide cita por WhatsApp.">
+<meta property="og:url"
+  content="https://peluqueria-nuria.netlify.app/">
+<meta property="og:image"
+  content="https://peluqueria-nuria.netlify.app/compartir.png">
+<style>
+  :root {
+    --crema: #FBF5EE;
+    --arena: #F1E4D6;
+    --tinta: #2A2230;
+    --suave: #6B6070;
+    --ciruela: #7B3F61;
+    --coral: #E07A5F;
+    --salvia: #9DB5A0;
+    --titulos: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--tinta);
+    background: var(--crema);
+    line-height: 1.6;
+  }
+  h1, h2, h3 { font-family: var(--titulos); font-weight: 700; line-height: 1.15; }
+  a { color: inherit; }
+  .contenedor { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+  /* Cabecera */
+  .barra { display: flex; align-items: center; justify-content: space-between; padding: 22px 32px; max-width: 1120px; margin: 0 auto; }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: var(--titulos); font-size: 24px; font-weight: 700; text-decoration: none; color: var(--ciruela); }
+  .menu { display: flex; gap: 28px; }
+  .menu a { text-decoration: none; font-weight: 500; color: var(--suave); }
+  .menu a:hover { color: var(--ciruela); }
+
+  /* Portada */
+  .portada { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; padding: 40px 0 72px; }
+  .etiqueta { display: inline-block; background: var(--arena); color: var(--ciruela); font-weight: 600; font-size: 14px; padding: 6px 14px; border-radius: 999px; }
+  .portada h1 { font-size: 58px; margin: 18px 0 16px; }
+  .portada h1 em { color: var(--coral); font-style: italic; }
+  .portada p { font-size: 19px; color: var(--suave); max-width: 520px; margin: 0 0 28px; }
+  .botones { display: flex; gap: 14px; flex-wrap: wrap; }
+  .boton { display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 17px; }
+  .boton.principal { background: var(--ciruela); color: #fff; }
+  .boton.principal:hover { background: #63304E; }
+  .boton.secundario { border: 2px solid var(--ciruela); color: var(--ciruela); }
+  .ilustracion svg { width: 100%; height: auto; display: block; }
+
+  /* Secciones */
+  section { padding: 72px 0; }
+  .titulo-seccion { text-align: center; margin-bottom: 40px; }
+  .titulo-seccion h2 { font-size: 40px; margin: 0 0 8px; }
+  .titulo-seccion p { color: var(--suave); margin: 0; }
+  .fondo-arena { background: var(--arena); }
+
+  /* Servicios */
+  .servicios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .servicio { background: #fff; border-radius: 20px; padding: 26px; box-shadow: 0 2px 0 rgba(42,34,48,.06); }
+  .servicio h3 { margin: 0 0 6px; font-size: 22px; }
+  .servicio p { margin: 0 0 16px; color: var(--suave); font-size: 15px; }
+  .precio { font-size: 24px; font-weight: 700; color: var(--coral); }
+
+  /* El salón (bloques de color en lugar de fotos) */
+  .salon { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; }
+  .bloque { border-radius: 20px; min-height: 220px; display: flex; align-items: flex-end; padding: 20px; color: #fff; font-weight: 600; position: relative; overflow: hidden; }
+  .bloque svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .bloque span { position: relative; background: rgba(42,34,48,.35); padding: 4px 12px; border-radius: 999px; }
+
+  /* Horario y cómo llegar */
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .tarjeta { background: #fff; border-radius: 20px; padding: 30px; }
+  .tarjeta h3 { margin: 0 0 16px; font-size: 26px; }
+  .horario { width: 100%; border-collapse: collapse; }
+  .horario td { padding: 12px 10px; border-bottom: 1px solid var(--arena); }
+  .horario td:last-child { text-align: right; }
+  .horario tr.hoy td { background: var(--crema); font-weight: 700; color: var(--ciruela); }
+  .estado { display: inline-block; margin-bottom: 14px; font-weight: 600; font-size: 14px; padding: 4px 12px; border-radius: 999px; background: var(--arena); }
+  .estado.abierto { background: #E3EEE5; color: #2F6B3B; }
+  .mapa { border-radius: 14px; overflow: hidden; margin-bottom: 16px; }
+  .mapa svg { display: block; width: 100%; height: auto; }
+  .datos p { margin: 4px 0; }
+
+  /* Llamada final */
+  .cita { background: var(--ciruela); color: #fff; border-radius: 28px; padding: 56px; text-align: center; }
+  .cita h2 { font-size: 40px; margin: 0 0 10px; }
+  .cita p { margin: 0 0 26px; opacity: .9; font-size: 18px; }
+  .boton.whatsapp { background: #25D366; color: #0B3B1E; }
+
+  /* Opiniones */
+  .opiniones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .opinion { background: #fff; border-radius: 20px; padding: 26px; margin: 0; }
+  .opinion .estrellas { color: var(--coral); letter-spacing: 2px; font-size: 18px; }
+  .opinion p { margin: 10px 0 14px; }
+  .opinion footer { padding: 0; text-align: left; font-size: 14px; font-weight: 600; color: var(--suave); }
+  .aviso-ejemplo { text-align: center; margin: 24px auto 0; max-width: 620px; font-size: 14px; color: var(--suave); background: var(--arena); border-radius: 12px; padding: 10px 16px; }
+
+  /* Pie */
+  .pie { padding: 40px 0; text-align: center; color: var(--suave); font-size: 14px; }
+  .pie nav { display: flex; justify-content: center; gap: 22px; margin-bottom: 10px; }
+  .pie button { background: none; border: 0; padding: 0; font: inherit; color: var(--ciruela); text-decoration: underline; cursor: pointer; }
+  dialog { border: 0; border-radius: 20px; padding: 32px; max-width: 560px; width: calc(100% - 32px); color: var(--tinta); }
+  dialog::backdrop { background: rgba(42,34,48,.5); }
+  dialog h2 { margin-top: 0; }
+  dialog .relleno { background: #FFF1C9; padding: 0 4px; border-radius: 4px; }
+  dialog .cerrar { margin-top: 12px; border: 0; cursor: pointer; }
+
+  /* Botón de menú y barra fija: solo en el móvil */
+  .abrir-menu { display: none; }
+  .barra-movil { display: none; }
+
+  @media (max-width: 760px) {
+    .contenedor { padding: 0 20px; }
+    .barra { padding: 16px 20px; position: relative; }
+    .logo { font-size: 21px; }
+    .abrir-menu { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 12px; border: 0; background: var(--arena); color: var(--ciruela); cursor: pointer; }
+    .menu { display: none; position: absolute; top: 72px; left: 16px; right: 16px; z-index: 10; flex-direction: column; gap: 0; background: #fff; border-radius: 16px; padding: 8px; box-shadow: 0 12px 30px rgba(42,34,48,.18); }
+    .menu.abierto { display: flex; }
+    .menu a { padding: 14px 16px; font-size: 18px; border-radius: 10px; color: var(--tinta); }
+    .menu a:active { background: var(--crema); }
+    .portada { grid-template-columns: 1fr; gap: 8px; padding: 8px 20px 48px; }
+    .ilustracion { order: -1; max-width: 240px; margin: 0 auto; }
+    .portada h1 { font-size: 40px; margin: 14px 0 12px; }
+    .portada p { font-size: 17px; }
+    .botones .boton { flex: 1 1 100%; justify-content: center; }
+    section { padding: 48px 0; }
+    .titulo-seccion h2 { font-size: 32px; }
+    .servicios { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .servicio { padding: 18px; }
+    .servicio h3 { font-size: 18px; }
+    .servicio p { display: none; }
+    .precio { font-size: 20px; }
+    .salon { grid-template-columns: 1fr 1fr; }
+    .salon .bloque:first-child { grid-column: 1 / -1; }
+    .bloque { min-height: 150px; font-size: 14px; }
+    .dos, .opiniones { grid-template-columns: 1fr; }
+    .tarjeta { padding: 22px; }
+    .cita { padding: 36px 22px; }
+    .cita h2 { font-size: 30px; }
+    body { padding-bottom: 84px; }
+    .barra-movil { display: flex; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(251,245,238,.96); box-shadow: 0 -4px 20px rgba(42,34,48,.12); }
+    .barra-movil a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px; border-radius: 14px; font-weight: 700; text-decoration: none; font-size: 17px; }
+    .barra-movil .llamar { background: var(--ciruela); color: #fff; }
+    .barra-movil .wa { background: #25D366; color: #0B3B1E; }
+  }
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <a class="logo" href="#">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#7B3F61"/><path d="M10 24c4-2 6-7 7-14 1 7 3 12 7 14" stroke="#FBF5EE" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+    Peluquería Nuria
+  </a>
+  <button class="abrir-menu" id="abrir-menu" aria-label="Abrir el menú" aria-expanded="false" aria-controls="menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <nav class="menu" id="menu">
+    <a href="#servicios">Servicios</a>
+    <a href="#salon">El salón</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#horario">Horario</a>
+    <a href="#como-llegar">Cómo llegar</a>
+  </nav>
+</header>
+
+<main>
+  <div class="contenedor portada">
+    <div>
+      <span class="etiqueta">Peluquería de barrio en Lleida</span>
+      <h1>Sal con el pelo <em>como te gusta</em></h1>
+      <p>Cortes, color y peinados con calma y sin prisas. Pide tu cita por WhatsApp y te contestamos enseguida.</p>
+      <div class="botones">
+        <a class="boton principal" href="https://wa.me/34600000000?text=Quiero%20pedir%20cita">Pedir cita por WhatsApp</a>
+        <a class="boton secundario" href="#servicios">Ver precios</a>
+      </div>
+    </div>
+    <div class="ilustracion" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <circle cx="210" cy="200" r="180" fill="#F1E4D6"/>
+        <path d="M90 360V190a120 120 0 0 1 240 0v170z" fill="#fff" stroke="#7B3F61" stroke-width="10"/>
+        <circle cx="210" cy="215" r="52" fill="#F2C6A6"/>
+        <path d="M150 230c-14-70 30-118 80-110 50 8 70 60 52 120 18 30 8 70-14 92-6-40-18-60-30-70 10-30 6-60-12-74-22 18-50 26-70 26-6 10-6 20-6 16z" fill="#7B3F61"/>
+        <path d="M160 330c10-30 30-44 50-44s40 14 50 44z" fill="#9DB5A0"/>
+        <g transform="translate(40 300) rotate(-30)" fill="none" stroke="#E07A5F" stroke-width="8" stroke-linecap="round">
+          <circle cx="0" cy="0" r="14"/><circle cx="0" cy="44" r="14"/>
+          <path d="M12 8l70 34M12 36l70-34"/>
+        </g>
+        <g fill="#9DB5A0"><ellipse cx="350" cy="120" rx="14" ry="30" transform="rotate(30 350 120)"/><ellipse cx="368" cy="160" rx="12" ry="26" transform="rotate(70 368 160)"/></g>
+      </svg>
+    </div>
+  </div>
+
+  <section id="servicios" class="fondo-arena">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Servicios y precios</h2>
+        <p>Precios con IVA incluido. Si tienes dudas, pregúntanos.</p>
+      </div>
+      <div class="servicios">
+        <div class="servicio"><h3>Corte de mujer</h3><p>Lavado, corte y secado.</p><span class="precio">22 €</span></div>
+        <div class="servicio"><h3>Corte de hombre</h3><p>Corte con tijera o máquina.</p><span class="precio">14 €</span></div>
+        <div class="servicio"><h3>Corte infantil</h3><p>Hasta 12 años, con paciencia.</p><span class="precio">10 €</span></div>
+        <div class="servicio"><h3>Lavar y peinar</h3><p>Para un día especial o cualquier día.</p><span class="precio">18 €</span></div>
+        <div class="servicio"><h3>Tinte de raíz</h3><p>Color sin amoniaco si lo prefieres.</p><span class="precio">30 €</span></div>
+        <div class="servicio"><h3>Mechas</h3><p>Según largo y técnica.</p><span class="precio">desde 45 €</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="salon">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>El salón</h2>
+        <p>Un sitio tranquilo, con luz natural y café mientras esperas.</p>
+      </div>
+      <div class="salon">
+        <div class="bloque" style="background:#7B3F61">
+          <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="300" cy="80" r="120" fill="#8E5274"/><rect x="60" y="40" width="120" height="150" rx="60" fill="#FBF5EE" opacity=".9"/><rect x="200" y="120" width="140" height="70" rx="20" fill="#E07A5F"/><rect x="215" y="80" width="110" height="50" rx="20" fill="#E07A5F" opacity=".8"/></svg>
+          <span>Tocadores con espejo</span>
+        </div>
+        <div class="bloque" style="background:#9DB5A0">
+          <svg viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="70" y="130" width="60" height="70" rx="8" fill="#FBF5EE"/><ellipse cx="80" cy="100" rx="18" ry="44" fill="#6F8C74" transform="rotate(-20 80 100)"/><ellipse cx="120" cy="96" rx="18" ry="46" fill="#7FA085" transform="rotate(18 120 96)"/><ellipse cx="100" cy="80" rx="16" ry="50" fill="#5E7D63"/></svg>
+          <span>Mucha luz</span>
+        </div>
+        <div class="bloque" style="background:#E07A5F">
+          <svg viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="50" y="110" width="80" height="70" rx="14" fill="#FBF5EE"/><path d="M130 125h14a16 16 0 0 1 0 32h-14" stroke="#FBF5EE" stroke-width="10" fill="none"/><path d="M75 95c-8-14 8-20 0-36M100 95c-8-14 8-20 0-36" stroke="#FBF5EE" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+          <span>Café de cortesía</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones" class="fondo-arena">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <h2>Lo que dicen las clientas</h2>
+        <p>Así quedaría esta sección con opiniones reales.</p>
+      </div>
+      <div class="opiniones">
+        <blockquote class="opinion"><div class="estrellas" aria-label="5 de 5">★★★★★</div><p>«Me explicó qué corte me favorecía y acertó de lleno. Volveré seguro.»</p><footer>Opinión de ejemplo</footer></blockquote>
+        <blockquote class="opinion"><div class="estrellas" aria-label="5 de 5">★★★★★</div><p>«Muy puntuales y con mucho cariño con los niños.»</p><footer>Opinión de ejemplo</footer></blockquote>
+        <blockquote class="opinion"><div class="estrellas" aria-label="4 de 5">★★★★☆</div><p>«Buen precio y un café riquísimo mientras esperas.»</p><footer>Opinión de ejemplo</footer></blockquote>
+      </div>
+      <p class="aviso-ejemplo"><strong>Opiniones inventadas para esta demo.</strong> En tu web pon solo opiniones reales, con permiso de quien las escribió.</p>
+    </div>
+  </section>
+
+  <section id="horario">
+    <div class="contenedor dos">
+      <div class="tarjeta">
+        <h3>Horario</h3>
+        <span class="estado" id="estado">Consulta el horario</span>
+        <table class="horario">
+          <tr data-dias="1"><td>Lunes</td><td>Cerrado</td></tr>
+          <tr data-dias="2 3 4 5"><td>Martes a viernes</td><td>9:30 a 13:30 · 16:00 a 20:00</td></tr>
+          <tr data-dias="6"><td>Sábado</td><td>9:00 a 14:00</td></tr>
+          <tr data-dias="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div>
+      <div class="tarjeta" id="como-llegar">
+        <h3>Cómo llegar</h3>
+        <div class="mapa" aria-hidden="true">
+          <svg viewBox="0 0 400 170">
+            <rect width="400" height="170" fill="#E9F0EA"/>
+            <path d="M0 110h400M150 0v170M300 0v170" stroke="#fff" stroke-width="18"/>
+            <path d="M0 40h400" stroke="#fff" stroke-width="10"/>
+            <rect x="170" y="60" width="110" height="34" rx="6" fill="#D7E3D9"/>
+            <circle cx="60" cy="150" r="10" fill="#9DB5A0"/><text x="78" y="155" font-size="13" fill="#5E7D63" font-family="system-ui">Bus</text>
+            <path d="M225 90c0-18-26-18-26 0 0 14 13 26 13 26s13-12 13-26z" fill="#7B3F61"/><circle cx="212" cy="88" r="5" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="datos">
+          <p><strong>Calle Inventada, 0 · 25000 Lleida</strong></p>
+          <p>A dos minutos de la parada de autobús. Aparcamiento en la calle de al lado.</p>
+          <p>Teléfono: <a href="tel:+34600000000">600 000 000</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contenedor">
+      <div class="cita">
+        <h2>¿Te guardamos un hueco?</h2>
+        <p>Escríbenos por WhatsApp con el servicio y el día que te va bien.</p>
+        <a class="boton whatsapp" href="https://wa.me/34600000000?text=Quiero%20pedir%20cita">Pedir cita por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <nav>
+    <button type="button" data-abre="aviso-legal">Aviso legal</button>
+    <button type="button" data-abre="privacidad">Privacidad y cookies</button>
+  </nav>
+  © 2026 Peluquería Nuria · Web de ejemplo del curso: negocio, dirección y teléfono inventados
+</footer>
+
+<dialog id="aviso-legal">
+  <h2>Aviso legal</h2>
+  <p>Titular de esta web: <span class="relleno">[nombre y apellidos o empresa]</span>, con NIF <span class="relleno">[NIF]</span> y domicilio en Calle Inventada, 0 · 25000 Lleida.</p>
+  <p>Contacto: 600 000 000 · <span class="relleno">[correo electrónico]</span>.</p>
+  <p>Los precios son orientativos e incluyen IVA. Texto de ejemplo: revísalo con tu gestoría antes de publicar.</p>
+  <form method="dialog"><button class="boton principal cerrar">Cerrar</button></form>
+</dialog>
+
+<dialog id="privacidad">
+  <h2>Privacidad y cookies</h2>
+  <p>Esta web no tiene formularios ni guarda datos personales. Tampoco usa cookies ni herramientas de estadísticas.</p>
+  <p>Si nos escribes por WhatsApp o nos llamas, usaremos tu nombre y tu teléfono solo para darte cita. Responsable: <span class="relleno">[titular]</span>. Puedes pedir que borremos tus datos en el 600 000 000.</p>
+  <p>Texto de ejemplo: revísalo con tu gestoría antes de publicar.</p>
+  <form method="dialog"><button class="boton principal cerrar">Cerrar</button></form>
+</dialog>
+
+<div class="barra-movil">
+  <a class="llamar" href="tel:+34600000000">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+    Llamar
+  </a>
+  <a class="wa" href="https://wa.me/34600000000?text=Quiero%20pedir%20cita">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3.2 4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.3 2.4.9 2.9.8 3.4.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.9-.9c-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5z" fill="currentColor"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+  // Menú del móvil: se abre y se cierra con el botón
+  const boton = document.getElementById('abrir-menu');
+  const menu = document.getElementById('menu');
+  boton.addEventListener('click', () => {
+    const abierto = menu.classList.toggle('abierto');
+    boton.setAttribute('aria-expanded', abierto);
+  });
+  // Al tocar un enlace del menú, se cierra
+  menu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => {
+      menu.classList.remove('abierto');
+    }));
+
+  // Aviso legal y privacidad en ventanas
+  document.querySelectorAll('[data-abre]').forEach(b =>
+    b.addEventListener('click', () => document.getElementById(b.dataset.abre).showModal()));
+
+  // Marca el día de hoy en el horario y dice si está abierto ahora
+  const ahora = new Date();
+  const dia = ahora.getDay();
+  const minutos = ahora.getHours() * 60 + ahora.getMinutes();
+  const fila = [...document.querySelectorAll('.horario tr')]
+    .find(tr => tr.dataset.dias.split(' ').includes(String(dia)));
+  if (fila) fila.classList.add('hoy');
+  const tramos = {
+    2: [[570, 810], [960, 1200]], 3: [[570, 810], [960, 1200]],
+    4: [[570, 810], [960, 1200]], 5: [[570, 810], [960, 1200]],
+    6: [[540, 840]]
+  };
+  const abierto = (tramos[dia] || []).some(([a, b]) => minutos >= a && minutos < b);
+  const estado = document.getElementById('estado');
+  estado.textContent = abierto ? 'Abierto ahora' : 'Cerrado ahora';
+  if (abierto) estado.classList.add('abierto');
+</script>
+</body>
+</html>

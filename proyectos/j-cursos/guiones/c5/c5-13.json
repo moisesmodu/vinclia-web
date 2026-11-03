@@ -1,0 +1,104 @@
+{
+  "id": "c5-13",
+  "titulo": "Primera versión en un solo archivo",
+  "descripcion": "Con una sola instrucción, la IA te escribe la primera versión de la web del negocio en un único archivo: la guardas, la abres en el navegador, compruebas cada dato y el botón de WhatsApp, y corriges lo que falle.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:web-negocio-ficha", "demo:peluqueria"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Primera versión en un solo archivo",
+      "subtitulo": "De la ficha a una web que ya funciona",
+      "narracion": "En la clase anterior hiciste el plan. Hoy escribes la primera instrucción y, en unos minutos, tendrás una web que funciona en tu ordenador. No será bonita todavía, y no pasa nada. La primera versión sirve para comprobar que los datos están bien y que el botón de pedir cita hace lo que tiene que hacer. El diseño llega en la próxima clase. Primero, que funcione."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Prepara el taller",
+      "pasos": [
+        "Crea una carpeta llamada peluqueria-nuria",
+        "Abre un chat de IA con tu ficha a mano",
+        "Ten listo un editor de texto plano",
+        "Deja el navegador abierto al lado"
+      ],
+      "narracion": "Antes de nada, prepara el taller. Crea una carpeta para el proyecto, por ejemplo peluqueria guion nuria, sin tildes ni espacios. Así te evitarás problemas cuando la publiques. Abre el chat de IA que prefieras: Claude, ChatGPT o Gemini, con el plan gratuito basta. Ten a mano la ficha de la clase anterior. Y abre un editor de texto plano: el Bloc de notas en Windows, TextEdit en modo texto en Mac, o Visual Studio Code si ya lo tienes."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La primera instrucción, completa",
+      "usuario": "Hazme la web de una sola página de Peluquería Nuria, peluquería de barrio en Lleida. Todo en un único archivo index.html, con el CSS dentro, sin librerías ni imágenes externas. Secciones: cabecera con el nombre, servicios con precios, horario, cómo llegar y un botón para pedir cita por WhatsApp al 600 000 000. Datos: [pegas tu ficha]. Dame el archivo completo.",
+      "ia": "Aquí tienes index.html completo: una cabecera de color con el nombre, una tabla de servicios y precios, el horario, la dirección y un botón verde que abre WhatsApp con el mensaje «Quiero pedir cita». Guárdalo y ábrelo con doble clic en el navegador.",
+      "narracion": "Esta es la instrucción exacta. Fíjate en sus partes. Qué es: una web de una sola página para una peluquería de barrio. Cómo: un único archivo, con el estilo dentro y sin nada externo, para que funcione con doble clic. Qué secciones lleva, en orden. Y los datos reales, pegados de la ficha. El teléfono que ves es inventado, como todo el negocio. Termina con dame el archivo completo, para que no te devuelva trozos sueltos que luego no sabes dónde van."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Guárdalo y ábrelo",
+      "pasos": [
+        "Copia todo el código con el botón de copiar",
+        "Pégalo en el editor de texto",
+        "Guarda como index.html dentro de la carpeta",
+        "Si te pregunta, elige codificación UTF-8",
+        "Haz doble clic en el archivo"
+      ],
+      "narracion": "Ahora, a guardarlo. En la respuesta verás el código en un recuadro con un botón de copiar. Úsalo, porque así no te dejas ninguna línea. Pégalo en el editor y guarda el archivo como index punto html, dentro de la carpeta del proyecto. Si el editor te pregunta la codificación, elige UTF guion 8, para que las tildes y las eñes salgan bien. Si usas un chat con vista previa, como los artefactos de Claude o el lienzo de ChatGPT, guárdalo igualmente: el archivo es lo que publicarás."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La primera versión, tal cual sale",
+      "fuente": "demo:peluqueria/v1",
+      "url": "index.html · en tu ordenador",
+      "narracion": "Doble clic, y aquí está. Una cabecera de color con el nombre, una tabla con servicios y precios, el horario. Más abajo, la dirección y el botón verde de WhatsApp. Es sencilla, casi de folleto, pero ya hace su trabajo. Fíjate en la barra de direcciones: la web está en tu ordenador, nadie más la ve todavía. Puedes cambiarla y romperla tantas veces como quieras."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los precios son filas de una tabla",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<section id=\"servicios\">\n  <h2>Servicios y precios</h2>\n  <table>\n  <tr><td>Corte de mujer</td><td class=\"precio\">22 €</td></tr>\n  <tr><td>Corte de hombre</td><td class=\"precio\">14 €</td></tr>\n  <tr><td>Corte infantil</td><td class=\"precio\">10 €</td></tr>\n  <tr><td>Lavar y peinar</td><td class=\"precio\">18 €</td></tr>\n  <tr><td>Tinte de raíz</td><td class=\"precio\">30 €</td></tr>",
+      "narracion": "Echa un vistazo al código, sin miedo. Esta es la sección de servicios. Cada fila de la tabla es un servicio: a la izquierda el nombre y a la derecha el precio. Lo bueno de saber leer esto es que, si mañana sube el tinte, puedes cambiar el número tú mismo en el editor, guardar y recargar. No hace falta volver a pedírselo a la IA para cada cambio pequeño."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El botón de WhatsApp es un enlace",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<section id=\"contacto\">\n  <h2>Pide tu cita</h2>\n  <p>Escríbenos por WhatsApp y te contestamos enseguida.</p>\n  <a class=\"whatsapp\"\n    href=\"https://wa.me/34600000000?text=Quiero%20pedir%20cita\">\n    Pedir cita por WhatsApp\n  </a>\n</section>",
+      "narracion": "Y este es el botón de WhatsApp. No tiene nada de magia: es un enlace a la dirección oficial de WhatsApp para abrir un chat. Detrás va el número, con el treinta y cuatro de España delante y sin espacios ni el signo más. Después viene el mensaje que aparecerá ya escrito: quiero pedir cita. Los espacios se escriben de una forma especial en los enlaces, por eso ves esos códigos raros. Tú solo tienes que comprobar que el número es el bueno."
+    },
+    {
+      "tipo": "web",
+      "titulo": "En el móvil",
+      "nota": "Sencilla, pero ya se lee bien en una pantalla pequeña",
+      "fuente": "demo:peluqueria/v1@movil",
+      "narracion": "Así se ve en una pantalla de móvil. Como es tan sencilla, se lee bien. Para probar el botón de verdad, pásate el archivo al móvil, por ejemplo enviándotelo por correo, o espera a publicarla. Al tocarlo, se tiene que abrir WhatsApp con el chat del negocio y el mensaje escrito. Si se abre con otro número, el fallo está en el enlace que acabas de ver."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Revisa antes de seguir",
+      "puntos": [
+        "Cada precio y cada horario, uno a uno",
+        "El botón abre WhatsApp con el número correcto",
+        "No hay datos ni frases que no hayas dado tú",
+        "Las tildes y las eñes se ven bien"
+      ],
+      "narracion": "Antes de pasar al diseño, revisa con calma. Cada precio y cada horario, uno a uno, comparándolos con tu ficha. Que el botón abra el chat correcto. Que no haya datos ni frases que tú no hayas dado. Las IA a veces rellenan huecos con cosas que suenan bien, como hay aparcamiento gratuito, y no tienen por qué ser verdad. Y que las tildes se vean bien. Si ves símbolos raros, guardaste el archivo con otra codificación."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo pedir una corrección",
+      "mal": "El horario está mal, arréglalo.",
+      "bien": "En el horario, el sábado cierra a las 14:00, no a las 13:00. Cambia solo eso y dame el archivo completo.",
+      "narracion": "Si algo está mal, pide la corrección con precisión. Decir el horario está mal obliga a la IA a adivinar, y a veces cambia lo que no debía. Es mucho mejor decir exactamente qué dato, cuál es el valor bueno y que no toque nada más. Y vuelve a pedir el archivo completo, para pegarlo encima del anterior. Si el arreglo es tan pequeño como un número, recuerda que puedes hacerlo tú en el editor."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Una instrucción: qué es, cómo, secciones y datos",
+        "Un archivo index.html que abres con doble clic",
+        "Revisa datos y botón antes de mejorar el diseño",
+        "Tarea: tu primera versión y una copia llamada v1"
+      ],
+      "narracion": "Repasamos. Con una sola instrucción bien hecha, que dice qué es, cómo lo quieres, qué secciones lleva y qué datos usar, tienes una primera versión. Un único archivo que abres con doble clic. Antes de mejorar nada, revisas datos y botón. Tu tarea de hoy: crea tu primera versión con tus datos o con los del ejemplo. Cuando funcione, haz una copia de la carpeta y llámala v1. Si la próxima instrucción lo estropea, podrás volver aquí. En la próxima clase, el diseño."
+    }
+  ]
+}

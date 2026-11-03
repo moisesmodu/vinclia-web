@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis hábitos</title>
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-osc: #0B7F72;
+    --acento-suave: #E3F5F2;
+    --naranja: #F08A24;
+    --rojo: #D64545;
+    --texto: #1D2733;
+    --gris: #6B7785;
+    --linea: #E4E8EE;
+    --fondo: #F4F7F9;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.45;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
+  header { margin-bottom: 24px; }
+  .fecha { color: var(--gris); font-size: 15px; margin: 0 0 4px; }
+  h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
+  .progreso { margin-top: 16px; background: var(--blanco); border-radius: 16px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .progreso p { margin: 0 0 10px; font-weight: 600; }
+  .barra { height: 10px; background: var(--acento-suave); border-radius: 99px; overflow: hidden; }
+  .barra span { display: block; height: 100%; width: 0; background: var(--acento); border-radius: 99px; transition: width .2s; }
+  form { display: flex; gap: 10px; margin-bottom: 20px; }
+  input[type=text] {
+    flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 14px 16px;
+    border: 2px solid var(--linea); border-radius: 12px; background: var(--blanco); color: var(--texto);
+  }
+  input[type=text]:focus { outline: none; border-color: var(--acento); }
+  button { font: inherit; cursor: pointer; }
+  .btn {
+    border: 0; border-radius: 12px; padding: 14px 22px; font-weight: 600; font-size: 16px;
+    background: var(--acento); color: #fff;
+  }
+  .btn:hover { background: var(--acento-osc); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  li {
+    display: flex; align-items: center; gap: 14px; background: var(--blanco);
+    border-radius: 16px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .check {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    border: 2px solid var(--linea); background: var(--blanco); display: grid; place-items: center; padding: 0;
+  }
+  .check svg { width: 18px; height: 18px; stroke: #fff; opacity: 0; }
+  li.hecho .check { background: var(--acento); border-color: var(--acento); }
+  li.hecho .check svg { opacity: 1; }
+  .nombre { flex: 1; min-width: 0; font-size: 17px; font-weight: 500; overflow-wrap: anywhere; }
+  li.hecho .nombre { color: var(--gris); }
+  .editar-campo { flex: 1; padding: 8px 12px !important; }
+  .icono {
+    flex: none; width: 36px; height: 36px; border-radius: 10px; border: 0; background: transparent;
+    display: grid; place-items: center; color: var(--gris); padding: 0;
+  }
+  .icono:hover { background: var(--fondo); color: var(--texto); }
+  .icono.borrar:hover { color: var(--rojo); }
+  .icono svg { width: 19px; height: 19px; }
+  .vacio { text-align: center; color: var(--gris); padding: 32px 16px; border: 2px dashed var(--linea); border-radius: 16px; display: block; box-shadow: none; background: transparent; }
+  .nota { margin-top: 24px; text-align: center; color: var(--gris); font-size: 14px; }
+  .aviso {
+    position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 120px);
+    background: var(--texto); color: #fff; border-radius: 12px; padding: 12px 14px 12px 18px;
+    display: flex; gap: 16px; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    transition: transform .25s, opacity .25s; max-width: calc(100% - 32px);
+    opacity: 0; visibility: hidden; white-space: nowrap;
+  }
+  .aviso.visible { transform: translate(-50%, 0); opacity: 1; visibility: visible; }
+  .aviso span { overflow: hidden; text-overflow: ellipsis; }
+  .aviso button { border: 0; background: transparent; color: #7FE0D4; font-weight: 700; padding: 6px 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="fecha" id="fecha"></p>
+    <h1>Mis hábitos</h1>
+    <div class="progreso">
+      <p id="resumen">0 de 0 hechos hoy</p>
+      <div class="barra"><span id="barra"></span></div>
+    </div>
+  </header>
+
+  <form id="formulario">
+    <input type="text" id="nuevo" placeholder="Ej.: Leer 10 minutos" maxlength="60" autocomplete="off">
+    <button class="btn" id="add" type="submit">Añadir</button>
+  </form>
+
+  <ul id="lista"></ul>
+  <p class="nota">Tus hábitos se guardan en este navegador.</p>
+</main>
+
+<div class="aviso" id="aviso" role="status">
+  <span id="aviso-texto">Hábito borrado</span>
+  <button id="deshacer">Deshacer</button>
+</div>
+
+<script>
+  // Cada hábito: { id, nombre, creado, hechos: ["2026-11-03", ...] }
+  const CLAVE = 'mis-habitos';
+  let habitos = cargar();
+
+  function cargar() {
+    try {
+      return JSON.parse(localStorage.getItem(CLAVE)) || [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function guardar() {
+    localStorage.setItem(CLAVE, JSON.stringify(habitos));
+  }
+
+  // Fecha en formato "AAAA-MM-DD" (hora local)
+  function clave(fecha) {
+    const a = fecha.getFullYear();
+    const m = String(fecha.getMonth() + 1).padStart(2, '0');
+    const d = String(fecha.getDate()).padStart(2, '0');
+    return `${a}-${m}-${d}`;
+  }
+  const hoy = () => clave(new Date());
+
+  function anadir(nombre) {
+    habitos.push({ id: Date.now(), nombre, creado: hoy(), hechos: [] });
+    guardar();
+    pintar();
+  }
+
+  function alternarHoy(id) {
+    const h = habitos.find(x => x.id === id);
+    const dia = hoy();
+    if (h.hechos.includes(dia)) {
+      h.hechos = h.hechos.filter(d => d !== dia);
+    } else {
+      h.hechos.push(dia);
+    }
+    guardar();
+    pintar();
+  }
+
+  function renombrar(id, nombre) {
+    const h = habitos.find(x => x.id === id);
+    if (nombre.trim()) h.nombre = nombre.trim();
+    guardar();
+    pintar();
+  }
+
+  let borrado = null;   // para poder deshacer
+  let temporizador;
+  function borrar(id) {
+    const pos = habitos.findIndex(x => x.id === id);
+    borrado = { habito: habitos[pos], pos };
+    habitos.splice(pos, 1);
+    guardar();
+    pintar();
+    document.getElementById('aviso-texto').textContent = `«${borrado.habito.nombre}» borrado`;
+    document.getElementById('aviso').classList.add('visible');
+    clearTimeout(temporizador);
+    temporizador = setTimeout(() => document.getElementById('aviso').classList.remove('visible'), 5000);
+  }
+  document.getElementById('deshacer').onclick = () => {
+    if (!borrado) return;
+    habitos.splice(borrado.pos, 0, borrado.habito);
+    borrado = null;
+    guardar();
+    pintar();
+    document.getElementById('aviso').classList.remove('visible');
+  };
+
+  const ICONO_OK = '<svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>';
+  const ICONO_EDITAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
+  const ICONO_BORRAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
+
+  function editar(li, h) {
+    const campo = document.createElement('input');
+    campo.type = 'text';
+    campo.className = 'editar-campo';
+    campo.value = h.nombre;
+    campo.maxLength = 60;
+    li.querySelector('.nombre').replaceWith(campo);
+    campo.focus();
+    campo.select();
+    let hecho = false;
+    const terminar = (guardarlo) => {
+      if (hecho) return;
+      hecho = true;
+      if (guardarlo) renombrar(h.id, campo.value); else pintar();
+    };
+    campo.onkeydown = (e) => {
+      if (e.key === 'Enter') terminar(true);
+      if (e.key === 'Escape') terminar(false);
+    };
+    campo.onblur = () => terminar(true);
+  }
+
+  function pintar() {
+    const lista = document.getElementById('lista');
+    lista.innerHTML = '';
+    if (habitos.length === 0) {
+      lista.innerHTML = '<li class="vacio">Aún no tienes hábitos. Añade el primero arriba.</li>';
+    }
+    for (const h of habitos) {
+      const hecho = h.hechos.includes(hoy());
+      const li = document.createElement('li');
+      if (hecho) li.className = 'hecho';
+      li.innerHTML = `<button class="check" aria-label="Marcar hecho hoy">${ICONO_OK}</button>
+        <span class="nombre"></span>
+        <button class="icono editar" aria-label="Editar">${ICONO_EDITAR}</button>
+        <button class="icono borrar" aria-label="Borrar">${ICONO_BORRAR}</button>`;
+      li.querySelector('.nombre').textContent = h.nombre;
+      li.querySelector('.check').onclick = () => alternarHoy(h.id);
+      li.querySelector('.editar').onclick = () => editar(li, h);
+      li.querySelector('.borrar').onclick = () => borrar(h.id);
+      lista.append(li);
+    }
+    const hechos = habitos.filter(h => h.hechos.includes(hoy())).length;
+    document.getElementById('resumen').textContent = `${hechos} de ${habitos.length} hechos hoy`;
+    const pct = habitos.length ? hechos / habitos.length * 100 : 0;
+    document.getElementById('barra').style.width = pct + '%';
+  }
+
+  document.getElementById('formulario').onsubmit = (e) => {
+    e.preventDefault();
+    const campo = document.getElementById('nuevo');
+    const nombre = campo.value.trim();
+    if (nombre) anadir(nombre);
+    campo.value = '';
+    campo.focus();
+  };
+
+  const fecha = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  document.getElementById('fecha').textContent = fecha[0].toUpperCase() + fecha.slice(1);
+  pintar();
+</script>
+</body>
+</html>

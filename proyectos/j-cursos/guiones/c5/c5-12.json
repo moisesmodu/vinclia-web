@@ -1,0 +1,107 @@
+{
+  "id": "c5-12",
+  "titulo": "El plan: qué necesita la web de un negocio local",
+  "descripcion": "Decides qué tiene que llevar la web de un negocio de barrio y qué le sobra, reúnes los datos reales y preparas las cuatro instrucciones con las que la IA la construirá en las próximas clases.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:web-negocio-ficha", "demo:peluqueria"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El plan de la web de un negocio",
+      "subtitulo": "Qué necesita, qué le sobra y qué datos reunir",
+      "narracion": "Empieza el primer proyecto del curso: la web de un negocio local. Vamos a hacerla para un negocio inventado, Peluquería Nuria, en Lleida. Tú puedes seguir los mismos pasos con tu negocio, el de un familiar o el de un amigo. En esta sección pasarás de una idea a una web publicada en internet, gratis y con tu propia dirección. Pero antes de escribir la primera instrucción, toca pensar. En esta clase hacemos el plan."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Así acabará la web en la clase 15",
+      "fuente": "demo:peluqueria/v4",
+      "url": "peluqueria-nuria.netlify.app",
+      "narracion": "Esto es lo que vas a tener al final de la sección. Una sola página. Arriba, el nombre del negocio, una frase que dice qué ofrece y un botón para pedir cita por WhatsApp. Más abajo, servicios, precios, horario y cómo llegar. No hay ni una foto descargada de internet: los dibujos son ilustraciones hechas por la IA con código. Y todo cabe en un único archivo. Lo construiremos en cuatro pasos, uno por clase."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que busca un cliente en diez segundos",
+      "puntos": [
+        "Qué haces y dónde estás",
+        "Cuánto cuesta, con precios claros",
+        "Cuándo abres y si estás abierto ahora",
+        "Cómo llegar",
+        "Cómo pedir cita con un solo toque"
+      ],
+      "narracion": "Piensa en cómo llega alguien a la web de una peluquería. Casi siempre desde el móvil, buscando en Google o desde un enlace que le han pasado. Tiene prisa. Quiere saber qué haces y dónde estás. Quiere ver precios, aunque sean orientativos. Quiere saber si hoy abres. Quiere saber cómo llegar. Y, sobre todo, quiere pedir cita sin rellenar nada. Si la web responde a esas cinco preguntas en diez segundos, ha hecho su trabajo. Si tiene que buscar, se va a la web de la competencia."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Lo que le sobra a una web de barrio",
+      "mal": "Tienda online, blog, reservas con calendario, formulario de contacto y diez páginas",
+      "bien": "Una sola página: servicios, precios, horario, mapa y un botón de WhatsApp",
+      "narracion": "Es muy tentador pedirle a la IA todo a la vez. Tienda, blog, reservas con calendario, formulario de contacto. Cada una de esas cosas añade trabajo, mantenimiento y, en algunos casos, obligaciones legales. Un formulario que pide nombre y teléfono, por ejemplo, ya recoge datos personales. Para un negocio de barrio, una sola página bien hecha suele bastar. El botón de WhatsApp sustituye al formulario: la conversación pasa en la app que el cliente ya usa."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La ficha del proyecto, rellena",
+      "columnas": ["Campo", "Peluquería Nuria"],
+      "filas": [
+        ["Para quién", "Vecinos del barrio, desde el móvil"],
+        ["Objetivo", "Que pidan cita por WhatsApp"],
+        ["Contenido", "Servicios, precios, horario, cómo llegar"],
+        ["Estilo", "Cálido y cercano, sin fotos de banco"],
+        ["Límites", "Un archivo, sin formularios ni datos"]
+      ],
+      "narracion": "En la sección del método aprendiste a hacer la ficha del proyecto. Aquí la tienes rellena para la peluquería. Para quién: vecinos del barrio que la abren desde el móvil. Objetivo: que pidan cita por WhatsApp. Contenido: servicios, precios, horario y cómo llegar. Estilo: cálido y cercano. Y límites, que es lo que más ayuda a la IA: un solo archivo, sin formularios y sin recoger datos. Esta ficha la pegarás en el chat en la próxima clase."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Reúne los datos reales antes de empezar",
+      "puntos": [
+        "Servicios y precios, tal y como los cobras",
+        "Horario, con días de cierre y vacaciones",
+        "Dirección y una pista para llegar",
+        "Número de WhatsApp del negocio",
+        "Tres palabras que describan el estilo"
+      ],
+      "narracion": "Ahora, la parte que nadie puede hacer por ti: reunir los datos reales. La lista de servicios con los precios que cobras de verdad. El horario, incluidos los días que cierras. La dirección y una pista para llegar, como la parada de autobús más cercana. El número de WhatsApp del negocio. Y tres palabras sobre el estilo, por ejemplo cálido, cercano y moderno. Si la IA no tiene estos datos, se los inventará. Y una web con precios inventados es peor que no tener web."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que va en la web y lo que no",
+      "puntos": [
+        "Sí: teléfono y WhatsApp del negocio",
+        "Sí: nombre del titular y NIF en el aviso legal",
+        "No: fotos de clientes sin su permiso por escrito",
+        "No: opiniones inventadas como si fueran reales",
+        "Nunca: contraseñas ni claves en el chat o el código"
+      ],
+      "narracion": "Una web es pública. Todo lo que pongas lo puede leer cualquiera. El teléfono y el WhatsApp del negocio, sí. Si no quieres dar tu número personal, plantéate una línea solo para el negocio. En el aviso legal irán el nombre del titular y el NIF, porque la ley lo pide. Lo que no va: fotos de clientes sin su permiso por escrito, ni opiniones inventadas presentadas como reales. Y nunca, en ningún caso, contraseñas ni claves."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Antes del código, pide que revise el plan",
+      "usuario": "Voy a hacer la web de una sola página de mi peluquería de barrio en Lleida. Esta es mi ficha: [pegas la ficha y los datos]. Antes de escribir código, dime qué secciones pondrías, en qué orden y qué datos me faltan. No escribas código todavía.",
+      "ia": "Orden propuesto: cabecera con nombre y botón de cita, servicios y precios, horario, cómo llegar y pie. Te faltan tres datos: si los precios incluyen IVA, qué haces en festivos y si el local es accesible en silla de ruedas. Más adelante necesitarás aviso legal y privacidad.",
+      "narracion": "Un truco que ahorra mucho tiempo: antes de pedir la web, pide que revise el plan. Fíjate en la última frase de la instrucción: no escribas código todavía. Así la IA piensa contigo en lugar de lanzarse. En este caso propone un orden lógico y detecta datos que faltan, como los festivos o si los precios llevan IVA. Esas preguntas son oro. Respóndelas en tu ficha antes de seguir, y la primera versión saldrá mucho mejor."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El plan en cuatro instrucciones",
+      "pasos": [
+        "Primera versión en un archivo, con los datos reales",
+        "Diseño: colores, letras e ilustraciones propias",
+        "Móvil, menú, botones fijos y aviso legal",
+        "Lista para Google y para compartir, y publicar"
+      ],
+      "narracion": "Este es el plan para las próximas tres clases. Cuatro instrucciones, cuatro versiones. Primera: una versión sencilla en un solo archivo, con todos los datos reales. Segunda: el diseño, con una paleta de colores, tipos de letra e ilustraciones propias. Tercera: que se vea perfecta en el móvil, con menú, botones fijos para llamar y escribir, y el aviso legal. Cuarta: dejarla lista para Google y para compartirla por WhatsApp, y publicarla. Después de cada paso, pruebas y guardas una copia."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Una página que responde cinco preguntas",
+        "Sin formularios ni extras: un botón de WhatsApp",
+        "Datos reales primero, o la IA se los inventa",
+        "Tarea: rellena la ficha y la lista de datos"
+      ],
+      "narracion": "Repasamos. La web de un negocio local tiene un trabajo: que te llamen o te escriban. Para eso responde cinco preguntas: qué haces, cuánto cuesta, cuándo abres, dónde estás y cómo pedir cita. Le sobran tiendas, blogs y formularios. Y necesita datos reales, o la IA se los inventará. Tu tarea de hoy: descarga la plantilla de esta clase y rellena la ficha y la lista de datos de tu negocio. Después, pide a la IA que revise el plan con la instrucción que acabas de ver. Si no tienes negocio, usa el de un familiar o sigue con el ejemplo de la peluquería. En la próxima clase, la primera versión."
+    }
+  ]
+}

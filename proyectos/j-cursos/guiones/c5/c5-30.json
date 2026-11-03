@@ -1,0 +1,144 @@
+{
+  "id": "c5-30",
+  "titulo": "Claves, costes y seguridad cuando la app crece",
+  "descripcion": "Entiendes qué es una clave de API, por qué nunca debe ir en el HTML, cómo guardarla en variables de entorno, cómo poner límites de gasto, cómo hacer copias de seguridad y cuánto cuesta de verdad mantener una app pequeña. Con una lista de comprobación de seguridad para tu app.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:checklist-seguridad-app",
+    "plantilla:chuleta-git"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Claves, costes y seguridad",
+      "subtitulo": "Lo que tienes que saber cuando tu app crece",
+      "narracion": "Llega un momento en que quieres que tu app haga algo más. Que use una IA por dentro, que mande correos o que guarde datos en la nube. Para eso necesitas claves de acceso a otros servicios. Y con las claves llegan dos riesgos: que alguien gaste a tu nombre y que pierdas lo que has construido. En esta clase vas a ver cómo evitar los dos, y cuánto cuesta de verdad mantener una app pequeña."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué es una clave de API",
+      "puntos": [
+        "Un texto largo que identifica tu cuenta en un servicio",
+        "Quien la tiene, usa el servicio a tu nombre",
+        "Y lo que gaste, lo pagas tú",
+        "Trátala como el PIN de tu tarjeta"
+      ],
+      "narracion": "Una API es la puerta por la que un programa habla con otro servicio. Por ejemplo, tu app con un modelo de IA, o con un servicio de correo. Para cruzar esa puerta necesitas una clave. Es un texto largo, de letras y números, que identifica tu cuenta. El problema es que la clave no sabe quién la usa. Cualquiera que la tenga puede usar el servicio como si fueras tú, y la factura te llega a ti. Trátala como el PIN de tu tarjeta."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El error más común: la clave en el HTML",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<script>\n  // MAL: cualquiera puede leer esta línea\n  const CLAVE = \"sk-pon-aqui-tu-clave\";\n  fetch(URL_DEL_SERVICIO, {\n    method: \"POST\",\n    headers: { Authorization: \"Bearer \" + CLAVE },\n    body: JSON.stringify({ texto: \"Hola\" })\n  });\n</script>",
+      "narracion": "Este es el error que más se repite. Este trozo es un ejemplo inventado, no lo copies. Alguien pide a la IA que su web use un servicio, y la IA escribe la clave dentro del HTML. Funciona a la primera, así que parece que está bien. Pero todo lo que hay en una página web lo descarga el navegador de cada visitante. Basta con pulsar el botón derecho y elegir ver código fuente. Ahí está tu clave, a la vista de cualquiera. Y hay programas que recorren internet y GitHub buscando claves así."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Dónde vive la clave",
+      "mal": "En el HTML o en el JavaScript de la página: viaja al navegador de cada visitante.",
+      "bien": "En un servidor: la web le pide el resultado y la clave nunca sale de ahí.",
+      "narracion": "La regla es sencilla. La clave tiene que vivir en un servidor, nunca en la página. La web le pide al servidor lo que necesita, el servidor usa la clave y le devuelve solo el resultado. Así el visitante nunca la ve. Ese servidor puede ser una función pequeña de Netlify, o la parte de servidor que crean Lovable o Bolt. Cuando le pidas a la IA algo que use una clave, añade esta frase: la clave debe quedarse en el servidor, nunca en el navegador."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Variables de entorno: la clave fuera del código",
+      "puntos": [
+        "La clave se guarda aparte, con un nombre: CLAVE_API",
+        "En tu ordenador, en un archivo llamado .env",
+        "En la plataforma, en su panel de variables",
+        "El código solo lee el nombre, nunca el valor",
+        "El archivo .env nunca se sube a GitHub"
+      ],
+      "narracion": "Para que la clave no esté escrita dentro del código, se usan las variables de entorno. Le pones un nombre, por ejemplo clave API, y guardas el valor aparte. En tu ordenador, en un archivo que se llama punto env. En Netlify, Vercel o los constructores de apps, en un panel de variables de su configuración. El código solo menciona el nombre, y el servidor pone el valor al arrancar. Así puedes compartir el código sin compartir la clave. Pero hay que proteger ese archivo punto env."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Que Git ignore el archivo .env",
+      "lineas": [
+        "$ git status --short",
+        "?? .env",
+        "$ echo .env > .gitignore",
+        "$ git status --short",
+        "?? .gitignore"
+      ],
+      "narracion": "Esto es una demostración real en la carpeta de la peluquería. Hemos creado el archivo punto env con una clave de prueba. Git status lo ve y lo subiría con el siguiente commit. Para evitarlo, se crea un archivo llamado punto gitignore con una lista de lo que Git debe ignorar. La orden echo escribe punto env dentro. Ahora Git status ya no menciona la clave, solo el archivo nuevo. Después añades y guardas la versión como siempre. Haz esto antes del primer commit, no después."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Una excepción: la clave pública de Supabase",
+      "puntos": [
+        "Supabase da una clave pensada para ir en la web",
+        "Solo es segura con las reglas de acceso activadas",
+        "Las reglas dicen quién puede leer y cambiar cada fila",
+        "La clave de servicio, la secreta, nunca en la web"
+      ],
+      "narracion": "Hay una excepción que te vas a encontrar. Supabase te da una clave pública, pensada para ir en la página web. Pero solo es segura si tu base de datos tiene activadas las reglas de acceso, que dicen quién puede leer o cambiar cada fila. Sin esas reglas, cualquiera con la clave puede leer toda la tabla de clientes. Pídele a la IA que active las reglas y compruébalo con dos cuentas. Y la otra clave, la de servicio, que es secreta, nunca va en la web."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Que una fuga no te arruine",
+      "pasos": [
+        "Pon un límite de gasto mensual en la cuenta",
+        "Activa los avisos por correo de consumo",
+        "Una clave distinta para cada proyecto",
+        "Si se filtra, bórrala en el panel y crea otra"
+      ],
+      "narracion": "Aunque lo hagas todo bien, prepárate para el error. Los servicios de IA que se pagan por uso permiten poner un límite de gasto mensual en la configuración de la cuenta. Ponlo bajo al principio, el que estarías dispuesto a perder. Activa también los avisos por correo. Usa una clave distinta para cada proyecto, así sabes cuál falla. Y si una clave se filtra, no la escondas: bórrala en el panel del servicio y crea otra. La antigua deja de funcionar al momento."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Copias de seguridad",
+      "puntos": [
+        "El código: Git y una copia en GitHub",
+        "La web publicada: Netlify guarda las publicaciones anteriores",
+        "Los datos de la base de datos: exporta las tablas a menudo",
+        "Apps con datos en el navegador: un botón para exportarlos"
+      ],
+      "narracion": "Ahora, no perder lo construido. El código ya sabes protegerlo: Git y una copia en GitHub. La web publicada también tiene su historial. Netlify guarda las publicaciones anteriores y puedes volver a una con un clic. Los datos de una base de datos son otra cosa. Si usas Supabase, exporta tus tablas a un archivo de vez en cuando. Y si tu app guarda en el navegador, como la de hábitos, pídele a la IA un botón para exportar los datos a un archivo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Lo que cuesta de verdad una app pequeña",
+      "columnas": [
+        "Concepto",
+        "Coste orientativo"
+      ],
+      "filas": [
+        [
+          "Web estática publicada",
+          "0 euros con Netlify o GitHub Pages"
+        ],
+        [
+          "Dominio propio",
+          "Unos pocos euros al año"
+        ],
+        [
+          "Base de datos pequeña",
+          "Plan gratuito, con límites"
+        ],
+        [
+          "Constructor de apps",
+          "20 a 25 euros al mes, si lo usas"
+        ],
+        [
+          "IA dentro de tu app",
+          "Según uso: pon siempre un límite"
+        ]
+      ],
+      "narracion": "Y hablemos de dinero sin sustos. Una web estática como las del curso cuesta cero euros publicada en Netlify o GitHub Pages. Un dominio propio, unos pocos euros al año según la terminación. Una base de datos pequeña cabe en un plan gratuito, con límites. Si usas un constructor de apps de forma continua, cuenta con 20 a 25 euros al mes. Y si tu app usa una IA por dentro, el coste depende del uso. Revisa los precios actuales antes de empezar, porque cambian a menudo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Una clave en el HTML la ve cualquiera",
+        "Claves en el servidor, en variables de entorno",
+        "El archivo .env, siempre en .gitignore",
+        "Límite de gasto y avisos en cada servicio",
+        "Copias del código, de la web y de los datos"
+      ],
+      "narracion": "Repasamos. Una clave en el HTML la puede ver cualquiera, así que vive en el servidor, en una variable de entorno. El archivo punto env nunca sube a GitHub. Pon límite de gasto y avisos en cada servicio, y si una clave se filtra, cámbiala. Haz copias del código, de la web y de los datos. Tu tarea de hoy: descarga la lista de comprobación de seguridad de esta clase y repásala con la app que tengas más avanzada."
+    }
+  ]
+}

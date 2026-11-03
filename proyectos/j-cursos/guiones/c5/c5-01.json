@@ -1,0 +1,116 @@
+{
+  "id": "c5-01",
+  "titulo": "Bienvenida: tu primera app con IA en 10 minutos",
+  "descripcion": "Construyes tu primera app con un chat de IA gratuito, en tres instrucciones: una calculadora para dividir la cuenta entre amigos que copia el resumen para WhatsApp. Y ves qué vas a crear en el resto del curso.",
+  "vistaPrevia": true,
+  "recursos": ["plantilla:primera-app", "demo:primera"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tu primera app con IA en 10 minutos",
+      "subtitulo": "Sin saber programar. Con un chat gratuito y tu navegador.",
+      "narracion": "Bienvenida, bienvenido. En este curso vas a crear apps y webs pidiéndoselas a una inteligencia artificial. No necesitas saber programar. Y no vamos a esperar a la quinta clase para ver resultados. En esta misma clase construimos una app de verdad, en tres instrucciones. Mira primero cómo queda al final."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Esto es lo que vas a tener en 10 minutos",
+      "fuente": "demo:primera/v3",
+      "url": "cuanto-pone-cada-uno.netlify.app",
+      "acciones": [
+        { "fill": ["#plan", "Cena del viernes"] },
+        { "fill": ["#total", "86,40"] },
+        { "fill": ["#nombre", "Ana"] }, { "click": "#anadir" },
+        { "fill": ["#nombre", "Luis"] }, { "click": "#anadir" },
+        { "fill": ["#nombre", "Marta"] }, { "click": "#anadir" },
+        { "fill": ["#nombre", "Pau"] }, { "click": "#anadir" },
+        { "click": "#redondear" },
+        { "click": "#copiar", "wait": 400 }
+      ],
+      "narracion": "Se llama Cuánto pone cada uno. Escribes lo que ha costado la cena, eliges la propina y apuntas quién ha venido. La app calcula lo que paga cada persona. Si quieres, redondea hacia arriba y te dice cuánto sobra para el bote. Y con un botón copia un resumen para pegarlo en el grupo de WhatsApp. Ahora vamos a ver cómo se hace, paso a paso."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 1: la versión mínima",
+      "usuario": "Hazme una página web en un solo archivo HTML, con el CSS y el JavaScript dentro. Es una calculadora para dividir la cuenta de un restaurante entre amigos. Campos: total de la cuenta, porcentaje de propina y número de personas. Un botón Calcular que muestre cuánto paga cada uno. Textos en castellano.",
+      "ia": "Te devuelve un archivo index.html completo, unas 70 líneas, con el formulario, unos estilos sencillos y la función que hace la cuenta. Explica en tres frases cómo abrirlo en el navegador.",
+      "narracion": "Abre Claude, ChatGPT o Gemini, el que tengas. Con el plan gratuito basta. Escribe esta instrucción. Fíjate en que dice qué es, qué campos quiere y en qué idioma. No dice nada de colores ni de diseño. Eso vendrá después. La IA contesta con el código de una página entera. Tú no tienes que entenderlo todavía."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Versión 1: fea, pero funciona",
+      "fuente": "demo:primera/v1",
+      "url": "Documentos/propinas/v1/index.html",
+      "acciones": [
+        { "fill": ["#total", "86.40"] },
+        { "fill": ["#personas", "4"] },
+        { "click": "#calcular" }
+      ],
+      "narracion": "En Claude la página aparece al lado del chat, en lo que llama artefactos. En ChatGPT, en el lienzo Canvas. En cualquier caso puedes copiar el código en un archivo index punto html y abrirlo con doble clic. Ponemos 86 euros con 40, cuatro personas y pulsamos Calcular. Sale 23 con 76 por cabeza. Funciona. Pero el decimal sale con punto y el diseño es muy soso. Lo arreglamos pidiéndolo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 2: que sea bonita y cómoda",
+      "usuario": "Funciona. Ahora hazla bonita y cómoda en el móvil: una tarjeta centrada, color verde azulado, botones rápidos de propina de 0, 5, 10 y 15 %, botones + y − para las personas y que calcule sola al escribir. Añade una opción para redondear hacia arriba lo que paga cada uno y muestra lo que sobra para el bote. Importes en euros con coma decimal. Que no se pueda poner 0 personas.",
+      "ia": "Te devuelve el archivo entero con el nuevo diseño, los botones de propina, el contador de personas, el redondeo y los importes con formato español. Resume los cambios en una lista.",
+      "narracion": "Segunda instrucción, en la misma conversación. Así la IA recuerda lo que ya ha hecho. Empezamos diciendo que funciona, para que no lo rompa. Luego pedimos cambios muy concretos. El diseño, los botones de propina, el redondeo y la coma decimal. Y una cosa más que conviene pedir siempre, que no se pueda meter un valor absurdo, como cero personas."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Versión 2, en el móvil",
+      "nota": "Calcula sola mientras escribes y redondea hacia arriba.",
+      "fuente": "demo:primera/v2@movil",
+      "acciones": [
+        { "fill": ["#total", "86,40"] },
+        { "click": "#mas" }, { "click": "#mas" },
+        { "click": "#redondear" }
+      ],
+      "narracion": "Y aquí está, en la pantalla de un móvil. Escribes el importe con coma, como lo escribimos en España. Tocas el más dos veces para ser cuatro y marcas redondear. Cada uno pone 24 euros y sobran 96 céntimos para el bote. Ya no hay botón de calcular, porque cada cambio se ve al momento."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 3: nombres y resumen para WhatsApp",
+      "usuario": "Perfecto. Ahora quiero apuntar quién viene: un campo para escribir un nombre, un botón Añadir y una lista donde pueda quitar a cada persona. El número de personas sale de la lista. Añade un campo para el nombre del plan y un botón «Copiar resumen para WhatsApp» que copie un texto corto con el total, la propina, quién viene y cuánto paga cada uno. No cambies nada más.",
+      "ia": "Te devuelve el archivo con la lista de nombres, el campo del plan, el botón de copiar y una vista previa del mensaje. Avisa de que algunos navegadores piden permiso para usar el portapapeles.",
+      "narracion": "Tercera y última instrucción. Pedimos la lista de personas y el botón de copiar. Mira el final, no cambies nada más. Es una frase pequeña que te ahorra muchos disgustos, porque la IA tiende a retocar cosas que no le has pedido. La respuesta incluye un aviso útil. Algunos navegadores piden permiso para copiar. Por eso la app enseña también el texto, para copiarlo a mano si hace falta."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Versión 3: lista para mandar al grupo",
+      "fuente": "demo:primera/v3",
+      "url": "Documentos/propinas/v3/index.html",
+      "acciones": [
+        { "fill": ["#plan", "Cena del viernes"] },
+        { "fill": ["#total", "86,40"] },
+        { "click": "#propinas .chip[data-p='5']" },
+        { "fill": ["#nombre", "Ana"] }, { "press": "Enter" },
+        { "fill": ["#nombre", "Luis"] }, { "press": "Enter" },
+        { "fill": ["#nombre", "Marta"] }, { "press": "Enter" },
+        { "click": "#copiar", "wait": 400 }
+      ],
+      "narracion": "Probamos la versión final con otros datos. Tres personas y un 5 por ciento de propina. Pulsamos copiar y abajo aparece el aviso de que el resumen está copiado. Lo pegas en WhatsApp y ya está. Tres instrucciones, unos minutos y una app que vas a usar la próxima vez que salgas a cenar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que vas a construir en este curso",
+      "puntos": [
+        "La web de un negocio local, publicada gratis en internet",
+        "Una app de hábitos que se instala en el móvil",
+        "Una calculadora de presupuestos con IVA y PDF",
+        "Un juego para compartir con un enlace",
+        "Un método para seguir creando tus propias apps"
+      ],
+      "narracion": "Esto ha sido el aperitivo. En el curso harás cuatro proyectos reales. La web de una peluquería, publicada en internet sin pagar nada. Una app de hábitos con rachas que se instala en el móvil. Una calculadora de presupuestos con IVA que saca un PDF. Y un juego que puedes compartir con un enlace. Además aprenderás un método para pedir bien, comprobar y no perderte cuando algo falla."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Abre un chat de IA gratuito: Claude, ChatGPT o Gemini",
+        "Copia las tres instrucciones de la plantilla, una a una",
+        "Prueba cada versión antes de pedir la siguiente",
+        "La IA escribe el código, tú decides y compruebas"
+      ],
+      "narracion": "Te toca. Abre un chat de IA gratuito y repite estas tres instrucciones. Las tienes en la plantilla de esta clase, junto con el código de las tres versiones para que las compares con las tuyas. Prueba cada versión antes de pedir la siguiente. Y quédate con la regla de oro del curso. La IA escribe el código, tú decides y compruebas. En la próxima clase veremos qué es exactamente el vibe coding, y qué no es."
+    }
+  ]
+}

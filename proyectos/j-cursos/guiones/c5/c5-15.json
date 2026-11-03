@@ -1,0 +1,114 @@
+{
+  "id": "c5-15",
+  "titulo": "Publicarla gratis en internet con tu propia dirección",
+  "descripcion": "Dejas la web lista para Google y para compartir por WhatsApp, la revisas con una lista de comprobación y la publicas gratis con Netlify Drop arrastrando la carpeta; después le pones un nombre claro y, si quieres, tu propio dominio.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:checklist-publicar-web", "demo:peluqueria"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Publicarla gratis en internet",
+      "subtitulo": "Con tu propia dirección, en unos minutos",
+      "narracion": "Llegamos al último paso del proyecto: que tu web deje de estar solo en tu ordenador y la pueda ver cualquiera. En esta clase harás tres cosas. Primero, una última instrucción para dejarla lista para Google y para compartirla. Segundo, una revisión con una lista de comprobación. Y tercero, publicarla gratis arrastrando una carpeta. Al final, si quieres, verás cómo ponerle tu propio dominio."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La cuarta instrucción: lista para publicar",
+      "usuario": "Prepárala para publicar en https://peluqueria-nuria.netlify.app. Añade un título y una descripción para Google, en castellano. Crea un favicon en un archivo aparte, favicon.svg, con el logo. Añade las etiquetas Open Graph para que, al compartir el enlace por WhatsApp, salga una tarjeta con imagen. Dime qué imagen necesito y de qué tamaño. No cambies nada más.",
+      "ia": "He añadido el título, la descripción y las etiquetas Open Graph en la cabecera del archivo. Te paso también favicon.svg. Para la tarjeta necesitas una imagen PNG o JPG de 1200 por 630 píxeles, llamada compartir.png, en la misma carpeta que index.html.",
+      "narracion": "Esta es la cuarta instrucción. Le das la dirección donde vivirá la web, porque algunas etiquetas la necesitan completa. Pides el título y la descripción que aparecen en Google. Un favicon, que es el iconito de la pestaña del navegador. Y las etiquetas Open Graph, que deciden qué tarjeta sale cuando alguien comparte el enlace por WhatsApp. La imagen de la tarjeta la puedes pedir a la IA como un diseño en el mismo estilo, o hacerla con una foto tuya."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Lo que ve Google y lo que ve WhatsApp",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<!-- Lo que ve Google -->\n<title>Peluquería Nuria · Corte y color en Lleida</title>\n\n<!-- Icono de la pestaña -->\n<link rel=\"icon\" href=\"favicon.svg\" type=\"image/svg+xml\">\n\n<!-- Lo que se ve al compartir el enlace (Open Graph) -->\n<meta property=\"og:title\" content=\"Peluquería Nuria · Lleida\">\n<meta property=\"og:image\"\n  content=\"https://peluqueria-nuria.netlify.app/compartir.png\">",
+      "narracion": "Este es un trozo de la cabecera del archivo, la parte que no se ve en la página. El título es lo que sale en la pestaña y, normalmente, en los resultados de Google: nombre del negocio, qué haces y dónde. La línea del icono apunta al archivo del favicon. Y las etiquetas que empiezan por o g son las de Open Graph: el título de la tarjeta y la imagen, siempre con la dirección completa. Ahora tu carpeta tiene tres archivos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Antes de publicar, revisa",
+      "puntos": [
+        "En tu móvil y en otro distinto",
+        "Cada enlace y botón: llamar, WhatsApp, menú, avisos",
+        "Ortografía: pide a la IA una revisión, sin reescribir",
+        "Datos reales: precios, horario, teléfono, dirección",
+        "Quita lo de ejemplo: opiniones y huecos legales"
+      ],
+      "narracion": "Antes de publicar, repasa la lista de comprobación de esta clase. En el móvil, el tuyo y otro distinto. Cada enlace y cada botón, tocándolo. La ortografía: pídele a la IA que te señale errores sin reescribir nada. Los datos reales del negocio, uno a uno. Y lo más fácil de olvidar: quitar lo que era de ejemplo. Las opiniones inventadas fuera, y los huecos entre corchetes del aviso legal, rellenos con tus datos de verdad."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Publicar con Netlify Drop",
+      "pasos": [
+        "Busca Netlify Drop y entra en su página",
+        "Arrastra la carpeta entera, no solo el archivo",
+        "Espera unos segundos: ya tienes una dirección",
+        "Crea tu cuenta gratis para quedarte la web"
+      ],
+      "narracion": "Ahora sí, a publicar. Usaremos Netlify Drop, que es gratis y admite webs de negocio dentro de sus límites. Busca Netlify Drop en Google, o escribe app punto netlify punto com barra drop. Verás un recuadro que dice que arrastres ahí tu carpeta. Arrastra la carpeta entera del proyecto, con los tres archivos dentro. En unos segundos tendrás una dirección terminada en netlify punto app. Si aún no tienes cuenta, créala gratis cuando te lo pida: sin cuenta, la web es temporal y acaba desapareciendo."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Ya está en internet",
+      "fuente": "demo:peluqueria/v4",
+      "url": "peluqueria-nuria.netlify.app",
+      "narracion": "Y aquí la tienes, en internet. Fíjate en la barra de direcciones: ya no es un archivo de tu ordenador, es una dirección que puedes mandar a quien quieras. Fíjate también en el icono de la pestaña, el favicon. Al principio, Netlify le pone un nombre aleatorio, con palabras sueltas y números. Nadie se va a acordar de eso. Vamos a cambiarlo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Un nombre claro y cómo actualizarla",
+      "pasos": [
+        "En tu panel de Netlify, abre el proyecto",
+        "En su configuración, cambia el nombre",
+        "Escribe peluqueria-nuria, sin tildes ni espacios",
+        "Para actualizar, arrastra otra vez la carpeta",
+        "Hazlo en la sección de despliegues, Deploys"
+      ],
+      "narracion": "Para cambiar el nombre, entra en tu panel de Netlify y abre el proyecto. En su configuración verás la opción de cambiar el nombre. Escribe el que quieras, sin tildes ni espacios, por ejemplo peluqueria guion nuria. Si ya está cogido, prueba con la ciudad detrás. La dirección pasa a ser ese nombre seguido de netlify punto app. Y cuando cambies precios, no hace falta empezar de cero: arrastra otra vez la carpeta en la sección de despliegues del proyecto."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Pruébala desde el móvil",
+      "nota": "Toca Llamar y WhatsApp de verdad, y comparte el enlace para ver la tarjeta",
+      "fuente": "demo:peluqueria/v4@movil",
+      "url": "peluqueria-nuria.netlify.app",
+      "narracion": "Ahora ábrela desde el móvil, que es donde la verán tus clientes. Toca el botón de llamar y comprueba que marca el número del negocio. Toca el de WhatsApp. Abre el menú. Después, mándate el enlace por WhatsApp a ti mismo o a alguien de confianza. Debería aparecer la tarjeta con la imagen y el título. Si no aparece a la primera, espera un rato: WhatsApp a veces tarda en leer las etiquetas nuevas."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Opcional: tu propio dominio",
+      "pasos": [
+        "Compra el dominio en un registrador",
+        "En Netlify, añade el dominio al proyecto",
+        "Copia en el registrador lo que te indique Netlify",
+        "Espera unas horas a que se active",
+        "El candado del HTTPS lo pone Netlify gratis"
+      ],
+      "narracion": "Si quieres una dirección como peluquerianuria punto es, necesitas un dominio propio. Eso sí cuesta dinero, normalmente una cuota anual pequeña, y se compra en un registrador de dominios. Compara precios, también los de renovación. Después, en Netlify, añade el dominio a tu proyecto. Netlify te dirá qué datos copiar en el registrador. Tras unas horas, la web responde en tu dominio. El candado de conexión segura lo pone Netlify sin coste."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Dónde publicar gratis",
+      "columnas": ["Servicio", "Plan gratuito", "¿Para un negocio?"],
+      "filas": [
+        ["Netlify Drop", "Arrastrar la carpeta", "Sí, dentro de sus límites"],
+        ["GitHub Pages", "Gratis con cuenta de GitHub", "Revisa sus condiciones"],
+        ["Vercel, plan Hobby", "Gratis, uso personal", "No: solo uso no comercial"]
+      ],
+      "narracion": "Netlify no es la única opción, pero para esto es la más sencilla. GitHub Pages también es gratis, aunque pide unos pasos más. Si la usas para un negocio, revisa sus condiciones. Cuidado con Vercel, muy conocida: su plan gratuito, llamado Hobby, es solo para uso personal no comercial. La web de una peluquería es comercial, así que ahí necesitarías un plan de pago. Por eso en este curso publicamos con Netlify."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Título, descripción, favicon y tarjeta para compartir",
+        "Revisa con la lista antes de publicar",
+        "Arrastra la carpeta a Netlify Drop y ponle nombre",
+        "Tarea: publica tu web y mándala a tres personas"
+      ],
+      "narracion": "Repasamos. Una última instrucción deja la web lista para Google y para WhatsApp. Antes de publicar, revisa con la lista: móvil, enlaces, ortografía y datos reales. Publicas arrastrando la carpeta a Netlify Drop y le pones un nombre claro. El dominio propio es opcional. Tu tarea de hoy: publica tu web, ponla en tu ficha de Google y en tus redes, y mándala a tres personas para que te digan qué no entienden. Has terminado tu primer proyecto."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "c5-03",
+  "titulo": "Las herramientas: cuál usar para qué",
+  "descripcion": "Conoces las tres familias de herramientas de vibe coding (chats de IA, constructores de apps en el navegador y herramientas para tu ordenador) y dónde publicar gratis, y eliges con qué empezar sin pagar nada.",
+  "vistaPrevia": true,
+  "recursos": ["plantilla:herramientas-ia"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Las herramientas: cuál usar para qué",
+      "subtitulo": "Tres familias, una forma de elegir y todo el curso gratis",
+      "narracion": "Cada semana sale una herramienta nueva que promete hacerte una app en un minuto. Es fácil agobiarse. En esta clase ponemos orden. Verás que casi todas caben en tres familias, para qué sirve cada una y con cuál vas a trabajar en este curso. Te adelanto lo más importante. Para seguir el curso no tienes que pagar nada."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Tres familias de herramientas",
+      "columnas": ["Familia", "Ejemplos", "Para qué"],
+      "filas": [
+        ["Chats de IA", "Claude, ChatGPT, Gemini", "Webs y apps de un archivo"],
+        ["Constructores en el navegador", "Lovable, Bolt, v0, Replit", "Apps con usuarios y datos"],
+        ["En tu ordenador", "Cursor, Claude Code, Copilot", "Proyectos grandes y reales"]
+      ],
+      "narracion": "La primera familia son los chats de IA de siempre. Claude, ChatGPT o Gemini. Les pides el código y te lo dan. La segunda son los constructores de apps en el navegador, como Lovable, Bolt, v0 o Replit. Montan la app entera, con base de datos y cuentas de usuario. La tercera son herramientas para trabajar en tu ordenador con un proyecto de verdad, como Cursor o Claude Code. Vamos una por una."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Chats de IA: por aquí empiezas",
+      "puntos": [
+        "Claude, de Anthropic: artefactos con la web al lado",
+        "ChatGPT, de OpenAI: el lienzo Canvas",
+        "Gemini, de Google: plan gratuito en tu cuenta",
+        "Todos tienen plan gratuito, con límite de uso",
+        "Los planes de pago rondan los 20 euros al mes"
+      ],
+      "narracion": "Los chats son la herramienta principal del curso. Claude, de la empresa Anthropic, enseña la web al lado de la conversación, en lo que llama artefactos. ChatGPT, de OpenAI, tiene un lienzo llamado Canvas. Gemini es el de Google. Los tres tienen un plan gratuito con un límite de mensajes. Si un día lo agotas, esperas o cambias a otro. Los planes individuales de pago rondan los 20 euros al mes. Los precios y límites cambian a menudo, así que mira siempre la página oficial."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Lo que hicimos con un chat gratuito",
+      "fuente": "demo:primera/v2",
+      "url": "Documentos/propinas/v2/index.html",
+      "acciones": [
+        { "fill": ["#total", "120"] },
+        { "click": "#propinas .chip[data-p='15']" },
+        { "click": "#mas" }, { "click": "#mas" }, { "click": "#mas" }
+      ],
+      "narracion": "Esta app la hicimos con un chat gratuito, un archivo y el navegador. Podrías hacerla igual en cualquiera de los tres. El código que da cada uno será algo distinto, pero el resultado es parecido. Ciento veinte euros, un 15 por ciento de propina, cinco personas. Para webs sencillas, herramientas personales y juegos, no necesitas nada más. Y lo que aprendas así te sirve después en cualquier otra herramienta."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Constructores de apps en el navegador",
+      "puntos": [
+        "Lovable: el más pensado para quien no programa",
+        "Bolt, v0 de Vercel y Replit: parecidos",
+        "Crean base de datos y cuentas de usuario",
+        "Muchos usan Supabase para guardar los datos",
+        "Plan gratuito con créditos limitados"
+      ],
+      "narracion": "La segunda familia son los constructores. Escribes lo que quieres y te montan la app completa, con base de datos y usuarios que se registran. Muchos guardan los datos en un servicio llamado Supabase. Lovable es el más pensado para quien no programa. Bolt, v0 y Replit funcionan de forma parecida. Tienen plan gratuito, pero con créditos diarios o mensuales que se gastan rápido. Los de pago rondan los 20 o 25 euros al mes. Los veremos en la sección del siguiente nivel."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Herramientas para tu ordenador",
+      "puntos": [
+        "Cursor: un editor de código con IA dentro",
+        "Claude Code: un agente que trabaja en la terminal",
+        "GitHub Copilot: la IA dentro de VS Code",
+        "Git y GitHub: guardar versiones y volver atrás"
+      ],
+      "narracion": "La tercera familia es para cuando tu proyecto crece y vive en tu ordenador. Cursor es un editor de código con la IA integrada, con un plan gratuito limitado. Claude Code es un agente que trabaja en la terminal, y necesita un plan de pago de Claude o una clave de acceso. GitHub Copilot lleva la IA al editor VS Code. Junto a ellas está Git, que guarda versiones. No las necesitas para empezar. Las veremos al final del curso, cuando ya tengas soltura."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Publicar en internet sin pagar",
+      "columnas": ["Servicio", "Plan gratuito", "Ojo con"],
+      "filas": [
+        ["Netlify Drop", "Arrastras la carpeta y listo", "Uso comercial dentro de límites"],
+        ["GitHub Pages", "Gratis con tu cuenta", "Revisa sus condiciones comerciales"],
+        ["Vercel", "Plan Hobby gratuito", "Solo uso personal, no comercial"]
+      ],
+      "narracion": "Para publicar tu web, en el curso usamos Netlify Drop. Arrastras la carpeta a su página y te da una dirección en internet. Es gratis y admite uso comercial dentro de sus límites. GitHub Pages también es gratis, pero revisa sus condiciones si es para un negocio. Vercel tiene un plan gratuito llamado Hobby, pero es solo para uso personal no comercial. Para la web de tu negocio en Vercel tendrías que pagar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué usar según lo que quieras",
+      "columnas": ["Si quieres…", "Usa"],
+      "filas": [
+        ["Una web o herramienta sencilla", "Un chat gratis y un index.html"],
+        ["Una app con usuarios y datos", "Lovable o Bolt, y revisión"],
+        ["Un proyecto grande en tu ordenador", "Cursor o Claude Code"],
+        ["Publicarla sin pagar", "Netlify Drop"]
+      ],
+      "narracion": "Resumido en una regla práctica. Si quieres una web o una herramienta sencilla, un chat gratuito y un archivo index punto html. Si necesitas que la gente se registre y guarde datos, un constructor como Lovable o Bolt, y alguien que lo revise antes de abrirlo al público. Si el proyecto ya es grande, una herramienta para tu ordenador. Y para publicar, Netlify Drop."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cómo no empezar y cómo sí",
+      "mal": "Pagar tres suscripciones el primer día y saltar de herramienta en herramienta.",
+      "bien": "Empezar con un chat gratuito y cambiar solo cuando se te quede corto.",
+      "narracion": "Un consejo. No pagues tres suscripciones el primer día ni saltes de una herramienta a otra cada vez que ves un vídeo. Lo que de verdad marca la diferencia es pedir bien y probar bien, y eso se aprende igual en cualquier herramienta. Empieza con un chat gratuito. Cuando se te quede corto, sabrás exactamente qué te falta y podrás elegir con criterio."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Haz esto hoy",
+      "pasos": [
+        "Crea una cuenta gratuita en dos chats de IA",
+        "Pega la misma instrucción de la clase 1 en los dos",
+        "Abre los dos resultados y compáralos",
+        "Quédate con el que más te guste para el curso"
+      ],
+      "narracion": "Tu tarea de hoy es una pequeña prueba. Crea una cuenta gratuita en dos chats, por ejemplo Claude y ChatGPT. Pega en los dos la primera instrucción de la clase uno. Abre los dos resultados y compáralos. Cuál se ve mejor, cuál se entiende mejor, cuál te ha explicado mejor cómo abrirlo. Quédate con el que te resulte más cómodo. No hay respuesta correcta."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Tres familias: chats, constructores y en tu ordenador",
+        "En el curso: un chat gratis, un archivo y el navegador",
+        "Para publicar gratis, Netlify Drop",
+        "Precios y límites cambian: mira la web oficial"
+      ],
+      "narracion": "Repasamos. Hay tres familias de herramientas. Chats de IA, constructores de apps en el navegador y herramientas para tu ordenador. En el curso trabajamos con un chat gratuito, un archivo y el navegador, y publicamos con Netlify Drop. En los recursos tienes una plantilla con la comparación y dónde mirar los precios actuales. En la siguiente sección entenderás lo mínimo de cómo funciona una web, para que la IA y tú habléis el mismo idioma."
+    }
+  ]
+}

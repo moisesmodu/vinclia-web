@@ -142,14 +142,17 @@
   </main>
 
 <script>
-  const euros = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" });
+  const euros = new Intl.NumberFormat("es-ES", {
+    style: "currency",
+    currency: "EUR"
+  });
   let propina = 10;
   let personas = 2;
 
   // Acepta "86,40" y "86.40"
   function leerImporte() {
-    const texto = document.getElementById("total").value.replace(",", ".");
-    const numero = parseFloat(texto);
+    const escrito = document.getElementById("total").value;
+    const numero = parseFloat(escrito.replace(",", "."));
     return isNaN(numero) || numero < 0 ? 0 : numero;
   }
 
@@ -157,7 +160,8 @@
     const total = leerImporte();
     const importePropina = total * propina / 100;
     const totalFinal = total + importePropina;
-    let porPersona = Math.round(totalFinal / personas * 100) / 100;
+    const sinRedondeo = totalFinal / personas;
+    let porPersona = Math.round(sinRedondeo * 100) / 100;
     let sobra = 0;
     if (document.getElementById("redondear").checked) {
       porPersona = Math.ceil(porPersona);

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lluvia de fruta</title>
+<style>
+  :root { --acento: #0E9F8E; --texto: #1F2A37; --suave: #5B6675; --fondo: #FFF8EE; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--fondo); color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px; }
+  h1 { margin: 0 0 4px; font-size: 1.8rem; color: var(--acento); }
+  .sub { margin: 0 0 16px; color: var(--suave); }
+  canvas { display: block; width: 100%; aspect-ratio: 8 / 5; border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(31, 42, 55, .15); }
+  .ayuda { margin: 12px 0 0; color: var(--suave); font-size: .95rem; text-align: center; }
+  kbd { background: #fff; border: 1px solid #d6dbe1; border-bottom-width: 3px; border-radius: 6px; padding: 1px 7px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Lluvia de fruta</h1>
+  <p class="sub">Mueve la cesta y recoge la fruta que cae del árbol.</p>
+  <canvas id="juego"></canvas>
+  <p class="ayuda">Usa <kbd>←</kbd> y <kbd>→</kbd> para mover la cesta.</p>
+</main>
+<script>
+const W = 800, H = 500;
+const lienzo = document.getElementById('juego');
+const ctx = lienzo.getContext('2d');
+const dpr = window.devicePixelRatio || 1;
+lienzo.width = W * dpr; lienzo.height = H * dpr;
+ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+// Números aleatorios con semilla (para poder repetir una partida)
+function azar(semilla) {
+  return function () {
+    semilla |= 0; semilla = semilla + 0x6D2B79F5 | 0;
+    let t = Math.imul(semilla ^ semilla >>> 15, 1 | semilla);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+let rnd = azar(Date.now());
+
+const cesta = { x: W / 2, y: H - 70, ancho: 110, alto: 46, velocidad: 420 };
+let frutas = [];
+let espera = 0;
+const teclas = {};
+
+const TIPOS = ['manzana', 'pera', 'cereza'];
+
+function crearFruta() {
+  frutas.push({
+    x: 40 + rnd() * (W - 80), y: -20, r: 20,
+    tipo: TIPOS[Math.floor(rnd() * TIPOS.length)],
+    velocidad: 150 + rnd() * 60
+  });
+}
+
+function actualizar(dt, piloto) {
+  let dir = 0;
+  if (teclas.ArrowLeft) dir -= 1;
+  if (teclas.ArrowRight) dir += 1;
+  if (piloto) dir = piloto();
+  cesta.x += dir * cesta.velocidad * dt;
+  cesta.x = Math.max(cesta.ancho / 2, Math.min(W - cesta.ancho / 2, cesta.x));
+
+  espera -= dt;
+  if (espera <= 0) { crearFruta(); espera = 0.9; }
+  for (const f of frutas) f.y += f.velocidad * dt;
+  frutas = frutas.filter(f => f.y < H + 40);
+}
+
+// ---------- Dibujo ----------
+const fondo = document.createElement('canvas');
+fondo.width = W * dpr; fondo.height = H * dpr;
+(function pintarFondo() {
+  const c = fondo.getContext('2d'); c.scale(dpr, dpr);
+  const cielo = c.createLinearGradient(0, 0, 0, H);
+  cielo.addColorStop(0, '#BFE7F7'); cielo.addColorStop(1, '#F1FAFD');
+  c.fillStyle = cielo; c.fillRect(0, 0, W, H);
+  c.fillStyle = '#FFE08A'; c.beginPath(); c.arc(680, 120, 40, 0, Math.PI * 2); c.fill();
+  c.fillStyle = '#A8D8A0'; c.beginPath(); c.ellipse(200, H - 30, 380, 120, 0, Math.PI, 0); c.fill();
+  c.fillStyle = '#8CC983'; c.beginPath(); c.ellipse(640, H - 25, 360, 100, 0, Math.PI, 0); c.fill();
+  c.fillStyle = '#6BA35A'; c.fillRect(0, H - 32, W, 32);
+  // copa del árbol arriba
+  for (let x = -20; x < W + 40; x += 46) {
+    c.fillStyle = (x / 46) % 2 ? '#3E8E4E' : '#4FA35E';
+    c.beginPath(); c.arc(x, 4 + (x % 3) * 6, 42, 0, Math.PI * 2); c.fill();
+  }
+})();
+
+function dibujarFruta(f) {
+  ctx.save(); ctx.translate(f.x, f.y);
+  if (f.tipo === 'cereza') {
+    ctx.strokeStyle = '#5B7A2E'; ctx.lineWidth = 2.5;
+    ctx.beginPath(); ctx.moveTo(-8, 4); ctx.quadraticCurveTo(-4, -16, 4, -20);
+    ctx.moveTo(9, 6); ctx.quadraticCurveTo(8, -12, 4, -20); ctx.stroke();
+    ctx.fillStyle = '#C81E3A';
+    ctx.beginPath(); ctx.arc(-8, 8, 10, 0, Math.PI * 2); ctx.arc(9, 10, 10, 0, Math.PI * 2); ctx.fill();
+  } else if (f.tipo === 'pera') {
+    ctx.fillStyle = '#C9D84A';
+    ctx.beginPath(); ctx.arc(0, 6, 17, 0, Math.PI * 2); ctx.arc(0, -8, 11, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = '#6B4A2B'; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(0, -18); ctx.lineTo(3, -26); ctx.stroke();
+  } else {
+    ctx.fillStyle = '#E5484D';
+    ctx.beginPath(); ctx.arc(-6, 0, 15, 0, Math.PI * 2); ctx.arc(6, 0, 15, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = '#6B4A2B'; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(0, -12); ctx.lineTo(2, -22); ctx.stroke();
+    ctx.fillStyle = '#4FA35E';
+    ctx.beginPath(); ctx.ellipse(9, -18, 8, 4, -0.5, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.fillStyle = 'rgba(255,255,255,.45)';
+  ctx.beginPath(); ctx.ellipse(-7, -3, 4, 6, 0.4, 0, Math.PI * 2); ctx.fill();
+  ctx.restore();
+}
+
+function dibujarCesta() {
+  const { x, y, ancho, alto } = cesta;
+  ctx.save(); ctx.translate(x, y);
+  ctx.fillStyle = 'rgba(0,0,0,.15)';
+  ctx.beginPath(); ctx.ellipse(0, alto + 6, ancho / 2, 7, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#C48A47';
+  ctx.beginPath();
+  ctx.moveTo(-ancho / 2, 0); ctx.lineTo(ancho / 2, 0);
+  ctx.lineTo(ancho / 2 - 12, alto); ctx.lineTo(-ancho / 2 + 12, alto); ctx.closePath(); ctx.fill();
+  ctx.strokeStyle = '#9A6430'; ctx.lineWidth = 2;
+  for (let i = 1; i < 4; i++) {
+    ctx.beginPath(); ctx.moveTo(-ancho / 2 + 3 * i, alto * i / 4); ctx.lineTo(ancho / 2 - 3 * i, alto * i / 4); ctx.stroke();
+  }
+  for (let i = -3; i <= 3; i++) {
+    ctx.beginPath(); ctx.moveTo(i * 15, 0); ctx.lineTo(i * 12, alto); ctx.stroke();
+  }
+  ctx.fillStyle = '#8C5527'; ctx.fillRect(-ancho / 2 - 4, -6, ancho + 8, 10);
+  ctx.restore();
+}
+
+function dibujar() {
+  ctx.drawImage(fondo, 0, 0, W, H);
+  frutas.forEach(dibujarFruta);
+  dibujarCesta();
+}
+
+// ---------- Bucle ----------
+const PASO = 1 / 60;
+let antes = performance.now(), acumulado = 0, congelado = false;
+function bucle(ahora) {
+  acumulado += Math.min(0.1, (ahora - antes) / 1000); antes = ahora;
+  while (acumulado >= PASO) { if (!congelado) actualizar(PASO); acumulado -= PASO; }
+  dibujar();
+  requestAnimationFrame(bucle);
+}
+requestAnimationFrame(bucle);
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { teclas[e.key] = true; e.preventDefault(); }
+});
+window.addEventListener('keyup', e => { teclas[e.key] = false; });
+
+// Modo demostración: avanza la partida con una semilla fija y la deja quieta
+window.__demo = function (segundos = 6, semilla = 7) {
+  rnd = azar(semilla); frutas = []; espera = 0; cesta.x = W / 2;
+  const piloto = () => {
+    const f = frutas.filter(f => f.y < cesta.y).sort((a, b) => b.y - a.y)[0];
+    if (!f) return 0;
+    return Math.abs(f.x - cesta.x) < 8 ? 0 : Math.sign(f.x - cesta.x) * 0.6;
+  };
+  for (let i = 0; i < segundos * 60; i++) actualizar(PASO, piloto);
+  congelado = true; dibujar();
+  return { frutas: frutas.length };
+};
+</script>
+</body>
+</html>

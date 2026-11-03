@@ -1,0 +1,121 @@
+{
+  "id": "c5-33",
+  "titulo": "Mantenerla viva y saber cuándo llamar a un programador",
+  "descripcion": "Montas una revisión mensual de tu web o app con copias y actualizaciones, reconoces los límites del vibe coding y aprendes a encargar el trabajo a un programador con un buen encargo.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:encargo-a-programador"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Mantenerla viva",
+      "subtitulo": "Y saber cuándo llamar a un programador",
+      "narracion": "Publicar tu web o tu app no es el final. Es el principio. Una web que nadie revisa acaba con precios viejos, un horario equivocado o un botón que ya no funciona. En esta clase vas a montar una revisión mensual de veinte minutos. También veremos, con honestidad, dónde están los límites del vibe coding. Y cómo encargar bien el trabajo a un programador cuando llegue el momento."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "La revisión mensual de veinte minutos",
+      "pasos": [
+        "Un día fijo al mes, apuntado en el calendario",
+        "Ábrela en el móvil y en el ordenador",
+        "Pulsa cada botón, enlace y formulario",
+        "Revisa precios, horarios, fechas y textos",
+        "Guarda una copia con la fecha"
+      ],
+      "narracion": "Elige un día fijo al mes y apúntalo en el calendario, por ejemplo el primer lunes. Abre tu web en el móvil y en el ordenador. Pulsa cada botón, cada enlace y cada formulario, como si fueras un cliente. Si tienes enlace de pago, comprueba que sigue llevando al producto correcto. Revisa precios, horarios, fechas y textos. Y termina guardando una copia con la fecha. Son veinte minutos que te ahorran muchos disgustos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Copias: que perder la app sea imposible",
+      "puntos": [
+        "Una copia en tu ordenador y otra en la nube",
+        "Mejor aún: tu proyecto en GitHub",
+        "Copia antes de cada cambio grande",
+        "Apunta qué cambiaste y por qué"
+      ],
+      "narracion": "Las copias son tu seguro. Lo mínimo es tener la carpeta del proyecto en tu ordenador y otra copia en la nube. Mejor aún, guárdala en GitHub, como viste en la sección anterior: cada versión queda guardada y puedes volver atrás. Haz siempre una copia antes de un cambio grande. Y apunta en una línea qué cambiaste y por qué. Dentro de seis meses no te acordarás, y la IA tampoco."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "La copia del mes en GitHub",
+      "lineas": [
+        "$ git add .",
+        "$ git commit -m \"Revisión de noviembre: precios 2027\"",
+        "[main 4f2c9e1] Revisión de noviembre: precios 2027",
+        " 1 file changed, 3 insertions(+), 3 deletions(-)",
+        "$ git push"
+      ],
+      "narracion": "Si usas GitHub, la copia del mes son tres órdenes. La primera prepara todos los cambios. La segunda los guarda con un mensaje que explica qué has hecho, en este caso la revisión de noviembre con los precios de 2027. La respuesta te dice cuántas líneas han cambiado. Y la tercera sube la copia a GitHub. Si usas el editor Cursor o el escritorio de GitHub, puedes hacer lo mismo con botones."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que caduca aunque tú no toques nada",
+      "puntos": [
+        "El dominio: se renueva cada año, pon un aviso",
+        "Planes gratuitos: sus límites y condiciones cambian",
+        "Constructores como Lovable: actualizan piezas",
+        "Leyes y precios: IVA, avisos legales, tarifas"
+      ],
+      "narracion": "Hay cosas que caducan aunque tú no toques nada. Si tienes un dominio propio, se renueva cada año. Pon un aviso en el calendario, porque si caduca, tu web desaparece. Los planes gratuitos cambian sus límites y condiciones: echa un vistazo de vez en cuando. Si usas un constructor como Lovable o Bolt, las piezas por debajo se actualizan. Y las leyes y las tarifas también cambian, como Verifactu en 2027."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuándo llamar a un programador",
+      "columnas": ["Situación", "Por qué"],
+      "filas": [
+        ["Pagos dentro de la app", "Dinero y claves secretas en juego"],
+        ["Datos de salud o de menores", "Protección especial por ley"],
+        ["Muchos usuarios a la vez", "Hay que diseñar la base de datos"],
+        ["Va lenta o se cae", "Rendimiento: necesita diagnóstico"],
+        ["Cuentas y contraseñas", "Un fallo expone a todos"]
+      ],
+      "narracion": "Ahora, los límites. El vibe coding es estupendo para prototipos, herramientas propias y webs sencillas. Pero hay situaciones en las que necesitas a un profesional. Pagos dentro de la app, con suscripciones y claves secretas. Datos de salud o de menores, que la ley protege de forma especial. Muchos usuarios a la vez, porque la base de datos tiene que estar bien pensada. Una app lenta o que se cae. Y cualquier sistema de cuentas y contraseñas, donde un fallo afecta a todos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Señales de que te has pasado del límite",
+      "puntos": [
+        "La IA arregla una cosa y rompe otra",
+        "Ya no entiendes qué hace cada parte",
+        "Te da miedo tocarla",
+        "Guardas datos de otras personas y no sabes dónde"
+      ],
+      "narracion": "Además de esa lista, hay señales que te avisan. La IA arregla una cosa y rompe otra, una y otra vez. Ya no entiendes qué hace cada parte, ni siquiera leyendo con calma. Te da miedo tocarla. O guardas datos de otras personas y no sabes bien dónde están ni quién puede verlos. Si te reconoces en dos de estas, para. No es un fracaso. Has llegado lejos, y ahora toca pedir ayuda."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Un mal encargo frente a uno bueno",
+      "mal": "Quiero una app como la mía pero que funcione bien. ¿Cuánto me cobras?",
+      "bien": "Te paso la ficha, la app actual y qué debe hacer. Fuera: la tienda. Plazo: marzo.",
+      "narracion": "Cuando llames a un programador, el encargo marca la diferencia. Si dices que quieres una app como la tuya pero que funcione bien, te darán un presupuesto a ciegas, o muy alto para cubrirse. Un buen encargo explica qué hay hoy, qué debe hacer, qué queda fuera y para cuándo. Y aquí tienes ventaja. Ya tienes la ficha del proyecto que hiciste en la sección del método y una versión que funciona. Eso vale oro."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "De la ficha del proyecto al encargo",
+      "usuario": "Te pego la ficha de mi proyecto y mi index.html. Redacta un encargo para un programador con estos apartados: qué hace hoy la app, qué necesito, qué queda fuera, datos que maneja y cómo sabré que está terminado. No inventes requisitos: si falta algo, márcalo como PENDIENTE.",
+      "ia": "Te dejo el encargo con los cinco apartados. He marcado como PENDIENTE el número de usuarios previsto, el plazo y el presupuesto, porque no aparecen en tu ficha. Revisa sobre todo el apartado de lo que queda fuera.",
+      "narracion": "La IA te ayuda a convertir tu ficha en un encargo. Pega la ficha y el archivo, y pide estos apartados: qué hace hoy, qué necesitas, qué queda fuera, qué datos maneja y cómo sabrás que está terminado. La frase clave es no inventes requisitos. Así la IA marca como pendiente lo que falta, en lugar de rellenarlo a su manera. Antes de enviarlo, revisa cada línea. El encargo lo firmas tú."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Al contratar, pregunta y deja por escrito",
+      "pasos": [
+        "Pide presupuesto por fases, con entregas",
+        "El código, el dominio y las cuentas, a tu nombre",
+        "Pregunta cómo hará copias y protegerá los datos",
+        "Acordad el mantenimiento después de la entrega"
+      ],
+      "narracion": "Al contratar, pide el presupuesto por fases, con una entrega en cada una. Así ves avances y puedes parar si algo no encaja. Deja por escrito que el código, el dominio y las cuentas de los servicios están a tu nombre. Pregunta cómo hará las copias y cómo protegerá los datos. Y acordad qué pasa después de la entrega: quién arregla los fallos y cuánto cuesta el mantenimiento. Pide dos o tres presupuestos y compara."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Revisión mensual de veinte minutos, en el calendario",
+        "Copias con fecha, mejor en GitHub",
+        "Pagos, salud, muchos usuarios: programador",
+        "Encargo: qué hay, qué falta, qué queda fuera"
+      ],
+      "narracion": "Repasamos. Pon en tu calendario una revisión mensual de veinte minutos y guarda una copia con fecha, mejor en GitHub. Vigila lo que caduca solo, como el dominio. Si tu app necesita pagos dentro, datos de salud, muchos usuarios o cuentas con contraseña, llama a un programador. Y encárgaselo bien. Tu tarea de hoy: apunta la primera revisión en tu calendario y descarga la plantilla del encargo a un programador. Te servirá el día que la necesites."
+    }
+  ]
+}

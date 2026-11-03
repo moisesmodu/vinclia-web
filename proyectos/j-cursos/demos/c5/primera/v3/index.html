@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Cuánto pone cada uno?</title>
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-suave: #E3F5F2;
+    --bote: #F08A24;
+    --texto: #1D2733;
+    --gris: #6B7785;
+    --borde: #DDE3EA;
+    --fondo: #F4F7F9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+    padding: 28px 16px;
+  }
+  header { max-width: 920px; margin: 0 auto 18px; }
+  h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: -0.02em; }
+  .sub { margin: 0; color: var(--gris); }
+  .rejilla {
+    max-width: 920px; margin: 0 auto;
+    display: grid; gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 820px) { .rejilla { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .tarjeta {
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 12px 40px rgba(29, 39, 51, 0.10);
+  }
+  .campo { margin-bottom: 18px; }
+  .etiqueta { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+  .texto, .importe input {
+    width: 100%;
+    font: inherit;
+    padding: 12px 16px;
+    border: 2px solid var(--borde);
+    border-radius: 14px;
+    outline: none;
+  }
+  .texto:focus, .importe input:focus { border-color: var(--acento); }
+  .importe { position: relative; }
+  .importe input { font-size: 28px; font-weight: 700; padding-right: 48px; }
+  .importe span {
+    position: absolute; right: 16px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px; color: var(--gris);
+  }
+  .chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .chip {
+    font: inherit; font-weight: 600;
+    padding: 10px 0;
+    border: 2px solid var(--borde);
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .chip.activo { background: var(--acento); border-color: var(--acento); color: #fff; }
+  .interruptor { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+  .interruptor input { width: 20px; height: 20px; accent-color: var(--acento); }
+  .anadir { display: flex; gap: 8px; }
+  .boton {
+    font: inherit; font-weight: 700;
+    padding: 12px 18px;
+    border: none; border-radius: 14px;
+    background: var(--acento); color: #fff;
+    cursor: pointer;
+  }
+  .boton:disabled { opacity: 0.45; cursor: default; }
+  #lista { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; min-height: 38px; }
+  #lista li {
+    display: flex; align-items: center; gap: 6px;
+    background: var(--acento-suave); color: #0B6F64;
+    border-radius: 999px; padding: 6px 6px 6px 14px; font-weight: 600;
+  }
+  #lista li button {
+    width: 26px; height: 26px; border: none; border-radius: 50%;
+    background: #fff; color: var(--gris); font-size: 16px; cursor: pointer;
+  }
+  .vacio { color: var(--gris); font-size: 14px; margin: 4px 0 0; }
+  .vacio[hidden], #lista:empty { display: none; }
+  .resultado {
+    margin-top: 6px;
+    background: var(--acento);
+    color: #fff;
+    border-radius: 18px;
+    padding: 18px 22px;
+  }
+  .resultado .cada { font-size: 15px; opacity: 0.9; }
+  #porPersona { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; }
+  .detalle { display: flex; justify-content: space-between; margin-top: 8px; font-size: 15px; opacity: 0.95; }
+  #bote {
+    margin-top: 10px; padding: 8px 12px;
+    background: var(--bote); border-radius: 10px;
+    font-weight: 600; font-size: 15px;
+  }
+  #bote[hidden] { display: none; }
+  #copiar { width: 100%; margin-top: 16px; background: #25A35A; font-size: 17px; }
+  #mensaje {
+    margin: 12px 0 0; padding: 12px 14px;
+    background: var(--fondo); border-radius: 12px;
+    font: 14px/1.45 system-ui, sans-serif; white-space: pre-wrap; color: var(--texto);
+  }
+  #aviso {
+    position: fixed; left: 50%; bottom: 24px;
+    transform: translate(-50%, 20px);
+    background: var(--texto); color: #fff;
+    padding: 12px 20px; border-radius: 999px; font-weight: 600;
+    opacity: 0; transition: opacity .2s, transform .2s;
+  }
+  #aviso.visible { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+  <header>
+    <h1>¿Cuánto pone cada uno?</h1>
+    <p class="sub">Divide la cuenta y la propina, y mándalo al grupo.</p>
+  </header>
+
+  <div class="rejilla">
+    <main class="tarjeta">
+      <div class="campo">
+        <label class="etiqueta" for="plan">Plan</label>
+        <input id="plan" class="texto" placeholder="Cena del viernes" autocomplete="off">
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="total">Total de la cuenta</label>
+        <div class="importe">
+          <input id="total" inputmode="decimal" placeholder="0,00" autocomplete="off">
+          <span>€</span>
+        </div>
+      </div>
+
+      <div class="campo">
+        <span class="etiqueta">Propina</span>
+        <div class="chips" id="propinas">
+          <button class="chip" data-p="0">0 %</button>
+          <button class="chip" data-p="5">5 %</button>
+          <button class="chip activo" data-p="10">10 %</button>
+          <button class="chip" data-p="15">15 %</button>
+        </div>
+      </div>
+
+      <label class="interruptor">
+        <input type="checkbox" id="redondear">
+        Redondear hacia arriba lo que pone cada uno
+      </label>
+    </main>
+
+    <section class="tarjeta">
+      <div class="campo">
+        <label class="etiqueta" for="nombre">Quién viene</label>
+        <div class="anadir">
+          <input id="nombre" class="texto" placeholder="Escribe un nombre" autocomplete="off">
+          <button id="anadir" class="boton">Añadir</button>
+        </div>
+        <ul id="lista"></ul>
+        <p class="vacio" id="vacio">Todavía no hay nadie.</p>
+      </div>
+
+      <div class="resultado" aria-live="polite">
+        <div class="cada" id="cada">Cada uno paga</div>
+        <div id="porPersona">0,00 €</div>
+        <div class="detalle"><span>Propina</span><span id="importePropina">0,00 €</span></div>
+        <div class="detalle"><span>Total con propina</span><span id="totalFinal">0,00 €</span></div>
+        <div id="bote" hidden></div>
+      </div>
+
+      <button id="copiar" class="boton">Copiar resumen para WhatsApp</button>
+      <pre id="mensaje"></pre>
+    </section>
+  </div>
+
+  <div id="aviso" role="status"></div>
+
+<script>
+  const euros = new Intl.NumberFormat("es-ES", {
+    style: "currency",
+    currency: "EUR"
+  });
+  let propina = 10;
+  let gente = [];
+
+  // Acepta "86,40" y "86.40"
+  function leerImporte() {
+    const escrito = document.getElementById("total").value;
+    const numero = parseFloat(escrito.replace(",", "."));
+    return isNaN(numero) || numero < 0 ? 0 : numero;
+  }
+
+  // "Ana, Luis y Marta"
+  function unirNombres(nombres) {
+    if (nombres.length < 2) return nombres.join("");
+    return nombres.slice(0, -1).join(", ") + " y " + nombres[nombres.length - 1];
+  }
+
+  function calcular() {
+    const total = leerImporte();
+    const personas = gente.length;
+    const importePropina = total * propina / 100;
+    const totalFinal = total + importePropina;
+    const sinRedondeo = personas ? totalFinal / personas : 0;
+    let porPersona = Math.round(sinRedondeo * 100) / 100;
+    let sobra = 0;
+    const redondear = document.getElementById("redondear").checked;
+    if (redondear && personas) {
+      porPersona = Math.ceil(porPersona);
+      sobra = porPersona * personas - totalFinal;
+    }
+    document.getElementById("cada").textContent =
+      personas ? "Cada uno paga (sois " + personas + ")" : "Añade quién viene";
+    document.getElementById("porPersona").textContent = euros.format(porPersona);
+    document.getElementById("importePropina").textContent = euros.format(importePropina);
+    document.getElementById("totalFinal").textContent = euros.format(totalFinal);
+    const bote = document.getElementById("bote");
+    bote.hidden = sobra < 0.005;
+    bote.textContent = "Sobran " + euros.format(sobra) + " para el bote";
+
+    // El texto que se copia para WhatsApp
+    const plan = document.getElementById("plan").value.trim() || "Resumen de la cuenta";
+    let texto = plan + "\n";
+    texto += "Cuenta: " + euros.format(total) + "\n";
+    texto += "Propina (" + propina + " %): " + euros.format(importePropina) + "\n";
+    texto += "Total: " + euros.format(totalFinal) + "\n";
+    if (personas) {
+      texto += "Somos " + personas + ": " + unirNombres(gente) + "\n";
+      texto += "Cada uno: " + euros.format(porPersona);
+      if (sobra >= 0.005) texto += " (sobran " + euros.format(sobra) + " para el bote)";
+    }
+    document.getElementById("mensaje").textContent = texto;
+    document.getElementById("copiar").disabled = !personas || !total;
+  }
+
+  function pintarLista() {
+    const lista = document.getElementById("lista");
+    lista.innerHTML = "";
+    document.getElementById("vacio").hidden = gente.length > 0;
+    gente.forEach((nombre, i) => {
+      const li = document.createElement("li");
+      li.textContent = nombre;
+      const quitar = document.createElement("button");
+      quitar.textContent = "×";
+      quitar.setAttribute("aria-label", "Quitar a " + nombre);
+      quitar.addEventListener("click", () => { gente.splice(i, 1); pintarLista(); });
+      li.appendChild(quitar);
+      lista.appendChild(li);
+    });
+    calcular();
+  }
+
+  function anadir() {
+    const campo = document.getElementById("nombre");
+    const nombre = campo.value.trim();
+    if (!nombre) return;
+    gente.push(nombre);
+    campo.value = "";
+    campo.focus();
+    pintarLista();
+  }
+
+  function avisar(texto) {
+    const aviso = document.getElementById("aviso");
+    aviso.textContent = texto;
+    aviso.classList.add("visible");
+    clearTimeout(avisar.t);
+    avisar.t = setTimeout(() => aviso.classList.remove("visible"), 2500);
+  }
+
+  async function copiar() {
+    const texto = document.getElementById("mensaje").textContent;
+    try {
+      await navigator.clipboard.writeText(texto);
+    } catch (e) {
+      // Plan B para navegadores que no dejan usar el portapapeles
+      const area = document.createElement("textarea");
+      area.value = texto;
+      document.body.appendChild(area);
+      area.select();
+      document.execCommand("copy");
+      area.remove();
+    }
+    avisar("Resumen copiado. Pégalo en el grupo.");
+  }
+
+  document.getElementById("propinas").addEventListener("click", (e) => {
+    const chip = e.target.closest(".chip");
+    if (!chip) return;
+    propina = Number(chip.dataset.p);
+    document.querySelectorAll(".chip").forEach(c => c.classList.toggle("activo", c === chip));
+    calcular();
+  });
+  document.getElementById("anadir").addEventListener("click", anadir);
+  document.getElementById("nombre").addEventListener("keydown", (e) => { if (e.key === "Enter") anadir(); });
+  document.getElementById("total").addEventListener("input", calcular);
+  document.getElementById("plan").addEventListener("input", calcular);
+  document.getElementById("redondear").addEventListener("change", calcular);
+  document.getElementById("copiar").addEventListener("click", copiar);
+  pintarLista();
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "seccion": 8,
+  "titulo": "Cuestionario: el siguiente nivel",
+  "preguntas": [
+    {
+      "pregunta": "Quieres que tus clientes se registren con correo y contraseña y que tú veas todas sus reservas. ¿Qué te hace falta?",
+      "respuestas": [
+        "Un archivo index.html con localStorage",
+        "Una base de datos con inicio de sesión, por ejemplo con un constructor de apps y Supabase",
+        "Publicar la web en Netlify Drop",
+        "Un plan de pago de un chat de IA"
+      ],
+      "correcta": 1,
+      "explicacion": "localStorage guarda los datos en el navegador de cada persona, así que nadie más los ve. Para usuarios con cuenta y datos compartidos necesitas un servidor con base de datos y login, como Supabase."
+    },
+    {
+      "pregunta": "¿Cuál es la mejor forma de no quedarte atado a una plataforma como Lovable o Bolt?",
+      "respuestas": [
+        "Pagar el plan más caro",
+        "No usar nunca base de datos",
+        "Conectar GitHub desde el primer día para tener una copia del código",
+        "Hacer capturas de pantalla de la app"
+      ],
+      "correcta": 2,
+      "explicacion": "Si el código solo vive dentro de la plataforma, dependes de sus precios y condiciones. Con una copia en GitHub, el código es tuyo y puedes cambiar de herramienta o pasárselo a un programador."
+    },
+    {
+      "pregunta": "Un agente como Cursor o Claude Code te propone un cambio para añadir una línea al horario, y ves que toca 300 líneas en varias secciones. ¿Qué haces?",
+      "respuestas": [
+        "No lo aceptas: le explicas qué querías y le pides solo ese cambio",
+        "Lo aceptas, porque la IA sabe más que tú",
+        "Lo aceptas y lo subes directamente a internet",
+        "Borras la carpeta del proyecto y empiezas de cero"
+      ],
+      "correcta": 0,
+      "explicacion": "Revisa siempre antes de aceptar. Una petición pequeña no debería cambiar cientos de líneas. Recházalo, pide solo lo que necesitas y prueba en el navegador antes de guardar la versión."
+    },
+    {
+      "pregunta": "Has pegado un cambio de la IA en index.html, todavía sin hacer commit, y ha desaparecido el horario. ¿Qué orden lo deja como en la última versión guardada?",
+      "respuestas": [
+        "git push",
+        "git init",
+        "git log --oneline",
+        "git restore index.html"
+      ],
+      "correcta": 3,
+      "explicacion": "git restore con el nombre del archivo descarta los cambios sin guardar y lo deja como en el último commit. git log solo enseña el historial y git push sube las versiones a GitHub."
+    },
+    {
+      "pregunta": "¿Por qué no debes escribir una clave de API dentro del HTML de tu web?",
+      "respuestas": [
+        "Porque la web carga más despacio",
+        "Porque cualquier visitante puede verla con «Ver código fuente» y gastar a tu nombre",
+        "Porque el navegador no sabe leer claves",
+        "Porque Netlify no deja publicar webs con claves"
+      ],
+      "correcta": 1,
+      "explicacion": "Todo lo que hay en la página llega al navegador de cada visitante. La clave debe vivir en un servidor, en una variable de entorno, y el archivo .env debe estar en .gitignore."
+    }
+  ]
+}

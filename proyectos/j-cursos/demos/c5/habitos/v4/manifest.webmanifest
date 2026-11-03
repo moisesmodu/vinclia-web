@@ -1,0 +1,16 @@
+{
+  "name": "Mis hábitos",
+  "short_name": "Hábitos",
+  "description": "Apunta tus hábitos cada día y mira tus rachas.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F7F9",
+  "theme_color": "#0E9F8E",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

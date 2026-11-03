@@ -1,0 +1,116 @@
+{
+  "id": "c5-04",
+  "titulo": "Cómo funciona una web: HTML, CSS y JavaScript sin tecnicismos",
+  "descripcion": "Distingues las tres partes de cualquier web (HTML, CSS y JavaScript) sobre tu propia app de la cuenta, y aprendes a pedir cambios a la IA diciendo en qué parte están.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:chuleta-web", "demo:primera"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cómo funciona una web, sin tecnicismos",
+      "subtitulo": "HTML, CSS y JavaScript sobre tu propia app",
+      "narracion": "No vas a aprender a programar en esta clase. Vas a aprender algo más útil para ti. Reconocer las tres partes de las que está hecha cualquier página web. Cuando sepas cuál es cuál, podrás pedirle a la IA cambios mucho más precisos. Y lo vamos a ver sobre algo que ya conoces, la app para dividir la cuenta de la clase uno."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Una web es como una casa",
+      "puntos": [
+        "HTML: las paredes y los muebles. Qué hay",
+        "CSS: la pintura y la decoración. Cómo se ve",
+        "JavaScript: la electricidad. Qué pasa al pulsar",
+        "Las tres viven juntas en tu archivo index.html"
+      ],
+      "narracion": "Piensa en una casa. El HTML son las paredes y los muebles. Dice qué hay en la página. Un título, un campo para escribir, un botón. El CSS es la pintura y la decoración. Dice cómo se ve cada cosa. Colores, tamaños, espacios, esquinas redondeadas. Y el JavaScript es la instalación eléctrica. Hace que pasen cosas cuando pulsas un botón o escribes un número. En tu app, las tres partes están dentro del mismo archivo."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La app completa: las tres partes juntas",
+      "fuente": "demo:primera/v3",
+      "url": "Documentos/propinas/v3/index.html",
+      "acciones": [
+        { "fill": ["#plan", "Cumple de Laura"] },
+        { "fill": ["#total", "64,50"] },
+        { "fill": ["#nombre", "Ana"] }, { "press": "Enter" },
+        { "fill": ["#nombre", "Luis"] }, { "press": "Enter" },
+        { "fill": ["#nombre", "Marta"] }, { "press": "Enter" }
+      ],
+      "narracion": "Esta es la versión tres, funcionando, con las tres partes trabajando juntas. Los campos, los botones y los textos son HTML. El verde azulado, las tarjetas blancas y las esquinas redondas son CSS. Y que al escribir un nombre aparezca en la lista y cambie lo que paga cada uno es JavaScript. Ahora vamos a quitar piezas para ver qué hace cada una."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La misma app sin CSS: solo HTML",
+      "fuente": "demo:primera/v3",
+      "url": "Documentos/propinas/v3/index.html",
+      "acciones": [
+        { "fill": ["#plan", "Cumple de Laura"] },
+        { "fill": ["#total", "64,50"] },
+        { "fill": ["#nombre", "Ana"] }, { "press": "Enter" },
+        { "fill": ["#nombre", "Luis"] }, { "press": "Enter" },
+        { "eval": "document.querySelectorAll('style').forEach(s => s.remove())" }
+      ],
+      "narracion": "Hemos quitado todo el CSS de la página. Mira qué queda. Están todos los elementos, el título, los campos, los botones y la lista. Pero parece un documento de los años noventa. Letra por defecto, sin colores, todo apilado. Eso es el HTML a pelo. Tiene el contenido y el orden, pero no el aspecto. Si un día algo se ve raro pero todo está ahí, el problema suele estar en el CSS."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "HTML: los botones de la propina",
+      "archivo": "index.html",
+      "lenguaje": "html",
+      "codigo": "<div class=\"campo\">\n  <span class=\"etiqueta\">Propina</span>\n  <div class=\"chips\" id=\"propinas\">\n    <button class=\"chip\" data-p=\"0\">0 %</button>\n    <button class=\"chip\" data-p=\"5\">5 %</button>\n    <button class=\"chip activo\" data-p=\"10\">10 %</button>\n    <button class=\"chip\" data-p=\"15\">15 %</button>\n  </div>\n</div>",
+      "narracion": "Así se ve el HTML por dentro. Cada cosa va entre etiquetas, unas palabras entre ángulos que se abren y se cierran. Aquí hay cuatro botones, uno por cada propina, y el texto que ves en cada botón está entre la etiqueta de apertura y la de cierre. Fíjate en las palabras class e id. Son nombres que sirven de enganche. El CSS los usa para decorar y el JavaScript para saber qué botón has pulsado."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "CSS: los colores de toda la app",
+      "archivo": "index.html",
+      "lenguaje": "css",
+      "codigo": ":root {\n  --acento: #0E9F8E;\n  --acento-suave: #E3F5F2;\n  --bote: #F08A24;\n  --texto: #1D2733;\n  --gris: #6B7785;\n  --borde: #DDE3EA;\n  --fondo: #F4F7F9;\n}",
+      "narracion": "Esto es CSS. Es una lista de colores con nombre, al principio del archivo. Acento es el verde azulado, bote es el naranja, fondo es el gris clarito. El resto del CSS no repite los colores, sino que dice usa el acento. Gracias a eso, cambiar el color de toda la app es cambiar una sola línea. Los códigos con almohadilla y seis letras o cifras son la forma en que el ordenador escribe un color."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "JavaScript: qué pasa al pulsar Añadir",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function anadir() {\n  const campo = document.getElementById(\"nombre\");\n  const nombre = campo.value.trim();\n  if (!nombre) return;\n  gente.push(nombre);\n  campo.value = \"\";\n  campo.focus();\n  pintarLista();\n}",
+      "narracion": "Y esto es JavaScript. Es una función, es decir, una receta con nombre. Se llama anadir y se ejecuta cuando pulsas el botón Añadir. Léela como una receta. Coge el campo del nombre. Quita los espacios que sobren. Si está vacío, no hagas nada. Si no, mete el nombre en la lista de gente, vacía el campo, deja el cursor ahí y vuelve a pintar la lista. No tienes que saber escribirlo, pero ya ves que se puede seguir."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Lo que quieres cambiar, y dónde está",
+      "columnas": ["Quiero cambiar…", "Está en"],
+      "filas": [
+        ["Un texto, un campo o un botón nuevo", "HTML"],
+        ["Un color, un tamaño o un espacio", "CSS"],
+        ["Cómo se ve en el móvil", "CSS"],
+        ["Un cálculo o qué pasa al pulsar", "JavaScript"],
+        ["Que algo se guarde o se copie", "JavaScript"]
+      ],
+      "narracion": "Esta tabla es la que vas a usar de verdad. Si quieres cambiar un texto o añadir un campo, eso es HTML. Si quieres cambiar un color, un tamaño o cómo se ve en el móvil, es CSS. Si quieres cambiar un cálculo, o lo que pasa al pulsar un botón, o que algo se guarde o se copie, es JavaScript. Muchas veces un cambio toca dos partes, y no pasa nada. La IA se encarga."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pedir un cambio nombrando la parte",
+      "usuario": "En el CSS, cambia solo el color de acento a un azul oscuro elegante. No toques el HTML ni el JavaScript, y no cambies el naranja del bote.",
+      "ia": "Cambia una única línea, la variable --acento, y te dice cuál es para que puedas cambiarla tú la próxima vez.",
+      "narracion": "Mira cómo cambia la forma de pedir. En lugar de decir ponlo más bonito, dices en qué parte está el cambio y qué no debe tocar. La IA cambia una sola línea, la del color de acento. Y como se lo has preguntado bien, te dice cuál es. La próxima vez podrías cambiarla tú. Pedir así reduce mucho el riesgo de que la IA rompa algo que ya funcionaba."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir a ciegas frente a pedir con mapa",
+      "mal": "Hazlo más bonito y que funcione mejor.",
+      "bien": "En el CSS, más espacio entre los botones de propina. En el JavaScript, que no acepte importes negativos.",
+      "narracion": "Compara estas dos peticiones. La primera obliga a la IA a adivinar qué es más bonito y qué es funcionar mejor. Puede cambiar media app. La segunda dice qué parte tocar y qué resultado quieres, y separa un cambio de diseño de un cambio de funcionamiento. Con la segunda sabes qué comprobar después. No necesitas saber programar para pedir así. Solo necesitas este mapa de tres partes."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "HTML: qué hay. CSS: cómo se ve. JavaScript: qué pasa",
+        "Las tres partes viven en tu archivo index.html",
+        "Al pedir un cambio, di en qué parte está",
+        "Di también qué no debe tocar la IA"
+      ],
+      "narracion": "Repasamos. El HTML dice qué hay en la página. El CSS, cómo se ve. Y el JavaScript, qué pasa cuando haces algo. En tus apps del curso las tres partes viven en un solo archivo. Tu tarea de hoy. Pide a la IA que cambie el color de acento de tu app nombrando la parte, como en el ejemplo. En los recursos tienes una chuleta con esta tabla. En la próxima clase veremos dónde guardar ese archivo y cómo abrirlo en el navegador."
+    }
+  ]
+}

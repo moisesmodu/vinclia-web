@@ -1,0 +1,112 @@
+{
+  "id": "c5-06",
+  "titulo": "Leer código sin saber programar",
+  "descripcion": "Aprendes a orientarte dentro del código que te da la IA: encontrar dónde está cada cosa, entender un trozo con ayuda de la IA y hacer tú mismo cambios pequeños como un texto, un color o un número.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:chuleta-web"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Leer código sin saber programar",
+      "subtitulo": "No necesitas escribirlo. Sí orientarte dentro.",
+      "narracion": "No vas a escribir código en este curso. Lo escribe la IA. Pero sí te conviene saber orientarte dentro de él, igual que sabes leer una factura de la luz sin ser electricista. En esta clase vas a aprender a encontrar dónde está cada cosa, a entender un trozo con ayuda de la IA y a hacer tú mismo cambios pequeños sin pedir nada."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres trucos para orientarte",
+      "puntos": [
+        "Busca un texto que veas en pantalla con Control F",
+        "Arriba el CSS, en medio el HTML, abajo el JavaScript",
+        "Lee los comentarios: las líneas que empiezan por //",
+        "Los nombres ayudan: total, propina, personas…"
+      ],
+      "narracion": "Tres trucos. El primero, busca. Si quieres cambiar el texto de un botón, pulsa control F y escribe ese texto. Te lleva directo. El segundo, en tus apps de un archivo el orden suele ser el mismo. Arriba el CSS, en medio el HTML y abajo el JavaScript. El tercero, lee los comentarios. Son líneas que empiezan por dos barras y que el ordenador ignora. Están para las personas. Pide a la IA que los ponga en castellano."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Un trozo de la app: la cuenta",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "function calcular() {\n  const total = leerImporte();\n  const importePropina = total * propina / 100;\n  const totalFinal = total + importePropina;\n  const sinRedondeo = totalFinal / personas;\n  let porPersona = Math.round(sinRedondeo * 100) / 100;",
+      "narracion": "Mira este trozo de la versión dos. Es el corazón de la app. Aunque no sepas programar, fíjate en que los nombres son palabras en castellano. Total, importe de la propina, total final, por persona. Si lo lees despacio, casi se entiende solo. La propina es el total por el porcentaje, dividido entre cien. El total final es la suma. Y lo que paga cada uno es el total final entre las personas, redondeado a céntimos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pídele a la IA que te lo explique",
+      "usuario": "Explícame este trozo línea a línea como si no supiera nada de programación. Usa un ejemplo con números: 86,40 € de cuenta, 10 % de propina y 4 personas.",
+      "ia": "Línea a línea: lee lo que has escrito, 8,64 € de propina, 95,04 € en total, 23,76 € por persona. Explica que Math.round redondea a céntimos multiplicando por 100 y dividiendo después.",
+      "narracion": "Cuando un trozo no se entiende, pídele a la IA que te lo explique. El truco está en pedir un ejemplo con números. Ochenta y seis con cuarenta de cuenta, diez por ciento, cuatro personas. Así no te quedas con una explicación abstracta. La IA va línea a línea y te enseña los números que salen en cada paso. Y puedes comprobarlo con la calculadora del móvil, que es justo lo que tienes que hacer."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Otro trozo: el redondeo",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "let sobra = 0;\nif (document.getElementById(\"redondear\").checked) {\n  porPersona = Math.ceil(porPersona);\n  sobra = porPersona * personas - totalFinal;\n}",
+      "narracion": "Aquí aparece una palabra que verás muchísimo, if. Significa si, en el sentido de una condición. Este trozo se lee así. Si la casilla de redondear está marcada, redondea hacia arriba lo que paga cada uno. Y calcula lo que sobra, que es lo que se paga entre todos menos lo que costaba la cuenta. Si la casilla no está marcada, este bloque no se ejecuta y lo que sobra es cero."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Palabras que vas a ver mucho",
+      "columnas": ["Palabra", "Qué quiere decir"],
+      "filas": [
+        ["function", "Una receta con nombre"],
+        ["const, let", "Una caja con un nombre y un valor"],
+        ["if", "Si pasa esto, haz aquello"],
+        ["getElementById", "Busca el elemento con ese id"],
+        ["addEventListener", "Cuando pase algo, ejecuta esto"]
+      ],
+      "narracion": "Con estas cinco palabras entiendes la mayoría de lo que vas a ver. Function es una receta con nombre. Const y let son cajas donde se guarda un valor, por ejemplo el total. If es una condición. Get element by id busca en la página el elemento con ese nombre de enganche. Y add event listener significa que, cuando pase algo, como un clic, se ejecute una receta. Tienes esta tabla en la chuleta."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los cambios que puedes hacer tú",
+      "archivo": "index.html",
+      "lenguaje": "css",
+      "codigo": ":root {\n  --acento: #0E9F8E;\n  --acento-suave: #E3F5F2;\n  --bote: #F08A24;",
+      "narracion": "No todo hay que pedírselo a la IA. Hay cambios tan pequeños que los haces antes tú. Un texto, un color o un número. Por ejemplo, el color de acento está en una sola línea al principio del archivo. Si cambias ese código de color por otro, cambia toda la app. Para elegir el código de un color, busca selector de color en Google y copia el que empieza por almohadilla."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Una línea cambiada, toda la app de otro color",
+      "fuente": "demo:primera/v2",
+      "url": "Documentos/propinas/v2/index.html",
+      "acciones": [
+        { "eval": "document.documentElement.style.setProperty('--acento', '#5B4BD6'); document.documentElement.style.setProperty('--acento-suave', '#ECEAFB')" },
+        { "fill": ["#total", "86,40"] },
+        { "click": "#mas" }, { "click": "#mas" }
+      ],
+      "narracion": "Este es el resultado de cambiar el acento por un morado, y el acento suave por un morado clarito. Los botones de propina, el contador y el recuadro del resultado han cambiado a la vez. No ha hecho falta tocar nada más. Guarda, recarga y listo. Si algo sale mal, deshaces con control Z y vuelves a guardar. Para cambios así de pequeños, hacerlo tú es más rápido que pedirlo."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cuándo lo haces tú y cuándo la IA",
+      "mal": "Pedir a la IA el archivo entero otra vez para cambiar una palabra o un color.",
+      "bien": "Textos, colores y números: tú. Cálculos, botones nuevos o cosas que no entiendes: la IA.",
+      "narracion": "La regla es sencilla. Si es un texto, un color o un número que encuentras con control F, cámbialo tú. Si es un cálculo, un botón nuevo o algo que no entiendes, pídeselo a la IA. Pedir el archivo entero para cambiar una palabra tiene un riesgo, porque la IA puede cambiar otras cosas sin avisar. Si se lo pides, añade siempre que no toque nada más."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Haz esto hoy",
+      "pasos": [
+        "Abre tu index.html en el Bloc de notas o en VS Code",
+        "Busca con Control F el título y cámbialo",
+        "Cambia el color de acento por otro que te guste",
+        "Guarda, recarga el navegador y comprueba",
+        "Pide a la IA que te explique la función calcular"
+      ],
+      "narracion": "Tu práctica de hoy, en cinco pasos. Abre tu archivo index punto html con el Bloc de notas o con Visual Studio Code. Busca el título de la app y cámbialo por otro. Busca el color de acento y pon uno que te guste. Guarda, recarga y comprueba que se ve. Si algo se rompe, deshaz. Por último, copia la función calcular, pégala en el chat y pide que te la explique con un ejemplo con números."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Para encontrar algo, busca su texto con Control F",
+        "Los nombres y los comentarios te dicen qué hace",
+        "Si no lo entiendes, pide una explicación con números",
+        "Textos, colores y números los puedes cambiar tú"
+      ],
+      "narracion": "Repasamos. Para encontrar algo en el código, busca un texto que veas en pantalla. Los nombres y los comentarios te dicen qué hace cada trozo. Si no lo entiendes, pide una explicación con un ejemplo con números y compruébala. Y los cambios pequeños, como textos, colores y números, los puedes hacer tú. En la próxima clase veremos lo que puede salir mal. Errores, inventos de la IA y seguridad."
+    }
+  ]
+}

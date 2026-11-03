@@ -90,7 +90,7 @@
   .muestra table { width: 100%; border-collapse: collapse; }
   .muestra th { text-align: left; color: var(--gris); font-weight: 600; border-bottom: 2px solid var(--borde); padding: 6px 4px; }
   .muestra td { padding: 7px 4px; border-bottom: 1px solid var(--borde); }
-  .muestra td.num, .muestra th.num { text-align: right; }
+  .muestra td.num, .muestra th.num { text-align: right; white-space: nowrap; padding-left: 10px; }
   .muestra .total td { font-weight: 800; border-bottom: none; font-size: 16px; color: var(--acento-oscuro); }
   section.bloque { max-width: 1080px; margin: 0 auto; padding: 40px 24px; }
   h2 { font-size: 28px; margin: 0 0 20px; letter-spacing: -0.01em; }
@@ -119,6 +119,8 @@
     h1 { font-size: 32px; }
     .sub { font-size: 17px; }
     .tarjetas { grid-template-columns: 1fr; }
+    .muestra { padding: 16px; font-size: 13px; }
+    .muestra .total td { font-size: 15px; }
     .comprar { width: 100%; text-align: center; }
     footer a { margin: 0 16px 0 0; }
   }

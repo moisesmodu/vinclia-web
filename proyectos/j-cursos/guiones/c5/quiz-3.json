@@ -1,0 +1,59 @@
+{
+  "seccion": 3,
+  "titulo": "Cuestionario: el método para pedir bien a la IA",
+  "preguntas": [
+    {
+      "pregunta": "En la ficha del proyecto, ¿por qué es tan importante el apartado «Qué NO hará»?",
+      "respuestas": [
+        "Porque así la IA escribe el código más rápido",
+        "Porque cada cosa que dejas fuera es una fuente de errores menos y la primera versión queda pequeña",
+        "Porque es obligatorio para publicar la app en internet",
+        "Porque la IA no puede hacer apps con usuarios ni categorías"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo que dejas fuera mantiene la primera versión pequeña y probable de funcionar. Compartir la lista entre dos móviles, por ejemplo, necesita un servidor: mejor dejarlo para una versión posterior."
+    },
+    {
+      "pregunta": "¿Cuáles son las tres partes de una buena instrucción para la IA?",
+      "respuestas": [
+        "Contexto, tarea y límites",
+        "Saludo, petición y agradecimiento",
+        "Código, diseño y textos"
+      ],
+      "correcta": 0,
+      "explicacion": "Contexto: quién eres, la ficha y lo que ya hay. Tarea: una sola cosa. Límites: cómo debe ser el resultado y qué no tocar, por ejemplo un solo archivo, completo, sin librerías."
+    },
+    {
+      "pregunta": "Tu app funciona y quieres añadir algo nuevo. ¿Qué haces antes de pedir el cambio a la IA?",
+      "respuestas": [
+        "Pedir cinco mejoras a la vez para ahorrar tiempo",
+        "Guardar el archivo nuevo encima del que funciona",
+        "Borrar la conversación anterior y empezar sin la ficha",
+        "Copiar la carpeta de la versión buena y trabajar en la copia, por ejemplo v2"
+      ],
+      "correcta": 3,
+      "explicacion": "Sin Git, guardar versiones es copiar la carpeta: v1, v2, v3. La versión que funcionaba no se toca, así que si el cambio sale mal, vuelves a ella abriendo la carpeta anterior."
+    },
+    {
+      "pregunta": "Pulsas el botón «Vaciar lista» y no pasa nada. ¿Cuál es el mejor siguiente paso?",
+      "respuestas": [
+        "Escribir a la IA «no funciona, arréglalo»",
+        "Abrir la consola con F12, repetir la acción y copiar el mensaje en rojo",
+        "Pedir a la IA que rehaga la app desde cero"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando un botón no hace nada, suele haber un error en la consola. En la lista de la compra decía que guardarLista no estaba definido: con ese mensaje y la línea, la IA sabe dónde mirar."
+    },
+    {
+      "pregunta": "¿Qué información conviene darle a la IA cuando algo falla?",
+      "respuestas": [
+        "Solo el mensaje de la consola, nada más",
+        "Tu contraseña y la clave de la app, para que pueda probarla",
+        "Qué hiciste, qué esperabas, qué pasa, el mensaje de la consola y qué cambiaste por última vez",
+        "Una captura de pantalla sin explicación"
+      ],
+      "correcta": 2,
+      "explicacion": "Con esos cinco datos la IA no tiene que adivinar. Si la consola no muestra nada en rojo, dilo también. Y nunca pegues contraseñas, claves ni datos personales en el chat."
+    }
+  ]
+}

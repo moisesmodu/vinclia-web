@@ -1,0 +1,111 @@
+{
+  "id": "c5-02",
+  "titulo": "Qué es el vibe coding (y qué no es)",
+  "descripcion": "Entiendes qué es el vibe coding, de dónde sale la expresión, para qué sirve y para qué no, y cuál es tu papel: decidir y comprobar mientras la IA escribe el código.",
+  "vistaPrevia": true,
+  "recursos": ["plantilla:primera-app"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Qué es el vibe coding (y qué no es)",
+      "subtitulo": "Describes lo que quieres. La IA escribe el código. Tú decides.",
+      "narracion": "En la clase anterior hiciste una app sin escribir ni una línea de código. Eso tiene nombre: vibe coding. En esta clase vamos a ver qué es exactamente, de dónde sale, para qué sirve muy bien y dónde tienes que ir con cuidado. Así sabrás desde el principio qué puedes esperar, y qué no, de este curso."
+    },
+    {
+      "tipo": "frase",
+      "texto": "Describes lo que quieres y dejas que la IA escriba el código.",
+      "autor": "La idea del vibe coding, Andrej Karpathy, febrero de 2025",
+      "narracion": "La expresión la popularizó Andrej Karpathy, un investigador muy conocido en inteligencia artificial, en febrero de 2025. La idea es sencilla. En lugar de escribir el código tú, describes con palabras normales lo que quieres. La IA escribe el código, tú lo pruebas y vas pidiendo cambios. Vibe en inglés significa algo así como ambiente o sensación. Programas a base de decir lo que quieres y ver si te convence."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Programar de siempre frente a vibe coding",
+      "mal": "Aprendes un lenguaje durante meses y escribes cada línea tú. Tardas en ver el primer resultado.",
+      "bien": "Describes lo que quieres en castellano, la IA escribe el código y tú pruebas y corriges.",
+      "narracion": "Compara las dos formas. Programar de la manera clásica exige aprender un lenguaje durante meses antes de hacer algo útil. Con vibe coding ves un resultado en minutos. Pero ojo, no hemos dicho que lo de la izquierda sea malo. Los programadores siguen siendo necesarios, y mucho. Lo que cambia es que tú, sin ser programador, ya puedes construir herramientas pequeñas para tu vida y tu trabajo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El ciclo que vas a repetir siempre",
+      "pasos": [
+        "Describe un cambio pequeño y concreto",
+        "La IA escribe o modifica el código",
+        "Pruébalo tú, con datos normales y raros",
+        "Si algo falla, cuéntaselo con detalle",
+        "Cuando funcione, guarda esa versión"
+      ],
+      "narracion": "Todo el curso gira alrededor de este ciclo. Primero describes un cambio pequeño y concreto. La IA escribe el código. Tú lo pruebas, y no solo con los datos fáciles. Si algo falla, se lo cuentas con detalle, igual que se lo contarías a un técnico. Y cuando funciona, guardas esa versión antes de seguir. En la clase anterior hiciste este ciclo tres veces. Por eso hay tres versiones de la app."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Probar con datos raros: cero personas",
+      "fuente": "demo:primera/v1",
+      "url": "Documentos/propinas/v1/index.html",
+      "acciones": [
+        { "fill": ["#total", "60"] },
+        { "fill": ["#personas", "0"] },
+        { "click": "#calcular" }
+      ],
+      "narracion": "Mira por qué el paso de probar es tan importante. Esta es la primera versión de la app. Con datos normales funcionaba bien. Pero si escribes cero personas y pulsas Calcular, el resultado dice Infinity euros. Es decir, infinito. La IA no se equivocó al hacer lo que le pediste. Simplemente nadie le dijo qué hacer con cero personas. Ese caso lo tienes que pensar tú."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Contarle el fallo y pedir el arreglo",
+      "usuario": "He probado con 0 personas y sale «Cada uno paga: Infinity €». Haz que el número de personas sea como mínimo 1 y que no se pueda bajar de ahí. No cambies nada más.",
+      "ia": "Explica que al dividir entre cero el resultado es infinito. Propone un contador con botones + y − que no baja de 1, y lo aplica sin tocar el resto.",
+      "narracion": "Así se cuenta un fallo. Qué has hecho, qué ha salido y qué quieres que pase. Copia el resultado tal cual, aunque te parezca raro. La IA entiende enseguida que estás dividiendo entre cero y lo corrige. En la segunda versión de la app ya viste el resultado. El contador de personas no baja de uno. Este ir y venir es el vibe coding de verdad."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Para qué sirve y dónde ir con cuidado",
+      "columnas": ["Va muy bien para", "Necesita revisión técnica"],
+      "filas": [
+        ["Prototipos para enseñar una idea", "Apps que cobran dinero"],
+        ["Herramientas para ti o tu equipo", "Datos de salud o datos sensibles"],
+        ["Webs sencillas de un negocio", "Muchos usuarios a la vez"],
+        ["Juegos y apps personales", "Cuentas de usuario y contraseñas"]
+      ],
+      "narracion": "Ahora, el mapa honesto. El vibe coding va muy bien para prototipos, para herramientas que usas tú o tu equipo, para la web de un negocio pequeño y para juegos o apps personales. En la otra columna están los casos donde un fallo sale caro. Apps que cobran, que guardan datos sensibles, que usan muchas personas o que manejan contraseñas. Ahí puedes empezar tú, pero antes de abrirlo al público necesitas que lo revise alguien que sepa."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que el vibe coding no es",
+      "puntos": [
+        "No es magia: la IA se equivoca y a veces inventa",
+        "No es no pensar: tú decides qué se construye",
+        "No es copiar sin mirar: cada cambio se prueba",
+        "No sustituye a un programador en apps críticas"
+      ],
+      "narracion": "Y ahora lo que no es. No es magia. La IA se equivoca y a veces se inventa cosas que no existen, lo veremos en la sección dos. No es dejar de pensar. Al revés, tu trabajo es decidir qué quieres y en qué orden. No es copiar y pegar sin mirar. Cada cambio se prueba. Y no sustituye a un programador cuando hay dinero, datos sensibles o mucha gente detrás."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA escribe el código, tú decides y compruebas.",
+      "autor": "La regla de oro de este curso",
+      "narracion": "Esta es la regla de oro del curso y la vas a oír muchas veces. La IA escribe el código. Tú decides qué se hace y compruebas que funciona. Si te quedas con una sola idea de esta clase, que sea esta. Todo lo demás, las instrucciones, las versiones o las herramientas, sirve para cumplirla mejor."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tu papel en cada proyecto",
+      "puntos": [
+        "Tener claro qué quieres antes de pedirlo",
+        "Avanzar en pasos pequeños, uno cada vez",
+        "Probar cada cambio, también los casos raros",
+        "Guardar versiones para poder volver atrás",
+        "Saber cuándo pedir ayuda a un programador"
+      ],
+      "narracion": "Entonces, cuál es tu papel. Tener claro qué quieres antes de pedirlo. Para eso usaremos una ficha de proyecto de una página. Avanzar en pasos pequeños, uno cada vez. Probar cada cambio. Guardar versiones, para poder volver atrás si algo se rompe. Y reconocer cuándo el proyecto ha crecido tanto que conviene llamar a un profesional. Todo esto lo practicarás en los cuatro proyectos."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Lo que te llevas de esta clase",
+      "puntos": [
+        "Vibe coding: describes, la IA escribe, tú pruebas",
+        "El ciclo: pedir, probar, contar el fallo, guardar",
+        "Ideal para prototipos, herramientas y webs sencillas",
+        "Pagos, datos sensibles o muchos usuarios: revisión"
+      ],
+      "narracion": "Repasamos. Vibe coding es describir lo que quieres y dejar que la IA escriba el código, mientras tú pruebas y decides. El ciclo es siempre el mismo. Pides un cambio pequeño, pruebas, cuentas el fallo si lo hay y guardas la versión. Tu tarea de hoy. Abre tu app de la clase anterior y pruébala con datos raros. Cero personas, un importe vacío o con coma. Apunta lo que falle. En la próxima clase veremos las herramientas y cuál usar para qué."
+    }
+  ]
+}

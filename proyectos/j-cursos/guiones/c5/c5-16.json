@@ -1,0 +1,161 @@
+{
+  "id": "c5-16",
+  "titulo": "El plan: pantallas y datos de una app sencilla",
+  "descripcion": "Planificas una app de hábitos antes de escribir una sola línea: dibujas sus pantallas, decides qué datos guarda y entiendes dónde se guardan. Sales con la plantilla de pantallas y datos rellena y un plan en cuatro instrucciones.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:pantallas-y-datos",
+    "demo:habitos"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "El plan de una app de hábitos",
+      "subtitulo": "Pantallas y datos antes del código",
+      "narracion": "Empezamos el segundo proyecto. Esta vez no es una web para que la vean otros. Es una app para ti. Una app de hábitos: leer un rato, caminar, beber agua, lo que quieras mantener cada día. Es un proyecto perfecto para aprender, porque tiene de todo un poco. Pantallas, datos que hay que guardar, cálculos y un gráfico. En esta clase no vamos a escribir código. Vamos a hacer el plan, que es lo que decide si la IA acierta o se pierde."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Así acabará la app en la clase 19",
+      "fuente": "demo:habitos/v4",
+      "url": "archivo: habitos/v4/index.html",
+      "acciones": [
+        {
+          "eval": "(()=>{const k=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toLocaleDateString('sv')};const h=(id,nombre,c,ds)=>({id,nombre,creado:k(c),hechos:ds.map(k)});localStorage.setItem('mis-habitos',JSON.stringify([h(1,'Leer 10 minutos',30,[0,1,2,3,4,5,6,7,8,9,10,11,12,15,16]),h(2,'Caminar 30 minutos',30,[1,2,3,4,5,7,8,10]),h(3,'Beber 2 litros de agua',30,[0,1,3,4,6,8,9]),h(4,'Estirar 5 minutos',3,[1,2])]));location.reload()})()",
+          "wait": 900
+        }
+      ],
+      "narracion": "Mira primero adónde vamos a llegar. Esta es la app terminada, con datos de ejemplo de unas semanas. Arriba, la fecha y cuántos hábitos llevas hoy. A la izquierda, tu lista: marcas el círculo y queda hecho. Debajo de cada nombre ves tu racha de días seguidos y los últimos siete días. A la derecha, las cifras de la semana y un gráfico de barras. Y al final la podrás instalar en el móvil como cualquier otra app. Todo en un solo archivo, sin servidor y gratis."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Por qué planificar antes de pedir código",
+      "mal": "«Hazme una app de hábitos chula». La IA decide pantallas, datos y estilo por ti.",
+      "bien": "Le das las pantallas dibujadas y la lista de datos. La IA construye lo que tú has decidido.",
+      "narracion": "Podrías escribir solo hazme una app de hábitos. La IA te daría algo, y hasta puede que bonito. El problema llega en el segundo paso. Cada vez que pidas un cambio, la IA volverá a decidir por ti, y la app se irá deformando. Con un plan pasa lo contrario. Tú decides qué se ve y qué se guarda, y la IA solo construye. Además, el plan te sirve para comprobar. Si algo no está en el plan, no lo has pedido."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Dibuja la pantalla en un papel",
+      "pasos": [
+        "Arriba: fecha de hoy, título y progreso del día",
+        "Un campo y un botón para añadir un hábito",
+        "La lista: un círculo para marcar y el nombre",
+        "Más tarde: racha, semana y gráfico",
+        "Al final: instalar y copia de seguridad"
+      ],
+      "narracion": "Coge un papel y dibuja la pantalla del móvil, un rectángulo alto. No hace falta dibujar bien. Arriba, la fecha de hoy, el título y una barra con cuántos llevas. Debajo, un campo de texto y un botón para añadir. Luego la lista, con un círculo para marcar cada hábito. Deja hueco para lo que vendrá después: la racha, la semana y el gráfico. Y abajo del todo, las tarjetas para instalar la app y guardar una copia. Una sola pantalla basta. Menos pantallas, menos cosas que fallan."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Los datos de cada hábito",
+      "columnas": [
+        "Dato",
+        "Ejemplo",
+        "Para qué sirve"
+      ],
+      "filas": [
+        [
+          "id",
+          "1793696400000",
+          "Distinguir dos hábitos iguales"
+        ],
+        [
+          "nombre",
+          "Leer 10 minutos",
+          "Lo que ves en la lista"
+        ],
+        [
+          "creado",
+          "2026-11-03",
+          "No contar días de antes"
+        ],
+        [
+          "hechos",
+          "2026-11-01, 2026-11-02…",
+          "Rachas, semana y gráfico"
+        ]
+      ],
+      "narracion": "Ahora lo más importante: qué datos guarda la app. Para cada hábito, solo cuatro. Un identificador, que es un número único para no confundir dos hábitos que se llamen igual. El nombre. La fecha en que lo creaste. Y la lista de días en que lo hiciste, con año, mes y día. Fíjate en lo que no guardamos: ni la racha ni el porcentaje. Esos se calculan a partir de los días. Si guardaras la racha aparte, tarde o temprano no cuadraría con los días marcados."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Guarda hechos, calcula el resto",
+      "puntos": [
+        "Guarda lo que pasó: qué días hiciste cada hábito",
+        "Calcula al momento: racha, porcentaje, gráfico",
+        "Un solo sitio para cada dato: nada que se contradiga",
+        "Si cambias una cuenta, no pierdes nada del pasado"
+      ],
+      "narracion": "Esta idea te servirá para cualquier app. Guarda lo que pasó y calcula todo lo demás cuando haga falta. Lo que pasó es que el martes leíste y el miércoles no. La racha, el porcentaje y el gráfico son cuentas que salen de ahí. Así cada dato vive en un solo sitio y nada se contradice. Y hay una ventaja escondida. Si más adelante decides contar la racha de otra forma, cambias la cuenta y tu historial sigue intacto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Dónde se guardan: localStorage",
+      "puntos": [
+        "Un cajón del navegador para cada web",
+        "Se queda en ese navegador y en ese dispositivo",
+        "Si borras los datos del navegador, se pierde",
+        "Perfecto para apps personales, no para clientes"
+      ],
+      "narracion": "Los datos tienen que vivir en algún sitio. Usaremos algo que se llama localStorage, almacenamiento local. Imagina un cajón que el navegador reserva para cada web. La app guarda ahí tus hábitos y los recupera al abrirla. Tiene tres cosas que debes saber. Se queda en ese navegador y en ese dispositivo: lo que marques en el móvil no aparece en el ordenador. Si borras los datos del navegador, se pierde. Y nadie más lo ve, ni siquiera tú desde otro sitio."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Cuándo sirve y cuándo no",
+      "mal": "Reservas de clientes guardadas con localStorage: cada reserva se queda en el móvil de cada cliente.",
+      "bien": "Tus hábitos con localStorage: datos tuyos, en tu móvil, sin servidor y sin coste.",
+      "narracion": "Por eso localStorage es perfecto para esta app y un desastre para otras. Si hicieras un formulario de reservas y lo guardaras así, cada reserva se quedaría en el móvil del cliente. Tú no verías ninguna. Para recoger datos de otras personas necesitas un servidor y una base de datos, y cumplir la ley de protección de datos. Lo veremos en la sección 8. Para una app personal, en cambio, es ideal. Tus datos no salen de tu móvil y no pagas nada."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pide a la IA que revise el plan",
+      "usuario": "Voy a hacer una app de hábitos personal en un solo archivo index.html, sin librerías. Te paso mi plan: [pegas la plantilla de pantallas y datos]. No escribas código todavía. Dime qué falta, qué es confuso y si los datos que guardo bastan para calcular rachas y estadísticas.",
+      "ia": "Con la lista de días hechos basta para calcular rachas y estadísticas. Guarda las fechas como año-mes-día. Una duda: si hoy aún no has marcado un hábito, ¿su racha se rompe? Te propongo empezar sin estadísticas.",
+      "narracion": "Antes del código, pídele a la IA que revise el plan. Pega la plantilla y dile claramente que no escriba código todavía. Una respuesta típica es como esta. Confirma que con los días hechos basta para calcularlo todo. Y hace una pregunta muy buena: si hoy aún no has marcado un hábito, ¿la racha se rompe? Lo decidiremos en la clase 18. Si la IA te propone empezar por lo sencillo, hazle caso. Es justo lo que vamos a hacer."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "El plan en cuatro instrucciones",
+      "columnas": [
+        "Versión",
+        "Qué añade",
+        "Clase"
+      ],
+      "filas": [
+        [
+          "v1",
+          "Añadir hábitos y marcarlos hoy",
+          "17"
+        ],
+        [
+          "v2",
+          "Se guarda al recargar; editar y borrar",
+          "17"
+        ],
+        [
+          "v3",
+          "Rachas, semana y gráfico",
+          "18"
+        ],
+        [
+          "v4",
+          "Instalable y copia de seguridad",
+          "19"
+        ]
+      ],
+      "narracion": "Con el plan claro, lo partimos en cuatro instrucciones, como aprendiste en la sección del método. Primera versión: añadir hábitos y marcarlos como hechos hoy. Segunda: que se guarde al recargar, y poder editar y borrar. Tercera: rachas, estadísticas de la semana y el gráfico. Cuarta: instalarla en el móvil y hacer copias de seguridad. Cada versión funciona por sí sola. Si algo se tuerce, vuelves a la anterior. Las cuatro las tienes en los recursos para comparar."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Dibuja tu pantalla en papel, aunque sea fea",
+        "Haz la lista de datos: guarda hechos, calcula el resto",
+        "localStorage: tu navegador, tu dispositivo",
+        "Tarea: rellena la plantilla y pide a la IA que la revise"
+      ],
+      "narracion": "Repasamos. Antes de pedir código, dibuja la pantalla y haz la lista de datos. Guarda lo que pasó y calcula el resto. Los datos irán a localStorage, que vive en tu navegador y en tu dispositivo, y sirve para apps personales. Tu tarea de hoy, en 15 minutos. Descarga la plantilla de pantallas y datos de esta clase. Rellénala para la app de hábitos, o para tu propia idea. Y pide a la IA que la revise sin escribir código. En la próxima clase, la primera versión."
+    }
+  ]
+}

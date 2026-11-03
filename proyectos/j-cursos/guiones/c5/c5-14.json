@@ -1,0 +1,120 @@
+{
+  "id": "c5-14",
+  "titulo": "Diseño, colores y que se vea bien en el móvil",
+  "descripcion": "Con dos instrucciones conviertes la primera versión en una web con personalidad: paleta de colores, tipos de letra e ilustraciones propias, y después un móvil perfecto con menú, botones fijos de llamar y WhatsApp, opiniones de ejemplo y aviso legal.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:web-negocio-ficha", "demo:peluqueria"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Diseño, colores y móvil",
+      "subtitulo": "De folleto a web con personalidad",
+      "narracion": "Tienes una primera versión que funciona y con los datos revisados. Ahora toca que dé gusto verla. En esta clase darás dos instrucciones. La primera cambia el diseño: colores, letras e ilustraciones. La segunda la deja perfecta en el móvil, que es donde la verá casi todo el mundo. Además, añade dos cosas que una web de negocio necesita: opiniones y aviso legal. Antes de empezar, asegúrate de tener la copia v1 guardada."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Tres decisiones antes de pedir el diseño",
+      "puntos": [
+        "Una paleta de tres o cuatro colores",
+        "Dos letras: una para títulos y otra para texto",
+        "Qué pones donde irían las fotos",
+        "Mucho espacio en blanco"
+      ],
+      "narracion": "Si le pides a la IA que la haga bonita, te dará algo genérico. Mejor decide tú tres cosas. Una paleta de tres o cuatro colores, que pueden salir del local, del logo o de tu ropa de trabajo. Dos tipos de letra, una para títulos y otra para el texto. Y qué poner donde irían las fotos. Lo demás, como el espacio en blanco y los tamaños, lo hace bien la IA si se lo pides."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La segunda instrucción: el diseño",
+      "usuario": "Mejora el diseño sin cambiar textos ni datos. Estilo cálido y moderno, de peluquería de barrio. Paleta: ciruela, coral, verde salvia y fondo crema. Títulos con Georgia y texto con la letra del sistema. Sin imágenes externas ni fotos de internet: donde iría una foto, pon bloques de color con ilustraciones SVG sencillas hechas por ti. Marca el día de hoy en el horario. Dame el archivo completo.",
+      "ia": "He reorganizado la página: portada con una ilustración de un espejo y unas tijeras, tarjetas para cada servicio, tres bloques de color con dibujos para el salón y tarjetas para el horario y cómo llegar. El horario resalta el día de hoy y dice si está abierto ahora.",
+      "narracion": "Esta es la segunda instrucción. Empieza con un límite importante: no cambies textos ni datos. Así no tendrás que revisarlo todo otra vez. Luego el estilo, la paleta y las letras. Georgia es una letra que ya viene en casi todos los ordenadores y móviles, así que no hace falta descargar nada. Y la parte de las imágenes: nada de fotos de internet. La IA dibuja ilustraciones sencillas con código, en un formato que se llama SVG."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 2 en el ordenador",
+      "fuente": "demo:peluqueria/v2",
+      "url": "index.html · en tu ordenador",
+      "narracion": "Y este es el resultado. Es el mismo contenido, pero ahora parece la web de un negocio cuidado. La portada tiene un mensaje claro, sal con el pelo como te gusta, y dos botones: pedir cita y ver precios. A la derecha, una ilustración de un espejo con unas tijeras, dibujada con código. Más abajo, los servicios en tarjetas, los bloques de color del salón y el horario, que marca el día de hoy."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La paleta, en un solo sitio",
+      "archivo": "index.html",
+      "lenguaje": "css",
+      "codigo": ":root {\n  --crema: #FBF5EE;\n  --arena: #F1E4D6;\n  --tinta: #2A2230;\n  --suave: #6B6070;\n  --ciruela: #7B3F61;\n  --coral: #E07A5F;\n  --salvia: #9DB5A0;\n  --titulos: Georgia, \"Times New Roman\", serif;\n}",
+      "narracion": "Mira cómo ha guardado la IA los colores: al principio del estilo, cada uno con un nombre en castellano. Crema, arena, ciruela, coral. Ese código con letras y números es la forma de escribir un color. La ventaja es enorme: si mañana quieres el ciruela un poco más oscuro, lo cambias en esta línea y cambia en toda la web. Puedes pedirle a la IA que lo haga o hacerlo tú."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Por qué no copiar fotos de internet",
+      "puntos": [
+        "Casi todas tienen derechos de autor",
+        "Las de bancos gratuitos: lee su licencia",
+        "Lo mejor: fotos tuyas del local y de tu trabajo",
+        "Fotos de clientes, solo con permiso por escrito"
+      ],
+      "narracion": "Por qué tanto empeño en no usar fotos de internet. Porque casi todas tienen derechos de autor, y usarlas en la web de un negocio puede acabar en una reclamación. Hay bancos de imágenes gratuitos, pero lee su licencia. Lo mejor, de lejos, son fotos tuyas: el local, tu trabajo, tu equipo. Cuando las tengas, sustituyes los bloques de color. Y si sale un cliente, necesitas su permiso por escrito."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La misma versión, en el móvil",
+      "nota": "El menú se sale por la derecha y el texto se aprieta junto al dibujo",
+      "fuente": "demo:peluqueria/v2@movil",
+      "narracion": "Ahora, la prueba de fuego: el móvil. Para verlo sin publicar, en Chrome o Edge pulsa la tecla F12 y luego el icono del móvil, o Control, Mayúsculas y M. Y aquí está el problema. El menú no cabe y se sale por la derecha. El título y el texto se aprietan en media pantalla. Esto pasa mucho: la IA diseña pensando en una pantalla grande si no le dices lo contrario. Por eso se prueba siempre."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La tercera instrucción: móvil y legal",
+      "usuario": "En el móvil se ve mal: el menú se sale y el texto se aprieta junto al dibujo. Para pantallas de menos de 760 píxeles: una columna, menú con botón de tres rayas y abajo dos botones fijos, Llamar y WhatsApp. Añade una sección de opiniones con tres de ejemplo, marcadas claramente como inventadas. En el pie, Aviso legal y Privacidad en una ventana, con huecos entre corchetes para mis datos. No toques el diseño de ordenador.",
+      "ia": "Hecho. En el móvil todo va en una columna, el menú se abre con el botón de tres rayas y hay una barra fija abajo con Llamar y WhatsApp. He añadido tres opiniones con el aviso «Opiniones inventadas para esta demo» y dos ventanas con textos legales de ejemplo para completar.",
+      "narracion": "Tercera instrucción. Primero describe el problema tal como lo ves. Luego qué quieres en el móvil: una columna, un menú con el botón de tres rayas y dos botones fijos abajo, para llamar y para escribir. Esos botones fijos son lo que más citas trae, porque siempre están a mano del pulgar. Además, pide opiniones de ejemplo marcadas como inventadas, y el aviso legal con huecos para tus datos. Y termina protegiendo lo que ya funciona: no toques el diseño de ordenador."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Menú y botones fijos",
+      "nota": "Toca las tres rayas: se abre el menú. Abajo, Llamar y WhatsApp siempre visibles",
+      "fuente": "demo:peluqueria/v3@movil",
+      "acciones": [{ "click": "#abrir-menu" }],
+      "narracion": "Así queda. Arriba, el botón de tres rayas. Al tocarlo se abre el menú con las secciones, y al elegir una se cierra solo. Abajo, la barra fija con Llamar y WhatsApp, que te acompaña mientras bajas por la página. El botón de llamar abre directamente el teclado del teléfono con el número marcado. En el ordenador esa barra no aparece, porque ahí tiene menos sentido."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El menú se abre y se cierra",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "// Menú del móvil: se abre y se cierra con el botón\nconst boton = document.getElementById('abrir-menu');\nconst menu = document.getElementById('menu');\nboton.addEventListener('click', () => {\n  const abierto = menu.classList.toggle('abierto');\n  boton.setAttribute('aria-expanded', abierto);\n});",
+      "narracion": "Este es el trozo de código que hace funcionar el menú. Puedes leerlo casi como una frase. Busca el botón y busca el menú. Cuando alguien haga clic en el botón, pon o quita al menú la etiqueta abierto. El estilo dice que el menú solo se ve cuando tiene esa etiqueta. La última línea avisa a los lectores de pantalla, que usan las personas ciegas, de si el menú está abierto o cerrado."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Opiniones de ejemplo, avisadas",
+      "nota": "Cuando tengas opiniones reales y con permiso, sustituyes estas",
+      "fuente": "demo:peluqueria/v3@movil",
+      "acciones": [{ "eval": "document.getElementById('opiniones').scrollIntoView()" }],
+      "narracion": "Bajamos a las opiniones. Fíjate en que cada una dice opinión de ejemplo, y debajo hay un aviso bien visible. Esto es importante. Publicar opiniones inventadas como si fueran de clientes reales es engañar, y la normativa de consumo lo prohíbe. Aquí sirven para ver cómo quedaría la sección. En tu web, usa solo opiniones reales, con permiso de quien las escribió. O quita la sección hasta tenerlas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Aviso legal y privacidad, en pocas líneas",
+      "puntos": [
+        "Aviso legal: titular, NIF, domicilio y contacto",
+        "Privacidad: qué datos usas, para qué y cómo borrarlos",
+        "Sin cookies ni estadísticas: no hace falta el aviso",
+        "Si añades un mapa o estadísticas, revisa cookies",
+        "Rellena los huecos y revísalo con tu gestoría"
+      ],
+      "narracion": "En el pie hay dos enlaces que abren una ventana. El aviso legal identifica al titular de la web: nombre, NIF, domicilio y contacto. Lo pide la ley de servicios de la sociedad de la información. La privacidad explica qué datos usas, para qué y cómo pedir que los borres. Esta web no usa cookies ni estadísticas, así que no necesita el aviso de cookies. Si un día añades un mapa incrustado o estadísticas, eso cambia. Rellena los huecos y que lo mire tu gestoría."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Tú decides paleta, letras e imágenes",
+        "Sin fotos de internet: ilustraciones o fotos tuyas",
+        "Prueba siempre en el móvil y describe lo que ves",
+        "Tarea: versiones v2 y v3 de tu web, guardadas"
+      ],
+      "narracion": "Repasamos. Para el diseño, decide tú la paleta, las letras y qué va en lugar de las fotos. Nada de fotos copiadas de internet. Prueba siempre en el móvil y, si algo falla, describe exactamente lo que ves. Añade botones fijos para llamar y escribir, opiniones solo reales y el aviso legal con tus datos. Tu tarea de hoy: haz la versión 2 y la versión 3 de tu web, y guarda una copia de cada una. En la próxima clase la publicamos en internet."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "c5-35",
+  "titulo": "Clase extra: recursos, plantillas y siguientes pasos",
+  "descripcion": "Repaso del curso, tu siguiente paso y los enlaces actualizados: plantillas, herramientas, cupones para los otros cursos de la serie y Numi Tech si tienes hijos o das clase.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:enlaces-y-cupones"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Clase extra",
+      "subtitulo": "Recursos, plantillas y siguientes pasos",
+      "narracion": "Esta es la clase extra del curso. Es corta y sin deberes obligatorios. Vamos a repasar lo que te llevas, a ver cuál es tu siguiente paso y a contarte qué tienes en los recursos de esta clase. Si has llegado hasta aquí, ya has hecho algo que mucha gente solo se plantea: crear y publicar tus propias herramientas. No hace falta tomar notas. Todo lo que menciono está en los recursos de esta clase."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que te llevas del curso",
+      "puntos": [
+        "Entiendes HTML, CSS y JavaScript sin tecnicismos",
+        "Un método: ficha, pasos pequeños y versiones",
+        "Cuatro proyectos reales publicados",
+        "Validar, cobrar y mantener sin sorpresas",
+        "Saber cuándo llamar a un programador"
+      ],
+      "narracion": "Repasemos. Entiendes cómo funciona una web, sin tecnicismos, y sabes leer código para comprobar qué hace. Tienes un método: la ficha del proyecto, instrucciones con contexto, pasos pequeños y versiones guardadas. Has hecho cuatro proyectos reales: una web de negocio, una app de hábitos, una calculadora de presupuestos y un juego. Sabes validar una idea, cobrar con un enlace de pago y mantener tu app viva. Y sabes dónde está el límite."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Tu siguiente paso",
+      "pasos": [
+        "Termina y publica tu proyecto final",
+        "Úsalo un mes y apunta qué echas de menos",
+        "Haz una segunda versión con lo apuntado",
+        "Cuando estés cómodo, prueba Lovable o Cursor"
+      ],
+      "narracion": "El siguiente paso no es aprender más cosas, sino usar las que ya sabes. Termina y publica tu proyecto final. Úsalo durante un mes y apunta lo que echas de menos. Con esa lista, haz una segunda versión, en pasos pequeños. Y cuando te sientas cómodo, prueba un constructor como Lovable o un editor como Cursor, que viste en la sección del siguiente nivel. Cada proyecto te hará más rápido y con mejor criterio. Y si un día te atascas, vuelve a la clase de cuando algo falla. Ese método sirve para cualquier proyecto."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Las plantillas del curso",
+      "puntos": [
+        "La ficha del proyecto, para empezar cada idea",
+        "Instrucciones de ejemplo para pedir bien",
+        "Validar la idea y encargar a un programador",
+        "Las apps de ejemplo, con todas sus versiones"
+      ],
+      "narracion": "A lo largo del curso has ido descargando plantillas. La ficha del proyecto, para empezar cualquier idea. Las instrucciones de ejemplo, para pedir bien a la IA. La plantilla para validar una idea y la del encargo a un programador. Y las apps de ejemplo, con todas sus versiones, para que las abras y compares. Guárdalas juntas en una carpeta. Son tu caja de herramientas para el próximo proyecto."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "En los recursos de esta clase",
+      "columnas": [
+        "Recurso",
+        "Para qué"
+      ],
+      "filas": [
+        [
+          "Enlaces actualizados",
+          "Herramientas y ayudas oficiales"
+        ],
+        [
+          "Plantillas del curso",
+          "Todas juntas, en un solo sitio"
+        ],
+        [
+          "Cupones de otros cursos",
+          "Niños, robótica e IA para autónomos"
+        ],
+        [
+          "Numi Tech",
+          "Si tienes hijos o das clase"
+        ]
+      ],
+      "narracion": "En los recursos de esta clase tienes los enlaces actualizados. Los de las herramientas que hemos usado y sus páginas de ayuda oficiales, porque los menús y los planes cambian. Tienes también la lista de plantillas del curso. Hay cupones para los otros cursos de esta serie: programación para niños, robótica e IA para autónomos. Y si tienes hijos o das clase, encontrarás Numi Tech, para que los peques aprendan a programar. Vuelve a esta clase siempre que necesites un enlace."
+    },
+    {
+      "tipo": "frase",
+      "texto": "La IA escribe el código, tú decides y compruebas.",
+      "narracion": "Si de todo el curso te quedas con una sola frase, que sea esta. La IA escribe el código, tú decides y compruebas. Pasos pequeños, probar cada cambio y guardar versiones. Nada de contraseñas, claves ni datos personales en el chat. Y cuando el proyecto lleve pagos, datos sensibles o muchos usuarios, pide ayuda a un profesional. Con eso, puedes construir casi todo lo que se te ocurra para tu día a día."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Gracias por llegar hasta aquí",
+      "puntos": [
+        "Publica tu proyecto final y úsalo un mes",
+        "Tus plantillas, juntas en una carpeta",
+        "Enlaces y cupones en los recursos",
+        "La IA escribe el código, tú decides y compruebas"
+      ],
+      "narracion": "Gracias por llegar hasta aquí. Publica tu proyecto final y úsalo durante un mes. Guarda tus plantillas juntas. En los recursos de esta clase tienes los enlaces actualizados y los cupones. Y si el curso te ha sido útil, una valoración sincera ayuda mucho a que otras personas lo encuentren. Comparte tu proyecto en las preguntas del curso: nos encantará verlo. Mucha suerte con lo que construyas."
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "id": "c5-17",
+  "titulo": "La lista de hábitos que se guarda sola",
+  "descripcion": "Construyes con la IA las dos primeras versiones de la app de hábitos: añadir hábitos y marcarlos hechos hoy, y después que se guarden en el navegador para que sigan ahí al recargar, con editar, borrar y deshacer.",
+  "vistaPrevia": false,
+  "recursos": [
+    "demo:habitos",
+    "plantilla:pantallas-y-datos"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La lista que se guarda sola",
+      "subtitulo": "Versiones 1 y 2 de la app de hábitos",
+      "narracion": "En la clase anterior hiciste el plan. Hoy construimos las dos primeras versiones de la app. La primera: añadir hábitos y marcarlos como hechos hoy. La segunda: que todo siga ahí cuando recargues la página, y que puedas editar y borrar. Verás la instrucción exacta que escribimos a la IA, lo que contestó, cómo comprobarlo y el trozo de código que hace la magia de guardar. Ten abierto tu chat de IA y tu carpeta del proyecto."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 1: la lista básica",
+      "usuario": "Crea una app de hábitos en un solo archivo index.html, con CSS y JavaScript dentro y sin librerías. Arriba: la fecha de hoy, el título «Mis hábitos» y una barra «X de Y hechos hoy». Debajo: un campo y un botón «Añadir». Cada hábito, en una tarjeta con un círculo para marcarlo hecho hoy. Datos de cada hábito: id, nombre, creado y hechos (lista de fechas AAAA-MM-DD). De momento, sin guardar nada. Diseño limpio, acento #0E9F8E, que se vea bien en el móvil.",
+      "ia": "Aquí tienes index.html completo, con el CSS y el JavaScript dentro. He añadido un mensaje para cuando la lista está vacía. Para probarlo, guárdalo y ábrelo con doble clic en el navegador.",
+      "narracion": "Esta es la primera instrucción. Fíjate en que es el plan de la clase anterior puesto en palabras. Un solo archivo, sin librerías. Qué va arriba, qué va en medio y cómo es cada tarjeta. Los cuatro datos de cada hábito, con el formato de las fechas. Y un límite claro: de momento, sin guardar nada. La IA devuelve el archivo completo. En nuestra versión añadió un mensaje para cuando la lista está vacía. No lo pedimos, pero encaja. Lo dejamos."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La versión 1 funcionando",
+      "fuente": "demo:habitos/v1",
+      "url": "archivo: habitos/v1/index.html",
+      "acciones": [
+        {
+          "fill": [
+            "#nuevo",
+            "Leer 10 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Caminar 30 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Beber 2 litros de agua"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "click": "li:nth-child(1) .check"
+        },
+        {
+          "click": "li:nth-child(3) .check",
+          "wait": 500
+        }
+      ],
+      "narracion": "Guarda el archivo como index.html en una carpeta llamada v1 y ábrelo con doble clic. Aquí he añadido tres hábitos y he marcado dos. La barra de arriba dice dos de tres hechos hoy y se rellena sola. Los hábitos hechos se ven en gris con el círculo verde. Si vuelves a tocar el círculo, se desmarca. Parece poca cosa, pero ya tienes una app que responde a lo que haces. Y todo el código está en un archivo que puedes abrir y leer."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Marcar y desmarcar el día de hoy",
+      "archivo": "v1/index.html",
+      "lenguaje": "javascript",
+      "codigo": "function alternarHoy(id) {\n  const h = habitos.find(x => x.id === id);\n  const dia = hoy();\n  if (h.hechos.includes(dia)) {\n    h.hechos = h.hechos.filter(d => d !== dia);\n  } else {\n    h.hechos.push(dia);\n  }\n  pintar();\n}",
+      "narracion": "Este trozo es lo que pasa cuando tocas un círculo. No hace falta que lo escribas tú, pero sí que lo entiendas a grandes rasgos. Primero busca el hábito por su identificador. Después mira si la fecha de hoy ya está en su lista de días hechos. Si está, la quita. Si no está, la añade. Al final vuelve a pintar la pantalla. Fíjate en que no hay ninguna casilla de hecho o no hecho. Solo la lista de días, como decidimos en el plan."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Comprueba la versión 1",
+      "pasos": [
+        "Añade un hábito con el botón y otro con Enter",
+        "Pulsa Añadir con el campo vacío: no debe pasar nada",
+        "Marca y desmarca: la barra sube y baja",
+        "Escribe un nombre muy largo y mira si se rompe",
+        "Ábrela en el móvil o estrecha la ventana",
+        "Recarga la página… y todo desaparece"
+      ],
+      "narracion": "Antes de seguir, comprueba. Añade un hábito con el botón y otro pulsando Enter. Pulsa Añadir con el campo vacío: no debe aparecer una tarjeta en blanco. Marca y desmarca, y mira la barra. Escribe un nombre larguísimo, a ver si se sale de la tarjeta. Estrecha la ventana para ver cómo queda en el móvil. Y por último, recarga la página. Todo desaparece. No es un error: es justo lo que pedimos. Ahora toca arreglarlo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Instrucción 2: que se guarde, editar y borrar",
+      "usuario": "Funciona bien. Siguiente paso, solo este: que los hábitos no se pierdan al recargar. Guárdalos en localStorage con la clave «mis-habitos» cada vez que algo cambie y cárgalos al abrir. Añade a cada tarjeta un botón para editar el nombre ahí mismo (Enter guarda, Escape cancela) y otro para borrar, con un aviso abajo que permita deshacer durante 5 segundos. No cambies nada más.",
+      "ia": "He añadido dos funciones, cargar y guardar, y llamo a guardar en cada cambio. Cada tarjeta tiene ahora un lápiz para editar y una papelera. Al borrar sale un aviso con «Deshacer» durante 5 segundos.",
+      "narracion": "Guarda una copia de la versión 1 y pide la segunda. Fíjate en tres detalles. Empieza diciendo que funciona, para que la IA no toque lo que va bien. Da el nombre de la clave donde se guardará. Y termina con no cambies nada más. La IA añade dos funciones, cargar y guardar. Un aviso: es frecuente que, para borrar, la IA ponga una ventana de confirmación aunque hayas pedido deshacer. Si te pasa, recuérdaselo. Lee siempre si ha hecho lo que pediste."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Guardar y cargar con localStorage",
+      "archivo": "v2/index.html",
+      "lenguaje": "javascript",
+      "codigo": "const CLAVE = 'mis-habitos';\nlet habitos = cargar();\n\nfunction cargar() {\n  try {\n    return JSON.parse(localStorage.getItem(CLAVE)) || [];\n  } catch (e) {\n    return [];\n  }\n}\n\nfunction guardar() {\n  localStorage.setItem(CLAVE, JSON.stringify(habitos));\n}",
+      "narracion": "Y este es el corazón de la versión 2. La función guardar convierte tu lista de hábitos en texto y la mete en el cajón del navegador, con la etiqueta mis hábitos. Ese formato de texto se llama JSON. La función cargar hace lo contrario: saca el texto y lo vuelve a convertir en lista. Si el cajón está vacío o el texto está estropeado, empieza con una lista vacía en vez de romperse. Eso es lo que hace la parte del try. Cada cambio llama a guardar."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que tienes que saber de localStorage",
+      "puntos": [
+        "Cada web tiene su cajón, separado de las demás",
+        "Solo en este navegador: Chrome y Firefox no lo comparten",
+        "Solo en este dispositivo: el móvil no ve el del ordenador",
+        "Borrar datos de navegación lo vacía para siempre"
+      ],
+      "narracion": "Repasa lo que ya sabes del almacenamiento local, ahora que lo has visto funcionar. Cada web tiene su propio cajón, y una web no puede leer el de otra. Es de ese navegador: si abres la app en Chrome y luego en Firefox, verás dos listas distintas. Es de ese dispositivo: el móvil no ve lo del ordenador. Y si borras los datos de navegación, se vacía para siempre. Por eso en la clase 19 añadiremos una copia de seguridad."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Editar sin salir de la lista",
+      "fuente": "demo:habitos/v2",
+      "url": "archivo: habitos/v2/index.html",
+      "acciones": [
+        {
+          "fill": [
+            "#nuevo",
+            "Leer 10 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Caminar 30 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Beber 2 litros de agua"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "click": "li:nth-child(1) .check"
+        },
+        {
+          "eval": "location.reload()",
+          "wait": 800
+        },
+        {
+          "click": "li:nth-child(2) .editar"
+        },
+        {
+          "fill": [
+            "li:nth-child(2) input",
+            "Caminar 20 minutos"
+          ]
+        }
+      ],
+      "narracion": "Así queda la versión 2. Aquí he añadido tres hábitos, he marcado uno y he recargado la página. Siguen ahí, con la marca puesta. Esa es la prueba más importante de esta clase. Luego he tocado el lápiz del segundo hábito. El nombre se convierte en un campo de texto y lo cambio a caminar 20 minutos. Con Enter se guarda, con Escape se cancela. Prueba también a cerrar el navegador entero y volver a abrir el archivo."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Borrar con red de seguridad",
+      "nota": "Al borrar aparece un aviso con «Deshacer» durante 5 segundos.",
+      "fuente": "demo:habitos/v2@movil",
+      "acciones": [
+        {
+          "fill": [
+            "#nuevo",
+            "Leer 10 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Caminar 30 minutos"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "fill": [
+            "#nuevo",
+            "Beber 2 litros de agua"
+          ]
+        },
+        {
+          "click": "#add"
+        },
+        {
+          "click": "li:nth-child(1) .check"
+        },
+        {
+          "click": "li:nth-child(2) .borrar",
+          "wait": 500
+        }
+      ],
+      "narracion": "Y esta es la misma versión en el móvil, justo después de borrar un hábito. Abajo aparece un aviso con un botón de deshacer. Durante cinco segundos puedes recuperarlo, en el mismo sitio donde estaba. Es mejor que una ventana de estás seguro, porque no interrumpe y perdona los dedos torpes. Comprueba las tres cosas: borrar, deshacer y recargar después de borrar. El hábito borrado no debe volver."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Versión 1: añadir y marcar hoy, sin guardar",
+        "Versión 2: localStorage, editar, borrar y deshacer",
+        "Prueba clave: marca, recarga y comprueba",
+        "Tarea: construye las dos versiones y guarda cada una"
+      ],
+      "narracion": "Repasamos. La versión 1 añade hábitos y los marca como hechos hoy, sin guardar nada. La versión 2 los guarda en el almacenamiento local, y permite editar, borrar y deshacer. La prueba que nunca debes saltarte: marca algo, recarga y comprueba que sigue ahí. Tu tarea de hoy, en 20 minutos. Construye las dos versiones con tu chat de IA, cada una en su carpeta. Si te atascas, compara con las del recurso de esta clase. En la próxima, rachas y gráfico."
+    }
+  ]
+}

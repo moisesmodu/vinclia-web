@@ -1,0 +1,59 @@
+{
+  "seccion": 9,
+  "titulo": "Cuestionario: de idea a producto",
+  "preguntas": [
+    {
+      "pregunta": "Vas a hablar con posibles usuarios de tu idea. ¿Qué pregunta te da información más fiable?",
+      "respuestas": [
+        "¿Comprarías una plantilla así?",
+        "¿Te parece buena mi idea?",
+        "¿Cómo hiciste la última vez esa tarea y cuánto tardaste?",
+        "¿Cuánto pagarías por ella?"
+      ],
+      "correcta": 2,
+      "explicacion": "Preguntar por lo que la persona hizo de verdad da hechos. Preguntar por lo que haría en el futuro da respuestas educadas que no valen nada. Es la idea del libro The Mom Test."
+    },
+    {
+      "pregunta": "¿Por qué conviene poner el precio previsto en la página de «apúntate»?",
+      "respuestas": [
+        "Porque apuntarse sabiendo el precio es una señal de interés mucho más fuerte",
+        "Porque la ley obliga a poner precio en cualquier página web",
+        "Porque así Stripe cobra por adelantado"
+      ],
+      "correcta": 0,
+      "explicacion": "Apuntarse gratis a algo que parece gratis es fácil. Si la persona se apunta sabiendo lo que costará, la señal de interés es mucho más fiable."
+    },
+    {
+      "pregunta": "Quieres cobrar desde tu web sencilla sin programar el cobro. ¿Qué es lo más seguro?",
+      "respuestas": [
+        "Pegar la clave secreta de Stripe en el chat para que la IA programe el pago",
+        "Poner tu número de Bizum de particular en la web",
+        "Pedir los datos de la tarjeta en un formulario propio",
+        "Crear un enlace de pago en Stripe y ponerlo en un botón de la web"
+      ],
+      "correcta": 3,
+      "explicacion": "Con un enlace de pago, Stripe cobra en su propia página y tu web solo lleva un enlace público. Una clave secreta en el chat o en el HTML la puede ver cualquiera."
+    },
+    {
+      "pregunta": "Empiezas a vender tu plantilla con regularidad. ¿Qué debes hacer antes de la primera venta?",
+      "respuestas": [
+        "Nada: Stripe se ocupa de todo lo fiscal",
+        "Consultar con tu gestoría el alta de autónomo o empresa, las facturas, el IVA y Verifactu",
+        "Esperar a ganar mucho dinero para darte de alta"
+      ],
+      "correcta": 1,
+      "explicacion": "Si cobras de forma habitual, es una actividad económica: alta, una factura por venta, IVA trimestral y, desde 2027, programas de facturación con Verifactu. Cada caso es distinto: consúltalo con tu gestoría."
+    },
+    {
+      "pregunta": "¿En cuál de estos casos es momento de llamar a un programador?",
+      "respuestas": [
+        "Quieres cambiar el color de los botones de tu web",
+        "Quieres añadir un horario nuevo a la página de tu negocio",
+        "Tu app va a guardar datos de salud de muchos usuarios con cuentas y contraseñas",
+        "Quieres que tu juego tenga un sonido al ganar"
+      ],
+      "correcta": 2,
+      "explicacion": "Datos de salud, muchos usuarios y cuentas con contraseña son límites claros del vibe coding: un fallo afecta a todos y la ley protege esos datos de forma especial. Encárgalo con la ficha del proyecto como punto de partida."
+    }
+  ]
+}

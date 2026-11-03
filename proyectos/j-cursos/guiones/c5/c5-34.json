@@ -1,0 +1,137 @@
+{
+  "id": "c5-34",
+  "titulo": "Tu proyecto final: de la ficha a la publicación",
+  "descripcion": "Eliges un proyecto propio, lo describes en la ficha y lo llevas hasta publicarlo con el método del curso, con ideas para profes, autónomos, comercios, familias y asociaciones.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:ficha-proyecto", "demo:grupos"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Tu proyecto final",
+      "subtitulo": "De la ficha a la publicación",
+      "narracion": "Llegamos al cierre del curso. Hasta ahora has seguido los proyectos que te proponía el curso. Ahora te toca a ti. En esta clase eliges tu propio proyecto, lo describes en la ficha y lo llevas hasta publicarlo, con el mismo método de siempre. Te doy ideas para cinco perfiles distintos y construimos uno de ejemplo delante de ti, paso a paso."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Lo que ya sabes hacer",
+      "nota": "La web de la Peluquería Nuria, tu primer proyecto.",
+      "fuente": "demo:peluqueria/v4@movil",
+      "url": "peluqueria-nuria.netlify.app",
+      "narracion": "Antes de empezar, mira lo que ya has hecho. La web de un negocio, publicada y bien en el móvil, como esta de la Peluquería Nuria. Una app de hábitos que se guarda sola. Una calculadora de presupuestos con IVA y PDF. Y un juego que se comparte con un enlace. Son cuatro proyectos reales. El quinto, el de esta clase, es el más importante, porque es tuyo."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "El método, de principio a fin",
+      "pasos": [
+        "Ficha del proyecto en una página",
+        "Primera versión en un solo archivo",
+        "Pasos pequeños: un cambio, una prueba",
+        "Guarda una versión cada vez que funcione",
+        "Móvil, casos raros y datos personales",
+        "Publica y enséñalo a cinco personas"
+      ],
+      "narracion": "Este es el método completo, el mismo de todo el curso. Primero, la ficha del proyecto, en una página. Después, una primera versión en un solo archivo. Luego, pasos pequeños: pides un cambio, lo pruebas y sigues. Cada vez que algo funciona, guardas una versión. Antes de publicar, revisas el móvil, los casos raros y que no haya datos personales. Y al final, publicas y se lo enseñas a cinco personas, como en la clase de validar."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Ideas para cinco perfiles",
+      "columnas": ["Perfil", "Idea de proyecto"],
+      "filas": [
+        ["Profe", "Hacer grupos de clase al azar"],
+        ["Autónomo", "Calculadora de tarifas para clientes"],
+        ["Comercio", "Catálogo con botón de WhatsApp"],
+        ["Familia", "Tareas de casa con puntos semanales"],
+        ["Asociación", "Calendario de actividades del trimestre"]
+      ],
+      "narracion": "Si no sabes por dónde empezar, aquí tienes ideas. Si eres profe, una herramienta para hacer grupos al azar. Si eres autónomo, una calculadora de tarifas para que el cliente vea un precio orientativo. Un comercio, un catálogo con un botón de WhatsApp para pedir. Una familia, una tabla de tareas de casa con puntos semanales. Y una asociación, el calendario de actividades del trimestre. Todas caben en un solo archivo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Cómo elegir el tuyo",
+      "puntos": [
+        "Algo que usarías tú la semana que viene",
+        "Cabe en una o dos pantallas",
+        "Sin pagos dentro ni datos sensibles",
+        "Si guarda datos, solo en tu navegador"
+      ],
+      "narracion": "Para elegir, usa cuatro filtros. Que sea algo que usarías tú la semana que viene: así tendrás ganas de terminarlo. Que quepa en una o dos pantallas. Que no lleve pagos dentro ni datos sensibles, como vimos en la clase anterior. Y si guarda datos, que sea en tu propio navegador, como la app de hábitos. Si tu idea no pasa los filtros, recorta hasta que pase. Lo demás puede ir en una segunda versión."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El ejemplo: una profe y sus grupos",
+      "usuario": "Crea una web en un solo archivo index.html, sin librerías ni internet. Es para una profe: pego una lista de alumnos, uno por línea, elijo cuántos grupos y al pulsar «Hacer grupos» los reparte al azar en tarjetas de colores. Botón «Otra vez». Letra grande para proyectarla en clase. No guardes nada.",
+      "ia": "Aquí tienes el archivo. A la izquierda, la lista y el número de grupos. A la derecha, las tarjetas. El reparto es al azar y equilibrado. He añadido avisos si la lista está vacía o si pides más grupos que alumnos.",
+      "narracion": "Vamos con el ejemplo de la profe. Su ficha ya estaba hecha, y la primera instrucción sale de ella. Fíjate en tres detalles. Pide letra grande, porque la va a proyectar en clase. Pide que no guarde nada, porque son alumnos, y además menores. Y en la herramienta usará alias o iniciales, nunca nombres completos. La IA devuelve el archivo y, por su cuenta, añade avisos para dos casos raros."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La primera versión, recién abierta",
+      "fuente": "demo:grupos/v1",
+      "url": "hacer-grupos.netlify.app",
+      "narracion": "La abrimos con doble clic en el navegador. A la izquierda está el panel, con la lista de alumnos y el número de grupos. Debajo de la lista hay una ayuda que recuerda usar alias o iniciales. A la derecha, un hueco que explica qué hacer. Todavía no hay grupos. Antes de seguir, comprueba lo básico: se lee bien, los botones están a la vista y se entiende en cinco segundos."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Funciona: cinco grupos al azar",
+      "fuente": "demo:grupos/v1",
+      "url": "hacer-grupos.netlify.app",
+      "acciones": [
+        { "fill": ["#lista", "Ana R.\nBruno\nCarla M.\nDani\nElsa\nFer\nGael\nHugo\nIris\nJon\nKira\nLeo\nMar\nNoa\nÓscar\nPau\nQuim\nRita\nSara\nTeo\nUma\nVera"] },
+        { "fill": ["#num", "5"] },
+        { "click": "#hacer" },
+        { "wait": 300 }
+      ],
+      "narracion": "Ahora la usamos de verdad. Pegamos una lista de veintidós alias, elegimos cinco grupos y pulsamos hacer grupos. Aparecen cinco tarjetas de colores, con cuatro o cinco alumnos cada una. Si pulsamos otra vez, el reparto cambia. Cuenta los nombres: tienen que salir los veintidós, ni uno más ni uno menos. Esa comprobación la haces tú, no la IA. Funciona, así que toca guardar esta versión."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El corazón de la app: barajar",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "// Baraja la lista al azar (algoritmo de Fisher-Yates)\nfunction barajar(nombres) {\n  const a = [...nombres];\n  for (let i = a.length - 1; i > 0; i--) {\n    const j = Math.floor(Math.random() * (i + 1));\n    [a[i], a[j]] = [a[j], a[i]];\n  }\n  return a;\n}",
+      "narracion": "Este es el corazón de la app. La función baraja la lista, como quien mezcla cartas. Recorre los nombres desde el final y cambia cada uno de sitio con otro elegido al azar. El comentario de arriba dice que es el algoritmo de Fisher y Yates, una forma clásica y justa de barajar. Si la IA nombra un método conocido, búscalo: así compruebas que no se lo ha inventado. Luego, los nombres barajados se reparten por turnos entre los grupos."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Un caso raro: más grupos que alumnos",
+      "fuente": "demo:grupos/v1",
+      "url": "hacer-grupos.netlify.app",
+      "acciones": [
+        { "fill": ["#lista", "Ana R.\nBruno"] },
+        { "fill": ["#num", "4"] },
+        { "click": "#hacer" }
+      ],
+      "narracion": "Antes de publicar, busca los casos raros. ¿Qué pasa si pides cuatro grupos y solo hay dos alumnos? La app avisa en rojo: hay más grupos que alumnos. ¿Y con la lista vacía? También avisa. Prueba también una lista con líneas en blanco o con un nombre repetido. Si encuentras un fallo, no lo arregles tú: descríbelo a la IA con lo que hiciste, lo que esperabas y lo que pasó."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "El tamaño del primer paso",
+      "mal": "Hazme una app para la asociación con socios, cuotas, calendario, fotos y chat.",
+      "bien": "Primera versión: el calendario de actividades del trimestre, en una página.",
+      "narracion": "El error más común en el proyecto final es querer hacerlo todo a la vez. Una app para la asociación con socios, cuotas, calendario, fotos y chat no es un proyecto: son cinco, y algunos con datos personales y pagos. Empieza por la pieza más útil, por ejemplo el calendario del trimestre. Cuando funcione y la gente la use, decides el siguiente paso. Y si llega lo de las cuotas, ya sabes a quién llamar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Publicar y compartir",
+      "pasos": [
+        "Una carpeta con tu index.html",
+        "Arrástrala a Netlify Drop",
+        "Ponle un nombre claro al sitio",
+        "Pruébala en el móvil con el enlace",
+        "Enséñala a cinco personas y apunta qué dicen"
+      ],
+      "narracion": "Para publicar, haz lo mismo que con la web de la peluquería. Una carpeta con tu archivo, arrástrala a Netlify Drop y ponle un nombre claro al sitio. Abre el enlace en tu móvil y pruébala otra vez, porque a veces algo cambia. Después, enséñala a cinco personas que la vayan a usar y apunta lo que dicen. Si quieres, comparte tu enlace en el apartado de preguntas del curso. Nos encantará verlo."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu proyecto final, esta semana",
+      "puntos": [
+        "Elige algo que usarías tú la semana que viene",
+        "Rellena la ficha y recorta hasta que quepa",
+        "Pasos pequeños, versiones y casos raros",
+        "Publícalo y enséñalo a cinco personas"
+      ],
+      "narracion": "Repasamos. Elige un proyecto que usarías tú la semana que viene y que pase los cuatro filtros. Rellena la ficha del proyecto y recorta hasta que quepa en una o dos pantallas. Avanza en pasos pequeños, guarda versiones y busca los casos raros. Y publícalo y enséñalo a cinco personas. Tu tarea de esta semana es justo esa. En los recursos tienes la ficha y la app de grupos para que la abras y la compares. Nos vemos en la clase extra."
+    }
+  ]
+}

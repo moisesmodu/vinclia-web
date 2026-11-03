@@ -1,0 +1,104 @@
+{
+  "id": "c5-09",
+  "titulo": "Instrucciones que funcionan: contexto, tarea y límites",
+  "descripcion": "Aprendes a escribir instrucciones para la IA en tres partes, contexto, tarea y límites, y ves la instrucción exacta que crea una lista de la compra en un solo archivo. Te llevas 30 instrucciones listas para pedir, iterar, depurar y pulir.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:instrucciones-vibe-coding"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Instrucciones que funcionan",
+      "subtitulo": "Contexto, tarea y límites",
+      "narracion": "Ya tienes la ficha de tu proyecto. Ahora hay que convertirla en instrucciones para la IA. Una instrucción es el mensaje que escribes en el chat. Parece fácil, pero aquí se decide casi todo. Una buena instrucción te da una app que funciona a la primera. Una mala te da diez idas y vueltas. En esta clase verás una fórmula de tres partes, la instrucción exacta que creó nuestra lista de la compra y lo que salió."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Las tres partes de una instrucción",
+      "columnas": ["Parte", "Qué pones", "Ejemplo"],
+      "filas": [
+        ["Contexto", "Quién eres, la ficha, lo que hay", "No sé programar. Mi ficha…"],
+        ["Tarea", "Una sola cosa que quieres", "Haz la primera versión"],
+        ["Límites", "Cómo debe ser y qué no tocar", "Un solo archivo, sin librerías"]
+      ],
+      "narracion": "Toda buena instrucción tiene tres partes. Primero, el contexto: quién eres, qué quieres conseguir y qué hay ya hecho. Ahí va tu ficha, o el archivo actual de la app. Segundo, la tarea: una sola cosa, dicha con claridad. Y tercero, los límites: cómo tiene que ser el resultado y qué no debe tocar. La mayoría de la gente solo escribe la tarea. Por eso la IA rellena el resto como le parece."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La instrucción que creó la lista",
+      "usuario": "No sé programar. Te paso la ficha de mi proyecto: [ficha]. Haz la primera versión: campo de texto, botón Añadir, lista con lo último arriba, botón Borrar en cada producto y un botón para vaciar la lista. Que se guarde en el navegador. Un solo archivo index.html con el CSS y el JavaScript dentro, sin librerías ni internet. Diseño limpio, color verde azulado, que se vea bien en el móvil. Dame el archivo completo.",
+      "ia": "Aquí tienes el archivo index.html completo. Cópialo en un archivo de texto, guárdalo con ese nombre y ábrelo con doble clic en tu navegador. La lista se guarda en el navegador con localStorage. Si quieres, en el siguiente paso podemos marcar productos como comprados.",
+      "narracion": "Esta es la instrucción exacta que escribimos para la lista de la compra. Fíjate en las tres partes. Contexto: no sé programar, y aquí tienes mi ficha. Tarea: haz la primera versión, con la lista de lo que lleva. Límites: un solo archivo, sin librerías ni internet, diseño limpio, que se vea bien en el móvil y el archivo completo. La IA contestó con el archivo y con instrucciones para guardarlo. Y, como siempre, propuso algo más. Eso lo decides tú."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Lo que salió: la primera versión",
+      "fuente": "demo:metodo/v1",
+      "url": "lista-compra/v1/index.html",
+      "narracion": "Y esto es lo que salió. Guardamos el archivo en una carpeta llamada v1 y lo abrimos con doble clic. Ahí está la lista de la compra, con tres productos de ejemplo: tomates, pan y leche. Hay un campo para escribir, el botón de añadir, un botón de borrar en cada producto y, abajo, el contador y el enlace para vaciar la lista. Todo en una sola pantalla, como decía la ficha. Vamos a probarla."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Añadimos un producto",
+      "fuente": "demo:metodo/v1",
+      "url": "lista-compra/v1/index.html",
+      "acciones": [{ "fill": ["#producto", "Huevos"] }, { "click": "#anadir" }],
+      "narracion": "Escribimos huevos y pulsamos añadir. Aparece arriba del todo, porque lo último que añades sale primero. El contador ya marca cuatro productos. Hasta aquí, la primera prueba de la ficha se cumple. Pero cuidado: una prueba que sale bien no significa que todo funcione. En la ficha había más pruebas, como borrar o recargar. Esta versión esconde un fallo que descubriremos en la clase de los errores. Por eso nunca te fíes de la primera impresión."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Un vistazo al código que escribió",
+      "archivo": "lista-compra/v1/index.html",
+      "lenguaje": "js",
+      "codigo": "document.getElementById('formulario').onsubmit = (e) => {\n  e.preventDefault();\n  const texto = entrada.value.trim();\n  if (!texto) return;\n  lista.push(texto);\n  entrada.value = '';\n  guardar();\n  pintar();\n};",
+      "narracion": "No hace falta entender el código, pero sí echarle un vistazo, como aprendiste en la sección anterior. Este trozo es lo que pasa al pulsar añadir. Coge el texto que has escrito y le quita los espacios. Si está vacío, no hace nada. Si no, lo mete en la lista, vacía el campo, guarda y vuelve a pintar la pantalla. Fíjate en que los nombres están en castellano: lista, guardar, pintar. Pedírselo a la IA te ayuda a leerlo."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Límites que conviene poner siempre",
+      "puntos": [
+        "Un solo archivo index.html, sin librerías ni internet",
+        "Dame el archivo completo, no trozos",
+        "No cambies nada más de lo que te pido",
+        "Si te falta un dato, pregúntame, no lo inventes",
+        "Textos en castellano de España"
+      ],
+      "narracion": "Hay límites que funcionan en casi cualquier proyecto de este curso. Un solo archivo, sin librerías ni internet, para que se abra con doble clic. El archivo completo, no trozos: si te da trozos, tendrás que saber dónde pegarlos, y ahí empiezan los líos. No cambies nada más de lo que te pido. Si te falta un dato, pregúntame en lugar de inventarlo. Y los textos en castellano de España. Ponlos y te ahorrarás muchos disgustos."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Pedir un cambio: vago frente a concreto",
+      "mal": "Mejóralo un poco, que quede más bonito.",
+      "bien": "Solo un cambio: botón Borrar más pequeño y gris. No toques nada más. Dame el archivo completo.",
+      "narracion": "La fórmula también sirve para los cambios, no solo para empezar. Compara. Mejóralo un poco es una invitación a que la IA cambie lo que quiera, incluido lo que ya funcionaba. La segunda dice exactamente qué cambiar, deja claro que no toque nada más y pide el archivo completo. Cuanto más concreto seas, menos sorpresas. Si no sabes qué cambiar, también puedes pedírselo así: dime tres mejoras posibles, pero no cambies nada todavía."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que te explique antes de tocar",
+      "usuario": "Quiero que al tocar un producto se tache, para marcarlo como comprado. Antes de cambiar nada, explícame en tres frases qué vas a cambiar y en qué parte del archivo. Espera a que te diga que sí.",
+      "ia": "Añadiría un estado comprado a cada producto. Al tocar el nombre, cambiaría de tachado a normal. Tocaría la parte que pinta la lista y la forma de guardar los datos. ¿Lo hago?",
+      "narracion": "Un truco muy útil: pide a la IA que te explique el plan antes de tocar nada. Así sabes qué va a cambiar y puedes frenarla a tiempo. En este ejemplo, la IA avisa de que tendrá que cambiar cómo se guardan los datos. Eso es una pista importante. Un cambio que toca los datos guardados puede estropear las listas que ya tenías. Con esa información puedes decidir si es el momento de hacerlo o mejor más adelante."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "En los recursos: 30 instrucciones",
+      "puntos": [
+        "Pedir: empezar un proyecto desde la ficha",
+        "Iterar: cambiar una cosa sin romper otra",
+        "Depurar: contar bien lo que falla",
+        "Pulir: diseño, textos, casos raros y seguridad"
+      ],
+      "narracion": "En los recursos de esta clase tienes una plantilla con treinta instrucciones, todas con contexto, tarea y límites, y con huecos entre corchetes para rellenar. Están en cuatro bloques. Pedir, para empezar un proyecto desde tu ficha. Iterar, para cambiar cosas sin romper lo que ya funciona. Depurar, para contar bien lo que falla. Y pulir, para el diseño, los textos, los casos raros y la seguridad. No te las aprendas: cópialas y adáptalas."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Contexto: quién eres, la ficha, lo que hay",
+        "Tarea: una sola cosa, dicha con claridad",
+        "Límites: un archivo, completo, no tocar más",
+        "Tarea: pide la primera versión de tu ficha"
+      ],
+      "narracion": "Repasamos. Cada instrucción tiene tres partes. Contexto: quién eres, tu ficha y lo que ya hay. Tarea: una sola cosa. Límites: un solo archivo, el archivo completo y que no toque nada más. Para los cambios, sé concreto, y pide que te explique el plan antes de tocar. Tu tarea de hoy. Coge la ficha que rellenaste y pide la primera versión con la instrucción número tres de la plantilla. Guárdala en una carpeta llamada v1. En la próxima clase verás por qué."
+    }
+  ]
+}

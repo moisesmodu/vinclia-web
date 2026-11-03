@@ -1,0 +1,151 @@
+{
+  "id": "c5-29",
+  "titulo": "Git y GitHub sin miedo",
+  "descripcion": "Guardas versiones de tu web con Git en una demostración real, paso a paso: init, add, commit y log. Aprendes a deshacer un cambio que ha roto algo, a recuperar una versión anterior de un archivo y a subir tu proyecto a GitHub, con la terminal o con GitHub Desktop.",
+  "vistaPrevia": false,
+  "recursos": [
+    "plantilla:chuleta-git",
+    "demo:peluqueria"
+  ],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Git y GitHub sin miedo",
+      "subtitulo": "Guarda versiones y vuelve atrás cuando algo se rompe",
+      "narracion": "En la sección del método guardabas versiones copiando archivos: versión 1, versión 2, versión buena. Funciona, pero se desordena enseguida. Los programadores usan una herramienta para esto que se llama Git. Suena técnica, pero para lo que tú necesitas bastan cinco órdenes. En esta clase vas a ver una demostración real con la web de la peluquería. Todo lo que sale en pantalla es lo que contestó Git de verdad, acortado cuando era muy largo."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Cuatro palabras y ya está",
+      "columnas": [
+        "Palabra",
+        "Qué significa"
+      ],
+      "filas": [
+        [
+          "Git",
+          "Programa que guarda versiones"
+        ],
+        [
+          "Repositorio",
+          "Tu carpeta, vigilada por Git"
+        ],
+        [
+          "Commit",
+          "Una foto de tus archivos con nota"
+        ],
+        [
+          "GitHub",
+          "Web gratuita donde subir la copia"
+        ]
+      ],
+      "narracion": "Antes de empezar, cuatro palabras. Git es un programa gratuito que guarda versiones de tus archivos. Un repositorio es simplemente tu carpeta del proyecto, vigilada por Git. Un commit es una foto de cómo están tus archivos en un momento, con una nota que explica qué cambiaste. Y GitHub es una web gratuita donde subes una copia de tu repositorio. Así está a salvo si se rompe el ordenador. Git y GitHub son cosas distintas: el primero vive en tu ordenador, el segundo en internet."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "La primera vez: preséntate y empieza",
+      "lineas": [
+        "$ git config --global user.name \"Nuria\"",
+        "$ git config --global user.email \"nuria@example.com\"",
+        "$ cd ~/proyectos/peluqueria",
+        "$ git init -b main",
+        "Initialized empty Git repository in …/peluqueria/.git/"
+      ],
+      "narracion": "Instala Git desde su página oficial. En Mac puede que ya lo tengas. Las dos primeras órdenes solo se escriben una vez en la vida: le dices a Git tu nombre y tu correo, que firmarán cada versión. Después entras en la carpeta del proyecto con cd. Y la orden git init convierte la carpeta en un repositorio. La parte menos b main pone nombre a la rama principal: main, como en GitHub. Git contesta que ha creado un repositorio vacío. Tus archivos siguen igual."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Tu primera foto: add y commit",
+      "lineas": [
+        "$ git status",
+        "Untracked files:",
+        "        index.html",
+        "$ git add .",
+        "$ git commit -m \"Primera versión\"",
+        "[main (root-commit) 9c598bd] Primera versión"
+      ],
+      "narracion": "La orden git status te dice cómo están las cosas. Ahora contesta que hay un archivo sin seguir, el index.html. Guardar una versión tiene dos pasos. Con git add y un punto le dices que quieres incluir todos los cambios de la carpeta. Con git commit, menos m y una nota entre comillas, haces la foto. Git responde con un código corto, el nueve ce cinco, que identifica esta versión. Ya tienes la primera foto de tu proyecto guardada."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "La IA cambia el diseño: segunda foto",
+      "lineas": [
+        "$ git diff --stat",
+        " index.html | 292 +++++++++++++++------------",
+        "$ git add .",
+        "$ git commit -m \"Nuevo diseño\"",
+        "[main b2d6f51] Nuevo diseño",
+        " 1 file changed, 220 insertions(+), 72 deletions(-)"
+      ],
+      "narracion": "Ahora pegamos en index.html el nuevo diseño que nos dio la IA, el de la clase de colores y móvil. Git diff con menos menos stat dice cuánto ha cambiado: 220 líneas nuevas y 72 borradas. Es un cambio grande, pero era lo que pedimos. Lo probamos en el navegador, funciona, y guardamos otra foto con su nota. Este es el ritmo: pides, pruebas y, si va bien, commit."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Tu historial de versiones",
+      "lineas": [
+        "$ git log --oneline",
+        "b2d6f51 Nuevo diseño",
+        "9c598bd Primera versión"
+      ],
+      "narracion": "Con git log y menos menos oneline ves tu historial, una versión por línea. La más reciente sale arriba. Cada una tiene su código y su nota. Por eso las notas importan tanto. Dentro de un mes no te acordarás de qué hiciste el martes. Escribe notas cortas que digan qué cambia, como añado horario de verano o arreglo el botón de WhatsApp. Si escribes cambios o prueba, el historial no te servirá de nada."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Algo se ha roto: descarta el cambio",
+      "lineas": [
+        "$ git diff --stat",
+        " index.html | 33 +-------------------------------",
+        "$ git restore index.html",
+        "$ git status",
+        "nothing to commit, working tree clean"
+      ],
+      "narracion": "Ahora la parte que más tranquilidad da. Le pedimos a la IA un retoque pequeño, pegamos su respuesta y, sin darnos cuenta, ha desaparecido la sección del horario. Git diff con menos menos stat nos dice que se han borrado 32 líneas. Demasiado para un retoque. La orden git restore con el nombre del archivo lo deja exactamente como en la última foto. Git status confirma que no queda nada pendiente. El horario ha vuelto."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Recuperar una versión anterior",
+      "lineas": [
+        "$ git checkout 9c598bd -- index.html",
+        "$ git commit -m \"Vuelvo al diseño anterior\"",
+        "$ git log --oneline",
+        "99c25d7 Vuelvo al diseño anterior",
+        "b2d6f51 Nuevo diseño",
+        "9c598bd Primera versión"
+      ],
+      "narracion": "Y si lo que quieres es volver a una foto más antigua, por ejemplo porque a la clienta no le gustó el diseño nuevo, usa git checkout. Escribe el código de la versión que buscas, dos guiones y el nombre del archivo. El archivo vuelve a estar como en aquella foto. Pruébalo y, si te convence, haz un commit nuevo. Fíjate en el historial: nada se ha perdido. El diseño nuevo sigue guardado por si cambias de idea."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Subir la copia a GitHub",
+      "lineas": [
+        "$ git remote add origin https://github.com/tu-usuario/peluqueria.git",
+        "$ git push -u origin main"
+      ],
+      "narracion": "Para tener la copia en internet, crea una cuenta gratuita en GitHub y un repositorio nuevo, vacío. Puede ser privado: también es gratis. GitHub te enseña estas dos órdenes con tu dirección. La primera conecta tu carpeta con el repositorio. La segunda sube tus versiones. La primera vez te pedirá iniciar sesión. Ojo: la contraseña de tu cuenta ya no sirve para esto. Lo normal es que se abra el navegador para autorizar. A partir de ahí, después de cada commit, basta con git push."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Sin terminal: GitHub Desktop",
+      "puntos": [
+        "Aplicación gratuita para Windows y Mac",
+        "Ves los cambios en verde y rojo antes de guardar",
+        "Escribes la nota y pulsas Commit",
+        "Publish repository sube la copia a GitHub",
+        "Discard changes deshace lo que no te guste"
+      ],
+      "narracion": "Si la terminal te da respeto, hay una alternativa: GitHub Desktop. Es una aplicación gratuita para Windows y Mac, en inglés. Hace lo mismo con botones. Añades tu carpeta, y te enseña los cambios en verde y rojo. Escribes la nota abajo a la izquierda y pulsas Commit. El botón Publish repository sube la copia a GitHub. Y si un cambio no te gusta, clic derecho y Discard changes. En la pestaña History ves tu historial. Elige la forma que te dé más confianza."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Las cinco órdenes que necesitas",
+      "puntos": [
+        "git init: una vez por proyecto",
+        "git add . y git commit -m: guardar una foto",
+        "git log --oneline: ver el historial",
+        "git restore: deshacer lo que no has guardado",
+        "git push: subir la copia a GitHub"
+      ],
+      "narracion": "Repasamos. Git init, una vez por proyecto. Git add y git commit, cada vez que algo funciona. Git log, para ver tu historial. Git restore, para deshacer lo que la IA ha roto. Y git push, para tener la copia a salvo en GitHub. Tienes todas las órdenes en la chuleta de Git de esta clase. Tu tarea de hoy: convierte la carpeta de tu web en un repositorio, haz tu primer commit y súbelo a GitHub, con la terminal o con GitHub Desktop."
+    }
+  ]
+}

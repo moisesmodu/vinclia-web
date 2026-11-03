@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis hábitos</title>
+<meta name="theme-color" content="#0E9F8E">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  :root {
+    --acento: #0E9F8E;
+    --acento-osc: #0B7F72;
+    --acento-suave: #E3F5F2;
+    --naranja: #F08A24;
+    --rojo: #D64545;
+    --texto: #1D2733;
+    --gris: #6B7785;
+    --linea: #E4E8EE;
+    --fondo: #F4F7F9;
+    --blanco: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.45;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
+  @media (min-width: 960px) {
+    main { max-width: 1120px; display: grid; grid-template-columns: 1fr 420px; gap: 0 32px; align-items: start; }
+    main > header { grid-column: 1 / -1; }
+    .columna-stats { grid-column: 2; }
+  }
+  header { margin-bottom: 24px; }
+  .fecha { color: var(--gris); font-size: 15px; margin: 0 0 4px; }
+  h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
+  .progreso { margin-top: 16px; background: var(--blanco); border-radius: 16px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .progreso p { margin: 0 0 10px; font-weight: 600; }
+  .barra { height: 10px; background: var(--acento-suave); border-radius: 99px; overflow: hidden; }
+  .barra span { display: block; height: 100%; width: 0; background: var(--acento); border-radius: 99px; transition: width .2s; }
+  form { display: flex; gap: 10px; margin-bottom: 20px; }
+  input[type=text] {
+    flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 14px 16px;
+    border: 2px solid var(--linea); border-radius: 12px; background: var(--blanco); color: var(--texto);
+  }
+  input[type=text]:focus { outline: none; border-color: var(--acento); }
+  button { font: inherit; cursor: pointer; }
+  .btn {
+    border: 0; border-radius: 12px; padding: 14px 22px; font-weight: 600; font-size: 16px;
+    background: var(--acento); color: #fff;
+  }
+  .btn:hover { background: var(--acento-osc); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  li {
+    display: flex; align-items: center; gap: 14px; background: var(--blanco);
+    border-radius: 16px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .check {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    border: 2px solid var(--linea); background: var(--blanco); display: grid; place-items: center; padding: 0;
+  }
+  .check svg { width: 18px; height: 18px; stroke: #fff; opacity: 0; }
+  li.hecho .check { background: var(--acento); border-color: var(--acento); }
+  li.hecho .check svg { opacity: 1; }
+  .info { flex: 1; min-width: 0; }
+  .nombre { display: block; font-size: 17px; font-weight: 500; overflow-wrap: anywhere; }
+  li.hecho .nombre { color: var(--gris); }
+  .detalle { display: flex; align-items: center; gap: 12px; margin-top: 4px; font-size: 13px; color: var(--gris); flex-wrap: wrap; }
+  .racha { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+  .racha svg { width: 15px; height: 15px; }
+  .racha.activa { color: var(--naranja); }
+  .puntos { display: inline-flex; gap: 4px; }
+  .puntos i { width: 9px; height: 9px; border-radius: 50%; background: var(--linea); }
+  .puntos i.si { background: var(--acento); }
+  .puntos i.antes { background: transparent; border: 1px dashed var(--linea); }
+  .tarjeta { background: var(--blanco); border-radius: 16px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 16px; }
+  .tarjeta h2 { font-size: 16px; margin: 0 0 14px; }
+  .cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cifra { background: var(--fondo); border-radius: 12px; padding: 12px; }
+  .cifra b { display: block; white-space: nowrap; font-size: 26px; line-height: 1.1; color: var(--acento-osc); }
+  .cifra span { font-size: 12.5px; color: var(--gris); }
+  .cifra small { display: block; font-size: 12.5px; color: var(--texto); font-weight: 600; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #grafico svg { width: 100%; height: auto; display: block; }
+  .columna-stats { margin-top: 24px; }
+  .ajustes { margin-top: 8px; }
+  @media (min-width: 960px) {
+    .ajustes { grid-column: 1 / -1; align-items: start; display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  }
+  .tarjeta p { margin: 0 0 14px; color: var(--gris); font-size: 14.5px; }
+  .botones { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn-sec {
+    border: 2px solid var(--acento); border-radius: 12px; padding: 10px 16px; font-weight: 600;
+    font-size: 15px; background: var(--blanco); color: var(--acento-osc); display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-sec:hover { background: var(--acento-suave); }
+  .btn-sec svg { width: 18px; height: 18px; }
+  .mensaje { margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--acento-osc); min-height: 1em; }
+  .mensaje.error { color: var(--rojo); }
+  .estado { display: flex; gap: 12px; align-items: flex-start; background: var(--fondo); border-radius: 12px; padding: 12px 14px; font-size: 14.5px; }
+  #instalar { margin-top: 14px; }
+  .mensaje:empty { display: none; }
+  .estado svg { flex: none; width: 22px; height: 22px; color: var(--acento); margin-top: 1px; }
+  [hidden] { display: none !important; }
+  @media (max-width: 480px) {
+    .cifra { padding: 10px; }
+    .cifra b { font-size: 22px; }
+    .icono { width: 32px; }
+  }
+  @media (min-width: 960px) { .columna-stats { margin-top: 0; } }
+  .editar-campo { flex: 1; padding: 8px 12px !important; }
+  .icono {
+    flex: none; width: 36px; height: 36px; border-radius: 10px; border: 0; background: transparent;
+    display: grid; place-items: center; color: var(--gris); padding: 0;
+  }
+  .icono:hover { background: var(--fondo); color: var(--texto); }
+  .icono.borrar:hover { color: var(--rojo); }
+  .icono svg { width: 19px; height: 19px; }
+  .vacio { text-align: center; color: var(--gris); padding: 32px 16px; border: 2px dashed var(--linea); border-radius: 16px; display: block; box-shadow: none; background: transparent; }
+  .nota { margin-top: 24px; text-align: center; color: var(--gris); font-size: 14px; }
+  .aviso {
+    position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 120px);
+    background: var(--texto); color: #fff; border-radius: 12px; padding: 12px 14px 12px 18px;
+    display: flex; gap: 16px; align-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    transition: transform .25s, opacity .25s; max-width: calc(100% - 32px);
+    opacity: 0; visibility: hidden; white-space: nowrap;
+  }
+  .aviso.visible { transform: translate(-50%, 0); opacity: 1; visibility: visible; }
+  .aviso span { overflow: hidden; text-overflow: ellipsis; }
+  .aviso button { border: 0; background: transparent; color: #7FE0D4; font-weight: 700; padding: 6px 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="fecha" id="fecha"></p>
+    <h1>Mis hábitos</h1>
+    <div class="progreso">
+      <p id="resumen">0 de 0 hechos hoy</p>
+      <div class="barra"><span id="barra"></span></div>
+    </div>
+  </header>
+
+  <section class="columna-lista">
+  <form id="formulario">
+    <input type="text" id="nuevo" placeholder="Ej.: Leer 10 minutos" maxlength="60" autocomplete="off">
+    <button class="btn" id="add" type="submit">Añadir</button>
+  </form>
+
+  <ul id="lista"></ul>
+  <p class="nota">Tus hábitos se guardan en este navegador.</p>
+  </section>
+
+  <aside class="columna-stats">
+    <section class="tarjeta">
+      <h2>Últimos 7 días</h2>
+      <div class="cifras">
+        <div class="cifra"><b id="pct-semana">0 %</b><span>cumplido</span></div>
+        <div class="cifra"><b id="dias-completos">0</b><span>días completos</span></div>
+        <div class="cifra"><b id="mejor-racha">0</b><span>mejor racha</span><small id="mejor-nombre">–</small></div>
+      </div>
+    </section>
+    <section class="tarjeta">
+      <h2>Hábitos hechos cada día</h2>
+      <div id="grafico"></div>
+    </section>
+  </aside>
+
+  <div class="ajustes">
+    <section class="tarjeta" id="tarjeta-instalar">
+      <h2>Instalar como app</h2>
+      <div class="estado">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+        <span id="estado-instalar"></span>
+      </div>
+      <button class="btn" id="instalar" hidden>Instalar Mis hábitos</button>
+    </section>
+    <section class="tarjeta">
+      <h2>Copia de seguridad</h2>
+      <p>Tus hábitos solo están en este navegador y en este dispositivo. Si borras los datos del navegador, se pierden. Descarga una copia de vez en cuando.</p>
+      <div class="botones">
+        <button class="btn-sec" id="exportar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          Descargar copia</button>
+        <button class="btn-sec" id="importar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V9M7 14l5-5 5 5M5 4h14"/></svg>
+          Recuperar copia</button>
+        <input type="file" id="archivo" accept=".json,application/json" hidden>
+      </div>
+      <p class="mensaje" id="mensaje-copia" role="status"></p>
+    </section>
+  </div>
+</main>
+
+<div class="aviso" id="aviso" role="status">
+  <span id="aviso-texto">Hábito borrado</span>
+  <button id="deshacer">Deshacer</button>
+</div>
+
+<script>
+  // Cada hábito: { id, nombre, creado, hechos: ["2026-11-03", ...] }
+  const CLAVE = 'mis-habitos';
+  let habitos = cargar();
+
+  function cargar() {
+    try {
+      return JSON.parse(localStorage.getItem(CLAVE)) || [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function guardar() {
+    localStorage.setItem(CLAVE, JSON.stringify(habitos));
+  }
+
+  // Fecha en formato "AAAA-MM-DD" (hora local)
+  function clave(fecha) {
+    const a = fecha.getFullYear();
+    const m = String(fecha.getMonth() + 1).padStart(2, '0');
+    const d = String(fecha.getDate()).padStart(2, '0');
+    return `${a}-${m}-${d}`;
+  }
+  const hoy = () => clave(new Date());
+
+  // Los últimos 7 días, del más antiguo a hoy
+  function ultimosDias(n = 7) {
+    const dias = [];
+    for (let i = n - 1; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      dias.push(d);
+    }
+    return dias;
+  }
+
+  // Días seguidos hasta hoy. Si hoy aún no está hecho,
+  // la racha cuenta hasta ayer (todavía tienes el día).
+  function racha(habito) {
+    const hechos = new Set(habito.hechos);
+    const dia = new Date();
+    if (!hechos.has(clave(dia))) dia.setDate(dia.getDate() - 1);
+    let n = 0;
+    while (hechos.has(clave(dia))) {
+      n++;
+      dia.setDate(dia.getDate() - 1);
+    }
+    return n;
+  }
+
+  function anadir(nombre) {
+    habitos.push({ id: Date.now(), nombre, creado: hoy(), hechos: [] });
+    guardar();
+    pintar();
+  }
+
+  function alternarHoy(id) {
+    const h = habitos.find(x => x.id === id);
+    const dia = hoy();
+    if (h.hechos.includes(dia)) {
+      h.hechos = h.hechos.filter(d => d !== dia);
+    } else {
+      h.hechos.push(dia);
+    }
+    guardar();
+    pintar();
+  }
+
+  function renombrar(id, nombre) {
+    const h = habitos.find(x => x.id === id);
+    if (nombre.trim()) h.nombre = nombre.trim();
+    guardar();
+    pintar();
+  }
+
+  let borrado = null;   // para poder deshacer
+  let temporizador;
+  function borrar(id) {
+    const pos = habitos.findIndex(x => x.id === id);
+    borrado = { habito: habitos[pos], pos };
+    habitos.splice(pos, 1);
+    guardar();
+    pintar();
+    document.getElementById('aviso-texto').textContent = `«${borrado.habito.nombre}» borrado`;
+    document.getElementById('aviso').classList.add('visible');
+    clearTimeout(temporizador);
+    temporizador = setTimeout(() => document.getElementById('aviso').classList.remove('visible'), 5000);
+  }
+  document.getElementById('deshacer').onclick = () => {
+    if (!borrado) return;
+    habitos.splice(borrado.pos, 0, borrado.habito);
+    borrado = null;
+    guardar();
+    pintar();
+    document.getElementById('aviso').classList.remove('visible');
+  };
+
+  const ICONO_OK = '<svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>';
+  const ICONO_EDITAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
+  const ICONO_BORRAR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
+
+  const ICONO_FUEGO = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-6 1-9.5z"/></svg>';
+
+  function textoRacha(n) {
+    if (n === 0) return 'Sin racha';
+    return n === 1 ? '1 día seguido' : `${n} días seguidos`;
+  }
+
+  function estadisticas() {
+    const dias = ultimosDias(7).map(clave);
+    let posibles = 0, hechos = 0, completos = 0;
+    const porDia = dias.map(d => {
+      const activos = habitos.filter(h => h.creado <= d);
+      const n = activos.filter(h => h.hechos.includes(d)).length;
+      posibles += activos.length;
+      hechos += n;
+      if (activos.length && n === activos.length) completos++;
+      return n;
+    });
+    const pct = posibles ? Math.round(hechos / posibles * 100) : 0;
+    document.getElementById('pct-semana').textContent = pct + ' %';
+    document.getElementById('dias-completos').textContent = completos;
+    let mejor = null;
+    for (const h of habitos) {
+      if (!mejor || racha(h) > racha(mejor)) mejor = h;
+    }
+    document.getElementById('mejor-racha').textContent = mejor ? racha(mejor) : 0;
+    document.getElementById('mejor-nombre').textContent = mejor && racha(mejor) ? mejor.nombre : '–';
+    dibujarGrafico(porDia);
+  }
+
+  // Gráfico de barras en SVG, sin librerías
+  function dibujarGrafico(valores) {
+    const ancho = 380, alto = 200, base = 170, maxAlto = 140;
+    const maximo = Math.max(habitos.length, 1);
+    const dias = ultimosDias(7);
+    const paso = ancho / 7, barra = 34;
+    let svg = `<svg viewBox="0 0 ${ancho} ${alto}" role="img" aria-label="Hábitos hechos cada día">`;
+    svg += `<line x1="0" y1="${base}" x2="${ancho}" y2="${base}" stroke="#E4E8EE" stroke-width="2"/>`;
+    valores.forEach((v, i) => {
+      const h = v / maximo * maxAlto;
+      const x = i * paso + (paso - barra) / 2;
+      const color = i === 6 ? '#F08A24' : '#0E9F8E';
+      const letra = dias[i].toLocaleDateString('es-ES', { weekday: 'short' }).replace('.', '');
+      svg += `<rect x="${x}" y="${base - h}" width="${barra}" height="${h}" rx="7" fill="${color}"/>`;
+      svg += `<text x="${x + barra / 2}" y="${base - h - 8}" text-anchor="middle" font-size="14" font-weight="700" fill="#1D2733">${v}</text>`;
+      svg += `<text x="${x + barra / 2}" y="${base + 22}" text-anchor="middle" font-size="13" fill="#6B7785">${i === 6 ? 'hoy' : letra}</text>`;
+    });
+    svg += '</svg>';
+    document.getElementById('grafico').innerHTML = svg;
+  }
+
+  function editar(li, h) {
+    const campo = document.createElement('input');
+    campo.type = 'text';
+    campo.className = 'editar-campo';
+    campo.value = h.nombre;
+    campo.maxLength = 60;
+    li.querySelector('.nombre').replaceWith(campo);
+    campo.focus();
+    campo.select();
+    let hecho = false;
+    const terminar = (guardarlo) => {
+      if (hecho) return;
+      hecho = true;
+      if (guardarlo) renombrar(h.id, campo.value); else pintar();
+    };
+    campo.onkeydown = (e) => {
+      if (e.key === 'Enter') terminar(true);
+      if (e.key === 'Escape') terminar(false);
+    };
+    campo.onblur = () => terminar(true);
+  }
+
+  function pintar() {
+    const lista = document.getElementById('lista');
+    lista.innerHTML = '';
+    if (habitos.length === 0) {
+      lista.innerHTML = '<li class="vacio">Aún no tienes hábitos. Añade el primero arriba.</li>';
+    }
+    for (const h of habitos) {
+      const hecho = h.hechos.includes(hoy());
+      const li = document.createElement('li');
+      if (hecho) li.className = 'hecho';
+      li.innerHTML = `<button class="check" aria-label="Marcar hecho hoy">${ICONO_OK}</button>
+        <div class="info"><span class="nombre"></span>
+          <div class="detalle"><span class="racha"></span><span class="puntos"></span></div></div>
+        <button class="icono editar" aria-label="Editar">${ICONO_EDITAR}</button>
+        <button class="icono borrar" aria-label="Borrar">${ICONO_BORRAR}</button>`;
+      li.querySelector('.nombre').textContent = h.nombre;
+      const r = racha(h);
+      const spanRacha = li.querySelector('.racha');
+      spanRacha.innerHTML = ICONO_FUEGO + textoRacha(r);
+      if (r > 0) spanRacha.classList.add('activa');
+      li.querySelector('.puntos').innerHTML = ultimosDias(7).map(d => {
+        const k = clave(d);
+        const cls = k < h.creado ? 'antes' : (h.hechos.includes(k) ? 'si' : '');
+        return `<i class="${cls}" title="${k}"></i>`;
+      }).join('');
+      li.querySelector('.check').onclick = () => alternarHoy(h.id);
+      li.querySelector('.editar').onclick = () => editar(li, h);
+      li.querySelector('.borrar').onclick = () => borrar(h.id);
+      lista.append(li);
+    }
+    const hechos = habitos.filter(h => h.hechos.includes(hoy())).length;
+    document.getElementById('resumen').textContent = `${hechos} de ${habitos.length} hechos hoy`;
+    const pct = habitos.length ? hechos / habitos.length * 100 : 0;
+    document.getElementById('barra').style.width = pct + '%';
+    estadisticas();
+  }
+
+  document.getElementById('formulario').onsubmit = (e) => {
+    e.preventDefault();
+    const campo = document.getElementById('nuevo');
+    const nombre = campo.value.trim();
+    if (nombre) anadir(nombre);
+    campo.value = '';
+    campo.focus();
+  };
+
+  // Copia de seguridad: descargar los datos en un archivo JSON
+  function exportar() {
+    const texto = JSON.stringify(habitos, null, 2);
+    const blob = new Blob([texto], { type: 'application/json' });
+    const enlace = document.createElement('a');
+    enlace.href = URL.createObjectURL(blob);
+    enlace.download = `mis-habitos-${hoy()}.json`;
+    enlace.click();
+    setTimeout(() => URL.revokeObjectURL(enlace.href), 1000);
+    avisarCopia('Copia descargada. Guárdala en un sitio seguro.');
+  }
+
+  // Recuperar una copia: comprobar que el archivo tiene buena pinta
+  async function importar(archivo) {
+    try {
+      const datos = JSON.parse(await archivo.text());
+      const valido = Array.isArray(datos) && datos.every(h =>
+        typeof h.nombre === 'string' && Array.isArray(h.hechos));
+      if (!valido) throw new Error('formato');
+      habitos = datos.map((h, i) => ({
+        id: h.id || Date.now() + i,
+        nombre: h.nombre,
+        creado: h.creado || hoy(),
+        hechos: h.hechos
+      }));
+      guardar();
+      pintar();
+      avisarCopia(`Copia recuperada: ${habitos.length} hábitos.`);
+    } catch (e) {
+      avisarCopia('Ese archivo no es una copia de Mis hábitos.', true);
+    }
+  }
+
+  function avisarCopia(texto, error = false) {
+    const p = document.getElementById('mensaje-copia');
+    p.textContent = texto;
+    p.classList.toggle('error', error);
+  }
+
+  document.getElementById('exportar').onclick = exportar;
+  document.getElementById('importar').onclick = () => document.getElementById('archivo').click();
+  document.getElementById('archivo').onchange = (e) => {
+    if (e.target.files[0]) importar(e.target.files[0]);
+    e.target.value = '';
+  };
+
+  // Instalar como app
+  const estado = document.getElementById('estado-instalar');
+  const instalada = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+  if (instalada) {
+    estado.textContent = 'Ya la estás usando como app instalada.';
+  } else if (location.protocol === 'file:') {
+    estado.textContent = 'La has abierto como archivo de tu ordenador. Para instalarla, publícala (por ejemplo en Netlify) y ábrela desde el móvil.';
+  } else {
+    estado.textContent = 'En el móvil, abre el menú del navegador y elige «Instalar aplicación» o «Añadir a pantalla de inicio».';
+  }
+
+  let avisoInstalar = null;
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    avisoInstalar = e;
+    document.getElementById('instalar').hidden = false;
+  });
+  document.getElementById('instalar').onclick = async () => {
+    if (!avisoInstalar) return;
+    avisoInstalar.prompt();
+    await avisoInstalar.userChoice;
+    avisoInstalar = null;
+    document.getElementById('instalar').hidden = true;
+  };
+  window.addEventListener('appinstalled', () => {
+    estado.textContent = '¡Instalada! Ya la tienes con las demás apps.';
+  });
+
+  // Manifest y service worker solo funcionan en una web publicada
+  // (https). Abierta como archivo, no los cargamos y no da error.
+  if (location.protocol !== 'file:') {
+    const enlace = document.createElement('link');
+    enlace.rel = 'manifest';
+    enlace.href = 'manifest.webmanifest';
+    document.head.append(enlace);
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  }
+
+  const fecha = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  document.getElementById('fecha').textContent = fecha[0].toUpperCase() + fecha.slice(1);
+  pintar();
+</script>
+</body>
+</html>

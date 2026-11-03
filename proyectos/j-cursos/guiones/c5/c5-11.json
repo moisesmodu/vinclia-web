@@ -1,0 +1,123 @@
+{
+  "id": "c5-11",
+  "titulo": "Cuando algo falla: cómo pedir que lo arregle",
+  "descripcion": "Encuentras dos fallos reales en una lista de la compra hecha con IA, abres la consola del navegador con F12 y aprendes qué copiar a la IA para que lo arregle a la primera: qué hiciste, qué esperabas, qué pasa, el mensaje de la consola y qué cambiaste.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:checklist-errores", "demo:metodo"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Cuando algo falla",
+      "subtitulo": "Cómo pedir a la IA que lo arregle",
+      "narracion": "Tarde o temprano, algo de tu app va a fallar. Es normal. A los programadores les pasa todos los días. La diferencia entre perder una tarde y arreglarlo en cinco minutos está en cómo se lo cuentas a la IA. En esta clase vamos a encontrar dos fallos reales en nuestra lista de la compra. Abriremos la consola del navegador, que asusta un poco pero es muy fácil. Y escribiremos el mensaje que lo arregla a la primera."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Antes de nada, lo básico",
+      "puntos": [
+        "¿Guardaste el archivo nuevo, entero?",
+        "¿Tienes abierta la versión correcta?",
+        "¿Has recargado la página?",
+        "¿Funcionaba en la versión anterior?"
+      ],
+      "narracion": "Antes de escribir a la IA, dedica un minuto a lo básico. Muchos fallos no son fallos. ¿Guardaste el archivo nuevo, y entero, sin que falte el final? ¿Tienes abierta la versión correcta? Mira la barra de direcciones. ¿Has recargado la página después de guardar? Y una pregunta muy útil: ¿funcionaba en la versión anterior? Si en la v1 iba bien y en la v2 no, el fallo está en el último cambio. Por eso guardamos versiones."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Probamos la v1: vamos a borrar Tomates",
+      "fuente": "demo:metodo/v1",
+      "url": "lista-compra/v1/index.html",
+      "narracion": "Volvemos a la primera versión de la lista de la compra y hacemos las pruebas de la ficha. Añadir funcionaba bien, lo vimos en la clase de las instrucciones. Ahora toca la prueba de borrar. La lista tiene tres productos: tomates arriba, porque fue el último que se añadió, luego pan y luego leche. Vamos a pulsar el botón de borrar de tomates. ¿Qué esperas que pase? Piénsalo un momento antes de seguir."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Desaparece Leche, no Tomates",
+      "fuente": "demo:metodo/v1",
+      "url": "lista-compra/v1/index.html",
+      "acciones": [{ "click": "#lista li:first-child .borrar" }],
+      "narracion": "Sorpresa. Tomates sigue ahí, y ha desaparecido leche, el último de la lista. La app no se ha quejado. No hay ningún mensaje de error. Simplemente hace otra cosa. Este es el tipo de fallo más traicionero, porque si no pruebas con atención no lo ves. Imagina que estás en el súper y borras lo que ya has cogido. Te quedarías sin leche. Por eso la ficha tenía esta prueba: desaparece ese, no otro."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Contarlo mal frente a contarlo bien",
+      "mal": "No funciona el botón de borrar. Arréglalo.",
+      "bien": "Tengo Tomates, Pan y Leche. Pulso Borrar en Tomates y desaparece Leche. Esperaba que se fuera Tomates.",
+      "narracion": "Ahora hay que contárselo a la IA. Compara estas dos formas. La primera obliga a la IA a adivinar qué pasa, y puede cambiar cosas que estaban bien. La segunda le da todo lo que necesita: qué había, qué hiciste, qué esperabas y qué pasó. Es lo que haría un buen mecánico: no le basta con que el coche hace un ruido. Quiere saber cuándo, dónde y desde cuándo. Con la IA, igual."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Segundo fallo: Vaciar no hace nada",
+      "fuente": "demo:metodo/v1",
+      "url": "lista-compra/v1/index.html",
+      "acciones": [{ "click": "#vaciar" }],
+      "narracion": "Seguimos probando. Pulsamos vaciar lista, abajo a la derecha. Y no pasa nada. Los tres productos siguen ahí, como si no hubiéramos tocado el botón. Este es otro tipo de fallo. Cuando un botón no hace absolutamente nada, casi siempre hay un error escondido que el navegador ha apuntado en un sitio que no ves. Ese sitio se llama la consola. Vamos a abrirla."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Abrir la consola del navegador",
+      "pasos": [
+        "En Chrome o Edge, pulsa F12",
+        "En Mac: Comando, Opción y J",
+        "O clic derecho, Inspeccionar",
+        "Elige la pestaña Consola (o Console)",
+        "Repite lo que falla y busca líneas en rojo"
+      ],
+      "narracion": "Abrir la consola es muy fácil. En Chrome o en Edge, con Windows, pulsa la tecla F12. En un Mac, pulsa a la vez comando, opción y jota. También puedes hacer clic derecho en la página y elegir inspeccionar. Se abre un panel lleno de cosas. No te asustes: solo te interesa la pestaña consola, o console si lo tienes en inglés. Con el panel abierto, vuelve a pulsar el botón que falla. Busca las líneas en rojo."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Lo que sale en rojo al pulsar Vaciar",
+      "archivo": "Consola del navegador",
+      "lenguaje": "term",
+      "codigo": "Uncaught ReferenceError: guardarLista is not defined\n    at document.getElementById.onclick (index.html:173:3)",
+      "narracion": "Esto es lo que sale en rojo al pulsar vaciar. Está en inglés y parece muy técnico, pero no tienes que entenderlo. Tienes que copiarlo entero. Aun así, se puede leer algo. Dice que algo llamado guardar lista no está definido, es decir, no existe. Y la segunda línea dice dónde: en el archivo index punto html, línea 173. Para la IA, este mensaje es oro. Le dice exactamente dónde mirar. Selecciónalo con el ratón y cópialo."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "El mensaje que lo arregla a la primera",
+      "usuario": "Dos fallos en la lista. 1. Tengo Tomates, Pan y Leche. Pulso Borrar en Tomates y desaparece Leche. Esperaba que se fuera Tomates. La consola no muestra nada en rojo. 2. Pulso Vaciar lista y no pasa nada. En la consola sale: Uncaught ReferenceError: guardarLista is not defined at index.html:173. Es la primera versión. Explícame cada fallo en dos frases y arréglalos cambiando solo lo necesario. Dame el archivo completo.",
+      "ia": "1. La lista se pinta al revés, con lo último arriba, pero Borrar usa la posición en pantalla para quitar el producto de la lista original, así que borra el del otro extremo. 2. El botón Vaciar llama a guardarLista, una función que no existe: se llama guardar. Aquí tienes el archivo completo con los dos arreglos.",
+      "narracion": "Este es el mensaje completo. Para cada fallo: qué hice, qué esperaba, qué pasa y qué dice la consola, aunque no diga nada. Y qué cambié por última vez, que aquí es la primera versión. Al final, una petición clara: explícame cada fallo en dos frases y arréglalo cambiando solo lo necesario. Mira la explicación. La lista se ve al revés, pero borrar usaba la posición de la pantalla. Y vaciar llamaba a una función con otro nombre. Dos fallos típicos de la IA."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El arreglo, en la v2",
+      "archivo": "lista-compra/v2/index.html",
+      "lenguaje": "js",
+      "codigo": "function borrar(i) {\n  // i: posición en pantalla; la lista se pinta al revés\n  const posicion = lista.length - 1 - i;\n  lista.splice(posicion, 1);\n  guardar();\n  pintar();\n}",
+      "narracion": "Guardamos el archivo nuevo en una carpeta v2, como vimos en la clase anterior. Este es el arreglo de borrar. La IA ha añadido un comentario que lo explica: la posición en pantalla no es la misma que en la lista, porque se pinta al revés. Así que calcula la posición de verdad antes de borrar. El otro arreglo es aún más pequeño: cambiar guardar lista por guardar. Fíjate en que no ha tocado nada más. Eso es lo que pedimos."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Repetimos la prueba en la v2",
+      "fuente": "demo:metodo/v2",
+      "url": "lista-compra/v2/index.html",
+      "acciones": [{ "click": "#lista li:first-child .borrar" }],
+      "narracion": "Ahora repetimos exactamente la misma prueba en la v2. Tres productos, pulsamos borrar en tomates. Y esta vez desaparece tomates. Quedan pan y leche. Después probamos vaciar lista y la lista se queda vacía, sin nada en rojo en la consola. Pero no te quedes aquí. Repite también las demás pruebas de la ficha: añadir, recargar, el móvil. A veces un arreglo estropea otra cosa. Si todas salen bien, apúntalo en tus notas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Si la IA da vueltas sin arreglarlo",
+      "puntos": [
+        "Tras dos o tres intentos, para",
+        "Vuelve a la última versión que funcionaba",
+        "Conversación nueva: ficha, archivo y fallo",
+        "Pide que explique la causa antes de tocar",
+        "Pagos o datos de clientes: llama a un programador"
+      ],
+      "narracion": "A veces la IA no lo arregla a la primera, ni a la segunda. Si después de dos o tres intentos sigue igual, para. Insistir suele empeorarlo. Vuelve a la última versión que funcionaba y abre una conversación nueva con la ficha, ese archivo y el fallo bien contado. Pide que te explique la causa antes de tocar nada. Y si tu app maneja pagos o datos de clientes y el fallo persiste, es momento de pedir ayuda a un programador."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Primero lo básico: versión, guardado, recarga",
+        "Consola: F12, pestaña Consola, copia lo rojo",
+        "Cuenta: qué hice, qué esperaba, qué pasa",
+        "Añade la consola y qué cambiaste por última vez",
+        "Tarea: busca un fallo en tu app con la checklist"
+      ],
+      "narracion": "Repasamos. Antes de nada, revisa lo básico: la versión correcta, el archivo guardado y la página recargada. Si un botón no hace nada, abre la consola con F12 y copia lo que salga en rojo. A la IA, cuéntale qué hiciste, qué esperabas, qué pasa, qué dice la consola y qué cambiaste por última vez. Tu tarea de hoy. Descarga la checklist de esta clase, haz todas las pruebas de tu ficha y, si algo falla, úsala."
+    }
+  ]
+}

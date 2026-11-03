@@ -1,0 +1,116 @@
+{
+  "id": "c5-08",
+  "titulo": "La ficha del proyecto: tu idea en una página",
+  "descripcion": "Conviertes tu idea en una ficha de una página: para quién es, qué problema resuelve, pantallas, datos, qué no hará y cómo sabrás que funciona. Con ella, la IA construye lo que tú quieres y no lo que se imagina.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:ficha-proyecto"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "La ficha del proyecto",
+      "subtitulo": "Tu idea en una página",
+      "narracion": "Empezamos la sección del método. Hasta ahora has visto qué es el vibe coding, qué hay dentro de una web y qué puede salir mal. Ahora toca aprender a pedir bien. Y pedir bien empieza antes de abrir el chat. Empieza con una página escrita por ti, con tu idea bien pensada. La llamamos la ficha del proyecto. En esta clase la rellenamos juntos con un ejemplo sencillo: una lista de la compra. Al terminar tendrás la tuya."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Una idea vaga frente a una idea clara",
+      "mal": "Hazme una app para la compra.",
+      "bien": "Una lista para el móvil: escribo, añado, borro. Se guarda sola. Sin usuarios ni precios.",
+      "narracion": "Mira estas dos peticiones. La primera parece suficiente, pero deja todo en manos de la IA. ¿Es para el móvil o para el ordenador? ¿Lleva precios? ¿Hay que registrarse? La IA rellenará cada hueco a su manera, y casi nunca a la tuya. La segunda cabe en una línea, y aun así dice para dónde es, qué se puede hacer y qué no. Esa claridad no sale del chat. Sale de pensar diez minutos antes. Para eso sirve la ficha."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Las seis preguntas de la ficha",
+      "pasos": [
+        "Para quién es y dónde lo va a usar",
+        "Qué problema resuelve",
+        "Qué pantallas tiene",
+        "Qué datos guarda y dónde",
+        "Qué NO hará, por ahora",
+        "Cómo sabré que funciona"
+      ],
+      "narracion": "La ficha tiene seis preguntas. Para quién es y dónde lo va a usar. Qué problema resuelve, en una o dos frases. Qué pantallas tiene, es decir, qué se ve y qué se puede pulsar. Qué datos guarda y dónde los guarda. Qué no hará, al menos por ahora. Y cómo sabrás que funciona. Si una respuesta te ocupa más de tres líneas, tu idea todavía es grande. Es el momento de recortar, no cuando ya tengas medio código hecho."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "La ficha de la lista de la compra",
+      "columnas": ["Pregunta", "Respuesta"],
+      "filas": [
+        ["Para quién", "Para mí, en el móvil, en el súper"],
+        ["Problema", "Los papelitos se pierden y olvido cosas"],
+        ["Pantallas", "Una: campo, Añadir y la lista"],
+        ["Datos", "Nombres de productos, en el navegador"],
+        ["Funciona si", "Añado, borro y al recargar sigue igual"]
+      ],
+      "narracion": "Así queda la ficha de nuestro ejemplo. Para quién: para mí, en el móvil, mientras hago la compra. El problema: apunto en papelitos que se pierden y siempre olvido algo. Pantallas: solo una, con un campo para escribir, un botón de añadir y la lista. Datos: solo el nombre de cada producto, guardado en el propio navegador. Y funciona si puedo añadir, borrar y, al recargar, todo sigue igual. Fíjate en que no hay ni una palabra técnica."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Qué NO hará: la parte más importante",
+      "puntos": [
+        "Sin usuarios ni contraseñas",
+        "No se comparte entre dos móviles",
+        "Sin precios ni categorías",
+        "Un solo archivo, sin librerías ni internet"
+      ],
+      "narracion": "La pregunta que más ayuda es la de qué no hará. Cada cosa que dejas fuera es una fuente de errores menos. Nuestra lista no tendrá usuarios ni contraseñas. No se compartirá entre el móvil de dos personas, porque eso necesita un servidor. No tendrá precios ni categorías. Y será un solo archivo, sin librerías ni nada de internet. ¿Quieres compartirla más adelante? Perfecto, será la versión dos. Primero, que lo pequeño funcione bien."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Cómo sabré que funciona",
+      "pasos": [
+        "Añado tres productos y salen los tres",
+        "Lo último que añado sale arriba",
+        "Pulso Borrar en uno y desaparece ese, no otro",
+        "Recargo la página y la lista sigue igual",
+        "En el móvil se ve bien sin hacer zoom"
+      ],
+      "narracion": "La última pregunta es la que convierte la ficha en una herramienta. Escribe pruebas concretas que puedas hacer tú en dos minutos. Añado tres productos y salen los tres. Lo último que añado sale arriba. Pulso borrar en uno y desaparece ese, no otro. Recargo y la lista sigue igual. Y en el móvil se ve bien. Guarda bien esta lista. En la clase de los errores verás que una de estas pruebas falla, y gracias a ella lo descubrimos."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Que la IA te entreviste",
+      "usuario": "Quiero hacer una app sencilla con IA, pero no sé programar. Mi idea: una lista de la compra para el móvil. Hazme preguntas de una en una para rellenar esta ficha: para quién es, qué problema resuelve, pantallas, datos, qué NO hará y cómo sabré que funciona. Si mi idea es demasiado grande, dímelo. No escribas código todavía.",
+      "ia": "¡Buena idea para empezar! Primera pregunta: ¿quién va a usar la lista? ¿Solo tú, o también otra persona desde su propio móvil? Esto es importante, porque compartirla entre dos móviles cambia mucho la complejidad.",
+      "narracion": "Si te cuesta rellenar la ficha, pide ayuda a la IA, pero en modo entrevista. Fíjate en la instrucción. Le cuentas tu idea en una frase, le das las seis preguntas y le pides que pregunte de una en una. Y añades dos frases clave: si la idea es demasiado grande, dímelo, y no escribas código todavía. Mira su primera pregunta. Ya te avisa de que compartir la lista entre dos móviles complica mucho las cosas. Ese aviso, a tiempo, vale oro."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Lo que sale de esta ficha",
+      "nota": "Una pantalla, una tarea, nada más. Así se ve en el móvil.",
+      "fuente": "demo:metodo/v2@movil",
+      "acciones": [{ "fill": ["#producto", "Huevos"] }, { "click": "#anadir" }],
+      "narracion": "Y esto es lo que sale de una ficha así. Una sola pantalla en el móvil. Escribes huevos, pulsas añadir y aparece arriba de la lista. Cada producto tiene su botón de borrar, y abajo ves cuántos productos llevas. No tiene nada más, y eso es justo lo que pedía la ficha. En las próximas clases verás las instrucciones exactas que la construyeron y el fallo que tuvo por el camino. Esta app está en los recursos del curso para que la abras."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Pega la ficha antes de construir",
+      "usuario": "Te paso la ficha de mi proyecto. [Ficha completa]. Antes de escribir código, dime en cinco líneas qué harías en la primera versión y qué dudas tienes.",
+      "ia": "Primera versión: un solo archivo con un campo de texto, un botón Añadir y la lista, con lo último arriba y un botón Borrar en cada producto. Guardaría la lista en el navegador para que siga al recargar. Duda: ¿quieres poder vaciar la lista entera de una vez?",
+      "narracion": "Con la ficha hecha, ya puedes empezar a construir. Pero no pidas el código enseguida. Primero pega la ficha y pide a la IA que te diga qué haría y qué dudas tiene. Si su plan no encaja con tu idea, lo corriges ahora, con dos frases, y no después con veinte instrucciones. Aquí la IA ha entendido la ficha y propone una cosa más: un botón para vaciar la lista. La decisión es tuya. Nosotros le diremos que sí."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Trucos para una buena ficha",
+      "puntos": [
+        "Escríbela tú, aunque la IA te ayude a pensar",
+        "Frases cortas, sin palabras técnicas",
+        "Nada de contraseñas ni datos personales",
+        "Pégala al empezar cada conversación nueva",
+        "Actualízala cuando cambies de idea"
+      ],
+      "narracion": "Unos trucos para que la ficha te sirva de verdad. Escríbela tú, aunque la IA te ayude a pensar. Las decisiones son tuyas. Usa frases cortas y sin palabras técnicas: si se la enseñas a un amigo, tiene que entenderla. No pongas contraseñas ni datos personales de nadie. Pégala al principio de cada conversación nueva con la IA, porque cada chat empieza sin memoria de tu proyecto. Y cuando cambies de idea, cambia la ficha primero."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy",
+      "puntos": [
+        "Seis preguntas: quién, problema, pantallas, datos",
+        "Y también: qué NO hará y cómo sabré que funciona",
+        "Pide a la IA que te entreviste, sin código",
+        "Tarea: rellena la plantilla con tu propia idea"
+      ],
+      "narracion": "Repasamos. La ficha del proyecto responde seis preguntas: para quién, qué problema, qué pantallas, qué datos, qué no hará y cómo sabrás que funciona. Lo que dejas fuera es tan importante como lo que pones. Si te atascas, pide a la IA que te entreviste, sin escribir código. Tu tarea de hoy. Descarga la plantilla de la ficha de esta clase y rellénala con una idea tuya, aunque sea pequeña. En la próxima clase aprenderás a convertirla en instrucciones que funcionan."
+    }
+  ]
+}

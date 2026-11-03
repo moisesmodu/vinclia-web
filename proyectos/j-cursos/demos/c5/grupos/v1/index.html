@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hacer grupos</title>
+<style>
+  :root {
+    --acento: #6d28d9;
+    --acento-oscuro: #5b21b6;
+    --texto: #1f2937;
+    --gris: #6b7280;
+    --borde: #e5e7eb;
+    --fondo: #f8f7fc;
+    --error: #b91c1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    background: var(--fondo);
+    line-height: 1.5;
+  }
+  .app {
+    max-width: 1180px; margin: 0 auto; padding: 28px 24px 40px;
+    display: grid; grid-template-columns: 340px 1fr; gap: 32px; align-items: start;
+  }
+  h1 { font-size: 32px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: var(--gris); margin: 0 0 20px; }
+  .panel {
+    background: #fff; border: 1px solid var(--borde); border-radius: 16px; padding: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  label { display: block; font-weight: 600; margin-bottom: 6px; }
+  textarea, input[type=number] {
+    width: 100%; font: inherit; font-size: 17px; padding: 10px 12px;
+    border: 1px solid #d1d5db; border-radius: 10px; margin-bottom: 14px; background: #fff;
+  }
+  textarea { height: 230px; resize: vertical; }
+  textarea:focus, input:focus { outline: 3px solid rgba(109, 40, 217, 0.2); border-color: var(--acento); }
+  .ayuda { font-size: 14px; color: var(--gris); margin: -8px 0 14px; }
+  .botones { display: flex; gap: 10px; }
+  button {
+    flex: 1; font: inherit; font-weight: 700; font-size: 17px; border-radius: 12px; padding: 13px;
+    cursor: pointer; border: none;
+  }
+  #hacer { background: var(--acento); color: #fff; box-shadow: 0 6px 16px rgba(109, 40, 217, 0.3); }
+  #hacer:hover { background: var(--acento-oscuro); }
+  #otra { background: #ede9fe; color: var(--acento-oscuro); }
+  #otra:disabled { opacity: 0.45; cursor: default; }
+  .error { color: var(--error); font-size: 15px; min-height: 22px; margin: 10px 0 0; }
+  .grupos { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 18px; }
+  .grupo { border-radius: 16px; padding: 18px 20px; color: #fff; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+  .grupo h2 { margin: 0 0 10px; font-size: 22px; }
+  .grupo ul { margin: 0; padding: 0; list-style: none; }
+  .grupo li { font-size: 21px; font-weight: 600; padding: 3px 0; }
+  .vacio {
+    border: 2px dashed #d4d4d8; border-radius: 16px; padding: 48px 24px; text-align: center; color: var(--gris);
+    font-size: 18px;
+  }
+  @media (max-width: 800px) {
+    .app { grid-template-columns: 1fr; gap: 20px; padding: 18px 16px 32px; }
+    h1 { font-size: 26px; }
+    textarea { height: 160px; }
+  }
+</style>
+</head>
+<body>
+  <div class="app">
+    <div>
+      <h1>Hacer grupos</h1>
+      <p class="sub">Reparte la clase en grupos al azar.</p>
+      <div class="panel">
+        <label for="lista">Alumnos (uno por línea)</label>
+        <textarea id="lista" placeholder="Usa alias o iniciales, no nombres completos"></textarea>
+        <p class="ayuda">Usa alias o iniciales. No se guarda nada.</p>
+        <label for="num">Número de grupos</label>
+        <input type="number" id="num" min="2" max="12" value="4">
+        <div class="botones">
+          <button id="hacer">Hacer grupos</button>
+          <button id="otra" disabled>Otra vez</button>
+        </div>
+        <p class="error" id="error" role="alert"></p>
+      </div>
+    </div>
+    <div id="resultado">
+      <div class="vacio">Escribe la lista y pulsa «Hacer grupos».</div>
+    </div>
+  </div>
+
+<script>
+  const COLORES = ['#6d28d9', '#0f766e', '#c2410c', '#1d4ed8', '#be185d', '#4d7c0f',
+                   '#b45309', '#0e7490', '#7c3aed', '#9f1239', '#15803d', '#334155'];
+  const lista = document.getElementById('lista');
+  const num = document.getElementById('num');
+  const error = document.getElementById('error');
+  const resultado = document.getElementById('resultado');
+  const otra = document.getElementById('otra');
+
+  // Baraja la lista al azar (algoritmo de Fisher-Yates)
+  function barajar(nombres) {
+    const a = [...nombres];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function hacerGrupos() {
+    const nombres = lista.value.split('\n').map(n => n.trim()).filter(n => n);
+    const n = parseInt(num.value, 10);
+    if (nombres.length === 0) { error.textContent = 'Escribe al menos un nombre.'; return; }
+    if (!(n >= 2 && n <= 12)) { error.textContent = 'Elige entre 2 y 12 grupos.'; return; }
+    if (n > nombres.length) { error.textContent = 'Hay más grupos que alumnos.'; return; }
+    error.textContent = '';
+    const grupos = Array.from({ length: n }, () => []);
+    barajar(nombres).forEach((nombre, i) => grupos[i % n].push(nombre));
+    resultado.innerHTML = '<div class="grupos"></div>';
+    grupos.forEach((g, i) => {
+      const div = document.createElement('div');
+      div.className = 'grupo';
+      div.style.background = COLORES[i % COLORES.length];
+      const h = document.createElement('h2');
+      h.textContent = 'Grupo ' + (i + 1);
+      const ul = document.createElement('ul');
+      g.forEach(nombre => {
+        const li = document.createElement('li');
+        li.textContent = nombre;
+        ul.appendChild(li);
+      });
+      div.append(h, ul);
+      resultado.firstChild.appendChild(div);
+    });
+    otra.disabled = false;
+  }
+
+  document.getElementById('hacer').addEventListener('click', hacerGrupos);
+  otra.addEventListener('click', hacerGrupos);
+</script>
+</body>
+</html>

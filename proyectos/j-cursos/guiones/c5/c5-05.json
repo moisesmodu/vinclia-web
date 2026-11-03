@@ -1,0 +1,109 @@
+{
+  "id": "c5-05",
+  "titulo": "Archivos, carpetas y el navegador: tu taller",
+  "descripcion": "Preparas tu taller de trabajo: una carpeta por proyecto, el código guardado en un archivo index.html que se abre con doble clic, y la consola del navegador para ver los errores.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:chuleta-web", "demo:primera"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Archivos, carpetas y el navegador",
+      "subtitulo": "Tu taller: dónde vive tu app y cómo se abre",
+      "narracion": "Ver la app dentro del chat está muy bien para probar. Pero si cierras la conversación, o quieres usarla en el móvil o publicarla, necesitas tenerla en un archivo tuyo. En esta clase montamos tu taller. Una carpeta por proyecto, un archivo que se abre con doble clic y una herramienta del navegador que te enseña los errores. Son diez minutos que te ahorran muchos líos."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Lo que es de verdad una página web",
+      "puntos": [
+        "Un archivo de texto normal, que termina en .html",
+        "index.html es el nombre de la página principal",
+        "El navegador lo lee y lo convierte en la app",
+        "No necesita internet para funcionar en tu equipo"
+      ],
+      "narracion": "Empecemos por quitarle misterio. Una página web es un archivo de texto normal y corriente. Lo único especial es que su nombre termina en punto html. El navegador, ya sea Chrome, Edge, Firefox o Safari, lee ese texto y lo convierte en lo que ves. El nombre index punto html se usa para la página principal, y cuando la publiques, los servicios buscarán un archivo con ese nombre. Tus apps del curso no necesitan internet para funcionar."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Guardar el código en un archivo",
+      "pasos": [
+        "Crea una carpeta para el proyecto, por ejemplo propinas",
+        "Abre el Bloc de notas o TextEdit en texto sin formato",
+        "Pega todo el código que te ha dado la IA",
+        "Guarda como index.html, dentro de la carpeta",
+        "Haz doble clic en el archivo: se abre en el navegador"
+      ],
+      "narracion": "Así se guarda. Crea una carpeta en Documentos con el nombre del proyecto, por ejemplo propinas, sin tildes ni espacios. En Windows, abre el Bloc de notas. En un Mac, abre TextEdit y, en el menú Formato, elige convertir a texto normal. En el chat, usa el botón de copiar el código para no dejarte ningún trozo. Pégalo, guarda como index punto html dentro de la carpeta, y haz doble clic. Se abrirá en tu navegador."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "La trampa más habitual",
+      "mal": "index.html.txt: Windows añade .txt a escondidas y se abre como texto.",
+      "bien": "index.html: en Guardar como, elige «Todos los archivos» y codificación UTF-8.",
+      "narracion": "Ojo con la trampa más habitual. En Windows, el Bloc de notas puede añadir punto t x t al final sin que lo veas, porque Windows oculta las extensiones. Si al hacer doble clic ves el código en lugar de la app, es eso. Al guardar, en tipo elige todos los archivos. Y en codificación, U T F 8, para que las tildes y la eñe se vean bien. Si salen símbolos raros en lugar de tildes, vuelve a guardar con esa opción."
+    },
+    {
+      "tipo": "terminal",
+      "titulo": "Una carpeta por proyecto, una por versión",
+      "lineas": [
+        "Documentos/",
+        "  propinas/",
+        "    v1/index.html",
+        "    v2/index.html",
+        "    v3/index.html",
+        "    instrucciones.txt"
+      ],
+      "narracion": "Te propongo este orden, que es el mismo que tiene la app de ejemplo del curso. Una carpeta por proyecto. Dentro, una subcarpeta por versión, cada una con su index punto html. Y un archivo de texto donde pegas las instrucciones que le diste a la IA. Así, si la versión tres se estropea, la dos sigue intacta. Más adelante aprenderás a guardar versiones con Git, pero este sistema de carpetas ya te salva de muchos sustos."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Tu app, abierta desde tu ordenador",
+      "fuente": "demo:primera/v2",
+      "url": "Documentos/propinas/v2/index.html",
+      "acciones": [
+        { "fill": ["#total", "45,80"] },
+        { "click": "#mas" }
+      ],
+      "narracion": "Así se ve tu app abierta desde tu propia carpeta. Mira la barra de direcciones. No pone una dirección de internet, sino la ruta del archivo en tu ordenador. Funciona igual que en el chat. Si cambias algo en el archivo, guarda y recarga la página para ver el cambio. En Windows se recarga con la tecla F5 y en un Mac con comando y la letra R."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Un editor mejor que el Bloc de notas",
+      "puntos": [
+        "Visual Studio Code: gratuito, en Windows, Mac y Linux",
+        "Colorea el código: ves dónde empieza cada parte",
+        "Busca dentro del archivo con Control F",
+        "Opcional: para este curso basta el Bloc de notas"
+      ],
+      "narracion": "El Bloc de notas sirve, pero si quieres algo más cómodo, instala Visual Studio Code. Es gratuito y funciona en Windows, Mac y Linux. Colorea el código, así distingues a simple vista el HTML, el CSS y el JavaScript. Y te deja buscar dentro del archivo con control F, o comando F en Mac. Es opcional. Si te agobia, sigue con el Bloc de notas y vuelve a esto más adelante."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "La consola: donde el navegador se queja",
+      "puntos": [
+        "Ábrela con F12, o con clic derecho e Inspeccionar",
+        "Ve a la pestaña Consola",
+        "Los errores salen en rojo, con el número de línea",
+        "Copia el error tal cual y pégaselo a la IA"
+      ],
+      "narracion": "Ahora, la herramienta más útil que vas a aprender hoy. La consola del navegador. Ábrela con la tecla F12, o con clic derecho en la página e Inspeccionar. Busca la pestaña Consola. Si la app tiene un error, aparece ahí en rojo, con el número de la línea. No hace falta que lo entiendas. Cópialo tal cual y pégaselo a la IA. Con ese texto, arreglarlo suele ser cuestión de un mensaje."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Si no sabes cómo hacerlo, pregunta",
+      "usuario": "Me has dado el código de la app. Uso Windows y Chrome y no he programado nunca. Explícame paso a paso cómo guardarlo como index.html en una carpeta llamada propinas y cómo abrirlo.",
+      "ia": "Da los pasos numerados: crear la carpeta, abrir el Bloc de notas, pegar, Guardar como con «Todos los archivos» y UTF-8, y doble clic. Avisa de la trampa del .txt.",
+      "narracion": "Y si te pierdes, pregunta a la propia IA. Dile qué sistema y qué navegador usas y que no has programado nunca. Te dará los pasos para tu caso concreto. Esto vale para todo el curso. La IA no solo escribe código. También es tu ayudante para lo que rodea al código, como guardar archivos, encontrar un menú o entender un mensaje de error."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de hoy, en 10 minutos",
+      "puntos": [
+        "Crea la carpeta propinas con subcarpetas v1, v2, v3",
+        "Guarda cada versión de tu app como index.html",
+        "Ábrela con doble clic y pruébala",
+        "Abre la consola con F12 y mira si hay errores"
+      ],
+      "narracion": "Repasamos. Una web es un archivo de texto que termina en punto html. Lo guardas en una carpeta del proyecto, lo abres con doble clic y, si cambias algo, guardas y recargas. Tu tarea de hoy. Crea la carpeta propinas, guarda tus versiones de la app de la clase uno y ábrelas. Luego abre la consola y comprueba que no hay nada en rojo. En la próxima clase aprenderás a leer ese código sin saber programar."
+    }
+  ]
+}

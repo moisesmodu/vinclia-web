@@ -26,12 +26,12 @@
   }
   main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
   header { margin-bottom: 24px; }
-  .fecha { color: var(--gris); font-size: 15px; text-transform: capitalize; margin: 0 0 4px; }
+  .fecha { color: var(--gris); font-size: 15px; margin: 0 0 4px; }
   h1 { font-size: 32px; margin: 0; letter-spacing: -0.5px; }
   .progreso { margin-top: 16px; background: var(--blanco); border-radius: 16px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
   .progreso p { margin: 0 0 10px; font-weight: 600; }
   .barra { height: 10px; background: var(--acento-suave); border-radius: 99px; overflow: hidden; }
-  .barra span { display: block; height: 100%; width: 0; background: var(--acento); border-radius: 99px; transition: width .3s; }
+  .barra span { display: block; height: 100%; width: 0; background: var(--acento); border-radius: 99px; transition: width .2s; }
   form { display: flex; gap: 10px; margin-bottom: 20px; }
   input[type=text] {
     flex: 1; min-width: 0; font: inherit; font-size: 16px; padding: 14px 16px;
@@ -73,7 +73,7 @@
   </header>
 
   <form id="formulario">
-    <input type="text" id="nuevo" placeholder="Nuevo hábito, por ejemplo: Leer 10 minutos" maxlength="60" autocomplete="off">
+    <input type="text" id="nuevo" placeholder="Ej.: Leer 10 minutos" maxlength="60" autocomplete="off">
     <button class="btn" id="add" type="submit">Añadir</button>
   </form>
 
@@ -142,7 +142,8 @@
     campo.focus();
   };
 
-  document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  const fecha = new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+  document.getElementById('fecha').textContent = fecha[0].toUpperCase() + fecha.slice(1);
   pintar();
 </script>
 </body>

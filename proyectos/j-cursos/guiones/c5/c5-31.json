@@ -1,0 +1,121 @@
+{
+  "id": "c5-31",
+  "titulo": "Validar la idea antes de construir de más",
+  "descripcion": "Compruebas si tu idea interesa antes de dedicarle semanas: hablas con cinco posibles usuarios, publicas una página de «apúntate» hecha con IA y decides con datos qué hacer.",
+  "vistaPrevia": false,
+  "recursos": ["plantilla:validar-idea", "demo:apuntate"],
+  "escenas": [
+    {
+      "tipo": "portada",
+      "titulo": "Validar la idea",
+      "subtitulo": "Antes de construir de más",
+      "narracion": "Empezamos la sección de idea a producto. Ya sabes construir una web, una app, una herramienta y un juego. Ahora la pregunta cambia. No es si sabes hacerlo, sino si alguien lo quiere. En esta clase vas a comprobar tu idea en una semana, gastando poco. Hablarás con cinco posibles usuarios, publicarás una página de apúntate y sabrás qué mirar para decidir."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Construir es barato; tu tiempo, no",
+      "puntos": [
+        "Con IA, una primera versión sale en una tarde",
+        "Pulirla, publicarla y mantenerla lleva semanas",
+        "El riesgo no es técnico: es que nadie la use",
+        "Validar es perder poco si la idea no funciona"
+      ],
+      "narracion": "Con el vibe coding, construir se ha vuelto barato. Una primera versión sale en una tarde. Eso tiene una trampa. Como es tan fácil, añadimos pantallas, colores y funciones sin preguntar a nadie. Y luego pulir, publicar y mantener lleva semanas. El riesgo de tu proyecto casi nunca es técnico. Es que nadie lo use. Validar significa comprobarlo antes, para perder poco si la idea no funciona."
+    },
+    {
+      "tipo": "pasos",
+      "titulo": "Habla con cinco posibles usuarios",
+      "pasos": [
+        "Elige cinco personas que tengan el problema",
+        "Mejor desconocidos que familia o amigos",
+        "Pregunta por lo que hicieron, no por tu idea",
+        "Escucha y apunta sus palabras exactas",
+        "No vendas: al final, cuéntalo si preguntan"
+      ],
+      "narracion": "El primer paso no necesita código. Habla con cinco personas que tengan el problema que quieres resolver. Mejor desconocidos, o conocidos lejanos, que tu familia: la familia te quiere y te dirá que sí. Cinco no es una cifra mágica. Es suficiente para ver si se repite algo. La técnica viene del libro The Mom Test, de Rob Fitzpatrick. Pregunta por lo que hicieron la última vez, no por lo que harían. Y apunta sus palabras exactas: luego te servirán para la web."
+    },
+    {
+      "tipo": "comparar",
+      "titulo": "Preguntar por el futuro frente al pasado",
+      "mal": "¿Comprarías una plantilla para hacer presupuestos más rápido?",
+      "bien": "¿Cómo hiciste tu último presupuesto? ¿Cuánto tardaste? ¿Qué fue lo peor?",
+      "narracion": "Mira la diferencia. Si preguntas si comprarían tu plantilla, casi todo el mundo dirá que sí, por educación. Esa respuesta no vale nada. Si preguntas cómo hicieron su último presupuesto, cuánto tardaron y qué fue lo peor, oyes hechos. Si alguien te dice que lo hace en diez minutos y está contento, eso es información valiosa. Si te cuenta que pierde la tarde del domingo, también."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "La IA te prepara el guion de la charla",
+      "usuario": "Quiero validar una idea: una plantilla de hoja de cálculo para que autónomos de reformas hagan presupuestos. Voy a hablar con 5 posibles usuarios. Prepárame 6 preguntas sobre cómo lo hacen hoy. Que no se respondan con sí o no y que no mencionen mi producto.",
+      "ia": "Seis preguntas abiertas: cómo hiciste tu último presupuesto, cuánto tiempo te llevó, qué herramienta usas, qué parte te cuesta más, qué pasa cuando te equivocas en una cifra y qué has probado para hacerlo más rápido.",
+      "narracion": "La IA te ayuda a preparar la charla. En este ejemplo seguimos con un caso inventado: una plantilla de presupuestos para autónomos de reformas, de la marca Hoja Clara. Fíjate en los límites de la instrucción. Preguntas que no se respondan con sí o no, y que no mencionen el producto. La IA devuelve seis preguntas abiertas sobre lo que hacen hoy. Revísalas, quita las que no te suenen naturales y llévalas apuntadas."
+    },
+    {
+      "tipo": "chat",
+      "titulo": "Ahora sí: la página de apúntate",
+      "usuario": "Crea una web en un solo archivo index.html, sin librerías. Es una página de lista de espera para mi plantilla de presupuestos. Título con el problema, tres ventajas, precio previsto 19 euros y un formulario: correo, una pregunta de cuánto tardan y casilla de privacidad obligatoria. Al enviar, mensaje de gracias.",
+      "ia": "Te dejo el archivo completo. Incluye el titular, la lista de ventajas, el precio y el formulario con validación: comprueba el correo y la casilla antes de mostrar el mensaje de gracias. Recuerda que, tal como está, no envía los datos a ningún sitio.",
+      "narracion": "Si las charlas confirman el problema, das el segundo paso. Una página de apúntate, antes de construir el producto. La instrucción describe todo lo que necesita. El problema en el título, tres ventajas, el precio previsto y un formulario corto. Pedir el precio desde el principio es importante. Apuntarse gratis a algo que no cuesta nada es fácil. Apuntarse sabiendo que cuesta 19 euros dice mucho más."
+    },
+    {
+      "tipo": "web",
+      "titulo": "La página de lista de espera",
+      "fuente": "demo:apuntate/v1",
+      "url": "hoja-clara.netlify.app",
+      "narracion": "Este es el resultado. Arriba, el problema en forma de pregunta, con las palabras que oíste en las charlas. Debajo, tres ventajas concretas y el precio previsto. A la derecha, el formulario. Hay una pregunta extra, cuánto tardas ahora en hacer un presupuesto. Esa respuesta te dice si llegas a quien tiene el problema de verdad. La página entera es un solo archivo, como los proyectos del curso."
+    },
+    {
+      "tipo": "web",
+      "titulo": "Alguien se apunta",
+      "fuente": "demo:apuntate/v1",
+      "url": "hoja-clara.netlify.app",
+      "acciones": [
+        { "fill": ["#correo", "laura@ejemplo.com"] },
+        { "eval": "document.getElementById('tiempo').selectedIndex = 3" },
+        { "click": "#apuntarme" },
+        { "wait": 400 }
+      ],
+      "narracion": "Probamos el formulario como lo haría un visitante. Escribe su correo, elige que tarda más de una hora y pulsa el botón. Como no ha marcado la casilla de privacidad, la página le avisa en rojo. Cuando la marca, aparece el mensaje de gracias. Ojo con un detalle. En esta demo no se envía nada. En tu página real, los correos tienen que llegar a un sitio seguro, por ejemplo un formulario de Google enlazado. Y con su aviso de privacidad, como viste en la clase de formularios."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Sin casilla no hay apuntado",
+      "archivo": "index.html",
+      "lenguaje": "javascript",
+      "codigo": "const acepto = document.getElementById('acepto').checked;\nif (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(correo)) {\n  error.textContent = 'Escribe un correo válido.';\n  return;\n}\nif (!acepto) {\n  error.textContent = 'Marca la casilla para poder avisarte.';\n  return;\n}",
+      "narracion": "Aquí está la parte del código que decide si alguien queda apuntado. No hace falta que lo entiendas entero. La primera comprobación mira si el correo tiene forma de correo. La segunda mira si la casilla de privacidad está marcada. Si falta algo, muestra un aviso y se para. Léelo así, de arriba abajo, y comprueba que hace lo que pediste. Es tu forma de revisar el trabajo de la IA."
+    },
+    {
+      "tipo": "tabla",
+      "titulo": "Qué medir durante una o dos semanas",
+      "columnas": ["Qué", "Cómo lo sabes"],
+      "filas": [
+        ["Personas que vieron el enlace", "Apunta a quién y dónde lo envías"],
+        ["Personas apuntadas", "Correos recibidos en el formulario"],
+        ["Cuánto tardan hoy", "La pregunta extra del formulario"],
+        ["Quién pregunta cuándo sale", "Mensajes que te llegan sin pedirlo"]
+      ],
+      "narracion": "Ahora, a medir. Durante una o dos semanas, comparte el enlace donde esté tu público: un grupo de WhatsApp del gremio, una asociación, tus redes. Apunta cuántas personas lo han visto, aunque sea de forma aproximada. Cuenta los apuntados. Mira qué responden en la pregunta extra. Y fíjate en quién te escribe sin que se lo pidas para preguntar cuándo sale. Esa es la mejor señal de todas."
+    },
+    {
+      "tipo": "puntos",
+      "titulo": "Decide antes de mirar los números",
+      "puntos": [
+        "Escribe hoy qué resultado te convencería",
+        "Si se cumple, construye la primera versión",
+        "Si no, cambia el mensaje, el público o la idea",
+        "Una herramienta solo para ti también vale"
+      ],
+      "narracion": "Un consejo muy útil. Antes de compartir el enlace, escribe qué resultado te convencería. Por ejemplo, diez apuntados de cien personas que lo vieron. La cifra la pones tú. Si la escribes antes, no te engañarás después. Si se cumple, construye la primera versión. Si no, cambia el mensaje, el público o la idea. Y una cosa honesta. La mayoría de ideas no funcionan a la primera, y no pasa nada. Una herramienta que solo uses tú también es un éxito."
+    },
+    {
+      "tipo": "resumen",
+      "titulo": "Tu tarea de esta semana",
+      "puntos": [
+        "Cinco charlas: pregunta por el pasado, no por tu idea",
+        "Página de apúntate con el problema y el precio",
+        "Los datos, a un sitio seguro y con aviso de privacidad",
+        "Decide antes qué resultado te convence"
+      ],
+      "narracion": "Repasamos. Antes de construir de más, habla con cinco posibles usuarios y pregunta por lo que hicieron, no por tu idea. Si el problema existe, publica una página de apúntate con el problema y el precio. Los correos, a un sitio seguro y con aviso de privacidad. Y decide antes qué resultado te convence. Tu tarea de esta semana: descarga la plantilla para validar la idea y agenda tu primera charla. En la próxima clase veremos cómo cobrar."
+    }
+  ]
+}
